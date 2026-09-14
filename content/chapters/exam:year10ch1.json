@@ -1,0 +1,68 @@
+{
+  "chapterId": "exam:year10ch1",
+  "title": "Exam Practice",
+  "year": "Year 10",
+  "topics": [
+    {
+      "topicId": "exam:year10ch1",
+      "code": "",
+      "title": "Review of percentage",
+      "questions": [
+        {
+          "id": "y10-1a-high-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "After a store-wide clearance discount of \\( 15\\% \\), a brand new smartwatch is sold at a retail price of \\(\\$204.00\\) by NovaTech. Determine the original price of the smartwatch before the clearance event.",
+          "options": [
+            "\\(255.00\\)",
+            "\\(240.001\\)",
+            "\\(234.60\\)",
+            "\\(240.00\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the final sale price and the discount rate.",
+              "work": "\\(\\text{Sale Price} = 204.00, quad \\text{Discount} = 15\\% = 0.15\\)"
+            },
+            {
+              "explain": "Divide the sale price by the discount multiplier to find the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{204.00}{1 - 0.15} = \\frac{204.00}{0.85}\\)"
+            },
+            {
+              "explain": "Calculate the original price.",
+              "work": "\\(\\text{Original Price} = 240.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A refurbished industrial printing press is sold for \\( 68000 \\) dollars after a markdown of \\( 20\\% \\). Find the original list price of the printing press.",
+          "options": [
+            "\\(81600.00\\)",
+            "\\(85000.00\\)",
+            "\\(85000.001\\)",
+            "\\(90666.67\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the parameters for the reverse percentage equation.",
+              "work": "\\(\\text{Markdown Price} = 68000, quad \\text{Rate} = 20\\%\\)"
+            },
+            {
+              "explain": "Divide the current price by the multiplier.",
+              "work": "\\(\\text{Original List Price} = \\frac{68000}{0.80}\\)"
+            },
+            {
+              "explain": "Evaluate the division.",
+              "work": "\\(\\text{Original List Price} = 85000.00\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

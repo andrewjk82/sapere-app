@@ -1,0 +1,701 @@
+{
+  "chapterId": "exam:year12ach1",
+  "title": "Exam Practice",
+  "year": "Year 12a",
+  "topics": [
+    {
+      "topicId": "exam:year12ach1",
+      "code": "",
+      "title": "Miscellaneous questions",
+      "questions": [
+        {
+          "id": "y12a-1b-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Lucas collects trading cards. He found a collection of 600 trading cards in his basement a few years ago, and every month since then he has been buying 120 interesting trading cards to add to his collection. Thus the numbers of trading cards at the end of each month after his discovery form a sequence:\n\\(720, 840, \\dots\\)\n\nCopy and continue the sequence to at least 12 terms.",
+          "options": [
+            "\\(720, 840, 960, 1080, 1200, 1320, 1440, 1560, 1680, 1800, 1920, 2040, \\dots\\)",
+            "\\(720, 840, 950, 1060, 1170, 1280, 1390, 1500, 1610, 1720, 1830, 1940, \\dots\\)",
+            "\\(720, 840, 980, 1120, 1260, 1400, 1540, 1680, 1820, 1960, 2100, 2240, \\dots\\)",
+            "\\(720, 840, 960, 1080, 1200, 1300, 1400, 1500, 1600, 1700, 1800, 1900, \\dots\\)"
+          ],
+          "answer": 0,
+          "hint": "The sequence starts at 720 and increases by 120 each month.",
+          "solution": "\\(720, 840, 960, 1080, 1200, 1320, 1440, 1560, 1680, 1800, 1920, 2040, \\dots\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(T_1 = 720\\), difference \\(d = 120\\)"
+            },
+            {
+              "explain": "Use the recurrence relation to find subsequent terms.",
+              "work": "\\(T_n = T_{n-1} + 120\\)"
+            },
+            {
+              "explain": "Calculate terms step-by-step up to the 12th term.",
+              "work": "Adding 120 repeatedly: \\(720, 840, 960, 1080, 1200, 1320, 1440, 1560, 1680, 1800, 1920, 2040\\)"
+            },
+            {
+              "explain": "State the completed sequence.",
+              "work": "\\(720, 840, 960, 1080, 1200, 1320, 1440, 1560, 1680, 1800, 1920, 2040, dots\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(4, 8, 12, \\dots\\)",
+          "options": [
+            "\\(14, 16, 18, 20\\)",
+            "\\(16, 20, 24, 28\\)",
+            "\\(16, 32, 64, 128\\)",
+            "\\(15, 18, 21, 24\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(16, 20, 24, 28\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(4, 8, 12, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The sequence is arithmetic with a common difference of 4."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(16, 20, 24, 28\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(7, 19, 31, \\dots\\)",
+          "options": [
+            "\\(45, 59, 73, 87\\)",
+            "\\(43, 53, 63, 73\\)",
+            "\\(41, 51, 61, 71\\)",
+            "\\(43, 55, 67, 79\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(43, 55, 67, 79\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(7, 19, 31, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The sequence is arithmetic with a common difference of 12."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(43, 55, 67, 79\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(3, 6, 12, \\dots\\)",
+          "options": [
+            "\\(20, 40, 80, 160\\)",
+            "\\(24, 36, 48, 60\\)",
+            "\\(18, 24, 30, 36\\)",
+            "\\(24, 48, 96, 192\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(24, 48, 96, 192\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(3, 6, 12, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The sequence is geometric with a common ratio of 2."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(24, 48, 96, 192\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(4, 8, 16, \\dots\\)",
+          "options": [
+            "\\(24, 48, 96, 192\\)",
+            "\\(32, 48, 64, 80\\)",
+            "\\(20, 24, 28, 32\\)",
+            "\\(32, 64, 128, 256\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(32, 64, 128, 256\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(4, 8, 16, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The sequence is geometric with a common ratio of 2."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(32, 64, 128, 256\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(45, 41, 37, \\dots\\)",
+          "options": [
+            "\\(33, 29, 25, 21\\)",
+            "\\(33, 30, 27, 24\\)",
+            "\\(34, 31, 28, 25\\)",
+            "\\(33, 28, 23, 18\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(33, 29, 25, 21\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(45, 41, 37, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The sequence is arithmetic with a common difference of -4."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(33, 29, 25, 21\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(42, 33, 24, \\dots\\)",
+          "options": [
+            "\\(15, 6, 0, -6\\)",
+            "\\(16, 8, 0, -8\\)",
+            "\\(15, 5, -5, -15\\)",
+            "\\(15, 6, -3, -12\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(15, 6, -3, -12\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(42, 33, 24, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The sequence is arithmetic with a common difference of -9."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(15, 6, -3, -12\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(32, 16, 8, \\dots\\)",
+          "options": [
+            "\\(4, 2, 1, \\dfrac{1}{2}\\)",
+            "\\(4, 2, 0, -2\\)",
+            "\\(4, 2, 1, 0\\)",
+            "\\(4, 2, \\dfrac{1}{2}, \\dfrac{1}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(4, 2, 1, \\dfrac{1}{2}\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(32, 16, 8, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The sequence is geometric with a common ratio of \\(\\dfrac{1}{2}\\)."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(4, 2, 1, dfrac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(162, 54, 18, \\dots\\)",
+          "options": [
+            "\\(6, 2, \\dfrac{2}{3}, \\dfrac{2}{9}\\)",
+            "\\(6, 3, 1.5, 0.75\\)",
+            "\\(6, 2, 0, -2\\)",
+            "\\(6, 2, \\dfrac{1}{3}, \\dfrac{1}{9}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(6, 2, \\dfrac{2}{3}, \\dfrac{2}{9}\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(162, 54, 18, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The sequence is geometric with a common ratio of \\(\\dfrac{1}{3}\\)."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(6, 2, dfrac{2}{3}, dfrac{2}{9}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(-2, 2, -2, \\dots\\)",
+          "options": [
+            "\\(-2, 2, -2, 2\\)",
+            "\\(0, 2, 0, 2\\)",
+            "\\(2, 0, -2, 0\\)",
+            "\\(2, -2, 2, -2\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(2, -2, 2, -2\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(-2, 2, -2, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The sequence alternates between -2 and 2, which is geometric with a common ratio of -1."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(2, -2, 2, -2\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(4, 9, 16, \\dots\\)",
+          "options": [
+            "\\(25, 35, 45, 55\\)",
+            "\\(23, 31, 40, 50\\)",
+            "\\(21, 26, 31, 36\\)",
+            "\\(25, 36, 49, 64\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(25, 36, 49, 64\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(4, 9, 16, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The sequence consists of perfect squares: \\((n+1)^2\\)."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(25, 36, 49, 64\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(\\dfrac{1}{3}, \\dfrac{2}{5}, \\dfrac{3}{7}, \\dots\\)",
+          "options": [
+            "\\(\\dfrac{4}{9}, \\dfrac{5}{10}, \\dfrac{6}{11}, \\dfrac{7}{12}\\)",
+            "\\(\\dfrac{4}{9}, \\dfrac{5}{11}, \\dfrac{6}{13}, \\dfrac{7}{15}\\)",
+            "\\(\\dfrac{4}{8}, \\dfrac{5}{10}, \\dfrac{6}{12}, \\dfrac{7}{14}\\)",
+            "\\(\\dfrac{4}{9}, \\dfrac{5}{12}, \\dfrac{6}{15}, \\dfrac{7}{18}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(\\dfrac{4}{9}, \\dfrac{5}{11}, \\dfrac{6}{13}, \\dfrac{7}{15}\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(\\dfrac{1}{3}, dfrac{2}{5}, dfrac{3}{7}, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The general term is \\(T_n = \\dfrac{n}{2n+1}\\)."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(\\dfrac{4}{9}, dfrac{5}{11}, dfrac{6}{13}, dfrac{7}{15}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q2l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the next four terms of the sequence:\n\\(27, -9, 3, \\dots\\)",
+          "options": [
+            "\\(-1, -3, -9, -27\\)",
+            "\\(-1, 0, 1, 0\\)",
+            "\\(1, -\\dfrac{1}{3}, \\dfrac{1}{9}, -\\dfrac{1}{27}\\)",
+            "\\(-1, \\dfrac{1}{3}, -\\dfrac{1}{9}, \\dfrac{1}{27}\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the rule (pattern) connecting consecutive terms.",
+          "solution": "\\(-1, \\dfrac{1}{3}, -\\dfrac{1}{9}, \\dfrac{1}{27}\\)",
+          "steps": [
+            {
+              "explain": "Observe the pattern of terms.",
+              "work": "Sequence: \\(27, -9, 3, dots\\)"
+            },
+            {
+              "explain": "Determine the rule connecting consecutive terms.",
+              "work": "The sequence is geometric with a common ratio of \\(-\\dfrac{1}{3}\\)."
+            },
+            {
+              "explain": "Apply the rule repeatedly to calculate the next four terms.",
+              "work": "\\(-1, dfrac{1}{3}, -\\dfrac{1}{9}, dfrac{1}{27}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1b-q10a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "The nth term of a sequence is given by \\(T_n = 8n + 6\\).\n\nShow that the eleven terms \\(T_1\\) to \\(T_{11}\\) are less than 100.",
+          "answer": "0",
+          "hint": "Set up the inequality T_n < 100 and find the range of integer values for n.",
+          "solution": "Setting \\(T_n < 100\\) gives \\(8n + 6 < 100 \\implies 8n < 94 \\implies n < 11.75\\).\nSince \\(n\\) must be an integer, the terms satisfying this inequality are \\(n \\le 11\\), which corresponds to the first 11 terms \\(T_1\\) to \\(T_{11}\\).",
+          "steps": [
+            {
+              "explain": "Set up the inequality stating that the terms of the sequence are strictly less than 100.",
+              "work": "\\(T_n < 100\\)"
+            },
+            {
+              "explain": "Substitute the formula \\( T_n = 8n + 6 \\) into the inequality.",
+              "work": "\\(8n + 6 < 100\\)"
+            },
+            {
+              "explain": "Subtract 6 from both sides to isolate the variable term.",
+              "work": "\\(8n < 94\\)"
+            },
+            {
+              "explain": "Divide both sides by 8 to solve for \\( n \\).",
+              "work": "\\(n < \\dfrac{94}{8} = 11.75\\)"
+            },
+            {
+              "explain": "Since the term index \\( n \\) must be a positive integer, the condition \\( n < 11.75 \\) is satisfied by the integers \\( n \\in \\{1, 2, dots, 11\\}\\).\nThis proves that exactly the first 11 terms are less than 100.",
+              "work": "\\(n \\le 11\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1b-q14a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The Fibonacci sequence is defined by:\n\\[F_1 = 1, \\quad F_2 = 1, \\quad F_n = F_{n-1} + F_{n-2}\\] for \\(n \\ge 3\\).\n\nWrite out the first 12 terms of the sequence.",
+          "options": [
+            "\\(1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233\\)",
+            "\\(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144\\)",
+            "\\(1, 1, 2, 3, 6, 9, 15, 24, 39, 63, 102, 165\\)",
+            "\\(1, 1, 2, 4, 7, 12, 20, 33, 54, 88, 143, 232\\)"
+          ],
+          "answer": 1,
+          "hint": "Each term is the sum of the two preceding terms.",
+          "solution": "\\(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144\\)",
+          "steps": [
+            {
+              "explain": "Start with the seed terms.",
+              "work": "\\(F_1 = 1, quad F_2 = 1\\)"
+            },
+            {
+              "explain": "Calculate subsequent terms by adding the previous two terms.",
+              "work": "\\[F_3 = 1+1 = 2, quad F_4 = 2+1 = 3, quad F_5 = 3+2 = 5\\]"
+            },
+            {
+              "explain": "Continue the addition pattern up to the 12th term.",
+              "work": "\\[F_{12} = F_{11} + F_{10} = 89 + 55 = 144\\]"
+            },
+            {
+              "explain": "List the first 12 terms.",
+              "work": "\\(1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1b-q14b",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The Fibonacci sequence is defined by:\n\\[F_1 = 1, \\quad F_2 = 1, \\quad F_n = F_{n-1} + F_{n-2}\\] for \\(n \\ge 3\\).\n\nExplain why every third term of the sequence is even and the rest are odd.",
+          "answer": "0",
+          "hint": "Examine the parity (odd/even) of the sum of two integers recursively.",
+          "solution": "Starting with two odd numbers, the parity pattern follows: Odd + Odd = Even (third term), Odd + Even = Odd (fourth term), Even + Odd = Odd (fifth term), and Odd + Odd = Even (sixth term).\nThis creates a repeating three-term parity cycle: Odd, Odd, Even.",
+          "steps": [
+            {
+              "explain": "State the addition rules for even and odd numbers.",
+              "work": "\\[\\text{Odd} + \\text{Odd} = \\text{Even}, quad \\text{Odd} + \\text{Even} = \\text{Odd}, quad \\text{Even} + \\text{Odd} = \\text{Odd}\\]"
+            },
+            {
+              "explain": "Determine the parity of the first three terms of the sequence.",
+              "work": "\\[F_1 = 1 \\; (\\text{Odd}), quad F_2 = 1 \\; (\\text{Odd}) \\implies F_3 = 1 + 1 = 2 \\; (\\text{Even})\\]"
+            },
+            {
+              "explain": "Find the parity of the next two terms.",
+              "work": "\\[F_4 = F_3 + F_2 = \\text{Even} + \\text{Odd} = \\text{Odd}, quad F_5 = F_4 + F_3 = \\text{Odd} + \\text{Even} = \\text{Odd}\\]"
+            },
+            {
+              "explain": "Determine the parity of the sixth term.",
+              "work": "\\[F_6 = F_5 + F_4 = \\text{Odd} + \\text{Odd} = \\text{Even}\\]"
+            },
+            {
+              "explain": "Notice that the terms \\(F_4, F_5, F_6\\) have the same parity pattern (Odd, Odd, Even) as \\(F_1, F_2, F_3\\).\\nSince each term depends only on the parity of the previous two, this 3-cycle (Odd, Odd, Even) repeats indefinitely.",
+              "work": "\\(\\text{Pattern: } \\text{Odd}, text{Odd}, text{Even}, text{Odd}, text{Odd}, text{Even}, dots\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y12a-1b-h1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An arithmetic progression has a first term of \\(3\\) and a common difference of \\(5\\). A geometric progression has a first term of \\(3\\) and a common ratio of \\(2\\). Find the smallest term greater than \\(100\\) that is common to both sequences.",
+          "options": [
+            "\\(768\\)",
+            "\\(192\\)",
+            "\\(384\\)",
+            "\\(96\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the terms of the geometric progression and test which term can be written in the form \\(3 + 5k\\) for some integer \\(k\\).",
+          "solution": "\\(768\\)",
+          "steps": [
+            {
+              "explain": "Write down the general formulas for both sequences.",
+              "work": "AP: \\(T_n = 3 + 5(n - 1)\\), GP: \\(G_m = 3 \\times 2^{m-1}\\)."
+            },
+            {
+              "explain": "List the terms of the geometric progression starting from \\(3\\).",
+              "work": "GP terms: \\(3, 6, 12, 24, 48, 96, 192, 384, 768, dots\\)"
+            },
+            {
+              "explain": "Set up the condition for a GP term to be in the AP.",
+              "work": "We need \\[3 \\times 2^{m-1} = 3 + 5(n - 1) \\implies 3(2^{m-1} - 1) = 5(n - 1)\\]. This means \\(3(2^{m-1} - 1)\\) must be divisible by \\(5\\)."
+            },
+            {
+              "explain": "Test the terms of the GP that are greater than \\(100\\).",
+              "work": "For \\(192\\): \\(192 - 3 = 189\\) (not divisible by 5). For \\(384\\): \\(384 - 3 = 381\\) (no). For \\(768\\): \\(768 - 3 = 765\\), which is \\(5 \\times 153\\) (yes)."
+            },
+            {
+              "explain": "State the smallest common term greater than \\(100\\).",
+              "work": "The smallest common term is \\(768\\)."
+            }
+          ]
+        },
+        {
+          "id": "y12a-1b-h9",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "For the sequence defined by \\(T_1 = 1\\), \\(T_2 = 3\\), and \\(T_n = T_{n-1} + T_{n-2}\\) for \\(n \\ge 3\\), show that every fourth term is a multiple of \\(3\\).",
+          "answer": "0",
+          "hint": "List out the first 10 terms of the sequence and identify their divisibility by 3.",
+          "solution": "Evaluating the first few terms gives the pattern of remainders modulo \\(3\\): \\(1, 0, 1, 1, 2, 0, 2, 2, 1, 0, \\dots\\) which repeats.\nListing the actual terms: \\(T_1 = 1\\), \\(T_2 = 3\\), \\(T_3 = 4\\), \\(T_4 = 7\\), \\(T_5 = 11\\), \\(T_6 = 18\\), \\(T_7 = 29\\), \\(T_8 = 47\\), \\(T_9 = 76\\), \\(T_{10} = 123\\).\nWe observe that the multiples of \\(3\\) are \\(T_2 = 3\\), \\(T_6 = 18\\), \\(T_{10} = 123\\), occurring at indices \\(n = 2, 6, 10, \\dots\\) (every fourth term).",
+          "steps": [
+            {
+              "explain": "Calculate the first 8 terms of the sequence.",
+              "work": "\\(T_1 = 1\\), \\(T_2 = 3\\), \\(T_3 = 4\\), \\(T_4 = 7\\), \\(T_5 = 11\\), \\(T_6 = 18\\), \\(T_7 = 29\\), \\(T_8 = 47\\)."
+            },
+            {
+              "explain": "Identify the terms that are divisible by 3.",
+              "work": "\\(T_2 = 3\\) (divisible by 3), \\(T_6 = 18\\) (divisible by 3)."
+            },
+            {
+              "explain": "Analyze the pattern of indices.",
+              "work": "The indices of terms divisible by 3 are \\(2, 6, 10, 14, dots\\). This is an arithmetic progression with first term 2 and common difference 4."
+            },
+            {
+              "explain": "Conclude that every fourth term starting from the second is a multiple of 3.",
+              "work": "Since \\(the remainder of T_n divided by 3 equals the remainder of T_{n-4} divided by 3\\) due to the periodic nature of Fibonacci-like sequence remainders, this pattern repeats indefinitely."
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y12a-1b-h29",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Show that if \\(S\\) is the sum to infinity of a geometric series with positive first term \\(a\\) and positive common ratio \\(r < 1\\), then the sum of the squares of the terms is \\(\\dfrac{a^2}{1 - r^2}\\).",
+          "answer": "0",
+          "hint": "Write out the first few terms of both the original series and the squared series.",
+          "solution": "If the original series is \\(a, ar, ar^2, \\dots\\), then the series of squares is \\(a^2, a^2r^2, a^2r^4, \\dots\\).\nThis is a geometric series with first term \\(A = a^2\\) and common ratio \\(R = r^2\\).\nSince \\(0 < r < 1 \\implies 0 < r^2 < 1\\), it converges.\nIts sum to infinity is \\[\\dfrac{A}{1 - R} = \\dfrac{a^2}{1 - r^2}\\].",
+          "steps": [
+            {
+              "explain": "List the terms of the original geometric series.",
+              "work": "Original series: \\(a, ar, ar^2, ar^3, dots\\)."
+            },
+            {
+              "explain": "List the terms of the series of squares.",
+              "work": "Squared series: \\(a^2, a^2r^2, a^2r^4, a^2r^6, dots\\)."
+            },
+            {
+              "explain": "Identify the parameters of the new series of squares.",
+              "work": "First term \\(A = a^2\\), common ratio \\(R = r^2\\)."
+            },
+            {
+              "explain": "Verify the convergence of the new series.",
+              "work": "Since \\(0 < r < 1\\), it follows that \\(0 < r^2 < 1\\), so the series of squares converges."
+            },
+            {
+              "explain": "Apply the limiting sum formula to the new series.",
+              "work": "Sum = \\[\\dfrac{A}{1 - R} = \\dfrac{a^2}{1 - r^2}\\]."
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y12a-1b-h45",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A tree grows by \\(1.5\\) meters in its first year. Each year thereafter, its growth is \\(75\\%\\) of its growth in the previous year. What is the maximum possible height the tree can grow (excluding its initial height)?",
+          "options": [
+            "\\(6\\) meters",
+            "\\(5\\) meters",
+            "\\(8\\) meters",
+            "\\(4\\) meters"
+          ],
+          "answer": 0,
+          "hint": "The annual growth values form an infinite geometric series with limiting sum.",
+          "solution": "\\(6\\) meters",
+          "steps": [
+            {
+              "explain": "Write the growth progression.",
+              "work": "Growth: \\(1.5, 1.5 \\times 0.75, 1.5 \\times 0.75^2, dots\\)."
+            },
+            {
+              "explain": "Identify parameters of this infinite series.",
+              "work": "First term \\(a = 1.5\\), common ratio \\(r = 0.75\\)."
+            },
+            {
+              "explain": "Apply the sum to infinity formula.",
+              "work": "Max Growth = \\[\\dfrac{1.5}{1 - 0.75} = \\dfrac{1.5}{0.25}\\]."
+            },
+            {
+              "explain": "Calculate the final maximum height.",
+              "work": "Height = \\(6\\) meters."
+            }
+          ]
+        },
+        {
+          "id": "y12a-1b-h60",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Prove that the sum of the first \\(n\\) odd natural numbers is \\(n^2\\).",
+          "answer": "0",
+          "hint": "Write the sequence of odd numbers as an arithmetic progression with \\(a = 1\\) and \\(d = 2\\).",
+          "solution": "The first \\(n\\) odd numbers form an AP with \\(a = 1\\) and \\(d = 2\\).\nThe sum is \\[S_n = \\dfrac{n}{2}[2a + (n-1)d] = \\dfrac{n}{2}[2 + 2n - 2] = n^2\\].",
+          "steps": [
+            {
+              "explain": "Identify parameters of the progression.",
+              "work": "Sequence: \\(1, 3, 5, dots, 2n-1\\). First term \\(a = 1\\), difference \\(d = 2\\)."
+            },
+            {
+              "explain": "Write down the sum formula.",
+              "work": "\\[S_n = \\dfrac{n}{2}[2a + (n-1)d]\\]."
+            },
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(d\\) into the formula.",
+              "work": "\\[S_n = \\dfrac{n}{2}[2(1) + (n-1)2]\\]."
+            },
+            {
+              "explain": "Simplify inside the brackets.",
+              "work": "\\[S_n = \\dfrac{n}{2}[2 + 2n - 2] = \\dfrac{n}{2}[2n]\\]."
+            },
+            {
+              "explain": "State the final sum.",
+              "work": "\\(S_n = n^2\\)."
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y12a-1b-h75",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the sum of the first \\(24\\) terms of the sequence \\(T_n = \\cos(180n^\\circ)\\) for \\(n \\ge 1\\).",
+          "options": [
+            "\\(0\\)",
+            "-12",
+            "12",
+            "-1"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the first few terms to find the repeating pattern of values.",
+          "solution": "\\(0\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the first four terms.",
+              "work": "\\(T_1 = -1\\), \\(T_2 = 1\\), \\(T_3 = -1\\), \\(T_4 = 1\\)."
+            },
+            {
+              "explain": "Identify the periodic pattern.",
+              "work": "The sequence alternates: \\(-1, 1, -1, 1, dots\\)."
+            },
+            {
+              "explain": "Find the sum of one complete cycle of 2 terms.",
+              "work": "Cycle sum = \\(-1 + 1 = 0\\)."
+            },
+            {
+              "explain": "Calculate the sum of 24 terms.",
+              "work": "Since 24 is a multiple of the period 2, the sum is \\(12 \\times 0 = 0\\)."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<svg viewBox="-40 -40 330 230" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="40,130 140,40 200,130" fill="none" stroke="#000" stroke-width="1"/>
+  <line x1="40" y1="130" x2="180" y2="4" stroke="#000" stroke-width="1" stroke-dasharray="4"/>
+  <circle cx="40" cy="130" r="1.2" fill="#000"/>
+  <circle cx="140" cy="40" r="1.2" fill="#000"/>
+  <circle cx="200" cy="130" r="1.2" fill="#000"/>
+  <text x="20" y="140" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">W</text>
+  <text x="120" y="30" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">X</text>
+  <text x="205" y="140" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">Y</text>
+  <text x="150" y="50" font-family="serif" font-size="12" fill="#000">80°</text>
+  <line x1="84" y1="82" x2="92" y2="91" stroke="#000" stroke-width="1"/>
+  <line x1="88" y1="78" x2="96" y2="87" stroke="#000" stroke-width="1"/>
+  <line x1="163" y1="86" x2="173" y2="79" stroke="#000" stroke-width="1"/>
+  <line x1="167" y1="91" x2="177" y2="84" stroke="#000" stroke-width="1"/>
+  <path d="M 60 130 A 20 20 0 0 0 55 116" fill="none" stroke="#000" stroke-width="0.8"/>
+  <text x="65" y="125" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">θ</text>
+</svg>

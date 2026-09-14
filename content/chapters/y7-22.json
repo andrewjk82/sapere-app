@@ -1,0 +1,219 @@
+{
+  "chapterId": "y7-22",
+  "title": "Sets and Venn diagrams",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "y7-22a",
+      "code": "22A",
+      "title": "Describing and naming sets",
+      "questions": [
+        {
+          "id": "7BGQVE7o8pj3MmMx83gS",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the elements {multiples of 6 between 10 and 40} in ascending order. Example: 1,2,3 (without spaces)",
+          "options": [
+            "{12,18,24,30,36}",
+            "{18,24,30,36}",
+            "{18,24,30}",
+            "{12,18,24,30}"
+          ],
+          "answer": 0,
+          "solution": "The multiples of 6 between 10 and 40 are 12, 18, 24, 30, 36.",
+          "steps": [
+            {
+              "explain": "Identify the multiples of 6.",
+              "work": "6, 12, 18, 24, 30, 36, 42..."
+            },
+            {
+              "explain": "Select the multiples that are strictly between 10 and 40.",
+              "work": "12, 18, 24, 30, 36"
+            },
+            {
+              "explain": "Format as a set without spaces.",
+              "work": "{12,18,24,30,36}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "8LZ8gHkGd3moFrEQCZGN",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the elements of {odd whole numbers between 0 and 12} in ascending order. Example: 1,2,3 (without spaces)",
+          "options": [
+            "{1,3,5,7,9,11}",
+            "{1,2,3,5,7,9,11}",
+            "{3,5,7,9,11}",
+            "{1,3,5,7,9}"
+          ],
+          "answer": 0,
+          "solution": "The odd whole numbers between 0 and 12 are 1, 3, 5, 7, 9, 11.",
+          "steps": [
+            {
+              "explain": "Identify all whole numbers between 0 and 12.",
+              "work": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11"
+            },
+            {
+              "explain": "Select only the odd numbers.",
+              "work": "1, 3, 5, 7, 9, 11"
+            },
+            {
+              "explain": "Format as a set without spaces.",
+              "work": "{1,3,5,7,9,11}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "AzFRPzaEQQsRpx6BWd3M",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the elements {perfect squares less than 50} in ascending order. Example: 1,2,3 (without spaces)",
+          "options": [
+            "{1,4,9,16,25,36,49}",
+            "{0,1,4,9,16,25,36,49}",
+            "{4,9,16,25,36,49}",
+            "{1,4,9,16,25,36}"
+          ],
+          "answer": 0,
+          "hint": "Square number is the number multiply by itself.",
+          "solution": "The perfect squares less than 50 are 1, 4, 9, 16, 25, 36, and 49.",
+          "steps": [
+            {
+              "explain": "Identify the perfect squares.",
+              "work": "1, 4, 9, 16, 25, 36, 49, 64..."
+            },
+            {
+              "explain": "Select the perfect squares that are strictly less than 50.",
+              "work": "1, 4, 9, 16, 25, 36, 49"
+            },
+            {
+              "explain": "Format as a set without spaces.",
+              "work": "{1,4,9,16,25,36,49}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "i9KgZsTNFMWwSsfkU1qR",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the elements of the set: {two digit numbers ending with 3} in ascending order.",
+          "options": [
+            "{13,23,33,43,53,63,73,83}",
+            "{03,13,23,33,43,53,63,73,83,93}",
+            "{13,23,33,43,53,63,73,83,93}",
+            "{3,13,23,33,43,53,63,73,83,93}"
+          ],
+          "answer": 2,
+          "hint": "Try to write the numbers.",
+          "solution": "The two-digit numbers ending with 3 are 13, 23, 33, 43, 53, 63, 73, 83, and 93.",
+          "steps": [
+            {
+              "explain": "Identify all numbers ending with 3.",
+              "work": "3, 13, 23, 33..."
+            },
+            {
+              "explain": "Select only the two-digit numbers.",
+              "work": "13, 23, 33, 43, 53, 63, 73, 83, 93"
+            },
+            {
+              "explain": "Format as a set without spaces.",
+              "work": "{13,23,33,43,53,63,73,83,93}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "mbHEpWsILBdaUorEyUiB",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the elements {prime numbers less than 30} in ascending order. Example: 2,3,5 (without spaces)",
+          "options": [
+            "{2,3,5,7,11,13,17,19,23,29}",
+            "{2,3,7,11,13,17,19,23,29}",
+            "{1,2,3,5,7,11,13,17,19,23,29}",
+            "{3,5,7,11,13,17,19,23,29}"
+          ],
+          "answer": 0,
+          "solution": "The prime numbers less than 30 are 2, 3, 5, 7, 11, 13, 17, 19, 23, and 29.",
+          "steps": [
+            {
+              "explain": "Identify the prime numbers.",
+              "work": "2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31..."
+            },
+            {
+              "explain": "Select the prime numbers that are strictly less than 30.",
+              "work": "2, 3, 5, 7, 11, 13, 17, 19, 23, 29"
+            },
+            {
+              "explain": "Format as a set without spaces.",
+              "work": "{2,3,5,7,11,13,17,19,23,29}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "sEtjIuBLYbi4GTcttU5S",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the elements in the set of months ending in 'y' in chronological order.",
+          "options": [
+            "January, February, March, May, July",
+            "January, February, May",
+            "January, May, July",
+            "January, February, May, July"
+          ],
+          "answer": 3,
+          "solution": "The months ending in 'y' are January, February, May, and July.",
+          "steps": [
+            {
+              "explain": "List all the months of the year.",
+              "work": "\\text{January, February, March, April, May, June, July, August, September, October, November, December}"
+            },
+            {
+              "explain": "Select only the months that end with the letter 'y'.",
+              "work": "\\text{January, February, May, July}"
+            },
+            {
+              "explain": "Ensure they are listed in chronological order.",
+              "work": "\\text{January, February, May, July}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "XDSBqLiQC431NkIxJFW2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the elements {multiples of 7 between 10 and 40} in ascending order. Example: 1,2,3 (without spaces)",
+          "options": [
+            "{14,21,28,35}",
+            "{7,14,21,28,35}",
+            "{14,21,28,35,42}",
+            "{21,28,35}"
+          ],
+          "answer": 0,
+          "solution": "The multiples of 7 between 10 and 40 are 14, 21, 28, and 35.",
+          "steps": [
+            {
+              "explain": "Identify the multiples of 7.",
+              "work": "7, 14, 21, 28, 35, 42..."
+            },
+            {
+              "explain": "Select the multiples that are strictly between 10 and 40.",
+              "work": "14, 21, 28, 35"
+            },
+            {
+              "explain": "Format as a set without spaces.",
+              "work": "{14,21,28,35}"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    }
+  ]
+}

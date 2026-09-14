@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 250" width="100%" height="auto" style="max-width:400px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <!-- Hidden edges -->
+  <line x1="180" y1="160" x2="340" y2="160" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="260" y1="50" x2="180" y2="160" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="180" y1="160" x2="80" y2="190" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Visible edges -->
+  <line x1="260" y1="50" x2="340" y2="160" stroke="#475569" stroke-width="2"/>
+  <line x1="260" y1="50" x2="160" y2="80" stroke="#475569" stroke-width="2"/>
+  <line x1="340" y1="160" x2="240" y2="190" stroke="#475569" stroke-width="2"/>
+  
+  <polygon points="160,80 240,190 80,190" fill="#fee2e2" stroke="#ef4444" stroke-width="3" stroke-linejoin="round"/>
+  <text x="160" y="155" font-family="system-ui,sans-serif" font-size="14" font-weight="600" fill="#991b1b" text-anchor="middle">A = 22 cm²</text>
+  <line x1="250" y1="200" x2="350" y2="170" stroke="#64748b" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="310" y="200" font-family="system-ui,sans-serif" font-size="16" font-weight="600" fill="#475569">l = 12 cm</text>
+</svg>

@@ -1,0 +1,1299 @@
+{
+  "chapterId": "exam:year7ch1k",
+  "title": "Exam Practice",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "exam:year7ch1k",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-1k-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "There are 6245 golf balls to be packed into boxes of 35. How many boxes will be filled and how many golf balls will be left over?\nProvide your answer in the form \"boxes, left over\" (e.g. 178, 15).",
+          "options": [
+            "\\(178\\text{ boxes, }25\\text{ left over}\\)",
+            "\\(179\\text{ boxes, }15\\text{ left over}\\)",
+            "\\(178\\text{ boxes, }15\\text{ left over}\\)",
+            "\\(177\\text{ boxes, }15\\text{ left over}\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide 6245 by 35.",
+          "steps": [
+            {
+              "explain": "Divide 6245 by 35. Start by dividing 62 by 35.",
+              "work": "\\(35 \\times 1 = 35\\)"
+            },
+            {
+              "explain": "Subtract 35 from 62 and bring down 4 to make 274.",
+              "work": "\\(62 - 35 = 27 \\implies 274\\)"
+            },
+            {
+              "explain": "Divide 274 by 35. Try multiplying 35 by 7.",
+              "work": "\\(35 \\times 7 = 245\\)"
+            },
+            {
+              "explain": "Subtract 245 from 274 and bring down 5 to make 295.",
+              "work": "\\(274 - 245 = 29 \\implies 295\\)"
+            },
+            {
+              "explain": "Divide 295 by 35. Try multiplying 35 by 8.",
+              "work": "\\(35 \\times 8 = 280\\)"
+            },
+            {
+              "explain": "Subtract 280 from 295 to find the remainder of leftover balls.",
+              "work": "\\(295 - 280 = 15\\)"
+            },
+            {
+              "explain": "So, 178 boxes are filled and 15 golf balls are left over.",
+              "work": "\\(\\text{Boxes} = 178, quad \\text{Leftover} = 15\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-1k-h41",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial bakery mixes 7895 grams of spice compound to be divided into storage tins of 24 grams each. How many tins are fully filled, and how many grams of spice remain?",
+          "options": [
+            "\\(329\\text{ r }23\\)",
+            "\\(328\\text{ r }22\\)",
+            "\\(327\\text{ r }0\\)",
+            "\\(328\\text{ r }23\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 7895 by 24.",
+              "work": "\\(7895 \\div 24\\)"
+            },
+            {
+              "explain": "Divide the initial digits (78) by 24.",
+              "work": "\\(24 \\times 3 = 72\\)"
+            },
+            {
+              "explain": "Subtract 72 from 78 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(78 - 72 = 6\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 328, quad \\text{Remainder} = 23\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h42",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A deep-sea mining drill extracts 9875 kg of rare earth core samples. If the samples are packed in crates of 32 kg each, how many crates are filled, and what is the leftover mass in kilograms?",
+          "options": [
+            "\\(308\\text{ r }18\\)",
+            "\\(307\\text{ r }20\\)",
+            "\\(308\\text{ r }19\\)",
+            "\\(309\\text{ r }19\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9875 by 32.",
+              "work": "\\(9875 \\div 32\\)"
+            },
+            {
+              "explain": "Divide the initial digits (98) by 32.",
+              "work": "\\(32 \\times 3 = 96\\)"
+            },
+            {
+              "explain": "Subtract 96 from 98 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(98 - 96 = 2\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 308, quad \\text{Remainder} = 19\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h43",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cybersecurity team monitors 9368 network data packets. They are grouped into database rows of 15 packets each. How many database rows are filled, and how many packets are leftover?",
+          "options": [
+            "\\(624\\text{ r }8\\)",
+            "\\(625\\text{ r }8\\)",
+            "\\(624\\text{ r }7\\)",
+            "\\(623\\text{ r }9\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9368 by 15.",
+              "work": "\\(9368 \\div 15\\)"
+            },
+            {
+              "explain": "Divide the initial digits (93) by 15.",
+              "work": "\\(15 \\times 6 = 90\\)"
+            },
+            {
+              "explain": "Subtract 90 from 93 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(93 - 90 = 3\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 624, quad \\text{Remainder} = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h44",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A chemical crystallization process produces 8792 milliliters of acidic fluid. The fluid is poured into glass vials of 13 milliliters each. How many vials are fully filled, and how many milliliters remain?",
+          "options": [
+            "\\(677\\text{ r }4\\)",
+            "\\(675\\text{ r }5\\)",
+            "\\(676\\text{ r }3\\)",
+            "\\(676\\text{ r }4\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 8792 by 13.",
+              "work": "\\(8792 \\div 13\\)"
+            },
+            {
+              "explain": "Divide the initial digits (87) by 13.",
+              "work": "\\(13 \\times 6 = 78\\)"
+            },
+            {
+              "explain": "Subtract 78 from 87 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(87 - 78 = 9\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 676, quad \\text{Remainder} = 4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h45",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A commercial organic farm cultivates 9182 botanical seedlings. If they are distributed across 45 climate cells, how many seedlings are in each cell, and how many seedlings are left over?",
+          "options": [
+            "\\(204\\text{ r }2\\)",
+            "\\(205\\text{ r }2\\)",
+            "\\(203\\text{ r }3\\)",
+            "\\(204\\text{ r }1\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9182 by 45.",
+              "work": "\\(9182 \\div 45\\)"
+            },
+            {
+              "explain": "Divide the initial digits (91) by 45.",
+              "work": "\\(45 \\times 2 = 90\\)"
+            },
+            {
+              "explain": "Subtract 90 from 91 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(91 - 90 = 1\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 204, quad \\text{Remainder} = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h46",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A high-capacity solar field allocates 6872 megawatt records across 16 database grids. How many records are allocated per grid, and how many records are left over?",
+          "options": [
+            "\\(429\\text{ r }8\\)",
+            "\\(430\\text{ r }8\\)",
+            "\\(429\\text{ r }7\\)",
+            "\\(428\\text{ r }9\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 6872 by 16.",
+              "work": "\\(6872 \\div 16\\)"
+            },
+            {
+              "explain": "Divide the initial digits (68) by 16.",
+              "work": "\\(16 \\times 4 = 64\\)"
+            },
+            {
+              "explain": "Subtract 64 from 68 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(68 - 64 = 4\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 429, quad \\text{Remainder} = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h47",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An ocean floor acoustic array captures 9885 sonar pings. If they are organized into files of 14 pings each, how many files are completed, and how many pings are left over?",
+          "options": [
+            "\\(707\\text{ r }1\\)",
+            "\\(705\\text{ r }2\\)",
+            "\\(706\\text{ r }1\\)",
+            "\\(706\\text{ r }0\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9885 by 14.",
+              "work": "\\(9885 \\div 14\\)"
+            },
+            {
+              "explain": "Divide the initial digits (98) by 14.",
+              "work": "\\(14 \\times 7 = 98\\)"
+            },
+            {
+              "explain": "Subtract 98 from 98 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(98 - 98 = 0\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 706, quad \\text{Remainder} = 1\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h48",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An automated distribution warehouse tracks 8996 cargo pallets. If 34 automated gantry cranes move them, how many pallets does each crane move, and how many pallets are left over?",
+          "options": [
+            "\\(264\\text{ r }20\\)",
+            "\\(265\\text{ r }20\\)",
+            "\\(264\\text{ r }19\\)",
+            "\\(263\\text{ r }21\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 8996 by 34.",
+              "work": "\\(8996 \\div 34\\)"
+            },
+            {
+              "explain": "Divide the initial digits (89) by 34.",
+              "work": "\\(34 \\times 2 = 68\\)"
+            },
+            {
+              "explain": "Subtract 68 from 89 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(89 - 68 = 21\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 264, quad \\text{Remainder} = 20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h49",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An archaeological expedition archives 9535 fossil teeth. They are stored in cases of 18 teeth each. How many cases are filled, and how many teeth are leftover?",
+          "options": [
+            "\\(529\\text{ r }12\\)",
+            "\\(528\\text{ r }14\\)",
+            "\\(529\\text{ r }13\\)",
+            "\\(530\\text{ r }13\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9535 by 18.",
+              "work": "\\(9535 \\div 18\\)"
+            },
+            {
+              "explain": "Divide the initial digits (95) by 18.",
+              "work": "\\(18 \\times 5 = 90\\)"
+            },
+            {
+              "explain": "Subtract 90 from 95 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(95 - 90 = 5\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 529, quad \\text{Remainder} = 13\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h50",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A stellar classification program scans 9995 stars. If they are divided among 26 analysis folders, how many stars are in each folder, and how many are left over?",
+          "options": [
+            "\\(384\\text{ r }11\\)",
+            "\\(385\\text{ r }11\\)",
+            "\\(384\\text{ r }10\\)",
+            "\\(383\\text{ r }12\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9995 by 26.",
+              "work": "\\(9995 \\div 26\\)"
+            },
+            {
+              "explain": "Divide the initial digits (99) by 26.",
+              "work": "\\(26 \\times 3 = 78\\)"
+            },
+            {
+              "explain": "Subtract 78 from 99 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(99 - 78 = 21\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 384, quad \\text{Remainder} = 11\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h51",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An offshore kelp farm harvests 8590 kg of wet biomass. The biomass is packed in bags of 17 kg each. How many bags are filled, and what is the leftover mass in kilograms?",
+          "options": [
+            "\\(505\\text{ r }4\\)",
+            "\\(505\\text{ r }5\\)",
+            "\\(506\\text{ r }5\\)",
+            "\\(504\\text{ r }6\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 8590 by 17.",
+              "work": "\\(8590 \\div 17\\)"
+            },
+            {
+              "explain": "Divide the initial digits (85) by 17.",
+              "work": "\\(17 \\times 5 = 85\\)"
+            },
+            {
+              "explain": "Subtract 85 from 85 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(85 - 85 = 0\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 505, quad \\text{Remainder} = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h52",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A wind kinetic sensor records 9935 rotational records. If they are stored in logs of 28 records each, how many logs are completed, and how many records are leftover?",
+          "options": [
+            "\\(353\\text{ r }24\\)",
+            "\\(354\\text{ r }22\\)",
+            "\\(354\\text{ r }23\\)",
+            "\\(355\\text{ r }23\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9935 by 28.",
+              "work": "\\(9935 \\div 28\\)"
+            },
+            {
+              "explain": "Divide the initial digits (99) by 28.",
+              "work": "\\(28 \\times 3 = 84\\)"
+            },
+            {
+              "explain": "Subtract 84 from 99 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(99 - 84 = 15\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 354, quad \\text{Remainder} = 23\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h53",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A logistics hub schedules 9198 delivery routes to be shared by 15 regional fleets. How many routes does each fleet receive, and how many routes are left over?",
+          "options": [
+            "\\(612\\text{ r }4\\)",
+            "\\(614\\text{ r }3\\)",
+            "\\(613\\text{ r }2\\)",
+            "\\(613\\text{ r }3\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9198 by 15.",
+              "work": "\\(9198 \\div 15\\)"
+            },
+            {
+              "explain": "Divide the initial digits (91) by 15.",
+              "work": "\\(15 \\times 6 = 90\\)"
+            },
+            {
+              "explain": "Subtract 90 from 91 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(91 - 90 = 1\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 613, quad \\text{Remainder} = 3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h54",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A microchip design house drafts 8935 precision layout shapes using 18 auto-routing modules. How many layouts does each module draw, and how many shapes are leftover?",
+          "options": [
+            "\\(496\\text{ r }7\\)",
+            "\\(497\\text{ r }7\\)",
+            "\\(496\\text{ r }6\\)",
+            "\\(495\\text{ r }8\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 8935 by 18.",
+              "work": "\\(8935 \\div 18\\)"
+            },
+            {
+              "explain": "Divide the initial digits (89) by 18.",
+              "work": "\\(18 \\times 4 = 72\\)"
+            },
+            {
+              "explain": "Subtract 72 from 89 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(89 - 72 = 17\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 496, quad \\text{Remainder} = 7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h55",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A meteorological drone measures 9485 atmospheric pressure points across 26 sensor grids. How many pressure points are recorded per grid, and how many remain?",
+          "options": [
+            "\\(363\\text{ r }22\\)",
+            "\\(365\\text{ r }21\\)",
+            "\\(364\\text{ r }21\\)",
+            "\\(364\\text{ r }20\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9485 by 26.",
+              "work": "\\(9485 \\div 26\\)"
+            },
+            {
+              "explain": "Divide the initial digits (94) by 26.",
+              "work": "\\(26 \\times 3 = 78\\)"
+            },
+            {
+              "explain": "Subtract 78 from 94 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(94 - 78 = 16\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 364, quad \\text{Remainder} = 21\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h56",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A gaming server cluster handles 9745 online multiplayer actions on 24 local channel rings. How many actions are run per channel, and how many actions remain?",
+          "options": [
+            "\\(406\\text{ r }1\\)",
+            "\\(406\\text{ r }0\\)",
+            "\\(405\\text{ r }2\\)",
+            "\\(407\\text{ r }1\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9745 by 24.",
+              "work": "\\(9745 \\div 24\\)"
+            },
+            {
+              "explain": "Divide the initial digits (97) by 24.",
+              "work": "\\(24 \\times 4 = 96\\)"
+            },
+            {
+              "explain": "Subtract 96 from 97 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(97 - 96 = 1\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 406, quad \\text{Remainder} = 1\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h57",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A coffee roasting warehouse imports 9982 green coffee bags. They are loaded onto trucks that can carry 15 bags each. How many trucks are filled, and how many bags are leftover?",
+          "options": [
+            "\\(665\\text{ r }6\\)",
+            "\\(666\\text{ r }7\\)",
+            "\\(664\\text{ r }8\\)",
+            "\\(665\\text{ r }7\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9982 by 15.",
+              "work": "\\(9982 \\div 15\\)"
+            },
+            {
+              "explain": "Divide the initial digits (99) by 15.",
+              "work": "\\(15 \\times 6 = 90\\)"
+            },
+            {
+              "explain": "Subtract 90 from 99 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(99 - 90 = 9\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 665, quad \\text{Remainder} = 7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h58",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A regional rail grid coordinates 9302 scheduling sheets using 13 computerized dispatch routes. How many sheets are managed per route, and how many sheets are leftover?",
+          "options": [
+            "\\(715\\text{ r }6\\)",
+            "\\(715\\text{ r }7\\)",
+            "\\(714\\text{ r }8\\)",
+            "\\(716\\text{ r }7\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9302 by 13.",
+              "work": "\\(9302 \\div 13\\)"
+            },
+            {
+              "explain": "Divide the initial digits (93) by 13.",
+              "work": "\\(13 \\times 7 = 91\\)"
+            },
+            {
+              "explain": "Subtract 91 from 93 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(93 - 91 = 2\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 715, quad \\text{Remainder} = 7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h59",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A waste water system treats 9995 liters of biological residue using 32 bioreactor tubes. How many liters are processed per tube, and how many liters remain?",
+          "options": [
+            "\\(312\\text{ r }10\\)",
+            "\\(311\\text{ r }12\\)",
+            "\\(313\\text{ r }11\\)",
+            "\\(312\\text{ r }11\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9995 by 32.",
+              "work": "\\(9995 \\div 32\\)"
+            },
+            {
+              "explain": "Divide the initial digits (99) by 32.",
+              "work": "\\(32 \\times 3 = 96\\)"
+            },
+            {
+              "explain": "Subtract 96 from 99 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(99 - 96 = 3\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 312, quad \\text{Remainder} = 11\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h60",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An environmental research balloon collects 9330 high-altitude particulate samples in 16 test tanks. How many samples are in each tank, and how many samples are leftover?",
+          "options": [
+            "\\(584\\text{ r }2\\)",
+            "\\(582\\text{ r }3\\)",
+            "\\(583\\text{ r }2\\)",
+            "\\(583\\text{ r }1\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9330 by 16.",
+              "work": "\\(9330 \\div 16\\)"
+            },
+            {
+              "explain": "Divide the initial digits (93) by 16.",
+              "work": "\\(16 \\times 5 = 80\\)"
+            },
+            {
+              "explain": "Subtract 80 from 93 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(93 - 80 = 13\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 583, quad \\text{Remainder} = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h61",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A semiconductor cleanroom packs 9880 silicon microprocessors into trays. If each tray holds 16 microprocessors, how many trays are filled, and how many microprocessors are leftover?",
+          "options": [
+            "\\(618\\text{ r }8\\)",
+            "\\(617\\text{ r }7\\)",
+            "\\(616\\text{ r }9\\)",
+            "\\(617\\text{ r }8\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9880 by 16.",
+              "work": "\\(9880 \\div 16\\)"
+            },
+            {
+              "explain": "Divide the initial digits (98) by 16.",
+              "work": "\\(16 \\times 6 = 96\\)"
+            },
+            {
+              "explain": "Subtract 96 from 98 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(98 - 96 = 2\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 617, quad \\text{Remainder} = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h62",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A deep-space radio receiver processes 8935 cosmic static pulses over 22 observation periods. How many pulses are processed per period, and how many pulses remain?",
+          "options": [
+            "\\(405\\text{ r }4\\)",
+            "\\(407\\text{ r }3\\)",
+            "\\(406\\text{ r }2\\)",
+            "\\(406\\text{ r }3\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 8935 by 22.",
+              "work": "\\(8935 \\div 22\\)"
+            },
+            {
+              "explain": "Divide the initial digits (89) by 22.",
+              "work": "\\(22 \\times 4 = 88\\)"
+            },
+            {
+              "explain": "Subtract 88 from 89 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(89 - 88 = 1\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 406, quad \\text{Remainder} = 3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h63",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A robotic fruit packaging plant processes 9245 organic pears. The pears are sorted into boxes of 36 pears each. How many boxes are filled, and how many pears are left over?",
+          "options": [
+            "\\(255\\text{ r }30\\)",
+            "\\(256\\text{ r }28\\)",
+            "\\(257\\text{ r }29\\)",
+            "\\(256\\text{ r }29\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9245 by 36.",
+              "work": "\\(9245 \\div 36\\)"
+            },
+            {
+              "explain": "Divide the initial digits (92) by 36.",
+              "work": "\\(36 \\times 2 = 72\\)"
+            },
+            {
+              "explain": "Subtract 72 from 92 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(92 - 72 = 20\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 256, quad \\text{Remainder} = 29\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h64",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A physics research simulator logs 9815 atomic collision profiles across 32 processor nodes. How many collision profiles are logged per node, and how many profiles are leftover?",
+          "options": [
+            "\\(306\\text{ r }22\\)",
+            "\\(305\\text{ r }24\\)",
+            "\\(306\\text{ r }23\\)",
+            "\\(307\\text{ r }23\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9815 by 32.",
+              "work": "\\(9815 \\div 32\\)"
+            },
+            {
+              "explain": "Divide the initial digits (98) by 32.",
+              "work": "\\(32 \\times 3 = 96\\)"
+            },
+            {
+              "explain": "Subtract 96 from 98 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(98 - 96 = 2\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 306, quad \\text{Remainder} = 23\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h65",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A botanist collects 9602 flower seeds. If they are packed in packets of 24 seeds each, how many packets are filled, and how many seeds are leftover?",
+          "options": [
+            "\\(400\\text{ r }2\\)",
+            "\\(399\\text{ r }3\\)",
+            "\\(401\\text{ r }2\\)",
+            "\\(400\\text{ r }1\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9602 by 24.",
+              "work": "\\(9602 \\div 24\\)"
+            },
+            {
+              "explain": "Divide the initial digits (96) by 24.",
+              "work": "\\(24 \\times 4 = 96\\)"
+            },
+            {
+              "explain": "Subtract 96 from 96 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(96 - 96 = 0\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 400, quad \\text{Remainder} = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h66",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A wind turbine array reports 9175 aerodynamic velocity sensors across 16 different test models. How many sensors are tested per model, and how many sensors are leftover?",
+          "options": [
+            "\\(573\\text{ r }6\\)",
+            "\\(574\\text{ r }7\\)",
+            "\\(573\\text{ r }7\\)",
+            "\\(572\\text{ r }8\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9175 by 16.",
+              "work": "\\(9175 \\div 16\\)"
+            },
+            {
+              "explain": "Divide the initial digits (91) by 16.",
+              "work": "\\(16 \\times 5 = 80\\)"
+            },
+            {
+              "explain": "Subtract 80 from 91 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(91 - 80 = 11\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 573, quad \\text{Remainder} = 7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h67",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A chemical processing plant synthesizes 8465 liters of solvent to fill canisters of 12 liters each. How many canisters are completed, and how many liters remain?",
+          "options": [
+            "\\(704\\text{ r }6\\)",
+            "\\(706\\text{ r }5\\)",
+            "\\(705\\text{ r }4\\)",
+            "\\(705\\text{ r }5\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 8465 by 12.",
+              "work": "\\(8465 \\div 12\\)"
+            },
+            {
+              "explain": "Divide the initial digits (84) by 12.",
+              "work": "\\(12 \\times 7 = 84\\)"
+            },
+            {
+              "explain": "Subtract 84 from 84 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(84 - 84 = 0\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 705, quad \\text{Remainder} = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h68",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An education network streams 9855 instructional videos across 27 course paths. How many videos are allocated per path, and how many videos are leftover?",
+          "options": [
+            "\\(365\\text{ r }13\\)",
+            "\\(364\\text{ r }1\\)",
+            "\\(366\\text{ r }0\\)",
+            "\\(365\\text{ r }0\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9855 by 27.",
+              "work": "\\(9855 \\div 27\\)"
+            },
+            {
+              "explain": "Divide the initial digits (98) by 27.",
+              "work": "\\(27 \\times 3 = 81\\)"
+            },
+            {
+              "explain": "Subtract 81 from 98 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(98 - 81 = 17\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 365, quad \\text{Remainder} = 0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h69",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A solar panel setup mounts 9695 solar modules in rows of 26. How many rows are completed, and how many modules are leftover?",
+          "options": [
+            "\\(372\\text{ r }23\\)",
+            "\\(372\\text{ r }22\\)",
+            "\\(373\\text{ r }23\\)",
+            "\\(371\\text{ r }24\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9695 by 26.",
+              "work": "\\(9695 \\div 26\\)"
+            },
+            {
+              "explain": "Divide the initial digits (96) by 26.",
+              "work": "\\(26 \\times 3 = 78\\)"
+            },
+            {
+              "explain": "Subtract 78 from 96 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(96 - 78 = 18\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 372, quad \\text{Remainder} = 23\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h70",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A marine exploration crew preserves 9450 deep-sea water vials in 15 storage boxes. How many vials are in each box, and how many vials are leftover?",
+          "options": [
+            "\\(630\\text{ r }7\\)",
+            "\\(630\\text{ r }0\\)",
+            "\\(629\\text{ r }1\\)",
+            "\\(631\\text{ r }0\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9450 by 15.",
+              "work": "\\(9450 \\div 15\\)"
+            },
+            {
+              "explain": "Divide the initial digits (94) by 15.",
+              "work": "\\(15 \\times 6 = 90\\)"
+            },
+            {
+              "explain": "Subtract 90 from 94 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(94 - 90 = 4\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 630, quad \\text{Remainder} = 0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h71",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A particle accelerator tracks 9845 subatomic decay events across 18 detection blocks. How many events are recorded per detection block, and how many events are leftover?",
+          "options": [
+            "\\(546\\text{ r }16\\)",
+            "\\(547\\text{ r }17\\)",
+            "\\(546\\text{ r }17\\)",
+            "\\(545\\text{ r }0\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9845 by 18.",
+              "work": "\\(9845 \\div 18\\)"
+            },
+            {
+              "explain": "Divide the initial digits (98) by 18.",
+              "work": "\\(18 \\times 5 = 90\\)"
+            },
+            {
+              "explain": "Subtract 90 from 98 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(98 - 90 = 8\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 546, quad \\text{Remainder} = 17\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h72",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A high-security facility packages 8950 secure encryption keycards into cases of 25 keycards each. How many cases are filled, and how many keycards are leftover?",
+          "options": [
+            "\\(358\\text{ r }0\\)",
+            "\\(359\\text{ r }0\\)",
+            "\\(357\\text{ r }1\\)",
+            "\\(358\\text{ r }12\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 8950 by 25.",
+              "work": "\\(8950 \\div 25\\)"
+            },
+            {
+              "explain": "Divide the initial digits (89) by 25.",
+              "work": "\\(25 \\times 3 = 75\\)"
+            },
+            {
+              "explain": "Subtract 75 from 89 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(89 - 75 = 14\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 358, quad \\text{Remainder} = 0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h73",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A botanical lab catalogs 9598 herbarium specimen files from 18 plant categories. How many files are in each category, and how many files are leftover?",
+          "options": [
+            "\\(533\\text{ r }3\\)",
+            "\\(532\\text{ r }5\\)",
+            "\\(533\\text{ r }4\\)",
+            "\\(534\\text{ r }4\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9598 by 18.",
+              "work": "\\(9598 \\div 18\\)"
+            },
+            {
+              "explain": "Divide the initial digits (95) by 18.",
+              "work": "\\(18 \\times 5 = 90\\)"
+            },
+            {
+              "explain": "Subtract 90 from 95 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(95 - 90 = 5\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 533, quad \\text{Remainder} = 4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h74",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A data backup tower houses 9435 archival tape modules on 28 storage racks. How many modules are on each rack, and how many modules are leftover?",
+          "options": [
+            "\\(335\\text{ r }0\\)",
+            "\\(336\\text{ r }26\\)",
+            "\\(337\\text{ r }27\\)",
+            "\\(336\\text{ r }27\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9435 by 28.",
+              "work": "\\(9435 \\div 28\\)"
+            },
+            {
+              "explain": "Divide the initial digits (94) by 28.",
+              "work": "\\(28 \\times 3 = 84\\)"
+            },
+            {
+              "explain": "Subtract 84 from 94 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(94 - 84 = 10\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 336, quad \\text{Remainder} = 27\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h75",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A city lighting project coordinates 9275 wireless streetlamp modems across 34 local zones. How many modems are in each zone, and how many modems are leftover?",
+          "options": [
+            "\\(272\\text{ r }27\\)",
+            "\\(273\\text{ r }27\\)",
+            "\\(272\\text{ r }26\\)",
+            "\\(271\\text{ r }28\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9275 by 34.",
+              "work": "\\(9275 \\div 34\\)"
+            },
+            {
+              "explain": "Divide the initial digits (92) by 34.",
+              "work": "\\(34 \\times 2 = 68\\)"
+            },
+            {
+              "explain": "Subtract 68 from 92 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(92 - 68 = 24\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 272, quad \\text{Remainder} = 27\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h76",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A metal rolling mill creates 8755 heavy steel shafts. They are loaded into flatbed trucks carrying 14 shafts each. How many trucks are filled, and how many shafts are leftover?",
+          "options": [
+            "\\(624\\text{ r }6\\)",
+            "\\(626\\text{ r }5\\)",
+            "\\(625\\text{ r }4\\)",
+            "\\(625\\text{ r }5\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 8755 by 14.",
+              "work": "\\(8755 \\div 14\\)"
+            },
+            {
+              "explain": "Divide the initial digits (87) by 14.",
+              "work": "\\(14 \\times 6 = 84\\)"
+            },
+            {
+              "explain": "Subtract 84 from 87 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(87 - 84 = 3\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 625, quad \\text{Remainder} = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h77",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cargo carrier handles 9885 containers across 44 ocean routes. How many containers are routed per ocean route, and how many containers are leftover?",
+          "options": [
+            "\\(224\\text{ r }29\\)",
+            "\\(225\\text{ r }29\\)",
+            "\\(223\\text{ r }30\\)",
+            "\\(224\\text{ r }28\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9885 by 44.",
+              "work": "\\(9885 \\div 44\\)"
+            },
+            {
+              "explain": "Divide the initial digits (98) by 44.",
+              "work": "\\(44 \\times 2 = 88\\)"
+            },
+            {
+              "explain": "Subtract 88 from 98 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(98 - 88 = 10\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 224, quad \\text{Remainder} = 29\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h78",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A forest preservation unit counts 9545 tree growth rings across 18 core samples. How many rings are counted per sample on average, and how many rings remain?",
+          "options": [
+            "\\(530\\text{ r }5\\)",
+            "\\(531\\text{ r }5\\)",
+            "\\(530\\text{ r }4\\)",
+            "\\(529\\text{ r }6\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9545 by 18.",
+              "work": "\\(9545 \\div 18\\)"
+            },
+            {
+              "explain": "Divide the initial digits (95) by 18.",
+              "work": "\\(18 \\times 5 = 90\\)"
+            },
+            {
+              "explain": "Subtract 90 from 95 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(95 - 90 = 5\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 530, quad \\text{Remainder} = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h79",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A vehicle test department measures 9998 engine valves across 26 vehicle models. How many valves are evaluated per model, and how many valves are leftover?",
+          "options": [
+            "\\(384\\text{ r }13\\)",
+            "\\(383\\text{ r }15\\)",
+            "\\(385\\text{ r }14\\)",
+            "\\(384\\text{ r }14\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9998 by 26.",
+              "work": "\\(9998 \\div 26\\)"
+            },
+            {
+              "explain": "Divide the initial digits (99) by 26.",
+              "work": "\\(26 \\times 3 = 78\\)"
+            },
+            {
+              "explain": "Subtract 78 from 99 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(99 - 78 = 21\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 384, quad \\text{Remainder} = 14\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-1k-h80",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A family-run vineyard harvests 9890 kg of pinot grapes to put in bins of 34 kg each. How many bins are filled, and how many kilograms are leftover?",
+          "options": [
+            "\\(291\\text{ r }30\\)",
+            "\\(289\\text{ r }31\\)",
+            "\\(290\\text{ r }30\\)",
+            "\\(290\\text{ r }29\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Set up the long division to divide 9890 by 34.",
+              "work": "\\(9890 \\div 34\\)"
+            },
+            {
+              "explain": "Divide the initial digits (98) by 34.",
+              "work": "\\(34 \\times 2 = 68\\)"
+            },
+            {
+              "explain": "Subtract 68 from 98 to find the intermediate remainder, then bring down the remaining digits.",
+              "work": "\\(98 - 68 = 30\\)"
+            },
+            {
+              "explain": "Complete the division process and identify the final quotient and remainder.",
+              "work": "\\(\\text{Quotient} = 290, quad \\text{Remainder} = 30\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

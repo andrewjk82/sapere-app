@@ -1,0 +1,766 @@
+{
+  "chapterId": "exam:year9ch1g",
+  "title": "Exam Practice",
+  "year": "Year 9",
+  "topics": [
+    {
+      "topicId": "exam:year9ch1g",
+      "code": "",
+      "title": "Difference of two squares",
+      "questions": [
+        {
+          "id": "y9-1g-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Refer to the diagram. The figure is made from a square and rectangles with:\n- \\(AC = a = 8\\) units\n- \\(CE = a = 8\\) units\n- \\(BC = b = 3\\) units\n- \\(DE = b = 3\\) units\n\nWhat is the area of the shaded region \\(ABFG\\)?",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -1.5,
+                10.2,
+                10.2,
+                -1.5
+              ],
+              "width": 300,
+              "height": 300,
+              "keepaspectratio": true,
+              "elements": [
+                {
+                  "type": "point",
+                  "id": "A_corner",
+                  "coords": [
+                    0,
+                    8
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "C_corner",
+                  "coords": [
+                    8,
+                    8
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "D_corner",
+                  "coords": [
+                    0,
+                    0
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "E_corner",
+                  "coords": [
+                    8,
+                    0
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "segment",
+                  "from": "A_corner",
+                  "to": "C_corner",
+                  "color": "blue"
+                },
+                {
+                  "type": "segment",
+                  "from": "C_corner",
+                  "to": "E_corner",
+                  "color": "blue"
+                },
+                {
+                  "type": "segment",
+                  "from": "E_corner",
+                  "to": "D_corner",
+                  "color": "blue"
+                },
+                {
+                  "type": "segment",
+                  "from": "D_corner",
+                  "to": "A_corner",
+                  "color": "blue"
+                },
+                {
+                  "type": "point",
+                  "id": "P_0_3",
+                  "coords": [
+                    0,
+                    3
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "P_8_3",
+                  "coords": [
+                    8,
+                    3
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "P_5_0",
+                  "coords": [
+                    5,
+                    0
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "P_5_8",
+                  "coords": [
+                    5,
+                    8
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "segment",
+                  "from": "P_0_3",
+                  "to": "P_8_3",
+                  "color": "blue"
+                },
+                {
+                  "type": "segment",
+                  "from": "P_5_8",
+                  "to": "P_5_0",
+                  "color": "blue"
+                },
+                {
+                  "type": "polygon",
+                  "points": [
+                    "D_corner",
+                    "P_5_0",
+                    "P_5_8",
+                    "A_corner"
+                  ],
+                  "fillColor": "blue",
+                  "fillOpacity": 0.25
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    -0.4,
+                    8.2
+                  ],
+                  "content": "A",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    5,
+                    8.2
+                  ],
+                  "content": "B",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    8.4,
+                    8.2
+                  ],
+                  "content": "C",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    -0.4,
+                    3
+                  ],
+                  "content": "H",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    5.3,
+                    3.3
+                  ],
+                  "content": "J",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    8.4,
+                    3
+                  ],
+                  "content": "D",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    -0.4,
+                    -0.2
+                  ],
+                  "content": "G",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    5,
+                    -0.2
+                  ],
+                  "content": "F",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    8.4,
+                    -0.2
+                  ],
+                  "content": "E",
+                  "fontSize": 16
+                },
+                {
+                  "type": "point",
+                  "id": "arr_top_a_start",
+                  "coords": [
+                    0.1,
+                    9
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_top_a_end",
+                  "coords": [
+                    7.9,
+                    9
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_top_b_start",
+                  "coords": [
+                    5.1,
+                    8.5
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_top_b_end",
+                  "coords": [
+                    7.9,
+                    8.5
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_right_a_start",
+                  "coords": [
+                    9,
+                    7.9
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_right_a_end",
+                  "coords": [
+                    9,
+                    3.1
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_right_b_start",
+                  "coords": [
+                    9,
+                    2.9
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_right_b_end",
+                  "coords": [
+                    9,
+                    0.1
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "arrow",
+                  "from": "arr_top_a_start",
+                  "to": "arr_top_a_end",
+                  "color": "black",
+                  "bidirectional": true
+                },
+                {
+                  "type": "arrow",
+                  "from": "arr_top_b_start",
+                  "to": "arr_top_b_end",
+                  "color": "black",
+                  "bidirectional": true
+                },
+                {
+                  "type": "arrow",
+                  "from": "arr_right_a_start",
+                  "to": "arr_right_a_end",
+                  "color": "black",
+                  "bidirectional": true
+                },
+                {
+                  "type": "arrow",
+                  "from": "arr_right_b_start",
+                  "to": "arr_right_b_end",
+                  "color": "black",
+                  "bidirectional": true
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    4,
+                    9.3
+                  ],
+                  "content": "a",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    6.5,
+                    8.8
+                  ],
+                  "content": "b",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    9.3,
+                    5.5
+                  ],
+                  "content": "a",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    9.3,
+                    1.5
+                  ],
+                  "content": "b",
+                  "fontSize": 15
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(40\\)",
+            "\\(25\\)",
+            "\\(24\\)",
+            "\\(64\\)"
+          ],
+          "answer": 0,
+          "hint": "The shaded area is a rectangle of width AB and height AG.",
+          "steps": [
+            {
+              "explain": "Identify the dimensions of the shaded rectangle ABFG.",
+              "work": "\\(\\text{Width } AB = a - b = 5, quad \\text{Height } AG = a = 8\\)"
+            },
+            {
+              "explain": "Multiply the width by the height to find the area.",
+              "work": "\\(\\text{Area} = 5 \\times 8 = 40\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-1g-q8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Refer to the diagram. The figure is made from a square and rectangles with:\n- \\(AC = a = 8\\) units\n- \\(CE = a = 8\\) units\n- \\(BC = b = 3\\) units, \\(DE = b = 3\\) units\n\nChoose the correct equation showing that:\n\\(\\text{area } ABFG = \\text{area } ACDH + \\text{area } HDEG - \\text{area } BCDJ - \\text{area } JDEF\\)",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -1.5,
+                10.2,
+                10.2,
+                -1.5
+              ],
+              "width": 300,
+              "height": 300,
+              "keepaspectratio": true,
+              "elements": [
+                {
+                  "type": "point",
+                  "id": "A_corner",
+                  "coords": [
+                    0,
+                    8
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "C_corner",
+                  "coords": [
+                    8,
+                    8
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "D_corner",
+                  "coords": [
+                    0,
+                    0
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "E_corner",
+                  "coords": [
+                    8,
+                    0
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "segment",
+                  "from": "A_corner",
+                  "to": "C_corner",
+                  "color": "blue"
+                },
+                {
+                  "type": "segment",
+                  "from": "C_corner",
+                  "to": "E_corner",
+                  "color": "blue"
+                },
+                {
+                  "type": "segment",
+                  "from": "E_corner",
+                  "to": "D_corner",
+                  "color": "blue"
+                },
+                {
+                  "type": "segment",
+                  "from": "D_corner",
+                  "to": "A_corner",
+                  "color": "blue"
+                },
+                {
+                  "type": "point",
+                  "id": "P_0_3",
+                  "coords": [
+                    0,
+                    3
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "P_8_3",
+                  "coords": [
+                    8,
+                    3
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "P_5_0",
+                  "coords": [
+                    5,
+                    0
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "P_5_8",
+                  "coords": [
+                    5,
+                    8
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "segment",
+                  "from": "P_0_3",
+                  "to": "P_8_3",
+                  "color": "blue"
+                },
+                {
+                  "type": "segment",
+                  "from": "P_5_8",
+                  "to": "P_5_0",
+                  "color": "blue"
+                },
+                {
+                  "type": "polygon",
+                  "points": [
+                    "D_corner",
+                    "P_5_0",
+                    "P_5_8",
+                    "A_corner"
+                  ],
+                  "fillColor": "blue",
+                  "fillOpacity": 0.25
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    -0.4,
+                    8.2
+                  ],
+                  "content": "A",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    5,
+                    8.2
+                  ],
+                  "content": "B",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    8.4,
+                    8.2
+                  ],
+                  "content": "C",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    -0.4,
+                    3
+                  ],
+                  "content": "H",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    5.3,
+                    3.3
+                  ],
+                  "content": "J",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    8.4,
+                    3
+                  ],
+                  "content": "D",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    -0.4,
+                    -0.2
+                  ],
+                  "content": "G",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    5,
+                    -0.2
+                  ],
+                  "content": "F",
+                  "fontSize": 16
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    8.4,
+                    -0.2
+                  ],
+                  "content": "E",
+                  "fontSize": 16
+                },
+                {
+                  "type": "point",
+                  "id": "arr_top_a_start",
+                  "coords": [
+                    0.1,
+                    9
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_top_a_end",
+                  "coords": [
+                    7.9,
+                    9
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_top_b_start",
+                  "coords": [
+                    5.1,
+                    8.5
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_top_b_end",
+                  "coords": [
+                    7.9,
+                    8.5
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_right_a_start",
+                  "coords": [
+                    9,
+                    7.9
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_right_a_end",
+                  "coords": [
+                    9,
+                    3.1
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_right_b_start",
+                  "coords": [
+                    9,
+                    2.9
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "point",
+                  "id": "arr_right_b_end",
+                  "coords": [
+                    9,
+                    0.1
+                  ],
+                  "visible": false
+                },
+                {
+                  "type": "arrow",
+                  "from": "arr_top_a_start",
+                  "to": "arr_top_a_end",
+                  "color": "black",
+                  "bidirectional": true
+                },
+                {
+                  "type": "arrow",
+                  "from": "arr_top_b_start",
+                  "to": "arr_top_b_end",
+                  "color": "black",
+                  "bidirectional": true
+                },
+                {
+                  "type": "arrow",
+                  "from": "arr_right_a_start",
+                  "to": "arr_right_a_end",
+                  "color": "black",
+                  "bidirectional": true
+                },
+                {
+                  "type": "arrow",
+                  "from": "arr_right_b_start",
+                  "to": "arr_right_b_end",
+                  "color": "black",
+                  "bidirectional": true
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    4,
+                    9.3
+                  ],
+                  "content": "a",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    6.5,
+                    8.8
+                  ],
+                  "content": "b",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    9.3,
+                    5.5
+                  ],
+                  "content": "a",
+                  "fontSize": 15
+                },
+                {
+                  "type": "text",
+                  "coords": [
+                    9.3,
+                    1.5
+                  ],
+                  "content": "b",
+                  "fontSize": 15
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(40 = 40 + 24 - 15 - 9\\)",
+            "\\(40 = 64 + 24 - 15 - 9\\)",
+            "\\(40 = 40 + 24 - 9 - 9\\)",
+            "\\(40 = 40 + 15 - 15 - 9\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the numerical area values for each region.",
+          "steps": [
+            {
+              "explain": "Calculate individual areas: ACDH, HDEG, BCDJ, and JDEF.",
+              "work": "\\(\\text{ACDH} = 8 \\times 5 = 40, quad \\text{HDEG} = 8 \\times 3 = 24, quad \\text{BCDJ} = 3 \\times 5 = 15, quad \\text{JDEF} = 3 \\times 3 = 9\\)"
+            },
+            {
+              "explain": "Substitute the calculated values into the expression.",
+              "work": "\\(40 + 24 - 15 - 9 = 64 - 24 = 40\\)"
+            }
+          ],
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

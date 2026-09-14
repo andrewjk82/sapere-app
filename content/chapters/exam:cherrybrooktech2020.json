@@ -1,0 +1,190 @@
+{
+  "chapterId": "exam:cherrybrooktech2020",
+  "title": "Exam Practice",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "y12a-2F",
+      "code": "2F",
+      "title": "Review of translations and reflections",
+      "questions": [
+        {
+          "id": "cths2020-q24",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The diagram below shows the graph of $y = f(x)$. The graph has a local maximum at $x = -3$, a local minimum at $x = -1$, and an increasing section leading to a local maximum at $x = 2$.\n\n(a) Sketch $f'(x)$.\n\n(b) Sketch $f(-x)$.",
+          "parts": [
+            {
+              "id": "cths2020-q24a",
+              "type": "review",
+              "stem": "(a) Sketch $f'(x)$.",
+              "answer": "$f'(x)$ is zero at $x=-3$, $x=-1$, $x=2$. Positive on $(-\\infty,-3)\\cup(-1,2)$, negative on $(-3,-1)\\cup(2,\\infty)$.",
+              "steps": [
+                {
+                  "explain": "Mark zeros of $f'$ at the turning points of $f$: $x=-3,-1,2$.",
+                  "work": "f'(-3)=f'(-1)=f'(2)=0"
+                },
+                {
+                  "explain": "Sketch a curve positive before $x=-3$, negative between $-3$ and $-1$, positive between $-1$ and $2$, negative after $2$.",
+                  "work": "\\text{Sign chart: }+,\\,0,-,\\,0,+,\\,0,-"
+                }
+              ]
+            },
+            {
+              "id": "cths2020-q24b",
+              "type": "review",
+              "stem": "(b) Sketch $f(-x)$.",
+              "answer": "Reflection of $f(x)$ in the $y$-axis. Local max at $x=3$, local min at $x=1$, local max at $x=-2$.",
+              "steps": [
+                {
+                  "explain": "Reflect the graph of $f(x)$ in the $y$-axis by mapping each $x$-coordinate to its negative.",
+                  "work": "(x, y) \\to (-x, y)"
+                },
+                {
+                  "explain": "Key features shift: max at $(-3,\\cdot)\\to(3,\\cdot)$; min at $(-1,\\cdot)\\to(1,\\cdot)$; max at $(2,\\cdot)\\to(-2,\\cdot)$.",
+                  "work": "\\text{Reflected graph with max at }x=3,\\text{ min at }x=1"
+                }
+              ]
+            }
+          ],
+          "answer": "(a) $f'(x)$: zero at $x=-3$, $x=-1$, $x=2$; positive on $(-\\infty,-3)$ and $(-1,2)$; negative on $(-3,-1)$ and $(2,\\infty)$.\n(b) $f(-x)$: reflection of $f(x)$ in the $y$-axis; local max at $x=3$, local min at $x=1$, decreasing for large positive $x$.",
+          "hint": "For (a): $f'(x) = 0$ at each stationary point; $f'(x)>0$ where $f$ is increasing; $f'(x)<0$ where $f$ is decreasing. For (b): reflect the graph in the $y$-axis (replace $x$ with $-x$).",
+          "solution": "(a) $f'$ is zero at $x=-3,-1,2$; positive on $(-\\infty,-3)\\cup(-1,2)$; negative on $(-3,-1)\\cup(2, infty)$. (b) $f(-x)$ reflects $f$ in the $y$-axis: local max at $x=3$, local min at $x=1$, local max at $x=-2$.",
+          "inactive": true,
+          "meta": {
+            "source": "Cherrybrook Tech 2020 Trial Q24",
+            "examPaper": "cths-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-3B",
+      "code": "3B",
+      "title": "Stationary points and turning points",
+      "questions": [
+        {
+          "id": "cths2020-q21",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A function is given by \\( y = 2x^3 + 3x^2 - 12x - 5 \\).",
+          "parts": [
+            {
+              "id": "cths2020-q21a",
+              "type": "mc",
+              "stem": "(a) Find the stationary points, determine their nature, and find any points of inflection.",
+              "options": [
+                "Local max at \\((-2, 15)\\), local min at \\((1, -12)\\), inflection at \\((-\\frac{1}{2}, \\frac{3}{2})\\)",
+                "Local min at \\((-2, 15)\\), local max at \\((1, -12)\\), inflection at \\((-\\frac{1}{2}, \\frac{3}{2})\\)",
+                "Local max at \\((-2, -1)\\), local min at \\((1, 4)\\), inflection at \\((-\\frac{1}{2}, \\frac{3}{2})\\)",
+                "Local max at \\((2, 15)\\), local min at \\((-1, -12)\\), inflection at \\((\\frac{1}{2}, \\frac{3}{2})\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Find the first derivative \\(y'\\) using the power rule.",
+                  "work": "y' = 6x^2 + 6x - 12"
+                },
+                {
+                  "explain": "Set \\(y' = 0\\) and solve for stationary points.",
+                  "work": "6(x^2 + x - 2) = 0 \\Rightarrow 6(x+2)(x-1) = 0 \\Rightarrow x = -2 \\text{ or } x = 1"
+                },
+                {
+                  "explain": "Find the second derivative \\(y''\\) to classify.",
+                  "work": "y'' = 12x + 6"
+                },
+                {
+                  "explain": "Classify stationary points.",
+                  "work": "x=-2:\\quad y''=-18 < 0 \\Rightarrow \\text{local max at } (-2, 15)\nx=1:\\quad y''=18 > 0 \\Rightarrow \\text{local min at } (1, -12)"
+                },
+                {
+                  "explain": "Find points of inflection by setting \\(y'' = 0\\).",
+                  "work": "12x + 6 = 0 \\Rightarrow x = -\\frac{1}{2}\n\\text{POI at } \\left(-\\frac{1}{2}, \\frac{3}{2}\\right)"
+                }
+              ]
+            },
+            {
+              "id": "cths2020-q21b",
+              "type": "review",
+              "stem": "(b) Sketch the curve, showing the stationary points, the point(s) of inflection and the \\(y\\)-intercept.",
+              "answer": "",
+              "steps": [
+                {
+                  "explain": "Identify the y-intercept.",
+                  "work": "y\\text{-intercept occurs when } x=0: y = -5"
+                },
+                {
+                  "explain": "Sketch the curve passing through these key features.",
+                  "work": "\\text{Plot local max } (-2,15)\\text{, POI } \\left(-\\frac{1}{2}, \\frac{3}{2}\\right)\\text{, local min } (1,-12)\\text{, and } y\\text{-intercept } (0,-5)\\text{.}",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 300,
+                      "height": 300,
+                      "boundingbox": [
+                        -4,
+                        20,
+                        3,
+                        -15
+                      ],
+                      "showGrid": true,
+                      "showAxisLabels": true,
+                      "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 2*Math.pow(x,3) + 3*Math.pow(x,2) - 12*x - 5; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();",
+                      "elements": [
+                        {
+                          "type": "point",
+                          "coords": [
+                            -2,
+                            15
+                          ],
+                          "name": "(-2, 15)",
+                          "color": "blue"
+                        },
+                        {
+                          "type": "point",
+                          "coords": [
+                            1,
+                            -12
+                          ],
+                          "name": "(1, -12)",
+                          "color": "blue"
+                        },
+                        {
+                          "type": "point",
+                          "coords": [
+                            -0.5,
+                            1.5
+                          ],
+                          "name": "(-\\frac{1}{2}, \\frac{3}{2})",
+                          "color": "slate"
+                        },
+                        {
+                          "type": "point",
+                          "coords": [
+                            0,
+                            -5
+                          ],
+                          "name": "(0, -5)",
+                          "color": "slate"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "manual": true
+            }
+          ],
+          "manual": true,
+          "timeLimit": 300,
+          "meta": {
+            "source": "Cherrybrook Tech 2020 Trial Q21"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.95
+          }
+        }
+      ]
+    }
+  ]
+}

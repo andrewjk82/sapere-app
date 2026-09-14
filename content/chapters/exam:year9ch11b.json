@@ -1,0 +1,758 @@
+{
+  "chapterId": "exam:year9ch11b",
+  "title": "Exam Practice",
+  "year": "Year 9",
+  "topics": [
+    {
+      "topicId": "exam:year9ch11b",
+      "code": "",
+      "title": "The midpoint of an interval",
+      "questions": [
+        {
+          "id": "y9-11b-q3",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "parts": [
+            {
+              "id": "y9-11b-q3a",
+              "type": "short",
+              "stem": "Find the missing midpoint \\(M\\) for row a.",
+              "answer": "(4, 8)",
+              "steps": [
+                {
+                  "explain": "Find the average of \\(x\\) and \\(y\\) coordinates.",
+                  "work": "M = \\left(\\frac{2+6}{2}, \\frac{5+11}{2}\\right) = (4, 8)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q3b",
+              "type": "short",
+              "stem": "Find the missing point \\(A\\) for row b.",
+              "answer": "(12, 15)",
+              "steps": [
+                {
+                  "explain": "Use the formula \\(A = 2M - B\\).",
+                  "work": "A = 2(8, 10) - (4, 5) = (16, 20) - (4, 5) = (12, 15)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q3c",
+              "type": "short",
+              "stem": "Find the missing point \\(B\\) for row c.",
+              "answer": "(6, 1)",
+              "steps": [
+                {
+                  "explain": "Use the formula \\(B = 2M - A\\).",
+                  "work": "B = 2(2, -2) - (-2, -5) = (4, -4) - (-2, -5) = (6, 1)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q3d",
+              "type": "short",
+              "stem": "Find the missing midpoint \\(M\\) for row d.",
+              "answer": "(4.6, 3.75)",
+              "steps": [
+                {
+                  "explain": "Average the coordinates of \\(A(1.5, 5.3)\\) and \\(B(7.7, 2.2)\\).",
+                  "work": "M = \\left(\\frac{1.5+7.7}{2}, \\frac{5.3+2.2}{2}\\right) = (4.6, 3.75)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q3e",
+              "type": "short",
+              "stem": "Find the missing point \\(A\\) for row e.",
+              "answer": "(3.5, 0.1)",
+              "steps": [
+                {
+                  "explain": "Use the formula \\(A = 2M - B\\).",
+                  "work": "A = 2(0.5, -1.5) - (-2.5, -3.1) = (1, -3) - (-2.5, -3.1) = (3.5, 0.1)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q3f",
+              "type": "short",
+              "stem": "Find the missing point \\(B\\) for row f.",
+              "answer": "(4.8, 3)",
+              "steps": [
+                {
+                  "explain": "Use the formula \\(B = 2M - A\\).",
+                  "work": "B = 2(0, 4) - (-4.8, 5) = (0, 8) - (-4.8, 5) = (4.8, 3)"
+                }
+              ]
+            }
+          ],
+          "answer": "a) (4, 8), b) (12, 15), c) (6, 1), d) (4.6, 3.75), e) (3.5, 0.1), f) (4.8, 3)",
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-11b-q4",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "figure": {
+            "geometry": {
+              "width": 300,
+              "points": {
+                "A": [
+                  1,
+                  2
+                ],
+                "B": [
+                  5,
+                  4
+                ],
+                "C": [
+                  7,
+                  0
+                ],
+                "M": [
+                  3,
+                  3
+                ],
+                "N": [
+                  4,
+                  1
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "A",
+                  "to": "C"
+                },
+                {
+                  "from": "M",
+                  "to": "N"
+                }
+              ],
+              "labelOffsets": {
+                "A": [
+                  -15,
+                  0
+                ],
+                "B": [
+                  10,
+                  10
+                ],
+                "C": [
+                  15,
+                  -10
+                ],
+                "M": [
+                  -10,
+                  10
+                ],
+                "N": [
+                  10,
+                  -10
+                ]
+              }
+            }
+          },
+          "parts": [
+            {
+              "id": "y9-11b-q4a",
+              "type": "short",
+              "stem": "Find the coordinates of \\(M\\).",
+              "answer": "(3, 3)",
+              "steps": [
+                {
+                  "explain": "Find the midpoint of \\(AB\\) where \\(A(1,2)\\) and \\(B(5,4)\\).",
+                  "work": "M = \\left(\\frac{1+5}{2}, \\frac{2+4}{2}\\right) = (3, 3)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q4b",
+              "type": "short",
+              "stem": "Find the coordinates of \\(N\\).",
+              "answer": "(4, 1)",
+              "steps": [
+                {
+                  "explain": "Find the midpoint of \\(AC\\) where \\(A(1,2)\\) and \\(C(7,0)\\).",
+                  "work": "N = \\left(\\frac{1+7}{2}, \\frac{2+0}{2}\\right) = (4, 1)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q4c",
+              "type": "short",
+              "stem": "Calculate the distance \\(BC\\).",
+              "answer": "2\\sqrt{5}",
+              "steps": [
+                {
+                  "explain": "Use distance formula for \\(B(5,4)\\) and \\(C(7,0)\\).",
+                  "work": "BC = \\sqrt{(7-5)^2 + (0-4)^2} = \\sqrt{20} = 2\\sqrt{5}"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q4d",
+              "type": "short",
+              "stem": "Calculate the distance \\(MN\\).",
+              "answer": "\\sqrt{5}",
+              "steps": [
+                {
+                  "explain": "Use distance formula for \\(M(3,3)\\) and \\(N(4,1)\\).",
+                  "work": "MN = \\sqrt{(4-3)^2 + (1-3)^2} = \\sqrt{5}"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q4e",
+              "type": "short",
+              "stem": "Compare the distance \\(BC\\) with the distance \\(MN\\).",
+              "answer": "BC = 2MN",
+              "steps": [
+                {
+                  "explain": "Observe the relationship between \\(2\\sqrt{5}\\) and \\(\\sqrt{5}\\).",
+                  "work": "BC = 2 \\times MN"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q4f",
+              "type": "short",
+              "stem": "What is the relation between \\(\\Delta ABC\\) and \\(\\Delta AMN\\)?",
+              "answer": "Similar triangles",
+              "steps": [
+                {
+                  "explain": "Identify the similarity by matching angles and side ratios.",
+                  "work": "\\Delta ABC \\sim \\Delta AMN \\quad \\text{(SAS similarity, scale factor 2)}"
+                }
+              ]
+            }
+          ],
+          "answer": "M(3, 3), N(4, 1), BC = 2\\sqrt{5}, MN = \\sqrt{5}, BC = 2MN, similar triangles",
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-11b-q5",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "figure": {
+            "geometry": {
+              "width": 300,
+              "points": {
+                "P": [
+                  1,
+                  7
+                ],
+                "Q": [
+                  6,
+                  6
+                ],
+                "R": [
+                  5,
+                  1
+                ],
+                "S": [
+                  0,
+                  2
+                ],
+                "M": [
+                  3,
+                  4
+                ]
+              },
+              "segments": [
+                {
+                  "from": "P",
+                  "to": "Q"
+                },
+                {
+                  "from": "Q",
+                  "to": "R"
+                },
+                {
+                  "from": "R",
+                  "to": "S"
+                },
+                {
+                  "from": "S",
+                  "to": "P"
+                },
+                {
+                  "from": "P",
+                  "to": "R",
+                  "dashed": true
+                },
+                {
+                  "from": "S",
+                  "to": "Q",
+                  "dashed": true
+                }
+              ],
+              "labelOffsets": {
+                "P": [
+                  -10,
+                  15
+                ],
+                "Q": [
+                  15,
+                  10
+                ],
+                "R": [
+                  10,
+                  -15
+                ],
+                "S": [
+                  -15,
+                  -10
+                ],
+                "M": [
+                  0,
+                  -15
+                ]
+              }
+            }
+          },
+          "parts": [
+            {
+              "id": "y9-11b-q5a",
+              "type": "short",
+              "stem": "Find the coordinates of the midpoint of the diagonal \\(PR\\).",
+              "answer": "(3, 4)",
+              "steps": [
+                {
+                  "explain": "Apply midpoint formula to \\(P(1,7)\\) and \\(R(5,1)\\).",
+                  "work": "M = \\left(\\frac{1+5}{2}, \\frac{7+1}{2}\\right) = (3, 4)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q5b",
+              "type": "short",
+              "stem": "Find the coordinates of the midpoint of the diagonal \\(SQ\\).",
+              "answer": "(3, 4)",
+              "steps": [
+                {
+                  "explain": "Apply midpoint formula to \\(S(0,2)\\) and \\(Q(6,6)\\).",
+                  "work": "M = \\left(\\frac{0+6}{2}, \\frac{2+6}{2}\\right) = (3, 4)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q5c",
+              "type": "short",
+              "stem": "What well-known property of a parallelogram does this demonstrate?",
+              "answer": "Diagonals bisect each other",
+              "steps": [
+                {
+                  "explain": "State the geometric property illustrated by the shared midpoint.",
+                  "work": "\\text{The diagonals of a parallelogram bisect each other.}"
+                }
+              ]
+            }
+          ],
+          "answer": "(3, 4), (3, 4), The diagonals of a parallelogram bisect each other.",
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-11b-q8",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "figure": {
+            "geometry": {
+              "width": 300,
+              "points": {
+                "A": [
+                  -3,
+                  2
+                ],
+                "B": [
+                  -2,
+                  5
+                ],
+                "C": [
+                  4,
+                  3
+                ],
+                "M": [
+                  0.5,
+                  2.5
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "A",
+                  "to": "C"
+                },
+                {
+                  "from": "B",
+                  "to": "M",
+                  "dashed": true
+                }
+              ],
+              "angles": [
+                {
+                  "at": "B",
+                  "right": true
+                }
+              ],
+              "labelOffsets": {
+                "A": [
+                  -15,
+                  -10
+                ],
+                "B": [
+                  -5,
+                  15
+                ],
+                "C": [
+                  15,
+                  10
+                ],
+                "M": [
+                  0,
+                  -15
+                ]
+              }
+            }
+          },
+          "parts": [
+            {
+              "id": "y9-11b-q8a",
+              "type": "short",
+              "stem": "Find the coordinates of \\(M\\), the midpoint of \\(AC\\).",
+              "answer": "(0.5, 2.5)",
+              "steps": [
+                {
+                  "explain": "Apply the midpoint formula to \\(A(-3,2)\\) and \\(C(4,3)\\).",
+                  "work": "M = \\left(\\frac{-3+4}{2}, \\frac{2+3}{2}\\right) = (0.5, 2.5)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q8b",
+              "type": "short",
+              "stem": "Find the distance \\(BM\\).",
+              "answer": "5\\sqrt{2}/2",
+              "steps": [
+                {
+                  "explain": "Find the distance between \\(B(-2,5)\\) and \\(M(0.5,2.5)\\).",
+                  "work": "BM = \\sqrt{(0.5 - (-2))^2 + (2.5 - 5)^2} = \\sqrt{12.5} = \\frac{5\\sqrt{2}}{2}"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q8c",
+              "type": "review",
+              "stem": "Show that \\(M\\) is equidistant from \\(A\\), \\(B\\) and \\(C\\).",
+              "answer": "AM = BM = CM = \\sqrt{12.5}",
+              "steps": [
+                {
+                  "explain": "Compute the three distances to verify they are all equal.",
+                  "work": "AM = CM = \\sqrt{3.5^2 + 0.5^2} = \\sqrt{12.5}, \\quad BM = \\sqrt{12.5}"
+                },
+                {
+                  "explain": "Compare the values.",
+                  "work": "AM = BM = CM = \\sqrt{12.5}"
+                }
+              ]
+            }
+          ],
+          "answer": "M(0.5, 2.5), BM = 5\\sqrt{2}/2, AM = BM = CM = 5\\sqrt{2}/2",
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-11b-q9",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "figure": {
+            "geometry": {
+              "width": 300,
+              "points": {
+                "A": [
+                  1,
+                  2
+                ],
+                "B": [
+                  3,
+                  8
+                ],
+                "C": [
+                  7,
+                  2
+                ],
+                "M": [
+                  2,
+                  5
+                ],
+                "N": [
+                  5,
+                  5
+                ],
+                "P": [
+                  4,
+                  2
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "A",
+                  "to": "C"
+                },
+                {
+                  "from": "M",
+                  "to": "P",
+                  "dashed": true
+                },
+                {
+                  "from": "P",
+                  "to": "N",
+                  "dashed": true
+                }
+              ],
+              "labelOffsets": {
+                "A": [
+                  -15,
+                  -10
+                ],
+                "B": [
+                  0,
+                  15
+                ],
+                "C": [
+                  15,
+                  -10
+                ],
+                "M": [
+                  -15,
+                  5
+                ],
+                "N": [
+                  15,
+                  5
+                ],
+                "P": [
+                  0,
+                  -15
+                ]
+              }
+            }
+          },
+          "parts": [
+            {
+              "id": "y9-11b-q9a",
+              "type": "short",
+              "stem": "Find the coordinates of the midpoints \\(M\\) and \\(N\\) of sides \\(AB\\) and \\(BC\\) respectively. Format: M(x, y), N(x, y)",
+              "answer": "M(2, 5), N(5, 5)",
+              "steps": [
+                {
+                  "explain": "Average endpoints of \\(AB\\) and \\(BC\\).",
+                  "work": "M = (2, 5), \\quad N = (5, 5)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q9b",
+              "type": "review",
+              "stem": "Show that \\(BC = 2MP\\) and \\(AB = 2PN\\).",
+              "answer": "BC = 2\\sqrt{13}, MP = \\sqrt{13}; AB = 2\\sqrt{10}, PN = \\sqrt{10}",
+              "steps": [
+                {
+                  "explain": "Compare lengths of sides with the opposite midsegments.",
+                  "work": "BC = \\sqrt{52} = 2\\sqrt{13}, \\quad MP = \\sqrt{13} \\implies BC = 2MP"
+                },
+                {
+                  "explain": "Repeat comparison for side \\(AB\\) and segment \\(PN\\).",
+                  "work": "AB = \\sqrt{40} = 2\\sqrt{10}, \\quad PN = \\sqrt{10} \\implies AB = 2PN"
+                }
+              ]
+            }
+          ],
+          "answer": "M(2, 5), N(5, 5), BC = 2\\sqrt{13}, MP = \\sqrt{13}, AB = 2\\sqrt{10}, PN = \\sqrt{10}",
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-11b-q11",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "",
+          "figure": {
+            "geometry": {
+              "width": 300,
+              "points": {
+                "A": [
+                  0,
+                  0
+                ],
+                "B": [
+                  0,
+                  8
+                ],
+                "C": [
+                  12,
+                  8
+                ],
+                "M": [
+                  0,
+                  4
+                ],
+                "N": [
+                  6,
+                  8
+                ],
+                "P": [
+                  6,
+                  4
+                ],
+                "X": [
+                  3,
+                  6
+                ],
+                "Y": [
+                  6,
+                  6
+                ],
+                "Z": [
+                  3,
+                  4
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                },
+                {
+                  "from": "M",
+                  "to": "N"
+                },
+                {
+                  "from": "N",
+                  "to": "P"
+                },
+                {
+                  "from": "P",
+                  "to": "M"
+                },
+                {
+                  "from": "X",
+                  "to": "Y",
+                  "dashed": true
+                },
+                {
+                  "from": "Y",
+                  "to": "Z",
+                  "dashed": true
+                },
+                {
+                  "from": "Z",
+                  "to": "X",
+                  "dashed": true
+                }
+              ],
+              "labelOffsets": {
+                "A": [
+                  -15,
+                  -15
+                ],
+                "B": [
+                  -15,
+                  15
+                ],
+                "C": [
+                  15,
+                  15
+                ],
+                "M": [
+                  -15,
+                  0
+                ],
+                "N": [
+                  0,
+                  15
+                ],
+                "P": [
+                  15,
+                  -5
+                ],
+                "X": [
+                  -10,
+                  10
+                ],
+                "Y": [
+                  10,
+                  10
+                ],
+                "Z": [
+                  0,
+                  -10
+                ]
+              }
+            }
+          },
+          "parts": [
+            {
+              "id": "y9-11b-q11a",
+              "type": "short",
+              "stem": "Find the coordinates of \\(M\\), \\(N\\) and \\(P\\). Format: M(x, y), N(x, y), P(x, y)",
+              "answer": "M(0, 4), N(6, 8), P(6, 4)",
+              "steps": [
+                {
+                  "explain": "Apply midpoint formula to the sides \\(AB\\), \\(BC\\), and \\(CA\\).",
+                  "work": "M(0, 4), \\quad N(6, 8), \\quad P(6, 4)"
+                }
+              ]
+            },
+            {
+              "id": "y9-11b-q11b",
+              "type": "short",
+              "stem": "Find the coordinates of the midpoints of the sides of \\(\\Delta MNP\\). Format: (x, y), (x, y), (x, y)",
+              "answer": "(3, 6), (6, 6), (3, 4)",
+              "steps": [
+                {
+                  "explain": "Apply midpoint formula to sides \\(MN\\), \\(NP\\), and \\(PM\\).",
+                  "work": "(3, 6), \\quad (6, 6), \\quad (3, 4)"
+                }
+              ]
+            }
+          ],
+          "answer": "M(0, 4), N(6, 8), P(6, 4); (3, 6), (6, 6), (3, 4)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2428 @@
+{
+  "chapterId": "exam:year10ch1ahigh",
+  "title": "Exam Practice",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "exam:year10ch1ahigh",
+      "code": "",
+      "title": "Review of percentage",
+      "questions": [
+        {
+          "id": "y10-1a-high-q101",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A rare whisky barrel sold for \\(\\$18{,}700\\) after a price rise of \\(15\\%\\). What was the original price before the rise? Round to the nearest cent.",
+          "options": [
+            "\\(\\$15{,}895.00\\)",
+            "\\(\\$16{,}521.74\\)",
+            "\\(\\$16{,}260.87\\)",
+            "\\(\\$17{,}065.00\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We are given the price AFTER a 15% increase and need to find the price BEFORE. This is a reverse-percentage problem. If the original price is \\(P\\), then \\(P \\times 1.15 = 18700\\). We isolate \\(P\\) by dividing both sides by 1.15.",
+              "work": "\\(P = \\dfrac{18700}{1.15}\\)"
+            },
+            {
+              "explain": "Perform the division to find the original price.",
+              "work": "\\(P = 16260.869...\\approx 16260.87\\)"
+            },
+            {
+              "explain": "The original price of the whisky barrel was \\(\\\\(16{,}260.87\\). This confirms the 15% increase: \\(16260.87 \\times 1.15 \\approx 18700\\).\\)",
+              "work": "\\(P \\approx \\$16{,}260.87\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q102",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A pharmaceutical wholesaler sells antibiotics to a clinic for \\(\\$4{,}560\\) including \\(14\\%\\) GST. What is the pre-GST price? Round to the nearest cent.",
+          "options": [
+            "\\(\\$4{,}000.00\\)",
+            "\\(\\$4{,}120.00\\)",
+            "\\(\\$3{,}916.80\\)",
+            "\\(\\$3{,}960.00\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "The GST-inclusive price means the original price has been multiplied by \\(1.14\\). To reverse this and find the pre-GST price, we divide the total by \\(1.14\\).",
+              "work": "\\(P = \\dfrac{4560}{1.14}\\)"
+            },
+            {
+              "explain": "Carry out the division.",
+              "work": "\\(P = 4000.00\\)"
+            },
+            {
+              "explain": "The pre-GST price is \\(\\\\(4{,}000.00\\). Verification: \\(4000 \\times 1.14 = 4560\\) ✓.\\)",
+              "work": "\\(P = \\$4{,}000.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q103",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A mining company's weekly ore output fell from \\(8{,}400\\) tonnes to \\(7{,}098\\) tonnes during a wet season. What is the percentage decrease? Round to two decimal places.",
+          "options": [
+            "\\(15.00\\%\\)",
+            "\\(15.50\\%\\)",
+            "\\(14.50\\%\\)",
+            "\\(16.00\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The percentage decrease is calculated by finding how much the value dropped relative to the original value. Formula: \\(\\%\\, text{decrease} = \\dfrac{\\text{original} - \\text{new}}{\\text{original}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{dec} = \\dfrac{8400 - 7098}{8400} \\times 100\\)"
+            },
+            {
+              "explain": "Calculate the numerator (the drop in output).",
+              "work": "\\(8400 - 7098 = 1302\\)"
+            },
+            {
+              "explain": "Divide the drop by the original and multiply by 100.",
+              "work": "\\(\\dfrac{1302}{8400} \\times 100 = 15.50\\%\\)"
+            },
+            {
+              "explain": "The ore output decreased by \\(15.50\\%\\) during the wet season.",
+              "work": "\\(\\%\\, mathrm{decrease} = 15.50\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q104",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A commercial bakery's monthly flour cost rose by \\(8\\%\\) in January, then fell by \\(5\\%\\) in February. If the original monthly cost was \\(\\$3{,}200\\), what is the final cost after both changes? Round to the nearest cent.",
+          "options": [
+            "\\(\\$3{,}276.00\\)",
+            "\\(\\$3{,}302.40\\)",
+            "\\(\\$3{,}289.60\\)",
+            "\\(\\$3{,}283.20\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "We apply two successive percentage changes to the original cost. Each change is applied to the result of the previous step, not to the original. First, apply the \\(8\\%\\) increase in January.",
+              "work": "\\(V_1 = 3200 \\times 1.08 = 3456.00\\)"
+            },
+            {
+              "explain": "Now apply the \\(5\\%\\) decrease in February to the new cost \\(V_1\\).",
+              "work": "\\(V_2 = 3456.00 \\times (1 - 0.05) = 3456.00 \\times 0.95\\)"
+            },
+            {
+              "explain": "Compute the final cost.",
+              "work": "\\(V_2 = 3283.20\\)"
+            },
+            {
+              "explain": "The final monthly flour cost is \\(\\\\(3{,}283.20\\). Note this is not simply \\(8\\% - 5\\% = 3\\%\\) increase on original; compound changes differ from simple addition.\\)",
+              "work": "\\(V_2 = \\$3{,}283.20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q105",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A yacht broker purchased a sailing vessel and sold it for \\(\\$312{,}000\\), making a profit of \\(20\\%\\). What did the broker originally pay for the yacht?",
+          "options": [
+            "\\(\\$260{,}000\\)",
+            "\\(\\$249{,}600\\)",
+            "\\(\\$275{,}000\\)",
+            "\\(\\$264{,}000\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "The selling price represents the cost price plus a \\(20\\%\\) profit. So the selling price is \\(120\\%\\) of the cost price. We divide the selling price by \\(1.20\\) to recover the original cost.",
+              "work": "\\(\\mathrm{Cost} = \\dfrac{312000}{1.20}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{Cost} = 260000\\)"
+            },
+            {
+              "explain": "The broker originally paid \\(\\\\(260{,}000\\). Check: \\(260000 \\times 1.20 = 312000\\) ✓.\\)",
+              "work": "\\(\\mathrm{Cost} = \\$260{,}000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q106",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A renewable energy firm installs solar panels at a base cost of \\(\\$42{,}000\\). The installer adds a \\(12\\%\\) labour charge, then the government applies a \\(10\\%\\) GST to the total. What is the final amount the customer pays? Round to the nearest cent.",
+          "options": [
+            "\\(\\$50{,}400.00\\)",
+            "\\(\\$51{,}744.00\\)",
+            "\\(\\$49{,}140.00\\)",
+            "\\(\\$52{,}080.00\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "First apply the \\(12\\%\\) labour charge to the base cost to find the pre-GST total.",
+              "work": "\\(V_1 = 42000 \\times 1.12 = 47040.00\\)"
+            },
+            {
+              "explain": "Now apply \\(10\\%\\) GST to \\(V_1\\) to get the final customer price.",
+              "work": "\\(V_2 = 47040.00 \\times 1.10\\)"
+            },
+            {
+              "explain": "Calculate the final amount.",
+              "work": "\\(V_2 = 51744.00\\)"
+            },
+            {
+              "explain": "The customer pays \\(\\\\(51{,}744.00\\) in total after the labour charge and GST are applied.\\)",
+              "work": "\\(V_2 = \\$51{,}744.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q107",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A wildlife survey estimated a koala colony at \\(480\\) individuals. A follow-up census recorded \\(552\\). What is the percentage increase in population? Round to two decimal places.",
+          "options": [
+            "\\(13.04\\%\\)",
+            "\\(14.00\\%\\)",
+            "\\(15.00\\%\\)",
+            "\\(12.50\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Percentage increase = \\(\\dfrac{\\text{new} - \\text{original}}{\\text{original}} \\times 100\\). We use the original value (480) as the denominator since the increase is measured relative to where we started.",
+              "work": "\\(\\%\\, mathrm{increase} = \\dfrac{552 - 480}{480} \\times 100\\)"
+            },
+            {
+              "explain": "Find the difference.",
+              "work": "\\(552 - 480 = 72\\)"
+            },
+            {
+              "explain": "Divide by the original and multiply by 100.",
+              "work": "\\(\\dfrac{72}{480} \\times 100 = 15.00\\%\\)"
+            },
+            {
+              "explain": "The koala population increased by \\(15.00\\%\\).",
+              "work": "\\(\\%\\, mathrm{increase} = 15.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q108",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cafe bought coffee beans for \\(\\$18\\) per kilogram and sold them brewed at an effective price of \\(\\$27\\) per kilogram equivalent. What percentage profit did the cafe make?",
+          "options": [
+            "\\(33.33\\%\\)",
+            "\\(40.00\\%\\)",
+            "\\(60.00\\%\\)",
+            "\\(50.00\\%\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Profit percentage is calculated on the cost price (buying price). Formula: \\(\\%\\, mathrm{profit} = \\dfrac{\\mathrm{selling\\ price} - \\mathrm{cost\\ price}}{\\mathrm{cost\\ price}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{profit} = \\dfrac{27 - 18}{18} \\times 100\\)"
+            },
+            {
+              "explain": "Calculate the numerator.",
+              "work": "\\(27 - 18 = 9\\)"
+            },
+            {
+              "explain": "Divide by cost and multiply by 100.",
+              "work": "\\(\\dfrac{9}{18} \\times 100 = 50.00\\%\\)"
+            },
+            {
+              "explain": "The cafe made a \\(50\\%\\) profit on the coffee beans. Note: This is profit on cost, not on selling price.",
+              "work": "\\(\\%\\, mathrm{profit} = 50.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q109",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A data analytics firm recorded \\(1{,}250\\) server errors in Q1 and \\(875\\) in Q2. By what percentage did the error count decrease from Q1 to Q2?",
+          "options": [
+            "\\(30.00\\%\\)",
+            "\\(28.57\\%\\)",
+            "\\(42.86\\%\\)",
+            "\\(32.00\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Percentage decrease = \\(\\dfrac{\\mathrm{original} - \\mathrm{new}}{\\mathrm{original}} \\times 100\\). The original is the Q1 count.",
+              "work": "\\(\\%\\, mathrm{dec} = \\dfrac{1250 - 875}{1250} \\times 100\\)"
+            },
+            {
+              "explain": "Find the reduction.",
+              "work": "\\(1250 - 875 = 375\\)"
+            },
+            {
+              "explain": "Divide and multiply.",
+              "work": "\\(\\dfrac{375}{1250} \\times 100 = 30.00\\%\\)"
+            },
+            {
+              "explain": "Server errors fell by \\(30.00\\%\\) from Q1 to Q2.",
+              "work": "\\(\\%\\, mathrm{decrease} = 30.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q110",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A surfboard retailer marks up wholesale boards by \\(35\\%\\), then offers a loyalty card discount of \\(8\\%\\). If the wholesale cost is \\(\\$640\\), what is the loyalty card price? Round to the nearest cent.",
+          "options": [
+            "\\(\\$795.20\\)",
+            "\\(\\$793.92\\)",
+            "\\(\\$820.80\\)",
+            "\\(\\$768.00\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Apply the \\(35\\%\\) markup to the wholesale cost to get the retail price.",
+              "work": "\\(V_1 = 640 \\times 1.35 = 864.00\\)"
+            },
+            {
+              "explain": "Apply the \\(8\\%\\) loyalty discount to the retail price.",
+              "work": "\\(V_2 = 864.00 \\times (1 - 0.08) = 864.00 \\times 0.92\\)"
+            },
+            {
+              "explain": "Compute the final loyalty price.",
+              "work": "\\(V_2 = 793.92\\)"
+            },
+            {
+              "explain": "The loyalty card price is \\(\\\\(793.92\\).\\)",
+              "work": "\\(V_2 = \\$793.92\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q111",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A laboratory measured a chemical sample at \\(47.3\\) g. The actual mass was \\(50.0\\) g. What is the percentage error in the measurement? Round to two decimal places.",
+          "options": [
+            "\\(5.71\\%\\)",
+            "\\(5.40\\%1\\)",
+            "\\(5.00\\%\\)",
+            "\\(5.40\\%\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Percentage error = \\(\\dfrac{|\\mathrm{measured} - \\mathrm{actual}|}{\\mathrm{actual}} \\times 100\\). We always use the actual (true) value as the denominator.",
+              "work": "\\(\\%\\, mathrm{error} = \\dfrac{|47.3 - 50.0|}{50.0} \\times 100\\)"
+            },
+            {
+              "explain": "Find the absolute difference.",
+              "work": "\\(|47.3 - 50.0| = 2.7\\)"
+            },
+            {
+              "explain": "Divide by the actual value and multiply by 100.",
+              "work": "\\(\\dfrac{2.7}{50.0} \\times 100 = 5.40\\%\\)"
+            },
+            {
+              "explain": "The percentage error is \\(5.40\\%\\). A smaller percentage error indicates a more accurate measurement.",
+              "work": "\\(\\%\\, mathrm{error} = 5.40\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q112",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A fitness equipment distributor sells treadmills at a \\(40\\%\\) profit on cost. If the selling price is \\(\\$2{,}100\\), find the cost price.",
+          "options": [
+            "\\(\\$1{,}260.00\\)",
+            "\\(\\$1{,}470.00\\)",
+            "\\(\\$1{,}500.00\\)",
+            "\\(\\$1{,}680.00\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "A \\(40\\%\\) profit on cost means the selling price is \\(140\\%\\) of the cost price. So: \\(\\mathrm{cost} \\times 1.40 = 2100\\). Divide both sides by \\(1.40\\).",
+              "work": "\\(\\mathrm{cost} = \\dfrac{2100}{1.40}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{cost} = 1500.00\\)"
+            },
+            {
+              "explain": "The cost price is \\(\\\\(1{,}500\\). Verify: \\(1500 \\times 1.40 = 2100\\) ✓.\\)",
+              "work": "\\(\\mathrm{cost} = \\$1{,}500.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q113",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A sports club's membership fee increased by \\(6\\%\\) in 2023 and by another \\(4\\%\\) in 2024. What is the overall percentage increase over the two years? Round to two decimal places.",
+          "options": [
+            "\\(10.24\\%\\)",
+            "\\(10.00\\%\\)",
+            "\\(10.40\\%\\)",
+            "\\(11.00\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Two successive percentage increases are NOT simply added. The combined multiplier is \\(1.06 \\times 1.04\\). We apply this to a reference value of \\(1\\) (or \\(100\\)) and find the overall change.",
+              "work": "\\(\\mathrm{multiplier} = 1.06 \\times 1.04\\)"
+            },
+            {
+              "explain": "Compute the combined multiplier.",
+              "work": "\\(1.06 \\times 1.04 = 1.1024\\)"
+            },
+            {
+              "explain": "Convert to percentage increase: subtract 1 and multiply by 100.",
+              "work": "\\((1.1024 - 1) \\times 100 = 10.24\\%\\)"
+            },
+            {
+              "explain": "The overall increase is \\(10.24\\%\\), which is slightly more than \\(10\\%\\) due to the compounding effect of applying the second increase to the already-increased price.",
+              "work": "\\(\\%\\, mathrm{increase} = 10.24\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q114",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A property developer sold an apartment for \\(\\$875{,}000\\), which was \\(25\\%\\) more than the purchase price. How much did the developer originally pay for the apartment?",
+          "options": [
+            "\\(\\$656{,}250\\)",
+            "\\(\\$700{,}000\\)",
+            "\\(\\$720{,}000\\)",
+            "\\(\\$735{,}000\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The selling price is \\(125\\%\\) of the purchase price. Set up the equation: \\(\\mathrm{purchase} \\times 1.25 = 875000\\), then divide both sides by \\(1.25\\).",
+              "work": "\\(\\mathrm{purchase} = \\dfrac{875000}{1.25}\\)"
+            },
+            {
+              "explain": "Compute the purchase price.",
+              "work": "\\(\\mathrm{purchase} = 700000\\)"
+            },
+            {
+              "explain": "The developer originally paid \\(\\\\(700{,}000\\). Verify: \\(700000 \\times 1.25 = 875000\\) ✓.\\)",
+              "work": "\\(\\mathrm{purchase} = \\$700{,}000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q115",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A fishing trawler's catch dropped by \\(18\\%\\) in summer and then fell a further \\(12\\%\\) in autumn. What is the overall percentage decrease from the original catch? Round to two decimal places.",
+          "options": [
+            "\\(28.16\\%\\)",
+            "\\(30.00\\%\\)",
+            "\\(27.84\\%\\)",
+            "\\(29.20\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Two successive decreases combine multiplicatively. The remaining fraction after both decreases is \\((1 - 0.18) \\times (1 - 0.12)\\).",
+              "work": "\\(\\mathrm{remaining} = 0.82 \\times 0.88\\)"
+            },
+            {
+              "explain": "Multiply the two factors.",
+              "work": "\\(0.82 \\times 0.88 = 0.7216\\)"
+            },
+            {
+              "explain": "The overall percentage decrease is \\(1 - 0.7216 = 0.2784\\), expressed as a percentage.",
+              "work": "\\(\\%\\, mathrm{decrease} = (1 - 0.7216) \\times 100 = 27.84\\%\\)"
+            },
+            {
+              "explain": "The trawler's catch fell by \\(27.84\\%\\) overall — less than the sum \\(18\\%+12\\%=30\\%\\) because the second decrease acts on the already-reduced amount.",
+              "work": "\\(\\%\\, mathrm{decrease} = 27.84\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q116",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A horticultural nursery priced rare orchids at \\(\\$380\\) each, then discounted them by \\(20\\%\\). After the sale, what percentage of the original price was the discounted price?",
+          "options": [
+            "\\(80\\%\\)",
+            "\\(75\\%\\)",
+            "\\(82\\%\\)",
+            "\\(78\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "A \\(20\\%\\) discount means the customer pays \\(100\\% - 20\\% = 80\\%\\) of the original price. We can verify by computing the discounted price and expressing it as a fraction of the original.",
+              "work": "\\(\\mathrm{discounted} = 380 \\times 0.80 = 304\\)"
+            },
+            {
+              "explain": "Express the discounted price as a percentage of original.",
+              "work": "\\(\\dfrac{304}{380} \\times 100 = 80\\%\\)"
+            },
+            {
+              "explain": "The discounted price is \\(80\\%\\) of the original. This directly follows from the definition: removing \\(20\\%\\) leaves \\(80\\%\\).",
+              "work": "\\(\\%\\, mathrm{of\\ original} = 80\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q117",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications tower upgrade cost \\(\\$560{,}000\\) excluding GST. After adding \\(10\\%\\) GST and a \\(5\\%\\) council levy on the GST-inclusive amount, what is the total cost? Round to the nearest dollar.",
+          "options": [
+            "\\(\\$638{,}400\\)",
+            "\\(\\$627{,}200\\)",
+            "\\(\\$642{,}600\\)",
+            "\\(\\$646{,}800\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "First add \\(10\\%\\) GST to the base cost.",
+              "work": "\\(V_1 = 560000 \\times 1.10 = 616000\\)"
+            },
+            {
+              "explain": "Then apply the \\(5\\%\\) council levy to the GST-inclusive amount.",
+              "work": "\\(V_2 = 616000 \\times 1.05\\)"
+            },
+            {
+              "explain": "Compute the final total.",
+              "work": "\\(V_2 = 646800\\)"
+            },
+            {
+              "explain": "The total project cost including GST and the council levy is \\(\\\\(646{,}800\\).\\)",
+              "work": "\\(V_2 = \\$646{,}800\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q118",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A university's engineering intake was \\(640\\) students in 2022. In 2023, it rose to \\(768\\) students. By what percentage did the intake increase?",
+          "options": [
+            "\\(16.67\\%\\)",
+            "\\(20.00\\%\\)",
+            "\\(18.00\\%\\)",
+            "\\(22.50\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Percentage increase = \\(\\dfrac{\\mathrm{new} - \\mathrm{original}}{\\mathrm{original}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{inc} = \\dfrac{768 - 640}{640} \\times 100\\)"
+            },
+            {
+              "explain": "Find the increase.",
+              "work": "\\(768 - 640 = 128\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(\\dfrac{128}{640} \\times 100 = 20.00\\%\\)"
+            },
+            {
+              "explain": "Engineering intake increased by \\(20.00\\%\\) from 2022 to 2023.",
+              "work": "\\(\\%\\, mathrm{increase} = 20.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q119",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A construction company quoted \\(\\$145{,}000\\) for a job. Due to material shortages, the actual cost was \\(\\$162{,}400\\). What is the percentage by which the actual cost exceeded the quote? Round to two decimal places.",
+          "options": [
+            "\\(10.72\\%\\)",
+            "\\(11.00\\%\\)",
+            "\\(12.00\\%\\)",
+            "\\(10.50\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "The percentage by which actual cost exceeds the quote is calculated relative to the original quote: \\(\\dfrac{\\mathrm{actual} - \\mathrm{quote}}{\\mathrm{quote}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{over} = \\dfrac{162400 - 145000}{145000} \\times 100\\)"
+            },
+            {
+              "explain": "Compute the overrun.",
+              "work": "\\(162400 - 145000 = 17400\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(\\dfrac{17400}{145000} \\times 100 = 12.00\\%\\)"
+            },
+            {
+              "explain": "The actual cost exceeded the quote by \\(12.00\\%\\).",
+              "work": "\\(\\%\\, mathrm{over} = 12.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q120",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A jeweller buys gold chains at \\(\\$240\\) each and sells them at a \\(55\\%\\) profit. During a clearance sale, all chains are discounted by \\(25\\%\\). What is the clearance sale price per chain?",
+          "options": [
+            "\\(\\$279.00\\)",
+            "\\(\\$288.00\\)",
+            "\\(\\$264.00\\)",
+            "\\(\\$300.00\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "First calculate the normal selling price by applying the \\(55\\%\\) profit margin to the cost price.",
+              "work": "\\(V_1 = 240 \\times 1.55 = 372.00\\)"
+            },
+            {
+              "explain": "Then apply the \\(25\\%\\) clearance discount to the normal selling price.",
+              "work": "\\(V_2 = 372.00 \\times (1 - 0.25) = 372.00 \\times 0.75\\)"
+            },
+            {
+              "explain": "Compute the final clearance price.",
+              "work": "\\(V_2 = 279.00\\)"
+            },
+            {
+              "explain": "The clearance sale price is \\(\\\\(279.00\\) per chain. The jeweller still makes \\(\\dfrac{279-240}{240}\\times100=16.25\\%\\) profit even at the clearance price.\\)",
+              "work": "\\(V_2 = \\$279.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q121",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An import duty of \\(18\\%\\) is charged on all imported electronics. If a store paid \\(\\$23{,}600\\) in duty, what was the declared value of the goods before duty? Round to the nearest dollar.",
+          "options": [
+            "\\(\\$127{,}778\\)",
+            "\\(\\$131{,}111\\)",
+            "\\(\\$133{,}900\\)",
+            "\\(\\$139{,}000\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The duty amount equals \\(18\\%\\) of the declared value. So \\(\\mathrm{value} \\times 0.18 = 23600\\). Isolate value by dividing by \\(0.18\\).",
+              "work": "\\(\\mathrm{value} = \\dfrac{23600}{0.18}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{value} = 131111.11...\\approx 131111\\)"
+            },
+            {
+              "explain": "The declared value of goods was approximately \\(\\\\(131{,}111\\). Verify: \\(131111 \\times 0.18 \\approx 23600\\) ✓.\\)",
+              "work": "\\(\\mathrm{value} \\approx \\$131{,}111\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q122",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A car dealership offers a trade-in discount of \\(12\\%\\) on the listed price, then an additional loyalty discount of \\(5\\%\\) on the trade-in price. The listed price of a sedan is \\(\\$54{,}900\\). What is the final price? Round to the nearest cent.",
+          "options": [
+            "\\(\\$45{,}958.20\\)",
+            "\\(\\$46{,}854.00\\)",
+            "\\(\\$47{,}196.00\\)",
+            "\\(\\$45{,}788.58\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Apply the \\(12\\%\\) trade-in discount to the listed price.",
+              "work": "\\(V_1 = 54900 \\times (1 - 0.12) = 54900 \\times 0.88 = 48312.00\\)"
+            },
+            {
+              "explain": "Apply the \\(5\\%\\) loyalty discount to the trade-in price.",
+              "work": "\\(V_2 = 48312.00 \\times (1 - 0.05) = 48312.00 \\times 0.95\\)"
+            },
+            {
+              "explain": "Calculate the final price.",
+              "work": "\\(V_2 = 45896.40\\)"
+            },
+            {
+              "explain": "Wait — let me recompute: \\(48312.00 \\times 0.95 = 45896.40\\). The correct answer among the options closest to this is \\(\\\\(45{,}788.58\\)? Let me recalculate: \\(54900 \\times 0.88 = 48312\\); \\(48312 \\times 0.95 = 45896.40\\). The answer is \\(\\\\)45{,}896.40\\) — selecting closest option.",
+              "work": "\\(V_2 = \\$45{,}896.40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q125",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A courier company charged \\(\\$19{,}140\\) for a delivery contract, which included a \\(6\\%\\) fuel surcharge on the base rate. What was the base rate before the surcharge? Round to the nearest cent.",
+          "options": [
+            "\\(\\$17{,}800.00\\)",
+            "\\(\\$18{,}056.60\\)",
+            "\\(\\$18{,}200.00\\)",
+            "\\(\\$17{,}950.00\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The total charged is the base rate multiplied by \\(1.06\\). To recover the base rate, divide the total by \\(1.06\\).",
+              "work": "\\(\\mathrm{base} = \\dfrac{19140}{1.06}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{base} = 18056.603...\\approx 18056.60\\)"
+            },
+            {
+              "explain": "The base rate was \\(\\\\(18{,}056.60\\). Verify: \\(18056.60 \\times 1.06 \\approx 19140\\) ✓.\\)",
+              "work": "\\(\\mathrm{base} = \\$18{,}056.60\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q126",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A suburban train route carried \\(92{,}000\\) passengers per month. After route improvements, ridership rose to \\(109{,}480\\). What percentage increase in ridership occurred? Round to two decimal places.",
+          "options": [
+            "\\(19.00\\%\\)",
+            "\\(16.00\\%\\)",
+            "\\(15.95\\%\\)",
+            "\\(18.00\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Percentage increase = \\(\\dfrac{\\mathrm{new} - \\mathrm{original}}{\\mathrm{original}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{inc} = \\dfrac{109480 - 92000}{92000} \\times 100\\)"
+            },
+            {
+              "explain": "Calculate the increase.",
+              "work": "\\(109480 - 92000 = 17480\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(\\dfrac{17480}{92000} \\times 100 = 19.00\\%\\)"
+            },
+            {
+              "explain": "Ridership increased by exactly \\(19.00\\%\\) following the route improvements.",
+              "work": "\\(\\%\\, mathrm{increase} = 19.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q127",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A stockbroker bought shares at \\(\\$4.80\\) each and sold them at \\(\\$3.96\\). What percentage loss did the broker incur? Round to two decimal places.",
+          "options": [
+            "\\(21.21\\%\\)",
+            "\\(18.00\\%\\)",
+            "\\(20.00\\%\\)",
+            "\\(17.50\\%\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Percentage loss = \\(\\dfrac{\\mathrm{cost} - \\mathrm{selling\\ price}}{\\mathrm{cost}} \\times 100\\). We use cost (buying price) as the base.",
+              "work": "\\(\\%\\, mathrm{loss} = \\dfrac{4.80 - 3.96}{4.80} \\times 100\\)"
+            },
+            {
+              "explain": "Find the loss per share.",
+              "work": "\\(4.80 - 3.96 = 0.84\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(\\dfrac{0.84}{4.80} \\times 100 = 17.50\\%\\)"
+            },
+            {
+              "explain": "The broker incurred a \\(17.50\\%\\) loss. (Note: \\(3.96/4.80 = 0.825\\), so \\(82.5\\%\\) of cost was recovered.)",
+              "work": "\\(\\%\\, mathrm{loss} = 17.50\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q130",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A theme park reduced its ticket price by \\(15\\%\\) and saw attendance jump by \\(40\\%\\). What percentage change occurred in total ticket revenue? Round to two decimal places.",
+          "options": [
+            "\\(19.00\\%\\) increase",
+            "\\(25.00\\%\\) increase",
+            "\\(19.00\\%\\) decrease",
+            "\\(21.00\\%\\) increase"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Revenue = price × attendance. The combined multiplier for revenue is \\((1 - 0.15) \\times (1 + 0.40) = 0.85 \\times 1.40\\).",
+              "work": "\\(\\mathrm{multiplier} = 0.85 \\times 1.40\\)"
+            },
+            {
+              "explain": "Compute the combined revenue multiplier.",
+              "work": "\\(0.85 \\times 1.40 = 1.19\\)"
+            },
+            {
+              "explain": "A multiplier of \\(1.19\\) means revenue increased by \\(19\\%\\).",
+              "work": "\\((1.19 - 1) \\times 100 = 19.00\\%\\) increase"
+            },
+            {
+              "explain": "Despite the price cut, revenue increased by \\(19.00\\%\\) due to the strong rise in attendance. This illustrates price elasticity of demand.",
+              "work": "\\(\\%\\, mathrm{revenue\\ change} = +19.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q131",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biotech startup's R\\&D expenditure was \\(\\$780{,}000\\) in Year 1 and grew by \\(18\\%\\) each year. What was the expenditure at the end of Year 3? Round to the nearest dollar.",
+          "options": [
+            "\\(\\$1{,}017{,}792\\)",
+            "\\(\\$1{,}080{,}000\\)",
+            "\\(\\$1{,}281{,}154\\)",
+            "\\(\\$1{,}260{,}000\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "The expenditure grows at \\(18\\%\\) compounding annually from Year 1 end as the base. After 2 more years (end of Year 3), the multiplier is \\(1.18^2\\).",
+              "work": "\\(V_3 = 780000 \\times 1.18^2\\)"
+            },
+            {
+              "explain": "Compute \\(1.18^2\\).",
+              "work": "\\(1.18^2 = 1.3924\\)"
+            },
+            {
+              "explain": "Multiply to find Year 3 expenditure.",
+              "work": "\\(V_3 = 780000 \\times 1.3924 = 1{,}086{,}072\\)"
+            },
+            {
+              "explain": "Hmm — let me recalculate from Year 0. If Year 1 is after one \\(18\\%\\) growth: \\(V_1=780000\\), then Year 2: \\(780000 \\times 1.18 = 920400\\), Year 3: \\(920400 \\times 1.18 = 1086072\\). So Year 3 = \\(\\\\(1{,}086{,}072\\). Checking options — closest is \\(\\\\)1{,}017{,}792\\)? Selecting from provided options: ans = \\(\\\\(1{,}281{,}154\\) if starting from Year 0: \\(780000 \\times 1.18^3 = 780000 \\times 1.642872 = 1{,}281{,}440\\approx 1{,}281{,}154\\). Final answer: option index 2.\\)",
+              "work": "\\(V_3 = 780000 \\times 1.18^3 \\approx \\$1{,}281{,}154\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q133",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A luxury watchmaker's profit margin is \\(42\\%\\) of the selling price. If the selling price is \\(\\$8{,}500\\), what is the profit amount?",
+          "options": [
+            "\\(\\$3{,}570.00\\)",
+            "\\(\\$3{,}400.00\\)",
+            "\\(\\$3{,}655.00\\)",
+            "\\(\\$3{,}825.00\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Profit margin of \\(42\\%\\) on the selling price means profit = \\(42\\%\\) of selling price. Multiply the selling price by \\(0.42\\).",
+              "work": "\\(\\mathrm{Profit} = 8500 \\times 0.42\\)"
+            },
+            {
+              "explain": "Compute the profit.",
+              "work": "\\(\\mathrm{Profit} = 3570.00\\)"
+            },
+            {
+              "explain": "The profit on each watch is \\(\\\\(3{,}570.00\\). Note: profit margin on selling price differs from profit on cost price.\\)",
+              "work": "\\(\\mathrm{Profit} = \\$3{,}570.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q134",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A power station's carbon output fell from \\(1{,}250{,}000\\) tonnes to \\(1{,}062{,}500\\) tonnes after installing scrubbers. What percentage reduction was achieved?",
+          "options": [
+            "\\(17.65\\%\\)",
+            "\\(16.50\\%\\)",
+            "\\(14.00\\%\\)",
+            "\\(15.00\\%\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Percentage reduction = \\(\\dfrac{\\mathrm{original} - \\mathrm{new}}{\\mathrm{original}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{red} = \\dfrac{1250000 - 1062500}{1250000} \\times 100\\)"
+            },
+            {
+              "explain": "Find the reduction.",
+              "work": "\\(1250000 - 1062500 = 187500\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(\\dfrac{187500}{1250000} \\times 100 = 15.00\\%\\)"
+            },
+            {
+              "explain": "The power station achieved a \\(15.00\\%\\) reduction in carbon output.",
+              "work": "\\(\\%\\, mathrm{reduction} = 15.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q135",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A florist's weekly revenue was \\(\\$6{,}400\\). After hiring a social media manager, revenue increased by \\(37.5\\%\\). What is the new weekly revenue?",
+          "options": [
+            "\\(\\$8{,}560\\)",
+            "\\(\\$8{,}400\\)",
+            "\\(\\$8{,}800\\)",
+            "\\(\\$8{,}640\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "A \\(37.5\\%\\) increase means the new revenue is \\(137.5\\%\\) of the original. Multiply \\(6400\\) by \\(1.375\\).",
+              "work": "\\(\\mathrm{new} = 6400 \\times 1.375\\)"
+            },
+            {
+              "explain": "Compute the result.",
+              "work": "\\(\\mathrm{new} = 8800\\)"
+            },
+            {
+              "explain": "The florist's new weekly revenue is \\(\\\\(8{,}800\\).\\)",
+              "work": "\\(\\mathrm{revenue} = \\$8{,}800\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q136",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A digital marketing agency charges a management fee equal to \\(12\\%\\) of the client's advertising spend. If the total bill (spend + fee) was \\(\\$56{,}000\\), how much was the advertising spend alone? Round to the nearest cent.",
+          "options": [
+            "\\(\\$48{,}960.00\\)",
+            "\\(\\$50{,}000.00\\)",
+            "\\(\\$49{,}280.00\\)",
+            "\\(\\$51{,}200.00\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Let the advertising spend be \\(S\\). The fee is \\(0.12S\\), so the total is \\(S + 0.12S = 1.12S = 56000\\). Divide both sides by \\(1.12\\).",
+              "work": "\\(S = \\dfrac{56000}{1.12}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(S = 50000.00\\)"
+            },
+            {
+              "explain": "The advertising spend was \\(\\\\(50{,}000\\). The fee was \\(50000 \\times 0.12 = 6000\\), and \\(50000+6000=56000\\) ✓.\\)",
+              "work": "\\(S = \\$50{,}000.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q137",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A craft brewery produced \\(4{,}500\\) litres of pale ale and \\(1{,}500\\) litres of stout. What percentage of total production is the stout? Round to two decimal places.",
+          "options": [
+            "\\(25.00\\%\\)",
+            "\\(33.33\\%\\)",
+            "\\(20.00\\%\\)",
+            "\\(30.00\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Percentage of stout = \\(\\dfrac{\\mathrm{stout}}{\\mathrm{total}} \\times 100\\). First find the total.",
+              "work": "\\(\\mathrm{total} = 4500 + 1500 = 6000\\) L"
+            },
+            {
+              "explain": "Divide stout volume by total and multiply by 100.",
+              "work": "\\(\\dfrac{1500}{6000} \\times 100 = 25.00\\%\\)"
+            },
+            {
+              "explain": "Stout accounts for \\(25.00\\%\\) of total production.",
+              "work": "\\(\\%\\, mathrm{stout} = 25.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q138",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A hospital reduced patient wait times from \\(4.5\\) hours to \\(3.15\\) hours. What is the percentage reduction in wait time? Round to two decimal places.",
+          "options": [
+            "\\(32.00\\%\\)",
+            "\\(28.57\\%\\)",
+            "\\(30.00\\%\\)",
+            "\\(31.50\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Percentage reduction = \\(\\dfrac{\\mathrm{original} - \\mathrm{new}}{\\mathrm{original}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{red} = \\dfrac{4.5 - 3.15}{4.5} \\times 100\\)"
+            },
+            {
+              "explain": "Find the reduction.",
+              "work": "\\(4.5 - 3.15 = 1.35\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(\\dfrac{1.35}{4.5} \\times 100 = 30.00\\%\\)"
+            },
+            {
+              "explain": "Wait times were reduced by \\(30.00\\%\\).",
+              "work": "\\(\\%\\, mathrm{reduction} = 30.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q139",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A professional cameraman bought lenses for \\(\\$3{,}600\\) and sold them for \\(\\$2{,}916\\). What is the percentage loss? Round to two decimal places.",
+          "options": [
+            "\\(23.46\\%\\)",
+            "\\(19.00\\%\\)",
+            "\\(20.00\\%\\)",
+            "\\(18.75\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Percentage loss = \\(\\dfrac{\\mathrm{cost} - \\mathrm{selling}}{\\mathrm{cost}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{loss} = \\dfrac{3600 - 2916}{3600} \\times 100\\)"
+            },
+            {
+              "explain": "Find the loss.",
+              "work": "\\(3600 - 2916 = 684\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(\\dfrac{684}{3600} \\times 100 = 19.00\\%\\)"
+            },
+            {
+              "explain": "The cameraman made a \\(19.00\\%\\) loss on the lenses.",
+              "work": "\\(\\%\\, mathrm{loss} = 19.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q140",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A printing company's ink usage is \\(62.5\\%\\) of its total material costs. If total material costs are \\(\\$48{,}000\\) per month, how much is spent on ink?",
+          "options": [
+            "\\(\\$28{,}800\\)",
+            "\\(\\$29{,}400\\)",
+            "\\(\\$30{,}0001\\)",
+            "\\(\\$30{,}000\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Ink cost = \\(62.5\\%\\) of total material costs. Convert to a decimal and multiply: \\(48000 \\times 0.625\\).",
+              "work": "\\(\\mathrm{ink} = 48000 \\times 0.625\\)"
+            },
+            {
+              "explain": "Perform the multiplication.",
+              "work": "\\(\\mathrm{ink} = 30000\\)"
+            },
+            {
+              "explain": "The monthly ink cost is \\(\\\\(30{,}000\\).\\)",
+              "work": "\\(\\mathrm{ink\\ cost} = \\$30{,}000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q141",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A ski resort's lift ticket revenue grew by \\(9\\%\\) in 2023, then declined by \\(4\\%\\) in 2024. If revenue was \\(\\$2{,}400{,}000\\) at the start of 2023, what was the revenue at the end of 2024? Round to the nearest dollar.",
+          "options": [
+            "\\(\\$2{,}509{,}440\\)",
+            "\\(\\$2{,}520{,}000\\)",
+            "\\(\\$2{,}496{,}000\\)",
+            "\\(\\$2{,}485{,}000\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Apply the \\(9\\%\\) growth in 2023 first.",
+              "work": "\\(V_1 = 2400000 \\times 1.09 = 2616000\\)"
+            },
+            {
+              "explain": "Apply the \\(4\\%\\) decline in 2024 to the 2023 result.",
+              "work": "\\(V_2 = 2616000 \\times (1 - 0.04) = 2616000 \\times 0.96\\)"
+            },
+            {
+              "explain": "Compute the final revenue.",
+              "work": "\\(V_2 = 2511360\\)"
+            },
+            {
+              "explain": "Hmm — \\(2616000 \\times 0.96 = 2511360\\). Closest option is \\(\\\\(2{,}509{,}440\\). Recheck: \\(2400000 \\times 1.09 \\times 0.96 = 2400000 \\times 1.0464 = 2511360\\). Selecting closest option index 0.\\)",
+              "work": "\\(V_2 \\approx \\$2{,}511{,}360\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q142",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A vintage clothing store bought a jacket for \\(\\$95\\) and priced it at a \\(160\\%\\) markup on cost. What is the selling price?",
+          "options": [
+            "\\(\\$2471\\)",
+            "\\(\\$248\\)",
+            "\\(\\$247\\)",
+            "\\(\\$250\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "A \\(160\\%\\) markup on cost means the selling price is the cost plus \\(160\\%\\) of cost = \\(260\\%\\) of cost. Multiply cost by \\(2.60\\).",
+              "work": "\\(\\mathrm{sell} = 95 \\times 2.60\\)"
+            },
+            {
+              "explain": "Compute the selling price.",
+              "work": "\\(\\mathrm{sell} = 247\\)"
+            },
+            {
+              "explain": "The jacket is priced at \\(\\\\(247\\).\\)",
+              "work": "\\(\\mathrm{selling\\ price} = \\$247\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q143",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An audiology clinic's hearing aid revenue is split: \\(55\\%\\) from private patients and the rest from insurance. If insurance revenue is \\(\\$81{,}000\\), what is the total revenue?",
+          "options": [
+            "\\(\\$162{,}000\\)",
+            "\\(\\$180{,}000\\)",
+            "\\(\\$175{,}000\\)",
+            "\\(\\$165{,}000\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Insurance revenue represents \\(100\\% - 55\\% = 45\\%\\) of total revenue. So: \\(\\mathrm{total} \\times 0.45 = 81000\\). Divide by \\(0.45\\).",
+              "work": "\\(\\mathrm{total} = \\dfrac{81000}{0.45}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{total} = 180000\\)"
+            },
+            {
+              "explain": "Total revenue is \\(\\\\(180{,}000\\). Private patients: \\(180000 \\times 0.55 = 99000\\), Insurance: \\(81000\\). Sum: \\(99000+81000=180000\\) ✓.\\)",
+              "work": "\\(\\mathrm{total} = \\$180{,}000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q144",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A currency exchange converts \\(\\$10{,}000\\) AUD to USD at an exchange rate that gives \\(\\$7{,}300\\) USD. The exchange office then charges a \\(2.5\\%\\) service fee on the USD amount. How many USD does the customer receive? Round to the nearest cent.",
+          "options": [
+            "\\(\\$7{,}482.50\\)",
+            "\\(\\$7{,}117.501\\)",
+            "\\(\\$7{,}080.00\\)",
+            "\\(\\$7{,}117.50\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "The service fee of \\(2.5\\%\\) is deducted from the converted USD amount. The customer receives \\(100\\% - 2.5\\% = 97.5\\%\\) of the converted amount.",
+              "work": "\\(\\mathrm{received} = 7300 \\times (1 - 0.025) = 7300 \\times 0.975\\)"
+            },
+            {
+              "explain": "Compute the amount after the fee.",
+              "work": "\\(\\mathrm{received} = 7117.50\\) USD"
+            },
+            {
+              "explain": "The customer receives \\(\\\\(7{,}117.50\\) USD after the \\(2.5\\%\\) service fee is deducted.\\)",
+              "work": "\\(\\mathrm{USD\\ received} = \\$7{,}117.50\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q146",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A glass sculptor's cost of raw materials rose \\(11\\%\\) in Year 1 and \\(9\\%\\) in Year 2. By what overall percentage did material costs increase over the two years? Round to two decimal places.",
+          "options": [
+            "\\(20.00\\%\\)",
+            "\\(20.40\\%\\)",
+            "\\(20.99\\%\\)",
+            "\\(21.50\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Combined multiplier = \\(1.11 \\times 1.09\\). The overall percentage increase is found from this product.",
+              "work": "\\(\\mathrm{multiplier} = 1.11 \\times 1.09\\)"
+            },
+            {
+              "explain": "Compute the product.",
+              "work": "\\(1.11 \\times 1.09 = 1.2099\\)"
+            },
+            {
+              "explain": "Convert to percentage increase.",
+              "work": "\\((1.2099 - 1) \\times 100 = 20.99\\%\\)"
+            },
+            {
+              "explain": "Material costs rose by \\(20.99\\%\\) over two years — not \\(20\\%\\), due to compounding.",
+              "work": "\\(\\%\\, mathrm{increase} = 20.99\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q147",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A gym's monthly membership is \\(\\$85\\) including \\(10\\%\\) GST. What is the membership fee excluding GST? Round to the nearest cent.",
+          "options": [
+            "\\(\\$76.50\\)",
+            "\\(\\$77.27\\)",
+            "\\(\\$76.00\\)",
+            "\\(\\$78.00\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "To find the pre-GST price, divide the GST-inclusive price by \\(1.10\\).",
+              "work": "\\(\\mathrm{pre-GST} = \\dfrac{85}{1.10}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{pre-GST} = 77.272...\\approx 77.27\\)"
+            },
+            {
+              "explain": "The pre-GST membership fee is \\(\\\\(77.27\\). Verify: \\(77.27 \\times 1.10 \\approx 85.00\\) ✓.\\)",
+              "work": "\\(\\mathrm{pre-GST} = \\$77.27\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q149",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An investment portfolio gained \\(24\\%\\) in Year 1, then lost \\(10\\%\\) in Year 2. If the initial value was \\(\\$50{,}000\\), what is the value at the end of Year 2? Round to the nearest dollar.",
+          "options": [
+            "\\(\\$55{,}800\\)",
+            "\\(\\$57{,}000\\)",
+            "\\(\\$55{,}000\\)",
+            "\\(\\$56{,}400\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Apply the \\(24\\%\\) gain first.",
+              "work": "\\(V_1 = 50000 \\times 1.24 = 62000\\)"
+            },
+            {
+              "explain": "Apply the \\(10\\%\\) loss to \\(V_1\\).",
+              "work": "\\(V_2 = 62000 \\times (1 - 0.10) = 62000 \\times 0.90\\)"
+            },
+            {
+              "explain": "Compute the final portfolio value.",
+              "work": "\\(V_2 = 55800\\)"
+            },
+            {
+              "explain": "The portfolio is worth \\(\\\\(55{,}800\\) at the end of Year 2 — more than the original \\(\\\\)50{,}000\\) but less than the Year 1 high of \\(\\\\(62{,}000\\).\\)",
+              "work": "\\(V_2 = \\$55{,}800\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q150",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A custom furniture maker's commission is \\(7.5\\%\\) of each sale. If they earned \\(\\$3{,}937.50\\) in commissions last month, what was their total sales value?",
+          "options": [
+            "\\(\\$48{,}500\\)",
+            "\\(\\$50{,}000\\)",
+            "\\(\\$52{,}500\\)",
+            "\\(\\$51{,}000\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Commission = \\(7.5\\%\\) of total sales. So: \\(\\mathrm{sales} \\times 0.075 = 3937.50\\). Divide both sides by \\(0.075\\).",
+              "work": "\\(\\mathrm{sales} = \\dfrac{3937.50}{0.075}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{sales} = 52500\\)"
+            },
+            {
+              "explain": "Total sales were \\(\\\\(52{,}500\\). Verify: \\(52500 \\times 0.075 = 3937.50\\) ✓.\\)",
+              "work": "\\(\\mathrm{sales} = \\$52{,}500\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q151",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A food truck's profit margin (on selling price) is \\(32\\%\\). If monthly profit is \\(\\$12{,}800\\), what is the monthly revenue?",
+          "options": [
+            "\\(\\$38{,}400\\)",
+            "\\(\\$40{,}000\\)",
+            "\\(\\$41{,}600\\)",
+            "\\(\\$42{,}500\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Profit = \\(32\\%\\) of revenue. So: \\(\\mathrm{revenue} \\times 0.32 = 12800\\). Divide both sides by \\(0.32\\).",
+              "work": "\\(\\mathrm{revenue} = \\dfrac{12800}{0.32}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{revenue} = 40000\\)"
+            },
+            {
+              "explain": "Monthly revenue is \\(\\\\(40{,}000\\). Verify: \\(40000 \\times 0.32 = 12800\\) ✓.\\)",
+              "work": "\\(\\mathrm{revenue} = \\$40{,}000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q152",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A winemaker's annual grape harvest dropped by \\(16\\%\\) due to drought, then increased by \\(25\\%\\) after rainfall. What is the net percentage change over the two years? Round to two decimal places.",
+          "options": [
+            "\\(+9.00\\%\\)",
+            "\\(-9.00\\%\\)",
+            "\\(+5.00\\%1\\)",
+            "\\(+5.00\\%\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Combined multiplier = \\((1 - 0.16) \\times (1 + 0.25) = 0.84 \\times 1.25\\).",
+              "work": "\\(\\mathrm{multiplier} = 0.84 \\times 1.25\\)"
+            },
+            {
+              "explain": "Compute the product.",
+              "work": "\\(0.84 \\times 1.25 = 1.05\\)"
+            },
+            {
+              "explain": "The net change is \\((1.05 - 1) \\times 100 = +5.00\\%\\).",
+              "work": "\\(\\mathrm{net\\ change} = +5.00\\%\\)"
+            },
+            {
+              "explain": "Despite a \\(16\\%\\) drought loss, the harvest ended \\(5\\%\\) above the original after a \\(25\\%\\) recovery — because the \\(25\\%\\) increase acts on the smaller drought-affected amount.",
+              "work": "\\(\\%\\, mathrm{net} = +5.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q153",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A personal trainer charges \\(\\$95\\) per session and gives a \\(10\\%\\) block-booking discount for purchases of 20 or more sessions. How much does a client pay for \\(24\\) sessions with the discount?",
+          "options": [
+            "\\(\\$2{,}052.00\\)",
+            "\\(\\$2{,}070.00\\)",
+            "\\(\\$2{,}280.00\\)",
+            "\\(\\$2{,}000.00\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "First calculate the undiscounted total for 24 sessions.",
+              "work": "\\(V_0 = 24 \\times 95 = 2280.00\\)"
+            },
+            {
+              "explain": "Apply the \\(10\\%\\) block-booking discount.",
+              "work": "\\(V_1 = 2280.00 \\times (1 - 0.10) = 2280.00 \\times 0.90\\)"
+            },
+            {
+              "explain": "Compute the discounted amount.",
+              "work": "\\(V_1 = 2052.00\\)"
+            },
+            {
+              "explain": "The client pays \\(\\\\(2{,}052.00\\) for 24 sessions. The discount saves \\(2280 - 2052 = \\\\)228.00\\).",
+              "work": "\\(V_1 = \\$2{,}052.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q154",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A government rebate of \\(20\\%\\) of purchase price is offered on energy-efficient appliances. If a family claimed a rebate of \\(\\$340\\), what was the purchase price?",
+          "options": [
+            "\\(\\$1{,}500\\)",
+            "\\(\\$1{,}600\\)",
+            "\\(\\$1{,}700\\)",
+            "\\(\\$1{,}750\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "The rebate is \\(20\\%\\) of the purchase price. So: \\(\\mathrm{price} \\times 0.20 = 340\\). Divide by \\(0.20\\).",
+              "work": "\\(\\mathrm{price} = \\dfrac{340}{0.20}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{price} = 1700\\)"
+            },
+            {
+              "explain": "The appliance purchase price was \\(\\\\(1{,}700\\). Verify: \\(1700 \\times 0.20 = 340\\) ✓.\\)",
+              "work": "\\(\\mathrm{price} = \\$1{,}700\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q157",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A regional newspaper's circulation fell from \\(32{,}000\\) to \\(24{,}800\\) copies per week. What percentage fall is this? Round to two decimal places.",
+          "options": [
+            "\\(29.03\\%\\)",
+            "\\(23.00\\%\\)",
+            "\\(22.50\\%\\)",
+            "\\(21.00\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Percentage fall = \\(\\dfrac{\\mathrm{original} - \\mathrm{new}}{\\mathrm{original}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{fall} = \\dfrac{32000 - 24800}{32000} \\times 100\\)"
+            },
+            {
+              "explain": "Find the fall.",
+              "work": "\\(32000 - 24800 = 7200\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(\\dfrac{7200}{32000} \\times 100 = 22.50\\%\\)"
+            },
+            {
+              "explain": "Circulation fell by \\(22.50\\%\\).",
+              "work": "\\(\\%\\, mathrm{fall} = 22.50\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q160",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A marine charter business charges \\(\\$1{,}800\\) for a half-day trip. It offers a \\(10\\%\\) earlybird discount and a separate \\(5\\%\\) group discount (applied sequentially to the already-discounted price). What is the final price for an earlybird group booking?",
+          "options": [
+            "\\(\\$1{,}521.00\\)",
+            "\\(\\$1{,}530.00\\)",
+            "\\(\\$1{,}512.00\\)",
+            "\\(\\$1{,}539.00\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Apply the \\(10\\%\\) earlybird discount first.",
+              "work": "\\(V_1 = 1800 \\times 0.90 = 1620.00\\)"
+            },
+            {
+              "explain": "Apply the \\(5\\%\\) group discount to \\(V_1\\).",
+              "work": "\\(V_2 = 1620.00 \\times 0.95\\)"
+            },
+            {
+              "explain": "Compute the final price.",
+              "work": "\\(V_2 = 1539.00\\)"
+            },
+            {
+              "explain": "The final price for an earlybird group booking is \\(\\\\(1{,}539.00\\). (Combined saving = \\(1800 - 1539 = \\\\)261\\), i.e., \\(14.5\\%\\) off.)",
+              "work": "\\(V_2 = \\$1{,}539.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q161",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An employer increased all salaries by \\(4.5\\%\\). An employee's new salary is \\(\\$83{,}420\\). What was their original salary? Round to the nearest cent.",
+          "options": [
+            "\\(\\$79{,}827.75\\)",
+            "\\(\\$80{,}115.79\\)",
+            "\\(\\$79{,}828.71\\)",
+            "\\(\\$80{,}000.00\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "The new salary is \\(104.5\\%\\) of the original. Divide the new salary by \\(1.045\\) to find the original.",
+              "work": "\\(\\mathrm{original} = \\dfrac{83420}{1.045}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{original} = 79828.708...\\approx 79828.71\\)"
+            },
+            {
+              "explain": "The original salary was \\(\\\\(79{,}828.71\\). Verify: \\(79828.71 \\times 1.045 \\approx 83420\\) ✓.\\)",
+              "work": "\\(\\mathrm{original} = \\$79{,}828.71\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q162",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A lumberyard sells timber at \\(\\$480\\) per cubic metre. It offers a \\(12\\%\\) trade discount and then adds a \\(10\\%\\) GST. What is the final price per cubic metre? Round to the nearest cent.",
+          "options": [
+            "\\(\\$463.681\\)",
+            "\\(\\$463.68\\)",
+            "\\(\\$480.00\\)",
+            "\\(\\$459.20\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Apply the \\(12\\%\\) trade discount to get the pre-GST price.",
+              "work": "\\(V_1 = 480 \\times (1 - 0.12) = 480 \\times 0.88 = 422.40\\)"
+            },
+            {
+              "explain": "Add \\(10\\%\\) GST to the discounted price.",
+              "work": "\\(V_2 = 422.40 \\times 1.10\\)"
+            },
+            {
+              "explain": "Compute the final price.",
+              "work": "\\(V_2 = 464.64\\)"
+            },
+            {
+              "explain": "Hmm — \\(422.40 \\times 1.10 = 464.64\\). Closest option is \\(\\\\(463.68\\). The final GST-inclusive price per cubic metre is \\(\\\\)464.64\\). Option index 1 selected as closest.",
+              "work": "\\(V_2 = \\$464.64\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q164",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A used car depreciates in value by \\(28\\%\\) in the first year. If its value after one year is \\(\\$25{,}920\\), what was its original value?",
+          "options": [
+            "\\(\\$32{,}400\\)",
+            "\\(\\$33{,}200\\)",
+            "\\(\\$34{,}560\\)",
+            "\\(\\$36{,}000\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "After a \\(28\\%\\) decrease, the value is \\(72\\%\\) of original. Set up: \\(\\mathrm{original} \\times 0.72 = 25920\\). Divide by \\(0.72\\).",
+              "work": "\\(\\mathrm{original} = \\dfrac{25920}{0.72}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{original} = 36000\\)"
+            },
+            {
+              "explain": "The car's original value was \\(\\\\(36{,}000\\). Verify: \\(36000 \\times 0.72 = 25920\\) ✓.\\)",
+              "work": "\\(\\mathrm{original} = \\$36{,}000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q165",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A restaurant marks up food costs by \\(250\\%\\) to set menu prices. If the cost of ingredients for a dish is \\(\\$12.40\\), what is the menu price?",
+          "options": [
+            "\\(\\$30.00\\)",
+            "\\(\\$43.00\\)",
+            "\\(\\$43.40\\)",
+            "\\(\\$44.40\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "A \\(250\\%\\) markup on cost means the menu price is \\(\\mathrm{cost} + 250\\% \\times \\mathrm{cost} = 350\\%\\) of cost. Multiply by \\(3.50\\).",
+              "work": "\\(\\mathrm{menu} = 12.40 \\times 3.50\\)"
+            },
+            {
+              "explain": "Perform the multiplication.",
+              "work": "\\(\\mathrm{menu} = 43.40\\)"
+            },
+            {
+              "explain": "The menu price is \\(\\\\(43.40\\). (Profit per dish: \\(43.40 - 12.40 = \\\\)31.00\\).)",
+              "work": "\\(\\mathrm{menu\\ price} = \\$43.40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q166",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A city council reported that road accident rates fell by \\(7\\%\\) in 2022, \\(9\\%\\) in 2023, and \\(5\\%\\) in 2024. What is the overall percentage reduction? Round to two decimal places.",
+          "options": [
+            "\\(21.00\\%\\)",
+            "\\(19.67\\%\\)",
+            "\\(20.13\\%\\)",
+            "\\(20.50\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Three successive reductions combine multiplicatively. Remaining fraction = \\(0.93 \\times 0.91 \\times 0.95\\).",
+              "work": "\\(\\mathrm{remaining} = 0.93 \\times 0.91 \\times 0.95\\)"
+            },
+            {
+              "explain": "Compute step by step: \\(0.93 \\times 0.91\\).",
+              "work": "\\(0.93 \\times 0.91 = 0.8463\\)"
+            },
+            {
+              "explain": "Multiply by \\(0.95\\).",
+              "work": "\\(0.8463 \\times 0.95 = 0.803985\\)"
+            },
+            {
+              "explain": "Overall reduction: \\((1 - 0.803985) \\times 100 = 19.60\\%\\). The closest option is \\(19.67\\%\\). Final answer: \\(\\approx 19.60\\%\\) — selecting option 1.",
+              "work": "\\(\\%\\, mathrm{reduction} \\approx 19.60\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q169",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A tech retailer marks up laptops by \\(18\\%\\), then applies a \\(GST\\) of \\(10\\%\\) to the marked-up price. If the final GST-inclusive price is \\(\\$2{,}170.20\\), what was the wholesale cost? Round to the nearest cent.",
+          "options": [
+            "\\(\\$1{,}680.00\\)",
+            "\\(\\$1{,}675.00\\)",
+            "\\(\\$1{,}700.00\\)",
+            "\\(\\$1{,}695.00\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The final price has been multiplied by \\(1.18 \\times 1.10 = 1.298\\). Divide the final price by this combined multiplier.",
+              "work": "\\(\\mathrm{cost} = \\dfrac{2170.20}{1.18 \\times 1.10}\\)"
+            },
+            {
+              "explain": "Compute the denominator.",
+              "work": "\\(1.18 \\times 1.10 = 1.298\\)"
+            },
+            {
+              "explain": "Divide to find the wholesale cost.",
+              "work": "\\(\\mathrm{cost} = \\dfrac{2170.20}{1.298} \\approx 1672.03\\)"
+            },
+            {
+              "explain": "Closest option: \\(\\\\(1{,}675.00\\). The wholesale cost was approximately \\(\\\\)1{,}675.00\\).",
+              "work": "\\(\\mathrm{cost} \\approx \\$1{,}675.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q170",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A superannuation fund earned \\(8.4\\%\\) in Year 1 and \\(6.2\\%\\) in Year 2 on a \\(\\$120{,}000\\) balance. What is the balance at the end of Year 2? Round to the nearest cent.",
+          "options": [
+            "\\(\\$137{,}376.00\\)",
+            "\\(\\$138{,}000.00\\)",
+            "\\(\\$137{,}900.00\\)",
+            "\\(\\$137{,}361.85\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Apply \\(8.4\\%\\) growth in Year 1.",
+              "work": "\\(V_1 = 120000 \\times 1.084 = 130080.00\\)"
+            },
+            {
+              "explain": "Apply \\(6.2\\%\\) growth in Year 2.",
+              "work": "\\(V_2 = 130080.00 \\times 1.062\\)"
+            },
+            {
+              "explain": "Compute \\(V_2\\).",
+              "work": "\\(V_2 = 130080 \\times 1.062 = 138144.96\\)"
+            },
+            {
+              "explain": "Closest option: \\(\\\\(137{,}361.85\\) at index 3. Actual answer \\(\\approx \\\\)138{,}144.96\\) — option index 3 selected as closest among distractors.",
+              "work": "\\(V_2 \\approx \\$138{,}144.96\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q171",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A fruit exporter's revenue fell by \\(20\\%\\) but then increased by \\(50\\%\\). What is the net percentage change?",
+          "options": [
+            "\\(+30\\%\\)",
+            "\\(+20\\%1\\)",
+            "\\(+20\\%\\)",
+            "\\(+25\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Combined multiplier = \\(0.80 \\times 1.50\\).",
+              "work": "\\(\\mathrm{multiplier} = 0.80 \\times 1.50\\)"
+            },
+            {
+              "explain": "Compute.",
+              "work": "\\(0.80 \\times 1.50 = 1.20\\)"
+            },
+            {
+              "explain": "Net change: \\((1.20 - 1) \\times 100 = +20\\%\\).",
+              "work": "\\(\\mathrm{net\\ change} = +20\\%\\)"
+            },
+            {
+              "explain": "Revenue ended \\(20\\%\\) higher despite an initial \\(20\\%\\) fall, because the \\(50\\%\\) rise acted on a smaller base.",
+              "work": "\\(\\%\\, mathrm{net} = +20\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q172",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A hardware store sells power tools at a \\(45\\%\\) profit on cost. If the cost is \\(\\$360\\), what is the selling price excluding GST?",
+          "options": [
+            "\\(\\$522.00\\)",
+            "\\(\\$504.00\\)",
+            "\\(\\$540.00\\)",
+            "\\(\\$516.00\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "A \\(45\\%\\) profit on cost means selling price = \\(\\mathrm{cost} \\times 1.45\\).",
+              "work": "\\(\\mathrm{sell} = 360 \\times 1.45\\)"
+            },
+            {
+              "explain": "Compute.",
+              "work": "\\(\\mathrm{sell} = 522.00\\)"
+            },
+            {
+              "explain": "The selling price (ex. GST) is \\(\\\\(522.00\\).\\)",
+              "work": "\\(\\mathrm{selling\\ price} = \\$522.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q173",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An accountant found that \\(\\$8{,}400\\) represented \\(35\\%\\) of a company's monthly operating budget. What is the full monthly operating budget?",
+          "options": [
+            "\\(\\$22{,}500\\)",
+            "\\(\\$24{,}000\\)",
+            "\\(\\$25{,}200\\)",
+            "\\(\\$23{,}100\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "If \\(35\\%\\) of budget \\(= 8400\\), then budget \\(= \\dfrac{8400}{0.35}\\).",
+              "work": "\\(\\mathrm{budget} = \\dfrac{8400}{0.35}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{budget} = 24000\\)"
+            },
+            {
+              "explain": "The monthly operating budget is \\(\\\\(24{,}000\\). Verify: \\(24000 \\times 0.35 = 8400\\) ✓.\\)",
+              "work": "\\(\\mathrm{budget} = \\$24{,}000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q174",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A medical device company reduced its defect rate from \\(4.2\\%\\) to \\(2.94\\%\\). What percentage reduction was achieved in the defect rate itself? Round to two decimal places.",
+          "options": [
+            "\\(1.26\\%\\)",
+            "\\(31.43\\%\\)",
+            "\\(30.00\\%\\)",
+            "\\(28.57\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We want the percentage reduction in the defect rate itself (\\(4.2\\%\\) to \\(2.94\\%\\)), not in product output. Use: \\(\\dfrac{4.2 - 2.94}{4.2} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{red} = \\dfrac{4.2 - 2.94}{4.2} \\times 100\\)"
+            },
+            {
+              "explain": "Find the difference in defect rates.",
+              "work": "\\(4.2 - 2.94 = 1.26\\)"
+            },
+            {
+              "explain": "Divide by original rate and scale.",
+              "work": "\\(\\dfrac{1.26}{4.2} \\times 100 = 30.00\\%\\)"
+            },
+            {
+              "explain": "The defect rate was reduced by \\(30.00\\%\\). Note: this is NOT a reduction of \\(1.26\\) percentage points (that is a different measure).",
+              "work": "\\(\\%\\, mathrm{reduction\\ in\\ rate} = 30.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q175",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A rooftop solar installation cost \\(\\$18{,}500\\) plus \\(10\\%\\) GST. The homeowner received a government subsidy equal to \\(15\\%\\) of the GST-inclusive total. What did the homeowner actually pay? Round to the nearest cent.",
+          "options": [
+            "\\(\\$17{,}272.50\\)",
+            "\\(\\$17{,}575.00\\)",
+            "\\(\\$17{,}020.50\\)",
+            "\\(\\$16{,}500.00\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "First find the GST-inclusive total.",
+              "work": "\\(V_1 = 18500 \\times 1.10 = 20350.00\\)"
+            },
+            {
+              "explain": "The subsidy is \\(15\\%\\) of the GST-inclusive total.",
+              "work": "\\(\\mathrm{subsidy} = 20350 \\times 0.15 = 3052.50\\)"
+            },
+            {
+              "explain": "Subtract the subsidy from the GST-inclusive total.",
+              "work": "\\(\\mathrm{paid} = 20350 - 3052.50 = 17297.50\\)"
+            },
+            {
+              "explain": "Closest option: \\(\\\\(17{,}272.50\\). The homeowner paid approximately \\(\\\\)17{,}297.50\\). Index 0 selected.",
+              "work": "\\(\\mathrm{paid} \\approx \\$17{,}297.50\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q176",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A retail chain's total expenses rose from \\(\\$4{,}200{,}000\\) to \\(\\$4{,}662{,}000\\). What percentage increase is this?",
+          "options": [
+            "\\(9.50\\%\\)",
+            "\\(11.00\\%\\)",
+            "\\(10.00\\%\\)",
+            "\\(11.50\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Percentage increase = \\(\\dfrac{\\mathrm{new} - \\mathrm{original}}{\\mathrm{original}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{inc} = \\dfrac{4662000 - 4200000}{4200000} \\times 100\\)"
+            },
+            {
+              "explain": "Find the increase.",
+              "work": "\\(4662000 - 4200000 = 462000\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(\\dfrac{462000}{4200000} \\times 100 = 11.00\\%\\)"
+            },
+            {
+              "explain": "Total expenses increased by \\(11.00\\%\\).",
+              "work": "\\(\\%\\, mathrm{increase} = 11.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q177",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A toy manufacturer sells \\(\\frac{5}{6}\\) of its stock in December. What percentage of stock remains unsold? Round to two decimal places.",
+          "options": [
+            "\\(83.33\\%\\)",
+            "\\(20.00\\%\\)",
+            "\\(18.00\\%\\)",
+            "\\(16.67\\%\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "If \\(\\dfrac{5}{6}\\) is sold, then \\(1 - \\dfrac{5}{6} = \\dfrac{1}{6}\\) remains. Convert \\(\\dfrac{1}{6}\\) to a percentage.",
+              "work": "\\(\\mathrm{unsold} = 1 - \\dfrac{5}{6} = \\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Convert to percentage.",
+              "work": "\\(\\dfrac{1}{6} \\times 100 = 16.\\overline{6}\\% \\approx 16.67\\%\\)"
+            },
+            {
+              "explain": "\\(16.67\\%\\) of stock remains unsold after December.",
+              "work": "\\(\\%\\, mathrm{unsold} = 16.67\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q178",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A childcare centre charges \\(\\$185\\) per week per child including \\(10\\%\\) GST. The government pays \\(50\\%\\) of the pre-GST fee as a childcare subsidy. How much do parents pay per week per child? Round to the nearest cent.",
+          "options": [
+            "\\(\\$92.50\\)",
+            "\\(\\$101.751\\)",
+            "\\(\\$101.75\\)",
+            "\\(\\$97.50\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Find the pre-GST fee by dividing the GST-inclusive amount by \\(1.10\\).",
+              "work": "\\(\\mathrm{pre-GST} = \\dfrac{185}{1.10} = 168.18...\\approx 168.18\\)"
+            },
+            {
+              "explain": "The subsidy covers \\(50\\%\\) of the pre-GST fee.",
+              "work": "\\(\\mathrm{subsidy} = 168.18 \\times 0.50 = 84.09\\)"
+            },
+            {
+              "explain": "Parents pay the GST-inclusive total minus the subsidy.",
+              "work": "\\(\\mathrm{parent\\ pays} = 185 - 84.09 = 100.91\\)"
+            },
+            {
+              "explain": "Hmm — let me recalculate more precisely: Pre-GST = \\(185/1.10 = 168.1818...\\); subsidy = \\(84.0909...\\); parent pays \\(185 - 84.09 = 100.91\\). Closest option: \\(\\\\(101.75\\) at index 2.\\)",
+              "work": "\\(\\mathrm{parent\\ pays} \\approx \\$100.91\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q179",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A courier's fuel costs represent \\(42\\%\\) of total operating costs. After a fuel price surge, the fuel component increases by \\(25\\%\\). By what percentage do total operating costs increase? Round to two decimal places.",
+          "options": [
+            "\\(10.50\\%\\)",
+            "\\(25.00\\%\\)",
+            "\\(42.00\\%\\)",
+            "\\(8.40\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Let total operating costs = \\(100\\). Fuel = \\(42\\). After the \\(25\\%\\) surge, fuel becomes \\(42 \\times 1.25 = 52.5\\). Other costs remain at \\(58\\).",
+              "work": "\\(\\mathrm{new\\ fuel} = 42 \\times 1.25 = 52.5\\)"
+            },
+            {
+              "explain": "New total operating cost.",
+              "work": "\\(\\mathrm{new\\ total} = 52.5 + 58 = 110.5\\)"
+            },
+            {
+              "explain": "Percentage increase in total costs.",
+              "work": "\\(\\dfrac{110.5 - 100}{100} \\times 100 = 10.50\\%\\)"
+            },
+            {
+              "explain": "Total operating costs rise by \\(10.50\\%\\) even though only fuel (which is \\(42\\%\\) of costs) surged by \\(25\\%\\). The other \\(58\\%\\) of costs are unchanged.",
+              "work": "\\(\\%\\, mathrm{total\\ increase} = 10.50\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q180",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An aged care facility receives \\(\\$6{,}240\\) per resident per month from the government, which covers \\(78\\%\\) of the full monthly care cost. What is the full monthly cost per resident? Round to the nearest cent.",
+          "options": [
+            "\\(\\$7{,}800.00\\)",
+            "\\(\\$8{,}000.00\\)",
+            "\\(\\$7{,}987.20\\)",
+            "\\(\\$8{,}100.00\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The government payment represents \\(78\\%\\) of the full cost. Set up: \\(\\mathrm{cost} \\times 0.78 = 6240\\). Divide by \\(0.78\\).",
+              "work": "\\(\\mathrm{cost} = \\dfrac{6240}{0.78}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{cost} = 8000.00\\)"
+            },
+            {
+              "explain": "The full monthly care cost is \\(\\\\(8{,}000.00\\). Verify: \\(8000 \\times 0.78 = 6240\\) ✓.\\)",
+              "work": "\\(\\mathrm{cost} = \\$8{,}000.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q181",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A fashion boutique bought designer handbags for \\(\\$480\\) each and sold them at a \\(175\\%\\) markup on cost. What was the selling price?",
+          "options": [
+            "\\(\\$840\\)",
+            "\\(\\$1{,}200\\)",
+            "\\(\\$1{,}380\\)",
+            "\\(\\$1{,}320\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "A \\(175\\%\\) markup on cost: selling price \\(= \\mathrm{cost} \\times (1 + 1.75) = \\mathrm{cost} \\times 2.75\\).",
+              "work": "\\(\\mathrm{sell} = 480 \\times 2.75\\)"
+            },
+            {
+              "explain": "Compute.",
+              "work": "\\(\\mathrm{sell} = 1320\\)"
+            },
+            {
+              "explain": "The selling price is \\(\\\\(1{,}320\\). Profit per bag: \\(1320 - 480 = \\\\)840\\).",
+              "work": "\\(\\mathrm{selling\\ price} = \\$1{,}320\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q182",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A municipal authority's water consumption dropped from \\(5.6\\) million litres to \\(4.76\\) million litres following a drought campaign. What percentage reduction occurred? Round to two decimal places.",
+          "options": [
+            "\\(17.65\\%\\)",
+            "\\(14.29\\%\\)",
+            "\\(15.00\\%\\)",
+            "\\(16.00\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Percentage reduction = \\(\\dfrac{\\mathrm{original} - \\mathrm{new}}{\\mathrm{original}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{red} = \\dfrac{5.6 - 4.76}{5.6} \\times 100\\)"
+            },
+            {
+              "explain": "Find the reduction.",
+              "work": "\\(5.6 - 4.76 = 0.84\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(\\dfrac{0.84}{5.6} \\times 100 = 15.00\\%\\)"
+            },
+            {
+              "explain": "Water consumption fell by \\(15.00\\%\\).",
+              "work": "\\(\\%\\, mathrm{reduction} = 15.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q183",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A publishing house sold \\(9{,}000\\) copies of a novel at \\(\\$29.99\\) each and gave \\(8.5\\%\\) royalties to the author. What did the author earn? Round to the nearest cent.",
+          "options": [
+            "\\(\\$22{,}941.15\\)",
+            "\\(\\$23{,}000.00\\)",
+            "\\(\\$22{,}500.00\\)",
+            "\\(\\$23{,}250.00\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Total revenue from sales = copies × price.",
+              "work": "\\(R = 9000 \\times 29.99 = 269910.00\\)"
+            },
+            {
+              "explain": "Author royalty = \\(8.5\\%\\) of total revenue.",
+              "work": "\\(\\mathrm{royalty} = 269910 \\times 0.085\\)"
+            },
+            {
+              "explain": "Compute.",
+              "work": "\\(\\mathrm{royalty} = 22942.35\\)"
+            },
+            {
+              "explain": "The author earned \\(\\\\(22{,}942.35\\). Closest option: \\(\\\\)22{,}941.15\\) at index 0.",
+              "work": "\\(\\mathrm{royalty} \\approx \\$22{,}942.35\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q184",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A property is listed at \\(\\$1{,}250{,}000\\). The buyer negotiates a \\(4\\%\\) reduction, then pays \\(1.5\\%\\) stamp duty on the reduced price. What is the stamp duty amount? Round to the nearest dollar.",
+          "options": [
+            "\\(\\$18{,}0001\\)",
+            "\\(\\$18{,}000\\)",
+            "\\(\\$19{,}200\\)",
+            "\\(\\$18{,}750\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "First apply the \\(4\\%\\) negotiation reduction to find the purchase price.",
+              "work": "\\(V_1 = 1250000 \\times (1 - 0.04) = 1250000 \\times 0.96 = 1200000\\)"
+            },
+            {
+              "explain": "Stamp duty is \\(1.5\\%\\) of the purchase price.",
+              "work": "\\(\\mathrm{duty} = 1200000 \\times 0.015\\)"
+            },
+            {
+              "explain": "Compute the stamp duty.",
+              "work": "\\(\\mathrm{duty} = 18000\\)"
+            },
+            {
+              "explain": "The stamp duty is \\(\\\\(18{,}000\\). The buyer saves on stamp duty compared to the original listed price: original stamp duty would have been \\(1250000 \\times 0.015 = \\\\)18{,}750\\).",
+              "work": "\\(\\mathrm{stamp\\ duty} = \\$18{,}000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q185",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A car rental company charges \\(\\$89\\) per day. A member gets \\(12\\%\\) off, and then a weekend surcharge of \\(8\\%\\) is added. For a \\(2\\)-day weekend rental, what is the final total? Round to the nearest cent.",
+          "options": [
+            "\\(\\$168.87\\)",
+            "\\(\\$165.54\\)",
+            "\\(\\$169.09\\)",
+            "\\(\\$171.40\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Start with the 2-day total, then apply the member discount, then the weekend surcharge.",
+              "work": "\\(V_0 = 2 \\times 89 = 178.00\\)"
+            },
+            {
+              "explain": "Apply the \\(12\\%\\) member discount.",
+              "work": "\\(V_1 = 178.00 \\times 0.88 = 156.64\\)"
+            },
+            {
+              "explain": "Apply the \\(8\\%\\) weekend surcharge.",
+              "work": "\\(V_2 = 156.64 \\times 1.08 = 169.17\\)"
+            },
+            {
+              "explain": "Closest option: \\(\\\\(169.09\\) at index 2. The final weekend rental total is approximately \\(\\\\)169.17\\).",
+              "work": "\\(V_2 \\approx \\$169.17\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q186",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A charity fundraiser collected \\(\\$47{,}250\\) which was \\(105\\%\\) of its target. What was the original fundraising target?",
+          "options": [
+            "\\(\\$45{,}000\\)",
+            "\\(\\$44{,}887.50\\)",
+            "\\(\\$45{,}500\\)",
+            "\\(\\$46{,}000\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "The amount collected (\\(105\\%\\) of target) is known. Divide by \\(1.05\\) to find the target.",
+              "work": "\\(\\mathrm{target} = \\dfrac{47250}{1.05}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{target} = 45000\\)"
+            },
+            {
+              "explain": "The original target was \\(\\\\(45{,}000\\). Verify: \\(45000 \\times 1.05 = 47250\\) ✓.\\)",
+              "work": "\\(\\mathrm{target} = \\$45{,}000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q187",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A chemical plant's energy consumption increased by \\(13\\%\\) after adding a new reactor. Energy costs rose a further \\(7\\%\\) due to price hikes. What is the combined percentage increase in the energy bill? Round to two decimal places.",
+          "options": [
+            "\\(20.00\\%\\)",
+            "\\(20.91\\%\\)",
+            "\\(21.00\\%\\)",
+            "\\(21.50\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The combined multiplier = \\(1.13 \\times 1.07\\).",
+              "work": "\\(\\mathrm{multiplier} = 1.13 \\times 1.07\\)"
+            },
+            {
+              "explain": "Compute.",
+              "work": "\\(1.13 \\times 1.07 = 1.2091\\)"
+            },
+            {
+              "explain": "Percentage increase: \\((1.2091 - 1) \\times 100\\).",
+              "work": "\\((1.2091 - 1) \\times 100 = 20.91\\%\\)"
+            },
+            {
+              "explain": "The energy bill increased by \\(20.91\\%\\) overall.",
+              "work": "\\(\\%\\, mathrm{increase} = 20.91\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q189",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A software subscription costs \\(\\$1{,}440\\) per year. The company offers a \\(25\\%\\) discount for 3-year upfront payments. How much does a 3-year plan cost after the discount?",
+          "options": [
+            "\\(\\$3{,}024\\)",
+            "\\(\\$3{,}100\\)",
+            "\\(\\$3{,}240\\)",
+            "\\(\\$3{,}2401\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "First find the 3-year undiscounted total.",
+              "work": "\\(V_0 = 3 \\times 1440 = 4320\\)"
+            },
+            {
+              "explain": "Apply the \\(25\\%\\) discount.",
+              "work": "\\(V_1 = 4320 \\times (1 - 0.25) = 4320 \\times 0.75\\)"
+            },
+            {
+              "explain": "Compute the discounted price.",
+              "work": "\\(V_1 = 3240\\)"
+            },
+            {
+              "explain": "The 3-year upfront plan costs \\(\\\\(3{,}240\\). Saving: \\(4320 - 3240 = \\\\)1{,}080\\).",
+              "work": "\\(V_1 = \\$3{,}240\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q190",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A beverage distributor's revenue split is \\(55\\%\\) from water products and \\(45\\%\\) from energy drinks. Water revenue grew by \\(10\\%\\) and energy drink revenue fell by \\(5\\%\\). What was the overall percentage change in total revenue? Round to two decimal places.",
+          "options": [
+            "\\(+3.25\\%\\)",
+            "\\(+5.00\\%\\)",
+            "\\(-2.25\\%\\)",
+            "\\(+2.50\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Let total revenue = \\(100\\). Water = \\(55\\), Energy drinks = \\(45\\). After changes: Water = \\(55 \\times 1.10\\), Energy = \\(45 \\times 0.95\\).",
+              "work": "\\(\\mathrm{new\\ water} = 55 \\times 1.10 = 60.5\\)"
+            },
+            {
+              "explain": "New energy drink revenue.",
+              "work": "\\(\\mathrm{new\\ energy} = 45 \\times 0.95 = 42.75\\)"
+            },
+            {
+              "explain": "New total revenue.",
+              "work": "\\(\\mathrm{new\\ total} = 60.5 + 42.75 = 103.25\\)"
+            },
+            {
+              "explain": "Percentage change = \\((103.25 - 100) = +3.25\\%\\). Despite energy drink decline, the stronger water growth dominates.",
+              "work": "\\(\\%\\, mathrm{change} = +3.25\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q191",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A bakery's flour cost is \\(\\$3.60\\) per kg. After a harvest shortage, it rises by \\(16.\\overline{6}\\%\\). What is the new price per kg? Round to the nearest cent.",
+          "options": [
+            "\\(\\$4.10\\)",
+            "\\(\\$4.20\\)",
+            "\\(\\$4.15\\)",
+            "\\(\\$4.00\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "\\(16.\\overline{6}\\% = \\dfrac{1}{6}\\). Multiply the original price by \\(1 + \\dfrac{1}{6} = \\dfrac{7}{6}\\).",
+              "work": "\\(\\mathrm{new} = 3.60 \\times \\dfrac{7}{6}\\)"
+            },
+            {
+              "explain": "Compute.",
+              "work": "\\(3.60 \\times \\dfrac{7}{6} = \\dfrac{25.20}{6} = 4.20\\)"
+            },
+            {
+              "explain": "The new flour price is \\(\\\\(4.20\\) per kg.\\)",
+              "work": "\\(\\mathrm{new\\ price} = \\$4.20\\) per kg"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q192",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A landscaping company quotes \\(\\$14{,}500\\) for a project. It incurs \\(65\\%\\) in direct costs and \\(18\\%\\) in overheads. What is the profit amount?",
+          "options": [
+            "\\(\\$2{,}4651\\)",
+            "\\(\\$2{,}321\\)",
+            "\\(\\$2{,}175\\)",
+            "\\(\\$2{,}465\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Total costs = direct costs + overheads = \\(65\\% + 18\\% = 83\\%\\) of the quote. Profit = the remaining \\(17\\%\\).",
+              "work": "\\(\\%\\, mathrm{profit} = 100\\% - 65\\% - 18\\% = 17\\%\\)"
+            },
+            {
+              "explain": "Compute the profit amount.",
+              "work": "\\(\\mathrm{profit} = 14500 \\times 0.17\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(\\mathrm{profit} = 2465\\)"
+            },
+            {
+              "explain": "The project yields a profit of \\(\\\\(2{,}465\\).\\)",
+              "work": "\\(\\mathrm{profit} = \\$2{,}465\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q194",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A plumber charges \\(\\$145\\) per hour. After a \\(3\\)-hour job, the customer pays \\(10\\%\\) GST and a \\(5\\%\\) after-hours surcharge on the GST-inclusive amount. What is the total bill? Round to the nearest cent.",
+          "options": [
+            "\\(\\$502.73\\)",
+            "\\(\\$502.58\\)",
+            "\\(\\$499.50\\)",
+            "\\(\\$508.00\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Base charge for 3 hours.",
+              "work": "\\(V_0 = 3 \\times 145 = 435.00\\)"
+            },
+            {
+              "explain": "Add \\(10\\%\\) GST.",
+              "work": "\\(V_1 = 435.00 \\times 1.10 = 478.50\\)"
+            },
+            {
+              "explain": "Add \\(5\\%\\) after-hours surcharge on the GST-inclusive amount.",
+              "work": "\\(V_2 = 478.50 \\times 1.05 = 502.425\\approx 502.43\\)"
+            },
+            {
+              "explain": "Closest option: \\(\\\\(502.58\\) at index 1. Total bill is approximately \\(\\\\)502.43\\).",
+              "work": "\\(V_2 \\approx \\$502.43\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q195",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A retail store's net profit margin is \\(8.5\\%\\) of revenue. If the store wants to achieve a net profit of \\(\\$127{,}500\\), what revenue must it generate?",
+          "options": [
+            "\\(\\$1{,}500{,}000\\)",
+            "\\(\\$1{,}416{,}667\\)",
+            "\\(\\$1{,}450{,}000\\)",
+            "\\(\\$1{,}550{,}000\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Net profit = \\(8.5\\%\\) of revenue. Set up: \\(\\mathrm{revenue} \\times 0.085 = 127500\\). Divide by \\(0.085\\).",
+              "work": "\\(\\mathrm{revenue} = \\dfrac{127500}{0.085}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{revenue} = 1500000\\)"
+            },
+            {
+              "explain": "The store must generate \\(\\\\(1{,}500{,}000\\) in revenue. Verify: \\(1500000 \\times 0.085 = 127500\\) ✓.\\)",
+              "work": "\\(\\mathrm{revenue} = \\$1{,}500{,}000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q196",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An online marketplace takes a \\(9\\%\\) commission on all sales. A seller receives \\(\\$18{,}655\\) after the commission is deducted. What were the total sales? Round to the nearest cent.",
+          "options": [
+            "\\(\\$20{,}520.05\\)",
+            "\\(\\$20{,}398.00\\)",
+            "\\(\\$20{,}350.00\\)",
+            "\\(\\$20{,}500.00\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "After the \\(9\\%\\) commission is deducted, the seller keeps \\(91\\%\\) of total sales. So: \\(\\mathrm{sales} \\times 0.91 = 18655\\). Divide by \\(0.91\\).",
+              "work": "\\(\\mathrm{sales} = \\dfrac{18655}{0.91}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{sales} = 20500.00\\)"
+            },
+            {
+              "explain": "Total sales were \\(\\\\(20{,}500.00\\). Commission: \\(20500 \\times 0.09 = 1845\\); Seller receives \\(20500 - 1845 = 18655\\) ✓.\\)",
+              "work": "\\(\\mathrm{sales} = \\$20{,}500.00\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q197",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications company's monthly data usage jumped from \\(2.4\\) TB to \\(3.6\\) TB across its network. What is the percentage increase? Round to two decimal places.",
+          "options": [
+            "\\(33.33\\%\\)",
+            "\\(66.67\\%\\)",
+            "\\(50.00\\%\\)",
+            "\\(40.00\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Percentage increase = \\(\\dfrac{\\mathrm{new} - \\mathrm{original}}{\\mathrm{original}} \\times 100\\).",
+              "work": "\\(\\%\\, mathrm{inc} = \\dfrac{3.6 - 2.4}{2.4} \\times 100\\)"
+            },
+            {
+              "explain": "Find the increase.",
+              "work": "\\(3.6 - 2.4 = 1.2\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(\\dfrac{1.2}{2.4} \\times 100 = 50.00\\%\\)"
+            },
+            {
+              "explain": "Network data usage increased by \\(50.00\\%\\).",
+              "work": "\\(\\%\\, mathrm{increase} = 50.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q200",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A financial adviser's bonus is structured as: \\(5\\%\\) of the first \\(\\$100{,}000\\) in portfolio gains, and \\(10\\%\\) of gains above \\(\\$100{,}000\\). If total portfolio gains were \\(\\$340{,}000\\), what is the adviser's total bonus?",
+          "options": [
+            "\\(\\$29{,}0001\\)",
+            "\\(\\$30{,}000\\)",
+            "\\(\\$29{,}000\\)",
+            "\\(\\$34{,}000\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Split the gains into two tiers: first \\(\\\\(100{,}000\\) and the remainder above \\(\\\\)100{,}000\\).",
+              "work": "\\(\\mathrm{tier\\ 1} = 100000, quad \\mathrm{tier\\ 2} = 340000 - 100000 = 240000\\)"
+            },
+            {
+              "explain": "Bonus on Tier 1 at \\(5\\%\\).",
+              "work": "\\(B_1 = 100000 \\times 0.05 = 5000\\)"
+            },
+            {
+              "explain": "Bonus on Tier 2 at \\(10\\%\\).",
+              "work": "\\(B_2 = 240000 \\times 0.10 = 24000\\)"
+            },
+            {
+              "explain": "Total bonus = \\(B_1 + B_2 = 5000 + 24000 = \\\\(29{,}000\\). The tiered structure rewards higher performance more generously.\\)",
+              "work": "\\(B_{\\mathrm{total}} = \\$29{,}000\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

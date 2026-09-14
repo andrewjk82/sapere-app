@@ -1,0 +1,246 @@
+{
+  "chapterId": "exam:year9ch1e",
+  "title": "Exam Practice",
+  "year": "Year 9",
+  "topics": [
+    {
+      "topicId": "exam:year9ch1e",
+      "code": "",
+      "title": "Binomial products",
+      "questions": [
+        {
+          "id": "y9-1e-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Determine the missing values in: \\((x+5)(x+7) = x^2 + \\text{A}x + \\text{B}\\).",
+          "options": [
+            "\\(\\text{A}=35, text{B}=12\\)",
+            "\\(\\text{A}=12, text{B}=35\\)",
+            "\\(\\text{A}=7, text{B}=35\\)",
+            "\\(\\text{A}=12, text{B}=12\\)"
+          ],
+          "answer": 1,
+          "hint": "Compare coefficients of like powers on both sides after expanding.",
+          "steps": [
+            {
+              "explain": "Expand the left side with variables.",
+              "work": "\\(Expand: (x+5)(x+7) = x^2 + 7x + 5x + 35.\\)"
+            },
+            {
+              "explain": "Equate the coefficients of each term to solve for the missing letter.",
+              "work": "\\(Combine: x^2 + 12x + 35.\\)"
+            },
+            {
+              "explain": "State the final values.",
+              "work": "\\(Compare terms: A = 12 and B = 35.\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-1e-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Determine the missing values in: \\((x+\\text{A})(x+6) = x^2 + 9x + \\text{B}\\).",
+          "options": [
+            "\\(\\text{A}=3, text{B}=18\\)",
+            "\\(\\text{A}=6, text{B}=18\\)",
+            "\\(\\text{A}=3, text{B}=9\\)",
+            "\\(\\text{A}=2, text{B}=12\\)"
+          ],
+          "answer": 0,
+          "hint": "Compare coefficients of like powers on both sides after expanding.",
+          "steps": [
+            {
+              "explain": "Expand the left side with variables.",
+              "work": "\\(Let the equation be (x+A)(x+6) = x^2 + (A+6)x + 6A.\\)"
+            },
+            {
+              "explain": "Equate the coefficients of each term to solve for the missing letter.",
+              "work": "\\(Compare coefficients of x: A + 6 = 9 \\implies A = 3.\\)"
+            },
+            {
+              "explain": "State the final values.",
+              "work": "\\(Find B: B = 6A = 6 \\times 3 = 18.\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-1e-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Determine the missing values in: \\((x+4)(x-\\text{A}) = x^2 - 2x - \\text{B}\\).",
+          "options": [
+            "\\(\\text{A}=2, text{B}=8\\)",
+            "\\(\\text{A}=4, text{B}=16\\)",
+            "\\(\\text{A}=6, text{B}=24\\)",
+            "\\(\\text{A}=6, text{B}=-24\\)"
+          ],
+          "answer": 2,
+          "hint": "Compare coefficients of like powers on both sides after expanding.",
+          "steps": [
+            {
+              "explain": "Expand the left side with variables.",
+              "work": "\\(Expand: (x+4)(x-A) = x^2 + (4-A)x - 4A.\\)"
+            },
+            {
+              "explain": "Equate the coefficients of each term to solve for the missing letter.",
+              "work": "\\(Compare coefficients of x: 4 - A = -2 \\implies A = 6.\\)"
+            },
+            {
+              "explain": "State the final values.",
+              "work": "\\(Find B: -B = -4A = -24 \\implies B = 24.\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-1e-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Determine the missing values in: \\((2x+3)(x+\\text{A}) = 2x^2 + 7x + \\text{B}\\).",
+          "options": [
+            "\\(\\text{A}=3, text{B}=9\\)",
+            "\\(\\text{A}=1, text{B}=3\\)",
+            "\\(\\text{A}=2, text{B}=3\\)",
+            "\\(\\text{A}=2, text{B}=6\\)"
+          ],
+          "answer": 3,
+          "hint": "Compare coefficients of like powers on both sides after expanding.",
+          "steps": [
+            {
+              "explain": "Expand the left side with variables.",
+              "work": "\\(Expand: (2x+3)(x+A) = 2x^2 + (2A+3)x + 3A.\\)"
+            },
+            {
+              "explain": "Equate the coefficients of each term to solve for the missing letter.",
+              "work": "\\(Compare coefficients of x: 2A + 3 = 7 \\implies 2A = 4 \\implies A = 2.\\)"
+            },
+            {
+              "explain": "State the final values.",
+              "work": "\\(Find B: B = 3A = 6.\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-1e-q7e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Determine the missing values in: \\((4x-1)(x-\\text{A}) = 4x^2 - \\text{B}x + 3\\).",
+          "options": [
+            "\\(\\text{A}=1, text{B}=5\\)",
+            "\\(\\text{A}=3, text{B}=12\\)",
+            "\\(\\text{A}=3, text{B}=-13\\)",
+            "\\(\\text{A}=3, text{B}=13\\)"
+          ],
+          "answer": 3,
+          "hint": "Compare coefficients of like powers on both sides after expanding.",
+          "steps": [
+            {
+              "explain": "Expand the left side with variables.",
+              "work": "\\(Expand: (4x-1)(x-A) = 4x^2 - 4Ax - x + A = 4x^2 - (4A+1)x + A.\\)"
+            },
+            {
+              "explain": "Equate the coefficients of each term to solve for the missing letter.",
+              "work": "\\(Compare constant terms: A = 3.\\)"
+            },
+            {
+              "explain": "State the final values.",
+              "work": "\\(Find B: B = 4A + 1 = 4(3) + 1 = 13.\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-1e-q7f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Determine the missing values in: \\((\\text{A}x+1)(3x-5) = 6x^2 - \\text{B}x - \\text{C}\\).",
+          "options": [
+            "\\(\\text{A}=2, text{B}=7, text{C}=5\\)",
+            "\\(\\text{A}=2, text{B}=7, text{C}=-5\\)",
+            "\\(\\text{A}=3, text{B}=12, text{C}=5\\)",
+            "\\(\\text{A}=2, text{B}=10, text{C}=5\\)"
+          ],
+          "answer": 0,
+          "hint": "Compare coefficients of like powers on both sides after expanding.",
+          "steps": [
+            {
+              "explain": "Expand the left side with variables.",
+              "work": "\\(Expand: (Ax+1)(3x-5) = 3Ax^2 - 5Ax + 3x - 5 = 3Ax^2 - (5A-3)x - 5.\\)"
+            },
+            {
+              "explain": "Equate the coefficients of each term to solve for the missing letter.",
+              "work": "\\(Compare quadratic term: 3A = 6 \\implies A = 2.\\)"
+            },
+            {
+              "explain": "State the final values.",
+              "work": "\\(Find B: B = 5A - 3 = 5(2) - 3 = 7.\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-1e-q7g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Determine the missing values in: \\((\\text{A}x+\\text{B})(2x+5) = 4x^2 + 12x + \\text{C}\\).",
+          "options": [
+            "\\(\\text{A}=4, text{B}=1, text{C}=5\\)",
+            "\\(\\text{A}=2, text{B}=2, text{C}=10\\)",
+            "\\(\\text{A}=2, text{B}=1, text{C}=5\\)",
+            "\\(\\text{A}=2, text{B}=1, text{C}=12\\)"
+          ],
+          "answer": 2,
+          "hint": "Compare coefficients of like powers on both sides after expanding.",
+          "steps": [
+            {
+              "explain": "Expand the left side with variables.",
+              "work": "\\(Expand: (Ax+B)(2x+5) = 2Ax^2 + 5Ax + 2Bx + 5B = 2Ax^2 + (5A+2B)x + 5B.\\)"
+            },
+            {
+              "explain": "Equate the coefficients of each term to solve for the missing letter.",
+              "work": "\\(Compare quadratic coefficients: 2A = 4 \\implies A = 2.\\)"
+            },
+            {
+              "explain": "State the final values.",
+              "work": "\\(Compare linear coefficients: 5A + 2B = 12 \\implies 10 + 2B = 12 \\implies B = 1.\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-1e-q7h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Determine the missing values in: \\((\\text{A}x-3)(\\text{B}x+\\text{C}) = 12x^2-x-6\\).",
+          "options": [
+            "\\(\\text{A}=4, text{B}=3, text{C}=-2\\)",
+            "\\(\\text{A}=6, text{B}=2, text{C}=2\\)",
+            "\\(\\text{A}=3, text{B}=4, text{C}=2\\)",
+            "\\(\\text{A}=4, text{B}=3, text{C}=2\\)"
+          ],
+          "answer": 3,
+          "hint": "Compare coefficients of like powers on both sides after expanding.",
+          "steps": [
+            {
+              "explain": "Expand the left side with variables.",
+              "work": "\\(Compare quadratic coefficients: A \\times B = 12.\\)"
+            },
+            {
+              "explain": "Equate the coefficients of each term to solve for the missing letter.",
+              "work": "\\(Compare constant coefficients: -3 \\times C = -6 \\implies C = 2.\\)"
+            },
+            {
+              "explain": "State the final values.",
+              "work": "\\(We have (Ax-3)(Bx+2) = ABx^2 + (2A-3B)x - 6.\\)"
+            }
+          ],
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<svg viewBox="0 0 100 100" width="150" height="150" xmlns="http://www.w3.org/2000/svg">
+    <line x1="10" y1="50" x2="90" y2="50" stroke="black" stroke-width="1"/>
+    <line x1="50" y1="10" x2="50" y2="90" stroke="black" stroke-width="1"/>
+    <text x="92" y="53" font-size="8" font-family="serif">x</text>
+    <text x="50" y="8" font-size="8" font-family="serif" text-anchor="middle">y</text>
+    <text x="30" y="58" font-size="6" font-family="serif" text-anchor="middle">-1</text>
+    <text x="70" y="58" font-size="6" font-family="serif" text-anchor="middle">1</text>
+    <path d="M 20 90 C 25 50 35 50 40 50 C 45 50 45 50 50 50 C 60 50 65 70 70 50 C 75 30 80 90 80 90" fill="none" stroke="black" stroke-width="1.5"/>
+  </svg>

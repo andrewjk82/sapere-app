@@ -1,0 +1,1462 @@
+{
+  "chapterId": "exam:year9ch1",
+  "title": "Exam Practice",
+  "year": "Year 9",
+  "topics": [
+    {
+      "topicId": "exam:year9ch1",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y9-1a-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression \\(7 \\times 3 - 4 \\times 5\\).",
+          "options": [
+            "\\(2.5\\)",
+            "\\(1\\)",
+            "\\(-2\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Evaluate the multiplications first according to the order of operations."
+            },
+            {
+              "explain": "Perform the multiplications first.",
+              "work": "\\(7 \\times 3 = 21, \\quad 4 \\times 5 = 20\\)"
+            },
+            {
+              "explain": "Subtract the values to find the final result.",
+              "work": "\\(21 - 20 = 1\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1a-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: \\( 14 + 20 \\).",
+          "options": [
+            "\\(37.4\\)",
+            "\\(34\\)",
+            "\\(27.2\\)",
+            "\\(45.9\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Perform the multiplications, paying attention to signs.",
+              "work": "\\(7 \\times 2 = 14, \\quad -4 \\times (-5) = 20\\)"
+            },
+            {
+              "explain": "Add the values.",
+              "work": "\\(14 + 20 = 34\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1a-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: \\( -7 - 8 \\).",
+          "options": [
+            "\\(-15\\)",
+            "\\(-11.25\\)",
+            "\\(-22.5\\)",
+            "\\(-12.75\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Perform the multiplications.",
+              "work": "\\(7 \\times (-1) = -7, \\quad -4 \\times 2 = -8\\)"
+            },
+            {
+              "explain": "Simplify the subtraction.",
+              "work": "\\(-7 - 8 = -15\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1a-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: \\( -21 + 8 \\).",
+          "options": [
+            "\\(-13\\)",
+            "\\(-9.75\\)",
+            "\\(-19.5\\)",
+            "\\(-11.05\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Perform the multiplications, matching signs carefully.",
+              "work": "\\(7 \\times (-3) = -21, \\quad -4 \\times (-2) = 8\\)"
+            },
+            {
+              "explain": "Add the values.",
+              "work": "\\(-21 + 8 = -13\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1a-q14",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\(2152.5 \\times 20.25\\).",
+          "options": [
+            "\\(43588\\)",
+            "\\(21794\\)",
+            "\\(9686\\)",
+            "\\(48430\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Calculate the squared term and simplify the product.",
+              "work": "\\((-4.5)^2 = 20.25, \\quad \\frac{1}{2} \\times 0.35 \\times 1025 \\times 12 = 2152.5\\)"
+            },
+            {
+              "explain": "Multiply the simplified terms and round to the nearest integer.",
+              "work": "\\(2152.5 \\times 20.25 = 43588.125 \\approx 43588\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\(6.25 \\times 16\\).",
+          "options": [
+            "\\(100\\)",
+            "\\(105\\)",
+            "\\(90\\)",
+            "\\(120\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Substitute \\(I = -2.5\\), \\(R = 15.6\\), and \\(r = 0.4\\) into the power expression."
+            },
+            {
+              "explain": "Simplify the sum inside the parentheses and square the current.",
+              "work": "\\((-2.5)^2 = 6.25, \\quad 15.6 + 0.4 = 16\\)"
+            },
+            {
+              "explain": "Multiply the results.",
+              "work": "\\(6.25 \\times 16 = 100\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\(800 \\times 1.25 \\times 0.88\\).",
+          "options": [
+            "\\(880\\)",
+            "\\(904\\)",
+            "\\(780\\)",
+            "\\(896\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Evaluate the terms inside the parentheses.",
+              "work": "\\(1 + 0.25 = 1.25, \\quad 1 - 0.12 = 0.88\\)"
+            },
+            {
+              "explain": "Calculate the final product.",
+              "work": "\\(800 \\times 1.25 \\times 0.88 = 880\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q18",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\(22 \\times 10\\).",
+          "options": [
+            "\\(220\\)",
+            "\\(240\\)",
+            "\\(110\\)",
+            "\\(440\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Evaluate the sum inside the parentheses and simplify the outer product.",
+              "work": "\\(3.5 + 6.5 = 10, \\quad 2 \\times \\frac{22}{7} \\times 3.5 = 22\\)"
+            },
+            {
+              "explain": "Multiply the simplified values.",
+              "work": "\\(22 \\times 10 = 220\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q19",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression and find the result. \\(\\text{Answer} = 0.257\\)",
+          "options": [
+            "\\(0.257\\)",
+            "\\(0.245\\)",
+            "\\(0.271\\)",
+            "\\(0.41\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Substitute the spatial coordinates into the error formula.",
+              "work": "\\(E = \\sqrt{(-0.15)^2 + 0.2^2 + (-0.06)^2}\\)"
+            },
+            {
+              "explain": "Square each component.",
+              "work": "\\((-0.15)^2 = 0.0225, quad 0.2^2 = 0.04, quad (-0.06)^2 = 0.0036\\)"
+            },
+            {
+              "explain": "Sum the squared values.",
+              "work": "\\(0.0225 + 0.04 + 0.0036 = 0.0661\\)"
+            },
+            {
+              "explain": "Compute the square root, rounding to three decimal places.",
+              "work": "\\(\\sqrt{0.0661} \\approx 0.257\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(24.5 \\times 4 - 9.8 \\times 16\\).",
+          "options": [
+            "\\(19.6\\)",
+            "\\(20.4\\)",
+            "\\(18.8\\)",
+            "\\(9.8\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the multiplications first according to the order of operations."
+            },
+            {
+              "explain": "Calculate the linear term and the quadratic term.",
+              "work": "\\(24.5 \\times 4 = 98, \\quad \\frac{1}{2} \\times 9.8 \\times 16 = 78.4\\)"
+            },
+            {
+              "explain": "Perform the subtraction.",
+              "work": "\\(98 - 78.4 = 19.6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q23",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( \\frac{0.000009}{0.15} \\).",
+          "options": [
+            "\\(6e-05\\)",
+            "\\(9e-05\\)",
+            "\\(0.0006\\)",
+            "\\(4e-05\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Simplify the numerator and the denominator.",
+              "work": "\\(0.003^2 = 0.000009, \\quad 0.153 - 0.003 = 0.15\\)"
+            },
+            {
+              "explain": "Compute the division.",
+              "work": "\\(\\frac{0.000009}{0.15} = 0.00006\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q24",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( \\frac{1}{2 \\times 3.14 \\times \\sqrt{0.08 \\times 0.0002}} \\).",
+          "options": [
+            "\\(39.8\\)",
+            "\\(40.2\\)",
+            "\\(38.5\\)",
+            "\\(31.4\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Multiply inside the square root and take its square root.",
+              "work": "\\(0.08 \\times 0.0002 = 0.000016, \\quad \\sqrt{0.000016} = 0.004\\)"
+            },
+            {
+              "explain": "Calculate the denominator product.",
+              "work": "\\(2 \\times 3.14 \\times 0.004 = 0.02512\\)"
+            },
+            {
+              "explain": "Divide 1 by the denominator and round to one decimal place.",
+              "work": "\\(\\frac{1}{0.02512} \\approx 39.808 \\approx 39.8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( \\frac{468.75}{50} \\).",
+          "options": [
+            "\\(9.375\\)",
+            "\\(10.125\\)",
+            "\\(8.5\\)",
+            "\\(9.25\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Calculate the numerator and denominator.",
+              "work": "\\(12.5 \\times 37.5 = 468.75, \\quad 12.5 + 37.5 = 50\\)"
+            },
+            {
+              "explain": "Divide the terms.",
+              "work": "\\(\\frac{468.75}{50} = 9.375\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( 64 \\times 1600 \\).",
+          "options": [
+            "\\(51.2\\)",
+            "\\(48.0\\)",
+            "\\(54.4\\)",
+            "\\(64.0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Simplify inside the parentheses and perform the numerator multiplications.",
+              "work": "\\(2000 - 400 = 1600, \\quad 0.16 \\times 400 = 64\\)"
+            },
+            {
+              "explain": "Calculate the final numerator value and divide.",
+              "work": "\\(64 \\times 1600 = 102400, quad \\frac{102400}{2000} = 51.2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( 300 \\times 1.21 \\).",
+          "options": [
+            "\\(313\\)",
+            "\\(310\\)",
+            "\\(320\\)",
+            "\\(263\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Evaluate the base and square it.",
+              "work": "\\(1 + 0.10 = 1.1, \\quad 1.1^2 = 1.21\\)"
+            },
+            {
+              "explain": "Multiply by initial volume and subtract the cost.",
+              "work": "\\(300 \\times 1.21 = 363, \\quad 363 - 50 = 313\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( 10 + 1.8367 \\).",
+          "options": [
+            "\\(11.84\\)",
+            "\\(11.8\\)",
+            "\\(10.92\\)",
+            "\\(12.04\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Evaluate the first term and simplify the second term.",
+              "work": "\\(\\frac{98000}{9800} = 10, \\quad \\frac{36}{19.6} \\approx 1.8367\\)"
+            },
+            {
+              "explain": "Sum the terms and round to two decimal places.",
+              "work": "\\(10 + 1.8367 = 11.8367 \\approx 11.84\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( \\sqrt{4^2 \\times 3^2 + 2^2 \\times 3^4} \\).",
+          "options": [
+            "\\(21.6\\)",
+            "\\(22.0\\)",
+            "\\(20.4\\)",
+            "\\(24.2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Evaluate the powers.",
+              "work": "\\(4^2 = 16, \\quad 3^2 = 9, \\quad 2^2 = 4, \\quad 3^4 = 81\\)"
+            },
+            {
+              "explain": "Compute products and their sum.",
+              "work": "\\(16 \\times 9 = 144, \\quad 4 \\times 81 = 324, \\quad 144 + 324 = 468\\)"
+            },
+            {
+              "explain": "Find the square root of 468 and round to one decimal place.",
+              "work": "\\(\\sqrt{468} \\approx 21.633 \\approx 21.6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(8 \\times 0.75 - 9.8 \\times 64\\).",
+          "options": [
+            "\\(4.4\\)",
+            "\\(4.8\\)",
+            "\\(3.8\\)",
+            "\\(5.2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the multiplications first according to the order of operations."
+            },
+            {
+              "explain": "Simplify the first term and evaluate the numerator/denominator of the second term.",
+              "work": "\\(8 \\times 0.75 = 6, \\quad 9.8 \\times 64 = 627.2, \\quad 2 \\times 196 = 392\\)"
+            },
+            {
+              "explain": "Divide the second term and complete the subtraction.",
+              "work": "\\(\\frac{627.2}{392} = 1.6, \\quad 6 - 1.6 = 4.4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q54",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using the kinematic formula \\(v = \\sqrt{v_0^{2} + 2as}\\), find the final velocity when \\(v_0 = 8\\), \\(a = 2.5\\), \\(s = 10\\).",
+          "options": [
+            "\\(10.68\\)",
+            "\\(11.93\\)",
+            "\\(9.43\\)",
+            "\\(11.75\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Calculate the squared and product terms inside the square root.",
+              "work": "\\(8^2 = 64, \\quad 2 \\times 2.5 \\times 10 = 50.0\\)"
+            },
+            {
+              "explain": "Sum the terms inside the square root and evaluate the root.",
+              "work": "\\(\\sqrt{64 + 50.0} = \\sqrt{114.0} \\approx 10.68\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q55",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( 1000 \\times 0.64 \\).",
+          "options": [
+            "\\(640.0\\)",
+            "\\(672.0\\)",
+            "\\(608.0\\)",
+            "\\(600.0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Evaluate the depreciation multiplier base and raise it to the power.",
+              "work": "\\(1 - 0.2 = 0.8, \\quad 0.8^2 = 0.64\\)"
+            },
+            {
+              "explain": "Multiply by the principal \\(P\\).",
+              "work": "\\(1000 \\times 0.64 = 640.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q56",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the length of the hypotenuse of a right-angled triangle with legs \\(1.2\\) and \\(1.6\\).",
+          "options": [
+            "\\(2.0\\)",
+            "\\(2.5\\)",
+            "\\(1.5\\)",
+            "\\(2.8\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Square each side length.",
+              "work": "\\(1.2^2 = 1.44, \\quad 1.6^2 = 2.56\\)"
+            },
+            {
+              "explain": "Add the squared terms and take the square root.",
+              "work": "\\(\\sqrt{1.44 + 2.56} = \\sqrt{4.0} = 2.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q57",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using the kinematic formula \\(v = \\sqrt{v_0^{2} + 2as}\\), find the final velocity when \\(v_0 = 6\\), \\(a = 4.5\\), \\(s = 20\\).",
+          "options": [
+            "\\(14.7\\)",
+            "\\(15.95\\)",
+            "\\(13.45\\)",
+            "\\(16.17\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Calculate the squared and product terms inside the square root.",
+              "work": "\\(6^2 = 36, \\quad 2 \\times 4.5 \\times 20 = 180.0\\)"
+            },
+            {
+              "explain": "Sum the terms inside the square root and evaluate the root.",
+              "work": "\\(\\sqrt{36 + 180.0} = \\sqrt{216.0} \\approx 14.7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q58",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(3x^{2}  -6x + -10\\) when \\(x = -3\\).",
+          "options": [
+            "\\(35\\)",
+            "\\(38.5\\)",
+            "\\(28\\)",
+            "\\(47.25\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Compute the squared term and the linear product.",
+              "work": "\\((-3)^2 = 9, \\quad 3 \\times 9 = 27, \\quad -6 \\times (-3) = 18\\)"
+            },
+            {
+              "explain": "Sum the terms to find the final value.",
+              "work": "\\(27 + (18) + -10 = 35\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q59",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( 2000 \\times 0.729 \\).",
+          "options": [
+            "\\(1458.0\\)",
+            "\\(1530.9\\)",
+            "\\(1385.1\\)",
+            "\\(1400.0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Evaluate the depreciation multiplier base and raise it to the power.",
+              "work": "\\(1 - 0.1 = 0.9, \\quad 0.9^3 = 0.729\\)"
+            },
+            {
+              "explain": "Multiply by the principal \\(P\\).",
+              "work": "\\(2000 \\times 0.729 = 1458.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q60",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( 2000 \\times 0.9025 \\).",
+          "options": [
+            "\\(1805.0\\)",
+            "\\(1895.25\\)",
+            "\\(1714.75\\)",
+            "\\(1800.0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Evaluate the depreciation multiplier base and raise it to the power.",
+              "work": "\\(1 - 0.05 = 0.95, \\quad 0.95^2 = 0.9025\\)"
+            },
+            {
+              "explain": "Multiply by the principal \\(P\\).",
+              "work": "\\(2000 \\times 0.9025 = 1805.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q62",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(-3x^{2} + 4x + -15\\) when \\(x = 2\\).",
+          "options": [
+            "\\(-19\\)",
+            "\\(-14.25\\)",
+            "\\(-28.5\\)",
+            "\\(-16.15\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Compute the squared term and the linear product.",
+              "work": "\\((2)^2 = 4, \\quad -3 \\times 4 = -12, \\quad 4 \\times (2) = 8\\)"
+            },
+            {
+              "explain": "Sum the terms to find the final value.",
+              "work": "\\(-12 + (8) + -15 = -19\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q63",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the length of the hypotenuse of a right-angled triangle with legs \\(2.4\\) and \\(1.6\\).",
+          "options": [
+            "\\(2.88\\)",
+            "\\(3.38\\)",
+            "\\(2.38\\)",
+            "\\(4.0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Square each side length.",
+              "work": "\\(2.4^2 = 5.76, \\quad 1.6^2 = 2.56\\)"
+            },
+            {
+              "explain": "Add the squared terms and take the square root.",
+              "work": "\\(\\sqrt{5.76 + 2.56} = \\sqrt{8.32} = 2.88\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q64",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A fibre-optic signal loss can be modelled by the expression \\(3x^{2} - 4x + 10\\). Find the value of the expression when \\(x = 3\\).",
+          "options": [
+            "\\(25\\)",
+            "\\(27.5\\)",
+            "\\(20\\)",
+            "\\(33.75\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Substitute \\(x = 3\\) into the expression \\(3x^{2} - 4x + 10\\).",
+              "work": "\\(3(3)^{2} - 4(3) + 10\\)"
+            },
+            {
+              "explain": "Evaluate each term separately following BODMAS: first calculate the power, then multiply.",
+              "work": "\\(3 \\times 9 - 4 \\times 3 + 10\\)\n\\(= 27 - 12 + 10\\)"
+            },
+            {
+              "explain": "Add and subtract the terms from left to right.",
+              "work": "\\(27 - 12 + 10 = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q65",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(12 \\times 3.5 - 0.15 \\times 40\\).",
+          "options": [
+            "\\(36.0\\)",
+            "\\(39.6\\)",
+            "\\(28.8\\)",
+            "\\(48.6\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Perform the multiplications.",
+              "work": "\\(12 \\times 3.5 = 42.0, \\quad 0.15 \\times 40 = 6.0\\)"
+            },
+            {
+              "explain": "Subtract to find the force.",
+              "work": "\\(42.0 - 6.0 = 36.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q67",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using the kinematic formula \\(v = \\sqrt{v_0^{2} + 2as}\\), find the final velocity when \\(v_0 = 6\\), \\(a = 4.5\\), \\(s = 20\\).",
+          "options": [
+            "\\(14.7\\)",
+            "\\(15.95\\)",
+            "\\(13.45\\)",
+            "\\(16.17\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Calculate the squared and product terms inside the square root.",
+              "work": "\\(6^2 = 36, \\quad 2 \\times 4.5 \\times 20 = 180.0\\)"
+            },
+            {
+              "explain": "Sum the terms inside the square root and evaluate the root.",
+              "work": "\\(\\sqrt{36 + 180.0} = \\sqrt{216.0} \\approx 14.7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q69",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(12 \\times 2.5 - 0.25 \\times 20\\).",
+          "options": [
+            "\\(25.0\\)",
+            "\\(27.5\\)",
+            "\\(20\\)",
+            "\\(33.75\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Perform the multiplications.",
+              "work": "\\(12 \\times 2.5 = 30.0, \\quad 0.25 \\times 20 = 5.0\\)"
+            },
+            {
+              "explain": "Subtract to find the force.",
+              "work": "\\(30.0 - 5.0 = 25.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q71",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(5 \\times 3.5 - 0.15 \\times 40\\).",
+          "options": [
+            "\\(11.5\\)",
+            "\\(14.38\\)",
+            "\\(5.75\\)",
+            "\\(13.22\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Perform the multiplications.",
+              "work": "\\(5 \\times 3.5 = 17.5, \\quad 0.15 \\times 40 = 6.0\\)"
+            },
+            {
+              "explain": "Subtract to find the force.",
+              "work": "\\(17.5 - 6.0 = 11.5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q73",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\(5000 \\times 0.512\\).",
+          "options": [
+            "\\(2560.0\\)",
+            "\\(2688.0\\)",
+            "\\(2432.0\\)",
+            "\\(2000.0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Evaluate the depreciation multiplier base and raise it to the power.",
+              "work": "\\(1 - 0.2 = 0.8, \\quad 0.8^3 = 0.512\\)"
+            },
+            {
+              "explain": "Multiply by the principal \\(P\\).",
+              "work": "\\(5000 \\times 0.512 = 2560.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q74",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the length of the hypotenuse of a right-angled triangle with legs \\(2.4\\) and \\(2.0\\).",
+          "options": [
+            "\\(3.12\\)",
+            "\\(3.62\\)",
+            "\\(2.62\\)",
+            "\\(4.4\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Square each side length.",
+              "work": "\\(2.4^2 = 5.76, \\quad 2.0^2 = 4.0\\)"
+            },
+            {
+              "explain": "Add the squared terms and take the square root.",
+              "work": "\\(\\sqrt{5.76 + 4.0} = \\sqrt{9.76} = 3.12\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q76",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using the kinematic formula \\(v = \\sqrt{v_0^{2} + 2as}\\), find the final velocity when \\(v_0 = 5\\), \\(a = 2.5\\), \\(s = 20\\).",
+          "options": [
+            "\\(11.18\\)",
+            "\\(12.43\\)",
+            "\\(9.93\\)",
+            "\\(12.3\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Calculate the squared and product terms inside the square root.",
+              "work": "\\(5^2 = 25, \\quad 2 \\times 2.5 \\times 20 = 100.0\\)"
+            },
+            {
+              "explain": "Sum the terms inside the square root and evaluate the root.",
+              "work": "\\(\\sqrt{25 + 100.0} = \\sqrt{125.0} \\approx 11.18\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q77",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( 2000 \\times 0.64 \\).",
+          "options": [
+            "\\(1280.0\\)",
+            "\\(1344.0\\)",
+            "\\(1216.0\\)",
+            "\\(1200.0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Evaluate the depreciation multiplier base and raise it to the power.",
+              "work": "\\(1 - 0.2 = 0.8, \\quad 0.8^2 = 0.64\\)"
+            },
+            {
+              "explain": "Multiply by the principal \\(P\\).",
+              "work": "\\(2000 \\times 0.64 = 1280.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q81",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(5 \\times 3.5 - 0.15 \\times 40\\).",
+          "options": [
+            "\\(11.5\\)",
+            "\\(14.38\\)",
+            "\\(5.75\\)",
+            "\\(13.22\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Perform the multiplications.",
+              "work": "\\(5 \\times 3.5 = 17.5, \\quad 0.15 \\times 40 = 6.0\\)"
+            },
+            {
+              "explain": "Subtract to find the force.",
+              "work": "\\(17.5 - 6.0 = 11.5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q83",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(12 \\times 2.5 - 0.15 \\times 40\\).",
+          "options": [
+            "\\(24.0\\)",
+            "\\(26.4\\)",
+            "\\(19.2\\)",
+            "\\(32.4\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Perform the multiplications.",
+              "work": "\\(12 \\times 2.5 = 30.0, \\quad 0.15 \\times 40 = 6.0\\)"
+            },
+            {
+              "explain": "Subtract to find the force.",
+              "work": "\\(30.0 - 6.0 = 24.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q84",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( 5000 \\times 0.8574 \\).",
+          "options": [
+            "\\(4286.87\\)",
+            "\\(4501.21\\)",
+            "\\(4072.53\\)",
+            "\\(4250.0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression."
+            },
+            {
+              "explain": "Evaluate the depreciation multiplier base and raise it to the power.",
+              "work": "\\(1 - 0.05 = 0.95, \\quad 0.95^3 = 0.8574\\)"
+            },
+            {
+              "explain": "Multiply by the principal \\(P\\).",
+              "work": "\\(5000 \\times 0.8574 = 4286.87\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q86",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(5 \\times 2.5 - 0.15 \\times 20\\).",
+          "options": [
+            "\\(9.5\\)",
+            "\\(11.88\\)",
+            "\\(4.75\\)",
+            "\\(10.93\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Perform the multiplications.",
+              "work": "\\(5 \\times 2.5 = 12.5, \\quad 0.15 \\times 20 = 3.0\\)"
+            },
+            {
+              "explain": "Subtract to find the force.",
+              "work": "\\(12.5 - 3.0 = 9.5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q88",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate: \\( 2000 \\times 0.64 \\).",
+          "options": [
+            "\\(1280.0\\)",
+            "\\(1344.0\\)",
+            "\\(1216.0\\)",
+            "\\(1200.0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Evaluate the depreciation multiplier base and raise it to the power.",
+              "work": "\\(1 - 0.2 = 0.8, \\quad 0.8^2 = 0.64\\)"
+            },
+            {
+              "explain": "Multiply by the principal \\(P\\).",
+              "work": "\\(2000 \\times 0.64 = 1280.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q89",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(12 \\times 3.5 - 0.15 \\times 20\\).",
+          "options": [
+            "\\(39.0\\)",
+            "\\(42.9\\)",
+            "\\(31.2\\)",
+            "\\(52.65\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Perform the multiplications.",
+              "work": "\\(12 \\times 3.5 = 42.0, \\quad 0.15 \\times 20 = 3.0\\)"
+            },
+            {
+              "explain": "Subtract to find the force.",
+              "work": "\\(42.0 - 3.0 = 39.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q90",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(12 \\times 3.5 - 0.25 \\times 40\\).",
+          "options": [
+            "\\(32.0\\)",
+            "\\(35.2\\)",
+            "\\(25.6\\)",
+            "\\(43.2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Perform the multiplications.",
+              "work": "\\(12 \\times 3.5 = 42.0, \\quad 0.25 \\times 40 = 10.0\\)"
+            },
+            {
+              "explain": "Subtract to find the force.",
+              "work": "\\(42.0 - 10.0 = 32.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q91",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using the kinematic formula \\(v = \\sqrt{v_0^{2} + 2as}\\), find the final velocity when \\(v_0 = 6\\), \\(a = 2.5\\), \\(s = 15\\).",
+          "options": [
+            "\\(10.54\\)",
+            "\\(11.79\\)",
+            "\\(9.29\\)",
+            "\\(11.59\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Calculate the squared and product terms inside the square root.",
+              "work": "\\(6^2 = 36, \\quad 2 \\times 2.5 \\times 15 = 75.0\\)"
+            },
+            {
+              "explain": "Sum the terms inside the square root and evaluate the root.",
+              "work": "\\(\\sqrt{36 + 75.0} = \\sqrt{111.0} \\approx 10.54\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q92",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(3x^{2} + 5x + 10\\) when \\(x = 2\\).",
+          "options": [
+            "\\(32\\)",
+            "\\(35.2\\)",
+            "\\(25.6\\)",
+            "\\(43.2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Compute the squared term and the linear product.",
+              "work": "\\((2)^2 = 4, \\quad 3 \\times 4 = 12, \\quad 5 \\times (2) = 10\\)"
+            },
+            {
+              "explain": "Sum the terms to find the final value.",
+              "work": "\\(12 + (10) + 10 = 32\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q93",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using the kinematic formula \\(v = \\sqrt{v_0^{2} + 2as}\\), find the final velocity when \\(v_0 = 8\\), \\(a = 2.5\\), \\(s = 20\\).",
+          "options": [
+            "\\(12.81\\)",
+            "\\(14.06\\)",
+            "\\(11.56\\)",
+            "\\(14.09\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Calculate the squared and product terms inside the square root.",
+              "work": "\\(8^2 = 64, \\quad 2 \\times 2.5 \\times 20 = 100.0\\)"
+            },
+            {
+              "explain": "Sum the terms inside the square root and evaluate the root.",
+              "work": "\\(\\sqrt{64 + 100.0} = \\sqrt{164.0} \\approx 12.81\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q99",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(2x^{2} + 4x + -15\\) when \\(x = -2\\).",
+          "options": [
+            "\\(-15\\)",
+            "\\(-11.25\\)",
+            "\\(-22.5\\)",
+            "\\(-12.75\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the mathematical expression by substituting the given values."
+            },
+            {
+              "explain": "Compute the squared term and the linear product.",
+              "work": "\\((-2)^2 = 4, \\quad 2 \\times 4 = 8, \\quad 4 \\times (-2) = -8\\)"
+            },
+            {
+              "explain": "Sum the terms to find the final value.",
+              "work": "\\(8 + (-8) + -15 = -15\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q102",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using the kinematic formula \\(v = \\sqrt{v_0^{2} + 2as}\\), find the final velocity when \\(v_0 = 5\\), \\(a = 2.5\\), \\(s = 20\\).",
+          "options": [
+            "\\(11.18\\)",
+            "\\(12.43\\)",
+            "\\(9.93\\)",
+            "\\(12.3\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Substitute the kinematic values into the velocity formula."
+            },
+            {
+              "explain": "Calculate the squared and product terms inside the square root.",
+              "work": "\\(5^2 = 25, \\quad 2 \\times 2.5 \\times 20 = 100.0\\)"
+            },
+            {
+              "explain": "Sum the terms inside the square root and evaluate the root.",
+              "work": "\\(\\sqrt{25 + 100.0} = \\sqrt{125.0} \\approx 11.18\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q105",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(-3x^{2} + 4x + -15\\) when \\(x = -2\\).",
+          "options": [
+            "\\(-35\\)",
+            "\\(-31.5\\)",
+            "\\(-42\\)",
+            "\\(-22.75\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Substitute the values of the coefficients and \\(x\\) into the quadratic expression."
+            },
+            {
+              "explain": "Compute the squared term and the linear product.",
+              "work": "\\((-2)^2 = 4, \\quad -3 \\times 4 = -12, \\quad 4 \\times (-2) = -8\\)"
+            },
+            {
+              "explain": "Sum the terms to find the final value.",
+              "work": "\\(-12 + (-8) + -15 = -35\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q107",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(5 \\times 2.5 - 0.25 \\times 20\\).",
+          "options": [
+            "\\(7.5\\)",
+            "\\(9.38\\)",
+            "\\(3.75\\)",
+            "\\(8.63\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the multiplications first according to the order of operations."
+            },
+            {
+              "explain": "Perform the multiplications.",
+              "work": "\\(5 \\times 2.5 = 12.5, \\quad 0.25 \\times 20 = 5.0\\)"
+            },
+            {
+              "explain": "Subtract to find the force.",
+              "work": "\\(12.5 - 5.0 = 7.5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q108",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(-3x^{2} + 5x + 10\\) when \\(x = 2\\).",
+          "options": [
+            "\\(8\\)",
+            "\\(10\\)",
+            "\\(4\\)",
+            "\\(9.2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Substitute the values of the coefficients and \\(x\\) into the quadratic expression."
+            },
+            {
+              "explain": "Compute the squared term and the linear product.",
+              "work": "\\((2)^2 = 4, \\quad -3 \\times 4 = -12, \\quad 5 \\times (2) = 10\\)"
+            },
+            {
+              "explain": "Sum the terms to find the final value.",
+              "work": "\\(-12 + (10) + 10 = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q109",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the length of the hypotenuse of a right-angled triangle with legs \\(2.4\\) and \\(1.6\\).",
+          "options": [
+            "\\(2.88\\)",
+            "\\(3.38\\)",
+            "\\(2.38\\)",
+            "\\(4.0\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Substitute the side lengths into the Pythagoras theorem."
+            },
+            {
+              "explain": "Square each side length.",
+              "work": "\\(2.4^2 = 5.76, \\quad 1.6^2 = 2.56\\)"
+            },
+            {
+              "explain": "Add the squared terms and take the square root.",
+              "work": "\\(\\sqrt{5.76 + 2.56} = \\sqrt{8.32} = 2.88\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q111",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the length of the hypotenuse of a right-angled triangle with legs \\(1.5\\) and \\(3.2\\).",
+          "options": [
+            "\\(3.53\\)",
+            "\\(4.03\\)",
+            "\\(3.03\\)",
+            "\\(4.7\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Substitute the side lengths into the Pythagoras theorem."
+            },
+            {
+              "explain": "Square each side length.",
+              "work": "\\(1.5^2 = 2.25, \\quad 3.2^2 = 10.24\\)"
+            },
+            {
+              "explain": "Add the squared terms and take the square root.",
+              "work": "\\(\\sqrt{2.25 + 10.24} = \\sqrt{12.49} = 3.53\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q112",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the length of the hypotenuse of a right-angled triangle with legs \\(2.4\\) and \\(2.0\\).",
+          "options": [
+            "\\(3.12\\)",
+            "\\(3.62\\)",
+            "\\(2.62\\)",
+            "\\(4.4\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Substitute the side lengths into the Pythagoras theorem."
+            },
+            {
+              "explain": "Square each side length.",
+              "work": "\\(2.4^2 = 5.76, \\quad 2.0^2 = 4.0\\)"
+            },
+            {
+              "explain": "Add the squared terms and take the square root.",
+              "work": "\\(\\sqrt{5.76 + 4.0} = \\sqrt{9.76} = 3.12\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1a-q113",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression \\(12 \\times 3.5 - 0.15 \\times 40\\).",
+          "options": [
+            "\\(36.0\\)",
+            "\\(39.6\\)",
+            "\\(28.8\\)",
+            "\\(48.6\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the multiplications first according to the order of operations."
+            },
+            {
+              "explain": "Perform the multiplications.",
+              "work": "\\(12 \\times 3.5 = 42.0, \\quad 0.15 \\times 40 = 6.0\\)"
+            },
+            {
+              "explain": "Subtract to find the force.",
+              "work": "\\(42.0 - 6.0 = 36.0\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

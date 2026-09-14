@@ -1,0 +1,3485 @@
+{
+  "chapterId": "y8-17",
+  "title": "Chapter 17: Formulas and factorisation",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "y8-17a",
+      "code": "17A",
+      "title": "Formulas",
+      "questions": [
+        {
+          "id": "y8-17a-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The area of a triangle, \\(A\\text{ cm}^2\\), is given by the formula \\(A = \\frac{bh}{2}\\), where \\(b\\text{ cm}\\) is the length of the base and \\(h\\text{ cm}\\) is the height of the triangle. Find the area when \\(b = 8\\) and \\(h = 9\\).",
+          "options": [
+            "\\(38\\)",
+            "\\(35\\)",
+            "\\(36\\)",
+            "\\(37\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values of \\(b\\) and \\(h\\) into the formula and solve for \\(A\\).",
+          "solution": "1. Substitute \\(b = 8\\) and \\(h = 9\\) into the formula \\(A = \\frac{bh}{2}\\):\n   \\(A = \\frac{8 \\times 9}{2}\\)\n2. Calculate the numerator: \\(8 \\times 9 = 72\\).\n3. Divide by 2: \\(A = \\frac{72}{2} = 36\\text{ cm}^2\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(A = \\frac{8 \\times 9}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(A = \\frac{72}{2} = 36\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(36\\)"
+            },
+            {
+              "explain": "Final answer: 36. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(36\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The area of a triangle, \\(A\\text{ cm}^2\\), is given by the formula \\(A = \\frac{bh}{2}\\), where \\(b\\text{ cm}\\) is the length of the base and \\(h\\text{ cm}\\) is the height of the triangle. Find the length of the base if the area is \\(48\\text{ cm}^2\\) and the height is \\(6\\text{ cm}\\).",
+          "options": [
+            "\\(18\\)",
+            "\\(15\\)",
+            "\\(16\\)",
+            "\\(17\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute \\(A = 48\\) and \\(h = 6\\) into the formula, simplify the equation, and solve for \\(b\\).",
+          "solution": "1. Substitute \\(A = 48\\) and \\(h = 6\\) into the formula \\(A = \\frac{bh}{2}\\):\n   \\(48 = \\frac{b \\times 6}{2}\\)\n2. Simplify the right side of the equation: \\(\\frac{6b}{2} = 3b\\).\n3. Solve for \\(b\\): \\(3b = 48 \\implies b = 16\\text{ cm}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(48 = \\frac{b \\times 6}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(48 = 3b\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(b = \\frac{48}{3} = 16\\)"
+            },
+            {
+              "explain": "Final answer: 16. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(16\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given the formula \\(y = mx + c\\), find \\(y\\) if \\(m = 5\\), \\(x = 4\\) and \\(c = -8\\).",
+          "options": [
+            "\\(14\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(13\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values of \\(m\\), \\(x\\), and \\(c\\) into the equation and calculate the result.",
+          "solution": "1. Substitute \\(m = 5\\), \\(x = 4\\) and \\(c = -8\\) into the formula \\(y = mx + c\\):\n   \\(y = 5 \\times 4 + (-8)\\)\n2. Multiply: \\(5 \\times 4 = 20\\).\n3. Subtract: \\(y = 20 - 8 = 12\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(y = (5)(4) + (-8)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(y = 20 - 8 = 12\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(12\\)"
+            },
+            {
+              "explain": "Final answer: 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(12\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given the formula \\(y = mx + c\\), find \\(y\\) if \\(m = -3\\), \\(x = 4\\) and \\(c = 10\\).",
+          "options": [
+            "\\(-1\\)",
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "hint": "Be careful with the negative sign when multiplying \\((-3) \\times 4\\).",
+          "solution": "1. Substitute \\(m = -3\\), \\(x = 4\\) and \\(c = 10\\) into the formula \\(y = mx + c\\):\n   \\(y = (-3) \\times 4 + 10\\)\n2. Multiply: \\((-3) \\times 4 = -12\\).\n3. Add: \\(y = -12 + 10 = -2\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(y = (-3)(4) + 10\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(y = -12 + 10 = -2\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-2\\)"
+            },
+            {
+              "explain": "Final answer: -2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q2c",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Given the formula \\(y = mx + c\\), find \\(x\\) if \\(m = 6\\), \\(y = 26\\) and \\(c = 8\\).",
+          "answer": "3",
+          "hint": "Substitute the values, subtract \\(c\\) from \\(y\\), then divide by \\(m\\).",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(26 = 6x + 8\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(18 = 6x\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(x = \\frac{18}{6} = 3\\)"
+            },
+            {
+              "explain": "Final answer: 3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(3\\)"
+            }
+          ],
+          "manual": true,
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given the formula \\(y = mx + c\\), find \\(x\\) if \\(m = -5\\), \\(y = 17\\) and \\(c = 2\\).",
+          "options": [
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the values, subtract 2 from 17, and divide the result by \\(-5\\).",
+          "solution": "1. Substitute \\(y = 17\\), \\(m = -5\\) and \\(c = 2\\) into the formula:\n   \\(17 = -5x + 2\\)\n2. Subtract 2 from both sides of the equation:\n   \\(15 = -5x\\)\n3. Divide by \\(-5\\) to solve for \\(x\\):\n   \\(x = -3\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(17 = -5x + 2\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(15 = -5x\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(x = \\frac{15}{-5} = -3\\)"
+            },
+            {
+              "explain": "Final answer: -3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-3\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The formula for changing the temperature in degrees Fahrenheit (\\(^\\circ\\text{F}\\)) to degrees Celsius (\\(^\\circ\\text{C}\\)) is \\(C = \\frac{5}{9}(F - 32)\\). Find the temperature in \\(^\\circ\\text{C}\\) corresponding to \\(50^\\circ\\text{F}\\).",
+          "options": [
+            "\\(12\\)",
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract 32 from 50, then multiply the result by \\(\\frac{5}{9}\\).",
+          "solution": "1. Substitute \\(F = 50\\) into the formula \\(C = \\frac{5}{9}(F - 32)\\):\n   \\(C = \\frac{5}{9}(50 - 32)\\)\n2. Simplify the term inside the bracket: \\(50 - 32 = 18\\).\n3. Calculate the product: \\(C = \\frac{5}{9} \\times 18 = 5 \\times 2 = 10^\\circ\\text{C}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(C = \\frac{5}{9}(50 - 32)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(C = \\frac{5}{9}(18)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(C = 5 \\times 2 = 10\\)"
+            },
+            {
+              "explain": "Final answer: 10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(10\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The formula for changing the temperature in degrees Fahrenheit (\\(^\\circ\\text{F}\\)) to degrees Celsius (\\(^\\circ\\text{C}\\)) is \\(C = \\frac{5}{9}(F - 32)\\). Find the temperature in \\(^\\circ\\text{C}\\) corresponding to \\(122^\\circ\\text{F}\\).",
+          "options": [
+            "\\(52\\)",
+            "\\(49\\)",
+            "\\(50\\)",
+            "\\(51\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract 32 from 122, then multiply by \\(\\frac{5}{9}\\).",
+          "solution": "1. Substitute \\(F = 122\\) into the formula:\n   \\(C = \\frac{5}{9}(122 - 32)\\)\n2. Simplify inside the bracket: \\(122 - 32 = 90\\).\n3. Calculate the product: \\(C = \\frac{5}{9} \\times 90 = 5 \\times 10 = 50^\\circ\\text{C}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(C = \\frac{5}{9}(122 - 32)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(C = \\frac{5}{9}(90)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(C = 5 \\times 10 = 50\\)"
+            },
+            {
+              "explain": "Final answer: 50. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(50\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The formula for changing the temperature in degrees Fahrenheit (\\(^\\circ\\text{F}\\)) to degrees Celsius (\\(^\\circ\\text{C}\\)) is \\(C = \\frac{5}{9}(F - 32)\\). Find the temperature in \\(^\\circ\\text{C}\\) corresponding to \\(14^\\circ\\text{F}\\).",
+          "options": [
+            "\\(-10\\)",
+            "\\(-11\\)",
+            "\\(-9\\)",
+            "\\(12\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtracting 32 from 14 gives a negative number. Multiply that by \\(\\frac{5}{9}\\).",
+          "solution": "1. Substitute \\(F = 14\\) into the formula:\n   \\(C = \\frac{5}{9}(14 - 32)\\)\n2. Simplify inside the bracket: \\(14 - 32 = -18\\).\n3. Calculate the product: \\(C = \\frac{5}{9} \\times (-18) = 5 \\times (-2) = -10^\\circ\\text{C}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(C = \\frac{5}{9}(14 - 32)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(C = \\frac{5}{9}(-18)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(C = 5 \\times (-2) = -10\\)"
+            },
+            {
+              "explain": "Final answer: -10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-10\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The formula for changing the temperature in degrees Fahrenheit (\\(^\\circ\\text{F}\\)) to degrees Celsius (\\(^\\circ\\text{C}\\)) is \\(C = \\frac{5}{9}(F - 32)\\). Find the temperature in \\(^\\circ\\text{C}\\) corresponding to \\(-4^\\circ\\text{F}\\).",
+          "options": [
+            "\\(-19\\)",
+            "\\(-20\\)",
+            "\\(-21\\)",
+            "\\(22\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtracting 32 from \\(-4\\) results in \\(-36\\). Then scale this by \\(\\frac{5}{9}\\).",
+          "solution": "1. Substitute \\(F = -4\\) into the formula:\n   \\(C = \\frac{5}{9}(-4 - 32)\\)\n2. Simplify inside the bracket: \\(-4 - 32 = -36\\).\n3. Calculate the product: \\(C = \\frac{5}{9} \\times (-36) = 5 \\times (-4) = -20^\\circ\\text{C}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(C = \\frac{5}{9}(-4 - 32)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(C = \\frac{5}{9}(-36)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(C = 5 \\times (-4) = -20\\)"
+            },
+            {
+              "explain": "Final answer: -20. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-20\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given the formula \\(T = a + (n - 1)d\\), find \\(T\\) if \\(a = 5\\), \\(n = 8\\) and \\(d = 3\\).",
+          "options": [
+            "\\(28\\)",
+            "\\(25\\)",
+            "\\(26\\)",
+            "\\(27\\)"
+          ],
+          "answer": 2,
+          "hint": "Follow BOMDAS: solve the parentheses, multiply by \\(d\\), and add \\(a\\) last.",
+          "solution": "1. Substitute \\(a = 5\\), \\(n = 8\\), and \\(d = 3\\) into the formula:\n   \\(T = 5 + (8 - 1) \\times 3\\)\n2. Evaluate the bracket first: \\(8 - 1 = 7\\).\n3. Multiply: \\(7 \\times 3 = 21\\).\n4. Add: \\(T = 5 + 21 = 26\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(T = 5 + (8 - 1) \\times 3\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(T = 5 + (7) \\times 3\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(T = 5 + 21 = 26\\)"
+            },
+            {
+              "explain": "Final answer: 26. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(26\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given the formula \\(T = a + (n - 1)d\\), find \\(T\\) if \\(a = 8\\), \\(n = 7\\) and \\(d = -3\\).",
+          "options": [
+            "\\(-10\\)",
+            "\\(-11\\)",
+            "\\(-9\\)",
+            "\\(12\\)"
+          ],
+          "answer": 0,
+          "hint": "Be careful with the negative common difference \\(d = -3\\).",
+          "solution": "1. Substitute \\(a = 8\\), \\(n = 7\\), and \\(d = -3\\) into the formula:\n   \\(T = 8 + (7 - 1) \\times (-3)\\)\n2. Evaluate the bracket: \\(7 - 1 = 6\\).\n3. Multiply: \\(6 \\times (-3) = -18\\).\n4. Add: \\(T = 8 - 18 = -10\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(T = 8 + (7 - 1) \\times (-3)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(T = 8 + 6 \\times (-3)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(T = 8 - 18 = -10\\)"
+            },
+            {
+              "explain": "Final answer: -10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given the formula \\(T = a + (n - 1)d\\), find \\(a\\) if \\(T = 150\\), \\(n = 6\\) and \\(d = 4\\).",
+          "options": [
+            "\\(132\\)",
+            "\\(129\\)",
+            "\\(130\\)",
+            "\\(131\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values, simplify the right side, and subtract that value from \\(T\\).",
+          "solution": "1. Substitute \\(T = 150\\), \\(n = 6\\), and \\(d = 4\\) into the formula:\n   \\(150 = a + (6 - 1) \\times 4\\)\n2. Evaluate the bracket: \\(6 - 1 = 5\\).\n3. Multiply: \\(5 \\times 4 = 20\\), giving the equation:\n   \\(150 = a + 20\\)\n4. Subtract 20 from both sides to solve for \\(a\\):\n   \\(a = 130\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(150 = a + (6 - 1) \\times 4\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(150 = a + 5 \\times 4 \\implies 150 = a + 20\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(a = 150 - 20 = 130\\)"
+            },
+            {
+              "explain": "Final answer: 130. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(130\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given the formula \\(T = a + (n - 1)d\\), find \\(n\\) if \\(T = 62\\), \\(d = 5\\) and \\(a = 12\\).",
+          "options": [
+            "\\(13\\)",
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(12\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract \\(a\\) from \\(T\\), divide the result by \\(d\\), and then add 1 to get \\(n\\).",
+          "solution": "1. Substitute \\(T = 62\\), \\(a = 12\\), and \\(d = 5\\) into the formula:\n   \\(62 = 12 + (n - 1) \\times 5\\)\n2. Subtract 12 from both sides of the equation:\n   \\(50 = 5(n - 1)\\)\n3. Divide both sides by 5:\n   \\(10 = n - 1\\)\n4. Add 1 to both sides to solve for \\(n\\):\n   \\(n = 11\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(62 = 12 + (n - 1) \\times 5\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(50 = 5(n - 1)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(10 = n - 1\\)"
+            },
+            {
+              "explain": "Final answer: 11. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(11\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q4e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given the formula \\(T = a + (n - 1)d\\), find \\(d\\) if \\(T = 55\\), \\(n = 8\\) and \\(a = 6\\).",
+          "options": [
+            "\\(9\\)",
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract \\(a\\) from \\(T\\), then divide by \\((n - 1)\\) to find \\(d\\).",
+          "solution": "1. Substitute \\(T = 55\\), \\(n = 8\\), and \\(a = 6\\) into the formula:\n   \\(55 = 6 + (8 - 1) \\times d\\)\n2. Evaluate the bracket: \\(8 - 1 = 7\\), giving the equation:\n   \\(55 = 6 + 7d\\)\n3. Subtract 6 from both sides:\n   \\(49 = 7d\\)\n4. Divide by 7 to solve for \\(d\\):\n   \\(d = 7\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(55 = 6 + (8 - 1)d\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(55 = 6 + 7d\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(49 = 7d\\)"
+            },
+            {
+              "explain": "Final answer: 7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(7\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q4f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given the formula \\(T = a + (n - 1)d\\), find \\(d\\) if \\(T = -44\\), \\(n = 9\\) and \\(a = -4\\).",
+          "options": [
+            "\\(-4\\)",
+            "\\(-5\\)",
+            "\\(-6\\)",
+            "\\(7\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the negative values carefully, simplify, and solve the linear equation for \\(d\\).",
+          "solution": "1. Substitute \\(T = -44\\), \\(n = 9\\), and \\(a = -4\\) into the formula:\n   \\(-44 = -4 + (9 - 1) \\times d\\)\n2. Evaluate the bracket: \\(9 - 1 = 8\\), giving:\n   \\(-44 = -4 + 8d\\)\n3. Add 4 to both sides of the equation:\n   \\(-40 = 8d\\)\n4. Divide by 8 to solve for \\(d\\):\n   \\(d = -5\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-44 = -4 + (9 - 1)d\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-44 = -4 + 8d\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-40 = 8d\\)"
+            },
+            {
+              "explain": "Final answer: -5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-5\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The average \\(a\\) of two numbers \\(m\\) and \\(n\\) is given by the formula \\(a = \\frac{m + n}{2}\\). Find \\(a\\) if \\(m = 4\\) and \\(n = 12\\).",
+          "options": [
+            "\\(10\\)",
+            "\\(7\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "Add the two numbers together, then divide the sum by 2.",
+          "solution": "1. Substitute \\(m = 4\\) and \\(n = 12\\) into the formula:\n   \\(a = \\frac{4 + 12}{2}\\)\n2. Add the numbers in the numerator: \\(4 + 12 = 16\\).\n3. Divide by 2: \\(a = \\frac{16}{2} = 8\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(a = \\frac{4 + 12}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(a = \\frac{16}{2}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(a = 8\\)"
+            },
+            {
+              "explain": "Final answer: 8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(8\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The average \\(a\\) of two numbers \\(m\\) and \\(n\\) is given by the formula \\(a = \\frac{m + n}{2}\\). Find \\(a\\) if \\(m = 8\\) and \\(n = -14\\).",
+          "options": [
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "Add the positive and negative numbers in the numerator, then divide by 2.",
+          "solution": "1. Substitute \\(m = 8\\) and \\(n = -14\\) into the formula:\n   \\(a = \\frac{8 + (-14)}{2}\\)\n2. Add the numbers in the numerator: \\(8 - 14 = -6\\).\n3. Divide by 2: \\(a = \\frac{-6}{2} = -3\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(a = \\frac{8 - 14}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(a = \\frac{-6}{2}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(a = -3\\)"
+            },
+            {
+              "explain": "Final answer: -3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-3\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The average \\(a\\) of two numbers \\(m\\) and \\(n\\) is given by the formula \\(a = \\frac{m + n}{2}\\). Find \\(m\\) if \\(a = 7\\) and \\(n = 5\\).",
+          "options": [
+            "\\(11\\)",
+            "\\(10\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply the average \\(a\\) by 2, then subtract \\(n\\) from the result to find \\(m\\).",
+          "solution": "1. Substitute \\(a = 7\\) and \\(n = 5\\) into the formula:\n   \\(7 = \\frac{m + 5}{2}\\)\n2. Multiply both sides of the equation by 2 to clear the fraction:\n   \\(14 = m + 5\\)\n3. Subtract 5 from both sides to solve for \\(m\\):\n   \\(m = 9\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(7 = \\frac{m + 5}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(14 = m + 5\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(m = 9\\)"
+            },
+            {
+              "explain": "Final answer: 9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The average \\(a\\) of two numbers \\(m\\) and \\(n\\) is given by the formula \\(a = \\frac{m + n}{2}\\). Find \\(a\\) if \\(m = -4\\) and \\(n = -12\\).",
+          "options": [
+            "\\(-7\\)",
+            "\\(-8\\)",
+            "\\(-9\\)",
+            "\\(10\\)"
+          ],
+          "answer": 1,
+          "hint": "Add the two negative numbers in the numerator, then divide by 2.",
+          "solution": "1. Substitute \\(m = -4\\) and \\(n = -12\\) into the formula:\n   \\(a = \\frac{-4 + (-12)}{2}\\)\n2. Simplify the numerator: \\(-4 - 12 = -16\\).\n3. Divide by 2: \\(a = \\frac{-16}{2} = -8\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(a = \\frac{-4 - 12}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(a = \\frac{-16}{2}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(a = -8\\)"
+            },
+            {
+              "explain": "Final answer: -8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q5e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The average \\(a\\) of two numbers \\(m\\) and \\(n\\) is given by the formula \\(a = \\frac{m + n}{2}\\). Find \\(m\\) if \\(a = 0\\) and \\(n = -12\\).",
+          "options": [
+            "\\(14\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(13\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values and solve the equation for \\(m\\).",
+          "solution": "1. Substitute \\(a = 0\\) and \\(n = -12\\) into the formula:\n   \\(0 = \\frac{m + (-12)}{2}\\)\n2. Multiply both sides by 2:\n   \\(0 = m - 12\\)\n3. Add 12 to both sides to solve for \\(m\\):\n   \\(m = 12\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(0 = \\frac{m - 12}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(0 = m - 12\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(m = 12\\)"
+            },
+            {
+              "explain": "Final answer: 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(12\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q6ai",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The formula for the interior angle \\(I\\) of a regular polygon with \\(n\\) sides is \\(I = \\frac{180n - 360}{n}\\), where \\(I\\) is measured in degrees. Find the size of each interior angle of an octagon (8 sides).",
+          "options": [
+            "\\(-135°\\)",
+            "\\(135°\\)",
+            "\\(135° + 1\\)",
+            "\\(136°\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute \\(n = 8\\) into the formula and evaluate the expression step-by-step.",
+          "solution": "1. Substitute \\(n = 8\\) into the interior angle formula:\n   \\(I = \\frac{180(8) - 360}{8}\\)\n2. Calculate \\(180 \\times 8 = 1440\\).\n3. Subtract 360: \\(1440 - 360 = 1080\\).\n4. Divide by 8: \\(I = \\frac{1080}{8} = 135^\\circ\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(I = \\frac{180(8) - 360}{8}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(I = \\frac{1440 - 360}{8} = \\frac{1080}{8}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(I = 135^\\circ\\)"
+            },
+            {
+              "explain": "Final answer: 135°. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(135°\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q6aii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The formula for the interior angle \\(I\\) of a regular polygon with \\(n\\) sides is \\(I = \\frac{180n - 360}{n}\\), where \\(I\\) is measured in degrees. Find the size of each interior angle of a decagon (10 sides).",
+          "options": [
+            "\\(-144°\\)",
+            "\\(144°\\)",
+            "\\(144° + 1\\)",
+            "\\(145°\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute \\(n = 10\\) into the formula and solve.",
+          "solution": "1. Substitute \\(n = 10\\) into the formula:\n   \\(I = \\frac{180(10) - 360}{10}\\)\n2. Calculate the numerator: \\(180 \\times 10 - 360 = 1800 - 360 = 1440\\).\n3. Divide by 10: \\(I = \\frac{1440}{10} = 144^\\circ\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(I = \\frac{180(10) - 360}{10}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(I = \\frac{1800 - 360}{10} = \\frac{1440}{10}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(I = 144^\\circ\\)"
+            },
+            {
+              "explain": "Final answer: 144°. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(144°\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q6aiii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The formula for the interior angle \\(I\\) of a regular polygon with \\(n\\) sides is \\(I = \\frac{180n - 360}{n}\\), where \\(I\\) is measured in degrees. Find the size of each interior angle of a 15-gon (15 sides).",
+          "options": [
+            "\\(-156°\\)",
+            "\\(156°\\)",
+            "\\(156° + 1\\)",
+            "\\(157°\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute \\(n = 15\\) and evaluate carefully.",
+          "solution": "1. Substitute \\(n = 15\\) into the formula:\n   \\(I = \\frac{180(15) - 360}{15}\\)\n2. Calculate \\(180 \\times 15 = 2700\\).\n3. Subtract 360: \\(2700 - 360 = 2340\\).\n4. Divide by 15: \\(I = \\frac{2340}{15} = 156^\\circ\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(I = \\frac{180(15) - 360}{15}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(I = \\frac{2700 - 360}{15} = \\frac{2340}{15}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(I = 156^\\circ\\)"
+            },
+            {
+              "explain": "Final answer: 156°. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(156°\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q6bi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The formula for the interior angle \\(I\\) of a regular polygon with \\(n\\) sides is \\(I = \\frac{180n - 360}{n}\\), where \\(I\\) is measured in degrees. Find the number of sides of a polygon for which the size of each interior angle is \\(120^\\circ\\).",
+          "options": [
+            "\\(8\\)",
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(7\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute \\(I = 120\\), multiply both sides by \\(n\\), then solve the resulting linear equation for \\(n\\).",
+          "solution": "1. Substitute \\(I = 120\\) into the formula:\n   \\(120 = \\frac{180n - 360}{n}\\)\n2. Multiply both sides by \\(n\\) to clear the fraction:\n   \\(120n = 180n - 360\\)\n3. Subtract \\(120n\\) and add 360 to both sides to group like terms:\n   \\(360 = 60n\\)\n4. Divide by 60 to solve for \\(n\\):\n   \\(n = 6\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(120 = \\frac{180n - 360}{n}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(120n = 180n - 360\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(360 = 180n - 120n \\implies 360 = 60n\\)"
+            },
+            {
+              "explain": "Final answer: 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(6\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q6bii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The formula for the interior angle \\(I\\) of a regular polygon with \\(n\\) sides is \\(I = \\frac{180n - 360}{n}\\), where \\(I\\) is measured in degrees. Find the number of sides of a polygon for which the size of each interior angle is \\(150^\\circ\\).",
+          "options": [
+            "\\(14\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(13\\)"
+          ],
+          "answer": 2,
+          "hint": "Set up the equation with \\(I = 150\\), multiply by \\(n\\), and solve for \\(n\\).",
+          "solution": "1. Substitute \\(I = 150\\) into the formula:\n   \\(150 = \\frac{180n - 360}{n}\\)\n2. Multiply both sides by \\(n\\):\n   \\(150n = 180n - 360\\)\n3. Group like terms:\n   \\(360 = 180n - 150n \\implies 30n = 360\\)\n4. Divide by 30 to solve for \\(n\\):\n   \\(n = 12\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(150 = \\frac{180n - 360}{n}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(150n = 180n - 360\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(360 = 30n\\)"
+            },
+            {
+              "explain": "Final answer: 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(12\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q7a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If \\(s = 2(a - b)\\), find \\(s\\) when \\(a = 6\\) and \\(b = -3\\).",
+          "options": [
+            "\\(20\\)",
+            "\\(17\\)",
+            "\\(18\\)",
+            "\\(19\\)"
+          ],
+          "answer": 2,
+          "hint": "Be careful with the double negative inside the parentheses: \\(a - b = 6 - (-3) = 6 + 3\\).",
+          "solution": "1. Substitute \\(a = 6\\) and \\(b = -3\\) into the formula:\n   \\(s = 2(6 - (-3))\\)\n2. Simplify inside the bracket (double negative becomes positive): \\(6 + 3 = 9\\).\n3. Multiply: \\(s = 2 \\times 9 = 18\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(s = 2(6 - (-3))\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(s = 2(6 + 3) = 2(9)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(s = 18\\)"
+            },
+            {
+              "explain": "Final answer: 18. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(18\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If \\(s = 2(a - b)\\), find \\(a\\) when \\(s = 16\\) and \\(b = 5\\).",
+          "options": [
+            "\\(15\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values, divide both sides by 2, then add \\(b\\) to solve for \\(a\\).",
+          "solution": "1. Substitute \\(s = 16\\) and \\(b = 5\\) into the formula:\n   \\(16 = 2(a - 5)\\)\n2. Divide both sides by 2:\n   \\(8 = a - 5\\)\n3. Add 5 to both sides to solve for \\(a\\):\n   \\(a = 13\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(16 = 2(a - 5)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(8 = a - 5\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(a = 13\\)"
+            },
+            {
+              "explain": "Final answer: 13. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(13\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q7c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If \\(s = 2(a - b)\\), find \\(b\\) when \\(a = -3\\) and \\(s = 8\\).",
+          "options": [
+            "\\(-6\\)",
+            "\\(-7\\)",
+            "\\(-8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the values, divide by 2, and isolate \\(b\\). Keep track of negative signs.",
+          "solution": "1. Substitute \\(s = 8\\) and \\(a = -3\\) into the formula:\n   \\(8 = 2(-3 - b)\\)\n2. Divide both sides by 2:\n   \\(4 = -3 - b\\)\n3. Rearrange the terms: add \\(b\\) to both sides:\n   \\(b + 4 = -3\\)\n4. Subtract 4 from both sides to solve for \\(b\\):\n   \\(b = -7\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(8 = 2(-3 - b)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(4 = -3 - b\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(b = -3 - 4 = -7\\)"
+            },
+            {
+              "explain": "Final answer: -7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-7\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q8a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given that \\(A = \\frac{PRT}{100}\\), find \\(A\\) when \\(P = 300\\), \\(R = 5\\) and \\(T = 4\\).",
+          "options": [
+            "\\(62\\)",
+            "\\(59\\)",
+            "\\(60\\)",
+            "\\(61\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the numbers into the numerator, multiply, and then divide by 100.",
+          "solution": "1. Substitute \\(P = 300\\), \\(R = 5\\), and \\(T = 4\\) into the formula:\n   \\(A = \\frac{300 \\times 5 \\times 4}{100}\\)\n2. Simplify: division of 300 by 100 is 3:\n   \\(A = 3 \\times 5 \\times 4\\)\n3. Multiply: \\(3 \\times 20 = 60\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(A = \\frac{300 \\times 5 \\times 4}{100}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(A = 3 \\times 5 \\times 4\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(A = 60\\)"
+            },
+            {
+              "explain": "Final answer: 60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(60\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q8b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given that \\(A = \\frac{PRT}{100}\\), find \\(P\\) when \\(A = 1800\\), \\(R = 4\\) and \\(T = 5\\).",
+          "options": [
+            "\\(9002\\)",
+            "\\(8999\\)",
+            "\\(9000\\)",
+            "\\(9001\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values, simplify the fraction on the right, then multiply to isolate \\(P\\).",
+          "solution": "1. Substitute \\(A = 1800\\), \\(R = 4\\), and \\(T = 5\\) into the formula:\n   \\(1800 = \\frac{P \\times 4 \\times 5}{100}\\)\n2. Simplify the right hand side: \\(4 \\times 5 = 20\\):\n   \\(1800 = \\frac{20P}{100} \\implies 1800 = \\frac{P}{5}\\)\n3. Multiply both sides by 5 to solve for \\(P\\):\n   \\(P = 1800 \\times 5 = 9000\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(1800 = \\frac{P \\times 4 \\times 5}{100}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(1800 = \\frac{20P}{100} = \\frac{P}{5}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(P = 1800 \\times 5 = 9000\\)"
+            },
+            {
+              "explain": "Final answer: 9000. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(9000\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q8c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given that \\(A = \\frac{PRT}{100}\\), find \\(T\\) when \\(A = 15000\\), \\(P = 10000\\) and \\(R = 6\\).",
+          "options": [
+            "\\(27\\)",
+            "\\(24\\)",
+            "\\(25\\)",
+            "\\(26\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values, simplify the right side coefficient, and divide \\(A\\) by that coefficient.",
+          "solution": "1. Substitute \\(A = 15000\\), \\(P = 10000\\), and \\(R = 6\\) into the formula:\n   \\(15000 = \\frac{10000 \\times 6 \\times T}{100}\\)\n2. Simplify the fraction: division of 10000 by 100 is 100:\n   \\(15000 = 100 \\times 6 \\times T \\implies 15000 = 600T\\)\n3. Divide both sides by 600:\n   \\(T = \\frac{15000}{600} = \\frac{150}{6} = 25\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(15000 = \\frac{10000 \\times 6 \\times T}{100}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(15000 = 100 \\times 6 \\times T \\implies 15000 = 600T\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(T = \\frac{15000}{600} = 25\\)"
+            },
+            {
+              "explain": "Final answer: 25. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(25\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of a rectangle is \\(x\\text{ cm}^2\\). The length of the rectangle is \\(6\\text{ cm}\\). Write an expression in terms of \\(x\\) for the width of the rectangle.",
+          "options": [
+            "\\(\\frac{x}{7}\\)",
+            "\\(\\frac{6}{x}\\)",
+            "\\(\\frac{x}{6}\\)",
+            "\\(\\frac{x}{6} + 1\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the area formula: \\(\\text{Area} = \\text{length} \\times \\text{width}\\). Substitute the given values and solve for width.",
+          "solution": "1. The formula for the area of a rectangle is \\(\\text{Area} = \\text{length} \\times \\text{width}\\).\n2. Given \\(\\text{Area} = x\\) and \\(\\text{length} = 6\\), substitute these into the formula:\n   \\(x = 6 \\times \\text{width}\\)\n3. Rearrange the equation to express the width in terms of \\(x\\) by dividing both sides by 6:\n   \\(\\text{width} = \\frac{x}{6}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(x = 6 \\times \\text{width}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(\\text{width} = \\frac{x}{6}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(\\frac{x}{6}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{x}{6}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(\\frac{x}{6}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of a rectangle is \\(x\\text{ cm}^2\\). The length of the rectangle is \\(6\\text{ cm}\\). Write a formula for the perimeter \\(P\\text{ cm}\\) of the rectangle in terms of \\(x\\).",
+          "options": [
+            "\\(-P = 12 + \\frac{x}{3}\\)",
+            "\\(P = 12 + \\frac{3}{x}\\)",
+            "\\(P = 12 + \\frac{x}{3}\\)",
+            "\\(P = 13 + \\frac{x}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the length \\(6\\) and width \\(\\frac{x}{6}\\) into the perimeter formula \\(P = 2(l + w)\\), and expand the expression.",
+          "solution": "1. The formula for the perimeter of a rectangle is \\(P = 2(\\text{length} + \\text{width})\\).\n2. We know \\(\\text{length} = 6\\text{ cm}\\) and \\(\\text{width} = \\frac{x}{6}\\text{ cm}\\).\n3. Substitute these values into the perimeter formula:\n   \\(P = 2\\left(6 + \\frac{x}{6}\\right)\\)\n4. Distribute the 2 into the bracket:\n   \\(P = 2 \\times 6 + 2 \\times \\frac{x}{6} = 12 + \\frac{x}{3}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(P = 2\\left(6 + \\frac{x}{6}\\right)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = 12 + \\frac{2x}{6} = 12 + \\frac{x}{3}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(P = 12 + \\frac{x}{3}\\)"
+            },
+            {
+              "explain": "Final answer: P = 12 + \\frac{x}{3}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(P = 12 + \\frac{x}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q9ci",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of a rectangle is \\(x\\text{ cm}^2\\). The length of the rectangle is \\(6\\text{ cm}\\). Using the formula for the perimeter \\(P = 12 + \\frac{x}{3}\\), find \\(P\\) if \\(x = 18\\).",
+          "options": [
+            "\\(20\\)",
+            "\\(17\\)",
+            "\\(18\\)",
+            "\\(19\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute \\(x = 18\\) into the formula and solve.",
+          "solution": "1. Substitute \\(x = 18\\) into the perimeter formula \\(P = 12 + \\frac{x}{3}\\):\n   \\(P = 12 + \\frac{18}{3}\\)\n2. Calculate the division: \\(\\frac{18}{3} = 6\\).\n3. Add: \\(P = 12 + 6 = 18\\text{ cm}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(P = 12 + \\frac{18}{3}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = 12 + 6 = 18\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(18\\)"
+            },
+            {
+              "explain": "Final answer: 18. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(18\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q9cii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of a rectangle is \\(x\\text{ cm}^2\\). The length of the rectangle is \\(6\\text{ cm}\\). Using the formula for the perimeter \\(P = 12 + \\frac{x}{3}\\), find \\(P\\) if \\(x = 36\\).",
+          "options": [
+            "\\(26\\)",
+            "\\(23\\)",
+            "\\(24\\)",
+            "\\(25\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute \\(x = 36\\) into the formula and solve.",
+          "solution": "1. Substitute \\(x = 36\\) into the formula \\(P = 12 + \\frac{x}{3}\\):\n   \\(P = 12 + \\frac{36}{3}\\)\n2. Calculate: \\(\\frac{36}{3} = 12\\).\n3. Add: \\(P = 12 + 12 = 24\\text{ cm}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(P = 12 + \\frac{36}{3}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = 12 + 12 = 24\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(24\\)"
+            },
+            {
+              "explain": "Final answer: 24. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(24\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q9di",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of a rectangle is \\(x\\text{ cm}^2\\). The length of the rectangle is \\(6\\text{ cm}\\). Using the formula for the perimeter \\(P = 12 + \\frac{x}{3}\\), find \\(x\\) if \\(P = 22\\).",
+          "options": [
+            "\\(32\\)",
+            "\\(29\\)",
+            "\\(30\\)",
+            "\\(31\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute \\(P = 22\\), subtract 12 from both sides, then multiply by 3.",
+          "solution": "1. Substitute \\(P = 22\\) into the formula \\(P = 12 + \\frac{x}{3}\\):\n   \\(22 = 12 + \\frac{x}{3}\\)\n2. Subtract 12 from both sides of the equation:\n   \\(10 = \\frac{x}{3}\\)\n3. Multiply both sides by 3 to solve for \\(x\\):\n   \\(x = 30\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(22 = 12 + \\frac{x}{3}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(10 = \\frac{x}{3}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(x = 30\\)"
+            },
+            {
+              "explain": "Final answer: 30. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(30\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q9dii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of a rectangle is \\(x\\text{ cm}^2\\). The length of the rectangle is \\(6\\text{ cm}\\). Using the formula for the perimeter \\(P = 12 + \\frac{x}{3}\\), find \\(x\\) if \\(P = 32\\).",
+          "options": [
+            "\\(62\\)",
+            "\\(59\\)",
+            "\\(60\\)",
+            "\\(61\\)"
+          ],
+          "answer": 2,
+          "hint": "Set \\(P = 32\\), subtract 12, then multiply by 3.",
+          "solution": "1. Substitute \\(P = 32\\) into the formula:\n   \\(32 = 12 + \\frac{x}{3}\\)\n2. Subtract 12 from both sides:\n   \\(20 = \\frac{x}{3}\\)\n3. Multiply both sides by 3 to solve for \\(x\\):\n   \\(x = 60\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(32 = 12 + \\frac{x}{3}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(20 = \\frac{x}{3}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(x = 60\\)"
+            },
+            {
+              "explain": "Final answer: 60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(60\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The formula for the surface area \\(S\\text{ cm}^2\\) of a rectangular prism is \\(S = 2(lw + lh + hw)\\), where \\(l, w\\) and \\(h\\) are the length, width and height of the prism, measured in cm. If \\(S = 94, l = 5\\) and \\(w = 3\\), find \\(h\\), the height of the prism.",
+          "options": [
+            "\\(6\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values, expand/simplify inside the brackets, divide by 2, and isolate \\(h\\).",
+          "solution": "1. Substitute \\(S = 94, l = 5\\), and \\(w = 3\\) into the surface area formula:\n   \\(94 = 2(5 \\times 3 + 5h + 3h)\\)\n2. Divide both sides by 2 to simplify:\n   \\(47 = 15 + 8h\\)\n3. Subtract 15 from both sides of the equation:\n   \\(32 = 8h\\)\n4. Divide by 8 to solve for \\(h\\):\n   \\(h = 4\\text{ cm}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(94 = 2(5 \\times 3 + 5h + 3h)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(94 = 2(15 + 8h)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(47 = 15 + 8h\\)"
+            },
+            {
+              "explain": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(4\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q11a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(c = a^2 + b^2\\), find the value of \\(c\\) when \\(a = 3\\) and \\(b = 2\\).",
+          "options": [
+            "\\(15\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Square \\(a\\) and \\(b\\) first, then sum the squares.",
+          "solution": "1. Substitute \\(a = 3\\) and \\(b = 2\\) into the formula \\(c = a^2 + b^2\\):\n   \\(c = 3^2 + 2^2\\)\n2. Square the numbers: \\(3^2 = 9\\) and \\(2^2 = 4\\).\n3. Add: \\(c = 9 + 4 = 13\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(c = 3^2 + 2^2\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(c = 9 + 4\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(c = 13\\)"
+            },
+            {
+              "explain": "Final answer: 13. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(13\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17"
+          ]
+        },
+        {
+          "id": "y8-17a-q11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(c = a^2 + b^2\\), find the value of \\(c\\) when \\(a = 4\\) and \\(b = 5\\).",
+          "options": [
+            "\\(43\\)",
+            "\\(40\\)",
+            "\\(41\\)",
+            "\\(42\\)"
+          ],
+          "answer": 2,
+          "hint": "Square 4 and 5, then add them.",
+          "solution": "1. Substitute \\(a = 4\\) and \\(b = 5\\) into the formula:\n   \\(c = 4^2 + 5^2\\)\n2. Square the numbers: \\(4^2 = 16\\) and \\(5^2 = 25\\).\n3. Add: \\(c = 16 + 25 = 41\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(c = 4^2 + 5^2\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(c = 16 + 25\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(c = 41\\)"
+            },
+            {
+              "explain": "Final answer: 41. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(41\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q11c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(c = a^2 + b^2\\), find the value of \\(c\\) when \\(a = 6\\) and \\(b = 8\\).",
+          "options": [
+            "\\(102\\)",
+            "\\(100\\)",
+            "\\(101\\)",
+            "\\(99\\)"
+          ],
+          "answer": 1,
+          "hint": "Square 6 and 8, then sum them.",
+          "solution": "1. Substitute \\(a = 6\\) and \\(b = 8\\) into the formula:\n   \\(c = 6^2 + 8^2\\)\n2. Square the numbers: \\(6^2 = 36\\) and \\(8^2 = 64\\).\n3. Add: \\(c = 36 + 64 = 100\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(c = 6^2 + 8^2\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(c = 36 + 64\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(c = 100\\)"
+            },
+            {
+              "explain": "Final answer: 100. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(100\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q12a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If \\(c = \\sqrt{a^2 + b^2}\\), find the value of \\(c\\) when \\(a = 8\\) and \\(b = 15\\).",
+          "options": [
+            "\\(19\\)",
+            "\\(16\\)",
+            "\\(17\\)",
+            "\\(18\\)"
+          ],
+          "answer": 2,
+          "hint": "Square both numbers, add them, and then take the square root of the sum.",
+          "solution": "1. Substitute \\(a = 8\\) and \\(b = 15\\) into the formula \\(c = \\sqrt{a^2 + b^2}\\):\n   \\(c = \\sqrt{8^2 + 15^2}\\)\n2. Square \\(a\\) and \\(b\\): \\(8^2 = 64\\) and \\(15^2 = 225\\).\n3. Add the squares under the square root: \\(64 + 225 = 289\\).\n4. Evaluate the square root: \\(c = \\sqrt{289} = 17\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(c = \\sqrt{8^2 + 15^2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(c = \\sqrt{64 + 225}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(c = \\sqrt{289}\\)"
+            },
+            {
+              "explain": "Final answer: 17. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(17\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q12b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If \\(c = \\sqrt{a^2 + b^2}\\), find the value of \\(c\\) when \\(a = 6\\) and \\(b = 8\\).",
+          "options": [
+            "\\(12\\)",
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "Square 6 and 8, add the results, then find the square root of that sum.",
+          "solution": "1. Substitute \\(a = 6\\) and \\(b = 8\\) into the formula:\n   \\(c = \\sqrt{6^2 + 8^2}\\)\n2. Square \\(a\\) and \\(b\\): \\(6^2 = 36\\) and \\(8^2 = 64\\).\n3. Add the squares: \\(36 + 64 = 100\\).\n4. Find the square root: \\(c = \\sqrt{100} = 10\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(c = \\sqrt{6^2 + 8^2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(c = \\sqrt{36 + 64}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(c = \\sqrt{100}\\)"
+            },
+            {
+              "explain": "Final answer: 10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17a-q12c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If \\(c = \\sqrt{a^2 + b^2}\\), find the value of \\(c\\) when \\(a = 12\\) and \\(b = 5\\).",
+          "options": [
+            "\\(15\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Square 12 and 5, add the results, then take the square root.",
+          "solution": "1. Substitute \\(a = 12\\) and \\(b = 5\\) into the formula:\n   \\(c = \\sqrt{12^2 + 5^2}\\)\n2. Square \\(a\\) and \\(b\\): \\(12^2 = 144\\) and \\(5^2 = 25\\).\n3. Add the squares: \\(144 + 25 = 169\\).\n4. Find the square root: \\(c = \\sqrt{169} = 13\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(c = \\sqrt{12^2 + 5^2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(c = \\sqrt{144 + 25}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(c = \\sqrt{169}\\)"
+            },
+            {
+              "explain": "Final answer: 13. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(13\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-17b",
+      "code": "17B",
+      "title": "Expansion and factorisation",
+      "questions": [
+        {
+          "id": "y8-ep1-q4_algebra",
+          "type": "mc",
+          "stem": "Fully factorise the expression:<br><br>\\(12ab^2 + 3b\\)",
+          "options": [
+            "\\(3(4ab^2 + b)\\)",
+            "\\(3b(4ab)\\)",
+            "\\(3b(4ab + 1)\\)",
+            "\\(b(12ab + 3)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) of both terms.",
+          "steps": [
+            {
+              "explain": "Find the highest common factor (HCF) of the numbers 12 and 3.",
+              "work": "\\(\\text{HCF}(12, 3) = 3\\)"
+            },
+            {
+              "explain": "Find the highest common factor of the variables \\(ab^2\\) and \\(b\\).",
+              "work": "\\(\\text{HCF}(ab^2, b) = b\\)"
+            },
+            {
+              "explain": "The overall HCF is \\(3b\\). Pull \\(3b\\) out to the front of the brackets.",
+              "work": "\\(3b( ... + ... )\\)"
+            },
+            {
+              "explain": "Divide each term by \\(3b\\) to find what goes inside.",
+              "work": "\\(12ab^2 \\div 3b = 4ab\\)<br>\\(3b \\div 3b = 1\\)"
+            },
+            {
+              "explain": "Write the final factorised expression.",
+              "work": "\\(3b(4ab + 1)\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-17e",
+      "code": "17E",
+      "title": "Review",
+      "questions": [
+        {
+          "id": "y8-17e-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of this expression for \\(a = -3\\).\n\n\\(12 + 3a\\)",
+          "options": [
+            "\\(3\\)",
+            "\\(21\\)",
+            "\\(-45\\)",
+            "\\(15\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(a = -3\\) into the expression and evaluate.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "State the expression and the value to be substituted.",
+              "work": "\\(12 + 3a\\) \\\\ \\text{Substitute } a = -3"
+            },
+            {
+              "explain": "Replace \\(a\\) with \\(-3\\) in the expression. Always use brackets when substituting negative numbers.",
+              "work": "\\(12 + 3(-3)\\)"
+            },
+            {
+              "explain": "Perform the multiplication first (Order of Operations: BODMAS/PEMDAS).",
+              "work": "\\(12 - 9\\)"
+            },
+            {
+              "explain": "Finally, perform the subtraction to find the answer.",
+              "work": "\\(3\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of this expression for \\(a = -3\\).\n\n\\(8 - 4a\\)",
+          "options": [
+            "\\(20\\)",
+            "\\(-4\\)",
+            "\\(-20\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(a = -3\\) into the expression and evaluate.",
+          "solution": "\\(8 - 4(-3) = 8 + 12 = 20\\)",
+          "steps": [
+            {
+              "explain": "State the expression and the value to be substituted.",
+              "work": "8 - 4a \\\\ \\text{Substitute } a = -3"
+            },
+            {
+              "explain": "Replace \\(a\\) with \\(-3\\) in the expression. Be careful with double negatives.",
+              "work": "8 - 4(-3)"
+            },
+            {
+              "explain": "Multiply \\(-4\\) by \\(-3\\). A negative times a negative gives a positive result.",
+              "work": "8 + 12"
+            },
+            {
+              "explain": "Add the terms together.",
+              "work": "20"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of this expression for \\(a = -3\\).\n\n\\(85 + a^2\\)",
+          "options": [
+            "\\(94\\)",
+            "\\(76\\)",
+            "\\(79\\)",
+            "\\(91\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(a = -3\\) into the expression and evaluate.",
+          "solution": "\\(85 + (-3)^2 = 85 + 9 = 94\\)",
+          "steps": [
+            {
+              "explain": "State the expression and the value to be substituted.",
+              "work": "85 + a^2 \\\\ \\text{Substitute } a = -3"
+            },
+            {
+              "explain": "Replace \\(a\\) with \\(-3\\) in the expression. Remember to place the negative number in brackets before squaring.",
+              "work": "85 + (-3)^2"
+            },
+            {
+              "explain": "Square the negative number. \\((-3) \\times (-3)\\) gives a positive result.",
+              "work": "85 + 9"
+            },
+            {
+              "explain": "Add the terms together to find the final value.",
+              "work": "94"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given that \\(y = 4x - 3\\), find the value of \\(y\\) when \\(x = 6\\).",
+          "figure": {
+            "jsxGraph": {
+              "width": 360,
+              "height": 280,
+              "boundingbox": [
+                -6,
+                6,
+                6,
+                -6
+              ],
+              "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-3); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 4x-3'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+            }
+          },
+          "options": [
+            "\\(21\\)",
+            "\\(27\\)",
+            "\\(12\\)",
+            "\\(7\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(x = 6\\) into the equation and solve for \\(y\\).",
+          "solution": "\\(y = 4(6) - 3 = 24 - 3 = 21\\)",
+          "steps": [
+            {
+              "explain": "State the equation and the value to be substituted.",
+              "work": "y = 4x - 3 \\\\ \\text{Substitute } x = 6"
+            },
+            {
+              "explain": "Replace \\(x\\) with \\(6\\) in the equation. Remember that \\(4x\\) means \\(4 \\times x\\).",
+              "work": "y = 4(6) - 3"
+            },
+            {
+              "explain": "Perform the multiplication first (BODMAS/PEMDAS).",
+              "work": "y = 24 - 3"
+            },
+            {
+              "explain": "Subtract to find the final value of \\(y\\).",
+              "work": "y = 21"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given that \\(v = u + at\\), find the value of \\(v\\) when \\(u = 5\\), \\(t = 10\\) and \\(a = 4\\).",
+          "options": [
+            "\\(45\\)",
+            "\\(90\\)",
+            "\\(24\\)",
+            "\\(19\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and evaluate.",
+          "solution": "\\(v = 5 + (4)(10) = 5 + 40 = 45\\)",
+          "steps": [
+            {
+              "explain": "State the equation and the values to be substituted.",
+              "work": "v = u + at \\\\ \\text{Substitute } u = 5, t = 10, a = 4"
+            },
+            {
+              "explain": "Replace the variables with their given values. Remember that \\(at\\) means \\(a \\times t\\).",
+              "work": "v = 5 + (4)(10)"
+            },
+            {
+              "explain": "Perform the multiplication first (BODMAS/PEMDAS).",
+              "work": "v = 5 + 40"
+            },
+            {
+              "explain": "Add the terms together to find the final value.",
+              "work": "v = 45"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given that \\(v = u + at\\), find the value of \\(a\\) when \\(v = 25\\), \\(u = 5\\) and \\(t = 5\\).",
+          "options": [
+            "\\(4\\)",
+            "\\(-4\\)",
+            "\\(6\\)",
+            "\\(20\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve the equation for \\(a\\).",
+          "solution": "\\(25 = 5 + a(5) \\Rightarrow 20 = 5a \\Rightarrow a = 4\\)",
+          "steps": [
+            {
+              "explain": "State the equation and the values to be substituted.",
+              "work": "v = u + at \\\\ \\text{Substitute } v = 25, u = 5, t = 5"
+            },
+            {
+              "explain": "Replace the variables with their given values. Write \\(at\\) as \\(5a\\).",
+              "work": "25 = 5 + 5a"
+            },
+            {
+              "explain": "To isolate \\(5a\\), subtract 5 from both sides of the equation.",
+              "work": "25 - 5 = 5a"
+            },
+            {
+              "explain": "Simplify the subtraction.",
+              "work": "20 = 5a"
+            },
+            {
+              "explain": "Divide both sides by 5 to solve for \\(a\\).",
+              "work": "a = \\frac{20}{5}"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "a = 4"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given that \\(v = u + at\\), find the value of \\(t\\) when \\(v = 10\\), \\(u = 20\\) and \\(a = -2\\).",
+          "options": [
+            "\\(5\\)",
+            "\\(-5\\)",
+            "\\(15\\)",
+            "\\(-15\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve the equation for \\(t\\).",
+          "solution": "\\(10 = 20 + (-2)t \\Rightarrow 10 = 20 - 2t \\Rightarrow -10 = -2t \\Rightarrow t = 5\\)",
+          "steps": [
+            {
+              "explain": "State the equation and the values to be substituted.",
+              "work": "v = u + at \\\\ \\text{Substitute } v = 10, u = 20, a = -2"
+            },
+            {
+              "explain": "Replace the variables with their given values.",
+              "work": "10 = 20 + (-2)t"
+            },
+            {
+              "explain": "Simplify the expression by writing \\(+ (-2)t\\) as \\(- 2t\\).",
+              "work": "10 = 20 - 2t"
+            },
+            {
+              "explain": "Subtract 20 from both sides to isolate the term with \\(t\\).",
+              "work": "10 - 20 = -2t"
+            },
+            {
+              "explain": "Simplify the subtraction on the left side.",
+              "work": "-10 = -2t"
+            },
+            {
+              "explain": "Divide both sides by \\(-2\\). A negative divided by a negative gives a positive result.",
+              "work": "t = \\frac{-10}{-2}"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "t = 5"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangle is 5 m longer than it is wide. Let the width be \\(w\\) metres.\n\nWrite an expression in terms of \\(w\\) for the length, \\(l\\), of the rectangle.",
+          "options": [
+            "\\(w + 5\\)",
+            "\\(w - 5\\)",
+            "\\(5w\\)",
+            "\\(w + 2\\)"
+          ],
+          "answer": 0,
+          "hint": "If it is 5 m longer, add 5 to the width.",
+          "solution": "The length is 5 m longer than the width \\(w\\), so \\(l = w + 5\\).",
+          "steps": [
+            {
+              "explain": "Identify the width from the problem description.",
+              "work": "\\text{Width } = w"
+            },
+            {
+              "explain": "State the relationship between length and width based on the problem description.",
+              "work": "\\text{Length is } 5 \\text{ m longer than width.}"
+            },
+            {
+              "explain": "Write the expression for the length, \\(l\\).",
+              "work": "l = w + 5"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangle is 5 m longer than it is wide. Let the width be \\(w\\) metres.\n\nWrite an expression in terms of \\(w\\) for the perimeter, \\(P\\), of the rectangle. Expand and simplify your expression.",
+          "options": [
+            "\\(4w + 10\\)",
+            "\\(2w + 5\\)",
+            "\\(2w + 10\\)",
+            "\\(w^2 + 5w\\)"
+          ],
+          "answer": 0,
+          "hint": "The perimeter is twice the width plus twice the length.",
+          "solution": "\\(P = 2l + 2w\\)\nSubstitute \\(l = w + 5\\):\n\\(P = 2(w + 5) + 2w\\)\n\\(P = 2w + 10 + 2w = 4w + 10\\)",
+          "steps": [
+            {
+              "explain": "State the formula for the perimeter of a rectangle in terms of length and width.",
+              "work": "P = 2(l + w) \\text{ or } P = 2l + 2w"
+            },
+            {
+              "explain": "Substitute the expressions for length (\\(w + 5\\)) and width (\\(w\\)).",
+              "work": "P = 2((w + 5) + w)"
+            },
+            {
+              "explain": "Combine like terms inside the brackets.",
+              "work": "P = 2(2w + 5)"
+            },
+            {
+              "explain": "Expand the brackets by multiplying by 2.",
+              "work": "P = 4w + 10"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangle is 5 m longer than it is wide. Let the width be \\(w\\) metres. The expression for its perimeter is \\(P = 4w + 10\\).\n\nFind \\(P\\) when \\(w = 4\\).",
+          "options": [
+            "\\(26\\)",
+            "\\(20\\)",
+            "\\(18\\)",
+            "\\(56\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(w = 4\\) into the expression for perimeter.",
+          "solution": "Substitute \\(w = 4\\) into \\(P = 4w + 10\\):\n\\(P = 4(4) + 10 = 16 + 10 = 26\\)",
+          "steps": [
+            {
+              "explain": "State the expression for perimeter and the value to be substituted.",
+              "work": "P = 4w + 10 \\\\ \\text{Substitute } w = 4"
+            },
+            {
+              "explain": "Replace \\(w\\) with \\(4\\).",
+              "work": "P = 4(4) + 10"
+            },
+            {
+              "explain": "Multiply first.",
+              "work": "P = 16 + 10"
+            },
+            {
+              "explain": "Add to find the final perimeter.",
+              "work": "P = 26"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangle is 5 m longer than it is wide. Let the width be \\(w\\) metres. The expression for its length is \\(l = w + 5\\).\n\nFind \\(l\\) when \\(w = 4\\).",
+          "options": [
+            "\\(9\\)",
+            "\\(20\\)",
+            "\\(-1\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(w = 4\\) into the expression for length.",
+          "solution": "Substitute \\(w = 4\\) into \\(l = w + 5\\):\n\\(l = 4 + 5 = 9\\)",
+          "steps": [
+            {
+              "explain": "State the expression for length and the value to be substituted.",
+              "work": "l = w + 5 \\\\ \\text{Substitute } w = 4"
+            },
+            {
+              "explain": "Replace \\(w\\) with \\(4\\).",
+              "work": "l = 4 + 5"
+            },
+            {
+              "explain": "Add the values to find the length.",
+              "work": "l = 9"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q4e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangle is 5 m longer than it is wide. Let the width be \\(w\\) metres.\n\nWrite an expression for the area, \\(A\\), of the rectangle in terms of \\(w\\). Do not expand the brackets.",
+          "options": [
+            "\\(w(w + 5)\\)",
+            "\\(w(w - 5)\\)",
+            "\\(w + (w + 5)\\)",
+            "\\(2w(w + 5)\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the width by the length.",
+          "solution": "The area is width \\(\\times\\) length.\n\\(A = w \\times (w + 5) = w(w + 5)\\)",
+          "steps": [
+            {
+              "explain": "State the formula for the area of a rectangle.",
+              "work": "A = \\text{length} \\times \\text{width}"
+            },
+            {
+              "explain": "Identify the expressions for width and length.",
+              "work": "\\text{Width} = w \\\\ \\text{Length} = w + 5"
+            },
+            {
+              "explain": "Multiply the expressions together. Use brackets for the length expression.",
+              "work": "A = w(w + 5)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q4f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangle is 5 m longer than it is wide. Let the width be \\(w\\) metres. The expression for its area is \\(A = w(w + 5)\\).\n\nFind \\(A\\) when \\(w = 2\\).",
+          "options": [
+            "\\(14\\)",
+            "\\(9\\)",
+            "\\(20\\)",
+            "\\(12\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(w = 2\\) into the area formula.",
+          "solution": "Substitute \\(w = 2\\) into \\(A = w(w + 5)\\):\n\\(A = 2(2 + 5) = 2(7) = 14\\)",
+          "steps": [
+            {
+              "explain": "State the expression for area and the value to be substituted.",
+              "work": "A = w(w + 5) \\\\ \\text{Substitute } w = 2"
+            },
+            {
+              "explain": "Replace \\(w\\) with \\(2\\).",
+              "work": "A = 2(2 + 5)"
+            },
+            {
+              "explain": "Evaluate the expression inside the brackets first.",
+              "work": "A = 2(7)"
+            },
+            {
+              "explain": "Multiply to find the area.",
+              "work": "A = 14"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q4g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangle is 5 m longer than it is wide. Let the width be \\(w\\) metres. The expression for its perimeter is \\(P = 4w + 10\\).\n\nFind \\(w\\) when \\(P = 34\\).",
+          "options": [
+            "\\(6\\)",
+            "\\(11\\)",
+            "\\(24\\)",
+            "\\(8.5\\)"
+          ],
+          "answer": 0,
+          "hint": "Set up an equation and solve for \\(w\\).",
+          "solution": "Substitute \\(P = 34\\) into the perimeter equation and solve for \\(w\\):\n\\(34 = 4w + 10\\)\n\\(24 = 4w\\)\n\\(w = 6\\)",
+          "steps": [
+            {
+              "explain": "State the expression for perimeter and the value to be substituted.",
+              "work": "P = 4w + 10 \\\\ \\text{Substitute } P = 34"
+            },
+            {
+              "explain": "Replace \\(P\\) with \\(34\\).",
+              "work": "34 = 4w + 10"
+            },
+            {
+              "explain": "Subtract 10 from both sides to isolate the term with \\(w\\).",
+              "work": "24 = 4w"
+            },
+            {
+              "explain": "Divide both sides by 4 to solve for \\(w\\).",
+              "work": "w = 6"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q4h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangle is 5 m longer than it is wide. Let the width be \\(w\\) metres. The expression for its area is \\(A = w(w + 5)\\).\n\nFind \\(w\\) when \\(A = 36\\).",
+          "options": [
+            "\\(4\\)",
+            "\\(9\\)",
+            "\\(6\\)",
+            "\\(-9\\)"
+          ],
+          "answer": 0,
+          "hint": "Think of two numbers that have a difference of 5 and multiply to 36.",
+          "solution": "Substitute \\(A = 36\\) into the area equation:\n\\(w(w + 5) = 36\\)\nBy inspection, \\(4 \\times 9 = 36\\), so \\(w = 4\\).",
+          "steps": [
+            {
+              "explain": "State the expression for area and the value to be substituted.",
+              "work": "A = w(w + 5) \\\\ \\text{Substitute } A = 36"
+            },
+            {
+              "explain": "Replace \\(A\\) with \\(36\\).",
+              "work": "36 = w(w + 5)"
+            },
+            {
+              "explain": "Expand the brackets.",
+              "work": "36 = w^2 + 5w"
+            },
+            {
+              "explain": "Rearrange into a quadratic equation set to zero.",
+              "work": "w^2 + 5w - 36 = 0"
+            },
+            {
+              "explain": "Factorise by finding two numbers that multiply to -36 and add to 5. These are 9 and -4.",
+              "work": "(w + 9)(w - 4) = 0"
+            },
+            {
+              "explain": "Solve for \\(w\\). Since a width cannot be negative, we discard \\(w = -9\\).",
+              "work": "w = 4"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the highest common factor of this pair of terms:\n\n\\(12, 6\\)",
+          "options": [
+            "\\(6\\)",
+            "\\(12\\)",
+            "\\(2\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "What is the largest number that goes into both?",
+          "solution": "The highest number that divides evenly into both 12 and 6 is 6.",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the numbers 12 and 6.",
+              "work": "\\text{Factors of 12: } 1, 2, 3, 4, 6, 12 \\\\ \\text{Factors of 6: } 1, 2, 3, 6 \\\\ \\text{The highest common number is 6.}"
+            },
+            {
+              "explain": "State the final HCF.",
+              "work": "6"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the highest common factor of this pair of terms:\n\n\\(3x, 3y\\)",
+          "options": [
+            "\\(3\\)",
+            "\\(3xy\\)",
+            "\\(1\\)",
+            "\\(9\\)"
+          ],
+          "answer": 0,
+          "hint": "What parts are the same in both terms?",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Find the HCF of the numbers 3 and 3.",
+              "work": "\\text{The highest common number is 3.}"
+            },
+            {
+              "explain": "Look for any common variables between \\(x\\) and \\(y\\). Since they are different letters, they share no common variable factors.",
+              "work": "\\text{No common variables.}"
+            },
+            {
+              "explain": "Combine the results to state the final HCF.",
+              "work": "3"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the highest common factor of this pair of terms:\n\n\\(15x, 35x\\)",
+          "options": [
+            "\\(5x\\)",
+            "\\(5\\)",
+            "\\(x\\)",
+            "\\(15x\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the HCF of the numbers, then look for common variables.",
+          "solution": "The HCF of 15 and 35 is 5.\nThe highest common power of \\(x\\) is \\(x\\).\nSo the HCF is \\(5x\\).",
+          "steps": [
+            {
+              "explain": "Find the HCF of the numbers 15 and 35.",
+              "work": "\\text{Factors of 15: } 1, 3, 5, 15 \\\\ \\text{Factors of 35: } 1, 5, 7, 35 \\\\ \\text{The highest common number is 5.}"
+            },
+            {
+              "explain": "Find the common variables. Both terms have the variable \\(x\\). The lowest power of \\(x\\) present is \\(x^1\\) (or just \\(x\\)).",
+              "work": "\\text{Common variable: } x"
+            },
+            {
+              "explain": "Multiply the numerical HCF by the variable HCF.",
+              "work": "5x"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q5d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the highest common factor of this pair of terms:\n\n\\(13y, 39y^2\\)",
+          "options": [
+            "\\(13y\\)",
+            "\\(13y^2\\)",
+            "\\(3y\\)",
+            "\\(13\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the HCF of the numbers, then look for the lowest power of common variables.",
+          "solution": "The HCF of 13 and 39 is 13.\nThe common variable is \\(y\\).\nSo the HCF is \\(13y\\).",
+          "steps": [
+            {
+              "explain": "Find the HCF of the numbers 13 and 39.",
+              "work": "\\text{13 is a prime number, and } 13 \\times 3 = 39. \\text{ Therefore, the HCF is 13.}"
+            },
+            {
+              "explain": "Find the common variables. Both terms have the variable \\(y\\). The lowest power present is \\(y^1\\).",
+              "work": "\\text{Common variable: } y"
+            },
+            {
+              "explain": "State the final HCF.",
+              "work": "13y"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q5e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the highest common factor of this pair of terms:\n\n\\(24ab^2, 8ab\\)",
+          "options": [
+            "\\(8ab\\)",
+            "\\(8ab^2\\)",
+            "\\(4ab\\)",
+            "\\(24ab\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the HCF of the numbers, then look for the lowest power of common variables.",
+          "solution": "The HCF of 24 and 8 is 8.\nThe common variables with lowest powers are \\(a\\) and \\(b\\).\nSo the HCF is \\(8ab\\).",
+          "steps": [
+            {
+              "explain": "Find the HCF of the numbers 24 and 8.",
+              "work": "\\text{Since 8 divides evenly into 24 } (8 \\times 3 = 24), \\text{ the HCF is 8.}"
+            },
+            {
+              "explain": "Find the common variables. Both terms have \\(a\\) and \\(b\\). The lowest powers present are \\(a^1\\) and \\(b^1\\).",
+              "work": "\\text{Common variables: } ab"
+            },
+            {
+              "explain": "State the final HCF.",
+              "work": "8ab"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q5f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the highest common factor of this pair of terms:\n\n\\(14x^2y, 21yx^2\\)",
+          "options": [
+            "\\(7x^2y\\)",
+            "\\(7xy\\)",
+            "\\(14x^2y\\)",
+            "\\(7x^3y\\)"
+          ],
+          "answer": 0,
+          "hint": "Note that \\(x^2y\\) is the same as \\(yx^2\\).",
+          "solution": "The HCF of 14 and 21 is 7.\nBoth terms have \\(x^2\\) and \\(y\\) as common variables.\nSo the HCF is \\(7x^2y\\).",
+          "steps": [
+            {
+              "explain": "Find the HCF of the numbers 14 and 21.",
+              "work": "\\text{Factors of 14: } 1, 2, 7, 14 \\\\ \\text{Factors of 21: } 1, 3, 7, 21 \\\\ \\text{The highest common number is 7.}"
+            },
+            {
+              "explain": "Find the common variables. Both terms contain \\(x\\) and \\(y\\). The lowest powers present are \\(x^2\\) and \\(y^1\\).",
+              "work": "\\text{Common variables: } x^2y"
+            },
+            {
+              "explain": "State the final HCF.",
+              "work": "7x^2y"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q5g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the highest common factor of this pair of terms:\n\n\\(36a^2b^2, 12a^2b\\)",
+          "options": [
+            "\\(12a^2b\\)",
+            "\\(12a^2b^2\\)",
+            "\\(6a^2b\\)",
+            "\\(36a^2b\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the HCF of the numbers, then look for the lowest power of common variables.",
+          "solution": "The HCF of 36 and 12 is 12.\nThe lowest powers of common variables are \\(a^2\\) and \\(b\\).\nSo the HCF is \\(12a^2b\\).",
+          "steps": [
+            {
+              "explain": "Find the HCF of the numbers 36 and 12.",
+              "work": "\\text{Since 12 divides evenly into 36, the HCF is 12.}"
+            },
+            {
+              "explain": "Find the common variables. Both terms contain \\(a\\) and \\(b\\). The lowest power for \\(a\\) is \\(a^2\\), and the lowest power for \\(b\\) is \\(b^1\\).",
+              "work": "\\text{Common variables: } a^2b"
+            },
+            {
+              "explain": "State the final HCF.",
+              "work": "12a^2b"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q5h",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Find the highest common factor of this pair of terms:\n\n\\(7a^3, 5b^2\\)",
+          "answer": "1",
+          "hint": "Is there anything common other than 1?",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Find the HCF of the numbers 7 and 5.",
+              "work": "\\text{Both 7 and 5 are prime numbers, so they share no common factors other than 1.}"
+            },
+            {
+              "explain": "Find the common variables. The terms have \\(a^3\\) and \\(b^2\\). Since they are different letters, there are no common variables.",
+              "work": "\\text{No common variables.}"
+            },
+            {
+              "explain": "Since there are no common factors greater than 1, the HCF is simply 1.",
+              "work": "1"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-17e-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(4y + 8\\)",
+          "options": [
+            "\\(4(y + 2)\\)",
+            "\\(2(2y + 4)\\)",
+            "\\(4(y + 8)\\)",
+            "\\(4(y - 2)\\)"
+          ],
+          "answer": 0,
+          "hint": "What is the largest number that divides evenly into both terms?",
+          "solution": "The highest common factor is 4.\n\\(4(y) + 4(2) = 4(y + 2)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(4y\\) and \\(8\\).",
+              "work": "\\text{The HCF of 4 and 8 is 4.}"
+            },
+            {
+              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
+              "work": "4y + 8 = 4(y) + 4(2)"
+            },
+            {
+              "explain": "Factor out the common 4 and place it in front of a single set of brackets.",
+              "work": "4(y + 2)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(7m - 42\\)",
+          "options": [
+            "\\(7(m - 6)\\)",
+            "\\(7(m + 6)\\)",
+            "\\(7(m - 42)\\)",
+            "\\(m(7 - 6)\\)"
+          ],
+          "answer": 0,
+          "hint": "What is the largest number that divides evenly into both terms?",
+          "solution": "The highest common factor is 7.\n\\(7(m) - 7(6) = 7(m - 6)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(7m\\) and \\(-42\\).",
+              "work": "\\text{The HCF of 7 and 42 is 7.}"
+            },
+            {
+              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
+              "work": "7m - 42 = 7(m) - 7(6)"
+            },
+            {
+              "explain": "Factor out the common 7.",
+              "work": "7(m - 6)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(-3 + 33p\\)",
+          "options": [
+            "\\(3(11p - 1)\\)",
+            "\\(-3(11p - 1)\\)",
+            "\\(3(11p + 1)\\)",
+            "\\(33(p - 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the HCF of the numbers and place it outside the brackets.",
+          "solution": "The highest common factor is 3.\n\\(3(-1) + 3(11p) = 3(-1 + 11p) = 3(11p - 1)\\)\nAlternatively, taking out -3:\n\\(-3(1 - 11p)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(-3\\) and \\(33p\\).",
+              "work": "\\text{The HCF of 3 and 33 is 3.}"
+            },
+            {
+              "explain": "Rewrite each term as a product of the HCF (3) and the remaining factor.",
+              "work": "-3 + 33p = 3(-1) + 3(11p)"
+            },
+            {
+              "explain": "Factor out the common 3.",
+              "work": "3(-1 + 11p) \\text{ or } 3(11p - 1)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(60y + 6\\)",
+          "options": [
+            "\\(6(10y + 1)\\)",
+            "\\(6(10y)\\)",
+            "\\(10(6y + 1)\\)",
+            "\\(6(10y + 6)\\)"
+          ],
+          "answer": 0,
+          "hint": "Remember that \\(6 \\div 6 = 1\\).",
+          "solution": "The highest common factor is 6.\n\\(6(10y) + 6(1) = 6(10y + 1)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(60y\\) and \\(6\\).",
+              "work": "\\text{The HCF of 60 and 6 is 6.}"
+            },
+            {
+              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
+              "work": "60y + 6 = 6(10y) + 6(1)"
+            },
+            {
+              "explain": "Factor out the common 6. Do not forget the '+ 1' from the second term!",
+              "work": "6(10y + 1)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q6e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(-15z + 45\\)",
+          "options": [
+            "\\(-15(z - 3)\\)",
+            "\\(-15(z + 3)\\)",
+            "\\(15(z - 3)\\)",
+            "\\(-5(3z - 9)\\)"
+          ],
+          "answer": 0,
+          "hint": "You can factorise by taking a negative factor out.",
+          "solution": "Taking -15 as the common factor:\n\\(-15(z) - 15(-3) = -15(z - 3)\\)\nAlternatively, taking 15:\n\\(15(-z + 3)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(-15z\\) and \\(45\\). We can take out a negative factor since the leading term is negative.",
+              "work": "\\text{Take out } -15 \\text{ as the common factor.}"
+            },
+            {
+              "explain": "Rewrite each term as a product of -15 and the remaining factor. Be careful with signs: \\(45 = -15 \\times -3\\).",
+              "work": "-15z + 45 = -15(z) - 15(-3)"
+            },
+            {
+              "explain": "Factor out the common -15.",
+              "work": "-15(z - 3)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q6f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(3x^2 - x\\)",
+          "options": [
+            "\\(x(3x - 1)\\)",
+            "\\(x(3x)\\)",
+            "\\(x(3x + 1)\\)",
+            "\\(3x(x - 1)\\)"
+          ],
+          "answer": 0,
+          "hint": "What variable is in both terms?",
+          "solution": "The common factor is \\(x\\).\n\\(x(3x) - x(1) = x(3x - 1)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(3x^2\\) and \\(-x\\).",
+              "work": "\\text{The common variable is } x."
+            },
+            {
+              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
+              "work": "3x^2 - x = x(3x) - x(1)"
+            },
+            {
+              "explain": "Factor out the common \\(x\\). Remember the '- 1' from the second term.",
+              "work": "x(3x - 1)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q6g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(15y^2 + 5\\)",
+          "options": [
+            "\\(5(3y^2 + 1)\\)",
+            "\\(5(3y^2)\\)",
+            "\\(5y(3y + 1)\\)",
+            "\\(5(10y^2 + 1)\\)"
+          ],
+          "answer": 0,
+          "hint": "What number goes into both 15 and 5?",
+          "solution": "The common factor is 5.\n\\(5(3y^2) + 5(1) = 5(3y^2 + 1)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(15y^2\\) and \\(5\\).",
+              "work": "\\text{The HCF of 15 and 5 is 5.}"
+            },
+            {
+              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
+              "work": "15y^2 + 5 = 5(3y^2) + 5(1)"
+            },
+            {
+              "explain": "Factor out the common 5.",
+              "work": "5(3y^2 + 1)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q6h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(-36x + 24x^2\\)",
+          "options": [
+            "\\(8a(9 - a)\\)",
+            "\\(8a(9 + a)\\)",
+            "\\(8(9a - a^2)\\)",
+            "\\(-8a(9 - a)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the HCF of the numbers, and the common variable.",
+          "solution": "The highest common factor is \\(12x\\).\n\\(12x(-3) + 12x(2x) = 12x(-3 + 2x) = 12x(2x - 3)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(72a\\) and \\(-8a^2\\).",
+              "work": "\\text{The HCF of 72 and 8 is 8, and the common variable is } a. \\text{ So the HCF is } 8a."
+            },
+            {
+              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
+              "work": "72a - 8a^2 = 8a(9) - 8a(a)"
+            },
+            {
+              "explain": "Factor out the common \\(8a\\).",
+              "work": "8a(9 - a)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q6i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(15ab^2 + 3ab\\)",
+          "options": [
+            "\\(-2q(p + 4)\\)",
+            "\\(-2q(p - 4)\\)",
+            "\\(2q(-p + 4)\\)",
+            "\\(-2(pq + 4q)\\)"
+          ],
+          "answer": 0,
+          "hint": "What is the highest common factor of the numbers and the variables?",
+          "solution": "The highest common factor is \\(3ab\\).\n\\(3ab(5b) + 3ab(1) = 3ab(5b + 1)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(-2pq\\) and \\(-8q\\). Both terms are negative, so we will factor out a negative HCF.",
+              "work": "\\text{The HCF of 2 and 8 is 2, and the common variable is } q. \\text{ So we take out } -2q."
+            },
+            {
+              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
+              "work": "-2pq - 8q = -2q(p) - 2q(4)"
+            },
+            {
+              "explain": "Factor out the common \\(-2q\\). Be careful with the sign inside the brackets.",
+              "work": "-2q(p + 4)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q6j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(12a + 6ab\\)",
+          "options": [
+            "\\(6a(3 + b)\\)",
+            "\\(6(3a + ab)\\)",
+            "\\(6a(3 - b)\\)",
+            "\\(3a(6 + 2b)\\)"
+          ],
+          "answer": 0,
+          "hint": "Look for the common number and common variable.",
+          "solution": "The highest common factor is \\(6a\\).\n\\(6a(2) + 6a(b) = 6a(2 + b)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(18a\\) and \\(6ab\\).",
+              "work": "\\text{The HCF of 18 and 6 is 6, and the common variable is } a. \\text{ So the HCF is } 6a."
+            },
+            {
+              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
+              "work": "18a + 6ab = 6a(3) + 6a(b)"
+            },
+            {
+              "explain": "Factor out the common \\(6a\\).",
+              "work": "6a(3 + b)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q6k",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(14xy + 7xy^2\\)",
+          "options": [
+            "\\(7xy(2 + y)\\)",
+            "\\(7xy(2)\\)",
+            "\\(7x(2y + y^2)\\)",
+            "\\(7xy(2 - y)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the common number and the common variables.",
+          "solution": "The highest common factor is \\(7xy\\).\n\\(7xy(2) + 7xy(y) = 7xy(2 + y)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(14xy\\) and \\(7xy^2\\).",
+              "work": "\\text{The HCF of 14 and 7 is 7. The common variables are } x \\text{ and } y. \\text{ So the HCF is } 7xy."
+            },
+            {
+              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
+              "work": "14xy + 7xy^2 = 7xy(2) + 7xy(y)"
+            },
+            {
+              "explain": "Factor out the common \\(7xy\\).",
+              "work": "7xy(2 + y)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q6l",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise by taking the highest common factor:\n\n\\(30mnp - 6m^2p\\)",
+          "options": [
+            "\\(6mp(5n - m)\\)",
+            "\\(6mp(5n + m)\\)",
+            "\\(6m(5np - mp)\\)",
+            "\\(6p(5mn - m^2)\\)"
+          ],
+          "answer": 0,
+          "hint": "What is the largest number and which variables are common?",
+          "solution": "The highest common factor is \\(6mp\\).\n\\(6mp(5n) - 6mp(m) = 6mp(5n - m)\\)",
+          "steps": [
+            {
+              "explain": "Identify the Highest Common Factor (HCF) of the terms \\(30mnp\\) and \\(-6m^2p\\).",
+              "work": "\\text{The HCF of 30 and 6 is 6. The common variables are } m \\text{ and } p. \\text{ So the HCF is } 6mp."
+            },
+            {
+              "explain": "Rewrite each term as a product of the HCF and the remaining factor.",
+              "work": "30mnp - 6m^2p = 6mp(5n) - 6mp(m)"
+            },
+            {
+              "explain": "Factor out the common \\(6mp\\).",
+              "work": "6mp(5n - m)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\(3(m + 4)\\)",
+          "options": [
+            "\\(3m + 12\\)",
+            "\\(3m + 4\\)",
+            "\\(7m\\)",
+            "\\(3m - 12\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the term outside the bracket by each term inside.",
+          "solution": "\\(3(m) + 3(4) = 3m + 12\\)",
+          "steps": [
+            {
+              "explain": "Use the distributive law to expand the brackets. Multiply the number outside the brackets by each term inside.",
+              "work": "3(m + 4)"
+            },
+            {
+              "explain": "Multiply 3 by \\(m\\), and multiply 3 by 4.",
+              "work": "3(m) + 3(4)"
+            },
+            {
+              "explain": "Simplify the expression to get the final answer.",
+              "work": "3m + 12"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\(-3(2x - 5)\\)",
+          "options": [
+            "\\(-6x + 15\\)",
+            "\\(-6x - 15\\)",
+            "\\(-6x - 5\\)",
+            "\\(6x + 15\\)"
+          ],
+          "answer": 0,
+          "hint": "Be careful with the negative signs.",
+          "solution": "\\(-3(2x) - 3(-5) = -6x + 15\\)",
+          "steps": [
+            {
+              "explain": "Use the distributive law to expand the brackets. We must distribute the negative number \\(-3\\) across both terms.",
+              "work": "-3(2x - 5)"
+            },
+            {
+              "explain": "Multiply \\(-3\\) by \\(2x\\), and multiply \\(-3\\) by \\(-5\\).",
+              "work": "-3(2x) - 3(-5)"
+            },
+            {
+              "explain": "Simplify. A negative times a negative gives a positive.",
+              "work": "-6x + 15"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\(-5(2x - 3)\\)",
+          "options": [
+            "\\(-10x + 15\\)",
+            "\\(-10x - 15\\)",
+            "\\(-10x - 3\\)",
+            "\\(10x - 15\\)"
+          ],
+          "answer": 0,
+          "hint": "Be careful with the negative signs.",
+          "solution": "\\(-5(2x) - 5(-3) = -10x + 15\\)",
+          "steps": [
+            {
+              "explain": "Use the distributive law to expand the brackets. We must distribute \\(-5\\) across both terms.",
+              "work": "-5(2x - 3)"
+            },
+            {
+              "explain": "Multiply \\(-5\\) by \\(2x\\), and multiply \\(-5\\) by \\(-3\\).",
+              "work": "-5(2x) - 5(-3)"
+            },
+            {
+              "explain": "Simplify. A negative times a negative gives a positive.",
+              "work": "-10x + 15"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\((4x + 3)(x - 2)\\)",
+          "options": [
+            "\\(4x^2 - 5x - 6\\)",
+            "\\(4x^2 - 11x - 6\\)",
+            "\\(4x^2 + 5x - 6\\)",
+            "\\(4x^2 - 6\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply every term in the first bracket by every term in the second bracket.",
+          "solution": "Use the FOIL method (First, Outer, Inner, Last):\n\\(= 4x(x) + 4x(-2) + 3(x) + 3(-2)\\)\n\\(= 4x^2 - 8x + 3x - 6\\)\n\\(= 4x^2 - 5x - 6\\)",
+          "steps": [
+            {
+              "explain": "Expand the binomials using the FOIL method (First, Outer, Inner, Last).",
+              "work": "(4x + 3)(x - 2)"
+            },
+            {
+              "explain": "Multiply the corresponding terms together.",
+              "work": "= 4x(x) + 4x(-2) + 3(x) + 3(-2)"
+            },
+            {
+              "explain": "Simplify each multiplication.",
+              "work": "= 4x^2 - 8x + 3x - 6"
+            },
+            {
+              "explain": "Collect the like terms in the middle (\\(-8x + 3x\\)) to get the final answer.",
+              "work": "= 4x^2 - 5x - 6"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q7e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\(a(a^2 + 4)\\)",
+          "options": [
+            "\\(a^3 + 4a\\)",
+            "\\(a^2 + 4a\\)",
+            "\\(a^3 + 4\\)",
+            "\\(4a^3\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply \\(a\\) by each term inside the bracket.",
+          "solution": "\\(a(a^2) + a(4) = a^3 + 4a\\)",
+          "steps": [
+            {
+              "explain": "Use the distributive law to expand the brackets. We distribute \\(a\\) across both terms.",
+              "work": "a(a^2 + 4)"
+            },
+            {
+              "explain": "Multiply \\(a\\) by \\(a^2\\) (remember to add exponents: \\(a^1 \\times a^2 = a^3\\)), and multiply \\(a\\) by 4.",
+              "work": "a(a^2) + a(4)"
+            },
+            {
+              "explain": "Simplify the expression to get the final answer.",
+              "work": "a^3 + 4a"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch17e"
+          ]
+        },
+        {
+          "id": "y8-17e-q7f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\((3 - x)(3 + x)\\)",
+          "options": [
+            "\\(9 - x^2\\)",
+            "\\(9 + x^2\\)",
+            "\\(x^2 - 9\\)",
+            "\\(9 - 6x - x^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the difference of two squares rule: \\((a - b)(a + b) = a^2 - b^2\\).",
+          "solution": "This is a difference of two squares:\n\\(= 3^2 - x^2 = 9 - x^2\\)",
+          "steps": [
+            {
+              "explain": "Notice that this expansion takes the form of a 'difference of two squares': \\((a - b)(a + b) = a^2 - b^2\\).",
+              "work": "(3 - x)(3 + x)"
+            },
+            {
+              "explain": "Apply the formula directly, where \\(a = 3\\) and \\(b = x\\).",
+              "work": "= 3^2 - x^2"
+            },
+            {
+              "explain": "Evaluate the square to get the final answer.",
+              "work": "= 9 - x^2"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q7g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\((3z + 2)(3z + 5)\\)",
+          "options": [
+            "\\(9z^2 + 21z + 10\\)",
+            "\\(9z^2 + 10\\)",
+            "\\(6z^2 + 21z + 10\\)",
+            "\\(9z^2 - 21z + 10\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply every term in the first bracket by every term in the second bracket.",
+          "solution": "Use the FOIL method:\n\\(= 3z(3z) + 3z(5) + 2(3z) + 2(5)\\)\n\\(= 9z^2 + 15z + 6z + 10\\)\n\\(= 9z^2 + 21z + 10\\)",
+          "steps": [
+            {
+              "explain": "Expand the binomials using the FOIL method (First, Outer, Inner, Last).",
+              "work": "(3z + 2)(3z + 5)"
+            },
+            {
+              "explain": "Multiply the corresponding terms together.",
+              "work": "= 3z(3z) + 3z(5) + 2(3z) + 2(5)"
+            },
+            {
+              "explain": "Simplify each multiplication.",
+              "work": "= 9z^2 + 15z + 6z + 10"
+            },
+            {
+              "explain": "Collect the like terms in the middle (\\(15z + 6z\\)) to get the final answer.",
+              "work": "= 9z^2 + 21z + 10"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q7h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\((3z - 2)(3z + 2)\\)",
+          "options": [
+            "\\(9z^2 - 4\\)",
+            "\\(3z^2 - 4\\)",
+            "\\(9z^2 + 4\\)",
+            "\\(9z^2 - 12z - 4\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the difference of two squares rule: \\((a - b)(a + b) = a^2 - b^2\\).",
+          "solution": "This is a difference of two squares:\n\\(= (3z)^2 - 2^2\\)\n\\(= 9z^2 - 4\\)",
+          "steps": [
+            {
+              "explain": "Notice that this expansion takes the form of a 'difference of two squares': \\((a - b)(a + b) = a^2 - b^2\\).",
+              "work": "(3z - 2)(3z + 2)"
+            },
+            {
+              "explain": "Apply the formula directly, where \\(a = 3z\\) and \\(b = 2\\). Make sure to square both the number and the variable in \\(3z\\).",
+              "work": "= (3z)^2 - 2^2"
+            },
+            {
+              "explain": "Evaluate the squares to get the final answer.",
+              "work": "= 9z^2 - 4"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q7i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\((x + 3)^2\\)",
+          "options": [
+            "\\(x^2 + 6x + 9\\)",
+            "\\(x^2 + 9\\)",
+            "\\(x^2 + 3x + 9\\)",
+            "\\(x^2 + 6x + 6\\)"
+          ],
+          "answer": 0,
+          "hint": "Remember that \\((x + 3)^2 = (x + 3)(x + 3)\\).",
+          "solution": "Use the perfect square rule: \\((a + b)^2 = a^2 + 2ab + b^2\\).\n\\(= x^2 + 2(x)(3) + 3^2\\)\n\\(= x^2 + 6x + 9\\)",
+          "steps": [
+            {
+              "explain": "Expand the perfect square using the rule: \\((a + b)^2 = a^2 + 2ab + b^2\\).",
+              "work": "(x + 3)^2"
+            },
+            {
+              "explain": "Apply the formula directly, where \\(a = x\\) and \\(b = 3\\).",
+              "work": "= x^2 + 2(x)(3) + 3^2"
+            },
+            {
+              "explain": "Simplify each term to get the final answer.",
+              "work": "= x^2 + 6x + 9"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q7j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\((3b + 2)^2\\)",
+          "options": [
+            "\\(9b^2 + 12b + 4\\)",
+            "\\(9b^2 + 4\\)",
+            "\\(3b^2 + 12b + 4\\)",
+            "\\(9b^2 + 6b + 4\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the perfect square rule: \\((a + b)^2 = a^2 + 2ab + b^2\\).",
+          "solution": "Use the perfect square rule: \\((a + b)^2 = a^2 + 2ab + b^2\\).\n\\(= (3b)^2 + 2(3b)(2) + 2^2\\)\n\\(= 9b^2 + 12b + 4\\)",
+          "steps": [
+            {
+              "explain": "Expand the perfect square using the rule: \\((a + b)^2 = a^2 + 2ab + b^2\\).",
+              "work": "(3b + 2)^2"
+            },
+            {
+              "explain": "Apply the formula directly, where \\(a = 3b\\) and \\(b = 2\\). Make sure to square both the 3 and the \\(b\\).",
+              "work": "= (3b)^2 + 2(3b)(2) + 2^2"
+            },
+            {
+              "explain": "Simplify each term to get the final answer.",
+              "work": "= 9b^2 + 12b + 4"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q7k",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\((3s - 4)(3s + 2)\\)",
+          "options": [
+            "\\(9s^2 - 6s - 8\\)",
+            "\\(9s^2 + 6s - 8\\)",
+            "\\(9s^2 - 18s - 8\\)",
+            "\\(9s^2 - 8\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply every term in the first bracket by every term in the second bracket.",
+          "solution": "Use the FOIL method:\n\\(= 3s(3s) + 3s(2) - 4(3s) - 4(2)\\)\n\\(= 9s^2 + 6s - 12s - 8\\)\n\\(= 9s^2 - 6s - 8\\)",
+          "steps": [
+            {
+              "explain": "Expand the binomials using the FOIL method (First, Outer, Inner, Last).",
+              "work": "(3s - 4)(3s + 2)"
+            },
+            {
+              "explain": "Multiply the corresponding terms together.",
+              "work": "= 3s(3s) + 3s(2) - 4(3s) - 4(2)"
+            },
+            {
+              "explain": "Simplify each multiplication.",
+              "work": "= 9s^2 + 6s - 12s - 8"
+            },
+            {
+              "explain": "Collect the like terms in the middle (\\(6s - 12s\\)) to get the final answer.",
+              "work": "= 9s^2 - 6s - 8"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q7l",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand:\n\n\\((3a + b)(3a - 2b)\\)",
+          "options": [
+            "\\(9a^2 - 3ab - 2b^2\\)",
+            "\\(9a^2 + 3ab - 2b^2\\)",
+            "\\(9a^2 - 9ab - 2b^2\\)",
+            "\\(9a^2 - 2b^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply every term in the first bracket by every term in the second bracket.",
+          "solution": "Use the FOIL method:\n\\(= 3a(3a) + 3a(-2b) + b(3a) + b(-2b)\\)\n\\(= 9a^2 - 6ab + 3ab - 2b^2\\)\n\\(= 9a^2 - 3ab - 2b^2\\)",
+          "steps": [
+            {
+              "explain": "Expand the binomials using the FOIL method (First, Outer, Inner, Last).",
+              "work": "(3a + b)(3a - 2b)"
+            },
+            {
+              "explain": "Multiply the corresponding terms together.",
+              "work": "= 3a(3a) + 3a(-2b) + b(3a) + b(-2b)"
+            },
+            {
+              "explain": "Simplify each multiplication.",
+              "work": "= 9a^2 - 6ab + 3ab - 2b^2"
+            },
+            {
+              "explain": "Collect the like terms in the middle (\\(-6ab + 3ab\\)) to get the final answer.",
+              "work": "= 9a^2 - 3ab - 2b^2"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(x^2 + 8x + 16\\)",
+          "options": [
+            "\\((x + 4)^2\\)",
+            "\\((x + 2)(x + 8)\\)",
+            "\\((x + 16)(x + 1)\\)",
+            "\\((x - 4)^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two numbers that multiply to 16 and add to 8.",
+          "solution": "We need two numbers that multiply to 16 and add to 8. These are 4 and 4.\n\\(= (x + 4)(x + 4) = (x + 4)^2\\)",
+          "steps": [
+            {
+              "explain": "To factorise a quadratic in the form \\(x^2 + bx + c\\), we need to find two numbers that multiply to give the constant term (\\(16\\)) and add to give the \\(x\\) coefficient (\\(8\\)).",
+              "work": "\\text{Multiply to: } 16 \\\\ \\text{Add to: } 8"
+            },
+            {
+              "explain": "List the factor pairs of 16 and find the one that adds to 8.",
+              "work": "\\text{Factors of 16: } (1, 16), (2, 8), (4, 4) \\\\ \\text{The pair that adds to 8 is } 4 \\text{ and } 4."
+            },
+            {
+              "explain": "Write the factorised expression using these two numbers. Since both numbers are the same, we can write it as a perfect square.",
+              "work": "(x + 4)(x + 4) = (x + 4)^2"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(a^2 + 6a + 9\\)",
+          "options": [
+            "\\((a + 3)^2\\)",
+            "\\((a + 9)(a + 1)\\)",
+            "\\((a - 3)^2\\)",
+            "\\((a + 6)(a + 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two numbers that multiply to 9 and add to 6.",
+          "solution": "We need two numbers that multiply to 9 and add to 6. These are 3 and 3.\n\\(= (a + 3)(a + 3) = (a + 3)^2\\)",
+          "steps": [
+            {
+              "explain": "To factorise \\(a^2 + 6a + 9\\), find two numbers that multiply to \\(9\\) and add to \\(6\\).",
+              "work": "\\text{Multiply to: } 9 \\\\ \\text{Add to: } 6"
+            },
+            {
+              "explain": "List the factor pairs of 9.",
+              "work": "\\text{Factors of 9: } (1, 9), (3, 3) \\\\ \\text{The pair that adds to 6 is } 3 \\text{ and } 3."
+            },
+            {
+              "explain": "Write the factorised expression. Since both numbers are the same, we can write it as a perfect square.",
+              "work": "(a + 3)(a + 3) = (a + 3)^2"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(x^2 - 8x + 15\\)",
+          "options": [
+            "\\((x - 3)(x - 5)\\)",
+            "\\((x + 3)(x + 5)\\)",
+            "\\((x - 15)(x - 1)\\)",
+            "\\((x + 3)(x - 5)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two negative numbers that multiply to 15.",
+          "solution": "We need two numbers that multiply to 15 and add to -8. These are -3 and -5.\n\\(= (x - 3)(x - 5)\\)",
+          "steps": [
+            {
+              "explain": "To factorise \\(x^2 - 8x + 15\\), find two numbers that multiply to \\(15\\) and add to \\(-8\\). Since they multiply to a positive number but add to a negative, both numbers must be negative.",
+              "work": "\\text{Multiply to: } 15 \\\\ \\text{Add to: } -8"
+            },
+            {
+              "explain": "List the negative factor pairs of 15.",
+              "work": "\\text{Factors: } (-1, -15), (-3, -5) \\\\ \\text{The pair that adds to } -8 \\text{ is } -3 \\text{ and } -5."
+            },
+            {
+              "explain": "Write the factorised expression using these two numbers.",
+              "work": "(x - 3)(x - 5)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(x^2 + 5x + 4\\)",
+          "options": [
+            "\\((x + 1)(x + 4)\\)",
+            "\\((x + 2)^2\\)",
+            "\\((x - 1)(x - 4)\\)",
+            "\\((x + 5)(x - 1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two numbers that multiply to 4 and add to 5.",
+          "solution": "We need two numbers that multiply to 4 and add to 5. These are 1 and 4.\n\\(= (x + 1)(x + 4)\\)",
+          "steps": [
+            {
+              "explain": "To factorise \\(x^2 + 5x + 4\\), find two numbers that multiply to \\(4\\) and add to \\(5\\).",
+              "work": "\\text{Multiply to: } 4 \\\\ \\text{Add to: } 5"
+            },
+            {
+              "explain": "List the factor pairs of 4.",
+              "work": "\\text{Factors: } (1, 4), (2, 2) \\\\ \\text{The pair that adds to 5 is } 1 \\text{ and } 4."
+            },
+            {
+              "explain": "Write the factorised expression using these two numbers.",
+              "work": "(x + 1)(x + 4)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(a^2 - 6a + 9\\)",
+          "options": [
+            "\\((a - 3)^2\\)",
+            "\\((a + 3)^2\\)",
+            "\\((a - 9)(a - 1)\\)",
+            "\\((a + 3)(a - 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two negative numbers that multiply to 9.",
+          "solution": "We need two numbers that multiply to 9 and add to -6. These are -3 and -3.\n\\(= (a - 3)(a - 3) = (a - 3)^2\\)",
+          "steps": [
+            {
+              "explain": "To factorise \\(a^2 - 6a + 9\\), find two numbers that multiply to \\(9\\) and add to \\(-6\\). Both numbers must be negative.",
+              "work": "\\text{Multiply to: } 9 \\\\ \\text{Add to: } -6"
+            },
+            {
+              "explain": "List the negative factor pairs of 9.",
+              "work": "\\text{Factors: } (-1, -9), (-3, -3) \\\\ \\text{The pair that adds to } -6 \\text{ is } -3 \\text{ and } -3."
+            },
+            {
+              "explain": "Write the factorised expression. Since both numbers are the same, we can write it as a perfect square.",
+              "work": "(a - 3)(a - 3) = (a - 3)^2"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(x^2 + 10x + 16\\)",
+          "options": [
+            "\\((x + 2)(x + 8)\\)",
+            "\\((x + 4)^2\\)",
+            "\\((x + 16)(x + 1)\\)",
+            "\\((x - 2)(x - 8)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two numbers that multiply to 16 and add to 10.",
+          "solution": "We need two numbers that multiply to 16 and add to 10. These are 2 and 8.\n\\(= (x + 2)(x + 8)\\)",
+          "steps": [
+            {
+              "explain": "To factorise \\(x^2 + 10x + 16\\), find two numbers that multiply to \\(16\\) and add to \\(10\\).",
+              "work": "\\text{Multiply to: } 16 \\\\ \\text{Add to: } 10"
+            },
+            {
+              "explain": "List the factor pairs of 16.",
+              "work": "\\text{Factors: } (1, 16), (2, 8), (4, 4) \\\\ \\text{The pair that adds to 10 is } 2 \\text{ and } 8."
+            },
+            {
+              "explain": "Write the factorised expression using these two numbers.",
+              "work": "(x + 2)(x + 8)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(x^2 - 3x - 10\\)",
+          "options": [
+            "\\((x - 5)(x + 2)\\)",
+            "\\((x + 5)(x - 2)\\)",
+            "\\((x - 10)(x + 1)\\)",
+            "\\((x - 5)(x - 2)\\)"
+          ],
+          "answer": 0,
+          "hint": "One number is positive and the other is negative.",
+          "solution": "We need two numbers that multiply to -10 and add to -3. These are -5 and 2.\n\\(= (x - 5)(x + 2)\\)",
+          "steps": [
+            {
+              "explain": "To factorise \\(x^2 - 3x - 10\\), find two numbers that multiply to \\(-10\\) and add to \\(-3\\). Since they multiply to a negative number, one factor is positive and the other is negative.",
+              "work": "\\text{Multiply to: } -10 \\\\ \\text{Add to: } -3"
+            },
+            {
+              "explain": "List the factor pairs of -10.",
+              "work": "\\text{Factors: } (-1, 10), (1, -10), (-2, 5), (2, -5) \\\\ \\text{The pair that adds to } -3 \\text{ is } 2 \\text{ and } -5."
+            },
+            {
+              "explain": "Write the factorised expression using these two numbers.",
+              "work": "(x - 5)(x + 2)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(a^2 - 3a - 28\\)",
+          "options": [
+            "\\((a - 7)(a + 4)\\)",
+            "\\((a + 7)(a - 4)\\)",
+            "\\((a - 14)(a + 2)\\)",
+            "\\((a - 7)(a - 4)\\)"
+          ],
+          "answer": 0,
+          "hint": "One number is positive and the other is negative.",
+          "solution": "We need two numbers that multiply to -28 and add to -3. These are -7 and 4.\n\\(= (a - 7)(a + 4)\\)",
+          "steps": [
+            {
+              "explain": "To factorise \\(a^2 - 3a - 28\\), find two numbers that multiply to \\(-28\\) and add to \\(-3\\).",
+              "work": "\\text{Multiply to: } -28 \\\\ \\text{Add to: } -3"
+            },
+            {
+              "explain": "List the factor pairs of -28.",
+              "work": "\\text{The pair that adds to } -3 \\text{ is } -7 \\text{ and } 4."
+            },
+            {
+              "explain": "Write the factorised expression using these two numbers.",
+              "work": "(a - 7)(a + 4)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(a^2 - 4a + 4\\)",
+          "options": [
+            "\\((a - 2)^2\\)",
+            "\\((a + 2)^2\\)",
+            "\\((a - 4)(a - 1)\\)",
+            "\\((a - 4)(a + 1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two negative numbers that multiply to 4 and add to -4.",
+          "solution": "We need two numbers that multiply to 4 and add to -4. These are -2 and -2.\n\\(= (a - 2)(a - 2) = (a - 2)^2\\)",
+          "steps": [
+            {
+              "explain": "To factorise \\(a^2 - 4a + 4\\), find two numbers that multiply to \\(4\\) and add to \\(-4\\). Both must be negative.",
+              "work": "\\text{Multiply to: } 4 \\\\ \\text{Add to: } -4"
+            },
+            {
+              "explain": "List the negative factor pairs of 4.",
+              "work": "\\text{The pair that adds to } -4 \\text{ is } -2 \\text{ and } -2."
+            },
+            {
+              "explain": "Write the factorised expression. Since both numbers are the same, write it as a perfect square.",
+              "work": "(a - 2)(a - 2) = (a - 2)^2"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(x^2 - 8x + 7\\)",
+          "options": [
+            "\\((x - 1)(x - 7)\\)",
+            "\\((x + 1)(x + 7)\\)",
+            "\\((x - 7)(x + 1)\\)",
+            "\\((x - 8)(x - 1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two negative numbers that multiply to 7.",
+          "solution": "We need two numbers that multiply to 7 and add to -8. These are -1 and -7.\n\\(= (x - 1)(x - 7)\\)",
+          "steps": [
+            {
+              "explain": "To factorise \\(x^2 - 8x + 7\\), find two numbers that multiply to \\(7\\) and add to \\(-8\\).",
+              "work": "\\text{Multiply to: } 7 \\\\ \\text{Add to: } -8"
+            },
+            {
+              "explain": "Since 7 is a prime number, its only factors are 1 and 7. Because the sum is negative, both factors must be negative.",
+              "work": "\\text{The pair is } -1 \\text{ and } -7."
+            },
+            {
+              "explain": "Write the factorised expression.",
+              "work": "(x - 1)(x - 7)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8k",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(x^2 - 2x - 35\\)",
+          "options": [
+            "\\((x - 7)(x + 5)\\)",
+            "\\((x + 7)(x - 5)\\)",
+            "\\((x - 35)(x + 1)\\)",
+            "\\((x - 7)(x - 5)\\)"
+          ],
+          "answer": 0,
+          "hint": "One number is positive and the other is negative.",
+          "solution": "We need two numbers that multiply to -35 and add to -2. These are -7 and 5.\n\\(= (x - 7)(x + 5)\\)",
+          "steps": [
+            {
+              "explain": "To factorise \\(x^2 - 2x - 35\\), find two numbers that multiply to \\(-35\\) and add to \\(-2\\).",
+              "work": "\\text{Multiply to: } -35 \\\\ \\text{Add to: } -2"
+            },
+            {
+              "explain": "List the factor pairs of -35.",
+              "work": "\\text{The pair that adds to } -2 \\text{ is } -7 \\text{ and } 5."
+            },
+            {
+              "explain": "Write the factorised expression.",
+              "work": "(x - 7)(x + 5)"
+            }
+          ]
+        },
+        {
+          "id": "y8-17e-q8l",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise:\n\n\\(x^2 - 3x - 18\\)",
+          "options": [
+            "\\((x - 6)(x + 3)\\)",
+            "\\((x + 6)(x - 3)\\)",
+            "\\((x - 9)(x + 2)\\)",
+            "\\((x - 18)(x + 1)\\)"
+          ],
+          "answer": 0,
+          "hint": "One number is positive and the other is negative.",
+          "solution": "We need two numbers that multiply to -18 and add to -3. These are -6 and 3.\n\\(= (x - 6)(x + 3)\\)",
+          "steps": [
+            {
+              "explain": "To factorise \\(x^2 - 3x - 18\\), find two numbers that multiply to \\(-18\\) and add to \\(-3\\).",
+              "work": "\\text{Multiply to: } -18 \\\\ \\text{Add to: } -3"
+            },
+            {
+              "explain": "List the factor pairs of -18.",
+              "work": "\\text{The pair that adds to } -3 \\text{ is } -6 \\text{ and } 3."
+            },
+            {
+              "explain": "Write the factorised expression.",
+              "work": "(x - 6)(x + 3)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 400 250" width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="380" height="230" fill="none" stroke="black" stroke-width="2"/>
+  <text x="20" y="30" font-family="Arial" font-size="14">Total = 120</text>
+  
+  <!-- Chemistry Circle -->
+  <circle cx="150" cy="130" r="80" fill="none" stroke="#2563eb" stroke-width="2"/>
+  <text x="115" y="40" font-family="Arial" font-size="14" fill="#2563eb">Chemistry</text>
+  
+  <!-- Biology Circle -->
+  <circle cx="250" cy="130" r="80" fill="none" stroke="#16a34a" stroke-width="2"/>
+  <text x="225" y="40" font-family="Arial" font-size="14" fill="#16a34a">Biology</text>
+  
+  <!-- Numbers -->
+  <text x="110" y="135" font-family="Arial" font-size="16" text-anchor="middle">30</text>
+  <text x="200" y="135" font-family="Arial" font-size="16" text-anchor="middle">40</text>
+  <text x="290" y="135" font-family="Arial" font-size="16" text-anchor="middle">40</text>
+  
+</svg>

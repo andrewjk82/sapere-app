@@ -1,0 +1,1947 @@
+{
+  "chapterId": "exam:year11ch1a",
+  "title": "Exam year11ch1a",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11a-1A",
+      "code": "EXAM",
+      "title": "Exam",
+      "questions": [
+        {
+          "id": "00b38d80a36d4d2299dcb396fbfbf031",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((x^2 - \\frac{1}{x^2})^2\\)",
+          "options": [
+            "\\(x^4  + 2 + \\frac{1}{x^4}\\)",
+            "\\(x^4  + \\frac{1}{x^4}\\)",
+            "\\(x^4 - 2 + \\frac{1}{x^4}\\)",
+            "\\(x^4 - 1 + \\frac{1}{x^4}\\)"
+          ],
+          "answer": 2,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\(x^4 - 2 + \\frac{1}{x^4}\\)",
+          "steps": [
+            {
+              "explain": "Identify this as a perfect square binomial with A = x^2 and B = \\frac{1}{x^2}, and apply the identity (A-B)^2 = A^2 - 2AB + B^2.",
+              "work": "\\(\\left(x^2 - \\frac{1}{x^2}\\right)^2 = (x^2)^2 - 2(x^2)(\\frac{1}{x^2}) + (\\frac{1}{x^2})^2\\)"
+            },
+            {
+              "explain": "Square the first term: (x^2)^2.",
+              "work": "\\((x^2)^2 = x^4\\)"
+            },
+            {
+              "explain": "Compute the middle term: 2 × x^2 × \\frac{1}{x^2} — the variable part cancels, leaving a constant.",
+              "work": "\\(2(x^2)\\left(\\frac{1}{x^2}\\right) = 2\\)"
+            },
+            {
+              "explain": "Square the last term: (\\frac{1}{x^2})^2.",
+              "work": "\\(\\left(\\frac{1}{x^2}\\right)^2 = \\frac{1}{x^4}\\)"
+            },
+            {
+              "explain": "Combine all terms into the final simplified expression.",
+              "work": "\\(x^4 - 2 + \\frac{1}{x^4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "11ae84244b8aa2a3e82b279a8906422f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((2a + 3b)(4a^2 - 6ab + 9b^2)\\)",
+          "options": [
+            "\\(8a^3 - 27b^3\\)",
+            "\\(8a^3 + 9b^3\\)",
+            "\\(8a^3 + 27b^3\\)",
+            "\\(8a^3 + 18ab^2 + 27b^3\\)"
+          ],
+          "answer": 2,
+          "hint": "Recognise the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\)",
+          "solution": "\\(8a^3 + 27b^3\\)",
+          "steps": [
+            {
+              "explain": "Recognise the sum-of-cubes identity: (A+B)(A^2-AB+B^2) = A^3 + B^3, with A = 2a and B = 3b. Note: the question's second factor must be (2a)^2-(2a)(3b)+(3b)^2 for the identity to apply — check each term.",
+              "work": "\\((2a+3b)(4a^2-6ab+9b^2) = (2a)^3 + (3b)^3\\)"
+            },
+            {
+              "explain": "Verify the given factor matches: (2a)^2=4a^2, (2a)(3b)=6ab, (3b)^2=9b^2 ✓.",
+              "work": "\\(4a^2 - 6ab + 9b^2 = (2a)^2 - (2a)(3b) + (3b)^2\\)"
+            },
+            {
+              "explain": "Evaluate the two cubes.",
+              "work": "\\((2a)^3 = 8a^3, \\quad (3b)^3 = 27b^3\\)"
+            },
+            {
+              "explain": "Combine to give the final simplified expression.",
+              "work": "\\(8a^3 + 27b^3\\)"
+            }
+          ]
+        },
+        {
+          "id": "173915e09f765549ebf4ac727e1c31a3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((a^2 + \\frac{3}{a^2})^2\\)",
+          "options": [
+            "\\(a^4 + 6 + \\frac{9}{a^4}\\)",
+            "\\(a^4 + 3 + \\frac{9}{a^4}\\)",
+            "\\(a^4  + \\frac{9}{a^4}\\)",
+            "\\(a^4  - 6 + \\frac{9}{a^4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\(a^4 + 6 + \\frac{9}{a^4}\\)",
+          "steps": [
+            {
+              "explain": "Identify this as a perfect square binomial with A = a^2 and B = \\frac{3}{a^2}, and apply the identity (A+B)^2 = A^2 + 2AB + B^2.",
+              "work": "\\(\\left(a^2 + \\frac{3}{a^2}\\right)^2 = (a^2)^2 + 2(a^2)(\\frac{3}{a^2}) + (\\frac{3}{a^2})^2\\)"
+            },
+            {
+              "explain": "Square the first term: (a^2)^2.",
+              "work": "\\((a^2)^2 = a^4\\)"
+            },
+            {
+              "explain": "Compute the middle term: 2 × a^2 × \\frac{3}{a^2} — the variable part cancels, leaving a constant.",
+              "work": "\\(2(a^2)\\left(\\frac{3}{a^2}\\right) = 6\\)"
+            },
+            {
+              "explain": "Square the last term: (\\frac{3}{a^2})^2.",
+              "work": "\\(\\left(\\frac{3}{a^2}\\right)^2 = \\frac{9}{a^4}\\)"
+            },
+            {
+              "explain": "Combine all terms into the final simplified expression.",
+              "work": "\\(a^4 + 6 + \\frac{9}{a^4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "1b81dda55f85ab640214ef848ce88887",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((2k - 5)(4k^2 + 10k + 25)\\)",
+          "options": [
+            "\\(8k^3 - 32k5 - 125\\)",
+            "\\(8k^3 - 125\\)",
+            "\\(8k^3 + 125\\)",
+            "\\(2k^2 - 25\\)"
+          ],
+          "answer": 1,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "\\(8k^3 - 125\\)",
+          "steps": [
+            {
+              "explain": "Recognise the difference-of-cubes identity: (A-B)(A^2+AB+B^2) = A^3 - B^3, with A = 2k and B = 5.",
+              "work": "\\((2k-5)(4k^2+10k+25) = (2k)^3 - 5^3\\)"
+            },
+            {
+              "explain": "Verify the given factor matches: (2k)^2=4k^2, (2k)(5)=10k, 5^2=25 ✓.",
+              "work": "\\(4k^2 + 10k + 25 = (2k)^2 + (2k)(5) + (5)^2\\)"
+            },
+            {
+              "explain": "Evaluate the two cubes.",
+              "work": "\\((2k)^3 = 8k^3, \\quad 5^3 = 125\\)"
+            },
+            {
+              "explain": "Combine to give the final simplified expression.",
+              "work": "\\(8k^3 - 125\\)"
+            }
+          ]
+        },
+        {
+          "id": "1d878044fafb2233b9bf1871293f844a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((3a + \\frac{1}{3a})^2\\)",
+          "options": [
+            "\\(9a^2  + \\frac{1}{9a^2}\\)",
+            "\\(9a^2  - 2 + \\frac{1}{9a^2}\\)",
+            "\\(9a^2 + 2 + \\frac{1}{9a^2}\\)",
+            "\\(9a^2 + 1 + \\frac{1}{9a^2}\\)"
+          ],
+          "answer": 2,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\(9a^2 + 2 + \\frac{1}{9a^2}\\)",
+          "steps": [
+            {
+              "explain": "Identify this as a perfect square binomial with A = 3a and B = \\frac{1}{3a}, and apply the identity (A+B)^2 = A^2 + 2AB + B^2.",
+              "work": "\\(\\left(3a + \\frac{1}{3a}\\right)^2 = (3a)^2 + 2(3a)(\\frac{1}{3a}) + (\\frac{1}{3a})^2\\)"
+            },
+            {
+              "explain": "Square the first term: (3a)^2.",
+              "work": "\\((3a)^2 = 9a^2\\)"
+            },
+            {
+              "explain": "Compute the middle term: 2 × 3a × \\frac{1}{3a} — the variable part cancels, leaving a constant.",
+              "work": "\\(2(3a)\\left(\\frac{1}{3a}\\right) = 2\\)"
+            },
+            {
+              "explain": "Square the last term: (\\frac{1}{3a})^2.",
+              "work": "\\(\\left(\\frac{1}{3a}\\right)^2 = \\frac{1}{9a^2}\\)"
+            },
+            {
+              "explain": "Combine all terms into the final simplified expression.",
+              "work": "\\(9a^2 + 2 + \\frac{1}{9a^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "218f468e597a23ba218d1b965f78ac4a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((x + 2y)(x^2 - 2xy + 4y^2)\\)",
+          "options": [
+            "\\(x^3 - 8y^3\\)",
+            "\\(x^3 + 4y^3\\)",
+            "\\(x^3 + 8y^3\\)",
+            "\\(x^3 + 4xy^2 + 8y^3\\)"
+          ],
+          "answer": 2,
+          "hint": "Recognise the sum of cubes identity: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\)",
+          "solution": "\\(x^3 + 8y^3\\)",
+          "steps": [
+            {
+              "explain": "Recognise the sum-of-cubes identity: (A+B)(A^2-AB+B^2) = A^3 + B^3, with A = x and B = 2y.",
+              "work": "\\((x+2y)(x^2-2xy+4y^2) = x^3 + (2y)^3\\)"
+            },
+            {
+              "explain": "Verify the given factor matches: (x)^2=x^2, (x)(2y)=2xy, (2y)^2=4y^2 ✓.",
+              "work": "\\(x^2 - 2xy + 4y^2 = (x)^2 - (x)(2y) + (2y)^2\\)"
+            },
+            {
+              "explain": "Evaluate (2y)^3 = 8y^3, leaving x^3 unchanged.",
+              "work": "\\((2y)^3 = 8y^3\\)"
+            },
+            {
+              "explain": "Combine to give the final simplified expression.",
+              "work": "\\(x^3 + 8y^3\\)"
+            }
+          ]
+        },
+        {
+          "id": "25292ed7b12208eefa2308b913b66284",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((p^2 + \\frac{4}{p^2})^2\\)",
+          "options": [
+            "\\(p^4  - 8 + \\frac{16}{p^4}\\)",
+            "\\(p^4  + \\frac{16}{p^4}\\)",
+            "\\(p^4 + 8 + \\frac{16}{p^4}\\)",
+            "\\(p^4 + 4 + \\frac{16}{p^4}\\)"
+          ],
+          "answer": 2,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\(p^4 + 8 + \\frac{16}{p^4}\\)",
+          "steps": [
+            {
+              "explain": "Identify this as a perfect square binomial with A = p^2 and B = \\frac{4}{p^2}, and apply the identity (A+B)^2 = A^2 + 2AB + B^2.",
+              "work": "\\(\\left(p^2 + \\frac{4}{p^2}\\right)^2 = (p^2)^2 + 2(p^2)(\\frac{4}{p^2}) + (\\frac{4}{p^2})^2\\)"
+            },
+            {
+              "explain": "Square the first term: (p^2)^2.",
+              "work": "\\((p^2)^2 = p^4\\)"
+            },
+            {
+              "explain": "Compute the middle term: 2 × p^2 × \\frac{4}{p^2} — the variable part cancels, leaving a constant.",
+              "work": "\\(2(p^2)\\left(\\frac{4}{p^2}\\right) = 8\\)"
+            },
+            {
+              "explain": "Square the last term: (\\frac{4}{p^2})^2.",
+              "work": "\\(\\left(\\frac{4}{p^2}\\right)^2 = \\frac{16}{p^4}\\)"
+            },
+            {
+              "explain": "Combine all terms into the final simplified expression.",
+              "work": "\\(p^4 + 8 + \\frac{16}{p^4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "2623d16268a367abc83eec2ce8e3a808",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((3t^2 - \\frac{1}{2t^2})^2\\)",
+          "options": [
+            "\\(9t^4 - 3 + \\frac{1}{4t^4}\\)",
+            "\\(3t^4 - 3 + \\frac{1}{4t^4}\\)",
+            "\\(9t^4  + \\frac{1}{4t^4}\\)",
+            "\\(9t^4  + 3 + \\frac{1}{4t^4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\(9t^4 - 3 + \\frac{1}{4t^4}\\)",
+          "steps": [
+            {
+              "explain": "Identify this as a perfect square binomial with A = 3t^2 and B = \\frac{1}{2t^2}, and apply the identity (A-B)^2 = A^2 - 2AB + B^2.",
+              "work": "\\(\\left(3t^2 - \\frac{1}{2t^2}\\right)^2 = (3t^2)^2 - 2(3t^2)(\\frac{1}{2t^2}) + (\\frac{1}{2t^2})^2\\)"
+            },
+            {
+              "explain": "Square the first term: (3t^2)^2.",
+              "work": "\\((3t^2)^2 = 9t^4\\)"
+            },
+            {
+              "explain": "Compute the middle term: 2 × 3t^2 × \\frac{1}{2t^2} — the variable part cancels, leaving a constant.",
+              "work": "\\(2(3t^2)\\left(\\frac{1}{2t^2}\\right) = 3\\)"
+            },
+            {
+              "explain": "Square the last term: (\\frac{1}{2t^2})^2.",
+              "work": "\\(\\left(\\frac{1}{2t^2}\\right)^2 = \\frac{1}{4t^4}\\)"
+            },
+            {
+              "explain": "Combine all terms into the final simplified expression.",
+              "work": "\\(9t^4 - 3 + \\frac{1}{4t^4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "285ac4c17dab3b4b06a2cf2561ffe8bc",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((a^2 + b)(a^4 - ba^2 + b^2)\\)",
+          "options": [
+            "\\(a^6 - b^3\\)",
+            "\\(a^6 + b^3\\)",
+            "\\(a^2 + b^2\\)",
+            "\\(a^6 + 3a^2b + b^3\\)"
+          ],
+          "answer": 1,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "\\(a^6 + b^3\\)",
+          "steps": [
+            {
+              "explain": "Recognise the sum-of-cubes identity: (A+B)(A^2-AB+B^2) = A^3 + B^3, with A = a^2 and B = b.",
+              "work": "\\((a^2+b)(a^4-a^2b+b^2) = (a^2)^3 + b^3\\)"
+            },
+            {
+              "explain": "Verify the given factor matches: (a^2)^2=a^4, (a^2)(b)=a^2b, b^2=b^2 ✓.",
+              "work": "\\(a^4 - a^2b + b^2 = (a^2)^2 - (a^2)(b) + (b)^2\\)"
+            },
+            {
+              "explain": "Evaluate (a^2)^3 = a^6, leaving b^3 unchanged.",
+              "work": "\\((a^2)^3 = a^6\\)"
+            },
+            {
+              "explain": "Combine to give the final simplified expression.",
+              "work": "\\(a^6 + b^3\\)"
+            }
+          ]
+        },
+        {
+          "id": "28b668b8ea9d68284275dfb9c0cd899e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((m^2 + \\frac{2}{m^2})^2\\)",
+          "options": [
+            "\\(m^4  + \\frac{4}{m^4}\\)",
+            "\\(m^4 + 4 + \\frac{4}{m^4}\\)",
+            "\\(m^4  - 4 + \\frac{4}{m^4}\\)",
+            "\\(m^4 + 2 + \\frac{4}{m^4}\\)"
+          ],
+          "answer": 1,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\(m^4 + 4 + \\frac{4}{m^4}\\)",
+          "steps": [
+            {
+              "explain": "Identify this as a perfect square binomial with A = m^2 and B = \\frac{2}{m^2}, and apply the identity (A+B)^2 = A^2 + 2AB + B^2.",
+              "work": "\\(\\left(m^2 + \\frac{2}{m^2}\\right)^2 = (m^2)^2 + 2(m^2)(\\frac{2}{m^2}) + (\\frac{2}{m^2})^2\\)"
+            },
+            {
+              "explain": "Square the first term: (m^2)^2.",
+              "work": "\\((m^2)^2 = m^4\\)"
+            },
+            {
+              "explain": "Compute the middle term: 2 × m^2 × \\frac{2}{m^2} — the variable part cancels, leaving a constant.",
+              "work": "\\(2(m^2)\\left(\\frac{2}{m^2}\\right) = 4\\)"
+            },
+            {
+              "explain": "Square the last term: (\\frac{2}{m^2})^2.",
+              "work": "\\(\\left(\\frac{2}{m^2}\\right)^2 = \\frac{4}{m^4}\\)"
+            },
+            {
+              "explain": "Combine all terms into the final simplified expression.",
+              "work": "\\(m^4 + 4 + \\frac{4}{m^4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "2f6f780cdaff54742f802391871d7f27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((t + 5)(t^2 - 5t + 25)\\)",
+          "options": [
+            "\\(t^2 + 25\\)",
+            "\\(t^3 + 125\\)",
+            "\\(t^3 + 3t5 + 125\\)",
+            "\\(t^3 - 125\\)"
+          ],
+          "answer": 1,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "t^3 + 125",
+          "steps": [
+            {
+              "explain": "Recognize the pattern (A + B)(A² - AB + B²), which is the sum of cubes identity where A = t and B = 5.",
+              "work": "A = t, \\quad B = 5"
+            },
+            {
+              "explain": "Note that t² - 5t + 25 = t² - (t)(5) + 5², matching the second factor in the sum of cubes pattern.",
+              "work": "\\((t + 5)(t^2 - 5t + 25)\\) matches \\((A + B)(A^2 - AB + B^2)\\)"
+            },
+            {
+              "explain": "Apply the sum of cubes identity: (A + B)(A² - AB + B²) = A³ + B³.",
+              "work": "= (t)^3 + (5)^3"
+            },
+            {
+              "explain": "Evaluate the cubes: t³ and 125.",
+              "work": "= t^3 + 125"
+            }
+          ]
+        },
+        {
+          "id": "32920bf54887429d7349a118ec17bbe2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((4m - \\frac{1}{4m})^2\\)",
+          "options": [
+            "\\(16m^2  + \\frac{1}{16m^2}\\)",
+            "\\(16m^2 - 2 + \\frac{1}{16m^2}\\)",
+            "\\(16m^2 - 1 + \\frac{1}{16m^2}\\)",
+            "\\(16m^2  + 2 + \\frac{1}{16m^2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "16m^2 - 2 + \\frac{1}{16m^2}",
+          "steps": [
+            {
+              "explain": "Recognize this is a perfect square (A - B)² where A = 4m and B = 1/(4m).",
+              "work": "A = 4m, \\quad B = \\frac{1}{4m}"
+            },
+            {
+              "explain": "Apply the perfect square identity: (A - B)² = A² - 2AB + B².",
+              "work": "\\left(4m - \\frac{1}{4m}\\right)^2 = (4m)^2 - 2(4m)\\left(\\frac{1}{4m}\\right) + \\left(\\frac{1}{4m}\\right)^2"
+            },
+            {
+              "explain": "Calculate (4m)²: 16m².",
+              "work": "(4m)^2 = 16m^2"
+            },
+            {
+              "explain": "Calculate 2(4m)(1/(4m)): 2·1 = 2 (the 4m cancels).",
+              "work": "2(4m)\\left(\\frac{1}{4m}\\right) = 2"
+            },
+            {
+              "explain": "Calculate (1/(4m))²: 1/(16m²).",
+              "work": "\\left(\\frac{1}{4m}\\right)^2 = \\frac{1}{16m^2}"
+            },
+            {
+              "explain": "Combine all terms: 16m² - 2 + 1/(16m²).",
+              "work": "= 16m^2 - 2 + \\frac{1}{16m^2}"
+            }
+          ]
+        },
+        {
+          "id": "33e8e3887bc40446da6bc748d4eb48bc",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((x^2 - 1)(x^4 + 1x^2 + 1)\\)",
+          "options": [
+            "\\(x^4 - 1\\)",
+            "\\(x^6 - 3x^21 - 1\\)",
+            "\\(x^6 + 1\\)",
+            "\\(x^6 - 1\\)"
+          ],
+          "answer": 3,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "x^6 - 1",
+          "steps": [
+            {
+              "explain": "Recognize the pattern (A - B)(A² + AB + B²), which is the difference of cubes identity where A = x² and B = 1.",
+              "work": "A = x^2, \\quad B = 1"
+            },
+            {
+              "explain": "Note that x⁴ + x² + 1 = (x²)² + (x²)(1) + 1², matching the second factor in the difference of cubes pattern.",
+              "work": "\\((x^2 - 1)(x^4 + x^2 + 1)\\) matches \\((A - B)(A^2 + AB + B^2)\\)"
+            },
+            {
+              "explain": "Apply the difference of cubes identity: (A - B)(A² + AB + B²) = A³ - B³.",
+              "work": "= (x^2)^3 - (1)^3"
+            },
+            {
+              "explain": "Evaluate the cubes: (x²)³ = x⁶ and 1³ = 1.",
+              "work": "= x^6 - 1"
+            }
+          ]
+        },
+        {
+          "id": "3519b72b8eb9941ff3b42b06371560a3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((5x + \\frac{1}{5x})^2\\)",
+          "options": [
+            "\\(25x^2 + 2 + \\frac{1}{25x^2}\\)",
+            "\\(25x^2  - 2 + \\frac{1}{25x^2}\\)",
+            "\\(25x^2 + 1 + \\frac{1}{25x^2}\\)",
+            "\\(25x^2  + \\frac{1}{25x^2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "25x^2 + 2 + \\frac{1}{25x^2}",
+          "steps": [
+            {
+              "explain": "Recognize this is a perfect square (A + B)² where A = 5x and B = 1/(5x).",
+              "work": "A = 5x, \\quad B = \\frac{1}{5x}"
+            },
+            {
+              "explain": "Apply the perfect square identity: (A + B)² = A² + 2AB + B².",
+              "work": "\\left(5x + \\frac{1}{5x}\\right)^2 = (5x)^2 + 2(5x)\\left(\\frac{1}{5x}\\right) + \\left(\\frac{1}{5x}\\right)^2"
+            },
+            {
+              "explain": "Calculate (5x)²: 25x².",
+              "work": "(5x)^2 = 25x^2"
+            },
+            {
+              "explain": "Calculate 2(5x)(1/(5x)): 2·1 = 2 (the 5x cancels).",
+              "work": "2(5x)\\left(\\frac{1}{5x}\\right) = 2"
+            },
+            {
+              "explain": "Calculate (1/(5x))²: 1/(25x²).",
+              "work": "\\left(\\frac{1}{5x}\\right)^2 = \\frac{1}{25x^2}"
+            },
+            {
+              "explain": "Combine all terms: 25x² + 2 + 1/(25x²).",
+              "work": "= 25x^2 + 2 + \\frac{1}{25x^2}"
+            }
+          ]
+        },
+        {
+          "id": "3e9e6f5e2a915b6a7a28cf83427eac67",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((3m + 2)(9m^2 - 6m + 4)\\)",
+          "options": [
+            "\\(3m^2 + 4\\)",
+            "\\(27m^3 - 8\\)",
+            "\\(27m^3 + 33m2 + 8\\)",
+            "\\(27m^3 + 8\\)"
+          ],
+          "answer": 3,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "27m^3 + 8",
+          "steps": [
+            {
+              "explain": "Recognize the pattern (A + B)(A² - AB + B²), which is the sum of cubes identity where A = 3m and B = 2.",
+              "work": "A = 3m, \\quad B = 2"
+            },
+            {
+              "explain": "Note that 9m² - 6m + 4 = (3m)² - (3m)(2) + 2², matching the second factor in the sum of cubes pattern.",
+              "work": "\\((3m + 2)(9m^2 - 6m + 4)\\) matches \\((A + B)(A^2 - AB + B^2)\\)"
+            },
+            {
+              "explain": "Apply the sum of cubes identity: (A + B)(A² - AB + B²) = A³ + B³.",
+              "work": "= (3m)^3 + (2)^3"
+            },
+            {
+              "explain": "Evaluate the cubes: (3m)³ = 27m³ and 2³ = 8.",
+              "work": "= 27m^3 + 8"
+            }
+          ]
+        },
+        {
+          "id": "48fdb8e005e1815c03690adfa9295cd8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((y^4 - \\frac{1}{y^4})^2\\)",
+          "options": [
+            "\\(y^8  + \\frac{1}{y^8}\\)",
+            "\\(y^8 - 2 + \\frac{1}{y^8}\\)",
+            "\\(y^8  + 2 + \\frac{1}{y^8}\\)",
+            "\\(y^8 - 1 + \\frac{1}{y^8}\\)"
+          ],
+          "answer": 1,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "y^8 - 2 + \\frac{1}{y^8}",
+          "steps": [
+            {
+              "explain": "Recognize this is a perfect square (A - B)² where A = y⁴ and B = 1/y⁴.",
+              "work": "A = y^4, \\quad B = \\frac{1}{y^4}"
+            },
+            {
+              "explain": "Apply the perfect square identity: (A - B)² = A² - 2AB + B².",
+              "work": "\\left(y^4 - \\frac{1}{y^4}\\right)^2 = (y^4)^2 - 2(y^4)\\left(\\frac{1}{y^4}\\right) + \\left(\\frac{1}{y^4}\\right)^2"
+            },
+            {
+              "explain": "Calculate (y⁴)²: y⁸.",
+              "work": "(y^4)^2 = y^8"
+            },
+            {
+              "explain": "Calculate 2(y⁴)(1/y⁴): 2·1 = 2 (the y⁴ cancels).",
+              "work": "2(y^4)\\left(\\frac{1}{y^4}\\right) = 2"
+            },
+            {
+              "explain": "Calculate (1/y⁴)²: 1/y⁸.",
+              "work": "\\left(\\frac{1}{y^4}\\right)^2 = \\frac{1}{y^8}"
+            },
+            {
+              "explain": "Combine all terms: y⁸ - 2 + 1/y⁸.",
+              "work": "= y^8 - 2 + \\frac{1}{y^8}"
+            }
+          ]
+        },
+        {
+          "id": "541254c774322eaa3863e74f0cd9a31b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((x^3 - \\frac{2}{x^3})^2\\)",
+          "options": [
+            "\\(x^6 - 4 + \\frac{4}{x^6}\\)",
+            "\\(x^6  + \\frac{4}{x^6}\\)",
+            "\\(x^6 - 2 + \\frac{4}{x^6}\\)",
+            "\\(x^6  + 4 + \\frac{4}{x^6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\((x^3 - \\frac{2}{x^3})^2 = x^6 - 4 + \\frac{4}{x^6}\\)",
+          "steps": [
+            {
+              "explain": "Identify the pattern: we are squaring a binomial with fractional exponents. Apply (A - B)² = A² - 2AB + B², where A = x³ and B = 2/x³.",
+              "work": "\\((x^3 - \\frac{2}{x^3})^2 = (x^3)^2 - 2(x^3)(\\frac{2}{x^3}) + (\\frac{2}{x^3})^2\\)"
+            },
+            {
+              "explain": "Compute each term: (x³)² = x⁶, 2 · x³ · 2/x³ = 4, (2/x³)² = 4/x⁶.",
+              "work": "\\(= x^6 - 4 + \\frac{4}{x^6}\\)"
+            },
+            {
+              "explain": "Rewrite in standard form.",
+              "work": "\\(= x^6 - 4 + \\frac{4}{x^6}\\)"
+            }
+          ]
+        },
+        {
+          "id": "54ad7c3b1fcb6e37da867bce8cb9973d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((x^2 + \\frac{1}{x^2})^2\\)",
+          "options": [
+            "\\(x^4 + 2 + \\frac{1}{x^4}\\)",
+            "\\(x^4  - 2 + \\frac{1}{x^4}\\)",
+            "\\(x^4 + 1 + \\frac{1}{x^4}\\)",
+            "\\(x^4  + \\frac{1}{x^4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\((x^2 + \\frac{1}{x^2})^2 = x^4 + 2 + \\frac{1}{x^4}\\)",
+          "steps": [
+            {
+              "explain": "Identify the pattern: squaring a binomial with fractional exponents. Apply (A + B)² = A² + 2AB + B², where A = x² and B = 1/x².",
+              "work": "\\((x^2 + \\frac{1}{x^2})^2 = (x^2)^2 + 2(x^2)(\\frac{1}{x^2}) + (\\frac{1}{x^2})^2\\)"
+            },
+            {
+              "explain": "Compute each term: (x²)² = x⁴, 2 · x² · 1/x² = 2, (1/x²)² = 1/x⁴.",
+              "work": "\\(= x^4 + 2 + \\frac{1}{x^4}\\)"
+            },
+            {
+              "explain": "All terms are now simplified. This is the final answer.",
+              "work": "\\(= x^4 + 2 + \\frac{1}{x^4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "6625701025b0f59a1353d11b8e97d2fb",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((x + 3)(x^2 - 3x + 9)\\)",
+          "options": [
+            "\\(x^3 - 27\\)",
+            "\\(x^3 + 27\\)",
+            "\\(x^2 + 9\\)",
+            "\\(x^3 + 3x3 + 27\\)"
+          ],
+          "answer": 1,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "\\((x + 3)(x^2 - 3x + 9) = x^3 + 27\\)",
+          "steps": [
+            {
+              "explain": "Recognize the sum of cubes pattern: (a + b)(a² - ab + b²) = a³ + b³. Here a = x and b = 3.",
+              "work": "\\((x + 3)(x^2 - 3x + 9) = x(x^2 - 3x + 9) + 3(x^2 - 3x + 9)\\)"
+            },
+            {
+              "explain": "Distribute x: x · x² = x³, x · (-3x) = -3x², x · 9 = 9x.",
+              "work": "\\(x(x^2 - 3x + 9) = x^3 - 3x^2 + 9x\\)"
+            },
+            {
+              "explain": "Distribute 3: 3 · x² = 3x², 3 · (-3x) = -9x, 3 · 9 = 27.",
+              "work": "\\(3(x^2 - 3x + 9) = 3x^2 - 9x + 27\\)"
+            },
+            {
+              "explain": "Add the results and combine like terms.",
+              "work": "\\((x^3 - 3x^2 + 9x) + (3x^2 - 9x + 27) = x^3 + (-3x^2 + 3x^2) + (9x - 9x) + 27\\)"
+            },
+            {
+              "explain": "The middle terms cancel to give the final result.",
+              "work": "\\(= x^3 + 27\\)"
+            }
+          ]
+        },
+        {
+          "id": "6f11828461d59918658b1ce9684cdfee",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((y - 1)(y^2 + 1y + 1)\\)",
+          "options": [
+            "\\(y^3 - 1\\)",
+            "\\(y^3 + 1\\)",
+            "\\(y^2 - 1\\)",
+            "\\(y^3 - 3y1 - 1\\)"
+          ],
+          "answer": 0,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "\\((y - 1)(y^2 + y + 1) = y^3 - 1\\)",
+          "steps": [
+            {
+              "explain": "Recognize the difference of cubes pattern: (a - b)(a² + ab + b²) = a³ - b³. Here a = y and b = 1.",
+              "work": "\\((y - 1)(y^2 + y + 1) = y(y^2 + y + 1) - 1(y^2 + y + 1)\\)"
+            },
+            {
+              "explain": "Distribute y: y · y² = y³, y · y = y², y · 1 = y.",
+              "work": "\\(y(y^2 + y + 1) = y^3 + y^2 + y\\)"
+            },
+            {
+              "explain": "Distribute -1: -1 · y² = -y², -1 · y = -y, -1 · 1 = -1.",
+              "work": "\\(-1(y^2 + y + 1) = -y^2 - y - 1\\)"
+            },
+            {
+              "explain": "Add the results and combine like terms.",
+              "work": "\\((y^3 + y^2 + y) + (-y^2 - y - 1) = y^3 + (y^2 - y^2) + (y - y) - 1\\)"
+            },
+            {
+              "explain": "The middle terms cancel to give the final result.",
+              "work": "\\(= y^3 - 1\\)"
+            }
+          ]
+        },
+        {
+          "id": "8180c153c3fa3e75f9c3ed3b10dab619",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((a + 4)(a^2 - 4a + 16)\\)",
+          "options": [
+            "\\(a^3 + 64\\)",
+            "\\(a^2 + 16\\)",
+            "\\(a^3 - 64\\)",
+            "\\(a^3 + 3a4 + 64\\)"
+          ],
+          "answer": 0,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "\\((a + 4)(a^2 - 4a + 16) = a^3 + 64\\)",
+          "steps": [
+            {
+              "explain": "Recognize this as a sum of cubes pattern: \\((A + B)(A^2 - AB + B^2) = A^3 + B^3\\) where \\(A = a\\) and \\(B = 4\\).",
+              "work": "\\((a + 4)(a^2 - 4a + 16)\\)"
+            },
+            {
+              "explain": "Apply the sum of cubes identity directly.",
+              "work": "\\(= (a)^3 + (4)^3\\)"
+            },
+            {
+              "explain": "Calculate the cubes: \\((a)^3 = a^3\\) and \\((4)^3 = 64\\).",
+              "work": "\\(= a^3 + 64\\)"
+            }
+          ]
+        },
+        {
+          "id": "8fda8af26c79eaae282af61b19bb6c64",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((x - 2)(x^2 + 2x + 4)\\)",
+          "options": [
+            "\\(x^3 + 8\\)",
+            "\\(x^2 - 4\\)",
+            "\\(x^3 - 8\\)",
+            "\\(x^3 - 3x2 - 8\\)"
+          ],
+          "answer": 2,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "\\((x - 2)(x^2 + 2x + 4) = x^3 - 8\\)",
+          "steps": [
+            {
+              "explain": "Recognize this as a difference of cubes pattern: \\((A - B)(A^2 + AB + B^2) = A^3 - B^3\\) where \\(A = x\\) and \\(B = 2\\).",
+              "work": "\\((x - 2)(x^2 + 2x + 4)\\)"
+            },
+            {
+              "explain": "Apply the difference of cubes identity directly.",
+              "work": "\\(= (x)^3 - (2)^3\\)"
+            },
+            {
+              "explain": "Calculate the cubes.",
+              "work": "\\(= x^3 - 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "8fe44db1d9f71b29550b1aec86953a93",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((4y - 3)(16y^2 + 12y + 9)\\)",
+          "options": [
+            "\\(4y^2 - 9\\)",
+            "\\(64y^3 + 27\\)",
+            "\\(64y^3 - 34y3 - 27\\)",
+            "\\(64y^3 - 27\\)"
+          ],
+          "answer": 3,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "\\((4y - 3)(16y^2 + 12y + 9) = 64y^3 - 27\\)",
+          "steps": [
+            {
+              "explain": "Recognize this as a difference of cubes: \\((A - B)(A^2 + AB + B^2) = A^3 - B^3\\) where \\(A = 4y\\) and \\(B = 3\\).",
+              "work": "\\((4y - 3)(16y^2 + 12y + 9)\\)"
+            },
+            {
+              "explain": "Apply the difference of cubes identity.",
+              "work": "\\(= (4y)^3 - (3)^3\\)"
+            },
+            {
+              "explain": "Calculate the cubes: \\((4y)^3 = 64y^3\\) and \\((3)^3 = 27\\).",
+              "work": "\\(= 64y^3 - 27\\)"
+            }
+          ]
+        },
+        {
+          "id": "9c330c8a29bcd02a5c3e5bd9bb767876",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((2x - \\frac{3}{2x})^2\\)",
+          "options": [
+            "\\(4x^2  + \\frac{9}{4x^2}\\)",
+            "\\(4x^2 - 6 + \\frac{9}{4x^2}\\)",
+            "\\(4x^2 - 3 + \\frac{9}{4x^2}\\)",
+            "\\(4x^2  + 6 + \\frac{9}{4x^2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\((2x - \\frac{3}{2x})^2 = 4x^2 - 6 + \\frac{9}{4x^2}\\)",
+          "steps": [
+            {
+              "explain": "Recognize this as a perfect square binomial with fractions: \\((A - B)^2\\) where \\(A = 2x\\) and \\(B = \\frac{3}{2x}\\).",
+              "work": "\\((2x - \\frac{3}{2x})^2\\)"
+            },
+            {
+              "explain": "Apply the perfect square identity \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+              "work": "\\((2x)^2 - 2(2x)(\\frac{3}{2x}) + (\\frac{3}{2x})^2\\)"
+            },
+            {
+              "explain": "Simplify each term: \\((2x)^2 = 4x^2\\), \\(2(2x)(\\frac{3}{2x}) = 6\\), \\((\\frac{3}{2x})^2 = \\frac{9}{4x^2}\\).",
+              "work": "\\(= 4x^2 - 6 + \\frac{9}{4x^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "b95551a331c1f79d6004faea9ab095d2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((x^2 - \\frac{5}{x^2})^2\\)",
+          "options": [
+            "\\(x^4 - 10 + \\frac{25}{x^4}\\)",
+            "\\(x^4  + \\frac{25}{x^4}\\)",
+            "\\(x^4 - 5 + \\frac{25}{x^4}\\)",
+            "\\(x^4  + 10 + \\frac{25}{x^4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\(x^4 - 10 + \\frac{25}{x^4}\\)",
+          "steps": [
+            {
+              "explain": "Recognize the binomial square pattern (A - B)² = A² - 2AB + B² where A = x² and B = 5/x².",
+              "work": "\\((x^2 - \\frac{5}{x^2})^2 = (x^2)^2 - 2(x^2)(\\frac{5}{x^2}) + (\\frac{5}{x^2})^2\\)"
+            },
+            {
+              "explain": "Simplify the powers: (x²)² = x⁴, 2x²(5/x²) = 10, and (5/x²)² = 25/x⁴.",
+              "work": "\\(= x^4 - 2 \\cdot x^2 \\cdot \\frac{5}{x^2} + \\frac{25}{x^4}\\)"
+            },
+            {
+              "explain": "Combine the simplified terms.",
+              "work": "\\(= x^4 - 10 + \\frac{25}{x^4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "c74ab9663795b54a6beb6c4df6c735e0",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((2x - 1)(4x^2 + 2x + 1)\\)",
+          "options": [
+            "\\(8x^3 - 1\\)",
+            "\\(8x^3 - 32x1 - 1\\)",
+            "\\(2x^2 - 1\\)",
+            "\\(8x^3 + 1\\)"
+          ],
+          "answer": 0,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "\\(8x^3 - 1\\)",
+          "steps": [
+            {
+              "explain": "Recognize this as the difference of cubes pattern (A - B)(A² + AB + B²) = A³ - B³ where A = 2x and B = 1.",
+              "work": "\\((2x - 1)(4x^2 + 2x + 1) = (2x - 1)((2x)^2 + (2x)(1) + 1^2)\\)"
+            },
+            {
+              "explain": "Apply the difference of cubes identity: (A - B)(A² + AB + B²) = A³ - B³.",
+              "work": "\\(= (2x)^3 - 1^3\\)"
+            },
+            {
+              "explain": "Calculate the cubes: (2x)³ = 8x³ and 1³ = 1.",
+              "work": "\\(= 8x^3 - 1\\)"
+            }
+          ]
+        },
+        {
+          "id": "ce171b80f1e9031b8fcdc2516f86c7a8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((p - q)(p^2 + qp + q^2)\\)",
+          "options": [
+            "\\(p^3 - 3pq - q^3\\)",
+            "\\(p^3 + q^3\\)",
+            "\\(p^2 - q^2\\)",
+            "\\(p^3 - q^3\\)"
+          ],
+          "answer": 3,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "\\(p^3 - q^3\\)",
+          "steps": [
+            {
+              "explain": "Recognize this as the difference of cubes identity (A - B)(A² + AB + B²) = A³ - B³ where A = p and B = q.",
+              "work": "\\((p - q)(p^2 + qp + q^2) = p^3 - q^3\\)"
+            },
+            {
+              "explain": "Verify by expanding directly: p(p² + qp + q²) - q(p² + qp + q²).",
+              "work": "\\(= p^3 + p^2q + pq^2 - p^2q - pq^2 - q^3\\)"
+            },
+            {
+              "explain": "Combine like terms: p²q terms cancel, pq² terms cancel, leaving p³ - q³.",
+              "work": "\\(= p^3 - q^3\\)"
+            }
+          ]
+        },
+        {
+          "id": "d88c5b48aee9daeef75738a4deb8ff22",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((3u - v)(9u^2 + 3uv + v^2)\\)",
+          "options": [
+            "\\(27u^3 - v^3\\)",
+            "\\(27u^3 + v^3\\)",
+            "\\(3u^2 - v^2\\)",
+            "\\(27u^3 - 33uv - v^3\\)"
+          ],
+          "answer": 0,
+          "hint": "Recognise the sum or difference of cubes identity: \\((A \\pm B)(A^2 \\mp AB + B^2) = A^3 \\pm B^3\\)",
+          "solution": "\\(27u^3 - v^3\\)",
+          "steps": [
+            {
+              "explain": "Recognize the difference of cubes identity (A - B)(A² + AB + B²) = A³ - B³ where A = 3u and B = v.",
+              "work": "\\((3u - v)(9u^2 + 3uv + v^2) = ((3u) - v)((3u)^2 + (3u)(v) + v^2)\\)"
+            },
+            {
+              "explain": "Verify the second factor matches the pattern: (3u)² = 9u², (3u)(v) = 3uv, v² = v².",
+              "work": "\\(= (3u)^3 - v^3\\)"
+            },
+            {
+              "explain": "Calculate the cubes: (3u)³ = 27u³ and v³ = v³.",
+              "work": "\\(= 27u^3 - v^3\\)"
+            }
+          ]
+        },
+        {
+          "id": "e77a551ce169321aab44d54da80b29f0",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((2a^2 + \\frac{3}{a^2})^2\\)",
+          "options": [
+            "\\(4a^4  + \\frac{9}{a^4}\\)",
+            "\\(4a^4  - 12 + \\frac{9}{a^4}\\)",
+            "\\(4a^4 + 12 + \\frac{9}{a^4}\\)",
+            "\\(4a^4 + 6 + \\frac{9}{a^4}\\)"
+          ],
+          "answer": 2,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\(4a^4 + 12 + \\frac{9}{a^4}\\)",
+          "steps": [
+            {
+              "explain": "Use the binomial square formula (A + B)² = A² + 2AB + B² where A = 2a² and B = 3/a².",
+              "work": "\\((2a^2 + \\frac{3}{a^2})^2 = (2a^2)^2 + 2(2a^2)(\\frac{3}{a^2}) + (\\frac{3}{a^2})^2\\)"
+            },
+            {
+              "explain": "Calculate the terms: (2a²)² = 4a⁴, 2(2a²)(3/a²) = 12, (3/a²)² = 9/a⁴.",
+              "work": "\\(= 4a^4 + 2 \\cdot 2a^2 \\cdot \\frac{3}{a^2} + \\frac{9}{a^4}\\)"
+            },
+            {
+              "explain": "Simplify: 2 × 2a² × (3/a²) = 12.",
+              "work": "\\(= 4a^4 + 12 + \\frac{9}{a^4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "f1e5b02aa7fc26ae9cbf63140f404f2b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((y^3 + \\frac{1}{y^3})^2\\)",
+          "options": [
+            "\\(y^6 + 2 + \\frac{1}{y^6}\\)",
+            "\\(y^6  + \\frac{1}{y^6}\\)",
+            "\\(y^6  - 2 + \\frac{1}{y^6}\\)",
+            "\\(y^6 + 1 + \\frac{1}{y^6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply the perfect square expansion formula: \\((A \\pm B)^2 = A^2 \\pm 2AB + B^2\\). Note that the product of reciprocal terms simplifies to a constant.",
+          "solution": "\\(y^6 + 2 + \\frac{1}{y^6}\\)",
+          "steps": [
+            {
+              "explain": "Identify this as a perfect square binomial with A = y^3 and B = \\frac{1}{y^3}, and apply the identity (A+B)^2 = A^2 + 2AB + B^2.",
+              "work": "\\(\\left(y^3 + \\frac{1}{y^3}\\right)^2 = (y^3)^2 + 2(y^3)(\\frac{1}{y^3}) + (\\frac{1}{y^3})^2\\)"
+            },
+            {
+              "explain": "Square the first term: (y^3)^2.",
+              "work": "\\((y^3)^2 = y^6\\)"
+            },
+            {
+              "explain": "Compute the middle term: 2 × y^3 × \\frac{1}{y^3} — the variable part cancels, leaving a constant.",
+              "work": "\\(2(y^3)\\left(\\frac{1}{y^3}\\right) = 2\\)"
+            },
+            {
+              "explain": "Square the last term: (\\frac{1}{y^3})^2.",
+              "work": "\\(\\left(\\frac{1}{y^3}\\right)^2 = \\frac{1}{y^6}\\)"
+            },
+            {
+              "explain": "Combine all terms into the final simplified expression.",
+              "work": "\\(y^6 + 2 + \\frac{1}{y^6}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the binomial: \\(\\left(2x^{2} - \\frac{1}{x^{2}}\\right)^3\\)",
+          "options": [
+            "\\(8x^{6} -12x^{2} - \\frac{6}{x^{2}} -\\frac{1}{x^{6}}\\)",
+            "\\(8x^{6} - 12x^{2} + \\frac{6}{x^{2}} - \\frac{1}{x^{6}}\\)",
+            "\\(8x^{6} + 12x^{2} + \\frac{6}{x^{2}} + \\frac{1}{x^{6}}\\)",
+            "\\(8x^{6} -12x^{2} + \\frac{6}{x^{2}} -\\frac{1}{x^{6}}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the structure: this is a cubic binomial expansion of the form (A - B)³ = A³ - 3A²B + 3AB² - B³. Here, A = \\left(2x^{2} and B = \\frac{1}{x^{2}}\\right.",
+              "work": "(A - B)³ = A³ - 3A²B + 3AB² - B³"
+            },
+            {
+              "explain": "Apply the cubic binomial identity with our specific values.",
+              "work": "(\\left(2x^{2} - \\frac{1}{x^{2}}\\right)³ = (\\left(2x^{2})³ - 3(\\left(2x^{2})²(\\frac{1}{x^{2}}\\right) + 3(\\left(2x^{2})(\\frac{1}{x^{2}}\\right)² - (\\frac{1}{x^{2}}\\right)³"
+            },
+            {
+              "explain": "Calculate each term: cube the first term, compute 3 times the square of the first times the second, compute 3 times the first times the square of the second, and cube the second term.",
+              "work": "\\(\\left(2x^{2} - \\frac{1}{x^{2}}\\right)^3 = (2x^{2})^3 - 3(2x^{2})^2\\left(\\frac{1}{x^{2}}\\right) + 3(2x^{2})\\left(\\frac{1}{x^{2}}\\right)^2 - \\left(\\frac{1}{x^{2}}\\right)^3\\)"
+            },
+            {
+              "explain": "Simplify all the coefficients and powers.",
+              "work": "\\(= 8x^{6} -12x^{2} + \\frac{6}{x^{2}} -\\frac{1}{x^{6}}\\)"
+            },
+            {
+              "explain": "State the final expanded form.",
+              "work": "= \\(8x^{6} -12x^{2} + \\frac{6}{x^{2}} -\\frac{1}{x^{6}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q12",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the binomial: \\(\\left(3x^{3} - \\frac{2}{x^{3}}\\right)^3\\)",
+          "options": [
+            "\\(27x^{9} -54x^{3} + \\frac{36}{x^{3}} -\\frac{8}{x^{9}}\\)",
+            "\\(27x^{9} -54x^{3} - \\frac{36}{x^{3}} -\\frac{8}{x^{9}}\\)",
+            "\\(27x^{9} + 54x^{3} + \\frac{36}{x^{3}} + \\frac{8}{x^{9}}\\)",
+            "\\(27x^{9} - 54x^{3} + \\frac{36}{x^{3}} - \\frac{8}{x^{9}}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the structure: this is a cubic binomial expansion of the form (A - B)³ = A³ - 3A²B + 3AB² - B³. Here, A = \\left(3x^{3} and B = \\frac{2}{x^{3}}\\right.",
+              "work": "(A - B)³ = A³ - 3A²B + 3AB² - B³"
+            },
+            {
+              "explain": "Apply the cubic binomial identity with our specific values.",
+              "work": "(\\left(3x^{3} - \\frac{2}{x^{3}}\\right)³ = (\\left(3x^{3})³ - 3(\\left(3x^{3})²(\\frac{2}{x^{3}}\\right) + 3(\\left(3x^{3})(\\frac{2}{x^{3}}\\right)² - (\\frac{2}{x^{3}}\\right)³"
+            },
+            {
+              "explain": "Calculate each term: cube the first term, compute 3 times the square of the first times the second, compute 3 times the first times the square of the second, and cube the second term.",
+              "work": "\\(\\left(3x^{3} - \\frac{2}{x^{3}}\\right)^3 = (3x^{3})^3 - 3(3x^{3})^2\\left(\\frac{2}{x^{3}}\\right) + 3(3x^{3})\\left(\\frac{2}{x^{3}}\\right)^2 - \\left(\\frac{2}{x^{3}}\\right)^3\\)"
+            },
+            {
+              "explain": "Simplify all the coefficients and powers.",
+              "work": "\\(= 27x^{9} -54x^{3} + \\frac{36}{x^{3}} -\\frac{8}{x^{9}}\\)"
+            },
+            {
+              "explain": "State the final expanded form.",
+              "work": "= \\(27x^{9} -54x^{3} + \\frac{36}{x^{3}} -\\frac{8}{x^{9}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the binomial: \\(\\left(4x^{4} - \\frac{3}{x^{4}}\\right)^3\\)",
+          "options": [
+            "\\(64x^{12} -144x^{4} - \\frac{108}{x^{4}} -\\frac{27}{x^{12}}\\)",
+            "\\(64x^{12} -144x^{4} + \\frac{108}{x^{4}} -\\frac{27}{x^{12}}\\)",
+            "\\(64x^{12} - 144x^{4} + \\frac{108}{x^{4}} - \\frac{27}{x^{12}}\\)",
+            "\\(64x^{12} + 144x^{4} + \\frac{108}{x^{4}} + \\frac{27}{x^{12}}\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the structure: this is a cubic binomial expansion of the form (A - B)³ = A³ - 3A²B + 3AB² - B³. Here, A = \\left(4x^{4} and B = \\frac{3}{x^{4}}\\right.",
+              "work": "(A - B)³ = A³ - 3A²B + 3AB² - B³"
+            },
+            {
+              "explain": "Apply the cubic binomial identity with our specific values.",
+              "work": "(\\left(4x^{4} - \\frac{3}{x^{4}}\\right)³ = (\\left(4x^{4})³ - 3(\\left(4x^{4})²(\\frac{3}{x^{4}}\\right) + 3(\\left(4x^{4})(\\frac{3}{x^{4}}\\right)² - (\\frac{3}{x^{4}}\\right)³"
+            },
+            {
+              "explain": "Calculate each term: cube the first term, compute 3 times the square of the first times the second, compute 3 times the first times the square of the second, and cube the second term.",
+              "work": "\\(\\left(4x^{4} - \\frac{3}{x^{4}}\\right)^3 = (4x^{4})^3 - 3(4x^{4})^2\\left(\\frac{3}{x^{4}}\\right) + 3(4x^{4})\\left(\\frac{3}{x^{4}}\\right)^2 - \\left(\\frac{3}{x^{4}}\\right)^3\\)"
+            },
+            {
+              "explain": "Simplify all the coefficients and powers.",
+              "work": "\\(= 64x^{12} -144x^{4} + \\frac{108}{x^{4}} -\\frac{27}{x^{12}}\\)"
+            },
+            {
+              "explain": "State the final expanded form.",
+              "work": "= \\(64x^{12} -144x^{4} + \\frac{108}{x^{4}} -\\frac{27}{x^{12}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q14",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the binomial: \\(\\left(5x^{5} - \\frac{4}{x^{5}}\\right)^3\\)",
+          "options": [
+            "\\(125x^{15} + 300x^{5} + \\frac{240}{x^{5}} + \\frac{64}{x^{15}}\\)",
+            "\\(125x^{15} - 300x^{5} + \\frac{240}{x^{5}} - \\frac{64}{x^{15}}\\)",
+            "\\(125x^{15} -300x^{5} - \\frac{240}{x^{5}} -\\frac{64}{x^{15}}\\)",
+            "\\(125x^{15} -300x^{5} + \\frac{240}{x^{5}} -\\frac{64}{x^{15}}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the structure: this is a cubic binomial expansion of the form (A - B)³ = A³ - 3A²B + 3AB² - B³. Here, A = \\left(5x^{5} and B = \\frac{4}{x^{5}}\\right.",
+              "work": "(A - B)³ = A³ - 3A²B + 3AB² - B³"
+            },
+            {
+              "explain": "Apply the cubic binomial identity with our specific values.",
+              "work": "(\\left(5x^{5} - \\frac{4}{x^{5}}\\right)³ = (\\left(5x^{5})³ - 3(\\left(5x^{5})²(\\frac{4}{x^{5}}\\right) + 3(\\left(5x^{5})(\\frac{4}{x^{5}}\\right)² - (\\frac{4}{x^{5}}\\right)³"
+            },
+            {
+              "explain": "Calculate each term: cube the first term, compute 3 times the square of the first times the second, compute 3 times the first times the square of the second, and cube the second term.",
+              "work": "\\(\\left(5x^{5} - \\frac{4}{x^{5}}\\right)^3 = (5x^{5})^3 - 3(5x^{5})^2\\left(\\frac{4}{x^{5}}\\right) + 3(5x^{5})\\left(\\frac{4}{x^{5}}\\right)^2 - \\left(\\frac{4}{x^{5}}\\right)^3\\)"
+            },
+            {
+              "explain": "Simplify all the coefficients and powers.",
+              "work": "\\(= 125x^{15} -300x^{5} + \\frac{240}{x^{5}} -\\frac{64}{x^{15}}\\)"
+            },
+            {
+              "explain": "State the final expanded form.",
+              "work": "= \\(125x^{15} -300x^{5} + \\frac{240}{x^{5}} -\\frac{64}{x^{15}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the binomial: \\(\\left(6x^{6} - \\frac{5}{x^{6}}\\right)^3\\)",
+          "options": [
+            "\\(216x^{18} -540x^{6} - \\frac{450}{x^{6}} -\\frac{125}{x^{18}}\\)",
+            "\\(216x^{18} + 540x^{6} + \\frac{450}{x^{6}} + \\frac{125}{x^{18}}\\)",
+            "\\(216x^{18} -540x^{6} + \\frac{450}{x^{6}} -\\frac{125}{x^{18}}\\)",
+            "\\(216x^{18} - 540x^{6} + \\frac{450}{x^{6}} - \\frac{125}{x^{18}}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the structure: this is a cubic binomial expansion of the form (A - B)³ = A³ - 3A²B + 3AB² - B³. Here, A = \\left(6x^{6} and B = \\frac{5}{x^{6}}\\right.",
+              "work": "(A - B)³ = A³ - 3A²B + 3AB² - B³"
+            },
+            {
+              "explain": "Apply the cubic binomial identity with our specific values.",
+              "work": "(\\left(6x^{6} - \\frac{5}{x^{6}}\\right)³ = (\\left(6x^{6})³ - 3(\\left(6x^{6})²(\\frac{5}{x^{6}}\\right) + 3(\\left(6x^{6})(\\frac{5}{x^{6}}\\right)² - (\\frac{5}{x^{6}}\\right)³"
+            },
+            {
+              "explain": "Calculate each term: cube the first term, compute 3 times the square of the first times the second, compute 3 times the first times the square of the second, and cube the second term.",
+              "work": "\\(\\left(6x^{6} - \\frac{5}{x^{6}}\\right)^3 = (6x^{6})^3 - 3(6x^{6})^2\\left(\\frac{5}{x^{6}}\\right) + 3(6x^{6})\\left(\\frac{5}{x^{6}}\\right)^2 - \\left(\\frac{5}{x^{6}}\\right)^3\\)"
+            },
+            {
+              "explain": "Simplify all the coefficients and powers.",
+              "work": "\\(= 216x^{18} -540x^{6} + \\frac{450}{x^{6}} -\\frac{125}{x^{18}}\\)"
+            },
+            {
+              "explain": "State the final expanded form.",
+              "work": "= \\(216x^{18} -540x^{6} + \\frac{450}{x^{6}} -\\frac{125}{x^{18}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the binomial: \\(\\left(7x^{7} - \\frac{6}{x^{7}}\\right)^3\\)",
+          "options": [
+            "\\(343x^{21} -882x^{7} - \\frac{756}{x^{7}} -\\frac{216}{x^{21}}\\)",
+            "\\(343x^{21} - 882x^{7} + \\frac{756}{x^{7}} - \\frac{216}{x^{21}}\\)",
+            "\\(343x^{21} + 882x^{7} + \\frac{756}{x^{7}} + \\frac{216}{x^{21}}\\)",
+            "\\(343x^{21} -882x^{7} + \\frac{756}{x^{7}} -\\frac{216}{x^{21}}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the structure: this is a cubic binomial expansion of the form (A - B)³ = A³ - 3A²B + 3AB² - B³. Here, A = \\left(7x^{7} and B = \\frac{6}{x^{7}}\\right.",
+              "work": "(A - B)³ = A³ - 3A²B + 3AB² - B³"
+            },
+            {
+              "explain": "Apply the cubic binomial identity with our specific values.",
+              "work": "(\\left(7x^{7} - \\frac{6}{x^{7}}\\right)³ = (\\left(7x^{7})³ - 3(\\left(7x^{7})²(\\frac{6}{x^{7}}\\right) + 3(\\left(7x^{7})(\\frac{6}{x^{7}}\\right)² - (\\frac{6}{x^{7}}\\right)³"
+            },
+            {
+              "explain": "Calculate each term: cube the first term, compute 3 times the square of the first times the second, compute 3 times the first times the square of the second, and cube the second term.",
+              "work": "\\(\\left(7x^{7} - \\frac{6}{x^{7}}\\right)^3 = (7x^{7})^3 - 3(7x^{7})^2\\left(\\frac{6}{x^{7}}\\right) + 3(7x^{7})\\left(\\frac{6}{x^{7}}\\right)^2 - \\left(\\frac{6}{x^{7}}\\right)^3\\)"
+            },
+            {
+              "explain": "Simplify all the coefficients and powers.",
+              "work": "\\(= 343x^{21} -882x^{7} + \\frac{756}{x^{7}} -\\frac{216}{x^{21}}\\)"
+            },
+            {
+              "explain": "State the final expanded form.",
+              "work": "= \\(343x^{21} -882x^{7} + \\frac{756}{x^{7}} -\\frac{216}{x^{21}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the binomial: \\(\\left(8x^{8} - \\frac{7}{x^{8}}\\right)^3\\)",
+          "options": [
+            "\\(512x^{24} - 1344x^{8} + \\frac{1176}{x^{8}} - \\frac{343}{x^{24}}\\)",
+            "\\(512x^{24} -1344x^{8} - \\frac{1176}{x^{8}} -\\frac{343}{x^{24}}\\)",
+            "\\(512x^{24} -1344x^{8} + \\frac{1176}{x^{8}} -\\frac{343}{x^{24}}\\)",
+            "\\(512x^{24} + 1344x^{8} + \\frac{1176}{x^{8}} + \\frac{343}{x^{24}}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the structure: this is a cubic binomial expansion of the form (A - B)³ = A³ - 3A²B + 3AB² - B³. Here, A = \\left(8x^{8} and B = \\frac{7}{x^{8}}\\right.",
+              "work": "(A - B)³ = A³ - 3A²B + 3AB² - B³"
+            },
+            {
+              "explain": "Apply the cubic binomial identity with our specific values.",
+              "work": "(\\left(8x^{8} - \\frac{7}{x^{8}}\\right)³ = (\\left(8x^{8})³ - 3(\\left(8x^{8})²(\\frac{7}{x^{8}}\\right) + 3(\\left(8x^{8})(\\frac{7}{x^{8}}\\right)² - (\\frac{7}{x^{8}}\\right)³"
+            },
+            {
+              "explain": "Calculate each term: cube the first term, compute 3 times the square of the first times the second, compute 3 times the first times the square of the second, and cube the second term.",
+              "work": "\\(\\left(8x^{8} - \\frac{7}{x^{8}}\\right)^3 = (8x^{8})^3 - 3(8x^{8})^2\\left(\\frac{7}{x^{8}}\\right) + 3(8x^{8})\\left(\\frac{7}{x^{8}}\\right)^2 - \\left(\\frac{7}{x^{8}}\\right)^3\\)"
+            },
+            {
+              "explain": "Simplify all the coefficients and powers.",
+              "work": "\\(= 512x^{24} -1344x^{8} + \\frac{1176}{x^{8}} -\\frac{343}{x^{24}}\\)"
+            },
+            {
+              "explain": "State the final expanded form.",
+              "work": "= \\(512x^{24} -1344x^{8} + \\frac{1176}{x^{8}} -\\frac{343}{x^{24}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q18",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the binomial: \\(\\left(9x^{9} - \\frac{8}{x^{9}}\\right)^3\\)",
+          "options": [
+            "\\(729x^{27} - 1944x^{9} + \\frac{1728}{x^{9}} - \\frac{512}{x^{27}}\\)",
+            "\\(729x^{27} -1944x^{9} - \\frac{1728}{x^{9}} -\\frac{512}{x^{27}}\\)",
+            "\\(729x^{27} -1944x^{9} + \\frac{1728}{x^{9}} -\\frac{512}{x^{27}}\\)",
+            "\\(729x^{27} + 1944x^{9} + \\frac{1728}{x^{9}} + \\frac{512}{x^{27}}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the structure: this is a cubic binomial expansion of the form (A - B)³ = A³ - 3A²B + 3AB² - B³. Here, A = \\left(9x^{9} and B = \\frac{8}{x^{9}}\\right.",
+              "work": "(A - B)³ = A³ - 3A²B + 3AB² - B³"
+            },
+            {
+              "explain": "Apply the cubic binomial identity with our specific values.",
+              "work": "(\\left(9x^{9} - \\frac{8}{x^{9}}\\right)³ = (\\left(9x^{9})³ - 3(\\left(9x^{9})²(\\frac{8}{x^{9}}\\right) + 3(\\left(9x^{9})(\\frac{8}{x^{9}}\\right)² - (\\frac{8}{x^{9}}\\right)³"
+            },
+            {
+              "explain": "Calculate each term: cube the first term, compute 3 times the square of the first times the second, compute 3 times the first times the square of the second, and cube the second term.",
+              "work": "\\(\\left(9x^{9} - \\frac{8}{x^{9}}\\right)^3 = (9x^{9})^3 - 3(9x^{9})^2\\left(\\frac{8}{x^{9}}\\right) + 3(9x^{9})\\left(\\frac{8}{x^{9}}\\right)^2 - \\left(\\frac{8}{x^{9}}\\right)^3\\)"
+            },
+            {
+              "explain": "Simplify all the coefficients and powers.",
+              "work": "\\(= 729x^{27} -1944x^{9} + \\frac{1728}{x^{9}} -\\frac{512}{x^{27}}\\)"
+            },
+            {
+              "explain": "State the final expanded form.",
+              "work": "= \\(729x^{27} -1944x^{9} + \\frac{1728}{x^{9}} -\\frac{512}{x^{27}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q19",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the binomial: \\(\\left(10x^{10} - \\frac{9}{x^{10}}\\right)^3\\)",
+          "options": [
+            "\\(1000x^{30} - 2700x^{10} + \\frac{2430}{x^{10}} - \\frac{729}{x^{30}}\\)",
+            "\\(1000x^{30} -2700x^{10} + \\frac{2430}{x^{10}} -\\frac{729}{x^{30}}\\)",
+            "\\(1000x^{30} + 2700x^{10} + \\frac{2430}{x^{10}} + \\frac{729}{x^{30}}\\)",
+            "\\(1000x^{30} -2700x^{10} - \\frac{2430}{x^{10}} -\\frac{729}{x^{30}}\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the structure: this is a cubic binomial expansion of the form (A - B)³ = A³ - 3A²B + 3AB² - B³. Here, A = \\left(10x^{10} and B = \\frac{9}{x^{10}}\\right.",
+              "work": "(A - B)³ = A³ - 3A²B + 3AB² - B³"
+            },
+            {
+              "explain": "Apply the cubic binomial identity with our specific values.",
+              "work": "(\\left(10x^{10} - \\frac{9}{x^{10}}\\right)³ = (\\left(10x^{10})³ - 3(\\left(10x^{10})²(\\frac{9}{x^{10}}\\right) + 3(\\left(10x^{10})(\\frac{9}{x^{10}}\\right)² - (\\frac{9}{x^{10}}\\right)³"
+            },
+            {
+              "explain": "Calculate each term: cube the first term, compute 3 times the square of the first times the second, compute 3 times the first times the square of the second, and cube the second term.",
+              "work": "\\(\\left(10x^{10} - \\frac{9}{x^{10}}\\right)^3 = (10x^{10})^3 - 3(10x^{10})^2\\left(\\frac{9}{x^{10}}\\right) + 3(10x^{10})\\left(\\frac{9}{x^{10}}\\right)^2 - \\left(\\frac{9}{x^{10}}\\right)^3\\)"
+            },
+            {
+              "explain": "Simplify all the coefficients and powers.",
+              "work": "\\(= 1000x^{30} -2700x^{10} + \\frac{2430}{x^{10}} -\\frac{729}{x^{30}}\\)"
+            },
+            {
+              "explain": "State the final expanded form.",
+              "work": "= \\(1000x^{30} -2700x^{10} + \\frac{2430}{x^{10}} -\\frac{729}{x^{30}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the binomial: \\(\\left(11x^{11} - \\frac{10}{x^{11}}\\right)^3\\)",
+          "options": [
+            "\\(1331x^{33} - 3630x^{11} + \\frac{3300}{x^{11}} - \\frac{1000}{x^{33}}\\)",
+            "\\(1331x^{33} -3630x^{11} + \\frac{3300}{x^{11}} -\\frac{1000}{x^{33}}\\)",
+            "\\(1331x^{33} -3630x^{11} - \\frac{3300}{x^{11}} -\\frac{1000}{x^{33}}\\)",
+            "\\(1331x^{33} + 3630x^{11} + \\frac{3300}{x^{11}} + \\frac{1000}{x^{33}}\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the structure: this is a cubic binomial expansion of the form (A - B)³ = A³ - 3A²B + 3AB² - B³. Here, A = \\left(11x^{11} and B = \\frac{10}{x^{11}}\\right.",
+              "work": "(A - B)³ = A³ - 3A²B + 3AB² - B³"
+            },
+            {
+              "explain": "Apply the cubic binomial identity with our specific values.",
+              "work": "(\\left(11x^{11} - \\frac{10}{x^{11}}\\right)³ = (\\left(11x^{11})³ - 3(\\left(11x^{11})²(\\frac{10}{x^{11}}\\right) + 3(\\left(11x^{11})(\\frac{10}{x^{11}}\\right)² - (\\frac{10}{x^{11}}\\right)³"
+            },
+            {
+              "explain": "Calculate each term: cube the first term, compute 3 times the square of the first times the second, compute 3 times the first times the square of the second, and cube the second term.",
+              "work": "\\(\\left(11x^{11} - \\frac{10}{x^{11}}\\right)^3 = (11x^{11})^3 - 3(11x^{11})^2\\left(\\frac{10}{x^{11}}\\right) + 3(11x^{11})\\left(\\frac{10}{x^{11}}\\right)^2 - \\left(\\frac{10}{x^{11}}\\right)^3\\)"
+            },
+            {
+              "explain": "Simplify all the coefficients and powers.",
+              "work": "\\(= 1331x^{33} -3630x^{11} + \\frac{3300}{x^{11}} -\\frac{1000}{x^{33}}\\)"
+            },
+            {
+              "explain": "State the final expanded form.",
+              "work": "= \\(1331x^{33} -3630x^{11} + \\frac{3300}{x^{11}} -\\frac{1000}{x^{33}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q31",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((2x^2 + 1y^2)(4x^4 - 2x^2y^2 + 1y^4)\\)",
+          "options": [
+            "\\(8x^6 + 1y^6\\)",
+            "\\(8x^6 - 1y^6\\)",
+            "\\(4x^4 + 1y^4\\)",
+            "\\(8x^6 + 34x^4y^2 + 32x^2y^4 + 1y^6\\)"
+          ],
+          "answer": 0,
+          "solution": "8x⁶ + y⁶",
+          "steps": [
+            {
+              "explain": "Identify the sum of cubes identity: (A+B)(A²-AB+B²) = A³+B³. Here A = 2x², B = y².",
+              "work": "The pattern (2x²+y²)(4x⁴-2x²y²+y⁴) matches (A+B)(A²-AB+B²) with A = 2x² and B = y²."
+            },
+            {
+              "explain": "Verify the middle term expansion: (A+B)(A²-AB+B²).",
+              "work": "Check: (2x²)² = 4x⁴, -(2x²)(y²) = -2x²y², (y²)² = y⁴. Matches the second factor ✓"
+            },
+            {
+              "explain": "Apply the sum of cubes formula directly.",
+              "work": "\\((2x^2)^3 + (y^2)^3 = 8x^6 + y^6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q32",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((3x^2 + 2y^2)(9x^4 - 6x^2y^2 + 4y^4)\\)",
+          "options": [
+            "\\(9x^4 + 4y^4\\)",
+            "\\(27x^6 + 318x^4y^2 + 312x^2y^4 + 8y^6\\)",
+            "\\(27x^6 + 8y^6\\)",
+            "\\(27x^6 - 8y^6\\)"
+          ],
+          "answer": 2,
+          "solution": "27x⁶ + 8y⁶",
+          "steps": [
+            {
+              "explain": "Identify the sum of cubes identity: (A+B)(A²-AB+B²) = A³+B³. Here A = 3x², B = 2y².",
+              "work": "The pattern (3x²+2y²)(9x⁴-6x²y²+4y⁴) matches (A+B)(A²-AB+B²)."
+            },
+            {
+              "explain": "Verify the middle term expansion: (A+B)(A²-AB+B²).",
+              "work": "Check: (3x²)² = 9x⁴, -(3x²)(2y²) = -6x²y², (2y²)² = 4y⁴. Matches ✓"
+            },
+            {
+              "explain": "Apply the sum of cubes formula: A³ + B³.",
+              "work": "\\((3x^2)^3 + (2y^2)^3 = 27x^6 + 8y^6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((4x^2 + 3y^2)(16x^4 - 12x^2y^2 + 9y^4)\\)",
+          "options": [
+            "\\(64x^6 + 348x^4y^2 + 336x^2y^4 + 27y^6\\)",
+            "\\(64x^6 - 27y^6\\)",
+            "\\(64x^6 + 27y^6\\)",
+            "\\(16x^4 + 9y^4\\)"
+          ],
+          "answer": 2,
+          "solution": "64x⁶ + 27y⁶",
+          "steps": [
+            {
+              "explain": "Identify the sum of cubes identity: (A+B)(A²-AB+B²) = A³+B³. Here A = 4x², B = 3y².",
+              "work": "The pattern (4x²+3y²)(16x⁴-12x²y²+9y⁴) matches (A+B)(A²-AB+B²)."
+            },
+            {
+              "explain": "Verify the expansion terms: A² = 16x⁴, -AB = -12x²y², B² = 9y⁴.",
+              "work": "Check: (4x²)² = 16x⁴, -(4x²)(3y²) = -12x²y², (3y²)² = 9y⁴. Matches ✓"
+            },
+            {
+              "explain": "Apply the sum of cubes formula: A³ + B³.",
+              "work": "\\((4x^2)^3 + (3y^2)^3 = 64x^6 + 27y^6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q34",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((5x^2 + 4y^2)(25x^4 - 20x^2y^2 + 16y^4)\\)",
+          "options": [
+            "\\(125x^6 + 64y^6\\)",
+            "\\(125x^6 + 3100x^4y^2 + 380x^2y^4 + 64y^6\\)",
+            "\\(125x^6 - 64y^6\\)",
+            "\\(25x^4 + 16y^4\\)"
+          ],
+          "answer": 0,
+          "solution": "125x⁶ + 64y⁶",
+          "steps": [
+            {
+              "explain": "Identify the sum of cubes identity: (A+B)(A²-AB+B²) = A³+B³. Here A = 5x², B = 4y².",
+              "work": "The pattern (5x²+4y²)(25x⁴-20x²y²+16y⁴) matches the sum of cubes formula."
+            },
+            {
+              "explain": "Verify all three expansion terms match.",
+              "work": "Check: (5x²)² = 25x⁴, -(5x²)(4y²) = -20x²y², (4y²)² = 16y⁴. All match ✓"
+            },
+            {
+              "explain": "Apply the sum of cubes formula: A³ + B³.",
+              "work": "\\((5x^2)^3 + (4y^2)^3 = 125x^6 + 64y^6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q35",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((6x^2 + 5y^2)(36x^4 - 30x^2y^2 + 25y^4)\\)",
+          "options": [
+            "\\(216x^6 - 125y^6\\)",
+            "\\(36x^4 + 25y^4\\)",
+            "\\(216x^6 + 3180x^4y^2 + 3150x^2y^4 + 125y^6\\)",
+            "\\(216x^6 + 125y^6\\)"
+          ],
+          "answer": 3,
+          "solution": "216x⁶ + 125y⁶",
+          "steps": [
+            {
+              "explain": "Identify the sum of cubes identity: (A+B)(A²-AB+B²) = A³+B³. Here A = 6x², B = 5y².",
+              "work": "The pattern (6x²+5y²)(36x⁴-30x²y²+25y⁴) matches the sum of cubes formula."
+            },
+            {
+              "explain": "Verify all three expansion terms match.",
+              "work": "Check: (6x²)² = 36x⁴, -(6x²)(5y²) = -30x²y², (5y²)² = 25y⁴. All match ✓"
+            },
+            {
+              "explain": "Apply the sum of cubes formula: A³ + B³.",
+              "work": "\\((6x^2)^3 + (5y^2)^3 = 216x^6 + 125y^6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q36",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((7x^2 + 6y^2)(49x^4 - 42x^2y^2 + 36y^4)\\)",
+          "options": [
+            "\\(343x^6 + 3294x^4y^2 + 3252x^2y^4 + 216y^6\\)",
+            "\\(49x^4 + 36y^4\\)",
+            "\\(343x^6 + 216y^6\\)",
+            "\\(343x^6 - 216y^6\\)"
+          ],
+          "answer": 2,
+          "solution": "343x⁶ + 216y⁶",
+          "steps": [
+            {
+              "explain": "Identify the sum of cubes identity: (A+B)(A²-AB+B²) = A³+B³. Here A = 7x², B = 6y².",
+              "work": "The pattern (7x²+6y²)(49x⁴-42x²y²+36y⁴) matches the sum of cubes formula."
+            },
+            {
+              "explain": "Verify all three expansion terms match.",
+              "work": "Check: (7x²)² = 49x⁴, -(7x²)(6y²) = -42x²y², (6y²)² = 36y⁴. All match ✓"
+            },
+            {
+              "explain": "Apply the sum of cubes formula: A³ + B³.",
+              "work": "\\((7x^2)^3 + (6y^2)^3 = 343x^6 + 216y^6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q37",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((8x^2 + 7y^2)(64x^4 - 56x^2y^2 + 49y^4)\\)",
+          "options": [
+            "\\(512x^6 + 3448x^4y^2 + 3392x^2y^4 + 343y^6\\)",
+            "\\(512x^6 - 343y^6\\)",
+            "\\(64x^4 + 49y^4\\)",
+            "\\(512x^6 + 343y^6\\)"
+          ],
+          "answer": 3,
+          "solution": "512x⁶ + 343y⁶",
+          "steps": [
+            {
+              "explain": "Identify the sum of cubes identity: (A+B)(A²-AB+B²) = A³+B³. Here A = 8x², B = 7y².",
+              "work": "The pattern (8x²+7y²)(64x⁴-56x²y²+49y⁴) matches the sum of cubes formula."
+            },
+            {
+              "explain": "Verify all three expansion terms match.",
+              "work": "Check: (8x²)² = 64x⁴, -(8x²)(7y²) = -56x²y², (7y²)² = 49y⁴. All match ✓"
+            },
+            {
+              "explain": "Apply the sum of cubes formula: A³ + B³.",
+              "work": "\\((8x^2)^3 + (7y^2)^3 = 512x^6 + 343y^6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q38",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((9x^2 + 8y^2)(81x^4 - 72x^2y^2 + 64y^4)\\)",
+          "options": [
+            "\\(729x^6 + 3648x^4y^2 + 3576x^2y^4 + 512y^6\\)",
+            "\\(729x^6 - 512y^6\\)",
+            "\\(81x^4 + 64y^4\\)",
+            "\\(729x^6 + 512y^6\\)"
+          ],
+          "answer": 3,
+          "solution": "729x⁶ + 512y⁶",
+          "steps": [
+            {
+              "explain": "Identify the sum of cubes identity: (A+B)(A²-AB+B²) = A³+B³. Here A = 9x², B = 8y².",
+              "work": "The pattern (9x²+8y²)(81x⁴-72x²y²+64y⁴) matches the sum of cubes formula."
+            },
+            {
+              "explain": "Verify all three expansion terms match.",
+              "work": "Check: (9x²)² = 81x⁴, -(9x²)(8y²) = -72x²y², (8y²)² = 64y⁴. All match ✓"
+            },
+            {
+              "explain": "Apply the sum of cubes formula: A³ + B³.",
+              "work": "\\((9x^2)^3 + (8y^2)^3 = 729x^6 + 512y^6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q39",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((10x^2 + 9y^2)(100x^4 - 90x^2y^2 + 81y^4)\\)",
+          "options": [
+            "\\(100x^4 + 81y^4\\)",
+            "\\(1000x^6 - 729y^6\\)",
+            "\\(1000x^6 + 729y^6\\)",
+            "\\(1000x^6 + 3900x^4y^2 + 3810x^2y^4 + 729y^6\\)"
+          ],
+          "answer": 2,
+          "solution": "1000x⁶ + 729y⁶",
+          "steps": [
+            {
+              "explain": "Identify the sum of cubes identity: (A+B)(A²-AB+B²) = A³+B³. Here A = 10x², B = 9y².",
+              "work": "The pattern (10x²+9y²)(100x⁴-90x²y²+81y⁴) matches the sum of cubes formula."
+            },
+            {
+              "explain": "Verify all three expansion terms match.",
+              "work": "Check: (10x²)² = 100x⁴, -(10x²)(9y²) = -90x²y², (9y²)² = 81y⁴. All match ✓"
+            },
+            {
+              "explain": "Apply the sum of cubes formula: A³ + B³.",
+              "work": "\\((10x^2)^3 + (9y^2)^3 = 1000x^6 + 729y^6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q40",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\((11x^2 + 10y^2)(121x^4 - 110x^2y^2 + 100y^4)\\)",
+          "options": [
+            "\\(121x^4 + 100y^4\\)",
+            "\\(1331x^6 + 31210x^4y^2 + 31100x^2y^4 + 1000y^6\\)",
+            "\\(1331x^6 - 1000y^6\\)",
+            "\\(1331x^6 + 1000y^6\\)"
+          ],
+          "answer": 3,
+          "solution": "1331x⁶ + 1000y⁶",
+          "steps": [
+            {
+              "explain": "Identify the sum of cubes identity: (A+B)(A²-AB+B²) = A³+B³. Here A = 11x², B = 10y².",
+              "work": "The pattern (11x²+10y²)(121x⁴-110x²y²+100y⁴) matches the sum of cubes formula."
+            },
+            {
+              "explain": "Verify all three expansion terms match.",
+              "work": "Check: (11x²)² = 121x⁴, -(11x²)(10y²) = -110x²y², (10y²)² = 100y⁴. All match ✓"
+            },
+            {
+              "explain": "Apply the sum of cubes formula: A³ + B³.",
+              "work": "\\((11x^2)^3 + (10y^2)^3 = 1331x^6 + 1000y^6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q61",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{2}x - \\frac{3}{\\sqrt{2}x}\\right)^2\\)",
+          "options": [
+            "\\(2x^2 - 6 - \\frac{9}{2x^2}\\)",
+            "\\(2x^2 - 6 + \\frac{9}{2x^2}\\)",
+            "\\(2x^2 - 3 + \\frac{9}{2x^2}\\)",
+            "\\(2x^2 + 6 + \\frac{9}{2x^2}\\)"
+          ],
+          "answer": 1,
+          "solution": "2x² - 6 + 9/(2x²)",
+          "steps": [
+            {
+              "explain": "Identify the perfect square pattern (A-B)² = A² - 2AB + B². Here A = √2·x and B = 3/(√2·x).",
+              "work": "The expression is \\((\\sqrt{2}x - \\frac{3}{\\sqrt{2}x})^2\\) with A = √2·x and B = 3/(√2·x)."
+            },
+            {
+              "explain": "Expand A² = (√2·x)² = 2x².",
+              "work": "\\((\\sqrt{2}x)^2 = 2x^2\\)"
+            },
+            {
+              "explain": "Expand -2AB = -2(√2·x)(3/(√2·x)) = -6.",
+              "work": "\\(-2(\\sqrt{2}x) \\cdot \\frac{3}{\\sqrt{2}x} = -2 \\cdot 3 = -6\\)"
+            },
+            {
+              "explain": "Expand B² = (3/(√2·x))² = 9/(2x²).",
+              "work": "\\(\\left(\\frac{3}{\\sqrt{2}x}\\right)^2 = \\frac{9}{2x^2}\\)"
+            },
+            {
+              "explain": "Combine all three terms: A² - 2AB + B².",
+              "work": "\\(2x^2 - 6 + \\frac{9}{2x^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q62",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{3}x - \\frac{4}{\\sqrt{3}x}\\right)^2\\)",
+          "options": [
+            "\\(3x^2 - 8 + \\frac{16}{3x^2}\\)",
+            "\\(3x^2 + 8 + \\frac{16}{3x^2}\\)",
+            "\\(3x^2 - 4 + \\frac{16}{3x^2}\\)",
+            "\\(3x^2 - 8 - \\frac{16}{3x^2}\\)"
+          ],
+          "answer": 0,
+          "solution": "3x² - 8 + 16/(3x²)",
+          "steps": [
+            {
+              "explain": "Identify the perfect square pattern (A-B)² = A² - 2AB + B². Here A = √3·x and B = 4/(√3·x).",
+              "work": "The expression is \\((\\sqrt{3}x - \\frac{4}{\\sqrt{3}x})^2\\) with A = √3·x and B = 4/(√3·x)."
+            },
+            {
+              "explain": "Expand A² = (√3·x)² = 3x².",
+              "work": "\\((\\sqrt{3}x)^2 = 3x^2\\)"
+            },
+            {
+              "explain": "Expand -2AB = -2(√3·x)(4/(√3·x)) = -8.",
+              "work": "\\(-2(\\sqrt{3}x) \\cdot \\frac{4}{\\sqrt{3}x} = -2 \\cdot 4 = -8\\)"
+            },
+            {
+              "explain": "Expand B² = (4/(√3·x))² = 16/(3x²).",
+              "work": "\\(\\left(\\frac{4}{\\sqrt{3}x}\\right)^2 = \\frac{16}{3x^2}\\)"
+            },
+            {
+              "explain": "Combine all three terms: A² - 2AB + B².",
+              "work": "\\(3x^2 - 8 + \\frac{16}{3x^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q63",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{4}x - \\frac{5}{\\sqrt{4}x}\\right)^2\\)",
+          "options": [
+            "\\(4x^2 + 10 + \\frac{25}{4x^2}\\)",
+            "\\(4x^2 - 5 + \\frac{25}{4x^2}\\)",
+            "\\(4x^2 - 10 + \\frac{25}{4x^2}\\)",
+            "\\(4x^2 - 10 - \\frac{25}{4x^2}\\)"
+          ],
+          "answer": 2,
+          "solution": "4x² - 10 + 25/(4x²)",
+          "steps": [
+            {
+              "explain": "Identify the perfect square pattern (A-B)² = A² - 2AB + B². Note: √4 = 2, so A = 2x and B = 5/(2x).",
+              "work": "The expression is \\((\\sqrt{4}x - \\frac{5}{\\sqrt{4}x})^2 = (2x - \\frac{5}{2x})^2\\) with A = 2x and B = 5/(2x)."
+            },
+            {
+              "explain": "Expand A² = (2x)² = 4x².",
+              "work": "\\((2x)^2 = 4x^2\\)"
+            },
+            {
+              "explain": "Expand -2AB = -2(2x)(5/(2x)) = -10.",
+              "work": "\\(-2(2x) \\cdot \\frac{5}{2x} = -2 \\cdot 5 = -10\\)"
+            },
+            {
+              "explain": "Expand B² = (5/(2x))² = 25/(4x²).",
+              "work": "\\(\\left(\\frac{5}{2x}\\right)^2 = \\frac{25}{4x^2}\\)"
+            },
+            {
+              "explain": "Combine all three terms: A² - 2AB + B².",
+              "work": "\\(4x^2 - 10 + \\frac{25}{4x^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q64",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{5}x - \\frac{6}{\\sqrt{5}x}\\right)^2\\)",
+          "options": [
+            "\\(5x^2 - 12 + \\frac{36}{5x^2}\\)",
+            "\\(5x^2 - 12 - \\frac{36}{5x^2}\\)",
+            "\\(5x^2 + 12 + \\frac{36}{5x^2}\\)",
+            "\\(5x^2 - 6 + \\frac{36}{5x^2}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+              "work": "\\(A = \\sqrt{5}x, quad B = \\frac{6}{\\sqrt{5}x}\\)"
+            },
+            {
+              "explain": "Substitute the surd terms into the perfect square expression.",
+              "work": "\\(\\left(\\sqrt{5}x - \\frac{6}{\\sqrt{5}x}\\right)^2 = (\\sqrt{5}x)^2 - 2(\\sqrt{5}x)\\left(\\frac{6}{\\sqrt{5}x}\\right) + \\left(\\frac{6}{\\sqrt{5}x}\\right)^2\\)"
+            },
+            {
+              "explain": "Simplify the radical products and fractional powers.",
+              "work": "\\(= 5x^2 - 12 + \\frac{36}{5x^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q65",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{6}x - \\frac{7}{\\sqrt{6}x}\\right)^2\\)",
+          "options": [
+            "\\(6x^2 - 7 + \\frac{49}{6x^2}\\)",
+            "\\(6x^2 + 14 + \\frac{49}{6x^2}\\)",
+            "\\(6x^2 - 14 + \\frac{49}{6x^2}\\)",
+            "\\(6x^2 - 14 - \\frac{49}{6x^2}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+              "work": "\\(A = \\sqrt{6}x, quad B = \\frac{7}{\\sqrt{6}x}\\)"
+            },
+            {
+              "explain": "Substitute the surd terms into the perfect square expression.",
+              "work": "\\(\\left(\\sqrt{6}x - \\frac{7}{\\sqrt{6}x}\\right)^2 = (\\sqrt{6}x)^2 - 2(\\sqrt{6}x)\\left(\\frac{7}{\\sqrt{6}x}\\right) + \\left(\\frac{7}{\\sqrt{6}x}\\right)^2\\)"
+            },
+            {
+              "explain": "Simplify the radical products and fractional powers.",
+              "work": "\\(= 6x^2 - 14 + \\frac{49}{6x^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q66",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{7}x - \\frac{8}{\\sqrt{7}x}\\right)^2\\)",
+          "options": [
+            "\\(7x^2 - 16 - \\frac{64}{7x^2}\\)",
+            "\\(7x^2 - 16 + \\frac{64}{7x^2}\\)",
+            "\\(7x^2 - 8 + \\frac{64}{7x^2}\\)",
+            "\\(7x^2 + 16 + \\frac{64}{7x^2}\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+              "work": "\\(A = \\sqrt{7}x, quad B = \\frac{8}{\\sqrt{7}x}\\)"
+            },
+            {
+              "explain": "Substitute the surd terms into the perfect square expression.",
+              "work": "\\(\\left(\\sqrt{7}x - \\frac{8}{\\sqrt{7}x}\\right)^2 = (\\sqrt{7}x)^2 - 2(\\sqrt{7}x)\\left(\\frac{8}{\\sqrt{7}x}\\right) + \\left(\\frac{8}{\\sqrt{7}x}\\right)^2\\)"
+            },
+            {
+              "explain": "Simplify the radical products and fractional powers.",
+              "work": "\\(= 7x^2 - 16 + \\frac{64}{7x^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q67",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{8}x - \\frac{9}{\\sqrt{8}x}\\right)^2\\)",
+          "options": [
+            "\\(8x^2 - 9 + \\frac{81}{8x^2}\\)",
+            "\\(8x^2 + 18 + \\frac{81}{8x^2}\\)",
+            "\\(8x^2 - 18 - \\frac{81}{8x^2}\\)",
+            "\\(8x^2 - 18 + \\frac{81}{8x^2}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+              "work": "\\(A = \\sqrt{8}x, quad B = \\frac{9}{\\sqrt{8}x}\\)"
+            },
+            {
+              "explain": "Substitute the surd terms into the perfect square expression.",
+              "work": "\\(\\left(\\sqrt{8}x - \\frac{9}{\\sqrt{8}x}\\right)^2 = (\\sqrt{8}x)^2 - 2(\\sqrt{8}x)\\left(\\frac{9}{\\sqrt{8}x}\\right) + \\left(\\frac{9}{\\sqrt{8}x}\\right)^2\\)"
+            },
+            {
+              "explain": "Simplify the radical products and fractional powers.",
+              "work": "\\(= 8x^2 - 18 + \\frac{81}{8x^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q68",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{9}x - \\frac{10}{\\sqrt{9}x}\\right)^2\\)",
+          "options": [
+            "\\(9x^2 + 20 + \\frac{100}{9x^2}\\)",
+            "\\(9x^2 - 20 - \\frac{100}{9x^2}\\)",
+            "\\(9x^2 - 20 + \\frac{100}{9x^2}\\)",
+            "\\(9x^2 - 10 + \\frac{100}{9x^2}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+              "work": "\\(A = \\sqrt{9}x, quad B = \\frac{10}{\\sqrt{9}x}\\)"
+            },
+            {
+              "explain": "Substitute the surd terms into the perfect square expression.",
+              "work": "\\(\\left(\\sqrt{9}x - \\frac{10}{\\sqrt{9}x}\\right)^2 = (\\sqrt{9}x)^2 - 2(\\sqrt{9}x)\\left(\\frac{10}{\\sqrt{9}x}\\right) + \\left(\\frac{10}{\\sqrt{9}x}\\right)^2\\)"
+            },
+            {
+              "explain": "Simplify the radical products and fractional powers.",
+              "work": "\\(= 9x^2 - 20 + \\frac{100}{9x^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q69",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{10}x - \\frac{11}{\\sqrt{10}x}\\right)^2\\)",
+          "options": [
+            "\\(10x^2 - 22 + \\frac{121}{10x^2}\\)",
+            "\\(10x^2 - 11 + \\frac{121}{10x^2}\\)",
+            "\\(10x^2 + 22 + \\frac{121}{10x^2}\\)",
+            "\\(10x^2 - 22 - \\frac{121}{10x^2}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+              "work": "\\(A = \\sqrt{10}x, quad B = \\frac{11}{\\sqrt{10}x}\\)"
+            },
+            {
+              "explain": "Substitute the surd terms into the perfect square expression.",
+              "work": "\\(\\left(\\sqrt{10}x - \\frac{11}{\\sqrt{10}x}\\right)^2 = (\\sqrt{10}x)^2 - 2(\\sqrt{10}x)\\left(\\frac{11}{\\sqrt{10}x}\\right) + \\left(\\frac{11}{\\sqrt{10}x}\\right)^2\\)"
+            },
+            {
+              "explain": "Simplify the radical products and fractional powers.",
+              "work": "\\(= 10x^2 - 22 + \\frac{121}{10x^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11-1a-high-q70",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify the algebraic surd expression: \\(\\left(\\sqrt{11}x - \\frac{12}{\\sqrt{11}x}\\right)^2\\)",
+          "options": [
+            "\\(11x^2 - 12 + \\frac{144}{11x^2}\\)",
+            "\\(11x^2 + 24 + \\frac{144}{11x^2}\\)",
+            "\\(11x^2 - 24 - \\frac{144}{11x^2}\\)",
+            "\\(11x^2 - 24 + \\frac{144}{11x^2}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Apply the perfect square expansion formula: \\((A - B)^2 = A^2 - 2AB + B^2\\).",
+              "work": "\\(A = \\sqrt{11}x, quad B = \\frac{12}{\\sqrt{11}x}\\)"
+            },
+            {
+              "explain": "Substitute the surd terms into the perfect square expression.",
+              "work": "\\(\\left(\\sqrt{11}x - \\frac{12}{\\sqrt{11}x}\\right)^2 = (\\sqrt{11}x)^2 - 2(\\sqrt{11}x)\\left(\\frac{12}{\\sqrt{11}x}\\right) + \\left(\\frac{12}{\\sqrt{11}x}\\right)^2\\)"
+            },
+            {
+              "explain": "Simplify the radical products and fractional powers.",
+              "work": "\\(= 11x^2 - 24 + \\frac{144}{11x^2}\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

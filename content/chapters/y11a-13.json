@@ -1,0 +1,373 @@
+{
+  "chapterId": "y11a-13",
+  "title": "Chapter 13: Data and probability",
+  "year": "2020",
+  "topics": [
+    {
+      "topicId": "y11a-13A",
+      "code": "13A",
+      "title": "Random variables and frequency tables",
+      "questions": [
+        {
+          "id": "bb2020-q23",
+          "type": "multipart",
+          "stem": "A discrete random variable \\(X\\) has the probability distribution shown below, where \\(m\\) is a constant.",
+          "figure": {
+            "svg": "fig:cb189500c7"
+          },
+          "parts": [
+            {
+              "id": "bb2020-q23a",
+              "type": "mc",
+              "stem": "(a) Find the value of \\(m\\).",
+              "options": [
+                "\\(m=0.16\\)",
+                "\\(m=0.20\\)",
+                "\\(m=0.24\\)",
+                "\\(m=0.04\\)"
+              ],
+              "answer": 0,
+              "hint": "All probabilities in a distribution must sum to 1.",
+              "steps": [
+                {
+                  "explain": "The sum of all probabilities in the table must equal 1.",
+                  "work": "\\(0.24+0.2+m+0.4 = 1\\)",
+                  "figure": {
+                    "svg": "fig:cb189500c7"
+                  }
+                },
+                {
+                  "explain": "Solve for \\(m\\).",
+                  "work": "\\(m = 1 - 0.84 = 0.16\\)"
+                }
+              ]
+            },
+            {
+              "id": "bb2020-q23b",
+              "type": "mc",
+              "stem": "(b) Using \\(m=0.16\\), calculate the expected value \\(E(X)\\).",
+              "options": [
+                "\\(E(X)=21.5\\)",
+                "\\(E(X)=22.0\\)",
+                "\\(E(X)=21.72\\)",
+                "\\(E(X)=86\\)"
+              ],
+              "answer": 2,
+              "hint": "Use \\(E(X) = \\sum x \\cdot P(x)\\).",
+              "steps": [
+                {
+                  "explain": "Multiply each \\(x\\)-value by its probability and add the results.",
+                  "work": "\\(E(X) = 20(0.24)+21(0.2)+22(0.16)+23(0.4)\\)",
+                  "figure": {
+                    "svg": "fig:a610e7cd2f"
+                  }
+                },
+                {
+                  "explain": "Evaluate each term and sum.",
+                  "work": "\\(= 4.8+4.2+3.52+9.2 = 21.72\\)"
+                }
+              ]
+            },
+            {
+              "id": "bb2020-q23c",
+              "type": "mc",
+              "stem": "(c) Calculate the variance \\(\\text{Var}(X)\\), correct to 4 decimal places.",
+              "options": [
+                "\\(\\text{Var}(X)=1.2160\\)",
+                "\\(\\text{Var}(X)=471.7584\\)",
+                "\\(\\text{Var}(X)=1.4816\\)",
+                "\\(\\text{Var}(X)=21.72\\)"
+              ],
+              "answer": 2,
+              "hint": "Use \\(\\text{Var}(X) = E(X^2) - [E(X)]^2\\).",
+              "steps": [
+                {
+                  "explain": "Calculate \\(E(X^2)\\) by multiplying each \\(x^2\\)-value by its probability and summing.",
+                  "work": "\\(E(X^2) = 20^2(0.24)+21^2(0.2)+22^2(0.16)+23^2(0.4) = 96+88.2+77.44+211.6 = 473.24\\)"
+                },
+                {
+                  "explain": "Subtract \\([E(X)]^2\\) using the value \\(E(X)=21.72\\) found in part (b).",
+                  "work": "\\(\\text{Var}(X) = 473.24 - 21.72^2 = 473.24 - 471.7584\\)"
+                },
+                {
+                  "explain": "Complete the subtraction.",
+                  "work": "\\(\\text{Var}(X) = 1.4816\\)"
+                }
+              ]
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "glenwood2020-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A discrete probability distribution is shown below.\n\n$$ \\begin{array}{c|ccccc} X=x & 1 & 2 & 3 & 4 & 5 \\\\ \\hline P(X=x) & 0.23 & 0.38 & 0.21 & 0.13 & 0.05 \\end{array} $$\n\nWhat is the expected value \\( E(X) \\)?",
+          "options": [
+            "2.39",
+            "1.00",
+            "1.56",
+            "5.71"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "The expected value of a discrete random variable is \\( E(X) = \\sum x \\cdot P(X=x) \\) — multiply each outcome by its probability and add the results."
+            },
+            {
+              "explain": "Substitute every \\( (x, P(X=x)) \\) pair from the table.",
+              "work": "E(X) = 1(0.23) + 2(0.38) + 3(0.21) + 4(0.13) + 5(0.05)"
+            },
+            {
+              "explain": "Evaluate each product.",
+              "work": "E(X) = 0.23 + 0.76 + 0.63 + 0.52 + 0.25"
+            },
+            {
+              "explain": "Add the products to get the final expected value.",
+              "work": "E(X) = 2.39"
+            }
+          ],
+          "timeLimit": 75,
+          "meta": {
+            "source": "Glenwood 2020 Trial Q3",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "glenwood-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-DIST-01"
+          }
+        },
+        {
+          "id": "gosford2020-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which statement is true for an ungrouped data set with no outliers?",
+          "options": [
+            "The largest possible range is \\( 2\\times\\text{IQR} \\)",
+            "The largest possible range is \\( 3\\times\\text{IQR} \\)",
+            "The largest possible range is \\( 5\\times\\text{IQR} \\)",
+            "The largest possible range is \\( 4\\times\\text{IQR} \\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "With no outliers, every data value must lie within \\( 1.5\\times\\text{IQR} \\) of the nearer quartile (the standard outlier-fence rule) — shown below as the two dashed red \"fences\" on either side of the IQR box.",
+              "work": "<svg viewBox=\"0 0 356.6 158\" width=\"356.6\" height=\"158\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,34)\"><line x1=\"1.4000000000000021\" y1=\"60\" x2=\"330\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"144\" y=\"46\" width=\"62\" height=\"28\" fill=\"#dbeafe\" fill-opacity=\"0.6\" stroke=\"#2563eb\" stroke-width=\"1.8\"/><line x1=\"144\" y1=\"52\" x2=\"144\" y2=\"68\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"206\" y1=\"52\" x2=\"206\" y2=\"68\" stroke=\"#2563eb\" stroke-width=\"2\"/><text x=\"144\" y=\"38\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q1</text><text x=\"206\" y=\"38\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q3</text><text x=\"175\" y=\"90\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">IQR</text><line x1=\"51\" y1=\"42\" x2=\"51\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"299\" y1=\"42\" x2=\"299\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><text x=\"51\" y=\"34\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q1−1.5·IQR</text><text x=\"299\" y=\"34\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q3+1.5·IQR</text></g>\n</svg>\n\n\\(\\text{max value} \\le Q_3 + 1.5\\,\\text{IQR}, \\qquad \\text{min value} \\ge Q_1 - 1.5\\,\\text{IQR}\\)"
+            },
+            {
+              "explain": "The range is the difference between the largest and smallest values, so its largest possible value occurs when both extremes sit exactly at their fences — the green bracket below shows this maximum possible span.",
+              "work": "<svg viewBox=\"0 0 356.6 158\" width=\"356.6\" height=\"158\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(14,34)\"><line x1=\"1.4000000000000021\" y1=\"60\" x2=\"330\" y2=\"60\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/><rect x=\"144\" y=\"46\" width=\"62\" height=\"28\" fill=\"#dbeafe\" fill-opacity=\"0.4\" stroke=\"#2563eb\" stroke-width=\"1.5\"/><line x1=\"144\" y1=\"54\" x2=\"144\" y2=\"66\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"206\" y1=\"54\" x2=\"206\" y2=\"66\" stroke=\"#2563eb\" stroke-width=\"2\"/><line x1=\"51\" y1=\"42\" x2=\"51\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"299\" y1=\"42\" x2=\"299\" y2=\"78\" stroke=\"#dc2626\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><line x1=\"51\" y1=\"100\" x2=\"299\" y2=\"100\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"51\" y1=\"94\" x2=\"51\" y2=\"106\" stroke=\"#059669\" stroke-width=\"2\"/><line x1=\"299\" y1=\"94\" x2=\"299\" y2=\"106\" stroke=\"#059669\" stroke-width=\"2\"/><text x=\"175\" y=\"118\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">max possible range = 4 × IQR</text><text x=\"51\" y=\"36\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q1−1.5·IQR</text><text x=\"299\" y=\"36\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9.5\" font-weight=\"600\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Q3+1.5·IQR</text></g>\n</svg>\n\n\\(\\text{range} \\le (Q_3+1.5\\,\\text{IQR}) - (Q_1-1.5\\,\\text{IQR}) = (Q_3-Q_1) + 3\\,\\text{IQR}\\)"
+            },
+            {
+              "explain": "Since \\( Q_3-Q_1 = \\text{IQR} \\), combine the terms.",
+              "work": "\\(\\text{range} \\le \\text{IQR} + 3\\,\\text{IQR} = 4\\,\\text{IQR}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q4",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "STAT-DESC-01"
+          }
+        },
+        {
+          "id": "hg2020-q13",
+          "type": "multipart",
+          "stem": "The discrete random variable \\(X\\) has the probability distribution shown below.",
+          "figure": {
+            "svg": "fig:020fd86451"
+          },
+          "parts": [
+            {
+              "id": "hg2020-q13a",
+              "type": "mc",
+              "stem": "(a) Find \\(P(1 < X \\le 3)\\).",
+              "options": [
+                "\\(0.6\\)",
+                "\\(0.8\\)",
+                "\\(0.7\\)",
+                "\\(0.4\\)"
+              ],
+              "answer": 0,
+              "hint": "\\(1 < X \\le 3\\) means \\(X=2\\) or \\(X=3\\) — it does NOT include \\(X=1\\), since the inequality is strict there.",
+              "steps": [
+                {
+                  "explain": "The condition \\(1 < X \\le 3\\) includes \\(X=2\\) and \\(X=3\\), but excludes \\(X=1\\) (since the inequality on that side is strict).",
+                  "work": "\\(P(1<X\\le 3) = P(X=2)+P(X=3)\\)"
+                },
+                {
+                  "explain": "Substitute the given probabilities and add.",
+                  "work": "\\(= 0.4+0.2 = 0.6\\)"
+                }
+              ]
+            },
+            {
+              "id": "hg2020-q13b",
+              "type": "mc",
+              "stem": "(b) Find the variance of \\(X\\).",
+              "options": [
+                "\\(1.2\\)",
+                "\\(1.4\\)",
+                "\\(4\\)",
+                "\\(2\\)"
+              ],
+              "answer": 0,
+              "hint": "First find \\(\\mu = E(X)\\), then use \\(\\text{Var}(X) = E(X^2) - \\mu^2\\).",
+              "steps": [
+                {
+                  "explain": "Find the mean \\(\\mu=E(X)\\) by multiplying each \\(x\\)-value by its probability and summing.",
+                  "work": "\\(\\mu = 0(0.1)+1(0.2)+2(0.4)+3(0.2)+4(0.1) = 0+0.2+0.8+0.6+0.4 = 2\\)"
+                },
+                {
+                  "explain": "Find \\(E(X^2)\\) by multiplying each \\(x^2\\)-value by its probability and summing.",
+                  "work": "\\(E(X^2) = 0^2(0.1)+1^2(0.2)+2^2(0.4)+3^2(0.2)+4^2(0.1) = 0+0.2+1.6+1.8+1.6 = 5.2\\)"
+                },
+                {
+                  "explain": "Use the variance formula \\(\\text{Var}(X)=E(X^2)-\\mu^2\\).",
+                  "work": "\\(\\text{Var}(X) = 5.2-2^2 = 5.2-4 = 1.2\\)"
+                }
+              ]
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hornsby Girls HS 2020 2U Trials",
+            "school": "Hornsby Girls High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-2u-q6",
+          "type": "mc",
+          "stem": "A teacher asked fifty students to identify their favourite type of pet. A partially completed Pareto chart shows some of the data collected. How many students picked cats as their favourite pet?",
+          "figure": {
+            "svg": "fig:d1ba111e96"
+          },
+          "options": [
+            "12 students",
+            "14 students",
+            "28 students",
+            "34 students"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "In a Pareto chart, each category's own frequency is the GAP between its cumulative percentage and the previous category's cumulative percentage. From the chart, Dogs reach \\(40\\%\\) cumulative, and Cats reach \\(68\\%\\) cumulative.",
+              "work": "<svg viewBox=\"0 0 340 260\" width=\"340\" height=\"260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(20,20)\"><line x1=\"40\" y1=\"180\" x2=\"290\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"180\" stroke=\"#475569\" stroke-width=\"1.3\"/><text x=\"32.0\" y=\"24.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">100%</text><text x=\"32.0\" y=\"184.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">0%</text><text x=\"65.0\" y=\"196.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Dogs</text><text x=\"115.0\" y=\"196.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Cats</text><text x=\"165.0\" y=\"196.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Birds</text><text x=\"215.0\" y=\"196.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Goats</text><text x=\"265.0\" y=\"196.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Fish</text><path d=\"M 65.0,116.0 L 115.0,71.2 L 165.0,45.6 L 215.0,26.4 L 265.0,20.0\" fill=\"none\" stroke=\"#334155\" stroke-width=\"2\"/><circle cx=\"65.0\" cy=\"116.0\" r=\"3\" fill=\"#1e293b\"/><text x=\"65.0\" y=\"108.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">40%</text><circle cx=\"115.0\" cy=\"71.2\" r=\"3\" fill=\"#1e293b\"/><text x=\"115.0\" y=\"63.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">68%</text><circle cx=\"165.0\" cy=\"45.6\" r=\"3\" fill=\"#1e293b\"/><text x=\"165.0\" y=\"37.6\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">84%</text><circle cx=\"215.0\" cy=\"26.4\" r=\"3\" fill=\"#1e293b\"/><text x=\"215.0\" y=\"18.4\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">96%</text><circle cx=\"265.0\" cy=\"20.0\" r=\"3\" fill=\"#1e293b\"/><text x=\"265.0\" y=\"12.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">100%</text><line x1=\"65\" y1=\"116\" x2=\"65\" y2=\"71.19999999999999\" stroke=\"#059669\" stroke-width=\"1.6\" stroke-dasharray=\"3,3\"/><line x1=\"115\" y1=\"71.19999999999999\" x2=\"65\" y2=\"71.19999999999999\" stroke=\"#059669\" stroke-width=\"1.6\" stroke-dasharray=\"3,3\"/><text x=\"90.0\" y=\"87.6\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">28%</text></g></svg>\n\n\\(\\text{Cats' share} = 68\\% - 40\\% = 28\\%\\)"
+            },
+            {
+              "explain": "Convert this percentage of the total 50 students into a number of students.",
+              "work": "\\(28\\% \\times 50 = 0.28 \\times 50\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(= 14 \\text{ students}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-2u-q28",
+          "type": "mc",
+          "stem": "A discrete random variable \\(X\\) has the probability distribution shown below, where \\(r\\) is a constant. Find \\(Var(X)\\).",
+          "figure": {
+            "svg": "fig:e2fa9579f3"
+          },
+          "options": [
+            "\\(\\frac{4}{3}\\)",
+            "\\(3\\)",
+            "\\(\\frac{29}{3}\\)",
+            "\\(\\frac{1}{9}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "All probabilities must sum to 1. Add all five probabilities in terms of \\(r\\) and solve.",
+              "work": "\\(r+2r+3r+2r+r = 9r = 1 \\implies r = \\frac{1}{9}\\)"
+            },
+            {
+              "explain": "Find \\(E(X) = \\sum x \\cdot P(X{=}x)\\), using the now-known probabilities \\(\\frac{1}{9},\\frac{2}{9},\\frac{3}{9},\\frac{2}{9},\\frac{1}{9}\\).",
+              "work": "\\(E(X) = \\frac{1(1)+2(2)+3(3)+4(2)+5(1)}{9} = \\frac{1+4+9+8+5}{9} = \\frac{27}{9} = 3\\)"
+            },
+            {
+              "explain": "Find \\(E(X^2) = \\sum x^2 \\cdot P(X{=}x)\\).",
+              "work": "\\(E(X^2) = \\frac{1^2(1)+2^2(2)+3^2(3)+4^2(2)+5^2(1)}{9} = \\frac{1+8+27+32+25}{9} = \\frac{93}{9}\\)"
+            },
+            {
+              "explain": "Apply the variance formula \\(Var(X) = E(X^2) - [E(X)]^2\\).",
+              "work": "\\(Var(X) = \\frac{93}{9} - 3^2 = \\frac{93}{9} - \\frac{81}{9} = \\frac{12}{9} = \\frac{4}{3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-13B",
+      "code": "13B",
+      "title": "Cumulative frequency",
+      "questions": [
+        {
+          "id": "hillsgrammar-25-2u-q9",
+          "type": "mc",
+          "stem": "The stem and leaf plot below shows the number of lollies that fourteen students in the class have eaten this week. Two students were absent when this data was collected. Once their data was added to the data of the rest of the class, the grouped frequency distribution table below was completed. The cumulative frequency for the \\(10-19\\) class is marked with \\(X\\). Which of the following values for \\(X\\) could be true?",
+          "figure": {
+            "svg": "fig:a84e96547c"
+          },
+          "options": [
+            "\\(X = 10\\)",
+            "\\(X = 12\\)",
+            "\\(X = 14\\)",
+            "\\(X = 16\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "From the stem-and-leaf plot, count how many of the original 14 students fall in the \\(0-9\\) class and the \\(10-19\\) class.",
+              "work": "<svg viewBox=\"0 0 312 204\" width=\"312\" height=\"204\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(16,16)\"><rect x=\"0\" y=\"0\" width=\"280\" height=\"36\" fill=\"#eef2ff\"/><rect x=\"0\" y=\"0\" width=\"280\" height=\"172\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"172\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"0\" y1=\"36\" x2=\"280\" y2=\"36\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"0\" y1=\"70\" x2=\"280\" y2=\"70\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"104\" x2=\"280\" y2=\"104\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"138\" x2=\"280\" y2=\"138\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"30.0\" y=\"24.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Stem</text><text x=\"170.0\" y=\"24.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">Leaf</text><text x=\"30.0\" y=\"59.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">0</text><text x=\"76.0\" y=\"59.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">0  0  2  5</text><text x=\"30.0\" y=\"93.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">1</text><text x=\"76.0\" y=\"93.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">1  2  2  6  9</text><text x=\"30.0\" y=\"127.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">2</text><text x=\"76.0\" y=\"127.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">0  4  4  7</text><text x=\"30.0\" y=\"161.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">3</text><text x=\"76.0\" y=\"161.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"13\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">3</text></g></svg>\n\n\\(0\\text{–}9: 4 \\text{ students} \\quad (0,0,2,5)\\), \\quad \\(10\\text{–}19: 5 \\text{ students} \\quad (11,12,12,16,19)\\)"
+            },
+            {
+              "explain": "The cumulative frequency \\(X\\) for the \\(10-19\\) class is the total count of students in the \\(0-9\\) AND \\(10-19\\) classes combined, after the 2 absent students' data is added somewhere in the table.",
+              "work": "\\(X = (\\text{freq. of } 0\\text{–}9) + (\\text{freq. of } 10\\text{–}19)\\)"
+            },
+            {
+              "explain": "Before adding the 2 new students, this total is \\(4+5=9\\). The 2 new students could each land in the \\(0-9\\) class, the \\(10-19\\) class, a HIGHER class, or a mix — so \\(X\\) can only increase by 0, 1, or 2 from this base of 9, depending on where they fall.",
+              "work": "\\(X \\in \\{9, 10, 11\\}\\)"
+            },
+            {
+              "explain": "Comparing this possible range to the given options, only \\(X=10\\) falls inside \\(\\{9,10,11\\}\\) — the others (12, 14, 16) are all too large to be possible.",
+              "work": "\\(X = 10\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    }
+  ]
+}

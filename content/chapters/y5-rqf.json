@@ -1,0 +1,2225 @@
+{
+  "chapterId": "y5-rqf",
+  "title": "Rational Quantities / Fractions (A)",
+  "year": "Year 5",
+  "topics": [
+    {
+      "topicId": "y5-rqf",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y5-rqf-1-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction has been shaded in the figure below?",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"100\" height=\"100\"><circle cx=\"50\" cy=\"50\" r=\"45\" stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" /><path d=\"M 50 50 L 95 50 A 45 45 0 0 1 81.8 81.8 Z\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><path d=\"M 50 50 L 81.8 81.8 A 45 45 0 0 1 50 95 Z\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><path d=\"M 50 50 L 50 95 A 45 45 0 0 1 18.2 81.8 Z\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><line x1=\"50\" y1=\"5\" x2=\"50\" y2=\"95\" stroke=\"#94a3b8\" /><line x1=\"5\" y1=\"50\" x2=\"95\" y2=\"50\" stroke=\"#94a3b8\" /><line x1=\"18.2\" y1=\"18.2\" x2=\"81.8\" y2=\"81.8\" stroke=\"#94a3b8\" /><line x1=\"18.2\" y1=\"81.8\" x2=\"81.8\" y2=\"18.2\" stroke=\"#94a3b8\" /></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{3}{8}\\)",
+            "\\(\\frac{5}{8}\\)",
+            "\\(\\frac{1}{8}\\)",
+            "\\(\\frac{7}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the fraction of sampled sectors over the total sectors.",
+          "solution": "There are 8 equal sectors, and 3 are sampled. This gives the fraction \\(\\frac{3}{8}\\).",
+          "steps": [
+            {
+              "explain": "State the total number of sectors.",
+              "work": "\\text{Total sectors} = 8"
+            },
+            {
+              "explain": "Determine how many sectors were sampled.",
+              "work": "\\text{Sampled sectors} = 3"
+            },
+            {
+              "explain": "Write the fraction.",
+              "work": "\\text{Fraction} = \\frac{3}{8}"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y5-rqf-3-q3e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the number lines shown below, write the equivalent fraction in twelfths for: \\(\\frac{1}{6}\\).",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"480\" height=\"180\" style=\"font-family:sans-serif;font-size:10px;\"><line x1=\"40\" y1=\"30\" x2=\"440\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"23\" x2=\"40\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"50\">0</text><line x1=\"173.3\" y1=\"23\" x2=\"173.3\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"168\" y=\"50\">1/3</text><line x1=\"306.7\" y1=\"23\" x2=\"306.7\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"301\" y=\"50\">2/3</text><line x1=\"440\" y1=\"23\" x2=\"440\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"50\">1</text><line x1=\"40\" y1=\"90\" x2=\"440\" y2=\"90\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"83\" x2=\"40\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"110\">0</text><line x1=\"106.7\" y1=\"83\" x2=\"106.7\" y2=\"97\" stroke=\"black\" stroke-width=\"1\" /><text x=\"101\" y=\"110\">1/6</text><line x1=\"173.3\" y1=\"83\" x2=\"173.3\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"168\" y=\"110\">2/6</text><line x1=\"240\" y1=\"83\" x2=\"240\" y2=\"97\" stroke=\"black\" stroke-width=\"1\" /><text x=\"235\" y=\"110\">3/6</text><line x1=\"306.7\" y1=\"83\" x2=\"306.7\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"301\" y=\"110\">4/6</text><line x1=\"373.3\" y1=\"83\" x2=\"373.3\" y2=\"97\" stroke=\"black\" stroke-width=\"1\" /><text x=\"368\" y=\"110\">5/6</text><line x1=\"440\" y1=\"83\" x2=\"440\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"110\">1</text><line x1=\"40\" y1=\"150\" x2=\"440\" y2=\"150\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"143\" x2=\"40\" y2=\"157\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"170\">0</text><line x1=\"73.3\" y1=\"145\" x2=\"73.3\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"68\" y=\"170\">1/12</text><line x1=\"106.7\" y1=\"145\" x2=\"106.7\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"101\" y=\"170\">2/12</text><line x1=\"140\" y1=\"145\" x2=\"140\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"135\" y=\"170\">3/12</text><line x1=\"173.3\" y1=\"145\" x2=\"173.3\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"168\" y=\"170\">4/12</text><line x1=\"206.7\" y1=\"145\" x2=\"206.7\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"201\" y=\"170\">5/12</text><line x1=\"240\" y1=\"145\" x2=\"240\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"235\" y=\"170\">6/12</text><line x1=\"273.3\" y1=\"145\" x2=\"273.3\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"268\" y=\"170\">7/12</text><line x1=\"306.7\" y1=\"145\" x2=\"306.7\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"301\" y=\"170\">8/12</text><line x1=\"340\" y1=\"145\" x2=\"340\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"335\" y=\"170\">9/12</text><line x1=\"373.3\" y1=\"145\" x2=\"373.3\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"368\" y=\"170\">10/12</text><line x1=\"406.7\" y1=\"145\" x2=\"406.7\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"401\" y=\"170\">11/12</text><line x1=\"440\" y1=\"143\" x2=\"440\" y2=\"157\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"170\">1</svg></div>"
+          },
+          "options": [
+            "\\(\\frac{4}{12}\\)",
+            "\\(\\frac{1}{12}\\)",
+            "\\(\\frac{2}{12}\\)",
+            "\\(\\frac{3}{12}\\)"
+          ],
+          "answer": 2,
+          "hint": "Determine the factor to convert 6ths to 12ths.",
+          "solution": "Multiply the numerator and denominator of \\(\\frac{1}{6}\\) by 2: \\(\\frac{1 \\times 2}{6 \\times 2} = \\frac{2}{12}\\). This aligns with the equivalent point on the number lines.",
+          "steps": [
+            {
+              "explain": "Find the factor for the denominator.",
+              "work": "12 \\div 6 = 2"
+            },
+            {
+              "explain": "Multiply the numerator.",
+              "work": "1 \\times 2 = 2"
+            },
+            {
+              "explain": "Complete the equivalent fraction.",
+              "work": "\\frac{1}{6} = \\frac{2}{12}"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y5-rqf-1-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Compare the fractions: \\(\\frac{2}{3} \\quad \\square \\quad \\frac{8}{12}\\).",
+          "options": [
+            "\\(<\\)",
+            "\\(=\\)",
+            "None of these",
+            "\\(>\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert \\(\\frac{2}{3}\\) to twelfths.",
+          "solution": "Convert \\(\\frac{2}{3}\\) to an equivalent fraction in twelfths: \\(\\frac{2 \\times 4}{3 \\times 4} = \\frac{8}{12}\\). Since \\(\\frac{8}{12}\\) is equal to \\(\\frac{8}{12}\\), the two fractions are equal: \\(\\frac{2}{3} = \\frac{8}{12}\\).",
+          "steps": [
+            {
+              "explain": "Convert \\(\\frac{2}{3}\\) to a denominator of 12.",
+              "work": "\\frac{2}{3} = \\frac{2 \\times 4}{3 \\times 4} = \\frac{8}{12}"
+            },
+            {
+              "explain": "Compare the two values.",
+              "work": "\\frac{8}{12} = \\frac{8}{12}"
+            },
+            {
+              "explain": "State the final relation.",
+              "work": "\\frac{2}{3} = \\frac{8}{12}"
+            }
+          ],
+          "timeLimit": 30,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y5-rqf-1-p61-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the mixed fraction for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"120\" height=\"60\"><circle cx=\"30\" cy=\"30\" r=\"20\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"30\" y1=\"10\" x2=\"30\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"10\" y1=\"30\" x2=\"50\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /><path d=\"M 70 30 L 90 30 A 20 20 0 0 0 70 10 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"10\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"70\" y1=\"30\" x2=\"90\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /></svg></div>"
+          },
+          "options": [
+            "1\\frac{1}{2}",
+            "1\\frac{3}{4}",
+            "2\\frac{1}{4}",
+            "1\\frac{1}{4}"
+          ],
+          "answer": 3,
+          "hint": "Convert \\(\\frac{5}{4}\\) to a mixed number by dividing 5 by 4.",
+          "solution": "Divide the numerator 5 by 4: \\(5 \\div 4 = 1\\) with a remainder of 1. The mixed fraction is 1\\frac{1}{4}.",
+          "steps": [
+            {
+              "explain": "Divide 5 by 4 to find the whole number and remainder.",
+              "work": "5 \\div 4 = 1 \\quad \\text{remainder } 1"
+            },
+            {
+              "explain": "Write as a mixed numeral.",
+              "work": "1\\frac{1}{4}"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y5-rqf-1-p61-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the improper fraction for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"150\" height=\"90\"><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"20\" y=\"10\" width=\"100\" height=\"20\" /><line x1=\"40\" y1=\"10\" x2=\"40\" y2=\"30\" /><line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"30\" /><line x1=\"80\" y1=\"10\" x2=\"80\" y2=\"30\" /><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"30\" /></g><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"20\" y=\"35\" width=\"100\" height=\"20\" /><line x1=\"40\" y1=\"35\" x2=\"40\" y2=\"55\" /><line x1=\"60\" y1=\"35\" x2=\"60\" y2=\"55\" /><line x1=\"80\" y1=\"35\" x2=\"80\" y2=\"55\" /><line x1=\"100\" y1=\"35\" x2=\"100\" y2=\"55\" /></g><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"20\" y=\"60\" width=\"60\" height=\"20\" /><line x1=\"40\" y1=\"60\" x2=\"40\" y2=\"80\" /><line x1=\"60\" y1=\"60\" x2=\"60\" y2=\"80\" /></g></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{14}{5}\\)",
+            "\\(\\frac{11}{5}\\)",
+            "\\(\\frac{13}{5}\\)",
+            "\\(\\frac{5}{13}\\)"
+          ],
+          "answer": 2,
+          "hint": "Count the total number of fifth-blocks across the rectangles.",
+          "solution": "Each horizontal rectangle is divided into 5 equal parts. We have two full rectangles (5 + 5 = 10 fifths) and a third rectangle with 3 fifths. Total fifths = 10 + 3 = 13. The improper fraction is \\(\\frac{13}{5}\\).",
+          "steps": [
+            {
+              "explain": "Identify the unit of the parts.",
+              "work": "\\text{Unit} = \\frac{1}{5}"
+            },
+            {
+              "explain": "Sum the fifths from all three rectangles.",
+              "work": "\\text{Rectangle 1} = 5, \\quad \\text{Rectangle 2} = 5, \\quad \\text{Rectangle 3} = 3\\n\\text{Total fifths} = 5 + 5 + 3 = 13"
+            },
+            {
+              "explain": "Write the improper fraction.",
+              "work": "\\text{Improper fraction} = \\frac{13}{5}"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y5-rqf-1-p61-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the mixed fraction for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"150\" height=\"60\"><circle cx=\"30\" cy=\"30\" r=\"20\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"30\" y1=\"10\" x2=\"30\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"10\" y1=\"30\" x2=\"50\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /><path d=\"M 70 30 L 90 30 A 20 20 0 0 0 70 10 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"10\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"70\" y1=\"30\" x2=\"90\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /><circle cx=\"110\" cy=\"30\" r=\"20\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"90\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /></svg></div>"
+          },
+          "options": [
+            "2\\frac{1}{4}",
+            "2\\frac{3}{4}",
+            "2\\frac{1}{2}",
+            "1\\frac{3}{4}"
+          ],
+          "answer": 0,
+          "hint": "Divide 9 by 4 to get the whole number and the remainder.",
+          "solution": "Divide the numerator 9 by 4: \\(9 \\div 4 = 2\\) with a remainder of 1. The mixed fraction is 2\\frac{1}{4}.",
+          "steps": [
+            {
+              "explain": "Divide the numerator by the denominator.",
+              "work": "9 \\div 4 = 2 \\quad \\text{remainder } 1"
+            },
+            {
+              "explain": "Write as a mixed fraction.",
+              "work": "2\\frac{1}{4}"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y5-rqf-3-p62-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{3}{4} - \\frac{1}{8}\\)",
+          "options": [
+            "\\(\\frac{2}{8}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{2}{4}\\)",
+            "\\(\\frac{5}{8}\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert \\(\\frac{3}{4}\\) to eighths first.",
+          "solution": "Convert \\(\\frac{3}{4}\\) to \\(\\frac{6}{8}\\). Then subtract: \\(\\frac{6}{8} - \\frac{1}{8} = \\frac{5}{8}\\).",
+          "steps": [
+            {
+              "explain": "Convert \\(\\frac{3}{4}\\) to eighths.",
+              "work": "\\frac{3 \\times 2}{4 \\times 2} = \\frac{6}{8}"
+            },
+            {
+              "explain": "Subtract the fractions.",
+              "work": "\\frac{6}{8} - \\frac{1}{8} = \\frac{5}{8}"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y5-rqf-1-p63-q2d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Choose the correct symbol to place between the numbers: \\(\\frac{9}{10} \\ \\square \\ \\frac{4}{5}\\)",
+          "options": [
+            "<",
+            "=",
+            ">"
+          ],
+          "answer": 2,
+          "hint": "Convert 4/5 to tenths: 4/5 = 8/10. Compare 9/10 and 8/10.",
+          "solution": "\\(\\frac{4}{5} = \\frac{8}{10}\\). Since \\(\\frac{9}{10} > \\frac{8}{10}\\), the correct symbol is >.",
+          "steps": [
+            {
+              "explain": "Convert 4/5 to tenths.",
+              "work": "\\frac{4 \\times 2}{5 \\times 2} = \\frac{8}{10}"
+            },
+            {
+              "explain": "Compare the fractions.",
+              "work": "\\frac{9}{10} > \\frac{8}{10}"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y5-rqf-1",
+      "code": "MA3-RQF-01",
+      "title": "Compare and order fractions",
+      "questions": [
+        {
+          "id": "y5-rqf-1-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction has been shaded in the figure below?",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"200\" height=\"40\" style=\"border:1px solid #94a3b8;\"><rect x=\"0\" y=\"0\" width=\"40\" height=\"40\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><rect x=\"40\" y=\"0\" width=\"40\" height=\"40\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><rect x=\"80\" y=\"0\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#94a3b8\" /><rect x=\"120\" y=\"0\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#94a3b8\" /><rect x=\"160\" y=\"0\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#94a3b8\" /></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{2}{5}\\)",
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{1}{5}\\)",
+            "\\(\\frac{2}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the number of shaded sections and divide it by the total number of sections.",
+          "solution": "The figure has 5 equal sections in total. Out of these, 2 sections are shaded. Writing this as a fraction gives \\(\\frac{2}{5}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of equal sections in the figure.",
+              "work": "\\text{Total sections} = 5"
+            },
+            {
+              "explain": "Identify how many sections are shaded.",
+              "work": "\\text{Shaded sections} = 2"
+            },
+            {
+              "explain": "Write the fraction of the figure that is shaded by placing the shaded count over the total count.",
+              "work": "\\text{Fraction} = \\frac{2}{5}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction has been shaded in the circular figure below?",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"100\" height=\"100\"><circle cx=\"50\" cy=\"50\" r=\"45\" stroke=\"#94a3b8\" stroke-width=\"1\" fill=\"none\" /><path d=\"M 50 50 L 95 50 A 45 45 0 0 1 27.5 89 Z\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><path d=\"M 50 50 L 27.5 89 A 45 45 0 0 1 27.5 11 Z\" fill=\"none\" stroke=\"#94a3b8\" /><path d=\"M 50 50 L 27.5 11 A 45 45 0 0 1 95 50 Z\" fill=\"none\" stroke=\"#94a3b8\" /></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{1}{3}\\)"
+          ],
+          "answer": 3,
+          "hint": "Compare the number of shaded sectors to the total number of equal sectors.",
+          "solution": "The figure contains 3 equal sectors, and 1 sector is shaded. The fraction is \\(\\frac{1}{3}\\).",
+          "steps": [
+            {
+              "explain": "Count the total number of sectors in the circle.",
+              "work": "\\text{Total sectors} = 3"
+            },
+            {
+              "explain": "Determine the number of shaded sectors.",
+              "work": "\\text{Shaded sectors} = 1"
+            },
+            {
+              "explain": "Express the portion as a fraction.",
+              "work": "\\text{Fraction} = \\frac{1}{3}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction has been shaded in the figure below?",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"100\" height=\"100\"><polygon points=\"50,50 95,50 72.5,89\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><polygon points=\"50,50 72.5,89 27.5,89\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><polygon points=\"50,50 27.5,89 5,50\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><polygon points=\"50,50 5,50 27.5,11\" fill=\"none\" stroke=\"#94a3b8\" /><polygon points=\"50,50 27.5,11 72.5,11\" fill=\"none\" stroke=\"#94a3b8\" /><polygon points=\"50,50 72.5,11 95,50\" fill=\"none\" stroke=\"#94a3b8\" /></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{1}{6}\\)"
+          ],
+          "answer": 1,
+          "hint": "Place the shaded panels over the total panels and simplify by dividing both numerator and denominator by 3.",
+          "solution": "Out of 6 equal panels, 3 are shaded. This is represented by the fraction \\(\\frac{3}{6}\\), which simplifies to \\(\\frac{1}{2}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of triangular panels.",
+              "work": "\\text{Total panels} = 6"
+            },
+            {
+              "explain": "Count the number of shaded panels.",
+              "work": "\\text{Shaded panels} = 3"
+            },
+            {
+              "explain": "Write the fraction of the array that is shaded.",
+              "work": "\\text{Fraction} = \\frac{3}{6}"
+            },
+            {
+              "explain": "Simplify the fraction to its simplest form by dividing both the numerator and denominator by 3.",
+              "work": "\\frac{3 \\div 3}{6 \\div 3} = \\frac{1}{2}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction has been shaded in the grid below?",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"100\" height=\"100\" style=\"border:1px solid #94a3b8;\"><rect x=\"0\" y=\"0\" width=\"100\" height=\"50\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><line x1=\"25\" y1=\"0\" x2=\"25\" y2=\"100\" stroke=\"#94a3b8\" /><line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"100\" stroke=\"#94a3b8\" /><line x1=\"75\" y1=\"0\" x2=\"75\" y2=\"100\" stroke=\"#94a3b8\" /><line x1=\"0\" y1=\"25\" x2=\"100\" y2=\"25\" stroke=\"#94a3b8\" /><line x1=\"0\" y1=\"50\" x2=\"100\" y2=\"50\" stroke=\"#94a3b8\" /><line x1=\"0\" y1=\"75\" x2=\"100\" y2=\"75\" stroke=\"#94a3b8\" /></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{3}{8}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{1}{4}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the number of sprouted pockets by the total number of pockets, then simplify by dividing both by 8.",
+          "solution": "The tray has 16 pockets. Since 8 of them sprouted, the fraction is \\(\\frac{8}{16}\\), which simplifies to \\(\\frac{1}{2}\\).",
+          "steps": [
+            {
+              "explain": "Find the total pockets on the tray.",
+              "work": "\\text{Total pockets} = 16"
+            },
+            {
+              "explain": "Count the sprouted pockets.",
+              "work": "\\text{Sprouted pockets} = 8"
+            },
+            {
+              "explain": "Express this as a fraction.",
+              "work": "\\text{Fraction} = \\frac{8}{16}"
+            },
+            {
+              "explain": "Simplify the fraction to its simplest form by dividing both the numerator and denominator by 8.",
+              "work": "\\frac{8 \\div 8}{16 \\div 8} = \\frac{1}{2}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction has been shaded in the grid below?",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"120\" height=\"90\" style=\"border:1px solid #94a3b8;\"><rect x=\"0\" y=\"0\" width=\"30\" height=\"90\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><rect x=\"30\" y=\"0\" width=\"30\" height=\"30\" fill=\"#60a5fa\" stroke=\"#94a3b8\" /><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"90\" stroke=\"#94a3b8\" /><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"90\" stroke=\"#94a3b8\" /><line x1=\"90\" y1=\"0\" x2=\"90\" y2=\"90\" stroke=\"#94a3b8\" /><line x1=\"0\" y1=\"30\" x2=\"120\" y2=\"30\" stroke=\"#94a3b8\" /><line x1=\"0\" y1=\"60\" x2=\"120\" y2=\"60\" stroke=\"#94a3b8\" /></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{5}{12}\\)",
+            "\\(\\frac{1}{3}\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide the number of used bins by the total number of bins, then simplify by dividing both by 4.",
+          "solution": "The shelf has 12 bins. 4 bins are used, which corresponds to the fraction \\(\\frac{4}{12}\\) (or \\(\\frac{1}{3}\\)).",
+          "steps": [
+            {
+              "explain": "Identify the total number of bins.",
+              "work": "\\text{Total bins} = 12"
+            },
+            {
+              "explain": "Identify the number of bins used.",
+              "work": "\\text{Bins used} = 4"
+            },
+            {
+              "explain": "Write the fraction.",
+              "work": "\\text{Fraction} = \\frac{4}{12}"
+            },
+            {
+              "explain": "Simplify the fraction to its simplest form by dividing both the numerator and denominator by 4.",
+              "work": "\\frac{4 \\div 4}{12 \\div 4} = \\frac{1}{3}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Compare the two fractions using the correct symbol: \\(\\frac{1}{6} \\quad \\square \\quad \\frac{1}{12}\\).",
+          "options": [
+            "\\(>\\)",
+            "None of these",
+            "\\(=\\)",
+            "\\(<\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert \\(\\frac{1}{6}\\) to an equivalent fraction with a denominator of 12.",
+          "solution": "First, find a common denominator. Since \\(\\frac{1}{6} = \\frac{2}{12}\\), we compare \\(\\frac{2}{12}\\) and \\(\\frac{1}{12}\\). Since 2 is greater than 1, \\(\\frac{1}{6} > \\frac{1}{12}\\).",
+          "steps": [
+            {
+              "explain": "Convert \\(\\frac{1}{6}\\) to a fraction with denominator 12.",
+              "work": "\\frac{1}{6} = \\frac{1 \\times 2}{6 \\times 2} = \\frac{2}{12}"
+            },
+            {
+              "explain": "Compare the numerators of the two fractions with the same denominator.",
+              "work": "\\frac{2}{12} > \\frac{1}{12}"
+            },
+            {
+              "explain": "Determine the correct symbol.",
+              "work": "\\frac{1}{6} > \\frac{1}{12}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Compare the two fractions: \\(\\frac{1}{3} \\quad \\square \\quad \\frac{3}{12}\\).",
+          "options": [
+            "\\(>\\)",
+            "\\(=\\)",
+            "None of these",
+            "\\(<\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert \\(\\frac{1}{3}\\) to twelfths by multiplying the top and bottom by 4.",
+          "solution": "Convert \\(\\frac{1}{3}\\) to twelfths: \\(\\frac{1 \\times 4}{3 \\times 4} = \\frac{4}{12}\\). Comparing \\(\\frac{4}{12}\\) and \\(\\frac{3}{12}\\), we see that \\(\\frac{4}{12} > \\frac{3}{12}\\). Therefore, \\(\\frac{1}{3} > \\frac{3}{12}\\).",
+          "steps": [
+            {
+              "explain": "Find an equivalent fraction for \\(\\frac{1}{3}\\) with a denominator of 12.",
+              "work": "\\frac{1}{3} = \\frac{1 \\times 4}{3 \\times 4} = \\frac{4}{12}"
+            },
+            {
+              "explain": "Compare the two fractions now that they have a common denominator.",
+              "work": "\\frac{4}{12} > \\frac{3}{12}"
+            },
+            {
+              "explain": "Identify the final comparison symbol.",
+              "work": "\\frac{1}{3} > \\frac{3}{12}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-q4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Compare the fractions: \\(\\frac{11}{12} \\quad \\square \\quad \\frac{5}{6}\\).",
+          "options": [
+            "None of these",
+            "\\(>\\)",
+            "\\(<\\)",
+            "\\(=\\)"
+          ],
+          "answer": 1,
+          "hint": "Express \\(\\frac{5}{6}\\) in terms of twelfths.",
+          "solution": "Find an equivalent fraction for \\(\\frac{5}{6}\\): \\(\\frac{5 \\times 2}{6 \\times 2} = \\frac{10}{12}\\). Comparing \\(\\frac{11}{12}\\) and \\(\\frac{10}{12}\\), we see that \\(\\frac{11}{12} > \\frac{10}{12}\\). So, \\(\\frac{11}{12} > \\frac{5}{6}\\).",
+          "steps": [
+            {
+              "explain": "Scale \\(\\frac{5}{6}\\) to have a denominator of 12.",
+              "work": "\\frac{5}{6} = \\frac{5 \\times 2}{6 \\times 2} = \\frac{10}{12}"
+            },
+            {
+              "explain": "Compare the two fractions with the common denominator.",
+              "work": "\\frac{11}{12} > \\frac{10}{12}"
+            },
+            {
+              "explain": "State the final comparison.",
+              "work": "\\frac{11}{12} > \\frac{5}{6}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-q4e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Compare the fractions: \\(\\frac{4}{12} \\quad \\square \\quad \\frac{1}{3}\\).",
+          "options": [
+            "\\(<\\)",
+            "\\(=\\)",
+            "None of these",
+            "\\(>\\)"
+          ],
+          "answer": 1,
+          "hint": "Simplify the fraction \\(\\frac{4}{12}\\) by dividing the numerator and denominator by 4.",
+          "solution": "Simplify \\(\\frac{4}{12}\\): \\(\\frac{4 \\div 4}{12 \\div 4} = \\frac{1}{3}\\). Since both sides are equal to \\(\\frac{1}{3}\\), the correct symbol is \\(=\\).",
+          "steps": [
+            {
+              "explain": "Simplify \\(\\frac{4}{12}\\) to its simplest form.",
+              "work": "\\frac{4}{12} = \\frac{4 \\div 4}{12 \\div 4} = \\frac{1}{3}"
+            },
+            {
+              "explain": "Compare the simplified value with \\(\\frac{1}{3}\\).",
+              "work": "\\frac{1}{3} = \\frac{1}{3}"
+            },
+            {
+              "explain": "Conclude the comparison.",
+              "work": "\\frac{4}{12} = \\frac{1}{3}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p61-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the improper fraction for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"250\" height=\"60\"><path d=\"M 10 30 A 18 18 0 0 1 46 30 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"28\" y=\"43\" font-size=\"9px\" text-anchor=\"middle\">1</text><line x1=\"25\" y1=\"45\" x2=\"31\" y2=\"45\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"28\" y=\"53\" font-size=\"9px\" text-anchor=\"middle\">2</text><path d=\"M 60 30 A 18 18 0 0 1 96 30 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"78\" y=\"43\" font-size=\"9px\" text-anchor=\"middle\">1</text><line x1=\"75\" y1=\"45\" x2=\"81\" y2=\"45\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"78\" y=\"53\" font-size=\"9px\" text-anchor=\"middle\">2</text><path d=\"M 110 30 A 18 18 0 0 1 146 30 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"128\" y=\"43\" font-size=\"9px\" text-anchor=\"middle\">1</text><line x1=\"125\" y1=\"45\" x2=\"131\" y2=\"45\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"128\" y=\"53\" font-size=\"9px\" text-anchor=\"middle\">2</text><path d=\"M 160 30 A 18 18 0 0 1 196 30 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"178\" y=\"43\" font-size=\"9px\" text-anchor=\"middle\">1</text><line x1=\"175\" y1=\"45\" x2=\"181\" y2=\"45\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"178\" y=\"53\" font-size=\"9px\" text-anchor=\"middle\">2</text><path d=\"M 210 30 A 18 18 0 0 1 246 30 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"228\" y=\"43\" font-size=\"9px\" text-anchor=\"middle\">1</text><line x1=\"225\" y1=\"45\" x2=\"231\" y2=\"45\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"228\" y=\"53\" font-size=\"9px\" text-anchor=\"middle\">2</text></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{5}{2}\\)",
+            "\\(\\frac{3}{2}\\)",
+            "\\(\\frac{7}{2}\\)",
+            "\\(\\frac{2}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the total number of halves (semicircles).",
+          "solution": "Each shape represents \\(\\frac{1}{2}\\). There are 5 halves in total, so the improper fraction is \\(\\frac{5}{2}\\).",
+          "steps": [
+            {
+              "explain": "Identify the value of each individual shape.",
+              "work": "\\text{Each shape} = \\frac{1}{2}"
+            },
+            {
+              "explain": "Count the total number of halves.",
+              "work": "\\text{Total halves} = 5"
+            },
+            {
+              "explain": "Multiply the number of shapes by the value of each shape to get the improper fraction.",
+              "work": "5 \\times \\frac{1}{2} = \\frac{5}{2}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p61-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the improper fraction for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"120\" height=\"60\"><circle cx=\"30\" cy=\"30\" r=\"20\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"30\" y1=\"10\" x2=\"30\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"10\" y1=\"30\" x2=\"50\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /><path d=\"M 70 30 L 90 30 A 20 20 0 0 0 70 10 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"10\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"70\" y1=\"30\" x2=\"90\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{7}{4}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{4}{5}\\)",
+            "\\(\\frac{5}{4}\\)"
+          ],
+          "answer": 3,
+          "hint": "Count how many quarters are shaded in total.",
+          "solution": "The circle is divided into 4 quarters, representing a whole \\(\\frac{4}{4}\\). There is an additional 1 quarter sector. Total quarters = 4 + 1 = 5 quarters. The improper fraction is \\(\\frac{5}{4}\\).",
+          "steps": [
+            {
+              "explain": "Identify the fractional unit being used.",
+              "work": "\\text{Unit} = \\frac{1}{4} \\text{ (quarters)}"
+            },
+            {
+              "explain": "Count the total number of quarters in the shapes.",
+              "work": "\\text{Full circle} = 4 \\text{ quarters}, \\quad \\text{Extra} = 1 \\text{ quarter}\\n\\text{Total} = 4 + 1 = 5"
+            },
+            {
+              "explain": "Write as an improper fraction.",
+              "work": "\\text{Improper Fraction} = \\frac{5}{4}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p61-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the improper fraction in its simplest form for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"120\" height=\"95\"><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.2\"><rect x=\"10\" y=\"10\" width=\"15\" height=\"30\" /><rect x=\"25\" y=\"10\" width=\"15\" height=\"30\" /><rect x=\"40\" y=\"10\" width=\"15\" height=\"30\" /><rect x=\"55\" y=\"10\" width=\"15\" height=\"30\" /><rect x=\"70\" y=\"10\" width=\"15\" height=\"30\" /><rect x=\"85\" y=\"10\" width=\"15\" height=\"30\" /></g><g font-size=\"8px\" text-anchor=\"middle\"><text x=\"17.5\" y=\"21\">1</text><line x1=\"15\" y1=\"23\" x2=\"20\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"17.5\" y=\"31\">6</text><text x=\"32.5\" y=\"21\">1</text><line x1=\"30\" y1=\"23\" x2=\"35\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"32.5\" y=\"31\">6</text><text x=\"47.5\" y=\"21\">1</text><line x1=\"45\" y1=\"23\" x2=\"50\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"47.5\" y=\"31\">6</text><text x=\"62.5\" y=\"21\">1</text><line x1=\"60\" y1=\"23\" x2=\"65\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"62.5\" y=\"31\">6</text><text x=\"77.5\" y=\"21\">1</text><line x1=\"75\" y1=\"23\" x2=\"80\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"77.5\" y=\"31\">6</text><text x=\"92.5\" y=\"21\">1</text><line x1=\"90\" y1=\"23\" x2=\"95\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"92.5\" y=\"31\">6</text></g><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.2\"><rect x=\"10\" y=\"50\" width=\"15\" height=\"30\" /><rect x=\"25\" y=\"50\" width=\"15\" height=\"30\" /><rect x=\"40\" y=\"50\" width=\"15\" height=\"30\" /><rect x=\"55\" y=\"50\" width=\"15\" height=\"30\" /></g><g font-size=\"8px\" text-anchor=\"middle\"><text x=\"17.5\" y=\"61\">1</text><line x1=\"15\" y1=\"63\" x2=\"20\" y2=\"63\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"17.5\" y=\"71\">6</text><text x=\"32.5\" y=\"61\">1</text><line x1=\"30\" y1=\"63\" x2=\"35\" y2=\"63\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"32.5\" y=\"71\">6</text><text x=\"47.5\" y=\"61\">1</text><line x1=\"45\" y1=\"63\" x2=\"50\" y2=\"63\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"47.5\" y=\"71\">6</text><text x=\"62.5\" y=\"61\">1</text><line x1=\"60\" y1=\"63\" x2=\"65\" y2=\"63\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"62.5\" y=\"71\">6</text></g></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{4}{3}\\)",
+            "\\(\\frac{5}{6}\\)",
+            "\\(\\frac{5}{3}\\)",
+            "\\(\\frac{7}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Count the total sixths and then simplify the fraction by dividing numerator and denominator by 2.",
+          "solution": "Each block represents \\(\\frac{1}{6}\\). There are 10 blocks in total, which equals \\(\\frac{10}{6}\\). Simplifying the fraction by dividing the numerator and denominator by 2 gives \\(\\frac{5}{3}\\).",
+          "steps": [
+            {
+              "explain": "Count the total number of sixths.",
+              "work": "\\text{Total sixths} = 10"
+            },
+            {
+              "explain": "Write the fraction.",
+              "work": "\\text{Fraction} = \\frac{10}{6}"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by 2.",
+              "work": "\\frac{10 \\div 2}{6 \\div 2} = \\frac{5}{3}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p61-q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the mixed fraction for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"250\" height=\"60\"><path d=\"M 10 30 A 18 18 0 0 1 46 30 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"28\" y=\"43\" font-size=\"9px\" text-anchor=\"middle\">1</text><line x1=\"25\" y1=\"45\" x2=\"31\" y2=\"45\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"28\" y=\"53\" font-size=\"9px\" text-anchor=\"middle\">2</text><path d=\"M 60 30 A 18 18 0 0 1 96 30 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"78\" y=\"43\" font-size=\"9px\" text-anchor=\"middle\">1</text><line x1=\"75\" y1=\"45\" x2=\"81\" y2=\"45\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"78\" y=\"53\" font-size=\"9px\" text-anchor=\"middle\">2</text><path d=\"M 110 30 A 18 18 0 0 1 146 30 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"128\" y=\"43\" font-size=\"9px\" text-anchor=\"middle\">1</text><line x1=\"125\" y1=\"45\" x2=\"131\" y2=\"45\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"128\" y=\"53\" font-size=\"9px\" text-anchor=\"middle\">2</text><path d=\"M 160 30 A 18 18 0 0 1 196 30 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"178\" y=\"43\" font-size=\"9px\" text-anchor=\"middle\">1</text><line x1=\"175\" y1=\"45\" x2=\"181\" y2=\"45\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"178\" y=\"53\" font-size=\"9px\" text-anchor=\"middle\">2</text><path d=\"M 210 30 A 18 18 0 0 1 246 30 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><text x=\"228\" y=\"43\" font-size=\"9px\" text-anchor=\"middle\">1</text><line x1=\"225\" y1=\"45\" x2=\"231\" y2=\"45\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"228\" y=\"53\" font-size=\"9px\" text-anchor=\"middle\">2</text></svg></div>"
+          },
+          "options": [
+            "1\\frac{1}{2}",
+            "2\\frac{2}{3}",
+            "2\\frac{1}{2}",
+            "3\\frac{1}{2}"
+          ],
+          "answer": 2,
+          "hint": "Divide 5 by 2 to find how many wholes and how many halves are left.",
+          "solution": "Converting the improper fraction \\(\\frac{5}{2}\\) to a mixed fraction: \\(5 \\div 2 = 2\\) with a remainder of 1. So, the mixed fraction is 2\\frac{1}{2}.",
+          "steps": [
+            {
+              "explain": "Perform division on the numerator by the denominator.",
+              "work": "5 \\div 2 = 2 \\quad \\text{remainder } 1"
+            },
+            {
+              "explain": "Write the quotient as the whole number and the remainder over the denominator.",
+              "work": "2\\frac{1}{2}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p61-q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the mixed fraction for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"120\" height=\"95\"><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.2\"><rect x=\"10\" y=\"10\" width=\"15\" height=\"30\" /><rect x=\"25\" y=\"10\" width=\"15\" height=\"30\" /><rect x=\"40\" y=\"10\" width=\"15\" height=\"30\" /><rect x=\"55\" y=\"10\" width=\"15\" height=\"30\" /><rect x=\"70\" y=\"10\" width=\"15\" height=\"30\" /><rect x=\"85\" y=\"10\" width=\"15\" height=\"30\" /></g><g font-size=\"8px\" text-anchor=\"middle\"><text x=\"17.5\" y=\"21\">1</text><line x1=\"15\" y1=\"23\" x2=\"20\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"17.5\" y=\"31\">6</text><text x=\"32.5\" y=\"21\">1</text><line x1=\"30\" y1=\"23\" x2=\"35\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"32.5\" y=\"31\">6</text><text x=\"47.5\" y=\"21\">1</text><line x1=\"45\" y1=\"23\" x2=\"50\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"47.5\" y=\"31\">6</text><text x=\"62.5\" y=\"21\">1</text><line x1=\"60\" y1=\"23\" x2=\"65\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"62.5\" y=\"31\">6</text><text x=\"77.5\" y=\"21\">1</text><line x1=\"75\" y1=\"23\" x2=\"80\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"77.5\" y=\"31\">6</text><text x=\"92.5\" y=\"21\">1</text><line x1=\"90\" y1=\"23\" x2=\"95\" y2=\"23\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"92.5\" y=\"31\">6</text></g><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.2\"><rect x=\"10\" y=\"50\" width=\"15\" height=\"30\" /><rect x=\"25\" y=\"50\" width=\"15\" height=\"30\" /><rect x=\"40\" y=\"50\" width=\"15\" height=\"30\" /><rect x=\"55\" y=\"50\" width=\"15\" height=\"30\" /></g><g font-size=\"8px\" text-anchor=\"middle\"><text x=\"17.5\" y=\"61\">1</text><line x1=\"15\" y1=\"63\" x2=\"20\" y2=\"63\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"17.5\" y=\"71\">6</text><text x=\"32.5\" y=\"61\">1</text><line x1=\"30\" y1=\"63\" x2=\"35\" y2=\"63\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"32.5\" y=\"71\">6</text><text x=\"47.5\" y=\"61\">1</text><line x1=\"45\" y1=\"63\" x2=\"50\" y2=\"63\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"47.5\" y=\"71\">6</text><text x=\"62.5\" y=\"61\">1</text><line x1=\"60\" y1=\"63\" x2=\"65\" y2=\"63\" stroke=\"black\" stroke-width=\"0.6\" /><text x=\"62.5\" y=\"71\">6</text></g></svg></div>"
+          },
+          "options": [
+            "2\\frac{1}{3}",
+            "1\\frac{1}{6}",
+            "1\\frac{1}{3}",
+            "1\\frac{2}{3}"
+          ],
+          "answer": 3,
+          "hint": "First convert the unsimplified fraction \\(\\frac{10}{6}\\) to a mixed number, then simplify the fractional part.",
+          "solution": "From the shapes, we have \\(\\frac{10}{6} = 1\\frac{4}{6}\\). Simplifying the fraction part by dividing top and bottom by 2 gives 1\\frac{2}{3}.",
+          "steps": [
+            {
+              "explain": "Convert \\(\\frac{10}{6}\\) to a mixed number.",
+              "work": "10 \\div 6 = 1 \\quad \\text{remainder } 4 \\implies 1\\frac{4}{6}"
+            },
+            {
+              "explain": "Simplify the fractional part \\(\\frac{4}{6}\\).",
+              "work": "\\frac{4 \\div 2}{6 \\div 2} = \\frac{2}{3}"
+            },
+            {
+              "explain": "State the final simplified mixed number.",
+              "work": "1\\frac{2}{3}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p61-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the improper fraction for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"150\" height=\"60\"><circle cx=\"30\" cy=\"30\" r=\"20\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"30\" y1=\"10\" x2=\"30\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"10\" y1=\"30\" x2=\"50\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /><path d=\"M 70 30 L 90 30 A 20 20 0 0 0 70 10 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"10\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"70\" y1=\"30\" x2=\"90\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /><circle cx=\"110\" cy=\"30\" r=\"20\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><line x1=\"110\" y1=\"10\" x2=\"110\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"90\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{9}{4}\\)",
+            "\\(\\frac{5}{4}\\)",
+            "\\(\\frac{7}{4}\\)",
+            "\\(\\frac{11}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the total number of shaded quarters across the circles.",
+          "solution": "Each circle is divided into 4 quarters. We have two full circles (4 + 4 = 8 quarters) and one extra quarter. Total quarters = 9. The improper fraction is \\(\\frac{9}{4}\\).",
+          "steps": [
+            {
+              "explain": "Identify the fractional part unit.",
+              "work": "\\text{Unit} = \\frac{1}{4}"
+            },
+            {
+              "explain": "Sum the quarters from all components.",
+              "work": "\\text{Circle 1} = 4, \\quad \\text{Middle sector} = 1, \\quad \\text{Circle 2} = 4\\n\\text{Total} = 4 + 1 + 4 = 9"
+            },
+            {
+              "explain": "Write the improper fraction.",
+              "work": "\\text{Improper fraction} = \\frac{9}{4}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p61-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the improper fraction for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"100\" height=\"80\"><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"20\" y=\"10\" width=\"20\" height=\"60\" /><line x1=\"20\" y1=\"30\" x2=\"40\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"20\" y1=\"50\" x2=\"40\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.2\" /></g><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"50\" y=\"30\" width=\"20\" height=\"40\" /><line x1=\"50\" y1=\"50\" x2=\"70\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.2\" /></g></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{5}{3}\\)",
+            "\\(\\frac{7}{3}\\)",
+            "\\(\\frac{4}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Count the total number of third-blocks.",
+          "solution": "Each vertical block is divided into 3 equal parts. The left block has 3 thirds and the right block has 2 thirds. Total thirds = 3 + 2 = 5 thirds. The improper fraction is \\(\\frac{5}{3}\\).",
+          "steps": [
+            {
+              "explain": "Identify the fractional part unit.",
+              "work": "\\text{Unit} = \\frac{1}{3}"
+            },
+            {
+              "explain": "Sum the thirds from both vertical bars.",
+              "work": "\\text{Left bar} = 3, \\quad \\text{Right bar} = 2\\n\\text{Total thirds} = 3 + 2 = 5"
+            },
+            {
+              "explain": "Form the improper fraction.",
+              "work": "\\text{Improper fraction} = \\frac{5}{3}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p61-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the mixed fraction for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"100\" height=\"80\"><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"20\" y=\"10\" width=\"20\" height=\"60\" /><line x1=\"20\" y1=\"30\" x2=\"40\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.2\" /><line x1=\"20\" y1=\"50\" x2=\"40\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.2\" /></g><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"50\" y=\"30\" width=\"20\" height=\"40\" /><line x1=\"50\" y1=\"50\" x2=\"70\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.2\" /></g></svg></div>"
+          },
+          "options": [
+            "1\\frac{2}{5}",
+            "1\\frac{2}{3}",
+            "1\\frac{1}{3}",
+            "2\\frac{1}{3}"
+          ],
+          "answer": 1,
+          "hint": "Convert \\(\\frac{5}{3}\\) to a mixed number.",
+          "solution": "Divide 5 by 3: \\(5 \\div 3 = 1\\) with a remainder of 2. The mixed fraction is 1\\frac{2}{3}.",
+          "steps": [
+            {
+              "explain": "Divide 5 by 3 to find whole parts and remaining thirds.",
+              "work": "5 \\div 3 = 1 \\quad \\text{remainder } 2"
+            },
+            {
+              "explain": "Write as a mixed numeral.",
+              "work": "1\\frac{2}{3}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p61-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the mixed fraction for the shapes below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"150\" height=\"90\"><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"20\" y=\"10\" width=\"100\" height=\"20\" /><line x1=\"40\" y1=\"10\" x2=\"40\" y2=\"30\" /><line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"30\" /><line x1=\"80\" y1=\"10\" x2=\"80\" y2=\"30\" /><line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"30\" /></g><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"20\" y=\"35\" width=\"100\" height=\"20\" /><line x1=\"40\" y1=\"35\" x2=\"40\" y2=\"55\" /><line x1=\"60\" y1=\"35\" x2=\"60\" y2=\"55\" /><line x1=\"80\" y1=\"35\" x2=\"80\" y2=\"55\" /><line x1=\"100\" y1=\"35\" x2=\"100\" y2=\"55\" /></g><g fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"20\" y=\"60\" width=\"60\" height=\"20\" /><line x1=\"40\" y1=\"60\" x2=\"40\" y2=\"80\" /><line x1=\"60\" y1=\"60\" x2=\"60\" y2=\"80\" /></g></svg></div>"
+          },
+          "options": [
+            "3\\frac{1}{5}",
+            "2\\frac{3}{5}",
+            "1\\frac{3}{5}",
+            "2\\frac{2}{5}"
+          ],
+          "answer": 1,
+          "hint": "Divide 13 by 5.",
+          "solution": "Divide 13 by 5: \\(13 \\div 5 = 2\\) with a remainder of 3. The mixed fraction is 2\\frac{3}{5}.",
+          "steps": [
+            {
+              "explain": "Divide 13 by 5 to find whole parts and remaining fifths.",
+              "work": "13 \\div 5 = 2 \\quad \\text{remainder } 3"
+            },
+            {
+              "explain": "Write as a mixed numeral.",
+              "work": "2\\frac{3}{5}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the fraction represented by the shaded parts below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"170\" height=\"50\"><rect x=\"10\" y=\"10\" width=\"30\" height=\"30\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"40\" y=\"10\" width=\"30\" height=\"30\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"70\" y=\"10\" width=\"30\" height=\"30\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"100\" y=\"10\" width=\"30\" height=\"30\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1.5\" /><rect x=\"130\" y=\"10\" width=\"30\" height=\"30\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" /></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{1}{5}\\)",
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{4}{6}\\)",
+            "\\(\\frac{4}{5}\\)"
+          ],
+          "answer": 3,
+          "hint": "Count the number of shaded boxes and divide by the total number of boxes.",
+          "solution": "There are 5 equal sections in total, and 4 sections are shaded. This represents the fraction \\(\\frac{4}{5}\\).",
+          "steps": [
+            {
+              "explain": "Count the total number of sections.",
+              "work": "\\text{Total sections} = 5"
+            },
+            {
+              "explain": "Count the shaded sections.",
+              "work": "\\text{Shaded sections} = 4"
+            },
+            {
+              "explain": "Write as a fraction: shaded sections over total sections.",
+              "work": "\\text{Fraction} = \\frac{4}{5}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the fraction represented by the shaded parts below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"60\" height=\"60\"><circle cx=\"30\" cy=\"30\" r=\"20\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\" /><path d=\"M 30 30 L 50 30 A 20 20 0 0 1 40 47.32 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1\" /><path d=\"M 30 30 L 40 47.32 A 20 20 0 0 1 20 47.32 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1\" /><path d=\"M 30 30 L 20 47.32 A 20 20 0 0 1 10 30 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1\" /><path d=\"M 30 30 L 10 30 A 20 20 0 0 1 20 12.68 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1\" /><path d=\"M 30 30 L 20 12.68 A 20 20 0 0 1 40 12.68 Z\" fill=\"#60a5fa\" stroke=\"#475569\" stroke-width=\"1\" /><path d=\"M 30 30 L 40 12.68 A 20 20 0 0 1 50 30 Z\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1\" /></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{1}{6}\\)",
+            "\\(\\frac{5}{7}\\)",
+            "\\(\\frac{5}{6}\\)",
+            "\\(\\frac{4}{6}\\)"
+          ],
+          "answer": 2,
+          "hint": "Count how many sectors of the circle are shaded.",
+          "solution": "The circle is divided into 6 equal sectors, and 5 sectors are shaded. This represents the fraction \\(\\frac{5}{6}\\).",
+          "steps": [
+            {
+              "explain": "Count the total sectors.",
+              "work": "\\text{Total sectors} = 6"
+            },
+            {
+              "explain": "Count the shaded sectors.",
+              "work": "\\text{Shaded sectors} = 5"
+            },
+            {
+              "explain": "Write the fraction.",
+              "work": "\\text{Fraction} = \\frac{5}{6}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the fraction represented by the shaded parts below in its simplest form:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"170\" height=\"80\"><g stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"10\" y=\"10\" width=\"30\" height=\"30\" fill=\"#60a5fa\" /><rect x=\"40\" y=\"10\" width=\"30\" height=\"30\" fill=\"#60a5fa\" /><rect x=\"70\" y=\"10\" width=\"30\" height=\"30\" fill=\"#60a5fa\" /><rect x=\"100\" y=\"10\" width=\"30\" height=\"30\" fill=\"#60a5fa\" /><rect x=\"130\" y=\"10\" width=\"30\" height=\"30\" fill=\"none\" /><rect x=\"10\" y=\"40\" width=\"30\" height=\"30\" fill=\"none\" /><rect x=\"40\" y=\"40\" width=\"30\" height=\"30\" fill=\"none\" /><rect x=\"70\" y=\"40\" width=\"30\" height=\"30\" fill=\"none\" /><rect x=\"100\" y=\"40\" width=\"30\" height=\"30\" fill=\"none\" /><rect x=\"130\" y=\"40\" width=\"30\" height=\"30\" fill=\"none\" /></g></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{1}{5}\\)",
+            "\\(\\frac{4}{10}\\)",
+            "\\(\\frac{2}{5}\\)",
+            "\\(\\frac{3}{5}\\)"
+          ],
+          "answer": 2,
+          "hint": "Count the shaded squares out of the 10 total squares, then simplify the fraction.",
+          "solution": "There are 10 squares in total, and 4 are shaded, giving \\(\\frac{4}{10}\\). Simplifying by dividing both numbers by 2 gives \\(\\frac{2}{5}\\).",
+          "steps": [
+            {
+              "explain": "Count total and shaded squares.",
+              "work": "\\text{Shaded} = 4, \\quad \\text{Total} = 10 \\implies \\frac{4}{10}"
+            },
+            {
+              "explain": "Divide the numerator and denominator by their greatest common divisor (2).",
+              "work": "\\frac{4 \\div 2}{10 \\div 2} = \\frac{2}{5}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the fraction represented by the shaded parts below:",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"80\" height=\"80\"><g stroke=\"#475569\" stroke-width=\"1.5\"><rect x=\"10\" y=\"10\" width=\"30\" height=\"30\" fill=\"#60a5fa\" /><rect x=\"40\" y=\"10\" width=\"30\" height=\"30\" fill=\"#60a5fa\" /><rect x=\"10\" y=\"40\" width=\"30\" height=\"30\" fill=\"#60a5fa\" /><rect x=\"40\" y=\"40\" width=\"30\" height=\"30\" fill=\"none\" /></g></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{2}{4}\\)",
+            "\\(\\frac{3}{4}\\)"
+          ],
+          "answer": 3,
+          "hint": "Count the shaded sections in the 2x2 grid.",
+          "solution": "The grid is split into 4 squares, and 3 are shaded. The fraction is \\(\\frac{3}{4}\\).",
+          "steps": [
+            {
+              "explain": "Identify the number of shaded parts and total parts.",
+              "work": "\\text{Shaded} = 3, \\quad \\text{Total} = 4"
+            },
+            {
+              "explain": "Form the fraction.",
+              "work": "\\frac{3}{4}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the mixed fraction to an improper fraction: \\(1\\frac{2}{3}\\)",
+          "options": [
+            "\\(\\frac{7}{3}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{4}{3}\\)",
+            "\\(\\frac{5}{3}\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply the whole number by the denominator and add the numerator.",
+          "solution": "Convert \\(1\\frac{2}{3}\\) to an improper fraction: \\(\\frac{1 \\times 3 + 2}{3} = \\frac{5}{3}\\).",
+          "steps": [
+            {
+              "explain": "Multiply the whole part by the denominator and add the numerator.",
+              "work": "1 \\times 3 + 2 = 5"
+            },
+            {
+              "explain": "Write the result over the original denominator.",
+              "work": "\\frac{5}{3}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the mixed fraction to an improper fraction: \\(2\\frac{3}{4}\\)",
+          "options": [
+            "\\(\\frac{11}{4}\\)",
+            "\\(\\frac{10}{4}\\)",
+            "\\(\\frac{7}{4}\\)",
+            "\\(\\frac{9}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 2 by 4 and add 3.",
+          "solution": "Convert \\(2\\frac{3}{4}\\) to an improper fraction: \\(\\frac{2 \\times 4 + 3}{4} = \\frac{11}{4}\\).",
+          "steps": [
+            {
+              "explain": "Calculate the numerator.",
+              "work": "2 \\times 4 + 3 = 11"
+            },
+            {
+              "explain": "Write the fraction.",
+              "work": "\\frac{11}{4}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the mixed fraction to an improper fraction: \\(1\\frac{2}{5}\\)",
+          "options": [
+            "\\(\\frac{6}{5}\\)",
+            "\\(\\frac{7}{5}\\)",
+            "\\(\\frac{8}{5}\\)",
+            "\\(\\frac{5}{7}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 1 by 5 and add 2.",
+          "solution": "Convert \\(1\\frac{2}{5}\\) to an improper fraction: \\(\\frac{1 \\times 5 + 2}{5} = \\frac{7}{5}\\).",
+          "steps": [
+            {
+              "explain": "Calculate the numerator.",
+              "work": "1 \\times 5 + 2 = 7"
+            },
+            {
+              "explain": "Write the fraction.",
+              "work": "\\frac{7}{5}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the mixed fraction to an improper fraction: \\(3\\frac{1}{2}\\)",
+          "options": [
+            "\\(\\frac{6}{2}\\)",
+            "\\(\\frac{7}{2}\\)",
+            "\\(\\frac{5}{2}\\)",
+            "\\(\\frac{9}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 3 by 2 and add 1.",
+          "solution": "Convert \\(3\\frac{1}{2}\\) to an improper fraction: \\(\\frac{3 \\times 2 + 1}{2} = \\frac{7}{2}\\).",
+          "steps": [
+            {
+              "explain": "Calculate the numerator.",
+              "work": "3 \\times 2 + 1 = 7"
+            },
+            {
+              "explain": "Write the fraction.",
+              "work": "\\frac{7}{2}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the improper fraction to a mixed fraction: \\(\\frac{9}{2}\\)",
+          "options": [
+            "5\\frac{1}{2}",
+            "4\\frac{1}{4}",
+            "3\\frac{1}{2}",
+            "4\\frac{1}{2}"
+          ],
+          "answer": 3,
+          "hint": "Divide 9 by 2 to find the whole number and the remainder.",
+          "solution": "Divide 9 by 2: \\(9 \\div 2 = 4\\) with a remainder of 1. The mixed fraction is 4\\frac{1}{2}.",
+          "steps": [
+            {
+              "explain": "Divide the numerator by the denominator.",
+              "work": "9 \\div 2 = 4 \\quad \\text{remainder } 1"
+            },
+            {
+              "explain": "Write the remainder over the denominator next to the quotient.",
+              "work": "4\\frac{1}{2}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the improper fraction to a mixed fraction: \\(\\frac{12}{5}\\)",
+          "options": [
+            "2\\frac{1}{5}",
+            "3\\frac{2}{5}",
+            "1\\frac{2}{5}",
+            "2\\frac{2}{5}"
+          ],
+          "answer": 3,
+          "hint": "Divide 12 by 5.",
+          "solution": "Divide 12 by 5: \\(12 \\div 5 = 2\\) with a remainder of 2. The mixed fraction is 2\\frac{2}{5}.",
+          "steps": [
+            {
+              "explain": "Divide the numerator by the denominator.",
+              "work": "12 \\div 5 = 2 \\quad \\text{remainder } 2"
+            },
+            {
+              "explain": "Write as a mixed fraction.",
+              "work": "2\\frac{2}{5}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the improper fraction to a mixed fraction: \\(\\frac{13}{3}\\)",
+          "options": [
+            "3\\frac{1}{3}",
+            "5\\frac{1}{3}",
+            "4\\frac{1}{3}",
+            "4\\frac{2}{3}"
+          ],
+          "answer": 2,
+          "hint": "Divide 13 by 3.",
+          "solution": "Divide 13 by 3: \\(13 \\div 3 = 4\\) with a remainder of 1. The mixed fraction is 4\\frac{1}{3}.",
+          "steps": [
+            {
+              "explain": "Divide the numerator by the denominator.",
+              "work": "13 \\div 3 = 4 \\quad \\text{remainder } 1"
+            },
+            {
+              "explain": "Write as a mixed fraction.",
+              "work": "4\\frac{1}{3}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p62-q5d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the improper fraction to a mixed fraction: \\(\\frac{15}{7}\\)",
+          "options": [
+            "3\\frac{1}{7}",
+            "2\\frac{2}{7}",
+            "2\\frac{1}{7}",
+            "1\\frac{1}{7}"
+          ],
+          "answer": 2,
+          "hint": "Divide 15 by 7.",
+          "solution": "Divide 15 by 7: \\(15 \\div 7 = 2\\) with a remainder of 1. The mixed fraction is 2\\frac{1}{7}.",
+          "steps": [
+            {
+              "explain": "Divide the numerator by the denominator.",
+              "work": "15 \\div 7 = 2 \\quad \\text{remainder } 1"
+            },
+            {
+              "explain": "Write as a mixed fraction.",
+              "work": "2\\frac{1}{7}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p63-q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Choose the correct symbol to place between the numbers: \\(\\frac{1}{2} \\ \\square \\ \\frac{4}{10}\\)",
+          "options": [
+            "<",
+            "=",
+            ">"
+          ],
+          "answer": 2,
+          "hint": "Convert 1/2 to tenths: 1/2 = 5/10. Compare 5/10 and 4/10.",
+          "solution": "\\(\\frac{1}{2} = \\frac{5}{10}\\). Since \\(\\frac{5}{10} > \\frac{4}{10}\\), the correct symbol is >.",
+          "steps": [
+            {
+              "explain": "Convert 1/2 to an equivalent fraction with a denominator of 10.",
+              "work": "\\frac{1 \\times 5}{2 \\times 5} = \\frac{5}{10}"
+            },
+            {
+              "explain": "Compare the numerators.",
+              "work": "\\frac{5}{10} > \\frac{4}{10}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p63-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Choose the correct symbol to place between the numbers: \\(\\frac{3}{4} \\ \\square \\ \\frac{9}{12}\\)",
+          "options": [
+            "<",
+            "=",
+            ">"
+          ],
+          "answer": 1,
+          "hint": "Convert 3/4 to twelfths by multiplying top and bottom by 3.",
+          "solution": "\\(\\frac{3}{4} = \\frac{3 \\times 3}{4 \\times 3} = \\frac{9}{12}\\). Since \\(\\frac{9}{12} = \\frac{9}{12}\\), the correct symbol is =.",
+          "steps": [
+            {
+              "explain": "Convert 3/4 to twelfths.",
+              "work": "\\frac{3 \\times 3}{4 \\times 3} = \\frac{9}{12}"
+            },
+            {
+              "explain": "Compare the fractions.",
+              "work": "\\frac{9}{12} = \\frac{9}{12}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-1-p63-q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Choose the correct symbol to place between the numbers: \\(\\frac{5}{8} \\ \\square \\ \\frac{3}{4}\\)",
+          "options": [
+            "=",
+            ">",
+            "<"
+          ],
+          "answer": 2,
+          "hint": "Convert 3/4 to eighths: 3/4 = 6/8. Compare 5/8 and 6/8.",
+          "solution": "\\(\\frac{3}{4} = \\frac{6}{8}\\). Since \\(\\frac{5}{8} < \\frac{6}{8}\\), the correct symbol is <.",
+          "steps": [
+            {
+              "explain": "Convert 3/4 to eighths.",
+              "work": "\\frac{3 \\times 2}{4 \\times 2} = \\frac{6}{8}"
+            },
+            {
+              "explain": "Compare the two fractions.",
+              "work": "\\frac{5}{8} < \\frac{6}{8}"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y5-rqf-2",
+      "code": "MA3-RQF-01",
+      "title": "Add and subtract same denominator",
+      "questions": [
+        {
+          "id": "y5-rqf-2-p62-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{5}{7} + \\frac{1}{7}\\)",
+          "options": [
+            "\\(\\frac{5}{7}\\)",
+            "\\(\\frac{4}{7}\\)",
+            "\\(\\frac{6}{14}\\)",
+            "\\(\\frac{6}{7}\\)"
+          ],
+          "answer": 3,
+          "hint": "Since denominators are same, just add the numerators.",
+          "solution": "Add numerators: \\(5 + 1 = 6\\). The denominator remains 7, so the sum is \\(\\frac{6}{7}\\).",
+          "steps": [
+            {
+              "explain": "Add the numerators together.",
+              "work": "\\frac{5 + 1}{7} = \\frac{6}{7}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-2-p62-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{7}{15} + \\frac{4}{15}\\)",
+          "options": [
+            "\\(\\frac{11}{30}\\)",
+            "\\(\\frac{11}{15}\\)",
+            "\\(\\frac{10}{15}\\)",
+            "\\(\\frac{3}{15}\\)"
+          ],
+          "answer": 1,
+          "hint": "Add the numerators over the common denominator.",
+          "solution": "Add numerators: \\(7 + 4 = 11\\). The denominator is 15, so the result is \\(\\frac{11}{15}\\).",
+          "steps": [
+            {
+              "explain": "Add the numerators over the common denominator.",
+              "work": "\\frac{7 + 4}{15} = \\frac{11}{15}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-2-p62-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{9}{10} - \\frac{2}{10}\\)",
+          "options": [
+            "\\(\\frac{8}{10}\\)",
+            "\\(\\frac{7}{20}\\)",
+            "\\(\\frac{7}{10}\\)",
+            "\\(\\frac{11}{10}\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract the numerators since the denominators are the same.",
+          "solution": "Subtract numerators: \\(9 - 2 = 7\\). Keep the denominator 10, giving \\(\\frac{7}{10}\\).",
+          "steps": [
+            {
+              "explain": "Subtract the numerators over the common denominator.",
+              "work": "\\frac{9 - 2}{10} = \\frac{7}{10}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-2-p62-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{17}{20} - \\frac{6}{20}\\)",
+          "options": [
+            "\\(\\frac{9}{20}\\)",
+            "\\(\\frac{11}{20}\\)",
+            "\\(\\frac{13}{20}\\)",
+            "\\(\\frac{11}{40}\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract the numerators.",
+          "solution": "Subtract: \\(17 - 6 = 11\\), giving the fraction \\(\\frac{11}{20}\\).",
+          "steps": [
+            {
+              "explain": "Subtract the numerators over the common denominator.",
+              "work": "\\frac{17 - 6}{20} = \\frac{11}{20}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-2-p63-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{5}{9} + \\frac{3}{9}\\)",
+          "options": [
+            "\\(\\frac{2}{9}\\)",
+            "\\(\\frac{8}{9}\\)",
+            "\\(\\frac{8}{18}\\)",
+            "\\(\\frac{7}{9}\\)"
+          ],
+          "answer": 1,
+          "hint": "Denominators are same, just add numerators.",
+          "solution": "Add numerators: 5 + 3 = 8, denominator remains 9, giving \\(\\frac{8}{9}\\).",
+          "steps": [
+            {
+              "explain": "Add the numerators over the common denominator.",
+              "work": "\\frac{5 + 3}{9} = \\frac{8}{9}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-2-p63-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{11}{12} - \\frac{4}{12}\\)",
+          "options": [
+            "\\(\\frac{7}{24}\\)",
+            "\\(\\frac{7}{12}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract numerators.",
+          "solution": "Subtract: 11 - 4 = 7, denominator remains 12: \\(\\frac{7}{12}\\).",
+          "steps": [
+            {
+              "explain": "Subtract the numerators over the common denominator.",
+              "work": "\\frac{11 - 4}{12} = \\frac{7}{12}"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y5-rqf-3",
+      "code": "MA3-RQF-01",
+      "title": "Equivalent fractions",
+      "questions": [
+        {
+          "id": "y5-rqf-3-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing numerator that makes an equivalent fraction: \\(\\frac{2}{3} = \\frac{?}{9}\\).",
+          "options": [
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "hint": "Determine what number the denominator 3 was multiplied by to get 9, and multiply the numerator by the same number.",
+          "solution": "To find the equivalent fraction, observe that the denominator 3 is multiplied by 3 to get 9. Therefore, multiply the numerator 2 by 3 to get 6. Thus, \\(\\frac{2}{3} = \\frac{6}{9}\\).",
+          "steps": [
+            {
+              "explain": "Find the multiplier by dividing the new denominator by the original denominator.",
+              "work": "9 \\div 3 = 3"
+            },
+            {
+              "explain": "Multiply the original numerator by this multiplier to maintain equivalence.",
+              "work": "2 \\times 3 = 6"
+            },
+            {
+              "explain": "Write the completed equivalent fraction.",
+              "work": "\\frac{2}{3} = \\frac{6}{9}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the equivalent fraction if represented in eighths? \\(\\frac{3}{4} = \\frac{?}{8}\\).",
+          "options": [
+            "\\(3\\)",
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(7\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the scale factor of the denominators and apply it to the numerator.",
+          "solution": "The denominator 4 is multiplied by 2 to get 8. Multiplying the numerator 3 by 2 gives 6. So, \\(\\frac{3}{4} = \\frac{6}{8}\\).",
+          "steps": [
+            {
+              "explain": "Determine the factor of change in the denominator.",
+              "work": "8 \\div 4 = 2"
+            },
+            {
+              "explain": "Multiply the numerator by the same factor.",
+              "work": "3 \\times 2 = 6"
+            },
+            {
+              "explain": "Confirm the equivalent fractions.",
+              "work": "\\frac{3}{4} = \\frac{6}{8}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the equivalent fraction if divided into 15 equal zones: \\(\\frac{4}{5} = \\frac{?}{15}\\).",
+          "options": [
+            "\\(9\\)",
+            "\\(12\\)",
+            "\\(10\\)",
+            "\\(8\\)"
+          ],
+          "answer": 1,
+          "hint": "Identify the multiplier for the denominators, then multiply the numerator.",
+          "solution": "The denominator 5 is multiplied by 3 to get 15. Multiply the numerator 4 by 3 to get 12. So, \\(\\frac{4}{5} = \\frac{12}{15}\\).",
+          "steps": [
+            {
+              "explain": "Find the multiplier for the denominator.",
+              "work": "15 \\div 5 = 3"
+            },
+            {
+              "explain": "Apply this multiplier to the numerator.",
+              "work": "4 \\times 3 = 12"
+            },
+            {
+              "explain": "State the equivalent fraction.",
+              "work": "\\frac{4}{5} = \\frac{12}{15}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the equivalent concentration in tenths: \\(\\frac{3}{5} = \\frac{?}{10}\\).",
+          "options": [
+            "\\(5\\)",
+            "\\(4\\)",
+            "\\(6\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2,
+          "hint": "Determine the factor of multiplication between 5 and 10.",
+          "solution": "The denominator 5 is multiplied by 2 to get 10. Multiply the numerator 3 by 2 to get 6. Thus, \\(\\frac{3}{5} = \\frac{6}{10}\\).",
+          "steps": [
+            {
+              "explain": "Find the scale factor between the denominators.",
+              "work": "10 \\div 5 = 2"
+            },
+            {
+              "explain": "Scale the numerator by the same factor.",
+              "work": "3 \\times 2 = 6"
+            },
+            {
+              "explain": "Write the equivalent fraction.",
+              "work": "\\frac{3}{5} = \\frac{6}{10}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the number lines shown below, write the equivalent fraction in twelfths for: \\(\\frac{5}{6}\\).",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"480\" height=\"190\" style=\"font-family:sans-serif;font-size:10px;\"><line x1=\"40\" y1=\"30\" x2=\"440\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"23\" x2=\"40\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"50\">0</text><text x=\"173.3\" y=\"45\" text-anchor=\"middle\" font-size=\"9px\">1</text><line x1=\"168.3\" y1=\"47\" x2=\"178.3\" y2=\"47\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"173.3\" y=\"56\" text-anchor=\"middle\" font-size=\"9px\">3</text><text x=\"306.7\" y=\"45\" text-anchor=\"middle\" font-size=\"9px\">2</text><line x1=\"301.7\" y1=\"47\" x2=\"311.7\" y2=\"47\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"306.7\" y=\"56\" text-anchor=\"middle\" font-size=\"9px\">3</text><line x1=\"440\" y1=\"23\" x2=\"440\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"50\">1</text><line x1=\"40\" y1=\"90\" x2=\"440\" y2=\"90\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"83\" x2=\"40\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"110\">0</text><text x=\"106.7\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">1</text><line x1=\"101.7\" y1=\"107\" x2=\"111.7\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"106.7\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"173.3\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">2</text><line x1=\"168.3\" y1=\"107\" x2=\"178.3\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"173.3\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"240\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">3</text><line x1=\"235\" y1=\"107\" x2=\"245\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"240\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"306.7\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">4</text><line x1=\"301.7\" y1=\"107\" x2=\"311.7\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"306.7\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"373.3\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">5</text><line x1=\"368.3\" y1=\"107\" x2=\"378.3\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"373.3\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><line x1=\"440\" y1=\"83\" x2=\"440\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"110\">1</text><line x1=\"40\" y1=\"150\" x2=\"440\" y2=\"150\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"143\" x2=\"40\" y2=\"157\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"170\">0</text><text x=\"73.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">1</text><line x1=\"66.3\" y1=\"167\" x2=\"80.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"73.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"106.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">2</text><line x1=\"99.7\" y1=\"167\" x2=\"113.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"106.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"140\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">3</text><line x1=\"133\" y1=\"167\" x2=\"147\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"140\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"173.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">4</text><line x1=\"166.3\" y1=\"167\" x2=\"180.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"173.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"206.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">5</text><line x1=\"199.7\" y1=\"167\" x2=\"213.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"206.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"240\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">6</text><line x1=\"233\" y1=\"167\" x2=\"247\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"240\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"273.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">7</text><line x1=\"266.3\" y1=\"167\" x2=\"280.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"273.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"306.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">8</text><line x1=\"299.7\" y1=\"167\" x2=\"313.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"306.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"340\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">9</text><line x1=\"333\" y1=\"167\" x2=\"347\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"340\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"373.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">10</text><line x1=\"366.3\" y1=\"167\" x2=\"380.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"373.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"406.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">11</text><line x1=\"399.7\" y1=\"167\" x2=\"413.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"406.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><line x1=\"440\" y1=\"143\" x2=\"440\" y2=\"157\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"170\">1</text></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{11}{12}\\)",
+            "\\(\\frac{8}{12}\\)",
+            "\\(\\frac{10}{12}\\)",
+            "\\(\\frac{9}{12}\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the numerator and denominator by 2 to convert 6ths to 12ths.",
+          "solution": "To find the equivalent fraction of \\(\\frac{5}{6}\\) in twelfths, multiply both the numerator and denominator by 2: \\(\\frac{5 \\times 2}{6 \\times 2} = \\frac{10}{12}\\). This aligns with the equivalent point on the number lines.",
+          "steps": [
+            {
+              "explain": "Determine the factor to convert the denominator 6 to 12.",
+              "work": "12 \\div 6 = 2"
+            },
+            {
+              "explain": "Multiply the numerator 5 by 2.",
+              "work": "5 \\times 2 = 10"
+            },
+            {
+              "explain": "Combine to write the equivalent fraction.",
+              "work": "\\frac{5}{6} = \\frac{10}{12}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the number lines shown below, write the equivalent fraction in sixths for: \\(\\frac{1}{3}\\).",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"480\" height=\"190\" style=\"font-family:sans-serif;font-size:10px;\"><line x1=\"40\" y1=\"30\" x2=\"440\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"23\" x2=\"40\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"50\">0</text><text x=\"173.3\" y=\"45\" text-anchor=\"middle\" font-size=\"9px\">1</text><line x1=\"168.3\" y1=\"47\" x2=\"178.3\" y2=\"47\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"173.3\" y=\"56\" text-anchor=\"middle\" font-size=\"9px\">3</text><text x=\"306.7\" y=\"45\" text-anchor=\"middle\" font-size=\"9px\">2</text><line x1=\"301.7\" y1=\"47\" x2=\"311.7\" y2=\"47\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"306.7\" y=\"56\" text-anchor=\"middle\" font-size=\"9px\">3</text><line x1=\"440\" y1=\"23\" x2=\"440\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"50\">1</text><line x1=\"40\" y1=\"90\" x2=\"440\" y2=\"90\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"83\" x2=\"40\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"110\">0</text><text x=\"106.7\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">1</text><line x1=\"101.7\" y1=\"107\" x2=\"111.7\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"106.7\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"173.3\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">2</text><line x1=\"168.3\" y1=\"107\" x2=\"178.3\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"173.3\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"240\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">3</text><line x1=\"235\" y1=\"107\" x2=\"245\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"240\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"306.7\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">4</text><line x1=\"301.7\" y1=\"107\" x2=\"311.7\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"306.7\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"373.3\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">5</text><line x1=\"368.3\" y1=\"107\" x2=\"378.3\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"373.3\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><line x1=\"440\" y1=\"83\" x2=\"440\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"110\">1</text><line x1=\"40\" y1=\"150\" x2=\"440\" y2=\"150\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"143\" x2=\"40\" y2=\"157\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"170\">0</text><text x=\"73.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">1</text><line x1=\"66.3\" y1=\"167\" x2=\"80.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"73.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"106.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">2</text><line x1=\"99.7\" y1=\"167\" x2=\"113.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"106.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"140\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">3</text><line x1=\"133\" y1=\"167\" x2=\"147\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"140\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"173.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">4</text><line x1=\"166.3\" y1=\"167\" x2=\"180.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"173.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"206.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">5</text><line x1=\"199.7\" y1=\"167\" x2=\"213.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"206.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"240\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">6</text><line x1=\"233\" y1=\"167\" x2=\"247\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"240\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"273.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">7</text><line x1=\"266.3\" y1=\"167\" x2=\"280.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"273.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"306.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">8</text><line x1=\"299.7\" y1=\"167\" x2=\"313.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"306.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"340\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">9</text><line x1=\"333\" y1=\"167\" x2=\"347\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"340\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"373.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">10</text><line x1=\"366.3\" y1=\"167\" x2=\"380.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"373.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"406.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">11</text><line x1=\"399.7\" y1=\"167\" x2=\"413.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"406.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><line x1=\"440\" y1=\"143\" x2=\"440\" y2=\"157\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"170\">1</text></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{1}{6}\\)",
+            "\\(\\frac{3}{6}\\)",
+            "\\(\\frac{2}{6}\\)",
+            "\\(\\frac{4}{6}\\)"
+          ],
+          "answer": 2,
+          "hint": "Determine the factor to convert 3rds to 6ths, and multiply the numerator.",
+          "solution": "Multiply the numerator and denominator of \\(\\frac{1}{3}\\) by 2: \\(\\frac{1 \\times 2}{3 \\times 2} = \\frac{2}{6}\\). This corresponds to the same vertical position on the number lines.",
+          "steps": [
+            {
+              "explain": "Divide the target denominator 6 by the original denominator 3.",
+              "work": "6 \\div 3 = 2"
+            },
+            {
+              "explain": "Multiply the numerator by this factor.",
+              "work": "1 \\times 2 = 2"
+            },
+            {
+              "explain": "Form the equivalent fraction.",
+              "work": "\\frac{1}{3} = \\frac{2}{6}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the number lines shown below, write the equivalent fraction in twelfths for: \\(\\frac{3}{6}\\).",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"480\" height=\"190\" style=\"font-family:sans-serif;font-size:10px;\"><line x1=\"40\" y1=\"30\" x2=\"440\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"23\" x2=\"40\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"50\">0</text><text x=\"173.3\" y=\"45\" text-anchor=\"middle\" font-size=\"9px\">1</text><line x1=\"168.3\" y1=\"47\" x2=\"178.3\" y2=\"47\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"173.3\" y=\"56\" text-anchor=\"middle\" font-size=\"9px\">3</text><text x=\"306.7\" y=\"45\" text-anchor=\"middle\" font-size=\"9px\">2</text><line x1=\"301.7\" y1=\"47\" x2=\"311.7\" y2=\"47\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"306.7\" y=\"56\" text-anchor=\"middle\" font-size=\"9px\">3</text><line x1=\"440\" y1=\"23\" x2=\"440\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"50\">1</text><line x1=\"40\" y1=\"90\" x2=\"440\" y2=\"90\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"83\" x2=\"40\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"110\">0</text><text x=\"106.7\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">1</text><line x1=\"101.7\" y1=\"107\" x2=\"111.7\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"106.7\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"173.3\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">2</text><line x1=\"168.3\" y1=\"107\" x2=\"178.3\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"173.3\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"240\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">3</text><line x1=\"235\" y1=\"107\" x2=\"245\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"240\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"306.7\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">4</text><line x1=\"301.7\" y1=\"107\" x2=\"311.7\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"306.7\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><text x=\"373.3\" y=\"105\" text-anchor=\"middle\" font-size=\"9px\">5</text><line x1=\"368.3\" y1=\"107\" x2=\"378.3\" y2=\"107\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"373.3\" y=\"116\" text-anchor=\"middle\" font-size=\"9px\">6</text><line x1=\"440\" y1=\"83\" x2=\"440\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"110\">1</text><line x1=\"40\" y1=\"150\" x2=\"440\" y2=\"150\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"143\" x2=\"40\" y2=\"157\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"170\">0</text><text x=\"73.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">1</text><line x1=\"66.3\" y1=\"167\" x2=\"80.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"73.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"106.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">2</text><line x1=\"99.7\" y1=\"167\" x2=\"113.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"106.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"140\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">3</text><line x1=\"133\" y1=\"167\" x2=\"147\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"140\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"173.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">4</text><line x1=\"166.3\" y1=\"167\" x2=\"180.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"173.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"206.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">5</text><line x1=\"199.7\" y1=\"167\" x2=\"213.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"206.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"240\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">6</text><line x1=\"233\" y1=\"167\" x2=\"247\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"240\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"273.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">7</text><line x1=\"266.3\" y1=\"167\" x2=\"280.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"273.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"306.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">8</text><line x1=\"299.7\" y1=\"167\" x2=\"313.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"306.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"340\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">9</text><line x1=\"333\" y1=\"167\" x2=\"347\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"340\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"373.3\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">10</text><line x1=\"366.3\" y1=\"167\" x2=\"380.3\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"373.3\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><text x=\"406.7\" y=\"165\" text-anchor=\"middle\" font-size=\"9px\">11</text><line x1=\"399.7\" y1=\"167\" x2=\"413.7\" y2=\"167\" stroke=\"black\" stroke-width=\"0.8\" /><text x=\"406.7\" y=\"176\" text-anchor=\"middle\" font-size=\"9px\">12</text><line x1=\"440\" y1=\"143\" x2=\"440\" y2=\"157\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"170\">1</text></svg></div>"
+          },
+          "options": [
+            "\\(\\frac{6}{12}\\)",
+            "\\(\\frac{5}{12}\\)",
+            "\\(\\frac{7}{12}\\)",
+            "\\(\\frac{8}{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the top and bottom of \\(\\frac{3}{6}\\) by 2.",
+          "solution": "Multiply the numerator and denominator by 2 to convert to twelfths: \\(\\frac{3 \\times 2}{6 \\times 2} = \\frac{6}{12}\\). This aligns with the equivalent point on the number lines.",
+          "steps": [
+            {
+              "explain": "Determine the multiplier for the denominator.",
+              "work": "12 \\div 6 = 2"
+            },
+            {
+              "explain": "Multiply the numerator by 2.",
+              "work": "3 \\times 2 = 6"
+            },
+            {
+              "explain": "Write the equivalent fraction.",
+              "work": "\\frac{3}{6} = \\frac{6}{12}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-q3d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the number lines shown below, write the equivalent fraction in twelfths for: \\(\\frac{2}{3}\\).",
+          "figure": {
+            "html": "<div style=\"text-align:center;margin:12px 0;\"><svg width=\"480\" height=\"180\" style=\"font-family:sans-serif;font-size:10px;\"><line x1=\"40\" y1=\"30\" x2=\"440\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"23\" x2=\"40\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"50\">0</text><line x1=\"173.3\" y1=\"23\" x2=\"173.3\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"168\" y=\"50\">1/3</text><line x1=\"306.7\" y1=\"23\" x2=\"306.7\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"301\" y=\"50\">2/3</text><line x1=\"440\" y1=\"23\" x2=\"440\" y2=\"37\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"50\">1</text><line x1=\"40\" y1=\"90\" x2=\"440\" y2=\"90\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"83\" x2=\"40\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"110\">0</text><line x1=\"106.7\" y1=\"83\" x2=\"106.7\" y2=\"97\" stroke=\"black\" stroke-width=\"1\" /><text x=\"101\" y=\"110\">1/6</text><line x1=\"173.3\" y1=\"83\" x2=\"173.3\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"168\" y=\"110\">2/6</text><line x1=\"240\" y1=\"83\" x2=\"240\" y2=\"97\" stroke=\"black\" stroke-width=\"1\" /><text x=\"235\" y=\"110\">3/6</text><line x1=\"306.7\" y1=\"83\" x2=\"306.7\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"301\" y=\"110\">4/6</text><line x1=\"373.3\" y1=\"83\" x2=\"373.3\" y2=\"97\" stroke=\"black\" stroke-width=\"1\" /><text x=\"368\" y=\"110\">5/6</text><line x1=\"440\" y1=\"83\" x2=\"440\" y2=\"97\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"110\">1</text><line x1=\"40\" y1=\"150\" x2=\"440\" y2=\"150\" stroke=\"black\" stroke-width=\"1.5\" /><line x1=\"40\" y1=\"143\" x2=\"40\" y2=\"157\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"36\" y=\"170\">0</text><line x1=\"73.3\" y1=\"145\" x2=\"73.3\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"68\" y=\"170\">1/12</text><line x1=\"106.7\" y1=\"145\" x2=\"106.7\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"101\" y=\"170\">2/12</text><line x1=\"140\" y1=\"145\" x2=\"140\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"135\" y=\"170\">3/12</text><line x1=\"173.3\" y1=\"145\" x2=\"173.3\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"168\" y=\"170\">4/12</text><line x1=\"206.7\" y1=\"145\" x2=\"206.7\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"201\" y=\"170\">5/12</text><line x1=\"240\" y1=\"145\" x2=\"240\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"235\" y=\"170\">6/12</text><line x1=\"273.3\" y1=\"145\" x2=\"273.3\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"268\" y=\"170\">7/12</text><line x1=\"306.7\" y1=\"145\" x2=\"306.7\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"301\" y=\"170\">8/12</text><line x1=\"340\" y1=\"145\" x2=\"340\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"335\" y=\"170\">9/12</text><line x1=\"373.3\" y1=\"145\" x2=\"373.3\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"368\" y=\"170\">10/12</text><line x1=\"406.7\" y1=\"145\" x2=\"406.7\" y2=\"155\" stroke=\"black\" stroke-width=\"1\" /><text x=\"401\" y=\"170\">11/12</text><line x1=\"440\" y1=\"143\" x2=\"440\" y2=\"157\" stroke=\"black\" stroke-width=\"1.5\" /><text x=\"437\" y=\"170\">1</svg></div>"
+          },
+          "options": [
+            "\\(\\frac{4}{12}\\)",
+            "\\(\\frac{6}{12}\\)",
+            "\\(\\frac{8}{12}\\)",
+            "\\(\\frac{10}{12}\\)"
+          ],
+          "answer": 2,
+          "hint": "Determine the multiplier to convert 3rds to 12ths.",
+          "solution": "Multiply both the numerator and the denominator of \\(\\frac{2}{3}\\) by 4: \\(\\frac{2 \\times 4}{3 \\times 4} = \\frac{8}{12}\\). This aligns with the equivalent point on the number lines.",
+          "steps": [
+            {
+              "explain": "Determine the conversion factor from 3 to 12.",
+              "work": "12 \\div 3 = 4"
+            },
+            {
+              "explain": "Multiply the numerator by 4.",
+              "work": "2 \\times 4 = 8"
+            },
+            {
+              "explain": "State the equivalent fraction.",
+              "work": "\\frac{2}{3} = \\frac{8}{12}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p62-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing number to make the fractions equivalent: \\(\\frac{1}{3} = \\frac{\\square}{15}\\)",
+          "options": [
+            "10",
+            "15",
+            "3",
+            "5"
+          ],
+          "answer": 3,
+          "hint": "Multiply both the numerator and the denominator by the same number to get 15 in the denominator.",
+          "solution": "To get from 3 to 15 in the denominator, we multiply by 5. We must also multiply the numerator 1 by 5, giving 5.",
+          "steps": [
+            {
+              "explain": "Find the multiplier for the denominator.",
+              "work": "15 \\div 3 = 5"
+            },
+            {
+              "explain": "Multiply the numerator by the same multiplier.",
+              "work": "1 \\times 5 = 5"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p62-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing number to make the fractions equivalent: \\(\\frac{3}{4} = \\frac{\\square}{20}\\)",
+          "options": [
+            "9",
+            "12",
+            "15",
+            "5"
+          ],
+          "answer": 2,
+          "hint": "Multiply numerator and denominator by 5.",
+          "solution": "Since \\(4 \\times 5 = 20\\), multiply the numerator by 5: \\(3 \\times 5 = 15\\).",
+          "steps": [
+            {
+              "explain": "Determine the multiplier.",
+              "work": "20 \\div 4 = 5"
+            },
+            {
+              "explain": "Multiply the numerator.",
+              "work": "3 \\times 5 = 15"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p62-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing number to make the fractions equivalent: \\(\\frac{1}{4} = \\frac{\\square}{100}\\)",
+          "options": [
+            "10",
+            "25",
+            "50",
+            "20"
+          ],
+          "answer": 1,
+          "hint": "Find what number multiplied by 4 equals 100.",
+          "solution": "Since \\(4 \\times 25 = 100\\), multiply the numerator by 25: \\(1 \\times 25 = 25\\).",
+          "steps": [
+            {
+              "explain": "Find the factor.",
+              "work": "100 \\div 4 = 25"
+            },
+            {
+              "explain": "Multiply the numerator.",
+              "work": "1 \\times 25 = 25"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p62-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing number to make the fractions equivalent: \\(\\frac{2}{5} = \\frac{\\square}{30}\\)",
+          "options": [
+            "10",
+            "6",
+            "12",
+            "15"
+          ],
+          "answer": 2,
+          "hint": "Find the multiplier for the denominator, then apply it to the numerator.",
+          "solution": "Since \\(5 \\times 6 = 30\\), multiply the numerator by 6: \\(2 \\times 6 = 12\\).",
+          "steps": [
+            {
+              "explain": "Identify the multiplier.",
+              "work": "30 \\div 5 = 6"
+            },
+            {
+              "explain": "Multiply the numerator.",
+              "work": "2 \\times 6 = 12"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p62-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{1}{4} + \\frac{1}{8}\\)",
+          "options": [
+            "\\(\\frac{2}{8}\\)",
+            "\\(\\frac{3}{8}\\)",
+            "\\(\\frac{2}{12}\\)",
+            "\\(\\frac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert \\(\\frac{1}{4}\\) to an equivalent fraction with denominator 8 first.",
+          "solution": "Change \\(\\frac{1}{4}\\) to \\(\\frac{2}{8}\\). Now add the fractions: \\(\\frac{2}{8} + \\frac{1}{8} = \\frac{3}{8}\\).",
+          "steps": [
+            {
+              "explain": "Convert \\(\\frac{1}{4}\\) to have a denominator of 8.",
+              "work": "\\frac{1 \\times 2}{4 \\times 2} = \\frac{2}{8}"
+            },
+            {
+              "explain": "Add the equivalent fractions.",
+              "work": "\\frac{2}{8} + \\frac{1}{8} = \\frac{3}{8}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p62-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve and write the answer in its simplest form: \\(\\frac{1}{2} + \\frac{4}{10}\\)",
+          "options": [
+            "\\(\\frac{9}{10}\\)",
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{4}{5}\\)",
+            "\\(\\frac{5}{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert \\(\\frac{1}{2}\\) to tenths by multiplying top and bottom by 5.",
+          "solution": "Convert \\(\\frac{1}{2}\\) to \\(\\frac{5}{10}\\). Then add: \\(\\frac{5}{10} + \\frac{4}{10} = \\frac{9}{10}\\).",
+          "steps": [
+            {
+              "explain": "Convert \\(\\frac{1}{2}\\) to tenths.",
+              "work": "\\frac{1 \\times 5}{2 \\times 5} = \\frac{5}{10}"
+            },
+            {
+              "explain": "Add the two fractions.",
+              "work": "\\frac{5}{10} + \\frac{4}{10} = \\frac{9}{10}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p62-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve and write the answer in its simplest form: \\(\\frac{5}{6} - \\frac{1}{3}\\)",
+          "options": [
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{4}{6}\\)",
+            "\\(\\frac{3}{6}\\)",
+            "\\(\\frac{1}{2}\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert \\(\\frac{1}{3}\\) to an equivalent fraction with denominator 6.",
+          "solution": "Convert \\(\\frac{1}{3}\\) to \\(\\frac{2}{6}\\). Subtract: \\(\\frac{5}{6} - \\frac{2}{6} = \\frac{3}{6}\\). Simplify \\(\\frac{3}{6}\\) by dividing top and bottom by 3 to get \\(\\frac{1}{2}\\).",
+          "steps": [
+            {
+              "explain": "Find an equivalent fraction for \\(\\frac{1}{3}\\) with a denominator of 6.",
+              "work": "\\frac{1 \\times 2}{3 \\times 2} = \\frac{2}{6}"
+            },
+            {
+              "explain": "Subtract the fractions.",
+              "work": "\\frac{5}{6} - \\frac{2}{6} = \\frac{3}{6}"
+            },
+            {
+              "explain": "Simplify the result.",
+              "work": "\\frac{3 \\div 3}{6 \\div 3} = \\frac{1}{2}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p63-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{3}{12} + \\frac{1}{6}\\)",
+          "options": [
+            "\\(\\frac{4}{12}\\)",
+            "\\(\\frac{4}{18}\\)",
+            "\\(\\frac{5}{12}\\)",
+            "\\(\\frac{1}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert 1/6 to twelfths: 1/6 = 2/12.",
+          "solution": "Convert \\(\\frac{1}{6}\\) to \\(\\frac{2}{12}\\). Add: \\(\\frac{3}{12} + \\frac{2}{12} = \\frac{5}{12}\\).",
+          "steps": [
+            {
+              "explain": "Convert 1/6 to twelfths.",
+              "work": "\\frac{1 \\times 2}{6 \\times 2} = \\frac{2}{12}"
+            },
+            {
+              "explain": "Add the fractions.",
+              "work": "\\frac{3}{12} + \\frac{2}{12} = \\frac{5}{12}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p63-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve and write the answer in its simplest form: \\(\\frac{1}{2} + \\frac{3}{10}\\)",
+          "options": [
+            "\\(\\frac{8}{10}\\)",
+            "\\(\\frac{4}{5}\\)",
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 1/2 to tenths: 1/2 = 5/10. Add, then simplify.",
+          "solution": "Convert: \\(\\frac{1}{2} = \\frac{5}{10}\\). Add: \\(\\frac{5}{10} + \\frac{3}{10} = \\frac{8}{10}\\). Simplify by dividing top and bottom by 2: \\(\\frac{4}{5}\\).",
+          "steps": [
+            {
+              "explain": "Convert 1/2 to tenths.",
+              "work": "\\frac{1 \\times 5}{2 \\times 5} = \\frac{5}{10}"
+            },
+            {
+              "explain": "Add the fractions.",
+              "work": "\\frac{5}{10} + \\frac{3}{10} = \\frac{8}{10}"
+            },
+            {
+              "explain": "Simplify the result.",
+              "work": "\\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p63-q3d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{1}{4} + \\frac{3}{8}\\)",
+          "options": [
+            "\\(\\frac{4}{8}\\)",
+            "\\(\\frac{5}{8}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 1/4 to eighths: 1/4 = 2/8.",
+          "solution": "Convert \\(\\frac{1}{4}\\) to \\(\\frac{2}{8}\\). Add: \\(\\frac{2}{8} + \\frac{3}{8} = \\frac{5}{8}\\).",
+          "steps": [
+            {
+              "explain": "Convert 1/4 to eighths.",
+              "work": "\\frac{1 \\times 2}{4 \\times 2} = \\frac{2}{8}"
+            },
+            {
+              "explain": "Add the fractions.",
+              "work": "\\frac{2}{8} + \\frac{3}{8} = \\frac{5}{8}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p63-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{11}{12} - \\frac{1}{2}\\)",
+          "options": [
+            "\\(\\frac{10}{12}\\)",
+            "\\(\\frac{7}{12}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{5}{12}\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert 1/2 to twelfths: 1/2 = 6/12.",
+          "solution": "Convert: \\(\\frac{1}{2} = \\frac{6}{12}\\). Subtract: \\(\\frac{11}{12} - \\frac{6}{12} = \\frac{5}{12}\\).",
+          "steps": [
+            {
+              "explain": "Convert 1/2 to twelfths.",
+              "work": "\\frac{1 \\times 6}{2 \\times 6} = \\frac{6}{12}"
+            },
+            {
+              "explain": "Subtract the fractions.",
+              "work": "\\frac{11}{12} - \\frac{6}{12} = \\frac{5}{12}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p63-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve and write the answer in its simplest form: \\(\\frac{3}{5} - \\frac{7}{20}\\)",
+          "options": [
+            "\\(\\frac{2}{5}\\)",
+            "\\(\\frac{5}{20}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{1}{4}\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert 3/5 to twentieths: 3/5 = 12/20. Subtract, then simplify.",
+          "solution": "Convert: \\(\\frac{3}{5} = \\frac{12}{20}\\). Subtract: \\(\\frac{12}{20} - \\frac{7}{20} = \\frac{5}{20}\\). Simplify: \\(\\frac{5 \\div 5}{20 \\div 5} = \\frac{1}{4}\\).",
+          "steps": [
+            {
+              "explain": "Convert 3/5 to twentieths.",
+              "work": "\\frac{3 \\times 4}{5 \\times 4} = \\frac{12}{20}"
+            },
+            {
+              "explain": "Subtract the fractions.",
+              "work": "\\frac{12}{20} - \\frac{7}{20} = \\frac{5}{20}"
+            },
+            {
+              "explain": "Simplify the result.",
+              "work": "\\frac{5 \\div 5}{20 \\div 5} = \\frac{1}{4}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-3-p63-q4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(\\frac{7}{10} - \\frac{3}{5}\\)",
+          "options": [
+            "\\(\\frac{4}{10}\\)",
+            "\\(\\frac{1}{10}\\)",
+            "\\(\\frac{1}{5}\\)",
+            "\\(\\frac{2}{5}\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 3/5 to tenths: 3/5 = 6/10.",
+          "solution": "Convert: \\(\\frac{3}{5} = \\frac{6}{10}\\). Subtract: \\(\\frac{7}{10} - \\frac{6}{10} = \\frac{1}{10}\\).",
+          "steps": [
+            {
+              "explain": "Convert 3/5 to tenths.",
+              "work": "\\frac{3 \\times 2}{5 \\times 2} = \\frac{6}{10}"
+            },
+            {
+              "explain": "Subtract the fractions.",
+              "work": "\\frac{7}{10} - \\frac{6}{10} = \\frac{1}{10}"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y5-rqf-6",
+      "code": "MA3-RQF-01",
+      "title": "Simplifying fractions",
+      "questions": [
+        {
+          "id": "y5-rqf-6-p62-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following fraction: \\(\\frac{6}{15}\\)",
+          "options": [
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{2}{5}\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide the top and bottom of the fraction by 3.",
+          "solution": "Divide the numerator (6) and the denominator (15) by their common divisor 3: \\(\\frac{6 \\div 3}{15 \\div 3} = \\frac{2}{5}\\).",
+          "steps": [
+            {
+              "explain": "Divide both parts by 3.",
+              "work": "\\frac{6 \\div 3}{15 \\div 3} = \\frac{2}{5}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-6-p62-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following fraction: \\(\\frac{9}{12}\\)",
+          "options": [
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{2}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide top and bottom by 3.",
+          "solution": "Divide the numerator (9) and denominator (12) by 3: \\(\\frac{9 \\div 3}{12 \\div 3} = \\frac{3}{4}\\).",
+          "steps": [
+            {
+              "explain": "Divide top and bottom by 3.",
+              "work": "\\frac{9 \\div 3}{12 \\div 3} = \\frac{3}{4}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-6-p62-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following fraction: \\(\\frac{3}{9}\\)",
+          "options": [
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{1}{9}\\)",
+            "\\(\\frac{2}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide top and bottom by 3.",
+          "solution": "Divide the numerator (3) and denominator (9) by 3: \\(\\frac{3 \\div 3}{9 \\div 3} = \\frac{1}{3}\\).",
+          "steps": [
+            {
+              "explain": "Divide top and bottom by 3.",
+              "work": "\\frac{3 \\div 3}{9 \\div 3} = \\frac{1}{3}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-6-p62-q3d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following fraction: \\(\\frac{15}{18}\\)",
+          "options": [
+            "\\(\\frac{5}{6}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{4}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide top and bottom by 3.",
+          "solution": "Divide the numerator (15) and denominator (18) by 3: \\(\\frac{15 \\div 3}{18 \\div 3} = \\frac{5}{6}\\).",
+          "steps": [
+            {
+              "explain": "Divide top and bottom by 3.",
+              "work": "\\frac{15 \\div 3}{18 \\div 3} = \\frac{5}{6}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-6-p63-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the fraction: \\(\\frac{15}{20}\\)",
+          "options": [
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{4}{5}\\)",
+            "\\(\\frac{3}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the numerator and denominator by their greatest common divisor (5).",
+          "solution": "Divide the top and bottom by 5: \\(\\frac{15 \\div 5}{20 \\div 5} = \\frac{3}{4}\\).",
+          "steps": [
+            {
+              "explain": "Divide the numerator and denominator by 5.",
+              "work": "\\frac{15 \\div 5}{20 \\div 5} = \\frac{3}{4}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-6-p63-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the fraction: \\(\\frac{10}{30}\\)",
+          "options": [
+            "\\(\\frac{1}{10}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{2}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide top and bottom by 10.",
+          "solution": "Divide the top and bottom by 10: \\(\\frac{10 \\div 10}{30 \\div 10} = \\frac{1}{3}\\).",
+          "steps": [
+            {
+              "explain": "Divide the numerator and denominator by 10.",
+              "work": "\\frac{10 \\div 10}{30 \\div 10} = \\frac{1}{3}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-6-p63-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the fraction: \\(\\frac{25}{100}\\)",
+          "options": [
+            "\\(\\frac{1}{5}\\)",
+            "\\(\\frac{2}{5}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{1}{4}\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide top and bottom by 25.",
+          "solution": "Divide top and bottom by 25: \\(\\frac{25 \\div 25}{100 \\div 25} = \\frac{1}{4}\\).",
+          "steps": [
+            {
+              "explain": "Divide numerator and denominator by 25.",
+              "work": "\\frac{25 \\div 25}{100 \\div 25} = \\frac{1}{4}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-6-p63-q1d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the fraction: \\(\\frac{12}{15}\\)",
+          "options": [
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{4}{5}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{3}{5}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide top and bottom by 3.",
+          "solution": "Divide top and bottom by 3: \\(\\frac{12 \\div 3}{15 \\div 3} = \\frac{4}{5}\\).",
+          "steps": [
+            {
+              "explain": "Divide top and bottom by 3.",
+              "work": "\\frac{12 \\div 3}{15 \\div 3} = \\frac{4}{5}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-rqf-6-p63-q1e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the fraction: \\(\\frac{8}{12}\\)",
+          "options": [
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{5}{6}\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide top and bottom by 4.",
+          "solution": "Divide top and bottom by 4: \\(\\frac{8 \\div 4}{12 \\div 4} = \\frac{2}{3}\\).",
+          "steps": [
+            {
+              "explain": "Divide top and bottom by 4.",
+              "work": "\\frac{8 \\div 4}{12 \\div 4} = \\frac{2}{3}"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    }
+  ]
+}

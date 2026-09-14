@@ -1,0 +1,19 @@
+<svg viewBox="0 0 420 174" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+    <text x="20" y="20" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">Stem</text>
+    <text x="130" y="20" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">Leaf</text>
+    <line x1="110" y1="10" x2="110" y2="144" stroke="#475569" stroke-width="1.5"/>
+    
+      <text x="40" y="40" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">1</text>
+      <text x="130" y="40" font-family="system-ui" font-size="13" fill="#1e293b">2   2   8   9</text>
+    
+      <text x="40" y="66" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">2</text>
+      <text x="130" y="66" font-family="system-ui" font-size="13" fill="#1e293b">2   4   5   6   8</text>
+    
+      <text x="40" y="92" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">3</text>
+      <text x="130" y="92" font-family="system-ui" font-size="13" fill="#1e293b">0   2   6   8   8   9</text>
+    
+      <text x="40" y="118" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">4</text>
+      <text x="130" y="118" font-family="system-ui" font-size="13" fill="#1e293b">0   1   2   3   6</text>
+    
+    <text x="20" y="164" font-family="system-ui" font-size="12" fill="#1e293b">n = 20 test marks (1|2 means 12)</text>
+  </svg>

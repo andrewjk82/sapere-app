@@ -1,0 +1,522 @@
+{
+  "chapterId": "exam:year7ch3h",
+  "title": "Exam Practice",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "exam:year7ch3h",
+      "code": "",
+      "title": "Chapter review",
+      "questions": [
+        {
+          "id": "y7-3h-q24",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "",
+          "figure": {
+            "geometry": {
+              "width": 280,
+              "points": {
+                "A": [
+                  0,
+                  0
+                ],
+                "B": [
+                  0,
+                  6
+                ],
+                "C": [
+                  7,
+                  6
+                ],
+                "D": [
+                  7,
+                  0
+                ],
+                "P1": [
+                  2,
+                  6
+                ],
+                "P2": [
+                  2,
+                  0
+                ],
+                "P3": [
+                  0,
+                  4
+                ],
+                "P4": [
+                  7,
+                  4
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "A"
+                },
+                {
+                  "from": "P1",
+                  "to": "P2",
+                  "dashed": true
+                },
+                {
+                  "from": "P3",
+                  "to": "P4",
+                  "dashed": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "B",
+                    "P1"
+                  ],
+                  "text": "a cm"
+                },
+                {
+                  "between": [
+                    "P1",
+                    "C"
+                  ],
+                  "text": "5 cm"
+                },
+                {
+                  "between": [
+                    "A",
+                    "P3"
+                  ],
+                  "text": "4 cm"
+                },
+                {
+                  "between": [
+                    "P3",
+                    "B"
+                  ],
+                  "text": "a cm"
+                }
+              ]
+            }
+          },
+          "parts": [
+            {
+              "id": "y7-3h-q24a",
+              "type": "short",
+              "stem": "a) Find the area of each of the rectangles ①, ②, ③ and ④.",
+              "answer": "① = a², ② = 5a, ③ = 4a, ④ = 20",
+              "steps": [
+                {
+                  "explain": "To find the area of a rectangle, we use the formula: Area = width × height. Let's look at each small rectangle one by one.",
+                  "work": "\\text{Area} = \\text{width} \\times \\text{height}"
+                },
+                {
+                  "explain": "For rectangle ①, the diagram shows it has a width of $a$ and a height of $a$.",
+                  "work": "\\text{Area ①} = a \\times a = a^2"
+                },
+                {
+                  "explain": "For rectangle ②, it is next to rectangle ①. The total width of the top is $a + 5$, so its width is $5$. Its height is the same as rectangle ①, which is $a$.",
+                  "work": "\\text{Area ②} = 5 \\times a = 5a"
+                },
+                {
+                  "explain": "For rectangle ③, it is below rectangle ①. Its width is the same as rectangle ① ($a$). The total height is $a + 4$, so its height is $4$.",
+                  "work": "\\text{Area ③} = a \\times 4 = 4a"
+                },
+                {
+                  "explain": "For rectangle ④, it is below rectangle ② and next to rectangle ③. Its width is $5$ and its height is $4$.",
+                  "work": "\\text{Area ④} = 5 \\times 4 = 20"
+                }
+              ]
+            },
+            {
+              "id": "y7-3h-q24b",
+              "type": "short",
+              "stem": "b) Find the area of rectangle $ABCD$ as a product of the lengths of its sides.",
+              "answer": "(a + 5)(a + 4)",
+              "steps": [
+                {
+                  "explain": "Now we need to find the area of the entire large rectangle $ABCD$. We still use the formula: Area = width × height.",
+                  "work": "\\text{Area} = \\text{width} \\times \\text{height}"
+                },
+                {
+                  "explain": "Look at the labels on the outside of the large rectangle. The total width across the top is given as $(a + 5)$.",
+                  "work": "\\text{Total width} = (a + 5)"
+                },
+                {
+                  "explain": "The total height down the side is given as $(a + 4)$.",
+                  "work": "\\text{Total height} = (a + 4)"
+                },
+                {
+                  "explain": "Multiply the total width by the total height. We must use brackets around both expressions to show that we are multiplying the entire width by the entire height.",
+                  "work": "\\text{Area } ABCD = (a + 5)(a + 4)"
+                }
+              ]
+            },
+            {
+              "id": "y7-3h-q24c",
+              "type": "short",
+              "stem": "c) Deduce that $(a + 5)(a + 4) = a^2 + 9a + 20$ for all values of $a$.",
+              "answer": "a² + 9a + 20",
+              "steps": [
+                {
+                  "explain": "The total area of the large rectangle $ABCD$ must be exactly equal to the sum of the areas of the four smaller rectangles that make it up.",
+                  "work": "\\text{Area } ABCD = \\text{Area ①} + \\text{Area ②} + \\text{Area ③} + \\text{Area ④}"
+                },
+                {
+                  "explain": "In part (b), we wrote the total area as $(a + 5)(a + 4)$. In part (a), we found the four smaller areas: $a^2$, $5a$, $4a$, and $20$. Let's substitute these into our equation.",
+                  "work": "(a + 5)(a + 4) = a^2 + 5a + 4a + 20"
+                },
+                {
+                  "explain": "Now we simplify the right side of the equation. We have two 'like terms' that both have an '$a$': $5a$ and $4a$.",
+                  "work": "5a + 4a = 9a"
+                },
+                {
+                  "explain": "Replace $5a + 4a$ with $9a$ to get the final simplified expression. This shows how expanding double brackets works geometrically!",
+                  "work": "(a + 5)(a + 4) = a^2 + 9a + 20"
+                }
+              ]
+            },
+            {
+              "id": "y7-3h-q24d",
+              "type": "short",
+              "stem": "d) Find the perimeter of each of the rectangles ①, ②, ③ and ④.",
+              "answer": "① = 4a, ② = 2a + 10, ③ = 2a + 8, ④ = 18",
+              "steps": [
+                {
+                  "explain": "The perimeter is the total distance around the outside edge of a shape. For a rectangle, we add up the lengths of all four sides: width + width + height + height.",
+                  "work": "\\text{Perimeter} = 2 \\times \\text{width} + 2 \\times \\text{height}"
+                },
+                {
+                  "explain": "For rectangle ①, the width is $a$ and the height is $a$.",
+                  "work": "\\text{Perimeter ①} = a + a + a + a = 4a"
+                },
+                {
+                  "explain": "For rectangle ②, it has two horizontal sides of length $5$ and two vertical sides of length $a$.",
+                  "work": "\\text{Perimeter ②} = 5 + 5 + a + a = 2a + 10"
+                },
+                {
+                  "explain": "For rectangle ③, it has two horizontal sides of length $a$ and two vertical sides of length $4$.",
+                  "work": "\\text{Perimeter ③} = a + a + 4 + 4 = 2a + 8"
+                },
+                {
+                  "explain": "For rectangle ④, it has two horizontal sides of length $5$ and two vertical sides of length $4$.",
+                  "work": "\\text{Perimeter ④} = 5 + 5 + 4 + 4 = 18"
+                }
+              ]
+            },
+            {
+              "id": "y7-3h-q24e",
+              "type": "short",
+              "stem": "e) Find the perimeter of rectangle $ABCD$.",
+              "answer": "4a + 18",
+              "steps": [
+                {
+                  "explain": "To find the perimeter of the large rectangle $ABCD$, we need to add the lengths of its four outer edges. The total width is $(a + 5)$ and the total height is $(a + 4)$.",
+                  "work": "\\text{Perimeter } ABCD = (a + 5) + (a + 5) + (a + 4) + (a + 4)"
+                },
+                {
+                  "explain": "To simplify, let's group all the like terms together. First, collect all the '$a$' terms.",
+                  "work": "a + a + a + a = 4a"
+                },
+                {
+                  "explain": "Next, collect all the number terms.",
+                  "work": "5 + 5 + 4 + 4 = 18"
+                },
+                {
+                  "explain": "Add the simplified parts together to get the final perimeter.",
+                  "work": "4a + 18"
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "inactive": true
+        },
+        {
+          "id": "y7-3h-q26",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "",
+          "figure": {
+            "geometry": {
+              "width": 260,
+              "points": {
+                "A": [
+                  0,
+                  0
+                ],
+                "B": [
+                  0,
+                  8
+                ],
+                "C": [
+                  6,
+                  8
+                ],
+                "D": [
+                  6,
+                  0
+                ],
+                "E": [
+                  2,
+                  8
+                ],
+                "F": [
+                  2,
+                  4
+                ],
+                "G": [
+                  0,
+                  4
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "A"
+                },
+                {
+                  "from": "B",
+                  "to": "E"
+                },
+                {
+                  "from": "E",
+                  "to": "F"
+                },
+                {
+                  "from": "F",
+                  "to": "G"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "A",
+                  "right": true
+                },
+                {
+                  "at": "B",
+                  "right": true
+                },
+                {
+                  "at": "C",
+                  "right": true
+                },
+                {
+                  "at": "D",
+                  "right": true
+                },
+                {
+                  "at": "E",
+                  "right": true
+                },
+                {
+                  "at": "F",
+                  "right": true
+                },
+                {
+                  "at": "G",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "B",
+                    "E"
+                  ],
+                  "text": "m cm"
+                },
+                {
+                  "between": [
+                    "E",
+                    "C"
+                  ],
+                  "text": "4 cm"
+                },
+                {
+                  "between": [
+                    "G",
+                    "B"
+                  ],
+                  "text": "2m cm"
+                },
+                {
+                  "between": [
+                    "A",
+                    "G"
+                  ],
+                  "text": "4 cm"
+                }
+              ]
+            }
+          },
+          "parts": [
+            {
+              "id": "y7-3h-q26a",
+              "type": "short",
+              "stem": "a) Find the areas of rectangle $ABCD$ and the shaded rectangle.",
+              "answer": "ABCD: 2m² + 12m + 16; shaded: 2m²",
+              "steps": [
+                {
+                  "explain": "First, find the area of the large rectangle $ABCD$. From the diagram, its width is $(m + 4)$ cm and its height is $(2m + 4)$ cm. Multiply these together.",
+                  "work": "\\text{Area of ABCD} = (m + 4)(2m + 4)"
+                },
+                {
+                  "explain": "To expand $(m + 4)(2m + 4)$, multiply each term in the first bracket by each term in the second bracket.",
+                  "work": "= m \\times 2m + m \\times 4 + 4 \\times 2m + 4 \\times 4"
+                },
+                {
+                  "explain": "Calculate each multiplication, then collect like terms ($4m + 8m = 12m$).",
+                  "work": "= 2m^2 + 4m + 8m + 16 = 2m^2 + 12m + 16 \\text{ cm}^2"
+                },
+                {
+                  "explain": "Now find the area of the shaded rectangle. From the diagram, it has width $m$ cm and height $2m$ cm.",
+                  "work": "\\text{Area of shaded} = m \\times 2m = 2m^2 \\text{ cm}^2"
+                }
+              ]
+            },
+            {
+              "id": "y7-3h-q26b",
+              "type": "short",
+              "stem": "b) Find the difference of the two areas found in part a.",
+              "answer": "12m + 16",
+              "steps": [
+                {
+                  "explain": "The 'difference' means we subtract. We take the area of the large rectangle and subtract the area of the shaded rectangle.",
+                  "work": "\\text{Difference} = (2m^2 + 12m + 16) - 2m^2"
+                },
+                {
+                  "explain": "Simplify by collecting like terms. The $2m^2$ terms cancel each other out: $2m^2 - 2m^2 = 0$. The remaining terms stay as they are.",
+                  "work": "= 12m + 16 \\text{ cm}^2"
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "inactive": true
+        },
+        {
+          "id": "y7-3h-q27",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "",
+          "parts": [
+            {
+              "id": "y7-3h-q27a",
+              "type": "short",
+              "stem": "a) If $p$ is a whole number, what are the possible last digits of $p^2$? (For example, if $p = 83$, the last digit is 9.)",
+              "answer": "0, 1, 4, 5, 6, 9",
+              "steps": [
+                {
+                  "explain": "The last digit of any number squared only depends on the last digit of the number itself. So we just need to square every digit from $0$ to $9$ and see what last digits we get.",
+                  "work": "0^2=0,\\ 1^2=1,\\ 2^2=4,\\ 3^2=9,\\ 4^2=16,\\ 5^2=25"
+                },
+                {
+                  "explain": "Continue with digits $6$ to $9$.",
+                  "work": "6^2=36,\\ 7^2=49,\\ 8^2=64,\\ 9^2=81"
+                },
+                {
+                  "explain": "Now list the last digits of each result: $0, 1, 4, 9, 6, 5, 6, 9, 4, 1$. Remove the duplicates to get the set of possible last digits.",
+                  "work": "\\text{Possible last digits of } p^2: {0, 1, 4, 5, 6, 9}"
+                }
+              ]
+            },
+            {
+              "id": "y7-3h-q27b",
+              "type": "short",
+              "stem": "b) If $p$ is an even number, what are the possible values of the last digit of $p^2 + 1$? (For example, if $p = 78$, the last digit of $p^2 + 1$ is 5.)",
+              "answer": "1, 5, 7",
+              "steps": [
+                {
+                  "explain": "Since $p$ is even, it must end in one of these digits: $0, 2, 4, 6,$ or $8$. We need to square each of these and then add $1$.",
+                  "work": "0^2+1=1,\\ 2^2+1=5,\\ 4^2+1=17,\\ 6^2+1=37,\\ 8^2+1=65"
+                },
+                {
+                  "explain": "Now look at the last digit of each result: $1, 5, 7, 7, 5$.",
+                  "work": "\\text{Last digits: } 1, 5, 7, 7, 5"
+                },
+                {
+                  "explain": "Remove duplicates to get the set of possible last digits.",
+                  "work": "\\text{Possible last digits of } p^2+1: {1, 5, 7}"
+                }
+              ]
+            },
+            {
+              "id": "y7-3h-q27c",
+              "type": "short",
+              "stem": "c) If $q$ is an even whole number that is also divisible by 5, what are the possible last digits of $q$?",
+              "answer": "0",
+              "steps": [
+                {
+                  "explain": "An even number ends in $0, 2, 4, 6,$ or $8$. A number divisible by $5$ ends in $0$ or $5$.",
+                  "work": "\\text{Even last digits: } {0,2,4,6,8} \\quad \\text{Divisible by 5 last digits: } {0,5}"
+                },
+                {
+                  "explain": "For $q$ to be BOTH even AND divisible by $5$, its last digit must appear in both lists. The only digit that is in both sets is $0$.",
+                  "work": "{0,2,4,6,8} \\cap {0,5} = {0}"
+                },
+                {
+                  "explain": "Therefore $q$ must be divisible by $10$, and the only possible last digit is $0$.",
+                  "work": "\\text{Possible last digit of } q: 0"
+                }
+              ]
+            },
+            {
+              "id": "y7-3h-q27d",
+              "type": "review",
+              "stem": "d) Is it true that for any even whole number $p$, $p^2 + 1$ is not divisible by 3?",
+              "answer": "Yes. From part b), p²+1 for even p always ends in 1, 5 or 7. More formally: for any integer p, either the remainder of p when divided by 3 is 0, 1, or 2. Then the remainder of p² when divided by 3 is 0, 1, or 1 respectively, so the remainder of p²+1 when divided by 3 is 1, 2, or 2. In every case the remainder is not 0, so p²+1 is never divisible by 3.",
+              "steps": [
+                {
+                  "explain": "Yes, it is true. To prove this, we consider all possible remainders when dividing $p$ by $3$. Any whole number $p$ gives a remainder of $0$, $1$, or $2$ when divided by $3$.",
+                  "work": "\\text{Case 1: } p = 3k \\text{ (remainder 0)}"
+                },
+                {
+                  "explain": "If $p$ is divisible by $3$, then $p^2$ is also divisible by $3$, so $p^2 + 1$ has remainder $1$ when divided by $3$. Since the remainder is not $0$, it is NOT divisible by $3$.",
+                  "work": "p^2 + 1 \\equiv 0 + 1 = 1 \\pmod{3} \\quad \\text{(not divisible by 3)}"
+                },
+                {
+                  "explain": "If $p$ has remainder $1$ when divided by $3$, then $p^2$ has remainder $1$, and $p^2 + 1$ has remainder $2$.",
+                  "work": "p^2 + 1 \\equiv 1 + 1 = 2 \\pmod{3} \\quad \\text{(not divisible by 3)}"
+                },
+                {
+                  "explain": "If $p$ has remainder $2$ when divided by $3$, then $p^2$ has remainder $4$, which is the same as remainder $1$. So $p^2 + 1$ has remainder $2$.",
+                  "work": "p^2 + 1 \\equiv 4 + 1 = 5 \\equiv 2 \\pmod{3} \\quad \\text{(not divisible by 3)}"
+                },
+                {
+                  "explain": "In all three possible cases, $p^2 + 1$ gives a non-zero remainder when divided by $3$. Therefore $p^2 + 1$ is NEVER divisible by $3$, for any whole number $p$.",
+                  "work": "\\therefore p^2 + 1 \\text{ is never divisible by 3 } \\checkmark"
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "inactive": true
+        }
+      ]
+    }
+  ]
+}

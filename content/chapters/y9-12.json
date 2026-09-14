@@ -1,0 +1,141 @@
+{
+  "chapterId": "y9-12",
+  "title": "Chapter 12: Probability",
+  "year": "2019",
+  "topics": [
+    {
+      "topicId": "y9-12c",
+      "code": "12C",
+      "title": "Relative frequency",
+      "questions": [
+        {
+          "id": "y9-willoughby-19-t7q1",
+          "type": "multipart",
+          "stem": "An experiment was conducted to find how many matches were in 100 matchboxes. The results are shown below.",
+          "figure": {
+            "svg": "fig:fa8231b608"
+          },
+          "parts": [
+            {
+              "id": "y9-willoughby-19-t7q1a",
+              "type": "mc",
+              "stem": "What is the relative frequency of boxes containing exactly 50 matches?",
+              "options": [
+                "$\\frac{19}{50}$",
+                "$\\frac{38}{50}$",
+                "$\\frac{1}{50}$",
+                "$\\frac{19}{100}$"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Relative frequency $=\\dfrac{\\text{frequency of the outcome}}{\\text{total number of trials}}$. From the table, $38$ boxes had exactly $50$ matches, out of $100$ boxes total.",
+                  "work": "\\(\\text{Relative Frequency} = \\frac{38}{100}\\)"
+                },
+                {
+                  "explain": "Simplify the fraction by dividing numerator and denominator by their common factor, $2$.",
+                  "work": "\\(\\frac{38 \\div 2}{100 \\div 2} = \\frac{19}{50}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y9-willoughby-19-t7q1b",
+              "type": "mc",
+              "stem": "What is the experimental probability of getting either 52 or 53 matches?",
+              "options": [
+                "$\\frac{2}{25}$",
+                "$\\frac{8}{25}$",
+                "$\\frac{1}{25}$",
+                "$\\frac{4}{25}$"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "\"Either...or\" means add the two frequencies from the table: $6$ boxes had $52$ matches, $2$ boxes had $53$ matches.",
+                  "work": "\\(6 + 2 = 8\\)"
+                },
+                {
+                  "explain": "Divide by the total number of trials to get the probability.",
+                  "work": "\\(P(52 \\text{ or } 53) = \\frac{8}{100}\\)"
+                },
+                {
+                  "explain": "Simplify by dividing numerator and denominator by $4$.",
+                  "work": "\\(\\frac{8 \\div 4}{100 \\div 4} = \\frac{2}{25}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y9-willoughby-19-t7q1c",
+              "type": "mc",
+              "stem": "If the experiment was extended to 800 matchboxes, how many would you expect to have 52 matches?",
+              "options": [
+                "$96$",
+                "$52$",
+                "$24$",
+                "$48$"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "First find the experimental probability of getting exactly $52$ matches from the original data.",
+                  "work": "\\(P(52) = \\frac{6}{100}\\)"
+                },
+                {
+                  "explain": "Expected number of occurrences $=$ probability $\\times$ new number of trials.",
+                  "work": "\\(\\text{Expected} = \\frac{6}{100} \\times 800\\)"
+                },
+                {
+                  "explain": "Calculate: $\\frac{6 \\times 800}{100} = \\frac{4800}{100}$.",
+                  "work": "\\(= 48 \\text{ boxes}\\)"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-12c"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-12d",
+      "code": "12D",
+      "title": "Multi-stage experiments",
+      "questions": [
+        {
+          "id": "y9-willoughby-19-t7q2",
+          "type": "mc",
+          "stem": "Two coins are tossed. Find the probability that the result on both coins is a tail.",
+          "options": [
+            "$\\frac{1}{3}$",
+            "$\\frac{1}{4}$",
+            "$\\frac{1}{2}$",
+            "$1$"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "A fair coin has probability $\\frac{1}{2}$ of landing on tails. The two coin tosses are independent events (one doesn't affect the other), so the probability of both events happening is the product of their individual probabilities.",
+              "work": "\\(P(\\text{Tail and Tail}) = P(\\text{Tail}) \\times P(\\text{Tail})\\)"
+            },
+            {
+              "explain": "Substitute $\\frac{1}{2}$ for each probability and multiply.",
+              "work": "\\(\\frac{1}{2} \\times \\frac{1}{2} = \\frac{1 \\times 1}{2 \\times 2} = \\frac{1}{4}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-12d"
+          }
+        }
+      ]
+    }
+  ]
+}

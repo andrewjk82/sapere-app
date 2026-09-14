@@ -1,0 +1,1094 @@
+{
+  "chapterId": "exam:year10ch1d",
+  "title": "Exam Practice",
+  "year": "Year 10",
+  "topics": [
+    {
+      "topicId": "exam:year10ch1d",
+      "code": "",
+      "title": "Compound interest",
+      "questions": [
+        {
+          "id": "y10-1d-q18a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the principal that must be invested now at \\( 3.8\\% \\) p.a., compounded monthly, to reach a future value of \\( 10000 \\) dollars in \\( 6 \\) years. Correct to the nearest cent.",
+          "options": [
+            "7964.11",
+            "8760.52",
+            "7167.70",
+            "8362.32"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the variables and formula for present value under compound interest.",
+              "work": "\\(A = 10000, quad r = \\frac{0.038}{12}, quad n = 72\\)"
+            },
+            {
+              "explain": "Set up the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{10000}{\\left(1 + \\frac{0.038}{12}\\right)^{72}}\\)"
+            },
+            {
+              "explain": "Evaluate the expression to find the principal amount.",
+              "work": "\\(P \\approx 7964.11\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-q18b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the principal that must be invested now at \\( 4.0\\% \\) p.a., compounded monthly, to reach a future value of \\( 20000 \\) dollars in \\( 7 \\) years. Correct to the nearest cent.",
+          "options": [
+            "15878.85",
+            "13610.44",
+            "16634.98",
+            "15122.71"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the variables and formula for present value under compound interest.",
+              "work": "\\(A = 20000, quad r = \\frac{0.040}{12}, quad n = 84\\)"
+            },
+            {
+              "explain": "Set up the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{20000}{\\left(1 + \\frac{0.040}{12}\\right)^{84}}\\)"
+            },
+            {
+              "explain": "Evaluate the expression to find the principal amount.",
+              "work": "\\(P \\approx 15122.71\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-q18c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the principal that must be invested now at \\( 4.2\\% \\) p.a., compounded monthly, to reach a future value of \\( 30000 \\) dollars in \\( 8 \\) years. Correct to the nearest cent.",
+          "options": [
+            "23596.40",
+            "22523.83",
+            "21451.27",
+            "19306.14"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the variables and formula for present value under compound interest.",
+              "work": "\\(A = 30000, quad r = \\frac{0.042}{12}, quad n = 96\\)"
+            },
+            {
+              "explain": "Set up the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{30000}{\\left(1 + \\frac{0.042}{12}\\right)^{96}}\\)"
+            },
+            {
+              "explain": "Evaluate the expression to find the principal amount.",
+              "work": "\\(P \\approx 21451.27\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-q18d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the principal that must be invested now at \\( 4.4\\% \\) p.a., compounded monthly, to reach a future value of \\( 40000 \\) dollars in \\( 9 \\) years. Correct to the nearest cent.",
+          "options": [
+            "26939.77",
+            "24245.79",
+            "28286.76",
+            "29633.75"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the variables and formula for present value under compound interest.",
+              "work": "\\(A = 40000, quad r = \\frac{0.044}{12}, quad n = 108\\)"
+            },
+            {
+              "explain": "Set up the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{40000}{\\left(1 + \\frac{0.044}{12}\\right)^{108}}\\)"
+            },
+            {
+              "explain": "Evaluate the expression to find the principal amount.",
+              "work": "\\(P \\approx 26939.77\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-q18e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the principal that must be invested now at \\( 4.6\\% \\) p.a., compounded monthly, to reach a future value of \\( 50000 \\) dollars in \\( 10 \\) years. Correct to the nearest cent.",
+          "options": [
+            "33171.55",
+            "28432.76",
+            "34751.15",
+            "31591.95"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the variables and formula for present value under compound interest.",
+              "work": "\\(A = 50000, quad r = \\frac{0.046}{12}, quad n = 120\\)"
+            },
+            {
+              "explain": "Set up the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{50000}{\\left(1 + \\frac{0.046}{12}\\right)^{120}}\\)"
+            },
+            {
+              "explain": "Evaluate the expression to find the principal amount.",
+              "work": "\\(P \\approx 31591.95\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-q18f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the principal that must be invested now at \\( 4.8\\% \\) p.a., compounded monthly, to reach a future value of \\( 60000 \\) dollars in \\( 11 \\) years. Correct to the nearest cent.",
+          "options": [
+            "37195.50",
+            "35424.29",
+            "31881.86",
+            "38966.72"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the variables and formula for present value under compound interest.",
+              "work": "\\(A = 60000, quad r = \\frac{0.048}{12}, quad n = 132\\)"
+            },
+            {
+              "explain": "Set up the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{60000}{\\left(1 + \\frac{0.048}{12}\\right)^{132}}\\)"
+            },
+            {
+              "explain": "Evaluate the expression to find the principal amount.",
+              "work": "\\(P \\approx 35424.29\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-q18g",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the principal that must be invested now at \\( 5.0\\% \\) p.a., compounded monthly, to reach a future value of \\( 70000 \\) dollars in \\( 12 \\) years. Correct to the nearest cent.",
+          "options": [
+            "38464.73",
+            "42311.20",
+            "34618.26",
+            "40387.97"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the variables and formula for present value under compound interest.",
+              "work": "\\(A = 70000, quad r = \\frac{0.050}{12}, quad n = 144\\)"
+            },
+            {
+              "explain": "Set up the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{70000}{\\left(1 + \\frac{0.050}{12}\\right)^{144}}\\)"
+            },
+            {
+              "explain": "Evaluate the expression to find the principal amount.",
+              "work": "\\(P \\approx 38464.73\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-q18h",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the principal that must be invested now at \\( 5.2\\% \\) p.a., compounded monthly, to reach a future value of \\( 80000 \\) dollars in \\( 13 \\) years. Correct to the nearest cent.",
+          "options": [
+            "42788.83",
+            "40751.27",
+            "36676.14",
+            "44826.40"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the variables and formula for present value under compound interest.",
+              "work": "\\(A = 80000, quad r = \\frac{0.052}{12}, quad n = 156\\)"
+            },
+            {
+              "explain": "Set up the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{80000}{\\left(1 + \\frac{0.052}{12}\\right)^{156}}\\)"
+            },
+            {
+              "explain": "Evaluate the expression to find the principal amount.",
+              "work": "\\(P \\approx 40751.27\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-q18i",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the principal that must be invested now at \\( 5.4\\% \\) p.a., compounded monthly, to reach a future value of \\( 90000 \\) dollars in \\( 14 \\) years. Correct to the nearest cent.",
+          "options": [
+            "42330.40",
+            "46563.44",
+            "38097.36",
+            "44446.92"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the variables and formula for present value under compound interest.",
+              "work": "\\(A = 90000, quad r = \\frac{0.054}{12}, quad n = 168\\)"
+            },
+            {
+              "explain": "Set up the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{90000}{\\left(1 + \\frac{0.054}{12}\\right)^{168}}\\)"
+            },
+            {
+              "explain": "Evaluate the expression to find the principal amount.",
+              "work": "\\(P \\approx 42330.40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-q18j",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the principal that must be invested now at \\( 5.6\\% \\) p.a., compounded monthly, to reach a future value of \\( 100000 \\) dollars in \\( 15 \\) years. Correct to the nearest cent.",
+          "options": [
+            "47581.04",
+            "45418.26",
+            "38929.94",
+            "43255.49"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the variables and formula for present value under compound interest.",
+              "work": "\\(A = 100000, quad r = \\frac{0.056}{12}, quad n = 180\\)"
+            },
+            {
+              "explain": "Set up the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{100000}{\\left(1 + \\frac{0.056}{12}\\right)^{180}}\\)"
+            },
+            {
+              "explain": "Evaluate the expression to find the principal amount.",
+              "work": "\\(P \\approx 43255.49\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "ApexIndustries evaluates financing plans for purchasing a server rack cluster. Plan A offers \\(4.95\\%\\) p.a. compounded quarterly. Plan B offers \\(4.65\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+          "options": [
+            "\\(5.45\\%\\)",
+            "\\(5.54\\%\\)",
+            "\\(5.04\\%\\)",
+            "\\(4.64\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+              "work": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0495}{4}\\right)^4 - 1 \\approx 5.0426\\%\\)"
+            },
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+              "work": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0465}{12}\\right)^{12} - 1 \\approx 4.7504\\%\\)"
+            },
+            {
+              "explain": "Identify the higher effective annual rate and round to two decimal places.",
+              "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 5.04\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "NovaLogistics evaluates financing plans for purchasing a commercial solar array. Plan A offers \\(5.40\\%\\) p.a. compounded quarterly. Plan B offers \\(5.10\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+          "options": [
+            "\\(5.51\\%\\)",
+            "\\(6.01\\%\\)",
+            "\\(5.95\\%\\)",
+            "\\(5.07\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+              "work": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0540}{4}\\right)^4 - 1 \\approx 5.5103\\%\\)"
+            },
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+              "work": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0510}{12}\\right)^{12} - 1 \\approx 5.2209\\%\\)"
+            },
+            {
+              "explain": "Identify the higher effective annual rate and round to two decimal places.",
+              "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 5.51\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "TerraFarms evaluates financing plans for purchasing a delivery drone fleet. Plan A offers \\(5.85\\%\\) p.a. compounded quarterly. Plan B offers \\(5.55\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+          "options": [
+            "\\(5.98\\%\\)",
+            "\\(6.46\\%\\)",
+            "\\(5.50\\%\\)",
+            "\\(6.48\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+              "work": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0585}{4}\\right)^4 - 1 \\approx 5.9796\\%\\)"
+            },
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+              "work": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0555}{12}\\right)^{12} - 1 \\approx 5.6934\\%\\)"
+            },
+            {
+              "explain": "Identify the higher effective annual rate and round to two decimal places.",
+              "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 5.98\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "AeroVentures evaluates financing plans for purchasing a hydroponic growth chamber. Plan A offers \\(6.30\\%\\) p.a. compounded quarterly. Plan B offers \\(6.00\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+          "options": [
+            "\\(6.95\\%\\)",
+            "\\(5.93\\%\\)",
+            "\\(6.97\\%\\)",
+            "\\(6.45\\%\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+              "work": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0630}{4}\\right)^4 - 1 \\approx 6.4504\\%\\)"
+            },
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+              "work": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0600}{12}\\right)^{12} - 1 \\approx 6.1678\\%\\)"
+            },
+            {
+              "explain": "Identify the higher effective annual rate and round to two decimal places.",
+              "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 6.45\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "EcoEnergy evaluates financing plans for purchasing a cryogenic freezer. Plan A offers \\(6.75\\%\\) p.a. compounded quarterly. Plan B offers \\(6.45\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+          "options": [
+            "\\(7.42\\%\\)",
+            "\\(6.37\\%\\)",
+            "\\(7.48\\%\\)",
+            "\\(6.92\\%\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+              "work": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0675}{4}\\right)^4 - 1 \\approx 6.9228\\%\\)"
+            },
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+              "work": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0645}{12}\\right)^{12} - 1 \\approx 6.6441\\%\\)"
+            },
+            {
+              "explain": "Identify the higher effective annual rate and round to two decimal places.",
+              "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 6.92\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "QuantumSoft evaluates financing plans for purchasing a heavy mining drill. Plan A offers \\(7.20\\%\\) p.a. compounded quarterly. Plan B offers \\(6.90\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+          "options": [
+            "\\(7.40\\%\\)",
+            "\\(7.90\\%\\)",
+            "\\(7.99\\%\\)",
+            "\\(6.81\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+              "work": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0720}{4}\\right)^4 - 1 \\approx 7.3967\\%\\)"
+            },
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+              "work": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0690}{12}\\right)^{12} - 1 \\approx 7.1224\\%\\)"
+            },
+            {
+              "explain": "Identify the higher effective annual rate and round to two decimal places.",
+              "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 7.40\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "VertexBio evaluates financing plans for purchasing a high-speed CNC router. Plan A offers \\(7.65\\%\\) p.a. compounded quarterly. Plan B offers \\(7.35\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+          "options": [
+            "\\(7.24\\%\\)",
+            "\\(8.50\\%\\)",
+            "\\(8.37\\%\\)",
+            "\\(7.87\\%\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+              "work": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0765}{4}\\right)^4 - 1 \\approx 7.8723\\%\\)"
+            },
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+              "work": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0735}{12}\\right)^{12} - 1 \\approx 7.6027\\%\\)"
+            },
+            {
+              "explain": "Identify the higher effective annual rate and round to two decimal places.",
+              "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 7.87\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "HelixFinance evaluates financing plans for purchasing a automated forklift. Plan A offers \\(8.10\\%\\) p.a. compounded quarterly. Plan B offers \\(7.80\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+          "options": [
+            "\\(7.68\\%\\)",
+            "\\(8.35\\%\\)",
+            "\\(9.02\\%\\)",
+            "\\(8.85\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+              "work": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0810}{4}\\right)^4 - 1 \\approx 8.3494\\%\\)"
+            },
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+              "work": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0780}{12}\\right)^{12} - 1 \\approx 8.0850\\%\\)"
+            },
+            {
+              "explain": "Identify the higher effective annual rate and round to two decimal places.",
+              "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 8.35\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "OrionSecurity evaluates financing plans for purchasing a medical imaging scanner. Plan A offers \\(8.55\\%\\) p.a. compounded quarterly. Plan B offers \\(8.25\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+          "options": [
+            "\\(9.53\\%\\)",
+            "\\(8.83\\%\\)",
+            "\\(8.12\\%\\)",
+            "\\(9.33\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+              "work": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0855}{4}\\right)^4 - 1 \\approx 8.8281\\%\\)"
+            },
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+              "work": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0825}{12}\\right)^{12} - 1 \\approx 8.5692\\%\\)"
+            },
+            {
+              "explain": "Identify the higher effective annual rate and round to two decimal places.",
+              "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 8.83\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "NexusMining evaluates financing plans for purchasing a cleanroom filtration system. Plan A offers \\(9.00\\%\\) p.a. compounded quarterly. Plan B offers \\(8.70\\%\\) p.a. compounded monthly. Calculate the effective annual rate (EAR) of the option that yields the higher rate of return, correct to two decimal places.",
+          "options": [
+            "\\(9.31\\%\\)",
+            "\\(10.05\\%\\)",
+            "\\(8.56\\%\\)",
+            "\\(9.81\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan A.",
+              "work": "\\(\\text{EAR}_A = \\left(1 + \\frac{0.0900}{4}\\right)^4 - 1 \\approx 9.3083\\%\\)"
+            },
+            {
+              "explain": "Calculate the Effective Annual Rate (EAR) for Plan B.",
+              "work": "\\(\\text{EAR}_B = \\left(1 + \\frac{0.0870}{12}\\right)^{12} - 1 \\approx 9.0554\\%\\)"
+            },
+            {
+              "explain": "Identify the higher effective annual rate and round to two decimal places.",
+              "work": "\\(\\text{Max}(\\text{EAR}_A, text{EAR}_B) = 9.31\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "TerraFarms establishes a capital reserve to replace a hydroponic growth chamber in 5 years. If the target replacement cost is \\(\\$65000\\), calculate the present value required to be deposited now at \\(3.85\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+          "options": [
+            "\\(53634.66\\)",
+            "\\(50952.92\\)",
+            "\\(54507.34\\)",
+            "\\(56316.39\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify parameters: future value A, periodic rate r, and total periods n.",
+              "work": "\\(A = 65000, quad r = \\frac{0.0385}{12}, quad n = 60\\)"
+            },
+            {
+              "explain": "Substitute values into the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{65000}{\\left(1 + \\frac{0.0385}{12}\\right)^{60}}\\)"
+            },
+            {
+              "explain": "Compute the result and round to two decimal places.",
+              "work": "\\(P \\approx 53634.66\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q12",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "AeroVentures establishes a capital reserve to replace a cryogenic freezer in 6 years. If the target replacement cost is \\(\\$80000\\), calculate the present value required to be deposited now at \\(4.20\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+          "options": [
+            "\\(62206.94\\)",
+            "\\(65317.29\\)",
+            "\\(59096.60\\)",
+            "\\(63897.76\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify parameters: future value A, periodic rate r, and total periods n.",
+              "work": "\\(A = 80000, quad r = \\frac{0.0420}{12}, quad n = 72\\)"
+            },
+            {
+              "explain": "Substitute values into the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{80000}{\\left(1 + \\frac{0.0420}{12}\\right)^{72}}\\)"
+            },
+            {
+              "explain": "Compute the result and round to two decimal places.",
+              "work": "\\(P \\approx 62206.94\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "EcoEnergy establishes a capital reserve to replace a heavy mining drill in 7 years. If the target replacement cost is \\(\\$95000\\), calculate the present value required to be deposited now at \\(4.55\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+          "options": [
+            "\\(69129.34\\)",
+            "\\(72585.80\\)",
+            "\\(65672.87\\)",
+            "\\(72051.57\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify parameters: future value A, periodic rate r, and total periods n.",
+              "work": "\\(A = 95000, quad r = \\frac{0.0455}{12}, quad n = 84\\)"
+            },
+            {
+              "explain": "Substitute values into the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{95000}{\\left(1 + \\frac{0.0455}{12}\\right)^{84}}\\)"
+            },
+            {
+              "explain": "Compute the result and round to two decimal places.",
+              "work": "\\(P \\approx 69129.34\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q14",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "QuantumSoft establishes a capital reserve to replace a high-speed CNC router in 8 years. If the target replacement cost is \\(\\$110000\\), calculate the present value required to be deposited now at \\(4.90\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+          "options": [
+            "\\(74386.80\\)",
+            "\\(70667.46\\)",
+            "\\(78106.14\\)",
+            "\\(79022.99\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify parameters: future value A, periodic rate r, and total periods n.",
+              "work": "\\(A = 110000, quad r = \\frac{0.0490}{12}, quad n = 96\\)"
+            },
+            {
+              "explain": "Substitute values into the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{110000}{\\left(1 + \\frac{0.0490}{12}\\right)^{96}}\\)"
+            },
+            {
+              "explain": "Compute the result and round to two decimal places.",
+              "work": "\\(P \\approx 74386.80\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "VertexBio establishes a capital reserve to replace a automated forklift in 4 years. If the target replacement cost is \\(\\$125000\\), calculate the present value required to be deposited now at \\(5.25\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+          "options": [
+            "\\(103305.79\\)",
+            "\\(96300.98\\)",
+            "\\(106437.92\\)",
+            "\\(101369.45\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify parameters: future value A, periodic rate r, and total periods n.",
+              "work": "\\(A = 125000, quad r = \\frac{0.0525}{12}, quad n = 48\\)"
+            },
+            {
+              "explain": "Substitute values into the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{125000}{\\left(1 + \\frac{0.0525}{12}\\right)^{48}}\\)"
+            },
+            {
+              "explain": "Compute the result and round to two decimal places.",
+              "work": "\\(P \\approx 101369.45\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "HelixFinance establishes a capital reserve to replace a medical imaging scanner in 5 years. If the target replacement cost is \\(\\$140000\\), calculate the present value required to be deposited now at \\(5.60\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+          "options": [
+            "\\(109375.00\\)",
+            "\\(100584.73\\)",
+            "\\(111172.59\\)",
+            "\\(105878.66\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify parameters: future value A, periodic rate r, and total periods n.",
+              "work": "\\(A = 140000, quad r = \\frac{0.0560}{12}, quad n = 60\\)"
+            },
+            {
+              "explain": "Substitute values into the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{140000}{\\left(1 + \\frac{0.0560}{12}\\right)^{60}}\\)"
+            },
+            {
+              "explain": "Compute the result and round to two decimal places.",
+              "work": "\\(P \\approx 105878.66\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "OrionSecurity establishes a capital reserve to replace a cleanroom filtration system in 6 years. If the target replacement cost is \\(\\$155000\\), calculate the present value required to be deposited now at \\(5.95\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+          "options": [
+            "\\(108560.46\\)",
+            "\\(114222.55\\)",
+            "\\(113988.48\\)",
+            "\\(103132.44\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify parameters: future value A, periodic rate r, and total periods n.",
+              "work": "\\(A = 155000, quad r = \\frac{0.0595}{12}, quad n = 72\\)"
+            },
+            {
+              "explain": "Substitute values into the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{155000}{\\left(1 + \\frac{0.0595}{12}\\right)^{72}}\\)"
+            },
+            {
+              "explain": "Compute the result and round to two decimal places.",
+              "work": "\\(P \\approx 108560.46\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q18",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "NexusMining establishes a capital reserve to replace a electric transit van in 7 years. If the target replacement cost is \\(\\$170000\\), calculate the present value required to be deposited now at \\(6.30\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+          "options": [
+            "\\(104027.86\\)",
+            "\\(117973.63\\)",
+            "\\(109503.01\\)",
+            "\\(114978.16\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify parameters: future value A, periodic rate r, and total periods n.",
+              "work": "\\(A = 170000, quad r = \\frac{0.0630}{12}, quad n = 84\\)"
+            },
+            {
+              "explain": "Substitute values into the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{170000}{\\left(1 + \\frac{0.0630}{12}\\right)^{84}}\\)"
+            },
+            {
+              "explain": "Compute the result and round to two decimal places.",
+              "work": "\\(P \\approx 109503.01\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q19",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "SolarisTech establishes a capital reserve to replace a smart warehouse conveyer in 8 years. If the target replacement cost is \\(\\$185000\\), calculate the present value required to be deposited now at \\(6.65\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+          "options": [
+            "\\(108834.08\\)",
+            "\\(114275.78\\)",
+            "\\(103392.37\\)",
+            "\\(120757.18\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify parameters: future value A, periodic rate r, and total periods n.",
+              "work": "\\(A = 185000, quad r = \\frac{0.0665}{12}, quad n = 96\\)"
+            },
+            {
+              "explain": "Substitute values into the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{185000}{\\left(1 + \\frac{0.0665}{12}\\right)^{96}}\\)"
+            },
+            {
+              "explain": "Compute the result and round to two decimal places.",
+              "work": "\\(P \\approx 108834.08\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "ZenithMedia establishes a capital reserve to replace a lab centrifuge unit in 4 years. If the target replacement cost is \\(\\$200000\\), calculate the present value required to be deposited now at \\(7.00\\%\\) p.a., compounded monthly, to reach this goal. Correct to the nearest cent.",
+          "options": [
+            "\\(151279.77\\)",
+            "\\(158843.75\\)",
+            "\\(143715.78\\)",
+            "\\(156250.00\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify parameters: future value A, periodic rate r, and total periods n.",
+              "work": "\\(A = 200000, quad r = \\frac{0.0700}{12}, quad n = 48\\)"
+            },
+            {
+              "explain": "Substitute values into the present value formula.",
+              "work": "\\(P = \\frac{A}{(1 + r)^n} = \\frac{200000}{\\left(1 + \\frac{0.0700}{12}\\right)^{48}}\\)"
+            },
+            {
+              "explain": "Compute the result and round to two decimal places.",
+              "work": "\\(P \\approx 151279.77\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q51",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial logistics system belonging to VertexBio initially costs \\(\\$51000\\). If the asset depreciates at a rate of \\(12.8\\%\\) p.a. using the reducing balance method, find its book value after \\(4\\) years, correct to the nearest dollar.",
+          "options": [
+            "\\(27718\\)",
+            "\\(31257\\)",
+            "\\(24888\\)",
+            "\\(29487\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the initial value, depreciation rate, and period.",
+              "work": "\\(P = 51000, quad d = 12.8\\%, quad n = 4\\)"
+            },
+            {
+              "explain": "Apply the reducing balance depreciation formula.",
+              "work": "\\(V_n = P(1 - \\frac{d}{100})^n = 51000 \\times \\left(1 - \\frac{12.8}{100}\\right)^{4}\\)"
+            },
+            {
+              "explain": "Compute the final value and round to the nearest integer.",
+              "work": "\\(V_n \\approx 29487\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q52",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial logistics system belonging to HelixFinance initially costs \\(\\$57000\\). If the asset depreciates at a rate of \\(13.6\\%\\) p.a. using the reducing balance method, find its book value after \\(5\\) years, correct to the nearest dollar.",
+          "options": [
+            "\\(25797\\)",
+            "\\(29090\\)",
+            "\\(18240\\)",
+            "\\(27444\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the initial value, depreciation rate, and period.",
+              "work": "\\(P = 57000, quad d = 13.6\\%, quad n = 5\\)"
+            },
+            {
+              "explain": "Apply the reducing balance depreciation formula.",
+              "work": "\\(V_n = P(1 - \\frac{d}{100})^n = 57000 \\times \\left(1 - \\frac{13.6}{100}\\right)^{5}\\)"
+            },
+            {
+              "explain": "Compute the final value and round to the nearest integer.",
+              "work": "\\(V_n \\approx 27444\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q53",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial logistics system belonging to OrionSecurity initially costs \\(\\$63000\\). If the asset depreciates at a rate of \\(14.4\\%\\) p.a. using the reducing balance method, find its book value after \\(3\\) years, correct to the nearest dollar.",
+          "options": [
+            "\\(37144\\)",
+            "\\(41886\\)",
+            "\\(39515\\)",
+            "\\(35784\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the initial value, depreciation rate, and period.",
+              "work": "\\(P = 63000, quad d = 14.4\\%, quad n = 3\\)"
+            },
+            {
+              "explain": "Apply the reducing balance depreciation formula.",
+              "work": "\\(V_n = P(1 - \\frac{d}{100})^n = 63000 \\times \\left(1 - \\frac{14.4}{100}\\right)^{3}\\)"
+            },
+            {
+              "explain": "Compute the final value and round to the nearest integer.",
+              "work": "\\(V_n \\approx 39515\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q54",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial logistics system belonging to NexusMining initially costs \\(\\$69000\\). If the asset depreciates at a rate of \\(15.2\\%\\) p.a. using the reducing balance method, find its book value after \\(4\\) years, correct to the nearest dollar.",
+          "options": [
+            "\\(35681\\)",
+            "\\(37821\\)",
+            "\\(33540\\)",
+            "\\(27048\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the initial value, depreciation rate, and period.",
+              "work": "\\(P = 69000, quad d = 15.2\\%, quad n = 4\\)"
+            },
+            {
+              "explain": "Apply the reducing balance depreciation formula.",
+              "work": "\\(V_n = P(1 - \\frac{d}{100})^n = 69000 \\times \\left(1 - \\frac{15.2}{100}\\right)^{4}\\)"
+            },
+            {
+              "explain": "Compute the final value and round to the nearest integer.",
+              "work": "\\(V_n \\approx 35681\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q55",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial logistics system belonging to SolarisTech initially costs \\(\\$75000\\). If the asset depreciates at a rate of \\(16.0\\%\\) p.a. using the reducing balance method, find its book value after \\(5\\) years, correct to the nearest dollar.",
+          "options": [
+            "\\(33248\\)",
+            "\\(29484\\)",
+            "\\(31366\\)",
+            "\\(15000\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the initial value, depreciation rate, and period.",
+              "work": "\\(P = 75000, quad d = 16.0\\%, quad n = 5\\)"
+            },
+            {
+              "explain": "Apply the reducing balance depreciation formula.",
+              "work": "\\(V_n = P(1 - \\frac{d}{100})^n = 75000 \\times \\left(1 - \\frac{16.0}{100}\\right)^{5}\\)"
+            },
+            {
+              "explain": "Compute the final value and round to the nearest integer.",
+              "work": "\\(V_n \\approx 31366\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q56",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial logistics system belonging to ZenithMedia initially costs \\(\\$81000\\). If the asset depreciates at a rate of \\(16.8\\%\\) p.a. using the reducing balance method, find its book value after \\(3\\) years, correct to the nearest dollar.",
+          "options": [
+            "\\(49449\\)",
+            "\\(40176\\)",
+            "\\(43851\\)",
+            "\\(46650\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the initial value, depreciation rate, and period.",
+              "work": "\\(P = 81000, quad d = 16.8\\%, quad n = 3\\)"
+            },
+            {
+              "explain": "Apply the reducing balance depreciation formula.",
+              "work": "\\(V_n = P(1 - \\frac{d}{100})^n = 81000 \\times \\left(1 - \\frac{16.8}{100}\\right)^{3}\\)"
+            },
+            {
+              "explain": "Compute the final value and round to the nearest integer.",
+              "work": "\\(V_n \\approx 46650\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q57",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial logistics system belonging to BioSphere initially costs \\(\\$87000\\). If the asset depreciates at a rate of \\(17.6\\%\\) p.a. using the reducing balance method, find its book value after \\(4\\) years, correct to the nearest dollar.",
+          "options": [
+            "\\(40108\\)",
+            "\\(42514\\)",
+            "\\(25752\\)",
+            "\\(37701\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the initial value, depreciation rate, and period.",
+              "work": "\\(P = 87000, quad d = 17.6\\%, quad n = 4\\)"
+            },
+            {
+              "explain": "Apply the reducing balance depreciation formula.",
+              "work": "\\(V_n = P(1 - \\frac{d}{100})^n = 87000 \\times \\left(1 - \\frac{17.6}{100}\\right)^{4}\\)"
+            },
+            {
+              "explain": "Compute the final value and round to the nearest integer.",
+              "work": "\\(V_n \\approx 40108\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q58",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial logistics system belonging to StellarLabs initially costs \\(\\$93000\\). If the asset depreciates at a rate of \\(18.4\\%\\) p.a. using the reducing balance method, find its book value after \\(5\\) years, correct to the nearest dollar.",
+          "options": [
+            "\\(35665\\)",
+            "\\(33646\\)",
+            "\\(31627\\)",
+            "\\(7440\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the initial value, depreciation rate, and period.",
+              "work": "\\(P = 93000, quad d = 18.4\\%, quad n = 5\\)"
+            },
+            {
+              "explain": "Apply the reducing balance depreciation formula.",
+              "work": "\\(V_n = P(1 - \\frac{d}{100})^n = 93000 \\times \\left(1 - \\frac{18.4}{100}\\right)^{5}\\)"
+            },
+            {
+              "explain": "Compute the final value and round to the nearest integer.",
+              "work": "\\(V_n \\approx 33646\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q59",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial logistics system belonging to SigmaRetail initially costs \\(\\$99000\\). If the asset depreciates at a rate of \\(19.2\\%\\) p.a. using the reducing balance method, find its book value after \\(3\\) years, correct to the nearest dollar.",
+          "options": [
+            "\\(55357\\)",
+            "\\(41976\\)",
+            "\\(52224\\)",
+            "\\(49090\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the initial value, depreciation rate, and period.",
+              "work": "\\(P = 99000, quad d = 19.2\\%, quad n = 3\\)"
+            },
+            {
+              "explain": "Apply the reducing balance depreciation formula.",
+              "work": "\\(V_n = P(1 - \\frac{d}{100})^n = 99000 \\times \\left(1 - \\frac{19.2}{100}\\right)^{3}\\)"
+            },
+            {
+              "explain": "Compute the final value and round to the nearest integer.",
+              "work": "\\(V_n \\approx 52224\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1d-high-q60",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial logistics system belonging to SynergyCorp initially costs \\(\\$105000\\). If the asset depreciates at a rate of \\(20.0\\%\\) p.a. using the reducing balance method, find its book value after \\(4\\) years, correct to the nearest dollar.",
+          "options": [
+            "\\(21000\\)",
+            "\\(40428\\)",
+            "\\(45588\\)",
+            "\\(43008\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the initial value, depreciation rate, and period.",
+              "work": "\\(P = 105000, quad d = 20.0\\%, quad n = 4\\)"
+            },
+            {
+              "explain": "Apply the reducing balance depreciation formula.",
+              "work": "\\(V_n = P(1 - \\frac{d}{100})^n = 105000 \\times \\left(1 - \\frac{20.0}{100}\\right)^{4}\\)"
+            },
+            {
+              "explain": "Compute the final value and round to the nearest integer.",
+              "work": "\\(V_n \\approx 43008\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

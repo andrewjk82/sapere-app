@@ -1,0 +1,41 @@
+<svg viewBox="0 0 400 420" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+  <rect width="400" height="420" fill="transparent"/>
+  <text x="200" y="25" font-size="18" font-weight="600" text-anchor="middle" fill="#1e293b">ASTC Rule: Finding cos(u) = 1/2</text>
+
+  <circle cx="200" cy="200" r="120" fill="none" stroke="#64748b" stroke-width="2"/>
+
+  <line x1="200" y1="80" x2="200" y2="320" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="80" y1="200" x2="320" y2="200" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <text x="330" y="205" font-size="14" font-weight="600" fill="#1e293b">cos(u)</text>
+  <text x="200" y="70" font-size="14" font-weight="600" fill="#1e293b">sin(u)</text>
+
+  <path d="M 200 200 L 320 200 A 120 120 0 0 1 200 80 Z" fill="#86efac" opacity="0.3"/>
+  <text x="260" y="120" font-size="16" font-weight="700" fill="#15803d">All</text>
+
+  <path d="M 200 200 L 200 80 A 120 120 0 0 1 80 200 Z" fill="#93c5fd" opacity="0.3"/>
+  <text x="120" y="120" font-size="16" font-weight="700" fill="#1e40af">Sin</text>
+
+  <path d="M 200 200 L 80 200 A 120 120 0 0 1 200 320 Z" fill="#fbbf24" opacity="0.3"/>
+  <text x="120" y="270" font-size="16" font-weight="700" fill="#92400e">Tan</text>
+
+  <path d="M 200 200 L 200 320 A 120 120 0 0 1 320 200 Z" fill="#fca5a5" opacity="0.3"/>
+  <text x="260" y="270" font-size="16" font-weight="700" fill="#7f1d1d">Cos</text>
+
+  <line x1="200" y1="200" x2="260" y2="117" stroke="#059669" stroke-width="2.5"/>
+  <circle cx="260" cy="117" r="5" fill="#059669"/>
+  <text x="275" y="110" font-size="13" font-weight="600" fill="#059669">u = &#960;/3</text>
+  <text x="275" y="128" font-size="12" fill="#059669">Q1: cos&gt;0 &#10003;</text>
+
+  <line x1="200" y1="200" x2="260" y2="283" stroke="#dc2626" stroke-width="2.5"/>
+  <circle cx="260" cy="283" r="5" fill="#dc2626"/>
+  <text x="275" y="295" font-size="13" font-weight="600" fill="#dc2626">u = 5&#960;/3</text>
+  <text x="275" y="312" font-size="12" fill="#dc2626">Q4: cos&gt;0 &#10003;</text>
+
+  <circle cx="200" cy="200" r="3" fill="#1e293b"/>
+
+  <rect x="15" y="340" width="370" height="70" rx="4" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="1"/>
+  <text x="30" y="360" font-size="12" font-weight="600" fill="#1e293b">cos(u) = 1/2 has TWO solutions in [0, 2&#960;]:</text>
+  <text x="30" y="380" font-size="12" fill="#059669">- u = &#960;/3 (Quadrant I: ALL functions positive)</text>
+  <text x="30" y="400" font-size="12" fill="#dc2626">- u = 5&#960;/3 (Quadrant IV: COSine positive)</text>
+</svg>

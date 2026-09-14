@@ -1,0 +1,1477 @@
+{
+  "chapterId": "y8-19",
+  "title": "Chapter 19: Statistics",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "y8-19a",
+      "code": "19A",
+      "title": "Comparing means and medians",
+      "questions": [
+        {
+          "id": "y8-19a-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The mean of the following data set is 60. Determine the median of this data set:\n\n`25, 58, 38, 31, 62, 146`",
+          "options": [
+            "\\(38\\)",
+            "\\(60\\)",
+            "\\(48\\)",
+            "\\(58\\)"
+          ],
+          "answer": 2,
+          "hint": "Sort the numbers in ascending order, then find the average of the two middle numbers.",
+          "solution": "The correct answer is 48.",
+          "steps": [
+            {
+              "explain": "The median is the middle value of a data set. To find the median, the very first step is **always** to arrange the numbers in ascending order (from smallest to largest).",
+              "work": "Data given: \\(25, 58, 38, 31, 62, 146\\)"
+            },
+            {
+              "explain": "Sort the numbers in ascending order.",
+              "work": "Sorted data: \\(25, 31, 38, 58, 62, 146\\)"
+            },
+            {
+              "explain": "Count how many numbers there are. Since there are 6 numbers (an even number), there is no single middle number. We must find the two middle numbers.",
+              "work": "There are \\(n = 6\\) numbers.\nThe middle numbers are the 3rd and 4th values in the sorted list.\nThe 3rd value is 38.\nThe 4th value is 58."
+            },
+            {
+              "explain": "The median is the average (mean) of these two middle numbers.",
+              "work": "\\(\\text{Median} = \\frac{38 + 58}{2}\\)\n\\(\\text{Median} = \\frac{96}{2} = 48\\)"
+            },
+            {
+              "explain": "Note: The question states that the \"mean is 60\", but this information is completely unnecessary to find the median! It is just a distractor to test if you know the difference between mean and median.",
+              "work": "\\(\\text{Final Answer: } 48\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-19a-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The mean of the following data set is 45. Determine the median of this data set:\n\n`43, 44, 45, 45, 46, 47`",
+          "options": [
+            "\\(45\\)",
+            "\\(44.5\\)",
+            "\\(45.5\\)",
+            "\\(46\\)"
+          ],
+          "answer": 0,
+          "hint": "The data is already sorted. Find the average of the two middle numbers.",
+          "solution": "The correct answer is 45.",
+          "steps": [
+            {
+              "explain": "First, check if the data is arranged in ascending order. In this case, it already is!",
+              "work": "Sorted data: \\(43, 44, 45, 45, 46, 47\\)"
+            },
+            {
+              "explain": "Since there are 6 numbers (an even amount), the median is the average of the two numbers in the middle (the 3rd and 4th values).",
+              "work": "The 3rd value is 45.\nThe 4th value is also 45."
+            },
+            {
+              "explain": "Calculate the average of the two middle numbers.",
+              "work": "\\(\\text{Median} = \\frac{45 + 45}{2}\\)\n\\(\\text{Median} = \\frac{90}{2} = 45\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-19a-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The mean of the following data set is 70. Determine the median of this data set:\n\n`0, 144, 82, 94, 98, 2`",
+          "options": [
+            "\\(70\\)",
+            "\\(82\\)",
+            "\\(94\\)",
+            "\\(88\\)"
+          ],
+          "answer": 3,
+          "hint": "Sort the numbers from smallest to largest, then find the middle point between the 3rd and 4th values.",
+          "solution": "The correct answer is 88.",
+          "steps": [
+            {
+              "explain": "Always start by arranging the given data in ascending order (smallest to largest).",
+              "work": "Original: \\(0, 144, 82, 94, 98, 2\\)\nSorted: \\(0, 2, 82, 94, 98, 144\\)"
+            },
+            {
+              "explain": "There are 6 numbers, so the median will be exactly halfway between the 3rd and 4th numbers.",
+              "work": "The 3rd number is 82.\nThe 4th number is 94."
+            },
+            {
+              "explain": "Find the average of these two middle numbers.",
+              "work": "\\(\\text{Median} = \\frac{82 + 94}{2}\\)\n\\(\\text{Median} = \\frac{176}{2} = 88\\)"
+            },
+            {
+              "explain": "Again, the given \"mean is 70\" is extra information meant to trick you. You do not need it to find the median.",
+              "work": "\\(\\text{Final Answer: } 88\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-19a-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The weights of a group of students, in kilograms, are given below:\n\n\\(53, 52, 51, 52, 48, 47, 51, 47, 55, 52, 48, 49\\)\n\nWhat is the median?",
+          "options": [
+            "\\(50.5\\)",
+            "\\(51.5\\)",
+            "\\(51\\)",
+            "\\(52\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(51\\).",
+          "steps": [
+            {
+              "explain": "To find the median, the most important first step is to arrange all the numbers in ascending order (from smallest to largest). If you skip this, your answer will be wrong!",
+              "work": "Given data: \\(53, 52, 51, 52, 48, 47, 51, 47, 55, 52, 48, 49\\)"
+            },
+            {
+              "explain": "Sort the numbers in ascending order.",
+              "work": "Sorted: \\(47, 47, 48, 48, 49, 51, 51, 52, 52, 52, 53, 55\\)"
+            },
+            {
+              "explain": "Count the total number of data points. There are 12 numbers. Since 12 is an even number, there is no single middle number. We must take the average of the two middle numbers.",
+              "work": "Total \\(n = 12\\).\nThe middle numbers are in positions \\(12 \\div 2 = 6\\) and \\(6 + 1 = 7\\).\nSo we need the 6th and 7th values."
+            },
+            {
+              "explain": "Identify the 6th and 7th values from the sorted list.",
+              "work": "The 6th value is 51.\nThe 7th value is also 51."
+            },
+            {
+              "explain": "Calculate the average of these two values.",
+              "work": "\\(\\text{Median} = \\frac{51 + 51}{2}\\)\n\\(\\text{Median} = \\frac{102}{2} = 51\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The weights of a group of students, in kilograms, are given below:\n\n\\(53, 52, 51, 52, 48, 47, 51, 47, 55, 52, 48, 49\\)\n\nCalculate the mean, correct to two decimal places.",
+          "options": [
+            "\\(50.41\\)",
+            "\\(50.43\\)",
+            "\\(50.50\\)",
+            "\\(50.42\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(50.42\\).",
+          "steps": [
+            {
+              "explain": "The mean is the average of all the numbers. To find it, we add all the values together and then divide by the total number of values.",
+              "work": "\\(\\text{Mean} = \\frac{\\text{Sum of all values}}{\\text{Total count}}\\)"
+            },
+            {
+              "explain": "First, let's calculate the sum of all 12 weights.",
+              "work": "\\(53+52+51+52+48+47+51+47+55+52+48+49\\)\n\\text{Sum } = 605"
+            },
+            {
+              "explain": "Now, divide the total sum by the number of students (12).",
+              "work": "\\(\\text{Mean} = \\frac{605}{12} = 50.416666...\\)"
+            },
+            {
+              "explain": "The question asks to round the answer correct to two decimal places. Look at the third decimal digit (6). Since it is 5 or greater, we round up the second digit.",
+              "work": "\\(50.416... \\rightarrow 50.42\\)\n\\(\\text{Final Answer: } 50.42\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The mean price of bags of apples at different supermarkets was \\(6.40. The sum of the data was \\)96.00. How many bags of apples were included in the survey?",
+          "options": [
+            "\\(14\\)",
+            "\\(16\\)",
+            "\\(12\\)",
+            "\\(15\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide the total sum by the mean to find the number of entries.",
+          "solution": "1. The formula relating the mean, sum, and count \\(n\\) is:\n   \\(\\text{Mean} = \\frac{\\text{Sum}}{n}\\)\n2. Substitute the given values into the formula:\n   \\(6.40 = \\frac{96.00}{n}\\)\n3. Solve for \\(n\\):\n   \\(n = \\frac{96.00}{6.40} = 15\\)",
+          "steps": [
+            {
+              "explain": "We know the formula for the mean (average):",
+              "work": "\\(\\text{Mean} = \\frac{\\text{Sum of all values}}{\\text{Total number of values}}\\)"
+            },
+            {
+              "explain": "The question gives us the Mean (\\(\\$6.40\\)) and the Sum of the data (\\(\\$96.00\\)). Let \\(N\\) be the number of bags of apples (the total number of values). Substitute the known values into the formula.",
+              "work": "\\(6.40 = \\frac{96.00}{N}\\)"
+            },
+            {
+              "explain": "Rearrange the equation to solve for \\(N\\). Multiply both sides by \\(N\\) and divide by \\(6.40\\).",
+              "work": "\\(6.40 \\times N = 96.00\\)\n\\(N = \\frac{96.00}{6.40}\\)"
+            },
+            {
+              "explain": "Calculate the division to find the total number of bags.",
+              "work": "\\(N = 15\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "alsoIn": [
+            "exam:year8ch19"
+          ]
+        },
+        {
+          "id": "y8-19a-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Sue spent the following amounts on her lunch each day over the course of two working weeks:\n\n\\(\\$16, \\$8, \\$13, \\$49.50, \\$9.50, \\$13.50, \\$9, \\$11, \\$9.50, \\$10.50\\)\n\nCalculate the median for these data (in dollars).",
+          "options": [
+            "\\(\\$9.75\\)",
+            "\\(\\$11.75\\)",
+            "\\(\\$10.75\\)",
+            "\\(\\$10.50\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(10.75\\).",
+          "steps": [
+            {
+              "explain": "To find the median, you must first sort all the lunch amounts from smallest to largest.",
+              "work": "Given: 16, 8, 13, 49.5, 9.5, 13.5, 9, 11, 9.5, 10.5\nSorted: 8, 9, 9.5, 9.5, 10.5, 11, 13, 13.5, 16, 49.5"
+            },
+            {
+              "explain": "Count the number of days (data points). There are 10 numbers in total. Since 10 is an even number, the median will be the average of the two middle numbers.",
+              "work": "Total values \\(n = 10\\).\nThe middle values are the 5th and 6th numbers."
+            },
+            {
+              "explain": "Find the 5th and 6th numbers from your sorted list.",
+              "work": "5th value: \\(\\$10.50\\)\n6th value: \\(\\$11.00\\)"
+            },
+            {
+              "explain": "Calculate the average of these two numbers to find the median.",
+              "work": "\\(\\text{Median} = \\frac{10.50 + 11.00}{2}\\)\n\\(\\text{Median} = \\frac{21.50}{2} = 10.75\\)\n\\(\\text{Final Answer: } \\$10.75\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Sue spent the following amounts on her lunch each day over the course of two working weeks:\n\n\\(\\$16, \\$8, \\$13, \\$49.50, \\$9.50, \\$13.50, \\$9, \\$11, \\$9.50, \\$10.50\\)\n\nCalculate the mean for these data (in dollars).",
+          "options": [
+            "\\(\\$14.50\\)",
+            "\\(\\$14.95\\)",
+            "\\(\\$15.95\\)",
+            "\\(\\$10.75\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(14.95\\).",
+          "steps": [
+            {
+              "explain": "To find the mean (average), we need to add up all of Sue's daily lunch amounts and then divide by the total number of days.",
+              "work": "\\(\\text{Mean} = \\frac{\\text{Sum of all values}}{\\text{Total number of values}}\\)"
+            },
+            {
+              "explain": "First, let's calculate the sum of all 10 amounts.",
+              "work": "\\(16 + 8 + 13 + 49.50 + 9.50 + 13.50 + 9 + 11 + 9.50 + 10.50\\)\n\\text{Sum} = 149.50"
+            },
+            {
+              "explain": "Now, divide the total sum (\\(\\$149.50\\)) by the number of days (10).",
+              "work": "\\(\\text{Mean} = \\frac{149.50}{10}\\)\n\\(\\text{Mean} = 14.95\\)"
+            },
+            {
+              "explain": "Therefore, the mean amount Sue spent on lunch is \\(\\$14.95\\).",
+              "work": "\\(\\text{Final Answer: } \\$14.95\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q4c",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Sue spent the following amounts on her lunch each day over the course of two working weeks:\n\n\\(\\$16, \\$8, \\$13, \\$49.50, \\$9.50, \\$13.50, \\$9, \\$11, \\$9.50, \\$10.50\\)\n\nCompare the median and mean and comment on which is the better indicator of how much Sue usually spent on her daily lunch.",
+          "answer": "The median ($10.75) is a better indicator of Sue's usual spending. This is because the mean ($14.95) is heavily skewed upwards by an outlier ($49.50), which is much higher than her other daily lunch costs.",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "The median ($10.75) is a better indicator of Sue's usual spending. This is because the mean ($14.95) is heavily skewed upwards by an outlier ($49.50), which is much higher than her other daily lunch costs.",
+          "steps": [
+            {
+              "explain": "Let's review the two values we calculated in parts a) and b).",
+              "work": "\\(\\text{Median} = \\$10.75\\)\n\\(\\text{Mean} = \\$14.95\\)"
+            },
+            {
+              "explain": "Look closely at the original data. Most days, Sue spends between \\(\\$8\\) and \\(\\$16\\) on lunch. However, on one day she spent \\(\\$49.50\\). This unusually high number is called an **outlier**.",
+              "work": "\\text{Outlier: } \\$49.50"
+            },
+            {
+              "explain": "The mean calculates the average using the total sum, so this single huge outlier (\\(\\$49.50\\)) artificially pulls the mean way up to \\(\\$14.95\\). But if you look at the data, Sue rarely spends that much on a normal day.",
+              "work": "\\text{The mean is heavily skewed upwards by the outlier.}"
+            },
+            {
+              "explain": "The median (\\(\\$10.75\\)) only cares about the middle numbers when ordered, so it completely ignores how extreme the outlier is. Therefore, \\(\\$10.75\\) is a much better reflection of her \"usual\" daily spending.",
+              "work": "\\text{The median is a better indicator.}"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A list of data has 10 entries. Each entry is 2, 3 or 4. What must the list be if the average (mean) is 2?",
+          "options": [
+            "Five entries are 2, five entries are 3",
+            "Nine entries are 2, one entry is 4",
+            "All ten entries must be 2",
+            "Eight entries are 2, two entries are 3"
+          ],
+          "answer": 2,
+          "hint": "If the average is equal to the minimum possible value of the entries, think about what values the individual entries can take.",
+          "solution": "1. The minimum possible value for any entry in this list is 2.\n2. If the average (mean) of the 10 entries is equal to the minimum value (2), then no entry can be greater than 2.\n3. Therefore, all ten entries must be 2.",
+          "steps": [
+            {
+              "explain": "We know that the average (mean) of 10 entries is 2. Let's find the required sum of all 10 entries.",
+              "work": "\\(\\text{Mean} = \\frac{\\text{Sum}}{10} = 2\\)\n\\(\\text{Sum} = 2 \\times 10 = 20\\)"
+            },
+            {
+              "explain": "The problem states that every entry in the list can only be 2, 3, or 4. This means the smallest possible number you can choose is 2.",
+              "work": "Minimum value = 2"
+            },
+            {
+              "explain": "If we choose the smallest possible number (2) for all 10 entries, what is the sum?",
+              "work": "\\text{Sum of ten 2s} = 2 \\times 10 = 20"
+            },
+            {
+              "explain": "This matches our required sum exactly! If we change even a single entry to a 3 or a 4, the total sum will be greater than 20, which would make the average greater than 2.",
+              "work": "Therefore, the only way to get an average of 2 is if every single entry is exactly 2."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-19a-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A list of data has 10 entries. Each entry is 2, 3 or 4. Which of the following statements MUST be true about the list if the average (mean) is 3?",
+          "options": [
+            "The number of 2s equals the number of 4s",
+            "All ten entries are 3",
+            "The number of 2s equals the number of 3s",
+            "The number of 3s equals the number of 4s"
+          ],
+          "answer": 0,
+          "hint": "Set up an equation for the sum of the entries. How do the numbers of values below the mean (2) and above the mean (4) balance out?",
+          "solution": "1. Let \\(x\\) be the number of 2s, \\(y\\) be the number of 3s, and \\(z\\) be the number of 4s. The total number of entries is \\(x + y + z = 10\\).\n2. The sum of the entries must be \\(10 \\times 3 = 30\\), so:\n   \\(2x + 3y + 4z = 30\\)\n3. Substitute \\(y = 10 - x - z\\) into the sum equation:\n   \\(2x + 3(10 - x - z) + 4z = 30\\)\n   \\(2x + 30 - 3x - 3z + 4z = 30\\)\n   \\(30 - x + z = 30 \\implies x = z\\)\n4. Therefore, the number of 2s (\\(x\\)) must equal the number of 4s (\\(z\\)).",
+          "steps": [
+            {
+              "explain": "If the average of 10 entries is 3, then the total sum of all 10 entries must be \\(3 \\times 10 = 30\\).",
+              "work": "\\text{Required Sum } = 30"
+            },
+            {
+              "explain": "Let's think about this logically using \"balance\". If every entry was a 3, the sum would be 30 and the average would be 3. This is one valid list.",
+              "work": "List of ten 3s: Average = 3"
+            },
+            {
+              "explain": "What if we change some numbers? The allowed numbers are 2, 3, and 4. Notice that 2 is exactly \"one less\" than 3, and 4 is exactly \"one more\" than 3.",
+              "work": "2 is \\(3 - 1\\)\n4 is \\(3 + 1\\)"
+            },
+            {
+              "explain": "If we replace a 3 with a 2, our total sum drops by 1. To get the sum back to 30, we must perfectly balance it by replacing another 3 with a 4 (which adds 1).",
+              "work": "Every time we add a 2, we must also add a 4 to keep the balance."
+            },
+            {
+              "explain": "Therefore, to maintain an average of 3, every 2 in the list must be paired with exactly one 4. This means the number of 2s must equal the number of 4s.",
+              "work": "\\text{Number of 2s} = \\text{Number of 4s}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-19a-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A list of data has 10 entries. Each entry is 2, 3 or 4. What must the list be if the average (mean) is 4?",
+          "options": [
+            "Five entries are 3, five entries are 4",
+            "Nine entries are 4, one entry is 2",
+            "The number of 2s must equal the number of 4s",
+            "All ten entries must be 4"
+          ],
+          "answer": 3,
+          "hint": "If the average is equal to the maximum possible value of the entries, think about what values the individual entries can take.",
+          "solution": "1. The maximum possible value for any entry in this list is 4.\n2. If the average (mean) of the 10 entries is equal to this maximum value (4), then no entry can be less than 4.\n3. Therefore, all ten entries must be 4.",
+          "steps": [
+            {
+              "explain": "If the average of 10 entries is 4, then the total sum of all 10 entries must be \\(4 \\times 10 = 40\\).",
+              "work": "\\(\\text{Mean} = \\frac{\\text{Sum}}{10} = 4\\)\n\\(\\text{Sum} = 40\\)"
+            },
+            {
+              "explain": "The problem states that every entry in the list can only be 2, 3, or 4. This means the LARGEST possible number you can choose is 4.",
+              "work": "\\text{Maximum value} = 4"
+            },
+            {
+              "explain": "If we choose the largest possible number (4) for all 10 entries, what is the sum?",
+              "work": "\\text{Sum of ten 4s} = 4 \\times 10 = 40"
+            },
+            {
+              "explain": "This matches our required sum exactly! If we change even a single entry to a 3 or a 2, the total sum will drop below 40, which would make the average less than 4.",
+              "work": "Therefore, the only way to get an average of 4 is if every single entry is exactly 4."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-19a-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the stem-and-leaf plot shown below, answer the question.\n\n```\n1 | 2 2 4 6 8\n2 | 2 5\n3 | 1 1 2 2 3 4 6\n4 | 0 2 3 5 5 7\n```\n\nFind the median.",
+          "options": [
+            "\\(31\\)",
+            "\\(31.5\\)",
+            "\\(32\\)",
+            "\\(33\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(32\\).",
+          "steps": [
+            {
+              "explain": "A stem-and-leaf plot already shows the data ordered from smallest to largest! The \"stem\" is the tens digit, and each \"leaf\" is the ones digit.",
+              "work": "For example, `1 | 2` means 12, and `4 | 7` means 47."
+            },
+            {
+              "explain": "Count the total number of leaves to find how many data points there are.",
+              "work": "Row 1: 5 leaves\nRow 2: 2 leaves\nRow 3: 7 leaves\nRow 4: 6 leaves\n\\(n = 5 + 2 + 7 + 6 = 20\\)"
+            },
+            {
+              "explain": "Since there are 20 values (even number), the median is the average of the 10th and 11th values.",
+              "work": "We need to count to the 10th and 11th leaves."
+            },
+            {
+              "explain": "Count from the smallest values until you reach positions 10 and 11.",
+              "work": "Rows 1 & 2 give us 7 values total.\nCounting into Row 3:\n  8th: 31\n  9th: 31\n  10th: 32\n  11th: 32"
+            },
+            {
+              "explain": "Calculate the average of the 10th and 11th values.",
+              "work": "\\(\\text{Median} = \\frac{32 + 32}{2}\\)\n\\(\\text{Median} = 32\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the stem-and-leaf plot shown below, answer the question.\n\n```\n1 | 2 2 4 6 8\n2 | 2 5\n3 | 1 1 2 2 3 4 6\n4 | 0 2 3 5 5 7\n```\n\nCalculate the mean.",
+          "options": [
+            "\\(30.5\\)",
+            "\\(30\\)",
+            "\\(31\\)",
+            "\\(31.5\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(30\\).",
+          "steps": [
+            {
+              "explain": "To find the mean, add up all 20 values and divide by 20.",
+              "work": "\\(\\text{Mean} = \\frac{\\text{Sum of all values}}{20}\\)"
+            },
+            {
+              "explain": "Calculate the sum of each row to keep things organised.",
+              "work": "Row 1 (10s): \\(12 + 12 + 14 + 16 + 18 = 72\\)\nRow 2 (20s): \\(22 + 25 = 47\\)"
+            },
+            {
+              "explain": "Continue with the remaining rows.",
+              "work": "Row 3 (30s): \\(31 + 31 + 32 + 32 + 33 + 34 + 36 = 229\\)\nRow 4 (40s): \\(40 + 42 + 43 + 45 + 45 + 47 = 262\\)"
+            },
+            {
+              "explain": "Add all the row totals together.",
+              "work": "\\(\\text{Total Sum} = 72 + 47 + 229 + 262 = 610\\)"
+            },
+            {
+              "explain": "Divide the total sum by the number of values (20).",
+              "work": "\\(\\text{Mean} = \\frac{610}{20} = 30.5\\)\n\\(\\text{Final Answer: } 30.5\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The chest measurements, in centimetres, of 23 people are shown in the stem-and-leaf plot below.\n\n```\n 8 | 6 7\n 9 | 1 1 1 2 3 4 5 7 7\n10 | 0 2 3 4 5 7 7 8 8\n11 | 2 2 8\n```\n\nFind the median chest measurement.",
+          "options": [
+            "\\(99\\)",
+            "\\(100\\)",
+            "\\(101\\)",
+            "\\(102\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(100\\).",
+          "steps": [
+            {
+              "explain": "Read the data from the stem-and-leaf plot. The stem is the tens digit and each leaf is the ones digit. The plot already orders the data from smallest to largest.",
+              "work": "8|6 7 → 86, 87\n9|1 1 1 2 3 4 5 7 7 → 91, 91, 91, 92, 93, 94, 95, 97, 97\n10|0 2 3 4 5 7 7 8 8 → 100, 102, 103, 104, 105, 107, 107, 108, 108\n11|2 2 8 → 112, 112, 118"
+            },
+            {
+              "explain": "Count the total number of leaves. There are 23 data values in total. Since 23 is an odd number, the median is the single middle value.",
+              "work": "\\(n = 23\\)\nPosition of median \\(= \\frac{23+1}{2} = 12\\)\nThe median is the 12th value."
+            },
+            {
+              "explain": "Count through the ordered data to find the 12th value.",
+              "work": "Values 1–2: 86, 87 (2 so far)\nValues 3–11: 91, 91, 91, 92, 93, 94, 95, 97, 97 (11 so far)\nValue 12: \\(\\mathbf{100}\\) ← this is the 12th value"
+            },
+            {
+              "explain": "The 12th value is 100.",
+              "work": "\\(\\text{Median} = 100 \\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The chest measurements, in centimetres, of 23 people are shown in the stem-and-leaf plot below.\n\n```\n 8 | 6 7\n 9 | 1 1 1 2 3 4 5 7 7\n10 | 0 2 3 4 5 7 7 8 8\n11 | 2 2 8\n```\n\nFind the mean chest measurement.",
+          "options": [
+            "\\(99.5\\)",
+            "\\(100.5\\)",
+            "\\(100\\)",
+            "\\(98.5\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(100\\).",
+          "steps": [
+            {
+              "explain": "To find the mean, we need to add up all 23 values from the stem-and-leaf plot and divide by 23.",
+              "work": "\\(\\text{Mean} = \\frac{\\text{Sum of all values}}{23}\\)"
+            },
+            {
+              "explain": "Calculate the sum for each row.",
+              "work": "Row 8: \\(86 + 87 = 173\\)\nRow 9: \\(91 \\times 3 + 92 + 93 + 94 + 95 + 97 \\times 2 = 273 + 471 = 841\\)\nRow 10: \\(100 + 102 + 103 + 104 + 105 + 107 \\times 2 + 108 \\times 2 = 944\\)\nRow 11: \\(112 + 112 + 118 = 342\\)"
+            },
+            {
+              "explain": "Add all row totals together.",
+              "work": "\\(\\text{Total Sum} = 173 + 841 + 944 + 342 = 2300\\)"
+            },
+            {
+              "explain": "Divide the total sum by 23 to find the mean.",
+              "work": "\\(\\text{Mean} = \\frac{2300}{23} = 100\\)\n\\(\\text{Final Answer: } 100 \\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The chest measurements, in centimetres, of 23 people are shown in the stem-and-leaf plot below.\n\n```\n 8 | 6 7\n 9 | 1 1 1 2 3 4 5 7 7\n10 | 0 2 3 4 5 7 7 8 8\n11 | 2 2 8\n```\n\nFind the new median chest measurement if readings less than 90 cm and greater than 110 cm are not included.",
+          "options": [
+            "\\(97\\)",
+            "\\(98\\)",
+            "\\(100\\)",
+            "\\(98.5\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(98.5\\).",
+          "steps": [
+            {
+              "explain": "First, identify which values to REMOVE. We remove all values that are less than 90 or greater than 110.",
+              "work": "Values to remove (< 90): 86, 87\nValues to remove (> 110): 112, 112, 118\nTotal removed: 5 values"
+            },
+            {
+              "explain": "The remaining data set contains only the values in the rows 9 and 10. List them out in order.",
+              "work": "Remaining (18 values):\n91, 91, 91, 92, 93, 94, 95, 97, 97, 100, 102, 103, 104, 105, 107, 107, 108, 108"
+            },
+            {
+              "explain": "Since there are now 18 values (an even number), the median is the average of the 9th and 10th values.",
+              "work": "9th value: \\(97\\)\n10th value: \\(100\\)"
+            },
+            {
+              "explain": "Calculate the average of the 9th and 10th values.",
+              "work": "\\(\\text{New Median} = \\frac{97 + 100}{2}\\)\n\\(\\text{New Median} = \\frac{197}{2} = 98.5\\)\n\\(\\text{Final Answer: } 98.5 \\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The chest measurements, in centimetres, of 23 people are shown in the stem-and-leaf plot below.\n\n```\n 8 | 6 7\n 9 | 1 1 1 2 3 4 5 7 7\n10 | 0 2 3 4 5 7 7 8 8\n11 | 2 2 8\n```\n\nFind the new mean chest measurement if readings less than 90 cm and greater than 110 cm are not included (correct to two decimal places).",
+          "options": [
+            "\\(99.28\\)",
+            "\\(99.17\\)",
+            "\\(98.83\\)",
+            "\\(99.50\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(99.17\\).",
+          "steps": [
+            {
+              "explain": "We are using the same 18 values from part c) after removing the readings outside 90–110 cm.",
+              "work": "18 remaining values: 91, 91, 91, 92, 93, 94, 95, 97, 97, 100, 102, 103, 104, 105, 107, 107, 108, 108"
+            },
+            {
+              "explain": "Calculate the sum of the 18 remaining values.",
+              "work": "Row 9 sum: \\(91+91+91+92+93+94+95+97+97 = 841\\)\nRow 10 sum: \\(100+102+103+104+105+107+107+108+108 = 944\\)\nTotal Sum \\(= 841 + 944 = 1785\\)"
+            },
+            {
+              "explain": "Divide the total sum (1785) by the new number of values (18) to find the new mean.",
+              "work": "\\(\\text{New Mean} = \\frac{1785}{18} = 99.1\\overline{6}\\)"
+            },
+            {
+              "explain": "Round the answer to two decimal places. The third decimal digit is 6 (≥ 5), so we round up.",
+              "work": "\\(99.166... \\approx 99.17\\)\n\\(\\text{Final Answer: } 99.17 \\text{ cm}\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The following list gives the area in hectares of each of the suburbs of a city:\n\n\\(8.5, 3.2, 6.2, 20.2, 3.4, 42.3, 12.3, 28.6, 10.0, 3.3, 29.4, 4.2, 4.6\\)\n\nFind the median area in hectares.",
+          "options": [
+            "\\(6.2\\)",
+            "\\(8.5\\)",
+            "\\(10.0\\)",
+            "\\(9.25\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(8.5\\).",
+          "steps": [
+            {
+              "explain": "To find the median, the first step is ALWAYS to sort the data in ascending order (smallest to largest).",
+              "work": "Original: 8.5, 3.2, 6.2, 20.2, 3.4, 42.3, 12.3, 28.6, 10.0, 3.3, 29.4, 4.2, 4.6\nSorted: 3.2, 3.3, 3.4, 4.2, 4.6, 6.2, 8.5, 10.0, 12.3, 20.2, 28.6, 29.4, 42.3"
+            },
+            {
+              "explain": "Count the total number of values.",
+              "work": "\\(n = 13\\) (an odd number)"
+            },
+            {
+              "explain": "Since there are 13 values (an odd number), the median is the single middle value. Find its position using the formula:",
+              "work": "\\(\\text{Position} = \\frac{n + 1}{2} = \\frac{13 + 1}{2} = 7\\)\nThe median is the 7th value."
+            },
+            {
+              "explain": "Count to the 7th value in the sorted list.",
+              "work": "1st: 3.2, 2nd: 3.3, 3rd: 3.4, 4th: 4.2, 5th: 4.6, 6th: 6.2, 7th: **8.5**"
+            },
+            {
+              "explain": "The 7th value is 8.5.",
+              "work": "\\(\\text{Median} = 8.5 \\text{ hectares}\\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The following list gives the area in hectares of each of the suburbs of a city:\n\n\\(8.5, 3.2, 6.2, 20.2, 3.4, 42.3, 12.3, 28.6, 10.0, 3.3, 29.4, 4.2, 4.6\\)\n\nFind the mean area in hectares (correct to two decimal places).",
+          "options": [
+            "\\(12.78\\)",
+            "\\(14.32\\)",
+            "\\(13.50\\)",
+            "\\(13.55\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(12.78\\).",
+          "steps": [
+            {
+              "explain": "To find the mean, add up all the areas and divide by the total number of suburbs (13).",
+              "work": "\\(\\text{Mean} = \\frac{\\text{Sum of all areas}}{13}\\)"
+            },
+            {
+              "explain": "Add all 13 values together, step by step.",
+              "work": "\\(8.5 + 3.2 + 6.2 + 20.2 + 3.4 + 42.3 + 12.3 + 28.6 + 10.0 + 3.3 + 29.4 + 4.2 + 4.6\\)\n\\(= 176.2\\)"
+            },
+            {
+              "explain": "Divide the total sum by 13.",
+              "work": "\\(\\text{Mean} = \\frac{176.2}{13} = 13.553...\\)"
+            },
+            {
+              "explain": "Round to two decimal places. The third decimal digit is 3 (< 5), so we round down.",
+              "work": "\\(13.553... \\approx 13.55\\)\n\\(\\text{Final Answer: } 13.55 \\text{ hectares}\\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q8c",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "The following list gives the area in hectares of each of the suburbs of a city:\n\n\\(8.5, 3.2, 6.2, 20.2, 3.4, 42.3, 12.3, 28.6, 10.0, 3.3, 29.4, 4.2, 4.6\\)\n\nWhich is a better measure of centre for this data set? Explain your answer.",
+          "answer": "The median (8.5 hectares) is a better measure of centre for this data set. The mean (13.55 hectares) is skewed upwards by a few very large suburbs (such as 42.3 and 29.4 hectares), which act as outliers and pull the average higher than what is typical.",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "The median (8.5 hectares) is a better measure of centre for this data set. The mean (13.55 hectares) is skewed upwards by a few very large suburbs (such as 42.3 and 29.4 hectares), which act as outliers and pull the average higher than what is typical.",
+          "steps": [
+            {
+              "explain": "Let's compare the two measures of centre we calculated.",
+              "work": "\\(\\text{Median} = 8.5 \\text{ ha}\\)\n\\(\\text{Mean} = 13.55 \\text{ ha}\\)"
+            },
+            {
+              "explain": "Look at the sorted data. Most suburbs have small areas — the majority are between 3.2 and 12.3 hectares. However, two suburbs are unusually large: 42.3 ha and 29.4 ha. These are called **outliers**.",
+              "work": "Outliers: \\(42.3 \\text{ ha}\\) and \\(29.4 \\text{ ha}\\)"
+            },
+            {
+              "explain": "These large outliers pull the mean significantly upwards (from a \"typical\" value of ~8.5 ha all the way up to 13.55 ha). The median, however, is not affected by how extreme the outliers are — it only depends on the middle position.",
+              "work": "The mean is skewed upward by the outliers.\nThe median remains a representative \"typical\" value."
+            },
+            {
+              "explain": "Therefore, the median (8.5 ha) better represents the \"typical\" suburb size in this city, while the mean gives a misleadingly high value due to the outliers.",
+              "work": "\\(\\text{Median is the better measure of centre.}\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q9a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Find the median and mean of the data represented in the stem-and-leaf plot below:\n\n```\n6 | 4 7\n7 | 1 2 3 4 7\n8 | 5 5 6 6 7\n9 | 2 2 2 4 4 5 5 5 6 6 8 8\n```",
+          "answer": "Median = 89.5, Mean = 86",
+          "hint": "List all 24 numbers in order. Calculate the median using the 12th and 13th numbers, and the mean by dividing the total sum by 24.",
+          "solution": "Median = 89.5, Mean = 86",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(64, 67, 71, 72, 73, 74, 77, 85, 85, 86, 86, 87, 92, 92, 92, 94, 94, 95, 95, 95, 96, 96, 98, 98\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(\\text{Median} = \\frac{87 + 92}{2} = 89.5\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(\\text{Mean} = \\frac{2064}{24} = 86\\)"
+            },
+            {
+              "explain": "Final answer: Median = 89.5, Mean = 86. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "Median = 89.5, Mean = 86"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y8-19a-q10a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "The birth weights, in kilograms, of the first 20 babies born at a hospital in a selected month are as follows:\n\n`3.1, 2.9, 3.7, 2.9, 3.7, 3.8, 3.3, 4.0, 3.7, 4.3`\n`3.8, 2.8, 3.2, 3.1, 2.6, 2.7, 3.7, 2.5, 3.0, 3.3`\n\nAnswer the questions below.\na) Represent these data with a stem-and-leaf plot.",
+          "answer": "2 | 5 6 7 8 9 9\n3 | 0 1 1 2 3 3 7 7 7 7 8 8\n4 | 0 3",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "2 | 5 6 7 8 9 9\n3 | 0 1 1 2 3 3 7 7 7 7 8 8\n4 | 0 3",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "Identify given data"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(2 | 5 6 7 8 9 9\n3 | 0 1 1 2 3 3 7 7 7 7 8 8\n4 | 0 3\\)"
+            },
+            {
+              "explain": "Final answer: 2 | 5 6 7 8 9 9\n3 | 0 1 1 2 3 3 7 7 7 7 8 8\n4 | 0 3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(2 | 5 6 7 8 9 9\n3 | 0 1 1 2 3 3 7 7 7 7 8 8\n4 | 0 3\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y8-19a-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The birth weights, in kilograms, of the first 20 babies born at a hospital in a selected month are as follows:\n\n\\(3.1, 2.9, 3.7, 2.9, 3.7, 3.8, 3.3, 4.0, 3.7, 4.3\\)\n\\(3.8, 2.8, 3.2, 3.1, 2.6, 2.7, 3.7, 2.5, 3.0, 3.3\\)\n\nFind the median birth weight.",
+          "options": [
+            "\\(3.2\\)",
+            "\\(3.25\\)",
+            "\\(3.3\\)",
+            "\\(3.5\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(3.25\\).",
+          "steps": [
+            {
+              "explain": "The median is the middle value when the data is ordered from smallest to largest. First, we count how many data points we have.",
+              "work": "Total number of data points \\(n = 20\\)."
+            },
+            {
+              "explain": "Since 20 is an even number, there isn't a single middle number. Instead, the median is the average of the two middle numbers. The middle positions are \\(n \\div 2\\) and \\((n \\div 2) + 1\\).",
+              "work": "Middle positions: \\(20 \\div 2 = 10\\)\nSo we need the 10th and 11th values."
+            },
+            {
+              "explain": "Using the ordered stem-and-leaf plot from part a), count the leaves until you reach the 10th and 11th values.",
+              "work": "Stem 2 has 6 values.\nSo we need the 4th and 5th values in Stem 3.\nStem 3 leaves: 0, 1, 1, **2 (4th)**, **3 (5th)**...\n10th value = \\(3.2\\)\n11th value = \\(3.3\\)"
+            },
+            {
+              "explain": "Calculate the average of these two middle values.",
+              "work": "\\(\\text{Median} = \\frac{3.2 + 3.3}{2}\\)\n\\(\\text{Median} = \\frac{6.5}{2} = 3.25\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q10c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The birth weights, in kilograms, of the first 20 babies born at a hospital in a selected month are as follows:\n\n\\(3.1, 2.9, 3.7, 2.9, 3.7, 3.8, 3.3, 4.0, 3.7, 4.3\\)\n\\(3.8, 2.8, 3.2, 3.1, 2.6, 2.7, 3.7, 2.5, 3.0, 3.3\\)\n\nFind the mean birth weight.",
+          "options": [
+            "\\(3.35\\)",
+            "\\(3.25\\)",
+            "\\(3.30\\)",
+            "\\(3.305\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(3.31\\).",
+          "steps": [
+            {
+              "explain": "The mean (average) is calculated by adding all the values together and dividing by the total number of values.",
+              "work": "\\(\\text{Mean} = \\frac{\\text{Sum of all values}}{\\text{Total count}}\\)"
+            },
+            {
+              "explain": "First, let's calculate the sum of all 20 values. It's easier to sum them by their stems or rows.",
+              "work": "Sum of 2.x values: \\(2.5+2.6+2.7+2.8+2.9+2.9 = 16.4\\)\nSum of 3.x values: \\(3.0+3.1+3.1+3.2+3.3+3.3+3.7+3.7+3.7+3.7+3.8+3.8 = 41.4\\)\nSum of 4.x values: \\(4.0+4.3 = 8.3\\)"
+            },
+            {
+              "explain": "Add those group sums together to get the total sum.",
+              "work": "\\text{Total sum} = 16.4 + 41.4 + 8.3 = 66.1"
+            },
+            {
+              "explain": "Divide the total sum by the number of data points (20).",
+              "work": "\\(\\text{Mean} = \\frac{66.1}{20}\\)\n\\(\\text{Mean} = 3.305\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-ep1-q1_1",
+          "type": "mc",
+          "stem": "Consider the following stem and leaf plot. Find the <b>mode</b>.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Table border -->\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  \n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  \n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">677</text>\n  \n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">2599</text>\n  \n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">237</text>\n  \n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">15</text>\n  \n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">26</text>\n</svg></div>",
+          "options": [
+            "\\(19\\)",
+            "\\(7\\)",
+            "\\(7\\) and \\(19\\)",
+            "\\(7\\) and \\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "The mode is the number that occurs most frequently. There can be more than one mode.",
+          "steps": [
+            {
+              "explain": "Look for the leaves that are repeated the most in the same row."
+            },
+            {
+              "explain": "In the '0' row, '7' appears twice (meaning 7 occurs twice).",
+              "work": "<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n  <text x=\"83\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" fill=\"red\" font-weight=\"bold\">7</text>\n  <text x=\"96\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" fill=\"red\" font-weight=\"bold\">7</text>\n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"96\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"109\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">3</text>\n  <text x=\"96\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">1</text>\n  <text x=\"83\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n</svg></div>"
+            },
+            {
+              "explain": "In the '1' row, '9' appears twice (meaning 19 occurs twice).",
+              "work": "<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n  <text x=\"83\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"96\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"96\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" fill=\"blue\" font-weight=\"bold\">9</text>\n  <text x=\"109\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" fill=\"blue\" font-weight=\"bold\">9</text>\n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">3</text>\n  <text x=\"96\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">1</text>\n  <text x=\"83\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n</svg></div>"
+            },
+            {
+              "explain": "Both 7 and 19 occur twice, and no other number occurs more than twice.",
+              "work": "<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n  <text x=\"83\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" fill=\"red\" font-weight=\"bold\">7</text>\n  <text x=\"96\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" fill=\"red\" font-weight=\"bold\">7</text>\n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"96\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" fill=\"blue\" font-weight=\"bold\">9</text>\n  <text x=\"109\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" fill=\"blue\" font-weight=\"bold\">9</text>\n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">3</text>\n  <text x=\"96\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">1</text>\n  <text x=\"83\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n</svg></div>"
+            },
+            {
+              "explain": "Therefore, the mode is 7 and 19."
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q1_2",
+          "type": "mc",
+          "stem": "Consider the following stem and leaf plot. Find the <b>range</b>.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Table border -->\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  \n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  \n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">677</text>\n  \n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">2599</text>\n  \n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">237</text>\n  \n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">15</text>\n  \n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">26</text>\n</svg></div>",
+          "options": [
+            "\\(6\\)",
+            "\\(52\\)",
+            "\\(40\\)",
+            "\\(46\\)"
+          ],
+          "answer": 2,
+          "hint": "Range = highest score - lowest score.",
+          "steps": [
+            {
+              "explain": "Find the highest score in the plot: the last leaf in the last row.",
+              "work": "\\(\\text{Highest score} = 46\\)<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n  <text x=\"83\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"96\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"96\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"109\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">3</text>\n  <text x=\"96\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">1</text>\n  <text x=\"83\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" fill=\"blue\" font-weight=\"bold\">6</text>\n</svg></div>"
+            },
+            {
+              "explain": "Find the lowest score in the plot: the first leaf in the first row.",
+              "work": "\\(\\text{Lowest score} = 6\\)<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" fill=\"red\" font-weight=\"bold\">6</text>\n  <text x=\"83\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"96\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"96\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"109\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">3</text>\n  <text x=\"96\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">1</text>\n  <text x=\"83\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n</svg></div>"
+            },
+            {
+              "explain": "Subtract the lowest score from the highest score.",
+              "work": "\\(\\text{Range} = 46 - 6 = 40\\)<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" fill=\"red\" font-weight=\"bold\">6</text>\n  <text x=\"83\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"96\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"96\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"109\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">3</text>\n  <text x=\"96\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">1</text>\n  <text x=\"83\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" fill=\"blue\" font-weight=\"bold\">6</text>\n</svg></div>"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q1_3",
+          "type": "mc",
+          "stem": "Consider the following stem and leaf plot. Find the <b>median</b>.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Table border -->\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  \n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  \n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">677</text>\n  \n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">2599</text>\n  \n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">237</text>\n  \n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">15</text>\n  \n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" letter-spacing=\"5\">26</text>\n</svg></div>",
+          "options": [
+            "\\(21\\)",
+            "\\(19\\)",
+            "\\(20.5\\)",
+            "\\(22\\)"
+          ],
+          "answer": 2,
+          "hint": "Count how many scores there are. The median is the middle score.",
+          "steps": [
+            {
+              "explain": "First, count the total number of scores by counting all the leaves.",
+              "work": "\\(\\text{Total scores} = 3 + 4 + 3 + 2 + 2 = 14\\)"
+            },
+            {
+              "explain": "Since there is an even number of scores, the median is the average of the two middle scores (the 7th and 8th scores).",
+              "work": "<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n  <text x=\"83\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"96\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"96\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"109\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" fill=\"red\" font-weight=\"bold\">9</text>\n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" fill=\"blue\" font-weight=\"bold\">2</text>\n  <text x=\"83\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">3</text>\n  <text x=\"96\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">1</text>\n  <text x=\"83\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n</svg></div>"
+            },
+            {
+              "explain": "Count down the leaves to find the 7th and 8th scores.",
+              "work": "7th score = 19<br>8th score = 22<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"150\" height=\"150\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"20\" y1=\"30\" x2=\"130\" y2=\"30\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"140\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"50\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">Tens</text>\n  <text x=\"70\" y=\"25\" font-family=\"sans-serif\" font-size=\"14\">Units</text>\n  <text x=\"50\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">0</text>\n  <text x=\"70\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n  <text x=\"83\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"96\" y=\"50\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">1</text>\n  <text x=\"70\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"96\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\">9</text>\n  <text x=\"109\" y=\"70\" font-family=\"sans-serif\" font-size=\"14\" fill=\"red\" font-weight=\"bold\">9</text>\n  <text x=\"50\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">2</text>\n  <text x=\"70\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\" fill=\"blue\" font-weight=\"bold\">2</text>\n  <text x=\"83\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">3</text>\n  <text x=\"96\" y=\"90\" font-family=\"sans-serif\" font-size=\"14\">7</text>\n  <text x=\"50\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">3</text>\n  <text x=\"70\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">1</text>\n  <text x=\"83\" y=\"110\" font-family=\"sans-serif\" font-size=\"14\">5</text>\n  <text x=\"50\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">4</text>\n  <text x=\"70\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">2</text>\n  <text x=\"83\" y=\"130\" font-family=\"sans-serif\" font-size=\"14\">6</text>\n</svg></div>"
+            },
+            {
+              "explain": "Calculate the average.",
+              "work": "\\(\\text{Median} = \\frac{19 + 22}{2} = 20.5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q2a_data",
+          "type": "mc",
+          "stem": "The following set of data represents the family size of 37 people surveyed:<br><br>4, 3, 4, 2, 3, 7, 4, 5, 7, 6, 5, 3, 4, 8, 5, 3, 4, 3, 5, 4, 4, 2, 8, 6, 4, 4, 3, 5, 4, 4, 5, 6, 3, 4, 4, 3, 4<br><br>If you complete a frequency table for this data, what is the value of \\(\\sum fx\\)?",
+          "options": [
+            "\\(162\\)",
+            "\\(170\\)",
+            "\\(37\\)",
+            "\\(154\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\sum fx\\) is the sum of all the scores multiplied by their frequencies. This is simply the sum of all the family sizes.",
+          "steps": [
+            {
+              "explain": "To find \\(\\sum fx\\), we multiply each family size (\\(x\\)) by how many times it appears (\\(f\\)), and add them all together. This is equivalent to adding up all 37 numbers in the list."
+            },
+            {
+              "explain": "Let's tally the frequencies:\n- \\(x=2\\): \\(f=2\\) \\(\\rightarrow fx=4\\)\n- \\(x=3\\): \\(f=8\\) \\(\\rightarrow fx=24\\)\n- \\(x=4\\): \\(f=14\\) \\(\\rightarrow fx=56\\)\n- \\(x=5\\): \\(f=6\\) \\(\\rightarrow fx=30\\)\n- \\(x=6\\): \\(f=3\\) \\(\\rightarrow fx=18\\)\n- \\(x=7\\): \\(f=2\\) \\(\\rightarrow fx=14\\)\n- \\(x=8\\): \\(f=2\\) \\(\\rightarrow fx=16\\)"
+            },
+            {
+              "explain": "Add the \\(fx\\) values together.",
+              "work": "\\(\\sum fx = 4 + 24 + 56 + 30 + 18 + 14 + 16 = 162\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q2b_1",
+          "type": "mc",
+          "stem": "The following set of data represents the family size of 37 people surveyed:<br><br>4, 3, 4, 2, 3, 7, 4, 5, 7, 6, 5, 3, 4, 8, 5, 3, 4, 3, 5, 4, 4, 2, 8, 6, 4, 4, 3, 5, 4, 4, 5, 6, 3, 4, 4, 3, 4<br><br>Find the <b>range</b>.",
+          "options": [
+            "\\(2\\)",
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(10\\)"
+          ],
+          "answer": 1,
+          "hint": "Range = highest score - lowest score.",
+          "steps": [
+            {
+              "explain": "Find the highest family size in the list.",
+              "work": "<div style=\"display: flex; justify-content: center; margin-top: 15px;\">\n<table style=\"border-collapse: collapse; text-align: center; border: 1px solid black;\">\n  <thead>\n    <tr>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Family Size (\\(x\\))</th>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Tally</th>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Frequency (\\(f\\))</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">3</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> |||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">8</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">4</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> <s>||||</s> ||||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">14</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">5</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> |</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">6</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">6</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">|||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">3</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">7</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">8</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n  </tbody>\n  <tfoot>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px; font-weight: bold;\" colspan=\"2\">Total</td>\n      <td style=\"border: 1px solid black; padding: 5px; font-weight: bold;\">37</td>\n    </tr>\n  </tfoot>\n</table>\n</div><br>\\(\\text{Highest} = 8\\)"
+            },
+            {
+              "explain": "Find the lowest family size in the list.",
+              "work": "\\(\\text{Lowest} = 2\\)"
+            },
+            {
+              "explain": "Subtract the lowest from the highest.",
+              "work": "\\(\\text{Range} = 8 - 2 = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q2b_2",
+          "type": "mc",
+          "stem": "The following set of data represents the family size of 37 people surveyed:<br><br>4, 3, 4, 2, 3, 7, 4, 5, 7, 6, 5, 3, 4, 8, 5, 3, 4, 3, 5, 4, 4, 2, 8, 6, 4, 4, 3, 5, 4, 4, 5, 6, 3, 4, 4, 3, 4<br><br>Find the <b>mode</b>.",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(14\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "The mode is the family size that occurs the most often.",
+          "steps": [
+            {
+              "explain": "Count the frequency of each family size.",
+              "work": "<div style=\"display: flex; justify-content: center; margin-top: 15px;\">\n<table style=\"border-collapse: collapse; text-align: center; border: 1px solid black;\">\n  <thead>\n    <tr>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Family Size (\\(x\\))</th>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Tally</th>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Frequency (\\(f\\))</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">3</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> |||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">8</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">4</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> <s>||||</s> ||||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">14</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">5</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> |</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">6</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">6</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">|||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">3</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">7</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">8</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n  </tbody>\n  <tfoot>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px; font-weight: bold;\" colspan=\"2\">Total</td>\n      <td style=\"border: 1px solid black; padding: 5px; font-weight: bold;\">37</td>\n    </tr>\n  </tfoot>\n</table>\n</div><br>The number 4 appears 14 times, which is more than any other number."
+            },
+            {
+              "explain": "Therefore, the mode is 4."
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q2b_3",
+          "type": "mc",
+          "stem": "The following set of data represents the family size of 37 people surveyed:<br><br>4, 3, 4, 2, 3, 7, 4, 5, 7, 6, 5, 3, 4, 8, 5, 3, 4, 3, 5, 4, 4, 2, 8, 6, 4, 4, 3, 5, 4, 4, 5, 6, 3, 4, 4, 3, 4<br><br>Find the <b>median</b>.",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(4.5\\)"
+          ],
+          "answer": 1,
+          "hint": "Since there are 37 people, the median will be the 19th score when ordered from smallest to largest.",
+          "steps": [
+            {
+              "explain": "First, we know there are 37 scores in total.",
+              "work": "<div style=\"display: flex; justify-content: center; margin-top: 15px;\">\n<table style=\"border-collapse: collapse; text-align: center; border: 1px solid black;\">\n  <thead>\n    <tr>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Family Size (\\(x\\))</th>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Tally</th>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Frequency (\\(f\\))</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">3</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> |||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">8</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">4</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> <s>||||</s> ||||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">14</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">5</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> |</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">6</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">6</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">|||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">3</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">7</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">8</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n  </tbody>\n  <tfoot>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px; font-weight: bold;\" colspan=\"2\">Total</td>\n      <td style=\"border: 1px solid black; padding: 5px; font-weight: bold;\">37</td>\n    </tr>\n  </tfoot>\n</table>\n</div>"
+            },
+            {
+              "explain": "The median position is \\(\\frac{37 + 1}{2} = 19\\). We need to find the 19th score."
+            },
+            {
+              "explain": "Looking at the frequencies in order: \n- \\(x=2\\): 2 people\n- \\(x=3\\): 8 people (cumulative = 10)\n- \\(x=4\\): 14 people (cumulative = 24)"
+            },
+            {
+              "explain": "Since the cumulative frequency reaches 24 when \\(x=4\\), the 19th score falls into this group.",
+              "work": "\\(\\text{Median} = 4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q2b_4",
+          "type": "mc",
+          "stem": "The following set of data represents the family size of 37 people surveyed:<br><br>4, 3, 4, 2, 3, 7, 4, 5, 7, 6, 5, 3, 4, 8, 5, 3, 4, 3, 5, 4, 4, 2, 8, 6, 4, 4, 3, 5, 4, 4, 5, 6, 3, 4, 4, 3, 4<br><br>Find the <b>mean</b> (to 1 decimal place).",
+          "options": [
+            "\\(4.3\\)",
+            "\\(4.4\\)",
+            "\\(4.5\\)",
+            "\\(4.0\\)"
+          ],
+          "answer": 1,
+          "hint": "Mean = \\(\\frac{\\sum fx}{\\sum f}\\)",
+          "steps": [
+            {
+              "explain": "To find the mean, divide the sum of all scores (\\(\\sum fx\\)) by the total number of scores (\\(\\sum f\\)).",
+              "work": "<div style=\"display: flex; justify-content: center; margin-top: 15px;\">\n<table style=\"border-collapse: collapse; text-align: center; border: 1px solid black;\">\n  <thead>\n    <tr>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Family Size (\\(x\\))</th>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Tally</th>\n      <th style=\"border: 1px solid black; padding: 5px 10px; background-color: #f2f2f2;\">Frequency (\\(f\\))</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">3</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> |||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">8</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">4</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> <s>||||</s> ||||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">14</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">5</td>\n      <td style=\"border: 1px solid black; padding: 5px;\"><s>||||</s> |</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">6</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">6</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">|||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">3</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">7</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px;\">8</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">||</td>\n      <td style=\"border: 1px solid black; padding: 5px;\">2</td>\n    </tr>\n  </tbody>\n  <tfoot>\n    <tr>\n      <td style=\"border: 1px solid black; padding: 5px; font-weight: bold;\" colspan=\"2\">Total</td>\n      <td style=\"border: 1px solid black; padding: 5px; font-weight: bold;\">37</td>\n    </tr>\n  </tfoot>\n</table>\n</div>"
+            },
+            {
+              "explain": "From the frequency table, we know \\(\\sum fx = 162\\) and \\(\\sum f = 37\\).",
+              "work": "\\(\\text{Mean} = \\frac{162}{37}\\)"
+            },
+            {
+              "explain": "Calculate the division and round to 1 decimal place.",
+              "work": "\\(\\text{Mean} \\approx 4.378... \\approx 4.4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-19a-q2",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "The weights of a group of students, in kilograms, are given below:\n\n`53, 52, 51, 52, 48, 47, 51, 47, 55, 52, 48, 49`\n\nAnswer the questions below.",
+          "parts": [
+            {
+              "id": "y8-19a-q2a",
+              "type": "mc",
+              "stem": "a) What is the median?",
+              "options": [
+                "\\(50.5\\)",
+                "\\(51.5\\)",
+                "\\(51\\)",
+                "\\(52\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "To find the median, the most important first step is to arrange all the numbers in ascending order (from smallest to largest). If you skip this, your answer will be wrong!",
+                  "work": "Given data: \\(53, 52, 51, 52, 48, 47, 51, 47, 55, 52, 48, 49\\)"
+                },
+                {
+                  "explain": "Sort the numbers in ascending order.",
+                  "work": "Sorted: \\(47, 47, 48, 48, 49, 51, 51, 52, 52, 52, 53, 55\\)"
+                },
+                {
+                  "explain": "Count the total number of data points. There are 12 numbers. Since 12 is an even number, there is no single middle number. We must take the average of the two middle numbers.",
+                  "work": "Total \\(n = 12\\).\nThe middle numbers are in positions \\(12 \\div 2 = 6\\) and \\(6 + 1 = 7\\).\nSo we need the 6th and 7th values."
+                },
+                {
+                  "explain": "Identify the 6th and 7th values from the sorted list.",
+                  "work": "The 6th value is 51.\nThe 7th value is also 51."
+                },
+                {
+                  "explain": "Calculate the average of these two values.",
+                  "work": "\\(\\text{Median} = \\frac{51 + 51}{2}\\)\n\\(\\text{Median} = \\frac{102}{2} = 51\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-19a-q2b",
+              "type": "mc",
+              "stem": "b) Calculate the mean, correct to two decimal places.",
+              "options": [
+                "\\(50.41\\)",
+                "\\(50.43\\)",
+                "\\(50.50\\)",
+                "\\(50.42\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "The mean is the average of all the numbers. To find it, we add all the values together and then divide by the total number of values.",
+                  "work": "\\(\\text{Mean} = \\frac{\\text{Sum of all values}}{\\text{Total count}}\\)"
+                },
+                {
+                  "explain": "First, let's calculate the sum of all 12 weights.",
+                  "work": "\\(53+52+51+52+48+47+51+47+55+52+48+49\\)\n\\text{Sum } = 605"
+                },
+                {
+                  "explain": "Now, divide the total sum by the number of students (12).",
+                  "work": "\\(\\text{Mean} = \\frac{605}{12} = 50.416666...\\)"
+                },
+                {
+                  "explain": "The question asks to round the answer correct to two decimal places. Look at the third decimal digit (6). Since it is 5 or greater, we round up the second digit.",
+                  "work": "\\(50.416... \\rightarrow 50.42\\)\n\\(\\text{Final Answer: } 50.42\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "Sort the weights first to find the median, and sum all values and divide by 12 to find the mean."
+        },
+        {
+          "id": "y8-19a-q6",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "For the stem-and-leaf plot shown below, find the median and the mean of the data set.\n\n```\n1 | 2 2 4 6 8\n2 | 2 5\n3 | 1 1 2 2 3 4 6\n4 | 0 2 3 5 5 7\n```",
+          "parts": [
+            {
+              "id": "y8-19a-q6a",
+              "type": "mc",
+              "stem": "a) Find the median.",
+              "options": [
+                "\\(31\\)",
+                "\\(31.5\\)",
+                "\\(32\\)",
+                "\\(33\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "A stem-and-leaf plot already shows the data ordered from smallest to largest! The \"stem\" is the tens digit, and each \"leaf\" is the ones digit.",
+                  "work": "For example, `1 | 2` means 12, and `4 | 7` means 47."
+                },
+                {
+                  "explain": "Count the total number of leaves to find how many data points there are.",
+                  "work": "Row 1: 5 leaves\nRow 2: 2 leaves\nRow 3: 7 leaves\nRow 4: 6 leaves\n\\(n = 5 + 2 + 7 + 6 = 20\\)"
+                },
+                {
+                  "explain": "Since there are 20 values (even number), the median is the average of the 10th and 11th values.",
+                  "work": "We need to count to the 10th and 11th leaves."
+                },
+                {
+                  "explain": "Count from the smallest values until you reach positions 10 and 11.",
+                  "work": "Rows 1 & 2 give us 7 values total.\nCounting into Row 3:\n  8th: 31\n  9th: 31\n  10th: 32\n  11th: 32"
+                },
+                {
+                  "explain": "Calculate the average of the 10th and 11th values.",
+                  "work": "\\(\\text{Median} = \\frac{32 + 32}{2}\\)\n\\(\\text{Median} = 32\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-19a-q6b",
+              "type": "mc",
+              "stem": "b) Calculate the mean.",
+              "options": [
+                "\\(30.5\\)",
+                "\\(30\\)",
+                "\\(31\\)",
+                "\\(31.5\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "To find the mean, add up all 20 values and divide by 20.",
+                  "work": "\\(\\text{Mean} = \\frac{\\text{Sum of all values}}{20}\\)"
+                },
+                {
+                  "explain": "Calculate the sum of each row to keep things organised.",
+                  "work": "Row 1 (10s): \\(12 + 12 + 14 + 16 + 18 = 72\\)\nRow 2 (20s): \\(22 + 25 = 47\\)"
+                },
+                {
+                  "explain": "Continue with the remaining rows.",
+                  "work": "Row 3 (30s): \\(31 + 31 + 32 + 32 + 33 + 34 + 36 = 229\\)\nRow 4 (40s): \\(40 + 42 + 43 + 45 + 45 + 47 = 262\\)"
+                },
+                {
+                  "explain": "Add all the row totals together.",
+                  "work": "\\(\\text{Total Sum} = 72 + 47 + 229 + 262 = 610\\)"
+                },
+                {
+                  "explain": "Divide the total sum by the number of values (20).",
+                  "work": "\\(\\text{Mean} = \\frac{610}{20} = 30.5\\)\n\\(\\text{Final Answer: } 30.5\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "List all 20 values. The median is the average of the 10th and 11th numbers. Sum all values and divide by 20 to find the mean."
+        },
+        {
+          "id": "y8-19a-q8",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The following list gives the area in hectares of each of the suburbs of a city:\n\n`8.5, 3.2, 6.2, 20.2, 3.4, 42.3, 12.3, 28.6, 10.0, 3.3, 29.4, 4.2, 4.6`\n\nAnswer the questions below.",
+          "parts": [
+            {
+              "id": "y8-19a-q8a",
+              "type": "mc",
+              "stem": "a) Find the median area in hectares.",
+              "options": [
+                "\\(6.2\\)",
+                "\\(8.5\\)",
+                "\\(10.0\\)",
+                "\\(9.25\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "To find the median, the first step is ALWAYS to sort the data in ascending order (smallest to largest).",
+                  "work": "Original: 8.5, 3.2, 6.2, 20.2, 3.4, 42.3, 12.3, 28.6, 10.0, 3.3, 29.4, 4.2, 4.6\nSorted: 3.2, 3.3, 3.4, 4.2, 4.6, 6.2, 8.5, 10.0, 12.3, 20.2, 28.6, 29.4, 42.3"
+                },
+                {
+                  "explain": "Count the total number of values.",
+                  "work": "\\(n = 13\\) (an odd number)"
+                },
+                {
+                  "explain": "Since there are 13 values (an odd number), the median is the single middle value. Find its position using the formula:",
+                  "work": "\\(\\text{Position} = \\frac{n + 1}{2} = \\frac{13 + 1}{2} = 7\\)\nThe median is the 7th value."
+                },
+                {
+                  "explain": "Count to the 7th value in the sorted list.",
+                  "work": "1st: 3.2, 2nd: 3.3, 3rd: 3.4, 4th: 4.2, 5th: 4.6, 6th: 6.2, 7th: **8.5**"
+                },
+                {
+                  "explain": "The 7th value is 8.5.",
+                  "work": "\\(\\text{Median} = 8.5 \\text{ hectares}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-19a-q8b",
+              "type": "mc",
+              "stem": "b) Find the mean area in hectares (correct to two decimal places).",
+              "options": [
+                "\\(12.78\\)",
+                "\\(14.32\\)",
+                "\\(13.50\\)",
+                "\\(13.55\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "To find the mean, add up all the areas and divide by the total number of suburbs (13).",
+                  "work": "\\(\\text{Mean} = \\frac{\\text{Sum of all areas}}{13}\\)"
+                },
+                {
+                  "explain": "Add all 13 values together, step by step.",
+                  "work": "\\(8.5 + 3.2 + 6.2 + 20.2 + 3.4 + 42.3 + 12.3 + 28.6 + 10.0 + 3.3 + 29.4 + 4.2 + 4.6\\)\n\\(= 176.2\\)"
+                },
+                {
+                  "explain": "Divide the total sum by 13.",
+                  "work": "\\(\\text{Mean} = \\frac{176.2}{13} = 13.553...\\)"
+                },
+                {
+                  "explain": "Round to two decimal places. The third decimal digit is 3 (< 5), so we round down.",
+                  "work": "\\(13.553... \\approx 13.55\\)\n\\(\\text{Final Answer: } 13.55 \\text{ hectares}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-19a-q8c",
+              "type": "review",
+              "stem": "c) Which is a better measure of centre for this data set? Explain your answer.",
+              "answer": "The median (8.5 hectares) is a better measure of centre for this data set. The mean (13.55 hectares) is skewed upwards by a few very large suburbs (such as 42.3 and 29.4 hectares), which act as outliers and pull the average higher than what is typical.",
+              "steps": [
+                {
+                  "explain": "Let's compare the two measures of centre we calculated.",
+                  "work": "\\(\\text{Median} = 8.5 \\text{ ha}\\)\n\\(\\text{Mean} = 13.55 \\text{ ha}\\)"
+                },
+                {
+                  "explain": "Look at the sorted data. Most suburbs have small areas — the majority are between 3.2 and 12.3 hectares. However, two suburbs are unusually large: 42.3 ha and 29.4 ha. These are called **outliers**.",
+                  "work": "Outliers: \\(42.3 \\text{ ha}\\) and \\(29.4 \\text{ ha}\\)"
+                },
+                {
+                  "explain": "These large outliers pull the mean significantly upwards (from a \"typical\" value of ~8.5 ha all the way up to 13.55 ha). The median, however, is not affected by how extreme the outliers are — it only depends on the middle position.",
+                  "work": "The mean is skewed upward by the outliers.\nThe median remains a representative \"typical\" value."
+                },
+                {
+                  "explain": "Therefore, the median (8.5 ha) better represents the \"typical\" suburb size in this city, while the mean gives a misleadingly high value due to the outliers.",
+                  "work": "\\(\\text{Median is the better measure of centre.}\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "Sort the data to identify the median, sum and divide by 13 to calculate the mean, and evaluate how extreme values affect the mean.",
+          "manual": true,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-19a-q10",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The birth weights, in kilograms, of the first 20 babies born at a hospital in a selected month are as follows:\n\n`3.1, 2.9, 3.7, 2.9, 3.7, 3.8, 3.3, 4.0, 3.7, 4.3`\n`3.8, 2.8, 3.2, 3.1, 2.6, 2.7, 3.7, 2.5, 3.0, 3.3`\n\nAnswer the questions below.",
+          "parts": [
+            {
+              "id": "y8-19a-q10a",
+              "type": "mc",
+              "stem": "a) Which of the following is the correct stem-and-leaf plot for the data?",
+              "options": [
+                "\\(\\begin{array}{r|l} 2 & 5\\ 6\\ 7\\ 8\\ 9\\ 9 \\\\ 3 & 0\\ 1\\ 1\\ 2\\ 3\\ 3\\ 7\\ 7\\ 7\\ 8\\ 8 \\\\ 4 & 0\\ 3 \\\\ & \\text{Key: } 3|1 = 3.1\\text{ kg} \\end{array}\\)",
+                "\\(\\begin{array}{r|l} 2 & 5\\ 6\\ 7\\ 8\\ 9 \\\\ 3 & 1\\ 1\\ 2\\ 3\\ 3\\ 7\\ 7\\ 7\\ 7\\ 8\\ 8 \\\\ 4 & 0\\ 3 \\\\ & \\text{Key: } 3|1 = 3.1\\text{ kg} \\end{array}\\)",
+                "\\(\\begin{array}{r|l} 2 & 5\\ 6\\ 7\\ 8\\ 9\\ 9 \\\\ 3 & 0\\ 1\\ 1\\ 2\\ 3\\ 3\\ 7\\ 7\\ 7\\ 7\\ 8\\ 8 \\\\ 4 & 0\\ 3 \\\\ & \\text{Key: } 3|1 = 3.1\\text{ kg} \\end{array}\\)",
+                "\\(\\begin{array}{r|l} 2 & 9\\ 9\\ 8\\ 7\\ 6\\ 5 \\\\ 3 & 8\\ 8\\ 7\\ 7\\ 7\\ 7\\ 3\\ 3\\ 2\\ 1\\ 1\\ 0 \\\\ 4 & 3\\ 0 \\\\ & \\text{Key: } 3|1 = 3.1\\text{ kg} \\end{array}\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "A stem-and-leaf plot divides each data point into a \"stem\" (the first part of the number) and a \"leaf\" (the last digit). Here, the whole numbers (2, 3, 4) form the stem, and the tenths form the leaves.",
+                  "work": "Stems: 2, 3, 4"
+                },
+                {
+                  "explain": "First, let's group the numbers by their stem. Let's find all the numbers that start with 2 (2.x) and list their leaves (tenths digit).",
+                  "work": "Numbers starting with 2: 2.9, 2.9, 2.8, 2.6, 2.7, 2.5\nSort them in ascending order: 2.5, 2.6, 2.7, 2.8, 2.9, 2.9\nLeaves for stem 2: 5, 6, 7, 8, 9, 9"
+                },
+                {
+                  "explain": "Next, group all the numbers starting with 3 (3.x) and list their leaves in ascending order.",
+                  "work": "Numbers: 3.1, 3.7, 3.7, 3.8, 3.3, 3.7, 3.8, 3.2, 3.1, 3.7, 3.0, 3.3\nSorted: 3.0, 3.1, 3.1, 3.2, 3.3, 3.3, 3.7, 3.7, 3.7, 3.7, 3.8, 3.8\nLeaves for stem 3: 0, 1, 1, 2, 3, 3, 7, 7, 7, 7, 8, 8"
+                },
+                {
+                  "explain": "Finally, group the numbers starting with 4 (4.x) and list their leaves.",
+                  "work": "Numbers: 4.0, 4.3\nSorted: 4.0, 4.3\nLeaves for stem 4: 0, 3"
+                },
+                {
+                  "explain": "Combine the stems and leaves into the final plot. Always include a key to explain what the plot means.",
+                  "work": "See the correct plot in the answer:\n\n\\(\\begin{array}{r|l} 2 & 5\\ 6\\ 7\\ 8\\ 9\\ 9 \\\\ 3 & 0\\ 1\\ 1\\ 2\\ 3\\ 3\\ 7\\ 7\\ 7\\ 7\\ 8\\ 8 \\\\ 4 & 0\\ 3 \\\\ & \\text{Key: } 3|1 = 3.1\\text{ kg} \\end{array}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-19a-q10b",
+              "type": "mc",
+              "stem": "b) Find the median birth weight.",
+              "options": [
+                "\\(3.2\\)",
+                "\\(3.25\\)",
+                "\\(3.3\\)",
+                "\\(3.5\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "The median is the middle value when the data is ordered from smallest to largest. First, we count how many data points we have.",
+                  "work": "Total number of data points \\(n = 20\\)."
+                },
+                {
+                  "explain": "Since 20 is an even number, there isn't a single middle number. Instead, the median is the average of the two middle numbers. The middle positions are \\(n \\div 2\\) and \\((n \\div 2) + 1\\).",
+                  "work": "Middle positions: \\(20 \\div 2 = 10\\)\nSo we need the 10th and 11th values."
+                },
+                {
+                  "explain": "Using the ordered stem-and-leaf plot from part a), count the leaves until you reach the 10th and 11th values.",
+                  "work": "Stem 2 has 6 values.\nSo we need the 4th and 5th values in Stem 3.\nStem 3 leaves: 0, 1, 1, **2 (4th)**, **3 (5th)**...\n10th value = \\(3.2\\)\n11th value = \\(3.3\\)"
+                },
+                {
+                  "explain": "Calculate the average of these two middle values.",
+                  "work": "\\(\\text{Median} = \\frac{3.2 + 3.3}{2}\\)\n\\(\\text{Median} = \\frac{6.5}{2} = 3.25\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-19a-q10c",
+              "type": "mc",
+              "stem": "c) Find the mean birth weight.",
+              "options": [
+                "\\(3.35\\)",
+                "\\(3.25\\)",
+                "\\(3.30\\)",
+                "\\(3.305\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "The mean (average) is calculated by adding all the values together and dividing by the total number of values.",
+                  "work": "\\(\\text{Mean} = \\frac{\\text{Sum of all values}}{\\text{Total count}}\\)"
+                },
+                {
+                  "explain": "First, let's calculate the sum of all 20 values. It's easier to sum them by their stems or rows.",
+                  "work": "Sum of 2.x values: \\(2.5+2.6+2.7+2.8+2.9+2.9 = 16.4\\)\nSum of 3.x values: \\(3.0+3.1+3.1+3.2+3.3+3.3+3.7+3.7+3.7+3.7+3.8+3.8 = 41.4\\)\nSum of 4.x values: \\(4.0+4.3 = 8.3\\)"
+                },
+                {
+                  "explain": "Add those group sums together to get the total sum.",
+                  "work": "\\text{Total sum} = 16.4 + 41.4 + 8.3 = 66.1"
+                },
+                {
+                  "explain": "Divide the total sum by the number of data points (20).",
+                  "work": "\\(\\text{Mean} = \\frac{66.1}{20}\\)\n\\(\\text{Mean} = 3.305\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "Create the stem-and-leaf plot using the integer parts as stems. Sort the weights to find the median, and divide the sum by 20 to compute the mean."
+        }
+      ]
+    }
+  ]
+}

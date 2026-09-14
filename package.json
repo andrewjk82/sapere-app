@@ -29,7 +29,11 @@
     "test:secret-note": "npm run test:secret-note-bonus && npm run test:secret-note-gradability",
     "test:teacher-review-subs": "node --import ./scripts/extResolve.mjs scripts/testTeacherReviewSubQuestions.mjs",
     "audit:sub-mc-ambiguity": "node --import ./scripts/extResolve.mjs scripts/auditSubMcAmbiguity.mjs",
-    "test:chapter-seeder-sub-ismanual": "node --import ./scripts/extResolve.mjs scripts/testChapterSeederSubIsManual.mjs"
+    "test:chapter-seeder-sub-ismanual": "node --import ./scripts/extResolve.mjs scripts/testChapterSeederSubIsManual.mjs",
+    "content:normalize": "node --no-warnings --import ./scripts/extResolve.mjs tools/content/normalize.mjs",
+    "content:validate": "node --no-warnings --import ./scripts/extResolve.mjs tools/content/validate.mjs",
+    "content:validate:report": "npm run content:validate -- --report",
+    "content:drift": "node --no-warnings --import ./scripts/extResolve.mjs tools/content/drift.mjs"
   },
   "dependencies": {
     "@babel/generator": "^7.27.0",

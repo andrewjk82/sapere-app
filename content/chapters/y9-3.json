@@ -1,0 +1,4277 @@
+{
+  "chapterId": "y9-3",
+  "title": "Chapter 3: Consumer arithmetic",
+  "year": "2022",
+  "topics": [
+    {
+      "topicId": "y9-3a",
+      "code": "3A",
+      "title": "Review of percentages",
+      "questions": [
+        {
+          "id": "y9-3a-1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: 68%",
+          "options": [
+            "0.68",
+            "0.34",
+            "1.36",
+            "1.93"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 68\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{68}{100} = 0.68\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: 8.4%",
+          "options": [
+            "0.084",
+            "0.168",
+            "0.042",
+            "1.334"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 8.4\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{8.4}{100} = 0.084\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: 95%",
+          "options": [
+            "0.475",
+            "0.95",
+            "1.9",
+            "2.2"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 95\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{95}{100} = 0.95\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: 24%",
+          "options": [
+            "0.12",
+            "0.48",
+            "1.49",
+            "0.24"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 24\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{24}{100} = 0.24\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: 6%",
+          "options": [
+            "0.12",
+            "0.06",
+            "0.03",
+            "1.31"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 6\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{6}{100} = 0.06\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: 4.75%",
+          "options": [
+            "0.0475",
+            "0.095",
+            "0.0238",
+            "1.2975"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 4.75\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{4.75}{100} = 0.0475\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-1g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: 185%",
+          "options": [
+            "1.85",
+            "3.7",
+            "0.925",
+            "3.1"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 185\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{185}{100} = 1.85\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-1h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: 0.4%",
+          "options": [
+            "0.004",
+            "0.008",
+            "0.002",
+            "1.254"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 0.4\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{0.4}{100} = 0.004\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-1i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: 82\\frac{1}{4}%",
+          "options": [
+            "0.4113",
+            "0.8225",
+            "1.645",
+            "2.0725"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 68\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{68}{100} = 0.8225\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-1j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: 0.2%",
+          "options": [
+            "1.252",
+            "0.001",
+            "0.004",
+            "0.002"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 0.2\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{0.2}{100} = 0.002\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-1k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: 153.8%",
+          "options": [
+            "1.538",
+            "3.076",
+            "0.769",
+            "2.788"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 153.8\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{153.8}{100} = 1.538\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-1l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a decimal: \\frac{3}{4}%",
+          "options": [
+            "0.0037",
+            "0.015",
+            "0.0075",
+            "1.2575"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 68\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{68}{100} = 0.0075\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 45%",
+          "options": [
+            "\\frac{9}{20}",
+            "\\\\(\\frac{9}{25}\\\\)",
+            "\\\\(\\frac{11}{20}\\\\)",
+            "\\\\(\\frac{18}{20}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(45\\% = \\frac{45}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{45}{100} = \\frac{9}{20}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 64%",
+          "options": [
+            "\\frac{16}{25}",
+            "\\\\(\\frac{18}{25}\\\\)",
+            "\\\\(\\frac{16}{30}\\\\)",
+            "\\\\(\\frac{32}{25}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(64\\% = \\frac{64}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{64}{100} = \\frac{16}{25}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 85%",
+          "options": [
+            "\\frac{17}{20}",
+            "\\\\(\\frac{19}{20}\\\\)",
+            "\\\\(\\frac{17}{25}\\\\)",
+            "\\\\(\\frac{34}{20}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(85\\% = \\frac{85}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{85}{100} = \\frac{17}{20}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 37\\frac{1}{2}%",
+          "options": [
+            "\\\\(\\frac{6}{8}\\\\)",
+            "\\frac{3}{8}",
+            "\\\\(\\frac{3}{13}\\\\)",
+            "\\\\(\\frac{5}{8}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(68\\% = \\frac{68}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{68}{100} = \\frac{3}{8}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 33\\frac{1}{3}%",
+          "options": [
+            "\\\\(\\frac{3}{3}\\\\)",
+            "\\\\(\\frac{1}{8}\\\\)",
+            "\\\\(\\frac{2}{3}\\\\)",
+            "\\frac{1}{3}"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(68\\% = \\frac{68}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{68}{100} = \\frac{1}{3}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 16\\frac{2}{3}%",
+          "options": [
+            "\\\\(\\frac{2}{6}\\\\)",
+            "\\frac{1}{6}",
+            "\\\\(\\frac{3}{6}\\\\)",
+            "\\\\(\\frac{1}{11}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(68\\% = \\frac{68}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{68}{100} = \\frac{1}{6}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 8.25%",
+          "options": [
+            "\\frac{33}{400}",
+            "\\\\(\\frac{35}{400}\\\\)",
+            "\\\\(\\frac{66}{400}\\\\)",
+            "\\\\(\\frac{33}{405}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(8.25\\% = \\frac{8.25}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{8.25}{100} = \\frac{33}{400}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 5.6%",
+          "options": [
+            "\\\\(\\frac{14}{125}\\\\)",
+            "\\\\(\\frac{9}{125}\\\\)",
+            "\\\\(\\frac{7}{130}\\\\)",
+            "\\frac{7}{125}"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(5.6\\% = \\frac{5.6}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{5.6}{100} = \\frac{7}{125}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 240%",
+          "options": [
+            "\\\\(\\frac{14}{5}\\\\)",
+            "\\frac{12}{5}",
+            "\\\\(\\frac{12}{10}\\\\)",
+            "\\\\(\\frac{24}{5}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(240\\% = \\frac{240}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{240}{100} = \\frac{12}{5}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 175%",
+          "options": [
+            "\\frac{7}{4}",
+            "\\\\(\\frac{9}{4}\\\\)",
+            "\\\\(\\frac{14}{4}\\\\)",
+            "\\\\(\\frac{7}{9}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(175\\% = \\frac{175}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{175}{100} = \\frac{7}{4}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 112\\frac{1}{2}%",
+          "options": [
+            "\\\\(\\frac{9}{13}\\\\)",
+            "\\frac{9}{8}",
+            "\\\\(\\frac{18}{8}\\\\)",
+            "\\\\(\\frac{11}{8}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(68\\% = \\frac{68}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{68}{100} = \\frac{9}{8}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-2l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the percentage as a fraction in lowest terms: 144%",
+          "options": [
+            "\\frac{36}{25}",
+            "\\\\(\\frac{38}{25}\\\\)",
+            "\\\\(\\frac{36}{30}\\\\)",
+            "\\\\(\\frac{72}{25}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(144\\% = \\frac{144}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{144}{100} = \\frac{36}{25}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): \\frac{4}{5}",
+          "options": [
+            "64.0%",
+            "96.0%",
+            "80%",
+            "85.5%"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 80 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{80}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 80%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): \\frac{5}{8}",
+          "options": [
+            "50.0%",
+            "62.5%",
+            "75.0%",
+            "68.0%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 62.5 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{62.5}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 62.5%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): \\frac{7}{16}",
+          "options": [
+            "43.75%",
+            "52.5%",
+            "49.3%",
+            "35.0%"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 43.75 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{43.75}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 43.75%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): 3\\frac{1}{4}",
+          "options": [
+            "325%",
+            "260.0%",
+            "330.5%",
+            "390.0%"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 325 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{325}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 325%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): \\frac{9}{20}",
+          "options": [
+            "36.0%",
+            "50.5%",
+            "54.0%",
+            "45%"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 45 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{45}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 45%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): \\frac{1}{3}",
+          "options": [
+            "40.0%",
+            "33.33%",
+            "38.8%",
+            "26.7%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 33.33 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{33.33}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 33.33%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): \\frac{5}{3}",
+          "options": [
+            "133.3%",
+            "166.67%",
+            "172.2%",
+            "200.0%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 166.67 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{166.67}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 166.67%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): \\frac{7}{400}",
+          "options": [
+            "2.1%",
+            "1.75%",
+            "1.4%",
+            "7.3%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 1.75 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{1.75}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 1.75%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): 0.56",
+          "options": [
+            "67.2%",
+            "56%",
+            "61.5%",
+            "44.8%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 56 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{56}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 56%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): 0.345",
+          "options": [
+            "27.6%",
+            "41.4%",
+            "34.5%",
+            "40.0%"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 34.5 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{34.5}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 34.5%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): 0.08",
+          "options": [
+            "8%",
+            "13.5%",
+            "9.6%",
+            "6.4%"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 8 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{8}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 8%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): 0.025",
+          "options": [
+            "2.5%",
+            "3.0%",
+            "2.0%",
+            "8.0%"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 2.5 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{2.5}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 2.5%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3m",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): 1.4",
+          "options": [
+            "145.5%",
+            "140%",
+            "168.0%",
+            "112.0%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 140 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{140}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 140%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3n",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): 3.05",
+          "options": [
+            "305%",
+            "310.5%",
+            "366.0%",
+            "244.0%"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 305 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{305}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 305%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3o",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): 1.285",
+          "options": [
+            "134.0%",
+            "154.2%",
+            "128.5%",
+            "102.8%"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 128.5 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{128.5}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 128.5%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-3p",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction or decimal as a percentage (round to 2 decimal places if necessary): 0.0045",
+          "options": [
+            "6.0%",
+            "0.4%",
+            "0.45%",
+            "0.5%"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 0.45 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{0.45}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 0.45%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert 48% to a Fraction. (If fraction, give in simplest form)",
+          "options": [
+            "\\\\(\\frac{12}{30}\\\\)",
+            "\\\\(\\frac{14}{25}\\\\)",
+            "\\frac{12}{25}",
+            "\\\\(\\frac{24}{25}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(48\\% = \\frac{48}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{48}{100} = \\frac{12}{25}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert 48% to a Decimal. (If fraction, give in simplest form)",
+          "options": [
+            "1.73",
+            "0.96",
+            "0.48",
+            "0.24"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(48\\% = \\frac{48}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{48}{100} = 0.48\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\frac{3}{5} to a Percentage. (If fraction, give in simplest form)",
+          "options": [
+            "48.0%",
+            "65.5%",
+            "72.0%",
+            "60%"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 60%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\frac{3}{5} to a Decimal. (If fraction, give in simplest form)",
+          "options": [
+            "0.6",
+            "1.2",
+            "0.3",
+            "1.85"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 0.6\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-4e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert 0.24 to a Percentage. (If fraction, give in simplest form)",
+          "options": [
+            "24%",
+            "28.8%",
+            "19.2%",
+            "29.5%"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 24%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-4f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert 0.24 to a Fraction. (If fraction, give in simplest form)",
+          "options": [
+            "\\\\(\\frac{6}{30}\\\\)",
+            "\\\\(\\frac{8}{25}\\\\)",
+            "\\frac{6}{25}",
+            "\\\\(\\frac{12}{25}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } \\frac{6}{25}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-4g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert 22.5% to a Fraction. (If fraction, give in simplest form)",
+          "options": [
+            "\\frac{9}{40}",
+            "\\\\(\\frac{11}{40}\\\\)",
+            "\\\\(\\frac{9}{45}\\\\)",
+            "\\\\(\\frac{18}{40}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(22.5\\% = \\frac{22.5}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{22.5}{100} = \\frac{9}{40}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-4h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert 22.5% to a Decimal. (If fraction, give in simplest form)",
+          "options": [
+            "1.475",
+            "0.1125",
+            "0.45",
+            "0.225"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Express the percentage as a fraction by writing it over a denominator of 100.",
+              "work": "\\\\(22.5\\% = \\frac{22.5}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by their greatest common divisor.",
+              "work": "\\\\(\\frac{22.5}{100} = 0.225\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-4i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert 0.08 to a Percentage. (If fraction, give in simplest form)",
+          "options": [
+            "8%",
+            "13.5%",
+            "9.6%",
+            "6.4%"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 8%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 18% of 50, correct to 2 decimal places where necessary.",
+          "options": [
+            "10.25",
+            "9",
+            "18",
+            "4.5"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 18\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{18}{100} = 9\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 62% of 2000, correct to 2 decimal places where necessary.",
+          "options": [
+            "1241.25",
+            "620",
+            "2480",
+            "1240"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 62\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{62}{100} = 1240\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 34% of 182, correct to 2 decimal places where necessary.",
+          "options": [
+            "61.88",
+            "123.76",
+            "30.94",
+            "63.13"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 34\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{34}{100} = 61.88\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 140% of 625, correct to 2 decimal places where necessary.",
+          "options": [
+            "1750",
+            "437.5",
+            "876.25",
+            "875"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 140\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{140}{100} = 875\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-5e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 18.5% of 840, correct to 2 decimal places where necessary.",
+          "options": [
+            "77.7",
+            "310.8",
+            "155.4",
+            "156.65"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 18.5\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{18.5}{100} = 155.4\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-5f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 125.4% of 550, correct to 2 decimal places where necessary.",
+          "options": [
+            "689.7",
+            "1379.4",
+            "344.85",
+            "690.95"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 125.4\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{125.4}{100} = 689.7\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-5g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 3.5% of 420, correct to 2 decimal places where necessary.",
+          "options": [
+            "15.95",
+            "29.4",
+            "7.35",
+            "14.7"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 3.5\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{3.5}{100} = 14.7\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-5h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 0.2% of 8000, correct to 2 decimal places where necessary.",
+          "options": [
+            "16",
+            "8",
+            "32",
+            "17.25"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 0.2\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{0.2}{100} = 16\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-5i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 180% of 735, correct to 2 decimal places where necessary.",
+          "options": [
+            "2646",
+            "1324.25",
+            "661.5",
+            "1323"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the percentage value to be converted into a decimal.",
+              "work": "\\\\(\\text{Percentage} = 180\\%\\\\)"
+            },
+            {
+              "explain": "Divide the percentage by 100 to shift the decimal place two units to the left.",
+              "work": "\\\\(\\frac{180}{100} = 1323\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 58% of 20, correct to the nearest cent where necessary. (Include  sign)",
+          "options": [
+            "12.85",
+            "5.8",
+            "23.2",
+            "11.60"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 11.60\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 28.4% of 850, correct to the nearest cent where necessary. (Include  sign)",
+          "options": [
+            "241.40",
+            "242.65",
+            "120.7",
+            "482.8"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 241.40\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 4.5% of 2200, correct to the nearest cent where necessary. (Include  sign)",
+          "options": [
+            "99.00",
+            "198",
+            "49.5",
+            "100.25"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 99.00\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-6d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 120% of 1450, correct to the nearest cent where necessary. (Include  sign)",
+          "options": [
+            "870",
+            "1741.25",
+            "3480",
+            "1740.00"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 1740.00\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-6e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 0.35% of 600, correct to the nearest cent where necessary. (Include  sign)",
+          "options": [
+            "3.35",
+            "1.05",
+            "4.2",
+            "2.10"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 2.10\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-6f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 5\\frac{1}{2}% of 400, correct to the nearest cent where necessary. (Include  sign)",
+          "options": [
+            "23.25",
+            "11",
+            "44",
+            "22.00"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 22.00\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-6g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 8\\frac{1}{4}% of 1200, correct to the nearest cent where necessary. (Include  sign)",
+          "options": [
+            "100.25",
+            "49.5",
+            "198",
+            "99.00"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 99.00\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-6h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\frac{1}{5}% of 950, correct to the nearest cent where necessary. (Include  sign)",
+          "options": [
+            "3.8",
+            "1.90",
+            "0.95",
+            "3.15"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 1.90\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-6i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate 8.75% of 1800, correct to the nearest cent where necessary. (Include  sign)",
+          "options": [
+            "157.50",
+            "315",
+            "158.75",
+            "78.75"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 157.50\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 1 decimal place: 9 km, 40 km",
+          "options": [
+            "27.0%",
+            "28.0%",
+            "18.0%",
+            "22.5%"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 22.5 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{22.5}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 22.5%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 1 decimal place: 6, 300",
+          "options": [
+            "7.5%",
+            "2.0%",
+            "2.4%",
+            "1.6%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 2.0 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{2.0}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 2.0%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 1 decimal place: 21 kg, 600 kg",
+          "options": [
+            "9.0%",
+            "2.8%",
+            "4.2%",
+            "3.5%"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 3.5 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{3.5}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 3.5%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 1 decimal place: 80 m, 40 m",
+          "options": [
+            "200.0%",
+            "160.0%",
+            "240.0%",
+            "205.5%"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 200.0 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{200.0}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 200.0%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-7e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 1 decimal place: 20 weeks, 80 weeks",
+          "options": [
+            "30.0%",
+            "25.0%",
+            "30.5%",
+            "20.0%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 25.0 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{25.0}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 25.0%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-7f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 1 decimal place: 80 weeks, 20 weeks",
+          "options": [
+            "480.0%",
+            "405.5%",
+            "320.0%",
+            "400.0%"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 400.0 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{400.0}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 400.0%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 85 cents, 4.00",
+          "options": [
+            "17.0%",
+            "21.25%",
+            "25.5%",
+            "26.8%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 21.25 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{21.25}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 21.25%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 4.5 cm, 3 m",
+          "options": [
+            "1.50%",
+            "1.8%",
+            "1.2%",
+            "7.0%"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 1.50 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{1.50}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 1.50%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 8 g, 4 kg",
+          "options": [
+            "0.23%",
+            "0.12%",
+            "5.7%",
+            "0.2%"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 0.20 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{0.20}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 0.20%\\\\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y9-3a-8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 12 hours, 3 weeks",
+          "options": [
+            "2.9%",
+            "7.9%",
+            "2.38%",
+            "1.9%"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 2.38 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{2.38}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 2.38%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-8e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 20 days, 2 years",
+          "options": [
+            "2.74%",
+            "3.3%",
+            "8.2%",
+            "2.2%"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 2.74 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{2.74}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 2.74%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-8f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 350 m, 5 km",
+          "options": [
+            "8.4%",
+            "5.6%",
+            "7.00%",
+            "12.5%"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 7.00 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{7.00}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 7.00%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-8g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 5 km, 400 m",
+          "options": [
+            "1000.0%",
+            "1500.0%",
+            "1255.5%",
+            "1250.00%"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 1250.00 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{1250.00}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 1250.00%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-8h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 2 days, 1 year",
+          "options": [
+            "6.0%",
+            "0.4%",
+            "0.7%",
+            "0.55%"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 0.55 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{0.55}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 0.55%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-8i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 1 year, 2 days",
+          "options": [
+            "18255.5%",
+            "18250.00%",
+            "21900.0%",
+            "14600.0%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 18250.00 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{18250.00}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 18250.00%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-8j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 42 weeks, 1 century",
+          "options": [
+            "1.0%",
+            "0.81%",
+            "6.3%",
+            "0.6%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 0.81 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{0.81}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 0.81%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-8k",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 65 cm, 3.2 km",
+          "options": [
+            "0.0%",
+            "5.5%",
+            "0.02%",
+            "0.02%1"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 0.02 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{0.02}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 0.02%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-8l",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 2 decimal places. You will need to express both quantities in the same unit first: 8 apples, 15 dozen apples",
+          "options": [
+            "4.44%",
+            "5.3%",
+            "3.6%",
+            "9.9%"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 4.44 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{4.44}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 4.44%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 4 decimal places where necessary: 55 mm, 2 km",
+          "options": [
+            "5.5%",
+            "0.012%",
+            "0.04%",
+            "0.0028%"
+          ],
+          "answer": 3,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 0.0028 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{0.0028}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 0.0028%\\\\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y9-3a-9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 4 decimal places where necessary: 2.5 hours, 4 years",
+          "options": [
+            "5.5%",
+            "0.05%",
+            "0.0071%",
+            "0.0009%"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 0.0071 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{0.0071}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 0.0071%\\\\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y9-3a-9c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 4 decimal places where necessary: 9.2 g, 80 kg",
+          "options": [
+            "0.02111%",
+            "5.5%",
+            "0.0115%",
+            "0.0789%"
+          ],
+          "answer": 2,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 0.0115 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{0.0115}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 0.0115%\\\\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y9-3a-9d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find what percentage the first quantity is of the second quantity, correct to 4 decimal places where necessary: 4.8 cents, 2500",
+          "options": [
+            "0.0556%",
+            "0.0019%",
+            "5.5%",
+            "0.00007%"
+          ],
+          "answer": 1,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the given decimal or fraction value to be converted.",
+              "work": "\\\\(\\text{Value} = 0.0019 \\div 100\\\\)"
+            },
+            {
+              "explain": "Multiply the value by 100 to find the equivalent percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{0.0019}{100} \\times 100\\\\)"
+            },
+            {
+              "explain": "Append the percentage symbol to complete the conversion.",
+              "work": "\\\\(= 0.0019%\\\\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y9-3a-10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "There are 860 students at a primary school, 4% of whom have red hair. Calculate the number of students in the school who have red hair.",
+          "options": [
+            "34",
+            "68",
+            "35.25",
+            "17"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "We first write down the total number of students in the school and the percentage that have red hair.",
+              "work": "\\\\(\\text{Total} = 860, \\quad \\text{Percentage} = 4\\%\\\\)"
+            },
+            {
+              "explain": "Convert the percentage to a decimal factor by dividing it by 100.",
+              "work": "\\\\(4\\% = \\frac{4}{100} = 0.04\\\\)"
+            },
+            {
+              "explain": "Multiply this decimal factor by the total number of students to find the count of red-haired students.",
+              "work": "\\\\(0.04 \\times 860 = 34.4\\\\)"
+            },
+            {
+              "explain": "Since the number of students must be a whole number, we round the result to the nearest integer.",
+              "work": "\\\\(34.4 \\approx 34\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-11a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A sample of a certain alloy weighs 2.4 g. If aluminium makes up 45% of the alloy, what is the weight of the aluminium in the sample (in g)?",
+          "options": [
+            "1.08",
+            "1.80",
+            "0.96",
+            "1.24"
+          ],
+          "answer": 0,
+          "hint": "Find 45% of 2.4 g by converting the percentage to a decimal and multiplying.",
+          "steps": [
+            {
+              "explain": "We identify the total weight of the alloy sample and the percentage of aluminium. We need to find the weight corresponding to this percentage.",
+              "work": "\\\\(\\text{Total weight} = 2.4\\text{ g}, \\quad \\text{Aluminium} = 45\\%\\\\)"
+            },
+            {
+              "explain": "To calculate a percentage of a quantity, we convert the percentage to a decimal value by dividing by 100.",
+              "work": "\\\\(45\\% = \\frac{45}{100} = 0.45\\\\)"
+            },
+            {
+              "explain": "Now, multiply this decimal factor by the total weight of the alloy to determine the corresponding weight of aluminium.",
+              "work": "\\\\(0.45 \\times 2.4 = 1.08\\\\)"
+            },
+            {
+              "explain": "The final result represents the exact weight of aluminium in grams.",
+              "work": "\\\\(\\text{Weight of aluminium} = 1.08\\text{ g}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A sample of a certain alloy weighs 2.4 g. If the percentage of lead in the alloy is 0.35%, what is the weight of the lead in the sample (in g)?",
+          "options": [
+            "0.00084",
+            "0.035",
+            "0.084",
+            "0.0084"
+          ],
+          "answer": 3,
+          "hint": "Convert 0.35% to a decimal by dividing by 100, then multiply by 2.4.",
+          "steps": [
+            {
+              "explain": "We begin by identifying the total weight of the sample and the proportion of lead present in it.",
+              "work": "\\\\(\\text{Total weight} = 2.4\\text{ g}, \\quad \\text{Lead} = 0.35\\%\\\\)"
+            },
+            {
+              "explain": "Convert the small percentage of 0.35% into a decimal factor by dividing it by 100.",
+              "work": "\\\\(0.35\\% = \\frac{0.35}{100} = 0.0035\\\\)"
+            },
+            {
+              "explain": "Multiply the decimal representation by the total weight to find the lead's weight.",
+              "work": "\\\\(0.0035 \\times 2.4 = 0.0084\\\\)"
+            },
+            {
+              "explain": "The result represents the lead weight inside the alloy in grams.",
+              "work": "\\\\(\\text{Weight of lead} = 0.0084\\text{ g}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A soccer match lasted 95 minutes (including injury time). If team A was in possession for 58% of the match, for how many minutes and seconds was team A in possession? (Format as 'X minutes Y seconds')",
+          "options": [
+            "55 minutes 6 seconds",
+            "56.25",
+            "27.5",
+            "110"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the total duration of the soccer match and the percentage of possession Team A had.",
+              "work": "\\\\(\\text{Total time} = 95 \\text{ min}, \\quad \\text{Possession} = 58\\%\\\\)"
+            },
+            {
+              "explain": "Convert the possession percentage into a decimal factor.",
+              "work": "\\\\(58\\% = 0.58\\\\)"
+            },
+            {
+              "explain": "Calculate the total possession time in minutes by multiplying the total match duration by the decimal factor.",
+              "work": "\\\\(0.58 \\times 95 = 55.1 \\text{ minutes}\\\\)"
+            },
+            {
+              "explain": "Convert the fractional part of the minutes (0.1 minutes) into seconds by multiplying by 60.",
+              "work": "\\\\(0.1 \\times 60 = 6 \\text{ seconds}\\\\)"
+            },
+            {
+              "explain": "Combine the integer minutes and the calculated seconds to write the final answer.",
+              "work": "\\\\(55 \\text{ minutes } 6 \\text{ seconds}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-13a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A football club with 15,000 members underwent a membership drive, and the membership increased by 15%. What was the increase in membership?",
+          "options": [
+            "2,250",
+            "1,500",
+            "2,500",
+            "3,000"
+          ],
+          "answer": 0,
+          "hint": "Find 15% of 15,000.",
+          "steps": [
+            {
+              "explain": "Identify the initial number of members and the rate of membership growth.",
+              "work": "\\\\(\\text{Original members} = 15,000, \\quad \\text{Growth rate} = 15\\%\\\\)"
+            },
+            {
+              "explain": "Convert the growth percentage to a decimal value to act as a multiplier.",
+              "work": "\\\\(15\\% = \\frac{15}{100} = 0.15\\\\)"
+            },
+            {
+              "explain": "Multiply the multiplier by the original member count to find the net growth.",
+              "work": "\\\\(0.15 \\times 15,000 = 2,250\\\\)"
+            },
+            {
+              "explain": "The result is the number of new members added during the drive.",
+              "work": "\\\\(\\text{Increase} = 2,250\\text{ members}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-13b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A football club with 15,000 members undertook a membership drive, and the membership increased by 15%. What was the new membership total?",
+          "options": [
+            "17,250",
+            "18,250",
+            "16,500",
+            "17,500"
+          ],
+          "answer": 0,
+          "hint": "Add the increase of 2,250 to the original member count of 15,000.",
+          "steps": [
+            {
+              "explain": "Note the original member count and the increase we calculated in the previous part.",
+              "work": "\\\\(\\text{Original} = 15,000, \\quad \\text{Increase} = 2,250\\\\)"
+            },
+            {
+              "explain": "Add the increase to the original membership count to find the new total.",
+              "work": "\\\\(\\text{New total} = 15,000 + 2,250 = 17,250\\\\)"
+            },
+            {
+              "explain": "Conclude with the updated size of the football club membership.",
+              "work": "\\\\(\\text{New membership} = 17,250\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-14",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Carbon dioxide makes up 0.062% of the mass of the Earth's atmosphere. The total mass of the atmosphere is about 5.2 million megatonnes. What is the total mass of the carbon dioxide in the atmosphere in million megatonnes?",
+          "options": [
+            "0.003224",
+            "0.0064",
+            "0.0016",
+            "1.2532"
+          ],
+          "answer": 0,
+          "hint": "Convert between percentages, fractions, and decimals.",
+          "steps": [
+            {
+              "explain": "Identify the mathematical operation and the input values to calculate.",
+              "work": "\\\\(\\text{Target calculation: } 0.003224\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-15ai",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A tomato paste bottle serving of 30 g contains 4.2 g of carbohydrate. What percentage of the tomato paste is carbohydrate?",
+          "options": [
+            "15%",
+            "16%",
+            "12%",
+            "14%"
+          ],
+          "answer": 3,
+          "hint": "Find the fraction 4.2 out of 30, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "State the mass of the carbohydrate and the total serving mass to write a fraction representing the ratio.",
+              "work": "\\\\(\\text{Carbohydrate} = 4.2\\text{ g}, \\quad \\text{Total} = 30\\text{ g}\\\\)"
+            },
+            {
+              "explain": "Express this ratio as a fraction and multiply by 100 to convert to a percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{4.2}{30} \\times 100\\\\)"
+            },
+            {
+              "explain": "Simplify the calculation.",
+              "work": "\\\\(\\frac{4.2 \\times 100}{30} = \\frac{420}{30} = 14\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-15aii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A tomato paste bottle serving of 30 g contains 0.15 g of protein. What percentage of the tomato paste is protein?",
+          "options": [
+            "0.05%",
+            "0.5%",
+            "1.5%",
+            "0.15%"
+          ],
+          "answer": 1,
+          "hint": "Find the fraction 0.15 out of 30, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "Write the protein quantity relative to the total serving size.",
+              "work": "\\\\(\\text{Protein} = 0.15\\text{ g}, \\quad \\text{Serving} = 30\\text{ g}\\\\)"
+            },
+            {
+              "explain": "Multiply the fraction by 100 to find the percentage representation.",
+              "work": "\\\\(\\text{Percentage} = \\frac{0.15}{30} \\times 100\\\\)"
+            },
+            {
+              "explain": "Perform the multiplication and division.",
+              "work": "\\\\(\\frac{15}{30} = 0.5\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-15aiii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A tomato paste bottle serving of 30 g contains 0.12 g of fat. What percentage of the tomato paste is fat?",
+          "options": [
+            "0.04%",
+            "4%",
+            "0.4%",
+            "0.12%"
+          ],
+          "answer": 2,
+          "hint": "Divide 0.12 by 30, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "Form the fraction representing fat content in the serving.",
+              "work": "\\\\(\\text{Fraction} = \\frac{0.12}{30}\\\\)"
+            },
+            {
+              "explain": "Multiply the fraction by 100 to convert to a percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{0.12}{30} \\times 100\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction value.",
+              "work": "\\\\(\\frac{12}{30} = 0.4\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-15b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If a full tomato paste bottle contains 250 g, what is the weight of carbohydrate in the bottle (in g)?",
+          "options": [
+            "42 g",
+            "30 g",
+            "28 g",
+            "35 g"
+          ],
+          "answer": 3,
+          "hint": "Use the carbohydrate percentage of 14% and calculate 14% of 250 g.",
+          "steps": [
+            {
+              "explain": "Recall the percentage of carbohydrate in the tomato paste from the previous part.",
+              "work": "\\\\(\\text{Carbohydrate} = 14\\%\\\\)"
+            },
+            {
+              "explain": "Convert the percentage to a decimal value.",
+              "work": "\\\\(14\\% = 0.14\\\\)"
+            },
+            {
+              "explain": "Multiply the decimal by the total bottle mass to find the carbohydrate weight.",
+              "work": "\\\\(0.14 \\times 250 = 35\\\\)"
+            },
+            {
+              "explain": "State the final answer in grams.",
+              "work": "\\\\(\\text{Weight} = 35\\text{ g}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-16a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Mt Kosciusko has a height of 2228 m, while Mt Everest has a height of 8848 m. Express the height of Mt Kosciusko as a percentage of the height of Mt Everest (to 1 d.p.).",
+          "options": [
+            "24.9%",
+            "25.2%",
+            "22.8%",
+            "25.1%"
+          ],
+          "answer": 1,
+          "hint": "Divide 2228 by 8848, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "Express Mt Kosciusko's height as a fraction of Mt Everest's height.",
+              "work": "\\\\(\\text{Ratio} = \\frac{2228}{8848}\\\\)"
+            },
+            {
+              "explain": "Convert this ratio to a percentage by multiplying by 100.",
+              "work": "\\\\(\\text{Percentage} = \\frac{2228}{8848} \\times 100 \\approx 25.1808\\%\\\\)"
+            },
+            {
+              "explain": "Round the resulting value to 1 decimal place.",
+              "work": "\\\\(25.1808\\% \\approx 25.2\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-16b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Express the height of Mt Everest (8848 m) as a percentage of the height of Mt Kosciusko (2228 m) (to the nearest integer).",
+          "options": [
+            "397%",
+            "400%",
+            "390%",
+            "398%"
+          ],
+          "answer": 0,
+          "hint": "Divide 8848 by 2228, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "Express Everest's height as a fraction of Kosciusko's height.",
+              "work": "\\\\(\\text{Ratio} = \\frac{8848}{2228}\\\\)"
+            },
+            {
+              "explain": "Convert this fraction to a percentage by multiplying by 100.",
+              "work": "\\\\(\\text{Percentage} = \\frac{8848}{2228} \\times 100 \\approx 397.127\\%\\\\)"
+            },
+            {
+              "explain": "Round the final value to the nearest integer.",
+              "work": "\\\\(397.127\\% \\approx 397\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-17a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the House of Representatives, there are 150 members, of whom 41 are women. What percentage of the House are women (to 1 d.p.)?",
+          "options": [
+            "27.3%",
+            "26.8%",
+            "28.1%",
+            "27.0%"
+          ],
+          "answer": 0,
+          "hint": "Divide 41 by 150, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "Form the fraction representing the ratio of women to the total representatives.",
+              "work": "\\\\(\\text{Fraction} = \\frac{41}{150}\\\\)"
+            },
+            {
+              "explain": "Convert the fraction to a percentage by multiplying by 100.",
+              "work": "\\\\(\\text{Percentage} = \\frac{41}{150} \\times 100 = 27.333...\\%\\\\)"
+            },
+            {
+              "explain": "Round the percentage to 1 decimal place.",
+              "work": "\\\\(27.333...\\% \\approx 27.3\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-17b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the Senate, there are 76 senators, of whom 23 are women. What percentage of the Senate are women (to 1 d.p.)?",
+          "options": [
+            "31.2%",
+            "29.8%",
+            "30.0%",
+            "30.3%"
+          ],
+          "answer": 3,
+          "hint": "Divide 23 by 76, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "Form the fraction representing the ratio of women to the total senators.",
+              "work": "\\\\(\\text{Fraction} = \\frac{23}{76}\\\\)"
+            },
+            {
+              "explain": "Convert the fraction to a percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{23}{76} \\times 100 \\approx 30.263\\%\\\\)"
+            },
+            {
+              "explain": "Round to 1 decimal place.",
+              "work": "\\\\(30.263\\% \\approx 30.3\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-18a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The distance by air from City A to City B is 3500 km, and from City A to City C is 6200 km. Express the distance AB as a percentage of the distance AC (to the nearest integer).",
+          "options": [
+            "55%",
+            "57%",
+            "56%",
+            "58%"
+          ],
+          "answer": 2,
+          "hint": "Divide 3500 by 6200, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "Form the ratio of the distance AB to AC.",
+              "work": "\\\\(\\text{Ratio} = \\frac{3500}{6200}\\\\)"
+            },
+            {
+              "explain": "Multiply by 100 to convert to percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{3500}{6200} \\times 100 \\approx 56.45\\%\\\\)"
+            },
+            {
+              "explain": "Round the result to the nearest integer.",
+              "work": "\\\\(56.45\\% \\approx 56\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3a-18b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The distance by air from City A to City B is 3500 km, and from City A to City C is 6200 km. Express the distance AC as a percentage of the distance AB (to the nearest integer).",
+          "options": [
+            "180%",
+            "178%",
+            "176%",
+            "177%"
+          ],
+          "answer": 3,
+          "hint": "Divide 6200 by 3500, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "Form the ratio of the distance AC to AB.",
+              "work": "\\\\(\\text{Ratio} = \\frac{6200}{3500}\\\\)"
+            },
+            {
+              "explain": "Multiply by 100 to convert to a percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{6200}{3500} \\times 100 \\approx 177.14\\%\\\\)"
+            },
+            {
+              "explain": "Round the value to the nearest integer.",
+              "work": "\\\\(177.14\\% \\approx 177\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q1",
+          "type": "mc",
+          "stem": "A real estate agent is paid a commission of 3% on the first <span>&#36;</span>180,000 of the value of the property and 2% on the remaining value. Find the total commission on the sale of a <span>&#36;</span>563,000 house.",
+          "options": [
+            "\\(\\\\$13,060\\)",
+            "\\(\\\\$16,890\\)",
+            "\\(\\\\$11,260\\)",
+            "\\(\\\\$15,700\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate 3% of the first 180,000, then find the remaining value and calculate 2% of that.",
+          "steps": [
+            {
+              "explain": "Calculate the commission on the first \\(\\\\$180,000\\).",
+              "work": "\\(3\\% \\times \\\\$180,000 = 0.03 \\times 180,000 = \\\\$5,400\\)"
+            },
+            {
+              "explain": "Calculate the remaining value of the property.",
+              "work": "\\(\\\\$563,000 - \\\\$180,000 = \\\\$383,000\\)"
+            },
+            {
+              "explain": "Calculate the commission on the remaining value.",
+              "work": "\\(2\\% \\times \\\\$383,000 = 0.02 \\times 383,000 = \\\\$7,660\\)"
+            },
+            {
+              "explain": "Add the two commission amounts together.",
+              "work": "\\(\\\\$5,400 + \\\\$7,660 = \\\\$13,060\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q2",
+          "type": "mc",
+          "stem": "Calculate the total pay for a week in which a tradesperson works 38 hours at <span>&#36;</span>15.65/hour and an extra 2 hours at time and a half and 4 hours at double time.",
+          "options": [
+            "\\(\\\\$766.85\\)",
+            "\\(\\\\$688.60\\)",
+            "\\(\\\\$719.90\\)",
+            "\\(\\\\$813.80\\)"
+          ],
+          "answer": 0,
+          "hint": "Time and a half means 1.5 times the normal rate. Double time means 2 times the normal rate.",
+          "steps": [
+            {
+              "explain": "Calculate the pay for the normal hours.",
+              "work": "\\(38 \\times \\\\$15.65 = \\\\$594.70\\)"
+            },
+            {
+              "explain": "Calculate the pay for time and a half hours.",
+              "work": "\\(2 \\times 1.5 \\times \\\\$15.65 = 3 \\times \\\\$15.65 = \\\\$46.95\\)"
+            },
+            {
+              "explain": "Calculate the pay for double time hours.",
+              "work": "\\(4 \\times 2 \\times \\\\$15.65 = 8 \\times \\\\$15.65 = \\\\$125.20\\)"
+            },
+            {
+              "explain": "Add all the amounts to find the total pay.",
+              "work": "\\(\\\\$594.70 + \\\\$46.95 + \\\\$125.20 = \\\\$766.85\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q3",
+          "type": "mc",
+          "stem": "Calculate the normal hourly rate of pay for an employee who was paid <span>&#36;</span>1029 for working 32 hours at the normal rate and 5 hours at double time.",
+          "options": [
+            "\\(\\\\$24.50\\)",
+            "\\(\\\\$27.81\\)",
+            "\\(\\\\$29.40\\)",
+            "\\(\\\\$32.16\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the total number of 'normal equivalent' hours worked first.",
+          "steps": [
+            {
+              "explain": "Calculate the total equivalent normal hours worked. Double time counts as twice the normal hours.",
+              "work": "\\(\\text{Total equivalent hours} = 32 + (5 \\times 2) = 32 + 10 = 42\\text{ hours}\\)"
+            },
+            {
+              "explain": "Divide the total pay by the total equivalent hours to find the normal hourly rate.",
+              "work": "\\(\\text{Hourly rate} = \\frac{\\\\$1029}{42} = \\\\$24.50\\text{/hour}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q4",
+          "type": "mc",
+          "stem": "Sally works 38 hours each week and is paid <span>&#36;</span>617.50/week. At Christmas, she takes her annual 4 weeks leave. If she receives 17.5% leave loading, calculate Sally's total holiday pay to the nearest dollar.",
+          "options": [
+            "\\(\\\\$2,902\\)",
+            "\\(\\\\$2,470\\)",
+            "\\(\\\\$3,334\\)",
+            "\\(\\\\$2,578\\)"
+          ],
+          "answer": 0,
+          "hint": "Holiday pay includes normal pay for 4 weeks PLUS the 17.5% leave loading on that pay.",
+          "steps": [
+            {
+              "explain": "Calculate Sally's normal pay for 4 weeks.",
+              "work": "\\(4 \\times \\\\$617.50 = \\\\$2,470\\)"
+            },
+            {
+              "explain": "Calculate the 17.5% leave loading on the 4 weeks' pay.",
+              "work": "\\(17.5\\% \\times \\\\$2,470 = 0.175 \\times 2,470 = \\\\$432.25\\)"
+            },
+            {
+              "explain": "Add the leave loading to the normal 4 weeks' pay to find total holiday pay.",
+              "work": "\\(\\\\$2,470 + \\\\$432.25 = \\\\$2,902.25\\)"
+            },
+            {
+              "explain": "Round to the nearest dollar.",
+              "work": "\\(\\\\$2,902\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q5",
+          "type": "mc",
+          "stem": "Calculate the simple interest earned on <span>&#36;</span>1540 at 7% p.a. for 6 years.",
+          "options": [
+            "\\(\\\\$646.80\\)",
+            "\\(\\\\$64.68\\)",
+            "\\(\\\\$1,078.00\\)",
+            "\\(\\\\$2,186.80\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the simple interest formula: \\(I = PRN\\).",
+          "steps": [
+            {
+              "explain": "Identify the principal (\\(P\\)), rate (\\(R\\)), and number of time periods (\\(N\\)).",
+              "work": "\\(P = \\\\$1540\\), \\(R = 7\\% = 0.07\\), \\(N = 6\\text{ years}\\)"
+            },
+            {
+              "explain": "Use the simple interest formula \\(I = PRN\\).",
+              "work": "\\(I = 1540 \\times 0.07 \\times 6\\)"
+            },
+            {
+              "explain": "Calculate the interest.",
+              "work": "\\(I = \\\\$646.80\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q6",
+          "type": "mc",
+          "stem": "Brett invested <span>&#36;</span>360 at 5% p.a. and earned simple interest of <span>&#36;</span>13.50. For how many months was the money invested?",
+          "options": [
+            "\\(9\\text{ months}\\)",
+            "\\(3\\text{ months}\\)",
+            "\\(12\\text{ months}\\)",
+            "\\(10\\text{ months}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the simple interest formula \\(I = PRN\\) to find \\(N\\) in years, then convert to months.",
+          "steps": [
+            {
+              "explain": "Set up the simple interest equation \\(I = PRN\\). Let \\(n\\) be the number of months.",
+              "work": "\\(P = 360\\), \\(R = 5\\% = 0.05\\), \\(I = 13.50\\)"
+            },
+            {
+              "explain": "Since the rate is per annum, express the time in years.",
+              "work": "\\(N = \\frac{n}{12}\\text{ years}\\)"
+            },
+            {
+              "explain": "Substitute the values into the formula.",
+              "work": "\\(13.50 = 360 \\times 0.05 \\times \\frac{n}{12}\\)"
+            },
+            {
+              "explain": "Solve for \\(n\\).",
+              "work": "\\(13.50 = 18 \\times \\frac{n}{12}\\)<br>\\(13.50 = 1.5n\\)<br>\\(n = \\frac{13.50}{1.5} = 9\\text{ months}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q7a",
+          "type": "mc",
+          "stem": "\n<div style=\"margin: 15px 0;\">\n  <table style=\"width: 100%; border-collapse: collapse; border: 2px solid black; font-size: 0.85em; text-align: left;\">\n    <thead>\n      <tr>\n        <th style=\"border: 1px solid black; padding: 6px;\">Taxable income</th>\n        <th style=\"border: 1px solid black; padding: 6px;\">Tax on this income</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\">0&ndash;<span>&#36;</span>18,200</td>\n        <td style=\"border: 1px solid black; padding: 6px;\">Nil</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>18,201&ndash;<span>&#36;</span>37,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\">19c for each <span>&#36;</span>1 over <span>&#36;</span>18,200</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>37,001&ndash;<span>&#36;</span>80,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>3,572 plus 32.5c for each <span>&#36;</span>1 over <span>&#36;</span>37,000</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>80,001&ndash;<span>&#36;</span>180,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>17,547 plus 37c for each <span>&#36;</span>1 over <span>&#36;</span>80,000</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>180,001 and over</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>54,547 plus 45c for each <span>&#36;</span>1 over <span>&#36;</span>180,000</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nMolly has a gross salary of <span>&#36;</span>75,484 and last year she earned <span>&#36;</span>4,620 in interest on her bank account. She has allowable deductions of <span>&#36;</span>825 for work related travel expenses. Her employer deducted <span>&#36;</span>17,471 in PAYG tax from her gross income.<br><br>\nFind her taxable income.",
+          "options": [
+            "\\(\\\\$79,279\\)",
+            "\\(\\\\$70,039\\)",
+            "\\(\\\\$80,104\\)",
+            "\\(\\\\$74,659\\)"
+          ],
+          "answer": 0,
+          "hint": "Taxable income = Gross salary + Other income (interest) - Allowable deductions.",
+          "steps": [
+            {
+              "explain": "Taxable income is the total income minus allowable deductions.",
+              "work": "\\(\\text{Taxable income} = \\\\$75,484 + \\\\$4,620 - \\\\$825\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(\\text{Taxable income} = \\\\$79,279\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q7b",
+          "type": "mc",
+          "stem": "\n<div style=\"margin: 15px 0;\">\n  <table style=\"width: 100%; border-collapse: collapse; border: 2px solid black; font-size: 0.85em; text-align: left;\">\n    <thead>\n      <tr>\n        <th style=\"border: 1px solid black; padding: 6px;\">Taxable income</th>\n        <th style=\"border: 1px solid black; padding: 6px;\">Tax on this income</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\">0&ndash;<span>&#36;</span>18,200</td>\n        <td style=\"border: 1px solid black; padding: 6px;\">Nil</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>18,201&ndash;<span>&#36;</span>37,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\">19c for each <span>&#36;</span>1 over <span>&#36;</span>18,200</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>37,001&ndash;<span>&#36;</span>80,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>3,572 plus 32.5c for each <span>&#36;</span>1 over <span>&#36;</span>37,000</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>80,001&ndash;<span>&#36;</span>180,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>17,547 plus 37c for each <span>&#36;</span>1 over <span>&#36;</span>80,000</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>180,001 and over</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>54,547 plus 45c for each <span>&#36;</span>1 over <span>&#36;</span>180,000</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nMolly has a gross salary of <span>&#36;</span>75,484 and last year she earned <span>&#36;</span>4,620 in interest on her bank account. She has allowable deductions of <span>&#36;</span>825 for work related travel expenses. Her employer deducted <span>&#36;</span>17,471 in PAYG tax from her gross income.<br><br>\nCalculate the amount of tax that she should pay on her income (to the nearest dollar). Note: Her taxable income is \\(\\\\$79,279\\).",
+          "options": [
+            "\\(\\\\$17,313\\)",
+            "\\(\\\\$25,766\\)",
+            "\\(\\\\$17,312\\)",
+            "\\(\\\\$15,190\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the correct bracket in the tax table for her taxable income, then calculate the base tax plus the cents for each dollar over the threshold.",
+          "steps": [
+            {
+              "explain": "Molly's taxable income is \\(\\\\$79,279\\), which falls into the \\(\\\\$37,001 - \\\\$80,000\\) tax bracket.",
+              "work": "Tax is \\(\\\\$3,572\\) plus \\(32.5\\text{c}\\) for each \\(\\\\$1\\) over \\(\\\\$37,000\\)."
+            },
+            {
+              "explain": "Calculate the amount over \\(\\\\$37,000\\).",
+              "work": "\\(\\\\$79,279 - \\\\$37,000 = \\\\$42,279\\)"
+            },
+            {
+              "explain": "Calculate the tax on this amount (\\(32.5\\text{c} = \\\\$0.325\\)).",
+              "work": "\\(0.325 \\times 42,279 = \\\\$13,740.675\\)"
+            },
+            {
+              "explain": "Add the base tax of \\(\\\\$3,572\\).",
+              "work": "\\(\\text{Total tax} = \\\\$3,572 + \\\\$13,740.675 = \\\\$17,312.675\\)"
+            },
+            {
+              "explain": "Round to the nearest dollar.",
+              "work": "\\(\\\\$17,313\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q7c",
+          "type": "mc",
+          "stem": "\n<div style=\"margin: 15px 0;\">\n  <table style=\"width: 100%; border-collapse: collapse; border: 2px solid black; font-size: 0.85em; text-align: left;\">\n    <thead>\n      <tr>\n        <th style=\"border: 1px solid black; padding: 6px;\">Taxable income</th>\n        <th style=\"border: 1px solid black; padding: 6px;\">Tax on this income</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\">0&ndash;<span>&#36;</span>18,200</td>\n        <td style=\"border: 1px solid black; padding: 6px;\">Nil</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>18,201&ndash;<span>&#36;</span>37,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\">19c for each <span>&#36;</span>1 over <span>&#36;</span>18,200</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>37,001&ndash;<span>&#36;</span>80,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>3,572 plus 32.5c for each <span>&#36;</span>1 over <span>&#36;</span>37,000</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>80,001&ndash;<span>&#36;</span>180,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>17,547 plus 37c for each <span>&#36;</span>1 over <span>&#36;</span>80,000</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>180,001 and over</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>54,547 plus 45c for each <span>&#36;</span>1 over <span>&#36;</span>180,000</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nMolly has a gross salary of <span>&#36;</span>75,484 and last year she earned <span>&#36;</span>4,620 in interest on her bank account. She has allowable deductions of <span>&#36;</span>825 for work related travel expenses. Her employer deducted <span>&#36;</span>17,471 in PAYG tax from her gross income.<br><br>\nCalculate the Medicare Levy of 1.5% of her taxable income (to the nearest dollar). Note: Her taxable income is \\(\\\\$79,279\\).",
+          "options": [
+            "\\(\\\\$1,189\\)",
+            "\\(\\\\$118\\)",
+            "\\(\\\\$1,132\\)",
+            "\\(\\\\$1,190\\)"
+          ],
+          "answer": 0,
+          "hint": "Find 1.5% of her taxable income.",
+          "steps": [
+            {
+              "explain": "Calculate 1.5% of \\(\\\\$79,279\\).",
+              "work": "\\(1.5\\% \\times \\\\$79,279 = 0.015 \\times 79,279 = 1,189.185\\)"
+            },
+            {
+              "explain": "Round to the nearest dollar.",
+              "work": "\\(\\\\$1,189\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q7d",
+          "type": "mc",
+          "stem": "\n<div style=\"margin: 15px 0;\">\n  <table style=\"width: 100%; border-collapse: collapse; border: 2px solid black; font-size: 0.85em; text-align: left;\">\n    <thead>\n      <tr>\n        <th style=\"border: 1px solid black; padding: 6px;\">Taxable income</th>\n        <th style=\"border: 1px solid black; padding: 6px;\">Tax on this income</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\">0&ndash;<span>&#36;</span>18,200</td>\n        <td style=\"border: 1px solid black; padding: 6px;\">Nil</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>18,201&ndash;<span>&#36;</span>37,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\">19c for each <span>&#36;</span>1 over <span>&#36;</span>18,200</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>37,001&ndash;<span>&#36;</span>80,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>3,572 plus 32.5c for each <span>&#36;</span>1 over <span>&#36;</span>37,000</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>80,001&ndash;<span>&#36;</span>180,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>17,547 plus 37c for each <span>&#36;</span>1 over <span>&#36;</span>80,000</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>180,001 and over</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>54,547 plus 45c for each <span>&#36;</span>1 over <span>&#36;</span>180,000</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nMolly has a gross salary of <span>&#36;</span>75,484 and last year she earned <span>&#36;</span>4,620 in interest on her bank account. She has allowable deductions of <span>&#36;</span>825 for work related travel expenses. Her employer deducted <span>&#36;</span>17,471 in PAYG tax from her gross income.<br><br>\nWhat does Molly pay in tax altogether? Note: Her income tax is \\(\\\\$17,313\\) and her Medicare Levy is \\(\\\\$1,189\\).",
+          "options": [
+            "\\(\\\\$18,502\\)",
+            "\\(\\\\$17,313\\)",
+            "\\(\\\\$16,124\\)",
+            "\\(\\\\$18,500\\)"
+          ],
+          "answer": 0,
+          "hint": "Total tax is income tax plus Medicare Levy.",
+          "steps": [
+            {
+              "explain": "Add the income tax and the Medicare Levy.",
+              "work": "\\(\\text{Total tax} = \\\\$17,313 + \\\\$1,189 = \\\\$18,502\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q7e",
+          "type": "mc",
+          "stem": "\n<div style=\"margin: 15px 0;\">\n  <table style=\"width: 100%; border-collapse: collapse; border: 2px solid black; font-size: 0.85em; text-align: left;\">\n    <thead>\n      <tr>\n        <th style=\"border: 1px solid black; padding: 6px;\">Taxable income</th>\n        <th style=\"border: 1px solid black; padding: 6px;\">Tax on this income</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\">0&ndash;<span>&#36;</span>18,200</td>\n        <td style=\"border: 1px solid black; padding: 6px;\">Nil</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>18,201&ndash;<span>&#36;</span>37,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\">19c for each <span>&#36;</span>1 over <span>&#36;</span>18,200</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>37,001&ndash;<span>&#36;</span>80,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>3,572 plus 32.5c for each <span>&#36;</span>1 over <span>&#36;</span>37,000</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>80,001&ndash;<span>&#36;</span>180,000</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>17,547 plus 37c for each <span>&#36;</span>1 over <span>&#36;</span>80,000</td>\n      </tr>\n      <tr>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>180,001 and over</td>\n        <td style=\"border: 1px solid black; padding: 6px;\"><span>&#36;</span>54,547 plus 45c for each <span>&#36;</span>1 over <span>&#36;</span>180,000</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nMolly has a gross salary of <span>&#36;</span>75,484 and last year she earned <span>&#36;</span>4,620 in interest on her bank account. She has allowable deductions of <span>&#36;</span>825 for work related travel expenses. Her employer deducted <span>&#36;</span>17,471 in PAYG tax from her gross income.<br><br>\nCalculate her refund or the amount she has to repay. Note: Her total tax liability is \\(\\\\$18,502\\).",
+          "options": [
+            "Repay \\(\\\\$1,031\\)",
+            "Refund \\(\\\\$1,031\\)",
+            "Repay \\(\\\\$1,200\\)",
+            "Refund \\(\\\\$17,471\\)"
+          ],
+          "answer": 0,
+          "hint": "Compare her total tax liability to the PAYG tax already deducted by her employer.",
+          "steps": [
+            {
+              "explain": "Her employer already deducted \\(\\\\$17,471\\) via PAYG."
+            },
+            {
+              "explain": "Her total tax liability is \\(\\\\$18,502\\). Since this is more than what was deducted, she owes the tax office money.",
+              "work": "\\(\\text{Amount to pay} = \\\\$18,502 - \\\\$17,471\\)"
+            },
+            {
+              "explain": "Calculate the difference.",
+              "work": "\\(\\\\$1,031\\)"
+            },
+            {
+              "explain": "She has to repay \\(\\\\$1,031\\)."
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q8",
+          "type": "mc",
+          "stem": "A car was purchased in 2001 for \\(\\\\$34,000\\). If it depreciates in value by 12.5% p.a., what would be its value in 5 years time? (to the nearest dollar)",
+          "options": [
+            "\\(\\\\$17,439\\)",
+            "\\(\\\\$12,750\\)",
+            "\\(\\\\$21,250\\)",
+            "\\(\\\\$16,839\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the depreciation formula: \\(A = P(1 - R)^n\\).",
+          "steps": [
+            {
+              "explain": "Use the depreciation formula \\(A = P(1 - R)^n\\).",
+              "work": "\\(P = \\\\$34,000\\), \\(R = 12.5\\% = 0.125\\), \\(n = 5\\)"
+            },
+            {
+              "explain": "Substitute the values into the formula.",
+              "work": "\\(A = 34,000(1 - 0.125)^5\\)"
+            },
+            {
+              "explain": "Calculate the value.",
+              "work": "\\(A = 34,000(0.875)^5 = 34,000 \\times 0.512909... = 17,438.90...\\)"
+            },
+            {
+              "explain": "Round to the nearest dollar.",
+              "work": "\\(\\\\$17,439\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q8-compound-a-i",
+          "type": "mc",
+          "stem": "Use the compound interest formula to find the value (to the nearest dollar) of investing \\(\\\\$3,000\\) at 12% p.a. for 8 years if the interest is compounded annually.",
+          "options": [
+            "\\(\\\\$7,428\\)",
+            "\\(\\\\$5,880\\)",
+            "\\(\\\\$7,798\\)",
+            "\\(\\\\$4,428\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the compound interest formula: \\(A = P(1 + R)^n\\).",
+          "steps": [
+            {
+              "explain": "Use the compound interest formula \\(A = P(1 + R)^n\\).",
+              "work": "\\(P = 3,000\\), \\(R = 12\\% = 0.12\\), \\(n = 8\\)"
+            },
+            {
+              "explain": "Substitute the values into the formula.",
+              "work": "\\(A = 3,000(1 + 0.12)^8\\)"
+            },
+            {
+              "explain": "Calculate the value.",
+              "work": "\\(A = 3,000(1.12)^8 = 3,000 \\times 2.47596... = 7,427.88...\\)"
+            },
+            {
+              "explain": "Round to the nearest dollar.",
+              "work": "\\(\\\\$7,428\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q8-compound-a-ii",
+          "type": "mc",
+          "stem": "Use the compound interest formula to find the value (to the nearest dollar) of investing \\(\\\\$3,000\\) at 12% p.a. for 8 years if the interest is compounded monthly.",
+          "options": [
+            "\\(\\\\$7,798\\)",
+            "\\(\\\\$7,428\\)",
+            "\\(\\\\$3,243\\)",
+            "\\(\\\\$6,558\\)"
+          ],
+          "answer": 0,
+          "hint": "Adjust the rate and number of periods for monthly compounding. Rate per month = \\(12\\% \\div 12\\). Periods = \\(8 \\times 12\\).",
+          "steps": [
+            {
+              "explain": "Identify the monthly rate and total number of months.",
+              "work": "\\(R = 12\\% \\text{ p.a.} \\div 12 = 1\\% \\text{ per month} = 0.01\\)<br>\\(n = 8 \\text{ years} \\times 12 = 96 \\text{ months}\\)"
+            },
+            {
+              "explain": "Use the compound interest formula.",
+              "work": "\\(A = 3,000(1 + 0.01)^{96}\\)"
+            },
+            {
+              "explain": "Calculate the value.",
+              "work": "\\(A = 3,000(1.01)^{96} = 3,000 \\times 2.59927... = 7,797.81...\\)"
+            },
+            {
+              "explain": "Round to the nearest dollar.",
+              "work": "\\(\\\\$7,798\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-q8-compound-b",
+          "type": "mc",
+          "stem": "Find the amount of interest earned (to the nearest dollar) if \\(\\\\$7,000\\) was invested at 8.5% p.a. compounded annually for 3 years.",
+          "options": [
+            "\\(\\\\$1,941\\)",
+            "\\(\\\\$8,941\\)",
+            "\\(\\\\$1,785\\)",
+            "\\(\\\\$2,015\\)"
+          ],
+          "answer": 0,
+          "hint": "First find the final compounded value, then subtract the principal to find the interest.",
+          "steps": [
+            {
+              "explain": "First, calculate the final value (\\(A\\)) using the compound interest formula.",
+              "work": "\\(A = 7,000(1 + 0.085)^3 = 7,000(1.085)^3\\)"
+            },
+            {
+              "explain": "Calculate the final value.",
+              "work": "\\(A = 7,000 \\times 1.277289... = 8,941.02...\\)"
+            },
+            {
+              "explain": "Find the interest earned by subtracting the principal from the final value.",
+              "work": "\\(I = A - P = 8,941.02 - 7,000 = 1,941.02\\)"
+            },
+            {
+              "explain": "Round to the nearest dollar.",
+              "work": "\\(\\\\$1,941\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y9-3b",
+      "code": "3B",
+      "title": "Using percentages",
+      "questions": [
+        {
+          "id": "y9-3b-1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A high-performance drone has a battery capacity of 4200 mAh. If its current charge is at 65%, calculate the remaining battery capacity in mAh.",
+          "options": [
+            "2730",
+            "2520",
+            "3120",
+            "2840"
+          ],
+          "answer": 0,
+          "hint": "Find 65% of 4200 mAh by converting the percentage to a decimal.",
+          "steps": [
+            {
+              "explain": "Identify the total battery capacity and the charge percentage.",
+              "work": "\\\\(\\text{Total Capacity} = 4200\\text{ mAh}, \\quad \\text{Charge Percentage} = 65\\%\\\\)"
+            },
+            {
+              "explain": "Convert the percentage into a decimal factor by dividing it by 100.",
+              "work": "\\\\(65\\% = \\frac{65}{100} = 0.65\\\\)"
+            },
+            {
+              "explain": "Multiply the decimal factor by the total capacity to get the remaining charge.",
+              "work": "\\\\(0.65 \\times 4200 = 2730\\\\)"
+            },
+            {
+              "explain": "State the final capacity value.",
+              "work": "\\\\(\\text{Remaining battery} = 2730\\text{ mAh}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A local nature reserve monitors 180 koalas. Due to a new conservation corridor, the population increases by 15%. Find the number of new koalas in the reserve.",
+          "options": [
+            "27",
+            "24",
+            "30",
+            "18"
+          ],
+          "answer": 0,
+          "hint": "Find 15% of 180.",
+          "steps": [
+            {
+              "explain": "Identify the baseline koala count and the growth rate.",
+              "work": "\\\\(\\text{Original population} = 180, \\quad \\text{Growth} = 15\\%\\\\)"
+            },
+            {
+              "explain": "Convert the growth percentage into a decimal.",
+              "work": "\\\\(15\\% = 0.15\\\\)"
+            },
+            {
+              "explain": "Multiply the decimal by the baseline count to find the increase.",
+              "work": "\\\\(0.15 \\times 180 = 27\\\\)"
+            },
+            {
+              "explain": "Conclude with the final count of new koalas.",
+              "work": "\\\\(\\text{New koalas} = 27\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "An online bookstore offers a 25% discount on a novel priced at $36. Find the savings amount in dollars.",
+          "options": [
+            "$10",
+            "$12",
+            "$9",
+            "$8"
+          ],
+          "answer": 2,
+          "hint": "Calculate 25% of $36.",
+          "steps": [
+            {
+              "explain": "Identify the original price of the novel and the discount rate.",
+              "work": "\\\\(\\text{Original Price} = \\$36, \\quad \\text{Discount Rate} = 25\\%\\\\)"
+            },
+            {
+              "explain": "Convert the discount rate into a decimal multiplier.",
+              "work": "\\\\(25\\% = 0.25\\\\)"
+            },
+            {
+              "explain": "Multiply the original price by the discount multiplier to find the discount amount.",
+              "work": "\\\\(0.25 \\times 36 = 9\\\\)"
+            },
+            {
+              "explain": "The savings amount represents the value subtracted from the original price.",
+              "work": "\\\\(\\text{Savings} = \\$9\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A concrete mixture requires 12% of its total weight to be water. If the builder prepares a 75 kg batch of concrete, how much water (in kg) is needed?",
+          "options": [
+            "10",
+            "7.5",
+            "8",
+            "9"
+          ],
+          "answer": 3,
+          "hint": "Find 12% of 75 kg.",
+          "steps": [
+            {
+              "explain": "Determine the total weight of the batch and the required percentage of water.",
+              "work": "\\\\(\\text{Total weight} = 75\\text{ kg}, \\quad \\text{Water ratio} = 12\\%\\\\)"
+            },
+            {
+              "explain": "Convert 12% into a decimal number.",
+              "work": "\\\\(12\\% = 0.12\\\\)"
+            },
+            {
+              "explain": "Multiply the decimal by the total batch weight.",
+              "work": "\\\\(0.12 \\times 75 = 9\\\\)"
+            },
+            {
+              "explain": "The result is the weight of water needed for the concrete mixture.",
+              "work": "\\\\(\\text{Water weight} = 9\\text{ kg}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A student scored 38 out of 50 on a chemistry exam. Convert this score to a percentage.",
+          "options": [
+            "72%",
+            "78%",
+            "76%",
+            "80%"
+          ],
+          "answer": 2,
+          "hint": "Express 38/50 as a fraction, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "State the student's actual score and the maximum possible score.",
+              "work": "\\\\(\\text{Score} = 38, \\quad \\text{Max score} = 50\\\\)"
+            },
+            {
+              "explain": "Divide the student's score by the maximum score to form a ratio.",
+              "work": "\\\\(\\text{Ratio} = \\frac{38}{50}\\\\)"
+            },
+            {
+              "explain": "Multiply this ratio by 100 to find the percentage.",
+              "work": "\\\\(\\text{Percentage} = \\frac{38}{50} \\times 100 = 76\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A standard chocolate bar weighing 80 g contains 35% cocoa solids. Calculate the mass of the cocoa solids in the bar.",
+          "options": [
+            "30 g",
+            "28 g",
+            "32 g",
+            "24 g"
+          ],
+          "answer": 1,
+          "hint": "Multiply 80 g by 0.35.",
+          "steps": [
+            {
+              "explain": "Identify the total mass of the chocolate bar and the percentage of cocoa solids.",
+              "work": "\\\\(\\text{Total mass} = 80\\text{ g}, \\quad \\text{Cocoa ratio} = 35\\%\\\\)"
+            },
+            {
+              "explain": "Convert the percentage to a decimal value.",
+              "work": "\\\\(35\\% = 0.35\\\\)"
+            },
+            {
+              "explain": "Multiply the decimal by the total mass to find the weight of the cocoa solids.",
+              "work": "\\\\(0.35 \\times 80 = 28\\\\)"
+            },
+            {
+              "explain": "Conclude with the weight in grams.",
+              "work": "\\\\(\\text{Cocoa solids} = 28\\text{ g}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A survey of 250 residents revealed that 48% prefer public transport over driving. How many residents prefer public transport?",
+          "options": [
+            "120",
+            "100",
+            "110",
+            "125"
+          ],
+          "answer": 0,
+          "hint": "Find 48% of 250.",
+          "steps": [
+            {
+              "explain": "Identify the total number of survey participants and the percentage of interest.",
+              "work": "\\\\(\\text{Total residents} = 250, \\quad \\text{Preference} = 48\\%\\\\)"
+            },
+            {
+              "explain": "Convert the percentage into a decimal factor.",
+              "work": "\\\\(48\\% = 0.48\\\\)"
+            },
+            {
+              "explain": "Multiply the decimal factor by the total number of participants.",
+              "work": "\\\\(0.48 \\times 250 = 120\\\\)"
+            },
+            {
+              "explain": "State the number of residents preferring public transport.",
+              "work": "\\\\(\\text{Count} = 120\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A real estate agent charges a flat 2% commission on the sale price of properties. If a house sells for $650,000, calculate the agent's commission.",
+          "options": [
+            "$13,000",
+            "$12,000",
+            "$15,000",
+            "$16,500"
+          ],
+          "answer": 0,
+          "hint": "Calculate 2% of $650,000.",
+          "steps": [
+            {
+              "explain": "Identify the property sale price and the agent's commission rate.",
+              "work": "\\\\(\\text{Sale Price} = \\$650,000, \\quad \\text{Commission Rate} = 2\\%\\\\)"
+            },
+            {
+              "explain": "Convert the commission rate to a decimal value.",
+              "work": "\\\\(2\\% = 0.02\\\\)"
+            },
+            {
+              "explain": "Multiply the sale price by this decimal value.",
+              "work": "\\\\(0.02 \\times 650,000 = 13,000\\\\)"
+            },
+            {
+              "explain": "State the final commission amount.",
+              "work": "\\\\(\\text{Commission} = \\$13,000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A small smartphone screen repair shop fixes 40 phones on Monday. If 15% of these phones required battery replacement as well, how many phones needed new batteries?",
+          "options": [
+            "6",
+            "4",
+            "5",
+            "8"
+          ],
+          "answer": 0,
+          "hint": "Find 15% of 40.",
+          "steps": [
+            {
+              "explain": "Identify the total number of phones repaired and the proportion requiring a battery.",
+              "work": "\\\\(\\text{Total phones} = 40, \\quad \\text{Battery replacement ratio} = 15\\%\\\\)"
+            },
+            {
+              "explain": "Convert 15% into a decimal number.",
+              "work": "\\\\(15\\% = 0.15\\\\)"
+            },
+            {
+              "explain": "Multiply the decimal by the total number of phones.",
+              "work": "\\\\(0.15 \\times 40 = 6\\\\)"
+            },
+            {
+              "explain": "State the final number of batteries replaced.",
+              "work": "\\\\(\\text{Phones} = 6\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Out of 80 vehicles parked in a multi-storey lot, 28 are electric cars. What percentage of the vehicles are electric?",
+          "options": [
+            "35%",
+            "30%",
+            "28%",
+            "40%"
+          ],
+          "answer": 0,
+          "hint": "Write 28 out of 80 as a fraction, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "Identify the number of electric cars and the total number of vehicles.",
+              "work": "\\\\(\\text{Electric cars} = 28, \\quad \\text{Total vehicles} = 80\\\\)"
+            },
+            {
+              "explain": "Form the ratio of electric cars to the total vehicle count.",
+              "work": "\\\\(\\text{Ratio} = \\frac{28}{80}\\\\)"
+            },
+            {
+              "explain": "Multiply the ratio by 100 to obtain the percentage.",
+              "work": "\\\\(\\frac{28}{80} \\times 100 = 35\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A high-fidelity speaker system is marked down by 35% in a clearance sale. If the discount is worth $224, what was the speaker system's original price?",
+          "options": [
+            "$700",
+            "$580",
+            "$600",
+            "$640"
+          ],
+          "answer": 3,
+          "hint": "Set up the equation 0.35 * Original Price = $224.",
+          "steps": [
+            {
+              "explain": "Write an equation matching the discount rate and the discount value.",
+              "work": "\\\\(35\\% \\times \\text{Original Price} = \\$224\\\\)"
+            },
+            {
+              "explain": "Convert the percentage to a decimal coefficient.",
+              "work": "\\\\(0.35 \\times \\text{Original Price} = 224\\\\)"
+            },
+            {
+              "explain": "Isolate the original price by dividing the discount value by the decimal coefficient.",
+              "work": "\\\\(\\text{Original Price} = \\frac{224}{0.35}\\\\)"
+            },
+            {
+              "explain": "Perform the division to find the original price.",
+              "work": "\\\\(\\text{Original Price} = 640\\\\)"
+            },
+            {
+              "explain": "Conclude with the original price in dollars.",
+              "work": "\\\\(\\text{Original Price} = \\$640\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A logistics company delivers a shipment. Upon inspection, 4% of the glass items are found to be broken. If there are 18 broken items, how many glass items were in the shipment in total?",
+          "options": [
+            "360",
+            "500",
+            "450",
+            "400"
+          ],
+          "answer": 2,
+          "hint": "Set up the equation 4% of Total = 18.",
+          "steps": [
+            {
+              "explain": "Express the relationship between the percentage of broken items and their absolute count.",
+              "work": "\\\\(4\\% \\times \\text{Total items} = 18\\\\)"
+            },
+            {
+              "explain": "Convert the percentage to a decimal coefficient.",
+              "work": "\\\\(0.04 \\times \\text{Total items} = 18\\\\)"
+            },
+            {
+              "explain": "Divide both sides of the equation by 0.04 to find the total item count.",
+              "work": "\\\\(\\text{Total items} = \\frac{18}{0.04}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction to find the integer total.",
+              "work": "\\\\(\\text{Total items} = 450\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A clothing store buys a jacket from a wholesaler for $120 and sells it for $168. Calculate the markup percentage relative to the cost price.",
+          "options": [
+            "50%",
+            "40%",
+            "35%",
+            "48%"
+          ],
+          "answer": 1,
+          "hint": "Find the profit amount first, then divide by the cost price and multiply by 100.",
+          "steps": [
+            {
+              "explain": "Calculate the dollar markup by subtracting the cost price from the retail price.",
+              "work": "\\\\(\\text{Markup Amount} = 168 - 120 = 48\\\\)"
+            },
+            {
+              "explain": "Form a ratio of this markup amount relative to the original cost price.",
+              "work": "\\\\(\\text{Ratio} = \\frac{48}{120}\\\\)"
+            },
+            {
+              "explain": "Convert the ratio to a percentage by multiplying by 100.",
+              "work": "\\\\(\\text{Markup Percentage} = \\frac{48}{120} \\times 100 = 40\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A retail item sells for $132, which is inclusive of a 10% Goods and Services Tax (GST). Calculate the price of the item before GST is added.",
+          "options": [
+            "$115",
+            "$122",
+            "$120",
+            "$118.80"
+          ],
+          "answer": 2,
+          "hint": "Divide the inclusive price by 1.10.",
+          "steps": [
+            {
+              "explain": "Set up the relationship where the pre-GST price is multiplied by 1.10 to equal the total selling price.",
+              "work": "\\\\(1.10 \\times \\text{Pre-GST Price} = \\$132\\\\)"
+            },
+            {
+              "explain": "Isolate the pre-GST price by dividing the inclusive price by 1.10.",
+              "work": "\\\\(\\text{Pre-GST Price} = \\frac{132}{1.10}\\\\)"
+            },
+            {
+              "explain": "Compute the division to obtain the pre-tax price.",
+              "work": "\\\\(\\text{Pre-GST Price} = 120\\\\)"
+            },
+            {
+              "explain": "Conclude with the pre-GST cost.",
+              "work": "\\\\(\\text{Price before GST} = \\$120\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A stock's value rises from $45 to $55.80 over a month. What is the percentage increase in the stock's value?",
+          "options": [
+            "18%",
+            "20%",
+            "24%",
+            "25%"
+          ],
+          "answer": 2,
+          "hint": "Divide the price increase by the original price, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "Find the absolute change in price by subtracting the initial value from the final value.",
+              "work": "\\\\(\\text{Change} = 55.80 - 45 = 10.80\\\\)"
+            },
+            {
+              "explain": "Divide this change by the initial price of the stock.",
+              "work": "\\\\(\\text{Ratio} = \\frac{10.80}{45}\\\\)"
+            },
+            {
+              "explain": "Multiply the ratio by 100 to convert to a percentage increase.",
+              "work": "\\\\(\\text{Increase} = \\frac{10.80}{45} \\times 100 = 24\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An alloy weighs 350 g and is made of copper, tin, and zinc. Copper makes up 60% of the alloy, while tin makes up 25%. How many grams of zinc does the alloy contain?",
+          "options": [
+            "52.5 g",
+            "48.5 g",
+            "60 g",
+            "55 g"
+          ],
+          "answer": 0,
+          "hint": "Determine the percentage of zinc first (100% - 60% - 25%), then find that percentage of 350 g.",
+          "steps": [
+            {
+              "explain": "Determine the percentage of the alloy that consists of zinc by subtracting the other metals from 100%.",
+              "work": "\\\\(\\text{Zinc Percentage} = 100\\% - 60\\% - 25\\% = 15\\%\\\\)"
+            },
+            {
+              "explain": "Convert this percentage value into a decimal multiplier.",
+              "work": "\\\\(15\\% = 0.15\\\\)"
+            },
+            {
+              "explain": "Multiply the decimal multiplier by the total weight of the alloy.",
+              "work": "\\\\(0.15 \\times 350 = 52.5\\\\)"
+            },
+            {
+              "explain": "State the final weight of zinc in grams.",
+              "work": "\\\\(\\text{Weight of zinc} = 52.5\\text{ g}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A commercial warehouse has 480 boxes in stock. If the warehouse manager dispatches 15% of the inventory to Store A, and 20% of the remaining inventory to Store B, how many boxes are left in the warehouse?",
+          "options": [
+            "312",
+            "300",
+            "326",
+            "326.4"
+          ],
+          "answer": 3,
+          "hint": "Subtract Store A's dispatch first, then find 80% of the remaining boxes.",
+          "steps": [
+            {
+              "explain": "Calculate the number of boxes dispatched to Store A.",
+              "work": "\\\\(\\text{Store A Dispatch} = 0.15 \\times 480 = 72\\\\)"
+            },
+            {
+              "explain": "Find the remaining boxes in the inventory after the first dispatch.",
+              "work": "\\\\(\\text{Remaining} = 480 - 72 = 408\\\\)"
+            },
+            {
+              "explain": "Calculate the dispatch to Store B, which is 20% of the remaining 408 boxes.",
+              "work": "\\\\(\\text{Store B Dispatch} = 0.20 \\times 408 = 81.6\\\\)"
+            },
+            {
+              "explain": "Subtract the second dispatch from the intermediate remainder to find the final count.",
+              "work": "\\\\(\\text{Final Boxes} = 408 - 81.6 = 326.4\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A high-intensity light bulb's lifetime was advertised as 12,000 hours. Tests show its actual average lifetime is 10,800 hours. Calculate the percentage error in the advertised lifetime.",
+          "options": [
+            "11.1%",
+            "12.5%",
+            "9.1%",
+            "10%"
+          ],
+          "answer": 0,
+          "hint": "Divide the difference by the actual lifetime, then multiply by 100.",
+          "steps": [
+            {
+              "explain": "Find the absolute difference between the advertised lifetime and the actual lifetime.",
+              "work": "\\\\(\\text{Difference} = 12000 - 10800 = 1200\\\\)"
+            },
+            {
+              "explain": "Divide the difference by the actual (true) value to calculate the relative error.",
+              "work": "\\\\(\\text{Error Ratio} = \\frac{1200}{10800}\\\\)"
+            },
+            {
+              "explain": "Multiply this ratio by 100 to express it as a percentage.",
+              "work": "\\\\(\\text{Percentage Error} = \\frac{1}{9} \\times 100 \\approx 11.11\\%\\\\)"
+            },
+            {
+              "explain": "Round the percentage value to one decimal place.",
+              "work": "\\\\(\\text{Error} \\approx 11.1\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A business consultant's monthly salary of $7200 is split into rent, food, savings, and other expenses. Rent accounts for 30%, food for 25%, and savings for 15%. How much money (in dollars) is left for other expenses?",
+          "options": [
+            "$2000",
+            "$2300",
+            "$2160",
+            "$2500"
+          ],
+          "answer": 2,
+          "hint": "Calculate the remaining percentage (100% - 30% - 25% - 15%) and find that amount of $7200.",
+          "steps": [
+            {
+              "explain": "Find the percentage allocated to other expenses by subtracting rent, food, and savings from 100%.",
+              "work": "\\\\(\\text{Other Percentage} = 100\\% - 30\\% - 25\\% - 15\\% = 30\\%\\\\)"
+            },
+            {
+              "explain": "Convert this remaining percentage into a decimal factor.",
+              "work": "\\\\(30\\% = 0.30\\\\)"
+            },
+            {
+              "explain": "Multiply the decimal factor by the total monthly salary.",
+              "work": "\\\\(0.30 \\times 7200 = 2160\\\\)"
+            },
+            {
+              "explain": "State the dollar amount reserved for other expenses.",
+              "work": "\\\\(\\text{Other Expenses} = \\$2160\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A developer purchases land for $320,000. Due to zoning changes, the value drops by 8% in the first year, but recovers by 10% in the second year. What is the value of the land at the end of the second year?",
+          "options": [
+            "$326,400",
+            "$320,000",
+            "$318,500",
+            "$323,840"
+          ],
+          "answer": 3,
+          "hint": "Find the value after the 8% drop first, then multiply the result by 1.10.",
+          "steps": [
+            {
+              "explain": "Calculate the land value after the first year's 8% decrease.",
+              "work": "\\\\(\\text{Year 1 Value} = 320,000 \\times (1 - 0.08) = 320,000 \\times 0.92 = 294,400\\\\)"
+            },
+            {
+              "explain": "Calculate the land value after the second year's 10% increase, using Year 1 value as the base.",
+              "work": "\\\\(\\text{Year 2 Value} = 294,400 \\times (1 + 0.10) = 294,400 \\times 1.10 = 323,840\\\\)"
+            },
+            {
+              "explain": "State the final value of the land in dollars.",
+              "work": "\\\\(\\text{Final Value} = \\$323,840\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-21",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A high-tech manufacturer produces computer processors. The defect rate is 3.2%. If the factory produces 80 defective processors in a shift, what is the total number of non-defective processors produced during that shift?",
+          "options": [
+            "2420",
+            "2500",
+            "2400",
+            "2380"
+          ],
+          "answer": 0,
+          "hint": "First find the total output by dividing 80 by 0.032, then subtract the defective ones.",
+          "steps": [
+            {
+              "explain": "Formulate the relation between total output and defective processors.",
+              "work": "\\\\(3.2\\% \\times \\text{Total Output} = 80\\\\)"
+            },
+            {
+              "explain": "Convert the percentage to a decimal coefficient to solve for total output.",
+              "work": "\\\\(0.032 \\times \\text{Total Output} = 80\\\\)"
+            },
+            {
+              "explain": "Divide both sides by 0.032 to find the total output.",
+              "work": "\\\\(\\text{Total Output} = \\frac{80}{0.032} = 2500\\\\)"
+            },
+            {
+              "explain": "Subtract the defective processors from the total output to find the number of non-defective processors.",
+              "work": "\\\\(\\text{Non-defective} = 2500 - 80 = 2420\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-22",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A commercial grain silo contains wheat. The moisture content of the wheat is initially 15% by weight. After a drying process, the moisture content is reduced to 10% by weight. If the silo initially held 18 tonnes of wet wheat, what is the weight of the wheat (in tonnes) after the drying process?",
+          "options": [
+            "15.3",
+            "16.8",
+            "16.2",
+            "17"
+          ],
+          "answer": 3,
+          "hint": "Calculate the constant dry mass of wheat first, which does not evaporate.",
+          "steps": [
+            {
+              "explain": "Find the initial dry solid mass of wheat (excluding water), which remains constant during drying.",
+              "work": "\\\\(\\text{Dry Mass Ratio} = 100\\% - 15\\% = 85\\%\\\\)"
+            },
+            {
+              "explain": "Calculate the weight of dry solid wheat initially.",
+              "work": "\\\\(\\text{Dry solid wheat weight} = 0.85 \\times 18 = 15.3\\text{ tonnes}\\\\)"
+            },
+            {
+              "explain": "Set up the relation where dry solids constitute 90% of the dried wheat weight.",
+              "work": "\\\\(90\\% \\times \\text{New Total Weight} = 15.3\\text{ tonnes}\\\\)"
+            },
+            {
+              "explain": "Solve for the new total weight of wheat by dividing the dry solid mass by 0.90.",
+              "work": "\\\\(\\text{New Weight} = \\frac{15.3}{0.90} = 17\\text{ tonnes}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-23",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A merchant marks up a leather sofa by 60% of its wholesale cost. However, during a promotional sale, the sofa is sold at a 25% discount off the marked price. If the selling price is $1080, what was the original wholesale cost of the sofa?",
+          "options": [
+            "$950",
+            "$800",
+            "$850",
+            "$900"
+          ],
+          "answer": 3,
+          "hint": "Write the equation Wholesale * 1.60 * 0.75 = $1080.",
+          "steps": [
+            {
+              "explain": "Write the relationship between wholesale cost, markup, discount, and final sale price.",
+              "work": "\\\\(\\text{Wholesale Cost} \\times 1.60 \\times (1 - 0.25) = \\$1080\\\\)"
+            },
+            {
+              "explain": "Simplify the combined multiplier.",
+              "work": "\\\\(1.60 \\times 0.75 = 1.2\\\\)"
+            },
+            {
+              "explain": "Isolate the wholesale cost by dividing the final price by the simplified multiplier.",
+              "work": "\\\\(\\text{Wholesale Cost} = \\frac{1080}{1.2}\\\\)"
+            },
+            {
+              "explain": "Calculate the division to obtain the final wholesale cost.",
+              "work": "\\\\(\\text{Wholesale Cost} = 900\\\\)"
+            },
+            {
+              "explain": "Conclude with the cost in dollars.",
+              "work": "\\\\(\\text{Cost} = \\$900\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-24",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A scientific laboratory prepares a salt solution. Container A holds 4 litres of a 12% salt solution. Container B holds 6 litres of a 15% salt solution. If the contents of both containers are mixed together, what is the concentration percentage of the final mixture?",
+          "options": [
+            "14%",
+            "13.5%",
+            "13.8%",
+            "13.2%"
+          ],
+          "answer": 2,
+          "hint": "Calculate the total volume of salt first, divide it by the total mixture volume (10 L), and multiply by 100.",
+          "steps": [
+            {
+              "explain": "Calculate the volume of pure salt in Container A.",
+              "work": "\\\\(\\text{Salt in A} = 0.12 \\times 4 = 0.48\\text{ litres}\\\\)"
+            },
+            {
+              "explain": "Calculate the volume of pure salt in Container B.",
+              "work": "\\\\(\\text{Salt in B} = 0.15 \\times 6 = 0.90\\text{ litres}\\\\)"
+            },
+            {
+              "explain": "Sum the salt volumes and the total solution volumes.",
+              "work": "\\\\(\\text{Total Salt} = 0.48 + 0.90 = 1.38\\text{ L}, \\quad \\text{Total Solution} = 4 + 6 = 10\\text{ L}\\\\)"
+            },
+            {
+              "explain": "Divide the total salt by the total solution volume and multiply by 100 to get the final percentage.",
+              "work": "\\\\(\\text{Concentration} = \\frac{1.38}{10} \\times 100 = 13.8\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-25",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A high-interest cryptocurrency yield pool decreases its reward payout by 20% in the first quarter, then decreases it again by 15% in the second quarter. What single percentage discount would represent the total reward decrease over the two quarters?",
+          "options": [
+            "32%",
+            "35%",
+            "36%",
+            "30%"
+          ],
+          "answer": 0,
+          "hint": "Apply the multipliers 0.80 * 0.85 and subtract the result from 1.",
+          "steps": [
+            {
+              "explain": "Express the initial reward as a variable \\(R\\) and apply the first quarter decrease multiplier.",
+              "work": "\\\\(\\text{Q1 Reward} = R \\times (1 - 0.20) = 0.80R\\\\)"
+            },
+            {
+              "explain": "Apply the second quarter decrease multiplier to the Q1 reward.",
+              "work": "\\\\(\\text{Q2 Reward} = 0.80R \\times (1 - 0.15) = 0.80R \\times 0.85 = 0.68R\\\\)"
+            },
+            {
+              "explain": "Determine the total percentage decrease by comparing the final multiplier with 100%.",
+              "work": "\\\\(\\text{Total Decrease} = 1 - 0.68 = 0.32\\\\)"
+            },
+            {
+              "explain": "Convert this decimal difference to percentage representation.",
+              "work": "\\\\(\\text{Percentage decrease} = 32\\%\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A real estate investment trust reports that a property's value rose by 10% in 2023, but then fell by 10% in 2024. If the final value is $891,000, what was the value of the property before the 2023 increase?",
+          "options": [
+            "$900,000",
+            "$891,000",
+            "$910,000",
+            "$920,000"
+          ],
+          "answer": 0,
+          "hint": "Set up the equation Initial * 1.10 * 0.90 = $891,000.",
+          "steps": [
+            {
+              "explain": "Write the equation expressing the compound change in property value.",
+              "work": "\\\\(\\text{Initial Value} \\times (1 + 0.10) \\times (1 - 0.10) = \\$891,000\\\\)"
+            },
+            {
+              "explain": "Simplify the combined multiplier.",
+              "work": "\\\\(1.10 \\times 0.90 = 0.99\\\\)"
+            },
+            {
+              "explain": "Isolate the initial value by dividing the final price by the simplified multiplier.",
+              "work": "\\\\(\\text{Initial Value} = \\frac{891,000}{0.99}\\\\)"
+            },
+            {
+              "explain": "Carry out the division to find the original value.",
+              "work": "\\\\(\\text{Initial Value} = 900,000\\\\)"
+            },
+            {
+              "explain": "State the pre-increase value of the property in dollars.",
+              "work": "\\\\(\\text{Value} = \\$900,000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A tax law change states that high-earning individuals must pay a 37% tax on any income exceeding $180,000. If an executive pays $14,800 in tax under this rule, what was the executive's total gross income?",
+          "options": [
+            "$220,000",
+            "$230,000",
+            "$210,000",
+            "$200,000"
+          ],
+          "answer": 0,
+          "hint": "Divide the tax by 0.37 to find the excess income, then add $180,000.",
+          "steps": [
+            {
+              "explain": "Set up an equation representing tax paid as 37% of the income in excess of $180,000.",
+              "work": "\\\\(0.37 \\times (\\text{Total Income} - 180,000) = 14,800\\\\)"
+            },
+            {
+              "explain": "Isolate the excess income term by dividing the tax by 0.37.",
+              "work": "\\\\(\\text{Total Income} - 180,000 = \\frac{14,800}{0.37}\\\\)"
+            },
+            {
+              "explain": "Perform the division to find the excess income.",
+              "work": "\\\\(\\text{Total Income} - 180,000 = 40,000\\\\)"
+            },
+            {
+              "explain": "Add $180,000 to the excess income to obtain the total gross income.",
+              "work": "\\\\(\\text{Total Income} = 40,000 + 180,000 = 220,000\\\\)"
+            },
+            {
+              "explain": "State the final gross income amount.",
+              "work": "\\\\(\\text{Total Income} = \\$220,000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-28",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A boutique distillery produces a premium gin. If the gin has a volume of 700 mL and contains 42% pure alcohol, how much water (in mL) must be added to dilute the gin so that its alcohol content becomes 35%?",
+          "options": [
+            "100",
+            "150",
+            "120",
+            "140"
+          ],
+          "answer": 3,
+          "hint": "Find the constant volume of alcohol first, then solve for the new total volume.",
+          "steps": [
+            {
+              "explain": "Calculate the volume of pure alcohol in the 700 mL gin bottle.",
+              "work": "\\\\(\\text{Alcohol Volume} = 0.42 \\times 700 = 294\\text{ mL}\\\\)"
+            },
+            {
+              "explain": "Write the relation where this alcohol volume becomes 35% of the new diluted mixture volume.",
+              "work": "\\\\(35\\% \\times \\text{New Total Volume} = 294\\text{ mL}\\\\)"
+            },
+            {
+              "explain": "Solve for the new total volume by dividing the alcohol volume by 0.35.",
+              "work": "\\\\(\\text{New Total Volume} = \\frac{294}{0.35} = 840\\text{ mL}\\\\)"
+            },
+            {
+              "explain": "Subtract the original volume from the new total volume to find the volume of water to add.",
+              "work": "\\\\(\\text{Water to add} = 840 - 700 = 140\\text{ mL}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A machinery wholesale distributor marks up its industrial generators by 50% to sell to retail stores. The retail stores then mark up the price by 30% for general customers. If a contractor buys a generator from a retail store for $3900, what was the machinery distributor's wholesale cost?",
+          "options": [
+            "$1900",
+            "$2200",
+            "$2100",
+            "$2000"
+          ],
+          "answer": 3,
+          "hint": "Divide the final price by 1.30, and then by 1.50.",
+          "steps": [
+            {
+              "explain": "Set up the relation where the wholesale cost undergoes two successive markups.",
+              "work": "\\\\(\\text{Wholesale Cost} \\times 1.50 \\times 1.30 = \\$3900\\\\)"
+            },
+            {
+              "explain": "Multiply the two markup factors to find the composite multiplier.",
+              "work": "\\\\(1.50 \\times 1.30 = 1.95\\\\)"
+            },
+            {
+              "explain": "Isolate the wholesale cost by dividing the final price by the composite multiplier.",
+              "work": "\\\\(\\text{Wholesale Cost} = \\frac{3900}{1.95}\\\\)"
+            },
+            {
+              "explain": "Compute the division to find the wholesale cost.",
+              "work": "\\\\(\\text{Wholesale Cost} = 2000\\\\)"
+            },
+            {
+              "explain": "State the final wholesale cost of the generator.",
+              "work": "\\\\(\\text{Wholesale Cost} = \\$2000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-3b-30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An offshore engineering firm operates a heavy drill rig. Due to mechanical wear, drilling speed declines by 15% in year one. In year two, a hardware upgrade improves this degraded speed by 15%. If the initial drilling speed was 80 m/h, what is the speed (in m/h) after the upgrade?",
+          "options": [
+            "80",
+            "78.2",
+            "76.5",
+            "79.1"
+          ],
+          "answer": 1,
+          "hint": "Calculate 85% of 80 m/h, then find 115% of that result.",
+          "steps": [
+            {
+              "explain": "Calculate the drilling speed after the first year's 15% decline.",
+              "work": "\\\\(\\text{Year 1 Speed} = 80 \\times (1 - 0.15) = 80 \\times 0.85 = 68\\text{ m/h}\\\\)"
+            },
+            {
+              "explain": "Calculate the speed after the hardware upgrade, which increases Year 1 speed by 15%.",
+              "work": "\\\\(\\text{Year 2 Speed} = 68 \\times (1 + 0.15) = 68 \\times 1.15 = 78.2\\text{ m/h}\\\\)"
+            },
+            {
+              "explain": "Conclude with the drilling speed in meters per hour.",
+              "work": "\\\\(\\text{Final drilling speed} = 78.2\\text{ m/h}\\\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y9-3f",
+      "code": "3F",
+      "title": "Compound interest",
+      "questions": [
+        {
+          "id": "sg2022-q4d",
+          "type": "multipart",
+          "stem": "Josh invests \\(\\$50\\,000\\) into an account which earns \\(6\\%\\) interest p.a., compounded annually. (i) What is the value of the account at the end of eight years? (ii) How many years will it take for him to accumulate a total interest of \\(\\$200\\,000\\)?",
+          "parts": [
+            {
+              "id": "sg2022-q4d-i",
+              "type": "mc",
+              "stem": "Josh invests \\(\\$50\\,000\\) into an account which earns \\(6\\%\\) interest p.a., compounded annually. What is the value of the account at the end of eight years? Give your answer correct to the nearest cent.",
+              "options": [
+                "\\(\\$52\\,000.00\\)",
+                "\\(\\$80\\,000.00\\)",
+                "\\(\\$74\\,012.21\\)",
+                "\\(\\$79\\,692.40\\)"
+              ],
+              "answer": 3,
+              "hint": "Use \\(A=P(1+r)^n\\) with \\(P=50\\,000\\), \\(r=0.06\\) and \\(n=8\\).",
+              "steps": [
+                {
+                  "explain": "Use the compound interest formula \\(A=P(1+r)^n\\), with principal \\(P=50\\,000\\), annual rate \\(r=0.06\\) and \\(n=8\\) years.",
+                  "work": "\\(A=50\\,000(1.06)^8\\)"
+                },
+                {
+                  "explain": "Evaluate and round to the nearest cent.",
+                  "work": "\\(A\\approx\\$79\\,692.40\\)"
+                }
+              ],
+              "meta": {
+                "source": "Sydney Grammar School Form III Annual Examination 2022",
+                "school": "Sydney Grammar School",
+                "examType": "Annual Examination",
+                "grade": "9"
+              }
+            },
+            {
+              "id": "sg2022-q4d-ii",
+              "type": "mc",
+              "stem": "Using the same investment (\\(\\$50\\,000\\) at \\(6\\%\\) p.a. compounded annually), how many years will it take for Josh to accumulate a total interest of \\(\\$200\\,000\\)? Give your answer rounded up to the nearest year.",
+              "options": [
+                "\\(23\\) years",
+                "\\(24\\) years",
+                "\\(28\\) years",
+                "\\(27\\) years"
+              ],
+              "answer": 2,
+              "hint": "Total interest of \\(\\$200\\,000\\) means the account balance reaches \\(\\$250\\,000\\). Solve \\(50\\,000(1.06)^n=250\\,000\\) using logarithms.",
+              "steps": [
+                {
+                  "explain": "A total interest of \\(\\$200\\,000\\) means the balance has grown to \\(50\\,000+200\\,000=\\$250\\,000\\). Set up the equation.",
+                  "work": "\\(50\\,000(1.06)^n=250\\,000\\)"
+                },
+                {
+                  "explain": "Divide both sides by \\(50\\,000\\).",
+                  "work": "\\((1.06)^n=5\\)"
+                },
+                {
+                  "explain": "Take \\(\\log\\) of both sides and use the power law to bring \\(n\\) down.",
+                  "work": "\\(n\\log(1.06)=\\log5 \\Rightarrow n=\\dfrac{\\log5}{\\log1.06}\\)"
+                },
+                {
+                  "explain": "Evaluate, then round UP to the nearest whole year (since the interest target is only reached once the full year's interest is credited).",
+                  "work": "\\(n\\approx27.62 \\Rightarrow n=28\\) years"
+                }
+              ],
+              "meta": {
+                "source": "Sydney Grammar School Form III Annual Examination 2022",
+                "school": "Sydney Grammar School",
+                "examType": "Annual Examination",
+                "grade": "9"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-3g",
+      "code": "3G",
+      "title": "Depreciation",
+      "questions": [
+        {
+          "id": "sg2022-q6d",
+          "type": "mc",
+          "stem": "Alex's average homework effort, measured in minutes per week, depreciates by \\(15\\%\\) a week over a ten week term. How long did Alex work on homework in the first week of term if, in the tenth week of term, he completed two hours? Give your answer correct to the nearest minute.",
+          "options": [
+            "\\(704\\) minutes",
+            "\\(518\\) minutes",
+            "\\(140\\) minutes",
+            "\\(459\\) minutes"
+          ],
+          "answer": 1,
+          "hint": "The tenth week is \\(9\\) depreciation steps after the first week. Use \\(A=P(1-r)^n\\) with \\(n=9\\), and solve for \\(P\\).",
+          "steps": [
+            {
+              "explain": "Convert the week-10 effort to minutes, and note that week 10 is \\(9\\) weekly decreases after week 1.",
+              "work": "\\(2\\text{ hours}=120\\text{ minutes}, \\quad n=10-1=9\\)"
+            },
+            {
+              "explain": "Set up the depreciation equation \\(A=P(1-r)^n\\), with \\(A=120\\), \\(r=0.15\\), \\(n=9\\), and \\(P\\) the unknown week-1 effort.",
+              "work": "\\(120=P(0.85)^9\\)"
+            },
+            {
+              "explain": "Solve for \\(P\\) by dividing both sides by \\((0.85)^9\\).",
+              "work": "\\(P=\\dfrac{120}{(0.85)^9}\\)"
+            },
+            {
+              "explain": "Evaluate and round to the nearest minute.",
+              "work": "\\(P\\approx518\\) minutes"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>
+  <rect width='300' height='300' fill='#ffffff' />
+  <defs><marker id='arrow' viewBox='0 0 10 10' refX='5' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M 0 0 L 10 5 L 0 10 z' fill='#64748b' /></marker></defs>
+  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />
+  <line x1='150' y1='150' x2='46.63381171355009' y2='112.37778423417643' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='150' y1='150' x2='260' y2='150' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  marker-end='url(#arrow)'/>
+  <line x1='150' y1='150' x2='253.36618828644993' y2='112.37778423417645' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='46.63381171355009' y1='112.37778423417643' x2='253.36618828644993' y2='112.37778423417645' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  marker-end='url(#arrow)'/>
+  <line x1='260' y1='150' x2='253.36618828644993' y2='112.37778423417645' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <path d='M 194 150 A 44 44 0 0 0 108.65352468542002 134.95111369367058' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='158.59558479451306' y='105.25201622589572' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>160°</text>
+  <path d='M 164.471266360103 144.7328897927847 A 15.399999999999999 15.399999999999999 0 0 0 135.528733639897 144.7328897927847' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='150' y='128.6' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>α</text>
+  <path d='M 244.71896036531012 150 A 15.28103963468987 15.28103963468987 0 0 1 257.34647531457995 134.95111369367058' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='246.8308000656106' y='142.949729192154' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>β</text>
+  <path d='M 222.35633180051494 123.66444896392349 A 33 33 0 0 1 220.36618828644993 112.37778423417645' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='211.01945490692498' y='123.84465587385444' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>γ</text>
+  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />
+  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>
+  <circle cx='46.63381171355009' cy='112.37778423417643' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='34.63381171355009' y='108.37778423417643' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>P</text>
+  <circle cx='260' cy='150' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='272' y='160' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>Q</text>
+  <circle cx='253.36618828644993' cy='112.37778423417645' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='263.3661882864499' y='102.37778423417645' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>R</text>
+</svg>

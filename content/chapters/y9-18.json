@@ -1,0 +1,149 @@
+{
+  "chapterId": "y9-18",
+  "title": "Chapter 18: Rates and direct proportion",
+  "year": "2022",
+  "topics": [
+    {
+      "topicId": "y9-18a",
+      "code": "18A",
+      "title": "Rates",
+      "questions": [
+        {
+          "id": "sg2022-q7b",
+          "type": "multipart",
+          "stem": "A passenger on a train travelling due north at 160 km/h sees a light due east at 9pm; at 9:45pm the light bears 150°T.",
+          "parts": [
+            {
+              "id": "sg2022-q7b-i",
+              "type": "mc",
+              "stem": "How far did the passenger travel between 9pm and 9:45pm?",
+              "options": [
+                "\\(120\\text{ km}\\)",
+                "\\(107\\text{ km}\\)",
+                "\\(213\\text{ km}\\)",
+                "\\(160\\text{ km}\\)"
+              ],
+              "answer": 0,
+              "hint": "45 minutes is \\(\\dfrac{45}{60}\\) of an hour. Use \\(\\text{distance}=\\text{speed}\\times\\text{time}\\).",
+              "steps": [
+                {
+                  "explain": "45 minutes is \\(\\dfrac{45}{60}=\\dfrac34\\) of an hour. Use \\(d=v\\times t\\).",
+                  "work": "\\(d=160\\times\\dfrac{45}{60}\\)",
+                  "figure": {
+                    "svg": "fig:9911818e03"
+                  }
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(d=120\\text{ km}\\)"
+                }
+              ],
+              "meta": {
+                "source": "Sydney Grammar School Form III Annual Examination 2022",
+                "school": "Sydney Grammar School",
+                "examType": "Annual Examination",
+                "grade": "9"
+              }
+            },
+            {
+              "id": "sg2022-q7b-ii",
+              "type": "mc",
+              "stem": "How far away is the light from the passenger at 9:45pm? Give your answer as an exact value.",
+              "options": [
+                "\\(80\\sqrt3\\text{ km}\\)",
+                "\\(240\\text{ km}\\)",
+                "\\(60\\sqrt3\\text{ km}\\)",
+                "\\(120\\sqrt3\\text{ km}\\)"
+              ],
+              "answer": 0,
+              "hint": "In the triangle formed by the two passenger positions and the light, the angle at the 9pm position is \\(90°\\) (light due east) and the angle at the 9:45pm position is \\(180°-150°=30°\\) (measuring from due south). Use the sine rule.",
+              "steps": [
+                {
+                  "explain": "At the 9pm position, the angle between north (toward the 9:45pm position) and east (toward the light) is \\(90°\\). At the 9:45pm position, the bearing to the light is \\(150°\\text{T}\\), so the angle between south (back toward the 9pm position) and the light is \\(180°-150°=30°\\).",
+                  "work": "Angle at 9pm position \\(=90°\\), angle at 9:45pm position \\(=30°\\)",
+                  "figure": {
+                    "svg": "fig:da046c4f56"
+                  }
+                },
+                {
+                  "explain": "The third angle (at the light) is \\(180°-90°-30°=60°\\). Apply the sine rule, using the known side (\\(120\\text{ km}\\)) opposite this \\(60°\\) angle.",
+                  "work": "\\(\\dfrac{\\text{Light distance}}{\\sin90°}=\\dfrac{120}{\\sin60°}\\)"
+                },
+                {
+                  "explain": "Solve for the distance to the light.",
+                  "work": "\\(\\text{Light distance}=\\dfrac{120\\times1}{\\sin60°}=\\dfrac{120}{\\frac{\\sqrt3}{2}}=\\dfrac{240}{\\sqrt3}\\)"
+                },
+                {
+                  "explain": "Rationalise the denominator to give the exact value.",
+                  "work": "\\(=\\dfrac{240\\sqrt3}{3}=80\\sqrt3\\text{ km}\\)"
+                }
+              ],
+              "meta": {
+                "source": "Sydney Grammar School Form III Annual Examination 2022",
+                "school": "Sydney Grammar School",
+                "examType": "Annual Examination",
+                "grade": "9"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "sg2022-q8e",
+          "type": "mc",
+          "stem": "A professor is due to be picked up at university by her husband immediately after her last lecture of the day is scheduled to finish. She unexpectedly finishes 3 hours early and immediately begins to walk home at a constant speed of \\(6\\text{ km/h}\\). Her husband, who knows nothing of her early finish, leaves home in his car at exactly the right time in order to meet her at the university at the originally anticipated completion time of her last lecture. On the way to the university he sees his wife and picks her up \\(9\\text{ km}\\) from home. They immediately drive home together and reach home \\(2\\) hours earlier than was scheduled. Calculate the average speed of the car for its entire journey.",
+          "options": [
+            "\\(24\\text{ km/h}\\)",
+            "\\(18\\text{ km/h}\\)",
+            "\\(12\\text{ km/h}\\)",
+            "\\(9\\text{ km/h}\\)"
+          ],
+          "answer": 2,
+          "hint": "Let \\(D\\) be the distance from home to university and \\(v\\) the (constant) car speed. Set up equations for when the husband and wife meet, and for the \"2 hours earlier\" arrival condition, then solve simultaneously.",
+          "steps": [
+            {
+              "explain": "Let \\(D\\) = distance from home to university, \\(v\\) = constant car speed. Originally, the husband would arrive at university at the lecture's scheduled end time \\(t_0\\) (leaving home at \\(t_0-D/v\\)); originally, they would arrive home at \\(t_0+D/v\\).",
+              "work": "Let \\(D\\)=home-to-uni distance, \\(v\\)=car speed",
+              "figure": {
+                "svg": "fig:2e6c29eb55"
+              }
+            },
+            {
+              "explain": "She finishes at \\(t_0-3\\) and walks home; they meet \\(9\\text{ km}\\) from home, so she has walked \\(D-9\\text{ km}\\) by the meeting time. The husband reaches the same meeting point (\\(9\\text{ km}\\) from home) at time \\(t_0-\\dfrac{D-9}{v}\\). Actual arrival home is \\(2\\) hours earlier than the original \\(t_0+D/v\\); working through the timing (meeting-time equality and the \"2 hours earlier\" condition) gives two equations in \\(D\\) and \\(v\\).",
+              "work": "\\(2D-18=2v\\) (from the \"2 hours earlier\" condition) \\(\\Rightarrow D=v+9\\)",
+              "figure": {
+                "svg": "fig:f0749c15cd"
+              }
+            },
+            {
+              "explain": "The meeting-time equation (husband's arrival time at the meeting point = wife's arrival time there) simplifies to a relationship between \\(v\\) and \\((D-9)\\); substituting \\(D-9=v\\) (from the previous step) gives an equation in \\(v\\) alone.",
+              "work": "\\(3=(D-9)\\left(\\dfrac16+\\dfrac1v\\right) \\Rightarrow 3=v\\left(\\dfrac16+\\dfrac1v\\right)=\\dfrac{v}{6}+1\\)",
+              "figure": {
+                "svg": "fig:c32ad11e15"
+              }
+            },
+            {
+              "explain": "Solve for \\(v\\).",
+              "work": "\\(\\dfrac{v}{6}=2 \\Rightarrow v=12\\)"
+            },
+            {
+              "explain": "Since the car travels at this constant speed \\(v\\) throughout, the average speed for the whole journey is simply \\(v\\).",
+              "work": "\\(\\text{Average speed}=12\\text{ km/h}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        }
+      ]
+    }
+  ]
+}

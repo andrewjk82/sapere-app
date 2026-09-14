@@ -1,0 +1,37 @@
+{
+  "chapterId": "exam:year7ch23e",
+  "title": "Exam Practice",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "exam:year7ch23e",
+      "code": "",
+      "title": "Writing algebraic expressions",
+      "questions": [
+        {
+          "id": "y7-23e-q1e",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "",
+          "inactive": true,
+          "answer": "45y means 45 multiplied by y. 4 \\times 5 \\times y evaluates to 20y.",
+          "steps": [
+            {
+              "explain": "The expression \\(45y\\) has a coefficient of 45.",
+              "work": "45 \\times y"
+            },
+            {
+              "explain": "The expression \\(4 \\times 5 \\times y\\) has a calculation to perform first.",
+              "work": "(4 \\times 5) \\times y = 20y"
+            },
+            {
+              "explain": "Therefore, they represent different values (\\(45y\\) vs \\(20y\\)).",
+              "work": "45y \\neq 20y"
+            }
+          ],
+          "timeLimit": 30
+        }
+      ]
+    }
+  ]
+}

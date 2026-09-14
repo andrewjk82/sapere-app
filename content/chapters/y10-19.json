@@ -1,0 +1,223 @@
+{
+  "chapterId": "y10-19",
+  "title": "Chapter 19: Trigonometric functions",
+  "year": "2012",
+  "topics": [
+    {
+      "topicId": "y10-19a",
+      "code": "19a",
+      "title": "Angles in the four quadrants",
+      "questions": [
+        {
+          "id": "jrhy2008-q11",
+          "type": "mc",
+          "stem": "Given that \\(\\sin A=t\\) and \\(90° \\lt A \\lt 180°\\), then \\(\\cos A\\) is:",
+          "options": [
+            "\\(\\sqrt{1+t^2}\\)",
+            "\\(-\\sqrt{1-t^2}\\)",
+            "\\(\\sqrt{1-t^2}\\)",
+            "\\(-\\sqrt{1+t^2}\\)"
+          ],
+          "answer": 1,
+          "hint": "In the range \\(90° \\lt A \\lt 180°\\) (second quadrant), cosine is negative.",
+          "steps": [
+            {
+              "explain": "Use the Pythagorean identity to express \\(\\cos A\\) in terms of \\(\\sin A=t\\), taking the square root of both sides.",
+              "work": "\\(\\sin^2A+\\cos^2A=1 \\Rightarrow \\cos A = \\pm\\sqrt{1-t^2}\\)"
+            },
+            {
+              "explain": "Since \\(90° \\lt A \\lt 180°\\) places \\(A\\) in the second quadrant, where cosine is negative, choose the negative root.",
+              "work": "\\(\\cos A = -\\sqrt{1-t^2}\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Half-Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-19d",
+      "code": "19d",
+      "title": "The trigonometric functions and their symmetries",
+      "questions": [
+        {
+          "id": "jr2012-q12",
+          "type": "mc",
+          "stem": "\\(\\cos[(90+\\alpha)°]-\\cos[(90-\\alpha)°]=\\)",
+          "options": [
+            "\\(-2\\cos(\\alpha°)\\)",
+            "\\(2\\sin(\\alpha°)\\)",
+            "\\(-2\\sin(\\alpha°)\\)",
+            "\\(2\\cos(\\alpha°)\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the identities \\(\\cos(90°+\\alpha)=-\\sin\\alpha\\) and \\(\\cos(90°-\\alpha)=\\sin\\alpha\\).",
+          "steps": [
+            {
+              "explain": "Apply the co-function identities for each term.",
+              "work": "\\(\\cos(90°+\\alpha) = -\\sin\\alpha, \\qquad \\cos(90°-\\alpha) = \\sin\\alpha\\)"
+            },
+            {
+              "explain": "Substitute and simplify.",
+              "work": "\\(-\\sin\\alpha - \\sin\\alpha = -2\\sin(\\alpha°)\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2012 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "jr2013-q6",
+          "type": "mc",
+          "stem": "\\(\\dfrac{\\cos^2x°-1}{\\sin(90°-x°)-1} = \\)",
+          "options": [
+            "\\(\\cos(x°)+1\\)",
+            "\\(\\text{cosec}(x°)+1\\)",
+            "\\(\\cos(x°)-1\\)",
+            "\\(\\cos(x°)\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(\\sin(90°-x°)=\\cos(x°)\\), then factorise the numerator (difference of squares, since \\(\\cos^2x-1=-(1-\\cos^2x)=-\\sin^2x\\), or factor directly as \\((\\cos x-1)(\\cos x+1)\\)).",
+          "steps": [
+            {
+              "explain": "Use the co-function identity \\(\\sin(90°-x°)=\\cos(x°)\\) to rewrite the denominator.",
+              "work": "\\(\\dfrac{\\cos^2x°-1}{\\cos x°-1}\\)"
+            },
+            {
+              "explain": "Factorise the numerator as a difference of squares.",
+              "work": "\\(\\cos^2x°-1 = (\\cos x°-1)(\\cos x°+1)\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\((\\cos x°-1)\\).",
+              "work": "\\(\\dfrac{(\\cos x°-1)(\\cos x°+1)}{\\cos x°-1} = \\cos(x°)+1\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-19e",
+      "code": "19E",
+      "title": "Trigonometric equations",
+      "questions": [
+        {
+          "id": "jr2013-qCa",
+          "type": "mc",
+          "stem": "Solve the equation \\(2\\cos x°=\\cot x°\\) for \\(0\\le x\\le360\\).",
+          "options": [
+            "\\(x=90, 270\\)",
+            "\\(x=30, 150\\)",
+            "\\(x=0, 180, 360\\)",
+            "\\(x=30, 90, 150, 270\\)"
+          ],
+          "answer": 3,
+          "hint": "Write \\(\\cot x°=\\dfrac{\\cos x°}{\\sin x°}\\), then factorise the resulting equation — you should get two separate cases to solve.",
+          "steps": [
+            {
+              "explain": "Rewrite \\(\\cot x°\\) in terms of sine and cosine, then rearrange to have zero on one side.",
+              "work": "\\(2\\cos x° = \\dfrac{\\cos x°}{\\sin x°} \\Rightarrow 2\\cos x°\\sin x° - \\cos x° = 0\\)"
+            },
+            {
+              "explain": "Factorise out \\(\\cos x°\\).",
+              "work": "\\(\\cos x°(2\\sin x°-1) = 0\\)"
+            },
+            {
+              "explain": "Solve each factor separately: \\(\\cos x°=0\\) gives \\(x=90,270\\); \\(\\sin x°=\\tfrac12\\) gives \\(x=30,150\\).",
+              "work": "\\(\\cos x°=0 \\Rightarrow x=90,270; \\qquad \\sin x°=\\dfrac12 \\Rightarrow x=30,150\\)"
+            },
+            {
+              "explain": "Combine all four solutions.",
+              "work": "\\(x = 30, 90, 150, 270\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "jr2013-qCb",
+          "type": "multipart",
+          "stem": "On the same set of axes, sketch the graphs of \\(y=3\\sin2x\\) and \\(y=\\cos^2x\\), for \\(-180°\\le x\\le180°\\), then state the number of solutions to \\(3\\sin2x-\\cos^2x=0\\) in this domain.",
+          "parts": [
+            {
+              "id": "jr2013-qCb-i",
+              "type": "review",
+              "stem": "(i) On the same set of axes, sketch the graphs of \\(y=3\\sin2x\\) and \\(y=\\cos^2x\\), for \\(-180°\\le x\\le180°\\).",
+              "answer": "",
+              "steps": [
+                {
+                  "explain": "\\(y=3\\sin2x\\) has amplitude 3 and period \\(180°\\) (since the angle is doubled, the period is \\(360°/2\\)).",
+                  "work": "\\(y=3\\sin2x\\): amplitude 3, period 180°, passing through the origin."
+                },
+                {
+                  "explain": "\\(y=\\cos^2x\\) ranges from 0 to 1 only (since it's a square), oscillating with period \\(180°\\) as well (since \\(\\cos^2x=\\tfrac12(1+\\cos2x)\\)).",
+                  "work": "\\(y=\\cos^2x\\): range \\([0,1]\\), period 180°, equal to 1 at \\(x=0,\\pm180°\\) and 0 at \\(x=\\pm90°\\)."
+                },
+                {
+                  "explain": "Sketch both curves on the same axes over \\([-180°,180°]\\) — the sine curve swings from \\(-3\\) to \\(3\\) while the squared-cosine curve stays flat between 0 and 1.",
+                  "work": "Both curves plotted on \\([-180°,180°]\\); note where they cross — this is used in part (ii)."
+                }
+              ]
+            },
+            {
+              "id": "jr2013-qCb-ii",
+              "type": "mc",
+              "stem": "(ii) Hence, or otherwise, state the number of solutions to the equation \\(3\\sin2x-\\cos^2x=0\\) for \\(-180°\\le x\\le180°\\).",
+              "options": [
+                "\\(2\\)",
+                "\\(3\\)",
+                "\\(4\\)",
+                "\\(6\\)"
+              ],
+              "answer": 0,
+              "hint": "Solving \\(3\\sin2x-\\cos^2x=0\\) is the same as finding where the two graphs from part (i) intersect — or factorise algebraically: write \\(\\sin2x=2\\sin x\\cos x\\) and take out the common factor \\(\\cos x\\).",
+              "steps": [
+                {
+                  "explain": "Solving \\(3\\sin2x-\\cos^2x=0\\) is equivalent to finding where the two graphs from part (i) intersect.",
+                  "work": "Count the crossing points of \\(y=3\\sin2x\\) and \\(y=\\cos^2x\\) on \\([-180°,180°]\\)."
+                },
+                {
+                  "explain": "Algebraically: substitute \\(\\sin2x=2\\sin x\\cos x\\) and factorise out \\(\\cos x\\).",
+                  "work": "\\(3(2\\sin x\\cos x)-\\cos^2x=0 ;\\Rightarrow; \\cos x(6\\sin x-\\cos x)=0\\)"
+                },
+                {
+                  "explain": "\\(\\cos x=0\\) gives 2 solutions in the domain; \\(6\\sin x=\\cos x \\Rightarrow \\tan x=\\tfrac16\\) gives another 2 solutions (one from \\(\\arctan\\tfrac16\\approx9.5°\\), one from adding \\(180°\\) then wrapping back into range at \\(\\approx-170.5°\\)).",
+                  "work": "\\(\\cos x=0 \\Rightarrow x=\\pm90°; \\qquad \\tan x=\\tfrac16 \\Rightarrow x\\approx9.5°,\\,-170.5°\\)"
+                },
+                {
+                  "explain": "Combine all solutions found.",
+                  "work": "\\(\\therefore\\) there are \\(4\\) solutions to \\(3\\sin2x-\\cos^2x=0\\) for \\(-180°\\le x\\le180°\\)."
+                }
+              ]
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60,
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    }
+  ]
+}

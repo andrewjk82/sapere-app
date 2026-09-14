@@ -1,0 +1,22 @@
+<svg viewBox="0 0 300 160" width="300" height="160" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:2rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+  <!-- Original Journey -->
+  <text x="15" y="30" text-anchor="start" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#64748b">Scheduled Car Journey</text>
+  <line x1="30" y1="50" x2="270" y2="50" stroke="#64748b" stroke-width="2" stroke-dasharray="4 2"/>
+  <circle cx="30" cy="50" r="4" fill="#64748b"/>
+  <circle cx="270" cy="50" r="4" fill="#64748b"/>
+  <text x="150" y="42" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#64748b">Drive to Uni and back: Total 2D</text>
+
+  <!-- Actual Journey -->
+  <text x="15" y="90" text-anchor="start" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#dc2626">Actual Car Journey</text>
+  <line x1="30" y1="110" x2="110" y2="110" stroke="#dc2626" stroke-width="3"/>
+  <circle cx="30" cy="110" r="5" fill="#dc2626"/>
+  <circle cx="110" cy="110" r="5" fill="#dc2626"/>
+  <text x="70" y="102" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#dc2626">2 × 9 = 18 km</text>
+
+  <!-- Saved Journey -->
+  <line x1="110" y1="110" x2="270" y2="110" stroke="#16a34a" stroke-width="3" stroke-dasharray="6 4"/>
+  <circle cx="270" cy="110" r="5" fill="#16a34a"/>
+  <text x="190" y="102" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#16a34a">Saved part: 2(D - 9) km</text>
+
+  <text x="150" y="140" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#1e293b">Time saved by not driving the green part = 2 hours</text>
+</svg>

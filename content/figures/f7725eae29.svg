@@ -1,0 +1,26 @@
+<svg viewBox="0 0 460 400" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<line x1="110" y1="320" x2="280" y2="230" stroke="#16a34a" stroke-width="2.5"/>
+<line x1="310" y1="100" x2="280" y2="230" stroke="#16a34a" stroke-width="2.5"/>
+<line x1="110" y1="320" x2="310" y2="100" stroke="#475569" stroke-width="1.5" stroke-dasharray="2,3"/>
+<line x1="110" y1="320" x2="110" y2="296" stroke="#475569" stroke-width="1.5"/>
+<path d="M 105 302 L 110 292 L 115 302 Z" fill="#475569"/>
+<text x="110" y="288" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">N</text>
+<text x="110" y="288" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="700" fill="#1e293b">N</text>
+<line x1="310" y1="100" x2="310" y2="76" stroke="#475569" stroke-width="1.5"/>
+<path d="M 305 82 L 310 72 L 315 82 Z" fill="#475569"/>
+<text x="310" y="68" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">N</text>
+<text x="310" y="68" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="700" fill="#1e293b">N</text>
+<circle cx="280" cy="230" r="2.5" fill="#1e293b"/>
+<text x="292" y="220" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">L (lighthouse)</text>
+<text x="292" y="220" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" fill="#1e293b">L (lighthouse)</text>
+<circle cx="110" cy="320" r="2.5" fill="#1e293b"/>
+<text x="92" y="330" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">A</text>
+<text x="92" y="330" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" fill="#1e293b">A</text>
+<circle cx="310" cy="100" r="2.5" fill="#1e293b"/>
+<text x="324" y="104" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">B</text>
+<text x="324" y="104" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" fill="#1e293b">B</text>
+<text x="180" y="210" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">AB = 500 m</text>
+<text x="180" y="210" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#1e293b">AB = 500 m</text>
+<text x="290" y="260" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">∠ALB = 90°</text>
+<text x="290" y="260" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#16a34a">∠ALB = 90°</text>
+</svg>

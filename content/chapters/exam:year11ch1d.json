@@ -1,0 +1,636 @@
+{
+  "chapterId": "exam:year11ch1d",
+  "title": "Exam year11ch1d",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ch1d",
+      "code": "EXAM",
+      "title": "Exam",
+      "questions": [
+        {
+          "id": "02d1a04690899e6dc7ee781d5d9a3f67",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve for \\( x \\): \\( x - 6\\sqrt{x} + 8 = 0 \\)",
+          "answer": "0",
+          "hint": "Let \\( u = \\sqrt{x} \\). This means \\( u^2 = x \\). Substitute these in to form a quadratic equation.",
+          "solution": "\\(\\sqrt{x} = 2 \\implies x = 4; \\quad \\sqrt{x} = 4 \\implies x = 16\\)",
+          "steps": [
+            {
+              "explain": "This is a \"hidden quadratic\" — substitute u = √x so the equation becomes quadratic in u.",
+              "work": "\\(u = \\sqrt{x} \\implies u^2 - 6u + 8 = 0\\)"
+            },
+            {
+              "explain": "Factor the quadratic in u: find two numbers that multiply to 8 and add to -6 (they are -2 and -4).",
+              "work": "\\((u-2)(u-4) = 0 \\implies u = 2, 4\\)"
+            },
+            {
+              "explain": "Undo the substitution: since u = √x, square each value of u to recover x.",
+              "work": "\\(\\sqrt{x} = 2 \\implies x = 4; \\quad \\sqrt{x} = 4 \\implies x = 16\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "0c6273f8a1039597ddb2516eacf4a51d",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Solve by factoring: \\( 5x^2 - 26x + 5 = 0 \\)",
+          "answer": "0",
+          "hint": "Find factors of 25 that add to -26.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the equation and the method to use (factoring).",
+              "work": "Solve by factoring: \\( 5x^2 - 26x + 5 = 0 \\)"
+            },
+            {
+              "explain": "Set up the equation in standard form and find factors.",
+              "work": "\\(5x(x - 5) - 1(x - 5) = 0\\)"
+            },
+            {
+              "explain": "Write the factored form of the quadratic.",
+              "work": "\\((5x - 1)(x - 5) = 0\\)"
+            },
+            {
+              "explain": "Solve each factor equal to zero to find the roots.",
+              "work": "\\( (5x-1)(x-5) = 0 \\Rightarrow x = 5, \\frac{1}{5} \\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90,
+          "meta": {
+            "verificationNeeded": true
+          }
+        },
+        {
+          "id": "114db22804ab07b88abccc0b9edb6385",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve for \\( x \\): \\( x - 8\\sqrt{x} + 15 = 0 \\)",
+          "answer": "0",
+          "hint": "Let \\( u = \\sqrt{x} \\). This means \\( u^2 = x \\). Substitute these in to form a quadratic equation.",
+          "solution": "\\(\\sqrt{x} = 3 \\implies x = 9; \\quad \\sqrt{x} = 5 \\implies x = 25\\)",
+          "steps": [
+            {
+              "explain": "This is a \"hidden quadratic\" — substitute u = √x so the equation becomes quadratic in u.",
+              "work": "\\(u = \\sqrt{x} \\implies u^2 - 8u + 15 = 0\\)"
+            },
+            {
+              "explain": "Factor the quadratic in u: find two numbers that multiply to 15 and add to -8 (they are -3 and -5).",
+              "work": "\\((u-3)(u-5) = 0 \\implies u = 3, 5\\)"
+            },
+            {
+              "explain": "Undo the substitution: since u = √x, square each value of u to recover x.",
+              "work": "\\(\\sqrt{x} = 3 \\implies x = 9; \\quad \\sqrt{x} = 5 \\implies x = 25\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "114f420e680907a09a8ef89329fcc05f",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve the equation reducible to a quadratic form: \\( x^4 - 5x^2 + 6 = 0 \\)",
+          "answer": "0",
+          "hint": "Let \\( u = x^2 \\). Rewrite the equation in terms of \\( u \\) as a quadratic equation, solve for \\( u \\), then substitute back to find \\( x \\).",
+          "solution": "\\(x^2 = 2 \\implies x = \\pm\\sqrt{2}; \\quad x^2 = 3 \\implies x = \\pm\\sqrt{3}\\)",
+          "steps": [
+            {
+              "explain": "This is a \"hidden quadratic\" in x^2 — substitute u = x^2 so the equation becomes quadratic in u.",
+              "work": "\\(u = x^2 \\implies u^2 - 5u + 6 = 0\\)"
+            },
+            {
+              "explain": "Factor the quadratic in u: find two numbers that multiply to 6 and add to -5 (they are -2 and -3).",
+              "work": "\\((u-2)(u-3) = 0 \\implies u = 2, 3\\)"
+            },
+            {
+              "explain": "Undo the substitution: since u = x^2, take the square root of each value of u (both + and - roots).",
+              "work": "\\(x^2 = 2 \\implies x = \\pm\\sqrt{2}; \\quad x^2 = 3 \\implies x = \\pm\\sqrt{3}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "231c10b5ee9072f0f7fefe5843da2498",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Solve by factoring: \\( 3a^2 = 7a \\)",
+          "answer": "0",
+          "hint": "Move all terms to one side.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the equation and the method to use (factoring).",
+              "work": "Solve by factoring: \\( 3a^2 = 7a \\)"
+            },
+            {
+              "explain": "Set up the equation in standard form and find factors.",
+              "work": "\\(a(3a - 7) = 0\\)"
+            },
+            {
+              "explain": "Write the factored form of the quadratic.",
+              "work": "\\(a = 0, frac{7}{3}\\)"
+            },
+            {
+              "explain": "Solve each factor equal to zero to find the roots.",
+              "work": "\\( 3a^2 - 7a = 0 \\Rightarrow a(3a - 7) = 0 \\Rightarrow a = 0, \\frac{7}{3} \\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60,
+          "meta": {
+            "verificationNeeded": true
+          }
+        },
+        {
+          "id": "23d623cd53221924be0cd12afcdcc3aa",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Solve by factoring: \\( 3a^2 - 8a + 4 = 0 \\)",
+          "answer": "0",
+          "hint": "Multiply 3 by 4 to get 12. Find factors of 12 that add to -8.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the equation and the method to use (factoring).",
+              "work": "Solve by factoring: \\( 3a^2 - 8a + 4 = 0 \\)"
+            },
+            {
+              "explain": "Set up the equation in standard form and find factors.",
+              "work": "\\(3a(a - 2) - 2(a - 2) = 0\\)"
+            },
+            {
+              "explain": "Write the factored form of the quadratic.",
+              "work": "\\((3a - 2)(a - 2) = 0\\)"
+            },
+            {
+              "explain": "Solve each factor equal to zero to find the roots.",
+              "work": "\\( (3a-2)(a-2) = 0 \\Rightarrow a = 2, \\frac{2}{3} \\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90,
+          "meta": {
+            "verificationNeeded": true
+          }
+        },
+        {
+          "id": "3c6d284c837474ac72ccfdcc1ed75078",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Solve by factoring: \\( 4y^2 - 7y + 3 = 0 \\)",
+          "answer": "0",
+          "hint": "Find factors of 12 that sum to -7.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the equation and the method to use (factoring).",
+              "work": "Solve by factoring: \\( 4y^2 - 7y + 3 = 0 \\)"
+            },
+            {
+              "explain": "Set up the equation in standard form and find factors.",
+              "work": "\\(4y(y - 1) - 3(y - 1) = 0\\)"
+            },
+            {
+              "explain": "Write the factored form of the quadratic.",
+              "work": "\\((4y - 3)(y - 1) = 0\\)"
+            },
+            {
+              "explain": "Solve each factor equal to zero to find the roots.",
+              "work": "\\( (4y-3)(y-1) = 0 \\Rightarrow y = 1, \\frac{3}{4} \\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90,
+          "meta": {
+            "verificationNeeded": true
+          }
+        },
+        {
+          "id": "480675d9a8ceb9efb67f8a7c1b4f9597",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Solve by factoring: \\( 4y^2 = 3y \\)",
+          "answer": "0",
+          "hint": "Subtract \\( 3y \\) from both sides.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(y(4y - 3) = 0\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(y = 0, frac{3}{4}\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60,
+          "meta": {
+            "verificationNeeded": true
+          }
+        },
+        {
+          "id": "54c281b5472f262ca8f385b7ed738835",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Solve by factoring: \\( 3n^2 - n - 4 = 0 \\)",
+          "answer": "0",
+          "hint": "Find factors of -12 that add to -1.",
+          "solution": "\\(3n-4=0 \\implies n=\\frac{4}{3}; \\quad n+1=0 \\implies n=-1\\)",
+          "steps": [
+            {
+              "explain": "Factor the quadratic 3n^2 - n - 4. Look for factors of 3 and -4 that combine to give the middle coefficient -1.",
+              "work": "\\(3n^2 - n - 4 = (3n - 4)(n + 1)\\)"
+            },
+            {
+              "explain": "Verify by expanding: 3n·n + 3n·1 - 4·n - 4·1 = 3n^2 + 3n - 4n - 4 = 3n^2 - n - 4 ✓.",
+              "work": "\\((3n-4)(n+1) = 0\\)"
+            },
+            {
+              "explain": "Set each factor to zero and solve for n.",
+              "work": "\\(3n-4=0 \\implies n=\\frac{4}{3}; \\quad n+1=0 \\implies n=-1\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90,
+          "meta": {
+            "verificationNeeded": true
+          }
+        },
+        {
+          "id": "7159fc59e9c35d639cfa18441fdcab8a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Solve the equation: \\( y + \\frac{3}{y} = \\frac{13}{2} \\)",
+          "answer": "0",
+          "hint": "Multiply both sides by \\( 2y \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Multiply all terms by y to clear the fraction.",
+              "work": "\\(y^2 + 3 = \\frac{13y}{2}\\)"
+            },
+            {
+              "explain": "Multiply by 2 to eliminate the remaining fraction.",
+              "work": "\\(2y^2 + 6 = 13y\\)"
+            },
+            {
+              "explain": "Rearrange into standard form.",
+              "work": "\\(2y^2 - 13y + 6 = 0\\)"
+            },
+            {
+              "explain": "Factor by finding factors of 2×6=12 that sum to -13. Use -1 and -12.",
+              "work": "\\(2y^2 - y - 12y + 6 = 0\\)"
+            },
+            {
+              "explain": "Factor by grouping.",
+              "work": "\\(y(2y - 1) - 6(2y - 1) = 0\\)"
+            },
+            {
+              "explain": "Write as product of binomials and solve.",
+              "work": "\\((2y - 1)(y - 6) = 0 \\Rightarrow y = \\frac{1}{2}, 6\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "75e20c0b255e36ef32a90f76359df5ad",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve for \\( x \\): \\( x - 4\\sqrt{x} + 3 = 0 \\)",
+          "answer": "0",
+          "hint": "Let \\( u = \\sqrt{x} \\). This means \\( u^2 = x \\). Substitute these in to form a quadratic equation.",
+          "solution": "\\(\\sqrt{x} = 1 \\implies x = 1; \\quad \\sqrt{x} = 3 \\implies x = 9\\)",
+          "steps": [
+            {
+              "explain": "This is a \"hidden quadratic\" — substitute u = √x so the equation becomes quadratic in u.",
+              "work": "\\(u = \\sqrt{x} \\implies u^2 - 4u + 3 = 0\\)"
+            },
+            {
+              "explain": "Factor the quadratic in u: find two numbers that multiply to 3 and add to -4 (they are -1 and -3).",
+              "work": "\\((u-1)(u-3) = 0 \\implies u = 1, 3\\)"
+            },
+            {
+              "explain": "Undo the substitution: since u = √x, square each value of u to recover x.",
+              "work": "\\(\\sqrt{x} = 1 \\implies x = 1; \\quad \\sqrt{x} = 3 \\implies x = 9\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "ac25eadb4575a562fa1c1125dfe11003",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Solve by factoring: \\( 2a^2 + 9a - 5 = 0 \\)",
+          "answer": "0",
+          "hint": "Find factors of -10 that add to 9.",
+          "solution": "\\(2a-1=0 \\implies a=\\frac{1}{2}; \\quad a+5=0 \\implies a=-5\\)",
+          "steps": [
+            {
+              "explain": "Factor the quadratic 2a^2 + 9a - 5. Look for factors of 2 and -5 that combine to give the middle coefficient 9.",
+              "work": "\\(2a^2 + 9a - 5 = (2a - 1)(a + 5)\\)"
+            },
+            {
+              "explain": "Verify by expanding: 2a·a + 2a·5 - 1·a - 1·5 = 2a^2 + 10a - a - 5 = 2a^2 + 9a - 5 ✓.",
+              "work": "\\((2a-1)(a+5) = 0\\)"
+            },
+            {
+              "explain": "Set each factor to zero and solve for a.",
+              "work": "\\(2a-1=0 \\implies a=\\frac{1}{2}; \\quad a+5=0 \\implies a=-5\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "c37da4662128b68d0c27b4b2ec672e60",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve the equation reducible to a quadratic form: \\( x^4 - 3x^2 + 2 = 0 \\)",
+          "answer": "0",
+          "hint": "Let \\( u = x^2 \\). Rewrite the equation in terms of \\( u \\) as a quadratic equation, solve for \\( u \\), then substitute back to find \\( x \\).",
+          "solution": "\\(x^2 = 1 \\implies x = \\pm 1; \\quad x^2 = 2 \\implies x = \\pm\\sqrt{2}\\)",
+          "steps": [
+            {
+              "explain": "This is a \"hidden quadratic\" in x^2 — substitute u = x^2 so the equation becomes quadratic in u.",
+              "work": "\\(u = x^2 \\implies u^2 - 3u + 2 = 0\\)"
+            },
+            {
+              "explain": "Factor the quadratic in u: find two numbers that multiply to 2 and add to -3 (they are -1 and -2).",
+              "work": "\\((u-1)(u-2) = 0 \\implies u = 1, 2\\)"
+            },
+            {
+              "explain": "Undo the substitution: since u = x^2, take the square root of each value of u (both + and - roots).",
+              "work": "\\(x^2 = 1 \\implies x = \\pm 1; \\quad x^2 = 2 \\implies x = \\pm\\sqrt{2}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "f1c466b5912eb87a13a5150c714f6188",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve the equation: \\( \\frac{u + 3}{2u - 7} = \\frac{2u - 1}{u - 3} \\)",
+          "answer": "1",
+          "hint": "Cross-multiply to clear the fractions.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(u^2 - 9 = 4u^2 - 14u - 2u + 7\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(3u^2 - 16u + 16 = 0\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "f346087fa04c6fae381bc6b259cc8cfb",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Solve by factoring: \\( 3b^2 - b = 0 \\)",
+          "answer": "0",
+          "hint": "Factor out \\( b \\).",
+          "solution": "\\(3b=1 \\implies b=\\frac{1}{3}\\)",
+          "steps": [
+            {
+              "explain": "There is no constant term, so factor out the common factor b directly (do not divide both sides by b — that would lose the root b=0).",
+              "work": "\\(3b^2 - b = b(3b - 1)\\)"
+            },
+            {
+              "explain": "Set each factor to zero and solve for b.",
+              "work": "\\(b(3b-1) = 0 \\implies b=0 \\text{ or } 3b-1=0\\)"
+            },
+            {
+              "explain": "Solve the second factor for b.",
+              "work": "\\(3b=1 \\implies b=\\frac{1}{3}\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "f703b921fca6e128bdb3d0dabbf65186",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve the equation reducible to a quadratic form: \\( x^4 - 7x^2 + 12 = 0 \\)",
+          "answer": "0",
+          "hint": "Let \\( u = x^2 \\). Rewrite the equation in terms of \\( u \\) as a quadratic equation, solve for \\( u \\), then substitute back to find \\( x \\).",
+          "solution": "\\(x^2 = 3 \\implies x = \\pm\\sqrt{3}; \\quad x^2 = 4 \\implies x = \\pm 2\\)",
+          "steps": [
+            {
+              "explain": "This is a \"hidden quadratic\" in x^2 — substitute u = x^2 so the equation becomes quadratic in u.",
+              "work": "\\(u = x^2 \\implies u^2 - 7u + 12 = 0\\)"
+            },
+            {
+              "explain": "Factor the quadratic in u: find two numbers that multiply to 12 and add to -7 (they are -3 and -4).",
+              "work": "\\((u-3)(u-4) = 0 \\implies u = 3, 4\\)"
+            },
+            {
+              "explain": "Undo the substitution: since u = x^2, take the square root of each value of u (both + and - roots). Note √4 simplifies to 2.",
+              "work": "\\(x^2 = 3 \\implies x = \\pm\\sqrt{3}; \\quad x^2 = 4 \\implies x = \\pm 2\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "fa097cbac5cafda2eed6b38b16ac2b56",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve the equation: \\( \\frac{3}{a + 2} + \\frac{a + 2}{3} = \\frac{10}{3} \\)",
+          "answer": "2",
+          "hint": "Use a substitution \\( u = a + 2 \\) to simplify the equation first.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(9 + u^2 = 10u\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(u^2 - 10u + 9 = 0\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-exam-fortst",
+      "code": "EXAM",
+      "title": "Fort Street 2020 Trial Exam",
+      "questions": [
+        {
+          "id": "fortst2020-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For what values of $k$ does the quadratic equation $5x^2 - 2x + (8k - 15) = 0$ have real roots?",
+          "options": [
+            "\\(-k \\leq \\dfrac{19}{10}\\)",
+            "\\(k \\leq \\dfrac{19}{10}\\)",
+            "\\(k \\leq \\frac{10}{19}\\)",
+            "\\(k \\leq \\frac{1}{10}\\)"
+          ],
+          "answer": 1,
+          "hint": "Real roots require the discriminant $\\Delta = b^2 - 4ac \\geq 0$.",
+          "solution": "The correct answer is \\(k \\leq \\dfrac{19}{10}\\).",
+          "steps": [
+            {
+              "explain": "For a quadratic $ax^2+bx+c=0$ to have real roots, the discriminant must satisfy $\\Delta = b^2 - 4ac \\geq 0$. Here $a=5$, $b=-2$, $c=8k-15$.",
+              "work": "\\((-2)^2 - 4(5)(8k - 15) \\geq 0\\)"
+            },
+            {
+              "explain": "Expand $(-2)^2 = 4$ and $4(5)(8k-15) = 20(8k-15) = 160k - 300$.",
+              "work": "\\(4 - (160k - 300) \\geq 0 \\Rightarrow 4 - 160k + 300 \\geq 0\\)"
+            },
+            {
+              "explain": "Combine the constant terms: $4 + 300 = 304$.",
+              "work": "\\(304 - 160k \\geq 0\\)"
+            },
+            {
+              "explain": "Rearrange to isolate $k$: add $160k$ to both sides, then divide by 160 and simplify the fraction.",
+              "work": "\\(304 \\geq 160k \\Rightarrow k \\leq \\frac{304}{160} = \\frac{19}{10}\\)"
+            }
+          ],
+          "dna": {
+            "dnaId": "ALG-EQ-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "fortst2020-q17b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For $V = 3600\\left(1 - \\dfrac{t}{60}\\right)^2$ ($0 \\le t \\le 60$), how long will it take for the tank to become half full (to the nearest minute)?",
+          "options": [
+            "\\(\\approx 9\\) minutes (\\(t \\approx 8.8\\))",
+            "\\(\\approx 18\\) minutes (\\(t \\approx 17.6\\))",
+            "\\(\\approx 30\\) minutes",
+            "\\(\\approx 42\\) minutes (\\(t \\approx 42.4\\))"
+          ],
+          "answer": 1,
+          "hint": "Set $V = 1800$, take square roots (both signs), and reject the root outside $0 \\le t \\le 60$.",
+          "solution": "The correct answer is \\(\\approx 18\\) minutes (\\(t \\approx 17.6\\)).",
+          "steps": [
+            {
+              "explain": "The tank starts at $V(0) = 3600$ L, so \"half full\" means $V = 1800$. Set the model equal to 1800.",
+              "work": "\\(3600\\left(1 - \\frac{t}{60}\\right)^2 = 1800\\)"
+            },
+            {
+              "explain": "Divide both sides by 3600, then take the square root of both sides — remembering both the positive and negative root.",
+              "work": "\\(\\left(1 - \\frac{t}{60}\\right)^2 = \\frac{1}{2} \\Rightarrow 1 - \\frac{t}{60} = \\pm\\frac{1}{\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Solve each sign separately for $t$.",
+              "work": "\\(t = 60\\left(1 - \\tfrac{1}{\\sqrt{2}}\\right) \\approx 17.6 \\quad\\text{or}\\quad t = 60\\left(1 + \\tfrac{1}{\\sqrt{2}}\\right) \\approx 102.4\\)"
+            },
+            {
+              "explain": "The domain is $0 \\le t \\le 60$, so $t \\approx 102.4$ is rejected. The valid solution $t \\approx 17.6$ rounds to 18 minutes.",
+              "work": "\\(t \\approx 17.6 \\Rightarrow \\text{about 18 minutes}\\)"
+            }
+          ],
+          "dna": {
+            "dnaId": "ALG-EQ-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "fortst2020s-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For what values of $k$ does $3x^2 - 4x + (2k - 7) = 0$ have real roots?",
+          "options": [
+            "\\(-k \\leq \\dfrac{25}{6}\\)",
+            "\\(k \\leq \\dfrac{25}{6}\\)",
+            "\\(k \\leq \\frac{1}{6}\\)",
+            "\\(k \\leq \\frac{6}{25}\\)"
+          ],
+          "answer": 1,
+          "hint": "Real roots require $\\Delta = b^2 - 4ac \\geq 0$.",
+          "solution": "The correct answer is \\(k \\leq \\dfrac{25}{6}\\).",
+          "steps": [
+            {
+              "explain": "For a quadratic $ax^2+bx+c=0$ to have real roots, the discriminant must satisfy $\\Delta = b^2 - 4ac \\geq 0$. Here $a=3$, $b=-4$, $c=2k-7$.",
+              "work": "\\((-4)^2 - 4(3)(2k - 7) \\geq 0\\)"
+            },
+            {
+              "explain": "Expand $(-4)^2 = 16$ and $4(3)(2k-7) = 12(2k-7) = 24k - 84$.",
+              "work": "\\(16 - (24k - 84) \\geq 0 \\Rightarrow 16 - 24k + 84 \\geq 0\\)"
+            },
+            {
+              "explain": "Combine the constant terms: $16 + 84 = 100$.",
+              "work": "\\(100 - 24k \\geq 0\\)"
+            },
+            {
+              "explain": "Rearrange to isolate $k$: add $24k$ to both sides, then divide by 24 and simplify the fraction.",
+              "work": "\\(100 \\geq 24k \\Rightarrow k \\leq \\frac{100}{24} = \\frac{25}{6}\\)"
+            }
+          ]
+        },
+        {
+          "id": "fortst2020s-q17b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For $V = 4900\\left(1 - \\dfrac{t}{70}\\right)^2$ ($0 \\le t \\le 70$), how long until the tank is half full (to the nearest minute)?",
+          "options": [
+            "\\(\\approx 10\\) minutes (\\(t \\approx 9.8\\))",
+            "\\(\\approx 35\\) minutes",
+            "\\(\\approx 21\\) minutes (\\(t \\approx 20.5\\))",
+            "\\(\\approx 49\\) minutes (\\(t \\approx 49.5\\))"
+          ],
+          "answer": 2,
+          "hint": "Set $V = 2450$, take square roots (both signs), reject the root outside $[0, 70]$.",
+          "solution": "The correct answer is \\(\\approx 21\\) minutes (\\(t \\approx 20.5\\)).",
+          "steps": [
+            {
+              "explain": "The tank starts at $V(0) = 4900$ L, so \"half full\" means $V = 2450$. Set the model equal to 2450.",
+              "work": "\\(4900\\left(1 - \\frac{t}{70}\\right)^2 = 2450\\)"
+            },
+            {
+              "explain": "Divide both sides by 4900, then take the square root of both sides — remembering both the positive and negative root.",
+              "work": "\\(\\left(1 - \\frac{t}{70}\\right)^2 = \\frac{1}{2} \\Rightarrow 1 - \\frac{t}{70} = \\pm\\frac{1}{\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Solve each sign separately for $t$.",
+              "work": "\\(t = 70\\left(1 - \\tfrac{1}{\\sqrt{2}}\\right) \\approx 20.5 \\quad\\text{or}\\quad t = 70\\left(1 + \\tfrac{1}{\\sqrt{2}}\\right) \\approx 119.5\\)"
+            },
+            {
+              "explain": "The domain is $0 \\le t \\le 70$, so $t \\approx 119.5$ is rejected. The valid solution $t \\approx 20.5$ rounds to 21 minutes.",
+              "work": "\\(t \\approx 20.5 \\Rightarrow \\text{about 21 minutes}\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

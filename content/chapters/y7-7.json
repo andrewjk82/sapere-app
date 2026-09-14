@@ -1,0 +1,3692 @@
+{
+  "chapterId": "y7-7",
+  "title": "Chapter 7: Decimals",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "y7-7a",
+      "code": "7A",
+      "title": "Place value and comparison of decimals",
+      "questions": [
+        {
+          "id": "y7-7a-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the place values of the digits, write the decimal number \\(354.1809\\) as a sum of hundreds, tens, units, tenths, hundredths, thousandths and ten-thousandths.",
+          "options": [
+            "\\(300 + 50 + 4 + \\frac{1}{10} + \\frac{8}{100} + \\frac{0}{1000} + \\frac{9}{10000}\\)",
+            "\\(3 + 5 + 4 + 0.1 + 0.08 + 0.009\\)",
+            "\\(300 + 50 + 4 + \\frac{1}{100} + \\frac{8}{1000} + \\frac{9}{10000}\\)",
+            "\\(300 + 50 + 4 + \\frac{1}{10} + \\frac{8}{100} + \\frac{9}{1000}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Break down the whole number part (354) into hundreds, tens, and units.",
+              "work": "\\(354 = 300 + 50 + 4\\)"
+            },
+            {
+              "explain": "Break down the decimal part (0.1809) into fractions based on place value.\\n- \\(1\\) is in the tenths place \\(\\rightarrow \\frac{1}{10}\\)\\n- \\(8\\) is in the hundredths place \\(\\rightarrow \\frac{8}{100}\\)\\n- \\(9\\) is in the ten-thousandths place \\(\\rightarrow \\frac{9}{10000}\\)"
+            },
+            {
+              "explain": "Combine all parts to form the expanded sum.",
+              "work": "\\(354.1809 = 300 + 50 + 4 + \\frac{1}{10} + \\frac{8}{100} + \\frac{0}{1000} + \\frac{9}{10000}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(6.148\\) as a fraction whose denominator is a power of \\(10\\).",
+          "options": [
+            "\\frac{6148}{10000}",
+            "\\frac{6148}{1000}",
+            "\\frac{6148}{100}",
+            "\\frac{6148}{10}"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Count the number of decimal places in \\(6.148\\).",
+              "work": "There are 3 decimal places."
+            },
+            {
+              "explain": "A decimal with 3 decimal places corresponds to a fraction with a denominator of \\(10^3 = 1000\\)."
+            },
+            {
+              "explain": "Remove the decimal point to form the numerator.",
+              "work": "\\(6.148 = \\frac{6148}{1000}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(\\frac{69}{1000}\\) as a decimal.",
+          "options": [
+            "0.0069",
+            "0.069",
+            "0.69",
+            "6.9"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Observe the denominator. It is \\(1000\\), which means the decimal will have 3 decimal places."
+            },
+            {
+              "explain": "Place the numerator \\(69\\) into the decimal places, ending at the thousandths place."
+            },
+            {
+              "explain": "Fill any empty place values with zeros.",
+              "work": "\\(\\frac{69}{1000} = 0.069\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "One bus can transport 52 students. How many buses are required to transport 180 students?",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(3.46\\)"
+          ],
+          "answer": 1,
+          "solution": "\\(4\\)",
+          "steps": [
+            {
+              "explain": "Divide the total number of students by the capacity of one bus.",
+              "work": "\\(180 \\div 52 \\approx 3.46\\)"
+            },
+            {
+              "explain": "Since you cannot have a fraction of a bus, and 3 buses would only hold 156 students, you must round up.",
+              "work": "4 buses are required."
+            }
+          ],
+          "meta": {
+            "examPaper": "Willoughby-Y7-Task3"
+          }
+        },
+        {
+          "id": "y7-7a-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the place value of the digit \\(4\\) in the decimal \\(3.84\\).",
+          "options": [
+            "Tenths",
+            "Hundredths",
+            "Units",
+            "Thousandths"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(4\\).",
+              "work": "It is in the second position to the right of the decimal point."
+            },
+            {
+              "explain": "The first position is tenths, and the second position is **Hundredths**."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the place value of the digit \\(4\\) in the decimal \\(0.41\\).",
+          "options": [
+            "Units",
+            "Hundredths",
+            "Tenths",
+            "Thousandths"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(4\\).",
+              "work": "It is immediately to the right of the decimal point."
+            },
+            {
+              "explain": "The first position to the right of the decimal point represents the **Tenths** place."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the place value of the digit \\(4\\) in the decimal \\(47.09\\).",
+          "options": [
+            "Tens",
+            "Hundredths",
+            "Tenths",
+            "Units"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(4\\).",
+              "work": "It is in the second position to the left of the decimal point."
+            },
+            {
+              "explain": "The first position is units, and the second position is **Tens**."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write down the place value of the digit \\(4\\) in the decimal \\(0.004\\).",
+          "options": [
+            "Units",
+            "Thousandths",
+            "Tenths",
+            "Hundredths"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(4\\).",
+              "work": "It is in the third position to the right of the decimal point."
+            },
+            {
+              "explain": "The positions to the right of the decimal point are: tenths, hundredths, and **Thousandths**."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write down the place value of the digit \\(4\\) in the decimal \\(67.951842\\).",
+          "options": [
+            "Units",
+            "Tenths",
+            "Hundred-thousandths",
+            "Hundredths"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(4\\).",
+              "work": "It is in the fifth position to the right of the decimal point."
+            },
+            {
+              "explain": "Count the decimal places: 1st (Tenths), 2nd (Hundredths), 3rd (Thousandths), 4th (Ten-thousandths), 5th (**Hundred-thousandths**)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following decimals can be formed using the digits \\(1, 3, 5, 7\\) and a decimal point exactly once?",
+          "options": [
+            "\\(13.57\\)",
+            "\\(1.3577\\)",
+            "\\(1.35\\)",
+            "\\(133.57\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Evaluate the given options based on the condition (exactly one of each digit and one decimal point)."
+            },
+            {
+              "explain": "\\(13.57\\) contains exactly one \\(1\\), \\(3\\), \\(5\\), and \\(7\\). The other options contain extra digits or are missing digits."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following is NOT a valid decimal that can be formed using the digits \\(2, 4, 6, 8\\) and a decimal point exactly once?",
+          "options": [
+            "\\(24.68\\)",
+            "\\(2.468\\)",
+            "\\(2.46\\)",
+            "\\(246.8\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "The question requires using the digits 2, 4, 6, 8 exactly once."
+            },
+            {
+              "explain": "Check the options: \\(24.68\\), \\(2.468\\), and \\(246.8\\) all contain the four required digits."
+            },
+            {
+              "explain": "The option \\(2.46\\) is missing the digit 8, making it invalid."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the whole number closest to the decimal \\(4.09\\).",
+          "options": [
+            "3",
+            "5",
+            "4.090",
+            "4"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place (the first digit after the decimal point)."
+            },
+            {
+              "explain": "The tenths digit is 0. Since 0 is less than 5, we round down (keep the whole number part the same)."
+            },
+            {
+              "explain": "Therefore, the closest whole number is 4."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the whole number closest to the decimal \\(4.8\\).",
+          "options": [
+            "5",
+            "4",
+            "6",
+            "4.80"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place (the first digit after the decimal point)."
+            },
+            {
+              "explain": "The tenths digit is 8. Since 8 is 5 or greater, we round up (add 1 to the whole number part)."
+            },
+            {
+              "explain": "Therefore, the closest whole number is 5."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the whole number closest to the decimal \\(2.17984\\).",
+          "options": [
+            "2.179840",
+            "3",
+            "1",
+            "2"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 1. Since 1 is less than 5, we round down."
+            },
+            {
+              "explain": "Therefore, the closest whole number is 2."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the whole number closest to the decimal \\(6.800002\\).",
+          "options": [
+            "6",
+            "8",
+            "6.8000020",
+            "7"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 8. Since 8 is 5 or greater, we round up."
+            },
+            {
+              "explain": "Therefore, the closest whole number is 7."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the whole number closest to the decimal \\(5.499\\).",
+          "options": [
+            "5.4990",
+            "5",
+            "6",
+            "4"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place. Even though the hundredths and thousandths are 9s, we only check the tenths place for rounding to the nearest whole number."
+            },
+            {
+              "explain": "The tenths digit is 4. Since 4 is less than 5, we round down."
+            },
+            {
+              "explain": "Therefore, the closest whole number is 5."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the whole number closest to the decimal \\(7.09999\\).",
+          "options": [
+            "7",
+            "7.099990",
+            "8",
+            "6"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 0. Since 0 is less than 5, we round down."
+            },
+            {
+              "explain": "Therefore, the closest whole number is 7."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(0.5\\) or \\(0.42\\)?",
+          "options": [
+            "None of these",
+            "\\(0.42\\)",
+            "\\(0.5\\)",
+            "They are equal"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(0.50\\) and \\(0.42\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 5 tenths is greater than 4 tenths."
+            },
+            {
+              "explain": "Therefore, \\(0.5 > 0.42\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(2.7\\) or \\(2.83\\)?",
+          "options": [
+            "None of these",
+            "They are equal",
+            "\\(2.7\\)",
+            "\\(2.83\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(2.70\\) and \\(2.83\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 8 tenths is greater than 7 tenths."
+            },
+            {
+              "explain": "Therefore, \\(2.83 > 2.7\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(7.9\\) or \\(7.09\\)?",
+          "options": [
+            "\\(7.9\\)",
+            "None of these",
+            "\\(7.09\\)",
+            "They are equal"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(7.90\\) and \\(7.09\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 9 tenths is greater than 0 tenths."
+            },
+            {
+              "explain": "Therefore, \\(7.9 > 7.09\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(4.82\\) or \\(4.083\\)?",
+          "options": [
+            "\\(4.083\\)",
+            "\\(4.82\\)",
+            "None of these",
+            "They are equal"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(4.820\\) and \\(4.083\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 8 tenths is greater than 0 tenths."
+            },
+            {
+              "explain": "Therefore, \\(4.82 > 4.083\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(8.56\\) or \\(8.5613\\)?",
+          "options": [
+            "\\(8.56\\)",
+            "They are equal",
+            "\\(8.5613\\)",
+            "None of these"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(8.5600\\) and \\(8.5613\\)."
+            },
+            {
+              "explain": "Compare from the highest place value to the lowest. The units, tenths, and hundredths are the same."
+            },
+            {
+              "explain": "Compare the thousandths place: 1 thousandth is greater than 0 thousandths. Therefore, \\(8.5613 > 8.56\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q23",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(6.002\\) or \\(6.2\\)?",
+          "options": [
+            "\\(6.2\\)",
+            "\\(6.002\\)",
+            "They are equal",
+            "None of these"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(6.002\\) and \\(6.200\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 2 tenths is greater than 0 tenths."
+            },
+            {
+              "explain": "Therefore, \\(6.2 > 6.002\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q24",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(9.88867\\) or \\(9.453\\)?",
+          "options": [
+            "They are equal",
+            "\\(9.88867\\)",
+            "None of these",
+            "\\(9.453\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(9.88867\\) and \\(9.45300\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 8 tenths is greater than 4 tenths."
+            },
+            {
+              "explain": "Therefore, \\(9.88867 > 9.453\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q25",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(4.58\\) or \\(4.4\\)?",
+          "options": [
+            "\\(4.58\\)",
+            "None of these",
+            "\\(4.4\\)",
+            "They are equal"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(4.58\\) and \\(4.40\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 5 tenths is greater than 4 tenths."
+            },
+            {
+              "explain": "Therefore, \\(4.58 > 4.4\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q26",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(185.3468\\) or \\(185.34\\)?",
+          "options": [
+            "They are equal",
+            "\\(185.34\\)",
+            "\\(185.3468\\)",
+            "None of these"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(185.3468\\) and \\(185.3400\\)."
+            },
+            {
+              "explain": "Compare from the highest place value to the lowest. The hundreds, tens, units, tenths, and hundredths are the same."
+            },
+            {
+              "explain": "Compare the thousandths place: 6 thousandths is greater than 0 thousandths. Therefore, \\(185.3468 > 185.34\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q27",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(12.4\\) or \\(1.24\\)?",
+          "options": [
+            "None of these",
+            "\\(1.24\\)",
+            "They are equal",
+            "\\(12.4\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Compare the whole number parts of the decimals first."
+            },
+            {
+              "explain": "The whole number part of \\(12.4\\) is 12, and the whole number part of \\(1.24\\) is 1."
+            },
+            {
+              "explain": "Since 12 is greater than 1, \\(12.4 > 1.24\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q28",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(323.78658\\) or \\(323.71189\\)?",
+          "options": [
+            "\\(323.71189\\)",
+            "They are equal",
+            "\\(323.78658\\)",
+            "None of these"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Both numbers have the same number of decimal places and the same whole number part (323)."
+            },
+            {
+              "explain": "Compare the tenths place: 7 tenths is equal to 7 tenths. Move to the hundredths place."
+            },
+            {
+              "explain": "Compare the hundredths place: 8 hundredths is greater than 1 hundredth. Therefore, \\(323.78658 > 323.71189\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q29",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(4.67\\) or \\(4.59999\\)?",
+          "options": [
+            "They are equal",
+            "\\(4.59999\\)",
+            "\\(4.67\\)",
+            "None of these"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(4.67000\\) and \\(4.59999\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 6 tenths is greater than 5 tenths."
+            },
+            {
+              "explain": "Therefore, \\(4.67 > 4.59999\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q30",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Order these numbers from smallest to largest: \\(3.4, 0.3, 9.264, 8.3, 5.09\\).",
+          "options": [
+            "\\(3.4, 0.3, 5.09, 8.3, 9.264\\)",
+            "\\(0.3, 3.4, 8.3, 5.09, 9.264\\)",
+            "\\(0.3, 3.4, 5.09, 8.3, 9.264\\)",
+            "\\(0.3, 5.09, 3.4, 8.3, 9.264\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "First, identify the number with the smallest whole number part. \\(0.3\\) has the whole number part 0, so it is the smallest."
+            },
+            {
+              "explain": "Compare the remaining numbers by their whole number parts: 3, 5, 8, 9."
+            },
+            {
+              "explain": "Since the whole numbers are already in order (3 < 5 < 8 < 9), the correct order from smallest to largest is \\(0.3, 3.4, 5.09, 8.3, 9.264\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q31",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Order these numbers from smallest to largest: \\(2.08, 2.84, 2.48, 2.8, 2.40\\).",
+          "options": [
+            "\\(2.40, 2.08, 2.48, 2.8, 2.84\\)",
+            "\\(2.08, 2.48, 2.40, 2.8, 2.84\\)",
+            "\\(2.08, 2.40, 2.48, 2.8, 2.84\\)",
+            "\\(2.08, 2.40, 2.48, 2.84, 2.8\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Pad all numbers with zeros so they have the same number of decimal places: \\(2.08, 2.84, 2.48, 2.80, 2.40\\)."
+            },
+            {
+              "explain": "Compare the tenths place: \\(0\\) is the smallest, then \\(4\\), then \\(8\\). So \\(2.08\\) is the smallest."
+            },
+            {
+              "explain": "For numbers with the same tenths digit, compare the hundredths place: \\(2.40 < 2.48\\) and \\(2.80 < 2.84\\). Therefore, the order is \\(2.08, 2.40, 2.48, 2.8, 2.84\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q32",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Order these numbers from smallest to largest: \\(6.000034, 6.340000, 6.99, 6.5208673, 6.0859\\).",
+          "options": [
+            "\\(6.000034, 6.340000, 6.0859, 6.5208673, 6.99\\)",
+            "\\(6.0859, 6.000034, 6.340000, 6.5208673, 6.99\\)",
+            "\\(6.000034, 6.0859, 6.340000, 6.99, 6.5208673\\)",
+            "\\(6.000034, 6.0859, 6.340000, 6.5208673, 6.99\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Pad all numbers with zeros so they have the same number of decimal places: \\(6.0000340, 6.3400000, 6.9900000, 6.5208673, 6.0859000\\)."
+            },
+            {
+              "explain": "Compare the tenths place: \\(0 < 3 < 5 < 9\\). The numbers starting with \\(6.0\\) are the smallest."
+            },
+            {
+              "explain": "Compare \\(6.000034\\) and \\(6.0859\\): \\(0\\) hundredths is less than \\(8\\) hundredths. Therefore, the order is \\(6.000034, 6.0859, 6.340000, 6.5208673, 6.99\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q33",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Order these numbers from smallest to largest: \\(5.55, 5.3, 5.8143, 5.777, 5.89463\\).",
+          "options": [
+            "\\(5.3, 5.55, 5.777, 5.89463, 5.8143\\)",
+            "\\(5.3, 5.55, 5.8143, 5.777, 5.89463\\)",
+            "\\(5.3, 5.55, 5.777, 5.8143, 5.89463\\)",
+            "\\(5.55, 5.3, 5.777, 5.8143, 5.89463\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Pad all numbers with zeros so they have the same number of decimal places: \\(5.55000, 5.30000, 5.81430, 5.77700, 5.89463\\)."
+            },
+            {
+              "explain": "Compare the tenths place: \\(3 < 5 < 7 < 8\\)."
+            },
+            {
+              "explain": "For numbers with the same tenths digit (\\(5.8\\)), compare the hundredths place: \\(1 < 9\\), so \\(5.8143 < 5.89463\\). Therefore, the order is \\(5.3, 5.55, 5.777, 5.8143, 5.89463\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q34",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.102534\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "Closer to \\(7\\)",
+            "Closer to \\(6\\)",
+            "None of these",
+            "Exactly halfway between \\(6\\) and \\(7\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 1. Since 1 is less than 5, the decimal is closer to the smaller whole number."
+            },
+            {
+              "explain": "Therefore, \\(6.102534\\) is closer to 6."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q35",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.99\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "Closer to \\(6\\)",
+            "Exactly halfway between \\(6\\) and \\(7\\)",
+            "Closer to \\(7\\)",
+            "None of these"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 9. Since 9 is 5 or greater, the decimal is closer to the larger whole number."
+            },
+            {
+              "explain": "Therefore, \\(6.99\\) is closer to 7."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q36",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.6\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "Closer to \\(7\\)",
+            "Exactly halfway between \\(6\\) and \\(7\\)",
+            "Closer to \\(6\\)",
+            "None of these"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 6. Since 6 is 5 or greater, the decimal is closer to the larger whole number."
+            },
+            {
+              "explain": "Therefore, \\(6.6\\) is closer to 7."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q37",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.52\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "Exactly halfway between \\(6\\) and \\(7\\)",
+            "Closer to \\(6\\)",
+            "None of these",
+            "Closer to \\(7\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "The number \\(6.5\\) is exactly halfway between 6 and 7."
+            },
+            {
+              "explain": "Since \\(6.52\\) is greater than \\(6.5\\), it has crossed the halfway point."
+            },
+            {
+              "explain": "Therefore, \\(6.52\\) is closer to 7."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q38",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.01\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "None of these",
+            "Closer to \\(7\\)",
+            "Closer to \\(6\\)",
+            "Exactly halfway between \\(6\\) and \\(7\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 0. Since 0 is less than 5, the decimal is closer to the smaller whole number."
+            },
+            {
+              "explain": "Therefore, \\(6.01\\) is closer to 6."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q39",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.09879562\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "Closer to \\(6\\)",
+            "Closer to \\(7\\)",
+            "None of these",
+            "Exactly halfway between \\(6\\) and \\(7\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 0. Since 0 is less than 5, the decimal is closer to the smaller whole number."
+            },
+            {
+              "explain": "Therefore, \\(6.09879562\\) is closer to 6."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q40",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.49\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "Closer to \\(6\\)",
+            "Closer to \\(7\\)",
+            "None of these",
+            "Exactly halfway between \\(6\\) and \\(7\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 4. Since 4 is less than 5, the decimal is closer to the smaller whole number."
+            },
+            {
+              "explain": "Therefore, \\(6.49\\) is closer to 6."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q41",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.00003\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "Closer to \\(7\\)",
+            "Exactly halfway between \\(6\\) and \\(7\\)",
+            "Closer to \\(6\\)",
+            "None of these"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 0. Since 0 is less than 5, the decimal is closer to the smaller whole number."
+            },
+            {
+              "explain": "Therefore, \\(6.00003\\) is closer to 6."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q42",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.499989\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "Closer to \\(7\\)",
+            "Exactly halfway between \\(6\\) and \\(7\\)",
+            "None of these",
+            "Closer to \\(6\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 4. Since 4 is less than 5, the decimal is closer to the smaller whole number."
+            },
+            {
+              "explain": "Therefore, \\(6.499989\\) is closer to 6."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q43",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.49494\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "None of these",
+            "Closer to \\(7\\)",
+            "Exactly halfway between \\(6\\) and \\(7\\)",
+            "Closer to \\(6\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 4. Since 4 is less than 5, the decimal is closer to the smaller whole number."
+            },
+            {
+              "explain": "Therefore, \\(6.49494\\) is closer to 6."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q44",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.83112\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "Closer to \\(7\\)",
+            "Exactly halfway between \\(6\\) and \\(7\\)",
+            "Closer to \\(6\\)",
+            "None of these"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 8. Since 8 is 5 or greater, the decimal is closer to the larger whole number."
+            },
+            {
+              "explain": "Therefore, \\(6.83112\\) is closer to 7."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q45",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State whether the decimal \\(6.12109\\) is closer to \\(6\\) or closer to \\(7\\).",
+          "options": [
+            "Closer to \\(7\\)",
+            "None of these",
+            "Closer to \\(6\\)",
+            "Exactly halfway between \\(6\\) and \\(7\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Look at the digit in the tenths place."
+            },
+            {
+              "explain": "The tenths digit is 1. Since 1 is less than 5, the decimal is closer to the smaller whole number."
+            },
+            {
+              "explain": "Therefore, \\(6.12109\\) is closer to 6."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q46",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the statement: \\(8\\) tenths = ____ thousandths.",
+          "options": [
+            "\\(80\\)",
+            "\\(80000\\)",
+            "\\(800\\)",
+            "\\(8000\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(800\\).",
+          "steps": [
+            {
+              "explain": "We can write \\(8\\) tenths as the fraction \\(\\frac{8}{10}\\)."
+            },
+            {
+              "explain": "To find the equivalent number of thousandths, multiply both the numerator and denominator by \\(100\\) so the denominator becomes \\(1000\\)."
+            },
+            {
+              "explain": "\\(\\frac{8}{10} = \\frac{8 \\times 100}{10 \\times 100} = \\frac{800}{1000}\\). Therefore, \\(8\\) tenths = \\(800\\) thousandths."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q47",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the statement: \\(8\\) tenths = ____ hundredths.",
+          "options": [
+            "\\(8000\\)",
+            "\\(80\\)",
+            "\\(800\\)",
+            "\\(8\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(80\\).",
+          "steps": [
+            {
+              "explain": "We can write \\(8\\) tenths as the fraction \\(\\frac{8}{10}\\)."
+            },
+            {
+              "explain": "To find the equivalent number of hundredths, multiply both the numerator and denominator by \\(10\\) so the denominator becomes \\(100\\)."
+            },
+            {
+              "explain": "\\(\\frac{8}{10} = \\frac{8 \\times 10}{10 \\times 10} = \\frac{80}{100}\\). Therefore, \\(8\\) tenths = \\(80\\) hundredths."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q48",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the statement: \\(8\\) tenths = ____ units.",
+          "options": [
+            "\\(0.8\\)",
+            "\\(8\\)",
+            "\\(0.08\\)",
+            "\\(80\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(0.8\\).",
+          "steps": [
+            {
+              "explain": "The term 'tenths' represents the first decimal place to the right of the decimal point."
+            },
+            {
+              "explain": "\\(8\\) tenths means the digit \\(8\\) is in the tenths place."
+            },
+            {
+              "explain": "This is written as \\(0.8\\) units."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q49",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the statement: \\(8\\) tenths = ____ tens.",
+          "options": [
+            "\\(0.8\\)",
+            "\\(0.008\\)",
+            "\\(8\\)",
+            "\\(0.08\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(0.08\\).",
+          "steps": [
+            {
+              "explain": "\\(8\\) tenths is equal to \\(0.8\\) units."
+            },
+            {
+              "explain": "There are \\(10\\) units in \\(1\\) ten. To convert units to tens, divide by \\(10\\)."
+            },
+            {
+              "explain": "\\(0.8 \\div 10 = 0.08\\). Therefore, \\(8\\) tenths = \\(0.08\\) tens."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q50",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the statement: \\(8\\) tenths = ____ hundreds.",
+          "options": [
+            "\\(0.0008\\)",
+            "\\(0.8\\)",
+            "\\(0.008\\)",
+            "\\(0.08\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(0.008\\).",
+          "steps": [
+            {
+              "explain": "\\(8\\) tenths is equal to \\(0.8\\) units."
+            },
+            {
+              "explain": "There are \\(100\\) units in \\(1\\) hundred. To convert units to hundreds, divide by \\(100\\)."
+            },
+            {
+              "explain": "\\(0.8 \\div 100 = 0.008\\). Therefore, \\(8\\) tenths = \\(0.008\\) hundreds."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q51",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the statement: \\(8\\) tenths = ____ thousands.",
+          "options": [
+            "\\(0.08\\)",
+            "\\(0.0008\\)",
+            "\\(0.008\\)",
+            "\\(0.00008\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(0.0008\\).",
+          "steps": [
+            {
+              "explain": "\\(8\\) tenths is equal to \\(0.8\\) units."
+            },
+            {
+              "explain": "There are \\(1000\\) units in \\(1\\) thousand. To convert units to thousands, divide by \\(1000\\)."
+            },
+            {
+              "explain": "\\(0.8 \\div 1000 = 0.0008\\). Therefore, \\(8\\) tenths = \\(0.0008\\) thousands."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q52",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the statement: \\(45\\) hundredths = ____ thousandths.",
+          "options": [
+            "\\(450\\)",
+            "\\(4500\\)",
+            "\\(45\\)",
+            "\\(45000\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(450\\).",
+          "steps": [
+            {
+              "explain": "We can write \\(45\\) hundredths as the fraction \\(\\frac{45}{100}\\)."
+            },
+            {
+              "explain": "To find the equivalent number of thousandths, multiply both the numerator and denominator by \\(10\\) so the denominator becomes \\(1000\\)."
+            },
+            {
+              "explain": "\\(\\frac{45}{100} = \\frac{45 \\times 10}{100 \\times 10} = \\frac{450}{1000}\\). Therefore, \\(45\\) hundredths = \\(450\\) thousandths."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q53",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the statement: \\(45\\) hundredths = ____ tenths.",
+          "options": [
+            "\\(45\\)",
+            "\\(0.45\\)",
+            "\\(450\\)",
+            "\\(4.5\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(4.5\\).",
+          "steps": [
+            {
+              "explain": "We can write \\(45\\) hundredths as the fraction \\(\\frac{45}{100}\\)."
+            },
+            {
+              "explain": "To find the equivalent number of tenths, divide both the numerator and denominator by \\(10\\) so the denominator becomes \\(10\\)."
+            },
+            {
+              "explain": "\\(\\frac{45}{100} = \\frac{45 \\div 10}{100 \\div 10} = \\frac{4.5}{10}\\). Therefore, \\(45\\) hundredths = \\(4.5\\) tenths."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q54",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the statement: \\(45\\) hundredths = ____ units.",
+          "options": [
+            "\\(0.045\\)",
+            "\\(45\\)",
+            "\\(0.45\\)",
+            "\\(4.5\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(0.45\\).",
+          "steps": [
+            {
+              "explain": "The term 'hundredths' represents the second decimal place to the right of the decimal point."
+            },
+            {
+              "explain": "\\(45\\) hundredths means the number ends in the hundredths place."
+            },
+            {
+              "explain": "This is written as \\(0.45\\) units."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q55",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the statement: \\(45\\) hundredths = ____ tens.",
+          "options": [
+            "\\(4.5\\)",
+            "\\(0.045\\)",
+            "\\(0.45\\)",
+            "\\(0.0045\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(0.045\\).",
+          "steps": [
+            {
+              "explain": "\\(45\\) hundredths is equal to \\(0.45\\) units."
+            },
+            {
+              "explain": "There are \\(10\\) units in \\(1\\) ten. To convert units to tens, divide by \\(10\\)."
+            },
+            {
+              "explain": "\\(0.45 \\div 10 = 0.045\\). Therefore, \\(45\\) hundredths = \\(0.045\\) tens."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q56",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the statement: \\(45\\) hundredths = ____ hundreds.",
+          "options": [
+            "\\(0.0045\\)",
+            "\\(0.045\\)",
+            "\\(0.00045\\)",
+            "\\(0.45\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(0.0045\\).",
+          "steps": [
+            {
+              "explain": "\\(45\\) hundredths is equal to \\(0.45\\) units."
+            },
+            {
+              "explain": "There are \\(100\\) units in \\(1\\) hundred. To convert units to hundreds, divide by \\(100\\)."
+            },
+            {
+              "explain": "\\(0.45 \\div 100 = 0.0045\\). Therefore, \\(45\\) hundredths = \\(0.0045\\) hundreds."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q57",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the statement: \\(45\\) hundredths = ____ thousands.",
+          "options": [
+            "\\(0.0045\\)",
+            "\\(0.000045\\)",
+            "\\(0.045\\)",
+            "\\(0.00045\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(0.00045\\).",
+          "steps": [
+            {
+              "explain": "\\(45\\) hundredths is equal to \\(0.45\\) units."
+            },
+            {
+              "explain": "There are \\(1000\\) units in \\(1\\) thousand. To convert units to thousands, divide by \\(1000\\)."
+            },
+            {
+              "explain": "\\(0.45 \\div 1000 = 0.00045\\). Therefore, \\(45\\) hundredths = \\(0.00045\\) thousands."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q58",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the statement: \\(618\\) thousandths = ____ hundredths.",
+          "options": [
+            "\\(6.18\\)",
+            "\\(6180\\)",
+            "\\(61.8\\)",
+            "\\(618\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(61.8\\).",
+          "steps": [
+            {
+              "explain": "We can write \\(618\\) thousandths as the fraction \\(\\frac{618}{1000}\\)."
+            },
+            {
+              "explain": "To find the equivalent number of hundredths, divide both the numerator and denominator by \\(10\\) so the denominator becomes \\(100\\)."
+            },
+            {
+              "explain": "\\(\\frac{618}{1000} = \\frac{618 \\div 10}{1000 \\div 10} = \\frac{61.8}{100}\\). Therefore, \\(618\\) thousandths = \\(61.8\\) hundredths."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q59",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the statement: \\(618\\) thousandths = ____ tenths.",
+          "options": [
+            "\\(618\\)",
+            "\\(6.18\\)",
+            "\\(61.8\\)",
+            "\\(0.618\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(6.18\\).",
+          "steps": [
+            {
+              "explain": "We can write \\(618\\) thousandths as the fraction \\(\\frac{618}{1000}\\)."
+            },
+            {
+              "explain": "To find the equivalent number of tenths, divide both the numerator and denominator by \\(100\\) so the denominator becomes \\(10\\)."
+            },
+            {
+              "explain": "\\(\\frac{618}{1000} = \\frac{618 \\div 100}{1000 \\div 100} = \\frac{6.18}{10}\\). Therefore, \\(618\\) thousandths = \\(6.18\\) tenths."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q60",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the statement: \\(618\\) thousandths = ____ units.",
+          "options": [
+            "\\(0.618\\)",
+            "\\(6.18\\)",
+            "\\(0.0618\\)",
+            "\\(61.8\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(0.618\\).",
+          "steps": [
+            {
+              "explain": "The term 'thousandths' represents the third decimal place to the right of the decimal point."
+            },
+            {
+              "explain": "\\(618\\) thousandths means the number ends in the thousandths place."
+            },
+            {
+              "explain": "This is written as \\(0.618\\) units."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q61",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the statement: \\(618\\) thousandths = ____ tens.",
+          "options": [
+            "\\(0.618\\)",
+            "\\(0.00618\\)",
+            "\\(6.18\\)",
+            "\\(0.0618\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(0.0618\\).",
+          "steps": [
+            {
+              "explain": "\\(618\\) thousandths is equal to \\(0.618\\) units."
+            },
+            {
+              "explain": "There are \\(10\\) units in \\(1\\) ten. To convert units to tens, divide by \\(10\\)."
+            },
+            {
+              "explain": "\\(0.618 \\div 10 = 0.0618\\). Therefore, \\(618\\) thousandths = \\(0.0618\\) tens."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q62",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the statement: \\(618\\) thousandths = ____ hundreds.",
+          "options": [
+            "\\(0.000618\\)",
+            "\\(0.618\\)",
+            "\\(0.00618\\)",
+            "\\(0.0618\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(0.00618\\).",
+          "steps": [
+            {
+              "explain": "\\(618\\) thousandths is equal to \\(0.618\\) units."
+            },
+            {
+              "explain": "There are \\(100\\) units in \\(1\\) hundred. To convert units to hundreds, divide by \\(100\\)."
+            },
+            {
+              "explain": "\\(0.618 \\div 100 = 0.00618\\). Therefore, \\(618\\) thousandths = \\(0.00618\\) hundreds."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q63",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the statement: \\(618\\) thousandths = ____ thousands.",
+          "options": [
+            "\\(0.0618\\)",
+            "\\(0.000618\\)",
+            "\\(0.00618\\)",
+            "\\(0.0000618\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(0.000618\\).",
+          "steps": [
+            {
+              "explain": "\\(618\\) thousandths is equal to \\(0.618\\) units."
+            },
+            {
+              "explain": "There are \\(1000\\) units in \\(1\\) thousand. To convert units to thousands, divide by \\(1000\\)."
+            },
+            {
+              "explain": "\\(0.618 \\div 1000 = 0.000618\\). Therefore, \\(618\\) thousandths = \\(0.000618\\) thousands."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q64",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the place value of the digit \\(6\\) in the number \\(46.809\\).",
+          "options": [
+            "Hundredths",
+            "Units",
+            "Tenths",
+            "Thousandths"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(6\\) in the number \\(46.809\\)."
+            },
+            {
+              "explain": "The digit \\(6\\) is immediately to the left of the decimal point."
+            },
+            {
+              "explain": "The first position to the left of the decimal point is the Units place."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q65",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the place value of the digit \\(6\\) in the number \\(683.712\\).",
+          "options": [
+            "Hundreds",
+            "Tenths",
+            "Units",
+            "Hundredths"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(6\\) in the number \\(683.712\\)."
+            },
+            {
+              "explain": "The digit \\(6\\) is three positions to the left of the decimal point."
+            },
+            {
+              "explain": "Counting to the left: 1st is Units, 2nd is Tens, 3rd is Hundreds. Therefore, \\(6\\) is in the Hundreds place."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q66",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the place value of the digit \\(6\\) in the number \\(3.6\\).",
+          "options": [
+            "Thousandths",
+            "Tenths",
+            "Hundredths",
+            "Units"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(6\\) in the number \\(3.6\\)."
+            },
+            {
+              "explain": "The digit \\(6\\) is immediately to the right of the decimal point."
+            },
+            {
+              "explain": "The first position to the right of the decimal point is the Tenths place."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q67",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the place value of the digit \\(6\\) in the number \\(7.8886\\).",
+          "options": [
+            "Hundredths",
+            "Ten-thousandths",
+            "Tenths",
+            "Units"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(6\\) in the number \\(7.8886\\)."
+            },
+            {
+              "explain": "The digit \\(6\\) is the fourth position to the right of the decimal point."
+            },
+            {
+              "explain": "Counting to the right: 1st is Tenths, 2nd is Hundredths, 3rd is Thousandths, 4th is Ten-thousandths. Therefore, \\(6\\) is in the Ten-thousandths place."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q68",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the place value of the digit \\(6\\) in the number \\(5.69\\).",
+          "options": [
+            "Hundredths",
+            "Tenths",
+            "Units",
+            "Thousandths"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit 6 in the decimal 5.69.",
+              "work": "\\\\(5.69\\\\)"
+            },
+            {
+              "explain": "The first digit to the right of the decimal point represents tenths.",
+              "work": "\\\\(0.6 = \\\\frac{6}{10}\\\\)"
+            },
+            {
+              "explain": "Therefore, the place value of 6 is tenths.",
+              "work": "\\\\(\\\\text{Tenths}\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q69",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the place value of the digit \\(6\\) in the number \\(8.136\\).",
+          "options": [
+            "Tenths",
+            "Thousandths",
+            "Hundredths",
+            "Units"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(6\\) in the number \\(8.136\\)."
+            },
+            {
+              "explain": "The digit \\(6\\) is the third position to the right of the decimal point."
+            },
+            {
+              "explain": "Counting to the right: 1st is Tenths, 2nd is Hundredths, 3rd is Thousandths. Therefore, \\(6\\) is in the Thousandths place."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q70",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the place value of the digit \\(6\\) in the number \\(9.06\\).",
+          "options": [
+            "Hundredths",
+            "Tenths",
+            "Units",
+            "Thousandths"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(6\\) in the number \\(9.06\\)."
+            },
+            {
+              "explain": "The digit \\(6\\) is the second position to the right of the decimal point."
+            },
+            {
+              "explain": "Counting to the right: 1st is Tenths, 2nd is Hundredths. Therefore, \\(6\\) is in the Hundredths place."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q71",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the place value of the digit \\(6\\) in the number \\(2.4286\\).",
+          "options": [
+            "Tenths",
+            "Units",
+            "Ten-thousandths",
+            "Hundredths"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the position of the digit \\(6\\) in the number \\(2.4286\\)."
+            },
+            {
+              "explain": "The digit \\(6\\) is the fourth position to the right of the decimal point."
+            },
+            {
+              "explain": "Counting to the right: 1st is Tenths, 2nd is Hundredths, 3rd is Thousandths, 4th is Ten-thousandths. Therefore, \\(6\\) is in the Ten-thousandths place."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q72",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(0.9\\) or \\(0.54\\)?",
+          "options": [
+            "They are equal",
+            "None of these",
+            "\\(0.54\\)",
+            "\\(0.9\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(0.90\\) and \\(0.54\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 9 tenths is greater than 5 tenths."
+            },
+            {
+              "explain": "Therefore, \\(0.9 > 0.54\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q73",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(0.6\\) or \\(0.87\\)?",
+          "options": [
+            "\\(0.87\\)",
+            "They are equal",
+            "\\(0.6\\)",
+            "None of these"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(0.60\\) and \\(0.87\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 8 tenths is greater than 6 tenths."
+            },
+            {
+              "explain": "Therefore, \\(0.87 > 0.6\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q74",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(4.6\\) or \\(4.53\\)?",
+          "options": [
+            "None of these",
+            "They are equal",
+            "\\(4.6\\)",
+            "\\(4.53\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(4.60\\) and \\(4.53\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 6 tenths is greater than 5 tenths."
+            },
+            {
+              "explain": "Therefore, \\(4.6 > 4.53\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q75",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(3.2\\) or \\(3.1976\\)?",
+          "options": [
+            "They are equal",
+            "\\(3.2\\)",
+            "\\(3.1976\\)",
+            "None of these"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(3.2000\\) and \\(3.1976\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 2 tenths is greater than 1 tenth."
+            },
+            {
+              "explain": "Therefore, \\(3.2 > 3.1976\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q76",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(8.7\\) or \\(8.31415\\)?",
+          "options": [
+            "\\(8.31415\\)",
+            "\\(8.7\\)",
+            "They are equal",
+            "None of these"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(8.70000\\) and \\(8.31415\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 7 tenths is greater than 3 tenths."
+            },
+            {
+              "explain": "Therefore, \\(8.7 > 8.31415\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q77",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(12.4\\) or \\(12.63\\)?",
+          "options": [
+            "None of these",
+            "\\(12.4\\)",
+            "They are equal",
+            "\\(12.63\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(12.40\\) and \\(12.63\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 6 tenths is greater than 4 tenths."
+            },
+            {
+              "explain": "Therefore, \\(12.63 > 12.4\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q78",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(2.00004\\) or \\(2.04\\)?",
+          "options": [
+            "\\(2.04\\)",
+            "None of these",
+            "They are equal",
+            "\\(2.00004\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(2.00004\\) and \\(2.04000\\)."
+            },
+            {
+              "explain": "Compare from left to right. The whole numbers (2) and tenths (0) are the same."
+            },
+            {
+              "explain": "Compare the hundredths place: 4 hundredths is greater than 0 hundredths. Therefore, \\(2.04 > 2.00004\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q79",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(5.67\\) or \\(5.81\\)?",
+          "options": [
+            "\\(5.81\\)",
+            "They are equal",
+            "\\(5.67\\)",
+            "None of these"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Write both numbers with the same number of decimal places: \\(5.67\\) and \\(5.81\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 8 tenths is greater than 6 tenths."
+            },
+            {
+              "explain": "Therefore, \\(5.81 > 5.67\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q80",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following numbers is the larger one: \\(0.48\\) or \\(0.32\\)?",
+          "options": [
+            "None of these",
+            "\\(0.48\\)",
+            "\\(0.32\\)",
+            "They are equal"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Both numbers already have the same number of decimal places: \\(0.48\\) and \\(0.32\\)."
+            },
+            {
+              "explain": "Compare the tenths place: 4 tenths is greater than 3 tenths."
+            },
+            {
+              "explain": "Therefore, \\(0.48 > 0.32\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q81",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Order these numbers from smallest to largest: \\(4.56, 4.072, 4.068, 4.2, 4.007\\).",
+          "options": [
+            "\\(4.007, 4.068, 4.072, 4.56, 4.2\\)",
+            "\\(4.068, 4.007, 4.072, 4.2, 4.56\\)",
+            "\\(4.007, 4.072, 4.068, 4.2, 4.56\\)",
+            "\\(4.007, 4.068, 4.072, 4.2, 4.56\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Pad all numbers with zeros so they have the same number of decimal places: \\(4.560, 4.072, 4.068, 4.200, 4.007\\)."
+            },
+            {
+              "explain": "Compare the tenths place: \\(4.007, 4.068, 4.072\\) have \\(0\\) tenths. \\(4.200\\) has \\(2\\) tenths. \\(4.560\\) has \\(5\\) tenths."
+            },
+            {
+              "explain": "Compare the hundredths place of the smallest numbers: \\(4.007\\) has \\(0\\) hundredths, \\(4.068\\) has \\(6\\), \\(4.072\\) has \\(7\\). Therefore, the correct order is \\(4.007, 4.068, 4.072, 4.2, 4.56\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7a-q82",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Order these numbers from smallest to largest: \\(5.43, 5.304, 5.33333, 5.0003, 5.4\\).",
+          "options": [
+            "\\(5.0003, 5.33333, 5.304, 5.4, 5.43\\)",
+            "\\(5.0003, 5.304, 5.33333, 5.4, 5.43\\)",
+            "\\(5.304, 5.0003, 5.33333, 5.4, 5.43\\)",
+            "\\(5.0003, 5.304, 5.33333, 5.43, 5.4\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Pad all numbers with zeros so they have the same number of decimal places: \\(5.43000, 5.30400, 5.33333, 5.00030, 5.40000\\)."
+            },
+            {
+              "explain": "Compare the tenths place: \\(5.00030\\) has \\(0\\) tenths (smallest). \\(5.30400\\) and \\(5.33333\\) have \\(3\\) tenths. \\(5.40000\\) and \\(5.43000\\) have \\(4\\) tenths (largest)."
+            },
+            {
+              "explain": "Compare within the groups: \\(5.304 < 5.33333\\) and \\(5.4 < 5.43\\). Therefore, the correct order is \\(5.0003, 5.304, 5.33333, 5.4, 5.43\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7-practice-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which comparison is true?",
+          "options": [
+            "\\( 6.4 > 6.04 \\)",
+            "\\( 11.02 > 11.2 \\)",
+            "\\( 3.5 < 3.05 \\)",
+            "\\( 9.09 > 9.9 \\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare 6.4 and 6.04 by writing them with the same number of decimal places.",
+              "work": "6.4 = 6.40"
+            },
+            {
+              "explain": "Since 40 hundredths is more than 4 hundredths, 6.40 > 6.04.",
+              "work": "6.4 > 6.04 ✓"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-7-practice-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which decimal is the smallest?",
+          "options": [
+            "0.045",
+            "0.405",
+            "0.45",
+            "0.54"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Write all decimals to the same number of places to compare fairly.",
+              "work": "0.045, \\quad 0.405, \\quad 0.450, \\quad 0.540"
+            },
+            {
+              "explain": "Compare the tenths digit first.",
+              "work": "0.045 has 0 tenths — smaller than all the others"
+            }
+          ]
+        },
+        {
+          "id": "y7-7-practice-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "On a number line, point Q is exactly halfway between 5.6 and 6.0. What value does point Q represent?",
+          "options": [
+            "5.8",
+            "5.7",
+            "5.9",
+            "5.75"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find the midpoint by averaging the two endpoint values.",
+              "work": "(5.6 + 6.0) \\div 2 = 11.6 \\div 2"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "11.6 \\div 2 = 5.8"
+            }
+          ]
+        },
+        {
+          "id": "y7-7-practice-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\( \\frac{4}{10} + \\frac{7}{1000} \\) as a single decimal.",
+          "options": [
+            "0.407",
+            "0.047",
+            "0.47",
+            "0.0407"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "\\( \\frac{4}{10} \\) is 4 tenths and \\( \\frac{7}{1000} \\) is 7 thousandths.",
+              "work": "4 \\text{ tenths} = 0.400, \\quad 7 \\text{ thousandths} = 0.007"
+            },
+            {
+              "explain": "Add the place values.",
+              "work": "0.400 + 0.007 = 0.407"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-7b",
+      "code": "7B",
+      "title": "Converting decimals to fractions and fractions to decimals",
+      "questions": [
+        {
+          "id": "y7-7b-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(0.7\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(\\frac{7}{10}\\)",
+            "\\(\\frac{8}{10}\\)",
+            "\\(\\frac{7}{100}\\)",
+            "\\(\\frac{7}{15}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.7\\). There are 1 decimal places, so the denominator is \\(10\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(0.7 = \\frac{7}{10}\\)"
+            },
+            {
+              "explain": "Step 3: State the final answer.",
+              "work": "The fraction cannot be simplified further.<br>Final Answer: \\(\\frac{7}{10}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(0.75\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{75}{10}\\)",
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{1}{4}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.75\\). There are 2 decimal places, so the denominator is \\(100\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(0.75 = \\frac{75}{100}\\)"
+            },
+            {
+              "explain": "Step 3: Simplify the fraction by finding the greatest common divisor (GCD).",
+              "work": "Divide the numerator and denominator by \\(25\\):<br>\\(\\frac{75 \\div 25}{100 \\div 25} = \\frac{3}{4}\\)"
+            },
+            {
+              "explain": "Step 4: State the final answer in simplest form.",
+              "work": "\\(\\frac{3}{4}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(0.8\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(\\frac{4}{5}\\)",
+            "\\(\\frac{5}{5}\\)",
+            "\\(\\frac{8}{100}\\)",
+            "\\(\\frac{4}{10}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.8\\). There are 1 decimal places, so the denominator is \\(10\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(0.8 = \\frac{8}{10}\\)"
+            },
+            {
+              "explain": "Step 3: Simplify the fraction by finding the greatest common divisor (GCD).",
+              "work": "Divide the numerator and denominator by \\(2\\):<br>\\(\\frac{8 \\div 2}{10 \\div 2} = \\frac{4}{5}\\)"
+            },
+            {
+              "explain": "Step 4: State the final answer in simplest form.",
+              "work": "\\(\\frac{4}{5}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(2.63\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(2\\frac{63}{100}\\)",
+            "\\(2\\frac{64}{100}\\)",
+            "\\(2\\frac{63}{105}\\)",
+            "\\(2\\frac{63}{10}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.63\\). There are 2 decimal places, so the denominator is \\(100\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(2.63 = 2\\frac{63}{100}\\)"
+            },
+            {
+              "explain": "Step 3: State the final answer.",
+              "work": "The fraction cannot be simplified further.<br>Final Answer: \\(2\\frac{63}{100}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(3.1256\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(3\\frac{1256}{1000}\\)",
+            "\\(3\\frac{158}{1250}\\)",
+            "\\(3\\frac{157}{1255}\\)",
+            "\\(3\\frac{157}{1250}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.1256\\). There are 4 decimal places, so the denominator is \\(10000\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(3.1256 = 3\\frac{1256}{10000}\\)"
+            },
+            {
+              "explain": "Step 3: Simplify the fraction by finding the greatest common divisor (GCD).",
+              "work": "Divide the numerator and denominator by \\(8\\):<br>\\(\\frac{1256 \\div 8}{10000 \\div 8} = \\frac{157}{1250}\\)"
+            },
+            {
+              "explain": "Step 4: State the final answer in simplest form.",
+              "work": "\\(3\\frac{157}{1250}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(3.05\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(3\\frac{5}{10}\\)",
+            "\\(3\\frac{1}{25}\\)",
+            "\\(3\\frac{2}{20}\\)",
+            "\\(3\\frac{1}{20}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.05\\). There are 2 decimal places, so the denominator is \\(100\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(3.05 = 3\\frac{5}{100}\\)"
+            },
+            {
+              "explain": "Step 3: Simplify the fraction by finding the greatest common divisor (GCD).",
+              "work": "Divide the numerator and denominator by \\(5\\):<br>\\(\\frac{5 \\div 5}{100 \\div 5} = \\frac{1}{20}\\)"
+            },
+            {
+              "explain": "Step 4: State the final answer in simplest form.",
+              "work": "\\(3\\frac{1}{20}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(8.5\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(8\\frac{5}{100}\\)",
+            "\\(8\\frac{2}{2}\\)",
+            "\\(8\\frac{1}{2}\\)",
+            "\\(8\\frac{1}{7}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.5\\). There are 1 decimal places, so the denominator is \\(10\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(8.5 = 8\\frac{5}{10}\\)"
+            },
+            {
+              "explain": "Step 3: Simplify the fraction by finding the greatest common divisor (GCD).",
+              "work": "Divide the numerator and denominator by \\(5\\):<br>\\(\\frac{5 \\div 5}{10 \\div 5} = \\frac{1}{2}\\)"
+            },
+            {
+              "explain": "Step 4: State the final answer in simplest form.",
+              "work": "\\(8\\frac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(12.408\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(12\\frac{51}{130}\\)",
+            "\\(12\\frac{51}{125}\\)",
+            "\\(12\\frac{408}{100}\\)",
+            "\\(12\\frac{52}{125}\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.408\\). There are 3 decimal places, so the denominator is \\(1000\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(12.408 = 12\\frac{408}{1000}\\)"
+            },
+            {
+              "explain": "Step 3: Simplify the fraction by finding the greatest common divisor (GCD).",
+              "work": "Divide the numerator and denominator by \\(8\\):<br>\\(\\frac{408 \\div 8}{1000 \\div 8} = \\frac{51}{125}\\)"
+            },
+            {
+              "explain": "Step 4: State the final answer in simplest form.",
+              "work": "\\(12\\frac{51}{125}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(0.0008\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(\\frac{8}{1000}\\)",
+            "\\(\\frac{1}{1250}\\)",
+            "\\(\\frac{2}{1250}\\)",
+            "\\(\\frac{1}{1255}\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.0008\\). There are 4 decimal places, so the denominator is \\(10000\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(0.0008 = \\frac{8}{10000}\\)"
+            },
+            {
+              "explain": "Step 3: Simplify the fraction by finding the greatest common divisor (GCD).",
+              "work": "Divide the numerator and denominator by \\(8\\):<br>\\(\\frac{8 \\div 8}{10000 \\div 8} = \\frac{1}{1250}\\)"
+            },
+            {
+              "explain": "Step 4: State the final answer in simplest form.",
+              "work": "\\(\\frac{1}{1250}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(5.003\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(5\\frac{3}{1005}\\)",
+            "\\(5\\frac{3}{100}\\)",
+            "\\(5\\frac{3}{1000}\\)",
+            "\\(5\\frac{4}{1000}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the integer part and the decimal part of the number.",
+              "work": "\\\\(5.003 = 5 + 0.003\\\\)"
+            },
+            {
+              "explain": "Convert the decimal part to a fraction. The decimal has 3 decimal places, so the denominator is 1000.",
+              "work": "\\\\(0.003 = \\\\frac{3}{1000}\\\\)"
+            },
+            {
+              "explain": "Combine the integer part and the fraction.",
+              "work": "\\\\(5 \\\\frac{3}{1000}\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(8.8037\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(8\\frac{8037}{10005}\\)",
+            "\\(8\\frac{8037}{1000}\\)",
+            "\\(8\\frac{8037}{10000}\\)",
+            "\\(8\\frac{8038}{10000}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.8037\\). There are 4 decimal places, so the denominator is \\(10000\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(8.8037 = 8\\frac{8037}{10000}\\)"
+            },
+            {
+              "explain": "Step 3: State the final answer.",
+              "work": "The fraction cannot be simplified further.<br>Final Answer: \\(8\\frac{8037}{10000}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the decimal \\(12.625\\) as a fraction or mixed fraction in simplest form.",
+          "options": [
+            "\\(12\\frac{5}{8}\\)",
+            "\\(12\\frac{625}{100}\\)",
+            "\\(12\\frac{5}{13}\\)",
+            "\\(12\\frac{6}{8}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.625\\). There are 3 decimal places, so the denominator is \\(1000\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(12.625 = 12\\frac{625}{1000}\\)"
+            },
+            {
+              "explain": "Step 3: Simplify the fraction by finding the greatest common divisor (GCD).",
+              "work": "Divide the numerator and denominator by \\(125\\):<br>\\(\\frac{625 \\div 125}{1000 \\div 125} = \\frac{5}{8}\\)"
+            },
+            {
+              "explain": "Step 4: State the final answer in simplest form.",
+              "work": "\\(12\\frac{5}{8}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction \\(\\frac{1}{4}\\) as a decimal.",
+          "options": [
+            "\\(0.25\\)",
+            "\\(0.025\\)",
+            "\\(25\\)",
+            "\\(2.5\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Step 1: Convert the fraction to a decimal by dividing the numerator by the denominator.",
+              "work": "\\(1 \\div 4 = 0.25\\)"
+            },
+            {
+              "explain": "Final Answer:",
+              "work": "\\(0.25\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction \\(\\frac{5}{2}\\) as a decimal.",
+          "options": [
+            "\\(25\\)",
+            "\\(250\\)",
+            "\\(0.25\\)",
+            "\\(2.5\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Step 1: Convert the fraction to a decimal by dividing the numerator by the denominator.",
+              "work": "\\(5 \\div 2 = 2.5\\)"
+            },
+            {
+              "explain": "Final Answer:",
+              "work": "\\(2.5\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction \\(\\frac{3}{10}\\) as a decimal.",
+          "options": [
+            "\\(3\\)",
+            "\\(0.03\\)",
+            "\\(0.3\\)",
+            "\\(30\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Step 1: Convert the fraction to a decimal by dividing the numerator by the denominator.",
+              "work": "\\(3 \\div 10 = 0.3\\)"
+            },
+            {
+              "explain": "Final Answer:",
+              "work": "\\(0.3\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction \\(\\frac{35}{100}\\) as a decimal.",
+          "options": [
+            "\\(0.35\\)",
+            "\\(0.035\\)",
+            "\\(3.5\\)",
+            "\\(35\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Step 1: Convert the fraction to a decimal by dividing the numerator by the denominator.",
+              "work": "\\(35 \\div 100 = 0.35\\)"
+            },
+            {
+              "explain": "Final Answer:",
+              "work": "\\(0.35\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q17",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction \\(\\frac{8}{100}\\) as a decimal.",
+          "options": [
+            "\\(0.008\\)",
+            "\\(8\\)",
+            "\\(0.08\\)",
+            "\\(0.8\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Step 1: Convert the fraction to a decimal by dividing the numerator by the denominator.",
+              "work": "\\(8 \\div 100 = 0.08\\)"
+            },
+            {
+              "explain": "Final Answer:",
+              "work": "\\(0.08\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q18",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction \\(\\frac{456}{1000}\\) as a decimal.",
+          "options": [
+            "\\(45.6\\)",
+            "\\(0.456\\)",
+            "\\(4.56\\)",
+            "\\(0.0456\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Step 1: Convert the fraction to a decimal by dividing the numerator by the denominator.",
+              "work": "\\(456 \\div 1000 = 0.456\\)"
+            },
+            {
+              "explain": "Final Answer:",
+              "work": "\\(0.456\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q19",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction \\(\\frac{3}{5}\\) as a decimal.",
+          "options": [
+            "\\(0.6\\)",
+            "\\(60\\)",
+            "\\(6\\)",
+            "\\(0.06\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Step 1: Convert the fraction to a decimal by dividing the numerator by the denominator.",
+              "work": "\\(3 \\div 5 = 0.6\\)"
+            },
+            {
+              "explain": "Final Answer:",
+              "work": "\\(0.6\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q20",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction \\(2\\frac{3}{20}\\) as a decimal.",
+          "options": [
+            "\\(21.5\\)",
+            "\\(215\\)",
+            "\\(0.215\\)",
+            "\\(2.15\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Step 1: Separate the whole number from the fractional part.",
+              "work": "Whole number part: \\(2\\)<br>Fractional part: \\(\\frac{3}{20}\\)"
+            },
+            {
+              "explain": "Step 2: Convert the fractional part to a decimal by dividing the numerator by the denominator.",
+              "work": "\\(3 \\div 20 = 0.15\\)"
+            },
+            {
+              "explain": "Step 3: Add the whole number and the decimal part together.",
+              "work": "\\(2 + 0.15 = 2.15\\)"
+            },
+            {
+              "explain": "Final Answer:",
+              "work": "\\(2.15\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q21",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the fraction \\(\\frac{24}{15}\\) as a decimal.",
+          "options": [
+            "\\(0.16\\)",
+            "\\(16\\)",
+            "\\(1.6\\)",
+            "\\(160\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Step 1: Convert the fraction to a decimal by dividing the numerator by the denominator.",
+              "work": "\\(24 \\div 15 = 1.6\\)"
+            },
+            {
+              "explain": "Final Answer:",
+              "work": "\\(1.6\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equivalent fraction in simplest form for the decimal \\(0.875\\).",
+          "options": [
+            "\\(\\frac{8}{8}\\)",
+            "\\(\\frac{7}{13}\\)",
+            "\\(\\frac{7}{8}\\)",
+            "\\(\\frac{875}{100}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.875\\). There are 3 decimal places, so the denominator is \\(1000\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(0.875 = \\frac{875}{1000}\\)"
+            },
+            {
+              "explain": "Step 3: Simplify the fraction by finding the greatest common divisor (GCD).",
+              "work": "Divide the numerator and denominator by \\(125\\):<br>\\(\\frac{875 \\div 125}{1000 \\div 125} = \\frac{7}{8}\\)"
+            },
+            {
+              "explain": "Step 4: State the final answer in simplest form.",
+              "work": "\\(\\frac{7}{8}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equivalent decimal for the fraction \\(\\frac{4}{5}\\).",
+          "options": [
+            "\\(80\\)",
+            "\\(0.08\\)",
+            "\\(8\\)",
+            "\\(0.8\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Step 1: Convert the fraction to a decimal by dividing the numerator by the denominator.",
+              "work": "\\(4 \\div 5 = 0.8\\)"
+            },
+            {
+              "explain": "Final Answer:",
+              "work": "\\(0.8\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equivalent fraction in simplest form for the decimal \\(0.25\\).",
+          "options": [
+            "\\(\\frac{25}{10}\\)",
+            "\\(\\frac{1}{9}\\)",
+            "\\(\\frac{2}{4}\\)",
+            "\\(\\frac{1}{4}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.25\\). There are 2 decimal places, so the denominator is \\(100\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(0.25 = \\frac{25}{100}\\)"
+            },
+            {
+              "explain": "Step 3: Simplify the fraction by finding the greatest common divisor (GCD).",
+              "work": "Divide the numerator and denominator by \\(25\\):<br>\\(\\frac{25 \\div 25}{100 \\div 25} = \\frac{1}{4}\\)"
+            },
+            {
+              "explain": "Step 4: State the final answer in simplest form.",
+              "work": "\\(\\frac{1}{4}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equivalent decimal for the mixed fraction \\(3\\frac{1}{4}\\).",
+          "options": [
+            "\\(0.325\\)",
+            "\\(325\\)",
+            "\\(3.25\\)",
+            "\\(32.5\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Step 1: Separate the whole number from the fractional part.",
+              "work": "Whole number part: \\(3\\)<br>Fractional part: \\(\\frac{1}{4}\\)"
+            },
+            {
+              "explain": "Step 2: Convert the fractional part to a decimal by dividing the numerator by the denominator.",
+              "work": "\\(1 \\div 4 = 0.25\\)"
+            },
+            {
+              "explain": "Step 3: Add the whole number and the decimal part together.",
+              "work": "\\(3 + 0.25 = 3.25\\)"
+            },
+            {
+              "explain": "Final Answer:",
+              "work": "\\(3.25\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7b-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equivalent mixed fraction in simplest form for the decimal \\(4.375\\).",
+          "options": [
+            "\\(4\\frac{3}{8}\\)",
+            "\\(4\\frac{4}{8}\\)",
+            "\\(4\\frac{3}{13}\\)",
+            "\\(4\\frac{375}{100}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Step 1: Identify the number of decimal places to determine the denominator.",
+              "work": "The decimal part is \\(.375\\). There are 3 decimal places, so the denominator is \\(1000\\)."
+            },
+            {
+              "explain": "Step 2: Write the decimal as a fraction.",
+              "work": "\\(4.375 = 4\\frac{375}{1000}\\)"
+            },
+            {
+              "explain": "Step 3: Simplify the fraction by finding the greatest common divisor (GCD).",
+              "work": "Divide the numerator and denominator by \\(125\\):<br>\\(\\frac{375 \\div 125}{1000 \\div 125} = \\frac{3}{8}\\)"
+            },
+            {
+              "explain": "Step 4: State the final answer in simplest form.",
+              "work": "\\(4\\frac{3}{8}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7-practice-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Is \\( \\frac{2}{5} = 0.4 \\) true or false?",
+          "options": [
+            "True",
+            "False — \\( \\frac{2}{5} = 0.25 \\)",
+            "False — \\( \\frac{2}{5} = 0.04 \\)",
+            "False — \\( \\frac{2}{5} = 4.0 \\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Divide 2 by 5 to convert the fraction to a decimal.",
+              "work": "2 \\div 5 = 0.4"
+            },
+            {
+              "explain": "Compare to the given decimal.",
+              "work": "0.4 = 0.4, so the statement is TRUE"
+            }
+          ]
+        },
+        {
+          "id": "hghs-y7-t4-2021-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "\\(0.\\dot{6}\\) (0.6 recurring) expressed as a fraction is:",
+          "options": [
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{5}{6}\\)"
+          ],
+          "answer": 1,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Let \\(x\\) equal the recurring decimal, and write out enough repeating digits to see the pattern clearly. Label this equation (1).",
+              "work": "x = 0.\\dot{6} = 0.6666\\ldots \\quad (1)"
+            },
+            {
+              "explain": "Since exactly ONE digit repeats, multiply both sides of (1) by 10 to shift the decimal point one place — this lines up the repeating part of \\(10x\\) with the repeating part of \\(x\\). Label this equation (2).",
+              "work": "10x = 6.6666\\ldots \\quad (2)"
+            },
+            {
+              "explain": "Subtract equation (1) from equation (2). Because both sides have exactly the same repeating \"…6666…\" tail, subtracting cancels the recurring part completely, leaving a whole number.",
+              "work": "(2) - (1): \\quad 10x - x = 6.6666\\ldots - 0.6666\\ldots \\implies 9x = 6"
+            },
+            {
+              "explain": "Divide both sides by 9, then simplify the fraction by dividing top and bottom by their HCF, 3.",
+              "work": "x = \\dfrac{6}{9} = \\dfrac{2}{3}"
+            },
+            {
+              "explain": "Pitfall: multiplying by the wrong power of 10 (e.g. 100x instead of 10x) misaligns the repeating digits so they do NOT cancel in the subtraction — always multiply by \\(10^{(\\text{number of repeating digits})}\\), which is just \\(10^1=10\\) here since only one digit (6) repeats.",
+              "work": "\\text{Answer: } x = \\dfrac{2}{3}"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y7-7c",
+      "code": "7C",
+      "title": "Addition and subtraction of decimals",
+      "questions": [
+        {
+          "id": "y7-7c-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(5.827 + 4.65\\).",
+          "options": [
+            "\\(10.377\\)",
+            "\\(10.477\\)",
+            "\\(9.477\\)",
+            "\\(10.577\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Align the decimal points.",
+              "work": "\\( 5.827 + 4.650 \\)"
+            },
+            {
+              "explain": "Add the digits from right to left.",
+              "work": "\\( 10.477 \\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7c-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(45.783 - 39.94\\).",
+          "options": [
+            "\\(6.843\\)",
+            "\\(5.843\\)",
+            "\\(6.243\\)",
+            "\\(5.243\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Align the decimal points.",
+              "work": "\\( 45.783 - 39.940 \\)"
+            },
+            {
+              "explain": "Subtract the digits from right to left.",
+              "work": "\\( 5.843 \\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7c-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(3.8041 + 74.295\\).",
+          "options": [
+            "\\(77.0991\\)",
+            "\\(78.1091\\)",
+            "\\(78.0991\\)",
+            "\\(77.1091\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Align the decimal points.",
+              "work": "\\( 3.8041 + 74.2950 \\)"
+            },
+            {
+              "explain": "Add the digits from right to left.",
+              "work": "\\( 78.0991 \\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7c-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(345.006 - 287.45\\).",
+          "options": [
+            "\\(57.656\\)",
+            "\\(57.556\\)",
+            "\\(58.556\\)",
+            "\\(57.550\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Align the decimal points.",
+              "work": "\\( 345.006 - 287.450 \\)"
+            },
+            {
+              "explain": "Subtract the digits from right to left.",
+              "work": "\\( 57.556 \\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7c-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(58.0387 + 253.4831\\).",
+          "options": [
+            "\\(311.4218\\)",
+            "\\(311.5218\\)",
+            "\\(301.5218\\)",
+            "\\(312.5218\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Align the decimal points.",
+              "work": "\\( 58.0387 + 253.4831 \\)"
+            },
+            {
+              "explain": "Add the digits from right to left.",
+              "work": "\\( 311.5218 \\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7c-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(14.0045 + 2.386884\\).",
+          "options": [
+            "\\(16.381384\\)",
+            "\\(16.391384\\)",
+            "\\(16.391\\)",
+            "\\(15.391384\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Align the decimal points.",
+              "work": "\\( 14.004500 + 2.386884 \\)"
+            },
+            {
+              "explain": "Add the digits from right to left.",
+              "work": "\\( 16.391384 \\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y7-7d",
+      "code": "7D",
+      "title": "Multiplication and division by powers of 10",
+      "questions": [
+        {
+          "id": "y7-7d-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(7.304 \\times 100\\).",
+          "options": [
+            "\\(73.04\\)",
+            "\\(730.4\\)",
+            "\\(7304\\)",
+            "\\(0.07304\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "To multiply by 100, move the decimal point 2 places to the right.",
+              "work": "\\( 7.304 \\times 100 = 730.4 \\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7-practice-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is \\( 5.283 \\times 100 \\)?",
+          "options": [
+            "528.3",
+            "52.83",
+            "5283",
+            "58.23"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiplying by 100 moves the decimal point 2 places to the right.",
+              "work": "5.283 \\times 100 = 528.3"
+            }
+          ]
+        },
+        {
+          "id": "y7-7-practice-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\( \\square \\div 100 = 0.36 \\)",
+          "options": [
+            "36",
+            "3.6",
+            "360",
+            "0.036"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Reverse the operation: multiply both sides by 100.",
+              "work": "\\square = 0.36 \\times 100"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "0.36 \\times 100 = 36"
+            }
+          ]
+        },
+        {
+          "id": "y7-7-practice-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is \\( 12.7 \\times 1000 \\)?",
+          "options": [
+            "12,700",
+            "1,270",
+            "127,000",
+            "1.27"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiplying by 1000 moves the decimal point 3 places to the right.",
+              "work": "12.7 \\times 1000 = 12,700"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-7e",
+      "code": "7E",
+      "title": "Multiplication of one decimal by another",
+      "questions": [
+        {
+          "id": "y7-7e-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(34.5 \\times 16\\).",
+          "options": [
+            "\\(345\\)",
+            "\\(552\\)",
+            "\\(55.2\\)",
+            "\\(5520\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Multiply the numbers as integers, ignoring the decimal point.",
+              "work": "\\( 345 \\times 16 = 5520 \\)"
+            },
+            {
+              "explain": "Place the decimal point so there is 1 decimal place in the result.",
+              "work": "\\( 552.0 = 552 \\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7e-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(35.084 \\times 8\\).",
+          "options": [
+            "\\(280.64\\)",
+            "\\(280.672\\)",
+            "\\(28.0672\\)",
+            "\\(2806.72\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Multiply the numbers as integers, ignoring the decimal point.",
+              "work": "\\( 35084 \\times 8 = 280672 \\)"
+            },
+            {
+              "explain": "Place the decimal point so there are 3 decimal places in the result.",
+              "work": "\\( 280.672 \\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7-practice-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A ribbon costs \\( \\$3.15 \\) per metre. What is the cost of 4 metres?",
+          "options": [
+            "\\( \\$12.60 \\)",
+            "\\( \\$11.60 \\)",
+            "\\( \\$13.60 \\)",
+            "\\( \\$12.15 \\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Multiply the price per metre by the number of metres.",
+              "work": "\\( 3.15 \\times 4 \\)"
+            },
+            {
+              "explain": "Multiply as whole numbers, then place the decimal point: \\( 315 \\times 4 = 1260 \\)",
+              "work": "\\( 3.15 \\times 4 = \\$12.60 \\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-7f",
+      "code": "7F",
+      "title": "Division of decimals",
+      "questions": [
+        {
+          "id": "y7-7f-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(86.55 \\div 0.5\\).",
+          "options": [
+            "\\(17.31\\)",
+            "\\(173.1\\)",
+            "\\(1731\\)",
+            "\\(43.275\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Multiply both numbers by 10 to make the divisor a whole number.",
+              "work": "\\( 865.5 \\div 5 \\)"
+            },
+            {
+              "explain": "Divide normally.",
+              "work": "\\( 173.1 \\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7f-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(38.65 \\div 0.3\\).",
+          "options": [
+            "\\(12.88\\dot{3}\\)",
+            "\\(128.8\\dot{3}\\)",
+            "\\(128.\\dot{8}\\)",
+            "\\(128.83\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Multiply both numbers by 10 to make the divisor a whole number.",
+              "work": "\\( 386.5 \\div 3 \\)"
+            },
+            {
+              "explain": "Divide normally. The decimal will recur.",
+              "work": "\\( 128.8333... = 128.8\\dot{3} \\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7f-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(347.6812 \\div 0.04\\).",
+          "options": [
+            "\\(8692.3\\)",
+            "\\(8692.03\\)",
+            "\\(869.203\\)",
+            "\\(86920.3\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Multiply both numbers by 100 to make the divisor a whole number.",
+              "work": "\\( 34768.12 \\div 4 \\)"
+            },
+            {
+              "explain": "Divide normally.",
+              "work": "\\( 8692.03 \\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y7-7g",
+      "code": "7G",
+      "title": "Recurring decimals",
+      "questions": [
+        {
+          "id": "y7-7g-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the fraction \\\\(\\\\frac{1}{3}\\\\) as a decimal.",
+          "options": [
+            "\\(3.\\dot{3}\\)",
+            "\\(0.3\\)",
+            "\\(0.\\dot{3}\\)",
+            "\\(0.\\dot{1}3\\)"
+          ],
+          "answer": 2,
+          "solution": "\\(0.\\dot{3}\\)",
+          "steps": [
+            {
+              "explain": "To convert a fraction to a decimal, divide the numerator by the denominator.",
+              "work": "\\(1 \\div 3 = ?\\)"
+            },
+            {
+              "explain": "Perform the long division. Since 1 is smaller than 3, add a decimal point and zeros.",
+              "work": "\\(1.000... \\div 3\\)"
+            },
+            {
+              "explain": "You will notice that the division keeps resulting in a remainder of 1, so the digit 3 repeats infinitely.",
+              "work": "\\(0.3333...\\)"
+            },
+            {
+              "explain": "Write the recurring decimal using dot notation over the repeating digit.",
+              "work": "\\(0.\\dot{3}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7g-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the fraction \\\\(\\\\frac{4}{3}\\\\) as a decimal.",
+          "options": [
+            "\\(1.\\dot{4}\\)",
+            "\\(0.\\dot{3}4\\)",
+            "\\(1.3\\)",
+            "\\(1.\\dot{3}\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(1.\\dot{3}\\)",
+          "steps": [
+            {
+              "explain": "To convert an improper fraction to a decimal, divide the numerator by the denominator.",
+              "work": "\\(4 \\div 3 = ?\\)"
+            },
+            {
+              "explain": "Perform the long division. 4 divided by 3 is 1 with a remainder of 1.",
+              "work": "\\(1.000... \\div 3\\)"
+            },
+            {
+              "explain": "The remainder 1 continues to yield 3s infinitely.",
+              "work": "\\(1.3333...\\)"
+            },
+            {
+              "explain": "Write the recurring decimal using dot notation over the repeating digit.",
+              "work": "\\(1.\\dot{3}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7g-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express the fraction \\\\(\\\\frac{3}{7}\\\\) as a decimal.",
+          "options": [
+            "\\(0.\\dot{4}2857\\dot{1}\\)",
+            "\\(0.428571\\)",
+            "\\(0.4\\dot{2}857\\dot{1}\\)",
+            "\\(0.\\dot{4}285\\dot{7}1\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(0.\\dot{4}2857\\dot{1}\\)",
+          "steps": [
+            {
+              "explain": "To convert a fraction to a decimal, divide the numerator by the denominator.",
+              "work": "\\(3 \\div 7 = ?\\)"
+            },
+            {
+              "explain": "Perform the long division. The remainders will repeat in a cycle, yielding a sequence of 6 repeating digits.",
+              "work": "\\(0.428571428571...\\)"
+            },
+            {
+              "explain": "Identify the repeating block: 428571.",
+              "work": "\\(0.428571...\\)"
+            },
+            {
+              "explain": "Write the recurring decimal using dot notation over the first and last digits of the repeating block.",
+              "work": "\\(0.\\dot{4}2857\\dot{1}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7g-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the fraction \\\\(\\\\frac{5}{6}\\\\) as a recurring decimal.",
+          "options": [
+            "\\(0.\\dot{8}\\dot{3}\\)",
+            "\\(0.8\\dot{3}\\)",
+            "\\(0.\\dot{8}3\\)",
+            "\\(0.83\\)"
+          ],
+          "answer": 1,
+          "solution": "\\(0.8\\dot{3}\\)",
+          "steps": [
+            {
+              "explain": "To convert a fraction to a decimal, divide the numerator by the denominator.",
+              "work": "\\(5 \\div 6 = ?\\)"
+            },
+            {
+              "explain": "Perform the long division. 50 divided by 6 is 8 with a remainder of 2.",
+              "work": "\\(0.8...\\)"
+            },
+            {
+              "explain": "The remainder 2 becomes 20, divided by 6 is 3 with a remainder of 2. The 3 repeats infinitely.",
+              "work": "\\(0.83333...\\)"
+            },
+            {
+              "explain": "Write the recurring decimal using dot notation over the repeating digit.",
+              "work": "\\(0.8\\dot{3}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7g-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the fraction \\\\(\\\\frac{4}{7}\\\\) as a recurring decimal.",
+          "options": [
+            "\\(0.\\dot{5}7142\\dot{8}\\)",
+            "\\(0.5\\dot{7}142\\dot{8}\\)",
+            "\\(0.\\dot{5}71428\\)",
+            "\\(0.571428\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(0.\\dot{5}7142\\dot{8}\\)",
+          "steps": [
+            {
+              "explain": "To convert a fraction to a decimal, divide the numerator by the denominator.",
+              "work": "\\(4 \\div 7 = ?\\)"
+            },
+            {
+              "explain": "Perform the long division. The remainders will repeat in a cycle, yielding a sequence of 6 repeating digits.",
+              "work": "\\(0.571428571428...\\)"
+            },
+            {
+              "explain": "Identify the repeating block: 571428.",
+              "work": "\\(0.571428...\\)"
+            },
+            {
+              "explain": "Write the recurring decimal using dot notation over the first and last digits of the repeating block.",
+              "work": "\\(0.\\dot{5}7142\\dot{8}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7g-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the fraction \\\\(\\\\frac{5}{11}\\\\) as a recurring decimal.",
+          "options": [
+            "\\(0.\\dot{4}\\dot{5}\\)",
+            "\\(0.45\\)",
+            "\\(0.4\\dot{5}\\)",
+            "\\(0.\\dot{5}\\dot{4}\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(0.\\dot{4}\\dot{5}\\)",
+          "steps": [
+            {
+              "explain": "To convert a fraction to a decimal, divide the numerator by the denominator.",
+              "work": "\\(5 \\div 11 = ?\\)"
+            },
+            {
+              "explain": "Perform the long division. 50 divided by 11 is 4 with a remainder of 6. Then 60 divided by 11 is 5 with a remainder of 5.",
+              "work": "\\(0.45...\\)"
+            },
+            {
+              "explain": "The remainder 5 repeats the cycle, so the block '45' repeats infinitely.",
+              "work": "\\(0.454545...\\)"
+            },
+            {
+              "explain": "Write the recurring decimal using dot notation over both repeating digits.",
+              "work": "\\(0.\\dot{4}\\dot{5}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7g-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the fraction \\\\(\\\\frac{1}{6}\\\\) as a recurring decimal.",
+          "options": [
+            "\\\\(0.16\\\\)",
+            "\\\\(0.\\\\dot{1}\\\\dot{6}\\\\)",
+            "\\\\(0.\\\\dot{1}6\\\\)",
+            "\\\\(0.1\\\\dot{6}\\\\)"
+          ],
+          "answer": 3,
+          "solution": "\\\\(0.1\\\\dot{6}\\\\)",
+          "steps": [
+            {
+              "explain": "To convert a fraction to a decimal, divide the numerator by the denominator.",
+              "work": "\\\\(1 \\\\div 6 = ?\\\\)"
+            },
+            {
+              "explain": "Perform the long division. Since 1 is smaller than 6, add a decimal point and zeros.",
+              "work": "\\\\(1.000 \\\\div 6 = 0.1666...\\\\)"
+            },
+            {
+              "explain": "Identify the repeating pattern. The digit 6 repeats infinitely.",
+              "work": "\\\\(0.1666...\\\\)"
+            },
+            {
+              "explain": "Write the recurring decimal using dot notation over the repeating digit.",
+              "work": "\\\\(0.1\\\\dot{6}\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y7-7g-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the fraction \\\\(\\\\frac{5}{7}\\\\) as a recurring decimal.",
+          "options": [
+            "\\(0.\\dot{7}142\\dot{8}5\\)",
+            "\\(0.714285\\)",
+            "\\(0.\\dot{7}1428\\dot{5}\\)",
+            "\\(0.7\\dot{1}428\\dot{5}\\)"
+          ],
+          "answer": 2,
+          "solution": "\\(0.\\dot{7}1428\\dot{5}\\)",
+          "steps": [
+            {
+              "explain": "To convert a fraction to a decimal, divide the numerator by the denominator.",
+              "work": "\\(5 \\div 7 = ?\\)"
+            },
+            {
+              "explain": "Perform the long division. The remainders will repeat in a cycle, yielding a sequence of 6 repeating digits.",
+              "work": "\\(0.714285714285...\\)"
+            },
+            {
+              "explain": "Identify the repeating block: 714285.",
+              "work": "\\(0.714285...\\)"
+            },
+            {
+              "explain": "Write the recurring decimal using dot notation over the first and last digits of the repeating block.",
+              "work": "\\(0.\\dot{7}1428\\dot{5}\\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y7-7h",
+      "code": "7H",
+      "title": "Rounding of decimals",
+      "questions": [
+        {
+          "id": "hghs-y7-t4-2021-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "8.763 rounded to one decimal place is:",
+          "options": [
+            "8.7",
+            "8.76",
+            "8.8",
+            "9"
+          ],
+          "answer": 2,
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "To round to one decimal place, look at the second decimal digit (the \"rounding\" digit).",
+              "work": "8.7\\underline{6}3"
+            },
+            {
+              "explain": "The digit after the first decimal place is 6, which is 5 or more, so round the first decimal digit up.",
+              "work": "8.7 \\to 8.8"
+            },
+            {
+              "explain": "Pitfall: rounding to 8.7 mistakenly truncates instead of rounding; rounding all the way to 9 rounds to the nearest whole number instead of one decimal place.",
+              "work": "\\text{Answer: } 8.8"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        }
+      ]
+    }
+  ]
+}

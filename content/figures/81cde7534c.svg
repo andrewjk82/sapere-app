@@ -1,0 +1,21 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>
+  <rect width='300' height='300' fill='#f8fafc' />
+  <line x1='0' y1='150' x2='300' y2='150' stroke='#94a3b8' stroke-width='2' />
+  <line x1='150' y1='0' x2='150' y2='300' stroke='#94a3b8' stroke-width='2' />
+  <circle cx='150' cy='150' r='100' fill='rgba(99, 102, 241, 0.05)' stroke='#6366f1' stroke-width='2' />
+  <circle cx='150' cy='150' r='3' fill='#64748b' />
+  <text x='155' y='145' font-family='sans-serif' font-size='12' fill='#64748b'>O</text>
+  <text x='10' y='20' font-family='sans-serif' font-size='12' font-weight='bold' fill='#4f46e5'>x² + y² = 169</text>
+  <polygon points='188.46,57.69 111.54,57.69 111.54,242.31 188.46,242.31' fill='none' stroke='#1e293b' stroke-width='2' />
+  <circle cx='188.46' cy='57.69' r='4' fill='#ef4444' />
+  <text x='194' y='52' font-family='sans-serif' font-size='12' font-weight='bold' fill='#0f172a'>A(5, 12)</text>
+  <!-- B is (-5, 12) to match Option 2 -->
+  <circle cx='111.54' cy='57.69' r='4' fill='#ef4444' />
+  <text text-anchor='end' x='105' y='52' font-family='sans-serif' font-size='12' font-weight='bold' fill='#0f172a'>B(-5, 12)</text>
+  <!-- C is (-5, -12) -->
+  <circle cx='111.54' cy='242.31' r='4' fill='#ef4444' />
+  <text text-anchor='end' x='105' y='250' font-family='sans-serif' font-size='12' font-weight='bold' fill='#0f172a'>C(-5, -12)</text>
+  <!-- D is (5, -12) -->
+  <circle cx='188.46' cy='242.31' r='4' fill='#ef4444' />
+  <text x='194' y='250' font-family='sans-serif' font-size='12' font-weight='bold' fill='#0f172a'>D(5, -12)</text>
+</svg>

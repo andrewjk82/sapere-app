@@ -1,0 +1,47 @@
+{
+  "chapterId": "exam:blacktownboys2020similar",
+  "title": "Arithmetic Sequences & Series",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "exam:blacktownboys2020similar",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "bbhs2020s-12b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In an arithmetic series, the first term is 20 and the 20th term is 96. Find the common difference.",
+          "options": [
+            "\\(d = 3\\)",
+            "\\(d = -3\\)",
+            "\\(d = 4\\)",
+            "\\(d = 5\\)"
+          ],
+          "answer": 2,
+          "hint": "Use $T_n = a + (n-1)d$.",
+          "solution": "The correct answer is \\(d = 4\\).",
+          "steps": [
+            {
+              "explain": "Use $T_n = a+(n-1)d$ with $n=20$, $a=20$, $T_{20}=96$ (given/found in part (a)).",
+              "work": "\\(T_{20} = a + (20-1)d \\Rightarrow 96 = 20 + 19d\\)"
+            },
+            {
+              "explain": "Subtract 20 from both sides to isolate the $19d$ term.",
+              "work": "\\(96 - 20 = 19d \\Rightarrow 19d = 76\\)"
+            },
+            {
+              "explain": "Divide both sides by 19 to solve for the common difference $d$.",
+              "work": "\\(d = \\frac{76}{19} = 4\\)"
+            }
+          ],
+          "meta": {
+            "source": "Similar to Blacktown Boys 2020 Trial Q12b",
+            "origin": "teacher"
+          }
+        }
+      ]
+    }
+  ]
+}

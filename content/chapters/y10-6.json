@@ -1,0 +1,3518 @@
+{
+  "chapterId": "y10-6",
+  "title": "Chapter 6: Surface area and volume",
+  "year": "2012",
+  "topics": [
+    {
+      "topicId": "y10-6",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y10-6a-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The base of a right prism of height 10 cm is an equilateral triangle.\nIf the side length of the triangle is 8 cm, calculate the exact height of the triangle.",
+          "options": [
+            "\\( 4\\sqrt{2} \\)",
+            "\\( 4\\sqrt{3} \\)",
+            "\\( 8\\sqrt{3} \\)",
+            "\\( 8 \\)"
+          ],
+          "answer": 1,
+          "solution": "4\\sqrt{3}",
+          "steps": [
+            {
+              "explain": "Use Pythagoras theorem on half of the equilateral triangle.",
+              "work": "h^2 + 4^2 = 8^2"
+            },
+            {
+              "explain": "Solve for h.",
+              "work": "h^2 = 64 - 16 = 48"
+            },
+            {
+              "explain": "Simplify the surd.",
+              "work": "h = \\sqrt{48} = 4\\sqrt{3}"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y10-6k-q1",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "For a rectangular prism measuring \\( 40 \\) cm \\( \\times \\) \\( 25 \\) cm \\( \\times \\) \\( 15 \\) cm, calculate:",
+          "parts": [
+            {
+              "id": "y10-6k-q1a",
+              "type": "mc",
+              "stem": "a) the surface area",
+              "options": [
+                "\\(3950\\)",
+                "\\(3900\\)",
+                "\\(4150\\)",
+                "\\(15000\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We are given a rectangular prism with dimensions 40 cm, 25 cm, and 15 cm. We need to calculate its surface area. Our strategy is to list these knowns and choose the appropriate formula.",
+                  "work": "Prism dimensions: length $l = 40$, width $w = 25$, height $h = 15$. We need Surface Area."
+                },
+                {
+                  "explain": "The correct formula for the surface area of a rectangular prism is $SA = 2(lw + lh + wh)$. This turns our worded problem into an equation we can solve.",
+                  "work": "$SA = 2(lw + lh + wh)$"
+                },
+                {
+                  "explain": "We now substitute $l=40$, $w=25$, and $h=15$ into our formula and carefully simplify the expression to find the intermediate result.",
+                  "work": "SA = $2(40 \\times 25 + 40 \\times 15 + 25 \\times 15) = 2(1000 + 600 + 375) = 2(1975) = 3950$"
+                },
+                {
+                  "explain": "Our final calculated value is 3950. In the context of surface area, this means $3950$ cm$^2$, which matches our target option.",
+                  "work": "The surface area is $3950$ cm$^2$."
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q1b",
+              "type": "mc",
+              "stem": "b) the volume",
+              "options": [
+                "\\(1500\\)",
+                "\\(3950\\)",
+                "\\(15000\\)",
+                "\\(30000\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "We are given a rectangular prism with dimensions 40 cm, 25 cm, and 15 cm. We need to calculate its volume. We list these knowns to prepare for calculation.",
+                  "work": "Prism dimensions: length $l = 40$, width $w = 25$, height $h = 15$. We need Volume."
+                },
+                {
+                  "explain": "The rule that applies is the volume formula for a rectangular prism: $V = l \\times w \\times h$.",
+                  "work": "$V = l \\times w \\times h$"
+                },
+                {
+                  "explain": "Substitute the length, width, and height into the formula and multiply them together.",
+                  "work": "V = $40 \\times 25 \\times 15 = 15000$"
+                },
+                {
+                  "explain": "The final value is 15000. In the context of volume, the units are cubic centimeters (cm$^3$).",
+                  "work": "The volume is $15000$ cm$^3$."
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y10-6k-q4",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "The cross-section \\( ABCD \\) of the prism shown is an isosceles trapezium with \\( AB = 10 \\) cm, \\( DC = 22 \\) cm, \\( AD = BC = 10 \\) cm and \\( AE = 25 \\) cm.\n\nCalculate:",
+          "figure": {
+            "geometry": {
+              "segments": [
+                {
+                  "from": "D",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "A"
+                },
+                {
+                  "from": "A",
+                  "to": "D"
+                },
+                {
+                  "from": "H",
+                  "to": "G",
+                  "dashed": true
+                },
+                {
+                  "from": "G",
+                  "to": "F"
+                },
+                {
+                  "from": "F",
+                  "to": "E"
+                },
+                {
+                  "to": "H",
+                  "dashed": true,
+                  "from": "E"
+                },
+                {
+                  "to": "H",
+                  "dashed": true,
+                  "from": "D"
+                },
+                {
+                  "from": "C",
+                  "to": "G"
+                },
+                {
+                  "from": "B",
+                  "to": "F"
+                },
+                {
+                  "from": "A",
+                  "to": "E"
+                }
+              ],
+              "points": {
+                "A": [
+                  6,
+                  8
+                ],
+                "F": [
+                  26,
+                  20
+                ],
+                "C": [
+                  22,
+                  0
+                ],
+                "D": [
+                  0,
+                  0
+                ],
+                "H": [
+                  10,
+                  12
+                ],
+                "B": [
+                  16,
+                  8
+                ],
+                "E": [
+                  16,
+                  20
+                ],
+                "G": [
+                  32,
+                  12
+                ]
+              },
+              "width": 250
+            },
+            "source": {
+              "geometry": {
+                "width": 250,
+                "segments": [
+                  {
+                    "from": "D",
+                    "to": "C"
+                  },
+                  {
+                    "from": "C",
+                    "to": "B"
+                  },
+                  {
+                    "from": "B",
+                    "to": "A"
+                  },
+                  {
+                    "from": "A",
+                    "to": "D"
+                  },
+                  {
+                    "to": "G",
+                    "dashed": true,
+                    "from": "H"
+                  },
+                  {
+                    "from": "G",
+                    "to": "F"
+                  },
+                  {
+                    "from": "F",
+                    "to": "E"
+                  },
+                  {
+                    "from": "E",
+                    "dashed": true,
+                    "to": "H"
+                  },
+                  {
+                    "from": "D",
+                    "to": "H",
+                    "dashed": true
+                  },
+                  {
+                    "from": "C",
+                    "to": "G"
+                  },
+                  {
+                    "from": "B",
+                    "to": "F"
+                  },
+                  {
+                    "from": "A",
+                    "to": "E"
+                  }
+                ],
+                "points": {
+                  "E": [
+                    16,
+                    20
+                  ],
+                  "G": [
+                    32,
+                    12
+                  ],
+                  "B": [
+                    16,
+                    8
+                  ],
+                  "H": [
+                    10,
+                    12
+                  ],
+                  "D": [
+                    0,
+                    0
+                  ],
+                  "C": [
+                    22,
+                    0
+                  ],
+                  "F": [
+                    26,
+                    20
+                  ],
+                  "A": [
+                    6,
+                    8
+                  ]
+                }
+              },
+              "type": "geometry"
+            }
+          },
+          "parts": [
+            {
+              "id": "y10-6k-q4a",
+              "type": "mc",
+              "stem": "a) the area of \\( ABCD \\)",
+              "options": [
+                "\\(160\\)",
+                "\\(128\\)",
+                "\\(256\\)",
+                "\\(320\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We have an isosceles trapezium with parallel sides 10 cm and 22 cm, and slanted sides 10 cm. We need its area.",
+                  "work": "Isosceles trapezium $ABCD$: $a = 10$, $b = 22$, slanted sides $= 10$."
+                },
+                {
+                  "explain": "To find the area using $\\frac{1}{2}(a+b)h$, we first need the perpendicular height $h$, which we can find using Pythagoras' theorem on the side triangles.",
+                  "work": "Height $h$: base difference $= (22 - 10) / 2 = 6$. $h = \\sqrt{10^2 - 6^2} = 8$. Area = $\\frac{1}{2}(a+b)h$"
+                },
+                {
+                  "explain": "Substitute the parallel sides and the calculated height into the trapezium area formula.",
+                  "work": "Area = $\\frac{1}{2}(10 + 22) \\times 8 = 16 \\times 8 = 128$"
+                },
+                {
+                  "explain": "The final calculated area is 128 cm$^2$, matching our target option.",
+                  "work": "The area is $128$ cm$^2$."
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q4b",
+              "type": "mc",
+              "stem": "b) the surface area of the prism",
+              "options": [
+                "\\(1300\\)",
+                "\\(1428\\)",
+                "\\(1556\\)",
+                "\\(1812\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "We are finding the surface area of a prism with an isosceles trapezium base. We know the base area is 128 cm$^2$ and depth is 25 cm.",
+                  "work": "Prism with trapezium base. Base Area $= 128$, depth $= 25$. Perimeter $= 10+10+22+10=52$."
+                },
+                {
+                  "explain": "The surface area of a general prism is $2 \\times \\text{Base Area} + \\text{Perimeter} \\times \\text{depth}$.",
+                  "work": "$SA = 2 \\times \\text{Base Area} + \\text{Perimeter} \\times \\text{depth}$"
+                },
+                {
+                  "explain": "Substitute the base area (128) and perimeter (52) into the formula along with the depth.",
+                  "work": "SA = $2(128) + 52 \\times 25 = 256 + 1300 = 1556$"
+                },
+                {
+                  "explain": "Our final surface area is 1556 cm$^2$.",
+                  "work": "The surface area is $1556$ cm$^2$."
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q4c",
+              "type": "mc",
+              "stem": "c) the volume of the prism",
+              "options": [
+                "\\(3200\\)",
+                "\\(1600\\)",
+                "\\(6400\\)",
+                "\\(4800\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We are finding the volume of a prism with an isosceles trapezium base. We previously found the base area is 128 cm$^2$ and depth is 25 cm.",
+                  "work": "Prism with trapezium base. Base Area $= 128$, depth $= 25$."
+                },
+                {
+                  "explain": "The volume formula for any uniform prism is $V = \\text{Base Area} \\times \\text{depth}$.",
+                  "work": "$V = \\text{Base Area} \\times \\text{depth}$"
+                },
+                {
+                  "explain": "Substitute the calculated base area and the given depth into the formula.",
+                  "work": "V = $128 \\times 25 = 3200$"
+                },
+                {
+                  "explain": "The volume of the prism is 3200 cm$^3$.",
+                  "work": "The volume is $3200$ cm$^3$."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-6a",
+      "code": "6a",
+      "title": "Review of prisms and cylinders",
+      "questions": [
+        {
+          "id": "y10-6a-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the surface area of the rectangular prism.",
+          "figure": {
+            "svg": "fig:dbe6d11a62"
+          },
+          "options": [
+            "\\( 230 \\)",
+            "\\( 340 \\)",
+            "\\( 400 \\)",
+            "\\( 680 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(340\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(l = 8, b = 5, h = 10\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(SA = 2(lb + lh + bh)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(SA = 2(40 + 80 + 50) = 340\\)"
+            },
+            {
+              "explain": "Final answer: 340. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(340\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6a-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the surface area of the rectangular prism.",
+          "figure": {
+            "svg": "fig:c9d5265398"
+          },
+          "options": [
+            "\\( 275 \\)",
+            "\\( 450 \\)",
+            "\\( 550 \\)",
+            "\\( 1100 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(550\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(l = 15, b = 10, h = 5\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(SA = 2(15 \\times 10 + 15 \\times 5 + 10 \\times 5)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(SA = 2(150 + 75 + 50) = 550\\)"
+            },
+            {
+              "explain": "Final answer: 550. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(550\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6a-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the exact surface area of the cylinder (in terms of \\(\\pi\\)).",
+          "figure": {
+            "svg": "fig:cb8c24d85f"
+          },
+          "options": [
+            "\\( 120\\pi \\)",
+            "\\( 170\\pi \\)",
+            "\\( 145\\pi \\)",
+            "\\( 300\\pi \\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(170\\pi\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(r = 5, h = 12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(SA = 2\\pi r^2 + 2\\pi rh\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(SA = 2\\pi(5)^2 + 2\\pi(5)(12)\\)"
+            },
+            {
+              "explain": "Final answer: 170\\pi. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(170\\pi\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6a-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the exact surface area of the half-cylinder (in terms of \\(\\pi\\)).",
+          "figure": {
+            "svg": "fig:f22c5cbe18"
+          },
+          "options": [
+            "\\(40\\pi + 80\\)",
+            "\\(56\\pi\\)",
+            "\\(56\\pi + 80\\)",
+            "\\(80\\pi + 80\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(56\\pi + 80\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(r = 4, h = 10\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(SA = 2(\\frac{1}{2}\\pi r^2) + \\frac{1}{2}(2\\pi rh) + (2r \\times h)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(SA = \\pi(4^2) + \\pi(4)(10) + (8 \\times 10)\\)"
+            },
+            {
+              "explain": "Final answer: 56\\pi + 80. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(56\\pi + 80\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6a-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the surface area of the right-angled triangular prism.",
+          "figure": {
+            "svg": "fig:5942678689"
+          },
+          "options": [
+            "\\( 600 \\)",
+            "\\( 630 \\)",
+            "\\( 660 \\)",
+            "\\( 720 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(660\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(Base Area = \\frac{1}{2} \\times 5 \\times 12 = 30\\)",
+              "figure": {
+                "geometry": {
+                  "width": 280,
+                  "projection": "isometric",
+                  "points": {
+                    "A": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "B": [
+                      12,
+                      0,
+                      0
+                    ],
+                    "C": [
+                      0,
+                      5,
+                      0
+                    ],
+                    "D": [
+                      0,
+                      0,
+                      20
+                    ],
+                    "E": [
+                      12,
+                      0,
+                      20
+                    ],
+                    "F": [
+                      0,
+                      5,
+                      20
+                    ]
+                  },
+                  "segments": [
+                    {
+                      "from": "A",
+                      "to": "B"
+                    },
+                    {
+                      "from": "B",
+                      "to": "C"
+                    },
+                    {
+                      "from": "C",
+                      "to": "A"
+                    },
+                    {
+                      "from": "D",
+                      "to": "E"
+                    },
+                    {
+                      "from": "E",
+                      "to": "F"
+                    },
+                    {
+                      "from": "F",
+                      "to": "D",
+                      "dashed": true
+                    },
+                    {
+                      "from": "A",
+                      "to": "D",
+                      "dashed": true
+                    },
+                    {
+                      "from": "B",
+                      "to": "E"
+                    },
+                    {
+                      "from": "C",
+                      "to": "F"
+                    }
+                  ],
+                  "sideLabels": [
+                    {
+                      "between": [
+                        "A",
+                        "C"
+                      ],
+                      "text": "5"
+                    },
+                    {
+                      "between": [
+                        "A",
+                        "B"
+                      ],
+                      "text": "12"
+                    },
+                    {
+                      "between": [
+                        "B",
+                        "E"
+                      ],
+                      "text": "20"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = 5 + 12 + 13 = 30\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(SA = 2 \\times \\text{Base Area} + P \\times h\\)"
+            },
+            {
+              "explain": "Final answer: 660. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(660\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6a-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The base of a right prism of height 10 cm is an equilateral triangle with side length 8 cm. Calculate the exact surface area of the prism.",
+          "figure": {
+            "svg": "fig:0edddec200"
+          },
+          "options": [
+            "\\(16\\sqrt{3} + 240\\)",
+            "\\(32\\sqrt{3} + 240\\)",
+            "\\(64\\sqrt{3} + 240\\)",
+            "\\(160\\sqrt{3}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(32\\sqrt{3} + 240\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(A = \\frac{1}{2} \\times 8 \\times 4\\sqrt{3} = 16\\sqrt{3}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = 3 \\times 8 = 24\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(SA = 2 \\times 16\\sqrt{3} + 24 \\times 10 = 32\\sqrt{3} + 240\\)"
+            },
+            {
+              "explain": "Final answer: 32\\sqrt{3} + 240. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(32\\sqrt{3} + 240\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6a-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cube has a surface area of 150 m\\(^2\\). Find its side length.",
+          "figure": {
+            "svg": "fig:f7e8f958ed"
+          },
+          "options": [
+            "\\( 5 \\)",
+            "\\( 12.2 \\)",
+            "\\( 25 \\)",
+            "\\( 37.5 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(5\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(6s^2 = 150\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(s^2 = 25\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(s = 5\\)"
+            },
+            {
+              "explain": "Final answer: 5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-6a-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A cylinder of base radius 5 cm has a curved surface area of 60\\(\\pi\\) cm\\(^2\\). Find its height.",
+          "figure": {
+            "svg": "fig:0ec035612a"
+          },
+          "options": [
+            "\\( 2.4 \\)",
+            "\\( 6 \\)",
+            "\\( 12 \\)",
+            "\\( 30 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(2\\pi rh = 60\\pi\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(2\\pi(5)h = 60\\pi\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(10\\pi h = 60\\pi \\implies h = 6\\)"
+            },
+            {
+              "explain": "Final answer: 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(6\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6a-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A rubbish bin is in the shape of an open cylinder.\nIf the bin has radius 10 cm and height 30 cm, find its exact total surface area (do not include the lid).",
+          "figure": {
+            "svg": "fig:50160ac446"
+          },
+          "options": [
+            "\\( 600\\pi \\)",
+            "\\( 700\\pi \\)",
+            "\\( 800\\pi \\)",
+            "\\( 3000\\pi \\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(700\\pi\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(SA = \\pi r^2 + 2\\pi rh\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(SA = \\pi(10)^2 + 2\\pi(10)(30)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(SA = 100\\pi + 600\\pi = 700\\pi\\)"
+            },
+            {
+              "explain": "Final answer: 700\\pi. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(700\\pi\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6a-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If the open bin has radius 12 cm and a curved surface area of 2400 cm\\(^2\\), find the height of the bin, correct to one decimal place.",
+          "figure": {
+            "svg": "fig:a476928f09"
+          },
+          "options": [
+            "\\( 25.8 \\)",
+            "\\( 31.8 \\)",
+            "\\( 63.7 \\)",
+            "\\( 100 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(31.8\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(2\\pi rh = 2400\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(24\\pi h = 2400\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(h = \\frac{100}{\\pi} \\approx 31.83\\)"
+            },
+            {
+              "explain": "Final answer: 31.8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(31.8\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6a-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the volume of the rectangular prism.",
+          "figure": {
+            "svg": "fig:b648b9b33e"
+          },
+          "options": [
+            "\\( 144 \\)",
+            "\\( 240 \\)",
+            "\\( 480 \\)",
+            "\\( 960 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(480\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(V = l \\times b \\times h\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(V = 12 \\times 8 \\times 5\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(V = 480\\)"
+            },
+            {
+              "explain": "Final answer: 480. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(480\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6a-q6e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A cylinder has a radius of 5 cm and a height of 12 cm. Calculate the exact volume of the cylinder (in terms of \\(\\pi\\)).",
+          "figure": {
+            "svg": "fig:68a6f91341",
+            "jsxGraph": {
+              "script": "\n  const optsFaceSide = { borders: { visible: false }, hasInnerBorders: false, fixed: true, fillColor: '#93c5fd', fillOpacity: 0.9 };\n  const optsFaceTop = { strokeColor: '#1e3a8a', strokeWidth: 2, fixed: true, fillColor: '#dbeafe', fillOpacity: 0.9, firstArrow: false, lastArrow: false };\n  const optsLine = { strokeColor: '#1e3a8a', strokeWidth: 2, firstArrow: false, lastArrow: false };\n  const optsLineDashed = { strokeColor: '#1e3a8a', strokeWidth: 1.5, dash: 2, firstArrow: false, lastArrow: false };\n  const optsDim = { strokeColor: '#e11d48', strokeWidth: 1.5, firstArrow: true, lastArrow: true };\n  const optsText = { strokeColor: '#e11d48', fontSize: 14, fontWeight: 'bold' };\n  \n  const rx = 5;\n  const ry = 2;\n  const h = 12;\n  const steps = 60;\n  \n  const topX = [], topY = [];\n  const botFrontX = [], botFrontY = [];\n  const botBackX = [], botBackY = [];\n  const botFullX = [], botFullY = [];\n  \n  for(let i=0; i<=steps; i++) {\n    const t = (i / steps) * 2 * Math.PI;\n    topX.push(rx * Math.cos(t));\n    topY.push(h/2 + ry * Math.sin(t));\n    \n    botFullX.push(rx * Math.cos(t));\n    botFullY.push(-h/2 + ry * Math.sin(t));\n    \n    // Front half (PI to 2PI)\n    if(t >= Math.PI) {\n      botFrontX.push(rx * Math.cos(t));\n      botFrontY.push(-h/2 + ry * Math.sin(t));\n    }\n    // Back half (0 to PI)\n    if(t <= Math.PI) {\n      botBackX.push(rx * Math.cos(t));\n      botBackY.push(-h/2 + ry * Math.sin(t));\n    }\n  }\n  \n  board.create('polygon', [[-rx, h/2], [rx, h/2], [rx, -h/2], [-rx, -h/2]], optsFaceSide);\n  board.create('curve', [botFullX, botFullY], { strokeWidth: 0, fillColor: '#93c5fd', fillOpacity: 0.9, fixed: true, firstArrow: false, lastArrow: false });\n  board.create('curve', [topX, topY], optsFaceTop);\n  \n  board.create('segment', [[-rx, h/2], [-rx, -h/2]], optsLine);\n  board.create('segment', [[rx, h/2], [rx, -h/2]], optsLine);\n  \n  board.create('curve', [botFrontX, botFrontY], optsLine);\n  board.create('curve', [botBackX, botBackY], optsLineDashed);\n  \n  board.create('point', [0, h/2], { size: 3, face: 'circle', color: '#1e3a8a', name: '', withLabel: false, fixed: true });\n  board.create('segment', [[0, h/2], [rx, h/2]], optsLineDashed);\n  board.create('text', [rx/2, h/2 + 0.2], '5 cm', { ...optsText, anchorX: 'middle', anchorY: 'bottom' });\n  \n  board.create('segment', [[rx + 1.5, h/2], [rx + 1.5, -h/2]], { ...optsDim });\n  board.create('text', [rx + 1.8, 0], '12 cm', { ...optsText, anchorX: 'left', anchorY: 'middle' });\n",
+              "boundingbox": [
+                -8,
+                9,
+                10,
+                -9
+              ]
+            }
+          },
+          "options": [
+            "\\\\(300\\pi \\text{ cm}^3\\\\)",
+            "\\\\(60\\pi \\text{ cm}^3\\\\)",
+            "\\\\(150\\pi \\text{ cm}^3\\\\)",
+            "\\\\(1200\\pi \\text{ cm}^3\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the formula \\(V = \\pi r^2 h\\) with \\(r = 5\\) cm and \\(h = 12\\) cm.",
+          "solution": "The correct answer is \\(300\\pi\\).",
+          "steps": [
+            {
+              "explain": "Identify the given values and the formula for the volume of a cylinder.",
+              "work": "\\(r = 5 \\text{ cm},\\quad h = 12 \\text{ cm}\\\\V = \\pi r^2 h\\)"
+            },
+            {
+              "explain": "Substitute the values into the formula.",
+              "work": "\\(V = \\pi(5^2)(12)\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(V = 25 \\times 12 \\times \\pi = 300\\pi\\)"
+            },
+            {
+              "explain": "State the exact volume.",
+              "work": "\\(V = 300\\pi \\text{ cm}^3\\)"
+            }
+          ],
+          "timeLimit": 30,
+          "meta": {
+            "course": "Mathematics"
+          }
+        },
+        {
+          "id": "y10-6a-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a right triangular prism ABCDEF with AB = AC, if AB = 10 cm and BC = 12 cm, find the height of \\(\\Delta ABC\\).",
+          "figure": {
+            "svg": "fig:fb3534fc4d"
+          },
+          "options": [
+            "\\( 6 \\)",
+            "\\( 8 \\)",
+            "\\( 10 \\)",
+            "\\( 16 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(8\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(h^2 + 6^2 = 10^2\\)",
+              "figure": {
+                "geometry": {
+                  "width": 280,
+                  "projection": "isometric",
+                  "points": {
+                    "A": [
+                      4,
+                      6,
+                      0
+                    ],
+                    "B": [
+                      8,
+                      0,
+                      0
+                    ],
+                    "C": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "D": [
+                      4,
+                      6,
+                      15
+                    ],
+                    "E": [
+                      8,
+                      0,
+                      15
+                    ],
+                    "F": [
+                      0,
+                      0,
+                      15
+                    ]
+                  },
+                  "segments": [
+                    {
+                      "from": "A",
+                      "to": "B"
+                    },
+                    {
+                      "from": "B",
+                      "to": "C"
+                    },
+                    {
+                      "from": "C",
+                      "to": "A"
+                    },
+                    {
+                      "from": "D",
+                      "to": "E"
+                    },
+                    {
+                      "from": "E",
+                      "to": "F"
+                    },
+                    {
+                      "from": "F",
+                      "to": "D",
+                      "dashed": true
+                    },
+                    {
+                      "from": "A",
+                      "to": "D"
+                    },
+                    {
+                      "from": "B",
+                      "to": "E"
+                    },
+                    {
+                      "from": "C",
+                      "to": "F",
+                      "dashed": true
+                    }
+                  ],
+                  "vertexLabels": [
+                    {
+                      "at": "A",
+                      "text": "A"
+                    },
+                    {
+                      "at": "B",
+                      "text": "B"
+                    },
+                    {
+                      "at": "C",
+                      "text": "C"
+                    },
+                    {
+                      "at": "D",
+                      "text": "D"
+                    },
+                    {
+                      "at": "E",
+                      "text": "E"
+                    },
+                    {
+                      "at": "F",
+                      "text": "F"
+                    }
+                  ],
+                  "sideLabels": [
+                    {
+                      "between": [
+                        "A",
+                        "B"
+                      ],
+                      "text": "10 cm"
+                    },
+                    {
+                      "between": [
+                        "B",
+                        "C"
+                      ],
+                      "text": "12 cm"
+                    },
+                    {
+                      "between": [
+                        "A",
+                        "D"
+                      ],
+                      "text": "20 cm"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(h^2 = 100 - 36 = 64\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(h = 8\\)"
+            },
+            {
+              "explain": "Final answer: 8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(8\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6a-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If the length of the prism AD = 20 cm, find the volume of the prism.",
+          "figure": {
+            "svg": "fig:fb3534fc4d"
+          },
+          "options": [
+            "\\( 480 \\)",
+            "\\( 720 \\)",
+            "\\( 960 \\)",
+            "\\( 1920 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(960\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(A = \\frac{1}{2} \\times 12 \\times 8 = 48\\)",
+              "figure": {
+                "geometry": {
+                  "width": 280,
+                  "projection": "isometric",
+                  "points": {
+                    "A": [
+                      4,
+                      6,
+                      0
+                    ],
+                    "B": [
+                      8,
+                      0,
+                      0
+                    ],
+                    "C": [
+                      0,
+                      0,
+                      0
+                    ],
+                    "D": [
+                      4,
+                      6,
+                      15
+                    ],
+                    "E": [
+                      8,
+                      0,
+                      15
+                    ],
+                    "F": [
+                      0,
+                      0,
+                      15
+                    ]
+                  },
+                  "segments": [
+                    {
+                      "from": "A",
+                      "to": "B"
+                    },
+                    {
+                      "from": "B",
+                      "to": "C"
+                    },
+                    {
+                      "from": "C",
+                      "to": "A"
+                    },
+                    {
+                      "from": "D",
+                      "to": "E"
+                    },
+                    {
+                      "from": "E",
+                      "to": "F"
+                    },
+                    {
+                      "from": "F",
+                      "to": "D",
+                      "dashed": true
+                    },
+                    {
+                      "from": "A",
+                      "to": "D"
+                    },
+                    {
+                      "from": "B",
+                      "to": "E"
+                    },
+                    {
+                      "from": "C",
+                      "to": "F",
+                      "dashed": true
+                    }
+                  ],
+                  "vertexLabels": [
+                    {
+                      "at": "A",
+                      "text": "A"
+                    },
+                    {
+                      "at": "B",
+                      "text": "B"
+                    },
+                    {
+                      "at": "C",
+                      "text": "C"
+                    },
+                    {
+                      "at": "D",
+                      "text": "D"
+                    },
+                    {
+                      "at": "E",
+                      "text": "E"
+                    },
+                    {
+                      "at": "F",
+                      "text": "F"
+                    }
+                  ],
+                  "sideLabels": [
+                    {
+                      "between": [
+                        "A",
+                        "B"
+                      ],
+                      "text": "10 cm"
+                    },
+                    {
+                      "between": [
+                        "B",
+                        "C"
+                      ],
+                      "text": "12 cm"
+                    },
+                    {
+                      "between": [
+                        "A",
+                        "D"
+                      ],
+                      "text": "20 cm"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(V = A \\times \\text{length}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(V = 48 \\times 20 = 960\\)"
+            },
+            {
+              "explain": "Final answer: 960. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(960\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6a-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A manufacturer produces cylindrical cans with a volume of \\( 800 \\text{ cm}^3 \\). If the radius of the can is \\( 5 \\text{ cm} \\), find the height of the can, correct to one decimal place.",
+          "figure": {
+            "svg": "fig:1baaaa7185"
+          },
+          "options": [
+            "\\( 5.1 \\)",
+            "\\( 10.2 \\)",
+            "\\( 31.8 \\)",
+            "\\( 50.9 \\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(10.2\\).",
+          "steps": [
+            {
+              "explain": "State the formula for the volume of a cylinder.",
+              "work": "$$ V = \\pi r^2 h $$"
+            },
+            {
+              "explain": "Substitute the known values (Volume = 800, radius = 5).",
+              "work": "$$ 800 = \\pi (5)^2 h $$"
+            },
+            {
+              "explain": "Simplify and rearrange to solve for the height \\(h\\).",
+              "work": "$$ 800 = 25\\pi h \\implies h = \\frac{800}{25\\pi} $$"
+            },
+            {
+              "explain": "Calculate the final value and round to 1 decimal place.",
+              "work": "$$ h \\approx 10.1859 \\dots \\implies h = 10.2 \\text{ cm} $$"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6a-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A manufacturer produces cylindrical cans with a volume of \\( 800 \\text{ cm}^3 \\). If the height of the can is \\( 10 \\text{ cm} \\), find the radius of the can, correct to two decimal places.",
+          "figure": {
+            "svg": "fig:78aa848980"
+          },
+          "options": [
+            "\\( 2.52 \\)",
+            "\\( 5.05 \\)",
+            "\\( 12.73 \\)",
+            "\\( 25.46 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(5.05\\).",
+          "steps": [
+            {
+              "explain": "State the formula for the volume of a cylinder.",
+              "work": "$$ V = \\pi r^2 h $$"
+            },
+            {
+              "explain": "Substitute the known values (Volume = 800, height = 10).",
+              "work": "$$ 800 = \\pi r^2 (10) $$"
+            },
+            {
+              "explain": "Simplify and rearrange to solve for \\(r^2\\).",
+              "work": "$$ 800 = 10\\pi r^2 \\implies r^2 = \\frac{800}{10\\pi} = \\frac{80}{\\pi} $$"
+            },
+            {
+              "explain": "Calculate the radius by taking the square root, and round to 2 decimal places.",
+              "work": "$$ r = \\sqrt{\\frac{80}{\\pi}} \\approx 5.0462 \\dots \\implies r = 5.05 \\text{ cm} $$"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6a-q9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If a cube has volume 125 cm\\(^3\\), find its side length.",
+          "figure": {
+            "svg": "fig:f7e8f958ed"
+          },
+          "options": [
+            "\\( 5 \\)",
+            "\\( 11.2 \\)",
+            "\\( 25 \\)",
+            "\\( 41.7 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(5\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(V = s^3\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(s^3 = 125\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(s = \\sqrt[3]{125} = 5\\)"
+            },
+            {
+              "explain": "Final answer: 5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(5\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6a-q9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If a cube has volume 300 cm\\(^3\\), find its side length, correct to one decimal place.",
+          "figure": {
+            "svg": "fig:f7e8f958ed"
+          },
+          "options": [
+            "\\( 5.7 \\)",
+            "\\( 6.7 \\)",
+            "\\( 10.0 \\)",
+            "\\( 17.3 \\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(6.7\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(s^3 = 300\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(s = \\sqrt[3]{300} \\approx 6.694\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(6.7\\)"
+            },
+            {
+              "explain": "Final answer: 6.7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(6.7\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6a-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A modern sculpture consists of three cubes, with side lengths 1 m, 2 m, and 3 m respectively, placed on top of each other as shown. Calculate the exposed surface area of the sculpture. Do not include the base of the large cube in your calculations.",
+          "figure": {
+            "svg": "fig:bb78230a1d"
+          },
+          "options": [
+            "\\(56\\)",
+            "\\(60\\)",
+            "\\(65\\)",
+            "\\(70\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(65\\).",
+          "steps": [
+            {
+              "explain": "Find the exposed surface area of the top cube (1 m sides). All 6 faces are exposed except the bottom face, which sits on the middle cube.",
+              "work": "\\(SA_{\\text{top}} = 5 \\times 1^2 = 5 \\text{ m}^2\\)"
+            },
+            {
+              "explain": "Find the exposed surface area of the middle cube (2 m sides). The 4 side faces are fully exposed. The top face is exposed except where the top cube sits (a 1×1 square). The bottom face is hidden (sitting on the bottom cube).",
+              "work": "\\(SA_{\\text{mid}} = 4 \\times 2^2 + (2^2 - 1^2) = 16 + 3 = 19 \\text{ m}^2\\)"
+            },
+            {
+              "explain": "Find the exposed surface area of the bottom cube (3 m sides). The 4 side faces are fully exposed. The top face is exposed except where the middle cube sits (a 2×2 square). The base is excluded as stated in the question.",
+              "work": "\\(SA_{\\text{bot}} = 4 \\times 3^2 + (3^2 - 2^2) = 36 + 5 = 41 \\text{ m}^2\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6a-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The figure shows a trapezoidal prism. Its ends ABCD and EFGH are congruent trapezia, with DC = 5 cm and AB = 7 cm. If AE = 20 cm and the volume is 480 cm\\(^3\\), find the height of the trapezium ABCD.",
+          "figure": {
+            "svg": "fig:3e031c0f86"
+          },
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(4\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(V = A \\times h\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(480 = A \\times 20\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(A = 24\\)"
+            },
+            {
+              "explain": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(4\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6a-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A farmer is making a trough that needs to be filled with water once each day. The trough is in the shape of a prism with pentagonal ends. The farmer has 50 horses that each drink about 12 L of water per day. Using the fact that 1 cm\\(^3\\) = 1 mL, what is the smallest length the trough needs to be to water the horses each day? The cross-sectional area of the trough is 2000 cm\\(^2\\).",
+          "figure": {
+            "svg": "fig:8671f46059"
+          },
+          "options": [
+            "\\(30\\)",
+            "\\(60\\)",
+            "\\(300\\)",
+            "\\(600\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(300\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(50 \\times 12 = 600 \\text{ L}\\)",
+              "figure": {
+                "geometry": {
+                  "width": 280,
+                  "projection": "isometric",
+                  "points": {
+                    "A": [
+                      0,
+                      5,
+                      0
+                    ],
+                    "B": [
+                      8,
+                      5,
+                      0
+                    ],
+                    "C": [
+                      8,
+                      2,
+                      0
+                    ],
+                    "D": [
+                      4,
+                      0,
+                      0
+                    ],
+                    "E": [
+                      0,
+                      2,
+                      0
+                    ],
+                    "A2": [
+                      0,
+                      5,
+                      20
+                    ],
+                    "B2": [
+                      8,
+                      5,
+                      20
+                    ],
+                    "C2": [
+                      8,
+                      2,
+                      20
+                    ],
+                    "D2": [
+                      4,
+                      0,
+                      20
+                    ],
+                    "E2": [
+                      0,
+                      2,
+                      20
+                    ]
+                  },
+                  "segments": [
+                    {
+                      "from": "A",
+                      "to": "B"
+                    },
+                    {
+                      "from": "B",
+                      "to": "C"
+                    },
+                    {
+                      "from": "C",
+                      "to": "D"
+                    },
+                    {
+                      "from": "D",
+                      "to": "E"
+                    },
+                    {
+                      "from": "E",
+                      "to": "A"
+                    },
+                    {
+                      "from": "A2",
+                      "to": "B2"
+                    },
+                    {
+                      "from": "B2",
+                      "to": "C2"
+                    },
+                    {
+                      "from": "C2",
+                      "to": "D2"
+                    },
+                    {
+                      "from": "D2",
+                      "to": "E2",
+                      "dashed": true
+                    },
+                    {
+                      "from": "E2",
+                      "to": "A2",
+                      "dashed": true
+                    },
+                    {
+                      "from": "A",
+                      "to": "A2",
+                      "dashed": true
+                    },
+                    {
+                      "from": "B",
+                      "to": "B2"
+                    },
+                    {
+                      "from": "C",
+                      "to": "C2"
+                    },
+                    {
+                      "from": "D",
+                      "to": "D2"
+                    },
+                    {
+                      "from": "E",
+                      "to": "E2",
+                      "dashed": true
+                    }
+                  ],
+                  "sideLabels": [
+                    {
+                      "between": [
+                        "A",
+                        "B"
+                      ],
+                      "text": "30 cm"
+                    },
+                    {
+                      "between": [
+                        "B",
+                        "B2"
+                      ],
+                      "text": "L cm"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(600 \\text{ L} = 600,000 \\text{ mL} = 600,000 \\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(V = A \\times L \\implies 600,000 = 2000 \\times L\\)"
+            },
+            {
+              "explain": "Final answer: 300. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(300\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6a-q13a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cylindrical vase of radius 6 cm and height 15 cm just fits into a box.\nFind the volume of the cylinder, correct to two decimal places.",
+          "figure": {
+            "svg": "fig:da7e94c88e"
+          },
+          "options": [
+            "\\(565.49\\)",
+            "\\(1696.46\\)",
+            "\\(2160.00\\)",
+            "\\(6785.84\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(1696.46\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(V = \\pi r^2 h\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(V = \\pi(36)(15) = 540\\pi\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(V \\approx 1696.46\\)"
+            },
+            {
+              "explain": "Final answer: 1696.46. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1696.46\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-6a-q13b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the volume of the box.",
+          "figure": {
+            "svg": "fig:bb8d7eb001"
+          },
+          "options": [
+            "\\(144\\)",
+            "\\(1008\\)",
+            "\\(2160\\)",
+            "\\(4320\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(2160\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(l = 12, b = 12, h = 15\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(V = 12 \\times 12 \\times 15 = 2160\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(2160\\)"
+            },
+            {
+              "explain": "Final answer: 2160. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(2160\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-6a-q13c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the volume of unused space inside the box, correct to two decimal places.",
+          "figure": {
+            "svg": "fig:bb8d7eb001"
+          },
+          "options": [
+            "\\(463.54\\)",
+            "\\(1594.51\\)",
+            "\\(1696.46\\)",
+            "\\(3856.46\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(463.54\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(V_{\\text{unused}} = V_{\\text{box}} - V_{\\text{cylinder}}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(V_{\\text{unused}} = 2160 - 1696.46\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(V_{\\text{unused}} = 463.54\\)"
+            },
+            {
+              "explain": "Final answer: 463.54. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(463.54\\)"
+            }
+          ]
+        },
+        {
+          "id": "jr2012-q16",
+          "type": "mc",
+          "stem": "A cube has a volume of \\(2\\,400\\,000\\text{ cm}^3\\). This is equivalent to:",
+          "options": [
+            "\\(240\\,000\\text{ m}^3\\)",
+            "\\(240\\text{ m}^3\\)",
+            "\\(2\\,400\\text{ m}^3\\)",
+            "\\(2.4\\text{ m}^3\\)"
+          ],
+          "answer": 3,
+          "hint": "\\(1\\text{ m}^3 = 100^3\\text{ cm}^3 = 1\\,000\\,000\\text{ cm}^3\\).",
+          "steps": [
+            {
+              "explain": "Convert using \\(1\\text{ m}^3=1\\,000\\,000\\text{ cm}^3\\) (since \\(1\\text{ m}=100\\text{ cm}\\), cubed gives \\(100^3\\)).",
+              "work": "\\(2\\,400\\,000 \\div 1\\,000\\,000 = 2.4\\)"
+            },
+            {
+              "explain": "State the equivalent volume.",
+              "work": "\\(2.4\\text{ m}^3\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2012 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "jr2013-q5",
+          "type": "mc",
+          "stem": "The roof of a building has \\(1.056\\) million tiles. If each tile covers \\(175\\text{ cm}^2\\), the area covered by the tiles is:",
+          "options": [
+            "\\(1\\,848\\,000\\text{ m}^2\\)",
+            "\\(184.8\\text{ m}^2\\)",
+            "\\(184\\,800\\text{ m}^2\\)",
+            "\\(18\\,480\\text{ m}^2\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply the number of tiles by the area per tile (in cm\\(^2\\)), then convert to m\\(^2\\) by dividing by \\(10\\,000\\).",
+          "steps": [
+            {
+              "explain": "Multiply the number of tiles by the area each covers.",
+              "work": "\\(1.056\\times10^6 \\times 175 = 184\\,800\\,000\\text{ cm}^2\\)"
+            },
+            {
+              "explain": "Convert to \\(\\text{m}^2\\) by dividing by \\(10\\,000\\) (since \\(1\\text{ m}^2=10\\,000\\text{ cm}^2\\)).",
+              "work": "\\(184\\,800\\,000 \\div 10\\,000 = 18\\,480\\text{ m}^2\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-6d",
+      "code": "6d",
+      "title": "Spheres",
+      "questions": [
+        {
+          "id": "jrhy2008-q19",
+          "type": "mc",
+          "stem": "If the diameter of a sphere is increased by 15%, which of the following is true? a) Radius is increased by 15%. b) Surface area is increased by a factor matching \\((1.15)^2-1\\). c) Volume is increased by a factor matching \\((1.15)^3-1\\). d) Capacity is increased by the same factor as volume.",
+          "options": [
+            "None of the above",
+            "All of the above",
+            "a only",
+            "a, b, c"
+          ],
+          "answer": 2,
+          "hint": "If the diameter scales by a factor, the radius scales by the SAME factor. But surface area scales by the square of that factor, and volume by the cube — check whether the stated numeric increases (0.0225, 0.00375) actually match \\((1.15)^2-1\\) and \\((1.15)^3-1\\).",
+          "steps": [
+            {
+              "explain": "Since radius \\(=\\tfrac12\\times\\)diameter, increasing the diameter by 15% increases the radius by exactly 15% too — statement (a) is TRUE.",
+              "work": "(a): radius scales with diameter, so \\(+15\\%\\) — TRUE"
+            },
+            {
+              "explain": "Surface area \\(\\propto r^2\\), so it scales by \\((1.15)^2=1.3225\\), i.e. a 32.25% increase — NOT 0.0225 (2.25%) as claimed in (b). So (b) is FALSE.",
+              "work": "(b): actual increase \\(=(1.15)^2-1=0.3225=32.25\\%\\), not \\(0.0225\\) — FALSE"
+            },
+            {
+              "explain": "Volume \\(\\propto r^3\\), so it scales by \\((1.15)^3\\approx1.5209\\), i.e. a 52.09% increase — NOT 0.00375 (0.375%) as claimed in (c). So (c) is FALSE (and (d), which follows the same volume-based reasoning, is also FALSE).",
+              "work": "(c): actual increase \\(=(1.15)^3-1\\approx0.5209=52.09\\%\\), not \\(0.00375\\) — FALSE"
+            },
+            {
+              "explain": "Only statement (a) is actually true.",
+              "work": "\\(\\therefore\\) \"a only\""
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Half-Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-6e",
+      "code": "6e",
+      "title": "Enlargement",
+      "questions": [
+        {
+          "id": "jr2012-q19",
+          "type": "mc",
+          "stem": "One litre of water was used to make exactly 64 ice cubes of a certain size. Larger ice cubes with double the dimensions were then made. How many of the larger ice cubes can be made using one litre of water?",
+          "options": [
+            "\\(4\\)",
+            "\\(32\\)",
+            "\\(8\\)",
+            "\\(16\\)"
+          ],
+          "answer": 2,
+          "hint": "Doubling every dimension of a 3D shape multiplies its volume by \\(2^3=8\\).",
+          "steps": [
+            {
+              "explain": "Doubling all three dimensions of a cube multiplies its volume by \\(2^3=8\\) — so each larger cube uses 8 times as much water as a small one.",
+              "work": "Larger cube volume \\(= 8\\times\\) small cube volume"
+            },
+            {
+              "explain": "Since 64 small cubes fit in 1 litre, and each larger cube takes the space of 8 small ones, divide.",
+              "work": "\\(64 \\div 8 = 8\\) larger cubes"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2012 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-6k",
+      "code": "6K",
+      "title": "Revision",
+      "questions": [
+        {
+          "id": "y10-6k-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For a rectangular prism measuring \\( 40 \\) cm \\( \\times \\) \\( 25 \\) cm \\( \\times \\) \\( 15 \\) cm, calculate:\nthe surface area",
+          "options": [
+            "\\(3950\\)",
+            "\\(3900\\)",
+            "\\(4150\\)",
+            "\\(15000\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(3950\\).",
+          "steps": [
+            {
+              "explain": "We are given a rectangular prism with dimensions 40 cm, 25 cm, and 15 cm. We need to calculate its surface area. Our strategy is to list these knowns and choose the appropriate formula.",
+              "work": "Prism dimensions: length $l = 40$, width $w = 25$, height $h = 15$. We need Surface Area."
+            },
+            {
+              "explain": "The correct formula for the surface area of a rectangular prism is $SA = 2(lw + lh + wh)$. This turns our worded problem into an equation we can solve.",
+              "work": "$SA = 2(lw + lh + wh)$"
+            },
+            {
+              "explain": "We now substitute $l=40$, $w=25$, and $h=15$ into our formula and carefully simplify the expression to find the intermediate result.",
+              "work": "SA = $2(40 \\times 25 + 40 \\times 15 + 25 \\times 15) = 2(1000 + 600 + 375) = 2(1975) = 3950$"
+            },
+            {
+              "explain": "Our final calculated value is 3950. In the context of surface area, this means $3950$ cm$^2$, which matches our target option.",
+              "work": "The surface area is $3950$ cm$^2$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For a rectangular prism measuring \\( 40 \\) cm \\( \\times \\) \\( 25 \\) cm \\( \\times \\) \\( 15 \\) cm, calculate:\nthe volume",
+          "options": [
+            "\\(1500\\)",
+            "\\(3950\\)",
+            "\\(15000\\)",
+            "\\(30000\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(15000\\).",
+          "steps": [
+            {
+              "explain": "We are given a rectangular prism with dimensions 40 cm, 25 cm, and 15 cm. We need to calculate its volume. We list these knowns to prepare for calculation.",
+              "work": "Prism dimensions: length $l = 40$, width $w = 25$, height $h = 15$. We need Volume."
+            },
+            {
+              "explain": "The rule that applies is the volume formula for a rectangular prism: $V = l \\times w \\times h$.",
+              "work": "$V = l \\times w \\times h$"
+            },
+            {
+              "explain": "Substitute the length, width, and height into the formula and multiply them together.",
+              "work": "V = $40 \\times 25 \\times 15 = 15000$"
+            },
+            {
+              "explain": "The final value is 15000. In the context of volume, the units are cubic centimeters (cm$^3$).",
+              "work": "The volume is $15000$ cm$^3$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A rectangular prism has a surface area of \\( 600 \\) cm\\(^2\\). If its length is \\( 20 \\) cm and its width is \\( 5 \\) cm, calculate the height of the rectangular prism.\nCalculate the height.",
+          "options": [
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(10\\)",
+            "\\(12\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(8\\).",
+          "steps": [
+            {
+              "explain": "We are given a rectangular prism with a known surface area of 600 cm$^2$, a length of 20 cm, and a width of 5 cm. We need to find the unknown height.",
+              "work": "Surface Area $SA = 600$, length $l = 20$, width $w = 5$. We need height $h$."
+            },
+            {
+              "explain": "We use the surface area formula $SA = 2(lw + lh + wh)$ and prepare to solve backwards for the height.",
+              "work": "$SA = 2(lw + lh + wh)$"
+            },
+            {
+              "explain": "Substitute the known values into the equation, expand the brackets, and rearrange to solve for $h$.",
+              "work": "$600 = 2(20 \\times 5 + 20h + 5h) \\Rightarrow 300 = 100 + 25h \\Rightarrow 25h = 200 \\Rightarrow h = 8$"
+            },
+            {
+              "explain": "The calculated height is 8. Since it is a 1D length measurement, the units are cm.",
+              "work": "The height is $8$ cm."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A rectangular prism has a volume of \\( 840 \\) cm\\(^3\\). If its length is \\( 14 \\) cm and its width is \\( 10 \\) cm, calculate the height of the rectangular prism.\nCalculate the height.",
+          "options": [
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(10\\)",
+            "\\(14\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(6\\).",
+          "steps": [
+            {
+              "explain": "We are given a rectangular prism with a volume of 840 cm$^3$, length 14 cm, and width 10 cm. Our goal is to calculate the missing height.",
+              "work": "Volume $V = 840$, length $l = 14$, width $w = 10$. We need height $h$."
+            },
+            {
+              "explain": "The applicable rule is the volume formula $V = l \\times w \\times h$. We will use this to set up an equation.",
+              "work": "$V = l \\times w \\times h$"
+            },
+            {
+              "explain": "Substitute the given volume, length, and width into the equation and solve for the unknown $h$.",
+              "work": "$840 = 14 \\times 10 \\times h \\Rightarrow 840 = 140h \\Rightarrow h = 6$"
+            },
+            {
+              "explain": "The final height is 6. This is a linear measurement, so it is in cm.",
+              "work": "The height is $6$ cm."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The cross-section \\( ABCD \\) of the prism shown is an isosceles trapezium with \\( AB = 10 \\) cm, \\( DC = 22 \\) cm, \\( AD = BC = 10 \\) cm and \\( AE = 25 \\) cm.\n\nCalculate:\nthe area of \\( ABCD \\)",
+          "options": [
+            "\\(160\\)",
+            "\\(128\\)",
+            "\\(256\\)",
+            "\\(320\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(128\\).",
+          "steps": [
+            {
+              "explain": "We have an isosceles trapezium with parallel sides 10 cm and 22 cm, and slanted sides 10 cm. We need its area.",
+              "work": "Isosceles trapezium $ABCD$: $a = 10$, $b = 22$, slanted sides $= 10$."
+            },
+            {
+              "explain": "To find the area using $\\frac{1}{2}(a+b)h$, we first need the perpendicular height $h$, which we can find using Pythagoras' theorem on the side triangles.",
+              "work": "Height $h$: base difference $= (22 - 10) / 2 = 6$. $h = \\sqrt{10^2 - 6^2} = 8$. Area = $\\frac{1}{2}(a+b)h$"
+            },
+            {
+              "explain": "Substitute the parallel sides and the calculated height into the trapezium area formula.",
+              "work": "Area = $\\frac{1}{2}(10 + 22) \\times 8 = 16 \\times 8 = 128$"
+            },
+            {
+              "explain": "The final calculated area is 128 cm$^2$, matching our target option.",
+              "work": "The area is $128$ cm$^2$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The cross-section \\( ABCD \\) of the prism shown is an isosceles trapezium with \\( AB = 10 \\) cm, \\( DC = 22 \\) cm, \\( AD = BC = 10 \\) cm and \\( AE = 25 \\) cm.\n\nCalculate:\nthe surface area of the prism",
+          "options": [
+            "\\(1300\\)",
+            "\\(1428\\)",
+            "\\(1556\\)",
+            "\\(1812\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(1556\\).",
+          "steps": [
+            {
+              "explain": "We are finding the surface area of a prism with an isosceles trapezium base. We know the base area is 128 cm$^2$ and depth is 25 cm.",
+              "work": "Prism with trapezium base. Base Area $= 128$, depth $= 25$. Perimeter $= 10+10+22+10=52$."
+            },
+            {
+              "explain": "The surface area of a general prism is $2 \\times \\text{Base Area} + \\text{Perimeter} \\times \\text{depth}$.",
+              "work": "$SA = 2 \\times \\text{Base Area} + \\text{Perimeter} \\times \\text{depth}$"
+            },
+            {
+              "explain": "Substitute the base area (128) and perimeter (52) into the formula along with the depth.",
+              "work": "SA = $2(128) + 52 \\times 25 = 256 + 1300 = 1556$"
+            },
+            {
+              "explain": "Our final surface area is 1556 cm$^2$.",
+              "work": "The surface area is $1556$ cm$^2$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The cross-section \\( ABCD \\) of the prism shown is an isosceles trapezium with \\( AB = 10 \\) cm, \\( DC = 22 \\) cm, \\( AD = BC = 10 \\) cm and \\( AE = 25 \\) cm.\n\nCalculate:\nthe volume of the prism",
+          "options": [
+            "\\(3200\\)",
+            "\\(1600\\)",
+            "\\(6400\\)",
+            "\\(4800\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(3200\\).",
+          "steps": [
+            {
+              "explain": "We are finding the volume of a prism with an isosceles trapezium base. We previously found the base area is 128 cm$^2$ and depth is 25 cm.",
+              "work": "Prism with trapezium base. Base Area $= 128$, depth $= 25$."
+            },
+            {
+              "explain": "The volume formula for any uniform prism is $V = \\text{Base Area} \\times \\text{depth}$.",
+              "work": "$V = \\text{Base Area} \\times \\text{depth}$"
+            },
+            {
+              "explain": "Substitute the calculated base area and the given depth into the formula.",
+              "work": "V = $128 \\times 25 = 3200$"
+            },
+            {
+              "explain": "The volume of the prism is 3200 cm$^3$.",
+              "work": "The volume is $3200$ cm$^3$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A cylindrical water tank stands on its circular base. It has a diameter of \\( 4 \\) m and a height of \\( 2.5 \\) m.\nCalculate the volume of the tank, to the nearest litre.",
+          "options": [
+            "\\(15708\\)",
+            "\\(31416\\)",
+            "\\(125664\\)",
+            "\\(62832\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(31416\\).",
+          "steps": [
+            {
+              "explain": "We have a cylindrical tank with diameter 4 m (so radius is 2 m) and height 2.5 m. We need the volume in litres.",
+              "work": "Cylinder: diameter $= 4$m (radius $r = 2$m), height $h = 2.5$m. Need volume in litres."
+            },
+            {
+              "explain": "We use the cylinder volume formula $V = \\pi r^2 h$. Note that $1$ m$^3$ equals $1000$ litres.",
+              "work": "$V = \\pi r^2 h$. $1$ m$^3 = 1000$ litres."
+            },
+            {
+              "explain": "Substitute $r=2$ and $h=2.5$ into the formula, calculate the volume in m$^3$, and multiply by 1000.",
+              "work": "V = $\\pi \\times 2^2 \\times 2.5 = 10\\pi$ m$^3 \\approx 31.4159$ m$^3 = 31416$ litres."
+            },
+            {
+              "explain": "Rounding to the nearest litre, we get 31416 litres.",
+              "work": "The volume is $31416$ litres."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A cylindrical water tank stands on its circular base. It has a diameter of \\( 4 \\) m and a height of \\( 2.5 \\) m.\nCalculate the depth of water in the tank, to the nearest centimetre, when it contains \\( 5000 \\) litres of water.",
+          "options": [
+            "\\(10\\)",
+            "\\(20\\)",
+            "\\(40\\)",
+            "\\(80\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(40\\).",
+          "steps": [
+            {
+              "explain": "The cylindrical tank has a radius of 2 m and currently holds 5000 litres of water. We need to find the depth of the water in cm.",
+              "work": "Cylinder radius $r = 2$m. Volume $= 5000$ litres $= 5$ m$^3$. Need depth $h$ in cm."
+            },
+            {
+              "explain": "Convert litres to cubic meters, then use $V = \\pi r^2 h$ to solve backwards for the depth $h$.",
+              "work": "$V = \\pi r^2 h$"
+            },
+            {
+              "explain": "Substitute $V=5$ and $r=2$ into the equation and rearrange to find $h$ in meters, then convert to cm.",
+              "work": "$5 = \\pi \\times 2^2 \\times h \\Rightarrow 5 = 4\\pi h \\Rightarrow h = \\frac{5}{4\\pi} \\approx 0.3979$ m $= 40$ cm."
+            },
+            {
+              "explain": "The depth of the water to the nearest centimeter is 40 cm.",
+              "work": "The depth is $40$ cm."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the exact answer (leaving \\( \\pi \\) in your answer if necessary).\nA square-based pyramid has base side length \\( 14 \\) cm and perpendicular height \\( 24 \\) cm.\nCalculate the surface area",
+          "options": [
+            "\\(700\\)",
+            "\\(896\\)",
+            "\\(1092\\)",
+            "\\(1960\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(896\\).",
+          "steps": [
+            {
+              "explain": "We are given a square-based pyramid with base side length 14 cm and a perpendicular height of 24 cm. We need the exact surface area.",
+              "work": "Square-based pyramid: base side $= 14$, perpendicular height $= 24$."
+            },
+            {
+              "explain": "To find the surface area ($SA = \\text{base} + 4 \\times \\text{triangle}$), we first need to calculate the slant height $l$ using Pythagoras.",
+              "work": "Slant height $l = \\sqrt{24^2 + 7^2} = \\sqrt{576 + 49} = \\sqrt{625} = 25$. $SA = \\text{base} + 4 \\times \\text{triangle}$"
+            },
+            {
+              "explain": "Calculate the area of the square base and the 4 identical triangular faces using the slant height.",
+              "work": "Base $= 14 \\times 14 = 196$. Triangles $= 4 \\times (\\frac{1}{2} \\times 14 \\times 25) = 700$. SA $= 196 + 700 = 896$."
+            },
+            {
+              "explain": "The final exact surface area is 896 cm$^2$.",
+              "work": "The exact surface area is $896$ cm$^2$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the exact answer (leaving \\( \\pi \\) in your answer if necessary).\nA square-based pyramid has base side length \\( 14 \\) cm and perpendicular height \\( 24 \\) cm.\nCalculate the volume",
+          "options": [
+            "\\(4704\\)",
+            "\\(1568\\)",
+            "\\(2352\\)",
+            "\\(3136\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(1568\\).",
+          "steps": [
+            {
+              "explain": "We have a square-based pyramid with base side length 14 cm (base area 196 cm$^2$) and a perpendicular height of 24 cm. We need the exact volume.",
+              "work": "Square-based pyramid: base area $= 196$, perpendicular height $h = 24$."
+            },
+            {
+              "explain": "The volume formula for any pyramid is $V = \\frac{1}{3} \\times \\text{base area} \\times h$.",
+              "work": "$V = \\frac{1}{3} \\times \\text{base area} \\times h$"
+            },
+            {
+              "explain": "Substitute the base area and perpendicular height into the formula and calculate.",
+              "work": "V = $\\frac{1}{3} \\times 196 \\times 24 = 196 \\times 8 = 1568$"
+            },
+            {
+              "explain": "The exact calculated volume is 1568 cm$^3$.",
+              "work": "The exact volume is $1568$ cm$^3$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the exact answer (leaving \\( \\pi \\) in your answer if necessary).\nA cone has a radius of \\( 5 \\) cm and a slant height of \\( 13 \\) cm.\nCalculate the exact surface area",
+          "options": [
+            "\\(65\\pi\\)",
+            "\\(90\\pi\\)",
+            "\\(115\\pi\\)",
+            "\\(150\\pi\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(90\\pi\\).",
+          "steps": [
+            {
+              "explain": "We are given a cone with radius 5 cm and slant height 13 cm. We need the exact surface area.",
+              "work": "Cone: radius $r = 5$, slant height $l = 13$."
+            },
+            {
+              "explain": "The formula for the total surface area of a cone is $SA = \\pi r^2 + \\pi r l$.",
+              "work": "$SA = \\pi r^2 + \\pi r l$"
+            },
+            {
+              "explain": "Substitute $r=5$ and $l=13$ into the equation and leave the answer in terms of $\\pi$ for an exact value.",
+              "work": "SA = $\\pi(5^2) + \\pi(5)(13) = 25\\pi + 65\\pi = 90\\pi$"
+            },
+            {
+              "explain": "The exact surface area is $90\\pi$ cm$^2$.",
+              "work": "The exact surface area is $90\\pi$ cm$^2$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q6d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the exact answer (leaving \\( \\pi \\) in your answer if necessary).\nA cone has a radius of \\( 5 \\) cm and a slant height of \\( 13 \\) cm.\nCalculate the exact volume",
+          "options": [
+            "\\(100\\pi\\)",
+            "\\(300\\pi\\)",
+            "\\(325\\pi\\)",
+            "\\(130\\pi\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(100\\pi\\).",
+          "steps": [
+            {
+              "explain": "We are given a cone with radius 5 cm and slant height 13 cm. We need the exact volume.",
+              "work": "Cone: radius $r = 5$, slant height $l = 13$. Need height $h$."
+            },
+            {
+              "explain": "To use the volume formula $V = \\frac{1}{3}\\pi r^2 h$, we first must find the perpendicular height $h$ using Pythagoras ($h = \\sqrt{l^2 - r^2}$).",
+              "work": "$h = \\sqrt{l^2 - r^2}$, $V = \\frac{1}{3}\\pi r^2 h$"
+            },
+            {
+              "explain": "Calculate $h$, then substitute $r$ and $h$ into the volume formula.",
+              "work": "$h = \\sqrt{13^2 - 5^2} = 12$. V = $\\frac{1}{3}\\pi(5^2)(12) = 100\\pi$"
+            },
+            {
+              "explain": "The final exact volume in terms of $\\pi$ is $100\\pi$ cm$^3$.",
+              "work": "The exact volume is $100\\pi$ cm$^3$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the pyramid \\( VABCD \\) shown, \\( VB \\) is perpendicular to rectangle \\( ABCD \\), \\( AB = 15 \\) m, \\( BC = 8 \\) m and \\( VB = 6 \\) m.\nCalculate the surface area of the pyramid in m\\(^2\\), correct to one decimal place.",
+          "options": [
+            "\\(208.6\\)",
+            "\\(264.0\\)",
+            "\\(328.6\\)",
+            "\\(448.6\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(328.6\\).",
+          "steps": [
+            {
+              "explain": "We have an asymmetrical pyramid VABCD with a rectangular base of 15m by 8m. The height VB is 6m and is perpendicular to the base. We need the surface area.",
+              "work": "Pyramid VABCD. Base $15 \\times 8$. $VB = 6$ is perpendicular to ABCD."
+            },
+            {
+              "explain": "The surface area is the sum of the rectangular base and four different triangular faces.",
+              "work": "Sum the areas of the base and four triangular faces."
+            },
+            {
+              "explain": "Calculate the area of each face using Pythagoras for the slant heights VA and VC where necessary.",
+              "work": "Base $= 120$. $\\Delta VAB = 0.5 \\times 15 \\times 6 = 45$. $\\Delta VBC = 0.5 \\times 8 \\times 6 = 24$. $VA = \\sqrt{6^2 + 15^2} = \\sqrt{261}$, $\\Delta VAD = 0.5 \\times 8 \\times \\sqrt{261} \\approx 64.6$. $VC = \\sqrt{6^2 + 8^2} = 10$, $\\Delta VDC = 0.5 \\times 15 \\times 10 = 75$. SA $= 120 + 45 + 24 + 64.6 + 75 = 328.6$"
+            },
+            {
+              "explain": "Adding all the face areas together gives 328.6 m$^2$ to one decimal place.",
+              "work": "The surface area is $328.6$ m$^2$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the pyramid \\( VABCD \\) shown, \\( VB \\) is perpendicular to rectangle \\( ABCD \\), \\( AB = 15 \\) m, \\( BC = 8 \\) m and \\( VB = 6 \\) m.\nCalculate the volume of the pyramid.",
+          "options": [
+            "\\(120\\)",
+            "\\(240\\)",
+            "\\(720\\)",
+            "\\(480\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(240\\).",
+          "steps": [
+            {
+              "explain": "We have the same pyramid VABCD with base 15m by 8m, and perpendicular height VB = 6m. We need its volume.",
+              "work": "Pyramid VABCD. Base $15 \\times 8$, height $VB = 6$."
+            },
+            {
+              "explain": "The volume formula for any pyramid is $V = \\frac{1}{3} \\times \\text{base area} \\times h$.",
+              "work": "$V = \\frac{1}{3} \\times \\text{base area} \\times h$"
+            },
+            {
+              "explain": "Calculate the base area (15 * 8 = 120) and substitute it along with the height into the formula.",
+              "work": "Base Area $= 15 \\times 8 = 120$. V = $\\frac{1}{3} \\times 120 \\times 6 = 240$"
+            },
+            {
+              "explain": "The calculated volume is exactly 240 m$^3$.",
+              "work": "The volume is $240$ m$^3$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The curved surface area of a cone is \\( 65\\pi \\) cm\\(^2\\) and the area of the circular base is \\( 25\\pi \\) cm\\(^2\\).\nCalculate the radius of the cone.",
+          "options": [
+            "\\(5\\)",
+            "\\(10\\)",
+            "\\(13\\)",
+            "\\(25\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(5\\).",
+          "steps": [
+            {
+              "explain": "We are given a cone with a curved surface area of $65\\pi$ and a base area of $25\\pi$. We need to find the radius.",
+              "work": "Cone: Base Area $= 25\\pi$. Curved SA $= 65\\pi$."
+            },
+            {
+              "explain": "Since the circular base area is given by $\\pi r^2$, we can equate this to $25\\pi$ and solve for $r$.",
+              "work": "Base Area $= \\pi r^2$"
+            },
+            {
+              "explain": "Set up the equation and solve for the radius.",
+              "work": "$\\pi r^2 = 25\\pi \\Rightarrow r^2 = 25 \\Rightarrow r = 5$"
+            },
+            {
+              "explain": "The calculated radius is 5 cm.",
+              "work": "The radius is $5$ cm."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The curved surface area of a cone is \\( 65\\pi \\) cm\\(^2\\) and the area of the circular base is \\( 25\\pi \\) cm\\(^2\\).\nCalculate the exact perpendicular height of the cone.",
+          "options": [
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(144\\)",
+            "\\(169\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(12\\).",
+          "steps": [
+            {
+              "explain": "We know the cone's radius is 5 cm and its curved surface area is $65\\pi$. We need the exact perpendicular height.",
+              "work": "Cone: $r = 5$. Curved SA $= 65\\pi$."
+            },
+            {
+              "explain": "First, use the curved SA formula ($\\pi r l$) to find the slant height $l$. Then use Pythagoras ($h = \\sqrt{l^2 - r^2}$) to find the height.",
+              "work": "Curved SA $= \\pi r l$. Then $h = \\sqrt{l^2 - r^2}$"
+            },
+            {
+              "explain": "Solve for $l$, then substitute $l$ and $r$ to find $h$.",
+              "work": "$\\pi(5)l = 65\\pi \\Rightarrow l = 13$. $h = \\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$"
+            },
+            {
+              "explain": "The perpendicular height evaluates to exactly 12 cm.",
+              "work": "The exact perpendicular height is $12$ cm."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The curved surface area of a cone is \\( 65\\pi \\) cm\\(^2\\) and the area of the circular base is \\( 25\\pi \\) cm\\(^2\\).\nCalculate the volume of the cone, correct to the nearest cm\\(^3\\).",
+          "options": [
+            "\\(314\\)",
+            "\\(942\\)",
+            "\\(1024\\)",
+            "\\(157\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(314\\).",
+          "steps": [
+            {
+              "explain": "With the cone's radius as 5 cm and perpendicular height as 12 cm, we need to calculate the volume to the nearest cm$^3$.",
+              "work": "Cone: $r = 5$, height $h = 12$."
+            },
+            {
+              "explain": "The volume formula for a cone is $V = \\frac{1}{3}\\pi r^2 h$.",
+              "work": "$V = \\frac{1}{3}\\pi r^2 h$"
+            },
+            {
+              "explain": "Substitute $r=5$ and $h=12$ into the formula and evaluate the decimal value.",
+              "work": "V = $\\frac{1}{3}\\pi(5^2)(12) = 100\\pi \\approx 314.159$"
+            },
+            {
+              "explain": "Rounding $100\\pi$ to the nearest whole number gives 314 cm$^3$.",
+              "work": "The volume is $314$ cm$^3$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A storage tank is constructed as a cylinder with a hemisphere at each end of the cylinder. The radius of the cylinder is \\( 2 \\) m and the overall length of the tank is \\( 10 \\) m.\n\nCalculate (correct to 1 decimal place):\nthe surface area of the tank in m\\(^2\\)",
+          "options": [
+            "\\(100.5\\)",
+            "\\(125.7\\)",
+            "\\(150.8\\)",
+            "\\(175.9\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(125.7\\).",
+          "steps": [
+            {
+              "explain": "We are given a storage tank made of a cylinder with two hemispheres at the ends. The radius is 2m and overall length is 10m. We need the surface area.",
+              "work": "Tank: Cylinder with two hemispheres. Total length $= 10$, radius $r = 2$."
+            },
+            {
+              "explain": "The total surface area is the sum of the curved area of the cylinder and the surface area of the two hemispheres (which equals one full sphere).",
+              "work": "Cylinder length $= 10 - 2 - 2 = 6$. Total SA = Sphere SA + Cylinder Curved SA."
+            },
+            {
+              "explain": "Substitute the radius and cylinder length into the formulas $4\\pi r^2$ and $2\\pi rh$.",
+              "work": "$SA = 4\\pi(2^2) + 2\\pi(2)(6) = 16\\pi + 24\\pi = 40\\pi \\approx 125.66$"
+            },
+            {
+              "explain": "Rounding to one decimal place gives a surface area of 125.7 m$^2$.",
+              "work": "The surface area is $125.7$ m$^2$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A storage tank is constructed as a cylinder with a hemisphere at each end of the cylinder. The radius of the cylinder is \\( 2 \\) m and the overall length of the tank is \\( 10 \\) m.\n\nCalculate (correct to 1 decimal place):\nthe volume of the tank",
+          "options": [
+            "\\(75.4\\)",
+            "\\(108.9\\)",
+            "\\(142.4\\)",
+            "\\(326.7\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(108.9\\).",
+          "steps": [
+            {
+              "explain": "Using the same tank (radius 2m, cylinder length 6m), we need to calculate its volume.",
+              "work": "Tank: Sphere ($r=2$) + Cylinder ($r=2, h=6$)."
+            },
+            {
+              "explain": "The total volume is the volume of the full sphere plus the volume of the central cylinder.",
+              "work": "$V = \\frac{4}{3}\\pi r^3 + \\pi r^2 h$"
+            },
+            {
+              "explain": "Substitute the dimensions into the formulas and calculate the total volume.",
+              "work": "V = $\\frac{4}{3}\\pi(2^3) + \\pi(2^2)(6) = \\frac{32}{3}\\pi + 24\\pi = \\frac{104}{3}\\pi \\approx 108.9$"
+            },
+            {
+              "explain": "Rounding to one decimal place gives 108.9 m$^3$.",
+              "work": "The volume is $108.9$ m$^3$."
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q10a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Fill in the missing entries for the scale factors.\nIf Length scale factor is \\( 4 \\), find the Area and Volume scale factors.",
+          "options": [
+            "\\(8, 12\\)",
+            "\\(16, 64\\)",
+            "\\(16, 32\\)",
+            "\\(8, 64\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(16, 64\\).",
+          "steps": [
+            {
+              "explain": "We are given a length scale factor of 4. We need to find the corresponding Area and Volume scale factors.",
+              "work": "Length SF = 4."
+            },
+            {
+              "explain": "The rule that applies is: Area scale factor is the square of the length scale factor ($k^2$), and Volume scale factor is the cube ($k^3$).",
+              "work": "Area SF = (Length SF)$^2$, Vol SF = (Length SF)$^3$"
+            },
+            {
+              "explain": "Substitute our length scale factor $k = 4$ into these relationships.",
+              "work": "Area SF = $4^2 = 16$, Vol SF = $4^3 = 64$"
+            },
+            {
+              "explain": "Our final answers are 16 for Area SF and 64 for Volume SF.",
+              "work": "Area SF: $16$, Vol SF: $64$"
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Fill in the missing entries for the scale factors.\nIf Length scale factor is \\( 2.5 \\), find the Area and Volume scale factors.",
+          "options": [
+            "\\(5, 7.5\\)",
+            "\\(6.25, 12.5\\)",
+            "\\(6.25, 15.625\\)",
+            "\\(12.5, 31.25\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(6.25, 15.625\\).",
+          "steps": [
+            {
+              "explain": "We are given a length scale factor of 2.5. We need to find the corresponding Area and Volume scale factors.",
+              "work": "Length SF = 2.5."
+            },
+            {
+              "explain": "We use the relationships that Area SF = $k^2$ and Volume SF = $k^3$, where $k$ is the length scale factor.",
+              "work": "Area SF = (Length SF)$^2$, Vol SF = (Length SF)$^3$"
+            },
+            {
+              "explain": "Calculate $2.5^2$ for the Area SF and $2.5^3$ for the Volume SF.",
+              "work": "Area SF = $2.5^2 = 6.25$, Vol SF = $2.5^3 = 15.625$"
+            },
+            {
+              "explain": "The resulting Area SF is 6.25 and Volume SF is 15.625.",
+              "work": "Area SF: $6.25$, Vol SF: $15.625$"
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q10c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Fill in the missing entries for the scale factors.\nIf Area scale factor is \\( 9 \\), find the Length and Volume scale factors.",
+          "options": [
+            "\\(4.5, 13.5\\)",
+            "\\(3, 27\\)",
+            "\\(3, 9\\)",
+            "\\(4.5, 27\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(3, 27\\).",
+          "steps": [
+            {
+              "explain": "We are given an Area scale factor of 9. We need to find the Length and Volume scale factors.",
+              "work": "Area SF = 9."
+            },
+            {
+              "explain": "The Length SF is the square root of the Area SF. Once we have the Length SF, we cube it to find the Volume SF.",
+              "work": "Length SF = $\\sqrt{\\text{Area SF}}$, Vol SF = (Length SF)$^3$"
+            },
+            {
+              "explain": "Take the square root of 9 to get the Length SF, then cube that result.",
+              "work": "Length SF = $\\sqrt{9} = 3$, Vol SF = $3^3 = 27$"
+            },
+            {
+              "explain": "The Length SF is 3 and the Volume SF is 27.",
+              "work": "Length SF: $3$, Vol SF: $27$"
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q10d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Fill in the missing entries for the scale factors.\nIf Area scale factor is \\( 49 \\), find the Length and Volume scale factors.",
+          "options": [
+            "\\(24.5, 73.5\\)",
+            "\\(7, 343\\)",
+            "\\(7, 49\\)",
+            "\\(24.5, 343\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(7, 343\\).",
+          "steps": [
+            {
+              "explain": "We are given an Area scale factor of 49. We need to find the Length and Volume scale factors.",
+              "work": "Area SF = 49."
+            },
+            {
+              "explain": "Since Area SF = $k^2$, the Length SF ($k$) is its square root. The Volume SF will then be $k^3$.",
+              "work": "Length SF = $\\sqrt{\\text{Area SF}}$, Vol SF = (Length SF)$^3$"
+            },
+            {
+              "explain": "Evaluate the square root of 49, and raise the result to the power of 3.",
+              "work": "Length SF = $\\sqrt{49} = 7$, Vol SF = $7^3 = 343$"
+            },
+            {
+              "explain": "The Length SF is 7 and the Volume SF is 343.",
+              "work": "Length SF: $7$, Vol SF: $343$"
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q10e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Fill in the missing entries for the scale factors.\nIf Volume scale factor is \\( 216 \\), find the Length and Area scale factors.",
+          "options": [
+            "\\(72, 144\\)",
+            "\\(6, 36\\)",
+            "\\(6, 216\\)",
+            "\\(36, 6\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(6, 36\\).",
+          "steps": [
+            {
+              "explain": "We are given a Volume scale factor of 216. We need to find the Length and Area scale factors.",
+              "work": "Vol SF = 216."
+            },
+            {
+              "explain": "The Length SF is the cube root of the Volume SF. We then square the Length SF to get the Area SF.",
+              "work": "Length SF = $\\sqrt[3]{\\text{Vol SF}}$, Area SF = (Length SF)$^2$"
+            },
+            {
+              "explain": "Find the cube root of 216 to obtain the Length SF, and square that value for the Area SF.",
+              "work": "Length SF = $\\sqrt[3]{216} = 6$, Area SF = $6^2 = 36$"
+            },
+            {
+              "explain": "The Length SF is 6 and the Area SF is 36.",
+              "work": "Length SF: $6$, Area SF: $36$"
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q10f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Fill in the missing entries for the scale factors.\nIf Volume scale factor is \\( 1000 \\), find the Length and Area scale factors.",
+          "options": [
+            "\\(333, 666\\)",
+            "\\(10, 100\\)",
+            "\\(10, 1000\\)",
+            "\\(100, 10\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(10, 100\\).",
+          "steps": [
+            {
+              "explain": "We are given a Volume scale factor of 1000. We need to find the Length and Area scale factors.",
+              "work": "Vol SF = 1000."
+            },
+            {
+              "explain": "Since Volume SF is $k^3$, the Length SF ($k$) is its cube root. The Area SF is $k^2$.",
+              "work": "Length SF = $\\sqrt[3]{\\text{Vol SF}}$, Area SF = (Length SF)$^2$"
+            },
+            {
+              "explain": "Evaluate the cube root of 1000, and then square the result.",
+              "work": "Length SF = $\\sqrt[3]{1000} = 10$, Area SF = $10^2 = 100$"
+            },
+            {
+              "explain": "The Length SF is 10 and the Area SF is 100.",
+              "work": "Length SF: $10$, Area SF: $100$"
+            }
+          ]
+        },
+        {
+          "id": "y10-6k-q2",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "A rectangular prism has a surface area of \\( 600 \\) cm\\(^2\\). If its length is \\( 20 \\) cm and its width is \\( 5 \\) cm, calculate the height of the rectangular prism.",
+          "parts": [
+            {
+              "id": "y10-6k-q2a",
+              "type": "mc",
+              "stem": "Calculate the height.",
+              "options": [
+                "\\(6\\)",
+                "\\(8\\)",
+                "\\(10\\)",
+                "\\(12\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We are given a rectangular prism with a known surface area of 600 cm$^2$, a length of 20 cm, and a width of 5 cm. We need to find the unknown height.",
+                  "work": "Surface Area $SA = 600$, length $l = 20$, width $w = 5$. We need height $h$."
+                },
+                {
+                  "explain": "We use the surface area formula $SA = 2(lw + lh + wh)$ and prepare to solve backwards for the height.",
+                  "work": "$SA = 2(lw + lh + wh)$"
+                },
+                {
+                  "explain": "Substitute the known values into the equation, expand the brackets, and rearrange to solve for $h$.",
+                  "work": "$600 = 2(20 \\times 5 + 20h + 5h) \\Rightarrow 300 = 100 + 25h \\Rightarrow 25h = 200 \\Rightarrow h = 8$"
+                },
+                {
+                  "explain": "The calculated height is 8. Since it is a 1D length measurement, the units are cm.",
+                  "work": "The height is $8$ cm."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6k-q3",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "A rectangular prism has a volume of \\( 840 \\) cm\\(^3\\). If its length is \\( 14 \\) cm and its width is \\( 10 \\) cm, calculate the height of the rectangular prism.",
+          "parts": [
+            {
+              "id": "y10-6k-q3a",
+              "type": "mc",
+              "stem": "Calculate the height.",
+              "options": [
+                "\\(6\\)",
+                "\\(8\\)",
+                "\\(10\\)",
+                "\\(14\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We are given a rectangular prism with a volume of 840 cm$^3$, length 14 cm, and width 10 cm. Our goal is to calculate the missing height.",
+                  "work": "Volume $V = 840$, length $l = 14$, width $w = 10$. We need height $h$."
+                },
+                {
+                  "explain": "The applicable rule is the volume formula $V = l \\times w \\times h$. We will use this to set up an equation.",
+                  "work": "$V = l \\times w \\times h$"
+                },
+                {
+                  "explain": "Substitute the given volume, length, and width into the equation and solve for the unknown $h$.",
+                  "work": "$840 = 14 \\times 10 \\times h \\Rightarrow 840 = 140h \\Rightarrow h = 6$"
+                },
+                {
+                  "explain": "The final height is 6. This is a linear measurement, so it is in cm.",
+                  "work": "The height is $6$ cm."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6k-q5",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "A cylindrical water tank stands on its circular base. It has a diameter of \\( 4 \\) m and a height of \\( 2.5 \\) m.",
+          "parts": [
+            {
+              "id": "y10-6k-q5a",
+              "type": "mc",
+              "stem": "a) Calculate the volume of the tank, to the nearest litre.",
+              "options": [
+                "\\(15708\\)",
+                "\\(31416\\)",
+                "\\(125664\\)",
+                "\\(62832\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We have a cylindrical tank with diameter 4 m (so radius is 2 m) and height 2.5 m. We need the volume in litres.",
+                  "work": "Cylinder: diameter $= 4$m (radius $r = 2$m), height $h = 2.5$m. Need volume in litres."
+                },
+                {
+                  "explain": "We use the cylinder volume formula $V = \\pi r^2 h$. Note that $1$ m$^3$ equals $1000$ litres.",
+                  "work": "$V = \\pi r^2 h$. $1$ m$^3 = 1000$ litres."
+                },
+                {
+                  "explain": "Substitute $r=2$ and $h=2.5$ into the formula, calculate the volume in m$^3$, and multiply by 1000.",
+                  "work": "V = $\\pi \\times 2^2 \\times 2.5 = 10\\pi$ m$^3 \\approx 31.4159$ m$^3 = 31416$ litres."
+                },
+                {
+                  "explain": "Rounding to the nearest litre, we get 31416 litres.",
+                  "work": "The volume is $31416$ litres."
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q5b",
+              "type": "mc",
+              "stem": "b) Calculate the depth of water in the tank, to the nearest centimetre, when it contains \\( 5000 \\) litres of water.",
+              "options": [
+                "\\(10\\)",
+                "\\(20\\)",
+                "\\(40\\)",
+                "\\(80\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "The cylindrical tank has a radius of 2 m and currently holds 5000 litres of water. We need to find the depth of the water in cm.",
+                  "work": "Cylinder radius $r = 2$m. Volume $= 5000$ litres $= 5$ m$^3$. Need depth $h$ in cm."
+                },
+                {
+                  "explain": "Convert litres to cubic meters, then use $V = \\pi r^2 h$ to solve backwards for the depth $h$.",
+                  "work": "$V = \\pi r^2 h$"
+                },
+                {
+                  "explain": "Substitute $V=5$ and $r=2$ into the equation and rearrange to find $h$ in meters, then convert to cm.",
+                  "work": "$5 = \\pi \\times 2^2 \\times h \\Rightarrow 5 = 4\\pi h \\Rightarrow h = \\frac{5}{4\\pi} \\approx 0.3979$ m $= 40$ cm."
+                },
+                {
+                  "explain": "The depth of the water to the nearest centimeter is 40 cm.",
+                  "work": "The depth is $40$ cm."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6k-q6",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "Find exact answers to these questions (leaving \\( \\pi \\) in your answer if necessary).",
+          "parts": [
+            {
+              "id": "y10-6k-q6a",
+              "type": "mc",
+              "stem": "a) A square-based pyramid has base side length \\( 14 \\) cm and perpendicular height \\( 24 \\) cm.\ni) Calculate the surface area",
+              "options": [
+                "\\(700\\)",
+                "\\(896\\)",
+                "\\(1092\\)",
+                "\\(1960\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "We are given a square-based pyramid with base side length 14 cm and a perpendicular height of 24 cm. We need the exact surface area.",
+                  "work": "Square-based pyramid: base side $= 14$, perpendicular height $= 24$."
+                },
+                {
+                  "explain": "To find the surface area ($SA = \\text{base} + 4 \\times \\text{triangle}$), we first need to calculate the slant height $l$ using Pythagoras.",
+                  "work": "Slant height $l = \\sqrt{24^2 + 7^2} = \\sqrt{576 + 49} = \\sqrt{625} = 25$. $SA = \\text{base} + 4 \\times \\text{triangle}$"
+                },
+                {
+                  "explain": "Calculate the area of the square base and the 4 identical triangular faces using the slant height.",
+                  "work": "Base $= 14 \\times 14 = 196$. Triangles $= 4 \\times (\\frac{1}{2} \\times 14 \\times 25) = 700$. SA $= 196 + 700 = 896$."
+                },
+                {
+                  "explain": "The final exact surface area is 896 cm$^2$.",
+                  "work": "The exact surface area is $896$ cm$^2$."
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q6b",
+              "type": "mc",
+              "stem": "ii) Calculate the volume",
+              "options": [
+                "\\(4704\\)",
+                "\\(1568\\)",
+                "\\(2352\\)",
+                "\\(3136\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "We have a square-based pyramid with base side length 14 cm (base area 196 cm$^2$) and a perpendicular height of 24 cm. We need the exact volume.",
+                  "work": "Square-based pyramid: base area $= 196$, perpendicular height $h = 24$."
+                },
+                {
+                  "explain": "The volume formula for any pyramid is $V = \\frac{1}{3} \\times \\text{base area} \\times h$.",
+                  "work": "$V = \\frac{1}{3} \\times \\text{base area} \\times h$"
+                },
+                {
+                  "explain": "Substitute the base area and perpendicular height into the formula and calculate.",
+                  "work": "V = $\\frac{1}{3} \\times 196 \\times 24 = 196 \\times 8 = 1568$"
+                },
+                {
+                  "explain": "The exact calculated volume is 1568 cm$^3$.",
+                  "work": "The exact volume is $1568$ cm$^3$."
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q6c",
+              "type": "mc",
+              "stem": "b) A cone has a radius of \\( 5 \\) cm and a slant height of \\( 13 \\) cm.\ni) Calculate the exact surface area",
+              "options": [
+                "\\(65\\pi\\)",
+                "\\(90\\pi\\)",
+                "\\(115\\pi\\)",
+                "\\(150\\pi\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We are given a cone with radius 5 cm and slant height 13 cm. We need the exact surface area.",
+                  "work": "Cone: radius $r = 5$, slant height $l = 13$."
+                },
+                {
+                  "explain": "The formula for the total surface area of a cone is $SA = \\pi r^2 + \\pi r l$.",
+                  "work": "$SA = \\pi r^2 + \\pi r l$"
+                },
+                {
+                  "explain": "Substitute $r=5$ and $l=13$ into the equation and leave the answer in terms of $\\pi$ for an exact value.",
+                  "work": "SA = $\\pi(5^2) + \\pi(5)(13) = 25\\pi + 65\\pi = 90\\pi$"
+                },
+                {
+                  "explain": "The exact surface area is $90\\pi$ cm$^2$.",
+                  "work": "The exact surface area is $90\\pi$ cm$^2$."
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q6d",
+              "type": "mc",
+              "stem": "ii) Calculate the exact volume",
+              "options": [
+                "\\(100\\pi\\)",
+                "\\(300\\pi\\)",
+                "\\(325\\pi\\)",
+                "\\(130\\pi\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We are given a cone with radius 5 cm and slant height 13 cm. We need the exact volume.",
+                  "work": "Cone: radius $r = 5$, slant height $l = 13$. Need height $h$."
+                },
+                {
+                  "explain": "To use the volume formula $V = \\frac{1}{3}\\pi r^2 h$, we first must find the perpendicular height $h$ using Pythagoras ($h = \\sqrt{l^2 - r^2}$).",
+                  "work": "$h = \\sqrt{l^2 - r^2}$, $V = \\frac{1}{3}\\pi r^2 h$"
+                },
+                {
+                  "explain": "Calculate $h$, then substitute $r$ and $h$ into the volume formula.",
+                  "work": "$h = \\sqrt{13^2 - 5^2} = 12$. V = $\\frac{1}{3}\\pi(5^2)(12) = 100\\pi$"
+                },
+                {
+                  "explain": "The final exact volume in terms of $\\pi$ is $100\\pi$ cm$^3$.",
+                  "work": "The exact volume is $100\\pi$ cm$^3$."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-6k-q7",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "In the pyramid \\( VABCD \\) shown, \\( VB \\) is perpendicular to rectangle \\( ABCD \\), \\( AB = 15 \\) m, \\( BC = 8 \\) m and \\( VB = 6 \\) m.",
+          "figure": {
+            "geometry": {
+              "width": 250,
+              "points": {
+                "D": [
+                  0,
+                  0
+                ],
+                "C": [
+                  15,
+                  0
+                ],
+                "A": [
+                  6,
+                  5
+                ],
+                "B": [
+                  21,
+                  5
+                ],
+                "V": [
+                  21,
+                  15
+                ]
+              },
+              "segments": [
+                {
+                  "from": "D",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "A",
+                  "dashed": true
+                },
+                {
+                  "from": "A",
+                  "to": "D",
+                  "dashed": true
+                },
+                {
+                  "from": "V",
+                  "to": "A",
+                  "dashed": true
+                },
+                {
+                  "from": "V",
+                  "to": "B"
+                },
+                {
+                  "from": "V",
+                  "to": "C"
+                },
+                {
+                  "from": "V",
+                  "to": "D"
+                }
+              ]
+            }
+          },
+          "parts": [
+            {
+              "id": "y10-6k-q7a",
+              "type": "mc",
+              "stem": "a) Calculate the surface area of the pyramid in m\\(^2\\), correct to one decimal place.",
+              "options": [
+                "\\(208.6\\)",
+                "\\(264.0\\)",
+                "\\(328.6\\)",
+                "\\(448.6\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "We have an asymmetrical pyramid VABCD with a rectangular base of 15m by 8m. The height VB is 6m and is perpendicular to the base. We need the surface area.",
+                  "work": "Pyramid VABCD. Base $15 \\times 8$. $VB = 6$ is perpendicular to ABCD."
+                },
+                {
+                  "explain": "The surface area is the sum of the rectangular base and four different triangular faces.",
+                  "work": "Sum the areas of the base and four triangular faces."
+                },
+                {
+                  "explain": "Calculate the area of each face using Pythagoras for the slant heights VA and VC where necessary.",
+                  "work": "Base $= 120$. $\\Delta VAB = 0.5 \\times 15 \\times 6 = 45$. $\\Delta VBC = 0.5 \\times 8 \\times 6 = 24$. $VA = \\sqrt{6^2 + 15^2} = \\sqrt{261}$, $\\Delta VAD = 0.5 \\times 8 \\times \\sqrt{261} \\approx 64.6$. $VC = \\sqrt{6^2 + 8^2} = 10$, $\\Delta VDC = 0.5 \\times 15 \\times 10 = 75$. SA $= 120 + 45 + 24 + 64.6 + 75 = 328.6$"
+                },
+                {
+                  "explain": "Adding all the face areas together gives 328.6 m$^2$ to one decimal place.",
+                  "work": "The surface area is $328.6$ m$^2$."
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q7b",
+              "type": "mc",
+              "stem": "b) Calculate the volume of the pyramid.",
+              "options": [
+                "\\(120\\)",
+                "\\(240\\)",
+                "\\(720\\)",
+                "\\(480\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We have the same pyramid VABCD with base 15m by 8m, and perpendicular height VB = 6m. We need its volume.",
+                  "work": "Pyramid VABCD. Base $15 \\times 8$, height $VB = 6$."
+                },
+                {
+                  "explain": "The volume formula for any pyramid is $V = \\frac{1}{3} \\times \\text{base area} \\times h$.",
+                  "work": "$V = \\frac{1}{3} \\times \\text{base area} \\times h$"
+                },
+                {
+                  "explain": "Calculate the base area (15 * 8 = 120) and substitute it along with the height into the formula.",
+                  "work": "Base Area $= 15 \\times 8 = 120$. V = $\\frac{1}{3} \\times 120 \\times 6 = 240$"
+                },
+                {
+                  "explain": "The calculated volume is exactly 240 m$^3$.",
+                  "work": "The volume is $240$ m$^3$."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6k-q8",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The curved surface area of a cone is \\( 65\\pi \\) cm\\(^2\\) and the area of the circular base is \\( 25\\pi \\) cm\\(^2\\).",
+          "parts": [
+            {
+              "id": "y10-6k-q8a",
+              "type": "mc",
+              "stem": "a) Calculate the radius of the cone.",
+              "options": [
+                "\\(5\\)",
+                "\\(10\\)",
+                "\\(13\\)",
+                "\\(25\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We are given a cone with a curved surface area of $65\\pi$ and a base area of $25\\pi$. We need to find the radius.",
+                  "work": "Cone: Base Area $= 25\\pi$. Curved SA $= 65\\pi$."
+                },
+                {
+                  "explain": "Since the circular base area is given by $\\pi r^2$, we can equate this to $25\\pi$ and solve for $r$.",
+                  "work": "Base Area $= \\pi r^2$"
+                },
+                {
+                  "explain": "Set up the equation and solve for the radius.",
+                  "work": "$\\pi r^2 = 25\\pi \\Rightarrow r^2 = 25 \\Rightarrow r = 5$"
+                },
+                {
+                  "explain": "The calculated radius is 5 cm.",
+                  "work": "The radius is $5$ cm."
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q8b",
+              "type": "mc",
+              "stem": "b) Calculate the exact perpendicular height of the cone.",
+              "options": [
+                "\\(12\\)",
+                "\\(13\\)",
+                "\\(144\\)",
+                "\\(169\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We know the cone's radius is 5 cm and its curved surface area is $65\\pi$. We need the exact perpendicular height.",
+                  "work": "Cone: $r = 5$. Curved SA $= 65\\pi$."
+                },
+                {
+                  "explain": "First, use the curved SA formula ($\\pi r l$) to find the slant height $l$. Then use Pythagoras ($h = \\sqrt{l^2 - r^2}$) to find the height.",
+                  "work": "Curved SA $= \\pi r l$. Then $h = \\sqrt{l^2 - r^2}$"
+                },
+                {
+                  "explain": "Solve for $l$, then substitute $l$ and $r$ to find $h$.",
+                  "work": "$\\pi(5)l = 65\\pi \\Rightarrow l = 13$. $h = \\sqrt{13^2 - 5^2} = \\sqrt{144} = 12$"
+                },
+                {
+                  "explain": "The perpendicular height evaluates to exactly 12 cm.",
+                  "work": "The exact perpendicular height is $12$ cm."
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q8c",
+              "type": "mc",
+              "stem": "c) Calculate the volume of the cone, correct to the nearest cm\\(^3\\).",
+              "options": [
+                "\\(314\\)",
+                "\\(942\\)",
+                "\\(1024\\)",
+                "\\(157\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "With the cone's radius as 5 cm and perpendicular height as 12 cm, we need to calculate the volume to the nearest cm$^3$.",
+                  "work": "Cone: $r = 5$, height $h = 12$."
+                },
+                {
+                  "explain": "The volume formula for a cone is $V = \\frac{1}{3}\\pi r^2 h$.",
+                  "work": "$V = \\frac{1}{3}\\pi r^2 h$"
+                },
+                {
+                  "explain": "Substitute $r=5$ and $h=12$ into the formula and evaluate the decimal value.",
+                  "work": "V = $\\frac{1}{3}\\pi(5^2)(12) = 100\\pi \\approx 314.159$"
+                },
+                {
+                  "explain": "Rounding $100\\pi$ to the nearest whole number gives 314 cm$^3$.",
+                  "work": "The volume is $314$ cm$^3$."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6k-q9",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A storage tank is constructed as a cylinder with a hemisphere at each end of the cylinder. The radius of the cylinder is \\( 2 \\) m and the overall length of the tank is \\( 10 \\) m.\n\nCalculate (correct to 1 decimal place):",
+          "parts": [
+            {
+              "id": "y10-6k-q9a",
+              "type": "mc",
+              "stem": "a) the surface area of the tank in m\\(^2\\)",
+              "options": [
+                "\\(100.5\\)",
+                "\\(125.7\\)",
+                "\\(150.8\\)",
+                "\\(175.9\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We are given a storage tank made of a cylinder with two hemispheres at the ends. The radius is 2m and overall length is 10m. We need the surface area.",
+                  "work": "Tank: Cylinder with two hemispheres. Total length $= 10$, radius $r = 2$."
+                },
+                {
+                  "explain": "The total surface area is the sum of the curved area of the cylinder and the surface area of the two hemispheres (which equals one full sphere).",
+                  "work": "Cylinder length $= 10 - 2 - 2 = 6$. Total SA = Sphere SA + Cylinder Curved SA."
+                },
+                {
+                  "explain": "Substitute the radius and cylinder length into the formulas $4\\pi r^2$ and $2\\pi rh$.",
+                  "work": "$SA = 4\\pi(2^2) + 2\\pi(2)(6) = 16\\pi + 24\\pi = 40\\pi \\approx 125.66$"
+                },
+                {
+                  "explain": "Rounding to one decimal place gives a surface area of 125.7 m$^2$.",
+                  "work": "The surface area is $125.7$ m$^2$."
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q9b",
+              "type": "mc",
+              "stem": "b) the volume of the tank",
+              "options": [
+                "\\(75.4\\)",
+                "\\(108.9\\)",
+                "\\(142.4\\)",
+                "\\(326.7\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Using the same tank (radius 2m, cylinder length 6m), we need to calculate its volume.",
+                  "work": "Tank: Sphere ($r=2$) + Cylinder ($r=2, h=6$)."
+                },
+                {
+                  "explain": "The total volume is the volume of the full sphere plus the volume of the central cylinder.",
+                  "work": "$V = \\frac{4}{3}\\pi r^3 + \\pi r^2 h$"
+                },
+                {
+                  "explain": "Substitute the dimensions into the formulas and calculate the total volume.",
+                  "work": "V = $\\frac{4}{3}\\pi(2^3) + \\pi(2^2)(6) = \\frac{32}{3}\\pi + 24\\pi = \\frac{104}{3}\\pi \\approx 108.9$"
+                },
+                {
+                  "explain": "Rounding to one decimal place gives 108.9 m$^3$.",
+                  "work": "The volume is $108.9$ m$^3$."
+                }
+              ]
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-6k-q10",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Fill in the missing entries for the scale factors.",
+          "parts": [
+            {
+              "id": "y10-6k-q10a",
+              "type": "mc",
+              "stem": "a) If Length scale factor is \\( 4 \\), find the Area and Volume scale factors.",
+              "options": [
+                "\\(8, 12\\)",
+                "\\(16, 64\\)",
+                "\\(16, 32\\)",
+                "\\(8, 64\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We are given a length scale factor of 4. We need to find the corresponding Area and Volume scale factors.",
+                  "work": "Length SF = 4."
+                },
+                {
+                  "explain": "The rule that applies is: Area scale factor is the square of the length scale factor ($k^2$), and Volume scale factor is the cube ($k^3$).",
+                  "work": "Area SF = (Length SF)$^2$, Vol SF = (Length SF)$^3$"
+                },
+                {
+                  "explain": "Substitute our length scale factor $k = 4$ into these relationships.",
+                  "work": "Area SF = $4^2 = 16$, Vol SF = $4^3 = 64$"
+                },
+                {
+                  "explain": "Our final answers are 16 for Area SF and 64 for Volume SF.",
+                  "work": "Area SF: $16$, Vol SF: $64$"
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q10b",
+              "type": "mc",
+              "stem": "b) If Length scale factor is \\( 2.5 \\), find the Area and Volume scale factors.",
+              "options": [
+                "\\(5, 7.5\\)",
+                "\\(6.25, 12.5\\)",
+                "\\(6.25, 15.625\\)",
+                "\\(12.5, 31.25\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "We are given a length scale factor of 2.5. We need to find the corresponding Area and Volume scale factors.",
+                  "work": "Length SF = 2.5."
+                },
+                {
+                  "explain": "We use the relationships that Area SF = $k^2$ and Volume SF = $k^3$, where $k$ is the length scale factor.",
+                  "work": "Area SF = (Length SF)$^2$, Vol SF = (Length SF)$^3$"
+                },
+                {
+                  "explain": "Calculate $2.5^2$ for the Area SF and $2.5^3$ for the Volume SF.",
+                  "work": "Area SF = $2.5^2 = 6.25$, Vol SF = $2.5^3 = 15.625$"
+                },
+                {
+                  "explain": "The resulting Area SF is 6.25 and Volume SF is 15.625.",
+                  "work": "Area SF: $6.25$, Vol SF: $15.625$"
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q10c",
+              "type": "mc",
+              "stem": "c) If Area scale factor is \\( 9 \\), find the Length and Volume scale factors.",
+              "options": [
+                "\\(4.5, 13.5\\)",
+                "\\(3, 27\\)",
+                "\\(3, 9\\)",
+                "\\(4.5, 27\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We are given an Area scale factor of 9. We need to find the Length and Volume scale factors.",
+                  "work": "Area SF = 9."
+                },
+                {
+                  "explain": "The Length SF is the square root of the Area SF. Once we have the Length SF, we cube it to find the Volume SF.",
+                  "work": "Length SF = $\\sqrt{\\text{Area SF}}$, Vol SF = (Length SF)$^3$"
+                },
+                {
+                  "explain": "Take the square root of 9 to get the Length SF, then cube that result.",
+                  "work": "Length SF = $\\sqrt{9} = 3$, Vol SF = $3^3 = 27$"
+                },
+                {
+                  "explain": "The Length SF is 3 and the Volume SF is 27.",
+                  "work": "Length SF: $3$, Vol SF: $27$"
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q10d",
+              "type": "mc",
+              "stem": "d) If Area scale factor is \\( 49 \\), find the Length and Volume scale factors.",
+              "options": [
+                "\\(24.5, 73.5\\)",
+                "\\(7, 343\\)",
+                "\\(7, 49\\)",
+                "\\(24.5, 343\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We are given an Area scale factor of 49. We need to find the Length and Volume scale factors.",
+                  "work": "Area SF = 49."
+                },
+                {
+                  "explain": "Since Area SF = $k^2$, the Length SF ($k$) is its square root. The Volume SF will then be $k^3$.",
+                  "work": "Length SF = $\\sqrt{\\text{Area SF}}$, Vol SF = (Length SF)$^3$"
+                },
+                {
+                  "explain": "Evaluate the square root of 49, and raise the result to the power of 3.",
+                  "work": "Length SF = $\\sqrt{49} = 7$, Vol SF = $7^3 = 343$"
+                },
+                {
+                  "explain": "The Length SF is 7 and the Volume SF is 343.",
+                  "work": "Length SF: $7$, Vol SF: $343$"
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q10e",
+              "type": "mc",
+              "stem": "e) If Volume scale factor is \\( 216 \\), find the Length and Area scale factors.",
+              "options": [
+                "\\(72, 144\\)",
+                "\\(6, 36\\)",
+                "\\(6, 216\\)",
+                "\\(36, 6\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We are given a Volume scale factor of 216. We need to find the Length and Area scale factors.",
+                  "work": "Vol SF = 216."
+                },
+                {
+                  "explain": "The Length SF is the cube root of the Volume SF. We then square the Length SF to get the Area SF.",
+                  "work": "Length SF = $\\sqrt[3]{\\text{Vol SF}}$, Area SF = (Length SF)$^2$"
+                },
+                {
+                  "explain": "Find the cube root of 216 to obtain the Length SF, and square that value for the Area SF.",
+                  "work": "Length SF = $\\sqrt[3]{216} = 6$, Area SF = $6^2 = 36$"
+                },
+                {
+                  "explain": "The Length SF is 6 and the Area SF is 36.",
+                  "work": "Length SF: $6$, Area SF: $36$"
+                }
+              ]
+            },
+            {
+              "id": "y10-6k-q10f",
+              "type": "mc",
+              "stem": "f) If Volume scale factor is \\( 1000 \\), find the Length and Area scale factors.",
+              "options": [
+                "\\(333, 666\\)",
+                "\\(10, 100\\)",
+                "\\(10, 1000\\)",
+                "\\(100, 10\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We are given a Volume scale factor of 1000. We need to find the Length and Area scale factors.",
+                  "work": "Vol SF = 1000."
+                },
+                {
+                  "explain": "Since Volume SF is $k^3$, the Length SF ($k$) is its cube root. The Area SF is $k^2$.",
+                  "work": "Length SF = $\\sqrt[3]{\\text{Vol SF}}$, Area SF = (Length SF)$^2$"
+                },
+                {
+                  "explain": "Evaluate the cube root of 1000, and then square the result.",
+                  "work": "Length SF = $\\sqrt[3]{1000} = 10$, Area SF = $10^2 = 100$"
+                },
+                {
+                  "explain": "The Length SF is 10 and the Area SF is 100.",
+                  "work": "Length SF: $10$, Area SF: $100$"
+                }
+              ]
+            }
+          ],
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

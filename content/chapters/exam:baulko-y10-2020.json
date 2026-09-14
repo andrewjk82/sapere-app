@@ -1,0 +1,1591 @@
+{
+  "chapterId": "exam:baulko-y10-2020",
+  "title": "",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "y10-2a",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which expression is a factorisation of \\(8x^3 - 27\\)?",
+          "options": [
+            "\\((2x - 3)(4x^2 + 6x + 9)\\)",
+            "\\((2x + 3)(4x^2 - 6x + 9)\\)",
+            "\\((2x - 3)(4x^2 + 12x + 9)\\)",
+            "\\((2x + 3)(4x^2 - 12x + 9)\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Use the difference of two cubes formula: \\(a^3 - b^3 = (a - b)(a^2 + ab + b^2)\\).",
+              "work": "\\[8x^3 - 27 = (2x)^3 - 3^3\\]"
+            },
+            {
+              "explain": "Substitute \\(a = 2x\\) and \\(b = 3\\).",
+              "work": "\\[(2x - 3)((2x)^2 + (2x)(3) + 3^2)\\]\n\\[= (2x - 3)(4x^2 + 6x + 9)\\]"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "factorisation"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q21a",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Show that \\(\\frac{2x - 3}{x + 1} = 2 - \\frac{5}{x + 1}\\).",
+          "answer": "Proof",
+          "solution": "\\text{Proof provided in steps.}",
+          "steps": [
+            {
+              "explain": "Start with the right-hand side (RHS) and express it with a common denominator.",
+              "work": "\\[\\text{RHS} = 2 - \\frac{5}{x+1}\\]\n\\[= \\frac{2(x+1)}{x+1} - \\frac{5}{x+1}\\]"
+            },
+            {
+              "explain": "Combine the fractions.",
+              "work": "\\[= \\frac{2x + 2 - 5}{x+1}\\]"
+            },
+            {
+              "explain": "Simplify the numerator.",
+              "work": "\\[= \\frac{2x - 3}{x+1}\\]"
+            },
+            {
+              "explain": "Conclude the proof.",
+              "work": "Since this matches the left-hand side (LHS), the identity is proven.\n\\[= \\text{LHS}\\]"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "algebraic-fractions",
+              "proof"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q25",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(2^{2x+1} - 5(2^x) + 2 = 0\\).",
+          "options": [
+            "\\(x = -1, x = 1\\)",
+            "\\(x = -2, x = 2\\)",
+            "\\(x = 0, x = 1\\)",
+            "\\(x = -1, x = 2\\)"
+          ],
+          "answer": 0,
+          "solution": "x = 1 \\text{ or } x = -1",
+          "steps": [
+            {
+              "explain": "Use index laws to rewrite \\(2^{2x+1}\\).",
+              "work": "\\[2^{2x+1} = 2^{2x} \\cdot 2^1 = 2(2^x)^2\\]"
+            },
+            {
+              "explain": "Substitute into the original equation.",
+              "work": "\\[2(2^x)^2 - 5(2^x) + 2 = 0\\]"
+            },
+            {
+              "explain": "Use substitution. Let \\(u = 2^x\\) to form a quadratic equation.",
+              "work": "\\[2u^2 - 5u + 2 = 0\\]"
+            },
+            {
+              "explain": "Factorise the quadratic equation.",
+              "work": "We need factors of \\(4\\) (since \\(2 \\times 2 = 4\\)) that add to \\(-5\\): \\(-4\\) and \\(-1\\).\n\\[2u^2 - 4u - u + 2 = 0\\]\n\\[2u(u - 2) - 1(u - 2) = 0\\]\n\\[(2u - 1)(u - 2) = 0\\]"
+            },
+            {
+              "explain": "Solve for \\(u\\).",
+              "work": "\\[u = \\frac{1}{2} \\quad \\text{or} \\quad u = 2\\]"
+            },
+            {
+              "explain": "Substitute back \\(u = 2^x\\) to find \\(x\\).",
+              "work": "Case 1: \\(2^x = \\frac{1}{2} = 2^{-1} \\implies x = -1\\)\nCase 2: \\(2^x = 2 = 2^1 \\implies x = 1\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "exponentials",
+              "reducible-to-quadratic"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-3c",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q19a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If \\(\\alpha\\) and \\(\\beta\\) are the roots of the quadratic equation \\(3x^2 - 3x + 1 = 0\\), find the value of:\n\\[\\alpha + \\beta\\]",
+          "options": [
+            "\\(1\\)",
+            "\\(-1\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(-\\frac{1}{3}\\)"
+          ],
+          "answer": 0,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Use the relationship between the roots and coefficients of a quadratic equation \\(ax^2 + bx + c = 0\\).",
+              "work": "The sum of the roots is given by \\(\\alpha + \\beta = -\\frac{b}{a}\\)."
+            },
+            {
+              "explain": "Identify \\(a\\), \\(b\\), and \\(c\\) from the equation \\(3x^2 - 3x + 1 = 0\\).",
+              "work": "\\[a = 3, \\quad b = -3, \\quad c = 1\\]"
+            },
+            {
+              "explain": "Calculate the sum of the roots.",
+              "work": "\\[\\alpha + \\beta = -\\frac{-3}{3} = \\frac{3}{3} = 1\\]"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "quadratic-equations",
+              "roots-and-coefficients"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q19b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(\\alpha\\) and \\(\\beta\\) are the roots of the quadratic equation \\(3x^2 - 3x + 1 = 0\\), find the value of:\n\\[\\alpha^2 + \\beta^2\\]",
+          "options": [
+            "\\(\\frac{1}{3}\\)",
+            "\\(1\\)",
+            "\\(-\\frac{1}{3}\\)",
+            "\\(\\frac{5}{3}\\)"
+          ],
+          "answer": 0,
+          "solution": "\\frac{1}{3}",
+          "steps": [
+            {
+              "explain": "Recall the sum and product of the roots from the equation \\(3x^2 - 3x + 1 = 0\\).",
+              "work": "\\[\\alpha + \\beta = -\\frac{b}{a} = -\\frac{-3}{3} = 1\\]\n\\[\\alpha\\beta = \\frac{c}{a} = \\frac{1}{3}\\]"
+            },
+            {
+              "explain": "Express \\(\\alpha^2 + \\beta^2\\) in terms of the sum and product of the roots.",
+              "work": "\\[\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta\\]"
+            },
+            {
+              "explain": "Substitute the values and simplify.",
+              "work": "\\[= (1)^2 - 2\\left(\\frac{1}{3}\\right)\\]\n\\[= 1 - \\frac{2}{3}\\]\n\\[= \\frac{1}{3}\\]"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "quadratic-equations",
+              "roots-and-coefficients"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-4f",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "By using the graph below for \\(y = |2x + 6|\\), what is the solution to \\(|2x + 6| < 2\\)?",
+          "figure": {
+            "svg": "fig:45ebdec00b"
+          },
+          "options": [
+            "\\(x > -4, x > -2\\)",
+            "\\(x < -4, x > -2\\)",
+            "\\(-4 > x > -2\\)",
+            "\\(-4 < x < -2\\)"
+          ],
+          "answer": 3,
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "The graph represents \\(y = |2x + 6|\\). We need to find where the \\(y\\)-values are less than 2.",
+              "work": "\\[|2x + 6| < 2\\]"
+            },
+            {
+              "explain": "This inequality implies:",
+              "work": "\\[-2 < 2x + 6 < 2\\]"
+            },
+            {
+              "explain": "Subtract 6 from all parts:",
+              "work": "\\[-8 < 2x < -4\\]"
+            },
+            {
+              "explain": "Divide by 2:",
+              "work": "\\[-4 < x < -2\\]"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "absolute-value",
+              "inequalities"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve \\(|2m + 3| = 9\\).",
+          "options": [
+            "\\(m = 3, m = -6\\)",
+            "\\(m = 3, m = 6\\)",
+            "\\(m = -3, m = 6\\)",
+            "\\(m = -3, m = -6\\)"
+          ],
+          "answer": 0,
+          "solution": "m = 3, m = -6",
+          "steps": [
+            {
+              "explain": "The absolute value equation \\(|x| = a\\) splits into two cases: \\(x = a\\) and \\(x = -a\\).",
+              "work": "\\[2m + 3 = 9 \\quad \\text{or} \\quad 2m + 3 = -9\\]"
+            },
+            {
+              "explain": "Solve the first case.",
+              "work": "\\[2m = 6\\]\n\\[m = 3\\]"
+            },
+            {
+              "explain": "Solve the second case.",
+              "work": "\\[2m = -12\\]\n\\[m = -6\\]"
+            },
+            {
+              "explain": "State the final solutions.",
+              "work": "Therefore, \\(m = 3\\) or \\(m = -6\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "absolute-value",
+              "equations"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-8b",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q23abcde",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "In the following diagram, \\(ABCD\\) is a quadrilateral. The equation of the line \\(AD\\) is \\(2x - y - 1 = 0\\).",
+          "figure": {
+            "svg": "fig:349ba0fdc3"
+          },
+          "parts": [
+            {
+              "id": "baulko-y10-2020-q23a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Which of the following correctly proves that \\(ABCD\\) is a trapezium?",
+              "options": [
+                "The gradient of \\(BC\\) is 2 and the gradient of \\(AD\\) is 2. Since they are equal, the lines are parallel.",
+                "The gradient of \\(BC\\) is -2 and the gradient of \\(AD\\) is -2. Since they are equal, the lines are parallel.",
+                "The gradient of \\(AB\\) is 3 and the gradient of \\(CD\\) is 3. Since they are equal, the lines are parallel.",
+                "The gradient of \\(BC\\) is 1/2 and the gradient of \\(AD\\) is 1/2. Since they are equal, the lines are parallel."
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Find the gradient of line \\(BC\\) using coordinates \\(B(0, 3)\\) and \\(C(1, 5)\\).",
+                  "work": "\\[m_{BC} = \\frac{5 - 3}{1 - 0} = \\frac{2}{1} = 2\\]"
+                },
+                {
+                  "explain": "Find the gradient of line \\(AD\\) from its equation \\(2x - y - 1 = 0\\).",
+                  "work": "\\[y = 2x - 1\\]\n\\[m_{AD} = 2\\]\nSince \\(m_{BC} = m_{AD}\\), the lines \\(BC\\) and \\(AD\\) are parallel. A quadrilateral with one pair of parallel sides is a trapezium."
+                }
+              ],
+              "timeLimit": 90
+            },
+            {
+              "id": "baulko-y10-2020-q23b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "The line \\(CD\\) is parallel to the \\(x\\)-axis. Find the coordinates of \\(D\\).",
+              "options": [
+                "\\((3, 5)\\)",
+                "\\((2, 5)\\)",
+                "\\((4, 5)\\)",
+                "\\((3, 4)\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Since \\(CD\\) is parallel to the \\(x\\)-axis, \\(D\\) shares the same \\(y\\)-coordinate as \\(C(1, 5)\\).",
+                  "work": "\\(y\\)-coordinate of \\(D = 5\\)"
+                },
+                {
+                  "explain": "Substitute \\(y = 5\\) into the equation for line \\(AD\\) to find the \\(x\\)-coordinate.",
+                  "work": "\\[2x - (5) - 1 = 0\\]\n\\[2x - 6 = 0 \\implies x = 3\\]\nCoordinates of \\(D\\) are \\((3, 5)\\)."
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "baulko-y10-2020-q23c",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the exact length of \\(BC\\).",
+              "options": [
+                "\\(\\sqrt{5}\\)",
+                "\\(5\\)",
+                "\\(2\\sqrt{5}\\)",
+                "\\(\\sqrt{10}\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Calculate the length of \\(BC\\) using the distance formula.",
+                  "work": "\\[d_{BC} = \\sqrt{(1 - 0)^2 + (5 - 3)^2}\\]\n\\[= \\sqrt{1^2 + 2^2} = \\sqrt{1 + 4} = \\sqrt{5}\\text{ units}\\]"
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "baulko-y10-2020-q23d",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the perpendicular distance from \\(B\\) to \\(AD\\).",
+              "options": [
+                "\\(\\frac{4}{\\sqrt{5}}\\)",
+                "\\(\\frac{2}{\\sqrt{5}}\\)",
+                "\\(\\frac{5}{\\sqrt{5}}\\)",
+                "\\(\\frac{3}{\\sqrt{5}}\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Use the perpendicular distance formula from a point \\((x_1, y_1)\\) to a line \\(Ax + By + C = 0\\). Point \\(B\\) is \\((0, 3)\\) and line \\(AD\\) is \\(2x - y - 1 = 0\\).",
+                  "work": "\\[d = \\frac{|Ax_1 + By_1 + C|}{\\sqrt{A^2 + B^2}}\\]\n\\[= \\frac{|2(0) - 1(3) - 1|}{\\sqrt{2^2 + (-1)^2}}\\]\n\\[= \\frac{|-3 - 1|}{\\sqrt{4 + 1}} = \\frac{|-4|}{\\sqrt{5}} = \\frac{4}{\\sqrt{5}}\\]"
+                }
+              ],
+              "timeLimit": 90
+            },
+            {
+              "id": "baulko-y10-2020-q23e",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area of the trapezium \\(ABCD\\).",
+              "options": [
+                "\\(8\\text{ square units}\\)",
+                "\\(10\\text{ square units}\\)",
+                "\\(6\\text{ square units}\\)",
+                "\\(12\\text{ square units}\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Calculate the length of the parallel side \\(AD\\) using points \\(A(0, -1)\\) and \\(D(3, 5)\\).",
+                  "work": "\\[d_{AD} = \\sqrt{(3 - 0)^2 + (5 - (-1))^2}\\]\n\\[= \\sqrt{3^2 + 6^2} = \\sqrt{9 + 36} = \\sqrt{45} = 3\\sqrt{5}\\]"
+                },
+                {
+                  "explain": "Calculate the area of the trapezium using Area = \\(\\frac{h}{2}(a + b)\\), where \\(h\\) is the perpendicular distance between parallel sides.",
+                  "work": "\\[\\text{Area} = \\frac{1}{2} \\times \\frac{4}{\\sqrt{5}} \\times (\\sqrt{5} + 3\\sqrt{5})\\]\n\\[= \\frac{2}{\\sqrt{5}} \\times 4\\sqrt{5}\\]\n\\[= 8\\text{ square units}\\]"
+                }
+              ],
+              "timeLimit": 90
+            }
+          ],
+          "solution": "Refer to solution steps.",
+          "meta": {
+            "tags": [
+              "y10",
+              "coordinate-geometry",
+              "trapezium",
+              "perpendicular-distance",
+              "area"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-10a",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Triangle \\(ADE\\) is similar to triangle \\(ABC\\). \\(AE\\) is \\(2\\text{cm}\\) and \\(EC\\) is \\(3\\text{cm}\\). Triangle \\(ADE\\) has an area of \\(16\\text{cm}^2\\). Find the area of the triangle \\(ABC\\).",
+          "figure": {
+            "svg": "fig:9c501f7362"
+          },
+          "options": [
+            "\\(100\\text{ cm}^2\\)",
+            "\\(40\\text{ cm}^2\\)",
+            "\\(64\\text{ cm}^2\\)",
+            "\\(144\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "solution": "100 \\text{ cm}^2",
+          "steps": [
+            {
+              "explain": "Find the ratio of corresponding side lengths for the similar triangles \\(ADE\\) and \\(ABC\\).",
+              "work": "\\[\\text{Length ratio } = AE : AC\\]\n\\[AC = AE + EC = 2 + 3 = 5\\]\n\\[\\text{Length ratio } = 2 : 5\\]"
+            },
+            {
+              "explain": "The ratio of the areas of similar figures is the square of the ratio of their corresponding lengths.",
+              "work": "\\[\\text{Area ratio } = 2^2 : 5^2 = 4 : 25\\]"
+            },
+            {
+              "explain": "Set up a proportion to find the area of triangle \\(ABC\\).",
+              "work": "\\[\\frac{\\text{Area of } ADE}{\\text{Area of } ABC} = \\frac{4}{25}\\]\n\\[\\frac{16}{\\text{Area of } ABC} = \\frac{4}{25}\\]"
+            },
+            {
+              "explain": "Solve for the area of triangle \\(ABC\\).",
+              "work": "\\[\\text{Area of } ABC = \\frac{16 \\times 25}{4} = 4 \\times 25 = 100\\text{ cm}^2\\]"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "geometry",
+              "similar-triangles",
+              "area-ratios"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-10b",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The first four terms of a geometric sequence are \\(6000, t_2, 8640, -10368\\).\nWhat is the value of \\(t_2\\)?",
+          "options": [
+            "\\(-7320\\)",
+            "\\(-7200\\)",
+            "\\(7200\\)",
+            "\\(7320\\)"
+          ],
+          "answer": 1,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "For a geometric sequence, the common ratio \\(r\\) is constant between consecutive terms.",
+              "work": "\\[r = \\frac{t_4}{t_3} = \\frac{-10368}{8640}\\]"
+            },
+            {
+              "explain": "Calculate the common ratio.",
+              "work": "\\[r = -1.2\\]"
+            },
+            {
+              "explain": "Multiply the first term by \\(r\\) to find \\(t_2\\).",
+              "work": "\\[t_2 = 6000 \\times (-1.2)\\]\n\\[t_2 = -7200\\]"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "sequences-and-series",
+              "geometric-sequence"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the coefficient of \\(x^2\\) in the expansion of \\((1 - x)^4\\)?",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(-6\\)",
+            "\\(6\\)"
+          ],
+          "answer": 3,
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Use the binomial theorem to find the general term in the expansion of \\((a + b)^n\\): \\(T_{k+1} = \\binom{n}{k} a^{n-k} b^k\\).",
+              "work": "Here, \\(a = 1\\), \\(b = -x\\), and \\(n = 4\\)."
+            },
+            {
+              "explain": "We want the term with \\(x^2\\), so we set \\(k = 2\\).",
+              "work": "\\[T_3 = \\binom{4}{2} (1)^{4-2} (-x)^2\\]"
+            },
+            {
+              "explain": "Evaluate the binomial coefficient and simplify.",
+              "work": "\\[T_3 = 6 \\times 1 \\times x^2\\]\n\\[= 6x^2\\]"
+            },
+            {
+              "explain": "The coefficient is the constant part of the term.",
+              "work": "Coefficient = \\(6\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "binomial-theorem"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q16",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first 50 terms of the arithmetic series \\(3 + 7 + 11 + \\dots\\)",
+          "options": [
+            "5050",
+            "5000",
+            "4950",
+            "5150"
+          ],
+          "answer": 0,
+          "solution": "5050",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a\\) and the common difference \\(d\\) of the arithmetic series.",
+              "work": "\\[a = 3\\]\n\\[d = 7 - 3 = 4\\]"
+            },
+            {
+              "explain": "Use the arithmetic series sum formula: \\(S_n = \\frac{n}{2}[2a + (n-1)d]\\).",
+              "work": "Substitute \\(n = 50\\), \\(a = 3\\), and \\(d = 4\\)."
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\[S_{50} = \\frac{50}{2}[2(3) + (50-1)(4)]\\]\n\\[= 25[6 + 49(4)]\\]\n\\[= 25[6 + 196]\\]\n\\[= 25 \\times 202\\]\n\\[= 5050\\]"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "tags": [
+              "y10",
+              "sequences-and-series",
+              "arithmetic-series"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the limiting sum of the geometric series \\(\\frac{3}{4} + \\frac{3}{10} + \\frac{3}{25} + \\dots\\)",
+          "options": [
+            "\\(\\frac{5}{4}\\)",
+            "\\(\\frac{3}{2}\\)",
+            "\\(\\frac{4}{5}\\)",
+            "\\(\\frac{5}{3}\\)"
+          ],
+          "answer": 0,
+          "solution": "\\frac{5}{4} \\text{ or } 1.25",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a\\) and find the common ratio \\(r\\).",
+              "work": "\\[a = \\frac{3}{4}\\]\n\\[r = \\frac{3/10}{3/4} = \\frac{3}{10} \\times \\frac{4}{3} = \\frac{4}{10} = \\frac{2}{5}\\]"
+            },
+            {
+              "explain": "Use the limiting sum formula for a geometric series: \\(S_\\infty = \\frac{a}{1 - r}\\).",
+              "work": "Substitute \\(a = \\frac{3}{4}\\) and \\(r = \\frac{2}{5}\\)."
+            },
+            {
+              "explain": "Calculate the limiting sum.",
+              "work": "\\[S_\\infty = \\frac{\\frac{3}{4}}{1 - \\frac{2}{5}}\\]\n\\[= \\frac{\\frac{3}{4}}{\\frac{3}{5}}\\]\n\\[= \\frac{3}{4} \\times \\frac{5}{3}\\]\n\\[= \\frac{5}{4} \\quad (\\text{or } 1.25)\\]"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "sequences-and-series",
+              "geometric-series",
+              "limiting-sum"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A sum of $9500 is invested at the beginning of each year in a superannuation fund. If interest is paid at \\(6\\%\\) p.a., how much money will be available at the end of 40 years?",
+          "options": [
+            "\\,558,452.99",
+            "\\,470,238.67",
+            "\\,651,960.17",
+            "\\,000.00"
+          ],
+          "answer": 0,
+          "solution": "\\$1558452.99",
+          "steps": [
+            {
+              "explain": "Set up the expression for the value of each investment at the end of 40 years.",
+              "work": "Let \\(A_n\\) be the amount at the end of \\(n\\) years.\nInterest rate \\(r = 1.06\\).\nThe first deposit earns interest for 40 years: \\(9500 \\times 1.06^{40}\\).\nThe second deposit earns interest for 39 years: \\(9500 \\times 1.06^{39}\\).\n...\nThe final deposit earns interest for 1 year: \\(9500 \\times 1.06^1\\)."
+            },
+            {
+              "explain": "Write the total amount as a geometric series.",
+              "work": "\\[A_{40} = 9500(1.06^1 + 1.06^2 + \\dots + 1.06^{40})\\]"
+            },
+            {
+              "explain": "Identify the parameters of the geometric series inside the brackets.",
+              "work": "First term \\(a = 1.06\\)\nCommon ratio \\(r = 1.06\\)\nNumber of terms \\(n = 40\\)"
+            },
+            {
+              "explain": "Apply the sum of a geometric series formula: \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\).",
+              "work": "\\[S_{40} = \\frac{1.06(1.06^{40} - 1)}{1.06 - 1} = \\frac{1.06(1.06^{40} - 1)}{0.06}\\]"
+            },
+            {
+              "explain": "Calculate the total amount.",
+              "work": "\\[A_{40} = 9500 \\times \\frac{1.06(1.06^{40} - 1)}{0.06}\\]\n\\[A_{40} \\approx 1558452.994\\]"
+            },
+            {
+              "explain": "Round to the nearest cent.",
+              "work": "Total = \\$1,558,452.99"
+            }
+          ],
+          "meta": {
+            "tags": [
+              "y10",
+              "sequences-and-series",
+              "financial-mathematics",
+              "superannuation"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-12a",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find all possible values of \\(x\\) for \\(\\sqrt{3}\\tan x = -1\\) for \\(0^\\circ \\le x \\le 360^\\circ\\).",
+          "options": [
+            "\\(x = 150^\\circ, 330^\\circ\\)",
+            "\\(x = 30^\\circ, 210^\\circ\\)",
+            "\\(x = 120^\\circ, 300^\\circ\\)",
+            "\\(x = 60^\\circ, 240^\\circ\\)"
+          ],
+          "answer": 0,
+          "solution": "x = 150^\\circ, 330^\\circ",
+          "steps": [
+            {
+              "explain": "Rearrange the equation to isolate \\(\\tan x\\).",
+              "work": "\\[\\tan x = -\\frac{1}{\\sqrt{3}}\\]"
+            },
+            {
+              "explain": "Determine the related acute angle (reference angle) in the first quadrant.",
+              "work": "\\[\\text{Related angle} = \\tan^{-1}\\left(\\frac{1}{\\sqrt{3}}\\right) = 30^\\circ\\]"
+            },
+            {
+              "explain": "Identify the quadrants where \\(\\tan x\\) is negative (ASTC rule).",
+              "work": "Tangent is negative in the 2nd and 4th quadrants."
+            },
+            {
+              "explain": "Calculate the angles in those quadrants.",
+              "work": "2nd Quadrant: \\(x = 180^\\circ - 30^\\circ = 150^\\circ\\)\n4th Quadrant: \\(x = 360^\\circ - 30^\\circ = 330^\\circ\\)"
+            },
+            {
+              "explain": "State the final solutions.",
+              "work": "Therefore, \\(x = 150^\\circ, 330^\\circ\\)."
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "trigonometry",
+              "trigonometric-equations"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value(s) of \\(\\theta\\) in the diagram. Give your answer to the nearest degree.",
+          "figure": {
+            "svg": "fig:7c4bbc1431"
+          },
+          "options": [
+            "\\(73^\\circ, 107^\\circ\\)",
+            "\\(73^\\circ\\)",
+            "\\(107^\\circ\\)",
+            "\\(73^\\circ, 253^\\circ\\)"
+          ],
+          "answer": 0,
+          "solution": "\\theta = 73^\\circ \\text{ or } \\theta = 107^\\circ",
+          "steps": [
+            {
+              "explain": "Use the Sine Rule to find the unknown angle \\(\\theta\\).",
+              "work": "\\[\\frac{\\sin \\theta}{10} = \\frac{\\sin 35^\\circ}{6}\\]"
+            },
+            {
+              "explain": "Solve for \\(\\sin \\theta\\).",
+              "work": "\\[\\sin \\theta = \\frac{10 \\sin 35^\\circ}{6}\\]\n\\[\\sin \\theta \\approx 0.95596\\dots\\]"
+            },
+            {
+              "explain": "Calculate the principal angle.",
+              "work": "\\[\\theta = \\sin^{-1}(0.95596\\dots)\\]\n\\[\\theta \\approx 72.93^\\circ\\]\n\\[\\theta \\approx 73^\\circ \\text{ (nearest degree)}\\]"
+            },
+            {
+              "explain": "Consider the ambiguous case for the sine rule, as \\(\\sin \\theta\\) is positive in both the 1st and 2nd quadrants. The angle \\(\\theta\\) could be obtuse.",
+              "work": "Possible obtuse angle = \\(180^\\circ - 73^\\circ = 107^\\circ\\)"
+            },
+            {
+              "explain": "Check if the obtuse angle forms a valid triangle with the given \\(35^\\circ\\) angle.",
+              "work": "\\[107^\\circ + 35^\\circ = 142^\\circ < 180^\\circ\\]\nSo, both angles are possible."
+            },
+            {
+              "explain": "State the final solutions.",
+              "work": "Therefore, \\(\\theta = 73^\\circ\\) or \\(107^\\circ\\)."
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "trigonometry",
+              "sine-rule",
+              "ambiguous-case"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-13a",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following best describes the given quadrilateral?",
+          "figure": {
+            "svg": "fig:988e42bc57"
+          },
+          "options": [
+            "Parallelogram",
+            "Rhombus",
+            "Rectangle",
+            "Square"
+          ],
+          "answer": 1,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Observe the properties marked on the diagonals of the quadrilateral in the diagram.",
+              "work": "The tick marks show that the diagonals bisect each other (cut each other in half)."
+            },
+            {
+              "explain": "A quadrilateral whose diagonals bisect each other is a parallelogram.",
+              "work": "Because the diagonals intersect at right angles (\\(90^\\circ\\)), it is a special parallelogram."
+            },
+            {
+              "explain": "A parallelogram with perpendicular diagonals is a rhombus.",
+              "work": "Therefore, the best description is a Rhombus."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "tags": [
+              "y10",
+              "geometry",
+              "quadrilaterals"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The points \\(A\\), \\(B\\) and \\(P\\) lie on a circle centred at \\(O\\). The tangents to the circle at \\(A\\) and \\(B\\) meet at the point \\(T\\), and \\(\\angle ATB = \\theta\\).\n\nWhat is \\(\\angle APB\\) in terms of \\(\\theta\\)?",
+          "figure": {
+            "svg": "fig:0f2026a9a0"
+          },
+          "options": [
+            "\\(\\frac{\\theta}{2}\\)",
+            "\\(90^\\circ - \\frac{\\theta}{2}\\)",
+            "\\(\\theta\\)",
+            "\\(180^\\circ - \\theta\\)"
+          ],
+          "answer": 1,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "The angle between a tangent and the radius drawn to the point of contact is \\(90^\\circ\\).",
+              "work": "In quadrilateral \\(OATB\\), \\(\\angle OAT = 90^\\circ\\) and \\(\\angle OBT = 90^\\circ\\)."
+            },
+            {
+              "explain": "The sum of angles in a quadrilateral is \\(360^\\circ\\).",
+              "work": "\\[\\angle AOB + \\angle ATB + 90^\\circ + 90^\\circ = 360^\\circ\\]\n\\[\\angle AOB + \\theta + 180^\\circ = 360^\\circ\\]\n\\[\\angle AOB = 180^\\circ - \\theta\\]"
+            },
+            {
+              "explain": "The angle subtended by an arc at the centre is double the angle subtended by it at any remaining part of the circle.",
+              "work": "\\[\\angle APB = \\frac{1}{2} \\angle AOB\\]"
+            },
+            {
+              "explain": "Substitute the expression for \\(\\angle AOB\\).",
+              "work": "\\[\\angle APB = \\frac{1}{2}(180^\\circ - \\theta)\\]\n\\[= 90^\\circ - \\frac{\\theta}{2}\\]"
+            }
+          ],
+          "meta": {
+            "tags": [
+              "y10",
+              "geometry",
+              "circle-geometry"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Two secants from the point \\(P\\) intersect a circle as shown in the diagram.\nWhat is the value of \\(x\\)? Give reasons for your answer.",
+          "figure": {
+            "svg": "fig:371556eaa2"
+          },
+          "options": [
+            "5",
+            "6",
+            "7",
+            "8"
+          ],
+          "answer": 0,
+          "solution": "x = 5",
+          "steps": [
+            {
+              "explain": "Apply the intersecting secants theorem.",
+              "work": "The product of the whole secant segment and its external part is equal for both secants from an external point.\n\\[\\text{External}_1 \\times \\text{Whole}_1 = \\text{External}_2 \\times \\text{Whole}_2\\]"
+            },
+            {
+              "explain": "Set up the equation using the given lengths.",
+              "work": "For the top secant: External = \\(x\\), Whole = \\(x + 3\\).\nFor the bottom secant: External = \\(4\\), Whole = \\(4 + 6 = 10\\).\n\\[x(x + 3) = 4(4 + 6)\\]"
+            },
+            {
+              "explain": "Expand and rearrange the equation into standard quadratic form.",
+              "work": "\\[x^2 + 3x = 4(10)\\]\n\\[x^2 + 3x = 40\\]\n\\[x^2 + 3x - 40 = 0\\]"
+            },
+            {
+              "explain": "Factorise the quadratic equation.",
+              "work": "We need factors of \\(-40\\) that add to \\(3\\): \\(8\\) and \\(-5\\).\n\\[(x + 8)(x - 5) = 0\\]"
+            },
+            {
+              "explain": "Solve for \\(x\\) and reject any invalid solutions.",
+              "work": "\\[x = -8 \\quad \\text{or} \\quad x = 5\\]\nSince length \\(x\\) must be positive (\\(x > 0\\)), we reject \\(-8\\).\n\\[x = 5\\]"
+            }
+          ],
+          "meta": {
+            "tags": [
+              "y10",
+              "geometry",
+              "circle-geometry",
+              "secants"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-14a",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify:\n\\[\\frac{25^{3n} \\times 5^{n-1}}{5^{2n+1}}\\]",
+          "options": [
+            "\\(5^{5n-2}\\)",
+            "\\(5^{4n-2}\\)",
+            "\\(5^{5n}\\)",
+            "\\(5^{4n}\\)"
+          ],
+          "answer": 0,
+          "solution": "5^{5n-2}",
+          "steps": [
+            {
+              "explain": "Express all terms with a common base of \\(5\\). We know that \\(25 = 5^2\\).",
+              "work": "\\[25^{3n} = (5^2)^{3n} = 5^{6n}\\]"
+            },
+            {
+              "explain": "Substitute this back into the expression.",
+              "work": "\\[\\frac{5^{6n} \\times 5^{n-1}}{5^{2n+1}}\\]"
+            },
+            {
+              "explain": "Use index laws for multiplication in the numerator: \\(a^m \\times a^n = a^{m+n}\\).",
+              "work": "\\[\\frac{5^{6n + (n-1)}}{5^{2n+1}}\\]\n\\[= \\frac{5^{7n-1}}{5^{2n+1}}\\]"
+            },
+            {
+              "explain": "Use index laws for division: \\(\\frac{a^m}{a^n} = a^{m-n}\\).",
+              "work": "\\[= 5^{(7n-1) - (2n+1)}\\]\n\\[= 5^{7n - 1 - 2n - 1}\\]\n\\[= 5^{5n-2}\\]"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "indices",
+              "exponents"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-15a",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following Venn diagrams illustrate \\(A \\cap \\bar{B}\\)?",
+          "options": [
+            {
+              "text": "A",
+              "figure": {
+                "svg": "fig:6ad88ebe92"
+              }
+            },
+            {
+              "text": "B",
+              "figure": {
+                "svg": "fig:d899c3aea1"
+              }
+            },
+            {
+              "text": "C",
+              "figure": {
+                "svg": "fig:34228fe008"
+              }
+            },
+            {
+              "text": "D",
+              "figure": {
+                "svg": "fig:9e1ef7753a"
+              }
+            }
+          ],
+          "answer": 2,
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "\\(A \\cap \\bar{B}\\) represents the region that is in \\(A\\) AND NOT in \\(B\\).",
+              "work": "This corresponds to the area of circle \\(A\\) excluding the intersection with circle \\(B\\)."
+            },
+            {
+              "explain": "Looking at the options, C has only the left part of circle \\(A\\) shaded.",
+              "work": "Therefore, diagram C illustrates \\(A \\cap \\bar{B}\\)."
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "tags": [
+              "y10",
+              "probability",
+              "venn-diagrams"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A family of 6 is seated randomly around a circular table. In how many ways can the two youngest members sit together?",
+          "options": [
+            "\\(4!\\)",
+            "\\(4! 2!\\)",
+            "\\(5!\\)",
+            "\\(5! 2!\\)"
+          ],
+          "answer": 1,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Treat the two youngest members as a single combined unit. This leaves 5 units to arrange around the circular table.",
+              "work": "Number of units = \\(4\\) (other members) \\(+\\ 1\\) (youngest pair) = \\(5\\)"
+            },
+            {
+              "explain": "The number of ways to arrange \\(n\\) units in a circle is \\((n - 1)!\\).",
+              "work": "Ways to arrange 5 units = \\((5 - 1)! = 4!\\)"
+            },
+            {
+              "explain": "The two youngest members can swap places with each other within their unit.",
+              "work": "Ways to arrange the two youngest = \\(2!\\)"
+            },
+            {
+              "explain": "Multiply the possibilities together.",
+              "work": "Total ways = \\(4! \\times 2!\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "probability",
+              "permutations",
+              "circular-arrangements"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q15a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two marbles are selected at random from a bag containing 4 red and 7 yellow marbles.\n\nWhat is the probability that the two marbles will be of the same colour if the marbles are drawn without replacement?",
+          "options": [
+            "\\(\\frac{27}{55}\\)",
+            "\\(\\frac{27}{121}\\)",
+            "\\(\\frac{28}{55}\\)",
+            "\\(\\frac{14}{55}\\)"
+          ],
+          "answer": 0,
+          "solution": "\\frac{27}{55}",
+          "steps": [
+            {
+              "explain": "Determine the total number of marbles initially.",
+              "work": "Total marbles = \\(4\\) (red) \\(+\\ 7\\) (yellow) = \\(11\\)"
+            },
+            {
+              "explain": "Calculate the probability of drawing two red marbles (\\(RR\\)).",
+              "work": "\\[P(RR) = P(R_1) \\times P(R_2 | R_1)\\]\n\\[= \\frac{4}{11} \\times \\frac{3}{10} = \\frac{12}{110}\\]"
+            },
+            {
+              "explain": "Calculate the probability of drawing two yellow marbles (\\(YY\\)).",
+              "work": "\\[P(YY) = P(Y_1) \\times P(Y_2 | Y_1)\\]\n\\[= \\frac{7}{11} \\times \\frac{6}{10} = \\frac{42}{110}\\]"
+            },
+            {
+              "explain": "Add the probabilities of these mutually exclusive events to find the total probability of drawing two marbles of the same colour.",
+              "work": "\\[P(\\text{Same Colour}) = P(RR) + P(YY)\\]\n\\[= \\frac{12}{110} + \\frac{42}{110}\\]\n\\[= \\frac{54}{110}\\]"
+            },
+            {
+              "explain": "Simplify the fraction.",
+              "work": "\\[= \\frac{27}{55}\\]"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "probability",
+              "tree-diagrams",
+              "without-replacement"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q15b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Two marbles are selected at random from a bag containing 4 red and 7 yellow marbles.\n\nWhat is the probability that the two marbles will not be of the same colour if the marbles are drawn without replacement?",
+          "options": [
+            "\\(\\frac{28}{55}\\)",
+            "\\(\\frac{27}{55}\\)",
+            "\\(\\frac{28}{121}\\)",
+            "\\(\\frac{27}{121}\\)"
+          ],
+          "answer": 0,
+          "solution": "\\frac{28}{55}",
+          "steps": [
+            {
+              "explain": "The event of drawing two marbles that are not the same colour is the complement of drawing two marbles of the same colour.",
+              "work": "Using the result from the previous question, \\(P(\\text{Same Colour}) = \\frac{27}{55}\\)."
+            },
+            {
+              "explain": "Use the complement rule: \\(P(\\text{Not Same}) = 1 - P(\\text{Same Colour})\\).",
+              "work": "\\[P(\\text{Not Same}) = 1 - \\frac{27}{55}\\]\n\\[= \\frac{55}{55} - \\frac{27}{55}\\]\n\\[= \\frac{28}{55}\\]"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "tags": [
+              "y10",
+              "probability",
+              "complementary-events"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q24a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Reuben needs to arrange 4 English books, 3 History books and 2 Geography books on a shelf.\n\nHow many arrangements are there if there are no restrictions?",
+          "options": [
+            "362,880",
+            "40,320",
+            "3,024",
+            "1728"
+          ],
+          "answer": 0,
+          "solution": "362,880",
+          "steps": [
+            {
+              "explain": "Find the total number of books to be arranged.",
+              "work": "Total books = 4 (English) + 3 (History) + 2 (Geography) = 9 books."
+            },
+            {
+              "explain": "Calculate the total number of unconstrained linear arrangements.",
+              "work": "Number of arrangements = \\(9!\\)\n\\[9! = 362,880\\]"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "tags": [
+              "y10",
+              "probability",
+              "permutations",
+              "arrangements"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q24b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Reuben needs to arrange 4 English books, 3 History books and 2 Geography books on a shelf.\n\nHow many arrangements are there if the books of each subject are kept together?",
+          "options": [
+            "1728",
+            "24",
+            "144",
+            "362,880"
+          ],
+          "answer": 0,
+          "solution": "1728",
+          "steps": [
+            {
+              "explain": "Treat each subject's group of books as a single unit. There are 3 subjects (English, History, Geography).",
+              "work": "Number of ways to arrange the 3 subject groups = \\(3!\\)"
+            },
+            {
+              "explain": "Calculate the number of ways to arrange the books within each subject's group.",
+              "work": "English books = \\(4!\\) ways\nHistory books = \\(3!\\) ways\nGeography books = \\(2!\\) ways"
+            },
+            {
+              "explain": "Multiply all the possibilities together.",
+              "work": "Total arrangements = \\(3! \\times 4! \\times 3! \\times 2!\\)\n\\[= 6 \\times 24 \\times 6 \\times 2\\]\n\\[= 1728\\]"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "probability",
+              "permutations",
+              "arrangements"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-17e",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which diagram best represents the graph \\(y = -x(1 - x)^2(x + 1)^3\\)?",
+          "options": [
+            {
+              "text": "A",
+              "figure": {
+                "svg": "fig:474bc07b4e"
+              }
+            },
+            {
+              "text": "B",
+              "figure": {
+                "svg": "fig:cf359fd0da"
+              }
+            },
+            {
+              "text": "C",
+              "figure": {
+                "svg": "fig:a7c1cefe21"
+              }
+            },
+            {
+              "text": "D",
+              "figure": {
+                "svg": "fig:102e056080"
+              }
+            }
+          ],
+          "answer": 2,
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Find the roots of the polynomial and their multiplicities.",
+              "work": "Roots: \\(x = 0\\) (single), \\(x = 1\\) (double), \\(x = -1\\) (triple)."
+            },
+            {
+              "explain": "Determine the behaviour of the curve at each root.",
+              "work": "At \\(x = 0\\): crosses the axis directly.\nAt \\(x = 1\\): touches the axis and turns (turning point).\nAt \\(x = -1\\): crosses the axis with an inflection (horizontal point of inflection)."
+            },
+            {
+              "explain": "Determine the leading term to find the end behaviour.",
+              "work": "Leading term \\(\\approx (-x)(-x)^2(x)^3 = -x \\cdot x^2 \\cdot x^3 = -x^6\\)."
+            },
+            {
+              "explain": "Since the leading term has an even power and negative coefficient, both ends of the graph will approach \\(-\\infty\\).",
+              "work": "As \\(x \\to \\infty, y \\to -\\infty\\).\nAs \\(x \\to -\\infty, y \\to -\\infty\\)."
+            },
+            {
+              "explain": "Combining these features:\n- Ends point downwards.\n- Horizontal inflection at \\(x = -1\\).\n- Crosses at \\(x = 0\\).\n- Touches at \\(x = 1\\).",
+              "work": "Graph C is the only one that displays all these characteristics correctly."
+            }
+          ],
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "polynomials",
+              "graphing"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve \\(x^3 + 2x^2 - 5x - 6 = 0\\).",
+          "options": [
+            "\\(x = -3, x = -1, x = 2\\)",
+            "\\(x = -3, x = 1, x = 2\\)",
+            "\\(x = -2, x = -1, x = 3\\)",
+            "\\(x = -2, x = 1, x = 3\\)"
+          ],
+          "answer": 0,
+          "solution": "-3, -1, 2",
+          "steps": [
+            {
+              "explain": "Use the Factor Theorem to find the first root. Test factors of the constant term (-6).",
+              "work": "Try \\(x = 1\\): \\(1^3 + 2(1)^2 - 5(1) - 6 = 1 + 2 - 5 - 6 = -8 \\ne 0\\)\nTry \\(x = -1\\): \\((-1)^3 + 2(-1)^2 - 5(-1) - 6 = -1 + 2 + 5 - 6 = 0\\)"
+            },
+            {
+              "explain": "Since \\(x = -1\\) is a root, \\((x + 1)\\) is a factor. Perform polynomial division to find the remaining quadratic factor.",
+              "work": "\\[\\frac{x^3 + 2x^2 - 5x - 6}{x + 1} = x^2 + x - 6\\]"
+            },
+            {
+              "explain": "Factorise the resulting quadratic equation: \\(x^2 + x - 6 = 0\\).",
+              "work": "We need factors of -6 that add to 1: 3 and -2.\n\\[(x + 3)(x - 2) = 0\\]"
+            },
+            {
+              "explain": "State the fully factorised polynomial and solve for \\(x\\).",
+              "work": "\\[(x + 1)(x + 3)(x - 2) = 0\\]\n\\[x = -1, \\quad x = -3, \\quad x = 2\\]"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "polynomials",
+              "factor-theorem"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q28a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Let \\(P(x) = (x+2)(x-1)Q(x) + a(x+2) + b\\), where \\(Q(x)\\) is a polynomial and \\(a\\) and \\(b\\) are real numbers.\nWhen \\(P(x)\\) is divided by \\((x+2)\\) the remainder is \\(-11\\).\nWhen \\(P(x)\\) is divided by \\((x-1)\\) the remainder is \\(1\\).\n\nWhat is the value of \\(b\\)?",
+          "options": [
+            "\\(-11\\)",
+            "\\(1\\)",
+            "\\(12\\)",
+            "\\(-10\\)"
+          ],
+          "answer": 0,
+          "solution": "-11",
+          "steps": [
+            {
+              "explain": "Use the Remainder Theorem: if \\(P(x)\\) is divided by \\((x - c)\\), the remainder is \\(P(c)\\).",
+              "work": "When divided by \\((x + 2)\\), the remainder is \\(-11\\), so \\(P(-2) = -11\\)."
+            },
+            {
+              "explain": "Substitute \\(x = -2\\) into the expression for \\(P(x)\\).",
+              "work": "\\[P(-2) = (-2 + 2)(-2 - 1)Q(-2) + a(-2 + 2) + b\\]\n\\[P(-2) = (0) + a(0) + b\\]"
+            },
+            {
+              "explain": "Solve for \\(b\\).",
+              "work": "\\[b = -11\\]"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "polynomials",
+              "remainder-theorem"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q28b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let \\(P(x) = (x+2)(x-1)Q(x) + a(x+2) + b\\), where \\(Q(x)\\) is a polynomial and \\(a\\) and \\(b\\) are real numbers.\nWhen \\(P(x)\\) is divided by \\((x+2)\\) the remainder is \\(-11\\).\nWhen \\(P(x)\\) is divided by \\((x-1)\\) the remainder is \\(1\\).\n\nWhat is the remainder when \\(P(x)\\) is divided by \\((x+2)(x-1)\\)?",
+          "options": [
+            "\\(4x - 3\\)",
+            "\\(4x + 3\\)",
+            "\\(-4x - 3\\)",
+            "\\(3x - 4\\)"
+          ],
+          "answer": 0,
+          "solution": "4x - 3",
+          "steps": [
+            {
+              "explain": "Use the Remainder Theorem for the second condition.",
+              "work": "When divided by \\((x - 1)\\), the remainder is \\(1\\), so \\(P(1) = 1\\)."
+            },
+            {
+              "explain": "Substitute \\(x = 1\\) into the expression for \\(P(x)\\).",
+              "work": "\\[P(1) = (1 + 2)(1 - 1)Q(1) + a(1 + 2) + b\\]\n\\[P(1) = 0 + 3a + b\\]\n\\[3a + b = 1\\]"
+            },
+            {
+              "explain": "Substitute the value of \\(b\\) from the previous part (\\(b = -11\\)) to find \\(a\\).",
+              "work": "\\[3a - 11 = 1\\]\n\\[3a = 12 \\implies a = 4\\]"
+            },
+            {
+              "explain": "Identify the remainder expression when dividing by \\((x+2)(x-1)\\).",
+              "work": "The given form is \\(P(x) = \\text{Divisor} \\times \\text{Quotient} + \\text{Remainder}\\).\nHere, Divisor = \\((x+2)(x-1)\\), Quotient = \\(Q(x)\\), and Remainder = \\(a(x+2) + b\\)."
+            },
+            {
+              "explain": "Substitute the values of \\(a\\) and \\(b\\) into the remainder expression.",
+              "work": "\\[\\text{Remainder} = 4(x + 2) - 11\\]\n\\[= 4x + 8 - 11\\]\n\\[= 4x - 3\\]"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "algebra",
+              "polynomials",
+              "remainder-theorem"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-20a",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "baulko-y10-2020-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which equation best represents the following graph?",
+          "figure": {
+            "svg": "fig:2c80611e1b"
+          },
+          "options": [
+            "\\(y = -\\sqrt{4 - x}\\)",
+            "\\(y = -\\sqrt{x - 4}\\)",
+            "\\(x = -\\sqrt{y - 4}\\)",
+            "\\(x = -\\sqrt{4 - y}\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "The graph starts at \\(x = 4, y = 0\\) and extends to the left (\\(x \\le 4\\)) and downwards (\\(y \\le 0\\)).",
+              "work": "The domain is \\(x \\le 4\\), which implies the expression under the square root must be \\(4 - x\\)."
+            },
+            {
+              "explain": "The range is \\(y \\le 0\\), which corresponds to the negative square root.",
+              "work": "\\[y = -\\sqrt{4 - x}\\]"
+            },
+            {
+              "explain": "Check the \\(y\\)-intercept at \\(x = 0\\).",
+              "work": "\\[y = -\\sqrt{4 - 0} = -2\\]\nThis matches the visual representation on the graph."
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "functions",
+              "domain-range"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q21b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Hence, or otherwise, sketch \\(y = \\frac{2x - 3}{x + 1}\\). Show all intercepts and asymptotes.",
+          "answer": "",
+          "solution": "Model graph provided.",
+          "steps": [
+            {
+              "explain": "Identify the vertical asymptote by setting the denominator to zero.",
+              "work": "\\[x + 1 = 0 \\implies x = -1\\]\nVertical asymptote: \\(x = -1\\)"
+            },
+            {
+              "explain": "Identify the horizontal asymptote from the form \\(y = 2 - \\frac{5}{x+1}\\). As \\(x \\to \\pm\\infty\\), the fraction approaches 0.",
+              "work": "Horizontal asymptote: \\(y = 2\\)"
+            },
+            {
+              "explain": "Find the \\(y\\)-intercept by setting \\(x = 0\\).",
+              "work": "\\[y = \\frac{2(0) - 3}{0 + 1} = -3\\]\n\\(y\\)-intercept is at \\((0, -3)\\)."
+            },
+            {
+              "explain": "Find the \\(x\\)-intercept by setting \\(y = 0\\).",
+              "work": "\\[\\frac{2x - 3}{x + 1} = 0\\]\n\\[2x - 3 = 0 \\implies x = \\frac{3}{2}\\]\n\\(x\\)-intercept is at \\((\\frac{3}{2}, 0)\\)."
+            },
+            {
+              "explain": "Sketch the hyperbola showing the asymptotes and intercepts.",
+              "work": "See the model graph.",
+              "figure": {
+                "svg": "fig:310f8b65e5"
+              }
+            }
+          ],
+          "meta": {
+            "tags": [
+              "y10",
+              "functions",
+              "hyperbola",
+              "graphing",
+              "asymptotes"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        },
+        {
+          "id": "baulko-y10-2020-q26",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "State the range of the relation \\(x = 2 - \\sqrt{-y^2 + 4y}\\).",
+          "options": [
+            "\\(0 \\le y \\le 4\\)",
+            "\\(y \\le 0 \\text{ or } y \\ge 4\\)",
+            "\\(0 < y < 4\\)",
+            "\\(-4 \\le y \\le 0\\)"
+          ],
+          "answer": 0,
+          "solution": "0 \\le y \\le 4",
+          "steps": [
+            {
+              "explain": "The range of a relation is the set of all possible \\(y\\)-values.",
+              "work": "For the expression \\(\\sqrt{-y^2 + 4y}\\) to be defined, the term inside the square root must be non-negative."
+            },
+            {
+              "explain": "Set up the inequality.",
+              "work": "\\[-y^2 + 4y \\ge 0\\]"
+            },
+            {
+              "explain": "Solve the quadratic inequality by first factoring it.",
+              "work": "Multiply by -1 and flip the inequality sign:\n\\[y^2 - 4y \\le 0\\]\n\\[y(y - 4) \\le 0\\]"
+            },
+            {
+              "explain": "Find the roots and determine the interval.",
+              "work": "The roots are \\(y = 0\\) and \\(y = 4\\).\nThe inequality \\(y(y - 4) \\le 0\\) holds for values between the roots."
+            },
+            {
+              "explain": "State the final range.",
+              "work": "\\[0 \\le y \\le 4\\]"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "tags": [
+              "y10",
+              "functions",
+              "domain-range",
+              "relations"
+            ],
+            "examPaper": "baulko-y10-2020"
+          }
+        }
+      ]
+    }
+  ]
+}

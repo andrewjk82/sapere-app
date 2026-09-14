@@ -1,0 +1,224 @@
+{
+  "chapterId": "exam:year10ch13a",
+  "title": "",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "y10-13a",
+      "code": "13A",
+      "title": "Angles at the centre and the circumference",
+      "questions": [
+        {
+          "id": "y10-13a-q4i",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the values of \\(\\alpha\\) and \\(\\beta\\). Enter your answer as two numbers separated by a comma.",
+          "figure": {
+            "svg": "fig:2010f5788b",
+            "jsxGraph": {
+              "width": 300,
+              "height": 300,
+              "boundingbox": [
+                -6,
+                6,
+                6,
+                -6
+              ],
+              "boardOptions": {
+                "axis": false,
+                "keepaspectratio": true,
+                "showNavigation": false
+              },
+              "elements": [
+                {
+                  "type": "circle",
+                  "id": "c1",
+                  "center": "O",
+                  "radius": 5
+                },
+                {
+                  "type": "point",
+                  "id": "O",
+                  "coords": [
+                    0,
+                    0
+                  ],
+                  "name": "O",
+                  "color": "red",
+                  "label": {
+                    "offset": [
+                      8,
+                      8
+                    ]
+                  }
+                },
+                {
+                  "type": "point",
+                  "id": "R",
+                  "on": "c1",
+                  "angle": 0,
+                  "name": "R",
+                  "label": {
+                    "offset": [
+                      8,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "type": "point",
+                  "id": "Q",
+                  "on": "c1",
+                  "angle": 110,
+                  "name": "Q",
+                  "label": {
+                    "offset": [
+                      0,
+                      8
+                    ]
+                  }
+                },
+                {
+                  "type": "point",
+                  "id": "P",
+                  "on": "c1",
+                  "angle": 170,
+                  "name": "P",
+                  "label": {
+                    "offset": [
+                      -8,
+                      8
+                    ]
+                  }
+                },
+                {
+                  "type": "point",
+                  "id": "S",
+                  "on": "c1",
+                  "angle": 270,
+                  "name": "S",
+                  "label": {
+                    "offset": [
+                      0,
+                      -10
+                    ]
+                  }
+                },
+                {
+                  "type": "polygon",
+                  "points": [
+                    "P",
+                    "Q",
+                    "R",
+                    "S"
+                  ]
+                },
+                {
+                  "type": "segment",
+                  "from": "O",
+                  "to": "P",
+                  "dash": true
+                },
+                {
+                  "type": "segment",
+                  "from": "O",
+                  "to": "R",
+                  "dash": true
+                },
+                {
+                  "type": "angle",
+                  "points": [
+                    "P",
+                    "Q",
+                    "R"
+                  ],
+                  "name": "95°",
+                  "radius": 1.2,
+                  "label": {
+                    "offset": [
+                      0,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "type": "angle",
+                  "points": [
+                    "Q",
+                    "R",
+                    "O"
+                  ],
+                  "name": "35°",
+                  "radius": 1.8,
+                  "label": {
+                    "offset": [
+                      0,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "type": "angle",
+                  "points": [
+                    "R",
+                    "S",
+                    "P"
+                  ],
+                  "name": "α",
+                  "radius": 1,
+                  "label": {
+                    "offset": [
+                      0,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "type": "angle",
+                  "points": [
+                    "O",
+                    "P",
+                    "Q"
+                  ],
+                  "name": "β",
+                  "radius": 1.2,
+                  "label": {
+                    "offset": [
+                      0,
+                      0
+                    ]
+                  }
+                }
+              ]
+            },
+            "html": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>\n  <rect width='300' height='300' fill='#ffffff' />\n  <polygon points='41.67114716865713,130.89870045663767 112.37778423417645,46.63381171355006 260,150 149.99999999999997,260' fill='#f8fafc' stroke='#cbd5e1' stroke-width='1.5' stroke-linejoin='round' />\n  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />\n  <line x1='150' y1='150' x2='41.67114716865713' y2='130.89870045663767' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='5 5' />\n  <line x1='150' y1='150' x2='260' y2='150' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='5 5' />\n  <path d='M 95.4081913384518 66.85738501189107 A 26.4 26.4 0 0 0 134.00339820340582 61.77622963321769' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />\n  <text x='117.12893763098631' y='86.72240466755676' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>95°</text>\n  <path d='M 227.56157904615594 127.28637312049857 A 39.6 39.6 0 0 0 220.4 150' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />\n  <text x='212.79101093796277' y='139.11506292453848' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>35°</text>\n  <path d='M 165.55634918610403 244.44365081389594 A 22 22 0 0 0 135.8586725868961 243.14702225138248' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />\n  <text x='151.39582039569072' y='232.03045690938055' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>α</text>\n  <path d='M 67.67007184817942 135.48301234704462 A 26.4 26.4 0 0 0 58.640740064381774 110.67512715829666' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />\n  <text x='75.8759585652642' y='122.44916723958335' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>β</text>\n  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />\n  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>\n  <circle cx='260' cy='150' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='268' y='160' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>R</text>\n  <circle cx='112.37778423417645' cy='46.63381171355006' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='112.37778423417645' y='38.63381171355006' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>Q</text>\n  <circle cx='41.67114716865713' cy='130.89870045663767' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='33.67114716865713' y='122.89870045663767' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>P</text>\n  <circle cx='149.99999999999997' cy='260' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='149.99999999999997' y='270' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>S</text>\n</svg>"
+          },
+          "options": [
+            "\\(\\alpha = 85^\\circ, \\beta = 60^\\circ\\)",
+            "\\(\\alpha = 60^\\circ, \\beta = 85^\\circ\\)",
+            "\\(\\alpha = 95^\\circ, \\beta = 60^\\circ\\)",
+            "\\(\\alpha = 85^\\circ, \\beta = 35^\\circ\\)"
+          ],
+          "answer": 0,
+          "hint": "Use circle theorems: angle at centre, angle in a semicircle, isosceles triangles from radii.",
+          "solution": "Since \\(JL\\) and \\(KM\\) are perpendicular diameters, \\(\\triangle JOK\\) is a right isosceles triangle (\\(OJ = OK\\)).\n\\(\\alpha = \\angle OJK = (180^\\circ - 90^\\circ) / 2 = 45^\\circ\\).\nSimilarly, \\(\\beta = \\angle OKL = 45^\\circ\\).",
+          "steps": [
+            {
+              "explain": "Find $\\alpha$ using the properties of a cyclic quadrilateral.",
+              "work": "The points \\(P, Q, R, S\\) lie on the circle, forming a cyclic quadrilateral. Opposite interior angles sum to \\(180^\\circ\\).\n\n\\(\\alpha + \\angle PQR = 180^\\circ\\)\n\n\\(\\alpha + 95^\\circ = 180^\\circ\\)\n\n\\(\\alpha = 180^\\circ - 95^\\circ\\)\n\n\\(\\alpha = 85^\\circ\\)"
+            },
+            {
+              "explain": "Use the isosceles triangle $\\Delta OQR$ to find $\\angle OQR$.",
+              "work": "\\(\\Delta OQR\\) is isosceles because \\(OQ\\) and \\(OR\\) are radii. The base angles are equal.\n\n\\(\\angle OQR = \\angle QRO\\)\n\n\\(\\angle OQR = 35^\\circ\\)"
+            },
+            {
+              "explain": "Find $\\beta$ using the isosceles triangle $\\Delta OPQ$.",
+              "work": "The total angle \\(\\angle PQR = 95^\\circ\\). We know \\(\\angle OQR = 35^\\circ\\).\n\n\\(\\angle PQO = 95^\\circ - 35^\\circ = 60^\\circ\\)\n\n\\(\\Delta OPQ\\) is isosceles (\\(OP = OQ\\)), so the base angles are equal.\n\n\\(\\beta = \\angle PQO\\)\n\n\\(\\beta = 60^\\circ\\)"
+            }
+          ],
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

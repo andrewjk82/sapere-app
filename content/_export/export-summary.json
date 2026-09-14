@@ -1,0 +1,3152 @@
+{
+  "exportedAt": "2026-09-14T08:10:58.415Z",
+  "reads": 24723,
+  "chapters": {
+    "exam:abb-2020-ext1": {
+      "indexed": 64,
+      "exported": 64,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 64
+      },
+      "indexUpdatedAt": "2026-08-15T12:15:27.738Z"
+    },
+    "exam:abbotsleigh-2020": {
+      "indexed": 58,
+      "exported": 58,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 58
+      },
+      "indexUpdatedAt": "2026-08-16T01:25:39.994Z"
+    },
+    "exam:abbotsleigh2020": {
+      "indexed": 52,
+      "exported": 52,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 52
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:abbotsleigh2020ext1": {
+      "indexed": 31,
+      "exported": 31,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 31
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:abbotsleigh2020ext1similar": {
+      "indexed": 29,
+      "exported": 29,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 29
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:asc-2020": {
+      "indexed": 79,
+      "exported": 79,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 79
+      },
+      "indexUpdatedAt": "2026-08-16T06:12:07.684Z"
+    },
+    "exam:ascham2020": {
+      "indexed": 59,
+      "exported": 58,
+      "inactive": 1,
+      "byOrigin": {
+        "seed": 55,
+        "teacher": 3
+      },
+      "indexUpdatedAt": "2026-07-20T21:17:58.082Z"
+    },
+    "exam:bar-2020": {
+      "indexed": 96,
+      "exported": 96,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 96
+      },
+      "indexUpdatedAt": "2026-08-16T12:24:57.340Z"
+    },
+    "exam:barker2020": {
+      "indexed": 89,
+      "exported": 89,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 86,
+        "teacher": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:baulkham2020": {
+      "indexed": 82,
+      "exported": 82,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 82
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:baulko-2020": {
+      "indexed": 94,
+      "exported": 94,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 94
+      },
+      "indexUpdatedAt": "2026-08-15T23:15:38.082Z"
+    },
+    "exam:baulko-y10-2020": {
+      "indexed": 33,
+      "exported": 33,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 33
+      },
+      "indexUpdatedAt": "2026-08-29T07:27:19.459Z"
+    },
+    "exam:bbhs-2020": {
+      "indexed": 119,
+      "exported": 119,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 119
+      },
+      "indexUpdatedAt": "2026-08-16T10:09:00.952Z"
+    },
+    "exam:blacktownboys2020": {
+      "indexed": 14,
+      "exported": 14,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 14
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:blacktownboys2020similar": {
+      "indexed": 51,
+      "exported": 51,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 50,
+        "teacher": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:caringbah-2020": {
+      "indexed": 84,
+      "exported": 84,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 84
+      },
+      "indexUpdatedAt": "2026-08-15T22:47:34.126Z"
+    },
+    "exam:caringbah2020": {
+      "indexed": 12,
+      "exported": 12,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 12
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:caringbah2020similar": {
+      "indexed": 39,
+      "exported": 39,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 38,
+        "(none)": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:cherrybrooktech2020": {
+      "indexed": 36,
+      "exported": 36,
+      "inactive": 1,
+      "byOrigin": {
+        "seed": 36
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:cherrybrooktech2020similar": {
+      "indexed": 35,
+      "exported": 35,
+      "inactive": 1,
+      "byOrigin": {
+        "seed": 35
+      },
+      "indexUpdatedAt": "2026-07-09T09:22:41.616Z"
+    },
+    "exam:cra-2023": {
+      "indexed": 100,
+      "exported": 100,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 100
+      },
+      "indexUpdatedAt": "2026-08-15T23:11:13.129Z"
+    },
+    "exam:cranbrook2023": {
+      "indexed": 49,
+      "exported": 49,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 49
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:cranbrook2023similar": {
+      "indexed": 48,
+      "exported": 48,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 48
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:cths-2020": {
+      "indexed": 71,
+      "exported": 71,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 71
+      },
+      "indexUpdatedAt": "2026-08-15T23:01:00.348Z"
+    },
+    "exam:dane-2020": {
+      "indexed": 109,
+      "exported": 109,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 109
+      },
+      "indexUpdatedAt": "2026-08-16T06:12:07.763Z"
+    },
+    "exam:danebank2020": {
+      "indexed": 53,
+      "exported": 53,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 53
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:danebank2020similar": {
+      "indexed": 52,
+      "exported": 52,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 51,
+        "teacher": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:fortst-2020": {
+      "indexed": 109,
+      "exported": 109,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 109
+      },
+      "indexUpdatedAt": "2026-08-16T10:41:19.556Z"
+    },
+    "exam:fortst2020": {
+      "indexed": 54,
+      "exported": 54,
+      "inactive": 0,
+      "byOrigin": {
+        "teacher": 1,
+        "seed": 53
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:fortst2020similar": {
+      "indexed": 51,
+      "exported": 51,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 51
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:girr-2020": {
+      "indexed": 105,
+      "exported": 75,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 75
+      },
+      "indexUpdatedAt": "2026-08-15T23:11:13.007Z"
+    },
+    "exam:killara-1995": {
+      "indexed": 26,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-29T12:10:32.678Z"
+    },
+    "exam:surds": {
+      "indexed": 11,
+      "exported": 11,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3,
+        "(none)": 8
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:y7-practice-1": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-30T05:49:30.540Z"
+    },
+    "exam:year10ch1": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch11a": {
+      "indexed": 25,
+      "exported": 25,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 25
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch11c": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch11e": {
+      "indexed": 5,
+      "exported": 5,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 5
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch12a": {
+      "indexed": 28,
+      "exported": 28,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 28
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch12b": {
+      "indexed": 14,
+      "exported": 14,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 14
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch12c": {
+      "indexed": 14,
+      "exported": 14,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 5,
+        "teacher": 9
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch12c_app": {
+      "indexed": 7,
+      "exported": 7,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 7
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch12d": {
+      "indexed": 16,
+      "exported": 16,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 16
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch12e": {
+      "indexed": 15,
+      "exported": 15,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 15
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch12f": {
+      "indexed": 11,
+      "exported": 11,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 11
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch13a": {
+      "indexed": 31,
+      "exported": 31,
+      "inactive": 0,
+      "byOrigin": {
+        "teacher": 22,
+        "seed": 8,
+        "(none)": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch14c": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch15": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch15b": {
+      "indexed": 2,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch15e": {
+      "indexed": 10,
+      "exported": 10,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 10
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch16": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch16c": {
+      "indexed": 5,
+      "exported": 5,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 5
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch16d": {
+      "indexed": 4,
+      "exported": 4,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 4
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch1ahigh": {
+      "indexed": 82,
+      "exported": 82,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 82
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch1b": {
+      "indexed": 29,
+      "exported": 29,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 29
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch1bhigh": {
+      "indexed": 17,
+      "exported": 17,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 17
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch1c": {
+      "indexed": 44,
+      "exported": 44,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 44
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch1chigh": {
+      "indexed": 27,
+      "exported": 27,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 27
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch1d": {
+      "indexed": 40,
+      "exported": 40,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 40
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch1e": {
+      "indexed": 20,
+      "exported": 20,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 20
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch1f": {
+      "indexed": 12,
+      "exported": 12,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 12
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch2": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch2g": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch4g": {
+      "indexed": 4,
+      "exported": 4,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 4
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch5a": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch7a": {
+      "indexed": 8,
+      "exported": 8,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 8
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch8e": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1,
+        "teacher": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year10ch9": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year11ach2a": {
+      "indexed": 11,
+      "exported": 11,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 11
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:57.132Z"
+    },
+    "exam:year11ach2d": {
+      "indexed": 5,
+      "exported": 5,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 5
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:57.241Z"
+    },
+    "exam:year11ach2e": {
+      "indexed": 8,
+      "exported": 8,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 8
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:57.323Z"
+    },
+    "exam:year11ach4c": {
+      "indexed": 9,
+      "exported": 9,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 9
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:57.417Z"
+    },
+    "exam:year11ach4e": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:57.574Z"
+    },
+    "exam:year11ch1a": {
+      "indexed": 60,
+      "exported": 60,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 60
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:57.783Z"
+    },
+    "exam:year11ch1c": {
+      "indexed": 8,
+      "exported": 8,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 8
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:58.091Z"
+    },
+    "exam:year11ch1d": {
+      "indexed": 21,
+      "exported": 21,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 21
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:58.177Z"
+    },
+    "exam:year11ch1e": {
+      "indexed": 28,
+      "exported": 28,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 28
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:58.317Z"
+    },
+    "exam:year11ch1f": {
+      "indexed": 59,
+      "exported": 59,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 59
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:58.451Z"
+    },
+    "exam:year11ch3e": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:58.614Z"
+    },
+    "exam:year11ch3f": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:58.702Z"
+    },
+    "exam:year11ch3g": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:58.783Z"
+    },
+    "exam:year11ch3h": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:58.871Z"
+    },
+    "exam:year11ch3i": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:59.030Z"
+    },
+    "exam:year11ch3j": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:59.196Z"
+    },
+    "exam:year11ch4b": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:59.278Z"
+    },
+    "exam:year11ch4c": {
+      "indexed": 9,
+      "exported": 9,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 9
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:59.359Z"
+    },
+    "exam:year11ch4e": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:59.469Z"
+    },
+    "exam:year11ch5": {
+      "indexed": 161,
+      "exported": 161,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 161
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:59.737Z"
+    },
+    "exam:year11ch5i": {
+      "indexed": 50,
+      "exported": 50,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 50
+      },
+      "indexUpdatedAt": "2026-07-18T08:52:00.220Z"
+    },
+    "exam:year11ch6e": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3
+      },
+      "indexUpdatedAt": "2026-07-18T08:52:00.293Z"
+    },
+    "exam:year11ch6f": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-08-10T13:22:11.507Z"
+    },
+    "exam:year11ch6g": {
+      "indexed": 14,
+      "exported": 14,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 14
+      },
+      "indexUpdatedAt": "2026-07-18T08:52:00.467Z"
+    },
+    "exam:year11ch6h": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-18T08:52:00.546Z"
+    },
+    "exam:year11ch6k": {
+      "indexed": 8,
+      "exported": 8,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 8
+      },
+      "indexUpdatedAt": "2026-07-18T08:52:00.619Z"
+    },
+    "exam:year11ch7b": {
+      "indexed": 22,
+      "exported": 22,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 22
+      },
+      "indexUpdatedAt": "2026-07-18T08:52:00.791Z"
+    },
+    "exam:year11ch7c": {
+      "indexed": 6,
+      "exported": 6,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 6
+      },
+      "indexUpdatedAt": "2026-07-18T08:52:00.859Z"
+    },
+    "exam:year11ch7d": {
+      "indexed": 4,
+      "exported": 4,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 4
+      },
+      "indexUpdatedAt": "2026-07-18T08:52:00.933Z"
+    },
+    "exam:year11ext1ch1a": {
+      "indexed": 21,
+      "exported": 21,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 21
+      },
+      "indexUpdatedAt": "2026-07-18T08:52:01.239Z"
+    },
+    "exam:year11ext1ch1b": {
+      "indexed": 100,
+      "exported": 100,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 100
+      },
+      "indexUpdatedAt": "2026-07-18T08:52:01.353Z"
+    },
+    "exam:year11ext1ch1d": {
+      "indexed": 102,
+      "exported": 102,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 102
+      },
+      "indexUpdatedAt": "2026-07-18T08:52:01.503Z"
+    },
+    "exam:year12ach1": {
+      "indexed": 22,
+      "exported": 22,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 22
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach1c": {
+      "indexed": 29,
+      "exported": 29,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 29
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach1d": {
+      "indexed": 66,
+      "exported": 66,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 66
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach1e": {
+      "indexed": 62,
+      "exported": 62,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 62
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach1f": {
+      "indexed": 102,
+      "exported": 102,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 102
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach1g": {
+      "indexed": 25,
+      "exported": 25,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 25
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach1h": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach1j": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach3": {
+      "indexed": 8,
+      "exported": 8,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 8
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach3d": {
+      "indexed": 7,
+      "exported": 7,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 7
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach3e": {
+      "indexed": 7,
+      "exported": 7,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 7
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach3f": {
+      "indexed": 14,
+      "exported": 14,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 14
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach3g": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach6b": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach6c": {
+      "indexed": 4,
+      "exported": 4,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 4
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach8b": {
+      "indexed": 13,
+      "exported": 13,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 13
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach8c": {
+      "indexed": 21,
+      "exported": 21,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 21
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach8d": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach8e": {
+      "indexed": 13,
+      "exported": 13,
+      "inactive": 0,
+      "byOrigin": {
+        "teacher": 2,
+        "seed": 11
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ach8f": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ch5": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ch5b": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ch5k": {
+      "indexed": 5,
+      "exported": 5,
+      "inactive": 2,
+      "byOrigin": {
+        "seed": 5
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year12ch5l": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year5ch1": {
+      "indexed": 4,
+      "exported": 4,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 4
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year5ch2": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year6fractions": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year6wholenumber": {
+      "indexed": 82,
+      "exported": 82,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 82
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch1a": {
+      "indexed": 5,
+      "exported": 5,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 5
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch1b": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch1j": {
+      "indexed": 8,
+      "exported": 8,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 8
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch1k": {
+      "indexed": 41,
+      "exported": 41,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 41
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch23a": {
+      "indexed": 11,
+      "exported": 11,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 11
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch23b": {
+      "indexed": 37,
+      "exported": 37,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 37
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch23c": {
+      "indexed": 31,
+      "exported": 31,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 31
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch23d": {
+      "indexed": 30,
+      "exported": 30,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 30
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch23e": {
+      "indexed": 38,
+      "exported": 38,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 38
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch23f": {
+      "indexed": 34,
+      "exported": 34,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 34
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch23h": {
+      "indexed": 43,
+      "exported": 43,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 43
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch23i": {
+      "indexed": 12,
+      "exported": 12,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 12
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch23j": {
+      "indexed": 27,
+      "exported": 27,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 27
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch2c": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch2d": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch2f": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch2h": {
+      "indexed": 9,
+      "exported": 9,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 9
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch2i": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch2j": {
+      "indexed": 28,
+      "exported": 28,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 28
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch3b": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-12T04:50:48.474Z"
+    },
+    "exam:year7ch3c": {
+      "indexed": 56,
+      "exported": 56,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 56
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch3d": {
+      "indexed": 40,
+      "exported": 40,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 39,
+        "teacher": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch3e": {
+      "indexed": 40,
+      "exported": 40,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 40
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch3f": {
+      "indexed": 28,
+      "exported": 28,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 28
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch3g": {
+      "indexed": 32,
+      "exported": 32,
+      "inactive": 2,
+      "byOrigin": {
+        "seed": 32
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch3h": {
+      "indexed": 87,
+      "exported": 87,
+      "inactive": 3,
+      "byOrigin": {
+        "seed": 79,
+        "teacher": 8
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch6b": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year7ch6c": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch1": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch10": {
+      "indexed": 7,
+      "exported": 7,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 7
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch10g": {
+      "indexed": 24,
+      "exported": 24,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 22,
+        "teacher": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch11": {
+      "indexed": 38,
+      "exported": 38,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 38
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch11e": {
+      "indexed": 18,
+      "exported": 18,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 18
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch12": {
+      "indexed": 11,
+      "exported": 11,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 11
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch12g": {
+      "indexed": 16,
+      "exported": 16,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 16
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch13": {
+      "indexed": 16,
+      "exported": 16,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 16
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch13d": {
+      "indexed": 17,
+      "exported": 17,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 17
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch14": {
+      "indexed": 8,
+      "exported": 8,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 8
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch15": {
+      "indexed": 5,
+      "exported": 5,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 5
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch16": {
+      "indexed": 6,
+      "exported": 6,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 6
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch17": {
+      "indexed": 31,
+      "exported": 31,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 31
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch17e": {
+      "indexed": 14,
+      "exported": 14,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 14
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch18": {
+      "indexed": 10,
+      "exported": 10,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 10
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch18i": {
+      "indexed": 28,
+      "exported": 28,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 28
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch19": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch1b": {
+      "indexed": 100,
+      "exported": 100,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 100
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch2": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch3review": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch4review": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch5challenge": {
+      "indexed": 10,
+      "exported": 10,
+      "inactive": 2,
+      "byOrigin": {
+        "teacher": 6,
+        "seed": 4
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch5review": {
+      "indexed": 7,
+      "exported": 7,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 7
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year8ch8review": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch1": {
+      "indexed": 55,
+      "exported": 55,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 55
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch11": {
+      "indexed": 9,
+      "exported": 9,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 4,
+        "teacher": 5
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch11b": {
+      "indexed": 23,
+      "exported": 23,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 23
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch11c": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch11d": {
+      "indexed": 30,
+      "exported": 30,
+      "inactive": 0,
+      "byOrigin": {
+        "teacher": 4,
+        "seed": 26
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch11f": {
+      "indexed": 7,
+      "exported": 7,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 7
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch11h": {
+      "indexed": 9,
+      "exported": 9,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 9
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch11i": {
+      "indexed": 6,
+      "exported": 6,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 6
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch14g": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch1b": {
+      "indexed": 46,
+      "exported": 46,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 46
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch1e": {
+      "indexed": 8,
+      "exported": 8,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 8
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch1g": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch1h": {
+      "indexed": 3,
+      "exported": 3,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 3
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch4": {
+      "indexed": 56,
+      "exported": 56,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 56
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch5": {
+      "indexed": 7,
+      "exported": 7,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 7
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch5e": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch5g": {
+      "indexed": 9,
+      "exported": 9,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 9
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch5i": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch6": {
+      "indexed": 14,
+      "exported": 14,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 14
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "exam:year9ch7": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "y1-number": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 1
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "y10-1": {
+      "indexed": 953,
+      "exported": 953,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 953
+      },
+      "indexUpdatedAt": "2026-09-04T05:26:48.731Z"
+    },
+    "y10-10": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 2
+      },
+      "indexUpdatedAt": "2026-09-05T02:41:01.680Z"
+    },
+    "y10-11": {
+      "indexed": 254,
+      "exported": 254,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 237,
+        "(none)": 7,
+        "teacher": 10
+      },
+      "indexUpdatedAt": "2026-09-04T05:26:50.776Z"
+    },
+    "y10-12": {
+      "indexed": 240,
+      "exported": 240,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 17,
+        "teacher": 26,
+        "seed": 197
+      },
+      "indexUpdatedAt": "2026-09-05T12:21:45.622Z"
+    },
+    "y10-13": {
+      "indexed": 38,
+      "exported": 38,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 3,
+        "teacher": 22,
+        "seed": 13
+      },
+      "indexUpdatedAt": "2026-09-04T09:20:00.013Z"
+    },
+    "y10-14": {
+      "indexed": 221,
+      "exported": 201,
+      "inactive": 0,
+      "byOrigin": {
+        "teacher": 2,
+        "seed": 194,
+        "(none)": 5
+      },
+      "indexUpdatedAt": "2026-08-31T12:23:37.865Z"
+    },
+    "y10-15": {
+      "indexed": 77,
+      "exported": 77,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 7,
+        "teacher": 6,
+        "seed": 64
+      },
+      "indexUpdatedAt": "2026-09-05T12:21:47.250Z"
+    },
+    "y10-16": {
+      "indexed": 128,
+      "exported": 128,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 13,
+        "seed": 115
+      },
+      "indexUpdatedAt": "2026-09-04T05:26:52.175Z"
+    },
+    "y10-17": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 2
+      },
+      "indexUpdatedAt": "2026-09-04T05:26:53.401Z"
+    },
+    "y10-18": {
+      "indexed": 184,
+      "exported": 184,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 6,
+        "teacher": 15,
+        "seed": 163
+      },
+      "indexUpdatedAt": "2026-09-05T02:41:03.315Z"
+    },
+    "y10-19": {
+      "indexed": 5,
+      "exported": 5,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 5
+      },
+      "indexUpdatedAt": "2026-09-05T12:21:48.390Z"
+    },
+    "y10-2": {
+      "indexed": 585,
+      "exported": 585,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 573,
+        "teacher": 12
+      },
+      "indexUpdatedAt": "2026-09-05T12:21:39.135Z"
+    },
+    "y10-20": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 1
+      },
+      "indexUpdatedAt": "2026-09-04T00:09:30.503Z"
+    },
+    "y10-3": {
+      "indexed": 503,
+      "exported": 503,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 13,
+        "seed": 490
+      },
+      "indexUpdatedAt": "2026-09-05T12:21:40.738Z"
+    },
+    "y10-4": {
+      "indexed": 152,
+      "exported": 152,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 149,
+        "teacher": 3
+      },
+      "indexUpdatedAt": "2026-09-05T12:21:42.164Z"
+    },
+    "y10-5": {
+      "indexed": 145,
+      "exported": 145,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 143,
+        "teacher": 2
+      },
+      "indexUpdatedAt": "2026-09-04T05:26:47.898Z"
+    },
+    "y10-6": {
+      "indexed": 65,
+      "exported": 65,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 38,
+        "seed": 24,
+        "teacher": 3
+      },
+      "indexUpdatedAt": "2026-09-04T05:26:52.483Z"
+    },
+    "y10-6a": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-08-06T05:12:41.498Z"
+    },
+    "y10-7": {
+      "indexed": 97,
+      "exported": 97,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 10,
+        "teacher": 9,
+        "seed": 78
+      },
+      "indexUpdatedAt": "2026-09-05T12:21:43.709Z"
+    },
+    "y10-8": {
+      "indexed": 53,
+      "exported": 52,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 12,
+        "teacher": 15,
+        "seed": 25
+      },
+      "indexUpdatedAt": "2026-09-05T02:41:00.267Z"
+    },
+    "y10-9": {
+      "indexed": 105,
+      "exported": 105,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 10,
+        "seed": 91,
+        "teacher": 4
+      },
+      "indexUpdatedAt": "2026-09-04T05:26:46.588Z"
+    },
+    "y11a-1": {
+      "indexed": 1164,
+      "exported": 1164,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 997,
+        "seed": 151,
+        "teacher": 16
+      },
+      "indexUpdatedAt": "2026-09-04T05:55:27.153Z"
+    },
+    "y11a-11": {
+      "indexed": 101,
+      "exported": 101,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 96,
+        "(none)": 5
+      },
+      "indexUpdatedAt": "2026-09-02T10:22:15.280Z"
+    },
+    "y11a-12": {
+      "indexed": 29,
+      "exported": 29,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 19,
+        "(none)": 7,
+        "teacher": 3
+      },
+      "indexUpdatedAt": "2026-09-02T10:35:22.865Z"
+    },
+    "y11a-13": {
+      "indexed": 7,
+      "exported": 7,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 5,
+        "teacher": 2
+      },
+      "indexUpdatedAt": "2026-09-03T14:22:11.336Z"
+    },
+    "y11a-2": {
+      "indexed": 243,
+      "exported": 243,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 15,
+        "seed": 227,
+        "teacher": 1
+      },
+      "indexUpdatedAt": "2026-08-25T13:16:34.549Z"
+    },
+    "y11a-3": {
+      "indexed": 374,
+      "exported": 374,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 364,
+        "(none)": 6,
+        "teacher": 4
+      },
+      "indexUpdatedAt": "2026-09-02T10:35:23.607Z"
+    },
+    "y11a-4": {
+      "indexed": 202,
+      "exported": 202,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 155,
+        "teacher": 11,
+        "seed": 36
+      },
+      "indexUpdatedAt": "2026-09-04T23:26:01.732Z"
+    },
+    "y11a-5": {
+      "indexed": 651,
+      "exported": 637,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 198,
+        "seed": 437,
+        "teacher": 2
+      },
+      "indexUpdatedAt": "2026-09-02T13:58:05.673Z"
+    },
+    "y11a-6": {
+      "indexed": 651,
+      "exported": 648,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 105,
+        "teacher": 36,
+        "seed": 507
+      },
+      "indexUpdatedAt": "2026-09-13T01:17:47.446Z"
+    },
+    "y11a-6 y12a-1 y11a-7 y12a-3 y11a-8 y12a-5 y12a-4 y11a-12 y12a-10 y11a-3 y12a-6 y12a-7 y11a-9 y12a-9 y12a-8 y11a-13 y11a-4 y11a-5": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-08-27T00:37:42.255Z"
+    },
+    "y11a-6I": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-08-15T22:37:24.715Z"
+    },
+    "y11a-7": {
+      "indexed": 265,
+      "exported": 265,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 49,
+        "teacher": 3,
+        "seed": 213
+      },
+      "indexUpdatedAt": "2026-09-02T09:56:07.970Z"
+    },
+    "y11a-8": {
+      "indexed": 133,
+      "exported": 133,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 129,
+        "(none)": 3,
+        "teacher": 1
+      },
+      "indexUpdatedAt": "2026-09-02T09:56:08.364Z"
+    },
+    "y11a-9": {
+      "indexed": 23,
+      "exported": 23,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 12,
+        "(none)": 7,
+        "teacher": 4
+      },
+      "indexUpdatedAt": "2026-09-03T08:18:20.953Z"
+    },
+    "y11e1-1": {
+      "indexed": 222,
+      "exported": 222,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 222
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "y11e1-11": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-04T04:25:11.101Z"
+    },
+    "y11e1-14": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-04T04:25:11.166Z"
+    },
+    "y11e1-16": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-04T04:25:11.223Z"
+    },
+    "y11e1-4": {
+      "indexed": 106,
+      "exported": 106,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 106
+      },
+      "indexUpdatedAt": "2026-09-03T05:05:52.334Z"
+    },
+    "y11e1-6": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-04T04:25:11.274Z"
+    },
+    "y11s-2": {
+      "indexed": 10,
+      "exported": 10,
+      "inactive": 0,
+      "byOrigin": {
+        "teacher": 1,
+        "seed": 9
+      },
+      "indexUpdatedAt": "2026-08-26T13:38:56.566Z"
+    },
+    "y12a-1": {
+      "indexed": 1567,
+      "exported": 1567,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 1565,
+        "teacher": 2
+      },
+      "indexUpdatedAt": "2026-09-02T11:03:08.097Z"
+    },
+    "y12a-10": {
+      "indexed": 30,
+      "exported": 30,
+      "inactive": 0,
+      "byOrigin": {
+        "teacher": 10,
+        "(none)": 20
+      },
+      "indexUpdatedAt": "2026-09-04T06:30:50.057Z"
+    },
+    "y12a-2": {
+      "indexed": 18,
+      "exported": 18,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 16,
+        "teacher": 2
+      },
+      "indexUpdatedAt": "2026-09-02T12:31:18.421Z"
+    },
+    "y12a-3": {
+      "indexed": 359,
+      "exported": 359,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 306,
+        "teacher": 12,
+        "seed": 41
+      },
+      "indexUpdatedAt": "2026-09-03T14:30:05.290Z"
+    },
+    "y12a-4": {
+      "indexed": 21,
+      "exported": 21,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 15,
+        "teacher": 6
+      },
+      "indexUpdatedAt": "2026-09-04T07:13:50.643Z"
+    },
+    "y12a-5": {
+      "indexed": 861,
+      "exported": 861,
+      "inactive": 0,
+      "byOrigin": {
+        "teacher": 5,
+        "(none)": 11,
+        "seed": 845
+      },
+      "indexUpdatedAt": "2026-09-04T08:05:08.725Z"
+    },
+    "y12a-6": {
+      "indexed": 292,
+      "exported": 292,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 8,
+        "teacher": 3,
+        "seed": 281
+      },
+      "indexUpdatedAt": "2026-09-04T05:43:36.875Z"
+    },
+    "y12a-7": {
+      "indexed": 12,
+      "exported": 12,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 9,
+        "teacher": 3
+      },
+      "indexUpdatedAt": "2026-09-04T07:25:51.149Z"
+    },
+    "y12a-8": {
+      "indexed": 479,
+      "exported": 479,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 64,
+        "teacher": 10,
+        "seed": 405
+      },
+      "indexUpdatedAt": "2026-09-02T09:56:15.701Z"
+    },
+    "y12a-9": {
+      "indexed": 16,
+      "exported": 16,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 14,
+        "teacher": 2
+      },
+      "indexUpdatedAt": "2026-09-04T08:39:31.705Z"
+    },
+    "y12a-exam": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 1
+      },
+      "indexUpdatedAt": "2026-07-18T22:49:59.616Z"
+    },
+    "y12a-exam-dane": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-20T09:08:03.106Z"
+    },
+    "y12e1-10": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-04T04:25:11.498Z"
+    },
+    "y12e1-11": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-04T04:25:11.533Z"
+    },
+    "y12e1-12": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-04T04:25:11.590Z"
+    },
+    "y12e1-13": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-04T04:25:11.633Z"
+    },
+    "y12e1-5": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-04T04:25:11.681Z"
+    },
+    "y12e1-8": {
+      "indexed": 0,
+      "exported": 0,
+      "inactive": 0,
+      "byOrigin": {},
+      "indexUpdatedAt": "2026-07-04T04:25:11.711Z"
+    },
+    "y5-ar": {
+      "indexed": 238,
+      "exported": 238,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 166,
+        "(none)": 72
+      },
+      "indexUpdatedAt": "2026-07-29T06:39:21.584Z"
+    },
+    "y5-mr": {
+      "indexed": 133,
+      "exported": 133,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 133
+      },
+      "indexUpdatedAt": "2026-07-29T06:39:21.886Z"
+    },
+    "y5-rn": {
+      "indexed": 235,
+      "exported": 235,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 190,
+        "teacher": 1,
+        "(none)": 44
+      },
+      "indexUpdatedAt": "2026-07-29T06:39:22.283Z"
+    },
+    "y5-rqf": {
+      "indexed": 77,
+      "exported": 77,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 69,
+        "teacher": 8
+      },
+      "indexUpdatedAt": "2026-07-29T06:39:22.619Z"
+    },
+    "y6-ar": {
+      "indexed": 34,
+      "exported": 34,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 34
+      },
+      "indexUpdatedAt": "2026-07-07T04:01:59.476Z"
+    },
+    "y6-frac": {
+      "indexed": 21,
+      "exported": 21,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 19,
+        "teacher": 2
+      },
+      "indexUpdatedAt": "2026-07-16T00:34:34.951Z"
+    },
+    "y6-mr": {
+      "indexed": 46,
+      "exported": 46,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 46
+      },
+      "indexUpdatedAt": "2026-07-07T04:01:59.682Z"
+    },
+    "y6-rn": {
+      "indexed": 92,
+      "exported": 92,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 92
+      },
+      "indexUpdatedAt": "2026-07-07T04:01:59.282Z"
+    },
+    "y6-wn": {
+      "indexed": 239,
+      "exported": 239,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 239
+      },
+      "indexUpdatedAt": "2026-07-07T04:09:56.240Z"
+    },
+    "y7-1": {
+      "indexed": 1656,
+      "exported": 1656,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 1640,
+        "seed": 12,
+        "teacher": 4
+      },
+      "indexUpdatedAt": "2026-07-30T05:49:25.310Z"
+    },
+    "y7-10": {
+      "indexed": 72,
+      "exported": 72,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 72
+      },
+      "indexUpdatedAt": "2026-07-18T06:55:21.826Z"
+    },
+    "y7-11": {
+      "indexed": 81,
+      "exported": 81,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 80,
+        "teacher": 1
+      },
+      "indexUpdatedAt": "2026-08-27T14:07:35.049Z"
+    },
+    "y7-12": {
+      "indexed": 26,
+      "exported": 26,
+      "inactive": 0,
+      "byOrigin": {
+        "teacher": 7,
+        "(none)": 19
+      },
+      "indexUpdatedAt": "2026-09-04T23:32:16.178Z"
+    },
+    "y7-13": {
+      "indexed": 67,
+      "exported": 67,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 67
+      },
+      "indexUpdatedAt": "2026-07-18T06:55:22.365Z"
+    },
+    "y7-14": {
+      "indexed": 88,
+      "exported": 88,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 80,
+        "seed": 8
+      },
+      "indexUpdatedAt": "2026-09-03T08:21:31.538Z"
+    },
+    "y7-15": {
+      "indexed": 51,
+      "exported": 51,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 36,
+        "seed": 15
+      },
+      "indexUpdatedAt": "2026-09-03T07:51:52.814Z"
+    },
+    "y7-16": {
+      "indexed": 8,
+      "exported": 8,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 8
+      },
+      "indexUpdatedAt": "2026-07-18T06:55:22.637Z"
+    },
+    "y7-17": {
+      "indexed": 14,
+      "exported": 14,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 12,
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-30T05:49:26.395Z"
+    },
+    "y7-18": {
+      "indexed": 4,
+      "exported": 4,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 4
+      },
+      "indexUpdatedAt": "2026-07-18T06:55:22.870Z"
+    },
+    "y7-19": {
+      "indexed": 9,
+      "exported": 9,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 9
+      },
+      "indexUpdatedAt": "2026-07-18T06:55:22.935Z"
+    },
+    "y7-2": {
+      "indexed": 421,
+      "exported": 421,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 93,
+        "seed": 325,
+        "teacher": 3
+      },
+      "indexUpdatedAt": "2026-07-30T05:49:25.583Z"
+    },
+    "y7-20": {
+      "indexed": 19,
+      "exported": 19,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 12,
+        "seed": 7
+      },
+      "indexUpdatedAt": "2026-07-30T05:49:26.517Z"
+    },
+    "y7-22": {
+      "indexed": 7,
+      "exported": 7,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 7
+      },
+      "indexUpdatedAt": "2026-07-18T06:55:23.128Z"
+    },
+    "y7-23": {
+      "indexed": 363,
+      "exported": 363,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 363
+      },
+      "indexUpdatedAt": "2026-07-18T06:56:52.229Z"
+    },
+    "y7-3": {
+      "indexed": 359,
+      "exported": 359,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 43,
+        "teacher": 65,
+        "seed": 251
+      },
+      "indexUpdatedAt": "2026-09-03T05:19:50.763Z"
+    },
+    "y7-4": {
+      "indexed": 228,
+      "exported": 228,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 173,
+        "seed": 55
+      },
+      "indexUpdatedAt": "2026-08-20T09:50:23.268Z"
+    },
+    "y7-5": {
+      "indexed": 52,
+      "exported": 52,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 52
+      },
+      "indexUpdatedAt": "2026-07-30T04:39:42.082Z"
+    },
+    "y7-6": {
+      "indexed": 154,
+      "exported": 154,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 4,
+        "seed": 149,
+        "teacher": 1
+      },
+      "indexUpdatedAt": "2026-08-22T02:57:04.170Z"
+    },
+    "y7-7": {
+      "indexed": 130,
+      "exported": 130,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 2,
+        "(none)": 128
+      },
+      "indexUpdatedAt": "2026-08-20T12:07:55.401Z"
+    },
+    "y7-8": {
+      "indexed": 119,
+      "exported": 119,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 101,
+        "teacher": 5,
+        "seed": 13
+      },
+      "indexUpdatedAt": "2026-09-03T07:57:42.229Z"
+    },
+    "y8-1": {
+      "indexed": 229,
+      "exported": 229,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 229
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "y8-10": {
+      "indexed": 85,
+      "exported": 85,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 79,
+        "(none)": 3,
+        "teacher": 3
+      },
+      "indexUpdatedAt": "2026-08-02T14:05:40.444Z"
+    },
+    "y8-11": {
+      "indexed": 98,
+      "exported": 98,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 98
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:48.841Z"
+    },
+    "y8-12": {
+      "indexed": 52,
+      "exported": 52,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 52
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:49.018Z"
+    },
+    "y8-13": {
+      "indexed": 60,
+      "exported": 60,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 59,
+        "(none)": 1
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:49.317Z"
+    },
+    "y8-14": {
+      "indexed": 35,
+      "exported": 35,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 35
+      },
+      "indexUpdatedAt": "2026-08-21T07:43:40.051Z"
+    },
+    "y8-15": {
+      "indexed": 49,
+      "exported": 49,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 45,
+        "teacher": 4
+      },
+      "indexUpdatedAt": "2026-09-08T05:17:57.738Z"
+    },
+    "y8-16": {
+      "indexed": 79,
+      "exported": 79,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 72,
+        "(none)": 7
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:49.962Z"
+    },
+    "y8-17": {
+      "indexed": 104,
+      "exported": 104,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 104
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:50.250Z"
+    },
+    "y8-18": {
+      "indexed": 44,
+      "exported": 44,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 44
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:50.410Z"
+    },
+    "y8-19": {
+      "indexed": 27,
+      "exported": 27,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 3,
+        "teacher": 17,
+        "seed": 7
+      },
+      "indexUpdatedAt": "2026-09-05T06:40:23.738Z"
+    },
+    "y8-2": {
+      "indexed": 187,
+      "exported": 187,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 187
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "y8-3": {
+      "indexed": 115,
+      "exported": 115,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 115
+      },
+      "indexUpdatedAt": "2026-09-03T07:05:26.978Z"
+    },
+    "y8-4": {
+      "indexed": 50,
+      "exported": 50,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 50
+      },
+      "indexUpdatedAt": "2026-07-04T04:25:09.706Z"
+    },
+    "y8-5": {
+      "indexed": 53,
+      "exported": 53,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 36,
+        "teacher": 15,
+        "seed": 2
+      },
+      "indexUpdatedAt": "2026-07-17T05:17:31.834Z"
+    },
+    "y8-6": {
+      "indexed": 124,
+      "exported": 124,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 124
+      },
+      "indexUpdatedAt": "2026-09-03T06:59:09.875Z"
+    },
+    "y8-7": {
+      "indexed": 159,
+      "exported": 159,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 159
+      },
+      "indexUpdatedAt": "2026-08-20T21:51:21.822Z"
+    },
+    "y8-8": {
+      "indexed": 30,
+      "exported": 30,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 25,
+        "(none)": 5
+      },
+      "indexUpdatedAt": "2026-09-05T23:22:43.914Z"
+    },
+    "y8-9": {
+      "indexed": 65,
+      "exported": 65,
+      "inactive": 0,
+      "byOrigin": {
+        "seed": 65
+      },
+      "indexUpdatedAt": "2026-07-18T08:51:48.368Z"
+    },
+    "y9-1": {
+      "indexed": 1014,
+      "exported": 1014,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 992,
+        "teacher": 22
+      },
+      "indexUpdatedAt": "2026-09-10T06:07:20.013Z"
+    },
+    "y9-11": {
+      "indexed": 401,
+      "exported": 401,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 43,
+        "teacher": 81,
+        "seed": 277
+      },
+      "indexUpdatedAt": "2026-09-05T13:23:42.237Z"
+    },
+    "y9-12": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 2
+      },
+      "indexUpdatedAt": "2026-08-27T13:48:30.983Z"
+    },
+    "y9-13": {
+      "indexed": 38,
+      "exported": 38,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 35,
+        "teacher": 3
+      },
+      "indexUpdatedAt": "2026-09-05T23:22:44.430Z"
+    },
+    "y9-14": {
+      "indexed": 293,
+      "exported": 293,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 13,
+        "teacher": 2,
+        "seed": 278
+      },
+      "indexUpdatedAt": "2026-09-05T13:23:43.460Z"
+    },
+    "y9-15": {
+      "indexed": 26,
+      "exported": 26,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 26
+      },
+      "indexUpdatedAt": "2026-09-08T04:51:11.269Z"
+    },
+    "y9-16": {
+      "indexed": 252,
+      "exported": 252,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 27,
+        "teacher": 84,
+        "seed": 141
+      },
+      "indexUpdatedAt": "2026-09-05T13:23:44.516Z"
+    },
+    "y9-17": {
+      "indexed": 22,
+      "exported": 22,
+      "inactive": 1,
+      "byOrigin": {
+        "(none)": 22
+      },
+      "indexUpdatedAt": "2026-09-05T13:23:44.982Z"
+    },
+    "y9-18": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 2
+      },
+      "indexUpdatedAt": "2026-09-05T13:23:45.361Z"
+    },
+    "y9-19": {
+      "indexed": 2,
+      "exported": 2,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 2
+      },
+      "indexUpdatedAt": "2026-08-27T13:48:32.677Z"
+    },
+    "y9-2": {
+      "indexed": 64,
+      "exported": 64,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 64
+      },
+      "indexUpdatedAt": "2026-09-08T05:40:11.505Z"
+    },
+    "y9-3": {
+      "indexed": 153,
+      "exported": 153,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 148,
+        "teacher": 5
+      },
+      "indexUpdatedAt": "2026-09-05T13:23:39.075Z"
+    },
+    "y9-4": {
+      "indexed": 104,
+      "exported": 104,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 41,
+        "teacher": 7,
+        "seed": 56
+      },
+      "indexUpdatedAt": "2026-09-05T13:25:53.233Z"
+    },
+    "y9-5": {
+      "indexed": 406,
+      "exported": 406,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 384,
+        "teacher": 3,
+        "seed": 19
+      },
+      "indexUpdatedAt": "2026-09-05T13:23:39.954Z"
+    },
+    "y9-6": {
+      "indexed": 110,
+      "exported": 109,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 49,
+        "teacher": 1,
+        "seed": 59
+      },
+      "indexUpdatedAt": "2026-09-05T13:23:40.609Z"
+    },
+    "y9-7": {
+      "indexed": 75,
+      "exported": 75,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 9,
+        "seed": 56,
+        "teacher": 10
+      },
+      "indexUpdatedAt": "2026-09-05T13:23:40.986Z"
+    },
+    "y9-8": {
+      "indexed": 198,
+      "exported": 198,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 30,
+        "teacher": 4,
+        "seed": 164
+      },
+      "indexUpdatedAt": "2026-09-05T13:23:41.334Z"
+    },
+    "y9-9": {
+      "indexed": 1,
+      "exported": 1,
+      "inactive": 0,
+      "byOrigin": {
+        "(none)": 1
+      },
+      "indexUpdatedAt": "2026-09-05T13:23:41.634Z"
+    }
+  },
+  "missingFromFirestore": [
+    "asc2020-q24",
+    "girr2020-mc29a",
+    "girr2020-mc29as",
+    "girr2020-mc29b",
+    "girr2020-mc29bs",
+    "girr2020-mc29c",
+    "girr2020-mc29cs",
+    "girr2020-mc29d",
+    "girr2020-mc29ds",
+    "girr2020-mc30a",
+    "girr2020-mc30as",
+    "girr2020-mc30b",
+    "girr2020-mc30bs",
+    "girr2020-mc30c",
+    "girr2020-mc30cs",
+    "girr2020-mc34a",
+    "girr2020-mc34as",
+    "girr2020-mc34b",
+    "girr2020-mc34bs",
+    "girr2020-mc35a",
+    "girr2020-mc35as",
+    "girr2020-mc36a",
+    "girr2020-mc36as",
+    "girr2020-mc37a",
+    "girr2020-mc37as",
+    "girr2020-mc37b",
+    "girr2020-mc37bs",
+    "girr2020-mc38a",
+    "girr2020-mc38as",
+    "girr2020-mc38b",
+    "girr2020-mc38bs",
+    "y7-1-killara-q1",
+    "y7-1-killara-q2",
+    "y7-1-killara-q3",
+    "y7-1-killara-q4",
+    "y7-1-killara-q5",
+    "y7-1-killara-q6",
+    "y7-1-killara-q7",
+    "y7-1-killara-q8",
+    "y7-1-killara-q9",
+    "y7-1-killara-var-q1",
+    "y7-1-killara-var-q2",
+    "y7-14-killara-q1",
+    "y7-14-killara-q2",
+    "y7-14-killara-var-q1",
+    "y7-17-killara-q1",
+    "y7-20-killara-q1",
+    "y7-20-killara-q2",
+    "y7-4-killara-q1",
+    "y7-4-killara-q2",
+    "y7-4-killara-q3",
+    "y7-4-killara-q4",
+    "y7-4-killara-var-q1",
+    "y7-7-killara-q1",
+    "y7-7-killara-q2",
+    "y7-7-killara-q3",
+    "y7-7-killara-var-q1",
+    "y10-15b-q8c",
+    "y10-15b-q8d",
+    "y10-14d-q2a",
+    "y10-14d-q2b",
+    "y10-14d-q2c",
+    "y10-14d-q2d",
+    "y10-14d-q2e",
+    "y10-14d-q3a",
+    "y10-14d-q3b",
+    "y10-14d-q3c",
+    "y10-14d-q4a",
+    "y10-14d-q4b",
+    "y10-14d-q4c",
+    "y10-14d-q4d",
+    "y10-14d-q5a",
+    "y10-14d-q5b",
+    "y10-14d-q6a",
+    "y10-14d-q6b",
+    "y10-14d-q8a",
+    "y10-14d-q8b",
+    "y10-14d-q8c",
+    "y10-14d-q8d",
+    "jr2012-q34",
+    "y11-5g-q10a-i",
+    "y11-5g-q10a-ii",
+    "y11-5g-q10a-iii",
+    "y11-5g-q10b-i",
+    "y11-5g-q10b-ii",
+    "y11-5g-q10b-iii",
+    "y11-5g-q10c",
+    "y11-5g-q10d",
+    "y11-5g-q10e",
+    "y11-5g-q1a-i",
+    "y11-5g-q1a-ii",
+    "y11-5g-q1b-i",
+    "y11-5g-q1b-ii",
+    "y11-5g-q1c",
+    "y11a-6b-q12",
+    "y11a-6b-q13a",
+    "y11a-6b-q13b",
+    "y9-6a-10"
+  ]
+}

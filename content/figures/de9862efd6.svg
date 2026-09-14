@@ -1,0 +1,21 @@
+
+<svg viewBox="0 0 200 200" width="100%" height="auto" style="max-width:200px;display:block;margin:1rem auto;background-color:#fff;border-radius:12px;border:1px solid #ccc;padding:1rem;" xmlns="http://www.w3.org/2000/svg">
+  <line x1="100" y1="10" x2="100" y2="190" stroke="#94a3b8" stroke-width="2"/>
+  <line x1="10" y1="100" x2="190" y2="100" stroke="#94a3b8" stroke-width="2"/>
+  
+  <text x="145" y="65" font-family="sans-serif" font-size="28" font-weight="bold" fill="#2563eb" text-anchor="middle">A</text>
+  <text x="145" y="85" font-family="sans-serif" font-size="12" fill="#2563eb" text-anchor="middle">All (+)</text>
+  
+  <text x="55" y="65" font-family="sans-serif" font-size="28" font-weight="bold" fill="#94a3b8" text-anchor="middle">S</text>
+  <text x="55" y="85" font-family="sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Sin</text>
+  
+  <text x="55" y="145" font-family="sans-serif" font-size="28" font-weight="bold" fill="#2563eb" text-anchor="middle">T</text>
+  <text x="55" y="165" font-family="sans-serif" font-size="12" fill="#2563eb" text-anchor="middle">Tan (+)</text>
+  
+  <text x="145" y="145" font-family="sans-serif" font-size="28" font-weight="bold" fill="#94a3b8" text-anchor="middle">C</text>
+  <text x="145" y="165" font-family="sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">Cos</text>
+
+  <!-- Highlight circles for 1st and 3rd quadrants -->
+  <circle cx="145" cy="65" r="30" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="4"/>
+  <circle cx="55" cy="145" r="30" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="4"/>
+</svg>

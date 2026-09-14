@@ -1,0 +1,2253 @@
+{
+  "chapterId": "exam:year11ch5i",
+  "title": "Exam year11ch5i",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11a-5I",
+      "code": "5I",
+      "title": "Revision",
+      "questions": [
+        {
+          "id": "y11a-5i-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Explain how to shift the graph of \\(y = x^2\\) to obtain the function \\(y = (x + 5)^2 + 8\\).",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -4,
+                4,
+                4,
+                -4
+              ],
+              "width": 360,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 260
+            }
+          },
+          "options": [
+            "Shift \\(5\\) units left and \\(8\\) units upwards",
+            "Shift \\(5\\) units left and \\(8\\) units downwards",
+            "Shift \\(5\\) units right and \\(8\\) units upwards",
+            "Shift \\(5\\) units right and \\(8\\) units downwards"
+          ],
+          "answer": 0,
+          "hint": "Combine both horizontal and vertical shifts.",
+          "solution": "Replacing \\(x\\) with \\((x + 5)\\) shifts the graph 5 units left. Adding 8 shifts it 8 units up.",
+          "steps": [
+            {
+              "explain": "Identify the base function.",
+              "work": "Start with the standard parabola \\(y = x^2\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -10,
+                    12,
+                    4,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-10,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,12]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 11.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return x*x; }, -10, 4], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('text', [2, 4, 'y = x²'], {fontSize:14, color:'#94a3b8'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Apply the horizontal translation.",
+              "work": "The term \\((x + 5)^2\\) means the graph is shifted **left by 5 units**. The vertex moves to \\((-5, 0)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -10,
+                    12,
+                    4,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-10,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,12]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 11.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return x*x; }, -10, 4], {strokeColor:'#94a3b8', strokeWidth:2.5, dash:2, strokeOpacity:0.5});\nboard.create('functiongraph', [function(x){ return (x+5)*(x+5); }, -10, 4], {strokeColor:'#f59e0b', strokeWidth:2.5});\nboard.create('text', [-3, 4, 'y = (x+5)²'], {fontSize:14, color:'#f59e0b'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Apply the vertical translation.",
+              "work": "The \\(+8\\) at the end shifts the graph **upwards by 8 units**. The final vertex is located at \\((-5, 8)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -10,
+                    14,
+                    4,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-10,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,14]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 13.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x+5)*(x+5); }, -10, 4], {strokeColor:'#f59e0b', strokeWidth:2.5, dash:2, strokeOpacity:0.5});\nboard.create('functiongraph', [function(x){ return (x+5)*(x+5) + 8; }, -10, 4], {strokeColor:'#8b5cf6', strokeWidth:2.5});\nboard.create('text', [-3, 11, 'y = (x+5)²+8'], {fontSize:14, color:'#8b5cf6'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-5i-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the centre and radius of the circle: \\(x^2 + y^2 = 9\\)",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -4.5,
+                4.5,
+                4.5,
+                -4.5
+              ],
+              "width": 340,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-4.5,0],[4.5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4.5],[0,4.5]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.96, -1.575, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 4.05, 'y'], {fontSize:13, color:'#64748b'}); board.create('circle', [[0,0], 3], {strokeColor:'#6366f1', strokeWidth:2.5, fillColor:'#6366f1', fillOpacity:0.06}); board.create('point', [0,0], {name:'O', size:2, color:'#64748b', fixed:true}); board.create('text', [1.5, 2.25, 'x² + y² = 9'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 340
+            }
+          },
+          "options": [
+            "Centre \\((0,0)\\), radius \\(\\sqrt{3}\\)",
+            "Centre \\((0,0)\\), radius \\(9\\)",
+            "Centre \\((0,0)\\), radius \\(3\\)",
+            "Centre \\((3,3)\\), radius \\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "Compare to the standard form \\(x^2 + y^2 = r^2\\).",
+          "solution": "\\(r^2 = 9 \\implies r = 3\\). The centre is at \\((0,0)\\).",
+          "steps": [
+            {
+              "explain": "Recall the standard equation of a circle.",
+              "work": "A circle centered at the origin \\((0,0)\\) has the standard equation \\(x^2 + y^2 = r^2\\), where \\(r\\) is the radius."
+            },
+            {
+              "explain": "Determine the centre.",
+              "work": "Comparing \\(x^2 + y^2 = 9\\) to the standard form, there are no horizontal or vertical shifts applied to \\(x\\) or \\(y\\). Therefore, the **centre is at \\((0,0)\\)**."
+            },
+            {
+              "explain": "Determine the radius.",
+              "work": "We can see that \\(r^2 = 9\\). Taking the square root of both sides (and since radius must be positive):\n\n\\(r = \\sqrt{9} = 3\\).\n\nThe **radius is 3**.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -5,
+                    5,
+                    5,
+                    -5
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-5],[0,5]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [4.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 4.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('circle', [[0, 0], 3], {strokeColor:'#ec4899', strokeWidth:2.5, fillColor:'#ec4899', fillOpacity:0.1});\nboard.create('text', [2.0999999999999996, 2.0999999999999996, 'r = 3'], {fontSize:14, color:'#ec4899'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-5i-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the centre and radius of the circle: \\((x + 3)^2 + y^2 = 16\\)",
+          "options": [
+            "Centre \\((0,-3)\\), radius \\(4\\)",
+            "Centre \\((-3,0)\\), radius \\(16\\)",
+            "Centre \\((-3,0)\\), radius \\(4\\)",
+            "Centre \\((3,0)\\), radius \\(4\\)"
+          ],
+          "answer": 2,
+          "hint": "Compare to \\((x - h)^2 + (y - k)^2 = r^2\\).",
+          "solution": "\\(h = -3, k = 0\\). \\(r^2 = 16 \\implies r = 4\\).",
+          "steps": [
+            {
+              "explain": "Recall the standard equation of a circle.",
+              "work": "The standard equation is \\((x - h)^2 + (y - k)^2 = r^2\\), where \\((h, k)\\) is the centre and \\(r\\) is the radius."
+            },
+            {
+              "explain": "Determine the centre.",
+              "work": "Comparing \\((x + 3)^2 + y^2 = 16\\) to the standard form:\n\\(x - h = x + 3 \\implies h = -3\\)\n\\(y - k = y \\implies k = 0\\)\n\nThe **centre is at \\((-3,0)\\)**."
+            },
+            {
+              "explain": "Determine the radius.",
+              "work": "We see that \\(r^2 = 16\\). Taking the positive square root:\n\\(r = 4\\).\n\nThe **radius is 4**.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -10,
+                    8,
+                    4,
+                    -8
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-10,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-8],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('circle', [[-3, 0], 4], {strokeColor:'#ec4899', strokeWidth:2.5, fillColor:'#ec4899', fillOpacity:0.1});\nboard.create('point', [-3, 0], {name:'Center', color:'#ec4899', size:2, withLabel:true});\nboard.create('text', [-0.20000000000000018, 2.8, 'r = 4'], {fontSize:14, color:'#ec4899'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-5i-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the centre and radius of the circle: \\((x - 4)^2 + (y + 5)^2 = 7\\)",
+          "options": [
+            "Centre \\((-4,5)\\), radius \\(7\\)",
+            "Centre \\((-4,5)\\), radius \\(\\sqrt{7}\\)",
+            "Centre \\((4,-5)\\), radius \\(\\sqrt{7}\\)",
+            "Centre \\((4,-5)\\), radius \\(7\\)"
+          ],
+          "answer": 2,
+          "hint": "Identify the transformations on \\(x\\) and \\(y\\).",
+          "solution": "Centre is \\((4,-5)\\), and radius is \\(r = \\sqrt{7}\\).",
+          "steps": [
+            {
+              "explain": "Recall the standard equation of a circle.",
+              "work": "The standard equation is \\((x - h)^2 + (y - k)^2 = r^2\\), where \\((h, k)\\) is the centre and \\(r\\) is the radius."
+            },
+            {
+              "explain": "Determine the centre.",
+              "work": "Comparing \\((x - 4)^2 + (y + 5)^2 = 7\\) to the standard form:\n\\(x - h = x - 4 \\implies h = 4\\)\n\\(y - k = y + 5 \\implies k = -5\\)\n\nThe **centre is at \\((4,-5)\\)**."
+            },
+            {
+              "explain": "Determine the radius.",
+              "work": "We see that \\(r^2 = 7\\). Taking the positive square root:\n\\(r = \\sqrt{7}\\) (which is approximately 2.65).\n\nThe **radius is \\(\\sqrt{7}\\)**.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -2,
+                    2,
+                    10,
+                    -10
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[10,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-10],[0,2]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [9.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 1.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('circle', [[4, -5], Math.sqrt(7)], {strokeColor:'#ec4899', strokeWidth:2.5, fillColor:'#ec4899', fillOpacity:0.1});\nboard.create('point', [4, -5], {name:'Center', color:'#ec4899', size:2, withLabel:true});\nboard.create('text', [NaN, NaN, 'r = √7'], {fontSize:14, color:'#ec4899'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-5i-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the centre and radius of the circle: \\(x^2 + (y - 5)^2 = 36\\)",
+          "options": [
+            "Centre \\((0,5)\\), radius \\(36\\)",
+            "Centre \\((0,5)\\), radius \\(6\\)",
+            "Centre \\((0,-5)\\), radius \\(6\\)",
+            "Centre \\((5,0)\\), radius \\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "Compare to standard form.",
+          "solution": "Centre is \\((0,5)\\) and \\(r^2 = 36 \\implies r = 6\\).",
+          "steps": [
+            {
+              "explain": "Recall the standard equation of a circle.",
+              "work": "The standard equation is \\((x - h)^2 + (y - k)^2 = r^2\\), where \\((h, k)\\) is the centre and \\(r\\) is the radius."
+            },
+            {
+              "explain": "Determine the centre.",
+              "work": "Comparing \\(x^2 + (y - 5)^2 = 36\\) to the standard form:\n\\(h = 0\\)\n\\(k = 5\\)\n\nThe **centre is at \\((0,5)\\)**."
+            },
+            {
+              "explain": "Determine the radius.",
+              "work": "We see that \\(r^2 = 36\\). Taking the positive square root:\n\\(r = 6\\).\n\nThe **radius is 6**.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -8,
+                    14,
+                    8,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-8,0],[8,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,14]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [7.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 13.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('circle', [[0, 5], 6], {strokeColor:'#ec4899', strokeWidth:2.5, fillColor:'#ec4899', fillOpacity:0.1});\nboard.create('point', [0, 5], {name:'Center', color:'#ec4899', size:2, withLabel:true});\nboard.create('text', [4.199999999999999, 9.2, 'r = 6'], {fontSize:14, color:'#ec4899'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-5i-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the function obtained when \\(y = x^3 - 4x + 2\\) is reflected in the \\(y\\)-axis.",
+          "options": [
+            "\\(y = -x^3 - 4x + 2\\)",
+            "\\(y = -x^3 + 4x - 2\\)",
+            "\\(y = -x^3 + 4x + 2\\)",
+            "\\(y = x^3 - 4x - 2\\)"
+          ],
+          "answer": 2,
+          "hint": "To reflect in the \\(y\\)-axis, substitute \\(-x\\) for \\(x\\).",
+          "solution": "\\(y = (-x)^3 - 4(-x) + 2 = -x^3 + 4x + 2\\).",
+          "steps": [
+            {
+              "explain": "Identify the base function.",
+              "work": "Let \\(f(x) = x^3 - 4x + 2\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    10,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,10]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 9.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return x*x*x - 4*x + 2; }, -4, 4], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('text', [2.5, 8, 'f(x)'], {fontSize:14, color:'#94a3b8'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Apply reflection in the y-axis.",
+              "work": "To reflect a function across the y-axis, we replace every \\(x\\) with \\((-x)\\). This means we want to find \\(f(-x)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    10,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,10]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 9.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return x*x*x - 4*x + 2; }, -4, 4], {strokeColor:'#94a3b8', strokeWidth:2.5, dash:2, strokeOpacity:0.5});\nboard.create('functiongraph', [function(x){ return Math.pow(-x,3) - 4*(-x) + 2; }, -4, 4], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [-2.5, 8, 'f(-x)'], {fontSize:14, color:'#3b82f6'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Calculate the new function.",
+              "work": "Substitute \\(-x\\) into the equation:\n\\(y = (-x)^3 - 4(-x) + 2\\)\n\\(y = -x^3 + 4x + 2\\)\n\nThis is the final reflected function.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    10,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,10]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 9.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return x*x*x - 4*x + 2; }, -4, 4], {strokeColor:'#94a3b8', strokeWidth:2.5, dash:2, strokeOpacity:0.5});\nboard.create('functiongraph', [function(x){ return -x*x*x + 4*x + 2; }, -4, 4], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [-2.5, 8, 'f(-x)'], {fontSize:14, color:'#3b82f6'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-5i-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the function obtained when \\(y = 3^x - x\\) is rotated \\(180^{\\circ}\\) about the origin.",
+          "options": [
+            "\\(y = -3^x + x\\)",
+            "\\(y = -3^{-x} - x\\)",
+            "\\(y = 3^{-x} - x\\)",
+            "\\(y = -3^{-x} + x\\)"
+          ],
+          "answer": 1,
+          "hint": "Rotation of \\(180^{\\circ}\\) about the origin corresponds to replacing \\(x\\) with \\(-x\\) and \\(y\\) with \\(-y\\).",
+          "solution": "\\(-y = 3^{-x} - (-x) \\implies -y = 3^{-x} + x \\implies y = -3^{-x} - x\\).",
+          "steps": [
+            {
+              "explain": "Identify the base function.",
+              "work": "Let \\(f(x) = 3^x - x\\). We want to find the new function after a \\(180^{\\circ}\\) rotation about the origin.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    6,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 5.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return Math.pow(3,x) - x; }, -4, 4], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('text', [1.5, 4, 'f(x)'], {fontSize:14, color:'#94a3b8'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Apply the rotation transformation.",
+              "work": "A \\(180^{\\circ}\\) rotation about the origin is equivalent to reflecting across both the y-axis (\\(x \\to -x\\)) and the x-axis (\\(y \\to -y\\)).\n\nSo, we replace \\(y\\) with \\(-y\\) and \\(x\\) with \\(-x\\):\n\\(-y = 3^{-x} - (-x)\\)"
+            },
+            {
+              "explain": "Simplify the new function.",
+              "work": "\\(-y = 3^{-x} + x\\)\n\nMultiply by -1 to isolate \\(y\\):\n\\(y = -3^{-x} - x\\)\n\nThis is our final rotated function.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    6,
+                    4,
+                    -6
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 5.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return Math.pow(3,x) - x; }, -4, 4], {strokeColor:'#94a3b8', strokeWidth:2.5, dash:2, strokeOpacity:0.5});\nboard.create('functiongraph', [function(x){ return -Math.pow(3,-x) - x; }, -4, 4], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [-2, -4, 'Rotated'], {fontSize:14, color:'#ef4444'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-5i-q5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the function obtained when \\(y = \\sqrt{16 - x^2}\\) is reflected in the \\(y\\)-axis.",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -5,
+                8,
+                5,
+                -2
+              ],
+              "width": 360,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 280
+            }
+          },
+          "options": [
+            "\\(y = -\\sqrt{16 - x^2}\\)",
+            "\\(y = \\sqrt{16 + x^2}\\)",
+            "\\(y = \\sqrt{x^2 - 16}\\)",
+            "\\(y = \\sqrt{16 - x^2}\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute \\(-x\\) for \\(x\\). Recall that \\((-x)^2 = x^2\\).",
+          "solution": "\\(y = \\sqrt{16 - (-x)^2} = \\sqrt{16 - x^2}\\).",
+          "steps": [
+            {
+              "explain": "Identify the base function.",
+              "work": "Let \\(f(x) = \\sqrt{16 - x^2}\\). This function represents the top half of a circle with radius 4.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -6,
+                    6,
+                    6,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 5.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return Math.sqrt(16 - x*x); }, -6, 6], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('text', [2, 3, 'f(x)'], {fontSize:14, color:'#94a3b8'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Apply the y-axis reflection.",
+              "work": "To reflect a function in the y-axis, replace \\(x\\) with \\((-x)\\):\n\\(y = \\sqrt{16 - (-x)^2}\\)"
+            },
+            {
+              "explain": "Simplify the new function.",
+              "work": "Since \\((-x)^2 = x^2\\), the equation simplifies to:\n\\(y = \\sqrt{16 - x^2}\\)\n\nThe function remains completely unchanged because it is an **even function** (it is already perfectly symmetrical across the y-axis!).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -6,
+                    6,
+                    6,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 5.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return Math.sqrt(16 - x*x); }, -6, 6], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [2, 3, 'f(-x) = f(x)'], {fontSize:14, color:'#3b82f6'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-5i-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify the function \\(y = f(x)\\) shown in the graph below as odd, even, or neither.",
+          "figure": {
+            "jsxGraph": {
+              "width": 300,
+              "height": 300,
+              "boundingbox": [
+                -3,
+                5,
+                3,
+                -5
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[3,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-5],[0,5]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [2.5, -0.5, 'x'], {fontSize:13, color:'#64748b'});\nboard.create('text', [0.2, 4.5, 'y'], {fontSize:13, color:'#64748b'});\nboard.create('functiongraph', [function(x){ return x*x*x; }, -3, 3], {strokeColor:'#6366f1', strokeWidth:2});\nboard.unsuspendUpdate();"
+            }
+          },
+          "options": [
+            "\\(Neither\\)",
+            "\\(Even\\)",
+            "\\(Odd\\)",
+            "\\(Both\\)"
+          ],
+          "answer": 2,
+          "hint": "Look at the symmetry of the graph about the origin.",
+          "solution": "The graph has \\(180^{\\circ}\\) rotational symmetry about the origin, which means \\(f(-x) = -f(x)\\). Thus, it is an odd function.",
+          "steps": [
+            {
+              "explain": "Examine the given graph for symmetries.",
+              "work": "Look at the graph provided in the question. Does the left side mirror the right side? Does rotating it \\(180^{\\circ}\\) produce the same picture?"
+            },
+            {
+              "explain": "Test for Even Symmetry (y-axis reflection).",
+              "work": "If we fold the graph along the y-axis, the two halves do not match up. For example, in the first quadrant the graph goes up, but in the second quadrant it goes down. Thus, \\(f(-x) \\neq f(x)\\). It is **not even**."
+            },
+            {
+              "explain": "Test for Odd Symmetry (origin rotation).",
+              "work": "If we take any point \\((x, y)\\) on the graph (e.g., in the top right) and rotate it \\(180^{\\circ}\\) around the origin \\((0,0)\\), it perfectly lands on a corresponding point \\((-x, -y)\\) on the bottom left.\n\nThis means \\(f(-x) = -f(x)\\). Therefore, the function is **Odd**."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-5i-q6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify the function \\(y = f(x)\\) shown in the graph below as odd, even, or neither.",
+          "figure": {
+            "jsxGraph": {
+              "width": 300,
+              "height": 300,
+              "boundingbox": [
+                -4,
+                6,
+                4,
+                -4
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.5, -0.5, 'x'], {fontSize:13, color:'#64748b'});\nboard.create('text', [0.2, 5.5, 'y'], {fontSize:13, color:'#64748b'});\nboard.create('functiongraph', [function(x){ return x*x - 3; }, -4, 4], {strokeColor:'#6366f1', strokeWidth:2});\nboard.unsuspendUpdate();"
+            }
+          },
+          "options": [
+            "\\(Both\\)",
+            "\\(Neither\\)",
+            "\\(Even\\)",
+            "\\(Odd\\)"
+          ],
+          "answer": 2,
+          "hint": "Observe the line of symmetry.",
+          "solution": "The graph is symmetric across the \\(y\\)-axis, meaning \\(f(-x) = f(x)\\). Thus, it is an even function.",
+          "steps": [
+            {
+              "explain": "Examine the given graph for symmetries.",
+              "work": "The graph is a parabola whose vertex is perfectly centered on the y-axis (at \\(x=0\\))."
+            },
+            {
+              "explain": "Test for Even Symmetry.",
+              "work": "If you fold the graph along the y-axis, the left half is a perfect mirror image of the right half. Every point \\((x, y)\\) has a corresponding point \\((-x, y)\\). \n\nThis means \\(f(-x) = f(x)\\). Therefore, the function is **Even**."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-5i-q7a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "The diagram below shows the left branch (\\(x < 0\\)) of a function \\(y = f(x)\\). Complete the graph in your workbook so that:\ni) \\(f(x)\\) is odd.\nii) \\(f(x)\\) is even.",
+          "figure": {
+            "jsxGraph": {
+              "width": 300,
+              "height": 300,
+              "boundingbox": [
+                -4,
+                4,
+                4,
+                -4
+              ],
+              "boardOptions": {
+                "keepaspectratio": true
+              },
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x*x/3; }, -3, 0], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+            }
+          },
+          "answer": "i) Reflect the left branch in the origin (rotate 180 degrees) for the right half.\nii) Reflect the left branch across the y-axis for the right half.",
+          "hint": "For an odd function, rotate the branch 180 degrees. For even, reflect it horizontally.",
+          "solution": "i) Reflect the left branch in the origin (rotate 180 degrees) for the right half.\nii) Reflect the left branch across the y-axis for the right half.",
+          "steps": [
+            {
+              "explain": "Understand the given branch.",
+              "work": "We are given the left branch (\\(x < 0\\)) of a curve. Let's complete the right side based on the requested symmetries.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 3.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x*x*x)/3; }, -4, 0], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('text', [-2, -2, 'Given'], {fontSize:14, color:'#94a3b8'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "i) Complete the graph to make it an Odd function.",
+              "work": "An odd function requires **\\(180^{\\circ}\\) rotational symmetry about the origin**. We reflect the left branch across the origin to create the right branch. Notice how the new branch is in the opposite quadrant (top right).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 3.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x*x*x)/3; }, -4, 0], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('functiongraph', [function(x){ return (x*x*x)/3; }, 0, 4], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [2, 2, 'Odd (Rotated)'], {fontSize:14, color:'#ef4444'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "ii) Complete the graph to make it an Even function.",
+              "work": "An even function requires **reflectional symmetry across the y-axis**. We fold the left branch across the y-axis to draw the right branch. Notice how this forms a continuous U-shape.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 3.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x*x*x)/3; }, -4, 0], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('functiongraph', [function(x){ return -(x*x*x)/3; }, 0, 4], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [2, -2, 'Even (Reflected)'], {fontSize:14, color:'#3b82f6'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q7b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "The diagram below shows the right branch (\\(x > 0\\)) of a function \\(y = g(x)\\). Complete the graph in your workbook so that:\ni) \\(g(x)\\) is odd.\nii) \\(g(x)\\) is even.",
+          "figure": {
+            "jsxGraph": {
+              "width": 300,
+              "height": 300,
+              "boundingbox": [
+                -4,
+                4,
+                4,
+                -4
+              ],
+              "boardOptions": {
+                "keepaspectratio": true
+              },
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x/2; }, 0, 3], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+            }
+          },
+          "answer": "i) Rotate the right branch 180 degrees.\nii) Reflect the right branch across the y-axis.",
+          "hint": "Odd functions have point symmetry; even functions have line symmetry across the \\(y\\)-axis.",
+          "solution": "i) Rotate the right branch 180 degrees.\nii) Reflect the right branch across the y-axis.",
+          "steps": [
+            {
+              "explain": "Understand the given branch.",
+              "work": "We are given the right branch (\\(x > 0\\)) of a curve, which looks like the right half of a parabola.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 3.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x*x)/2; }, 0, 4], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('text', [2, 2, 'Given'], {fontSize:14, color:'#94a3b8'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "i) Complete the graph to make it an Odd function.",
+              "work": "For odd symmetry, we rotate the right branch **\\(180^{\\circ}\\) around the origin**. This creates a corresponding branch in the bottom-left quadrant.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 3.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x*x)/2; }, 0, 4], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('functiongraph', [function(x){ return -(x*x)/2; }, -4, 0], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [-2, -2, 'Odd'], {fontSize:14, color:'#ef4444'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "ii) Complete the graph to make it an Even function.",
+              "work": "For even symmetry, we reflect the right branch **across the y-axis**. This creates a perfect mirror image on the left, forming a complete parabola.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 3.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x*x)/2; }, 0, 4], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('functiongraph', [function(x){ return (x*x)/2; }, -4, 0], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [-2, 2, 'Even'], {fontSize:14, color:'#3b82f6'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q8a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graph of \\(y = |x| - 3\\), indicating the vertex.",
+          "answer": "V-shaped graph with vertex at (0, -3).",
+          "hint": "Apply a vertical shift to the standard absolute value graph.",
+          "solution": "V-shaped graph with vertex at (0, -3).",
+          "steps": [
+            {
+              "explain": "Start with the base absolute value function.",
+              "work": "The base function is \\(y = |x|\\), which forms a V-shape with its vertex at \\((0,0)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -6,
+                    6,
+                    6,
+                    -6
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 5.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return Math.abs(x); }, -6, 6], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('text', [2.5, 3, 'y = |x|'], {fontSize:14, color:'#94a3b8'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Apply the vertical translation.",
+              "work": "The equation \\(y = |x| - 3\\) shifts the entire graph **downwards by 3 units**. The new vertex is at \\((0, -3)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -6,
+                    6,
+                    6,
+                    -6
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 5.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return Math.abs(x); }, -6, 6], {strokeColor:'#94a3b8', strokeWidth:2.5, dash:2, strokeOpacity:0.5});\nboard.create('functiongraph', [function(x){ return Math.abs(x) - 3; }, -6, 6], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [3, 1, 'y = |x| - 3'], {fontSize:14, color:'#3b82f6'});\nboard.create('point', [0, -3], {name:'(0, -3)', color:'#3b82f6', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q8b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graph of \\(y = |x - 4|\\), indicating the vertex.",
+          "answer": "V-shaped graph with vertex at (4, 0).",
+          "hint": "Apply a horizontal shift to the standard absolute value graph.",
+          "solution": "V-shaped graph with vertex at (4, 0).",
+          "steps": [
+            {
+              "explain": "Start with the base absolute value function.",
+              "work": "The base function is \\(y = |x|\\), forming a V-shape at the origin.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    8,
+                    6,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return Math.abs(x); }, -4, 6], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('text', [-2, 3, 'y = |x|'], {fontSize:14, color:'#94a3b8'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Apply the horizontal translation.",
+              "work": "Replacing \\(x\\) with \\((x - 4)\\) in the equation \\(y = |x - 4|\\) shifts the graph **horizontally to the right by 4 units**. The new vertex is at \\((4, 0)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    8,
+                    6,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return Math.abs(x); }, -4, 6], {strokeColor:'#94a3b8', strokeWidth:2.5, dash:2, strokeOpacity:0.5});\nboard.create('functiongraph', [function(x){ return Math.abs(x - 4); }, -4, 6], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [5, 3, 'y = |x - 4|'], {fontSize:14, color:'#ef4444'});\nboard.create('point', [4, 0], {name:'(4, 0)', color:'#ef4444', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q8c",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graph of \\(y = |x + 3|\\), indicating the vertex.",
+          "answer": "V-shaped graph with vertex at (-3, 0).",
+          "hint": "Apply a horizontal shift left.",
+          "solution": "V-shaped graph with vertex at (-3, 0).",
+          "steps": [
+            {
+              "explain": "Start with the base absolute value function.",
+              "work": "The base function is \\(y = |x|\\), forming a V-shape at the origin.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -8,
+                    4,
+                    6,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-8,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 3.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return Math.abs(x); }, -8, 6], {strokeColor:'#94a3b8', strokeWidth:2.5});\nboard.create('text', [2, 3, 'y = |x|'], {fontSize:14, color:'#94a3b8'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Apply the horizontal translation.",
+              "work": "Replacing \\(x\\) with \\((x + 3)\\) in the equation \\(y = |x + 3|\\) shifts the graph **horizontally to the left by 3 units**. The new vertex is at \\((-3, 0)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -8,
+                    4,
+                    6,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-8,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 3.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return Math.abs(x); }, -8, 6], {strokeColor:'#94a3b8', strokeWidth:2.5, dash:2, strokeOpacity:0.5});\nboard.create('functiongraph', [function(x){ return Math.abs(x + 3); }, -8, 6], {strokeColor:'#10b981', strokeWidth:2.5});\nboard.create('text', [-4, 3, 'y = |x + 3|'], {fontSize:14, color:'#10b981'});\nboard.create('point', [-3, 0], {name:'(-3, 0)', color:'#10b981', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q9a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graph of \\(y = |2x + 6|\\), showing the \\(x\\)-intercept and \\(y\\)-intercept.",
+          "answer": "x-intercept at (-3, 0), y-intercept at (0, 6).",
+          "hint": "Set \\(x = 0\\) for \\(y\\)-intercept, and \\(y = 0\\) for \\(x\\)-intercept.",
+          "solution": "x-intercept at (-3, 0), y-intercept at (0, 6).",
+          "steps": [
+            {
+              "explain": "Find the x-intercept and vertex.",
+              "work": "The vertex of an absolute value graph \\(y = |ax + b|\\) occurs where the expression inside the absolute value is zero. This is also the x-intercept.\n\nSet \\(2x + 6 = 0\\):\n\\(2x = -6 \\implies x = -3\\)\n\nThe x-intercept (and vertex) is at **\\((-3, 0)\\)**.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -6,
+                    2,
+                    8,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[8,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,2]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [7.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 1.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('point', [-3, 0], {name:'(-3, 0)', color:'#3b82f6', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Find the y-intercept.",
+              "work": "To find the y-intercept, set \\(x = 0\\):\n\n\\(y = |2(0) + 6|\\)\n\\(y = |6| = 6\\)\n\nThe y-intercept is at **\\((0, 6)\\)**.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -6,
+                    2,
+                    8,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[8,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,2]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [7.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 1.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('point', [-3, 0], {name:'(-3, 0)', color:'#3b82f6', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.create('point', [0, 6], {name:'(0, 6)', color:'#3b82f6', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Sketch the graph.",
+              "work": "Draw a V-shaped graph opening upwards from the vertex \\((-3, 0)\\) and passing through the y-intercept \\((0, 6)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -6,
+                    2,
+                    8,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[8,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,2]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [7.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 1.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('point', [-3, 0], {name:'(-3, 0)', color:'#3b82f6', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.create('point', [0, 6], {name:'(0, 6)', color:'#3b82f6', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.create('functiongraph', [function(x){ return Math.abs(2*x + 6); }, -6, 8], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [-5, 5, 'y = |2x + 6|'], {fontSize:14, color:'#3b82f6'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q9b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graph of \\(y = -|3x - 9|\\), showing the \\(x\\)-intercept and \\(y\\)-intercept.",
+          "answer": "x-intercept at (3, 0), y-intercept at (0, -9).",
+          "hint": "Find intercepts and note the negative sign reflections.",
+          "solution": "x-intercept at (3, 0), y-intercept at (0, -9).",
+          "steps": [
+            {
+              "explain": "Find the x-intercept and vertex.",
+              "work": "The vertex occurs where the expression inside the absolute value is zero. Because of the negative sign in front, the V-shape will open downwards, but the vertex logic is the same.\n\nSet \\(3x - 9 = 0\\):\n\\(3x = 9 \\implies x = 3\\)\n\nThe x-intercept (and vertex) is at **\\((3, 0)\\)**.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -2,
+                    8,
+                    2,
+                    -12
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[2,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-12],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [1.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('point', [3, 0], {name:'(3, 0)', color:'#ef4444', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Find the y-intercept.",
+              "work": "To find the y-intercept, set \\(x = 0\\):\n\n\\(y = -|3(0) - 9|\\)\n\\(y = -|-9| = -9\\)\n\nThe y-intercept is at **\\((0, -9)\\)**.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -2,
+                    8,
+                    2,
+                    -12
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[2,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-12],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [1.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('point', [3, 0], {name:'(3, 0)', color:'#ef4444', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.create('point', [0, -9], {name:'(0, -9)', color:'#ef4444', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Sketch the graph.",
+              "work": "Draw a V-shaped graph opening **downwards** from the vertex \\((3, 0)\\) and passing through the y-intercept \\((0, -9)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -2,
+                    8,
+                    2,
+                    -12
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[2,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-12],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [1.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('point', [3, 0], {name:'(3, 0)', color:'#ef4444', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.create('point', [0, -9], {name:'(0, -9)', color:'#ef4444', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.create('functiongraph', [function(x){ return -Math.abs(3*x - 9); }, -2, 2], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [5, -7, 'y = -|3x - 9|'], {fontSize:14, color:'#ef4444'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q9c",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graph of \\(y = |3x + 10|\\), showing the \\(x\\)-intercept and \\(y\\)-intercept.",
+          "answer": "x-intercept at (-10/3, 0), y-intercept at (0, 10).",
+          "hint": "Evaluate for intercepts.",
+          "solution": "x-intercept at (-10/3, 0), y-intercept at (0, 10).",
+          "steps": [
+            {
+              "explain": "Find the x-intercept and vertex.",
+              "work": "Set the expression inside the absolute value to zero:\n\n\\(3x + 10 = 0\\)\n\\(3x = -10 \\implies x = -\\frac{10}{3}\\)\n\nThe x-intercept (and vertex) is at **\\((-\\frac{10}{3}, 0)\\)** (which is approximately -3.33).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -8,
+                    2,
+                    12,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-8,0],[12,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,2]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [11.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 1.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('point', [-3.3333333333333335, 0], {name:'(-10/3, 0)', color:'#10b981', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Find the y-intercept.",
+              "work": "To find the y-intercept, set \\(x = 0\\):\n\n\\(y = |3(0) + 10|\\)\n\\(y = |10| = 10\\)\n\nThe y-intercept is at **\\((0, 10)\\)**.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -8,
+                    2,
+                    12,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-8,0],[12,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,2]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [11.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 1.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('point', [-3.3333333333333335, 0], {name:'(-10/3, 0)', color:'#10b981', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.create('point', [0, 10], {name:'(0, 10)', color:'#10b981', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Sketch the graph.",
+              "work": "Draw a V-shaped graph opening upwards from the vertex \\((-\\frac{10}{3}, 0)\\) and passing through the y-intercept \\((0, 10)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -8,
+                    2,
+                    12,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-8,0],[12,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,2]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [11.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 1.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('point', [-3.3333333333333335, 0], {name:'(-10/3, 0)', color:'#10b981', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.create('point', [0, 10], {name:'(0, 10)', color:'#10b981', size:2, withLabel:true, label:{offset:[10, -10]}});\nboard.create('functiongraph', [function(x){ return Math.abs(3*x + 10); }, -8, 12], {strokeColor:'#10b981', strokeWidth:2.5});\nboard.create('text', [-6, 10, 'y = |3x + 10|'], {fontSize:14, color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q10d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the absolute value equation: \\(|5x + 3| = 0\\)",
+          "options": [
+            "\\(x = \\frac{3}{5}\\)",
+            "\\(x = -\\frac{3}{5}\\)",
+            "\\(x = \\pm\\frac{3}{5}\\)",
+            "\\(x = 0\\)"
+          ],
+          "answer": 1,
+          "hint": "An absolute value is zero if and only if the inner term is zero.",
+          "solution": "x = -\\frac{3}{5}",
+          "steps": [
+            {
+              "explain": "Analyze the absolute value equation. Since the right side is 0, there is only one case, because \\(0\\) is neither positive nor negative (\\(+0 = -0\\)).",
+              "work": "|5x + 3| = 0 \\implies 5x + 3 = 0"
+            },
+            {
+              "explain": "Solve the resulting linear equation. Subtract 3 from both sides.",
+              "work": "5x = -3"
+            },
+            {
+              "explain": "Divide by 5 to isolate x. A common mistake here is trying to force a 'plus/minus' answer when it's not needed.",
+              "work": "x = -\\frac{3}{5}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q11a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(f(-x)\\) for the function \\(f(x) = x + 5\\), and then decide whether the function is odd, even, or neither.",
+          "options": [
+            "\\(f(-x) = x + 5\\), so the function is Even",
+            "\\(f(-x) = -x + 5\\), so the function is Odd",
+            "\\(f(-x) = -x + 5\\), so the function is Neither",
+            "\\(f(-x) = -x - 5\\), so the function is Odd"
+          ],
+          "answer": 2,
+          "hint": "Replace \\(x\\) with \\(-x\\) and check if \\(f(-x) = f(x)\\) or \\(f(-x) = -f(x)\\).",
+          "solution": "\\text{Neither}",
+          "steps": [
+            {
+              "explain": "To determine if a function is odd or even, we must substitute \\(-x\\) into the function in place of \\(x\\).",
+              "work": "f(-x) = (-x) + 5 = -x + 5"
+            },
+            {
+              "explain": "Check if the function is even. An even function satisfies \\(f(-x) = f(x)\\).",
+              "work": "f(-x) = -x + 5 \\neq x + 5 = f(x) \\implies \\text{Not even}"
+            },
+            {
+              "explain": "Check if the function is odd. An odd function satisfies \\(f(-x) = -f(x)\\). Be careful! \\(-f(x) = -(x + 5) = -x - 5\\).",
+              "work": "f(-x) = -x + 5 \\neq -x - 5 = -f(x) \\implies \\text{Not odd}"
+            },
+            {
+              "explain": "Since it is neither even nor odd, conclude the result.",
+              "work": "\\therefore \\text{Neither}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(f(-x)\\) for the function \\(f(x) = 3x^2 - 7\\), and then decide whether the function is odd, even, or neither.",
+          "options": [
+            "\\(f(-x) = -3x^2 - 7\\), so the function is Neither",
+            "\\(f(-x) = 3x^2 - 7\\), so the function is Even",
+            "\\(f(-x) = 3x^2 - 7\\), so the function is Neither",
+            "\\(f(-x) = -3x^2 + 7\\), so the function is Odd"
+          ],
+          "answer": 1,
+          "hint": "Substitute \\(-x\\) and evaluate \\((-x)^2\\).",
+          "solution": "\\text{Even}",
+          "steps": [
+            {
+              "explain": "Substitute \\(-x\\) into the function. Remember that squaring a negative value results in a positive value: \\((-x)^2 = x^2\\).",
+              "work": "f(-x) = 3(-x)^2 - 7"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "f(-x) = 3x^2 - 7"
+            },
+            {
+              "explain": "Compare the simplified \\(f(-x)\\) with the original function \\(f(x)\\).",
+              "work": "f(-x) = 3x^2 - 7 = f(x)"
+            },
+            {
+              "explain": "Since \\(f(-x) = f(x)\\), the function is even.",
+              "work": "\\therefore \\text{Even}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q11c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(f(-x)\\) for the function \\(f(x) = \\frac{3}{x}\\), and then decide whether the function is odd, even, or neither.",
+          "options": [
+            "\\(f(-x) = \\frac{3}{-x}\\), so the function is Neither",
+            "\\(f(-x) = -\\frac{3}{x}\\), so the function is Odd",
+            "\\(f(-x) = \\frac{-3}{-x}\\), so the function is Even",
+            "\\(f(-x) = \\frac{3}{x}\\), so the function is Even"
+          ],
+          "answer": 1,
+          "hint": "Evaluate \\(f(-x)\\) and compare to \\(-f(x)\\).",
+          "solution": "\\text{Odd}",
+          "steps": [
+            {
+              "explain": "Substitute \\(-x\\) into the function in place of \\(x\\).",
+              "work": "f(-x) = \\frac{3}{(-x)}"
+            },
+            {
+              "explain": "Simplify the expression by moving the negative sign to the front.",
+              "work": "f(-x) = -\\frac{3}{x}"
+            },
+            {
+              "explain": "Compare the result with \\(-f(x)\\). Notice that \\(-f(x) = -\\left(\\frac{3}{x}\\right) = -\\frac{3}{x}\\).",
+              "work": "f(-x) = -\\frac{3}{x} = -f(x)"
+            },
+            {
+              "explain": "Since \\(f(-x) = -f(x)\\), the function is odd.",
+              "work": "\\therefore \\text{Odd}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q11d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(f(-x)\\) for the function \\(f(x) = \\frac{2x}{x^2 + 3}\\), and then decide whether the function is odd, even, or neither.",
+          "options": [
+            "\\(f(-x) = \\frac{-2x}{x^2 + 3}\\), so the function is Neither",
+            "\\(f(-x) = \\frac{-2x}{x^2 + 3}\\), so the function is Odd",
+            "\\(f(-x) = \\frac{-2x}{x^2 - 3}\\), so the function is Odd",
+            "\\(f(-x) = \\frac{-2x}{-x^2 + 3}\\), so the function is Neither"
+          ],
+          "answer": 1,
+          "hint": "Replace every \\(x\\) with \\(-x\\) and simplify.",
+          "solution": "\\text{Odd}",
+          "steps": [
+            {
+              "explain": "Substitute \\(-x\\) for every \\(x\\) in the function. Be careful to apply it to both the numerator and the denominator.",
+              "work": "f(-x) = \\frac{2(-x)}{(-x)^2 + 3}"
+            },
+            {
+              "explain": "Simplify the numerator and denominator. In the denominator, \\((-x)^2 = x^2\\).",
+              "work": "f(-x) = \\frac{-2x}{x^2 + 3}"
+            },
+            {
+              "explain": "Check for oddness. Notice that you can pull the negative sign out to the front of the entire fraction.",
+              "work": "f(-x) = -\\left(\\frac{2x}{x^2 + 3}\\right) = -f(x)"
+            },
+            {
+              "explain": "Since \\(f(-x) = -f(x)\\), the function is odd.",
+              "work": "\\therefore \\text{Odd}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q12a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Complete the square for \\(y = x^2 + 4x + 5\\) and sketch the graph. Indicate the vertex and all intercepts.",
+          "answer": "",
+          "hint": "Add and subtract \\((4/2)^2\\) to complete the square.",
+          "solution": "Vertex form found by completing the square, intercepts calculated, and graphed as shown below.",
+          "steps": [
+            {
+              "explain": "Group the \\(x\\) terms and complete the square by adding and subtracting \\((\\frac{b}{2})^2\\).",
+              "work": "y = (x^2 + 4x) + 5 \\implies y = (x^2 + 4x + 4) - 4 + 5"
+            },
+            {
+              "explain": "Write the expression in vertex form \\(y = a(x - h)^2 + k\\).",
+              "work": "y = (x + 2)^2 + 1"
+            },
+            {
+              "explain": "Identify the vertex \\((h, k)\\).",
+              "work": "\\text{Vertex: } (-2, 1)"
+            },
+            {
+              "explain": "Find the \\(y\\)-intercept by setting \\(x = 0\\).",
+              "work": "y = 0^2 + 4(0) + 5 = 5 \\implies \\text{y-intercept: } (0, 5)"
+            },
+            {
+              "explain": "Find the \\(x\\)-intercepts by setting \\(y = 0\\). Since \\((x+2)^2 = -1\\) has no real solution, there are no \\(x\\)-intercepts.",
+              "work": "\\text{No } x\\text{-intercepts}"
+            },
+            {
+              "explain": "Sketch the graph using the vertex and \\(y\\)-intercept. The parabola opens upwards.",
+              "work": "\\text{See the final graph in the solution below.}",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 300,
+                  "boundingbox": [
+                    -6,
+                    8,
+                    2,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[2,0]], {strokeColor:'black', strokeWidth:1});\nboard.create('arrow', [[0,-2],[0,8]], {strokeColor:'black', strokeWidth:1});\nboard.create('functiongraph', [function(x){ return (x+2)*(x+2)+1; }, -6, 2], {strokeColor:'red', strokeWidth:2});\nboard.create('point', [-2, 1], {name:'V(-2,1)', size:3, color:'blue'});\nboard.create('point', [0, 5], {name:'(0,5)', size:3, color:'blue'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q13a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the square to find the centre and radius of the circle: \\(x^2 + y^2 - 4y = 5\\)",
+          "options": [
+            "Centre \\((0, 2)\\), Radius \\(3\\)",
+            "Centre \\((0, 2)\\), Radius \\(9\\)",
+            "Centre \\((0, -2)\\), Radius \\(9\\)",
+            "Centre \\((0, -2)\\), Radius \\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "Add 4 to both sides of the equation.",
+          "solution": "\\text{Centre } (0, 2), \\text{ Radius } 3",
+          "steps": [
+            {
+              "explain": "Group the \\(y\\) terms together and prepare to complete the square. The \\(x^2\\) term is already a perfect square \\((x - 0)^2\\).",
+              "work": "x^2 + (y^2 - 4y) = 5"
+            },
+            {
+              "explain": "Complete the square for \\(y\\). Take half of the \\(y\\)-coefficient (\\(-4 / 2 = -2\\)), square it (\\(4\\)), and add it to BOTH sides.",
+              "work": "x^2 + (y^2 - 4y + 4) = 5 + 4"
+            },
+            {
+              "explain": "Write the equation in standard circle form \\((x - h)^2 + (y - k)^2 = r^2\\).",
+              "work": "x^2 + (y - 2)^2 = 9"
+            },
+            {
+              "explain": "Identify the centre \\((h, k)\\) and radius \\(r\\). Be careful: the formula has negative signs, so \\((y - 2)\\) means \\(k = 2\\), not \\(-2\\). Also, \\(r^2 = 9\\), so \\(r = 3\\).",
+              "work": "\\text{Centre } (0, 2), \\text{ Radius } 3"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q13b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the square to find the centre and radius of the circle: \\(x^2 + 8x + y^2 + 12 = 0\\)",
+          "options": [
+            "Centre \\((4, 0)\\), Radius \\(4\\)",
+            "Centre \\((4, 0)\\), Radius \\(2\\)",
+            "Centre \\((-4, 0)\\), Radius \\(4\\)",
+            "Centre \\((-4, 0)\\), Radius \\(2\\)"
+          ],
+          "answer": 3,
+          "hint": "Move the constant to the right-hand side and add 16 to complete the square.",
+          "solution": "\\text{Centre } (-4, 0), \\text{ Radius } 2",
+          "steps": [
+            {
+              "explain": "Group the \\(x\\) terms together and move the constant to the right-hand side.",
+              "work": "(x^2 + 8x) + y^2 = -12"
+            },
+            {
+              "explain": "Complete the square for \\(x\\). Half of \\(8\\) is \\(4\\), and \\(4^2 = 16\\). Add \\(16\\) to BOTH sides.",
+              "work": "(x^2 + 8x + 16) + y^2 = -12 + 16"
+            },
+            {
+              "explain": "Write the equation in standard circle form.",
+              "work": "(x + 4)^2 + y^2 = 4"
+            },
+            {
+              "explain": "Identify the centre \\((h, k)\\) and radius \\(r\\). The expression \\((x + 4)\\) means \\(h = -4\\). The right side is \\(r^2 = 4\\), so \\(r = 2\\).",
+              "work": "\\text{Centre } (-4, 0), \\text{ Radius } 2"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q13c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the square to find the centre and radius of the circle: \\(x^2 - 6x + y^2 + 8y - 11 = 0\\)",
+          "options": [
+            "Centre \\((3, -4)\\), Radius \\(36\\)",
+            "Centre \\((-3, 4)\\), Radius \\(6\\)",
+            "Centre \\((3, -4)\\), Radius \\(6\\)",
+            "Centre \\((-3, -4)\\), Radius \\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Complete the squares for both \\(x\\) and \\(y\\). Add 9 and 16 to both sides.",
+          "solution": "\\text{Centre } (3, -4), \\text{ Radius } 6",
+          "steps": [
+            {
+              "explain": "Group the \\(x\\) terms and \\(y\\) terms together, and move the constant to the right-hand side.",
+              "work": "(x^2 - 6x) + (y^2 + 8y) = 11"
+            },
+            {
+              "explain": "Complete the square for both \\(x\\) and \\(y\\). For \\(x\\), add \\((-3)^2 = 9\\). For \\(y\\), add \\(4^2 = 16\\). Remember to add these to BOTH sides.",
+              "work": "(x^2 - 6x + 9) + (y^2 + 8y + 16) = 11 + 9 + 16"
+            },
+            {
+              "explain": "Write the equation in standard circle form.",
+              "work": "(x - 3)^2 + (y + 4)^2 = 36"
+            },
+            {
+              "explain": "Identify the centre \\((h, k)\\) and radius \\(r\\). Be mindful of the signs: \\(-3\\) gives \\(h=3\\), and \\(+4\\) gives \\(k=-4\\).",
+              "work": "\\text{Centre } (3, -4), \\text{ Radius } 6"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q13d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the square to find the centre and radius of the circle: \\(x^2 + y^2 - 10x + 12y = 20\\)",
+          "options": [
+            "Centre \\((-5, 6)\\), Radius \\(81\\)",
+            "Centre \\((-5, 6)\\), Radius \\(9\\)",
+            "Centre \\((5, -6)\\), Radius \\(81\\)",
+            "Centre \\((5, -6)\\), Radius \\(9\\)"
+          ],
+          "answer": 3,
+          "hint": "Complete the square for \\(x^2 - 10x\\) and \\(y^2 + 12y\\).",
+          "solution": "\\text{Centre } (5, -6), \\text{ Radius } 9",
+          "steps": [
+            {
+              "explain": "Group the \\(x\\) terms and \\(y\\) terms together.",
+              "work": "(x^2 - 10x) + (y^2 + 12y) = 20"
+            },
+            {
+              "explain": "Complete the square for both variables. Add \\((-5)^2 = 25\\) for \\(x\\), and \\(6^2 = 36\\) for \\(y\\) to BOTH sides.",
+              "work": "(x^2 - 10x + 25) + (y^2 + 12y + 36) = 20 + 25 + 36"
+            },
+            {
+              "explain": "Write the equation in standard circle form.",
+              "work": "(x - 5)^2 + (y + 6)^2 = 81"
+            },
+            {
+              "explain": "Identify the centre \\((h, k)\\) and radius \\(r\\). A common mistake is leaving the radius as \\(81\\) instead of taking the square root \\(r = \\sqrt{81} = 9\\).",
+              "work": "\\text{Centre } (5, -6), \\text{ Radius } 9"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q15a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), evaluate \\(f(g(0))\\).",
+          "options": [
+            "\\(-3\\)",
+            "\\(5\\)",
+            "\\(11\\)",
+            "\\(-6\\)"
+          ],
+          "answer": 1,
+          "hint": "Find \\(g(0)\\) first, then substitute that result into \\(f(x)\\).",
+          "solution": "f(2) = 4(2) - 3 = 8 - 3 = 5",
+          "steps": [
+            {
+              "explain": "To evaluate the composite function \\(f(g(0))\\), we must work from the inside out. First, evaluate \\(g(0)\\).",
+              "work": "g(x) = x^2 + 2 \\implies g(0) = 0^2 + 2 = 2"
+            },
+            {
+              "explain": "Now substitute this result into the outer function \\(f(x)\\).",
+              "work": "f(g(0)) = f(2)"
+            },
+            {
+              "explain": "Evaluate \\(f(2)\\) using \\(f(x) = 4x - 3\\). A common mistake is evaluating \\(g(f(0))\\) instead, which gives a completely different answer (11)!",
+              "work": "f(2) = 4(2) - 3 = 8 - 3 = 5"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q15b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), evaluate \\(g(f(0))\\).",
+          "options": [
+            "\\(-7\\)",
+            "\\(9\\)",
+            "\\(11\\)",
+            "\\(5\\)"
+          ],
+          "answer": 2,
+          "hint": "Evaluate the inner function \\(f(0)\\) first.",
+          "solution": "g(-3) = (-3)^2 + 2 = 9 + 2 = 11",
+          "steps": [
+            {
+              "explain": "To evaluate \\(g(f(0))\\), work from the inside out. First, find \\(f(0)\\).",
+              "work": "f(x) = 4x - 3 \\implies f(0) = 4(0) - 3 = -3"
+            },
+            {
+              "explain": "Substitute this result into the outer function \\(g(x)\\).",
+              "work": "g(f(0)) = g(-3)"
+            },
+            {
+              "explain": "Evaluate \\(g(-3)\\) using \\(g(x) = x^2 + 2\\). Remember that squaring a negative number gives a positive result: \\((-3)^2 = +9\\).",
+              "work": "g(-3) = (-3)^2 + 2 = 9 + 2 = 11"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q15c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), evaluate \\(f(g(4))\\).",
+          "options": [
+            "\\(171\\)",
+            "\\(21\\)",
+            "\\(69\\)",
+            "\\(234\\)"
+          ],
+          "answer": 2,
+          "hint": "Evaluate \\(g(4)\\) first.",
+          "solution": "f(18) = 4(18) - 3 = 72 - 3 = 69",
+          "steps": [
+            {
+              "explain": "Evaluate the inner function \\(g(4)\\) first.",
+              "work": "g(x) = x^2 + 2 \\implies g(4) = 4^2 + 2 = 16 + 2 = 18"
+            },
+            {
+              "explain": "Substitute this result into the outer function \\(f(x)\\).",
+              "work": "f(g(4)) = f(18)"
+            },
+            {
+              "explain": "Evaluate \\(f(18)\\) using \\(f(x) = 4x - 3\\).",
+              "work": "f(18) = 4(18) - 3 = 72 - 3 = 69"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q15d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), evaluate \\(g(f(4))\\).",
+          "options": [
+            "\\(69\\)",
+            "\\(171\\)",
+            "\\(169\\)",
+            "\\(234\\)"
+          ],
+          "answer": 1,
+          "hint": "Evaluate \\(f(4)\\) first.",
+          "solution": "g(13) = 13^2 + 2 = 169 + 2 = 171",
+          "steps": [
+            {
+              "explain": "To evaluate \\(g(f(4))\\), work from the inside out. First, find \\(f(4)\\).",
+              "work": "f(x) = 4x - 3 \\implies f(4) = 4(4) - 3 = 16 - 3 = 13"
+            },
+            {
+              "explain": "Now substitute this result into the outer function \\(g(x)\\).",
+              "work": "g(f(4)) = g(13)"
+            },
+            {
+              "explain": "Evaluate \\(g(13)\\) using \\(g(x) = x^2 + 2\\). A common mistake is evaluating \\(f(g(4))\\) which gives \\(69\\), so be careful with the order!",
+              "work": "g(13) = 13^2 + 2 = 169 + 2 = 171"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q15e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), find the expression for \\(f(g(a))\\).",
+          "options": [
+            "\\(4a^2 + 2\\)",
+            "\\(16a^2 - 24a + 11\\)",
+            "\\(4a^2 + 5\\)",
+            "\\(4a^2 - 1\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the formula for \\(g(a)\\) directly into \\(f(x)\\).",
+          "solution": "4(a^2) + 4(2) - 3 = 4a^2 + 8 - 3 = 4a^2 + 5",
+          "steps": [
+            {
+              "explain": "To find the expression for \\(f(g(a))\\), start by identifying the inner expression \\(g(a)\\).",
+              "work": "g(a) = a^2 + 2"
+            },
+            {
+              "explain": "Substitute \\(g(a)\\) into the outer function \\(f(x) = 4x - 3\\) in place of \\(x\\).",
+              "work": "f(g(a)) = f(a^2 + 2) = 4(a^2 + 2) - 3"
+            },
+            {
+              "explain": "Expand and simplify. A common mistake here is forgetting to distribute the \\(4\\) to the \\(+2\\).",
+              "work": "4(a^2) + 4(2) - 3 = 4a^2 + 8 - 3 = 4a^2 + 5"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q15f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), find the expression for \\(g(f(a))\\).",
+          "options": [
+            "\\(16a^2 - 24a + 11\\)",
+            "\\(16a^2 - 24a + 9\\)",
+            "\\(16a^2 - 7\\)",
+            "\\(4a^2 + 5\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the formula for \\(f(a)\\) directly into \\(g(x)\\).",
+          "solution": "16a^2 - 24a + 11",
+          "steps": [
+            {
+              "explain": "To find \\(g(f(a))\\), start with the inner expression \\(f(a)\\).",
+              "work": "f(a) = 4a - 3"
+            },
+            {
+              "explain": "Substitute \\(f(a)\\) into the outer function \\(g(x) = x^2 + 2\\) in place of \\(x\\).",
+              "work": "g(f(a)) = g(4a - 3) = (4a - 3)^2 + 2"
+            },
+            {
+              "explain": "Expand the perfect square. Remember that \\((A-B)^2 = A^2 - 2AB + B^2\\). Do not just square the terms individually!",
+              "work": "(16a^2 - 24a + 9) + 2"
+            },
+            {
+              "explain": "Combine the constant terms.",
+              "work": "16a^2 - 24a + 11"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q16ai",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the domain and range of the composite function \\(f(g(x))\\) given \\(f(x) = x - 2\\) and \\(g(x) = \\sqrt{x}\\).",
+          "options": [
+            "Domain \\(x \\in \\mathbb{R}\\), Range \\(y \\ge -2\\)",
+            "Domain \\(x \\ge 0\\), Range \\(y \\ge 0\\)",
+            "Domain \\(x \\ge 2\\), Range \\(y \\ge 0\\)",
+            "Domain \\(x \\ge 0\\), Range \\(y \\ge -2\\)"
+          ],
+          "answer": 3,
+          "hint": "Identify restrictions on the input \\(x\\) of \\(g(x)\\), and the outputs of the combined expression.",
+          "solution": "\\text{Domain } x \\ge 0, \\text{ Range } y \\ge -2",
+          "steps": [
+            {
+              "explain": "First, find the expression for the composite function \\(f(g(x))\\).",
+              "work": "g(x) = \\sqrt{x} \\implies f(g(x)) = f(\\sqrt{x}) = \\sqrt{x} - 2"
+            },
+            {
+              "explain": "Determine the Domain. The domain is restricted by the inner function \\(g(x) = \\sqrt{x}\\). We cannot take the square root of a negative number.",
+              "work": "\\text{Domain: } x \\ge 0"
+            },
+            {
+              "explain": "Determine the Range. Knowing the domain \\(x \\ge 0\\), we know that \\(\\sqrt{x} \\ge 0\\). Substitute this minimum value into the composite function.",
+              "work": "\\sqrt{x} \\ge 0 \\implies \\sqrt{x} - 2 \\ge -2"
+            },
+            {
+              "explain": "State the final domain and range. A common mistake is evaluating the range of the outer function without considering the restricted output of the inner function.",
+              "work": "\\text{Domain } x \\ge 0, \\text{ Range } y \\ge -2"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q17a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Use the given graph of \\(y = f(x)\\) to sketch \\(y = f(x + 2)\\).",
+          "figure": {
+            "jsxGraph": {
+              "width": 300,
+              "height": 300,
+              "boundingbox": [
+                -5,
+                5,
+                5,
+                -3
+              ],
+              "boardOptions": {
+                "keepaspectratio": true
+              },
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+            }
+          },
+          "answer": "",
+          "hint": "Replacing \\(x\\) with \\(x + 2\\) translates the curve left.",
+          "solution": "See the final comparative graph.",
+          "steps": [
+            {
+              "explain": "Analyze the transformation \\(y = f(x + 2)\\). Adding \\(2\\) inside the function arguments represents a horizontal shift.",
+              "work": "\\text{Shift LEFT by 2 units.}"
+            },
+            {
+              "explain": "Identify key features (e.g., intercepts, turning points) on the original graph and subtract \\(2\\) from all their \\(x\\)-coordinates.",
+              "work": "(x, y) \\to (x - 2, y)"
+            },
+            {
+              "explain": "Sketch the new curve maintaining the exact same shape, just translated 2 units horizontally to the left.",
+              "work": "\\text{See the comparative graph in the solution below.}",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 300,
+                  "boundingbox": [
+                    -7,
+                    5,
+                    5,
+                    -3
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-7,0],[5,0]], {strokeColor:'black', strokeWidth:1});\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black', strokeWidth:1});\n\n// Original\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 4], {strokeColor:'#94a3b8',strokeWidth:2, dash:2});\nboard.create('text', [2, 3, 'y = f(x)'], {color:'#94a3b8'});\n\n// Transformed\nboard.create('functiongraph', [function(x){ return 0.1*(x+4)*(x+4)*(3-(x+2)) + 0.5; }, -7, 2], {strokeColor:'red',strokeWidth:2});\nboard.create('text', [-4, 4, 'y = f(x+2)'], {color:'red'});\n\n// Shift arrows\nboard.create('arrow', [[0,1.7], [-2,1.7]], {strokeColor:'green', strokeWidth:1.5, dash:1});\nboard.create('arrow', [[-2,0.5], [-4,0.5]], {strokeColor:'green', strokeWidth:1.5, dash:1});\n\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q18a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Identify how the graph of the second equation \\(y = \\frac{1}{9}x^2 - \\frac{4}{3}x\\) can be obtained from the graph of the first equation \\(y = x^2 - 4x\\) by a suitable dilation.",
+          "options": [
+            "Horizontal dilation by a scale factor of \\(\\frac{1}{3}\\)",
+            "Horizontal dilation by a scale factor of \\(3\\)",
+            "Vertical dilation by a scale factor of \\(\\frac{1}{3}\\)",
+            "Vertical dilation by a scale factor of \\(\\frac{1}{9}\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute \\(x/3\\) in place of \\(x\\) in the first equation and simplify.",
+          "solution": "\\text{Horizontal dilation by a scale factor of } 3.",
+          "steps": [
+            {
+              "explain": "Let the first function be \\(f(x) = x^2 - 4x\\). We need to express the second function, \\(y = \\frac{1}{9}x^2 - \\frac{4}{3}x\\), in terms of \\(f(x)\\).",
+              "work": "y = \\frac{1}{9}x^2 - \\frac{4}{3}x"
+            },
+            {
+              "explain": "Try factoring out constants or rewriting the \\(x\\) terms to see if it matches \\(f(kx)\\) or \\(k f(x)\\). Notice that \\(\\frac{1}{9}x^2 = (\\frac{x}{3})^2\\) and \\(\\frac{4}{3}x = 4(\\frac{x}{3})\\).",
+              "work": "y = \\left(\\frac{x}{3}\\right)^2 - 4\\left(\\frac{x}{3}\\right)"
+            },
+            {
+              "explain": "This exactly matches the structure of \\(f(x)\\), but with every \\(x\\) replaced by \\(\\frac{x}{3}\\).",
+              "work": "y = f\\left(\\frac{x}{3}\\right)"
+            },
+            {
+              "explain": "Recall that a transformation of the form \\(f\\left(\\frac{x}{k}\\right)\\) represents a horizontal dilation by a scale factor of \\(k\\). A common mistake is seeing the fraction \\(\\frac{1}{3}\\) and thinking the scale factor is \\(\\frac{1}{3}\\), but horizontal scale factors are the reciprocal of the coefficient of \\(x\\).",
+              "work": "\\text{Horizontal dilation by a scale factor of } 3."
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q19a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the set of graphs on a single pair of axes, showing all significant points: \\(y = 3x\\), \\(y = 3x + 4\\), \\(y = 3x - 3\\).",
+          "answer": "",
+          "hint": "These are parallel lines with different vertical shifts.",
+          "solution": "\\text{See the final graph below.}",
+          "steps": [
+            {
+              "explain": "Analyze the equations: \\(y = 3x\\), \\(y = 3x + 4\\), and \\(y = 3x - 3\\). Notice they are all straight lines in the form \\(y = mx + c\\).",
+              "work": "\\text{All three lines have the same gradient, } m = 3."
+            },
+            {
+              "explain": "Because the gradients are identical, these lines are parallel. The \\(y\\)-intercepts (\\(c\\)) are \\(0\\), \\(4\\), and \\(-3\\) respectively.",
+              "work": "\\text{The lines are vertical translations of each other.}"
+            },
+            {
+              "explain": "Sketch them on the same axes. They should have the same steepness but cross the \\(y\\)-axis at different heights.",
+              "work": "\\text{See the final graph below.}",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 300,
+                  "boundingbox": [
+                    -4,
+                    6,
+                    4,
+                    -5
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 3*x; }, -4, 4], {strokeColor:'#6366f1',strokeWidth:2});\nboard.create('text', [1, 2, 'y = 3x'], {color:'#6366f1'});\nboard.create('functiongraph', [function(x){ return 3*x + 4; }, -4, 4], {strokeColor:'#f43f5e',strokeWidth:2});\nboard.create('text', [-1.5, 1, 'y = 3x+4'], {color:'#f43f5e'});\nboard.create('functiongraph', [function(x){ return 3*x - 3; }, -4, 4], {strokeColor:'#10b981',strokeWidth:2});\nboard.create('text', [1.5, 0, 'y = 3x-3'], {color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q19d",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the set of graphs on a single pair of axes: \\(y = (x - 3)^2 - 2\\), \\(y = (x + 3)^2 - 2\\), \\(y = -(x + 3)^2 + 2\\).",
+          "answer": "",
+          "hint": "Find the vertex for each parabola.",
+          "solution": "\\text{See the final graph below.}",
+          "steps": [
+            {
+              "explain": "Analyze the parabolas. They are all in turning point form \\(y = a(x-h)^2 + k\\), with turning point \\((h, k)\\).",
+              "work": "\\text{Find the vertex of each parabola.}"
+            },
+            {
+              "explain": "\\(y = (x - 3)^2 - 2\\) has vertex \\((3, -2)\\) and opens upwards.\n\\(y = (x + 3)^2 - 2\\) has vertex \\((-3, -2)\\) and opens upwards.\n\\(y = -(x + 3)^2 + 2\\) has vertex \\((-3, 2)\\) and opens downwards.",
+              "work": "\\text{Note that the second and third parabolas share an axis of symmetry } (x = -3)."
+            },
+            {
+              "explain": "Sketch the parabolas, ensuring their turning points are correctly placed and they open in the correct directions.",
+              "work": "\\text{See the final graph below.}",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 300,
+                  "boundingbox": [
+                    -6,
+                    5,
+                    6,
+                    -5
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return (x-3)*(x-3)-2; }, -6, 6], {strokeColor:'#6366f1',strokeWidth:2});\nboard.create('text', [4, 1, 'y=(x-3)²-2'], {color:'#6366f1'});\nboard.create('functiongraph', [function(x){ return (x+3)*(x+3)-2; }, -6, 6], {strokeColor:'#f43f5e',strokeWidth:2});\nboard.create('text', [-5.5, 1, 'y=(x+3)²-2'], {color:'#f43f5e'});\nboard.create('functiongraph', [function(x){ return -(x+3)*(x+3)+2; }, -6, 6], {strokeColor:'#10b981',strokeWidth:2});\nboard.create('text', [-5.5, -2, 'y=-(x+3)²+2'], {color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q19e",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the set of graphs on a single pair of axes: \\(y = x^2\\), \\(y = (x + 3)^2\\), \\(y = (x - 2)^2\\).",
+          "answer": "",
+          "hint": "These are horizontal shifts of the standard parabola \\(y = x^2\\).",
+          "solution": "\\text{See the final graph below.}",
+          "steps": [
+            {
+              "explain": "Analyze the parabolas. \\(y = x^2\\) is the basic parabola with turning point at the origin \\((0,0)\\).",
+              "work": "\\text{Base graph: } y = x^2"
+            },
+            {
+              "explain": "\\(y = (x + 3)^2\\) is a horizontal translation of \\(y = x^2\\) by 3 units to the left. Its turning point is \\((-3, 0)\\).",
+              "work": "\\text{Shift left by 3.}"
+            },
+            {
+              "explain": "\\(y = (x - 2)^2\\) is a horizontal translation of \\(y = x^2\\) by 2 units to the right. Its turning point is \\((2, 0)\\).",
+              "work": "\\text{Shift right by 2.}"
+            },
+            {
+              "explain": "All three parabolas have the same shape and open upwards, they are simply shifted along the \\(x\\)-axis.",
+              "work": "\\text{See the final graph below.}",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 300,
+                  "boundingbox": [
+                    -6,
+                    9,
+                    5,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,9]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x; }, -6, 5], {strokeColor:'#6366f1',strokeWidth:2});\nboard.create('text', [0.5, 1, 'y=x²'], {color:'#6366f1'});\nboard.create('functiongraph', [function(x){ return (x+3)*(x+3); }, -6, 5], {strokeColor:'#f43f5e',strokeWidth:2});\nboard.create('text', [-3.5, 4, 'y=(x+3)²'], {color:'#f43f5e'});\nboard.create('functiongraph', [function(x){ return (x-2)*(x-2); }, -6, 5], {strokeColor:'#10b981',strokeWidth:2});\nboard.create('text', [3, 4, 'y=(x-2)²'], {color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q19f",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the set of graphs on a single pair of axes: \\((x - 2)^2 + y^2 = 4\\), \\((x + 2)^2 + y^2 = 4\\), \\(x^2 + (y - 2)^2 = 4\\).",
+          "answer": "",
+          "hint": "Identify the centre and radius of each circle.",
+          "solution": "\\text{See the final graph below.}",
+          "steps": [
+            {
+              "explain": "Analyze the equations. They are all in the circle form \\((x - h)^2 + (y - k)^2 = r^2\\), with centre \\((h, k)\\) and radius \\(r\\).",
+              "work": "\\text{Find the centre and radius of each circle.}"
+            },
+            {
+              "explain": "For \\((x - 2)^2 + y^2 = 4\\), the centre is \\((2, 0)\\) and radius is \\(\\sqrt{4} = 2\\).\nFor \\((x + 2)^2 + y^2 = 4\\), the centre is \\((-2, 0)\\) and radius is \\(2\\).\nFor \\(x^2 + (y - 2)^2 = 4\\), the centre is \\((0, 2)\\) and radius is \\(2\\).",
+              "work": "\\text{All circles have the same radius (2).}"
+            },
+            {
+              "explain": "Sketch the three circles. Since the distance from the origin to each centre is 2 (which is equal to the radius), all three circles will pass exactly through the origin \\((0,0)\\).",
+              "work": "\\text{See the final graph below.}",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -5,
+                    5,
+                    5,
+                    -5
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,5]], {strokeColor:'black'});\nboard.create('circle', [[2,0], 2], {strokeColor:'#6366f1',strokeWidth:2, fillColor:'none'});\nboard.create('circle', [[-2,0], 2], {strokeColor:'#f43f5e',strokeWidth:2, fillColor:'none'});\nboard.create('circle', [[0,2], 2], {strokeColor:'#10b981',strokeWidth:2, fillColor:'none'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q19h",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the set of graphs on a single pair of axes: \\(y = (x + 3)^2\\), \\(y = (x + 3)^2 - 9\\), \\(y = (x + 3)^2 + 2\\).",
+          "answer": "Three parabolas shifted horizontally left by 3, with vertical positions at 0, -9, and 2.",
+          "hint": "All parabolas have their axis of symmetry at \\(x = -3\\).",
+          "solution": "Three parabolas shifted horizontally left by 3, with vertical positions at 0, -9, and 2.",
+          "steps": [
+            {
+              "explain": "First, analyze the common horizontal transformation among the three functions.",
+              "work": "All three equations involve the term \\((x + 3)^2\\). This indicates that the base parabola \\(y = x^2\\) has been translated **horizontally 3 units to the left**. All three graphs will share the same axis of symmetry at \\(x = -3\\)."
+            },
+            {
+              "explain": "Analyze the individual vertical transformations.",
+              "work": "1. \\(y = (x + 3)^2\\) has no vertical shift, so its vertex sits exactly on the x-axis at \\((-3, 0)\\).\n2. \\(y = (x + 3)^2 - 9\\) is translated **down by 9 units**, shifting its vertex to \\((-3, -9)\\).\n3. \\(y = (x + 3)^2 + 2\\) is translated **up by 2 units**, moving its vertex to \\((-3, 2)\\)."
+            },
+            {
+              "explain": "Final Graph: All three curves plotted on the same axes.",
+              "work": "The three parabolas are identical in shape and horizontal position, only varying by their vertical placement along the line \\(x = -3\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -8,
+                    10,
+                    2,
+                    -10
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-8,0],[2,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-10],[0,10]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [1.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 9.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x+3)*(x+3); }, -8, 2], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [-1.5, 4, 'y = (x+3)²'], {fontSize:14, color:'#3b82f6'});\nboard.create('functiongraph', [function(x){ return (x+3)*(x+3) - 9; }, -8, 2], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [0.5, 4, 'y = (x+3)²-9'], {fontSize:14, color:'#ef4444'});\nboard.create('functiongraph', [function(x){ return (x+3)*(x+3) + 2; }, -8, 2], {strokeColor:'#10b981', strokeWidth:2.5});\nboard.create('text', [-2, 7, 'y = (x+3)²+2'], {fontSize:14, color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q19i",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the set of graphs on a single pair of axes: \\(y = -|x|\\), \\(y = -|x| + 2\\), \\(y = -|x - 3|\\).",
+          "answer": "Three downward-opening V-graphs with vertices at (0, 0), (0, 2), and (3, 0).",
+          "hint": "Identify the shifts and note the negative sign reflecting them down.",
+          "solution": "Three downward-opening V-graphs with vertices at (0, 0), (0, 2), and (3, 0).",
+          "steps": [
+            {
+              "explain": "Begin by graphing the basic absolute value function \\(y = -|x|\\).",
+              "work": "The parent function \\(y = |x|\\) is a V-shape opening upwards. The negative sign reflects it across the x-axis, creating an inverted V-shape opening downwards, with its vertex at \\((0, 0)\\)."
+            },
+            {
+              "explain": "Next, determine the transformations for \\(y = -|x| + 2\\) and \\(y = -|x - 3|\\).",
+              "work": "1. \\(y = -|x| + 2\\) takes the inverted V-graph and translates it **up by 2 units**, placing its vertex at \\((0, 2)\\).\n2. \\(y = -|x - 3|\\) takes the base \\(y = -|x|\\) graph and translates it **right by 3 units**, moving its vertex to \\((3, 0)\\)."
+            },
+            {
+              "explain": "Final Graph: All three curves plotted on the same axes.",
+              "work": "The blue curve is \\(y = -|x|\\), the red curve is \\(y = -|x| + 2\\), and the green curve is \\(y = -|x - 3|\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -6,
+                    4,
+                    8,
+                    -6
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[8,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-6],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [7.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 3.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return -Math.abs(x); }, -6, 8], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [-5, -4, 'y = -|x|'], {fontSize:14, color:'#3b82f6'});\nboard.create('functiongraph', [function(x){ return -Math.abs(x) + 2; }, -6, 8], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [-4, 0, 'y = -|x|+2'], {fontSize:14, color:'#ef4444'});\nboard.create('functiongraph', [function(x){ return -Math.abs(x - 3); }, -6, 8], {strokeColor:'#10b981', strokeWidth:2.5});\nboard.create('text', [4.5, -2, 'y = -|x-3|'], {fontSize:14, color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q19k",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the set of graphs on a single pair of axes: \\(y = 3^x\\), \\(y = 3^x - 2\\), \\(y = 3^{x - 1}\\).",
+          "answer": "Three exponential curves with horizontal asymptotes at y = 0, y = -2, and y = 0.",
+          "hint": "Identify horizontal asymptotes and y-intercepts.",
+          "solution": "Three exponential curves with horizontal asymptotes at y = 0, y = -2, and y = 0.",
+          "steps": [
+            {
+              "explain": "Start with the basic exponential growth function \\(y = 3^x\\).",
+              "work": "This curve rises rapidly in the first quadrant, passes through the y-intercept at \\((0, 1)\\), and has a horizontal asymptote along the x-axis (\\(y = 0\\))."
+            },
+            {
+              "explain": "Determine the effect of the transformations for the remaining two functions.",
+              "work": "1. \\(y = 3^x - 2\\) translates the base function **down by 2 units**. The new horizontal asymptote becomes \\(y = -2\\), and the y-intercept shifts down to \\(1 - 2 = -1\\).\n2. \\(y = 3^{x - 1}\\) translates the base function **right by 1 unit**. The asymptote remains \\(y = 0\\), but it now passes through \\((1, 1)\\) instead of \\((0, 1)\\)."
+            },
+            {
+              "explain": "Final Graph: All three curves plotted on the same axes.",
+              "work": "The dashed lines indicate the horizontal asymptotes.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    6,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [3.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 5.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('line', [[0, -2], [1, -2]], {strokeColor:'#94a3b8', dash:2, strokeWidth:1.2});\nboard.create('functiongraph', [function(x){ return Math.pow(3, x); }, -4, 4], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [-3, 1, 'y = 3^x'], {fontSize:14, color:'#3b82f6'});\nboard.create('functiongraph', [function(x){ return Math.pow(3, x) - 2; }, -4, 4], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [1.5, 4, 'y = 3^x - 2'], {fontSize:14, color:'#ef4444'});\nboard.create('functiongraph', [function(x){ return Math.pow(3, x-1); }, -4, 4], {strokeColor:'#10b981', strokeWidth:2.5});\nboard.create('text', [2.5, 3, 'y = 3^{x-1}'], {fontSize:14, color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q19l",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the set of graphs on a single pair of axes: \\(y = \\frac{2}{x}\\), \\(y = \\frac{2}{x - 3}\\), \\(y = \\frac{2}{x + 2}\\).",
+          "answer": "Three hyperbolas with vertical asymptotes at x = 0, x = 3, and x = -2.",
+          "hint": "Find the vertical asymptote for each by setting the denominator to zero.",
+          "solution": "Three hyperbolas with vertical asymptotes at x = 0, x = 3, and x = -2.",
+          "steps": [
+            {
+              "explain": "Examine the base hyperbola \\(y = \\frac{2}{x}\\).",
+              "work": "This is a rectangular hyperbola situated in the first and third quadrants. It has a vertical asymptote at the y-axis (\\(x = 0\\)) and a horizontal asymptote at the x-axis (\\(y = 0\\))."
+            },
+            {
+              "explain": "Identify the horizontal translations for the other two hyperbolas.",
+              "work": "Both new functions are transformations of the denominator.\n1. \\(y = \\frac{2}{x - 3}\\) translates the curve **right by 3 units**. The new vertical asymptote is \\(x = 3\\).\n2. \\(y = \\frac{2}{x + 2}\\) translates the curve **left by 2 units**. The new vertical asymptote is \\(x = -2\\)."
+            },
+            {
+              "explain": "Final Graph: All three curves plotted on the same axes.",
+              "work": "The dashed lines denote the shifted vertical asymptotes. (Note that the horizontal asymptote \\(y=0\\) remains unchanged for all three).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -6,
+                    6,
+                    6,
+                    -6
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 5.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('line', [[3, 0], [3, 1]], {strokeColor:'#94a3b8', dash:2, strokeWidth:1.2});\nboard.create('line', [[-2, 0], [-2, 1]], {strokeColor:'#94a3b8', dash:2, strokeWidth:1.2});\nboard.create('functiongraph', [function(x){ return 2/x; }, -6, 6], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [1, 3, 'y = 2/x'], {fontSize:14, color:'#3b82f6'});\nboard.create('functiongraph', [function(x){ return 2/(x-3); }, -6, 6], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [4, 3, 'y = 2/(x-3)'], {fontSize:14, color:'#ef4444'});\nboard.create('functiongraph', [function(x){ return 2/(x+2); }, -6, 6], {strokeColor:'#10b981', strokeWidth:2.5});\nboard.create('text', [-1, 3, 'y = 2/(x+2)'], {fontSize:14, color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q19m",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the set of graphs on a single pair of axes: \\(y = x^3\\), \\(y = x^3 - 2\\), \\(y = (x - 2)^3\\).",
+          "answer": "Three cubic curves with points of inflection at (0, 0), (0, -2), and (2, 0).",
+          "hint": "Locate the inflection point for each cubic curve.",
+          "solution": "Three cubic curves with points of inflection at (0, 0), (0, -2), and (2, 0).",
+          "steps": [
+            {
+              "explain": "Analyze the base cubic function \\(y = x^3\\).",
+              "work": "This is a standard increasing cubic curve that passes through the origin. Its point of inflection (where the concavity changes) is exactly at \\((0, 0)\\)."
+            },
+            {
+              "explain": "Determine the translations applied to the point of inflection for the remaining functions.",
+              "work": "1. \\(y = x^3 - 2\\) applies a vertical translation **down by 2 units**. The new point of inflection is located at \\((0, -2)\\).\n2. \\(y = (x - 2)^3\\) applies a horizontal translation **right by 2 units**. The new point of inflection is located at \\((2, 0)\\)."
+            },
+            {
+              "explain": "Final Graph: All three curves plotted on the same axes.",
+              "work": "The shapes are identical; only the position of the point of inflection changes according to the translations.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -4,
+                    6,
+                    6,
+                    -6
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [5.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 5.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return x*x*x; }, -4, 6], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [-1.5, -4, 'y = x³'], {fontSize:14, color:'#3b82f6'});\nboard.create('functiongraph', [function(x){ return (x*x*x) - 2; }, -4, 6], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [0.5, -4, 'y = x³-2'], {fontSize:14, color:'#ef4444'});\nboard.create('functiongraph', [function(x){ return (x-2)*(x-2)*(x-2); }, -4, 6], {strokeColor:'#10b981', strokeWidth:2.5});\nboard.create('text', [2.5, -4, 'y = (x-2)³'], {fontSize:14, color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q19n",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the set of graphs on a single pair of axes: \\(y = x^4\\), \\(y = (x - 2)^4\\), \\(y = x^4 + 2\\).",
+          "answer": "Three flat-bottomed parabolas (quartic curves) with vertices/minima at (0, 0), (2, 0), and (0, 2).",
+          "hint": "These curves behave like \\(y = x^2\\) but are flatter near their minimum.",
+          "solution": "Three flat-bottomed parabolas (quartic curves) with vertices/minima at (0, 0), (2, 0), and (0, 2).",
+          "steps": [
+            {
+              "explain": "Analyze the base function \\(y = x^4\\).",
+              "work": "This is a quartic curve. It resembles a parabola but is flatter near the origin and rises much more steeply. Its minimum point (vertex) is at \\((0, 0)\\)."
+            },
+            {
+              "explain": "Determine the transformations for \\(y = (x - 2)^4\\) and \\(y = x^4 + 2\\).",
+              "work": "1. \\(y = (x - 2)^4\\) represents a horizontal translation **right by 2 units**. The new minimum is at \\((2, 0)\\).\n2. \\(y = x^4 + 2\\) represents a vertical translation **up by 2 units**. The new minimum is at \\((0, 2)\\)."
+            },
+            {
+              "explain": "Final Graph: All three curves plotted on the same axes.",
+              "work": "Notice how all three curves share the characteristic 'flat-bottomed' U-shape of a quartic function.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -3,
+                    8,
+                    5,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [4.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return Math.pow(x, 4); }, -3, 5], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [-1.2, 3, 'y = x⁴'], {fontSize:14, color:'#3b82f6'});\nboard.create('functiongraph', [function(x){ return Math.pow(x-2, 4); }, -3, 5], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [2.5, 3, 'y = (x-2)⁴'], {fontSize:14, color:'#ef4444'});\nboard.create('functiongraph', [function(x){ return Math.pow(x, 4) + 2; }, -3, 5], {strokeColor:'#10b981', strokeWidth:2.5});\nboard.create('text', [1, 6, 'y = x⁴+2'], {fontSize:14, color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q19p",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the set of graphs on a single pair of axes: \\(y = 3^{-x}\\), \\(y = 3^{-x} - 3\\), \\(y = -3^x + 3\\).",
+          "answer": "Three exponential curves with asymptotes at y = 0, y = -3, and y = 3.",
+          "hint": "Evaluate limits as \\(x \\to \\pm \\infty\\) to find asymptotes.",
+          "solution": "Three exponential curves with asymptotes at y = 0, y = -3, and y = 3.",
+          "steps": [
+            {
+              "explain": "Analyze the first function \\(y = 3^{-x}\\).",
+              "work": "This is an exponential decay function. It passes through the y-intercept \\((0, 1)\\) and approaches a horizontal asymptote of \\(y = 0\\) (the x-axis) as \\(x \\to \\infty\\)."
+            },
+            {
+              "explain": "Analyze the second function \\(y = 3^{-x} - 3\\).",
+              "work": "This shifts the exponential decay function \\(y = 3^{-x}\\) **down by 3 units**. The new horizontal asymptote is \\(y = -3\\). The y-intercept becomes \\(1 - 3 = -2\\), and the x-intercept is found where \\(3^{-x} = 3 \\implies x = -1\\)."
+            },
+            {
+              "explain": "Analyze the third function \\(y = -3^x + 3\\).",
+              "work": "This is based on exponential growth \\(y = 3^x\\), which is then reflected across the x-axis (due to the negative sign) and shifted **up by 3 units**. The horizontal asymptote is \\(y = 3\\). The y-intercept is \\(-1 + 3 = 2\\), and the x-intercept is found where \\(3^x = 3 \\implies x = 1\\)."
+            },
+            {
+              "explain": "Final Graph: All three curves plotted on the same axes.",
+              "work": "Dashed lines indicate the horizontal asymptotes for each curve: \\(y=0\\) (blue), \\(y=-3\\) (red), and \\(y=3\\) (green).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -3,
+                    6,
+                    3,
+                    -5
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[3,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-5],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [2.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 5.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('line', [[0, -3], [1, -3]], {strokeColor:'#94a3b8', dash:2, strokeWidth:1.2});\nboard.create('line', [[0, 3], [1, 3]], {strokeColor:'#94a3b8', dash:2, strokeWidth:1.2});\nboard.create('functiongraph', [function(x){ return Math.pow(3, -x); }, -3, 3], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [-1.2, 4, 'y = 3^{-x}'], {fontSize:14, color:'#3b82f6'});\nboard.create('functiongraph', [function(x){ return Math.pow(3, -x) - 3; }, -3, 3], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [-1.5, 1, 'y = 3^{-x}-3'], {fontSize:14, color:'#ef4444'});\nboard.create('functiongraph', [function(x){ return -Math.pow(3, x) + 3; }, -3, 3], {strokeColor:'#10b981', strokeWidth:2.5});\nboard.create('text', [1.2, -1, 'y = -3^x+3'], {fontSize:14, color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-5i-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which of the following pairs of transformations commute (meaning the order in which they are applied does not matter)?",
+          "options": [
+            "Horizontal translation and horizontal dilation",
+            "Reflection in the \\(y\\)-axis and reflection in the \\(x\\)-axis",
+            "Vertical translation and horizontal translation",
+            "Vertical reflection and vertical translation"
+          ],
+          "answer": 1,
+          "hint": "Evaluate the composite operations algebraically, e.g., \\(-f(-x)\\) vs \\(-f(-x)\\).",
+          "solution": "Reflection in the \\(y\\)-axis followed by \\(x\\)-axis reflection yields \\(-f(-x)\\). In the reverse order, it also yields \\(-f(-x)\\). Hence, they commute.",
+          "steps": [
+            {
+              "explain": "Understand the concept of commuting transformations.",
+              "work": "Two transformations commute if applying them in either order produces the exact same final result. If applying A then B gives \\(f_{AB}(x)\\), and applying B then A gives \\(f_{BA}(x)\\), they commute if \\(f_{AB}(x) = f_{BA}(x)\\)."
+            },
+            {
+              "explain": "Test the reflection in the y-axis and x-axis.",
+              "work": "1. Let \\(y = f(x)\\).\n2. Reflection in the y-axis maps \\(x \\to -x\\), resulting in \\(y = f(-x)\\).\n3. Reflection in the x-axis maps \\(y \\to -y\\), resulting in \\(y = -f(-x)\\).\n\nIf we reverse the order:\n1. Reflection in x-axis gives \\(y = -f(x)\\).\n2. Reflection in y-axis gives \\(y = -f(-x)\\).\n\nBoth orders produce \\(y = -f(-x)\\). Therefore, these transformations commute."
+            }
+          ]
+        },
+        {
+          "id": "y11a-5i-q21b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Identify the transformations applied to \\(y = x^2\\) to obtain the graph of \\(y = \\frac{1}{3}(x - 3)^2 - 2\\), and sketch the curve.",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -4,
+                4,
+                4,
+                -4
+              ],
+              "width": 360,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 260
+            }
+          },
+          "answer": "Shift right by 3 units, dilate vertically by factor of 1/3, then shift down by 2 units.",
+          "hint": "Evaluate horizontal translation, vertical scaling, and vertical translation.",
+          "solution": "Shift right by 3 units, dilate vertically by factor of 1/3, then shift down by 2 units.",
+          "steps": [
+            {
+              "explain": "Identify the base function and horizontal translation.",
+              "work": "The base function is \\(y = x^2\\). The term \\((x - 3)^2\\) indicates that \\(x\\) has been replaced by \\(x - 3\\). This corresponds to a horizontal translation **right by 3 units**.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -3,
+                    8,
+                    9,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[9,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [8.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return x*x; }, -3, 9], {strokeColor:'#94a3b8', strokeWidth:2.5, dash:2, strokeOpacity:0.5});\nboard.create('functiongraph', [function(x){ return (x-3)*(x-3); }, -3, 9], {strokeColor:'#ef4444', strokeWidth:2.5});\nboard.create('text', [4.5, 5, 'y = (x-3)²'], {fontSize:14, color:'#ef4444'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Identify the vertical dilation.",
+              "work": "The function is multiplied by \\(\\frac{1}{3}\\). This represents a **vertical dilation (or compression) by a factor of 1/3**, which makes the parabola appear wider and grow slower.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -3,
+                    8,
+                    9,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[9,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [8.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (x-3)*(x-3); }, -3, 9], {strokeColor:'#94a3b8', strokeWidth:2.5, dash:2, strokeOpacity:0.5});\nboard.create('functiongraph', [function(x){ return (1/3)*(x-3)*(x-3); }, -3, 9], {strokeColor:'#10b981', strokeWidth:2.5});\nboard.create('text', [6.5, 2, 'y = 1/3(x-3)²'], {fontSize:14, color:'#10b981'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Identify the vertical translation.",
+              "work": "The \\(- 2\\) at the end of the expression represents a vertical translation **downwards by 2 units**. The final vertex is at \\((3, -2)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -3,
+                    8,
+                    9,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[9,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [8.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (1/3)*(x-3)*(x-3); }, -3, 9], {strokeColor:'#94a3b8', strokeWidth:2.5, dash:2, strokeOpacity:0.5});\nboard.create('functiongraph', [function(x){ return (1/3)*Math.pow(x-3, 2) - 2; }, -3, 9], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [6, -1, 'y = 1/3(x-3)² - 2'], {fontSize:14, color:'#3b82f6'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Final Graph",
+              "work": "The resulting graph is a wider parabola opening upwards, with its vertex centered at \\((3, -2)\\).",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 400,
+                  "boundingbox": [
+                    -3,
+                    8,
+                    9,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[9,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-4],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [8.2, -0.6, 'x'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('text', [0.3, 7.2, 'y'], {fontSize:14, color:'#64748b', fontStyle:'italic'});\nboard.create('functiongraph', [function(x){ return (1/3)*Math.pow(x-3, 2) - 2; }, -3, 9], {strokeColor:'#3b82f6', strokeWidth:2.5});\nboard.create('text', [6, -1, 'y = 1/3(x-3)² - 2'], {fontSize:14, color:'#3b82f6'});\nboard.unsuspendUpdate();"
+                }
+              }
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

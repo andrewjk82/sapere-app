@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 380 200" width="400" height="210">
+  <style>
+    .box { fill: #ffffff; stroke: #94a3b8; stroke-width: 2px; }
+    .text { font-family: 'Times New Roman', Times, serif; font-size: 19px; fill: #0f172a; text-anchor: middle; dominant-baseline: middle; }
+    .target { font-family: sans-serif; font-size: 32px; fill: #ef4444; font-weight: bold; }
+  </style>
+
+  <rect x="0" y="120" width="120" height="60" class="box" />
+  <rect x="120" y="120" width="120" height="60" class="box" />
+  <rect x="240" y="120" width="120" height="60" class="box" />
+  <rect x="60" y="60" width="120" height="60" class="box" />
+  <rect x="180" y="60" width="120" height="60" class="box" />
+  <rect x="120" y="0" width="120" height="60" class="box" />
+
+  
+  <text x="180" y="152" class="text">2<tspan font-style="italic">m</tspan> + <tspan font-style="italic">n</tspan></text>
+  <text x="300" y="152" class="text">4<tspan font-style="italic">m</tspan> + 3<tspan font-style="italic">n</tspan></text>
+  
+  <text x="240" y="94" class="text target">?</text>
+  
+</svg>

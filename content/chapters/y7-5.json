@@ -1,0 +1,2487 @@
+{
+  "chapterId": "y7-5",
+  "title": "",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "y7-5a",
+      "code": "5A",
+      "title": "Multiplication of fractions",
+      "questions": [
+        {
+          "id": "y7-ep2-q5",
+          "type": "mc",
+          "stem": "Verify whether \\(x = -1\\) is a solution to the equation \\(2 - x = 2(x + 3)\\).",
+          "options": [
+            "No, it is not a solution.",
+            "Yes, it is a solution."
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(x = -1\\) into both the left-hand side (LHS) and right-hand side (RHS) of the equation.",
+          "steps": [
+            {
+              "explain": "LHS: \\(2 - (-1) = 2 + 1 = 3\\)"
+            },
+            {
+              "explain": "RHS: \\(2(-1 + 3) = 2(2) = 4\\)"
+            },
+            {
+              "explain": "Since LHS \\(\\neq\\) RHS (\\(3 \\neq 4\\)), \\(x = -1\\) is not a solution."
+            }
+          ]
+        },
+        {
+          "id": "0nzh7k9TNsZh0XnNNrYo",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\\\( \\\\frac{5}{14} \\\\times \\\\frac{7}{10} \\\\times \\\\frac{8}{9} \\\\)",
+          "options": [
+            "\\( \\\\frac{2}{9} \\)",
+            "\\( \\\\frac{1}{9} \\)",
+            "\\( \\\\frac{2}{3} \\)",
+            "\\( \\\\frac{5}{9} \\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "We start by identifying the three fractions given in the problem to multiply. Our plan is to multiply the numerators together and the denominators together to form a single fraction, then simplify it.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators. Multiplying the numerators gives \\( 5 \\\\times 7 \\\\times 8 = 280 \\), and multiplying the denominators gives \\( 14 \\\\times 10 \\\\times 9 = 1260 \\). This results in the intermediate fraction.",
+              "work": "\\( \\\\frac{280}{1260} \\)"
+            },
+            {
+              "explain": "Finally, we simplify the fraction by dividing both the numerator and the denominator by their greatest common divisor, which is 140. This reduces the expression to its simplest form and yields our final answer.",
+              "work": "\\( \\\\frac{280 \\\\div 140}{1260 \\\\div 140} = \\\\frac{2}{9} \\)"
+            }
+          ]
+        },
+        {
+          "id": "4iuQdKTLAyoDq8RtfLMO",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\\\( \\\\frac{7}{12} \\\\times \\\\frac{8}{21} \\\\times \\\\frac{9}{14} \\\\)",
+          "options": [
+            "\\( \\\\frac{2}{7} \\)",
+            "\\( \\\\frac{1}{8} \\)",
+            "\\( \\\\frac{1}{7} \\)",
+            "\\( \\\\frac{3}{14} \\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We begin by expressing the product of the three fractions by grouping all numerators together and all denominators together. This establishes our strategy for calculation.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and denominators. Multiplying the numerators gives \\( 7 \\\\times 8 \\\\times 9 = 504 \\), and multiplying the denominators gives \\( 12 \\\\times 21 \\\\times 14 = 3528 \\). This gives us the unsimplified product.",
+              "work": "\\( \\\\frac{504}{3528} \\)"
+            },
+            {
+              "explain": "Finally, we simplify the fraction. By dividing both the numerator and the denominator by their greatest common divisor, which is 504, we arrive at the simplest form, matching one of the options.",
+              "work": "\\( \\\\frac{504 \\\\div 504}{3528 \\\\div 504} = \\\\frac{1}{7} \\)"
+            }
+          ]
+        },
+        {
+          "id": "8MedElQ8DXAEvu3sLYj9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find: \\\\( \\\\frac{7}{5} \\\\) of \\\\( \\\\frac{2}{7} \\\\)",
+          "options": [
+            "\\( \\\\frac{3}{5} \\)",
+            "\\( \\\\frac{2}{5} \\)",
+            "\\( \\\\frac{5}{2} \\)",
+            "\\( \\\\frac{2}{6} \\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "We begin by translating the word \"of\" into the mathematical operator for multiplication. This sets up the product of the two fractions.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we multiply the numerators and the denominators. The product of the numerators is \\( 7 \\\\times 2 = 14 \\), and the product of the denominators is \\( 5 \\\\times 7 = 35 \\). This results in the unsimplified fraction.",
+              "work": "\\( \\\\frac{14}{35} \\)"
+            },
+            {
+              "explain": "Finally, we simplify the fraction by dividing the numerator and the denominator by their greatest common divisor, which is 7. This yields the final answer.",
+              "work": "\\( \\\\frac{14 \\\\div 7}{35 \\\\div 7} = \\\\frac{2}{5} \\)"
+            }
+          ]
+        },
+        {
+          "id": "9ni0MXbfodc341D7UrD8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find: \\\\( \\\\frac{15}{8} \\\\times \\\\frac{32}{45} \\\\)",
+          "options": [
+            "\\( \\\\frac{3}{4} \\)",
+            "\\( \\\\frac{4}{3} \\)",
+            "\\( 1 \\)",
+            "\\( \\\\frac{5}{3} \\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "We start by writing the multiplication of the two fractions by grouping their numerators and denominators together. This outlines our calculation plan.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we compute the products. Multiplying the numerators gives \\( 15 \\\\times 32 = 480 \\), and multiplying the denominators gives \\( 8 \\\\times 45 = 360 \\). This forms the intermediate fraction.",
+              "work": "\\( \\\\frac{480}{360} \\)"
+            },
+            {
+              "explain": "Finally, we simplify the fraction by dividing both the numerator and denominator by their greatest common divisor, which is 120. This gives us the simplest improper fraction.",
+              "work": "\\( \\\\frac{480 \\\\div 120}{360 \\\\div 120} = \\\\frac{4}{3} \\)"
+            }
+          ]
+        },
+        {
+          "id": "174vTcmPNyrWdudcjXbI",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Analyze the complex system of intersecting and parallel lines below.",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 400 300\" width=\"100%\" height=\"240\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Solid grid lines passing through M (200, 150) -->\n  <line x1=\"50\" y1=\"150\" x2=\"350\" y2=\"150\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"80\" y1=\"60\" x2=\"320\" y2=\"240\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"260\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"80\" y1=\"240\" x2=\"320\" y2=\"60\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Dashed parallel lines AC and BD -->\n  <line x1=\"120\" y1=\"50\" x2=\"120\" y2=\"250\" stroke=\"#6366f1\" stroke-dasharray=\"4\" stroke-width=\"2\"/>\n  <line x1=\"280\" y1=\"50\" x2=\"280\" y2=\"250\" stroke=\"#6366f1\" stroke-dasharray=\"4\" stroke-width=\"2\"/>\n  <polygon points=\"120,110 116,120 124,120\" fill=\"#6366f1\"/>\n  <polygon points=\"280,110 276,120 284,120\" fill=\"#6366f1\"/>\n  \n  <!-- Points / Vertices -->\n  <!-- M (Center intersection) -->\n  <circle cx=\"200\" cy=\"150\" r=\"6\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"2\"/>\n  \n  <!-- A, B (On horizontal line x=120 and x=280) -->\n  <circle cx=\"120\" cy=\"150\" r=\"5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  <circle cx=\"280\" cy=\"150\" r=\"5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  \n  <!-- C, D (On diagonal line 1 at x=120 and x=280) -->\n  <circle cx=\"120\" cy=\"90\" r=\"5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  <circle cx=\"280\" cy=\"210\" r=\"5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  \n  <!-- E, F (On diagonal line 2 at x=120 and x=280) -->\n  <circle cx=\"120\" cy=\"210\" r=\"5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  <circle cx=\"280\" cy=\"90\" r=\"5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  \n  <!-- G, H (On vertical solid line at y=90 and y=210) -->\n  <circle cx=\"200\" cy=\"90\" r=\"5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  <circle cx=\"200\" cy=\"210\" r=\"5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  \n  <!-- Text Labels -->\n  <text x=\"212\" y=\"145\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">M</text>\n  <text x=\"98\" y=\"155\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">A</text>\n  <text x=\"292\" y=\"155\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">B</text>\n  \n  <text x=\"98\" y=\"95\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">C</text>\n  <text x=\"292\" y=\"225\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  \n  <text x=\"98\" y=\"225\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">E</text>\n  <text x=\"292\" y=\"95\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">F</text>\n  \n  <text x=\"212\" y=\"95\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">G</text>\n  <text x=\"212\" y=\"225\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">H</text>\n</svg>"
+          },
+          "parts": [
+            {
+              "id": "q3a",
+              "type": "mc",
+              "stem": "Name the four concurrent lines passing through the point $M$ in the diagram.",
+              "options": [
+                "Lines $AB$, $CD$, $EF$, and $GH$",
+                "Lines $AC$, $BD$, $EM$, and $HM$",
+                "Lines $AM$, $BM$, $CM$, and $DM$",
+                "Lines $AB$, $CD$, $AC$, and $BD$"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We start by identifying the point \\(M\\) in the diagram, which is the red dot in the center. We need to identify all distinct lines that pass through this single intersection point.",
+                  "work": "\\( \\text{Point } M \\text{ is the point of concurrency} \\)"
+                },
+                {
+                  "explain": "Next, we trace the straight lines passing directly through \\(M\\). By observing the labeled points, the horizontal line is line \\(AB\\), the vertical line is line \\(CD\\), and we also have two diagonal lines which are named \\(EF\\) and \\(GH\\).",
+                  "work": "\\( \\text{Concurrent lines: } AB, \\; CD, \\; EF, \\; GH \\)"
+                },
+                {
+                  "explain": "Finally, we combine these names to identify the matching option. The correct list containing all four straight lines passing through \\(M\\) is Lines \\(AB\\), \\(CD\\), \\(EF\\), and \\(GH\\).",
+                  "work": "\\( \\text{Final Answer: Lines } AB, \\; CD, \\; EF, \\; GH \\)"
+                }
+              ]
+            },
+            {
+              "id": "q3b",
+              "type": "mc",
+              "stem": "Name the two parallel lines, using the correct symbol for \"is parallel to\".",
+              "options": [
+                "$AC \\parallel BD$",
+                "$AB \\parallel CD$",
+                "$EF \\parallel GH$",
+                "$AC \\perp BD$"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We begin by locating the parallel lines in the geometry diagram. Parallel lines are represented visually with matching arrows or arrowheads pointing in the same direction.",
+                  "work": "\\( \\text{Look for matching blue dashed lines with arrowheads} \\)"
+                },
+                {
+                  "explain": "Next, we observe that the left vertical dashed line passes through points \\(A\\) and \\(C\\) (line \\(AC\\)), and the right vertical dashed line passes through points \\(B\\) and \\(D\\) (line \\(BD\\)).",
+                  "work": "\\( \\text{Lines: } AC \\text{ and } BD \\)"
+                },
+                {
+                  "explain": "Finally, we apply the standard parallel notation symbol \\(\\\\parallel\\). Writing that line \\(AC\\) is parallel to line \\(BD\\) yields \\(AC \\\\parallel BD\\).",
+                  "work": "\\( AC \\\\parallel BD \\)"
+                }
+              ]
+            },
+            {
+              "id": "q3c",
+              "type": "mc",
+              "stem": "Name the point of intersection of the lines $AB$ and $CD$.",
+              "options": [
+                "Point $A$",
+                "Point $B$",
+                "Point $P$",
+                "Point $M$"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "We start by identifying the two lines \\(AB\\) (the horizontal line) and \\(CD\\) (the vertical solid line) on the coordinate plane.",
+                  "work": "\\( \\text{Find lines: } AB \\text{ and } CD \\)"
+                },
+                {
+                  "explain": "Next, we trace both lines to locate the single point where they cross each other. This is the intersection point.",
+                  "work": "\\( AB \\\\cap CD \\)"
+                },
+                {
+                  "explain": "Finally, we read the label of this intersection point from the diagram, which is clearly marked as \\(M\\). Thus, the correct option is Point \\(M\\).",
+                  "work": "\\( AB \\\\cap CD = Point \\; M \\)"
+                }
+              ]
+            },
+            {
+              "id": "q3d",
+              "type": "mc",
+              "stem": "Name the line joining $C$ and the intersection of $AB$ and $CD$.",
+              "options": [
+                "Line $CM$",
+                "Line $AM$",
+                "Line $CD$",
+                "Line $AC$"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We begin by determining the intersection of lines \\(AB\\) and \\(CD\\), which we previously found to be the point \\(M\\).",
+                  "work": "\\( \\text{Intersection} = M \\)"
+                },
+                {
+                  "explain": "Next, we identify the line that connects point \\(C\\) and this intersection point \\(M\\).",
+                  "work": "\\( \\text{Connect point } C \\text{ and point } M \\)"
+                },
+                {
+                  "explain": "Finally, in standard geometric notation, a line passing through points \\(C\\) and \\(M\\) is named Line \\(CM\\). This corresponds directly to our correct option.",
+                  "work": "\\( \\text{Line Name: } CM \\)"
+                }
+              ]
+            },
+            {
+              "id": "q3e",
+              "type": "mc",
+              "stem": "What point belongs to both lines $AC$ and $CD$?",
+              "options": [
+                "Point $A$",
+                "Point $C$",
+                "Point $B$",
+                "Point $P$"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We start by identifying the two lines \\(AC\\) (the left dashed vertical line) and \\(CD\\) (the vertical solid line passing through the center).",
+                  "work": "\\( \\text{Find lines: } AC \\text{ and } CD \\)"
+                },
+                {
+                  "explain": "Next, we find the common point shared by both lines. This is the point of intersection between line \\(AC\\) and line \\(CD\\).",
+                  "work": "\\( AC \\\\cap CD \\)"
+                },
+                {
+                  "explain": "Finally, looking at the letter designations, both lines share the letter \\(C\\). The intersection point in the diagram is Point \\(C\\).",
+                  "work": "\\( AC \\\\cap CD = Point \\; C \\)"
+                }
+              ]
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "buRlolE2dh6oaZMIpRcG",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the product, simplifying where possible: \\\\( \\\\frac{1}{4} \\\\times \\\\frac{3}{5} \\\\)",
+          "options": [
+            "\\( \\\\frac{3}{21} \\)",
+            "\\( \\\\frac{3}{20} \\)",
+            "\\( \\\\frac{4}{20} \\)",
+            "\\( \\\\frac{20}{3} \\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "We begin by setting up the product, multiplying the numerators and the denominators respectively.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the values. The product of the numerators is 3, and the product of the denominators is 20.",
+              "work": "\\( \\\\frac{3}{20} \\)"
+            },
+            {
+              "explain": "Finally, we check if the fraction can be simplified. Since 3 and 20 are coprime, the fraction is in its simplest form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{3}{20} \\)"
+            }
+          ]
+        },
+        {
+          "id": "cFWooF7i9L47uPvKkiiS",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram below shows two pairs of parallel lines. Answer the questions below using correct geometric symbols.",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 400 300\" width=\"100%\" height=\"240\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Extended horizontal parallel lines -->\n  <line x1=\"60\" y1=\"90\" x2=\"340\" y2=\"90\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"60\" y1=\"210\" x2=\"340\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Extended slanted parallel lines -->\n  <line x1=\"150\" y1=\"55\" x2=\"90\" y2=\"245\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"290\" y1=\"55\" x2=\"230\" y2=\"245\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Single arrowheads for horizontal parallel lines (pointing right) -->\n  <path d=\"M 195 85 L 205 90 L 195 95 Z\" fill=\"#6366f1\"/>\n  <path d=\"M 165 205 L 175 210 L 165 215 Z\" fill=\"#6366f1\"/>\n  \n  <!-- Double arrowheads for slanted parallel lines (pointing up-right) -->\n  <!-- On WZ (around x=120, y=150) -->\n  <g transform=\"translate(120, 150) rotate(-74)\" fill=\"#6366f1\">\n    <path d=\"M -8 -4 L 2 0 L -8 4 Z\"/>\n    <path d=\"M -1 -4 L 9 0 L -1 4 Z\"/>\n  </g>\n  <!-- On XY (around x=260, y=150) -->\n  <g transform=\"translate(260, 150) rotate(-74)\" fill=\"#6366f1\">\n    <path d=\"M -8 -4 L 2 0 L -8 4 Z\"/>\n    <path d=\"M -1 -4 L 9 0 L -1 4 Z\"/>\n  </g>\n  \n  <!-- Highlighting Vertices with elegant circles -->\n  <circle cx=\"138.5\" cy=\"90\" r=\"6\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"2\"/>\n  <circle cx=\"278.5\" cy=\"90\" r=\"6\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"2\"/>\n  <circle cx=\"101.5\" cy=\"210\" r=\"6\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"2\"/>\n  <circle cx=\"241.5\" cy=\"210\" r=\"6\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"2\"/>\n  \n  <!-- Mathematically offset Labels to prevent overlap -->\n  <text x=\"138.5\" y=\"72\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit', sans-serif\">W</text>\n  <text x=\"278.5\" y=\"72\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit', sans-serif\">X</text>\n  <text x=\"90\" y=\"230\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit', sans-serif\">Z</text>\n  <text x=\"253\" y=\"230\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"15\" font-weight=\"900\" font-family=\"'Outfit', sans-serif\">Y</text>\n</svg>"
+          },
+          "parts": [
+            {
+              "id": "q2a",
+              "type": "mc",
+              "stem": "In symbols, write \"$WX$ is parallel to $ZY$\".",
+              "options": [
+                "$WX \\parallel ZY$",
+                "$WX \\perp ZY$",
+                "$WX \\parallel XY$",
+                "$WX = ZY$"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We begin by identifying the two lines to compare: Line \\(WX\\) (the top horizontal line) and Line \\(ZY\\) (the bottom horizontal line).",
+                  "work": "\\( \\text{Compare lines } WX \\text{ and } ZY \\)"
+                },
+                {
+                  "explain": "Next, we recall that the standard mathematical symbol for representing that two lines are parallel (never intersecting in the same plane) is \\(\\\\parallel\\).",
+                  "work": "\\( \\text{Parallel Symbol: } \\\\parallel \\)"
+                },
+                {
+                  "explain": "Finally, we combine the line names with the parallel symbol to write \\(WX \\\\parallel ZY\\). This matches option A.",
+                  "work": "\\( WX \\\\parallel ZY \\)"
+                }
+              ]
+            },
+            {
+              "id": "q2b",
+              "type": "mc",
+              "stem": "In symbols, write \"$XY$ is parallel to $WZ$\".",
+              "options": [
+                "$XY \\parallel WZ$",
+                "$XY \\perp WZ$",
+                "$XY \\parallel WX$",
+                "$XY = WZ$"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We begin by locating the two slanted parallel lines in the diagram: Line \\(XY\\) on the right and Line \\(WZ\\) on the left.",
+                  "work": "\\( \\text{Identify slanted lines: } XY \\text{ and } WZ \\)"
+                },
+                {
+                  "explain": "Next, we use the standard parallel operator \\(\\\\parallel\\) to represent that these two lines have the same slope and will never cross.",
+                  "work": "\\( \\text{Parallel Operator: } \\\\parallel \\)"
+                },
+                {
+                  "explain": "Finally, we write the symbolic expression representing this relationship, which is \\(XY \\\\parallel WZ\\). This corresponds directly to option A.",
+                  "work": "\\( XY \\\\parallel WZ \\)"
+                }
+              ]
+            },
+            {
+              "id": "q2c",
+              "type": "mc",
+              "stem": "What is the intersection of the lines $WX$ and $XY$?",
+              "options": [
+                "Point $W$",
+                "Point $Y$",
+                "Point $X$",
+                "Point $Z$"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "We begin by identifying the two lines to intersect: Line \\(WX\\) (the top horizontal line) and Line \\(XY\\) (the right slanted line).",
+                  "work": "\\( \\text{Find lines: } WX \\text{ and } XY \\)"
+                },
+                {
+                  "explain": "Next, we find the common letter/point between the names of the two lines, which represents the point where they cross each other in the diagram.",
+                  "work": "\\( WX \\\\cap XY \\)"
+                },
+                {
+                  "explain": "Finally, looking at the diagram, the two lines meet at the top-right corner, which is labeled Point \\(X\\). Thus, the correct option is Point \\(X\\).",
+                  "work": "\\( WX \\\\cap XY = Point \\; X \\)"
+                }
+              ]
+            },
+            {
+              "id": "q2d",
+              "type": "mc",
+              "stem": "What point lies on both $XY$ and $YZ$?",
+              "options": [
+                "Point $W$",
+                "Point $X$",
+                "Point $Z$",
+                "Point $Y$"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "We start by identifying the two lines in question: Line \\(XY\\) (the right slanted line) and Line \\(YZ\\) (the bottom horizontal line).",
+                  "work": "\\( \\text{Find lines: } XY \\text{ and } YZ \\)"
+                },
+                {
+                  "explain": "Next, we look for the common point shared by both lines. Mathematically, this is their point of intersection.",
+                  "work": "\\( XY \\\\cap YZ \\)"
+                },
+                {
+                  "explain": "Finally, observing the letters, both names share the letter \\(Y\\). Looking at the diagram, the bottom-right corner where they meet is Point \\(Y\\).",
+                  "work": "\\( XY \\\\cap YZ = Point \\; Y \\)"
+                }
+              ]
+            },
+            {
+              "id": "q2e",
+              "type": "mc",
+              "stem": "Do any points lie on both lines $WX$ and $ZY$?",
+              "options": [
+                "No, because parallel lines never intersect.",
+                "Yes, point $W$.",
+                "Yes, point $X$.",
+                "Yes, point $Z$."
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We begin by locating lines \\(WX\\) (top horizontal line) and \\(ZY\\) (bottom horizontal line) in the diagram.",
+                  "work": "\\( \\text{Compare lines } WX \\text{ and } ZY \\)"
+                },
+                {
+                  "explain": "Next, we observe that these two lines are parallel to each other. By definition, parallel lines in the same plane never meet, no matter how far they are extended.",
+                  "work": "\\( WX \\\\parallel ZY \\)"
+                },
+                {
+                  "explain": "Finally, since they never intersect, there are no common points between them. Therefore, the correct answer is: No, because parallel lines never intersect.",
+                  "work": "\\( WX \\\\cap ZY = \\\\emptyset \\)"
+                }
+              ]
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "cR3Rwod6nxnPELv16cIx",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "This problem demonstrates a famous result in projective geometry called Pappus' Theorem.",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 400 300\" width=\"100%\" height=\"240\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Main Lines L1 (DEF) and L2 (UVW) -->\n  <line x1=\"50\" y1=\"65\" x2=\"350\" y2=\"95\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"50\" y1=\"235\" x2=\"350\" y2=\"205\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Dashed Line representing Pappus Collinearity Line -->\n  <line x1=\"50\" y1=\"150\" x2=\"350\" y2=\"150\" stroke=\"#6366f1\" stroke-dasharray=\"4\" stroke-width=\"1.8\"/>\n  \n  <!-- Cross Intersections (DV, UE, EW, VF, FU, WD) -->\n  <line x1=\"100\" y1=\"70\" x2=\"200\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <line x1=\"100\" y1=\"230\" x2=\"200\" y2=\"80\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  \n  <line x1=\"200\" y1=\"80\" x2=\"300\" y2=\"210\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <line x1=\"200\" y1=\"220\" x2=\"300\" y2=\"90\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  \n  <line x1=\"300\" y1=\"90\" x2=\"100\" y2=\"230\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  <line x1=\"300\" y1=\"210\" x2=\"100\" y2=\"70\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n  \n  <!-- Outer Collinear points (DEF) -->\n  <circle cx=\"100\" cy=\"70\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  <circle cx=\"200\" cy=\"80\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  <circle cx=\"300\" cy=\"90\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  \n  <!-- Outer Collinear points (UVW) -->\n  <circle cx=\"100\" cy=\"230\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  <circle cx=\"200\" cy=\"220\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  <circle cx=\"300\" cy=\"210\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  \n  <!-- Intersections X, Y, Z (Strictly collinear on y=150) -->\n  <circle cx=\"153.3\" cy=\"150\" r=\"5.5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  <circle cx=\"214.3\" cy=\"150\" r=\"5.5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  <circle cx=\"253.8\" cy=\"150\" r=\"5.5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  \n  <!-- Labels -->\n  <text x=\"100\" y=\"54\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">D</text>\n  <text x=\"200\" y=\"64\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">E</text>\n  <text x=\"300\" y=\"74\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">F</text>\n  \n  <text x=\"100\" y=\"248\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">U</text>\n  <text x=\"200\" y=\"238\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">V</text>\n  <text x=\"300\" y=\"228\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">W</text>\n  \n  <text x=\"153.3\" y=\"135\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">X</text>\n  <text x=\"214.3\" y=\"135\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Z</text>\n  <text x=\"253.8\" y=\"170\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Y</text>\n</svg>"
+          },
+          "parts": [
+            {
+              "id": "q5a",
+              "type": "mc",
+              "stem": "According to Pappus' Theorem, what special mathematical property is shared by points $X, Y,$ and $Z$?",
+              "options": [
+                "They are collinear (they lie on a single straight line)",
+                "They are concurrent (lines pass through them)",
+                "They form an equilateral triangle",
+                "They are perpendicular to each other"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We start by identifying the three cross-intersection points in the diagram: Point \\(X\\) (intersection of \\(DV\\) and \\(UE\\)), Point \\(Y\\) (intersection of \\(EW\\) and \\(VF\\)), and Point \\(Z\\) (intersection of \\(FU\\) and \\(WD\\)).",
+                  "work": "\\( X = DV \\\\cap UE, \\; Y = EW \\\\cap VF, \\; Z = FU \\\\cap WD \\)"
+                },
+                {
+                  "explain": "Next, we observe the blue dashed line passing horizontally through the center of the figure. Point \\(X\\), Point \\(Z\\), and Point \\(Y\\) all lie directly on this single straight line.",
+                  "work": "\\( \\text{Dashed line: } y = 150 \\)"
+                },
+                {
+                  "explain": "Finally, we recall that the geometric property of points lying on a single straight line is called collinearity. Therefore, according to Pappus' Theorem, points \\(X\\), \\(Y\\), and \\(Z\\) are collinear.",
+                  "work": "\\( \\text{Collinear points: } X, \\; Y, \\; Z \\)"
+                }
+              ]
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "CRXJmlbWXX32rEoigTjp",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find: \\\\( \\\\frac{9}{16} \\\\times \\\\frac{8}{15} \\\\)",
+          "options": [
+            "\\( \\\\frac{3}{10} \\)",
+            "\\( \\\\frac{10}{3} \\)",
+            "\\( \\\\frac{3}{11} \\)",
+            "\\( \\\\frac{2}{5} \\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "We begin by setting up the multiplication of the two fractions, combining the numerators and denominators respectively.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the values. The product of the numerators is \\( 9 \\\\times 8 = 72 \\), and the product of the denominators is \\( 16 \\\\times 15 = 240 \\). This represents our product before reduction.",
+              "work": "\\( \\\\frac{72}{240} \\)"
+            },
+            {
+              "explain": "Finally, we simplify this fraction by dividing both terms by their greatest common divisor, which is 24. This simplifies the fraction to its final value.",
+              "work": "\\( \\\\frac{72 \\\\div 24}{240 \\\\div 24} = \\\\frac{3}{10} \\)"
+            }
+          ]
+        },
+        {
+          "id": "cXu8HeLmLn0lArBZSlg0",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find: \\(\\frac{13}{14} \\times \\frac{7}{26}\\)",
+          "options": [
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{2}{4}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply numerators and denominators</strong><br>Multiply the top numbers together and the bottom numbers together:<br>$\\frac{13 \\times 7}{14 \\times 26} = \\frac{91}{364}$</p><p><strong>Step 2: Simplify the fraction</strong><br>Divide the numerator and denominator by their greatest common divisor ($91$):<br>$\\frac{91 \\div 91}{364 \\div 91} = \\frac{1}{4}$</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{91}{364}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{91 \\div 91}{364 \\div 91} = \\frac{1}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "DBAjNxog17KWz5qZx9UL",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find: \\\\( \\\\frac{2}{7} \\\\) of \\\\( 11 \\\\)",
+          "options": [
+            "\\( \\\\frac{7}{22} \\)",
+            "\\( \\\\frac{23}{7} \\)",
+            "\\( \\\\frac{22}{7} \\)",
+            "\\( \\\\frac{11}{7} \\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We begin by converting the word \"of\" to the multiplication operator. We also express the whole number 11 as a fraction by putting it over 1.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we multiply the numerators and the denominators. This gives us the product directly since there are no common factors to cancel.",
+              "work": "\\( \\\\frac{2 \\\\times 11}{7 \\\\times 1} = \\\\frac{22}{7} \\)"
+            },
+            {
+              "explain": "Finally, we check the fraction for simplification. Since 22 and 7 share no common factors other than 1, the fraction is in its simplest improper form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{22}{7} \\)"
+            }
+          ]
+        },
+        {
+          "id": "drtpms2f093JbMMlA4VJ",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\(\\frac{1}{2} \\times \\frac{4}{9} \\times \\frac{3}{10}\\)",
+          "options": [
+            "\\(\\frac{1}{15}\\)",
+            "\\(\\frac{2}{15}\\)",
+            "\\(\\frac{1}{9}\\)",
+            "\\(\\frac{3}{15}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply all numerators and all denominators</strong><br>$\\frac{1 \\times 1 \\times 1}{2 \\times 4 \\times 5} = \\frac{1}{40}$</p><p><strong>Step 2: Check for simplification</strong><br>The fraction $\\frac{1}{40}$ is already in its simplest form.</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{12}{180}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{12 \\div 12}{180 \\div 12} = \\frac{1}{15}\\)"
+            }
+          ]
+        },
+        {
+          "id": "dUFhlOxDWKf1H1n7KvM9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\(\\frac{2}{5} \\times \\frac{5}{12}\\)",
+          "options": [
+            "\\(\\frac{1}{5}\\)",
+            "\\(\\frac{1}{6}\\)",
+            "\\(\\frac{2}{6}\\)",
+            "\\(\\frac{1}{12}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply all numerators and all denominators</strong><br>$\\frac{2 \\times 3 \\times 5}{5 \\times 4 \\times 9} = \\frac{30}{180}$</p><p><strong>Step 2: Simplify the fraction</strong><br>Divide the numerator and denominator by their greatest common divisor ($30$):<br>$\\frac{30 \\div 30}{180 \\div 30} = \\frac{1}{6}$</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{10}{60}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{10 \\div 10}{60 \\div 10} = \\frac{1}{6}\\)"
+            }
+          ]
+        },
+        {
+          "id": "eIlnCrqEkcAI3AuQl67A",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\(\\frac{2}{3} \\times \\frac{6}{7} \\times \\frac{7}{12}\\)",
+          "options": [
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{1}{4}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply all numerators and all denominators</strong><br>$\\frac{2 \\times 4 \\times 5}{3 \\times 5 \\times 8} = \\frac{40}{120}$</p><p><strong>Step 2: Simplify the fraction</strong><br>Divide the numerator and denominator by their greatest common divisor ($40$):<br>$\\frac{40 \\div 40}{120 \\div 40} = \\frac{1}{3}$</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{84}{252}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{84 \\div 84}{252 \\div 84} = \\frac{1}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "fiRc0Js9PcBoCk8lPQ0O",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the product, simplifying where possible: \\(\\frac{1}{3} \\times \\frac{1}{5}\\)",
+          "options": [
+            "\\(\\frac{2}{15}\\)",
+            "\\(\\frac{1}{15}\\)",
+            "\\(\\frac{1}{8}\\)",
+            "\\(\\frac{15}{1}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply numerators and denominators</strong><br>Multiply the top numbers together and the bottom numbers together:<br>$\\frac{1 \\times 1}{3 \\times 5} = \\frac{1}{15}$</p><p><strong>Step 2: Check for simplification</strong><br>The fraction $\\frac{1}{15}$ is already in its simplest form.</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{1}{15}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\text{Final Answer: } \\frac{1}{15}\\)"
+            }
+          ]
+        },
+        {
+          "id": "fZyON1kE9IeAHjNgeU1D",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\(\\frac{15}{16} \\times \\frac{8}{25} \\times \\frac{5}{9}\\)",
+          "options": [
+            "\\(\\frac{1}{5}\\)",
+            "\\(\\frac{2}{6}\\)",
+            "\\(\\frac{1}{6}\\)",
+            "\\(\\frac{1}{8}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply all numerators and all denominators</strong><br>$\\frac{15 \\times 24 \\times 7}{16 \\times 35 \\times 9} = \\frac{2520}{5040}$</p><p><strong>Step 2: Simplify the fraction</strong><br>Divide the numerator and denominator by their greatest common divisor ($2520$):<br>$\\frac{2520 \\div 2520}{5040 \\div 2520} = \\frac{1}{2}$</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{600}{3600}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{600 \\div 600}{3600 \\div 600} = \\frac{1}{6}\\)"
+            }
+          ]
+        },
+        {
+          "id": "HcNx5MsUT6SDTzrdIbD7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the product, simplifying where possible: \\\\( \\\\frac{1}{3} \\\\times \\\\frac{2}{5} \\\\)",
+          "options": [
+            "\\( \\\\frac{2}{16} \\)",
+            "\\( \\\\frac{3}{15} \\)",
+            "\\( \\\\frac{2}{15} \\)",
+            "\\( \\\\frac{15}{2} \\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We begin by setting up the multiplication of the two simple fractions, combining the numerators and denominators.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we compute the final product. Multiplying the numerators gives 2, and multiplying the denominators gives 15.",
+              "work": "\\( \\\\frac{2}{15} \\)"
+            },
+            {
+              "explain": "Finally, we check if the fraction can be simplified. Since 2 and 15 are coprime, the fraction is already in its simplest form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{2}{15} \\)"
+            }
+          ]
+        },
+        {
+          "id": "i3Y3r3dhklvWonUjsxDR",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find: \\(\\frac{2}{5} \\times 6\\)",
+          "options": [
+            "\\(\\frac{12}{5}\\)",
+            "\\(\\frac{5}{12}\\)",
+            "\\(\\frac{8}{5}\\)",
+            "\\(\\frac{12}{6}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply numerators and denominators</strong><br>Multiply the top numbers together and the bottom numbers together:<br>$\\frac{2 \\times 6}{5 \\times 1} = \\frac{12}{5}$</p><p><strong>Step 2: Check for simplification</strong><br>The fraction $\\frac{12}{5}$ is already in its simplest form.</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{12}{5}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\text{Final Answer: } \\frac{12}{5}\\)"
+            }
+          ]
+        },
+        {
+          "id": "Is9hgc2mgCYNN0K51mFm",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find: \\\\( 3 \\\\times \\\\frac{2}{5} \\\\)",
+          "options": [
+            "\\( \\\\frac{6}{5} \\)",
+            "\\( \\\\frac{5}{6} \\)",
+            "\\( \\\\frac{7}{5} \\)",
+            "\\( \\\\frac{6}{6} \\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "We begin by representing the whole number 3 as a fraction by placing it over a denominator of 1. This allows us to multiply it systematically by the second fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we multiply the numerators and denominators together. This calculates the product directly.",
+              "work": "\\( \\\\frac{3 \\\\times 2}{1 \\\\times 5} = \\\\frac{6}{5} \\)"
+            },
+            {
+              "explain": "Finally, we verify if the fraction can be simplified. Since 6 and 5 share no common factors, the fraction is in its simplest improper form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{6}{5} \\)"
+            }
+          ]
+        },
+        {
+          "id": "J2NWhuhxRywBSPFSBYCh",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find: \\\\( \\\\frac{5}{12} \\\\times 5 \\\\)",
+          "options": [
+            "\\( \\\\frac{12}{25} \\)",
+            "\\( \\\\frac{25}{13} \\)",
+            "\\( \\\\frac{25}{12} \\)",
+            "\\( \\\\frac{26}{12} \\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We begin by expressing the whole number 5 as a fraction, which is 5 over 1. This establishes our strategy for fraction multiplication.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we multiply the numerators and the denominators together. The product of the numerators is \\( 5 \\\\times 5 = 25 \\), and the product of the denominators is \\( 12 \\\\times 1 = 12 \\).",
+              "work": "\\( \\\\frac{25}{12} \\)"
+            },
+            {
+              "explain": "Finally, we check if the fraction can be simplified. Since 25 and 12 are coprime, the fraction is in its simplest improper form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{25}{12} \\)"
+            }
+          ]
+        },
+        {
+          "id": "KNY4o0Pe2LcwCoD45p8T",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\\\( \\\\frac{9}{14} \\\\times \\\\frac{28}{33} \\\\times \\\\frac{11}{18} \\\\)",
+          "options": [
+            "3",
+            "\\( \\\\frac{1}{4} \\)",
+            "\\( \\\\frac{2}{3} \\)",
+            "\\( \\\\frac{1}{3} \\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "We begin by setting up the multiplication of the three fractions by grouping their numerators and denominators together. This lets us see all terms in one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we compute the products of the numerators and denominators. Multiplying the numerators gives \\( 9 \\\\times 28 \\\\times 11 = 2772 \\), and multiplying the denominators gives \\( 14 \\\\times 33 \\\\times 18 = 8316 \\). This represents the unsimplified fraction.",
+              "work": "\\( \\\\frac{2772}{8316} \\)"
+            },
+            {
+              "explain": "Finally, we simplify the fraction by dividing both terms by their greatest common divisor, which is 2772. This reduces the fraction to its simplest form.",
+              "work": "\\( \\\\frac{2772 \\\\div 2772}{8316 \\\\div 2772} = \\\\frac{1}{3} \\)"
+            }
+          ]
+        },
+        {
+          "id": "LjEFaDShSJsk3Hcj8iTH",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find: \\\\( \\\\frac{3}{10} \\\\times 7 \\\\)",
+          "options": [
+            "\\( \\\\frac{10}{21} \\)",
+            "\\( \\\\frac{21}{10} \\)",
+            "\\( \\\\frac{21}{11} \\)",
+            "\\( \\\\frac{22}{10} \\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "We begin by representing the whole number 7 as a fraction by placing it over a denominator of 1. This aligns it for standard multiplication.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we multiply the numerators together and the denominators together. The product of the numerators is \\( 3 \\\\times 7 = 21 \\), and the product of the denominators is \\( 10 \\\\times 1 = 10 \\).",
+              "work": "\\( \\\\frac{21}{10} \\)"
+            },
+            {
+              "explain": "Finally, we check if the fraction can be simplified. Since 21 and 10 share no common factors other than 1, it is already in its simplest improper form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{21}{10} \\)"
+            }
+          ]
+        },
+        {
+          "id": "Mbsl9L6Xcq2vlqyLlFOB",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find: \\\\( \\\\frac{1}{4} \\\\) of \\\\( \\\\frac{1}{3} \\\\)",
+          "options": [
+            "\\( \\\\frac{1}{12} \\)",
+            "\\( \\\\frac{2}{12} \\)",
+            "\\( \\\\frac{1}{13} \\)",
+            "12"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "We start by translating the word \"of\" into the mathematical multiplication operator. This represents the fraction multiplication task.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we multiply the numerators and the denominators together. Multiplying the numerators gives \\( 1 \\\\times 1 = 1 \\), and multiplying the denominators gives \\( 4 \\\\times 3 = 12 \\).",
+              "work": "\\( \\\\frac{1}{12} \\)"
+            },
+            {
+              "explain": "Finally, we verify that 1 and 12 are coprime, meaning the fraction cannot be simplified further. This gives us our final answer.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{1}{12} \\)"
+            }
+          ]
+        },
+        {
+          "id": "MdDDdXVddPTM83EP1VNX",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A four-point general quadrangle is shown below. We can produce (extend) its opposite sides to find additional intersections.",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 400 300\" width=\"100%\" height=\"240\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Extended dashed lines -->\n  <line x1=\"120\" y1=\"80\" x2=\"360\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3\"/>\n  <line x1=\"100\" y1=\"160\" x2=\"360\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3\"/>\n  <line x1=\"120\" y1=\"80\" x2=\"80\" y2=\"240\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3\"/>\n  <line x1=\"240\" y1=\"90\" x2=\"80\" y2=\"240\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"3\"/>\n  \n  <!-- Diagonals inside quadrangle meeting at Z (170, 125) -->\n  <line x1=\"120\" y1=\"80\" x2=\"186.7\" y2=\"140\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n  <line x1=\"240\" y1=\"90\" x2=\"100\" y2=\"160\" stroke=\"#cbd5e1\" stroke-width=\"1\"/>\n  \n  <!-- Quadrangle Polygon with mathematically correct R (186.7, 140) -->\n  <polygon points=\"120,80 240,90 186.7,140 100,160\" fill=\"rgba(99, 102, 241, 0.05)\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n  \n  <!-- Vertices of Quadrangle (P, Q, R, S) -->\n  <circle cx=\"120\" cy=\"80\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  <circle cx=\"240\" cy=\"90\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  <circle cx=\"186.7\" cy=\"140\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  <circle cx=\"100\" cy=\"160\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  \n  <!-- Intersections (X, Y, Z) -->\n  <circle cx=\"360\" cy=\"100\" r=\"5.5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  <circle cx=\"80\" cy=\"240\" r=\"5.5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  <circle cx=\"170\" cy=\"125\" r=\"5.5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.8\"/>\n  \n  <!-- Labels positioned to prevent overlap -->\n  <text x=\"120\" y=\"63\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">P</text>\n  <text x=\"245\" y=\"73\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Q</text>\n  <text x=\"202\" y=\"148\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">R</text>\n  <text x=\"85\" y=\"168\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">S</text>\n  \n  <text x=\"376\" y=\"105\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">X</text>\n  <text x=\"64\" y=\"246\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Y</text>\n  <text x=\"170\" y=\"114\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Z</text>\n</svg>"
+          },
+          "parts": [
+            {
+              "id": "q6a",
+              "type": "mc",
+              "stem": "If you construct the lines $PQ$ and $SR$, and produce (extend) them, at which point do they meet?",
+              "options": [
+                "Point $X$",
+                "Point $Y$",
+                "Point $Z$",
+                "Point $P$"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We begin by locating points \\(P, Q, S,\\) and \\(R\\) representing the vertices of the general quadrangle in the diagram. We identify the side lines \\(PQ\\) and \\(SR\\).",
+                  "work": "\\( \\text{Identify lines: } PQ \\text{ and } SR \\)"
+                },
+                {
+                  "explain": "Next, we extend (produce) both of these lines in the direction of their convergence until they meet.",
+                  "work": "\\( PQ \\\\cap SR \\)"
+                },
+                {
+                  "explain": "Finally, tracing the extended lines, they intersect at the far right point labeled as Point \\(X\\). This matches option A.",
+                  "work": "\\( PQ \\\\cap SR = Point \\; X \\)"
+                }
+              ]
+            },
+            {
+              "id": "q6b",
+              "type": "mc",
+              "stem": "If you construct the lines $PS$ and $QR$, and produce (extend) them, at which point do they meet?",
+              "options": [
+                "Point $X$",
+                "Point $Y$",
+                "Point $Z$",
+                "Point $Q$"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We begin by identifying the other pair of opposite sides in the quadrangle: Line \\(PS\\) (left side) and Line \\(QR\\) (right side).",
+                  "work": "\\( \\text{Identify lines: } PS \\text{ and } QR \\)"
+                },
+                {
+                  "explain": "Next, we extend both lines upwards towards their point of convergence.",
+                  "work": "\\( PS \\\\cap QR \\)"
+                },
+                {
+                  "explain": "Finally, tracing the extensions of \\(PS\\) and \\(QR\\) upwards, we see they intersect at the top point labeled as Point \\(Y\\). This matches option B.",
+                  "work": "\\( PS \\\\cap QR = Point \\; Y \\)"
+                }
+              ]
+            },
+            {
+              "id": "q6c",
+              "type": "mc",
+              "stem": "Construct the diagonals $PR$ and $QS$, at which point do they intersect?",
+              "options": [
+                "Point $X$",
+                "Point $Y$",
+                "Point $Z$",
+                "Point $S$"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "We start by identifying the diagonals of the quadrangle. Diagonals connect opposite vertices: \\(PR\\) connects \\(P\\) and \\(R\\), while \\(QS\\) connects \\(Q\\) and \\(S\\).",
+                  "work": "\\( \\text{Identify diagonals: } PR \\text{ and } QS \\)"
+                },
+                {
+                  "explain": "Next, we locate the intersection point of these two diagonal lines inside the quadrangle.",
+                  "work": "\\( PR \\\\cap QS \\)"
+                },
+                {
+                  "explain": "Finally, tracing the lines \\(PR\\) and \\(QS\\), they cross at the central point labeled as Point \\(Z\\). This corresponds directly to option C.",
+                  "work": "\\( PR \\\\cap QS = Point \\; Z \\)"
+                }
+              ]
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "mEmq3KjZRQwkMmP1gz7c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\(\\frac{3}{4} \\times \\frac{8}{15} \\times \\frac{5}{12}\\)",
+          "options": [
+            "\\(\\frac{1}{5}\\)",
+            "\\(\\frac{1}{6}\\)",
+            "\\(\\frac{2}{6}\\)",
+            "\\(\\frac{1}{12}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply all numerators and all denominators</strong><br>$\\frac{3 \\times 6 \\times 14}{4 \\times 7 \\times 27} = \\frac{252}{756}$</p><p><strong>Step 2: Simplify the fraction</strong><br>Divide the numerator and denominator by their greatest common divisor ($252$):<br>$\\frac{252 \\div 252}{756 \\div 252} = \\frac{1}{3}$</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{120}{720}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{120 \\div 120}{720 \\div 120} = \\frac{1}{6}\\)"
+            }
+          ]
+        },
+        {
+          "id": "nth9LNtkBMKMAALEM6Ra",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the product, simplifying where possible: \\(\\frac{4}{3} \\times \\frac{2}{5}\\)",
+          "options": [
+            "\\(\\frac{8}{15}\\)",
+            "\\(\\frac{6}{15}\\)",
+            "\\(\\frac{8}{8}\\)",
+            "\\(\\frac{15}{8}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply numerators and denominators</strong><br>Multiply the top numbers together and the bottom numbers together:<br>$\\frac{4 \\times 2}{3 \\times 5} = \\frac{8}{15}$</p><p><strong>Step 2: Check for simplification</strong><br>The fraction $\\frac{8}{15}$ is already in its simplest form.</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{8}{15}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\text{Final Answer: } \\frac{8}{15}\\)"
+            }
+          ]
+        },
+        {
+          "id": "OJDAAlbPIuKT4GrkVbQw",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\\\( \\\\frac{18}{5} \\\\times \\\\frac{10}{21} \\\\times \\\\frac{7}{12} \\\\)",
+          "options": [
+            "2",
+            "\\( \\\\frac{1}{2} \\)",
+            "1",
+            "0"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We begin by setting up the multiplication by grouping all numerators together and all denominators together into one unified fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we compute the products of the numerators and denominators. Multiplying the numerators gives \\( 18 \\\\times 10 \\\\times 7 = 1260 \\), and multiplying the denominators gives \\( 5 \\\\times 21 \\\\times 12 = 1260 \\).",
+              "work": "\\( \\\\frac{1260}{1260} \\)"
+            },
+            {
+              "explain": "Finally, we divide the numerator by the denominator. Since they are identical, the division simplifies perfectly to 1.",
+              "work": "\\( \\\\frac{1260}{1260} = 1 \\)"
+            }
+          ]
+        },
+        {
+          "id": "OzkaKVY9be4cDgeO3YKo",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the product, simplifying where possible: \\\\( \\\\frac{5}{3} \\\\times \\\\frac{5}{4} \\\\)",
+          "options": [
+            "\\( \\\\frac{25}{13} \\)",
+            "\\( \\\\frac{12}{25} \\)",
+            "\\( \\\\frac{25}{12} \\)",
+            "\\( \\\\frac{26}{12} \\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We begin by setting up the product, multiplying the numerators and the denominators respectively.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the values. The product of the numerators is \\( 5 \\\\times 5 = 25 \\), and the product of the denominators is \\( 3 \\\\times 4 = 12 \\).",
+              "work": "\\( \\\\frac{25}{12} \\)"
+            },
+            {
+              "explain": "Finally, we check if the fraction can be simplified. Since 25 and 12 are coprime, the fraction is in its simplest improper form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{25}{12} \\)"
+            }
+          ]
+        },
+        {
+          "id": "p3aqpOfokyU8h4FLxrNg",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find: \\(\\frac{24}{45} \\times \\frac{35}{56}\\)",
+          "options": [
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{5}{6}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply numerators and denominators</strong><br>Multiply the top numbers together and the bottom numbers together:<br>$\\frac{24 \\times 35}{45 \\times 56} = \\frac{840}{2520}$</p><p><strong>Step 2: Simplify the fraction</strong><br>Divide the numerator and denominator by their greatest common divisor ($840$):<br>$\\frac{840 \\div 840}{2520 \\div 840} = \\frac{1}{3}$</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{840}{2520}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{840 \\div 840}{2520 \\div 840} = \\frac{1}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "pYtSRZEFCiIiLlRcj0SE",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "In a plane, there are eight distinct possible configurations for placing four straight lines.",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 540 300\" width=\"100%\" height=\"250\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Row 1: A, B, C, D -->\n  <!-- Configuration A: 4 Parallel Lines -->\n  <g transform=\"translate(10, 10)\">\n    <rect width=\"115\" height=\"110\" fill=\"#fff\" rx=\"12\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    <line x1=\"15\" y1=\"25\" x2=\"100\" y2=\"25\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"15\" y1=\"40\" x2=\"100\" y2=\"40\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"15\" y1=\"55\" x2=\"100\" y2=\"55\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"15\" y1=\"70\" x2=\"100\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <text x=\"57\" y=\"95\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">Config A</text>\n  </g>\n  \n  <!-- Configuration B: 3 Parallel + Slanted Transversal -->\n  <g transform=\"translate(140, 10)\">\n    <rect width=\"115\" height=\"110\" fill=\"#fff\" rx=\"12\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    <line x1=\"15\" y1=\"30\" x2=\"100\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"15\" y1=\"50\" x2=\"100\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"15\" y1=\"70\" x2=\"100\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"30\" y1=\"85\" x2=\"85\" y2=\"15\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <text x=\"57\" y=\"95\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">Config B</text>\n  </g>\n\n  <!-- Configuration C: 3 Parallel + Perpendicular Transversal -->\n  <g transform=\"translate(270, 10)\">\n    <rect width=\"115\" height=\"110\" fill=\"#fff\" rx=\"12\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    <line x1=\"15\" y1=\"30\" x2=\"100\" y2=\"30\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"15\" y1=\"50\" x2=\"100\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"15\" y1=\"70\" x2=\"100\" y2=\"70\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"57\" y1=\"85\" x2=\"57\" y2=\"15\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <text x=\"57\" y=\"95\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">Config C</text>\n  </g>\n\n  <!-- Configuration D: Parallelogram (2 Parallel + 2 Parallel) -->\n  <g transform=\"translate(400, 10)\">\n    <rect width=\"115\" height=\"110\" fill=\"#fff\" rx=\"12\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    <line x1=\"15\" y1=\"35\" x2=\"100\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"15\" y1=\"65\" x2=\"100\" y2=\"65\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"30\" y1=\"75\" x2=\"60\" y2=\"20\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"55\" y1=\"75\" x2=\"85\" y2=\"20\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <text x=\"57\" y=\"95\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">Config D</text>\n  </g>\n\n  <!-- Row 2: E, F, G, H -->\n  <!-- Configuration E: 2 Parallel + 2 Intersecting -->\n  <g transform=\"translate(10, 140)\">\n    <rect width=\"115\" height=\"110\" fill=\"#fff\" rx=\"12\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    <line x1=\"15\" y1=\"35\" x2=\"100\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"15\" y1=\"65\" x2=\"100\" y2=\"65\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"25\" y1=\"75\" x2=\"55\" y2=\"20\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"85\" y1=\"75\" x2=\"55\" y2=\"20\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <text x=\"57\" y=\"95\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">Config E</text>\n  </g>\n\n  <!-- Configuration F: 4 Concurrent Lines -->\n  <g transform=\"translate(140, 140)\">\n    <rect width=\"115\" height=\"110\" fill=\"#fff\" rx=\"12\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    <line x1=\"15\" y1=\"50\" x2=\"100\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"57\" y1=\"15\" x2=\"57\" y2=\"85\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"25\" y1=\"20\" x2=\"90\" y2=\"80\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"25\" y1=\"80\" x2=\"90\" y2=\"20\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <circle cx=\"57\" cy=\"50\" r=\"3.5\" fill=\"#f43f5e\"/>\n    <text x=\"57\" y=\"95\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">Config F</text>\n  </g>\n\n  <!-- Configuration G: 3 Concurrent + 1 Transversal -->\n  <g transform=\"translate(270, 140)\">\n    <rect width=\"115\" height=\"110\" fill=\"#fff\" rx=\"12\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    <line x1=\"15\" y1=\"50\" x2=\"100\" y2=\"50\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"25\" y1=\"20\" x2=\"90\" y2=\"80\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"25\" y1=\"80\" x2=\"90\" y2=\"20\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"15\" y1=\"75\" x2=\"100\" y2=\"75\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <circle cx=\"575\" cy=\"50\" r=\"3.5\" fill=\"#f43f5e\"/>\n    <text x=\"57\" y=\"95\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">Config G</text>\n  </g>\n\n  <!-- Configuration H: General Quadrilateral -->\n  <g transform=\"translate(400, 140)\">\n    <rect width=\"115\" height=\"110\" fill=\"#fff\" rx=\"12\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n    <line x1=\"15\" y1=\"35\" x2=\"100\" y2=\"45\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"15\" y1=\"75\" x2=\"100\" y2=\"65\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"25\" y1=\"85\" x2=\"45\" y2=\"20\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <line x1=\"90\" y1=\"85\" x2=\"75\" y2=\"20\" stroke=\"#475569\" stroke-width=\"1.8\" stroke-linecap=\"round\"/>\n    <polygon points=\"35,50 78,55 70,70 30,73\" fill=\"rgba(99, 102, 241, 0.08)\"/>\n    <text x=\"57\" y=\"95\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"11\" font-weight=\"900\" font-family=\"'Outfit'\">Config H</text>\n  </g>\n</svg>"
+          },
+          "parts": [
+            {
+              "id": "q9a",
+              "type": "mc",
+              "stem": "How many of the eight configurations involve exactly three parallel lines?",
+              "options": [
+                "1 configuration",
+                "2 configurations",
+                "3 configurations",
+                "4 configurations"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We start by analyzing all eight possible configurations for four straight lines in a single plane, labeled Config A to Config H in the diagram.",
+                  "work": "\\text{Analyze each configuration: A to H}"
+                },
+                {
+                  "explain": "Next, we search for configurations that have exactly three lines parallel to each other. Config B shows 3 parallel lines cut by a slanted transversal. Config C shows 3 parallel lines cut by a perpendicular transversal.",
+                  "work": "\\text{Exactly 3 parallel lines: Config B and Config C}"
+                },
+                {
+                  "explain": "Finally, we sum these configurations up, giving a total count of 2. This matches option B.",
+                  "work": "\\text{Total count} = 2"
+                }
+              ]
+            },
+            {
+              "id": "q9b",
+              "type": "mc",
+              "stem": "Which of the following configurations is NOT mathematically possible for four lines in a plane?",
+              "options": [
+                "Three parallel lines and one concurrent line",
+                "Four parallel lines",
+                "Four concurrent lines",
+                "Three parallel lines cut by a transversal"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We start by reviewing the definitions of parallel and concurrent lines. Parallel lines never meet, whereas concurrent lines are three or more lines that intersect at a single point.",
+                  "work": "\\text{Parallel} = \\text{no intersection}, \\; \\text{Concurrent} = \\text{intersect at 1 point}"
+                },
+                {
+                  "explain": "Next, we analyze the statement 'Three parallel lines and one concurrent line'. For a line to be 'concurrent', there must be at least three lines that meet at a point. But since three of the lines are parallel, they can never meet at a point, making this configuration mathematically impossible.",
+                  "work": "\\text{Parallel lines cannot meet } \\Rightarrow \\text{Cannot be concurrent}"
+                },
+                {
+                  "explain": "Finally, we verify that four parallel lines (Config A), four concurrent lines (Config F), and three parallel lines cut by a transversal (Config B) are all valid and possible configurations. Thus, Option A is the correct answer.",
+                  "work": "\\text{Final Answer: Option A}"
+                }
+              ]
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "qDlYSRf2i9KThYRyBd8e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the product, simplifying where possible: \\(\\frac{5}{2} \\times \\frac{3}{8}\\)",
+          "options": [
+            "\\(\\frac{15}{16}\\)",
+            "\\(\\frac{16}{15}\\)",
+            "\\(\\frac{8}{10}\\)",
+            "\\(\\frac{15}{10}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply numerators and denominators</strong><br>Multiply the top numbers together and the bottom numbers together:<br>$\\frac{5 \\times 3}{2 \\times 8} = \\frac{15}{16}$</p><p><strong>Step 2: Check for simplification</strong><br>The fraction $\\frac{15}{16}$ is already in its simplest form.</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{15}{16}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\text{Final Answer: } \\frac{15}{16}\\)"
+            }
+          ]
+        },
+        {
+          "id": "QL1WGe4EAi2cVEhSeOf0",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find: \\\\( \\\\frac{3}{2} \\\\times \\\\frac{8}{9} \\\\)",
+          "options": [
+            "\\( \\\\frac{3}{4} \\)",
+            "\\( 1 \\)",
+            "\\( \\\\frac{4}{3} \\)",
+            "\\( \\\\frac{5}{3} \\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We begin by setting up the product, multiplying the numerators and the denominators respectively.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products. The product of the numerators is \\( 3 \\\\times 8 = 24 \\), and the product of the denominators is \\( 2 \\\\times 9 = 18 \\). This gives the intermediate fraction.",
+              "work": "\\( \\\\frac{24}{18} \\)"
+            },
+            {
+              "explain": "Finally, we simplify the fraction by dividing the numerator and denominator by their greatest common divisor, which is 6.",
+              "work": "\\( \\\\frac{24 \\\\div 6}{18 \\\\div 6} = \\\\frac{4}{3} \\)"
+            }
+          ]
+        },
+        {
+          "id": "R89kM84ofAVM1mFjguPj",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find: \\\\( \\\\frac{1}{5} \\\\) of \\\\( \\\\frac{3}{4} \\\\)",
+          "options": [
+            "\\( \\\\frac{3}{21} \\)",
+            "\\( \\\\frac{3}{20} \\)",
+            "\\( \\\\frac{4}{20} \\)",
+            "\\( \\\\frac{20}{3} \\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "We start by converting the word \"of\" into the mathematical multiplication operator.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we multiply the numerators and the denominators together. The product of the numerators is 3, and the product of the denominators is 20.",
+              "work": "\\( \\\\frac{3}{20} \\)"
+            },
+            {
+              "explain": "Finally, we check if the fraction can be simplified. Since 3 and 20 share no common factors, the fraction is in its simplest form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{3}{20} \\)"
+            }
+          ]
+        },
+        {
+          "id": "RBWHT8iMaaokYXaho2sr",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find: \\\\( \\\\frac{35}{18} \\\\times \\\\frac{27}{49} \\\\)",
+          "options": [
+            "\\( \\\\frac{14}{15} \\)",
+            "\\( 1 \\)",
+            "\\( \\\\frac{15}{14} \\)",
+            "\\( \\\\frac{16}{14} \\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We start by writing the multiplication of the two fractions, combining the numerators and denominators respectively.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the intermediate products. Multiplying the numerators gives \\( 35 \\\\times 27 = 945 \\), and multiplying the denominators gives \\( 18 \\\\times 49 = 882 \\).",
+              "work": "\\( \\\\frac{945}{882} \\)"
+            },
+            {
+              "explain": "Finally, we simplify the fraction by dividing both terms by their greatest common divisor, which is 63.",
+              "work": "\\( \\\\frac{945 \\\\div 63}{882 \\\\div 63} = \\\\frac{15}{14} \\)"
+            }
+          ]
+        },
+        {
+          "id": "rFhK4fpV4YFwqMhJUy9b",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "Refer to the diagram below to answer the following questions about lines and points.",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 400 300\" width=\"100%\" height=\"240\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Dashed triangle background -->\n  <polygon points=\"200,60 100,220 300,220\" fill=\"rgba(99, 102, 241, 0.08)\" stroke=\"rgba(99, 102, 241, 0.3)\" stroke-width=\"1.5\" stroke-dasharray=\"4\"/>\n  \n  <!-- Solid lines forming the intersecting configuration, meeting exactly at P(200,60), Q(100,220), R(300,220) -->\n  <!-- Horizontal line QR -->\n  <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Line PR (passes through P(200,60) and R(300,220)) -->\n  <line x1=\"175\" y1=\"20\" x2=\"325\" y2=\"260\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Line PQ (passes through P(200,60) and Q(100,220)) -->\n  <line x1=\"225\" y1=\"20\" x2=\"75\" y2=\"260\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Highlighted Vertices -->\n  <circle cx=\"200\" cy=\"60\" r=\"6.5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"2\"/>\n  <circle cx=\"100\" cy=\"220\" r=\"6.5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"2\"/>\n  <circle cx=\"300\" cy=\"220\" r=\"6.5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"2\"/>\n  \n  <!-- Labels -->\n  <text x=\"200\" y=\"42\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"16\" font-weight=\"900\" font-family=\"'Outfit', sans-serif\">P</text>\n  <text x=\"80\" y=\"235\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"16\" font-weight=\"900\" font-family=\"'Outfit', sans-serif\">Q</text>\n  <text x=\"320\" y=\"235\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"16\" font-weight=\"900\" font-family=\"'Outfit', sans-serif\">R</text>\n</svg>"
+          },
+          "parts": [
+            {
+              "id": "q1a",
+              "type": "mc",
+              "stem": "Identify the three lines that form the triangle in the diagram.",
+              "options": [
+                "Lines $PQ$, $QR$, and $RP$",
+                "Lines $P$, $Q$, and $R$",
+                "Lines $PR$, $QQ$, and $RR$",
+                "Lines $PP$, $QR$, and $RP$"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We start by identifying the vertices of the triangle in the diagram, which are labeled as points \\(P\\), \\(Q\\), and \\(R\\).",
+                  "work": "\\text{Vertices: } P, \\; Q, \\; R"
+                },
+                {
+                  "explain": "Next, we find the names of the straight lines that join these vertices to form the three sides of the triangle.",
+                  "work": "\\text{Sides connect: } P \\text{ to } Q, \\; Q \\text{ to } R, \\text{ and } R \\text{ to } P"
+                },
+                {
+                  "explain": "Finally, we write the names of these three lines, which are Line \\(PQ\\), Line \\(QR\\), and Line \\(RP\\). This matches option A.",
+                  "work": "\\text{Final Answer: Lines } PQ, \\; QR, \\; RP"
+                }
+              ]
+            },
+            {
+              "id": "q1b",
+              "type": "mc",
+              "stem": "What is the intersection of lines $PQ$ and $QR$?",
+              "options": [
+                "Point $Q$",
+                "Point $P$",
+                "Point $R$",
+                "No intersection"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We begin by locating Line \\(PQ\\) (the left diagonal side) and Line \\(QR\\) (the bottom side) of the triangle.",
+                  "work": "\\text{Find lines: } PQ \\text{ and } QR"
+                },
+                {
+                  "explain": "Next, we look for the single point that is shared by both lines. This is the letter common to both line names.",
+                  "work": "PQ \\cap QR"
+                },
+                {
+                  "explain": "Finally, we observe that both lines meet at the bottom-left vertex, which is Point \\(Q\\). This matches option A.",
+                  "work": "PQ \\cap QR = Point \\; Q"
+                }
+              ]
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "RFMczaVZmQdhC8U0Bfy7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find: \\\\( \\\\frac{3}{5} \\\\) of \\\\( 7 \\\\)",
+          "options": [
+            "\\( \\\\frac{22}{5} \\)",
+            "\\( \\\\frac{21}{6} \\)",
+            "\\( \\\\frac{21}{5} \\)",
+            "\\( \\\\frac{5}{21} \\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We begin by converting the word \"of\" to the multiplication operator, and writing the integer 7 as a fraction (7 over 1).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we multiply the numerators and the denominators together. The product of the numerators is \\( 3 \\\\times 7 = 21 \\), and the product of the denominators is \\( 5 \\\\times 1 = 5 \\).",
+              "work": "\\( \\\\frac{21}{5} \\)"
+            },
+            {
+              "explain": "Finally, we verify if the fraction can be simplified. Since 21 and 5 are coprime, the fraction is in its simplest improper form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{21}{5} \\)"
+            }
+          ]
+        },
+        {
+          "id": "sSLrLVBu3C9UvYib1IWC",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find: \\(\\frac{3}{7}\\) of \\(\\frac{5}{6}\\)",
+          "options": [
+            "\\(\\frac{5}{14}\\)",
+            "\\(\\frac{15}{42}\\)",
+            "\\(\\frac{5}{12}\\)",
+            "\\(\\frac{14}{5}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Convert \"of\" to multiplication</strong><br>The word \"of\" means multiply: $\\frac{3}{7} \\times \\frac{5}{6}$.</p><p><strong>Step 2: Multiply numerators and denominators</strong><br>Multiply the top numbers together and the bottom numbers together:<br>$\\frac{3 \\times 5}{7 \\times 6} = \\frac{15}{42}$</p><p><strong>Step 3: Simplify the fraction</strong><br>Divide the numerator and denominator by their greatest common divisor ($3$):<br>$\\frac{15 \\div 3}{42 \\div 3} = \\frac{5}{14}$</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{15}{42}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{15 \\div 3}{42 \\div 3} = \\frac{5}{14}\\)"
+            }
+          ]
+        },
+        {
+          "id": "sYS7VL6ShjwaYnLFs78a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\(\\frac{4}{9} \\times \\frac{3}{16} \\times \\frac{6}{7}\\)",
+          "options": [
+            "\\(\\frac{1}{14}\\)",
+            "\\(\\frac{1}{7}\\)",
+            "\\(\\frac{2}{14}\\)",
+            "\\(\\frac{1}{16}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply all numerators and all denominators</strong><br>$\\frac{4 \\times 7 \\times 9}{9 \\times 12 \\times 14} = \\frac{252}{1512}$</p><p><strong>Step 2: Simplify the fraction</strong><br>Divide the numerator and denominator by their greatest common divisor ($252$):<br>$\\frac{252 \\div 252}{1512 \\div 252} = \\frac{1}{6}$</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{72}{1008}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{72 \\div 72}{1008 \\div 72} = \\frac{1}{14}\\)"
+            }
+          ]
+        },
+        {
+          "id": "TOcXsCu6R4KpoDDh6uXX",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "Consider these basic conceptual axioms of geometry regarding points and lines.",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 400 280\" width=\"100%\" height=\"240\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Top Section: Points on a Line -->\n  <text x=\"200\" y=\"32\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\" font-weight=\"900\" font-family=\"'Outfit', sans-serif\">1. Every line contains infinitely many points</text>\n  \n  <!-- Line with Arrowheads -->\n  <line x1=\"45\" y1=\"65\" x2=\"355\" y2=\"65\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n  <polygon points=\"35,65 47,60 47,70\" fill=\"#475569\"/>\n  <polygon points=\"365,65 353,60 353,70\" fill=\"#475569\"/>\n  \n  <!-- Infinite points highlighted in blue -->\n  <circle cx=\"80\" cy=\"65\" r=\"4.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"140\" cy=\"65\" r=\"4.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"200\" cy=\"65\" r=\"4.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"260\" cy=\"65\" r=\"4.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1\"/>\n  <circle cx=\"320\" cy=\"65\" r=\"4.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1\"/>\n  \n  <!-- Separator Line -->\n  <line x1=\"30\" y1=\"100\" x2=\"370\" y2=\"100\" stroke=\"#e2e8f0\" stroke-width=\"1\"/>\n\n  <!-- Bottom Section: Lines passing through a Point -->\n  <text x=\"200\" y=\"128\" text-anchor=\"middle\" fill=\"#475569\" font-size=\"13\" font-weight=\"900\" font-family=\"'Outfit', sans-serif\">2. Infinitely many lines pass through every point</text>\n  \n  <!-- Starburst of intersecting lines crossing exactly at (200, 205) -->\n  <g stroke=\"#94a3b8\" stroke-width=\"1.2\">\n    <line x1=\"100\" y1=\"205\" x2=\"300\" y2=\"205\"/>\n    <line x1=\"200\" y1=\"155\" x2=\"200\" y2=\"255\"/>\n    <line x1=\"130\" y1=\"135\" x2=\"270\" y2=\"275\"/>\n    <line x1=\"130\" y1=\"275\" x2=\"270\" y2=\"135\"/>\n    <line x1=\"110\" y1=\"168\" x2=\"290\" y2=\"242\"/>\n    <line x1=\"110\" y1=\"242\" x2=\"290\" y2=\"168\"/>\n  </g>\n  \n  <!-- Intersection center point highlighted in red -->\n  <circle cx=\"200\" cy=\"205\" r=\"6.5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"2\"/>\n</svg>"
+          },
+          "parts": [
+            {
+              "id": "q7a",
+              "type": "mc",
+              "stem": "There are \"infinitely many points on every line\". Explain the use of the word infinitely in this statement.",
+              "options": [
+                "It means there is no limit to the number of points; we can find as many points as we want between any two points.",
+                "It means a line has a fixed starting point and an ending point with exactly 10 points.",
+                "It means the line contains exactly 100 points.",
+                "It means the points are extremely large in size."
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We start by analyzing the concept of a line in geometry. A geometric line is continuous and does not consist of discrete, countable steps.",
+                  "work": "\\( \\text{Line} = \\text{Continuous set of points} \\)"
+                },
+                {
+                  "explain": "Next, we focus on the word 'infinitely'. In mathematical density, between any two real numbers or points on a line, we can always find another point.",
+                  "work": "\\( \\text{Density property: } \\forall A, B \\; \\exists C \\text{ between } A, B \\)"
+                },
+                {
+                  "explain": "Finally, we conclude that 'infinitely' indicates there is no upper limit or bound to the number of points we can choose. This matches option A.",
+                  "work": "\\( \\text{Final Answer: Option A} \\)"
+                }
+              ]
+            },
+            {
+              "id": "q7b",
+              "type": "mc",
+              "stem": "There are \"infinitely many lines passing through every point\". Explain the use of the word infinitely in this statement.",
+              "options": [
+                "It means we can draw as many lines as we want through a single point in different directions without ever running out.",
+                "It means only parallel lines can pass through a single point.",
+                "It means exactly 4 lines can cross at any point.",
+                "It means lines are infinitely thick."
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We start by considering a single point on a plane. A line passing through this point can be drawn at any angle or direction.",
+                  "work": "\\( \\text{Lines through } P \\text{ can rotate } 360^{\\circ} \\)"
+                },
+                {
+                  "explain": "Next, since the set of possible angles (slopes) in a 2D plane is continuous, we can rotate a line passing through the point by any real angle increment.",
+                  "work": "\\( \\text{Number of directions} = \\text{Infinite} \\)"
+                },
+                {
+                  "explain": "Finally, we conclude that we can construct an endless number of lines through that single point in different directions, matching option A.",
+                  "work": "\\( \\text{Final Answer: Option A} \\)"
+                }
+              ]
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "tqGERhwsvzIcDZpfNHwn",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "Examine the configuration of six distinct points below to solve the questions.",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 400 300\" width=\"100%\" height=\"240\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <!-- Large Triangle PQR (dashed blue lines) -->\n  <polygon points=\"200,50 80,240 320,240\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"1.8\" stroke-dasharray=\"3\"/>\n  \n  <!-- Small Triangle UVW (dashed purple lines) -->\n  <polygon points=\"200,176.7 140,145 260,145\" fill=\"rgba(99, 102, 241, 0.05)\" stroke=\"#a78bfa\" stroke-width=\"1.8\" stroke-dasharray=\"3\"/>\n  \n  <!-- Solid perspective lines PV, QW, RU meeting at O(200, 176.7) -->\n  <!-- PV (Vertical line) -->\n  <line x1=\"200\" y1=\"50\" x2=\"200\" y2=\"240\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n  \n  <!-- QW (Slanted line) -->\n  <line x1=\"80\" y1=\"240\" x2=\"260\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n  \n  <!-- RU (Slanted line) -->\n  <line x1=\"320\" y1=\"240\" x2=\"140\" y2=\"145\" stroke=\"#475569\" stroke-width=\"1.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Vertices of Large Triangle (P, Q, R) -->\n  <circle cx=\"200\" cy=\"50\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  <circle cx=\"80\" cy=\"240\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  <circle cx=\"320\" cy=\"240\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  \n  <!-- Vertices of Small Triangle / Intersections (U, V, W) -->\n  <!-- V is at (200, 240) which is on QR, wait. In Desargues, V is at (200, 176.7) - let's make it the center intersection point! -->\n  <circle cx=\"140\" cy=\"145\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  <circle cx=\"260\" cy=\"145\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  <circle cx=\"200\" cy=\"240\" r=\"5.5\" fill=\"#3b82f6\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n  \n  <!-- Concurrency point O (200, 176.7) -->\n  <circle cx=\"200\" cy=\"176.7\" r=\"5.5\" fill=\"#f43f5e\" stroke=\"#fff\" stroke-width=\"1.5\"/>\n\n  <!-- Labels -->\n  <text x=\"200\" y=\"35\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">P</text>\n  <text x=\"65\" y=\"245\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">Q</text>\n  <text x=\"335\" y=\"245\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">R</text>\n  <text x=\"120\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">U</text>\n  <text x=\"200\" y=\"258\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">V</text>\n  <text x=\"280\" y=\"145\" text-anchor=\"middle\" fill=\"#1e293b\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">W</text>\n  <text x=\"215\" y=\"182\" text-anchor=\"middle\" fill=\"#f43f5e\" font-size=\"14\" font-weight=\"900\" font-family=\"'Outfit'\">O</text>\n</svg>"
+          },
+          "parts": [
+            {
+              "id": "q4a",
+              "type": "mc",
+              "stem": "Identify three collinear points in the diagram.",
+              "options": [
+                "Points $P, U,$ and $Q$",
+                "Points $P, V,$ and $R$",
+                "Points $Q, W,$ and $P$",
+                "Points $U, V,$ and $W$"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We start by reviewing the definition of collinear points. Collinear points are three or more points that lie on a single straight line.",
+                  "work": "\\text{Collinear} = \\text{lie on a single straight line}"
+                },
+                {
+                  "explain": "Next, we observe the left boundary of the large triangle. The points P, U, and Q all lie along this single straight line segment.",
+                  "work": "\\text{Line PQ contains: } P, \\; U, \\; Q"
+                },
+                {
+                  "explain": "Finally, we conclude that Points P, U, and Q are collinear. This corresponds to Option A.",
+                  "work": "\\text{Final Answer: Option A}"
+                }
+              ]
+            },
+            {
+              "id": "q4b",
+              "type": "mc",
+              "stem": "What is the relationship between lines $PV$, $QW$, and $RU$?",
+              "options": [
+                "They are concurrent",
+                "They are parallel",
+                "They are collinear",
+                "They do not intersect"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We begin by locating the three lines described in the question: Line \\(PV\\), Line \\(QW\\), and Line \\(RU\\) in the diagram.",
+                  "work": "\\text{Identify lines: } PV, \\; QW, \\; RU"
+                },
+                {
+                  "explain": "Next, we trace all three solid lines to find where they cross. They all intersect at the single central point labeled O.",
+                  "work": "PV \\cap QW \\cap RU = Point \\; O"
+                },
+                {
+                  "explain": "Finally, we recall that lines that intersect at a single common point are called concurrent. Thus, the three lines are concurrent.",
+                  "work": "\\text{Final Answer: Option A}"
+                }
+              ]
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "UrKUM2wQdZkKycFEvJQn",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find: \\\\( 5 \\\\times \\\\frac{2}{9} \\\\)",
+          "options": [
+            "\\( \\\\frac{9}{10} \\)",
+            "\\( \\\\frac{11}{9} \\)",
+            "\\( \\\\frac{10}{9} \\)",
+            "\\( 1 \\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We begin by expressing the whole number 5 as a fraction, which is 5 over 1. This aligns it for standard multiplication with the second fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we multiply the numerators together and the denominators together. The product of the numerators is \\( 5 \\\\times 2 = 10 \\), and the product of the denominators is \\( 1 \\\\times 9 = 9 \\).",
+              "work": "\\( \\\\frac{10}{9} \\)"
+            },
+            {
+              "explain": "Finally, we check if the fraction can be simplified. Since 10 and 9 share no common factors other than 1, the fraction is in its simplest improper form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{10}{9} \\)"
+            }
+          ]
+        },
+        {
+          "id": "VCcijcXSIiwaeC6kAXa1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find: \\\\( 7 \\\\times \\\\frac{3}{4} \\\\)",
+          "options": [
+            "\\( \\\\frac{21}{5} \\)",
+            "\\( \\\\frac{22}{4} \\)",
+            "\\( \\\\frac{4}{21} \\)",
+            "\\( \\\\frac{21}{4} \\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "We begin by writing the whole number 7 as a fraction, which is 7 over 1. This aligns it for direct multiplication with the second fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we multiply the numerators together and the denominators together. The product of the numerators is \\( 7 \\\\times 3 = 21 \\), and the product of the denominators is \\( 1 \\\\times 4 = 4 \\).",
+              "work": "\\( \\\\frac{21}{4} \\)"
+            },
+            {
+              "explain": "Finally, we check if the fraction can be simplified. Since 21 and 4 are coprime, the fraction is in its simplest improper form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{21}{4} \\)"
+            }
+          ]
+        },
+        {
+          "id": "wDMwFhyPEEB0h7kWOVcn",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the product, simplifying where possible: \\(\\frac{5}{4} \\times \\frac{3}{5}\\)",
+          "options": [
+            "\\(\\frac{3}{5}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{15}{20}\\)",
+            "\\(\\frac{4}{3}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply numerators and denominators</strong><br>Multiply the top numbers together and the bottom numbers together:<br>$\\frac{5 \\times 3}{4 \\times 5} = \\frac{15}{20}$</p><p><strong>Step 2: Simplify the fraction</strong><br>Divide the numerator and denominator by their greatest common divisor ($5$):<br>$\\frac{15 \\div 5}{20 \\div 5} = \\frac{3}{4}$</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{15}{20}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{15 \\div 5}{20 \\div 5} = \\frac{3}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "wZtdYTjVzZCPkuasUc5z",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the product, simplifying where possible: \\(\\frac{4}{9} \\times \\frac{2}{7}\\)",
+          "options": [
+            "\\(\\frac{8}{63}\\)",
+            "\\(\\frac{6}{63}\\)",
+            "\\(\\frac{8}{16}\\)",
+            "\\(\\frac{63}{8}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply numerators and denominators</strong><br>Multiply the top numbers together and the bottom numbers together:<br>$\\frac{4 \\times 2}{9 \\times 7} = \\frac{8}{63}$</p><p><strong>Step 2: Check for simplification</strong><br>The fraction $\\frac{8}{63}$ is already in its simplest form.</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{8}{63}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\text{Final Answer: } \\frac{8}{63}\\)"
+            }
+          ]
+        },
+        {
+          "id": "X6xwgJKI23CQZ771Xg6R",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find: \\\\( \\\\frac{3}{8} \\\\) of \\\\( \\\\frac{5}{2} \\\\)",
+          "options": [
+            "\\( 1 \\)",
+            "\\( \\\\frac{16}{15} \\)",
+            "\\( \\\\frac{15}{16} \\)",
+            "\\( \\\\frac{15}{17} \\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We start by translating the word \"of\" into the mathematical multiplication operator.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we multiply the numerators and the denominators together. The product of the numerators is \\( 3 \\\\times 5 = 15 \\), and the product of the denominators is \\( 8 \\\\times 2 = 16 \\).",
+              "work": "\\( \\\\frac{15}{16} \\)"
+            },
+            {
+              "explain": "Finally, we check if the fraction can be simplified. Since 15 and 16 share no common factors other than 1, the fraction is in its simplest form.",
+              "work": "\\( \\text{Final Answer: } \\\\frac{15}{16} \\)"
+            }
+          ]
+        },
+        {
+          "id": "xG8FNM5U6Pt0wZ9j3BeR",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the product, simplifying where possible: \\(\\frac{2}{5} \\times \\frac{3}{7}\\)",
+          "options": [
+            "\\(\\frac{6}{35}\\)",
+            "\\(\\frac{5}{35}\\)",
+            "\\(\\frac{6}{12}\\)",
+            "\\(\\frac{35}{6}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply numerators and denominators</strong><br>Multiply the top numbers together and the bottom numbers together:<br>$\\frac{2 \\times 3}{5 \\times 7} = \\frac{6}{35}$</p><p><strong>Step 2: Check for simplification</strong><br>The fraction $\\frac{6}{35}$ is already in its simplest form.</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{6}{35}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\text{Final Answer: } \\frac{6}{35}\\)"
+            }
+          ]
+        },
+        {
+          "id": "XOvPPPTbY5AzWhBOwEqD",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find: \\\\( \\\\frac{4}{15} \\\\times \\\\frac{5}{7} \\\\)",
+          "options": [
+            "\\( \\\\frac{21}{4} \\)",
+            "\\( \\\\frac{4}{22} \\)",
+            "\\( \\\\frac{5}{21} \\)",
+            "\\( \\\\frac{4}{21} \\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "We begin by writing the product, grouping all numerators together and all denominators together.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the intermediate products. Multiplying the numerators gives \\( 4 \\\\times 5 = 20 \\), and multiplying the denominators gives \\( 15 \\\\times 7 = 105 \\).",
+              "work": "\\( \\\\frac{20}{105} \\)"
+            },
+            {
+              "explain": "Finally, we simplify the fraction by dividing the numerator and denominator by their greatest common divisor, which is 5.",
+              "work": "\\( \\\\frac{20 \\\\div 5}{105 \\\\div 5} = \\\\frac{4}{21} \\)"
+            }
+          ]
+        },
+        {
+          "id": "xq4KhJlYq3vbCapPqSQo",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\(\\frac{4}{15} \\times \\frac{9}{16}\\)",
+          "options": [
+            "\\(\\frac{3}{20}\\)",
+            "\\(\\frac{3}{15}\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{2}{20}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Multiply all numerators and all denominators</strong><br>$\\frac{4 \\times 7 \\times 10}{15 \\times 8 \\times 21} = \\frac{280}{2520}$</p><p><strong>Step 2: Simplify the fraction</strong><br>Divide the numerator and denominator by their greatest common divisor ($280$):<br>$\\frac{280 \\div 280}{2520 \\div 280} = \\frac{1}{9}$</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{36}{240}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{36 \\div 12}{240 \\div 12} = \\frac{3}{20}\\)"
+            }
+          ]
+        },
+        {
+          "id": "xQB13doUCqSSLaBzhrer",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find: \\(\\frac{3}{4}\\) of \\(\\frac{4}{3}\\)",
+          "options": [
+            "\\(\\frac{12}{12}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "1",
+            "2"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p><strong>Step 1: Convert \"of\" to multiplication</strong><br>The word \"of\" means multiply: $\\frac{3}{4} \\times \\frac{4}{3}$.</p><p><strong>Step 2: Multiply numerators and denominators</strong><br>Multiply the top numbers together and the bottom numbers together:<br>$\\frac{3 \\times 4}{4 \\times 3} = \\frac{12}{12}$</p><p><strong>Step 3: Simplify the fraction</strong><br>Divide the numerator and denominator by their greatest common divisor ($12$):<br>$\\frac{12 \\div 12}{12 \\div 12} = 1$</p></div>",
+          "steps": [
+            {
+              "explain": "We begin by setting up the product by grouping all numerators together and all denominators together into one fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the products of the numerators and the denominators to find the intermediate unsimplified fraction.",
+              "work": "\\(\\frac{12}{12}\\)"
+            },
+            {
+              "explain": "Finally, we reduce the fraction to its simplest form by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\frac{12 \\div 12}{12 \\div 12} = 1\\)"
+            }
+          ]
+        },
+        {
+          "id": "YweS5ffVJ4eHcq9a4bAC",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "There are four distinct ways to arrange three straight lines in a single plane, as illustrated below.",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 400 300\" width=\"100%\" height=\"240\" style=\"background:#f8fafc; border-radius:16px; display:block; margin:0 auto;\">\n  <g transform=\"translate(0, 0)\">\n    <line x1=\"30\" y1=\"30\" x2=\"170\" y2=\"30\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"30\" y1=\"50\" x2=\"170\" y2=\"50\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"30\" y1=\"70\" x2=\"170\" y2=\"70\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"100\" y=\"95\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\" font-weight=\"900\" font-family=\"'Outfit'\">A: 3 Parallel</text>\n  </g>\n  <g transform=\"translate(200, 0)\">\n    <line x1=\"30\" y1=\"35\" x2=\"170\" y2=\"35\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"30\" y1=\"65\" x2=\"170\" y2=\"65\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"50\" y1=\"15\" x2=\"150\" y2=\"85\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"100\" y=\"95\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\" font-weight=\"900\" font-family=\"'Outfit'\">B: 2 Parallel + Transversal</text>\n  </g>\n  <g transform=\"translate(0, 150)\">\n    <line x1=\"30\" y1=\"75\" x2=\"170\" y2=\"75\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"50\" y1=\"25\" x2=\"150\" y2=\"125\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"50\" y1=\"125\" x2=\"150\" y2=\"25\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <circle cx=\"100\" cy=\"75\" r=\"4\" fill=\"#f43f5e\"/>\n    <text x=\"100\" y=\"145\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\" font-weight=\"900\" font-family=\"'Outfit'\">C: 3 Concurrent</text>\n  </g>\n  <g transform=\"translate(200, 150)\">\n    <line x1=\"30\" y1=\"110\" x2=\"170\" y2=\"110\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"50\" y1=\"120\" x2=\"130\" y2=\"20\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"150\" y1=\"120\" x2=\"70\" y2=\"20\" stroke=\"#475569\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <polygon points=\"100,55 70,110 130,110\" fill=\"rgba(99,102,241,0.15)\"/>\n    <text x=\"100\" y=\"145\" text-anchor=\"middle\" fill=\"#64748b\" font-size=\"13\" font-weight=\"900\" font-family=\"'Outfit'\">D: Intersecting (Triangle)</text>\n  </g>\n</svg>"
+          },
+          "parts": [
+            {
+              "id": "q8a",
+              "type": "mc",
+              "stem": "How many of the four configurations involve parallel lines?",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We start by analyzing each of the four configurations (A, B, C, D) shown in the diagram.",
+                  "work": "\\( \\text{Configurations: } A, \\; B, \\; C, \\; D \\)"
+                },
+                {
+                  "explain": "Next, we identify which configurations have lines that never cross (parallel lines): Configuration A shows three parallel lines, and Configuration B shows two parallel lines cut by a transversal.",
+                  "work": "\\( \\text{Parallel elements in A and B} \\)"
+                },
+                {
+                  "explain": "Finally, we count them. Sceince Configurations A and B involve parallel lines, the total number is 2. This matches option B.",
+                  "work": "\\( \\text{Total} = 2 \\)"
+                }
+              ]
+            },
+            {
+              "id": "q8b",
+              "type": "mc",
+              "stem": "Which configuration is the ONLY one that encloses a region?",
+              "options": [
+                "Configuration A",
+                "Configuration B",
+                "Configuration C",
+                "Configuration D"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "We start by reviewing what it means to enclose a region. An enclosed region is a closed shape with a finite area bounded by the lines.",
+                  "work": "\\( \\text{Enclosed region} = \\text{Closed boundary} \\)"
+                },
+                {
+                  "explain": "Next, we look at Configuration D, where three intersecting lines cross in a way that forms a central triangle, enclosing a flat space.",
+                  "work": "\\( \\text{Configuration D forms a closed triangle} \\)"
+                },
+                {
+                  "explain": "Finally, we verify that Configurations A, B, and C all have lines extending to infinity without bounding a closed, finite area. Thus, Configuration D is the only one.",
+                  "work": "\\( \\text{Final Answer: Configuration D} \\)"
+                }
+              ]
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "YZa93YWfcqpobERQ87Hm",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Complete the multiplication, simplifying where possible: \\\\( \\\\frac{1}{3} \\\\times \\\\frac{2}{5} \\\\times \\\\frac{5}{8} \\\\)",
+          "options": [
+            "12",
+            "\\( \\\\frac{2}{12} \\)",
+            "\\( \\\\frac{1}{13} \\)",
+            "\\( \\\\frac{1}{12} \\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "We begin by setting up the multiplication by grouping all numerators together and all denominators together into one unified fraction.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we compute the products of the numerators and denominators. Multiplying the numerators gives \\( 1 \\\\times 2 \\\\times 5 = 10 \\), and multiplying the denominators gives \\( 3 \\\\times 5 \\\\times 8 = 120 \\).",
+              "work": "\\( \\\\frac{10}{120} \\)"
+            },
+            {
+              "explain": "Finally, we simplify the fraction by dividing the numerator and denominator by their greatest common divisor, which is 10.",
+              "work": "\\( \\\\frac{10 \\\\div 10}{120 \\\\div 10} = \\\\frac{1}{12} \\)"
+            }
+          ]
+        },
+        {
+          "id": "Zj5pzO7b33sQ7n7sD0Ot",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find: \\\\( \\\\frac{6}{25} \\\\times \\\\frac{5}{18} \\\\)",
+          "options": [
+            "\\( \\\\frac{2}{15} \\)",
+            "\\( \\\\frac{1}{16} \\)",
+            "\\( \\\\frac{1}{15} \\)",
+            "15"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "We begin by writing the product, grouping all numerators together and all denominators together.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Next, we calculate the intermediate products. Multiplying the numerators gives \\( 6 \\\\times 5 = 30 \\), and multiplying the denominators gives \\( 25 \\\\times 18 = 450 \\).",
+              "work": "\\( \\\\frac{30}{450} \\)"
+            },
+            {
+              "explain": "Finally, we simplify the fraction by dividing the numerator and denominator by their greatest common divisor, which is 30.",
+              "work": "\\( \\\\frac{30 \\\\div 30}{450 \\\\div 30} = \\\\frac{1}{15} \\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-5b",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-t3-2018-p1-q32",
+          "type": "mc",
+          "stem": "Evaluate \\( 7.54 \\times 1000 \\).",
+          "options": [
+            "7540",
+            "75400",
+            "75.4",
+            "0.00754"
+          ],
+          "answer": 0,
+          "hint": "Move the decimal point to the right for each zero in 1000.",
+          "steps": [
+            {
+              "explain": "1000 has 3 zeros, so move the decimal point 3 places to the right."
+            },
+            {
+              "explain": "\\( 7.54 \\rightarrow 75.4 \\rightarrow 754 \\rightarrow 7540 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p1-q34",
+          "type": "mc",
+          "stem": "Given that \\( 38 \\times 92 = 3496 \\), use this result to find the value of \\( 380 \\times 0.92 \\).",
+          "options": [
+            "349.6",
+            "34.96",
+            "3496",
+            "3.496"
+          ],
+          "answer": 0,
+          "hint": "Compare the factors: 380 is \\(10 \\times 38\\), and 0.92 is \\(92 \\div 100\\).",
+          "steps": [
+            {
+              "explain": "\\( 380 = 38 \\times 10 \\)"
+            },
+            {
+              "explain": "\\( 0.92 = 92 \\div 100 \\)"
+            },
+            {
+              "explain": "\\( 380 \\times 0.92 = (38 \\times 10) \\times (92 \\div 100) \\)"
+            },
+            {
+              "explain": "\\( = (38 \\times 92) \\times (10 \\div 100) \\)"
+            },
+            {
+              "explain": "\\( = 3496 \\times 0.1 \\)"
+            },
+            {
+              "explain": "\\( = 349.6 \\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-5c",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-ep2-q6a",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ x - 12 = 25 \\]",
+          "options": [
+            "\\(x = 37\\)",
+            "\\(x = 13\\)",
+            "\\(x = -13\\)",
+            "\\(x = 47\\)"
+          ],
+          "answer": 0,
+          "hint": "Add 12 to both sides of the equation.",
+          "steps": [
+            {
+              "explain": "\\(x = 25 + 12\\)"
+            },
+            {
+              "explain": "\\(x = 37\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q6b",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ 8n - 3n = 15 \\]",
+          "options": [
+            "\\(n = 3\\)",
+            "\\(n = 5\\)",
+            "\\(n = 75\\)",
+            "\\(n = -3\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify the left side of the equation first by combining like terms.",
+          "steps": [
+            {
+              "explain": "Combine like terms on the LHS: \\(5n = 15\\)"
+            },
+            {
+              "explain": "Divide both sides by 5: \\(n = 3\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-5d",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-ep2-q6c",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ 4y - 10 = -2 \\]",
+          "options": [
+            "\\(y = 2\\)",
+            "\\(y = -3\\)",
+            "\\(y = -2\\)",
+            "\\(y = 3\\)"
+          ],
+          "answer": 0,
+          "hint": "Add 10 to both sides, then divide by 4.",
+          "steps": [
+            {
+              "explain": "Add 10 to both sides: \\(4y = -2 + 10\\)"
+            },
+            {
+              "explain": "\\(4y = 8\\)"
+            },
+            {
+              "explain": "Divide by 4: \\(y = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q6d",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ 1 - 3c = 10 \\]",
+          "options": [
+            "\\(c = -3\\)",
+            "\\(c = 3\\)",
+            "\\(c = -4\\)",
+            "\\(c = -\\frac{11}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 1 from both sides, then divide by -3.",
+          "steps": [
+            {
+              "explain": "Subtract 1 from both sides: \\(-3c = 10 - 1\\)"
+            },
+            {
+              "explain": "\\(-3c = 9\\)"
+            },
+            {
+              "explain": "Divide by -3: \\(c = \\frac{9}{-3} = -3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q6e",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ \\frac{x + 4}{5} = 3 \\]",
+          "options": [
+            "\\(x = 11\\)",
+            "\\(x = 19\\)",
+            "\\(x = -1\\)",
+            "\\(x = \\frac{7}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by 5 first to remove the fraction.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 5: \\(x + 4 = 3 \\times 5\\)"
+            },
+            {
+              "explain": "\\(x + 4 = 15\\)"
+            },
+            {
+              "explain": "Subtract 4 from both sides: \\(x = 15 - 4 = 11\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q6f",
+          "type": "mc",
+          "stem": "Solve the following equation:\n\\[ \\frac{3x}{5} + 4 = 1 \\]",
+          "options": [
+            "\\(x = -5\\)",
+            "\\(x = 5\\)",
+            "\\(x = -\\frac{5}{3}\\)",
+            "\\(x = -15\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 4 from both sides first, then multiply by 5.",
+          "steps": [
+            {
+              "explain": "Subtract 4 from both sides: \\(\\frac{3x}{5} = 1 - 4\\)"
+            },
+            {
+              "explain": "\\(\\frac{3x}{5} = -3\\)"
+            },
+            {
+              "explain": "Multiply both sides by 5: \\(3x = -15\\)"
+            },
+            {
+              "explain": "Divide by 3: \\(x = -5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p1-q36",
+          "type": "mc",
+          "stem": "Evaluate \\( 0.732 \\div 6 \\).",
+          "options": [
+            "0.122",
+            "1.22",
+            "0.0122",
+            "12.2"
+          ],
+          "answer": 0,
+          "hint": "Divide as normal, keeping the decimal point in the same position.",
+          "steps": [
+            {
+              "explain": "\\( 0 \\div 6 = 0 \\)"
+            },
+            {
+              "explain": "\\( 7 \\div 6 = 1 \\) remainder 1"
+            },
+            {
+              "explain": "\\( 13 \\div 6 = 2 \\) remainder 1"
+            },
+            {
+              "explain": "\\( 12 \\div 6 = 2 \\)"
+            },
+            {
+              "explain": "Result: 0.122"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p1-q37",
+          "type": "mc",
+          "stem": "Evaluate \\( 10.4 \\div 0.05 \\).",
+          "options": [
+            "208",
+            "20.8",
+            "2.08",
+            "2080"
+          ],
+          "answer": 0,
+          "hint": "Multiply both numbers by 100 to remove the decimal from the divisor.",
+          "steps": [
+            {
+              "explain": "Multiply numerator and denominator by 100:"
+            },
+            {
+              "explain": "\\( 10.4 \\div 0.05 = (10.4 \\times 100) \\div (0.05 \\times 100) \\)"
+            },
+            {
+              "explain": "\\( = 1040 \\div 5 \\)"
+            },
+            {
+              "explain": "\\( = 208 \\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-5e",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-t3-2018-p1-q33",
+          "type": "mc",
+          "stem": "Round 2.3749 to two decimal places.",
+          "options": [
+            "2.37",
+            "2.38",
+            "2.375",
+            "2.374"
+          ],
+          "answer": 0,
+          "hint": "Look at the third decimal place to decide if you round up.",
+          "steps": [
+            {
+              "explain": "The number is 2.3749."
+            },
+            {
+              "explain": "The second decimal place is 7."
+            },
+            {
+              "explain": "The third decimal place is 4."
+            },
+            {
+              "explain": "Since 4 is less than 5, we keep the 7 as it is."
+            },
+            {
+              "explain": "Rounded to two decimal places: 2.37"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-5f",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-ep2-q7a",
+          "type": "mc",
+          "stem": "Write the following as an equation and solve for \\(x\\):\n\"2 less than \\(x\\) equals 15.\"",
+          "options": [
+            "\\(x = 17\\)",
+            "\\(x = 13\\)",
+            "\\(x = 15\\)",
+            "\\(x = -13\\)"
+          ],
+          "answer": 0,
+          "hint": "\"2 less than x\" means starting with x and subtracting 2.",
+          "steps": [
+            {
+              "explain": "The phrase \"2 less than \\(x\\)\" translates to \\(x - 2\\)."
+            },
+            {
+              "explain": "Setting it equal to 15 gives the equation: \\(x - 2 = 15\\)."
+            },
+            {
+              "explain": "Adding 2 to both sides gives \\(x = 17\\)."
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q7b",
+          "type": "mc",
+          "stem": "Write the following as an equation and solve for \\(x\\):\n\"The difference between 33 and \\(6x\\) is 3.\"",
+          "options": [
+            "\\(x = 5\\)",
+            "\\(x = 6\\)",
+            "\\(x = -5\\)",
+            "\\(x = 36\\)"
+          ],
+          "answer": 0,
+          "hint": "The difference between A and B translates to A - B.",
+          "steps": [
+            {
+              "explain": "The difference between 33 and \\(6x\\) translates to \\(33 - 6x\\)."
+            },
+            {
+              "explain": "Setting it equal to 3 gives the equation: \\(33 - 6x = 3\\)."
+            },
+            {
+              "explain": "Subtract 33 from both sides: \\(-6x = 3 - 33\\)"
+            },
+            {
+              "explain": "\\(-6x = -30\\)"
+            },
+            {
+              "explain": "Divide by -6: \\(x = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q16",
+          "type": "mc",
+          "stem": "ABC is an isosceles triangle. The perimeter of ABC is 45 cm. Solve for \\(x\\) by first forming an equation.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"300\" height=\"300\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,150 150,150 100,50\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"45\" y=\"155\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">A</text>\n  <text x=\"155\" y=\"155\" font-family=\"sans-serif\" font-size=\"12\">C</text>\n  <text x=\"100\" y=\"40\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">B</text>\n  \n  <text x=\"60\" y=\"100\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">\\(x+5\\)</text>\n  <text x=\"100\" y=\"170\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">\\(3x\\)</text>\n  \n  <!-- Ticks -->\n  <line x1=\"70\" y1=\"95\" x2=\"80\" y2=\"105\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"120\" y1=\"105\" x2=\"130\" y2=\"95\" stroke=\"black\" stroke-width=\"1\"/>\n  \n  <!-- Arrows for base -->\n  <line x1=\"50\" y1=\"165\" x2=\"150\" y2=\"165\" stroke=\"black\" stroke-width=\"1\"/>\n  <polygon points=\"50,165 60,162 60,168\" fill=\"black\"/>\n  <polygon points=\"150,165 140,162 140,168\" fill=\"black\"/>\n</svg></div>",
+          "options": [
+            "\\(x = 7\\)",
+            "\\(x = 5\\)",
+            "\\(x = 9\\)",
+            "\\(x = 8\\)"
+          ],
+          "answer": 0,
+          "hint": "The tick marks show that AB and AC are equal in length.",
+          "steps": [
+            {
+              "explain": "Since \\(\\triangle ABC\\) is isosceles, \\(AB = AC = x + 5\\)."
+            },
+            {
+              "explain": "The perimeter is the sum of all sides: \\((x + 5) + (x + 5) + 3x = 45\\)."
+            },
+            {
+              "explain": "Combine like terms: \\(5x + 10 = 45\\)."
+            },
+            {
+              "explain": "Subtract 10: \\(5x = 35\\)."
+            },
+            {
+              "explain": "Divide by 5: \\(x = 7\\)."
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p1-q35",
+          "type": "mc",
+          "stem": "Evaluate \\( 2.3 \\times 5.2 \\).",
+          "options": [
+            "11.96",
+            "119.6",
+            "1.196",
+            "10.96"
+          ],
+          "answer": 0,
+          "hint": "Multiply 23 by 52, then place the decimal point so there are two decimal places.",
+          "steps": [
+            {
+              "explain": "\\( 23 \\times 52 = 1196 \\)"
+            },
+            {
+              "explain": "2.3 has 1 decimal place, and 5.2 has 1 decimal place."
+            },
+            {
+              "explain": "The answer must have \\( 1 + 1 = 2 \\) decimal places."
+            },
+            {
+              "explain": "\\( 2.3 \\times 5.2 = 11.96 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p1-q39",
+          "type": "mc",
+          "stem": "Complete the following sentence: When a positive number \\(x\\) is multiplied by another number less than one, the result will be ______ than \\(x\\).",
+          "options": [
+            "less",
+            "greater",
+            "equal to",
+            "one"
+          ],
+          "answer": 0,
+          "hint": "Try an example: \\( 10 \\times 0.5 \\).",
+          "steps": [
+            {
+              "explain": "Example: Let \\(x = 10\\). Multiply by 0.5 (which is less than one)."
+            },
+            {
+              "explain": "\\( 10 \\times 0.5 = 5 \\)"
+            },
+            {
+              "explain": "5 is less than 10."
+            },
+            {
+              "explain": "Therefore, the result will always be less than \\(x\\)."
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p1-q41",
+          "type": "mc",
+          "stem": "The Liverpool Women's Cricket Club is having a pizza night. They order 16 Super Supreme pizzas at $13.70 each and 10 Hawaiian at $11.50 each. How much will the club need to spend?",
+          "options": [
+            "$334.20",
+            "$324.20",
+            "$344.20",
+            "$319.20"
+          ],
+          "answer": 0,
+          "hint": "Calculate the total for Super Supreme and Hawaiian pizzas separately, then add them.",
+          "steps": [
+            {
+              "explain": "Cost of 16 Super Supreme: \\( 16 \\times 13.70 = \\$219.20 \\)"
+            },
+            {
+              "explain": "Cost of 10 Hawaiian: \\( 10 \\times 11.50 = \\$115.00 \\)"
+            },
+            {
+              "explain": "Total cost: \\( 219.20 + 115.00 = \\$334.20 \\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-5i",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-t3-2018-p1-q38",
+          "type": "mc",
+          "stem": "Rewrite \\( 2.370370370\\ldots \\) as a recurring decimal.",
+          "options": [
+            "\\( 2.\\overline{370} \\)",
+            "\\( 2.3\\overline{70} \\)",
+            "\\( 2.\\dot{3}7\\dot{0} \\)",
+            "\\( 2.37\\dot{0} \\)"
+          ],
+          "answer": 0,
+          "hint": "Find the pattern of digits that repeats infinitely.",
+          "steps": [
+            {
+              "explain": "The digits '370' repeat in the same order."
+            },
+            {
+              "explain": "We place a bar over the repeating part to write it as a recurring decimal."
+            },
+            {
+              "explain": "Result: \\( 2.\\overline{370} \\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p1-q40",
+          "type": "mc",
+          "stem": "Convert \\( \\frac{2}{11} \\) to a recurring decimal.",
+          "options": [
+            "\\( 0.\\overline{18} \\)",
+            "\\( 0.1\\overline{8} \\)",
+            "\\( 0.\\overline{11} \\)",
+            "\\( 0.\\overline{21} \\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 2 by 11 using long division.",
+          "steps": [
+            {
+              "explain": "\\( 2 \\div 11 = 0 \\) remainder 2"
+            },
+            {
+              "explain": "\\( 20 \\div 11 = 1 \\) remainder 9"
+            },
+            {
+              "explain": "\\( 90 \\div 11 = 8 \\) remainder 2"
+            },
+            {
+              "explain": "The remainders repeat (2, 9, 2, 9...), so the quotient digits repeat."
+            },
+            {
+              "explain": "Result: \\( 0.181818\\ldots = 0.\\overline{18} \\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

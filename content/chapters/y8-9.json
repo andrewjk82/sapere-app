@@ -1,0 +1,1853 @@
+{
+  "chapterId": "y8-9",
+  "title": "Chapter 9: Pythagoras Theorem",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "y8-9a",
+      "code": "9A",
+      "title": "Pythagoras' theorem",
+      "questions": [
+        {
+          "id": "y8-9a-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the square of \\(9^2\\).",
+          "options": [
+            "\\(83\\)",
+            "\\(80\\)",
+            "\\(81\\)",
+            "\\(82\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the number by itself.",
+          "solution": "\\(9^2 = 9 \\times 9 = 81\\)",
+          "steps": [
+            {
+              "explain": "To square a number, multiply it by itself.",
+              "work": "\\(9^2 = 9 \\times 9\\)"
+            },
+            {
+              "explain": "Calculate the multiplication to find the final answer.",
+              "work": "\\(81\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the square of \\(11^2\\).",
+          "options": [
+            "\\(123\\)",
+            "\\(120\\)",
+            "\\(121\\)",
+            "\\(122\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the number by itself.",
+          "solution": "\\(11^2 = 11 \\times 11 = 121\\)",
+          "steps": [
+            {
+              "explain": "To square a number, multiply it by itself.",
+              "work": "\\(11^2 = 11 \\times 11\\)"
+            },
+            {
+              "explain": "Calculate the multiplication to find the final answer.",
+              "work": "\\(121\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the square of \\(7^2\\).",
+          "options": [
+            "\\(51\\)",
+            "\\(48\\)",
+            "\\(49\\)",
+            "\\(50\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the number by itself.",
+          "solution": "\\(7^2 = 7 \\times 7 = 49\\)",
+          "steps": [
+            {
+              "explain": "To square a number, multiply it by itself.",
+              "work": "\\(7^2 = 7 \\times 7\\)"
+            },
+            {
+              "explain": "Calculate the multiplication to find the final answer.",
+              "work": "\\(49\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the square of \\(15^2\\).",
+          "options": [
+            "\\(227\\)",
+            "\\(224\\)",
+            "\\(225\\)",
+            "\\(226\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the number by itself.",
+          "solution": "\\(15^2 = 15 \\times 15 = 225\\)",
+          "steps": [
+            {
+              "explain": "To square a number, multiply it by itself.",
+              "work": "\\(15^2 = 15 \\times 15\\)"
+            },
+            {
+              "explain": "Calculate the multiplication to find the final answer.",
+              "work": "\\(225\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the square root of \\(64\\).",
+          "options": [
+            "\\(10\\)",
+            "\\(7\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the number that multiplies by itself to give this value.",
+          "solution": "\\(\\sqrt{64} = 8\\) because \\(8^2 = 64\\)",
+          "steps": [
+            {
+              "explain": "To find the square root of a number, look for a value that, when multiplied by itself, equals that number.",
+              "work": "\\(\\sqrt{64}\\)"
+            },
+            {
+              "explain": "Since \\(8 \\times 8 = 64\\), the square root is 8.",
+              "work": "\\(8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the square root of \\(144\\).",
+          "options": [
+            "\\(14\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(13\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the number that multiplies by itself to give this value.",
+          "solution": "\\(\\sqrt{144} = 12\\) because \\(12^2 = 144\\)",
+          "steps": [
+            {
+              "explain": "To find the square root of a number, look for a value that, when multiplied by itself, equals that number.",
+              "work": "\\(\\sqrt{144}\\)"
+            },
+            {
+              "explain": "Since \\(12 \\times 12 = 144\\), the square root is 12.",
+              "work": "\\(12\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the square root of \\(196\\).",
+          "options": [
+            "\\(16\\)",
+            "\\(13\\)",
+            "\\(14\\)",
+            "\\(15\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the number that multiplies by itself to give this value.",
+          "solution": "\\(\\sqrt{196} = 14\\) because \\(14^2 = 196\\)",
+          "steps": [
+            {
+              "explain": "To find the square root of a number, look for a value that, when multiplied by itself, equals that number.",
+              "work": "\\(\\sqrt{196}\\)"
+            },
+            {
+              "explain": "Since \\(14 \\times 14 = 196\\), the square root is 14.",
+              "work": "\\(14\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the square root of \\(900\\).",
+          "options": [
+            "\\(32\\)",
+            "\\(29\\)",
+            "\\(30\\)",
+            "\\(31\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the number that multiplies by itself to give this value.",
+          "solution": "\\(\\sqrt{900} = 30\\) because \\(30^2 = 900\\)",
+          "steps": [
+            {
+              "explain": "To find the square root of a number, look for a value that, when multiplied by itself, equals that number.",
+              "work": "\\(\\sqrt{900}\\)"
+            },
+            {
+              "explain": "Since \\(30 \\times 30 = 900\\), the square root is 30.",
+              "work": "\\(30\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(7^2 + 24^2\\)",
+          "options": [
+            "\\(627\\)",
+            "\\(624\\)",
+            "\\(625\\)",
+            "\\(626\\)"
+          ],
+          "answer": 2,
+          "hint": "Calculate squares first.",
+          "solution": "\\(7^2 + 24^2 = 49 + 576 = 625\\)",
+          "steps": [
+            {
+              "explain": "Square each number first.",
+              "work": "\\(7^2 = 49\\) and \\(24^2 = 576\\)"
+            },
+            {
+              "explain": "Add the two results to find the final answer.",
+              "work": "\\(49 + 576 = 625\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(9^2 + 12^2\\)",
+          "options": [
+            "\\(227\\)",
+            "\\(224\\)",
+            "\\(225\\)",
+            "\\(226\\)"
+          ],
+          "answer": 2,
+          "hint": "Calculate squares first.",
+          "solution": "\\(9^2 + 12^2 = 81 + 144 = 225\\)",
+          "steps": [
+            {
+              "explain": "Square each number first.",
+              "work": "\\(9^2 = 81\\) and \\(12^2 = 144\\)"
+            },
+            {
+              "explain": "Add the two results to find the final answer.",
+              "work": "\\(81 + 144 = 225\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(20^2 - 16^2\\)",
+          "options": [
+            "\\(146\\)",
+            "\\(143\\)",
+            "\\(144\\)",
+            "\\(145\\)"
+          ],
+          "answer": 2,
+          "hint": "Calculate squares first.",
+          "solution": "\\(20^2 - 16^2 = 400 - 256 = 144\\)",
+          "steps": [
+            {
+              "explain": "Square each number first.",
+              "work": "\\(20^2 = 400\\) and \\(16^2 = 256\\)"
+            },
+            {
+              "explain": "Subtract the two results to find the final answer.",
+              "work": "\\(400 - 256 = 144\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(17^2 - 15^2\\)",
+          "options": [
+            "\\(66\\)",
+            "\\(63\\)",
+            "\\(64\\)",
+            "\\(65\\)"
+          ],
+          "answer": 2,
+          "hint": "Calculate squares first.",
+          "solution": "\\(17^2 - 15^2 = 289 - 225 = 64\\)",
+          "steps": [
+            {
+              "explain": "Square each number first.",
+              "work": "\\(17^2 = 289\\) and \\(15^2 = 225\\)"
+            },
+            {
+              "explain": "Subtract the two results to find the final answer.",
+              "work": "\\(289 - 225 = 64\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use Pythagoras' theorem to find the length of the missing side \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">6</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">8</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+          },
+          "options": [
+            "\\(12\\)",
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "Square both shorter sides, add them together, and take the square root.",
+          "solution": "\\(x^2 = 6^2 + 8^2 = 36 + 64 = 100\\), so \\(x = \\sqrt{100} = 10\\)",
+          "steps": [
+            {
+              "explain": "Using Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)), substitute the given lengths of the two shorter sides.",
+              "work": "\\(x^2 = 6^2 + 8^2\\)",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">6</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">8</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Square the numbers and add them together.",
+              "work": "\\(x^2 = 36 + 64\\)<br>\\(x^2 = 100\\)"
+            },
+            {
+              "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
+              "work": "\\(x = \\sqrt{100}\\)<br>\\(x = 10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use Pythagoras' theorem to find the length of the missing side \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">16</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+          },
+          "options": [
+            "\\(22\\)",
+            "\\(19\\)",
+            "\\(20\\)",
+            "\\(21\\)"
+          ],
+          "answer": 2,
+          "hint": "Square both shorter sides, add them together, and take the square root.",
+          "solution": "\\(x^2 = 12^2 + 16^2 = 144 + 256 = 400\\), so \\(x = \\sqrt{400} = 20\\)",
+          "steps": [
+            {
+              "explain": "Using Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)), substitute the given lengths of the two shorter sides.",
+              "work": "\\(x^2 = 12^2 + 16^2\\)",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">16</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Square the numbers and add them together.",
+              "work": "\\(x^2 = 144 + 256\\)<br>\\(x^2 = 400\\)"
+            },
+            {
+              "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
+              "work": "\\(x = \\sqrt{400}\\)<br>\\(x = 20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use Pythagoras' theorem to find the length of the missing side \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">7</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">24</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+          },
+          "options": [
+            "\\(27\\)",
+            "\\(24\\)",
+            "\\(25\\)",
+            "\\(26\\)"
+          ],
+          "answer": 2,
+          "hint": "Square both shorter sides, add them together, and take the square root.",
+          "solution": "\\(x^2 = 7^2 + 24^2 = 49 + 576 = 625\\), so \\(x = \\sqrt{625} = 25\\)",
+          "steps": [
+            {
+              "explain": "Using Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)), substitute the given lengths of the two shorter sides.",
+              "work": "\\(x^2 = 7^2 + 24^2\\)",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">7</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">24</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Square the numbers and add them together.",
+              "work": "\\(x^2 = 49 + 576\\)<br>\\(x^2 = 625\\)"
+            },
+            {
+              "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
+              "work": "\\(x = \\sqrt{625}\\)<br>\\(x = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use Pythagoras' theorem to find the length of the missing side \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">5</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+          },
+          "options": [
+            "\\(15\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Square both shorter sides, add them together, and take the square root.",
+          "solution": "\\(x^2 = 5^2 + 12^2 = 25 + 144 = 169\\), so \\(x = \\sqrt{169} = 13\\)",
+          "steps": [
+            {
+              "explain": "Using Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)), substitute the given lengths of the two shorter sides.",
+              "work": "\\(x^2 = 5^2 + 12^2\\)",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">5</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Square the numbers and add them together.",
+              "work": "\\(x^2 = 25 + 144\\)<br>\\(x^2 = 169\\)"
+            },
+            {
+              "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
+              "work": "\\(x = \\sqrt{169}\\)<br>\\(x = 13\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q4e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use Pythagoras' theorem to find the length of the missing side \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">20</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+          },
+          "options": [
+            "\\(27\\)",
+            "\\(24\\)",
+            "\\(25\\)",
+            "\\(26\\)"
+          ],
+          "answer": 2,
+          "hint": "Square both shorter sides, add them together, and take the square root.",
+          "solution": "\\(x^2 = 15^2 + 20^2 = 225 + 400 = 625\\), so \\(x = \\sqrt{625} = 25\\)",
+          "steps": [
+            {
+              "explain": "Using Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)), substitute the given lengths of the two shorter sides.",
+              "work": "\\(x^2 = 15^2 + 20^2\\)",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">20</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Square the numbers and add them together.",
+              "work": "\\(x^2 = 225 + 400\\)<br>\\(x^2 = 625\\)"
+            },
+            {
+              "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
+              "work": "\\(x = \\sqrt{625}\\)<br>\\(x = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q4f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use Pythagoras' theorem to find the length of the missing side \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">24</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+          },
+          "options": [
+            "\\(28\\)",
+            "\\(25\\)",
+            "\\(26\\)",
+            "\\(27\\)"
+          ],
+          "answer": 2,
+          "hint": "Square both shorter sides, add them together, and take the square root.",
+          "solution": "\\(x^2 = 10^2 + 24^2 = 100 + 576 = 676\\), so \\(x = \\sqrt{676} = 26\\)",
+          "steps": [
+            {
+              "explain": "Using Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)), substitute the given lengths of the two shorter sides.",
+              "work": "\\(x^2 = 10^2 + 24^2\\)",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 170 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"20.030792935891746\" y=\"86.6871952905945\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n  <text x=\"93.4269625981214\" y=\"182.47190026165705\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">24</text>\n  <text x=\"99.4\" y=\"80.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Square the numbers and add them together.",
+              "work": "\\(x^2 = 100 + 576\\)<br>\\(x^2 = 676\\)"
+            },
+            {
+              "explain": "Take the square root to find the length of the hypotenuse \\(x\\).",
+              "work": "\\(x = \\sqrt{676}\\)<br>\\(x = 26\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row2a2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 2, given \\(a = 6\\) and \\(b = 8\\), find \\(a^2\\).",
+          "options": [
+            "\\(38\\)",
+            "\\(35\\)",
+            "\\(36\\)",
+            "\\(37\\)"
+          ],
+          "answer": 2,
+          "hint": "Square a.",
+          "solution": "\\(6^2 = 36\\)",
+          "steps": [
+            {
+              "explain": "To find \\(a^2\\), square the given value of \\(a\\).",
+              "work": "\\(6^2 = 6 \\times 6\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(36\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row2b2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 2, given \\(a = 6\\) and \\(b = 8\\), find \\(b^2\\).",
+          "options": [
+            "\\(66\\)",
+            "\\(63\\)",
+            "\\(64\\)",
+            "\\(65\\)"
+          ],
+          "answer": 2,
+          "hint": "Square b.",
+          "solution": "\\(8^2 = 64\\)",
+          "steps": [
+            {
+              "explain": "To find \\(b^2\\), square the given value of \\(b\\).",
+              "work": "\\(8^2 = 8 \\times 8\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(64\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row2c2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 2, given \\(a = 6\\) and \\(b = 8\\), find \\(c^2 = a^2 + b^2\\).",
+          "options": [
+            "\\(102\\)",
+            "\\(100\\)",
+            "\\(101\\)",
+            "\\(99\\)"
+          ],
+          "answer": 1,
+          "hint": "Add them.",
+          "solution": "\\(36 + 64 = 100\\)",
+          "steps": [
+            {
+              "explain": "First, find the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(a^2 = 36\\) and \\(b^2 = 64\\)"
+            },
+            {
+              "explain": "Add the two squares together to find \\(c^2\\).",
+              "work": "\\(36 + 64 = 100\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 2, given \\(a = 6\\) and \\(b = 8\\), find \\(c\\).",
+          "options": [
+            "\\(12\\)",
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "Square root.",
+          "solution": "\\(\\sqrt{100} = 10\\)",
+          "steps": [
+            {
+              "explain": "First, use Pythagoras' theorem to find \\(c^2\\) by adding the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(c^2 = 36 + 64 = 100\\)"
+            },
+            {
+              "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
+              "work": "\\(c = \\sqrt{100}\\)<br>\\(c = 10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row3a2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 3, given \\(a = 9\\) and \\(b = 12\\), find \\(a^2\\).",
+          "options": [
+            "\\(83\\)",
+            "\\(80\\)",
+            "\\(81\\)",
+            "\\(82\\)"
+          ],
+          "answer": 2,
+          "hint": "Square a.",
+          "solution": "\\(9^2 = 81\\)",
+          "steps": [
+            {
+              "explain": "To find \\(a^2\\), square the given value of \\(a\\).",
+              "work": "\\(9^2 = 9 \\times 9\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(81\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row3b2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 3, given \\(a = 9\\) and \\(b = 12\\), find \\(b^2\\).",
+          "options": [
+            "\\(146\\)",
+            "\\(143\\)",
+            "\\(144\\)",
+            "\\(145\\)"
+          ],
+          "answer": 2,
+          "hint": "Square b.",
+          "solution": "\\(12^2 = 144\\)",
+          "steps": [
+            {
+              "explain": "To find \\(b^2\\), square the given value of \\(b\\).",
+              "work": "\\(12^2 = 12 \\times 12\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(144\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row3c2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 3, given \\(a = 9\\) and \\(b = 12\\), find \\(c^2 = a^2 + b^2\\).",
+          "options": [
+            "\\(227\\)",
+            "\\(224\\)",
+            "\\(225\\)",
+            "\\(226\\)"
+          ],
+          "answer": 2,
+          "hint": "Add them.",
+          "solution": "\\(81 + 144 = 225\\)",
+          "steps": [
+            {
+              "explain": "First, find the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(a^2 = 81\\) and \\(b^2 = 144\\)"
+            },
+            {
+              "explain": "Add the two squares together to find \\(c^2\\).",
+              "work": "\\(81 + 144 = 225\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 3, given \\(a = 9\\) and \\(b = 12\\), find \\(c\\).",
+          "options": [
+            "\\(17\\)",
+            "\\(14\\)",
+            "\\(15\\)",
+            "\\(16\\)"
+          ],
+          "answer": 2,
+          "hint": "Square root.",
+          "solution": "\\(\\sqrt{225} = 15\\)",
+          "steps": [
+            {
+              "explain": "First, use Pythagoras' theorem to find \\(c^2\\) by adding the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(c^2 = 81 + 144 = 225\\)"
+            },
+            {
+              "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
+              "work": "\\(c = \\sqrt{225}\\)<br>\\(c = 15\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row4a2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 4, given \\(a = 12\\) and \\(b = 16\\), find \\(a^2\\).",
+          "options": [
+            "\\(146\\)",
+            "\\(143\\)",
+            "\\(144\\)",
+            "\\(145\\)"
+          ],
+          "answer": 2,
+          "hint": "Square a.",
+          "solution": "\\(12^2 = 144\\)",
+          "steps": [
+            {
+              "explain": "To find \\(a^2\\), square the given value of \\(a\\).",
+              "work": "\\(12^2 = 12 \\times 12\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(144\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row4b2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 4, given \\(a = 12\\) and \\(b = 16\\), find \\(b^2\\).",
+          "options": [
+            "\\(258\\)",
+            "\\(255\\)",
+            "\\(256\\)",
+            "\\(257\\)"
+          ],
+          "answer": 2,
+          "hint": "Square b.",
+          "solution": "\\(16^2 = 256\\)",
+          "steps": [
+            {
+              "explain": "To find \\(b^2\\), square the given value of \\(b\\).",
+              "work": "\\(16^2 = 16 \\times 16\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(256\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row4c2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 4, given \\(a = 12\\) and \\(b = 16\\), find \\(c^2 = a^2 + b^2\\).",
+          "options": [
+            "\\(402\\)",
+            "\\(399\\)",
+            "\\(400\\)",
+            "\\(401\\)"
+          ],
+          "answer": 2,
+          "hint": "Add them.",
+          "solution": "\\(144 + 256 = 400\\)",
+          "steps": [
+            {
+              "explain": "First, find the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(a^2 = 144\\) and \\(b^2 = 256\\)"
+            },
+            {
+              "explain": "Add the two squares together to find \\(c^2\\).",
+              "work": "\\(144 + 256 = 400\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 4, given \\(a = 12\\) and \\(b = 16\\), find \\(c\\).",
+          "options": [
+            "\\(22\\)",
+            "\\(19\\)",
+            "\\(20\\)",
+            "\\(21\\)"
+          ],
+          "answer": 2,
+          "hint": "Square root.",
+          "solution": "\\(\\sqrt{400} = 20\\)",
+          "steps": [
+            {
+              "explain": "First, use Pythagoras' theorem to find \\(c^2\\) by adding the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(c^2 = 144 + 256 = 400\\)"
+            },
+            {
+              "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
+              "work": "\\(c = \\sqrt{400}\\)<br>\\(c = 20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row5a2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 5, given \\(a = 15\\) and \\(b = 20\\), find \\(a^2\\).",
+          "options": [
+            "\\(227\\)",
+            "\\(224\\)",
+            "\\(225\\)",
+            "\\(226\\)"
+          ],
+          "answer": 2,
+          "hint": "Square a.",
+          "solution": "\\(15^2 = 225\\)",
+          "steps": [
+            {
+              "explain": "To find \\(a^2\\), square the given value of \\(a\\).",
+              "work": "\\(15^2 = 15 \\times 15\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(225\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row5b2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 5, given \\(a = 15\\) and \\(b = 20\\), find \\(b^2\\).",
+          "options": [
+            "\\(402\\)",
+            "\\(399\\)",
+            "\\(400\\)",
+            "\\(401\\)"
+          ],
+          "answer": 2,
+          "hint": "Square b.",
+          "solution": "\\(20^2 = 400\\)",
+          "steps": [
+            {
+              "explain": "To find \\(b^2\\), square the given value of \\(b\\).",
+              "work": "\\(20^2 = 20 \\times 20\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(400\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row5c2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 5, given \\(a = 15\\) and \\(b = 20\\), find \\(c^2 = a^2 + b^2\\).",
+          "options": [
+            "\\(627\\)",
+            "\\(624\\)",
+            "\\(625\\)",
+            "\\(626\\)"
+          ],
+          "answer": 2,
+          "hint": "Add them.",
+          "solution": "\\(225 + 400 = 625\\)",
+          "steps": [
+            {
+              "explain": "First, find the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(a^2 = 225\\) and \\(b^2 = 400\\)"
+            },
+            {
+              "explain": "Add the two squares together to find \\(c^2\\).",
+              "work": "\\(225 + 400 = 625\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q5row5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 5, given \\(a = 15\\) and \\(b = 20\\), find \\(c\\).",
+          "options": [
+            "\\(27\\)",
+            "\\(24\\)",
+            "\\(25\\)",
+            "\\(26\\)"
+          ],
+          "answer": 2,
+          "hint": "Square root.",
+          "solution": "\\(\\sqrt{625} = 25\\)",
+          "steps": [
+            {
+              "explain": "First, use Pythagoras' theorem to find \\(c^2\\) by adding the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(c^2 = 225 + 400 = 625\\)"
+            },
+            {
+              "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
+              "work": "\\(c = \\sqrt{625}\\)<br>\\(c = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row1a2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 1, given \\(a = 3\\) and \\(b = 4\\), find \\(a^2\\).",
+          "options": [
+            "\\(11\\)",
+            "\\(10\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 3,
+          "hint": "Square a.",
+          "solution": "\\(3^2 = 9\\)",
+          "steps": [
+            {
+              "explain": "To find \\(a^2\\), square the given value of \\(a\\).",
+              "work": "\\(3^2 = 3 \\times 3\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row1b2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 1, given \\(a = 3\\) and \\(b = 4\\), find \\(b^2\\).",
+          "options": [
+            "\\(18\\)",
+            "\\(15\\)",
+            "\\(16\\)",
+            "\\(17\\)"
+          ],
+          "answer": 2,
+          "hint": "Square b.",
+          "solution": "\\(4^2 = 16\\)",
+          "steps": [
+            {
+              "explain": "To find \\(b^2\\), square the given value of \\(b\\).",
+              "work": "\\(4^2 = 4 \\times 4\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(16\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row1c2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 1, given \\(a = 3\\) and \\(b = 4\\), find \\(c^2 = a^2 + b^2\\).",
+          "options": [
+            "\\(27\\)",
+            "\\(24\\)",
+            "\\(25\\)",
+            "\\(26\\)"
+          ],
+          "answer": 2,
+          "hint": "Add them.",
+          "solution": "\\(9 + 16 = 25\\)",
+          "steps": [
+            {
+              "explain": "First, find the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(a^2 = 9\\) and \\(b^2 = 16\\)"
+            },
+            {
+              "explain": "Add the two squares together to find \\(c^2\\).",
+              "work": "\\(9 + 16 = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 1, given \\(a = 3\\) and \\(b = 4\\), find \\(c\\).",
+          "options": [
+            "\\(7\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Square root.",
+          "solution": "\\(\\sqrt{25} = 5\\)",
+          "steps": [
+            {
+              "explain": "First, use Pythagoras' theorem to find \\(c^2\\) by adding the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(c^2 = 9 + 16 = 25\\)"
+            },
+            {
+              "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
+              "work": "\\(c = \\sqrt{25}\\)<br>\\(c = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row2a2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 2, given \\(a = 5\\) and \\(b = 12\\), find \\(a^2\\).",
+          "options": [
+            "\\(27\\)",
+            "\\(24\\)",
+            "\\(25\\)",
+            "\\(26\\)"
+          ],
+          "answer": 2,
+          "hint": "Square a.",
+          "solution": "\\(5^2 = 25\\)",
+          "steps": [
+            {
+              "explain": "To find \\(a^2\\), square the given value of \\(a\\).",
+              "work": "\\(5^2 = 5 \\times 5\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row2b2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 2, given \\(a = 5\\) and \\(b = 12\\), find \\(b^2\\).",
+          "options": [
+            "\\(146\\)",
+            "\\(143\\)",
+            "\\(144\\)",
+            "\\(145\\)"
+          ],
+          "answer": 2,
+          "hint": "Square b.",
+          "solution": "\\(12^2 = 144\\)",
+          "steps": [
+            {
+              "explain": "To find \\(b^2\\), square the given value of \\(b\\).",
+              "work": "\\(12^2 = 12 \\times 12\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(144\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row2c2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 2, given \\(a = 5\\) and \\(b = 12\\), find \\(c^2 = a^2 + b^2\\).",
+          "options": [
+            "\\(171\\)",
+            "\\(168\\)",
+            "\\(169\\)",
+            "\\(170\\)"
+          ],
+          "answer": 2,
+          "hint": "Add them.",
+          "solution": "\\(25 + 144 = 169\\)",
+          "steps": [
+            {
+              "explain": "First, find the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(a^2 = 25\\) and \\(b^2 = 144\\)"
+            },
+            {
+              "explain": "Add the two squares together to find \\(c^2\\).",
+              "work": "\\(25 + 144 = 169\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 2, given \\(a = 5\\) and \\(b = 12\\), find \\(c\\).",
+          "options": [
+            "\\(15\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Square root.",
+          "solution": "\\(\\sqrt{169} = 13\\)",
+          "steps": [
+            {
+              "explain": "First, use Pythagoras' theorem to find \\(c^2\\) by adding the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(c^2 = 25 + 144 = 169\\)"
+            },
+            {
+              "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
+              "work": "\\(c = \\sqrt{169}\\)<br>\\(c = 13\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row3a2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 3, given \\(a = 7\\) and \\(b = 24\\), find \\(a^2\\).",
+          "options": [
+            "\\(51\\)",
+            "\\(48\\)",
+            "\\(49\\)",
+            "\\(50\\)"
+          ],
+          "answer": 2,
+          "hint": "Square a.",
+          "solution": "\\(7^2 = 49\\)",
+          "steps": [
+            {
+              "explain": "To find \\(a^2\\), square the given value of \\(a\\).",
+              "work": "\\(7^2 = 7 \\times 7\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(49\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row3b2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 3, given \\(a = 7\\) and \\(b = 24\\), find \\(b^2\\).",
+          "options": [
+            "\\(578\\)",
+            "\\(575\\)",
+            "\\(576\\)",
+            "\\(577\\)"
+          ],
+          "answer": 2,
+          "hint": "Square b.",
+          "solution": "\\(24^2 = 576\\)",
+          "steps": [
+            {
+              "explain": "To find \\(b^2\\), square the given value of \\(b\\).",
+              "work": "\\(24^2 = 24 \\times 24\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(576\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row3c2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 3, given \\(a = 7\\) and \\(b = 24\\), find \\(c^2 = a^2 + b^2\\).",
+          "options": [
+            "\\(627\\)",
+            "\\(624\\)",
+            "\\(625\\)",
+            "\\(626\\)"
+          ],
+          "answer": 2,
+          "hint": "Add them.",
+          "solution": "\\(49 + 576 = 625\\)",
+          "steps": [
+            {
+              "explain": "First, find the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(a^2 = 49\\) and \\(b^2 = 576\\)"
+            },
+            {
+              "explain": "Add the two squares together to find \\(c^2\\).",
+              "work": "\\(49 + 576 = 625\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 3, given \\(a = 7\\) and \\(b = 24\\), find \\(c\\).",
+          "options": [
+            "\\(27\\)",
+            "\\(24\\)",
+            "\\(25\\)",
+            "\\(26\\)"
+          ],
+          "answer": 2,
+          "hint": "Square root.",
+          "solution": "\\(\\sqrt{625} = 25\\)",
+          "steps": [
+            {
+              "explain": "First, use Pythagoras' theorem to find \\(c^2\\) by adding the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(c^2 = 49 + 576 = 625\\)"
+            },
+            {
+              "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
+              "work": "\\(c = \\sqrt{625}\\)<br>\\(c = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row4a2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 4, given \\(a = 9\\) and \\(b = 40\\), find \\(a^2\\).",
+          "options": [
+            "\\(83\\)",
+            "\\(80\\)",
+            "\\(81\\)",
+            "\\(82\\)"
+          ],
+          "answer": 2,
+          "hint": "Square a.",
+          "solution": "\\(9^2 = 81\\)",
+          "steps": [
+            {
+              "explain": "To find \\(a^2\\), square the given value of \\(a\\).",
+              "work": "\\(9^2 = 9 \\times 9\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(81\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row4b2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 4, given \\(a = 9\\) and \\(b = 40\\), find \\(b^2\\).",
+          "options": [
+            "\\(1602\\)",
+            "\\(1599\\)",
+            "\\(1600\\)",
+            "\\(1601\\)"
+          ],
+          "answer": 2,
+          "hint": "Square b.",
+          "solution": "\\(40^2 = 1600\\)",
+          "steps": [
+            {
+              "explain": "To find \\(b^2\\), square the given value of \\(b\\).",
+              "work": "\\(40^2 = 40 \\times 40\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(1600\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row4c2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 4, given \\(a = 9\\) and \\(b = 40\\), find \\(c^2 = a^2 + b^2\\).",
+          "options": [
+            "\\(1683\\)",
+            "\\(1680\\)",
+            "\\(1681\\)",
+            "\\(1682\\)"
+          ],
+          "answer": 2,
+          "hint": "Add them.",
+          "solution": "\\(81 + 1600 = 1681\\)",
+          "steps": [
+            {
+              "explain": "First, find the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(a^2 = 81\\) and \\(b^2 = 1600\\)"
+            },
+            {
+              "explain": "Add the two squares together to find \\(c^2\\).",
+              "work": "\\(81 + 1600 = 1681\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 4, given \\(a = 9\\) and \\(b = 40\\), find \\(c\\).",
+          "options": [
+            "\\(43\\)",
+            "\\(40\\)",
+            "\\(41\\)",
+            "\\(42\\)"
+          ],
+          "answer": 2,
+          "hint": "Square root.",
+          "solution": "\\(\\sqrt{1681} = 41\\)",
+          "steps": [
+            {
+              "explain": "First, use Pythagoras' theorem to find \\(c^2\\) by adding the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(c^2 = 81 + 1600 = 1681\\)"
+            },
+            {
+              "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
+              "work": "\\(c = \\sqrt{1681}\\)<br>\\(c = 41\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row5a2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 5, given \\(a = 11\\) and \\(b = 60\\), find \\(a^2\\).",
+          "options": [
+            "\\(123\\)",
+            "\\(120\\)",
+            "\\(121\\)",
+            "\\(122\\)"
+          ],
+          "answer": 2,
+          "hint": "Square a.",
+          "solution": "\\(11^2 = 121\\)",
+          "steps": [
+            {
+              "explain": "To find \\(a^2\\), square the given value of \\(a\\).",
+              "work": "\\(11^2 = 11 \\times 11\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(121\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row5b2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 5, given \\(a = 11\\) and \\(b = 60\\), find \\(b^2\\).",
+          "options": [
+            "\\(3602\\)",
+            "\\(3599\\)",
+            "\\(3600\\)",
+            "\\(3601\\)"
+          ],
+          "answer": 2,
+          "hint": "Square b.",
+          "solution": "\\(60^2 = 3600\\)",
+          "steps": [
+            {
+              "explain": "To find \\(b^2\\), square the given value of \\(b\\).",
+              "work": "\\(60^2 = 60 \\times 60\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(3600\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row5c2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 5, given \\(a = 11\\) and \\(b = 60\\), find \\(c^2 = a^2 + b^2\\).",
+          "options": [
+            "\\(3723\\)",
+            "\\(3720\\)",
+            "\\(3721\\)",
+            "\\(3722\\)"
+          ],
+          "answer": 2,
+          "hint": "Add them.",
+          "solution": "\\(121 + 3600 = 3721\\)",
+          "steps": [
+            {
+              "explain": "First, find the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(a^2 = 121\\) and \\(b^2 = 3600\\)"
+            },
+            {
+              "explain": "Add the two squares together to find \\(c^2\\).",
+              "work": "\\(121 + 3600 = 3721\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q6row5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In row 5, given \\(a = 11\\) and \\(b = 60\\), find \\(c\\).",
+          "options": [
+            "\\(63\\)",
+            "\\(60\\)",
+            "\\(61\\)",
+            "\\(62\\)"
+          ],
+          "answer": 2,
+          "hint": "Square root.",
+          "solution": "\\(\\sqrt{3721} = 61\\)",
+          "steps": [
+            {
+              "explain": "First, use Pythagoras' theorem to find \\(c^2\\) by adding the squares of \\(a\\) and \\(b\\).",
+              "work": "\\(c^2 = 121 + 3600 = 3721\\)"
+            },
+            {
+              "explain": "Take the square root of \\(c^2\\) to find \\(c\\).",
+              "work": "\\(c = \\sqrt{3721}\\)<br>\\(c = 61\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q7ax",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 260 200\" width=\"100%\" height=\"auto\" style=\"max-width:260px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"220\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"220\" y1=\"40\" x2=\"220\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"220\" y1=\"160\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"40\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"220\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"55,40 55,55 40,55\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"220,145 205,145 205,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"16\" y=\"100\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"130\" y=\"184\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">16</text>\n  <text x=\"154\" y=\"100\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+          },
+          "options": [
+            "\\(22\\)",
+            "\\(19\\)",
+            "\\(20\\)",
+            "\\(21\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras in the right angled triangle with sides 12 and 16.",
+          "solution": "\\(x^2 = 12^2 + 16^2 = 144 + 256 = 400\\), so \\(x = \\sqrt{400} = 20\\)",
+          "steps": [
+            {
+              "explain": "Identify the right-angled triangle.",
+              "work": "The triangle has two shorter sides of length 12 and 16.",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 260 200\" width=\"100%\" height=\"auto\" style=\"max-width:260px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"220\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"220\" y1=\"40\" x2=\"220\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"220\" y1=\"160\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"40\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"220\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"55,40 55,55 40,55\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"220,145 205,145 205,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"16\" y=\"100\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"130\" y=\"184\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">16</text>\n  <text x=\"154\" y=\"100\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Use Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)).",
+              "work": "\\(x^2 = 12^2 + 16^2\\)"
+            },
+            {
+              "explain": "Calculate the squares and add them together.",
+              "work": "\\(x^2 = 144 + 256\\)<br>\\(x^2 = 400\\)"
+            },
+            {
+              "explain": "Take the square root to find \\(x\\).",
+              "work": "\\(x = \\sqrt{400}\\)<br>\\(x = 20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q7bx",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 200 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"70\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"40\" x2=\"70\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"40\" x2=\"160\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"70\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"160\" x2=\"160\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"70,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"38.02943725152286\" y=\"83.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"82\" y=\"100\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"38.02943725152286\" y=\"176.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">5</text>\n  <text x=\"131.97056274847714\" y=\"83.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"131.97056274847714\" y=\"176.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">9</text>\n</svg>"
+          },
+          "options": [
+            "\\(15\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras in the left triangle.",
+          "solution": "\\(x^2 = 5^2 + 12^2 = 25 + 144 = 169\\), so \\(x = \\sqrt{169} = 13\\)",
+          "steps": [
+            {
+              "explain": "Identify the relevant right-angled triangle for \\(x\\).",
+              "work": "The triangle on the left has shorter sides of length 5 and 12.",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 200 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"70\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"40\" x2=\"70\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"40\" x2=\"160\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"70\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"160\" x2=\"160\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"70,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"38.02943725152286\" y=\"83.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"82\" y=\"100\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"38.02943725152286\" y=\"176.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">5</text>\n  <text x=\"131.97056274847714\" y=\"83.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"131.97056274847714\" y=\"176.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">9</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Use Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)).",
+              "work": "\\(x^2 = 5^2 + 12^2\\)"
+            },
+            {
+              "explain": "Calculate the squares and add them together.",
+              "work": "\\(x^2 = 25 + 144\\)<br>\\(x^2 = 169\\)"
+            },
+            {
+              "explain": "Take the square root to find \\(x\\).",
+              "work": "\\(x = \\sqrt{169}\\)<br>\\(x = 13\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q7by",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(y\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 200 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"70\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"40\" x2=\"70\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"40\" x2=\"160\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"70\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"160\" x2=\"160\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"70,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"38.02943725152286\" y=\"83.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"82\" y=\"100\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"38.02943725152286\" y=\"176.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">5</text>\n  <text x=\"131.97056274847714\" y=\"83.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"131.97056274847714\" y=\"176.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">9</text>\n</svg>"
+          },
+          "options": [
+            "\\(17\\)",
+            "\\(14\\)",
+            "\\(15\\)",
+            "\\(16\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras in the right triangle.",
+          "solution": "\\(y^2 = 9^2 + 12^2 = 81 + 144 = 225\\), so \\(y = \\sqrt{225} = 15\\)",
+          "steps": [
+            {
+              "explain": "Identify the relevant right-angled triangle for \\(y\\).",
+              "work": "The triangle on the right has shorter sides of length 9 and 12.",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 200 200\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"70\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"40\" x2=\"70\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"40\" x2=\"160\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"70\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"70\" y1=\"160\" x2=\"160\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"70,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"38.02943725152286\" y=\"83.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"82\" y=\"100\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"38.02943725152286\" y=\"176.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">5</text>\n  <text x=\"131.97056274847714\" y=\"83.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"131.97056274847714\" y=\"176.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">9</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Use Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)).",
+              "work": "\\(y^2 = 9^2 + 12^2\\)"
+            },
+            {
+              "explain": "Calculate the squares and add them together.",
+              "work": "\\(y^2 = 81 + 144\\)<br>\\(y^2 = 225\\)"
+            },
+            {
+              "explain": "Take the square root to find \\(y\\).",
+              "work": "\\(y = \\sqrt{225}\\)<br>\\(y = 15\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q7cx",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 200 290\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"250\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"160\" y1=\"220\" x2=\"160\" y2=\"250\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"250\" x2=\"160\" y2=\"250\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,205 55,205 55,220\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"40,235 55,235 55,250\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"25.88387925579889\" y=\"110.59033397672347\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">24</text>\n  <text x=\"104.2932505167996\" y=\"106.3871221576022\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"172\" y=\"235\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">4</text>\n  <text x=\"105.20633098764775\" y=\"273.4284894444149\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n</svg>"
+          },
+          "options": [
+            "\\(28\\)",
+            "\\(25\\)",
+            "\\(26\\)",
+            "\\(27\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras on the triangle formed by extending the horizontal dotted line.",
+          "solution": "\\(x^2 = 24^2 + 10^2 = 576 + 100 = 676\\), so \\(x = \\sqrt{676} = 26\\)",
+          "steps": [
+            {
+              "explain": "Identify the right-angled triangle.",
+              "work": "The triangle has shorter sides of length 10 and 24.",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 200 290\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"250\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"160\" y1=\"220\" x2=\"160\" y2=\"250\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"250\" x2=\"160\" y2=\"250\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,205 55,205 55,220\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"40,235 55,235 55,250\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"25.88387925579889\" y=\"110.59033397672347\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">24</text>\n  <text x=\"104.2932505167996\" y=\"106.3871221576022\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"172\" y=\"235\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">4</text>\n  <text x=\"105.20633098764775\" y=\"273.4284894444149\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Use Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)).",
+              "work": "\\(x^2 = 10^2 + 24^2\\)"
+            },
+            {
+              "explain": "Calculate the squares and add them together.",
+              "work": "\\(x^2 = 100 + 576\\)<br>\\(x^2 = 676\\)"
+            },
+            {
+              "explain": "Take the square root to find \\(x\\).",
+              "work": "\\(x = \\sqrt{676}\\)<br>\\(x = 26\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q7dy",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(y\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 200 260\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"160\" y1=\"40\" x2=\"40\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"160\" y1=\"40\" x2=\"100\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"160\" y1=\"40\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"100\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"100\" y1=\"220\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"160,205 145,205 145,220\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"90\" y=\"120\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"120\" y=\"120\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"176.97056274847714\" y=\"113.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">24</text>\n  <text x=\"53.02943725152286\" y=\"236.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">8</text>\n  <text x=\"137.5894663844041\" y=\"242.76839915321236\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n</svg>"
+          },
+          "options": [
+            "\\(28\\)",
+            "\\(25\\)",
+            "\\(26\\)",
+            "\\(27\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras in the smaller right triangle.",
+          "solution": "\\(y^2 = 10^2 + 24^2 = 100 + 576 = 676\\), so \\(y = \\sqrt{676} = 26\\)",
+          "steps": [
+            {
+              "explain": "Identify the relevant right-angled triangle for \\(y\\).",
+              "work": "The inner triangle has a vertical side of 24 and a base of 10.",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 200 260\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"160\" y1=\"40\" x2=\"40\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"160\" y1=\"40\" x2=\"100\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"160\" y1=\"40\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"100\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"100\" y1=\"220\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"160,205 145,205 145,220\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"90\" y=\"120\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"120\" y=\"120\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"176.97056274847714\" y=\"113.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">24</text>\n  <text x=\"53.02943725152286\" y=\"236.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">8</text>\n  <text x=\"137.5894663844041\" y=\"242.76839915321236\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Use Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)).",
+              "work": "\\(y^2 = 10^2 + 24^2\\)"
+            },
+            {
+              "explain": "Calculate the squares and add them together.",
+              "work": "\\(y^2 = 100 + 576\\)<br>\\(y^2 = 676\\)"
+            },
+            {
+              "explain": "Take the square root to find \\(y\\).",
+              "work": "\\(y = \\sqrt{676}\\)<br>\\(y = 26\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q7dx",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 200 260\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"160\" y1=\"40\" x2=\"40\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"160\" y1=\"40\" x2=\"100\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"160\" y1=\"40\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"100\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"100\" y1=\"220\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"160,205 145,205 145,220\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"90\" y=\"120\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"120\" y=\"120\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"176.97056274847714\" y=\"113.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">24</text>\n  <text x=\"53.02943725152286\" y=\"236.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">8</text>\n  <text x=\"137.5894663844041\" y=\"242.76839915321236\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n</svg>"
+          },
+          "options": [
+            "\\(32\\)",
+            "\\(29\\)",
+            "\\(30\\)",
+            "\\(31\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras in the large right triangle.",
+          "solution": "Base of large triangle is \\(8 + 10 = 18\\). \\(x^2 = 18^2 + 24^2 = 324 + 576 = 900\\), so \\(x = \\sqrt{900} = 30\\)",
+          "steps": [
+            {
+              "explain": "Identify the relevant right-angled triangle for \\(x\\).",
+              "work": "The large triangle has a vertical side of 24 and a total base of \\(8 + 10 = 18\\).",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 200 260\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"160\" y1=\"40\" x2=\"40\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"160\" y1=\"40\" x2=\"100\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"160\" y1=\"40\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"100\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"100\" y1=\"220\" x2=\"160\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"160,205 145,205 145,220\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"90\" y=\"120\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"120\" y=\"120\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"176.97056274847714\" y=\"113.02943725152286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">24</text>\n  <text x=\"53.02943725152286\" y=\"236.97056274847714\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">8</text>\n  <text x=\"137.5894663844041\" y=\"242.76839915321236\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Use Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)).",
+              "work": "\\(x^2 = 18^2 + 24^2\\)"
+            },
+            {
+              "explain": "Calculate the squares and add them together.",
+              "work": "\\(x^2 = 324 + 576\\)<br>\\(x^2 = 900\\)"
+            },
+            {
+              "explain": "Take the square root to find \\(x\\).",
+              "work": "\\(x = \\sqrt{900}\\)<br>\\(x = 30\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q7ey",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(y\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 170 260\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"130\" y1=\"160\" x2=\"130\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"40\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"130\" y1=\"160\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"115,40 115,55 130,55\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"40,205 55,205 55,220\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"22.062176351592164\" y=\"84.05526786808193\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n  <text x=\"85\" y=\"76\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"85\" y=\"106\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"147.93782364840786\" y=\"84.05526786808193\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n  <text x=\"146.0551535589388\" y=\"207.83905950993199\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">9</text>\n  <text x=\"85\" y=\"244\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n</svg>"
+          },
+          "options": [
+            "\\(28\\)",
+            "\\(25\\)",
+            "\\(26\\)",
+            "\\(27\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras in the left large triangle.",
+          "solution": "Height is \\(15 + 9 = 24\\). \\(y^2 = 10^2 + 24^2 = 100 + 576 = 676\\), so \\(y = 26\\)",
+          "steps": [
+            {
+              "explain": "First, find the length of the face diagonal (if not already known).",
+              "work": "Let the face diagonal be \\(d\\). \\(d = \\sqrt{24^2 + 10^2} = 26\\)",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 170 260\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"130\" y1=\"160\" x2=\"130\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"40\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"130\" y1=\"160\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"115,40 115,55 130,55\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"40,205 55,205 55,220\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"22.062176351592164\" y=\"84.05526786808193\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n  <text x=\"85\" y=\"76\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"85\" y=\"106\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"147.93782364840786\" y=\"84.05526786808193\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n  <text x=\"146.0551535589388\" y=\"207.83905950993199\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">9</text>\n  <text x=\"85\" y=\"244\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Use the 3D Pythagoras' theorem to find the space diagonal \\(y\\).",
+              "work": "The triangle is formed by the vertical height and the base diagonal."
+            },
+            {
+              "explain": "Set up the equation.",
+              "work": "\\(y^2 = 24^2 + 10^2\\)"
+            },
+            {
+              "explain": "Calculate and take the square root to find \\(y\\).",
+              "work": "\\(y = \\sqrt{676}\\)<br>\\(y = 26\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q7ex",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 170 260\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"130\" y1=\"160\" x2=\"130\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"40\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"130\" y1=\"160\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"115,40 115,55 130,55\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"40,205 55,205 55,220\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"22.062176351592164\" y=\"84.05526786808193\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n  <text x=\"85\" y=\"76\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"85\" y=\"106\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"147.93782364840786\" y=\"84.05526786808193\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">8</text>\n  <text x=\"146.0551535589388\" y=\"207.83905950993199\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">9</text>\n  <text x=\"85\" y=\"244\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n</svg>"
+          },
+          "options": [
+            "\\(19\\)",
+            "\\(16\\)",
+            "\\(17\\)",
+            "\\(18\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras on the top triangle.",
+          "solution": "\\(x^2 = 15^2 + 8^2 = 225 + 64 = 289\\), so \\(x = \\sqrt{289} = 17\\) (assuming the top width is 8 to make standard Pythagorean triple 8-15-17).",
+          "steps": [
+            {
+              "explain": "Identify the relevant right-angled triangle for \\(x\\).",
+              "work": "The face diagonal \\(x\\) forms a right triangle with sides 15 and 8.",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 170 260\" width=\"100%\" height=\"auto\" style=\"max-width:250px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"130\" y1=\"160\" x2=\"130\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"40\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"160\" x2=\"40\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"40\" y1=\"220\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-dasharray=\"5,5\" stroke-linejoin=\"round\"/>\n  <line x1=\"130\" y1=\"160\" x2=\"130\" y2=\"220\" stroke=\"#475569\" stroke-width=\"2.5\"  stroke-linejoin=\"round\"/>\n  <polyline points=\"40,145 55,145 55,160\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"115,40 115,55 130,55\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"40,205 55,205 55,220\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"22.062176351592164\" y=\"84.05526786808193\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n  <text x=\"85\" y=\"76\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"85\" y=\"106\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"147.93782364840786\" y=\"84.05526786808193\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">8</text>\n  <text x=\"146.0551535589388\" y=\"207.83905950993199\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">9</text>\n  <text x=\"85\" y=\"244\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">10</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Use Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)).",
+              "work": "\\(x^2 = 15^2 + 8^2\\)"
+            },
+            {
+              "explain": "Calculate the squares and add them together.",
+              "work": "\\(x^2 = 225 + 64\\)<br>\\(x^2 = 289\\)"
+            },
+            {
+              "explain": "Take the square root to find \\(x\\).",
+              "work": "\\(x = \\sqrt{289}\\)<br>\\(x = 17\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q7fx",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(x\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 296.8 260\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"126.8\" y1=\"50\" x2=\"50\" y2=\"152.4\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"50\" y1=\"152.4\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"210\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <polyline points=\"126.8,195 141.8,195 141.8,210\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"59,140.4 71,149.4 62,161.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"72.4\" y=\"89.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"73.4\" y=\"201.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"111.8\" y=\"130\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">z</text>\n  <text x=\"206.8\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">25</text>\n  <text x=\"186.8\" y=\"235\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n</svg>"
+          },
+          "options": [
+            "\\(18\\)",
+            "\\(15\\)",
+            "\\(16\\)",
+            "\\(17\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras in the right-most triangle.",
+          "solution": "\\(x^2 + 12^2 = 20^2\\). \\(x^2 = 400 - 144 = 256\\), so \\(x = 16\\).",
+          "steps": [
+            {
+              "explain": "Identify the right-angled triangle.",
+              "work": "The triangle has a hypotenuse of 20 and a shorter side of 12.",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 296.8 260\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"126.8\" y1=\"50\" x2=\"50\" y2=\"152.4\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"50\" y1=\"152.4\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"210\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <polyline points=\"126.8,195 141.8,195 141.8,210\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"59,140.4 71,149.4 62,161.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"72.4\" y=\"89.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"73.4\" y=\"201.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"111.8\" y=\"130\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">z</text>\n  <text x=\"206.8\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">25</text>\n  <text x=\"186.8\" y=\"235\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Use Pythagoras' theorem (\\(a^2 = c^2 - b^2\\)).",
+              "work": "\\(x^2 = 20^2 - 12^2\\)"
+            },
+            {
+              "explain": "Calculate the squares and subtract.",
+              "work": "\\(x^2 = 400 - 144\\)<br>\\(x^2 = 256\\)"
+            },
+            {
+              "explain": "Take the square root to find \\(x\\).",
+              "work": "\\(x = \\sqrt{256}\\)<br>\\(x = 16\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q7fz",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(z\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 296.8 260\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"126.8\" y1=\"50\" x2=\"50\" y2=\"152.4\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"50\" y1=\"152.4\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"210\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <polyline points=\"126.8,195 141.8,195 141.8,210\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"59,140.4 71,149.4 62,161.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"72.4\" y=\"89.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">16</text>\n  <text x=\"73.4\" y=\"201.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"111.8\" y=\"130\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">z</text>\n  <text x=\"206.8\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">25</text>\n  <text x=\"186.8\" y=\"235\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n</svg>"
+          },
+          "options": [
+            "\\(22\\)",
+            "\\(19\\)",
+            "\\(20\\)",
+            "\\(21\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras in the left-most triangle.",
+          "solution": "\\(z^2 = 16^2 + 12^2 = 256 + 144 = 400\\), so \\(z = \\sqrt{400} = 20\\).",
+          "steps": [
+            {
+              "explain": "Identify the relevant right-angled triangle for \\(z\\).",
+              "work": "The triangle has shorter sides of length 12 and 16.",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 296.8 260\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"126.8\" y1=\"50\" x2=\"50\" y2=\"152.4\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"50\" y1=\"152.4\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"210\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <polyline points=\"126.8,195 141.8,195 141.8,210\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"59,140.4 71,149.4 62,161.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"72.4\" y=\"89.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">16</text>\n  <text x=\"73.4\" y=\"201.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"111.8\" y=\"130\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">z</text>\n  <text x=\"206.8\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">25</text>\n  <text x=\"186.8\" y=\"235\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Use Pythagoras' theorem (\\(c^2 = a^2 + b^2\\)).",
+              "work": "\\(z^2 = 12^2 + 16^2\\)"
+            },
+            {
+              "explain": "Calculate the squares and add them together.",
+              "work": "\\(z^2 = 144 + 256\\)<br>\\(z^2 = 400\\)"
+            },
+            {
+              "explain": "Take the square root to find \\(z\\).",
+              "work": "\\(z = \\sqrt{400}\\)<br>\\(z = 20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-9a-q7fy",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(y\\).",
+          "figure": {
+            "html": "<svg viewBox=\"0 0 296.8 260\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"126.8\" y1=\"50\" x2=\"50\" y2=\"152.4\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"50\" y1=\"152.4\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"210\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <polyline points=\"126.8,195 141.8,195 141.8,210\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"59,140.4 71,149.4 62,161.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"72.4\" y=\"89.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">16</text>\n  <text x=\"73.4\" y=\"201.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"111.8\" y=\"130\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">z</text>\n  <text x=\"206.8\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"186.8\" y=\"235\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n</svg>"
+          },
+          "options": [
+            "\\(27\\)",
+            "\\(24\\)",
+            "\\(25\\)",
+            "\\(26\\)"
+          ],
+          "answer": 2,
+          "hint": "Solve step by step.",
+          "solution": "\\(y^2 = 15^2 + 20^2 = 225 + 400 = 625\\), so \\(y = \\sqrt{625} = 25\\).",
+          "steps": [
+            {
+              "explain": "Identify the two right-angled triangles.",
+              "work": "First find the shared side \\(z\\) using the triangle with sides 12 and 16.",
+              "figure": {
+                "html": "<svg viewBox=\"0 0 296.8 260\" width=\"100%\" height=\"auto\" style=\"max-width:300px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"126.8\" y1=\"50\" x2=\"50\" y2=\"152.4\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"50\" y1=\"152.4\" x2=\"126.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"210\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"126.8\" y1=\"50\" x2=\"246.8\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <polyline points=\"126.8,195 141.8,195 141.8,210\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <polyline points=\"59,140.4 71,149.4 62,161.4\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n  <text x=\"72.4\" y=\"89.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">16</text>\n  <text x=\"73.4\" y=\"201.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"111.8\" y=\"130\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">z</text>\n  <text x=\"206.8\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#3b82f6\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"186.8\" y=\"235\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"16\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n</svg>"
+              }
+            },
+            {
+              "explain": "Calculate \\(z\\).",
+              "work": "\\(z = \\sqrt{12^2 + 16^2} = \\sqrt{144 + 256} = \\sqrt{400} = 20\\)"
+            },
+            {
+              "explain": "Use \\(z\\) in the second triangle to find \\(y\\).",
+              "work": "The second triangle has sides \\(z = 20\\) and 15."
+            },
+            {
+              "explain": "Calculate \\(y\\) using Pythagoras' theorem.",
+              "work": "\\(y = \\sqrt{20^2 + 15^2} = \\sqrt{400 + 225} = \\sqrt{625}\\)<br>\\(y = 25\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

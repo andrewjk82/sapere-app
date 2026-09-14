@@ -1,0 +1,497 @@
+{
+  "chapterId": "exam:year8ch5review",
+  "title": "Exam Practice",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "exam:year8ch5review",
+      "code": "",
+      "title": "Review of geometry",
+      "questions": [
+        {
+          "id": "y8-5h-q1a",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "In the diagram, $AOB$ is a straight line and $\\angle AOC = 65^\\circ$. Find the size of $\\angle BOC$.",
+          "figure": {
+            "geometry": {
+              "points": {
+                "A": [
+                  -2,
+                  0
+                ],
+                "B": [
+                  2,
+                  0
+                ],
+                "O": [
+                  0,
+                  0
+                ],
+                "C": [
+                  -1,
+                  1.5
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "O",
+                  "to": "C"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "O",
+                  "label": "65^\\circ"
+                }
+              ]
+            }
+          },
+          "answer": "115^\\circ",
+          "hint": "Angles on a straight line add to 180 degrees.",
+          "solution": "Angles on a straight line add to $180^\\circ$. $\\angle BOC = 180^\\circ - 65^\\circ = 115^\\circ$.",
+          "steps": [
+            {
+              "explain": "Angles on a straight line add to \\(180^\\circ\\).",
+              "work": "\\angle BOC + 65^\\circ = 180^\\circ"
+            },
+            {
+              "explain": "Subtract \\(65^\\circ\\) from \\(180^\\circ\\).",
+              "work": "\\angle BOC = 180^\\circ - 65^\\circ = 115^\\circ"
+            }
+          ]
+        },
+        {
+          "id": "y8-5h-q1b",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Angles around the point $O$ are $\\angle AOB = 55^\\circ$ and reflex $\\angle AOC = 230^\\circ$. Find the size of $\\angle BOC$.",
+          "figure": {
+            "geometry": {
+              "points": {
+                "O": [
+                  0,
+                  0
+                ],
+                "A": [
+                  2,
+                  0
+                ],
+                "B": [
+                  1,
+                  -1.732
+                ],
+                "C": [
+                  -1,
+                  1.732
+                ]
+              },
+              "segments": [
+                {
+                  "from": "O",
+                  "to": "A"
+                },
+                {
+                  "from": "O",
+                  "to": "B"
+                },
+                {
+                  "from": "O",
+                  "to": "C"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "O",
+                  "label": "55^\\circ"
+                },
+                {
+                  "at": "O",
+                  "label": "230^\\circ"
+                }
+              ]
+            }
+          },
+          "answer": "75^\\circ",
+          "hint": "Angles around a point add to 360 degrees.",
+          "solution": "Angles at a point add to $360^\\circ$. $\\angle BOC = 360^\\circ - (230^\\circ + 55^\\circ) = 75^\\circ$.",
+          "steps": [
+            {
+              "explain": "Angles at a point add to \\(360^\\circ\\).",
+              "work": "\\angle BOC + 55^\\circ + 230^\\circ = 360^\\circ"
+            },
+            {
+              "explain": "Solve for \\(\\angle BOC\\).",
+              "work": "\\angle BOC = 360^\\circ - 285^\\circ = 75^\\circ"
+            }
+          ]
+        },
+        {
+          "id": "y8-5h-q1c",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Straight lines $AB$ and $CD$ intersect at $O$. If $\\angle AOC = 130^\\circ$, find the size of $\\angle BOC$.",
+          "figure": {
+            "geometry": {
+              "points": {
+                "A": [
+                  -2,
+                  1
+                ],
+                "B": [
+                  2,
+                  -1
+                ],
+                "C": [
+                  -2,
+                  -1
+                ],
+                "D": [
+                  2,
+                  1
+                ],
+                "O": [
+                  0,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "C",
+                  "to": "D"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "O",
+                  "label": "130^\\circ"
+                }
+              ]
+            }
+          },
+          "answer": "50^\\circ",
+          "hint": "Angles on a straight line add to 180 degrees.",
+          "solution": "$AOB$ is a straight line, so adjacent angles add to $180^\\circ$. $\\angle BOC = 180^\\circ - 130^\\circ = 50^\\circ$.",
+          "steps": [
+            {
+              "explain": "\\(AOB\\) is a straight line, so angles add to \\(180^\\circ\\).",
+              "work": "\\angle BOC + 130^\\circ = 180^\\circ"
+            },
+            {
+              "explain": "Subtract from \\(180^\\circ\\).",
+              "work": "\\angle BOC = 180^\\circ - 130^\\circ = 50^\\circ"
+            }
+          ]
+        },
+        {
+          "id": "y8-5h-q1d",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Straight lines $AD$, $BE$ and $CF$ intersect at $O$. If $\\angle AOF = 40^\\circ$ and $\\angle DOE = 65^\\circ$, find the size of $\\angle BOC$.",
+          "figure": {
+            "geometry": {
+              "points": {
+                "A": [
+                  -2,
+                  1
+                ],
+                "D": [
+                  2,
+                  -1
+                ],
+                "B": [
+                  -1,
+                  2
+                ],
+                "E": [
+                  1,
+                  -2
+                ],
+                "C": [
+                  2,
+                  1
+                ],
+                "F": [
+                  -2,
+                  -1
+                ],
+                "O": [
+                  0,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "D"
+                },
+                {
+                  "from": "B",
+                  "to": "E"
+                },
+                {
+                  "from": "C",
+                  "to": "F"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "O",
+                  "label": "40^\\circ"
+                },
+                {
+                  "at": "O",
+                  "label": "65^\\circ"
+                }
+              ]
+            }
+          },
+          "answer": "75^\\circ",
+          "hint": "Use vertically opposite angles and angles on a straight line.",
+          "solution": "Angles on the straight line $AD$ add to $180^\\circ$. So $\\angle FOE = 180^\\circ - (40^\\circ + 65^\\circ) = 75^\\circ$. $\\angle BOC$ is vertically opposite to $\\angle FOE$, so $\\angle BOC = 75^\\circ$.",
+          "steps": [
+            {
+              "explain": "Angles on the straight line \\(AD\\) add to \\(180^\\circ\\).",
+              "work": "\\angle AOF + \\angle FOE + \\angle EOD = 180^\\circ"
+            },
+            {
+              "explain": "Substitute known values.",
+              "work": "40^\\circ + \\angle FOE + 65^\\circ = 180^\\circ"
+            },
+            {
+              "explain": "Solve for \\(\\angle FOE\\).",
+              "work": "\\angle FOE = 180^\\circ - 105^\\circ = 75^\\circ"
+            },
+            {
+              "explain": "\\(\\angle BOC\\) and \\(\\angle FOE\\) are vertically opposite.",
+              "work": "\\angle BOC = \\angle FOE = 75^\\circ"
+            }
+          ]
+        },
+        {
+          "id": "y8-5h-q1e",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Rays $OA$, $OB$, $OC$ and $OD$ meet at $O$. $\\angle AOB$ and $\\angle BOC$ are right angles. If $\\angle AOD = 65^\\circ$, find the size of $\\angle COD$.",
+          "figure": {
+            "geometry": {
+              "points": {
+                "O": [
+                  0,
+                  0
+                ],
+                "A": [
+                  -2,
+                  0
+                ],
+                "B": [
+                  0,
+                  2
+                ],
+                "C": [
+                  2,
+                  0
+                ],
+                "D": [
+                  -1,
+                  -2
+                ]
+              },
+              "segments": [
+                {
+                  "from": "O",
+                  "to": "A"
+                },
+                {
+                  "from": "O",
+                  "to": "B"
+                },
+                {
+                  "from": "O",
+                  "to": "C"
+                },
+                {
+                  "from": "O",
+                  "to": "D"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "O",
+                  "right": true
+                },
+                {
+                  "at": "O",
+                  "label": "65^\\circ"
+                }
+              ]
+            }
+          },
+          "answer": "115^\\circ",
+          "hint": "Angles around a point add to 360 degrees.",
+          "solution": "Angles at a point add to $360^\\circ$. $\\angle COD = 360^\\circ - (90^\\circ + 90^\\circ + 65^\\circ) = 115^\\circ$.",
+          "steps": [
+            {
+              "explain": "Angles at a point add to \\(360^\\circ\\).",
+              "work": "\\angle AOB + \\angle BOC + \\angle COD + \\angle AOD = 360^\\circ"
+            },
+            {
+              "explain": "Substitute known values (\\(90^\\circ\\) for right angles).",
+              "work": "90^\\circ + 90^\\circ + \\angle COD + 65^\\circ = 360^\\circ"
+            },
+            {
+              "explain": "Solve for \\(\\angle COD\\).",
+              "work": "\\angle COD = 360^\\circ - 245^\\circ = 115^\\circ"
+            }
+          ]
+        },
+        {
+          "id": "y8-5h-q1f",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "In the diagram, $AOB$ is a straight line. If $\\angle AOC = 55^\\circ$ and $\\angle BOD = 40^\\circ$, find the size of $\\angle COD$.",
+          "figure": {
+            "geometry": {
+              "points": {
+                "A": [
+                  -2,
+                  0
+                ],
+                "B": [
+                  2,
+                  0
+                ],
+                "O": [
+                  0,
+                  0
+                ],
+                "C": [
+                  -1,
+                  1.5
+                ],
+                "D": [
+                  1,
+                  1.5
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "O",
+                  "to": "C"
+                },
+                {
+                  "from": "O",
+                  "to": "D"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "O",
+                  "label": "55^\\circ"
+                },
+                {
+                  "at": "O",
+                  "label": "40^\\circ"
+                }
+              ]
+            }
+          },
+          "answer": "85^\\circ",
+          "hint": "Angles on a straight line add to 180 degrees.",
+          "solution": "Angles on a straight line add to $180^\\circ$. $\\angle COD = 180^\\circ - (55^\\circ + 40^\\circ) = 85^\\circ$.",
+          "steps": [
+            {
+              "explain": "Angles on a straight line add to \\(180^\\circ\\).",
+              "work": "\\angle AOC + \\angle COD + \\angle BOD = 180^\\circ"
+            },
+            {
+              "explain": "Substitute known values.",
+              "work": "55^\\circ + \\angle COD + 40^\\circ = 180^\\circ"
+            },
+            {
+              "explain": "Solve for \\(\\angle COD\\).",
+              "work": "\\angle COD = 180^\\circ - 95^\\circ = 85^\\circ"
+            }
+          ]
+        },
+        {
+          "id": "y8-5h-q2b",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Find the value of $\\alpha$ in the triangle.",
+          "figure": {
+            "geometry": {
+              "points": {
+                "A": [
+                  -2,
+                  0
+                ],
+                "C": [
+                  2,
+                  0
+                ],
+                "B": [
+                  0,
+                  2
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "A",
+                  "label": "35^\\circ"
+                },
+                {
+                  "at": "C",
+                  "label": "110^\\circ"
+                },
+                {
+                  "at": "B",
+                  "label": "\\alpha"
+                }
+              ]
+            }
+          },
+          "answer": "35^\\circ",
+          "hint": "Angles in a triangle add to 180 degrees.",
+          "solution": "Angles in a triangle add to $180^\\circ$. $\\alpha = 180^\\circ - (35^\\circ + 110^\\circ) = 35^\\circ$.",
+          "steps": [
+            {
+              "explain": "Sum of angles in a triangle is \\(180^\\circ\\)",
+              "work": "\\alpha + 35^\\circ + 110^\\circ = 180^\\circ"
+            },
+            {
+              "explain": "Solve for \\alpha",
+              "work": "\\alpha = 180^\\circ - 145^\\circ = 35^\\circ"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

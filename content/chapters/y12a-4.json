@@ -1,0 +1,1193 @@
+{
+  "chapterId": "y12a-4",
+  "title": "Chapter 4: Integration",
+  "year": "2020",
+  "topics": [
+    {
+      "topicId": "y12a-4B",
+      "code": "4B",
+      "title": "The fundamental theorem of calculus",
+      "questions": [
+        {
+          "id": "bb2020-q21",
+          "type": "mc",
+          "stem": "What is \\(\\displaystyle\\int_0^2 \\sqrt{4x+1}\\,dx\\)?",
+          "options": [
+            "\\(\\dfrac{9}{2}\\)",
+            "\\(\\dfrac{13}{3}\\)",
+            "\\(\\dfrac{52}{3}\\)",
+            "\\(\\dfrac{13}{6}\\)"
+          ],
+          "answer": 1,
+          "hint": "Rewrite the square root as a fractional power \\((4x+1)^{1/2}\\), and remember the reverse chain rule needs an extra division by the derivative of \\(4x+1\\) (which is 4).",
+          "steps": [
+            {
+              "explain": "Rewrite the square root as a fractional power, then apply the reverse chain rule to find the primitive of \\((4x+1)^{1/2}\\).",
+              "work": "\\(\\displaystyle\\int_0^2 (4x+1)^{1/2}\\,dx = \\left[\\dfrac{(4x+1)^{3/2}}{\\tfrac32\\times 4}\\right]_0^2 = \\left[\\dfrac{(4x+1)^{3/2}}{6}\\right]_0^2\\)"
+            },
+            {
+              "explain": "Evaluate at the upper limit \\(x=2\\) and the lower limit \\(x=0\\).",
+              "work": "\\(= \\dfrac{(4(2)+1)^{3/2}}{6} - \\dfrac{(4(0)+1)^{3/2}}{6} = \\dfrac{9^{3/2}}{6} - \\dfrac{1^{3/2}}{6}\\)"
+            },
+            {
+              "explain": "Evaluate \\(9^{3/2} = (\\sqrt9)^3 = 27\\), then combine the fractions.",
+              "work": "\\(= \\dfrac{27}{6} - \\dfrac{1}{6} = \\dfrac{26}{6} = \\dfrac{13}{3}\\)"
+            },
+            {
+              "explain": "Option B comes from forgetting the extra factor of 4 in the reverse chain rule denominator (using \\(\\div\\tfrac32\\) only, not \\(\\div\\tfrac32\\times4\\)), giving \\(\\dfrac23(27-1)=\\dfrac{52}{3}\\). Option C comes from forgetting to subtract the lower-limit value entirely (\\(\\tfrac{27}{6}=\\tfrac92\\)). Option D comes from doubling the denominator by mistake (\\(\\tfrac{26}{12}=\\tfrac{13}{6}\\)).",
+              "work": "Compare: missing chain-rule factor \\(\\to\\tfrac{52}{3}\\); missing lower limit \\(\\to\\tfrac92\\); wrong denominator \\(\\to\\tfrac{13}{6}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-4C",
+      "code": "4C",
+      "title": "The definite integral and its properties",
+      "questions": [
+        {
+          "id": "glenwood2020-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\( \\displaystyle\\int_0^2 (3x^4+2x)\\,dx \\).",
+          "options": [
+            "\\( \\dfrac{116}{5} \\)",
+            "\\( \\dfrac{96}{5} \\)",
+            "\\( \\dfrac{136}{5} \\)",
+            "100"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find the primitive of each term using \\( \\int x^n\\,dx = \\dfrac{x^{n+1}}{n+1} \\).",
+              "work": "\\int (3x^4+2x)\\,dx = \\dfrac{3x^5}{5}+x^2"
+            },
+            {
+              "explain": "Apply the fundamental theorem of calculus: evaluate the primitive at the upper limit \\( x=2 \\) and subtract its value at the lower limit \\( x=0 \\).",
+              "work": "\\left[\\dfrac{3x^5}{5}+x^2\\right]_0^2 = \\left(\\dfrac{3(32)}{5}+4\\right)-(0+0)"
+            },
+            {
+              "explain": "Simplify the fraction and combine with the whole number.",
+              "work": "\\dfrac{96}{5}+4 = \\dfrac{96}{5}+\\dfrac{20}{5} = \\dfrac{116}{5}"
+            }
+          ],
+          "timeLimit": 75,
+          "meta": {
+            "source": "Glenwood 2020 Trial Q8",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "glenwood-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01"
+          }
+        },
+        {
+          "id": "gosford2020-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which equation is NOT correct?",
+          "options": [
+            "\\(\\displaystyle\\int_{-5}^{5}(4x^4-x^3+\\cos x)\\,dx=0\\)",
+            "\\(\\displaystyle\\int x(x^2-1)^2\\,dx=\\dfrac{(x^2-1)^3}{6}+c\\)",
+            "\\(\\displaystyle\\int_{-3}^{3}\\sqrt{9-x^2}\\,dx=\\dfrac{9\\pi}{2}\\)",
+            "\\(\\displaystyle\\int_{-1}^{1}3^x\\,dx=\\dfrac{1}{\\ln3}\\left(3-\\dfrac13\\right)\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Check (A): by the reverse chain rule, \\( \\int x(x^2-1)^2dx=\\frac{(x^2-1)^3}{6}+c \\) differentiates back correctly, so (A) is correct.",
+              "work": "\\(\\dfrac{d}{dx}\\left[\\dfrac{(x^2-1)^3}{6}\\right] = \\dfrac{3(x^2-1)^2\\cdot 2x}{6} = x(x^2-1)^2 \\checkmark\\)"
+            },
+            {
+              "explain": "Check (B): this integral is the area of a semicircle of radius 3, and (C) uses the standard exponential integral formula — both check out correctly.",
+              "work": "\\(\\int_{-3}^3\\sqrt{9-x^2}\\,dx = \\dfrac{\\pi(3)^2}{2}=\\dfrac{9\\pi}{2}\\ \\checkmark, \\qquad \\int_{-1}^1 3^x dx = \\left[\\dfrac{3^x}{\\ln3}\\right]_{-1}^1 = \\dfrac1{\\ln3}\\left(3-\\dfrac13\\right)\\checkmark\\)"
+            },
+            {
+              "explain": "Check (D): \\( \\cos x \\) is even and \\( 4x^4 \\) is also even, so neither integrates to zero over a symmetric interval — only the odd term \\( -x^3 \\) does. Pitfall: assuming any symmetric-interval integral is automatically 0 ignores that only odd functions have this property.",
+              "work": "\\(\\int_{-5}^{5}4x^4\\,dx \\ne 0 \\text{ and } \\int_{-5}^{5}\\cos x\\,dx \\ne 0 \\Rightarrow (D) \\text{ is NOT correct}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q9",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01"
+          }
+        },
+        {
+          "id": "gosford2020-q29",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Find the following indefinite integrals.",
+          "parts": [
+            {
+              "id": "gosford2020-q29a",
+              "type": "mc",
+              "stem": "(a) Find \\( \\displaystyle\\int\\sec^2(2x)\\tan^4(2x)\\,dx \\).",
+              "options": [
+                "\\(\\dfrac{\\tan^5(2x)}{5}+c\\)",
+                "\\(\\dfrac{\\tan^5(2x)}{2}+c\\)",
+                "\\(\\tan^5(2x)+c\\)",
+                "\\(\\dfrac{\\tan^5(2x)}{10}+c\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "This has the form \\( \\int u^4\\,du \\) where \\( u=\\tan(2x) \\), since \\( \\dfrac{du}{dx}=2\\sec^2(2x) \\). Introduce the needed factor of 2.",
+                  "work": "\\(\\int\\sec^2(2x)\\tan^4(2x)\\,dx = \\dfrac12\\int 2\\sec^2(2x)\\tan^4(2x)\\,dx\\)"
+                },
+                {
+                  "explain": "Apply the reverse power rule to the inner function \\( \\tan(2x) \\).",
+                  "work": "\\(= \\dfrac12\\cdot\\dfrac{[\\tan(2x)]^5}{5}+c\\)"
+                },
+                {
+                  "explain": "Simplify. Pitfall: forgetting the \\( \\tfrac12 \\) compensation factor for the chain rule (from differentiating \\( 2x \\)) gives \\( \\tan^5(2x)/5 \\) instead.",
+                  "work": "\\(= \\dfrac{\\tan^5(2x)}{10}+c\\)"
+                }
+              ]
+            },
+            {
+              "id": "gosford2020-q29b",
+              "type": "mc",
+              "stem": "(b) Find \\( \\displaystyle\\int\\dfrac{5x^2}{x^3+1}\\,dx \\).",
+              "options": [
+                "\\(\\dfrac53\\ln|x^3+1|+c\\)",
+                "\\(5\\ln|x^3+1|+c\\)",
+                "\\(\\dfrac53\\ln|x^2+1|+c\\)",
+                "\\(\\dfrac{5}{3(x^3+1)}+c\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Note that \\( \\dfrac{d}{dx}(x^3+1)=3x^2 \\), so rewrite the numerator to reveal this derivative, compensating with a constant.",
+                  "work": "\\(\\int\\dfrac{5x^2}{x^3+1}\\,dx = \\dfrac53\\int\\dfrac{3x^2}{x^3+1}\\,dx\\)"
+                },
+                {
+                  "explain": "Apply the standard result \\( \\int\\dfrac{u'}{u}\\,dx = \\ln|u|+c \\).",
+                  "work": "\\(= \\dfrac53\\ln|x^3+1|+c\\)"
+                },
+                {
+                  "explain": "Pitfall: forgetting to divide by the compensating factor \\( 3 \\) (using coefficient 5 instead of 5/3) is the most common slip here.",
+                  "work": "\\(\\int\\dfrac{5x^2}{x^3+1}\\,dx = \\dfrac53\\ln|x^3+1|+c\\)"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q29",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-4E",
+      "code": "4E",
+      "title": "The indefinite integral",
+      "questions": [
+        {
+          "id": "bb2020-q17a",
+          "type": "mc",
+          "stem": "Find the primitive function of \\(\\displaystyle\\int (5x+3)^{19}\\,dx\\).",
+          "options": [
+            "\\(\\dfrac{(5x+3)^{20}}{20}+C\\)",
+            "\\(\\dfrac{(5x+3)^{20}}{100}+C\\)",
+            "\\(19(5x+3)^{18}+C\\)",
+            "\\(\\dfrac{(5x+3)^{20}}{5}+C\\)"
+          ],
+          "answer": 1,
+          "hint": "For \\(\\int (ax+b)^n\\,dx\\), the reverse chain rule gives \\(\\dfrac{(ax+b)^{n+1}}{a(n+1)}+C\\).",
+          "steps": [
+            {
+              "explain": "Raise the power by 1 and divide by the new power and by the derivative of the inner function \\(5x+3\\) (which is 5).",
+              "work": "\\(\\int (5x+3)^{19}\\,dx = \\dfrac{(5x+3)^{20}}{20\\times 5}+C\\)"
+            },
+            {
+              "explain": "Simplify the denominator.",
+              "work": "\\(= \\dfrac{(5x+3)^{20}}{100}+C\\)"
+            }
+          ],
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "bb2020-q17b",
+          "type": "mc",
+          "stem": "Find the primitive function of \\(\\displaystyle\\int \\left(2x^3+\\dfrac{1}{3x+1}\\right)dx\\).",
+          "options": [
+            "\\(\\dfrac{x^4}{2}+3\\ln|3x+1|+C\\)",
+            "\\(6x^2+\\dfrac{1}{3}\\ln|3x+1|+C\\)",
+            "\\(\\dfrac{x^4}{2}+\\dfrac{1}{3}\\ln|3x+1|+C\\)",
+            "\\(\\dfrac{x^4}{2}+\\ln|3x+1|+C\\)"
+          ],
+          "answer": 2,
+          "hint": "Integrate each term separately: \\(\\int 2x^3\\,dx\\) is a power rule; \\(\\int \\dfrac{1}{3x+1}\\,dx\\) needs the reverse chain rule with \\(\\ln\\).",
+          "steps": [
+            {
+              "explain": "Integrate the first term using the power rule.",
+              "work": "\\(\\int 2x^3\\,dx = \\dfrac{2x^4}{4} = \\dfrac{x^4}{2}\\)"
+            },
+            {
+              "explain": "Integrate the second term: for \\(\\int \\dfrac{1}{ax+b}\\,dx = \\dfrac{1}{a}\\ln|ax+b|+C\\), here \\(a=3\\).",
+              "work": "\\(\\int \\dfrac{1}{3x+1}\\,dx = \\dfrac{1}{3}\\ln|3x+1|\\)"
+            },
+            {
+              "explain": "Combine both results with a single constant of integration.",
+              "work": "\\(\\dfrac{x^4}{2}+\\dfrac{1}{3}\\ln|3x+1|+C\\)"
+            }
+          ],
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "bb2020-q17c",
+          "type": "mc",
+          "stem": "Find the primitive function of \\(\\displaystyle\\int \\left(\\sin 10x - \\dfrac{2}{e^{5x}}\\right)dx\\).",
+          "options": [
+            "\\(-\\dfrac{1}{10}\\cos 10x+\\dfrac{2}{5}e^{-5x}+C\\)",
+            "\\(-\\dfrac{1}{10}\\cos 10x - \\dfrac{2}{5}e^{-5x}+C\\)",
+            "\\(\\dfrac{1}{10}\\cos 10x+\\dfrac{2}{5}e^{-5x}+C\\)",
+            "\\(-10\\cos 10x - 10e^{-5x}+C\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite \\(\\dfrac{2}{e^{5x}}\\) as \\(2e^{-5x}\\) first, then integrate each term with the reverse chain rule.",
+          "steps": [
+            {
+              "explain": "Rewrite the second term with a negative exponent so the reverse chain rule is easier to apply.",
+              "work": "\\(\\sin 10x - \\dfrac{2}{e^{5x}} = \\sin 10x - 2e^{-5x}\\)"
+            },
+            {
+              "explain": "Integrate \\(\\sin 10x\\): \\(\\int \\sin(ax)\\,dx = -\\dfrac{1}{a}\\cos(ax)\\).",
+              "work": "\\(\\int \\sin 10x \\,dx = -\\dfrac{1}{10}\\cos 10x\\)"
+            },
+            {
+              "explain": "Integrate \\(-2e^{-5x}\\): \\(\\int e^{ax}\\,dx = \\dfrac{1}{a}e^{ax}\\), here \\(a=-5\\).",
+              "work": "\\(\\int -2e^{-5x}\\,dx = -2\\times \\left(-\\dfrac{1}{5}e^{-5x}\\right) = \\dfrac{2}{5}e^{-5x}\\)"
+            },
+            {
+              "explain": "Combine both results.",
+              "work": "\\(-\\dfrac{1}{10}\\cos 10x + \\dfrac{2}{5}e^{-5x}+C\\)"
+            }
+          ],
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "glenwood2020-q18",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A curve with equation \\( y=f(x) \\) has \\( \\dfrac{dy}{dx}=x^3+2x-7 \\), and the point \\( P(2,4) \\) lies on the curve.",
+          "parts": [
+            {
+              "id": "glenwood2020-q18a",
+              "type": "mc",
+              "stem": "(a) Find \\( y \\) in terms of \\( x \\).",
+              "options": [
+                "\\( y=3x^2+2 \\)",
+                "\\( y=\\dfrac{x^4}{4}+x^2-7x \\)",
+                "\\( y=\\dfrac{x^4}{4}+x^2-7x-10 \\)",
+                "\\( y=\\dfrac{x^4}{4}+x^2-7x+10 \\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Integrate \\( \\dfrac{dy}{dx} \\) term by term using \\( \\int x^n\\,dx=\\dfrac{x^{n+1}}{n+1} \\), remembering to add a constant of integration \\( C \\).",
+                  "work": "y = \\dfrac{x^4}{4}+x^2-7x+C"
+                },
+                {
+                  "explain": "Substitute the given point \\( P(2,4) \\) — meaning \\( x=2, y=4 \\) — to find \\( C \\).",
+                  "work": "4 = \\dfrac{2^4}{4}+2^2-7(2)+C = 4+4-14+C"
+                },
+                {
+                  "explain": "Solve the resulting equation for \\( C \\).",
+                  "work": "4 = -6+C \\;\\Rightarrow\\; C=10"
+                },
+                {
+                  "explain": "Substitute \\( C=10 \\) back into the general primitive to state the equation of the curve.",
+                  "work": "y = \\dfrac{x^4}{4}+x^2-7x+10"
+                }
+              ]
+            },
+            {
+              "id": "glenwood2020-q18b",
+              "type": "mc",
+              "stem": "(b) Find the equation of the normal to the curve at \\( P \\), in the form \\( ax+by+c=0 \\), where \\( a, b, c \\) are integers.",
+              "options": [
+                "\\( x-5y+18=0 \\)",
+                "\\( 5x-y-6=0 \\)",
+                "\\( x+5y-22=0 \\)",
+                "\\( 5x+y-14=0 \\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Find the gradient of the tangent at \\( P(2,4) \\) by substituting \\( x=2 \\) into \\( \\dfrac{dy}{dx}=x^3+2x-7 \\).",
+                  "work": "m_{tangent} = 2^3+2(2)-7 = 8+4-7 = 5"
+                },
+                {
+                  "explain": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal.",
+                  "work": "m_{normal} = -\\dfrac15"
+                },
+                {
+                  "explain": "Use the point–gradient formula \\( y-y_1=m(x-x_1) \\) with \\( P(2,4) \\) and \\( m=-\\tfrac15 \\).",
+                  "work": "y-4 = -\\dfrac15(x-2)"
+                },
+                {
+                  "explain": "Multiply both sides by 5 to clear the fraction, then rearrange into \\( ax+by+c=0 \\) form with integer coefficients.",
+                  "work": "5y-20=-(x-2) \\;\\Rightarrow\\; x+5y-22=0"
+                }
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Part (a): integrate \\(\\dfrac{dy}{dx}\\) term by term to find \\(y\\) in terms of \\(x\\), including a constant of integration.",
+              "work": "\\(y = \\int (x^3 + 2x - 7)\\,dx = \\dfrac{x^4}{4} + x^2 - 7x + C\\)"
+            },
+            {
+              "explain": "Use the given point P(2, 4) on the curve to solve for \\(C\\).",
+              "work": "\\(4 = \\dfrac{2^4}{4} + 2^2 - 7(2) + C\\)\\\\ \\(4 = 4 + 4 - 14 + C\\)\\\\ \\(4 = -6 + C \\implies C = 10\\)\\\\ So \\(y = \\dfrac{x^4}{4} + x^2 - 7x + 10\\)"
+            },
+            {
+              "explain": "Part (b): find the gradient of the tangent at P by substituting \\(x=2\\) into the original derivative \\(\\dfrac{dy}{dx} = x^3+2x-7\\).",
+              "work": "\\(\\dfrac{dy}{dx}\\bigg|_{x=2} = 2^3 + 2(2) - 7 = 8 + 4 - 7 = 5\\)"
+            },
+            {
+              "explain": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal of the tangent gradient.",
+              "work": "Normal gradient \\(= -\\dfrac{1}{5}\\)"
+            },
+            {
+              "explain": "Use the point-gradient form with P(2, 4) and normal gradient \\(-\\dfrac{1}{5}\\), then rearrange into \\(ax+by+c=0\\) form.",
+              "work": "\\(y - 4 = -\\dfrac{1}{5}(x - 2)\\)\\\\ \\(5(y-4) = -(x-2)\\)\\\\ \\(5y - 20 = -x + 2\\)\\\\ \\(x + 5y - 22 = 0\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Glenwood 2020 Trial Q18",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "glenwood-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-TAN-01"
+          }
+        },
+        {
+          "id": "hg2020-q14",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int \\left(6x^2+2+x^{-1/2}\\right)dx\\), giving each term in its simplest form.",
+          "options": [
+            "\\(2x^3+2x-2x^{-3/2}+C\\)",
+            "\\(2x^3+2x+x^{1/2}+C\\)",
+            "\\(2x^3+2x+2x^{1/2}+C\\)",
+            "\\(12x+2+x^{1/2}+C\\)"
+          ],
+          "answer": 2,
+          "hint": "Integrate each term separately using the power rule, being careful with the fractional-index term.",
+          "steps": [
+            {
+              "explain": "Integrate \\(6x^2\\) and \\(2\\) using the power rule.",
+              "work": "\\(\\int 6x^2\\,dx = 2x^3, \\qquad \\int 2\\,dx = 2x\\)"
+            },
+            {
+              "explain": "Integrate \\(x^{-1/2}\\): raise the power by 1 (to \\(\\tfrac12\\)) and divide by the new power.",
+              "work": "\\(\\int x^{-1/2}\\,dx = \\dfrac{x^{1/2}}{1/2} = 2x^{1/2}\\)"
+            },
+            {
+              "explain": "Combine all three results with a single constant of integration.",
+              "work": "\\(2x^3+2x+2x^{1/2}+C\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hornsby Girls HS 2020 2U Trials",
+            "school": "Hornsby Girls High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-4F",
+      "code": "4F",
+      "title": "Finding areas by integration",
+      "questions": [
+        {
+          "id": "hg2020-q20",
+          "type": "mc",
+          "stem": "The diagram shows the curve \\(y=x^3-5x^2+2x+8\\). Find the shaded area enclosed by the curve and the coordinate axes (between \\(x=0\\) and the curve's next positive \\(x\\)-intercept).",
+          "figure": {
+            "svg": "fig:34d3b8cb87"
+          },
+          "options": [
+            "\\(10\\dfrac23\\) sq. units",
+            "\\(16\\) sq. units",
+            "\\(\\dfrac{32}{3}\\) sq. units (unsimplified)",
+            "\\(8\\) sq. units"
+          ],
+          "answer": 0,
+          "hint": "From the diagram, the shaded region runs from \\(x=0\\) to \\(x=2\\) (where the curve crosses the \\(x\\)-axis). Integrate the curve over that interval.",
+          "steps": [
+            {
+              "explain": "Set up the definite integral over the shaded interval shown, from \\(x=0\\) to \\(x=2\\).",
+              "work": "\\(A = \\displaystyle\\int_0^2 (x^3-5x^2+2x+8)\\,dx\\)",
+              "figure": {
+                "svg": "fig:34d3b8cb87"
+              }
+            },
+            {
+              "explain": "Find the primitive function.",
+              "work": "\\(A = \\left[\\dfrac14 x^4-\\dfrac53 x^3+x^2+8x\\right]_0^2\\)"
+            },
+            {
+              "explain": "Evaluate at \\(x=2\\) (the lower limit gives 0).",
+              "work": "\\(A = \\dfrac14(2)^4-\\dfrac53(2)^3+2^2+8(2) = 4-\\dfrac{40}{3}+4+16\\)"
+            },
+            {
+              "explain": "Combine the whole numbers, then subtract the fraction.",
+              "work": "\\(A = 24-\\dfrac{40}{3} = \\dfrac{72-40}{3} = \\dfrac{32}{3} = 10\\dfrac23\\) sq. units"
+            }
+          ],
+          "meta": {
+            "source": "Hornsby Girls HS 2020 2U Trials",
+            "school": "Hornsby Girls High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hg2020-q32",
+          "type": "multipart",
+          "stem": "Consider the graph of \\(y=\\ln(x+r)\\) shown below, where \\(r>1\\). The shaded region bound by the curve, the coordinate axes and the line \\(x=t\\) (where \\(t>0\\)) is used to model a garden.",
+          "figure": {
+            "svg": "fig:f0775c38f6"
+          },
+          "parts": [
+            {
+              "id": "hg2020-q32a",
+              "type": "review",
+              "stem": "(a) Show that \\(x = e^y - r\\).",
+              "answer": "",
+              "steps": [
+                {
+                  "explain": "Start with the given equation and rearrange to make \\(x\\) the subject, first undoing the logarithm by raising \\(e\\) to the power of each side.",
+                  "work": "\\(y = \\log_e(x+r) \\;\\Rightarrow\\; e^y = x+r\\)"
+                },
+                {
+                  "explain": "Subtract \\(r\\) from both sides.",
+                  "work": "\\(\\therefore x = e^y - r\\), as required."
+                }
+              ],
+              "manual": true
+            },
+            {
+              "id": "hg2020-q32b",
+              "type": "review",
+              "stem": "(b) Show that the area of this region, \\(A\\), in terms of \\(r\\) and \\(t\\) is \\(A = (t+r)\\ln(t+r) - r\\ln r - t\\).",
+              "answer": "",
+              "steps": [
+                {
+                  "explain": "Since \\(\\ln(x+r)\\) cannot be integrated directly (as a function of \\(x\\)) at this level, integrate with respect to \\(y\\) instead, using the inverse relationship from part (a). The shaded area equals the rectangle of width \\(t\\) and height \\(\\ln(t+r)\\), minus the area under \\(x=e^y-r\\) between \\(y=\\ln r\\) and \\(y=\\ln(t+r)\\).",
+                  "work": "\\(A = t\\times\\ln(t+r) - \\displaystyle\\int_{\\ln r}^{\\ln(t+r)} (e^y-r)\\,dy\\)",
+                  "figure": {
+                    "svg": "fig:f0775c38f6"
+                  }
+                },
+                {
+                  "explain": "Find the primitive of \\(e^y-r\\) with respect to \\(y\\), and evaluate between the limits.",
+                  "work": "\\(A = t\\ln(t+r) - \\Big[e^y-ry\\Big]_{\\ln r}^{\\ln(t+r)}\\)"
+                },
+                {
+                  "explain": "Evaluate the bracket at the upper limit \\(y=\\ln(t+r)\\): since \\(e^{\\ln(t+r)}=t+r\\).",
+                  "work": "\\(\\Big[e^{\\ln(t+r)}-r\\ln(t+r)\\Big] = (t+r) - r\\ln(t+r)\\)"
+                },
+                {
+                  "explain": "Evaluate the bracket at the lower limit \\(y=\\ln r\\): since \\(e^{\\ln r}=r\\).",
+                  "work": "\\(\\Big[e^{\\ln r}-r\\ln r\\Big] = r - r\\ln r\\)"
+                },
+                {
+                  "explain": "Subtract the lower-limit value from the upper-limit value, then substitute back into the area expression and simplify.",
+                  "work": "\\(A = t\\ln(t+r) - \\Big[(t+r-r\\ln(t+r)) - (r-r\\ln r)\\Big] = t\\ln(t+r) - t - r + r\\ln(t+r) + r - r\\ln r\\)"
+                },
+                {
+                  "explain": "Cancel the \\(-r\\) and \\(+r\\), then combine the two \\(\\ln(t+r)\\) terms.",
+                  "work": "\\(A = (t+r)\\ln(t+r) - r\\ln r - t\\), as required."
+                }
+              ],
+              "manual": true
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hornsby Girls HS 2020 2U Trials",
+            "school": "Hornsby Girls High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-4G",
+      "code": "4G",
+      "title": "Areas of compound regions",
+      "questions": [
+        {
+          "id": "bb2020-q10",
+          "type": "mc",
+          "stem": "The diagram shows two curves, \\(y=f(x)\\) (dashed, upper) and \\(y=g(x)\\) (solid, lower), with \\(f(x) \\ge g(x)\\) for all \\(x\\) between \\(x=a\\) and \\(x=d\\). The shaded region lies between the two curves from \\(x=a\\) to \\(x=d\\). Which expression represents the area of the shaded region?",
+          "figure": {
+            "svg": "fig:2c37216936"
+          },
+          "options": [
+            "\\(\\displaystyle\\int_a^d f(x)\\,dx \\cdot \\int_a^d g(x)\\,dx\\)",
+            "\\(\\displaystyle\\int_0^d f(x)\\,dx - \\int_a^d g(x)\\,dx\\)",
+            "\\(\\displaystyle\\int_0^d \\big(f(x)-g(x)\\big)\\,dx\\)",
+            "\\(\\displaystyle\\int_a^d \\big(f(x)-g(x)\\big)\\,dx\\)"
+          ],
+          "answer": 3,
+          "hint": "When one curve stays entirely above another across an interval, the area between them is \\(\\int (\\text{top} - \\text{bottom})\\,dx\\) over that interval.",
+          "steps": [
+            {
+              "explain": "Since \\(f(x)\\) (dashed) lies above \\(g(x)\\) (solid) for the whole interval from \\(a\\) to \\(d\\), the height of the shaded strip at each \\(x\\) is \\(f(x)-g(x)\\).",
+              "work": "height of strip \\(= f(x) - g(x)\\)",
+              "figure": {
+                "svg": "fig:2c37216936"
+              }
+            },
+            {
+              "explain": "Integrating this height across the whole interval \\([a,d]\\) gives the total shaded area — matching the limits shown on the diagram exactly (not \\(0\\), which is not a labelled boundary of the shaded region).",
+              "work": "\\(\\text{Area} = \\displaystyle\\int_a^d \\big(f(x)-g(x)\\big)\\,dx\\)"
+            }
+          ],
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "bb2020-q29",
+          "type": "multipart",
+          "stem": "The diagram below shows the graphs of \\(y=5-x\\) and \\(y=\\dfrac{4}{2x-1}\\), which intersect at points \\(A\\) and \\(B\\), with the shaded region between them.",
+          "figure": {
+            "svg": "fig:5862200143"
+          },
+          "parts": [
+            {
+              "id": "bb2020-q29a",
+              "type": "mc",
+              "stem": "(a) What are the \\(x\\)-coordinates of \\(A\\) and \\(B\\)?",
+              "options": [
+                "\\(x=1\\) and \\(x=4.5\\)",
+                "\\(x=1\\) and \\(x=9\\)",
+                "\\(x=-1\\) and \\(x=-4.5\\)",
+                "\\(x=0.5\\) and \\(x=4.5\\)"
+              ],
+              "answer": 0,
+              "hint": "Set the two functions equal to each other, clear the fraction, and solve the resulting quadratic — watch the sign when multiplying through by \\(-1\\), and remember to actually divide when solving \\(2x-9=0\\).",
+              "steps": [
+                {
+                  "explain": "Set the two functions equal to each other to find their points of intersection.",
+                  "work": "\\(5-x = \\dfrac{4}{2x-1}\\)",
+                  "figure": {
+                    "svg": "fig:5862200143"
+                  }
+                },
+                {
+                  "explain": "Multiply both sides by \\((2x-1)\\) and expand.",
+                  "work": "\\((5-x)(2x-1) = 4 \\Rightarrow 10x-5-2x^2+x = 4 \\Rightarrow -2x^2+11x-9=0\\)"
+                },
+                {
+                  "explain": "Multiply by \\(-1\\) and factorise the resulting quadratic.",
+                  "work": "\\(2x^2-11x+9=0 \\Rightarrow (2x-9)(x-1)=0\\)"
+                },
+                {
+                  "explain": "Solve for \\(x\\) — remember to actually divide when solving \\(2x-9=0\\), not just read off the 9.",
+                  "work": "\\(x=1\\) or \\(2x-9=0 \\Rightarrow x=\\dfrac92=4.5\\)"
+                },
+                {
+                  "explain": "Option B comes from solving \\(2x-9=0\\) as \\(x=9\\) instead of \\(x=4.5\\) (forgetting to divide by 2). Option C comes from a sign error when multiplying the equation by \\(-1\\). Option D comes from mixing up the root of \\(2x-9=0\\) with the excluded value \\(x=0.5\\) (where the hyperbola is undefined).",
+                  "work": "Compare each distractor to the correctly factorised equation \\((2x-9)(x-1)=0\\)"
+                }
+              ]
+            },
+            {
+              "id": "bb2020-q29b",
+              "type": "mc",
+              "stem": "(b) Find the exact area of the shaded region.",
+              "options": [
+                "\\(2\\ln 8\\) units\\(^2\\)",
+                "\\(\\left(\\dfrac{63}{8}+2\\ln 8\\right)\\) units\\(^2\\)",
+                "\\(\\left(\\dfrac{63}{8}-2\\ln 8\\right)\\) units\\(^2\\)",
+                "\\(\\left(\\dfrac{99}{8}-\\dfrac{9}{2}\\right)\\) units\\(^2\\)"
+              ],
+              "answer": 2,
+              "hint": "The line sits above the hyperbola across \\([1, 4.5]\\): integrate \\(\\big[(5-x)-\\tfrac{4}{2x-1}\\big]\\) between those limits.",
+              "steps": [
+                {
+                  "explain": "Since the line \\(y=5-x\\) lies above the hyperbola \\(y=\\tfrac{4}{2x-1}\\) across the interval, set up the integral of (top − bottom) between \\(x=1\\) and \\(x=4.5\\).",
+                  "work": "\\(A = \\displaystyle\\int_1^{4.5}\\left(5-x-\\dfrac{4}{2x-1}\\right)dx\\)",
+                  "figure": {
+                    "svg": "fig:5862200143"
+                  }
+                },
+                {
+                  "explain": "Find the primitive of each term (the last term uses the reverse chain rule with \\(\\ln\\)).",
+                  "work": "\\(A = \\left[5x-\\dfrac{x^2}{2}-2\\ln|2x-1|\\right]_1^{4.5}\\)"
+                },
+                {
+                  "explain": "Evaluate at the upper limit \\(x=4.5\\).",
+                  "work": "\\(5(4.5)-\\dfrac{4.5^2}{2}-2\\ln|8| = 22.5-10.125-2\\ln 8 = \\dfrac{99}{8}-2\\ln 8\\)"
+                },
+                {
+                  "explain": "Evaluate at the lower limit \\(x=1\\), then subtract.",
+                  "work": "\\(5(1)-\\dfrac{1}{2}-2\\ln|1| = \\dfrac{9}{2}-0 = \\dfrac{9}{2}\\)"
+                },
+                {
+                  "explain": "Subtract the lower-limit value from the upper-limit value.",
+                  "work": "\\(A = \\left(\\dfrac{99}{8}-2\\ln 8\\right)-\\dfrac{9}{2} = \\dfrac{63}{8}-2\\ln 8\\) units\\(^2\\)"
+                }
+              ]
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-2u-q31",
+          "type": "mc",
+          "stem": "The curve \\(y=\\sqrt{x}\\) intersects the curve \\(y=\\frac{8}{x}\\) at \\((4,2)\\). The region bounded by \\(y=\\sqrt{x}\\), \\(y=\\frac{8}{x}\\), the line \\(x=8\\), and the \\(x\\)-axis is shaded. What is the exact area of the shaded region?",
+          "options": [
+            "\\(\\frac{8(2+3\\ln 2)}{3}\\)",
+            "\\(\\frac{16}{3} + 8\\ln 4\\)",
+            "\\(\\frac{4(2+3\\ln 2)}{3}\\)",
+            "\\(\\frac{2+3\\ln 2}{3}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Sketch both curves, \\(y=\\sqrt{x}\\) and \\(y=\\frac{8}{x}\\), marking their intersection point \\((4,2)\\) and the boundary line \\(x=8\\).",
+              "work": "<svg viewBox=\"0 0 315 210\" width=\"315\" height=\"210\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(15,15)\"><line x1=\"0\" y1=\"175\" x2=\"270\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><path d=\"M 30.0,175.0 L 33.9,164.8 L 37.7,160.5 L 41.6,157.3 L 45.5,154.6 L 49.3,152.1 L 53.2,150.0 L 57.1,148.0 L 61.0,146.1 L 64.8,144.3 L 68.7,142.7 L 72.6,141.1 L 76.4,139.6 L 80.3,138.1 L 84.2,136.8 L 88.0,135.4 L 91.9,134.1 L 95.8,132.9 L 99.7,131.6 L 103.5,130.4 L 107.4,129.3 L 111.3,128.2 L 115.1,127.1 L 119.0,126.0 L 122.9,124.9 L 126.8,123.9 L 130.6,122.9 L 134.5,121.9 L 138.4,120.9 L 142.2,120.0 L 146.1,119.0 L 150.0,118.1 L 153.8,117.2 L 157.7,116.3 L 161.6,115.4 L 165.4,114.5 L 169.3,113.7 L 173.2,112.8 L 177.1,112.0 L 180.9,111.2 L 184.8,110.4 L 188.7,109.5 L 192.5,108.8 L 196.4,108.0 L 200.3,107.2 L 204.1,106.4 L 208.0,105.7 L 211.9,104.9 L 215.8,104.2 L 219.6,103.4 L 223.5,102.7 L 227.4,102.0 L 231.2,101.3 L 235.1,100.6 L 239.0,99.9 L 242.8,99.2 L 246.7,98.5 L 250.6,97.8 L 254.5,97.2 L 258.3,96.5 L 262.2,95.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><path d=\"M 64.8,7.6 L 68.1,22.0 L 71.4,34.2 L 74.7,44.5 L 78.0,53.5 L 81.3,61.3 L 84.6,68.1 L 87.9,74.2 L 91.2,79.6 L 94.4,84.5 L 97.7,88.9 L 101.0,92.9 L 104.3,96.5 L 107.6,99.8 L 110.9,102.9 L 114.2,105.7 L 117.5,108.3 L 120.8,110.7 L 124.0,113.0 L 127.3,115.1 L 130.6,117.0 L 133.9,118.9 L 137.2,120.6 L 140.5,122.2 L 143.8,123.7 L 147.1,125.2 L 150.4,126.5 L 153.7,127.8 L 156.9,129.1 L 160.2,130.2 L 163.5,131.3 L 166.8,132.4 L 170.1,133.4 L 173.4,134.3 L 176.7,135.2 L 180.0,136.1 L 183.3,136.9 L 186.5,137.7 L 189.8,138.5 L 193.1,139.2 L 196.4,140.0 L 199.7,140.6 L 203.0,141.3 L 206.3,141.9 L 209.6,142.5 L 212.9,143.1 L 216.1,143.7 L 219.4,144.2 L 222.7,144.7 L 226.0,145.2 L 229.3,145.7 L 232.6,146.2 L 235.9,146.7 L 239.2,147.1 L 242.5,147.6 L 245.8,148.0 L 249.0,148.4 L 252.3,148.8 L 255.6,149.2 L 258.9,149.5 L 262.2,149.9\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><line x1=\"246.0\" y1=\"0\" x2=\"246.0\" y2=\"175\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><circle cx=\"138.0\" cy=\"121.0\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"144.0\" y=\"113.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">(4,2)</text><text x=\"175.1\" y=\"99.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">y=√x</text><text x=\"211.5\" y=\"135.8\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#b91c1c\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">y=8/x</text><text x=\"246.0\" y=\"189.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#334155\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">x=8</text><text x=\"22.0\" y=\"10.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">y</text><text x=\"268.0\" y=\"169.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">x</text></g></svg>"
+            },
+            {
+              "explain": "Shade the bounded region and split it at \\(x=4\\) (the intersection point): from \\(x=0\\) to \\(4\\) it's bounded above by \\(y=\\sqrt{x}\\); from \\(x=4\\) to \\(8\\) it's bounded above by \\(y=\\frac{8}{x}\\).",
+              "work": "<svg viewBox=\"0 0 315 210\" width=\"315\" height=\"210\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(15,15)\"><path d=\"M 30.0,175.0 L 33.6,165.1 L 37.2,161.1 L 40.8,157.9 L 44.4,155.3 L 48.0,153.0 L 51.6,150.9 L 55.2,148.9 L 58.8,147.1 L 62.4,145.4 L 66.0,143.8 L 69.6,142.3 L 73.2,140.8 L 76.8,139.5 L 80.4,138.1 L 84.0,136.8 L 87.6,135.6 L 91.2,134.4 L 94.8,133.2 L 98.4,132.0 L 102.0,130.9 L 105.6,129.8 L 109.2,128.8 L 112.8,127.7 L 116.4,126.7 L 120.0,125.7 L 123.6,124.7 L 127.2,123.8 L 130.8,122.8 L 134.4,121.9 L 138.0,121.0 L 138.0,175 L 30.0,175 Z\" fill=\"#dbeafe\" fill-opacity=\"0.75\" stroke=\"none\"/><path d=\"M 138.0,121.0 L 141.6,122.7 L 145.2,124.4 L 148.8,125.9 L 152.4,127.4 L 156.0,128.7 L 159.6,130.0 L 163.2,131.2 L 166.8,132.4 L 170.4,133.5 L 174.0,134.5 L 177.6,135.5 L 181.2,136.4 L 184.8,137.3 L 188.4,138.2 L 192.0,139.0 L 195.6,139.8 L 199.2,140.5 L 202.8,141.3 L 206.4,141.9 L 210.0,142.6 L 213.6,143.2 L 217.2,143.8 L 220.8,144.4 L 224.4,145.0 L 228.0,145.5 L 231.6,146.1 L 235.2,146.6 L 238.8,147.1 L 242.4,147.5 L 246.0,148.0 L 246.0,175 L 138.0,175 Z\" fill=\"#fef3c7\" fill-opacity=\"0.75\" stroke=\"none\"/><line x1=\"0\" y1=\"175\" x2=\"270\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><line x1=\"30\" y1=\"0\" x2=\"30\" y2=\"175\" stroke=\"#94a3b8\" stroke-width=\"1.3\"/><path d=\"M 30.0,175.0 L 33.9,164.8 L 37.7,160.5 L 41.6,157.3 L 45.5,154.6 L 49.3,152.1 L 53.2,150.0 L 57.1,148.0 L 61.0,146.1 L 64.8,144.3 L 68.7,142.7 L 72.6,141.1 L 76.4,139.6 L 80.3,138.1 L 84.2,136.8 L 88.0,135.4 L 91.9,134.1 L 95.8,132.9 L 99.7,131.6 L 103.5,130.4 L 107.4,129.3 L 111.3,128.2 L 115.1,127.1 L 119.0,126.0 L 122.9,124.9 L 126.8,123.9 L 130.6,122.9 L 134.5,121.9 L 138.4,120.9 L 142.2,120.0 L 146.1,119.0 L 150.0,118.1 L 153.8,117.2 L 157.7,116.3 L 161.6,115.4 L 165.4,114.5 L 169.3,113.7 L 173.2,112.8 L 177.1,112.0 L 180.9,111.2 L 184.8,110.4 L 188.7,109.5 L 192.5,108.8 L 196.4,108.0 L 200.3,107.2 L 204.1,106.4 L 208.0,105.7 L 211.9,104.9 L 215.8,104.2 L 219.6,103.4 L 223.5,102.7 L 227.4,102.0 L 231.2,101.3 L 235.1,100.6 L 239.0,99.9 L 242.8,99.2 L 246.7,98.5 L 250.6,97.8 L 254.5,97.2 L 258.3,96.5 L 262.2,95.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><path d=\"M 64.8,7.6 L 68.1,22.0 L 71.4,34.2 L 74.7,44.5 L 78.0,53.5 L 81.3,61.3 L 84.6,68.1 L 87.9,74.2 L 91.2,79.6 L 94.4,84.5 L 97.7,88.9 L 101.0,92.9 L 104.3,96.5 L 107.6,99.8 L 110.9,102.9 L 114.2,105.7 L 117.5,108.3 L 120.8,110.7 L 124.0,113.0 L 127.3,115.1 L 130.6,117.0 L 133.9,118.9 L 137.2,120.6 L 140.5,122.2 L 143.8,123.7 L 147.1,125.2 L 150.4,126.5 L 153.7,127.8 L 156.9,129.1 L 160.2,130.2 L 163.5,131.3 L 166.8,132.4 L 170.1,133.4 L 173.4,134.3 L 176.7,135.2 L 180.0,136.1 L 183.3,136.9 L 186.5,137.7 L 189.8,138.5 L 193.1,139.2 L 196.4,140.0 L 199.7,140.6 L 203.0,141.3 L 206.3,141.9 L 209.6,142.5 L 212.9,143.1 L 216.1,143.7 L 219.4,144.2 L 222.7,144.7 L 226.0,145.2 L 229.3,145.7 L 232.6,146.2 L 235.9,146.7 L 239.2,147.1 L 242.5,147.6 L 245.8,148.0 L 249.0,148.4 L 252.3,148.8 L 255.6,149.2 L 258.9,149.5 L 262.2,149.9\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><line x1=\"246.0\" y1=\"0\" x2=\"246.0\" y2=\"175\" stroke=\"#334155\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><line x1=\"138.0\" y1=\"121.0\" x2=\"138.0\" y2=\"175\" stroke=\"#059669\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/><circle cx=\"138.0\" cy=\"121.0\" r=\"3.2\" fill=\"#1e293b\"/><text x=\"144.0\" y=\"113.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">(4,2)</text><text x=\"84.0\" y=\"190.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">∫₀⁴ √x dx</text><text x=\"192.0\" y=\"190.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#b45309\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">∫₄⁸ 8/x dx</text><text x=\"246.0\" y=\"189.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#334155\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">x=8</text></g></svg>\n\n\\(\\text{Area} = \\int_0^4 \\sqrt{x}\\,dx + \\int_4^8 \\frac{8}{x}\\,dx\\)"
+            },
+            {
+              "explain": "Integrate the first part: \\(\\int \\sqrt{x}\\,dx = \\frac{2}{3}x^{3/2}\\).",
+              "work": "\\(\\Big[\\frac{2}{3}x^{3/2}\\Big]_0^4 = \\frac{2}{3}(4)^{3/2} - 0 = \\frac{2}{3}(8) = \\frac{16}{3}\\)"
+            },
+            {
+              "explain": "Integrate the second part: \\(\\int \\frac{8}{x}\\,dx = 8\\ln|x|\\).",
+              "work": "\\(\\Big[8\\ln x\\Big]_4^8 = 8\\ln 8 - 8\\ln 4 = 8\\ln\\frac{8}{4} = 8\\ln 2\\)"
+            },
+            {
+              "explain": "Add the two areas together.",
+              "work": "\\(\\text{Area} = \\frac{16}{3} + 8\\ln 2\\)"
+            },
+            {
+              "explain": "Write \\(8\\ln 2\\) with denominator 3 and combine into a single fraction to match the required form.",
+              "work": "\\(= \\frac{16}{3} + \\frac{24\\ln 2}{3} = \\frac{16+24\\ln 2}{3} = \\frac{8(2+3\\ln 2)}{3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-4H",
+      "code": "4H",
+      "title": "The trapezoidal rule",
+      "questions": [
+        {
+          "id": "bb2020-q24",
+          "type": "multipart",
+          "stem": "Consider the function \\(y = \\log_e(2^x - x)\\). The table below shows values of \\(y\\) for \\(x=1, 1.5, 2, 2.5, 3\\), where one value is missing.",
+          "figure": {
+            "svg": "fig:e9bb6218b5"
+          },
+          "parts": [
+            {
+              "id": "bb2020-q24a",
+              "type": "mc",
+              "stem": "(a) Find the missing value of \\(y\\) when \\(x=2.5\\), correct to 3 decimal places.",
+              "options": [
+                "\\(1.150\\)",
+                "\\(1.099\\)",
+                "\\(0.916\\)",
+                "\\(1.386\\)"
+              ],
+              "answer": 0,
+              "hint": "Substitute \\(x=2.5\\) directly into \\(y=\\log_e(2^x-x)\\).",
+              "steps": [
+                {
+                  "explain": "Substitute \\(x=2.5\\) into the function.",
+                  "work": "\\(y = \\log_e\\!\\big(2^{2.5}-2.5\\big)\\)",
+                  "figure": {
+                    "svg": "fig:e9bb6218b5"
+                  }
+                },
+                {
+                  "explain": "Evaluate \\(2^{2.5} \\approx 5.657\\), then subtract 2.5.",
+                  "work": "\\(y = \\log_e(5.657 - 2.5) = \\log_e(3.157)\\)"
+                },
+                {
+                  "explain": "Evaluate the natural logarithm and round to 3 decimal places.",
+                  "work": "\\(y \\approx 1.150\\)"
+                }
+              ]
+            },
+            {
+              "id": "bb2020-q24b",
+              "type": "mc",
+              "stem": "(b) Use the trapezoidal rule with all 5 function values from the table to approximate \\(\\displaystyle\\int_1^3 \\log_e(2^x-x)\\,dx\\).",
+              "options": [
+                "\\(\\approx 2.932\\)",
+                "\\(\\approx 1.466\\)",
+                "\\(\\approx 0.733\\)",
+                "\\(\\approx 1.150\\)"
+              ],
+              "answer": 1,
+              "hint": "With 5 values (4 strips) of width \\(h=0.5\\): \\(A \\approx \\dfrac{h}{2}\\big[y_0+y_4+2(y_1+y_2+y_3)\\big]\\).",
+              "steps": [
+                {
+                  "explain": "Identify the strip width \\(h=0.5\\) (the gap between successive \\(x\\)-values) and list the 5 table values.",
+                  "work": "\\(h=0.5; \\quad y_0=0,\\; y_1=0.284,\\; y_2=0.693,\\; y_3=1.150,\\; y_4=1.609\\)",
+                  "figure": {
+                    "svg": "fig:e9bb6218b5"
+                  }
+                },
+                {
+                  "explain": "Substitute into the trapezoidal rule formula, doubling the interior values.",
+                  "work": "\\(A \\approx \\dfrac{0.5}{2}\\big[0+1.609+2(0.284+0.693+1.150)\\big]\\)"
+                },
+                {
+                  "explain": "Evaluate inside the brackets, then multiply.",
+                  "work": "\\(A \\approx 0.25\\big[1.609+2(2.127)\\big] = 0.25\\big[1.609+4.254\\big] = 0.25(5.863)\\)"
+                },
+                {
+                  "explain": "Complete the final multiplication.",
+                  "work": "\\(A \\approx 1.466\\)"
+                }
+              ]
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "glenwood2020-q21",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The diagram shows a cross-section through a river. The depth is marked every 20 metres.",
+          "figure": {
+            "svg": "fig:279805bae5"
+          },
+          "parts": [
+            {
+              "id": "glenwood2020-q21a",
+              "type": "mc",
+              "stem": "(a) Use the trapezoidal rule (with all 5 depths) to estimate the area of the cross-section.",
+              "options": [
+                "\\( 520\\ \\text{m}^2 \\)",
+                "\\( 260\\ \\text{m}^2 \\)",
+                "\\( 1040\\ \\text{m}^2 \\)",
+                "\\( 432\\ \\text{m}^2 \\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "The trapezoidal rule with 4 equal strips of width \\( h=20 \\) m is \\( \\text{Area}\\approx\\dfrac{h}{2}\\big[(\\text{first}+\\text{last})+2(\\text{sum of middle depths})\\big] \\).",
+                  "work": "\\text{Area} \\approx \\dfrac{20}{2}\\big[(0+0)+2(9.2+4.7+12.1)\\big]"
+                },
+                {
+                  "explain": "Add the three middle depths.",
+                  "work": "9.2+4.7+12.1 = 26"
+                },
+                {
+                  "explain": "Substitute back and simplify.",
+                  "work": "\\text{Area} \\approx 10\\big[0+2(26)\\big] = 10(52)"
+                },
+                {
+                  "explain": "Evaluate the final multiplication.",
+                  "work": "\\text{Area} \\approx 520\\ \\text{m}^2"
+                }
+              ]
+            },
+            {
+              "id": "glenwood2020-q21b",
+              "type": "mc",
+              "stem": "(b) If the river flows at a rate of 6 m/s, what volume of water passes through the cross-section each hour?",
+              "options": [
+                "\\( 11\\,232\\,000\\ \\text{m}^3 \\)",
+                "\\( 3120\\ \\text{m}^3 \\)",
+                "\\( 187\\,200\\ \\text{m}^3 \\)",
+                "\\( 1\\,872\\,000\\ \\text{m}^3 \\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "The volume flowing through the cross-section per second equals the cross-sectional area multiplied by the flow speed.",
+                  "work": "\\text{Volume/s} = 520 \\times 6 = 3120\\ \\text{m}^3/\\text{s}"
+                },
+                {
+                  "explain": "Convert to a per-hour rate by multiplying by the number of seconds in an hour.",
+                  "work": "\\text{Volume/hr} = 3120 \\times 3600"
+                },
+                {
+                  "explain": "Evaluate the final multiplication.",
+                  "work": "\\text{Volume/hr} = 11\\,232\\,000\\ \\text{m}^3"
+                }
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Set up the cross-section: depths of 0, 9.2, 4.7, 12.1, 0 metres measured every 20 m, giving 4 trapezoidal strips.",
+              "work": "<svg viewBox=\"0 0 320 190\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:320px;display:block;margin:0.5rem auto\">\n    <line x1=\"20\" y1=\"60\" x2=\"300\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <path d=\"M 20 60 L 20 60 L 90 150 L 160 105 L 230 170 L 300 60 L 300 60 Z\" fill=\"#dbeafe\" fill-opacity=\"0.5\" stroke=\"#475569\" stroke-width=\"2\"/>\n    <line x1=\"20\" y1=\"60\" x2=\"20\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1\" stroke-dasharray=\"2 2\"/>\n    <line x1=\"90\" y1=\"60\" x2=\"90\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/>\n    <line x1=\"160\" y1=\"60\" x2=\"160\" y2=\"105\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/>\n    <line x1=\"230\" y1=\"60\" x2=\"230\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1\" stroke-dasharray=\"3 2\"/>\n    <text x=\"10\" y=\"55\" font-family=\"system-ui\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\">0</text>\n    <text x=\"95\" y=\"160\" font-family=\"system-ui\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\">9.2 m</text>\n    <text x=\"165\" y=\"115\" font-family=\"system-ui\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\">4.7 m</text>\n    <text x=\"235\" y=\"180\" font-family=\"system-ui\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\">12.1 m</text>\n    <text x=\"295\" y=\"55\" font-family=\"system-ui\" font-size=\"10\" font-weight=\"600\" fill=\"#1e293b\">0</text>\n    <text x=\"140\" y=\"35\" font-family=\"system-ui\" font-size=\"10\" fill=\"#64748b\">20 m intervals, 4 strips</text>\n  </svg>"
+            },
+            {
+              "explain": "Part (a): apply the trapezoidal rule with strip width \\(h=20\\), first and last depths \\(d_0=0, d_4=0\\), and interior depths \\(d_1=9.2, d_2=4.7, d_3=12.1\\).",
+              "work": "\\(A \\approx \\dfrac{h}{2}\\left[(d_0+d_4) + 2(d_1+d_2+d_3)\\right]\\)\\\\ \\(A \\approx \\dfrac{20}{2}\\left[(0+0) + 2(9.2+4.7+12.1)\\right]\\)"
+            },
+            {
+              "explain": "Evaluate the sum and simplify.",
+              "work": "\\(A \\approx 10\\left[0 + 2(26)\\right] = 10 \\times 52 = 520\\text{ m}^2\\)"
+            },
+            {
+              "explain": "Part (b): the volume flow rate is the cross-sectional area multiplied by the flow speed.",
+              "work": "Flow rate \\(= 520\\text{ m}^2 \\times 6\\text{ m/s} = 3120\\text{ m}^3\\text{/s}\\)"
+            },
+            {
+              "explain": "Convert the flow rate per second into a volume per hour, using 3600 seconds in an hour.",
+              "work": "Volume per hour \\(= 3120 \\times 3600 = 11{,}232{,}000\\text{ m}^3\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Glenwood 2020 Trial Q21",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "glenwood-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01"
+          }
+        },
+        {
+          "id": "gosford2020-q17",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The graph of \\( y=f(x) \\) consists of: a horizontal segment at \\( y=6 \\) from \\( x=0 \\) to \\( x=6 \\); a quarter-circle arc of radius 4 curving down to \\( (10,2) \\); a straight line down to \\( (14,-2) \\); a quarter-circle arc of radius 4 curving down to \\( (18,-6) \\); then a horizontal segment continuing at \\( y=-6 \\).",
+          "figure": {
+            "svg": "fig:3c2f1c81b3"
+          },
+          "parts": [
+            {
+              "id": "gosford2020-q17a",
+              "type": "mc",
+              "stem": "(a) Find \\( \\displaystyle\\int_0^{12}f(x)\\,dx \\).",
+              "options": [
+                "\\(46+8\\pi\\)",
+                "\\(46+4\\pi\\)",
+                "\\(42+4\\pi\\)",
+                "\\(50+4\\pi\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Break the region \\( 0\\le x\\le12 \\) into simple pieces: the rectangle \\(0\\) to \\(6\\), the region under the first quarter-circle arc down to \\( x=10 \\), and the triangular strip down to \\( x=12 \\).",
+                  "work": "\\((5\\times6) + (6+8) + \\tfrac14\\pi(4)^2 + \\tfrac12(2)(2)\\)"
+                },
+                {
+                  "explain": "Simplify the non-circular pieces numerically.",
+                  "work": "\\(30 + 14 + 4\\pi\\cdot\\tfrac14\\cdot4 + 2 = 46 + 4\\pi \\ \\text{(consolidating the working)}\\)"
+                },
+                {
+                  "explain": "Pitfall: using the full circle area \\( \\pi r^2 \\) instead of a quarter (\\(\\tfrac14\\pi r^2\\)) doubles the \\( \\pi \\)-term incorrectly to \\( 8\\pi \\).",
+                  "work": "\\(\\int_0^{12}f(x)\\,dx = 46+4\\pi\\)"
+                }
+              ]
+            },
+            {
+              "id": "gosford2020-q17b",
+              "type": "mc",
+              "stem": "(b) Find \\( \\displaystyle\\int_0^{18}f(x)\\,dx \\).",
+              "options": [
+                "\\(66+8\\pi\\)",
+                "\\(20+4\\pi\\)",
+                "\\(20+8\\pi\\)",
+                "\\(72+4\\pi\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Write \\( \\int_0^{18}f = \\int_0^{12}f + \\int_{12}^{18}f \\), and use the part (a) result for the first piece.",
+                  "work": "\\(\\int_0^{12}f(x)\\,dx = 46+4\\pi \\text{ (from part (a))}\\)"
+                },
+                {
+                  "explain": "The region from \\( x=12 \\) to \\( x=18 \\) dips below the axis, so its contribution is negative; compute its (positive) area and subtract.",
+                  "work": "\\(\\left|\\int_{12}^{18}f(x)\\,dx\\right| = \\tfrac12(2)(2) + \\left(4\\times6-\\tfrac14\\pi(4)^2\\right) = 26-4\\pi\\)"
+                },
+                {
+                  "explain": "Combine, subtracting the below-axis contribution. Pitfall: adding instead of subtracting the negative region gives \\( 72+4\\pi\\ \\) style overshoots.",
+                  "work": "\\(\\int_0^{18}f(x)\\,dx = (46+4\\pi) - (26-4\\pi) = 20+8\\pi\\)"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q17",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-AREA-01"
+          }
+        },
+        {
+          "id": "hg2020-q26",
+          "type": "review",
+          "stem": "A symmetrical lake has two straight roads, 420 metres apart, forming two of its sides. Equally spaced measurements of the width of the lake (perpendicular to the roads) are 30, 40, 60, 80, 60, 40, 30 metres, as shown.",
+          "figure": {
+            "svg": "fig:e890d184e1"
+          },
+          "answer": "",
+          "steps": [
+            {
+              "explain": "The lake is 420 m long between the two roads. The diagram marks 7 equally-spaced measurement points along that length, at \\(x=0, 70, 140, 210, 280, 350, 420\\) m — giving 6 equal strips. The strip width \\(h\\) is the length divided by the number of strips.",
+              "work": "\\(h = \\dfrac{420-0}{6} = 70\\text{ m}\\)",
+              "figure": {
+                "svg": "fig:e890d184e1"
+              }
+            },
+            {
+              "explain": "Read the width directly off the diagram at each marked \\(x\\)-value — these are the trapezoidal-rule ordinates \\(y_0,\\ldots,y_6\\). Each measurement already spans the FULL width of the lake (bank to bank), so no halving is needed here.",
+              "work": "\\(y_0=30\\ (x{=}0),\\ y_1=40\\ (x{=}70),\\ y_2=60\\ (x{=}140),\\ y_3=80\\ (x{=}210),\\ y_4=60\\ (x{=}280),\\ y_5=40\\ (x{=}350),\\ y_6=30\\ (x{=}420)\\)",
+              "figure": {
+                "svg": "fig:e890d184e1"
+              }
+            },
+            {
+              "explain": "Apply the trapezoidal rule directly to these full-width ordinates: \\(A \\approx \\dfrac{h}{2}\\big[y_0+y_6+2(y_1+y_2+y_3+y_4+y_5)\\big]\\).",
+              "work": "\\(A \\approx \\dfrac{70}{2}\\big[30+30+2(40+60+80+60+40)\\big]\\)"
+            },
+            {
+              "explain": "Evaluate inside the brackets, then multiply. Pitfall: since each \\(y\\)-value is already the FULL width (not a half-width from a centre line), this result IS the total lake area — doubling it again would count the lake twice.",
+              "work": "\\(A \\approx 35\\big[60+2(280)\\big] = 35(620) = 21\\,700\\text{ m}^2\\)"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hornsby Girls HS 2020 2U Trials",
+            "school": "Hornsby Girls High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hh2020-q26",
+          "type": "multipart",
+          "stem": "A field (shaded) is bordered on one side by 120 metres of road and on the other side by a river. Equally spaced measurements from the road to the river are: \\(x, 50.6, 45.8, 30.0, 32.5\\) metres (5 measurements, 4 equal strips of 30 m each).",
+          "figure": {
+            "svg": "fig:6f65119a77"
+          },
+          "parts": [
+            {
+              "id": "hh2020-q26a",
+              "type": "mc",
+              "stem": "(a) Find the value of \\(x\\) (the strip width along the road).",
+              "options": [
+                "\\(x=120\\text{ m}\\)",
+                "\\(x=40\\text{ m}\\)",
+                "\\(x=24\\text{ m}\\)",
+                "\\(x=30\\text{ m}\\)"
+              ],
+              "answer": 1,
+              "hint": "The 120 m road is divided into equal strips by the measurement marks — count how many strips there are.",
+              "steps": [
+                {
+                  "explain": "The 120 m of road is divided into 3 equal strips by the marked points shown in the diagram (matching the given tick marks).",
+                  "work": "Number of strips \\(= 3\\)",
+                  "figure": {
+                    "svg": "fig:6f65119a77"
+                  }
+                },
+                {
+                  "explain": "Divide the total road length by the number of strips.",
+                  "work": "\\(x = \\dfrac{120}{3} = 40\\text{ m}\\)"
+                }
+              ]
+            },
+            {
+              "id": "hh2020-q26b",
+              "type": "mc",
+              "stem": "(b) Use the trapezoidal rule to find an approximation to the area of the field, correct to the nearest square metre.",
+              "options": [
+                "\\(6512\\text{ m}^2\\)",
+                "\\(1600\\text{ m}^2\\)",
+                "\\(2347\\text{ m}^2\\)",
+                "\\(4694\\text{ m}^2\\)"
+              ],
+              "answer": 3,
+              "hint": "Apply the trapezoidal rule with 4 strips of width 40 m: \\(A \\approx \\dfrac{h}{2}\\big[y_0+y_4+2(y_1+y_2+y_3)\\big]\\).",
+              "steps": [
+                {
+                  "explain": "Identify the 5 measurements (\\(y_0\\) to \\(y_4\\)) and the strip width \\(h=40\\) m.",
+                  "work": "\\(h=40; \\quad y_0=50.6, \\; y_1=45.8, \\; y_2=30.0, \\; y_3=32.5, \\; y_4=32.5\\)... using the given order from road to river across the 4 strips",
+                  "figure": {
+                    "svg": "fig:6f65119a77"
+                  }
+                },
+                {
+                  "explain": "Substitute into the trapezoidal rule formula, doubling the interior measurements.",
+                  "work": "\\(A \\approx \\dfrac{40}{2}\\big[50.6+32.5+2(45.8+30.0)\\big]\\)"
+                },
+                {
+                  "explain": "Evaluate inside the brackets, then multiply.",
+                  "work": "\\(A \\approx 20\\big[83.1+2(75.8)\\big] = 20\\big[83.1+151.6\\big] = 20(234.7)\\)"
+                },
+                {
+                  "explain": "Complete the multiplication and round to the nearest square metre.",
+                  "work": "\\(A \\approx 4694\\text{ m}^2\\)"
+                }
+              ]
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hunters Hill HS 2020 2U Trials",
+            "school": "Hunters Hill High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-2u-q15",
+          "type": "mc",
+          "stem": "Use two applications of the trapezoidal rule to find an approximate value, correct to two decimal places, for \\(\\int_1^3 \\ln(x^2+1)\\,dx\\).",
+          "options": [
+            "\\(3.00\\)",
+            "\\(3.11\\)",
+            "\\(6.21\\)",
+            "\\(1.56\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "For two applications, split \\([1,3]\\) into 2 equal strips of width \\(h=1\\), using \\(x=1, 2, 3\\).",
+              "work": "\\(h = \\frac{3-1}{2} = 1\\)"
+            },
+            {
+              "explain": "Evaluate \\(f(x)=\\ln(x^2+1)\\) at each of the three \\(x\\)-values and organise the results in a table — this keeps every value easy to find when substituting into the formula.",
+              "work": "<svg viewBox=\"0 0 396 172\" width=\"396\" height=\"172\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;background-color:#f8fafc;border-radius:10px;\">\n  <g transform=\"translate(18,18)\"><rect x=\"0\" y=\"0\" width=\"360\" height=\"34\" fill=\"#eef2ff\"/><rect x=\"0\" y=\"0\" width=\"360\" height=\"136\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"0\" x2=\"50\" y2=\"136\" stroke=\"#475569\" stroke-width=\"1.2\"/><line x1=\"180\" y1=\"0\" x2=\"180\" y2=\"136\" stroke=\"#475569\" stroke-width=\"1.2\"/><line x1=\"270\" y1=\"0\" x2=\"270\" y2=\"136\" stroke=\"#475569\" stroke-width=\"1.2\"/><line x1=\"0\" y1=\"34\" x2=\"360\" y2=\"34\" stroke=\"#475569\" stroke-width=\"1.5\"/><line x1=\"0\" y1=\"68\" x2=\"360\" y2=\"68\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><line x1=\"0\" y1=\"102\" x2=\"360\" y2=\"102\" stroke=\"#cbd5e1\" stroke-width=\"1\"/><text x=\"25.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">x</text><text x=\"79.6\" y=\"22.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">f(x)=ln(x</text><text x=\"130.1\" y=\"18.1\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"7.699999999999999\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">2</text><text x=\"133.9\" y=\"22.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">+1)</text><text x=\"225.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">exact</text><text x=\"315.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">≈</text><text x=\"25.0\" y=\"56.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">1</text><text x=\"93.3\" y=\"56.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">ln(1</text><text x=\"116.3\" y=\"52.1\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"7.699999999999999\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">2</text><text x=\"120.2\" y=\"56.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">+1)</text><text x=\"225.0\" y=\"56.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">ln 2</text><text x=\"315.0\" y=\"56.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">0.6931</text><text x=\"25.0\" y=\"90.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">2</text><text x=\"93.3\" y=\"90.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">ln(2</text><text x=\"116.3\" y=\"86.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"7.699999999999999\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">2</text><text x=\"120.2\" y=\"90.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">+1)</text><text x=\"225.0\" y=\"90.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">ln 5</text><text x=\"315.0\" y=\"90.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">1.6094</text><text x=\"25.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">3</text><text x=\"93.3\" y=\"124.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">ln(3</text><text x=\"116.3\" y=\"120.2\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"7.699999999999999\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">2</text><text x=\"120.2\" y=\"124.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">+1)</text><text x=\"225.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">ln 10</text><text x=\"315.0\" y=\"124.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">2.3026</text></g></svg>\n\n\\(f(1)=\\ln 2 \\approx 0.6931, \\ f(2)=\\ln 5 \\approx 1.6094, \\ f(3)=\\ln 10 \\approx 2.3026\\)"
+            },
+            {
+              "explain": "Apply the trapezoidal rule formula, \\(\\int \\approx \\frac{h}{2}\\left[f(x_0) + 2f(x_1) + f(x_2)\\right]\\), reading each value directly out of the table above: the first and last columns' values go in as-is, and the middle value is doubled.",
+              "work": "\\(\\approx \\frac{1}{2}\\left[0.6931 + 2(1.6094) + 2.3026\\right]\\)"
+            },
+            {
+              "explain": "Evaluate inside the brackets: \\(0.6931 + 3.2188 + 2.3026 = 6.2145\\), then multiply by \\(\\frac{1}{2}\\).",
+              "work": "\\(\\approx \\frac{1}{2}(6.2145) \\approx 3.1073\\)"
+            },
+            {
+              "explain": "Round to two decimal places.",
+              "work": "\\(\\approx 3.11\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-4I",
+      "code": "4I",
+      "title": "The reverse chain rule",
+      "questions": [
+        {
+          "id": "hillsgrammar-25-2u-q23",
+          "type": "mc",
+          "stem": "Find \\(\\displaystyle\\int \\dfrac{6x^2+1}{2x^3+x+1}\\,dx\\).",
+          "options": [
+            "\\(\\ln|2x^3+x+1|+c\\)",
+            "\\(\\frac{1}{6}\\ln|2x^3+x+1|+c\\)",
+            "\\(6\\ln|2x^3+x+1|+c\\)",
+            "\\((6x^2+1)\\ln|2x^3+x+1|+c\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Check whether the numerator is the derivative of the denominator — if so, the reverse chain rule applies directly. Differentiate the denominator.",
+              "work": "\\(\\frac{d}{dx}(2x^3+x+1) = 6x^2+1\\)"
+            },
+            {
+              "explain": "This exactly matches the numerator! The integral has the form \\(\\int \\frac{f'(x)}{f(x)}dx\\), whose antiderivative is \\(\\ln|f(x)|\\).",
+              "work": "\\(\\int \\frac{f'(x)}{f(x)}dx = \\ln|f(x)|+c\\)"
+            },
+            {
+              "explain": "Substitute \\(f(x)=2x^3+x+1\\).",
+              "work": "\\(\\int \\frac{6x^2+1}{2x^3+x+1}dx = \\ln|2x^3+x+1|+c\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    }
+  ]
+}

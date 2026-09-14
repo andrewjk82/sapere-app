@@ -1,0 +1,47 @@
+{
+  "chapterId": "exam:year8ch1",
+  "title": "Exam Practice",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "exam:year8ch1",
+      "code": "",
+      "title": "Problem solving",
+      "questions": [
+        {
+          "id": "y8-1c-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "At an election, there are three candidates, A, B and C. A obtains \\(19878\\text{ more votes}\\) than C, and B obtains \\(12435\\text{ more votes}\\) than C. If A and B together obtain \\(137187\\text{ votes}\\), how many voted for C?",
+          "options": [
+            "\\(52437\\)",
+            "\\(51437\\)",
+            "\\(53437\\)",
+            "\\(52000\\)"
+          ],
+          "answer": 0,
+          "hint": "Express the votes for A and B in terms of C.",
+          "steps": [
+            {
+              "explain": "Set up expressions for candidates A and B.",
+              "work": "\\(A = C + 19878, quad B = C + 12435\\)"
+            },
+            {
+              "explain": "Combine the expressions for A and B.",
+              "work": "\\((C + 19878) + (C + 12435) = 137187\\)"
+            },
+            {
+              "explain": "Simplify the equation.",
+              "work": "\\(2C + 32313 = 137187\\)"
+            },
+            {
+              "explain": "Solve for C by isolating the variable.",
+              "work": "\\(2C = 104874 \\implies C = 52437\\)"
+            }
+          ],
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

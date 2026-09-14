@@ -1,0 +1,38 @@
+<svg viewBox="0 0 480 380" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<line x1="400" y1="260" x2="280" y2="190" stroke="#475569" stroke-width="1.5" stroke-dasharray="5,4"/>
+<line x1="280" y1="190" x2="140" y2="260" stroke="#475569" stroke-width="1.5" stroke-dasharray="5,4"/>
+<line x1="140" y1="260" x2="280" y2="330" stroke="#475569" stroke-width="2"/>
+<line x1="280" y1="330" x2="400" y2="260" stroke="#475569" stroke-width="2"/>
+<line x1="280" y1="70" x2="280" y2="190" stroke="#475569" stroke-width="1.5" stroke-dasharray="5,4"/>
+<line x1="280" y1="70" x2="140" y2="260" stroke="#475569" stroke-width="2"/>
+<line x1="280" y1="70" x2="400" y2="260" stroke="#475569" stroke-width="2"/>
+<line x1="280" y1="70" x2="280" y2="330" stroke="#475569" stroke-width="2"/>
+<path d="M 280 70 L 140 260 L 280 330 Z" fill="#dbeafe" fill-opacity="0.35" stroke="none"/>
+<path d="M 280 70 L 280 330 L 400 260 Z" fill="#dbeafe" fill-opacity="0.5" stroke="none"/>
+<line x1="280" y1="190" x2="280" y2="330" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3"/>
+<text x="256" y="260" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">AC = ?</text>
+<text x="256" y="260" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#f59e0b">AC = ?</text>
+<circle cx="280" cy="190" r="2.5" fill="#1e293b"/>
+<text x="270" y="180" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">A</text>
+<text x="270" y="180" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">A</text>
+<circle cx="400" cy="260" r="2.5" fill="#1e293b"/>
+<text x="414" y="264" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">B</text>
+<text x="414" y="264" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">B</text>
+<circle cx="280" cy="330" r="2.5" fill="#1e293b"/>
+<text x="274" y="352" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">C</text>
+<text x="274" y="352" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">C</text>
+<circle cx="140" cy="260" r="2.5" fill="#1e293b"/>
+<text x="120" y="264" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">D</text>
+<text x="120" y="264" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">D</text>
+<circle cx="280" cy="70" r="2.5" fill="#1e293b"/>
+<text x="280" y="56" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">V</text>
+<text x="280" y="56" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">V</text>
+<circle cx="280" cy="260" r="2.5" fill="#1e293b"/>
+<text x="262" y="266" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">O</text>
+<text x="262" y="266" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">O</text>
+<circle cx="340" cy="295" r="2.5" fill="#1e293b"/>
+<text x="356" y="301" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">M</text>
+<text x="356" y="301" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">M</text>
+<text x="210" y="321" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">10 cm</text>
+<text x="210" y="321" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#1e293b">10 cm</text>
+</svg>

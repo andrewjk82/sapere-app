@@ -1,0 +1,3213 @@
+{
+  "chapterId": "exam:year12ach1f",
+  "title": "Exam Practice",
+  "year": "Year 12a",
+  "topics": [
+    {
+      "topicId": "exam:year12ach1f",
+      "code": "",
+      "title": "Summing an arithmetic series",
+      "questions": [
+        {
+          "id": "y12a-1f-q2-1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(1 + 2 + 3 + \\dots + 120\\).",
+          "options": [
+            "\\(120\\) terms, sum \\(= 7261\\)",
+            "\\(119\\) terms, sum \\(= 7140\\)",
+            "\\(120\\) terms, sum \\(= 7260\\)",
+            "\\(121\\) terms, sum \\(= 7380\\)"
+          ],
+          "answer": 2,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(120\\) terms, sum \\(= 7260\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 1, quad d = 1, quad l = 120\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(120 = 1 + (n-1) \\times 1 \\implies (n-1) \\times 1 = 119 \\implies n-1 = 119 \\implies n = 120\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{120} = \\frac{120}{2}(1 + 120) = 60 \\times 121 = 7260\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(1 + 3 + 5 + \\dots + 149\\).",
+          "options": [
+            "\\(76\\) terms, sum \\(= 5774\\)",
+            "\\(75\\) terms, sum \\(= 5626\\)",
+            "\\(74\\) terms, sum \\(= 5476\\)",
+            "\\(75\\) terms, sum \\(= 5625\\)"
+          ],
+          "answer": 3,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(75\\) terms, sum \\(= 5625\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 1, quad d = 2, quad l = 149\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(149 = 1 + (n-1) \\times 2 \\implies (n-1) \\times 2 = 148 \\implies n-1 = 74 \\implies n = 75\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{75} = \\frac{75}{2}(1 + 149) = 37.5 \\times 150 = 5625\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(2 + 4 + 6 + \\dots + 160\\).",
+          "options": [
+            "\\(80\\) terms, sum \\(= 6480\\)",
+            "\\(79\\) terms, sum \\(= 6320\\)",
+            "\\(80\\) terms, sum \\(= 6482\\)",
+            "\\(81\\) terms, sum \\(= 6640\\)"
+          ],
+          "answer": 0,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(80\\) terms, sum \\(= 6480\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 2, quad d = 2, quad l = 160\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(160 = 2 + (n-1) \\times 2 \\implies (n-1) \\times 2 = 158 \\implies n-1 = 79 \\implies n = 80\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{80} = \\frac{80}{2}(2 + 160) = 40 \\times 162 = 6480\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(3 + 6 + 9 + \\dots + 360\\).",
+          "options": [
+            "\\(120\\) terms, sum \\(= 21783\\)",
+            "\\(119\\) terms, sum \\(= 21420\\)",
+            "\\(121\\) terms, sum \\(= 22140\\)",
+            "\\(120\\) terms, sum \\(= 21780\\)"
+          ],
+          "answer": 3,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(120\\) terms, sum \\(= 21780\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 3, quad d = 3, quad l = 360\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(360 = 3 + (n-1) \\times 3 \\implies (n-1) \\times 3 = 357 \\implies n-1 = 119 \\implies n = 120\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{120} = \\frac{120}{2}(3 + 360) = 60 \\times 363 = 21780\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(201 + 203 + 205 + \\dots + 299\\).",
+          "options": [
+            "\\(50\\) terms, sum \\(= 12500\\)",
+            "\\(49\\) terms, sum \\(= 12201\\)",
+            "\\(50\\) terms, sum \\(= 12701\\)",
+            "\\(51\\) terms, sum \\(= 12799\\)"
+          ],
+          "answer": 0,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(50\\) terms, sum \\(= 12500\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 201, quad d = 2, quad l = 299\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(299 = 201 + (n-1) \\times 2 \\implies (n-1) \\times 2 = 98 \\implies n-1 = 49 \\implies n = 50\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{50} = \\frac{50}{2}(201 + 299) = 25 \\times 500 = 12500\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(1001 + 1002 + 1003 + \\dots + 4000\\).",
+          "options": [
+            "\\(3000\\) terms, sum \\(= 7502501\\)",
+            "\\(3000\\) terms, sum \\(= 7501500\\)",
+            "\\(3001\\) terms, sum \\(= 7505500\\)",
+            "\\(2999\\) terms, sum \\(= 7497500\\)"
+          ],
+          "answer": 1,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(3000\\) terms, sum \\(= 7501500\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 1001, quad d = 1, quad l = 4000\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(4000 = 1001 + (n-1) \\times 1 \\implies (n-1) \\times 1 = 2999 \\implies n-1 = 2999 \\implies n = 3000\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{3000} = \\frac{3000}{2}(1001 + 4000) = 1500 \\times 5001 = 7501500\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(2 + 4 + 6 + \\dots + 240\\).",
+          "options": [
+            "\\(121\\) terms, sum \\(= 14760\\)",
+            "\\(120\\) terms, sum \\(= 14520\\)",
+            "\\(120\\) terms, sum \\(= 14522\\)",
+            "\\(119\\) terms, sum \\(= 14280\\)"
+          ],
+          "answer": 1,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(120\\) terms, sum \\(= 14520\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 2, quad d = 2, quad l = 240\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(240 = 2 + (n-1) \\times 2 \\implies (n-1) \\times 2 = 238 \\implies n-1 = 119 \\implies n = 120\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{120} = \\frac{120}{2}(2 + 240) = 60 \\times 242 = 14520\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(2 + 6 + 10 + \\dots + 298\\).",
+          "options": [
+            "\\(75\\) terms, sum \\(= 11250\\)",
+            "\\(74\\) terms, sum \\(= 10952\\)",
+            "\\(76\\) terms, sum \\(= 11548\\)",
+            "\\(75\\) terms, sum \\(= 11252\\)"
+          ],
+          "answer": 0,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(75\\) terms, sum \\(= 11250\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 2, quad d = 4, quad l = 298\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(298 = 2 + (n-1) \\times 4 \\implies (n-1) \\times 4 = 296 \\implies n-1 = 74 \\implies n = 75\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{75} = \\frac{75}{2}(2 + 298) = 37.5 \\times 300 = 11250\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(4 + 8 + 12 + \\dots + 320\\).",
+          "options": [
+            "\\(81\\) terms, sum \\(= 13280\\)",
+            "\\(80\\) terms, sum \\(= 12960\\)",
+            "\\(79\\) terms, sum \\(= 12640\\)",
+            "\\(80\\) terms, sum \\(= 12964\\)"
+          ],
+          "answer": 1,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(80\\) terms, sum \\(= 12960\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 4, quad d = 4, quad l = 320\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(320 = 4 + (n-1) \\times 4 \\implies (n-1) \\times 4 = 316 \\implies n-1 = 79 \\implies n = 80\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{80} = \\frac{80}{2}(4 + 320) = 40 \\times 324 = 12960\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(6 + 12 + 18 + \\dots + 720\\).",
+          "options": [
+            "\\(121\\) terms, sum \\(= 44280\\)",
+            "\\(120\\) terms, sum \\(= 43566\\)",
+            "\\(119\\) terms, sum \\(= 42840\\)",
+            "\\(120\\) terms, sum \\(= 43560\\)"
+          ],
+          "answer": 3,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(120\\) terms, sum \\(= 43560\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 6, quad d = 6, quad l = 720\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(720 = 6 + (n-1) \\times 6 \\implies (n-1) \\times 6 = 714 \\implies n-1 = 119 \\implies n = 120\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{120} = \\frac{120}{2}(6 + 720) = 60 \\times 726 = 43560\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(402 + 406 + 410 + \\dots + 598\\).",
+          "options": [
+            "\\(49\\) terms, sum \\(= 24402\\)",
+            "\\(50\\) terms, sum \\(= 25000\\)",
+            "\\(50\\) terms, sum \\(= 25402\\)",
+            "\\(51\\) terms, sum \\(= 25598\\)"
+          ],
+          "answer": 1,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(50\\) terms, sum \\(= 25000\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 402, quad d = 4, quad l = 598\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(598 = 402 + (n-1) \\times 4 \\implies (n-1) \\times 4 = 196 \\implies n-1 = 49 \\implies n = 50\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{50} = \\frac{50}{2}(402 + 598) = 25 \\times 1000 = 25000\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(2002 + 2004 + 2006 + \\dots + 8000\\).",
+          "options": [
+            "\\(3000\\) terms, sum \\(= 15003000\\)",
+            "\\(2999\\) terms, sum \\(= 14995000\\)",
+            "\\(3000\\) terms, sum \\(= 15005002\\)",
+            "\\(3001\\) terms, sum \\(= 15011000\\)"
+          ],
+          "answer": 0,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(3000\\) terms, sum \\(= 15003000\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 2002, quad d = 2, quad l = 8000\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(8000 = 2002 + (n-1) \\times 2 \\implies (n-1) \\times 2 = 5998 \\implies n-1 = 2999 \\implies n = 3000\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{3000} = \\frac{3000}{2}(2002 + 8000) = 1500 \\times 10002 = 15003000\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(3 + 6 + 9 + \\dots + 360\\).",
+          "options": [
+            "\\(119\\) terms, sum \\(= 21420\\)",
+            "\\(120\\) terms, sum \\(= 21780\\)",
+            "\\(121\\) terms, sum \\(= 22140\\)",
+            "\\(120\\) terms, sum \\(= 21783\\)"
+          ],
+          "answer": 1,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(120\\) terms, sum \\(= 21780\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 3, quad d = 3, quad l = 360\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(360 = 3 + (n-1) \\times 3 \\implies (n-1) \\times 3 = 357 \\implies n-1 = 119 \\implies n = 120\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{120} = \\frac{120}{2}(3 + 360) = 60 \\times 363 = 21780\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-14",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(3 + 9 + 15 + \\dots + 447\\).",
+          "options": [
+            "\\(75\\) terms, sum \\(= 16878\\)",
+            "\\(74\\) terms, sum \\(= 16428\\)",
+            "\\(76\\) terms, sum \\(= 17322\\)",
+            "\\(75\\) terms, sum \\(= 16875\\)"
+          ],
+          "answer": 3,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(75\\) terms, sum \\(= 16875\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 3, quad d = 6, quad l = 447\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(447 = 3 + (n-1) \\times 6 \\implies (n-1) \\times 6 = 444 \\implies n-1 = 74 \\implies n = 75\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{75} = \\frac{75}{2}(3 + 447) = 37.5 \\times 450 = 16875\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q2-15",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "State how many terms the following sum has, then evaluate it:\n\\(6 + 12 + 18 + \\dots + 480\\).",
+          "options": [
+            "\\(80\\) terms, sum \\(= 19440\\)",
+            "\\(79\\) terms, sum \\(= 18960\\)",
+            "\\(81\\) terms, sum \\(= 19920\\)",
+            "\\(80\\) terms, sum \\(= 19446\\)"
+          ],
+          "answer": 0,
+          "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(80\\) terms, sum \\(= 19440\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term, common difference, and last term.",
+              "work": "\\(a = 6, quad d = 6, quad l = 480\\)"
+            },
+            {
+              "explain": "Determine the number of terms using the nth term formula.",
+              "work": "\\(480 = 6 + (n-1) \\times 6 \\implies (n-1) \\times 6 = 474 \\implies n-1 = 79 \\implies n = 80\\)"
+            },
+            {
+              "explain": "Evaluate the sum using the formula.",
+              "work": "\\(S_{80} = \\frac{80}{2}(6 + 480) = 40 \\times 486 = 19440\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(-7 + -2 + 3 + \\dots\\)",
+          "options": [
+            "\\(a = -2, \\; d = 5, \\; S_{21} = 903\\)",
+            "\\(a = -7, \\; d = 5, \\; S_{21} = 903\\)",
+            "\\(a = -7, \\; d = 6, \\; S_{21} = 923\\)",
+            "\\(a = -7, \\; d = 5, \\; S_{21} = 898\\)"
+          ],
+          "answer": 1,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = -7, \\; d = 5, \\; S_{21} = 903\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = -7, quad d = -2 - -7 = 5\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(-7) + (21-1)(5))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(-14 + 20(5)) = \\frac{21}{2}(86)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 43 = 903\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(-4 + 2 + 8 + \\dots\\)",
+          "options": [
+            "\\(a = 2, \\; d = 6, \\; S_{21} = 1176\\)",
+            "\\(a = -4, \\; d = 7, \\; S_{21} = 1196\\)",
+            "\\(a = -4, \\; d = 6, \\; S_{21} = 1170\\)",
+            "\\(a = -4, \\; d = 6, \\; S_{21} = 1176\\)"
+          ],
+          "answer": 3,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = -4, \\; d = 6, \\; S_{21} = 1176\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = -4, quad d = 2 - -4 = 6\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(-4) + (21-1)(6))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(-8 + 20(6)) = \\frac{21}{2}(112)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 56 = 1176\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(-1 + 3 + 7 + \\dots\\)",
+          "options": [
+            "\\(a = 3, \\; d = 4, \\; S_{21} = 819\\)",
+            "\\(a = -1, \\; d = 4, \\; S_{21} = 815\\)",
+            "\\(a = -1, \\; d = 5, \\; S_{21} = 839\\)",
+            "\\(a = -1, \\; d = 4, \\; S_{21} = 819\\)"
+          ],
+          "answer": 3,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = -1, \\; d = 4, \\; S_{21} = 819\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = -1, quad d = 3 - -1 = 4\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(-1) + (21-1)(4))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(-2 + 20(4)) = \\frac{21}{2}(78)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 39 = 819\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(2 + 7 + 12 + \\dots\\)",
+          "options": [
+            "\\(a = 7, \\; d = 5, \\; S_{21} = 1092\\)",
+            "\\(a = 2, \\; d = 6, \\; S_{21} = 1112\\)",
+            "\\(a = 2, \\; d = 5, \\; S_{21} = 1092\\)",
+            "\\(a = 2, \\; d = 5, \\; S_{21} = 1087\\)"
+          ],
+          "answer": 2,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = 2, \\; d = 5, \\; S_{21} = 1092\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = 2, quad d = 7 - 2 = 5\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(2) + (21-1)(5))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(4 + 20(5)) = \\frac{21}{2}(104)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 52 = 1092\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(5 + 11 + 17 + \\dots\\)",
+          "options": [
+            "\\(a = 5, \\; d = 7, \\; S_{21} = 1385\\)",
+            "\\(a = 11, \\; d = 6, \\; S_{21} = 1365\\)",
+            "\\(a = 5, \\; d = 6, \\; S_{21} = 1359\\)",
+            "\\(a = 5, \\; d = 6, \\; S_{21} = 1365\\)"
+          ],
+          "answer": 3,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = 5, \\; d = 6, \\; S_{21} = 1365\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = 5, quad d = 11 - 5 = 6\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(5) + (21-1)(6))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(10 + 20(6)) = \\frac{21}{2}(130)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 65 = 1365\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(8 + 12 + 16 + \\dots\\)",
+          "options": [
+            "\\(a = 8, \\; d = 4, \\; S_{21} = 1008\\)",
+            "\\(a = 8, \\; d = 4, \\; S_{21} = 1004\\)",
+            "\\(a = 8, \\; d = 5, \\; S_{21} = 1028\\)",
+            "\\(a = 12, \\; d = 4, \\; S_{21} = 1008\\)"
+          ],
+          "answer": 0,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = 8, \\; d = 4, \\; S_{21} = 1008\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = 8, quad d = 12 - 8 = 4\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(8) + (21-1)(4))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(16 + 20(4)) = \\frac{21}{2}(96)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 48 = 1008\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(11 + 16 + 21 + \\dots\\)",
+          "options": [
+            "\\(a = 11, \\; d = 5, \\; S_{21} = 1281\\)",
+            "\\(a = 11, \\; d = 5, \\; S_{21} = 1276\\)",
+            "\\(a = 11, \\; d = 6, \\; S_{21} = 1301\\)",
+            "\\(a = 16, \\; d = 5, \\; S_{21} = 1281\\)"
+          ],
+          "answer": 0,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = 11, \\; d = 5, \\; S_{21} = 1281\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = 11, quad d = 16 - 11 = 5\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(11) + (21-1)(5))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(22 + 20(5)) = \\frac{21}{2}(122)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 61 = 1281\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(14 + 20 + 26 + \\dots\\)",
+          "options": [
+            "\\(a = 14, \\; d = 6, \\; S_{21} = 1554\\)",
+            "\\(a = 20, \\; d = 6, \\; S_{21} = 1554\\)",
+            "\\(a = 14, \\; d = 6, \\; S_{21} = 1548\\)",
+            "\\(a = 14, \\; d = 7, \\; S_{21} = 1574\\)"
+          ],
+          "answer": 0,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = 14, \\; d = 6, \\; S_{21} = 1554\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = 14, quad d = 20 - 14 = 6\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(14) + (21-1)(6))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(28 + 20(6)) = \\frac{21}{2}(148)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 74 = 1554\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(17 + 21 + 25 + \\dots\\)",
+          "options": [
+            "\\(a = 21, \\; d = 4, \\; S_{21} = 1197\\)",
+            "\\(a = 17, \\; d = 5, \\; S_{21} = 1217\\)",
+            "\\(a = 17, \\; d = 4, \\; S_{21} = 1193\\)",
+            "\\(a = 17, \\; d = 4, \\; S_{21} = 1197\\)"
+          ],
+          "answer": 3,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = 17, \\; d = 4, \\; S_{21} = 1197\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = 17, quad d = 21 - 17 = 4\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(17) + (21-1)(4))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(34 + 20(4)) = \\frac{21}{2}(114)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 57 = 1197\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(20 + 25 + 30 + \\dots\\)",
+          "options": [
+            "\\(a = 20, \\; d = 5, \\; S_{21} = 1470\\)",
+            "\\(a = 20, \\; d = 5, \\; S_{21} = 1465\\)",
+            "\\(a = 25, \\; d = 5, \\; S_{21} = 1470\\)",
+            "\\(a = 20, \\; d = 6, \\; S_{21} = 1490\\)"
+          ],
+          "answer": 0,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = 20, \\; d = 5, \\; S_{21} = 1470\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = 20, quad d = 25 - 20 = 5\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(20) + (21-1)(5))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(40 + 20(5)) = \\frac{21}{2}(140)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 70 = 1470\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(23 + 29 + 35 + \\dots\\)",
+          "options": [
+            "\\(a = 29, \\; d = 6, \\; S_{21} = 1743\\)",
+            "\\(a = 23, \\; d = 6, \\; S_{21} = 1743\\)",
+            "\\(a = 23, \\; d = 7, \\; S_{21} = 1763\\)",
+            "\\(a = 23, \\; d = 6, \\; S_{21} = 1737\\)"
+          ],
+          "answer": 1,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = 23, \\; d = 6, \\; S_{21} = 1743\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = 23, quad d = 29 - 23 = 6\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(23) + (21-1)(6))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(46 + 20(6)) = \\frac{21}{2}(166)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 83 = 1743\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q4-12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the arithmetic series below, find the first term \\(a\\), the common difference \\(d\\), and evaluate the sum of the first \\(21\\) terms:\n\\(26 + 30 + 34 + \\dots\\)",
+          "options": [
+            "\\(a = 26, \\; d = 4, \\; S_{21} = 1386\\)",
+            "\\(a = 26, \\; d = 4, \\; S_{21} = 1382\\)",
+            "\\(a = 26, \\; d = 5, \\; S_{21} = 1406\\)",
+            "\\(a = 30, \\; d = 4, \\; S_{21} = 1386\\)"
+          ],
+          "answer": 0,
+          "hint": "The first term is the first number in the series, \\(d = T_2 - T_1\\). Then plug into the sum formula.",
+          "solution": "\\(a = 26, \\; d = 4, \\; S_{21} = 1386\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and calculate the common difference.",
+              "work": "\\(a = 26, quad d = 30 - 26 = 4\\)"
+            },
+            {
+              "explain": "Substitute the values into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(26) + (21-1)(4))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(52 + 20(4)) = \\frac{21}{2}(132)\\)"
+            },
+            {
+              "explain": "Evaluate the final value.",
+              "work": "\\(S_{21} = 21 \\times 66 = 1386\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(11\\) terms of the following arithmetic series:\n\\(-16 + -12 + -8 + \\dots\\)",
+          "options": [
+            "\\(44\\)",
+            "\\(40\\)",
+            "\\(56\\)",
+            "\\(48\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(44\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = -16, quad d = 4, quad n = 11\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{11} = \\frac{11}{2}(2(-16) + (11-1)(4))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{11} = \\frac{11}{2}(-32 + 10(4)) = \\frac{11}{2}(8)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{11} = 44\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(12\\) terms of the following arithmetic series:\n\\(-12 + -9 + -6 + \\dots\\)",
+          "options": [
+            "\\(66\\)",
+            "\\(51\\)",
+            "\\(54\\)",
+            "\\(57\\)"
+          ],
+          "answer": 2,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(54\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = -12, quad d = 3, quad n = 12\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{12} = \\frac{12}{2}(2(-12) + (12-1)(3))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{12} = \\frac{12}{2}(-24 + 11(3)) = \\frac{12}{2}(9)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{12} = 54\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(13\\) terms of the following arithmetic series:\n\\(-8 + -6 + -4 + \\dots\\)",
+          "options": [
+            "\\(52\\)",
+            "\\(54\\)",
+            "\\(50\\)",
+            "\\(64\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(52\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = -8, quad d = 2, quad n = 13\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{13} = \\frac{13}{2}(2(-8) + (13-1)(2))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{13} = \\frac{13}{2}(-16 + 12(2)) = \\frac{13}{2}(8)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{13} = 52\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(14\\) terms of the following arithmetic series:\n\\(-4 + 1 + 6 + \\dots\\)",
+          "options": [
+            "\\(411\\)",
+            "\\(404\\)",
+            "\\(394\\)",
+            "\\(399\\)"
+          ],
+          "answer": 3,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(399\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = -4, quad d = 5, quad n = 14\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{14} = \\frac{14}{2}(2(-4) + (14-1)(5))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{14} = \\frac{14}{2}(-8 + 13(5)) = \\frac{14}{2}(57)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{14} = 399\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(15\\) terms of the following arithmetic series:\n\\(0 + 4 + 8 + \\dots\\)",
+          "options": [
+            "\\(424\\)",
+            "\\(420\\)",
+            "\\(416\\)",
+            "\\(432\\)"
+          ],
+          "answer": 1,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(420\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = 0, quad d = 4, quad n = 15\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{15} = \\frac{15}{2}(2(0) + (15-1)(4))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{15} = \\frac{15}{2}(0 + 14(4)) = \\frac{15}{2}(56)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{15} = 420\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(16\\) terms of the following arithmetic series:\n\\(4 + 7 + 10 + \\dots\\)",
+          "options": [
+            "\\(421\\)",
+            "\\(424\\)",
+            "\\(427\\)",
+            "\\(436\\)"
+          ],
+          "answer": 1,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(424\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = 4, quad d = 3, quad n = 16\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{16} = \\frac{16}{2}(2(4) + (16-1)(3))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{16} = \\frac{16}{2}(8 + 15(3)) = \\frac{16}{2}(53)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{16} = 424\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(17\\) terms of the following arithmetic series:\n\\(8 + 10 + 12 + \\dots\\)",
+          "options": [
+            "\\(406\\)",
+            "\\(408\\)",
+            "\\(420\\)",
+            "\\(410\\)"
+          ],
+          "answer": 1,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(408\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = 8, quad d = 2, quad n = 17\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{17} = \\frac{17}{2}(2(8) + (17-1)(2))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{17} = \\frac{17}{2}(16 + 16(2)) = \\frac{17}{2}(48)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{17} = 408\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(18\\) terms of the following arithmetic series:\n\\(12 + 17 + 22 + \\dots\\)",
+          "options": [
+            "\\(986\\)",
+            "\\(993\\)",
+            "\\(976\\)",
+            "\\(981\\)"
+          ],
+          "answer": 3,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(981\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = 12, quad d = 5, quad n = 18\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{18} = \\frac{18}{2}(2(12) + (18-1)(5))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{18} = \\frac{18}{2}(24 + 17(5)) = \\frac{18}{2}(109)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{18} = 981\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(19\\) terms of the following arithmetic series:\n\\(16 + 20 + 24 + \\dots\\)",
+          "options": [
+            "\\(984\\)",
+            "\\(992\\)",
+            "\\(1000\\)",
+            "\\(988\\)"
+          ],
+          "answer": 3,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(988\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = 16, quad d = 4, quad n = 19\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{19} = \\frac{19}{2}(2(16) + (19-1)(4))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{19} = \\frac{19}{2}(32 + 18(4)) = \\frac{19}{2}(104)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{19} = 988\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(20\\) terms of the following arithmetic series:\n\\(20 + 23 + 26 + \\dots\\)",
+          "options": [
+            "\\(973\\)",
+            "\\(982\\)",
+            "\\(967\\)",
+            "\\(970\\)"
+          ],
+          "answer": 3,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(970\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = 20, quad d = 3, quad n = 20\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{20} = \\frac{20}{2}(2(20) + (20-1)(3))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{20} = \\frac{20}{2}(40 + 19(3)) = \\frac{20}{2}(97)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{20} = 970\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(21\\) terms of the following arithmetic series:\n\\(24 + 26 + 28 + \\dots\\)",
+          "options": [
+            "\\(926\\)",
+            "\\(924\\)",
+            "\\(922\\)",
+            "\\(936\\)"
+          ],
+          "answer": 1,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(924\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = 24, quad d = 2, quad n = 21\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{21} = \\frac{21}{2}(2(24) + (21-1)(2))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{21} = \\frac{21}{2}(48 + 20(2)) = \\frac{21}{2}(88)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{21} = 924\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q5-12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum of the first \\(22\\) terms of the following arithmetic series:\n\\(28 + 33 + 38 + \\dots\\)",
+          "options": [
+            "\\(1771\\)",
+            "\\(1766\\)",
+            "\\(1783\\)",
+            "\\(1776\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify a, d, and n, then use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\).",
+          "solution": "\\(1771\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the series.",
+              "work": "\\(a = 28, quad d = 5, quad n = 22\\)"
+            },
+            {
+              "explain": "Substitute into the sum formula.",
+              "work": "\\(S_{22} = \\frac{22}{2}(2(28) + (22-1)(5))\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\(S_{22} = \\frac{22}{2}(56 + 21(5)) = \\frac{22}{2}(161)\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{22} = 1771\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1f-q6-1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(12 + 16 + 20 + \\dots + 52\\)",
+          "options": [
+            "\\(12\\) terms, sum \\(= 404\\)",
+            "\\(11\\) terms, sum \\(= 364\\)",
+            "\\(10\\) terms, sum \\(= 300\\)",
+            "\\(11\\) terms, sum \\(= 352\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(11\\) terms, sum \\(= 352\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 12, quad d = 4, quad l = 52\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(52 = 12 + (n-1) \\times 4 \\implies 40 = 4(n-1) \\implies n-1 = 10 \\implies n = 11\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{11} = \\frac{11}{2}(12 + 52) = 5.5 \\times 64 = 352\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q6-2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(14 + 19 + 24 + \\dots + 69\\)",
+          "options": [
+            "\\(12\\) terms, sum \\(= 498\\)",
+            "\\(11\\) terms, sum \\(= 429\\)",
+            "\\(12\\) terms, sum \\(= 512\\)",
+            "\\(13\\) terms, sum \\(= 567\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(12\\) terms, sum \\(= 498\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 14, quad d = 5, quad l = 69\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(69 = 14 + (n-1) \\times 5 \\implies 55 = 5(n-1) \\implies n-1 = 11 \\implies n = 12\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{12} = \\frac{12}{2}(14 + 69) = 6 \\times 83 = 498\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q6-3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(16 + 19 + 22 + \\dots + 52\\)",
+          "options": [
+            "\\(12\\) terms, sum \\(= 390\\)",
+            "\\(14\\) terms, sum \\(= 494\\)",
+            "\\(13\\) terms, sum \\(= 442\\)",
+            "\\(13\\) terms, sum \\(= 458\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(13\\) terms, sum \\(= 442\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 16, quad d = 3, quad l = 52\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(52 = 16 + (n-1) \\times 3 \\implies 36 = 3(n-1) \\implies n-1 = 12 \\implies n = 13\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{13} = \\frac{13}{2}(16 + 52) = 6.5 \\times 68 = 442\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q6-4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(18 + 22 + 26 + \\dots + 70\\)",
+          "options": [
+            "\\(14\\) terms, sum \\(= 616\\)",
+            "\\(13\\) terms, sum \\(= 546\\)",
+            "\\(14\\) terms, sum \\(= 634\\)",
+            "\\(15\\) terms, sum \\(= 686\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(14\\) terms, sum \\(= 616\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 18, quad d = 4, quad l = 70\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(70 = 18 + (n-1) \\times 4 \\implies 52 = 4(n-1) \\implies n-1 = 13 \\implies n = 14\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{14} = \\frac{14}{2}(18 + 70) = 7 \\times 88 = 616\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q6-5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(20 + 25 + 30 + \\dots + 90\\)",
+          "options": [
+            "\\(15\\) terms, sum \\(= 825\\)",
+            "\\(14\\) terms, sum \\(= 735\\)",
+            "\\(15\\) terms, sum \\(= 845\\)",
+            "\\(16\\) terms, sum \\(= 915\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(15\\) terms, sum \\(= 825\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 20, quad d = 5, quad l = 90\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(90 = 20 + (n-1) \\times 5 \\implies 70 = 5(n-1) \\implies n-1 = 14 \\implies n = 15\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{15} = \\frac{15}{2}(20 + 90) = 7.5 \\times 110 = 825\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q6-6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(22 + 25 + 28 + \\dots + 67\\)",
+          "options": [
+            "\\(16\\) terms, sum \\(= 734\\)",
+            "\\(17\\) terms, sum \\(= 779\\)",
+            "\\(16\\) terms, sum \\(= 712\\)",
+            "\\(15\\) terms, sum \\(= 645\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(16\\) terms, sum \\(= 712\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 22, quad d = 3, quad l = 67\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(67 = 22 + (n-1) \\times 3 \\implies 45 = 3(n-1) \\implies n-1 = 15 \\implies n = 16\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{16} = \\frac{16}{2}(22 + 67) = 8 \\times 89 = 712\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q6-7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(24 + 28 + 32 + \\dots + 88\\)",
+          "options": [
+            "\\(18\\) terms, sum \\(= 1040\\)",
+            "\\(17\\) terms, sum \\(= 976\\)",
+            "\\(16\\) terms, sum \\(= 864\\)",
+            "\\(17\\) terms, sum \\(= 952\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(17\\) terms, sum \\(= 952\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 24, quad d = 4, quad l = 88\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(88 = 24 + (n-1) \\times 4 \\implies 64 = 4(n-1) \\implies n-1 = 16 \\implies n = 17\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{17} = \\frac{17}{2}(24 + 88) = 8.5 \\times 112 = 952\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q6-8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(26 + 31 + 36 + \\dots + 111\\)",
+          "options": [
+            "\\(18\\) terms, sum \\(= 1233\\)",
+            "\\(17\\) terms, sum \\(= 1122\\)",
+            "\\(19\\) terms, sum \\(= 1344\\)",
+            "\\(18\\) terms, sum \\(= 1259\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(18\\) terms, sum \\(= 1233\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 26, quad d = 5, quad l = 111\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(111 = 26 + (n-1) \\times 5 \\implies 85 = 5(n-1) \\implies n-1 = 17 \\implies n = 18\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{18} = \\frac{18}{2}(26 + 111) = 9 \\times 137 = 1233\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q6-9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(28 + 31 + 34 + \\dots + 82\\)",
+          "options": [
+            "\\(19\\) terms, sum \\(= 1045\\)",
+            "\\(18\\) terms, sum \\(= 963\\)",
+            "\\(19\\) terms, sum \\(= 1073\\)",
+            "\\(20\\) terms, sum \\(= 1127\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(19\\) terms, sum \\(= 1045\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 28, quad d = 3, quad l = 82\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(82 = 28 + (n-1) \\times 3 \\implies 54 = 3(n-1) \\implies n-1 = 18 \\implies n = 19\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{19} = \\frac{19}{2}(28 + 82) = 9.5 \\times 110 = 1045\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q6-10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(30 + 34 + 38 + \\dots + 106\\)",
+          "options": [
+            "\\(20\\) terms, sum \\(= 1390\\)",
+            "\\(20\\) terms, sum \\(= 1360\\)",
+            "\\(19\\) terms, sum \\(= 1254\\)",
+            "\\(21\\) terms, sum \\(= 1466\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(20\\) terms, sum \\(= 1360\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 30, quad d = 4, quad l = 106\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(106 = 30 + (n-1) \\times 4 \\implies 76 = 4(n-1) \\implies n-1 = 19 \\implies n = 20\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{20} = \\frac{20}{2}(30 + 106) = 10 \\times 136 = 1360\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q6-11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(32 + 37 + 42 + \\dots + 132\\)",
+          "options": [
+            "\\(22\\) terms, sum \\(= 1854\\)",
+            "\\(21\\) terms, sum \\(= 1754\\)",
+            "\\(20\\) terms, sum \\(= 1590\\)",
+            "\\(21\\) terms, sum \\(= 1722\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(21\\) terms, sum \\(= 1722\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 32, quad d = 5, quad l = 132\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(132 = 32 + (n-1) \\times 5 \\implies 100 = 5(n-1) \\implies n-1 = 20 \\implies n = 21\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{21} = \\frac{21}{2}(32 + 132) = 10.5 \\times 164 = 1722\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q6-12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the number of terms and the sum of the following series:\n\\(34 + 37 + 40 + \\dots + 97\\)",
+          "options": [
+            "\\(22\\) terms, sum \\(= 1475\\)",
+            "\\(23\\) terms, sum \\(= 1538\\)",
+            "\\(21\\) terms, sum \\(= 1344\\)",
+            "\\(22\\) terms, sum \\(= 1441\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
+          "solution": "\\(22\\) terms, sum \\(= 1441\\)",
+          "steps": [
+            {
+              "explain": "Identify a, d, and the last term l.",
+              "work": "\\(a = 34, quad d = 3, quad l = 97\\)"
+            },
+            {
+              "explain": "Solve for the number of terms.",
+              "work": "\\(97 = 34 + (n-1) \\times 3 \\implies 63 = 3(n-1) \\implies n-1 = 21 \\implies n = 22\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_{22} = \\frac{22}{2}(34 + 97) = 11 \\times 131 = 1441\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q7-1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the sum of the following arithmetic progression:\n\\(5 + 10 + 15 + \\dots + 100\\)",
+          "options": [
+            "\\(1150\\)",
+            "\\(1055\\)",
+            "\\(950\\)",
+            "\\(1050\\)"
+          ],
+          "answer": 3,
+          "hint": "Determine the number of terms first, then use the sum formula.",
+          "solution": "\\(1050\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters: first term, difference, and last term.",
+              "work": "\\(a = 5, quad d = 5, quad l = 100\\)"
+            },
+            {
+              "explain": "Find the number of terms.",
+              "work": "\\(n = \\frac{100 - 5}{5} + 1 = 20\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{20} = \\frac{20}{2}(5 + 100) = 1050\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q7-2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the sum of the following arithmetic progression:\n\\(10 + 15 + 20 + \\dots + 205\\)",
+          "options": [
+            "\\(4505\\)",
+            "\\(4310\\)",
+            "\\(4095\\)",
+            "\\(4300\\)"
+          ],
+          "answer": 3,
+          "hint": "Determine the number of terms first, then use the sum formula.",
+          "solution": "\\(4300\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters: first term, difference, and last term.",
+              "work": "\\(a = 10, quad d = 5, quad l = 205\\)"
+            },
+            {
+              "explain": "Find the number of terms.",
+              "work": "\\(n = \\frac{205 - 10}{5} + 1 = 40\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{40} = \\frac{40}{2}(10 + 205) = 4300\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q7-3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the sum of the following arithmetic progression:\n\\(15 + 20 + 25 + \\dots + 310\\)",
+          "options": [
+            "\\(9750\\)",
+            "\\(10060\\)",
+            "\\(9440\\)",
+            "\\(9765\\)"
+          ],
+          "answer": 0,
+          "hint": "Determine the number of terms first, then use the sum formula.",
+          "solution": "\\(9750\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters: first term, difference, and last term.",
+              "work": "\\(a = 15, quad d = 5, quad l = 310\\)"
+            },
+            {
+              "explain": "Find the number of terms.",
+              "work": "\\(n = \\frac{310 - 15}{5} + 1 = 60\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{60} = \\frac{60}{2}(15 + 310) = 9750\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q7-4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the sum of the following arithmetic progression:\n\\(20 + 25 + 30 + \\dots + 415\\)",
+          "options": [
+            "\\(17420\\)",
+            "\\(16985\\)",
+            "\\(17815\\)",
+            "\\(17400\\)"
+          ],
+          "answer": 3,
+          "hint": "Determine the number of terms first, then use the sum formula.",
+          "solution": "\\(17400\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters: first term, difference, and last term.",
+              "work": "\\(a = 20, quad d = 5, quad l = 415\\)"
+            },
+            {
+              "explain": "Find the number of terms.",
+              "work": "\\(n = \\frac{415 - 20}{5} + 1 = 80\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{80} = \\frac{80}{2}(20 + 415) = 17400\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q7-5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the sum of the following arithmetic progression:\n\\(25 + 30 + 35 + \\dots + 520\\)",
+          "options": [
+            "\\(27770\\)",
+            "\\(27275\\)",
+            "\\(26730\\)",
+            "\\(27250\\)"
+          ],
+          "answer": 3,
+          "hint": "Determine the number of terms first, then use the sum formula.",
+          "solution": "\\(27250\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters: first term, difference, and last term.",
+              "work": "\\(a = 25, quad d = 5, quad l = 520\\)"
+            },
+            {
+              "explain": "Find the number of terms.",
+              "work": "\\(n = \\frac{520 - 25}{5} + 1 = 100\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{100} = \\frac{100}{2}(25 + 520) = 27250\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q7-6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the sum of the following arithmetic progression:\n\\(30 + 35 + 40 + \\dots + 625\\)",
+          "options": [
+            "\\(39925\\)",
+            "\\(38675\\)",
+            "\\(39300\\)",
+            "\\(39330\\)"
+          ],
+          "answer": 2,
+          "hint": "Determine the number of terms first, then use the sum formula.",
+          "solution": "\\(39300\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters: first term, difference, and last term.",
+              "work": "\\(a = 30, quad d = 5, quad l = 625\\)"
+            },
+            {
+              "explain": "Find the number of terms.",
+              "work": "\\(n = \\frac{625 - 30}{5} + 1 = 120\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{120} = \\frac{120}{2}(30 + 625) = 39300\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q7-7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the sum of the following arithmetic progression:\n\\(35 + 40 + 45 + \\dots + 730\\)",
+          "options": [
+            "\\(54280\\)",
+            "\\(53585\\)",
+            "\\(52820\\)",
+            "\\(53550\\)"
+          ],
+          "answer": 3,
+          "hint": "Determine the number of terms first, then use the sum formula.",
+          "solution": "\\(53550\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters: first term, difference, and last term.",
+              "work": "\\(a = 35, quad d = 5, quad l = 730\\)"
+            },
+            {
+              "explain": "Find the number of terms.",
+              "work": "\\(n = \\frac{730 - 35}{5} + 1 = 140\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{140} = \\frac{140}{2}(35 + 730) = 53550\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q7-8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the sum of the following arithmetic progression:\n\\(40 + 45 + 50 + \\dots + 835\\)",
+          "options": [
+            "\\(70040\\)",
+            "\\(70835\\)",
+            "\\(69165\\)",
+            "\\(70000\\)"
+          ],
+          "answer": 3,
+          "hint": "Determine the number of terms first, then use the sum formula.",
+          "solution": "\\(70000\\)",
+          "steps": [
+            {
+              "explain": "Identify the parameters: first term, difference, and last term.",
+              "work": "\\(a = 40, quad d = 5, quad l = 835\\)"
+            },
+            {
+              "explain": "Find the number of terms.",
+              "work": "\\(n = \\frac{835 - 40}{5} + 1 = 160\\)"
+            },
+            {
+              "explain": "Calculate the sum.",
+              "work": "\\(S_{160} = \\frac{160}{2}(40 + 835) = 70000\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q8-1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(2 + 4 + 6 + \\dots\\)",
+          "options": [
+            "\\(n(2n + 2)\\)",
+            "\\(\\frac{n}{2}(2n + 4)\\)",
+            "\\(\\frac{n}{2}(2n - 2)\\)",
+            "\\(\\frac{n}{2}(2n + 2)\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) and expand the terms.",
+          "solution": "\\(\\frac{n}{2}(2n + 2)\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 2, quad d = 2\\)"
+            },
+            {
+              "explain": "Substitute these into the sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2(2) + (n-1)(2))\\)"
+            },
+            {
+              "explain": "Expand and simplify inside the brackets.",
+              "work": "\\(S_n = \\frac{n}{2}(4 + 2n - 2) = \\frac{n}{2}(2n + 2)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q8-2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(4 + 7 + 10 + \\dots\\)",
+          "options": [
+            "\\(n(3n + 5)\\)",
+            "\\(\\frac{n}{2}(3n - 5)\\)",
+            "\\(\\frac{n}{2}(3n + 8)\\)",
+            "\\(\\frac{n}{2}(3n + 5)\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) and expand the terms.",
+          "solution": "\\(\\frac{n}{2}(3n + 5)\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 4, quad d = 3\\)"
+            },
+            {
+              "explain": "Substitute these into the sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2(4) + (n-1)(3))\\)"
+            },
+            {
+              "explain": "Expand and simplify inside the brackets.",
+              "work": "\\(S_n = \\frac{n}{2}(8 + 3n - 3) = \\frac{n}{2}(3n + 5)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q8-3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(6 + 10 + 14 + \\dots\\)",
+          "options": [
+            "\\(n(4n + 8)\\)",
+            "\\(\\frac{n}{2}(4n + 12)\\)",
+            "\\(\\frac{n}{2}(4n - 8)\\)",
+            "\\(\\frac{n}{2}(4n + 8)\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) and expand the terms.",
+          "solution": "\\(\\frac{n}{2}(4n + 8)\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 6, quad d = 4\\)"
+            },
+            {
+              "explain": "Substitute these into the sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2(6) + (n-1)(4))\\)"
+            },
+            {
+              "explain": "Expand and simplify inside the brackets.",
+              "work": "\\(S_n = \\frac{n}{2}(12 + 4n - 4) = \\frac{n}{2}(4n + 8)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q8-4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(8 + 13 + 18 + \\dots\\)",
+          "options": [
+            "\\(\\frac{n}{2}(5n - 11)\\)",
+            "\\(n(5n + 11)\\)",
+            "\\(\\frac{n}{2}(5n + 16)\\)",
+            "\\(\\frac{n}{2}(5n + 11)\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) and expand the terms.",
+          "solution": "\\(\\frac{n}{2}(5n + 11)\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 8, quad d = 5\\)"
+            },
+            {
+              "explain": "Substitute these into the sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2(8) + (n-1)(5))\\)"
+            },
+            {
+              "explain": "Expand and simplify inside the brackets.",
+              "work": "\\(S_n = \\frac{n}{2}(16 + 5n - 5) = \\frac{n}{2}(5n + 11)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q8-5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(10 + 16 + 22 + \\dots\\)",
+          "options": [
+            "\\(\\frac{n}{2}(6n + 14)\\)",
+            "\\(\\frac{n}{2}(6n + 20)\\)",
+            "\\(n(6n + 14)\\)",
+            "\\(\\frac{n}{2}(6n - 14)\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) and expand the terms.",
+          "solution": "\\(\\frac{n}{2}(6n + 14)\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 10, quad d = 6\\)"
+            },
+            {
+              "explain": "Substitute these into the sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2(10) + (n-1)(6))\\)"
+            },
+            {
+              "explain": "Expand and simplify inside the brackets.",
+              "work": "\\(S_n = \\frac{n}{2}(20 + 6n - 6) = \\frac{n}{2}(6n + 14)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q8-6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(12 + 19 + 26 + \\dots\\)",
+          "options": [
+            "\\(\\frac{n}{2}(7n + 17)\\)",
+            "\\(\\frac{n}{2}(7n + 24)\\)",
+            "\\(n(7n + 17)\\)",
+            "\\(\\frac{n}{2}(7n - 17)\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) and expand the terms.",
+          "solution": "\\(\\frac{n}{2}(7n + 17)\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 12, quad d = 7\\)"
+            },
+            {
+              "explain": "Substitute these into the sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2(12) + (n-1)(7))\\)"
+            },
+            {
+              "explain": "Expand and simplify inside the brackets.",
+              "work": "\\(S_n = \\frac{n}{2}(24 + 7n - 7) = \\frac{n}{2}(7n + 17)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q8-7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(14 + 22 + 30 + \\dots\\)",
+          "options": [
+            "\\(\\frac{n}{2}(8n + 28)\\)",
+            "\\(\\frac{n}{2}(8n + 20)\\)",
+            "\\(n(8n + 20)\\)",
+            "\\(\\frac{n}{2}(8n - 20)\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) and expand the terms.",
+          "solution": "\\(\\frac{n}{2}(8n + 20)\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 14, quad d = 8\\)"
+            },
+            {
+              "explain": "Substitute these into the sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2(14) + (n-1)(8))\\)"
+            },
+            {
+              "explain": "Expand and simplify inside the brackets.",
+              "work": "\\(S_n = \\frac{n}{2}(28 + 8n - 8) = \\frac{n}{2}(8n + 20)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q8-8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(16 + 25 + 34 + \\dots\\)",
+          "options": [
+            "\\(\\frac{n}{2}(9n + 23)\\)",
+            "\\(\\frac{n}{2}(9n - 23)\\)",
+            "\\(\\frac{n}{2}(9n + 32)\\)",
+            "\\(n(9n + 23)\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) and expand the terms.",
+          "solution": "\\(\\frac{n}{2}(9n + 23)\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 16, quad d = 9\\)"
+            },
+            {
+              "explain": "Substitute these into the sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2(16) + (n-1)(9))\\)"
+            },
+            {
+              "explain": "Expand and simplify inside the brackets.",
+              "work": "\\(S_n = \\frac{n}{2}(32 + 9n - 9) = \\frac{n}{2}(9n + 23)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q8-9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(18 + 28 + 38 + \\dots\\)",
+          "options": [
+            "\\(\\frac{n}{2}(10n + 26)\\)",
+            "\\(n(10n + 26)\\)",
+            "\\(\\frac{n}{2}(10n + 36)\\)",
+            "\\(\\frac{n}{2}(10n - 26)\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) and expand the terms.",
+          "solution": "\\(\\frac{n}{2}(10n + 26)\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 18, quad d = 10\\)"
+            },
+            {
+              "explain": "Substitute these into the sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2(18) + (n-1)(10))\\)"
+            },
+            {
+              "explain": "Expand and simplify inside the brackets.",
+              "work": "\\(S_n = \\frac{n}{2}(36 + 10n - 10) = \\frac{n}{2}(10n + 26)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q8-10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find and simplify a formula for the sum of the first \\(n\\) terms of the arithmetic series:\n\\(20 + 31 + 42 + \\dots\\)",
+          "options": [
+            "\\(\\frac{n}{2}(11n - 29)\\)",
+            "\\(n(11n + 29)\\)",
+            "\\(\\frac{n}{2}(11n + 40)\\)",
+            "\\(\\frac{n}{2}(11n + 29)\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) and expand the terms.",
+          "solution": "\\(\\frac{n}{2}(11n + 29)\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 20, quad d = 11\\)"
+            },
+            {
+              "explain": "Substitute these into the sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2(20) + (n-1)(11))\\)"
+            },
+            {
+              "explain": "Expand and simplify inside the brackets.",
+              "work": "\\(S_n = \\frac{n}{2}(40 + 11n - 11) = \\frac{n}{2}(11n + 29)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q9-1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find a formula for the sum of the first \\(n\\) positive integers that are multiples of \\(2\\).",
+          "options": [
+            "\\(2n^2\\)",
+            "\\(\\frac{2}{2}n^2\\)",
+            "\\(2n(n+1)\\)",
+            "\\(1n(n + 1)\\)"
+          ],
+          "answer": 3,
+          "hint": "The series is \\(2 + 4 + 6 + \\dots + 2n\\). Use \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(1n(n + 1)\\)",
+          "steps": [
+            {
+              "explain": "State the first and last terms of the series.",
+              "work": "\\(a = 2, quad l = 2n\\)"
+            },
+            {
+              "explain": "Apply the first and last term sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2 + 2n)\\)"
+            },
+            {
+              "explain": "Factor out the common multiplier.",
+              "work": "\\(S_n = \\frac{2}{2}n(1 + n) = 1n(n + 1)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q9-2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find a formula for the sum of the first \\(n\\) positive integers that are multiples of \\(3\\).",
+          "options": [
+            "\\(\\frac{3}{2}n(n + 1)\\)",
+            "\\(3n^2\\)",
+            "\\(\\frac{3}{2}n^2\\)",
+            "\\(3n(n+1)\\)"
+          ],
+          "answer": 0,
+          "hint": "The series is \\(3 + 6 + 9 + \\dots + 3n\\). Use \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(\\frac{3}{2}n(n + 1)\\)",
+          "steps": [
+            {
+              "explain": "State the first and last terms of the series.",
+              "work": "\\(a = 3, quad l = 3n\\)"
+            },
+            {
+              "explain": "Apply the first and last term sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(3 + 3n)\\)"
+            },
+            {
+              "explain": "Factor out the common multiplier.",
+              "work": "\\(S_n = \\frac{3}{2}n(1 + n) = \\frac{3}{2}n(n + 1)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q9-3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find a formula for the sum of the first \\(n\\) positive integers that are multiples of \\(4\\).",
+          "options": [
+            "\\(4n^2\\)",
+            "\\(4n(n+1)\\)",
+            "\\(\\frac{4}{2}n^2\\)",
+            "\\(2n(n + 1)\\)"
+          ],
+          "answer": 3,
+          "hint": "The series is \\(4 + 8 + 12 + \\dots + 4n\\). Use \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(2n(n + 1)\\)",
+          "steps": [
+            {
+              "explain": "State the first and last terms of the series.",
+              "work": "\\(a = 4, quad l = 4n\\)"
+            },
+            {
+              "explain": "Apply the first and last term sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(4 + 4n)\\)"
+            },
+            {
+              "explain": "Factor out the common multiplier.",
+              "work": "\\(S_n = \\frac{4}{2}n(1 + n) = 2n(n + 1)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q9-4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find a formula for the sum of the first \\(n\\) positive integers that are multiples of \\(5\\).",
+          "options": [
+            "\\(\\frac{5}{2}n^2\\)",
+            "\\(5n(n+1)\\)",
+            "\\(5n^2\\)",
+            "\\(\\frac{5}{2}n(n + 1)\\)"
+          ],
+          "answer": 3,
+          "hint": "The series is \\(5 + 10 + 15 + \\dots + 5n\\). Use \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(\\frac{5}{2}n(n + 1)\\)",
+          "steps": [
+            {
+              "explain": "State the first and last terms of the series.",
+              "work": "\\(a = 5, quad l = 5n\\)"
+            },
+            {
+              "explain": "Apply the first and last term sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(5 + 5n)\\)"
+            },
+            {
+              "explain": "Factor out the common multiplier.",
+              "work": "\\(S_n = \\frac{5}{2}n(1 + n) = \\frac{5}{2}n(n + 1)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q9-5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find a formula for the sum of the first \\(n\\) positive integers that are multiples of \\(6\\).",
+          "options": [
+            "\\(3n(n + 1)\\)",
+            "\\(6n^2\\)",
+            "\\(\\frac{6}{2}n^2\\)",
+            "\\(6n(n+1)\\)"
+          ],
+          "answer": 0,
+          "hint": "The series is \\(6 + 12 + 18 + \\dots + 6n\\). Use \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(3n(n + 1)\\)",
+          "steps": [
+            {
+              "explain": "State the first and last terms of the series.",
+              "work": "\\(a = 6, quad l = 6n\\)"
+            },
+            {
+              "explain": "Apply the first and last term sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(6 + 6n)\\)"
+            },
+            {
+              "explain": "Factor out the common multiplier.",
+              "work": "\\(S_n = \\frac{6}{2}n(1 + n) = 3n(n + 1)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q9-6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find a formula for the sum of the first \\(n\\) positive integers that are multiples of \\(7\\).",
+          "options": [
+            "\\(7n(n+1)\\)",
+            "\\(\\frac{7}{2}n^2\\)",
+            "\\(\\frac{7}{2}n(n + 1)\\)",
+            "\\(7n^2\\)"
+          ],
+          "answer": 2,
+          "hint": "The series is \\(7 + 14 + 21 + \\dots + 7n\\). Use \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(\\frac{7}{2}n(n + 1)\\)",
+          "steps": [
+            {
+              "explain": "State the first and last terms of the series.",
+              "work": "\\(a = 7, quad l = 7n\\)"
+            },
+            {
+              "explain": "Apply the first and last term sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(7 + 7n)\\)"
+            },
+            {
+              "explain": "Factor out the common multiplier.",
+              "work": "\\(S_n = \\frac{7}{2}n(1 + n) = \\frac{7}{2}n(n + 1)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q9-7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find a formula for the sum of the first \\(n\\) positive integers that are multiples of \\(8\\).",
+          "options": [
+            "\\(\\frac{8}{2}n^2\\)",
+            "\\(4n(n + 1)\\)",
+            "\\(8n^2\\)",
+            "\\(8n(n+1)\\)"
+          ],
+          "answer": 1,
+          "hint": "The series is \\(8 + 16 + 24 + \\dots + 8n\\). Use \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(4n(n + 1)\\)",
+          "steps": [
+            {
+              "explain": "State the first and last terms of the series.",
+              "work": "\\(a = 8, quad l = 8n\\)"
+            },
+            {
+              "explain": "Apply the first and last term sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(8 + 8n)\\)"
+            },
+            {
+              "explain": "Factor out the common multiplier.",
+              "work": "\\(S_n = \\frac{8}{2}n(1 + n) = 4n(n + 1)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q9-8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find a formula for the sum of the first \\(n\\) positive integers that are multiples of \\(9\\).",
+          "options": [
+            "\\(\\frac{9}{2}n(n + 1)\\)",
+            "\\(\\frac{9}{2}n^2\\)",
+            "\\(9n^2\\)",
+            "\\(9n(n+1)\\)"
+          ],
+          "answer": 0,
+          "hint": "The series is \\(9 + 18 + 27 + \\dots + 9n\\). Use \\(S_n = \\frac{n}{2}(a + l)\\).",
+          "solution": "\\(\\frac{9}{2}n(n + 1)\\)",
+          "steps": [
+            {
+              "explain": "State the first and last terms of the series.",
+              "work": "\\(a = 9, quad l = 9n\\)"
+            },
+            {
+              "explain": "Apply the first and last term sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(9 + 9n)\\)"
+            },
+            {
+              "explain": "Factor out the common multiplier.",
+              "work": "\\(S_n = \\frac{9}{2}n(1 + n) = \\frac{9}{2}n(n + 1)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q10c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A graduate earns \\(28000\\) dollars in her first year, then each successive year her salary rises by \\(1600\\) dollars.\nWhat are her total earnings over \\(10\\) years?",
+          "options": [
+            "\\(352000\\) dollars",
+            "\\(280000\\) dollars",
+            "\\(344000\\) dollars",
+            "\\(360000\\) dollars"
+          ],
+          "answer": 0,
+          "hint": "This is an AP sum with a = 28000, d = 1600, n = 10.",
+          "solution": "\\(352000\\) dollars",
+          "steps": [
+            {
+              "explain": "State the first term, common difference, and number of periods.",
+              "work": "\\(a = 28000, quad d = 1600, quad n = 10\\)"
+            },
+            {
+              "explain": "Apply the arithmetic series sum formula.",
+              "work": "\\(S_{10} = \\frac{10}{2}(2(28000) + (10-1)(1600))\\)"
+            },
+            {
+              "explain": "Evaluate the expression.",
+              "work": "\\(S_{10} = 5(56000 + 9(1600)) = 5(56000 + 14400) = 5(70400) = 352000\\) dollars"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q11-1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{60} (105 - 3k)\\)",
+          "options": [
+            "\\(a = 102, \\; l = -78, \\; S = 810\\)",
+            "\\(a = 105, \\; l = -75, \\; S = 810\\)",
+            "\\(a = 102, \\; l = -75, \\; S = 885\\)",
+            "\\(a = 102, \\; l = -75, \\; S = 810\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the first term a (substitute k = 1) and last term l (substitute k = 60).",
+          "solution": "\\(a = 102, \\; l = -75, \\; S = 810\\)",
+          "steps": [
+            {
+              "explain": "Calculate the first term a and last term l.",
+              "work": "\\(a = 105 - 3(1) = 102\\), quad \\(l = 105 - 3(60) = -75\\)"
+            },
+            {
+              "explain": "State the number of terms n.",
+              "work": "\\(n = 60 - 1 + 1 = 60\\)"
+            },
+            {
+              "explain": "Calculate the sum using the formula.",
+              "work": "\\(S = \\frac{60}{2}(102 + (-75)) = 30 \\times 27 = 810\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q11-2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{70} (110 - 4k)\\)",
+          "options": [
+            "\\(a = 106, \\; l = -170, \\; S = -2240\\)",
+            "\\(a = 106, \\; l = -170, \\; S = -2070\\)",
+            "\\(a = 110, \\; l = -170, \\; S = -2240\\)",
+            "\\(a = 106, \\; l = -174, \\; S = -2240\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the first term a (substitute k = 1) and last term l (substitute k = 70).",
+          "solution": "\\(a = 106, \\; l = -170, \\; S = -2240\\)",
+          "steps": [
+            {
+              "explain": "Calculate the first term a and last term l.",
+              "work": "\\(a = 110 - 4(1) = 106\\), quad \\(l = 110 - 4(70) = -170\\)"
+            },
+            {
+              "explain": "State the number of terms n.",
+              "work": "\\(n = 70 - 1 + 1 = 70\\)"
+            },
+            {
+              "explain": "Calculate the sum using the formula.",
+              "work": "\\(S = \\frac{70}{2}(106 + (-170)) = 35 \\times -64 = -2240\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q11-3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{80} (115 - 5k)\\)",
+          "options": [
+            "\\(a = 115, \\; l = -285, \\; S = -7000\\)",
+            "\\(a = 110, \\; l = -290, \\; S = -7000\\)",
+            "\\(a = 110, \\; l = -285, \\; S = -6715\\)",
+            "\\(a = 110, \\; l = -285, \\; S = -7000\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the first term a (substitute k = 1) and last term l (substitute k = 80).",
+          "solution": "\\(a = 110, \\; l = -285, \\; S = -7000\\)",
+          "steps": [
+            {
+              "explain": "Calculate the first term a and last term l.",
+              "work": "\\(a = 115 - 5(1) = 110\\), quad \\(l = 115 - 5(80) = -285\\)"
+            },
+            {
+              "explain": "State the number of terms n.",
+              "work": "\\(n = 80 - 1 + 1 = 80\\)"
+            },
+            {
+              "explain": "Calculate the sum using the formula.",
+              "work": "\\(S = \\frac{80}{2}(110 + (-285)) = 40 \\times -175 = -7000\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q11-4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{90} (120 - 6k)\\)",
+          "options": [
+            "\\(a = 114, \\; l = -426, \\; S = -13770\\)",
+            "\\(a = 120, \\; l = -420, \\; S = -13770\\)",
+            "\\(a = 114, \\; l = -420, \\; S = -13350\\)",
+            "\\(a = 114, \\; l = -420, \\; S = -13770\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the first term a (substitute k = 1) and last term l (substitute k = 90).",
+          "solution": "\\(a = 114, \\; l = -420, \\; S = -13770\\)",
+          "steps": [
+            {
+              "explain": "Calculate the first term a and last term l.",
+              "work": "\\(a = 120 - 6(1) = 114\\), quad \\(l = 120 - 6(90) = -420\\)"
+            },
+            {
+              "explain": "State the number of terms n.",
+              "work": "\\(n = 90 - 1 + 1 = 90\\)"
+            },
+            {
+              "explain": "Calculate the sum using the formula.",
+              "work": "\\(S = \\frac{90}{2}(114 + (-420)) = 45 \\times -306 = -13770\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q11-5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{100} (125 - 7k)\\)",
+          "options": [
+            "\\(a = 118, \\; l = -575, \\; S = -22850\\)",
+            "\\(a = 118, \\; l = -575, \\; S = -22275\\)",
+            "\\(a = 118, \\; l = -582, \\; S = -22850\\)",
+            "\\(a = 125, \\; l = -575, \\; S = -22850\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the first term a (substitute k = 1) and last term l (substitute k = 100).",
+          "solution": "\\(a = 118, \\; l = -575, \\; S = -22850\\)",
+          "steps": [
+            {
+              "explain": "Calculate the first term a and last term l.",
+              "work": "\\(a = 125 - 7(1) = 118\\), quad \\(l = 125 - 7(100) = -575\\)"
+            },
+            {
+              "explain": "State the number of terms n.",
+              "work": "\\(n = 100 - 1 + 1 = 100\\)"
+            },
+            {
+              "explain": "Calculate the sum using the formula.",
+              "work": "\\(S = \\frac{100}{2}(118 + (-575)) = 50 \\times -457 = -22850\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q11-6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{110} (130 - 8k)\\)",
+          "options": [
+            "\\(a = 122, \\; l = -750, \\; S = -34540\\)",
+            "\\(a = 122, \\; l = -750, \\; S = -33790\\)",
+            "\\(a = 130, \\; l = -750, \\; S = -34540\\)",
+            "\\(a = 122, \\; l = -758, \\; S = -34540\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the first term a (substitute k = 1) and last term l (substitute k = 110).",
+          "solution": "\\(a = 122, \\; l = -750, \\; S = -34540\\)",
+          "steps": [
+            {
+              "explain": "Calculate the first term a and last term l.",
+              "work": "\\(a = 130 - 8(1) = 122\\), quad \\(l = 130 - 8(110) = -750\\)"
+            },
+            {
+              "explain": "State the number of terms n.",
+              "work": "\\(n = 110 - 1 + 1 = 110\\)"
+            },
+            {
+              "explain": "Calculate the sum using the formula.",
+              "work": "\\(S = \\frac{110}{2}(122 + (-750)) = 55 \\times -628 = -34540\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q11-7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{120} (135 - 9k)\\)",
+          "options": [
+            "\\(a = 126, \\; l = -945, \\; S = -48195\\)",
+            "\\(a = 135, \\; l = -945, \\; S = -49140\\)",
+            "\\(a = 126, \\; l = -954, \\; S = -49140\\)",
+            "\\(a = 126, \\; l = -945, \\; S = -49140\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the first term a (substitute k = 1) and last term l (substitute k = 120).",
+          "solution": "\\(a = 126, \\; l = -945, \\; S = -49140\\)",
+          "steps": [
+            {
+              "explain": "Calculate the first term a and last term l.",
+              "work": "\\(a = 135 - 9(1) = 126\\), quad \\(l = 135 - 9(120) = -945\\)"
+            },
+            {
+              "explain": "State the number of terms n.",
+              "work": "\\(n = 120 - 1 + 1 = 120\\)"
+            },
+            {
+              "explain": "Calculate the sum using the formula.",
+              "work": "\\(S = \\frac{120}{2}(126 + (-945)) = 60 \\times -819 = -49140\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q11-8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the following arithmetic series using \\(S_n = \\frac{n}{2}(a+l)\\):\n\\(\\sum_{k=1}^{130} (140 - 10k)\\)",
+          "options": [
+            "\\(a = 130, \\; l = -1170, \\; S = -66950\\)",
+            "\\(a = 140, \\; l = -1160, \\; S = -66950\\)",
+            "\\(a = 130, \\; l = -1160, \\; S = -65790\\)",
+            "\\(a = 130, \\; l = -1160, \\; S = -66950\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the first term a (substitute k = 1) and last term l (substitute k = 130).",
+          "solution": "\\(a = 130, \\; l = -1160, \\; S = -66950\\)",
+          "steps": [
+            {
+              "explain": "Calculate the first term a and last term l.",
+              "work": "\\(a = 140 - 10(1) = 130\\), quad \\(l = 140 - 10(130) = -1160\\)"
+            },
+            {
+              "explain": "State the number of terms n.",
+              "work": "\\(n = 130 - 1 + 1 = 130\\)"
+            },
+            {
+              "explain": "Calculate the sum using the formula.",
+              "work": "\\(S = \\frac{130}{2}(130 + (-1160)) = 65 \\times -1030 = -66950\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q12a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the last term of an arithmetic series with \\(10\\) terms, first term \\(-23\\), and sum \\(-5\\).",
+          "options": [
+            "\\(-22\\)",
+            "\\(20\\)",
+            "\\(24\\)",
+            "\\(22\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute the known values into \\(S_n = \\frac{n}{2}(a + l)\\) and solve for l.",
+          "solution": "\\(22\\)",
+          "steps": [
+            {
+              "explain": "State the known variables.",
+              "work": "\\(n = 10, quad a = -23, quad S_n = -5\\)"
+            },
+            {
+              "explain": "Write the sum formula and substitute the values.",
+              "work": "\\(-5 = \\frac{10}{2}(-23 + l)\\)"
+            },
+            {
+              "explain": "Solve for l.",
+              "work": "\\(-5 = 5(-23 + l) \\implies -1 = -23 + l \\implies l = 22\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q12b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the first term of an arithmetic series with \\(40\\) terms, last term \\(8.5\\), and sum \\(28\\).",
+          "options": [
+            "\\(-7.5\\)",
+            "\\(-8.2\\)",
+            "\\(-6.5\\)",
+            "\\(-7.1\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute the known values into \\(S_n = \\frac{n}{2}(a + l)\\) and solve for a.",
+          "solution": "\\(-7.1\\)",
+          "steps": [
+            {
+              "explain": "State the known variables.",
+              "work": "\\(n = 40, quad l = 8.5, quad S_n = 28\\)"
+            },
+            {
+              "explain": "Write the sum formula and substitute the values.",
+              "work": "\\(28 = \\frac{40}{2}(a + 8.5)\\)"
+            },
+            {
+              "explain": "Solve for a.",
+              "work": "\\(28 = 20(a + 8.5) \\implies 1.4 = a + 8.5 \\implies a = -7.1\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q12c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the common difference of an arithmetic series with \\(8\\) terms, first term \\(5\\), and sum \\(348\\).",
+          "options": [
+            "\\(9\\)",
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(12\\)"
+          ],
+          "answer": 2,
+          "hint": "Use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to solve for d.",
+          "solution": "\\(11\\)",
+          "steps": [
+            {
+              "explain": "State the known variables.",
+              "work": "\\(n = 8, quad a = 5, quad S_n = 348\\)"
+            },
+            {
+              "explain": "Write the sum formula and substitute the values.",
+              "work": "\\(348 = \\frac{8}{2}(2(5) + 7d)\\)"
+            },
+            {
+              "explain": "Solve for d.",
+              "work": "\\(348 = 4(10 + 7d) \\implies 87 = 10 + 7d \\implies 77 = 7d \\implies d = 11\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q12d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the first term of an arithmetic series with \\(15\\) terms, common difference \\(\\frac{2}{3}\\), and sum \\(-15\\).",
+          "options": [
+            "\\(-5.67\\)",
+            "\\(-5.00\\)",
+            "\\(-6.25\\)",
+            "\\(-4.50\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to solve for a.",
+          "solution": "\\(-5.67\\)",
+          "steps": [
+            {
+              "explain": "State the known variables.",
+              "work": "\\(n = 15, quad d = \\frac{2}{3}, quad S_n = -15\\)"
+            },
+            {
+              "explain": "Write the sum formula and substitute the values.",
+              "work": "\\(-15 = \\frac{15}{2}(2a + 14(\\frac{2}{3}))\\)"
+            },
+            {
+              "explain": "Solve for a.",
+              "work": "\\(-15 = 7.5(2a + \\frac{28}{3}) \\implies -2 = 2a + \\frac{28}{3} \\implies 2a = -\\frac{34}{3} \\implies a = -\\frac{17}{3} \\approx -5.67\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q13a",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Show that the sum of the first \\(n\\) terms of the arithmetic series \\(80 + 72 + 64 + 56 + \\dots\\) is \\(S_n = 4n(21 - n)\\).",
+          "answer": "0",
+          "hint": "Identify the first term a and common difference d, then plug them into the sum formula.",
+          "solution": "Proof: S_n = \\frac{n}{2}(2(80) + (n-1)(-8)) = \\frac{n}{2}(160 - 8n + 8) = \\frac{n}{2}(168 - 8n) = n(84 - 4n) = 4n(21 - n).",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 80, quad d = -8\\)"
+            },
+            {
+              "explain": "Substitute the variables into the arithmetic sum formula.",
+              "work": "\\(S_n = \\frac{n}{2}(2(80) + (n-1)(-8))\\)"
+            },
+            {
+              "explain": "Expand the term inside the brackets.",
+              "work": "\\(S_n = \\frac{n}{2}(160 - 8n + 8) = \\frac{n}{2}(168 - 8n)\\)"
+            },
+            {
+              "explain": "Factor out 4 and simplify to obtain the required form.",
+              "work": "\\(S_n = n(84 - 4n) = 4n(21 - n)\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y12a-1f-q14-1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(25 + 23 + 21 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+          "options": [
+            "\\(n = 24\\)",
+            "\\(n = 26\\)",
+            "\\(n = 25\\)",
+            "\\(n = 27\\)"
+          ],
+          "answer": 1,
+          "hint": "Set the sum formula equal to 0 and solve for the positive non-zero value of n.",
+          "solution": "\\(n = 26\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 25, quad d = -2\\)"
+            },
+            {
+              "explain": "Set up the sum formula equal to 0.",
+              "work": "\\(S_n = \\frac{n}{2}(2(25) + (n-1)(-2)) = 0\\)"
+            },
+            {
+              "explain": "Simplify inside the brackets.",
+              "work": "\\(\\frac{n}{2}(50 - 2n + 2) = 0 \\implies \\frac{n}{2}(52 - 2n) = 0\\)"
+            },
+            {
+              "explain": "Solve for the positive non-zero value of n.",
+              "work": "\\(n(26 - n) = 0 \\implies n = 26\\) terms"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q14-2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(30 + 28 + 26 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+          "options": [
+            "\\(n = 29\\)",
+            "\\(n = 32\\)",
+            "\\(n = 30\\)",
+            "\\(n = 31\\)"
+          ],
+          "answer": 3,
+          "hint": "Set the sum formula equal to 0 and solve for the positive non-zero value of n.",
+          "solution": "\\(n = 31\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 30, quad d = -2\\)"
+            },
+            {
+              "explain": "Set up the sum formula equal to 0.",
+              "work": "\\(S_n = \\frac{n}{2}(2(30) + (n-1)(-2)) = 0\\)"
+            },
+            {
+              "explain": "Simplify inside the brackets.",
+              "work": "\\(\\frac{n}{2}(60 - 2n + 2) = 0 \\implies \\frac{n}{2}(62 - 2n) = 0\\)"
+            },
+            {
+              "explain": "Solve for the positive non-zero value of n.",
+              "work": "\\(n(31 - n) = 0 \\implies n = 31\\) terms"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q14-3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(35 + 33 + 31 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+          "options": [
+            "\\(n = 37\\)",
+            "\\(n = 34\\)",
+            "\\(n = 35\\)",
+            "\\(n = 36\\)"
+          ],
+          "answer": 3,
+          "hint": "Set the sum formula equal to 0 and solve for the positive non-zero value of n.",
+          "solution": "\\(n = 36\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 35, quad d = -2\\)"
+            },
+            {
+              "explain": "Set up the sum formula equal to 0.",
+              "work": "\\(S_n = \\frac{n}{2}(2(35) + (n-1)(-2)) = 0\\)"
+            },
+            {
+              "explain": "Simplify inside the brackets.",
+              "work": "\\(\\frac{n}{2}(70 - 2n + 2) = 0 \\implies \\frac{n}{2}(72 - 2n) = 0\\)"
+            },
+            {
+              "explain": "Solve for the positive non-zero value of n.",
+              "work": "\\(n(36 - n) = 0 \\implies n = 36\\) terms"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q14-4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(40 + 38 + 36 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+          "options": [
+            "\\(n = 41\\)",
+            "\\(n = 39\\)",
+            "\\(n = 40\\)",
+            "\\(n = 42\\)"
+          ],
+          "answer": 0,
+          "hint": "Set the sum formula equal to 0 and solve for the positive non-zero value of n.",
+          "solution": "\\(n = 41\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 40, quad d = -2\\)"
+            },
+            {
+              "explain": "Set up the sum formula equal to 0.",
+              "work": "\\(S_n = \\frac{n}{2}(2(40) + (n-1)(-2)) = 0\\)"
+            },
+            {
+              "explain": "Simplify inside the brackets.",
+              "work": "\\(\\frac{n}{2}(80 - 2n + 2) = 0 \\implies \\frac{n}{2}(82 - 2n) = 0\\)"
+            },
+            {
+              "explain": "Solve for the positive non-zero value of n.",
+              "work": "\\(n(41 - n) = 0 \\implies n = 41\\) terms"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q14-5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(45 + 43 + 41 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+          "options": [
+            "\\(n = 46\\)",
+            "\\(n = 45\\)",
+            "\\(n = 47\\)",
+            "\\(n = 44\\)"
+          ],
+          "answer": 0,
+          "hint": "Set the sum formula equal to 0 and solve for the positive non-zero value of n.",
+          "solution": "\\(n = 46\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 45, quad d = -2\\)"
+            },
+            {
+              "explain": "Set up the sum formula equal to 0.",
+              "work": "\\(S_n = \\frac{n}{2}(2(45) + (n-1)(-2)) = 0\\)"
+            },
+            {
+              "explain": "Simplify inside the brackets.",
+              "work": "\\(\\frac{n}{2}(90 - 2n + 2) = 0 \\implies \\frac{n}{2}(92 - 2n) = 0\\)"
+            },
+            {
+              "explain": "Solve for the positive non-zero value of n.",
+              "work": "\\(n(46 - n) = 0 \\implies n = 46\\) terms"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q14-6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(50 + 48 + 46 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+          "options": [
+            "\\(n = 51\\)",
+            "\\(n = 50\\)",
+            "\\(n = 52\\)",
+            "\\(n = 49\\)"
+          ],
+          "answer": 0,
+          "hint": "Set the sum formula equal to 0 and solve for the positive non-zero value of n.",
+          "solution": "\\(n = 51\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 50, quad d = -2\\)"
+            },
+            {
+              "explain": "Set up the sum formula equal to 0.",
+              "work": "\\(S_n = \\frac{n}{2}(2(50) + (n-1)(-2)) = 0\\)"
+            },
+            {
+              "explain": "Simplify inside the brackets.",
+              "work": "\\(\\frac{n}{2}(100 - 2n + 2) = 0 \\implies \\frac{n}{2}(102 - 2n) = 0\\)"
+            },
+            {
+              "explain": "Solve for the positive non-zero value of n.",
+              "work": "\\(n(51 - n) = 0 \\implies n = 51\\) terms"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q14-7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(55 + 53 + 51 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+          "options": [
+            "\\(n = 54\\)",
+            "\\(n = 56\\)",
+            "\\(n = 55\\)",
+            "\\(n = 57\\)"
+          ],
+          "answer": 1,
+          "hint": "Set the sum formula equal to 0 and solve for the positive non-zero value of n.",
+          "solution": "\\(n = 56\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 55, quad d = -2\\)"
+            },
+            {
+              "explain": "Set up the sum formula equal to 0.",
+              "work": "\\(S_n = \\frac{n}{2}(2(55) + (n-1)(-2)) = 0\\)"
+            },
+            {
+              "explain": "Simplify inside the brackets.",
+              "work": "\\(\\frac{n}{2}(110 - 2n + 2) = 0 \\implies \\frac{n}{2}(112 - 2n) = 0\\)"
+            },
+            {
+              "explain": "Solve for the positive non-zero value of n.",
+              "work": "\\(n(56 - n) = 0 \\implies n = 56\\) terms"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q14-8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "First use the formula \\(S_n = \\frac{n}{2}(2a + (n-1)d)\\) to express the sum of the series \\(60 + 58 + 56 + \\dots\\).\nThen find the number of terms \\(n\\) if the sum is \\(0\\).",
+          "options": [
+            "\\(n = 62\\)",
+            "\\(n = 59\\)",
+            "\\(n = 60\\)",
+            "\\(n = 61\\)"
+          ],
+          "answer": 3,
+          "hint": "Set the sum formula equal to 0 and solve for the positive non-zero value of n.",
+          "solution": "\\(n = 61\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term and the common difference.",
+              "work": "\\(a = 60, quad d = -2\\)"
+            },
+            {
+              "explain": "Set up the sum formula equal to 0.",
+              "work": "\\(S_n = \\frac{n}{2}(2(60) + (n-1)(-2)) = 0\\)"
+            },
+            {
+              "explain": "Simplify inside the brackets.",
+              "work": "\\(\\frac{n}{2}(120 - 2n + 2) = 0 \\implies \\frac{n}{2}(122 - 2n) = 0\\)"
+            },
+            {
+              "explain": "Solve for the positive non-zero value of n.",
+              "work": "\\(n(61 - n) = 0 \\implies n = 61\\) terms"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1f-q15a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Logs of wood are stacked with \\(15\\) on the top row, \\(16\\) on the next, and so on.\nIf there are \\(360\\) logs in total, find the number of rows and the number of logs on the bottom row.",
+          "options": [
+            "\\(16\\) rows, \\(30\\) logs on the bottom row",
+            "\\(18\\) rows, \\(32\\) logs on the bottom row",
+            "\\(20\\) rows, \\(35\\) logs on the bottom row",
+            "\\(15\\) rows, \\(29\\) logs on the bottom row"
+          ],
+          "answer": 0,
+          "hint": "This is an AP with a = 15, d = 1, S_n = 360. Find n.",
+          "solution": "\\(16\\) rows, \\(30\\) logs on the bottom row",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the AP representation of the stack.",
+              "work": "\\(a = 15, quad d = 1, quad S_n = 360\\)"
+            },
+            {
+              "explain": "Set up the sum formula and substitute the values.",
+              "work": "\\(360 = \\frac{n}{2}(2(15) + (n-1)(1))\\)"
+            },
+            {
+              "explain": "Multiply by 2 and form a quadratic equation.",
+              "work": "\\(720 = n(30 + n - 1) \\implies n^2 + 29n - 720 = 0\\)"
+            },
+            {
+              "explain": "Factor the quadratic equation.",
+              "work": "\\((n - 16)(n + 45) = 0\\)"
+            },
+            {
+              "explain": "State the number of rows and calculate the logs on the bottom row.",
+              "work": "\\(n = 16\\) rows. Bottom row logs: \\(T_{16} = a + 15d = 15 + 15(1) = 30\\) logs."
+            }
+          ]
+        },
+        {
+          "id": "y12a-1f-q15b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A stone dropped from the top of a cliff falls \\(5\\) metres in the first second, \\(15\\) metres in the second second, \\(25\\) metres in the third, and so on in an arithmetic sequence.\nIf the cliff is \\(180\\) metres high, find a formula for the distance fallen after \\(n\\) seconds, and calculate how long the stone takes to fall to the ground.",
+          "options": [
+            "Distance \\(= 5n^2\\) metres, Time \\(= 6\\) seconds",
+            "Distance \\(= 5n^2 + 5\\) metres, Time \\(= 6\\) seconds",
+            "Distance \\(= 5n^2\\) metres, Time \\(= 7.2\\) seconds",
+            "Distance \\(= 10n^2\\) metres, Time \\(= 4.24\\) seconds"
+          ],
+          "answer": 0,
+          "hint": "The distances in each second are 5, 15, 25, ... Sum this AP to find the distance formula.",
+          "solution": "Distance \\(= 5n^2\\) metres, Time \\(= 6\\) seconds",
+          "steps": [
+            {
+              "explain": "Identify the parameters of the AP representing distance fallen in each second.",
+              "work": "\\(a = 5, quad d = 10\\)"
+            },
+            {
+              "explain": "Find the formula for the sum of the first n terms.",
+              "work": "\\(S_n = \\frac{n}{2}(2(5) + (n-1)(10)) = \\frac{n}{2}(10 + 10n - 10) = 5n^2\\) metres"
+            },
+            {
+              "explain": "Set the distance equal to the cliff height to find the time.",
+              "work": "\\(5n^2 = 180 \\implies n^2 = 36\\)"
+            },
+            {
+              "explain": "Solve for the positive time value.",
+              "work": "\\(n = 6\\) seconds"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1f-q15c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A truck deposits loads of gravel at equally spaced intervals along a straight road.\nThe first load is deposited \\(24\\) km from the quarry, and the last is \\(12\\) km further (at \\(36\\) km).\nIf the truck travels \\(600\\) km in total during these deliveries (including its return to the quarry after the last delivery), how many trips does it make, and how far apart are the deposits?",
+          "options": [
+            "\\(9\\) trips, \\(1.50\\) km apart",
+            "\\(12\\) trips, \\(1.09\\) km apart",
+            "\\(10\\) trips, \\(1.20\\) km apart",
+            "\\(10\\) trips, \\(1.33\\) km apart"
+          ],
+          "answer": 3,
+          "hint": "The total distance is twice the sum of the distances of the deposits. S_n = n/2 * (a + l).",
+          "solution": "\\(10\\) trips, \\(1.33\\) km apart",
+          "steps": [
+            {
+              "explain": "State the total distance equation, noting each trip is a round trip.",
+              "work": "\\(\\text{Total Distance} = 2 \\times S_n = 600 \\implies S_n = 300\\)"
+            },
+            {
+              "explain": "Identify the first and last deposit distances.",
+              "work": "\\(a = 24\\) km, quad \\(l = 36\\) km"
+            },
+            {
+              "explain": "Use the first and last term sum formula to find the number of trips n.",
+              "work": "\\(300 = \\frac{n}{2}(24 + 36) \\implies 300 = 30n \\implies n = 10\\) trips"
+            },
+            {
+              "explain": "Calculate the interval between the deposits.",
+              "work": "Number of intervals = \\(n - 1 = 9\\). Distance between first and last = \\(12\\) km. Interval = \\(\\frac{12}{9} \\approx 1.33\\) km."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

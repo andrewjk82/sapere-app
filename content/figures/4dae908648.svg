@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" width="300" height="240" style="display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;">
+  <line x1="28" y1="128.0" x2="282.0" y2="128.0" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="186.8" y1="18" x2="186.8" y2="216.0" stroke="#64748b" stroke-width="1.5"/>
+  <path d="M43.9,128.0 L48.9,114.5 L54.0,109.0 L59.1,104.7 L64.1,101.1 L69.2,97.9 L74.2,95.0 L79.3,92.4 L84.4,89.9 L89.4,87.6 L94.5,85.4 L99.5,83.3 L104.6,81.3 L109.7,79.4 L114.7,77.6 L119.8,75.8 L124.8,74.1 L129.9,72.5 L135.0,70.9 L140.0,69.3 L145.1,67.8 L150.1,66.3 L155.2,64.8 L160.3,63.4 L165.3,62.0 L170.4,60.7 L175.4,59.3 L180.5,58.0 L185.6,56.7 L190.6,55.5 L195.7,54.2 L200.7,53.0 L205.8,51.8 L210.9,50.6 L215.9,49.5 L221.0,48.3 L226.0,47.2 L231.1,46.1 L236.2,45.0 L241.2,43.9 L246.3,42.8" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="43.9" cy="128.0" r="3.5" fill="#ef4444"/>
+  <circle cx="186.8" cy="62.0" r="3.5" fill="#f59e0b"/>
+  <text x="40" y="28" font-size="11" fill="#6366f1" font-weight="bold">y = √(9 + x)</text>
+  <text x="49.875" y="122" font-size="10" fill="#ef4444" font-weight="bold">(-9,0)</text>
+  <text x="40" y="230" font-size="10" fill="#64748b">x-int (−9,0), y-int (0,3)</text>
+</svg>

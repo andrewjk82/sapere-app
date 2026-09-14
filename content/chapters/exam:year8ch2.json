@@ -1,0 +1,72 @@
+{
+  "chapterId": "exam:year8ch2",
+  "title": "Exam Practice",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "exam:year8ch2",
+      "code": "",
+      "title": "Review of fractions and decimals",
+      "questions": [
+        {
+          "id": "y8-2h-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Arrange the following fractions in ascending order: \\\\(\\\\frac{1}{2}, \\\\frac{3}{5}, \\\\frac{2}{3}, \\\\frac{7}{10}, \\\\frac{3}{4}\\\\)",
+          "options": [
+            "$\\\\\\frac{1}{2}, \\\\frac{3}{5}, \\\\frac{2}{3}, \\\\frac{7}{10}, \\\\frac{3}{4}$",
+            "$\\\\\\frac{1}{2}, \\\\frac{3}{5}, \\\\frac{7}{10}, \\\\frac{2}{3}, \\\\frac{3}{4}$",
+            "$\\\\\\frac{3}{5}, \\\\frac{1}{2}, \\\\frac{2}{3}, \\\\frac{7}{10}, \\\\frac{3}{4}$",
+            "$\\\\\\frac{1}{2}, \\\\frac{2}{3}, \\\\frac{3}{5}, \\\\frac{3}{4}, \\\\frac{7}{10}$"
+          ],
+          "answer": 0,
+          "hint": "Convert all fractions to a common denominator.",
+          "solution": "Find the LCM of the denominators: 60.\n$\\frac{3}{5} = \\frac{36}{60}$\n$\\frac{7}{10} = \\frac{42}{60}$\n$\\frac{1}{2} = \\frac{30}{60}$\n$\\frac{2}{3} = \\frac{40}{60}$\n$\\frac{3}{4} = \\frac{45}{60}$\nOrder: $\\frac{1}{2}, \\frac{3}{5}, \\frac{2}{3}, \\frac{7}{10}, \\frac{3}{4}$.",
+          "steps": [
+            {
+              "explain": "Find a common denominator for the fractions to compare them, which is 60.",
+              "work": "\\\\(\\\\frac{30}{60}, \\\\frac{36}{60}, \\\\frac{40}{60}, \\\\frac{42}{60}, \\\\frac{45}{60}\\\\)"
+            },
+            {
+              "explain": "Order the fractions based on their numerators.",
+              "work": "\\\\(30 < 36 < 40 < 42 < 45\\\\)"
+            },
+            {
+              "explain": "Write the original fractions in ascending order.",
+              "work": "\\\\(\\\\frac{1}{2}, \\\\frac{3}{5}, \\\\frac{2}{3}, \\\\frac{7}{10}, \\\\frac{3}{4}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-2h-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Arrange the following fractions in ascending order: \\\\(\\\\frac{1}{4}, \\\\frac{7}{20}, \\\\frac{11}{25}, \\\\frac{3}{5}, \\\\frac{7}{10}\\\\)",
+          "options": [
+            "$\\\\\\frac{1}{4}, \\\\frac{7}{20}, \\\\frac{11}{25}, \\\\frac{3}{5}, \\\\frac{7}{10}$",
+            "$\\\\\\frac{1}{4}, \\\\frac{11}{25}, \\\\frac{7}{20}, \\\\frac{3}{5}, \\\\frac{7}{10}$",
+            "$\\\\\\frac{7}{20}, \\\\frac{1}{4}, \\\\frac{11}{25}, \\\\frac{3}{5}, \\\\frac{7}{10}$",
+            "$\\\\\\frac{1}{4}, \\\\frac{7}{20}, \\\\frac{3}{5}, \\\\frac{11}{25}, \\\\frac{7}{10}$"
+          ],
+          "answer": 0,
+          "hint": "Convert to a common denominator of 100.",
+          "solution": "LCM of denominators is 100.\n$\\frac{7}{20} = \\frac{35}{100}$\n$\\frac{3}{5} = \\frac{60}{100}$\n$\\frac{11}{25} = \\frac{44}{100}$\n$\\frac{1}{4} = \\frac{25}{100}$\n$\\frac{7}{10} = \\frac{70}{100}$\nOrder: $\\frac{1}{4}, \\frac{7}{20}, \\frac{11}{25}, \\frac{3}{5}, \\frac{7}{10}$.",
+          "steps": [
+            {
+              "explain": "Find a common denominator for the fractions to compare them, which is 100.",
+              "work": "\\\\(\\\\frac{25}{100}, \\\\frac{35}{100}, \\\\frac{44}{100}, \\\\frac{60}{100}, \\\\frac{70}{100}\\\\)"
+            },
+            {
+              "explain": "Order the fractions based on their numerators.",
+              "work": "\\\\(25 < 35 < 44 < 60 < 70\\\\)"
+            },
+            {
+              "explain": "Write the original fractions in ascending order.",
+              "work": "\\\\(\\\\frac{1}{4}, \\\\frac{7}{20}, \\\\frac{11}{25}, \\\\frac{3}{5}, \\\\frac{7}{10}\\\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1193 @@
+{
+  "chapterId": "exam:year9ch1b",
+  "title": "Exam Practice",
+  "year": "Year 9",
+  "topics": [
+    {
+      "topicId": "exam:year9ch1b",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y9-1b-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(11a\\) and \\(4a\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 11a, quad \\text{Term 2: } 4a\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have the same variable a raised to the same power (1).}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(6b\\) and \\(-2b\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 6b, quad \\text{Term 2: } -2b\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have the same variable b raised to the same power (1).}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(12m\\) and \\(5m\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 12m, quad \\text{Term 2: } 5m\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have the same variable m raised to the same power (1).}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(14p\\) and \\(5p\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 14p, quad \\text{Term 2: } 5p\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have the same variable p raised to the same power (1).}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(7p\\) and \\(-3q\\)?",
+          "options": [
+            "They are unlike terms because their variables or powers are different.",
+            "They are like terms because they share at least one letter.",
+            "They are like terms because their coefficients are similar.",
+            "They are unlike terms because one is positive and the other is negative."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 7p, quad \\text{Term 2: } -3q\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have different variables (p and q).}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(-6a\\) and \\(7b\\)?",
+          "options": [
+            "They are unlike terms because their variables or powers are different.",
+            "They are like terms because they share at least one letter.",
+            "They are like terms because their coefficients are similar.",
+            "They are unlike terms because one is positive and the other is negative."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } -6a, quad \\text{Term 2: } 7b\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have different variables (a and b).}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(4mn\\) and \\(7mn\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 4mn, quad \\text{Term 2: } 7mn\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have the same combination of variables (m and n) raised to the same powers.}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(3pq\\) and \\(-2pq\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 3pq, quad \\text{Term 2: } -2pq\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have the same combination of variables (p and q) raised to the same powers.}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(6ab\\) and \\(-7b\\)?",
+          "options": [
+            "They are unlike terms because their variables or powers are different.",
+            "They are like terms because they share at least one letter.",
+            "They are like terms because their coefficients are similar.",
+            "They are unlike terms because one is positive and the other is negative."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 6ab, quad \\text{Term 2: } -7b\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{One term has variables ab, while the other only has b.}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(4ab\\) and \\(5a\\)?",
+          "options": [
+            "They are unlike terms because their variables or powers are different.",
+            "They are like terms because they share at least one letter.",
+            "They are like terms because their coefficients are similar.",
+            "They are unlike terms because one is positive and the other is negative."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 4ab, quad \\text{Term 2: } 5a\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{One term has variables ab, while the other only has a.}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(11a^2\\) and \\(5a^2\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 11a^2, quad \\text{Term 2: } 5a^2\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have the same variable a raised to the same power (2).}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(6x^2\\) and \\(-7x^2\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 6x^2, quad \\text{Term 2: } -7x^2\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have the same variable x raised to the same power (2).}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1m",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(4b^2\\) and \\(-3b\\)?",
+          "options": [
+            "They are unlike terms because their variables or powers are different.",
+            "They are like terms because they share at least one letter.",
+            "They are like terms because their coefficients are similar.",
+            "They are unlike terms because one is positive and the other is negative."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 4b^2, quad \\text{Term 2: } -3b\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have the same variable b, but raised to different powers (2 and 1).}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1n",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(2y^2\\) and \\(2y\\)?",
+          "options": [
+            "They are unlike terms because their variables or powers are different.",
+            "They are like terms because they share at least one letter.",
+            "They are like terms because their coefficients are similar.",
+            "They are unlike terms because one is positive and the other is negative."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 2y^2, quad \\text{Term 2: } 2y\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "\\(\\text{They have the same variable y, but raised to different powers (2 and 1).}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1o",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(-5a^2b\\) and \\(9a^2b\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } -5a^2b, quad \\text{Term 2: } 9a^2b\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "They have the same combination of variables (a² and b) raised to the same powers."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1p",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(6mn^2\\) and \\(11mn^2\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 6mn^2, quad \\text{Term 2: } 11mn^2\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "They have the same combination of variables (m and n²) raised to the same powers."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1q",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(6l^2s\\) and \\(17ls^2\\)?",
+          "options": [
+            "They are unlike terms because their variables or powers are different.",
+            "They are like terms because they share at least one letter.",
+            "They are like terms because their coefficients are similar.",
+            "They are unlike terms because one is positive and the other is negative."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 6l^2s, quad \\text{Term 2: } 17ls^2\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "The variables have different powers: one has l²s, and the other has ls²."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1r",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(12d^2e\\) and \\(14de^2\\)?",
+          "options": [
+            "They are unlike terms because their variables or powers are different.",
+            "They are like terms because they share at least one letter.",
+            "They are like terms because their coefficients are similar.",
+            "They are unlike terms because one is positive and the other is negative."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 12d^2e, quad \\text{Term 2: } 14de^2\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "The variables have different powers: one has d²e, and the other has de²."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1s",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(-4x^2y^2\\) and \\(12x^2y^2\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } -4x^2y^2, quad \\text{Term 2: } 12x^2y^2\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "They have the same combination of variables (x² and y²) raised to the same powers."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1t",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(-5a^2bc^2\\) and \\(8a^2bc^2\\)?",
+          "options": [
+            "They are like terms because they have the same variables with the same powers.",
+            "They are unlike terms because their coefficients are different.",
+            "They are unlike terms because their powers are different.",
+            "They are like terms because their coefficients are equal."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } -5a^2bc^2, quad \\text{Term 2: } 8a^2bc^2\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "They have the same combination of variables (a², b, and c²) raised to the same powers."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q1u",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which statement is correct regarding the pair of terms: \\(6a^2bc\\) and \\(6a^2bc^2\\)?",
+          "options": [
+            "They are unlike terms because their variables or powers are different.",
+            "They are like terms because they share at least one letter.",
+            "They are like terms because their coefficients are similar.",
+            "They are unlike terms because one is positive and the other is negative."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the variable parts of both terms.",
+              "work": "\\(\\text{Term 1: } 6a^2bc, quad \\text{Term 2: } 6a^2bc^2\\)"
+            },
+            {
+              "explain": "Determine if the variables and their powers match exactly.",
+              "work": "The variables have different powers: one has a²bc, and the other has a²bc²."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1b-q112-1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A concrete curing lab monitors thermal expansion indexes. This analysis models energy dissipation as \\(E = 2.6a^2b -3.8ab^2 +3.9a^2b -3.4ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(6.5a^2b -7.2ab^2\\)",
+            "\\(-1.2a^2b +0.5ab^2\\)",
+            "\\(-0.7a^3b^3\\)",
+            "\\(6.5a^2b - (0.4)ab^2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((2.6a^2b +3.9a^2b) + (-3.8ab^2 -3.4ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(2.6 + 3.9 = 6.5, quad -3.8 + (-3.4) = -7.2\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(6.5a^2b -7.2ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A water purification plant measures filter efficiency across multiple stages. This analysis models energy dissipation as \\(E = 3.3a^2b -3.1ab^2 +4.1a^2b -3.6ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(7.4a^2b - (0.5)ab^2\\)",
+            "\\(0.2a^2b +0.5ab^2\\)",
+            "\\(7.4a^2b -6.7ab^2\\)",
+            "\\(0.7a^3b^3\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((3.3a^2b +4.1a^2b) + (-3.1ab^2 -3.6ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(3.3 + 4.1 = 7.4, quad -3.1 + (-3.6) = -6.7\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(7.4a^2b -6.7ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A retail supply chain optimizes inventory holding costs across warehouses. This analysis models energy dissipation as \\(E = 4.9a^2b -2.5ab^2 +6.9a^2b -4.3ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(5a^3b^3\\)",
+            "\\(11.8a^2b - (1.8)ab^2\\)",
+            "\\(11.8a^2b -6.8ab^2\\)",
+            "\\(2.4a^2b +2.6ab^2\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((4.9a^2b +6.9a^2b) + (-2.5ab^2 -4.3ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(4.9 + 6.9 = 11.8, quad -2.5 + (-4.3) = -6.8\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(11.8a^2b -6.8ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A water purification plant measures filter efficiency across multiple stages. This analysis models energy dissipation as \\(E = 2.0a^2b -2.1ab^2 +4.4a^2b -4.4ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(-0.1a^3b^3\\)",
+            "\\(-0.1a^2b +0.0ab^2\\)",
+            "\\(6.4a^2b - (2.3)ab^2\\)",
+            "\\(6.4a^2b -6.5ab^2\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((2.0a^2b +4.4a^2b) + (-2.1ab^2 -4.4ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(2.0 + 4.4 = 6.4, quad -2.1 + (-4.4) = -6.5\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(6.4a^2b -6.5ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-17",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. This analysis models energy dissipation as \\(E = 4.9a^2b -2.3ab^2 +4.3a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(3.4a^3b^3\\)",
+            "\\(2.6a^2b +0.8ab^2\\)",
+            "\\(9.2a^2b - (1.2)ab^2\\)",
+            "\\(9.2a^2b -5.8ab^2\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((4.9a^2b +4.3a^2b) + (-2.3ab^2 -3.5ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(4.9 + 4.3 = 9.2, quad -2.3 + (-3.5) = -5.8\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(9.2a^2b -5.8ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-21",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A chemical blending reactor processes a mixture of four active reagents. This analysis models energy dissipation as \\(E = 4.4a^2b -2.9ab^2 +6.0a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(3.3a^3b^3\\)",
+            "\\(10.4a^2b -7.1ab^2\\)",
+            "\\(1.5a^2b +1.8ab^2\\)",
+            "\\(10.4a^2b - (1.3)ab^2\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((4.4a^2b +6.0a^2b) + (-2.9ab^2 -4.2ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(4.4 + 6.0 = 10.4, quad -2.9 + (-4.2) = -7.1\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(10.4a^2b -7.1ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-25",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A wildlife conservation reserve tracks population models of three species. This analysis models energy dissipation as \\(E = 1.9a^2b -4.1ab^2 +4.1a^2b -4.4ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(-2.5a^3b^3\\)",
+            "\\(6.0a^2b -8.5ab^2\\)",
+            "\\(-2.2a^2b -0.3ab^2\\)",
+            "\\(6.0a^2b - (0.3)ab^2\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((1.9a^2b +4.1a^2b) + (-4.1ab^2 -4.4ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(1.9 + 4.1 = 6.0, quad -4.1 + (-4.4) = -8.5\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(6.0a^2b -8.5ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A rocket propulsion test cell evaluates thrust components in three spatial axes. This analysis models energy dissipation as \\(E = 2.0a^2b -1.7ab^2 +3.8a^2b -4.9ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(-0.8a^3b^3\\)",
+            "\\(5.8a^2b -6.6ab^2\\)",
+            "\\(0.3a^2b -1.1ab^2\\)",
+            "\\(5.8a^2b - (3.2)ab^2\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((2.0a^2b +3.8a^2b) + (-1.7ab^2 -4.9ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(2.0 + 3.8 = 5.8, quad -1.7 + (-4.9) = -6.6\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(5.8a^2b -6.6ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. This analysis models energy dissipation as \\(E = 5.8a^2b -3.1ab^2 +5.3a^2b -3.1ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(2.7a^2b +2.2ab^2\\)",
+            "\\(11.1a^2b -6.2ab^2\\)",
+            "\\(4.9a^3b^3\\)",
+            "\\(11.1a^2b - (0.0)ab^2\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((5.8a^2b +5.3a^2b) + (-3.1ab^2 -3.1ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(5.8 + 5.3 = 11.1, quad -3.1 + (-3.1) = -6.2\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(11.1a^2b -6.2ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-37",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A wildlife conservation reserve tracks population models of three species. This analysis models energy dissipation as \\(E = 2.9a^2b -2.5ab^2 +7.0a^2b -4.3ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(9.9a^2b -6.8ab^2\\)",
+            "\\(3.1a^3b^3\\)",
+            "\\(0.4a^2b +2.7ab^2\\)",
+            "\\(9.9a^2b - (1.8)ab^2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((2.9a^2b +7.0a^2b) + (-2.5ab^2 -4.3ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(2.9 + 7.0 = 9.9, quad -2.5 + (-4.3) = -6.8\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(9.9a^2b -6.8ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-41",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A logistics shipping port optimizes container stacking throughput. This analysis models energy dissipation as \\(E = 3.3a^2b -3.2ab^2 +5.8a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(2.4a^3b^3\\)",
+            "\\(9.1a^2b -6.7ab^2\\)",
+            "\\(9.1a^2b - (0.3)ab^2\\)",
+            "\\(0.1a^2b +2.3ab^2\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((3.3a^2b +5.8a^2b) + (-3.2ab^2 -3.5ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(3.3 + 5.8 = 9.1, quad -3.2 + (-3.5) = -6.7\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(9.1a^2b -6.7ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-45",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A machine learning model calculates the weighted loss function across multi-modal inputs. This analysis models energy dissipation as \\(E = 4.9a^2b -2.3ab^2 +3.7a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(2.6a^2b -0.5ab^2\\)",
+            "\\(8.6a^2b -6.5ab^2\\)",
+            "\\(2.1a^3b^3\\)",
+            "\\(8.6a^2b - (1.9)ab^2\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((4.9a^2b +3.7a^2b) + (-2.3ab^2 -4.2ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(4.9 + 3.7 = 8.6, quad -2.3 + (-4.2) = -6.5\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(8.6a^2b -6.5ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-49",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. This analysis models energy dissipation as \\(E = 4.8a^2b -3.7ab^2 +6.1a^2b -2.6ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(10.9a^2b - (1.1)ab^2\\)",
+            "\\(4.6a^3b^3\\)",
+            "\\(10.9a^2b -6.3ab^2\\)",
+            "\\(1.1a^2b +3.5ab^2\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((4.8a^2b +6.1a^2b) + (-3.7ab^2 -2.6ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(4.8 + 6.1 = 10.9, quad -3.7 + (-2.6) = -6.3\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(10.9a^2b -6.3ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-53",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A lithium-ion battery management system estimates state-of-charge decay rates. This analysis models energy dissipation as \\(E = 5.2a^2b -1.9ab^2 +2.8a^2b -3.4ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(8.0a^2b -5.3ab^2\\)",
+            "\\(3.3a^2b -0.6ab^2\\)",
+            "\\(2.7a^3b^3\\)",
+            "\\(8.0a^2b - (1.5)ab^2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((5.2a^2b +2.8a^2b) + (-1.9ab^2 -3.4ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(5.2 + 2.8 = 8.0, quad -1.9 + (-3.4) = -5.3\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(8.0a^2b -5.3ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-57",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A wildlife conservation reserve tracks population models of three species. This analysis models energy dissipation as \\(E = 3.8a^2b -1.6ab^2 +3.0a^2b -5.5ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(-0.3a^3b^3\\)",
+            "\\(6.8a^2b -7.1ab^2\\)",
+            "\\(6.8a^2b - (3.9)ab^2\\)",
+            "\\(2.2a^2b -2.5ab^2\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((3.8a^2b +3.0a^2b) + (-1.6ab^2 -5.5ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(3.8 + 3.0 = 6.8, quad -1.6 + (-5.5) = -7.1\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(6.8a^2b -7.1ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-61",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A solar power array calculates power generation across multiple panels. This analysis models energy dissipation as \\(E = 5.1a^2b -2.7ab^2 +5.8a^2b -2.8ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(10.9a^2b - (0.1)ab^2\\)",
+            "\\(10.9a^2b -5.5ab^2\\)",
+            "\\(2.4a^2b +3.0ab^2\\)",
+            "\\(5.4a^3b^3\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((5.1a^2b +5.8a^2b) + (-2.7ab^2 -2.8ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(5.1 + 5.8 = 10.9, quad -2.7 + (-2.8) = -5.5\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(10.9a^2b -5.5ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-65",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A rocket propulsion test cell evaluates thrust components in three spatial axes. This analysis models energy dissipation as \\(E = 6.0a^2b -3.0ab^2 +3.1a^2b -3.5ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(9.1a^2b - (0.5)ab^2\\)",
+            "\\(2.6a^3b^3\\)",
+            "\\(9.1a^2b -6.5ab^2\\)",
+            "\\(3.0a^2b -0.4ab^2\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((6.0a^2b +3.1a^2b) + (-3.0ab^2 -3.5ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(6.0 + 3.1 = 9.1, quad -3.0 + (-3.5) = -6.5\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(9.1a^2b -6.5ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-69",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A wildlife conservation reserve tracks population models of three species. This analysis models energy dissipation as \\(E = 5.0a^2b -4.2ab^2 +5.9a^2b -5.3ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(0.8a^2b +0.6ab^2\\)",
+            "\\(10.9a^2b - (1.1)ab^2\\)",
+            "\\(10.9a^2b -9.5ab^2\\)",
+            "\\(1.4a^3b^3\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((5.0a^2b +5.9a^2b) + (-4.2ab^2 -5.3ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(5.0 + 5.9 = 10.9, quad -4.2 + (-5.3) = -9.5\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(10.9a^2b -9.5ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-73",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A chemical blending reactor processes a mixture of four active reagents. This analysis models energy dissipation as \\(E = 2.7a^2b -3.3ab^2 +3.7a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(-1.7a^3b^3\\)",
+            "\\(-0.6a^2b -1.1ab^2\\)",
+            "\\(6.4a^2b -8.1ab^2\\)",
+            "\\(6.4a^2b - (1.5)ab^2\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((2.7a^2b +3.7a^2b) + (-3.3ab^2 -4.8ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(2.7 + 3.7 = 6.4, quad -3.3 + (-4.8) = -8.1\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(6.4a^2b -8.1ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-77",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An autonomous agricultural drone evaluates weed density across three fields. This analysis models energy dissipation as \\(E = 5.3a^2b -3.9ab^2 +6.4a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(11.7a^2b -8.7ab^2\\)",
+            "\\(11.7a^2b - (0.9)ab^2\\)",
+            "\\(3.0a^3b^3\\)",
+            "\\(1.4a^2b +1.6ab^2\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((5.3a^2b +6.4a^2b) + (-3.9ab^2 -4.8ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(5.3 + 6.4 = 11.7, quad -3.9 + (-4.8) = -8.7\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(11.7a^2b -8.7ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-81",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A chemical blending reactor processes a mixture of four active reagents. This analysis models energy dissipation as \\(E = 3.8a^2b -3.6ab^2 +3.4a^2b -5.4ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(0.2a^2b -2.0ab^2\\)",
+            "\\(7.2a^2b - (1.8)ab^2\\)",
+            "\\(7.2a^2b -9.0ab^2\\)",
+            "\\(-1.8a^3b^3\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((3.8a^2b +3.4a^2b) + (-3.6ab^2 -5.4ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(3.8 + 3.4 = 7.2, quad -3.6 + (-5.4) = -9.0\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(7.2a^2b -9.0ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-85",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A wildlife conservation reserve tracks population models of three species. This analysis models energy dissipation as \\(E = 3.9a^2b -3.3ab^2 +3.0a^2b -3.3ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(0.6a^2b -0.3ab^2\\)",
+            "\\(6.9a^2b -6.6ab^2\\)",
+            "\\(6.9a^2b - (0.0)ab^2\\)",
+            "\\(0.3a^3b^3\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((3.9a^2b +3.0a^2b) + (-3.3ab^2 -3.3ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(3.9 + 3.0 = 6.9, quad -3.3 + (-3.3) = -6.6\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(6.9a^2b -6.6ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-89",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A solar power array calculates power generation across multiple panels. This analysis models energy dissipation as \\(E = 4.1a^2b -3.0ab^2 +7.1a^2b -4.2ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(1.1a^2b +2.9ab^2\\)",
+            "\\(4a^3b^3\\)",
+            "\\(11.2a^2b - (1.2)ab^2\\)",
+            "\\(11.2a^2b -7.2ab^2\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((4.1a^2b +7.1a^2b) + (-3.0ab^2 -4.2ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(4.1 + 7.1 = 11.2, quad -3.0 + (-4.2) = -7.2\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(11.2a^2b -7.2ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-93",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A fiber-optic network routing node monitors signal attenuation across channels. This analysis models energy dissipation as \\(E = 4.6a^2b -4.1ab^2 +7.2a^2b -4.8ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(11.8a^2b - (0.7)ab^2\\)",
+            "\\(2.9a^3b^3\\)",
+            "\\(11.8a^2b -8.9ab^2\\)",
+            "\\(0.5a^2b +2.4ab^2\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((4.6a^2b +7.2a^2b) + (-4.1ab^2 -4.8ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(4.6 + 7.2 = 11.8, quad -4.1 + (-4.8) = -8.9\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(11.8a^2b -8.9ab^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-1b-q112-97",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A wind turbine farm calculates aerodynamic drag coefficients on different blade designs. This analysis models energy dissipation as \\(E = 2.9a^2b -3.5ab^2 +4.4a^2b -3.2ab^2\\). Simplify this expression by collecting like terms.",
+          "options": [
+            "\\(7.3a^2b - (0.3)ab^2\\)",
+            "\\(7.3a^2b -6.7ab^2\\)",
+            "\\(0.6a^3b^3\\)",
+            "\\(-0.6a^2b +1.2ab^2\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Group the like terms in the expression together.",
+              "work": "\\((2.9a^2b +4.4a^2b) + (-3.5ab^2 -3.2ab^2)\\)"
+            },
+            {
+              "explain": "Add or subtract the coefficients of the grouped terms.",
+              "work": "\\(2.9 + 4.4 = 7.3, quad -3.5 + (-3.2) = -6.7\\)"
+            },
+            {
+              "explain": "Write the final simplified expression.",
+              "work": "\\(7.3a^2b -6.7ab^2\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

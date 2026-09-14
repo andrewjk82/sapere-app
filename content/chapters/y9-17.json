@@ -1,0 +1,1021 @@
+{
+  "chapterId": "y9-17",
+  "title": "Chapter 17: Quadratic equations",
+  "year": "2022",
+  "topics": [
+    {
+      "topicId": "y9-17a",
+      "code": "17A",
+      "title": "Solution of simple quadratic equations",
+      "questions": [
+        {
+          "id": "sg2022-q2a",
+          "type": "mc",
+          "stem": "Solve \\((x-2)(x+7)=0\\).",
+          "options": [
+            "\\(x=2\\) or \\(x=7\\)",
+            "\\(x=14\\)",
+            "\\(x=-2\\) or \\(x=7\\)",
+            "\\(x=2\\) or \\(x=-7\\)"
+          ],
+          "answer": 3,
+          "hint": "If a product of two factors is zero, at least one factor must be zero.",
+          "steps": [
+            {
+              "explain": "Set each factor equal to zero (the null factor law).",
+              "work": "\\(x-2=0\\) or \\(x+7=0\\)"
+            },
+            {
+              "explain": "Solve each mini-equation.",
+              "work": "\\(x=2\\) or \\(x=-7\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "sg2022-q6b",
+          "type": "multipart",
+          "stem": "Solve: (i) \\(\\dfrac{x}{20}=\\dfrac{3}{x-4}\\)  (ii) \\(\\dfrac{x}{x-2}-\\dfrac{x+1}{x+4}=1\\)",
+          "parts": [
+            {
+              "id": "sg2022-q6b-i",
+              "type": "mc",
+              "stem": "Solve \\(\\dfrac{x}{20}=\\dfrac{3}{x-4}\\).",
+              "options": [
+                "\\(x=10\\) or \\(x=6\\)",
+                "\\(x=10\\) or \\(x=-6\\)",
+                "\\(x=6\\) or \\(x=-10\\)",
+                "\\(x=15\\)"
+              ],
+              "answer": 1,
+              "hint": "Cross-multiply to clear the fractions — this produces a quadratic equation.",
+              "steps": [
+                {
+                  "explain": "Cross-multiply to clear both denominators.",
+                  "work": "\\(x(x-4)=3(20)\\)"
+                },
+                {
+                  "explain": "Expand and rearrange into standard quadratic form.",
+                  "work": "\\(x^2-4x=60 \\Rightarrow x^2-4x-60=0\\)"
+                },
+                {
+                  "explain": "Factorise: find two numbers that multiply to \\(-60\\) and add to \\(-4\\) — these are \\(-10\\) and \\(6\\).",
+                  "work": "\\((x-10)(x+6)=0\\)"
+                },
+                {
+                  "explain": "Apply the null factor law.",
+                  "work": "\\(x=10\\) or \\(x=-6\\)"
+                }
+              ],
+              "meta": {
+                "source": "Sydney Grammar School Form III Annual Examination 2022",
+                "school": "Sydney Grammar School",
+                "examType": "Annual Examination",
+                "grade": "9"
+              }
+            },
+            {
+              "id": "sg2022-q6b-ii",
+              "type": "mc",
+              "stem": "Solve \\(\\dfrac{x}{x-2}-\\dfrac{x+1}{x+4}=1\\).",
+              "options": [
+                "\\(x=5\\) or \\(x=2\\)",
+                "\\(x=5\\) or \\(x=-2\\)",
+                "\\(x=-5\\) or \\(x=2\\)",
+                "\\(x=10\\)"
+              ],
+              "answer": 1,
+              "hint": "Multiply every term by \\((x-2)(x+4)\\) to clear the fractions.",
+              "steps": [
+                {
+                  "explain": "Multiply every term by the common denominator \\((x-2)(x+4)\\).",
+                  "work": "\\(x(x+4)-(x+1)(x-2)=(x-2)(x+4)\\)"
+                },
+                {
+                  "explain": "Expand each product.",
+                  "work": "\\(x^2+4x-(x^2-x-2)=x^2+2x-8\\)"
+                },
+                {
+                  "explain": "Simplify the left-hand side.",
+                  "work": "\\(x^2+4x-x^2+x+2=5x+2\\)"
+                },
+                {
+                  "explain": "Set the simplified equation and rearrange into standard quadratic form.",
+                  "work": "\\(5x+2=x^2+2x-8 \\Rightarrow 0=x^2-3x-10\\)"
+                },
+                {
+                  "explain": "Factorise: find two numbers that multiply to \\(-10\\) and add to \\(-3\\) — these are \\(-5\\) and \\(2\\).",
+                  "work": "\\((x-5)(x+2)=0 \\Rightarrow x=5\\) or \\(x=-2\\)"
+                }
+              ],
+              "meta": {
+                "source": "Sydney Grammar School Form III Annual Examination 2022",
+                "school": "Sydney Grammar School",
+                "examType": "Annual Examination",
+                "grade": "9"
+              }
+            }
+          ],
+          "answer": "1",
+          "hint": "Cross-multiply to clear the fractions — this produces a quadratic equation.",
+          "steps": [
+            {
+              "explain": "Cross-multiply to clear both denominators.",
+              "work": "\\(x(x-4)=3(20)\\)"
+            },
+            {
+              "explain": "Expand and rearrange into standard quadratic form.",
+              "work": "\\(x^2-4x=60 \\Rightarrow x^2-4x-60=0\\)"
+            },
+            {
+              "explain": "Factorise: find two numbers that multiply to \\(-60\\) and add to \\(-4\\) — these are \\(-10\\) and \\(6\\).",
+              "work": "\\((x-10)(x+6)=0\\)"
+            },
+            {
+              "explain": "Apply the null factor law.",
+              "work": "\\(x=10\\) or \\(x=-6\\)"
+            }
+          ],
+          "inactive": true,
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-killara-24-t4-pb2-q5a",
+          "type": "mc",
+          "stem": "Solve the following quadratic equation using factorisation: \\(x^2 - 5x = 0\\)",
+          "options": [
+            "\\(x = 0, x = 5\\)",
+            "\\(x = 0, x = -5\\)",
+            "\\(x = 5\\)",
+            "\\(x = -5\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Factor out the common term \\(x\\).",
+              "work": "x(x - 5) = 0"
+            },
+            {
+              "explain": "Apply the null factor law.",
+              "work": "x = 0 \\text{ or } x - 5 = 0 \\\\ x = 0, x = 5"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-killara-24-t4-pb2-q5b",
+          "type": "mc",
+          "stem": "Solve the following quadratic equation using factorisation: \\(x^2 + 7x + 10 = 0\\)",
+          "options": [
+            "\\(x = 2, x = 5\\)",
+            "\\(x = 2, x = -5\\)",
+            "\\(x = -2, x = 5\\)",
+            "\\(x = -2, x = -5\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Find two numbers that multiply to 10 and add to 7. These are 2 and 5.",
+              "work": "(x + 2)(x + 5) = 0"
+            },
+            {
+              "explain": "Apply the null factor law.",
+              "work": "x + 2 = 0 \\implies x = -2 \\\\ x + 5 = 0 \\implies x = -5"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-17b",
+      "code": "17B",
+      "title": "Solution of quadratic equations when the coefficient of x^2 is not 1",
+      "questions": [
+        {
+          "id": "y9-killara-24-t4-pb2-q5c",
+          "type": "mc",
+          "stem": "Solve the following quadratic equation using factorisation: \\(2x^2 - 10x + 12 = 0\\)",
+          "options": [
+            "\\(x = 2, x = 3\\)",
+            "\\(x = -2, x = -3\\)",
+            "\\(x = -1, x = -6\\)",
+            "\\(x = 1, x = 6\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Factor out the common factor 2.",
+              "work": "2(x^2 - 5x + 6) = 0"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "x^2 - 5x + 6 = 0"
+            },
+            {
+              "explain": "Factor the monic quadratic. Numbers that multiply to 6 and add to -5 are -2 and -3.",
+              "work": "(x - 2)(x - 3) = 0"
+            },
+            {
+              "explain": "Apply the null factor law.",
+              "work": "x = 2, x = 3"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-17d",
+      "code": "17D",
+      "title": "Applications of quadratic equations",
+      "questions": [
+        {
+          "id": "sg2022-q6c",
+          "type": "multipart",
+          "stem": "\\(ABCD\\) is a square of side length \\(6\\) metres and \\(EFGC\\) is a rectangle, with \\(D\\), \\(C\\), \\(G\\) collinear and \\(EF=BE=x\\) metres. The composite area is \\(223\\text{ m}^2\\).",
+          "figure": {
+            "svg": "fig:d00eafdb50"
+          },
+          "parts": [
+            {
+              "id": "sg2022-q6c-i",
+              "type": "mc",
+              "stem": "Create a quadratic equation relating the area of the composite shape to \\(x\\).",
+              "options": [
+                "\\(x^2+6x-223=0\\)",
+                "\\(x^2-6x-187=0\\)",
+                "\\(x^2+12x-187=0\\)",
+                "\\(x^2+6x-187=0\\)"
+              ],
+              "answer": 3,
+              "hint": "The rectangle \\(EFGC\\) has width \\(EF=x\\) and height \\(CE=CB+BE=6+x\\). Add its area to the square's area.",
+              "steps": [
+                {
+                  "explain": "The rectangle \\(EFGC\\) has width \\(EF=x\\) and height \\(CE=CB+BE=6+x\\) (since \\(CB\\) is a side of the square).",
+                  "work": "\\(\\text{Area}(EFGC)=x(6+x)=x^2+6x\\)",
+                  "figure": {
+                    "svg": "fig:6fb82c6a25"
+                  }
+                },
+                {
+                  "explain": "The square has area \\(6^2=36\\text{ m}^2\\). Add the two areas and set the total equal to \\(223\\).",
+                  "work": "\\(36+x^2+6x=223\\)",
+                  "figure": {
+                    "svg": "fig:2bd999362e"
+                  }
+                },
+                {
+                  "explain": "Rearrange into standard quadratic form.",
+                  "work": "\\(x^2+6x+36-223=0 \\Rightarrow x^2+6x-187=0\\)"
+                }
+              ],
+              "meta": {
+                "source": "Sydney Grammar School Form III Annual Examination 2022",
+                "school": "Sydney Grammar School",
+                "examType": "Annual Examination",
+                "grade": "9"
+              }
+            },
+            {
+              "id": "sg2022-q6c-ii",
+              "type": "mc",
+              "stem": "Solve your equation from the previous part, \\(x^2+6x-187=0\\), to find the value of \\(x\\).",
+              "options": [
+                "\\(x=13\\)",
+                "\\(x=-17\\)",
+                "\\(x=17\\)",
+                "\\(x=11\\)"
+              ],
+              "answer": 3,
+              "hint": "Use the quadratic formula, then reject any negative solution since \\(x\\) is a length.",
+              "steps": [
+                {
+                  "explain": "Apply the quadratic formula with \\(a=1\\), \\(b=6\\), \\(c=-187\\).",
+                  "work": "\\(x=\\dfrac{-6\\pm\\sqrt{6^2-4(1)(-187)}}{2(1)}=\\dfrac{-6\\pm\\sqrt{36+748}}{2}\\)"
+                },
+                {
+                  "explain": "Simplify the square root.",
+                  "work": "\\(\\sqrt{784}=28 \\Rightarrow x=\\dfrac{-6\\pm28}{2}\\)"
+                },
+                {
+                  "explain": "The two solutions are \\(x=11\\) and \\(x=-17\\). Since \\(x\\) is a length, reject the negative solution.",
+                  "work": "\\(x=11\\) or \\(x=-17 \\Rightarrow x=11\\) (length must be positive)"
+                }
+              ],
+              "meta": {
+                "source": "Sydney Grammar School Form III Annual Examination 2022",
+                "school": "Sydney Grammar School",
+                "examType": "Annual Examination",
+                "grade": "9"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-killara-24-t4-pb2-q9",
+          "type": "mc",
+          "stem": "The area of a parallelogram is \\(70 \\text{ cm}^2\\). The length of its base is \\(4 \\text{ cm}\\) longer than twice its perpendicular height. Let \\(x\\) be the perpendicular height. Find the length of the base.",
+          "options": [
+            "\\(12 \\text{ cm}\\)",
+            "\\(5 \\text{ cm}\\)",
+            "\\(10 \\text{ cm}\\)",
+            "\\(14 \\text{ cm}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "The base is \\(4\\text{ cm}\\) longer than twice the perpendicular height \\(x\\), so the base is \\(2x + 4\\).",
+              "work": "<svg viewBox=\"0 0 310 180\" width=\"310\" height=\"180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(20,20)\"><polygon points=\"60,0 260,0 200,110 0,110\" fill=\"#fef3c7\" fill-opacity=\"0.55\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"60\" y1=\"0\" x2=\"60\" y2=\"110\" stroke=\"#059669\" stroke-width=\"1.6\" stroke-dasharray=\"4 3\"/><rect x=\"51\" y=\"101\" width=\"9\" height=\"9\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"1\"/><text x=\"100.0\" y=\"132.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Base = 2x + 4</text><text x=\"50.0\" y=\"59.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">height = x</text><text x=\"130.0\" y=\"55.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"12\" font-weight=\"700\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">Area = 70 cm²</text></g></svg>\n\n\\(\\text{Base} = 2x + 4\\)"
+            },
+            {
+              "explain": "Set up the area equation (Area = base \\(\\times\\) height).",
+              "work": "x(2x + 4) = 70"
+            },
+            {
+              "explain": "Expand and arrange into a standard quadratic equation.",
+              "work": "2x^2 + 4x - 70 = 0"
+            },
+            {
+              "explain": "Divide by 2 to simplify.",
+              "work": "x^2 + 2x - 35 = 0"
+            },
+            {
+              "explain": "Factorise the quadratic.",
+              "work": "(x + 7)(x - 5) = 0"
+            },
+            {
+              "explain": "Since height \\(x\\) must be positive, \\(x = 5\\).",
+              "work": "x = 5"
+            },
+            {
+              "explain": "Calculate the base length.",
+              "work": "\\text{Base} = 2(5) + 4 = 14 \\text{ cm}"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-17e",
+      "code": "17E",
+      "title": "Quadratic equations",
+      "questions": [
+        {
+          "id": "y9-killara-24-t4-pc-t2q3a",
+          "type": "mc",
+          "stem": "Solve the following equation: \\(2x^2 + 3x + 1 = 0\\)",
+          "options": [
+            "\\(x = -\\frac{1}{2}, x = -1\\)",
+            "\\(x = -2, x = -1\\)",
+            "\\(x = 1, x = -\\frac{1}{2}\\)",
+            "\\(x = \\frac{1}{2}, x = 1\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Factorise the quadratic.",
+              "work": "(2x + 1)(x + 1) = 0"
+            },
+            {
+              "explain": "Solve for x.",
+              "work": "x = -\\frac{1}{2}, x = -1"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-killara-24-t4-pc-t2q3b",
+          "type": "mc",
+          "stem": "Solve the following equation: \\(\\frac{x - 2}{3} = \\frac{5}{x}\\)",
+          "options": [
+            "\\(x = -5, x = 3\\)",
+            "\\(x = 5, x = 3\\)",
+            "\\(x = 5, x = -3\\)",
+            "\\(x = 15, x = -1\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Cross-multiply to remove fractions.",
+              "work": "x(x - 2) = 15"
+            },
+            {
+              "explain": "Expand and rearrange.",
+              "work": "x^2 - 2x - 15 = 0"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "(x - 5)(x + 3) = 0"
+            },
+            {
+              "explain": "Solve for x.",
+              "work": "x = 5, x = -3"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-killara-24-t4-pc-t2q3c",
+          "type": "mc",
+          "stem": "Solve the following equation: \\(\\frac{3}{1 - a} - \\frac{2}{1 + a} = 1\\)",
+          "options": [
+            "\\(a = 1, a = -1\\)",
+            "\\(a = 0, a = 1\\)",
+            "\\(a = 0, a = 5\\)",
+            "\\(a = 0, a = -5\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Multiply the entire equation by the common denominator \\((1 - a)(1 + a)\\).",
+              "work": "3(1 + a) - 2(1 - a) = (1 - a)(1 + a)"
+            },
+            {
+              "explain": "Expand all terms.",
+              "work": "3 + 3a - 2 + 2a = 1 - a^2"
+            },
+            {
+              "explain": "Simplify the left side.",
+              "work": "5a + 1 = 1 - a^2"
+            },
+            {
+              "explain": "Rearrange to form a quadratic equation.",
+              "work": "a^2 + 5a = 0"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "a(a + 5) = 0"
+            },
+            {
+              "explain": "Solve for a.",
+              "work": "a = 0, a = -5"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-killara-24-t4-pc-t2q6",
+          "type": "mc",
+          "stem": "In the diagram below, \\(ABCD\\) is a rectangle in which \\(AB = 21 \\text{ cm}\\). The square \\(AXYD\\) is removed and the remaining rectangle has an area of \\(80 \\text{ cm}^2\\). Let \\(x\\) be the length of \\(BC\\). Calculate all the possible lengths of \\(BC\\).",
+          "figure": {
+            "svg": "fig:45b3e634b4"
+          },
+          "options": [
+            "5 cm or 16 cm",
+            "8 cm or 10 cm",
+            "4 cm or 20 cm",
+            "10 cm or 11 cm"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Since \\(AXYD\\) is a square and \\(BC = AD = x\\), the side lengths of the square are \\(x\\). So, \\(AX = x\\).",
+              "work": "AD = x, AX = x"
+            },
+            {
+              "explain": "The length of \\(XB\\) is the total length \\(AB\\) minus \\(AX\\).",
+              "work": "XB = 21 - x"
+            },
+            {
+              "explain": "The remaining rectangle \\(XBCY\\) has dimensions \\(x\\) by \\((21 - x)\\). Set up the area equation.",
+              "work": "x(21 - x) = 80"
+            },
+            {
+              "explain": "Expand and rearrange into a standard quadratic equation.",
+              "work": "21x - x^2 = 80 \\implies x^2 - 21x + 80 = 0"
+            },
+            {
+              "explain": "Factorise the quadratic.",
+              "work": "(x - 5)(x - 16) = 0"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "x = 5 \\text{ or } x = 16"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-killara-24-t4-pc-t2q8",
+          "type": "mc",
+          "stem": "Solve the following equation by making an appropriate substitution: \\(x^{2/3} = 7x^{1/3} - 12\\)",
+          "options": [
+            "\\(x = 9, x = 16\\)",
+            "\\(x = 3, x = 4\\)",
+            "\\(x = 27, x = 64\\)",
+            "\\(x = -27, x = -64\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Notice that \\(x^{2/3} = (x^{1/3})^2\\). This means the equation is \"hiding\" a quadratic — make the substitution \\(u = x^{1/3}\\) to turn it into a standard quadratic in \\(u\\).",
+              "work": "\\(u = x^{1/3} \\implies u^2 = x^{2/3}\\)"
+            },
+            {
+              "explain": "Rewrite the original equation in terms of \\(u\\) and rearrange into standard quadratic form.",
+              "work": "\\(u^2 = 7u - 12 \\implies u^2 - 7u + 12 = 0\\)"
+            },
+            {
+              "explain": "Factorise: find two numbers that multiply to \\(12\\) and add to \\(-7\\) — these are \\(-3\\) and \\(-4\\).",
+              "work": "\\((u - 3)(u - 4) = 0 \\implies u = 3 \\text{ or } u = 4\\)"
+            },
+            {
+              "explain": "Substitute back \\(x^{1/3}\\) for \\(u\\) and cube both sides to solve for \\(x\\).",
+              "work": "\\(x^{1/3} = 3 \\implies x = 3^3 = 27\\)"
+            },
+            {
+              "explain": "Solve for the second value the same way.",
+              "work": "\\(x^{1/3} = 4 \\implies x = 4^3 = 64\\)"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q6b",
+          "type": "mc",
+          "stem": "Solve the following equation: \\(49 - x^2 = 0\\)",
+          "options": [
+            "\\(x = 7\\)",
+            "\\(x = \\pm 7\\)",
+            "\\(x = -7\\)",
+            "\\(x = 49\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Factorise using the difference of two squares.",
+              "work": "(7 - x)(7 + x) = 0"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "x = 7 \\text{ or } x = -7"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q6c",
+          "type": "mc",
+          "stem": "Solve the following equation: \\(y^2 + 2y - 15 = 0\\)",
+          "options": [
+            "\\(y = -5, y = 3\\)",
+            "\\(y = 5, y = -3\\)",
+            "\\(y = -15, y = 1\\)",
+            "\\(y = 15, y = -1\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Factorise the quadratic.",
+              "work": "(y + 5)(y - 3) = 0"
+            },
+            {
+              "explain": "Solve for \\(y\\).",
+              "work": "y = -5, y = 3"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q6d",
+          "type": "mc",
+          "stem": "Solve the following equation: \\(5x^2 - 2x - 3 = 0\\)",
+          "options": [
+            "\\(x = 1, x = \\frac{3}{5}\\)",
+            "\\(x = 1, x = -\\frac{3}{5}\\)",
+            "\\(x = -1, x = \\frac{3}{5}\\)",
+            "\\(x = -1, x = -\\frac{3}{5}\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Find numbers that multiply to \\(-15\\) and add to \\(-2\\).",
+              "work": "-5 \\text{ and } 3"
+            },
+            {
+              "explain": "Split the middle term.",
+              "work": "5x^2 - 5x + 3x - 3 = 0"
+            },
+            {
+              "explain": "Factorise by grouping.",
+              "work": "5x(x - 1) + 3(x - 1) = 0 \\implies (5x + 3)(x - 1) = 0"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "x = -\\frac{3}{5}, x = 1"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q7a",
+          "type": "mc",
+          "stem": "For the quadratic function \\(y = 2x^2 + 5x - 3\\), find the x-intercepts.",
+          "options": [
+            "\\(x = \\frac{1}{2}, x = -3\\)",
+            "\\(x = -\\frac{1}{2}, x = 3\\)",
+            "\\(x = 1, x = -6\\)",
+            "\\(x = 2, x = -3\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set \\(y = 0\\) and solve the quadratic.",
+              "work": "2x^2 + 5x - 3 = 0"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "(2x - 1)(x + 3) = 0"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "x = \\frac{1}{2}, x = -3"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q7b",
+          "type": "mc",
+          "stem": "For the quadratic function \\(y = 2x^2 + 5x - 3\\), find the y-intercept.",
+          "options": [
+            "\\(y = -1.5\\)",
+            "\\(y = 3\\)",
+            "\\(y = 0\\)",
+            "\\(y = -3\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Set \\(x = 0\\).",
+              "work": "y = 2(0)^2 + 5(0) - 3"
+            },
+            {
+              "explain": "Calculate \\(y\\).",
+              "work": "y = -3"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q7c",
+          "type": "mc",
+          "stem": "For the quadratic function \\(y = 2x^2 + 5x - 3\\), find the coordinates of the vertex.",
+          "options": [
+            "\\((-\\frac{5}{2}, -\\frac{49}{4})\\)",
+            "\\((\\frac{5}{4}, \\frac{49}{8})\\)",
+            "\\((-\\frac{5}{4}, -\\frac{49}{8})\\)",
+            "\\((-\\frac{5}{4}, -\\frac{25}{8})\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Find the x-coordinate of the vertex using \\(x = -\\frac{b}{2a}\\).",
+              "work": "x = -\\frac{5}{2(2)} = -\\frac{5}{4}"
+            },
+            {
+              "explain": "Substitute \\(x = -\\frac{5}{4}\\) back into the equation to find \\(y\\).",
+              "work": "y = 2(-\\frac{5}{4})^2 + 5(-\\frac{5}{4}) - 3"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "y = 2(\\frac{25}{16}) - \\frac{25}{4} - 3 = \\frac{50}{16} - \\frac{100}{16} - \\frac{48}{16} = -\\frac{98}{16} = -\\frac{49}{8}"
+            },
+            {
+              "explain": "State the coordinates.",
+              "work": "(-\\frac{5}{4}, -\\frac{49}{8})"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q7d",
+          "type": "mc",
+          "stem": "Hence identify the correct description of the sketch of the parabola \\(y = 2x^2 + 5x - 3\\) showing all important features.",
+          "options": [
+            "A parabola opening upwards with x-intercepts at \\(3\\) and \\(-\\frac{1}{2}\\), and a vertex at \\((\\frac{5}{4}, -\\frac{49}{8})\\).",
+            "A parabola opening upwards with x-intercepts at \\(-3\\) and \\(\\frac{1}{2}\\), and a vertex at \\((-\\frac{5}{4}, -\\frac{49}{8})\\).",
+            "A parabola opening downwards with x-intercepts at \\(-3\\) and \\(\\frac{1}{2}\\), and a vertex at \\((-\\frac{5}{4}, \\frac{49}{8})\\).",
+            "A parabola opening upwards with x-intercepts at \\(-3\\) and \\(\\frac{1}{2}\\), and a vertex at \\((-\\frac{5}{2}, -\\frac{49}{4})\\)."
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The sketch is a parabola opening upwards (since \\(a=2 > 0\\)).",
+              "figure": {
+                "svg": "fig:c3e348c922"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t4q1",
+          "type": "multipart",
+          "stem": "For the parabola $y = x^2 - 2x - 8$ find:",
+          "figure": {
+            "svg": "fig:23db0a70ea"
+          },
+          "parts": [
+            {
+              "id": "y9-willoughby-19-t4q1a",
+              "type": "mc",
+              "stem": "The y-intercept",
+              "options": [
+                "\\(-2\\)",
+                "\\(0\\)",
+                "\\(8\\)",
+                "\\(-8\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "The $y$-intercept is where the curve crosses the $y$-axis, i.e. where $x=0$. Substitute $x=0$ into the equation.",
+                  "work": "<svg viewBox=\"0 0 242 362\" width=\"242\" height=\"362\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(16,16)\"><line x1=\"0\" y1=\"150\" x2=\"210\" y2=\"150\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"0\" x2=\"80\" y2=\"330\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"204.0\" y=\"144.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#94a3b8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">x</text><text x=\"88.0\" y=\"10.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#94a3b8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">y</text><path d=\"M 26.0,24.0 L 27.8,38.2 L 29.6,52.1 L 31.4,65.6 L 33.2,78.7 L 35.0,91.5 L 36.8,103.9 L 38.6,116.0 L 40.4,127.7 L 42.2,139.0 L 44.0,150.0 L 45.8,160.6 L 47.6,170.9 L 49.4,180.8 L 51.2,190.3 L 53.0,199.5 L 54.8,208.3 L 56.6,216.8 L 58.4,224.9 L 60.2,232.6 L 62.0,240.0 L 63.8,247.0 L 65.6,253.7 L 67.4,260.0 L 69.2,265.9 L 71.0,271.5 L 72.8,276.7 L 74.6,281.6 L 76.4,286.1 L 78.2,290.2 L 80.0,294.0 L 81.8,297.4 L 83.6,300.5 L 85.4,303.2 L 87.2,305.5 L 89.0,307.5 L 90.8,309.1 L 92.6,310.4 L 94.4,311.3 L 96.2,311.8 L 98.0,312.0 L 99.8,311.8 L 101.6,311.3 L 103.4,310.4 L 105.2,309.1 L 107.0,307.5 L 108.8,305.5 L 110.6,303.2 L 112.4,300.5 L 114.2,297.4 L 116.0,294.0 L 117.8,290.2 L 119.6,286.1 L 121.4,281.6 L 123.2,276.7 L 125.0,271.5 L 126.8,265.9 L 128.6,260.0 L 130.4,253.7 L 132.2,247.0 L 134.0,240.0 L 135.8,232.6 L 137.6,224.9 L 139.4,216.8 L 141.2,208.3 L 143.0,199.5 L 144.8,190.3 L 146.6,180.8 L 148.4,170.9 L 150.2,160.6 L 152.0,150.0 L 153.8,139.0 L 155.6,127.7 L 157.4,116.0 L 159.2,103.9 L 161.0,91.5 L 162.8,78.7 L 164.6,65.6 L 166.4,52.1 L 168.2,38.2 L 170.0,24.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"44.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"152.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"80.0\" cy=\"294.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"98.0\" cy=\"312.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"44.0\" y=\"168.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(-2,0)</text><text x=\"152.0\" y=\"168.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(4,0)</text><text x=\"70.0\" y=\"288.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">(0,-8)</text><text x=\"108.0\" y=\"328.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#7c2d12\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">V(1,-9)</text><line x1=\"98.0\" y1=\"0\" x2=\"98.0\" y2=\"330\" stroke=\"#059669\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><text x=\"104.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">x=1</text></g></svg>\n\n\\(y = (0)^2 - 2(0) - 8\\)"
+                },
+                {
+                  "explain": "Every term with $x$ becomes $0$, leaving only the constant.",
+                  "work": "\\(y = 0 - 0 - 8 = -8\\)"
+                }
+              ]
+            },
+            {
+              "id": "y9-willoughby-19-t4q1b",
+              "type": "mc",
+              "stem": "The x-intercepts",
+              "options": [
+                "\\(4, -2\\)",
+                "\\(-4, -2\\)",
+                "\\(-4, 2\\)",
+                "\\(4, 2\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "The $x$-intercepts are where the curve crosses the $x$-axis, i.e. where $y=0$.",
+                  "work": "<svg viewBox=\"0 0 242 362\" width=\"242\" height=\"362\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(16,16)\"><line x1=\"0\" y1=\"150\" x2=\"210\" y2=\"150\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"0\" x2=\"80\" y2=\"330\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"204.0\" y=\"144.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#94a3b8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">x</text><text x=\"88.0\" y=\"10.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#94a3b8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">y</text><path d=\"M 26.0,24.0 L 27.8,38.2 L 29.6,52.1 L 31.4,65.6 L 33.2,78.7 L 35.0,91.5 L 36.8,103.9 L 38.6,116.0 L 40.4,127.7 L 42.2,139.0 L 44.0,150.0 L 45.8,160.6 L 47.6,170.9 L 49.4,180.8 L 51.2,190.3 L 53.0,199.5 L 54.8,208.3 L 56.6,216.8 L 58.4,224.9 L 60.2,232.6 L 62.0,240.0 L 63.8,247.0 L 65.6,253.7 L 67.4,260.0 L 69.2,265.9 L 71.0,271.5 L 72.8,276.7 L 74.6,281.6 L 76.4,286.1 L 78.2,290.2 L 80.0,294.0 L 81.8,297.4 L 83.6,300.5 L 85.4,303.2 L 87.2,305.5 L 89.0,307.5 L 90.8,309.1 L 92.6,310.4 L 94.4,311.3 L 96.2,311.8 L 98.0,312.0 L 99.8,311.8 L 101.6,311.3 L 103.4,310.4 L 105.2,309.1 L 107.0,307.5 L 108.8,305.5 L 110.6,303.2 L 112.4,300.5 L 114.2,297.4 L 116.0,294.0 L 117.8,290.2 L 119.6,286.1 L 121.4,281.6 L 123.2,276.7 L 125.0,271.5 L 126.8,265.9 L 128.6,260.0 L 130.4,253.7 L 132.2,247.0 L 134.0,240.0 L 135.8,232.6 L 137.6,224.9 L 139.4,216.8 L 141.2,208.3 L 143.0,199.5 L 144.8,190.3 L 146.6,180.8 L 148.4,170.9 L 150.2,160.6 L 152.0,150.0 L 153.8,139.0 L 155.6,127.7 L 157.4,116.0 L 159.2,103.9 L 161.0,91.5 L 162.8,78.7 L 164.6,65.6 L 166.4,52.1 L 168.2,38.2 L 170.0,24.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"44.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"152.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"80.0\" cy=\"294.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"98.0\" cy=\"312.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"44.0\" y=\"168.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(-2,0)</text><text x=\"152.0\" y=\"168.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(4,0)</text><text x=\"70.0\" y=\"288.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">(0,-8)</text><text x=\"108.0\" y=\"328.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#7c2d12\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">V(1,-9)</text><line x1=\"98.0\" y1=\"0\" x2=\"98.0\" y2=\"330\" stroke=\"#059669\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><text x=\"104.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">x=1</text></g></svg>\n\n\\(x^2 - 2x - 8 = 0\\)"
+                },
+                {
+                  "explain": "Factorise: find two numbers that multiply to $-8$ and add to $-2$ — these are $-4$ and $2$.",
+                  "work": "\\((x - 4)(x + 2) = 0\\)"
+                },
+                {
+                  "explain": "Apply the null factor law: either bracket can equal zero.",
+                  "work": "\\(x - 4 = 0 \\text{ or } x + 2 = 0 \\implies x = 4, -2\\)"
+                }
+              ]
+            },
+            {
+              "id": "y9-willoughby-19-t4q1c",
+              "type": "mc",
+              "stem": "The equation of the axis of symmetry",
+              "options": [
+                "\\(x = 1\\)",
+                "\\(x = -1\\)",
+                "\\(x = -2\\)",
+                "\\(x = 2\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "A parabola is symmetric about a vertical line exactly halfway between its two $x$-intercepts $4$ and $-2$.",
+                  "work": "<svg viewBox=\"0 0 242 362\" width=\"242\" height=\"362\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(16,16)\"><line x1=\"0\" y1=\"150\" x2=\"210\" y2=\"150\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"0\" x2=\"80\" y2=\"330\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"204.0\" y=\"144.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#94a3b8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">x</text><text x=\"88.0\" y=\"10.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#94a3b8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">y</text><path d=\"M 26.0,24.0 L 27.8,38.2 L 29.6,52.1 L 31.4,65.6 L 33.2,78.7 L 35.0,91.5 L 36.8,103.9 L 38.6,116.0 L 40.4,127.7 L 42.2,139.0 L 44.0,150.0 L 45.8,160.6 L 47.6,170.9 L 49.4,180.8 L 51.2,190.3 L 53.0,199.5 L 54.8,208.3 L 56.6,216.8 L 58.4,224.9 L 60.2,232.6 L 62.0,240.0 L 63.8,247.0 L 65.6,253.7 L 67.4,260.0 L 69.2,265.9 L 71.0,271.5 L 72.8,276.7 L 74.6,281.6 L 76.4,286.1 L 78.2,290.2 L 80.0,294.0 L 81.8,297.4 L 83.6,300.5 L 85.4,303.2 L 87.2,305.5 L 89.0,307.5 L 90.8,309.1 L 92.6,310.4 L 94.4,311.3 L 96.2,311.8 L 98.0,312.0 L 99.8,311.8 L 101.6,311.3 L 103.4,310.4 L 105.2,309.1 L 107.0,307.5 L 108.8,305.5 L 110.6,303.2 L 112.4,300.5 L 114.2,297.4 L 116.0,294.0 L 117.8,290.2 L 119.6,286.1 L 121.4,281.6 L 123.2,276.7 L 125.0,271.5 L 126.8,265.9 L 128.6,260.0 L 130.4,253.7 L 132.2,247.0 L 134.0,240.0 L 135.8,232.6 L 137.6,224.9 L 139.4,216.8 L 141.2,208.3 L 143.0,199.5 L 144.8,190.3 L 146.6,180.8 L 148.4,170.9 L 150.2,160.6 L 152.0,150.0 L 153.8,139.0 L 155.6,127.7 L 157.4,116.0 L 159.2,103.9 L 161.0,91.5 L 162.8,78.7 L 164.6,65.6 L 166.4,52.1 L 168.2,38.2 L 170.0,24.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"44.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"152.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"80.0\" cy=\"294.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"98.0\" cy=\"312.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"44.0\" y=\"168.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(-2,0)</text><text x=\"152.0\" y=\"168.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(4,0)</text><text x=\"70.0\" y=\"288.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">(0,-8)</text><text x=\"108.0\" y=\"328.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#7c2d12\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">V(1,-9)</text><line x1=\"98.0\" y1=\"0\" x2=\"98.0\" y2=\"330\" stroke=\"#059669\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><text x=\"104.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">x=1</text></g></svg>\n\n\\(x = \\frac{4 + (-2)}{2}\\)"
+                },
+                {
+                  "explain": "Simplify the fraction.",
+                  "work": "\\(x = \\frac{2}{2} = 1\\)"
+                },
+                {
+                  "explain": "Check using the axis-of-symmetry formula $x = \\frac{-b}{2a}$ from $y=x^2-2x-8$ (where $a=1,b=-2$).",
+                  "work": "\\(x = \\frac{-(-2)}{2(1)} = \\frac{2}{2} = 1\\)"
+                }
+              ]
+            },
+            {
+              "id": "y9-willoughby-19-t4q1d",
+              "type": "mc",
+              "stem": "The coordinates of the vertex",
+              "options": [
+                "\\((1, 9)\\)",
+                "\\((-1, 9)\\)",
+                "\\((-1, -9)\\)",
+                "\\((1, -9)\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "The vertex sits on the axis of symmetry, so its $x$-coordinate is $1$ (found above).",
+                  "work": "<svg viewBox=\"0 0 242 362\" width=\"242\" height=\"362\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(16,16)\"><line x1=\"0\" y1=\"150\" x2=\"210\" y2=\"150\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"0\" x2=\"80\" y2=\"330\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"204.0\" y=\"144.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#94a3b8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">x</text><text x=\"88.0\" y=\"10.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#94a3b8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">y</text><path d=\"M 26.0,24.0 L 27.8,38.2 L 29.6,52.1 L 31.4,65.6 L 33.2,78.7 L 35.0,91.5 L 36.8,103.9 L 38.6,116.0 L 40.4,127.7 L 42.2,139.0 L 44.0,150.0 L 45.8,160.6 L 47.6,170.9 L 49.4,180.8 L 51.2,190.3 L 53.0,199.5 L 54.8,208.3 L 56.6,216.8 L 58.4,224.9 L 60.2,232.6 L 62.0,240.0 L 63.8,247.0 L 65.6,253.7 L 67.4,260.0 L 69.2,265.9 L 71.0,271.5 L 72.8,276.7 L 74.6,281.6 L 76.4,286.1 L 78.2,290.2 L 80.0,294.0 L 81.8,297.4 L 83.6,300.5 L 85.4,303.2 L 87.2,305.5 L 89.0,307.5 L 90.8,309.1 L 92.6,310.4 L 94.4,311.3 L 96.2,311.8 L 98.0,312.0 L 99.8,311.8 L 101.6,311.3 L 103.4,310.4 L 105.2,309.1 L 107.0,307.5 L 108.8,305.5 L 110.6,303.2 L 112.4,300.5 L 114.2,297.4 L 116.0,294.0 L 117.8,290.2 L 119.6,286.1 L 121.4,281.6 L 123.2,276.7 L 125.0,271.5 L 126.8,265.9 L 128.6,260.0 L 130.4,253.7 L 132.2,247.0 L 134.0,240.0 L 135.8,232.6 L 137.6,224.9 L 139.4,216.8 L 141.2,208.3 L 143.0,199.5 L 144.8,190.3 L 146.6,180.8 L 148.4,170.9 L 150.2,160.6 L 152.0,150.0 L 153.8,139.0 L 155.6,127.7 L 157.4,116.0 L 159.2,103.9 L 161.0,91.5 L 162.8,78.7 L 164.6,65.6 L 166.4,52.1 L 168.2,38.2 L 170.0,24.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"44.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"152.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"80.0\" cy=\"294.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"98.0\" cy=\"312.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"44.0\" y=\"168.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(-2,0)</text><text x=\"152.0\" y=\"168.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(4,0)</text><text x=\"70.0\" y=\"288.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">(0,-8)</text><text x=\"108.0\" y=\"328.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#7c2d12\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">V(1,-9)</text><line x1=\"98.0\" y1=\"0\" x2=\"98.0\" y2=\"330\" stroke=\"#059669\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><text x=\"104.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">x=1</text></g></svg>\n\n\\(x = 1\\)"
+                },
+                {
+                  "explain": "Substitute $x=1$ back into the original equation to find the matching $y$-coordinate.",
+                  "work": "\\(y = (1)^2 - 2(1) - 8\\)"
+                },
+                {
+                  "explain": "Evaluate term by term: $1 - 2 - 8$.",
+                  "work": "\\(y = 1 - 2 - 8 = -9\\)"
+                },
+                {
+                  "explain": "Combine into a coordinate pair.",
+                  "work": "\\((1, -9)\\)"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-17e"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t4q2",
+          "type": "mc",
+          "stem": "Which of the following correctly describes the sketch of the parabola $y = x^2 - 2x - 8$?",
+          "figure": {
+            "svg": "fig:23db0a70ea"
+          },
+          "options": [
+            "Opens upwards, passes through $(2,0)$ and $(4,0)$, y-intercept at $(0,8)$, vertex at $(3,-2)$",
+            "Opens downwards, passes through $(-2,0)$ and $(4,0)$, y-intercept at $(0,-8)$, vertex at $(1,-9)$",
+            "Opens upwards, passes through $(-4,0)$ and $(2,0)$, y-intercept at $(0,8)$, vertex at $(-1,9)$",
+            "Opens upwards, passes through $(-2,0)$ and $(4,0)$, y-intercept at $(0,-8)$, vertex at $(1,-9)$"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "The coefficient of $x^2$ in $y=x^2-2x-8$ is $+1$ (positive), so the parabola opens **upwards** (concave up) — this immediately rules out any \"opens downwards\" option.",
+              "work": "<svg viewBox=\"0 0 242 362\" width=\"242\" height=\"362\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(16,16)\"><line x1=\"0\" y1=\"150\" x2=\"210\" y2=\"150\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"0\" x2=\"80\" y2=\"330\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><text x=\"204.0\" y=\"144.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#94a3b8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">x</text><text x=\"88.0\" y=\"10.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"11\" font-weight=\"600\" fill=\"#94a3b8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">y</text><path d=\"M 26.0,24.0 L 27.8,38.2 L 29.6,52.1 L 31.4,65.6 L 33.2,78.7 L 35.0,91.5 L 36.8,103.9 L 38.6,116.0 L 40.4,127.7 L 42.2,139.0 L 44.0,150.0 L 45.8,160.6 L 47.6,170.9 L 49.4,180.8 L 51.2,190.3 L 53.0,199.5 L 54.8,208.3 L 56.6,216.8 L 58.4,224.9 L 60.2,232.6 L 62.0,240.0 L 63.8,247.0 L 65.6,253.7 L 67.4,260.0 L 69.2,265.9 L 71.0,271.5 L 72.8,276.7 L 74.6,281.6 L 76.4,286.1 L 78.2,290.2 L 80.0,294.0 L 81.8,297.4 L 83.6,300.5 L 85.4,303.2 L 87.2,305.5 L 89.0,307.5 L 90.8,309.1 L 92.6,310.4 L 94.4,311.3 L 96.2,311.8 L 98.0,312.0 L 99.8,311.8 L 101.6,311.3 L 103.4,310.4 L 105.2,309.1 L 107.0,307.5 L 108.8,305.5 L 110.6,303.2 L 112.4,300.5 L 114.2,297.4 L 116.0,294.0 L 117.8,290.2 L 119.6,286.1 L 121.4,281.6 L 123.2,276.7 L 125.0,271.5 L 126.8,265.9 L 128.6,260.0 L 130.4,253.7 L 132.2,247.0 L 134.0,240.0 L 135.8,232.6 L 137.6,224.9 L 139.4,216.8 L 141.2,208.3 L 143.0,199.5 L 144.8,190.3 L 146.6,180.8 L 148.4,170.9 L 150.2,160.6 L 152.0,150.0 L 153.8,139.0 L 155.6,127.7 L 157.4,116.0 L 159.2,103.9 L 161.0,91.5 L 162.8,78.7 L 164.6,65.6 L 166.4,52.1 L 168.2,38.2 L 170.0,24.0\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"44.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"152.0\" cy=\"150.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"80.0\" cy=\"294.0\" r=\"3.5\" fill=\"#dc2626\"/><circle cx=\"98.0\" cy=\"312.0\" r=\"3.5\" fill=\"#dc2626\"/><text x=\"44.0\" y=\"168.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(-2,0)</text><text x=\"152.0\" y=\"168.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(4,0)</text><text x=\"70.0\" y=\"288.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">(0,-8)</text><text x=\"108.0\" y=\"328.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#7c2d12\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">V(1,-9)</text><line x1=\"98.0\" y1=\"0\" x2=\"98.0\" y2=\"330\" stroke=\"#059669\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><text x=\"104.0\" y=\"22.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">x=1</text></g></svg>\n\n\\(a = 1 > 0 \\implies \\text{opens upwards}\\)"
+            },
+            {
+              "explain": "From the factorised form $(x-4)(x+2)=0$ solved earlier, the graph crosses the $x$-axis at $x=-2$ and $x=4$.",
+              "work": "\\(x\\text{-intercepts: } (-2, 0) \\text{ and } (4, 0)\\)"
+            },
+            {
+              "explain": "Substituting $x=0$ gives the $y$-intercept.",
+              "work": "\\(y\\text{-intercept: } (0, -8)\\)"
+            },
+            {
+              "explain": "The vertex (turning point / minimum, since it opens upwards) was found by substituting the axis of symmetry $x=1$ back into the equation.",
+              "work": "\\(\\text{Vertex: } (1, -9)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-17e"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-17f",
+      "code": "17F",
+      "title": "Solving quadratic equations by completing the square",
+      "questions": [
+        {
+          "id": "y9-killara-24-t4-pb2-q6",
+          "type": "mc",
+          "stem": "Solve the following quadratic equation using completing the square: \\(x^2 - 6x - 2 = 0\\)",
+          "options": [
+            "\\(x = -3 \\pm \\sqrt{11}\\)",
+            "\\(x = 3 \\pm \\sqrt{11}\\)",
+            "\\(x = 3 \\pm \\sqrt{7}\\)",
+            "\\(x = -3 \\pm \\sqrt{7}\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Move the constant term to the right side.",
+              "work": "x^2 - 6x = 2"
+            },
+            {
+              "explain": "Add the square of half the \\(x\\) coefficient to both sides. \\((-3)^2 = 9\\).",
+              "work": "x^2 - 6x + 9 = 2 + 9"
+            },
+            {
+              "explain": "Factor the perfect square and simplify.",
+              "work": "(x - 3)^2 = 11"
+            },
+            {
+              "explain": "Take the square root of both sides.",
+              "work": "x - 3 = \\pm \\sqrt{11}"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "x = 3 \\pm \\sqrt{11}"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        }
+      ]
+    }
+  ]
+}

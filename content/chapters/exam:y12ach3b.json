@@ -1,0 +1,286 @@
+{
+  "chapterId": "exam:y12ach3b",
+  "title": "Chapter 3B",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "y12a-3B",
+      "code": "3B",
+      "title": "Stationary points and turning points",
+      "questions": [
+        {
+          "id": "y12a-3b-q10",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "For the function \\( y = x^2(x - 6)^2 \\), complete the following steps.",
+          "parts": [
+            {
+              "id": "y12a-3b-q10a",
+              "type": "mc",
+              "stem": "a) What is the derivative \\( \\frac{dy}{dx} \\) of \\( y = x^2(x - 6)^2 \\) using the product rule?",
+              "options": [
+                "\\( 4x(x - 6) \\)",
+                "\\( 2x(x - 6)^2 \\)",
+                "\\( 4x(x - 6)(x - 3) \\)",
+                "\\( 2x(x - 6)(2x - 3) \\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Let \\( y = uv \\) where \\( u = x^2 \\) and \\( v = (x-6)^2 \\).",
+                  "work": "\\begin{aligned} \\frac{du}{dx} &= 2x \\\\ \\frac{dv}{dx} &= 2(x-6) \\end{aligned}"
+                },
+                {
+                  "explain": "Apply the product rule: \\( \\frac{dy}{dx} = u \\frac{dv}{dx} + v \\frac{du}{dx} \\).",
+                  "work": "\\begin{aligned} \\frac{dy}{dx} &= x^2 \\cdot 2(x-6) + (x-6)^2 \\cdot 2x \\\\ &= 2x(x-6) [x + (x-6)] \\\\ &= 2x(x-6)(2x-6) \\\\ &= 4x(x-6)(x-3) \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3b-q10b",
+              "type": "mc",
+              "stem": "b) Which of the following correctly classifies the stationary points of the function?",
+              "options": [
+                "Local minimum at \\((0, 0)\\), local maximum at \\((6, 0)\\)",
+                "Local minima at \\((0, 0)\\) and \\((6, 0)\\), local maximum at \\((3, 81)\\)",
+                "Local minimum at \\((3, 81)\\) only",
+                "Local maxima at \\((0, 0)\\) and \\((6, 0)\\), local minimum at \\((3, -81)\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Set the first derivative to zero to find the \\(x\\)-coordinates of the stationary points.",
+                  "work": "4x(x-6)(x-3) = 0 \\implies x = 0,\\ x = 3,\\ \\text{or } x = 6"
+                },
+                {
+                  "explain": "Substitute these \\(x\\)-values back into the original function to find the corresponding \\(y\\)-coordinates.",
+                  "work": "\\begin{aligned} y(0) &= 0^2(0-6)^2 = 0 \\implies (0, 0) \\\\ y(3) &= 3^2(3-6)^2 = 9(-3)^2 = 81 \\implies (3, 81) \\\\ y(6) &= 6^2(6-6)^2 = 0 \\implies (6, 0) \\end{aligned}"
+                },
+                {
+                  "explain": "Use a table of gradients to classify the nature of each stationary point.",
+                  "work": "We observe the sign of \\( \\frac{dy}{dx} \\):\n\n\\[\n\\begin{array}{c|c|c|c|c|c|c|c}\nx & -1 & 0 & 1 & 3 & 4 & 6 & 7 \\\\ \\hline\n\\frac{dy}{dx} & -112 & 0 & 40 & 0 & -32 & 0 & 112 \\\\\n\\text{Slope} & \\backslash & - & / & - & \\backslash & - & /\n\\end{array}\n\\]\n\nFrom the table, we see:\n- At \\( x=0 \\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\( (0,0) \\)\n- At \\( x=3 \\): Slope changes from positive to negative \\(\\rightarrow\\) Local maximum at \\( (3,81) \\)\n- At \\( x=6 \\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\( (6,0) \\)"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3b-q10c",
+              "type": "review",
+              "stem": "c) Sketch the graph of the function, showing all key features.",
+              "answer": "",
+              "steps": [
+                {
+                  "explain": "Combine the findings from parts (a) and (b) to sketch the graph.",
+                  "work": "The function is a positive quartic, which typically has a 'W' shape. Plot the local minima at \\((0,0)\\) and \\((6,0)\\), and the local maximum at \\((3,81)\\).",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 350,
+                      "height": 350,
+                      "boundingbox": [
+                        -2,
+                        100,
+                        8,
+                        -20
+                      ],
+                      "showGrid": true,
+                      "showAxisLabels": true,
+                      "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return Math.pow(x,2)*Math.pow(x-6,2); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();",
+                      "elements": [
+                        {
+                          "type": "point",
+                          "coords": [
+                            0,
+                            0
+                          ],
+                          "name": "(0, 0)",
+                          "color": "blue",
+                          "label": {
+                            "offset": [
+                              -15,
+                              -15
+                            ]
+                          }
+                        },
+                        {
+                          "type": "point",
+                          "coords": [
+                            3,
+                            81
+                          ],
+                          "name": "(3, 81)",
+                          "color": "blue",
+                          "label": {
+                            "offset": [
+                              -20,
+                              15
+                            ]
+                          }
+                        },
+                        {
+                          "type": "point",
+                          "coords": [
+                            6,
+                            0
+                          ],
+                          "name": "(6, 0)",
+                          "color": "blue",
+                          "label": {
+                            "offset": [
+                              10,
+                              -15
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "manual": true
+            }
+          ],
+          "meta": {
+            "source": "Year 12a Chapter 3B Q10"
+          }
+        },
+        {
+          "id": "y12a-3b-q11",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "For the function \\( y = (x - 3)^2(2x + 3) \\), complete the following steps.",
+          "parts": [
+            {
+              "id": "y12a-3b-q11a",
+              "type": "mc",
+              "stem": "a) What is the derivative \\( y' \\) of \\( y = (x - 3)^2(2x + 3) \\) using the product rule?",
+              "options": [
+                "\\( 6(x - 3)^2 \\)",
+                "\\( 2x(x - 3)(2x + 3) \\)",
+                "\\( 4x(x - 3) \\)",
+                "\\( 6x(x - 3) \\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Let \\( y = uv \\) where \\( u = (x-3)^2 \\) and \\( v = (2x+3) \\).",
+                  "work": "\\begin{aligned} u' &= 2(x-3) \\\\ v' &= 2 \\end{aligned}"
+                },
+                {
+                  "explain": "Apply the product rule: \\( y' = u v' + v u' \\).",
+                  "work": "\\begin{aligned} y' &= (x-3)^2 \\cdot 2 + (2x+3) \\cdot 2(x-3) \\\\ &= 2(x-3) [ (x-3) + (2x+3) ] \\\\ &= 2(x-3)(3x) \\\\ &= 6x(x-3) \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3b-q11b",
+              "type": "mc",
+              "stem": "b) Which of the following correctly classifies the stationary points of the function?",
+              "options": [
+                "Local minimum at \\((0, 27)\\), local maximum at \\((3, 0)\\)",
+                "Local maxima at \\((0, 27)\\) and \\((3, 0)\\)",
+                "Local maximum at \\((0, 27)\\), local minimum at \\((3, 0)\\)",
+                "Local minima at \\((0, 27)\\) and \\((3, 0)\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Set the first derivative to zero to find the \\(x\\)-coordinates of the stationary points.",
+                  "work": "6x(x-3) = 0 \\implies x = 0 \\text{ or } x = 3"
+                },
+                {
+                  "explain": "Substitute these \\(x\\)-values back into the original function to find the corresponding \\(y\\)-coordinates.",
+                  "work": "\\begin{aligned} y(0) &= (0-3)^2(0+3) = 9(3) = 27 \\implies (0, 27) \\\\ y(3) &= (3-3)^2(6+3) = 0(9) = 0 \\implies (3, 0) \\end{aligned}"
+                },
+                {
+                  "explain": "Use a table of gradients to classify the nature of each stationary point.",
+                  "work": "We observe the sign of \\( y' = 6x(x-3) \\):\n\n\\[\n\\begin{array}{c|c|c|c|c|c}\nx & -1 & 0 & 1 & 3 & 4 \\\\ \\hline\ny' & 24 & 0 & -12 & 0 & 24 \\\\\n\\text{Slope} & / & - & \\backslash & - & /\n\\end{array}\n\\]\n\nFrom the table, we see:\n- At \\( x=0 \\): Slope changes from positive to negative \\(\\rightarrow\\) Local maximum at \\( (0,27) \\)\n- At \\( x=3 \\): Slope changes from negative to positive \\(\\rightarrow\\) Local minimum at \\( (3,0) \\)"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3b-q11c",
+              "type": "review",
+              "stem": "c) Sketch the graph of the function, showing all key features.",
+              "answer": "",
+              "steps": [
+                {
+                  "explain": "Identify the \\(x\\)-intercepts by setting \\( y = 0 \\).",
+                  "work": "(x-3)^2(2x+3) = 0 \\implies x = 3 \\text{ or } x = -\\frac{3}{2}"
+                },
+                {
+                  "explain": "Combine all findings to sketch the graph.",
+                  "work": "Plot the local maximum at \\((0,27)\\), the local minimum at \\((3,0)\\), and the \\(x\\)-intercepts at \\((-1.5, 0)\\) and \\((3, 0)\\).",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 350,
+                      "height": 350,
+                      "boundingbox": [
+                        -3,
+                        35,
+                        5,
+                        -10
+                      ],
+                      "showGrid": true,
+                      "showAxisLabels": true,
+                      "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return Math.pow(x-3, 2)*(2*x+3); }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();",
+                      "elements": [
+                        {
+                          "type": "point",
+                          "coords": [
+                            0,
+                            27
+                          ],
+                          "name": "(0, 27)",
+                          "color": "blue",
+                          "label": {
+                            "offset": [
+                              15,
+                              15
+                            ]
+                          }
+                        },
+                        {
+                          "type": "point",
+                          "coords": [
+                            3,
+                            0
+                          ],
+                          "name": "(3, 0)",
+                          "color": "blue",
+                          "label": {
+                            "offset": [
+                              15,
+                              -15
+                            ]
+                          }
+                        },
+                        {
+                          "type": "point",
+                          "coords": [
+                            -1.5,
+                            0
+                          ],
+                          "name": "(-1.5, 0)",
+                          "color": "slate",
+                          "label": {
+                            "offset": [
+                              -25,
+                              15
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "manual": true
+            }
+          ],
+          "meta": {
+            "source": "Year 12a Chapter 3B Q11"
+          }
+        }
+      ]
+    }
+  ]
+}

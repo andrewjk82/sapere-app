@@ -1,0 +1,97 @@
+{
+  "chapterId": "exam:year6fractions",
+  "title": "Exam Practice",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "exam:year6fractions",
+      "code": "FRAC4",
+      "title": "Fraction Word Problems",
+      "questions": [
+        {
+          "id": "y6-frac-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Place the following fractions in order from least to greatest: \\\\(\\frac{3}{4}\\\\), \\\\(\\frac{5}{8}\\\\), \\\\(\\frac{1}{2}\\\\)",
+          "options": [
+            "\\\\(\\frac{1}{2}, \\frac{5}{8}, \\frac{3}{4}\\\\)",
+            "\\\\(\\frac{5}{8}, \\frac{1}{2}, \\frac{3}{4}\\\\)",
+            "\\\\(\\frac{3}{4}, \\frac{5}{8}, \\frac{1}{2}\\\\)",
+            "\\\\(\\frac{1}{2}, \\frac{3}{4}, \\frac{5}{8}\\\\)"
+          ],
+          "answer": null,
+          "hint": "Convert all fractions to a common denominator (e.g., \\\\\\\\(8\\\\)) to compare them easily.",
+          "solution": "Convert to denominator \\\\\\\\(8\\\\): \\\\(\\frac{3}{4} = \\frac{6}{8}\\\\), \\\\(\\frac{5}{8} = \\frac{5}{8}\\\\), \\\\(\\frac{1}{2} = \\frac{4}{8}\\\\). Now order the numerators: \\\\\\\\(4, 5, 6\\\\). So, the order is \\\\(\\frac{1}{2}\\\\), \\\\(\\frac{5}{8}\\\\), \\\\(\\frac{3}{4}\\\\).",
+          "steps": [
+            {
+              "explain": "Find a common denominator for \\\\\\\\(4, 8\\\\), and \\\\\\\\(2\\\\). The lowest common multiple is \\\\\\\\(8\\\\).",
+              "work": "\\text{Common denominator} = 8"
+            },
+            {
+              "explain": "Convert each fraction to have a denominator of \\\\\\\\(8\\\\).",
+              "work": "\\begin{aligned} \\frac{3}{4} &= \\frac{6}{8} \\\\ \\frac{5}{8} &= \\frac{5}{8} \\\\ \\frac{1}{2} &= \\frac{4}{8} \\end{aligned}"
+            },
+            {
+              "explain": "Compare the numerators to order them from least to greatest.",
+              "work": "\\frac{4}{8} < \\frac{5}{8} < \\frac{6}{8} \\implies \\frac{1}{2}, frac{5}{8}, frac{3}{4}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\\\(7\\\\) pies are shared equally among \\\\\\\\(10\\\\) people, what fraction of a pie does each person receive?",
+          "options": [
+            "\\\\(\\frac{7}{10}\\\\)",
+            "\\\\(\\frac{10}{7}\\\\)",
+            "\\\\\\\\(1\\frac{3}{7}\\\\)",
+            "\\\\(\\frac{3}{10}\\\\)"
+          ],
+          "answer": null,
+          "hint": "Divide the number of items being shared by the number of people sharing them.",
+          "solution": "You divide the \\\\(7\\\\) pies by \\\\\\\\(10\\\\) people. This can be written directly as the fraction \\\\(\\frac{7}{10}\\\\). Each person gets \\\\(\\frac{7}{10}\\\\) of a pie.",
+          "steps": [
+            {
+              "explain": "Identify the total amount to be shared and the number of groups.",
+              "work": "\\text{Total pies} = 7, text{ People} = 10"
+            },
+            {
+              "explain": "Divide the total pies by the number of people.",
+              "work": "7 \\div 10 = \\frac{7}{10}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q21",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "David is taxed \\\\(\\frac{1}{4}\\\\) of his weekly wages. He saves \\\\(\\frac{1}{5}\\\\) of what is left over. If he saves \\\\$60 every week, how much does he earn each week before he is taxed?",
+          "options": [
+            "\\\\$400",
+            "\\\\$300",
+            "\\\\$480",
+            "\\\\$240"
+          ],
+          "answer": null,
+          "hint": "Work backwards. If \\\\(\\frac{1}{5}\\\\) of his 'left over' money is \\\\$60, find the total 'left over' money. Then figure out his original wage.",
+          "solution": "Let his left over money be \\\\(L\\\\). \\\\(\\frac{1}{5}\\\\) of \\\\(L = \\\\$60\\\\), so \\\\(L = \\\\$60 \\times 5 = \\\\$300\\\\). This \\\\\\\\(300 is what remains after a \\\\)\\frac{1}{4}\\\\( tax. So, \\\\\\\\)300 is \\\\(\\frac{3}{4}\\\\) of his total wage. Let his total wage be \\\\(W\\\\). \\\\(\\frac{3}{4}\\\\) of \\\\(W = \\\\$300\\\\). So, \\\\(W = \\\\$300 \\div 3 \\times 4 = \\\\$100 \\times 4 = \\\\$400\\\\).",
+          "steps": [
+            {
+              "explain": "Find the amount of money left over after tax. The savings (\\\\\\\\(60) is \\\\)\\frac{1}{5}\\( of this left over amount.\\)",
+              "work": "\\text{Left over} = \\\\\\\\(60 \\times 5 = \\\\\\\\)300"
+            },
+            {
+              "explain": "Determine the fraction of the original wage that is left over. He is taxed \\\\(\\frac{1}{4}\\\\), so \\\\(\\frac{3}{4}\\\\) is left over.",
+              "work": "1 - \\frac{1}{4} = \\frac{3}{4}"
+            },
+            {
+              "explain": "Find the original wage. \\\\(\\frac{3}{4}\\\\) of the wage is \\\\\\\\(300. Divide by 3 to find \\\\)\\frac{1}{4}\\(, then multiply by 4.\\)",
+              "work": "\\begin{aligned} \\frac{1}{4} \\text{ of wage} &= 300 \\div 3 = 100 \\\\ \\text{Total wage} &= 100 \\times 4 = 400 \\end{aligned}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

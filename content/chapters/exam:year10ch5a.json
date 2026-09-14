@@ -1,0 +1,83 @@
+{
+  "chapterId": "exam:year10ch5a",
+  "title": "Exam Practice",
+  "year": "Year 10",
+  "topics": [
+    {
+      "topicId": "exam:year10ch5a",
+      "code": "",
+      "title": "Solution of quadratic equations",
+      "questions": [
+        {
+          "id": "y10-5a-q4e",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the equation:\n\n$$-8 = -x^2 + 6x$$",
+          "answer": "x = 2, x = 4",
+          "hint": "Rearrange the equation so that one side is zero, then factorise.",
+          "steps": [
+            {
+              "explain": "Rearrange the equation to the standard form \\(ax^2 + bx + c = 0\\).",
+              "work": "x^2 - 6x + 8 = 0"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "(x - 2)(x - 4) = 0"
+            },
+            {
+              "explain": "Solve.",
+              "work": "x = 2, x = 4"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-5a-q4h",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the equation:\n\n$$12 = -h^2 + h$$",
+          "answer": "h = 3, h = 4",
+          "hint": "Rearrange the equation so that one side is zero, then factorise.",
+          "steps": [
+            {
+              "explain": "Rearrange the equation to the standard form \\(ax^2 + bx + c = 0\\).",
+              "work": "h^2 - 7h + 12 = 0"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "(h - 3)(h - 4) = 0"
+            },
+            {
+              "explain": "Solve.",
+              "work": "h = 3, h = 4"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-5a-q4j",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve:\n\n$$8y - 9 = -y^2$$",
+          "answer": "y = -9, y = 1",
+          "hint": "Move all terms to one side to form a quadratic equation.",
+          "steps": [
+            {
+              "explain": "Add \\(y^2\\) to both sides.",
+              "work": "y^2 + 8y - 9 = 0"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "(y + 9)(y - 1) = 0"
+            },
+            {
+              "explain": "Solve.",
+              "work": "y = -9, y = 1"
+            }
+          ],
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

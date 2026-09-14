@@ -1,0 +1,34 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>
+  <rect width='300' height='300' fill='#ffffff' />
+  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />
+  
+  <line x1='150' y1='150' x2='205' y2='54.74' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='205' y1='54.74' x2='260' y2='150' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='150' y1='150' x2='260' y2='150' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='205' y1='54.74' x2='54.74' y2='95' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='54.74' y1='95' x2='260' y2='150' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+  
+  <!-- Ticks -->
+  <line x1='173.17' y1='99.87' x2='181.83' y2='104.87' stroke='#ef4444' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='236.83' y1='99.87' x2='228.17' y2='104.87' stroke='#ef4444' stroke-width='1.5' stroke-linecap='round' />
+  
+  <!-- Alpha Arc -->
+  <path d='M 172 150 A 22 22 0 0 0 161 130.95' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='180.3' y='132.5' text-anchor='middle' dominant-baseline='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>α</text>
+  
+  <!-- Beta Arc -->
+  <path d='M 86.61 86.46 A 33 33 0 0 1 86.61 103.54' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='99.74' y='95' text-anchor='middle' dominant-baseline='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>β</text>
+  
+  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />
+  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>
+  
+  <circle cx='205' cy='54.74' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='211' y='42.74' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>A</text>
+  
+  <circle cx='54.74' cy='95' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='42.74' y='83' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>B</text>
+  
+  <circle cx='260' cy='150' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='272' y='160' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>P</text>
+</svg>

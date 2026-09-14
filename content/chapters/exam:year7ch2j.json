@@ -1,0 +1,74 @@
+{
+  "chapterId": "exam:year7ch2j",
+  "title": "Exam Practice",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "exam:year7ch2j",
+      "code": "",
+      "title": "Revision",
+      "questions": [
+        {
+          "id": "y7-2j-q15h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express 8000 as a product of prime factors. Use index notation where appropriate.",
+          "options": [
+            "2^6 \\times 5^3",
+            "2^6 \\times 5^4",
+            "2^6 + 5^3",
+            "2^5 \\times 5^3"
+          ],
+          "answer": 0,
+          "hint": "Write 8000 as \\(8 \\times 1000\\).",
+          "solution": "The correct answer is 2^6 \\times 5^3.",
+          "steps": [
+            {
+              "explain": "Separate into powers of 10.",
+              "work": "8000 = 8 \\times 10^3"
+            },
+            {
+              "explain": "Express 8 and 10 in prime factor form.",
+              "work": "8 = 2^3, \\quad 10^3 = (2 \\times 5)^3 = 2^3 \\times 5^3"
+            },
+            {
+              "explain": "Combine the powers of 2.",
+              "work": "2^3 \\times 2^3 \\times 5^3 = 2^6 \\times 5^3"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y7-2j-q15i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express 10240 as a product of prime factors. Use index notation where appropriate.",
+          "options": [
+            "2^{11} + 5",
+            "2^{10} \\times 5^2",
+            "2^{11} \\times 5",
+            "2^{12} \\times 5"
+          ],
+          "answer": 2,
+          "hint": "Separate into \\(1024 \\times 10\\).",
+          "solution": "The correct answer is 2^{11} \\times 5.",
+          "steps": [
+            {
+              "explain": "Factor the number.",
+              "work": "10240 = 1024 \\times 10"
+            },
+            {
+              "explain": "Write 1024 and 10 as prime factors.",
+              "work": "1024 = 2^{10}, \\quad 10 = 2 \\times 5"
+            },
+            {
+              "explain": "Combine using exponents.",
+              "work": "2^{10} \\times 2 \\times 5 = 2^{11} \\times 5"
+            }
+          ],
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

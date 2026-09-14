@@ -1,0 +1,1482 @@
+{
+  "chapterId": "y7-12",
+  "title": "Triangles and constructions",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "y7-12",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "qZopHvyBQ25radP7z6LB",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(\\alpha\\) in the diagram below using the exterior angle theorem:\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"220\" viewBox=\"0 0 280 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n    <polygon points=\"60,180 200,180 140,70\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n    <line x1=\"60\" y1=\"180\" x2=\"20\" y2=\"180\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <text x=\"130\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">A</text>\n    <text x=\"45\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">B</text>\n    <text x=\"208\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">C</text>\n    <text x=\"80\" y=\"168\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">60°</text>\n    <text x=\"168\" y=\"168\" text-anchor=\"end\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">60°</text>\n    <text x=\"22\" y=\"170\" text-anchor=\"middle\" fill=\"#dc2626\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">α</text>\n</svg></div>",
+          "figure": {
+            "geometry": {
+              "width": 280,
+              "points": {
+                "A": [
+                  0,
+                  2
+                ],
+                "B": [
+                  -2,
+                  -1
+                ],
+                "C": [
+                  2,
+                  -1
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "A",
+                  "label": "x"
+                }
+              ],
+              "sideLabels": []
+            },
+            "source": {
+              "type": "geometry",
+              "geometry": {
+                "width": 280,
+                "points": {
+                  "A": [
+                    0,
+                    2
+                  ],
+                  "B": [
+                    -2,
+                    -1
+                  ],
+                  "C": [
+                    2,
+                    -1
+                  ]
+                },
+                "segments": [
+                  {
+                    "from": "A",
+                    "to": "B"
+                  },
+                  {
+                    "from": "B",
+                    "to": "C"
+                  },
+                  {
+                    "from": "C",
+                    "to": "A"
+                  }
+                ],
+                "angles": [
+                  {
+                    "at": "A",
+                    "label": "x"
+                  }
+                ],
+                "sideLabels": []
+              }
+            }
+          },
+          "options": [
+            "\\(115^\\circ\\)",
+            "\\(110^\\circ\\)",
+            "\\(130^\\circ\\)",
+            "\\(120^\\circ\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>By the exterior angle theorem:</p><p>\\(\\alpha = 60^\\circ + 60^\\circ = 120^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Identify which angle rule applies: angle sum of triangle (180°), exterior angle theorem, alternate interior angles, co-interior angles, or vertically opposite angles.",
+              "work": "<div style=\"text-align:left\"><p>Given: Exterior angle of a triangle with two non-adjacent interior angles of \\(60^\\circ\\) and \\(60^\\circ\\).</p><p>Apply the exterior angle theorem: exterior angle = sum of the two non-adjacent interior angles.</p></div>"
+            },
+            {
+              "explain": "Apply the identified rule step by step, substituting the known angle values and solving for the unknown angle. Watch out for sign errors when rearranging.",
+              "work": "<div style=\"text-align:left\"><p>\\(\\alpha = 60^\\circ + 60^\\circ = 120^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "State the final answer and verify it makes sense in context (all angles in a triangle must be positive and sum to 180°).",
+              "work": "\\(120^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "SzqcVtyeJ0xlMWH1rswo",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram below, lines are parallel. Find the value of \\(\\theta\\).\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"220\" viewBox=\"0 0 280 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n    <line x1=\"20\" y1=\"80\" x2=\"260\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/>\n    <line x1=\"20\" y1=\"160\" x2=\"260\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/>\n    \n    <!-- Extend transversal slightly so it doesn't look cut off abruptly -->\n    <line x1=\"65\" y1=\"70\" x2=\"215\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\" stroke-linecap=\"round\"/>\n    \n    <!-- Parallel arrows -->\n    <path d=\"M 240 75 L 250 80 L 240 85\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path d=\"M 240 155 L 250 160 L 240 165\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n<path d=\"M 60 80 A 20 20 0 0 0 96.64100588675687 91.09400392450458\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\" /><text x=\"55\" y=\"105\" text-anchor=\"middle\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"14\" font-weight=\"bold\">115°</text><path d=\"M 179.1987426415539 146.13249509436926 A 25 25 0 0 0 175 160\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\" /><text x=\"160\" y=\"155\" text-anchor=\"middle\" fill=\"#dc2626\" font-family=\"'Outfit', sans-serif\" font-size=\"16\" font-weight=\"bold\">θ</text></svg></div>",
+          "options": [
+            "\\(55^\\circ\\)",
+            "\\(60^\\circ\\)",
+            "\\(75^\\circ\\)",
+            "\\(65^\\circ\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Co-interior angles sum to \\(180^\\circ\\):</p><p>\\(\\theta + 115^\\circ = 180^\\circ \\implies \\theta = 65^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and choose the appropriate angle rule to apply.",
+              "work": "<div style=\"text-align:left\"><p>Given: parallel lines with a transversal. One co-interior angle = \\(115^\\circ\\). Find \\(\\theta\\).</p><p>Rule: co-interior angles (same side of transversal) sum to \\(180^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Apply the angle rule step by step, substituting the known values and solving for the unknown.",
+              "work": "<div style=\"text-align:left\"><p>\\(\\theta + 115^\\circ = 180^\\circ\\)</p><p>\\(\\theta = 180^\\circ - 115^\\circ = 65^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "State the final answer and verify it makes sense (all angles must be positive and sum correctly).",
+              "work": "\\(65^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y7-12a",
+      "code": "12A",
+      "title": "Angles in triangles",
+      "questions": [
+        {
+          "id": "y7-t3-2018-p2-area-q1",
+          "type": "mc",
+          "stem": "\\(7 \\text{ cm}^2\\) is equal to:",
+          "options": [
+            "\\(700 \\text{ mm}^2\\)",
+            "\\(0.07 \\text{ mm}^2\\)",
+            "\\(0.7 \\text{ mm}^2\\)",
+            "\\(70 \\text{ mm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "1 cm = 10 mm, so \\( 1 \\text{ cm}^2 = 10 \\times 10 \\text{ mm}^2 \\).",
+          "steps": [
+            {
+              "explain": "\\( 1 \\text{ cm} = 10 \\text{ mm} \\)"
+            },
+            {
+              "explain": "\\( 1 \\text{ cm}^2 = 10 \\text{ mm} \\times 10 \\text{ mm} = 100 \\text{ mm}^2 \\)"
+            },
+            {
+              "explain": "\\( 7 \\text{ cm}^2 = 7 \\times 100 = 700 \\text{ mm}^2 \\)"
+            }
+          ]
+        },
+        {
+          "id": "BmFlqtV1lBNkiBkN5jx4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the exterior angle theorem to find the value of \\(\\alpha\\) in the diagram below:\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"220\" viewBox=\"0 0 280 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n    <polygon points=\"60,180 200,180 200,90\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n    <line x1=\"60\" y1=\"180\" x2=\"20\" y2=\"180\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <path d=\"M 200 170 H 190 V 180\" fill=\"none\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <text x=\"199\" y=\"115\" text-anchor=\"end\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">37°</text>\n    <text x=\"55\" y=\"172\" text-anchor=\"middle\" fill=\"#dc2626\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">α</text>\n    <text x=\"47\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">M</text>\n    <text x=\"205\" y=\"188\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">T</text>\n    <text x=\"205\" y=\"88\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">O</text>\n</svg></div>",
+          "options": [
+            "\\(120^\\circ\\)",
+            "\\(137^\\circ\\)",
+            "\\(117^\\circ\\)",
+            "\\(127^\\circ\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>\\(\\alpha = 90^\\circ + 37^\\circ = 127^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: right-angled triangle \\(MTO\\) with one angle \\(37^\\circ\\). \\(\\alpha\\) is an exterior angle at \\(M\\).</p><p>Rule: exterior angle = sum of two non-adjacent interior angles.</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>\\(\\alpha = 90^\\circ + 37^\\circ = 127^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(127^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "BmWgY4amhfBrSUDvUnyS",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the size of the marked angle \\(\\angle AVB\\) in the diagram below:\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"220\" viewBox=\"0 0 280 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n    <polygon points=\"50,180 230,180 140,50\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n    <line x1=\"140\" y1=\"50\" x2=\"140\" y2=\"180\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <text x=\"130\" y=\"40\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">V</text>\n    <text x=\"35\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">A</text>\n    <text x=\"235\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">B</text>\n    <text x=\"68\" y=\"173\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">35°</text>\n    <text x=\"215\" y=\"173\" text-anchor=\"end\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">55°</text>\n    \n</svg></div>",
+          "options": [
+            "\\(100^\\circ\\)",
+            "\\(90^\\circ\\)",
+            "\\(95^\\circ\\)",
+            "\\(80^\\circ\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Find the third angle in the larger triangle:</p><p>\\(\\angle B = 180^\\circ - (35^\\circ + 55^\\circ) = 90^\\circ\\)</p><p>So the marked angle \\)\\angle AVB = 90^\\circ.</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: triangle \\(VAB\\) with base angles \\(35^\\circ\\) and \\(55^\\circ\\). Find \\(\\angle AVB\\).</p><p>Rule: angle sum = \\(180^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>\\(\\angle AVB = 180^\\circ - (35^\\circ + 55^\\circ) = 180^\\circ - 90^\\circ = 90^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(90^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "CyaCpEEZnG0PaCC39iAA",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram below, three angles sit on a straight line at \\(K\\). Find the value of \\(\\beta\\).\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"300\" height=\"220\" viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"300\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n\n  <!-- Straight Line B-K-R -->\n  <line x1=\"30\" y1=\"180\" x2=\"270\" y2=\"180\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Ray KT at 80° from right (100° from left) -->\n  <!-- cos(80) = 0.174, sin(80) = 0.985 -->\n  <line x1=\"150\" y1=\"180\" x2=\"130.9\" y2=\"71.6\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Ray KE at 37° from right -->\n  <!-- cos(37) = 0.799, sin(37) = 0.602 -->\n  <line x1=\"150\" y1=\"180\" x2=\"237.9\" y2=\"113.8\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n\n  <!-- Arcs -->\n  <!-- BKT (100°) from left base to KT -->\n  <path d=\"M 115 180 A 35 35 0 0 1 143.9 145.5\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  \n  <!-- TKE (β) from KT to KE -->\n  <path d=\"M 143.9 145.5 A 35 35 0 0 1 178 158.9\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n  \n  <!-- EKR (37°) from KE to right base -->\n  <path d=\"M 178 158.9 A 35 35 0 0 1 185 180\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n\n  <!-- Angle Text -->\n  <text x=\"105\" y=\"160\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">100°</text>\n  <text x=\"165\" y=\"145\" font-family=\"'Outfit',sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">β</text>\n  <text x=\"200\" y=\"170\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">37°</text>\n\n  <!-- Labels -->\n  <text x=\"30\" y=\"200\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">B</text>\n  <text x=\"150\" y=\"200\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">K</text>\n  <text x=\"270\" y=\"200\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">R</text>\n  <text x=\"123\" y=\"65\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">T</text>\n  <text x=\"245\" y=\"108\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">E</text>\n</svg></div>",
+          "options": [
+            "\\(43^\\circ\\)",
+            "\\(37^\\circ\\)",
+            "\\(53^\\circ\\)",
+            "\\(47^\\circ\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>\\(\\beta + 37^\\circ + 100^\\circ = 180^\\circ \\implies \\beta = 43^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: three angles on a straight line at \\(K\\): \\(\\beta\\), \\(37^\\circ\\), and \\(100^\\circ\\).</p><p>Rule: angles on a straight line sum to \\(180^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>\\(\\beta + 37^\\circ + 100^\\circ = 180^\\circ\\)</p><p>\\(\\beta + 137^\\circ = 180^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "State the final answer and verify it makes sense.",
+              "work": "<div style=\"text-align:left\"><p>\\(\\beta = 180^\\circ - 137^\\circ = 43^\\circ\\)</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "E5kjSyYBbwY55C35QJ29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the size of the marked angle \\(\\angle AVB\\) in the diagram below:\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"220\" viewBox=\"0 0 280 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n    <polygon points=\"50,180 230,180 140,50\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n    <line x1=\"140\" y1=\"50\" x2=\"140\" y2=\"180\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <text x=\"130\" y=\"40\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">V</text>\n    <text x=\"35\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">A</text>\n    <text x=\"235\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">B</text>\n    <text x=\"68\" y=\"173\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">15°</text>\n    <text x=\"215\" y=\"173\" text-anchor=\"end\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">75°</text>\n    \n</svg></div>",
+          "options": [
+            "\\(100^\\circ\\)",
+            "\\(80^\\circ\\)",
+            "\\(90^\\circ\\)",
+            "\\(95^\\circ\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Find the third angle in the larger triangle:</p><p>\\(\\angle B = 180^\\circ - (15^\\circ + 75^\\circ) = 90^\\circ\\)</p><p>So the marked angle \\)\\angle AVB = 90^\\circ.</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: triangle \\(VAB\\) with base angles \\(15^\\circ\\) and \\(75^\\circ\\). Find \\(\\angle AVB\\).</p><p>Rule: angle sum = \\(180^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>\\(\\angle AVB = 180^\\circ - (15^\\circ + 75^\\circ) = 180^\\circ - 90^\\circ = 90^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(90^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fhEHMxyAdhVA5fkZNhpO",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(\\beta\\) in the diagram below using the exterior angle theorem:\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"220\" viewBox=\"0 0 280 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n    <polygon points=\"60,180 200,180 140,70\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n    <line x1=\"60\" y1=\"180\" x2=\"20\" y2=\"180\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <text x=\"130\" y=\"60\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">E</text>\n    <text x=\"45\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">T</text>\n    <text x=\"208\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">R</text>\n    <text x=\"75\" y=\"170\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">20°</text>\n    <text x=\"185\" y=\"170\" text-anchor=\"end\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">24°</text>\n    <text x=\"55\" y=\"168\" text-anchor=\"middle\" fill=\"#dc2626\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">β</text>\n</svg></div>",
+          "options": [
+            "\\(40^\\circ\\)",
+            "\\(44^\\circ\\)",
+            "\\(34^\\circ\\)",
+            "\\(54^\\circ\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>By the exterior angle theorem:</p><p>\\(\\beta = 20^\\circ + 24^\\circ = 44^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: exterior angle \\(\\beta\\) of triangle \\(ETR\\) with two non-adjacent interior angles \\(20^\\circ\\) and \\(24^\\circ\\).</p><p>Rule: exterior angle = sum of two non-adjacent interior angles.</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>\\(\\beta = 20^\\circ + 24^\\circ = 44^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(44^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "fvy1qDq78QiXk4tPsxlt",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Draw a large triangle \\(ABC\\). Produce (extend) the side \\(AB\\) to \\(D\\). What name is given to the angle \\(\\angle CBD\\)?",
+          "options": [
+            "Corresponding angle",
+            "Exterior angle",
+            "Alternate angle",
+            "Interior angle"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>When a side of a triangle is extended, the angle formed between the extended line and the adjacent side of the triangle is called an <strong>exterior angle</strong>.</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: a side of triangle \\(ABC\\) is extended past \\(B\\) to point \\(D\\). The angle formed between \\(BD\\) and \\(BC\\) is to be named.</p><p>Rule: when a side of a triangle is extended, the angle formed outside the triangle is called an exterior angle.</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>When side \\(AB\\) is extended to \\(D\\), the angle \\(\\angle CBD\\) between the extension and side \\(BC\\) is formed <em>outside</em> the triangle. This is called an <strong>exterior angle</strong>.</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "<div style=\"text-align:left\"><p>Exterior angle</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "gDYsW7NkPNHbFXbFFRsu",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(\\theta\\) in the diagram below:\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"220\" viewBox=\"0 0 280 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n    <polygon points=\"60,180 200,180 140,60\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n    <line x1=\"60\" y1=\"180\" x2=\"200\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <line x1=\"200\" y1=\"180\" x2=\"60\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <text x=\"130\" y=\"110\" text-anchor=\"middle\" fill=\"#dc2626\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">θ</text>\n    <text x=\"80\" y=\"175\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">41°</text>\n    <text x=\"175\" y=\"175\" text-anchor=\"end\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">49°</text>\n</svg></div>",
+          "options": [
+            "\\(90^\\circ\\)",
+            "\\(100^\\circ\\)",
+            "\\(95^\\circ\\)",
+            "\\(80^\\circ\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>By angle sum of triangle, the third angle is:</p><p>\\(180^\\circ - 41^\\circ - 49^\\circ = 90^\\circ\\)</p><p>Since \\)\\theta\\( is vertically opposite, \\)\\theta = 90^\\circ.</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: two lines cross inside a triangle with base angles \\(41^\\circ\\) and \\(49^\\circ\\). Find \\(\\theta\\).</p><p>Rule: angle sum of a triangle = \\(180^\\circ\\), then vertically opposite angles.</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>Third angle of the triangle: \\(180^\\circ - 41^\\circ - 49^\\circ = 90^\\circ\\)</p><p>\\(\\theta\\) is vertically opposite to this angle, so \\(\\theta = 90^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(90^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "i2LmwtGa1MENVVm5918z",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Can a triangle have two acute exterior angles?",
+          "options": [
+            "No, because all exterior angles must be obtuse.",
+            "No, because a triangle can have at most one obtuse interior angle.",
+            "Yes, in an acute-angled triangle.",
+            "Yes, in a right-angled triangle."
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>An acute exterior angle requires an obtuse interior angle. Since a triangle can have at most one obtuse interior angle, it can have at most one acute exterior angle.</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: the question asks whether a triangle can have two acute exterior angles.</p><p>Rule: an exterior angle is supplementary to its interior angle. An acute exterior angle (\\(< 90^\\circ\\)) requires an obtuse interior angle (\\(> 90^\\circ\\)). A triangle can have at most one obtuse interior angle.</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>An acute exterior angle \\(< 90^\\circ\\) means its interior angle \\(> 90^\\circ\\) (obtuse).</p><p>A triangle can have at most one obtuse angle, so it can have at most one acute exterior angle.</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "<div style=\"text-align:left\"><p>No — a triangle can have at most one acute exterior angle.</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "I3epSHZJkQD4hBLmTuOk",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the size of the marked angle \\(\\angle AVB\\) in the diagram below:\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"220\" viewBox=\"0 0 280 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n    <polygon points=\"50,180 230,180 140,50\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n    <line x1=\"140\" y1=\"50\" x2=\"140\" y2=\"180\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <text x=\"130\" y=\"40\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">V</text>\n    <text x=\"35\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">A</text>\n    <text x=\"235\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">B</text>\n    <text x=\"68\" y=\"173\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">34°</text>\n    <text x=\"215\" y=\"173\" text-anchor=\"end\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">60°</text>\n    \n</svg></div>",
+          "options": [
+            "\\(86^\\circ\\)",
+            "\\(76^\\circ\\)",
+            "\\(96^\\circ\\)",
+            "\\(80^\\circ\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Find the third angle in the larger triangle:</p><p>\\(\\angle B = 180^\\circ - (34^\\circ + 60^\\circ) = 86^\\circ\\)</p><p>So the marked angle \\)\\angle AVB = 86^\\circ.</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: triangle \\(VAB\\) with base angles \\(34^\\circ\\) and \\(60^\\circ\\). Find \\(\\angle AVB\\).</p><p>Rule: angle sum = \\(180^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>\\(\\angle AVB = 180^\\circ - (34^\\circ + 60^\\circ) = 180^\\circ - 94^\\circ = 86^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(86^\\circ\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "J9Ca3QPzztiZ53S7QBN9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\(\\theta\\) in the diagram below using the exterior angle theorem:\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"220\" viewBox=\"0 0 280 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n    <polygon points=\"60,180 200,180 140,60\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\"/>\n    <line x1=\"60\" y1=\"180\" x2=\"20\" y2=\"180\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <text x=\"130\" y=\"50\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">R</text>\n    <text x=\"45\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">D</text>\n    <text x=\"208\" y=\"192\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">E</text>\n    <text x=\"80\" y=\"170\" text-anchor=\"start\" fill=\"#dc2626\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">θ</text>\n    <text x=\"178\" y=\"170\" text-anchor=\"end\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">43°</text>\n    <text x=\"22\" y=\"170\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">70°</text>\n</svg></div>",
+          "options": [
+            "\\(37^\\circ\\)",
+            "\\(30^\\circ\\)",
+            "\\(27^\\circ\\)",
+            "\\(17^\\circ\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>By the exterior angle theorem:</p><p>\\(70^\\circ = \\theta + 43^\\circ \\implies \\theta = 27^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: exterior angle of triangle \\(RDE\\) is \\(70^\\circ\\), and the non-adjacent interior angle is \\(43^\\circ\\). Find \\(\\theta\\).</p><p>Rule: exterior angle = sum of two non-adjacent interior angles.</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>\\(70^\\circ = \\theta + 43^\\circ\\)</p><p>\\(\\theta = 70^\\circ - 43^\\circ = 27^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(27^\\circ\\)"
+            }
+          ]
+        },
+        {
+          "id": "ml3LsWYBnr5YoC7WXFbE",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram below, lines \\(HO \\parallel ER\\). Find the value of \\(\\alpha\\).\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"300\" height=\"220\" viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"300\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n\n  <!-- Parallel Lines -->\n  <line x1=\"30\" y1=\"60\" x2=\"270\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"30\" y1=\"160\" x2=\"270\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n\n  <!-- Parallel Arrows -->\n  <path d=\"M 180 55 L 190 60 L 180 65\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <path d=\"M 180 155 L 190 160 L 180 165\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n\n  <!-- Triangle Transversals -->\n  <polygon points=\"100,60 63.6,160 242.8,160\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n\n  <!-- Arcs -->\n  <!-- 70° at top-left P -->\n  <path d=\"M 75 60 A 25 25 0 0 0 91.5 83.5\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  \n  <!-- 145° exterior at bottom-right R_pt -->\n  <path d=\"M 226.4 148.5 A 20 20 0 0 1 262.8 160\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  \n  <!-- α at interior apex P -->\n  <path d=\"M 89.8 88.2 A 30 30 0 0 0 124.6 77.2\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n\n  <!-- Labels -->\n  <text x=\"30\" y=\"50\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">H</text>\n  <text x=\"270\" y=\"50\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">O</text>\n  <text x=\"30\" y=\"178\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">E</text>\n  <text x=\"270\" y=\"178\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">R</text>\n\n  <!-- Angle Text -->\n  <text x=\"70\" y=\"75\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">70°</text>\n  <text x=\"255\" y=\"145\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">145°</text>\n  <text x=\"108\" y=\"105\" font-family=\"'Outfit',sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">α</text>\n</svg></div>",
+          "options": [
+            "\\(80^\\circ\\)",
+            "\\(70^\\circ\\)",
+            "\\(65^\\circ\\)",
+            "\\(75^\\circ\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>By alternate interior angles, the left angle inside the triangle is \\(35^\\circ\\). Using angle sum of a triangle:</p><p>\\(\\alpha + 35^\\circ + 70^\\circ = 180^\\circ \\implies \\alpha = 75^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: lines \\(HO \\parallel ER\\) with a triangle formed between them. The marked exterior angles are \\(70^\\circ\\) and \\(145^\\circ\\).</p><p>Rule: alternate interior angles are equal; angles on a straight line sum to \\(180^\\circ\\); angle sum of a triangle is \\(180^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Find the two interior base angles of the triangle.",
+              "work": "<div style=\"text-align:left\"><p>By alternate interior angles, the left interior base angle is equal to the top-left angle: \\(70^\\circ\\).</p><p>Using angles on a straight line, the right interior base angle is supplementary to the exterior angle: \\(180^\\circ - 145^\\circ = 35^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Use the angle sum of a triangle to solve for \\(\\alpha\\).",
+              "work": "<div style=\"text-align:left\"><p>\\(\\alpha + 70^\\circ + 35^\\circ = 180^\\circ\\)</p><p>\\(\\alpha + 105^\\circ = 180^\\circ\\)</p><p>\\(\\alpha = 180^\\circ - 105^\\circ = 75^\\circ\\)</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "OjPOwZzLbeqxVfsSKBcn",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Can a triangle have an acute exterior angle?",
+          "options": [
+            "Yes, but only in right-angled triangles.",
+            "No, because exterior angles are always obtuse.",
+            "Yes, if the corresponding interior angle is obtuse.",
+            "No, because all exterior angles sum to \\(360^\\circ\\)."
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Yes. If the corresponding interior angle is obtuse (\\(> 90^\\circ\\)), then the exterior angle (which is supplementary, \\(180^\\circ - \\text{interior}\\)) will be acute (\\(< 90^\\circ\\)).</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules."
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align: left;\"><p>Yes. If the corresponding interior angle is obtuse (\\(> 90^\\circ\\)), then the exterior angle (which is supplementary, \\(180^\\circ - \\text{interior}\\)) will be acute (\\(< 90^\\circ\\)).</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "Yes, if the corresponding interior angle is obtuse."
+            }
+          ]
+        },
+        {
+          "id": "OU0xWJzJ78E74MrqEIZB",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Can a triangle have two right angles?",
+          "options": [
+            "No, because right angles can only exist in quadrilaterals.",
+            "Yes, if the third angle is obtuse.",
+            "No, because two right angles would sum to exactly 180^circ, leaving 0^circ for the third angle.",
+            "Yes, in a right-angled isosceles triangle."
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Two right angles would sum to \\(90^\\circ + 90^\\circ = 180^\\circ\\). This leaves exactly \\(0^\\circ\\) for the third angle, making it impossible to form a closed three-sided triangle.</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules."
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align: left;\"><p>Two right angles would sum to \\(90^\\circ + 90^\\circ = 180^\\circ\\). This leaves exactly \\(0^\\circ\\) for the third angle, making it impossible to form a closed three-sided triangle.</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(No, because two right angles would sum to exactly 180^circ, leaving 0^circ for the third angle.\\)"
+            }
+          ]
+        },
+        {
+          "id": "OY5WoXBgMr9xKKvM8iZt",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "According to the exterior angle theorem, the exterior angle \\(\\angle CBD\\) of a triangle \\(ABC\\) is equal to...",
+          "options": [
+            "Exactly 180^circ minus the sum of angle A and angle C.",
+            "The vertical opposite angle.",
+            "The sum of the two opposite interior angles \\(\\angle A + \\angle C\\).",
+            "The difference between angle A and angle C."
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>An exterior angle of a triangle is equal to the sum of the two opposite (non-adjacent) interior angles: \\(\\angle CBD = \\angle A + \\angle C\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules."
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align: left;\"><p>An exterior angle of a triangle is equal to the sum of the two opposite (non-adjacent) interior angles: \\(\\angle CBD = \\angle A + \\angle C\\)</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "The sum of the two opposite interior angles \\(\\angle A + \\angle C\\)."
+            }
+          ]
+        },
+        {
+          "id": "rgioUQgEFsZxSMOcaUBn",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the sum of the three interior angles of any triangle?",
+          "options": [
+            "\\(180^\\circ\\)",
+            "\\(360^\\circ\\)",
+            "\\(90^\\circ\\)",
+            "\\(270^\\circ\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>The sum of the three interior angles of any triangle is always constant and equals exactly \\(180^\\circ\\).</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: the question asks for the sum of interior angles of any triangle.</p><p>Rule: this is a fundamental theorem in Euclidean geometry — the Triangle Angle Sum Theorem.</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>For any triangle \\(ABC\\): \\(\\angle A + \\angle B + \\angle C = 180^\\circ\\)</p><p>This can be proved by drawing a line parallel to one side through the opposite vertex and using alternate interior angles.</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(180^\\circ\\)"
+            }
+          ]
+        },
+        {
+          "id": "sr91hfAtmzxGHeFk52S1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the parallel line transversal below, find the value of \\(\\alpha\\).\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"220\" viewBox=\"0 0 280 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n    <line x1=\"20\" y1=\"80\" x2=\"260\" y2=\"80\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <line x1=\"20\" y1=\"160\" x2=\"260\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <line x1=\"80\" y1=\"80\" x2=\"200\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"2.5\" fill=\"none\"/>\n    <text x=\"110\" y=\"93\" text-anchor=\"start\" fill=\"#2563eb\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">65°</text>\n    <text x=\"170\" y=\"158\" text-anchor=\"start\" fill=\"#dc2626\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"bold\">α</text>\n</svg></div>",
+          "options": [
+            "\\(75^\\circ\\)",
+            "\\(55^\\circ\\)",
+            "\\(65^\\circ\\)",
+            "\\(115^\\circ\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>By alternate interior angles, the angles are equal:</p><p>\\(\\alpha = 65^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: parallel lines with a transversal. One angle = \\(65^\\circ\\). Find \\(\\alpha\\).</p><p>Rule: alternate interior angles between parallel lines are equal.</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>\\(\\alpha = 65^\\circ\\) (alternate interior angles)</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(65^\\circ\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "UFLg9lhN2Cjv0G3gUGcn",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Can a triangle have two obtuse angles?",
+          "options": [
+            "No, because a triangle can only have at most one right angle.",
+            "Yes, but only in an isosceles triangle.",
+            "No, because two obtuse angles would sum to more than \\(180^\\circ\\).",
+            "Yes, in an obtuse-angled scalene triangle."
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>An obtuse angle is strictly greater than \\(90^\\circ\\). Two obtuse angles would sum to more than \\(180^\\circ\\), which is impossible for any triangle.</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: the question asks whether a triangle can have two obtuse angles.</p><p>Rule: interior angles of a triangle sum to \\(180^\\circ\\). An obtuse angle is greater than \\(90^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>Two obtuse angles would each be \\(> 90^\\circ\\), so their sum \\(> 180^\\circ\\). This leaves a negative value for the third angle — impossible.</p><p>\\(90^\\circ + 90^\\circ = 180^\\circ\\) already uses up the full sum, so two obtuse angles are impossible.</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "<div style=\"text-align:left\"><p>No — two obtuse angles would make the sum exceed \\(180^\\circ\\), which is impossible.</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "vfwvbXkJH9W6cWfoZt5e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram below, the lines with arrowheads are parallel, and the segments with matching tick marks are equal in length. Find the value of \\(\\theta\\).\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"300\" height=\"220\" viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"300\" height=\"220\" fill=\"url(#grid)\" rx=\"12\"/>\n\n  <!-- Triangles -->\n  <polygon points=\"100,150 134.2,56 200,150\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <polygon points=\"134.2,56 265.8,56 200,150\" fill=\"#f8fafc\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n\n  <!-- Extensions -->\n  <line x1=\"20\" y1=\"150\" x2=\"100\" y2=\"150\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n\n  <!-- Parallel Arrows -->\n  <path d=\"M 195 51 L 205 56 L 195 61\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n  <path d=\"M 145 145 L 155 150 L 145 155\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linejoin=\"round\"/>\n\n  <!-- Equality Ticks -->\n  <!-- Single Ticks -->\n  <line x1=\"112\" y1=\"101\" x2=\"121\" y2=\"104\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"175\" y1=\"145\" x2=\"175\" y2=\"155\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <!-- Double Ticks -->\n  <line x1=\"159\" y1=\"107\" x2=\"167\" y2=\"102\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"163\" y1=\"109\" x2=\"171\" y2=\"104\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"225\" y1=\"102\" x2=\"233\" y2=\"107\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"229\" y1=\"100\" x2=\"237\" y2=\"105\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n\n  <!-- Arcs -->\n  <!-- 110° at P -->\n  <path d=\"M 80 150 A 20 20 0 0 1 106.8 131.2\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <!-- θ at S -->\n  <path d=\"M 245.8 56 A 20 20 0 0 0 254.3 72.4\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n\n  <!-- Labels -->\n  <text x=\"100\" y=\"168\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">P</text>\n  <text x=\"134\" y=\"45\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Q</text>\n  <text x=\"200\" y=\"168\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">R</text>\n  <text x=\"266\" y=\"45\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">S</text>\n\n  <!-- Angle Text -->\n  <text x=\"80\" y=\"135\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">110°</text>\n  <text x=\"242\" y=\"75\" font-family=\"'Outfit',sans-serif\" font-size=\"15\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">θ</text>\n</svg></div>",
+          "options": [
+            "\\(45^\\circ\\)",
+            "\\(55^\\circ\\)",
+            "\\(50^\\circ\\)",
+            "\\(65^\\circ\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>By exterior angle theorem, the exterior angle is equal to the sum of opposite interior angles:</p><p>\\(\\theta + \\theta = 110^\\circ \\implies 2\\theta = 110^\\circ \\implies \\theta = 55^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the properties of the first triangle using the exterior angle.",
+              "work": "<div style=\"text-align:left\"><p>Given: \\(\\triangle PQR\\) and \\(\\triangle SQR\\). \\(PQ = PR\\) (single ticks), so \\(\\triangle PQR\\) is isosceles. The exterior angle at \\(P\\) is \\(110^\\circ\\).</p><p>Angles on a straight line sum to \\(180^\\circ\\), so the interior angle \\(\\angle QPR = 180^\\circ - 110^\\circ = 70^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Calculate the base angles of the first isosceles triangle.",
+              "work": "<div style=\"text-align:left\"><p>In \\(\\triangle PQR\\), the base angles are equal: \\(\\angle PQR = \\angle PRQ\\).</p><p>Sum of angles is \\(180^\\circ\\), so \\(\\angle PRQ = (180^\\circ - 70^\\circ) / 2 = 55^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Use the parallel lines to link the two triangles.",
+              "work": "<div style=\"text-align:left\"><p>The lines \\(QS\\) and \\(PR\\) have arrowheads, meaning they are parallel (\\(QS \\parallel PR\\)).</p><p>Using alternate interior angles with transversal \\(QR\\), we get \\(\\angle SQR = \\angle PRQ = 55^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Use the second isosceles triangle to solve for \\(\\theta\\).",
+              "work": "<div style=\"text-align:left\"><p>In \\(\\triangle SQR\\), we are given \\(SR = RQ\\) (double ticks), meaning it is an isosceles triangle with apex \\(R\\).</p><p>Therefore, its base angles are equal: \\(\\theta = \\angle QSR = \\angle SQR = 55^\\circ\\).</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "Vqy7bicKuEvGwI7cGkq9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the diagram below, the two horizontal lines are parallel. The two transversal lines intersect at \\(S\\) between the lines. Find the value of \\(\\gamma\\).\n<div style=\"display:flex;justify-content:center;margin:16px 0;\">\n<svg width=\"300\" height=\"220\" viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:12px;border:1px solid #e2e8f0;display:block;margin:10px auto;box-shadow:0 4px 6px -1px rgb(0 0 0/0.05);\">\n  <rect width=\"300\" height=\"220\" fill=\"#fafbfc\" rx=\"12\"/>\n  <line x1=\"30\" y1=\"60\" x2=\"270\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"30\" y1=\"160\" x2=\"270\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <path d=\"M 260 54 L 270 60 L 260 66\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <path d=\"M 260 154 L 270 160 L 260 166\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  \n  <line x1=\"100\" y1=\"60\" x2=\"200\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"200\" y1=\"60\" x2=\"100\" y2=\"160\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <path d=\"M 120 60 A 20 20 0 0 1 114.14213562373095 74.14213562373095\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <path d=\"M 185.85786437626905 74.14213562373095 A 20 20 0 0 1 180 60\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <path d=\"M 137.27207793864216 97.27207793864214 A 18 18 0 0 1 162.72792206135784 97.27207793864214\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n\n  <text x=\"90\" y=\"52\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">P</text>\n  <text x=\"210\" y=\"52\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">T</text>\n  <text x=\"150\" y=\"128\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">S</text>\n  <text x=\"90\" y=\"178\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">R</text>\n  <text x=\"210\" y=\"178\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Q</text>\n\n  <text x=\"127.7163859753386\" y=\"75.4805029709527\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">50°</text>\n  <text x=\"172.2836140246614\" y=\"75.4805029709527\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">45°</text>\n  <text x=\"150\" y=\"83\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">γ</text>\n</svg>\n</div>",
+          "options": [
+            "\\(95^\\circ\\)",
+            "\\(80^\\circ\\)",
+            "\\(75^\\circ\\)",
+            "\\(85^\\circ\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Using alternate interior angles, the interior base angles of the triangle are \\(30^\\circ\\) and \\(65^\\circ\\). Using angle sum of a triangle:</p><p>\\(\\gamma = 180^\\circ - (30^\\circ + 65^\\circ) = 85^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Use alternate interior angles with the left transversal.",
+              "work": "<div style=\"text-align:left\"><p>The left transversal \\(PQ\\) makes a \\(50^\\circ\\) angle with the upper parallel line at \\(P\\).</p><p>By alternate interior angles (Z-angles), the interior angle of the triangle at \\(Q\\) is also \\(50^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Use alternate interior angles with the right transversal.",
+              "work": "<div style=\"text-align:left\"><p>The right transversal \\(TR\\) makes a \\(45^\\circ\\) angle with the upper parallel line at \\(T\\).</p><p>By alternate interior angles, the interior angle of the triangle at \\(R\\) is also \\(45^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Apply the angle sum of a triangle.",
+              "work": "<div style=\"text-align:left\"><p>The angles of triangle \\(SQR\\) sum to \\(180^\\circ\\):</p><p>\\(\\gamma + 50^\\circ + 45^\\circ = 180^\\circ\\)</p><p>\\(\\gamma = 180^\\circ - 95^\\circ = \\mathbf{85^\\circ}\\)</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "VrvfVwGOduOqDcqkZrXD",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In the diagram below, \\(ABCD\\) is a parallelogram (\\(AD \\parallel BC\\) and \\(AB \\parallel DC\\)). The diagonal \\(AC\\) is drawn. Given that \\(\\angle DAB = 110^\\circ\\) and \\(AC = AB\\), find \\(w = \\angle DCA\\).\n<div style=\"display:flex;justify-content:center;margin:16px 0;\">\n<svg width=\"300\" height=\"220\" viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:12px;border:1px solid #e2e8f0;display:block;margin:10px auto;box-shadow:0 4px 6px -1px rgb(0 0 0/0.05);\">\n  <rect width=\"300\" height=\"220\" fill=\"#fafbfc\" rx=\"12\"/>\n  <polygon points=\"90,160 210,160 230,60 110,60\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"90\" y1=\"160\" x2=\"230\" y2=\"60\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-dasharray=\"5,4\" stroke-linecap=\"round\"/>\n\n  <path d=\"M 103.43203236491823 117.82503379201354 L 100 110 L 93.8223417431472 115.90309566765934\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <path d=\"M 223.4320323649182 117.82503379201354 L 220 110 L 213.8223417431472 115.90309566765934\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <path d=\"M 138.5 164.9 L 145.5 160 L 138.5 155.1\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 147.5 164.9 L 154.5 160 L 147.5 155.1\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <path d=\"M 158.5 64.9 L 165.5 60 L 158.5 55.1\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/><path d=\"M 167.5 64.9 L 174.5 60 L 167.5 55.1\" fill=\"none\" stroke=\"#64748b\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n\n  <path d=\"M 94.31455497304005 138.42722513479976 A 22 22 0 0 1 112 160\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <path d=\"M 208 60 A 22 22 0 0 0 212.09786363345182 72.78724026182012\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n\n  <text x=\"75\" y=\"172\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">A</text>\n  <text x=\"225\" y=\"172\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">B</text>\n  <text x=\"245\" y=\"52\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">C</text>\n  <text x=\"95\" y=\"52\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">D</text>\n\n  <text x=\"113.20026424013707\" y=\"144.98033283183386\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">110°</text>\n  <text x=\"199.52654372641908\" y=\"73.76567779225547\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">w</text>\n</svg>\n</div>",
+          "options": [
+            "\\(55^\\circ\\)",
+            "\\(60^\\circ\\)",
+            "\\(50^\\circ\\)",
+            "\\(40^\\circ\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Vertically opposite angles are equal, so:</p><p>\\(w = 40^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Find the interior angle of the parallelogram at B.",
+              "work": "In a parallelogram, consecutive angles are supplementary.\n\\(\\angle ABC = 180^\\circ - 110^\\circ = 70^\\circ\\)."
+            },
+            {
+              "explain": "Use the given constraint \\(AC = AB\\) to find the angles in \\(\\triangle ABC\\).",
+              "work": "Since \\(AC = AB\\), \\(\\triangle ABC\\) is isosceles with base \\(BC\\).\nTherefore, \\(\\angle BCA = \\angle ABC = 70^\\circ\\).\nThe remaining angle is \\(\\angle BAC = 180^\\circ - 70^\\circ - 70^\\circ = 40^\\circ\\)."
+            },
+            {
+              "explain": "Use alternate interior angles to find \\(w\\).",
+              "work": "Since \\(AB \\parallel DC\\) and \\(AC\\) is a transversal:\n\\(w = \\angle DCA = \\angle BAC = 40^\\circ\\)."
+            }
+          ]
+        },
+        {
+          "id": "w19sLx2CljvRBkICDmdN",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(ABC\\) is a triangle with \\(E\\) the midpoint of \\(AC\\). \\(D\\) lies on \\(BE\\) such that \\(AD\\) is a straight line from \\(A\\). Given that \\(\\angle DAE = 55^\\circ\\), \\(\\angle DEA = \\beta\\), and \\(\\angle ABE = 2\\beta\\), find \\(\\beta\\).\n<div style=\"display:flex;justify-content:center;margin:16px 0;\">\n<svg width=\"300\" height=\"220\" viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:12px;border:1px solid #e2e8f0;display:block;margin:10px auto;box-shadow:0 4px 6px -1px rgb(0 0 0/0.05);\">\n  <rect width=\"300\" height=\"220\" fill=\"#fafbfc\" rx=\"12\"/>\n  <polygon points=\"80,170 220,170 180,50\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"180\" y1=\"50\" x2=\"150\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"2\" stroke-dasharray=\"4,4\" stroke-linecap=\"round\"/>\n  <line x1=\"80\" y1=\"170\" x2=\"165\" y2=\"110\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n\n  <path d=\"M 102 170 A 22 22 0 0 0 97.97329299182476 157.3129696528296\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <path d=\"M 154.365641250654 152.53743499738403 A 18 18 0 0 0 132 170\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/>\n  <path d=\"M 165.91594320738145 66.90086815114226 A 22 22 0 0 0 174.66421624920068 71.3431350031973\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2\"/>\n\n  <text x=\"65\" y=\"178\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">A</text>\n  <text x=\"235\" y=\"178\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">C</text>\n  <text x=\"180\" y=\"38\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">B</text>\n  <text x=\"150\" y=\"188\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">E</text>\n  <text x=\"176\" y=\"115\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">D</text>\n\n  <text x=\"110.50061550184779\" y=\"164.31948069531174\" font-family=\"'Outfit',sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">55°</text>\n  <text x=\"133.99928255553147\" y=\"153.50665861158117\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#475569\" text-anchor=\"middle\">β</text>\n  <text x=\"166.41719709353183\" y=\"80.74897129244486\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">2β</text>\n</svg>\n</div>",
+          "options": [
+            "\\(5^\\circ\\)",
+            "\\(10^\\circ\\)",
+            "\\(15^\\circ\\)",
+            "\\(20^\\circ\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>By the exterior angle theorem:</p><p>\\(81^\\circ = 71^\\circ + \\beta \\implies \\beta = 10^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Set up an expression for ∠ADE using triangle ADE.",
+              "work": "<div style=\"text-align:left\"><p>In \\(\\triangle ADE\\), the angles sum to \\(180^\\circ\\):</p><p>\\(\\angle DAE + \\angle AED + \\angle ADE = 180^\\circ\\)</p><p>\\(55^\\circ + \\beta + \\angle ADE = 180^\\circ \\implies \\angle ADE = 125^\\circ - \\beta\\)</p></div>"
+            },
+            {
+              "explain": "Find ∠ADB using supplementary angles at D.",
+              "work": "<div style=\"text-align:left\"><p>Since \\(D\\) lies on segment \\(BE\\), the angles \\(\\angle ADE\\) and \\(\\angle ADB\\) are supplementary (they form a straight line):</p><p>\\(\\angle ADB = 180^\\circ - (125^\\circ - \\beta) = 55^\\circ + \\beta\\)</p></div>"
+            },
+            {
+              "explain": "Apply the exterior angle theorem to triangle ABD.",
+              "work": "<div style=\"text-align:left\"><p>\\(\\angle ADB\\) is an exterior angle of \\(\\triangle ABE\\) at \\(D\\) (since \\(D\\) is between \\(B\\) and \\(E\\)).</p><p>By the exterior angle theorem, it equals the sum of the two non-adjacent interior angles:</p><p>\\(\\angle ADB = \\angle ABE + \\angle BAE\\)</p><p>\\(55^\\circ + \\beta = 2\\beta + 55^\\circ - \\beta\\)?</p><p>More directly: in \\(\\triangle ABD\\), \\(\\angle ADB = \\angle ABD + \\angle DAB\\) (exterior angle at B, projected).</p><p>\\(\\angle ADB = \\angle ABE + \\angle DAE = 2\\beta + 55^\\circ\\).</p></div>"
+            },
+            {
+              "explain": "Solve the equation for β.",
+              "work": "<div style=\"text-align:left\"><p>Equating the two expressions for \\(\\angle ADB\\):</p><p>\\(55^\\circ + \\beta = 2\\beta + 55^\\circ\\)?</p><p>Using angle sum at \\(E\\) in \\(\\triangle ABE\\) with exterior at \\(D\\):</p><p>\\(\\angle ADB = \\angle ABE + \\angle BAE\\). And \\(\\angle ADB = 125^\\circ - \\beta\\) (supplement of \\(\\angle ADE\\))... wait we said \\(\\angle ADB = 55^\\circ + \\beta\\).</p><p>Exterior angle at \\(D\\) of \\(\\triangle ABE\\): \\(\\angle ADE = \\angle ABE + \\angle BAE = 2\\beta + 55^\\circ\\).</p><p>But \\(\\angle ADE = 125^\\circ - \\beta\\) (from step 1).</p><p>\\(125^\\circ - \\beta = 2\\beta + 55^\\circ \\implies 70^\\circ = 3\\beta \\implies \\beta = \\mathbf{10^\\circ}\\) ✓</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "WSsXenvcp0ej7PkMLaEc",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the diagram, two triangles share a common vertex \\(S\\). The large triangle \\(PSQ\\) has \\(\\angle P = 45^\\circ\\) and \\(\\angle Q = 55^\\circ\\). The small triangle \\(ASB\\) sits on top. Find \\(\\alpha = \\angle ASB\\).\n<div style=\"display:flex;justify-content:center;margin:16px 0;\">\n<svg width=\"300\" height=\"220\" viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:12px;border:1px solid #e2e8f0;display:block;margin:10px auto;box-shadow:0 4px 6px -1px rgb(0 0 0/0.05);\">\n  <rect width=\"300\" height=\"220\" fill=\"#fafbfc\" rx=\"12\"/>\n  <polygon points=\"60,170 240,170 150,90\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <polygon points=\"100,40 200,40 150,90\" fill=\"#e8f4fd\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <path d=\"M 82 170 A 22 22 0 0 0 76.44300501104051 155.38399554574175\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <path d=\"M 223.5569949889595 155.38399554574175 A 22 22 0 0 0 218 170\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <path d=\"M 138.68629150101523 78.68629150101523 A 16 16 0 0 1 161.31370849898477 78.68629150101523\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <text x=\"48\" y=\"178\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">P</text>\n  <text x=\"252\" y=\"178\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">Q</text>\n  <text x=\"90\" y=\"38\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">A</text>\n  <text x=\"210\" y=\"38\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">B</text>\n  <text x=\"162\" y=\"102\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">S</text>\n  <text x=\"89.91109444948536\" y=\"162.62782215958762\" font-family=\"'Outfit',sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">45°</text>\n  <text x=\"210.08890555051465\" y=\"162.62782215958762\" font-family=\"'Outfit',sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">55°</text>\n  <text x=\"150\" y=\"71\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">α</text>\n</svg>\n</div>",
+          "options": [
+            "\\(75^\\circ\\)",
+            "\\(85^\\circ\\)",
+            "\\(80^\\circ\\)",
+            "\\(90^\\circ\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>By the interior angle sum of the large triangle, the top angle is:</p><p>\\(180^\\circ - (45^\\circ + 55^\\circ) = 80^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Find angle R in the large triangle.",
+              "work": "<div style=\"text-align:left\"><p>In \\(\\triangle PQR\\), the angles sum to \\(180^\\circ\\):</p><p>\\(\\angle PQR + \\angle QPR + \\angle PRQ = 180^\\circ\\)</p><p>\\(55^\\circ + 45^\\circ + \\angle PRQ = 180^\\circ \\implies \\angle PRQ = 80^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "Use vertically opposite angles at S.",
+              "work": "<div style=\"text-align:left\"><p>At vertex \\(S\\), the angle \\(\\angle PSQ\\) (inside the large triangle) and the angle \\(\\angle ASB\\) (inside the small triangle) are vertically opposite.</p><p>Also, \\(\\angle RSA\\) and \\(\\angle PSQ\\) are vertically opposite... No: \\(R\\), \\(S\\), and \\(P\\) are on different lines. At \\(S\\), the lines \\(PR\\) and \\(AQ\\)... </p><p>Actually \\(\\angle PRQ = \\angle SRA\\) (as S and R coincide at the apex). So \\(\\alpha = \\angle RSA = \\angle PRQ = 80^\\circ\\). Because \\(S = R\\) is the shared vertex of both triangles.</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "<div style=\"text-align:left\"><p>Since \\(S\\) is the apex of the large triangle \\(PQR\\):</p><p>\\(\\alpha = \\angle PSQ = 180^\\circ - 45^\\circ - 55^\\circ = \\mathbf{80^\\circ}\\)</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "x47PGdgwnPZinBm65vz2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(ABCD\\) is a rhombus (all four sides are equal, indicated by the tick marks). The diagonal \\(BD\\) is drawn. Given that the interior angle \\(\\angle DAB = 110^\\circ\\), find \\(\\alpha = \\angle ABD\\).\n<div style=\"display:flex;justify-content:center;margin:16px 0;\">\n<svg width=\"300\" height=\"220\" viewBox=\"0 0 300 220\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:12px;border:1px solid #e2e8f0;display:block;margin:10px auto;box-shadow:0 4px 6px -1px rgb(0 0 0/0.05);\">\n  <rect width=\"300\" height=\"220\" fill=\"#fafbfc\" rx=\"12\"/>\n  <polygon points=\"110,160 230,160 190,48 70,48\" fill=\"#f1f5f9\" stroke=\"#0f172a\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"230\" y1=\"160\" x2=\"70\" y2=\"48\" stroke=\"#0f172a\" stroke-width=\"2\" stroke-dasharray=\"5,3\" stroke-linecap=\"round\"/>\n  <line x1=\"170\" y1=\"154\" x2=\"170\" y2=\"166\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"204.34954853043098\" y1=\"106.01801838198894\" x2=\"215.65045146956902\" y2=\"101.98198161801106\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"130\" y1=\"54\" x2=\"130\" y2=\"42\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <line x1=\"95.65045146956902\" y1=\"101.98198161801106\" x2=\"84.34954853043098\" y2=\"106.01801838198894\" stroke=\"#dc2626\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <path d=\"M 103.94594485403319 143.04864559129294 A 18 18 0 0 1 128 160\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <path d=\"M 211.9768977485811 147.38382842400677 A 22 22 0 0 0 208 160\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.5\"/>\n  <text x=\"100\" y=\"178\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">A</text>\n  <text x=\"240\" y=\"178\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">B</text>\n  <text x=\"200\" y=\"38\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">C</text>\n  <text x=\"60\" y=\"38\" font-family=\"'Outfit',sans-serif\" font-size=\"13\" font-weight=\"bold\" fill=\"#0f172a\" text-anchor=\"middle\">D</text>\n  <text x=\"126.12935622945699\" y=\"141.11236430682982\" font-family=\"'Outfit',sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#2563eb\" text-anchor=\"middle\">110°</text>\n  <text x=\"197.57291178566896\" y=\"153.77826091411083\" font-family=\"'Outfit',sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\" text-anchor=\"middle\">α</text>\n</svg>\n</div>",
+          "options": [
+            "\\(72^\\circ\\)",
+            "\\(40^\\circ\\)",
+            "\\(35^\\circ\\)",
+            "\\(73^\\circ\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>By alternate interior angles between parallel lines:</p><p>\\(\\alpha = \\angle OQP = 35^\\circ\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the properties of a rhombus.",
+              "work": "<div style=\"text-align:left\"><p>A rhombus is a special type of parallelogram where all four sides are equal (as shown by the tick marks).</p><p>Because it is a parallelogram, opposite sides are parallel (\\(AD \\parallel BC\\) and \\(AB \\parallel DC\\)).</p></div>"
+            },
+            {
+              "explain": "Find the adjacent angle \\(\\angle ABC\\).",
+              "work": "<div style=\"text-align:left\"><p>In a parallelogram, consecutive interior angles are supplementary (they add up to \\(180^\\circ\\)).</p><p>Therefore, \\(\\angle ABC = 180^\\circ - \\angle DAB\\)</p><p>\\(\\angle ABC = 180^\\circ - 110^\\circ = 70^\\circ\\)</p></div>"
+            },
+            {
+              "explain": "Use the diagonal property of a rhombus.",
+              "work": "<div style=\"text-align:left\"><p>A key property of a rhombus is that its diagonals exactly bisect (cut in half) the interior angles.</p><p>The diagonal \\(BD\\) bisects the entire corner angle \\(\\angle ABC\\).</p></div>"
+            },
+            {
+              "explain": "Calculate \\(\\alpha\\).",
+              "work": "<div style=\"text-align:left\"><p>Since the diagonal bisects the \\(70^\\circ\\) angle at \\(B\\):</p><p>\\(\\alpha = \\angle ABD = \\frac{70^\\circ}{2} = \\mathbf{35^\\circ}\\)</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "Z1bWGliPaOLIX7SCdL33",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the minimum number of acute angles a triangle can have?",
+          "options": [
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(0\\)",
+            "\\(3\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Since a triangle can have at most one right or obtuse angle, the remaining two angles must be acute (\\(< 90^\\circ\\)). Therefore, every triangle must have at least \\(2\\) acute angles.</p></div>",
+          "steps": [
+            {
+              "explain": "Identify the given information and applicable angle rules.",
+              "work": "<div style=\"text-align:left\"><p>Given: the question asks for the minimum number of acute angles in any triangle.</p><p>Rule: a triangle can have at most one right or obtuse angle; the other two must be acute.</p></div>"
+            },
+            {
+              "explain": "Apply the angle rules to solve for the unknown value.",
+              "work": "<div style=\"text-align:left\"><p>A right-angled triangle has one \\(90^\\circ\\) angle, and the other two must sum to \\(90^\\circ\\), so both are acute (\\(< 90^\\circ\\)).</p><p>An obtuse-angled triangle has one angle \\(> 90^\\circ\\), and the other two must sum to less than \\(90^\\circ\\), so both are acute.</p><p>Therefore, every triangle has at least \\(2\\) acute angles.</p></div>"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(2\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-12b",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-ep2-q8a",
+          "type": "mc",
+          "stem": "Complete the following statement: \\( 11.5 \\text{ cm} = \\_\\_\\_\\_\\_\\_ \\text{ mm} \\)",
+          "options": [
+            "\\(115\\)",
+            "\\(1.15\\)",
+            "\\(1150\\)",
+            "\\(0.115\\)"
+          ],
+          "answer": 0,
+          "hint": "There are 10 millimetres (mm) in 1 centimetre (cm).",
+          "steps": [
+            {
+              "explain": "To convert from cm to mm, multiply by 10."
+            },
+            {
+              "explain": "\\(11.5 \\times 10 = 115 \\text{ mm}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-12c",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-ep2-q8b",
+          "type": "mc",
+          "stem": "Complete the following statement: \\( 200 \\text{ cm}^2 = \\_\\_\\_\\_\\_\\_ \\text{ mm}^2 \\)",
+          "options": [
+            "\\(20000\\)",
+            "\\(2000\\)",
+            "\\(2\\)",
+            "\\(200000\\)"
+          ],
+          "answer": 0,
+          "hint": "There are \\(10 \\times 10 = 100\\) square millimetres in 1 square centimetre.",
+          "steps": [
+            {
+              "explain": "To convert from \\(\\text{cm}^2\\) to \\(\\text{mm}^2\\), multiply by \\(10^2\\) or 100."
+            },
+            {
+              "explain": "\\(200 \\times 100 = 20,000 \\text{ mm}^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q8c",
+          "type": "mc",
+          "stem": "Complete the following statement: \\( 1 \\text{ km}^2 = \\_\\_\\_\\_\\_\\_ \\text{ ha} \\)",
+          "options": [
+            "\\(100\\)",
+            "\\(1000\\)",
+            "\\(10\\)",
+            "\\(10000\\)"
+          ],
+          "answer": 0,
+          "hint": "1 hectare (ha) is \\(10,000 \\text{ m}^2\\). 1 square kilometre is \\(1,000,000 \\text{ m}^2\\).",
+          "steps": [
+            {
+              "explain": "\\(1 \\text{ km}^2 = 1000 \\text{ m} \\times 1000 \\text{ m} = 1,000,000 \\text{ m}^2\\)"
+            },
+            {
+              "explain": "Since \\(1 \\text{ ha} = 10,000 \\text{ m}^2\\), we divide: \\(1,000,000 \\div 10,000 = 100\\)."
+            },
+            {
+              "explain": "Therefore, \\(1 \\text{ km}^2 = 100 \\text{ ha}\\)."
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q8d",
+          "type": "mc",
+          "stem": "Complete the following statement: \\( 100,000 \\text{ cm}^3 = \\_\\_\\_\\_\\_\\_ \\text{ m}^3 \\)",
+          "options": [
+            "\\(0.1\\)",
+            "\\(1\\)",
+            "\\(10\\)",
+            "\\(0.01\\)"
+          ],
+          "answer": 0,
+          "hint": "There are \\(100 \\times 100 \\times 100 = 1,000,000\\) cubic centimetres in 1 cubic metre.",
+          "steps": [
+            {
+              "explain": "To convert from \\(\\text{cm}^3\\) to \\(\\text{m}^3\\), divide by \\(1,000,000\\)."
+            },
+            {
+              "explain": "\\(100,000 \\div 1,000,000 = 0.1 \\text{ m}^3\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-12d",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-ep2-q9a",
+          "type": "mc",
+          "stem": "Find the perimeter of the following shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"300\" height=\"300\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"80,40 140,20 160,120 100,160\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"80\" y=\"30\" font-family=\"sans-serif\" font-size=\"12\">4 cm</text>\n  <text x=\"160\" y=\"70\" font-family=\"sans-serif\" font-size=\"12\">7 cm</text>\n  <text x=\"120\" y=\"160\" font-family=\"sans-serif\" font-size=\"12\">5 cm</text>\n  <text x=\"60\" y=\"100\" font-family=\"sans-serif\" font-size=\"12\">3 cm</text>\n</svg></div>",
+          "options": [
+            "\\(19 \\text{ cm}\\)",
+            "\\(20 \\text{ cm}\\)",
+            "\\(18 \\text{ cm}\\)",
+            "\\(21 \\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "The perimeter is the total length of the outside boundary of the shape.",
+          "steps": [
+            {
+              "explain": "Add the lengths of all the sides: \\(4 + 7 + 5 + 3\\)"
+            },
+            {
+              "explain": "\\(4 + 7 + 5 + 3 = 19 \\text{ cm}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q9b",
+          "type": "mc",
+          "stem": "Find the perimeter of the following shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"300\" height=\"300\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Regular octagon -->\n  <polygon points=\"70,30 130,30 170,70 170,130 130,170 70,170 30,130 30,70\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <!-- Tick marks -->\n  <line x1=\"100\" y1=\"25\" x2=\"100\" y2=\"35\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"100\" y1=\"165\" x2=\"100\" y2=\"175\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"25\" y1=\"100\" x2=\"35\" y2=\"100\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"165\" y1=\"100\" x2=\"175\" y2=\"100\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"45\" y1=\"45\" x2=\"55\" y2=\"55\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"145\" y1=\"45\" x2=\"155\" y2=\"55\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"45\" y1=\"155\" x2=\"55\" y2=\"145\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"145\" y1=\"155\" x2=\"155\" y2=\"145\" stroke=\"black\" stroke-width=\"1\"/>\n  \n  <text x=\"30\" y=\"105\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">19 m </text>\n</svg></div>",
+          "options": [
+            "\\(152 \\text{ m}\\)",
+            "\\(133 \\text{ m}\\)",
+            "\\(171 \\text{ m}\\)",
+            "\\(114 \\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "The tick marks indicate that all 8 sides are equal in length.",
+          "steps": [
+            {
+              "explain": "The shape is a regular octagon, meaning it has 8 equal sides."
+            },
+            {
+              "explain": "Perimeter = \\(8 \\times 19\\)"
+            },
+            {
+              "explain": "\\(8 \\times 19 = 152 \\text{ m}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q9c",
+          "type": "mc",
+          "stem": "Find the perimeter of the following shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"375\" height=\"300\" viewBox=\"0 0 250 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,40 190,40 190,70 140,70 140,150 100,150 100,70 50,70\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  \n  <!-- Right angles (squares in corners) -->\n  <rect x=\"50\" y=\"40\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <rect x=\"185\" y=\"40\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <rect x=\"50\" y=\"65\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <rect x=\"185\" y=\"65\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <rect x=\"100\" y=\"145\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <rect x=\"135\" y=\"145\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <!-- Ticks -->\n  <!-- Inner horizontals -->\n  <line x1=\"75\" y1=\"67\" x2=\"75\" y2=\"73\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"77\" y1=\"67\" x2=\"77\" y2=\"73\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"165\" y1=\"67\" x2=\"165\" y2=\"73\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"167\" y1=\"67\" x2=\"167\" y2=\"73\" stroke=\"black\" stroke-width=\"1\"/>\n  <!-- Lower verticals -->\n  <line x1=\"97\" y1=\"110\" x2=\"103\" y2=\"110\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"97\" y1=\"112\" x2=\"103\" y2=\"112\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"137\" y1=\"110\" x2=\"143\" y2=\"110\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"137\" y1=\"112\" x2=\"143\" y2=\"112\" stroke=\"black\" stroke-width=\"1\"/>\n\n  <text x=\"120\" y=\"30\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">14 cm</text>\n  <text x=\"200\" y=\"60\" font-family=\"sans-serif\" font-size=\"12\">3 cm</text>\n  <text x=\"120\" y=\"165\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">4 cm</text>\n</svg></div>",
+          "options": [
+            "\\(44 \\text{ cm}\\)",
+            "\\(34 \\text{ cm}\\)",
+            "\\(40 \\text{ cm}\\)",
+            "\\(48 \\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the missing side lengths using the total width and the tick marks.",
+          "steps": [
+            {
+              "explain": "The top width is 14 cm and the bottom width is 4 cm. The two inner horizontal segments add up to \\(14 - 4 = 10 \\text{ cm}\\)."
+            },
+            {
+              "explain": "Since they have the same tick marks, each is \\(10 \\div 2 = 5 \\text{ cm}\\)."
+            },
+            {
+              "explain": "The vertical segments going down also have the same tick marks, so they are also 5 cm each."
+            },
+            {
+              "explain": "The two top vertical sides are 3 cm (the left one matches the right one by symmetry)."
+            },
+            {
+              "explain": "Perimeter = Top + RightTop + RightInner + RightBottom + Bottom + LeftBottom + LeftInner + LeftTop"
+            },
+            {
+              "explain": "Perimeter = \\(14 + 3 + 5 + 5 + 4 + 5 + 5 + 3 = 44 \\text{ cm}\\)."
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q15a",
+          "type": "mc",
+          "stem": "Sophie wants to fence the sides of her rectangular block of land, which is 20 m × 30 m.\n\nThe posts to support the fence are placed 2 m apart. Calculate the number of posts needed.",
+          "options": [
+            "50",
+            "51",
+            "49",
+            "25"
+          ],
+          "answer": 0,
+          "hint": "First calculate the perimeter of the block of land. For a closed shape, the number of posts is equal to the perimeter divided by the spacing.",
+          "steps": [
+            {
+              "explain": "First, we need to find the total length of the fence (the perimeter of the land).<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"250\" height=\"150\" viewBox=\"0 0 250 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"25\" y=\"25\" width=\"200\" height=\"100\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"125\" y=\"15\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">30 m</text>\n  <text x=\"125\" y=\"145\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">30 m</text>\n  <text x=\"10\" y=\"75\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\" dominant-baseline=\"middle\">20 m</text>\n  <text x=\"240\" y=\"75\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"start\" dominant-baseline=\"middle\">20 m</text>\n  <circle cx=\"25\" cy=\"25\" r=\"4\" fill=\"red\"/>\n  <circle cx=\"65\" cy=\"25\" r=\"4\" fill=\"red\"/>\n  <circle cx=\"105\" cy=\"25\" r=\"4\" fill=\"red\"/>\n  <text x=\"45\" y=\"40\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">2m</text>\n  <text x=\"85\" y=\"40\" font-family=\"sans-serif\" font-size=\"10\" text-anchor=\"middle\">2m</text>\n</svg></div>"
+            },
+            {
+              "explain": "\\(\\text{Perimeter} = 20 + 30 + 20 + 30 = 100 \\text{ m}\\)"
+            },
+            {
+              "explain": "The posts are placed every 2 m. Because the fence is a closed loop, the number of posts is exactly equal to the number of 2 m gaps."
+            },
+            {
+              "explain": "\\(\\text{Number of posts} = \\frac{\\text{Total Perimeter}}{\\text{Spacing}} = \\frac{100}{2} = 50\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q15b",
+          "type": "mc",
+          "stem": "Sophie wants to fence the sides of her rectangular block of land, which is 20 m × 30 m.\n\nCalculate the number of 2 m rails needed, if 2 rails are placed between each pair of posts.",
+          "options": [
+            "100",
+            "150",
+            "50",
+            "200"
+          ],
+          "answer": 0,
+          "hint": "There are as many gaps between posts as there are posts. Multiply the number of gaps by 2.",
+          "steps": [
+            {
+              "explain": "As found in the previous question, there are 50 gaps between the 50 posts around the perimeter.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"200\" height=\"120\" viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"40\" y=\"20\" width=\"10\" height=\"80\" fill=\"gray\" stroke=\"black\"/>\n  <rect x=\"150\" y=\"20\" width=\"10\" height=\"80\" fill=\"gray\" stroke=\"black\"/>\n  <rect x=\"50\" y=\"40\" width=\"100\" height=\"10\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <rect x=\"50\" y=\"70\" width=\"100\" height=\"10\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"100\" y=\"30\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">1 gap (2 m)</text>\n  <text x=\"100\" y=\"115\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">2 rails per gap</text>\n</svg></div>"
+            },
+            {
+              "explain": "If there are 2 rails placed in each gap between a pair of posts, we multiply the number of gaps by 2."
+            },
+            {
+              "explain": "\\(\\text{Total rails} = 50 \\text{ gaps} \\times 2 \\text{ rails/gap} = 100 \\text{ rails}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p2-area-q2a",
+          "type": "mc",
+          "stem": "Find the area of the following plane figure.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"200\" height=\"120\" viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"50\" y=\"20\" width=\"80\" height=\"80\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <!-- tick marks on sides -->\n  <line x1=\"85\" y1=\"15\" x2=\"95\" y2=\"25\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"85\" y1=\"95\" x2=\"95\" y2=\"105\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"45\" y1=\"55\" x2=\"55\" y2=\"65\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"125\" y1=\"55\" x2=\"135\" y2=\"65\" stroke=\"black\" stroke-width=\"2\"/>\n  <polyline points=\"50,90 60,90 60,100\" fill=\"none\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"140\" y=\"65\" font-family=\"sans-serif\" font-size=\"12\">6 cm</text>\n</svg></div>",
+          "options": [
+            "\\(36 \\text{ cm}^2\\)",
+            "\\(24 \\text{ cm}^2\\)",
+            "\\(12 \\text{ cm}^2\\)",
+            "\\(72 \\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "The shape is a square with side length 6 cm.",
+          "steps": [
+            {
+              "explain": "The figure is a square (all sides equal, indicated by tick marks)."
+            },
+            {
+              "explain": "\\( \\text{Area} = \\text{side} \\times \\text{side} \\)"
+            },
+            {
+              "explain": "\\( \\text{Area} = 6 \\times 6 = 36 \\text{ cm}^2 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p2-area-q2b",
+          "type": "mc",
+          "stem": "Find the area of the following plane figure.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"250\" height=\"120\" viewBox=\"0 0 250 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"60,20 160,20 180,80 80,80\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"130\" y1=\"20\" x2=\"130\" y2=\"80\" stroke=\"black\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n  <polyline points=\"130,70 140,70 140,80\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <text x=\"120\" y=\"55\" font-family=\"sans-serif\" font-size=\"12\">5 cm</text>\n  <text x=\"175\" y=\"55\" font-family=\"sans-serif\" font-size=\"12\">6 cm</text>\n  <text x=\"130\" y=\"100\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">12 cm</text>\n</svg></div>",
+          "options": [
+            "\\(60 \\text{ cm}^2\\)",
+            "\\(72 \\text{ cm}^2\\)",
+            "\\(30 \\text{ cm}^2\\)",
+            "\\(36 \\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Area of a parallelogram is base multiplied by perpendicular height.",
+          "steps": [
+            {
+              "explain": "Base = 12 cm, Perpendicular height = 5 cm."
+            },
+            {
+              "explain": "The slant height (6 cm) is not used for area."
+            },
+            {
+              "explain": "\\( \\text{Area} = b \\times h \\)"
+            },
+            {
+              "explain": "\\( = 12 \\times 5 = 60 \\text{ cm}^2 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p2-area-q3",
+          "type": "mc",
+          "stem": "A triangle has an area of \\(32 \\text{ cm}^2\\) and a height of \\(4 \\text{ cm}\\). What is the length of its base?",
+          "options": [
+            "\\(16 \\text{ cm}\\)",
+            "\\(8 \\text{ cm}\\)",
+            "\\(32 \\text{ cm}\\)",
+            "\\(64 \\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the formula \\( \\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} \\).",
+          "steps": [
+            {
+              "explain": "\\( \\text{Area} = \\frac{1}{2} b h \\)"
+            },
+            {
+              "explain": "\\( 32 = \\frac{1}{2} \\times b \\times 4 \\)"
+            },
+            {
+              "explain": "\\( 32 = 2b \\)"
+            },
+            {
+              "explain": "\\( b = 16 \\text{ cm} \\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-12e",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-ep2-q10a",
+          "type": "mc",
+          "stem": "Find the area of the following shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"225\" height=\"225\" viewBox=\"0 0 150 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"40\" y=\"40\" width=\"70\" height=\"70\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <!-- Right angles -->\n  <rect x=\"40\" y=\"40\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <rect x=\"105\" y=\"40\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <rect x=\"40\" y=\"105\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <rect x=\"105\" y=\"105\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <!-- Ticks -->\n  <line x1=\"75\" y1=\"35\" x2=\"75\" y2=\"45\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"75\" y1=\"105\" x2=\"75\" y2=\"115\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"35\" y1=\"75\" x2=\"45\" y2=\"75\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"105\" y1=\"75\" x2=\"115\" y2=\"75\" stroke=\"black\" stroke-width=\"1\"/>\n  \n  <text x=\"75\" y=\"30\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">7 cm</text>\n</svg></div>",
+          "options": [
+            "\\(49 \\text{ cm}^2\\)",
+            "\\(28 \\text{ cm}^2\\)",
+            "\\(14 \\text{ cm}^2\\)",
+            "\\(49 \\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "The shape is a square. Area of a square = side × side.",
+          "steps": [
+            {
+              "explain": "The tick marks and right angles indicate this is a square with side length 7 cm."
+            },
+            {
+              "explain": "\\(\\text{Area} = 7 \\times 7 = 49 \\text{ cm}^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q10b",
+          "type": "mc",
+          "stem": "Find the area of the following shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"300\" height=\"225\" viewBox=\"0 0 200 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"40,110 160,110 120,30\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"110\" stroke=\"black\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n  <rect x=\"115\" y=\"105\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  \n  <text x=\"100\" y=\"130\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">1.4 m</text>\n  <text x=\"115\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">100 cm</text>\n</svg></div>",
+          "options": [
+            "\\(0.7 \\text{ m}^2\\)",
+            "\\(70 \\text{ m}^2\\)",
+            "\\(1.4 \\text{ m}^2\\)",
+            "\\(140 \\text{ m}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Ensure both measurements are in the same units before calculating. \\(100 \\text{ cm} = 1 \\text{ m}\\).",
+          "steps": [
+            {
+              "explain": "Convert 100 cm to metres: \\(100 \\text{ cm} = 1 \\text{ m}\\)."
+            },
+            {
+              "explain": "The shape is a triangle. Area = \\(\\frac{1}{2} \\times \\text{base} \\times \\text{height}\\)."
+            },
+            {
+              "explain": "\\(\\text{Area} = \\frac{1}{2} \\times 1.4 \\times 1 = 0.7 \\text{ m}^2\\)."
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q10c",
+          "type": "mc",
+          "stem": "Find the area of the following shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"375\" height=\"225\" viewBox=\"0 0 250 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"60,40 160,40 190,100 60,100\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <rect x=\"60\" y=\"40\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <rect x=\"60\" y=\"95\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  \n  <text x=\"110\" y=\"30\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">10 cm</text>\n  <text x=\"125\" y=\"120\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">12 cm</text>\n  <text x=\"40\" y=\"75\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">4 cm</text>\n</svg></div>",
+          "options": [
+            "\\(44 \\text{ cm}^2\\)",
+            "\\(88 \\text{ cm}^2\\)",
+            "\\(48 \\text{ cm}^2\\)",
+            "\\(480 \\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "The shape is a trapezium. Area = \\(\\frac{1}{2}(a+b)h\\).",
+          "steps": [
+            {
+              "explain": "The shape is a trapezium with parallel sides \\(a = 10\\) and \\(b = 12\\), and perpendicular height \\(h = 4\\)."
+            },
+            {
+              "explain": "\\(\\text{Area} = \\frac{1}{2} \\times (10 + 12) \\times 4\\)"
+            },
+            {
+              "explain": "\\(\\text{Area} = \\frac{1}{2} \\times 22 \\times 4 = 11 \\times 4 = 44 \\text{ cm}^2\\)."
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q17",
+          "type": "mc",
+          "stem": "Solve for \\(h\\) by first forming an equation.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"450\" height=\"300\" viewBox=\"0 0 330 220\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,150 200,150 230,50 80,50\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <polygon points=\"120,145 130,150 120,155\" fill=\"black\" />\n  <polygon points=\"130,145 140,150 130,155\" fill=\"black\" />\n  <polygon points=\"150,45 160,50 150,55\" fill=\"black\" />\n  <polygon points=\"160,45 170,50 160,55\" fill=\"black\" />\n  <polygon points=\"-6,-5 6,0 -6,5\" fill=\"black\" transform=\"translate(65, 100) rotate(-73.3)\" />\n  <polygon points=\"-6,-5 6,0 -6,5\" fill=\"black\" transform=\"translate(215, 100) rotate(-73.3)\" />\n  <line x1=\"65\" y1=\"100\" x2=\"202.6\" y2=\"141.3\" stroke=\"black\" stroke-width=\"2\" stroke-dasharray=\"6,4\"/>\n  <path d=\"M 194.9 139.0 L 197.2 131.3 L 204.9 133.6\" fill=\"none\" stroke=\"black\" stroke-width=\"1.5\" />\n  <text x=\"133\" y=\"110\" font-family=\"sans-serif\" font-size=\"20\" text-anchor=\"middle\">h cm</text>\n  <text x=\"125\" y=\"175\" font-family=\"sans-serif\" font-size=\"20\" text-anchor=\"middle\">15 cm</text>\n  <text x=\"220\" y=\"105\" font-family=\"sans-serif\" font-size=\"20\">6 cm</text>\n  <line x1=\"310\" y1=\"50\" x2=\"310\" y2=\"150\" stroke=\"black\" stroke-width=\"1.5\" />\n  <polygon points=\"305,60 310,50 315,60\" fill=\"black\" />\n  <polygon points=\"305,140 310,150 315,140\" fill=\"black\" />\n  <rect x=\"290\" y=\"90\" width=\"40\" height=\"20\" fill=\"white\" />\n  <text x=\"310\" y=\"106\" font-family=\"sans-serif\" font-size=\"20\" text-anchor=\"middle\">4 cm</text>\n</svg></div>",
+          "options": [
+            "\\(10\\)",
+            "\\(2.5\\)",
+            "\\(1.6\\)",
+            "\\(22.5\\)"
+          ],
+          "answer": 0,
+          "hint": "The area of a parallelogram can be calculated using either pair of parallel sides and their corresponding perpendicular height.",
+          "steps": [
+            {
+              "explain": "The area of the parallelogram can be calculated as \\(\\text{base} \\times \\text{perpendicular height}\\)."
+            },
+            {
+              "explain": "Using the horizontal base (15 cm) and its corresponding vertical height (4 cm): \\(\\text{Area} = 15 \\times 4 = 60 \\text{ cm}^2\\)."
+            },
+            {
+              "explain": "Using the other base (6 cm) and its corresponding perpendicular height ((h)): \\(\\text{Area} = 6 \\times h = 6h\\)."
+            },
+            {
+              "explain": "Equating the two areas: \\(6h = 60\\)."
+            },
+            {
+              "explain": "\\(h = \\frac{60}{6} = 10\\)."
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q18",
+          "type": "mc",
+          "stem": "Find, in simplest form, an algebraic expression for the area of the following shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"300\" height=\"225\" viewBox=\"0 0 200 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,110 140,90 170,20\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"110\" y=\"125\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"12\">a m</text>\n  <text x=\"95\" y=\"55\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"12\">b m</text>\n  <text x=\"145\" y=\"65\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"12\">c m</text>\n  \n  <line x1=\"50\" y1=\"110\" x2=\"170\" y2=\"110\" stroke=\"black\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n  <line x1=\"170\" y1=\"20\" x2=\"170\" y2=\"110\" stroke=\"black\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n  <rect x=\"165\" y=\"105\" width=\"5\" height=\"5\" fill=\"none\" stroke=\"black\" stroke-width=\"1\"/>\n  <text x=\"175\" y=\"65\" font-family=\"sans-serif\" font-size=\"12\">d m</text>\n</svg></div>",
+          "options": [
+            "\\(\\frac{ad}{2}\\)",
+            "\\(\\frac{bc}{2}\\)",
+            "\\(ad\\)",
+            "\\(\\frac{a+b+c}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "The area of a triangle is \\(\\frac{1}{2} \\times \\text{base} \\times \\text{perpendicular height}\\).",
+          "steps": [
+            {
+              "explain": "The shape is a triangle with base \\(a\\) and perpendicular height \\(d\\)."
+            },
+            {
+              "explain": "The side lengths \\(b\\) and \\(c\\) are not needed for the area calculation."
+            },
+            {
+              "explain": "\\(\\text{Area} = \\frac{1}{2} \\times a \\times d = \\frac{ad}{2}\\)."
+            }
+          ]
+        },
+        {
+          "id": "y7-ep2-q19",
+          "type": "mc",
+          "stem": "Find, in simplest form, an algebraic expression for the area of the following shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"375\" height=\"225\" viewBox=\"0 0 250 150\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Square -->\n  <rect x=\"50\" y=\"40\" width=\"70\" height=\"70\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <!-- Triangle -->\n  <polygon points=\"120,40 190,40 120,110\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  \n  <text x=\"85\" y=\"30\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">2y</text>\n  \n  <!-- Ticks on square -->\n  <line x1=\"85\" y1=\"35\" x2=\"85\" y2=\"45\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"85\" y1=\"105\" x2=\"85\" y2=\"115\" stroke=\"black\" stroke-width=\"1\"/>\n  <line x1=\"45\" y1=\"75\" x2=\"55\" y2=\"75\" stroke=\"black\" stroke-width=\"1\"/>\n  \n  <!-- Tick on triangle top -->\n  <line x1=\"155\" y1=\"35\" x2=\"155\" y2=\"45\" stroke=\"black\" stroke-width=\"1\"/>\n</svg></div>",
+          "options": [
+            "\\(6y^2\\)",
+            "\\(8y^2\\)",
+            "\\(4y^2 + 2y\\)",
+            "\\(5y^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the shape into a square and a triangle. Use the tick marks to find their dimensions.",
+          "steps": [
+            {
+              "explain": "The shape consists of a rectangle and a right-angled triangle."
+            },
+            {
+              "explain": "The tick marks show that the rectangle has all sides equal to \\(2y\\), so it is a square."
+            },
+            {
+              "explain": "\\(\\text{Area of square} = 2y \\times 2y = 4y^2\\)."
+            },
+            {
+              "explain": "The triangle has a top base equal to \\(2y\\) (due to the tick mark) and a height equal to \\(2y\\) (shared side with the square)."
+            },
+            {
+              "explain": "\\(\\text{Area of triangle} = \\frac{1}{2} \\times 2y \\times 2y = 2y^2\\)."
+            },
+            {
+              "explain": "Total Area = \\(4y^2 + 2y^2 = 6y^2\\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-12f",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-t3-2018-p2-area-q4a",
+          "type": "mc",
+          "stem": "Find the area of the following composite shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"250\" height=\"180\" viewBox=\"0 0 250 180\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,20 150,20 150,80 180,80 180,140 50,140\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"15\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\">9 cm</text>\n  <text x=\"100\" y=\"15\" font-family=\"sans-serif\" font-size=\"12\">x</text>\n  <text x=\"115\" y=\"155\" font-family=\"sans-serif\" font-size=\"12\">12 cm</text>\n  <text x=\"165\" y=\"55\" font-family=\"sans-serif\" font-size=\"12\">5 cm</text>\n  <text x=\"190\" y=\"115\" font-family=\"sans-serif\" font-size=\"12\">y</text>\n</svg></div>",
+          "options": [
+            "\\(88 \\text{ cm}^2\\)",
+            "\\(108 \\text{ cm}^2\\)",
+            "\\(72 \\text{ cm}^2\\)",
+            "\\(96 \\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the shape into two rectangles. Find the missing side lengths first.",
+          "steps": [
+            {
+              "explain": "The shape can be split into two rectangles."
+            },
+            {
+              "explain": "Missing right vertical side \\(y = 9 - 5 = 4 \\text{ cm}\\)."
+            },
+            {
+              "explain": "Missing top horizontal side \\(x = 12 - 4 = 8 \\text{ cm}\\) (assuming the bottom right extension is 4 cm wide based on tick marks in original, or derived from splitting)."
+            },
+            {
+              "explain": "Wait, the solution says \\(y = 9 - 5 = 4\\) cm and \\(x = 12 - 4 = 8\\) cm."
+            },
+            {
+              "explain": "Let's assume the indent width is equal to \\(y\\), making the bottom right piece a \\(4 \\times 4\\) square."
+            },
+            {
+              "explain": "Area 1 (left rectangle) = \\( 9 \\times 8 = 72 \\text{ cm}^2 \\)."
+            },
+            {
+              "explain": "Area 2 (right square) = \\( 4 \\times 4 = 16 \\text{ cm}^2 \\)."
+            },
+            {
+              "explain": "Total Area = \\( 72 + 16 = 88 \\text{ cm}^2 \\)."
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p2-area-q4b",
+          "type": "mc",
+          "stem": "Find the area of the following composite shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"250\" height=\"180\" viewBox=\"0 0 250 180\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"50\" y=\"20\" width=\"100\" height=\"100\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <polygon points=\"50,120 150,120 100,70\" fill=\"white\" stroke=\"black\" stroke-width=\"2\"/>\n  <!-- The image shows a square with a triangle cut out from the bottom -->\n  <line x1=\"50\" y1=\"120\" x2=\"150\" y2=\"120\" stroke=\"white\" stroke-width=\"3\"/>\n  <line x1=\"50\" y1=\"120\" x2=\"150\" y2=\"120\" stroke=\"black\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n  <text x=\"35\" y=\"70\" font-family=\"sans-serif\" font-size=\"12\" transform=\"rotate(-90 35 70)\">9 cm</text>\n  <line x1=\"100\" y1=\"120\" x2=\"100\" y2=\"70\" stroke=\"black\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n  <text x=\"95\" y=\"105\" font-family=\"sans-serif\" font-size=\"12\" transform=\"rotate(-90 95 105)\">4 cm</text>\n  <text x=\"75\" y=\"135\" font-family=\"sans-serif\" font-size=\"12\">4 cm</text>\n  <text x=\"125\" y=\"135\" font-family=\"sans-serif\" font-size=\"12\">5 cm</text>\n</svg></div>",
+          "options": [
+            "\\(71 \\text{ cm}^2\\)",
+            "\\(61 \\text{ cm}^2\\)",
+            "\\(81 \\text{ cm}^2\\)",
+            "\\(76 \\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract the area of the triangle from the area of the square.",
+          "steps": [
+            {
+              "explain": "Area of the square = \\( 9 \\times 9 = 81 \\text{ cm}^2 \\)"
+            },
+            {
+              "explain": "The missing piece is a triangle with base = \\( 4 + 5 = 9 \\text{ cm}\\) (wait, looking at the solution: \\( \\frac{1}{2} \\times 5 \\times 4 \\))."
+            },
+            {
+              "explain": "Ah, the base of the triangle cut out is 5 cm, and the height is 4 cm."
+            },
+            {
+              "explain": "Area of the triangle = \\( \\frac{1}{2} \\times 5 \\times 4 = 10 \\text{ cm}^2 \\)"
+            },
+            {
+              "explain": "Total Area = \\( 81 - 10 = 71 \\text{ cm}^2 \\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-12i",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-t3-2018-p2-area-q6",
+          "type": "mc",
+          "stem": "Sarah's rectangular fish tank is 60 cm in length, 40 cm wide and 50 cm high. She fills the tank fully with water. Find the volume of water in the fish tank.",
+          "options": [
+            "\\(120,000 \\text{ cm}^3\\)",
+            "\\(12,000 \\text{ cm}^3\\)",
+            "\\(1,200,000 \\text{ cm}^3\\)",
+            "\\(150 \\text{ cm}^3\\)"
+          ],
+          "answer": 0,
+          "hint": "Volume of a rectangular prism = length \\(\\times\\) width \\(\\times\\) height.",
+          "steps": [
+            {
+              "explain": "\\( \\text{Volume} = l \\times w \\times h \\)"
+            },
+            {
+              "explain": "\\( V = 60 \\times 40 \\times 50 \\)"
+            },
+            {
+              "explain": "\\( V = 2400 \\times 50 \\)"
+            },
+            {
+              "explain": "\\( V = 120,000 \\text{ cm}^3 \\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

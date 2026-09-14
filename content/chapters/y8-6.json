@@ -1,0 +1,4029 @@
+{
+  "chapterId": "y8-6",
+  "title": "Chapter 6: Substitution",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "y8-6a",
+      "code": "6A",
+      "title": "Substitution",
+      "questions": [
+        {
+          "id": "y8-6a-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(3\\) for \\(x\\) in the expression \\(x + 5\\) and evaluate.",
+          "options": [
+            "\\(10\\)",
+            "\\(7\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "Replace every x with 3, then simplify.",
+          "solution": "\\(3 + 5 = 8\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(3 + 5 = 8\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(8\\)"
+            },
+            {
+              "explain": "Final answer: 8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(3\\) for \\(x\\) in the expression \\(4x\\) and evaluate.",
+          "options": [
+            "\\(14\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(13\\)"
+          ],
+          "answer": 2,
+          "hint": "Replace every x with 3, then simplify.",
+          "solution": "\\(4 \\times 3 = 12\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(4 \\times 3 = 12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(12\\)"
+            },
+            {
+              "explain": "Final answer: 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(12\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(3\\) for \\(x\\) in the expression \\(\\frac{x}{2}\\) and evaluate.",
+          "options": [
+            "\\(\\frac{4}{2}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{3}{2}\\)",
+            "\\(\\frac{3}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Replace every x with 3, then simplify.",
+          "solution": "\\(\\frac{3}{2}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\frac{3}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(\\frac{3}{2}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{3}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(\\frac{3}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(3\\) for \\(x\\) in the expression \\(\\frac{7x}{2}\\) and evaluate.",
+          "options": [
+            "\\(\\frac{22}{2}\\)",
+            "\\(\\frac{21}{2}\\)",
+            "\\(\\frac{2}{21}\\)",
+            "\\(\\frac{31}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Replace every x with 3, then simplify.",
+          "solution": "\\(\\frac{7 \\times 3}{2} = \\frac{21}{2}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\frac{7 \\times 3}{2} = \\frac{21}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(\\frac{21}{2}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{21}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(\\frac{21}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(3\\) for \\(x\\) in the expression \\(3(x + 4)\\) and evaluate.",
+          "options": [
+            "\\(23\\)",
+            "\\(20\\)",
+            "\\(21\\)",
+            "\\(22\\)"
+          ],
+          "answer": 2,
+          "hint": "Replace every x with 3, then simplify.",
+          "solution": "\\(3(3 + 4) = 3 \\times 7 = 21\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(3(3 + 4) = 3 \\times 7 = 21\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(21\\)"
+            },
+            {
+              "explain": "Final answer: 21. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(21\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(3\\) for \\(x\\) in the expression \\(2(x - 1)\\) and evaluate.",
+          "options": [
+            "\\(6\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 2,
+          "hint": "Replace every x with 3, then simplify.",
+          "solution": "\\(2(3 - 1) = 2 \\times 2 = 4\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(2(3 - 1) = 2 \\times 2 = 4\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(4\\)"
+            },
+            {
+              "explain": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q1g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(3\\) for \\(x\\) in the expression \\(\\frac{x + 8}{2}\\) and evaluate.",
+          "options": [
+            "\\(\\frac{12}{2}\\)",
+            "\\(\\frac{11}{2}\\)",
+            "\\(\\frac{11}{3}\\)",
+            "\\(\\frac{2}{11}\\)"
+          ],
+          "answer": 1,
+          "hint": "Replace every x with 3, then simplify.",
+          "solution": "\\(\\frac{3 + 8}{2} = \\frac{11}{2}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\frac{3 + 8}{2} = \\frac{11}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(\\frac{11}{2}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{11}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(\\frac{11}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q1h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(3\\) for \\(x\\) in the expression \\(\\frac{9 - x}{4}\\) and evaluate.",
+          "options": [
+            "\\(\\frac{4}{2}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{3}{2}\\)",
+            "\\(\\frac{3}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Replace every x with 3, then simplify.",
+          "solution": "\\(\\frac{9 - 3}{4} = \\frac{6}{4} = \\frac{3}{2}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\frac{9 - 3}{4} = \\frac{6}{4} = \\frac{3}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(\\frac{3}{2}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{3}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(\\frac{3}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(-4\\) for \\(x\\) in the expression \\(x + 3\\) and evaluate.",
+          "options": [
+            "\\(-1\\)",
+            "\\(-2\\)",
+            "\\(0\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace every x with −4, then simplify carefully with negatives.",
+          "solution": "\\(-4 + 3 = -1\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-4 + 3 = -1\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-1\\)"
+            },
+            {
+              "explain": "Final answer: -1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-1\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(-4\\) for \\(x\\) in the expression \\(-2x\\) and evaluate.",
+          "options": [
+            "\\(10\\)",
+            "\\(7\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "Replace every x with −4, then simplify carefully with negatives.",
+          "solution": "\\(-2 \\times (-4) = 8\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-2 \\times (-4) = 8\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(8\\)"
+            },
+            {
+              "explain": "Final answer: 8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(-4\\) for \\(x\\) in the expression \\(\\frac{x}{6}\\) and evaluate.",
+          "options": [
+            "\\(-\\frac{3}{3}\\)",
+            "\\(-\\frac{2}{3}\\)",
+            "\\(-\\frac{3}{2}\\)",
+            "\\(-\\frac{4}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Replace every x with −4, then simplify carefully with negatives.",
+          "solution": "\\(\\frac{-4}{6} = -\\frac{2}{3}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\frac{-4}{6} = -\\frac{2}{3}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-\\frac{2}{3}\\)"
+            },
+            {
+              "explain": "Final answer: -\\frac{2}{3}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-\\frac{2}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(-4\\) for \\(x\\) in the expression \\(\\frac{x}{2}\\) and evaluate.",
+          "options": [
+            "\\(-1\\)",
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "hint": "Replace every x with −4, then simplify carefully with negatives.",
+          "solution": "\\(\\frac{-4}{2} = -2\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\frac{-4}{2} = -2\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-2\\)"
+            },
+            {
+              "explain": "Final answer: -2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q2e",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Substitute \\(-4\\) for \\(x\\) in the expression \\(2(x + 5)\\) and evaluate.",
+          "answer": "2",
+          "hint": "Replace every x with −4, then simplify carefully with negatives.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(2(-4 + 5) = 2 \\times 1 = 2\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(2\\)"
+            },
+            {
+              "explain": "Final answer: 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(2\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-6a-q2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(-4\\) for \\(x\\) in the expression \\(2(x - 5)\\) and evaluate.",
+          "options": [
+            "\\(-17\\)",
+            "\\(-18\\)",
+            "\\(-19\\)",
+            "\\(20\\)"
+          ],
+          "answer": 1,
+          "hint": "Replace every x with −4, then simplify carefully with negatives.",
+          "solution": "\\(2(-4 - 5) = 2 \\times (-9) = -18\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(2(-4 - 5) = 2 \\times (-9) = -18\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-18\\)"
+            },
+            {
+              "explain": "Final answer: -18. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-18\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q2g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(-4\\) for \\(x\\) in the expression \\(\\frac{x + 8}{2}\\) and evaluate.",
+          "options": [
+            "\\(2\\)",
+            "\\(6\\)",
+            "\\(-6\\)",
+            "\\(-2\\)"
+          ],
+          "answer": 0,
+          "hint": "Replace every x with −4, then simplify carefully with negatives.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Substitute \\(x = -4\\) into the expression.",
+              "work": "\\(\\dfrac{x+8}{2} = \\dfrac{-4+8}{2}\\)"
+            },
+            {
+              "explain": "Evaluate the numerator first: \\(-4+8\\). A common mistake is ignoring the sign of \\(x\\) and computing \\(4+8=12\\) instead.",
+              "work": "\\(-4+8 = 4\\)"
+            },
+            {
+              "explain": "Divide by 2 to get the final value.",
+              "work": "\\(\\dfrac{4}{2} = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q2h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(-4\\) for \\(x\\) in the expression \\(5(x - 4)\\) and evaluate.",
+          "options": [
+            "\\(-39\\)",
+            "\\(-40\\)",
+            "\\(-41\\)",
+            "\\(42\\)"
+          ],
+          "answer": 1,
+          "hint": "Replace every x with −4, then simplify carefully with negatives.",
+          "solution": "\\(5(-4 - 4) = 5 \\times (-8) = -40\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(5(-4 - 4) = 5 \\times (-8) = -40\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-40\\)"
+            },
+            {
+              "explain": "Final answer: -40. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression \\(n^2\\) when \\(n = -2\\).",
+          "options": [
+            "\\(6\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 2,
+          "hint": "Be careful with the order of operations and negative signs.",
+          "solution": "\\((-2)^2 = 4\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-2)^2 = 4\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(4\\)"
+            },
+            {
+              "explain": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression \\((-n)^2\\) when \\(n = -2\\).",
+          "options": [
+            "\\(6\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 2,
+          "hint": "Be careful with the order of operations and negative signs.",
+          "solution": "\\((-(-2))^2 = 2^2 = 4\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-(-2))^2 = 2^2 = 4\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(4\\)"
+            },
+            {
+              "explain": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression \\(-n^2\\) when \\(n = -2\\).",
+          "options": [
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(-5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "Be careful with the order of operations and negative signs.",
+          "solution": "\\(-((-2)^2) = -(4) = -4\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-((-2)^2) = -(4) = -4\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-4\\)"
+            },
+            {
+              "explain": "Final answer: -4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression \\(n^3\\) when \\(n = -2\\).",
+          "options": [
+            "\\(-7\\)",
+            "\\(-8\\)",
+            "\\(-9\\)",
+            "\\(10\\)"
+          ],
+          "answer": 1,
+          "hint": "Be careful with the order of operations and negative signs.",
+          "solution": "\\((-2)^3 = -8\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-2)^3 = -8\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-8\\)"
+            },
+            {
+              "explain": "Final answer: -8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q3e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression \\((-n)^3\\) when \\(n = -2\\).",
+          "options": [
+            "\\(10\\)",
+            "\\(7\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "Be careful with the order of operations and negative signs.",
+          "solution": "\\((-(-2))^3 = 2^3 = 8\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-(-2))^3 = 2^3 = 8\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(8\\)"
+            },
+            {
+              "explain": "Final answer: 8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q3f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression \\((3n)^2\\) when \\(n = -2\\).",
+          "options": [
+            "\\(38\\)",
+            "\\(35\\)",
+            "\\(36\\)",
+            "\\(37\\)"
+          ],
+          "answer": 2,
+          "hint": "Be careful with the order of operations and negative signs.",
+          "solution": "\\((3 \\times (-2))^2 = (-6)^2 = 36\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((3 \\times (-2))^2 = (-6)^2 = 36\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(36\\)"
+            },
+            {
+              "explain": "Final answer: 36. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(36\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q3g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression \\(3n^2\\) when \\(n = -2\\).",
+          "options": [
+            "\\(14\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(13\\)"
+          ],
+          "answer": 2,
+          "hint": "Be careful with the order of operations and negative signs.",
+          "solution": "\\(3 \\times (-2)^2 = 3 \\times 4 = 12\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(3 \\times (-2)^2 = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(12\\)"
+            },
+            {
+              "explain": "Final answer: 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(12\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a + b\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "-1",
+            "1",
+            "7",
+            "-7"
+          ],
+          "answer": 1,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Identify the expression to evaluate and the values to substitute.",
+              "work": "Expression: \\(a + b\\)\nValues: \\(a = -3\\), \\(b = 4\\)"
+            },
+            {
+              "explain": "Substitute the given values for \\(a\\) and \\(b\\) into the expression.",
+              "work": "\\(-3 + 4\\)"
+            },
+            {
+              "explain": "Perform the addition. Since we are adding a positive number to a negative number, it is the same as \\(4 - 3\\).",
+              "work": "\\(4 - 3 = 1\\)"
+            },
+            {
+              "explain": "The final answer is 1.",
+              "work": "Final Answer: 1"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a^2 + c\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "\\(9\\)",
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "\\((-3)^2 + (-2) = 9 - 2 = 7\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-3)^2 + (-2) = 9 - 2 = 7\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(7\\)"
+            },
+            {
+              "explain": "Final answer: 7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a - c\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "\\(-1\\)",
+            "\\(-2\\)",
+            "\\(0\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "\\(-3 - (-2) = -3 + 2 = -1\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-3 - (-2) = -3 + 2 = -1\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-1\\)"
+            },
+            {
+              "explain": "Final answer: -1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-1\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(c^5\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "\\(-31\\)",
+            "\\(-32\\)",
+            "\\(-33\\)",
+            "\\(34\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "\\((-2)^5 = -32\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-2)^5 = -32\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-32\\)"
+            },
+            {
+              "explain": "Final answer: -32. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-32\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a^2 + b^2\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "\\(27\\)",
+            "\\(24\\)",
+            "\\(25\\)",
+            "\\(26\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "\\((-3)^2 + 4^2 = 9 + 16 = 25\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-3)^2 + 4^2 = 9 + 16 = 25\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(25\\)"
+            },
+            {
+              "explain": "Final answer: 25. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(25\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a - b\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "\\(-6\\)",
+            "\\(-7\\)",
+            "\\(-8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "\\(-3 - 4 = -7\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-3 - 4 = -7\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-7\\)"
+            },
+            {
+              "explain": "Final answer: -7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a^2 - c^2\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "\\(7\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "\\((-3)^2 - (-2)^2 = 9 - 4 = 5\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-3)^2 - (-2)^2 = 9 - 4 = 5\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(5\\)"
+            },
+            {
+              "explain": "Final answer: 5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(-c\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "The expression \\(-c\\) only involves \\(c\\) — the given values of \\(a\\) and \\(b\\) are not needed here.",
+              "work": "\\(-c, \\quad c = -2\\)"
+            },
+            {
+              "explain": "Substitute \\(c=-2\\): the negative of a negative number is positive. A common mistake is forgetting to flip the sign, giving \\(-2\\) instead.",
+              "work": "\\(-c = -(-2)\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(-(-2) = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(\\frac{b}{c}\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "\\(-1\\)",
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "\\(\\frac{4}{-2} = -2\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\frac{4}{-2} = -2\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-2\\)"
+            },
+            {
+              "explain": "Final answer: -2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(\\frac{b}{c^3}\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "\\(-\\frac{2}{2}\\)",
+            "\\(-\\frac{1}{2}\\)",
+            "\\(-\\frac{2}{1}\\)",
+            "\\(-\\frac{3}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "\\(\\frac{4}{(-2)^3} = \\frac{4}{-8} = -\\frac{1}{2}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\frac{4}{(-2)^3} = \\frac{4}{-8} = -\\frac{1}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-\\frac{1}{2}\\)"
+            },
+            {
+              "explain": "Final answer: -\\frac{1}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-\\frac{1}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4k",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\((2c)^2\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "\\(18\\)",
+            "\\(15\\)",
+            "\\(16\\)",
+            "\\(17\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "\\((2 \\times (-2))^2 = (-4)^2 = 16\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((2 \\times (-2))^2 = (-4)^2 = 16\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(16\\)"
+            },
+            {
+              "explain": "Final answer: 16. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(16\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q4l",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\((2c)^3\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -2\\).",
+          "options": [
+            "\\(-63\\)",
+            "\\(-64\\)",
+            "\\(-65\\)",
+            "\\(66\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the values and simplify step by step.",
+          "solution": "\\((2 \\times (-2))^3 = (-4)^3 = -64\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((2 \\times (-2))^3 = (-4)^3 = -64\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-64\\)"
+            },
+            {
+              "explain": "Final answer: -64. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-64\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(c^2\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -\\frac{1}{2}\\).",
+          "options": [
+            "\\(\\frac{2}{4}\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{1}{4} + 1\\)",
+            "\\(\\frac{4}{1}\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute carefully, especially with the fraction for c.",
+          "solution": "\\(\\left(-\\frac{1}{2}\\right)^2 = \\frac{1}{4}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\left(-\\frac{1}{2}\\right)^2 = \\frac{1}{4}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(\\frac{1}{4}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{1}{4}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(\\frac{1}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a^2 - c^2\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -\\frac{1}{2}\\).",
+          "options": [
+            "\\(\\frac{36}{4}\\)",
+            "\\(\\frac{35}{4}\\)",
+            "\\(\\frac{35}{4} + 1\\)",
+            "\\(\\frac{4}{35}\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute carefully, especially with the fraction for c.",
+          "solution": "\\((-3)^2 - \\left(-\\frac{1}{2}\\right)^2 = 9 - \\frac{1}{4} = \\frac{35}{4}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-3)^2 - \\left(-\\frac{1}{2}\\right)^2 = 9 - \\frac{1}{4} = \\frac{35}{4}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(\\frac{35}{4}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{35}{4}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(\\frac{35}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a - b\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -\\frac{1}{2}\\).",
+          "options": [
+            "\\(-6\\)",
+            "\\(-7\\)",
+            "\\(-8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute carefully, especially with the fraction for c.",
+          "solution": "\\(-3 - 4 = -7\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-3 - 4 = -7\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-7\\)"
+            },
+            {
+              "explain": "Final answer: -7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q5d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(b - a\\) when \\(a = -3\\), \\(b = 4\\) and \\(c = -\\frac{1}{2}\\).",
+          "options": [
+            "\\(9\\)",
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute carefully, especially with the fraction for c.",
+          "solution": "\\(4 - (-3) = 4 + 3 = 7\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(4 - (-3) = 4 + 3 = 7\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(7\\)"
+            },
+            {
+              "explain": "Final answer: 7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(-(2x)\\) when \\(x = -3\\) and \\(y = -2\\).",
+          "options": [
+            "\\(8\\)",
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(7\\)"
+          ],
+          "answer": 2,
+          "hint": "Watch the sign rules when multiplying or dividing negatives.",
+          "solution": "\\(-(2 \\times (-3)) = -(-6) = 6\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-(2 \\times (-3)) = -(-6) = 6\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(6\\)"
+            },
+            {
+              "explain": "Final answer: 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(-xy\\) when \\(x = -3\\) and \\(y = -2\\).",
+          "options": [
+            "\\(-5\\)",
+            "\\(-6\\)",
+            "\\(-7\\)",
+            "\\(8\\)"
+          ],
+          "answer": 1,
+          "hint": "Watch the sign rules when multiplying or dividing negatives.",
+          "solution": "\\(-(-3)(-2) = -(6) = -6\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-(-3)(-2) = -(6) = -6\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-6\\)"
+            },
+            {
+              "explain": "Final answer: -6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(2x + 3y\\) when \\(x = -3\\) and \\(y = -2\\).",
+          "options": [
+            "\\(-11\\)",
+            "\\(-12\\)",
+            "\\(-13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 1,
+          "hint": "Watch the sign rules when multiplying or dividing negatives.",
+          "solution": "\\(2(-3) + 3(-2) = -6 - 6 = -12\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(2(-3) + 3(-2) = -6 - 6 = -12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-12\\)"
+            },
+            {
+              "explain": "Final answer: -12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-12\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(\\frac{x}{y}\\) when \\(x = -3\\) and \\(y = -2\\).",
+          "options": [
+            "\\(\\frac{4}{2}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{3}{2}\\)",
+            "\\(\\frac{3}{3}\\)"
+          ],
+          "answer": 2,
+          "hint": "Watch the sign rules when multiplying or dividing negatives.",
+          "solution": "\\(\\frac{-3}{-2} = \\frac{3}{2}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\frac{-3}{-2} = \\frac{3}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(\\frac{3}{2}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{3}{2}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(\\frac{3}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q6e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(\\frac{6x}{y}\\) when \\(x = -3\\) and \\(y = -2\\).",
+          "options": [
+            "\\(11\\)",
+            "\\(10\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 3,
+          "hint": "Watch the sign rules when multiplying or dividing negatives.",
+          "solution": "\\(\\frac{6(-3)}{-2} = \\frac{-18}{-2} = 9\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\frac{6(-3)}{-2} = \\frac{-18}{-2} = 9\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(9\\)"
+            },
+            {
+              "explain": "Final answer: 9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q6f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(x^2 + y^2\\) when \\(x = -3\\) and \\(y = -2\\).",
+          "options": [
+            "\\(15\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Watch the sign rules when multiplying or dividing negatives.",
+          "solution": "\\((-3)^2 + (-2)^2 = 9 + 4 = 13\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-3)^2 + (-2)^2 = 9 + 4 = 13\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(13\\)"
+            },
+            {
+              "explain": "Final answer: 13. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(13\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q6g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(x + y\\) when \\(x = -3\\) and \\(y = -2\\).",
+          "options": [
+            "\\(-4\\)",
+            "\\(-5\\)",
+            "\\(-6\\)",
+            "\\(7\\)"
+          ],
+          "answer": 1,
+          "hint": "Watch the sign rules when multiplying or dividing negatives.",
+          "solution": "\\(-3 + (-2) = -5\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-3 + (-2) = -5\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-5\\)"
+            },
+            {
+              "explain": "Final answer: -5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q6h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(-5x + 6y\\) when \\(x = -3\\) and \\(y = -2\\).",
+          "options": [
+            "\\(3\\)",
+            "\\(27\\)",
+            "\\(-27\\)",
+            "\\(-3\\)"
+          ],
+          "answer": 0,
+          "hint": "Watch the sign rules when multiplying or dividing negatives.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Substitute \\(x=-3\\) and \\(y=-2\\) into the expression.",
+              "work": "\\(-5x + 6y = -5(-3) + 6(-2)\\)"
+            },
+            {
+              "explain": "Evaluate each product carefully with the sign rules: negative \\(\\times\\) negative gives a positive, negative \\(\\times\\) negative also gives a positive here since \\(6\\) is positive and \\(y\\) is negative, so \\(6(-2)\\) is negative.",
+              "work": "\\(-5(-3) = 15, \\quad 6(-2) = -12\\)"
+            },
+            {
+              "explain": "Add the two results, keeping the signs. A common mistake is dropping one of the negative signs, giving \\(27\\) or \\(-27\\) instead.",
+              "work": "\\(15 + (-12) = 3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q6i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(-3y\\) when \\(x = -3\\) and \\(y = -2\\).",
+          "options": [
+            "\\(8\\)",
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(7\\)"
+          ],
+          "answer": 2,
+          "hint": "Watch the sign rules when multiplying or dividing negatives.",
+          "solution": "\\(-3 \\times (-2) = 6\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-3 \\times (-2) = 6\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(6\\)"
+            },
+            {
+              "explain": "Final answer: 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q6j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(x^2 y\\) when \\(x = -3\\) and \\(y = -2\\).",
+          "options": [
+            "\\(-17\\)",
+            "\\(-18\\)",
+            "\\(-19\\)",
+            "\\(20\\)"
+          ],
+          "answer": 1,
+          "hint": "Watch the sign rules when multiplying or dividing negatives.",
+          "solution": "\\((-3)^2 \\times (-2) = 9 \\times (-2) = -18\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-3)^2 \\times (-2) = 9 \\times (-2) = -18\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-18\\)"
+            },
+            {
+              "explain": "Final answer: -18. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-18\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q6k",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(x^3 + y^3\\) when \\(x = -3\\) and \\(y = -2\\).",
+          "options": [
+            "\\(-34\\)",
+            "\\(-35\\)",
+            "\\(-36\\)",
+            "\\(37\\)"
+          ],
+          "answer": 1,
+          "hint": "Watch the sign rules when multiplying or dividing negatives.",
+          "solution": "\\((-3)^3 + (-2)^3 = -27 + (-8) = -35\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-3)^3 + (-2)^3 = -27 + (-8) = -35\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-35\\)"
+            },
+            {
+              "explain": "Final answer: -35. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-35\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a + b + c\\) when \\(a = 2\\), \\(b = 4\\) and \\(c = -3\\).",
+          "options": [
+            "\\(3\\)",
+            "\\(9\\)",
+            "\\(-5\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute each variable and follow order of operations.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Substitute \\(a=2\\), \\(b=4\\), \\(c=-3\\) into the expression.",
+              "work": "\\(a+b+c = 2+4+(-3)\\)"
+            },
+            {
+              "explain": "Add the first two values.",
+              "work": "\\(2+4 = 6\\)"
+            },
+            {
+              "explain": "Add the negative value of \\(c\\). A common mistake is ignoring its sign and computing \\(6+3=9\\) instead.",
+              "work": "\\(6 + (-3) = 3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a - c + b\\) when \\(a = 2\\), \\(b = 4\\) and \\(c = -3\\).",
+          "options": [
+            "\\(11\\)",
+            "\\(10\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute each variable and follow order of operations.",
+          "solution": "\\(2 - (-3) + 4 = 2 + 3 + 4 = 9\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(2 - (-3) + 4 = 2 + 3 + 4 = 9\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(9\\)"
+            },
+            {
+              "explain": "Final answer: 9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a^2 + b^2 + c^2\\) when \\(a = 2\\), \\(b = 4\\) and \\(c = -3\\).",
+          "options": [
+            "\\(31\\)",
+            "\\(28\\)",
+            "\\(29\\)",
+            "\\(30\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute each variable and follow order of operations.",
+          "solution": "\\(2^2 + 4^2 + (-3)^2 = 4 + 16 + 9 = 29\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(2^2 + 4^2 + (-3)^2 = 4 + 16 + 9 = 29\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(29\\)"
+            },
+            {
+              "explain": "Final answer: 29. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(29\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(a^2 - b^2 - c^2\\) when \\(a = 2\\), \\(b = 4\\) and \\(c = -3\\).",
+          "options": [
+            "\\(-20\\)",
+            "\\(-21\\)",
+            "\\(-22\\)",
+            "\\(23\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute each variable and follow order of operations.",
+          "solution": "\\(2^2 - 4^2 - (-3)^2 = 4 - 16 - 9 = -21\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(2^2 - 4^2 - (-3)^2 = 4 - 16 - 9 = -21\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-21\\)"
+            },
+            {
+              "explain": "Final answer: -21. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-21\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q7e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\((-a)^2 + b^3 + c\\) when \\(a = 2\\), \\(b = 4\\) and \\(c = -3\\).",
+          "options": [
+            "\\(67\\)",
+            "\\(64\\)",
+            "\\(65\\)",
+            "\\(66\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute each variable and follow order of operations.",
+          "solution": "\\((-2)^2 + 4^3 + (-3) = 4 + 64 - 3 = 65\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-2)^2 + 4^3 + (-3) = 4 + 64 - 3 = 65\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(65\\)"
+            },
+            {
+              "explain": "Final answer: 65. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(65\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q7f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(c - a - b\\) when \\(a = 2\\), \\(b = 4\\) and \\(c = -3\\).",
+          "options": [
+            "\\(-10\\)",
+            "\\(-8\\)",
+            "\\(-9\\)",
+            "\\(11\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute each variable and follow order of operations.",
+          "solution": "\\(-3 - 2 - 4 = -9\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-3 - 2 - 4 = -9\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-9\\)"
+            },
+            {
+              "explain": "Final answer: -9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q7g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(c - b + a^2\\) when \\(a = 2\\), \\(b = 4\\) and \\(c = -3\\).",
+          "options": [
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute each variable and follow order of operations.",
+          "solution": "\\(-3 - 4 + 2^2 = -3 - 4 + 4 = -3\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-3 - 4 + 2^2 = -3 - 4 + 4 = -3\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-3\\)"
+            },
+            {
+              "explain": "Final answer: -3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q7h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\(-(2a)^2 + b^3 + c\\) when \\(a = 2\\), \\(b = 4\\) and \\(c = -3\\).",
+          "options": [
+            "\\(47\\)",
+            "\\(44\\)",
+            "\\(45\\)",
+            "\\(46\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute each variable and follow order of operations.",
+          "solution": "\\(-(2 \\times 2)^2 + 4^3 + (-3) = -16 + 64 - 3 = 45\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-(2 \\times 2)^2 + 4^3 + (-3) = -16 + 64 - 3 = 45\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(45\\)"
+            },
+            {
+              "explain": "Final answer: 45. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(45\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6a-q7i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the expression \\((-3a)^3 + 2a - c\\) when \\(a = 2\\), \\(b = 4\\) and \\(c = -3\\).",
+          "options": [
+            "\\(-208\\)",
+            "\\(-209\\)",
+            "\\(-210\\)",
+            "\\(211\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute each variable and follow order of operations.",
+          "solution": "\\((-6)^3 + 2(2) - (-3) = -216 + 4 + 3 = -209\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\((-6)^3 + 2(2) - (-3) = -216 + 4 + 3 = -209\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-209\\)"
+            },
+            {
+              "explain": "Final answer: -209. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-209\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q3b",
+          "type": "mc",
+          "stem": "Simplify the expression:<br><br>\\(5a \\times 4\\)",
+          "options": [
+            "\\(5a4\\)",
+            "\\(20\\)",
+            "\\(9a\\)",
+            "\\(20a\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply the numbers together.",
+          "steps": [
+            {
+              "explain": "Multiply the coefficients (the numbers) together.",
+              "work": "\\(5 \\times 4 = 20\\)"
+            },
+            {
+              "explain": "Keep the variable.",
+              "work": "\\(20a\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q3d",
+          "type": "mc",
+          "stem": "Simplify the expression:<br><br>\\(3b \\times 4a \\times b^2\\)",
+          "options": [
+            "\\(12a^2b^2\\)",
+            "\\(7ab^3\\)",
+            "\\(12ab^3\\)",
+            "\\(12ab^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the numbers together, and use index laws to multiply the \\(b\\) terms.",
+          "steps": [
+            {
+              "explain": "First, multiply the numbers together.",
+              "work": "\\(3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Next, multiply the variables. Keep the \\(a\\) as it is, and multiply \\(b \\times b^2\\).",
+              "work": "\\(b^1 \\times b^2 = b^{1+2} = b^3\\)"
+            },
+            {
+              "explain": "Combine them all together.",
+              "work": "\\(12ab^3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q5_algebra",
+          "type": "mc",
+          "stem": "If \\(x = 5\\) and \\(y = -3\\), evaluate \\(x^2 + 3y^2\\).",
+          "options": [
+            "\\(52\\)",
+            "\\(34\\)",
+            "\\(-2\\)",
+            "\\(-56\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the numbers into the expression. Remember that squaring a negative number gives a positive result.",
+          "steps": [
+            {
+              "explain": "Substitute \\(5\\) for \\(x\\) and \\(-3\\) for \\(y\\).",
+              "work": "\\((5)^2 + 3(-3)^2\\)"
+            },
+            {
+              "explain": "Calculate the squares first according to order of operations.",
+              "work": "\\(25 + 3(9)\\)"
+            },
+            {
+              "explain": "Perform the multiplication.",
+              "work": "\\(25 + 27\\)"
+            },
+            {
+              "explain": "Add the values together.",
+              "work": "\\(52\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-6b",
+      "code": "6B",
+      "title": "Solving equations",
+      "questions": [
+        {
+          "id": "y8-ep1-q1a_algebra",
+          "type": "mc",
+          "stem": "Solve the following equation:<br><br>\\(x + 13 = 17\\)",
+          "options": [
+            "\\(x = -4\\)",
+            "\\(x = 30\\)",
+            "\\(x = 4\\)",
+            "\\(x = 21\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract 13 from both sides of the equation.",
+          "steps": [
+            {
+              "explain": "To isolate \\(x\\), we need to do the opposite of adding 13, which is subtracting 13 from both sides.",
+              "work": "\\(x + 13 - 13 = 17 - 13\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(x = 4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q1b_algebra",
+          "type": "mc",
+          "stem": "Solve the following equation:<br><br>\\(25 = 20 + 2x\\)",
+          "options": [
+            "\\(x = 10\\)",
+            "\\(x = -\\frac{5}{2}\\)",
+            "\\(x = 5\\)",
+            "\\(x = \\frac{5}{2}\\)"
+          ],
+          "answer": 3,
+          "hint": "Subtract 20 from both sides, then divide by 2.",
+          "steps": [
+            {
+              "explain": "First, subtract 20 from both sides.",
+              "work": "\\(25 - 20 = 2x\\)<br>\\(5 = 2x\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(x = \\frac{5}{2} = 2.5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q1c_algebra",
+          "type": "mc",
+          "stem": "Solve the following equation:<br><br>\\(\\frac{a}{3} - 4 = -5\\)",
+          "options": [
+            "\\(a = -3\\)",
+            "\\(a = -1\\)",
+            "\\(a = -27\\)",
+            "\\(a = 3\\)"
+          ],
+          "answer": 0,
+          "hint": "Add 4 to both sides first.",
+          "steps": [
+            {
+              "explain": "First, add 4 to both sides of the equation.",
+              "work": "\\(\\frac{a}{3} = -5 + 4\\)<br>\\(\\frac{a}{3} = -1\\)"
+            },
+            {
+              "explain": "Multiply both sides by 3 to isolate \\(a\\).",
+              "work": "\\(a = -1 \\times 3 = -3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q1e_algebra",
+          "type": "mc",
+          "stem": "Solve the following equation:<br><br>\\(\\frac{m + 3}{2} = -1\\)",
+          "options": [
+            "\\(m = -1\\)",
+            "\\(m = 1\\)",
+            "\\(m = 5\\)",
+            "\\(m = -5\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply both sides by 2 first.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 2 to remove the fraction.",
+              "work": "\\(m + 3 = -1 \\times 2\\)<br>\\(m + 3 = -2\\)"
+            },
+            {
+              "explain": "Subtract 3 from both sides.",
+              "work": "\\(m = -2 - 3 = -5\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-6e",
+      "code": "6E",
+      "title": "Collecting like terms and solving equations",
+      "questions": [
+        {
+          "id": "y8-ep1-q1d_algebra",
+          "type": "mc",
+          "stem": "Solve the following equation:<br><br>\\(3y - 3 = y + 16\\)",
+          "options": [
+            "\\(y = \\frac{19}{2}\\)",
+            "\\(y = \\frac{13}{2}\\)",
+            "\\(y = \\frac{19}{4}\\)",
+            "\\(y = 10\\)"
+          ],
+          "answer": 0,
+          "hint": "Get all the \\(y\\) terms on one side and all the numbers on the other side.",
+          "steps": [
+            {
+              "explain": "Subtract \\(y\\) from both sides.",
+              "work": "\\(2y - 3 = 16\\)"
+            },
+            {
+              "explain": "Add 3 to both sides.",
+              "work": "\\(2y = 19\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(y = \\frac{19}{2} = 9.5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q3a",
+          "type": "mc",
+          "stem": "Simplify the expression:<br><br>\\(10x - 5x\\)",
+          "options": [
+            "\\(50x^2\\)",
+            "\\(15x\\)",
+            "\\(5\\)",
+            "\\(5x\\)"
+          ],
+          "answer": 3,
+          "hint": "Subtract the coefficients of the like terms.",
+          "steps": [
+            {
+              "explain": "These are like terms because they both have exactly the same variable \\(x\\)."
+            },
+            {
+              "explain": "Subtract the numbers in front.",
+              "work": "\\((10 - 5)x = 5x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q3c",
+          "type": "mc",
+          "stem": "Simplify the expression:<br><br>\\(7x + 3y - 5x + 12y\\)",
+          "options": [
+            "\\(17xy\\)",
+            "\\(2x - 9y\\)",
+            "\\(2x + 15y\\)",
+            "\\(12x + 15y\\)"
+          ],
+          "answer": 2,
+          "hint": "Group the \\(x\\) terms together and the \\(y\\) terms together.",
+          "steps": [
+            {
+              "explain": "Identify and group the like terms.",
+              "work": "\\((7x - 5x) + (3y + 12y)\\)"
+            },
+            {
+              "explain": "Combine the \\(x\\) terms and \\(y\\) terms separately.",
+              "work": "\\(2x + 15y\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-6f",
+      "code": "6F",
+      "title": "Problem-solving using algebra",
+      "questions": [
+        {
+          "id": "y8-ep1-q2_algebra",
+          "type": "mc",
+          "stem": "The perimeter of a rectangle is \\(76\\text{cm}\\). The length is \\(13\\text{cm}\\) longer than its breadth. Find the length and breadth of the rectangle.",
+          "options": [
+            "Length: \\(13\\text{ cm}\\), Breadth: \\(12.5\\text{ cm}\\)",
+            "Length: \\(25.5\\text{ cm}\\), Breadth: \\(12.5\\text{ cm}\\)",
+            "Length: \\(50.5\\text{ cm}\\), Breadth: \\(25.5\\text{ cm}\\)",
+            "Length: \\(32.5\\text{ cm}\\), Breadth: \\(19.5\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Let the breadth be \\(x\\). Then the length is \\(x + 13\\). The perimeter is \\(2 \\times \\text{length} + 2 \\times \\text{breadth}\\).",
+          "steps": [
+            {
+              "explain": "Let the breadth be \\(x\\). Because the length is 13cm longer, the length is \\(x + 13\\)."
+            },
+            {
+              "explain": "The formula for the perimeter of a rectangle is \\(2 \\times \\text{length} + 2 \\times \\text{breadth}\\).",
+              "work": "\\(2(x + 13) + 2x = 76\\)"
+            },
+            {
+              "explain": "Expand the brackets and simplify.",
+              "work": "\\(2x + 26 + 2x = 76\\)<br>\\(4x + 26 = 76\\)"
+            },
+            {
+              "explain": "Solve for \\(x\\) (the breadth).",
+              "work": "\\(4x = 50\\)<br>\\(x = \\frac{50}{4} = 12.5\\text{ cm}\\)"
+            },
+            {
+              "explain": "Find the length.",
+              "work": "\\(\\text{Length} = 12.5 + 13 = 25.5\\text{ cm}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-6g",
+      "code": "6G",
+      "title": "Multiplying and dividing algebraic fractions",
+      "questions": [
+        {
+          "id": "y8-ep1-q3e",
+          "type": "mc",
+          "stem": "Simplify the expression:<br><br>\\(\\frac{4xy}{2y^2}\\)",
+          "options": [
+            "\\(\\frac{2x}{y^2}\\)",
+            "\\(\\frac{2x}{y}\\)",
+            "\\(\\frac{x}{2y}\\)",
+            "\\(2xy\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the numbers and cancel out common variables.",
+          "steps": [
+            {
+              "explain": "Divide the numbers.",
+              "work": "\\(\\frac{4}{2} = 2\\)"
+            },
+            {
+              "explain": "Cancel common variables. We have \\(y\\) on top and \\(y^2\\) on the bottom.",
+              "work": "\\(\\frac{y}{y^2} = \\frac{1}{y}\\)"
+            },
+            {
+              "explain": "Combine the results. The \\(x\\) stays on top.",
+              "work": "\\(\\frac{2x}{y}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q3f",
+          "type": "mc",
+          "stem": "Simplify the expression:<br><br>\\(4a^2b \\div 20ab\\)",
+          "options": [
+            "\\(\\frac{a}{5}\\)",
+            "\\(\\frac{1}{5a}\\)",
+            "\\(5a\\)",
+            "\\(\\frac{a^2}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write it as a fraction and cancel out common factors.",
+          "steps": [
+            {
+              "explain": "Write the division as a fraction.",
+              "work": "\\(\\frac{4a^2b}{20ab}\\)"
+            },
+            {
+              "explain": "Simplify the numbers.",
+              "work": "\\(\\frac{4}{20} = \\frac{1}{5}\\)"
+            },
+            {
+              "explain": "Cancel the variables. \\(a^2 \\div a = a\\), and \\(b \\div b = 1\\)."
+            },
+            {
+              "explain": "Combine the results.",
+              "work": "\\(\\frac{a}{5}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-6h",
+      "code": "6H",
+      "title": "Review of algebra",
+      "questions": [
+        {
+          "id": "y8-6h-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=3\\), \\(b=2\\) and \\(c=5\\):\n\n\\(a+b+c\\)",
+          "options": [
+            "\\(12\\)",
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "Replace each letter with its value.",
+          "solution": "Substitute the values: \\(3 + 2 + 5 = 10\\).",
+          "steps": [
+            {
+              "explain": "Substitute values",
+              "work": "3 + 2 + 5 = 10"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=3\\), \\(b=2\\) and \\(c=5\\):\n\n\\(abc\\)",
+          "options": [
+            "\\(32\\)",
+            "\\(29\\)",
+            "\\(30\\)",
+            "\\(31\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the three values.",
+          "solution": "Substitute the values: \\(3 \\times 2 \\times 5 = 30\\).",
+          "steps": [
+            {
+              "explain": "Substitute values",
+              "work": "3 \\times 2 \\times 5 = 30"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q1c",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=3\\), \\(b=2\\) and \\(c=5\\):\n\n\\(a+b-c\\)",
+          "answer": "0",
+          "hint": "Replace each letter with its value.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Substitute values",
+              "work": "3 + 2 - 5 = 0"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-6h-q1d",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=3\\), \\(b=2\\) and \\(c=5\\):\n\n\\(\\frac{a+b}{c}\\)",
+          "answer": "1",
+          "hint": "Calculate the numerator first.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Substitute values",
+              "work": "\\frac{3 + 2}{5}"
+            },
+            {
+              "explain": "Evaluate",
+              "work": "\\frac{5}{5} = 1"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-6h-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=3\\), \\(b=2\\) and \\(c=5\\):\n\n\\(a^2+b^2\\)",
+          "options": [
+            "\\(15\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Square the values before adding.",
+          "solution": "Substitute the values: \\(3^2 + 2^2 = 9 + 4 = 13\\).",
+          "steps": [
+            {
+              "explain": "Substitute and square",
+              "work": "3^2 + 2^2 = 9 + 4 = 13"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=3\\), \\(b=2\\) and \\(c=5\\):\n\n\\(c^3-a^3\\)",
+          "options": [
+            "\\(100\\)",
+            "\\(97\\)",
+            "\\(98\\)",
+            "\\(99\\)"
+          ],
+          "answer": 2,
+          "hint": "Cube the values before subtracting.",
+          "solution": "Substitute the values: \\(5^3 - 3^3 = 125 - 27 = 98\\).",
+          "steps": [
+            {
+              "explain": "Substitute and cube",
+              "work": "5^3 - 3^3 = 125 - 27 = 98"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q1g",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=3\\), \\(b=2\\) and \\(c=5\\):\n\n\\(c-a-b\\)",
+          "answer": "0",
+          "hint": "Replace each letter with its value.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Substitute values",
+              "work": "5 - 3 - 2 = 0"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-6h-q1h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=3\\), \\(b=2\\) and \\(c=5\\):\n\n\\(\\frac{a^2+b^2}{a^2-b^2}\\)",
+          "options": [
+            "\\(-2.6\\)",
+            "\\(1.6\\)",
+            "\\(13/5\\)",
+            "\\(3.6\\)"
+          ],
+          "answer": 2,
+          "hint": "Calculate numerator and denominator separately.",
+          "solution": "Substitute the values: \\(\\frac{3^2 + 2^2}{3^2 - 2^2} = \\frac{9 + 4}{9 - 4} = \\frac{13}{5}\\).",
+          "steps": [
+            {
+              "explain": "Substitute and square",
+              "work": "\\frac{3^2 + 2^2}{3^2 - 2^2}"
+            },
+            {
+              "explain": "Evaluate",
+              "work": "\\frac{9 + 4}{9 - 4} = \\frac{13}{5}"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(x=-2\\) into the expression and evaluate it:\n\n\\(x^3\\)",
+          "options": [
+            "\\(-7\\)",
+            "\\(-8\\)",
+            "\\(-9\\)",
+            "\\(10\\)"
+          ],
+          "answer": 1,
+          "hint": "A negative number cubed is negative.",
+          "solution": "Substitute \\(x=-2\\): \\((-2)^3 = -8\\).",
+          "steps": [
+            {
+              "explain": "Substitute value",
+              "work": "(-2)^3 = -8"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(x=-2\\) into the expression and evaluate it:\n\n\\(x^5\\)",
+          "options": [
+            "\\(-31\\)",
+            "\\(-32\\)",
+            "\\(-33\\)",
+            "\\(34\\)"
+          ],
+          "answer": 1,
+          "hint": "A negative number to an odd power is negative.",
+          "solution": "Substitute \\(x=-2\\): \\((-2)^5 = -32\\).",
+          "steps": [
+            {
+              "explain": "Substitute value",
+              "work": "(-2)^5 = -32"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(x=-2\\) into the expression and evaluate it:\n\n\\((2x)^2\\)",
+          "options": [
+            "\\(18\\)",
+            "\\(15\\)",
+            "\\(16\\)",
+            "\\(17\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply by 2 before squaring.",
+          "solution": "Substitute \\(x=-2\\): \\((2 \\times -2)^2 = (-4)^2 = 16\\).",
+          "steps": [
+            {
+              "explain": "Substitute value",
+              "work": "(2(-2))^2"
+            },
+            {
+              "explain": "Evaluate",
+              "work": "(-4)^2 = 16"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(x=-2\\) into the expression and evaluate it:\n\n\\((2x)^3\\)",
+          "options": [
+            "\\(-63\\)",
+            "\\(-64\\)",
+            "\\(-65\\)",
+            "\\(66\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply by 2 before cubing.",
+          "solution": "Substitute \\(x=-2\\): \\((2 \\times -2)^3 = (-4)^3 = -64\\).",
+          "steps": [
+            {
+              "explain": "Substitute value",
+              "work": "(2(-2))^3"
+            },
+            {
+              "explain": "Evaluate",
+              "work": "(-4)^3 = -64"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q2e",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Substitute \\(x=-2\\) into the expression and evaluate it:\n\n\\(-x\\)",
+          "answer": "2",
+          "hint": "Two negatives make a positive.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Substitute value",
+              "work": "-(-2) = 2"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-6h-q2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(x=-2\\) into the expression and evaluate it:\n\n\\(x^3+7\\)",
+          "options": [
+            "\\(-1\\)",
+            "\\(-2\\)",
+            "\\(0\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate the cube first.",
+          "solution": "Substitute \\(x=-2\\): \\((-2)^3 + 7 = -8 + 7 = -1\\).",
+          "steps": [
+            {
+              "explain": "Substitute value",
+              "work": "(-2)^3 + 7"
+            },
+            {
+              "explain": "Evaluate",
+              "work": "-8 + 7 = -1"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q2g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(x=-2\\) into the expression and evaluate it:\n\n\\(x^2+7\\)",
+          "options": [
+            "\\(13\\)",
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(12\\)"
+          ],
+          "answer": 2,
+          "hint": "Calculate the square first.",
+          "solution": "Substitute \\(x=-2\\): \\((-2)^2 + 7 = 4 + 7 = 11\\).",
+          "steps": [
+            {
+              "explain": "Substitute value",
+              "work": "(-2)^2 + 7"
+            },
+            {
+              "explain": "Evaluate",
+              "work": "4 + 7 = 11"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q2h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Substitute \\(x=-2\\) into the expression and evaluate it:\n\n\\(\\frac{2-x}{x^2+2}\\)",
+          "options": [
+            "\\(-0.33333333333333337\\)",
+            "\\(-0.6666666666666666\\)",
+            "\\(2/3\\)",
+            "\\(1.6666666666666665\\)"
+          ],
+          "answer": 2,
+          "hint": "Simplify the fraction.",
+          "solution": "Substitute \\(x=-2\\): \\(\\frac{2 - (-2)}{(-2)^2 + 2} = \\frac{2 + 2}{4 + 2} = \\frac{4}{6} = \\frac{2}{3}\\).",
+          "steps": [
+            {
+              "explain": "Substitute value",
+              "work": "\\frac{2 - (-2)}{(-2)^2 + 2}"
+            },
+            {
+              "explain": "Evaluate numerator and denominator",
+              "work": "\\frac{4}{6}"
+            },
+            {
+              "explain": "Simplify",
+              "work": "\\frac{2}{3}"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation:\n\n\\(m+5=12\\)",
+          "options": [
+            "\\(9\\)",
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2,
+          "hint": "Perform the opposite operation.",
+          "solution": "Subtract 5 from both sides: \\(m = 12 - 5 = 7\\).",
+          "steps": [
+            {
+              "explain": "Subtract 5 from both sides",
+              "work": "m = 12 - 5 = 7"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation:\n\n\\(m-4=10\\)",
+          "options": [
+            "\\(16\\)",
+            "\\(13\\)",
+            "\\(14\\)",
+            "\\(15\\)"
+          ],
+          "answer": 2,
+          "hint": "Perform the opposite operation.",
+          "solution": "Add 4 to both sides: \\(m = 10 + 4 = 14\\).",
+          "steps": [
+            {
+              "explain": "Add 4 to both sides",
+              "work": "m = 10 + 4 = 14"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation:\n\n\\(3m=15\\)",
+          "options": [
+            "\\(7\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Perform the opposite operation.",
+          "solution": "Divide both sides by 3: \\(m = 15 / 3 = 5\\).",
+          "steps": [
+            {
+              "explain": "Divide by 3",
+              "work": "m = 15 / 3 = 5"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation:\n\n\\(\\frac{m}{5}=4\\)",
+          "options": [
+            "\\(22\\)",
+            "\\(19\\)",
+            "\\(20\\)",
+            "\\(21\\)"
+          ],
+          "answer": 2,
+          "hint": "Perform the opposite operation.",
+          "solution": "Multiply both sides by 5: \\(m = 4 \\times 5 = 20\\).",
+          "steps": [
+            {
+              "explain": "Multiply by 5",
+              "work": "m = 4 \\times 5 = 20"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q3e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation:\n\n\\(3x-2=13\\)",
+          "options": [
+            "\\(7\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Use inverse operations.",
+          "solution": "Add 2, then divide by 3: \\(3x = 15 \\implies x = 5\\).",
+          "steps": [
+            {
+              "explain": "Add 2 to both sides",
+              "work": "3x = 15"
+            },
+            {
+              "explain": "Divide by 3",
+              "work": "x = 5"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q3f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation:\n\n\\(\\frac{x}{3}-5=4\\)",
+          "options": [
+            "\\(29\\)",
+            "\\(26\\)",
+            "\\(27\\)",
+            "\\(28\\)"
+          ],
+          "answer": 2,
+          "hint": "Use inverse operations.",
+          "solution": "Add 5, then multiply by 3: \\(\\frac{x}{3} = 9 \\implies x = 27\\).",
+          "steps": [
+            {
+              "explain": "Add 5 to both sides",
+              "work": "\\frac{x}{3} = 9"
+            },
+            {
+              "explain": "Multiply by 3",
+              "work": "x = 27"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q3g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation:\n\n\\(7-x=12\\)",
+          "options": [
+            "\\(-4\\)",
+            "\\(-5\\)",
+            "\\(-6\\)",
+            "\\(7\\)"
+          ],
+          "answer": 1,
+          "hint": "Isolate the variable term.",
+          "solution": "Subtract 7 from both sides: \\(-x = 5 \\implies x = -5\\).",
+          "steps": [
+            {
+              "explain": "Subtract 7 from both sides",
+              "work": "-x = 5"
+            },
+            {
+              "explain": "Multiply by -1",
+              "work": "x = -5"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q3h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation:\n\n\\(4x-5=-13\\)",
+          "options": [
+            "\\(-1\\)",
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "hint": "Use inverse operations.",
+          "solution": "Add 5, then divide by 4: \\(4x = -8 \\implies x = -2\\).",
+          "steps": [
+            {
+              "explain": "Add 5 to both sides",
+              "work": "4x = -8"
+            },
+            {
+              "explain": "Divide by 4",
+              "work": "x = -2"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q3i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation:\n\n\\(\\frac{x}{4}+6=-2\\)",
+          "options": [
+            "\\(-31\\)",
+            "\\(-32\\)",
+            "\\(-33\\)",
+            "\\(34\\)"
+          ],
+          "answer": 1,
+          "hint": "Use inverse operations.",
+          "solution": "Subtract 6, then multiply by 4: \\(\\frac{x}{4} = -8 \\implies x = -32\\).",
+          "steps": [
+            {
+              "explain": "Subtract 6 from both sides",
+              "work": "\\frac{x}{4} = -8"
+            },
+            {
+              "explain": "Multiply by 4",
+              "work": "x = -32"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets:\n\n\\(3(x-4)\\)",
+          "options": [
+            "\\(-3x-12\\)",
+            "\\(3x-12\\)",
+            "\\(3x-12 + 1\\)",
+            "\\(3x-13\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the term outside by each term inside.",
+          "solution": "Multiply each term inside by 3: \\(3(x) - 3(4) = 3x - 12\\).",
+          "steps": [
+            {
+              "explain": "Expand",
+              "work": "3x - 12"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets:\n\n\\(-4(x+5)\\)",
+          "options": [
+            "\\(-4x-20\\)",
+            "\\(-4x-20 + 1\\)",
+            "\\(-4x-30\\)",
+            "\\(4x-20\\)"
+          ],
+          "answer": 0,
+          "hint": "Pay attention to the negative sign.",
+          "solution": "Multiply each term inside by -4: \\(-4(x) - 4(5) = -4x - 20\\).",
+          "steps": [
+            {
+              "explain": "Expand",
+              "work": "-4x - 20"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets:\n\n\\(6(x-3)\\)",
+          "options": [
+            "\\(-6x-18\\)",
+            "\\(6x-18\\)",
+            "\\(6x-18 + 1\\)",
+            "\\(7x-18\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the term outside by each term inside.",
+          "solution": "Multiply each term inside by 6: \\(6(x) - 6(3) = 6x - 18\\).",
+          "steps": [
+            {
+              "explain": "Expand",
+              "work": "6x - 18"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets:\n\n\\(y(x+4)\\)",
+          "options": [
+            "\\(-xy+4y\\)",
+            "\\(xy+4y\\)",
+            "\\(xy+4y + 1\\)",
+            "\\(xy+5y\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the term outside by each term inside.",
+          "solution": "Multiply each term inside by y: \\(y(x) + y(4) = xy + 4y\\).",
+          "steps": [
+            {
+              "explain": "Expand",
+              "work": "xy + 4y"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q4e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets:\n\n\\(-5(x-2)\\)",
+          "options": [
+            "\\(-5x+10\\)",
+            "\\(-5x+10 + 1\\)",
+            "\\(5x+10\\)",
+            "\\(-6x+10\\)"
+          ],
+          "answer": 0,
+          "hint": "Negative times negative is positive.",
+          "solution": "Multiply each term inside by -5: \\(-5(x) - (-5)(2) = -5x + 10\\).",
+          "steps": [
+            {
+              "explain": "Expand",
+              "work": "-5x + 10"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q4f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets:\n\n\\(-2(5-x)\\)",
+          "options": [
+            "\\(-10+2x\\)",
+            "\\(-10+2x + 1\\)",
+            "\\(-10+3x\\)",
+            "\\(10+2x\\)"
+          ],
+          "answer": 0,
+          "hint": "Negative times negative is positive.",
+          "solution": "Multiply each term inside by -2: \\(-2(5) - (-2)(x) = -10 + 2x\\).",
+          "steps": [
+            {
+              "explain": "Expand",
+              "work": "-10 + 2x"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Collect like terms to simplify the expression:\n\n\\(4x-5y+3x+2y\\)",
+          "options": [
+            "\\(-7x-3y\\)",
+            "\\(7x-3y\\)",
+            "\\(7x-3y + 1\\)",
+            "\\(8x-3y\\)"
+          ],
+          "answer": 1,
+          "hint": "Group terms with the same variables.",
+          "solution": "Combine x terms and y terms: \\((4x + 3x) + (-5y + 2y) = 7x - 3y\\).",
+          "steps": [
+            {
+              "explain": "Group x terms",
+              "work": "4x + 3x = 7x"
+            },
+            {
+              "explain": "Group y terms",
+              "work": "-5y + 2y = -3y"
+            },
+            {
+              "explain": "Combine",
+              "work": "7x - 3y"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Collect like terms to simplify the expression:\n\n\\(2x-3y+x+5y\\)",
+          "options": [
+            "\\(-3x+2y\\)",
+            "\\(3x+2y\\)",
+            "\\(3x+2y + 1\\)",
+            "\\(3x+3y\\)"
+          ],
+          "answer": 1,
+          "hint": "Group terms with the same variables.",
+          "solution": "Combine x terms and y terms: \\((2x + x) + (-3y + 5y) = 3x + 2y\\).",
+          "steps": [
+            {
+              "explain": "Group x terms",
+              "work": "2x + x = 3x"
+            },
+            {
+              "explain": "Group y terms",
+              "work": "-3y + 5y = 2y"
+            },
+            {
+              "explain": "Combine",
+              "work": "3x + 2y"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Collect like terms to simplify the expression:\n\n\\(4x-9x+7x\\)",
+          "options": [
+            "\\(3x\\)",
+            "\\(2x\\)",
+            "\\(2x + 1\\)",
+            "\\(4x\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine all x terms.",
+          "solution": "Add and subtract the coefficients: \\(4 - 9 + 7 = 2 \\implies 2x\\).",
+          "steps": [
+            {
+              "explain": "Combine coefficients",
+              "work": "4 - 9 + 7 = 2"
+            },
+            {
+              "explain": "Result",
+              "work": "2x"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Collect like terms to simplify the expression:\n\n\\(5x-12x+7x\\)",
+          "options": [
+            "\\(0\\)",
+            "\\(24x\\)",
+            "\\(-14x\\)",
+            "\\(-7x\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine all x terms.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Add the coefficients of \\(x\\) in order, keeping each sign attached to its term.",
+              "work": "\\(5x-12x+7x = (5-12+7)x\\)"
+            },
+            {
+              "explain": "Work left to right: \\(5-12=-7\\), then \\(-7+7=0\\). A common mistake is ignoring the signs and adding \\(5+12+7=24\\), or only combining the first two terms and forgetting the third.",
+              "work": "\\(5-12+7 = 0\\)"
+            },
+            {
+              "explain": "So the coefficient of \\(x\\) is 0, and the expression simplifies to 0.",
+              "work": "\\(0x = 0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q5e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Collect like terms to simplify the expression:\n\n\\(3xy-9xy+4xy\\)",
+          "options": [
+            "\\(-2xy\\)",
+            "\\(-2xy + 1\\)",
+            "\\(-3xy\\)",
+            "\\(2xy\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine terms with identical variables.",
+          "solution": "Combine the xy terms: \\((3 - 9 + 4)xy = -2xy\\).",
+          "steps": [
+            {
+              "explain": "Combine coefficients",
+              "work": "3 - 9 + 4 = -2"
+            },
+            {
+              "explain": "Result",
+              "work": "-2xy"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q5f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Collect like terms to simplify the expression:\n\n\\(5x^2y - 3yx^2 + 2x^2y\\)",
+          "options": [
+            "\\(-4x^2y\\)",
+            "\\(4x^2y\\)",
+            "\\(4x^2y + 1\\)",
+            "\\(4x^3y\\)"
+          ],
+          "answer": 1,
+          "hint": "Order of variables doesn't matter in a term.",
+          "solution": "Note that \\(yx^2 = x^2y\\). Combine: \\((5 - 3 + 2)x^2y = 4x^2y\\).",
+          "steps": [
+            {
+              "explain": "Identify like terms",
+              "work": "yx^2 \\text{ is the same as } x^2y"
+            },
+            {
+              "explain": "Combine coefficients",
+              "work": "5 - 3 + 2 = 4"
+            },
+            {
+              "explain": "Result",
+              "work": "4x^2y"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=-2\\), \\(b=\\frac{3}{4}\\) and \\(c=12\\):\n\n\\(a+b-c\\)",
+          "options": [
+            "\\(-12.25\\)",
+            "\\(-53/4\\)",
+            "\\(-14.25\\)",
+            "\\(13.25\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert all numbers to fractions with a common denominator.",
+          "solution": "\\(-2 + \\frac{3}{4} - 12 = -14 + \\frac{3}{4} = -\\frac{56}{4} + \\frac{3}{4} = -\\frac{53}{4}\\).",
+          "steps": [
+            {
+              "explain": "Substitute",
+              "work": "-2 + \\frac{3}{4} - 12 = -14 + \\frac{3}{4}"
+            },
+            {
+              "explain": "Common denominator",
+              "work": "-\\frac{56}{4} + \\frac{3}{4} = -\\frac{53}{4}"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=-2\\), \\(b=\\frac{3}{4}\\) and \\(c=12\\):\n\n\\(abc\\)",
+          "options": [
+            "\\(-17\\)",
+            "\\(-18\\)",
+            "\\(-19\\)",
+            "\\(20\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the values.",
+          "solution": "\\(-2 \\times \\frac{3}{4} \\times 12 = -2 \\times 9 = -18\\).",
+          "steps": [
+            {
+              "explain": "Substitute",
+              "work": "-2 \\times \\frac{3}{4} \\times 12"
+            },
+            {
+              "explain": "Evaluate",
+              "work": "-18"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=-2\\), \\(b=\\frac{3}{4}\\) and \\(c=12\\):\n\n\\(b^2(c+a)\\)",
+          "options": [
+            "\\(-5.625\\)",
+            "\\(4.625\\)",
+            "\\(45/8\\)",
+            "\\(6.625\\)"
+          ],
+          "answer": 2,
+          "hint": "Follow order of operations.",
+          "solution": "\\((\\frac{3}{4})^2 (12 + -2) = \\frac{9}{16} \\times 10 = \\frac{90}{16} = \\frac{45}{8}\\).",
+          "steps": [
+            {
+              "explain": "Substitute",
+              "work": "(\\frac{3}{4})^2(12 - 2)"
+            },
+            {
+              "explain": "Evaluate brackets and exponent",
+              "work": "\\frac{9}{16} \\times 10"
+            },
+            {
+              "explain": "Simplify",
+              "work": "\\frac{90}{16} = \\frac{45}{8}"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q6d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=-2\\), \\(b=\\frac{3}{4}\\) and \\(c=12\\):\n\n\\((c^2+a^2)-2b\\)",
+          "options": [
+            "\\(-146.5\\)",
+            "\\(145.5\\)",
+            "\\(293/2\\)",
+            "\\(147.5\\)"
+          ],
+          "answer": 2,
+          "hint": "Calculate inside the brackets first.",
+          "solution": "\\((12^2 + (-2)^2) - 2(\\frac{3}{4}) = (144 + 4) - \\frac{3}{2} = 148 - \\frac{3}{2} = \\frac{296}{2} - \\frac{3}{2} = \\frac{293}{2}\\).",
+          "steps": [
+            {
+              "explain": "Substitute",
+              "work": "(12^2 + (-2)^2) - 2(\\frac{3}{4})"
+            },
+            {
+              "explain": "Evaluate brackets",
+              "work": "148 - \\frac{3}{2}"
+            },
+            {
+              "explain": "Simplify",
+              "work": "\\frac{293}{2}"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q6e",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=-2\\), \\(b=\\frac{3}{4}\\) and \\(c=12\\):\n\n\\(\\frac{ca^2}{24}\\)",
+          "answer": "2",
+          "hint": "Evaluate the numerator first.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Substitute",
+              "work": "\\frac{12 \\times (-2)^2}{24}"
+            },
+            {
+              "explain": "Evaluate numerator",
+              "work": "\\frac{48}{24} = 2"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-6h-q6f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=-2\\), \\(b=\\frac{3}{4}\\) and \\(c=12\\):\n\n\\(\\frac{a^2b}{c-b}\\)",
+          "options": [
+            "\\(-0.26666666666666666\\)",
+            "\\(-0.7333333333333334\\)",
+            "\\(4/15\\)",
+            "\\(1.2666666666666666\\)"
+          ],
+          "answer": 2,
+          "hint": "Evaluate numerator and denominator separately.",
+          "solution": "\\(\\frac{(-2)^2 \\times \\frac{3}{4}}{12 - \\frac{3}{4}} = \\frac{4 \\times \\frac{3}{4}}{\\frac{45}{4}} = \\frac{3}{\\frac{45}{4}} = 3 \\times \\frac{4}{45} = \\frac{12}{45} = \\frac{4}{15}\\).",
+          "steps": [
+            {
+              "explain": "Substitute",
+              "work": "\\frac{(-2)^2 \\times \\frac{3}{4}}{12 - \\frac{3}{4}}"
+            },
+            {
+              "explain": "Evaluate numerator",
+              "work": "4 \\times \\frac{3}{4} = 3"
+            },
+            {
+              "explain": "Evaluate denominator",
+              "work": "\\frac{45}{4}"
+            },
+            {
+              "explain": "Divide",
+              "work": "3 \\times \\frac{4}{45} = \\frac{4}{15}"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q6g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=-2\\), \\(b=\\frac{3}{4}\\) and \\(c=12\\):\n\n\\(a^2-b^2-c\\)",
+          "options": [
+            "\\(-7.5625\\)",
+            "\\(-137/16\\)",
+            "\\(-9.5625\\)",
+            "\\(8.5625\\)"
+          ],
+          "answer": 1,
+          "hint": "Square the fractions properly.",
+          "solution": "\\((-2)^2 - (\\frac{3}{4})^2 - 12 = 4 - \\frac{9}{16} - 12 = -8 - \\frac{9}{16} = -\\frac{128}{16} - \\frac{9}{16} = -\\frac{137}{16}\\).",
+          "steps": [
+            {
+              "explain": "Substitute",
+              "work": "(-2)^2 - (\\frac{3}{4})^2 - 12"
+            },
+            {
+              "explain": "Evaluate exponents",
+              "work": "4 - \\frac{9}{16} - 12 = -8 - \\frac{9}{16}"
+            },
+            {
+              "explain": "Common denominator",
+              "work": "-\\frac{137}{16}"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q6h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression for \\(a=-2\\), \\(b=\\frac{3}{4}\\) and \\(c=12\\):\n\n\\(\\frac{a}{b}(a-c)\\)",
+          "options": [
+            "\\(-37.333333333333336\\)",
+            "\\(36.333333333333336\\)",
+            "\\(112/3\\)",
+            "\\(38.333333333333336\\)"
+          ],
+          "answer": 2,
+          "hint": "Dividing by a fraction is multiplying by its reciprocal.",
+          "solution": "\\(\\frac{-2}{\\frac{3}{4}}(-2 - 12) = (-2 \\times \\frac{4}{3}) \\times (-14) = -\\frac{8}{3} \\times -14 = \\frac{112}{3}\\).",
+          "steps": [
+            {
+              "explain": "Substitute",
+              "work": "\\frac{-2}{\\frac{3}{4}}(-2 - 12)"
+            },
+            {
+              "explain": "Evaluate brackets and fraction division",
+              "work": "-\\frac{8}{3} \\times -14"
+            },
+            {
+              "explain": "Multiply",
+              "work": "\\frac{112}{3}"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation:\n\n\\(3x+25=4\\)",
+          "options": [
+            "\\(-6\\)",
+            "\\(-7\\)",
+            "\\(-8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "Use inverse operations.",
+          "solution": "\\(3x = 4 - 25 = -21 \\implies x = -7\\).",
+          "steps": [
+            {
+              "explain": "Subtract 25",
+              "work": "3x = -21"
+            },
+            {
+              "explain": "Divide by 3",
+              "work": "x = -7"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation:\n\n\\(4b-15=5\\)",
+          "options": [
+            "\\(7\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Use inverse operations.",
+          "solution": "\\(4b = 5 + 15 = 20 \\implies b = 5\\).",
+          "steps": [
+            {
+              "explain": "Add 15",
+              "work": "4b = 20"
+            },
+            {
+              "explain": "Divide by 4",
+              "work": "b = 5"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation:\n\n\\(45+6a=93\\)",
+          "options": [
+            "\\(10\\)",
+            "\\(7\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "Use inverse operations.",
+          "solution": "\\(6a = 93 - 45 = 48 \\implies a = 8\\).",
+          "steps": [
+            {
+              "explain": "Subtract 45",
+              "work": "6a = 48"
+            },
+            {
+              "explain": "Divide by 6",
+              "work": "a = 8"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation:\n\n\\(\\frac{18}{y} + 20 = 11\\)",
+          "options": [
+            "\\(-1\\)",
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "hint": "Isolate the fraction first.",
+          "solution": "\\(\\frac{18}{y} = 11 - 20 = -9 \\implies y = 18 / (-9) = -2\\).",
+          "steps": [
+            {
+              "explain": "Subtract 20",
+              "work": "\\frac{18}{y} = -9"
+            },
+            {
+              "explain": "Multiply by y and divide by -9",
+              "work": "y = -2"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q7e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation:\n\n\\(\\frac{4x}{3} = 48\\)",
+          "options": [
+            "\\(38\\)",
+            "\\(35\\)",
+            "\\(36\\)",
+            "\\(37\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply by 3 first.",
+          "solution": "\\(4x = 48 \\times 3 = 144 \\implies x = 144 / 4 = 36\\).",
+          "steps": [
+            {
+              "explain": "Multiply by 3",
+              "work": "4x = 144"
+            },
+            {
+              "explain": "Divide by 4",
+              "work": "x = 36"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q7f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation:\n\n\\(\\frac{5x-3}{4} = 8\\)",
+          "options": [
+            "\\(9\\)",
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply by 4 first to remove the fraction.",
+          "solution": "\\(5x - 3 = 8 \\times 4 = 32 \\implies 5x = 35 \\implies x = 7\\).",
+          "steps": [
+            {
+              "explain": "Multiply by 4",
+              "work": "5x - 3 = 32"
+            },
+            {
+              "explain": "Add 3",
+              "work": "5x = 35"
+            },
+            {
+              "explain": "Divide by 5",
+              "work": "x = 7"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(15x+4(x+y)\\)",
+          "options": [
+            "\\(-19x+4y\\)",
+            "\\(19x+4y\\)",
+            "\\(19x+4y + 1\\)",
+            "\\(20x+4y\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand the bracket first.",
+          "solution": "\\(15x + 4x + 4y = 19x + 4y\\).",
+          "steps": [
+            {
+              "explain": "Expand bracket",
+              "work": "15x + 4x + 4y"
+            },
+            {
+              "explain": "Collect like terms",
+              "work": "19x + 4y"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(\\frac{1}{3}(27y+x)+4x\\)",
+          "options": [
+            "\\(-13x/3+9y\\)",
+            "\\(13x/3+9y\\)",
+            "\\(13x/3+9y + 1\\)",
+            "\\(14x/3+9y\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply both terms in the bracket by 1/3.",
+          "solution": "\\(9y + \\frac{x}{3} + 4x = 9y + \\frac{13x}{3}\\).",
+          "steps": [
+            {
+              "explain": "Expand bracket",
+              "work": "9y + \\frac{x}{3} + 4x"
+            },
+            {
+              "explain": "Collect x terms",
+              "work": "\\frac{13x}{3} + 9y"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(2y(5x+3)+6x(y+2)\\)",
+          "options": [
+            "\\(-16xy+12x+6y\\)",
+            "\\(16xy+12x+6y\\)",
+            "\\(16xy+12x+6y + 1\\)",
+            "\\(16xy+13x+6y\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand both brackets before collecting terms.",
+          "solution": "\\(10xy + 6y + 6xy + 12x = 16xy + 12x + 6y\\).",
+          "steps": [
+            {
+              "explain": "Expand brackets",
+              "work": "10xy + 6y + 6xy + 12x"
+            },
+            {
+              "explain": "Collect like terms",
+              "work": "16xy + 12x + 6y"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(15-3x+x(2x+4)\\)",
+          "options": [
+            "\\(-2x^2+x+15\\)",
+            "\\(2x^2+x+15\\)",
+            "\\(2x^2+x+15 + 1\\)",
+            "\\(3x^3+x+15\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand the bracket first.",
+          "solution": "\\(15 - 3x + 2x^2 + 4x = 2x^2 + x + 15\\).",
+          "steps": [
+            {
+              "explain": "Expand bracket",
+              "work": "15 - 3x + 2x^2 + 4x"
+            },
+            {
+              "explain": "Collect like terms",
+              "work": "2x^2 + x + 15"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q8e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(\\frac{x}{2}(8-x)+4x(x+3)\\)",
+          "options": [
+            "\\(-7x^2/2+16x\\)",
+            "\\(7x^2/2+16x\\)",
+            "\\(7x^2/2+16x + 1\\)",
+            "\\(7x^3/3+16x\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand both brackets.",
+          "solution": "\\(4x - \\frac{x^2}{2} + 4x^2 + 12x = \\frac{7x^2}{2} + 16x\\).",
+          "steps": [
+            {
+              "explain": "Expand brackets",
+              "work": "4x - \\frac{x^2}{2} + 4x^2 + 12x"
+            },
+            {
+              "explain": "Collect x terms",
+              "work": "4x + 12x = 16x"
+            },
+            {
+              "explain": "Collect x^2 terms",
+              "work": "4x^2 - 0.5x^2 = 3.5x^2 = \\frac{7x^2}{2}"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q8f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(20x+5x(y-2)+3x-4y(x-2)\\)",
+          "options": [
+            "\\(-13x+xy+8y\\)",
+            "\\(13x+xy+8y\\)",
+            "\\(13x+xy+8y + 1\\)",
+            "\\(14x+xy+8y\\)"
+          ],
+          "answer": 1,
+          "hint": "Pay attention to the negative sign when expanding.",
+          "solution": "\\(20x + 5xy - 10x + 3x - 4xy + 8y = 13x + xy + 8y\\).",
+          "steps": [
+            {
+              "explain": "Expand brackets",
+              "work": "20x + 5xy - 10x + 3x - 4xy + 8y"
+            },
+            {
+              "explain": "Collect x terms",
+              "work": "20x - 10x + 3x = 13x"
+            },
+            {
+              "explain": "Collect xy terms",
+              "work": "5xy - 4xy = xy"
+            },
+            {
+              "explain": "Result",
+              "work": "13x + xy + 8y"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q8g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(b(x-8+2y)-3b(x+y)\\)",
+          "options": [
+            "\\(-2bx-by-8b\\)",
+            "\\(-2bx-by-8b + 1\\)",
+            "\\(-3bx-by-8b\\)",
+            "\\(2bx-by-8b\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand both brackets.",
+          "solution": "\\(bx - 8b + 2by - 3bx - 3by = -2bx - by - 8b\\).",
+          "steps": [
+            {
+              "explain": "Expand brackets",
+              "work": "bx - 8b + 2by - 3bx - 3by"
+            },
+            {
+              "explain": "Collect like terms",
+              "work": "-2bx - by - 8b"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q8h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(3xy(4+x)-2yx(5+4y)\\)",
+          "options": [
+            "\\(-2xy+3x^2y-8xy^2\\)",
+            "\\(2xy+3x^2y-8xy^2\\)",
+            "\\(2xy+3x^2y-8xy^2 + 1\\)",
+            "\\(3xy+3x^3y-8xy^3\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand both brackets.",
+          "solution": "\\(12xy + 3x^2y - 10xy - 8xy^2 = 2xy + 3x^2y - 8xy^2\\).",
+          "steps": [
+            {
+              "explain": "Expand brackets",
+              "work": "12xy + 3x^2y - 10xy - 8xy^2"
+            },
+            {
+              "explain": "Collect like terms",
+              "work": "2xy + 3x^2y - 8xy^2"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q8i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(12a(x-3y+a)-4a(x-2y)\\)",
+          "options": [
+            "\\(-8ax-28ay+12a^2\\)",
+            "\\(8ax-28ay+12a^2\\)",
+            "\\(8ax-28ay+12a^2 + 1\\)",
+            "\\(8ax-38ay+13a^3\\)"
+          ],
+          "answer": 1,
+          "hint": "Pay attention to the negative sign.",
+          "solution": "\\(12ax - 36ay + 12a^2 - 4ax + 8ay = 8ax - 28ay + 12a^2\\).",
+          "steps": [
+            {
+              "explain": "Expand brackets",
+              "work": "12ax - 36ay + 12a^2 - 4ax + 8ay"
+            },
+            {
+              "explain": "Collect like terms",
+              "work": "8ax - 28ay + 12a^2"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q9a",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Prove that the statement is true:\n\nSelect a number. Add 10. Double the result. Subtract 6. Divide by 2. Subtract the original number. The result is always 7.",
+          "answer": "7",
+          "hint": "Use an algebraic variable like x.",
+          "solution": "7",
+          "steps": [
+            {
+              "explain": "Set up expression",
+              "work": "\\frac{2(x+10)-6}{2} - x"
+            },
+            {
+              "explain": "Expand inner bracket",
+              "work": "\\frac{2x+20-6}{2} - x = \\frac{2x+14}{2} - x"
+            },
+            {
+              "explain": "Divide by 2",
+              "work": "(x+7) - x = 7"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y8-6h-q9b",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Prove that the statement is true:\n\nStart with a number. Add 4. Multiply by 3. Subtract 6. Divide by 3. Subtract the original number. The result is always 2.",
+          "answer": "2",
+          "hint": "Use an algebraic variable like n.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Set up expression",
+              "work": "\\frac{3(n+4)-6}{3} - n"
+            },
+            {
+              "explain": "Expand inner bracket",
+              "work": "\\frac{3n+12-6}{3} - n = \\frac{3n+6}{3} - n"
+            },
+            {
+              "explain": "Divide by 3",
+              "work": "(n+2) - n = 2"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y8-6h-q10",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Entry fee for an amusement park is \\(22 per adult and \\)12 per child. The cost of each ride is \\(7 per person. A family of \\)2\\( adults and \\)2\\( children went to the park and spent \\)124 on rides and entrance tickets. If the whole family always went on rides together, how many rides did they go on?",
+          "answer": "2",
+          "hint": "Calculate the total cost of entry tickets first.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Cost of entry tickets",
+              "work": "2(22) + 2(12) = 68"
+            },
+            {
+              "explain": "Amount spent on rides",
+              "work": "124 - 68 = 56"
+            },
+            {
+              "explain": "Cost per family ride (4 people)",
+              "work": "4 \\times 7 = 28"
+            },
+            {
+              "explain": "Number of rides",
+              "work": "56 / 28 = 2"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-6h-q11_weeknight",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Bianca reads \\(p\\) pages each weeknight (Monday to Friday). She reads \\(4\\) times as many pages on Saturday as on a weeknight. She reads no pages on Sunday. She took \\(6\\) weeks to finish a book with \\(324\\) pages.\n\nHow many pages does she read on a weeknight?",
+          "options": [
+            "\\(8\\)",
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(7\\)"
+          ],
+          "answer": 2,
+          "hint": "Set up an equation for the total number of pages.",
+          "solution": "Pages per week = \\(5p + 4p = 9p\\).\nTotal pages = \\(6 \\times 9p = 54p = 324\\).\n\\(p = 324 / 54 = 6\\).",
+          "steps": [
+            {
+              "explain": "Pages read in one week",
+              "work": "5p + 4p = 9p"
+            },
+            {
+              "explain": "Pages read in 6 weeks",
+              "work": "6 \\times 9p = 54p"
+            },
+            {
+              "explain": "Solve for p",
+              "work": "54p = 324 \\implies p = 6"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q11_saturday",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Bianca reads \\(p\\) pages each weeknight (Monday to Friday). She reads \\(4\\) times as many pages on Saturday as on a weeknight. She reads no pages on Sunday. She took \\(6\\) weeks to finish a book with \\(324\\) pages.\n\nHow many pages does she read on a Saturday night?",
+          "options": [
+            "\\(26\\)",
+            "\\(23\\)",
+            "\\(24\\)",
+            "\\(25\\)"
+          ],
+          "answer": 2,
+          "hint": "First find the number of pages on a weeknight.",
+          "solution": "Pages per week = \\(5p + 4p = 9p\\).\n\\(54p = 324 \\implies p = 6\\).\nSaturday = \\(4p = 4 \\times 6 = 24\\).",
+          "steps": [
+            {
+              "explain": "Solve for weeknight pages (p)",
+              "work": "6 \\times (5p + 4p) = 324 \\implies p = 6"
+            },
+            {
+              "explain": "Calculate Saturday pages",
+              "work": "4 \\times 6 = 24"
+            }
+          ]
+        },
+        {
+          "id": "y8-6h-q12",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The perimeter of the L-shaped figure shown is 56 cm.\nFind the value of \\(x\\).",
+          "figure": {
+            "geometry": {
+              "points": {
+                "F": [
+                  0,
+                  0
+                ],
+                "A": [
+                  0,
+                  4
+                ],
+                "E": [
+                  4,
+                  4
+                ],
+                "D": [
+                  4,
+                  2.5
+                ],
+                "C": [
+                  1.5,
+                  2.5
+                ],
+                "B": [
+                  1.5,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "F",
+                  "to": "A"
+                },
+                {
+                  "from": "A",
+                  "to": "E"
+                },
+                {
+                  "from": "E",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "F"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "F",
+                  "right": true
+                },
+                {
+                  "at": "A",
+                  "right": true
+                },
+                {
+                  "at": "E",
+                  "right": true
+                },
+                {
+                  "at": "D",
+                  "right": true
+                },
+                {
+                  "at": "C",
+                  "right": true
+                },
+                {
+                  "at": "B",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "F",
+                    "A"
+                  ],
+                  "text": "12 cm"
+                },
+                {
+                  "between": [
+                    "A",
+                    "E"
+                  ],
+                  "text": "4x cm"
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(6\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 2,
+          "hint": "The perimeter of an L-shape with right angles is the same as the bounding rectangle.",
+          "solution": "The perimeter of this L-shape is exactly \\(2 \\times (\\text{width} + \\text{height})\\).\n\\(2(12 + 4x) = 56 \\implies 24 + 8x = 56 \\implies 8x = 32 \\implies x = 4\\).",
+          "steps": [
+            {
+              "explain": "Set up equation for perimeter",
+              "work": "2(12 + 4x) = 56"
+            },
+            {
+              "explain": "Expand",
+              "work": "24 + 8x = 56"
+            },
+            {
+              "explain": "Solve for x",
+              "work": "8x = 32 \\implies x = 4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

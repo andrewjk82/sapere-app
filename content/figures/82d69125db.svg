@@ -1,0 +1,24 @@
+<svg viewBox="0 0 460 340" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<line x1="130" y1="60" x2="380" y2="260" stroke="#475569" stroke-width="1.5" stroke-dasharray="2,3"/>
+<line x1="380" y1="260" x2="280" y2="260" stroke="#475569" stroke-width="1.5"/>
+<line x1="130" y1="60" x2="280" y2="260" stroke="#16a34a" stroke-width="3"/>
+<line x1="130" y1="20" x2="130" y2="-4" stroke="#475569" stroke-width="1.5"/>
+<path d="M 125 2 L 130 -8 L 135 2 Z" fill="#475569"/>
+<text x="130" y="-12" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">N</text>
+<text x="130" y="-12" text-anchor="middle" font-family="system-ui" font-size="12" font-weight="700" fill="#1e293b">N</text>
+<circle cx="130" cy="60" r="2.5" fill="#1e293b"/>
+<text x="114" y="80" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">cliff base</text>
+<text x="114" y="80" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" fill="#1e293b">cliff base</text>
+<circle cx="380" cy="260" r="2.5" fill="#1e293b"/>
+<text x="386" y="248" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">old position</text>
+<text x="386" y="248" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" fill="#1e293b">old position</text>
+<circle cx="280" cy="260" r="2.5" fill="#1e293b"/>
+<text x="290" y="280" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">new position</text>
+<text x="290" y="280" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" fill="#1e293b">new position</text>
+<text x="255" y="84" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">200 m</text>
+<text x="255" y="84" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#1e293b">200 m</text>
+<text x="320" y="250" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">150 m</text>
+<text x="320" y="250" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#475569">150 m</text>
+<text x="245" y="160" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">≈ 260 m</text>
+<text x="245" y="160" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#16a34a">≈ 260 m</text>
+</svg>

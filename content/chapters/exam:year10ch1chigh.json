@@ -1,0 +1,743 @@
+{
+  "chapterId": "exam:year10ch1chigh",
+  "title": "Exam Practice",
+  "year": "Year 10",
+  "topics": [
+    {
+      "topicId": "exam:year10ch1chigh",
+      "code": "",
+      "title": "Repeated increases and decreases",
+      "questions": [
+        {
+          "id": "y10-1c-high-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$276.43\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(13\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+          "options": [
+            "\\(375\\)",
+            "\\(321\\)",
+            "\\(393\\)",
+            "\\(357\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{11}{100} = 0.89, M_2 = 1 - \\frac{13}{100} = 0.87\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.89 \\times 0.87 = 0.7743\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{276.43}{0.7743} \\approx \\$357\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The retail price of fine leather exports starts at \\(\\$415\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(7\\%\\) in the second quarter, and a final increase of \\(16\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+          "options": [
+            "\\(531.87\\)",
+            "\\(483.52\\)",
+            "\\(507.70\\)",
+            "\\(435.17\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the multipliers for each of the three successive changes.",
+              "work": "\\(M_1 = 1 + \\frac{8}{100} = 1.08, M_2 = 1 - \\frac{7}{100} = 0.93, M_3 = 1 + \\frac{16}{100} = 1.16\\)"
+            },
+            {
+              "explain": "Multiply the individual multipliers to determine the combined net factor.",
+              "work": "\\(M_{\\text{net}} = 1.08 \\times 0.93 \\times 1.16 = 1.1651\\)"
+            },
+            {
+              "explain": "Apply the net factor to the original value to find the final price.",
+              "work": "\\(\\text{Final Price} = \\$415 \\times 1.1651 \\approx \\$483.52\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$500.89\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(17\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+          "options": [
+            "\\(674\\)",
+            "\\(642\\)",
+            "\\(578\\)",
+            "\\(706\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{6}{100} = 0.94, M_2 = 1 - \\frac{17}{100} = 0.83\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.94 \\times 0.83 = 0.7802\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{500.89}{0.7802} \\approx \\$642\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The share value of a biotech startup starts at \\(\\$630\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(10\\%\\) in the second quarter, and a final increase of \\(11\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+          "options": [
+            "\\(611.75\\)",
+            "\\(679.72\\)",
+            "\\(747.69\\)",
+            "\\(713.71\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the multipliers for each of the three successive changes.",
+              "work": "\\(M_1 = 1 + \\frac{8}{100} = 1.08, M_2 = 1 - \\frac{10}{100} = 0.90, M_3 = 1 + \\frac{11}{100} = 1.11\\)"
+            },
+            {
+              "explain": "Multiply the individual multipliers to determine the combined net factor.",
+              "work": "\\(M_{\\text{net}} = 1.08 \\times 0.90 \\times 1.11 = 1.0789\\)"
+            },
+            {
+              "explain": "Apply the net factor to the original value to find the final price.",
+              "work": "\\(\\text{Final Price} = \\$630 \\times 1.0789 \\approx \\$679.72\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$615.16\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(16\\%\\) and \\(21\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+          "options": [
+            "\\(927\\)",
+            "\\(1020\\)",
+            "\\(834\\)",
+            "\\(973\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{16}{100} = 0.84, M_2 = 1 - \\frac{21}{100} = 0.79\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.84 \\times 0.79 = 0.6636\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{615.16}{0.6636} \\approx \\$927\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The retail price of fine leather exports starts at \\(\\$845\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(13\\%\\) in the second quarter, and a final increase of \\(6\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+          "options": [
+            "\\(883.68\\)",
+            "\\(757.44\\)",
+            "\\(925.76\\)",
+            "\\(841.60\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the multipliers for each of the three successive changes.",
+              "work": "\\(M_1 = 1 + \\frac{8}{100} = 1.08, M_2 = 1 - \\frac{13}{100} = 0.87, M_3 = 1 + \\frac{6}{100} = 1.06\\)"
+            },
+            {
+              "explain": "Multiply the individual multipliers to determine the combined net factor.",
+              "work": "\\(M_{\\text{net}} = 1.08 \\times 0.87 \\times 1.06 = 0.9960\\)"
+            },
+            {
+              "explain": "Apply the net factor to the original value to find the final price.",
+              "work": "\\(\\text{Final Price} = \\$845 \\times 0.9960 \\approx \\$841.60\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q16",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$981.60\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(9\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+          "options": [
+            "\\(1273\\)",
+            "\\(1091\\)",
+            "\\(1333\\)",
+            "\\(1212\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{11}{100} = 0.89, M_2 = 1 - \\frac{9}{100} = 0.91\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.89 \\times 0.91 = 0.8099\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{981.60}{0.8099} \\approx \\$1212\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The share value of a biotech startup starts at \\(\\$1060\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(4\\%\\) in the second quarter, and a final increase of \\(16\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+          "options": [
+            "\\(1338.59\\)",
+            "\\(1274.85\\)",
+            "\\(1402.34\\)",
+            "\\(1147.37\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the multipliers for each of the three successive changes.",
+              "work": "\\(M_1 = 1 + \\frac{8}{100} = 1.08, M_2 = 1 - \\frac{4}{100} = 0.96, M_3 = 1 + \\frac{16}{100} = 1.16\\)"
+            },
+            {
+              "explain": "Multiply the individual multipliers to determine the combined net factor.",
+              "work": "\\(M_{\\text{net}} = 1.08 \\times 0.96 \\times 1.16 = 1.2027\\)"
+            },
+            {
+              "explain": "Apply the net factor to the original value to find the final price.",
+              "work": "\\(\\text{Final Price} = \\$1060 \\times 1.2027 \\approx \\$1274.85\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q21",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$1224.25\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(13\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+          "options": [
+            "\\(1497\\)",
+            "\\(1647\\)",
+            "\\(1347\\)",
+            "\\(1572\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{6}{100} = 0.94, M_2 = 1 - \\frac{13}{100} = 0.87\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.94 \\times 0.87 = 0.8178\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{1224.25}{0.8178} \\approx \\$1497\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q25",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The retail price of fine leather exports starts at \\(\\$375\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(7\\%\\) in the second quarter, and a final increase of \\(11\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+          "options": [
+            "\\(438.98\\)",
+            "\\(376.27\\)",
+            "\\(459.89\\)",
+            "\\(418.08\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the multipliers for each of the three successive changes.",
+              "work": "\\(M_1 = 1 + \\frac{8}{100} = 1.08, M_2 = 1 - \\frac{7}{100} = 0.93, M_3 = 1 + \\frac{11}{100} = 1.11\\)"
+            },
+            {
+              "explain": "Multiply the individual multipliers to determine the combined net factor.",
+              "work": "\\(M_{\\text{net}} = 1.08 \\times 0.93 \\times 1.11 = 1.1149\\)"
+            },
+            {
+              "explain": "Apply the net factor to the original value to find the final price.",
+              "work": "\\(\\text{Final Price} = \\$375 \\times 1.1149 \\approx \\$418.08\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q26",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$405.77\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(16\\%\\) and \\(17\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+          "options": [
+            "\\(611\\)",
+            "\\(582\\)",
+            "\\(640\\)",
+            "\\(524\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{16}{100} = 0.84, M_2 = 1 - \\frac{17}{100} = 0.83\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.84 \\times 0.83 = 0.6972\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{405.77}{0.6972} \\approx \\$582\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q30",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The share value of a biotech startup starts at \\(\\$590\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(10\\%\\) in the second quarter, and a final increase of \\(6\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+          "options": [
+            "\\(668.68\\)",
+            "\\(607.89\\)",
+            "\\(547.10\\)",
+            "\\(638.28\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the multipliers for each of the three successive changes.",
+              "work": "\\(M_1 = 1 + \\frac{8}{100} = 1.08, M_2 = 1 - \\frac{10}{100} = 0.90, M_3 = 1 + \\frac{6}{100} = 1.06\\)"
+            },
+            {
+              "explain": "Multiply the individual multipliers to determine the combined net factor.",
+              "work": "\\(M_{\\text{net}} = 1.08 \\times 0.90 \\times 1.06 = 1.0303\\)"
+            },
+            {
+              "explain": "Apply the net factor to the original value to find the final price.",
+              "work": "\\(\\text{Final Price} = \\$590 \\times 1.0303 \\approx \\$607.89\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q31",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$609.59\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(21\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+          "options": [
+            "\\(910\\)",
+            "\\(954\\)",
+            "\\(867\\)",
+            "\\(780\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{11}{100} = 0.89, M_2 = 1 - \\frac{21}{100} = 0.79\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.89 \\times 0.79 = 0.7031\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{609.59}{0.7031} \\approx \\$867\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q35",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The retail price of fine leather exports starts at \\(\\$805\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(13\\%\\) in the second quarter, and a final increase of \\(16\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+          "options": [
+            "\\(789.66\\)",
+            "\\(921.27\\)",
+            "\\(965.14\\)",
+            "\\(877.40\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the multipliers for each of the three successive changes.",
+              "work": "\\(M_1 = 1 + \\frac{8}{100} = 1.08, M_2 = 1 - \\frac{13}{100} = 0.87, M_3 = 1 + \\frac{16}{100} = 1.16\\)"
+            },
+            {
+              "explain": "Multiply the individual multipliers to determine the combined net factor.",
+              "work": "\\(M_{\\text{net}} = 1.08 \\times 0.87 \\times 1.16 = 1.0899\\)"
+            },
+            {
+              "explain": "Apply the net factor to the original value to find the final price.",
+              "work": "\\(\\text{Final Price} = \\$805 \\times 1.0899 \\approx \\$877.40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q36",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$985.42\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(9\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+          "options": [
+            "\\(1152\\)",
+            "\\(1267\\)",
+            "\\(1037\\)",
+            "\\(1210\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{6}{100} = 0.94, M_2 = 1 - \\frac{9}{100} = 0.91\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.94 \\times 0.91 = 0.8554\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{985.42}{0.8554} \\approx \\$1152\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q40",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The share value of a biotech startup starts at \\(\\$1020\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(4\\%\\) in the second quarter, and a final increase of \\(11\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+          "options": [
+            "\\(1291.25\\)",
+            "\\(1173.86\\)",
+            "\\(1232.55\\)",
+            "\\(1056.47\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the multipliers for each of the three successive changes.",
+              "work": "\\(M_1 = 1 + \\frac{8}{100} = 1.08, M_2 = 1 - \\frac{4}{100} = 0.96, M_3 = 1 + \\frac{11}{100} = 1.11\\)"
+            },
+            {
+              "explain": "Multiply the individual multipliers to determine the combined net factor.",
+              "work": "\\(M_{\\text{net}} = 1.08 \\times 0.96 \\times 1.11 = 1.1508\\)"
+            },
+            {
+              "explain": "Apply the net factor to the original value to find the final price.",
+              "work": "\\(\\text{Final Price} = \\$1020 \\times 1.1508 \\approx \\$1173.86\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q41",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$1050.16\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(16\\%\\) and \\(13\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+          "options": [
+            "\\(1581\\)",
+            "\\(1437\\)",
+            "\\(1293\\)",
+            "\\(1509\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{16}{100} = 0.84, M_2 = 1 - \\frac{13}{100} = 0.87\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.84 \\times 0.87 = 0.7308\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{1050.16}{0.7308} \\approx \\$1437\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q45",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The retail price of fine leather exports starts at \\(\\$335\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(7\\%\\) in the second quarter, and a final increase of \\(6\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+          "options": [
+            "\\(356.66\\)",
+            "\\(374.49\\)",
+            "\\(392.33\\)",
+            "\\(320.99\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the multipliers for each of the three successive changes.",
+              "work": "\\(M_1 = 1 + \\frac{8}{100} = 1.08, M_2 = 1 - \\frac{7}{100} = 0.93, M_3 = 1 + \\frac{6}{100} = 1.06\\)"
+            },
+            {
+              "explain": "Multiply the individual multipliers to determine the combined net factor.",
+              "work": "\\(M_{\\text{net}} = 1.08 \\times 0.93 \\times 1.06 = 1.0647\\)"
+            },
+            {
+              "explain": "Apply the net factor to the original value to find the final price.",
+              "work": "\\(\\text{Final Price} = \\$335 \\times 1.0647 \\approx \\$356.66\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q46",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$385.60\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(17\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+          "options": [
+            "\\(548\\)",
+            "\\(470\\)",
+            "\\(522\\)",
+            "\\(574\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{11}{100} = 0.89, M_2 = 1 - \\frac{17}{100} = 0.83\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.89 \\times 0.83 = 0.7387\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{385.60}{0.7387} \\approx \\$522\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q50",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The share value of a biotech startup starts at \\(\\$550\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(10\\%\\) in the second quarter, and a final increase of \\(16\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+          "options": [
+            "\\(558.13\\)",
+            "\\(651.15\\)",
+            "\\(620.14\\)",
+            "\\(682.15\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the multipliers for each of the three successive changes.",
+              "work": "\\(M_1 = 1 + \\frac{8}{100} = 1.08, M_2 = 1 - \\frac{10}{100} = 0.90, M_3 = 1 + \\frac{16}{100} = 1.16\\)"
+            },
+            {
+              "explain": "Multiply the individual multipliers to determine the combined net factor.",
+              "work": "\\(M_{\\text{net}} = 1.08 \\times 0.90 \\times 1.16 = 1.1275\\)"
+            },
+            {
+              "explain": "Apply the net factor to the original value to find the final price.",
+              "work": "\\(\\text{Final Price} = \\$550 \\times 1.1275 \\approx \\$620.14\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q61",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$1066.21\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(13\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+          "options": [
+            "\\(1446\\)",
+            "\\(1239\\)",
+            "\\(1515\\)",
+            "\\(1377\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{11}{100} = 0.89, M_2 = 1 - \\frac{13}{100} = 0.87\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.89 \\times 0.87 = 0.7743\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{1066.21}{0.7743} \\approx \\$1377\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q66",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$360.45\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(17\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+          "options": [
+            "\\(416\\)",
+            "\\(508\\)",
+            "\\(485\\)",
+            "\\(462\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{6}{100} = 0.94, M_2 = 1 - \\frac{17}{100} = 0.83\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.94 \\times 0.83 = 0.7802\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{360.45}{0.7802} \\approx \\$462\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q71",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$495.71\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(16\\%\\) and \\(21\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+          "options": [
+            "\\(784\\)",
+            "\\(672\\)",
+            "\\(822\\)",
+            "\\(747\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{16}{100} = 0.84, M_2 = 1 - \\frac{21}{100} = 0.79\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.84 \\times 0.79 = 0.6636\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{495.71}{0.6636} \\approx \\$747\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q81",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$1077.04\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(6\\%\\) and \\(13\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+          "options": [
+            "\\(1317\\)",
+            "\\(1449\\)",
+            "\\(1185\\)",
+            "\\(1383\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{6}{100} = 0.94, M_2 = 1 - \\frac{13}{100} = 0.87\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.94 \\times 0.87 = 0.8178\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{1077.04}{0.8178} \\approx \\$1317\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q85",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The retail price of fine leather exports starts at \\(\\$255\\). Over the next three consecutive quarters, it undergoes successive value fluctuations: an increase of \\(8\\%\\) in the first quarter, a decrease of \\(7\\%\\) in the second quarter, and a final increase of \\(11\\%\\) in the third quarter. Find the final price at the end of the third quarter, correct to two decimal places.",
+          "options": [
+            "\\(255.87\\)",
+            "\\(312.73\\)",
+            "\\(298.52\\)",
+            "\\(284.30\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the multipliers for each of the three successive changes.",
+              "work": "\\(M_1 = 1 + \\frac{8}{100} = 1.08, M_2 = 1 - \\frac{7}{100} = 0.93, M_3 = 1 + \\frac{11}{100} = 1.11\\)"
+            },
+            {
+              "explain": "Multiply the individual multipliers to determine the combined net factor.",
+              "work": "\\(M_{\\text{net}} = 1.08 \\times 0.93 \\times 1.11 = 1.1149\\)"
+            },
+            {
+              "explain": "Apply the net factor to the original value to find the final price.",
+              "work": "\\(\\text{Final Price} = \\$255 \\times 1.1149 \\approx \\$284.30\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q86",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$280.27\\) for a new designer leather backpack. This price was calculated after applying consecutive discounts of \\(16\\%\\) and \\(17\\%\\) to the original marked price. Determine the original marked price of the designer leather backpack, correct to the nearest dollar.",
+          "options": [
+            "\\(422\\)",
+            "\\(362\\)",
+            "\\(442\\)",
+            "\\(402\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{16}{100} = 0.84, M_2 = 1 - \\frac{17}{100} = 0.83\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.84 \\times 0.83 = 0.6972\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{280.27}{0.6972} \\approx \\$402\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1c-high-q91",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A customer pays a final promotional checkout price of \\(\\$483.03\\) for a new smart home security system suite. This price was calculated after applying consecutive discounts of \\(11\\%\\) and \\(21\\%\\) to the original marked price. Determine the original marked price of the smart home security system suite, correct to the nearest dollar.",
+          "options": [
+            "\\(721\\)",
+            "\\(618\\)",
+            "\\(756\\)",
+            "\\(687\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Calculate the multipliers representing the consecutive discounts.",
+              "work": "\\(M_1 = 1 - \\frac{11}{100} = 0.89, M_2 = 1 - \\frac{21}{100} = 0.79\\)"
+            },
+            {
+              "explain": "Obtain the combined net discount multiplier.",
+              "work": "\\(M_{\\text{net}} = 0.89 \\times 0.79 = 0.7031\\)"
+            },
+            {
+              "explain": "Divide the checkout price by the combined multiplier to recover the original price.",
+              "work": "\\(\\text{Original Price} = \\frac{483.03}{0.7031} \\approx \\$687\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "chapterId": "exam:year10ch4g",
+  "title": "Exam Practice",
+  "year": "Year 10",
+  "topics": [
+    {
+      "topicId": "exam:year10ch4g",
+      "code": "",
+      "title": "Revision",
+      "questions": [
+        {
+          "id": "y10-4g-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the gradient of the line passing through: \\((1, 3)\\) and \\((4, 9)\\).",
+          "options": [
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(-2\\)",
+            "\\(2\\)",
+            "\\(3\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Use midpoint formula",
+              "work": "M = (\\frac{8+0}{2}, frac{6+0}{2})"
+            },
+            {
+              "explain": "Calculate",
+              "work": "M = (4, 3)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-4g-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the gradient of the line passing through: \\((-2, 5)\\) and \\((1, -1)\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(-2\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(-\\dfrac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Use midpoint formula",
+              "work": "M = (\\frac{2+6}{2}, frac{1+5}{2})"
+            },
+            {
+              "explain": "Calculate",
+              "work": "M = (4, 3)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-4g-q2c",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Find the midpoint of the interval $AB$, where $A = (-2, 1)$ and $B = (2, 5)$",
+          "answer": "(0, 3)",
+          "steps": [
+            {
+              "explain": "Use midpoint formula",
+              "work": "M = (\\frac{-2+2}{2}, frac{1+5}{2})"
+            },
+            {
+              "explain": "Calculate",
+              "work": "M = (0, 3)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-4g-q2d",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Find the midpoint of the interval $AB$, where $A = (-4, -2)$ and $B = (0, 4)$",
+          "answer": "(-2, 1)",
+          "steps": [
+            {
+              "explain": "Use midpoint formula",
+              "work": "M = (\\frac{-4+0}{2}, frac{-2+4}{2})"
+            },
+            {
+              "explain": "Calculate",
+              "work": "M = (-2, 1)"
+            }
+          ],
+          "timeLimit": 30
+        }
+      ]
+    }
+  ]
+}

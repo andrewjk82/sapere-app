@@ -1,0 +1,3145 @@
+{
+  "chapterId": "y8-16",
+  "title": "Chapter 16: Probability",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "y8-16a",
+      "code": "16A",
+      "title": "An introduction to probability",
+      "questions": [
+        {
+          "id": "y8-16a-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "One letter is chosen at random from the word HOPE. What is the probability that it is E?",
+          "options": [
+            "\\\\(\\\\frac{1}{3}\\\\)",
+            "\\\\(\\\\frac{1}{5}\\\\)",
+            "\\\\(\\\\frac{3}{4}\\\\)",
+            "\\\\(\\\\frac{1}{4}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Identify the number of letters in the word HOPE, and how many of them are the letter 'E'.",
+          "solution": "1. Count the letters in the word HOPE: H, O, P, E. There are 4 letters in total.\n2. Count the number of 'E's in the word: there is exactly 1 'E'.\n3. The probability is the number of favourable outcomes divided by the total number of outcomes: \\(\\text{Probability} = \\frac{1}{4}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 4 \\\\text{ (The word HOPE has 4 letters.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 1 \\\\text{ (There is exactly 1 letter E.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{1}{4} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the probability of choosing a prime number from the numbers 11, 12, 13, 14, 15, 16, 17, 18?",
+          "options": [
+            "\\\\(\\\\frac{2}{8}\\\\)",
+            "\\\\(\\\\frac{5}{8}\\\\)",
+            "\\\\(\\\\frac{3}{8}\\\\)",
+            "\\\\(\\\\frac{4}{8}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "List the prime numbers in the given set and divide by the total number of elements.",
+          "solution": "1. The set of numbers is \\({11, 12, 13, 14, 15, 16, 17, 18}\\), which has a total of 8 numbers.\n2. The prime numbers in this set are 11, 13, and 17. There are 3 prime numbers in total.\n3. The probability is the number of prime numbers divided by the total count: \\(\\text{Probability} = \\frac{3}{8}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 8 \\\\text{ (The numbers are 11, 12, 13, 14, 15, 16, 17, 18. There are 8 numbers in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 3 \\\\text{ (The prime numbers in this list are 11, 13, and 17. (Note: 15 is divisible by 3 and 5, so it is not prime). There are 3 prime numbers.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{3}{8} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the probability of randomly picking the most expensive laptop from a range of eight new and differently priced laptops in a store?",
+          "options": [
+            "\\\\(\\\\frac{7}{8}\\\\)",
+            "\\\\(\\\\frac{1}{8}\\\\)",
+            "\\\\(\\\\frac{1}{7}\\\\)",
+            "\\\\(\\\\frac{1}{9}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "How many laptops are there in total, and how many of them can be the single most expensive laptop?",
+          "solution": "1. There are 8 laptops in total.\n2. Since each laptop has a different price, there is exactly 1 laptop that is the most expensive.\n3. The probability of picking this specific laptop at random is \\(\\text{Probability} = \\frac{1}{8}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 8 \\\\text{ (There are 8 differently priced laptops in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 1 \\\\text{ (There is exactly 1 most expensive laptop.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{1}{8} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the probability of choosing an integer that is exactly divisible by 3 from the set \\({4, 5, 6, 7, 8, 9, 10, 11, 12, 13}\\)?",
+          "options": [
+            "\\\\(\\\\frac{3}{10}\\\\)",
+            "\\\\(\\\\frac{4}{10}\\\\)",
+            "\\\\(\\\\frac{2}{10}\\\\)",
+            "\\\\(\\\\frac{3}{9}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Check which numbers in the set are multiples of 3, then write the fraction.",
+          "solution": "1. The set of integers has 10 elements.\n2. Let's find which integers are divisible by 3: 6, 9, and 12. There are 3 integers divisible by 3.\n3. The probability is: \\(\\text{Probability} = \\frac{3}{10}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 10 \\\\text{ (The set has 10 numbers (from 4 to 13 inclusive).)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 3 \\\\text{ (The numbers divisible by 3 are 6, 9, and 12. There are 3 such numbers.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{3}{10} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In a raffle, 250 tickets are sold. If you have bought one ticket, what is the probability that you will win first prize?",
+          "options": [
+            "\\\\(\\\\frac{1}{249}\\\\)",
+            "\\\\(\\\\frac{249}{250}\\\\)",
+            "\\\\(\\\\frac{10}{250}\\\\)",
+            "\\\\(\\\\frac{1}{250}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "The probability of winning is the number of tickets you bought divided by the total number of tickets sold.",
+          "solution": "1. There are 250 tickets sold in total, which represents the total number of possible outcomes.\n2. You hold 1 ticket, representing 1 favourable outcome.\n3. The probability of winning first prize is: \\(\\text{Probability} = \\frac{1}{250}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 250 \\\\text{ (There are 250 tickets sold in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 1 \\\\text{ (You have bought 1 ticket, which is the only favourable outcome.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{1}{250} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "One card is chosen at random from a pack of 52 ordinary playing cards. What is the probability that it is the Queen of Spades?",
+          "options": [
+            "\\\\(\\\\frac{13}{52}\\\\)",
+            "\\\\(\\\\frac{1}{13}\\\\)",
+            "\\\\(\\\\frac{1}{52}\\\\)",
+            "\\\\(\\\\frac{4}{52}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "How many cards are in the deck, and how many Queen of Spades are there?",
+          "solution": "1. A standard card pack contains 52 cards.\n2. There is exactly 1 Queen of Spades in the deck.\n3. The probability of picking the Queen of Spades is: \\(\\text{Probability} = \\frac{1}{52}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck of playing cards contains 52 cards.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 1 \\\\text{ (There is exactly 1 Queen of Spades in the deck.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{1}{52} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A number is chosen from the first 25 positive whole numbers. What is the probability that it is exactly divisible by both 2 and 5?",
+          "options": [
+            "\\\\(\\\\frac{3}{25}\\\\)",
+            "\\\\(\\\\frac{2}{25}\\\\)",
+            "\\\\(\\\\frac{5}{25}\\\\)",
+            "\\\\(\\\\frac{12}{25}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "A number divisible by both 2 and 5 must be a multiple of 10. List the multiples of 10 up to 25.",
+          "solution": "1. The first 25 positive whole numbers are \\({1, 2, 3, \\dots, 25}\\).\n2. A number divisible by both 2 and 5 must be divisible by \\(2 \\times 5 = 10\\).\n3. The multiples of 10 in this set are 10 and 20. There are 2 numbers in total.\n4. Probability = \\(\\frac{2}{25}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 25 \\\\text{ (The first 25 positive whole numbers mean the numbers from 1 to 25. There are 25 numbers.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 2 \\\\text{ (A number exactly divisible by both 2 and 5 must be divisible by their lowest common multiple, which is 10. The numbers are 10 and 20. There are 2 such numbers.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{2}{25} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q8a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "One card is drawn at random from a pack of 52 playing cards. What is the probability that it is a King?",
+          "options": [
+            "\\\\(\\\\frac{1}{52}\\\\)",
+            "\\\\(\\\\frac{12}{52}\\\\)",
+            "\\\\(\\\\frac{4}{48}\\\\)",
+            "\\\\(\\\\frac{1}{13}\\\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(\\frac{1}{13}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 4 \\\\text{ (There are 4 Kings in a deck (one for each suit).)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{4}{52}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{1}{13}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q8b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "One card is drawn at random from a pack of 52 playing cards. What is the probability that it is a black card?",
+          "options": [
+            "\\(\\frac{2}{52}\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{13}{52}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{1}{2}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\(\\text{Total outcomes} = 52 \\text{ (A standard deck has 52 cards.)}\\)"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\(\\text{Favourable outcomes} = 26 \\text{ (Half of the deck is black (Clubs and Spades). There are 26 black cards.)}\\)"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\( P(\\text{Event}) = \\frac{\\text{Favourable}}{\\text{Total}} \\)",
+              "work": "\\(\\text{Probability} = \\frac{26}{52}\\)"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\(\\text{Final answer: } \\frac{1}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q8c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "One card is drawn at random from a pack of 52 playing cards. What is the probability that it is a Club?",
+          "options": [
+            "\\\\(\\\\frac{13}{39}\\\\)",
+            "\\\\(\\\\frac{1}{4}\\\\)",
+            "\\\\(\\\\frac{1}{52}\\\\)",
+            "\\\\(\\\\frac{4}{52}\\\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{4}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 13 \\\\text{ (There are 4 suits, and each suit has 13 cards. There are 13 Clubs.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{13}{52}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{1}{4}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q8d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "One card is drawn at random from a pack of 52 playing cards. What is the probability that it is a face card?",
+          "options": [
+            "\\\\(\\\\frac{3}{13}\\\\)",
+            "\\\\(\\\\frac{4}{52}\\\\)",
+            "\\\\(\\\\frac{16}{52}\\\\)",
+            "\\\\(\\\\frac{3}{52}\\\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac{3}{13}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 12 \\\\text{ (The face cards are Jack, Queen, and King. There are 3 face cards per suit, and 4 suits, so 3 * 4 = 12 face cards.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{12}{52}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{3}{13}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A book of 160 pages has a picture on 24 of its pages. If one page is chosen at random, what is the probability that it has a picture on it?",
+          "options": [
+            "\\\\(\\\\frac{24}{136}\\\\)",
+            "\\\\(\\\\frac{3}{10}\\\\)",
+            "\\\\(\\\\frac{1}{24}\\\\)",
+            "\\\\(\\\\frac{3}{20}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide the number of pages with pictures by the total pages, then simplify the fraction.",
+          "solution": "1. The total number of pages is 160.\n2. The number of pages with pictures is 24.\n3. The probability is: \\(\\text{Probability} = \\frac{24}{160}\\).\n4. Simplifying by dividing both the numerator and the denominator by 8: \\(\\frac{24 \\div 8}{160 \\div 8} = \\frac{3}{20}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 160 \\\\text{ (There are 160 pages in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 24 \\\\text{ (There are 24 pages with a picture.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{24}{160}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{3}{20}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch16"
+          ]
+        },
+        {
+          "id": "y8-16a-q10a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "One marble is picked at random from a bag containing 14 blue marbles, 6 green marbles and 8 purple marbles. What is the probability that the marble is blue?",
+          "options": [
+            "\\\\(\\\\frac{14}{14}\\\\)",
+            "\\\\(\\\\frac{1}{3}\\\\)",
+            "\\\\(\\\\frac{14}{20}\\\\)",
+            "\\\\(\\\\frac{1}{2}\\\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(\\frac{1}{2}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 28 \\\\text{ (Total marbles = 14 (blue) + 6 (green) + 8 (purple) = 28 marbles.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 14 \\\\text{ (There are 14 blue marbles.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{14}{28}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{1}{2}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q10b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "One marble is picked at random from a bag containing 14 blue marbles, 6 green marbles and 8 purple marbles. What is the probability that the marble is green?",
+          "options": [
+            "\\\\(\\\\frac{3}{7}\\\\)",
+            "\\\\(\\\\frac{1}{6}\\\\)",
+            "\\\\(\\\\frac{3}{14}\\\\)",
+            "\\\\(\\\\frac{6}{22}\\\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{3}{14}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 28 \\\\text{ (Total marbles = 28.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 6 \\\\text{ (There are 6 green marbles.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{6}{28}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{3}{14}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q10c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "One marble is picked at random from a bag containing 14 blue marbles, 6 green marbles and 8 purple marbles. What is the probability that the marble is not blue?",
+          "options": [
+            "\\\\(\\\\frac{4}{7}\\\\)",
+            "\\\\(\\\\frac{1}{2}\\\\)",
+            "\\\\(\\\\frac{1}{3}\\\\)",
+            "\\\\(\\\\frac{3}{14}\\\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{2}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 28 \\\\text{ (Total marbles = 28. To find \"not blue\", we can subtract the probability of \"blue\" from 1, or count the non-blue marbles.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 14 \\\\text{ (Non-blue marbles = 6 (green) + 8 (purple) = 14.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{14}{28}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{1}{2}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If you bought 8 raffle tickets and a total of 360 were sold, what would be the probability that you won first prize?",
+          "options": [
+            "\\\\(\\\\frac{1}{360}\\\\)",
+            "\\\\(\\\\frac{8}{352}\\\\)",
+            "\\\\(\\\\frac{1}{8}\\\\)",
+            "\\\\(\\\\frac{1}{45}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Create a fraction of tickets bought over total tickets, and simplify it by dividing both numbers by their highest common factor.",
+          "solution": "1. There are 360 total tickets, which is the total outcomes.\n2. You hold 8 tickets, which is the number of favourable outcomes.\n3. Probability of winning is: \\(\\text{Probability} = \\frac{8}{360}\\).\n4. Simplifying by dividing both numbers by 8: \\(\\frac{8 \\div 8}{360 \\div 8} = \\frac{1}{45}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 360 \\\\text{ (There are 360 tickets in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 8 \\\\text{ (You bought 8 tickets, which are your favourable outcomes.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{8}{360}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{1}{45}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch16"
+          ]
+        },
+        {
+          "id": "y8-16a-q12a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The numbers on a spinner wheel go from 0 to 24. The spinner is spun. What is the probability that it points to an even number?",
+          "options": [
+            "\\\\(\\\\frac{12}{25}\\\\)",
+            "\\\\(\\\\frac{12}{24}\\\\)",
+            "\\\\(\\\\frac{13}{24}\\\\)",
+            "\\\\(\\\\frac{13}{25}\\\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(\\frac{12}{25}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 25 \\\\text{ (The numbers go from 0 to 24 inclusive, which means there are 25 numbers in total (don't forget the 0!).)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 13 \\\\text{ (The even numbers are 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24. There are 13 even numbers.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{13}{25} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q12b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The numbers on a spinner wheel go from 0 to 24. The spinner is spun. What is the probability that it points to an odd number?",
+          "options": [
+            "\\\\(\\\\frac{12}{24}\\\\)",
+            "\\\\(\\\\frac{1}{2}\\\\)",
+            "\\\\(\\\\frac{12}{25}\\\\)",
+            "\\\\(\\\\frac{13}{25}\\\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{12}{25}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 25 \\\\text{ (There are 25 numbers in total (0 to 24).)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 12 \\\\text{ (The odd numbers are 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23. There are 12 odd numbers.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{12}{25} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q12c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The numbers on a spinner wheel go from 0 to 24. The spinner is spun. What is the probability that it points to a number less than 8, excluding zero?",
+          "options": [
+            "\\\\(\\\\frac{8}{24}\\\\)",
+            "\\\\(\\\\frac{7}{25}\\\\)",
+            "\\\\(\\\\frac{8}{25}\\\\)",
+            "\\\\(\\\\frac{7}{24}\\\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{7}{25}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 25 \\\\text{ (There are 25 numbers in total (0 to 24).)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 7 \\\\text{ (The numbers less than 8 excluding zero are 1, 2, 3, 4, 5, 6, 7. There are 7 such numbers.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{7}{25} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A number is chosen at random from the first 16 positive whole numbers. What is the probability that it is not a prime number?",
+          "options": [
+            "\\\\(\\\\frac{1}{2}\\\\)",
+            "\\\\(\\\\frac{5}{8}\\\\)",
+            "\\\\(\\\\frac{3}{8}\\\\)",
+            "\\\\(\\\\frac{6}{16}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "List the prime numbers up to 16, subtract their count from 16 to find the non-prime count, and simplify the fraction.",
+          "solution": "1. The first 16 positive whole numbers are \\({1, 2, 3, \\dots, 16}\\). There are 16 numbers in total.\n2. The prime numbers in this set are 2, 3, 5, 7, 11, 13 (6 prime numbers).\n3. The numbers that are NOT prime are the remaining numbers: \\({1, 4, 6, 8, 9, 10, 12, 14, 15, 16}\\) (10 numbers). Note that 1 is not a prime number.\n4. The probability is \\(\\frac{10}{16} = \\frac{5}{8}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 16 \\\\text{ (There are 16 numbers in total (1 to 16).)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 10 \\\\text{ (The prime numbers are 2, 3, 5, 7, 11, 13 (6 numbers). The non-prime numbers are the rest: 1, 4, 6, 8, 9, 10, 12, 14, 15, 16 (10 numbers). Note: 1 is NOT a prime number.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{10}{16}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{5}{8}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A card is drawn at random from a pack of 52 playing cards. What is the probability that it is not a face card (Jack, Queen or King)?",
+          "options": [
+            "\\\\(\\\\frac{10}{13}\\\\)",
+            "\\\\(\\\\frac{3}{13}\\\\)",
+            "\\\\(\\\\frac{40}{48}\\\\)",
+            "\\\\(\\\\frac{1}{4}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Determine the number of face cards (Jacks, Queens, Kings), subtract from 52, and express as a simplified fraction.",
+          "solution": "1. A standard deck contains 52 cards.\n2. There are 12 face cards in the deck (4 Jacks, 4 Queens, and 4 Kings).\n3. The number of cards that are not face cards is \\(52 - 12 = 40\\) cards.\n4. The probability is \\(\\frac{40}{52}\\). Simplifying by dividing the numerator and denominator by 4: \\(\\frac{40 \\div 4}{52 \\div 4} = \\frac{10}{13}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 40 \\\\text{ (There are 12 face cards (3 per suit * 4 suits). Therefore, there are 52 - 12 = 40 cards that are not face cards.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{40}{52}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{10}{13}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch16"
+          ]
+        },
+        {
+          "id": "y8-16a-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "One letter is chosen at random from the 26 letters of the English alphabet. What is the probability that it is not one of the letters in the word SPIN?",
+          "options": [
+            "\\\\(\\\\frac{2}{13}\\\\)",
+            "\\\\(\\\\frac{22}{24}\\\\)",
+            "\\\\(\\\\frac{4}{26}\\\\)",
+            "\\\\(\\\\frac{11}{13}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Subtract the number of distinct letters in the word SPIN from 26, then simplify the fraction.",
+          "solution": "1. There are 26 letters in the English alphabet.\n2. The word SPIN contains 4 unique letters: S, P, I, N.\n3. The number of letters in the alphabet that are not in the word SPIN is \\(26 - 4 = 22\\) letters.\n4. The probability is \\(\\frac{22}{26}\\), which simplifies to \\(\\frac{11}{13}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 26 \\\\text{ (There are 26 letters in the alphabet.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 22 \\\\text{ (The word SPIN has 4 distinct letters. Therefore, there are 26 - 4 = 22 letters that are not in the word SPIN.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{22}{26}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{11}{13}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch16"
+          ]
+        },
+        {
+          "id": "y8-16a-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A box of 80 coloured pens contains a mixture of colours. Only 16 of the pens are blue. If one pen is chosen at random, what is the probability that it is not blue?",
+          "options": [
+            "\\\\(\\\\frac{16}{80}\\\\)",
+            "\\\\(\\\\frac{64}{64}\\\\)",
+            "\\\\(\\\\frac{4}{5}\\\\)",
+            "\\\\(\\\\frac{1}{5}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract the blue pens from the total pens, write the fraction, and simplify it.",
+          "solution": "1. The total number of pens in the box is 80.\n2. There are 16 blue pens, so the number of pens that are NOT blue is \\(80 - 16 = 64\\).\n3. The probability of choosing a pen that is not blue is \\(\\frac{64}{80}\\).\n4. Simplifying by dividing both numbers by 16: \\(\\frac{64 \\div 16}{80 \\div 16} = \\frac{4}{5}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 80 \\\\text{ (There are 80 pens in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 64 \\\\text{ (There are 16 blue pens. The number of not blue pens is 80 - 16 = 64.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{64}{80}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{4}{5}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A number is chosen at random from the first 15 positive whole numbers. What is the probability that it is not exactly divisible by 5?",
+          "options": [
+            "\\\\(\\\\frac{4}{15}\\\\)",
+            "\\\\(\\\\frac{4}{5}\\\\)",
+            "\\\\(\\\\frac{1}{5}\\\\)",
+            "\\\\(\\\\frac{3}{15}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Identify the multiples of 5 up to 15, subtract their count from 15, and simplify the fraction.",
+          "solution": "1. The first 15 positive whole numbers are \\({1, 2, 3, \\dots, 15}\\) (15 numbers in total).\n2. The numbers divisible by 5 are 5, 10, and 15 (3 numbers).\n3. The numbers that are NOT divisible by 5 are \\(15 - 3 = 12\\) numbers.\n4. The probability is \\(\\frac{12}{15}\\), which simplifies to \\(\\frac{4}{5}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 15 \\\\text{ (There are 15 numbers in total (1 to 15).)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 12 \\\\text{ (The numbers exactly divisible by 5 are 5, 10, 15 (3 numbers). The number of non-divisible numbers is 15 - 3 = 12.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{12}{15}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{4}{5}"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch16"
+          ]
+        },
+        {
+          "id": "y8-16a-q18",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "One letter is chosen at random from the word STUDENT. What is the probability that it is not a vowel?",
+          "options": [
+            "\\\\(\\\\frac{5}{7}\\\\)",
+            "\\\\(\\\\frac{2}{7}\\\\)",
+            "\\\\(\\\\frac{5}{5}\\\\)",
+            "\\\\(\\\\frac{1}{7}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the total number of letters and the number of consonants (non-vowels) in STUDENT.",
+          "solution": "1. The word STUDENT contains 7 letters in total: S, T, U, D, E, N, T.\n2. The vowels in the word are U and E (2 letters).\n3. The letters that are not vowels (consonants) are S, T, D, N, T (5 letters).\n4. The probability of choosing a letter that is not a vowel is \\(\\frac{5}{7}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 7 \\\\text{ (The word STUDENT has 7 letters.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 5 \\\\text{ (The vowels are U, E (2 letters). The letters that are not vowels are S, T, D, N, T (5 letters).)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{5}{7} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a raffle, 300 tickets are sold. If you bought 15 tickets, what is the probability that you will not win first prize?",
+          "options": [
+            "\\\\(\\\\frac{1}{20}\\\\)",
+            "\\\\(\\\\frac{15}{300}\\\\)",
+            "\\\\(\\\\frac{19}{21}\\\\)",
+            "\\\\(\\\\frac{19}{20}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Calculate the probability of winning first prize first, then subtract it from 1.",
+          "solution": "1. The total number of tickets sold is 300.\n2. You hold 15 tickets. The probability that one of your tickets wins first prize is \\(\\frac{15}{300} = \\frac{1}{20}\\).\n3. The probability that you do NOT win first prize is \\(1 - \\frac{1}{20} = \\frac{19}{20}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 300 \\\\text{ (There are 300 tickets in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 285 \\\\text{ (You bought 15 tickets. The tickets that will not win first prize for you are the remaining 300 - 15 = 285 tickets.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{285}{300}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{19}{20}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If you roll an ordinary six-sided die, what is the probability that you will not get a score of 3 or more?",
+          "options": [
+            "\\\\(\\\\frac{1}{3}\\\\)",
+            "\\\\(\\\\frac{2}{3}\\\\)",
+            "\\\\(\\\\frac{4}{6}\\\\)",
+            "\\\\(\\\\frac{1}{6}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "List the outcomes on a die that are less than 3, and write that count over 6.",
+          "solution": "1. A six-sided die has 6 possible outcomes: \\({1, 2, 3, 4, 5, 6}\\).\n2. The outcomes that are '3 or more' are \\({3, 4, 5, 6}\\) (4 outcomes).\n3. The outcomes that are NOT '3 or more' (which means less than 3) are \\({1, 2}\\) (2 outcomes).\n4. The probability is \\(\\frac{2}{6} = \\frac{1}{3}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 6 \\\\text{ (A die has 6 faces: 1, 2, 3, 4, 5, 6.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 2 \\\\text{ (The scores of 3 or more are 3, 4, 5, 6 (4 outcomes). The scores NOT 3 or more are 1, 2 (2 outcomes).)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{2}{6}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{1}{3}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "There are 150 envelopes in a prize draw. Six envelopes contain a $10 voucher, and the rest contain a thank-you note. What is the probability that you will not draw an envelope containing a $10 voucher?",
+          "options": [
+            "\\\\(\\\\frac{1}{25}\\\\)",
+            "\\\\(\\\\frac{6}{150}\\\\)",
+            "\\\\(\\\\frac{24}{24}\\\\)",
+            "\\\\(\\\\frac{24}{25}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the number of envelopes without a voucher, divide by the total number of envelopes, and simplify.",
+          "solution": "1. There are 150 envelopes in total.\n2. 6 envelopes contain a voucher, which means \\(150 - 6 = 144\\) envelopes contain a thank-you note (no voucher).\n3. The probability of drawing an envelope without a voucher is \\(\\frac{144}{150}\\).\n4. Simplifying by dividing both numbers by 6: \\(\\frac{144 \\div 6}{150 \\div 6} = \\frac{24}{25}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 150 \\\\text{ (There are 150 envelopes in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 144 \\\\text{ (6 contain a voucher. The envelopes that do NOT contain a voucher are 150 - 6 = 144 envelopes.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{144}{150}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{24}{25}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q22",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "When a standard deck of 52 playing cards is cut, what is the probability that the card showing is not a number card from 2 to 10 (inclusive)?",
+          "options": [
+            "\\\\(\\\\frac{36}{52}\\\\)",
+            "\\\\(\\\\frac{1}{13}\\\\)",
+            "\\\\(\\\\frac{4}{13}\\\\)",
+            "\\\\(\\\\frac{9}{13}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Count how many cards in the deck are NOT number cards from 2 to 10 (Aces, Jacks, Queens, Kings), and simplify the fraction over 52.",
+          "solution": "1. A standard deck contains 52 cards.\n2. The number cards from 2 to 10 in each suit are \\({2, 3, 4, 5, 6, 7, 8, 9, 10}\\) (9 cards per suit).\n3. For all 4 suits, the total number cards is \\(9 \\times 4 = 36\\).\n4. The cards that are NOT number cards from 2 to 10 are the remaining cards (Aces, Jacks, Queens, Kings): \\(52 - 36 = 16\\) cards.\n5. The probability of cutting one of these 16 cards is \\(\\frac{16}{52} = \\frac{4}{13}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 16 \\\\text{ (Number cards from 2 to 10 inclusive means 9 cards per suit. With 4 suits, there are 36 number cards. The remaining cards (Aces, Jacks, Queens, Kings) total 52 - 36 = 16 cards.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{16}{52}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{4}{13}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q23a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A letter is chosen at random from the letters of the word PERCENTAGE. What is the probability that it is P?",
+          "options": [
+            "\\\\(\\\\frac{2}{10}\\\\)",
+            "\\\\(\\\\frac{1}{9}\\\\)",
+            "\\\\(\\\\frac{9}{10}\\\\)",
+            "\\\\(\\\\frac{1}{10}\\\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(\\frac{1}{10}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 10 \\\\text{ (The word PERCENTAGE has 10 letters.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 1 \\\\text{ (There is exactly 1 P.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{1}{10} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q23b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A letter is chosen at random from the letters of the word PERCENTAGE. What is the probability that it is E?",
+          "options": [
+            "\\\\(\\\\frac{1}{10}\\\\)",
+            "\\\\(\\\\frac{7}{10}\\\\)",
+            "\\\\(\\\\frac{3}{10}\\\\)",
+            "\\\\(\\\\frac{2}{10}\\\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{3}{10}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 10 \\\\text{ (The word PERCENTAGE has 10 letters.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 3 \\\\text{ (There are 3 E's.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{3}{10} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q23c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A letter is chosen at random from the letters of the word PERCENTAGE. What is the probability that it is a vowel?",
+          "options": [
+            "\\\\(\\\\frac{1}{5}\\\\)",
+            "\\\\(\\\\frac{2}{5}\\\\)",
+            "\\\\(\\\\frac{3}{5}\\\\)",
+            "\\\\(\\\\frac{4}{10}\\\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{2}{5}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 10 \\\\text{ (The word PERCENTAGE has 10 letters.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 4 \\\\text{ (The vowels in the word are E, E, A, E (4 vowels).)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{4}{10}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{2}{5}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q23d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A letter is chosen at random from the letters of the word PERCENTAGE. What is the probability that it is not E?",
+          "options": [
+            "\\\\(\\\\frac{7}{10}\\\\)",
+            "\\\\(\\\\frac{3}{10}\\\\)",
+            "\\\\(\\\\frac{1}{10}\\\\)",
+            "\\\\(\\\\frac{7}{9}\\\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac{7}{10}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 10 \\\\text{ (The word PERCENTAGE has 10 letters.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 7 \\\\text{ (There are 3 E's, so there are 10 - 3 = 7 letters that are not E.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{7}{10} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q24a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A card is drawn at random from a pack of playing cards. What is the probability that it is a Queen?",
+          "options": [
+            "\\\\(\\\\frac{12}{52}\\\\)",
+            "\\\\(\\\\frac{1}{52}\\\\)",
+            "\\\\(\\\\frac{3}{13}\\\\)",
+            "\\\\(\\\\frac{1}{13}\\\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(\\frac{1}{13}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 4 \\\\text{ (There are 4 Queens.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{4}{52}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{1}{13}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q24b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A card is drawn at random from a pack of playing cards. What is the probability that it is a Diamond?",
+          "options": [
+            "\\\\(\\\\frac{4}{52}\\\\)",
+            "\\\\(\\\\frac{3}{4}\\\\)",
+            "\\\\(\\\\frac{1}{4}\\\\)",
+            "\\\\(\\\\frac{1}{52}\\\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{1}{4}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 13 \\\\text{ (There are 13 Diamonds in a deck.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{13}{52}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{1}{4}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q24c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A card is drawn at random from a pack of playing cards. What is the probability that it is not a Heart?",
+          "options": [
+            "\\\\(\\\\frac{39}{40}\\\\)",
+            "\\\\(\\\\frac{3}{4}\\\\)",
+            "\\\\(\\\\frac{1}{4}\\\\)",
+            "\\\\(\\\\frac{13}{52}\\\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{3}{4}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 39 \\\\text{ (There are 13 Hearts. The number of non-Heart cards is 52 - 13 = 39.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{39}{52}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{3}{4}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q24d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A card is drawn at random from a pack of playing cards. What is the probability that it is not a 9 or a 10?",
+          "options": [
+            "\\\\(\\\\frac{11}{13}\\\\)",
+            "\\\\(\\\\frac{2}{13}\\\\)",
+            "\\\\(\\\\frac{8}{52}\\\\)",
+            "\\\\(\\\\frac{44}{48}\\\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac{11}{13}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 44 \\\\text{ (There are four 9s and four 10s (8 cards in total). The number of cards that are neither is 52 - 8 = 44.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{44}{52}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{11}{13}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q25a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A bag contains 12 green marbles and one each of red, yellow, blue, orange, purple and white marbles. What is the probability that the marble is green?",
+          "options": [
+            "\\\\(\\\\frac{1}{3}\\\\)",
+            "\\\\(\\\\frac{12}{19}\\\\)",
+            "\\\\(\\\\frac{1}{18}\\\\)",
+            "\\\\(\\\\frac{2}{3}\\\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(\\frac{2}{3}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 18 \\\\text{ (Total marbles = 12 (green) + 1 (red) + 1 (yellow) + 1 (blue) + 1 (orange) + 1 (purple) + 1 (white) = 18 marbles.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 12 \\\\text{ (There are 12 green marbles.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{12}{18}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{2}{3}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q25b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A bag contains 12 green marbles and one each of red, yellow, blue, orange, purple and white marbles. What is the probability that the marble is not green?",
+          "options": [
+            "\\\\(\\\\frac{6}{12}\\\\)",
+            "\\\\(\\\\frac{1}{18}\\\\)",
+            "\\\\(\\\\frac{1}{3}\\\\)",
+            "\\\\(\\\\frac{2}{3}\\\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{1}{3}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 18 \\\\text{ (Total marbles = 18.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 6 \\\\text{ (There are 18 - 12 = 6 marbles that are not green.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{6}{18}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{1}{3}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q25c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A bag contains 12 green marbles and one each of red, yellow, blue, orange, purple and white marbles. What is the probability that the marble is white?",
+          "options": [
+            "\\\\(\\\\frac{2}{18}\\\\)",
+            "\\\\(\\\\frac{1}{18}\\\\)",
+            "\\\\(\\\\frac{1}{17}\\\\)",
+            "\\\\(\\\\frac{1}{6}\\\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{18}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 18 \\\\text{ (Total marbles = 18.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 1 \\\\text{ (There is exactly 1 white marble.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{1}{18} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q25d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A bag contains 12 green marbles and one each of red, yellow, blue, orange, purple and white marbles. What is the probability that the marble is neither green nor red?",
+          "options": [
+            "\\\\(\\\\frac{5}{18}\\\\)",
+            "\\\\(\\\\frac{13}{18}\\\\)",
+            "\\\\(\\\\frac{5}{13}\\\\)",
+            "\\\\(\\\\frac{1}{18}\\\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac{5}{18}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 18 \\\\text{ (Total marbles = 18.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 5 \\\\text{ (There are 12 green and 1 red (13 marbles). The remaining marbles are 18 - 13 = 5.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{5}{18} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q26a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "There are 80 fruits in a basket. Of the fruits, 32 are apples, 36 are bananas and the rest are oranges. What is the probability that the fruit is a banana?",
+          "options": [
+            "\\\\(\\\\frac{11}{20}\\\\)",
+            "\\\\(\\\\frac{36}{44}\\\\)",
+            "\\\\(\\\\frac{9}{10}\\\\)",
+            "\\\\(\\\\frac{9}{20}\\\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(\\frac{9}{20}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 80 \\\\text{ (There are 80 fruits in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 36 \\\\text{ (There are 36 bananas.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{36}{80}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{9}{20}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q26b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "There are 80 fruits in a basket. Of the fruits, 32 are apples, 36 are bananas and the rest are oranges. What is the probability that the fruit is not an apple?",
+          "options": [
+            "\\\\(\\\\frac{32}{80}\\\\)",
+            "\\\\(\\\\frac{48}{32}\\\\)",
+            "\\\\(\\\\frac{3}{5}\\\\)",
+            "\\\\(\\\\frac{2}{5}\\\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{3}{5}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 80 \\\\text{ (There are 80 fruits in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 48 \\\\text{ (There are 32 apples, so there are 80 - 32 = 48 fruits that are not apples.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{48}{80}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{3}{5}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q26c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "There are 80 fruits in a basket. Of the fruits, 32 are apples, 36 are bananas and the rest are oranges. What is the probability that the fruit is an orange?",
+          "options": [
+            "\\\\(\\\\frac{3}{10}\\\\)",
+            "\\\\(\\\\frac{3}{20}\\\\)",
+            "\\\\(\\\\frac{17}{20}\\\\)",
+            "\\\\(\\\\frac{12}{68}\\\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{3}{20}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 80 \\\\text{ (There are 80 fruits in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 12 \\\\text{ (Number of oranges = 80 - 32 (apples) - 36 (bananas) = 12 oranges.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{12}{80}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{3}{20}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q26d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "There are 80 fruits in a basket. Of the fruits, 32 are apples, 36 are bananas and the rest are oranges. What is the probability that the fruit is a pear?",
+          "options": [
+            "\\\\(0\\\\)",
+            "\\\\(\\\\frac{1}{80}\\\\)",
+            "\\\\(\\\\frac{80}{80}\\\\)",
+            "\\\\(\\\\frac{1}{4}\\\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 80 \\\\text{ (There are 80 fruits in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 0 \\\\text{ (There are no pears in the basket. This is an impossible event.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{0}{80}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{0}{undefined}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q27a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A whole number is chosen at random from the first 50 positive whole numbers. What is the probability that it is divisible by 5?",
+          "options": [
+            "\\\\(\\\\frac{4}{5}\\\\)",
+            "\\\\(\\\\frac{10}{40}\\\\)",
+            "\\\\(\\\\frac{1}{50}\\\\)",
+            "\\\\(\\\\frac{1}{5}\\\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(\\frac{1}{5}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 50 \\\\text{ (There are 50 numbers in total (1 to 50).)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 10 \\\\text{ (Numbers divisible by 5 are 5, 10, 15, ..., 50. There are 50 / 5 = 10 such numbers.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{10}{50}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{1}{5}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q27b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A whole number is chosen at random from the first 50 positive whole numbers. What is the probability that it is divisible by 5 and 3?",
+          "options": [
+            "\\\\(\\\\frac{3}{47}\\\\)",
+            "\\\\(\\\\frac{5}{50}\\\\)",
+            "\\\\(\\\\frac{3}{50}\\\\)",
+            "\\\\(\\\\frac{13}{50}\\\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{3}{50}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 50 \\\\text{ (There are 50 numbers in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 3 \\\\text{ (Numbers divisible by both 5 and 3 must be divisible by their lowest common multiple, 15. The numbers are 15, 30, 45. (3 numbers).)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{3}{50} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q27c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A whole number is chosen at random from the first 50 positive whole numbers. What is the probability that it is divisible by 5 but not by 3?",
+          "options": [
+            "\\\\(\\\\frac{7}{43}\\\\)",
+            "\\\\(\\\\frac{7}{50}\\\\)",
+            "\\\\(\\\\frac{10}{50}\\\\)",
+            "\\\\(\\\\frac{3}{50}\\\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{7}{50}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 50 \\\\text{ (There are 50 numbers in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 7 \\\\text{ (We know there are 10 numbers divisible by 5. Of these, 3 are also divisible by 3 (15, 30, 45). So the numbers divisible by 5 but NOT 3 are 10 - 3 = 7 numbers.)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{7}{50} \\\\text{ (Final answer)}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q27d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A whole number is chosen at random from the first 50 positive whole numbers. What is the probability that it is even and divisible by 5?",
+          "options": [
+            "\\\\(\\\\frac{1}{10}\\\\)",
+            "\\\\(\\\\frac{1}{5}\\\\)",
+            "\\\\(\\\\frac{9}{10}\\\\)",
+            "\\\\(\\\\frac{5}{45}\\\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(\\frac{1}{10}\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of possible outcomes (the sample space).",
+              "work": "\\\\text{Total outcomes} = 50 \\\\text{ (There are 50 numbers in total.)}"
+            },
+            {
+              "explain": "Identify the number of favourable outcomes for the given event.",
+              "work": "\\\\text{Favourable outcomes} = 5 \\\\text{ (Numbers that are even AND divisible by 5 must be divisible by 10. The numbers are 10, 20, 30, 40, 50. (5 numbers).)}"
+            },
+            {
+              "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+              "work": "\\\\text{Probability} = \\\\frac{5}{50}"
+            },
+            {
+              "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+              "work": "\\\\text{Final answer: } \\\\frac{1}{10}"
+            }
+          ]
+        },
+        {
+          "id": "y8-16a-q8",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "One card is drawn at random from a pack of 52 playing cards.",
+          "parts": [
+            {
+              "id": "y8-16a-q8a",
+              "type": "mc",
+              "stem": "a) What is the probability that it is a King?",
+              "options": [
+                "\\\\(\\\\frac{1}{52}\\\\)",
+                "\\\\(\\\\frac{12}{52}\\\\)",
+                "\\\\(\\\\frac{4}{48}\\\\)",
+                "\\\\(\\\\frac{1}{13}\\\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 4 \\\\text{ (There are 4 Kings in a deck (one for each suit).)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{4}{52}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{1}{13}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q8b",
+              "type": "mc",
+              "stem": "b) What is the probability that it is a black card?",
+              "options": [
+                "\\\\(\\\\frac{2}{52}\\\\)",
+                "\\\\(\\\\frac{1}{4}\\\\)",
+                "\\\\(\\\\frac{1}{2}\\\\)",
+                "\\\\(\\\\frac{13}{52}\\\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 26 \\\\text{ (Half of the deck is black (Clubs and Spades). There are 26 black cards.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{26}{52}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{1}{2}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q8c",
+              "type": "mc",
+              "stem": "c) What is the probability that it is a Club?",
+              "options": [
+                "\\\\(\\\\frac{13}{39}\\\\)",
+                "\\\\(\\\\frac{1}{4}\\\\)",
+                "\\\\(\\\\frac{1}{52}\\\\)",
+                "\\\\(\\\\frac{4}{52}\\\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 13 \\\\text{ (There are 4 suits, and each suit has 13 cards. There are 13 Clubs.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{13}{52}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{1}{4}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q8d",
+              "type": "mc",
+              "stem": "d) What is the probability that it is a face card?",
+              "options": [
+                "\\\\(\\\\frac{3}{13}\\\\)",
+                "\\\\(\\\\frac{4}{52}\\\\)",
+                "\\\\(\\\\frac{16}{52}\\\\)",
+                "\\\\(\\\\frac{3}{52}\\\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 12 \\\\text{ (The face cards are Jack, Queen, and King. There are 3 face cards per suit, and 4 suits, so 3 * 4 = 12 face cards.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{12}{52}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{3}{13}"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "Recall the composition of a standard deck: 52 cards, 4 suits of 13 cards each, 4 cards of each rank, 26 red and 26 black cards.",
+          "solution": "See individual step-by-step solutions for each sub-question.",
+          "manual": true
+        },
+        {
+          "id": "y8-16a-q10",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "One marble is picked at random from a bag containing 14 blue marbles, 6 green marbles and 8 purple marbles.",
+          "parts": [
+            {
+              "id": "y8-16a-q10a",
+              "type": "mc",
+              "stem": "a) What is the probability that the marble is blue?",
+              "options": [
+                "\\\\(\\\\frac{14}{14}\\\\)",
+                "\\\\(\\\\frac{1}{3}\\\\)",
+                "\\\\(\\\\frac{14}{20}\\\\)",
+                "\\\\(\\\\frac{1}{2}\\\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 28 \\\\text{ (Total marbles = 14 (blue) + 6 (green) + 8 (purple) = 28 marbles.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 14 \\\\text{ (There are 14 blue marbles.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{14}{28}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{1}{2}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q10b",
+              "type": "mc",
+              "stem": "b) What is the probability that the marble is green?",
+              "options": [
+                "\\\\(\\\\frac{3}{7}\\\\)",
+                "\\\\(\\\\frac{1}{6}\\\\)",
+                "\\\\(\\\\frac{3}{14}\\\\)",
+                "\\\\(\\\\frac{6}{22}\\\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 28 \\\\text{ (Total marbles = 28.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 6 \\\\text{ (There are 6 green marbles.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{6}{28}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{3}{14}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q10c",
+              "type": "mc",
+              "stem": "c) What is the probability that the marble is not blue?",
+              "options": [
+                "\\\\(\\\\frac{4}{7}\\\\)",
+                "\\\\(\\\\frac{1}{2}\\\\)",
+                "\\\\(\\\\frac{1}{3}\\\\)",
+                "\\\\(\\\\frac{3}{14}\\\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 28 \\\\text{ (Total marbles = 28. To find \"not blue\", we can subtract the probability of \"blue\" from 1, or count the non-blue marbles.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 14 \\\\text{ (Non-blue marbles = 6 (green) + 8 (purple) = 14.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{14}{28}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{1}{2}"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "Calculate the total number of marbles first, then determine the fraction for each event, simplifying where possible.",
+          "solution": "See individual step-by-step solutions for each sub-question."
+        },
+        {
+          "id": "y8-16a-q23",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A letter is chosen at random from the letters of the word PERCENTAGE.",
+          "parts": [
+            {
+              "id": "y8-16a-q23a",
+              "type": "mc",
+              "stem": "a) What is the probability that it is P?",
+              "options": [
+                "\\\\(\\\\frac{2}{10}\\\\)",
+                "\\\\(\\\\frac{1}{9}\\\\)",
+                "\\\\(\\\\frac{9}{10}\\\\)",
+                "\\\\(\\\\frac{1}{10}\\\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 10 \\\\text{ (The word PERCENTAGE has 10 letters.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 1 \\\\text{ (There is exactly 1 P.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{1}{10} \\\\text{ (Final answer)}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q23b",
+              "type": "mc",
+              "stem": "b) What is the probability that it is E?",
+              "options": [
+                "\\\\(\\\\frac{1}{10}\\\\)",
+                "\\\\(\\\\frac{7}{10}\\\\)",
+                "\\\\(\\\\frac{3}{10}\\\\)",
+                "\\\\(\\\\frac{2}{10}\\\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 10 \\\\text{ (The word PERCENTAGE has 10 letters.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 3 \\\\text{ (There are 3 E's.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{3}{10} \\\\text{ (Final answer)}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q23c",
+              "type": "mc",
+              "stem": "c) What is the probability that it is a vowel?",
+              "options": [
+                "\\\\(\\\\frac{1}{5}\\\\)",
+                "\\\\(\\\\frac{2}{5}\\\\)",
+                "\\\\(\\\\frac{3}{5}\\\\)",
+                "\\\\(\\\\frac{4}{10}\\\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 10 \\\\text{ (The word PERCENTAGE has 10 letters.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 4 \\\\text{ (The vowels in the word are E, E, A, E (4 vowels).)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{4}{10}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{2}{5}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q23d",
+              "type": "mc",
+              "stem": "d) What is the probability that it is not E?",
+              "options": [
+                "\\\\(\\\\frac{7}{10}\\\\)",
+                "\\\\(\\\\frac{3}{10}\\\\)",
+                "\\\\(\\\\frac{1}{10}\\\\)",
+                "\\\\(\\\\frac{7}{9}\\\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 10 \\\\text{ (The word PERCENTAGE has 10 letters.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 7 \\\\text{ (There are 3 E's, so there are 10 - 3 = 7 letters that are not E.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{7}{10} \\\\text{ (Final answer)}"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "Write down the occurrences of each requested letter category out of the 10 letters of PERCENTAGE.",
+          "solution": "See individual step-by-step solutions for each sub-question."
+        },
+        {
+          "id": "y8-16a-q24",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A card is drawn at random from a pack of playing cards.",
+          "parts": [
+            {
+              "id": "y8-16a-q24a",
+              "type": "mc",
+              "stem": "a) What is the probability that it is a Queen?",
+              "options": [
+                "\\\\(\\\\frac{12}{52}\\\\)",
+                "\\\\(\\\\frac{1}{52}\\\\)",
+                "\\\\(\\\\frac{3}{13}\\\\)",
+                "\\\\(\\\\frac{1}{13}\\\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 4 \\\\text{ (There are 4 Queens.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{4}{52}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{1}{13}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q24b",
+              "type": "mc",
+              "stem": "b) What is the probability that it is a Diamond?",
+              "options": [
+                "\\\\(\\\\frac{4}{52}\\\\)",
+                "\\\\(\\\\frac{3}{4}\\\\)",
+                "\\\\(\\\\frac{1}{4}\\\\)",
+                "\\\\(\\\\frac{1}{52}\\\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 13 \\\\text{ (There are 13 Diamonds in a deck.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{13}{52}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{1}{4}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q24c",
+              "type": "mc",
+              "stem": "c) What is the probability that it is not a Heart?",
+              "options": [
+                "\\\\(\\\\frac{39}{40}\\\\)",
+                "\\\\(\\\\frac{3}{4}\\\\)",
+                "\\\\(\\\\frac{1}{4}\\\\)",
+                "\\\\(\\\\frac{13}{52}\\\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 39 \\\\text{ (There are 13 Hearts. The number of non-Heart cards is 52 - 13 = 39.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{39}{52}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{3}{4}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q24d",
+              "type": "mc",
+              "stem": "d) What is the probability that it is not a 9 or a 10?",
+              "options": [
+                "\\\\(\\\\frac{11}{13}\\\\)",
+                "\\\\(\\\\frac{2}{13}\\\\)",
+                "\\\\(\\\\frac{8}{52}\\\\)",
+                "\\\\(\\\\frac{44}{48}\\\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 52 \\\\text{ (A standard deck has 52 cards.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 44 \\\\text{ (There are four 9s and four 10s (8 cards in total). The number of cards that are neither is 52 - 8 = 44.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{44}{52}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{11}{13}"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "Analyze the size of each subset of cards (Queens, Diamonds, non-Hearts, non-9-or-10s) and put it over 52.",
+          "solution": "See individual step-by-step solutions for each sub-question.",
+          "manual": true
+        },
+        {
+          "id": "y8-16a-q25",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A bag contains 12 green marbles and one each of red, yellow, blue, orange, purple and white marbles.",
+          "parts": [
+            {
+              "id": "y8-16a-q25a",
+              "type": "mc",
+              "stem": "a) What is the probability that the marble is green?",
+              "options": [
+                "\\\\(\\\\frac{1}{3}\\\\)",
+                "\\\\(\\\\frac{12}{19}\\\\)",
+                "\\\\(\\\\frac{1}{18}\\\\)",
+                "\\\\(\\\\frac{2}{3}\\\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 18 \\\\text{ (Total marbles = 12 (green) + 1 (red) + 1 (yellow) + 1 (blue) + 1 (orange) + 1 (purple) + 1 (white) = 18 marbles.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 12 \\\\text{ (There are 12 green marbles.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{12}{18}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{2}{3}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q25b",
+              "type": "mc",
+              "stem": "b) What is the probability that the marble is not green?",
+              "options": [
+                "\\\\(\\\\frac{6}{12}\\\\)",
+                "\\\\(\\\\frac{1}{18}\\\\)",
+                "\\\\(\\\\frac{1}{3}\\\\)",
+                "\\\\(\\\\frac{2}{3}\\\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 18 \\\\text{ (Total marbles = 18.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 6 \\\\text{ (There are 18 - 12 = 6 marbles that are not green.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{6}{18}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{1}{3}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q25c",
+              "type": "mc",
+              "stem": "c) What is the probability that the marble is white?",
+              "options": [
+                "\\\\(\\\\frac{2}{18}\\\\)",
+                "\\\\(\\\\frac{1}{18}\\\\)",
+                "\\\\(\\\\frac{1}{17}\\\\)",
+                "\\\\(\\\\frac{1}{6}\\\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 18 \\\\text{ (Total marbles = 18.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 1 \\\\text{ (There is exactly 1 white marble.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{1}{18} \\\\text{ (Final answer)}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q25d",
+              "type": "mc",
+              "stem": "d) What is the probability that the marble is neither green nor red?",
+              "options": [
+                "\\\\(\\\\frac{5}{18}\\\\)",
+                "\\\\(\\\\frac{13}{18}\\\\)",
+                "\\\\(\\\\frac{5}{13}\\\\)",
+                "\\\\(\\\\frac{1}{18}\\\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 18 \\\\text{ (Total marbles = 18.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 5 \\\\text{ (There are 12 green and 1 red (13 marbles). The remaining marbles are 18 - 13 = 5.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{5}{18} \\\\text{ (Final answer)}"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "Sum the total number of marbles, find the count of favourable outcomes for each scenario, and write the simplified fraction.",
+          "solution": "See individual step-by-step solutions for each sub-question."
+        },
+        {
+          "id": "y8-16a-q26",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "There are 80 fruits in a basket. Of the fruits, 32 are apples, 36 are bananas and the rest are oranges.",
+          "parts": [
+            {
+              "id": "y8-16a-q26a",
+              "type": "mc",
+              "stem": "a) What is the probability that the fruit is a banana?",
+              "options": [
+                "\\\\(\\\\frac{11}{20}\\\\)",
+                "\\\\(\\\\frac{36}{44}\\\\)",
+                "\\\\(\\\\frac{9}{10}\\\\)",
+                "\\\\(\\\\frac{9}{20}\\\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 80 \\\\text{ (There are 80 fruits in total.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 36 \\\\text{ (There are 36 bananas.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{36}{80}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{9}{20}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q26b",
+              "type": "mc",
+              "stem": "b) What is the probability that the fruit is not an apple?",
+              "options": [
+                "\\\\(\\\\frac{32}{80}\\\\)",
+                "\\\\(\\\\frac{48}{32}\\\\)",
+                "\\\\(\\\\frac{3}{5}\\\\)",
+                "\\\\(\\\\frac{2}{5}\\\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 80 \\\\text{ (There are 80 fruits in total.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 48 \\\\text{ (There are 32 apples, so there are 80 - 32 = 48 fruits that are not apples.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{48}{80}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{3}{5}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q26c",
+              "type": "mc",
+              "stem": "c) What is the probability that the fruit is an orange?",
+              "options": [
+                "\\\\(\\\\frac{3}{10}\\\\)",
+                "\\\\(\\\\frac{3}{20}\\\\)",
+                "\\\\(\\\\frac{17}{20}\\\\)",
+                "\\\\(\\\\frac{12}{68}\\\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 80 \\\\text{ (There are 80 fruits in total.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 12 \\\\text{ (Number of oranges = 80 - 32 (apples) - 36 (bananas) = 12 oranges.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{12}{80}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{3}{20}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q26d",
+              "type": "mc",
+              "stem": "d) What is the probability that the fruit is a pear?",
+              "options": [
+                "\\\\(0\\\\)",
+                "\\\\(\\\\frac{1}{80}\\\\)",
+                "\\\\(\\\\frac{80}{80}\\\\)",
+                "\\\\(\\\\frac{1}{4}\\\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 80 \\\\text{ (There are 80 fruits in total.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 0 \\\\text{ (There are no pears in the basket. This is an impossible event.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{0}{80}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{0}{undefined}"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "Find the count of oranges by subtracting apples and bananas from 80. Then calculate the ratios of selected fruits, noting that pear is an impossible event.",
+          "solution": "See individual step-by-step solutions for each sub-question."
+        },
+        {
+          "id": "y8-16a-q27",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A whole number is chosen at random from the first 50 positive whole numbers.",
+          "parts": [
+            {
+              "id": "y8-16a-q27a",
+              "type": "mc",
+              "stem": "a) What is the probability that it is divisible by 5?",
+              "options": [
+                "\\\\(\\\\frac{4}{5}\\\\)",
+                "\\\\(\\\\frac{10}{40}\\\\)",
+                "\\\\(\\\\frac{1}{50}\\\\)",
+                "\\\\(\\\\frac{1}{5}\\\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 50 \\\\text{ (There are 50 numbers in total (1 to 50).)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 10 \\\\text{ (Numbers divisible by 5 are 5, 10, 15, ..., 50. There are 50 / 5 = 10 such numbers.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{10}{50}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{1}{5}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q27b",
+              "type": "mc",
+              "stem": "b) What is the probability that it is divisible by 5 and 3?",
+              "options": [
+                "\\\\(\\\\frac{3}{47}\\\\)",
+                "\\\\(\\\\frac{5}{50}\\\\)",
+                "\\\\(\\\\frac{3}{50}\\\\)",
+                "\\\\(\\\\frac{13}{50}\\\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 50 \\\\text{ (There are 50 numbers in total.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 3 \\\\text{ (Numbers divisible by both 5 and 3 must be divisible by their lowest common multiple, 15. The numbers are 15, 30, 45. (3 numbers).)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{3}{50} \\\\text{ (Final answer)}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q27c",
+              "type": "mc",
+              "stem": "c) What is the probability that it is divisible by 5 but not by 3?",
+              "options": [
+                "\\\\(\\\\frac{7}{43}\\\\)",
+                "\\\\(\\\\frac{7}{50}\\\\)",
+                "\\\\(\\\\frac{10}{50}\\\\)",
+                "\\\\(\\\\frac{3}{50}\\\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 50 \\\\text{ (There are 50 numbers in total.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 7 \\\\text{ (We know there are 10 numbers divisible by 5. Of these, 3 are also divisible by 3 (15, 30, 45). So the numbers divisible by 5 but NOT 3 are 10 - 3 = 7 numbers.)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{7}{50} \\\\text{ (Final answer)}"
+                }
+              ]
+            },
+            {
+              "id": "y8-16a-q27d",
+              "type": "mc",
+              "stem": "d) What is the probability that it is even and divisible by 5?",
+              "options": [
+                "\\\\(\\\\frac{1}{10}\\\\)",
+                "\\\\(\\\\frac{1}{5}\\\\)",
+                "\\\\(\\\\frac{9}{10}\\\\)",
+                "\\\\(\\\\frac{5}{45}\\\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Identify the total number of possible outcomes (the sample space).",
+                  "work": "\\\\text{Total outcomes} = 50 \\\\text{ (There are 50 numbers in total.)}"
+                },
+                {
+                  "explain": "Identify the number of favourable outcomes for the given event.",
+                  "work": "\\\\text{Favourable outcomes} = 5 \\\\text{ (Numbers that are even AND divisible by 5 must be divisible by 10. The numbers are 10, 20, 30, 40, 50. (5 numbers).)}"
+                },
+                {
+                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
+                  "work": "\\\\text{Probability} = \\\\frac{5}{50}"
+                },
+                {
+                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
+                  "work": "\\\\text{Final answer: } \\\\frac{1}{10}"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "hint": "Analyze divisibility by identifying multiples of 5, 15, and 10 within the first 50 numbers.",
+          "solution": "See individual step-by-step solutions for each sub-question."
+        }
+      ]
+    },
+    {
+      "topicId": "y8-16e",
+      "code": "16E",
+      "title": "Review",
+      "questions": [
+        {
+          "id": "y8-16e-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bag contains \\(4\\) red beads, \\(3\\) blue beads and \\(5\\) yellow beads. If one bead is drawn at random from the bag, find the probability that the bead is red.",
+          "options": [
+            "\\(-0.3333333333333333\\)",
+            "\\(-0.6666666666666667\\)",
+            "\\(1/3\\)",
+            "\\(1.3333333333333333\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide the number of red beads by the total number of beads, then simplify.",
+          "solution": "1. Find the total number of beads:\n   \\(4 + 3 + 5 = 12\\)\n2. The number of red beads is \\(4\\).\n3. The probability of drawing a red bead is:\n   \\(P(\\text{red}) = \\frac{4}{12} = \\frac{1}{3}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(4 + 3 + 5 = 12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P(\\text{red}) = \\frac{4}{12} = \\frac{1}{3}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(1/3\\)"
+            },
+            {
+              "explain": "Final answer: 1/3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bag contains \\(4\\) red beads, \\(3\\) blue beads and \\(5\\) yellow beads. If one bead is drawn at random from the bag, find the probability that the bead is red or blue.",
+          "options": [
+            "\\(-0.41666666666666663\\)",
+            "\\(-0.5833333333333334\\)",
+            "\\(7/12\\)",
+            "\\(1.5833333333333335\\)"
+          ],
+          "answer": 2,
+          "hint": "Add the number of red and blue beads together, then divide by the total.",
+          "solution": "1. Find the total number of beads:\n   \\(4 + 3 + 5 = 12\\)\n2. The number of red or blue beads is \\(4 + 3 = 7\\).\n3. The probability of drawing a red or blue bead is:\n   \\(P(\\text{red or blue}) = \\frac{7}{12}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(4 + 3 + 5 = 12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(4 + 3 = 7\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(P(\\text{red or blue}) = \\frac{7}{12}\\)"
+            },
+            {
+              "explain": "Final answer: 7/12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(7/12\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q1c",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A bag contains \\(4\\) red beads, \\(3\\) blue beads and \\(5\\) yellow beads. If one bead is drawn at random from the bag, find the probability that the bead is red or yellow or blue.",
+          "answer": "1",
+          "hint": "Since all beads in the bag are either red, yellow, or blue, consider what the probability of an always-true event is.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(4 + 3 + 5 = 12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = \\frac{12}{12} = 1\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(1\\)"
+            },
+            {
+              "explain": "Final answer: 1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-16e-q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A two-digit number - that is, a number from 10 to 99 - is chosen at random. Find the probability that the number is greater than 75.",
+          "options": [
+            "\\(-0.26666666666666666\\)",
+            "\\(-0.7333333333333334\\)",
+            "\\(4/15\\)",
+            "\\(1.2666666666666666\\)"
+          ],
+          "answer": 2,
+          "hint": "Calculate how many two-digit numbers are greater than 75, then divide by the total number of two-digit numbers (90).",
+          "solution": "1. Find the total number of two-digit numbers (from 10 to 99):\n   \\(99 - 10 + 1 = 90\\)\n2. Find the numbers greater than 75 (i.e. from 76 to 99):\n   \\(99 - 76 + 1 = 24\\)\n3. The probability is:\n   \\(P(>75) = \\frac{24}{90}\\)\n4. Simplify the fraction by dividing numerator and denominator by 6:\n   \\(P(>75) = \\frac{4}{15}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(99 - 10 + 1 = 90\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(99 - 76 + 1 = 24\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(P(>75) = \\frac{24}{90} = \\frac{4}{15}\\)"
+            },
+            {
+              "explain": "Final answer: 4/15. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(4/15\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A two-digit number - that is, a number from 10 to 99 - is chosen at random. Find the probability that the number contains the digit 5 at least once (that is, a number such as 54, or 15 or 55).",
+          "options": [
+            "\\(-0.2\\)",
+            "\\(-0.8\\)",
+            "\\(1/5\\)",
+            "\\(1.2\\)"
+          ],
+          "answer": 2,
+          "hint": "Count how many two-digit numbers end in 5, and how many begin with 5. Make sure not to count 55 twice!",
+          "solution": "1. Find the total number of two-digit numbers:\n   \\(99 - 10 + 1 = 90\\)\n2. List the numbers containing a 5 in the ones column:\n   15, 25, 35, 45, 55, 65, 75, 85, 95 (9 numbers)\n3. List the numbers containing a 5 in the tens column:\n   50, 51, 52, 53, 54, 55, 56, 57, 58, 59 (10 numbers)\n4. Notice that 55 is in both lists. So the total distinct numbers containing at least one 5 is:\n   \\(9 + 10 - 1 = 18\\)\n5. The probability is:\n   \\(P(\\text{contains 5}) = \\frac{18}{90} = \\frac{1}{5}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(90\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(10 \\text{ numbers (50 to 59)}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(9 \\text{ numbers (15, 25, ..., 95)}\\)"
+            },
+            {
+              "explain": "Final answer: 1/5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q3a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A letter is chosen at random from the word PLANET.\n\nList the sample space for this experiment.",
+          "answer": "",
+          "hint": "The sample space is simply a list of every individual letter that can be chosen from the word.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "Identify given data"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer."
+            },
+            {
+              "explain": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints."
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y8-16e-q3b-i",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A letter is chosen at random from the word PLANET.\n\nIf \\(E\\) is the event 'the letter chosen is a vowel', write down the outcomes that satisfy \\(E\\).",
+          "answer": "",
+          "hint": "Identify which letters in PLANET are vowels (A, E, I, O, U).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "Identify given data"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer."
+            },
+            {
+              "explain": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints."
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y8-16e-q3b-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A letter is chosen at random from the word PLANET. If \\(E\\) is the event 'the letter chosen is a vowel', what is the probability of \\(E\\) occurring?",
+          "options": [
+            "\\(-0.3333333333333333\\)",
+            "\\(-0.6666666666666667\\)",
+            "\\(1/3\\)",
+            "\\(1.3333333333333333\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide the number of vowels by the total number of letters in the word.",
+          "solution": "1. Find the total number of letters in PLANET: \\(6\\).\n2. The number of vowels (A, E) is \\(2\\).\n3. The probability of \\(E\\) is:\n   \\(P(E) = \\frac{2}{6} = \\frac{1}{3}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(6\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(2 \\text{ (A, E)}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(P(E) = \\frac{2}{6} = \\frac{1}{3}\\)"
+            },
+            {
+              "explain": "Final answer: 1/3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The numbers 1 to 30 are written on 30 cards. If a card is selected at random, find the probability that the number on the card is 14.",
+          "options": [
+            "\\(-0.03333333333333333\\)",
+            "\\(-0.9666666666666667\\)",
+            "\\(1/30\\)",
+            "\\(1.0333333333333334\\)"
+          ],
+          "answer": 2,
+          "hint": "How many cards have the number 14 on them?",
+          "solution": "There is only one card with the number 14 out of 30 cards.\n\\(P(14) = \\frac{1}{30}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(1\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P(14) = \\frac{1}{30}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(1/30\\)"
+            },
+            {
+              "explain": "Final answer: 1/30. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/30\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The numbers 1 to 30 are written on 30 cards. If a card is selected at random, find the probability that the number on the card is greater than 20.",
+          "options": [
+            "\\(-0.3333333333333333\\)",
+            "\\(-0.6666666666666667\\)",
+            "\\(1/3\\)",
+            "\\(1.3333333333333333\\)"
+          ],
+          "answer": 2,
+          "hint": "Count how many numbers from 1 to 30 are greater than 20.",
+          "solution": "1. The numbers greater than 20 are 21, 22, 23, 24, 25, 26, 27, 28, 29, 30.\n2. There are 10 such numbers.\n3. The probability is:\n   \\(P(>20) = \\frac{10}{30} = \\frac{1}{3}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(30 - 20 = 10\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P(>20) = \\frac{10}{30} = \\frac{1}{3}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(1/3\\)"
+            },
+            {
+              "explain": "Final answer: 1/3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The numbers 1 to 30 are written on 30 cards. If a card is selected at random, find the probability that the number on the card is even.",
+          "options": [
+            "\\(-0.5\\)",
+            "\\(1/2\\)",
+            "\\(1\\)",
+            "\\(1.5\\)"
+          ],
+          "answer": 1,
+          "hint": "Half of the numbers in this range are even.",
+          "solution": "1. Exactly half of the numbers from 1 to 30 are even.\n2. Number of even cards = 15.\n3. The probability is:\n   \\(P(\\text{even}) = \\frac{15}{30} = \\frac{1}{2}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(15\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P(\\text{even}) = \\frac{15}{30} = \\frac{1}{2}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(1/2\\)"
+            },
+            {
+              "explain": "Final answer: 1/2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The numbers 1 to 30 are written on 30 cards. If a card is selected at random, find the probability that the number on the card is a multiple of 5.",
+          "options": [
+            "\\(-0.2\\)",
+            "\\(-0.8\\)",
+            "\\(1/5\\)",
+            "\\(1.2\\)"
+          ],
+          "answer": 2,
+          "hint": "Count the multiples of 5 up to 30.",
+          "solution": "1. List the multiples of 5 from 1 to 30: 5, 10, 15, 20, 25, 30.\n2. There are 6 multiples.\n3. The probability is:\n   \\(P(\\text{multiple of 5}) = \\frac{6}{30} = \\frac{1}{5}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(5, 10, 15, 20, 25, 30 \\text{ (6 numbers)}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = \\frac{6}{30} = \\frac{1}{5}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(1/5\\)"
+            },
+            {
+              "explain": "Final answer: 1/5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q4e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The numbers 1 to 30 are written on 30 cards. If a card is selected at random, find the probability that the number on the card is odd and a multiple of 3.",
+          "options": [
+            "\\(-0.16666666666666666\\)",
+            "\\(-0.8333333333333334\\)",
+            "\\(1/6\\)",
+            "\\(1.1666666666666667\\)"
+          ],
+          "answer": 2,
+          "hint": "List the multiples of 3 first, then count only the odd ones.",
+          "solution": "1. List the multiples of 3 up to 30:\n   3, 6, 9, 12, 15, 18, 21, 24, 27, 30.\n2. From this list, pick only the odd numbers:\n   3, 9, 15, 21, 27.\n3. There are 5 such numbers.\n4. The probability is:\n   \\(P(\\text{odd and multiple of 3}) = \\frac{5}{30} = \\frac{1}{6}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(3, 6, 9, 12, 15, 18, 21, 24, 27, 30\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(3, 9, 15, 21, 27 \\text{ (5 numbers)}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(P = \\frac{5}{30} = \\frac{1}{6}\\)"
+            },
+            {
+              "explain": "Final answer: 1/6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q4f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The numbers 1 to 30 are written on 30 cards. If a card is selected at random, find the probability that the number on the card is neither even nor a multiple of 5.",
+          "options": [
+            "\\(-0.4\\)",
+            "\\(-0.6\\)",
+            "\\(2/5\\)",
+            "\\(1.4\\)"
+          ],
+          "answer": 2,
+          "hint": "Think of this as finding all odd numbers, then crossing out the ones that end in 5.",
+          "solution": "1. We need numbers that are NOT even and NOT a multiple of 5. This means we are looking for odd numbers that don't end in 5.\n2. The odd numbers from 1 to 30 are 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29 (15 numbers).\n3. Remove the odd multiples of 5 (which end in 5): 5, 15, 25.\n4. The remaining numbers are: 1, 3, 7, 9, 11, 13, 17, 19, 21, 23, 27, 29.\n5. There are 12 such numbers.\n6. The probability is:\n   \\(P(\\text{neither}) = \\frac{12}{30} = \\frac{2}{5}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\text{Odd numbers total = 15}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(5, 15, 25 \\text{ (3 numbers)}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(15 - 3 = 12\\)"
+            },
+            {
+              "explain": "Final answer: 2/5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(2/5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q5a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "In a group of 300 students, 90 study geography, 120 study economics and 110 study neither.\n\nRepresent this information on a Venn diagram.",
+          "answer": "",
+          "hint": "Start by finding out how many students study at least one subject, and use that to find the overlap.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "Identify given data"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer."
+            },
+            {
+              "explain": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints."
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y8-16e-q5b-i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a group of 300 students, 90 study geography, 120 study economics and 110 study neither.\n\nIf a student is selected at random from the group, what is the probability that the student studies geography?",
+          "options": [
+            "\\(-0.3\\)",
+            "\\(-0.7\\)",
+            "\\(3/10\\)",
+            "\\(1.3\\)"
+          ],
+          "answer": 2,
+          "hint": "You are given the total number of students studying geography.",
+          "solution": "The number of students studying geography is given as 90 out of a total of 300.\n\\(P(\\text{geography}) = \\frac{90}{300} = \\frac{3}{10}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(90 \\text{ out of } 300\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = \\frac{90}{300} = \\frac{3}{10}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(3/10\\)"
+            },
+            {
+              "explain": "Final answer: 3/10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(3/10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q5b-ii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a group of 300 students, 90 study geography, 120 study economics and 110 study neither.\n\nIf a student is selected at random from the group, what is the probability that the student studies geography and economics?",
+          "options": [
+            "\\(-0.06666666666666667\\)",
+            "\\(-0.9333333333333333\\)",
+            "\\(1/15\\)",
+            "\\(1.0666666666666667\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the formula: \\(n(G \\text{ and } E) = n(G) + n(E) - n(G \\text{ or } E)\\).",
+          "solution": "1. Find how many students study at least one subject:\n   \\(300 - 110 = 190\\)\n2. The sum of Geography and Economics students is \\(90 + 120 = 210\\).\n3. The overlap (studying both) is:\n   \\(210 - 190 = 20\\)\n4. The probability is:\n   \\(P(\\text{both}) = \\frac{20}{300} = \\frac{1}{15}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(300 - 110 = 190\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(90 + 120 - 190 = 20\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(P = \\frac{20}{300} = \\frac{1}{15}\\)"
+            },
+            {
+              "explain": "Final answer: 1/15. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/15\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q5b-iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a group of 300 students, 90 study geography, 120 study economics and 110 study neither.\n\nIf a student is selected at random from the group, what is the probability that the student studies at least one of these subjects?",
+          "options": [
+            "\\(-0.3666666666666667\\)",
+            "\\(-0.6333333333333333\\)",
+            "\\(19/30\\)",
+            "\\(1.6333333333333333\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract the 'neither' group from the total to find those who study at least one subject.",
+          "solution": "1. Total students = 300.\n2. Students who study neither = 110.\n3. Students studying at least one = \\(300 - 110 = 190\\).\n4. The probability is:\n   \\(P(\\text{at least one}) = \\frac{190}{300} = \\frac{19}{30}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(300 - 110 = 190\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = \\frac{190}{300} = \\frac{19}{30}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(19/30\\)"
+            },
+            {
+              "explain": "Final answer: 19/30. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(19/30\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The table shows the type of accommodation and car ownership status of 200 university students.\n\n\\(\\begin{array}{|l|c|c|c|} \\hline \\text{Accommodation} & \\text{Car} & \\text{No car} & \\text{Total} \\\\ \\hline \\text{Residential college} & 20 & 60 & 80 \\\\ \\text{Apartment off campus} & 40 & 50 & 90 \\\\ \\text{Living at home} & 25 & 5 & 30 \\\\ \\hline \\mathbf{Total} & \\mathbf{85} & \\mathbf{115} & \\mathbf{200} \\\\ \\hline \\end{array}\\)\n\nFor a randomly selected student from this university, what is the probability that the student lives in a residential college and has a car?",
+          "options": [
+            "\\(-0.1\\)",
+            "\\(-0.9\\)",
+            "\\(1/10\\)",
+            "\\(1.1\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the specific cell in the table that matches both conditions.",
+          "solution": "1. Locate the intersection of 'Residential college' and 'Car' in the table. The value is 20.\n2. The total number of students is 200.\n3. The probability is:\n   \\(P(\\text{residential college and car}) = \\frac{20}{200} = \\frac{1}{10}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(20\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = \\frac{20}{200} = \\frac{1}{10}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(1/10\\)"
+            },
+            {
+              "explain": "Final answer: 1/10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The table shows the type of accommodation and car ownership status of 200 university students.\n\n\\(\\begin{array}{|l|c|c|c|} \\hline \\text{Accommodation} & \\text{Car} & \\text{No car} & \\text{Total} \\\\ \\hline \\text{Residential college} & 20 & 60 & 80 \\\\ \\text{Apartment off campus} & 40 & 50 & 90 \\\\ \\text{Living at home} & 25 & 5 & 30 \\\\ \\hline \\mathbf{Total} & \\mathbf{85} & \\mathbf{115} & \\mathbf{200} \\\\ \\hline \\end{array}\\)\n\nFor a randomly selected student from this university, what is the probability that the student has a car?",
+          "options": [
+            "\\(-0.425\\)",
+            "\\(-0.575\\)",
+            "\\(17/40\\)",
+            "\\(1.425\\)"
+          ],
+          "answer": 2,
+          "hint": "Look for the total number of students who own a car.",
+          "solution": "1. Look at the 'Total' row under the 'Car' column. The value is 85.\n2. The total number of students is 200.\n3. The probability is:\n   \\(P(\\text{car}) = \\frac{85}{200}\\)\n4. Simplify the fraction by dividing by 5:\n   \\(P(\\text{car}) = \\frac{17}{40}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(85\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = \\frac{85}{200} = \\frac{17}{40}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(17/40\\)"
+            },
+            {
+              "explain": "Final answer: 17/40. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(17/40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The table shows the type of accommodation and car ownership status of 200 university students.\n\n\\(\\begin{array}{|l|c|c|c|} \\hline \\text{Accommodation} & \\text{Car} & \\text{No car} & \\text{Total} \\\\ \\hline \\text{Residential college} & 20 & 60 & 80 \\\\ \\text{Apartment off campus} & 40 & 50 & 90 \\\\ \\text{Living at home} & 25 & 5 & 30 \\\\ \\hline \\mathbf{Total} & \\mathbf{85} & \\mathbf{115} & \\mathbf{200} \\\\ \\hline \\end{array}\\)\n\nFor a randomly selected student from this university, what is the probability that the student lives at home and has a car?",
+          "options": [
+            "\\(-0.125\\)",
+            "\\(-0.875\\)",
+            "\\(1/8\\)",
+            "\\(1.125\\)"
+          ],
+          "answer": 2,
+          "hint": "Read the intersection of the 'Living at home' row and the 'Car' column.",
+          "solution": "1. Locate the cell for 'Living at home' and 'Car'. The value is 25.\n2. The total number of students is 200.\n3. The probability is:\n   \\(P(\\text{home and car}) = \\frac{25}{200} = \\frac{1}{8}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(25\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = \\frac{25}{200} = \\frac{1}{8}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(1/8\\)"
+            },
+            {
+              "explain": "Final answer: 1/8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The table shows the type of accommodation and car ownership status of 200 university students.\n\n\\(\\begin{array}{|l|c|c|c|} \\hline \\text{Accommodation} & \\text{Car} & \\text{No car} & \\text{Total} \\\\ \\hline \\text{Residential college} & 20 & 60 & 80 \\\\ \\text{Apartment off campus} & 40 & 50 & 90 \\\\ \\text{Living at home} & 25 & 5 & 30 \\\\ \\hline \\mathbf{Total} & \\mathbf{85} & \\mathbf{115} & \\mathbf{200} \\\\ \\hline \\end{array}\\)\n\nFor a randomly selected student from this university, what is the probability that the student has no car?",
+          "options": [
+            "\\(-0.425\\)",
+            "\\(-0.575\\)",
+            "\\(23/40\\)",
+            "\\(1.575\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the overall total for students without a car.",
+          "solution": "1. Look at the 'Total' row under the 'No car' column. The value is 115.\n2. The total number of students is 200.\n3. The probability is:\n   \\(P(\\text{no car}) = \\frac{115}{200}\\)\n4. Simplify the fraction by dividing by 5:\n   \\(P(\\text{no car}) = \\frac{23}{40}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(115\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = \\frac{115}{200} = \\frac{23}{40}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(23/40\\)"
+            },
+            {
+              "explain": "Final answer: 23/40. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(23/40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-16e-q6e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The table shows the type of accommodation and car ownership status of 200 university students.\n\n\\(\\begin{array}{|l|c|c|c|} \\hline \\text{Accommodation} & \\text{Car} & \\text{No car} & \\text{Total} \\\\ \\hline \\text{Residential college} & 20 & 60 & 80 \\\\ \\text{Apartment off campus} & 40 & 50 & 90 \\\\ \\text{Living at home} & 25 & 5 & 30 \\\\ \\hline \\mathbf{Total} & \\mathbf{85} & \\mathbf{115} & \\mathbf{200} \\\\ \\hline \\end{array}\\)\n\nFor a randomly selected student from this university, what is the probability that the student lives in an apartment off campus and does not have a car?",
+          "options": [
+            "\\(-0.25\\)",
+            "\\(-0.75\\)",
+            "\\(1/4\\)",
+            "\\(1.25\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the intersection of 'Apartment off campus' and 'No car'.",
+          "solution": "1. Locate the cell for 'Apartment off campus' and 'No car'. The value is 50.\n2. The total number of students is 200.\n3. The probability is:\n   \\(P(\\text{apartment and no car}) = \\frac{50}{200} = \\frac{1}{4}\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(50\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(P = \\frac{50}{200} = \\frac{1}{4}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(1/4\\)"
+            },
+            {
+              "explain": "Final answer: 1/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(1/4\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

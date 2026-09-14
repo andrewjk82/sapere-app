@@ -1,0 +1,21 @@
+<svg viewBox="0 0 460 340" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<path d="M 130 60 L 130 260 L 380 260 Z" fill="#dbeafe" fill-opacity="0.35" stroke="none"/>
+<line x1="130" y1="60" x2="130" y2="260" stroke="#475569" stroke-width="2"/>
+<line x1="130" y1="60" x2="380" y2="260" stroke="#4f46e5" stroke-width="2.5"/>
+<line x1="130" y1="260" x2="380" y2="260" stroke="#475569" stroke-width="1.5" stroke-dasharray="2,3"/>
+<circle cx="130" cy="260" r="2.5" fill="#1e293b"/>
+<text x="112" y="250" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">observer</text>
+<text x="112" y="250" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" fill="#1e293b">observer</text>
+<circle cx="130" cy="60" r="2.5" fill="#1e293b"/>
+<text x="114" y="80" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">cliff base</text>
+<text x="114" y="80" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" fill="#1e293b">cliff base</text>
+<circle cx="380" cy="260" r="2.5" fill="#1e293b"/>
+<text x="394" y="264" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">yacht</text>
+<text x="394" y="264" text-anchor="middle" font-family="system-ui" font-size="15" font-weight="700" fill="#1e293b">yacht</text>
+<text x="110" y="160" text-anchor="end" font-family="system-ui" font-size="13" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">h</text>
+<text x="110" y="160" text-anchor="end" font-family="system-ui" font-size="13" font-weight="700" fill="#1e293b">h</text>
+<text x="255" y="84" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">250 m</text>
+<text x="255" y="84" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#1e293b">250 m</text>
+<text x="140" y="286" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">∠ = ?</text>
+<text x="140" y="286" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#e11d48">∠ = ?</text>
+</svg>

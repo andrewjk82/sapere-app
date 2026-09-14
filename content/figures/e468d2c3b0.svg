@@ -1,0 +1,40 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="0" x2="0" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="33.333333333333336" y1="0" x2="33.333333333333336" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="100" y1="0" x2="100" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="133.33333333333334" y1="0" x2="133.33333333333334" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="166.66666666666669" y1="0" x2="166.66666666666669" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="200" y1="0" x2="200" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="233.33333333333334" y1="0" x2="233.33333333333334" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="266.6666666666667" y1="0" x2="266.6666666666667" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="300" y1="0" x2="300" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="0" y1="300" x2="300" y2="300" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="0" y1="266.6666666666667" x2="300" y2="266.6666666666667" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="0" y1="200" x2="300" y2="200" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="0" y1="166.66666666666669" x2="300" y2="166.66666666666669" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="0" y1="133.33333333333334" x2="300" y2="133.33333333333334" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="0" y1="100" x2="300" y2="100" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="0" y1="66.66666666666667" x2="300" y2="66.66666666666667" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="0" y1="33.333333333333336" x2="300" y2="33.333333333333336" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+<line x1="0" y1="0" x2="300" y2="0" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="2,2" />
+
+      
+    <!-- X Axis -->
+    <line x1="0" y1="233.33333333333334" x2="300" y2="233.33333333333334" stroke="#64748b" stroke-width="1.5" />
+    <polygon points="300,233.33333333333334 292,229.33333333333334 292,237.33333333333334" fill="#64748b" />
+    <text x="288" y="248.33333333333334" font-size="10" fill="#64748b" font-family="sans-serif">x</text>
+    
+    <!-- Y Axis -->
+    <line x1="66.66666666666667" y1="300" x2="66.66666666666667" y2="0" stroke="#64748b" stroke-width="1.5" />
+    <polygon points="66.66666666666667,0 62.66666666666667,8 70.66666666666667,8" fill="#64748b" />
+    <text x="76.66666666666667" y="12" font-size="10" fill="#64748b" font-family="sans-serif">y</text>
+  
+      <text x="54.66666666666667" y="245.33333333333334" font-size="10" fill="#64748b" font-family="sans-serif">0</text>
+      <circle cx="166.66666666666669" cy="166.66666666666669" r="100.00000000000001" stroke="#4f46e5" stroke-width="2.5" fill="none" />
+      
+      <!-- Highlighted points at x=3 -->
+      <circle cx="166.66666666666669" cy="66.66666666666667" r="4.5" fill="#e11d48" />
+      <circle cx="166.66666666666669" cy="266.6666666666667" r="4.5" fill="#e11d48" />
+      <text x="172.66666666666669" y="70.66666666666667" font-size="10" fill="#e11d48" font-family="sans-serif" font-weight="bold">(3, 5)</text>
+      <text x="172.66666666666669" y="270.6666666666667" font-size="10" fill="#e11d48" font-family="sans-serif" font-weight="bold">(3, -1)</text>
+    </svg>

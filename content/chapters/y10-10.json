@@ -1,0 +1,83 @@
+{
+  "chapterId": "y10-10",
+  "title": "Chapter 10: Review and problem-solving",
+  "year": "2013",
+  "topics": [
+    {
+      "topicId": "y10-10b",
+      "code": "10b",
+      "title": "Miscellaneous questions",
+      "questions": [
+        {
+          "id": "jr2013-q8",
+          "type": "mc",
+          "stem": "The number of terms in the series \\(\\displaystyle\\sum_{r=28}^{57}(2r+1)\\) is:",
+          "options": [
+            "\\(28\\)",
+            "\\(29\\)",
+            "\\(57\\)",
+            "\\(30\\)"
+          ],
+          "answer": 3,
+          "hint": "The number of integers from 28 to 57 inclusive is \\(57-28+1\\).",
+          "steps": [
+            {
+              "explain": "The number of terms in a sum from \\(r=a\\) to \\(r=b\\) inclusive is \\(b-a+1\\).",
+              "work": "Number of terms \\(= 57-28+1\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(= 30\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-10c",
+      "code": "10C",
+      "title": "Problem-solving",
+      "questions": [
+        {
+          "id": "jr2013-qCe",
+          "type": "mc",
+          "stem": "(e) A sequence is defined by \\(t_1=3\\) and \\(t_{n+1}=\\dfrac{1+3t_n}{3+t_n}\\) for all integers \\(n\\ge1\\). Evaluate \\(t_3\\).",
+          "options": [
+            "\\(\\dfrac53\\)",
+            "\\(3\\)",
+            "\\(\\dfrac97\\)",
+            "\\(\\dfrac{18}{14}\\)"
+          ],
+          "answer": 2,
+          "hint": "Find \\(t_2\\) first using the recursive formula with \\(t_1=3\\), then use \\(t_2\\) to find \\(t_3\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(t_1=3\\) into the recursive formula to find \\(t_2\\).",
+              "work": "\\(t_2 = \\dfrac{1+3(3)}{3+3} = \\dfrac{10}{6} = \\dfrac53\\)"
+            },
+            {
+              "explain": "Substitute \\(t_2=\\tfrac53\\) into the formula to find \\(t_3\\).",
+              "work": "\\(t_3 = \\dfrac{1+3\\left(\\tfrac53\\right)}{3+\\tfrac53} = \\dfrac{1+5}{\\tfrac{14}{3}} = \\dfrac{6}{14/3}\\)"
+            },
+            {
+              "explain": "Simplify by multiplying by the reciprocal.",
+              "work": "\\(t_3 = 6\\times\\dfrac{3}{14} = \\dfrac{18}{14} = \\dfrac97\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    }
+  ]
+}

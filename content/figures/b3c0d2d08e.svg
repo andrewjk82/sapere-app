@@ -1,0 +1,39 @@
+<svg viewBox="0 0 300 250" width="300" height="250" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:2rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+  <!-- Ground -->
+  <line x1="20" y1="220" x2="280" y2="220" stroke="#475569" stroke-width="2.5"/>
+  <!-- Mast -->
+  <line x1="250" y1="220" x2="250" y2="20" stroke="#1e293b" stroke-width="3"/>
+  
+  <!-- Right angle at O -->
+  <polyline points="235,220 235,205 250,205" fill="none" stroke="#475569" stroke-width="1.5"/>
+
+  <!-- Angles at A -->
+  <path d="M 120 220 A 70 70 0 0 0 117 200" fill="none" stroke="#dc2626" stroke-width="1.5"/>
+  <path d="M 100 220 A 50 50 0 0 0 93 194" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+  <path d="M 80 220 A 30 30 0 0 0 72 200" fill="none" stroke="#16a34a" stroke-width="1.5"/>
+
+  <!-- Wires -->
+  <line x1="50" y1="220" x2="250" y2="160" stroke="#dc2626" stroke-width="1.8"/>
+  <line x1="50" y1="220" x2="250" y2="100" stroke="#2563eb" stroke-width="1.8"/>
+  <line x1="50" y1="220" x2="250" y2="40" stroke="#16a34a" stroke-width="1.8"/>
+
+  <!-- Points -->
+  <circle cx="50" cy="220" r="4" fill="#1e293b"/>
+  <circle cx="250" cy="220" r="4" fill="#1e293b"/>
+  <circle cx="250" cy="160" r="4" fill="#1e293b"/>
+  <circle cx="250" cy="100" r="4" fill="#1e293b"/>
+  <circle cx="250" cy="40" r="4" fill="#1e293b"/>
+
+  <!-- Labels -->
+  <text x="40" y="235" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#1e293b">A</text>
+  <text x="260" y="235" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#1e293b">O</text>
+  <text x="265" y="165" text-anchor="start" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#dc2626">X</text>
+  <text x="265" y="105" text-anchor="start" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#2563eb">Y</text>
+  <text x="265" y="45" text-anchor="start" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="600" fill="#16a34a">Z</text>
+
+  <!-- Equality marks on mast -->
+  <line x1="245" y1="130" x2="255" y2="130" stroke="#1e293b" stroke-width="1.5"/>
+  <line x1="245" y1="133" x2="255" y2="133" stroke="#1e293b" stroke-width="1.5"/>
+  <line x1="245" y1="70" x2="255" y2="70" stroke="#1e293b" stroke-width="1.5"/>
+  <line x1="245" y1="73" x2="255" y2="73" stroke="#1e293b" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,84 @@
+<svg viewBox="0 0 392 234" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+    <defs>
+      <linearGradient id="ch18eBarGradII" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#818cf8"/>
+        <stop offset="100%" stop-color="#6366f1"/>
+      </linearGradient>
+    </defs>
+    <text x="196" y="24" font-family="system-ui" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">Bar chart (ii)</text>
+    <line x1="28" y1="161.5" x2="364" y2="161.5" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 4"/><line x1="28" y1="129" x2="364" y2="129" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 4"/><line x1="28" y1="96.5" x2="364" y2="96.5" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 4"/><line x1="28" y1="64" x2="364" y2="64" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 4"/>
+    <line x1="28" y1="194" x2="364" y2="194" stroke="#cbd5e1" stroke-width="1.5"/>
+    
+      <path d="
+        M 36 158.66666666666669
+        Q 36 150.66666666666669 44 150.66666666666669
+        L 68 150.66666666666669
+        Q 76 150.66666666666669 76 158.66666666666669
+        L 76 194
+        L 36 194
+        Z
+      " fill="url(#ch18eBarGradII)" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="56" y="140.66666666666669" font-family="system-ui" font-size="13" font-weight="700" fill="#4338ca" text-anchor="middle">1</text>
+      <text x="56" y="216" font-family="system-ui" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">4</text>
+    
+      <path d="
+        M 92 115.33333333333334
+        Q 92 107.33333333333334 100 107.33333333333334
+        L 124 107.33333333333334
+        Q 132 107.33333333333334 132 115.33333333333334
+        L 132 194
+        L 92 194
+        Z
+      " fill="url(#ch18eBarGradII)" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="112" y="97.33333333333334" font-family="system-ui" font-size="13" font-weight="700" fill="#4338ca" text-anchor="middle">2</text>
+      <text x="112" y="216" font-family="system-ui" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">5</text>
+    
+      <path d="
+        M 148 72
+        Q 148 64 156 64
+        L 180 64
+        Q 188 64 188 72
+        L 188 194
+        L 148 194
+        Z
+      " fill="url(#ch18eBarGradII)" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="168" y="54" font-family="system-ui" font-size="13" font-weight="700" fill="#4338ca" text-anchor="middle">3</text>
+      <text x="168" y="216" font-family="system-ui" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">6</text>
+    
+      <path d="
+        M 204 72
+        Q 204 64 212 64
+        L 236 64
+        Q 244 64 244 72
+        L 244 194
+        L 204 194
+        Z
+      " fill="url(#ch18eBarGradII)" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="224" y="54" font-family="system-ui" font-size="13" font-weight="700" fill="#4338ca" text-anchor="middle">3</text>
+      <text x="224" y="216" font-family="system-ui" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">7</text>
+    
+      <path d="
+        M 260 115.33333333333334
+        Q 260 107.33333333333334 268 107.33333333333334
+        L 292 107.33333333333334
+        Q 300 107.33333333333334 300 115.33333333333334
+        L 300 194
+        L 260 194
+        Z
+      " fill="url(#ch18eBarGradII)" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="280" y="97.33333333333334" font-family="system-ui" font-size="13" font-weight="700" fill="#4338ca" text-anchor="middle">2</text>
+      <text x="280" y="216" font-family="system-ui" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">8</text>
+    
+      <path d="
+        M 316 158.66666666666669
+        Q 316 150.66666666666669 324 150.66666666666669
+        L 348 150.66666666666669
+        Q 356 150.66666666666669 356 158.66666666666669
+        L 356 194
+        L 316 194
+        Z
+      " fill="url(#ch18eBarGradII)" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="336" y="140.66666666666669" font-family="system-ui" font-size="13" font-weight="700" fill="#4338ca" text-anchor="middle">1</text>
+      <text x="336" y="216" font-family="system-ui" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">9</text>
+    
+  </svg>

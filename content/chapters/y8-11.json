@@ -1,0 +1,3200 @@
+{
+  "chapterId": "y8-11",
+  "title": "Chapter 11: Algebra - part 2",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "y8-11a",
+      "code": "11A",
+      "title": "Expanding brackets and collecting like terms",
+      "questions": [
+        {
+          "id": "y8-11a-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(-4x \\times 3\\)",
+          "options": [
+            "\\(-12x\\)",
+            "\\(-12x + 1\\)",
+            "\\(-13x\\)",
+            "\\(12x\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the coefficients first, then append the variable.",
+          "solution": "\\(-4x \\times 3 = -12x\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-4 \\times 3 = -12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-12x\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-12x\\)"
+            },
+            {
+              "explain": "Final answer: -12x. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-12x\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(-7y \\times (-4)\\)",
+          "options": [
+            "\\(29y\\)",
+            "\\(28y\\)",
+            "\\(28y + 1\\)",
+            "\\(38y\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the coefficients. Remember that a negative times a negative is a positive.",
+          "solution": "\\(-7y \\times (-4) = 28y\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-7 \\times (-4) = 28\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(28y\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(28y\\)"
+            },
+            {
+              "explain": "Final answer: 28y. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(28y\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(-(-8n)\\)",
+          "options": [
+            "\\(9n\\)",
+            "\\(8n\\)",
+            "\\(8n + 1\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "hint": "A negative outside the brackets changes the sign of the term inside.",
+          "solution": "\\(-(-8n) = 8n\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-(-8n) = 8n\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(8n\\)"
+            },
+            {
+              "explain": "Final answer: 8n. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(8n\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(4 \\times (-5b)\\)",
+          "options": [
+            "\\(-20b\\)",
+            "\\(-20b + 1\\)",
+            "\\(-30b\\)",
+            "\\(20b\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the coefficients first.",
+          "solution": "\\(4 \\times (-5b) = -20b\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(4 \\times (-5) = -20\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-20b\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-20b\\)"
+            },
+            {
+              "explain": "Final answer: -20b. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-20b\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(-6p \\times (-4q)\\)",
+          "options": [
+            "\\(25pq\\)",
+            "\\(24pq\\)",
+            "\\(24pq + 1\\)",
+            "\\(34pq\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the numbers, then multiply the variables.",
+          "solution": "\\(-6p \\times (-4q) = 24pq\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-6 \\times (-4) = 24\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(p \\times q = pq\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(24pq\\)"
+            },
+            {
+              "explain": "Final answer: 24pq. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(24pq\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(-(-9k)\\)",
+          "options": [
+            "\\(10k\\)",
+            "\\(9k\\)",
+            "\\(9k + 1\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "hint": "The negative of a negative value is positive.",
+          "solution": "\\(-(-9k) = 9k\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-(-9k) = 9k\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(9k\\)"
+            },
+            {
+              "explain": "Final answer: 9k. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(9k\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q1g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(-8 \\times (-6m)\\)",
+          "options": [
+            "\\(49m\\)",
+            "\\(48m\\)",
+            "\\(48m + 1\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the coefficients. A negative times a negative is positive.",
+          "solution": "\\(-8 \\times (-6m) = 48m\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-8 \\times (-6) = 48\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(48m\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(48m\\)"
+            },
+            {
+              "explain": "Final answer: 48m. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(48m\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q1h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(-a \\times 5\\)",
+          "options": [
+            "\\(-5a\\)",
+            "\\(-5a + 1\\)",
+            "\\(5a\\)",
+            "\\(-6a\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(-a\\) is equivalent to \\(-1a\\).",
+          "solution": "\\(-a \\times 5 = -5a\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-1 \\times 5 = -5\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-5a\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-5a\\)"
+            },
+            {
+              "explain": "Final answer: -5a. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-5a\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q1i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(3x \\times (-4x)\\)",
+          "options": [
+            "\\(-12x^2\\)",
+            "\\(-12x^2 + 1\\)",
+            "\\(-13x^3\\)",
+            "\\(12x^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the coefficients, and recall that \\(x \\times x = x^2\\).",
+          "solution": "\\(3x \\times (-4x) = -12x^2\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(3 \\times (-4) = -12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(x \\times x = x^2\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-12x^2\\)"
+            },
+            {
+              "explain": "Final answer: -12x^2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-12x^2\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q1j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(-5y \\times (-6y)\\)",
+          "options": [
+            "\\(-30y^2\\)",
+            "\\(30y^2\\)",
+            "\\(30y^2 + 1\\)",
+            "\\(30y^3\\)"
+          ],
+          "answer": 1,
+          "hint": "A negative times a negative is positive, and \\(y \\times y = y^2\\).",
+          "solution": "\\(-5y \\times (-6y) = 30y^2\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-5 \\times (-6) = 30\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(y \\times y = y^2\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(30y^2\\)"
+            },
+            {
+              "explain": "Final answer: 30y^2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(30y^2\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q1k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(-6b \\times 4b\\)",
+          "options": [
+            "\\(-24b^2\\)",
+            "\\(-24b^2 + 1\\)",
+            "\\(-34b^3\\)",
+            "\\(24b^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the coefficients, and recall that \\(b \\times b = b^2\\).",
+          "solution": "\\(-6b \\times 4b = -24b^2\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-6 \\times 4 = -24\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(b \\times b = b^2\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-24b^2\\)"
+            },
+            {
+              "explain": "Final answer: -24b^2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-24b^2\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(4(y + 3)\\)",
+          "options": [
+            "\\(-4y + 12\\)",
+            "\\(4y + 12\\)",
+            "\\(4y + 12 + 1\\)",
+            "\\(4y + 13\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the term outside the brackets by each term inside.",
+          "solution": "\\(4(y + 3) = 4 \\times y + 4 \\times 3 = 4y + 12\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(4 \\times y = 4y\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(4 \\times 3 = 12\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(4y + 12\\)"
+            },
+            {
+              "explain": "Final answer: 4y + 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(4y + 12\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(6(3x + 2)\\)",
+          "options": [
+            "\\(-18x + 12\\)",
+            "\\(18x + 12\\)",
+            "\\(18x + 12 + 1\\)",
+            "\\(18x + 13\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the term outside the brackets by each term inside.",
+          "solution": "\\(6(3x + 2) = 6 \\times 3x + 6 \\times 2 = 18x + 12\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(6 \\times 3x = 18x\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(6 \\times 2 = 12\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(18x + 12\\)"
+            },
+            {
+              "explain": "Final answer: 18x + 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(18x + 12\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(5(4x + 5)\\)",
+          "options": [
+            "\\(-20x + 25\\)",
+            "\\(20x + 25\\)",
+            "\\(20x + 25 + 1\\)",
+            "\\(30x + 35\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the term outside the brackets by each term inside.",
+          "solution": "\\(5(4x + 5) = 5 \\times 4x + 5 \\times 5 = 20x + 25\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(5 \\times 4x = 20x\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(5 \\times 5 = 25\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(20x + 25\\)"
+            },
+            {
+              "explain": "Final answer: 20x + 25. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(20x + 25\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(-6(3y + 8)\\)",
+          "options": [
+            "\\(-18y - 48\\)",
+            "\\(-18y - 48 + 1\\)",
+            "\\(18y - 48\\)",
+            "\\(-19y - 48\\)"
+          ],
+          "answer": 0,
+          "hint": "Be careful with the negative sign when multiplying each term inside.",
+          "solution": "\\(-6(3y + 8) = -6 \\times 3y + (-6) \\times 8 = -18y - 48\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-6 \\times 3y = -18y\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-6 \\times 8 = -48\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-18y - 48\\)"
+            },
+            {
+              "explain": "Final answer: -18y - 48. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-18y - 48\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(8(4m - 5)\\)",
+          "options": [
+            "\\(-32m - 40\\)",
+            "\\(32m - 40\\)",
+            "\\(32m - 40 + 1\\)",
+            "\\(33m - 40\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the term outside the brackets by each term inside.",
+          "solution": "\\(8(4m - 5) = 8 \\times 4m + 8 \\times (-5) = 32m - 40\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(8 \\times 4m = 32m\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(8 \\times (-5) = -40\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(32m - 40\\)"
+            },
+            {
+              "explain": "Final answer: 32m - 40. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(32m - 40\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(-3(7 + 4a)\\)",
+          "options": [
+            "\\(-12a - 21\\)",
+            "\\(-12a - 21 + 1\\)",
+            "\\(-13a - 31\\)",
+            "\\(12a - 21\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the outside negative factor by both terms inside the brackets.",
+          "solution": "\\(-3(7 + 4a) = -3 \\times 7 + (-3) \\times 4a = -21 - 12a = -12a - 21\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-3 \\times 7 = -21\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-3 \\times 4a = -12a\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-12a - 21\\)"
+            },
+            {
+              "explain": "Final answer: -12a - 21. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-12a - 21\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(6(5w + 4)\\)",
+          "options": [
+            "\\(-30w + 24\\)",
+            "\\(30w + 24\\)",
+            "\\(30w + 24 + 1\\)",
+            "\\(30w + 34\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the term outside by each term inside.",
+          "solution": "\\(6(5w + 4) = 6 \\times 5w + 6 \\times 4 = 30w + 24\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(6 \\times 5w = 30w\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(6 \\times 4 = 24\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(30w + 24\\)"
+            },
+            {
+              "explain": "Final answer: 30w + 24. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(30w + 24\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(8(3x - y)\\)",
+          "options": [
+            "\\(-24x - 8y\\)",
+            "\\(24x - 8y\\)",
+            "\\(24x - 8y + 1\\)",
+            "\\(34x - 8y\\)"
+          ],
+          "answer": 1,
+          "hint": "Distribute \\(8\\) to both \\(3x\\) and \\(-y\\).",
+          "solution": "\\(8(3x - y) = 8 \\times 3x - 8 \\times y = 24x - 8y\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(8 \\times 3x = 24x\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(8 \\times (-y) = -8y\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(24x - 8y\\)"
+            },
+            {
+              "explain": "Final answer: 24x - 8y. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(24x - 8y\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(-9(7b - 4)\\)",
+          "options": [
+            "\\(-63b + 36\\)",
+            "\\(-63b + 36 + 1\\)",
+            "\\(63b + 36\\)",
+            "\\(-64b + 36\\)"
+          ],
+          "answer": 0,
+          "hint": "Remember that a negative number times a negative number results in a positive number.",
+          "solution": "\\(-9(7b - 4) = -9 \\times 7b + (-9) \\times (-4) = -63b + 36\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-9 \\times 7b = -63b\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-9 \\times (-4) = 36\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-63b + 36\\)"
+            },
+            {
+              "explain": "Final answer: -63b + 36. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-63b + 36\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(-8(5 - y)\\)",
+          "options": [
+            "\\(-8y - 40\\)",
+            "\\(8y - 40\\)",
+            "\\(8y - 40 + 1\\)",
+            "\\(9y - 40\\)"
+          ],
+          "answer": 1,
+          "hint": "Distribute \\(-8\\) inside the brackets, keeping track of negative signs.",
+          "solution": "\\(-8(5 - y) = -8 \\times 5 + (-8) \\times (-y) = -40 + 8y = 8y - 40\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-8 \\times 5 = -40\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-8 \\times (-y) = 8y\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(8y - 40\\)"
+            },
+            {
+              "explain": "Final answer: 8y - 40. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(8y - 40\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(-7(-4m - 5)\\)",
+          "options": [
+            "\\(-28m + 35\\)",
+            "\\(28m + 35\\)",
+            "\\(28m + 35 + 1\\)",
+            "\\(38m + 35\\)"
+          ],
+          "answer": 1,
+          "hint": "Both multiplications involve negative numbers.",
+          "solution": "\\(-7(-4m - 5) = -7 \\times (-4m) + (-7) \\times (-5) = 28m + 35\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-7 \\times (-4m) = 28m\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-7 \\times (-5) = 35\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(28m + 35\\)"
+            },
+            {
+              "explain": "Final answer: 28m + 35. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(28m + 35\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(-6(3x - 4y)\\)",
+          "options": [
+            "\\(-18x + 24y\\)",
+            "\\(-18x + 24y + 1\\)",
+            "\\(-18x + 34y\\)",
+            "\\(18x + 24y\\)"
+          ],
+          "answer": 0,
+          "hint": "Distribute \\(-6\\) to both terms inside the brackets.",
+          "solution": "\\(-6(3x - 4y) = -6 \\times 3x + (-6) \\times (-4y) = -18x + 24y\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-6 \\times 3x = -18x\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-6 \\times (-4y) = 24y\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-18x + 24y\\)"
+            },
+            {
+              "explain": "Final answer: -18x + 24y. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-18x + 24y\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2m",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(-4(-5a + 6)\\)",
+          "options": [
+            "\\(-20a - 24\\)",
+            "\\(20a - 24\\)",
+            "\\(20a - 24 + 1\\)",
+            "\\(30a - 34\\)"
+          ],
+          "answer": 1,
+          "hint": "Distribute \\(-4\\) inside the brackets.",
+          "solution": "\\(-4(-5a + 6) = -4 \\times (-5a) + (-4) \\times 6 = 20a - 24\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-4 \\times (-5a) = 20a\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-4 \\times 6 = -24\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(20a - 24\\)"
+            },
+            {
+              "explain": "Final answer: 20a - 24. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(20a - 24\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2n",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(-5(-y + 7)\\)",
+          "options": [
+            "\\(-5y - 35\\)",
+            "\\(5y - 35\\)",
+            "\\(5y - 35 + 1\\)",
+            "\\(6y - 35\\)"
+          ],
+          "answer": 1,
+          "hint": "Distribute \\(-5\\) inside the brackets.",
+          "solution": "\\(-5(-y + 7) = -5 \\times (-y) + (-5) \\times 7 = 5y - 35\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-5 \\times (-y) = 5y\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-5 \\times 7 = -35\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(5y - 35\\)"
+            },
+            {
+              "explain": "Final answer: 5y - 35. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(5y - 35\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2o",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(-6(-6k - 4)\\)",
+          "options": [
+            "\\(-36k + 24\\)",
+            "\\(36k + 24\\)",
+            "\\(36k + 24 + 1\\)",
+            "\\(36k + 34\\)"
+          ],
+          "answer": 1,
+          "hint": "Both terms inside the brackets are negative, and the factor outside is negative.",
+          "solution": "\\(-6(-6k - 4) = -6 \\times (-6k) + (-6) \\times (-4) = 36k + 24\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-6 \\times (-6k) = 36k\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-6 \\times (-4) = 24\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(36k + 24\\)"
+            },
+            {
+              "explain": "Final answer: 36k + 24. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(36k + 24\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2p",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(-5(3 - 4d)\\)",
+          "options": [
+            "\\(-20d - 15\\)",
+            "\\(20d - 15\\)",
+            "\\(20d - 15 + 1\\)",
+            "\\(30d - 15\\)"
+          ],
+          "answer": 1,
+          "hint": "Distribute \\(-5\\) inside the brackets.",
+          "solution": "\\(-5(3 - 4d) = -5 \\times 3 + (-5) \\times (-4d) = -15 + 20d = 20d - 15\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-5 \\times 3 = -15\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-5 \\times (-4d) = 20d\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(20d - 15\\)"
+            },
+            {
+              "explain": "Final answer: 20d - 15. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(20d - 15\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2q",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(\\frac{1}{4}(3y - 12)\\)",
+          "options": [
+            "\\(-\\frac{3}{4}y - 3\\)",
+            "\\(\\frac{3}{4}y - 3\\)",
+            "\\(\\frac{3}{4}y - 3 + 1\\)",
+            "\\(\\frac{4}{3}y - 3\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply both terms inside the brackets by the fraction \\(\\frac{1}{4}\\).",
+          "solution": "\\(\\frac{1}{4}(3y - 12) = \\frac{1}{4} \\times 3y - \\frac{1}{4} \\times 12 = \\frac{3}{4}y - 3\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(\\frac{1}{4} \\times 3y = \\frac{3}{4}y\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(\\frac{1}{4} \\times (-12) = -3\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(\\frac{3}{4}y - 3\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{3}{4}y - 3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(\\frac{3}{4}y - 3\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q2r",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets: \\(-(12 + \\frac{1}{5}y)\\)",
+          "options": [
+            "\\(--\\frac{1}{5}y - 12\\)",
+            "\\(-\\frac{1}{5}y - 12\\)",
+            "\\(-\\frac{5}{1}y - 12\\)",
+            "\\(\\frac{1}{5}y - 12\\)"
+          ],
+          "answer": 1,
+          "hint": "The negative sign outside the brackets multiplies both terms inside by \\(-1\\).",
+          "solution": "\\(-(12 + \\frac{1}{5}y) = -12 - \\frac{1}{5}y = -\\frac{1}{5}y - 12\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-1 \\times 12 = -12, quad -1 \\times \\frac{1}{5}y = -\\frac{1}{5}y\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-\\frac{1}{5}y - 12\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-\\frac{1}{5}y - 12\\)"
+            },
+            {
+              "explain": "Final answer: -\\frac{1}{5}y - 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-\\frac{1}{5}y - 12\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(4(3x - 4) + 6x\\)",
+          "options": [
+            "\\(-18x - 16\\)",
+            "\\(18x - 16\\)",
+            "\\(18x - 16 + 1\\)",
+            "\\(19x - 16\\)"
+          ],
+          "answer": 1,
+          "hint": "First expand \\(4(3x - 4)\\), then group and combine the \\(x\\) terms.",
+          "solution": "\\(4(3x - 4) + 6x = 12x - 16 + 6x = 18x - 16\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(12x - 16 + 6x\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\((12x + 6x) - 16\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(18x - 16\\)"
+            },
+            {
+              "explain": "Final answer: 18x - 16. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(18x - 16\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(5(y - 4) + 12\\)",
+          "options": [
+            "\\(-5y - 8\\)",
+            "\\(5y - 8\\)",
+            "\\(5y - 8 + 1\\)",
+            "\\(6y - 8\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand \\(5(y - 4)\\) first, then combine the constant terms.",
+          "solution": "\\(5(y - 4) + 12 = 5y - 20 + 12 = 5y - 8\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(5y - 20 + 12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(5y - 8\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(5y - 8\\)"
+            },
+            {
+              "explain": "Final answer: 5y - 8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(5y - 8\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(3(4x - 5) - 7\\)",
+          "options": [
+            "\\(-12x - 22\\)",
+            "\\(12x - 22\\)",
+            "\\(12x - 22 + 1\\)",
+            "\\(13x - 33\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand \\(3(4x - 5)\\) first, then combine the constants.",
+          "solution": "\\(3(4x - 5) - 7 = 12x - 15 - 7 = 12x - 22\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(12x - 15 - 7\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(12x - 22\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(12x - 22\\)"
+            },
+            {
+              "explain": "Final answer: 12x - 22. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(12x - 22\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(5(y - 6) + 8y\\)",
+          "options": [
+            "\\(-13y - 30\\)",
+            "\\(13y - 30\\)",
+            "\\(13y - 30 + 1\\)",
+            "\\(14y - 30\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand \\(5(y - 6)\\) first, then group the \\(y\\) terms.",
+          "solution": "\\(5(y - 6) + 8y = 5y - 30 + 8y = 13y - 30\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(5y - 30 + 8y\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(13y - 30\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(13y - 30\\)"
+            },
+            {
+              "explain": "Final answer: 13y - 30. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(13y - 30\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q3e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(-5(m - 8) + 5m\\)",
+          "options": [
+            "\\(42\\)",
+            "\\(39\\)",
+            "\\(40\\)",
+            "\\(41\\)"
+          ],
+          "answer": 2,
+          "hint": "Be careful when multiplying \\(-5\\) by \\(-8\\). The \\(m\\) terms will cancel out.",
+          "solution": "\\(-5(m - 8) + 5m = -5m + 40 + 5m = 40\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-5m + 40 + 5m\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(40\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(40\\)"
+            },
+            {
+              "explain": "Final answer: 40. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(40\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q3f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(6(3n - 4) + 10\\)",
+          "options": [
+            "\\(-18n - 14\\)",
+            "\\(18n - 14\\)",
+            "\\(18n - 14 + 1\\)",
+            "\\(19n - 14\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand \\(6(3n - 4)\\), then combine the constants.",
+          "solution": "\\(6(3n - 4) + 10 = 18n - 24 + 10 = 18n - 14\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(18n - 24 + 10\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(18n - 14\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(18n - 14\\)"
+            },
+            {
+              "explain": "Final answer: 18n - 14. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(18n - 14\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q3g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(-5(6p + 4) + 40p\\)",
+          "options": [
+            "\\(-10p - 20\\)",
+            "\\(10p - 20\\)",
+            "\\(10p - 20 + 1\\)",
+            "\\(10p - 30\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand the brackets first, then group the \\(p\\) terms.",
+          "solution": "\\(-5(6p + 4) + 40p = -30p - 20 + 40p = 10p - 20\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-30p - 20 + 40p\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(10p - 20\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(10p - 20\\)"
+            },
+            {
+              "explain": "Final answer: 10p - 20. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(10p - 20\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q3h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(6(-7n - 4) + 8n\\)",
+          "options": [
+            "\\(-34n - 24\\)",
+            "\\(-34n - 24 + 1\\)",
+            "\\(-34n - 34\\)",
+            "\\(34n - 24\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply \\(6\\) by both terms inside, then combine the \\(n\\) terms.",
+          "solution": "\\(6(-7n - 4) + 8n = -42n - 24 + 8n = -34n - 24\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-42n - 24 + 8n\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-34n - 24\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-34n - 24\\)"
+            },
+            {
+              "explain": "Final answer: -34n - 24. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-34n - 24\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q3i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(-8(-a + 4) - 20\\)",
+          "options": [
+            "\\(-8a - 52\\)",
+            "\\(8a - 52\\)",
+            "\\(8a - 52 + 1\\)",
+            "\\(8a - 53\\)"
+          ],
+          "answer": 1,
+          "hint": "Watch the double negative when multiplying \\(-8\\) by \\(-a\\).",
+          "solution": "\\(-8(-a + 4) - 20 = 8a - 32 - 20 = 8a - 52\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(8a - 32 - 20\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(8a - 52\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(8a - 52\\)"
+            },
+            {
+              "explain": "Final answer: 8a - 52. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(8a - 52\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q3j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(-5(-3y + 4) - 15y\\)",
+          "options": [
+            "\\(-19\\)",
+            "\\(-20\\)",
+            "\\(-21\\)",
+            "\\(22\\)"
+          ],
+          "answer": 1,
+          "hint": "The \\(y\\) terms will cancel out after expansion.",
+          "solution": "\\(-5(-3y + 4) - 15y = 15y - 20 - 15y = -20\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(15y - 20 - 15y\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-20\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-20\\)"
+            },
+            {
+              "explain": "Final answer: -20. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-20\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q3k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(-6(2 - 4a) - 24a + 18\\)",
+          "options": [
+            "\\(8\\)",
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(7\\)"
+          ],
+          "answer": 2,
+          "hint": "Distribute \\(-6\\), then combine variables and constants separately.",
+          "solution": "\\(-6(2 - 4a) - 24a + 18 = -12 + 24a - 24a + 18 = 6\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(-12 + 24a - 24a + 18\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-12 + 18\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(6\\)"
+            },
+            {
+              "explain": "Final answer: 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(6\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q3l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(-4(-6 - 8n) - 30n\\)",
+          "options": [
+            "\\(-2n + 24\\)",
+            "\\(2n + 24\\)",
+            "\\(2n + 24 + 1\\)",
+            "\\(3n + 34\\)"
+          ],
+          "answer": 1,
+          "hint": "Distribute \\(-4\\), group variables, and simplify.",
+          "solution": "\\(-4(-6 - 8n) - 30n = 24 + 32n - 30n = 2n + 24\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(24 + 32n - 30n\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(2n + 24\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(2n + 24\\)"
+            },
+            {
+              "explain": "Final answer: 2n + 24. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(2n + 24\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(3(3x + 4) + 4(2x + 5)\\)",
+          "options": [
+            "\\(-17x + 32\\)",
+            "\\(17x + 32\\)",
+            "\\(17x + 32 + 1\\)",
+            "\\(17x + 33\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand both brackets separately, then collect the like terms.",
+          "solution": "\\(3(3x + 4) + 4(2x + 5) = 9x + 12 + 8x + 20 = 17x + 32\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(9x + 12 + 4(2x + 5)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(9x + 12 + 8x + 20\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\((9x + 8x) + (12 + 20)\\)"
+            },
+            {
+              "explain": "Final answer: 17x + 32. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(17x + 32\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11"
+          ]
+        },
+        {
+          "id": "y8-11a-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(3(4y + 2) + 2(y + 5)\\)",
+          "options": [
+            "\\(-14y + 16\\)",
+            "\\(14y + 16\\)",
+            "\\(14y + 16 + 1\\)",
+            "\\(15y + 16\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand both brackets, then group \\(y\\) and constant terms.",
+          "solution": "\\(3(4y + 2) + 2(y + 5) = 12y + 6 + 2y + 10 = 14y + 16\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(12y + 6 + 2y + 10\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(14y + 16\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(14y + 16\\)"
+            },
+            {
+              "explain": "Final answer: 14y + 16. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(14y + 16\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(5(a - 8) + 5(a - 4)\\)",
+          "options": [
+            "\\(-10a - 60\\)",
+            "\\(10a - 60\\)",
+            "\\(10a - 60 + 1\\)",
+            "\\(11a - 60\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand both brackets, then group like terms.",
+          "solution": "\\(5(a - 8) + 5(a - 4) = 5a - 40 + 5a - 20 = 10a - 60\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(5a - 40 + 5a - 20\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(10a - 60\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(10a - 60\\)"
+            },
+            {
+              "explain": "Final answer: 10a - 60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(10a - 60\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(4(3n - 5) + 5(2n + 6)\\)",
+          "options": [
+            "\\(-22n + 10\\)",
+            "\\(22n + 10\\)",
+            "\\(22n + 10 + 1\\)",
+            "\\(33n + 10\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand both brackets, then group like terms.",
+          "solution": "\\(4(3n - 5) + 5(2n + 6) = 12n - 20 + 10n + 30 = 22n + 10\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(12n - 20 + 10n + 30\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(22n + 10\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(22n + 10\\)"
+            },
+            {
+              "explain": "Final answer: 22n + 10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(22n + 10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q4e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(3(2n - 5) - 4(n + 6)\\)",
+          "options": [
+            "\\(-2n - 39\\)",
+            "\\(2n - 39\\)",
+            "\\(2n - 39 + 1\\)",
+            "\\(3n - 39\\)"
+          ],
+          "answer": 1,
+          "hint": "Be careful with the negative sign when expanding the second brackets.",
+          "solution": "\\(3(2n - 5) - 4(n + 6) = 6n - 15 - 4n - 24 = 2n - 39\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(6n - 15 - 4n - 24\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(2n - 39\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(2n - 39\\)"
+            },
+            {
+              "explain": "Final answer: 2n - 39. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(2n - 39\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q4f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(5(3p - 4) - (p + 8)\\)",
+          "options": [
+            "\\(-14p - 28\\)",
+            "\\(14p - 28\\)",
+            "\\(14p - 28 + 1\\)",
+            "\\(14p - 38\\)"
+          ],
+          "answer": 1,
+          "hint": "A negative sign before brackets behaves like multiplying by \\(-1\\).",
+          "solution": "\\(5(3p - 4) - (p + 8) = 15p - 20 - p - 8 = 14p - 28\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(15p - 20 - p - 8\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(14p - 28\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(14p - 28\\)"
+            },
+            {
+              "explain": "Final answer: 14p - 28. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(14p - 28\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q4g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(8(w + 5) - 3(2w + 6)\\)",
+          "options": [
+            "\\(-2w + 22\\)",
+            "\\(2w + 22\\)",
+            "\\(2w + 22 + 1\\)",
+            "\\(3w + 33\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply both terms in the second bracket by \\(-3\\).",
+          "solution": "\\(8(w + 5) - 3(2w + 6) = 8w + 40 - 6w - 18 = 2w + 22\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(8w + 40 - 6w - 18\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(2w + 22\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(2w + 22\\)"
+            },
+            {
+              "explain": "Final answer: 2w + 22. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(2w + 22\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q4h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(6(4b + 3) - (3b - 5)\\)",
+          "options": [
+            "\\(-21b + 23\\)",
+            "\\(21b + 23\\)",
+            "\\(21b + 23 + 1\\)",
+            "\\(31b + 33\\)"
+          ],
+          "answer": 1,
+          "hint": "Remember that subtracting a negative term makes it positive (e.g. \\(-(-5) = 5\\)).",
+          "solution": "\\(6(4b + 3) - (3b - 5) = 24b + 18 - 3b + 5 = 21b + 23\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(24b + 18 - 3b + 5\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(21b + 23\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(21b + 23\\)"
+            },
+            {
+              "explain": "Final answer: 21b + 23. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(21b + 23\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q4i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(6(3y + 8) - 4(5y - 3)\\)",
+          "options": [
+            "\\(-2y + 60\\)",
+            "\\(-2y + 60 + 1\\)",
+            "\\(-3y + 60\\)",
+            "\\(2y + 60\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the second brackets by \\(-4\\).",
+          "solution": "\\(6(3y + 8) - 4(5y - 3) = 18y + 48 - 20y + 12 = -2y + 60\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(18y + 48 - 20y + 12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-2y + 60\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-2y + 60\\)"
+            },
+            {
+              "explain": "Final answer: -2y + 60. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-2y + 60\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q4j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(6(q - 3) - 7(4 - q)\\)",
+          "options": [
+            "\\(-13q - 46\\)",
+            "\\(13q - 46\\)",
+            "\\(13q - 46 + 1\\)",
+            "\\(14q - 46\\)"
+          ],
+          "answer": 1,
+          "hint": "Watch the signs: \\(-7 \\times (-q) = 7q\\).",
+          "solution": "\\(6(q - 3) - 7(4 - q) = 6q - 18 - 28 + 7q = 13q - 46\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(6q - 18 - 28 + 7q\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(13q - 46\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(13q - 46\\)"
+            },
+            {
+              "explain": "Final answer: 13q - 46. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(13q - 46\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q4k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(7(r - 6) - 3(r + 4)\\)",
+          "options": [
+            "\\(-4r - 54\\)",
+            "\\(4r - 54\\)",
+            "\\(4r - 54 + 1\\)",
+            "\\(5r - 54\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand both brackets, then group variable terms and constant terms.",
+          "solution": "\\(7(r - 6) - 3(r + 4) = 7r - 42 - 3r - 12 = 4r - 54\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(7r - 42 - 3r - 12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(4r - 54\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(4r - 54\\)"
+            },
+            {
+              "explain": "Final answer: 4r - 54. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(4r - 54\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11a-q4l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms: \\(5(k - 6) - 5(2k - 3)\\)",
+          "options": [
+            "\\(-5k - 15\\)",
+            "\\(-5k - 15 + 1\\)",
+            "\\(5k - 15\\)",
+            "\\(-6k - 15\\)"
+          ],
+          "answer": 0,
+          "hint": "Distribute \\(-5\\) across the second brackets.",
+          "solution": "\\(5(k - 6) - 5(2k - 3) = 5k - 30 - 10k + 15 = -5k - 15\\)",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Expanding brackets and collecting like terms: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(5k - 30 - 10k + 15\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(-5k - 15\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(-5k - 15\\)"
+            },
+            {
+              "explain": "Final answer: -5k - 15. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(-5k - 15\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-11e",
+      "code": "11E",
+      "title": "Review",
+      "questions": [
+        {
+          "id": "y8-11e-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the expression as a single fraction in simplest form:\n\n\\(\\frac{x}{5} + \\frac{x}{5}\\)",
+          "options": [
+            "\\(\\frac{2x}{5}\\)",
+            "\\(\\frac{2x}{5} + 1\\)",
+            "\\(\\frac{3x}{5}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "hint": "Since the denominators are both \\(5\\), simply add the numerators together.",
+          "solution": "To add the fractions:\n1. Since the denominators are the same, we can add the numerators directly over the common denominator:\n   \\(\\frac{x}{5} + \\frac{x}{5} = \\frac{x + x}{5} = \\frac{2x}{5}\\)\n\nTherefore, the single fraction is \\(\\frac{2x}{5}\\).",
+          "steps": [
+            {
+              "explain": "The two fractions already share the same denominator, \\(5\\), so we can add the numerators directly.",
+              "work": "\\(\\dfrac{x}{5}+\\dfrac{x}{5}=\\dfrac{x+x}{5}\\)"
+            },
+            {
+              "explain": "Combine like terms in the numerator.",
+              "work": "\\(=\\dfrac{2x}{5}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the expression as a single fraction in simplest form:\n\n\\(\\frac{5x}{7} - \\frac{2x}{7}\\)",
+          "options": [
+            "\\(\\frac{3x}{7}\\)",
+            "\\(\\frac{3x}{7} + 1\\)",
+            "\\(\\frac{4x}{7}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract the numerators since the denominators are already the same.",
+          "solution": "To subtract the fractions:\n1. Since the denominators are the same, subtract the numerators directly over the common denominator:\n   \\(\\frac{5x}{7} - \\frac{2x}{7} = \\frac{5x - 2x}{7} = \\frac{3x}{7}\\)\n\nTherefore, the single fraction is \\(\\frac{3x}{7}\\).",
+          "steps": [
+            {
+              "explain": "Both fractions have denominator \\(7\\), so subtract the numerators directly.",
+              "work": "\\(\\dfrac{5x}{7}-\\dfrac{2x}{7}=\\dfrac{5x-2x}{7}\\)"
+            },
+            {
+              "explain": "Simplify the numerator.",
+              "work": "\\(=\\dfrac{3x}{7}\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the expression as a single fraction in simplest form:\n\n\\(\\frac{y}{9} + \\frac{4y}{9}\\)",
+          "options": [
+            "\\(\\frac{5y}{9}\\)",
+            "\\(\\frac{5y}{9} + 1\\)",
+            "\\(\\frac{6y}{9}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine the numerators over the common denominator \\(9\\).",
+          "solution": "To add the fractions:\n1. Since the denominators are both \\(9\\), add the numerators directly:\n   \\(\\frac{y}{9} + \\frac{4y}{9} = \\frac{y + 4y}{9} = \\frac{5y}{9}\\)\n\nTherefore, the single fraction is \\(\\frac{5y}{9}\\).",
+          "steps": [
+            {
+              "explain": "The denominators are both \\(9\\), so combine the numerators over that common denominator.",
+              "work": "\\(\\dfrac{y}{9}+\\dfrac{4y}{9}=\\dfrac{y+4y}{9}\\)"
+            },
+            {
+              "explain": "Combine like terms.",
+              "work": "\\(=\\dfrac{5y}{9}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the expression as a single fraction in simplest form:\n\n\\(\\frac{2x}{3} + \\frac{x}{4}\\)",
+          "options": [
+            "\\(\\frac{11x}{12}\\)",
+            "\\(\\frac{11x}{12} + 1\\)",
+            "\\(\\frac{11x}{13}\\)",
+            "\\(\\frac{12x}{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the lowest common denominator (LCD) of \\(3\\) and \\(4\\), which is \\(12\\).",
+          "solution": "To add the fractions with different denominators:\n1. Find the lowest common denominator (LCD) for \\(3\\) and \\(4\\), which is \\(12\\).\n2. Convert each fraction to have a denominator of \\(12\\):\n   \\(\\frac{2x}{3} = \\frac{2x \\times 4}{3 \\times 4} = \\frac{8x}{12}\\)\n   \\(\\frac{x}{4} = \\frac{x \\times 3}{4 \\times 3} = \\frac{3x}{12}\\)\n3. Add the numerators over the common denominator:\n   \\(\\frac{8x}{12} + \\frac{3x}{12} = \\frac{8x + 3x}{12} = \\frac{11x}{12}\\)\n\nTherefore, the single fraction is \\(\\frac{11x}{12}\\).",
+          "steps": [
+            {
+              "explain": "The denominators \\(3\\) and \\(4\\) are different, so find the lowest common denominator (LCD), which is \\(12\\).",
+              "work": "\\(\\dfrac{2x}{3}=\\dfrac{8x}{12}, \\quad \\dfrac{x}{4}=\\dfrac{3x}{12}\\)"
+            },
+            {
+              "explain": "Add the two equivalent fractions over the common denominator.",
+              "work": "\\(\\dfrac{8x}{12}+\\dfrac{3x}{12}=\\dfrac{11x}{12}\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the expression as a single fraction in simplest form:\n\n\\(\\frac{x}{3} + \\frac{5x}{8}\\)",
+          "options": [
+            "\\(\\frac{23x}{24}\\)",
+            "\\(\\frac{23x}{24} + 1\\)",
+            "\\(\\frac{33x}{34}\\)",
+            "\\(\\frac{24x}{24}\\)"
+          ],
+          "answer": 0,
+          "hint": "The LCD of \\(3\\) and \\(8\\) is \\(24\\). Convert both fractions to this denominator.",
+          "solution": "To add the fractions:\n1. The LCD for \\(3\\) and \\(8\\) is \\(24\\).\n2. Convert the fractions:\n   \\(\\frac{x}{3} = \\frac{8x}{24}\\)\n   \\(\\frac{5x}{8} = \\frac{15x}{24}\\)\n3. Add the numerators:\n   \\(\\frac{8x}{24} + \\frac{15x}{24} = \\frac{8x + 15x}{24} = \\frac{23x}{24}\\)\n\nTherefore, the single fraction is \\(\\frac{23x}{24}\\).",
+          "steps": [
+            {
+              "explain": "Find the LCD of \\(3\\) and \\(8\\), which is \\(24\\), and convert both fractions.",
+              "work": "\\(\\dfrac{x}{3}=\\dfrac{8x}{24}, \\quad \\dfrac{5x}{8}=\\dfrac{15x}{24}\\)"
+            },
+            {
+              "explain": "Add the two equivalent fractions.",
+              "work": "\\(\\dfrac{8x}{24}+\\dfrac{15x}{24}=\\dfrac{23x}{24}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the expression as a single fraction in simplest form:\n\n\\(\\frac{x}{5} - \\frac{2x}{3}\\)",
+          "options": [
+            "\\(-\\frac{7x}{15}\\)",
+            "\\(-\\frac{7x}{15} + 1\\)",
+            "\\(\\frac{7x}{15}\\)",
+            "\\(-\\frac{8x}{15}\\)"
+          ],
+          "answer": 0,
+          "hint": "The LCD of \\(5\\) and \\(3\\) is \\(15\\). Watch out for the negative result in the numerator.",
+          "solution": "To subtract the fractions:\n1. The LCD for \\(5\\) and \\(3\\) is \\(15\\).\n2. Convert the fractions:\n   \\(\\frac{x}{5} = \\frac{3x}{15}\\)\n   \\(\\frac{2x}{3} = \\frac{10x}{15}\\)\n3. Subtract the numerators:\n   \\(\\frac{3x}{15} - \\frac{10x}{15} = \\frac{3x - 10x}{15} = -\\frac{7x}{15}\\)\n\nTherefore, the single fraction is \\(-\\frac{7x}{15}\\).",
+          "steps": [
+            {
+              "explain": "Find the LCD of \\(5\\) and \\(3\\), which is \\(15\\), and convert both fractions.",
+              "work": "\\(\\dfrac{x}{5}=\\dfrac{3x}{15}, \\quad \\dfrac{2x}{3}=\\dfrac{10x}{15}\\)"
+            },
+            {
+              "explain": "Subtract the fractions — the result is negative since the second fraction is larger.",
+              "work": "\\(\\dfrac{3x}{15}-\\dfrac{10x}{15}=-\\dfrac{7x}{15}\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q1g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the expression as a single fraction in simplest form:\n\n\\(\\frac{3x}{5} - \\frac{x}{2}\\)",
+          "options": [
+            "\\(\\frac{x}{10}\\)",
+            "\\(\\frac{x}{10} + 1\\)",
+            "\\(\\frac{x}{11}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "hint": "The LCD of \\(5\\) and \\(2\\) is \\(10\\). Convert both fractions and subtract.",
+          "solution": "To subtract the fractions:\n1. The LCD for \\(5\\) and \\(2\\) is \\(10\\).\n2. Convert the fractions:\n   \\(\\frac{3x}{5} = \\frac{6x}{10}\\)\n   \\(\\frac{x}{2} = \\frac{5x}{10}\\)\n3. Subtract the numerators:\n   \\(\\frac{6x}{10} - \\frac{5x}{10} = \\frac{6x - 5x}{10} = \\frac{x}{10}\\)\n\nTherefore, the single fraction is \\(\\frac{x}{10}\\).",
+          "steps": [
+            {
+              "explain": "Find the LCD of \\(5\\) and \\(2\\), which is \\(10\\), and convert both fractions.",
+              "work": "\\(\\dfrac{3x}{5}=\\dfrac{6x}{10}, \\quad \\dfrac{x}{2}=\\dfrac{5x}{10}\\)"
+            },
+            {
+              "explain": "Subtract the numerators over the common denominator.",
+              "work": "\\(\\dfrac{6x}{10}-\\dfrac{5x}{10}=\\dfrac{x}{10}\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q1h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the expression as a single fraction in simplest form:\n\n\\(\\frac{2x}{3} + \\frac{2x}{5}\\)",
+          "options": [
+            "\\(\\frac{16x}{15}\\)",
+            "\\(\\frac{16x}{15} + 1\\)",
+            "\\(\\frac{17x}{15}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert to a common denominator of \\(15\\) before adding.",
+          "solution": "To add the fractions:\n1. The LCD for \\(3\\) and \\(5\\) is \\(15\\).\n2. Convert the fractions:\n   \\(\\frac{2x}{3} = \\frac{10x}{15}\\)\n   \\(\\frac{2x}{5} = \\frac{6x}{15}\\)\n3. Add the numerators:\n   \\(\\frac{10x}{15} + \\frac{6x}{15} = \\frac{10x + 6x}{15} = \\frac{16x}{15}\\)\n\nTherefore, the single fraction is \\(\\frac{16x}{15}\\).",
+          "steps": [
+            {
+              "explain": "Find the LCD of \\(3\\) and \\(5\\), which is \\(15\\), and convert both fractions.",
+              "work": "\\(\\dfrac{2x}{3}=\\dfrac{10x}{15}, \\quad \\dfrac{2x}{5}=\\dfrac{6x}{15}\\)"
+            },
+            {
+              "explain": "Add the numerators over the common denominator.",
+              "work": "\\(\\dfrac{10x}{15}+\\dfrac{6x}{15}=\\dfrac{16x}{15}\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q1i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the expression as a single fraction in simplest form:\n\n\\(\\frac{3x}{4} + \\frac{5x}{12} - \\frac{x}{3}\\)",
+          "options": [
+            "\\(\\frac{5x}{6}\\)",
+            "\\(\\frac{5x}{6} + 1\\)",
+            "\\(\\frac{6x}{6}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the LCD of \\(4\\), \\(12\\), and \\(3\\) (\\(12\\)), convert each term, combine, and simplify the result.",
+          "solution": "To simplify this three-term expression:\n1. The LCD of \\(4\\), \\(12\\), and \\(3\\) is \\(12\\).\n2. Convert each term:\n   \\(\\frac{3x}{4} = \\frac{9x}{12}\\)\n   \\(\\frac{5x}{12} = \\frac{5x}{12}\\)\n   \\(\\frac{x}{3} = \\frac{4x}{12}\\)\n3. Combine the numerators over the common denominator:\n   \\(\\frac{9x + 5x - 4x}{12} = \\frac{10x}{12}\\)\n4. Simplify the fraction by dividing the numerator and denominator by their HCF of \\(2\\):\n   \\(\\frac{10x \\div 2}{12 \\div 2} = \\frac{5x}{6}\\)\n\nTherefore, the simplified fraction is \\(\\frac{5x}{6}\\).",
+          "steps": [
+            {
+              "explain": "Find the LCD of \\(4\\), \\(12\\), and \\(3\\), which is \\(12\\), and convert every term.",
+              "work": "\\(\\dfrac{3x}{4}=\\dfrac{9x}{12}, \\quad \\dfrac{5x}{12}=\\dfrac{5x}{12}, \\quad \\dfrac{x}{3}=\\dfrac{4x}{12}\\)"
+            },
+            {
+              "explain": "Combine all three terms over the common denominator.",
+              "work": "\\(\\dfrac{9x}{12}+\\dfrac{5x}{12}-\\dfrac{4x}{12}=\\dfrac{10x}{12}\\)"
+            },
+            {
+              "explain": "Simplify the resulting fraction by dividing top and bottom by their common factor \\(2\\).",
+              "work": "\\(\\dfrac{10x}{12}=\\dfrac{5x}{6}\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q1j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the expression as a single fraction in simplest form:\n\n\\(\\frac{x}{2} - \\frac{3x}{10} + \\frac{x}{5}\\)",
+          "options": [
+            "\\(\\frac{2x}{5}\\)",
+            "\\(\\frac{2x}{5} + 1\\)",
+            "\\(\\frac{3x}{5}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the LCD of \\(2\\), \\(10\\), and \\(5\\), which is \\(10\\), combine the terms, and simplify.",
+          "solution": "To simplify the expression:\n1. The LCD of \\(2\\), \\(10\\), and \\(5\\) is \\(10\\).\n2. Convert each term:\n   \\(\\frac{x}{2} = \\frac{5x}{10}\\)\n   \\(\\frac{3x}{10} = \\frac{3x}{10}\\)\n   \\(\\frac{x}{5} = \\frac{2x}{10}\\)\n3. Combine the numerators:\n   \\(\\frac{5x - 3x + 2x}{10} = \\frac{4x}{10}\\)\n4. Simplify by dividing the numerator and denominator by \\(2\\):\n   \\(\\frac{4x}{10} = \\frac{2x}{5}\\)\n\nTherefore, the simplified fraction is \\(\\frac{2x}{5}\\).",
+          "steps": [
+            {
+              "explain": "Find the LCD of \\(2\\), \\(10\\), and \\(5\\), which is \\(10\\), and convert every term.",
+              "work": "\\(\\dfrac{x}{2}=\\dfrac{5x}{10}, \\quad \\dfrac{3x}{10}=\\dfrac{3x}{10}, \\quad \\dfrac{x}{5}=\\dfrac{2x}{10}\\)"
+            },
+            {
+              "explain": "Combine all three terms over the common denominator.",
+              "work": "\\(\\dfrac{5x}{10}-\\dfrac{3x}{10}+\\dfrac{2x}{10}=\\dfrac{4x}{10}\\)"
+            },
+            {
+              "explain": "Simplify by dividing top and bottom by \\(2\\).",
+              "work": "\\(\\dfrac{4x}{10}=\\dfrac{2x}{5}\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(3(x - 4) + 8\\)",
+          "options": [
+            "\\(-3x - 4\\)",
+            "\\(3x - 4\\)",
+            "\\(3x - 4 + 1\\)",
+            "\\(4x - 4\\)"
+          ],
+          "answer": 1,
+          "hint": "Distribute \\(3\\) to both terms inside the brackets first, then add \\(8\\).",
+          "solution": "To expand and simplify:\n1. Expand the brackets by multiplying \\(3\\) by both \\(x\\) and \\(-4\\):\n   \\(3(x - 4) = 3x - 12\\)\n2. Write down the full expression:\n   \\(3x - 12 + 8\\)\n3. Combine the constant terms:\n   \\(-12 + 8 = -4\\)\n\nTherefore, the simplified expression is \\(3x - 4\\).",
+          "steps": [
+            {
+              "explain": "Distribute the \\(3\\) across both terms inside the brackets.",
+              "work": "\\(3(x-4)=3x-12\\)"
+            },
+            {
+              "explain": "Add the remaining \\(+8\\) and collect the constant terms.",
+              "work": "\\(3x-12+8=3x-4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(-3(4x + 2) - 5x\\)",
+          "options": [
+            "\\(-17x - 6\\)",
+            "\\(-17x - 6 + 1\\)",
+            "\\(17x - 6\\)",
+            "\\(-18x - 6\\)"
+          ],
+          "answer": 0,
+          "hint": "Be careful when multiplying a positive term by a negative number. Distribute \\(-3\\), then collect the \\(x\\) terms.",
+          "solution": "To expand and simplify:\n1. Distribute \\(-3\\) to both terms inside the brackets:\n   \\(-3(4x + 2) = -12x - 6\\)\n2. Write down the full expression:\n   \\(-12x - 6 - 5x\\)\n3. Collect the like terms containing \\(x\\):\n   \\(-12x - 5x = -17x\\)\n\nTherefore, the simplified expression is \\(-17x - 6\\).",
+          "steps": [
+            {
+              "explain": "Distribute \\(-3\\) across both terms inside the brackets, taking care with the signs.",
+              "work": "\\(-3(4x+2)=-12x-6\\)"
+            },
+            {
+              "explain": "Combine with the remaining \\(-5x\\) term by collecting the \\(x\\) terms.",
+              "work": "\\(-12x-6-5x=-17x-6\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(-(y - 5) - 4(y - 3)\\)",
+          "options": [
+            "\\(-5y + 17\\)",
+            "\\(-5y + 17 + 1\\)",
+            "\\(5y + 17\\)",
+            "\\(-6y + 17\\)"
+          ],
+          "answer": 0,
+          "hint": "Remember that a negative sign outside brackets changes all signs inside: \\(-(y-5) = -y+5\\).",
+          "solution": "To expand and simplify:\n1. Expand the first term: \\(-(y - 5) = -y + 5\\).\n2. Expand the second term: \\(-4(y - 3) = -4y + 12\\).\n3. Write the full expression and combine like terms:\n   \\(-y + 5 - 4y + 12\\)\n   \\((-y - 4y) + (5 + 12) = -5y + 17\\)\n\nTherefore, the simplified expression is \\(-5y + 17\\).",
+          "steps": [
+            {
+              "explain": "A negative sign directly in front of brackets flips every sign inside: \\(-(y-5)=-y+5\\).",
+              "work": "\\(-(y-5)=-y+5\\)"
+            },
+            {
+              "explain": "Distribute \\(-4\\) across the second bracket.",
+              "work": "\\(-4(y-3)=-4y+12\\)"
+            },
+            {
+              "explain": "Add both expanded expressions and collect like terms.",
+              "work": "\\(-y+5-4y+12=-5y+17\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(3\\left(\\frac{x}{4} + 2\\right) + \\frac{x}{4}\\)",
+          "options": [
+            "\\(-x + 6\\)",
+            "\\(x + 6\\)",
+            "\\(x + 6 + 1\\)",
+            "\\(x + 7\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand the brackets first, then group the fractional \\(x\\) terms.",
+          "solution": "To expand and simplify:\n1. Distribute \\(3\\) to both terms inside the brackets:\n   \\(3 \\times \\frac{x}{4} + 3 \\times 2 = \\frac{3x}{4} + 6\\)\n2. Write down the full expression:\n   \\(\\frac{3x}{4} + 6 + \\frac{x}{4}\\)\n3. Combine the \\(x\\) fractions:\n   \\(\\frac{3x}{4} + \\frac{x}{4} = \\frac{4x}{4} = x\\)\n4. The expression simplifies to:\n   \\(x + 6\\)\n\nTherefore, the simplified expression is \\(x + 6\\).",
+          "steps": [
+            {
+              "explain": "Distribute the \\(3\\) across both terms inside the brackets.",
+              "work": "\\(3\\left(\\dfrac{x}{4}+2\\right)=\\dfrac{3x}{4}+6\\)"
+            },
+            {
+              "explain": "Add the remaining \\(\\dfrac{x}{4}\\) term by combining the fractional \\(x\\) terms (same denominator).",
+              "work": "\\(\\dfrac{3x}{4}+\\dfrac{x}{4}+6=\\dfrac{4x}{4}+6\\)"
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{4x}{4}\\) to \\(x\\).",
+              "work": "\\(=x+6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(4\\left(\\frac{x}{3} + 3\\right) - \\frac{x}{3}\\)",
+          "options": [
+            "\\(-x + 12\\)",
+            "\\(x + 12\\)",
+            "\\(x + 12 + 1\\)",
+            "\\(x + 13\\)"
+          ],
+          "answer": 1,
+          "hint": "Distribute \\(4\\) and group the fraction terms together.",
+          "solution": "To expand and simplify:\n1. Distribute \\(4\\) inside the brackets:\n   \\(4 \\times \\frac{x}{3} + 4 \\times 3 = \\frac{4x}{3} + 12\\)\n2. Write down the full expression:\n   \\(\\frac{4x}{3} + 12 - \\frac{x}{3}\\)\n3. Combine the \\(x\\) terms:\n   \\(\\frac{4x}{3} - \\frac{x}{3} = \\frac{3x}{3} = x\\)\n4. The expression becomes:\n   \\(x + 12\\)\n\nTherefore, the simplified expression is \\(x + 12\\).",
+          "steps": [
+            {
+              "explain": "Distribute the \\(4\\) across both terms inside the brackets.",
+              "work": "\\(4\\left(\\dfrac{x}{3}+3\\right)=\\dfrac{4x}{3}+12\\)"
+            },
+            {
+              "explain": "Subtract the remaining \\(\\dfrac{x}{3}\\) term (same denominator).",
+              "work": "\\(\\dfrac{4x}{3}-\\dfrac{x}{3}+12=\\dfrac{3x}{3}+12\\)"
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{3x}{3}\\) to \\(x\\).",
+              "work": "\\(=x+12\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(2\\left(\\frac{5x}{6} - 3\\right) + \\frac{x}{3}\\)",
+          "options": [
+            "\\(-2x - 6\\)",
+            "\\(2x - 6\\)",
+            "\\(2x - 6 + 1\\)",
+            "\\(3x - 6\\)"
+          ],
+          "answer": 1,
+          "hint": "Distribute the \\(2\\), simplify the resulting fraction, and add the other fraction.",
+          "solution": "To expand and simplify:\n1. Distribute \\(2\\) inside the brackets:\n   \\(2 \\times \\frac{5x}{6} - 2 \\times 3 = \\frac{10x}{6} - 6\\)\n2. Simplify \\(\\frac{10x}{6}\\) to \\(\\frac{5x}{3}\\):\n   \\(\\frac{5x}{3} - 6\\)\n3. Write the full expression and combine \\(x\\) terms:\n   \\(\\frac{5x}{3} - 6 + \\frac{x}{3} = \\left(\\frac{5x}{3} + \\frac{x}{3}\\right) - 6\\)\n   \\(\\frac{6x}{3} - 6 = 2x - 6\\)\n\nTherefore, the simplified expression is \\(2x - 6\\).",
+          "steps": [
+            {
+              "explain": "Distribute the \\(2\\) across both terms inside the brackets.",
+              "work": "\\(2\\left(\\dfrac{5x}{6}-3\\right)=\\dfrac{10x}{6}-6\\)"
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{10x}{6}\\) to \\(\\dfrac{5x}{3}\\), then add the remaining \\(\\dfrac{x}{3}\\) term.",
+              "work": "\\(\\dfrac{5x}{3}+\\dfrac{x}{3}-6=\\dfrac{6x}{3}-6\\)"
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{6x}{3}\\) to \\(2x\\).",
+              "work": "\\(=2x-6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q2g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(2\\left(\\frac{3x}{4} + 3\\right) - \\frac{2x}{3}\\)",
+          "options": [
+            "\\(\\frac{5x}{6} + 6\\)",
+            "\\(\\frac{5x}{6} + 6 + 1\\)",
+            "\\(\\frac{6x}{6} + 6\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "hint": "Distribute \\(2\\), simplify \\(\\frac{6x}{4}\\) to \\(\\frac{3x}{2}\\), and combine the \\(x\\) terms using a common denominator of \\(6\\).",
+          "solution": "To expand and simplify:\n1. Distribute \\(2\\) inside the brackets:\n   \\(2 \\times \\frac{3x}{4} + 2 \\times 3 = \\frac{6x}{4} + 6 = \\frac{3x}{2} + 6\\)\n2. Write the full expression:\n   \\(\\frac{3x}{2} + 6 - \\frac{2x}{3}\\)\n3. Combine the \\(x\\) terms using the LCD of \\(2\\) and \\(3\\), which is \\(6\\):\n   \\(\\frac{3x}{2} - \\frac{2x}{3} = \\frac{9x}{6} - \\frac{4x}{6} = \\frac{5x}{6}\\)\n4. Put it all together:\n   \\(\\frac{5x}{6} + 6\\)\n\nTherefore, the simplified expression is \\(\\frac{5x}{6} + 6\\).",
+          "steps": [
+            {
+              "explain": "Distribute the \\(2\\) across both terms inside the brackets.",
+              "work": "\\(2\\left(\\dfrac{3x}{4}+3\\right)=\\dfrac{6x}{4}+6=\\dfrac{3x}{2}+6\\)"
+            },
+            {
+              "explain": "Subtract the remaining \\(\\dfrac{2x}{3}\\) term — find the LCD of \\(2\\) and \\(3\\), which is \\(6\\).",
+              "work": "\\(\\dfrac{3x}{2}=\\dfrac{9x}{6}, \\quad \\dfrac{2x}{3}=\\dfrac{4x}{6}\\)"
+            },
+            {
+              "explain": "Combine the fractional \\(x\\) terms and keep the constant.",
+              "work": "\\(\\dfrac{9x}{6}-\\dfrac{4x}{6}+6=\\dfrac{5x}{6}+6\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q2h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(3\\left(\\frac{2x}{5} + 2\\right) - \\frac{x}{4}\\)",
+          "options": [
+            "\\(\\frac{19x}{20} + 6\\)",
+            "\\(\\frac{19x}{20} + 6 + 1\\)",
+            "\\(\\frac{19x}{30} + 6\\)",
+            "\\(\\frac{20x}{20} + 6\\)"
+          ],
+          "answer": 0,
+          "hint": "Distribute \\(3\\), then combine the \\(x\\) fractions using the common denominator \\(20\\).",
+          "solution": "To expand and simplify:\n1. Distribute \\(3\\):\n   \\(3 \\times \\frac{2x}{5} + 3 \\times 2 = \\frac{6x}{5} + 6\\)\n2. Write the full expression:\n   \\(\\frac{6x}{5} + 6 - \\frac{x}{4}\\)\n3. Find the LCD for \\(5\\) and \\(4\\), which is \\(20\\), and combine the \\(x\\) terms:\n   \\(\\frac{6x}{5} - \\frac{x}{4} = \\frac{24x}{20} - \\frac{5x}{20} = \\frac{19x}{20}\\)\n4. Add the constant term:\n   \\(\\frac{19x}{20} + 6\\)\n\nTherefore, the simplified expression is \\(\\frac{19x}{20} + 6\\).",
+          "steps": [
+            {
+              "explain": "Distribute the \\(3\\) across both terms inside the brackets.",
+              "work": "\\(3\\left(\\dfrac{2x}{5}+2\\right)=\\dfrac{6x}{5}+6\\)"
+            },
+            {
+              "explain": "Subtract the remaining \\(\\dfrac{x}{4}\\) term — find the LCD of \\(5\\) and \\(4\\), which is \\(20\\).",
+              "work": "\\(\\dfrac{6x}{5}=\\dfrac{24x}{20}, \\quad \\dfrac{x}{4}=\\dfrac{5x}{20}\\)"
+            },
+            {
+              "explain": "Combine the fractional \\(x\\) terms and keep the constant.",
+              "work": "\\(\\dfrac{24x}{20}-\\dfrac{5x}{20}+6=\\dfrac{19x}{20}+6\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q2i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand the brackets and collect like terms:\n\n\\(4\\left(\\frac{3x}{5} - 2\\right) - \\frac{2x}{3}\\)",
+          "options": [
+            "\\(\\frac{26x}{15} - 8\\)",
+            "\\(\\frac{26x}{15} - 8 + 1\\)",
+            "\\(\\frac{36x}{15} - 8\\)",
+            "\\(\\frac{27x}{15} - 8\\)"
+          ],
+          "answer": 0,
+          "hint": "Distribute \\(4\\) to the brackets, then find the common denominator \\(15\\) to group the \\(x\\) terms.",
+          "solution": "To expand and simplify:\n1. Distribute \\(4\\):\n   \\(4 \\times \\frac{3x}{5} - 4 \\times 2 = \\frac{12x}{5} - 8\\)\n2. Write the full expression:\n   \\(\\frac{12x}{5} - 8 - \\frac{2x}{3}\\)\n3. Combine the \\(x\\) terms using the LCD of \\(5\\) and \\(3\\), which is \\(15\\):\n   \\(\\frac{12x}{5} - \\frac{2x}{3} = \\frac{36x}{15} - \\frac{10x}{15} = \\frac{26x}{15}\\)\n4. Complete the expression:\n   \\(\\frac{26x}{15} - 8\\)\n\nTherefore, the simplified expression is \\(\\frac{26x}{15} - 8\\).",
+          "steps": [
+            {
+              "explain": "Distribute the \\(4\\) across both terms inside the brackets.",
+              "work": "\\(4\\left(\\dfrac{3x}{5}-2\\right)=\\dfrac{12x}{5}-8\\)"
+            },
+            {
+              "explain": "Subtract the remaining \\(\\dfrac{2x}{3}\\) term — find the LCD of \\(5\\) and \\(3\\), which is \\(15\\).",
+              "work": "\\(\\dfrac{12x}{5}=\\dfrac{36x}{15}, \\quad \\dfrac{2x}{3}=\\dfrac{10x}{15}\\)"
+            },
+            {
+              "explain": "Combine the fractional \\(x\\) terms and keep the constant.",
+              "work": "\\(\\dfrac{36x}{15}-\\dfrac{10x}{15}-8=\\dfrac{26x}{15}-8\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(3x + 4x + 2 = 23\\)",
+          "options": [
+            "\\(-3\\)",
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(\\frac{25}{7}\\)"
+          ],
+          "answer": 2,
+          "hint": "Group \\(3x\\) and \\(4x\\) together first, then subtract \\(2\\) and divide by \\(7\\).",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Group the \\(x\\) terms on the left-hand side.",
+              "work": "\\(3x+4x+2=23 \\Rightarrow 7x+2=23\\)"
+            },
+            {
+              "explain": "Subtract \\(2\\) from both sides to isolate the \\(x\\) term.",
+              "work": "\\(7x=21\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(7\\).",
+              "work": "\\(x=3\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(3(x + 2) + 4 = 19\\)",
+          "options": [
+            "\\(-3\\)",
+            "\\(3\\)",
+            "\\(5\\)",
+            "\\(\\frac{13}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand \\(3(x+2)\\) first, simplify the constants, and isolate \\(x\\).",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Expand the brackets on the left-hand side.",
+              "work": "\\(3(x+2)+4=19 \\Rightarrow 3x+6+4=19\\)"
+            },
+            {
+              "explain": "Simplify the constants, then subtract \\(10\\) from both sides.",
+              "work": "\\(3x+10=19 \\Rightarrow 3x=9\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(3\\).",
+              "work": "\\(x=3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(-2(3x + 2) + 6 = 20\\)",
+          "options": [
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand \\(-2(3x+2)\\) (paying attention to the negative signs), simplify the constant terms, and then divide by \\(-6\\).",
+          "solution": "To solve the equation:\n1. Expand the brackets:\n   \\(-6x - 4 + 6 = 20\\)\n2. Combine constant terms:\n   \\(-6x + 2 = 20\\)\n3. Subtract \\(2\\) from both sides:\n   \\(-6x = 18\\)\n4. Divide by \\(-6\\):\n   \\(x = \\frac{18}{-6} = -3\\)\n\nTherefore, \\(x = -3\\).",
+          "steps": [
+            {
+              "explain": "Expand the brackets, being careful with the negative sign.",
+              "work": "\\(-2(3x+2)+6=20 \\Rightarrow -6x-4+6=20\\)"
+            },
+            {
+              "explain": "Simplify the constants, then subtract \\(2\\) from both sides.",
+              "work": "\\(-6x+2=20 \\Rightarrow -6x=18\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(-6\\).",
+              "work": "\\(x=-3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(x + 5 = 1\\)",
+          "options": [
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(-5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "Isolate \\(x\\) by subtracting \\(5\\) from both sides.",
+          "solution": "To solve the equation:\n1. Subtract \\(5\\) from both sides:\n   \\(x = 1 - 5\\)\n   \\(x = -4\\)\n\nTherefore, \\(x = -4\\).",
+          "steps": [
+            {
+              "explain": "Subtract \\(5\\) from both sides to isolate \\(x\\).",
+              "work": "\\(x+5=1 \\Rightarrow x=1-5\\)"
+            },
+            {
+              "explain": "Simplify the right-hand side.",
+              "work": "\\(x=-4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(3x + 5 = -4\\)",
+          "options": [
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract \\(5\\) first to get the \\(3x\\) term by itself, then divide by \\(3\\).",
+          "solution": "To solve the equation:\n1. Subtract \\(5\\) from both sides:\n   \\(3x = -4 - 5\\)\n   \\(3x = -9\\)\n2. Divide both sides by \\(3\\):\n   \\(x = -3\\)\n\nTherefore, \\(x = -3\\).",
+          "steps": [
+            {
+              "explain": "Subtract \\(5\\) from both sides to isolate the \\(3x\\) term.",
+              "work": "\\(3x+5=-4 \\Rightarrow 3x=-9\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(3\\).",
+              "work": "\\(x=-3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(3 - x = 7\\)",
+          "options": [
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(-5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract \\(3\\) from both sides, then negate the result to solve for \\(x\\) instead of \\(-x\\).",
+          "solution": "To solve the equation:\n1. Subtract \\(3\\) from both sides:\n   \\(-x = 7 - 3\\)\n   \\(-x = 4\\)\n2. Multiply or divide by \\(-1\\):\n   \\(x = -4\\)\n\nTherefore, \\(x = -4\\).",
+          "steps": [
+            {
+              "explain": "Subtract \\(3\\) from both sides.",
+              "work": "\\(3-x=7 \\Rightarrow -x=4\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(-1\\) to solve for \\(x\\) instead of \\(-x\\).",
+              "work": "\\(x=-4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(\\frac{x}{4} + 3 = 9\\)",
+          "options": [
+            "\\(26\\)",
+            "\\(23\\)",
+            "\\(24\\)",
+            "\\(25\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract \\(3\\) first, then multiply both sides by \\(4\\) to solve for \\(x\\).",
+          "solution": "To solve the equation:\n1. Subtract \\(3\\) from both sides:\n   \\(\\frac{x}{4} = 6\\)\n2. Multiply both sides by \\(4\\):\n   \\(x = 6 \\times 4\\)\n   \\(x = 24\\)\n\nTherefore, \\(x = 24\\).",
+          "steps": [
+            {
+              "explain": "Subtract \\(3\\) from both sides to isolate the fraction.",
+              "work": "\\(\\dfrac{x}{4}+3=9 \\Rightarrow \\dfrac{x}{4}=6\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(4\\) to solve for \\(x\\).",
+              "work": "\\(x=24\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(3x - 4 = -5x + 12\\)",
+          "options": [
+            "\\(-4\\)",
+            "\\(-2\\)",
+            "\\(2\\)",
+            "\\(4\\)"
+          ],
+          "answer": 2,
+          "hint": "Get all \\(x\\) terms on one side by adding \\(5x\\) to both sides, then add \\(4\\) and divide by \\(8\\).",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Add \\(5x\\) to both sides to gather the \\(x\\) terms on the left.",
+              "work": "\\(3x-4=-5x+12 \\Rightarrow 8x-4=12\\)"
+            },
+            {
+              "explain": "Add \\(4\\) to both sides.",
+              "work": "\\(8x=16\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(8\\).",
+              "work": "\\(x=2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(3(x - 3) = 12x\\)",
+          "options": [
+            "\\(-1\\)",
+            "\\(-2\\)",
+            "\\(0\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand the left side, then subtract \\(3x\\) from both sides and isolate \\(x\\).",
+          "solution": "To solve the equation:\n1. Expand the brackets:\n   \\(3x - 9 = 12x\\)\n2. Subtract \\(3x\\) from both sides to group the \\(x\\) terms on the right side:\n   \\(-9 = 9x\\)\n3. Divide both sides by \\(9\\):\n   \\(x = -1\\)\n\nTherefore, \\(x = -1\\).",
+          "steps": [
+            {
+              "explain": "Expand the brackets on the left-hand side.",
+              "work": "\\(3(x-3)=12x \\Rightarrow 3x-9=12x\\)"
+            },
+            {
+              "explain": "Subtract \\(3x\\) from both sides to gather the \\(x\\) terms.",
+              "work": "\\(-9=9x\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(9\\).",
+              "work": "\\(x=-1\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(\\frac{2x}{7} + 4 = \\frac{10}{7}\\)",
+          "options": [
+            "\\(-10\\)",
+            "\\(-8\\)",
+            "\\(-9\\)",
+            "\\(11\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply every term by \\(7\\) first to get rid of the denominators.",
+          "solution": "To solve the equation:\n1. Multiply all terms by \\(7\\) to clear the fractions:\n   \\(2x + 28 = 10\\)\n2. Subtract \\(28\\) from both sides:\n   \\(2x = -18\\)\n3. Divide by \\(2\\):\n   \\(x = -9\\)\n\nTherefore, \\(x = -9\\).",
+          "steps": [
+            {
+              "explain": "Multiply every term by \\(7\\) to clear the denominators.",
+              "work": "\\(\\dfrac{2x}{7}+4=\\dfrac{10}{7} \\Rightarrow 2x+28=10\\)"
+            },
+            {
+              "explain": "Subtract \\(28\\) from both sides.",
+              "work": "\\(2x=-18\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(2\\).",
+              "work": "\\(x=-9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(\\frac{4x}{9} - 3 = \\frac{1}{9}\\)",
+          "options": [
+            "\\(9\\)",
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the entire equation by \\(9\\) to eliminate the fractions, then solve the integer equation.",
+          "solution": "To solve the equation:\n1. Multiply all terms by \\(9\\) to clear the fractions:\n   \\(4x - 27 = 1\\)\n2. Add \\(27\\) to both sides:\n   \\(4x = 28\\)\n3. Divide by \\(4\\):\n   \\(x = 7\\)\n\nTherefore, \\(x = 7\\).",
+          "steps": [
+            {
+              "explain": "Multiply every term by \\(9\\) to clear the denominators.",
+              "work": "\\(\\dfrac{4x}{9}-3=\\dfrac{1}{9} \\Rightarrow 4x-27=1\\)"
+            },
+            {
+              "explain": "Add \\(27\\) to both sides.",
+              "work": "\\(4x=28\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(4\\).",
+              "work": "\\(x=7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(3x - 5 = 1 - 3x\\)",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(-\\frac{2}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Add \\(3x\\) to both sides to gather all variables on the left, then solve.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Add \\(3x\\) to both sides of the equation to group all terms containing \\(x\\) on the left side.",
+              "work": "\\(\\begin{aligned} 3x + 3x - 5 &= 1 \\\\ 6x - 5 &= 1 \\end{aligned}\\)"
+            },
+            {
+              "explain": "Add \\(5\\) to both sides of the equation to move the constant to the right side.",
+              "work": "\\(\\begin{aligned} 6x &= 1 + 5 \\\\ 6x &= 6 \\end{aligned}\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(6\\) to solve for \\(x\\).",
+              "work": "\\(\\begin{aligned} x &= \\frac{6}{6} \\\\ x &= 1 \\end{aligned}\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(1\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3m",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(3(x - 2) = 4 - 2x\\)",
+          "options": [
+            "\\(-2\\)",
+            "\\(0\\)",
+            "\\(2\\)",
+            "\\(10\\)"
+          ],
+          "answer": 2,
+          "hint": "First expand the brackets, then collect variables on the left and constants on the right.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Expand the brackets on the left-hand side.",
+              "work": "\\(3(x-2)=4-2x \\Rightarrow 3x-6=4-2x\\)"
+            },
+            {
+              "explain": "Add \\(2x\\) to both sides to gather the \\(x\\) terms on the left.",
+              "work": "\\(5x-6=4\\)"
+            },
+            {
+              "explain": "Add \\(6\\) to both sides, then divide by \\(5\\).",
+              "work": "\\(5x=10 \\Rightarrow x=2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q3n",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(3x - 10 = 2(1 + 3x)\\)",
+          "options": [
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(-5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand the brackets, move all \\(x\\) terms to one side, and solve for \\(x\\).",
+          "solution": "To solve the equation:\n1. Expand the brackets on the right side:\n   \\(3x - 10 = 2 + 6x\\)\n2. Subtract \\(3x\\) from both sides:\n   \\(-10 = 2 + 3x\\)\n3. Subtract \\(2\\) from both sides:\n   \\(-12 = 3x\\)\n4. Divide by \\(3\\):\n   \\(x = -4\\)\n\nTherefore, \\(x = -4\\).",
+          "steps": [
+            {
+              "explain": "Expand the brackets on the right-hand side.",
+              "work": "\\(3x-10=2(1+3x) \\Rightarrow 3x-10=2+6x\\)"
+            },
+            {
+              "explain": "Subtract \\(6x\\) from both sides to gather the \\(x\\) terms on the left.",
+              "work": "\\(-3x-10=2\\)"
+            },
+            {
+              "explain": "Add \\(10\\) to both sides, then divide by \\(-3\\).",
+              "work": "\\(-3x=12 \\Rightarrow x=-4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(\\frac{4x}{9} + \\frac{2x}{9} = 4\\)",
+          "options": [
+            "\\(8\\)",
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(7\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine the fractions first because they have the same denominator.",
+          "solution": "To solve the equation:\n1. Since the fractions have the same denominator, add them:\n   \\(\\frac{6x}{9} = 4\\)\n2. Multiply both sides by \\(9\\):\n   \\(6x = 36\\)\n3. Divide by \\(6\\):\n   \\(x = 6\\)\n\nTherefore, \\(x = 6\\).",
+          "steps": [
+            {
+              "explain": "The two fractions on the left have the same denominator, so combine them first.",
+              "work": "\\(\\dfrac{4x}{9}+\\dfrac{2x}{9}=4 \\Rightarrow \\dfrac{6x}{9}=4\\)"
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{6x}{9}\\) to \\(\\dfrac{2x}{3}\\), then multiply both sides by \\(3\\).",
+              "work": "\\(\\dfrac{2x}{3}=4 \\Rightarrow 2x=12\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(2\\).",
+              "work": "\\(x=6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(y\\):\n\n\\(\\frac{5y}{8} + \\frac{y}{8} = 3\\)",
+          "options": [
+            "\\(6\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine the fractions on the left side, then multiply by \\(8\\) and divide by \\(6\\).",
+          "solution": "To solve the equation:\n1. Add the fractions:\n   \\(\\frac{6y}{8} = 3\\)\n2. Multiply both sides by \\(8\\):\n   \\(6y = 24\\)\n3. Divide by \\(6\\):\n   \\(y = 4\\)\n\nTherefore, \\(y = 4\\).",
+          "steps": [
+            {
+              "explain": "The two fractions on the left have the same denominator, so combine them first.",
+              "work": "\\(\\dfrac{5y}{8}+\\dfrac{y}{8}=3 \\Rightarrow \\dfrac{6y}{8}=3\\)"
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{6y}{8}\\) to \\(\\dfrac{3y}{4}\\), then multiply both sides by \\(4\\).",
+              "work": "\\(\\dfrac{3y}{4}=3 \\Rightarrow 3y=12\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(3\\).",
+              "work": "\\(y=4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(\\frac{x}{7} + \\frac{2x}{7} = 3\\)",
+          "options": [
+            "\\(9\\)",
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(8\\)"
+          ],
+          "answer": 2,
+          "hint": "Add the two fractions on the left, then multiply by \\(7\\).",
+          "solution": "To solve the equation:\n1. Combine the fractions:\n   \\(\\frac{3x}{7} = 3\\)\n2. Multiply both sides by \\(7\\):\n   \\(3x = 21\\)\n3. Divide by \\(3\\):\n   \\(x = 7\\)\n\nTherefore, \\(x = 7\\).",
+          "steps": [
+            {
+              "explain": "The two fractions on the left have the same denominator, so combine them first.",
+              "work": "\\(\\dfrac{x}{7}+\\dfrac{2x}{7}=3 \\Rightarrow \\dfrac{3x}{7}=3\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(7\\).",
+              "work": "\\(3x=21\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(3\\).",
+              "work": "\\(x=7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(x\\):\n\n\\(\\frac{3x}{8} + \\frac{x}{3} = 17\\)",
+          "options": [
+            "\\(26\\)",
+            "\\(23\\)",
+            "\\(24\\)",
+            "\\(25\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the LCD of \\(8\\) and \\(3\\) (\\(24\\)), combine the fractions, and then solve for \\(x\\).",
+          "solution": "To solve the equation:\n1. The LCD for \\(8\\) and \\(3\\) is \\(24\\). Convert the fractions:\n   \\(\\frac{9x}{24} + \\frac{8x}{24} = 17\\)\n   \\(\\frac{17x}{24} = 17\\)\n2. Multiply both sides by \\(24\\):\n   \\(17x = 17 \\times 24\\)\n3. Divide both sides by \\(17\\):\n   \\(x = 24\\)\n\nTherefore, \\(x = 24\\).",
+          "steps": [
+            {
+              "explain": "Find the LCD of \\(8\\) and \\(3\\), which is \\(24\\), and convert both fractions.",
+              "work": "\\(\\dfrac{3x}{8}=\\dfrac{9x}{24}, \\quad \\dfrac{x}{3}=\\dfrac{8x}{24}\\)"
+            },
+            {
+              "explain": "Combine the fractions and solve.",
+              "work": "\\(\\dfrac{9x}{24}+\\dfrac{8x}{24}=17 \\Rightarrow \\dfrac{17x}{24}=17\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(24\\), then divide by \\(17\\).",
+              "work": "\\(17x=408 \\Rightarrow x=24\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q4e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(m\\):\n\n\\(\\frac{m}{4} + \\frac{3m}{5} = 17\\)",
+          "options": [
+            "\\(22\\)",
+            "\\(19\\)",
+            "\\(20\\)",
+            "\\(21\\)"
+          ],
+          "answer": 2,
+          "hint": "Find a common denominator of \\(20\\), combine the terms, and isolate \\(m\\).",
+          "solution": "To solve the equation:\n1. The LCD for \\(4\\) and \\(5\\) is \\(20\\). Convert the fractions:\n   \\(\\frac{5m}{20} + \\frac{12m}{20} = 17\\)\n   \\(\\frac{17m}{20} = 17\\)\n2. Multiply both sides by \\(20\\):\n   \\(17m = 17 \\times 20\\)\n3. Divide both sides by \\(17\\):\n   \\(m = 20\\)\n\nTherefore, \\(m = 20\\).",
+          "steps": [
+            {
+              "explain": "Find the LCD of \\(4\\) and \\(5\\), which is \\(20\\), and convert both fractions.",
+              "work": "\\(\\dfrac{m}{4}=\\dfrac{5m}{20}, \\quad \\dfrac{3m}{5}=\\dfrac{12m}{20}\\)"
+            },
+            {
+              "explain": "Combine the fractions and solve.",
+              "work": "\\(\\dfrac{5m}{20}+\\dfrac{12m}{20}=17 \\Rightarrow \\dfrac{17m}{20}=17\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(20\\), then divide by \\(17\\).",
+              "work": "\\(17m=340 \\Rightarrow m=20\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q4f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation for \\(m\\):\n\n\\(\\frac{3m}{4} - \\frac{2m}{3} = 2\\)",
+          "options": [
+            "\\(26\\)",
+            "\\(23\\)",
+            "\\(24\\)",
+            "\\(25\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the LCD of \\(4\\) and \\(3\\) (\\(12\\)), subtract the fractions, and multiply by \\(12\\).",
+          "solution": "To solve the equation:\n1. The LCD of \\(4\\) and \\(3\\) is \\(12\\). Convert the fractions:\n   \\(\\frac{9m}{12} - \\frac{8m}{12} = 2\\)\n   \\(\\frac{m}{12} = 2\\)\n2. Multiply both sides by \\(12\\):\n   \\(m = 24\\)\n\nTherefore, \\(m = 24\\).",
+          "steps": [
+            {
+              "explain": "Find the LCD of \\(4\\) and \\(3\\), which is \\(12\\), and convert both fractions.",
+              "work": "\\(\\dfrac{3m}{4}=\\dfrac{9m}{12}, \\quad \\dfrac{2m}{3}=\\dfrac{8m}{12}\\)"
+            },
+            {
+              "explain": "Subtract the fractions and solve.",
+              "work": "\\(\\dfrac{9m}{12}-\\dfrac{8m}{12}=2 \\Rightarrow \\dfrac{m}{12}=2\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(12\\).",
+              "work": "\\(m=24\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given that \\(y = 4x - 7\\), find the value of \\(y\\) when \\(x = 6\\).",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -6,
+                6,
+                6,
+                -6
+              ],
+              "width": 360,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (4)*x + (-7); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = 4x-7'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 280
+            }
+          },
+          "options": [
+            "\\(19\\)",
+            "\\(16\\)",
+            "\\(17\\)",
+            "\\(18\\)"
+          ],
+          "answer": 2,
+          "hint": "Replace \\(x\\) with \\(6\\) in the equation and evaluate.",
+          "solution": "To find the value of \\(y\\):\n1. Substitute \\(x = 6\\) into the given formula:\n   \\(y = 4(6) - 7\\)\n2. Calculate the value:\n   \\(y = 24 - 7\\)\n   \\(y = 17\\)\n\nTherefore, the value of \\(y\\) is \\(17\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(x=6\\) into the equation \\(y=4x-7\\).",
+              "work": "\\(y=4(6)-7\\)"
+            },
+            {
+              "explain": "Evaluate the multiplication first, then subtract.",
+              "work": "\\(y=24-7=17\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch11e"
+          ]
+        },
+        {
+          "id": "y8-11e-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A number is multiplied by \\(-3\\) and \\(4\\) is subtracted. The result is \\(-13\\). Find the number.",
+          "options": [
+            "\\(-3\\)",
+            "\\(3\\)",
+            "\\(\\frac{17}{3}\\)",
+            "\\(-\\frac{17}{3}\\)"
+          ],
+          "answer": 1,
+          "hint": "Let the number be \\(x\\). Write the equation \\(-3x - 4 = -13\\) and solve it.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Let the number be \\(x\\). Translate the description into an equation: multiplied by \\(-3\\), then \\(4\\) subtracted, giving \\(-13\\).",
+              "work": "\\(-3x-4=-13\\)"
+            },
+            {
+              "explain": "Add \\(4\\) to both sides.",
+              "work": "\\(-3x=-9\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(-3\\).",
+              "work": "\\(x=3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Eight is added to a number, and the result is multiplied by \\(-4\\). The result is \\(-20\\). Find the number.",
+          "options": [
+            "\\(-2\\)",
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "hint": "Write the equation \\(-4(x + 8) = -20\\) and divide by \\(-4\\) first.",
+          "solution": "Let the number be \\(x\\).\n1. Translate the statement into an equation:\n   \\(-4(x + 8) = -20\\)\n2. Solve the equation:\n   - Divide both sides by \\(-4\\):\n     \\(x + 8 = 5\\)\n   - Subtract \\(8\\) from both sides:\n     \\(x = -3\\)\n\nTherefore, the number is \\(-3\\).",
+          "steps": [
+            {
+              "explain": "Let the number be \\(x\\). \"Eight is added\" gives \\(x+8\\); this result is then multiplied by \\(-4\\) to give \\(-20\\).",
+              "work": "\\(-4(x+8)=-20\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(-4\\) to remove the brackets.",
+              "work": "\\(x+8=5\\)"
+            },
+            {
+              "explain": "Subtract \\(8\\) from both sides.",
+              "work": "\\(x=-3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Five is subtracted from a number, and the result is multiplied by \\(3\\). The result is \\(18\\). Find the number.",
+          "options": [
+            "\\(13\\)",
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(12\\)"
+          ],
+          "answer": 2,
+          "hint": "Form the equation \\(3(x - 5) = 18\\), divide by \\(3\\), and solve for \\(x\\).",
+          "solution": "Let the number be \\(x\\).\n1. Translate the description into an equation:\n   \\(3(x - 5) = 18\\)\n2. Solve the equation:\n   - Divide both sides by \\(3\\):\n     \\(x - 5 = 6\\)\n   - Add \\(5\\) to both sides:\n     \\(x = 11\\)\n\nTherefore, the number is \\(11\\).",
+          "steps": [
+            {
+              "explain": "Let the number be \\(x\\). \"Five is subtracted\" gives \\(x-5\\); this result is then multiplied by \\(3\\) to give \\(18\\).",
+              "work": "\\(3(x-5)=18\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(3\\) to remove the brackets.",
+              "work": "\\(x-5=6\\)"
+            },
+            {
+              "explain": "Add \\(5\\) to both sides.",
+              "work": "\\(x=11\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "When a number is multiplied by \\(4\\) and divided by \\(9\\), the result is \\(12.4\\). Find the number.",
+          "options": [
+            "\\(-27.9\\)",
+            "\\(26.9\\)",
+            "\\(27.9\\)",
+            "\\(28.9\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the equation \\(\\frac{4x}{9} = 12.4\\), multiply by \\(9\\), then divide by \\(4\\).",
+          "solution": "Let the number be \\(x\\).\n1. Set up the equation:\n   \\(\\frac{4x}{9} = 12.4\\)\n2. Solve the equation:\n   - Multiply both sides by \\(9\\):\n     \\(4x = 111.6\\)\n   - Divide both sides by \\(4\\):\n     \\(x = 27.9\\)\n\nTherefore, the number is \\(27.9\\).",
+          "steps": [
+            {
+              "explain": "Let the number be \\(x\\). \"Multiplied by \\(4\\) and divided by \\(9\\)\" gives \\(\\dfrac{4x}{9}\\), which equals \\(12.4\\).",
+              "work": "\\(\\dfrac{4x}{9}=12.4\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(9\\).",
+              "work": "\\(4x=111.6\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(4\\).",
+              "work": "\\(x=27.9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-11e-q6e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If you add \\(9\\) to a number, you get the same result as when you subtract half the number from \\(3\\). What is the number?",
+          "options": [
+            "\\(-3\\)",
+            "\\(-4\\)",
+            "\\(-5\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "Write the equation \\(x + 9 = 3 - \\frac{x}{2}\\) and collect all \\(x\\) terms together.",
+          "solution": "Let the number be \\(x\\).\n1. Translate the statement into an equation:\n   \\(x + 9 = 3 - \\frac{x}{2}\\)\n2. Solve the equation:\n   - Add \\(\\frac{x}{2}\\) to both sides:\n     \\(1.5x + 9 = 3\\)\n   - Subtract \\(9\\) from both sides:\n     \\(1.5x = -6\\)\n   - Divide by \\(1.5\\):\n     \\(x = -4\\)\n\nTherefore, the number is \\(-4\\).",
+          "steps": [
+            {
+              "explain": "Let the number be \\(x\\). \"Add \\(9\\) to a number\" gives \\(x+9\\); \"subtract half the number from \\(3\\)\" gives \\(3-\\dfrac{x}{2}\\). These are equal.",
+              "work": "\\(x+9=3-\\dfrac{x}{2}\\)"
+            },
+            {
+              "explain": "Multiply every term by \\(2\\) to clear the fraction.",
+              "work": "\\(2x+18=6-x\\)"
+            },
+            {
+              "explain": "Add \\(x\\) to both sides, then subtract \\(18\\) and divide by \\(3\\).",
+              "work": "\\(3x+18=6 \\Rightarrow 3x=-12 \\Rightarrow x=-4\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

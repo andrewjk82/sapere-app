@@ -1,0 +1,970 @@
+{
+  "chapterId": "exam:year12ach3e",
+  "title": "Exam Practice",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "exam:year12ach3e",
+      "code": "",
+      "title": "Systematic curve sketching with the derivative",
+      "questions": [
+        {
+          "id": "y12a-3e-q2",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "The diagram shows a curve \\( y = f(x) \\) with turning points at \\( (-2, -4) \\) and \\( (3, 6) \\), and a point of inflection at \\( (0.5, 1) \\). Determine the properties of the curve from this graph.",
+          "figure": {
+            "jsxGraph": {
+              "width": 350,
+              "height": 250,
+              "boundingbox": [
+                -5,
+                8,
+                6,
+                -7
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [5.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-6.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.3, -0.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 7.0, 'y'], {fontSize: 14});\nvar f = function(x) { return -0.16*x*x*x + 0.24*x*x + 2.88*x - 0.48; };\nboard.create('functiongraph', [f, -4.5, 5.5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, -4], {name: '(-2,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [3, 6], {name: '(3,6)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0.5, 1], {name: '(0.5,1)', size: 2, color: 'black', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+            }
+          },
+          "parts": [
+            {
+              "id": "y12a-3e-q2a",
+              "type": "mc",
+              "stem": "a) Find the values of \\( x \\) for which \\( f'(x) = 0 \\). (If there are multiple values, list them in ascending order, separated by a comma.)",
+              "options": [
+                "\\( x = -2, 3 \\)",
+                "\\( x = -4, 6 \\)",
+                "\\( x = 0.5 \\)",
+                "\\( x = -2, 0.5, 3 \\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Recall the definition of a turning point.",
+                  "work": "\\text{At a turning point, the gradient is zero, so } f'(x) = 0."
+                },
+                {
+                  "explain": "Identify the x-coordinates of the turning points from the given information.",
+                  "work": "\\text{The turning points are at } (-2, -4) \\text{ and } (3, 6). \\text{ Thus, } f'(x) = 0 \\text{ at } x = -2 \\text{ and } x = 3."
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q2b",
+              "type": "mc",
+              "stem": "b) Find the value of \\( x \\) for which \\( f''(x) = 0 \\).",
+              "options": [
+                "\\( x = -2 \\)",
+                "\\( x = 1 \\)",
+                "\\( x = 3 \\)",
+                "\\( x = 0.5 \\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Recall the definition of a point of inflection.",
+                  "work": "\\text{At a possible point of inflection, the second derivative } f''(x) = 0."
+                },
+                {
+                  "explain": "Identify the x-coordinate of the point of inflection from the given information.",
+                  "work": "\\text{The point of inflection is at } (0.5, 1). \\text{ Thus, } f''(x) = 0 \\text{ at } x = 0.5."
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q2c",
+              "type": "mc",
+              "stem": "c) State the interval of \\( x \\) for which \\( f(x) \\) is increasing. (Format: 'a < x < b')",
+              "options": [
+                "\\( x > 3 \\)",
+                "\\( x < -2 \\text{ or } x > 3 \\)",
+                "\\( x < -2 \\)",
+                "\\( -2 < x < 3 \\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Relate increasing behavior to the turning points.",
+                  "work": "\\text{The function is increasing when } f'(x) > 0. \\text{ The curve goes from a minimum at } (-2, -4) \\text{ up to a maximum at } (3, 6)."
+                },
+                {
+                  "explain": "Determine the interval.",
+                  "work": "\\text{Between } x = -2 \\text{ and } x = 3 \\text{, the graph is rising. Therefore, it is increasing for } -2 < x < 3."
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q2d",
+              "type": "mc",
+              "stem": "d) State the interval of \\( x \\) for which the curve is concave up, that is \\( f''(x) > 0 \\).",
+              "options": [
+                "\\( -2 < x < 3 \\)",
+                "\\( x > 0.5 \\)",
+                "\\( x < -2 \\text{ or } x > 3 \\)",
+                "\\( x < 0.5 \\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Relate concavity to the second derivative and inflection point.",
+                  "work": "\\text{Concave up means } f''(x) > 0. \\text{ Concavity changes at the point of inflection } x = 0.5."
+                },
+                {
+                  "explain": "Determine concavity on each side of the inflection point.",
+                  "work": "\\text{The turning point at } x = -2 \\text{ is a local minimum, which sits in a concave up region (} f''(-2) > 0 \\text{).} \\\\ \\text{The turning point at } x = 3 \\text{ is a local maximum, which sits in a concave down region (} f''(3) < 0 \\text{).}"
+                },
+                {
+                  "explain": "State the interval.",
+                  "work": "\\text{The curve is concave up before the inflection point, so for } x < 0.5."
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-3e-q3",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "For the parabola \\( y = x^2 - 4x - 12 \\), complete the following analysis steps.",
+          "parts": [
+            {
+              "id": "y12a-3e-q3a",
+              "type": "mc",
+              "stem": "a) Find the \\( x \\)-intercepts of the parabola. (If there are multiple values, list them in ascending order, separated by a comma.)",
+              "options": [
+                "\\( x = -3, 4 \\)",
+                "\\( x = -6, 2 \\)",
+                "\\( x = -2, 6 \\)",
+                "\\( x = 2, 6 \\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Set \\( y = 0 \\) to find the x-intercepts.",
+                  "work": "\\begin{aligned} x^2 - 4x - 12 &= 0 \\end{aligned}"
+                },
+                {
+                  "explain": "Factorize the quadratic.",
+                  "work": "\\begin{aligned} (x - 6)(x + 2) &= 0 \\end{aligned}"
+                },
+                {
+                  "explain": "Solve for \\( x \\).",
+                  "work": "\\begin{aligned} x = 6 \\text{ or } x = -2 \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q3b",
+              "type": "mc",
+              "stem": "b) By putting \\( x = 0 \\, \\), find the \\( y \\)-intercept.",
+              "options": [
+                "\\( 0 \\)",
+                "\\( -4 \\)",
+                "\\( 12 \\)",
+                "\\( -12 \\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Substitute \\( x = 0 \\) into the equation.",
+                  "work": "\\begin{aligned} y(0) &= 0^2 - 4(0) - 12 \\\\ &= -12 \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q3c",
+              "type": "mc",
+              "stem": "c) Solve \\( \\frac{dy}{dx} = 0 \\) and hence find the coordinates of the stationary point.",
+              "options": [
+                "\\( (2, -8) \\)",
+                "\\( (2, -16) \\)",
+                "\\( (-2, 0) \\)",
+                "\\( (4, -12) \\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Find the derivative \\( \\frac{dy}{dx} \\).",
+                  "work": "\\begin{aligned} \\frac{dy}{dx} &= 2x - 4 \\end{aligned}"
+                },
+                {
+                  "explain": "Set \\( \\frac{dy}{dx} = 0 \\) and solve for \\( x \\).",
+                  "work": "\\begin{aligned} 2x - 4 &= 0 \\\\ 2x &= 4 \\implies x = 2 \\end{aligned}"
+                },
+                {
+                  "explain": "Find the y-coordinate.",
+                  "work": "\\begin{aligned} y(2) &= 2^2 - 4(2) - 12 \\\\ &= 4 - 8 - 12 = -16 \\end{aligned} \\\\ \\implies (2, -16)"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q3d",
+              "type": "mc",
+              "stem": "d) By examining the sign of \\( \\frac{d^2y}{dx^2} \\), state whether the stationary point is a maximum or a minimum.",
+              "options": [
+                "point of inflection",
+                "minimum",
+                "maximum",
+                "none of the above"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Find the second derivative.",
+                  "work": "\\begin{aligned} \\frac{d^2y}{dx^2} &= \\frac{d}{dx}(2x - 4) = 2 \\end{aligned}"
+                },
+                {
+                  "explain": "Evaluate the sign of the second derivative.",
+                  "work": "\\text{Since } \\frac{d^2y}{dx^2} = 2 > 0 \\text{ for all } x \\text{, the curve is concave up everywhere.}"
+                },
+                {
+                  "explain": "Conclude the nature.",
+                  "work": "\\text{Therefore, the stationary point is a minimum.}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q3e",
+              "type": "review",
+              "stem": "e) Sketch the graph of the function, indicating all important features.",
+              "answer": "Draw a concave up parabola with vertex at (2,-16), x-intercepts at -2 and 6, and y-intercept at -12.",
+              "steps": [
+                {
+                  "explain": "Plot the y-intercept.",
+                  "work": "\\text{Mark the point } (0, -12) \\text{ on the y-axis.}"
+                },
+                {
+                  "explain": "Plot the x-intercepts.",
+                  "work": "\\text{Mark the points } (-2, 0) \\text{ and } (6, 0) \\text{ on the x-axis.}"
+                },
+                {
+                  "explain": "Plot the turning point.",
+                  "work": "\\text{Mark the minimum vertex at } (2, -16)."
+                },
+                {
+                  "explain": "Draw the curve.",
+                  "work": "\\text{Draw a smooth, concave up parabolic curve passing through all these points.}",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 350,
+                      "height": 250,
+                      "boundingbox": [
+                        -5,
+                        6,
+                        9,
+                        -20
+                      ],
+                      "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [9, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-18], [0,4]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.5, -1, 'x'], {fontSize: 14});\nboard.create('text', [-1, 3, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x - 4*x - 12; };\nboard.create('functiongraph', [f, -5, 9], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, -16], {name: '(2,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [-2, 0], {name: '-2', size: 2, color: 'black', label: {autoPosition: false, offset: [-10, 10]}});\nboard.create('point', [6, 0], {name: '6', size: 2, color: 'black', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, -12], {name: '-12', size: 2, color: 'black', label: {autoPosition: false, offset: [-25, 0]}});\nboard.unsuspendUpdate();"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-3e-q4",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "Sketch the following quadratic graphs, indicating all intercepts and turning points.",
+          "parts": [
+            {
+              "id": "y12a-3e-q4a",
+              "type": "review",
+              "stem": "a) Sketch the graph of \\( y = x^2 - 6x \\).",
+              "answer": "A concave up parabola with vertex at (3,-9), passing through (0,0) and (6,0).",
+              "steps": [
+                {
+                  "explain": "Find the intercepts.",
+                  "work": "\\text{y-intercept: } y(0) = 0 \\\\ \\text{x-intercepts: } x^2 - 6x = 0 \\implies x(x - 6) = 0 \\implies x = 0, 6"
+                },
+                {
+                  "explain": "Find the turning point.",
+                  "work": "\\text{y'} = 2x - 6 = 0 \\implies x = 3 \\\\ y(3) = 9 - 18 = -9 \\implies \\text{Min at } (3, -9)"
+                },
+                {
+                  "explain": "Sketch the curve.",
+                  "work": "\\text{Plot the vertex } (3, -9) \\text{ and intercepts } (0,0), (6,0) \\text{. Draw a concave up parabola.}",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 350,
+                      "height": 250,
+                      "boundingbox": [
+                        -3,
+                        5,
+                        9,
+                        -11
+                      ],
+                      "script": "board.suspendUpdate();\nboard.create('arrow', [[-3, 0], [9, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-10], [0,4]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.5, -1, 'x'], {fontSize: 14});\nboard.create('text', [-1, 3.5, 'y'], {fontSize: 14});\nvar f = function(x) { return x*x - 6*x; };\nboard.create('functiongraph', [f, -3, 9], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, -9], {name: '(3,-9)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [0, 0], {name: '0', size: 2, color: 'black', label: {autoPosition: false, offset: [-10, 10]}});\nboard.create('point', [6, 0], {name: '6', size: 2, color: 'black', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q4b",
+              "type": "review",
+              "stem": "b) Sketch the graph of \\( y = 8 - 2x - x^2 \\).",
+              "answer": "A concave down parabola with vertex at (-1,9), passing through (-4,0), (2,0), and (0,8).",
+              "steps": [
+                {
+                  "explain": "Find the intercepts.",
+                  "work": "\\text{y-intercept: } y(0) = 8 \\\\ \\text{x-intercepts: } 8 - 2x - x^2 = 0 \\implies -(x + 4)(x - 2) = 0 \\implies x = -4, 2"
+                },
+                {
+                  "explain": "Find the turning point.",
+                  "work": "\\text{y'} = -2 - 2x = 0 \\implies x = -1 \\\\ y(-1) = 8 - 2(-1) - (-1)^2 = 8 + 2 - 1 = 9 \\implies \\text{Max at } (-1, 9)"
+                },
+                {
+                  "explain": "Sketch the curve.",
+                  "work": "\\text{Plot the vertex } (-1, 9) \\text{ and intercepts } (0,8), (-4,0), (2,0) \\text{. Draw a concave down parabola.}",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 350,
+                      "height": 250,
+                      "boundingbox": [
+                        -6,
+                        12,
+                        4,
+                        -4
+                      ],
+                      "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3], [0,11]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.2, -1, 'x'], {fontSize: 14});\nboard.create('text', [-1, 10.5, 'y'], {fontSize: 14});\nvar f = function(x) { return 8 - 2*x - x*x; };\nboard.create('functiongraph', [f, -6, 4], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-1, 9], {name: '(-1,9)', size: 3, color: 'red', label: {autoPosition: false, offset: [-15, 15]}});\nboard.create('point', [-4, 0], {name: '-4', size: 2, color: 'black', label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, 0], {name: '2', size: 2, color: 'black', label: {autoPosition: false, offset: [10, -15]}});\nboard.create('point', [0, 8], {name: '8', size: 2, color: 'black', label: {autoPosition: false, offset: [10, 10]}});\nboard.unsuspendUpdate();"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-3e-q5",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "For the function \\( y = 12x - x^3 \\), perform a complete calculus analysis to sketch its graph.",
+          "parts": [
+            {
+              "id": "y12a-3e-q5a",
+              "type": "mc",
+              "stem": "a) Show that \\( y = 12x - x^3 \\) is an odd function. What symmetry does its graph display?",
+              "options": [
+                "It is odd because \\( f(-x) = f(x) \\). The graph displays line symmetry about the y-axis.",
+                "It is odd because \\( f(-x) = -f(x) \\). The graph displays line symmetry about the x-axis.",
+                "It is odd because \\( f(-x) = f(x) \\). The graph displays rotational point symmetry about the origin.",
+                "It is odd because \\( f(-x) = -f(x) \\). The graph displays rotational point symmetry of 180 degrees about the origin."
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Substitute \\( -x \\) into the function to check for parity.",
+                  "work": "\\begin{aligned} f(-x) &= 12(-x) - (-x)^3 \\\\ &= -12x - (-x^3) \\\\ &= -12x + x^3 \\end{aligned}"
+                },
+                {
+                  "explain": "Factor out the negative sign.",
+                  "work": "\\begin{aligned} -12x + x^3 &= -(12x - x^3) \\\\ &= -f(x) \\end{aligned}"
+                },
+                {
+                  "explain": "Conclude the symmetry.",
+                  "work": "\\text{Since } f(-x) = -f(x) \\text{, the function is odd. Odd functions have rotational point symmetry of } 180^{\\circ} \\text{ about the origin.}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q5b",
+              "type": "mc",
+              "stem": "b) Which of the following correctly gives the first and second derivatives of \\( y = 12x - x^3 \\)?",
+              "options": [
+                "\\( y' = 3(4 - x^2) \\) and \\( y'' = -6x \\)",
+                "\\( y' = 3(x^2 - 4) \\) and \\( y'' = 6x \\)",
+                "\\( y' = 12 - 3x^2 \\) and \\( y'' = -3x \\)",
+                "\\( y' = 3(4 - x^2) \\) and \\( y'' = 6x \\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Differentiate \\( y \\) to find \\( y' \\).",
+                  "work": "\\begin{aligned} y' &= \\frac{d}{dx}(12x - x^3) \\\\ &= 12 - 3x^2 \\end{aligned}"
+                },
+                {
+                  "explain": "Factor the first derivative.",
+                  "work": "\\begin{aligned} 12 - 3x^2 &= 3(4 - x^2) \\end{aligned}"
+                },
+                {
+                  "explain": "Differentiate \\( y' \\) to find \\( y'' \\).",
+                  "work": "\\begin{aligned} y'' &= \\frac{d}{dx}(12 - 3x^2) \\\\ &= -6x \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q5c",
+              "type": "mc",
+              "stem": "c) Find the coordinates of the stationary points and determine their nature. (Format: '(-2,-16) is a minimum, (2,16) is a maximum')",
+              "options": [
+                "\\( (-2, 16) \\) is a minimum, \\( (2, -16) \\) is a maximum",
+                "\\( (0, 0) \\) is a minimum, \\( (2, 16) \\) is a maximum",
+                "\\( (-2, -16) \\) is a minimum, \\( (2, 16) \\) is a maximum",
+                "\\( (-2, -16) \\) is a maximum, \\( (2, 16) \\) is a minimum"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Set \\( y' = 0 \\) to find the stationary points.",
+                  "work": "\\begin{aligned} 3(4 - x^2) &= 0 \\\\ 4 - x^2 &= 0 \\\\ x^2 &= 4 \\implies x = 2, -2 \\end{aligned}"
+                },
+                {
+                  "explain": "Find the y-coordinates.",
+                  "work": "\\begin{aligned} y(2) &= 12(2) - (2)^3 = 24 - 8 = 16 \\\\ y(-2) &= 12(-2) - (-2)^3 = -24 - (-8) = -16 \\end{aligned} \\\\ \\implies \\text{Points are } (2, 16) \\text{ and } (-2, -16)"
+                },
+                {
+                  "explain": "Determine the nature using \\( y'' = -6x \\).",
+                  "work": "\\begin{aligned} y''(2) &= -6(2) = -12 < 0 \\implies (2, 16) \\text{ is a maximum} \\\\ y''(-2) &= -6(-2) = 12 > 0 \\implies (-2, -16) \\text{ is a minimum} \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q5d",
+              "type": "mc",
+              "stem": "d) Why is \\( x = 0 \\) a point of inflection?",
+              "options": [
+                "Because \\( y = 0 \\) at \\( x = 0 \\).",
+                "Because \\( y' = 0 \\) at \\( x = 0 \\) and the sign of \\( y' \\) changes across it.",
+                "Because \\( y'' = 0 \\) at \\( x = 0 \\) and the sign of \\( y'' \\) changes across it.",
+                "Because \\( y'' = 0 \\) at \\( x = 0 \\) and \\( y'' \\) remains positive on both sides."
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Check if the second derivative is zero.",
+                  "work": "\\begin{aligned} y''(0) &= -6(0) = 0 \\end{aligned}"
+                },
+                {
+                  "explain": "Test values around \\( x = 0 \\) to check for a change in concavity.",
+                  "work": "\\begin{aligned} \\text{For } x < 0 \\; (\\text{e.g., } x = -1): y''(-1) &= -6(-1) = 6 > 0 \\; (\\text{Concave up}) \\\\ \\text{For } x > 0 \\; (\\text{e.g., } x = 1): y''(1) &= -6(1) = -6 < 0 \\; (\\text{Concave down}) \\end{aligned}"
+                },
+                {
+                  "explain": "Conclude.",
+                  "work": "\\text{Since } y'' \\text{ changes sign across } x = 0 \\text{, it is a point of inflection.}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q5e",
+              "type": "mc",
+              "stem": "e) By substituting into the gradient function \\( y' \\), find the gradient at the inflection point.",
+              "options": [
+                "\\( 4 \\)",
+                "\\( 12 \\)",
+                "\\( -12 \\)",
+                "\\( 0 \\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Substitute the x-coordinate of the inflection point into the gradient function.",
+                  "work": "\\begin{aligned} y'(x) &= 12 - 3x^2 \\\\ y'(0) &= 12 - 3(0)^2 = 12 \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q5f",
+              "type": "review",
+              "stem": "f) Sketch the graph of the function, indicating all important features.",
+              "answer": "Cubic curve with minimum at (-2,-16), maximum at (2,16), inflection at (0,0), and x-intercepts at 0, \\pm 2\\sqrt{3}.",
+              "steps": [
+                {
+                  "explain": "Plot the inflection/origin.",
+                  "work": "\\text{Mark the origin } (0, 0) \\text{ which is the inflection point.}"
+                },
+                {
+                  "explain": "Plot the turning points.",
+                  "work": "\\text{Mark the minimum at } (-2, -16) \\text{ and the maximum at } (2, 16)."
+                },
+                {
+                  "explain": "Draw the curve.",
+                  "work": "\\text{Draw a smooth curve through the points. Since it's an odd cubic with a negative leading coefficient, it comes from } +\\infty \\text{ in the 2nd quadrant, goes down to the minimum, passes through the origin, goes up to the maximum, and goes down to } -\\infty \\text{ in the 4th quadrant.}",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 350,
+                      "height": 250,
+                      "boundingbox": [
+                        -5,
+                        25,
+                        5,
+                        -25
+                      ],
+                      "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-22], [0,22]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -2, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 20, 'y'], {fontSize: 14});\nvar f = function(x) { return 12*x - x*x*x; };\nboard.create('functiongraph', [f, -5, 5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, -16], {name: 'Min(-2,-16)', size: 3, color: 'red', label: {autoPosition: false, offset: [-35, -15]}});\nboard.create('point', [2, 16], {name: 'Max(2,16)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, 0], {name: '(0,0)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "manual": true
+        },
+        {
+          "id": "y12a-3e-q6",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "For the curve \\( f(x) = 2x^3 - 9x^2 + 12 \\), perform a complete calculus analysis to sketch its graph.",
+          "parts": [
+            {
+              "id": "y12a-3e-q6a",
+              "type": "mc",
+              "stem": "a) Which of the following correctly gives the first and second derivatives of \\( f(x) = 2x^3 - 9x^2 + 12 \\)?",
+              "options": [
+                "\\( f'(x) = 3x(2x - 3) \\) and \\( f''(x) = 6(2x - 3) \\)",
+                "\\( f'(x) = 6x(x - 3) \\) and \\( f''(x) = 6(2x - 3) \\)",
+                "\\( f'(x) = 6x(x + 3) \\) and \\( f''(x) = 6(2x + 3) \\)",
+                "\\( f'(x) = 6x(x - 3) \\) and \\( f''(x) = 12x - 9 \\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Differentiate \\( f(x) \\) to find \\( f'(x) \\).",
+                  "work": "\\begin{aligned} f'(x) &= 3(2)x^2 - 2(9)x \\\\ &= 6x^2 - 18x \\\\ &= 6x(x - 3) \\end{aligned}"
+                },
+                {
+                  "explain": "Differentiate \\( f'(x) \\) to find \\( f''(x) \\).",
+                  "work": "\\begin{aligned} f''(x) &= 12x - 18 \\\\ &= 6(2x - 3) \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q6b",
+              "type": "mc",
+              "stem": "b) Find the coordinates of the stationary points and determine their nature. (Format: '(0,12) is a maximum, (3,-15) is a minimum')",
+              "options": [
+                "\\( (0, 12) \\) is a maximum, \\( (3, -15) \\) is a minimum",
+                "\\( (0, -12) \\) is a maximum, \\( (3, 15) \\) is a minimum",
+                "\\( (0, 12) \\) is a maximum, \\( (3, 15) \\) is a minimum",
+                "\\( (0, 12) \\) is a minimum, \\( (3, -15) \\) is a maximum"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Set \\( f'(x) = 0 \\) to find the stationary points.",
+                  "work": "\\begin{aligned} 6x(x - 3) &= 0 \\implies x = 0, 3 \\end{aligned}"
+                },
+                {
+                  "explain": "Find the y-coordinates.",
+                  "work": "\\begin{aligned} f(0) &= 2(0)^3 - 9(0)^2 + 12 = 12 \\\\ f(3) &= 2(27) - 9(9) + 12 = 54 - 81 + 12 = -15 \\end{aligned} \\\\ \\implies \\text{Points are } (0, 12) \\text{ and } (3, -15)"
+                },
+                {
+                  "explain": "Determine the nature using \\( f''(x) = 12x - 18 \\).",
+                  "work": "\\begin{aligned} f''(0) &= -18 < 0 \\implies (0, 12) \\text{ is a maximum} \\\\ f''(3) &= 12(3) - 18 = 36 - 18 = 18 > 0 \\implies (3, -15) \\text{ is a minimum} \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q6c",
+              "type": "mc",
+              "stem": "c) Explain why there is a point of inflection at \\( x = 1.5 \\), and find the gradient at the inflection point.",
+              "options": [
+                "Since \\( f''(1.5) = 0 \\) and concavity changes, it is an inflection point with gradient \\( -13.5 \\).",
+                "Since \\( f''(1.5) = 0 \\) and concavity changes, it is an inflection point with gradient \\( 13.5 \\).",
+                "Since \\( f'(1.5) = 0 \\), it is a stationary point with gradient \\( 0 \\).",
+                "Since \\( f''(1.5) = 0 \\) and concavity does not change, it is not an inflection point."
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Evaluate the second derivative at \\( x = 1.5 \\).",
+                  "work": "\\begin{aligned} f''(1.5) &= 6(2(1.5) - 3) = 6(3 - 3) = 0 \\end{aligned}"
+                },
+                {
+                  "explain": "Verify the change in concavity.",
+                  "work": "\\begin{aligned} \\text{For } x < 1.5, f''(x) < 0 \\text{ (concave down).} \\\\ \\text{For } x > 1.5, f''(x) > 0 \\text{ (concave up).} \\\\ \\implies \\text{Concavity changes, so it is an inflection point.} \\end{aligned}"
+                },
+                {
+                  "explain": "Find the gradient at \\( x = 1.5 \\).",
+                  "work": "\\begin{aligned} f'(1.5) &= 6(1.5)^2 - 18(1.5) \\\\ &= 6(2.25) - 27 \\\\ &= 13.5 - 27 = -13.5 \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q6d",
+              "type": "review",
+              "stem": "d) Sketch the graph of \\( f(x) \\), indicating all important features.",
+              "answer": "Cubic curve with local maximum at (0,12), local minimum at (3,-15), and point of inflection at (1.5, -1.5).",
+              "steps": [
+                {
+                  "explain": "Plot the turning points.",
+                  "work": "\\text{Mark the maximum at } (0, 12) \\text{ and the minimum at } (3, -15)."
+                },
+                {
+                  "explain": "Plot the point of inflection.",
+                  "work": "\\text{Mark the inflection point at } (1.5, -1.5)."
+                },
+                {
+                  "explain": "Draw the curve.",
+                  "work": "\\text{Draw a smooth cubic curve that comes from } -\\infty \\text{, reaches the maximum on the y-axis, passes through the inflection point, hits the minimum, and goes off to } +\\infty.",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 350,
+                      "height": 250,
+                      "boundingbox": [
+                        -3,
+                        20,
+                        5,
+                        -22
+                      ],
+                      "script": "board.suspendUpdate();\nboard.create('arrow', [[-3, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-20], [0,18]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -1.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 16, 'y'], {fontSize: 14});\nvar f = function(x) { return 2*x*x*x - 9*x*x + 12; };\nboard.create('functiongraph', [f, -3, 5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 12], {name: 'Max(0,12)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [3, -15], {name: 'Min(3,-15)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [1.5, -1.5], {name: 'Inflection(1.5,-1.5)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "manual": true
+        },
+        {
+          "id": "y12a-3e-q8",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "For the quartic curve \\( y = 4x^3 - x^4 + 5 \\), perform a calculus analysis to sketch its graph.",
+          "parts": [
+            {
+              "id": "y12a-3e-q8a",
+              "type": "mc",
+              "stem": "a) Which of the following correctly gives the first and second derivatives of \\( y = 4x^3 - x^4 + 5 \\)?",
+              "options": [
+                "\\( y' = 4x^2(3 - x) \\) and \\( y'' = 12x(x - 2) \\)",
+                "\\( y' = 12x^2 - 4x^3 \\) and \\( y'' = 24x - 6x^2 \\)",
+                "\\( y' = 4x^2(3 - x) \\) and \\( y'' = 12x(2 - x) \\)",
+                "\\( y' = 12x^2(1 - x) \\) and \\( y'' = 12x(2 - x) \\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Differentiate \\( y \\) to find \\( y' \\).",
+                  "work": "\\begin{aligned} y' &= 12x^2 - 4x^3 \\\\ &= 4x^2(3 - x) \\end{aligned}"
+                },
+                {
+                  "explain": "Differentiate \\( y' \\) to find \\( y'' \\).",
+                  "work": "\\begin{aligned} y'' &= 24x - 12x^2 \\\\ &= 12x(2 - x) \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q8b",
+              "type": "mc",
+              "stem": "b) By solving \\( y' = 0 \\), find the coordinates of any stationary points. (List points in ascending order of x, e.g. '(0,5), (3,32)')",
+              "options": [
+                "\\( (0, 5), (3, 32) \\)",
+                "\\( (0, 0), (3, 32) \\)",
+                "\\( (3, 32), (4, 5) \\)",
+                "\\( (0, 5), (2, 21) \\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Set \\( y' = 0 \\) to find stationary points.",
+                  "work": "\\begin{aligned} 4x^2(3 - x) &= 0 \\implies x = 0, 3 \\end{aligned}"
+                },
+                {
+                  "explain": "Find the corresponding y-coordinates.",
+                  "work": "\\begin{aligned} y(0) &= 4(0)^3 - (0)^4 + 5 = 5 \\implies (0, 5) \\\\ y(3) &= 4(27) - (81) + 5 = 108 - 81 + 5 = 32 \\implies (3, 32) \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q8c",
+              "type": "mc",
+              "stem": "c) By examining the sign of \\( y'' \\), establish the nature of the stationary point at \\( x = 3 \\). Why does this method fail for the stationary point at \\( x = 0 \\)?",
+              "options": [
+                "\\( (3, 32) \\) is a local maximum because \\( y''(3) = -36 < 0 \\). The method fails at \\( x = 0 \\) because \\( y''(0) = 0 \\).",
+                "\\( (3, 32) \\) is a local minimum because \\( y''(3) = 36 > 0 \\). The method fails at \\( x = 0 \\) because \\( y''(0) = 0 \\).",
+                "\\( (3, 32) \\) is a local maximum because \\( y''(3) = -36 < 0 \\). The method fails at \\( x = 0 \\) because \\( y'(0) = 0 \\).",
+                "\\( (3, 32) \\) is a point of inflection because \\( y''(3) = 0 \\)."
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Evaluate the second derivative at \\( x = 3 \\).",
+                  "work": "\\begin{aligned} y''(3) &= 12(3)(2 - 3) = 36(-1) = -36 \\end{aligned}"
+                },
+                {
+                  "explain": "Determine the nature at \\( x = 3 \\).",
+                  "work": "\\text{Since } y''(3) < 0 \\text{, the point } (3, 32) \\text{ is a local maximum.}"
+                },
+                {
+                  "explain": "Evaluate the second derivative at \\( x = 0 \\).",
+                  "work": "\\begin{aligned} y''(0) &= 12(0)(2 - 0) = 0 \\end{aligned}"
+                },
+                {
+                  "explain": "Explain why it fails.",
+                  "work": "\\text{The second derivative test is inconclusive when } y'' = 0. \\text{ We must use the first derivative test to determine its nature.}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q8d",
+              "type": "mc",
+              "stem": "d) Use a table of test values of \\( y' \\) to show that there is a stationary point of inflection at \\( x = 0 \\).",
+              "options": [
+                "The slope is negative on both sides of \\( x = 0 \\), indicating a horizontal point of inflection.",
+                "The slope is positive on both sides of \\( x = 0 \\) (\\( y' > 0 \\)), indicating it is a horizontal point of inflection.",
+                "The slope changes from positive to negative, indicating a maximum.",
+                "The slope changes from negative to positive, indicating a minimum."
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Use test values around \\( x = 0 \\) in the first derivative \\( y' = 4x^2(3 - x) \\).",
+                  "work": "\\begin{aligned} \\text{For } x = -1: y'(-1) &= 4(-1)^2(3 - (-1)) = 4(4) = 16 > 0 \\\\ \\text{For } x = 1: y'(1) &= 4(1)^2(3 - 1) = 4(2) = 8 > 0 \\end{aligned}"
+                },
+                {
+                  "explain": "Interpret the result.",
+                  "work": "\\text{Since the gradient is positive before and after } x = 0 \\text{, the curve flattens out but continues to rise. Thus, } (0, 5) \\text{ is a horizontal (stationary) point of inflection.}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q8e",
+              "type": "mc",
+              "stem": "e) Why is there a change in concavity at \\( x = 2 \\)?",
+              "options": [
+                "Because \\( y' = 0 \\) at \\( x = 2 \\) and changes sign across it.",
+                "Because \\( y'' = 0 \\) at \\( x = 2 \\) and changes sign from negative to positive across it.",
+                "Because \\( y'' > 0 \\) for all \\( x > 0 \\).",
+                "Because \\( y'' = 0 \\) at \\( x = 2 \\) and changes sign from positive to negative across it."
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Check the second derivative at \\( x = 2 \\).",
+                  "work": "\\begin{aligned} y''(2) &= 12(2)(2 - 2) = 0 \\end{aligned}"
+                },
+                {
+                  "explain": "Test values around \\( x = 2 \\) in \\( y'' = 12x(2 - x) \\).",
+                  "work": "\\begin{aligned} \\text{For } x = 1: y''(1) &= 12(1)(2 - 1) = 12 > 0 \\; (\\text{Concave up}) \\\\ \\text{For } x = 3: y''(3) &= 12(3)(2 - 3) = -36 < 0 \\; (\\text{Concave down}) \\end{aligned}"
+                },
+                {
+                  "explain": "Conclude.",
+                  "work": "\\text{Since } y'' \\text{ changes from positive to negative across } x = 2 \\text{, there is a change in concavity, making it a point of inflection.}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q8f",
+              "type": "review",
+              "stem": "f) Sketch the graph of the function, showing all important features.",
+              "answer": "Quartic curve with local maximum at (3,32), horizontal point of inflection at (0,5), and non-stationary point of inflection at (2,21).",
+              "steps": [
+                {
+                  "explain": "Plot the stationary points.",
+                  "work": "\\text{Mark the horizontal point of inflection at } (0, 5) \\text{ and the maximum at } (3, 32)."
+                },
+                {
+                  "explain": "Plot the non-stationary point of inflection.",
+                  "work": "\\text{Mark the point of inflection at } (2, 21)."
+                },
+                {
+                  "explain": "Draw the curve.",
+                  "work": "\\text{Draw a smooth curve rising from the left, flattening at } (0, 5) \\text{, continuing to rise through } (2, 21) \\text{ to reach the peak at } (3, 32) \\text{, and then falling rapidly to the right.}",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 350,
+                      "height": 250,
+                      "boundingbox": [
+                        -2,
+                        38,
+                        5,
+                        -10
+                      ],
+                      "script": "board.suspendUpdate();\nboard.create('arrow', [[-2, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5], [0,35]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -1.5, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 32, 'y'], {fontSize: 14});\nvar f = function(x) { return 4*x*x*x - x*x*x*x + 5; };\nboard.create('functiongraph', [f, -2, 5], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 32], {name: 'Max(3,32)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 10]}});\nboard.create('point', [0, 5], {name: 'Inflection(0,5)', size: 3, color: 'red', label: {autoPosition: false, offset: [-110, -5]}});\nboard.create('point', [2, 21], {name: 'Inflection(2,21)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "manual": true
+        },
+        {
+          "id": "y12a-3e-q12",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "For the rational function \\( y = x + \\frac{4}{x} \\), complete the following systematic curve sketching analysis.",
+          "parts": [
+            {
+              "id": "y12a-3e-q12a",
+              "type": "mc",
+              "stem": "a) Show that the derivative of \\( y = x + \\frac{4}{x} \\) is \\( y' = \\frac{x^2 - 4}{x^2} \\).",
+              "options": [
+                "\\( y' = 1 + \\frac{4}{x^2} \\)",
+                "\\( y' = \\frac{x^2 - 4}{x^2} \\)",
+                "\\( y' = \\frac{x^2 + 4}{x^2} \\)",
+                "\\( y' = 1 - \\frac{1}{x^2} \\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Differentiate \\( y = x + 4x^{-1} \\).",
+                  "work": "\\begin{aligned} y' &= \\frac{d}{dx}(x) + \\frac{d}{dx}(4x^{-1}) \\\\ &= 1 - 4x^{-2} = 1 - \\frac{4}{x^2} \\end{aligned}"
+                },
+                {
+                  "explain": "Combine over a common denominator.",
+                  "work": "\\begin{aligned} y' &= \\frac{x^2}{x^2} - \\frac{4}{x^2} = \\frac{x^2 - 4}{x^2} \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q12b",
+              "type": "mc",
+              "stem": "b) Find the stationary points and determine their nature. (Format: '(-2,-4) is a maximum, (2,4) is a minimum')",
+              "options": [
+                "\\( (2, 4) \\) is a maximum, \\( (-2, -4) \\) is a minimum",
+                "\\( (-2, -4) \\) is an inflection point, \\( (2, 4) \\) is an inflection point",
+                "\\( (-2, -4) \\) is a maximum, \\( (2, 4) \\) is a minimum",
+                "\\( (-2, -4) \\) is a minimum, \\( (2, 4) \\) is a maximum"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Set \\( y' = 0 \\) to find stationary points.",
+                  "work": "\\begin{aligned} \\frac{x^2 - 4}{x^2} &= 0 \\implies x^2 - 4 = 0 \\implies x = 2, -2 \\end{aligned}"
+                },
+                {
+                  "explain": "Find y-coordinates.",
+                  "work": "\\begin{aligned} y(2) &= 2 + \\frac{4}{2} = 4 \\implies (2, 4) \\\\ y(-2) &= -2 + \\frac{4}{-2} = -4 \\implies (-2, -4) \\end{aligned}"
+                },
+                {
+                  "explain": "Find second derivative to determine nature.",
+                  "work": "\\begin{aligned} y'' &= \\frac{d}{dx}(1 - 4x^{-2}) = 8x^{-3} = \\frac{8}{x^3} \\end{aligned}"
+                },
+                {
+                  "explain": "Evaluate \\( y'' \\).",
+                  "work": "\\begin{aligned} y''(2) &= \\frac{8}{8} = 1 > 0 \\implies (2, 4) \\text{ is a minimum} \\\\ y''(-2) &= \\frac{8}{-8} = -1 < 0 \\implies (-2, -4) \\text{ is a maximum} \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q12c",
+              "type": "mc",
+              "stem": "c) Show that the function is odd. What symmetry does its graph have?",
+              "options": [
+                "The function is even and displays line symmetry about the y-axis.",
+                "The function is neither even nor odd.",
+                "The function is odd and displays rotational point symmetry of 180 degrees about the origin.",
+                "The function is odd and displays line symmetry about the y-axis."
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Check for parity.",
+                  "work": "\\begin{aligned} f(-x) &= (-x) + \\frac{4}{-x} = -\\left(x + \\frac{4}{x}\\right) = -f(x) \\end{aligned}"
+                },
+                {
+                  "explain": "State the symmetry.",
+                  "work": "\\text{Since } f(-x) = -f(x) \\text{, the function is odd and has rotational symmetry about the origin.}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q12d",
+              "type": "mc",
+              "stem": "d) State the domain of the function and the equation of the vertical asymptote. (Format: 'domain: x not equal to 0; vertical asymptote: x = 0')",
+              "options": [
+                "domain: \\( x \\neq 0 \\); vertical asymptote: \\( x = 0 \\)",
+                "domain: \\( x > 0 \\); vertical asymptote: \\( x = 0 \\)",
+                "domain: all real \\( x \\); no vertical asymptote",
+                "domain: \\( x \\neq -2, 2 \\); vertical asymptotes: \\( x = -2, 2 \\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Find where the function is undefined.",
+                  "work": "\\text{The term } \\frac{4}{x} \\text{ is undefined when } x = 0."
+                },
+                {
+                  "explain": "State the domain and asymptote.",
+                  "work": "\\text{The domain is all real } x \\neq 0 \\text{, and the vertical asymptote is } x = 0."
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q12e",
+              "type": "review",
+              "stem": "e) Use a table of test values of \\( y \\) to analyse the sign of the function.",
+              "answer": "For x < 0, y < 0. For x > 0, y > 0.",
+              "steps": [
+                {
+                  "explain": "Analyze the sign on either side of the asymptote.",
+                  "work": "\\begin{aligned} \\text{For } x < 0 \\text{ (e.g., } x = -1), y &= -1 - 4 = -5 < 0 \\\\ \\text{For } x > 0 \\text{ (e.g., } x = 1), y &= 1 + 4 = 5 > 0 \\end{aligned}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q12f",
+              "type": "review",
+              "stem": "f) Sketch the graph of the function. (You may assume that the diagonal line \\( y = x \\) is an oblique asymptote to the curve.)",
+              "answer": "Sketch curve with vertical asymptote at x = 0 and oblique asymptote at y = x, with a local maximum at (-2,-4) and a local minimum at (2,4).",
+              "steps": [
+                {
+                  "explain": "Draw asymptotes.",
+                  "work": "\\text{Draw dashed line for } x=0 \\text{ (y-axis) and } y = x."
+                },
+                {
+                  "explain": "Plot turning points.",
+                  "work": "\\text{Mark max at } (-2, -4) \\text{ and min at } (2, 4)."
+                },
+                {
+                  "explain": "Sketch the curve.",
+                  "work": "\\text{Draw a hyperbola-like curve approaching the asymptotes, with vertices at the turning points.}",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 350,
+                      "height": 250,
+                      "boundingbox": [
+                        -6,
+                        8,
+                        6,
+                        -8
+                      ],
+                      "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-7.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.2, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.5, 7.0, 'y'], {fontSize: 14});\nvar f = function(x) { return x + 4/x; };\nboard.create('functiongraph', [f, -6, 6], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('functiongraph', [f, 0.05, 6], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('line', [[0, -1], [0, 1]], {strokeColor: 'gray', dash: 2, strokeWidth: 1});\nboard.create('line', [[-6, -6], [6, 6]], {strokeColor: 'gray', dash: 2, strokeWidth: 1});\nboard.create('point', [2, 4], {name: 'Min(2,4)', size: 3, color: 'red', label: {autoPosition: false, offset: [10, -10]}});\nboard.create('point', [-2, -4], {name: 'Max(-2,-4)', size: 3, color: 'red', label: {autoPosition: false, offset: [-35, 15]}});\nboard.create('text', [3.5, 4.2, 'y=x'], {fontSize: 10, strokeColor: 'gray'});\nboard.unsuspendUpdate();"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "y12a-3e-q12g",
+              "type": "mc",
+              "stem": "g) Write down the range of the function. (Format: 'y <= -4 or y >= 4')",
+              "options": [
+                "\\( -4 < y < 4 \\)",
+                "All real numbers",
+                "\\( y \\leq -4 \\text{ or } y \\geq 4 \\)",
+                "\\( y \\leq -2 \\text{ or } y \\geq 2 \\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Observe the sketched graph.",
+                  "work": "\\text{The left branch peaks at } y = -4 \\text{, so it covers } y \\le -4. \\text{ The right branch has its lowest point at } y = 4 \\text{, so it covers } y \\ge 4."
+                },
+                {
+                  "explain": "Combine.",
+                  "work": "\\text{Range is } y \\le -4 \\text{ or } y \\ge 4."
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "manual": true,
+          "timeLimit": 240
+        }
+      ]
+    }
+  ]
+}

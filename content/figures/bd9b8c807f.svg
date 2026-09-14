@@ -1,0 +1,15 @@
+<svg viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sector -->
+  <path d="M 50 100 L 135.5 35.5 A 110 110 0 0 1 135.5 164.5 Z" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+  
+  <!-- Radius labels -->
+  <text x="80" y="55" font-family="sans-serif" font-size="13" font-weight="600" fill="#475569" transform="rotate(-37, 80, 55)">10 cm</text>
+  <text x="80" y="155" font-family="sans-serif" font-size="13" font-weight="600" fill="#475569" transform="rotate(37, 80, 155)">10 cm</text>
+  
+  <!-- Arc length label -->
+  <text x="155" y="105" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2563eb">12 cm</text>
+  
+  <!-- Angle arc -->
+  <path d="M 75 82 A 22 22 0 0 1 75 118" fill="none" stroke="#ef4444" stroke-width="2" />
+  <text x="83" y="105" font-family="serif" font-size="16" font-style="italic" font-weight="bold" fill="#ef4444">θ</text>
+</svg>

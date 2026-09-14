@@ -1,0 +1,2914 @@
+{
+  "chapterId": "exam:year8ch1b",
+  "title": "Exam Practice",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "exam:year8ch1b",
+      "code": "1B",
+      "title": "Multiplication and division",
+      "questions": [
+        {
+          "id": "y8-1b-q1_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A hangar stores specialized high-pressure hydraulic fluid bottles for commercial airliners.\nThere are \\(14\\) storage cabinets, each containing \\(236\\) bottles. If each bottle holds exactly \\(45\\) litres of fluid, how many total litres are stored in the hangar?",
+          "options": [
+            "\\\\(148,680\\\\)",
+            "\\\\(148,635\\\\)",
+            "\\\\(148,916\\\\)",
+            "\\\\(148,580\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(45 \\times 236 \\times 14\\).",
+          "solution": "\\\\(148,680\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 14, quad \\text{Per Unit} = 236, quad \\text{Per Sub-Unit} = 45\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(14 \\\\times 236 = 3304\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(3304 \\\\times 45 = 148680\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q2_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A planetary exploration mission loads power packs onto \\(24\\) robotic space rovers.\nEach space rover is fitted with \\(185\\) power packs. If each power pack requires \\(32\\) lithium-ion cell units, calculate the total number of cell units deployed.",
+          "options": [
+            "\\\\(142,080\\\\)",
+            "\\\\(142,048\\\\)",
+            "\\\\(142,265\\\\)",
+            "\\\\(141,980\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(32 \\times 185 \\times 24\\).",
+          "solution": "\\\\(142,080\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 24, quad \\text{Per Unit} = 185, quad \\text{Per Sub-Unit} = 32\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(24 \\\\times 185 = 4440\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(4440 \\\\times 32 = 142080\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q3_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A pharmaceutical vaccine depository operates \\(15\\) cryogenic refrigeration chambers.\nEach chamber houses \\(48\\) cooling trays. If each tray contains \\(75\\) specialized sample vials, what is the total capacity of vials stored in the facility?",
+          "options": [
+            "\\\\(54,000\\\\)",
+            "\\\\(53,925\\\\)",
+            "\\\\(54,048\\\\)",
+            "\\\\(53,900\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(75 \\times 48 \\times 15\\).",
+          "solution": "\\\\(54,000\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 48, quad \\text{Per Sub-Unit} = 75\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(15 \\\\times 48 = 720\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(720 \\\\times 75 = 54000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q4_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A regional solar generation facility consists of \\(16\\) tracking sub-arrays.\nEach sub-array contains \\(120\\) photovoltaic nodes. If each node requires \\(18\\) micro-inverters, calculate the total number of micro-inverters configured.",
+          "options": [
+            "\\\\(34,560\\\\)",
+            "\\\\(34,542\\\\)",
+            "\\\\(34,680\\\\)",
+            "\\\\(34,460\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(18 \\times 120 \\times 16\\).",
+          "solution": "\\\\(34,560\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 16, quad \\text{Per Unit} = 120, quad \\text{Per Sub-Unit} = 18\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(16 \\\\times 120 = 1920\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(1920 \\\\times 18 = 34560\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q5_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A subsea fiber-optic network spans across \\(12\\) oceanic sectors.\nEach sector has \\(950\\) signal repeaters. If each repeater utilizes \\(8\\) transponders, how many total transponders are active across the entire network?",
+          "options": [
+            "\\\\(91,200\\\\)",
+            "\\\\(91,192\\\\)",
+            "\\\\(92,150\\\\)",
+            "\\\\(91,100\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(8 \\times 950 \\times 12\\).",
+          "solution": "\\\\(91,200\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 12, quad \\text{Per Unit} = 950, quad \\text{Per Sub-Unit} = 8\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(12 \\\\times 950 = 11400\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(11400 \\\\times 8 = 91200\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q6_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A high-speed shipping depot operates \\(18\\) sorting conveyor lines.\nEach line transports \\(320\\) cargo pallets. If each pallet holds \\(14\\) heavy packing crates, find the total number of crates processed during a full load cycle.",
+          "options": [
+            "\\\\(80,640\\\\)",
+            "\\\\(80,626\\\\)",
+            "\\\\(80,960\\\\)",
+            "\\\\(80,540\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(14 \\times 320 \\times 18\\).",
+          "solution": "\\\\(80,640\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 18, quad \\text{Per Unit} = 320, quad \\text{Per Sub-Unit} = 14\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(18 \\\\times 320 = 5760\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(5760 \\\\times 14 = 80640\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q7_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An automated smart farm coordinates irrigation across \\(25\\) cultivation zones.\nEach zone is monitored by \\(175\\) moisture sensors. If each sensor controls \\(20\\) valve actuators, find the total number of valve actuators managed.",
+          "options": [
+            "\\\\(87,500\\\\)",
+            "\\\\(87,480\\\\)",
+            "\\\\(87,675\\\\)",
+            "\\\\(87,400\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(20 \\times 175 \\times 25\\).",
+          "solution": "\\\\(87,500\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 25, quad \\text{Per Unit} = 175, quad \\text{Per Sub-Unit} = 20\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(25 \\\\times 175 = 4375\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(4375 \\\\times 20 = 87500\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q8_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial robotics plant manufactures robotic joints for automated lines.\nThey assemble \\(32\\) heavy-duty robot arms. Each arm has \\(135\\) joints. If each joint uses \\(15\\) precision gears, calculate the total number of gears required.",
+          "options": [
+            "\\\\(64,800\\\\)",
+            "\\\\(64,785\\\\)",
+            "\\\\(64,935\\\\)",
+            "\\\\(64,700\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(15 \\times 135 \\times 32\\).",
+          "solution": "\\\\(64,800\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 32, quad \\text{Per Unit} = 135, quad \\text{Per Sub-Unit} = 15\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(32 \\\\times 135 = 4320\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(4320 \\\\times 15 = 64800\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q9_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A geological research program coordinates \\(15\\) seismic listening stations.\nEach station has \\(520\\) recording points. If each point logs data on \\(12\\) channels simultaneously, calculate the total number of active channels.",
+          "options": [
+            "\\\\(93,600\\\\)",
+            "\\\\(93,588\\\\)",
+            "\\\\(94,120\\\\)",
+            "\\\\(93,500\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(12 \\times 520 \\times 15\\).",
+          "solution": "\\\\(93,600\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 520, quad \\text{Per Sub-Unit} = 12\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(15 \\\\times 520 = 7800\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(7800 \\\\times 12 = 93600\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q10_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A meteorological institute operates \\(22\\) deep-ocean weather buoys.\nEach buoy contains \\(245\\) telemetry modules. If each module is powered by \\(16\\) lithium battery nodes, calculate the total battery node count.",
+          "options": [
+            "\\\\(86,240\\\\)",
+            "\\\\(86,224\\\\)",
+            "\\\\(86,485\\\\)",
+            "\\\\(86,140\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(16 \\times 245 \\times 22\\).",
+          "solution": "\\\\(86,240\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 22, quad \\text{Per Unit} = 245, quad \\text{Per Sub-Unit} = 16\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(22 \\\\times 245 = 5390\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(5390 \\\\times 16 = 86240\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q11_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A nuclear power facility loads fuel rods into \\(28\\) reactor assemblies.\nEach assembly has \\(85\\) fuel rods. If each rod contains \\(180\\) uranium oxide pellets, find the total number of fuel pellets loaded.",
+          "options": [
+            "\\\\(428,400\\\\)",
+            "\\\\(428,220\\\\)",
+            "\\\\(428,485\\\\)",
+            "\\\\(428,300\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(180 \\times 85 \\times 28\\).",
+          "solution": "\\\\(428,400\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 28, quad \\text{Per Unit} = 85, quad \\text{Per Sub-Unit} = 180\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(28 \\\\times 85 = 2380\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(2380 \\\\times 180 = 428400\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q12_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A quantum research cluster operates \\(14\\) helium-cooled dilution refrigerators.\nEach refrigerator hosts \\(350\\) quantum processor units. If each unit utilizes \\(64\\) cryo-gates, calculate the total number of cryo-gates configured.",
+          "options": [
+            "\\\\(313,600\\\\)",
+            "\\\\(313,536\\\\)",
+            "\\\\(313,950\\\\)",
+            "\\\\(313,500\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(64 \\times 350 \\times 14\\).",
+          "solution": "\\\\(313,600\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 14, quad \\text{Per Unit} = 350, quad \\text{Per Sub-Unit} = 64\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(14 \\\\times 350 = 4900\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(4900 \\\\times 64 = 313600\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q13_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An online retailer operates \\(36\\) distribution warehouse aisles.\nEach aisle is equipped with \\(84\\) storage racks. If each rack holds \\(125\\) plastic bins, what is the total number of storage bins in the warehouse?",
+          "options": [
+            "\\\\(378,000\\\\)",
+            "\\\\(377,875\\\\)",
+            "\\\\(378,084\\\\)",
+            "\\\\(377,900\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(125 \\times 84 \\times 36\\).",
+          "solution": "\\\\(378,000\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 36, quad \\text{Per Unit} = 84, quad \\text{Per Sub-Unit} = 125\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(36 \\\\times 84 = 3024\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(3024 \\\\times 125 = 378000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q14_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A car manufacturing facility produces battery packs for \\(25\\) high-performance electric vehicles.\nEach vehicle requires \\(144\\) battery modules. If each module contains \\(96\\) battery cells, calculate the total number of battery cells used.",
+          "options": [
+            "\\\\(345,600\\\\)",
+            "\\\\(345,504\\\\)",
+            "\\\\(345,744\\\\)",
+            "\\\\(345,500\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(96 \\times 144 \\times 25\\).",
+          "solution": "\\\\(345,600\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 25, quad \\text{Per Unit} = 144, quad \\text{Per Sub-Unit} = 96\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(25 \\\\times 144 = 3600\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(3600 \\\\times 96 = 345600\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q15_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A aerospace firm manufactures communications satellites. They assemble a constellation of \\(15\\) satellites.\nEach satellite carries \\(180\\) payload transceivers. If each transceiver links to \\(24\\) antenna elements, calculate the total number of elements in the constellation.",
+          "options": [
+            "\\\\(64,800\\\\)",
+            "\\\\(64,776\\\\)",
+            "\\\\(64,980\\\\)",
+            "\\\\(64,700\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(24 \\times 180 \\times 15\\).",
+          "solution": "\\\\(64,800\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 180, quad \\text{Per Sub-Unit} = 24\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(15 \\\\times 180 = 2700\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(2700 \\\\times 24 = 64800\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q16_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A shipbuilding dock installs steel plating on \\(20\\) naval defense vessels.\nEach vessel requires \\(950\\) steel plates. If each plate is secured using \\(18\\) high-tensile bolts, calculate the total number of bolts required.",
+          "options": [
+            "\\\\(342,000\\\\)",
+            "\\\\(341,982\\\\)",
+            "\\\\(342,950\\\\)",
+            "\\\\(341,900\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(18 \\times 950 \\times 20\\).",
+          "solution": "\\\\(342,000\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 20, quad \\text{Per Unit} = 950, quad \\text{Per Sub-Unit} = 18\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(20 \\\\times 950 = 19000\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(19000 \\\\times 18 = 342000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q17_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A utility company commissions \\(35\\) offshore wind turbines.\nEach wind turbine contains \\(240\\) mechanical gears. If each gear assembly requires \\(12\\) heavy-duty bearings, calculate the total number of bearings deployed.",
+          "options": [
+            "\\\\(100,800\\\\)",
+            "\\\\(100,788\\\\)",
+            "\\\\(101,040\\\\)",
+            "\\\\(100,700\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(12 \\times 240 \\times 35\\).",
+          "solution": "\\\\(100,800\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 35, quad \\text{Per Unit} = 240, quad \\text{Per Sub-Unit} = 12\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(35 \\\\times 240 = 8400\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(8400 \\\\times 12 = 100800\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q18_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A transit authority installs overhead lines along \\(14\\) sectors of high-speed rail.\nEach sector contains \\(640\\) support masts. If each mast requires \\(16\\) ceramic insulators, calculate the total number of insulators installed.",
+          "options": [
+            "\\\\(143,360\\\\)",
+            "\\\\(143,344\\\\)",
+            "\\\\(144,000\\\\)",
+            "\\\\(143,260\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(16 \\times 640 \\times 14\\).",
+          "solution": "\\\\(143,360\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 14, quad \\text{Per Unit} = 640, quad \\text{Per Sub-Unit} = 16\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(14 \\\\times 640 = 8960\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(8960 \\\\times 16 = 143360\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q19_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An astronomical observatory configures \\(18\\) primary telescope mirror segments.\nEach segment is positioned by \\(128\\) sub-actuators. If each sub-actuator has \\(48\\) sensors, how many total sensors are active?",
+          "options": [
+            "\\\\(110,592\\\\)",
+            "\\\\(110,544\\\\)",
+            "\\\\(110,720\\\\)",
+            "\\\\(110,492\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(48 \\times 128 \\times 18\\).",
+          "solution": "\\\\(110,592\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 18, quad \\text{Per Unit} = 128, quad \\text{Per Sub-Unit} = 48\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(18 \\\\times 128 = 2304\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(2304 \\\\times 48 = 110592\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q20_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A tech company builds a supercomputer array spanning \\(24\\) compute cabinets.\nEach cabinet contains \\(512\\) processing nodes. If each node requires \\(32\\) fiber optic cables, calculate the total length of optical cable units.",
+          "options": [
+            "\\\\(393,216\\\\)",
+            "\\\\(393,184\\\\)",
+            "\\\\(393,728\\\\)",
+            "\\\\(393,116\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(32 \\times 512 \\times 24\\).",
+          "solution": "\\\\(393,216\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 24, quad \\text{Per Unit} = 512, quad \\text{Per Sub-Unit} = 32\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(24 \\\\times 512 = 12288\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(12288 \\\\times 32 = 393216\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q21_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An orbital space station integrates solar arrays on \\(12\\) wing trusses.\nEach truss contains \\(160\\) photovoltaic frames. If each frame holds \\(120\\) silicon solar cells, find the total number of cells generating power.",
+          "options": [
+            "\\\\(230,400\\\\)",
+            "\\\\(230,280\\\\)",
+            "\\\\(230,560\\\\)",
+            "\\\\(230,300\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(120 \\times 160 \\times 12\\).",
+          "solution": "\\\\(230,400\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 12, quad \\text{Per Unit} = 160, quad \\text{Per Sub-Unit} = 120\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(12 \\\\times 160 = 1920\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(1920 \\\\times 120 = 230400\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q22_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A commercial logistics company configures \\(20\\) automated delivery drones.\nEach drone is equipped with \\(325\\) battery bays. If each bay contains \\(14\\) copper terminal pins, calculate the total number of terminal pins.",
+          "options": [
+            "\\\\(91,000\\\\)",
+            "\\\\(90,986\\\\)",
+            "\\\\(91,325\\\\)",
+            "\\\\(90,900\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(14 \\times 325 \\times 20\\).",
+          "solution": "\\\\(91,000\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 20, quad \\text{Per Unit} = 325, quad \\text{Per Sub-Unit} = 14\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(20 \\\\times 325 = 6500\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(6500 \\\\times 14 = 91000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q23_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An environmental non-profit deploys \\(15\\) marine cleanup barriers.\nEach barrier consists of \\(480\\) segments. If each segment is supported by \\(25\\) heavy-duty buoys, calculate the total number of buoys deployed.",
+          "options": [
+            "\\\\(180,000\\\\)",
+            "\\\\(179,975\\\\)",
+            "\\\\(180,480\\\\)",
+            "\\\\(179,900\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(25 \\times 480 \\times 15\\).",
+          "solution": "\\\\(180,000\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 480, quad \\text{Per Sub-Unit} = 25\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(15 \\\\times 480 = 7200\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(7200 \\\\times 25 = 180000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q24_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A power grid operator installs substation gear across \\(42\\) local municipalities.\nEach municipality operates \\(125\\) distribution nodes. If each node requires \\(8\\) circuit breaker relays, calculate the total relays deployed.",
+          "options": [
+            "\\\\(42,000\\\\)",
+            "\\\\(41,992\\\\)",
+            "\\\\(42,125\\\\)",
+            "\\\\(41,900\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(8 \\times 125 \\times 42\\).",
+          "solution": "\\\\(42,000\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 42, quad \\text{Per Unit} = 125, quad \\text{Per Sub-Unit} = 8\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(42 \\\\times 125 = 5250\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(5250 \\\\times 8 = 42000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q25_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cloud security provider operates \\(16\\) backup server clusters.\nEach cluster houses \\(850\\) storage arrays. If each array contains \\(16\\) solid-state drives, calculate the total number of drives online.",
+          "options": [
+            "\\\\(217,600\\\\)",
+            "\\\\(217,584\\\\)",
+            "\\\\(218,450\\\\)",
+            "\\\\(217,500\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(16 \\times 850 \\times 16\\).",
+          "solution": "\\\\(217,600\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 16, quad \\text{Per Unit} = 850, quad \\text{Per Sub-Unit} = 16\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(16 \\\\times 850 = 13600\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(13600 \\\\times 16 = 217600\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q26_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A coastal desalination plant runs \\(22\\) high-pressure intake pumps.\nEach pump utilizes \\(360\\) water flow valves. If each valve is fitted with \\(12\\) safety gaskets, calculate the total number of gaskets required.",
+          "options": [
+            "\\\\(95,040\\\\)",
+            "\\\\(95,028\\\\)",
+            "\\\\(95,400\\\\)",
+            "\\\\(94,940\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(12 \\times 360 \\times 22\\).",
+          "solution": "\\\\(95,040\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 22, quad \\text{Per Unit} = 360, quad \\text{Per Sub-Unit} = 12\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(22 \\\\times 360 = 7920\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(7920 \\\\times 12 = 95040\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q27_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A container shipping line loads cargo onto \\(15\\) global freighter vessels.\nEach freighter has \\(450\\) container bay slots. If each container slot uses \\(24\\) lock brackets, calculate the total number of lock brackets required.",
+          "options": [
+            "\\\\(162,000\\\\)",
+            "\\\\(161,976\\\\)",
+            "\\\\(162,450\\\\)",
+            "\\\\(161,900\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(24 \\times 450 \\times 15\\).",
+          "solution": "\\\\(162,000\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 450, quad \\text{Per Sub-Unit} = 24\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(15 \\\\times 450 = 6750\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(6750 \\\\times 24 = 162000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q28_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A commercial construction firm installs hydronic heating across \\(12\\) apartment floors.\nEach floor requires \\(144\\) radiator pipelines. If each pipeline is secured with \\(36\\) metal clamps, find the total number of clamps used.",
+          "options": [
+            "\\\\(62,208\\\\)",
+            "\\\\(62,172\\\\)",
+            "\\\\(62,352\\\\)",
+            "\\\\(62,108\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(36 \\times 144 \\times 12\\).",
+          "solution": "\\\\(62,208\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 12, quad \\text{Per Unit} = 144, quad \\text{Per Sub-Unit} = 36\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(12 \\\\times 144 = 1728\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(1728 \\\\times 36 = 62208\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q29_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An enterprise server room contains \\(25\\) industrial mainframe racks.\nEach rack houses \\(230\\) cooling fans. If each fan assembly is secured with \\(48\\) mounting screws, find the total number of screws required.",
+          "options": [
+            "\\\\(276,000\\\\)",
+            "\\\\(275,952\\\\)",
+            "\\\\(276,230\\\\)",
+            "\\\\(275,900\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(48 \\times 230 \\times 25\\).",
+          "solution": "\\\\(276,000\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 25, quad \\text{Per Unit} = 230, quad \\text{Per Sub-Unit} = 48\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(25 \\\\times 230 = 5750\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(5750 \\\\times 48 = 276000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q30_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A food processing plant operates \\(18\\) optical grain sorting machines.\nEach machine contains \\(680\\) sensor channels. If each sensor channel utilizes \\(15\\) laser diodes, calculate the total number of diodes.",
+          "options": [
+            "\\\\(183,600\\\\)",
+            "\\\\(183,585\\\\)",
+            "\\\\(184,280\\\\)",
+            "\\\\(183,500\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(15 \\times 680 \\times 18\\).",
+          "solution": "\\\\(183,600\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 18, quad \\text{Per Unit} = 680, quad \\text{Per Sub-Unit} = 15\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(18 \\\\times 680 = 12240\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(12240 \\\\times 15 = 183600\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q31_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A driverless taxi operator manufactures a fleet of \\(50\\) autonomous passenger cars.\nEach car is fitted with \\(85\\) optical sensor modules. If each module contains \\(14\\) specialized lenses, calculate the total lens count.",
+          "options": [
+            "\\\\(59,500\\\\)",
+            "\\\\(59,486\\\\)",
+            "\\\\(59,585\\\\)",
+            "\\\\(59,400\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(14 \\times 85 \\times 50\\).",
+          "solution": "\\\\(59,500\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 50, quad \\text{Per Unit} = 85, quad \\text{Per Sub-Unit} = 14\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(50 \\\\times 85 = 4250\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(4250 \\\\times 14 = 59500\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q32_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An electronics factory manufactures printed circuit boards in \\(14\\) assembly batches.\nEach batch yields \\(240\\) circuit boards. If each circuit board requires \\(125\\) solder joints, calculate the total number of solder joints.",
+          "options": [
+            "\\\\(420,000\\\\)",
+            "\\\\(419,875\\\\)",
+            "\\\\(420,240\\\\)",
+            "\\\\(419,900\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(125 \\times 240 \\times 14\\).",
+          "solution": "\\\\(420,000\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 14, quad \\text{Per Unit} = 240, quad \\text{Per Sub-Unit} = 125\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(14 \\\\times 240 = 3360\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(3360 \\\\times 125 = 420000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q33_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A defense facility installs biometric verification gates at \\(16\\) secure complexes.\nEach complex has \\(375\\) access doors. If each access door requires \\(8\\) card scanners, calculate the total number of scanners.",
+          "options": [
+            "\\\\(48,000\\\\)",
+            "\\\\(47,992\\\\)",
+            "\\\\(48,375\\\\)",
+            "\\\\(47,900\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(8 \\times 375 \\times 16\\).",
+          "solution": "\\\\(48,000\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 16, quad \\text{Per Unit} = 375, quad \\text{Per Sub-Unit} = 8\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(16 \\\\times 375 = 6000\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(6000 \\\\times 8 = 48000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q34_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A municipal utility installs smart energy meters across \\(20\\) neighborhood districts.\nEach district contains \\(640\\) households. If each household meter reports on \\(24\\) variables, find the total data variables tracked.",
+          "options": [
+            "\\\\(307,200\\\\)",
+            "\\\\(307,176\\\\)",
+            "\\\\(307,840\\\\)",
+            "\\\\(307,100\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(24 \\times 640 \\times 20\\).",
+          "solution": "\\\\(307,200\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 20, quad \\text{Per Unit} = 640, quad \\text{Per Sub-Unit} = 24\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(20 \\\\times 640 = 12800\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(12800 \\\\times 24 = 307200\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q35_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A chemical company sets up laboratories in \\(35\\) regional locations.\nEach lab runs \\(120\\) high-speed centrifuges. If each centrifuge requires \\(16\\) silicone seals, calculate the total number of seals ordered.",
+          "options": [
+            "\\\\(67,200\\\\)",
+            "\\\\(67,184\\\\)",
+            "\\\\(67,320\\\\)",
+            "\\\\(67,100\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(16 \\times 120 \\times 35\\).",
+          "solution": "\\\\(67,200\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 35, quad \\text{Per Unit} = 120, quad \\text{Per Sub-Unit} = 16\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(35 \\\\times 120 = 4200\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(4200 \\\\times 16 = 67200\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q36_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A semiconductor fabrication plant maintains air purity across \\(15\\) cleanroom bays.\nEach cleanroom bay houses \\(560\\) ventilation units. If each ventilation unit contains \\(12\\) HEPA filters, calculate the total filter count.",
+          "options": [
+            "\\\\(100,800\\\\)",
+            "\\\\(100,788\\\\)",
+            "\\\\(101,360\\\\)",
+            "\\\\(100,700\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(12 \\times 560 \\times 15\\).",
+          "solution": "\\\\(100,800\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 15, quad \\text{Per Unit} = 560, quad \\text{Per Sub-Unit} = 12\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(15 \\\\times 560 = 8400\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(8400 \\\\times 12 = 100800\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q37_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A mobile network operator constructs \\(14\\) communication transmission towers.\nEach tower connects \\(150\\) fiber patch panels. If each patch panel features \\(48\\) ports, calculate the total number of ports.",
+          "options": [
+            "\\\\(100,800\\\\)",
+            "\\\\(100,752\\\\)",
+            "\\\\(100,950\\\\)",
+            "\\\\(100,700\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(48 \\times 150 \\times 14\\).",
+          "solution": "\\\\(100,800\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 14, quad \\text{Per Unit} = 150, quad \\text{Per Sub-Unit} = 48\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(14 \\\\times 150 = 2100\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(2100 \\\\times 48 = 100800\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q38_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A commercial port operator commissions \\(12\\) giant cargo container cranes.\nEach crane structure contains \\(280\\) steel joints. If each joint is fastened with \\(32\\) industrial rivets, find the total number of rivets.",
+          "options": [
+            "\\\\(107,520\\\\)",
+            "\\\\(107,488\\\\)",
+            "\\\\(107,800\\\\)",
+            "\\\\(107,420\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(32 \\times 280 \\times 12\\).",
+          "solution": "\\\\(107,520\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 12, quad \\text{Per Unit} = 280, quad \\text{Per Sub-Unit} = 32\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(12 \\\\times 280 = 3360\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(3360 \\\\times 32 = 107520\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q39_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A smart city initiative deploys streetlights across \\(18\\) municipal roads.\nEach road features \\(350\\) lampposts. If each lamppost is fitted with \\(64\\) high-intensity LED diodes, calculate the total number of LEDs.",
+          "options": [
+            "\\\\(403,200\\\\)",
+            "\\\\(403,136\\\\)",
+            "\\\\(403,550\\\\)",
+            "\\\\(403,100\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(64 \\times 350 \\times 18\\).",
+          "solution": "\\\\(403,200\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 18, quad \\text{Per Unit} = 350, quad \\text{Per Sub-Unit} = 64\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(18 \\\\times 350 = 6300\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(6300 \\\\times 64 = 403200\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q40_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A search engine company upgrades RAM in \\(25\\) supercomputing mainframe cabinets.\nEach cabinet contains \\(96\\) server blades. If each server blade requires \\(240\\) memory pin connectors, calculate the total number of pin connectors.",
+          "options": [
+            "\\\\(576,000\\\\)",
+            "\\\\(575,760\\\\)",
+            "\\\\(576,096\\\\)",
+            "\\\\(575,900\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three quantities together: \\(240 \\times 96 \\times 25\\).",
+          "solution": "\\\\(576,000\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the base units and calculation elements from the problem statement.",
+              "work": "\\\\(\\text{Units} = 25, quad \\text{Per Unit} = 96, quad \\text{Per Sub-Unit} = 240\\\\)"
+            },
+            {
+              "explain": "Calculate the total sub-units across all units.",
+              "work": "\\\\(25 \\\\times 96 = 2400\\\\)"
+            },
+            {
+              "explain": "Multiply by the final value per sub-unit to get the total output.",
+              "work": "\\\\(2400 \\\\times 240 = 576000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q41_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A calibration laboratory tests \\(2465\\) sensory data entries.\nThe processor packages the entries into test blocks of \\(17\\) entries each.\nHow many full blocks are created, and how many leftover entries remain?",
+          "options": [
+            "\\\\(145\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(145 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(146 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(144 remainder 1\\\\) packages, remainder \\\\(0\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(2465 \\div 17\\).",
+          "solution": "\\\\(145\\\\) packages, remainder \\\\(0\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 2465, quad \\text{Divisor} = 17\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(2465 \\\\div 17 = 145\\\\text{ remainder } 0\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(0 < 17 \\implies \\\\text{Quotient: } 145,\\ \\\\text{Remainder: } 0\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q42_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A secure cryptographic server processes \\(4187\\) data blocks.\nThe blocks are partitioned into secure batches of \\(23\\) blocks each.\nHow many full batches are created, and how many leftover blocks remain?",
+          "options": [
+            "\\\\(182\\\\) packages, remainder \\\\(1\\\\) entries",
+            "\\\\(182 remainder 0\\\\) packages, remainder \\\\(1\\\\) entries",
+            "\\\\(183 remainder 1\\\\) packages, remainder \\\\(1\\\\) entries",
+            "\\\\(181 remainder 2\\\\) packages, remainder \\\\(1\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(4187 \\div 23\\).",
+          "solution": "\\\\(182\\\\) packages, remainder \\\\(1\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 4187, quad \\text{Divisor} = 23\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(4187 \\\\div 23 = 182\\\\text{ remainder } 1\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(1 < 23 \\implies \\\\text{Quotient: } 182,\\ \\\\text{Remainder: } 1\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q43_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A community solar microgrid distributes electrical power to \\(3057\\) homes.\nThe homes are connected in local grids of \\(13\\) homes each.\nHow many full local grids can be formed, and how many leftover homes remain?",
+          "options": [
+            "\\\\(235\\\\) packages, remainder \\\\(2\\\\) entries",
+            "\\\\(235 remainder 0\\\\) packages, remainder \\\\(2\\\\) entries",
+            "\\\\(236 remainder 2\\\\) packages, remainder \\\\(2\\\\) entries",
+            "\\\\(234 remainder 3\\\\) packages, remainder \\\\(2\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3057 \\div 13\\).",
+          "solution": "\\\\(235\\\\) packages, remainder \\\\(2\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3057, quad \\text{Divisor} = 13\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3057 \\\\div 13 = 235\\\\text{ remainder } 2\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(2 < 13 \\implies \\\\text{Quotient: } 235,\\ \\\\text{Remainder: } 2\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q44_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A gas pipeline inspection robot checks \\(3251\\) pressure valves.\nThe valves are grouped into segments of \\(29\\) valves each.\nHow many full segments are inspected, and how many leftover valves remain?",
+          "options": [
+            "\\\\(112\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(112 remainder 1\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(113 remainder 3\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(111 remainder 4\\\\) packages, remainder \\\\(3\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3251 \\div 29\\).",
+          "solution": "\\\\(112\\\\) packages, remainder \\\\(3\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3251, quad \\text{Divisor} = 29\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3251 \\\\div 29 = 112\\\\text{ remainder } 3\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(3 < 29 \\implies \\\\text{Quotient: } 112,\\ \\\\text{Remainder: } 3\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q45_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A shipping warehouse prepares \\(5119\\) parcel boxes for dispatch.\nThe parcel boxes are loaded onto pallets of \\(31\\) boxes each.\nHow many full pallets are loaded, and how many leftover boxes remain?",
+          "options": [
+            "\\\\(165\\\\) packages, remainder \\\\(4\\\\) entries",
+            "\\\\(165 remainder 2\\\\) packages, remainder \\\\(4\\\\) entries",
+            "\\\\(166 remainder 4\\\\) packages, remainder \\\\(4\\\\) entries",
+            "\\\\(164 remainder 5\\\\) packages, remainder \\\\(4\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5119 \\div 31\\).",
+          "solution": "\\\\(165\\\\) packages, remainder \\\\(4\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5119, quad \\text{Divisor} = 31\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5119 \\\\div 31 = 165\\\\text{ remainder } 4\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(4 < 31 \\implies \\\\text{Quotient: } 165,\\ \\\\text{Remainder: } 4\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q46_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An ornithology sanctuary monitors \\(2437\\) migratory birds.\nThe birds are banded in group flocks of \\(19\\) birds each for tracking.\nHow many full flocks are formed, and how many leftover birds remain?",
+          "options": [
+            "\\\\(128\\\\) packages, remainder \\\\(5\\\\) entries",
+            "\\\\(128 remainder 3\\\\) packages, remainder \\\\(5\\\\) entries",
+            "\\\\(129 remainder 5\\\\) packages, remainder \\\\(5\\\\) entries",
+            "\\\\(127 remainder 6\\\\) packages, remainder \\\\(5\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(2437 \\div 19\\).",
+          "solution": "\\\\(128\\\\) packages, remainder \\\\(5\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 2437, quad \\text{Divisor} = 19\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(2437 \\\\div 19 = 128\\\\text{ remainder } 5\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(5 < 19 \\implies \\\\text{Quotient: } 128,\\ \\\\text{Remainder: } 5\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q47_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A mechanical factory packages \\(3854\\) precision gears.\nThe gears are stored in cases of \\(37\\) gears each.\nHow many full cases are packed, and how many leftover gears remain?",
+          "options": [
+            "\\\\(104\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(104 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(105 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(103 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3854 \\div 37\\).",
+          "solution": "\\\\(104\\\\) packages, remainder \\\\(6\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3854, quad \\text{Divisor} = 37\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3854 \\\\div 37 = 104\\\\text{ remainder } 6\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(6 < 37 \\implies \\\\text{Quotient: } 104,\\ \\\\text{Remainder: } 6\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q48_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A seismology laboratory logs \\(6403\\) tremor signals.\nThe signals are archived in data blocks of \\(41\\) signals each.\nHow many full data blocks are saved, and how many leftover signals remain?",
+          "options": [
+            "\\\\(156\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(156 remainder 5\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(157 remainder 7\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(155 remainder 8\\\\) packages, remainder \\\\(7\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(6403 \\div 41\\).",
+          "solution": "\\\\(156\\\\) packages, remainder \\\\(7\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 6403, quad \\text{Divisor} = 41\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(6403 \\\\div 41 = 156\\\\text{ remainder } 7\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(7 < 41 \\implies \\\\text{Quotient: } 156,\\ \\\\text{Remainder: } 7\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q49_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A marine weather network operates \\(3448\\) transmitters.\nThe transmitters are installed in local clusters of \\(16\\) transmitters each.\nHow many full clusters are active, and how many leftover transmitters remain?",
+          "options": [
+            "\\\\(215\\\\) packages, remainder \\\\(8\\\\) entries",
+            "\\\\(215 remainder 6\\\\) packages, remainder \\\\(8\\\\) entries",
+            "\\\\(216 remainder 8\\\\) packages, remainder \\\\(8\\\\) entries",
+            "\\\\(214 remainder 9\\\\) packages, remainder \\\\(8\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3448 \\div 16\\).",
+          "solution": "\\\\(215\\\\) packages, remainder \\\\(8\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3448, quad \\text{Divisor} = 16\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3448 \\\\div 16 = 215\\\\text{ remainder } 8\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(8 < 16 \\implies \\\\text{Quotient: } 215,\\ \\\\text{Remainder: } 8\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q50_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biomedical facility packages \\(4617\\) vaccine vials.\nThe vials are loaded into shipping trays of \\(24\\) vials each.\nHow many full shipping trays are completed, and how many leftover vials remain?",
+          "options": [
+            "\\\\(192\\\\) packages, remainder \\\\(9\\\\) entries",
+            "\\\\(192 remainder 7\\\\) packages, remainder \\\\(9\\\\) entries",
+            "\\\\(193 remainder 9\\\\) packages, remainder \\\\(9\\\\) entries",
+            "\\\\(191 remainder 10\\\\) packages, remainder \\\\(9\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(4617 \\div 24\\).",
+          "solution": "\\\\(192\\\\) packages, remainder \\\\(9\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 4617, quad \\text{Divisor} = 24\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(4617 \\\\div 24 = 192\\\\text{ remainder } 9\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(9 < 24 \\implies \\\\text{Quotient: } 192,\\ \\\\text{Remainder: } 9\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q51_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An aerospace quality controller inspects \\(5500\\) fuselage rivets.\nThe rivets are categorized in test lines of \\(18\\) rivets each.\nHow many full lines are inspected, and how many leftover rivets remain?",
+          "options": [
+            "\\\\(305\\\\) packages, remainder \\\\(10\\\\) entries",
+            "\\\\(305 remainder 8\\\\) packages, remainder \\\\(10\\\\) entries",
+            "\\\\(306 remainder 10\\\\) packages, remainder \\\\(10\\\\) entries",
+            "\\\\(304 remainder 11\\\\) packages, remainder \\\\(10\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5500 \\div 18\\).",
+          "solution": "\\\\(305\\\\) packages, remainder \\\\(10\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5500, quad \\text{Divisor} = 18\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5500 \\\\div 18 = 305\\\\text{ remainder } 10\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(10 < 18 \\implies \\\\text{Quotient: } 305,\\ \\\\text{Remainder: } 10\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q52_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A quantum compiler maps \\(3787\\) computational nodes.\nThe nodes are grouped into execution units of \\(32\\) nodes each.\nHow many full execution units are mapped, and how many leftover nodes remain?",
+          "options": [
+            "\\\\(118\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(118 remainder 9\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(119 remainder 11\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(117 remainder 12\\\\) packages, remainder \\\\(11\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3787 \\div 32\\).",
+          "solution": "\\\\(118\\\\) packages, remainder \\\\(11\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3787, quad \\text{Divisor} = 32\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3787 \\\\div 32 = 118\\\\text{ remainder } 11\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(11 < 32 \\implies \\\\text{Quotient: } 118,\\ \\\\text{Remainder: } 11\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q53_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A department store arranges \\(3912\\) inventory crates.\nThe crates are stacked on metal shelves of \\(15\\) crates each.\nHow many full shelves are loaded, and how many leftover crates remain?",
+          "options": [
+            "\\\\(260\\\\) packages, remainder \\\\(12\\\\) entries",
+            "\\\\(260 remainder 10\\\\) packages, remainder \\\\(12\\\\) entries",
+            "\\\\(261 remainder 12\\\\) packages, remainder \\\\(12\\\\) entries",
+            "\\\\(259 remainder 13\\\\) packages, remainder \\\\(12\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3912 \\div 15\\).",
+          "solution": "\\\\(260\\\\) packages, remainder \\\\(12\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3912, quad \\text{Divisor} = 15\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3912 \\\\div 15 = 260\\\\text{ remainder } 12\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(12 < 15 \\implies \\\\text{Quotient: } 260,\\ \\\\text{Remainder: } 12\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q54_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A vehicle plant processes \\(8113\\) lithium battery cells.\nThe cells are compiled into standard packs of \\(45\\) cells each.\nHow many full battery packs can be built, and how many leftover cells remain?",
+          "options": [
+            "\\\\(180\\\\) packages, remainder \\\\(13\\\\) entries",
+            "\\\\(180 remainder 11\\\\) packages, remainder \\\\(13\\\\) entries",
+            "\\\\(181 remainder 13\\\\) packages, remainder \\\\(13\\\\) entries",
+            "\\\\(179 remainder 14\\\\) packages, remainder \\\\(13\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(8113 \\div 45\\).",
+          "solution": "\\\\(180\\\\) packages, remainder \\\\(13\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 8113, quad \\text{Divisor} = 45\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(8113 \\\\div 45 = 180\\\\text{ remainder } 13\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(13 < 45 \\implies \\\\text{Quotient: } 180,\\ \\\\text{Remainder: } 13\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q55_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecom satellite array registers \\(5404\\) antenna elements.\nThe elements are wired in transceiver channels of \\(22\\) elements each.\nHow many full channels are connected, and how many leftover elements remain?",
+          "options": [
+            "\\\\(245\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(245 remainder 12\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(246 remainder 14\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(244 remainder 15\\\\) packages, remainder \\\\(14\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5404 \\div 22\\).",
+          "solution": "\\\\(245\\\\) packages, remainder \\\\(14\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5404, quad \\text{Divisor} = 22\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5404 \\\\div 22 = 245\\\\text{ remainder } 14\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(14 < 22 \\implies \\\\text{Quotient: } 245,\\ \\\\text{Remainder: } 14\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q56_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A naval shipyard aligns \\(5769\\) heavy steel plates.\nThe plates are welded in structural panels of \\(14\\) plates each.\nHow many full panels are constructed, and how many leftover plates remain?",
+          "options": [
+            "\\\\(412\\\\) packages, remainder \\\\(1\\\\) entries",
+            "\\\\(412 remainder 0\\\\) packages, remainder \\\\(1\\\\) entries",
+            "\\\\(413 remainder 1\\\\) packages, remainder \\\\(1\\\\) entries",
+            "\\\\(411 remainder 2\\\\) packages, remainder \\\\(1\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5769 \\div 14\\).",
+          "solution": "\\\\(412\\\\) packages, remainder \\\\(1\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5769, quad \\text{Divisor} = 14\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5769 \\\\div 14 = 412\\\\text{ remainder } 1\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(1 < 14 \\implies \\\\text{Quotient: } 412,\\ \\\\text{Remainder: } 1\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q57_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineer inspects \\(3516\\) drive cogs on offshore turbines.\nThe cogs are grouped into maintenance batches of \\(28\\) cogs each.\nHow many full batches are inspected, and how many leftover cogs remain?",
+          "options": [
+            "\\\\(125\\\\) packages, remainder \\\\(16\\\\) entries",
+            "\\\\(125 remainder 14\\\\) packages, remainder \\\\(16\\\\) entries",
+            "\\\\(126 remainder 16\\\\) packages, remainder \\\\(16\\\\) entries",
+            "\\\\(124 remainder 17\\\\) packages, remainder \\\\(16\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3516 \\div 28\\).",
+          "solution": "\\\\(125\\\\) packages, remainder \\\\(16\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3516, quad \\text{Divisor} = 28\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3516 \\\\div 28 = 125\\\\text{ remainder } 16\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(16 < 28 \\implies \\\\text{Quotient: } 125,\\ \\\\text{Remainder: } 16\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q58_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A railway operator audits \\(5087\\) overhead line masts.\nThe masts are divided into track sectors of \\(26\\) masts each.\nHow many full sectors are audited, and how many leftover masts remain?",
+          "options": [
+            "\\\\(195\\\\) packages, remainder \\\\(17\\\\) entries",
+            "\\\\(195 remainder 15\\\\) packages, remainder \\\\(17\\\\) entries",
+            "\\\\(196 remainder 17\\\\) packages, remainder \\\\(17\\\\) entries",
+            "\\\\(194 remainder 18\\\\) packages, remainder \\\\(17\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5087 \\div 26\\).",
+          "solution": "\\\\(195\\\\) packages, remainder \\\\(17\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5087, quad \\text{Divisor} = 26\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5087 \\\\div 26 = 195\\\\text{ remainder } 17\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(17 < 26 \\implies \\\\text{Quotient: } 195,\\ \\\\text{Remainder: } 17\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q59_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An astronomical facility configures \\(6786\\) mirror actuators.\nThe actuators are grouped in network loops of \\(12\\) actuators each.\nHow many full network loops are configured, and how many leftover actuators remain?",
+          "options": [
+            "\\\\(565\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(565 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(566 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(564 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(6786 \\div 12\\).",
+          "solution": "\\\\(565\\\\) packages, remainder \\\\(6\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 6786, quad \\text{Divisor} = 12\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(6786 \\\\div 12 = 565\\\\text{ remainder } 6\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(6 < 12 \\implies \\\\text{Quotient: } 565,\\ \\\\text{Remainder: } 6\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q60_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A datacenter technician routes \\(5059\\) power cables.\nThe cables are bundled in server trunk links of \\(35\\) cables each.\nHow many full trunk links are routed, and how many leftover cables remain?",
+          "options": [
+            "\\\\(144\\\\) packages, remainder \\\\(19\\\\) entries",
+            "\\\\(144 remainder 17\\\\) packages, remainder \\\\(19\\\\) entries",
+            "\\\\(145 remainder 19\\\\) packages, remainder \\\\(19\\\\) entries",
+            "\\\\(143 remainder 20\\\\) packages, remainder \\\\(19\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5059 \\div 35\\).",
+          "solution": "\\\\(144\\\\) packages, remainder \\\\(19\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5059, quad \\text{Divisor} = 35\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5059 \\\\div 35 = 144\\\\text{ remainder } 19\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(19 < 35 \\implies \\\\text{Quotient: } 144,\\ \\\\text{Remainder: } 19\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q61_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An orbital station inventory audit checks \\(3300\\) oxygen canisters.\nThe canisters are stored in modular racks of \\(20\\) canisters each.\nHow many full modular racks are loaded, and how many leftover canisters remain?",
+          "options": [
+            "\\\\(165\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(165 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(166 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(164 remainder 1\\\\) packages, remainder \\\\(0\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3300 \\div 20\\).",
+          "solution": "\\\\(165\\\\) packages, remainder \\\\(0\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3300, quad \\text{Divisor} = 20\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3300 \\\\div 20 = 165\\\\text{ remainder } 0\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(0 < 20 \\implies \\\\text{Quotient: } 165,\\ \\\\text{Remainder: } 0\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q62_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A drone production line tests \\(5013\\) battery terminal pins.\nThe pins are packaged in shipping boxes of \\(48\\) pins each.\nHow many full boxes are filled, and how many leftover pins remain?",
+          "options": [
+            "\\\\(104\\\\) packages, remainder \\\\(21\\\\) entries",
+            "\\\\(104 remainder 19\\\\) packages, remainder \\\\(21\\\\) entries",
+            "\\\\(105 remainder 21\\\\) packages, remainder \\\\(21\\\\) entries",
+            "\\\\(103 remainder 22\\\\) packages, remainder \\\\(21\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5013 \\div 48\\).",
+          "solution": "\\\\(104\\\\) packages, remainder \\\\(21\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5013, quad \\text{Divisor} = 48\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5013 \\\\div 48 = 104\\\\text{ remainder } 21\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(21 < 48 \\implies \\\\text{Quotient: } 104,\\ \\\\text{Remainder: } 21\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q63_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A marine conservation taskforce prepares \\(12047\\) barrier floats.\nThe floats are linked in assembly chains of \\(25\\) floats each.\nHow many full chains can be constructed, and how many leftover floats remain?",
+          "options": [
+            "\\\\(481\\\\) packages, remainder \\\\(22\\\\) entries",
+            "\\\\(481 remainder 20\\\\) packages, remainder \\\\(22\\\\) entries",
+            "\\\\(482 remainder 22\\\\) packages, remainder \\\\(22\\\\) entries",
+            "\\\\(480 remainder 23\\\\) packages, remainder \\\\(22\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(12047 \\div 25\\).",
+          "solution": "\\\\(481\\\\) packages, remainder \\\\(22\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 12047, quad \\text{Divisor} = 25\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(12047 \\\\div 25 = 481\\\\text{ remainder } 22\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(22 < 25 \\implies \\\\text{Quotient: } 481,\\ \\\\text{Remainder: } 22\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q64_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A grid engineering crew tests \\(10007\\) electrical relays.\nThe relays are grouped in circuit panels of \\(16\\) relays each.\nHow many full panels are completed, and how many leftover relays remain?",
+          "options": [
+            "\\\\(625\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(625 remainder 5\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(626 remainder 7\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(624 remainder 8\\\\) packages, remainder \\\\(7\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(10007 \\div 16\\).",
+          "solution": "\\\\(625\\\\) packages, remainder \\\\(7\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 10007, quad \\text{Divisor} = 16\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(10007 \\\\div 16 = 625\\\\text{ remainder } 7\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(7 < 16 \\implies \\\\text{Quotient: } 625,\\ \\\\text{Remainder: } 7\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q65_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cybersecurity server logs \\(20448\\) drive modules.\nThe modules are partitioned into backup groups of \\(24\\) modules each.\nHow many full backup groups are created, and how many leftover modules remain?",
+          "options": [
+            "\\\\(852\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(852 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(853 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(851 remainder 1\\\\) packages, remainder \\\\(0\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(20448 \\div 24\\).",
+          "solution": "\\\\(852\\\\) packages, remainder \\\\(0\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 20448, quad \\text{Divisor} = 24\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(20448 \\\\div 24 = 852\\\\text{ remainder } 0\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(0 < 24 \\implies \\\\text{Quotient: } 852,\\ \\\\text{Remainder: } 0\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q66_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A water maintenance project audits \\(10855\\) safety gaskets.\nThe gaskets are packaged in toolbags of \\(30\\) gaskets each.\nHow many full toolbags are prepared, and how many leftover gaskets remain?",
+          "options": [
+            "\\\\(361\\\\) packages, remainder \\\\(25\\\\) entries",
+            "\\\\(361 remainder 23\\\\) packages, remainder \\\\(25\\\\) entries",
+            "\\\\(362 remainder 25\\\\) packages, remainder \\\\(25\\\\) entries",
+            "\\\\(360 remainder 26\\\\) packages, remainder \\\\(25\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(10855 \\div 30\\).",
+          "solution": "\\\\(361\\\\) packages, remainder \\\\(25\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 10855, quad \\text{Divisor} = 30\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(10855 \\\\div 30 = 361\\\\text{ remainder } 25\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(25 < 30 \\implies \\\\text{Quotient: } 361,\\ \\\\text{Remainder: } 25\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q67_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A container port checks \\(8108\\) freighter lock brackets.\nThe brackets are boxed in supply containers of \\(18\\) brackets each.\nHow many full supply containers are checked, and how many leftover brackets remain?",
+          "options": [
+            "\\\\(450\\\\) packages, remainder \\\\(8\\\\) entries",
+            "\\\\(450 remainder 6\\\\) packages, remainder \\\\(8\\\\) entries",
+            "\\\\(451 remainder 8\\\\) packages, remainder \\\\(8\\\\) entries",
+            "\\\\(449 remainder 9\\\\) packages, remainder \\\\(8\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(8108 \\div 18\\).",
+          "solution": "\\\\(450\\\\) packages, remainder \\\\(8\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 8108, quad \\text{Divisor} = 18\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(8108 \\\\div 18 = 450\\\\text{ remainder } 8\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(8 < 18 \\implies \\\\text{Quotient: } 450,\\ \\\\text{Remainder: } 8\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q68_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A mechanical contractor installs \\(17343\\) structural pipe clamps.\nThe clamps are partitioned in installation bins of \\(12\\) clamps each.\nHow many full bins are consumed, and how many leftover clamps remain?",
+          "options": [
+            "\\\\(1445\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(1445 remainder 1\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(1446 remainder 3\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(1444 remainder 4\\\\) packages, remainder \\\\(3\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(17343 \\div 12\\).",
+          "solution": "\\\\(1445\\\\) packages, remainder \\\\(3\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 17343, quad \\text{Divisor} = 12\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(17343 \\\\div 12 = 1445\\\\text{ remainder } 3\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(3 < 12 \\implies \\\\text{Quotient: } 1445,\\ \\\\text{Remainder: } 3\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q69_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A hardware engineer audits \\(5088\\) mainframe mounting screws.\\The screws are stored in workshop drawers of \\(22\\) screws each.\nHow many full drawers can be filled, and how many leftover screws remain?",
+          "options": [
+            "\\\\(231\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(231 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(232 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(230 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5088 \\div 22\\).",
+          "solution": "\\\\(231\\\\) packages, remainder \\\\(6\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5088, quad \\text{Divisor} = 22\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5088 \\\\div 22 = 231\\\\text{ remainder } 6\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(6 < 22 \\implies \\\\text{Quotient: } 231,\\ \\\\text{Remainder: } 6\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q70_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A sorting machine factory calibrates \\(10229\\) laser diodes.\\The diodes are mapped into sensor lines of \\(15\\) diodes each.\nHow many full sensor lines are mapped, and how many leftover diodes remain?",
+          "options": [
+            "\\\\(681\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(681 remainder 12\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(682 remainder 14\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(680 remainder 15\\\\) packages, remainder \\\\(14\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(10229 \\div 15\\).",
+          "solution": "\\\\(681\\\\) packages, remainder \\\\(14\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 10229, quad \\text{Divisor} = 15\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(10229 \\\\div 15 = 681\\\\text{ remainder } 14\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(14 < 15 \\implies \\\\text{Quotient: } 681,\\ \\\\text{Remainder: } 14\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q71_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A municipal road network installs \\(3526\\) camera nodes.\nThe nodes are connected to local switches in groups of \\(19\\) nodes.\nHow many full switches are loaded, and how many leftover nodes remain?",
+          "options": [
+            "\\\\(185\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(185 remainder 9\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(186 remainder 11\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(184 remainder 12\\\\) packages, remainder \\\\(11\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3526 \\div 19\\).",
+          "solution": "\\\\(185\\\\) packages, remainder \\\\(11\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3526, quad \\text{Divisor} = 19\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3526 \\\\div 19 = 185\\\\text{ remainder } 11\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(11 < 19 \\implies \\\\text{Quotient: } 185,\\ \\\\text{Remainder: } 11\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q72_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A commercial shrimp farm places \\(1683\\) water aerator units.\nThe units are powered by regional control boxes handling \\(14\\) aerators each.\nHow many control boxes operate at full capacity, and how many leftover aerators remain?",
+          "options": [
+            "\\\\(120\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(120 remainder 1\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(121 remainder 3\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(119 remainder 4\\\\) packages, remainder \\\\(3\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(1683 \\div 14\\).",
+          "solution": "\\\\(120\\\\) packages, remainder \\\\(3\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 1683, quad \\text{Divisor} = 14\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(1683 \\\\div 14 = 120\\\\text{ remainder } 3\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(3 < 14 \\implies \\\\text{Quotient: } 120,\\ \\\\text{Remainder: } 3\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q73_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A beverage factory coordinates \\(5168\\) packaging lines.\nThe lines are organized in control groups of \\(24\\) lines each.\nHow many full control groups are managed, and how many leftover lines remain?",
+          "options": [
+            "\\\\(215\\\\) packages, remainder \\\\(8\\\\) entries",
+            "\\\\(215 remainder 6\\\\) packages, remainder \\\\(8\\\\) entries",
+            "\\\\(216 remainder 8\\\\) packages, remainder \\\\(8\\\\) entries",
+            "\\\\(214 remainder 9\\\\) packages, remainder \\\\(8\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5168 \\div 24\\).",
+          "solution": "\\\\(215\\\\) packages, remainder \\\\(8\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5168, quad \\text{Divisor} = 24\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5168 \\\\div 24 = 215\\\\text{ remainder } 8\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(8 < 24 \\implies \\\\text{Quotient: } 215,\\ \\\\text{Remainder: } 8\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q74_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A timber processing yard audits \\(3993\\) sorting cranes.\nThe cranes are distributed across timber bays containing \\(36\\) cranes each.\nHow many full timber bays are operational, and how many leftover cranes remain?",
+          "options": [
+            "\\\\(110\\\\) packages, remainder \\\\(33\\\\) entries",
+            "\\\\(110 remainder 31\\\\) packages, remainder \\\\(33\\\\) entries",
+            "\\\\(111 remainder 33\\\\) packages, remainder \\\\(33\\\\) entries",
+            "\\\\(109 remainder 34\\\\) packages, remainder \\\\(33\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3993 \\div 36\\).",
+          "solution": "\\\\(110\\\\) packages, remainder \\\\(33\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3993, quad \\text{Divisor} = 36\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3993 \\\\div 36 = 110\\\\text{ remainder } 33\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(33 < 36 \\implies \\\\text{Quotient: } 110,\\ \\\\text{Remainder: } 33\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q75_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A metallurgical plant installs \\(5440\\) heat sensors.\nThe sensors are linked to control rooms in groups of \\(17\\) sensors each.\nHow many control rooms are fully utilized, and how many leftover sensors remain?",
+          "options": [
+            "\\\\(320\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(320 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(321 remainder 0\\\\) packages, remainder \\\\(0\\\\) entries",
+            "\\\\(319 remainder 1\\\\) packages, remainder \\\\(0\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5440 \\div 17\\).",
+          "solution": "\\\\(320\\\\) packages, remainder \\\\(0\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5440, quad \\text{Divisor} = 17\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5440 \\\\div 17 = 320\\\\text{ remainder } 0\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(0 < 17 \\implies \\\\text{Quotient: } 320,\\ \\\\text{Remainder: } 0\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q76_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A medical center installs \\(3983\\) emergency call buttons.\nThe buttons are wired to master consoles handling \\(28\\) buttons each.\nHow many consoles are fully populated, and how many leftover buttons remain?",
+          "options": [
+            "\\\\(142\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(142 remainder 5\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(143 remainder 7\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(141 remainder 8\\\\) packages, remainder \\\\(7\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3983 \\div 28\\).",
+          "solution": "\\\\(142\\\\) packages, remainder \\\\(7\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3983, quad \\text{Divisor} = 28\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3983 \\\\div 28 = 142\\\\text{ remainder } 7\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(7 < 28 \\implies \\\\text{Quotient: } 142,\\ \\\\text{Remainder: } 7\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q77_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A subway system deploys \\(3650\\) smart card vending machines.\nThe machines are serviced in regional route sectors of \\(13\\) machines each.\nHow many full sectors are serviced, and how many leftover machines remain?",
+          "options": [
+            "\\\\(280\\\\) packages, remainder \\\\(10\\\\) entries",
+            "\\\\(280 remainder 8\\\\) packages, remainder \\\\(10\\\\) entries",
+            "\\\\(281 remainder 10\\\\) packages, remainder \\\\(10\\\\) entries",
+            "\\\\(279 remainder 11\\\\) packages, remainder \\\\(10\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3650 \\div 13\\).",
+          "solution": "\\\\(280\\\\) packages, remainder \\\\(10\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3650, quad \\text{Divisor} = 13\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3650 \\\\div 13 = 280\\\\text{ remainder } 10\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(10 < 13 \\implies \\\\text{Quotient: } 280,\\ \\\\text{Remainder: } 10\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q78_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A greenhouse collective sets up \\(5896\\) soil telemetry probes.\nThe probes are mapped to wireless hubs managing \\(31\\) probes each.\nHow many hubs run at maximum capacity, and how many leftover probes remain?",
+          "options": [
+            "\\\\(190\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(190 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(191 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(189 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5896 \\div 31\\).",
+          "solution": "\\\\(190\\\\) packages, remainder \\\\(6\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5896, quad \\text{Divisor} = 31\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5896 \\\\div 31 = 190\\\\text{ remainder } 6\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(6 < 31 \\implies \\\\text{Quotient: } 190,\\ \\\\text{Remainder: } 6\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q79_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A refining plant inspects \\(3404\\) pressure relief valves.\nThe valves are divided into inspection sectors of \\(22\\) valves each.\nHow many full sectors are inspected, and how many leftover valves remain?",
+          "options": [
+            "\\\\(154\\\\) packages, remainder \\\\(16\\\\) entries",
+            "\\\\(154 remainder 14\\\\) packages, remainder \\\\(16\\\\) entries",
+            "\\\\(155 remainder 16\\\\) packages, remainder \\\\(16\\\\) entries",
+            "\\\\(153 remainder 17\\\\) packages, remainder \\\\(16\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3404 \\div 22\\).",
+          "solution": "\\\\(154\\\\) packages, remainder \\\\(16\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3404, quad \\text{Divisor} = 22\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3404 \\\\div 22 = 154\\\\text{ remainder } 16\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(16 < 22 \\implies \\\\text{Quotient: } 154,\\ \\\\text{Remainder: } 16\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q80_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A county library system installs \\(6887\\) database search terminals.\nThe terminals are linked in network hubs of \\(16\\) terminals each.\nHow many full network hubs are occupied, and how many leftover terminals remain?",
+          "options": [
+            "\\\\(430\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(430 remainder 5\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(431 remainder 7\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(429 remainder 8\\\\) packages, remainder \\\\(7\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(6887 \\div 16\\).",
+          "solution": "\\\\(430\\\\) packages, remainder \\\\(7\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 6887, quad \\text{Divisor} = 16\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(6887 \\\\div 16 = 430\\\\text{ remainder } 7\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(7 < 16 \\implies \\\\text{Quotient: } 430,\\ \\\\text{Remainder: } 7\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q81_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A composite materials plant manufactures \\(7115\\) fiberglass rolls.\nThe rolls are stored on logistics racks of \\(25\\) rolls each.\nHow many full racks are loaded, and how many leftover rolls remain?",
+          "options": [
+            "\\\\(284\\\\) packages, remainder \\\\(15\\\\) entries",
+            "\\\\(284 remainder 13\\\\) packages, remainder \\\\(15\\\\) entries",
+            "\\\\(285 remainder 15\\\\) packages, remainder \\\\(15\\\\) entries",
+            "\\\\(283 remainder 16\\\\) packages, remainder \\\\(15\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(7115 \\div 25\\).",
+          "solution": "\\\\(284\\\\) packages, remainder \\\\(15\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 7115, quad \\text{Divisor} = 25\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(7115 \\\\div 25 = 284\\\\text{ remainder } 15\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(15 < 25 \\implies \\\\text{Quotient: } 284,\\ \\\\text{Remainder: } 15\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q82_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A smart city parking garage operates \\(4631\\) floor presence sensors.\nThe sensors are wired to regional controllers handling \\(45\\) sensors each.\nHow many fully loaded controllers are online, and how many leftover sensors remain?",
+          "options": [
+            "\\\\(102\\\\) packages, remainder \\\\(41\\\\) entries",
+            "\\\\(102 remainder 39\\\\) packages, remainder \\\\(41\\\\) entries",
+            "\\\\(103 remainder 41\\\\) packages, remainder \\\\(41\\\\) entries",
+            "\\\\(101 remainder 42\\\\) packages, remainder \\\\(41\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(4631 \\div 45\\).",
+          "solution": "\\\\(102\\\\) packages, remainder \\\\(41\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 4631, quad \\text{Divisor} = 45\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(4631 \\\\div 45 = 102\\\\text{ remainder } 41\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(41 < 45 \\implies \\\\text{Quotient: } 102,\\ \\\\text{Remainder: } 41\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q83_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A rural electricity board operates \\(7710\\) water-flow meters.\nThe meters are monitored in district sectors of \\(12\\) meters each.\nHow many full sectors are monitored, and how many leftover meters remain?",
+          "options": [
+            "\\\\(642\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(642 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(643 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(641 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(7710 \\div 12\\).",
+          "solution": "\\\\(642\\\\) packages, remainder \\\\(6\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 7710, quad \\text{Divisor} = 12\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(7710 \\\\div 12 = 642\\\\text{ remainder } 6\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(6 < 12 \\implies \\\\text{Quotient: } 642,\\ \\\\text{Remainder: } 6\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q84_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An environmental utility deploys \\(5803\\) heavy-duty sludge pumps.\nThe pumps are serviced in facility blocks of \\(18\\) pumps each.\nHow many full blocks are operational, and how many leftover pumps remain?",
+          "options": [
+            "\\\\(322\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(322 remainder 5\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(323 remainder 7\\\\) packages, remainder \\\\(7\\\\) entries",
+            "\\\\(321 remainder 8\\\\) packages, remainder \\\\(7\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5803 \\div 18\\).",
+          "solution": "\\\\(322\\\\) packages, remainder \\\\(7\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5803, quad \\text{Divisor} = 18\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5803 \\\\div 18 = 322\\\\text{ remainder } 7\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(7 < 18 \\implies \\\\text{Quotient: } 322,\\ \\\\text{Remainder: } 7\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q85_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A farm collective monitors \\(7244\\) organic digestion vessels.\nThe vessels are controlled in clusters of \\(15\\) vessels each.\nHow many full clusters are managed, and how many leftover vessels remain?",
+          "options": [
+            "\\\\(482\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(482 remainder 12\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(483 remainder 14\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(481 remainder 15\\\\) packages, remainder \\\\(14\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(7244 \\div 15\\).",
+          "solution": "\\\\(482\\\\) packages, remainder \\\\(14\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 7244, quad \\text{Divisor} = 15\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(7244 \\\\div 15 = 482\\\\text{ remainder } 14\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(14 < 15 \\implies \\\\text{Quotient: } 482,\\ \\\\text{Remainder: } 14\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q86_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A broadband network installs \\(4833\\) transmission repeaters.\nThe repeaters are clustered in distribution nodes of \\(42\\) repeaters each.\nHow many full nodes are active, and how many leftover repeaters remain?",
+          "options": [
+            "\\\\(115\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(115 remainder 1\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(116 remainder 3\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(114 remainder 4\\\\) packages, remainder \\\\(3\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(4833 \\div 42\\).",
+          "solution": "\\\\(115\\\\) packages, remainder \\\\(3\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 4833, quad \\text{Divisor} = 42\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(4833 \\\\div 42 = 115\\\\text{ remainder } 3\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(3 < 42 \\implies \\\\text{Quotient: } 115,\\ \\\\text{Remainder: } 3\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q87_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A city cooling system monitors \\(3932\\) water valve actuators.\nThe actuators are grouped in loop rings of \\(29\\) actuators each.\nHow many full loop rings are monitored, and how many leftover actuators remain?",
+          "options": [
+            "\\\\(135\\\\) packages, remainder \\\\(17\\\\) entries",
+            "\\\\(135 remainder 15\\\\) packages, remainder \\\\(17\\\\) entries",
+            "\\\\(136 remainder 17\\\\) packages, remainder \\\\(17\\\\) entries",
+            "\\\\(134 remainder 18\\\\) packages, remainder \\\\(17\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3932 \\div 29\\).",
+          "solution": "\\\\(135\\\\) packages, remainder \\\\(17\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3932, quad \\text{Divisor} = 29\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3932 \\\\div 29 = 135\\\\text{ remainder } 17\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(17 < 29 \\implies \\\\text{Quotient: } 135,\\ \\\\text{Remainder: } 17\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q88_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A safety board audits \\(3710\\) level crossing signal lights.\nThe lights are grouped in highway corridors of \\(33\\) lights each.\nHow many full corridors are audited, and how many leftover lights remain?",
+          "options": [
+            "\\\\(112\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(112 remainder 12\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(113 remainder 14\\\\) packages, remainder \\\\(14\\\\) entries",
+            "\\\\(111 remainder 15\\\\) packages, remainder \\\\(14\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3710 \\div 33\\).",
+          "solution": "\\\\(112\\\\) packages, remainder \\\\(14\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3710, quad \\text{Divisor} = 33\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3710 \\\\div 33 = 112\\\\text{ remainder } 14\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(14 < 33 \\implies \\\\text{Quotient: } 112,\\ \\\\text{Remainder: } 14\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q89_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A shipping firm builds \\(9926\\) package landing markers.\nThe markers are routed in delivery networks of \\(11\\) markers each.\nHow many full networks are active, and how many leftover markers remain?",
+          "options": [
+            "\\\\(902\\\\) packages, remainder \\\\(4\\\\) entries",
+            "\\\\(902 remainder 2\\\\) packages, remainder \\\\(4\\\\) entries",
+            "\\\\(903 remainder 4\\\\) packages, remainder \\\\(4\\\\) entries",
+            "\\\\(901 remainder 5\\\\) packages, remainder \\\\(4\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(9926 \\div 11\\).",
+          "solution": "\\\\(902\\\\) packages, remainder \\\\(4\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 9926, quad \\text{Divisor} = 11\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(9926 \\\\div 11 = 902\\\\text{ remainder } 4\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(4 < 11 \\implies \\\\text{Quotient: } 902,\\ \\\\text{Remainder: } 4\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q90_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A recycling plant operates \\(3338\\) pneumatic waste ejectors.\nThe ejectors are grouped in sensor lanes of \\(23\\) ejectors each.\nHow many full sensor lanes are configured, and how many leftover ejectors remain?",
+          "options": [
+            "\\\\(145\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(145 remainder 1\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(146 remainder 3\\\\) packages, remainder \\\\(3\\\\) entries",
+            "\\\\(144 remainder 4\\\\) packages, remainder \\\\(3\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3338 \\div 23\\).",
+          "solution": "\\\\(145\\\\) packages, remainder \\\\(3\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3338, quad \\text{Divisor} = 23\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3338 \\\\div 23 = 145\\\\text{ remainder } 3\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(3 < 23 \\implies \\\\text{Quotient: } 145,\\ \\\\text{Remainder: } 3\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q91_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cloud platform installs \\(2689\\) power grid modules.\nThe modules are distributed in transformer units of \\(13\\) modules each.\nHow many full transformer units are loaded, and how many leftover modules remain?",
+          "options": [
+            "\\\\(206\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(206 remainder 9\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(207 remainder 11\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(205 remainder 12\\\\) packages, remainder \\\\(11\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(2689 \\div 13\\).",
+          "solution": "\\\\(206\\\\) packages, remainder \\\\(11\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 2689, quad \\text{Divisor} = 13\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(2689 \\\\div 13 = 206\\\\text{ remainder } 11\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(11 < 13 \\implies \\\\text{Quotient: } 206,\\ \\\\text{Remainder: } 11\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q92_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An airport luggage transit terminal audits \\(3471\\) sorting carts.\\The carts are stored in holding lanes of \\(19\\) carts each.\nHow many full holding lanes are occupied, and how many leftover carts remain?",
+          "options": [
+            "\\\\(182\\\\) packages, remainder \\\\(13\\\\) entries",
+            "\\\\(182 remainder 11\\\\) packages, remainder \\\\(13\\\\) entries",
+            "\\\\(183 remainder 13\\\\) packages, remainder \\\\(13\\\\) entries",
+            "\\\\(181 remainder 14\\\\) packages, remainder \\\\(13\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3471 \\div 19\\).",
+          "solution": "\\\\(182\\\\) packages, remainder \\\\(13\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3471, quad \\text{Divisor} = 19\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3471 \\\\div 19 = 182\\\\text{ remainder } 13\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(13 < 19 \\implies \\\\text{Quotient: } 182,\\ \\\\text{Remainder: } 13\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q93_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A hydraulic protection board monitors \\(4192\\) level probes.\\The probes are connected in regional trunks of \\(23\\) probes each.\nHow many full trunks are active, and how many leftover probes remain?",
+          "options": [
+            "\\\\(182\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(182 remainder 4\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(183 remainder 6\\\\) packages, remainder \\\\(6\\\\) entries",
+            "\\\\(181 remainder 7\\\\) packages, remainder \\\\(6\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(4192 \\div 23\\).",
+          "solution": "\\\\(182\\\\) packages, remainder \\\\(6\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 4192, quad \\text{Divisor} = 23\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(4192 \\\\div 23 = 182\\\\text{ remainder } 6\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(6 < 23 \\implies \\\\text{Quotient: } 182,\\ \\\\text{Remainder: } 6\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q94_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineering check audits \\(3272\\) vacuum pipelines.\nThe pipelines are mapped to branch valves managing \\(29\\) outlets each.\nHow many full branch valves are checked, and how many leftover outlets remain?",
+          "options": [
+            "\\\\(112\\\\) packages, remainder \\\\(24\\\\) entries",
+            "\\\\(112 remainder 22\\\\) packages, remainder \\\\(24\\\\) entries",
+            "\\\\(113 remainder 24\\\\) packages, remainder \\\\(24\\\\) entries",
+            "\\\\(111 remainder 25\\\\) packages, remainder \\\\(24\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3272 \\div 29\\).",
+          "solution": "\\\\(112\\\\) packages, remainder \\\\(24\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3272, quad \\text{Divisor} = 29\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3272 \\\\div 29 = 112\\\\text{ remainder } 24\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(24 < 29 \\implies \\\\text{Quotient: } 112,\\ \\\\text{Remainder: } 24\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q95_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A shipping fleet operator audits \\(5138\\) steel lock pins.\nThe pins are organized in cargo crates of \\(31\\) pins each.\nHow many full crates are packed, and how many leftover pins remain?",
+          "options": [
+            "\\\\(165\\\\) packages, remainder \\\\(23\\\\) entries",
+            "\\\\(165 remainder 21\\\\) packages, remainder \\\\(23\\\\) entries",
+            "\\\\(166 remainder 23\\\\) packages, remainder \\\\(23\\\\) entries",
+            "\\\\(164 remainder 24\\\\) packages, remainder \\\\(23\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(5138 \\div 31\\).",
+          "solution": "\\\\(165\\\\) packages, remainder \\\\(23\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 5138, quad \\text{Divisor} = 31\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(5138 \\\\div 31 = 165\\\\text{ remainder } 23\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(23 < 31 \\implies \\\\text{Quotient: } 165,\\ \\\\text{Remainder: } 23\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q96_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A drone logistics warehouse audits \\(2449\\) tracking chips.\nThe chips are packed in storage drawers of \\(19\\) chips each.\nHow many full drawers are filled, and how many leftover chips remain?",
+          "options": [
+            "\\\\(128\\\\) packages, remainder \\\\(17\\\\) entries",
+            "\\\\(128 remainder 15\\\\) packages, remainder \\\\(17\\\\) entries",
+            "\\\\(129 remainder 17\\\\) packages, remainder \\\\(17\\\\) entries",
+            "\\\\(127 remainder 18\\\\) packages, remainder \\\\(17\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(2449 \\div 19\\).",
+          "solution": "\\\\(128\\\\) packages, remainder \\\\(17\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 2449, quad \\text{Divisor} = 19\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(2449 \\\\div 19 = 128\\\\text{ remainder } 17\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(17 < 19 \\implies \\\\text{Quotient: } 128,\\ \\\\text{Remainder: } 17\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q97_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A mechanical maintenance project checks \\(3867\\) filtration membranes.\nThe membranes are bundled in supply cases of \\(37\\) membranes each.\nHow many full cases are packed, and how many leftover membranes remain?",
+          "options": [
+            "\\\\(104\\\\) packages, remainder \\\\(19\\\\) entries",
+            "\\\\(104 remainder 17\\\\) packages, remainder \\\\(19\\\\) entries",
+            "\\\\(105 remainder 19\\\\) packages, remainder \\\\(19\\\\) entries",
+            "\\\\(103 remainder 20\\\\) packages, remainder \\\\(19\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3867 \\div 37\\).",
+          "solution": "\\\\(104\\\\) packages, remainder \\\\(19\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3867, quad \\text{Divisor} = 37\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3867 \\\\div 37 = 104\\\\text{ remainder } 19\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(19 < 37 \\implies \\\\text{Quotient: } 104,\\ \\\\text{Remainder: } 19\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q98_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A hydronic project installs \\(6412\\) pressure gauges.\nThe gauges are organized in inspection boxes of \\(41\\) gauges each.\nHow many full boxes are used, and how many leftover gauges remain?",
+          "options": [
+            "\\\\(156\\\\) packages, remainder \\\\(16\\\\) entries",
+            "\\\\(156 remainder 14\\\\) packages, remainder \\\\(16\\\\) entries",
+            "\\\\(157 remainder 16\\\\) packages, remainder \\\\(16\\\\) entries",
+            "\\\\(155 remainder 17\\\\) packages, remainder \\\\(16\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(6412 \\div 41\\).",
+          "solution": "\\\\(156\\\\) packages, remainder \\\\(16\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 6412, quad \\text{Divisor} = 41\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(6412 \\\\div 41 = 156\\\\text{ remainder } 16\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(16 < 41 \\implies \\\\text{Quotient: } 156,\\ \\\\text{Remainder: } 16\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q99_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An enterprise server room logs \\(3450\\) chassis lock studs.\\The studs are stored in compartment bins of \\(16\\) studs each.\nHow many full bins are loaded, and how many leftover studs remain?",
+          "options": [
+            "\\\\(215\\\\) packages, remainder \\\\(10\\\\) entries",
+            "\\\\(215 remainder 8\\\\) packages, remainder \\\\(10\\\\) entries",
+            "\\\\(216 remainder 10\\\\) packages, remainder \\\\(10\\\\) entries",
+            "\\\\(214 remainder 11\\\\) packages, remainder \\\\(10\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(3450 \\div 16\\).",
+          "solution": "\\\\(215\\\\) packages, remainder \\\\(10\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 3450, quad \\text{Divisor} = 16\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(3450 \\\\div 16 = 215\\\\text{ remainder } 10\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(10 < 16 \\implies \\\\text{Quotient: } 215,\\ \\\\text{Remainder: } 10\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-1b-q100_hard",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A sorting machine plant maps \\(4619\\) air valve ejectors.\nThe ejectors are mapped to control boards of \\(24\\) ejectors each.\nHow many full control boards are mapped, and how many leftover ejectors remain?",
+          "options": [
+            "\\\\(192\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(192 remainder 9\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(193 remainder 11\\\\) packages, remainder \\\\(11\\\\) entries",
+            "\\\\(191 remainder 12\\\\) packages, remainder \\\\(11\\\\) entries"
+          ],
+          "answer": 0,
+          "hint": "Divide the total data pool by the divisor: \\(4619 \\div 24\\).",
+          "solution": "\\\\(192\\\\) packages, remainder \\\\(11\\\\)",
+          "steps": [
+            {
+              "explain": "Identify the dividend and the divisor from the context problem.",
+              "work": "\\\\(\\text{Dividend} = 4619, quad \\text{Divisor} = 24\\\\)"
+            },
+            {
+              "explain": "Perform the long division calculation.",
+              "work": "\\\\(4619 \\\\div 24 = 192\\\\text{ remainder } 11\\\\)"
+            },
+            {
+              "explain": "Validate the remainder is smaller than the divisor.",
+              "work": "\\\\(11 < 24 \\implies \\\\text{Quotient: } 192,\\ \\\\text{Remainder: } 11\\\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

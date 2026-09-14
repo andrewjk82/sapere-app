@@ -1,0 +1,1073 @@
+{
+  "chapterId": "y11a-9",
+  "title": "Chapter 9: Differentiation",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11a-9A",
+      "code": "9A",
+      "title": "Tangents and the derivative",
+      "questions": [
+        {
+          "id": "2vDD36PdmHTG2GaZrPho",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = \\frac{2}{3}(x + 4)\\), find \\(f'(x)\\).",
+          "options": [
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{8}{3}\\)",
+            "\\(2\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** The stem gives a template function and a swapped version. Work with the swapped function \\(f(x) = \\frac{3}{5}(x + 7)\\). Goal: rewrite it as \\(f(x) = mx + b\\), then read off the derivative.\n\\(f(x) = \\frac{3}{5}(x + 7)\\)\n\n**Step 2:** Expand the brackets by distributing the coefficient \\(\\frac{3}{5}\\) onto each term inside.\n\\(f(x) = \\frac{3}{5} \\cdot x + \\frac{3}{5} \\cdot 7\\)\n\n**Step 3:** Simplify the constant term: \\(\\frac{3}{5} \\times 7 = \\frac{21}{5}\\). The function is now in gradient–intercept form with gradient \\(m = \\frac{3}{5}\\) and intercept \\(b = \\frac{21}{5}\\).\n\\(f(x) = \\frac{3}{5}x + \\frac{21}{5}\\)\n\n**Step 4:** For any linear function \\(f(x) = mx + b\\), the derivative is the constant gradient: \\(f'(x) = m\\). Here \\(m = \\frac{3}{5}\\).\n\\(f'(x) = \\frac{3}{5}\\)\n\n**Step 5:** Combine both results. This matches option 0 exactly.\n\\(f(x) = \\frac{3}{5}x + \\frac{21}{5},\\; f'(x) = \\frac{3}{5}\\)",
+          "steps": [
+            {
+              "explain": "Expand the brackets.",
+              "work": "\\(f(x) = \\dfrac{2}{3}x + \\dfrac{8}{3}\\)"
+            },
+            {
+              "explain": "Differentiate: for a linear function, the derivative is the gradient.",
+              "work": "\\(f'(x) = \\dfrac{2}{3}\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "7PPC7oiOaepmADEZfSxB",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = 5 - 3x\\), find \\(f'(x)\\).",
+          "options": [
+            "\\(-3\\)",
+            "\\(3\\)",
+            "\\(5\\)",
+            "\\(-5\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** Use the swapped function \\(f(x) = 9 - 6x\\). Rewrite it so the \\(x\\)-term comes first, matching the standard form \\(f(x) = mx + b\\).\n\\(f(x) = 9 - 6x\\)\n\n**Step 2:** Commutativity of addition lets us reorder the terms: write the multiple of \\(x\\) before the constant.\n\\(f(x) = -6x + 9\\)\n\n**Step 3:** Identify the gradient and intercept: the coefficient of \\(x\\) is \\(m = -6\\) and the constant term is \\(b = 9\\).\n\\(m = -6,\\; b = 9\\)\n\n**Step 4:** Differentiate a linear function by taking its gradient. The derivative of \\(mx + b\\) is the constant \\(m\\).\n\\(f'(x) = -6\\)\n\n**Step 5:** State the expanded form and its derivative together.\n\\(f(x) = -6x + 9,\\; f'(x) = -6\\)",
+          "steps": [
+            {
+              "explain": "Rearrange the function into the form \\(mx + b\\).",
+              "work": "\\(f(x) = -3x + 5\\)"
+            },
+            {
+              "explain": "Differentiate: for a linear function, the derivative is the gradient.",
+              "work": "\\(f'(x) = -3\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "ByHdszMLRJ35yOo60bR7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = 2x + 3\\), find \\(f'(x)\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(-2\\)",
+            "\\(3\\)",
+            "\\(-3\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** Use the swapped function \\(f(x) = 4x + 7\\). It is already written in the form \\(f(x) = mx + b\\).\n\\(f(x) = 4x + 7\\)\n\n**Step 2:** Read the parameters directly: the coefficient of \\(x\\) is the gradient, and the constant term is the intercept.\n\\(m = 4,\\; b = 7\\)\n\n**Step 3:** By the differentiation rule for linear functions, \\(\\dfrac{d}{dx}(mx + b) = m\\). The intercept does not affect the derivative.\n\\(f'(x) = m = 4\\)\n\n**Step 4:** Interpret geometrically: the graph is a straight line of constant slope 4, so the tangent gradient is 4 at every point.\n\\(f'(x) = 4\\)\n\n**Step 5:** Final answer: the linear form and its constant derivative.\n\\(f(x) = 4x + 7,\\; f'(x) = 4\\)",
+          "steps": [
+            {
+              "explain": "Differentiate: for a linear function, the derivative is the gradient.",
+              "work": "\\(f'(x) = 2\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "GIm2Pehi0FwXVeWO7OZU",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Given \\(f(x) = \\frac{k - \\ell x}{r} + \\frac{k + \\ell x}{r}\\), find \\(f'(x)\\).",
+          "options": [
+            "\\(0\\)",
+            "\\(\\frac{2k}{r}\\)",
+            "\\(\\frac{2\\ell}{r}\\)",
+            "\\(-\\frac{2\\ell}{r}\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** Use the swapped expression \\(f(x) = \\dfrac{a - bx}{c} + \\dfrac{a + bx}{c}\\). Both fractions share denominator \\(c\\), so combine the numerators.\n\\(f(x) = \\dfrac{(a - bx) + (a + bx)}{c}\\)\n\n**Step 2:** Expand the numerator carefully, grouping constant terms and coefficients of \\(x\\).\n\\(f(x) = \\dfrac{a - bx + a + bx}{c} = \\dfrac{(a + a) + (-bx + bx)}{c}\\)\n\n**Step 3:** The linear terms cancel: \\(-bx + bx = 0\\). Only the constant remains: \\(a + a = 2a\\). So \\(f\\) does not depend on \\(x\\).\n\\(f(x) = \\dfrac{2a}{c}\\)\n\n**Step 4:** A constant function has zero rate of change. Differentiating with respect to \\(x\\) therefore gives zero (the graph is a horizontal line).\n\\(f'(x) = 0\\)\n\n**Step 5:** Combine the simplified function and its derivative.\n\\(f(x) = \\dfrac{2a}{c},\\; f'(x) = 0\\)",
+          "steps": [
+            {
+              "explain": "Combine the fractions over the common denominator.",
+              "work": "\\(f(x) = \\dfrac{k - \\ell x + k + \\ell x}{r}\\)"
+            },
+            {
+              "explain": "Simplify the numerator.",
+              "work": "\\(f(x) = \\dfrac{2k}{r}\\)"
+            },
+            {
+              "explain": "Differentiate: since \\(\\frac{2k}{r}\\) is a constant (it has no \\(x\\) terms), its derivative is zero.",
+              "work": "\\(f'(x) = 0\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "I8KnnE8QOqx3hcElXeOb",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = \\frac{1}{2}x - 7\\), find \\(f'(x)\\).",
+          "options": [
+            "\\(\\frac{1}{2}\\)",
+            "\\(-\\frac{1}{2}\\)",
+            "\\(-7\\)",
+            "\\(7\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** Use the swapped function \\(f(x) = \\frac{1}{5}x - 3\\). It is already in gradient–intercept form \\(mx + b\\).\n\\(f(x) = \\frac{1}{5}x - 3\\)\n\n**Step 2:** Identify the parameters: the coefficient of \\(x\\) is the gradient and the constant is the intercept.\n\\(m = \\frac{1}{5},\\; b = -3\\)\n\n**Step 3:** Apply the linear differentiation rule: the derivative equals the gradient coefficient only; the constant term differentiates to zero.\n\\(f'(x) = m = \\frac{1}{5}\\)\n\n**Step 4:** Check a common error: the derivative is not \\(-3\\) (that is the intercept) and not \\(\\frac{1}{5}x\\) (that would still involve \\(x\\)).\n\\(f'(x) = \\frac{1}{5}\\)\n\n**Step 5:** State both results together.\n\\(f(x) = \\frac{1}{5}x - 3,\\; f'(x) = \\frac{1}{5}\\)",
+          "steps": [
+            {
+              "explain": "Differentiate: for a linear function, the derivative is the gradient.",
+              "work": "\\(f'(x) = \\dfrac{1}{2}\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "IWzJl6oLgrtk3Vdf559h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = ax + b\\), find \\(f'(x)\\).",
+          "options": [
+            "\\(a\\)",
+            "\\(b\\)",
+            "\\(x\\)",
+            "\\(ab\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** Use the swapped general linear function \\(f(x) = px + q\\). Compare it with the standard form \\(f(x) = mx + b\\).\n\\(f(x) = px + q\\)\n\n**Step 2:** Match coefficients: the gradient parameter is the coefficient of \\(x\\), and the intercept parameter is the constant term.\n\\(m = p,\\; b = q\\)\n\n**Step 3:** Differentiate: for \\(f(x) = mx + b\\) we always have \\(f'(x) = m\\). Substituting \\(m = p\\) gives a constant derivative.\n\\(f'(x) = p\\)\n\n**Step 4:** Note that the intercept \\(q\\) does not appear in the derivative. Only the slope coefficient survives differentiation.\n\\(\\dfrac{d}{dx}(px + q) = p\\)\n\n**Step 5:** Final answer: the function stays \\(px + q\\) and its derivative is the constant \\(p\\).\n\\(f(x) = px + q,\\; f'(x) = p\\)",
+          "steps": [
+            {
+              "explain": "Differentiate: for a linear function, the derivative is the gradient (the coefficient of \\(x\\)).",
+              "work": "\\(f'(x) = a\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "OuQnEVwwRL8f2uCXRm9m",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = \\frac{1}{2} + \\frac{1}{3}\\), find \\(f'(x)\\).",
+          "options": [
+            "\\(0\\)",
+            "\\(\\frac{5}{6}\\)",
+            "\\(\\frac{1}{6}\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** Use the swapped constant expression \\(f(x) = \\frac{2}{5} + \\frac{3}{4}\\). First combine the two fractions into a single constant value.\n\\(f(x) = \\frac{2}{5} + \\frac{3}{4}\\)\n\n**Step 2:** The LCD of 5 and 4 is 20. Rewrite each fraction over 20.\n\\(\\frac{2}{5} = \\frac{8}{20},\\quad \\frac{3}{4} = \\frac{15}{20}\\)\n\n**Step 3:** Add the numerators: \\(8 + 15 = 23\\). So the function is the constant \\(\\frac{23}{20}\\). In the form \\(mx + b\\) this is \\(0 \\cdot x + \\frac{23}{20}\\).\n\\(f(x) = \\frac{23}{20} = 0x + \\frac{23}{20}\\)\n\n**Step 4:** A constant function has gradient zero everywhere, because its graph is a horizontal line. Hence the derivative is identically zero.\n\\(f'(x) = 0\\)\n\n**Step 5:** Combine the simplified constant value and its derivative.\n\\(f(x) = \\frac{23}{20},\\; f'(x) = 0\\)",
+          "steps": [
+            {
+              "explain": "Simplify the constant terms.",
+              "work": "\\(f(x) = \\dfrac{5}{6}\\)"
+            },
+            {
+              "explain": "Differentiate: the derivative of a constant is zero.",
+              "work": "\\(f'(x) = 0\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "YKiaspTby4hrwTTvDcJr",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Consider the rational function \\(f(x) = \\frac{1}{x}\\). Answer the following sub-questions.",
+          "parts": [
+            {
+              "id": "YKiaspTby4hrwTTvDcJra",
+              "type": "mc",
+              "stem": "a) Find the derived function \\(f'(x)\\).",
+              "options": [
+                "\\(-\\frac{1}{x^2}\\)",
+                "\\(\\frac{1}{x^2}\\)",
+                "\\(\\ln(x)\\)",
+                "\\(-\\frac{1}{x}\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Rewrite the rational function using a negative exponent so the power rule can be applied.",
+                  "work": "\\(f(x) = x^{-1}\\)"
+                },
+                {
+                  "explain": "Apply the power rule: \\(\\frac{d}{dx}(x^n) = n x^{n-1}\\).",
+                  "work": "\\(f'(x) = -1 \\cdot x^{-1 - 1}\\)"
+                },
+                {
+                  "explain": "Simplify the exponent.",
+                  "work": "\\(f'(x) = -x^{-2}\\)"
+                },
+                {
+                  "explain": "Rewrite the result with a positive exponent for the final answer.",
+                  "work": "\\(f'(x) = -\\dfrac{1}{x^2}\\)"
+                }
+              ]
+            },
+            {
+              "id": "YKiaspTby4hrwTTvDcJrb",
+              "type": "mc",
+              "stem": "b) Determine the exact gradient of the tangent line to the curve at \\(x = -1\\).",
+              "options": [
+                "\\(-1\\)",
+                "\\(1\\)",
+                "\\(0\\)",
+                "\\(-2\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "The gradient of the tangent is the value of the derivative at that specific point.",
+                  "work": "\\(m = f'(-1)\\)"
+                },
+                {
+                  "explain": "Substitute \\(x = -1\\) into the derived function.",
+                  "work": "\\(m = -\\dfrac{1}{(-1)^2}\\)"
+                },
+                {
+                  "explain": "Square the negative number in the denominator: \\((-1)^2 = 1\\).",
+                  "work": "\\(m = -\\dfrac{1}{1}\\)"
+                },
+                {
+                  "explain": "State the exact gradient.",
+                  "work": "\\(m = -1\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "solution": "**Step 1:** Use the swapped rational function \\(f(x) = \\frac{2}{x}\\). Rewrite with a negative index so the power rule applies.\n\\(f(x) = 2x^{-1}\\)\n\n**Step 2:** Differentiate using the power rule: bring the exponent down as a multiplier and reduce the exponent by 1. Coefficient 2 is kept.\n\\(f'(x) = 2 \\cdot (-1) x^{-1-1} = -2x^{-2}\\)\n\n**Step 3:** Rewrite the derivative in fractional form for readability.\n\\(f'(x) = -\\frac{2}{x^{2}}\\)\n\n**Step 4:** The gradient of the tangent at a point equals the derivative evaluated there. Substitute \\(x = -1\\). Note that \\((-1)^{2} = 1\\).\n\\(f'(-1) = -\\frac{2}{(-1)^{2}} = -\\frac{2}{1} = -2\\)\n\n**Step 5:** State the derived function and the tangent gradient at \\(x = -1\\).\n\\(f'(x) = -\\frac{2}{x^{2}}\\text{ and gradient at }x=-1\\text{ is }-2\\)",
+          "steps": [
+            {
+              "explain": "Use the swapped rational function \\(f(x) = \\frac{2}{x}\\). Rewrite with a negative index so the power rule applies.",
+              "work": "\\(f(x) = 2x^{-1}\\)"
+            },
+            {
+              "explain": "Differentiate using the power rule: bring the exponent down as a multiplier and reduce the exponent by 1. Coefficient 2 is kept.",
+              "work": "\\(f'(x) = 2 \\cdot (-1) x^{-1-1} = -2x^{-2}\\)"
+            },
+            {
+              "explain": "Rewrite the derivative in fractional form for readability.",
+              "work": "\\(f'(x) = -\\frac{2}{x^{2}}\\)"
+            },
+            {
+              "explain": "The gradient of the tangent at a point equals the derivative evaluated there. Substitute \\(x = -1\\). Note that \\((-1)^{2} = 1\\).",
+              "work": "\\(f'(-1) = -\\frac{2}{(-1)^{2}} = -\\frac{2}{1} = -2\\)"
+            },
+            {
+              "explain": "State the derived function and the tangent gradient at \\(x = -1\\).",
+              "work": "\\(f'(x) = -\\frac{2}{x^{2}}\\text{ and gradient at }x=-1\\text{ is }-2\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "c9UMbkmFxl8eSdYqXPny",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given \\(f(x) = \\frac{3 - 5x}{4}\\), find \\(f'(x)\\).",
+          "options": [
+            "\\(-\\frac{5}{4}\\)",
+            "\\(\\frac{5}{4}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(-\\frac{3}{4}\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** Use the swapped function \\(f(x) = \\dfrac{7 - 4x}{3}\\). Split the single fraction into two separate terms.\n\\(f(x) = \\dfrac{7}{3} - \\dfrac{4x}{3}\\)\n\n**Step 2:** Rewrite so the multiple of \\(x\\) appears first, matching \\(f(x) = mx + b\\).\n\\(f(x) = -\\dfrac{4}{3}x + \\dfrac{7}{3}\\)\n\n**Step 3:** Read off the gradient and intercept from this standard form.\n\\(m = -\\dfrac{4}{3},\\; b = \\dfrac{7}{3}\\)\n\n**Step 4:** Differentiate: for a linear function the derivative is the constant gradient coefficient.\n\\(f'(x) = -\\dfrac{4}{3}\\)\n\n**Step 5:** Final combined statement of the linear form and its derivative.\n\\(f(x) = -\\dfrac{4}{3}x + \\dfrac{7}{3},\\; f'(x) = -\\dfrac{4}{3}\\)",
+          "steps": [
+            {
+              "explain": "Split the fraction.",
+              "work": "\\(f(x) = \\dfrac{3}{4} - \\dfrac{5}{4}x\\)"
+            },
+            {
+              "explain": "Rearrange into the form \\(mx + b\\).",
+              "work": "\\(f(x) = -\\dfrac{5}{4}x + \\dfrac{3}{4}\\)"
+            },
+            {
+              "explain": "Differentiate: for a linear function, the derivative is the gradient.",
+              "work": "\\(f'(x) = -\\dfrac{5}{4}\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "ckqjntmz67BQBCqKRJv5",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Consider the function \\(f(x) = 4 - x^2\\). Answer the following sub-questions.",
+          "parts": [
+            {
+              "id": "ckqjntmz67BQBCqKRJv5a",
+              "type": "mc",
+              "stem": "a) Find \\(f'(x)\\).",
+              "options": [
+                "\\(-2x\\)",
+                "\\(2x\\)",
+                "\\(-x\\)",
+                "\\(4\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "State the power rule for differentiation.",
+                  "work": "\\(\\frac{d}{dx}(x^n) = n x^{n-1}\\)"
+                },
+                {
+                  "explain": "Differentiate the constant term \\(4\\). The derivative of any constant is zero.",
+                  "work": "\\(\\frac{d}{dx}(4) = 0\\)"
+                },
+                {
+                  "explain": "Apply the power rule to the \\(-x^2\\) term.",
+                  "work": "\\(\\frac{d}{dx}(-x^2) = -2x^{2-1} = -2x\\)"
+                },
+                {
+                  "explain": "Combine the terms to state the final derived function.",
+                  "work": "\\(f'(x) = -2x\\)"
+                }
+              ]
+            },
+            {
+              "id": "ckqjntmz67BQBCqKRJv5b",
+              "type": "mc",
+              "stem": "b) Calculate the gradient of the tangent at \\(x = 2\\).",
+              "options": [
+                "\\(-4\\)",
+                "\\(4\\)",
+                "\\(-2\\)",
+                "\\(0\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "State the relationship between the derivative and the tangent gradient.",
+                  "work": "\\(m = f'(x)\\)"
+                },
+                {
+                  "explain": "Substitute the given x-value \\(x = 2\\) into the derivative.",
+                  "work": "\\(f'(2) = -2(2)\\)"
+                },
+                {
+                  "explain": "Calculate the final gradient value.",
+                  "work": "\\(m = -4\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "solution": "**Step 1:** Use the swapped quadratic \\(f(x) = 9 - x^{2}\\). This is a downward-opening parabola with vertex at \\((0, 9)\\).\n\\(f(x) = 9 - x^{2}\\)\n\n**Step 2:** Differentiate term by term. The derivative of the constant 9 is 0. For the power term use \\(\\dfrac{d}{dx}(x^{n}) = nx^{n-1}\\) on \\(-x^{2}\\).\n\\(f'(x) = 0 - 2x = -2x\\)\n\n**Step 3:** The gradient of the tangent at a specific point is the derivative evaluated at that \\(x\\)-value. Substitute \\(x = 2\\).\n\\(f'(2) = -2(2) = -4\\)\n\n**Step 4:** Check geometrically: at \\(x = 2\\), the point on the curve is \\((2, 9 - 4) = (2, 5)\\). The curve is decreasing there, so a negative slope of \\(-4\\) is consistent.\n\\(f(2) = 5,\\; \\text{tangent slope } = -4\\)\n\n**Step 5:** State the derived function and the exact tangent gradient at \\(x = 2\\).\n\\(f'(x) = -2x\\text{ and gradient at }x=2\\text{ is }-4\\)",
+          "steps": [
+            {
+              "explain": "Use the swapped quadratic \\(f(x) = 9 - x^{2}\\). This is a downward-opening parabola with vertex at \\((0, 9)\\).",
+              "work": "\\(f(x) = 9 - x^{2}\\)"
+            },
+            {
+              "explain": "Differentiate term by term. The derivative of the constant 9 is 0. For the power term use \\(\\dfrac{d}{dx}(x^{n}) = nx^{n-1}\\) on \\(-x^{2}\\).",
+              "work": "\\(f'(x) = 0 - 2x = -2x\\)"
+            },
+            {
+              "explain": "The gradient of the tangent at a specific point is the derivative evaluated at that \\(x\\)-value. Substitute \\(x = 2\\).",
+              "work": "\\(f'(2) = -2(2) = -4\\)"
+            },
+            {
+              "explain": "Check geometrically: at \\(x = 2\\), the point on the curve is \\((2, 9 - 4) = (2, 5)\\). The curve is decreasing there, so a negative slope of \\(-4\\) is consistent.",
+              "work": "\\(f(2) = 5,\\; \\text{tangent slope } = -4\\)"
+            },
+            {
+              "explain": "State the derived function and the exact tangent gradient at \\(x = 2\\).",
+              "work": "\\(f'(x) = -2x\\text{ and gradient at }x=2\\text{ is }-4\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "iAfcRP653wbAk7ksdYCS",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Given \\(f(x) = (x+3)^2 - (x-3)^2\\), find \\(f'(x)\\).",
+          "options": [
+            "\\(12\\)",
+            "\\(6\\)",
+            "\\(18\\)",
+            "\\(24\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** Use the swapped expression \\(f(x) = (x + 4)^{2} - (x - 4)^{2}\\). Expand each squared binomial with \\((a \\pm b)^{2} = a^{2} \\pm 2ab + b^{2}\\).\n\\((x+4)^{2} = x^{2} + 8x + 16,\\quad (x-4)^{2} = x^{2} - 8x + 16\\)\n\n**Step 2:** Subtract the second expansion from the first. Distribute the minus sign carefully across every term of the second bracket.\n\\(f(x) = (x^{2} + 8x + 16) - (x^{2} - 8x + 16)\\)\n\n**Step 3:** Remove brackets: the minus flips the signs of \\(-8x\\) and \\(+16\\).\n\\(f(x) = x^{2} + 8x + 16 - x^{2} + 8x - 16\\)\n\n**Step 4:** Collect like terms. The \\(x^{2}\\) terms cancel and the constants cancel, leaving only the linear term.\n\\(f(x) = (8x + 8x) = 16x\\)\n\n**Step 5:** Now \\(f(x) = 16x\\) is linear with gradient 16. Differentiate: \\(f'(x) = 16\\).\n\\(f(x) = 16x,\\; f'(x) = 16\\)",
+          "steps": [
+            {
+              "explain": "Expand both brackets.",
+              "work": "\\(f(x) = (x^2 + 6x + 9) - (x^2 - 6x + 9)\\)"
+            },
+            {
+              "explain": "Simplify by subtracting the terms.",
+              "work": "\\(f(x) = 12x\\)"
+            },
+            {
+              "explain": "Differentiate the linear function.",
+              "work": "\\(f'(x) = 12\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "jCXo8UoZ3kyYwQ1lhxXg",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Consider the exponential function \\(f(x) = 3^x\\). Answer the following sub-questions.",
+          "parts": [
+            {
+              "id": "jCXo8UoZ3kyYwQ1lhxXga",
+              "type": "mc",
+              "stem": "a) Find the derived function \\(f'(x)\\).",
+              "options": [
+                "\\(3^x \\ln(3)\\)",
+                "\\(3^x\\)",
+                "\\(x \\cdot 3^{x-1}\\)",
+                "\\(\\ln(3)\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "State the general rule for differentiating an exponential function \\(a^x\\).",
+                  "work": "\\(\\frac{d}{dx}(a^x) = a^x \\ln(a)\\)"
+                },
+                {
+                  "explain": "Identify the base \\(a\\) for the given function \\(f(x) = 3^x\\).",
+                  "work": "\\(a = 3\\)"
+                },
+                {
+                  "explain": "Apply the rule to find the exact derivative.",
+                  "work": "\\(f'(x) = 3^x \\ln(3)\\)"
+                }
+              ]
+            },
+            {
+              "id": "jCXo8UoZ3kyYwQ1lhxXgb",
+              "type": "mc",
+              "stem": "b) Determine the exact gradient of the tangent line to the curve at \\(x = 1\\).",
+              "options": [
+                "\\(3 \\ln(3)\\)",
+                "\\(3\\)",
+                "\\(1\\)",
+                "\\(0\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Recall that the gradient of the tangent line at a point is given by the derivative evaluated at that point.",
+                  "work": "\\(m = f'(x)\\)"
+                },
+                {
+                  "explain": "Substitute \\(x = 1\\) into the derived function \\(f'(x) = 3^x \\ln(3)\\).",
+                  "work": "\\(f'(1) = 3^1 \\ln(3)\\)"
+                },
+                {
+                  "explain": "Simplify to find the exact gradient.",
+                  "work": "\\(m = 3 \\ln(3)\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "solution": "**Step 1:** Use the swapped exponential \\(f(x) = 3^{x}\\). Recall the standard derivative rule for a constant base \\(a > 0\\), \\(a \\neq 1\\).\n\\(\\dfrac{d}{dx}\\bigl(a^{x}\\bigr) = a^{x}\\ln a\\)\n\n**Step 2:** Here the base is \\(a = 3\\). Substitute into the rule to obtain the derived function. The natural logarithm of the base appears as a constant factor.\n\\(f'(x) = 3^{x}\\ln 3\\)\n\n**Step 3:** The tangent gradient at a point is the derivative evaluated there. Substitute \\(x = 1\\).\n\\(f'(1) = 3^{1}\\ln 3 = 3\\ln 3\\)\n\n**Step 4:** Leave the answer exact: do not replace \\(\\ln 3\\) by a decimal approximation unless asked. Note that the gradient is not simply 3 (that would omit the log factor).\n\\(f'(1) = 3\\ln 3\\)\n\n**Step 5:** State the derived function and the exact tangent gradient at \\(x = 1\\).\n\\(f'(x) = 3^{x}\\ln 3\\text{ and gradient at }x=1\\text{ is }3\\ln 3\\)",
+          "meta": {
+            "course": "Advanced",
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "jHIUaKkyA8IFfgs7M837",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the function \\(f(x) = -4\\) (with a swapped constant of \\(f(x) = -8\\)) in the form \\(f(x) = mx + b\\), and hence write down \\(f'(x)\\).",
+          "options": [
+            "\\(f(x) = -8, \\, f'(x) = 0\\)",
+            "\\(f(x) = -8, \\, f'(x) = -8\\)",
+            "\\(f(x) = 0x - 8, \\, f'(x) = -8\\)",
+            "\\(f(x) = -8x, \\, f'(x) = -8\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** Use the swapped constant function \\(f(x) = -8\\). Write it in the form \\(mx + b\\) by making the coefficient of \\(x\\) explicit.\n\\(f(x) = -8 = 0x - 8\\)\n\n**Step 2:** Identify the gradient and intercept parameters from this writing.\n\\(m = 0,\\; b = -8\\)\n\n**Step 3:** Geometrically, \\(y = -8\\) is a horizontal line. Every horizontal line has slope zero at every point.\n\\(f'(x) = 0\\)\n\n**Step 4:** Algebraically the same result follows: the derivative of any constant is zero, so the intercept value \\(-8\\) does not appear in \\(f'(x)\\).\n\\(\\dfrac{d}{dx}(-8) = 0\\)\n\n**Step 5:** Final answer: the constant function and its zero derivative.\n\\(f(x) = -8,\\; f'(x) = 0\\)",
+          "steps": [
+            {
+              "explain": "Use the swapped constant function \\(f(x) = -8\\). Write it in the form \\(mx + b\\) by making the coefficient of \\(x\\) explicit.",
+              "work": "\\(f(x) = -8 = 0x - 8\\)"
+            },
+            {
+              "explain": "Identify the gradient and intercept parameters from this writing.",
+              "work": "\\(m = 0,\\; b = -8\\)"
+            },
+            {
+              "explain": "Geometrically, \\(y = -8\\) is a horizontal line. Every horizontal line has slope zero at every point.",
+              "work": "\\(f'(x) = 0\\)"
+            },
+            {
+              "explain": "Algebraically the same result follows: the derivative of any constant is zero, so the intercept value \\(-8\\) does not appear in \\(f'(x)\\).",
+              "work": "\\(\\dfrac{d}{dx}(-8) = 0\\)"
+            },
+            {
+              "explain": "Final answer: the constant function and its zero derivative.",
+              "work": "\\(f(x) = -8,\\; f'(x) = 0\\)"
+            }
+          ]
+        },
+        {
+          "id": "mFAlFEL8L2WU3RfHTp6D",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Consider a curve with the following properties:\n\n\\( g(x) \\text{ is odd.} \\)\n\\( g(5) = 0 \\text{ and } g'(2) = 0. \\)\n\\( g'(x) > 0 \\text{ for } x > 2. \\)\n\nWhich of the following could be the graph of \\( y = g(x) \\)?\n\n<div style=\"display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0;max-width:660px;\">\n  <div><svg width=\"300\" height=\"200\" viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:10px;border:2px solid #e2e8f0;\">\n  <!-- Axes -->\n  <line x1=\"10\" y1=\"100\" x2=\"290\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <polygon points=\"290,97 298,100 290,103\" fill=\"#94a3b8\"/>\n  <line x1=\"150\" y1=\"190\" x2=\"150\" y2=\"10\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <polygon points=\"147,10 150,2 153,10\" fill=\"#94a3b8\"/>\n  \n  <!-- Tick marks -->\n  <line x1=\"30\" y1=\"97\" x2=\"30\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"102\" y1=\"97\" x2=\"102\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"198\" y1=\"97\" x2=\"198\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"270\" y1=\"97\" x2=\"270\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  \n  <!-- Labels -->\n  <text x=\"30\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">-5</text>\n  <text x=\"102\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">-2</text>\n  <text x=\"142\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">O</text>\n  <text x=\"198\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">2</text>\n  <text x=\"270\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">5</text>\n  <text x=\"294\" y=\"104\" font-size=\"11\" fill=\"#475569\" font-family=\"Arial,sans-serif\">x</text>\n  <text x=\"156\" y=\"12\" font-size=\"11\" fill=\"#475569\" font-family=\"Arial,sans-serif\">y</text>\n  \n  <!-- Mathematical Plot -->\n  <polyline points=\"1.20,125.98 2.40,124.92 3.60,123.84 4.80,122.77 6.00,121.70 7.20,120.62 8.40,119.55 9.60,118.47 10.80,117.39 12.00,116.31 13.20,115.23 14.40,114.14 15.60,113.06 16.80,111.97 18.00,110.89 19.20,109.80 20.40,108.71 21.60,107.62 22.80,106.53 24.00,105.45 25.20,104.36 26.40,103.27 27.60,102.18 28.80,101.09 30.00,100.00 31.20,98.91 32.40,97.82 33.60,96.74 34.80,95.65 36.00,94.57 37.20,93.49 38.40,92.41 39.60,91.33 40.80,90.25 42.00,89.18 43.20,88.11 44.40,87.04 45.60,85.98 46.80,84.92 48.00,83.86 49.20,82.81 50.40,81.77 51.60,80.73 52.80,79.69 54.00,78.67 55.20,77.65 56.40,76.63 57.60,75.63 58.80,74.63 60.00,73.65 61.20,72.67 62.40,71.70 63.60,70.75 64.80,69.80 66.00,68.87 67.20,67.95 68.40,67.05 69.60,66.16 70.80,65.29 72.00,64.44 73.20,63.60 74.40,62.78 75.60,61.98 76.80,61.20 78.00,60.45 79.20,59.71 80.40,59.01 81.60,58.32 82.80,57.67 84.00,57.04 85.20,56.44 86.40,55.87 87.60,55.34 88.80,54.84 90.00,54.37 91.20,53.94 92.40,53.55 93.60,53.20 94.80,52.89 96.00,52.63 97.20,52.41 98.40,52.23 99.60,52.10 100.80,52.03 102.00,52.00 103.20,52.03 104.40,52.11 105.60,52.24 106.80,52.44 108.00,52.69 109.20,53.01 110.40,53.38 111.60,53.82 112.80,54.32 114.00,54.89 115.20,55.53 116.40,56.23 117.60,56.99 118.80,57.83 120.00,58.73 121.20,59.71 122.40,60.75 123.60,61.86 124.80,63.04 126.00,64.28 127.20,65.59 128.40,66.96 129.60,68.40 130.80,69.90 132.00,71.46 133.20,73.08 134.40,74.75 135.60,76.48 136.80,78.25 138.00,80.08 139.20,81.94 140.40,83.84 141.60,85.78 142.80,87.75 144.00,89.75 145.20,91.77 146.40,93.81 147.60,95.87 148.80,97.93 150.00,100.00 151.20,102.07 152.40,104.13 153.60,106.19 154.80,108.23 156.00,110.25 157.20,112.25 158.40,114.22 159.60,116.16 160.80,118.06 162.00,119.92 163.20,121.75 164.40,123.52 165.60,125.25 166.80,126.92 168.00,128.54 169.20,130.10 170.40,131.60 171.60,133.04 172.80,134.41 174.00,135.72 175.20,136.96 176.40,138.14 177.60,139.25 178.80,140.29 180.00,141.27 181.20,142.17 182.40,143.01 183.60,143.77 184.80,144.47 186.00,145.11 187.20,145.68 188.40,146.18 189.60,146.62 190.80,146.99 192.00,147.31 193.20,147.56 194.40,147.76 195.60,147.89 196.80,147.97 198.00,148.00 199.20,147.97 200.40,147.90 201.60,147.77 202.80,147.59 204.00,147.37 205.20,147.11 206.40,146.80 207.60,146.45 208.80,146.06 210.00,145.63 211.20,145.16 212.40,144.66 213.60,144.13 214.80,143.56 216.00,142.96 217.20,142.33 218.40,141.68 219.60,140.99 220.80,140.29 222.00,139.55 223.20,138.80 224.40,138.02 225.60,137.22 226.80,136.40 228.00,135.56 229.20,134.71 230.40,133.84 231.60,132.95 232.80,132.05 234.00,131.13 235.20,130.20 236.40,129.25 237.60,128.30 238.80,127.33 240.00,126.35 241.20,125.37 242.40,124.37 243.60,123.37 244.80,122.35 246.00,121.33 247.20,120.31 248.40,119.27 249.60,118.23 250.80,117.19 252.00,116.14 253.20,115.08 254.40,114.02 255.60,112.96 256.80,111.89 258.00,110.82 259.20,109.75 260.40,108.67 261.60,107.59 262.80,106.51 264.00,105.43 265.20,104.35 266.40,103.26 267.60,102.18 268.80,101.09 270.00,100.00 271.20,98.91 272.40,97.82 273.60,96.73 274.80,95.64 276.00,94.55 277.20,93.47 278.40,92.38 279.60,91.29 280.80,90.20 282.00,89.11 283.20,88.03 284.40,86.94 285.60,85.86 286.80,84.77 288.00,83.69 289.20,82.61 290.40,81.53 291.60,80.45 292.80,79.38 294.00,78.30 295.20,77.23 296.40,76.16 297.60,75.08 298.80,74.02\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/>\n  \n  <!-- Corner Badge -->\n  <rect x=\"8\" y=\"6\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#1e40af\"/>\n  <text x=\"21\" y=\"23\" font-size=\"14\" font-weight=\"bold\" fill=\"white\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\">A</text>\n</svg></div>\n  <div><svg width=\"300\" height=\"200\" viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:10px;border:2px solid #e2e8f0;\">\n  <!-- Axes -->\n  <line x1=\"10\" y1=\"100\" x2=\"290\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <polygon points=\"290,97 298,100 290,103\" fill=\"#94a3b8\"/>\n  <line x1=\"150\" y1=\"190\" x2=\"150\" y2=\"10\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <polygon points=\"147,10 150,2 153,10\" fill=\"#94a3b8\"/>\n  \n  <!-- Tick marks -->\n  <line x1=\"30\" y1=\"97\" x2=\"30\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"102\" y1=\"97\" x2=\"102\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"198\" y1=\"97\" x2=\"198\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"270\" y1=\"97\" x2=\"270\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  \n  <!-- Labels -->\n  <text x=\"30\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">-5</text>\n  <text x=\"102\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">-2</text>\n  <text x=\"142\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">O</text>\n  <text x=\"198\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">2</text>\n  <text x=\"270\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">5</text>\n  <text x=\"294\" y=\"104\" font-size=\"11\" fill=\"#475569\" font-family=\"Arial,sans-serif\">x</text>\n  <text x=\"156\" y=\"12\" font-size=\"11\" fill=\"#475569\" font-family=\"Arial,sans-serif\">y</text>\n  \n  <!-- Mathematical Plot -->\n  <polyline points=\"1.20,18.90 2.40,23.49 3.60,27.96 4.80,32.31 6.00,36.54 7.20,40.67 8.40,44.68 9.60,48.58 10.80,52.38 12.00,56.07 13.20,59.65 14.40,63.14 15.60,66.52 16.80,69.81 18.00,73.00 19.20,76.10 20.40,79.10 21.60,82.01 22.80,84.84 24.00,87.57 25.20,90.22 26.40,92.79 27.60,95.27 28.80,97.68 30.00,100.00 31.20,102.25 32.40,104.42 33.60,106.52 34.80,108.54 36.00,110.50 37.20,112.38 38.40,114.20 39.60,115.95 40.80,117.64 42.00,119.26 43.20,120.82 44.40,122.32 45.60,123.76 46.80,125.15 48.00,126.48 49.20,127.75 50.40,128.97 51.60,130.14 52.80,131.26 54.00,132.33 55.20,133.35 56.40,134.32 57.60,135.25 58.80,136.14 60.00,136.98 61.20,137.78 62.40,138.54 63.60,139.26 64.80,139.95 66.00,140.59 67.20,141.20 68.40,141.78 69.60,142.32 70.80,142.83 72.00,143.31 73.20,143.76 74.40,144.18 75.60,144.57 76.80,144.94 78.00,145.28 79.20,145.59 80.40,145.88 81.60,146.15 82.80,146.40 84.00,146.62 85.20,146.82 86.40,147.01 87.60,147.17 88.80,147.32 90.00,147.45 91.20,147.56 92.40,147.66 93.60,147.75 94.80,147.82 96.00,147.88 97.20,147.92 98.40,147.96 99.60,147.98 100.80,148.00 102.00,148.00 103.20,148.00 104.40,147.98 105.60,147.96 106.80,147.94 108.00,147.90 109.20,147.87 110.40,147.82 111.60,147.77 112.80,147.72 114.00,147.67 115.20,147.61 116.40,147.55 117.60,147.48 118.80,147.42 120.00,147.35 121.20,147.29 122.40,147.22 123.60,147.15 124.80,147.09 126.00,147.02 127.20,146.96 128.40,146.89 129.60,146.83 130.80,146.77 132.00,146.71 133.20,146.66 134.40,146.61 135.60,146.56 136.80,146.51 138.00,146.47 139.20,146.43 140.40,146.40 141.60,146.36 142.80,146.34 144.00,146.31 145.20,146.29 146.40,146.28 147.60,146.27 148.80,146.26 150.00,146.26 151.20,146.26 152.40,146.27 153.60,146.28 154.80,146.29 156.00,146.31 157.20,146.34 158.40,146.36 159.60,146.40 160.80,146.43 162.00,146.47 163.20,146.51 164.40,146.56 165.60,146.61 166.80,146.66 168.00,146.71 169.20,146.77 170.40,146.83 171.60,146.89 172.80,146.96 174.00,147.02 175.20,147.09 176.40,147.15 177.60,147.22 178.80,147.29 180.00,147.35 181.20,147.42 182.40,147.48 183.60,147.55 184.80,147.61 186.00,147.67 187.20,147.72 188.40,147.77 189.60,147.82 190.80,147.87 192.00,147.90 193.20,147.94 194.40,147.96 195.60,147.98 196.80,148.00 198.00,148.00 199.20,148.00 200.40,147.98 201.60,147.96 202.80,147.92 204.00,147.88 205.20,147.82 206.40,147.75 207.60,147.66 208.80,147.56 210.00,147.45 211.20,147.32 212.40,147.17 213.60,147.01 214.80,146.82 216.00,146.62 217.20,146.40 218.40,146.15 219.60,145.88 220.80,145.59 222.00,145.28 223.20,144.94 224.40,144.57 225.60,144.18 226.80,143.76 228.00,143.31 229.20,142.83 230.40,142.32 231.60,141.78 232.80,141.20 234.00,140.59 235.20,139.95 236.40,139.26 237.60,138.54 238.80,137.78 240.00,136.98 241.20,136.14 242.40,135.25 243.60,134.32 244.80,133.35 246.00,132.33 247.20,131.26 248.40,130.14 249.60,128.97 250.80,127.75 252.00,126.48 253.20,125.15 254.40,123.76 255.60,122.32 256.80,120.82 258.00,119.26 259.20,117.64 260.40,115.95 261.60,114.20 262.80,112.38 264.00,110.50 265.20,108.54 266.40,106.52 267.60,104.42 268.80,102.25 270.00,100.00 271.20,97.68 272.40,95.27 273.60,92.79 274.80,90.22 276.00,87.57 277.20,84.84 278.40,82.01 279.60,79.10 280.80,76.10 282.00,73.00 283.20,69.81 284.40,66.52 285.60,63.14 286.80,59.65 288.00,56.07 289.20,52.38 290.40,48.58 291.60,44.68 292.80,40.67 294.00,36.54 295.20,32.31 296.40,27.96 297.60,23.49 298.80,18.90\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/>\n  \n  <!-- Corner Badge -->\n  <rect x=\"8\" y=\"6\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#1e40af\"/>\n  <text x=\"21\" y=\"23\" font-size=\"14\" font-weight=\"bold\" fill=\"white\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\">B</text>\n</svg></div>\n  <div><svg width=\"300\" height=\"200\" viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:10px;border:2px solid #e2e8f0;\">\n  <!-- Axes -->\n  <line x1=\"10\" y1=\"100\" x2=\"290\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <polygon points=\"290,97 298,100 290,103\" fill=\"#94a3b8\"/>\n  <line x1=\"150\" y1=\"190\" x2=\"150\" y2=\"10\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <polygon points=\"147,10 150,2 153,10\" fill=\"#94a3b8\"/>\n  \n  <!-- Tick marks -->\n  <line x1=\"30\" y1=\"97\" x2=\"30\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"102\" y1=\"97\" x2=\"102\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"198\" y1=\"97\" x2=\"198\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"270\" y1=\"97\" x2=\"270\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  \n  <!-- Labels -->\n  <text x=\"30\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">-5</text>\n  <text x=\"102\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">-2</text>\n  <text x=\"142\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">O</text>\n  <text x=\"198\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">2</text>\n  <text x=\"270\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">5</text>\n  <text x=\"294\" y=\"104\" font-size=\"11\" fill=\"#475569\" font-family=\"Arial,sans-serif\">x</text>\n  <text x=\"156\" y=\"12\" font-size=\"11\" fill=\"#475569\" font-family=\"Arial,sans-serif\">y</text>\n  \n  <!-- Mathematical Plot -->\n  <polyline points=\"1.20,74.02 2.40,75.08 3.60,76.16 4.80,77.23 6.00,78.30 7.20,79.38 8.40,80.45 9.60,81.53 10.80,82.61 12.00,83.69 13.20,84.77 14.40,85.86 15.60,86.94 16.80,88.03 18.00,89.11 19.20,90.20 20.40,91.29 21.60,92.38 22.80,93.47 24.00,94.55 25.20,95.64 26.40,96.73 27.60,97.82 28.80,98.91 30.00,100.00 31.20,101.09 32.40,102.18 33.60,103.26 34.80,104.35 36.00,105.43 37.20,106.51 38.40,107.59 39.60,108.67 40.80,109.75 42.00,110.82 43.20,111.89 44.40,112.96 45.60,114.02 46.80,115.08 48.00,116.14 49.20,117.19 50.40,118.23 51.60,119.27 52.80,120.31 54.00,121.33 55.20,122.35 56.40,123.37 57.60,124.37 58.80,125.37 60.00,126.35 61.20,127.33 62.40,128.30 63.60,129.25 64.80,130.20 66.00,131.13 67.20,132.05 68.40,132.95 69.60,133.84 70.80,134.71 72.00,135.56 73.20,136.40 74.40,137.22 75.60,138.02 76.80,138.80 78.00,139.55 79.20,140.29 80.40,140.99 81.60,141.68 82.80,142.33 84.00,142.96 85.20,143.56 86.40,144.13 87.60,144.66 88.80,145.16 90.00,145.63 91.20,146.06 92.40,146.45 93.60,146.80 94.80,147.11 96.00,147.37 97.20,147.59 98.40,147.77 99.60,147.90 100.80,147.97 102.00,148.00 103.20,147.97 104.40,147.89 105.60,147.76 106.80,147.56 108.00,147.31 109.20,146.99 110.40,146.62 111.60,146.18 112.80,145.68 114.00,145.11 115.20,144.47 116.40,143.77 117.60,143.01 118.80,142.17 120.00,141.27 121.20,140.29 122.40,139.25 123.60,138.14 124.80,136.96 126.00,135.72 127.20,134.41 128.40,133.04 129.60,131.60 130.80,130.10 132.00,128.54 133.20,126.92 134.40,125.25 135.60,123.52 136.80,121.75 138.00,119.92 139.20,118.06 140.40,116.16 141.60,114.22 142.80,112.25 144.00,110.25 145.20,108.23 146.40,106.19 147.60,104.13 148.80,102.07 150.00,100.00 151.20,97.93 152.40,95.87 153.60,93.81 154.80,91.77 156.00,89.75 157.20,87.75 158.40,85.78 159.60,83.84 160.80,81.94 162.00,80.08 163.20,78.25 164.40,76.48 165.60,74.75 166.80,73.08 168.00,71.46 169.20,69.90 170.40,68.40 171.60,66.96 172.80,65.59 174.00,64.28 175.20,63.04 176.40,61.86 177.60,60.75 178.80,59.71 180.00,58.73 181.20,57.83 182.40,56.99 183.60,56.23 184.80,55.53 186.00,54.89 187.20,54.32 188.40,53.82 189.60,53.38 190.80,53.01 192.00,52.69 193.20,52.44 194.40,52.24 195.60,52.11 196.80,52.03 198.00,52.00 199.20,52.03 200.40,52.10 201.60,52.23 202.80,52.41 204.00,52.63 205.20,52.89 206.40,53.20 207.60,53.55 208.80,53.94 210.00,54.37 211.20,54.84 212.40,55.34 213.60,55.87 214.80,56.44 216.00,57.04 217.20,57.67 218.40,58.32 219.60,59.01 220.80,59.71 222.00,60.45 223.20,61.20 224.40,61.98 225.60,62.78 226.80,63.60 228.00,64.44 229.20,65.29 230.40,66.16 231.60,67.05 232.80,67.95 234.00,68.87 235.20,69.80 236.40,70.75 237.60,71.70 238.80,72.67 240.00,73.65 241.20,74.63 242.40,75.63 243.60,76.63 244.80,77.65 246.00,78.67 247.20,79.69 248.40,80.73 249.60,81.77 250.80,82.81 252.00,83.86 253.20,84.92 254.40,85.98 255.60,87.04 256.80,88.11 258.00,89.18 259.20,90.25 260.40,91.33 261.60,92.41 262.80,93.49 264.00,94.57 265.20,95.65 266.40,96.74 267.60,97.82 268.80,98.91 270.00,100.00 271.20,101.09 272.40,102.18 273.60,103.27 274.80,104.36 276.00,105.45 277.20,106.53 278.40,107.62 279.60,108.71 280.80,109.80 282.00,110.89 283.20,111.97 284.40,113.06 285.60,114.14 286.80,115.23 288.00,116.31 289.20,117.39 290.40,118.47 291.60,119.55 292.80,120.62 294.00,121.70 295.20,122.77 296.40,123.84 297.60,124.92 298.80,125.98\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/>\n  \n  <!-- Corner Badge -->\n  <rect x=\"8\" y=\"6\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#1e40af\"/>\n  <text x=\"21\" y=\"23\" font-size=\"14\" font-weight=\"bold\" fill=\"white\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\">C</text>\n</svg></div>\n  <div><svg width=\"300\" height=\"200\" viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff;border-radius:10px;border:2px solid #e2e8f0;\">\n  <!-- Axes -->\n  <line x1=\"10\" y1=\"100\" x2=\"290\" y2=\"100\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <polygon points=\"290,97 298,100 290,103\" fill=\"#94a3b8\"/>\n  <line x1=\"150\" y1=\"190\" x2=\"150\" y2=\"10\" stroke=\"#94a3b8\" stroke-width=\"1.5\"/>\n  <polygon points=\"147,10 150,2 153,10\" fill=\"#94a3b8\"/>\n  \n  <!-- Tick marks -->\n  <line x1=\"30\" y1=\"97\" x2=\"30\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"102\" y1=\"97\" x2=\"102\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"198\" y1=\"97\" x2=\"198\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  <line x1=\"270\" y1=\"97\" x2=\"270\" y2=\"103\" stroke=\"#64748b\" stroke-width=\"1.2\"/>\n  \n  <!-- Labels -->\n  <text x=\"30\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">-5</text>\n  <text x=\"102\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">-2</text>\n  <text x=\"142\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">O</text>\n  <text x=\"198\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">2</text>\n  <text x=\"270\" y=\"116\" font-size=\"11\" text-anchor=\"middle\" fill=\"#475569\" font-family=\"Arial,sans-serif\">5</text>\n  <text x=\"294\" y=\"104\" font-size=\"11\" fill=\"#475569\" font-family=\"Arial,sans-serif\">x</text>\n  <text x=\"156\" y=\"12\" font-size=\"11\" fill=\"#475569\" font-family=\"Arial,sans-serif\">y</text>\n  \n  <!-- Mathematical Plot -->\n  <polyline points=\"1.20,214.27 2.40,211.41 3.60,208.55 4.80,205.70 6.00,202.86 7.20,200.02 8.40,197.19 9.60,194.37 10.80,191.55 12.00,188.75 13.20,185.95 14.40,183.17 15.60,180.39 16.80,177.62 18.00,174.87 19.20,172.12 20.40,169.39 21.60,166.67 22.80,163.96 24.00,161.26 25.20,158.58 26.40,155.91 27.60,153.26 28.80,150.62 30.00,148.00 31.20,145.40 32.40,142.81 33.60,140.24 34.80,137.69 36.00,135.15 37.20,132.64 38.40,130.15 39.60,127.68 40.80,125.23 42.00,122.81 43.20,120.41 44.40,118.03 45.60,115.68 46.80,113.35 48.00,111.05 49.20,108.78 50.40,106.54 51.60,104.33 52.80,102.15 54.00,100.00 55.20,97.88 56.40,95.80 57.60,93.75 58.80,91.74 60.00,89.76 61.20,87.82 62.40,85.92 63.60,84.06 64.80,82.24 66.00,80.47 67.20,78.73 68.40,77.04 69.60,75.40 70.80,73.80 72.00,72.25 73.20,70.74 74.40,69.29 75.60,67.89 76.80,66.54 78.00,65.24 79.20,64.00 80.40,62.81 81.60,61.68 82.80,60.61 84.00,59.59 85.20,58.64 86.40,57.74 87.60,56.91 88.80,56.14 90.00,55.43 91.20,54.78 92.40,54.21 93.60,53.69 94.80,53.25 96.00,52.87 97.20,52.56 98.40,52.31 99.60,52.14 100.80,52.03 102.00,52.00 103.20,52.04 104.40,52.14 105.60,52.32 106.80,52.56 108.00,52.88 109.20,53.26 110.40,53.72 111.60,54.25 112.80,54.84 114.00,55.51 115.20,56.24 116.40,57.04 117.60,57.90 118.80,58.83 120.00,59.83 121.20,60.88 122.40,62.00 123.60,63.18 124.80,64.42 126.00,65.71 127.20,67.06 128.40,68.47 129.60,69.92 130.80,71.42 132.00,72.97 133.20,74.57 134.40,76.20 135.60,77.88 136.80,79.59 138.00,81.33 139.20,83.11 140.40,84.91 141.60,86.74 142.80,88.60 144.00,90.47 145.20,92.35 146.40,94.25 147.60,96.16 148.80,98.08 150.00,100.00 151.20,101.92 152.40,103.84 153.60,105.75 154.80,107.65 156.00,109.53 157.20,111.40 158.40,113.26 159.60,115.09 160.80,116.89 162.00,118.67 163.20,120.41 164.40,122.12 165.60,123.80 166.80,125.43 168.00,127.03 169.20,128.58 170.40,130.08 171.60,131.53 172.80,132.94 174.00,134.29 175.20,135.58 176.40,136.82 177.60,138.00 178.80,139.12 180.00,140.17 181.20,141.17 182.40,142.10 183.60,142.96 184.80,143.76 186.00,144.49 187.20,145.16 188.40,145.75 189.60,146.28 190.80,146.74 192.00,147.12 193.20,147.44 194.40,147.68 195.60,147.86 196.80,147.96 198.00,148.00 199.20,147.97 200.40,147.86 201.60,147.69 202.80,147.44 204.00,147.13 205.20,146.75 206.40,146.31 207.60,145.79 208.80,145.22 210.00,144.57 211.20,143.86 212.40,143.09 213.60,142.26 214.80,141.36 216.00,140.41 217.20,139.39 218.40,138.32 219.60,137.19 220.80,136.00 222.00,134.76 223.20,133.46 224.40,132.11 225.60,130.71 226.80,129.26 228.00,127.75 229.20,126.20 230.40,124.60 231.60,122.96 232.80,121.27 234.00,119.53 235.20,117.76 236.40,115.94 237.60,114.08 238.80,112.18 240.00,110.24 241.20,108.26 242.40,106.25 243.60,104.20 244.80,102.12 246.00,100.00 247.20,97.85 248.40,95.67 249.60,93.46 250.80,91.22 252.00,88.95 253.20,86.65 254.40,84.32 255.60,81.97 256.80,79.59 258.00,77.19 259.20,74.77 260.40,72.32 261.60,69.85 262.80,67.36 264.00,64.85 265.20,62.31 266.40,59.76 267.60,57.19 268.80,54.60 270.00,52.00 271.20,49.38 272.40,46.74 273.60,44.09 274.80,41.42 276.00,38.74 277.20,36.04 278.40,33.33 279.60,30.61 280.80,27.88 282.00,25.13 283.20,22.38 284.40,19.61 285.60,16.83 286.80,14.05 288.00,11.25 289.20,8.45 290.40,5.63 291.60,2.81 292.80,-0.02 294.00,-2.86 295.20,-5.70 296.40,-8.55 297.60,-11.41 298.80,-14.27\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.8\" stroke-linejoin=\"round\"/>\n  \n  <!-- Corner Badge -->\n  <rect x=\"8\" y=\"6\" width=\"26\" height=\"24\" rx=\"5\" fill=\"#1e40af\"/>\n  <text x=\"21\" y=\"23\" font-size=\"14\" font-weight=\"bold\" fill=\"white\" text-anchor=\"middle\" font-family=\"Arial,sans-serif\">D</text>\n</svg></div>\n</div>",
+          "options": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "answer": 2,
+          "hint": "An odd function is symmetric about the origin.",
+          "solution": "**Step 1:** Condition 1: \\(g\\) is an odd function, so its graph has 180° rotational symmetry about the origin: \\(g(-x) = -g(x)\\). Eliminate any graphs that look even (mirror symmetry in the \\(y\\)-axis) or lack origin symmetry.\n\\(g(-x) = -g(x)\\quad\\text{(odd)}\\)\n\n**Step 2:** Condition 2: \\(g(5) = 0\\) means the curve crosses the \\(x\\)-axis at \\(x = 5\\). Keep only graphs that pass through the point \\((5, 0)\\).\n\\(g(5) = 0\\)\n\n**Step 3:** Condition 3: \\(g'(2) = 0\\) means the tangent is horizontal at \\(x = 2\\) — a stationary point (turning point or horizontal inflection) on the curve at that abscissa.\n\\(g'(2) = 0\\)\n\n**Step 4:** Condition 4: \\(g'(x) > 0\\) for all \\(x > 2\\) means the function is strictly increasing to the right of \\(x = 2\\). Discard any remaining graph that falls after \\(x = 2\\).\n\\(g'(x) > 0\\text{ for }x > 2\\)\n\n**Step 5:** Only Graph C satisfies all four conditions simultaneously (odd symmetry, root at 5, stationary at 2, and increasing for \\(x > 2\\)). The correct option is C, which is index 2.\n\\(\\text{Answer: } C\\)",
+          "steps": [
+            {
+              "explain": "Condition 1: \\(g\\) is an odd function, so its graph has 180° rotational symmetry about the origin: \\(g(-x) = -g(x)\\). Eliminate any graphs that look even (mirror symmetry in the \\(y\\)-axis) or lack origin symmetry.",
+              "work": "\\(g(-x) = -g(x)\\quad\\text{(odd)}\\)"
+            },
+            {
+              "explain": "Condition 2: \\(g(5) = 0\\) means the curve crosses the \\(x\\)-axis at \\(x = 5\\). Keep only graphs that pass through the point \\((5, 0)\\).",
+              "work": "\\(g(5) = 0\\)"
+            },
+            {
+              "explain": "Condition 3: \\(g'(2) = 0\\) means the tangent is horizontal at \\(x = 2\\) — a stationary point (turning point or horizontal inflection) on the curve at that abscissa.",
+              "work": "\\(g'(2) = 0\\)"
+            },
+            {
+              "explain": "Condition 4: \\(g'(x) > 0\\) for all \\(x > 2\\) means the function is strictly increasing to the right of \\(x = 2\\). Discard any remaining graph that falls after \\(x = 2\\).",
+              "work": "\\(g'(x) > 0\\text{ for }x > 2\\)"
+            },
+            {
+              "explain": "Only Graph C satisfies all four conditions simultaneously (odd symmetry, root at 5, stationary at 2, and increasing for \\(x > 2\\)). The correct option is C, which is index 2.",
+              "work": "\\(\\text{Answer: } C\\)"
+            }
+          ]
+        },
+        {
+          "id": "oDCwSXbzqSOdjzYKNin3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the function \\(f(x) = \\frac{5}{2}(7 - \\frac{4}{3}x)\\) (with a swapped number coefficient of \\(f(x) = \\frac{3}{4}(5 - \\frac{2}{3}x)\\)) in the form \\(f(x) = mx + b\\), and hence write down \\(f'(x)\\).",
+          "options": [
+            "\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4}, \\, f'(x) = -\\frac{1}{2}\\)",
+            "\\(f(x) = -\\frac{2}{3}x + 5, \\, f'(x) = -\\frac{2}{3}\\)",
+            "\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4}, \\, f'(x) = \\frac{15}{4}\\)",
+            "\\(f(x) = \\frac{1}{2}x + \\frac{15}{4}, \\, f'(x) = \\frac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** Use the swapped function \\(f(x) = \\frac{3}{4}\\bigl(5 - \\frac{2}{3}x\\bigr)\\). Expand by distributing \\(\\frac{3}{4}\\) across both terms inside the brackets.\n\\(f(x) = \\frac{3}{4} \\cdot 5 - \\frac{3}{4} \\cdot \\frac{2}{3}x\\)\n\n**Step 2:** Compute each product separately. First the constant term: \\(\\frac{3}{4} \\times 5 = \\frac{15}{4}\\).\n\\(\\frac{3}{4} \\times 5 = \\frac{15}{4}\\)\n\n**Step 3:** Next the coefficient of \\(x\\): \\(\\frac{3}{4} \\times \\frac{2}{3} = \\frac{6}{12} = \\frac{1}{2}\\). So the second term is \\(-\\frac{1}{2}x\\).\n\\(f(x) = \\frac{15}{4} - \\frac{1}{2}x\\)\n\n**Step 4:** Reorder into the standard form \\(mx + b\\) with the gradient term first. Then \\(m = -\\frac{1}{2}\\) and \\(b = \\frac{15}{4}\\).\n\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4}\\)\n\n**Step 5:** Differentiate the linear form: the derivative is the constant gradient \\(m\\).\n\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4},\\; f'(x) = -\\frac{1}{2}\\)",
+          "steps": [
+            {
+              "explain": "Use the swapped function \\(f(x) = \\frac{3}{4}\\bigl(5 - \\frac{2}{3}x\\bigr)\\). Expand by distributing \\(\\frac{3}{4}\\) across both terms inside the brackets.",
+              "work": "\\(f(x) = \\frac{3}{4} \\cdot 5 - \\frac{3}{4} \\cdot \\frac{2}{3}x\\)"
+            },
+            {
+              "explain": "Compute each product separately. First the constant term: \\(\\frac{3}{4} \\times 5 = \\frac{15}{4}\\).",
+              "work": "\\(\\frac{3}{4} \\times 5 = \\frac{15}{4}\\)"
+            },
+            {
+              "explain": "Next the coefficient of \\(x\\): \\(\\frac{3}{4} \\times \\frac{2}{3} = \\frac{6}{12} = \\frac{1}{2}\\). So the second term is \\(-\\frac{1}{2}x\\).",
+              "work": "\\(f(x) = \\frac{15}{4} - \\frac{1}{2}x\\)"
+            },
+            {
+              "explain": "Reorder into the standard form \\(mx + b\\) with the gradient term first. Then \\(m = -\\frac{1}{2}\\) and \\(b = \\frac{15}{4}\\).",
+              "work": "\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4}\\)"
+            },
+            {
+              "explain": "Differentiate the linear form: the derivative is the constant gradient \\(m\\).",
+              "work": "\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4},\\; f'(x) = -\\frac{1}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "xj0uwoXfKZlZ9NJD5oni",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify the compound function \\(f(x) = \\frac{3 + 5x}{2} - \\frac{5 - 2x}{2}\\) (with a swapped number coefficient of \\(f(x) = \\frac{5 + 7x}{3} - \\frac{2 - 4x}{3}\\)) into the linear form \\(f(x) = mx + b\\), and hence find the derived function \\(f'(x)\\).",
+          "options": [
+            "\\(f(x) = \\frac{11}{3}x + 1, \\, f'(x) = \\frac{11}{3}\\)",
+            "\\(f(x) = x + 1, \\, f'(x) = 1\\)",
+            "\\(f(x) = \\frac{11}{3}x + 1, \\, f'(x) = 1\\)",
+            "\\(f(x) = \\frac{11}{3}x - 1, \\, f'(x) = \\frac{11}{3}\\)"
+          ],
+          "answer": 0,
+          "solution": "**Step 1:** Use the swapped compound expression \\(f(x) = \\dfrac{5 + 7x}{3} - \\dfrac{2 - 4x}{3}\\). Both fractions share denominator 3, so combine over a single fraction.\n\\(f(x) = \\dfrac{(5 + 7x) - (2 - 4x)}{3}\\)\n\n**Step 2:** Expand the numerator by distributing the minus sign through the second bracket. Watch the sign change on \\(-4x\\).\n\\(f(x) = \\dfrac{5 + 7x - 2 + 4x}{3}\\)\n\n**Step 3:** Collect like terms in the numerator: constants \\(5 - 2 = 3\\) and coefficients of \\(x\\) give \\(7x + 4x = 11x\\).\n\\(f(x) = \\dfrac{3 + 11x}{3}\\)\n\n**Step 4:** Split the fraction into two terms and simplify the constant: \\(\\frac{3}{3} = 1\\). This yields gradient–intercept form.\n\\(f(x) = \\frac{11}{3}x + 1\\)\n\n**Step 5:** Differentiate the linear function: the derivative equals the gradient coefficient \\(\\frac{11}{3}\\).\n\\(f(x) = \\frac{11}{3}x + 1,\\; f'(x) = \\frac{11}{3}\\)",
+          "steps": [
+            {
+              "explain": "Use the swapped compound expression \\(f(x) = \\dfrac{5 + 7x}{3} - \\dfrac{2 - 4x}{3}\\). Both fractions share denominator 3, so combine over a single fraction.",
+              "work": "\\(f(x) = \\dfrac{(5 + 7x) - (2 - 4x)}{3}\\)"
+            },
+            {
+              "explain": "Expand the numerator by distributing the minus sign through the second bracket. Watch the sign change on \\(-4x\\).",
+              "work": "\\(f(x) = \\dfrac{5 + 7x - 2 + 4x}{3}\\)"
+            },
+            {
+              "explain": "Collect like terms in the numerator: constants \\(5 - 2 = 3\\) and coefficients of \\(x\\) give \\(7x + 4x = 11x\\).",
+              "work": "\\(f(x) = \\dfrac{3 + 11x}{3}\\)"
+            },
+            {
+              "explain": "Split the fraction into two terms and simplify the constant: \\(\\frac{3}{3} = 1\\). This yields gradient–intercept form.",
+              "work": "\\(f(x) = \\frac{11}{3}x + 1\\)"
+            },
+            {
+              "explain": "Differentiate the linear function: the derivative equals the gradient coefficient \\(\\frac{11}{3}\\).",
+              "work": "\\(f(x) = \\frac{11}{3}x + 1,\\; f'(x) = \\frac{11}{3}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-9B",
+      "code": "9B",
+      "title": "The derivative as a limit",
+      "questions": [
+        {
+          "id": "glenwood2020-q27",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using \\( f'(x)=\\displaystyle\\lim_{h\\to0}\\dfrac{f(x+h)-f(x)}{h} \\), find the derivative of \\( f(x)=x^2+3x \\).",
+          "options": [
+            "\\( 2x+3 \\)",
+            "\\( 2x \\)",
+            "\\( x+3 \\)",
+            "\\( 2x+h+3 \\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Find \\( f(x+h) \\) by replacing every \\( x \\) in \\( f(x)=x^2+3x \\) with \\( (x+h) \\).",
+              "work": "f(x+h) = (x+h)^2+3(x+h) = x^2+2xh+h^2+3x+3h"
+            },
+            {
+              "explain": "Compute \\( f(x+h)-f(x) \\) by subtracting the original function; the \\( x^2 \\) and \\( 3x \\) terms cancel.",
+              "work": "f(x+h)-f(x) = 2xh+h^2+3h"
+            },
+            {
+              "explain": "Factor \\( h \\) out of every remaining term.",
+              "work": "f(x+h)-f(x) = h(2x+h+3)"
+            },
+            {
+              "explain": "Divide by \\( h \\) (valid since \\( h\\ne0 \\) before the limit is taken).",
+              "work": "\\dfrac{f(x+h)-f(x)}{h} = 2x+h+3"
+            },
+            {
+              "explain": "Take the limit as \\( h\\to0 \\) — the term containing \\( h \\) vanishes.",
+              "work": "f'(x) = 2x+3"
+            }
+          ],
+          "timeLimit": 100,
+          "meta": {
+            "source": "Glenwood 2020 Trial Q27",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "glenwood-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-9C",
+      "code": "9C",
+      "title": "A rule for differentiating powers of x",
+      "questions": [
+        {
+          "id": "glenwood2020-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If \\( f(x) = x^2 - 2x \\), what is the value of \\( f'(3) \\)?",
+          "options": [
+            "4",
+            "0",
+            "6",
+            "3"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Differentiate \\( f(x) \\) term by term using the power rule: multiply by the exponent, then reduce the exponent by 1.",
+              "work": "f'(x) = 2x - 2"
+            },
+            {
+              "explain": "Substitute \\( x = 3 \\) into the derivative to evaluate the gradient at that point.",
+              "work": "f'(3) = 2(3) - 2"
+            },
+            {
+              "explain": "Simplify the arithmetic.",
+              "work": "f'(3) = 6 - 2 = 4"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Glenwood 2020 Trial Q1",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "glenwood-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01"
+          }
+        },
+        {
+          "id": "gosford2020-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the equation of the tangent to \\( y=x^2-3 \\) at \\( x=-1 \\)?",
+          "options": [
+            "y=2x-4",
+            "\\(y=\\dfrac{x}{2}-\\dfrac{3}{2}\\)",
+            "y=-2x-4",
+            "\\(y=-\\dfrac{x}{2}-\\dfrac{3}{2}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Differentiate \\( y=x^2-3 \\) to find the gradient function.",
+              "work": "\\(\\dfrac{dy}{dx} = 2x\\)"
+            },
+            {
+              "explain": "Substitute \\( x=-1 \\) to find the gradient of the tangent at that point, and find the y-coordinate of the point of contact.",
+              "work": "\\(\\text{gradient} = 2(-1) = -2, \\qquad y = (-1)^2-3 = -2 \\;\\Rightarrow\\; (-1,-2)\\)"
+            },
+            {
+              "explain": "Use the point-gradient form \\( y-y_1=m(x-x_1) \\). Pitfall: using the gradient at the wrong sign or the wrong point gives the y=2x-4 distractor.",
+              "work": "\\(y-(-2) = -2(x-(-1)) \\;\\Rightarrow\\; y = -2x-4\\)"
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q3",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-TAN-01"
+          }
+        },
+        {
+          "id": "hh2020-q1",
+          "type": "mc",
+          "stem": "If \\(f(x) = 5x^3+3\\), what is the value of \\(f'(-1)\\)?",
+          "options": [
+            "\\(15\\)",
+            "\\(-2\\)",
+            "\\(18\\)",
+            "\\(-12\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate first, then substitute \\(x=-1\\).",
+          "steps": [
+            {
+              "explain": "Differentiate \\(f(x)=5x^3+3\\) using the power rule.",
+              "work": "\\(f'(x) = 15x^2\\)"
+            },
+            {
+              "explain": "Substitute \\(x=-1\\).",
+              "work": "\\(f'(-1) = 15(-1)^2 = 15(1)\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(f'(-1) = 15\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hunters Hill HS 2020 2U Trials",
+            "school": "Hunters Hill High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-9D",
+      "code": "9D",
+      "title": "dy/dx notation — tangents and normals",
+      "questions": [
+        {
+          "id": "hillsgrammar-25-2u-q4",
+          "type": "mc",
+          "stem": "What is the gradient of the normal to the curve \\(f(x) = 3x^3 - 4x + 2\\) at the point \\((-1, 3)\\)?",
+          "options": [
+            "\\(5\\)",
+            "\\(-5\\)",
+            "\\(-\\frac{1}{5}\\)",
+            "\\(-\\frac{1}{3}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Differentiate \\(f(x)\\) to find the gradient function.",
+              "work": "\\(f'(x) = 9x^2 - 4\\)"
+            },
+            {
+              "explain": "Substitute \\(x=-1\\) to find the gradient of the tangent at that point.",
+              "work": "\\(f'(-1) = 9(-1)^2 - 4 = 9 - 4 = 5\\)"
+            },
+            {
+              "explain": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal of the tangent's gradient.",
+              "work": "\\(m_{normal} = -\\frac{1}{5}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-9F",
+      "code": "9F",
+      "title": "Differentiating powers with fractional indices",
+      "questions": [
+        {
+          "id": "hg2020-q12",
+          "type": "multipart",
+          "stem": "Let \\(f(x) = \\dfrac{(x+3)(2x+1)}{\\sqrt{x}}\\), for \\(x>0\\).",
+          "parts": [
+            {
+              "id": "hg2020-q12a",
+              "type": "mc",
+              "stem": "(a) By expressing \\(f(x)\\) in the form \\(Ax^{3/2}+Bx^{1/2}+Cx^{-1/2}\\), find the values of \\(A\\), \\(B\\) and \\(C\\).",
+              "options": [
+                "\\(A=2, B=7, C=1\\)",
+                "\\(A=1, B=7, C=3\\)",
+                "\\(A=2, B=3, C=7\\)",
+                "\\(A=2, B=7, C=3\\)"
+              ],
+              "answer": 3,
+              "hint": "Expand the numerator first, then divide each term by \\(\\sqrt{x}=x^{1/2}\\), subtracting exponents.",
+              "steps": [
+                {
+                  "explain": "Expand the numerator \\((x+3)(2x+1)\\).",
+                  "work": "\\((x+3)(2x+1) = 2x^2+7x+3\\)"
+                },
+                {
+                  "explain": "Divide each term by \\(\\sqrt{x}=x^{1/2}\\), subtracting \\(\\tfrac12\\) from each exponent.",
+                  "work": "\\(f(x) = \\dfrac{2x^2+7x+3}{x^{1/2}} = 2x^{3/2}+7x^{1/2}+3x^{-1/2}\\)"
+                },
+                {
+                  "explain": "Read off the coefficients.",
+                  "work": "\\(\\therefore A=2, \\; B=7, \\; C=3\\)"
+                }
+              ]
+            },
+            {
+              "id": "hg2020-q12b",
+              "type": "mc",
+              "stem": "(b) Find \\(f'(x)\\).",
+              "options": [
+                "\\(2x^{1/2}+7x^{-1/2}+3x^{-3/2}\\)",
+                "\\(3x^{1/2}+\\dfrac{7}{2}x^{-1/2}-\\dfrac32 x^{-3/2}\\)",
+                "\\(\\dfrac32 x^{1/2}+\\dfrac72 x^{-1/2}-\\dfrac32 x^{-3/2}\\)",
+                "\\(3x^{1/2}+7x^{-1/2}-3x^{-3/2}\\)"
+              ],
+              "answer": 1,
+              "hint": "Differentiate \\(f(x)=2x^{3/2}+7x^{1/2}+3x^{-1/2}\\) term by term using the power rule.",
+              "steps": [
+                {
+                  "explain": "Differentiate each term of \\(f(x)=2x^{3/2}+7x^{1/2}+3x^{-1/2}\\) using the power rule, multiplying by the exponent and reducing it by 1.",
+                  "work": "\\(f'(x) = 2\\times\\dfrac32 x^{1/2} + 7\\times\\dfrac12 x^{-1/2} + 3\\times\\left(-\\dfrac12\\right)x^{-3/2}\\)"
+                },
+                {
+                  "explain": "Simplify each coefficient.",
+                  "work": "\\(f'(x) = 3x^{1/2}+\\dfrac72 x^{-1/2}-\\dfrac32 x^{-3/2}\\)"
+                }
+              ]
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hornsby Girls HS 2020 2U Trials",
+            "school": "Hornsby Girls High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-9G",
+      "code": "9G",
+      "title": "The chain rule",
+      "questions": [
+        {
+          "id": "bb2020-q14a",
+          "type": "mc",
+          "stem": "Differentiate \\(y = \\tan^3\\left(\\dfrac{x}{4}\\right)\\).",
+          "options": [
+            "\\(3\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)",
+            "\\(\\dfrac{1}{4}\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\)",
+            "\\(\\dfrac{3}{4}\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)",
+            "\\(\\dfrac{3}{4}\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)"
+          ],
+          "answer": 3,
+          "hint": "Treat this as \\(y=u^3\\) with \\(u=\\tan(x/4)\\), and apply the chain rule twice: once for the power, once for the inner \\(x/4\\).",
+          "steps": [
+            {
+              "explain": "Let \\(u=\\tan(x/4)\\), so \\(y=u^3\\). By the chain rule, \\(\\dfrac{dy}{dx} = 3u^2 \\cdot \\dfrac{du}{dx}\\).",
+              "work": "\\(\\dfrac{dy}{dx} = 3\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\times \\dfrac{d}{dx}\\left[\\tan\\!\\left(\\dfrac{x}{4}\\right)\\right]\\)"
+            },
+            {
+              "explain": "Differentiate the inner function \\(\\tan(x/4)\\), remembering the extra factor of \\(\\tfrac14\\) from the chain rule on \\(x/4\\).",
+              "work": "\\(\\dfrac{d}{dx}\\left[\\tan\\!\\left(\\dfrac{x}{4}\\right)\\right] = \\dfrac{1}{4}\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\)"
+            },
+            {
+              "explain": "Combine both results.",
+              "work": "\\(\\dfrac{dy}{dx} = \\dfrac{3}{4}\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "bb2020-q14b",
+          "type": "mc",
+          "stem": "Differentiate \\(y = \\dfrac{e^{3x}-5}{x+1}\\).",
+          "options": [
+            "\\(\\dfrac{3e^{3x}(x+1)}{(x+1)^2}\\)",
+            "\\(\\dfrac{3e^{3x}-5}{(x+1)^2}\\)",
+            "\\(\\dfrac{3xe^{3x}-2e^{3x}-5}{(x+1)^2}\\)",
+            "\\(\\dfrac{3xe^{3x}+2e^{3x}+5}{(x+1)^2}\\)"
+          ],
+          "answer": 3,
+          "hint": "Apply the quotient rule \\(\\dfrac{d}{dx}\\left(\\dfrac{u}{v}\\right) = \\dfrac{u'v-uv'}{v^2}\\) with \\(u=e^{3x}-5\\), \\(v=x+1\\).",
+          "steps": [
+            {
+              "explain": "Identify \\(u=e^{3x}-5\\) (so \\(u'=3e^{3x}\\)) and \\(v=x+1\\) (so \\(v'=1\\)), then apply the quotient rule.",
+              "work": "\\(\\dfrac{dy}{dx} = \\dfrac{(x+1)(3e^{3x})-(e^{3x}-5)(1)}{(x+1)^2}\\)"
+            },
+            {
+              "explain": "Expand the numerator.",
+              "work": "\\(= \\dfrac{3xe^{3x}+3e^{3x}-e^{3x}+5}{(x+1)^2}\\)"
+            },
+            {
+              "explain": "Collect like terms in the numerator.",
+              "work": "\\(\\dfrac{dy}{dx} = \\dfrac{3xe^{3x}+2e^{3x}+5}{(x+1)^2}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-9H",
+      "code": "9H",
+      "title": "The product rule",
+      "questions": [
+        {
+          "id": "hg2020-q1",
+          "type": "mc",
+          "stem": "What is \\(f'(x)\\) if \\(f(x) = 3x^4(4-x)^3\\)?",
+          "options": [
+            "\\(3x^3(4-x)^3(16-7x)\\)",
+            "\\(3x^3(4-x)^2(7x-16)\\)",
+            "\\(3x^3(4-x)^3(7x-16)\\)",
+            "\\(3x^3(4-x)^2(16-7x)\\)"
+          ],
+          "answer": 3,
+          "hint": "Apply the product rule with \\(u=3x^4\\) and \\(v=(4-x)^3\\), remembering the chain rule when differentiating \\(v\\).",
+          "steps": [
+            {
+              "explain": "Let \\(u=3x^4\\) (so \\(u'=12x^3\\)) and \\(v=(4-x)^3\\) (so, by the chain rule, \\(v' = 3(4-x)^2\\times(-1) = -3(4-x)^2\\)). Apply the product rule \\(f'=u'v+uv'\\).",
+              "work": "\\(f'(x) = 12x^3(4-x)^3 + 3x^4\\times\\big(-3(4-x)^2\\big)\\)"
+            },
+            {
+              "explain": "Simplify the second term.",
+              "work": "\\(f'(x) = 12x^3(4-x)^3 - 9x^4(4-x)^2\\)"
+            },
+            {
+              "explain": "Factor out the common factors \\(3x^3(4-x)^2\\) from both terms.",
+              "work": "\\(f'(x) = 3x^3(4-x)^2\\big[4(4-x) - 3x\\big]\\)"
+            },
+            {
+              "explain": "Expand and simplify the bracket.",
+              "work": "\\(4(4-x)-3x = 16-4x-3x = 16-7x\\), so \\(f'(x) = 3x^3(4-x)^2(16-7x)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hornsby Girls HS 2020 2U Trials",
+            "school": "Hornsby Girls High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hh2020-q20",
+          "type": "review",
+          "stem": "If \\(y = xe^{2x}\\), prove that \\(\\dfrac{dy}{dx}-2y = e^{2x}\\).",
+          "answer": "",
+          "steps": [
+            {
+              "explain": "Differentiate \\(y=xe^{2x}\\) using the product rule, with \\(u=x\\) (\\(u'=1\\)) and \\(v=e^{2x}\\) (\\(v'=2e^{2x}\\)).",
+              "work": "\\(\\dfrac{dy}{dx} = 1\\cdot e^{2x}+x\\cdot 2e^{2x} = e^{2x}+2xe^{2x}\\)"
+            },
+            {
+              "explain": "Substitute \\(\\dfrac{dy}{dx}\\) and \\(y=xe^{2x}\\) into the left-hand side of the equation to be proven.",
+              "work": "LHS \\(= e^{2x}+2xe^{2x}-2(xe^{2x})\\)"
+            },
+            {
+              "explain": "The two \\(2xe^{2x}\\) terms cancel.",
+              "work": "LHS \\(= e^{2x}\\) = RHS, as required."
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hunters Hill HS 2020 2U Trials",
+            "school": "Hunters Hill High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,757 @@
+{
+  "chapterId": "exam:year11ch1e",
+  "title": "Exam year11ch1e",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ch1e",
+      "code": "EXAM",
+      "title": "Exam",
+      "questions": [
+        {
+          "id": "20af071eeb201d35ceb6bb553430c409",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously for \\\\(  x  \\\\):\n\\\\(  3x + y = 7  \\\\)\n\\\\(  9x^2 + y^2 = 25  \\\\)",
+          "answer": "1",
+          "hint": "Isolate \\( y \\) from the linear equation and substitute.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Express \\( y \\).",
+              "work": "y = 7 - 3x"
+            },
+            {
+              "explain": "Substitute into the second equation.",
+              "work": "9x^2 + \\( 7 - 3x \\)^2 = 25"
+            },
+            {
+              "explain": "Expand.",
+              "work": "9x^2 + 49 - 42x + 9x^2 = 25"
+            },
+            {
+              "explain": "Rearrange and simplify.",
+              "work": "18x^2 - 42x + 24 = 0"
+            },
+            {
+              "explain": "Divide by 6.",
+              "work": "3x^2 - 7x + 4 = 0"
+            },
+            {
+              "explain": "Factor the quadratic.",
+              "work": "\\( 3x - 4 \\)\\( x - 1 \\) = 0 \\Rightarrow x = 1, frac{4}{3}"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "28b5b5587400b36fa5661953a6cacc08",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve the system:\n\\\\(  x + y = 8  \\\\)\n\\\\(  y + z = 13  \\\\)\n\\\\(  x + z = 11  \\\\)",
+          "answer": "0",
+          "hint": "Add all three equations to find the sum, then subtract each pair.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\( 2(x + y + z \\) = 32 \\Rightarrow x + y + z = 16)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\( z = 16 - 8 = 8, quad x = 16 - 13 = 3, quad y = 16 - 11 = 5 \\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(0\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 150
+        },
+        {
+          "id": "2e20f8c8dfa884a2eff75040655549dc",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "A rectangle has a perimeter of 34 cm and an area of 60 cm\\\\( ^2 \\\\). Find the dimensions.",
+          "answer": "2",
+          "hint": "Use perimeter and area to set up a system of equations.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\( 2(l + w \\) = 34 \\Rightarrow l + w = 17)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\( lw = 60 \\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\( t^2 - 17t + 60 = 0 \\Rightarrow (t - 5 \\)\\( t - 12 \\) = 0)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "2fe0e5358aa698159efceaefd4bfdcda",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "A two-digit number has digits that sum to 11. When the digits are reversed, the new number is 27 more than the original. Find the original number.",
+          "answer": "1",
+          "hint": "Set up equations for the digit sum and the difference between the numbers.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Let the tens digit be x and units digit be y.",
+              "work": "\\( x + y = 11 \\)"
+            },
+            {
+              "explain": "The reversed number exceeds the original by 27.",
+              "work": "\\( (10y + x \\) - \\( 10x + y \\) = 27 \\Rightarrow 9y - 9x = 27 \\Rightarrow y - x = 3)"
+            },
+            {
+              "explain": "Solve the system: x + y = 11, y - x = 3.",
+              "work": "\\( 2y = 14 \\Rightarrow y = 7, quad x = 4 \\)"
+            },
+            {
+              "explain": "The original number is 47.",
+              "work": "\\( 10(4 \\) + 7 = 47)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "34fb82c3ec8c5df6ffba7bb09010cd3b",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "\\\\$10{,}000 is invested in two accounts: one earning 5% and another earning 8% annual interest. The total interest earned in one year is \\\\$620. How much was invested in each account?",
+          "answer": "0",
+          "hint": "Set up equations for total investment and total interest.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\\\(x + y = 10{,}000 \\\\quad \\\\text{and} \\\\quad 0.05x + 0.08y = 620\\\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\\\(5x + 8y = 62{,}000\\\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\\\(5x + 8y - 5x - 5y = 62{,}000 - 50{,}000 \\\\Rightarrow 3y = 12{,}000\\\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "35e8d9c99a6f09056cce7811f2d584fa",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "5 kg of Mix A and 3 kg of Mix B costs \\\\$43. 3 kg of Mix A and 5 kg of Mix B costs \\\\$37. Find the cost per kg of each mix.",
+          "answer": "0",
+          "hint": "Set up equations from the cost information.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\\\(5a + 3b = 43 \\\\quad \\\\text{and} \\\\quad 3a + 5b = 37\\\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\\\(8a + 8b = 80 \\\\Rightarrow a + b = 10\\\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\\\(2a - 2b = 6 \\\\Rightarrow a - b = 3\\\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "3b05b816e4499f2d4dbd6fba5432288e",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously for \\\\(  y  \\\\):\n\\\\(  x + 2y = 3  \\\\)\n\\\\(  2xy - x^2 = 1  \\\\)",
+          "answer": "1",
+          "hint": "Substitute \\( x = 3 - 2y \\) into the second equation and solve the quadratic in \\( y \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Express \\( x \\).",
+              "work": "x = 3 - 2y"
+            },
+            {
+              "explain": "Substitute and simplify.",
+              "work": "8y^2 - 18y + 10 = 0 \\Rightarrow 4y^2 - 9y + 5 = 0"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\( y - 1 \\)\\( 4y - 5 \\) = 0 \\Rightarrow y = 1, frac{5}{4}"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "3b6eadddf1541fde142a2985473c8238",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously for \\\\(  x  \\\\):\n\\\\(  x + 2y = 3  \\\\)\n\\\\(  2xy - x^2 = 1  \\\\)",
+          "answer": "2",
+          "hint": "Express \\( x = 3 - 2y \\) from the linear equation and substitute.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Rearrange the linear equation.",
+              "work": "x = 3 - 2y"
+            },
+            {
+              "explain": "Substitute into the second equation.",
+              "work": "2\\( 3 - 2y \\)y - \\( 3 - 2y \\)^2 = 1"
+            },
+            {
+              "explain": "Expand and simplify.",
+              "work": "\\( 6y - 4y^2 \\) - \\( 9 - 12y + 4y^2 \\) = 1"
+            },
+            {
+              "explain": "Collect terms.",
+              "work": "-8y^2 + 18y - 9 = 1 \\Rightarrow 8y^2 - 18y + 10 = 0"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "4y^2 - 9y + 5 = 0"
+            },
+            {
+              "explain": "Factor to find \\( y \\).",
+              "work": "\\( y - 1 \\)\\( 4y - 5 \\) = 0 \\Rightarrow y = 1, frac{5}{4}"
+            },
+            {
+              "explain": "Calculate \\( x = 3 - 2y \\).",
+              "work": "x = 3 - 2\\( 1 \\) = 1 \\quad \\text{and} \\quad x = 3 - 2\\( \\frac{5}{4} \\) = \\frac{1}{2}"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "42bd9ca3e63bbeee1b2fd9cd5a710594",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously:\n\\\\(  x - y = 2  \\\\)\n\\\\(  x^2 - y^2 = 8  \\\\)",
+          "answer": "1",
+          "hint": "Factor the difference of squares and use the known difference.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\( (x - y \\)\\( x + y \\) = 8 \\Rightarrow 2\\( x + y \\) = 8)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\( x + y = 4 \\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\( 2x = 6 \\Rightarrow x = 3, quad y = 1 \\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "44224bf28f1a748f914f5709e2789728",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve the system:\n\\\\(  x + 2y + z = 8  \\\\)\n\\\\(  2x + y + z = 7  \\\\)\n\\\\(  x + y + 2z = 9  \\\\)",
+          "answer": "0",
+          "hint": "Subtract equations in pairs to reduce the system.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Subtract equation 2 from equation 1.",
+              "work": "\\( -x + y = 1 \\Rightarrow x = y - 1 \\)"
+            },
+            {
+              "explain": "Subtract equation 3 from equation 1.",
+              "work": "\\( y - z = -1 \\Rightarrow z = y + 1 \\)"
+            },
+            {
+              "explain": "Substitute both into equation 1.",
+              "work": "\\( (y - 1 \\) + 2y + \\( y + 1 \\) = 8 \\Rightarrow 4y = 8 \\Rightarrow y = 2)"
+            },
+            {
+              "explain": "Find x and z.",
+              "work": "\\( x = 1, quad z = 3 \\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 150
+        },
+        {
+          "id": "4a6a54257f213a3728fdddb571713559",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously:\n\\\\(  \\\\\\sqrt{x} + \\\\\\sqrt{y} = 5  \\\\)\n\\\\(  x + y = 13  \\\\)",
+          "answer": "3",
+          "hint": "Use substitution u = sqrt(x), v = sqrt(y) to reduce to a standard sum/product problem.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Let u = sqrt(x), v = sqrt(y). Then u + v = 5 and u^2 + v^2 = 13.",
+              "work": "\\( u + v = 5, quad u^2 + v^2 = 13 \\)"
+            },
+            {
+              "explain": "Find uv using (u+v)^2 = u^2 + 2uv + v^2.",
+              "work": "\\( 25 = 13 + 2uv \\Rightarrow uv = 6 \\)"
+            },
+            {
+              "explain": "Solve u + v = 5, uv = 6.",
+              "work": "\\( t^2 - 5t + 6 = 0 \\Rightarrow (t - 2 \\)\\( t - 3 \\) = 0)"
+            },
+            {
+              "explain": "Convert back to x and y.",
+              "work": "\\( u = 2 \\Rightarrow x = 4, v = 3 \\Rightarrow y = 9 \\\text{ (or vice versa \\)})"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 150
+        },
+        {
+          "id": "4eeae08b74aac0c8b4e31a8af76103d4",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve the system:\n\\\\(  x + y + z = 9  \\\\)\n\\\\(  x + 2y + 3z = 22  \\\\)\n\\\\(  2x + y + z = 12  \\\\)",
+          "answer": "1",
+          "hint": "Subtract equations to simplify the system.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Subtract equation 1 from equation 3.",
+              "work": "\\( x = 3 \\)"
+            },
+            {
+              "explain": "Substitute x = 3 into equation 1.",
+              "work": "\\( y + z = 6 \\)"
+            },
+            {
+              "explain": "Substitute x = 3 into equation 2.",
+              "work": "\\( 2y + 3z = 19 \\)"
+            },
+            {
+              "explain": "Solve: y = 6 - z, substitute.",
+              "work": "\\( 2(6 - z \\) + 3z = 19 \\Rightarrow z = 7, quad y = -1)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 150
+        },
+        {
+          "id": "55cc4c5079f3dd2f8657d9de12f4ece6",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve the system:\n\\\\(  x + y = 5  \\\\)\n\\\\(  y + z = 7  \\\\)\n\\\\(  x + z = 6  \\\\)",
+          "answer": "2",
+          "hint": "Add all three equations to find the total sum, then subtract each equation.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\( 2(x + y + z \\) = 18 \\Rightarrow x + y + z = 9)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\( z = 9 - 5 = 4, quad x = 9 - 7 = 2, quad y = 9 - 6 = 3 \\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(0\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 150
+        },
+        {
+          "id": "6594d01c7b2ead4b270dea606dee53ca",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "A rectangular garden has an area of 150 m\\\\( ^2 \\\\). Its length is 5 m more than its width. Find the dimensions.",
+          "answer": "3",
+          "hint": "Use the area formula and the given relationship between length and width.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Let width = w, length = w + 5.",
+              "work": "\\( l = w + 5, quad lw = 150 \\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\( (w + 5 \\)w = 150 \\Rightarrow w^2 + 5w - 150 = 0)"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "\\( (w + 15 \\)\\( w - 10 \\) = 0)"
+            },
+            {
+              "explain": "Since w must be positive, w = 10, l = 15.",
+              "work": "\\( w = 10 \\\text{ m}, quad l = 15 \\\text{ m} \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "68547d33a9b1f5203ebc84ba2065fdb8",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "A jar contains \\\\$2 and \\\\$1 coins. There are 25 coins in total, worth \\\\$38. How many of each type of coin are there?",
+          "answer": "0",
+          "hint": "Set up equations for the number of coins and total value.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Let x = number of \\(2 coins, y = number of \\)1 coins.",
+              "work": "\\( x + y = 25 \\quad \\\text{and} \\quad 2x + y = 38 \\)"
+            },
+            {
+              "explain": "Subtract the first equation from the second.",
+              "work": "\\( x = 13 \\)"
+            },
+            {
+              "explain": "Find y.",
+              "work": "\\( y = 25 - 13 = 12 \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "8038202108157639f28e58e9166578d8",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The difference of two positive numbers is 2 and the sum of their squares is 34. Find the numbers.",
+          "answer": "0",
+          "hint": "Form equations from the given conditions and solve.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Let the numbers be x and y where x > y.",
+              "work": "\\( x - y = 2, quad x^2 + y^2 = 34 \\)"
+            },
+            {
+              "explain": "Substitute x = y + 2.",
+              "work": "\\( (y + 2 \\)^2 + y^2 = 34 \\Rightarrow 2y^2 + 4y - 30 = 0)"
+            },
+            {
+              "explain": "Simplify and factorise.",
+              "work": "\\( y^2 + 2y - 15 = 0 \\Rightarrow (y - 3 \\)\\( y + 5 \\) = 0)"
+            },
+            {
+              "explain": "Since positive, y = 3 and x = 5.",
+              "work": "\\( y = 3, quad x = 5 \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "90b8e001d3e3eb99cf3481fd4972c2b7",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously:\n\\\\(  x^2 - y^2 = 7  \\\\)\n\\\\(  x + y = 7  \\\\)",
+          "answer": "2",
+          "hint": "Use the difference of squares factorisation.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\( x^2 - y^2 = (x + y \\)\\( x - y \\) = 7)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\( 7(x - y \\) = 7 \\Rightarrow x - y = 1)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\( 2x = 8 \\Rightarrow x = 4, quad y = 3 \\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "9a7b4755f8d23742f112bae12b32097a",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously:\n\\\\(  x + y = 6  \\\\)\n\\\\(  x^2 - y^2 = 12  \\\\)",
+          "answer": "2",
+          "hint": "Factor the difference of squares and use the known sum.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\( (x + y \\)\\( x - y \\) = 12)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\( 6(x - y \\) = 12 \\Rightarrow x - y = 2)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\( 2x = 8 \\Rightarrow x = 4, quad y = 2 \\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "a836365201c6d81fcac465999d23ce73",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "In a triangle, angle A is twice angle B. Angle C is 20° more than angle B. Find all three angles.",
+          "answer": "1",
+          "hint": "Use angle sum of a triangle and the given relationships.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Set up the relationships.",
+              "work": "\\( A = 2B, quad C = B + 20 \\)"
+            },
+            {
+              "explain": "Use the angle sum property.",
+              "work": "\\( 2B + B + (B + 20 \\) = 180)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\( 4B + 20 = 180 \\Rightarrow 4B = 160 \\Rightarrow B = 40 \\)"
+            },
+            {
+              "explain": "Find all angles.",
+              "work": "\\( A = 80°, quad B = 40°, quad C = 60° \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "b201f4ae39eadf091befb338dfae20e2",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "In a right triangle, the two shorter sides differ by 1 and the hypotenuse is \\\\(  \\\\\\sqrt{61}  \\\\). Find the two shorter sides.",
+          "answer": "3",
+          "hint": "Use Pythagoras' theorem and the given difference.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Let the sides be b and b + 1.",
+              "work": "\\( a = b + 1, quad a^2 + b^2 = 61 \\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\( (b + 1 \\)^2 + b^2 = 61 \\Rightarrow 2b^2 + 2b + 1 = 61)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\( b^2 + b - 30 = 0 \\)"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "\\( (b + 6 \\)\\( b - 5 \\) = 0 \\Rightarrow b = 5, quad a = 6)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "b760544a298899134a26e5a446274832",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Two numbers have a sum of 12 and a product of 35. Find the two numbers.",
+          "answer": "3",
+          "hint": "Set up sum and product equations, then form a quadratic.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Let the numbers be x and y.",
+              "work": "\\( x + y = 12, quad xy = 35 \\)"
+            },
+            {
+              "explain": "These are roots of the quadratic t^2 - 12t + 35 = 0.",
+              "work": "\\( t^2 - 12t + 35 = 0 \\)"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "\\( (t - 5 \\)\\( t - 7 \\) = 0)"
+            },
+            {
+              "explain": "The numbers are 5 and 7.",
+              "work": "\\( t = 5 \\\text{ or } t = 7 \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "bef3cda3c9aaad5298a6a6f5484cd3b2",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve the system:\n\\\\(  2x + y + z = 12  \\\\)\n\\\\(  x + 2y + z = 11  \\\\)\n\\\\(  x + y + 2z = 13  \\\\)",
+          "answer": "0",
+          "hint": "Subtract equations pairwise to reduce the system.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Subtract equation 2 from equation 1.",
+              "work": "\\( x - y = 1 \\Rightarrow y = x - 1 \\)"
+            },
+            {
+              "explain": "Subtract equation 3 from equation 1.",
+              "work": "\\( x - z = -1 \\Rightarrow z = x + 1 \\)"
+            },
+            {
+              "explain": "Substitute into equation 1.",
+              "work": "\\( 2x + (x - 1 \\) + \\( x + 1 \\) = 12 \\Rightarrow 4x = 12 \\Rightarrow x = 3)"
+            },
+            {
+              "explain": "Find y and z.",
+              "work": "\\( y = 2, quad z = 4 \\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 150
+        },
+        {
+          "id": "c741afa93212d157934ca37036157c8a",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously:\n\\\\(  x^2 + y^2 = 50  \\\\)\n\\\\(  x - y = 0  \\\\)",
+          "answer": "1",
+          "hint": "Use x = y to simplify the quadratic equation.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "From x - y = 0, we get x = y.",
+              "work": "\\( x = y \\)"
+            },
+            {
+              "explain": "Substitute into the first equation.",
+              "work": "\\( x^2 + x^2 = 50 \\Rightarrow 2x^2 = 50 \\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\( x^2 = 25 \\Rightarrow x = \\pm 5, quad y = \\pm 5 \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "caecba5d5f82149e0f4943d6e4a2e402",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously for \\\\(  y  \\\\):\n\\\\(  3x + y = 7  \\\\)\n\\\\(  9x^2 + y^2 = 25  \\\\)",
+          "answer": "0",
+          "hint": "Find \\( x \\) values first, then calculate \\( y = 7 - 3x \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "x = 1, frac{4}{3}"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "y = 7 - 3\\( 1 \\) = 4 \\quad \\text{and} \\quad y = 7 - 3\\( \\frac{4}{3} \\) = 3"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(0\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "ddb8f37fc0e4c5df214181e142d94a35",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "One number is 4 more than another. Their product is 60. Find both numbers.",
+          "answer": "2",
+          "hint": "Set up equations from the conditions and solve the quadratic.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Let the numbers be x and y where x = y + 4.",
+              "work": "\\( x = y + 4, quad xy = 60 \\)"
+            },
+            {
+              "explain": "Substitute.",
+              "work": "\\( (y + 4 \\)y = 60 \\Rightarrow y^2 + 4y - 60 = 0)"
+            },
+            {
+              "explain": "Factorise.",
+              "work": "\\( (y - 6 \\)\\( y + 10 \\) = 0)"
+            },
+            {
+              "explain": "Taking the positive root.",
+              "work": "\\( y = 6, quad x = 10 \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "e0e4d6469f0b269ef847221ef8761118",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve the system:\n\\\\(  x + 2y - z = 7  \\\\)\n\\\\(  3x - y + 2z = 5  \\\\)\n\\\\(  2x + y + 3z = 10  \\\\)",
+          "answer": "0",
+          "hint": "Use elimination systematically to reduce the system.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\( 3(x + 2y - z \\) - \\( 3x - y + 2z \\) = 21 - 5 \\Rightarrow 7y - 5z = 16)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\( 2(x + 2y - z \\) - \\( 2x + y + 3z \\) = 14 - 10 \\Rightarrow 3y - 5z = 4)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\( 4y = 12 \\Rightarrow y = 3 \\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 150
+        }
+      ]
+    }
+  ]
+}

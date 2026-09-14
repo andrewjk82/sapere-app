@@ -1,0 +1,18 @@
+<svg viewBox="-40 -40 280 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="100,20 30,140 170,140" fill="none" stroke="#000" stroke-width="1"/>
+  <circle cx="100" cy="20" r="1.2" fill="#000"/>
+  <circle cx="30" cy="140" r="1.2" fill="#000"/>
+  <circle cx="170" cy="140" r="1.2" fill="#000"/>
+  <text x="95" y="12" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">R</text>
+  <text x="15" y="145" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">S</text>
+  <text x="175" y="145" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">T</text>
+  <line x1="60" y1="77" x2="70" y2="83" stroke="#000" stroke-width="1"/>
+  <line x1="130" y1="83" x2="140" y2="77" stroke="#000" stroke-width="1"/>
+  <line x1="100" y1="135" x2="100" y2="145" stroke="#000" stroke-width="1"/>
+  <path d="M 90 37 A 20 20 0 0 0 110 37" fill="none" stroke="#000" stroke-width="0.8"/>
+  <text x="96" y="55" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">α</text>
+  <path d="M 45 140 A 20 20 0 0 0 40 122" fill="none" stroke="#000" stroke-width="0.8"/>
+  <text x="50" y="132" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">β</text>
+  <path d="M 155 140 A 20 20 0 0 1 160 122" fill="none" stroke="#000" stroke-width="0.8"/>
+  <text x="145" y="132" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">γ</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 640 190" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+    <defs>
+      <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#818cf8" stop-opacity="0.18"/>
+        <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    <line x1="44" y1="156" x2="622" y2="156" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 4"/>
+      <text x="36" y="160" font-family="system-ui" font-size="11" fill="#94a3b8" text-anchor="end">0</text><line x1="44" y1="128.8" x2="622" y2="128.8" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 4"/>
+      <text x="36" y="132.8" font-family="system-ui" font-size="11" fill="#94a3b8" text-anchor="end">2</text><line x1="44" y1="101.6" x2="622" y2="101.6" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 4"/>
+      <text x="36" y="105.6" font-family="system-ui" font-size="11" fill="#94a3b8" text-anchor="end">4</text><line x1="44" y1="74.4" x2="622" y2="74.4" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 4"/>
+      <text x="36" y="78.4" font-family="system-ui" font-size="11" fill="#94a3b8" text-anchor="end">6</text><line x1="44" y1="47.19999999999999" x2="622" y2="47.19999999999999" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 4"/>
+      <text x="36" y="51.19999999999999" font-family="system-ui" font-size="11" fill="#94a3b8" text-anchor="end">8</text><line x1="44" y1="20" x2="622" y2="20" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 4"/>
+      <text x="36" y="24" font-family="system-ui" font-size="11" fill="#94a3b8" text-anchor="end">10</text>
+    <line x1="44" y1="20" x2="44" y2="156" stroke="#cbd5e1" stroke-width="1.5"/>
+    <line x1="44" y1="156" x2="622" y2="156" stroke="#cbd5e1" stroke-width="1.5"/>
+    <path d="M 44.0 139.7 L 108.2 131.5 L 172.4 123.4 L 236.7 126.1 L 300.9 120.6 L 365.1 113.8 L 429.3 112.5 L 493.6 109.8 L 557.8 107.0 L 622.0 101.6 L 622.0 156.0 L 44.0 156.0 Z" fill="url(#lineGrad)" stroke="none"/>
+    <path d="M 44.0 139.7 L 108.2 131.5 L 172.4 123.4 L 236.7 126.1 L 300.9 120.6 L 365.1 113.8 L 429.3 112.5 L 493.6 109.8 L 557.8 107.0 L 622.0 101.6" fill="none" stroke="#4f46e5" stroke-width="2"/>
+    <circle cx="44.0" cy="139.7" r="3.5" fill="#4f46e5" stroke="#fff" stroke-width="1"/><circle cx="108.2" cy="131.5" r="3.5" fill="#4f46e5" stroke="#fff" stroke-width="1"/><circle cx="172.4" cy="123.4" r="3.5" fill="#4f46e5" stroke="#fff" stroke-width="1"/><circle cx="236.7" cy="126.1" r="3.5" fill="#4f46e5" stroke="#fff" stroke-width="1"/><circle cx="300.9" cy="120.6" r="3.5" fill="#4f46e5" stroke="#fff" stroke-width="1"/><circle cx="365.1" cy="113.8" r="3.5" fill="#4f46e5" stroke="#fff" stroke-width="1"/><circle cx="429.3" cy="112.5" r="3.5" fill="#4f46e5" stroke="#fff" stroke-width="1"/><circle cx="493.6" cy="109.8" r="3.5" fill="#4f46e5" stroke="#fff" stroke-width="1"/><circle cx="557.8" cy="107.0" r="3.5" fill="#4f46e5" stroke="#fff" stroke-width="1"/><circle cx="622.0" cy="101.6" r="3.5" fill="#4f46e5" stroke="#fff" stroke-width="1"/>
+    <text x="44.0" y="174" font-family="system-ui" font-size="11" fill="#64748b" text-anchor="middle">'89</text><text x="108.2" y="174" font-family="system-ui" font-size="11" fill="#64748b" text-anchor="middle">'90</text><text x="172.4" y="174" font-family="system-ui" font-size="11" fill="#64748b" text-anchor="middle">'91</text><text x="236.7" y="174" font-family="system-ui" font-size="11" fill="#64748b" text-anchor="middle">'92</text><text x="300.9" y="174" font-family="system-ui" font-size="11" fill="#64748b" text-anchor="middle">'93</text><text x="365.1" y="174" font-family="system-ui" font-size="11" fill="#64748b" text-anchor="middle">'94</text><text x="429.3" y="174" font-family="system-ui" font-size="11" fill="#64748b" text-anchor="middle">'95</text><text x="493.6" y="174" font-family="system-ui" font-size="11" fill="#64748b" text-anchor="middle">'96</text><text x="557.8" y="174" font-family="system-ui" font-size="11" fill="#64748b" text-anchor="middle">'97</text><text x="622.0" y="174" font-family="system-ui" font-size="11" fill="#64748b" text-anchor="middle">'98</text>
+    <text x="12" y="14" font-family="system-ui" font-size="11" font-weight="600" fill="#475569">Profit ($m)</text>
+  </svg>

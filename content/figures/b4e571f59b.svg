@@ -1,0 +1,19 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>
+  <rect width='300' height='300' fill='#ffffff' />
+  <polygon points='150,40 54.737205583711756,205 245.26279441628822,205.00000000000006' fill='#f8fafc' stroke='#cbd5e1' stroke-width='1.5' stroke-linejoin='round' />
+  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />
+  <line x1='150' y1='150' x2='54.737205583711756' y2='205' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='150' y1='150' x2='245.26279441628822' y2='205.00000000000006' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <path d='M 178.57883832488648 166.5 A 33 33 0 0 1 121.42116167511352 166.5' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='150' y='197' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>55°</text>
+  <path d='M 161 59.05255888325766 A 22 22 0 0 1 139 59.052558883257646' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='150' y='76' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>α</text>
+  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />
+  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>
+  <circle cx='150' cy='40' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='150' y='28' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>A</text>
+  <circle cx='54.737205583711756' cy='205' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='44.737205583711756' y='213' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>B</text>
+  <circle cx='245.26279441628822' cy='205.00000000000006' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='255.26279441628822' y='213.00000000000006' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>C</text>
+</svg>

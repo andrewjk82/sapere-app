@@ -1,0 +1,895 @@
+{
+  "chapterId": "exam:ascham2020",
+  "title": "Areas & Volumes",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "exam:ascham2020",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "asc2020-mc3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the diagram, calculate $\\displaystyle\\int_0^6 f(x)\\,dx$.\n\n",
+          "figure": {
+            "svg": "fig:6f89c452d3"
+          },
+          "options": [
+            "\\(6.75\\)",
+            "\\(6\\)",
+            "\\(10.5\\)",
+            "\\(-6\\)"
+          ],
+          "answer": 1,
+          "hint": "Split the region at the zero-crossing $x = 4$ (the midpoint of the sloped section from $(3,3)$ to $(5,-3)$). Add the area above the $x$-axis (0 to 4) and subtract the area below the $x$-axis (4 to 6).",
+          "solution": "The correct answer is \\(6\\).",
+          "steps": [
+            {
+              "explain": "The graph is piecewise: flat at \\(y = 3\\) from \\(x = 0\\) to \\(3\\), a straight line down to \\(y = -3\\) by \\(x = 5\\), then flat at \\(y = -3\\) from \\(x = 5\\) to \\(6\\). Since the sloped section runs from \\((3, 3)\\) to \\((5, -3)\\), it crosses the \\(x\\)-axis exactly halfway along, at \\(x = 4\\). Split the integral there: the region above the axis (\\(0 \\le x \\le 4\\)) contributes positively, and the region below (\\(4 \\le x \\le 6\\)) contributes negatively.",
+              "work": "\\(\\displaystyle\\int_0^6 f(x)\\,dx = \\big(\\text{area above axis, } 0 \\text{ to } 4\\big) - \\big(\\text{area below axis, } 4 \\text{ to } 6\\big)\\)",
+              "figure": {
+                "svg": "fig:6f89c452d3"
+              }
+            },
+            {
+              "explain": "The region above the axis is a rectangle from \\(x = 0\\) to \\(3\\) (height 3) plus a small triangle from \\(x = 3\\) to \\(4\\) (dropping from height 3 to 0).",
+              "work": "\\(A_1 = 3 \\times 3 = 9, \\qquad A_2 = \\dfrac{1}{2} \\times 1 \\times 3 = 1.5 \\quad \\Rightarrow \\quad A_1 + A_2 = 10.5\\)",
+              "figure": {
+                "svg": "fig:af0ef6180c"
+              }
+            },
+            {
+              "explain": "The region below the axis is a triangle from \\(x = 4\\) to \\(5\\) (dropping from height 0 to \\(-3\\)) plus a rectangle from \\(x = 5\\) to \\(6\\) (height \\(-3\\)). We compute their combined magnitude here and subtract it in the final step.",
+              "work": "\\(A_3 = \\dfrac{1}{2} \\times 1 \\times 3 = 1.5, \\qquad A_4 = 3 \\times 1 = 3 \\quad \\Rightarrow \\quad A_3 + A_4 = 4.5\\)",
+              "figure": {
+                "svg": "fig:ca234cd8d2"
+              }
+            },
+            {
+              "explain": "Combine the two regions: the definite integral equals the positive area minus the magnitude of the negative area. Note \\(6.75\\) — a common wrong answer — comes from mis-locating the zero-crossing (e.g. at \\(x = 4.5\\) instead of \\(x = 4\\)); the sloped section runs from \\((3,3)\\) to \\((5,-3)\\), not to \\((6,-3)\\), so it crosses zero at the midpoint of \\(x=3\\) and \\(x=5\\).",
+              "work": "\\(\\displaystyle\\int_0^6 f(x)\\,dx = (A_1 + A_2) - (A_3 + A_4) = 10.5 - 4.5 = 6\\)",
+              "figure": {
+                "svg": "fig:21e9146688"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Ascham 2020 Trial Q3",
+            "origin": "teacher",
+            "examPaper": "asc-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-AREA-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "asc2020-mc3v",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate $\\displaystyle\\int_0^{10} g(x)\\,dx$.",
+          "figure": {
+            "svg": "fig:c9f6b76440"
+          },
+          "options": [
+            "\\(8\\)",
+            "\\(-4\\)",
+            "\\(4\\)",
+            "\\(12\\)"
+          ],
+          "answer": 2,
+          "hint": "Split the region at the zero-crossing $x = 6$ (the midpoint of the sloped section from $(4,2)$ to $(8,-2)$). Add the area above the $x$-axis (0 to 6) and subtract the area below the $x$-axis (6 to 10).",
+          "solution": "The correct answer is \\(4\\).",
+          "steps": [
+            {
+              "explain": "The function is piecewise: flat at \\(y = 2\\) from \\(x = 0\\) to \\(4\\), a straight line down to \\(y = -2\\) by \\(x = 8\\), then flat at \\(y = -2\\) from \\(x = 8\\) to \\(10\\). The sloped section runs from \\((4, 2)\\) to \\((8, -2)\\), so it crosses the \\(x\\)-axis exactly halfway along, at \\(x = 6\\). Split the integral there: the region above the axis (\\(0 \\le x \\le 6\\)) contributes positively, and the region below (\\(6 \\le x \\le 10\\)) contributes negatively.",
+              "work": "\\(\\displaystyle\\int_0^{10} g(x)\\,dx = \\big(\\text{area above axis, } 0 \\text{ to } 6\\big) - \\big(\\text{area below axis, } 6 \\text{ to } 10\\big)\\)",
+              "figure": {
+                "svg": "fig:c9f6b76440"
+              }
+            },
+            {
+              "explain": "The region above the axis is a rectangle from \\(x = 0\\) to \\(4\\) (height 2) plus a triangle from \\(x = 4\\) to \\(6\\) (dropping from height 2 to 0).",
+              "work": "\\(A_1 = 2 \\times 4 = 8, \\qquad A_2 = \\dfrac{1}{2} \\times 2 \\times 2 = 2 \\quad \\Rightarrow \\quad A_1 + A_2 = 10\\)",
+              "figure": {
+                "svg": "fig:bed6a1bc57"
+              }
+            },
+            {
+              "explain": "The region below the axis is a triangle from \\(x = 6\\) to \\(8\\) (dropping from height 0 to \\(-2\\)) plus a rectangle from \\(x = 8\\) to \\(10\\) (height \\(-2\\)). We compute their combined magnitude here and subtract it in the final step.",
+              "work": "\\(A_3 = \\dfrac{1}{2} \\times 2 \\times 2 = 2, \\qquad A_4 = 2 \\times 2 = 4 \\quad \\Rightarrow \\quad A_3 + A_4 = 6\\)",
+              "figure": {
+                "svg": "fig:2998c5aaa2"
+              }
+            },
+            {
+              "explain": "Combine the two regions: the definite integral equals the positive area minus the magnitude of the negative area.",
+              "work": "\\(\\displaystyle\\int_0^{10} g(x)\\,dx = (A_1 + A_2) - (A_3 + A_4) = 10 - 6 = 4\\)",
+              "figure": {
+                "svg": "fig:0cf9b6d3b4"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Adapted from Ascham 2020 Trial Q3",
+            "origin": "teacher",
+            "examPaper": "asc-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-AREA-01",
+            "dnaConfidence": 0.85
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-6I",
+      "code": "6I",
+      "title": "The cosine rule",
+      "questions": [
+        {
+          "id": "asc2020-q18",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "There are plans to construct straight paths connecting three landmarks: cable car station $C$, communications tower $T$ and camp site $E$. The path from $C$ to $T$ is 950 m and from $C$ to $E$ is 1400 m. The bearing of $T$ from $C$ is $060°$ and the bearing of $E$ from $C$ is $100°$.",
+          "parts": [
+            {
+              "id": "asc2020-q18_a",
+              "type": "mc",
+              "stem": "(a) Find the distance between the communications tower (T) and the camp site (E), to the nearest metre.",
+              "options": [
+                "1823",
+                "1073",
+                "908",
+                "2213"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Draw a diagram mapping the positions of C, T, and E. The bearing is measured clockwise from the North line at C.",
+                  "figure": {
+                    "html": "<svg viewBox='0 0 350 300' width='100%' height='auto' xmlns='http://www.w3.org/2000/svg' style='display:block;margin:0 auto;max-height:300px;'>\n    <!-- Fill and stroke for triangle -->\n    <polygon points='100,200 182.3,152.5 237.9,224.3' fill='#f1f5f9' stroke='#1e293b' stroke-width='2' stroke-linejoin='round'/>\n    <line x1='182.3' y1='152.5' x2='237.9' y2='224.3' stroke='#1e293b' stroke-width='2' stroke-dasharray='5 5'/>\n    \n    <!-- North Line -->\n    <line x1='100' y1='200' x2='100' y2='60' stroke='#64748b' stroke-width='1.5' stroke-dasharray='4 3'/>\n    <text x='95' y='50' font-family='system-ui, sans-serif' font-size='14' font-weight='600' fill='#64748b'>N</text>\n    \n    <!-- Points -->\n    <circle cx='100' cy='200' r='3.5' fill='#1e293b'/>\n    <circle cx='182.3' cy='152.5' r='3.5' fill='#1e293b'/>\n    <circle cx='237.9' cy='224.3' r='3.5' fill='#1e293b'/>\n    \n    <!-- Labels -->\n    <text x='80' y='215' font-family='system-ui, sans-serif' font-size='14' font-weight='600' fill='#1e293b'>C</text>\n    <text x='192' y='145' font-family='system-ui, sans-serif' font-size='14' font-weight='600' fill='#1e293b'>T</text>\n    <text x='248' y='235' font-family='system-ui, sans-serif' font-size='14' font-weight='600' fill='#1e293b'>E</text>\n    \n    <!-- Distance Labels -->\n    <text x='125' y='165' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' transform='rotate(-28 125 165)'>950 m</text>\n    <text x='160' y='225' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' transform='rotate(10 160 225)'>1400 m</text>\n    \n    <!-- Angle Arcs -->\n    <!-- 60 deg arc (radius 50) -->\n    <path d='M 100 150 A 50 50 0 0 1 143.3 175' fill='none' stroke='#0284c7' stroke-width='2'/>\n    <text x='112' y='145' font-family='system-ui, sans-serif' font-size='12' font-weight='600' fill='#0284c7'>60°</text>\n    \n    <!-- 100 deg arc (radius 70) -->\n    <path d='M 100 130 A 70 70 0 0 1 168.9 212.1' fill='none' stroke='#16a34a' stroke-width='2'/>\n    <text x='140' y='130' font-family='system-ui, sans-serif' font-size='12' font-weight='600' fill='#16a34a'>100°</text>\n    \n    <!-- 40 deg included angle (radius 40 from 60 to 100) -->\n    <path d='M 134.6 180 A 40 40 0 0 1 139.4 206.9' fill='none' stroke='#ea580c' stroke-width='2'/>\n    <text x='145' y='198' font-family='system-ui, sans-serif' font-size='12' font-weight='600' fill='#ea580c'>40°</text>\n</svg>"
+                  }
+                },
+                {
+                  "explain": "Calculate the included angle \\(\\angle TCE\\) between the two paths.",
+                  "work": "\\\\[ \\\\angle TCE = 100^{\\\\circ} - 60^{\\\\circ} = 40^{\\\\circ} \\\\]"
+                },
+                {
+                  "explain": "Apply the cosine rule to find the distance \\(TE\\).",
+                  "work": "\\\\[ TE^2 = 950^2 + 1400^2 - 2(950)(1400)\\\\cos 40^{\\\\circ} \\\\]"
+                },
+                {
+                  "explain": "Evaluate the right hand side.",
+                  "work": "\\\\[ TE^2 = 902500 + 1960000 - 2660000\\\\cos 40^{\\\\circ} \\\\approx 825126.9 \\\\]"
+                },
+                {
+                  "explain": "Take the square root to find \\(TE\\) and round to the nearest metre.",
+                  "work": "\\\\[ TE = \\\\sqrt{825126.9} \\\\approx 908.36 \\\\approx 908 \\\\text{ m} \\\\]"
+                }
+              ]
+            },
+            {
+              "id": "asc2020-q18_b",
+              "type": "mc",
+              "stem": "(b) Find the bearing of the camp site (E) from the communications tower (T), to the nearest degree.",
+              "options": [
+                "81",
+                "337",
+                "158",
+                "141"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "First, use the sine rule to find the angle inside the triangle at \\(T\\) (\\(\\angle CTE\\)).",
+                  "work": "\\\\[ \\\\frac{\\\\sin T}{1400} = \\\\frac{\\\\sin 40^{\\\\circ}}{908.19} \\\\]"
+                },
+                {
+                  "explain": "Calculate the angle \\(\\angle CTE\\).",
+                  "work": "\\\\[ \\\\sin T \\\\approx 0.9911 \\\\implies \\\\angle CTE \\\\approx 82.3^{\\\\circ} \\\\]"
+                },
+                {
+                  "explain": "Use geometric properties of parallel north lines to deduce the bearing of \\(C\\) from \\(T\\).",
+                  "work": "\\\\[ \\\\text{Bearing of } C \\\\text{ from } T = 180^{\\\\circ} + 60^{\\\\circ} = 240^{\\\\circ} \\\\]",
+                  "figure": {
+                    "html": "<svg viewBox='0 0 350 300' width='100%' height='auto' xmlns='http://www.w3.org/2000/svg' style='display:block;margin:0 auto;max-height:300px;'>\n    <!-- Fill and stroke for triangle -->\n    <polygon points='100,200 182.3,152.5 237.9,224.3' fill='#f1f5f9' stroke='#1e293b' stroke-width='2' stroke-linejoin='round'/>\n    <line x1='100' y1='200' x2='182.3' y2='152.5' stroke='#1e293b' stroke-width='2'/>\n    <line x1='182.3' y1='152.5' x2='237.9' y2='224.3' stroke='#1e293b' stroke-width='2' stroke-dasharray='5 5'/>\n    <line x1='100' y1='200' x2='237.9' y2='224.3' stroke='#1e293b' stroke-width='2'/>\n    \n    <!-- North Line at T -->\n    <line x1='182.3' y1='152.5' x2='182.3' y2='60' stroke='#64748b' stroke-width='1.5' stroke-dasharray='4 3'/>\n    <text x='177' y='50' font-family='system-ui, sans-serif' font-size='14' font-weight='600' fill='#64748b'>N</text>\n    \n    <!-- North Line at C (faded) -->\n    <line x1='100' y1='200' x2='100' y2='120' stroke='#94a3b8' stroke-width='1' stroke-dasharray='3 3'/>\n    \n    <!-- Points -->\n    <circle cx='100' cy='200' r='3.5' fill='#1e293b'/>\n    <circle cx='182.3' cy='152.5' r='3.5' fill='#1e293b'/>\n    <circle cx='237.9' cy='224.3' r='3.5' fill='#1e293b'/>\n    \n    <!-- Labels -->\n    <text x='80' y='215' font-family='system-ui, sans-serif' font-size='14' font-weight='600' fill='#1e293b'>C</text>\n    <text x='192' y='145' font-family='system-ui, sans-serif' font-size='14' font-weight='600' fill='#1e293b'>T</text>\n    <text x='248' y='235' font-family='system-ui, sans-serif' font-size='14' font-weight='600' fill='#1e293b'>E</text>\n    \n    <!-- Angle Arcs at T -->\n    <!-- 240 deg arc (Bearing of C from T) radius 40 -->\n    <path d='M 182.3 112.5 A 40 40 0 1 1 147.7 172.5' fill='none' stroke='#0284c7' stroke-width='2'/>\n    <text x='130' y='130' font-family='system-ui, sans-serif' font-size='12' font-weight='600' fill='#0284c7'>240°</text>\n    \n    <!-- 82.3 deg arc (inside triangle CTE) radius 40 -->\n    <path d='M 147.7 172.5 A 40 40 0 0 0 197.5 189.5' fill='none' stroke='#ea580c' stroke-width='2'/>\n    <text x='160' y='198' font-family='system-ui, sans-serif' font-size='12' font-weight='600' fill='#ea580c'>82.3°</text>\n    \n    <!-- 158 deg arc (Bearing of E from T) radius 60 -->\n    <path d='M 182.3 92.5 A 60 60 0 0 1 205.1 208.0' fill='none' stroke='#16a34a' stroke-width='2'/>\n    <text x='215' y='180' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#16a34a'>158°</text>\n    \n    <!-- Reference 60 deg at C -->\n    <path d='M 100 170 A 30 30 0 0 1 126 185' fill='none' stroke='#94a3b8' stroke-width='1.5'/>\n    <text x='108' y='165' font-family='system-ui, sans-serif' font-size='11' fill='#94a3b8'>60°</text>\n</svg>"
+                  }
+                },
+                {
+                  "explain": "Subtract \\(\\angle CTE\\) from this bearing to find the bearing of \\(E\\) from \\(T\\).",
+                  "work": "\\\\[ \\\\text{Bearing of } E \\\\text{ from } T = 240^{\\\\circ} - 82.3^{\\\\circ} = 157.7^{\\\\circ} \\\\]"
+                },
+                {
+                  "explain": "Round to the nearest degree.",
+                  "work": "\\\\[ 158^{\\\\circ} \\\\]"
+                }
+              ]
+            }
+          ],
+          "hint": "Use the cosine rule for (a), then the sine rule and bearings logic for (b).",
+          "meta": {
+            "source": "Ascham 2020 Trial Q18"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-2G",
+      "code": "2G",
+      "title": "Dilations",
+      "questions": [
+        {
+          "id": "asc2020-q22",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "On separate axes, sketch \\(y = -2f(x)\\) and \\(y = f\\!\\left(\\dfrac{x}{2} + 2\\right)\\) given \\(f\\) is a U-parabola through \\((-1, 3)\\).",
+          "parts": [
+            {
+              "id": "asc2020-q22-a",
+              "type": "review",
+              "stem": "(a) $y = -2f(x)$",
+              "answer": "Reflected in x-axis and stretched vertically by 2. The point $(-1, 3)$ maps to $(-1, -6)$.",
+              "steps": [
+                {
+                  "explain": "Transformation: $(x, y) \\to (x, -2y)$.",
+                  "work": "(-1, 3) \\to (-1, -6)"
+                },
+                {
+                  "explain": "Sketch an inverted ∩-shaped parabola, twice as tall.",
+                  "work": "\\text{∩-shaped, passing through } (-1, -6)"
+                }
+              ]
+            },
+            {
+              "id": "asc2020-q22-b",
+              "type": "review",
+              "stem": "(b) $y = f\\!\\left(\\dfrac{x}{2} + 2\\right)$",
+              "answer": "Horizontal stretch by 2 and shift left 4. The point $(-1, 3)$ maps to $(-6, 3)$.",
+              "steps": [
+                {
+                  "explain": "Rewrite: $\\frac{x}{2} + 2 = \\frac{x+4}{2}$ — horizontal dilation by 2, shift left 4.",
+                  "work": "x_{\\text{new}} = 2x_0 - 4"
+                },
+                {
+                  "explain": "Key point: $(-1, 3) \\to (-6, 3)$.",
+                  "work": "(-1, 3) \\to (-6, 3)"
+                }
+              ]
+            }
+          ],
+          "answer": "\\(y=-2f(x)\\): point maps to \\((-1,-6)\\). \\(y=f(x/2+2)\\): point maps to \\((-6,3)\\).",
+          "manual": true,
+          "timeLimit": 60,
+          "meta": {
+            "source": "ASC 2020",
+            "course": "Advanced",
+            "examPaper": "asc-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-3G",
+      "code": "3G",
+      "title": "Applications of maximisation and minimisation",
+      "questions": [
+        {
+          "id": "asc2020-q32",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A circular piece of tinplate of radius 10 cm has three segments removed, leaving a shaded shape. The central angle $\\theta$ is measured in radians.",
+          "figure": {
+            "svg": "fig:8af0abb360"
+          },
+          "parts": [
+            {
+              "id": "asc2020-q32-a",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "(a) Find the expression for the remaining shaded area \\(A\\) in terms of \\(\\theta\\).",
+              "options": [
+                "\\(A = 50(\\theta + 3\\sin\\theta)\\) cm\\(^2\\)",
+                "\\(A = 50(\\theta - 3\\sin\\theta)\\) cm\\(^2\\)",
+                "\\(A = 100(\\theta + \\sin\\theta)\\) cm\\(^2\\)",
+                "\\(A = 50\\theta\\) cm\\(^2\\)"
+              ],
+              "answer": 0,
+              "hint": "The shaded region has one sector of angle \\(\\theta\\) and three isosceles triangles each with included angle \\(\\theta\\) and sides of 10 cm.",
+              "solution": "The correct answer is \\(A = 50(\\theta + 3\\sin\\theta)\\) cm\\(^2\\).",
+              "steps": [
+                {
+                  "explain": "The shaded region consists of one sector \\(OAB\\) with central angle \\(\\theta\\) and radius \\(r = 10\\) cm, plus three isosceles triangles \\(OBC\\), \\(OCD\\), \\(ODE\\) each with sides 10 cm and included angle \\(\\theta\\).",
+                  "work": "\\(A = A_{\\text{sector}} + 3 \\times A_{\\triangle}\\)"
+                },
+                {
+                  "explain": "Sector area: use \\(A_{\\text{sector}} = \\dfrac{1}{2}r^2\\theta\\) with \\(r = 10\\).",
+                  "work": "\\(A_{\\text{sector}} = \\dfrac{1}{2}(10)^2\\theta = 50\\theta\\)"
+                },
+                {
+                  "explain": "Each triangle area: use \\(A_{\\triangle} = \\dfrac{1}{2}r^2\\sin\\theta\\) with \\(r = 10\\). There are 3 such triangles.",
+                  "work": "\\(3 \\times \\dfrac{1}{2}(10)^2\\sin\\theta = 150\\sin\\theta\\)"
+                },
+                {
+                  "explain": "Add the sector and three triangle areas together and factorise.",
+                  "work": "\\(A = 50\\theta + 150\\sin\\theta = 50(\\theta + 3\\sin\\theta)\\) cm\\(^2\\)"
+                }
+              ],
+              "inactive": true
+            },
+            {
+              "id": "asc2020-q32-b",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "(b) Find the angle \\(\\theta\\) so that the area is a maximum. Give your answer correct to 2 decimal places.",
+              "figure": {
+                "jsxGraph": {
+                  "elements": [
+                    {
+                      "type": "point",
+                      "id": "O",
+                      "name": "O",
+                      "coordinates": [
+                        0,
+                        0
+                      ],
+                      "visible": true,
+                      "fixed": true,
+                      "label": {
+                        "autoPosition": true
+                      }
+                    },
+                    {
+                      "type": "point",
+                      "id": "A",
+                      "name": "A",
+                      "coordinates": [
+                        10,
+                        0
+                      ],
+                      "visible": true,
+                      "fixed": true,
+                      "label": {
+                        "autoPosition": true
+                      }
+                    },
+                    {
+                      "type": "point",
+                      "id": "B",
+                      "name": "B",
+                      "coordinates": [
+                        "10*cos(pi/4)",
+                        "10*sin(pi/4)"
+                      ],
+                      "visible": true,
+                      "fixed": true,
+                      "label": {
+                        "autoPosition": true
+                      }
+                    },
+                    {
+                      "type": "point",
+                      "id": "C",
+                      "name": "C",
+                      "coordinates": [
+                        "10*cos(2*pi/4)",
+                        "10*sin(2*pi/4)"
+                      ],
+                      "visible": true,
+                      "fixed": true,
+                      "label": {
+                        "autoPosition": true
+                      }
+                    },
+                    {
+                      "type": "point",
+                      "id": "D",
+                      "name": "D",
+                      "coordinates": [
+                        "10*cos(3*pi/4)",
+                        "10*sin(3*pi/4)"
+                      ],
+                      "visible": true,
+                      "fixed": true,
+                      "label": {
+                        "autoPosition": true
+                      }
+                    },
+                    {
+                      "type": "point",
+                      "id": "E",
+                      "name": "E",
+                      "coordinates": [
+                        "10*cos(4*pi/4)",
+                        "10*sin(4*pi/4)"
+                      ],
+                      "visible": true,
+                      "fixed": true,
+                      "label": {
+                        "autoPosition": true
+                      }
+                    },
+                    {
+                      "type": "circle",
+                      "id": "circ",
+                      "parents": [
+                        "O",
+                        "A"
+                      ],
+                      "strokeOpacity": 0.3,
+                      "dash": 2
+                    },
+                    {
+                      "type": "sector",
+                      "id": "sec",
+                      "parents": [
+                        "O",
+                        "A",
+                        "B"
+                      ],
+                      "fillColor": "blue",
+                      "fillOpacity": 0.2
+                    },
+                    {
+                      "type": "polygon",
+                      "id": "poly1",
+                      "parents": [
+                        "O",
+                        "B",
+                        "C"
+                      ],
+                      "fillColor": "blue",
+                      "fillOpacity": 0.2
+                    },
+                    {
+                      "type": "polygon",
+                      "id": "poly2",
+                      "parents": [
+                        "O",
+                        "C",
+                        "D"
+                      ],
+                      "fillColor": "blue",
+                      "fillOpacity": 0.2
+                    },
+                    {
+                      "type": "polygon",
+                      "id": "poly3",
+                      "parents": [
+                        "O",
+                        "D",
+                        "E"
+                      ],
+                      "fillColor": "blue",
+                      "fillOpacity": 0.2
+                    },
+                    {
+                      "type": "angle",
+                      "id": "ang1",
+                      "parents": [
+                        "A",
+                        "O",
+                        "B"
+                      ],
+                      "radius": 1.5,
+                      "name": "\\theta"
+                    },
+                    {
+                      "type": "angle",
+                      "id": "ang2",
+                      "parents": [
+                        "B",
+                        "O",
+                        "C"
+                      ],
+                      "radius": 1.5,
+                      "name": "\\theta"
+                    },
+                    {
+                      "type": "angle",
+                      "id": "ang3",
+                      "parents": [
+                        "C",
+                        "O",
+                        "D"
+                      ],
+                      "radius": 1.5,
+                      "name": "\\theta"
+                    },
+                    {
+                      "type": "angle",
+                      "id": "ang4",
+                      "parents": [
+                        "D",
+                        "O",
+                        "E"
+                      ],
+                      "radius": 1.5,
+                      "name": "\\theta"
+                    }
+                  ],
+                  "boundingbox": [
+                    -12,
+                    12,
+                    12,
+                    -12
+                  ],
+                  "showNavigation": false,
+                  "axis": false,
+                  "grid": false
+                }
+              },
+              "options": [
+                "\\(\\theta \\approx 1.91\\) radians",
+                "\\(\\theta \\approx 1.91\\) radians + 1",
+                "\\(\\dfrac{12}{x + 2}\\)",
+                "\\(\\dfrac{13}{x + 3}\\)"
+              ],
+              "answer": 0,
+              "hint": "Set \\(\\frac{dA}{d\\theta} = 0\\) and solve.",
+              "solution": "The correct answer is \\(\\theta \\approx 1.91\\) radians.",
+              "steps": [
+                {
+                  "explain": "To maximise \\(A = 50(\\theta + 3\\sin\\theta)\\), differentiate with respect to \\(\\theta\\).",
+                  "work": "\\(\\dfrac{dA}{d\\theta} = 50(1 + 3\\cos\\theta)\\)"
+                },
+                {
+                  "explain": "Set the derivative equal to zero and solve for \\(\\theta\\).",
+                  "work": "\\(50(1 + 3\\cos\\theta) = 0\\)\n\n\\(\\cos\\theta = -\\dfrac{1}{3}\\)\n\n\\(\\theta = \\cos^{-1}\\!\\left(-\\dfrac{1}{3}\\right) \\approx 1.91\\) rad"
+                },
+                {
+                  "explain": "Confirm this is a maximum using the second derivative. \\(\\dfrac{d^2A}{d\\theta^2} = -150\\sin\\theta\\). At \\(\\theta \\approx 1.91\\), \\(\\sin\\theta > 0\\), so \\(\\dfrac{d^2A}{d\\theta^2} < 0\\) — maximum confirmed.",
+                  "work": "\\(\\theta \\approx 1.91\\) rad"
+                }
+              ],
+              "inactive": true
+            }
+          ],
+          "answer": "See parts (a) and (b)",
+          "hint": "Sector area + 3 triangles for (a). Differentiate $A$ for (b).",
+          "solution": "$A = 50(\\theta + 3\\sin\\theta)$; maximum at $\\theta \\approx 1.91$ rad.",
+          "timeLimit": 180,
+          "meta": {
+            "source": "Ascham 2020 Trial Q32"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-8A",
+      "code": "8A",
+      "title": "Applications of arithmetic and geometric series",
+      "questions": [
+        {
+          "id": "asc2020-q30a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The drop-bear population is endangered. On 1 January 2003 there were 1000 drop-bears. Each year the population increases by \\(5\\%\\), but 100 drop-bears are poached. Let \\(T_n\\) be the population remaining after \\(n\\) years. Find a simplified expression for \\(T_n\\).",
+          "options": [
+            "\\(T_n = 2000 + 1000(1.05)^n\\)",
+            "\\(T_n = 2000 - 1000(1.05)^n\\)",
+            "\\(T_n = 1000(1.05)^n - 100n\\)",
+            "\\(T_n = 1000 - 100(1.05)^n\\)"
+          ],
+          "answer": 1,
+          "hint": "Write \\(T_n = 1.05 T_{n-1} - 100\\), expand, and sum the geometric series of poaching terms.",
+          "solution": "The correct answer is \\(T_n = 2000 - 1000(1.05)^n\\).",
+          "steps": [
+            {
+              "explain": "Given: initial population 1000 on 1 January 2003; each year the population is multiplied by 1.05 (a 5% increase) and then 100 are removed by poaching. Why a recurrence first? The yearly rule is sequential, so we model \\(T_{n} = 1.05\\,T_{n-1} - 100\\) with a clear initial value. Strategy: write the first few terms, recognise a geometric pattern in the poaching contributions, then sum that geometric series to get a closed form. A common slip is applying the 5% growth after poaching in the wrong order, or treating poaching as a fixed percentage.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "What we expand: after one year, \\(T_1 = 1000\\times 1.05 - 100\\). After two years,\\[T_2 = 1.05(1000\\times 1.05 - 100) - 100 = 1000(1.05)^2 - 100(1.05) - 100.\\]After \\(n\\) years the pattern is\\[T_n = 1000(1.05)^n - 100\\bigl(1.05^{n-1} + 1.05^{n-2} + \\cdots + 1.05 + 1\\bigr).\\]Why this form? Each poached group of 100 has then grown for a different number of subsequent years. This geometric sum is the next object to evaluate.",
+              "work": "\\(T_n = 1000(1.05)^n - 100\\sum_{k=0}^{n-1}(1.05)^k\\)"
+            },
+            {
+              "explain": "Sum the geometric series: \\(\\sum_{k=0}^{n-1}(1.05)^k = \\dfrac{(1.05)^n - 1}{1.05 - 1} = \\dfrac{(1.05)^n - 1}{0.05}\\). Substitute:\\[T_n = 1000(1.05)^n - 100\\cdot\\dfrac{(1.05)^n - 1}{0.05} = 1000(1.05)^n - 2000\\bigl((1.05)^n - 1\\bigr).\\]A common slip is using ratio 1.05 in the denominator of the geometric sum formula incorrectly (forgetting \\(r-1 = 0.05\\)).",
+              "work": "\\(T_n = 1000(1.05)^n - 2000\\bigl((1.05)^n - 1\\bigr)\\)"
+            },
+            {
+              "explain": "Expand and collect like terms:\\[T_n = 1000(1.05)^n - 2000(1.05)^n + 2000 = 2000 - 1000(1.05)^n.\\]Check at \\(n = 0\\): \\(T_0 = 2000 - 1000 = 1000\\), which matches the initial population. Final answer: \\(T_n = 2000 - 1000(1.05)^n\\). Context: the population falls toward 0 as \\(n\\) grows, and extinction occurs when this expression first becomes non-positive.",
+              "work": "\\(T_n = 2000 - 1000(1.05)^n\\)"
+            }
+          ],
+          "timeLimit": 180,
+          "meta": {
+            "source": "Ascham 2020 Trial Q30",
+            "examPaper": "Ascham 2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-9D",
+      "code": "9D",
+      "title": "Bivariate data",
+      "questions": [
+        {
+          "id": "asc2020-q17",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Figtree Syndrome is a rare disease. The table shows research spending (% of GDP) $x$ and cases of Figtree Syndrome (1000s) $y$ for 10 countries.\n\n| $x$ | 2.0 | 2.4 | 3.0 | 3.2 | 3.5 | 3.8 | 4.1 | 4.5 | 4.6 | 5.0 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| $y$ | 7.8 | 6.8 | 7.2 | 6.6 | 5.8 | 5.6 | 4.6 | 5.0 | 4.0 | 4.2 |",
+          "parts": [
+            {
+              "id": "asc2020-q17-a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(a) Determine Pearson's correlation coefficient for this data correct to 3 decimal places.",
+              "options": [
+                "\\(r \\approx 0.980\\)",
+                "\\(r \\approx -0.980\\)",
+                "\\(r \\approx 0.890\\)",
+                "\\(r \\approx -0.890\\)"
+              ],
+              "answer": 1,
+              "hint": "Enter the data pairs into a calculator and use the correlation function.",
+              "solution": "The correct answer is \\(r \\approx -0.980\\).",
+              "steps": [
+                {
+                  "explain": "To find Pearson's correlation coefficient (\\(r\\)) using a Casio fx-82AU PLUS calculator, first set it to the correct statistical mode for bivariate (two-variable) data.\n\n1. Press **MODE**, then select **2 (STAT)**.\n2. Select **2 (A+BX)** for linear regression.",
+                  "work": "$$\\text{MODE} \\rightarrow 2: \\text{STAT} \\rightarrow 2: A+BX$$"
+                },
+                {
+                  "explain": "Next, input your data into the table that appears on the screen.\n\n1. Enter all the \\(x\\)-values in the left column, pressing **=** after each number.\n2. Use the arrow keys to move to the top of the \\(y\\)-column.\n3. Enter the corresponding \\(y\\)-values, pressing **=** after each one.\n4. Once all data is entered, press **AC**. (Don't worry, your data is saved in the calculator's memory!)",
+                  "work": "$$\\text{Enter data} \\rightarrow \\text{Press AC}$$"
+                },
+                {
+                  "explain": "Finally, retrieve the correlation coefficient \\(r\\) from the regression menu.\n\n1. Press **SHIFT** and then **1 (STAT)**.\n2. Select **5 (Reg)** for regression variables.\n3. Select **3 (r)** for Pearson's correlation coefficient.\n4. Press **=** to calculate the value.\n\nRounding to 3 decimal places, you should get \\(-0.980\\).",
+                  "work": "$$ \\begin{aligned} \\text{SHIFT} \\rightarrow 1 \\rightarrow 5:\\text{Reg} \\rightarrow 3:r \\rightarrow = \\\\\\\\ r \\approx -0.980 \\end{aligned} $$"
+                }
+              ]
+            },
+            {
+              "id": "asc2020-q17-b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(b) Find the least squares regression line for this data. Round values to 3 significant figures.",
+              "options": [
+                "\\(\\hat{y} = 1.07x - 9.63\\)",
+                "\\(\\hat{y} = -1.07x + 9.63\\)",
+                "\\(\\hat{y} = 1.07x + 9.63\\)",
+                "\\(\\hat{y} = -1.07x - 9.63\\)"
+              ],
+              "answer": 1,
+              "hint": "Use your calculator's LinReg function. The line passes through \\((\\bar{x}, \\bar{y})\\).",
+              "solution": "The correct answer is \\(\\hat{y} = -1.07x + 9.63\\).",
+              "steps": [
+                {
+                  "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Ascham 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+                  "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+                },
+                {
+                  "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+                  "work": "\\(a \\approx 9.63\\)"
+                },
+                {
+                  "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+                  "work": "\\(\\hat{y} = -1.07x + 9.63\\)"
+                },
+                {
+                  "explain": "Final answer: \\hat{y} = -1.07x + 9.63. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+                  "work": "\\(\\hat{y} = -1.07x + 9.63\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "See parts (a) and (b)",
+          "hint": "Use your calculator's statistical functions for both parts.",
+          "solution": "$r \\approx -0.980$; regression line $\\hat{y} = -1.07x + 9.63$.",
+          "meta": {
+            "source": "Ascham 2020 Trial Q17",
+            "examPaper": "asc-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-10B",
+      "code": "10B",
+      "title": "Continuous distributions",
+      "questions": [
+        {
+          "id": "asc2020-q31",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The wait time (in minutes) for an ambulance is modelled by a continuous probability distribution function:\n\n\\(f(x) = \\begin{cases} ax(10-x) & 0 \\leq x \\leq 10 \\\\ 0 & \\text{otherwise} \\end{cases}\\)\n\nDetermine the value of the constant \\(a\\) that makes this a valid probability density function.",
+          "parts": [
+            {
+              "id": "asc2020-q31-a",
+              "type": "mc",
+              "stem": "(a) Show that the value of \\(a\\) is \\(\\dfrac{3}{500}\\). Which of the following equations correctly integrates the PDF to verify this?",
+              "options": [
+                "\\(a\\left[5x^2 - \\dfrac{x^3}{3}\\right]_0^{10} = a \\cdot \\dfrac{250}{3} = 1 \\implies a = \\dfrac{3}{250}\\)",
+                "\\(a\\left[5x^2 - \\dfrac{x^3}{3}\\right]_0^{10} = a \\cdot \\dfrac{500}{3} = 1 \\implies a = \\dfrac{3}{500}\\)",
+                "\\(a\\left[5x^2 - \\dfrac{x^3}{3}\\right]_0^{10} = a \\cdot \\dfrac{1000}{3} = 1 \\implies a = \\dfrac{3}{1000}\\)",
+                "\\(a\\left[5x^2 - \\dfrac{x^3}{3}\\right]_0^{10} = a \\cdot \\dfrac{500}{7} = 1 \\implies a = \\dfrac{7}{500}\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We begin by setting the definite integral of the PDF over the support [0, 10] equal to 1, as the total area under a valid PDF must equal 1.",
+                  "work": "\\int_{0}^{10} ax(10-x)\\,dx = 1"
+                },
+                {
+                  "explain": "Next, we integrate the terms using the power rule to obtain the antiderivative expression, ready to be evaluated at the boundaries.",
+                  "work": "a\\left[5x^2 - \\dfrac{x^3}{3}\\right]_0^{10} = 1"
+                },
+                {
+                  "explain": "We substitute 10 into the antiderivative and subtract 0, obtaining an algebraic expression containing the coefficient a.",
+                  "work": "a\\left(500 - \\dfrac{1000}{3}\\right) = a \\cdot \\dfrac{500}{3} = 1"
+                },
+                {
+                  "explain": "Finally, we multiply both sides of the equation by the reciprocal fraction to isolate and determine the constant value.",
+                  "work": "a = \\dfrac{3}{500}"
+                }
+              ]
+            },
+            {
+              "id": "asc2020-q31-b",
+              "type": "mc",
+              "stem": "(b) Find the cumulative distribution function \\(F(x)\\) for \\(0 \\leq x \\leq 10\\).",
+              "options": [
+                "\\(F(x) = \\dfrac{x^2(15-x)}{500}\\)",
+                "\\(F(x) = \\dfrac{x^2(10-x)}{500}\\)",
+                "\\(F(x) = \\dfrac{x(15-x^2)}{500}\\)",
+                "\\(F(x) = \\dfrac{3x^2(5-x)}{500}\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "We begin by integrating the probability density function from the lower bound of the support (zero) up to a general variable point x.",
+                  "work": "F(x) = \\int_{0}^{x} \\dfrac{3}{500}t(10-t)\\,dt"
+                },
+                {
+                  "explain": "Next, we factor out the constant fraction and find the antiderivative of the quadratic polynomial term by term.",
+                  "work": "= \\dfrac{3}{500}\\left[5t^2 - \\dfrac{t^3}{3}\\right]_0^x"
+                },
+                {
+                  "explain": "Finally, we substitute the variable limit into the expression and simplify the constants to obtain the cumulative distribution function.",
+                  "work": "= \\dfrac{15x^2 - x^3}{500} = \\dfrac{x^2(15-x)}{500}"
+                }
+              ]
+            },
+            {
+              "id": "asc2020-q31-c",
+              "type": "mc",
+              "stem": "(c) Find the probability, as a decimal, that a person will have to wait more than 7 minutes.",
+              "options": [
+                "0.784",
+                "0.256",
+                "0.216",
+                "0.316"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "We begin by expressing the probability of wait time exceeding 7 minutes using the complement rule.",
+                  "work": "P(X > 7) = 1 - F(7)"
+                },
+                {
+                  "explain": "Next, we substitute the value of 7 into the cumulative distribution function to find the accumulated probability.",
+                  "work": "F(7) = \\dfrac{7^2(15-7)}{500} = \\dfrac{392}{500} = 0.784"
+                },
+                {
+                  "explain": "Finally, we subtract the cumulative probability from 1 to obtain the complement probability.",
+                  "work": "P(X > 7) = 1 - 0.784 = 0.216"
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "hint": "Integrate to find $a$, then integrate again for CDF, then use $P(X>7) = 1 - F(7)$.",
+          "solution": "$a = 3/500$; $F(x) = x^2(15-x)/500$; $P(X>7) = 0.216$.",
+          "meta": {
+            "source": "Ascham 2020 Trial Q31",
+            "examPaper": "asc-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-exam",
+      "code": "EXAM",
+      "title": "Ascham 2020 Trial Exam",
+      "questions": [
+        {
+          "id": "asc2020-q34v",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Water flows into a tank at a rate given by $\\dfrac{dV}{dt} = 0.5\\cos\\dfrac{\\pi t}{20}$ kL/min. The tank is empty at $t = 0$.\n\n(a) Find the first time $t > 0$ when the flow rate is zero.\n\n(b) Find $V(t)$.",
+          "options": [
+            "(a) $t = 20$ min (b) $V = \\dfrac{10}{\\pi}\\sin\\dfrac{\\pi t}{20}$",
+            "(a) $t = 10$ min (b) $V = \\dfrac{10}{\\pi}\\cos\\dfrac{\\pi t}{20}$",
+            "(a) $t = 10$ min (b) $V = 10\\sin\\dfrac{\\pi t}{20}$",
+            "(a) \\(t = 10\\) min (b) \\(V = \\dfrac{10}{\\pi}\\sin\\dfrac{\\pi t}{20}\\)"
+          ],
+          "answer": 3,
+          "hint": "Set $\\cos(\\pi t/20) = 0$ for part (a). Integrate and apply $V(0) = 0$ for part (b).",
+          "solution": "The correct answer is (a) \\(t = 10\\) min (b) \\(V = \\dfrac{10}{\\pi}\\sin\\dfrac{\\pi t}{20}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Ascham 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\frac{\\pi t}{20} = \\frac{\\pi}{2} \\Rightarrow t = 10 \\text{ min}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(V = 0.5 \\times \\frac{20}{\\pi}\\sin\\frac{\\pi t}{20} + C = \\frac{10}{\\pi}\\sin\\frac{\\pi t}{20} + C\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(0 = 0 + C \\Rightarrow C = 0 \\Rightarrow V = \\frac{10}{\\pi}\\sin\\frac{\\pi t}{20}\\)"
+            },
+            {
+              "explain": "Final answer: (a) \\(t = 10\\) min (b) \\(V = \\dfrac{10}{\\pi}\\sin\\dfrac{\\pi t}{20}\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "(a) \\(t = 10\\) min (b) \\(V = \\dfrac{10}{\\pi}\\sin\\dfrac{\\pi t}{20}\\)"
+            }
+          ],
+          "inactive": true,
+          "meta": {
+            "source": "Adapted from Ascham 2020 Trial Q34"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "Part (a): setting $\\dfrac{dV}{dt}=0.5\\cos\\dfrac{\\pi t}{20}=0$ and solving for the first positive $t$, what equation for the angle results?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$\\dfrac{\\pi t}{20}=\\dfrac{\\pi}{2}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$\\dfrac{\\pi t}{20}=\\pi$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$\\dfrac{\\pi t}{20}=0$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Cosine is first zero at angle $\\dfrac{\\pi}{2}$ (not $0$, which is where it starts)."
+                ],
+                "explanation": "$\\dfrac{\\pi t}{20}=\\dfrac{\\pi}{2} \\Rightarrow t=10$ minutes."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Part (b): integrating $\\dfrac{dV}{dt}=0.5\\cos\\dfrac{\\pi t}{20}$ (reverse chain rule, $a=\\pi/20$) and applying $V(0)=0$ (tank empty at $t=0$), what is $V(t)$?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$V=\\dfrac{10}{\\pi}\\sin\\dfrac{\\pi t}{20}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$V=\\dfrac{10}{\\pi}\\cos\\dfrac{\\pi t}{20}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$V=10\\sin\\dfrac{\\pi t}{20}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$\\int\\cos(at)\\,dt=\\dfrac1a\\sin(at)$, with $\\dfrac{1}{\\pi/20}=\\dfrac{20}{\\pi}$, then multiplied by the $0.5$ coefficient gives $\\dfrac{10}{\\pi}$ — and $V(0)=0$ makes the constant of integration $0$."
+                ],
+                "explanation": "$V(t)=\\dfrac{10}{\\pi}\\sin\\dfrac{\\pi t}{20}$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        }
+      ]
+    }
+  ]
+}

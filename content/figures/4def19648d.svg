@@ -1,0 +1,19 @@
+<svg viewBox="0 0 420 380" width="420" height="380" xmlns="http://www.w3.org/2000/svg">
+  
+  <line x1="150" y1="250" x2="150" y2="180" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="145,190 155,190 150,180" fill="#64748b"/>
+  <text x="150" y="172" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#475569">N</text>
+  
+  <line x1="285.9" y1="186.6" x2="285.9" y2="116.6" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="280.9,126.6 290.9,126.6 285.9,116.6" fill="#64748b"/>
+  <text x="285.9" y="108.6" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#475569">N</text>
+  <line x1="150" y1="250" x2="285.9" y2="186.6" stroke="#1e3a8a" stroke-width="2"/>
+  
+  <circle cx="150" cy="250" r="3.5" fill="#1e293b"/>
+  <text x="128" y="272" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="700" fill="#1e293b">X</text>
+  
+  <circle cx="285.9" cy="186.6" r="3.5" fill="#1e293b"/>
+  <text x="297.9" y="174.6" font-family="system-ui,-apple-system,sans-serif" font-size="15" font-weight="700" fill="#1e293b">Y</text>
+  <text x="174" y="215" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#b45309" stroke="#f8fafc" stroke-width="3" paint-order="stroke">065°T</text>
+  <text x="246" y="248" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" fill="#b45309" stroke="#f8fafc" stroke-width="3" paint-order="stroke">245°T</text>
+</svg>

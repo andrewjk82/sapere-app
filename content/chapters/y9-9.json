@@ -1,0 +1,104 @@
+{
+  "chapterId": "y9-9",
+  "title": "Chapter 9: Enlargements and similarity",
+  "year": "2022",
+  "topics": [
+    {
+      "topicId": "y9-9c",
+      "code": "9C",
+      "title": "The AAA similarity test for triangles",
+      "questions": [
+        {
+          "id": "sg2022-q2f",
+          "type": "multipart",
+          "stem": "In the diagram, \\(\\triangle ABC\\)\\(\\lvert\\rvert\\lvert\\rvert\\)\\(\\triangle XYZ\\), as shown.",
+          "figure": {
+            "svg": "fig:3894730de4"
+          },
+          "parts": [
+            {
+              "id": "sg2022-q2f-i",
+              "type": "mc",
+              "stem": "Which similarity test justifies this?",
+              "options": [
+                "AA (equiangular)",
+                "SAS",
+                "RHS",
+                "SSS"
+              ],
+              "answer": 0,
+              "hint": "Two pairs of matching angles are marked equal in each triangle.",
+              "steps": [
+                {
+                  "explain": "Two angles are marked as equal between the triangles: \\(25°=25°\\) and \\(34°=34°\\).",
+                  "work": "Matching angles: \\(25°\\) and \\(34°\\)"
+                },
+                {
+                  "explain": "If two angles of one triangle are equal to two angles of another, the triangles are similar (the third angles must also be equal, by the angle sum of a triangle).",
+                  "work": "Similarity test: AA (equiangular)"
+                }
+              ],
+              "meta": {
+                "source": "Sydney Grammar School Form III Annual Examination 2022",
+                "school": "Sydney Grammar School",
+                "examType": "Annual Examination",
+                "grade": "9"
+              }
+            },
+            {
+              "id": "sg2022-q2f-ii",
+              "type": "mc",
+              "stem": "Hence calculate the length \\(XY\\), given \\(AB=8\\text{ cm}\\), \\(BC=6\\text{ cm}\\), \\(YZ=9\\text{ cm}\\) (with \\(A\\leftrightarrow X\\), \\(B\\leftrightarrow Y\\), \\(C\\leftrightarrow Z\\)).",
+              "options": [
+                "\\(12\\text{ cm}\\)",
+                "\\(9\\text{ cm}\\)",
+                "\\(6.75\\text{ cm}\\)",
+                "\\(10.67\\text{ cm}\\)"
+              ],
+              "answer": 0,
+              "hint": "Find the scale factor using the matching sides \\(BC\\) and \\(YZ\\) (both opposite the \\(25°\\) angle), then apply it to \\(AB\\).",
+              "steps": [
+                {
+                  "explain": "Since \\(A\\leftrightarrow X\\), \\(B\\leftrightarrow Y\\), \\(C\\leftrightarrow Z\\), side \\(BC\\) corresponds to side \\(YZ\\). Use this known pair to find the scale factor.",
+                  "work": "\\(\\text{Scale factor} = \\dfrac{YZ}{BC}=\\dfrac{9}{6}=1.5\\)"
+                },
+                {
+                  "explain": "Side \\(AB\\) corresponds to side \\(XY\\). Multiply \\(AB\\) by the scale factor.",
+                  "work": "\\(XY = AB\\times1.5 = 8\\times1.5\\)"
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(XY = 12\\text{ cm}\\)"
+                }
+              ],
+              "meta": {
+                "source": "Sydney Grammar School Form III Annual Examination 2022",
+                "school": "Sydney Grammar School",
+                "examType": "Annual Examination",
+                "grade": "9"
+              }
+            }
+          ],
+          "answer": "0",
+          "hint": "Two pairs of matching angles are marked equal in each triangle.",
+          "steps": [
+            {
+              "explain": "Two angles are marked as equal between the triangles: \\(25°=25°\\) and \\(34°=34°\\).",
+              "work": "Matching angles: \\(25°\\) and \\(34°\\)"
+            },
+            {
+              "explain": "If two angles of one triangle are equal to two angles of another, the triangles are similar (the third angles must also be equal, by the angle sum of a triangle).",
+              "work": "Similarity test: AA (equiangular)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        }
+      ]
+    }
+  ]
+}

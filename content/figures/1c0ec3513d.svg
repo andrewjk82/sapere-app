@@ -1,0 +1,10 @@
+<svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<path d="M 70 235 L 300 235 L 400 95 Z" fill="#dbeafe" fill-opacity="0.6" stroke="none"/>
+<line x1="70" y1="235" x2="300" y2="235" stroke="#475569" stroke-width="2"/>
+<line x1="70" y1="235" x2="400" y2="95" stroke="#475569" stroke-width="2"/>
+<line x1="300" y1="235" x2="400" y2="95" stroke="#16a34a" stroke-width="3"/>
+<text x="185" y="263" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#1e293b">56.6 m</text>
+<text x="223" y="137" text-anchor="end" font-family="system-ui" font-size="13" font-weight="700" fill="#1e293b">72.1 m</text>
+<text x="374" y="182" text-anchor="start" font-family="system-ui" font-size="13" font-weight="700" fill="#16a34a">Area ≈ 1211 m²</text>
+<text x="289.0" y="213.7" text-anchor="middle" font-family="system-ui" font-size="12.5" font-weight="700" fill="#1e293b">≈92°</text>
+</svg>

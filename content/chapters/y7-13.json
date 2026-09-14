@@ -1,0 +1,1964 @@
+{
+  "chapterId": "y7-13",
+  "title": "Chapter 13: Negative fractions and decimals",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "y7-13",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "NGk2jaNcnSWMrg9P0LlK",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Identify the correct set of coordinates represented on the number line below:\n\n<div style=\"display: flex; justify-content: center; margin: 16px 0;\">\n      <svg viewBox=\"0 0 400 60\" width=\"100%\" style=\"max-width: 320px;\" xmlns=\"http://www.w3.org/2000/svg\">\n        <line x1=\"20\" y1=\"30\" x2=\"380\" y2=\"30\" stroke=\"#1e293b\" stroke-width=\"2.5\" />\n        <path d=\"M 380 30 L 370 25 M 380 30 L 370 35 M 20 30 L 30 25 M 20 30 L 30 35\" stroke=\"#1e293b\" stroke-width=\"2\" />\n        \n        <!-- Ticks from -5 to 5 (36 pixels per unit, 0 at 200) -->\n        <line x1=\"20\" y1=\"25\" x2=\"20\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" />\n        <line x1=\"56\" y1=\"25\" x2=\"56\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" />\n        <line x1=\"92\" y1=\"25\" x2=\"92\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" />\n        <line x1=\"128\" y1=\"25\" x2=\"128\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" />\n        <line x1=\"164\" y1=\"25\" x2=\"164\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" />\n        <line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"40\" stroke=\"#0f172a\" stroke-width=\"2\" /> <!-- 0 -->\n        <line x1=\"236\" y1=\"25\" x2=\"236\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" />\n        <line x1=\"272\" y1=\"25\" x2=\"272\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" />\n        <line x1=\"308\" y1=\"25\" x2=\"308\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" />\n        <line x1=\"344\" y1=\"25\" x2=\"344\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" />\n        <line x1=\"380\" y1=\"25\" x2=\"380\" y2=\"35\" stroke=\"#475569\" stroke-width=\"1.5\" />\n\n        <text x=\"200\" y=\"55\" font-size=\"12\" font-family=\"Outfit\" text-anchor=\"middle\" font-weight=\"bold\">0</text>\n        <text x=\"380\" y=\"55\" font-size=\"11\" font-family=\"Outfit\" text-anchor=\"middle\">5</text>\n        <text x=\"20\" y=\"55\" font-size=\"11\" font-family=\"Outfit\" text-anchor=\"middle\">-5</text>\n\n        <!-- Plotted points -->\n        <!-- -3 1/2: x = 200 - 3.5*36 = 74 -->\n        <circle cx=\"74\" cy=\"30\" r=\"5\" fill=\"#ef4444\" />\n        <text x=\"74\" y=\"15\" font-size=\"10\" font-family=\"Outfit\" fill=\"#ef4444\" text-anchor=\"middle\" font-weight=\"bold\">-3½</text>\n\n        <!-- -4 3/4: x = 200 - 4.75*36 = 29 -->\n        <circle cx=\"29\" cy=\"30\" r=\"5\" fill=\"#ef4444\" />\n        <text x=\"29\" y=\"15\" font-size=\"10\" font-family=\"Outfit\" fill=\"#ef4444\" text-anchor=\"middle\" font-weight=\"bold\">-4¾</text>\n\n        <!-- -1 1/2: x = 200 - 1.5*36 = 146 -->\n        <circle cx=\"146\" cy=\"30\" r=\"5\" fill=\"#ef4444\" />\n        <text x=\"146\" y=\"15\" font-size=\"10\" font-family=\"Outfit\" fill=\"#ef4444\" text-anchor=\"middle\" font-weight=\"bold\">-1½</text>\n\n        <!-- 1 1/2: x = 200 + 1.5*36 = 254 -->\n        <circle cx=\"254\" cy=\"30\" r=\"5\" fill=\"#ef4444\" />\n        <text x=\"254\" y=\"15\" font-size=\"10\" font-family=\"Outfit\" fill=\"#ef4444\" text-anchor=\"middle\" font-weight=\"bold\">1½</text>\n      </svg>\n    </div>",
+          "options": [
+            "\\(\\{-4\\frac{3}{4}, -3\\frac{1}{2}, -1\\frac{1}{2}, 1\\frac{1}{2}\\}\\)",
+            "\\(\\{-4\\frac{1}{4}, -3\\frac{1}{2}, -1\\frac{1}{2}, 1\\frac{1}{2}\\}\\)",
+            "\\(\\{-4\\frac{3}{4}, -3\\frac{1}{4}, -1\\frac{1}{2}, 2\\frac{1}{2}\\}\\)",
+            "\\(\\{-3\\frac{3}{4}, -2\\frac{1}{2}, -1\\frac{1}{2}, 1\\frac{1}{2}\\}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>By carefully reading each marked position on the scale from \\(-5\\)\\( to \\)\\(5\\)\\(:</p><ul><li>The point between \\)\\(-5\\)\\( and \\)\\(-4\\)\\( is at \\)\\(-4\\frac{3}{4}\\)\\(.</li><li>The point exactly halfway between \\)\\(-4\\)\\( and \\)\\(-3\\)\\( is at \\)\\(-3\\frac{1}{2}\\)\\(.</li><li>The point exactly halfway between \\)\\(-2\\)\\( and \\)\\(-1\\)\\( is at \\)\\(-1\\frac{1}{2}\\)\\(.</li><li>The point exactly halfway between \\)\\(1\\)\\( and \\)\\(2\\)\\( is at \\)\\(1\\frac{1}{2}\\).</li></ul></div>",
+          "steps": [
+            {
+              "explain": "<p>By carefully reading each marked position on the scale from \\(-5\\)\\( to \\)\\(5\\)\\(:</p><ul><li>The point between \\)\\(-5\\)\\( and \\)\\(-4\\)\\( is at \\)\\(-4\\frac{3}{4}\\)\\(.</li><li>The point exactly halfway between \\)\\(-4\\)\\( and \\)\\(-3\\)\\( is at \\)\\(-3\\frac{1}{2}\\)\\(.</li><li>The point exactly halfway between \\)\\(-2\\)\\( and \\)\\(-1\\)\\( is at \\)\\(-1\\frac{1}{2}\\)\\(.</li><li>The point exactly halfway between \\)\\(1\\)\\( and \\)\\(2\\)\\( is at \\)\\(1\\frac{1}{2}\\).</li></ul>.",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Confirm the answer against the options.",
+              "work": "\\(\\{-4\\frac{3}{4}, -3\\frac{1}{2}, -1\\frac{1}{2}, 1\\frac{1}{2}\\}\\)"
+            },
+            {
+              "explain": "Confirm the answer against the options.",
+              "work": "\\(\\{-4\\frac{3}{4}, -3\\frac{1}{2}, -1\\frac{1}{2}, 1\\frac{1}{2}\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y7-13a",
+      "code": "13A",
+      "title": "Addition and subtraction of negative fractions",
+      "questions": [
+        {
+          "id": "1DNLLn3Ubw5LLqNgehNI",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression: \\(-\\frac{1}{3} - \\frac{3}{4} - \\frac{5}{6}\\)",
+          "options": [
+            "\\(-2\\frac{1}{12}\\)",
+            "\\(-1\\frac{11}{12}\\)",
+            "\\(-2\\frac{5}{12}\\)",
+            "\\(-1\\frac{5}{12}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{1}{3} - \\frac{3}{4} - \\frac{5}{6} = -\\frac{4}{12} - \\frac{9}{12} - \\frac{10}{12} = -\\frac{23}{12} = -1\\frac{11}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{1}{3} - \\frac{3}{4} - \\frac{5}{6} = -\\frac{4}{12} - \\frac{9}{12} - \\frac{10}{12} = -\\frac{23}{12} = -1\\frac{11}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-1\\frac{11}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "1xVYvG6DuvoTKYDjAWUa",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Arrange the following set of numbers in increasing order: \\(-\\frac{3}{4}, -\\frac{5}{6}, -\\frac{9}{10}, \\frac{10}{11}\\)",
+          "options": [
+            "\\(-\\frac{9}{10}, -\\frac{5}{6}, -\\frac{3}{4}, \\frac{10}{11}\\)",
+            "\\(-\\frac{5}{6}, -\\frac{9}{10}, -\\frac{3}{4}, \\frac{10}{11}\\)",
+            "\\(\\frac{10}{11}, -\\frac{3}{4}, -\\frac{5}{6}, -\\frac{9}{10}\\)",
+            "\\(-\\frac{3}{4}, -\\frac{5}{6}, -\\frac{9}{10}, \\frac{10}{11}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Let's convert each number to a decimal to compare their sizes:</p><ul><li>\\(-\\frac{9}{10} = -0.900\\)</li><li>\\(-\\frac{5}{6} \\approx -0.833\\)</li><li>\\(-\\frac{3}{4} = -0.750\\)</li><li>\\(\\frac{10}{11} \\approx 0.909\\)</li></ul><p>Comparing the values:</p><p>\\(-0.900 < -0.833 < -0.750 < 0.909\\)</p><p>Hence, the increasing order is:</p><p>\\(-\\frac{9}{10}, -\\frac{5}{6}, -\\frac{3}{4}, \\frac{10}{11}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to arrange the given fractions in increasing order. Converting them to decimals will make comparison easier.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Let's convert each number to a decimal to compare their sizes:</p><ul><li>\\(-\\frac{9}{10} = -0.900\\)</li><li>\\(-\\frac{5}{6} \\approx -0.833\\)</li><li>\\(-\\frac{3}{4} = -0.750\\)</li><li>\\(\\frac{10}{11} \\approx 0.909\\)</li></ul><p>Comparing the values:</p><p>\\(-0.900 < -0.833 < -0.750 < 0.909\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "<div style=\"text-align: left;\"><p>Hence, the increasing order is:</p><p>\\(-\\frac{9}{10}, -\\frac{5}{6}, -\\frac{3}{4}, \\frac{10}{11}\\)</p></div>"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "2YJOhUZbkrRDnQZUtuEx",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{3}{5} - \\left(-\\frac{1}{3}\\right)\\)",
+          "options": [
+            "\\(-\\frac{14}{15}\\)",
+            "\\(-\\frac{5}{15}\\)",
+            "\\(-\\frac{4}{15}\\)",
+            "\\(-\\frac{2}{15}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{5} + \\frac{1}{3} = -\\frac{9}{15} + \\frac{5}{15} = -\\frac{4}{15}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{5} + \\frac{1}{3} = -\\frac{9}{15} + \\frac{5}{15} = -\\frac{4}{15}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{4}{15}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "3bF6VWvXdXP44LClR8lU",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to this addition: \\(-\\frac{3}{7} + \\frac{5}{7}\\)",
+          "options": [
+            "\\(\\frac{8}{7}\\)",
+            "\\(-\\frac{8}{7}\\)",
+            "\\(\\frac{3}{7}\\)",
+            "\\(\\frac{2}{7}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-\\frac{3}{7} + \\frac{5}{7} = \\frac{-3 + 5}{7} = \\frac{2}{7}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-\\frac{3}{7} + \\frac{5}{7} = \\frac{-3 + 5}{7} = \\frac{2}{7}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{2}{7}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "3UG4zn6c2KUzBAJEK1cf",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(-\\frac{2}{5} + 4\\)",
+          "options": [
+            "\\(3\\frac{3}{5}\\)",
+            "\\(4\\frac{2}{5}\\)",
+            "\\(4\\frac{3}{5}\\)",
+            "\\(3\\frac{2}{5}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{2}{5} + 4 = 4 - \\frac{2}{5} = 3\\frac{3}{5}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{2}{5} + 4 = 4 - \\frac{2}{5} = 3\\frac{3}{5}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(3\\frac{3}{5}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "04H758knGmmbKjZTXhuE",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Arrange the following set of numbers in increasing order: \\(-1\\frac{7}{9}, -\\frac{11}{9}, -2, -1\\)",
+          "options": [
+            "\\(-1\\frac{7}{9}, -2, -\\frac{11}{9}, -1\\)",
+            "\\(-2, -1\\frac{7}{9}, -\\frac{11}{9}, -1\\)",
+            "\\(-1, -\\frac{11}{9}, -1\\frac{7}{9}, -2\\)",
+            "\\(-2, -\\frac{11}{9}, -1\\frac{7}{9}, -1\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Let's convert each number to a decimal:</p><ul><li>\\(-2 = -2.00\\)</li><li>\\(-1\\frac{7}{9} = -\\frac{16}{9} \\approx -1.78\\)</li><li>\\(-\\frac{11}{9} \\approx -1.22\\)</li><li>\\(-1 = -1.00\\)</li></ul><p>Comparing the values:</p><p>\\(-2.00 < -1.78 < -1.22 < -1.00\\)</p><p>Hence, the increasing order is:</p><p>\\(-2, -1\\frac{7}{9}, -\\frac{11}{9}, -1\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to arrange the given negative fractions and integers in increasing order. Converting them to decimals will make comparison easier.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Let's convert each number to a decimal:</p><ul><li>\\(-2 = -2.00\\)</li><li>\\(-1\\frac{7}{9} = -\\frac{16}{9} \\approx -1.78\\)</li><li>\\(-\\frac{11}{9} \\approx -1.22\\)</li><li>\\(-1 = -1.00\\)</li></ul><p>Comparing the values:</p><p>\\(-2.00 < -1.78 < -1.22 < -1.00\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "<div style=\"text-align: left;\"><p>Hence, the increasing order is:</p><p>\\(-2, -1\\frac{7}{9}, -\\frac{11}{9}, -1\\)</p></div>"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "4jyA2WnASxsZnfoAQhWe",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(-\\frac{1}{6} + \\frac{1}{3}\\)",
+          "options": [
+            "\\(\\frac{2}{6}\\)",
+            "\\(\\frac{1}{6}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(-\\frac{1}{3}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{1}{6} + \\frac{1}{3} = -\\frac{1}{6} + \\frac{2}{6} = \\frac{1}{6}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{1}{6} + \\frac{1}{3} = -\\frac{1}{6} + \\frac{2}{6} = \\frac{1}{6}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{1}{6}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "6Jk86gEI2DDjihnotmoW",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(-2\\frac{3}{5} - 1\\frac{4}{7}\\)",
+          "options": [
+            "\\(-3\\frac{17}{35}\\)",
+            "\\(-4\\frac{17}{35}\\)",
+            "\\(-4\\frac{6}{35}\\)",
+            "\\(-3\\frac{6}{35}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by converting to improper fractions and finding a common denominator:</p><p>\\(-2\\frac{3}{5} - 1\\frac{4}{7} = -\\frac{13}{5} - \\frac{11}{7} = -\\frac{91}{35} - \\frac{55}{35} = -\\frac{146}{35} = -4\\frac{6}{35}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by converting to improper fractions and finding a common denominator:</p><p>\\(-2\\frac{3}{5} - 1\\frac{4}{7} = -\\frac{13}{5} - \\frac{11}{7} = -\\frac{91}{35} - \\frac{55}{35} = -\\frac{146}{35} = -4\\frac{6}{35}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-4\\frac{6}{35}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "8rQMXg4ewBArDpdjX0Cp",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(-\\frac{4}{7} - 2\\)",
+          "options": [
+            "\\(-2\\)",
+            "\\(-2\\frac{3}{7}\\)",
+            "\\(-1\\frac{3}{7}\\)",
+            "\\(-2\\frac{4}{7}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{4}{7} - 2 = -2 - \\frac{4}{7} = -2\\frac{4}{7}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{4}{7} - 2 = -2 - \\frac{4}{7} = -2\\frac{4}{7}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-2\\frac{4}{7}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "31RBw1HpvxPbaQYwgNtb",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(-\\frac{1}{4} + \\frac{3}{5}\\)",
+          "options": [
+            "\\(\\frac{8}{20}\\)",
+            "\\(\\frac{13}{20}\\)",
+            "\\(-\\frac{13}{20}\\)",
+            "\\(\\frac{7}{20}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{1}{4} + \\frac{3}{5} = -\\frac{5}{20} + \\frac{12}{20} = \\frac{7}{20}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{1}{4} + \\frac{3}{5} = -\\frac{5}{20} + \\frac{12}{20} = \\frac{7}{20}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{7}{20}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "aJ0Q4JZVsuMYwUtr3mjr",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to this addition: \\(-\\frac{1}{3} + 1\\)",
+          "options": [
+            "\\(\\frac{3}{3}\\)",
+            "\\(0\\)",
+            "\\(\\frac{4}{3}\\)",
+            "\\(\\frac{2}{3}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-\\frac{1}{3} + 1 = 1 - \\frac{1}{3} = \\frac{3}{3} - \\frac{1}{3} = \\frac{2}{3}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-\\frac{1}{3} + 1 = 1 - \\frac{1}{3} = \\frac{3}{3} - \\frac{1}{3} = \\frac{2}{3}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{2}{3}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "AvYxEtftnF4dWweXEE5D",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(-\\frac{4}{5} + \\frac{1}{3}\\)",
+          "options": [
+            "\\(-\\frac{3}{15}\\)",
+            "\\(-\\frac{11}{15}\\)",
+            "\\(-\\frac{7}{15}\\)",
+            "\\(-\\frac{8}{15}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{4}{5} + \\frac{1}{3} = -\\frac{12}{15} + \\frac{5}{15} = -\\frac{7}{15}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{4}{5} + \\frac{1}{3} = -\\frac{12}{15} + \\frac{5}{15} = -\\frac{7}{15}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{7}{15}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "BFhzM0bWyBfwAQegceez",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(-2\\frac{1}{3} - 1\\frac{3}{4}\\)",
+          "options": [
+            "\\(-3\\frac{7}{12}\\)",
+            "\\(-4\\frac{7}{12}\\)",
+            "\\(-3\\frac{1}{12}\\)",
+            "\\(-4\\frac{1}{12}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by converting to improper fractions and finding a common denominator:</p><p>\\(-2\\frac{1}{3} - 1\\frac{3}{4} = -\\frac{7}{3} - \\frac{7}{4} = -\\frac{28}{12} - \\frac{28}{12} = -\\frac{49}{12} = -4\\frac{1}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We need to subtract two mixed numbers. Convert to improper fractions first, then find a common denominator.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by converting to improper fractions and finding a common denominator:</p><p>\\(-2\\frac{1}{3} - 1\\frac{3}{4} = -\\frac{7}{3} - \\frac{7}{4} = -\\frac{28}{12} - \\frac{28}{12} = -\\frac{49}{12} = -4\\frac{1}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-4\\frac{1}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "Blrj3gscIceKZjZxEvZK",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression: \\(\\frac{2}{3} - \\frac{1}{4} - \\frac{1}{6}\\)",
+          "options": [
+            "\\(\\frac{5}{12}\\)",
+            "\\(\\frac{2}{4}\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(\\frac{1}{12}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(\\frac{2}{3} - \\frac{1}{4} - \\frac{1}{6} = \\frac{8}{12} - \\frac{3}{12} - \\frac{2}{12} = \\frac{8 - 3 - 2}{12} = \\frac{3}{12} = \\frac{1}{4}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(\\frac{2}{3} - \\frac{1}{4} - \\frac{1}{6} = \\frac{8}{12} - \\frac{3}{12} - \\frac{2}{12} = \\frac{8 - 3 - 2}{12} = \\frac{3}{12} = \\frac{1}{4}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{1}{4}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "BmlaEIWIvtoGvaZ4MiQ3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression: \\(\\frac{2}{3} - \\left(-\\frac{1}{4}\\right) - \\frac{1}{6}\\)",
+          "options": [
+            "\\(\\frac{4}{4}\\)",
+            "\\(\\frac{5}{12}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{11}{12}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(\\frac{2}{3} + \\frac{1}{4} - \\frac{1}{6} = \\frac{8}{12} + \\frac{3}{12} - \\frac{2}{12} = \\frac{8 + 3 - 2}{12} = \\frac{9}{12} = \\frac{3}{4}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(\\frac{2}{3} + \\frac{1}{4} - \\frac{1}{6} = \\frac{8}{12} + \\frac{3}{12} - \\frac{2}{12} = \\frac{8 + 3 - 2}{12} = \\frac{9}{12} = \\frac{3}{4}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{3}{4}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "Bz4CHxIswg6EoaIfVwWM",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to this addition: \\(-\\frac{3}{8} + \\frac{7}{8}\\)",
+          "options": [
+            "\\(\\frac{2}{2}\\)",
+            "\\(\\frac{3}{4}\\)",
+            "\\(\\frac{5}{8}\\)",
+            "\\(\\frac{1}{2}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-\\frac{3}{8} + \\frac{7}{8} = \\frac{-3 + 7}{8} = \\frac{4}{8} = \\frac{1}{2}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-\\frac{3}{8} + \\frac{7}{8} = \\frac{-3 + 7}{8} = \\frac{4}{8} = \\frac{1}{2}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "c7zjNOo8brVdv0j9aQ1u",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(-2\\frac{1}{2} + 5\\)",
+          "options": [
+            "\\(3\\frac{1}{2}\\)",
+            "\\(2\\frac{1}{2}\\)",
+            "\\(3\\)",
+            "\\(4\\frac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-2\\frac{1}{2} + 5 = 5 - 2.5 = 2.5 = 2\\frac{1}{2}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We need to add a negative mixed number and a positive integer. Treat it as subtraction: \\(5 - 2\\frac{1}{2}\\).</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-2\\frac{1}{2} + 5 = 5 - 2.5 = 2.5 = 2\\frac{1}{2}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(2\\frac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "dcYGrW4TPhn9G4FkYN8K",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to this addition: \\(-5 + 2\\frac{1}{2}\\)",
+          "options": [
+            "\\(-3\\)",
+            "\\(-2\\frac{1}{2}\\)",
+            "\\(-2\\)",
+            "\\(-3\\frac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-5 + 2\\frac{1}{2} = -5 + 2.5 = -2.5 = -2\\frac{1}{2}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-5 + 2\\frac{1}{2} = -5 + 2.5 = -2.5 = -2\\frac{1}{2}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-2\\frac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "Dly0eBCESdsY5vk7a0vu",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{1}{8} - \\frac{1}{3}\\)",
+          "options": [
+            "\\(-\\frac{13}{24}\\)",
+            "\\(-\\frac{11}{24}\\)",
+            "\\(-\\frac{5}{24}\\)",
+            "\\(-\\frac{7}{24}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{8} - \\frac{1}{3} = -\\frac{3}{24} - \\frac{8}{24} = -\\frac{11}{24}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{8} - \\frac{1}{3} = -\\frac{3}{24} - \\frac{8}{24} = -\\frac{11}{24}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{11}{24}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "E61cwzQYCXS9P1R6SngJ",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{3}{4} - \\left(-\\frac{2}{3}\\right)\\)",
+          "options": [
+            "\\(-\\frac{2}{12}\\)",
+            "\\(-\\frac{17}{12}\\)",
+            "\\(-\\frac{1}{12}\\)",
+            "\\(-\\frac{5}{12}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{4} + \\frac{2}{3} = -\\frac{9}{12} + \\frac{8}{12} = -\\frac{1}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{4} + \\frac{2}{3} = -\\frac{9}{12} + \\frac{8}{12} = -\\frac{1}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{1}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "ecYx10VfMn8ZXKzeShAV",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression: \\(\\frac{1}{3} - \\frac{3}{4} - \\frac{1}{6}\\)",
+          "options": [
+            "\\(-\\frac{7}{12}\\)",
+            "\\(-\\frac{5}{12}\\)",
+            "\\(-\\frac{8}{12}\\)",
+            "\\(-\\frac{11}{12}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(\\frac{1}{3} - \\frac{3}{4} - \\frac{1}{6} = \\frac{4}{12} - \\frac{9}{12} - \\frac{2}{12} = \\frac{4 - 9 - 2}{12} = -\\frac{7}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(\\frac{1}{3} - \\frac{3}{4} - \\frac{1}{6} = \\frac{4}{12} - \\frac{9}{12} - \\frac{2}{12} = \\frac{4 - 9 - 2}{12} = -\\frac{7}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{7}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "emTq4Tfplxw7ABW8wMB2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{7}{8} - \\left(-\\frac{2}{3}\\right)\\)",
+          "options": [
+            "\\(-\\frac{37}{24}\\)",
+            "\\(-\\frac{5}{24}\\)",
+            "\\(-\\frac{6}{24}\\)",
+            "\\(-\\frac{13}{24}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{7}{8} + \\frac{2}{3} = -\\frac{21}{24} + \\frac{16}{24} = -\\frac{5}{24}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{7}{8} + \\frac{2}{3} = -\\frac{21}{24} + \\frac{16}{24} = -\\frac{5}{24}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{5}{24}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "eSfN6gAFcMiNcO4MkrvY",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(-\\frac{3}{4} + \\left(-\\frac{2}{5}\\right)\\)",
+          "options": [
+            "\\(-\\frac{23}{20}\\)",
+            "\\(-\\frac{31}{20}\\)",
+            "\\(-\\frac{7}{20}\\)",
+            "\\(-\\frac{19}{20}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{3}{4} - \\frac{2}{5} = -\\frac{15}{20} - \\frac{8}{20} = -\\frac{23}{20}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{3}{4} - \\frac{2}{5} = -\\frac{15}{20} - \\frac{8}{20} = -\\frac{23}{20}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{23}{20}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "FI1ZNHwBQbjPmY2OVIfH",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(-\\frac{4}{5} - \\frac{4}{5}\\)",
+          "options": [
+            "\\(-1\\frac{3}{5}\\)",
+            "\\(-\\frac{8}{10}\\)",
+            "\\(-1\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{4}{5} - \\frac{4}{5} = -\\frac{8}{5} = -1\\frac{3}{5}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{4}{5} - \\frac{4}{5} = -\\frac{8}{5} = -1\\frac{3}{5}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-1\\frac{3}{5}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "fwrkgr9fHv56el5SnkOa",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to this addition: \\(-\\frac{3}{5} + \\frac{2}{5}\\)",
+          "options": [
+            "\\(-\\frac{5}{5}\\)",
+            "\\(-\\frac{1}{5}\\)",
+            "\\(-\\frac{2}{5}\\)",
+            "\\(0\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-\\frac{3}{5} + \\frac{2}{5} = \\frac{-3 + 2}{5} = -\\frac{1}{5}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-\\frac{3}{5} + \\frac{2}{5} = \\frac{-3 + 2}{5} = -\\frac{1}{5}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{1}{5}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "HegLMLFRkb0PF9PU10Sp",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(-\\frac{3}{4} - \\frac{1}{4}\\)",
+          "options": [
+            "\\(0\\)",
+            "\\(-\\frac{1}{2}\\)",
+            "\\(-1\\)",
+            "\\(-\\frac{3}{4}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{4} - \\frac{1}{4} = -\\frac{4}{4} = -1\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{4} - \\frac{1}{4} = -\\frac{4}{4} = -1\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-1\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "HNYbRDPzHA4uVepcPBh3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{3}{5} - \\frac{1}{4}\\)",
+          "options": [
+            "\\(-\\frac{17}{20}\\)",
+            "\\(-\\frac{13}{20}\\)",
+            "\\(-\\frac{11}{20}\\)",
+            "\\(-\\frac{7}{20}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{5} - \\frac{1}{4} = -\\frac{12}{20} - \\frac{5}{20} = -\\frac{17}{20}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{5} - \\frac{1}{4} = -\\frac{12}{20} - \\frac{5}{20} = -\\frac{17}{20}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{17}{20}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "HSpNVJRCRqwIXfQ0GLQr",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(-1\\frac{1}{4} - \\left(-2\\frac{3}{7}\right)\\)",
+          "options": [
+            "\\(2\\frac{5}{28}\\)",
+            "\\(1\\frac{9}{28}\\)",
+            "\\(1\\frac{5}{28}\\)",
+            "\\(3\\frac{5}{28}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by converting to improper fractions and finding a common denominator:</p><p>\\(-1\\frac{1}{4} + 2\\frac{3}{7} = -\\frac{5}{4} + \\frac{17}{7} = -\\frac{35}{28} + \\frac{68}{28} = \\frac{33}{28} = 1\\frac{5}{28}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We need to add a negative mixed number and a positive mixed number. Convert to improper fractions first, then find a common denominator.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by converting to improper fractions and finding a common denominator:</p><p>\\(-1\\frac{1}{4} + 2\\frac{3}{7} = -\\frac{5}{4} + \\frac{17}{7} = -\\frac{35}{28} + \\frac{68}{28} = \\frac{33}{28} = 1\\frac{5}{28}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(1\\frac{5}{28}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "HSv6Vsk8sv7i9xq8pZN5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(\\frac{1}{8} + \\left(-\\frac{5}{6}\\right)\\)",
+          "options": [
+            "\\(-\\frac{17}{24}\\)",
+            "\\(-\\frac{18}{24}\\)",
+            "\\(-\\frac{13}{24}\\)",
+            "\\(-\\frac{3}{4}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(\\frac{1}{8} - \\frac{5}{6} = \\frac{3}{24} - \\frac{20}{24} = -\\frac{17}{24}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(\\frac{1}{8} - \\frac{5}{6} = \\frac{3}{24} - \\frac{20}{24} = -\\frac{17}{24}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{17}{24}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "I6JzQsiuIwXef3GFHR1u",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{1}{4} - \\left(-\\frac{2}{5}\\right)\\)",
+          "options": [
+            "\\(\\frac{3}{20}\\)",
+            "\\(-\\frac{13}{20}\\)",
+            "\\(\\frac{4}{20}\\)",
+            "\\(\\frac{13}{20}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{4} + \\frac{2}{5} = -\\frac{5}{20} + \\frac{8}{20} = \\frac{3}{20}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{4} + \\frac{2}{5} = -\\frac{5}{20} + \\frac{8}{20} = \\frac{3}{20}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{3}{20}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "IVrTqg2NxZaWUAkQyRBO",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(3\\frac{1}{4} + \\left(-\\frac{1}{3}\\right)\\)",
+          "options": [
+            "\\(2\\frac{5}{12}\\)",
+            "\\(3\\frac{1}{12}\\)",
+            "\\(2\\frac{11}{12}\\)",
+            "\\(3\\frac{5}{12}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(3\\frac{1}{4} - \\frac{1}{3} = \\frac{13}{4} - \\frac{1}{3} = \\frac{39}{12} - \\frac{4}{12} = \\frac{35}{12} = 2\\frac{11}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(3\\frac{1}{4} - \\frac{1}{3} = \\frac{13}{4} - \\frac{1}{3} = \\frac{39}{12} - \\frac{4}{12} = \\frac{35}{12} = 2\\frac{11}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(2\\frac{11}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "IWPlb4ZI5WQ3Pi52Pqbj",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{3}{4} - \\left(-\\frac{1}{6}\\right)\\)",
+          "options": [
+            "\\(-\\frac{5}{12}\\)",
+            "\\(-\\frac{7}{12}\\)",
+            "\\(-\\frac{11}{12}\\)",
+            "\\(-\\frac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{4} + \\frac{1}{6} = -\\frac{9}{12} + \\frac{2}{12} = -\\frac{7}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{4} + \\frac{1}{6} = -\\frac{9}{12} + \\frac{2}{12} = -\\frac{7}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{7}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "j2434fSDlkYYajG7ARxd",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(-3\\frac{1}{3} + 2\\frac{1}{2}\\)",
+          "options": [
+            "\\(-1\\frac{5}{6}\\)",
+            "\\(-\\frac{1}{6}\\)",
+            "\\(-\\frac{6}{6}\\)",
+            "\\(-\\frac{5}{6}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>\\(-3\\frac{1}{3} + 2\\frac{1}{2} = -\\frac{10}{3} + \\frac{5}{2} = -\\frac{20}{6} + \\frac{15}{6} = -\\frac{5}{6}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We need to add a negative mixed number and a positive mixed number. Convert both to improper fractions and find a common denominator.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>\\(-3\\frac{1}{3} + 2\\frac{1}{2} = -\\frac{10}{3} + \\frac{5}{2} = -\\frac{20}{6} + \\frac{15}{6} = -\\frac{5}{6}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{5}{6}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "jKWgDPPnCbnUriSEPkPb",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(-1\\frac{1}{4} - 3\\frac{2}{5}\\)",
+          "options": [
+            "\\(-2\\frac{3}{20}\\)",
+            "\\(-2\\frac{13}{20}\\)",
+            "\\(-4\\frac{3}{20}\\)",
+            "\\(-4\\frac{13}{20}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>\\(-1\\frac{1}{4} - 3\\frac{2}{5} = -\\frac{5}{4} - \\frac{17}{5} = -\\frac{25}{20} - \\frac{68}{20} = -\\frac{93}{20} = -4\\frac{13}{20}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We need to subtract two mixed numbers (both operations give a negative result). Convert to improper fractions and find a common denominator.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>\\(-1\\frac{1}{4} - 3\\frac{2}{5} = -\\frac{5}{4} - \\frac{17}{5} = -\\frac{25}{20} - \\frac{68}{20} = -\\frac{93}{20} = -4\\frac{13}{20}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-4\\frac{13}{20}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "jlMJk7C1TK28PmQDJYEm",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{4}{5} - \\frac{1}{3}\\)",
+          "options": [
+            "\\(-\\frac{13}{15}\\)",
+            "\\(-\\frac{11}{15}\\)",
+            "\\(-\\frac{7}{15}\\)",
+            "\\(-\\frac{17}{15}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{4}{5} - \\frac{1}{3} = -\\frac{12}{15} - \\frac{5}{15} = -\\frac{17}{15} = -1\\frac{2}{15}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{4}{5} - \\frac{1}{3} = -\\frac{12}{15} - \\frac{5}{15} = -\\frac{17}{15} = -1\\frac{2}{15}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{17}{15}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "jXOWcriE6hlLtD1OzNUx",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(-\\frac{7}{8} + \\frac{1}{3}\\)",
+          "options": [
+            "\\(-\\frac{15}{24}\\)",
+            "\\(-\\frac{11}{24}\\)",
+            "\\(-\\frac{17}{24}\\)",
+            "\\(-\\frac{13}{24}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{7}{8} + \\frac{1}{3} = -\\frac{21}{24} + \\frac{8}{24} = -\\frac{13}{24}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{7}{8} + \\frac{1}{3} = -\\frac{21}{24} + \\frac{8}{24} = -\\frac{13}{24}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{13}{24}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "kCYwNVzSnBryAVM2WiQO",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{1}{6} - \\left(-\\frac{1}{2}\\right)\\)",
+          "options": [
+            "\\(-\\frac{2}{3}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{3}{3}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{6} + \\frac{1}{2} = -\\frac{1}{6} + \\frac{3}{6} = \\frac{2}{6} = \\frac{1}{3}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{6} + \\frac{1}{2} = -\\frac{1}{6} + \\frac{3}{6} = \\frac{2}{6} = \\frac{1}{3}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{1}{3}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "kjJLLcwhUDKK0hImfmUs",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to this addition: \\(-2 + \\frac{2}{3}\\)",
+          "options": [
+            "\\(-\\frac{2}{3}\\)",
+            "\\(-\\frac{1}{3}\\)",
+            "\\(-\\frac{4}{3}\\)",
+            "\\(-\\frac{8}{3}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-2 + \\frac{2}{3} = -\\frac{6}{3} + \\frac{2}{3} = -\\frac{4}{3} = -1\\frac{1}{3}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-2 + \\frac{2}{3} = -\\frac{6}{3} + \\frac{2}{3} = -\\frac{4}{3} = -1\\frac{1}{3}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{4}{3}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "L2lzKvAHrVdkrcl6Pm2u",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Arrange the following set of numbers in increasing order: \\(-\\frac{5}{4}, -\\frac{12}{5}, \\frac{1}{3}, \\frac{5}{2}\\)",
+          "options": [
+            "\\(-\\frac{12}{5}, -\\frac{5}{4}, \\frac{1}{3}, \\frac{5}{2}\\)",
+            "\\(-\\frac{5}{12}, -\\frac{4}{5}, \\frac{3}{1}, \\frac{2}{5}\\)",
+            "\\(-\\frac{13}{5}, -\\frac{5}{4}, \\frac{1}{3}, \\frac{5}{2}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Let's convert each number to a decimal:</p><ul><li>\\(-\\frac{12}{5} = -2.4\\)</li><li>\\(-\\frac{5}{4} = -1.25\\)</li><li>\\(\\frac{1}{3} \\approx 0.333\\)</li><li>\\(\\frac{5}{2} = 2.5\\)</li></ul><p>Comparing the values:</p><p>\\(-2.4 < -1.25 < 0.333 < 2.5\\)</p><p>Hence, the increasing order is:</p><p>\\(-\\frac{12}{5}, -\\frac{5}{4}, \\frac{1}{3}, \\frac{5}{2}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Let's convert each number to a decimal:</p><ul><li>\\(-\\frac{12}{5} = -2.4\\)</li><li>\\(-\\frac{5}{4} = -1.25\\)</li><li>\\(\\frac{1}{3} \\approx 0.333\\)</li><li>\\(\\frac{5}{2} = 2.5\\)</li></ul><p>Comparing the values:</p><p>\\(-2.4 < -1.25 < 0.333 < 2.5\\)</p><p>Hence, the increasing order is:</p><p>\\(-\\frac{12}{5}, -\\frac{5}{4}, \\frac{1}{3}, \\frac{5}{2}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{12}{5}, -\\frac{5}{4}, \\frac{1}{3}, \\frac{5}{2}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "LE5Pq597ViJbi1ZCQi32",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression: \\(-\\frac{2}{3} - \\frac{1}{4} - \\left(-\\frac{1}{6}\\right)\\)",
+          "options": [
+            "\\(-\\frac{7}{12}\\)",
+            "\\(-\\frac{11}{12}\\)",
+            "\\(-\\frac{3}{4}\\)",
+            "\\(-\\frac{5}{12}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{2}{3} - \\frac{1}{4} + \\frac{1}{6} = -\\frac{8}{12} - \\frac{3}{12} + \\frac{2}{12} = \\frac{-8 - 3 + 2}{12} = -\\frac{9}{12} = -\\frac{3}{4}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{2}{3} - \\frac{1}{4} + \\frac{1}{6} = -\\frac{8}{12} - \\frac{3}{12} + \\frac{2}{12} = \\frac{-8 - 3 + 2}{12} = -\\frac{9}{12} = -\\frac{3}{4}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{3}{4}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "lGFeYxCB6tyfGm0dnw0d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(-2\\frac{3}{4} - \\left(-4\\frac{2}{5}\\right)\\)",
+          "options": [
+            "\\(2\\frac{13}{20}\\)",
+            "\\(1\\frac{13}{20}\\)",
+            "\\(1\\frac{7}{20}\\)",
+            "\\(3\\frac{13}{20}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>\\(-2\\frac{3}{4} + 4\\frac{2}{5} = -\\frac{11}{4} + \\frac{22}{5} = -\\frac{55}{20} + \\frac{88}{20} = \\frac{33}{20} = 1\\frac{13}{20}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We need to add a negative mixed number and a positive mixed number. Convert to improper fractions and find a common denominator.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>\\(-2\\frac{3}{4} + 4\\frac{2}{5} = -\\frac{11}{4} + \\frac{22}{5} = -\\frac{55}{20} + \\frac{88}{20} = \\frac{33}{20} = 1\\frac{13}{20}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(1\\frac{13}{20}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "LMgiYvyJC8gXtYL5NMS0",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Arrange the following set of numbers in increasing order: \\(-3, \\frac{1}{3}, -1, -\\frac{8}{5}, \\frac{1}{2}, 2\\)",
+          "options": [
+            "\\(-3, -\\frac{8}{5}, -1, \\frac{1}{2}, \\frac{1}{3}, 2\\)",
+            "\\(-3, -\\frac{8}{5}, -1, \\frac{1}{3}, \\frac{1}{2}, 2\\)",
+            "\\(-1, -3, -\\frac{8}{5}, \\frac{1}{2}, \\frac{1}{3}, 2\\)",
+            "\\(-3, -1, -\\frac{8}{5}, \\frac{1}{3}, \\frac{1}{2}, 2\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Converting to decimals:</p><ul><li>\\(-3 = -3.0\\)</li><li>\\(-\\frac{8}{5} = -1.6\\)</li><li>\\(-1 = -1.0\\)</li><li>\\(\\frac{1}{3} \\approx 0.333\\)</li><li>\\(\\frac{1}{2} = 0.5\\)</li><li>\\(2 = 2.0\\)</li></ul><p>Hence, in increasing order: \\(-3, -\\frac{8}{5}, -1, \\frac{1}{3}, \\frac{1}{2}, 2\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We need to arrange the numbers in increasing order. Convert each to a decimal to make comparison easier.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Converting to decimals:</p><ul><li>\\(-3 = -3.0\\)</li><li>\\(-\\frac{8}{5} = -1.6\\)</li><li>\\(-1 = -1.0\\)</li><li>\\(\\frac{1}{3} \\approx 0.333\\)</li><li>\\(\\frac{1}{2} = 0.5\\)</li><li>\\(2 = 2.0\\)</li></ul><p>Comparing: \\(-3.0 < -1.6 < -1.0 < 0.333 < 0.5 < 2.0\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-3, -\\frac{8}{5}, -1, \\frac{1}{3}, \\frac{1}{2}, 2\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "nr61rVufvMITKSPmLtWM",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(3\\frac{1}{4} - \\left(-1\\frac{2}{5}\\right)\\)",
+          "options": [
+            "\\(1\\frac{17}{20}\\)",
+            "\\(4\\frac{13}{20}\\)",
+            "\\(4\\frac{3}{20}\\)",
+            "\\(2\\frac{3}{20}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>\\(3\\frac{1}{4} + 1\\frac{2}{5} = \\frac{13}{4} + \\frac{7}{5} = \\frac{65}{20} + \\frac{28}{20} = \\frac{93}{20} = 4\\frac{13}{20}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We need to add two positive mixed numbers. Convert to improper fractions and find a common denominator.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>\\(3\\frac{1}{4} + 1\\frac{2}{5} = \\frac{13}{4} + \\frac{7}{5} = \\frac{65}{20} + \\frac{28}{20} = \\frac{93}{20} = 4\\frac{13}{20}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(4\\frac{13}{20}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "OMxLOq9yGCxS7CPVTBIE",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(-\\frac{3}{5} + \\left(-\\frac{2}{7}\\right)\\)",
+          "options": [
+            "\\(-\\frac{29}{35}\\)",
+            "\\(-\\frac{31}{35}\\)",
+            "\\(-\\frac{33}{35}\\)",
+            "\\(-\\frac{19}{35}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{3}{5} - \\frac{2}{7} = -\\frac{21}{35} - \\frac{10}{35} = -\\frac{31}{35}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{3}{5} - \\frac{2}{7} = -\\frac{21}{35} - \\frac{10}{35} = -\\frac{31}{35}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{31}{35}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "pEsquGnPs60JUVDH5Uc8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(4\\frac{3}{8} - 2\\frac{1}{3}\\)",
+          "options": [
+            "\\(2\\frac{5}{24}\\)",
+            "\\(2\\frac{7}{24}\\)",
+            "\\(2\\frac{1}{24}\\)",
+            "\\(1\\frac{23}{24}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(4\\frac{3}{8} - 2\\frac{1}{3} = \\frac{35}{8} - \\frac{7}{3} = \\frac{105}{24} - \\frac{56}{24} = \\frac{49}{24} = 2\\frac{1}{24}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(4\\frac{3}{8} - 2\\frac{1}{3} = \\frac{35}{8} - \\frac{7}{3} = \\frac{105}{24} - \\frac{56}{24} = \\frac{49}{24} = 2\\frac{1}{24}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(2\\frac{1}{24}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "QToLDA4wplh0HQBvUWpn",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(-\\frac{1}{8} + \\frac{1}{3}\\)",
+          "options": [
+            "\\(\\frac{11}{24}\\)",
+            "\\(\\frac{5}{24}\\)",
+            "\\(-\\frac{11}{24}\\)",
+            "\\(\\frac{6}{24}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{1}{8} + \\frac{1}{3} = -\\frac{3}{24} + \\frac{8}{24} = \\frac{5}{24}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{1}{8} + \\frac{1}{3} = -\\frac{3}{24} + \\frac{8}{24} = \\frac{5}{24}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{5}{24}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "qxz9DYgkGnwcHZ5rrUnH",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(-\\frac{1}{3} + \\frac{4}{5}\\)",
+          "options": [
+            "\\(\\frac{8}{15}\\)",
+            "\\(\\frac{3}{15}\\)",
+            "\\(\\frac{7}{15}\\)",
+            "\\(-\\frac{3}{15}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{1}{3} + \\frac{4}{5} = -\\frac{5}{15} + \\frac{12}{15} = \\frac{7}{15}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{1}{3} + \\frac{4}{5} = -\\frac{5}{15} + \\frac{12}{15} = \\frac{7}{15}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{7}{15}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "R3v58GBOBGP63A9NYMuO",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(-\\frac{3}{4} + \\frac{1}{4}\\)",
+          "options": [
+            "\\(-\\frac{1}{2}\\)",
+            "\\(-\\frac{2}{2}\\)",
+            "\\(-\\frac{3}{4}\\)",
+            "\\(-1\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{4} + \\frac{1}{4} = -\\frac{2}{4} = -\\frac{1}{2}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{4} + \\frac{1}{4} = -\\frac{2}{4} = -\\frac{1}{2}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "rB3J2AuW5UC3nNVsOfTd",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(\\frac{1}{6} + \\left(-\\frac{1}{2}\\right)\\)",
+          "options": [
+            "\\(-\\frac{2}{3}\\)",
+            "\\(-\\frac{1}{6}\\)",
+            "\\(-\\frac{3}{3}\\)",
+            "\\(-\\frac{1}{3}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(\\frac{1}{6} - \\frac{1}{2} = \\frac{1}{6} - \\frac{3}{6} = -\\frac{2}{6} = -\\frac{1}{3}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(\\frac{1}{6} - \\frac{1}{2} = \\frac{1}{6} - \\frac{3}{6} = -\\frac{2}{6} = -\\frac{1}{3}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{1}{3}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "RnMXhU30llFQeYvIBEi0",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(-2\\frac{1}{2} + \\left(-\\frac{5}{8}\\right)\\)",
+          "options": [
+            "\\(-2\\frac{3}{8}\\)",
+            "\\(-3\\frac{5}{8}\\)",
+            "\\(-3\\frac{1}{8}\\)",
+            "\\(-2\\frac{5}{8}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-2\\frac{1}{2} - \\frac{5}{8} = -\\frac{5}{2} - \\frac{5}{8} = -\\frac{20}{8} - \\frac{5}{8} = -\\frac{25}{8} = -3\\frac{1}{8}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-2\\frac{1}{2} - \\frac{5}{8} = -\\frac{5}{2} - \\frac{5}{8} = -\\frac{20}{8} - \\frac{5}{8} = -\\frac{25}{8} = -3\\frac{1}{8}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-3\\frac{1}{8}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "RVbZSTgiqwjsNuP3EgOF",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{2}{3} - \\frac{1}{4}\\)",
+          "options": [
+            "\\(-\\frac{11}{12}\\)",
+            "\\(-\\frac{9}{12}\\)",
+            "\\(-\\frac{7}{12}\\)",
+            "\\(-\\frac{5}{12}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{2}{3} - \\frac{1}{4} = -\\frac{8}{12} - \\frac{3}{12} = -\\frac{11}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{2}{3} - \\frac{1}{4} = -\\frac{8}{12} - \\frac{3}{12} = -\\frac{11}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{11}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "sbeB0NeLphIP8adMfpDP",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(-2\\frac{1}{4} + \\left(-1\\frac{2}{3}\\right)\\)",
+          "options": [
+            "\\(-3\\frac{11}{12}\\)",
+            "\\(-3\\frac{5}{12}\\)",
+            "\\(-4\\frac{11}{12}\\)",
+            "\\(-3\\frac{7}{12}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>\\(-2\\frac{1}{4} - 1\\frac{2}{3} = -\\frac{9}{4} - \\frac{5}{3} = -\\frac{27}{12} - \\frac{20}{12} = -\\frac{47}{12} = -3\\frac{11}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We need to subtract two negative mixed numbers. Convert to improper fractions and find a common denominator.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>\\(-2\\frac{1}{4} - 1\\frac{2}{3} = -\\frac{9}{4} - \\frac{5}{3} = -\\frac{27}{12} - \\frac{20}{12} = -\\frac{47}{12} = -3\\frac{11}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-3\\frac{11}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "TMpiLHkBBm9BiyrP0CHp",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(-\\frac{5}{6} + \\frac{1}{6}\\)",
+          "options": [
+            "\\(-\\frac{3}{3}\\)",
+            "\\(-\\frac{4}{6}\\)",
+            "\\(-\\frac{2}{3}\\)",
+            "\\(-1\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{5}{6} + \\frac{1}{6} = -\\frac{4}{6} = -\\frac{2}{3}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{5}{6} + \\frac{1}{6} = -\\frac{4}{6} = -\\frac{2}{3}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{2}{3}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "tPMaNTR7C3Wvd7qwWQAO",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the addition of these fractions: \\(-\\frac{3}{5} + \\frac{1}{4}\\)",
+          "options": [
+            "\\(-\\frac{11}{20}\\)",
+            "\\(-\\frac{7}{20}\\)",
+            "\\(-\\frac{3}{20}\\)",
+            "\\(-\\frac{8}{20}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{3}{5} + \\frac{1}{4} = -\\frac{12}{20} + \\frac{5}{20} = -\\frac{7}{20}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{3}{5} + \\frac{1}{4} = -\\frac{12}{20} + \\frac{5}{20} = -\\frac{7}{20}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{7}{20}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "uKBBgv103VMswAYzdsOs",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to this addition: \\(-3\\frac{1}{2} + 6\\)",
+          "options": [
+            "\\(3\\)",
+            "\\(3\\frac{1}{2}\\)",
+            "\\(2\\frac{1}{2}\\)",
+            "\\(4\\frac{1}{2}\\)"
+          ],
+          "answer": 2,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-3\\frac{1}{2} + 6 = 6 - 3.5 = 2.5 = 2\\frac{1}{2}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-3\\frac{1}{2} + 6 = 6 - 3.5 = 2.5 = 2\\frac{1}{2}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(2\\frac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "VPifN6vkVkxhZSOOxfFf",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{1}{3} - \\frac{3}{4}\\)",
+          "options": [
+            "\\(-\\frac{13}{12}\\)",
+            "\\(-\\frac{11}{12}\\)",
+            "\\(-\\frac{7}{12}\\)",
+            "\\(-\\frac{5}{12}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{3} - \\frac{3}{4} = -\\frac{4}{12} - \\frac{9}{12} = -\\frac{13}{12} = -1\\frac{1}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{3} - \\frac{3}{4} = -\\frac{4}{12} - \\frac{9}{12} = -\\frac{13}{12} = -1\\frac{1}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{13}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "WRLBARk7ruucLqXRm9qQ",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(-2\\frac{2}{3} + 3\\frac{1}{4}\\)",
+          "options": [
+            "\\(-\\frac{5}{12}\\)",
+            "\\(\\frac{7}{12}\\)",
+            "\\(\\frac{8}{12}\\)",
+            "\\(1\\frac{7}{12}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by converting to improper fractions and finding a common denominator:</p><p>\\(-2\\frac{2}{3} + 3\\frac{1}{4} = -\\frac{8}{3} + \\frac{13}{4} = -\\frac{32}{12} + \\frac{39}{12} = \\frac{7}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>\\(-2\\frac{2}{3} + 3\\frac{1}{4} = -\\frac{8}{3} + \\frac{13}{4} = -\\frac{32}{12} + \\frac{39}{12} = \\frac{7}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{7}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "WSTIXNj6rJ9xOpyKioRb",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression: \\(-\\frac{2}{3} + \\frac{1}{4} - \\frac{1}{6}\\)",
+          "options": [
+            "\\(-\\frac{8}{12}\\)",
+            "\\(-\\frac{9}{12}\\)",
+            "\\(-\\frac{5}{12}\\)",
+            "\\(-\\frac{7}{12}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{2}{3} + \\frac{1}{4} - \\frac{1}{6} = -\\frac{8}{12} + \\frac{3}{12} - \\frac{2}{12} = \\frac{-8 + 3 - 2}{12} = -\\frac{7}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step by finding a common denominator:</p><p>\\(-\\frac{2}{3} + \\frac{1}{4} - \\frac{1}{6} = -\\frac{8}{12} + \\frac{3}{12} - \\frac{2}{12} = \\frac{-8 + 3 - 2}{12} = -\\frac{7}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{7}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "WTIMFgbIAZr6tUs93luQ",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(-\\frac{3}{4} + \\frac{5}{6}\\)",
+          "options": [
+            "\\(\\frac{2}{12}\\)",
+            "\\(\\frac{2}{3}\\)",
+            "\\(-\\frac{2}{3}\\)",
+            "\\(\\frac{1}{12}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{4} + \\frac{5}{6} = -\\frac{9}{12} + \\frac{10}{12} = \\frac{1}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{3}{4} + \\frac{5}{6} = -\\frac{9}{12} + \\frac{10}{12} = \\frac{1}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(\\frac{1}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "wvpsG2GisLMX65Umy4oS",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the answer to this addition: \\(-\\frac{4}{5} + \\frac{1}{5}\\)",
+          "options": [
+            "\\(-\\frac{3}{5}\\)",
+            "\\(-\\frac{5}{5}\\)",
+            "\\(-\\frac{2}{5}\\)",
+            "\\(-\\frac{4}{5}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-\\frac{4}{5} + \\frac{1}{5} = \\frac{-4 + 1}{5} = -\\frac{3}{5}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the addition step-by-step:</p><p>\\(-\\frac{4}{5} + \\frac{1}{5} = \\frac{-4 + 1}{5} = -\\frac{3}{5}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{3}{5}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "wWUGuHdrtaSaoF1jQjlK",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate the subtraction: \\(-\\frac{1}{6} - \\frac{1}{3}\\)",
+          "options": [
+            "\\(-\\frac{1}{2}\\)",
+            "\\(\\frac{1}{6}\\)",
+            "\\(-\\frac{1}{6}\\)",
+            "\\(-\\frac{5}{6}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{6} - \\frac{1}{3} = -\\frac{1}{6} - \\frac{2}{6} = -\\frac{3}{6} = -\\frac{1}{2}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{6} - \\frac{1}{3} = -\\frac{1}{6} - \\frac{2}{6} = -\\frac{3}{6} = -\\frac{1}{2}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "x2Bbxoctg7oEZh9IazCh",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(-\\frac{1}{6} - \\frac{3}{6}\\)",
+          "options": [
+            "\\(-1\\)",
+            "\\(-\\frac{2}{3}\\)",
+            "\\(-\\frac{4}{6}\\)",
+            "\\(-\\frac{1}{3}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{6} - \\frac{3}{6} = -\\frac{4}{6} = -\\frac{2}{3}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{6} - \\frac{3}{6} = -\\frac{4}{6} = -\\frac{2}{3}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-\\frac{2}{3}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "xuFKu9fW2J0c70falQ3A",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(-1\\frac{1}{6} - 3\\frac{1}{4}\\)",
+          "options": [
+            "\\(-4\\frac{1}{12}\\)",
+            "\\(-3\\frac{5}{12}\\)",
+            "\\(-4\\frac{7}{12}\\)",
+            "\\(-4\\frac{5}{12}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by converting to improper fractions and finding a common denominator:</p><p>\\(-1\\frac{1}{6} - 3\\frac{1}{4} = -\\frac{7}{6} - \\frac{13}{4} = -\\frac{14}{12} - \\frac{39}{12} = -\\frac{53}{12} = -4\\frac{5}{12}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>\\(-1\\frac{1}{6} - 3\\frac{1}{4} = -\\frac{7}{6} - \\frac{13}{4} = -\\frac{14}{12} - \\frac{39}{12} = -\\frac{53}{12} = -4\\frac{5}{12}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-4\\frac{5}{12}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "Y81Kc89pytc9iB7J5LzO",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(-\\frac{1}{3} + 4\\)",
+          "options": [
+            "\\(4\\frac{2}{3}\\)",
+            "\\(3\\frac{1}{3}\\)",
+            "\\(4\\frac{1}{3}\\)",
+            "\\(3\\frac{2}{3}\\)"
+          ],
+          "answer": 3,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{3} + 4 = 4 - \\frac{1}{3} = 3\\frac{2}{3}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving step-by-step:</p><p>\\(-\\frac{1}{3} + 4 = 4 - \\frac{1}{3} = 3\\frac{2}{3}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(3\\frac{2}{3}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "yGWGwNKlpEVvffnvqbPC",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(-3\\frac{3}{5} + \\left(-2\\frac{1}{3}\\right)\\)",
+          "options": [
+            "\\(-6\\frac{4}{15}\\)",
+            "\\(-5\\frac{14}{15}\\)",
+            "\\(-5\\frac{11}{15}\\)",
+            "\\(-5\\frac{4}{15}\\)"
+          ],
+          "answer": 1,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by converting to improper fractions and finding a common denominator:</p><p>\\(-3\\frac{3}{5} - 2\\frac{1}{3} = -\\frac{18}{5} - \\frac{7}{3} = -\\frac{54}{15} - \\frac{35}{15} = -\\frac{89}{15} = -5\\frac{14}{15}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We need to subtract two negative mixed numbers. Convert to improper fractions and find a common denominator.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>\\(-3\\frac{3}{5} - 2\\frac{1}{3} = -\\frac{18}{5} - \\frac{7}{3} = -\\frac{54}{15} - \\frac{35}{15} = -\\frac{89}{15} = -5\\frac{14}{15}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(-5\\frac{14}{15}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "z9dqmYOzb2NUkn36lnpr",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write the answer to this addition/subtraction: \\(-\\frac{2}{3} - \\left(-2\\frac{3}{10}\\right)\\)",
+          "options": [
+            "\\(1\\frac{19}{30}\\)",
+            "\\(1\\frac{7}{30}\\)",
+            "\\(2\\frac{19}{30}\\)",
+            "\\(2\\frac{29}{30}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving step-by-step by converting to improper fractions and finding a common denominator:</p><p>\\(-\\frac{2}{3} + 2\\frac{3}{10} = -\\frac{2}{3} + \\frac{23}{10} = -\\frac{20}{30} + \\frac{69}{30} = \\frac{49}{30} = 1\\frac{19}{30}\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We need to add a negative fraction and a positive mixed number. Convert to improper fractions and find a common denominator.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>\\(-\\frac{2}{3} + 2\\frac{3}{10} = -\\frac{2}{3} + \\frac{23}{10} = -\\frac{20}{30} + \\frac{69}{30} = \\frac{49}{30} = 1\\frac{19}{30}\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(1\\frac{19}{30}\\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    }
+  ]
+}

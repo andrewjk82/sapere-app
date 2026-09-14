@@ -1,0 +1,10 @@
+<svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<path d="M 130 230 L 350 230 L 130 70 Z" fill="#dbeafe" fill-opacity="0.6" stroke="none"/>
+<line x1="130" y1="230" x2="350" y2="230" stroke="#16a34a" stroke-width="3"/>
+<line x1="130" y1="230" x2="130" y2="70" stroke="#475569" stroke-width="2"/>
+<line x1="130" y1="70" x2="350" y2="230" stroke="#475569" stroke-width="2"/>
+<path d="M 130 212 L 148 212 L 148 230" fill="none" stroke="#475569" stroke-width="1.5"/>
+<text x="240" y="258" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#16a34a">x = 25 cm</text>
+<text x="257" y="126" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#1e293b">50 cm</text>
+<text x="303" y="207" text-anchor="end" font-family="system-ui" font-size="13" font-weight="700" fill="#1e293b">60°</text>
+</svg>

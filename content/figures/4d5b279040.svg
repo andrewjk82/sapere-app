@@ -1,0 +1,28 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>
+  <rect width='300' height='300' fill='#ffffff' />
+  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />
+  <line x1='150' y1='150' x2='41.67114716865713' y2='130.89870045663767' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='150' y1='150' x2='187.62221576582357' y2='46.63381171355009' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='150' y1='150' x2='245.26279441628822' y2='205.00000000000006' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='41.67114716865713' y1='130.89870045663767' x2='187.62221576582357' y2='46.63381171355009' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='187.62221576582357' y1='46.63381171355009' x2='245.26279441628822' y2='205.00000000000006' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='41.67114716865713' y1='130.89870045663767' x2='245.26279441628822' y2='205.00000000000006' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='112.14668146724034' y1='84.43612906617169' x2='117.14668146724034' y2='93.09638310401608' stroke='#ef4444' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='221.14096819498545' y1='124.10680514014672' x2='211.74404198712634' y2='127.52700657340341' stroke='#ef4444' stroke-width='1.5' stroke-linecap='round' />
+  <path d='M 169.05255888325763 161 A 22 22 0 1 0 128.33422943373142 146.17974009132752' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='160.9446445864214' y='123.92983613485093' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>200°</text>
+  <path d='M 63.336917734925706 134.71896036531012 A 22 22 0 0 0 60.723706051914775 119.89870045663767' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='73.18499526504779' y='129.3419587712959' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>α</text>
+  <path d='M 180.09777261265884 67.30704937084008 A 22 22 0 0 0 195.14665891898827 67.30704937084008' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='187.62221576582357' y='82.63381171355009' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>β</text>
+  <path d='M 216.68395609140174 188.50000000000006 A 33 33 0 0 0 214.25293793035326 193.71333527025297' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='206.29155957371228' y='190.82741474514995' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>γ</text>
+  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />
+  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>
+  <circle cx='41.67114716865713' cy='130.89870045663767' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='27.67114716865713' y='128.89870045663767' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>A</text>
+  <circle cx='187.62221576582357' cy='46.63381171355009' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='197.62221576582357' y='36.63381171355009' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>B</text>
+  <circle cx='245.26279441628822' cy='205.00000000000006' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='255.26279441628822' y='213.00000000000006' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>C</text>
+</svg>

@@ -1,0 +1,57 @@
+{
+  "types": {
+    "multiple_choice→mc": 24116,
+    "teacher_review→review": 1720,
+    "short_answer→short": 912,
+    "mcq→mc": 28,
+    "fill_blank→short": 3,
+    "graph_sketch→short": 2,
+    "undefined→mc": 100
+  },
+  "merged": {
+    "fsOnly": 3366,
+    "seedOnly": 1014,
+    "both": 20930,
+    "teacherWins": 451
+  },
+  "fields": {
+    "question": {
+      "fs": 16250,
+      "fs(differ)": 2966,
+      "seed(fs empty)": 1263
+    },
+    "solution": {
+      "fs": 13539,
+      "fs(differ)": 1024,
+      "seed(fs empty)": 765
+    },
+    "hint": {
+      "fs": 13919,
+      "fs(differ)": 236,
+      "seed(fs empty)": 1148
+    },
+    "steps": {
+      "seed(fs generic)": 8809,
+      "fs": 11646,
+      "seed(fs empty)": 24
+    },
+    "options": {
+      "seed(fs empty)": 594
+    },
+    "graph": {
+      "seed(fs empty)": 258
+    }
+  },
+  "review": 1399,
+  "figures": 996,
+  "figureDedup": 365,
+  "orphanTopic": 1653,
+  "crossListed": 2136,
+  "dropped": {
+    "partLabel": 18,
+    "ans": 1,
+    "gridConfig": 27
+  },
+  "chapterFiles": 228,
+  "questions": 25310
+}

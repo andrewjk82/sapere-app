@@ -1,0 +1,98 @@
+{
+  "chapterId": "exam:year11ch3g",
+  "title": "Exam year11ch3g",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ch3g",
+      "code": "EXAM",
+      "title": "Powers, cubics, and circles",
+      "questions": [
+        {
+          "id": "y11a-3g-q2a",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Sketch the graph of the circle \\( x^2 + y^2 = 4 \\). Mark all intercepts with the axes, and state its domain and range.",
+          "figure": {
+            "jsxGraph": {
+              "width": 350,
+              "height": 250,
+              "boundingbox": [
+                -3.5,
+                3.5,
+                3.5,
+                -3.5
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0], [3,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3], [0,3]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [2.8, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.8, 'y'], {fontSize: 14});\nboard.create('circle', [[0,0], 2], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [2,0], {name: '2', visible: true, size: 2, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [-2,0], {name: '-2', visible: true, size: 2, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0,2], {name: '2', visible: true, size: 2, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0,-2], {name: '-2', visible: true, size: 2, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            }
+          },
+          "answer": "Circle centered at (0,0) with radius 2.\nDomain: [-2, 2], Range: [-2, 2].",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "Circle centered at (0,0) with radius 2.\nDomain: [-2, 2], Range: [-2, 2].",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Powers, cubics, and circles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "Identify given data"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "Circle centered at (0,0) with radius 2.\nDomain: [-2, 2], Range: [-2, 2]."
+            },
+            {
+              "explain": "Final answer: Circle centered at (0,0) with radius 2.\nDomain: [-2, 2], Range: [-2, 2].. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "Circle centered at (0,0) with radius 2.\nDomain: [-2, 2], Range: [-2, 2]."
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y11a-3g-q2c",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Sketch the graph of the circle \\( x^2 + y^2 = \\frac{1}{9} \\). Mark intercepts, and state domain and range.",
+          "figure": {
+            "jsxGraph": {
+              "width": 350,
+              "height": 250,
+              "boundingbox": [
+                -0.6,
+                0.6,
+                0.6,
+                -0.6
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.5,0], [0.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-0.5], [0,0.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [0.48, -0.05, 'x'], {fontSize: 14});\nboard.create('text', [-0.05, 0.48, 'y'], {fontSize: 14});\nboard.create('circle', [[0,0], 0.333], {strokeColor: '#4f46e5', strokeWidth: 2, fillColor: 'none'});\nboard.create('point', [0.333,0], {name: '1/3', visible: true, size: 2, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [-0.333,0], {name: '-1/3', visible: true, size: 2, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0,0.333], {name: '1/3', visible: true, size: 2, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0,-0.333], {name: '-1/3', visible: true, size: 2, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            }
+          },
+          "answer": "Circle centered at (0,0) with radius 1/3.\nDomain: [-1/3, 1/3], Range: [-1/3, 1/3].",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "Circle centered at (0,0) with radius 1/3.\nDomain: [-1/3, 1/3], Range: [-1/3, 1/3].",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Powers, cubics, and circles: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "Identify given data"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "Circle centered at (0,0) with radius 1/3.\nDomain: [-1/3, 1/3], Range: [-1/3, 1/3]."
+            },
+            {
+              "explain": "Final answer: Circle centered at (0,0) with radius 1/3.\nDomain: [-1/3, 1/3], Range: [-1/3, 1/3].. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "Circle centered at (0,0) with radius 1/3.\nDomain: [-1/3, 1/3], Range: [-1/3, 1/3]."
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        }
+      ]
+    }
+  ]
+}

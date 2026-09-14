@@ -1,0 +1,25 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>
+  <rect width='300' height='300' fill='#ffffff' />
+  <polygon points='112.37778423417645,46.63381171355006 112.37778423417637,253.3661882864499 187.6222157658235,253.36618828644993' fill='#f8fafc' stroke='#cbd5e1' stroke-width='1.5' stroke-linejoin='round' />
+  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />
+  <line x1='112.37778423417645' y1='46.63381171355006' x2='187.6222157658235' y2='253.36618828644993' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='150' y1='150' x2='112.37778423417637' y2='253.3661882864499' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <path d='M 181.44578906416453 236.39659539072528 A 18.058663567595314 18.058663567595314 0 0 0 169.5635521982282 253.3661882864499' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='166.81985317102578' y='241.80021718500086' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>70°</text>
+  <path d='M 145.10911195044292 163.4376044772385 A 14.3 14.3 0 0 0 154.89088804955705 163.4376044772385' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='149.99999999999997' y='179.25' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>α</text>
+  <path d='M 112.37778423417637 239.0661882864499 A 14.3 14.3 0 0 1 117.26867228373345 239.9285838092114' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='116.89263685351658' y='231.01118670813247' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>β</text>
+  <path d='M 118.55421093583537 236.39659539072525 A 18.058663567595314 18.058663567595314 0 0 1 130.4364478017717 253.36618828644993' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='133.18014682897413' y='241.80021718500083' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>γ</text>
+  <path d='M 145.10911195044292 136.5623955227615 A 14.3 14.3 0 0 0 145.10911195044292 163.4376044772385' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='124' y='153.24999999999997' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>θ</text>
+  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />
+  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>
+  <circle cx='112.37778423417645' cy='46.63381171355006' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='108.37778423417645' y='34.63381171355006' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>R</text>
+  <circle cx='187.6222157658235' cy='253.36618828644993' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='191.6222157658235' y='263.3661882864499' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>S</text>
+  <circle cx='112.37778423417637' cy='253.3661882864499' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='108.37778423417637' y='265.36618828644987' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>T</text>
+</svg>

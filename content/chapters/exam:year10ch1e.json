@@ -1,0 +1,554 @@
+{
+  "chapterId": "exam:year10ch1e",
+  "title": "Exam Practice",
+  "year": "Year 10",
+  "topics": [
+    {
+      "topicId": "exam:year10ch1e",
+      "code": "",
+      "title": "Compound depreciation",
+      "questions": [
+        {
+          "id": "y10-1e-q17a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 40000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 12\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+          "options": [
+            "\\(30529.06\\)",
+            "\\(27753.69\\)",
+            "\\(29141.37\\)",
+            "\\(24978.32\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the principal value, periodic rate, and total number of compounding periods.",
+              "work": "\\(P = 40000, quad r = \\frac\\{12\\%\\}\\{4\\} = 3\\% = 0.0300, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Apply the reducing balance compound depreciation formula.",
+              "work": "\\(A = P(1 - r)^n = 40000 \\times (1 - 0.0300)^\\{12\\}\\)"
+            },
+            {
+              "explain": "Evaluate the power and calculate the final depreciated book value.",
+              "work": "\\(A \\approx 40000 \\times 0.693842 \\approx 27753.69\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-q18a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 47000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 14\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+          "options": [
+            "\\(27584.69\\)",
+            "\\(32182.14\\)",
+            "\\(30649.66\\)",
+            "\\(33714.63\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the principal value, periodic rate, and total number of compounding periods.",
+              "work": "\\(P = 47000, quad r = \\frac\\{14\\%\\}\\{4\\} = 3.5\\% = 0.0350, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Apply the reducing balance compound depreciation formula.",
+              "work": "\\(A = P(1 - r)^n = 47000 \\times (1 - 0.0350)^\\{12\\}\\)"
+            },
+            {
+              "explain": "Evaluate the power and calculate the final depreciated book value.",
+              "work": "\\(A \\approx 47000 \\times 0.652120 \\approx 30649.66\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-q19a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 55000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 16\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+          "options": [
+            "\\(33699.04\\)",
+            "\\(37068.94\\)",
+            "\\(30329.14\\)",
+            "\\(35383.99\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the principal value, periodic rate, and total number of compounding periods.",
+              "work": "\\(P = 55000, quad r = \\frac\\{16\\%\\}\\{4\\} = 4\\% = 0.0400, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Apply the reducing balance compound depreciation formula.",
+              "work": "\\(A = P(1 - r)^n = 55000 \\times (1 - 0.0400)^\\{12\\}\\)"
+            },
+            {
+              "explain": "Evaluate the power and calculate the final depreciated book value.",
+              "work": "\\(A \\approx 55000 \\times 0.612710 \\approx 33699.04\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-q20a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 62000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 18\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+          "options": [
+            "\\(35680.60\\)",
+            "\\(39248.66\\)",
+            "\\(32112.54\\)",
+            "\\(37464.63\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the principal value, periodic rate, and total number of compounding periods.",
+              "work": "\\(P = 62000, quad r = \\frac\\{18\\%\\}\\{4\\} = 4.5\\% = 0.0450, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Apply the reducing balance compound depreciation formula.",
+              "work": "\\(A = P(1 - r)^n = 62000 \\times (1 - 0.0450)^\\{12\\}\\)"
+            },
+            {
+              "explain": "Evaluate the power and calculate the final depreciated book value.",
+              "work": "\\(A \\approx 62000 \\times 0.575494 \\approx 35680.60\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-q21a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 70000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 12\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+          "options": [
+            "\\(48568.97\\)",
+            "\\(53425.87\\)",
+            "\\(43712.07\\)",
+            "\\(50997.42\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the principal value, periodic rate, and total number of compounding periods.",
+              "work": "\\(P = 70000, quad r = \\frac\\{12\\%\\}\\{4\\} = 3\\% = 0.0300, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Apply the reducing balance compound depreciation formula.",
+              "work": "\\(A = P(1 - r)^n = 70000 \\times (1 - 0.0300)^\\{12\\}\\)"
+            },
+            {
+              "explain": "Evaluate the power and calculate the final depreciated book value.",
+              "work": "\\(A \\approx 70000 \\times 0.693842 \\approx 48568.97\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-q22a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 77000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 14\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+          "options": [
+            "\\(50213.27\\)",
+            "\\(55234.60\\)",
+            "\\(45191.94\\)",
+            "\\(52723.93\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the principal value, periodic rate, and total number of compounding periods.",
+              "work": "\\(P = 77000, quad r = \\frac\\{14\\%\\}\\{4\\} = 3.5\\% = 0.0350, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Apply the reducing balance compound depreciation formula.",
+              "work": "\\(A = P(1 - r)^n = 77000 \\times (1 - 0.0350)^\\{12\\}\\)"
+            },
+            {
+              "explain": "Evaluate the power and calculate the final depreciated book value.",
+              "work": "\\(A \\approx 77000 \\times 0.652120 \\approx 50213.27\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-q23a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 84000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 16\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+          "options": [
+            "\\(51467.62\\)",
+            "\\(56614.38\\)",
+            "\\(46320.86\\)",
+            "\\(54041.00\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the principal value, periodic rate, and total number of compounding periods.",
+              "work": "\\(P = 84000, quad r = \\frac\\{16\\%\\}\\{4\\} = 4\\% = 0.0400, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Apply the reducing balance compound depreciation formula.",
+              "work": "\\(A = P(1 - r)^n = 84000 \\times (1 - 0.0400)^\\{12\\}\\)"
+            },
+            {
+              "explain": "Evaluate the power and calculate the final depreciated book value.",
+              "work": "\\(A \\approx 84000 \\times 0.612710 \\approx 51467.62\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-q24a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 42000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 18\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+          "options": [
+            "\\(25379.27\\)",
+            "\\(24170.73\\)",
+            "\\(26587.80\\)",
+            "\\(21753.66\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the principal value, periodic rate, and total number of compounding periods.",
+              "work": "\\(P = 42000, quad r = \\frac\\{18\\%\\}\\{4\\} = 4.5\\% = 0.0450, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Apply the reducing balance compound depreciation formula.",
+              "work": "\\(A = P(1 - r)^n = 42000 \\times (1 - 0.0450)^\\{12\\}\\)"
+            },
+            {
+              "explain": "Evaluate the power and calculate the final depreciated book value.",
+              "work": "\\(A \\approx 42000 \\times 0.575494 \\approx 24170.73\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-q25a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 49000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 12\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+          "options": [
+            "\\(35698.19\\)",
+            "\\(30598.45\\)",
+            "\\(37398.11\\)",
+            "\\(33998.28\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the principal value, periodic rate, and total number of compounding periods.",
+              "work": "\\(P = 49000, quad r = \\frac\\{12\\%\\}\\{4\\} = 3\\% = 0.0300, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Apply the reducing balance compound depreciation formula.",
+              "work": "\\(A = P(1 - r)^n = 49000 \\times (1 - 0.0300)^\\{12\\}\\)"
+            },
+            {
+              "explain": "Evaluate the power and calculate the final depreciated book value.",
+              "work": "\\(A \\approx 49000 \\times 0.693842 \\approx 33998.28\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-q26a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The enterprise AeroLogistics bought a new industrial warehouse forklift for 57000 dollars. The asset depreciates using the reducing balance method at a rate of \\( 14\\% \\) p.a. compounded quarterly. Determine the depreciated value of the industrial warehouse forklift after \\( 3 \\) years, correct to the nearest cent.",
+          "options": [
+            "\\(33453.77\\)",
+            "\\(40887.95\\)",
+            "\\(37170.86\\)",
+            "\\(39029.40\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the principal value, periodic rate, and total number of compounding periods.",
+              "work": "\\(P = 57000, quad r = \\frac\\{14\\%\\}\\{4\\} = 3.5\\% = 0.0350, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Apply the reducing balance compound depreciation formula.",
+              "work": "\\(A = P(1 - r)^n = 57000 \\times (1 - 0.0350)^\\{12\\}\\)"
+            },
+            {
+              "explain": "Evaluate the power and calculate the final depreciated book value.",
+              "work": "\\(A \\approx 57000 \\times 0.652120 \\approx 37170.86\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-high-q61",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For tax optimization, Ethan applies a reducing balance depreciation of \\(18.8\\%\\) p.a., compounded quarterly, on a \\(\\$40500\\) smart conveyor system. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+          "options": [
+            "\\(\\$21592.03\\)",
+            "\\(\\$23864.87\\)",
+            "\\(\\$21683.19\\)",
+            "\\(\\$22728.45\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Determine the quarterly depreciation rate and total compounding periods.",
+              "work": "\\(r = \\frac{18.8}{4} = 4.700\\%, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Substitute the periodic values into the reducing balance depreciation formula.",
+              "work": "\\(V_{12} = 40500 \\times \\left(1 - \\frac{4.700}{100}\\right)^{12}\\)"
+            },
+            {
+              "explain": "Compute the book value and round to two decimal places.",
+              "work": "\\(V_{12} \\approx \\$22728.45\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-high-q62",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For tax optimization, Fiona applies a reducing balance depreciation of \\(19.6\\%\\) p.a., compounded quarterly, on a \\(\\$46000\\) cryogenic storage container. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+          "options": [
+            "\\(\\$25172.37\\)",
+            "\\(\\$23907.05\\)",
+            "\\(\\$26430.98\\)",
+            "\\(\\$23913.75\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Determine the quarterly depreciation rate and total compounding periods.",
+              "work": "\\(r = \\frac{19.6}{4} = 4.900\\%, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Substitute the periodic values into the reducing balance depreciation formula.",
+              "work": "\\(V_{12} = 46000 \\times \\left(1 - \\frac{4.900}{100}\\right)^{12}\\)"
+            },
+            {
+              "explain": "Compute the book value and round to two decimal places.",
+              "work": "\\(V_{12} \\approx \\$25172.37\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-high-q63",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For tax optimization, George applies a reducing balance depreciation of \\(20.4\\%\\) p.a., compounded quarterly, on a \\(\\$51500\\) electric delivery vehicle. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+          "options": [
+            "\\(\\$26105.10\\)",
+            "\\(\\$28853.01\\)",
+            "\\(\\$25974.45\\)",
+            "\\(\\$27479.05\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Determine the quarterly depreciation rate and total compounding periods.",
+              "work": "\\(r = \\frac{20.4}{4} = 5.100\\%, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Substitute the periodic values into the reducing balance depreciation formula.",
+              "work": "\\(V_{12} = 51500 \\times \\left(1 - \\frac{5.100}{100}\\right)^{12}\\)"
+            },
+            {
+              "explain": "Compute the book value and round to two decimal places.",
+              "work": "\\(V_{12} \\approx \\$27479.05\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-high-q64",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For tax optimization, Helen applies a reducing balance depreciation of \\(21.2\\%\\) p.a., compounded quarterly, on a \\(\\$57000\\) pneumatic metal press. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+          "options": [
+            "\\(\\$29653.41\\)",
+            "\\(\\$28170.74\\)",
+            "\\(\\$31136.08\\)",
+            "\\(\\$27890.32\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Determine the quarterly depreciation rate and total compounding periods.",
+              "work": "\\(r = \\frac{21.2}{4} = 5.300\\%, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Substitute the periodic values into the reducing balance depreciation formula.",
+              "work": "\\(V_{12} = 57000 \\times \\left(1 - \\frac{5.300}{100}\\right)^{12}\\)"
+            },
+            {
+              "explain": "Compute the book value and round to two decimal places.",
+              "work": "\\(V_{12} \\approx \\$29653.41\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-high-q65",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For tax optimization, Ian applies a reducing balance depreciation of \\(22.0\\%\\) p.a., compounded quarterly, on a \\(\\$62500\\) supercomputing node cluster. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+          "options": [
+            "\\(\\$33285.19\\)",
+            "\\(\\$29659.50\\)",
+            "\\(\\$30115.17\\)",
+            "\\(\\$31700.18\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Determine the quarterly depreciation rate and total compounding periods.",
+              "work": "\\(r = \\frac{22.0}{4} = 5.500\\%, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Substitute the periodic values into the reducing balance depreciation formula.",
+              "work": "\\(V_{12} = 62500 \\times \\left(1 - \\frac{5.500}{100}\\right)^{12}\\)"
+            },
+            {
+              "explain": "Compute the book value and round to two decimal places.",
+              "work": "\\(V_{12} \\approx \\$31700.18\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-high-q66",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For tax optimization, Julia applies a reducing balance depreciation of \\(22.8\\%\\) p.a., compounded quarterly, on a \\(\\$68000\\) seismic testing rig. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+          "options": [
+            "\\(\\$31942.79\\)",
+            "\\(\\$35305.19\\)",
+            "\\(\\$31286.78\\)",
+            "\\(\\$33623.99\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Determine the quarterly depreciation rate and total compounding periods.",
+              "work": "\\(r = \\frac{22.8}{4} = 5.700\\%, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Substitute the periodic values into the reducing balance depreciation formula.",
+              "work": "\\(V_{12} = 68000 \\times \\left(1 - \\frac{5.700}{100}\\right)^{12}\\)"
+            },
+            {
+              "explain": "Compute the book value and round to two decimal places.",
+              "work": "\\(V_{12} \\approx \\$33623.99\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-high-q67",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For tax optimization, Keith applies a reducing balance depreciation of \\(23.6\\%\\) p.a., compounded quarterly, on a \\(\\$73500\\) high-speed packaging unit. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+          "options": [
+            "\\(\\$33657.85\\)",
+            "\\(\\$37200.79\\)",
+            "\\(\\$35429.32\\)",
+            "\\(\\$32776.87\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Determine the quarterly depreciation rate and total compounding periods.",
+              "work": "\\(r = \\frac{23.6}{4} = 5.900\\%, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Substitute the periodic values into the reducing balance depreciation formula.",
+              "work": "\\(V_{12} = 73500 \\times \\left(1 - \\frac{5.900}{100}\\right)^{12}\\)"
+            },
+            {
+              "explain": "Compute the book value and round to two decimal places.",
+              "work": "\\(V_{12} \\approx \\$35429.32\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-high-q68",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For tax optimization, Laura applies a reducing balance depreciation of \\(24.4\\%\\) p.a., compounded quarterly, on a \\(\\$79000\\) ventilation turbine array. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+          "options": [
+            "\\(\\$38976.56\\)",
+            "\\(\\$34134.42\\)",
+            "\\(\\$35264.51\\)",
+            "\\(\\$37120.53\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Determine the quarterly depreciation rate and total compounding periods.",
+              "work": "\\(r = \\frac{24.4}{4} = 6.100\\%, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Substitute the periodic values into the reducing balance depreciation formula.",
+              "work": "\\(V_{12} = 79000 \\times \\left(1 - \\frac{6.100}{100}\\right)^{12}\\)"
+            },
+            {
+              "explain": "Compute the book value and round to two decimal places.",
+              "work": "\\(V_{12} \\approx \\$37120.53\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-high-q69",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For tax optimization, Malcolm applies a reducing balance depreciation of \\(25.2\\%\\) p.a., compounded quarterly, on a \\(\\$84500\\) die-casting machine. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+          "options": [
+            "\\(\\$35364.01\\)",
+            "\\(\\$36766.76\\)",
+            "\\(\\$38701.86\\)",
+            "\\(\\$40636.95\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Determine the quarterly depreciation rate and total compounding periods.",
+              "work": "\\(r = \\frac{25.2}{4} = 6.300\\%, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Substitute the periodic values into the reducing balance depreciation formula.",
+              "work": "\\(V_{12} = 84500 \\times \\left(1 - \\frac{6.300}{100}\\right)^{12}\\)"
+            },
+            {
+              "explain": "Compute the book value and round to two decimal places.",
+              "work": "\\(V_{12} \\approx \\$38701.86\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1e-high-q70",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For tax optimization, Nadia applies a reducing balance depreciation of \\(26.0\\%\\) p.a., compounded quarterly, on a \\(\\$90000\\) industrial autoclave. Determine the book value of the asset after \\(3\\) years, correct to the nearest cent.",
+          "options": [
+            "\\(\\$38168.53\\)",
+            "\\(\\$42186.27\\)",
+            "\\(\\$36470.16\\)",
+            "\\(\\$40177.40\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Determine the quarterly depreciation rate and total compounding periods.",
+              "work": "\\(r = \\frac{26.0}{4} = 6.500\\%, quad n = 3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Substitute the periodic values into the reducing balance depreciation formula.",
+              "work": "\\(V_{12} = 90000 \\times \\left(1 - \\frac{6.500}{100}\\right)^{12}\\)"
+            },
+            {
+              "explain": "Compute the book value and round to two decimal places.",
+              "work": "\\(V_{12} \\approx \\$40177.40\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

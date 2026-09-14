@@ -1,0 +1,39 @@
+<svg viewBox="0 0 460 420" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<line x1="200" y1="320" x2="110" y2="260" stroke="#475569" stroke-width="2"/>
+<line x1="110" y1="260" x2="220" y2="300" stroke="#475569" stroke-width="1.5" stroke-dasharray="5,4"/>
+<line x1="220" y1="300" x2="310" y2="360" stroke="#475569" stroke-width="1.5" stroke-dasharray="5,4"/>
+<line x1="310" y1="360" x2="200" y2="320" stroke="#475569" stroke-width="2"/>
+<line x1="200" y1="320" x2="220" y2="120" stroke="#475569" stroke-width="2"/>
+<line x1="220" y1="120" x2="310" y2="180" stroke="#475569" stroke-width="2"/>
+<line x1="310" y1="180" x2="310" y2="360" stroke="#475569" stroke-width="2"/>
+<line x1="110" y1="260" x2="220" y2="120" stroke="#475569" stroke-width="2"/>
+<line x1="220" y1="300" x2="310" y2="180" stroke="#475569" stroke-width="1.5" stroke-dasharray="5,4"/>
+<path d="M 200 320 L 220 120 L 310 180 L 310 360 Z" fill="#dbeafe" fill-opacity="0.4" stroke="none"/>
+<path d="M 200 320 L 110 260 L 220 300 L 310 360 Z" fill="#dbeafe" fill-opacity="0.25" stroke="none"/>
+<line x1="200" y1="320" x2="110" y2="260" stroke="#f59e0b" stroke-width="2.5"/>
+<line x1="110" y1="260" x2="220" y2="300" stroke="#f59e0b" stroke-width="2.5"/>
+<text x="206" y="328" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">AF = ?</text>
+<text x="206" y="328" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#f59e0b">AF = ?</text>
+<circle cx="200" cy="320" r="2.5" fill="#1e293b"/>
+<text x="184" y="326" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">A</text>
+<text x="184" y="326" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">A</text>
+<circle cx="110" cy="260" r="2.5" fill="#1e293b"/>
+<text x="94" y="264" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">E</text>
+<text x="94" y="264" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">E</text>
+<circle cx="220" cy="300" r="2.5" fill="#1e293b"/>
+<text x="234" y="296" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">F</text>
+<text x="234" y="296" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">F</text>
+<circle cx="310" cy="360" r="2.5" fill="#1e293b"/>
+<text x="320" y="376" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">D</text>
+<text x="320" y="376" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">D</text>
+<circle cx="220" cy="120" r="2.5" fill="#1e293b"/>
+<text x="214" y="106" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">B</text>
+<text x="214" y="106" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">B</text>
+<circle cx="310" cy="180" r="2.5" fill="#1e293b"/>
+<text x="320" y="172" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">C</text>
+<text x="320" y="172" text-anchor="middle" font-family="system-ui" font-size="16" font-weight="700" fill="#1e293b">C</text>
+<text x="135" y="294" text-anchor="middle" font-family="system-ui" font-size="12.5" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">AE</text>
+<text x="135" y="294" text-anchor="middle" font-family="system-ui" font-size="12.5" font-weight="700" fill="#f59e0b">AE</text>
+<text x="165" y="300" text-anchor="middle" font-family="system-ui" font-size="12.5" font-weight="700" stroke="#f8fafc" stroke-width="4" stroke-linejoin="round">EF</text>
+<text x="165" y="300" text-anchor="middle" font-family="system-ui" font-size="12.5" font-weight="700" fill="#f59e0b">EF</text>
+</svg>

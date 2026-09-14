@@ -1,0 +1,24 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>
+  <rect width='300' height='300' fill='#ffffff' />
+  <polygon points='79.29336293448065,234.26488874308757 112.37778423417645,46.63381171355006 220.70663706551932,234.2648887430876' fill='#f8fafc' stroke='#cbd5e1' stroke-width='1.5' stroke-linejoin='round' />
+  <polygon points='79.29336293448065,234.26488874308757 258.3288528313429,130.89870045663767 220.70663706551932,234.2648887430876' fill='#f8fafc' stroke='#cbd5e1' stroke-width='1.5' stroke-linejoin='round' />
+  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />
+  <line x1='150' y1='150' x2='79.29336293448065' y2='234.26488874308757' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='150' y1='150' x2='220.70663706551932' y2='234.2648887430876' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <path d='M 171.2119911196558 175.2794666229263 A 33 33 0 0 1 128.7880088803442 175.27946662292626' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='150' y='197' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>80°</text>
+  <path d='M 108.55752432550398 68.29958227981864 A 22 22 0 0 0 123.37778423417643 65.68637059680772' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='117.93452591951821' y='82.14765980994072' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>α</text>
+  <path d='M 239.27629394808523 141.89870045663767 A 22 22 0 0 0 250.80440967817816 151.57193811392764' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='237.75964932137362' y='159.41212263644496' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>β</text>
+  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />
+  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>
+  <circle cx='112.37778423417645' cy='46.63381171355006' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='108.37778423417645' y='34.63381171355006' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>P</text>
+  <circle cx='258.3288528313429' cy='130.89870045663767' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='268.3288528313429' y='120.89870045663767' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>Q</text>
+  <circle cx='79.29336293448065' cy='234.26488874308757' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='71.29336293448065' y='246.26488874308757' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>F</text>
+  <circle cx='220.70663706551932' cy='234.2648887430876' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='228.70663706551932' y='244.2648887430876' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>G</text>
+</svg>

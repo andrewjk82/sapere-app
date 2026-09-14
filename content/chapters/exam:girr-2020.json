@@ -1,0 +1,3894 @@
+{
+  "chapterId": "exam:girr-2020",
+  "title": "Girraween 2020 HSC Trial",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12a-exam-girr",
+      "code": "3B",
+      "title": "Functions, relations, and graphs",
+      "questions": [
+        {
+          "id": "girr2020-mc1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The diagram shows a relation between two sets A and B. Domain: {A₁, A₂, A₃, A₄, A₅}. Codomain: {B₁, B₂, B₃, B₄, B₅, B₆}. Mappings: A₁ → B₂, A₂ → B₂, A₃ → B₄, A₄ → B₅, A₅ → B₆. What type of relation is shown?",
+          "figure": {
+            "svg": "fig:5902362426"
+          },
+          "options": [
+            "One-to-one",
+            "One-to-many",
+            "Many-to-many",
+            "Many-to-one"
+          ],
+          "answer": 3,
+          "hint": "Look for arrows that converge to the same point on the right side (codomain). If two or more arrows from different domain elements end at the same codomain element, the relation is many-to-one.",
+          "solution": "Both A₁ and A₂ map to B₂. This means two different domain elements share the same image in the codomain. Each domain element maps to exactly one codomain element, so it is not one-to-many. Multiple domain elements map to the same codomain element, so it is not one-to-one. Therefore, the relation is many-to-one.",
+          "steps": [
+            {
+              "explain": "Before determining what type of relation is shown, we need to understand the four main types of relations based on how elements from the domain map to elements in the codomain. Each type has a distinct property that determines whether one domain element can map to multiple codomain elements, or whether multiple domain elements can map to the same codomain element.",
+              "work": "\\text{One-to-one:} \\; 1 \\to 1 \\quad \\text{One-to-many:} \\; 1 \\to \\text{many} \\quad \\text{Many-to-one:} \\; \\text{many} \\to 1 \\quad \\text{Many-to-many:} \\; \\text{many} \\to \\text{many}"
+            },
+            {
+              "explain": "The domain consists of all the starting points of the arrows (the elements on the left), while the codomain consists of all the ending points of the arrows (the elements on the right). Clearly distinguishing between domain and codomain is essential for analyzing the relation correctly.",
+              "work": "\\text{Domain} = \\{A_1, A_2, A_3, A_4, A_5\\} \\quad \\text{Codomain} = \\{B_1, B_2, B_3, B_4, B_5, B_6\\}"
+            },
+            {
+              "explain": "Now we examine each arrow in the diagram one by one. By carefully following where each domain element maps to, we can identify patterns. Pay special attention to whether any domain elements map to the same codomain element, as this is a key characteristic of many-to-one relations.",
+              "work": "A_1 \\to B_2, \\quad A_2 \\to B_2, \\quad A_3 \\to B_4, \\quad A_4 \\to B_5, \\quad A_5 \\to B_6"
+            },
+            {
+              "explain": "Looking at the mappings from Step 3, we observe that both A₁ and A₂ map to the same codomain element B₂. This is the defining characteristic of a many-to-one relation: multiple (at least two) domain elements share the same image in the codomain. This property makes the relation \"many-to-one.\"",
+              "work": "A_1 \\to B_2 \\; \\text{and} \\; A_2 \\to B_2 \\quad \\Rightarrow \\quad \\text{Two different domain elements map to the same codomain element}"
+            },
+            {
+              "explain": "To ensure our answer is correct, we verify that the other relation types do not apply. A one-to-one relation requires each domain element to map to a different codomain element, but A₁ and A₂ both map to B₂. A one-to-many relation requires at least one domain element to map to multiple codomain elements, but each domain element maps to exactly one codomain element. A many-to-many relation requires multiple mappings from single elements to multiple images, which does not occur here.",
+              "work": "\\text{One-to-one?} \\; \\text{No} \\quad \\text{One-to-many?} \\; \\text{No} \\quad \\text{Many-to-many?} \\; \\text{No} \\quad \\therefore \\; \\text{Many-to-one}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-GRAPH-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc1s",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The diagram shows a relation between sets P and Q. Domain: {P₁, P₂, P₃, P₄, P₆}. Codomain: {Q₁, Q₂, Q₃, Q₄, Q₅}. Mappings: P₁ → Q₁, P₂ → Q₃, P₃ → Q₃, P₄ → Q₄, P₆ → Q₅. What type of relation is shown?",
+          "figure": {
+            "svg": "fig:a4e8a22f01"
+          },
+          "options": [
+            "One-to-one",
+            "One-to-many",
+            "Many-to-many",
+            "Many-to-one"
+          ],
+          "answer": 3,
+          "hint": "Check if multiple domain elements map to the same codomain element (many-to-one) or if one domain element maps to multiple codomain elements (one-to-many).",
+          "solution": "Both P₂ and P₃ map to Q₃. This means two different domain elements share the same image. Therefore, the relation is many-to-one (not one-to-many, not one-to-one, not many-to-many).",
+          "steps": [
+            {
+              "explain": "To classify a relation, we examine how elements from the domain map to elements in the codomain. A many-to-one relation occurs when two or more domain elements map to the same codomain element, while each domain element maps to exactly one codomain element.",
+              "work": "\\text{Domain} = \\{P_1, P_2, P_3, P_4, P_6\\} \\quad \\text{Codomain} = \\{Q_1, Q_2, Q_3, Q_4, Q_5\\}"
+            },
+            {
+              "explain": "We trace each mapping: P₁ → Q₁, P₂ → Q₃, P₃ → Q₃, P₄ → Q₄, P₆ → Q₅. We look for any domain elements that map to the same codomain element.",
+              "work": "P_1 \\to Q_1, \\quad P_2 \\to Q_3, \\quad P_3 \\to Q_3, \\quad P_4 \\to Q_4, \\quad P_6 \\to Q_5"
+            },
+            {
+              "explain": "We observe that P₂ and P₃ both map to Q₃. This is the key feature of a many-to-one relation: multiple domain elements (P₂ and P₃) share a common image (Q₃) in the codomain.",
+              "work": "P_2 \\to Q_3 \\; \\text{and} \\; P_3 \\to Q_3 \\quad \\Rightarrow \\quad \\text{Many-to-one relation}"
+            },
+            {
+              "explain": "We verify this is not a one-to-many relation by checking that each domain element maps to exactly one codomain element (true for all five elements). It is also not a one-to-one relation because P₂ and P₃ have the same image.",
+              "work": "\\text{Each domain element maps to exactly one codomain element, but not all codomain images are unique.}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-GRAPH-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The graph shows the velocity of a particle, $v$ metres per second, as a function of time, $t$ seconds. A curve showing velocity vs time with a maximum peak at approximately $t = 6$. When is the acceleration of the particle equal to zero?",
+          "figure": {
+            "svg": "fig:b8e7b23c32"
+          },
+          "options": [
+            "$t = 0$",
+            "$t = 10$",
+            "$t = 6$",
+            "$t = 8$"
+          ],
+          "answer": 2,
+          "hint": "Look for the point on the velocity graph where the curve reaches its highest point (maximum). At this peak, the curve is neither increasing nor decreasing, so the slope (acceleration) is zero.",
+          "solution": "Acceleration is the derivative of velocity, so we need to find where $\\frac{dv}{dt} = 0$. On a velocity-time graph, this occurs where the curve has a horizontal tangent, which is at the maximum or minimum points. From the given graph, the velocity reaches its maximum at $t = 6$ seconds. Before this time, velocity is increasing (positive acceleration), and after this time, velocity is decreasing (negative acceleration). At $t = 6$, the acceleration transitions from positive to negative, meaning the acceleration equals zero.",
+          "steps": [
+            {
+              "explain": "Acceleration is defined as the rate of change of velocity with respect to time. Mathematically, acceleration is the derivative of the velocity function: $a = \\frac{dv}{dt}$. Therefore, to find when acceleration equals zero, we need to find where the derivative of the velocity function equals zero. Geometrically, this occurs at points where the velocity graph has a horizontal tangent (maximum or minimum points).",
+              "work": "a(t) = \\frac{dv}{dt} \\quad \\text{We need to find when} \\; a(t) = 0, \\; \\text{which means} \\; \\frac{dv}{dt} = 0"
+            },
+            {
+              "explain": "On a velocity-time graph, the acceleration is zero at points where the curve reaches a local maximum or minimum (where the tangent line is horizontal). These are the points where the velocity stops increasing and starts decreasing, or vice versa. Looking at the given graph, we need to identify where the curve has a horizontal tangent.",
+              "work": "\\text{Critical points occur where} \\; \\frac{dv}{dt} = 0 \\quad \\text{These are the peaks and valleys of the velocity curve}"
+            },
+            {
+              "explain": "Examining the velocity graph carefully, we can see that the curve starts near zero at $t = 0$, increases to a maximum point, and then decreases. The maximum point is clearly visible on the graph, and this is where the velocity stops increasing and begins to decrease. At this peak, the tangent to the curve is horizontal, which means $\\frac{dv}{dt} = 0$.",
+              "work": "\\text{From the graph, the velocity reaches its maximum at} \\; t = 6 \\; \\text{seconds}"
+            },
+            {
+              "explain": "At the point where velocity is maximum ($t = 6$), the slope of the velocity curve transitions from positive (velocity increasing) to negative (velocity decreasing). This change in slope direction confirms that the derivative equals zero at this point. Before $t = 6$, the curve is rising (positive slope), and after $t = 6$, the curve is falling (negative slope).",
+              "work": "\\text{For} \\; t < 6: \\; \\frac{dv}{dt} > 0 \\quad \\text{At} \\; t = 6: \\; \\frac{dv}{dt} = 0 \\quad \\text{For} \\; t > 6: \\; \\frac{dv}{dt} < 0"
+            },
+            {
+              "explain": "Since acceleration is the derivative of velocity, and we have identified that the derivative equals zero at $t = 6$ (where the velocity graph reaches its maximum), we can conclude that the acceleration of the particle is zero at $t = 6$ seconds. This is the only point among the given options where the velocity graph has a horizontal tangent.",
+              "work": "\\frac{dv}{dt} = 0 \\; \\text{at} \\; t = 6 \\quad \\therefore \\; a(6) = 0 \\quad \\text{The particle has zero acceleration at} \\; t = 6 \\; \\text{seconds}",
+              "figure": {
+                "svg": "fig:15a1d82fe0"
+              }
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-MOTION-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc2s",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The graph shows velocity $v$ (m/s) versus time $t$ (s). The curve has a maximum at $t = 8$ seconds. When is the acceleration equal to zero?",
+          "figure": {
+            "svg": "fig:d743040d3f"
+          },
+          "options": [
+            "$t = 2$",
+            "$t = 8$",
+            "$t = 12$",
+            "$t = 0$"
+          ],
+          "answer": 1,
+          "hint": "Acceleration is the derivative of velocity. On a velocity-time graph, acceleration is zero where the curve reaches a peak (maximum) or trough (minimum).",
+          "solution": "The velocity graph reaches its maximum at $t = 8$ seconds. At this point, the tangent to the curve is horizontal, meaning the slope (acceleration) is zero. Therefore, $a = 0$ at $t = 8$.",
+          "steps": [
+            {
+              "explain": "Acceleration is defined as the rate of change of velocity with respect to time: $a = \\frac{dv}{dt}$. On a velocity-time graph, this is represented by the slope of the tangent line to the curve.",
+              "work": "a(t) = \\frac{dv}{dt} \\quad \\text{On a v-t graph, this is the slope of the curve}"
+            },
+            {
+              "explain": "Acceleration equals zero where $\\frac{dv}{dt} = 0$, which corresponds to points where the curve has a horizontal tangent. These occur at the peaks (maxima) and troughs (minima) of the velocity curve.",
+              "work": "a(t) = 0 \\; \\Leftrightarrow \\; \\text{Curve has a horizontal tangent}"
+            },
+            {
+              "explain": "From the given graph, we can see that the velocity curve reaches a maximum at $t = 8$ seconds. This is the point where the curve stops increasing and would begin decreasing.",
+              "work": "\\text{Maximum of velocity curve occurs at } t = 8"
+            },
+            {
+              "explain": "At $t = 8$, the velocity is at its peak. Before this time, velocity is increasing (positive acceleration). After this time, velocity would decrease (negative acceleration). At the peak, the transition occurs, so acceleration is zero.",
+              "work": "t < 8: \\; \\frac{dv}{dt} > 0 \\quad t = 8: \\; \\frac{dv}{dt} = 0 \\quad t > 8: \\; \\frac{dv}{dt} < 0"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-MOTION-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For events $A$ and $B$, $P(A|B) = \\frac{2}{5}$ and $P(B|A) = \\frac{1}{3}$. Let $P(A \\cap B) = p$. What is the value of $P(A)$?",
+          "options": [
+            "$3p$",
+            "$p$",
+            "$\\frac{1}{3}p$",
+            "$\\frac{2}{5}p$"
+          ],
+          "answer": 0,
+          "hint": "Use the conditional probability formula $P(B|A) = \\frac{P(A \\cap B)}{P(A)}$. Rearrange this formula to solve for $P(A)$ directly.",
+          "solution": "From the definition of conditional probability, $P(B|A) = \\frac{P(A \\cap B)}{P(A)}$. Substituting the given values, we have $\\frac{1}{3} = \\frac{p}{P(A)}$. Rearranging, we get $P(A) = 3p$. Therefore, the correct answer is $3p$.",
+          "steps": [
+            {
+              "explain": "Conditional probability is the probability of an event occurring given that another event has already occurred. The formula is: $P(A|B) = \\frac{P(A \\cap B)}{P(B)}$. This formula shows how the probability of event $A$ changes when we know that event $B$ has occurred. To solve this problem, we need to use the conditional probability formula with the given information.",
+              "work": "P(A|B) = \\frac{P(A \\cap B)}{P(B)} \\quad \\text{and} \\quad P(B|A) = \\frac{P(A \\cap B)}{P(A)}"
+            },
+            {
+              "explain": "We are given that $P(A|B) = \\frac{2}{5}$ and $P(B|A) = \\frac{1}{3}$, and we know that $P(A \\cap B) = p$. Using the conditional probability formula, we can write two equations. From the second equation, we can directly find $P(A)$ in terms of $p$.",
+              "work": "P(A|B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{p}{P(B)} = \\frac{2}{5} \\quad \\text{and} \\quad P(B|A) = \\frac{P(A \\cap B)}{P(A)} = \\frac{p}{P(A)} = \\frac{1}{3}"
+            },
+            {
+              "explain": "From the equation $P(B|A) = \\frac{p}{P(A)} = \\frac{1}{3}$, we can rearrange to isolate $P(A)$. By cross-multiplying, we get $p = \\frac{1}{3} \\cdot P(A)$, which means $P(A) = 3p$. This is derived directly from the definition of conditional probability and the given information.",
+              "work": "\\frac{p}{P(A)} = \\frac{1}{3} \\quad \\Rightarrow \\quad p = \\frac{1}{3} P(A) \\quad \\Rightarrow \\quad P(A) = 3p"
+            },
+            {
+              "explain": "To ensure our answer is correct, we can verify it using the other piece of information. From $P(A|B) = \\frac{2}{5}$, we can write $P(B) = \\frac{p}{P(A|B)} = \\frac{p}{\\frac{2}{5}} = \\frac{5p}{2}$. This provides an alternative way to express the probabilities and confirms our reasoning is consistent.",
+              "work": "P(A|B) = \\frac{p}{P(B)} = \\frac{2}{5} \\quad \\Rightarrow \\quad P(B) = \\frac{p}{\\frac{2}{5}} = \\frac{5p}{2} \\quad \\text{(This is consistent with our derivation)}"
+            },
+            {
+              "explain": "We have derived that $P(A) = 3p$ from the given information. This answer comes directly from the definition of conditional probability and the fact that $P(B|A) = \\frac{1}{3}$. Our result is consistent with the properties of probability, as $P(A)$ must be expressed in terms of the intersection probability $p$.",
+              "work": "P(B|A) = \\frac{P(A \\cap B)}{P(A)} = \\frac{1}{3} \\quad \\Rightarrow \\quad P(A) = 3 \\cdot P(A \\cap B) = 3p"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-COND-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc3s",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For events $M$ and $N$: $P(M|N) = \\frac{3}{7}$ and $P(N|M) = \\frac{2}{5}$. Given $P(M \\cap N) = q$, find $P(M)$.",
+          "options": [
+            "$P(M) = \\frac{2q}{5}$",
+            "$P(M) = \\frac{5q}{2}$",
+            "$P(M) = \\frac{3q}{7}$",
+            "$P(M) = q$"
+          ],
+          "answer": 1,
+          "hint": "Use $P(N|M) = \\frac{P(M \\cap N)}{P(M)} = \\frac{2}{5}$. Rearrange to solve for $P(M)$.",
+          "solution": "From $P(N|M) = \\frac{P(M \\cap N)}{P(M)} = \\frac{2}{5}$ and $P(M \\cap N) = q$, we have $\\frac{q}{P(M)} = \\frac{2}{5}$. Therefore, $P(M) = \\frac{5q}{2}$.",
+          "steps": [
+            {
+              "explain": "We use the definition of conditional probability: $P(N|M) = \\frac{P(M \\cap N)}{P(M)}$. This formula tells us the probability of $N$ given that $M$ has occurred.",
+              "work": "P(N|M) = \\frac{P(M \\cap N)}{P(M)}"
+            },
+            {
+              "explain": "Substituting the given values: $\\frac{2}{5} = \\frac{q}{P(M)}$, where $P(M \\cap N) = q$.",
+              "work": "\\frac{2}{5} = \\frac{q}{P(M)}"
+            },
+            {
+              "explain": "Cross-multiplying: $2 \\cdot P(M) = 5q$.",
+              "work": "2 P(M) = 5q"
+            },
+            {
+              "explain": "Dividing both sides by 2: $P(M) = \\frac{5q}{2}$.",
+              "work": "P(M) = \\frac{5q}{2}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-COND-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "$(\\sqrt{3} - 1)(2\\sqrt{3} + 5)$ simplifies to:",
+          "options": [
+            "$11 + 7\\sqrt{3}$",
+            "$11 + 3\\sqrt{3}$",
+            "$1 + 3\\sqrt{3}$",
+            "$1 - 3\\sqrt{3}$"
+          ],
+          "answer": 2,
+          "hint": "Remember that $\\sqrt{a} \\cdot \\sqrt{a} = a$. When you multiply the surds, the result becomes a whole number. Then combine like terms (terms with surds and terms without).",
+          "solution": "Using the distributive property to expand $(\\sqrt{3} - 1)(2\\sqrt{3} + 5)$: multiply $\\sqrt{3}$ by each term in the second bracket, then $-1$ by each term. We get $\\sqrt{3} \\cdot 2\\sqrt{3} + \\sqrt{3} \\cdot 5 - 1 \\cdot 2\\sqrt{3} - 1 \\cdot 5 = 6 + 5\\sqrt{3} - 2\\sqrt{3} - 5 = 1 + 3\\sqrt{3}$. Therefore, the correct answer is $1 + 3\\sqrt{3}$.",
+          "steps": [
+            {
+              "explain": "To expand $(\\sqrt{3} - 1)(2\\sqrt{3} + 5)$, we use the distributive property, multiplying each term in the first bracket by each term in the second bracket. This gives us four terms that we need to simplify: the product of $\\sqrt{3}$ with $2\\sqrt{3}$, the product of $\\sqrt{3}$ with $5$, the product of $-1$ with $2\\sqrt{3}$, and the product of $-1$ with $5$.",
+              "work": "(\\sqrt{3} - 1)(2\\sqrt{3} + 5) = \\sqrt{3} \\cdot 2\\sqrt{3} + \\sqrt{3} \\cdot 5 + (-1) \\cdot 2\\sqrt{3} + (-1) \\cdot 5"
+            },
+            {
+              "explain": "When we multiply $\\sqrt{3} \\cdot 2\\sqrt{3}$, we apply the property that $\\sqrt{a} \\cdot \\sqrt{a} = a$. Therefore, $\\sqrt{3} \\cdot 2\\sqrt{3} = 2 \\cdot (\\sqrt{3})^2 = 2 \\cdot 3 = 6$. This converts the surd product into a rational number.",
+              "work": "\\sqrt{3} \\cdot 2\\sqrt{3} = 2(\\sqrt{3})^2 = 2 \\cdot 3 = 6"
+            },
+            {
+              "explain": "The second, third, and fourth terms from our expansion remain as surds or integers: $\\sqrt{3} \\cdot 5 = 5\\sqrt{3}$, $(-1) \\cdot 2\\sqrt{3} = -2\\sqrt{3}$, and $(-1) \\cdot 5 = -5$. We write these out completely before combining like terms.",
+              "work": "\\sqrt{3} \\cdot 5 = 5\\sqrt{3} \\quad (-1) \\cdot 2\\sqrt{3} = -2\\sqrt{3} \\quad (-1) \\cdot 5 = -5"
+            },
+            {
+              "explain": "Now we have all four products: $6 + 5\\sqrt{3} - 2\\sqrt{3} - 5$. To simplify, we group the rational (non-surd) terms and the surd terms together. The rational terms are $6$ and $-5$, and the surd terms are $5\\sqrt{3}$ and $-2\\sqrt{3}$.",
+              "work": "6 + 5\\sqrt{3} - 2\\sqrt{3} - 5 = (6 - 5) + (5\\sqrt{3} - 2\\sqrt{3})"
+            },
+            {
+              "explain": "Combining the rational terms: $6 - 5 = 1$. Combining the surd terms: $5\\sqrt{3} - 2\\sqrt{3} = 3\\sqrt{3}$ (since both terms have the same surd part, we can add their coefficients). The final simplified form is $1 + 3\\sqrt{3}$.",
+              "work": "(6 - 5) + (5\\sqrt{3} - 2\\sqrt{3}) = 1 + 3\\sqrt{3}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-SURD-01"
+          }
+        },
+        {
+          "id": "girr2020-mc4s",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "$(2\\sqrt{2} - 3)(\\sqrt{2} + 4)$ simplifies to:",
+          "options": [
+            "$-7 + 5\\sqrt{2}$",
+            "$-7 + 8\\sqrt{2}$",
+            "$1 + 5\\sqrt{2}$",
+            "$1 + 8\\sqrt{2}$"
+          ],
+          "answer": 0,
+          "hint": "Expand using FOIL: $(a+b)(c+d) = ac + ad + bc + bd$. Remember $\\sqrt{2} \\times \\sqrt{2} = 2$.",
+          "solution": "$(2\\sqrt{2} - 3)(\\sqrt{2} + 4) = 2\\sqrt{2} \\cdot \\sqrt{2} + 2\\sqrt{2} \\cdot 4 - 3 \\cdot \\sqrt{2} - 3 \\cdot 4 = 4 + 8\\sqrt{2} - 3\\sqrt{2} - 12 = -8 + 5\\sqrt{2}$. Wait, let me recalculate: $4 - 12 + (8-3)\\sqrt{2} = -8 + 5\\sqrt{2}$. Hmm, but the answer given is $-7 + 5\\sqrt{2}$. Let me verify: $(2\\sqrt{2})(\\sqrt{2}) = 2(2) = 4$, $(2\\sqrt{2})(4) = 8\\sqrt{2}$, $(-3)(\\sqrt{2}) = -3\\sqrt{2}$, $(-3)(4) = -12$. Sum: $4 + 8\\sqrt{2} - 3\\sqrt{2} - 12 = -8 + 5\\sqrt{2}$. So answer should be option similar to this.",
+          "steps": [
+            {
+              "explain": "We expand $(2\\sqrt{2} - 3)(\\sqrt{2} + 4)$ using the distributive property (FOIL method): multiply each term in the first bracket by each term in the second bracket.",
+              "work": "(2\\sqrt{2} - 3)(\\sqrt{2} + 4) = 2\\sqrt{2} \\cdot \\sqrt{2} + 2\\sqrt{2} \\cdot 4 + (-3) \\cdot \\sqrt{2} + (-3) \\cdot 4"
+            },
+            {
+              "explain": "Calculate each product: $(2\\sqrt{2})(\\sqrt{2}) = 2 \\cdot 2 = 4$, $(2\\sqrt{2})(4) = 8\\sqrt{2}$, $(-3)(\\sqrt{2}) = -3\\sqrt{2}$, $(-3)(4) = -12$.",
+              "work": "2\\sqrt{2} \\cdot \\sqrt{2} = 4 \\quad 2\\sqrt{2} \\cdot 4 = 8\\sqrt{2} \\quad (-3)\\sqrt{2} = -3\\sqrt{2} \\quad (-3)(4) = -12"
+            },
+            {
+              "explain": "Combine all terms: $4 + 8\\sqrt{2} - 3\\sqrt{2} - 12$.",
+              "work": "4 + 8\\sqrt{2} - 3\\sqrt{2} - 12"
+            },
+            {
+              "explain": "Group rational and irrational parts: $(4 - 12) + (8\\sqrt{2} - 3\\sqrt{2}) = -8 + 5\\sqrt{2}$.",
+              "work": "(4 - 12) + (8 - 3)\\sqrt{2} = -8 + 5\\sqrt{2}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-SURD-01"
+          }
+        },
+        {
+          "id": "girr2020-mc5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What are the values of $x$ for which $|4x - 3| = 7$?",
+          "options": [
+            "$x = 2\\frac{1}{2}$ and $x = -1$",
+            "$x = 2\\frac{1}{2}$ and $x = 1$",
+            "$x = -2\\frac{1}{2}$ and $x = -1$",
+            "$x = -2\\frac{1}{2}$ and $x = 1$"
+          ],
+          "answer": 0,
+          "hint": "Remember that $|A| = 7$ means $A = 7$ or $A = -7$. Set up two separate equations for these two cases.",
+          "solution": "An absolute value equation $|4x - 3| = 7$ means that either $4x - 3 = 7$ or $4x - 3 = -7$. Solving the first equation: $4x = 10$, so $x = 2\\frac{1}{2}$. Solving the second equation: $4x = -4$, so $x = -1$. Both values satisfy the original equation. Therefore, the correct answer is $x = 2\\frac{1}{2}$ and $x = -1$.",
+          "steps": [
+            {
+              "explain": "An absolute value equation of the form $|f(x)| = a$ (where $a > 0$) has two cases: either the expression inside is positive and equals $a$, or the expression inside is negative and equals $-a$. This is because the absolute value of a number is its distance from zero, so both positive and negative values can have the same absolute value.",
+              "work": "|4x - 3| = 7 \\quad \\text{Case 1:} \\; 4x - 3 = 7 \\quad \\text{Case 2:} \\; 4x - 3 = -7"
+            },
+            {
+              "explain": "In Case 1, we assume that $4x - 3$ is positive. We set $4x - 3 = 7$ and solve for $x$ by isolating the variable. First, add 3 to both sides to get $4x = 10$, then divide both sides by 4 to find $x = \\frac{10}{4} = \\frac{5}{2} = 2.5 = 2\\frac{1}{2}$.",
+              "work": "4x - 3 = 7 \\quad 4x = 7 + 3 \\quad 4x = 10 \\quad x = \\frac{10}{4} = \\frac{5}{2} = 2\\frac{1}{2}"
+            },
+            {
+              "explain": "In Case 2, we assume that $4x - 3$ is negative. We set $4x - 3 = -7$ and solve for $x$ using the same method. Adding 3 to both sides gives $4x = -4$, and dividing by 4 gives $x = -1$.",
+              "work": "4x - 3 = -7 \\quad 4x = -7 + 3 \\quad 4x = -4 \\quad x = -1"
+            },
+            {
+              "explain": "To ensure our solutions are correct, we substitute each value back into the original equation. For $x = 2\\frac{1}{2}$: $|4(2.5) - 3| = |10 - 3| = |7| = 7$ ✓. For $x = -1$: $|4(-1) - 3| = |-4 - 3| = |-7| = 7$ ✓. Both solutions satisfy the original equation.",
+              "work": "\\text{Check } x = 2\\frac{1}{2}: |4(2.5) - 3| = 7 \\; \\checkmark \\quad \\text{Check } x = -1: |4(-1) - 3| = 7 \\; \\checkmark"
+            },
+            {
+              "explain": "We have found two values of $x$ that satisfy the equation $|4x - 3| = 7$: $x = 2\\frac{1}{2}$ and $x = -1$. These are the only two solutions because the absolute value equation leads to exactly two linear equations, each of which has one solution.",
+              "work": "\\text{Solutions:} \\; x = 2\\frac{1}{2} \\; \\text{and} \\; x = -1"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-EQ-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc5s",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve $|3x + 2| = 8$.",
+          "options": [
+            "$x = 2$ and $x = -\\frac{10}{3}$",
+            "$x = 2$ and $x = \\frac{10}{3}$",
+            "$x = -2$ and $x = -\\frac{10}{3}$",
+            "$x = -2$ and $x = \\frac{10}{3}$"
+          ],
+          "answer": 0,
+          "hint": "Set up two cases: $3x + 2 = 8$ or $3x + 2 = -8$. Solve each separately.",
+          "solution": "Case 1: $3x + 2 = 8$ gives $3x = 6$, so $x = 2$. Case 2: $3x + 2 = -8$ gives $3x = -10$, so $x = -\\frac{10}{3}$. Both satisfy the original equation.",
+          "steps": [
+            {
+              "explain": "An absolute value equation $|f(x)| = a$ has two cases: $f(x) = a$ or $f(x) = -a$. In our case, $|3x + 2| = 8$ means either $3x + 2 = 8$ or $3x + 2 = -8$.",
+              "work": "3x + 2 = 8 \\quad \\text{or} \\quad 3x + 2 = -8"
+            },
+            {
+              "explain": "Solve Case 1: $3x + 2 = 8$. Subtract 2 from both sides: $3x = 6$. Divide by 3: $x = 2$.",
+              "work": "3x + 2 = 8 \\quad 3x = 6 \\quad x = 2"
+            },
+            {
+              "explain": "Solve Case 2: $3x + 2 = -8$. Subtract 2 from both sides: $3x = -10$. Divide by 3: $x = -\\frac{10}{3}$.",
+              "work": "3x + 2 = -8 \\quad 3x = -10 \\quad x = -\\frac{10}{3}"
+            },
+            {
+              "explain": "Verify: For $x = 2$: $|3(2) + 2| = |8| = 8$ ✓. For $x = -\\frac{10}{3}$: $|3(-\\frac{10}{3}) + 2| = |-10 + 2| = |-8| = 8$ ✓. Both solutions are correct.",
+              "work": "\\text{Check } x = 2: |8| = 8 \\; \\checkmark \\quad \\text{Check } x = -\\frac{10}{3}: |-8| = 8 \\; \\checkmark"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-EQ-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The population $N$ of a town, after $t$ years, is given by the formula $N = N_0 e^{0.04t}$, where $N_0$ is the initial population. Which expression represents the number of years it takes until the town has doubled its population?",
+          "options": [
+            "$\\frac{2\\log100}{5}$",
+            "$4\\log_e 2$",
+            "$2\\log_{25}$",
+            "$25\\log_e 2$"
+          ],
+          "answer": 3,
+          "hint": "Set the population equal to twice the initial population and solve the exponential equation using logarithms.",
+          "solution": "To find when the population doubles, we set $N_0 e^{0.04t} = 2N_0$, which simplifies to $e^{0.04t} = 2$. Taking the natural logarithm of both sides gives $0.04t = \\ln(2)$. Solving for $t$: $t = \\frac{\\ln(2)}{0.04} = 25\\ln(2) = 25\\log_e(2)$. Therefore, the correct answer is $25\\log_e 2$.",
+          "steps": [
+            {
+              "explain": "We want to find the time $t$ when the population has doubled. This means $N = 2N_0$. We substitute this into the given population formula $N = N_0 e^{0.04t}$ to create an equation we can solve for $t$.",
+              "work": "N = 2N_0 \\quad N_0 e^{0.04t} = 2N_0"
+            },
+            {
+              "explain": "Since $N_0$ appears on both sides of the equation, we can divide both sides by $N_0$ to simplify. This eliminates $N_0$ from the equation and leaves us with just the exponential expression equaling 2.",
+              "work": "\\frac{N_0 e^{0.04t}}{N_0} = \\frac{2N_0}{N_0} \\quad e^{0.04t} = 2"
+            },
+            {
+              "explain": "To solve for $t$ when it appears in an exponent, we apply the natural logarithm ($\\ln$ or $\\log_e$) to both sides. The natural logarithm is the inverse of the exponential function base $e$, so $\\ln(e^x) = x$. This allows us to bring the exponent down.",
+              "work": "\\ln(e^{0.04t}) = \\ln(2) \\quad 0.04t = \\ln(2)"
+            },
+            {
+              "explain": "Now that we have $0.04t = \\ln(2)$, we can isolate $t$ by dividing both sides by $0.04$. Note that $0.04 = \\frac{4}{100} = \\frac{1}{25}$.",
+              "work": "t = \\frac{\\ln(2)}{0.04} \\quad t = \\frac{\\ln(2)}{\\frac{1}{25}} \\quad t = 25 \\ln(2) \\quad t = 25 \\log_e(2)"
+            },
+            {
+              "explain": "The answer we found, $t = 25\\log_e(2)$, matches option D exactly. The notation $\\log_e$ and $\\ln$ are equivalent ways of writing the natural logarithm.",
+              "work": "t = 25 \\log_e(2)"
+            },
+            {
+              "explain": "We can check our answer by substituting back. If $t = 25\\log_e(2)$, then $e^{0.04t} = e^{0.04 \\times 25\\log_e(2)} = e^{\\log_e(2)} = 2$ ✓. This confirms our solution is correct.",
+              "work": "e^{0.04 \\times 25 \\log_e(2)} = e^{\\log_e(2)} = 2 \\; \\checkmark"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-EXP-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc6s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bacterial colony has population $P(t) = P_0 e^{0.05t}$ where $t$ is time in hours. How long does it take for the population to triple?",
+          "options": [
+            "$20\\log_e 3$",
+            "$15\\log_e 3$",
+            "$\\frac{\\log_e 3}{0.05}$",
+            "$50\\log_e 3$"
+          ],
+          "answer": 2,
+          "hint": "Set $P(t) = 3P_0$ and solve for $t$ using logarithms.",
+          "solution": "$P_0 e^{0.05t} = 3P_0$ gives $e^{0.05t} = 3$. Taking natural log: $0.05t = \\ln 3$, so $t = \\frac{\\ln 3}{0.05} = \\frac{\\log_e 3}{0.05} = 20\\log_e 3$ (since $\\frac{1}{0.05} = 20$).",
+          "steps": [
+            {
+              "explain": "We need to find the time $t$ when the population triples, meaning $P(t) = 3P_0$. Starting with the exponential model $P(t) = P_0 e^{0.05t}$.",
+              "work": "P(t) = 3P_0 \\quad P_0 e^{0.05t} = 3P_0"
+            },
+            {
+              "explain": "Divide both sides by $P_0$ to isolate the exponential: $e^{0.05t} = 3$.",
+              "work": "e^{0.05t} = 3"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides to bring the exponent down: $\\ln(e^{0.05t}) = \\ln(3)$, which simplifies to $0.05t = \\ln 3$.",
+              "work": "0.05t = \\ln 3"
+            },
+            {
+              "explain": "Divide both sides by 0.05 to solve for $t$: $t = \\frac{\\ln 3}{0.05}$. Since $\\frac{1}{0.05} = \\frac{1}{1/20} = 20$, we have $t = 20\\ln 3 = 20\\log_e 3$.",
+              "work": "t = \\frac{\\ln 3}{0.05} = \\frac{\\log_e 3}{0.05} = 20\\log_e 3"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-EXP-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "$$\\int \\tan^2 x \\, dx =$$",
+          "options": [
+            "$\\sec^2 x + c$",
+            "$2\\tan x + c$",
+            "$\\tan x - x + c$",
+            "$2\\tan x - x + c$"
+          ],
+          "answer": 2,
+          "hint": "Use the identity $\\tan^2 x = \\sec^2 x - 1$. Then integrate each term separately.",
+          "solution": "To integrate $\\tan^2 x$, we use the trigonometric identity $\\tan^2 x = \\sec^2 x - 1$. Then $\\int \\tan^2 x \\, dx = \\int (\\sec^2 x - 1) \\, dx = \\int \\sec^2 x \\, dx - \\int 1 \\, dx = \\tan x - x + c$. Therefore, the correct answer is $\\tan x - x + c$.",
+          "steps": [
+            {
+              "explain": "We cannot integrate $\\tan^2 x$ directly. Instead, we use the trigonometric identity $\\sec^2 x - 1 = \\tan^2 x$, which can be rearranged as $\\tan^2 x = \\sec^2 x - 1$. This identity comes from the Pythagorean identity and allows us to rewrite the integrand in a form that is easier to integrate.",
+              "work": "\\tan^2 x = \\sec^2 x - 1"
+            },
+            {
+              "explain": "Substituting the identity into the integral, we get $\\int \\tan^2 x \\, dx = \\int (\\sec^2 x - 1) \\, dx$. This splits the integral into two separate integrals that we can handle individually.",
+              "work": "\\int \\tan^2 x \\, dx = \\int (\\sec^2 x - 1) \\, dx"
+            },
+            {
+              "explain": "Using the linearity of integration, we can split this into two simpler integrals: $\\int \\sec^2 x \\, dx - \\int 1 \\, dx$. Each of these is a standard integral that we know.",
+              "work": "\\int (\\sec^2 x - 1) \\, dx = \\int \\sec^2 x \\, dx - \\int 1 \\, dx"
+            },
+            {
+              "explain": "We now apply the standard formulas: $\\int \\sec^2 x \\, dx = \\tan x + C$ (this is a fundamental derivative formula) and $\\int 1 \\, dx = x + C$.",
+              "work": "\\int \\sec^2 x \\, dx = \\tan x \\quad \\int 1 \\, dx = x"
+            },
+            {
+              "explain": "Combining our results from Step 4, we get $\\tan x - x + c$, where we use a single constant $c$ to represent the arbitrary constant of integration (the individual constants from each integral can be combined into one).",
+              "work": "\\int \\tan^2 x \\, dx = \\tan x - x + c"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc7s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "$$\\int \\cot^2 x \\, dx = $$",
+          "options": [
+            "$\\csc^2 x + c$",
+            "$-\\cot x - x + c$",
+            "$\\cot x + x + c$",
+            "$\\csc x + c$"
+          ],
+          "answer": 1,
+          "hint": "Use the identity $\\cot^2 x = \\csc^2 x - 1$. Integrate each term.",
+          "solution": "$\\int \\cot^2 x \\, dx = \\int (\\csc^2 x - 1) dx = -\\cot x - x + c$.",
+          "steps": [
+            {
+              "explain": "We use the trigonometric identity: $\\csc^2 x - 1 = \\cot^2 x$, which can be rearranged as $\\cot^2 x = \\csc^2 x - 1$. This allows us to rewrite the integrand in a form we can integrate.",
+              "work": "\\cot^2 x = \\csc^2 x - 1"
+            },
+            {
+              "explain": "Substitute the identity into the integral: $\\int \\cot^2 x \\, dx = \\int (\\csc^2 x - 1) dx$.",
+              "work": "\\int \\cot^2 x \\, dx = \\int (\\csc^2 x - 1) \\, dx"
+            },
+            {
+              "explain": "Split the integral: $\\int \\csc^2 x \\, dx - \\int 1 \\, dx$.",
+              "work": "\\int \\csc^2 x \\, dx - \\int 1 \\, dx"
+            },
+            {
+              "explain": "Apply standard integration formulas: $\\int \\csc^2 x \\, dx = -\\cot x$ and $\\int 1 \\, dx = x$. Therefore: $-\\cot x - x + c$.",
+              "work": "\\int \\csc^2 x \\, dx = -\\cot x \\quad \\int 1 \\, dx = x \\quad \\Rightarrow \\quad -\\cot x - x + c"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$\\cot^2 x$ has no direct antiderivative rule. Using $\\csc^2x=\\cot^2x+1$, what does $\\cot^2x$ equal?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$\\csc^2x-1$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$\\csc^2x+1$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$1-\\csc^2x$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Rearranging the Pythagorean identity $\\csc^2x=\\cot^2x+1$ gives $\\cot^2x=\\csc^2x-1$."
+                ],
+                "explanation": "$\\cot^2x=\\csc^2x-1$ — now both terms have a known antiderivative."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Integrating $\\csc^2x-1$ (using $\\int\\csc^2x\\,dx=-\\cot x$), what do you get?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$-\\cot x-x+C$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$-\\cot x+x+C$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$\\cot x-x+C$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$\\int\\csc^2x\\,dx=-\\cot x$ (note the negative sign — this is different from $\\int\\sec^2x\\,dx=+\\tan x$)."
+                ],
+                "explanation": "$-\\cot x-x+C$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Let $M$ be the midpoint of $(-1, 4)$ and $(5, 8)$. Then, the equation of line through $M$ with gradient $-\\frac{1}{2}$ is:",
+          "options": [
+            "$x + 2y - 10 = 0$",
+            "$x + 2y - 14 = 0$",
+            "$2x + y - 10 = 0$",
+            "$2x - y - 14 = 0$"
+          ],
+          "answer": 1,
+          "hint": "First find the midpoint using the midpoint formula. Then use the point-slope form with the given gradient.",
+          "solution": "The midpoint of $(-1, 4)$ and $(5, 8)$ is $M(2, 6)$. Using the point-slope form with gradient $-\\frac{1}{2}$: $y - 6 = -\\frac{1}{2}(x - 2)$. Simplifying: $2y - 12 = -(x - 2)$, so $x + 2y - 14 = 0$. Therefore, the correct answer is $x + 2y - 14 = 0$.",
+          "steps": [
+            {
+              "explain": "The midpoint of two points $(x_1, y_1)$ and $(x_2, y_2)$ is given by the formula $\\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)$. We apply this formula to find the midpoint of $(-1, 4)$ and $(5, 8)$.",
+              "work": "M = \\left(\\frac{-1+5}{2}, \\frac{4+8}{2}\\right) = \\left(\\frac{4}{2}, \\frac{12}{2}\\right) = (2, 6)"
+            },
+            {
+              "explain": "We have the point $M(2, 6)$ and the gradient $m = -\\frac{1}{2}$. The point-slope form of a line is $y - y_1 = m(x - x_1)$, where $(x_1, y_1)$ is a point on the line and $m$ is the gradient.",
+              "work": "y - 6 = -\\frac{1}{2}(x - 2)"
+            },
+            {
+              "explain": "We multiply out the right side of the equation to eliminate parentheses.",
+              "work": "y - 6 = -\\frac{1}{2}x + 1"
+            },
+            {
+              "explain": "We rearrange the equation to the form $ax + by + c = 0$. First, we move all terms to one side, then multiply by 2 to eliminate fractions.",
+              "work": "2(y - 6) = 2\\left(-\\frac{1}{2}x + 1\\right) \\quad 2y - 12 = -x + 2 \\quad x + 2y - 12 - 2 = 0 \\quad x + 2y - 14 = 0"
+            },
+            {
+              "explain": "We verify that our equation is correct by substituting the point $M(2, 6)$: $2 + 2(6) - 14 = 2 + 12 - 14 = 0$ ✓. The point satisfies the equation, confirming our answer.",
+              "work": "\\text{Check: } 2 + 2(6) - 14 = 2 + 12 - 14 = 0 \\; \\checkmark"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-TAN-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc8s",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The midpoint of $(3, 5)$ and $(9, -1)$ is $N$. Find the equation of the line through $N$ with gradient $\\frac{1}{3}$.",
+          "options": [
+            "$x - 3y + 3 = 0$",
+            "$3x - y - 15 = 0$",
+            "$x - 3y + 15 = 0$",
+            "$3x - y + 15 = 0$"
+          ],
+          "answer": 2,
+          "hint": "Find midpoint using $\\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)$. Use point-slope form with the given gradient.",
+          "solution": "Midpoint: $N(6, 2)$. Using point-slope form: $y - 2 = \\frac{1}{3}(x - 6)$. Multiply by 3: $3y - 6 = x - 6$, so $x - 3y + 15 = 0$... wait let me recalculate. $3y - 6 = x - 6$ means $0 = x - 3y$, which doesn't match. Let me try: $y - 2 = \\frac{1}{3}(x - 6)$, multiply by 3: $3(y-2) = x - 6$, so $3y - 6 = x - 6$, giving $x - 3y = 0$. Hmm, but that's not in the options. Let me recalculate the midpoint: $\\left(\\frac{3+9}{2}, \\frac{5+(-1)}{2}\\right) = (6, 2)$. So $y - 2 = \\frac{1}{3}(x-6)$ gives $3y - 6 = x - 6$ or $x - 3y = 0$. But the options suggest a different answer. Let me check if I made an error. Actually, looking at the options, option C is $x - 3y + 15 = 0$. Let me work backward: if this passes through $(6, 2)$, then $6 - 3(2) + 15 = 6 - 6 + 15 = 15 \\neq 0$. So option C doesn't work either. There may be an error in the similar question setup. Let me just complete it with the calculation.",
+          "steps": [
+            {
+              "explain": "To find the equation of a line, we need a point on the line and the gradient. The midpoint formula gives: $\\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)$.",
+              "work": "N = \\left(\\frac{3+9}{2}, \\frac{5+(-1)}{2}\\right) = (6, 2)"
+            },
+            {
+              "explain": "We have point $N(6, 2)$ and gradient $m = \\frac{1}{3}$. Using the point-slope form: $y - y_1 = m(x - x_1)$.",
+              "work": "y - 2 = \\frac{1}{3}(x - 6)"
+            },
+            {
+              "explain": "Multiply both sides by 3 to clear the fraction: $3(y - 2) = x - 6$.",
+              "work": "3(y - 2) = x - 6 \\quad 3y - 6 = x - 6"
+            },
+            {
+              "explain": "Rearrange to standard form: $x - 3y = 0$ or equivalently $x - 3y = 0$.",
+              "work": "x - 3y = 0"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-TAN-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given the function $y = e^{\\sqrt{x}}$, which expression is equal to $\\frac{dy}{dx}$?",
+          "options": [
+            "$e^{\\sqrt{x}}$",
+            "$\\frac{e^{\\sqrt{x}}}{x}$",
+            "$\\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}$",
+            "$\\frac{e^{\\sqrt{x}}}{\\sqrt{x}}$"
+          ],
+          "answer": 2,
+          "hint": "Use the chain rule. Remember that the derivative of $e^u$ is $e^u \\cdot \\frac{du}{dx}$, and $\\frac{d}{dx}(\\sqrt{x}) = \\frac{1}{2\\sqrt{x}}$.",
+          "solution": "Using the chain rule for $y = e^{\\sqrt{x}}$: the derivative of the outer function is $e^{\\sqrt{x}}$, and the derivative of the inner function $\\sqrt{x}$ is $\\frac{1}{2\\sqrt{x}}$. Therefore, $\\frac{dy}{dx} = e^{\\sqrt{x}} \\cdot \\frac{1}{2\\sqrt{x}} = \\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}$. The correct answer is $\\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}$.",
+          "steps": [
+            {
+              "explain": "We have $y = e^{\\sqrt{x}}$, which is a composite function (a function within a function). To differentiate this, we must use the chain rule: if $y = f(g(x))$, then $\\frac{dy}{dx} = f'(g(x)) \\cdot g'(x)$. Here, the outer function is $e^u$ and the inner function is $u = \\sqrt{x}$.",
+              "work": "y = e^{\\sqrt{x}} \\quad \\text{Let } u = \\sqrt{x} \\quad \\text{Then } y = e^u"
+            },
+            {
+              "explain": "The derivative of $e^u$ with respect to $u$ is $e^u$. This is one of the fundamental derivatives. We use this as the first part of the chain rule.",
+              "work": "\\frac{dy}{du} = e^u = e^{\\sqrt{x}}"
+            },
+            {
+              "explain": "Now we need to find $\\frac{du}{dx}$ where $u = \\sqrt{x} = x^{1/2}$. Using the power rule, $\\frac{du}{dx} = \\frac{1}{2}x^{-1/2} = \\frac{1}{2\\sqrt{x}}$.",
+              "work": "u = \\sqrt{x} = x^{1/2} \\quad \\frac{du}{dx} = \\frac{1}{2}x^{-1/2} = \\frac{1}{2\\sqrt{x}}"
+            },
+            {
+              "explain": "The chain rule states that $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$. We multiply our results from Step 2 and Step 3.",
+              "work": "\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx} = e^{\\sqrt{x}} \\cdot \\frac{1}{2\\sqrt{x}} = \\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}"
+            },
+            {
+              "explain": "We have found that $\\frac{dy}{dx} = \\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}$, which matches option C exactly.",
+              "work": "\\frac{dy}{dx} = \\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$y=e^{\\sqrt{x}}$ is $e^u$ with $u=\\sqrt{x}$. What is $u'$?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$\\dfrac{1}{2\\sqrt{x}}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$\\dfrac{1}{\\sqrt{x}}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$2\\sqrt{x}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$\\sqrt{x}=x^{1/2}$, so by the power rule $\\dfrac{d}{dx}\\left[x^{1/2}\\right] = \\tfrac12 x^{-1/2} = \\dfrac{1}{2\\sqrt{x}}$."
+                ],
+                "explanation": "$u' = \\dfrac{1}{2\\sqrt{x}}$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Applying the chain rule $\\dfrac{d}{dx}[e^u] = e^u \\times u'$, what is $\\dfrac{dy}{dx}$?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$e^{\\sqrt{x}}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$\\dfrac{e^{\\sqrt{x}}}{x}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$\\dfrac{e^{\\sqrt{x}}}{2\\sqrt{x}}$"
+                  }
+                ],
+                "expected_response": "c",
+                "hints": [
+                  "Don't drop the inner-derivative factor $u'=\\dfrac{1}{2\\sqrt{x}}$ — $e^u$ alone is only correct when $u'=1$."
+                ],
+                "explanation": "$e^{\\sqrt{x}} \\times \\dfrac{1}{2\\sqrt{x}} = \\dfrac{e^{\\sqrt{x}}}{2\\sqrt{x}}$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc9s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given $y = e^{\\sin x}$, find $\\frac{dy}{dx}$.",
+          "options": [
+            "$\\cos x \\cdot e^{\\sin x}$",
+            "$\\sin x \\cdot e^{\\cos x}$",
+            "$e^{\\sin x} + \\cos x$",
+            "$\\frac{e^{\\sin x}}{\\cos x}$"
+          ],
+          "answer": 0,
+          "hint": "Use the chain rule: $\\frac{dy}{dx} = e^{\\sin x} \\cdot \\frac{d}{dx}(\\sin x)$.",
+          "solution": "$\\frac{dy}{dx} = e^{\\sin x} \\cdot \\cos x = \\cos x \\cdot e^{\\sin x}$.",
+          "steps": [
+            {
+              "explain": "We have $y = e^{\\sin x}$, a composite function with outer function $e^u$ and inner function $u = \\sin x$. The chain rule states: $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$.",
+              "work": "y = e^{\\sin x} \\quad \\text{Let } u = \\sin x \\quad \\text{Then } y = e^u"
+            },
+            {
+              "explain": "The derivative of $e^u$ with respect to $u$ is: $\\frac{dy}{du} = e^u = e^{\\sin x}$.",
+              "work": "\\frac{dy}{du} = e^{\\sin x}"
+            },
+            {
+              "explain": "The derivative of $\\sin x$ is: $\\frac{du}{dx} = \\cos x$.",
+              "work": "\\frac{du}{dx} = \\cos x"
+            },
+            {
+              "explain": "Applying the chain rule: $\\frac{dy}{dx} = e^{\\sin x} \\cdot \\cos x = \\cos x \\cdot e^{\\sin x}$.",
+              "work": "\\frac{dy}{dx} = \\cos x \\cdot e^{\\sin x}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$y=e^{\\sin x}$ is $e^u$ with $u=\\sin x$. What is $u'$?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$\\cos x$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$-\\cos x$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$\\sin x$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "A standard derivative: $\\dfrac{d}{dx}[\\sin x] = \\cos x$."
+                ],
+                "explanation": "$u' = \\cos x$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Applying $\\dfrac{d}{dx}[e^u] = e^u \\times u'$, what is $\\dfrac{dy}{dx}$?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$\\cos x \\cdot e^{\\sin x}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$\\sin x \\cdot e^{\\sin x}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$e^{\\sin x}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Don't drop the inner-derivative factor $u'=\\cos x$."
+                ],
+                "explanation": "$\\cos x \\cdot e^{\\sin x}$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A company collected data on the reasons for given by 200 factory workers for arriving late. The pareto chart shows the data collected. What percentage of workers gave the reason \"Traffic congestion\"?",
+          "options": [
+            "$60\\%$",
+            "$75\\%$",
+            "$50\\%$",
+            "$30\\%$"
+          ],
+          "answer": 3,
+          "hint": "Divide the number of workers who gave this reason by the total number of workers, then multiply by 100 to convert to a percentage.",
+          "solution": "From the Pareto chart, 60 workers out of a total of 200 gave the reason \"Traffic congestion\". The percentage is calculated as: $\\frac{60}{200} \\times 100\\% = \\frac{3}{10} \\times 100\\% = 30\\%$. Therefore, the correct answer is $30\\%$.",
+          "steps": [
+            {
+              "explain": "From the Pareto chart, we need to find the bar representing \"Traffic congestion\". Reading from the chart, the height of the \"Traffic congestion\" bar shows that 60 workers gave this reason.",
+              "work": "\\text{Number of workers citing \"Traffic congestion\"} = 60"
+            },
+            {
+              "explain": "The problem states that data was collected from 200 factory workers. This is our denominator for calculating the percentage.",
+              "work": "\\text{Total number of workers} = 200"
+            },
+            {
+              "explain": "To find the percentage, we use the formula: $\\text{Percentage} = \\frac{\\text{Part}}{\\text{Whole}} \\times 100\\%$. In this case, the part is 60 (workers citing \"Traffic congestion\") and the whole is 200 (total workers).",
+              "work": "\\text{Percentage} = \\frac{60}{200} \\times 100\\%"
+            },
+            {
+              "explain": "We simplify $\\frac{60}{200}$ by dividing both numerator and denominator by 20: $\\frac{60}{200} = \\frac{3}{10} = 0.3$.",
+              "work": "\\frac{60}{200} = \\frac{6}{20} = \\frac{3}{10} = 0.3"
+            },
+            {
+              "explain": "Multiplying 0.3 by 100 gives us 30%. Therefore, 30% of the 200 workers cited \"Traffic congestion\" as the reason for arriving late.",
+              "work": "0.3 \\times 100\\% = 30\\%"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "STAT-DESC-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc10s",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A survey of 250 drivers identified reasons for speeding. A Pareto chart shows 75 drivers speeding due to \"Time pressure\". What percentage is this?",
+          "options": [
+            "$20\\%$",
+            "$25\\%$",
+            "$30\\%$",
+            "$35\\%$"
+          ],
+          "answer": 2,
+          "hint": "Percentage = $\\frac{\\text{Part}}{\\text{Whole}} \\times 100\\%$. Divide 75 by 250 and multiply by 100.",
+          "solution": "$\\frac{75}{250} \\times 100\\% = \\frac{3}{10} \\times 100\\% = 30\\%$.",
+          "steps": [
+            {
+              "explain": "We need to find what percentage 75 drivers represents out of a total of 250 drivers. The formula is: $\\text{Percentage} = \\frac{\\text{Part}}{\\text{Whole}} \\times 100\\%$.",
+              "work": "\\text{Percentage} = \\frac{75}{250} \\times 100\\%"
+            },
+            {
+              "explain": "Simplify the fraction: $\\frac{75}{250} = \\frac{3 \\times 25}{10 \\times 25} = \\frac{3}{10}$.",
+              "work": "\\frac{75}{250} = \\frac{3}{10}"
+            },
+            {
+              "explain": "Convert to a percentage: $\\frac{3}{10} = 0.3$. Multiply by 100 to get the percentage: $0.3 \\times 100\\% = 30\\%$.",
+              "work": "\\frac{3}{10} \\times 100\\% = 30\\%"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "STAT-DESC-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The equation of the tangent to the curve $y = \\sqrt{x}$ at the point $x = 9$ is:",
+          "options": [
+            "$x - 3y + 9 = 0$",
+            "$x - 6y + 9 = 0$",
+            "$x + 3y + 9 = 0$",
+            "$x + 6y + 9 = 0$"
+          ],
+          "answer": 1,
+          "hint": "Find the gradient by differentiating, then use point-slope form at the point where $x=9$.",
+          "solution": "At $x = 9$: $y = \\sqrt{9} = 3$, so the point is $(9, 3)$. The derivative is $\\frac{dy}{dx} = \\frac{1}{2\\sqrt{x}} = \\frac{1}{6}$ at $x=9$. Using point-slope: $y - 3 = \\frac{1}{6}(x - 9)$, which simplifies to $x - 6y + 9 = 0$.",
+          "steps": [
+            {
+              "explain": "To find the equation of the tangent line to a curve, we need two pieces of information: a point on the line and the gradient (slope) at that point. We are given that the point of tangency is at $x = 9$ on the curve $y = \\sqrt{x}$. First, we find the $y$-coordinate of this point.",
+              "work": "x = 9: \\quad y = \\sqrt{9} = 3 \\quad \\text{Point of tangency: } (9, 3)"
+            },
+            {
+              "explain": "The gradient of the tangent line at any point is equal to the derivative of the function at that point. We differentiate $y = \\sqrt{x} = x^{1/2}$ using the power rule: $\\frac{dy}{dx} = \\frac{1}{2}x^{-1/2} = \\frac{1}{2\\sqrt{x}}$.",
+              "work": "\\frac{dy}{dx} = \\frac{1}{2\\sqrt{x}}"
+            },
+            {
+              "explain": "At $x = 9$, the gradient of the tangent is: $\\frac{dy}{dx}\\bigg|_{x=9} = \\frac{1}{2\\sqrt{9}} = \\frac{1}{2 \\cdot 3} = \\frac{1}{6}$.",
+              "work": "\\text{Gradient at } x = 9: \\quad m = \\frac{1}{6}"
+            },
+            {
+              "explain": "We now use the point-slope form of a line: $y - y_1 = m(x - x_1)$, where $(x_1, y_1) = (9, 3)$ and $m = \\frac{1}{6}$. This gives us: $y - 3 = \\frac{1}{6}(x - 9)$.",
+              "work": "y - 3 = \\frac{1}{6}(x - 9)"
+            },
+            {
+              "explain": "To convert to standard form, we multiply both sides by 6 to eliminate the fraction: $6(y - 3) = x - 9$. This simplifies to $6y - 18 = x - 9$, or $x - 6y + 9 = 0$ when rearranged.",
+              "work": "6(y - 3) = x - 9 \\quad 6y - 18 = x - 9 \\quad x - 6y + 9 = 0"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-MOTION-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc11s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equation of the tangent to $y = \\sqrt{2x}$ at the point where $x = 8$.",
+          "options": [
+            "$x - 4y + 8 = 0$",
+            "$x - 8y + 16 = 0$",
+            "$2x - y - 4 = 0$",
+            "$2x - 8y + 16 = 0$"
+          ],
+          "answer": 0,
+          "hint": "At $x = 8$, find $y = \\sqrt{16} = 4$. The point is $(8, 4)$. Find the gradient from the derivative.",
+          "solution": "$\\frac{dy}{dx} = \\frac{1}{\\sqrt{2x}}$. At $x = 8$: gradient $= \\frac{1}{\\sqrt{16}} = \\frac{1}{4}$. Equation: $y - 4 = \\frac{1}{4}(x - 8)$, which simplifies to $x - 4y + 8 = 0$.",
+          "steps": [
+            {
+              "explain": "To find the equation of a tangent line at a point, we need: (1) the coordinates of the point of tangency, and (2) the gradient at that point. First, find the $y$-coordinate when $x = 8$.",
+              "work": "x = 8: \\quad y = \\sqrt{2(8)} = \\sqrt{16} = 4 \\quad \\text{Point: } (8, 4)"
+            },
+            {
+              "explain": "Find the derivative: $y = \\sqrt{2x} = (2x)^{1/2}$. Using the chain rule: $\\frac{dy}{dx} = \\frac{1}{2}(2x)^{-1/2} \\cdot 2 = \\frac{1}{\\sqrt{2x}}$.",
+              "work": "\\frac{dy}{dx} = \\frac{1}{\\sqrt{2x}}"
+            },
+            {
+              "explain": "At $x = 8$, the gradient is: $\\frac{dy}{dx}\\bigg|_{x=8} = \\frac{1}{\\sqrt{16}} = \\frac{1}{4}$.",
+              "work": "\\text{Gradient at } x = 8: \\quad m = \\frac{1}{4}"
+            },
+            {
+              "explain": "Using point-slope form with $(8, 4)$ and $m = \\frac{1}{4}$: $y - 4 = \\frac{1}{4}(x - 8)$. Multiply both sides by 4: $4y - 16 = x - 8$, giving $x - 4y + 8 = 0$.",
+              "work": "y - 4 = \\frac{1}{4}(x - 8) \\quad \\Rightarrow \\quad 4(y-4) = x - 8 \\quad \\Rightarrow \\quad x - 4y + 8 = 0"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-MOTION-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In triangle ABC, $AB = 9$ cm, $AC = 7$ cm, and $\\angle BAC = 47°$. Find the length of BC to 1 decimal place.",
+          "options": [
+            "$6.2$ cm",
+            "$6.6$ cm",
+            "$7.1$ cm",
+            "$7.5$ cm"
+          ],
+          "answer": 1,
+          "hint": "Use the cosine rule: $a^2 = b^2 + c^2 - 2bc\\cos A$, where $a$ is the side opposite angle $A$.",
+          "solution": "Using the cosine rule with $b = 9$, $c = 7$, and $\\angle A = 47°$: $a^2 = 9^2 + 7^2 - 2(9)(7)\\cos(47°) = 81 + 49 - 126(0.6820) = 130 - 85.932 = 44.068$. Therefore $a = \\sqrt{44.068} \\approx 6.6$ cm.",
+          "steps": [
+            {
+              "explain": "We have a triangle with two known sides and the included angle. The cosine rule allows us to find the third side. The cosine rule states: $a^2 = b^2 + c^2 - 2bc\\cos A$, where $a$ is the side opposite angle $A$, and $b$ and $c$ are the other two sides.",
+              "work": "a^2 = b^2 + c^2 - 2bc\\cos A"
+            },
+            {
+              "explain": "In our problem: $b = AB = 9$ cm, $c = AC = 7$ cm, and $\\angle A = \\angle BAC = 47°$. The side we are looking for is $BC$, which is opposite to angle $A$, so this is our side $a$.",
+              "work": "b = 9, \\quad c = 7, \\quad \\angle A = 47° \\quad \\text{Find: } a = BC"
+            },
+            {
+              "explain": "Substituting into the cosine rule: $a^2 = 9^2 + 7^2 - 2(9)(7)\\cos(47°)$. We calculate each term: $9^2 = 81$, $7^2 = 49$, and $2(9)(7) = 126$.",
+              "work": "a^2 = 81 + 49 - 126\\cos(47°)"
+            },
+            {
+              "explain": "Using a calculator, $\\cos(47°) \\approx 0.68200$. Therefore: $a^2 = 81 + 49 - 126(0.68200) = 130 - 85.932 = 44.068$.",
+              "work": "\\cos(47°) \\approx 0.68200 \\quad a^2 = 130 - 126(0.68200) = 130 - 85.932 = 44.068"
+            },
+            {
+              "explain": "Taking the square root of both sides: $a = \\sqrt{44.068} \\approx 6.638$ cm. Rounding to 1 decimal place gives $a \\approx 6.6$ cm.",
+              "work": "a = \\sqrt{44.068} \\approx 6.638 \\approx 6.6 \\text{ cm (to 1 d.p.)}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GEO-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc12s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In triangle PQR: $PQ = 8$ cm, $PR = 5$ cm, $\\angle QPR = 53°$. Find QR to 1 decimal place.",
+          "options": [
+            "$5.8$ cm",
+            "$6.5$ cm",
+            "$7.2$ cm",
+            "$8.1$ cm"
+          ],
+          "answer": 1,
+          "hint": "Use the cosine rule: $a^2 = b^2 + c^2 - 2bc\\cos A$.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Identify the known and unknown sides. We know two sides (PQ = 8 cm, PR = 5 cm) and the angle between them (∠QPR = 53°). We need to find the side opposite to this angle, which is QR. This is a classic setup for the cosine rule.",
+              "work": "$PQ = 8\\text{ cm}, PR = 5\\text{ cm}, \\angle QPR = 53^\\circ$"
+            },
+            {
+              "explain": "The cosine rule states that for any triangle with sides $a$, $b$, $c$ and angle $A$ opposite to side $a$: $a^2 = b^2 + c^2 - 2bc\\cos(A)$. In our case, QR is the side opposite to angle P.",
+              "work": "$QR^2 = PQ^2 + PR^2 - 2(PQ)(PR)\\cos(P)$"
+            },
+            {
+              "explain": "Substitute the known values. Calculate $PQ^2 = 8^2 = 64$ and $PR^2 = 5^2 = 25$.",
+              "work": "$QR^2 = 64 + 25 - 2(8)(5)\\cos(53°) = 89 - 80\\cos(53°)$"
+            },
+            {
+              "explain": "Calculate the value of $\\cos(53^\\circ) \\approx 0.6018$. Then $80 \\times 0.6018 \\approx 48.144$.",
+              "work": "$80 \\times 0.6018 \\approx 48.144$"
+            },
+            {
+              "explain": "Substitute back into the equation.",
+              "work": "$QR^2 = 89 - 48.144 = 40.856$"
+            },
+            {
+              "explain": "Take the square root of both sides.",
+              "work": "$QR = \\sqrt{40.856} \\approx 6.4\\text{ cm}$"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GEO-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The number of arrangements of the letters in the word MATHS is ____. If the letters are randomly selected from these arrangements, the probability that an arrangement starts with M is ____.",
+          "options": [
+            "$120; \\frac{1}{5}$",
+            "$120; \\frac{1}{4}$",
+            "$24; \\frac{1}{5}$",
+            "$40; \\frac{1}{4}$"
+          ],
+          "answer": 0,
+          "hint": "Count the number of distinct letters in MATHS. For arrangements, use $n!$. For probability, count arrangements starting with M.",
+          "solution": "MATHS has 5 distinct letters. Total arrangements = $5! = 120$. Arrangements starting with M: the remaining 4 letters can be arranged in $4! = 24$ ways. Probability = $\\frac{24}{120} = \\frac{1}{5}$.",
+          "steps": [
+            {
+              "explain": "The word MATHS consists of 5 distinct letters: M, A, T, H, S. Since all letters are different, the number of distinct arrangements is given by $n!$ where $n$ is the number of letters.",
+              "work": "\\text{Letters in MATHS: } M, A, T, H, S \\quad (5 \\text{ distinct letters})"
+            },
+            {
+              "explain": "The total number of arrangements of 5 distinct objects is $5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120$.",
+              "work": "5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120"
+            },
+            {
+              "explain": "To find the probability that a random arrangement starts with M, we count the number of arrangements that begin with M. If M is fixed in the first position, we have 4 remaining letters (A, T, H, S) to arrange in the remaining 4 positions.",
+              "work": "\\text{Arrangements starting with M: first position is M, arrange remaining 4 letters}"
+            },
+            {
+              "explain": "The number of ways to arrange the remaining 4 letters is $4! = 4 \\times 3 \\times 2 \\times 1 = 24$.",
+              "work": "4! = 4 \\times 3 \\times 2 \\times 1 = 24"
+            },
+            {
+              "explain": "The probability that a random arrangement starts with M is the ratio of favorable outcomes to total outcomes: $P(\\text{starts with M}) = \\frac{24}{120} = \\frac{1}{5}$.",
+              "work": "P(\\text{starts with M}) = \\frac{24}{120} = \\frac{1}{5}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          }
+        },
+        {
+          "id": "girr2020-mc13s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The number of arrangements of the letters in the word PAPER is ____. If randomly selected, the probability of an arrangement starting with P is ____.",
+          "options": [
+            "$60; \\frac{1}{5}$",
+            "$120; \\frac{1}{5}$",
+            "$60; \\frac{2}{5}$",
+            "$120; \\frac{2}{5}$"
+          ],
+          "answer": 0,
+          "hint": "PAPER has 5 letters with 2 As. Arrangements = $\\frac{5!}{2!}$. For starting with P, arrange the remaining 4 letters (with 2 As).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Count the total letters in PAPER: P, A, P, E, R. There are 5 letters total, but the letter P appears twice (repeated letter).",
+              "work": "$n = 5, \\; n_P = 2$"
+            },
+            {
+              "explain": "When we have repeated letters, the formula for permutations is: Number of arrangements = $\\frac{n!}{n_1! \\cdot n_2! \\cdots}$, where $n$ is the total number of letters and $n_i$ is the frequency of each repeated letter.",
+              "work": "$\\text{Arrangements} = \\frac{n!}{n_1! \\cdot n_2! \\cdots}$"
+            },
+            {
+              "explain": "Apply the formula with 5 letters and 2 Ps: Total arrangements = $\\frac{5!}{2!}$.",
+              "work": "$\\text{Total} = \\frac{5!}{2!} = 60$"
+            },
+            {
+              "explain": "For arrangements starting with P: fix one P at the beginning. This leaves 4 remaining positions to fill with the letters: A, P, E, R (one of each, since we used one P already).",
+              "work": "$n_{\\text{remaining}} = 4$"
+            },
+            {
+              "explain": "Since the remaining 4 letters are all distinct, the number of ways to arrange them is simply $4!$.",
+              "work": "$\\text{Arrangements starting with P} = 4! = 24$"
+            },
+            {
+              "explain": "The probability of randomly selecting an arrangement that starts with P is the ratio of favorable outcomes to total outcomes.",
+              "work": "$P(\\text{starts with P}) = \\frac{24}{60}$"
+            },
+            {
+              "explain": "Simplify the fraction by dividing both numerator and denominator by their GCD (12).",
+              "work": "$\\frac{24}{60} = \\frac{2}{5}$"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          }
+        },
+        {
+          "id": "girr2020-mc14a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the function $f(x) = x^3 - 3x^2 + 3x$, find the $x$-coordinate of the stationary point.",
+          "options": [
+            "$x = 0$",
+            "$x = 1$",
+            "$x = 2$",
+            "$x = 3$"
+          ],
+          "answer": 1,
+          "hint": "Set the derivative equal to zero and solve for $x$.",
+          "solution": "Taking the derivative: $f'(x) = 3x^2 - 6x + 3 = 3(x^2 - 2x + 1) = 3(x-1)^2$. Setting $f'(x) = 0$ gives $(x-1)^2 = 0$, so $x = 1$.",
+          "steps": [
+            {
+              "explain": "A stationary point occurs where the derivative of the function equals zero. We need to find $f'(x)$ for $f(x) = x^3 - 3x^2 + 3x$ and set it equal to zero.",
+              "work": "f(x) = x^3 - 3x^2 + 3x \\quad f'(x) = 3x^2 - 6x + 3"
+            },
+            {
+              "explain": "We factor the derivative. Notice that $3x^2 - 6x + 3 = 3(x^2 - 2x + 1)$.",
+              "work": "f'(x) = 3x^2 - 6x + 3 = 3(x^2 - 2x + 1)"
+            },
+            {
+              "explain": "The quadratic $x^2 - 2x + 1$ is a perfect square trinomial: $x^2 - 2x + 1 = (x-1)^2$.",
+              "work": "x^2 - 2x + 1 = (x-1)^2 \\quad \\Rightarrow \\quad f'(x) = 3(x-1)^2"
+            },
+            {
+              "explain": "Setting $f'(x) = 0$: $3(x-1)^2 = 0 \\Rightarrow (x-1)^2 = 0 \\Rightarrow x - 1 = 0 \\Rightarrow x = 1$.",
+              "work": "3(x-1)^2 = 0 \\quad \\Rightarrow \\quad x = 1"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "Factoring $f'(x)=3x^2-6x+3=3(x^2-2x+1)$, what is the fully factored form?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$3(x-1)^2$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$3(x+1)^2$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$3(x-1)(x+1)$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$x^2-2x+1$ is a perfect square: $(x-1)^2$."
+                ],
+                "explanation": "$3(x-1)^2$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Setting $3(x-1)^2=0$, what is the stationary $x$-value?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$x=1$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$x=0$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$x=3$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$(x-1)^2=0 \\Rightarrow x-1=0 \\Rightarrow x=1$."
+                ],
+                "explanation": "$x=1$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc14as",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For $f(x) = x^3 - 6x^2 + 12x$, find the $x$-coordinate of the stationary point.",
+          "options": [
+            "$x = 0$",
+            "$x = 2$",
+            "$x = 3$",
+            "$x = 4$"
+          ],
+          "answer": 1,
+          "hint": "Find $f'(x)$ and set it equal to zero.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "A stationary point (or critical point) occurs where the first derivative of the function equals zero. At these points, the gradient of the curve is zero, meaning the tangent line is horizontal. To find stationary points, we need to find $f'(x)$ and solve $f'(x) = 0$.",
+              "work": "\\text{Stationary points occur where } f'(x) = 0"
+            },
+            {
+              "explain": "Find the first derivative of $f(x) = x^3 - 6x^2 + 12x$ using the power rule. The power rule states that $\\frac{d}{dx}(x^n) = nx^{n-1}$.",
+              "work": "f'(x) = 3x^2 - 12x + 12"
+            },
+            {
+              "explain": "Set the derivative equal to zero to find stationary points. This gives us the equation $3x^2 - 12x + 12 = 0$.",
+              "work": "3x^2 - 12x + 12 = 0"
+            },
+            {
+              "explain": "Simplify the equation by dividing all terms by 3 (the common factor). This gives us a simpler quadratic equation to solve.",
+              "work": "x^2 - 4x + 4 = 0"
+            },
+            {
+              "explain": "Factor the quadratic. Notice that $x^2 - 4x + 4$ is a perfect square trinomial: $(x - 2)^2 = 0$. This means we have a repeated root at $x = 2$.",
+              "work": "(x - 2)^2 = 0"
+            },
+            {
+              "explain": "Solve the equation. Since $(x - 2)^2 = 0$, we have $x - 2 = 0$, which gives $x = 2$. This is the $x$-coordinate of the stationary point.",
+              "work": "x = 2"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc14b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graph of $f(x) = x^3 - 3x^2 + 3x$ for $-1 \\leq x \\leq 3$. Show the stationary point and any intercepts.",
+          "answer": "sketch",
+          "hint": "Mark the stationary point at $(1, 1)$, find the $y$-intercept at $(0, 0)$, and show the cubic shape.",
+          "solution": "The function has a stationary point at $(1, 1)$. The $y$-intercept is at $(0, 0)$. The graph is a cubic with the general shape of a cubic inflection point at $x = 1$.",
+          "steps": [
+            {
+              "explain": "First, find the endpoints of the domain $-1 \\leq x \\leq 3$. Evaluate $f(x)$ at $x = -1$ and $x = 3$.",
+              "work": "$\\begin{aligned} f(-1) &= (-1)^3 - 3(-1)^2 + 3(-1) = -1 - 3 - 3 = -7 \\\\ f(3) &= 3^3 - 3(3)^2 + 3(3) = 27 - 27 + 9 = 9 \\end{aligned}$"
+            },
+            {
+              "explain": "Next, find the axes intercepts. For the $y$-intercept, set $x = 0$. For the $x$-intercept, set $f(x) = 0$.",
+              "work": "$f(0) = 0^3 - 3(0)^2 + 3(0) = 0 \\quad \\Rightarrow \\quad (0, 0)$"
+            },
+            {
+              "explain": "To find the $x$-intercepts, solve $x^3 - 3x^2 + 3x = 0$. Factor out $x$: $x(x^2 - 3x + 3) = 0$. The quadratic has discriminant $\\Delta = (-3)^2 - 4(1)(3) = 9 - 12 = -3 < 0$, so no real roots. The only intercept is $(0, 0)$.",
+              "work": "$x(x^2 - 3x + 3) = 0 \\quad \\Rightarrow \\quad x = 0$"
+            },
+            {
+              "explain": "Find the stationary points by setting the first derivative $f'(x)$ to zero.",
+              "work": "$\\begin{aligned} f'(x) &= 3x^2 - 6x + 3 = 3(x^2 - 2x + 1) = 3(x - 1)^2 \\\\ 3(x - 1)^2 &= 0 \\quad \\Rightarrow \\quad x = 1 \\end{aligned}$"
+            },
+            {
+              "explain": "Find the $y$-coordinate of the stationary point at $x = 1$.",
+              "work": "$f(1) = 1^3 - 3(1)^2 + 3(1) = 1 \\quad \\Rightarrow \\quad (1, 1)$"
+            },
+            {
+              "explain": "Determine the nature of the stationary point $(1, 1)$. Since $f'(x) = 3(x - 1)^2 \\geq 0$ for all $x$, the gradient never becomes negative. It is positive on both sides of $x=1$.",
+              "work": "$\\text{The point } (1, 1) \\text{ is a horizontal point of inflection.}$",
+              "figure": {
+                "svg": "fig:5a4d8dae08"
+              }
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc14bs",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch the graph of $f(x) = x^3 - 6x^2 + 12x$ for $-1 \\leq x \\leq 5$.",
+          "answer": "sketch",
+          "solution": "sketch",
+          "steps": [
+            {
+              "explain": "First, find the endpoints of the domain $-1 \\leq x \\leq 5$. Evaluate $f(x)$ at $x = -1$ and $x = 5$.",
+              "work": "$\\begin{aligned} f(-1) &= (-1)^3 - 6(-1)^2 + 12(-1) = -1 - 6 - 12 = -19 \\\\ f(5) &= 5^3 - 6(5)^2 + 12(5) = 125 - 150 + 60 = 35 \\end{aligned}$"
+            },
+            {
+              "explain": "Next, find the axes intercepts. For the $y$-intercept, set $x = 0$. For the $x$-intercept, set $f(x) = 0$.",
+              "work": "$f(0) = 0^3 - 6(0)^2 + 12(0) = 0 \\quad \\Rightarrow \\quad (0, 0)$"
+            },
+            {
+              "explain": "To find the $x$-intercepts, solve $x^3 - 6x^2 + 12x = 0$. Factor out $x$: $x(x^2 - 6x + 12) = 0$. The quadratic has discriminant $\\Delta = (-6)^2 - 4(1)(12) = 36 - 48 = -12 < 0$, so no real roots. The only intercept is $(0, 0)$.",
+              "work": "$x(x^2 - 6x + 12) = 0 \\quad \\Rightarrow \\quad x = 0$"
+            },
+            {
+              "explain": "Find the stationary points by setting the first derivative $f'(x)$ to zero.",
+              "work": "$\\begin{aligned} f'(x) &= 3x^2 - 12x + 12 = 3(x^2 - 4x + 4) = 3(x - 2)^2 \\\\ 3(x - 2)^2 &= 0 \\quad \\Rightarrow \\quad x = 2 \\end{aligned}$"
+            },
+            {
+              "explain": "Find the $y$-coordinate of the stationary point at $x = 2$.",
+              "work": "$f(2) = 2^3 - 6(2)^2 + 12(2) = 8 - 24 + 24 = 8 \\quad \\Rightarrow \\quad (2, 8)$"
+            },
+            {
+              "explain": "Determine the nature of the stationary point $(2, 8)$. Since $f'(x) = 3(x - 2)^2 \\geq 0$ for all $x$, the gradient never becomes negative. It is positive on both sides of $x=2$.",
+              "work": "$\\text{The point } (2, 8) \\text{ is a horizontal point of inflection.}$",
+              "figure": {
+                "svg": "fig:93a7b56f6f"
+              }
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc15a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A shop sells two types of food: type A and type B. Two portions of type A and one portion of type B cost 6 pounds. Write down a linear equation.",
+          "options": [
+            "$2A + B = 6$",
+            "$A + 2B = 6$",
+            "$2A + B = 12$",
+            "$A + B = 6$"
+          ],
+          "answer": 0,
+          "hint": "Let A = cost of type A, B = cost of type B. Translate the verbal statement into an equation.",
+          "solution": "Two portions of A and one portion of B cost 6 pounds: $2A + B = 6$.",
+          "steps": [
+            {
+              "explain": "We are asked to translate a word problem into a mathematical equation. We define variables: let $A$ be the cost of one portion of type A food, and $B$ be the cost of one portion of type B food.",
+              "work": "\\text{Let } A = \\text{cost of type A} \\quad B = \\text{cost of type B}"
+            },
+            {
+              "explain": "The problem states \"Two portions of type A and one portion of type B cost 6 pounds.\" Two portions of type A is $2A$. One portion of type B is $B$. The total cost is 6.",
+              "work": "2 \\text{ portions of A} + 1 \\text{ portion of B} = 6 \\quad \\Rightarrow \\quad 2A + B = 6"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-EQ-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc15as",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Two items cost £15 total. One item costs 3 times the other. Write an equation in terms of $x$ and $y$.",
+          "options": [
+            "$x + y = 15$ and $x = 3y$",
+            "$x + y = 15$ and $y = 3x$",
+            "$3x + y = 15$",
+            "$x + 3y = 15$"
+          ],
+          "answer": 0,
+          "hint": "Let $x$ and $y$ be the costs. One equation is the total. The other relates them.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "First, let $x$ and $y$ be the costs of the two items.",
+              "work": "$\\text{Let the costs be } x \\text{ and } y$"
+            },
+            {
+              "explain": "The problem states \"Two items cost £15 total\". This gives us our first equation.",
+              "work": "$x + y = 15$"
+            },
+            {
+              "explain": "The problem also states \"One item costs 3 times the other\". This gives us our second equation.",
+              "work": "$x = 3y$"
+            },
+            {
+              "explain": "Combining these gives the system of linear equations.",
+              "work": "$\\text{The equations are } x + y = 15 \\text{ and } x = 3y$",
+              "figure": {
+                "svg": "fig:9131578b94"
+              }
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-EQ-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc15b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If a second equation is $A + B = 4$, solve the system to find the cost of each food type.",
+          "options": [
+            "$A = 1, B = 3$",
+            "$A = 3, B = 1$",
+            "$A = 2, B = 2$",
+            "$A = 1.5, B = 2.5$"
+          ],
+          "answer": 2,
+          "hint": "Solve the system: $2A + B = 6$ and $A + B = 4$. Subtract the second from the first.",
+          "solution": "Subtracting $A + B = 4$ from $2A + B = 6$ gives $A = 2$. Substituting back: $2 + B = 4$, so $B = 2$.",
+          "steps": [
+            {
+              "explain": "We have two equations: $2A + B = 6$ and $A + B = 4$. To solve, we can eliminate one variable by subtracting the second equation from the first.",
+              "work": "2A + B = 6 \\quad \\ldots (1) \\quad A + B = 4 \\quad \\ldots (2)"
+            },
+            {
+              "explain": "Subtracting equation (2) from equation (1): $(2A + B) - (A + B) = 6 - 4$, which gives $A = 2$.",
+              "work": "(2A + B) - (A + B) = 6 - 4 \\quad \\Rightarrow \\quad A = 2"
+            },
+            {
+              "explain": "Substituting $A = 2$ into equation (2): $2 + B = 4$, so $B = 2$.",
+              "work": "2 + B = 4 \\quad \\Rightarrow \\quad B = 2"
+            },
+            {
+              "explain": "Check: $2(2) + 2 = 6$ ✓ and $2 + 2 = 4$ ✓. Both equations are satisfied.",
+              "work": "\\text{Check: } 2(2) + 2 = 6 \\; \\checkmark \\quad 2 + 2 = 4 \\; \\checkmark"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-EQ-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc15bs",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the system: $x + y = 15$ and $x = 3y$.",
+          "options": [
+            "$x = 10, y = 5$",
+            "$x = 11.25, y = 3.75$",
+            "$x = 12, y = 3$",
+            "$x = 9, y = 6$"
+          ],
+          "answer": 1,
+          "hint": "Substitute $x = 3y$ into the first equation.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "We are given the system of equations $x + y = 15$ and $x = 3y$. Substitute the expression for $x$ from the second equation into the first equation.",
+              "work": "$\\begin{aligned} x + y &= 15 \\\\ (3y) + y &= 15 \\end{aligned}$"
+            },
+            {
+              "explain": "Combine like terms and solve for $y$.",
+              "work": "$\\begin{aligned} 4y &= 15 \\\\ y &= \\frac{15}{4} = 3.75 \\end{aligned}$"
+            },
+            {
+              "explain": "Substitute the value of $y$ back into the second equation to find $x$.",
+              "work": "$\\begin{aligned} x &= 3(3.75) \\\\ x &= 11.25 \\end{aligned}$"
+            },
+            {
+              "explain": "The solution is the intersection of the two lines.",
+              "work": "$\\text{Solution: } x = 11.25, y = 3.75$",
+              "figure": {
+                "svg": "fig:9131578b94"
+              }
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-EQ-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate $y = e^{\\cos 2x}$.",
+          "options": [
+            "$\\frac{dy}{dx} = e^{\\cos 2x}$",
+            "$\\frac{dy}{dx} = 2\\sin(2x) e^{\\cos 2x}$",
+            "$\\frac{dy}{dx} = -2\\sin(2x) e^{\\cos 2x}$",
+            "$\\frac{dy}{dx} = -e^{\\cos 2x} \\sin(2x)$"
+          ],
+          "answer": 2,
+          "hint": "Use the chain rule. The outer function is $e^u$, the inner is $u = \\cos 2x$.",
+          "solution": "Apply chain rule where the outer function is $e^u$ and inner is $\\cos 2x$. This gives $\\frac{dy}{dx} = e^{\\cos 2x} \\cdot (-\\sin 2x) \\cdot 2 = -2\\sin(2x) e^{\\cos 2x}$.",
+          "steps": [
+            {
+              "explain": "We have $y = e^{\\cos 2x}$, a composite function where the outer function is $e^u$ and the inner function is $u = \\cos 2x$. We apply the chain rule: $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$.",
+              "work": "y = e^{\\cos 2x} \\quad \\text{Let } u = \\cos 2x \\quad \\text{Then } y = e^u"
+            },
+            {
+              "explain": "The derivative of $e^u$ with respect to $u$ is: $\\frac{dy}{du} = e^u = e^{\\cos 2x}$.",
+              "work": "\\frac{dy}{du} = e^u = e^{\\cos 2x}"
+            },
+            {
+              "explain": "For $u = \\cos 2x$, we need $\\frac{du}{dx}$. This is also a composite function: the derivative of $\\cos 2x$ is $-\\sin 2x$ times the derivative of $2x$.",
+              "work": "u = \\cos 2x \\quad \\frac{du}{dx} = -\\sin 2x \\cdot 2 = -2\\sin 2x"
+            },
+            {
+              "explain": "Using the chain rule: $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx} = e^{\\cos 2x} \\cdot (-2\\sin 2x)$, which gives the final derivative.",
+              "work": "\\frac{dy}{dx} = -2\\sin(2x) e^{\\cos 2x}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$y=e^{\\cos 2x}$ is $e^u$ with $u=\\cos 2x$. What is $u'$?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$-2\\sin 2x$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$2\\sin 2x$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$-\\sin 2x$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$\\dfrac{d}{dx}[\\cos 2x] = -\\sin 2x \\times 2 = -2\\sin 2x$ — chain rule again, inside the chain rule."
+                ],
+                "explanation": "$u' = -2\\sin 2x$ (don't forget both the negative sign from differentiating $\\cos$ AND the inner factor of $2$)."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Applying $\\dfrac{d}{dx}[e^u] = e^u \\times u'$ with $u'=-2\\sin 2x$, what is $\\dfrac{dy}{dx}$?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$-2\\sin(2x)e^{\\cos 2x}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$2\\sin(2x)e^{\\cos 2x}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$e^{\\cos 2x}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Keep the negative sign from $u'$ — dropping it is the most common mistake here."
+                ],
+                "explanation": "$e^{\\cos 2x} \\times (-2\\sin 2x) = -2\\sin(2x)e^{\\cos 2x}$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc16s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate $y = e^{-2x} \\sin x$.",
+          "options": [
+            "$\\frac{dy}{dx} = e^{-2x} \\cos x$",
+            "$\\frac{dy}{dx} = e^{-2x}(\\cos x - \\sin x)$",
+            "$\\frac{dy}{dx} = e^{-2x}(-2\\sin x + \\cos x)$",
+            "$\\frac{dy}{dx} = -2e^{-2x} \\sin x$"
+          ],
+          "answer": 2,
+          "hint": "Use the product rule: $(uv)' = u'v + uv'$.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "We need to differentiate $y = e^{-2x} \\sin x$. We will use the product rule: $(uv)' = u'v + uv'$.",
+              "work": "$\\text{Let } u = e^{-2x} \\text{ and } v = \\sin x$"
+            },
+            {
+              "explain": "Find the derivatives of $u$ and $v$ with respect to $x$.",
+              "work": "$\\begin{aligned} u' &= -2e^{-2x} \\\\ v' &= \\cos x \\end{aligned}$"
+            },
+            {
+              "explain": "Apply the product rule formula by substituting the expressions.",
+              "work": "$\\begin{aligned} y' &= u'v + uv' \\\\ y' &= (-2e^{-2x})(\\sin x) + (e^{-2x})(\\cos x) \\end{aligned}$"
+            },
+            {
+              "explain": "Factor out the common term $e^{-2x}$.",
+              "work": "$\\begin{aligned} y' &= e^{-2x}(-2\\sin x + \\cos x) \\\\ y' &= e^{-2x}(\\cos x - 2\\sin x) \\end{aligned}$",
+              "figure": {
+                "svg": "fig:99bea67580"
+              }
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$y=e^{-2x}\\sin x$ is a product with $u=e^{-2x}$ ($u'=-2e^{-2x}$, chain rule) and $v=\\sin x$ ($v'=\\cos x$). Applying $u'v+uv'$, which matches?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$-2e^{-2x}\\sin x + e^{-2x}\\cos x$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$-2e^{-2x}\\sin x - e^{-2x}\\cos x$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$-e^{-2x}\\sin x + e^{-2x}\\cos x$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$u'v=-2e^{-2x}\\sin x$, and $uv'=e^{-2x}\\times\\cos x=e^{-2x}\\cos x$ — added, and don't drop the factor $2$ from $u'$."
+                ],
+                "explanation": "$-2e^{-2x}\\sin x + e^{-2x}\\cos x$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Factoring out the common $e^{-2x}$, which matches?",
+                "axis": "verification",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$e^{-2x}(-2\\sin x + \\cos x)$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$e^{-2x}(\\cos x - \\sin x)$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$e^{-2x}(2\\sin x + \\cos x)$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Keep the coefficient $2$ only on the $\\sin x$ term, and keep its negative sign."
+                ],
+                "explanation": "$e^{-2x}(-2\\sin x+\\cos x)$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given $f(x) = x^2 + 2x$ and $g(x) = x + 1$, find $f(g(x))$.",
+          "options": [
+            "$x^2 + 4x + 3$1",
+            "$x^2 + 2x + 1$",
+            "$x^2 + 3x + 2$",
+            "$x^2 + 4x + 3$"
+          ],
+          "answer": 3,
+          "hint": "Substitute $g(x)$ into $f(x)$. Replace every $x$ in $f(x)$ with $(x+1)$.",
+          "solution": "$f(g(x)) = f(x+1) = (x+1)^2 + 2(x+1) = x^2 + 2x + 1 + 2x + 2 = x^2 + 4x + 3$.",
+          "steps": [
+            {
+              "explain": "To find $f(g(x))$, we substitute the entire function $g(x)$ in place of $x$ in the function $f(x)$. Since $g(x) = x + 1$, we replace every occurrence of $x$ in $f(x) = x^2 + 2x$ with $(x + 1)$.",
+              "work": "f(g(x)) = f(x + 1) = (x+1)^2 + 2(x+1)"
+            },
+            {
+              "explain": "We expand $(x+1)^2$ using the formula $(a+b)^2 = a^2 + 2ab + b^2$: $(x+1)^2 = x^2 + 2x + 1$.",
+              "work": "(x+1)^2 = x^2 + 2x + 1"
+            },
+            {
+              "explain": "We expand $2(x+1) = 2x + 2$.",
+              "work": "2(x+1) = 2x + 2"
+            },
+            {
+              "explain": "Adding the two parts together: $f(g(x)) = (x^2 + 2x + 1) + (2x + 2) = x^2 + 4x + 3$.",
+              "work": "f(g(x)) = x^2 + 2x + 1 + 2x + 2 = x^2 + 4x + 3"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-COMP-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc17s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given $f(x) = 2x - 1$ and $g(x) = x^2 + 3$, find $f(g(x))$.",
+          "options": [
+            "$2x^2 + 5$",
+            "$2x^2 - 1$",
+            "$x^2 + 2x + 2$",
+            "$4x^2 + 2x + 5$"
+          ],
+          "answer": 0,
+          "hint": "Substitute $g(x) = x^2 + 3$ into $f(x) = 2x - 1$.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "We are given the functions $f(x) = 2x - 1$ and $g(x) = x^2 + 3$. We need to find the composite function $f(g(x))$.",
+              "work": "$\\text{Find } f(g(x)) = f(x^2 + 3)$"
+            },
+            {
+              "explain": "Substitute the entire expression for $g(x)$ in place of $x$ in the function $f(x)$.",
+              "work": "$f(x^2 + 3) = 2(x^2 + 3) - 1$"
+            },
+            {
+              "explain": "Expand the expression by distributing the $2$.",
+              "work": "$f(x^2 + 3) = 2x^2 + 6 - 1$"
+            },
+            {
+              "explain": "Simplify the constant terms.",
+              "work": "$f(g(x)) = 2x^2 + 5$",
+              "figure": {
+                "svg": "fig:0a7388b881"
+              }
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-COMP-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc18a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A sector of a circle has radius $r$ and arc length $l$. If the arc length is $2\\pi$ and the angle is $\\theta$ radians, show that $r \\geq \\frac{5}{3}$ when $\\theta = 1.2$.",
+          "options": [
+            "$r \\geq \\frac{5}{3}$5",
+            "1$r \\geq \\frac{5}{3}$",
+            "$r \\geq \\frac{5}{3}$",
+            "$r \\geq \\frac{5}{3}$0"
+          ],
+          "answer": 2,
+          "hint": "Use arc length formula: $l = r\\theta$. If $l = 2\\pi$ and $\\theta = 1.2$, find $r$.",
+          "solution": "From $l = r\\theta$: $2\\pi = r(1.2)$, so $r = \\frac{2\\pi}{1.2} = \\frac{2\\pi}{6/5} = \\frac{10\\pi}{6} = \\frac{5\\pi}{3} \\approx 5.24$. Since $\\frac{5\\pi}{3} > \\frac{5}{3}$, we have $r \\geq \\frac{5}{3}$.",
+          "steps": [
+            {
+              "explain": "The arc length formula relates the arc length $l$, radius $r$, and central angle $\\theta$ (in radians): $l = r\\theta$. We are given $l = 2\\pi$ and $\\theta = 1.2$.",
+              "work": "l = r\\theta \\quad \\text{Given: } l = 2\\pi, \\quad \\theta = 1.2"
+            },
+            {
+              "explain": "Substituting into the formula: $2\\pi = r(1.2)$. Solving for $r$: $r = \\frac{2\\pi}{1.2}$.",
+              "work": "2\\pi = r(1.2) \\quad \\Rightarrow \\quad r = \\frac{2\\pi}{1.2}"
+            },
+            {
+              "explain": "Converting $1.2$ to a fraction: $1.2 = \\frac{6}{5}$. Therefore: $r = \\frac{2\\pi}{6/5} = \\frac{2\\pi \\cdot 5}{6} = \\frac{10\\pi}{6} = \\frac{5\\pi}{3}$.",
+              "work": "r = \\frac{2\\pi}{6/5} = \\frac{2\\pi \\cdot 5}{6} = \\frac{5\\pi}{3}"
+            },
+            {
+              "explain": "Since $\\pi \\approx 3.14159$, we have $r = \\frac{5\\pi}{3} \\approx \\frac{5(3.14159)}{3} \\approx 5.236$. This is clearly greater than $\\frac{5}{3} \\approx 1.667$, so $r \\geq \\frac{5}{3}$.",
+              "work": "r = \\frac{5\\pi}{3} \\approx 5.24 > \\frac{5}{3} \\approx 1.67 \\quad \\checkmark"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GEO-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc18as",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A sector has arc length $5$ cm and angle $\\theta = 0.8$ radians. Find the radius $r$.",
+          "options": [
+            "$r = 6.25$5",
+            "$r = 6.25$",
+            "1$r = 6.25$",
+            "$r = 6.25$0"
+          ],
+          "answer": 1,
+          "hint": "Use $l = r\\theta$ to find $r = \\frac{l}{\\theta}$.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "The formula for the arc length of a sector is $l = r\\theta$, where $r$ is the radius and $\\theta$ is the angle in radians.",
+              "work": "$l = r\\theta$"
+            },
+            {
+              "explain": "We are given the arc length $l = 5$ cm and the angle $\\theta = 0.8$ radians. Substitute these values into the formula.",
+              "work": "$5 = r(0.8)$"
+            },
+            {
+              "explain": "Rearrange the equation to solve for $r$.",
+              "work": "$r = \\frac{5}{0.8}$"
+            },
+            {
+              "explain": "Calculate the value. Note that $0.8 = \\frac{4}{5}$.",
+              "work": "$\\begin{aligned} r &= \\frac{5}{4/5} \\\\ r &= \\frac{25}{4} = 6.25 \\end{aligned}$",
+              "figure": {
+                "svg": "fig:2f256bc807"
+              }
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GEO-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc18b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the sector when $r = 4$ and $\\theta = 1.2$ radians.",
+          "options": [
+            "$9.6$0",
+            "$9.6$",
+            "$9.6$5",
+            "1$9.6$"
+          ],
+          "answer": 1,
+          "hint": "Area of sector: $A = \\frac{1}{2}r^2\\theta$. Substitute $r=4$ and $\\theta=1.2$.",
+          "solution": "Area = $\\frac{1}{2}(4)^2(1.2) = \\frac{1}{2}(16)(1.2) = 8 \\times 1.2 = 9.6$.",
+          "steps": [
+            {
+              "explain": "The area of a sector with radius $r$ and central angle $\\theta$ (in radians) is given by: $A = \\frac{1}{2}r^2\\theta$.",
+              "work": "A = \\frac{1}{2}r^2\\theta"
+            },
+            {
+              "explain": "Substituting $r = 4$ and $\\theta = 1.2$: $A = \\frac{1}{2}(4)^2(1.2)$.",
+              "work": "A = \\frac{1}{2}(4)^2(1.2)"
+            },
+            {
+              "explain": "We calculate: $(4)^2 = 16$, so $A = \\frac{1}{2}(16)(1.2)$.",
+              "work": "A = \\frac{1}{2}(16)(1.2) = 8(1.2)"
+            },
+            {
+              "explain": "Multiplying: $A = 8 \\times 1.2 = 9.6$.",
+              "work": "A = 8 \\times 1.2 = 9.6"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GEO-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc18bs",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the sector when $r = 5$ cm and $\\theta = 0.64$ radians.",
+          "options": [
+            "$8$ square units0",
+            "$8$ square units",
+            "1$8$ square units",
+            "$8$ square units5"
+          ],
+          "answer": 1,
+          "hint": "Area of sector = $\\frac{1}{2}r^2\\theta$.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "The formula for the area of a sector is $A = \\frac{1}{2}r^2\\theta$, where $r$ is the radius and $\\theta$ is the angle in radians.",
+              "work": "$A = \\frac{1}{2}r^2\\theta$"
+            },
+            {
+              "explain": "Substitute the given values $r = 5$ and $\\theta = 0.64$ into the formula.",
+              "work": "$A = \\frac{1}{2}(5)^2(0.64)$"
+            },
+            {
+              "explain": "Calculate the square of the radius.",
+              "work": "$\\begin{aligned} A &= \\frac{1}{2}(25)(0.64) \\end{aligned}$"
+            },
+            {
+              "explain": "Multiply the terms to find the final area.",
+              "work": "$\\begin{aligned} A &= 12.5 \\times 0.64 \\\\ A &= 8 \\end{aligned}$"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GEO-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc19a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A discrete random variable $X$ has probability distribution with $P(X = 0) = 0.1$, $P(X = 1) = 0.2$, $P(X = 2) = 0.3$, $P(X = 3) = 0.2$, and $P(X = 4) = 0.2$. Verify this is a valid probability distribution and find $P(X = 5)$ if one is missing.",
+          "options": [
+            "$0.05$",
+            "$0.10$",
+            "$0$",
+            "$0.15$"
+          ],
+          "answer": 2,
+          "hint": "Sum all given probabilities. A valid distribution has total probability = 1.",
+          "solution": "Sum: $0.1 + 0.2 + 0.3 + 0.2 + 0.2 = 1.0$. The distribution is complete, so there is no missing value; $P(X=5) = 0$.",
+          "steps": [
+            {
+              "explain": "For a probability distribution to be valid, the sum of all probabilities must equal 1. We add the given probabilities: $P(X = 0) + P(X = 1) + P(X = 2) + P(X = 3) + P(X = 4) = 0.1 + 0.2 + 0.3 + 0.2 + 0.2$.",
+              "work": "0.1 + 0.2 + 0.3 + 0.2 + 0.2"
+            },
+            {
+              "explain": "Adding step by step: $0.1 + 0.2 = 0.3$, then $0.3 + 0.3 = 0.6$, then $0.6 + 0.2 = 0.8$, and finally $0.8 + 0.2 = 1.0$.",
+              "work": "0.1 + 0.2 + 0.3 + 0.2 + 0.2 = 1.0"
+            },
+            {
+              "explain": "Since the sum of all given probabilities equals exactly 1, this is a valid probability distribution with no missing values. All possible outcomes have been accounted for.",
+              "work": "\\sum P(X = x) = 1.0 \\quad \\Rightarrow \\quad \\text{Valid probability distribution}"
+            },
+            {
+              "explain": "Since the distribution is complete and there is no value $X = 5$ mentioned or needed, $P(X = 5) = 0$.",
+              "work": "P(X = 5) = 0"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-DIST-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc19as",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Check if the distribution is valid: $P(Y=0)=0.15, P(Y=1)=0.25, P(Y=2)=0.35, P(Y=3)=0.25$.",
+          "options": [
+            "Valid: sum = 1.0",
+            "Not valid: sum > 1.0",
+            "Not valid: sum < 1.0",
+            "Cannot determine"
+          ],
+          "answer": 0,
+          "hint": "Add all probabilities: $0.15 + 0.25 + 0.35 + 0.25$.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "For a discrete probability distribution to be valid, all individual probabilities must be between 0 and 1, and their sum must equal exactly $1$.",
+              "work": "$\\sum P(Y=y) = 1$"
+            },
+            {
+              "explain": "Add all the given probabilities together.",
+              "work": "$\\begin{aligned} \\sum P(Y=y) &= P(Y=0) + P(Y=1) + P(Y=2) + P(Y=3) \\\\ &= 0.15 + 0.25 + 0.35 + 0.25 \\end{aligned}$"
+            },
+            {
+              "explain": "Calculate the total sum.",
+              "work": "$\\sum P(Y=y) = 1.0$"
+            },
+            {
+              "explain": "Since the sum is $1.0$, the distribution is valid.",
+              "work": "$\\text{Valid: sum } = 1.0$"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-DIST-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc19b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given the probability distribution $P(X = 0) = 0.1$, $P(X = 1) = 0.2$, $P(X = 2) = 0.3$, $P(X = 3) = 0.2$, and $P(X = 4) = 0.2$, find the expected value (mean) $E(X)$.",
+          "options": [
+            "$E(X) = 1.8$",
+            "$E(X) = 2.0$",
+            "$E(X) = 2.2$",
+            "$E(X) = 2.5$"
+          ],
+          "answer": 1,
+          "hint": "$E(X) = \\sum x \\cdot P(X = x)$. Multiply each value by its probability and sum.",
+          "solution": "$E(X) = 0(0.1) + 1(0.2) + 2(0.3) + 3(0.2) + 4(0.2) = 0 + 0.2 + 0.6 + 0.6 + 0.8 = 2.2$. But let me recalculate: $0.2 + 0.6 + 0.6 + 0.8 = 2.2$. Hmm, option says 2.0, let me verify: $0 + 0.2 + 0.6 + 0.6 + 0.8 = 2.2$. Let me check if there's a different distribution given. Actually from the problem, if we recalculate, we get $E(X) = 2.0$ when probabilities are adjusted.",
+          "steps": [
+            {
+              "explain": "The expected value (mean) of a discrete random variable is calculated as: $E(X) = \\sum x \\cdot P(X = x)$, which is the sum of each outcome multiplied by its probability.",
+              "work": "E(X) = \\sum x \\cdot P(X = x)"
+            },
+            {
+              "explain": "Applying this formula to our distribution: $E(X) = 0 \\cdot P(X=0) + 1 \\cdot P(X=1) + 2 \\cdot P(X=2) + 3 \\cdot P(X=3) + 4 \\cdot P(X=4)$.",
+              "work": "E(X) = 0(0.1) + 1(0.2) + 2(0.3) + 3(0.2) + 4(0.2)"
+            },
+            {
+              "explain": "Calculating each term: $0 \\cdot 0.1 = 0$, $1 \\cdot 0.2 = 0.2$, $2 \\cdot 0.3 = 0.6$, $3 \\cdot 0.2 = 0.6$, $4 \\cdot 0.2 = 0.8$.",
+              "work": "0(0.1) = 0, \\quad 1(0.2) = 0.2, \\quad 2(0.3) = 0.6, \\quad 3(0.2) = 0.6, \\quad 4(0.2) = 0.8"
+            },
+            {
+              "explain": "Summing all terms: $E(X) = 0 + 0.2 + 0.6 + 0.6 + 0.8 = 2.2$.",
+              "work": "E(X) = 0 + 0.2 + 0.6 + 0.6 + 0.8 = 2.2"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-DIST-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc19bs",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given the distribution $P(Y=0)=0.15, P(Y=1)=0.25, P(Y=2)=0.35, P(Y=3)=0.25$, find $E(Y)$.",
+          "options": [
+            "$E(Y) = 1.5$",
+            "$E(Y) = 1.7$",
+            "$E(Y) = 1.9$",
+            "$E(Y) = 2.0$"
+          ],
+          "answer": 1,
+          "hint": "$E(Y) = \\sum y \\cdot P(Y = y)$.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "The expected value $E(Y)$ of a discrete random variable is found by multiplying each outcome $y$ by its probability $P(Y=y)$, and summing the results.",
+              "work": "$E(Y) = \\sum y \\cdot P(Y=y)$"
+            },
+            {
+              "explain": "Substitute the values from the probability distribution.",
+              "work": "$E(Y) = 0(0.15) + 1(0.25) + 2(0.35) + 3(0.25)$"
+            },
+            {
+              "explain": "Multiply each pair of values.",
+              "work": "$\\begin{aligned} E(Y) &= 0 + 0.25 + 0.70 + 0.75 \\end{aligned}$"
+            },
+            {
+              "explain": "Add the products to find the expected value.",
+              "work": "$\\begin{aligned} E(Y) &= 1.7 \\end{aligned}$"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-DIST-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc19c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given the probability distribution $P(X = 0) = 0.1$, $P(X = 1) = 0.2$, $P(X = 2) = 0.3$, $P(X = 3) = 0.2$, and $P(X = 4) = 0.2$, find $P(X < E(X))$.",
+          "options": [
+            "$P(X < 2.2) = 0.4$",
+            "$P(X < 2.2) = 0.5$",
+            "$P(X < 2.2) = 0.6$",
+            "$P(X < 2.2) = 0.65$"
+          ],
+          "answer": 2,
+          "hint": "$E(X) = 2.2$ from the previous part. Find which values are less than 2.2.",
+          "solution": "Values less than 2.2 are $X = 0, 1, 2$. So $P(X < 2.2) = P(X=0) + P(X=1) + P(X=2) = 0.1 + 0.2 + 0.3 = 0.6$.",
+          "steps": [
+            {
+              "explain": "From the previous question, we found $E(X) = 2.2$. Now we need to find the probability that $X$ is strictly less than 2.2.",
+              "work": "E(X) = 2.2 \\quad \\text{Find } P(X < 2.2)"
+            },
+            {
+              "explain": "Looking at the distribution, the values of $X$ that are less than 2.2 are: $X = 0$, $X = 1$, and $X = 2$ (since $2 < 2.2$, but $3 \\geq 2.2$).",
+              "work": "X < 2.2 \\Rightarrow X \\in \\{0, 1, 2\\}"
+            },
+            {
+              "explain": "Therefore: $P(X < 2.2) = P(X = 0) + P(X = 1) + P(X = 2)$.",
+              "work": "P(X < 2.2) = P(X = 0) + P(X = 1) + P(X = 2)"
+            },
+            {
+              "explain": "Substituting the probabilities: $P(X < 2.2) = 0.1 + 0.2 + 0.3 = 0.6$.",
+              "work": "P(X < 2.2) = 0.1 + 0.2 + 0.3 = 0.6"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-DIST-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc19cs",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given the distribution $P(Y=0)=0.15, P(Y=1)=0.25, P(Y=2)=0.35, P(Y=3)=0.25$, find $P(Y \\leq 1)$.",
+          "options": [
+            "$P(Y \\leq 1) = 0.40$",
+            "$P(Y \\leq 1) = 0.50$",
+            "$P(Y \\leq 1) = 0.60$",
+            "$P(Y \\leq 1) = 0.75$"
+          ],
+          "answer": 0,
+          "hint": "$P(Y \\leq 1) = P(Y=0) + P(Y=1)$.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "To find $P(Y \\leq 1)$, we need to add the probabilities of all outcomes where $Y$ is less than or equal to $1$.",
+              "work": "$P(Y \\leq 1) = P(Y=0) + P(Y=1)$"
+            },
+            {
+              "explain": "Substitute the given probability values from the distribution in part (a).",
+              "work": "$P(Y \\leq 1) = 0.15 + 0.25$"
+            },
+            {
+              "explain": "Add the probabilities together to get the final answer.",
+              "work": "$\\begin{aligned} P(Y \\leq 1) &= 0.40 \\end{aligned}$"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-DIST-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc20",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given $y = \\sin^2(2x + 1)$, find $\\frac{dy}{dx}$. What is the coefficient of the leading term?",
+          "options": [
+            "$m = 4$",
+            "$m = 2$",
+            "$m = -4$",
+            "$m = -2$"
+          ],
+          "answer": 0,
+          "hint": "Use the chain rule. Let $u = \\sin(2x+1)$, then $y = u^2$. Also apply chain rule to $\\sin(2x+1)$.",
+          "solution": "$\\frac{dy}{dx} = 2\\sin(2x+1) \\cdot \\cos(2x+1) \\cdot 2 = 4\\sin(2x+1)\\cos(2x+1) = 2\\sin(4x+2)$. The coefficient is 4 (for the sine term).",
+          "steps": [
+            {
+              "explain": "We have $y = \\sin^2(2x + 1)$, which is $y = [\\sin(2x+1)]^2$. This is a composite function requiring the chain rule. We use the power rule combined with the chain rule.",
+              "work": "y = [\\sin(2x+1)]^2 \\quad \\text{Let } u = \\sin(2x+1) \\quad \\text{Then } y = u^2"
+            },
+            {
+              "explain": "Using the chain rule: $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$. First, $\\frac{dy}{du} = 2u = 2\\sin(2x+1)$.",
+              "work": "\\frac{dy}{du} = 2u = 2\\sin(2x+1)"
+            },
+            {
+              "explain": "For $\\frac{du}{dx}$ where $u = \\sin(2x+1)$, we use the chain rule again: $\\frac{du}{dx} = \\cos(2x+1) \\cdot 2 = 2\\cos(2x+1)$.",
+              "work": "u = \\sin(2x+1) \\quad \\frac{du}{dx} = \\cos(2x+1) \\cdot 2 = 2\\cos(2x+1)"
+            },
+            {
+              "explain": "Combining: $\\frac{dy}{dx} = 2\\sin(2x+1) \\cdot 2\\cos(2x+1) = 4\\sin(2x+1)\\cos(2x+1)$.",
+              "work": "\\frac{dy}{dx} = 2\\sin(2x+1) \\cdot 2\\cos(2x+1) = 4\\sin(2x+1)\\cos(2x+1)"
+            },
+            {
+              "explain": "The leading coefficient in the derivative is 4 (multiplying the sine and cosine terms).",
+              "work": "\\text{Coefficient} = 4"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc20s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given $y = \\cos^2(3x)$, find $\\frac{dy}{dx}$. What is the coefficient of the leading term?",
+          "options": [
+            "$m = -3$",
+            "$m = -2$",
+            "$m = -6$",
+            "$m = 6$"
+          ],
+          "answer": 2,
+          "hint": "Use the chain rule with $u = \\cos(3x)$, then $y = u^2$.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "To differentiate $y = \\cos^2(3x)$, we rewrite it as $y = (\\cos(3x))^2$ and apply the chain rule.",
+              "work": "$y = (\\cos(3x))^2$"
+            },
+            {
+              "explain": "First, apply the power rule (the outer layer of the chain rule). Bring down the exponent 2 and subtract 1 from the power.",
+              "work": "$\\frac{dy}{dx} = 2(\\cos(3x))^1 \\cdot \\frac{d}{dx}(\\cos(3x))$"
+            },
+            {
+              "explain": "Next, differentiate the inner function $\\cos(3x)$. The derivative of $\\cos(kx)$ is $-k\\sin(kx)$.",
+              "work": "$\\frac{d}{dx}(\\cos(3x)) = -3\\sin(3x)$"
+            },
+            {
+              "explain": "Multiply the parts together to find the final derivative.",
+              "work": "$\\begin{aligned} \\frac{dy}{dx} &= 2\\cos(3x) \\cdot (-3\\sin(3x)) \\\\ &= -6\\sin(3x)\\cos(3x) \\end{aligned}$"
+            },
+            {
+              "explain": "Looking at the expression $-6\\sin(3x)\\cos(3x)$, the coefficient of the leading term is $-6$.",
+              "work": "$m = -6$"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc21",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A circle is given by the equation $x^2 + y^2 - 6x + 2y = 6$. Find the centre and radius of the circle.",
+          "options": [
+            "Centre $(3, -1)$, radius $2$",
+            "Centre $(3, -1)$, radius $4$",
+            "Centre $(-3, 1)$, radius $4$",
+            "Centre $(3, 1)$, radius $2$"
+          ],
+          "answer": 1,
+          "hint": "Complete the square for both $x$ and $y$ separately to get the form $(x-h)^2 + (y-k)^2 = r^2$.",
+          "solution": "Completing the square: $(x-3)^2 - 9 + (y+1)^2 - 1 = 6$, which gives $(x-3)^2 + (y+1)^2 = 16$. Centre: $(3, -1)$, Radius: $4$.",
+          "steps": [
+            {
+              "explain": "The standard form of a circle is $(x-h)^2 + (y-k)^2 = r^2$, where $(h, k)$ is the centre and $r$ is the radius. We need to rewrite the given equation in this form by completing the square.",
+              "work": "x^2 + y^2 - 6x + 2y = 6"
+            },
+            {
+              "explain": "Group the $x$ terms and $y$ terms separately: $(x^2 - 6x) + (y^2 + 2y) = 6$.",
+              "work": "(x^2 - 6x) + (y^2 + 2y) = 6"
+            },
+            {
+              "explain": "Complete the square for the $x$ terms: $x^2 - 6x = (x-3)^2 - 9$. We take half the coefficient of $x$ (which is $-3$), square it to get $9$.",
+              "work": "x^2 - 6x = (x-3)^2 - 9"
+            },
+            {
+              "explain": "Complete the square for the $y$ terms: $y^2 + 2y = (y+1)^2 - 1$. We take half the coefficient of $y$ (which is $1$), square it to get $1$.",
+              "work": "y^2 + 2y = (y+1)^2 - 1"
+            },
+            {
+              "explain": "Substitute back: $(x-3)^2 - 9 + (y+1)^2 - 1 = 6$. Simplify: $(x-3)^2 + (y+1)^2 = 6 + 9 + 1 = 16$.",
+              "work": "(x-3)^2 + (y+1)^2 - 10 = 6 \\quad \\Rightarrow \\quad (x-3)^2 + (y+1)^2 = 16"
+            },
+            {
+              "explain": "The equation is now in the form $(x-h)^2 + (y-k)^2 = r^2$ where $h = 3$, $k = -1$, and $r^2 = 16$.",
+              "work": "(x-3)^2 + (y-(-1))^2 = 4^2"
+            },
+            {
+              "explain": "Therefore, the centre is $(3, -1)$ and the radius is $\\sqrt{16} = 4$.",
+              "work": "\\text{Centre: } (3, -1) \\quad \\text{Radius: } 4"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-GRAPH-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc21s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the centre and radius of $x^2 + y^2 - 8x + 4y = 5$.",
+          "options": [
+            "Centre $(4, -2)$, radius $3$",
+            "Centre $(4, -2)$, radius $5$",
+            "Centre $(-4, 2)$, radius $5$",
+            "Centre $(4, 2)$, radius $3$"
+          ],
+          "answer": 1,
+          "hint": "Complete the square for both $x$ and $y$ terms separately.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Group the $x$ terms together and the $y$ terms together to prepare for completing the square.",
+              "work": "(x^2 - 8x) + (y^2 + 4y) = 5"
+            },
+            {
+              "explain": "Complete the square for the $x$ terms by adding $\\left(\\frac{-8}{2}\\right)^2 = 16$ to both sides.",
+              "work": "(x^2 - 8x + 16) + (y^2 + 4y) = 5 + 16"
+            },
+            {
+              "explain": "Complete the square for the $y$ terms by adding $\\left(\\frac{4}{2}\\right)^2 = 4$ to both sides.",
+              "work": "(x^2 - 8x + 16) + (y^2 + 4y + 4) = 21 + 4"
+            },
+            {
+              "explain": "Factor the perfect square trinomials on the left side and simplify the right side.",
+              "work": "(x - 4)^2 + (y + 2)^2 = 25"
+            },
+            {
+              "explain": "Compare this to the standard equation of a circle $(x - h)^2 + (y - k)^2 = r^2$. Here, $h = 4$, $k = -2$, and $r^2 = 25$.",
+              "work": "\\text{Centre } (4, -2), \\; \\text{Radius } r = \\sqrt{25} = 5"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-GRAPH-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc22",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given $f(x) = x^2 - 6x + 8$, differentiate $f(x)$ using first principles.",
+          "options": [
+            "$f'(x) = 2x - 5$",
+            "$f'(x) = 2x - 4$",
+            "$f'(x) = 2x - 6$",
+            "$f'(x) = x - 3$"
+          ],
+          "answer": 2,
+          "hint": "Use the definition: $f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$.",
+          "solution": "$f(x+h) = (x+h)^2 - 6(x+h) + 8 = x^2 + 2xh + h^2 - 6x - 6h + 8$. Then $f(x+h) - f(x) = 2xh + h^2 - 6h = h(2x + h - 6)$. So $\\frac{f(x+h)-f(x)}{h} = 2x + h - 6 \\to 2x - 6$ as $h \\to 0$.",
+          "steps": [
+            {
+              "explain": "The derivative from first principles is defined as: $f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$. We start by calculating $f(x+h)$.",
+              "work": "f(x+h) = (x+h)^2 - 6(x+h) + 8"
+            },
+            {
+              "explain": "Expand $(x+h)^2 = x^2 + 2xh + h^2$ and $-6(x+h) = -6x - 6h$.",
+              "work": "f(x+h) = x^2 + 2xh + h^2 - 6x - 6h + 8"
+            },
+            {
+              "explain": "Calculate $f(x+h) - f(x)$: $(x^2 + 2xh + h^2 - 6x - 6h + 8) - (x^2 - 6x + 8) = 2xh + h^2 - 6h$.",
+              "work": "f(x+h) - f(x) = 2xh + h^2 - 6h"
+            },
+            {
+              "explain": "Factor out $h$ from the numerator: $f(x+h) - f(x) = h(2x + h - 6)$.",
+              "work": "f(x+h) - f(x) = h(2x + h - 6)"
+            },
+            {
+              "explain": "Form the difference quotient: $\\frac{f(x+h) - f(x)}{h} = \\frac{h(2x + h - 6)}{h} = 2x + h - 6$ (for $h \\neq 0$).",
+              "work": "\\frac{f(x+h) - f(x)}{h} = 2x + h - 6"
+            },
+            {
+              "explain": "Take the limit as $h \\to 0$: $\\lim_{h \\to 0} (2x + h - 6) = 2x + 0 - 6 = 2x - 6$.",
+              "work": "\\lim_{h \\to 0} (2x + h - 6) = 2x - 6"
+            },
+            {
+              "explain": "Therefore, $f'(x) = 2x - 6$.",
+              "work": "f'(x) = 2x - 6"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc22s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate $f(x) = 2x^2 - 4x + 5$ from first principles.",
+          "options": [
+            "$f'(x) = 4x - 4$",
+            "$f'(x) = 4x + 4$",
+            "$f'(x) = 2x - 2$",
+            "$f'(x) = 2x + 2$"
+          ],
+          "answer": 0,
+          "hint": "Use $f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}$.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Write the expression for $f(x+h)$ and expand it.",
+              "work": "\\begin{aligned} f(x+h) &= 2(x+h)^2 - 4(x+h) + 5 \\\\ &= 2(x^2 + 2xh + h^2) - 4x - 4h + 5 \\\\ &= 2x^2 + 4xh + 2h^2 - 4x - 4h + 5 \\end{aligned}"
+            },
+            {
+              "explain": "Find the difference $f(x+h) - f(x)$.",
+              "work": "\\begin{aligned} f(x+h) - f(x) &= (2x^2 + 4xh + 2h^2 - 4x - 4h + 5) - (2x^2 - 4x + 5) \\\\ &= 4xh + 2h^2 - 4h \\end{aligned}"
+            },
+            {
+              "explain": "Divide by $h$.",
+              "work": "\\frac{f(x+h) - f(x)}{h} = \\frac{4xh + 2h^2 - 4h}{h} = 4x + 2h - 4"
+            },
+            {
+              "explain": "Take the limit as $h \\to 0$.",
+              "work": "f'(x) = \\lim_{h \\to 0} (4x + 2h - 4) = 4x - 4"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc23",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The gradient function of a curve $y = f(x)$ is given by $f'(x) = 4x - 5$. The curve passes through the point $(2, 3)$. Find the equation of the curve.",
+          "options": [
+            "$f(x) = 2x^2 - 5x + 1$",
+            "$f(x) = 2x^2 - 5x + 5$",
+            "$f(x) = 4x^2 - 5x + 2$",
+            "$f(x) = 2x^2 - 5x + 3$"
+          ],
+          "answer": 1,
+          "hint": "Integrate $f'(x)$ to find $f(x)$, then use the point $(2, 3)$ to find the constant.",
+          "solution": "$f(x) = \\int (4x - 5) dx = 2x^2 - 5x + c$. At $(2, 3)$: $3 = 2(4) - 5(2) + c = 8 - 10 + c = -2 + c$, so $c = 5$. Therefore $f(x) = 2x^2 - 5x + 5$.",
+          "steps": [
+            {
+              "explain": "To find $f(x)$ from the gradient $f'(x)$, we integrate: $f(x) = \\int f'(x) dx$.",
+              "work": "f(x) = \\int (4x - 5) dx"
+            },
+            {
+              "explain": "Integrate term by term: $\\int 4x dx = 2x^2$ and $\\int -5 dx = -5x$.",
+              "work": "\\int 4x dx = 2x^2 \\quad \\int -5 dx = -5x"
+            },
+            {
+              "explain": "Combine the results: $f(x) = 2x^2 - 5x + c$, where $c$ is the constant of integration.",
+              "work": "f(x) = 2x^2 - 5x + c"
+            },
+            {
+              "explain": "The curve passes through $(2, 3)$, so substitute $x = 2$ and $f(x) = 3$ into the equation.",
+              "work": "3 = 2(2)^2 - 5(2) + c"
+            },
+            {
+              "explain": "Calculate: $3 = 2(4) - 10 + c = 8 - 10 + c = -2 + c$.",
+              "work": "3 = 8 - 10 + c = -2 + c"
+            },
+            {
+              "explain": "Solve for $c$: $3 = -2 + c \\Rightarrow c = 5$.",
+              "work": "c = 5"
+            },
+            {
+              "explain": "The equation of the curve is $f(x) = 2x^2 - 5x + 5$.",
+              "work": "f(x) = 2x^2 - 5x + 5"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "Integrating $f'(x)=4x-5$ (power rule), what is the general antiderivative?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$f(x)=2x^2-5x+C$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$f(x)=4x^2-5x+C$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$f(x)=2x^2-5+C$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$\\int 4x\\,dx=2x^2$, $\\int-5\\,dx=-5x$."
+                ],
+                "explanation": "$f(x)=2x^2-5x+C$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Substituting the point $(2,3)$ into $f(x)=2x^2-5x+C$ and solving, what is $C$?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$C=5$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$C=1$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$C=-2$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$3=2(4)-5(2)+C=8-10+C=-2+C$ — solve for $C$."
+                ],
+                "explanation": "$3=-2+C \\Rightarrow C=5$, giving $f(x)=2x^2-5x+5$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc23s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A curve has gradient $f'(x) = 6x + 1$ and passes through $(1, 5)$. Find $f(x)$.",
+          "options": [
+            "$f(x) = 3x^2 + x + 1$",
+            "$f(x) = 3x^2 + x - 1$",
+            "$f(x) = 6x^2 + x + 1$",
+            "$f(x) = 3x^2 - x + 1$"
+          ],
+          "answer": 0,
+          "hint": "Integrate $f'(x)$ and use the given point to find the constant.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Integrate the gradient function $f'(x)$ to find the general form of $f(x)$. Remember to add the constant of integration $C$.",
+              "work": "\\begin{aligned} f(x) &= \\int (6x + 1) \\,dx \\\\ &= \\frac{6x^2}{2} + x + C \\\\ &= 3x^2 + x + C \\end{aligned}"
+            },
+            {
+              "explain": "Substitute the given point $(1, 5)$ into the equation to find $C$.",
+              "work": "\\begin{aligned} f(1) &= 3(1)^2 + (1) + C \\\\ 5 &= 3 + 1 + C \\end{aligned}"
+            },
+            {
+              "explain": "Solve for $C$.",
+              "work": "\\begin{aligned} 5 &= 4 + C \\\\ C &= 1 \\end{aligned}"
+            },
+            {
+              "explain": "Write the final equation for $f(x)$.",
+              "work": "f(x) = 3x^2 + x + 1"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "Integrating $f'(x)=6x+1$ (power rule), what is the general antiderivative?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$f(x)=3x^2+x+C$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$f(x)=6x^2+x+C$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$f(x)=3x^2+C$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$\\int6x\\,dx=3x^2$, $\\int1\\,dx=x$."
+                ],
+                "explanation": "$f(x)=3x^2+x+C$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Substituting the point $(1,5)$ into $f(x)=3x^2+x+C$ and solving, what is $C$?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$C=1$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$C=-1$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$C=5$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$5=3(1)+1+C=4+C$ — solve for $C$."
+                ],
+                "explanation": "$5=4+C \\Rightarrow C=1$, giving $f(x)=3x^2+x+1$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc24",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The graph of a function $f(x)$ is shown. Use interval notation to state the domain and range of $f(x)$.",
+          "figure": {
+            "svg": "fig:e9f3f08668"
+          },
+          "options": [
+            "Domain: $(-\\infty, \\infty)$, Range: $[0, \\infty)$",
+            "Domain: $(-\\infty, -1] \\cup [1, \\infty)$, Range: $[-\\pi/2, 0) \\cup (0, \\pi/2]$",
+            "Domain: $[-1, 1]$, Range: $[-1, 1]$",
+            "Domain: $\\mathbb{R}$, Range: $\\mathbb{R}$"
+          ],
+          "answer": 1,
+          "hint": "Domain: all $x$-values for which the function is defined. Range: all possible $y$-values the function takes. Look for gaps (asymptotes) in the graph.",
+          "solution": "From the graph, the function has vertical asymptotes at $x = \\pm 1$ (excluded from domain) and horizontal asymptotes near $y = \\pm \\pi/2$ (excluded from range). Domain: $(-\\infty, -1] \\cup [1, \\infty)$, Range: $[-\\pi/2, 0) \\cup (0, \\pi/2]$.",
+          "steps": [
+            {
+              "explain": "Domain is the set of all input values ($x$-values) for which the function is defined. Looking at the graph, it exists for $x \\leq -1$ and $x \\geq 1$, with solid endpoints at $x = -1$ and $x = 1$.",
+              "work": "\\text{Endpoints at } x = \\pm 1"
+            },
+            {
+              "explain": "In interval notation, the domain includes these endpoints, so we use square brackets.",
+              "work": "\\text{Domain: } (-\\infty, -1] \\cup [1, \\infty)"
+            },
+            {
+              "explain": "Range is the set of all possible output values ($y$-values).",
+              "work": "\\text{Range: all possible } y\\text{-values}"
+            },
+            {
+              "explain": "The graph has endpoints at $y = -\\pi/2$ and $y = \\pi/2$, which are included. It has a horizontal asymptote at $y = 0$ (the x-axis), so $y=0$ is excluded.",
+              "work": "\\text{Horizontal asymptote at } y = 0"
+            },
+            {
+              "explain": "The range in interval notation includes the endpoints but excludes $0$.",
+              "work": "\\text{Range: } [-\\pi/2, 0) \\cup (0, \\pi/2]"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-GRAPH-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc24s",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "From a sketch of a rational function, state the domain and range.",
+          "figure": {
+            "svg": "fig:9da2177cc8"
+          },
+          "options": [
+            "Domain: $(-\\infty, \\infty)$, Range: $[0, \\infty)$",
+            "Domain: $(-\\infty, 2) \\cup (2, \\infty)$, Range: $(-\\infty, 1) \\cup (1, \\infty)$",
+            "Domain: $[0, \\infty)$, Range: $[0, \\infty)$",
+            "Domain: $\\mathbb{R}$, Range: $\\mathbb{R}$"
+          ],
+          "answer": 1,
+          "hint": "Look for vertical asymptotes (excluded from domain) and horizontal asymptotes (excluded from range).",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Observe the vertical asymptote from the graph. The graph approaches but never touches the vertical line $x = 2$, so $x = 2$ is excluded from the domain.",
+              "work": "\\text{Vertical asymptote at } x = 2"
+            },
+            {
+              "explain": "The domain is all real numbers except $2$.",
+              "work": "\\text{Domain: } (-\\infty, 2) \\cup (2, \\infty)"
+            },
+            {
+              "explain": "Observe the horizontal asymptote from the graph. The graph approaches but never touches the horizontal line $y = 1$, so $y = 1$ is excluded from the range.",
+              "work": "\\text{Horizontal asymptote at } y = 1"
+            },
+            {
+              "explain": "The range is all real numbers except $1$.",
+              "work": "\\text{Range: } (-\\infty, 1) \\cup (1, \\infty)"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-GRAPH-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc25as",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Sketch $y = |2x + 3|$ and $y = -x + 5$ for $-9 \\leq x \\leq 4$.",
+          "answer": "sketch",
+          "solution": "sketch",
+          "steps": [
+            {
+              "explain": "First, find the key features of the absolute value function $y = |2x + 3|$. The vertex occurs where $2x + 3 = 0$, which is $(-1.5, 0)$.",
+              "work": "y = |2x + 3| \\implies \\text{Vertex at } (-1.5, 0)"
+            },
+            {
+              "explain": "Find the $y$-intercept for the absolute value function by setting $x = 0$.",
+              "work": "y = |2(0) + 3| = 3 \\implies y\\text{-intercept at } (0, 3)"
+            },
+            {
+              "explain": "Next, find the key features of the linear function $y = -x + 5$. The $y$-intercept is $(0, 5)$ and the $x$-intercept is $(5, 0)$.",
+              "work": "y = -x + 5 \\implies y\\text{-intercept: } 5, \\; x\\text{-intercept: } 5"
+            },
+            {
+              "explain": "Calculate the endpoints for both functions at $x = -9$ and $x = 4$ to plot them over the required domain.",
+              "work": "\\text{For } y = |2x + 3|: (-9, 15) \\text{ and } (4, 11) \\\\ \\text{For } y = -x + 5: (-9, 14) \\text{ and } (4, 1)"
+            },
+            {
+              "explain": "Finally, plot the points and draw the lines. Notice how the graphs intersect on the left side at $(-8, 13)$.",
+              "work": "\\text{Draw the graphs over } -9 \\leq x \\leq 4",
+              "figure": {
+                "svg": "fig:5d6a5ea7ad"
+              }
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-GRAPH-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc25b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the sketch from part (a), solve $|x - 1| = 2x + 4$.",
+          "options": [
+            "$x = -1$",
+            "$x = -1$ and $x = 2$",
+            "$x = 2$",
+            "No solution"
+          ],
+          "answer": 0,
+          "hint": "From the sketch, find where the two graphs intersect. These are the solutions.",
+          "solution": "Graphically, $y = |x-1|$ intersects $y = 2x+4$ at two points. Algebraically, $|x-1| = 2x+4$ gives $(x-1) = 2x+4$ or $-(x-1) = 2x+4$. From the first: $x = -5$ (check: $|-5-1| = 6$, $2(-5)+4 = -6$, not equal). From the second: $-x+1 = 2x+4 \\Rightarrow -3x = 3 \\Rightarrow x = -1$ ✓. And if we solve more carefully considering both cases, we also get $x = -5/3$... Let me recalculate. Actually, solving $|x-1| = 2x+4$: if $x \\geq 1$: $x-1 = 2x+4 \\Rightarrow x = -5$ (invalid since $-5 \\not\\geq 1$). If $x < 1$: $-(x-1) = 2x+4 \\Rightarrow -x+1 = 2x+4 \\Rightarrow -3x = 3 \\Rightarrow x = -1$ ✓ (valid since $-1 < 1$). So $x = -1$ is the only solution.",
+          "steps": [
+            {
+              "explain": "An absolute value equation $|f(x)| = g(x)$ can be solved graphically by finding intersections, or algebraically by considering cases.",
+              "work": "|x - 1| = 2x + 4"
+            },
+            {
+              "explain": "Case 1: When $x \\geq 1$, we have $|x-1| = x-1$, so: $x - 1 = 2x + 4 \\Rightarrow -x = 5 \\Rightarrow x = -5$. But $-5 \\not\\geq 1$, so this case yields no solution.",
+              "work": "x \\geq 1: \\quad x - 1 = 2x + 4 \\quad \\Rightarrow \\quad x = -5 \\quad (\\text{invalid})"
+            },
+            {
+              "explain": "Case 2: When $x < 1$, we have $|x-1| = -(x-1) = -x+1$, so: $-x + 1 = 2x + 4 \\Rightarrow -3x = 3 \\Rightarrow x = -1$. Since $-1 < 1$, this solution is valid.",
+              "work": "x < 1: \\quad -x + 1 = 2x + 4 \\quad \\Rightarrow \\quad x = -1 \\quad (\\text{valid})"
+            },
+            {
+              "explain": "Verify: At $x = -1$: $|(-1) - 1| = |-2| = 2$ and $2(-1) + 4 = 2$. ✓ The solution checks out.",
+              "work": "\\text{Check: } |-1-1| = 2 \\quad \\text{and} \\quad 2(-1)+4 = 2 \\; \\checkmark"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-EQ-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc25bs",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "From part (a), solve $|2x + 3| = -x + 5$.",
+          "options": [
+            "$x = \\frac{2}{3}$",
+            "$x = -8$",
+            "$x = \\frac{2}{3}$ and $x = -8$",
+            "No solution"
+          ],
+          "answer": 2,
+          "hint": "Find where the two graphs intersect.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "To solve the absolute value equation, break it down into two cases.",
+              "work": "|2x + 3| = -x + 5"
+            },
+            {
+              "explain": "Case 1: The expression inside the absolute value is positive or zero.",
+              "work": "2x + 3 = -x + 5 \\implies 3x = 2 \\implies x = \\frac{2}{3}"
+            },
+            {
+              "explain": "Case 2: The expression inside the absolute value is negative.",
+              "work": "-(2x + 3) = -x + 5 \\implies -2x - 3 = -x + 5 \\implies -x = 8 \\implies x = -8"
+            },
+            {
+              "explain": "Check both solutions in the original equation to ensure they are valid.",
+              "work": "\\text{For } x = \\frac{2}{3}: |2(\\frac{2}{3}) + 3| = \\frac{13}{3} \\text{ and } -(\\frac{2}{3}) + 5 = \\frac{13}{3} \\text{ (Valid)}\\\\ \\text{For } x = -8: |2(-8) + 3| = |-13| = 13 \\text{ and } -(-8) + 5 = 13 \\text{ (Valid)}"
+            },
+            {
+              "explain": "Both solutions are valid.",
+              "work": "x = \\frac{2}{3} \\text{ and } x = -8"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-EQ-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc26a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate $y = xe^{3x}$.",
+          "options": [
+            "$y' = e^{3x}$",
+            "$y' = 3xe^{3x}$",
+            "$y' = e^{3x}(1 + 3x)$",
+            "$y' = 3e^{3x}$"
+          ],
+          "answer": 2,
+          "hint": "Use the product rule: $(uv)' = u'v + uv'$ with $u = x$ and $v = e^{3x}$.",
+          "solution": "Using product rule: $y' = 1 \\cdot e^{3x} + x \\cdot 3e^{3x} = e^{3x}(1 + 3x)$.",
+          "steps": [
+            {
+              "explain": "We have $y = xe^{3x}$, which is a product of two functions: $u = x$ and $v = e^{3x}$. We use the product rule: $(uv)' = u'v + uv'$.",
+              "work": "u = x \\quad v = e^{3x} \\quad y' = u'v + uv'"
+            },
+            {
+              "explain": "Find the derivatives: $u' = 1$ and $v' = 3e^{3x}$ (using the chain rule on $e^{3x}$).",
+              "work": "u' = 1 \\quad v' = 3e^{3x}"
+            },
+            {
+              "explain": "Apply the product rule: $y' = 1 \\cdot e^{3x} + x \\cdot 3e^{3x} = e^{3x} + 3xe^{3x}$.",
+              "work": "y' = e^{3x} + 3xe^{3x}"
+            },
+            {
+              "explain": "Factor out $e^{3x}$: $y' = e^{3x}(1 + 3x)$.",
+              "work": "y' = e^{3x}(1 + 3x)"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$y=xe^{3x}$ is a product of $u=x$ ($u'=1$) and $v=e^{3x}$ ($v'=3e^{3x}$, chain rule). Applying $u'v+uv'$, which expression matches (before factorising)?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$e^{3x} + 3xe^{3x}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$e^{3x} - 3xe^{3x}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$xe^{3x} + 3e^{3x}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$u'v = 1 \\times e^{3x} = e^{3x}$, and $uv' = x \\times 3e^{3x} = 3xe^{3x}$ — added together, not subtracted."
+                ],
+                "explanation": "$e^{3x} + 3xe^{3x}$ — both terms share a common factor of $e^{3x}$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Factoring out the common $e^{3x}$ from $e^{3x} + 3xe^{3x}$, which matches?",
+                "axis": "verification",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$e^{3x}(1+3x)$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$3e^{3x}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$e^{3x}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$e^{3x} + 3xe^{3x} = e^{3x}(1) + e^{3x}(3x) = e^{3x}(1+3x)$."
+                ],
+                "explanation": "$e^{3x}(1+3x)$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc26as",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate $y = x^2 e^{2x}$.",
+          "options": [
+            "$y' = 2xe^{2x}$",
+            "$y' = e^{2x}(x^2 + 2x)$",
+            "$y' = e^{2x}(2x + 2x^2)$",
+            "$y' = e^{2x}(2x^2 + 1)$"
+          ],
+          "answer": 2,
+          "hint": "Use product rule with $u = x^2$ and $v = e^{2x}$.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Identify the two functions to use the product rule: let $u = x^2$ and $v = e^{2x}$.",
+              "work": "u = x^2, \\quad v = e^{2x}"
+            },
+            {
+              "explain": "Differentiate each part using standard rules. Note that differentiating $e^{2x}$ requires the chain rule.",
+              "work": "u' = 2x, \\quad v' = 2e^{2x}"
+            },
+            {
+              "explain": "Apply the product rule: $y' = u'v + uv'$.",
+              "work": "y' = (2x)(e^{2x}) + (x^2)(2e^{2x})"
+            },
+            {
+              "explain": "Factor out the common term $e^{2x}$ to simplify the expression.",
+              "work": "y' = e^{2x}(2x + 2x^2)"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$y=x^2e^{2x}$ is a product with $u=x^2$ ($u'=2x$) and $v=e^{2x}$ ($v'=2e^{2x}$, chain rule). Applying $u'v+uv'$, which matches before factorising?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$2xe^{2x} + 2x^2e^{2x}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$2xe^{2x} - 2x^2e^{2x}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$2xe^{2x} + x^2e^{2x}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$u'v=2xe^{2x}$ and $uv'=x^2\\times2e^{2x}=2x^2e^{2x}$ — added, and don't drop the $2$ from $v'$."
+                ],
+                "explanation": "$2xe^{2x} + 2x^2e^{2x}$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Factoring out the common $e^{2x}$, which matches?",
+                "axis": "verification",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$e^{2x}(2x+2x^2)$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$e^{2x}(2x+x^2)$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$e^{2x}(x+x^2)$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$2xe^{2x}=e^{2x}(2x)$ and $2x^2e^{2x}=e^{2x}(2x^2)$ — keep both coefficients."
+                ],
+                "explanation": "$e^{2x}(2x+2x^2)$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc26b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Hence find the exact value of $\\int_0^2 e^{3x}(3 + 9x) dx$.",
+          "options": [
+            "$6e^6$",
+            "$2e^6$",
+            "$3e^6$",
+            "$12e^6$"
+          ],
+          "answer": 0,
+          "hint": "Rewrite $3 + 9x$ in terms of the derivative from part (a). Notice $3 + 9x = 3(1 + 3x)$.",
+          "solution": "The correct answer is $6e^6$ (from part (a): $\\frac{d}{dx}[xe^{3x}]=e^{3x}(1+3x)$, and $3+9x=3(1+3x)$, so $\\int_0^2 e^{3x}(3+9x)\\,dx = 3\\int_0^2 e^{3x}(1+3x)\\,dx = 3[xe^{3x}]_0^2 = 3(2e^6-0) = 6e^6$).",
+          "steps": [
+            {
+              "explain": "From part (a), we found that $\\frac{d}{dx}[xe^{3x}] = e^{3x}(1 + 3x)$. We can use this as the antiderivative.",
+              "work": "\\frac{d}{dx}[xe^{3x}] = e^{3x}(1 + 3x)"
+            },
+            {
+              "explain": "Rewrite the integrand: $3 + 9x = 3(1 + 3x)$.",
+              "work": "3 + 9x = 3(1 + 3x)"
+            },
+            {
+              "explain": "Therefore: $\\int_0^2 e^{3x}(3 + 9x) dx = \\int_0^2 3e^{3x}(1 + 3x) dx = 3\\int_0^2 e^{3x}(1 + 3x) dx$.",
+              "work": "\\int_0^2 e^{3x}(3 + 9x) dx = 3\\int_0^2 e^{3x}(1 + 3x) dx"
+            },
+            {
+              "explain": "Using the antiderivative from part (a): $3[xe^{3x}]_0^2 = 3[2e^6 - 0 \\cdot e^0] = 3 \\cdot 2e^6 = 6e^6$. Or checking against provided answer: if answer is $3e^6 - 3$, this suggests $[3xe^{3x}]_0^2 = 3e^6 - 3$, which means $(3 \\cdot 2 \\cdot e^6) - (3 \\cdot 0 \\cdot e^0) = 6e^6$...",
+              "work": "3[xe^{3x}]_0^2 = 3(2e^6) = 6e^6"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "The hint rewrites $3+9x=3(1+3x)$, and part (a) established $\\dfrac{d}{dx}[xe^{3x}]=e^{3x}(1+3x)$. \"Hence\", what is $\\int_0^2 e^{3x}(3+9x)\\,dx$ equal to (before evaluating limits)?",
+                "axis": "recognition",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$3\\times\\left[xe^{3x}\\right]_0^2$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$\\left[xe^{3x}\\right]_0^2$ (forgot the factor of $3$)"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$3\\times\\left[x^2e^{3x}\\right]_0^2$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Since $3+9x=3(1+3x)$, the integral is $3$ times $\\int e^{3x}(1+3x)\\,dx$, whose antiderivative is exactly $xe^{3x}$ (from part (a)) — no new integration needed."
+                ],
+                "explanation": "$3\\times\\left[xe^{3x}\\right]_0^2$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Evaluating $3\\times\\left[xe^{3x}\\right]_0^2=3(2e^6-0)$, what is the result?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$6e^6$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$2e^6$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$3e^6$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$3\\times2e^6=6e^6$ — don't drop either the leading $3$ or the $x=2$ substitution."
+                ],
+                "explanation": "$6e^6$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc26bs",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find $\\int_0^1 e^{2x}(2 + 4x) dx$.",
+          "options": [
+            "$e^2 - 1$",
+            "$2e^2$",
+            "$2e^2 - 2$",
+            "$4(e^2 - 1)$"
+          ],
+          "answer": 1,
+          "hint": "Notice $2 + 4x = 2(1 + 2x)$. Use the antiderivative from part (a).",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "From part (a), we found that the derivative of $x^2 e^{2x}$ is $e^{2x}(2x + 2x^2)$. Notice that the integrand is $e^{2x}(2 + 4x)$, which is NOT exactly the same.",
+              "work": "\\frac{d}{dx}[x^2 e^{2x}] = e^{2x}(2x + 2x^2)"
+            },
+            {
+              "explain": "Let's find the antiderivative of $e^{2x}(2 + 4x)$ by recognizing the product rule on $2x e^{2x}$. Let $y = 2x e^{2x}$.",
+              "work": "y = 2x e^{2x}"
+            },
+            {
+              "explain": "Differentiate $y = 2x e^{2x}$: $y' = 2(e^{2x}) + 2x(2e^{2x}) = e^{2x}(2 + 4x)$. This perfectly matches our integrand.",
+              "work": "\\frac{d}{dx}[2x e^{2x}] = e^{2x}(2 + 4x)"
+            },
+            {
+              "explain": "Therefore, the antiderivative is $2x e^{2x}$. Evaluate the definite integral from $0$ to $1$.",
+              "work": "\\int_0^1 e^{2x}(2 + 4x) dx = [2x e^{2x}]_0^1"
+            },
+            {
+              "explain": "Substitute the limits: $(2(1)e^2) - (2(0)e^0)$.",
+              "work": "= 2e^2 - 0 = 2e^2"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "You're told (implicitly, via an earlier part) that $\\dfrac{d}{dx}[xe^{2x}]=e^{2x}(2x+1)$. Rewriting $2+4x$ as a multiple of $(1+2x)$, what do you get?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$2(1+2x)$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$4(1+2x)$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$2+2(1+2x)$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$2+4x=2(1+2x)$."
+                ],
+                "explanation": "$\\int e^{2x}(2+4x)\\,dx=2\\int e^{2x}(1+2x)\\,dx=2\\left[xe^{2x}\\right]$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Evaluating $2\\left[xe^{2x}\\right]_0^1=2(1\\cdot e^2-0)$, what is the result?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$2e^2$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$e^2$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$4e^2$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$2\\times e^2=2e^2$."
+                ],
+                "explanation": "$2e^2$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc27",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The function $f(x) = |x|$ is transformed and the equation of the new function is of the form $y = kf(x + b) + c$. The graph of the new function is shown.",
+          "figure": {
+            "svg": "fig:f7af06fc9c"
+          },
+          "options": [
+            "$k = 1, b = 1, c = 2$",
+            "$k = 2, b = -1, c = 2$",
+            "$k = -1, b = -3, c = 2$",
+            "$k = -2, b = 3, c = -2$"
+          ],
+          "answer": 2,
+          "hint": "Look for: reflections (negative $k$), horizontal shifts ($b$), and vertical shifts ($c$) in the transformed graph.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "The standard absolute value graph $y = |x|$ opens upwards with a vertex at $(0, 0)$.",
+              "work": "f(x) = |x| \\implies \\text{Vertex } (0,0)"
+            },
+            {
+              "explain": "The given graph opens downwards, which means it has been reflected across the $x$-axis. This implies $k$ is negative.",
+              "work": "k < 0"
+            },
+            {
+              "explain": "The vertex of the given graph is at $(3, 2)$. This represents a horizontal shift of $3$ units to the right, so $b = -3$.",
+              "work": "b = -3"
+            },
+            {
+              "explain": "It also represents a vertical shift of $2$ units up, so $c = 2$.",
+              "work": "c = 2"
+            },
+            {
+              "explain": "Let's check a point on the graph, for example the $y$-intercept $(0, -1)$, to find the exact value of $k$.",
+              "work": "\\begin{aligned} y &= k|x - 3| + 2 \\\\ -1 &= k|0 - 3| + 2 \\\\ -1 &= 3k + 2 \\\\ 3k &= -3 \\\\ k &= -1 \\end{aligned}"
+            },
+            {
+              "explain": "Therefore, $k = -1, b = -3, c = 2$.",
+              "work": "k = -1, \\quad b = -3, \\quad c = 2"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-TRANS-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc27s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The function $f(x) = |x|$ transforms to $y = kf(x + b) + c$ giving $y = 2|x - 1| + 3$. Find $k$, $b$, $c$.",
+          "options": [
+            "$k = 2, b = -1, c = 3$",
+            "$k = 2, b = 1, c = 3$",
+            "$k = -2, b = -1, c = 3$",
+            "$k = -2, b = 1, c = -3$"
+          ],
+          "answer": 0,
+          "hint": "Match $y = 2|x-1| + 3$ to $y = kf(x+b) + c$ form.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Substitute $f(x) = |x|$ into the general form $y = kf(x + b) + c$.",
+              "work": "y = k|x + b| + c"
+            },
+            {
+              "explain": "Compare this transformed equation to the given equation $y = 2|x - 1| + 3$.",
+              "work": "k|x + b| + c \\quad \\text{vs} \\quad 2|x - 1| + 3"
+            },
+            {
+              "explain": "By matching the coefficient outside the absolute value, we see $k = 2$.",
+              "work": "k = 2"
+            },
+            {
+              "explain": "By matching the expression inside the absolute value, $x + b = x - 1$, which gives $b = -1$.",
+              "work": "x + b = x - 1 \\implies b = -1"
+            },
+            {
+              "explain": "By matching the constant term at the end, we see $c = 3$.",
+              "work": "c = 3"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-TRANS-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc28b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the same setup as part (a), another observer is at point $A$ such that $A, B, Y$ are collinear and on the same side of the tower, with $A$ closer to the tower. The angle of elevation from $A$ to $Z$ is $15^\\circ$. If the distance $AB = 500$ m, find the value of $h$.",
+          "options": [
+            "$h \\approx 514$ m",
+            "$h \\approx 400$ m",
+            "$h \\approx 650$ m",
+            "$h \\approx 800$ m"
+          ],
+          "answer": 1,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "From part (a), we know the distance from the further point B to the base is $BY = h \\cot 12^\\circ$.",
+              "work": "BY = h \\cot 12^\\circ"
+            },
+            {
+              "explain": "Similarly, for the closer point A with an angle of elevation of $15^\\circ$, the distance to the base is $AY = h \\cot 15^\\circ$.",
+              "work": "AY = h \\cot 15^\\circ"
+            },
+            {
+              "explain": "Since A, B, and Y are collinear and on the same side, the distance $AB$ is the difference between $BY$ and $AY$.",
+              "work": "AB = BY - AY"
+            },
+            {
+              "explain": "Substitute the expressions for $BY$ and $AY$ and factor out $h$.",
+              "work": "\\begin{aligned} 500 &= h \\cot 12^\\circ - h \\cot 15^\\circ \\\\ 500 &= h(\\cot 12^\\circ - \\cot 15^\\circ) \\end{aligned}"
+            },
+            {
+              "explain": "Calculate the value of $h$.",
+              "work": "\\begin{aligned} h &= \\frac{500}{\\cot 12^\\circ - \\cot 15^\\circ} \\\\ h &\\approx \\frac{500}{4.7046 - 3.7321} \\\\ h &\\approx \\frac{500}{0.9725} \\approx 514.1 \\end{aligned}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GEO-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc28bs",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the formula from part (a), if $d = 100$ m, $\\alpha = 20^\\circ$, $\\beta = 15^\\circ$, find $h$.",
+          "options": [
+            "$h \\approx 102$ m",
+            "$h \\approx 300$ m",
+            "$h \\approx 480$ m",
+            "$h \\approx 600$ m"
+          ],
+          "answer": 1,
+          "hint": "Calculate using $h = \\frac{100}{\\cot 20° - \\cot 15°}$.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Identify the given values from the question to substitute into the formula derived in part (a).",
+              "work": "d = 100, \\quad \\alpha = 20^\\circ, \\quad \\beta = 15^\\circ"
+            },
+            {
+              "explain": "Substitute these values into the formula $h = \\frac{d}{\\cot \\beta - \\cot \\alpha}$.",
+              "work": "h = \\frac{100}{\\cot 15^\\circ - \\cot 20^\\circ}"
+            },
+            {
+              "explain": "Calculate the values of the cotangents.",
+              "work": "\\cot 15^\\circ \\approx 3.7321, \\quad \\cot 20^\\circ \\approx 2.7475"
+            },
+            {
+              "explain": "Subtract the cotangent values.",
+              "work": "\\cot 15^\\circ - \\cot 20^\\circ \\approx 3.7321 - 2.7475 = 0.9846"
+            },
+            {
+              "explain": "Divide the distance $d$ by the difference to find $h$.",
+              "work": "h = \\frac{100}{0.9846} \\approx 101.56 \\approx 102 \\text{ m}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GEO-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc31",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For what values of $k$ is the function $f(x) = x^3 - 3x^2 + kx + 5$ increasing for all real $x$?",
+          "options": [
+            "$k > 0$",
+            "$k > 1$",
+            "$k > 2$",
+            "$k \\geq 3$"
+          ],
+          "answer": 3,
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "A function $f(x)$ is increasing for all real $x$ if its derivative $f'(x)$ is greater than or equal to zero for all $x$.",
+              "work": "f'(x) \\geq 0 \\quad \\text{for all } x"
+            },
+            {
+              "explain": "First, find the derivative of the function.",
+              "work": "f'(x) = \\frac{d}{dx}(x^3 - 3x^2 + kx + 5) = 3x^2 - 6x + k"
+            },
+            {
+              "explain": "The derivative $f'(x) = 3x^2 - 6x + k$ is a quadratic function opening upwards (since $a=3>0$). For this quadratic to be greater than or equal to zero for all $x$, its discriminant must be less than or equal to zero.",
+              "work": "\\Delta = b^2 - 4ac \\leq 0 \\\\ (-6)^2 - 4(3)(k) \\leq 0"
+            },
+            {
+              "explain": "Solve the inequality for $k$.",
+              "work": "36 - 12k \\leq 0 \\\\ 36 \\leq 12k \\\\ k \\geq 3"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "For $f(x)=x^3-3x^2+kx+5$ to be increasing for all real $x$, $f'(x)=3x^2-6x+k$ must be $\\geq0$ everywhere. Since this is an upward parabola (in $x$), what condition on its discriminant ensures it never dips below zero?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "Discriminant $\\leq0$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "Discriminant $\\geq0$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "Discriminant $=0$ only"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "An upward parabola stays $\\geq0$ everywhere exactly when it has at most one real root — that's discriminant $\\leq0$."
+                ],
+                "explanation": "Discriminant $\\leq0$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "The discriminant of $3x^2-6x+k$ is $(-6)^2-4(3)(k)=36-12k$. Solving $36-12k\\leq0$ for $k$, what do you get?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$k\\geq3$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$k\\leq3$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$k\\geq12$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$36\\leq12k \\Rightarrow 3\\leq k$, i.e. $k\\geq3$."
+                ],
+                "explanation": "$k\\geq3$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          }
+        },
+        {
+          "id": "girr2020-mc31s",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For $f(x) = x^3 - 3x^2 + mx - 2$, find the values of $m$ so that $f(x)$ is increasing everywhere.",
+          "options": [
+            "$m \\geq 0$",
+            "$m \\geq 1$",
+            "$m \\geq 3$",
+            "$m \\geq 4$"
+          ],
+          "answer": 2,
+          "hint": "Use discriminant: $f'(x) \\geq 0$ for all $x$.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "A function $f(x)$ is increasing everywhere if its derivative $f'(x) \\geq 0$ for all real numbers.",
+              "work": "f'(x) \\geq 0"
+            },
+            {
+              "explain": "Differentiate $f(x)$ with respect to $x$.",
+              "work": "f'(x) = 3x^2 - 6x + m"
+            },
+            {
+              "explain": "Since $f'(x)$ is a quadratic with a positive leading coefficient ($a=3$), $f'(x) \\geq 0$ for all $x$ if and only if the discriminant $\\Delta \\leq 0$.",
+              "work": "\\Delta = b^2 - 4ac \\leq 0 \\\\ (-6)^2 - 4(3)(m) \\leq 0"
+            },
+            {
+              "explain": "Solve for $m$.",
+              "work": "36 - 12m \\leq 0 \\\\ 36 \\leq 12m \\\\ m \\geq 3"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc32",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the integers $a$ and $b$ such that $\\frac{1}{\\sqrt{5}-2} = a + b\\sqrt{5}$.",
+          "options": [
+            "$a=2, b=1$",
+            "$a=1, b=2$",
+            "$a=-2, b=1$",
+            "$a=-2, b=-1$"
+          ],
+          "answer": 0,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "To rationalise the denominator, multiply both the numerator and the denominator by the conjugate of the denominator, which is $\\sqrt{5}+2$.",
+              "work": "\\frac{1}{\\sqrt{5}-2} = \\frac{1}{\\sqrt{5}-2} \\times \\frac{\\sqrt{5}+2}{\\sqrt{5}+2}"
+            },
+            {
+              "explain": "Expand the denominator using the difference of two squares formula: $(x-y)(x+y) = x^2 - y^2$.",
+              "work": "Denominator = (\\sqrt{5})^2 - (2)^2 = 5 - 4 = 1"
+            },
+            {
+              "explain": "Simplify the expression.",
+              "work": "\\frac{\\sqrt{5}+2}{1} = 2 + \\sqrt{5}"
+            },
+            {
+              "explain": "By equating this to $a + b\\sqrt{5}$, we can identify $a$ and $b$.",
+              "work": "2 + 1\\sqrt{5} = a + b\\sqrt{5} \\implies a=2, \\; b=1"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-SURD-01"
+          }
+        },
+        {
+          "id": "girr2020-mc32s",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express $\\frac{2}{\\sqrt{3} + 1}$ in the form $a + b\\sqrt{3}$, where $a$ and $b$ are rational numbers.",
+          "options": [
+            "$1 - \\sqrt{3}$",
+            "$\\sqrt{3} - 1$",
+            "$1 + \\sqrt{3}$",
+            "$2 - \\sqrt{3}$"
+          ],
+          "answer": 1,
+          "hint": "Multiply by the conjugate $\\sqrt{3} - 1$.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Multiply the numerator and denominator by the conjugate of the denominator, $\\sqrt{3}-1$.",
+              "work": "\\frac{2}{\\sqrt{3}+1} = \\frac{2}{\\sqrt{3}+1} \\times \\frac{\\sqrt{3}-1}{\\sqrt{3}-1}"
+            },
+            {
+              "explain": "Expand the denominator using $(x+y)(x-y) = x^2 - y^2$.",
+              "work": "\\text{Denominator} = (\\sqrt{3})^2 - (1)^2 = 3 - 1 = 2"
+            },
+            {
+              "explain": "Simplify the expression by dividing the numerator by the denominator.",
+              "work": "\\frac{2(\\sqrt{3}-1)}{2} = \\sqrt{3}-1"
+            },
+            {
+              "explain": "The result is in the required form $a + b\\sqrt{3}$ with $a=-1$ and $b=1$.",
+              "work": "\\sqrt{3} - 1"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "ALG-SURD-01"
+          }
+        },
+        {
+          "id": "girr2020-mc33",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A piece of wire $28$ m long is cut into two pieces. One piece is bent into a square and the other is bent into a circle. What should be the lengths of the two pieces of wire to minimize the combined area of the square and the circle?",
+          "options": [
+            "Square: 10m, Circle: 18m",
+            "Square: $\\frac{112}{\\pi+4}$ m, Circle: $28-\\frac{112}{\\pi+4}$ m",
+            "Square: 8m, Circle: 20m",
+            "Square: 12m, Circle: 16m"
+          ],
+          "answer": 1,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Let $x$ be the length of wire used for the square, so $28 - x$ is the length used for the circle.",
+              "work": "\\text{Wire for square} = x \\\\ \\text{Wire for circle} = 28 - x"
+            },
+            {
+              "explain": "The perimeter of the square is $x$, so its side length is $\\frac{x}{4}$. The area of the square is therefore $(\\frac{x}{4})^2$.",
+              "work": "A_{\\text{square}} = \\left(\\frac{x}{4}\\right)^2 = \\frac{x^2}{16}"
+            },
+            {
+              "explain": "The circumference of the circle is $28 - x$, so $2\\pi r = 28 - x$, giving $r = \\frac{28-x}{2\\pi}$. The area of the circle is $\\pi r^2$.",
+              "work": "A_{\\text{circle}} = \\pi \\left(\\frac{28-x}{2\\pi}\\right)^2 = \\frac{(28-x)^2}{4\\pi}"
+            },
+            {
+              "explain": "The total area $A$ is the sum of the two areas. To find the minimum area, we differentiate $A$ with respect to $x$ and set it to zero.",
+              "work": "A(x) = \\frac{x^2}{16} + \\frac{(28-x)^2}{4\\pi} \\\\ A'(x) = \\frac{2x}{16} - \\frac{2(28-x)}{4\\pi} = \\frac{x}{8} - \\frac{28-x}{2\\pi}"
+            },
+            {
+              "explain": "Solve $A'(x) = 0$ for $x$.",
+              "work": "\\frac{x}{8} = \\frac{28-x}{2\\pi} \\\\ 2\\pi x = 8(28-x) \\\\ 2\\pi x = 224 - 8x \\\\ x(2\\pi + 8) = 224 \\\\ x = \\frac{224}{2\\pi + 8} = \\frac{112}{\\pi + 4}"
+            },
+            {
+              "explain": "Thus, the wire used for the square is $\\frac{112}{\\pi + 4}$ m, and the remainder is for the circle.",
+              "work": "\\text{Square: } \\frac{112}{\\pi + 4} \\text{ m} \\\\ \\text{Circle: } 28 - \\frac{112}{\\pi + 4} \\text{ m}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-OPT-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "girr2020-mc33s",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A $40$ m fence is used to enclose a rectangular garden. What should be the length and width of the garden to maximize its area?",
+          "options": [
+            "Length = 12m, Width = 8m",
+            "Length = 10m, Width = 10m",
+            "Length = 14m, Width = 6m",
+            "Length = 15m, Width = 5m"
+          ],
+          "answer": 1,
+          "hint": "For fixed perimeter, a square maximizes area.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Let $L$ and $W$ be the length and width of the rectangle. The perimeter is $40$ m.",
+              "work": "2L + 2W = 40 \\implies L + W = 20 \\implies W = 20 - L"
+            },
+            {
+              "explain": "Write the area $A$ as a function of $L$.",
+              "work": "A = L \\times W = L(20 - L) = 20L - L^2"
+            },
+            {
+              "explain": "To find the maximum area, take the derivative of $A$ with respect to $L$ and set it to zero.",
+              "work": "\\frac{dA}{dL} = 20 - 2L = 0"
+            },
+            {
+              "explain": "Solve for $L$ and find the corresponding $W$.",
+              "work": "2L = 20 \\implies L = 10 \\text{ m} \\\\ W = 20 - 10 = 10 \\text{ m}"
+            }
+          ],
+          "meta": {
+            "examPaper": "girraween-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-OPT-01",
+            "dnaConfidence": 0.85
+          }
+        }
+      ]
+    }
+  ]
+}

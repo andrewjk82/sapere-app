@@ -1,0 +1,13 @@
+<svg viewBox="0 0 390 249" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<path d="M 55 189 L 335 189 L 163.56 55 Z" fill="#dbeafe" fill-opacity="0.5" stroke="#475569" stroke-width="2"/>
+<text x="96.4464" y="174.70666666666668" text-anchor="middle" font-family="system-ui" font-size="12.5" font-weight="700" fill="#475569">51°</text>
+<text x="286.8464" y="174.70666666666668" text-anchor="middle" font-family="system-ui" font-size="12.5" font-weight="700" fill="#475569">38°</text>
+<text x="170.2672" y="83.58666666666667" text-anchor="middle" font-family="system-ui" font-size="12.5" font-weight="700" fill="#4f46e5">91°</text>
+<text x="195" y="215" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">AB = 7 cm</text>
+<text x="127.92817168877514" y="137.10780237711515" text-anchor="middle" font-family="system-ui" font-size="12.5" font-weight="600" fill="#4f46e5">b = AC</text>
+<text x="234.5002626076268" y="140.90924013842135" text-anchor="middle" font-family="system-ui" font-size="12.5" font-weight="600" fill="#4f46e5">a = BC</text>
+
+    <text x="35" y="209" font-family="system-ui" font-size="15" font-weight="600" fill="#1e293b">A</text>
+    <text x="343" y="209" font-family="system-ui" font-size="15" font-weight="600" fill="#1e293b">B</text>
+    <text x="157.56" y="43" font-family="system-ui" font-size="15" font-weight="600" fill="#1e293b">C</text>
+</svg>

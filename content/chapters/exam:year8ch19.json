@@ -1,0 +1,128 @@
+{
+  "chapterId": "exam:year8ch19",
+  "title": "Exam Practice",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "exam:year8ch19",
+      "code": "",
+      "title": "Comparing means and medians",
+      "questions": [
+        {
+          "id": "y8-19a-q4",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "",
+          "parts": [
+            {
+              "id": "y8-19a-q4a",
+              "type": "mc",
+              "stem": "Sue spent the following amounts on her lunch each day over the course of two working weeks:\n\n\\(\\$16, \\$8, \\$13, \\$49.50, \\$9.50, \\$13.50, \\$9, \\$11, \\$9.50, \\$10.50\\)\n\na) Calculate the median for these data (in dollars).",
+              "options": [
+                "\\(\\$9.75\\)",
+                "\\(\\$11.75\\)",
+                "\\(\\$10.75\\)",
+                "\\(\\$10.50\\)"
+              ],
+              "answer": 2
+            },
+            {
+              "id": "y8-19a-q4b",
+              "type": "mc",
+              "stem": "Sue spent the following amounts on her lunch each day over the course of two working weeks:\n\n\\(\\$16, \\$8, \\$13, \\$49.50, \\$9.50, \\$13.50, \\$9, \\$11, \\$9.50, \\$10.50\\)\n\nb) Calculate the mean for these data (in dollars).",
+              "options": [
+                "\\(\\$14.50\\)",
+                "\\(\\$14.95\\)",
+                "\\(\\$15.95\\)",
+                "\\(\\$10.75\\)"
+              ],
+              "answer": 1
+            },
+            {
+              "id": "y8-19a-q4c",
+              "type": "review",
+              "stem": "Sue spent the following amounts on her lunch each day over the course of two working weeks:\n\n\\(\\$16, \\$8, \\$13, \\$49.50, \\$9.50, \\$13.50, \\$9, \\$11, \\$9.50, \\$10.50\\)\n\nc) Compare the median and mean and comment on which is the better indicator of how much Sue usually spent on her daily lunch.",
+              "answer": "The median ($10.75) is a better indicator of Sue's usual spending. This is because the mean ($14.95) is heavily skewed upwards by an outlier ($49.50), which is much higher than her other daily lunch costs.",
+              "steps": [
+                {
+                  "explain": "Let's review the two values we calculated in parts a) and b).",
+                  "work": "\\(\\text{Median} = \\$10.75\\)\n\\(\\text{Mean} = \\$14.95\\)"
+                },
+                {
+                  "explain": "Look closely at the original data. Most days, Sue spends between \\(\\$8\\) and \\(\\$16\\) on lunch. However, on one day she spent \\(\\$49.50\\). This unusually high number is called an **outlier**.",
+                  "work": "\\text{Outlier: } \\$49.50"
+                },
+                {
+                  "explain": "The mean calculates the average using the total sum, so this single huge outlier (\\(\\$49.50\\)) artificially pulls the mean way up to \\(\\$14.95\\). But if you look at the data, Sue rarely spends that much on a normal day.",
+                  "work": "\\text{The mean is heavily skewed upwards by the outlier.}"
+                },
+                {
+                  "explain": "The median (\\(\\$10.75\\)) only cares about the middle numbers when ordered, so it completely ignores how extreme the outlier is. Therefore, \\(\\$10.75\\) is a much better reflection of her \"usual\" daily spending.",
+                  "work": "\\text{The median is a better indicator.}"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers."
+        },
+        {
+          "id": "y8-19a-q7",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "parts": [
+            {
+              "id": "y8-19a-q7a",
+              "type": "mc",
+              "stem": "a) Find the median chest measurement.",
+              "options": [
+                "\\(99\\)",
+                "\\(100\\)",
+                "\\(101\\)",
+                "\\(102\\)"
+              ],
+              "answer": 1
+            },
+            {
+              "id": "y8-19a-q7b",
+              "type": "mc",
+              "stem": "b) Find the mean chest measurement.",
+              "options": [
+                "\\(99.5\\)",
+                "\\(100.5\\)",
+                "\\(100\\)",
+                "\\(98.5\\)"
+              ],
+              "answer": 2
+            },
+            {
+              "id": "y8-19a-q7c",
+              "type": "mc",
+              "stem": "c) Find the new median if readings < 90 and > 110 are excluded.",
+              "options": [
+                "\\(97\\)",
+                "\\(98\\)",
+                "\\(100\\)",
+                "\\(98.5\\)"
+              ],
+              "answer": 3
+            },
+            {
+              "id": "y8-19a-q7d",
+              "type": "mc",
+              "stem": "d) Find the new mean if readings < 90 and > 110 are excluded (to 2 d.p.).",
+              "options": [
+                "\\(99.28\\)",
+                "\\(99.17\\)",
+                "\\(98.83\\)",
+                "\\(99.50\\)"
+              ],
+              "answer": 1
+            }
+          ],
+          "answer": "See sub-questions for individual answers."
+        }
+      ]
+    }
+  ]
+}

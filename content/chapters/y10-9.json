@@ -1,0 +1,3381 @@
+{
+  "chapterId": "y10-9",
+  "title": "Chapter 9: Indices, Exponentials and Logarithms",
+  "year": "Year 10",
+  "topics": [
+    {
+      "topicId": "y10-9",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "e74sPQrfDeiwu6reawM4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express $0.002735$ in scientific notation correct to 3 significant figures.",
+          "options": [
+            "$2.74 \\times 10^3$",
+            "$2.73 \\times 10^{-3}$",
+            "$2.74 \\times 10^{-3}$",
+            "$27.4 \\times 10^{-4}$"
+          ],
+          "answer": 2,
+          "hint": "Move the decimal point so the first number is between 1 and 10.",
+          "solution": "$0.002735 = 2.735 \\times 10^{-3} \\approx 2.74 \\times 10^{-3}$",
+          "meta": {
+            "sourceId": "t2-y10-algebra-linear-formula-2024",
+            "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "PFadnzJ8RnAcGVklF1Ga",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express $349700$ in scientific notation correct to 3 significant figures.",
+          "options": [
+            "3.49 \\times 10^5",
+            "34.9 \\times 10^4",
+            "3.50 \\times 10^4",
+            "3.50 \\times 10^5"
+          ],
+          "answer": 3,
+          "hint": "Write one non-zero digit before the decimal point.",
+          "solution": "$349700 = 3.497 \\times 10^5 \\approx 3.50 \\times 10^5$",
+          "meta": {
+            "sourceId": "t2-y10-algebra-linear-formula-2024",
+            "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
+            "course": "Advanced"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-9a",
+      "code": "9A",
+      "title": "Review of powers and integer indices",
+      "questions": [
+        {
+          "id": "y10-9a-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: \\(3^3\\)",
+          "options": [
+            "\\(27\\)",
+            "\\(28\\)",
+            "\\(29\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(27\\).",
+          "steps": [
+            {
+              "explain": "A positive integer power means repeated multiplication of the base. Here the base is 3 and the index is 3, so write three factors of 3.",
+              "work": "\\(3^3 = 3 \\times 3 \\times 3\\)"
+            },
+            {
+              "explain": "Multiply step by step. First \\(3 \\times 3 = 9\\), then multiply by the remaining factor.",
+              "work": "\\(3 \\times 3 \\times 3 = 9 \\times 3\\)"
+            },
+            {
+              "explain": "Finish the product to evaluate the power.",
+              "work": "\\(9 \\times 3 = 27\\)"
+            },
+            {
+              "explain": "So \\(3^3 = 27\\). This matches the option \\(27\\).",
+              "work": "\\(3^3 = 27\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: \\(4^3\\)",
+          "options": [
+            "\\(64\\)",
+            "\\(65\\)",
+            "\\(66\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(64\\).",
+          "steps": [
+            {
+              "explain": "Write \\(4^3\\) as three factors of 4, because a positive integer index means repeated multiplication.",
+              "work": "\\(4^3 = 4 \\times 4 \\times 4\\)"
+            },
+            {
+              "explain": "First multiply two factors: \\(4 \\times 4 = 16\\).",
+              "work": "\\(4 \\times 4 = 16\\)"
+            },
+            {
+              "explain": "Multiply by the last factor: \\(16 \\times 4 = 64\\).",
+              "work": "\\(16 \\times 4 = 64\\)"
+            },
+            {
+              "explain": "State the final simplified result. Therefore \\(4^3 = 64\\).",
+              "work": "\\(4^3 = 64\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: \\(3^4\\)",
+          "options": [
+            "\\(81\\)",
+            "\\(82\\)",
+            "\\(83\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(81\\).",
+          "steps": [
+            {
+              "explain": "The index 4 means multiply the base 3 by itself four times.",
+              "work": "\\(3^4 = 3 \\times 3 \\times 3 \\times 3\\)"
+            },
+            {
+              "explain": "Pair the multiplications: \\(3 \\times 3 = 9\\) and another \\(3 \\times 3 = 9\\).",
+              "work": "\\(3^4 = 9 \\times 9\\)"
+            },
+            {
+              "explain": "Finish by multiplying the two nines together to get the value of the fourth power.",
+              "work": "\\(9 \\times 9 = 81\\)"
+            },
+            {
+              "explain": "State the final simplified result. So \\(3^4 = 81\\).",
+              "work": "\\(3^4 = 81\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: \\(2^5\\)",
+          "options": [
+            "\\(32\\)",
+            "\\(33\\)",
+            "\\(34\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(32\\).",
+          "steps": [
+            {
+              "explain": "Write out the five factors of 2 indicated by the index 5.",
+              "work": "\\(2^5 = 2 \\times 2 \\times 2 \\times 2 \\times 2\\)"
+            },
+            {
+              "explain": "Build powers of 2 sequentially: \\(2^2 = 4\\), \\(2^3 = 8\\), \\(2^4 = 16\\).",
+              "work": "\\(2^2 = 4,\\; 2^3 = 8,\\; 2^4 = 16\\)"
+            },
+            {
+              "explain": "One more doubling gives \\(2^5\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(2^5 = 16 \\times 2 = 32\\)"
+            },
+            {
+              "explain": "State the final simplified result. Therefore \\(2^5 = 32\\).",
+              "work": "\\(2^5 = 32\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: \\(10^5\\)",
+          "options": [
+            "\\(100000\\)",
+            "\\(100001\\)",
+            "\\(100002\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(100000\\).",
+          "steps": [
+            {
+              "explain": "A power of 10 is 1 followed by as many zeros as the index. Here the index is 5.",
+              "work": "\\(10^5 = 10 \\times 10 \\times 10 \\times 10 \\times 10\\)"
+            },
+            {
+              "explain": "Each factor of 10 adds one zero after 1.",
+              "work": "\\(10^1 = 10,\\; 10^2 = 100,\\; 10^3 = 1000\\)"
+            },
+            {
+              "explain": "Continue to five zeros after 1. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(10^4 = 10000,\\; 10^5 = 100000\\)"
+            },
+            {
+              "explain": "State the final simplified result. So \\(10^5 = 100000\\).",
+              "work": "\\(10^5 = 100000\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: \\(7^2\\)",
+          "options": [
+            "\\(49\\)",
+            "\\(50\\)",
+            "\\(51\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(49\\).",
+          "steps": [
+            {
+              "explain": "Square means multiply the number by itself once: base 7, index 2.",
+              "work": "\\(7^2 = 7 \\times 7\\)"
+            },
+            {
+              "explain": "Carry out the multiplication of the two equal factors to evaluate the square.",
+              "work": "\\(7 \\times 7 = 49\\)"
+            },
+            {
+              "explain": "State the final simplified result. Therefore \\(7^2 = 49\\).",
+              "work": "\\(7^2 = 49\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\(16\\) in index form with a prime number base.",
+          "options": [
+            "\\(2^4\\)",
+            "\\(2^{3}\\)",
+            "\\(2^{5}\\)",
+            "\\(3^4\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(2^4\\).",
+          "steps": [
+            {
+              "explain": "We need a prime base raised to a positive integer. Factor 16 into primes by repeated division by 2.",
+              "work": "\\(16 = 2 \\times 8 = 2 \\times 2 \\times 4\\)"
+            },
+            {
+              "explain": "Continue until every factor is prime. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(16 = 2 \\times 2 \\times 2 \\times 2\\)"
+            },
+            {
+              "explain": "Count the factors of 2: there are 4, so write as a single power.",
+              "work": "\\(16 = 2^4\\)"
+            },
+            {
+              "explain": "Index form with prime base: \\(2^4\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(2^4\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\(27\\) in index form with a prime number base.",
+          "options": [
+            "\\(3^3\\)",
+            "\\(3^{2}\\)",
+            "\\(3^{4}\\)",
+            "\\(3^{-3}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(3^3\\).",
+          "steps": [
+            {
+              "explain": "Factor 27 using the prime 3 by repeated division until every factor is prime.",
+              "work": "\\(27 = 3 \\times 9 = 3 \\times 3 \\times 3\\)"
+            },
+            {
+              "explain": "Three factors of 3 give index 3. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(27 = 3^3\\)"
+            },
+            {
+              "explain": "Prime-base index form is \\(3^3\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(3^3\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\(125\\) in index form with a prime number base.",
+          "options": [
+            "\\(5^3\\)",
+            "\\(5^{2}\\)",
+            "\\(5^{4}\\)",
+            "\\(5^{-3}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(5^3\\).",
+          "steps": [
+            {
+              "explain": "Factor 125 by dividing by the prime 5. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(125 = 5 \\times 25 = 5 \\times 5 \\times 5\\)"
+            },
+            {
+              "explain": "Three factors of 5 give \\(5^3\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(125 = 5^3\\)"
+            },
+            {
+              "explain": "State the final simplified result. So the index form is \\(5^3\\).",
+              "work": "\\(5^3\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\(243\\) in index form with a prime number base.",
+          "options": [
+            "\\(3^5\\)",
+            "\\(3^{4}\\)",
+            "\\(3^{6}\\)",
+            "\\(3^{-5}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(3^5\\).",
+          "steps": [
+            {
+              "explain": "Factor 243 with prime 3: \\(3^5 = 243\\) because successive powers of 3 are 3, 9, 27, 81, 243.",
+              "work": "\\(3^1 = 3,\\; 3^2 = 9,\\; 3^3 = 27\\)"
+            },
+            {
+              "explain": "Continue: \\(3^4 = 81\\) and \\(3^5 = 243\\).",
+              "work": "\\(3^4 = 81,\\; 3^5 = 243\\)"
+            },
+            {
+              "explain": "State the final simplified result. Hence \\(243 = 3^5\\).",
+              "work": "\\(243 = 3^5\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\(343\\) in index form with a prime number base.",
+          "options": [
+            "\\(7^3\\)",
+            "\\(7^{2}\\)",
+            "\\(7^{4}\\)",
+            "\\(7^{-3}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(7^3\\).",
+          "steps": [
+            {
+              "explain": "Recognise 343 as a power of 7: \\(7^2 = 49\\).",
+              "work": "\\(7^2 = 49\\)"
+            },
+            {
+              "explain": "Multiply by another 7: \\(7^3 = 49 \\times 7 = 343\\).",
+              "work": "\\(7^3 = 343\\)"
+            },
+            {
+              "explain": "So in prime-base index form, \\(343 = 7^3\\).",
+              "work": "\\(343 = 7^3\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\(128\\) in index form with a prime number base.",
+          "options": [
+            "\\(2^7\\)",
+            "\\(2^{6}\\)",
+            "\\(2^{8}\\)",
+            "\\(3^7\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(2^7\\).",
+          "steps": [
+            {
+              "explain": "Factor 128 by repeated division by 2 (it is a pure power of 2).",
+              "work": "\\(128 = 2 \\times 64 = 2^2 \\times 32 = 2^3 \\times 16\\)"
+            },
+            {
+              "explain": "Continue: \\(2^4 \\times 8 = 2^5 \\times 4 = 2^6 \\times 2 = 2^7\\).",
+              "work": "\\(128 = 2^7\\)"
+            },
+            {
+              "explain": "Prime-base index form: \\(2^7\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(2^7\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\(\\frac{1}{7}\\) in index form with a prime number base.",
+          "options": [
+            "\\(-7^{-1}\\)",
+            "\\(7^{-1}\\)",
+            "\\(8^{-1}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(7^{-1}\\).",
+          "steps": [
+            {
+              "explain": "By definition, a negative index means the reciprocal of the positive power: \\(a^{-n} = \\frac{1}{a^n}\\).",
+              "work": "\\(a^{-1} = \\frac{1}{a}\\)"
+            },
+            {
+              "explain": "Here the base is the prime 7 and the numerator is 1, so the index is \\(-1\\).",
+              "work": "\\(\\frac{1}{7} = 7^{-1}\\)"
+            },
+            {
+              "explain": "Index form with prime base: \\(7^{-1}\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(7^{-1}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\(\\frac{1}{25}\\) in index form with a prime number base.",
+          "options": [
+            "\\(-5^{-2}\\)",
+            "\\(5^{-2}\\)",
+            "\\(5^{-3}\\)",
+            "\\(6^{-2}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(5^{-2}\\).",
+          "steps": [
+            {
+              "explain": "First write the denominator as a prime power: \\(25 = 5^2\\).",
+              "work": "\\(25 = 5^2\\)"
+            },
+            {
+              "explain": "So the fraction is the reciprocal of \\(5^2\\).",
+              "work": "\\(\\frac{1}{25} = \\frac{1}{5^2}\\)"
+            },
+            {
+              "explain": "Apply the negative-index definition. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{1}{5^2} = 5^{-2}\\)"
+            },
+            {
+              "explain": "Prime-base index form: \\(5^{-2}\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(5^{-2}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\(\\frac{1}{11^3}\\) in index form with a prime number base.",
+          "options": [
+            "\\(-11^{-3}\\)",
+            "\\(11^{-3}\\)",
+            "\\(12^{-3}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(11^{-3}\\).",
+          "steps": [
+            {
+              "explain": "The denominator is already a prime power \\(11^3\\).",
+              "work": "\\(\\frac{1}{11^3}\\)"
+            },
+            {
+              "explain": "The reciprocal of a positive power is the same base with a negative index.",
+              "work": "\\(\\frac{1}{11^3} = 11^{-3}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(11^{-3}\\).",
+              "work": "\\(11^{-3}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\(\\frac{1}{512}\\) in index form with a prime number base.",
+          "options": [
+            "\\(-2^{-9}\\)",
+            "\\(2^{-9}\\)",
+            "\\(3^{-9}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(2^{-9}\\).",
+          "steps": [
+            {
+              "explain": "Write 512 as a power of 2: \\(2^9 = 512\\) (since \\(2^8 = 256\\) and \\(2^9 = 512\\)).",
+              "work": "\\(512 = 2^9\\)"
+            },
+            {
+              "explain": "Form the reciprocal. Using a^{-n} = 1/a^n converts the reciprocal of a prime power into prime-base index form.",
+              "work": "\\(\\frac{1}{512} = \\frac{1}{2^9}\\)"
+            },
+            {
+              "explain": "Convert to a negative index. Using a^{-n} = 1/a^n converts the reciprocal of a prime power into prime-base index form.",
+              "work": "\\(\\frac{1}{2^9} = 2^{-9}\\)"
+            },
+            {
+              "explain": "Prime-base index form: \\(2^{-9}\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(2^{-9}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q3e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\(\\frac{8}{128}\\) in index form with a prime number base.",
+          "options": [
+            "\\(-2^{-4}\\)",
+            "\\(2^{-4}\\)",
+            "\\(3^{-4}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(2^{-4}\\).",
+          "steps": [
+            {
+              "explain": "Simplify the fraction first by dividing numerator and denominator by 8.",
+              "work": "\\(\\frac{8}{128} = \\frac{1}{16}\\)"
+            },
+            {
+              "explain": "Write 16 as a prime power: \\(16 = 2^4\\).",
+              "work": "\\(\\frac{1}{16} = \\frac{1}{2^4}\\)"
+            },
+            {
+              "explain": "Apply the negative-index law. Using a^{-n} = 1/a^n converts the reciprocal of a prime power into prime-base index form.",
+              "work": "\\(\\frac{1}{2^4} = 2^{-4}\\)"
+            },
+            {
+              "explain": "State the final simplified result. So \\(\\frac{8}{128} = 2^{-4}\\).",
+              "work": "\\(2^{-4}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q3f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the number \\((169)^{-4}\\) in index form with a prime number base.",
+          "options": [
+            "\\(-13^{-8}\\)",
+            "\\(13^{-8}\\)",
+            "\\(14^{-8}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(13^{-8}\\).",
+          "steps": [
+            {
+              "explain": "First rewrite the composite base 169 as a prime square: \\(169 = 13^2\\).",
+              "work": "\\(169 = 13^2\\)"
+            },
+            {
+              "explain": "Substitute into the given power. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\((169)^{-4} = (13^2)^{-4}\\)"
+            },
+            {
+              "explain": "Use the power-of-a-power law: multiply the indices \\((a^m)^n = a^{mn}\\).",
+              "work": "\\((13^2)^{-4} = 13^{2 \\times (-4)} = 13^{-8}\\)"
+            },
+            {
+              "explain": "Prime-base index form: \\(13^{-8}\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(13^{-8}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(x^3 \\times x^5 \\times x^4\\)",
+          "options": [
+            "\\(-x^{12}\\)",
+            "\\(x^{12}\\)",
+            "\\(x^{13}\\)",
+            "\\(x^{11}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(x^{12}\\).",
+          "steps": [
+            {
+              "explain": "When multiplying powers with the same base, add the indices: \\(a^m \\times a^n = a^{m+n}\\). Write the given product.",
+              "work": "\\(x^3 \\times x^5 \\times x^4\\)"
+            },
+            {
+              "explain": "Add the indices as required by the product law.",
+              "work": "\\(x^{3+5+4}\\)"
+            },
+            {
+              "explain": "Adding the indices gives a single power of x, which is the fully simplified product.",
+              "work": "\\(x^{12}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified form:",
+              "work": "\\(x^{12}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(y^6 \\times y^4 \\times y\\)",
+          "options": [
+            "\\(y^{11}\\)",
+            "\\(y^{10}\\)",
+            "\\(y^{12}\\)",
+            "\\(y^{-11}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(y^{11}\\).",
+          "steps": [
+            {
+              "explain": "When multiplying powers with the same base, add the indices: \\(a^m \\times a^n = a^{m+n}\\). Write the given product.",
+              "work": "\\(y^6 \\times y^4 \\times y\\)"
+            },
+            {
+              "explain": "Add the indices as required by the product law.",
+              "work": "\\(y^{6+4+1}\\)"
+            },
+            {
+              "explain": "Adding the indices gives a single power of y as the simplified product.",
+              "work": "\\(y^{11}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified form:",
+              "work": "\\(y^{11}\\)"
+            }
+          ],
+          "timeLimit": 30,
+          "alsoIn": [
+            "exam:year10ch9"
+          ]
+        },
+        {
+          "id": "y10-9a-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(p^5 \\times p^2 \\times p^7\\)",
+          "options": [
+            "\\(p^{14}\\)",
+            "\\(p^{13}\\)",
+            "\\(p^{15}\\)",
+            "\\(p^{-14}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(p^{14}\\).",
+          "steps": [
+            {
+              "explain": "When multiplying powers with the same base, add the indices: \\(a^m \\times a^n = a^{m+n}\\). Write the given product.",
+              "work": "\\(p^5 \\times p^2 \\times p^7\\)"
+            },
+            {
+              "explain": "Add the indices as required by the product law.",
+              "work": "\\(p^{5+2+7}\\)"
+            },
+            {
+              "explain": "Adding the indices produces one power of p — the simplified product.",
+              "work": "\\(p^{14}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified form:",
+              "work": "\\(p^{14}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(k^3 \\times k^6 \\times k^4\\)",
+          "options": [
+            "\\(k^{13}\\)",
+            "\\(k^{12}\\)",
+            "\\(k^{14}\\)",
+            "\\(k^{-13}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(k^{13}\\).",
+          "steps": [
+            {
+              "explain": "When multiplying powers with the same base, add the indices: \\(a^m \\times a^n = a^{m+n}\\). Write the given product.",
+              "work": "\\(k^3 \\times k^6 \\times k^4\\)"
+            },
+            {
+              "explain": "Add the indices as required by the product law.",
+              "work": "\\(k^{3+6+4}\\)"
+            },
+            {
+              "explain": "Adding the indices produces one power of k — the simplified product.",
+              "work": "\\(k^{13}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified form:",
+              "work": "\\(k^{13}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q4e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(x^3y^2 \\times x^5y^4\\)",
+          "options": [
+            "\\(x^8y^6\\)",
+            "\\(x^{7}y^{5}\\)",
+            "\\(x^{9}y^{7}\\)",
+            "\\(x^{-8}y^{-6}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(x^8y^6\\).",
+          "steps": [
+            {
+              "explain": "Multiply powers by adding indices for each base separately. Bases are \\(x\\) and \\(y\\).",
+              "work": "\\(x^3 y^2 \\times x^5 y^4\\)"
+            },
+            {
+              "explain": "Group like bases: \\(x\\)-powers together and \\(y\\)-powers together.",
+              "work": "\\(x^3 \\times x^5 \\times y^2 \\times y^4\\)"
+            },
+            {
+              "explain": "Add indices: for \\(x\\), \\(3+5=8\\); for \\(y\\), \\(2+4=6\\).",
+              "work": "\\(x^{3+5} y^{2+4} = x^8 y^6\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified expression: \\(x^8 y^6\\).",
+              "work": "\\(x^8 y^6\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q4f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(u^3v^4 \\times u^2v^5\\)",
+          "options": [
+            "\\(u^5v^9\\)",
+            "\\(u^{4}v^{8}\\)",
+            "\\(u^{6}v^{10}\\)",
+            "\\(u^{-5}v^{-9}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(u^5v^9\\).",
+          "steps": [
+            {
+              "explain": "Same-base product law for \\(u\\) and \\(v\\) separately.",
+              "work": "\\(u^3 v^4 \\times u^2 v^5\\)"
+            },
+            {
+              "explain": "Apply the product law separately to u and to v by adding matching indices.",
+              "work": "\\(u^{3+2} v^{4+5}\\)"
+            },
+            {
+              "explain": "Evaluate the sums the algebraic expression carefully so each index law is applied exactly once and no intermediate factor is dropped.",
+              "work": "\\(u^5 v^9\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(u^5 v^9\\).",
+              "work": "\\(u^5 v^9\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q4g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(3x^5y^2 \\times 5xy^4\\)",
+          "options": [
+            "\\(15x^6y^6\\)",
+            "\\(15x^{5}y^{5}\\)",
+            "\\(15x^{7}y^{7}\\)",
+            "\\(15x^{-6}y^{-6}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(15x^6y^6\\).",
+          "steps": [
+            {
+              "explain": "Multiply coefficients and add indices for matching bases.",
+              "work": "\\(3x^5 y^2 \\times 5x y^4\\)"
+            },
+            {
+              "explain": "Multiply the numerical coefficients first, then prepare to add the indices of matching bases. Note that a lone x means x to the power 1.",
+              "work": "\\(15 \\cdot x^{5+1} y^{2+4}\\)"
+            },
+            {
+              "explain": "Add the indices the algebraic expression carefully so each index law is applied exactly once and no intermediate factor is dropped.",
+              "work": "\\(15 x^6 y^6\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified form: \\(15x^6 y^6\\).",
+              "work": "\\(15x^6 y^6\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q4h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(4a^2b \\times 6a^4b^3\\)",
+          "options": [
+            "\\(24a^6b^4\\)",
+            "\\(24a^{5}b^{3}\\)",
+            "\\(24a^{7}b^{5}\\)",
+            "\\(25a^6b^4\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(24a^6b^4\\).",
+          "steps": [
+            {
+              "explain": "Multiply numerical coefficients, then combine powers of \\(a\\) and of \\(b\\).",
+              "work": "\\(4a^2 b \\times 6a^4 b^3\\)"
+            },
+            {
+              "explain": "Multiply the numerical coefficients, then add the indices of a and of b separately.",
+              "work": "\\(24 a^{2+4} b^{1+3}\\)"
+            },
+            {
+              "explain": "Complete the sums the algebraic expression carefully so each index law is applied exactly once and no intermediate factor is dropped.",
+              "work": "\\(24 a^6 b^4\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(24a^6 b^4\\).",
+              "work": "\\(24a^6 b^4\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q4i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the expression: \\(2m^4n^5 \\times 7m^3n^3\\)",
+          "options": [
+            "\\(14m^7n^8\\)",
+            "\\(14m^{6}n^{7}\\)",
+            "\\(14m^{8}n^{9}\\)",
+            "\\(14m^{-7}n^{-8}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(14m^7n^8\\).",
+          "steps": [
+            {
+              "explain": "Multiply coefficients and add indices for \\(m\\) and \\(n\\).",
+              "work": "\\(2m^4 n^5 \\times 7m^3 n^3\\)"
+            },
+            {
+              "explain": "Multiply the coefficients, then add the indices for m and for n.",
+              "work": "\\(14 m^{4+3} n^{5+3}\\)"
+            },
+            {
+              "explain": "Sum the indices the algebraic expression carefully so each index law is applied exactly once and no intermediate factor is dropped.",
+              "work": "\\(14 m^7 n^8\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified: \\(14m^7 n^8\\).",
+              "work": "\\(14m^7 n^8\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the quotient, expressing each pronumeral in the answer with a positive index: \\(\\frac{a^3b^2}{a^2b^5}\\)",
+          "options": [
+            "\\(\\frac{a}{b^4}\\)",
+            "\\(\\frac{a}{b^3}\\)",
+            "\\(\\frac{b^3}{a}\\)",
+            "\\(\\frac{a}{b^{2}}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{a}{b^3}\\).",
+          "steps": [
+            {
+              "explain": "For a quotient of powers with the same base, subtract indices: \\(\\frac{a^m}{a^n} = a^{m-n}\\). Start with the given fraction.",
+              "work": "\\(\\frac{a^3 b^2}{a^2 b^5}\\)"
+            },
+            {
+              "explain": "Apply the quotient law to each base. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(a^{3-2} b^{2-5} = a^1 b^{-3}\\)"
+            },
+            {
+              "explain": "Rewrite any negative index as a positive index in the denominator: \\(b^{-3} = \\frac{1}{b^3}\\).",
+              "work": "\\(a b^{-3} = \\frac{a}{b^3}\\)"
+            },
+            {
+              "explain": "Final simplified form with positive indices: \\(\\frac{a}{b^3}\\).",
+              "work": "\\(\\frac{a}{b^3}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the quotient, expressing each pronumeral in the answer with a positive index: \\(\\frac{40m^3n^5}{15mn^2}\\)",
+          "options": [
+            "\\(\\frac{9m^2n^3}{3}\\)",
+            "\\(\\frac{3}{8m^2n^3}\\)",
+            "\\(\\frac{8m^2n^3}{3}\\)",
+            "\\(\\frac{8m^3n^3}{3}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{8m^2n^3}{3}\\).",
+          "steps": [
+            {
+              "explain": "Simplify the numerical coefficient and the powers separately.",
+              "work": "\\(\\frac{40 m^3 n^5}{15 m n^2}\\)"
+            },
+            {
+              "explain": "Coefficients: \\(\\frac{40}{15} = \\frac{8}{3}\\). Powers: \\(m^{3-1}\\), \\(n^{5-2}\\).",
+              "work": "\\(\\frac{8}{3} m^{2} n^{3}\\)"
+            },
+            {
+              "explain": "Combine the coefficient and the variable powers into one neat fraction with positive indices only.",
+              "work": "\\(\\frac{8 m^2 n^3}{3}\\)"
+            },
+            {
+              "explain": "Answer with positive indices: \\(\\frac{8m^2 n^3}{3}\\).",
+              "work": "\\(\\frac{8m^2 n^3}{3}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the quotient, expressing each pronumeral in the answer with a positive index: \\(\\frac{p^7q^5}{p^3q}\\)",
+          "options": [
+            "\\(p^4q^4\\)",
+            "\\(p^{3}q^{3}\\)",
+            "\\(p^{5}q^{5}\\)",
+            "\\(p^{-4}q^{-4}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(p^4q^4\\).",
+          "steps": [
+            {
+              "explain": "Subtract indices for each base in the quotient.",
+              "work": "\\(\\frac{p^7 q^5}{p^3 q}\\)"
+            },
+            {
+              "explain": "Note \\(q = q^1\\). Compute \\(p^{7-3}\\) and \\(q^{5-1}\\).",
+              "work": "\\(p^{4} q^{4}\\)"
+            },
+            {
+              "explain": "Both indices are already positive. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(p^4 q^4\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified form: \\(p^4 q^4\\).",
+              "work": "\\(p^4 q^4\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the quotient, expressing each pronumeral in the answer with a positive index: \\(\\frac{35u^5v^7}{14u^2v^4}\\)",
+          "options": [
+            "\\(\\frac{6u^3v^3}{2}\\)",
+            "\\(\\frac{2}{5u^3v^3}\\)",
+            "\\(\\frac{5u^3v^3}{2}\\)",
+            "\\(\\frac{5u^3v^3}{3}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{5u^3v^3}{2}\\).",
+          "steps": [
+            {
+              "explain": "Divide coefficients and subtract indices for \\(u\\) and \\(v\\).",
+              "work": "\\(\\frac{35 u^5 v^7}{14 u^2 v^4}\\)"
+            },
+            {
+              "explain": "Coefficients: \\(\\frac{35}{14} = \\frac{5}{2}\\). Indices: \\(u^{5-2}\\), \\(v^{7-4}\\).",
+              "work": "\\(\\frac{5}{2} u^3 v^3\\)"
+            },
+            {
+              "explain": "Combine the coefficient and the variable powers into one neat fraction with positive indices only.",
+              "work": "\\(\\frac{5 u^3 v^3}{2}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(\\frac{5u^3 v^3}{2}\\).",
+              "work": "\\(\\frac{5u^3 v^3}{2}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q5e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the quotient, expressing each pronumeral in the answer with a positive index: \\(\\frac{15x^2y^4z^5}{25x^2y^6z^2}\\)",
+          "options": [
+            "\\(\\frac{4z^3}{5y^2}\\)",
+            "\\(\\frac{3z^3}{5y^2}\\)",
+            "\\(\\frac{3z^3}{5y^3}\\)",
+            "\\(\\frac{5y^2}{3z^3}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{3z^3}{5y^2}\\).",
+          "steps": [
+            {
+              "explain": "Simplify coefficient and each base using the quotient law.",
+              "work": "\\(\\frac{15 x^2 y^4 z^5}{25 x^2 y^6 z^2}\\)"
+            },
+            {
+              "explain": "Coefficient \\(\\frac{15}{25} = \\frac{3}{5}\\). Indices: \\(x^{2-2}=x^0\\), \\(y^{4-6}=y^{-2}\\), \\(z^{5-2}=z^3\\).",
+              "work": "\\(\\frac{3}{5} x^0 y^{-2} z^3\\)"
+            },
+            {
+              "explain": "Use \\(x^0 = 1\\) and move \\(y^{-2}\\) to the denominator.",
+              "work": "\\(\\frac{3}{5} \\cdot 1 \\cdot \\frac{z^3}{y^2} = \\frac{3 z^3}{5 y^2}\\)"
+            },
+            {
+              "explain": "Final answer with positive indices: \\(\\frac{3z^3}{5y^2}\\).",
+              "work": "\\(\\frac{3z^3}{5y^2}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q5f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify the quotient, expressing each pronumeral in the answer with a positive index: \\(\\frac{24a^4b^5c^7}{8b^8c^7}\\)",
+          "options": [
+            "\\(\\frac{4a^4}{b^3}\\)",
+            "\\(\\frac{3a^4}{b^3}\\)",
+            "\\(\\frac{b^3}{3a^4}\\)",
+            "\\(\\frac{3a^{3}}{b^{2}}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{3a^4}{b^3}\\).",
+          "steps": [
+            {
+              "explain": "Apply the quotient law to coefficients and to each letter.",
+              "work": "\\(\\frac{24 a^4 b^5 c^7}{8 b^8 c^7}\\)"
+            },
+            {
+              "explain": "Coefficient \\(\\frac{24}{8} = 3\\). Indices: \\(a^4\\) stays, \\(b^{5-8}=b^{-3}\\), \\(c^{7-7}=c^0=1\\).",
+              "work": "\\(3 a^4 b^{-3}\\)"
+            },
+            {
+              "explain": "Rewrite the negative index with a positive denominator.",
+              "work": "\\(3 a^4 b^{-3} = \\frac{3 a^4}{b^3}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified form: \\(\\frac{3a^4}{b^3}\\).",
+              "work": "\\(\\frac{3a^4}{b^3}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify: \\((x^3y^2)^4\\)",
+          "options": [
+            "\\(x^{12}y^8\\)",
+            "\\(x^{11}y^{7}\\)",
+            "\\(x^{13}y^{9}\\)",
+            "\\(x^{13}y^8\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(x^{12}y^8\\).",
+          "steps": [
+            {
+              "explain": "Power of a product: raise every factor inside the brackets to the outer index: \\((ab)^n = a^n b^n\\). Also \\((a^m)^n = a^{mn}\\).",
+              "work": "\\((x^3 y^2)^4\\)"
+            },
+            {
+              "explain": "Multiply each inner index by 4. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(x^{3 \\times 4} y^{2 \\times 4}\\)"
+            },
+            {
+              "explain": "Evaluate the products of indices. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(x^{12} y^{8}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified: \\(x^{12} y^8\\).",
+              "work": "\\(x^{12} y^8\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify: \\((m^4n^3)^5\\)",
+          "options": [
+            "\\(m^{20}n^{15}\\)",
+            "\\(m^{30}n^{15}\\)",
+            "\\(m^{19}n^{14}\\)",
+            "\\(m^{21}n^{16}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(m^{20}n^{15}\\).",
+          "steps": [
+            {
+              "explain": "Raise each factor inside to the power 5.",
+              "work": "\\((m^4 n^3)^5\\)"
+            },
+            {
+              "explain": "Use the power-of-a-power law: multiply every inner index by the outer index 5.",
+              "work": "\\(m^{4 \\times 5} n^{3 \\times 5}\\)"
+            },
+            {
+              "explain": "Compute the algebraic expression carefully so each index law is applied exactly once and no intermediate factor is dropped.",
+              "work": "\\(m^{20} n^{15}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(m^{20} n^{15}\\).",
+              "work": "\\(m^{20} n^{15}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify: \\((p^2q^3r^4s^5)^2\\)",
+          "options": [
+            "\\(p^4q^6r^8s^{10}\\)",
+            "\\(p^{3}q^{5}r^{7}s^{9}\\)",
+            "\\(p^{5}q^{7}r^{9}s^{11}\\)",
+            "\\(p^{-4}q^{-6}r^{-8}s^{-10}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(p^4q^6r^8s^{10}\\).",
+          "steps": [
+            {
+              "explain": "Distribute the outer index 2 to every base inside the brackets.",
+              "work": "\\((p^2 q^3 r^4 s^5)^2\\)"
+            },
+            {
+              "explain": "Multiply each index inside the brackets by the outer index 2 (power-of-a-power law).",
+              "work": "\\(p^{4} q^{6} r^{8} s^{10}\\)"
+            },
+            {
+              "explain": "Write the expanded product of powers. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(p^4 q^6 r^8 s^{10}\\)"
+            },
+            {
+              "explain": "Simplified form: \\(p^4 q^6 r^8 s^{10}\\).",
+              "work": "\\(p^4 q^6 r^8 s^{10}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q6d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify: \\((3x^4y)^3\\)",
+          "options": [
+            "\\(27x^{12}y^3\\)",
+            "\\(27x^{11}y^{2}\\)",
+            "\\(27x^{13}y^{4}\\)",
+            "\\(28x^{12}y^3\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(27x^{12}y^3\\).",
+          "steps": [
+            {
+              "explain": "The outer power applies to the coefficient as well as the pronumerals.",
+              "work": "\\((3 x^4 y)^3\\)"
+            },
+            {
+              "explain": "Compute \\(3^3\\) and multiply each letter index by 3. Note \\(y = y^1\\).",
+              "work": "\\(3^3 \\cdot x^{4 \\times 3} y^{1 \\times 3}\\)"
+            },
+            {
+              "explain": "Evaluate: \\(3^3 = 27\\), \\(x^{12}\\), \\(y^3\\).",
+              "work": "\\(27 x^{12} y^3\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(27x^{12} y^3\\).",
+              "work": "\\(27x^{12} y^3\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q6e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify: \\((4m^3n^5)^2\\)",
+          "options": [
+            "\\(-16m^6n^{10}\\)",
+            "\\(16m^6n^{10}\\)",
+            "\\(16m^{5}n^{9}\\)",
+            "\\(16m^{7}n^{11}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(16m^6n^{10}\\).",
+          "steps": [
+            {
+              "explain": "Raise the coefficient and each variable to the outer index 2.",
+              "work": "\\((4 m^3 n^5)^2\\)"
+            },
+            {
+              "explain": "Raise the coefficient 4 to the power 2, and multiply each letter index by 2.",
+              "work": "\\(4^2 m^{3 \\times 2} n^{5 \\times 2}\\)"
+            },
+            {
+              "explain": "Evaluate the algebraic expression carefully so each index law is applied exactly once and no intermediate factor is dropped.",
+              "work": "\\(16 m^6 n^{10}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified: \\(16m^6 n^{10}\\).",
+              "work": "\\(16m^6 n^{10}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q6f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify: \\((2u^5v^3)^4\\)",
+          "options": [
+            "\\(-16u^{20}v^{12}\\)",
+            "\\(16u^{20}v^{12}\\)",
+            "\\(16u^{30}v^{13}\\)",
+            "\\(16u^{19}v^{11}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(16u^{20}v^{12}\\).",
+          "steps": [
+            {
+              "explain": "Distribute the outer power 4 to 2, \\(u^5\\) and \\(v^3\\).",
+              "work": "\\((2 u^5 v^3)^4\\)"
+            },
+            {
+              "explain": "Compute each part: \\(2^4\\), \\(u^{20}\\), \\(v^{12}\\).",
+              "work": "\\(2^4 u^{5 \\times 4} v^{3 \\times 4}\\)"
+            },
+            {
+              "explain": "Evaluate the numerical coefficient after the outer power has been applied to every factor.",
+              "work": "\\(16 u^{20} v^{12}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(16u^{20} v^{12}\\).",
+              "work": "\\(16u^{20} v^{12}\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-9a-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((2x^4)^3 \\times 3x^5\\)",
+          "options": [
+            "\\(-24x^{17}\\)",
+            "\\(24x^{17}\\)",
+            "\\(34x^{17}\\)",
+            "\\(24x^{16}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(24x^{17}\\).",
+          "steps": [
+            {
+              "explain": "First expand the power of a product: \\((2x^4)^3 = 2^3 x^{12} = 8x^{12}\\).",
+              "work": "\\((2x^4)^3 \\times 3x^5 = 8x^{12} \\times 3x^5\\)"
+            },
+            {
+              "explain": "Now multiply the expanded term by 3x^5: multiply coefficients and add the powers of x.",
+              "work": "\\((8 \\times 3) x^{12+5}\\)"
+            },
+            {
+              "explain": "Compute the algebraic expression carefully so each index law is applied exactly once and no intermediate factor is dropped.",
+              "work": "\\(24 x^{17}\\)"
+            },
+            {
+              "explain": "Simplified form with positive index: \\(24x^{17}\\).",
+              "work": "\\(24x^{17}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((3y^4)^2 \\div (9y^5)\\)",
+          "options": [
+            "\\(y^3\\)",
+            "\\(y^{2}\\)",
+            "\\(y^{4}\\)",
+            "\\(y^{-3}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(y^3\\).",
+          "steps": [
+            {
+              "explain": "Expand the bracket first: \\((3y^4)^2 = 9 y^8\\).",
+              "work": "\\((3y^4)^2 \\div (9y^5) = 9y^8 \\div 9y^5\\)"
+            },
+            {
+              "explain": "Write as a fraction and cancel coefficients.",
+              "work": "\\(\\frac{9 y^8}{9 y^5} = \\frac{y^8}{y^5}\\)"
+            },
+            {
+              "explain": "Apply the quotient law by subtracting the indices of y to finish the simplification.",
+              "work": "\\(y^{8-5} = y^3\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(y^3\\).",
+              "work": "\\(y^3\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{(x^3y)^2}{xy^3} \\times \\frac{x^4y^6}{xy}\\)",
+          "options": [
+            "\\(x^8y^4\\)",
+            "\\(x^{7}y^{3}\\)",
+            "\\(x^{9}y^{5}\\)",
+            "\\(x^{-8}y^{-4}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(x^8y^4\\).",
+          "steps": [
+            {
+              "explain": "Expand the squared bracket in the first numerator: \\((x^3 y)^2 = x^6 y^2\\).",
+              "work": "\\(\\frac{x^6 y^2}{x y^3} \\times \\frac{x^4 y^6}{x y}\\)"
+            },
+            {
+              "explain": "Simplify each fraction using the quotient law.",
+              "work": "\\(x^{6-1} y^{2-3} \\times x^{4-1} y^{6-1} = x^5 y^{-1} \\times x^3 y^5\\)"
+            },
+            {
+              "explain": "Multiply: add indices for \\(x\\) and for \\(y\\).",
+              "work": "\\(x^{5+3} y^{-1+5} = x^8 y^4\\)"
+            },
+            {
+              "explain": "Final answer with positive indices: \\(x^8 y^4\\).",
+              "work": "\\(x^8 y^4\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{a^5b^3}{ab^4} \\div \\frac{(ab^3)^2}{a^4b^7}\\)",
+          "options": [
+            "\\(a^6\\)",
+            "\\(a^{5}\\)",
+            "\\(a^{7}\\)",
+            "\\(a^{-6}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(a^6\\).",
+          "steps": [
+            {
+              "explain": "Division of fractions means multiply by the reciprocal. First expand \\((ab^3)^2 = a^2 b^6\\).",
+              "work": "\\(\\frac{a^5 b^3}{a b^4} \\div \\frac{a^2 b^6}{a^4 b^7} = \\frac{a^5 b^3}{a b^4} \\times \\frac{a^4 b^7}{a^2 b^6}\\)"
+            },
+            {
+              "explain": "Simplify the first fraction: \\(a^{5-1} b^{3-4} = a^4 b^{-1}\\). Second: \\(a^{4-2} b^{7-6} = a^2 b\\).",
+              "work": "\\(a^4 b^{-1} \\times a^2 b^{1}\\)"
+            },
+            {
+              "explain": "Multiply: \\(a^{4+2} b^{-1+1} = a^6 b^0 = a^6\\).",
+              "work": "\\(a^6\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified form: \\(a^6\\).",
+              "work": "\\(a^6\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q7e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{x^5y^7}{(xy^3)^2} \\times \\frac{x^4y^2}{x^3y}\\)",
+          "options": [
+            "\\(x^4y^2\\)",
+            "\\(x^{3}y^{1}\\)",
+            "\\(x^{5}y^{3}\\)",
+            "\\(x^5y^2\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(x^4y^2\\).",
+          "steps": [
+            {
+              "explain": "Expand the bracket: \\((x y^3)^2 = x^2 y^6\\).",
+              "work": "\\(\\frac{x^5 y^7}{x^2 y^6} \\times \\frac{x^4 y^2}{x^3 y}\\)"
+            },
+            {
+              "explain": "Simplify each quotient: first gives \\(x^{3} y^{1}\\); second gives \\(x^{1} y^{1}\\).",
+              "work": "\\(x^3 y \\times x y\\)"
+            },
+            {
+              "explain": "Multiply the results the algebraic expression carefully so each index law is applied exactly once and no intermediate factor is dropped.",
+              "work": "\\(x^{3+1} y^{1+1} = x^4 y^2\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(x^4 y^2\\).",
+              "work": "\\(x^4 y^2\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q7f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{(m^3n)^2}{mn^4} \\div \\frac{mn}{(m^3n)^2}\\)",
+          "options": [
+            "\\(\\frac{m^{11}}{n}\\)",
+            "\\(\\frac{m^{10}}{n}\\)",
+            "\\(\\frac{m^{9}}{n}\\)",
+            "\\(\\frac{m^{-10}}{n}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{m^{10}}{n}\\).",
+          "steps": [
+            {
+              "explain": "Expand both squared brackets: \\((m^3 n)^2 = m^6 n^2\\). Division becomes multiplication by the reciprocal.",
+              "work": "\\(\\frac{m^6 n^2}{m n^4} \\div \\frac{m n}{m^6 n^2} = \\frac{m^6 n^2}{m n^4} \\times \\frac{m^6 n^2}{m n}\\)"
+            },
+            {
+              "explain": "Simplify each part: first \\(m^{5} n^{-2}\\); second \\(m^{5} n^{1}\\).",
+              "work": "\\(m^5 n^{-2} \\times m^5 n\\)"
+            },
+            {
+              "explain": "Add indices: \\(m^{10} n^{-1}\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(m^{10} n^{-1} = \\frac{m^{10}}{n}\\)"
+            },
+            {
+              "explain": "Final form with positive indices: \\(\\frac{m^{10}}{n}\\).",
+              "work": "\\(\\frac{m^{10}}{n}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(3^{-1}\\)",
+          "options": [
+            "\\(\\frac{2}{3}\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(\\frac{3}{1}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{3}\\).",
+          "steps": [
+            {
+              "explain": "By definition, a negative index is the reciprocal of the positive power: \\(a^{-n} = \\frac{1}{a^n}\\).",
+              "work": "\\(3^{-1} = \\frac{1}{3^1}\\)"
+            },
+            {
+              "explain": "Since \\(3^1 = 3\\), the value is the reciprocal of 3.",
+              "work": "\\(\\frac{1}{3}\\)"
+            },
+            {
+              "explain": "Evaluated value: \\(\\frac{1}{3}\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{1}{3}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(4^{-2}\\)",
+          "options": [
+            "\\(\\frac{2}{16}\\)",
+            "\\(\\frac{16}{1}\\)",
+            "\\(\\frac{1}{16}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{1}{16}\\).",
+          "steps": [
+            {
+              "explain": "Write the negative power as a reciprocal of a positive power.",
+              "work": "\\(4^{-2} = \\frac{1}{4^2}\\)"
+            },
+            {
+              "explain": "Evaluate the denominator: \\(4^2 = 16\\). This replaces the power with its ordinary integer value.",
+              "work": "\\(\\frac{1}{16}\\)"
+            },
+            {
+              "explain": "State the final simplified result. So \\(4^{-2} = \\frac{1}{16}\\).",
+              "work": "\\(\\frac{1}{16}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(5^{-1}\\)",
+          "options": [
+            "\\(\\frac{2}{5}\\)",
+            "\\(\\frac{1}{5}\\)",
+            "\\(\\frac{5}{1}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{5}\\).",
+          "steps": [
+            {
+              "explain": "Apply the negative-index definition. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(5^{-1} = \\frac{1}{5}\\)"
+            },
+            {
+              "explain": "The value is the reciprocal of 5. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{1}{5}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(\\frac{1}{5}\\).",
+              "work": "\\(\\frac{1}{5}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(5^{-2}\\)",
+          "options": [
+            "\\(\\frac{2}{25}\\)",
+            "\\(\\frac{1}{25}\\)",
+            "\\(\\frac{1}{35}\\)",
+            "\\(\\frac{25}{1}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{25}\\).",
+          "steps": [
+            {
+              "explain": "Convert the negative index to a reciprocal.",
+              "work": "\\(5^{-2} = \\frac{1}{5^2}\\)"
+            },
+            {
+              "explain": "Square the base: \\(5^2 = 25\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{1}{25}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Therefore \\(5^{-2} = \\frac{1}{25}\\).",
+              "work": "\\(\\frac{1}{25}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(10^{-4}\\)",
+          "options": [
+            "\\(\\frac{2}{10000}\\)",
+            "\\(\\frac{10000}{1}\\)",
+            "\\(\\frac{1}{10000}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{1}{10000}\\).",
+          "steps": [
+            {
+              "explain": "Write as a reciprocal of a positive power of 10.",
+              "work": "\\(10^{-4} = \\frac{1}{10^4}\\)"
+            },
+            {
+              "explain": "A power of 10 is 1 followed by that many zeros: \\(10^4 = 10000\\).",
+              "work": "\\(\\frac{1}{10000}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(\\frac{1}{10000}\\).",
+              "work": "\\(\\frac{1}{10000}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(\\left(\\frac{5}{6}\\right)^{-1}\\)",
+          "options": [
+            "\\(\\frac{7}{5}\\)",
+            "\\(\\frac{5}{6}\\)",
+            "\\(\\frac{6}{5}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{6}{5}\\).",
+          "steps": [
+            {
+              "explain": "A fraction to the power \\(-1\\) is simply its reciprocal: \\(\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}\\).",
+              "work": "\\(\\left(\\frac{5}{6}\\right)^{-1} = \\frac{6}{5}\\)"
+            },
+            {
+              "explain": "No further simplification is needed. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{6}{5}\\)"
+            },
+            {
+              "explain": "Evaluated value: \\(\\frac{6}{5}\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{6}{5}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(\\left(\\frac{12}{11}\\right)^{-1}\\)",
+          "options": [
+            "\\(\\frac{12}{12}\\)",
+            "\\(\\frac{11}{12}\\)",
+            "\\(\\frac{11}{13}\\)",
+            "\\(\\frac{12}{11}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{11}{12}\\).",
+          "steps": [
+            {
+              "explain": "Flip the fraction for the index \\(-1\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\left(\\frac{12}{11}\\right)^{-1} = \\frac{11}{12}\\)"
+            },
+            {
+              "explain": "The reciprocal is already in simplest form.",
+              "work": "\\(\\frac{11}{12}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(\\frac{11}{12}\\).",
+              "work": "\\(\\frac{11}{12}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(\\left(\\frac{2}{3}\\right)^{-3}\\)",
+          "options": [
+            "\\(\\frac{28}{8}\\)",
+            "\\(\\frac{27}{8}\\)",
+            "\\(\\frac{37}{8}\\)",
+            "\\(\\frac{8}{27}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{27}{8}\\).",
+          "steps": [
+            {
+              "explain": "For a negative outer index, take the reciprocal of the fraction first, then raise to the positive power: \\(\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^{n}\\).",
+              "work": "\\(\\left(\\frac{2}{3}\\right)^{-3} = \\left(\\frac{3}{2}\\right)^{3}\\)"
+            },
+            {
+              "explain": "Raise numerator and denominator to the power 3.",
+              "work": "\\(\\frac{3^3}{2^3} = \\frac{27}{8}\\)"
+            },
+            {
+              "explain": "Evaluated value: \\(\\frac{27}{8}\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{27}{8}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(\\left(\\frac{3}{4}\\right)^{-2}\\)",
+          "options": [
+            "\\(\\frac{17}{9}\\)",
+            "\\(\\frac{16}{9}\\)",
+            "\\(\\frac{9}{16}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{16}{9}\\).",
+          "steps": [
+            {
+              "explain": "Flip the fraction and change the index to positive 2.",
+              "work": "\\(\\left(\\frac{3}{4}\\right)^{-2} = \\left(\\frac{4}{3}\\right)^{2}\\)"
+            },
+            {
+              "explain": "Square numerator and denominator. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{4^2}{3^2} = \\frac{16}{9}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(\\frac{16}{9}\\).",
+              "work": "\\(\\frac{16}{9}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(\\left(\\frac{2}{5}\\right)^{-4}\\)",
+          "options": [
+            "\\(\\frac{626}{16}\\)",
+            "\\(\\frac{16}{625}\\)",
+            "\\(\\frac{625}{16}\\)",
+            "\\(\\frac{635}{16}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{625}{16}\\).",
+          "steps": [
+            {
+              "explain": "Reciprocal then positive power. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\left(\\frac{2}{5}\\right)^{-4} = \\left(\\frac{5}{2}\\right)^{4}\\)"
+            },
+            {
+              "explain": "Raise each part to the 4th power: \\(5^4 = 625\\), \\(2^4 = 16\\).",
+              "work": "\\(\\frac{5^4}{2^4} = \\frac{625}{16}\\)"
+            },
+            {
+              "explain": "Evaluated value: \\(\\frac{625}{16}\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{625}{16}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8k",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(2^{-5}\\)",
+          "options": [
+            "\\(\\frac{2}{32}\\)",
+            "\\(\\frac{1}{32}\\)",
+            "\\(\\frac{1}{33}\\)",
+            "\\(\\frac{32}{1}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{32}\\).",
+          "steps": [
+            {
+              "explain": "Negative index means reciprocal of a positive power.",
+              "work": "\\(2^{-5} = \\frac{1}{2^5}\\)"
+            },
+            {
+              "explain": "Compute \\(2^5 = 32\\). This replaces the power with its ordinary integer value.",
+              "work": "\\(\\frac{1}{32}\\)"
+            },
+            {
+              "explain": "State the final simplified result. So \\(2^{-5} = \\frac{1}{32}\\).",
+              "work": "\\(\\frac{1}{32}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8l",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(7 + x^0\\), where \\(x \\neq 0\\).",
+          "options": [
+            "\\(8\\)",
+            "\\(9\\)",
+            "\\(10\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(8\\).",
+          "steps": [
+            {
+              "explain": "Any non-zero number to the power 0 equals 1: \\(x^0 = 1\\) when \\(x \\neq 0\\).",
+              "work": "\\(x^0 = 1\\)"
+            },
+            {
+              "explain": "Replace x^0 with 1 in the expression 7 + x^0.",
+              "work": "\\(7 + x^0 = 7 + 1\\)"
+            },
+            {
+              "explain": "Add the constant 7 to 1 to obtain the final numerical value.",
+              "work": "\\(8\\)"
+            },
+            {
+              "explain": "State the final simplified result. Value: \\(8\\).",
+              "work": "\\(8\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8m",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\(\\frac{6x^0}{(7y)^0}\\), where \\(x, y \\neq 0\\).",
+          "options": [
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(8\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Zero-index law: any non-zero base to the power 0 is 1. So \\(x^0 = 1\\) and \\((7y)^0 = 1\\).",
+              "work": "\\(x^0 = 1,\\; (7y)^0 = 1\\)"
+            },
+            {
+              "explain": "Replace each zero-power factor with 1 inside the fraction.",
+              "work": "\\(\\frac{6 x^0}{(7y)^0} = \\frac{6 \\cdot 1}{1}\\)"
+            },
+            {
+              "explain": "The fraction then reduces to the constant 6 over 1.",
+              "work": "\\(6\\)"
+            },
+            {
+              "explain": "State the final simplified result. Value: \\(6\\).",
+              "work": "\\(6\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8n",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\((3 + x)^0\\), where \\(x \\neq -3\\).",
+          "options": [
+            "\\(1\\)",
+            "\\(3+x\\)",
+            "\\(x\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is 1.",
+          "steps": [
+            {
+              "explain": "The zero-index law says that any non-zero quantity raised to the power 0 equals 1.\n",
+              "work": "\\((3 + x)^0\\)"
+            },
+            {
+              "explain": "The condition \\(x \\neq -3\\) ensures the base is not zero, so the law applies.\n",
+              "work": "\\(3 + x \\neq 0\\)"
+            },
+            {
+              "explain": "Therefore the expression evaluates to 1.\n",
+              "work": "\\((3 + x)^0 = 1\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q8o",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\((5^4)^0\\)",
+          "options": [
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is 1.",
+          "steps": [
+            {
+              "explain": "Any non-zero number raised to the power 0 is 1. Here the base is \\(5^4\\), which is not zero.\n",
+              "work": "\\((5^4)^0\\)"
+            },
+            {
+              "explain": "Apply the zero-index law directly: any non-zero base to the power 0 equals 1.",
+              "work": "\\((5^4)^0 = 1\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final value: 1.",
+              "work": "\\(1\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((3a^3b)^{-1}\\)",
+          "options": [
+            "\\(\\frac{2}{3a^3b}\\)",
+            "\\(\\frac{1}{3a^3b}\\)",
+            "\\(\\frac{3a^3b}{1}\\)",
+            "\\(\\frac{1}{3a^{2}b}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{3a^3b}\\).",
+          "steps": [
+            {
+              "explain": "A power of \\(-1\\) means take the reciprocal of everything inside the brackets.",
+              "work": "\\((3 a^3 b)^{-1} = \\frac{1}{3 a^3 b}\\)"
+            },
+            {
+              "explain": "All indices in the denominator are already positive.",
+              "work": "\\(\\frac{1}{3 a^3 b}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified form: \\(\\frac{1}{3a^3 b}\\).",
+              "work": "\\(\\frac{1}{3a^3 b}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((2m^3n^4)^{-2}\\)",
+          "options": [
+            "\\(\\frac{2}{4m^6n^8}\\)",
+            "\\(\\frac{1}{4m^6n^8}\\)",
+            "\\(\\frac{4m^6n^8}{1}\\)",
+            "\\(\\frac{1}{4m^{5}n^{7}}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{4m^6n^8}\\).",
+          "steps": [
+            {
+              "explain": "Raise each factor to the power \\(-2\\): multiply each index by \\(-2\\).",
+              "work": "\\((2 m^3 n^4)^{-2} = 2^{-2} m^{-6} n^{-8}\\)"
+            },
+            {
+              "explain": "Rewrite negative indices as positive powers in the denominator.",
+              "work": "\\(\\frac{1}{2^2 m^6 n^8} = \\frac{1}{4 m^6 n^8}\\)"
+            },
+            {
+              "explain": "Answer with positive indices: \\(\\frac{1}{4m^6 n^8}\\).",
+              "work": "\\(\\frac{1}{4m^6 n^8}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q9c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((5p^2q^{-1})^{-3}\\)",
+          "options": [
+            "\\(\\frac{q^4}{125p^6}\\)",
+            "\\(\\frac{125p^6}{q^3}\\)",
+            "\\(\\frac{q^3}{125p^6}\\)",
+            "\\(\\frac{q^3}{135p^6}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{q^3}{125p^6}\\).",
+          "steps": [
+            {
+              "explain": "Multiply every index inside by the outer index \\(-3\\).",
+              "work": "\\((5 p^2 q^{-1})^{-3} = 5^{-3} p^{-6} q^{3}\\)"
+            },
+            {
+              "explain": "Write positive powers in the denominator for negative indices.",
+              "work": "\\(\\frac{q^3}{5^3 p^6}\\)"
+            },
+            {
+              "explain": "Evaluate \\(5^3 = 125\\). This replaces the power with its ordinary integer value.",
+              "work": "\\(\\frac{q^3}{125 p^6}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final form: \\(\\frac{q^3}{125p^6}\\).",
+              "work": "\\(\\frac{q^3}{125p^6}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q9d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((3u^4v^{-3})^{-2}\\)",
+          "options": [
+            "\\(\\frac{v^7}{9u^8}\\)",
+            "\\(\\frac{9u^8}{v^6}\\)",
+            "\\(\\frac{v^6}{9u^8}\\)",
+            "\\(\\frac{v^{5}}{9u^{7}}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{v^6}{9u^8}\\).",
+          "steps": [
+            {
+              "explain": "Multiply each inner index by \\(-2\\). Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\((3 u^4 v^{-3})^{-2} = 3^{-2} u^{-8} v^{6}\\)"
+            },
+            {
+              "explain": "Move terms with negative indices to the denominator.",
+              "work": "\\(\\frac{v^6}{3^2 u^8} = \\frac{v^6}{9 u^8}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(\\frac{v^6}{9u^8}\\).",
+              "work": "\\(\\frac{v^6}{9u^8}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q9e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((2x^{-3}y^{-4})^{-4}\\)",
+          "options": [
+            "\\(\\frac{x^{13}y^{16}}{16}\\)",
+            "\\(\\frac{x^{12}y^{16}}{16}\\)",
+            "\\(\\frac{x^{14}y^{16}}{16}\\)",
+            "\\(\\frac{x^{11}y^{15}}{16}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{x^{12}y^{16}}{16}\\).",
+          "steps": [
+            {
+              "explain": "Multiply each index by the outer power \\(-4\\).",
+              "work": "\\((2 x^{-3} y^{-4})^{-4} = 2^{-4} x^{12} y^{16}\\)"
+            },
+            {
+              "explain": "Only the coefficient has a negative index; write it in the denominator.",
+              "work": "\\(\\frac{x^{12} y^{16}}{2^4} = \\frac{x^{12} y^{16}}{16}\\)"
+            },
+            {
+              "explain": "Simplified form: \\(\\frac{x^{12} y^{16}}{16}\\).",
+              "work": "\\(\\frac{x^{12} y^{16}}{16}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q9f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((4a^3b^6)^2\\)",
+          "options": [
+            "\\(-16a^6b^{12}\\)",
+            "\\(16a^6b^{12}\\)",
+            "\\(16a^6b^{13}\\)",
+            "\\(16a^{5}b^{11}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(16a^6b^{12}\\).",
+          "steps": [
+            {
+              "explain": "Raise the coefficient and each variable to the power 2.",
+              "work": "\\((4 a^3 b^6)^2 = 4^2 a^{6} b^{12}\\)"
+            },
+            {
+              "explain": "Evaluate \\(4^2 = 16\\). This replaces the power with its ordinary integer value.",
+              "work": "\\(16 a^6 b^{12}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(16a^6 b^{12}\\).",
+              "work": "\\(16a^6 b^{12}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(x^7 \\times x^{-3} \\times x^{-6}\\)",
+          "options": [
+            "\\(\\frac{2}{x^2}\\)",
+            "\\(\\frac{1}{x^2}\\)",
+            "\\(\\frac{1}{x^3}\\)",
+            "\\(\\frac{x^2}{1}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{x^2}\\).",
+          "steps": [
+            {
+              "explain": "Product law: add the indices of the same base \\(x\\).",
+              "work": "\\(x^7 \\times x^{-3} \\times x^{-6} = x^{7 + (-3) + (-6)}\\)"
+            },
+            {
+              "explain": "Compute the sum of the indices carefully, including any negative contributions.",
+              "work": "\\(x^{7 - 3 - 6} = x^{-2}\\)"
+            },
+            {
+              "explain": "Rewrite with a positive index in the denominator.",
+              "work": "\\(x^{-2} = \\frac{1}{x^2}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(\\frac{1}{x^2}\\).",
+              "work": "\\(\\frac{1}{x^2}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(3x^{-2}y^4 \\times 5x^{-4}y^{-7}\\)",
+          "options": [
+            "\\(\\frac{16}{x^6y^3}\\)",
+            "\\(\\frac{15}{x^6y^3}\\)",
+            "\\(\\frac{x^6y^3}{15}\\)",
+            "\\(\\frac{15}{x^{5}y^{2}}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{15}{x^6y^3}\\).",
+          "steps": [
+            {
+              "explain": "Multiply coefficients and add indices for \\(x\\) and for \\(y\\).",
+              "work": "\\(3 x^{-2} y^4 \\times 5 x^{-4} y^{-7}\\)"
+            },
+            {
+              "explain": "Coefficient \\(3 \\times 5 = 15\\). Indices: \\(x^{-2-4} = x^{-6}\\), \\(y^{4-7} = y^{-3}\\).",
+              "work": "\\(15 x^{-6} y^{-3}\\)"
+            },
+            {
+              "explain": "Write negative indices as positive powers in the denominator.",
+              "work": "\\(\\frac{15}{x^6 y^3}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final form: \\(\\frac{15}{x^6 y^3}\\).",
+              "work": "\\(\\frac{15}{x^6 y^3}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(4m^3n^{-2} \\times 6mn^{-5}\\)",
+          "options": [
+            "\\(\\frac{25m^4}{n^7}\\)",
+            "\\(\\frac{24m^4}{n^7}\\)",
+            "\\(\\frac{34m^4}{n^7}\\)",
+            "\\(\\frac{n^7}{24m^4}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{24m^4}{n^7}\\).",
+          "steps": [
+            {
+              "explain": "Multiply coefficients; add indices for \\(m\\) and for \\(n\\).",
+              "work": "\\(4 m^3 n^{-2} \\times 6 m n^{-5}\\)"
+            },
+            {
+              "explain": "Coefficient 24. Indices: \\(m^{3+1} = m^4\\), \\(n^{-2-5} = n^{-7}\\).",
+              "work": "\\(24 m^4 n^{-7}\\)"
+            },
+            {
+              "explain": "Move \\(n^{-7}\\) to the denominator. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{24 m^4}{n^7}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(\\frac{24m^4}{n^7}\\).",
+              "work": "\\(\\frac{24m^4}{n^7}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{18a^5b^{-3}}{12a^{-4}b^5}\\)",
+          "options": [
+            "\\(\\frac{4a^9}{2b^8}\\)",
+            "\\(\\frac{2b^8}{3a^9}\\)",
+            "\\(\\frac{3a^9}{2b^8}\\)",
+            "\\(\\frac{3a^9}{3b^8}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{3a^9}{2b^8}\\).",
+          "steps": [
+            {
+              "explain": "Divide coefficients and subtract indices (remember subtracting a negative adds).",
+              "work": "\\(\\frac{18 a^5 b^{-3}}{12 a^{-4} b^5}\\)"
+            },
+            {
+              "explain": "Coefficient \\(\\frac{18}{12} = \\frac{3}{2}\\). Indices: \\(a^{5-(-4)} = a^9\\), \\(b^{-3-5} = b^{-8}\\).",
+              "work": "\\(\\frac{3}{2} a^9 b^{-8}\\)"
+            },
+            {
+              "explain": "Write the negative power of \\(b\\) in the denominator.",
+              "work": "\\(\\frac{3 a^9}{2 b^8}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final answer: \\(\\frac{3a^9}{2b^8}\\).",
+              "work": "\\(\\frac{3a^9}{2b^8}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{6u^{-3}v^{-4}}{15u^2v^{-2}}\\)",
+          "options": [
+            "\\(\\frac{3}{5u^5v^2}\\)",
+            "\\(\\frac{2}{5u^5v^2}\\)",
+            "\\(\\frac{3}{5u^5v^3}\\)",
+            "\\(\\frac{5u^5v^2}{2}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{2}{5u^5v^2}\\).",
+          "steps": [
+            {
+              "explain": "Simplify the coefficient and apply the quotient law to each base.",
+              "work": "\\(\\frac{6 u^{-3} v^{-4}}{15 u^2 v^{-2}}\\)"
+            },
+            {
+              "explain": "Coefficient \\(\\frac{6}{15} = \\frac{2}{5}\\). Indices: \\(u^{-3-2} = u^{-5}\\), \\(v^{-4-(-2)} = v^{-2}\\).",
+              "work": "\\(\\frac{2}{5} u^{-5} v^{-2}\\)"
+            },
+            {
+              "explain": "Write all negative powers in the denominator.",
+              "work": "\\(\\frac{2}{5 u^5 v^2}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(\\frac{2}{5u^5 v^2}\\).",
+              "work": "\\(\\frac{2}{5u^5 v^2}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((3y^{-2})^{-3}\\)",
+          "options": [
+            "\\(\\frac{y^7}{27}\\)",
+            "\\(\\frac{27}{y^6}\\)",
+            "\\(\\frac{y^6}{27}\\)",
+            "\\(\\frac{y^6}{37}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{y^6}{27}\\).",
+          "steps": [
+            {
+              "explain": "Multiply each index inside by the outer index \\(-3\\).",
+              "work": "\\((3 y^{-2})^{-3} = 3^{-3} y^{6}\\)"
+            },
+            {
+              "explain": "Rewrite the coefficient with a positive index.",
+              "work": "\\(\\frac{y^6}{3^3} = \\frac{y^6}{27}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Simplified form: \\(\\frac{y^6}{27}\\).",
+              "work": "\\(\\frac{y^6}{27}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((3x^{-2}y^4)^{-2} \\times 9(xy^2)^{-3}\\)",
+          "options": [
+            "\\(\\frac{x}{y^{15}}\\)",
+            "\\(\\frac{x}{y^{14}}\\)",
+            "\\(\\frac{y^{14}}{x}\\)",
+            "\\(\\frac{x}{y^{13}}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{x}{y^{14}}\\).",
+          "steps": [
+            {
+              "explain": "Start with the multiplication expression.",
+              "work": "\\( (3x^{-2}y^4)^{-2} \\times 9(xy^2)^{-3} \\)"
+            },
+            {
+              "explain": "Apply the power outside the bracket to every term inside by multiplying the indices.",
+              "work": "\\( 3^{-2}x^{-2\\times -2}y^{4\\times -2} \\times 9x^{1\\times -3}y^{2\\times -3} \\)"
+            },
+            {
+              "explain": "Simplify the multiplied indices.",
+              "work": "\\( (3^{-2})x^{4}y^{-8} \\times 9x^{-3}y^{-6} \\)"
+            },
+            {
+              "explain": "Multiply the coefficients. Apply the index law for multiplication: add the indices for terms with the same base.",
+              "work": "\\( 3^{-2} \\times 9 \\times x^{4 + (-3)}y^{(-8) + (-6)} \\)"
+            },
+            {
+              "explain": "Simplify the calculations and write the final answer with positive indices.",
+              "work": "\\text{Final answer: } \\(\\frac{x}{y^{14}}\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y10-9a-q10h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((p^{-3}q^2)^5 \\times (p^{-4}q^3)^{-2}\\)",
+          "options": [
+            "\\(\\frac{q^5}{p^7}\\)",
+            "\\(\\frac{p^7}{q^4}\\)",
+            "\\(\\frac{q^4}{p^7}\\)",
+            "\\(\\frac{q^{3}}{p^{6}}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{q^4}{p^7}\\).",
+          "steps": [
+            {
+              "explain": "Expand each bracket by multiplying indices by the outer power.",
+              "work": "\\((p^{-3} q^2)^5 = p^{-15} q^{10},\\quad (p^{-4} q^3)^{-2} = p^{8} q^{-6}\\)"
+            },
+            {
+              "explain": "Multiply the expanded forms: add indices for each base.",
+              "work": "\\(p^{-15+8} q^{10-6} = p^{-7} q^{4}\\)"
+            },
+            {
+              "explain": "Write the negative power of \\(p\\) in the denominator.",
+              "work": "\\(\\frac{q^4}{p^7}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final form: \\(\\frac{q^4}{p^7}\\).",
+              "work": "\\(\\frac{q^4}{p^7}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\left(\\frac{a^3b^{-2}}{c^5}\\right)^{-3}\\)",
+          "options": [
+            "\\(\\frac{b^7c^{15}}{a^9}\\)",
+            "\\(\\frac{b^6c^{15}}{a^9}\\)",
+            "\\(\\frac{b^{5}c^{14}}{a^{8}}\\)",
+            "\\(\\frac{a^9b^6}{c^{15}}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{b^6c^{15}}{a^9}\\).",
+          "steps": [
+            {
+              "explain": "A negative outer index means take the reciprocal and raise to the positive power, or multiply every index by \\(-3\\).",
+              "work": "\\(\\left(\\frac{a^3 b^{-2}}{c^5}\\right)^{-3} = \\frac{a^{-9} b^{6}}{c^{-15}}\\)"
+            },
+            {
+              "explain": "Rewrite: a negative index in the denominator becomes a positive power in the numerator, and vice versa.",
+              "work": "\\(a^{-9} b^{6} c^{15} = \\frac{b^6 c^{15}}{a^9}\\)"
+            },
+            {
+              "explain": "Answer with positive indices: \\(\\frac{b^6 c^{15}}{a^9}\\).",
+              "work": "\\(\\frac{b^6 c^{15}}{a^9}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\left(\\frac{x^{-2}y^3}{z^{-3}}\\right)^{-4}\\)",
+          "options": [
+            "\\(\\frac{x^9}{y^{12}z^{12}}\\)",
+            "\\(\\frac{x^8}{y^{12}z^{12}}\\)",
+            "\\(\\frac{x^8}{y^{13}z^{13}}\\)",
+            "\\(\\frac{x^{7}}{y^{11}z^{11}}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{x^8}{y^{12}z^{12}}\\).",
+          "steps": [
+            {
+              "explain": "Start with the given algebraic fraction raised to a power.",
+              "work": "\\( (\\frac{x^{-2}y^3}{z^{-3}})^{-4} \\)"
+            },
+            {
+              "explain": "Apply the power outside the bracket to both the numerator and the denominator.",
+              "work": "\\( \\frac{(x^{-2}y^3)^{-4}}{(z^{-3})^{-4}} \\)"
+            },
+            {
+              "explain": "Multiply the indices for every term in the numerator and denominator.",
+              "work": "\\( \\frac{\\frac{x^{8}}{y^{12}}}{z^{12}} \\)"
+            },
+            {
+              "explain": "Simplify the calculations and write the final answer with positive indices.",
+              "work": "\\text{Final answer: } \\(\\frac{x^8}{y^{12}z^{12}}\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y10-9a-q10k",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{3x^{-2}y^3}{x^4y^{-3}} \\times \\frac{5x^5y^{-2}}{10xy^{-4}}\\)",
+          "options": [
+            "\\(\\frac{4y^8}{2x^2}\\)",
+            "\\(\\frac{2x^2}{3y^8}\\)",
+            "\\(\\frac{3y^8}{2x^2}\\)",
+            "\\(\\frac{3y^8}{3x^3}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{3y^8}{2x^2}\\).",
+          "steps": [
+            {
+              "explain": "Simplify the first fraction: coefficients stay, subtract indices.",
+              "work": "\\(\\frac{3 x^{-2} y^3}{x^4 y^{-3}} = 3 x^{-2-4} y^{3-(-3)} = 3 x^{-6} y^{6}\\)"
+            },
+            {
+              "explain": "Simplify the second fraction: coefficient \\(\\frac{5}{10} = \\frac{1}{2}\\).",
+              "work": "\\(\\frac{5 x^5 y^{-2}}{10 x y^{-4}} = \\frac{1}{2} x^{5-1} y^{-2-(-4)} = \\frac{1}{2} x^{4} y^{2}\\)"
+            },
+            {
+              "explain": "Multiply the two simplified results. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(3 x^{-6} y^{6} \\times \\frac{1}{2} x^{4} y^{2} = \\frac{3}{2} x^{-2} y^{8}\\)"
+            },
+            {
+              "explain": "Write with positive indices: \\(\\frac{3 y^8}{2 x^2}\\).",
+              "work": "\\(\\frac{3 y^8}{2 x^2}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10l",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{a^3b^{-4}}{a^5b^3} \\times \\frac{(ab^3)^{-2}}{a^3b^5}\\)",
+          "options": [
+            "\\(\\frac{2}{a^7b^{18}}\\)",
+            "\\(\\frac{1}{a^7b^{18}}\\)",
+            "\\(\\frac{a^7b^{18}}{1}\\)",
+            "\\(\\frac{1}{a^{6}b^{17}}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{a^7b^{18}}\\).",
+          "steps": [
+            {
+              "explain": "Start with the multiplication of algebraic fractions.",
+              "work": "\\( \\frac{a^3b^{-4}}{a^5b^3} \\times \\frac{(ab^3)^{-2}}{a^3b^5} \\)"
+            },
+            {
+              "explain": "Multiply the numerators together and the denominators together.",
+              "work": "\\( \\frac{a^3b^{-4} \\times (ab^3)^{-2}}{a^5b^3 \\times a^3b^5} \\)"
+            },
+            {
+              "explain": "Simplify the calculations and write the final answer with positive indices.",
+              "work": "\\text{Final answer: } \\(\\frac{1}{a^7b^{18}}\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y10-9a-q10m",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{a^5b^{-2}}{(a^3b)^{-2}} \\div \\frac{a^2b^3}{(ab)^{-3}}\\)",
+          "options": [
+            "\\(\\frac{a^7}{b^6}\\)",
+            "\\(\\frac{a^6}{b^6}\\)",
+            "\\(\\frac{b^6}{a^6}\\)",
+            "\\(\\frac{a^{5}}{b^{5}}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{a^6}{b^6}\\).",
+          "steps": [
+            {
+              "explain": "Expand the brackets with negative outer powers: \\((a^3 b)^{-2} = a^{-6} b^{-2}\\) and \\((ab)^{-3} = a^{-3} b^{-3}\\).",
+              "work": "\\(\\frac{a^5 b^{-2}}{a^{-6} b^{-2}} \\div \\frac{a^2 b^3}{a^{-3} b^{-3}}\\)"
+            },
+            {
+              "explain": "First fraction: \\(a^{5-(-6)} b^{-2-(-2)} = a^{11} b^{0} = a^{11}\\). Second: \\(a^{2-(-3)} b^{3-(-3)} = a^{5} b^{6}\\).",
+              "work": "\\(a^{11} \\div (a^5 b^6)\\)"
+            },
+            {
+              "explain": "For division of powers with the same base, subtract the indices (watch the signs of negative indices).",
+              "work": "\\(a^{11-5} b^{0-6} = a^6 b^{-6} = \\frac{a^6}{b^6}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final form: \\(\\frac{a^6}{b^6}\\).",
+              "work": "\\(\\frac{a^6}{b^6}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10n",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{x^{-5}y^3}{(xy^2)^{-4}} \\div \\frac{(xy)^{-2}}{x^2y^4}\\)",
+          "options": [
+            "\\(-x^3y^{17}\\)",
+            "\\(x^3y^{17}\\)",
+            "\\(x^{2}y^{16}\\)",
+            "\\(x^{4}y^{18}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(x^3y^{17}\\).",
+          "steps": [
+            {
+              "explain": "Expand the powered brackets: \\((xy^2)^{-4} = x^{-4} y^{-8}\\) and \\((xy)^{-2} = x^{-2} y^{-2}\\).",
+              "work": "\\(\\frac{x^{-5} y^3}{x^{-4} y^{-8}} \\div \\frac{x^{-2} y^{-2}}{x^2 y^4}\\)"
+            },
+            {
+              "explain": "Simplify the first fraction using the quotient law.",
+              "work": "\\(x^{-5-(-4)} y^{3-(-8)} = x^{-1} y^{11}\\)"
+            },
+            {
+              "explain": "Simplify the second fraction, then divide (multiply by reciprocal).",
+              "work": "\\(\\frac{x^{-2} y^{-2}}{x^2 y^4} = x^{-4} y^{-6},\\quad x^{-1} y^{11} \\times x^{4} y^{6}\\)"
+            },
+            {
+              "explain": "Add indices: \\(x^{-1+4} y^{11+6} = x^3 y^{17}\\).",
+              "work": "\\(x^3 y^{17}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10o",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{(3x^3y^{-4})^2}{z^3} \\times \\frac{(3^2x^{-2}y^3)^{-1}}{z^2}\\)",
+          "options": [
+            "\\(\\frac{x^9}{y^{11}z^5}\\)",
+            "\\(\\frac{x^8}{y^{11}z^5}\\)",
+            "\\(\\frac{y^{11}{x^8}}{z^5}\\)",
+            "\\(\\frac{x^{7}}{y^{10}z^{4}}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{x^8}{y^{11}z^5}\\).",
+          "steps": [
+            {
+              "explain": "Start with the multiplication of algebraic fractions.",
+              "work": "\\( \\frac{(3x^3y^{-4})^2}{z^3} \\times \\frac{(3^2x^{-2}y^3)^{-1}}{z^2} \\)"
+            },
+            {
+              "explain": "Multiply the numerators together and the denominators together.",
+              "work": "\\( \\frac{(3x^3y^{-4})^2 \\times (3^2x^{-2}y^3)^{-1}}{z^3 \\times z^2} \\)"
+            },
+            {
+              "explain": "Simplify the calculations and write the final answer with positive indices.",
+              "work": "\\text{Final answer: } \\(\\frac{x^8}{y^{11}z^5}\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y10-9a-q10p",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{(a^3b^2)^3}{c^{-4}} \\times (a^2bc^{-3})^{-2}\\)",
+          "options": [
+            "\\(a^5b^4c^{10}\\)",
+            "\\(a^{4}b^{3}c^{9}\\)",
+            "\\(a^{6}b^{5}c^{11}\\)",
+            "\\(a^{-5}b^{-4}c^{-10}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(a^5b^4c^{10}\\).",
+          "steps": [
+            {
+              "explain": "Expand the first part: \\((a^3 b^2)^3 = a^9 b^6\\), and \\(\\frac{1}{c^{-4}} = c^4\\). Expand the second: \\((a^2 b c^{-3})^{-2} = a^{-4} b^{-2} c^{6}\\).",
+              "work": "\\(a^9 b^6 c^4 \\times a^{-4} b^{-2} c^{6}\\)"
+            },
+            {
+              "explain": "Add the indices for each base separately after every bracket has been expanded.",
+              "work": "\\(a^{9-4} b^{6-2} c^{4+6} = a^5 b^4 c^{10}\\)"
+            },
+            {
+              "explain": "All indices are positive already. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(a^5 b^4 c^{10}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(a^5 b^4 c^{10}\\).",
+              "work": "\\(a^5 b^4 c^{10}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10q",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{(x^3)^4}{y^4} \\div \\left(\\frac{x^2}{y^3}\\right)^{-3}\\)",
+          "options": [
+            "\\(\\frac{x^{19}}{y^{13}}\\)",
+            "\\(\\frac{x^{18}}{y^{13}}\\)",
+            "\\(\\frac{x^{17}}{y^{12}}\\)",
+            "\\(\\frac{x^{19}}{y^{14}}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{x^{18}}{y^{13}}\\).",
+          "steps": [
+            {
+              "explain": "Simplify the first part: \\((x^3)^4 = x^{12}\\), so the first fraction is \\(\\frac{x^{12}}{y^4}\\). Expand the second: \\(\\left(\\frac{x^2}{y^3}\\right)^{-3} = \\frac{x^{-6}}{y^{-9}}\\).",
+              "work": "\\(\\frac{x^{12}}{y^4} \\div \\frac{x^{-6}}{y^{-9}}\\)"
+            },
+            {
+              "explain": "Division: multiply by the reciprocal. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{x^{12}}{y^4} \\times \\frac{y^{-9}}{x^{-6}} = \\frac{x^{12}}{y^4} \\times x^{6} y^{-9}\\)"
+            },
+            {
+              "explain": "Combine: \\(x^{12+6} y^{-4-9} = x^{18} y^{-13}\\).",
+              "work": "\\(x^{18} y^{-13} = \\frac{x^{18}}{y^{13}}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final form: \\(\\frac{x^{18}}{y^{13}}\\).",
+              "work": "\\(\\frac{x^{18}}{y^{13}}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q10r",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{(3x^5)^3}{y^8} \\div \\frac{(x^3)^{-2}}{3y^2}\\)",
+          "options": [
+            "\\(\\frac{9x^{21}}{y^6}\\)",
+            "\\(\\frac{81x^{21}}{y^6}\\)",
+            "\\(\\frac{81x^9}{y^6}\\)",
+            "\\(\\frac{27x^{21}}{y^6}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{81x^{21}}{y^6}\\).",
+          "steps": [
+            {
+              "explain": "Expand the first numerator: \\((3x^5)^3 = 27 x^{15}\\). Second: \\((x^3)^{-2} = x^{-6}\\).",
+              "work": "\\(\\frac{27 x^{15}}{y^8} \\div \\frac{x^{-6}}{3 y^2}\\)"
+            },
+            {
+              "explain": "Multiply by the reciprocal of the second fraction.",
+              "work": "\\(\\frac{27 x^{15}}{y^8} \\times \\frac{3 y^2}{x^{-6}}\\)"
+            },
+            {
+              "explain": "Multiply: coefficient \\(27 \\times 3 = 81\\); indices \\(x^{15-(-6)} = x^{21}\\), \\(y^{2-8} = y^{-6}\\).",
+              "work": "\\(81 x^{21} y^{-6} = \\frac{81 x^{21}}{y^6}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Answer: \\(\\frac{81x^{21}}{y^6}\\).",
+              "work": "\\(\\frac{81x^{21}}{y^6}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q11a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(\\frac{2^{-1} + 2^{-2}}{2 + 2^2}\\)",
+          "options": [
+            "\\(\\frac{2}{8}\\)",
+            "\\(\\frac{1}{8}\\)",
+            "\\(\\frac{8}{1}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{8}\\).",
+          "steps": [
+            {
+              "explain": "Rewrite every negative power as a reciprocal, and evaluate the positive powers in the denominator.",
+              "work": "\\(\\frac{2^{-1} + 2^{-2}}{2 + 2^2} = \\frac{\\frac{1}{2} + \\frac{1}{4}}{2 + 4}\\)"
+            },
+            {
+              "explain": "Add the fractions in the numerator using a common denominator of 4. Simplify the denominator.",
+              "work": "\\(\\frac{\\frac{2}{4} + \\frac{1}{4}}{6} = \\frac{\\frac{3}{4}}{6}\\)"
+            },
+            {
+              "explain": "Dividing by 6 is the same as multiplying by \\(\\frac{1}{6}\\).",
+              "work": "\\(\\frac{3}{4} \\times \\frac{1}{6} = \\frac{3}{24}\\)"
+            },
+            {
+              "explain": "Cancel the common numerical factor in the numerator and denominator to reach lowest terms.",
+              "work": "\\(\\frac{3}{24} = \\frac{1}{8}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final value: \\(\\frac{1}{8}\\).",
+              "work": "\\(\\frac{1}{8}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(\\frac{3^{-1} + 3^{-3}}{3^1 + 3^3}\\)",
+          "options": [
+            "\\(\\frac{2}{81}\\)",
+            "\\(\\frac{1}{81}\\)",
+            "\\(\\frac{81}{1}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{81}\\).",
+          "steps": [
+            {
+              "explain": "Convert negative powers to unit fractions and evaluate the positive powers.",
+              "work": "\\(\\frac{3^{-1} + 3^{-3}}{3^1 + 3^3} = \\frac{\\frac{1}{3} + \\frac{1}{27}}{3 + 27}\\)"
+            },
+            {
+              "explain": "Numerator: common denominator 27 gives \\(\\frac{9}{27} + \\frac{1}{27} = \\frac{10}{27}\\). Denominator: \\(3 + 27 = 30\\).",
+              "work": "\\(\\frac{\\frac{10}{27}}{30}\\)"
+            },
+            {
+              "explain": "Rewrite the complex fraction as a product.",
+              "work": "\\(\\frac{10}{27} \\times \\frac{1}{30} = \\frac{10}{810}\\)"
+            },
+            {
+              "explain": "Simplify by dividing numerator and denominator by 10.",
+              "work": "\\(\\frac{10}{810} = \\frac{1}{81}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final value: \\(\\frac{1}{81}\\).",
+              "work": "\\(\\frac{1}{81}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q11c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(\\frac{3^{-1} - 3^{-3}}{3^1 - 3^3}\\)",
+          "options": [
+            "\\(-\\frac{2}{81}\\)",
+            "\\(-\\frac{1}{81}\\)",
+            "\\(-\\frac{81}{1}\\)",
+            "\\(-\\frac{3}{81}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(-\\frac{1}{81}\\).",
+          "steps": [
+            {
+              "explain": "Rewrite negative powers as fractions and evaluate positive powers.",
+              "work": "\\(\\frac{3^{-1} - 3^{-3}}{3^1 - 3^3} = \\frac{\\frac{1}{3} - \\frac{1}{27}}{3 - 27}\\)"
+            },
+            {
+              "explain": "Numerator: \\(\\frac{9}{27} - \\frac{1}{27} = \\frac{8}{27}\\). Denominator: \\(3 - 27 = -24\\).",
+              "work": "\\(\\frac{\\frac{8}{27}}{-24}\\)"
+            },
+            {
+              "explain": "Multiply by the reciprocal of the denominator.",
+              "work": "\\(\\frac{8}{27} \\times \\frac{1}{-24} = \\frac{8}{-648}\\)"
+            },
+            {
+              "explain": "Simplify by dividing numerator and denominator by 8.",
+              "work": "\\(\\frac{8}{-648} = -\\frac{1}{81}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final value: \\(-\\frac{1}{81}\\).",
+              "work": "\\(-\\frac{1}{81}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(\\frac{3^{-1} + 3^{-2} + 3^{-3}}{3 + 3^2 + 3^3}\\)",
+          "options": [
+            "\\(\\frac{2}{81}\\)",
+            "\\(\\frac{1}{81}\\)",
+            "\\(\\frac{81}{1}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{1}{81}\\).",
+          "steps": [
+            {
+              "explain": "Convert each negative power in the numerator to a unit fraction, and expand the positive powers in the denominator.",
+              "work": "\\(\\frac{3^{-1} + 3^{-2} + 3^{-3}}{3 + 3^2 + 3^3} = \\frac{\\frac{1}{3} + \\frac{1}{9} + \\frac{1}{27}}{3 + 9 + 27}\\)"
+            },
+            {
+              "explain": "Numerator with common denominator 27: \\(\\frac{9 + 3 + 1}{27} = \\frac{13}{27}\\). Denominator: \\(3 + 9 + 27 = 39\\).",
+              "work": "\\(\\frac{\\frac{13}{27}}{39}\\)"
+            },
+            {
+              "explain": "Rewrite as a single fraction product. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\frac{13}{27} \\times \\frac{1}{39} = \\frac{13}{27 \\times 39}\\)"
+            },
+            {
+              "explain": "Note that \\(27 \\times 39 = 27 \\times 3 \\times 13 = 81 \\times 13\\), so the factor 13 cancels.",
+              "work": "\\(\\frac{13}{81 \\times 13} = \\frac{1}{81}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final value: \\(\\frac{1}{81}\\).",
+              "work": "\\(\\frac{1}{81}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-9a-q13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If \\(n = 2\\), find the value of \\(2^n + 2^{3-n} + 2^{n-4}\\).",
+          "options": [
+            "\\(\\frac{26}{4}\\)",
+            "\\(\\frac{25}{4}\\)",
+            "\\(\\frac{35}{4}\\)",
+            "\\(\\frac{4}{25}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{25}{4}\\).",
+          "steps": [
+            {
+              "explain": "Substitute the given value \\(n = 2\\) into every exponent.",
+              "work": "\\(2^n + 2^{3-n} + 2^{n-4} = 2^2 + 2^{3-2} + 2^{2-4}\\)"
+            },
+            {
+              "explain": "Simplify the exponents: \\(3-2 = 1\\) and \\(2-4 = -2\\).",
+              "work": "\\(2^2 + 2^1 + 2^{-2}\\)"
+            },
+            {
+              "explain": "Evaluate each power: \\(2^2 = 4\\), \\(2^1 = 2\\), and \\(2^{-2} = \\frac{1}{4}\\).",
+              "work": "\\(4 + 2 + \\frac{1}{4}\\)"
+            },
+            {
+              "explain": "Add the integers first, then combine with the fraction using a common denominator of 4.",
+              "work": "\\(6 + \\frac{1}{4} = \\frac{24}{4} + \\frac{1}{4} = \\frac{25}{4}\\)"
+            },
+            {
+              "explain": "State the final simplified result. Final value: \\(\\frac{25}{4}\\).",
+              "work": "\\(\\frac{25}{4}\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year10ch9"
+          ]
+        },
+        {
+          "id": "y10-9a-q14a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{a - b^{-1}}{a^{-1} - b}\\)",
+          "options": [
+            "\\(-\\frac{a}{b}\\)",
+            "\\(-\\frac{b}{a}\\)",
+            "\\(\\text{None of the above}\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(-\\frac{a}{b}\\).",
+          "steps": [
+            {
+              "explain": "Rewrite every negative index as a unit fraction so the expression is ordinary rational arithmetic.",
+              "work": "\\(\\frac{a - b^{-1}}{a^{-1} - b} = \\frac{a - \\frac{1}{b}}{\\frac{1}{a} - b}\\)"
+            },
+            {
+              "explain": "Combine terms over a common denominator in the numerator and in the denominator.",
+              "work": "\\(\\frac{\\frac{ab - 1}{b}}{\\frac{1 - ab}{a}} = \\frac{ab - 1}{b} \\times \\frac{a}{1 - ab}\\)"
+            },
+            {
+              "explain": "Notice that \\(1 - ab = -(ab - 1)\\), so the factors \\((ab - 1)\\) cancel with a sign change.",
+              "work": "\\(\\frac{ab - 1}{b} \\cdot \\frac{a}{-(ab - 1)} = -\\frac{a}{b}\\)"
+            },
+            {
+              "explain": "Simplified form with positive indices: \\(-\\frac{a}{b}\\).",
+              "work": "\\(-\\frac{a}{b}\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year10ch9"
+          ]
+        },
+        {
+          "id": "y10-9a-q14b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((m^{-1} + n^{-1})(m^{-1} - n^{-1})\\)",
+          "options": [
+            "\\(-\\frac{n^2 - m^2}{m^2n^2}\\)",
+            "\\(\\frac{m^2n^2}{n^2 - m^2}\\)",
+            "\\(\\frac{n^2 - m^2}{m^2n^2}\\)",
+            "\\(\\frac{n^3 - m^3}{m^3n^3}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{n^2 - m^2}{m^2n^2}\\).",
+          "steps": [
+            {
+              "explain": "This is a difference of squares pattern: \\((X + Y)(X - Y) = X^2 - Y^2\\) with \\(X = m^{-1}\\) and \\(Y = n^{-1}\\).",
+              "work": "\\((m^{-1} + n^{-1})(m^{-1} - n^{-1}) = m^{-2} - n^{-2}\\)"
+            },
+            {
+              "explain": "Rewrite negative powers as unit fractions.",
+              "work": "\\(m^{-2} - n^{-2} = \\frac{1}{m^2} - \\frac{1}{n^2}\\)"
+            },
+            {
+              "explain": "Combine over the common denominator \\(m^2 n^2\\).",
+              "work": "\\(\\frac{n^2 - m^2}{m^2 n^2}\\)"
+            },
+            {
+              "explain": "Final form with positive indices: \\(\\frac{n^2 - m^2}{m^2 n^2}\\).",
+              "work": "\\(\\frac{n^2 - m^2}{m^2 n^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-9a-q14c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{4ab}{a^{-1} + b^{-1}}\\)",
+          "options": [
+            "\\(\\frac{5a^2b^2}{a+b}\\)",
+            "\\(\\frac{4a^2b^2}{a+b}\\)",
+            "\\(\\frac{4a^3b^3}{a+b}\\)",
+            "\\(\\frac{a+b}{4a^2b^2}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{4a^2b^2}{a+b}\\).",
+          "steps": [
+            {
+              "explain": "Rewrite the negative indices in the denominator as unit fractions.",
+              "work": "\\(\\frac{4ab}{a^{-1} + b^{-1}} = \\frac{4ab}{\\frac{1}{a} + \\frac{1}{b}}\\)"
+            },
+            {
+              "explain": "Combine the denominator over a common denominator \\(ab\\).",
+              "work": "\\(\\frac{1}{a} + \\frac{1}{b} = \\frac{b + a}{ab}\\)"
+            },
+            {
+              "explain": "Dividing by a fraction means multiply by its reciprocal.",
+              "work": "\\(4ab \\times \\frac{ab}{a + b} = \\frac{4 a^2 b^2}{a + b}\\)"
+            },
+            {
+              "explain": "Simplified form: \\(\\frac{4a^2 b^2}{a + b}\\).",
+              "work": "\\(\\frac{4a^2 b^2}{a + b}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-9a-q14d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\(\\frac{p^{-1} + q^{-1}}{p^{-2} + q^{-2}}\\)",
+          "options": [
+            "\\(\\frac{pq(p+q)}{p^3+q^2}\\)",
+            "\\(\\frac{p^2+q^2}{pq(p+q)}\\)",
+            "\\(\\frac{pq(p+q)}{p^2+q^2}\\)",
+            "\\(\\frac{pq(p+q)}{p^3+q^3}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{pq(p+q)}{p^2+q^2}\\).",
+          "steps": [
+            {
+              "explain": "Rewrite every negative index as a unit fraction.",
+              "work": "\\(\\frac{p^{-1} + q^{-1}}{p^{-2} + q^{-2}} = \\frac{\\frac{1}{p} + \\frac{1}{q}}{\\frac{1}{p^2} + \\frac{1}{q^2}}\\)"
+            },
+            {
+              "explain": "Combine numerator and denominator separately.",
+              "work": "\\(\\frac{\\frac{q + p}{pq}}{\\frac{q^2 + p^2}{p^2 q^2}} = \\frac{p + q}{pq} \\times \\frac{p^2 q^2}{p^2 + q^2}\\)"
+            },
+            {
+              "explain": "Cancel one factor of \\(p\\) and one factor of \\(q\\).",
+              "work": "\\(\\frac{(p + q) \\cdot p q}{p^2 + q^2} = \\frac{pq(p + q)}{p^2 + q^2}\\)"
+            },
+            {
+              "explain": "Final form: \\(\\frac{pq(p + q)}{p^2 + q^2}\\).",
+              "work": "\\(\\frac{pq(p + q)}{p^2 + q^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-9a-q14e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((a^{-1} + b)^{-2}\\)",
+          "options": [
+            "\\(\\frac{a^3}{(1+ab)^2}\\)",
+            "\\(\\frac{(1+ab)^2}{a^2}\\)",
+            "\\(\\frac{a^2}{(1+ab)^2}\\)",
+            "\\(\\frac{a^3}{(1+ab)^3}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{a^2}{(1+ab)^2}\\).",
+          "steps": [
+            {
+              "explain": "Rewrite \\(a^{-1}\\) as a unit fraction inside the brackets.",
+              "work": "\\((a^{-1} + b)^{-2} = \\left(\\frac{1}{a} + b\\right)^{-2}\\)"
+            },
+            {
+              "explain": "Combine over a common denominator. Keep every intermediate power written clearly so the next index-law step is unambiguous.",
+              "work": "\\(\\left(\\frac{1 + ab}{a}\\right)^{-2}\\)"
+            },
+            {
+              "explain": "A negative outer power means take the reciprocal and square: \\(\\left(\\frac{A}{B}\\right)^{-2} = \\left(\\frac{B}{A}\\right)^{2}\\).",
+              "work": "\\(\\left(\\frac{a}{1 + ab}\\right)^{2} = \\frac{a^2}{(1 + ab)^2}\\)"
+            },
+            {
+              "explain": "Simplified form: \\(\\frac{a^2}{(1 + ab)^2}\\).",
+              "work": "\\(\\frac{a^2}{(1 + ab)^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-9a-q14f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Simplify the expression, writing each pronumeral in the answer with a positive index: \\((m^{-2} + n^{-3})^{-1}\\)",
+          "options": [
+            "\\(\\frac{m^3n^3}{n^3+m^2}\\)",
+            "\\(\\frac{m^2n^3}{n^3+m^2}\\)",
+            "\\(\\frac{m^3n^3}{n^3+m^3}\\)",
+            "\\(\\frac{n^3+m^2}{m^2n^3}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\frac{m^2n^3}{n^3+m^2}\\).",
+          "steps": [
+            {
+              "explain": "Rewrite each negative power as a unit fraction.",
+              "work": "\\((m^{-2} + n^{-3})^{-1} = \\left(\\frac{1}{m^2} + \\frac{1}{n^3}\\right)^{-1}\\)"
+            },
+            {
+              "explain": "Combine the sum over the common denominator \\(m^2 n^3\\).",
+              "work": "\\(\\left(\\frac{n^3 + m^2}{m^2 n^3}\\right)^{-1}\\)"
+            },
+            {
+              "explain": "The reciprocal of a fraction is the fraction flipped.",
+              "work": "\\(\\frac{m^2 n^3}{n^3 + m^2}\\)"
+            },
+            {
+              "explain": "Final form with positive indices: \\(\\frac{m^2 n^3}{n^3 + m^2}\\).",
+              "work": "\\(\\frac{m^2 n^3}{n^3 + m^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "jrhy2008-q2",
+          "type": "mc",
+          "stem": "\\(6x^0+7 = \\)",
+          "options": [
+            "\\(6\\)",
+            "\\(7\\)",
+            "\\(6x+7\\)",
+            "\\(13\\)"
+          ],
+          "answer": 3,
+          "hint": "Any non-zero number raised to the power 0 equals 1.",
+          "steps": [
+            {
+              "explain": "Recall that \\(x^0=1\\) for any non-zero \\(x\\).",
+              "work": "\\(6x^0 = 6(1) = 6\\)"
+            },
+            {
+              "explain": "Add 7.",
+              "work": "\\(6+7 = 13\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Half-Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "jrhy2008-q4",
+          "type": "mc",
+          "stem": "\\(12\\times\\left(\\dfrac23\\right)^{-2} = \\)",
+          "options": [
+            "\\(27\\)",
+            "\\(\\dfrac{16}{3}\\)",
+            "\\(36\\)",
+            "\\(\\dfrac{27}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "A negative index means \"take the reciprocal and make the index positive\": \\(\\left(\\dfrac23\\right)^{-2}=\\left(\\dfrac32\\right)^2\\).",
+          "steps": [
+            {
+              "explain": "Rewrite the negative index as the reciprocal raised to the positive index.",
+              "work": "\\(\\left(\\dfrac23\\right)^{-2} = \\left(\\dfrac32\\right)^2 = \\dfrac94\\)"
+            },
+            {
+              "explain": "Multiply by 12.",
+              "work": "\\(12\\times\\dfrac94 = 27\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Half-Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-9b",
+      "code": "9b",
+      "title": "Scientific notation and significant figures",
+      "questions": [
+        {
+          "id": "jr2013-q1",
+          "type": "mc",
+          "stem": "The numbers \\(A=5.6\\times10^{-2}\\), \\(B=0.93\\times10^{-1}\\) and \\(C=71\\times10^{-3}\\), listed in ascending order, is:",
+          "options": [
+            "\\(C, A, B\\)",
+            "\\(B, A, C\\)",
+            "\\(A, C, B\\)",
+            "\\(A, B, C\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert all three to the same power of 10 (or to ordinary decimal form) before comparing.",
+          "steps": [
+            {
+              "explain": "Convert each number to ordinary decimal form for easy comparison.",
+              "work": "\\(A = 5.6\\times10^{-2} = 0.056; \\quad B = 0.93\\times10^{-1} = 0.093; \\quad C = 71\\times10^{-3} = 0.071\\)"
+            },
+            {
+              "explain": "Order the decimal values from smallest to largest.",
+              "work": "\\(0.056 < 0.071 < 0.093 \\Rightarrow A < C < B\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "jr2013-q3",
+          "type": "mc",
+          "stem": "\\((1.2\\times10^3)^2 = \\)",
+          "options": [
+            "\\(1.44\\times10^5\\)",
+            "\\(1.44\\times10^8\\)",
+            "\\(1.44\\times10^6\\)",
+            "\\(1.44\\times10^9\\)"
+          ],
+          "answer": 2,
+          "hint": "Square the decimal part and double the exponent separately.",
+          "steps": [
+            {
+              "explain": "Square the decimal coefficient and double the power of 10.",
+              "work": "\\((1.2)^2\\times10^{2\\times3} = 1.44\\times10^6\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2013 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-9c",
+      "code": "9c",
+      "title": "Powers with rational indices",
+      "questions": [
+        {
+          "id": "jr2012-q10",
+          "type": "mc",
+          "stem": "Which of the following values of \\(x\\) satisfies the equation \\(25^{-2} = \\dfrac{5^{\\frac{48}{x}}}{\\left(5^{\\frac{26}{x}}\\right)\\times\\left(25^{\\frac{17}{x}}\\right)}\\)?",
+          "options": [
+            "\\(5\\)",
+            "\\(2\\)",
+            "\\(6\\)",
+            "\\(3\\)"
+          ],
+          "answer": 3,
+          "hint": "Write every term as a power of 5, then equate the exponents on both sides.",
+          "steps": [
+            {
+              "explain": "Rewrite every term with base 5: \\(25=5^2\\), so \\(25^{-2}=5^{-4}\\) and \\(25^{\\frac{17}{x}}=5^{\\frac{34}{x}}\\).",
+              "work": "\\(5^{-4} = \\dfrac{5^{\\frac{48}{x}}}{5^{\\frac{26}{x}}\\times 5^{\\frac{34}{x}}}\\)"
+            },
+            {
+              "explain": "Combine the exponents on the right-hand side using index laws.",
+              "work": "\\(5^{-4} = 5^{\\frac{48}{x} - \\frac{26}{x} - \\frac{34}{x}} = 5^{-\\frac{12}{x}}\\)"
+            },
+            {
+              "explain": "Since the bases match, equate the exponents and solve for \\(x\\).",
+              "work": "\\(-4 = -\\dfrac{12}{x} \\Rightarrow x = 3\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2012 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "jr2012-q24",
+          "type": "mc",
+          "stem": "Given the formula \\(P=ab^2\\). If \\(a=0.05\\), \\(b>0\\) and \\(P=4.5\\times10^{15}\\), then the value of \\(b\\) is:",
+          "options": [
+            "\\(1.5\\times10^7\\)",
+            "\\(2.0\\times10^{16}\\)",
+            "\\(1.0\\times10^{15}\\)",
+            "\\(3.0\\times10^8\\)"
+          ],
+          "answer": 3,
+          "hint": "Rearrange to \\(b=\\sqrt{P/a}\\), then substitute the given values.",
+          "steps": [
+            {
+              "explain": "Rearrange the formula to make \\(b\\) the subject.",
+              "work": "\\(b^2 = \\dfrac{P}{a} \\Rightarrow b=\\sqrt{\\dfrac{P}{a}}\\)"
+            },
+            {
+              "explain": "Substitute the given values.",
+              "work": "\\(b = \\sqrt{\\dfrac{4.5\\times10^{15}}{0.05}} = \\sqrt{9\\times10^{16}}\\)"
+            },
+            {
+              "explain": "Evaluate the square root.",
+              "work": "\\(b = 3\\times10^8\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2012 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-9d",
+      "code": "9d",
+      "title": "Graphs of exponential functions",
+      "questions": [
+        {
+          "id": "jr2012-q25",
+          "type": "mc",
+          "stem": "The graph of \\(y=2(2^{x+1})-8\\) has \\(x\\) and \\(y\\) intercepts with the coordinate axes at:",
+          "options": [
+            "\\(x=1\\) and \\(y=-4\\)",
+            "\\(x=1\\) and \\(y=-6\\)",
+            "\\(x=\\dfrac12\\) and \\(y=-4\\)",
+            "\\(x=-1\\) and \\(y=4\\)"
+          ],
+          "answer": 0,
+          "hint": "For the \\(y\\)-intercept, substitute \\(x=0\\). For the \\(x\\)-intercept, set \\(y=0\\) and solve the exponential equation.",
+          "steps": [
+            {
+              "explain": "Find the \\(y\\)-intercept by substituting \\(x=0\\).",
+              "work": "\\(y = 2(2^{0+1})-8 = 2(2)-8 = 4-8 = -4\\)"
+            },
+            {
+              "explain": "Find the \\(x\\)-intercept by setting \\(y=0\\) and solving for \\(x\\).",
+              "work": "\\(0 = 2(2^{x+1})-8 \\Rightarrow 2^{x+1}=4=2^2 \\Rightarrow x+1=2 \\Rightarrow x=1\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2012 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-9e",
+      "code": "9e",
+      "title": "Exponential equations",
+      "questions": [
+        {
+          "id": "jrhy2008-q20",
+          "type": "mc",
+          "stem": "If \\(9^{x-2}=27\\), then \\(x=\\)",
+          "options": [
+            "\\(-3\\)",
+            "\\(3\\)",
+            "\\(-\\dfrac72\\)",
+            "\\(\\dfrac72\\)"
+          ],
+          "answer": 3,
+          "hint": "Write both sides as powers of 3: \\(9=3^2\\) and \\(27=3^3\\).",
+          "steps": [
+            {
+              "explain": "Rewrite both sides with base 3.",
+              "work": "\\(9^{x-2} = (3^2)^{x-2} = 3^{2x-4}; \\qquad 27=3^3\\)"
+            },
+            {
+              "explain": "Equate the exponents.",
+              "work": "\\(2x-4=3\\)"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "\\(2x=7 \\Rightarrow x=\\dfrac72\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Half-Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    }
+  ]
+}

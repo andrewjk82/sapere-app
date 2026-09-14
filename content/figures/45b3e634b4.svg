@@ -1,0 +1,10 @@
+<svg viewBox="0 0 300 200" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" style="background-color:#ffffff;">
+        <rect x="30" y="30" width="210" height="120" fill="none" stroke="#000" stroke-width="2"/>
+        <line x1="150" y1="30" x2="150" y2="150" stroke="#000" stroke-width="2"/>
+        <text x="25" y="25" font-family="sans-serif" font-size="16">D</text>
+        <text x="145" y="25" font-family="sans-serif" font-size="16">Y</text>
+        <text x="240" y="25" font-family="sans-serif" font-size="16">C</text>
+        <text x="25" y="165" font-family="sans-serif" font-size="16">A</text>
+        <text x="145" y="165" font-family="sans-serif" font-size="16">X</text>
+        <text x="240" y="165" font-family="sans-serif" font-size="16">B</text>
+      </svg>

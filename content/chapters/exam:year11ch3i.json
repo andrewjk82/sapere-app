@@ -1,0 +1,52 @@
+{
+  "chapterId": "exam:year11ch3i",
+  "title": "Exam year11ch3i",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ch3i",
+      "code": "EXAM",
+      "title": "Direct and inverse variation",
+      "questions": [
+        {
+          "id": "y11a-3i-q8",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "The owners of the Fizgig Manufacturing Company use a uniformly elastic demand curve where price \\( p \\) and quantity \\( q \\) satisfy \\( pq = T \\) for some constant turnover \\( T \\).",
+          "figure": {
+            "jsxGraph": {
+              "width": 350,
+              "height": 250,
+              "boundingbox": [
+                -1,
+                35,
+                10,
+                -3
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0,32]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [9.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [9, -1, 'q (100k)'], {anchorX: 'right', anchorY: 'top', fontSize: 12});\nboard.create('text', [-0.5, 31, 'p ($)'], {anchorX: 'right', anchorY: 'top', fontSize: 12});\nboard.create('functiongraph', [function(x){ return 30/x; }, 0.5, 9.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [6,5], {name: '(6,5)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [3,10], {name: '(3,10)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            }
+          },
+          "answer": "0",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Calculate the constant turnover \\( T \\).",
+              "work": "T = pq = 5 \\cdot 600,000 = 3,000,000"
+            },
+            {
+              "explain": "Solve for the quantity \\( q \\) given the new price \\( p = \\\\(10 \\).\\)",
+              "work": "10q = 3,000,000 \\implies q = 300,000"
+            },
+            {
+              "explain": "Since \\( q = \\frac{T}{p} \\), quantity is inversely proportional to price. Tripling the price divides the quantity by 3.",
+              "work": "q \\propto \\frac{1}{p}"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        }
+      ]
+    }
+  ]
+}

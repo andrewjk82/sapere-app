@@ -1,0 +1,47 @@
+{
+  "chapterId": "y10-20",
+  "title": "Chapter 20: Functions and inverse functions",
+  "year": "2012",
+  "topics": [
+    {
+      "topicId": "y10-20a",
+      "code": "20a",
+      "title": "Functions and domains",
+      "questions": [
+        {
+          "id": "jr2012-q13",
+          "type": "mc",
+          "stem": "If \\(f(x) = x^2-9x+14\\), then the asymptotes of the curve with equation \\(y=\\dfrac{1}{f(x)}\\) are:",
+          "options": [
+            "\\(x=2, x=7\\) and \\(y=\\dfrac{1}{14}\\)",
+            "\\(x=2, x=7\\) and \\(y=0\\)",
+            "\\(x=-2, x=-7\\) and \\(y=\\dfrac{1}{14}\\)",
+            "\\(x=-2, x=-7\\) and \\(y=0\\)"
+          ],
+          "answer": 1,
+          "hint": "Vertical asymptotes occur where \\(f(x)=0\\) (the denominator vanishes); the horizontal asymptote is found from the behaviour of \\(\\frac1{f(x)}\\) as \\(x\\to\\pm\\infty\\).",
+          "steps": [
+            {
+              "explain": "Factorise \\(f(x)\\) to find where it equals zero — these give the vertical asymptotes of \\(y=1/f(x)\\).",
+              "work": "\\(f(x) = (x-2)(x-7) = 0 \\Rightarrow x=2, x=7\\)"
+            },
+            {
+              "explain": "As \\(x\\to\\pm\\infty\\), \\(f(x)\\to\\infty\\), so \\(\\dfrac{1}{f(x)}\\to 0\\) — this gives the horizontal asymptote.",
+              "work": "As \\(x\\to\\pm\\infty\\), \\(y\\to 0\\)"
+            },
+            {
+              "explain": "Combine both results.",
+              "work": "Asymptotes: \\(x=2, x=7, y=0\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2012 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    }
+  ]
+}

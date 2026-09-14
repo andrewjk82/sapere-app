@@ -1,0 +1,35 @@
+<svg viewBox="0 0 200 240" width="250" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circle -->
+  <circle cx="120" cy="120" r="60" fill="none" stroke="black" stroke-width="1.5"/>
+  
+  <!-- Center O -->
+  <circle cx="120" cy="120" r="2" fill="black"/>
+  <text x="126" y="124" font-size="14" font-family="serif" font-style="italic">O</text>
+  
+  <!-- Tangents from T(20, 120) -->
+  <!-- A=(84, 72), B=(84, 168) -->
+  <line x1="20" y1="120" x2="100" y2="60" stroke="black" stroke-width="1.5"/>
+  <line x1="20" y1="120" x2="100" y2="180" stroke="black" stroke-width="1.5"/>
+  
+  <!-- Points T, A, B -->
+  <circle cx="20" cy="120" r="2" fill="black"/>
+  <text x="6" y="124" font-size="14" font-family="serif" font-style="italic">T</text>
+  
+  <circle cx="84" cy="72" r="2" fill="black"/>
+  <text x="70" y="65" font-size="14" font-family="serif" font-style="italic">A</text>
+  
+  <circle cx="84" cy="168" r="2" fill="black"/>
+  <text x="70" y="182" font-size="14" font-family="serif" font-style="italic">B</text>
+  
+  <!-- Angle theta -->
+  <path d="M 32 111 A 15 15 0 0 1 32 129" fill="none" stroke="black" stroke-width="1"/>
+  <text x="38" y="124" font-size="14" font-family="serif" font-style="italic">θ</text>
+  
+  <!-- Point P(172, 90) -->
+  <circle cx="172" cy="90" r="2" fill="black"/>
+  <text x="180" y="94" font-size="14" font-family="serif" font-style="italic">P</text>
+  
+  <!-- Chords PA, PB -->
+  <line x1="172" y1="90" x2="84" y2="72" stroke="black" stroke-width="1.5"/>
+  <line x1="172" y1="90" x2="84" y2="168" stroke="black" stroke-width="1.5"/>
+</svg>

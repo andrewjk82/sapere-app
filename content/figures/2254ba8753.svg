@@ -1,0 +1,17 @@
+
+<svg viewBox="-10 -10 260 210" width="150" height="130" style="display:block;margin:0 auto;" xmlns="http://www.w3.org/2000/svg">
+  <!-- Right Triangle -->
+  <path d="M 50 150 L 150 150 L 150 20 Z" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linejoin="round"/>
+  
+  <!-- Right Angle Square -->
+  <rect x="135" y="135" width="15" height="15" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+  
+  <!-- Angle Arc -->
+  <path d="M 75 150 A 25 25 0 0 0 69 126" fill="none" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="82" y="143" font-family="serif" font-size="14" font-style="italic" fill="#2563eb">θ</text>
+  
+  <!-- Labels -->
+  <text x="100" y="170" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">2 (Adj)</text>
+  <text x="80" y="75" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">7 (Hyp)</text>
+  <text x="158" y="90" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626" >3√5 (Opp)</text>
+</svg>

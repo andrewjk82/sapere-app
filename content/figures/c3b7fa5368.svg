@@ -1,0 +1,41 @@
+<svg viewBox="0 0 220 220" width="220" height="220" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+  <!-- Face 1 (Right cut) fill only -->
+  <polygon points="110,50 180,50 180,170 110,170" fill="#cbd5e1" stroke="none" />
+  
+  <!-- Face 2 (Front-right cut) fill only -->
+  <polygon points="110,50 159.5,67 159.5,187 110,170" fill="#94a3b8" stroke="none" />
+
+  <!-- Face 1 strokes (excluding center) -->
+  <line x1="180" y1="50" x2="180" y2="170" stroke="#475569" stroke-width="1.8" stroke-linejoin="round" />
+  <!-- Bottom edge: dashed part (behind Face 2) and solid part (against white background) -->
+  <line x1="159.5" y1="170" x2="110" y2="170" stroke="#475569" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="4 4" />
+  <line x1="180" y1="170" x2="159.5" y2="170" stroke="#475569" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- Face 2 strokes (excluding center) -->
+  <line x1="159.5" y1="67" x2="159.5" y2="187" stroke="#475569" stroke-width="1.8" stroke-linejoin="round" />
+  <!-- Bottom edge (dashed) -->
+  <line x1="159.5" y1="187" x2="110" y2="170" stroke="#475569" stroke-width="1.8" stroke-linejoin="round" stroke-dasharray="4 4" />
+
+  <!-- Remaining top face (fill and stroke) -->
+  <path d="M 110 50 L 159.5 67 A 70 24 0 1 1 180 50 Z" fill="#e2e8f0" stroke="#475569" stroke-width="1.8" stroke-linejoin="round" />
+
+  <!-- Left profile line -->
+  <line x1="40" y1="50" x2="40" y2="170" stroke="#475569" stroke-width="1.8" />
+  
+  <!-- Remaining bottom front arc -->
+  <path d="M 40 170 A 70 24 0 0 0 159.5 187" fill="none" stroke="#475569" stroke-width="1.8" />
+  
+  <!-- Center vertical dotted line -->
+  <line x1="110" y1="50" x2="110" y2="170" stroke="#475569" stroke-width="1.8" stroke-dasharray="4 4" />
+
+  <!-- 20 degree label -->
+  <path d="M 130 50 A 20 6.8 0 0 1 124 54.8" fill="none" stroke="#7f1d1d" stroke-width="1.4" />
+  <text x="145" y="60" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#7f1d1d" stroke="#f8fafc" stroke-width="3" paint-order="stroke">20°</text>
+  
+  <!-- h = 9 cm label -->
+  <text x="30" y="110" text-anchor="start" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#1e293b" stroke="#f8fafc" stroke-width="3" paint-order="stroke">h = 9 cm</text>
+  
+  <!-- r = 3 cm label -->
+  <line x1="110" y1="50" x2="40" y2="50" stroke="#1e293b" stroke-width="1.5" stroke-dasharray="2 2" />
+  <text x="75" y="42" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#1e293b" stroke="#f8fafc" stroke-width="3" paint-order="stroke">r = 3 cm</text>
+</svg>

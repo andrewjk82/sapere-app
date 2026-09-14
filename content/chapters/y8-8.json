@@ -1,0 +1,1978 @@
+{
+  "chapterId": "y8-8",
+  "title": "Chapter 8: Pythagoras' theorem",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "y8-8a",
+      "code": "8A",
+      "title": "Applying Pythagoras' theorem",
+      "questions": [
+        {
+          "id": "hghs-y7-t4-2021-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For the rectangular prism shown, with base diagonal 5 (from face dimensions 3 and 4) and vertical edge 12, what is the length of the space diagonal \\(AB\\)?",
+          "figure": {
+            "svg": "fig:82d09d28d4"
+          },
+          "options": [
+            "\\(\\sqrt{12^2+5^2}\\)",
+            "\\(\\sqrt{12^2-5^2}\\)",
+            "\\(\\sqrt{12^2+3^2}\\)",
+            "\\(\\sqrt{12^2+4^2}\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "The space diagonal AB is the hypotenuse of a right triangle formed by the vertical edge (12) and the diagonal of the base rectangle (5, found from the 3 and 4 base edges).",
+              "work": "\\text{base diagonal} = \\sqrt{3^2+4^2} = \\sqrt{25} = 5"
+            },
+            {
+              "explain": "Apply Pythagoras' theorem to the right triangle with legs 12 and 5 to find the hypotenuse AB.",
+              "work": "AB^2 = 12^2 + 5^2"
+            },
+            {
+              "explain": "Pitfall: using the original base edges 3 or 4 directly with 12 (options C, D) skips the step of first finding the base diagonal — the vertical leg must be paired with the base *diagonal*, not a single base edge.",
+              "work": "AB = \\sqrt{12^2+5^2}"
+            }
+          ],
+          "timeLimit": 150,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q23b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the same diagram, \\(D\\) is such that triangle ADC is right-angled at A, with \\(AD = x\\text{ cm}\\), \\(AC = \\sqrt{125}\\text{ cm}\\) and \\(DC = y\\text{ cm}\\). Using \\(x = 5\\) from part (a), what is the value of \\(y\\)?",
+          "figure": {
+            "svg": "fig:046ce326ab"
+          },
+          "options": [
+            "\\(\\sqrt{150}\\text{ cm}\\)",
+            "\\(150\\text{ cm}\\)",
+            "\\(\\sqrt{100}\\text{ cm}\\)",
+            "\\(\\sqrt{175}\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply Pythagoras' theorem in triangle ADC using the value of x found in part (a).",
+          "solution": "x^2 + (\\sqrt{125})^2 = y^2 \\implies 25 + 125 = y^2 \\implies y^2 = 150 \\implies y = \\sqrt{150}\\text{ cm } (y>0)",
+          "steps": [
+            {
+              "explain": "In right triangle ADC (right angle at A), identify the hypotenuse (DC = y) and the two legs (AD = x = 5, AC = √125).",
+              "work": "\\text{hyp} = DC = y, \\quad \\text{legs} = x = 5, \\; \\sqrt{125}"
+            },
+            {
+              "explain": "Apply Pythagoras' theorem: the sum of the squares of the legs equals the square of the hypotenuse.",
+              "work": "x^2 + (\\sqrt{125})^2 = y^2"
+            },
+            {
+              "explain": "Substitute \\(x=5\\) and simplify. Pitfall: forgetting that \\((\\sqrt{125})^2\\) simplifies back to exactly 125, not needing further square-rooting at this stage.",
+              "work": "5^2 + 125 = y^2 \\implies 25 + 125 = 150 \\implies y^2 = 150"
+            },
+            {
+              "explain": "Take the square root of both sides. Since \\(y\\) is a length, reject the negative root. 150 has no square factor other than 1 and 25 (giving \\(5\\sqrt{6}\\)) — but the question asks to show \\(y=\\sqrt{150}\\), so leave it unsimplified as required.",
+              "work": "y = \\sqrt{150}\\text{ cm} ; (y>0)"
+            }
+          ],
+          "timeLimit": 180,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2024-pyth-2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Is 5, 7 and 12 a Pythagorean triad?",
+          "options": [
+            "\\(\\text{Yes} \\text{, because } 5+7=12\\)",
+            "\\(\\text{Yes} \\text{, because } 5^2+7^2=12^2\\)",
+            "\\(\\text{No} \\text{, because } 5^2+7^2 \\neq 12^2\\)",
+            "\\(\\text{No} \\text{, because } 5^2-7^2 \\neq 12^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Test the converse of Pythagoras' theorem: does the sum of the squares of the two shorter numbers equal the square of the largest?",
+          "solution": "Not a Pythagorean triad: 5^2+7^2=74 \\neq 12^2=144.",
+          "steps": [
+            {
+              "explain": "For three numbers to form a Pythagorean triad, the square of the LARGEST number must equal the sum of the squares of the other two.",
+              "work": "\\text{Test: does } 5^2+7^2 = 12^2 \\text{?}"
+            },
+            {
+              "explain": "Calculate both sides separately.",
+              "work": "5^2+7^2 = 25+49 = 74, \\qquad 12^2 = 144"
+            },
+            {
+              "explain": "Compare the two results.",
+              "work": "74 \\neq 144"
+            },
+            {
+              "explain": "Pitfall: confusing the SUM of the two shorter sides (\\(5+7=12\\), option A) with the Pythagorean CONDITION (\\(5^2+7^2=12^2\\)) — these are completely different tests; getting the arithmetic wrong and believing \\(5^2+7^2=12^2\\) gives option B; using subtraction instead of addition gives option D. Bonus insight: \\(5+7=12\\) exactly means these three lengths are degenerate — they would lie in a straight line and could not even form a valid triangle, let alone a right-angled one.",
+              "work": "\\text{Conclusion: NOT a Pythagorean triad}"
+            }
+          ],
+          "timeLimit": 150,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2024-secb-e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using \\(h=1.4\\text{ m}\\), find the EXACT length of the longest tool that can fit inside Jim's closed toolbox (base \\(1.8\\text{ m}\\times1.8\\text{ m}\\), height \\(1.4\\text{ m}\\)).",
+          "figure": {
+            "svg": "fig:63e4bee015"
+          },
+          "options": [
+            "\\(\\dfrac{\\sqrt{211}}{5}\\text{ m}\\)",
+            "\\(\\dfrac{9\\sqrt{2}}{5}\\text{ m}\\)",
+            "\\(5\\text{ m}\\)",
+            "\\(\\dfrac{\\sqrt{130}}{5}\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "The longest straight line that fits inside a rectangular box is the SPACE DIAGONAL, running from one corner to the opposite corner through the interior. First find the diagonal of the base (a 2D right triangle with both legs 1.8 m).",
+              "work": "\\text{base diagonal}^2 = 1.8^2 + 1.8^2 = 6.48"
+            },
+            {
+              "explain": "Apply Pythagoras' theorem again, this time using the base diagonal and the height as the two legs of a second right triangle, to find the space diagonal.",
+              "work": "\\text{space diagonal}^2 = 6.48 + 1.4^2 = 6.48 + 1.96 = 8.44"
+            },
+            {
+              "explain": "Take the square root and simplify to the exact (surd) form — do not round.",
+              "work": "\\sqrt{8.44} = \\sqrt{\\dfrac{844}{100}} = \\dfrac{\\sqrt{844}}{10} = \\dfrac{2\\sqrt{211}}{10} = \\dfrac{\\sqrt{211}}{5}"
+            },
+            {
+              "explain": "Pitfall: forgetting the height and reporting only the 2D base diagonal gives \\(\\sqrt{6.48}=\\dfrac{9\\sqrt{2}}{5}\\text{ m}\\) (option B); simply adding all three edge lengths \\(1.8+1.8+1.4\\) instead of using Pythagoras twice gives exactly \\(5\\text{ m}\\) (option C) — length is NEVER found by adding perpendicular directions.",
+              "work": "\\text{Answer: } \\dfrac{\\sqrt{211}}{5}\\text{ m}"
+            }
+          ],
+          "timeLimit": 240,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
+          }
+        },
+        {
+          "id": "y8-ep1-q1_pythagoras",
+          "type": "mc",
+          "stem": "Find the value of \\(d\\) below.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"200\" height=\"200\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,150 150,150 50,50\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  \n  <!-- Right angle square -->\n  <rect x=\"50\" y=\"135\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"black\" stroke-width=\"1.5\"/>\n  \n  <text x=\"40\" y=\"105\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">24m</text>\n  <text x=\"100\" y=\"170\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\">7m</text>\n  <text x=\"110\" y=\"95\" font-family=\"sans-serif\" font-size=\"14\">d m</text>\n</svg></div>",
+          "options": [
+            "\\(25\\)",
+            "\\(17\\)",
+            "\\(31\\)",
+            "\\(625\\)"
+          ],
+          "answer": 0,
+          "hint": "Use Pythagoras' Theorem: \\(a^2 + b^2 = c^2\\)",
+          "steps": [
+            {
+              "explain": "Identify the hypotenuse, which is the longest side opposite the right angle. In this case, the hypotenuse is \\(d\\)."
+            },
+            {
+              "explain": "Apply Pythagoras' Theorem: \\(c^2 = a^2 + b^2\\).",
+              "work": "\\(d^2 = 24^2 + 7^2\\)"
+            },
+            {
+              "explain": "Calculate the squares of the shorter sides.",
+              "work": "\\(d^2 = 576 + 49\\)"
+            },
+            {
+              "explain": "Add them together.",
+              "work": "\\(d^2 = 625\\)"
+            },
+            {
+              "explain": "Take the square root to find \\(d\\). Since \\(d\\) is a length, it must be positive.",
+              "work": "\\(d = \\sqrt{625} = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "mrcroker-q3a",
+          "type": "review",
+          "stem": "Prove that a triangle with sides of length \\(48\\text{ cm}\\), \\(55\\text{ cm}\\) and \\(73\\text{ cm}\\) is right-angled.",
+          "answer": "",
+          "hint": "Use the converse of Pythagoras' theorem: check whether the sum of the squares of the two shorter sides equals the square of the longest side.",
+          "solution": "Since \\(48^2+55^2=73^2\\) (both equal \\(5329\\)), the converse of Pythagoras' theorem confirms the triangle is right-angled, with the right angle opposite the longest side (\\(73\\text{ cm}\\)).",
+          "steps": [
+            {
+              "explain": "Identify the longest side (the potential hypotenuse) as \\(73\\text{ cm}\\), and square each side.",
+              "work": "\\(48^2=2304, \\quad 55^2=3025, \\quad 73^2=5329\\)",
+              "figure": {
+                "svg": "fig:da59afd799"
+              }
+            },
+            {
+              "explain": "Add the squares of the two shorter sides.",
+              "work": "\\(48^2+55^2=2304+3025=5329\\)",
+              "figure": {
+                "svg": "fig:387f7bf08d"
+              }
+            },
+            {
+              "explain": "Compare this sum to the square of the longest side.",
+              "work": "\\(5329=73^2\\) — the two are equal",
+              "figure": {
+                "svg": "fig:8a119a763d"
+              }
+            },
+            {
+              "explain": "By the converse of Pythagoras' theorem, since \\(48^2+55^2=73^2\\), the triangle must be right-angled (with the right angle opposite the \\(73\\text{ cm}\\) side).",
+              "work": "\\(\\therefore\\) the triangle is right-angled",
+              "figure": {
+                "svg": "fig:a9ac305b69"
+              }
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Mr Croker Trig Revision Exam Questions",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "mrcroker-q5",
+          "type": "review",
+          "stem": "The isosceles triangle \\(OLR\\) has two equal sides \\(OL=OR=a\\) and base \\(LR=b\\). The perpendicular height from \\(O\\) to \\(LR\\) meets \\(LR\\) at its midpoint \\(M\\), with \\(OM=h\\). Show that \\(h=\\dfrac12\\sqrt{4a^2-b^2}\\).",
+          "answer": "",
+          "hint": "Since \\(OM\\) is the perpendicular height to the base of an isosceles triangle, it bisects the base, so \\(LM=\\dfrac{b}{2}\\). Apply Pythagoras' theorem in right triangle \\(OML\\).",
+          "solution": "In right triangle \\(OML\\), \\(a^2=h^2+\\left(\\dfrac b2\\right)^2\\), which rearranges to \\(h=\\dfrac12\\sqrt{4a^2-b^2}\\).",
+          "steps": [
+            {
+              "explain": "Since \\(\\triangle OLR\\) is isosceles with \\(OL=OR\\), the perpendicular from the apex \\(O\\) to the base \\(LR\\) bisects the base. So \\(LM=MR=\\dfrac b2\\).",
+              "work": "\\(LM=\\dfrac{b}{2}\\)",
+              "figure": {
+                "svg": "fig:999d176f25"
+              }
+            },
+            {
+              "explain": "Apply Pythagoras' theorem in the right triangle \\(OML\\) (right angle at \\(M\\)), where \\(OL=a\\) is the hypotenuse.",
+              "work": "\\(a^2=h^2+\\left(\\dfrac b2\\right)^2\\)",
+              "figure": {
+                "svg": "fig:4cd0b49049"
+              }
+            },
+            {
+              "explain": "Rearrange to isolate \\(h^2\\).",
+              "work": "\\(h^2=a^2-\\dfrac{b^2}{4}=\\dfrac{4a^2-b^2}{4}\\)",
+              "figure": {
+                "svg": "fig:4cd0b49049"
+              }
+            },
+            {
+              "explain": "Take the square root of both sides.",
+              "work": "\\(h=\\sqrt{\\dfrac{4a^2-b^2}{4}}=\\dfrac12\\sqrt{4a^2-b^2}\\), as required",
+              "figure": {
+                "svg": "fig:0d6cee89f0"
+              }
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Mr Croker Trig Revision Exam Questions",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "mrcroker-q6",
+          "type": "mc",
+          "stem": "A square of side length \\(x\\) is drawn in a quadrant (quarter circle) of a circle with radius \\(4\\text{ cm}\\), with one corner of the square at the centre \\(O\\) and the opposite corner touching the arc. Find the value of \\(x\\).",
+          "options": [
+            "\\(2\\sqrt2\\text{ cm}\\)",
+            "\\(8\\text{ cm}\\)",
+            "\\(4\\text{ cm}\\)",
+            "\\(4\\sqrt2\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "The square's diagonal (from the centre \\(O\\) to the opposite corner) equals the circle's radius. Use Pythagoras' theorem on the square's diagonal.",
+          "steps": [
+            {
+              "explain": "The diagonal of the square runs from the centre \\(O\\) to the far corner on the arc, so it equals the radius, \\(4\\text{ cm}\\). Apply Pythagoras' theorem to the square, whose two sides (each length \\(x\\)) are the legs of a right triangle with this diagonal as the hypotenuse.",
+              "work": "\\(4^2=x^2+x^2\\)",
+              "figure": {
+                "svg": "fig:27ca2325f5"
+              }
+            },
+            {
+              "explain": "Combine like terms.",
+              "work": "\\(16=2x^2\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(2\\), then take the square root.",
+              "work": "\\(x^2=8 \\Rightarrow x=\\sqrt8=2\\sqrt2\\text{ cm}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Mr Croker Trig Revision Exam Questions",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "mrcroker-q7i",
+          "type": "mc",
+          "stem": "In the rectangular prism shown, \\(FG=6\\text{ cm}\\) and \\(HG=8\\text{ cm}\\). Find the length of \\(FH\\).",
+          "figure": {
+            "svg": "fig:d50af71c83"
+          },
+          "options": [
+            "\\(100\\text{ cm}\\)",
+            "\\(14\\text{ cm}\\)",
+            "\\(10\\text{ cm}\\)",
+            "\\(2\\text{ cm}\\)"
+          ],
+          "answer": 2,
+          "hint": "\\(FH\\) is the diagonal of rectangle \\(EFGH\\) — use Pythagoras' theorem with legs \\(FG\\) and \\(HG\\).",
+          "steps": [
+            {
+              "explain": "\\(FH\\) is the diagonal of the rectangular base, with legs \\(FG=6\\) and \\(HG=8\\). Apply Pythagoras' theorem.",
+              "work": "\\(FH=\\sqrt{FG^2+HG^2}=\\sqrt{6^2+8^2}\\)",
+              "figure": {
+                "svg": "fig:2575c60616"
+              }
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(FH=\\sqrt{36+64}=\\sqrt{100}=10\\text{ cm}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Mr Croker Trig Revision Exam Questions",
+            "grade": "8"
+          }
+        },
+        {
+          "id": "mrcroker-q9",
+          "type": "mc",
+          "stem": "In the right triangle shown, the sides are \\(10\\), \\(x^2-1\\) and hypotenuse \\(1+x^2\\). Find the value of \\(x\\) (given \\(x\\) represents a length, so \\(x>0\\)). Hint: there may be some algebraic expansion involved.",
+          "figure": {
+            "svg": "fig:39042c1647"
+          },
+          "options": [
+            "\\(x=10\\)",
+            "\\(x=-5\\)",
+            "\\(x=25\\)",
+            "\\(x=5\\)"
+          ],
+          "answer": 3,
+          "hint": "Apply Pythagoras' theorem, then expand both squared brackets — most terms will cancel.",
+          "steps": [
+            {
+              "explain": "Apply Pythagoras' theorem: the sum of the squares of the two legs equals the square of the hypotenuse.",
+              "work": "\\(10^2+(x^2-1)^2=(1+x^2)^2\\)"
+            },
+            {
+              "explain": "Expand both squared brackets.",
+              "work": "\\(100+x^4-2x^2+1 = x^4+2x^2+1\\)"
+            },
+            {
+              "explain": "Cancel \\(x^4\\) and \\(1\\) from both sides, and collect the remaining terms.",
+              "work": "\\(100-2x^2 = 2x^2 \\Rightarrow 100=4x^2\\)"
+            },
+            {
+              "explain": "Solve for \\(x^2\\), then take the square root.",
+              "work": "\\(x^2=25 \\Rightarrow x=\\pm5\\)"
+            },
+            {
+              "explain": "Since \\(x\\) represents a length, reject the negative solution.",
+              "work": "\\(x=5\\) (rejecting \\(x=-5\\))"
+            }
+          ],
+          "meta": {
+            "source": "Mr Croker Trig Revision Exam Questions",
+            "grade": "8"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y8-8b",
+      "code": "8B",
+      "title": "Finding a shorter side",
+      "questions": [
+        {
+          "id": "hghs-y7-t4-2021-q19",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the right-angled triangle shown, with hypotenuse 0.5 and one leg 0.4, the value of \\(x\\) (the other leg) is given by:",
+          "figure": {
+            "svg": "fig:9e15f3d58c"
+          },
+          "options": [
+            "\\(\\sqrt{0.5^2 + 0.4^2}\\)",
+            "\\(\\sqrt{0.4^2 - 0.5^2}\\)",
+            "\\(\\sqrt{0.5^2 - 0.4^2}\\)",
+            "\\(\\sqrt{(0.5-0.4)^2}\\)"
+          ],
+          "answer": 2,
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Identify the hypotenuse (0.5, opposite the right angle) and the two legs (0.4 and x). Pythagoras' theorem states the square of the hypotenuse equals the sum of the squares of the legs.",
+              "work": "0.5^2 = 0.4^2 + x^2",
+              "figure": {
+                "svg": "fig:3f0da302bd"
+              }
+            },
+            {
+              "explain": "Rearrange to make \\(x^2\\) the subject, since we need the shorter side, not the hypotenuse.",
+              "work": "x^2 = 0.5^2 - 0.4^2"
+            },
+            {
+              "explain": "Pitfall: writing \\(x^2 = 0.5^2 + 0.4^2\\) (option A) applies the formula for finding the hypotenuse instead of a shorter side — when solving for a leg, it is always hypotenuse² − other leg².",
+              "work": "x = \\sqrt{0.5^2 - 0.4^2}"
+            }
+          ],
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q23a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the diagram, triangle ABC is right-angled at B, with \\(AB = x\\text{ cm}\\), \\(BC = 2x\\text{ cm}\\) and \\(AC = \\sqrt{125}\\text{ cm}\\). What is the value of \\(x\\)?",
+          "figure": {
+            "svg": "fig:9eb2232337"
+          },
+          "options": [
+            "\\(5\\text{ cm}\\)",
+            "\\(25\\text{ cm}\\)",
+            "\\(\\sqrt{125}\\text{ cm}\\)",
+            "\\(10\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply Pythagoras' theorem in triangle ABC, then justify why the negative root is rejected.",
+          "solution": "x^2 + (2x)^2 = (\\sqrt{125})^2 \\implies 5x^2 = 125 \\implies x^2 = 25 \\implies x = 5 \\text{ cm } (x>0)",
+          "steps": [
+            {
+              "explain": "In right triangle ABC (right angle at B), identify the hypotenuse (AC = √125) and the two legs (AB = x, BC = 2x).",
+              "work": "\\text{hyp} = AC = \\sqrt{125}, \\quad \\text{legs} = x, 2x"
+            },
+            {
+              "explain": "Apply Pythagoras' theorem: the sum of the squares of the legs equals the square of the hypotenuse.",
+              "work": "x^2 + (2x)^2 = (\\sqrt{125})^2"
+            },
+            {
+              "explain": "Expand and simplify.",
+              "work": "x^2 + 4x^2 = 125 \\implies 5x^2 = 125 \\implies x^2 = 25"
+            },
+            {
+              "explain": "Take the square root of both sides. Since \\(x\\) is a length, reject the negative root. A common mistake is forgetting to square-root \\(x^2=25\\) (giving 25 instead of 5), or answering with the hypotenuse \\(\\sqrt{125}\\) itself.",
+              "work": "\\(x = \\pm 5 \\implies x = 5\\text{ cm} ; (x>0)\\)"
+            }
+          ],
+          "timeLimit": 180,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2024-pyth-1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For a right-angled triangle with hypotenuse \\(11\\text{ cm}\\) and one leg \\(8\\text{ cm}\\), find the length of the other leg \\(b\\), correct to 2 decimal places.",
+          "options": [
+            "\\(7.55\\text{ cm}\\)",
+            "\\(13.60\\text{ cm}\\)",
+            "\\(57.00\\text{ cm}\\)",
+            "\\(3.00\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Draw the right-angled triangle from the description. Identify the hypotenuse (11, opposite the right angle) and the known leg (8). Apply Pythagoras' theorem to find the unknown leg \\(b\\).",
+              "work": "b^2 = 11^2 - 8^2",
+              "figure": {
+                "svg": "fig:7e8c4964ba"
+              }
+            },
+            {
+              "explain": "Simplify.",
+              "work": "b^2 = 121 - 64 = 57"
+            },
+            {
+              "explain": "Take the square root. Pitfall: adding the squares instead of subtracting (treating \\(b\\) as if it were the hypotenuse) gives \\(\\sqrt{185}=13.60\\) (option B); forgetting the final square root leaves \\(57.00\\) (option C).",
+              "work": "\\text{Answer: } b = \\sqrt{57} \\approx 7.55\\text{ cm}",
+              "figure": {
+                "svg": "fig:ac8c81d121"
+              }
+            }
+          ],
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2024-pyth-1b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For a right-angled triangle with hypotenuse \\(12\\text{ mm}\\) and legs \\(2x\\text{ mm}\\) and \\(5x\\text{ mm}\\), find the value of \\(x\\), correct to 2 decimal places.",
+          "options": [
+            "\\(2.23\\text{ mm}\\)",
+            "\\(4.46\\text{ mm}\\)",
+            "\\(1.71\\text{ mm}\\)",
+            "\\(4.97\\text{ mm}\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Draw the right-angled triangle from the description and apply Pythagoras' theorem with both legs in terms of \\(x\\).",
+              "work": "(2x)^2 + (5x)^2 = 12^2",
+              "figure": {
+                "svg": "fig:80568a13dd"
+              }
+            },
+            {
+              "explain": "Expand and collect like terms.",
+              "work": "4x^2 + 25x^2 = 144 \\implies 29x^2 = 144"
+            },
+            {
+              "explain": "Divide by 29 and take the square root. Pitfall: solving correctly for \\(x\\) but then reporting \\(2x\\) instead (a common \"answered for the wrong pronumeral\" slip) gives \\(4.46\\) (option B).",
+              "work": "x = \\sqrt{\\dfrac{144}{29}} \\approx 2.23\\text{ mm}",
+              "figure": {
+                "svg": "fig:7e1146de0f"
+              }
+            }
+          ],
+          "timeLimit": 180,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
+          }
+        },
+        {
+          "id": "y8-ep1-q2_pythagoras",
+          "type": "mc",
+          "stem": "A \\(5.5\\text{m}\\) long ladder is leaning against a vertical wall. The distance along level ground from the foot of the ladder to the base of the wall is \\(1.4\\text{m}\\). Find how far the ladder reaches up the wall to 1 decimal place.",
+          "options": [
+            "\\(5.3\\text{m}\\)",
+            "\\(5.7\\text{m}\\)",
+            "\\(4.1\\text{m}\\)",
+            "\\(28.3\\text{m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Draw a diagram. The ladder is the hypotenuse of a right-angled triangle.",
+          "steps": [
+            {
+              "explain": "First, we can draw a diagram representing the situation. Let \\(w\\) be the height the ladder reaches up the wall.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"200\" height=\"200\" viewBox=\"0 0 200 200\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Wall -->\n  <line x1=\"50\" y1=\"30\" x2=\"50\" y2=\"160\" stroke=\"black\" stroke-width=\"3\"/>\n  <!-- Ground -->\n  <line x1=\"30\" y1=\"160\" x2=\"160\" y2=\"160\" stroke=\"black\" stroke-width=\"3\"/>\n  \n  <!-- Right angle square -->\n  <rect x=\"50\" y=\"145\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"black\" stroke-width=\"1.5\"/>\n  \n  <!-- Ladder -->\n  <line x1=\"50\" y1=\"50\" x2=\"130\" y2=\"160\" stroke=\"blue\" stroke-width=\"4\"/>\n  \n  <text x=\"35\" y=\"105\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"end\">w</text>\n  <text x=\"90\" y=\"180\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\">1.4m</text>\n  <text x=\"105\" y=\"100\" font-family=\"sans-serif\" font-size=\"14\" fill=\"blue\">5.5m ladder</text>\n</svg></div>"
+            },
+            {
+              "explain": "We can use Pythagoras' Theorem to solve for the unknown shorter side \\(w\\).",
+              "work": "\\(w^2 + 1.4^2 = 5.5^2\\)"
+            },
+            {
+              "explain": "Calculate the squares of the known sides.",
+              "work": "\\(w^2 + 1.96 = 30.25\\)"
+            },
+            {
+              "explain": "Subtract \\(1.96\\) from both sides.",
+              "work": "\\(w^2 = 30.25 - 1.96 = 28.29\\)"
+            },
+            {
+              "explain": "Take the square root and round to 1 decimal place.",
+              "work": "\\(w = \\sqrt{28.29} \\approx 5.3188 \\approx 5.3\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-8d",
+      "code": "8D",
+      "title": "Review of Pythagoras' theorem",
+      "questions": [
+        {
+          "id": "y8-8d-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "<svg viewBox=\"0 0 330 184.16666666666666\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"290\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"290\" y1=\"40\" x2=\"290\" y2=\"144.16666666666666\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"290\" y1=\"144.16666666666666\" x2=\"40\" y2=\"144.16666666666666\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"40\" y1=\"144.16666666666666\" x2=\"40\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"40\" y1=\"40\" x2=\"290\" y2=\"144.16666666666666\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <path d=\"M 52,144.16666666666666 L 52,132.16666666666666 L 40,132.16666666666666\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-linejoin=\"miter\" />\n  <path d=\"M 278,40 L 278,52 L 290,52\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-linejoin=\"miter\" />\n  <text x=\"165\" y=\"159.16666666666666\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n  <text x=\"275\" y=\"92.08333333333333\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">5</text>\n  <text x=\"159.23076923076923\" y=\"105.92948717948718\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>\n\nFind the length of the diagonal \\(x\\) in the rectangle shown below.",
+          "figure": {
+            "geometry": {
+              "width": 250,
+              "points": {
+                "A": [
+                  0,
+                  5
+                ],
+                "B": [
+                  12,
+                  5
+                ],
+                "C": [
+                  12,
+                  0
+                ],
+                "D": [
+                  0,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "A"
+                },
+                {
+                  "from": "A",
+                  "to": "C"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "D",
+                  "right": true
+                },
+                {
+                  "at": "B",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "D",
+                    "C"
+                  ],
+                  "text": "12"
+                },
+                {
+                  "between": [
+                    "B",
+                    "C"
+                  ],
+                  "text": "5"
+                },
+                {
+                  "between": [
+                    "A",
+                    "C"
+                  ],
+                  "text": "x"
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(15\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras' theorem on the right-angled triangle formed by the diagonal.",
+          "solution": "Using Pythagoras' theorem: \\(x^2 = 12^2 + 5^2 = 144 + 25 = 169\\). So \\(x = \\sqrt{169} = 13\\).",
+          "steps": [
+            {
+              "explain": "Step 1: Identify the formula.",
+              "work": "A diagonal splits a rectangle into two right-angled triangles. We apply Pythagoras' theorem:<br>\\( c^2 = a^2 + b^2 \\)"
+            },
+            {
+              "explain": "Step 2: Substitute the known legs.",
+              "work": "Substitute the known lengths $a = 12$ and $b = 5$:<br>\\( x^2 = 12^2 + 5^2 \\)"
+            },
+            {
+              "explain": "Step 3: Evaluate the squares and add.",
+              "work": "\\( x^2 = 144 + 25 = 169 \\)"
+            },
+            {
+              "explain": "Step 4: Solve for $x$.",
+              "work": "\\( x = \\sqrt{169} = 13 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "<svg viewBox=\"0 0 208 320\" width=\"100%\" height=\"auto\" style=\"max-width:208px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"280\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"40\" y1=\"280\" x2=\"168\" y2=\"280\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"168\" y1=\"280\" x2=\"40\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <path d=\"M 40,268 L 52,268 L 52,280\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-linejoin=\"miter\" />\n  <text x=\"104\" y=\"295\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">16</text>\n  <text x=\"25\" y=\"160\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">30</text>\n  <text x=\"119\" y=\"145\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>\n\nUse Pythagoras' theorem to find the missing side length \\(x\\) in the triangle below.",
+          "figure": {
+            "geometry": {
+              "width": 200,
+              "points": {
+                "A": [
+                  0,
+                  30
+                ],
+                "B": [
+                  0,
+                  0
+                ],
+                "C": [
+                  16,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "B",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "B",
+                    "C"
+                  ],
+                  "text": "16"
+                },
+                {
+                  "between": [
+                    "A",
+                    "B"
+                  ],
+                  "text": "30"
+                },
+                {
+                  "between": [
+                    "A",
+                    "C"
+                  ],
+                  "text": "x"
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(36\\)",
+            "\\(33\\)",
+            "\\(34\\)",
+            "\\(35\\)"
+          ],
+          "answer": 2,
+          "hint": "x is the hypotenuse.",
+          "solution": "\\(x^2 = 16^2 + 30^2 = 256 + 900 = 1156\\). \\(x = \\sqrt{1156} = 34\\).",
+          "steps": [
+            {
+              "explain": "Step 1: State Pythagoras' theorem.",
+              "work": "For a right-angled triangle, the square of the hypotenuse is the sum of the squares of the legs:<br>\\( c^2 = a^2 + b^2 \\)"
+            },
+            {
+              "explain": "Step 2: Substitute the known legs.",
+              "work": "Substitute $a = 16$ and $b = 30$:<br>\\( x^2 = 16^2 + 30^2 \\)"
+            },
+            {
+              "explain": "Step 3: Evaluate the squares.",
+              "work": "\\( x^2 = 256 + 900 = 1156 \\)"
+            },
+            {
+              "explain": "Step 4: Solve for the hypotenuse $x$.",
+              "work": "\\( x = \\sqrt{1156} = 34 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "<svg viewBox=\"0 0 184 320\" width=\"100%\" height=\"auto\" style=\"max-width:184px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"280\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"40\" y1=\"280\" x2=\"144\" y2=\"280\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"144\" y1=\"280\" x2=\"40\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <path d=\"M 40,268 L 52,268 L 52,280\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-linejoin=\"miter\" />\n  <text x=\"92\" y=\"295\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">13</text>\n  <text x=\"25\" y=\"160\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">84</text>\n  <text x=\"107\" y=\"145\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>\n\nUse Pythagoras' theorem to find the missing side length \\(x\\) in the triangle below.",
+          "figure": {
+            "geometry": {
+              "width": 150,
+              "points": {
+                "A": [
+                  0,
+                  30
+                ],
+                "B": [
+                  0,
+                  0
+                ],
+                "C": [
+                  13,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "B",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "B",
+                    "C"
+                  ],
+                  "text": "13"
+                },
+                {
+                  "between": [
+                    "A",
+                    "B"
+                  ],
+                  "text": "84"
+                },
+                {
+                  "between": [
+                    "A",
+                    "C"
+                  ],
+                  "text": "x"
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(87\\)",
+            "\\(84\\)",
+            "\\(85\\)",
+            "\\(86\\)"
+          ],
+          "answer": 2,
+          "hint": "x is the hypotenuse.",
+          "solution": "\\(x^2 = 13^2 + 84^2 = 169 + 7056 = 7225\\). \\(x = \\sqrt{7225} = 85\\).",
+          "steps": [
+            {
+              "explain": "Step 1: State Pythagoras' theorem.",
+              "work": "\\( c^2 = a^2 + b^2 \\)"
+            },
+            {
+              "explain": "Step 2: Substitute the known legs.",
+              "work": "Substitute $a = 13$ and $b = 84$:<br>\\( x^2 = 13^2 + 84^2 \\)"
+            },
+            {
+              "explain": "Step 3: Evaluate the squares.",
+              "work": "\\( x^2 = 169 + 7056 = 7225 \\)"
+            },
+            {
+              "explain": "Step 4: Solve for the hypotenuse $x$.",
+              "work": "\\( x = \\sqrt{7225} = 85 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "<svg viewBox=\"0 0 134 320\" width=\"100%\" height=\"auto\" style=\"max-width:134px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"280\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"40\" y1=\"280\" x2=\"94\" y2=\"280\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"94\" y1=\"280\" x2=\"40\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <path d=\"M 40,268 L 52,268 L 52,280\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-linejoin=\"miter\" />\n  <text x=\"67\" y=\"295\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">9</text>\n  <text x=\"25\" y=\"160\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"82\" y=\"145\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">41</text>\n</svg>\n\nUse Pythagoras' theorem to find the missing side length \\(x\\) in the triangle below.",
+          "figure": {
+            "geometry": {
+              "width": 200,
+              "points": {
+                "A": [
+                  0,
+                  40
+                ],
+                "B": [
+                  0,
+                  0
+                ],
+                "C": [
+                  9,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "B",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "B",
+                    "C"
+                  ],
+                  "text": "9"
+                },
+                {
+                  "between": [
+                    "A",
+                    "B"
+                  ],
+                  "text": "x"
+                },
+                {
+                  "between": [
+                    "A",
+                    "C"
+                  ],
+                  "text": "41"
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(42\\)",
+            "\\(39\\)",
+            "\\(40\\)",
+            "\\(41\\)"
+          ],
+          "answer": 2,
+          "hint": "Identify the hypotenuse first.",
+          "solution": "The hypotenuse is 41. \\(x^2 + 9^2 = 41^2\\). \\(x^2 + 81 = 1681\\). \\(x^2 = 1600\\). \\(x = \\sqrt{1600} = 40\\).",
+          "steps": [
+            {
+              "explain": "Step 1: State Pythagoras' theorem.",
+              "work": "\\( a^2 + b^2 = c^2 \\)"
+            },
+            {
+              "explain": "Step 2: Substitute the known leg and hypotenuse.",
+              "work": "Substitute leg $a = 9$ and hypotenuse $c = 41$:<br>\\( x^2 + 9^2 = 41^2 \\)"
+            },
+            {
+              "explain": "Step 3: Evaluate the squares.",
+              "work": "\\( x^2 + 81 = 1681 \\)<br>\\( x^2 = 1681 - 81 = 1600 \\)"
+            },
+            {
+              "explain": "Step 4: Solve for the missing leg $x$.",
+              "work": "\\( x = \\sqrt{1600} = 40 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q3a-x",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "<svg viewBox=\"0 0 330 222.85714285714286\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"182.85714285714286\" x2=\"99.52380952380952\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"99.52380952380952\" y1=\"40\" x2=\"290\" y2=\"182.85714285714286\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"40\" y1=\"182.85714285714286\" x2=\"290\" y2=\"182.85714285714286\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"99.52380952380952\" y1=\"40\" x2=\"99.52380952380952\" y2=\"182.85714285714286\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <text x=\"55\" y=\"111\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"210\" y=\"100\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"69.76190476190476\" y=\"197.85714285714286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">5</text>\n  <text x=\"194.76190476190476\" y=\"197.85714285714286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">16</text>\n  <text x=\"114.52380952380952\" y=\"111.42857142857143\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n</svg>\n\nFind the value of \\(x\\) in the diagram below.",
+          "figure": {
+            "geometry": {
+              "width": 250,
+              "points": {
+                "A": [
+                  5,
+                  12
+                ],
+                "B": [
+                  0,
+                  0
+                ],
+                "C": [
+                  5,
+                  0
+                ],
+                "D": [
+                  21,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "B",
+                  "to": "A"
+                },
+                {
+                  "from": "A",
+                  "to": "D"
+                },
+                {
+                  "from": "B",
+                  "to": "D"
+                },
+                {
+                  "from": "A",
+                  "to": "C"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "C",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "B",
+                    "A"
+                  ],
+                  "text": "x"
+                },
+                {
+                  "between": [
+                    "A",
+                    "D"
+                  ],
+                  "text": "y"
+                },
+                {
+                  "between": [
+                    "B",
+                    "C"
+                  ],
+                  "text": "5"
+                },
+                {
+                  "between": [
+                    "C",
+                    "D"
+                  ],
+                  "text": "16"
+                },
+                {
+                  "between": [
+                    "A",
+                    "C"
+                  ],
+                  "text": "12",
+                  "side": "in"
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(15\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Focus on the left right-angled triangle.",
+          "solution": "In the left right-angled triangle, the legs are \\(5\\) and \\(12\\). \\(x^2 = 5^2 + 12^2 = 25 + 144 = 169\\). \\(x = 13\\).",
+          "steps": [
+            {
+              "explain": "Step 1: Identify the relevant triangle.",
+              "work": "Focus on the left right-angled triangle to find the hypotenuse $x$. Using Pythagoras' theorem:<br>\\( c^2 = a^2 + b^2 \\)"
+            },
+            {
+              "explain": "Step 2: Substitute the known legs.",
+              "work": "Substitute the legs $a = 5$ and $b = 12$:<br>\\( x^2 = 5^2 + 12^2 \\)"
+            },
+            {
+              "explain": "Step 3: Evaluate the squares.",
+              "work": "\\( x^2 = 25 + 144 = 169 \\)"
+            },
+            {
+              "explain": "Step 4: Solve for $x$.",
+              "work": "\\( x = \\sqrt{169} = 13 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q3a-y",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "<svg viewBox=\"0 0 330 222.85714285714286\" width=\"100%\" height=\"auto\" style=\"max-width:330px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"182.85714285714286\" x2=\"99.52380952380952\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"99.52380952380952\" y1=\"40\" x2=\"290\" y2=\"182.85714285714286\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"40\" y1=\"182.85714285714286\" x2=\"290\" y2=\"182.85714285714286\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"99.52380952380952\" y1=\"40\" x2=\"99.52380952380952\" y2=\"182.85714285714286\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <text x=\"55\" y=\"111\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"210\" y=\"100\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">y</text>\n  <text x=\"69.76190476190476\" y=\"197.85714285714286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">5</text>\n  <text x=\"194.76190476190476\" y=\"197.85714285714286\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">16</text>\n  <text x=\"114.52380952380952\" y=\"111.42857142857143\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">12</text>\n</svg>\n\nFind the value of \\(y\\) in the diagram below.",
+          "figure": {
+            "geometry": {
+              "width": 250,
+              "points": {
+                "A": [
+                  5,
+                  12
+                ],
+                "B": [
+                  0,
+                  0
+                ],
+                "C": [
+                  5,
+                  0
+                ],
+                "D": [
+                  21,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "B",
+                  "to": "A"
+                },
+                {
+                  "from": "A",
+                  "to": "D"
+                },
+                {
+                  "from": "B",
+                  "to": "D"
+                },
+                {
+                  "from": "A",
+                  "to": "C"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "C",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "B",
+                    "A"
+                  ],
+                  "text": "x"
+                },
+                {
+                  "between": [
+                    "A",
+                    "D"
+                  ],
+                  "text": "y"
+                },
+                {
+                  "between": [
+                    "B",
+                    "C"
+                  ],
+                  "text": "5"
+                },
+                {
+                  "between": [
+                    "C",
+                    "D"
+                  ],
+                  "text": "16"
+                },
+                {
+                  "between": [
+                    "A",
+                    "C"
+                  ],
+                  "text": "12",
+                  "side": "in"
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(22\\)",
+            "\\(19\\)",
+            "\\(20\\)",
+            "\\(21\\)"
+          ],
+          "answer": 2,
+          "hint": "Focus on the right right-angled triangle.",
+          "solution": "In the right right-angled triangle, the legs are \\(16\\) and \\(12\\). \\(y^2 = 16^2 + 12^2 = 256 + 144 = 400\\). \\(y = 20\\).",
+          "steps": [
+            {
+              "explain": "Step 1: Identify the relevant triangle.",
+              "work": "Focus on the right right-angled triangle to find the hypotenuse $y$. Using Pythagoras' theorem:<br>\\( c^2 = a^2 + b^2 \\)"
+            },
+            {
+              "explain": "Step 2: Substitute the known legs.",
+              "work": "Substitute the legs $a = 16$ and $b = 12$:<br>\\( y^2 = 16^2 + 12^2 \\)"
+            },
+            {
+              "explain": "Step 3: Evaluate the squares.",
+              "work": "\\( y^2 = 256 + 144 = 400 \\)"
+            },
+            {
+              "explain": "Step 4: Solve for $y$.",
+              "work": "\\( y = \\sqrt{400} = 20 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "<svg viewBox=\"0 0 260 272\" width=\"100%\" height=\"auto\" style=\"max-width:260px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"220\" y2=\"136\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"220\" y1=\"136\" x2=\"220\" y2=\"232\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"220\" y1=\"232\" x2=\"40\" y2=\"232\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"40\" y1=\"232\" x2=\"40\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"40\" y1=\"136\" x2=\"220\" y2=\"136\" stroke=\"#475569\" stroke-width=\"2\" stroke-dasharray=\"6,6\" />\n  <path d=\"M 52,232 L 52,220 L 40,220\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-linejoin=\"miter\" />\n  <path d=\"M 220,220 L 208,220 L 208,232\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-linejoin=\"miter\" />\n  <text x=\"137\" y=\"75\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n  <text x=\"25\" y=\"88\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">8</text>\n  <text x=\"25\" y=\"184\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">8</text>\n  <text x=\"130\" y=\"217\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">15</text>\n</svg>\n\nFind the value of \\(x\\) in the diagram below.",
+          "figure": {
+            "geometry": {
+              "width": 180,
+              "points": {
+                "A": [
+                  0,
+                  16
+                ],
+                "B": [
+                  15,
+                  8
+                ],
+                "C": [
+                  0,
+                  8
+                ],
+                "D": [
+                  0,
+                  0
+                ],
+                "E": [
+                  15,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "E"
+                },
+                {
+                  "from": "E",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "A"
+                },
+                {
+                  "from": "C",
+                  "to": "B",
+                  "dashed": true
+                }
+              ],
+              "angles": [
+                {
+                  "at": "D",
+                  "right": true
+                },
+                {
+                  "at": "E",
+                  "right": true
+                },
+                {
+                  "at": "C",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "A",
+                    "B"
+                  ],
+                  "text": "x"
+                },
+                {
+                  "between": [
+                    "A",
+                    "C"
+                  ],
+                  "text": "8",
+                  "side": "in"
+                },
+                {
+                  "between": [
+                    "C",
+                    "D"
+                  ],
+                  "text": "8",
+                  "side": "in"
+                },
+                {
+                  "between": [
+                    "D",
+                    "E"
+                  ],
+                  "text": "15",
+                  "side": "in"
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(19\\)",
+            "\\(16\\)",
+            "\\(17\\)",
+            "\\(18\\)"
+          ],
+          "answer": 2,
+          "hint": "Identify the legs of the right-angled triangle.",
+          "solution": "The top shape is a right-angled triangle with a base of \\(15\\) (same as the rectangle's width) and a height of \\(8\\). \\(x^2 = 15^2 + 8^2 = 225 + 64 = 289\\). \\(x = 17\\).",
+          "steps": [
+            {
+              "explain": "Step 1: Identify the dimensions of the right-angled triangle.",
+              "work": "The top shape forms a right-angled triangle. Its height is $8$ and its base is $15$ (matching the rectangle's width below it)."
+            },
+            {
+              "explain": "Step 2: State Pythagoras' theorem and substitute.",
+              "work": "\\( c^2 = a^2 + b^2 \\)<br>\\( x^2 = 15^2 + 8^2 \\)"
+            },
+            {
+              "explain": "Step 3: Evaluate the squares.",
+              "work": "\\( x^2 = 225 + 64 = 289 \\)"
+            },
+            {
+              "explain": "Step 4: Solve for $x$.",
+              "work": "\\( x = \\sqrt{289} = 17 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "<svg viewBox=\"0 0 420 150\" width=\"100%\" height=\"auto\" style=\"max-width:440px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"360\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"360\" y1=\"40\" x2=\"360\" y2=\"100\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"360\" y1=\"100\" x2=\"40\" y2=\"100\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"40\" y1=\"100\" x2=\"40\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"40\" y1=\"100\" x2=\"360\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\" />\n  <text x=\"390\" y=\"70\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">11 cm</text>\n  <text x=\"200\" y=\"120\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">b</text>\n  <text x=\"180\" y=\"55\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">61 cm</text>\n</svg>\n\nA rectangle has width \\(11\\) cm and diagonal \\(61\\) cm as shown below. What is its length \\(b\\)?",
+          "figure": {
+            "geometry": {
+              "width": 250,
+              "points": {
+                "A": [
+                  0,
+                  11
+                ],
+                "B": [
+                  60,
+                  11
+                ],
+                "C": [
+                  0,
+                  0
+                ],
+                "D": [
+                  60,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                },
+                {
+                  "from": "C",
+                  "to": "B"
+                }
+              ],
+              "angles": [],
+              "freeLabels": [
+                {
+                  "point": [
+                    63,
+                    5.5
+                  ],
+                  "text": "11 cm"
+                },
+                {
+                  "point": [
+                    30,
+                    -2
+                  ],
+                  "text": "b"
+                },
+                {
+                  "point": [
+                    28,
+                    7
+                  ],
+                  "text": "61 cm"
+                }
+              ],
+              "sideLabels": []
+            }
+          },
+          "options": [
+            "\\(62\\)",
+            "\\(59\\)",
+            "\\(60\\)",
+            "\\(61\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras' theorem and solve for the unknown leg.",
+          "solution": "The diagonal forms a right-angled triangle. \\(b^2 + 11^2 = 61^2\\). \\(b^2 + 121 = 3721\\). \\(b^2 = 3600\\). \\(b = 60\\).",
+          "steps": [
+            {
+              "explain": "Step 1: Identify the formula.",
+              "work": "The diagonal forms a right-angled triangle with the length and width of the rectangle. We apply Pythagoras' theorem:<br>\\( a^2 + b^2 = c^2 \\)"
+            },
+            {
+              "explain": "Step 2: Substitute the known width and diagonal.",
+              "work": "Substitute width $a = 11$ and hypotenuse (diagonal) $c = 61$:<br>\\( b^2 + 11^2 = 61^2 \\)"
+            },
+            {
+              "explain": "Step 3: Evaluate the squares and rearrange.",
+              "work": "\\( b^2 + 121 = 3721 \\)<br>\\( b^2 = 3721 - 121 = 3600 \\)"
+            },
+            {
+              "explain": "Step 4: Solve for the length $b$.",
+              "work": "\\( b = \\sqrt{3600} = 60 \\text{ cm} \\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "<svg viewBox=\"0 0 280 216.36363636363637\" width=\"100%\" height=\"auto\" style=\"max-width:280px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"112.72727272727273\" y1=\"40\" x2=\"240.00000000000003\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"240.00000000000003\" y1=\"40\" x2=\"240.00000000000003\" y2=\"176.36363636363637\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"240.00000000000003\" y1=\"176.36363636363637\" x2=\"40\" y2=\"176.36363636363637\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"40\" y1=\"176.36363636363637\" x2=\"112.72727272727273\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"112.72727272727273\" y1=\"40\" x2=\"112.72727272727273\" y2=\"176.36363636363637\" stroke=\"#475569\" stroke-width=\"2\" stroke-dasharray=\"6,6\" />\n  <path d=\"M 240.00000000000003,164.36363636363637 L 228.00000000000003,164.36363636363637 L 228.00000000000003,176.36363636363637\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-linejoin=\"miter\" />\n  <text x=\"176.36363636363637\" y=\"55\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">14 m</text>\n  <text x=\"140\" y=\"191.36363636363637\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">22 m</text>\n  <text x=\"55\" y=\"100\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">17 m</text>\n</svg>\n\nFind the height of the trapezium shown below.",
+          "figure": {
+            "geometry": {
+              "width": 200,
+              "points": {
+                "A": [
+                  8,
+                  15
+                ],
+                "B": [
+                  22,
+                  15
+                ],
+                "D": [
+                  0,
+                  0
+                ],
+                "C": [
+                  22,
+                  0
+                ],
+                "E": [
+                  8,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "A"
+                },
+                {
+                  "from": "A",
+                  "to": "E",
+                  "dashed": true
+                }
+              ],
+              "angles": [
+                {
+                  "at": "C",
+                  "right": true
+                },
+                {
+                  "at": "E",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "A",
+                    "B"
+                  ],
+                  "text": "14 m"
+                },
+                {
+                  "between": [
+                    "D",
+                    "C"
+                  ],
+                  "text": "22 m"
+                },
+                {
+                  "between": [
+                    "D",
+                    "A"
+                  ],
+                  "text": "17 m"
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(17\\)",
+            "\\(14\\)",
+            "\\(15\\)",
+            "\\(16\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the base of the right-angled triangle first.",
+          "solution": "Dropping a perpendicular height creates a rectangle and a right-angled triangle. The base of the triangle is \\(22 - 14 = 8\\) m. Let height be \\(h\\). \\(h^2 + 8^2 = 17^2\\). \\(h^2 + 64 = 289\\). \\(h^2 = 225\\). \\(h = 15\\).",
+          "steps": [
+            {
+              "explain": "Step 1: Create a right-angled triangle.",
+              "work": "Drop a perpendicular line from the top-left vertex to the base. This forms a right-angled triangle and a rectangle. The base of the triangle is the difference in lengths:<br>\\( \\text{Base} = 22 - 14 = 8 \\text{ m} \\)"
+            },
+            {
+              "explain": "Step 2: Apply Pythagoras' theorem.",
+              "work": "Let the height be $h$. The hypotenuse is $17$.<br>\\( h^2 + 8^2 = 17^2 \\)"
+            },
+            {
+              "explain": "Step 3: Evaluate the squares and rearrange.",
+              "work": "\\( h^2 + 64 = 289 \\)<br>\\( h^2 = 289 - 64 = 225 \\)"
+            },
+            {
+              "explain": "Step 4: Solve for the height $h$.",
+              "work": "\\( h = \\sqrt{225} = 15 \\text{ m} \\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "<svg viewBox=\"0 0 230 230\" width=\"100%\" height=\"auto\" style=\"max-width:230px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"190\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"46\" y1=\"115\" x2=\"34\" y2=\"115\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"40\" y1=\"190\" x2=\"190\" y2=\"190\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <line x1=\"115\" y1=\"184\" x2=\"115\" y2=\"196\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"190\" y1=\"190\" x2=\"40\" y2=\"40\" stroke=\"#475569\" stroke-width=\"2\"  />\n  <path d=\"M 40,178 L 52,178 L 52,190\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-linejoin=\"miter\" />\n  <text x=\"25\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">5 m</text>\n  <text x=\"115\" y=\"205\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">5 m</text>\n  <text x=\"125.6\" y=\"104.4\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">x</text>\n</svg>\n\nFind the length of the hypotenuse \\(x\\), correct to 2 decimal places, in the triangle below.",
+          "figure": {
+            "geometry": {
+              "width": 150,
+              "points": {
+                "Top": [
+                  0,
+                  5
+                ],
+                "Bottom": [
+                  0,
+                  0
+                ],
+                "Right": [
+                  5,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "Top",
+                  "to": "Bottom",
+                  "ticks": 1
+                },
+                {
+                  "from": "Bottom",
+                  "to": "Right",
+                  "ticks": 1
+                },
+                {
+                  "from": "Right",
+                  "to": "Top"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "Bottom",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "Top",
+                    "Bottom"
+                  ],
+                  "text": "5 m"
+                },
+                {
+                  "between": [
+                    "Bottom",
+                    "Right"
+                  ],
+                  "text": "5 m"
+                },
+                {
+                  "between": [
+                    "Top",
+                    "Right"
+                  ],
+                  "text": "x"
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(-7.07\\)",
+            "\\(6.07\\)",
+            "\\(7.07\\)",
+            "\\(8.07\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Pythagoras' theorem and round to 2 decimal places.",
+          "solution": "The triangle is a right-angled isosceles triangle with legs \\(5\\) m. \\(x^2 = 5^2 + 5^2 = 25 + 25 = 50\\). \\(x = \\sqrt{50} \\approx 7.071\\).",
+          "steps": [
+            {
+              "explain": "Step 1: State Pythagoras' theorem.",
+              "work": "This is a right-angled isosceles triangle where both legs are $5$ m.<br>\\( c^2 = a^2 + b^2 \\)"
+            },
+            {
+              "explain": "Step 2: Substitute the legs.",
+              "work": "\\( x^2 = 5^2 + 5^2 \\)"
+            },
+            {
+              "explain": "Step 3: Evaluate the squares.",
+              "work": "\\( x^2 = 25 + 25 = 50 \\)"
+            },
+            {
+              "explain": "Step 4: Solve for $x$ and round to 2 decimal places.",
+              "work": "\\( x = \\sqrt{50} \\approx 7.07106... \\)<br>\\( x \\approx 7.07 \\text{ m} \\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "<svg viewBox=\"0 0 200 240\" width=\"100%\" height=\"auto\" style=\"max-width:200px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"40\" y1=\"200\" x2=\"160\" y2=\"200\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"160\" y1=\"200\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"40\" y1=\"165\" x2=\"40\" y2=\"200\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"40\" y1=\"40\" x2=\"40\" y2=\"165\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"40\" y1=\"40\" x2=\"160\" y2=\"200\" stroke=\"#475569\" stroke-width=\"2\" />\n  <!-- Ticks -->\n  <line x1=\"97\" y1=\"184.5\" x2=\"103\" y2=\"180.5\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"93\" y1=\"181.5\" x2=\"99\" y2=\"177.5\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"36\" y1=\"104.5\" x2=\"44\" y2=\"104.5\" stroke=\"#475569\" stroke-width=\"2\" />\n  <line x1=\"36\" y1=\"100.5\" x2=\"44\" y2=\"100.5\" stroke=\"#475569\" stroke-width=\"2\" />\n  <!-- Right Angle -->\n  <path d=\"M 52,200 L 52,188 L 40,188\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-linejoin=\"miter\" />\n  <!-- Labels -->\n  <text x=\"30\" y=\"182.5\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">7</text>\n  <text x=\"100\" y=\"215\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">24</text>\n  <!-- Vertex Labels -->\n  <text x=\"25\" y=\"215\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">C</text>\n  <text x=\"175\" y=\"215\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">D</text>\n  <text x=\"25\" y=\"165\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">B</text>\n  <text x=\"25\" y=\"30\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#1e293b\" text-anchor=\"middle\" dominant-baseline=\"central\">A</text>\n</svg>\n\nFind the length of the side \\(AD\\) in the diagram below. (Assume \\(A\\), \\(B\\), and \\(C\\) lie on a straight line)",
+          "figure": {
+            "geometry": {
+              "width": 200,
+              "points": {
+                "C": [
+                  0,
+                  0
+                ],
+                "D": [
+                  24,
+                  0
+                ],
+                "B": [
+                  0,
+                  7
+                ],
+                "A": [
+                  0,
+                  32
+                ]
+              },
+              "segments": [
+                {
+                  "from": "C",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "B",
+                  "ticks": 2
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "A",
+                  "to": "B",
+                  "ticks": 2
+                },
+                {
+                  "from": "A",
+                  "to": "D"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "C",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "B",
+                    "C"
+                  ],
+                  "text": "7"
+                },
+                {
+                  "between": [
+                    "C",
+                    "D"
+                  ],
+                  "text": "24"
+                }
+              ]
+            }
+          },
+          "options": [
+            "\\(42\\)",
+            "\\(39\\)",
+            "\\(40\\)",
+            "\\(41\\)"
+          ],
+          "answer": 2,
+          "hint": "Find BD first, then find the length of the full straight line AC.",
+          "solution": "In \\(\\triangle BCD\\), \\(BD^2 = 7^2 + 24^2 = 49 + 576 = 625\\). So \\(BD = 25\\). Since \\(AB = BD\\), \\(AB = 25\\). \\(AC = AB + BC = 25 + 7 = 32\\). In \\(\\triangle ACD\\), \\(AD^2 = AC^2 + CD^2 = 32^2 + 24^2 = 1024 + 576 = 1600\\). \\(AD = 40\\).",
+          "steps": [
+            {
+              "explain": "Step 1: Find the length of $BD$ in $\\triangle BCD$.",
+              "work": "Using Pythagoras' theorem on the smaller right-angled triangle $\\triangle BCD$:<br>\\( BD^2 = 7^2 + 24^2 = 49 + 576 = 625 \\)<br>\\( BD = \\sqrt{625} = 25 \\)"
+            },
+            {
+              "explain": "Step 2: Determine the length of $AC$.",
+              "work": "The tick marks indicate that $AB = BD$. Thus, $AB = 25$.<br>The total length of the straight line $AC$ is:<br>\\( AC = AB + BC = 25 + 7 = 32 \\)"
+            },
+            {
+              "explain": "Step 3: Apply Pythagoras' theorem to the large $\\triangle ACD$.",
+              "work": "Now consider the large right-angled triangle $\\triangle ACD$ with legs $AC=32$ and $CD=24$:<br>\\( AD^2 = AC^2 + CD^2 \\)<br>\\( AD^2 = 32^2 + 24^2 \\)"
+            },
+            {
+              "explain": "Step 4: Evaluate and solve for $AD$.",
+              "work": "\\( AD^2 = 1024 + 576 = 1600 \\)<br>\\( AD = \\sqrt{1600} = 40 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Decide whether the triangle with the given side lengths is a right-angled triangle. If it is, name the right angle.\n\\(\\triangle ABC\\) with sides \\(AB=13\\), \\(BC=5\\), \\(AC=12\\).",
+          "options": [
+            "Not right-angled",
+            "Right-angled at A",
+            "Right-angled at B",
+            "Right-angled at C"
+          ],
+          "answer": 3,
+          "hint": "Check if the square of the longest side equals the sum of squares of the other two sides.",
+          "solution": "Longest side is \\(AB=13\\). Check if \\(13^2 = 5^2 + 12^2\\). \\(169 = 25 + 144 = 169\\). Yes, it is right-angled. The right angle is opposite the hypotenuse \\(AB\\), so it is at \\(C\\).",
+          "steps": [
+            {
+              "explain": "Step 1: Identify the longest side.",
+              "work": "The longest side is the candidate for the hypotenuse. Here, $c = AB = 13$. The legs are $a = 5$ and $b = 12$."
+            },
+            {
+              "explain": "Step 2: Check if Pythagoras' theorem holds.",
+              "work": "Calculate the sum of the squares of the legs:<br>\\( 5^2 + 12^2 = 25 + 144 = 169 \\)"
+            },
+            {
+              "explain": "Step 3: Compare with the square of the longest side.",
+              "work": "Calculate the square of the hypotenuse candidate:<br>\\( 13^2 = 169 \\)<br>Since $169 = 169$, the triangle is a right-angled triangle."
+            },
+            {
+              "explain": "Step 4: Name the right angle.",
+              "work": "The right angle is always opposite the hypotenuse. Since the hypotenuse is the side $AB$, the opposite vertex is $C$. Therefore, it is right-angled at $C$."
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Decide whether the triangle with the given side lengths is a right-angled triangle. If it is, name the right angle.\n\\(\\triangle ABC\\) with sides \\(AB=9\\), \\(BC=6\\), \\(AC=8\\).",
+          "options": [
+            "Not right-angled",
+            "Right-angled at A",
+            "Right-angled at B",
+            "Right-angled at C"
+          ],
+          "answer": 0,
+          "hint": "Check if the square of the longest side equals the sum of squares of the other two sides.",
+          "solution": "Longest side is \\(AB=9\\). Check if \\(9^2 = 6^2 + 8^2\\). \\(81 \\neq 36 + 64 = 100\\). It is not a right-angled triangle.",
+          "steps": [
+            {
+              "explain": "Step 1: Identify the longest side.",
+              "work": "The longest side is the candidate for the hypotenuse. Here, $c = AB = 9$. The legs are $a = 6$ and $b = 8$."
+            },
+            {
+              "explain": "Step 2: Check if Pythagoras' theorem holds.",
+              "work": "Calculate the sum of the squares of the legs:<br>\\( 6^2 + 8^2 = 36 + 64 = 100 \\)"
+            },
+            {
+              "explain": "Step 3: Compare with the square of the longest side.",
+              "work": "Calculate the square of the hypotenuse candidate:<br>\\( 9^2 = 81 \\)"
+            },
+            {
+              "explain": "Step 4: State the conclusion.",
+              "work": "Since $81 \\neq 100$, Pythagoras' theorem does not hold. Therefore, it is not a right-angled triangle."
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch8review"
+          ]
+        },
+        {
+          "id": "y8-8d-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Decide whether the triangle with the given side lengths is a right-angled triangle. If it is, name the right angle.\n\\(\\triangle ABC\\) with sides \\(AB=40\\), \\(BC=41\\), \\(AC=9\\).",
+          "options": [
+            "Not right-angled",
+            "Right-angled at A",
+            "Right-angled at B",
+            "Right-angled at C"
+          ],
+          "answer": 1,
+          "hint": "Check if the square of the longest side equals the sum of squares of the other two sides.",
+          "solution": "Longest side is \\(BC=41\\). Check if \\(41^2 = 40^2 + 9^2\\). \\(1681 = 1600 + 81 = 1681\\). Yes, it is right-angled. The right angle is opposite the hypotenuse \\(BC\\), so it is at \\(A\\).",
+          "steps": [
+            {
+              "explain": "Step 1: Identify the longest side.",
+              "work": "The longest side is the candidate for the hypotenuse. Here, $c = BC = 41$. The legs are $a = 40$ and $b = 9$."
+            },
+            {
+              "explain": "Step 2: Check if Pythagoras' theorem holds.",
+              "work": "Calculate the sum of the squares of the legs:<br>\\( 40^2 + 9^2 = 1600 + 81 = 1681 \\)"
+            },
+            {
+              "explain": "Step 3: Compare with the square of the longest side.",
+              "work": "Calculate the square of the hypotenuse candidate:<br>\\( 41^2 = 1681 \\)<br>Since $1681 = 1681$, the triangle is a right-angled triangle."
+            },
+            {
+              "explain": "Step 4: Name the right angle.",
+              "work": "The right angle is always opposite the hypotenuse. Since the hypotenuse is the side $BC$, the opposite vertex is $A$. Therefore, it is right-angled at $A$."
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Decide whether the triangle with the given side lengths is a right-angled triangle. If it is, name the right angle.\n\\(\\triangle ABC\\) with sides \\(AB=15\\), \\(BC=20\\), \\(AC=10\\).",
+          "options": [
+            "Not right-angled",
+            "Right-angled at A",
+            "Right-angled at B",
+            "Right-angled at C"
+          ],
+          "answer": 0,
+          "hint": "Check if the square of the longest side equals the sum of squares of the other two sides.",
+          "solution": "Longest side is \\(BC=20\\). Check if \\(20^2 = 15^2 + 10^2\\). \\(400 \\neq 225 + 100 = 325\\). It is not a right-angled triangle.",
+          "steps": [
+            {
+              "explain": "Step 1: Identify the longest side.",
+              "work": "The longest side is the candidate for the hypotenuse. Here, $c = BC = 20$. The legs are $a = 15$ and $b = 10$."
+            },
+            {
+              "explain": "Step 2: Check if Pythagoras' theorem holds.",
+              "work": "Calculate the sum of the squares of the legs:<br>\\( 15^2 + 10^2 = 225 + 100 = 325 \\)"
+            },
+            {
+              "explain": "Step 3: Compare with the square of the longest side.",
+              "work": "Calculate the square of the hypotenuse candidate:<br>\\( 20^2 = 400 \\)"
+            },
+            {
+              "explain": "Step 4: State the conclusion.",
+              "work": "Since $400 \\neq 325$, Pythagoras' theorem does not hold. Therefore, it is not a right-angled triangle."
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch8review"
+          ]
+        },
+        {
+          "id": "y8-8d-q8e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Decide whether the triangle with the given side lengths is a right-angled triangle. If it is, name the right angle.\n\\(\\triangle ABC\\) with sides \\(AB=16\\), \\(BC=12\\), \\(AC=20\\).",
+          "options": [
+            "Not right-angled",
+            "Right-angled at A",
+            "Right-angled at B",
+            "Right-angled at C"
+          ],
+          "answer": 2,
+          "hint": "Check if the square of the longest side equals the sum of squares of the other two sides.",
+          "solution": "Longest side is \\(AC=20\\). Check if \\(20^2 = 16^2 + 12^2\\). \\(400 = 256 + 144 = 400\\). Yes, it is right-angled. The right angle is opposite the hypotenuse \\(AC\\), so it is at \\(B\\).",
+          "steps": [
+            {
+              "explain": "Step 1: Identify the longest side.",
+              "work": "The longest side is the candidate for the hypotenuse. Here, $c = AC = 20$. The legs are $a = 16$ and $b = 12$."
+            },
+            {
+              "explain": "Step 2: Check if Pythagoras' theorem holds.",
+              "work": "Calculate the sum of the squares of the legs:<br>\\( 16^2 + 12^2 = 256 + 144 = 400 \\)"
+            },
+            {
+              "explain": "Step 3: Compare with the square of the longest side.",
+              "work": "Calculate the square of the hypotenuse candidate:<br>\\( 20^2 = 400 \\)<br>Since $400 = 400$, the triangle is a right-angled triangle."
+            },
+            {
+              "explain": "Step 4: Name the right angle.",
+              "work": "The right angle is always opposite the hypotenuse. Since the hypotenuse is the side $AC$, the opposite vertex is $B$. Therefore, it is right-angled at $B$."
+            }
+          ]
+        },
+        {
+          "id": "y8-8d-q8f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Decide whether the triangle with the given side lengths is a right-angled triangle. If it is, name the right angle.\n\\(\\triangle ABC\\) with sides \\(AB=24\\), \\(BC=25\\), \\(AC=7\\).",
+          "options": [
+            "Not right-angled",
+            "Right-angled at A",
+            "Right-angled at B",
+            "Right-angled at C"
+          ],
+          "answer": 1,
+          "hint": "Check if the square of the longest side equals the sum of squares of the other two sides.",
+          "solution": "Longest side is \\(BC=25\\). Check if \\(25^2 = 24^2 + 7^2\\). \\(625 = 576 + 49 = 625\\). Yes, it is right-angled. The right angle is opposite the hypotenuse \\(BC\\), so it is at \\(A\\).",
+          "steps": [
+            {
+              "explain": "Step 1: Identify the longest side.",
+              "work": "The longest side is the candidate for the hypotenuse. Here, $c = BC = 25$. The legs are $a = 24$ and $b = 7$."
+            },
+            {
+              "explain": "Step 2: Check if Pythagoras' theorem holds.",
+              "work": "Calculate the sum of the squares of the legs:<br>\\( 24^2 + 7^2 = 576 + 49 = 625 \\)"
+            },
+            {
+              "explain": "Step 3: Compare with the square of the longest side.",
+              "work": "Calculate the square of the hypotenuse candidate:<br>\\( 25^2 = 625 \\)<br>Since $625 = 625$, the triangle is a right-angled triangle."
+            },
+            {
+              "explain": "Step 4: Name the right angle.",
+              "work": "The right angle is always opposite the hypotenuse. Since the hypotenuse is the side $BC$, the opposite vertex is $A$. Therefore, it is right-angled at $A$."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1671 @@
+{
+  "chapterId": "y11a-12",
+  "title": "Chapter 12: Probability",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11a-12A",
+      "code": "12A",
+      "title": "Sets and Venn diagrams",
+      "questions": [
+        {
+          "id": "0ofMzVaGG9xLKQ8us8yI",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(A = \\{2, 3, 5, 8\\}\\) and \\(B = \\{2, 3, 4, 5, 7\\}\\), determine whether each of the following statements is True or False.<br><br>I. \\(A = B\\)<br>II. \\(|A| = 4\\)<br>III. \\(|B| = 6\\)<br>IV. \\(A \\subset B\\)<br>V. \\(A \\cup B = \\{2,3,4,5,7,8\\}\\)<br>VI. \\(A \\cap B = \\{2,3,5\\}\\)",
+          "options": [
+            "I: False, II: True, III: False, IV: False, V: True, VI: True",
+            "I: True, II: True, III: False, IV: False, V: False, VI: True",
+            "I: False, II: False, III: True, IV: True, V: False, VI: False",
+            "I: True, II: False, III: True, IV: False, V: True, VI: False"
+          ],
+          "answer": 0,
+          "hint": "For I, check if both sets contain exactly the same elements. For IV, check whether every element of A is also in B.",
+          "solution": "I: False, II: True, III: False, IV: False, V: True, VI: True",
+          "steps": [
+            {
+              "explain": "Identify the given sets and their elements or conditions from the problem statement.",
+              "work": "\\(A = \\{2, 3, 5, 8\\},\\quad B = \\{2, 3, 4, 5, 7\\} \\\\ |A| = 4,\\quad |B| = 5\\)"
+            },
+            {
+              "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
+              "work": "\\(\\text{I. } A = B? \\quad 8 \\in A \\text{ but } 8 \notin B \\Rightarrow \\textbf{False} \\\\ \\text{II. } |A|=4? \\quad A \\text{ has } 4 \\text{ elements} \\Rightarrow \\textbf{True} \\\\ \\text{III. } |B|=6? \\quad B \\text{ has } 5 \\text{ elements} \\Rightarrow \\textbf{False} \\\\ \\text{IV. } A \\subset B? \\quad 8 \\in A \\text{ but } 8 \notin B \\Rightarrow \\textbf{False}\\)"
+            },
+            {
+              "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
+              "work": "\\(\\text{V. } A \\cup B = \\{2,3,4,5,7,8\\}? \\\\ A \\cup B = \\{2,3,4,5,7,8\\} \\Rightarrow \\textbf{True} \\\\ \\text{VI. } A \\cap B = \\{2,3,5\\}? \\\\ \\text{Common elements: } 2, 3, 5 \\Rightarrow \\textbf{True}\\)"
+            },
+            {
+              "explain": "Review the final set or logical statement to confirm it exactly matches the requested format.",
+              "work": "I: False, II: True, III: False, IV: False, V: True, VI: True"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "1b94VfH8awfF3NEcHGqh",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine whether \\(A \\subset B\\) for the sets \\(A = \\{\\text{g, r, a, c, e}\\}\\) and \\(B = \\{\\text{c, a, t, e, g, o, r, y}\\}\\).",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "hint": "The letters of 'grace' are g, r, a, c, e. Check if each appears in 'category'.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Check if every element of set \\(A\\) is also in set \\(B\\).",
+              "work": "\\(A = \\{\\text{g, r, a, c, e}\\}\\)<br />\\(B = \\{\\text{c, a, t, e, g, o, r, y}\\}\\)"
+            },
+            {
+              "explain": "Check each element of set \\(A\\).",
+              "work": "g is in \\(B\\).<br />r is in \\(B\\).<br />a is in \\(B\\).<br />c is in \\(B\\).<br />e is in \\(B\\)."
+            },
+            {
+              "explain": "Since every element of \\(A\\) is contained in \\(B\\), \\(A\\) is a subset of \\(B\\).",
+              "work": "\\(A \\subset B\\)"
+            },
+            {
+              "explain": "Therefore, the statement is True.",
+              "work": "True"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "7t8abug45WHidE5rol61",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the set representing the first five positive multiples of \\(8\\) by listing its elements.",
+          "options": [
+            "\\(\\{8, 16, 24, 32, 40\\}\\)",
+            "\\(\\{0, 8, 16, 24, 32\\}\\)",
+            "\\(\\{8, 16, 24, 32, 40, 48\\}\\)",
+            "\\(\\{1, 8, 16, 24, 32\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "Positive multiples of 8 start at \\(8 \\times 1\\), not \\(8 \\times 0\\).",
+          "solution": "The set is \\(\\{8, 16, 24, 32, 40\\}\\).",
+          "steps": [
+            {
+              "explain": "Identify the given sets and their elements or conditions from the problem statement.",
+              "work": "\\(8 \\times 1 = 8 \\\\ 8 \\times 2 = 16 \\\\ 8 \\times 3 = 24 \\\\ 8 \\times 4 = 32 \\\\ 8 \\times 5 = 40\\)"
+            },
+            {
+              "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
+              "work": "\\(\\{8,\\ 16,\\ 24,\\ 32,\\ 40\\}\\)"
+            },
+            {
+              "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
+              "work": "\\(\\{8, 16, 24, 32, 40\\}\\)"
+            },
+            {
+              "explain": "Review the final set or logical statement to confirm it exactly matches the requested format.",
+              "work": "\\(\\{8, 16, 24, 32, 40\\}\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "9pjeUekBq2n29rnjyAD1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the set of possible numbers on a fair \\(8\\)-sided die (octahedral die) by listing its elements.",
+          "options": [
+            "\\(\\{1, 2, 3, 4, 5, 6, 7, 8\\}\\)",
+            "\\(\\{0, 1, 2, 3, 4, 5, 6, 7\\}\\)",
+            "\\(\\{1, 2, 3, 4, 5, 6\\}\\)",
+            "\\(\\{2, 4, 6, 8\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "An 8-sided die has faces numbered from 1 to 8, not 0 to 7.",
+          "solution": "The set is \\(\\{1, 2, 3, 4, 5, 6, 7, 8\\}\\).",
+          "steps": [
+            {
+              "explain": "Identify the given sets and their elements or conditions from the problem statement.",
+              "work": "\\(\\text{Faces: } 1,\\ 2,\\ 3,\\ 4,\\ 5,\\ 6,\\ 7,\\ 8\\)"
+            },
+            {
+              "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
+              "work": "\\(\\{1,\\ 2,\\ 3,\\ 4,\\ 5,\\ 6,\\ 7,\\ 8\\}\\)"
+            },
+            {
+              "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
+              "work": "\\(\\{1, 2, 3, 4, 5, 6, 7, 8\\}\\)"
+            },
+            {
+              "explain": "Review the final set or logical statement to confirm it exactly matches the requested format.",
+              "work": "\\(\\{1, 2, 3, 4, 5, 6, 7, 8\\}\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "A1s22EGzMFqbHSmEs7Vw",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine whether \\(A \\subset B\\) for the sets \\(A = \\{\\text{t, o, n, y}\\}\\) and \\(B = \\{\\text{s, t, o, n, e}\\}\\).",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "hint": "Check every letter of 'tony' against 'stone'.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Check if every element of set \\(A\\) is also in set \\(B\\).",
+              "work": "\\(A = \\{\\text{t, o, n, y}\\}\\)<br />\\(B = \\{\\text{s, t, o, n, e}\\}\\)"
+            },
+            {
+              "explain": "Check each element of set \\(A\\).",
+              "work": "t is in \\(B\\).<br />o is in \\(B\\).<br />n is in \\(B\\).<br />y is NOT in \\(B\\)."
+            },
+            {
+              "explain": "Since y is in \\(A\\) but not in \\(B\\), \\(A\\) is not a subset of \\(B\\).",
+              "work": "\\(A \\not\\subset B\\)"
+            },
+            {
+              "explain": "Therefore, the statement is False.",
+              "work": "False"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "BUda5VwB9FTy9VXLJZyf",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given the sets \\(A = \\{2, 4, 6\\}\\) and \\(B = \\{4, 6, 8\\}\\), find \\(A \\cup B\\) and \\(A \\cap B\\).",
+          "options": [
+            "\\(A \\cup B = \\{2, 4, 6, 8\\}\\) and \\(A \\cap B = \\{4, 6\\}\\)",
+            "\\(A \\cup B = \\{4, 6\\}\\) and \\(A \\cap B = \\{2, 4, 6, 8\\}\\)",
+            "\\(A \\cup B = \\{2, 4, 6, 8\\}\\) and \\(A \\cap B = \\emptyset\\)",
+            "\\(A \\cup B = \\{2, 8\\}\\) and \\(A \\cap B = \\{4, 6\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "Union (\\(\\cup\\)) = all elements from either set; Intersection (\\(\\cap\\)) = only shared elements.",
+          "solution": "\\(A \\cup B = \\{2,4,6,8\\}\\) and \\(A \\cap B = \\{4,6\\}\\).",
+          "steps": [
+            {
+              "explain": "Find the union \\(A \\cup B\\) by combining all elements from both sets without duplicates.",
+              "work": "\\(A \\cup B = \\{2, 4, 6\\} \\cup \\{4, 6, 8\\} = \\{2, 4, 6, 8\\}\\)"
+            },
+            {
+              "explain": "Find the intersection \\(A \\cap B\\) by identifying elements that are in BOTH sets.",
+              "work": "\\(A \\cap B = \\{2, 4, 6\\} \\cap \\{4, 6, 8\\} = \\{4, 6\\}\\)"
+            },
+            {
+              "explain": "Therefore, the final answer is:",
+              "work": "\\(A \\cup B = \\{2, 4, 6, 8\\}\\) and \\(A \\cap B = \\{4, 6\\}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "DezURalw61NDJ8MxiuX5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine whether \\(A \\subset B\\) for the sets \\(A = \\{2, 4, 6, 8\\}\\) and \\(B = \\{2, 3, 6, 7, 9\\}\\).",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 1,
+          "hint": "Check every element of \\(A\\) — you only need one counter-example to disprove \\(A \\subset B\\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Check if every element of set \\(A\\) is also in set \\(B\\).",
+              "work": "\\(A = \\{2, 4, 6, 8\\}\\)<br />\\(B = \\{2, 3, 6, 7, 9\\}\\)"
+            },
+            {
+              "explain": "Check each element of set \\(A\\).",
+              "work": "2 is in \\(B\\).<br />4 is NOT in \\(B\\)."
+            },
+            {
+              "explain": "Since 4 is in \\(A\\) but not in \\(B\\), \\(A\\) is not a subset of \\(B\\).",
+              "work": "\\(A \\not\\subset B\\)"
+            },
+            {
+              "explain": "Therefore, the statement is False.",
+              "work": "False"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "DvpYSV8I0JYMnT6fYqba",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine whether \\(A \\subset B\\) for \\(A = \\emptyset\\) and \\(B = \\{10, 11, 12, 13\\}\\).",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "hint": "By definition, the empty set has no elements, so it cannot have any element outside \\(B\\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Recall the property of the empty set regarding subsets.",
+              "work": "The empty set \\(\\emptyset\\) contains no elements."
+            },
+            {
+              "explain": "Check if there are any elements in \\(A\\) that are not in \\(B\\).",
+              "work": "Since \\(A\\) has no elements, there is no element in \\(A\\) that is missing from \\(B\\)."
+            },
+            {
+              "explain": "Conclusion based on the subset rule.",
+              "work": "Therefore, the empty set is a subset of every set. \\(A \\subset B\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "True"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "DztytMoe0P2ZS3qtZZyp",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Let \\(A = \\{1, 2, 4\\}\\) and \\(B = \\{2, 5\\}\\) with the universal set \\(E = \\{1, 2, 3, 4, 5, 6\\}\\). Evaluate the following:",
+          "parts": [
+            {
+              "id": "sq_a",
+              "type": "mc",
+              "stem": "Find \\(|A|\\) and \\(|B|\\).",
+              "options": [
+                "\\(|A| = 3\\) and \\(|B| = 2\\)",
+                "\\(|A| = 4\\) and \\(|B| = 3\\)",
+                "\\(|A| = 2\\) and \\(|B| = 2\\)",
+                "\\(|A| = 3\\) and \\(|B| = 5\\)"
+              ],
+              "answer": 0,
+              "hint": "|A| means the number of elements in set A.",
+              "steps": [
+                {
+                  "explain": "The absolute value symbol around a set denotes its cardinality (the number of elements).",
+                  "work": "\\(A\\) has 3 elements: 1, 2, 4.<br />\\(B\\) has 2 elements: 2, 5."
+                },
+                {
+                  "explain": "State the final answer.",
+                  "work": "\\(|A| = 3\\) and \\(|B| = 2\\)"
+                }
+              ],
+              "ext": {
+                "partLabel": "a"
+              }
+            },
+            {
+              "id": "sq_b",
+              "type": "mc",
+              "stem": "Find \\(A \\cup B\\) and \\(|A \\cup B|\\).",
+              "options": [
+                "\\(A \\cup B = \\{1, 2, 4, 5\\}\\) and \\(|A \\cup B| = 5\\)",
+                "\\(A \\cup B = \\{1, 2, 4, 5\\}\\) and \\(|A \\cup B| = 4\\)",
+                "\\(A \\cup B = \\{1, 2, 5\\}\\) and \\(|A \\cup B| = 3\\)",
+                "\\(A \\cup B = \\{2\\}\\) and \\(|A \\cup B| = 1\\)"
+              ],
+              "answer": 1,
+              "hint": "Union means combining elements without duplicates.",
+              "steps": [
+                {
+                  "explain": "Find the union \\(A \\cup B\\) by combining all unique elements from both sets.",
+                  "work": "\\(A \\cup B = \\{1, 2, 4\\} \\cup \\{2, 5\\} = \\{1, 2, 4, 5\\}\\)"
+                },
+                {
+                  "explain": "Count the number of elements in the union.",
+                  "work": "The set \\(\\{1, 2, 4, 5\\}\\) has 4 elements, so \\(|A \\cup B| = 4\\)."
+                }
+              ],
+              "ext": {
+                "partLabel": "b"
+              }
+            },
+            {
+              "id": "sq_c",
+              "type": "mc",
+              "stem": "Find \\(A \\cap B\\) and \\(|A \\cap B|\\).",
+              "options": [
+                "\\(A \\cap B = \\{1, 2, 4, 5\\}\\) and \\(|A \\cap B| = 4\\)",
+                "\\(A \\cap B = \\{4, 5\\}\\) and \\(|A \\cap B| = 2\\)",
+                "\\(A \\cap B = \\{2\\}\\) and \\(|A \\cap B| = 1\\)",
+                "\\(A \\cap B = \\emptyset\\) and \\(|A \\cap B| = 0\\)"
+              ],
+              "answer": 2,
+              "hint": "Intersection means finding elements common to both.",
+              "steps": [
+                {
+                  "explain": "Find the intersection \\(A \\cap B\\) by identifying shared elements.",
+                  "work": "\\(A \\cap B = \\{1, 2, 4\\} \\cap \\{2, 5\\} = \\{2\\}\\)"
+                },
+                {
+                  "explain": "Count the number of elements in the intersection.",
+                  "work": "The set \\(\\{2\\}\\) has 1 element, so \\(|A \\cap B| = 1\\)."
+                }
+              ],
+              "ext": {
+                "partLabel": "c"
+              }
+            },
+            {
+              "id": "sq_d",
+              "type": "mc",
+              "stem": "Find \\(\\overline{A}\\) and \\(\\overline{B}\\).",
+              "options": [
+                "\\(\\overline{A} = \\{3, 5, 6\\}\\) and \\(\\overline{B} = \\{1, 3, 4, 6\\}\\)",
+                "\\(\\overline{A} = \\{1, 2, 4\\}\\) and \\(\\overline{B} = \\{2, 5\\}\\)",
+                "\\(\\overline{A} = \\{3, 6\\}\\) and \\(\\overline{B} = \\{1, 3, 4\\}\\)",
+                "\\(\\overline{A} = \\{1, 3, 4, 6\\}\\) and \\(\\overline{B} = \\{3, 5, 6\\}\\)"
+              ],
+              "answer": 0,
+              "hint": "The complement contains elements of E not in the given set.",
+              "steps": [
+                {
+                  "explain": "Find the complement of \\(A\\) by taking elements in the universal set \\(E\\) that are not in \\(A\\).",
+                  "work": "\\(\\overline{A} = E - A = \\{1, 2, 3, 4, 5, 6\\} - \\{1, 2, 4\\} = \\{3, 5, 6\\}\\)"
+                },
+                {
+                  "explain": "Find the complement of \\(B\\) similarly.",
+                  "work": "\\(\\overline{B} = E - B = \\{1, 2, 3, 4, 5, 6\\} - \\{2, 5\\} = \\{1, 3, 4, 6\\}\\)"
+                }
+              ],
+              "ext": {
+                "partLabel": "d"
+              }
+            }
+          ],
+          "answer": "1",
+          "hint": "For the complement, remove the elements of the set from the universal set \\(E\\).",
+          "solution": "|A|=3, |B|=2, A∪B={1,2,4,5}, |A∪B|=4, A∩B={2}, |A∩B|=1, Ā={3,5,6}, B̄={1,3,4,6}",
+          "steps": [
+            {
+              "explain": "Identify the given sets and their elements or conditions from the problem statement.",
+              "work": "\\(A = \\{1, 2, 4\\} \\\\ B = \\{2, 5\\} \\\\ E = \\{1, 2, 3, 4, 5, 6\\}\\)"
+            },
+            {
+              "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
+              "work": "\\(|A| = 3,\\quad |B| = 2 \\\\ A \\cup B = \\{1, 2, 4, 5\\},\\quad |A \\cup B| = 4 \\\\ A \\cap B = \\{2\\},\\quad |A \\cap B| = 1\\)"
+            },
+            {
+              "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
+              "work": "\\(\\overline{A} = E \\setminus A = \\{1,2,3,4,5,6\\} \\setminus \\{1,2,4\\} = \\{3, 5, 6\\} \\\\ \\overline{B} = E \\setminus B = \\{1,2,3,4,5,6\\} \\setminus \\{2,5\\} = \\{1, 3, 4, 6\\}\\)"
+            },
+            {
+              "explain": "Review the final set or logical statement to confirm it exactly matches the requested format.",
+              "work": "\\(|A|=3, |B|=2, A∪B={1,2,4,5}, |A∪B|=4, A∩B={2}, |A∩B|=1, Ā={3,5,6}, B̄={1,3,4,6}\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "Im3hhX4zl9vb8HthBfuh",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "List all the subsets for each of the following sets.",
+          "parts": [
+            {
+              "id": "sq_a",
+              "type": "mc",
+              "stem": "\\(\\{x\\}\\)",
+              "options": [
+                "\\(\\{x\\}\\)",
+                "\\(\\emptyset, \\{x\\}\\)",
+                "\\(\\emptyset, \\{x\\}, \\{y\\}\\)",
+                "\\(\\emptyset\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the number of elements in the set to determine the total number of subsets. A set with \\(n\\) elements has \\(2^n\\) subsets.",
+                  "work": "The set \\(\\{x\\}\\) has \\(1\\) element. Total subsets = \\(2^1 = 2\\)."
+                },
+                {
+                  "explain": "List the subsets, starting with the empty set (which is a subset of every set) and then the set itself.",
+                  "work": "\\(\\emptyset, \\{x\\}\\)"
+                }
+              ],
+              "ext": {
+                "partLabel": "a"
+              }
+            },
+            {
+              "id": "sq_b",
+              "type": "mc",
+              "stem": "\\(\\{x, y\\}\\)",
+              "options": [
+                "\\(\\emptyset, \\{x\\}, \\{y\\}\\)",
+                "\\(\\{x\\}, \\{y\\}, \\{x, y\\}\\)",
+                "\\(\\emptyset, \\{x\\}, \\{y\\}, \\{x, y\\}\\)",
+                "\\(\\emptyset, \\{x, y\\}\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Calculate the total number of subsets for a set with 2 elements.",
+                  "work": "Total subsets = \\(2^2 = 4\\)."
+                },
+                {
+                  "explain": "List all subsets systematically: the empty set, all 1-element subsets, and the set itself.",
+                  "work": "\\(\\emptyset, \\{x\\}, \\{y\\}, \\{x, y\\}\\)"
+                }
+              ],
+              "ext": {
+                "partLabel": "b"
+              }
+            },
+            {
+              "id": "sq_c",
+              "type": "mc",
+              "stem": "\\(\\{x, y, z\\}\\)",
+              "options": [
+                "\\(\\emptyset, \\{x\\}, \\{y\\}, \\{z\\}, \\{x, y, z\\}\\)",
+                "\\(\\{x\\}, \\{y\\}, \\{z\\}, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x, y, z\\}\\)",
+                "\\(\\emptyset, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x, y, z\\}\\)",
+                "\\(\\emptyset, \\{x\\}, \\{y\\}, \\{z\\}, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x, y, z\\}\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Calculate the total number of subsets for a set with 3 elements.",
+                  "work": "Total subsets = \\(2^3 = 8\\)."
+                },
+                {
+                  "explain": "List the empty set, all 1-element subsets, all 2-element subsets, and the set itself.",
+                  "work": "Empty set: \\(\\emptyset\\)<br />1-element: \\(\\{x\\}, \\{y\\}, \\{z\\}\\)<br />2-element: \\(\\{x, y\\}, \\{x, z\\}, \\{y, z\\}\\)<br />3-element: \\(\\{x, y, z\\}\\)"
+                },
+                {
+                  "explain": "Combine them for the final list.",
+                  "work": "\\(\\emptyset, \\{x\\}, \\{y\\}, \\{z\\}, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x, y, z\\}\\)"
+                }
+              ],
+              "ext": {
+                "partLabel": "c"
+              }
+            },
+            {
+              "id": "sq_d",
+              "type": "mc",
+              "stem": "\\(\\emptyset\\)",
+              "options": [
+                "\\(\\emptyset\\)",
+                "\\(\\{\\emptyset\\}\\)",
+                "\\(\\{0\\}\\)",
+                "None"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Determine the number of subsets for the empty set.",
+                  "work": "The empty set has \\(0\\) elements. Total subsets = \\(2^0 = 1\\)."
+                },
+                {
+                  "explain": "List the only subset, which is the empty set itself.",
+                  "work": "\\(\\emptyset\\)"
+                }
+              ],
+              "ext": {
+                "partLabel": "d"
+              }
+            }
+          ],
+          "answer": "0",
+          "hint": "A set with \\(n\\) elements has exactly \\(2^n\\) subsets. The empty set \\(\\emptyset\\) is always a subset.",
+          "solution": "A set with \\(n\\) elements has \\(2^n\\) subsets, always including \\(\\emptyset\\) and itself.",
+          "steps": [
+            {
+              "explain": "Identify the given sets and their elements or conditions from the problem statement.",
+              "work": "\\(n=1 \\Rightarrow 2^1=2 \\text{ subsets} \\\\ n=2 \\Rightarrow 2^2=4 \\text{ subsets} \\\\ n=3 \\Rightarrow 2^3=8 \\text{ subsets} \\\\ n=0 \\Rightarrow 2^0=1 \\text{ subset}\\)"
+            },
+            {
+              "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
+              "work": "\\(\\text{(a) }\\{x\\}: \\quad \\emptyset,\\ \\{x\\} \\\\ \\text{(b) }\\{x,y\\}: \\quad \\emptyset,\\ \\{x\\},\\ \\{y\\},\\ \\{x,y\\} \\\\ \\text{(c) }\\{x,y,z\\}: \\quad \\emptyset,\\ \\{x\\},\\ \\{y\\},\\ \\{z\\},\\ \\{x,y\\},\\ \\{x,z\\},\\ \\{y,z\\},\\ \\{x,y,z\\} \\\\ \\text{(d) }\\emptyset: \\quad \\emptyset\\)"
+            },
+            {
+              "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
+              "work": "\\((a) \\(\\emptyset, \\{x\\}\\); (b) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{x, y\\}\\); (c) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{z\\}, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x, y, z\\}\\); (d) \\(\\emptyset\\)\\)"
+            },
+            {
+              "explain": "Review the final set or logical statement to confirm it exactly matches the requested format.",
+              "work": "\\((a) \\(\\emptyset, \\{x\\}\\); (b) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{x, y\\}\\); (c) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{z\\}, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x, y, z\\}\\); (d) \\(\\emptyset\\)\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "KiYaBpLA9Qam0cnriduS",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine whether \\(A \\subset B\\) for the sets \\(A = \\{3, 5, 7\\}\\) and \\(B = \\{1, 2, 3, 4, 5, 6, 7, 8, 10\\}\\).",
+          "options": [
+            "True",
+            "False"
+          ],
+          "answer": 0,
+          "hint": "Check every element of \\(A\\) one by one — is it in \\(B\\)?",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Check if every element of set \\(A\\) is also in set \\(B\\).",
+              "work": "\\(A = \\{3, 5, 7\\}\\)<br />\\(B = \\{1, 2, 3, 4, 5, 6, 7, 8, 10\\}\\)"
+            },
+            {
+              "explain": "Check each element of set \\(A\\).",
+              "work": "3 is in \\(B\\).<br />5 is in \\(B\\).<br />7 is in \\(B\\)."
+            },
+            {
+              "explain": "Since every element of \\(A\\) is contained in \\(B\\), \\(A\\) is a subset of \\(B\\).",
+              "work": "\\(A \\subset B\\)"
+            },
+            {
+              "explain": "Therefore, the statement is True.",
+              "work": "True"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "Mlss5QCs71c1ARrP6gGr",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "Let \\(A = \\{\\text{students who play tennis}\\} \\) and \\(B = \\{\\text{students who play basketball}\\}\\). Identify the correct description for each of the following sets.",
+          "parts": [
+            {
+              "id": "sq_a",
+              "type": "mc",
+              "stem": "\\(A \\cap B\\)",
+              "options": [
+                "students who play both tennis and basketball",
+                "students who play tennis or basketball (or both)",
+                "students who play tennis but not basketball",
+                "students who play neither sport"
+              ],
+              "answer": 0,
+              "hint": "The intersection (cap) means \"AND\".",
+              "steps": [
+                {
+                  "explain": "Identify the meaning of the intersection of two sets.",
+                  "work": "The intersection \\(A \\cap B\\) consists of elements that are in BOTH \\(A\\) AND \\(B\\) simultaneously."
+                },
+                {
+                  "explain": "Apply this to the given context.",
+                  "work": "This corresponds to \"students who play both tennis and basketball\"."
+                }
+              ],
+              "ext": {
+                "partLabel": "a"
+              }
+            },
+            {
+              "id": "sq_b",
+              "type": "mc",
+              "stem": "\\(A \\cup B\\)",
+              "options": [
+                "students who play tennis or basketball (or both)",
+                "students who play both tennis and basketball",
+                "students who play basketball but not tennis",
+                "all students in the school"
+              ],
+              "answer": 0,
+              "hint": "The union (cup) means \"OR\".",
+              "steps": [
+                {
+                  "explain": "Identify the meaning of the union of two sets.",
+                  "work": "The union \\(A \\cup B\\) consists of elements that are in \\(A\\), in \\(B\\), or in BOTH."
+                },
+                {
+                  "explain": "Apply this to the given context.",
+                  "work": "This corresponds to \"students who play tennis or basketball (or both)\"."
+                }
+              ],
+              "ext": {
+                "partLabel": "b"
+              }
+            }
+          ],
+          "answer": "0",
+          "hint": "Think: \\(\\cap\\) means AND (overlap); \\(\\cup\\) means OR (at least one).",
+          "solution": "\\(A \\cap B\\) = both sports (AND); \\(A \\cup B\\) = at least one sport (OR).",
+          "steps": [
+            {
+              "explain": "Identify the given sets and their elements or conditions from the problem statement.",
+              "work": "\\(A \\cap B = \\text{students who play tennis } \\textbf{AND} \\text{ basketball}\\)"
+            },
+            {
+              "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
+              "work": "\\(A \\cup B = \\text{students who play tennis } \\textbf{OR} \\text{ basketball (or both)}\\)"
+            },
+            {
+              "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
+              "work": "\\(\\(A \\cap B\\): students who play both tennis and basketball; \\(A \\cup B\\): students who play tennis or basketball (or both)\\)"
+            },
+            {
+              "explain": "Review the final set or logical statement to confirm it exactly matches the requested format.",
+              "work": "\\(\\(A \\cap B\\): students who play both tennis and basketball; \\(A \\cup B\\): students who play tennis or basketball (or both)\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "O7nYfyXtA4UEZXZU3ONl",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "Given the sets \\(A = \\{\\text{r, y, a, n}\\}\\) and \\(B = \\{\\text{l, u, c, y}\\}\\), answer the following:",
+          "parts": [
+            {
+              "id": "sq_a",
+              "type": "mc",
+              "stem": "Find \\(A \\cup B\\).",
+              "options": [
+                "\\(\\{\\text{a, c, l, n, r, u, y}\\}\\)",
+                "\\(\\{\\text{y}\\}\\)",
+                "\\(\\{\\text{r, y, a, n, l, u, c}\\}\\)",
+                "\\(\\emptyset\\)"
+              ],
+              "answer": 0,
+              "hint": "Union combines all elements.",
+              "steps": [
+                {
+                  "explain": "Find the union \\(A \\cup B\\) by combining all unique elements from both sets.",
+                  "work": "\\(A \\cup B = \\{\\text{r, y, a, n}\\} \\cup \\{\\text{l, u, c, y}\\} = \\{\\text{a, c, l, n, r, u, y}\\}\\)"
+                }
+              ],
+              "ext": {
+                "partLabel": "a"
+              }
+            },
+            {
+              "id": "sq_b",
+              "type": "mc",
+              "stem": "Find \\(A \\cap B\\).",
+              "options": [
+                "\\(\\{\\text{a, c, l, n, r, u, y}\\}\\)",
+                "\\(\\{\\text{y}\\}\\)",
+                "\\(\\{\\text{r, y, a, n}\\}\\)",
+                "\\(\\emptyset\\)"
+              ],
+              "answer": 1,
+              "hint": "Intersection is the shared elements.",
+              "steps": [
+                {
+                  "explain": "Find the intersection \\(A \\cap B\\) by identifying elements that appear in BOTH sets.",
+                  "work": "\\(A \\cap B = \\{\\text{r, y, a, n}\\} \\cap \\{\\text{l, u, c, y}\\} = \\{\\text{y}\\}\\)"
+                }
+              ],
+              "ext": {
+                "partLabel": "b"
+              }
+            }
+          ],
+          "answer": "0",
+          "hint": "These are the letters of the names 'ryan' and 'lucy'. Look for a shared letter.",
+          "solution": "\\(A \\cup B = \\{\\text{a,c,l,n,r,u,y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\).",
+          "steps": [
+            {
+              "explain": "Identify the given sets and their elements or conditions from the problem statement.",
+              "work": "\\(A = \\{\\text{r, y, a, n}\\},\\quad B = \\{\\text{l, u, c, y}\\} \\\\ \\text{Only } \\text{y} \\text{ is in both sets.} \\\\ A \\cap B = \\{\\text{y}\\}\\)"
+            },
+            {
+              "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
+              "work": "\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\)"
+            },
+            {
+              "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
+              "work": "\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\)"
+            },
+            {
+              "explain": "Review the final set or logical statement to confirm it exactly matches the requested format.",
+              "work": "\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "V8NTiMnMRP3qY3dWxYjF",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the set of positive factors of \\(18\\) by listing its elements.",
+          "options": [
+            "\\(\\{1, 2, 3, 6, 9, 18\\}\\)",
+            "\\(\\{2, 3, 6, 9\\}\\)",
+            "\\(\\{1, 2, 3, 6, 9, 12, 18\\}\\)",
+            "\\(\\{1, 18\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find all factor pairs: \\(1 \\times 18\\), \\(2 \\times 9\\), \\(3 \\times 6\\).",
+          "solution": "The set is \\(\\{1, 2, 3, 6, 9, 18\\}\\).",
+          "steps": [
+            {
+              "explain": "Identify all the positive integers that divide \\(18\\) without a remainder.",
+              "work": "The factors of \\(18\\) are \\(1, 2, 3, 6, 9, 18\\)."
+            },
+            {
+              "explain": "Write these factors in set notation using curly braces.",
+              "work": "\\(\\{1, 2, 3, 6, 9, 18\\}\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "cbY62T9Mv1PhTvyDULxc",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let \\(A = \\{\\text{positive prime numbers less than } 12\\}\\) and \\(B = \\{\\text{positive even numbers less than } 12\\}\\). Find \\(A \\cup B\\) and \\(A \\cap B\\).",
+          "options": [
+            "\\(A \\cup B = \\{2, 3, 4, 5, 6, 7, 8, 10, 11\\}\\) and \\(A \\cap B = \\{2\\}\\)",
+            "\\(A \\cup B = \\{2, 3, 4, 5, 6, 7, 8, 10, 11\\}\\) and \\(A \\cap B = \\emptyset\\)",
+            "\\(A \\cup B = \\{2\\}\\) and \\(A \\cap B = \\{2, 3, 4, 5, 6, 7, 8, 10, 11\\}\\)",
+            "\\(A \\cup B = \\{3, 4, 5, 6, 7, 8, 10, 11\\}\\) and \\(A \\cap B = \\{2\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write out both sets first. The number 2 is the only even prime — it will be in both sets.",
+          "solution": "\\(A \\cup B = \\{2,3,4,5,6,7,8,10,11\\}\\) and \\(A \\cap B = \\{2\\}\\).",
+          "steps": [
+            {
+              "explain": "Identify the given sets and their elements or conditions from the problem statement.",
+              "work": "\\(A = \\{2,\\ 3,\\ 5,\\ 7,\\ 11\\} \\quad (\\text{primes} < 12) \\\\ B = \\{2,\\ 4,\\ 6,\\ 8,\\ 10\\} \\quad (\\text{positive evens} < 12)\\)"
+            },
+            {
+              "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
+              "work": "\\(A \\cup B = \\{2,\\ 3,\\ 4,\\ 5,\\ 6,\\ 7,\\ 8,\\ 10,\\ 11\\}\\)"
+            },
+            {
+              "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
+              "work": "\\(A \\cap B = \\{2\\}\\)"
+            },
+            {
+              "explain": "Review the final set or logical statement to confirm it exactly matches the requested format.",
+              "work": "\\(A \\cup B = \\{2, 3, 4, 5, 6, 7, 8, 10, 11\\}\\) and \\(A \\cap B = \\{2\\}\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "dyURshoixJRkjfz6PCbP",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write down the set of even positive integers less than \\(12\\) by listing its elements.",
+          "options": [
+            "\\(\\{2, 4, 6, 8, 10\\}\\)",
+            "\\(\\{2, 4, 6, 8, 10, 12\\}\\)",
+            "\\(\\{0, 2, 4, 6, 8, 10\\}\\)",
+            "\\(\\{1, 3, 5, 7, 9, 11\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "Remember: positive means greater than 0, and less than 12 means 12 is not included.",
+          "solution": "The set is \\(\\{2, 4, 6, 8, 10\\}\\).",
+          "steps": [
+            {
+              "explain": "Identify the given sets and their elements or conditions from the problem statement.",
+              "work": "\\(\\text{(i) Even: divisible by } 2 \\\\ \\text{(ii) Positive: } > 0 \\text{ (exclude } 0\\text{)} \\\\ \\text{(iii) Less than } 12 \\text{ (exclude } 12\\text{)}\\)"
+            },
+            {
+              "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
+              "work": "\\(2,\\ 4,\\ 6,\\ 8,\\ 10 \\quad \\text{(next would be } 12 \\text{, excluded)}\\)"
+            },
+            {
+              "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
+              "work": "\\(\\{2,\\ 4,\\ 6,\\ 8,\\ 10\\}\\)"
+            },
+            {
+              "explain": "Review the final set or logical statement to confirm it exactly matches the requested format.",
+              "work": "\\(\\{2, 4, 6, 8, 10\\}\\)"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "k1SNd5nbMWNz1qRFbLBQ",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Let \\(A = \\{\\text{students who play violin}\\}\\) and \\(B = \\{\\text{students who sing in the choir}\\}\\) with the universal set \\(E = \\{\\text{all students at Oakridge Academy}\\}\\). Identify the correct description for each of the following sets.",
+          "parts": [
+            {
+              "id": "sq_a",
+              "type": "mc",
+              "stem": "\\(\\overline{A}\\)",
+              "options": [
+                "students who play violin",
+                "students who do not play violin",
+                "students who do not sing in the choir",
+                "students who do neither"
+              ],
+              "answer": 1,
+              "hint": "The complement of a set means \"everything NOT in that set\".",
+              "steps": [
+                {
+                  "explain": "Identify the meaning of the complement of a set.",
+                  "work": "The complement \\(\\overline{A}\\) consists of all elements in the universal set \\(E\\) that are NOT in set \\(A\\)."
+                },
+                {
+                  "explain": "Apply this to the given context.",
+                  "work": "Since \\(A\\) is \"students who play violin\", \\(\\overline{A}\\) must be \"students who do not play violin\"."
+                }
+              ],
+              "ext": {
+                "partLabel": "a"
+              }
+            },
+            {
+              "id": "sq_b",
+              "type": "mc",
+              "stem": "\\(\\overline{B}\\)",
+              "options": [
+                "students who do not sing in the choir",
+                "students who sing in the choir",
+                "students who do not play violin",
+                "students who play violin or sing in the choir"
+              ],
+              "answer": 0,
+              "hint": "The complement of a set means \"everything NOT in that set\".",
+              "steps": [
+                {
+                  "explain": "Identify the meaning of the complement of a set.",
+                  "work": "The complement \\(\\overline{B}\\) consists of all elements in the universal set \\(E\\) that are NOT in set \\(B\\)."
+                },
+                {
+                  "explain": "Apply this to the given context.",
+                  "work": "Since \\(B\\) is \"students who sing in the choir\", \\(\\overline{B}\\) must be \"students who do not sing in the choir\"."
+                }
+              ],
+              "ext": {
+                "partLabel": "b"
+              }
+            },
+            {
+              "id": "sq_c",
+              "type": "mc",
+              "stem": "\\(A \\cup B\\)",
+              "options": [
+                "students who play violin AND sing in the choir",
+                "students who play violin OR sing in the choir (or both)",
+                "students who do not play violin and do not sing in the choir",
+                "students who do neither"
+              ],
+              "answer": 1,
+              "hint": "The union (cup) means \"OR\".",
+              "steps": [
+                {
+                  "explain": "Identify the meaning of the union of two sets.",
+                  "work": "The union \\(A \\cup B\\) consists of elements that are in \\(A\\), in \\(B\\), or in BOTH."
+                },
+                {
+                  "explain": "Apply this to the given context.",
+                  "work": "This corresponds to \"students who play violin OR sing in the choir (or both)\"."
+                }
+              ],
+              "ext": {
+                "partLabel": "c"
+              }
+            },
+            {
+              "id": "sq_d",
+              "type": "mc",
+              "stem": "\\(A \\cap B\\)",
+              "options": [
+                "students who play violin OR sing in the choir",
+                "students who do not play violin",
+                "students who play violin AND sing in the choir",
+                "students who do neither"
+              ],
+              "answer": 2,
+              "hint": "The intersection (cap) means \"AND\".",
+              "steps": [
+                {
+                  "explain": "Identify the meaning of the intersection of two sets.",
+                  "work": "The intersection \\(A \\cap B\\) consists of elements that are in BOTH \\(A\\) AND \\(B\\) simultaneously."
+                },
+                {
+                  "explain": "Apply this to the given context.",
+                  "work": "This corresponds to \"students who play violin AND sing in the choir\"."
+                }
+              ],
+              "ext": {
+                "partLabel": "d"
+              }
+            }
+          ],
+          "answer": "0",
+          "hint": "The complement \\(\\overline{A}\\) consists of everyone in \\(E\\) who is NOT in \\(A\\).",
+          "solution": "Option 1 correctly describes all four set operations.",
+          "steps": [
+            {
+              "explain": "Identify the given sets and their elements or conditions from the problem statement.",
+              "work": "\\(\\overline{A} = \\text{Oakridge students who do } \\textbf{not} \\text{ play violin} \\\\ \\overline{B} = \\text{Oakridge students who do } \\textbf{not} \\text{ sing in the choir}\\)"
+            },
+            {
+              "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
+              "work": "\\(A \\cup B = \\text{play violin } \\textbf{OR} \\text{ sing in choir (or both)} \\\\ A \\cap B = \\text{play violin } \\textbf{AND} \\text{ sing in choir}\\)"
+            },
+            {
+              "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
+              "work": "\\(\\(\\overline{A}\\): students who do not play violin; \\(\\overline{B}\\): students who do not sing in the choir; \\(A \\cup B\\): students who play violin or sing in the choir (or both); \\(A \\cap B\\): students who play violin and sing in the choir\\)"
+            },
+            {
+              "explain": "Review the final set or logical statement to confirm it exactly matches the requested format.",
+              "work": "\\(\\(\\overline{A}\\): students who do not play violin; \\(\\overline{B}\\): students who do not sing in the choir; \\(A \\cup B\\): students who play violin or sing in the choir (or both); \\(A \\cap B\\): students who play violin and sing in the choir\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "wMR73GwHSJ8TmF4QWKNZ",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "Given the sets \\(A = \\{\\text{s, y, d, n, e}\\}\\) and \\(B = \\{\\text{m, e, l, b, o, u, r, n}\\}\\), answer the following:",
+          "parts": [
+            {
+              "id": "sq_a",
+              "type": "mc",
+              "stem": "Find \\(A \\cup B\\).",
+              "options": [
+                "\\(\\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\)",
+                "\\(\\{\\text{e, n}\\}\\)",
+                "\\(\\{\\text{s, y, d, n, e, m, l, b, o, u, r}\\}\\)",
+                "\\(\\emptyset\\)"
+              ],
+              "answer": 0,
+              "hint": "Union combines all elements.",
+              "steps": [
+                {
+                  "explain": "Find the union \\(A \\cup B\\) by combining all unique elements from both sets.",
+                  "work": "\\(A \\cup B = \\{\\text{s, y, d, n, e}\\} \\cup \\{\\text{m, e, l, b, o, u, r, n}\\} = \\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\)"
+                }
+              ],
+              "ext": {
+                "partLabel": "a"
+              }
+            },
+            {
+              "id": "sq_b",
+              "type": "mc",
+              "stem": "Find \\(A \\cap B\\).",
+              "options": [
+                "\\(\\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\)",
+                "\\(\\{\\text{e, n}\\}\\)",
+                "\\(\\{\\text{s, y, d, n, e}\\}\\)",
+                "\\(\\emptyset\\)"
+              ],
+              "answer": 1,
+              "hint": "Intersection is the shared elements.",
+              "steps": [
+                {
+                  "explain": "Find the intersection \\(A \\cap B\\) by identifying elements that appear in BOTH sets.",
+                  "work": "\\(A \\cap B = \\{\\text{s, y, d, n, e}\\} \\cap \\{\\text{m, e, l, b, o, u, r, n}\\} = \\{\\text{e, n}\\}\\)"
+                }
+              ],
+              "ext": {
+                "partLabel": "b"
+              }
+            }
+          ],
+          "answer": "0",
+          "hint": "These sets are the letters of 'sydney' and 'melbourne'. Which letters appear in both words?",
+          "solution": "\\(A \\cup B = \\{\\text{b,d,e,l,m,n,o,r,s,u,y}\\}\\) and \\(A \\cap B = \\{\\text{e,n}\\}\\).",
+          "steps": [
+            {
+              "explain": "Identify the given sets and their elements or conditions from the problem statement.",
+              "work": "\\(A = \\{\\text{s, y, d, n, e}\\},\\quad B = \\{\\text{m, e, l, b, o, u, r, n}\\} \\\\ \\text{e} \\in A \\text{ and } B,\\quad \\text{n} \\in A \\text{ and } B \\\\ A \\cap B = \\{\\text{e, n}\\}\\)"
+            },
+            {
+              "explain": "Apply the definitions of set operations (union, intersection, subset, etc.) to determine the correct relationship or elements.",
+              "work": "\\(A \\cup B = \\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\)"
+            },
+            {
+              "explain": "Carefully calculate or combine the elements, ensuring there are no duplicates and all conditions are met.",
+              "work": "\\(A \\cup B = \\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\) and \\(A \\cap B = \\{\\text{e, n}\\}\\)"
+            },
+            {
+              "explain": "Review the final set or logical statement to confirm it exactly matches the requested format.",
+              "work": "\\(A \\cup B = \\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\) and \\(A \\cap B = \\{\\text{e, n}\\}\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "xzVx2ZMFp3NccykPkz50",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given the sets \\(A = \\{1, 2, 5, 7, 8\\}\\) and \\(B = \\{3, 5, 6, 7, 8, 9\\}\\), find \\(A \\cup B\\) and \\(A \\cap B\\).",
+          "options": [
+            "\\(A \\cup B = \\{1, 2, 3, 5, 6, 7, 8, 9\\}\\) and \\(A \\cap B = \\{5, 7, 8\\}\\)",
+            "\\(A \\cup B = \\{5, 7, 8\\}\\) and \\(A \\cap B = \\{1, 2, 3, 5, 6, 7, 8, 9\\}\\)",
+            "\\(A \\cup B = \\{1, 2, 3, 5, 6, 7, 8, 9\\}\\) and \\(A \\cap B = \\{5, 7\\}\\)",
+            "\\(A \\cup B = \\{1, 2, 3, 6, 9\\}\\) and \\(A \\cap B = \\{5, 7, 8\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "Check which numbers appear in both sets for the intersection.",
+          "solution": "\\(A \\cup B = \\{1,2,3,5,6,7,8,9\\}\\) and \\(A \\cap B = \\{5,7,8\\}\\).",
+          "steps": [
+            {
+              "explain": "Find the union \\(A \\cup B\\) by combining all unique elements from both sets.",
+              "work": "\\(A \\cup B = \\{1, 2, 5, 7, 8\\} \\cup \\{3, 5, 6, 7, 8, 9\\} = \\{1, 2, 3, 5, 6, 7, 8, 9\\}\\)"
+            },
+            {
+              "explain": "Find the intersection \\(A \\cap B\\) by identifying elements that appear in BOTH sets.",
+              "work": "\\(A \\cap B = \\{1, 2, 5, 7, 8\\} \\cap \\{3, 5, 6, 7, 8, 9\\} = \\{5, 7, 8\\}\\)"
+            },
+            {
+              "explain": "State the final sets.",
+              "work": "\\(A \\cup B = \\{1, 2, 3, 5, 6, 7, 8, 9\\}\\) and \\(A \\cap B = \\{5, 7, 8\\}\\)"
+            }
+          ],
+          "meta": {
+            "course": "Advanced"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-12C",
+      "code": "12C",
+      "title": "Multi-stage experiments and tree diagrams",
+      "questions": [
+        {
+          "id": "gosford2020-q22",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Let \\( C \\) be the event a family owns a cat and \\( D \\) be the event a family owns a dog. Given \\( P(C)=\\dfrac37 \\), \\( P(D\\mid C')=\\dfrac25 \\), and \\( P(D'\\mid C)=\\dfrac34 \\).",
+          "parts": [
+            {
+              "id": "gosford2020-q22a",
+              "type": "review",
+              "stem": "(a) Complete the probability tree diagram showing all branch probabilities for cat/no cat and dog/no dog.",
+              "answer": "P(C)=3/7, P(C')=4/7; P(D|C)=1/4, P(D'|C)=3/4; P(D|C')=2/5, P(D'|C')=3/5",
+              "steps": [
+                {
+                  "explain": "The first set of branches splits on cat ownership, using the given \\( P(C)=3/7 \\) and its complement.",
+                  "work": "\\(P(C)=\\dfrac37, \\quad P(C')=1-\\dfrac37=\\dfrac47\\)"
+                },
+                {
+                  "explain": "From a cat-owning family, \\( P(D'|C)=3/4 \\) is given, so \\( P(D|C) \\) is its complement.",
+                  "work": "\\(P(D|C) = 1-\\dfrac34 = \\dfrac14\\)"
+                },
+                {
+                  "explain": "From a non-cat-owning family, \\( P(D|C')=2/5 \\) is given directly, so \\( P(D'|C') \\) is its complement.",
+                  "work": "<svg viewBox=\"0 0 492 342\" width=\"492\" height=\"342\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.75rem auto;background-color:#f8fafc;border-radius:14px;border:1px solid #e2e8f0;padding:4px;\">\n  <g transform=\"translate(16,16)\"><circle cx=\"70\" cy=\"150\" r=\"4.5\" fill=\"#334155\"/><line x1=\"70\" y1=\"150\" x2=\"230\" y2=\"70\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"150\" x2=\"230\" y2=\"240\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"70\" x2=\"400\" y2=\"20\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"70\" x2=\"400\" y2=\"110\" stroke=\"#2563eb\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"240\" x2=\"400\" y2=\"190\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230\" y1=\"240\" x2=\"400\" y2=\"290\" stroke=\"#d97706\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"230\" cy=\"70\" r=\"4\" fill=\"#2563eb\"/><circle cx=\"230\" cy=\"240\" r=\"4\" fill=\"#d97706\"/><circle cx=\"400\" cy=\"20\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"110\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"190\" r=\"4.5\" fill=\"#334155\"/><circle cx=\"400\" cy=\"290\" r=\"4.5\" fill=\"#334155\"/>\n    <text x=\"142.84458247200067\" y=\"90.68916494400135\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"133.84458247200067\" y1=\"95.68916494400135\" x2=\"151.84458247200067\" y2=\"95.68916494400135\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"142.84458247200067\" y=\"111.68916494400135\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">7</text>\n    <text x=\"142.15582016587905\" y=\"203.9452085939928\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <line x1=\"133.15582016587905\" y1=\"208.9452085939928\" x2=\"151.15582016587905\" y2=\"208.9452085939928\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"142.15582016587905\" y=\"224.9452085939928\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">7</text>\n    <text x=\"311.0496714641183\" y=\"26.568882978002215\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">1</text>\n    <line x1=\"302.0496714641183\" y1=\"31.568882978002215\" x2=\"320.0496714641183\" y2=\"31.568882978002215\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"311.0496714641183\" y=\"47.568882978002215\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <text x=\"311.3353706603912\" y=\"100.57467469333722\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"302.3353706603912\" y1=\"105.57467469333722\" x2=\"320.3353706603912\" y2=\"105.57467469333722\" stroke=\"#2563eb\" stroke-width=\"1.6\"/>\n    <text x=\"311.3353706603912\" y=\"121.57467469333722\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">4</text>\n    <text x=\"311.0496714641183\" y=\"196.56888297800222\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">2</text>\n    <line x1=\"302.0496714641183\" y1=\"201.56888297800222\" x2=\"320.0496714641183\" y2=\"201.56888297800222\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"311.0496714641183\" y=\"217.56888297800222\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">5</text>\n    <text x=\"310.4853388161352\" y=\"275.3498480251403\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">3</text>\n    <line x1=\"301.4853388161352\" y1=\"280.3498480251403\" x2=\"319.4853388161352\" y2=\"280.3498480251403\" stroke=\"#d97706\" stroke-width=\"1.6\"/>\n    <text x=\"310.4853388161352\" y=\"296.3498480251403\" text-anchor=\"middle\" font-family=\"system-ui\" font-size=\"14\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\">5</text><text x=\"216\" y=\"62\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#2563eb\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">C</text><text x=\"214\" y=\"258\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"15\" font-weight=\"700\" fill=\"#d97706\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">C'</text><text x=\"420\" y=\"25\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D</text><text x=\"420\" y=\"115\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D'</text><text x=\"420\" y=\"195\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D</text><text x=\"420\" y=\"295\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"14\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"4\" paint-order=\"stroke\" text-anchor=\"middle\">D'</text></g>\n</svg>\n\n\\(P(D|C')=\\dfrac25, \\quad P(D'|C')=1-\\dfrac25=\\dfrac35\\)"
+                }
+              ],
+              "manual": true
+            },
+            {
+              "id": "gosford2020-q22bi",
+              "type": "mc",
+              "stem": "(b)(i) Find the probability that a family owns both a cat and a dog.",
+              "options": [
+                "\\(\\dfrac{1}{7}\\)",
+                "\\(\\dfrac{3}{7}\\)",
+                "\\(\\dfrac{3}{28}\\)",
+                "\\(\\dfrac{12}{35}\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "The event \"owns both\" corresponds to following the cat branch, then the dog-given-cat branch.",
+                  "work": "\\(P(C\\cap D) = P(C)\\times P(D|C)\\)"
+                },
+                {
+                  "explain": "Substitute the known values (using \\( P(D|C)=1/4 \\) from part (a)).",
+                  "work": "\\(P(C\\cap D) = \\dfrac37\\times\\dfrac14\\)"
+                },
+                {
+                  "explain": "Multiply the fractions. Pitfall: using \\( P(D'|C)=3/4 \\) instead of \\( P(D|C)=1/4 \\) here gives the wrong branch.",
+                  "work": "\\(P(C\\cap D) = \\dfrac{3}{28}\\)"
+                }
+              ]
+            },
+            {
+              "id": "gosford2020-q22bii",
+              "type": "mc",
+              "stem": "(b)(ii) Find the probability that a family owns at least one pet (a cat or a dog).",
+              "options": [
+                "\\(\\dfrac{12}{35}\\)",
+                "\\(\\dfrac{3}{28}\\)",
+                "\\(\\dfrac{25}{35}\\)",
+                "\\(\\dfrac{23}{35}\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "\"At least one pet\" is the complement of \"neither a cat nor a dog\" — easier to compute via the complement.",
+                  "work": "\\(P(\\text{at least one}) = 1-P(C'\\cap D')\\)"
+                },
+                {
+                  "explain": "Find \\( P(C'\\cap D') \\) by following the no-cat branch then the no-dog-given-no-cat branch.",
+                  "work": "\\(P(C'\\cap D') = \\dfrac47\\times\\dfrac35 = \\dfrac{12}{35}\\)"
+                },
+                {
+                  "explain": "Subtract from 1. Pitfall: computing \\( P(C'\\cap D') \\) but forgetting to subtract from 1 leaves the complement value itself as a wrong \"answer\".",
+                  "work": "\\(P(\\text{at least one}) = 1-\\dfrac{12}{35} = \\dfrac{23}{35}\\)"
+                }
+              ]
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Gosford 2020 Trial Q22",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-COND-01"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-12E",
+      "code": "12E",
+      "title": "Multi-stage experiments and the product rule",
+      "questions": [
+        {
+          "id": "bb2020-q9",
+          "type": "mc",
+          "stem": "A box contains 5 red marbles and 4 blue marbles (9 marbles in total). Stella selects 3 marbles at random without replacement. What is the probability that at least one of the marbles she selects is red?",
+          "options": [
+            "\\(\\dfrac{20}{21}\\)",
+            "\\(\\dfrac{5}{42}\\)",
+            "\\(\\dfrac{5}{9}\\)",
+            "\\(\\dfrac{665}{729}\\)"
+          ],
+          "answer": 0,
+          "hint": "\"At least one red\" is easiest to find via the complement: \\(P(\\text{at least one red}) = 1 - P(\\text{no red at all})\\).",
+          "steps": [
+            {
+              "explain": "It is easier to find the complementary event first: the probability that *none* of the 3 marbles are red, i.e. all 3 are blue. Multiply the probability of drawing blue at each stage, updating the totals since there is no replacement.",
+              "work": "\\(P(\\text{no red}) = \\dfrac{4}{9}\\times\\dfrac{3}{8}\\times\\dfrac{2}{7} = \\dfrac{24}{504} = \\dfrac{1}{21}\\)"
+            },
+            {
+              "explain": "The probability of at least one red is the complement of drawing no red at all.",
+              "work": "\\(P(\\text{at least one red}) = 1 - \\dfrac{1}{21}\\)"
+            },
+            {
+              "explain": "Simplify the subtraction.",
+              "work": "\\(= \\dfrac{20}{21}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-2u-q2",
+          "type": "mc",
+          "stem": "\\(A\\) and \\(B\\) are two independent events with \\(P(A) = \\frac{5}{8}\\) and \\(P(B) = \\frac{1}{6}\\). What is the value of \\(P(A \\cap B)\\)?",
+          "options": [
+            "\\(\\frac{5}{48}\\)",
+            "\\(\\frac{11}{24}\\)",
+            "\\(\\frac{11}{20}\\)",
+            "\\(\\frac{15}{4}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "For independent events, the probability of both occurring is the product of their individual probabilities.",
+              "work": "\\(P(A \\cap B) = P(A) \\times P(B)\\)"
+            },
+            {
+              "explain": "Substitute the given values.",
+              "work": "\\(P(A \\cap B) = \\frac{5}{8} \\times \\frac{1}{6}\\)"
+            },
+            {
+              "explain": "Multiply numerators and denominators.",
+              "work": "\\(P(A \\cap B) = \\frac{5}{48}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-12F",
+      "code": "12F",
+      "title": "Probability tree diagrams",
+      "questions": [
+        {
+          "id": "glenwood2020-q33",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A laundry basket contains shirts in three sizes: 3 small, 8 medium and 5 large (16 shirts total). Ed takes two shirts from the basket at random, without replacement.",
+          "parts": [
+            {
+              "id": "glenwood2020-q33tree",
+              "type": "review",
+              "stem": "(a) Draw a tree diagram, clearly showing the outcomes and the correct probabilities on each branch.",
+              "answer": "First draw: P(S)=3/16, P(M)=8/16, P(L)=5/16. Second draw (out of 15 remaining): after S — P(S)=2/15, P(M)=8/15, P(L)=5/15; after M — P(S)=3/15, P(M)=7/15, P(L)=5/15; after L — P(S)=3/15, P(M)=8/15, P(L)=4/15.",
+              "steps": [
+                {
+                  "explain": "Draw two levels of branches (first draw, then second draw). On the first level, the probability of each size is the number of shirts of that size over the total of 16.",
+                  "work": "P(\\text{1st }S)=\\dfrac{3}{16},\\quad P(\\text{1st }M)=\\dfrac{8}{16},\\quad P(\\text{1st }L)=\\dfrac{5}{16}"
+                },
+                {
+                  "explain": "Since the draw is without replacement, each second-level branch has one fewer shirt overall (15 remaining), and one fewer of whichever size was drawn first. For example, after drawing a small shirt first, only 2 small shirts remain.",
+                  "work": "\\text{after 1st }S:\\ P(S)=\\dfrac{2}{15},\\ P(M)=\\dfrac{8}{15},\\ P(L)=\\dfrac{5}{15}"
+                },
+                {
+                  "explain": "Repeat this for the other two first-draw branches (after medium, after large), each time reducing only the count for the size that was already drawn.",
+                  "work": "\\text{after 1st }M:\\ P(S)=\\dfrac{3}{15},\\ P(M)=\\dfrac{7}{15},\\ P(L)=\\dfrac{5}{15};\\qquad \\text{after 1st }L:\\ P(S)=\\dfrac{3}{15},\\ P(M)=\\dfrac{8}{15},\\ P(L)=\\dfrac{4}{15}"
+                },
+                {
+                  "explain": "The complete tree diagram shows 3 first-draw branches, each splitting into 3 second-draw branches (9 outcome paths total), with every correct probability written on its branch.",
+                  "work": "\n<svg viewBox=\"0 0 600 600\" width=\"100%\" height=\"auto\" style=\"max-width:600px;display:block;margin:1rem auto;background-color:#fff;border-radius:12px;border:1px solid #ccc;padding:1rem;\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Styles -->\n  <style>\n    .branch { stroke: #3b82f6; stroke-width: 2; fill: none; }\n    .node { font-family: sans-serif; font-size: 14px; font-weight: bold; fill: #1e293b; }\n    .prob-text { font-family: sans-serif; font-size: 11px; fill: #dc2626; font-weight: bold; }\n    .prob-line { stroke: #dc2626; stroke-width: 1.5; }\n    .outcome { font-family: monospace; font-size: 13px; fill: #475569; }\n  </style>\n\n  <!-- Root to Layer 1 Branches -->\n  <path d=\"M 50 300 L 180 100\" class=\"branch\" />\n  <path d=\"M 50 300 L 180 300\" class=\"branch\" />\n  <path d=\"M 50 300 L 180 500\" class=\"branch\" />\n\n  <!-- L1 Probabilities -->\n  \n  <rect x=\"120\" y=\"163\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"130\" y=\"174\" class=\"prob-text\" text-anchor=\"middle\">3</text>\n  <line x1=\"124\" y1=\"177\" x2=\"136\" y2=\"177\" class=\"prob-line\" />\n  <text x=\"130\" y=\"188\" class=\"prob-text\" text-anchor=\"middle\">16</text>\n  \n  <rect x=\"120\" y=\"286\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"130\" y=\"297\" class=\"prob-text\" text-anchor=\"middle\">8</text>\n  <line x1=\"124\" y1=\"300\" x2=\"136\" y2=\"300\" class=\"prob-line\" />\n  <text x=\"130\" y=\"311\" class=\"prob-text\" text-anchor=\"middle\">16</text>\n  \n  <rect x=\"120\" y=\"409\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"130\" y=\"420\" class=\"prob-text\" text-anchor=\"middle\">5</text>\n  <line x1=\"124\" y1=\"423\" x2=\"136\" y2=\"423\" class=\"prob-line\" />\n  <text x=\"130\" y=\"434\" class=\"prob-text\" text-anchor=\"middle\">16</text>\n\n  <!-- L1 Nodes -->\n  <text x=\"185\" y=\"104\" class=\"node\">S</text>\n  <text x=\"185\" y=\"304\" class=\"node\">M</text>\n  <text x=\"185\" y=\"504\" class=\"node\">L</text>\n\n  <!-- S Node to Layer 2 Branches -->\n  <path d=\"M 210 100 L 420 40\" class=\"branch\" />\n  <path d=\"M 210 100 L 420 100\" class=\"branch\" />\n  <path d=\"M 210 100 L 420 160\" class=\"branch\" />\n\n  <!-- S Node L2 Probabilities -->\n  \n  <rect x=\"330\" y=\"49\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"60\" class=\"prob-text\" text-anchor=\"middle\">2</text>\n  <line x1=\"334\" y1=\"63\" x2=\"346\" y2=\"63\" class=\"prob-line\" />\n  <text x=\"340\" y=\"74\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"86\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"97\" class=\"prob-text\" text-anchor=\"middle\">8</text>\n  <line x1=\"334\" y1=\"100\" x2=\"346\" y2=\"100\" class=\"prob-line\" />\n  <text x=\"340\" y=\"111\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"123\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"134\" class=\"prob-text\" text-anchor=\"middle\">5</text>\n  <line x1=\"334\" y1=\"137\" x2=\"346\" y2=\"137\" class=\"prob-line\" />\n  <text x=\"340\" y=\"148\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n\n  <!-- M Node to Layer 2 Branches -->\n  <path d=\"M 210 300 L 420 240\" class=\"branch\" />\n  <path d=\"M 210 300 L 420 300\" class=\"branch\" />\n  <path d=\"M 210 300 L 420 360\" class=\"branch\" />\n\n  <!-- M Node L2 Probabilities -->\n  \n  <rect x=\"330\" y=\"249\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"260\" class=\"prob-text\" text-anchor=\"middle\">3</text>\n  <line x1=\"334\" y1=\"263\" x2=\"346\" y2=\"263\" class=\"prob-line\" />\n  <text x=\"340\" y=\"274\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"286\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"297\" class=\"prob-text\" text-anchor=\"middle\">7</text>\n  <line x1=\"334\" y1=\"300\" x2=\"346\" y2=\"300\" class=\"prob-line\" />\n  <text x=\"340\" y=\"311\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"323\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"334\" class=\"prob-text\" text-anchor=\"middle\">5</text>\n  <line x1=\"334\" y1=\"337\" x2=\"346\" y2=\"337\" class=\"prob-line\" />\n  <text x=\"340\" y=\"348\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n\n  <!-- L Node to Layer 2 Branches -->\n  <path d=\"M 210 500 L 420 440\" class=\"branch\" />\n  <path d=\"M 210 500 L 420 500\" class=\"branch\" />\n  <path d=\"M 210 500 L 420 560\" class=\"branch\" />\n\n  <!-- L Node L2 Probabilities -->\n  \n  <rect x=\"330\" y=\"449\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"460\" class=\"prob-text\" text-anchor=\"middle\">3</text>\n  <line x1=\"334\" y1=\"463\" x2=\"346\" y2=\"463\" class=\"prob-line\" />\n  <text x=\"340\" y=\"474\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"486\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"497\" class=\"prob-text\" text-anchor=\"middle\">8</text>\n  <line x1=\"334\" y1=\"500\" x2=\"346\" y2=\"500\" class=\"prob-line\" />\n  <text x=\"340\" y=\"511\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n  \n  <rect x=\"330\" y=\"523\" width=\"20\" height=\"28\" fill=\"#fff\" />\n  <text x=\"340\" y=\"534\" class=\"prob-text\" text-anchor=\"middle\">4</text>\n  <line x1=\"334\" y1=\"537\" x2=\"346\" y2=\"537\" class=\"prob-line\" />\n  <text x=\"340\" y=\"548\" class=\"prob-text\" text-anchor=\"middle\">15</text>\n\n  <!-- Layer 2 Nodes & Outcomes -->\n  <text x=\"430\" y=\"44\" class=\"node\">S</text> <text x=\"460\" y=\"44\" class=\"outcome\">SS</text>\n  <text x=\"430\" y=\"104\" class=\"node\">M</text> <text x=\"460\" y=\"104\" class=\"outcome\">SM</text>\n  <text x=\"430\" y=\"164\" class=\"node\">L</text> <text x=\"460\" y=\"164\" class=\"outcome\">SL</text>\n  \n  <text x=\"430\" y=\"244\" class=\"node\">S</text> <text x=\"460\" y=\"244\" class=\"outcome\">MS</text>\n  <text x=\"430\" y=\"304\" class=\"node\">M</text> <text x=\"460\" y=\"304\" class=\"outcome\">MM</text>\n  <text x=\"430\" y=\"364\" class=\"node\">L</text> <text x=\"460\" y=\"364\" class=\"outcome\">ML</text>\n  \n  <text x=\"430\" y=\"444\" class=\"node\">S</text> <text x=\"460\" y=\"444\" class=\"outcome\">LS</text>\n  <text x=\"430\" y=\"504\" class=\"node\">M</text> <text x=\"460\" y=\"504\" class=\"outcome\">LM</text>\n  <text x=\"430\" y=\"564\" class=\"node\">L</text> <text x=\"460\" y=\"564\" class=\"outcome\">LL</text>\n</svg>\n"
+                }
+              ],
+              "manual": true
+            },
+            {
+              "id": "glenwood2020-q33b",
+              "type": "mc",
+              "stem": "(b) Using your tree diagram from part (a), find the probability that Ed chooses two shirts of the same size.",
+              "options": [
+                "\\( \\dfrac{41}{120} \\)",
+                "\\( \\dfrac{1}{8} \\)",
+                "\\( \\dfrac{7}{20} \\)",
+                "\\( \\dfrac{16}{120} \\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Since the shirts are chosen without replacement, the probability of a matching pair is the sum of the three same-size branch pairs from the tree diagram in part (a): both small, both medium, or both large.",
+                  "work": "P(\\text{same size}) = P(SS)+P(MM)+P(LL)"
+                },
+                {
+                  "explain": "Multiply along the \\( S\\to S \\) branch using the probabilities from part (a).",
+                  "work": "P(SS) = \\dfrac{3}{16}\\times\\dfrac{2}{15} = \\dfrac{6}{240}"
+                },
+                {
+                  "explain": "Multiply along the \\( M\\to M \\) branch.",
+                  "work": "P(MM) = \\dfrac{8}{16}\\times\\dfrac{7}{15} = \\dfrac{56}{240}"
+                },
+                {
+                  "explain": "Multiply along the \\( L\\to L \\) branch.",
+                  "work": "P(LL) = \\dfrac{5}{16}\\times\\dfrac{4}{15} = \\dfrac{20}{240}"
+                },
+                {
+                  "explain": "Add the three probabilities together, then simplify the fraction to lowest terms.",
+                  "work": "P(\\text{same size}) = \\dfrac{6+56+20}{240} = \\dfrac{82}{240} = \\dfrac{41}{120}"
+                }
+              ]
+            }
+          ],
+          "steps": [
+            {
+              "explain": "Part (a): draw a tree diagram for two draws without replacement from 3 small (S), 8 medium (M), 5 large (L) shirts, 16 total. First-draw probabilities use the full 16 shirts; second-draw probabilities are conditional on what was drawn first (one fewer shirt of that size, 15 remaining total).",
+              "work": "<svg viewBox=\"0 0 320 290\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-width:320px;display:block;margin:0.5rem auto\">\n    <circle cx=\"30\" cy=\"150\" r=\"4\" fill=\"#1e293b\"/>\n    <line x1=\"30\" y1=\"150\" x2=\"140\" y2=\"60\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <line x1=\"30\" y1=\"150\" x2=\"140\" y2=\"150\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <line x1=\"30\" y1=\"150\" x2=\"140\" y2=\"240\" stroke=\"#475569\" stroke-width=\"1.5\"/>\n    <text x=\"70\" y=\"95\" font-family=\"system-ui\" font-size=\"10\" fill=\"#1e293b\">3/16</text>\n    <text x=\"70\" y=\"145\" font-family=\"system-ui\" font-size=\"10\" fill=\"#1e293b\">8/16</text>\n    <text x=\"70\" y=\"205\" font-family=\"system-ui\" font-size=\"10\" fill=\"#1e293b\">5/16</text>\n    <circle cx=\"145\" cy=\"60\" r=\"3\" fill=\"#1e293b\"/><text x=\"150\" y=\"55\" font-family=\"system-ui\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">S</text>\n    <circle cx=\"145\" cy=\"150\" r=\"3\" fill=\"#1e293b\"/><text x=\"150\" y=\"145\" font-family=\"system-ui\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">M</text>\n    <circle cx=\"145\" cy=\"240\" r=\"3\" fill=\"#1e293b\"/><text x=\"150\" y=\"235\" font-family=\"system-ui\" font-size=\"11\" font-weight=\"600\" fill=\"#1e293b\">L</text>\n    <line x1=\"150\" y1=\"60\" x2=\"260\" y2=\"30\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n    <line x1=\"150\" y1=\"60\" x2=\"260\" y2=\"90\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n    <text x=\"185\" y=\"35\" font-family=\"system-ui\" font-size=\"9\" fill=\"#64748b\">2/15 S</text>\n    <text x=\"185\" y=\"80\" font-family=\"system-ui\" font-size=\"9\" fill=\"#64748b\">13/15 not-S</text>\n    <line x1=\"150\" y1=\"150\" x2=\"260\" y2=\"120\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n    <line x1=\"150\" y1=\"150\" x2=\"260\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n    <text x=\"185\" y=\"125\" font-family=\"system-ui\" font-size=\"9\" fill=\"#64748b\">7/15 M</text>\n    <text x=\"185\" y=\"170\" font-family=\"system-ui\" font-size=\"9\" fill=\"#64748b\">8/15 not-M</text>\n    <line x1=\"150\" y1=\"240\" x2=\"260\" y2=\"210\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n    <line x1=\"150\" y1=\"240\" x2=\"260\" y2=\"270\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/>\n    <text x=\"185\" y=\"215\" font-family=\"system-ui\" font-size=\"9\" fill=\"#64748b\">4/15 L</text>\n    <text x=\"185\" y=\"260\" font-family=\"system-ui\" font-size=\"9\" fill=\"#64748b\">11/15 not-L</text>\n  </svg>"
+            },
+            {
+              "explain": "Record the branch probabilities: first draw \\(P(S)=\\dfrac{3}{16}\\), \\(P(M)=\\dfrac{8}{16}=\\dfrac{1}{2}\\), \\(P(L)=\\dfrac{5}{16}\\). Second draw (given same size drawn first): one fewer of that size out of 15 remaining.",
+              "work": "\\(P(S\\text{ then } S) = \\dfrac{3}{16}\\times\\dfrac{2}{15}\\)\\\\ \\(P(M\\text{ then } M) = \\dfrac{8}{16}\\times\\dfrac{7}{15}\\)\\\\ \\(P(L\\text{ then } L) = \\dfrac{5}{16}\\times\\dfrac{4}{15}\\)"
+            },
+            {
+              "explain": "Part (b): P(two shirts same size) is the sum of the three 'same size twice' branch probabilities.",
+              "work": "\\(P(\\text{same size}) = \\dfrac{3}{16}\\times\\dfrac{2}{15} + \\dfrac{8}{16}\\times\\dfrac{7}{15} + \\dfrac{5}{16}\\times\\dfrac{4}{15}\\)\\\\ \\(= \\dfrac{6}{240} + \\dfrac{56}{240} + \\dfrac{20}{240}\\)"
+            },
+            {
+              "explain": "Add the fractions and simplify to lowest terms.",
+              "work": "\\(= \\dfrac{82}{240} = \\dfrac{41}{120} \\approx 0.342\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60,
+          "meta": {
+            "source": "Glenwood 2020 Trial Q33",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "glenwood-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-TOTAL-01"
+          }
+        },
+        {
+          "id": "gosford2020-q18",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The discrete random variable \\(X\\) has the probability distribution shown below, and \\(E(X)=0.55\\).",
+          "figure": {
+            "svg": "fig:38372879d8"
+          },
+          "parts": [
+            {
+              "id": "gosford2020-q18a",
+              "type": "mc",
+              "stem": "(a) Find \\( a \\) and \\( b \\).",
+              "options": [
+                "a=0.18,\\ b=0.34",
+                "a=0.55,\\ b=0.32",
+                "a=0.34,\\ b=0.22",
+                "a=0.34,\\ b=0.18"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Apply \\( E(X)=\\sum xP(X=x)=0.55 \\), noting the \\( x=0 \\) term vanishes regardless of \\( b \\).",
+                  "work": "\\(-a+0.2(1)+0.15(2)+0.13(3) = 0.55 \\;\\Rightarrow\\; -a+0.89=0.55\\)"
+                },
+                {
+                  "explain": "Solve for \\( a \\).",
+                  "work": "\\(a = 0.89-0.55 = 0.34\\)"
+                },
+                {
+                  "explain": "Use \\( \\sum P(X=x)=1 \\) to solve for \\( b \\). Pitfall: swapping which unknown solves from the sum-to-1 equation versus the mean equation gives the a=0.18,b=0.34 distractor.",
+                  "work": "\\(0.34+b+0.2+0.15+0.13=1 \\;\\Rightarrow\\; b=0.18\\)"
+                }
+              ]
+            },
+            {
+              "id": "gosford2020-q18b",
+              "type": "mc",
+              "stem": "(b) Find \\( \\text{Var}(X) \\).",
+              "options": [
+                "2.0075",
+                "2.31",
+                "0.3025",
+                "1.7075"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Compute \\( E(X^2)=\\sum x^2P(X=x) \\) using the full probability distribution (including \\( a=0.34,\\ b=0.18 \\) from part (a)).",
+                  "work": "\\(E(X^2) = (-1)^2(0.34)+0^2(0.18)+1^2(0.2)+2^2(0.15)+3^2(0.13) = 0.34+0+0.2+0.6+1.17 = 2.31\\)"
+                },
+                {
+                  "explain": "Apply the variance formula \\( \\text{Var}(X)=E(X^2)-[E(X)]^2 \\).",
+                  "work": "\\(\\text{Var}(X) = 2.31-(0.55)^2\\)"
+                },
+                {
+                  "explain": "Simplify. Pitfall: forgetting to subtract \\( [E(X)]^2 \\) and reporting \\( E(X^2)=2.31 \\) directly is a common mistake.",
+                  "work": "\\(\\text{Var}(X) = 2.31-0.3025 = 2.0075\\)"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "Gosford 2020 Trial Q18",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "gosford-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-DIST-01"
+          }
+        },
+        {
+          "id": "hh2020-q19",
+          "type": "multipart",
+          "stem": "A bag contains 9 blue lollies and 7 green lollies. Georgia takes out a lolly without looking and eats it, then takes out another lolly without looking and eats it.",
+          "parts": [
+            {
+              "id": "hh2020-q19a",
+              "type": "mc",
+              "stem": "(a) What is the probability of Georgia choosing a blue lolly in her first selection?",
+              "options": [
+                "\\(\\dfrac12\\)",
+                "\\(\\dfrac{9}{7}\\)",
+                "\\(\\dfrac{7}{16}\\)",
+                "\\(\\dfrac{9}{16}\\)"
+              ],
+              "answer": 3,
+              "hint": "There are 16 lollies in total (9 blue + 7 green).",
+              "steps": [
+                {
+                  "explain": "The total number of lollies in the bag is 9 blue + 7 green.",
+                  "work": "Total \\(= 9+7 = 16\\)"
+                },
+                {
+                  "explain": "The probability of selecting blue is the number of blue lollies over the total.",
+                  "work": "\\(P(B) = \\dfrac{9}{16}\\)"
+                }
+              ]
+            },
+            {
+              "id": "hh2020-q19b",
+              "type": "mc",
+              "stem": "(b) By drawing a tree diagram, or otherwise, find the probability that Georgia eats two lollies of different colours.",
+              "options": [
+                "\\(\\dfrac{21}{40}\\)",
+                "\\(\\dfrac{63}{240}\\)",
+                "\\(\\dfrac{1}{2}\\)",
+                "\\(\\dfrac{9}{16}\\)"
+              ],
+              "answer": 0,
+              "hint": "Two colours means either (blue then green) or (green then blue) — add these two branches. Remember there is no replacement, so the totals shrink after the first draw.",
+              "steps": [
+                {
+                  "explain": "Two paths give different colours: blue-then-green, or green-then-blue. Since Georgia eats each lolly (no replacement), the second draw is from a bag of 15.",
+                  "work": "Paths: \\(P(BG)\\) and \\(P(GB)\\), each drawn without replacement from 16 then 15"
+                },
+                {
+                  "explain": "Calculate each path using the product rule.",
+                  "work": "\\(P(BG) = \\dfrac{9}{16}\\times\\dfrac{7}{15}, \\qquad P(GB) = \\dfrac{7}{16}\\times\\dfrac{9}{15}\\)"
+                },
+                {
+                  "explain": "Both paths give the same product (as expected, by symmetry), so add them together.",
+                  "work": "\\(P(\\text{different}) = 2\\times\\dfrac{9}{16}\\times\\dfrac{7}{15} = \\dfrac{126}{240}\\)"
+                },
+                {
+                  "explain": "Simplify the fraction.",
+                  "work": "\\(= \\dfrac{21}{40}\\)"
+                }
+              ]
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hunters Hill HS 2020 2U Trials",
+            "school": "Hunters Hill High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-2u-q11a",
+          "type": "mc",
+          "stem": "Cody wins the first set against Sofia in two out of every seven tennis matches they play. If he wins the first set, he wins the second set three out of every five times, but if he loses the first set, he wins the second set one out of every five times. Complete the probability tree and find the probability that Cody loses both sets.",
+          "options": [
+            "\\(\\frac{4}{7}\\)",
+            "\\(\\frac{5}{7}\\)",
+            "\\(\\frac{1}{7}\\)",
+            "\\(\\frac{4}{35}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "The probability Cody loses the first set is the complement of winning it.",
+              "work": "<svg viewBox=\"0 0 320 240\" width=\"320\" height=\"240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(20,20)\"><line x1=\"10\" y1=\"100\" x2=\"110\" y2=\"50\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"10\" y1=\"100\" x2=\"110\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\"/><line x1=\"110\" y1=\"50\" x2=\"220\" y2=\"25\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"50\" x2=\"220\" y2=\"75\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"150\" x2=\"220\" y2=\"125\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"150\" x2=\"220\" y2=\"175\" stroke=\"#059669\" stroke-width=\"2.6\"/><text x=\"60.0\" y=\"69.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">2/7</text><text x=\"54.0\" y=\"135.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">5/7</text><text x=\"165.0\" y=\"174.5\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">4/5</text><text x=\"165.0\" y=\"31.5\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">3/5</text><text x=\"165.0\" y=\"66.5\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">2/5</text><text x=\"165.0\" y=\"133.5\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">1/5</text><text x=\"4.0\" y=\"104.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">Start</text><text x=\"118.0\" y=\"44.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">W</text><text x=\"118.0\" y=\"162.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">L</text><text x=\"228.0\" y=\"25.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">W</text><text x=\"228.0\" y=\"75.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">L</text><text x=\"228.0\" y=\"125.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">W</text><text x=\"228.0\" y=\"175.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">L</text></g></svg>\n\n\\(P(L_1) = 1 - \\frac{2}{7} = \\frac{5}{7}\\)"
+            },
+            {
+              "explain": "Given he lost the first set, the probability he loses the second set too is the complement of his (1 in 5) chance of winning it from there.",
+              "work": "\\(P(L_2 | L_1) = 1 - \\frac{1}{5} = \\frac{4}{5}\\)"
+            },
+            {
+              "explain": "Follow the highlighted \\(L_1 \\to L_2\\) branch of the tree: multiply along the path to find \\(P(\\text{both losses})\\).",
+              "work": "\\(P(L_1 \\cap L_2) = \\frac{5}{7} \\times \\frac{4}{5}\\)"
+            },
+            {
+              "explain": "Multiply and simplify (the 5s cancel).",
+              "work": "\\(= \\frac{20}{35} = \\frac{4}{7}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-2u-q11b",
+          "type": "mc",
+          "stem": "Cody wins the first set against Sofia in two out of every seven tennis matches they play. If he wins the first set, he wins the second set three out of every five times, but if he loses the first set, he wins the second set one out of every five times. Suppose Cody and Sofia play 70 matches in a year. In how many of those matches would Cody expect to win at least one set?",
+          "options": [
+            "30 matches",
+            "40 matches",
+            "35 matches",
+            "20 matches"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "First find \\(P(\\text{Cody loses both sets})\\). The probability he loses the first set is the complement of winning it.",
+              "work": "<svg viewBox=\"0 0 320 240\" width=\"320\" height=\"240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(20,20)\"><line x1=\"10\" y1=\"100\" x2=\"110\" y2=\"50\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"10\" y1=\"100\" x2=\"110\" y2=\"150\" stroke=\"#059669\" stroke-width=\"2.6\"/><line x1=\"110\" y1=\"50\" x2=\"220\" y2=\"25\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"50\" x2=\"220\" y2=\"75\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"150\" x2=\"220\" y2=\"125\" stroke=\"#cbd5e1\" stroke-width=\"1.5\"/><line x1=\"110\" y1=\"150\" x2=\"220\" y2=\"175\" stroke=\"#059669\" stroke-width=\"2.6\"/><text x=\"60.0\" y=\"69.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">2/7</text><text x=\"54.0\" y=\"135.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">5/7</text><text x=\"165.0\" y=\"174.5\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">4/5</text><text x=\"165.0\" y=\"31.5\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">3/5</text><text x=\"165.0\" y=\"66.5\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">2/5</text><text x=\"165.0\" y=\"133.5\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">1/5</text><text x=\"4.0\" y=\"104.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">Start</text><text x=\"118.0\" y=\"44.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">W</text><text x=\"118.0\" y=\"162.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">L</text><text x=\"228.0\" y=\"25.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">W</text><text x=\"228.0\" y=\"75.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">L</text><text x=\"228.0\" y=\"125.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">W</text><text x=\"228.0\" y=\"175.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#059669\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">L</text></g></svg>\n\n\\(P(L_1) = 1 - \\frac{2}{7} = \\frac{5}{7}\\)"
+            },
+            {
+              "explain": "Given he lost the first set, the probability he loses the second set too is the complement of his (1 in 5) chance of winning it from there.",
+              "work": "\\(P(L_2 | L_1) = 1 - \\frac{1}{5} = \\frac{4}{5}\\)"
+            },
+            {
+              "explain": "Follow the highlighted \\(L_1 \\to L_2\\) branch of the tree: multiply along the path to find \\(P(\\text{both losses})\\).",
+              "work": "\\(P(L_1 \\cap L_2) = \\frac{5}{7} \\times \\frac{4}{5} = \\frac{20}{35} = \\frac{4}{7}\\)"
+            },
+            {
+              "explain": "\"At least one set\" is the complement of losing both sets.",
+              "work": "\\(P(\\text{at least one set}) = 1 - \\frac{4}{7} = \\frac{3}{7}\\)"
+            },
+            {
+              "explain": "Multiply this probability by the total number of matches (70) to find the expected count.",
+              "work": "\\(\\frac{3}{7} \\times 70\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(= 30 \\text{ matches}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y11a-12G",
+      "code": "12G",
+      "title": "Conditional probability",
+      "questions": [
+        {
+          "id": "hg2020-q8",
+          "type": "mc",
+          "stem": "\\(A\\) and \\(B\\) are events of a sample space. Given that \\(P(A|B)=4p\\), \\(P(B)=p^3\\) and \\(P(A)=2p^2\\), \\(P(B|A)\\) is equal to:",
+          "options": [
+            "\\(\\dfrac{p^2}{2}\\)",
+            "\\(2p^6\\)",
+            "\\(2p^2\\)",
+            "\\(\\dfrac{2}{p^2}\\)"
+          ],
+          "answer": 2,
+          "hint": "Both \\(P(A|B)\\) and \\(P(B|A)\\) can be written in terms of \\(P(A\\cap B)\\) — link them through that shared quantity.",
+          "steps": [
+            {
+              "explain": "Write both conditional probability definitions in terms of \\(P(A\\cap B)\\).",
+              "work": "\\(P(A|B) = \\dfrac{P(A\\cap B)}{P(B)} \\quad\\text{and}\\quad P(B|A) = \\dfrac{P(A\\cap B)}{P(A)}\\)"
+            },
+            {
+              "explain": "Rearrange each to isolate \\(P(A\\cap B)\\), giving two expressions for the same quantity.",
+              "work": "\\(P(A\\cap B) = P(A|B)\\cdot P(B) = 4p\\cdot p^3 = 4p^4\\)"
+            },
+            {
+              "explain": "Substitute this into the second definition, along with \\(P(A)=2p^2\\).",
+              "work": "\\(P(B|A) = \\dfrac{4p^4}{2p^2}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(P(B|A) = 2p^2\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hornsby Girls HS 2020 2U Trials",
+            "school": "Hornsby Girls High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hh2020-q4",
+          "type": "mc",
+          "stem": "\\(A\\) and \\(B\\) are events from a sample space such that \\(P(A)=p\\), where \\(p>0\\), \\(P(B|A)=m\\) and \\(P(B|A')=n\\). \\(A\\) and \\(B\\) are independent events when:",
+          "options": [
+            "\\(m+n=1\\)",
+            "\\(m=n\\)",
+            "\\(m=p\\)",
+            "\\(m=1-p\\)"
+          ],
+          "answer": 1,
+          "hint": "For independent events, knowing \\(A\\) happened should not change the probability of \\(B\\) — so \\(P(B|A)\\) should equal \\(P(B|A')\\), and both should equal \\(P(B)\\).",
+          "steps": [
+            {
+              "explain": "Independence means that conditioning on \\(A\\) (or its complement) does not affect the probability of \\(B\\) — both conditional probabilities must equal the unconditional \\(P(B)\\).",
+              "work": "Independence: \\(P(B|A) = P(B) = P(B|A')\\)"
+            },
+            {
+              "explain": "Since \\(m=P(B|A)\\) and \\(n=P(B|A')\\), independence requires these to be equal.",
+              "work": "\\(\\therefore m=n\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hunters Hill HS 2020 2U Trials",
+            "school": "Hunters Hill High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    }
+  ]
+}

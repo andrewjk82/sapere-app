@@ -1,0 +1,73 @@
+{
+  "chapterId": "exam:year12ach1h",
+  "title": "Exam Practice",
+  "year": "Year 12a",
+  "topics": [
+    {
+      "topicId": "exam:year12ach1h",
+      "code": "",
+      "title": "The limiting sum of a geometric series",
+      "questions": [
+        {
+          "id": "y12a-1h-q8d",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "For a geometric progression with first term \\(a = 6\\) and common ratio \\(r = -3\\):\n\nWrite down the first six terms of \\(T_n\\) and the partial sums \\(S_n\\), and describe the behaviour of \\(S_n\\) as \\(n \\to \\infty\\).",
+          "answer": "0",
+          "hint": "Each term is multiplied by \\(-3\\). Sum the alternating terms.",
+          "steps": [
+            {
+              "explain": "Determine the first six terms \\(T_n\\).",
+              "work": "\\(T_n = 6 \\times (-3)^{n-1} \\implies 6, -18, 54, -162, 486, -1458\\)"
+            },
+            {
+              "explain": "Calculate the partial sums \\(S_n\\).",
+              "work": "\\(S_1 = 6\\)\n\\(S_2 = -12\\)\n\\(S_3 = 42\\)\n\\(S_4 = -120\\)\n\\(S_5 = 366\\)\n\\(S_6 = -1092\\)"
+            },
+            {
+              "explain": "Examine the behavior as \\(n \\to \\infty\\).",
+              "work": "The values oscillate with growing absolute values: \\(6, -12, 42, -120, dots\\) which diverges."
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1h-q17b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Suppose that \\(T_n = ar^{n-1}\\) is a geometric progression with a limiting sum.\n\nFind the first three terms of this progression if the second term is 8 and the limiting sum is 32.",
+          "options": [
+            "\\(24, 8, frac{8}{3}\\)",
+            "\\(18, 8, frac{32}{9}\\)",
+            "\\(12, 8, frac{16}{3}\\)",
+            "\\(16, 8, 4\\)"
+          ],
+          "answer": 3,
+          "hint": "Express the second term \\(ar = 8\\) and the limiting sum \\(\\frac{a}{1-r} = 32\\), then solve for \\(a\\) and \\(r\\).",
+          "steps": [
+            {
+              "explain": "Write the system of equations based on the given information.",
+              "work": "\\(T_2 = ar = 8\\)\n\\(S_{\\infty} = \\frac{a}{1-r} = 32\\)"
+            },
+            {
+              "explain": "Express the first term \\(a\\) in terms of \\(r\\) and substitute it into the second equation.",
+              "work": "\\(a = \\frac{8}{r} \\implies \\frac{\\frac{8}{r}}{1-r} = 32 \\implies \\frac{8}{r(1-r)} = 32\\)"
+            },
+            {
+              "explain": "Simplify the equation into a quadratic form.",
+              "work": "\\(\\frac{1}{r(1-r)} = 4 \\implies 4r(1-r) = 1 \\implies 4r - 4r^2 = 1 \\implies 4r^2 - 4r + 1 = 0\\)"
+            },
+            {
+              "explain": "Solve the quadratic equation for \\(r\\) and find the corresponding first term \\(a\\).",
+              "work": "\\((2r - 1)^2 = 0 \\implies r = \\frac{1}{2}\\)\n\\(a = \\frac{8}{1/2} = 16\\)"
+            },
+            {
+              "explain": "Generate the first three terms of the sequence.",
+              "work": "\\(T_1 = 16\\), \\(T_2 = 8\\), \\(T_3 = 4\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

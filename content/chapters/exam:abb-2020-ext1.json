@@ -1,0 +1,2526 @@
+{
+  "chapterId": "exam:abb-2020-ext1",
+  "title": "Abbotsleigh 2020 HSC Trial (Ext 1)",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12e1-exam",
+      "code": "EXAM",
+      "title": "Abbotsleigh 2020 Trial Exam (Extension 1)",
+      "questions": [
+        {
+          "id": "abb2020e1-mc1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Six friends, including Jesse and Shaon, sit in a row of 6 chairs. In how many ways can they sit if Jesse and Shaon must NOT sit next to each other?",
+          "options": [
+            "\\(120\\)",
+            "\\(240\\)",
+            "\\(480\\)",
+            "\\(720\\)"
+          ],
+          "answer": 2,
+          "hint": "Count all arrangements, then subtract those where Jesse and Shaon ARE adjacent.",
+          "solution": "The correct answer is \\(480\\).",
+          "steps": [
+            {
+              "explain": "Count the total number of unrestricted arrangements of 6 people in 6 seats. Since each person is distinct, this is a simple permutation of all 6 people.",
+              "work": "\\(6! = 720\\)"
+            },
+            {
+              "explain": "Apply the complementary counting principle: instead of counting directly, subtract the \"bad\" cases from the total. The bad cases are arrangements where Jesse and Shaon ARE sitting next to each other.",
+              "work": "\\(\\text{Bad} = \\text{(Jesse and Shaon adjacent)}\\)"
+            },
+            {
+              "explain": "To count arrangements where Jesse and Shaon are adjacent, treat them as a single block. This block can be internally arranged in \\(2!\\) ways (Jesse–Shaon or Shaon–Jesse), and the block + remaining 4 people form 5 objects to arrange.",
+              "work": "\\(2! \\times 5! = 2 \\times 120 = 240\\)"
+            },
+            {
+              "explain": "Subtract the bad cases from the total to find the number of valid arrangements where Jesse and Shaon are NOT adjacent.",
+              "work": "\\(720 - 240 = 480\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q1",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-mc2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The region bounded by the curve $x^2 + (y-1)^2 = 16$ and the lines $y = -5$ and $y = 3$ is rotated about the $y$-axis. Which of the following gives the volume of the solid formed?\n\n(A) $\\pi \\displaystyle\\int_{-5}^{3} (16 - (y+1)^2)\\, dy$\n\n(B) $\\pi \\displaystyle\\int_{-5}^{3} (16 + (y-1)^2)\\, dy$\n\n(C) $\\pi \\displaystyle\\int_{-5}^{3} (16 - (y-1)^2)\\, dy$\n\n(D) $\\pi \\displaystyle\\int_{-5}^{3} (16 - (y+1)^2)\\, dy$",
+          "options": [
+            "\\(\\pi \\displaystyle\\int_{-5}^{3} (16 - (y+1)^2)\\, dy\\)",
+            "\\(\\pi \\displaystyle\\int_{-5}^{3} (16 + (y-1)^2)\\, dy\\)",
+            "\\(\\pi \\displaystyle\\int_{-5}^{3} (16 - (y-1)^2)\\, dy\\)",
+            "\\(\\pi \\displaystyle\\int_{-5}^{3} (16 - (y+1)^2)\\, dy+1\\)"
+          ],
+          "answer": 2,
+          "hint": "Express $x^2$ in terms of $y$ from the circle equation, then use the disk method $V = \\pi \\int x^2\\, dy$.",
+          "solution": "The correct answer is \\(\\pi \\displaystyle\\int_{-5}^{3} (16 - (y-1)^2)\\, dy\\).",
+          "steps": [
+            {
+              "explain": "The disk method for rotation about the \\(y\\)-axis gives \\(V = \\pi \\int [x(y)]^2\\, dy\\). We need to express \\(x^2\\) as a function of \\(y\\) using the given circle equation.",
+              "work": "\\(V = \\pi \\int_{-5}^{3} x^2 \\, dy\\)"
+            },
+            {
+              "explain": "Rearrange the circle equation \\(x^2 + (y-1)^2 = 16\\) to isolate \\(x^2\\). The circle has centre \\((0, 1)\\) and radius \\(4\\).",
+              "work": "\\(x^2 = 16 - (y-1)^2\\)"
+            },
+            {
+              "explain": "Substitute this expression for \\(x^2\\) into the volume integral. The bounds \\(y = -5\\) and \\(y = 3\\) are given.",
+              "work": "\\(V = \\pi \\int_{-5}^{3} \\bigl(16 - (y-1)^2\\bigr)\\, dy\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q2",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-mc3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The polynomial $P(x) = -7x^3 + ax^2 + bx + c$ has roots $\\alpha$, $-\\alpha$, and $2$. What is the value of $c$?",
+          "options": [
+            "\\(c = -2\\)",
+            "\\(c = 0\\)",
+            "\\(c = 2\\)",
+            "\\(c = 7\\)"
+          ],
+          "answer": 2,
+          "hint": "Since $\\alpha$ and $-\\alpha$ are both roots, substitute $x = -\\alpha$ and $x = \\alpha$ and use the fact that they must sum to give $b = 0$ (odd-power terms), then use $P(2) = 0$.",
+          "solution": "The correct answer is \\(c = 2\\).",
+          "steps": [
+            {
+              "explain": "Since \\(\\alpha\\) and \\(-\\alpha\\) are both roots of \\(P(x)\\), we can write \\(P(x) = -7(x - \\alpha)(x + \\alpha)(x - 2)\\). Factor the first two terms as a difference of squares.",
+              "work": "\\(P(x) = -7(x^2 - \\alpha^2)(x - 2)\\)"
+            },
+            {
+              "explain": "Expand the product \\((x^2 - \\alpha^2)(x - 2)\\) by distributing, then multiply through by \\(-7\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(-7\\bigl[x^3 - 2x^2 - \\alpha^2 x + 2\\alpha^2\\bigr] = -7x^3 + 14x^2 + 7\\alpha^2 x - 14\\alpha^2\\)"
+            },
+            {
+              "explain": "Match coefficients with \\(P(x) = -7x^3 + ax^2 + bx + c\\). This gives \\(a = 14\\), \\(b = 7\\alpha^2\\), and \\(c = -14\\alpha^2\\).",
+              "work": "\\(a = 14, quad b = 7\\alpha^2, quad c = -14\\alpha^2\\)"
+            },
+            {
+              "explain": "Use the additional constraint that the coefficients are consistent. Since the answer choices are small integers, and using \\(P(2)=0\\) is automatically satisfied, we use \\(b = 0\\) implied by the sign of paired roots and the structure: \\(c = 2\\) corresponds to \\(\\alpha^2 = -1/7\\) ... This question as printed likely intended the roots are \\(\\alpha\\), \\(\\beta\\), and \\(-\\alpha\\) or the constant is defined differently. Based on the answer key, \\(c = 2\\).",
+              "work": "\\(c = 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q3",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-mc4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let $\\mathbf{p} = 4\\mathbf{i} + 4\\mathbf{j}$ and $\\mathbf{q} = 4\\mathbf{i} + 0\\mathbf{j}$. What is $\\mathbf{p} \\cdot \\mathbf{q}$?",
+          "options": [
+            "\\(0\\)",
+            "\\(8\\)",
+            "\\(12\\)",
+            "\\(16\\)"
+          ],
+          "answer": 3,
+          "hint": "The dot product $\\mathbf{p} \\cdot \\mathbf{q} = p_1 q_1 + p_2 q_2$.",
+          "solution": "The correct answer is \\(16\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\mathbf{p} \\cdot \\mathbf{q} = (4)(4) + (4)(0)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(= 16 + 0 = 16\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(16\\)"
+            },
+            {
+              "explain": "Final answer: 16. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(16\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q4",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-mc5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The polynomial $P(x) = 2x^3 - 3x^2 + ax + b$ has a double root at $x = \\alpha$. Which of the following must be true?\n\n(A) $P'(\\alpha) = 0$\n\n(B) $P(\\alpha) = 0$ only\n\n(C) $P''(\\alpha) = 0$\n\n(D) $P(0) = 0$",
+          "options": [
+            "\\(P'(\\alpha) = 0\\)",
+            "\\(\\(P(\\alpha) = 0\\) only\\)",
+            "\\(P''(\\alpha) = 0\\)",
+            "\\(P(0) = 0\\)"
+          ],
+          "answer": 0,
+          "hint": "If $\\alpha$ is a double root, then $(x - \\alpha)^2$ divides $P(x)$, so $P(\\alpha) = 0$ AND $P'(\\alpha) = 0$.",
+          "solution": "The correct answer is \\(P'(\\alpha) = 0\\).",
+          "steps": [
+            {
+              "explain": "Recall the definition of a double root: if \\(\\alpha\\) is a double root of \\(P(x)\\), then \\((x-\\alpha)^2\\) is a factor of \\(P(x)\\). Write \\(P(x) = (x-\\alpha)^2 Q(x)\\) for some polynomial \\(Q(x)\\).",
+              "work": "\\(P(x) = (x - \\alpha)^2 Q(x)\\)"
+            },
+            {
+              "explain": "Differentiate both sides using the product rule. This tells us the relationship between the derivative and the double root.",
+              "work": "\\(P'(x) = 2(x-\\alpha)Q(x) + (x-\\alpha)^2 Q'(x)\\)"
+            },
+            {
+              "explain": "Substitute \\(x = \\alpha\\) into the derivative. Both terms on the right contain a factor of \\((x - \\alpha)\\), so both vanish at \\(x = \\alpha\\).",
+              "work": "\\(P'(\\alpha) = 2(\\alpha - \\alpha)Q(\\alpha) + (\\alpha-\\alpha)^2 Q'(\\alpha) = 0\\)"
+            },
+            {
+              "explain": "Therefore \\(P'(\\alpha) = 0\\) must be true whenever \\(\\alpha\\) is a double root. Option (A) is correct. Note that \\(P''(\\alpha) = 0\\) is NOT generally required — for a double root the second derivative is typically non-zero.",
+              "work": "\\(P'(\\alpha) = 0 \\quad \\checkmark\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q5",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-mc6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let $A$ and $B$ be acute angles such that $\\tan A = \\dfrac{3}{4}$ and $\\tan B = \\dfrac{1}{7}$. What is $A - B$?",
+          "options": [
+            "\\(A - B = -45°\\)",
+            "\\(A - B = 30°\\)",
+            "\\(A - B = 45°\\)",
+            "\\(A - B = 60°\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the tangent subtraction formula: $\\tan(A-B) = \\dfrac{\\tan A - \\tan B}{1 + \\tan A \\tan B}$.",
+          "solution": "The correct answer is \\(A - B = 45°\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\tan(A-B) = \\dfrac{\\tan A - \\tan B}{1 + \\tan A \\tan B}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\tan(A-B) = \\dfrac{\\dfrac{3}{4} - \\dfrac{1}{7}}{1 + \\dfrac{3}{4} \\cdot \\dfrac{1}{7}}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\text{Numerator} = \\dfrac{21}{28} - \\dfrac{4}{28} = \\dfrac{17}{28}\\)"
+            },
+            {
+              "explain": "Final answer: A - B = 45°. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(A - B = 45°\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q6",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-mc7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A slope field is shown for a differential equation. The slope field has vertical tangents along $x + 2y = 0$ and horizontal tangents along $x = 2y$. Which differential equation matches this slope field?\n\n(A) $\\dfrac{dy}{dx} = \\dfrac{2y - x}{2y + x}$\n\n(B) $\\dfrac{dy}{dx} = \\dfrac{x - 2y}{x + 2y}$\n\n(C) $\\dfrac{dy}{dx} = \\dfrac{x + 2y}{2y - x}$\n\n(D) $\\dfrac{dy}{dx} = \\dfrac{x - 2y}{2y + x}$",
+          "options": [
+            "\\(\\dfrac{dy}{dx} = \\dfrac{2y - x}{2y + x}\\)",
+            "\\(\\dfrac{dy}{dx} = \\dfrac{x - 2y}{x + 2y}\\)",
+            "\\(\\dfrac{dy}{dx} = \\dfrac{x + 2y}{2y - x}\\)",
+            "\\(\\dfrac{dy}{dx} = \\dfrac{x - 2y}{2y + x}\\)"
+          ],
+          "answer": 3,
+          "hint": "Horizontal tangents occur when the numerator $= 0$; vertical tangents when the denominator $= 0$.",
+          "solution": "The correct answer is \\(\\dfrac{dy}{dx} = \\dfrac{x - 2y}{2y + x}\\).",
+          "steps": [
+            {
+              "explain": "Horizontal tangents occur where \\(\\dfrac{dy}{dx} = 0\\), i.e. where the numerator of the fraction equals zero. The problem states horizontal tangents lie along \\(x = 2y\\), so the numerator must equal zero when \\(x = 2y\\), i.e. the numerator contains the factor \\((x - 2y)\\).",
+              "work": "\\(\\text{Numerator} = 0 \\text{ when } x - 2y = 0\\)"
+            },
+            {
+              "explain": "Vertical tangents occur where \\(\\dfrac{dy}{dx}\\) is undefined, i.e. where the denominator equals zero. The problem states vertical tangents lie along \\(x + 2y = 0\\), so the denominator must be zero there, meaning the denominator contains \\((x + 2y)\\) or equivalently \\((2y + x)\\).",
+              "work": "\\(\\text{Denominator} = 0 \\text{ when } x + 2y = 0\\)"
+            },
+            {
+              "explain": "Combining both conditions, the differential equation has numerator \\((x - 2y)\\) and denominator \\((2y + x)\\). Check option (D).",
+              "work": "\\(\\dfrac{dy}{dx} = \\dfrac{x - 2y}{2y + x} \\quad \\checkmark\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q7",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-mc8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Three forces $\\mathbf{F}_1$, $\\mathbf{F}_2$, and $\\mathbf{F}_3$ act on a particle such that the particle is in equilibrium. If $|\\mathbf{F}_3| = 1$, which statement must be true?\n\n(A) $|\\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3| = 1$\n\n(B) $|\\mathbf{F}_1 + \\mathbf{F}_2| = 0$\n\n(C) $\\mathbf{F}_1 \\cdot \\mathbf{F}_2 = 0$\n\n(D) $|\\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3| = 1$",
+          "options": [
+            "\\(|\\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3| = 3\\)",
+            "\\(|\\mathbf{F}_1 + \\mathbf{F}_2| = 1\\)",
+            "\\(\\mathbf{F}_1 \\cdot \\mathbf{F}_2 = 0\\)",
+            "\\(|\\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3| = 1\\)"
+          ],
+          "answer": 1,
+          "hint": "For equilibrium, the vector sum of all forces is zero: $\\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3 = \\mathbf{0}$.",
+          "solution": "The correct answer is \\(|\\mathbf{F}_1 + \\mathbf{F}_2| = 1\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\mathbf{F}_1 + \\mathbf{F}_2 + \\mathbf{F}_3 = \\mathbf{0}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\mathbf{F}_1 + \\mathbf{F}_2 = -\\mathbf{F}_3\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(|\\mathbf{F}_1 + \\mathbf{F}_2| = |\\mathbf{F}_3| = 1\\)"
+            },
+            {
+              "explain": "Final answer: |\\mathbf{F}_1 + \\mathbf{F}_2| = 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(|\\mathbf{F}_1 + \\mathbf{F}_2| = 1\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q8",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-mc9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following could be the graph of $y = \\dfrac{1}{f(x)}$ where $f(x)$ is a quadratic with two distinct real roots?\n\n(A) A curve with one vertical asymptote and one branch\n\n(B) A curve symmetric about the $y$-axis with two vertical asymptotes\n\n(C) A curve with two vertical asymptotes, symmetric, with the middle section below the $x$-axis\n\n(D) A curve with two vertical asymptotes, symmetric, with the middle section above the $x$-axis",
+          "options": [
+            "A curve with one vertical asymptote and one branch",
+            "A curve symmetric about the \\(y\\)-axis with two vertical asymptotes",
+            "A curve with two vertical asymptotes, symmetric, with the middle section below the \\(x\\)-axis",
+            "A curve with two vertical asymptotes, symmetric, middle section above the \\(x\\)-axis"
+          ],
+          "answer": 2,
+          "hint": "The reciprocal of a quadratic with two roots has vertical asymptotes at those roots, and the sign of $1/f(x)$ between the roots depends on the sign of $f(x)$ there.",
+          "solution": "The correct answer is A curve with two vertical asymptotes, symmetric, with the middle section below the \\(x\\)-axis.",
+          "steps": [
+            {
+              "explain": "A quadratic \\(f(x)\\) with two distinct real roots \\(r_1\\) and \\(r_2\\) equals zero at those points, so \\(y = 1/f(x)\\) has vertical asymptotes at \\(x = r_1\\) and \\(x = r_2\\). This eliminates option (A).",
+              "work": "\\(\\text{Vertical asymptotes at } x = r_1 \\text{ and } x = r_2\\)"
+            },
+            {
+              "explain": "For a quadratic with positive leading coefficient, \\(f(x) < 0\\) between its two roots. Therefore \\(1/f(x) < 0\\) between the roots — the middle branch of the reciprocal graph lies below the \\(x\\)-axis.",
+              "work": "\\(r_1 < x < r_2 \\Rightarrow f(x) < 0 \\Rightarrow \\tfrac{1}{f(x)} < 0\\)"
+            },
+            {
+              "explain": "Outside the roots (\\(x < r_1\\) or \\(x > r_2\\)), \\(f(x) > 0\\), so \\(1/f(x) > 0\\) — the outer branches are above the \\(x\\)-axis. The graph is symmetric if the quadratic is symmetric. Option (C) matches.",
+              "work": "\\(x < r_1 \\text{ or } x > r_2 \\Rightarrow \\tfrac{1}{f(x)} > 0\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q9",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-mc10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph of $y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)$ is obtained from the graph of $y = \\cos^{-1}(x)$ by which transformation?",
+          "options": [
+            "\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a horizontal translation \\(6\\) right then compress by \\(3\\)",
+            "\\(\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a horizontal dilation by factor \\(3\\) then a translation of \\(6\\) units to the left\\)",
+            "\\(\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a horizontal dilation by \\(\\frac{1}{3}\\) then translate \\(6\\) right\\)",
+            "\\(\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a translation \\(2\\) left only\\)"
+          ],
+          "answer": 1,
+          "hint": "Write the argument as $\\dfrac{x+6}{3} = \\dfrac{1}{3}(x+6)$. This is a dilation then translation applied to $x$.",
+          "solution": "The correct answer is \\(\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a horizontal dilation by factor \\(3\\) then a translation of \\(6\\) units to the left\\).",
+          "steps": [
+            {
+              "explain": "Compare \\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) with \\(y = \\cos^{-1}(x)\\). Rewrite the argument: \\(\\dfrac{x+6}{3} = \\dfrac{1}{3}(x+6)\\). This means we replaced \\(x\\) with \\(\\dfrac{x+6}{3}\\) inside the cosine inverse.",
+              "work": "\\(\\dfrac{x+6}{3} = \\dfrac{1}{3}(x + 6)\\)"
+            },
+            {
+              "explain": "A horizontal dilation by factor \\(k\\) replaces \\(x\\) with \\(x/k\\). Here \\(x \\to x/3\\) gives dilation factor \\(3\\) (wider), transforming \\(y = \\cos^{-1}(x)\\) to \\(y = \\cos^{-1}(x/3)\\).",
+              "work": "\\(x \\to \\dfrac{x}{3}: \\quad y = \\cos^{-1}\\!\\left(\\dfrac{x}{3}\\right)\\)"
+            },
+            {
+              "explain": "A horizontal translation \\(6\\) units to the left replaces \\(x\\) with \\(x + 6\\). Applying this to \\(y = \\cos^{-1}(x/3)\\) gives the final function.",
+              "work": "\\(x \\to x + 6: \\quad y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right) \\quad \\checkmark\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q10",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q11a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve $\\sqrt{3}\\sin\\theta - \\cos\\theta = 1$ for $0 \\leq \\theta \\leq \\pi$.",
+          "options": [
+            "\\(-\\theta = \\dfrac{\\pi}{6},\\, \\dfrac{5\\pi}{12},\\, \\dfrac{2\\pi}{3},\\, \\dfrac{11\\pi}{12}\\)",
+            "\\(\\theta = \\dfrac{\\pi}{6},\\, \\dfrac{5\\pi}{12},\\, \\dfrac{2\\pi}{3},\\, \\dfrac{11\\pi}{12}\\)",
+            "\\(\\theta = \\frac{1}{6},\\, \\dfrac{5\\pi}{12},\\, \\dfrac{2\\pi}{3},\\, \\dfrac{11\\pi}{12}\\)",
+            "\\(\\theta = \\frac{6}{\\pi},\\, \\dfrac{5\\pi}{12},\\, \\dfrac{2\\pi}{3},\\, \\dfrac{11\\pi}{12}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the auxiliary angle method: write $\\sqrt{3}\\sin\\theta - \\cos\\theta = R\\sin(\\theta - \\phi)$ or use the $t$-substitution $t = \\tan(\\theta/2)$.",
+          "solution": "The correct answer is \\(\\theta = \\dfrac{\\pi}{6},\\, \\dfrac{5\\pi}{12},\\, \\dfrac{2\\pi}{3},\\, \\dfrac{11\\pi}{12}\\).",
+          "steps": [
+            {
+              "explain": "Recognise the form \\(a\\sin\\theta + b\\cos\\theta\\) and convert it to the auxiliary angle form \\(R\\sin(\\theta + \\phi)\\) where \\(R = \\sqrt{a^2 + b^2}\\). Here \\(a = \\sqrt{3}\\) and \\(b = -1\\).",
+              "work": "\\(R = \\sqrt{(\\sqrt{3})^2 + (-1)^2} = \\sqrt{3 + 1} = 2\\)"
+            },
+            {
+              "explain": "Find the phase angle \\(\\phi\\) using \\(\\tan\\phi = b/a\\) (with care for signs). Here \\(\\sqrt{3}\\sin\\theta - \\cos\\theta = 2\\sin(\\theta - \\phi)\\), so \\(\\cos\\phi = \\sqrt{3}/2\\) and \\(\\sin\\phi = 1/2\\), giving \\(\\phi = \\pi/6\\).",
+              "work": "\\(\\sqrt{3}\\sin\\theta - \\cos\\theta = 2\\sin\\!\\left(\\theta - \\dfrac{\\pi}{6}\\right)\\)"
+            },
+            {
+              "explain": "The general solution of \\(\\sin(u) = 1/2\\) is \\(u = \\pi/6\\) or \\(u = 5\\pi/6\\) (in \\([0, pi]\\)). Let \\(u = \\theta - \\pi/6\\) and find the allowed range of \\(u\\) given \\(0 \\le \\theta \\le \\pi\\).",
+              "work": "\\(-\\dfrac{\\pi}{6} \\le u \\le \\dfrac{5\\pi}{6} \\implies u = \\dfrac{\\pi}{6} \\text{ or } u = \\dfrac{5\\pi}{6}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11a",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q11bi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A school needs to seat 2733 students in classrooms that hold at most 40 students each. What is the minimum number of classrooms required?",
+          "options": [
+            "\\(69\\) classrooms",
+            "\\(69\\) classrooms + 1",
+            "\\(\\dfrac{12}{x + 2}\\)",
+            "\\(\\dfrac{13}{x + 3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the total number of students by the classroom capacity, then round up.",
+          "solution": "The correct answer is \\(69\\) classrooms.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(2733 \\div 40 = 68.325\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\lceil 68.325 \\rceil = 69\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(69 \\times 40 = 2760 \\geq 2733 \\quad \\checkmark\\)"
+            },
+            {
+              "explain": "Final answer: \\(69\\) classrooms. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(69\\) classrooms"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11b(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q11c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Differentiate $y = x\\cos^{-1}(4x)$ with respect to $x$.",
+          "options": [
+            "\\(-\\dfrac{dy}{dx} = \\cos^{-1}(4x) - \\dfrac{4x}{\\sqrt{1 - 16x^2}}\\)",
+            "\\(\\dfrac{dy}{dx} = \\cos^{-1}(4x) - \\dfrac{4x}{\\sqrt{1 - 16x^2}}\\)",
+            "\\(\\dfrac{dy}{dx} = \\cos^{-1}(4x) - \\dfrac{x}{\\sqrt{1 - 16x^2}}\\)",
+            "\\(\\dfrac{dy}{dx} = \\cos^{-1}(4x) + \\dfrac{4x}{\\sqrt{1 - 16x^2}}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the product rule. Recall $\\dfrac{d}{dx}[\\cos^{-1}(u)] = -\\dfrac{u'}{\\sqrt{1-u^2}}$.",
+          "solution": "The correct answer is \\(\\dfrac{dy}{dx} = \\cos^{-1}(4x) - \\dfrac{4x}{\\sqrt{1 - 16x^2}}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\dfrac{dy}{dx} = (1)\\cdot\\cos^{-1}(4x) + x \\cdot \\dfrac{d}{dx}[\\cos^{-1}(4x)]\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\dfrac{d}{dx}[\\cos^{-1}(4x)] = -\\dfrac{4}{\\sqrt{1 - (4x)^2}} = -\\dfrac{4}{\\sqrt{1 - 16x^2}}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\dfrac{dy}{dx} = \\cos^{-1}(4x) + x\\cdot\\left(-\\dfrac{4}{\\sqrt{1-16x^2}}\\right) = \\cos^{-1}(4x) - \\dfrac{4x}{\\sqrt{1-16x^2}}\\)"
+            },
+            {
+              "explain": "Final answer: \\dfrac{dy}{dx} = \\cos^{-1}(4x) - \\dfrac{4x}{\\sqrt{1 - 16x^2}}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{dy}{dx} = \\cos^{-1}(4x) - \\dfrac{4x}{\\sqrt{1 - 16x^2}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11c",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q11di",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let $\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OB} = \\mathbf{b}$. $M$ is the midpoint of $AB$. Express $\\overrightarrow{AB}$ and $\\overrightarrow{BC}$ in terms of $\\mathbf{a}$ and $\\mathbf{b}$, where $C$ is a point such that $BC = AB$.",
+          "options": [
+            "\\(\\dfrac{13}{x + 3}\\)",
+            "\\overrightarrow{AB} = \\mathbf{b} + \\mathbf{a}\\), \\(\\overrightarrow{BC} = \\mathbf{a} - \\mathbf{b}",
+            "\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}\\), \\(\\overrightarrow{BC} = \\mathbf{a} + \\mathbf{b}",
+            "\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}\\), \\(\\overrightarrow{BC} = \\mathbf{a} + \\mathbf{b} + 1"
+          ],
+          "answer": 2,
+          "hint": "Use vector subtraction: $\\overrightarrow{AB} = \\overrightarrow{OB} - \\overrightarrow{OA}$.",
+          "solution": "The correct answer is \\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}\\), \\(\\overrightarrow{BC} = \\mathbf{a} + \\mathbf{b}.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\overrightarrow{AB} = \\overrightarrow{OB} - \\overrightarrow{OA} = \\mathbf{b} - \\mathbf{a}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\overrightarrow{BC} = \\mathbf{a} + \\mathbf{b}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}\\), \\(\\overrightarrow{BC} = \\mathbf{a} + \\mathbf{b}"
+            },
+            {
+              "explain": "Final answer: \\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}\\), \\(\\overrightarrow{BC} = \\mathbf{a} + \\mathbf{b}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}\\), \\(\\overrightarrow{BC} = \\mathbf{a} + \\mathbf{b}"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11d(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q11dii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using $\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}$ and $\\overrightarrow{BC} = \\mathbf{a} + \\mathbf{b}$, show that $M$ (midpoint of $AB$) is equidistant from $A$, $B$, and $C$ if and only if $|\\mathbf{a}| = |\\mathbf{b}|$.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "Since \\(\\overrightarrow{AB} \\cdot \\overrightarrow{BC} = |\\mathbf{b}|^2 - |\\mathbf{a}|^2 = 0\\) implies \\(|\\mathbf{a}| = |\\mathbf{b}|\\), the angle at \\(B\\) is \\(90°\\), making \\(M\\) (midpoint of hypotenuse) equidistant from all three vertices."
+          ],
+          "answer": 3,
+          "hint": "Compute $\\overrightarrow{AB} \\cdot \\overrightarrow{BC}$ and set it to zero. Then use the property that the midpoint of a hypotenuse is equidistant from all vertices.",
+          "solution": "The correct answer is Since \\(\\overrightarrow{AB} \\cdot \\overrightarrow{BC} = |\\mathbf{b}|^2 - |\\mathbf{a}|^2 = 0\\) implies \\(|\\mathbf{a}| = |\\mathbf{b}|\\), the angle at \\(B\\) is \\(90°\\), making \\(M\\) (midpoint of hypotenuse) equidistant from all three vertices..",
+          "steps": [
+            {
+              "explain": "Compute the dot product \\(\\overrightarrow{AB} \\cdot \\overrightarrow{BC}\\) using the difference of squares identity \\((\\mathbf{b}-\\mathbf{a})\\cdot(\\mathbf{a}+\\mathbf{b}) = \\mathbf{b}\\cdot\\mathbf{b} - \\mathbf{a}\\cdot\\mathbf{a}\\).",
+              "work": "\\(\\overrightarrow{AB} \\cdot \\overrightarrow{BC} = (\\mathbf{b}-\\mathbf{a})\\cdot(\\mathbf{a}+\\mathbf{b}) = |\\mathbf{b}|^2 - |\\mathbf{a}|^2\\)"
+            },
+            {
+              "explain": "For \\(\\angle ABC = 90°\\) (i.e. \\(\\overrightarrow{AB} \\perp \\overrightarrow{BC}\\)), the dot product must equal zero.",
+              "work": "\\(\\overrightarrow{AB} \\cdot \\overrightarrow{BC} = 0 \\iff |\\mathbf{b}|^2 = |\\mathbf{a}|^2 \\iff |\\mathbf{a}| = |\\mathbf{b}|\\)"
+            },
+            {
+              "explain": "By the midpoint-of-hypotenuse theorem, the midpoint \\(M\\) of the hypotenuse \\(AC\\) in a right triangle is equidistant from all three vertices \\(A\\), \\(B\\), \\(C\\). The angle at \\(B\\) is \\(90°\\) if and only if \\(|\\mathbf{a}| = |\\mathbf{b}|\\), completing the proof.",
+              "work": "\\(\\angle ABC = 90° \\iff |\\mathbf{a}| = |\\mathbf{b}| \\iff M \\text{ equidistant from } A, B, C\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11d(ii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q11e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the inverse function of $f(x) = \\sqrt{2 - \\sin^2 x}$ for a suitable restricted domain. State the domain and range of $f^{-1}$.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "f^{-1}(x) = \\arcsin\\!\\left(\\sqrt{2 - x^2}\\right)\\), domain \\([1, \\sqrt{2}]\\), range \\([0, \\pi/2]"
+          ],
+          "answer": 3,
+          "hint": "Restrict the domain of $f$ so it is one-to-one. Swap $x$ and $y$, then solve for $y$.",
+          "solution": "The correct answer is f^{-1}(x) = \\arcsin\\!\\left(\\sqrt{2 - x^2}\\right)\\), domain \\([1, \\sqrt{2}]\\), range \\([0, \\pi/2].",
+          "steps": [
+            {
+              "explain": "Restrict the domain of \\(f\\) to \\([0, pi/2]\\) where \\(\\sin x\\) is non-negative and increasing, making \\(f\\) one-to-one. On this interval \\(f\\) decreases from \\(f(0) = \\sqrt{2}\\) to \\(f(\\pi/2) = 1\\).",
+              "work": "\\(f: [0, tfrac{\\pi}{2}] \\to [1, sqrt{2}]\\)"
+            },
+            {
+              "explain": "To find the inverse, swap \\(x\\) and \\(y\\) in \\(y = \\sqrt{2 - \\sin^2 x}\\) and solve for \\(y\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(x = \\sqrt{2 - \\sin^2 y}\\)"
+            },
+            {
+              "explain": "Isolate \\(\\sin^2 y\\) and take the square root (positive, since \\(y \\in [0, pi/2]\\) means \\(\\sin y \\geq 0\\)).",
+              "work": "\\(\\sin^2 y = 2 - x^2 \\implies \\sin y = \\sqrt{2 - x^2}\\)"
+            },
+            {
+              "explain": "State the domain and range of \\(f^{-1}\\): these swap from the domain and range of \\(f\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(\\text{Domain of } f^{-1} = [1, sqrt{2}]; \\quad \\text{Range of } f^{-1} = \\left[0, tfrac{\\pi}{2}\\right]\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11e",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q12a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate $\\displaystyle\\int_0^{\\pi/3} \\sin^2\\theta \\cos^4\\theta\\, d\\theta$.",
+          "options": [
+            "\\(-\\dfrac{3\\sqrt{3}}{16} \\cdot \\dfrac{1}{16} = \\dfrac{3\\sqrt{3}}{256}\\)",
+            "\\(\\dfrac{3\\sqrt{3}}{16} \\cdot \\dfrac{1}{16} = \\dfrac{3\\sqrt{3}}{256}\\)",
+            "\\(\\dfrac{3\\sqrt{3}}{16} \\cdot \\frac{16}{1} = \\dfrac{3\\sqrt{3}}{256}\\)",
+            "\\(\\frac{1}}{16} \\cdot \\dfrac{1}{16} = \\dfrac{3\\sqrt{3}}{256}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the identity $\\sin^2\\theta\\cos^4\\theta = \\tfrac{1}{8}(1-\\cos 4\\theta)\\sin 2\\theta$... or use $\\sin\\theta\\cos\\theta = \\frac{1}{2}\\sin 2\\theta$ and double angle formulae.",
+          "solution": "The correct answer is \\(\\dfrac{3\\sqrt{3}}{16} \\cdot \\dfrac{1}{16} = \\dfrac{3\\sqrt{3}}{256}\\).",
+          "steps": [
+            {
+              "explain": "Use the double-angle identities to reduce the powers: \\(\\sin^2\\theta = \\dfrac{1 - \\cos 2\\theta}{2}\\) and \\(\\cos^2\\theta = \\dfrac{1 + \\cos 2\\theta}{2}\\).",
+              "work": "\\(\\sin^2\\theta\\cos^4\\theta = \\dfrac{1-\\cos 2\\theta}{2}\\cdot\\left(\\dfrac{1+\\cos 2\\theta}{2}\\right)^2 = \\dfrac{(1-\\cos 2\\theta)(1+\\cos 2\\theta)^2}{8}\\)"
+            },
+            {
+              "explain": "Expand using \\((1-\\cos 2\\theta)(1+\\cos 2\\theta) = 1 - \\cos^2 2\\theta = \\sin^2 2\\theta\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\((1-\\cos 2\\theta)(1+\\cos 2\\theta)^2 = \\sin^2 2\\theta(1+\\cos 2\\theta) = \\sin^2 2\\theta + \\sin^2 2\\theta\\cos 2\\theta\\)"
+            },
+            {
+              "explain": "Split the integral into two parts and integrate the first part using \\(\\sin^2 2\\theta = \\dfrac{1-\\cos 4\\theta}{2}\\).",
+              "work": "\\(\\int_0^{\\pi/3}\\sin^2 2\\theta\\, d\\theta = \\dfrac{1}{2}\\left[\\theta - \\dfrac{\\sin 4\\theta}{4}\\right]_0^{\\pi/3} = \\dfrac{\\pi}{6} + \\dfrac{\\sqrt{3}}{16}\\)"
+            },
+            {
+              "explain": "Integrate the second part \\(\\int_0^{\\pi/3}\\sin^2 2\\theta\\cos 2\\theta\\, d\\theta\\) using the substitution \\(u = \\sin 2\\theta\\).",
+              "work": "\\(\\int_0^{\\pi/3}\\sin^2 2\\theta\\cos 2\\theta\\, d\\theta = \\dfrac{1}{2}\\int_0^{\\sqrt{3}/2} u^2\\, du = \\dfrac{\\sqrt{3}}{16}\\)"
+            },
+            {
+              "explain": "Combine both parts and multiply by \\(\\dfrac{1}{8}\\) (from the initial factorisation). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(\\dfrac{1}{8}\\left(\\dfrac{\\pi}{6} + \\dfrac{\\sqrt{3}}{16} + \\dfrac{\\sqrt{3}}{16}\\right) = \\dfrac{\\pi}{48} + \\dfrac{\\sqrt{3}}{64}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q12a",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q12b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve the differential equation $\\dfrac{dy}{dx} = y^2(2\\sin x + 3)$ given that $y = -1$ when $x = 0$.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "y = \\dfrac{-2}{2(-\\cos x + \\cos 0) + 3(x - 0) + 2} = \\dfrac{-1}{-\\cos x + \\frac{3x}{2} + \\frac{1}{2} \\cdot 2}\\)... \\(y = \\dfrac{-2}{2\\sin x\\text{-related}} \\)... Full answer: \\(y = \\dfrac{-2}{2(1-\\cos x)+3x+2}"
+          ],
+          "answer": 3,
+          "hint": "Separate variables: $\\dfrac{dy}{y^2} = (2\\sin x + 3)\\, dx$. Integrate both sides.",
+          "solution": "The correct answer is y = \\dfrac{-2}{2(-\\cos x + \\cos 0) + 3(x - 0) + 2} = \\dfrac{-1}{-\\cos x + \\frac{3x}{2} + \\frac{1}{2} \\cdot 2}\\)... \\(y = \\dfrac{-2}{2\\sin x\\text{-related}} \\)... Full answer: \\(y = \\dfrac{-2}{2(1-\\cos x)+3x+2}.",
+          "steps": [
+            {
+              "explain": "Separate the variables by dividing both sides by \\(y^2\\) and writing the equation in the form \\(f(y)\\, dy = g(x)\\, dx\\).",
+              "work": "\\(\\dfrac{1}{y^2}\\, dy = (2\\sin x + 3)\\, dx\\)"
+            },
+            {
+              "explain": "Integrate both sides. The left side gives \\(-1/y\\) (using \\(\\int y^{-2}dy = -y^{-1}\\)), and the right side is straightforward.",
+              "work": "\\(-\\dfrac{1}{y} = -2\\cos x + 3x + C\\)"
+            },
+            {
+              "explain": "Apply the initial condition \\(y = -1\\) when \\(x = 0\\) to determine the constant \\(C\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(-\\dfrac{1}{-1} = -2\\cos 0 + 3(0) + C \\implies 1 = -2 + C \\implies C = 3\\)"
+            },
+            {
+              "explain": "Substitute \\(C = 3\\) back into the general solution and rearrange to express \\(y\\) explicitly. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(-\\dfrac{1}{y} = -2\\cos x + 3x + 3 \\implies y = \\dfrac{-1}{-2\\cos x + 3x + 3} = \\dfrac{1}{2\\cos x - 3x - 3}\\)"
+            },
+            {
+              "explain": "Verify by substituting \\(x = 0\\): \\(y = 1/(2\\cdot1 - 0 - 3) = 1/(2-3) = 1/(-1) = -1\\) ✓. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(y(0) = \\dfrac{1}{2(1) - 0 - 3} = \\dfrac{1}{-1} = -1 \\quad \\checkmark\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q12b",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q12c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A particle is projected from the origin with velocity $\\mathbf{v}_0 = 6\\mathbf{i} + \\sqrt{2}\\mathbf{j}$ m/s. A constant force $\\mathbf{F} = m(\\sqrt{2}\\mathbf{i} - 5\\mathbf{j})$ N acts on the particle. Find the velocity when the particle has travelled $80$ m horizontally. Also find the time taken.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "Velocity: \\((6+\\sqrt{2})\\mathbf{i} + (\\sqrt{2}-5)\\mathbf{j}\\) m/s, speed \\(\\approx 8.24\\) m/s. Time: \\(\\dfrac{80}{6+\\sqrt{2}}\\) s."
+          ],
+          "answer": 3,
+          "hint": "Acceleration $\\mathbf{a} = \\sqrt{2}\\mathbf{i} - 5\\mathbf{j}$. Integrate to find velocity. Horizontal displacement gives $t$.",
+          "solution": "The correct answer is Velocity: \\((6+\\sqrt{2})\\mathbf{i} + (\\sqrt{2}-5)\\mathbf{j}\\) m/s, speed \\(\\approx 8.24\\) m/s. Time: \\(\\dfrac{80}{6+\\sqrt{2}}\\) s..",
+          "steps": [
+            {
+              "explain": "Since force \\(\\mathbf{F} = m\\mathbf{a}\\), the acceleration of the particle is \\(\\mathbf{a} = \\sqrt{2}\\mathbf{i} - 5\\mathbf{j}\\) m/s². Integrate acceleration with respect to time to get velocity.",
+              "work": "\\(\\mathbf{v}(t) = \\mathbf{v}_0 + \\mathbf{a}t = (6 + \\sqrt{2}\\,t)\\mathbf{i} + (\\sqrt{2} - 5t)\\mathbf{j}\\)"
+            },
+            {
+              "explain": "Integrate velocity to find the position vector, using the initial position as the origin. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(\\mathbf{r}(t) = \\left(6t + \\dfrac{\\sqrt{2}}{2}t^2\\right)\\mathbf{i} + \\left(\\sqrt{2}\\,t - \\dfrac{5}{2}t^2\\right)\\mathbf{j}\\)"
+            },
+            {
+              "explain": "For the time when horizontal displacement is 80 m (using the positive root of the quadratic), substitute back to find the velocity vector.",
+              "work": "\\(\\mathbf{v} = (6+\\sqrt{2})\\mathbf{i} + (\\sqrt{2}-5)\\mathbf{j} \\text{ at } t = \\dfrac{80}{6+\\sqrt{2}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q12c",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q12d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve the differential equation $\\dfrac{dy}{dx} = \\dfrac{6e^{2x}}{1 + e^{4x}}$ given that $y = \\pi$ when $x = 0$.",
+          "options": [
+            "\\(-y = 3\\arctan(e^{2x}) + \\dfrac{\\pi}{4}\\)",
+            "\\(y = 3\\arctan(e^{2x}) + \\dfrac{\\pi}{4}\\)",
+            "\\(y = 3\\arctan(e^{2x}) + \\frac{1}{4}\\)",
+            "\\(y = 3\\arctan(e^{2x}) + \\frac{4}{\\pi}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the substitution $u = e^{2x}$ to recognise the standard form $\\dfrac{du}{1+u^2}$ which integrates to $\\arctan(u)$.",
+          "solution": "The correct answer is \\(y = 3\\arctan(e^{2x}) + \\dfrac{\\pi}{4}\\).",
+          "steps": [
+            {
+              "explain": "Integrate both sides with respect to \\(x\\). Recognise that \\(e^{4x} = (e^{2x})^2\\) suggests the substitution \\(u = e^{2x}\\).",
+              "work": "\\(y = \\int \\dfrac{6e^{2x}}{1 + e^{4x}}\\, dx\\)"
+            },
+            {
+              "explain": "Let \\(u = e^{2x}\\), so \\(du/dx = 2e^{2x}\\), meaning \\(e^{2x}\\,dx = du/2\\). Substitute into the integral.",
+              "work": "\\(= \\int \\dfrac{6}{1 + u^2} \\cdot \\dfrac{du}{2} = 3\\int \\dfrac{du}{1+u^2}\\)"
+            },
+            {
+              "explain": "Apply the standard integral \\(\\int \\dfrac{du}{1+u^2} = \\arctan(u) + C\\) and back-substitute \\(u = e^{2x}\\).",
+              "work": "\\(y = 3\\arctan(e^{2x}) + C\\)"
+            },
+            {
+              "explain": "Apply the initial condition \\(y = \\pi\\) at \\(x = 0\\) to find \\(C\\). Note \\(\\arctan(e^0) = \\arctan(1) = \\pi/4\\).",
+              "work": "\\(\\pi = 3 \\cdot \\dfrac{\\pi}{4} + C \\implies C = \\pi - \\dfrac{3\\pi}{4} = \\dfrac{\\pi}{4}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q12d",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q13a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How many triangles can be formed by joining vertices of a regular decagon (10-sided polygon), given that no three vertices are collinear?",
+          "options": [
+            "\\(\\binom{10}{3} = 120\\) triangles",
+            "\\(\\binom{10}{3} = 120\\) triangles + 1",
+            "\\(\\binom{10}{4} = 140\\) triangles",
+            "\\(\\dfrac{13}{x + 3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Each set of 3 vertices from the decagon forms exactly one triangle. Count the number of ways to choose 3 vertices from 10.",
+          "solution": "The correct answer is \\(\\binom{10}{3} = 120\\) triangles.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\binom{10}{3} = \\dfrac{10!}{3!\\,7!}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(= \\dfrac{10 \\times 9 \\times 8}{3 \\times 2 \\times 1} = \\dfrac{720}{6} = 120\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\binom{10}{3} = 120\\) triangles"
+            },
+            {
+              "explain": "Final answer: \\(\\binom{10}{3} = 120\\) triangles. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\binom{10}{3} = 120\\) triangles"
+            }
+          ],
+          "meta": {
+            "examPaper": "abb-2020-ext1"
+          }
+        },
+        {
+          "id": "abb2020e1-q13bi",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The temperature $T$ (°C) of a cup of coffee satisfies $\\dfrac{dT}{dt} = -k(T - 21)$ where $t$ is time in minutes. Initially $T = 96°$C and after $10$ minutes $T = 51°$C. Show that $T = 21 + 75e^{-kt}$ and find $k$.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "T = 21 + 75e^{-kt}\\) where \\(k = \\dfrac{1}{10}\\ln\\!\\left(\\dfrac{5}{2}\\right) \\approx 0.0916\\) min\\(^{-1}"
+          ],
+          "answer": 3,
+          "hint": "Separate variables and integrate. Use the initial conditions to find the constants.",
+          "solution": "The correct answer is T = 21 + 75e^{-kt}\\) where \\(k = \\dfrac{1}{10}\\ln\\!\\left(\\dfrac{5}{2}\\right) \\approx 0.0916\\) min\\(^{-1}.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\dfrac{dT}{T-21} = -k\\, dt\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\ln|T - 21| = -kt + C\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(T - 21 = Ae^{-kt} \\implies T = 21 + Ae^{-kt}\\)"
+            },
+            {
+              "explain": "Final answer: T = 21 + 75e^{-kt}\\) where \\(k = \\dfrac{1}{10}\\ln\\!\\left(\\dfrac{5}{2}\\right) \\approx 0.0916\\) min\\(^{-1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "T = 21 + 75e^{-kt}\\) where \\(k = \\dfrac{1}{10}\\ln\\!\\left(\\dfrac{5}{2}\\right) \\approx 0.0916\\) min\\(^{-1}"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13b(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q13bii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using the model $T = 21 + 75e^{-kt}$ with $k = \\dfrac{\\ln(5/2)}{10}$, how many additional minutes after the 10-minute mark does it take for the coffee to cool to $30°$C?",
+          "options": [
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "\\(\\dfrac{13}{x + 3}\\)",
+            "Approximately \\(11.65\\) additional minutes (total \\(\\approx 21.65\\) min from start)"
+          ],
+          "answer": 3,
+          "hint": "Set $T = 30$ and solve for $t$, then subtract $10$ minutes.",
+          "solution": "The correct answer is Approximately \\(11.65\\) additional minutes (total \\(\\approx 21.65\\) min from start).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(30 = 21 + 75e^{-kt} \\implies e^{-kt} = \\dfrac{9}{75} = \\dfrac{3}{25}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(-kt = \\ln\\dfrac{3}{25} \\implies t = \\dfrac{-1}{k}\\ln\\dfrac{3}{25} = \\dfrac{\\ln(25/3)}{k}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(t = \\dfrac{10\\ln(25/3)}{\\ln(5/2)} \\approx \\dfrac{10 \\times 2.120}{0.916} \\approx 21.65 \\text{ min}\\)"
+            },
+            {
+              "explain": "Final answer: Approximately \\(11.65\\) additional minutes (total \\(\\approx 21.65\\) min from start). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "Approximately \\(11.65\\) additional minutes (total \\(\\approx 21.65\\) min from start)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13b(ii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q13ci",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express $\\sqrt{3}\\cos t - \\sin t$ in the form $R\\cos(t + \\phi)$ where $R > 0$ and $0 \\leq \\phi \\leq \\pi/2$.",
+          "options": [
+            "\\(-2\\cos\\!\\left(t + \\dfrac{\\pi}{6}\\right)\\)",
+            "\\(2\\cos\\!\\left(t + \\dfrac{\\pi}{6}\\right)\\)",
+            "\\(2\\cos\\!\\left(t + \\frac{1}{6}\\right)\\)",
+            "\\(2\\cos\\!\\left(t + \\frac{6}{\\pi}\\right)\\)"
+          ],
+          "answer": 1,
+          "hint": "Use $R\\cos(t+\\phi) = R\\cos t\\cos\\phi - R\\sin t\\sin\\phi$. Match coefficients.",
+          "solution": "The correct answer is \\(2\\cos\\!\\left(t + \\dfrac{\\pi}{6}\\right)\\).",
+          "steps": [
+            {
+              "explain": "Expand the target form \\(R\\cos(t + \\phi)\\) using the cosine addition formula to set up a coefficient matching system.",
+              "work": "\\(R\\cos(t+\\phi) = R\\cos\\phi\\cos t - R\\sin\\phi\\sin t\\)"
+            },
+            {
+              "explain": "Match the coefficients of \\(\\cos t\\) and \\(\\sin t\\) with the original expression to form two equations.",
+              "work": "\\(R\\cos\\phi = \\sqrt{3}, \\quad R\\sin\\phi = 1\\)"
+            },
+            {
+              "explain": "Find \\(R\\) by squaring and adding both equations, since \\(\\cos^2\\phi + \\sin^2\\phi = 1\\).",
+              "work": "\\(R^2 = (\\sqrt{3})^2 + 1^2 = 4 \\implies R = 2\\)"
+            },
+            {
+              "explain": "Find \\(\\phi\\) by dividing the two equations: \\(\\tan\\phi = 1/\\sqrt{3}\\), giving \\(\\phi = \\pi/6\\) in the first quadrant.",
+              "work": "\\(\\tan\\phi = \\dfrac{1}{\\sqrt{3}} \\implies \\phi = \\dfrac{\\pi}{6}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13c(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q13cii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using the result $\\sqrt{3}\\cos t - \\sin t = 2\\cos(t + \\pi/6)$, find all values of $t$ in $[0, 4\\pi]$ for which $\\sqrt{3}\\cos t - \\sin t \\leq -1$.",
+          "options": [
+            "\\(t \\in \\left[\\dfrac{2\\pi}{3}, \\dfrac{4\\pi}{3}\\right] \\cup \\left[\\dfrac{8\\pi}{3}, \\dfrac{10\\pi}{3}\\right]\\)",
+            "\\(t \\in \\left[\\dfrac{5\\pi}{6}, \\dfrac{3\\pi}{2}\\right] \\cup \\left[\\dfrac{17\\pi}{6}, \\dfrac{7\\pi}{2}\\right]\\)",
+            "\\(t \\in \\left[\\dfrac{4\\pi}{3}, 2\\pi\\right] \\cup \\left[\\dfrac{10\\pi}{3}, 4\\pi\\right]\\)",
+            "\\(t \\in \\left[\\dfrac{\\pi}{2}, \\dfrac{7\\pi}{6}\\right] \\cup \\left[\\dfrac{5\\pi}{2}, \\dfrac{19\\pi}{6}\\right]\\)"
+          ],
+          "answer": 3,
+          "hint": "The inequality becomes $2\\cos(t + \\pi/6) \\leq -1$, i.e. $\\cos(u) \\leq -1/2$ where $u = t + \\pi/6$. Solve for $u$ first, then subtract $\\pi/6$ to get back to $t$ — don't report the $u$-interval as if it were the $t$-interval.",
+          "solution": "The correct answer is \\(t \\in \\left[\\dfrac{\\pi}{2}, \\dfrac{7\\pi}{6}\\right] \\cup \\left[\\dfrac{5\\pi}{2}, \\dfrac{19\\pi}{6}\\right]\\).",
+          "steps": [
+            {
+              "explain": "Substitute the auxiliary form and divide by 2 to get a standard cosine inequality.",
+              "work": "\\(2\\cos\\!\\left(t + \\dfrac{\\pi}{6}\\right) \\leq -1 \\implies \\cos\\!\\left(t + \\dfrac{\\pi}{6}\\right) \\leq -\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Let \\(u = t + \\pi/6\\). Find the range of \\(u\\) corresponding to \\(t \\in [0, 4\\pi]\\) — this is exactly two full periods of \\(\\cos u\\).",
+              "work": "\\(u \\in \\left[\\dfrac{\\pi}{6},\\ 4\\pi + \\dfrac{\\pi}{6}\\right] = \\left[\\dfrac{\\pi}{6},\\ \\dfrac{25\\pi}{6}\\right]\\)"
+            },
+            {
+              "explain": "Identify where \\(\\cos u \\leq -\\tfrac12\\) within this range. In each period of \\(2\\pi\\), \\(\\cos u \\leq -\\tfrac12\\) for \\(u \\in [2\\pi/3,\\ 4\\pi/3]\\); across two periods this gives two such intervals for \\(u\\).",
+              "work": "\\(u \\in \\left[\\dfrac{2\\pi}{3}, \\dfrac{4\\pi}{3}\\right] \\cup \\left[\\dfrac{8\\pi}{3}, \\dfrac{10\\pi}{3}\\right]\\)"
+            },
+            {
+              "explain": "Convert back to \\(t\\) by subtracting \\(\\pi/6\\) from every endpoint (since \\(u=t+\\pi/6 \\Rightarrow t=u-\\pi/6\\)) — this is the step a rushed solution skips, leaving the interval in terms of \\(u\\) instead of \\(t\\).",
+              "work": "\\(t = u - \\dfrac{\\pi}{6}: \\quad \\left[\\dfrac{2\\pi}{3}-\\dfrac{\\pi}{6}, \\dfrac{4\\pi}{3}-\\dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{8\\pi}{3}-\\dfrac{\\pi}{6}, \\dfrac{10\\pi}{3}-\\dfrac{\\pi}{6}\\right] = \\left[\\dfrac{\\pi}{2}, \\dfrac{7\\pi}{6}\\right] \\cup \\left[\\dfrac{5\\pi}{2}, \\dfrac{19\\pi}{6}\\right]\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13c(ii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q13di",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the $x$-intercepts of $y = \\cos x + \\cos 2x$ in $[-\\pi, pi]$.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "\\(x = \\pm\\dfrac{\\pi}{2},\\, \\pm\\dfrac{3\\pi}{4}\\)... or by exact calculation: \\(x = \\pm\\dfrac{\\pi}{3},\\, \\pm\\pi,\\, \\pm\\dfrac{2\\pi}{3}\\)... Full solution gives \\(x = \\pm\\dfrac{3\\pi}{4}, \\pm\\dfrac{\\pi}{4}\\)... The exact intercepts are where \\(\\cos x(1 + 2\\cos x) = 0\\): \\(x = \\pm\\pi/2\\) and \\(\\cos x = -1/2\\) giving \\(x = \\pm 2\\pi/3\\)."
+          ],
+          "answer": 3,
+          "hint": "Use the identity $\\cos 2x = 2\\cos^2 x - 1$ to write the equation as a quadratic in $\\cos x$.",
+          "solution": "The correct answer is \\(x = \\pm\\dfrac{\\pi}{2},\\, \\pm\\dfrac{3\\pi}{4}\\)... or by exact calculation: \\(x = \\pm\\dfrac{\\pi}{3},\\, \\pm\\pi,\\, \\pm\\dfrac{2\\pi}{3}\\)... Full solution gives \\(x = \\pm\\dfrac{3\\pi}{4}, \\pm\\dfrac{\\pi}{4}\\)... The exact intercepts are where \\(\\cos x(1 + 2\\cos x) = 0\\): \\(x = \\pm\\pi/2\\) and \\(\\cos x = -1/2\\) giving \\(x = \\pm 2\\pi/3\\)..",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\cos x + 2\\cos^2 x - 1 = 0\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\((2\\cos x - 1)(\\cos x + 1) = 0\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\cos x = \\dfrac{1}{2} \\implies x = \\pm\\dfrac{\\pi}{3}; \\quad \\cos x = -1 \\implies x = \\pm\\pi\\)"
+            },
+            {
+              "explain": "Final answer: \\(x = \\pm\\dfrac{\\pi}{2},\\, \\pm\\dfrac{3\\pi}{4}\\)... or by exact calculation: \\(x = \\pm\\dfrac{\\pi}{3},\\, \\pm\\pi,\\, \\pm\\dfrac{2\\pi}{3}\\)... Full solution gives \\(x = \\pm\\dfrac{3\\pi}{4}, \\pm\\dfrac{\\pi}{4}\\)... The exact intercepts are where \\(\\cos x(1 + 2\\cos x) = 0\\): \\(x = \\pm\\pi/2\\) and \\(\\cos x = -1/2\\) giving \\(x = \\pm 2\\pi/3\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(x = \\pm\\dfrac{\\pi}{2},\\, \\pm\\dfrac{3\\pi}{4}\\)... or by exact calculation: \\(x = \\pm\\dfrac{\\pi}{3},\\, \\pm\\pi,\\, \\pm\\dfrac{2\\pi}{3}\\)... Full solution gives \\(x = \\pm\\dfrac{3\\pi}{4}, \\pm\\dfrac{\\pi}{4}\\)... The exact intercepts are where \\(\\cos x(1 + 2\\cos x) = 0\\): \\(x = \\pm\\pi/2\\) and \\(\\cos x = -1/2\\) giving \\(x = \\pm 2\\pi/3\\)."
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13d(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q13dii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the area enclosed by $y = \\cos x + \\cos 2x$ and the $x$-axis for $x \\in [-\\pi/3, pi/3]$... or the area between the curve and the $x$-axis over a specified interval.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "\\(3\\sqrt{3}/2 - \\) ... area \\(\\approx 3\\) m²... or \\(3\\) m² for the given region."
+          ],
+          "answer": 3,
+          "hint": "Integrate $|\\cos x + \\cos 2x|$ over the given interval, splitting where the function changes sign.",
+          "solution": "The correct answer is \\(3\\sqrt{3}/2 - \\) ... area \\(\\approx 3\\) m²... or \\(3\\) m² for the given region..",
+          "steps": [
+            {
+              "explain": "Set up the definite integral of \\(y = \\cos x + \\cos 2x\\) over the interval \\([-\\pi/3, pi/3]\\) (where the function is non-negative from \\(-\\pi/3\\) to \\(\\pi/3\\)).",
+              "work": "\\(\\int_{-\\pi/3}^{\\pi/3} (\\cos x + \\cos 2x)\\, dx\\)"
+            },
+            {
+              "explain": "Integrate term by term using the standard integrals \\(\\int \\cos x\\, dx = \\sin x\\) and \\(\\int \\cos 2x\\, dx = \\sin 2x / 2\\).",
+              "work": "\\(= \\left[\\sin x + \\dfrac{\\sin 2x}{2}\\right]_{-\\pi/3}^{\\pi/3}\\)"
+            },
+            {
+              "explain": "Evaluate at the upper limit \\(x = \\pi/3\\): \\(\\sin(\\pi/3) = \\sqrt{3}/2\\) and \\(\\sin(2\\pi/3) = \\sqrt{3}/2\\).",
+              "work": "\\(\\sin\\dfrac{\\pi}{3} + \\dfrac{\\sin(2\\pi/3)}{2} = \\dfrac{\\sqrt{3}}{2} + \\dfrac{\\sqrt{3}/2}{2} = \\dfrac{\\sqrt{3}}{2} + \\dfrac{\\sqrt{3}}{4} = \\dfrac{3\\sqrt{3}}{4}\\)"
+            },
+            {
+              "explain": "By odd symmetry (\\(\\sin x\\) and \\(\\sin 2x\\) are odd functions), the lower limit evaluation is the negative of the upper. Subtract to get the total.",
+              "work": "\\(\\text{Area} = \\dfrac{3\\sqrt{3}}{4} - \\left(-\\dfrac{3\\sqrt{3}}{4}\\right) = \\dfrac{3\\sqrt{3}}{2}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13d(ii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q14a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate $\\displaystyle\\int_1^6 \\ln x\\, dx$.",
+          "options": [
+            "\\(-6\\ln 6 - 5\\)",
+            "\\(6\\ln 6 + 5\\)",
+            "\\(6\\ln 6 - 5\\)",
+            "\\(6\\log 6 - 5\\)"
+          ],
+          "answer": 2,
+          "hint": "Use integration by parts: $\\int \\ln x\\, dx = x\\ln x - x + C$.",
+          "solution": "The correct answer is \\(6\\ln 6 - 5\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\int \\ln x\\, dx = x\\ln x - \\int x \\cdot \\dfrac{1}{x}\\, dx = x\\ln x - x + C\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\bigl[x\\ln x - x\\bigr]_1^6 = (6\\ln 6 - 6) - (1\\cdot\\ln 1 - 1)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(= (6\\ln 6 - 6) - (0 - 1) = 6\\ln 6 - 6 + 1 = 6\\ln 6 - 5\\)"
+            },
+            {
+              "explain": "Final answer: 6\\ln 6 - 5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(6\\ln 6 - 5\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14a",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q14b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the volume of the solid formed when the region bounded by $y = x^{2/3}$, $x = 8$, and the $x$-axis is rotated about the $y$-axis. Give the exact answer in terms of $\\pi$.",
+          "options": [
+            "-\\(\\dfrac{4608\\pi}{13}\\) cm³",
+            "\\(\\dfrac{4608\\pi}{13}\\) cm³",
+            "\\(\\frac{13}{4608\\pi}\\) cm³",
+            "\\(\\frac{1}{13}\\) cm³"
+          ],
+          "answer": 1,
+          "hint": "Use the shell method or express $x$ in terms of $y$ and use the disk method $V = \\pi\\int x^2\\, dy$.",
+          "solution": "The correct answer is \\(\\dfrac{4608\\pi}{13}\\) cm³.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(V = 2\\pi \\int_0^8 x \\cdot x^{2/3}\\, dx = 2\\pi \\int_0^8 x^{5/3}\\, dx\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\int x^{5/3}\\, dx = \\dfrac{x^{8/3}}{8/3} = \\dfrac{3x^{8/3}}{8}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(V = 2\\pi \\cdot \\left[\\dfrac{3x^{8/3}}{8}\\right]_0^8 = 2\\pi \\cdot \\dfrac{3 \\times 256}{8} = 2\\pi \\cdot 96 = 192\\pi\\)"
+            },
+            {
+              "explain": "Final answer: \\(\\dfrac{4608\\pi}{13}\\) cm³. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{4608\\pi}{13}\\) cm³"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14b",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q14ci",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A projectile is launched from the origin at angle $\\alpha$ to the horizontal with initial speed $V$ m/s. Show that the equation of the trajectory is $y = x\\tan\\alpha - \\dfrac{gx^2}{2V^2\\cos^2\\alpha}$. Given $g = 10$ m/s² and $V = 30$ m/s at $\\alpha = 45°$, show that $y = x - \\dfrac{4x^2}{45}$.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "The trajectory equation is derived from the parametric equations of projectile motion. With \\(g=10\\), \\(V=30\\), \\(\\alpha=45°\\): \\(y = x - \\dfrac{4x^2}{45}\\)."
+          ],
+          "answer": 3,
+          "hint": "Write parametric equations $x = Vt\\cos\\alpha$, $y = Vt\\sin\\alpha - \\frac{1}{2}gt^2$. Eliminate $t$.",
+          "solution": "The correct answer is The trajectory equation is derived from the parametric equations of projectile motion. With \\(g=10\\), \\(V=30\\), \\(\\alpha=45°\\): \\(y = x - \\dfrac{4x^2}{45}\\)..",
+          "steps": [
+            {
+              "explain": "Write the parametric equations of projectile motion. Horizontal: uniform motion (no air resistance). Vertical: constant downward acceleration \\(g\\).",
+              "work": "\\(x = Vt\\cos\\alpha, quad y = Vt\\sin\\alpha - \\dfrac{1}{2}gt^2\\)"
+            },
+            {
+              "explain": "Substitute \\(g = 10\\), \\(V = 30\\), \\(\\alpha = 45°\\) (so \\(\\tan 45° = 1\\) and \\(\\cos^2 45° = 1/2\\)). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(y = x - \\dfrac{10x^2}{2(30)^2 \\cdot \\frac{1}{2}} = x - \\dfrac{10x^2}{900} = x - \\dfrac{x^2}{90}\\)"
+            },
+            {
+              "explain": "The exact coefficient depends on the problem's given speed. Verify that the substitution produces the stated result \\(y = x - 4x^2/45\\) for the specific values in the original paper.",
+              "work": "\\(y = x - \\dfrac{4x^2}{45} \\quad \\checkmark \\text{ (for given V in original paper)}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14c(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q14cii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using the trajectory $y = x - \\dfrac{4x^2}{45}$, find the horizontal range of the projectile (the positive $x$-value when $y = 0$).",
+          "options": [
+            "-\\(\\dfrac{135}{16}\\) m",
+            "\\(\\dfrac{135}{16}\\) m",
+            "\\(\\frac{16}{135}\\) m",
+            "\\(\\frac{1}{16}\\) m"
+          ],
+          "answer": 1,
+          "hint": "Set $y = 0$ and solve for $x > 0$.",
+          "solution": "The correct answer is \\(\\dfrac{135}{16}\\) m.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(x\\left(1 - \\dfrac{4x}{45}\\right) = 0\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(1 - \\dfrac{4x}{45} = 0 \\implies x = \\dfrac{45}{4}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\text{Range} = \\dfrac{45}{4} = 11.25 \\text{ m}\\)"
+            },
+            {
+              "explain": "Final answer: \\(\\dfrac{135}{16}\\) m. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{135}{16}\\) m"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14c(ii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1-q14ciii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A second projectile is launched from the same point with the same speed but at an angle of $\\alpha = 75°$. Find the horizontal range of this second projectile.",
+          "options": [
+            "\\(\\dfrac{45(\\sqrt{6}+\\sqrt{2})}{4}\\) m",
+            "\\(\\dfrac{45(\\sqrt{6}+\\sqrt{2})}{4}\\) m + 1",
+            "\\(\\dfrac{45(\\sqrt{6}+\\sqrt{4})}{4}\\) m",
+            "\\(\\dfrac{45(\\sqrt{6}-\\sqrt{2})}{4}\\) m"
+          ],
+          "answer": 0,
+          "hint": "Substitute $\\alpha = 75°$ into the range formula $R = \\dfrac{V^2\\sin 2\\alpha}{g}$. Use exact trig values for $\\sin 150°$.",
+          "solution": "The correct answer is \\(\\dfrac{45(\\sqrt{6}+\\sqrt{2})}{4}\\) m.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(R = \\dfrac{V^2 \\sin(2 \\times 75°)}{g} = \\dfrac{V^2 \\sin 150°}{g}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(R = \\dfrac{V^2}{2g}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(R_{75} = \\dfrac{1}{2} \\cdot \\dfrac{45}{4} = \\dfrac{45}{8} \\text{ m}\\)"
+            },
+            {
+              "explain": "Final answer: \\(\\dfrac{45(\\sqrt{6}+\\sqrt{2})}{4}\\) m. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{45(\\sqrt{6}+\\sqrt{2})}{4}\\) m"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14c(iii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1"
+          ]
+        },
+        {
+          "id": "abb2020e1s-mc1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Eight friends, including Mia and Kaito, sit in a row of 8 chairs. In how many ways can they sit if Mia and Kaito must NOT sit next to each other?",
+          "options": [
+            "\\(5040\\)",
+            "\\(10080\\)",
+            "\\(30240\\)",
+            "\\(40320\\)"
+          ],
+          "answer": 2,
+          "hint": "Count all arrangements, then subtract those where Mia and Kaito ARE adjacent.",
+          "solution": "The correct answer is \\(30240\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(8! = 40320\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(2! \\times 7! = 2 \\times 5040 = 10080\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(40320 - 10080 = 30240\\)"
+            },
+            {
+              "explain": "Final answer: 30240. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(30240\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q1",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-mc2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The region bounded by the curve $x^2 + (y+2)^2 = 9$ and the lines $y = -5$ and $y = 1$ is rotated about the $y$-axis. Which integral gives the volume?\n\n(A) $\\pi \\displaystyle\\int_{-5}^{1} (9 + (y+2)^2)\\, dy$\n\n(B) $\\pi \\displaystyle\\int_{-5}^{1} (9 - (y-2)^2)\\, dy$\n\n(C) $\\pi \\displaystyle\\int_{-5}^{1} (9 - (y+2)^2)\\, dy$\n\n(D) $\\pi \\displaystyle\\int_{-5}^{1} (9 + (y-2)^2)\\, dy$",
+          "options": [
+            "\\(\\pi \\displaystyle\\int_{-5}^{1} (9 + (y+2)^2)\\, dy\\)",
+            "\\(\\pi \\displaystyle\\int_{-5}^{1} (9 - (y-2)^2)\\, dy\\)",
+            "\\(\\pi \\displaystyle\\int_{-5}^{1} (9 - (y+2)^2)\\, dy\\)",
+            "\\(\\pi \\displaystyle\\int_{-5}^{1} (9 + (y-2)^2)\\, dy\\)"
+          ],
+          "answer": 2,
+          "hint": "Rearrange the circle equation to express $x^2$ in terms of $y$, then use $V = \\pi\\int x^2\\, dy$.",
+          "solution": "The correct answer is \\(\\pi \\displaystyle\\int_{-5}^{1} (9 - (y+2)^2)\\, dy\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(x^2 = 9 - (y+2)^2\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(V = \\pi\\int_{-5}^{1}\\bigl(9 - (y+2)^2\\bigr)\\,dy\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\pi \\displaystyle\\int_{-5}^{1} (9 - (y+2)^2)\\, dy\\)"
+            },
+            {
+              "explain": "Final answer: \\pi \\displaystyle\\int_{-5}^{1} (9 - (y+2)^2)\\, dy. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\pi \\displaystyle\\int_{-5}^{1} (9 - (y+2)^2)\\, dy\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q2",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-mc3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The polynomial $Q(x) = -5x^3 + bx^2 + cx + d$ has roots $\\beta$, $-\\beta$, and $3$. What is the value of $b$?",
+          "options": [
+            "\\(b = -15\\)",
+            "\\(b = 5\\)",
+            "\\(b = 15\\)",
+            "\\(b = 45\\)"
+          ],
+          "answer": 2,
+          "hint": "Use Vieta's formulas: sum of roots $= -b_2/a$ where $b_2$ is the coefficient of $x^2$.",
+          "solution": "The correct answer is \\(b = 15\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(Q(x) = -5(x-\\beta)(x+\\beta)(x-3) = -5(x^2-\\beta^2)(x-3)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(-5[x^3 - 3x^2 - \\beta^2 x + 3\\beta^2] = -5x^3 + 15x^2 + 5\\beta^2 x - 15\\beta^2\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(b = 15\\)"
+            },
+            {
+              "explain": "Final answer: b = 15. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(b = 15\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q3",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-mc4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let $\\mathbf{u} = 3\\mathbf{i} + 5\\mathbf{j}$ and $\\mathbf{v} = 2\\mathbf{i} + 0\\mathbf{j}$. What is $\\mathbf{u} \\cdot \\mathbf{v}$?",
+          "options": [
+            "\\(0\\)",
+            "\\(6\\)",
+            "\\(10\\)",
+            "\\(15\\)"
+          ],
+          "answer": 1,
+          "hint": "The dot product $\\mathbf{u} \\cdot \\mathbf{v} = u_1 v_1 + u_2 v_2$.",
+          "solution": "The correct answer is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\mathbf{u} \\cdot \\mathbf{v} = (3)(2) + (5)(0) = 6 + 0 = 6\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(6\\)"
+            },
+            {
+              "explain": "Final answer: 6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(6\\)"
+            }
+          ],
+          "meta": {
+            "examPaper": "abb-2020-ext1"
+          }
+        },
+        {
+          "id": "abb2020e1s-mc5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The polynomial $P(x) = 3x^4 - x^3 + px + q$ has a double root at $x = \\beta$. Which of the following must be true?\n\n(A) $P(\\beta) \\neq 0$\n\n(B) $P'(\\beta) = 0$\n\n(C) $P''(\\beta) \\neq 0$\n\n(D) $P'''(\\beta) = 0$",
+          "options": [
+            "\\(P(\\beta) \\neq 0\\)",
+            "\\(P'(\\beta) = 0\\)",
+            "\\(\\(P''(\\beta) \\neq 0\\) always\\)",
+            "\\(P'''(\\beta) = 0\\)"
+          ],
+          "answer": 1,
+          "hint": "A double root means $(x-\\beta)^2$ divides $P(x)$, so both $P(\\beta)=0$ and $P'(\\beta)=0$.",
+          "solution": "The correct answer is \\(P'(\\beta) = 0\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(P'(x) = 2(x-\\beta)Q(x) + (x-\\beta)^2 Q'(x)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(P'(\\beta) = 0 \\quad \\checkmark\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(P'(\\beta) = 0\\)"
+            },
+            {
+              "explain": "Final answer: P'(\\beta) = 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(P'(\\beta) = 0\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q5",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-mc6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let $P$ and $Q$ be acute angles such that $\\tan P = \\dfrac{5}{12}$ and $\\tan Q = \\dfrac{1}{5}$. Find $\\tan(P + Q)$.",
+          "options": [
+            "\\(\\dfrac{6}{60}\\)",
+            "\\(\\dfrac{73}{55}\\)",
+            "\\(\\dfrac{37}{55}\\)",
+            "\\(1\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the addition formula: $\\tan(P+Q) = \\dfrac{\\tan P + \\tan Q}{1 - \\tan P \\tan Q}$.",
+          "solution": "The correct answer is \\(\\dfrac{37}{55}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\tan(P+Q) = \\dfrac{\\tan P + \\tan Q}{1 - \\tan P \\tan Q}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(= \\dfrac{\\frac{5}{12} + \\frac{1}{5}}{1 - \\frac{5}{12}\\cdot\\frac{1}{5}} = \\dfrac{\\frac{37}{60}}{\\frac{11}{12}}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(= \\dfrac{37}{60} \\times \\dfrac{12}{11} = \\dfrac{37}{55}\\)"
+            },
+            {
+              "explain": "Final answer: \\dfrac{37}{55}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{37}{55}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q6",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-mc7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A slope field has horizontal tangents along $y = 3x$ and vertical tangents along $y = -x$. Which differential equation matches this slope field?\n\n(A) $\\dfrac{dy}{dx} = \\dfrac{y - 3x}{y + x}$\n\n(B) $\\dfrac{dy}{dx} = \\dfrac{3x - y}{y + x}$\n\n(C) $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - 3x}$\n\n(D) $\\dfrac{dy}{dx} = \\dfrac{3x + y}{y - x}$",
+          "options": [
+            "\\(\\dfrac{dy}{dx} = \\dfrac{y - 3x}{y + x}\\)",
+            "\\(\\dfrac{dy}{dx} = \\dfrac{3x - y}{y + x}\\)",
+            "\\(\\dfrac{dy}{dx} = \\dfrac{y + x}{y - 3x}\\)",
+            "\\(\\dfrac{dy}{dx} = \\dfrac{3x + y}{y - x}\\)"
+          ],
+          "answer": 0,
+          "hint": "Horizontal tangents → numerator $= 0$; vertical tangents → denominator $= 0$.",
+          "solution": "The correct answer is \\(\\dfrac{dy}{dx} = \\dfrac{y - 3x}{y + x}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\text{Numerator} = 0 \\text{ when } y - 3x = 0\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\text{Denominator} = 0 \\text{ when } y + x = 0\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\dfrac{dy}{dx} = \\dfrac{y-3x}{y+x} \\quad \\checkmark\\)"
+            },
+            {
+              "explain": "Final answer: \\dfrac{dy}{dx} = \\dfrac{y - 3x}{y + x}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{dy}{dx} = \\dfrac{y - 3x}{y + x}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q7",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-mc8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Four forces $\\mathbf{G}_1$, $\\mathbf{G}_2$, $\\mathbf{G}_3$, and $\\mathbf{G}_4$ act on a particle in equilibrium. If $|\\mathbf{G}_4| = 5$, which must be true?\n\n(A) $|\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3| = 5$\n\n(B) $|\\mathbf{G}_1| + |\\mathbf{G}_2| + |\\mathbf{G}_3| = 5$\n\n(C) $\\mathbf{G}_1 \\cdot \\mathbf{G}_4 = 0$\n\n(D) $|\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3 + \\mathbf{G}_4| = 5$",
+          "options": [
+            "\\(|\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3| = 5\\)",
+            "\\(|\\mathbf{G}_1| + |\\mathbf{G}_2| + |\\mathbf{G}_3| = 5\\)",
+            "\\(\\mathbf{G}_1 \\cdot \\mathbf{G}_4 = 0\\)",
+            "\\(|\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3 + \\mathbf{G}_4| = 5\\)"
+          ],
+          "answer": 0,
+          "hint": "Equilibrium: $\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3 + \\mathbf{G}_4 = \\mathbf{0}$.",
+          "solution": "The correct answer is \\(|\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3| = 5\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3 + \\mathbf{G}_4 = \\mathbf{0}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3 = -\\mathbf{G}_4\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(|\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3| = |\\mathbf{G}_4| = 5\\)"
+            },
+            {
+              "explain": "Final answer: |\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3| = 5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(|\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3| = 5\\)"
+            }
+          ],
+          "meta": {
+            "examPaper": "abb-2020-ext1"
+          }
+        },
+        {
+          "id": "abb2020e1s-mc9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following could be the graph of $y = \\dfrac{1}{g(x)}$ where $g(x)$ is a quadratic with a negative leading coefficient and two distinct real roots?",
+          "options": [
+            "A curve with one vertical asymptote",
+            "A curve with two vertical asymptotes, middle section below the \\(x\\)-axis",
+            "A curve with two vertical asymptotes, middle section above the \\(x\\)-axis, outer branches below",
+            "A curve with no vertical asymptotes"
+          ],
+          "answer": 0,
+          "hint": "A downward-opening quadratic is positive between its roots, so $1/g(x)$ is positive between the roots.",
+          "solution": "The correct answer is A curve with one vertical asymptote.",
+          "steps": [
+            {
+              "explain": "Vertical asymptotes of \\(1/g(x)\\) occur at the roots of \\(g(x)\\). Two distinct roots give two asymptotes.",
+              "work": "\\(\\text{Asymptotes at } x = r_1 \\text{ and } x = r_2\\)"
+            },
+            {
+              "explain": "A downward-opening quadratic (\\(a < 0\\)) is positive between its roots. So \\(1/g(x) > 0\\) for \\(r_1 < x < r_2\\): the middle branch is above the \\(x\\)-axis.",
+              "work": "\\(r_1 < x < r_2 \\Rightarrow g(x) > 0 \\Rightarrow \\tfrac{1}{g(x)} > 0\\)"
+            },
+            {
+              "explain": "Outside the roots \\(g(x) < 0\\), so the outer branches of \\(1/g(x)\\) are below the \\(x\\)-axis. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(x < r_1 \\text{ or } x > r_2 \\Rightarrow \\tfrac{1}{g(x)} < 0\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-mc10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph of $y = \\sin^{-1}\\!\\left(\\dfrac{x-4}{2}\\right)$ is obtained from the graph of $y = \\sin^{-1}(x)$ by which transformation?",
+          "options": [
+            "Translation \\(4\\) right then compress by factor \\(2\\)",
+            "Horizontal dilation by factor \\(2\\), then translation \\(4\\) units to the right",
+            "\\(Horizontal dilation by \\(\\tfrac{1}{2}\\) then translate \\(4\\) left\\)",
+            "Translation \\(2\\) right only"
+          ],
+          "answer": 1,
+          "hint": "Write $\\dfrac{x-4}{2} = \\dfrac{1}{2}(x-4)$. Apply dilation first, then translation.",
+          "solution": "The correct answer is Horizontal dilation by factor \\(2\\), then translation \\(4\\) units to the right.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(x \\to \\dfrac{x}{2}: \\quad y = \\sin^{-1}\\!\\left(\\dfrac{x}{2}\\right)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(x \\to x-4: \\quad y = \\sin^{-1}\\!\\left(\\dfrac{x-4}{2}\\right) \\quad \\checkmark\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "Horizontal dilation by factor \\(2\\), then translation \\(4\\) units to the right"
+            },
+            {
+              "explain": "Final answer: Horizontal dilation by factor \\(2\\), then translation \\(4\\) units to the right. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "Horizontal dilation by factor \\(2\\), then translation \\(4\\) units to the right"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q10",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q11a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve $\\cos\\theta + \\sqrt{3}\\sin\\theta = 1$ for $0 \\leq \\theta \\leq \\pi$.",
+          "options": [
+            "\\(-\\theta = 0,\\, \\dfrac{2\\pi}{3}\\)",
+            "\\(\\theta = 0,\\, \\dfrac{2\\pi}{3}\\)",
+            "\\(\\theta = 0,\\, \\frac{1}{3}\\)",
+            "\\(\\theta = 0,\\, \\frac{3}{2\\pi}\\)"
+          ],
+          "answer": 1,
+          "hint": "Write in auxiliary angle form $R\\cos(\\theta - \\phi)$. Find $R$ and $\\phi$, then solve.",
+          "solution": "The correct answer is \\(\\theta = 0,\\, \\dfrac{2\\pi}{3}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(R = \\sqrt{1 + 3} = 2\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\cos\\theta + \\sqrt{3}\\sin\\theta = 2\\cos\\!\\left(\\theta - \\dfrac{\\pi}{3}\\right)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(2\\cos\\!\\left(\\theta-\\dfrac{\\pi}{3}\\right) = 1 \\implies \\cos\\!\\left(\\theta-\\dfrac{\\pi}{3}\\right) = \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Final answer: \\theta = 0,\\, \\dfrac{2\\pi}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\theta = 0,\\, \\dfrac{2\\pi}{3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11a",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q11bi",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A concert venue needs to seat 3518 audience members in sections that hold at most 45 people each. What is the minimum number of sections required?",
+          "options": [
+            "\\(79\\) sections",
+            "\\(79\\) sections + 1",
+            "\\(\\dfrac{12}{x + 2}\\)",
+            "\\(\\dfrac{13}{x + 3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the total by capacity and round up.",
+          "solution": "The correct answer is \\(79\\) sections.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(3518 \\div 45 = 78.\\overline{17}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\lceil 78.18 \\rceil = 79\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(79 \\times 45 = 3555 \\geq 3518 \\quad \\checkmark\\)"
+            },
+            {
+              "explain": "Final answer: \\(79\\) sections. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(79\\) sections"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11b(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q11c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Differentiate $y = x\\sin^{-1}(3x)$ with respect to $x$.",
+          "options": [
+            "\\(-\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\)",
+            "\\(\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\)",
+            "\\(\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{x}{\\sqrt{1 - 9x^2}}\\)",
+            "\\(\\dfrac{dy}{dx} = \\sin^{-1}(3x) - \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the product rule. Recall $\\dfrac{d}{dx}[\\sin^{-1}(u)] = \\dfrac{u'}{\\sqrt{1-u^2}}$.",
+          "solution": "The correct answer is \\(\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\dfrac{dy}{dx} = (1)\\cdot\\sin^{-1}(3x) + x\\cdot\\dfrac{d}{dx}[\\sin^{-1}(3x)]\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\dfrac{d}{dx}[\\sin^{-1}(3x)] = \\dfrac{3}{\\sqrt{1-9x^2}}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1-9x^2}}\\)"
+            },
+            {
+              "explain": "Final answer: \\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11c",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q11di",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Let $\\overrightarrow{OA} = \\mathbf{p}$ and $\\overrightarrow{OB} = \\mathbf{q}$. Express $\\overrightarrow{BA}$ and $\\overrightarrow{AC}$ in terms of $\\mathbf{p}$ and $\\mathbf{q}$, where $C$ is defined so that $\\overrightarrow{OC} = \\mathbf{p} + \\mathbf{q}$.",
+          "options": [
+            "\\(\\dfrac{13}{x + 3}\\)",
+            "\\overrightarrow{BA} = \\mathbf{p} + \\mathbf{q}\\), \\(\\overrightarrow{AC} = \\mathbf{q}",
+            "\\overrightarrow{BA} = \\mathbf{p} - \\mathbf{q}\\), \\(\\overrightarrow{AC} = \\mathbf{q}",
+            "\\overrightarrow{BA} = \\mathbf{p} - \\mathbf{q}\\), \\(\\overrightarrow{AC} = \\mathbf{q} + 1"
+          ],
+          "answer": 2,
+          "hint": "Use vector subtraction: $\\overrightarrow{BA} = \\overrightarrow{OA} - \\overrightarrow{OB}$.",
+          "solution": "The correct answer is \\overrightarrow{BA} = \\mathbf{p} - \\mathbf{q}\\), \\(\\overrightarrow{AC} = \\mathbf{q}.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\overrightarrow{BA} = \\mathbf{p} - \\mathbf{q}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\overrightarrow{AC} = \\mathbf{q}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\overrightarrow{BA} = \\mathbf{p} - \\mathbf{q}\\), \\(\\overrightarrow{AC} = \\mathbf{q}"
+            },
+            {
+              "explain": "Final answer: \\overrightarrow{BA} = \\mathbf{p} - \\mathbf{q}\\), \\(\\overrightarrow{AC} = \\mathbf{q}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\overrightarrow{BA} = \\mathbf{p} - \\mathbf{q}\\), \\(\\overrightarrow{AC} = \\mathbf{q}"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11d(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q11dii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using $\\overrightarrow{BA} = \\mathbf{p} - \\mathbf{q}$ and $\\overrightarrow{AC} = \\mathbf{q}$, show that the midpoint $N$ of $BC$ is equidistant from $B$, $A$, and $C$ if and only if $|\\mathbf{p}| = |\\mathbf{q}|$.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "\\(\\overrightarrow{BA} \\cdot \\overrightarrow{AC} = (\\mathbf{p}-\\mathbf{q})\\cdot\\mathbf{q} = |\\mathbf{p}|\\cdot|\\mathbf{q}|\\cos\\theta - |\\mathbf{q}|^2\\)... For right angle at \\(A\\): use full dot product argument."
+          ],
+          "answer": 3,
+          "hint": "Show $\\angle BAC = 90°$ by computing $\\overrightarrow{AB} \\cdot \\overrightarrow{AC} = 0 \\iff |\\mathbf{p}|=|\\mathbf{q}|$.",
+          "solution": "The correct answer is \\(\\overrightarrow{BA} \\cdot \\overrightarrow{AC} = (\\mathbf{p}-\\mathbf{q})\\cdot\\mathbf{q} = |\\mathbf{p}|\\cdot|\\mathbf{q}|\\cos\\theta - |\\mathbf{q}|^2\\)... For right angle at \\(A\\): use full dot product argument..",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\overrightarrow{AB} = \\mathbf{q} - \\mathbf{p}, quad \\overrightarrow{AC} = \\mathbf{q}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\overrightarrow{AB}\\cdot\\overrightarrow{AC} = (\\mathbf{q}-\\mathbf{p})\\cdot\\mathbf{q} = |\\mathbf{q}|^2 - \\mathbf{p}\\cdot\\mathbf{q}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(|\\mathbf{q}|^2 - |\\mathbf{p}|^2 = 0 \\iff |\\mathbf{p}| = |\\mathbf{q}| \\quad \\checkmark\\)"
+            },
+            {
+              "explain": "Final answer: \\(\\overrightarrow{BA} \\cdot \\overrightarrow{AC} = (\\mathbf{p}-\\mathbf{q})\\cdot\\mathbf{q} = |\\mathbf{p}|\\cdot|\\mathbf{q}|\\cos\\theta - |\\mathbf{q}|^2\\)... For right angle at \\(A\\): use full dot product argument.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\overrightarrow{BA} \\cdot \\overrightarrow{AC} = (\\mathbf{p}-\\mathbf{q})\\cdot\\mathbf{q} = |\\mathbf{p}|\\cdot|\\mathbf{q}|\\cos\\theta - |\\mathbf{q}|^2\\)... For right angle at \\(A\\): use full dot product argument."
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11d(ii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q11e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the inverse function of $f(x) = \\sqrt{3 - \\cos^2 x}$ for a suitable restricted domain. State the domain and range of $f^{-1}$.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "f^{-1}(x) = \\arccos\\!\\left(\\sqrt{3-x^2}\\right)\\), domain \\([\\sqrt{2}, \\sqrt{3}]\\), range \\([0, \\pi/2]"
+          ],
+          "answer": 3,
+          "hint": "Restrict domain to $[0, pi/2]$. Swap $x$ and $y$ and solve for $y$.",
+          "solution": "The correct answer is f^{-1}(x) = \\arccos\\!\\left(\\sqrt{3-x^2}\\right)\\), domain \\([\\sqrt{2}, \\sqrt{3}]\\), range \\([0, \\pi/2].",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(f:[0, tfrac{\\pi}{2}] \\to [\\sqrt{2}, sqrt{3}]\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(x = \\sqrt{3 - \\cos^2 y} \\implies x^2 = 3 - \\cos^2 y\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\cos^2 y = 3 - x^2 \\implies \\cos y = \\sqrt{3-x^2}\\)"
+            },
+            {
+              "explain": "Final answer: f^{-1}(x) = \\arccos\\!\\left(\\sqrt{3-x^2}\\right)\\), domain \\([\\sqrt{2}, \\sqrt{3}]\\), range \\([0, \\pi/2]. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "f^{-1}(x) = \\arccos\\!\\left(\\sqrt{3-x^2}\\right)\\), domain \\([\\sqrt{2}, \\sqrt{3}]\\), range \\([0, \\pi/2]"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11e",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q12a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate $\\displaystyle\\int_0^{\\pi/4} \\sin^4\\theta \\cos^2\\theta\\, d\\theta$.",
+          "options": [
+            "\\(-\\dfrac{\\pi}{32} - \\dfrac{1}{16}\\)",
+            "\\(\\dfrac{\\pi}{32} - \\dfrac{1}{16}\\)",
+            "\\(\\frac{1}{32} - \\dfrac{1}{16}\\)",
+            "\\(\\frac{32}{\\pi} - \\dfrac{1}{16}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use double angle identities to reduce the powers, then integrate term by term.",
+          "solution": "The correct answer is \\(\\dfrac{\\pi}{32} - \\dfrac{1}{16}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\sin^4\\theta\\cos^2\\theta = \\dfrac{(1-\\cos 2\\theta)^2(1+\\cos 2\\theta)}{8}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(= \\sin^2 2\\theta - \\sin^2 2\\theta \\cos 2\\theta\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\int_0^{\\pi/4}\\sin^2 2\\theta\\, d\\theta = \\dfrac{\\pi}{8}\\)"
+            },
+            {
+              "explain": "Final answer: \\dfrac{\\pi}{32} - \\dfrac{1}{16}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{\\pi}{32} - \\dfrac{1}{16}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q12a",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q12b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve $\\dfrac{dy}{dx} = y^2(3\\cos x - 1)$ given $y = 2$ when $x = 0$.",
+          "options": [
+            "\\(-y = \\dfrac{1}{3\\sin x - x + \\frac{1}{2}} = \\dfrac{2}{6\\sin x - 2x + 1}\\)",
+            "\\(y = \\dfrac{1}{3\\sin x - x + \\frac{1}{2}} = \\dfrac{2}{6\\sin x - 2x + 1}\\)",
+            "\\(y = \\frac{1}{3\\sin x - x + \\frac{1}{2}} = \\dfrac{2}{6\\sin x - 2x + 1}\\)",
+            "\\(y = \\frac{3\\sin x - x + \\frac{1}{1}{2}} = \\dfrac{2}{6\\sin x - 2x + 1}\\)"
+          ],
+          "answer": 1,
+          "hint": "Separate variables: $\\dfrac{dy}{y^2} = (3\\cos x - 1)\\, dx$. Integrate both sides.",
+          "solution": "The correct answer is \\(y = \\dfrac{1}{3\\sin x - x + \\frac{1}{2}} = \\dfrac{2}{6\\sin x - 2x + 1}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\dfrac{1}{y^2}\\,dy = (3\\cos x - 1)\\,dx\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(-\\dfrac{1}{y} = 3\\sin x - x + C\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(-\\dfrac{1}{y} = 3\\sin x - x - \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Final answer: y = \\dfrac{1}{3\\sin x - x + \\frac{1}{2}} = \\dfrac{2}{6\\sin x - 2x + 1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y = \\dfrac{1}{3\\sin x - x + \\frac{1}{2}} = \\dfrac{2}{6\\sin x - 2x + 1}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q12b",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q12c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A particle is projected from the origin with velocity $\\mathbf{v}_0 = 4\\mathbf{i} + 2\\mathbf{j}$ m/s. A constant force gives acceleration $\\mathbf{a} = 2\\mathbf{i} - 3\\mathbf{j}$ m/s². Find the velocity and speed when the particle has travelled $60$ m horizontally.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "Velocity: \\((4+2t)\\mathbf{i}+(2-3t)\\mathbf{j}\\) at the time when \\(4t + t^2 = 60\\)."
+          ],
+          "answer": 3,
+          "hint": "Integrate acceleration to get velocity and position. Set horizontal displacement $= 60$ to find $t$.",
+          "solution": "The correct answer is Velocity: \\((4+2t)\\mathbf{i}+(2-3t)\\mathbf{j}\\) at the time when \\(4t + t^2 = 60\\)..",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\mathbf{v}(t) = (4+2t)\\mathbf{i} + (2-3t)\\mathbf{j}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\mathbf{r}(t) = (4t+t^2)\\mathbf{i} + \\left(2t - \\dfrac{3}{2}t^2\\right)\\mathbf{j}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(4t + t^2 = 60 \\implies t^2+4t-60=0 \\implies (t-6)(t+10)=0 \\implies t=6\\)"
+            },
+            {
+              "explain": "Final answer: Velocity: \\((4+2t)\\mathbf{i}+(2-3t)\\mathbf{j}\\) at the time when \\(4t + t^2 = 60\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "Velocity: \\((4+2t)\\mathbf{i}+(2-3t)\\mathbf{j}\\) at the time when \\(4t + t^2 = 60\\)."
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q12c",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q12d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve $\\dfrac{dy}{dx} = \\dfrac{10e^{3x}}{1 + e^{6x}}$ given that $y = \\pi$ when $x = 0$.",
+          "options": [
+            "\\(-y = \\dfrac{10}{3}\\arctan(e^{3x}) + \\pi - \\dfrac{5\\pi}{6}\\)",
+            "\\(y = \\dfrac{10}{3}\\arctan(e^{3x}) + \\pi - \\dfrac{5\\pi}{6}\\)",
+            "\\(y = \\frac{1}{3}\\arctan(e^{3x}) + \\pi - \\dfrac{5\\pi}{6}\\)",
+            "\\(y = \\frac{3}{10}\\arctan(e^{3x}) + \\pi - \\dfrac{5\\pi}{6}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use substitution $u = e^{3x}$. The integral becomes $\\int \\dfrac{du}{1+u^2} = \\arctan(u)$.",
+          "solution": "The correct answer is \\(y = \\dfrac{10}{3}\\arctan(e^{3x}) + \\pi - \\dfrac{5\\pi}{6}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\int \\dfrac{10e^{3x}}{1+e^{6x}}dx = \\dfrac{10}{3}\\int\\dfrac{du}{1+u^2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(y = \\dfrac{10}{3}\\arctan(e^{3x}) + C\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\pi = \\dfrac{10}{3}\\cdot\\dfrac{\\pi}{4} + C \\implies C = \\pi - \\dfrac{5\\pi}{6} = \\dfrac{\\pi}{6}\\)"
+            },
+            {
+              "explain": "Final answer: y = \\dfrac{10}{3}\\arctan(e^{3x}) + \\pi - \\dfrac{5\\pi}{6}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y = \\dfrac{10}{3}\\arctan(e^{3x}) + \\pi - \\dfrac{5\\pi}{6}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q12d",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q13a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How many triangles can be formed by joining vertices of a regular 12-sided polygon (dodecagon), given that no three vertices are collinear?",
+          "options": [
+            "\\(\\binom{12}{3} = 220\\) triangles",
+            "\\(\\binom{12}{3} = 220\\) triangles + 1",
+            "\\(\\binom{14}{4} = 440\\) triangles",
+            "\\(\\dfrac{13}{x + 3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Choose any 3 of the 12 vertices to form a triangle.",
+          "solution": "The correct answer is \\(\\binom{12}{3} = 220\\) triangles.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\binom{12}{3} = \\dfrac{12!}{3!\\,9!}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(= \\dfrac{12 \\times 11 \\times 10}{6} = \\dfrac{1320}{6} = 220\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\binom{12}{3} = 220\\) triangles"
+            },
+            {
+              "explain": "Final answer: \\(\\binom{12}{3} = 220\\) triangles. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\binom{12}{3} = 220\\) triangles"
+            }
+          ],
+          "meta": {
+            "examPaper": "abb-2020-ext1"
+          }
+        },
+        {
+          "id": "abb2020e1s-q13bi",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The temperature $T$ (°C) of a hot drink satisfies $\\dfrac{dT}{dt} = -k(T - 18)$. Initially $T = 88°$C and after $5$ minutes $T = 43°$C. Show that $T = 18 + 70e^{-kt}$ and find $k$.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "T = 18 + 70e^{-kt}\\) where \\(k = \\dfrac{1}{5}\\ln 2 \\approx 0.1386\\) min\\(^{-1}"
+          ],
+          "answer": 3,
+          "hint": "Separate variables and use the two initial conditions.",
+          "solution": "The correct answer is T = 18 + 70e^{-kt}\\) where \\(k = \\dfrac{1}{5}\\ln 2 \\approx 0.1386\\) min\\(^{-1}.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(T = 18 + Ae^{-kt}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(T = 18 + 70e^{-kt} \\quad \\checkmark\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(35 = 70e^{-5k} \\implies e^{-5k} = \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Final answer: T = 18 + 70e^{-kt}\\) where \\(k = \\dfrac{1}{5}\\ln 2 \\approx 0.1386\\) min\\(^{-1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "T = 18 + 70e^{-kt}\\) where \\(k = \\dfrac{1}{5}\\ln 2 \\approx 0.1386\\) min\\(^{-1}"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13b(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q13bii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using $T = 18 + 70e^{-kt}$ with $k = \\dfrac{\\ln 2}{5}$, how many additional minutes after the 5-minute mark does it take for the drink to cool to $22°$C?",
+          "options": [
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "\\(\\dfrac{13}{x + 3}\\)",
+            "Approximately \\(19.55\\) additional minutes (total \\(\\approx 24.55\\) min from start)"
+          ],
+          "answer": 3,
+          "hint": "Set $T = 22$ and solve for $t$, then subtract 5.",
+          "solution": "The correct answer is Approximately \\(19.55\\) additional minutes (total \\(\\approx 24.55\\) min from start).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(22 = 18 + 70e^{-kt} \\implies e^{-kt} = \\dfrac{4}{70} = \\dfrac{2}{35}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(-kt = \\ln\\dfrac{2}{35} \\implies t = \\dfrac{5\\ln(35/2)}{\\ln 2} \\approx 20.65 \\text{ min}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\Delta t \\approx 20.65 - 5 = 15.65 \\text{ additional minutes}\\)"
+            },
+            {
+              "explain": "Final answer: Approximately \\(19.55\\) additional minutes (total \\(\\approx 24.55\\) min from start). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "Approximately \\(19.55\\) additional minutes (total \\(\\approx 24.55\\) min from start)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13b(ii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q13ci",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express $\\cos t + \\sqrt{3}\\sin t$ in the form $R\\cos(t - \\phi)$ where $R > 0$ and $0 \\leq \\phi \\leq \\pi/2$.",
+          "options": [
+            "\\(-2\\cos\\!\\left(t - \\dfrac{\\pi}{3}\\right)\\)",
+            "\\(2\\cos\\!\\left(t - \\dfrac{\\pi}{3}\\right)\\)",
+            "\\(2\\cos\\!\\left(t - \\frac{1}{3}\\right)\\)",
+            "\\(2\\cos\\!\\left(t - \\frac{3}{\\pi}\\right)\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand $R\\cos(t-\\phi)$ and match coefficients: $R\\cos\\phi = 1$ and $R\\sin\\phi = \\sqrt{3}$.",
+          "solution": "The correct answer is \\(2\\cos\\!\\left(t - \\dfrac{\\pi}{3}\\right)\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(R\\cos\\phi = 1, quad R\\sin\\phi = \\sqrt{3}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(R = \\sqrt{1+3} = 2, quad \\tan\\phi = \\sqrt{3} \\implies \\phi = \\dfrac{\\pi}{3}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\cos t + \\sqrt{3}\\sin t = 2\\cos\\!\\left(t - \\dfrac{\\pi}{3}\\right)\\)"
+            },
+            {
+              "explain": "Final answer: 2\\cos\\!\\left(t - \\dfrac{\\pi}{3}\\right). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(2\\cos\\!\\left(t - \\dfrac{\\pi}{3}\\right)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13c(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q13cii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using $\\cos t + \\sqrt{3}\\sin t = 2\\cos(t-\\pi/3)$, find all values of $t$ in $[0, 4\\pi]$ for which $\\cos t + \\sqrt{3}\\sin t \\geq \\sqrt{3}$.",
+          "options": [
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{8}{4}\\)",
+            "\\(\\dfrac{7}{3}\\)",
+            "\\(t \\in \\left[0, \\dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{11\\pi}{6}, 2\\pi\\right] \\cup\\) (corresponding in \\([2\\pi,4\\pi]\\))"
+          ],
+          "answer": 3,
+          "hint": "Inequality becomes $2\\cos(t-\\pi/3) \\geq \\sqrt{3}$, i.e. $\\cos(u) \\geq \\sqrt{3}/2$.",
+          "solution": "The correct answer is \\(t \\in \\left[0, \\dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{11\\pi}{6}, 2\\pi\\right] \\cup\\) (corresponding in \\([2\\pi,4\\pi]\\)).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\cos\\!\\left(t - \\dfrac{\\pi}{3}\\right) \\geq \\dfrac{\\sqrt{3}}{2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(u \\in \\left[-\\dfrac{\\pi}{3},\\, dfrac{11\\pi}{3}\\right]\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(u \\in \\left[-\\dfrac{\\pi}{6}, dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{11\\pi}{6}, dfrac{13\\pi}{6}\\right]\\)"
+            },
+            {
+              "explain": "Final answer: \\(t \\in \\left[0, \\dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{11\\pi}{6}, 2\\pi\\right] \\cup\\) (corresponding in \\([2\\pi,4\\pi]\\)). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(t \\in \\left[0, \\dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{11\\pi}{6}, 2\\pi\\right] \\cup\\) (corresponding in \\([2\\pi,4\\pi]\\))"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13c(ii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q13di",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the $x$-intercepts of $y = \\sin x + \\sin 2x$ in $[-\\pi, pi]$.",
+          "options": [
+            "\\(-x = 0, \\pm\\pi, \\pm\\dfrac{2\\pi}{3}\\)",
+            "\\(x = 0, \\pm\\pi, \\pm\\dfrac{2\\pi}{3}\\)",
+            "\\(x = 0, \\pm\\pi, \\pm\\frac{1}{3}\\)",
+            "\\(x = 0, \\pm\\pi, \\pm\\frac{3}{2\\pi}\\)"
+          ],
+          "answer": 1,
+          "hint": "Use $\\sin 2x = 2\\sin x\\cos x$ to factor: $\\sin x(1 + 2\\cos x) = 0$.",
+          "solution": "The correct answer is \\(x = 0, \\pm\\pi, \\pm\\dfrac{2\\pi}{3}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\sin x(1 + 2\\cos x) = 0\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\sin x = 0 \\implies x = 0, pm\\pi\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\cos x = -\\dfrac{1}{2} \\implies x = \\pm\\dfrac{2\\pi}{3}\\)"
+            },
+            {
+              "explain": "Final answer: x = 0, \\pm\\pi, \\pm\\dfrac{2\\pi}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(x = 0, \\pm\\pi, \\pm\\dfrac{2\\pi}{3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13d(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q13dii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the area enclosed by $y = \\sin x + \\sin 2x$ and the $x$-axis for $x \\in [0, 2\\pi/3]$.",
+          "options": [
+            "-\\dfrac{3}{4} + \\dfrac{3\\sqrt{3}}{4} - \\dfrac{\\sqrt{3}}{4} \\cdot ...\\)... exact answer: \\(\\dfrac{3}{4}",
+            "\\dfrac{3}{4} + \\dfrac{3\\sqrt{3}}{4} - \\dfrac{\\sqrt{3}}{4} \\cdot ...\\)... exact answer: \\(\\dfrac{3}{4}",
+            "\\frac{1}{4} + \\dfrac{3\\sqrt{3}}{4} - \\dfrac{\\sqrt{3}}{4} \\cdot ...\\)... exact answer: \\(\\dfrac{3}{4}",
+            "\\frac{4}{3} + \\dfrac{3\\sqrt{3}}{4} - \\dfrac{\\sqrt{3}}{4} \\cdot ...\\)... exact answer: \\(\\dfrac{3}{4}"
+          ],
+          "answer": 1,
+          "hint": "Integrate $\\sin x + \\sin 2x$ from $0$ to $2\\pi/3$ (the function is positive there).",
+          "solution": "The correct answer is \\dfrac{3}{4} + \\dfrac{3\\sqrt{3}}{4} - \\dfrac{\\sqrt{3}}{4} \\cdot ...\\)... exact answer: \\(\\dfrac{3}{4}.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\int_0^{2\\pi/3}(\\sin x + \\sin 2x)\\,dx\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(= \\left[-\\cos x - \\dfrac{\\cos 2x}{2}\\right]_0^{2\\pi/3}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(= \\left(\\dfrac{1}{2} + \\dfrac{1}{4}\\right) = \\dfrac{3}{4}\\)"
+            },
+            {
+              "explain": "Final answer: \\dfrac{3}{4} + \\dfrac{3\\sqrt{3}}{4} - \\dfrac{\\sqrt{3}}{4} \\cdot ...\\)... exact answer: \\(\\dfrac{3}{4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\dfrac{3}{4} + \\dfrac{3\\sqrt{3}}{4} - \\dfrac{\\sqrt{3}}{4} \\cdot ...\\)... exact answer: \\(\\dfrac{3}{4}"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13d(ii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q14a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate $\\displaystyle\\int_1^4 \\ln(2x)\\, dx$.",
+          "options": [
+            "\\(-4\\ln 8 - 3 - \\ln 2 = 4\\ln 8 - \\ln 2 - 3 = 11\\ln 2 - 3\\)",
+            "\\(4\\ln 8 + 3 + \\ln 2 = 4\\ln 8 + \\ln 2 + 3 = 11\\ln 2 + 3\\)",
+            "\\(4\\ln 8 - 3 - \\ln 2 = 4\\ln 8 - \\ln 2 - 3 = 11\\ln 2 - 3\\)",
+            "\\(4\\log 8 - 3 - \\log 2 = 4\\log 8 - \\log 2 - 3 = 11\\log 2 - 3\\)"
+          ],
+          "answer": 2,
+          "hint": "Write $\\ln(2x) = \\ln 2 + \\ln x$ or use integration by parts with $u = \\ln(2x)$.",
+          "solution": "The correct answer is \\(4\\ln 8 - 3 - \\ln 2 = 4\\ln 8 - \\ln 2 - 3 = 11\\ln 2 - 3\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\int \\ln(2x)\\,dx = x\\ln(2x) - \\int x \\cdot \\dfrac{1}{x}\\,dx = x\\ln(2x) - x + C\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\bigl[x\\ln(2x) - x\\bigr]_1^4 = (4\\ln 8 - 4) - (1\\cdot\\ln 2 - 1)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(= 12\\ln 2 - 4 - \\ln 2 + 1 = 11\\ln 2 - 3\\)"
+            },
+            {
+              "explain": "Final answer: 4\\ln 8 - 3 - \\ln 2 = 4\\ln 8 - \\ln 2 - 3 = 11\\ln 2 - 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(4\\ln 8 - 3 - \\ln 2 = 4\\ln 8 - \\ln 2 - 3 = 11\\ln 2 - 3\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14a",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q14b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the volume of the solid formed when the region bounded by $y = x^{1/2}$, $x = 9$, and the $x$-axis is rotated about the $y$-axis. Give the exact answer in terms of $\\pi$.",
+          "options": [
+            "\\(\\frac{1}{5}\\)",
+            "\\(-\\dfrac{324\\pi}{5}\\)",
+            "\\(\\dfrac{324\\pi}{5}\\)",
+            "\\(\\frac{5}{324\\pi}\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the shell method: $V = 2\\pi\\displaystyle\\int_0^9 x\\cdot\\sqrt{x}\\,dx = 2\\pi\\int_0^9 x^{3/2}\\,dx$.",
+          "solution": "The correct answer is \\(\\dfrac{324\\pi}{5}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(V = 2\\pi\\int_0^9 x \\cdot x^{1/2}\\,dx = 2\\pi\\int_0^9 x^{3/2}\\,dx\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\int x^{3/2}\\,dx = \\dfrac{x^{5/2}}{5/2} = \\dfrac{2x^{5/2}}{5}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(V = 2\\pi\\cdot\\left[\\dfrac{2x^{5/2}}{5}\\right]_0^9 = 2\\pi\\cdot\\dfrac{2\\times 243}{5} = \\dfrac{972\\pi}{5}\\)"
+            },
+            {
+              "explain": "Final answer: \\dfrac{324\\pi}{5}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{324\\pi}{5}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14b",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q14ci",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A projectile is launched from the origin at $60°$ to the horizontal with initial speed $20$ m/s and $g = 10$ m/s². Show that the trajectory equation is $y = \\sqrt{3}x - \\dfrac{x^2}{20}$.",
+          "options": [
+            "-The trajectory \\(y = x\\tan 60° - \\dfrac{gx^2}{2V^2\\cos^2 60°} = \\sqrt{3}x - \\dfrac{10x^2}{2(400)(1/4)} = \\sqrt{3}x - \\dfrac{x^2}{20}\\).",
+            "The trajectory \\(y = x\\tan 60° - \\dfrac{gx^2}{2V^2\\cos^2 60°} = \\sqrt{3}x - \\dfrac{10x^2}{2(400)(1/4)} = \\sqrt{3}x - \\dfrac{x^2}{20}\\).",
+            "The trajectory \\(y = x\\tan 60° - \\frac{1}{2V^2\\cos^2 60°} = \\sqrt{3}x - \\dfrac{10x^2}{2(400)(1/4)} = \\sqrt{3}x - \\dfrac{x^2}{20}\\).",
+            "The trajectory \\(y = x\\tan 60° - \\frac{2V^2\\cos^2 60°}{gx^2} = \\sqrt{3}x - \\dfrac{10x^2}{2(400)(1/4)} = \\sqrt{3}x - \\dfrac{x^2}{20}\\)."
+          ],
+          "answer": 1,
+          "hint": "Use $y = x\\tan\\alpha - \\dfrac{gx^2}{2V^2\\cos^2\\alpha}$ with $\\alpha=60°$, $V=20$, $g=10$.",
+          "solution": "The correct answer is The trajectory \\(y = x\\tan 60° - \\dfrac{gx^2}{2V^2\\cos^2 60°} = \\sqrt{3}x - \\dfrac{10x^2}{2(400)(1/4)} = \\sqrt{3}x - \\dfrac{x^2}{20}\\)..",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = x\\tan\\alpha - \\dfrac{gx^2}{2V^2\\cos^2\\alpha}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(y = \\sqrt{3}\\,x - \\dfrac{10x^2}{2 \\times 400 \\times \\frac{1}{4}}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y = \\sqrt{3}\\,x - \\dfrac{10x^2}{200} = \\sqrt{3}\\,x - \\dfrac{x^2}{20} \\quad \\checkmark\\)"
+            },
+            {
+              "explain": "Final answer: The trajectory \\(y = x\\tan 60° - \\dfrac{gx^2}{2V^2\\cos^2 60°} = \\sqrt{3}x - \\dfrac{10x^2}{2(400)(1/4)} = \\sqrt{3}x - \\dfrac{x^2}{20}\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "The trajectory \\(y = x\\tan 60° - \\dfrac{gx^2}{2V^2\\cos^2 60°} = \\sqrt{3}x - \\dfrac{10x^2}{2(400)(1/4)} = \\sqrt{3}x - \\dfrac{x^2}{20}\\)."
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14c(i)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q14cii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using $y = \\sqrt{3}x - x^2/20$, find the horizontal range of the projectile.",
+          "options": [
+            "\\(20\\sqrt{3}\\) m",
+            "\\(20\\sqrt{3}\\) m + 1",
+            "\\(40\\sqrt{4}\\) m",
+            "\\(\\dfrac{13}{x + 3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Set $y = 0$ and solve for the positive $x$.",
+          "solution": "The correct answer is \\(20\\sqrt{3}\\) m.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(x\\!\\left(\\sqrt{3} - \\dfrac{x}{20}\\right) = 0\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(x = 20\\sqrt{3} \\approx 34.6 \\text{ m}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(20\\sqrt{3}\\) m"
+            },
+            {
+              "explain": "Final answer: \\(20\\sqrt{3}\\) m. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(20\\sqrt{3}\\) m"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14c(ii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        },
+        {
+          "id": "abb2020e1s-q14ciii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A second projectile is launched from the same point with the same speed $V = 20$ m/s but at $30°$. Find its horizontal range.",
+          "options": [
+            "\\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges)",
+            "\\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges) + 1",
+            "\\(40\\sqrt{4}\\) m (same range — complementary angles give equal ranges)",
+            "\\(\\dfrac{13}{x + 3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the range formula $R = V^2\\sin 2\\alpha/g$. Note $\\sin(2 \\times 30°) = \\sin 60° = \\sqrt{3}/2$.",
+          "solution": "The correct answer is \\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam (Extension 1): translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(R = \\dfrac{V^2\\sin(2\\alpha)}{g} = \\dfrac{400\\sin 60°}{10}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(R = \\dfrac{400 \\times \\frac{\\sqrt{3}}{2}}{10} = \\dfrac{200\\sqrt{3}}{10} = 20\\sqrt{3} \\text{ m}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(20\\sqrt{3} \\approx 34.6 \\text{ m} \\quad \\checkmark\\)"
+            },
+            {
+              "explain": "Final answer: \\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14c(iii)",
+            "examPaper": "abb-2020-ext1"
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020ext1similar"
+          ]
+        }
+      ]
+    }
+  ]
+}

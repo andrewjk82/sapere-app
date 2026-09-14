@@ -1,0 +1,18 @@
+<svg viewBox="0 0 220 230" width="220" height="230" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+<line x1="40" y1="60" x2="40" y2="10" stroke="#cbd5e1" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <polygon points="36,19 44,19 40,10" fill="#cbd5e1"/>
+  <text x="40" y="4" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#cbd5e1" stroke="#f8fafc" stroke-width="3" paint-order="stroke">N</text>
+<line x1="145" y1="200" x2="40" y2="60" stroke="#cbd5e1" stroke-width="1.6" stroke-dasharray="5 4"/>
+<line x1="40" y1="60" x2="40" y2="200" stroke="#2563eb" stroke-width="2.2"/>
+<line x1="40" y1="200" x2="145" y2="200" stroke="#2563eb" stroke-width="2.2"/>
+<circle cx="40" cy="60" r="3" fill="#1e293b"/>
+<circle cx="40" cy="200" r="3" fill="#1e293b"/>
+<circle cx="145" cy="200" r="3" fill="#1e293b"/>
+<text x="28" y="64" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" fill="#1e293b" stroke="#f8fafc" stroke-width="3" paint-order="stroke">Start</text>
+<text x="26" y="204" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" fill="#1e293b" stroke="#f8fafc" stroke-width="3" paint-order="stroke">Turn</text>
+<text x="155" y="204" text-anchor="start" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="700" fill="#1e293b" stroke="#f8fafc" stroke-width="3" paint-order="stroke">Reef</text>
+<text x="26" y="130" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="600" fill="#1e40af" stroke="#f8fafc" stroke-width="3" paint-order="stroke">40 km</text>
+<text x="92.5" y="216" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" font-weight="600" fill="#1e40af" stroke="#f8fafc" stroke-width="3" paint-order="stroke">30 km</text>
+<text x="46.96" y="80.86" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#dc2626" stroke="#f8fafc" stroke-width="3" paint-order="stroke">θ</text>
+<text x="203" y="222" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="8" font-weight="600" fill="#64748b" stroke="#f8fafc" stroke-width="3" paint-order="stroke">NOT TO SCALE</text>
+</svg>

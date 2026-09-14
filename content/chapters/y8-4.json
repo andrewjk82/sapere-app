@@ -1,0 +1,1537 @@
+{
+  "chapterId": "y8-4",
+  "title": "Chapter 4: Integers",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "y8-4a",
+      "code": "4A",
+      "title": "Integers",
+      "questions": [
+        {
+          "id": "y8-4a-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the integers less than $-10$ and greater than $-15$.",
+          "options": [
+            "\\(-15, -14, -13, -12\\)",
+            "\\(-13, -12, -11, -10\\)",
+            "\\(11, 12, 13, 14\\)",
+            "\\(-14, -13, -12, -11\\)"
+          ],
+          "answer": 3,
+          "hint": "Think of the numbers between the two given limits on a number line.",
+          "solution": "The integers are -14, -13, -12, -11.",
+          "steps": [
+            {
+              "explain": "List the numbers",
+              "work": "-14, -13, -12, -11"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the integers greater than $-100$ and less than $-95$.",
+          "options": [
+            "\\(-100, -99, -98, -97\\)",
+            "\\(-98, -97, -96, -95\\)",
+            "\\(-99, -98, -97, -96\\)",
+            "\\(99, 98, 97, 96\\)"
+          ],
+          "answer": 2,
+          "hint": "Think of the numbers between the two given limits on a number line.",
+          "solution": "The integers are -99, -98, -97, -96.",
+          "steps": [
+            {
+              "explain": "List the numbers",
+              "work": "-99, -98, -97, -96"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the integers less than $2$ and greater than $-5$.",
+          "options": [
+            "\\(-5, -4, -3, -2, -1, 0\\)",
+            "\\(-4, -3, -2, -1, 0, 1\\)",
+            "\\(-4, -3, -2, -1, 0, 1, 2\\)",
+            "\\(-4, -3, -2, -1, 1\\)"
+          ],
+          "answer": 1,
+          "hint": "Think of the numbers between the two given limits on a number line.",
+          "solution": "The integers are -4, -3, -2, -1, 0, 1.",
+          "steps": [
+            {
+              "explain": "List the numbers",
+              "work": "-4, -3, -2, -1, 0, 1"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the integers greater than $-210$ and less than $-205$.",
+          "options": [
+            "\\(-209, -208, -207, -206\\)",
+            "\\(-208, -207, -206, -205\\)",
+            "\\(-210, -209, -208, -207\\)",
+            "\\(209, 208, 207, 206\\)"
+          ],
+          "answer": 0,
+          "hint": "Think of the numbers between the two given limits on a number line.",
+          "solution": "The integers are -209, -208, -207, -206.",
+          "steps": [
+            {
+              "explain": "List the numbers",
+              "work": "-209, -208, -207, -206"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q2a",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Draw a number line and mark the numbers \\(-10\\), \\(-5\\), \\(0\\) and \\(5\\) on it.",
+          "answer": "See worked solution.",
+          "hint": "Draw a straight line, mark zero, and place the integers at equal intervals.",
+          "solution": "Teacher to review the drawn number line.",
+          "steps": [
+            {
+              "explain": "To draw a number line, start by drawing a straight horizontal line with arrows on both ends. This indicates that the numbers continue infinitely in both positive and negative directions. Mark the center point as 0.",
+              "work": "\\text{Step 1: Draw a baseline with arrows on both ends and mark 0 in the center.}"
+            },
+            {
+              "explain": "Using a ruler, mark equal intervals to the right of 0 for positive numbers (1, 2, 3, etc.) and to the left of 0 for negative numbers (-1, -2, -3, etc.). Make sure the spacing is uniform.",
+              "work": "\\text{Step 2: Draw evenly spaced grid markings (ticks) along the line.}"
+            },
+            {
+              "explain": "Find the values -10, -5, 0, and 5 along the markings. Place a clear dot exactly on each value to mark them. The complete number line with the marked points is shown below.",
+              "work": "\\text{Step 3: Place distinct dots at } x = -10, \\; -5, \\; 0, \\text{ and } 5.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 500,
+                  "height": 60,
+                  "boundingbox": [
+                    -13,
+                    0.6,
+                    8,
+                    -0.6
+                  ],
+                  "showAxisLabels": false,
+                  "script": "\n        board.suspendUpdate();\n        board.options.point.withLabel = false;\n        board.options.point.visible = false;\n        \n        // Draw the main line with arrows on both ends\n        board.create('arrow', [[-13 + 0.8, 0], [8 - 0.8, 0]], {strokeColor: '#64748b', strokeWidth: 2, fixed: true});\n        \n        // Draw ticks and labels\n        for (var x = -12; x <= 7; x++) {\n          board.create('segment', [[x, -0.1], [x, 0.1]], {strokeColor: '#94a3b8', strokeWidth: 1.2, fixed: true});\n          board.create('text', [x, -0.22, x.toString()], {\n            anchorX: 'middle',\n            anchorY: 'top',\n            fontSize: 9.5,\n            fontFamily: '\"Outfit\", \"Inter\", sans-serif',\n            strokeColor: '#475569',\n            fixed: true\n          });\n        }\n        \n        // Mark targets with premium ruby-rose color dots\n        var targets = [-10, -5, 0, 5];\n        targets.forEach(function(val) {\n          board.create('point', [val, 0], {\n            color: '#f43f5e',\n            strokeColor: '#fda4af',\n            strokeWidth: 1.5,\n            size: 4.5,\n            visible: true,\n            withLabel: false,\n            fixed: true\n          });\n        });\n        \n        board.unsuspendUpdate();\n      "
+                }
+              }
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-4a-q2b",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Draw a number line and mark the numbers \\(-7\\), \\(-2\\), \\(3\\) and \\(6\\) on it.",
+          "answer": "See worked solution.",
+          "hint": "Draw a straight line, mark zero, and place the integers at equal intervals.",
+          "solution": "Teacher to review the drawn number line.",
+          "steps": [
+            {
+              "explain": "Start by drawing a straight horizontal line with arrows on both ends. Place 0 as a reference point so that we can easily locate negative values to the left and positive values to the right.",
+              "work": "\\text{Step 1: Draw a horizontal line with arrows and identify the reference point 0.}"
+            },
+            {
+              "explain": "Add evenly spaced tick marks along the line. Label these marks consecutively with integers starting from negative values on the left up to positive values on the right.",
+              "work": "\\text{Step 2: Draw uniform interval markings and label them with integers.}"
+            },
+            {
+              "explain": "Locate the coordinates -7, -2, 3, and 6 on the line. Place a solid marker dot on each of these points to clearly indicate their locations.",
+              "work": "\\text{Step 3: Place marked dots at } x = -7, \\; -2, \\; 3, \\text{ and } 6.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 500,
+                  "height": 60,
+                  "boundingbox": [
+                    -10,
+                    0.6,
+                    9,
+                    -0.6
+                  ],
+                  "showAxisLabels": false,
+                  "script": "\n        board.suspendUpdate();\n        board.options.point.withLabel = false;\n        board.options.point.visible = false;\n        \n        // Draw the main line with arrows on both ends\n        board.create('arrow', [[-10 + 0.8, 0], [9 - 0.8, 0]], {strokeColor: '#64748b', strokeWidth: 2, fixed: true});\n        \n        // Draw ticks and labels\n        for (var x = -9; x <= 8; x++) {\n          board.create('segment', [[x, -0.1], [x, 0.1]], {strokeColor: '#94a3b8', strokeWidth: 1.2, fixed: true});\n          board.create('text', [x, -0.22, x.toString()], {\n            anchorX: 'middle',\n            anchorY: 'top',\n            fontSize: 9.5,\n            fontFamily: '\"Outfit\", \"Inter\", sans-serif',\n            strokeColor: '#475569',\n            fixed: true\n          });\n        }\n        \n        // Mark targets with premium ruby-rose color dots\n        var targets = [-7, -2, 3, 6];\n        targets.forEach(function(val) {\n          board.create('point', [val, 0], {\n            color: '#f43f5e',\n            strokeColor: '#fda4af',\n            strokeWidth: 1.5,\n            size: 4.5,\n            visible: true,\n            withLabel: false,\n            fixed: true\n          });\n        });\n        \n        board.unsuspendUpdate();\n      "
+                }
+              }
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-4a-q2c",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Draw a number line and mark the integers less than \\(4\\) and greater than \\(-4\\) on it.",
+          "answer": "See worked solution.",
+          "hint": "Draw a straight line, mark zero, and place the integers at equal intervals.",
+          "solution": "Teacher to review the drawn number line.",
+          "steps": [
+            {
+              "explain": "First, we need to find the integers that satisfy the condition: strictly less than 4 and strictly greater than -4. This can be written as the inequality -4 < x < 4. The integers in this range are -3, -2, -1, 0, 1, 2, and 3.",
+              "work": "\\text{Target integers: } \\{-3, \\; -2, \\; -1, \\; 0, \\; 1, \\; 2, \\; 3\\}"
+            },
+            {
+              "explain": "Draw a horizontal number line with arrows on both ends and add evenly spaced tick marks from at least -5 to 5, labeling each mark with its corresponding integer.",
+              "work": "\\text{Step 1: Draw the line with arrows and label marks from } -5 \\text{ to } 5."
+            },
+            {
+              "explain": "Place a solid marker dot on each of the integers in our list (-3, -2, -1, 0, 1, 2, and 3) to represent them on the number line.",
+              "work": "\\text{Step 2: Place marked dots at } x = -3, \\; -2, \\; -1, \\; 0, \\; 1, \\; 2, \\; 3.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 500,
+                  "height": 60,
+                  "boundingbox": [
+                    -6,
+                    0.6,
+                    6,
+                    -0.6
+                  ],
+                  "showAxisLabels": false,
+                  "script": "\n        board.suspendUpdate();\n        board.options.point.withLabel = false;\n        board.options.point.visible = false;\n        \n        // Draw the main line with arrows on both ends\n        board.create('arrow', [[-6 + 0.8, 0], [6 - 0.8, 0]], {strokeColor: '#64748b', strokeWidth: 2, fixed: true});\n        \n        // Draw ticks and labels\n        for (var x = -5; x <= 5; x++) {\n          board.create('segment', [[x, -0.1], [x, 0.1]], {strokeColor: '#94a3b8', strokeWidth: 1.2, fixed: true});\n          board.create('text', [x, -0.22, x.toString()], {\n            anchorX: 'middle',\n            anchorY: 'top',\n            fontSize: 9.5,\n            fontFamily: '\"Outfit\", \"Inter\", sans-serif',\n            strokeColor: '#475569',\n            fixed: true\n          });\n        }\n        \n        // Mark targets with premium ruby-rose color dots\n        var targets = [-3, -2, -1, 0, 1, 2, 3];\n        targets.forEach(function(val) {\n          board.create('point', [val, 0], {\n            color: '#f43f5e',\n            strokeColor: '#fda4af',\n            strokeWidth: 1.5,\n            size: 4.5,\n            visible: true,\n            withLabel: false,\n            fixed: true\n          });\n        });\n        \n        board.unsuspendUpdate();\n      "
+                }
+              }
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-4a-q2d",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Draw a number line and mark the integers less than \\(2\\) and greater than \\(-6\\) on it.",
+          "answer": "See worked solution.",
+          "hint": "Draw a straight line, mark zero, and place the integers at equal intervals.",
+          "solution": "Teacher to review the drawn number line.",
+          "steps": [
+            {
+              "explain": "Identify the integers that satisfy the condition: strictly less than 2 and strictly greater than -6. This is written as -6 < x < 2. The integers that fit this condition are -5, -4, -3, -2, -1, 0, and 1.",
+              "work": "\\text{Target integers: } \\{-5, \\; -4, \\; -3, \\; -2, \\; -1, \\; 0, \\; 1\\}"
+            },
+            {
+              "explain": "Draw a horizontal number line with arrows on both ends. Add evenly spaced tick marks to cover the range of interest (for example, from -7 to 3) and label each mark with its integer value.",
+              "work": "\\text{Step 1: Draw the line with arrows and label marks from } -7 \\text{ to } 3."
+            },
+            {
+              "explain": "Place a solid marker dot on each of the identified integers (-5, -4, -3, -2, -1, 0, and 1) to complete the drawing.",
+              "work": "\\text{Step 2: Place marked dots at } x = -5, \\; -4, \\; -3, \\; -2, \\; -1, \\; 0, \\; 1.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 500,
+                  "height": 60,
+                  "boundingbox": [
+                    -8,
+                    0.6,
+                    4,
+                    -0.6
+                  ],
+                  "showAxisLabels": false,
+                  "script": "\n        board.suspendUpdate();\n        board.options.point.withLabel = false;\n        board.options.point.visible = false;\n        \n        // Draw the main line with arrows on both ends\n        board.create('arrow', [[-8 + 0.8, 0], [4 - 0.8, 0]], {strokeColor: '#64748b', strokeWidth: 2, fixed: true});\n        \n        // Draw ticks and labels\n        for (var x = -7; x <= 3; x++) {\n          board.create('segment', [[x, -0.1], [x, 0.1]], {strokeColor: '#94a3b8', strokeWidth: 1.2, fixed: true});\n          board.create('text', [x, -0.22, x.toString()], {\n            anchorX: 'middle',\n            anchorY: 'top',\n            fontSize: 9.5,\n            fontFamily: '\"Outfit\", \"Inter\", sans-serif',\n            strokeColor: '#475569',\n            fixed: true\n          });\n        }\n        \n        // Mark targets with premium ruby-rose color dots\n        var targets = [-5, -4, -3, -2, -1, 0, 1];\n        targets.forEach(function(val) {\n          board.create('point', [val, 0], {\n            color: '#f43f5e',\n            strokeColor: '#fda4af',\n            strokeWidth: 1.5,\n            size: 4.5,\n            visible: true,\n            withLabel: false,\n            fixed: true\n          });\n        });\n        \n        board.unsuspendUpdate();\n      "
+                }
+              }
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y8-4a-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The sequence $-20$, $-16$, $-12$, ... is 'going up by fours'. Find the next three terms.",
+          "options": [
+            "\\(-16, -20, -24\\)",
+            "\\(-8, -4, 1\\)",
+            "\\(-7, -2, 3\\)",
+            "\\(-8, -4, 0\\)"
+          ],
+          "answer": 3,
+          "hint": "Add 4 repeatedly.",
+          "solution": "Add 4 to the previous term: $-12 + 4 = -8$, $-8 + 4 = -4$, $-4 + 4 = 0$.",
+          "steps": [
+            {
+              "explain": "Calculate next terms",
+              "work": "$-8, -4, 0$"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The sequence $20$, $15$, $10$, ... is 'going down by fives'. Find the next three terms.",
+          "options": [
+            "\\(5, 10, 15\\)",
+            "\\(5, 0, 5\\)",
+            "\\(5, 0, -5\\)",
+            "\\(0, -5, -10\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract 5 repeatedly.",
+          "solution": "Subtract 5 from the previous term: $10 - 5 = 5$, $5 - 5 = 0$, $0 - 5 = -5$.",
+          "steps": [
+            {
+              "explain": "Calculate next terms",
+              "work": "$5, 0, -5$"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The sequence $-40$, $-32$, $-24$, ... is 'going up by eights'. Find the next four terms.",
+          "options": [
+            "\\(-32, -40, -48, -56\\)",
+            "\\(-16, -8, 0, 8\\)",
+            "\\(-16, -8, 0, -8\\)",
+            "\\(-16, -8, 0, 0\\)"
+          ],
+          "answer": 1,
+          "hint": "Add 8 repeatedly.",
+          "solution": "Add 8 to the previous term.",
+          "steps": [
+            {
+              "explain": "Calculate next terms",
+              "work": "$-16, -8, 0, 8$"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the reading for the thermometer shown below.",
+          "figure": {
+            "jsxGraph": {
+              "width": 150,
+              "height": 350,
+              "boundingbox": [
+                -25,
+                60,
+                25,
+                -70
+              ],
+              "script": "\n        board.suspendUpdate();\n        var yOffset = -60;\n        board.create('circle', [[0, yOffset], 6], {fillColor: '#cc0000', strokeColor: '#cc0000'});\n        board.create('polygon', [[-2.5, 50], [2.5, 50], [2.5, yOffset+4], [-2.5, yOffset+4]], {fillColor: '#f8f9fa', strokeColor: '#475569', borders: {strokeWidth: 1}});\n        board.create('polygon', [[-1.5, 10], [1.5, 10], [1.5, yOffset+4], [-1.5, yOffset+4]], {fillColor: '#cc0000', strokeColor: '#cc0000', borders: {strokeWidth: 0}});\n        board.create('text', [0, 58, '°C'], {anchorX: 'middle', fontSize: 14});\n        for (var i = -60; i <= 50; i += 10) {\n          board.create('segment', [[2.5, i], [6, i]], {strokeColor: '#475569'});\n          board.create('text', [8, i, i.toString()], {anchorY: 'middle', fontSize: 12});\n        }\n        for (var i = -60; i <= 50; i += 2) {\n          if (i % 10 !== 0) board.create('segment', [[2.5, i], [4.5, i]], {strokeColor: '#475569', strokeWidth: 1});\n        }\n        board.unsuspendUpdate();\n      "
+            }
+          },
+          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDE4MCAzMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdsYXNzIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC44IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iI2UwZTBlMCIgc3RvcC1vcGFjaXR5PSIwLjQiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuOSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpcXVpZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYjcxYzFjIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y0NDMzNiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZDMyZjJmIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9InNoYWRvdyIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjIiIGR5PSI0IiBzdGREZXZpYXRpb249IjQiIGZsb29kLW9wYWNpdHk9IjAuMTUiIC8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CgogIDwhLS0gQmFja2dyb3VuZCBiYWNraW5nIC0tPgogIDxyZWN0IHg9IjIwIiB5PSIxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIzMDAiIHJ4PSIxNSIgZmlsbD0iI2ZkZmRmZCIgc3Ryb2tlPSIjZTBlMGUwIiBzdHJva2Utd2lkdGg9IjEiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgogIAogIDwhLS0gVGlja3MgLS0+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjMwIiB4Mj0iNzciIHkyPSIyMzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIyMzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0zMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIyMjQiIHgyPSI3MSIgeTI9IjIyNCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjE4IiB4Mj0iNzEiIHkyPSIyMTgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjIxMiIgeDI9IjcxIiB5Mj0iMjEyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIyMDYiIHgyPSI3MSIgeTI9IjIwNiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjAwIiB4Mj0iNzciIHkyPSIyMDAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIyMDQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0yMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxOTQiIHgyPSI3MSIgeTI9IjE5NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTg4IiB4Mj0iNzEiIHkyPSIxODgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjE4MiIgeDI9IjcxIiB5Mj0iMTgyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxNzYiIHgyPSI3MSIgeTI9IjE3NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTcwIiB4Mj0iNzciIHkyPSIxNzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIxNzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0xMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxNjQiIHgyPSI3MSIgeTI9IjE2NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTU4IiB4Mj0iNzEiIHkyPSIxNTgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjE1MiIgeDI9IjcxIiB5Mj0iMTUyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxNDYiIHgyPSI3MSIgeTI9IjE0NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTQwIiB4Mj0iNzciIHkyPSIxNDAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIxNDQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjDCsEM8L3RleHQ+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTM0IiB4Mj0iNzEiIHkyPSIxMzQiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjEyOCIgeDI9IjcxIiB5Mj0iMTI4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxMjIiIHgyPSI3MSIgeTI9IjEyMiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTE2IiB4Mj0iNzEiIHkyPSIxMTYiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjExMCIgeDI9Ijc3IiB5Mj0iMTEwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iMTE0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzMzIj4xMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxMDQiIHgyPSI3MSIgeTI9IjEwNCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iOTgiIHgyPSI3MSIgeTI9Ijk4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSI5MiIgeDI9IjcxIiB5Mj0iOTIiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9Ijg2IiB4Mj0iNzEiIHkyPSI4NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iODAiIHgyPSI3NyIgeTI9IjgwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iODQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjIwwrBDPC90ZXh0PgogIDxsaW5lIHgxPSI2NSIgeTE9Ijc0IiB4Mj0iNzEiIHkyPSI3NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iNjgiIHgyPSI3MSIgeTI9IjY4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSI2MiIgeDI9IjcxIiB5Mj0iNjIiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjU2IiB4Mj0iNzEiIHkyPSI1NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iNTAiIHgyPSI3NyIgeTI9IjUwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iNTQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjMwwrBDPC90ZXh0PgogIAoKICA8IS0tIEJ1bGIgYW5kIGxpcXVpZCAtLT4KICA8IS0tIE91dGxpbmUgYmFjayAtLT4KICA8cGF0aCBkPSJNIDQzIDQwIEEgNyA3IDAgMCAxIDU3IDQwIEwgNTcgMjQ1LjUgQSAyMCAyMCAwIDEgMSA0MyAyNDUuNSBaIiBmaWxsPSIjZWVlZWVlIiAvPgogIAogIDwhLS0gTGlxdWlkIENvbHVtbiAtLT4KICA8cmVjdCB4PSI0NiIgeT0iMTEwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxNTAiIGZpbGw9InVybCgjbGlxdWlkKSIgLz4KICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjI2MCIgcj0iMTYiIGZpbGw9InVybCgjbGlxdWlkKSIgLz4KICAKICA8IS0tIFRvcCByb3VuZGVkIHBhcnQgb2YgbGlxdWlkIC0tPgogIDxwYXRoIGQ9Ik0gNDYgMTEwIEEgNCA0IDAgMCAxIDU0IDExMCBMIDU0IDExNSBMIDQ2IDExNSBaIiBmaWxsPSJ1cmwoI2xpcXVpZCkiIC8+CgogIDwhLS0gR2xhc3MgT3ZlcmxhcCAtLT4KICA8cGF0aCBkPSJNIDQzIDQwIEEgNyA3IDAgMCAxIDU3IDQwIEwgNTcgMjQ1LjUgQSAyMCAyMCAwIDEgMSA0MyAyNDUuNSBaIiBmaWxsPSJ1cmwoI2dsYXNzKSIgc3Ryb2tlPSIjY2NjIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgCiAgPCEtLSBHbGFzcyByZWZsZWN0aW9uIGhpZ2hsaWdodCAtLT4KICA8cmVjdCB4PSI0NSIgeT0iNDIiIHdpZHRoPSIyIiBoZWlnaHQ9IjE5NSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC44IiByeD0iMSIgLz4KICA8Y2lyY2xlIGN4PSI0NSIgY3k9IjI1NSIgcj0iNCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC42IiAvPgo8L3N2Zz4=",
+          "options": [
+            "\\(10^\\circ\\text{C}\\)",
+            "\\(-10^\\circ\\text{C}\\)",
+            "\\(20^\\circ\\text{C}\\)",
+            "\\(0^\\circ\\text{C}\\)"
+          ],
+          "answer": 0,
+          "hint": "Look at the red level on the scale.",
+          "solution": "The reading is $10^\\circ\\text{C}$.",
+          "steps": [
+            {
+              "explain": "Read thermometer",
+              "work": "10^\\circ\\text{C}"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the reading for the thermometer shown below.",
+          "figure": {
+            "jsxGraph": {
+              "width": 150,
+              "height": 350,
+              "boundingbox": [
+                -25,
+                60,
+                25,
+                -70
+              ],
+              "script": "\n        board.suspendUpdate();\n        var yOffset = -60;\n        board.create('circle', [[0, yOffset], 6], {fillColor: '#cc0000', strokeColor: '#cc0000'});\n        board.create('polygon', [[-2.5, 50], [2.5, 50], [2.5, yOffset+4], [-2.5, yOffset+4]], {fillColor: '#f8f9fa', strokeColor: '#475569', borders: {strokeWidth: 1}});\n        board.create('polygon', [[-1.5, -20], [1.5, -20], [1.5, yOffset+4], [-1.5, yOffset+4]], {fillColor: '#cc0000', strokeColor: '#cc0000', borders: {strokeWidth: 0}});\n        board.create('text', [0, 58, '°C'], {anchorX: 'middle', fontSize: 14});\n        for (var i = -60; i <= 50; i += 10) {\n          board.create('segment', [[2.5, i], [6, i]], {strokeColor: '#475569'});\n          board.create('text', [8, i, i.toString()], {anchorY: 'middle', fontSize: 12});\n        }\n        for (var i = -60; i <= 50; i += 2) {\n          if (i % 10 !== 0) board.create('segment', [[2.5, i], [4.5, i]], {strokeColor: '#475569', strokeWidth: 1});\n        }\n        board.unsuspendUpdate();\n      "
+            }
+          },
+          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDE4MCAzMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdsYXNzIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC44IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iI2UwZTBlMCIgc3RvcC1vcGFjaXR5PSIwLjQiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuOSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpcXVpZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYjcxYzFjIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y0NDMzNiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZDMyZjJmIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9InNoYWRvdyIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjIiIGR5PSI0IiBzdGREZXZpYXRpb249IjQiIGZsb29kLW9wYWNpdHk9IjAuMTUiIC8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CgogIDwhLS0gQmFja2dyb3VuZCBiYWNraW5nIC0tPgogIDxyZWN0IHg9IjIwIiB5PSIxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIzMDAiIHJ4PSIxNSIgZmlsbD0iI2ZkZmRmZCIgc3Ryb2tlPSIjZTBlMGUwIiBzdHJva2Utd2lkdGg9IjEiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgogIAogIDwhLS0gVGlja3MgLS0+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjMwIiB4Mj0iNzciIHkyPSIyMzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIyMzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0zMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIyMjQiIHgyPSI3MSIgeTI9IjIyNCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjE4IiB4Mj0iNzEiIHkyPSIyMTgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjIxMiIgeDI9IjcxIiB5Mj0iMjEyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIyMDYiIHgyPSI3MSIgeTI9IjIwNiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjAwIiB4Mj0iNzciIHkyPSIyMDAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIyMDQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0yMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxOTQiIHgyPSI3MSIgeTI9IjE5NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTg4IiB4Mj0iNzEiIHkyPSIxODgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjE4MiIgeDI9IjcxIiB5Mj0iMTgyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxNzYiIHgyPSI3MSIgeTI9IjE3NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTcwIiB4Mj0iNzciIHkyPSIxNzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIxNzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0xMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxNjQiIHgyPSI3MSIgeTI9IjE2NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTU4IiB4Mj0iNzEiIHkyPSIxNTgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjE1MiIgeDI9IjcxIiB5Mj0iMTUyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxNDYiIHgyPSI3MSIgeTI9IjE0NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTQwIiB4Mj0iNzciIHkyPSIxNDAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIxNDQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjDCsEM8L3RleHQ+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTM0IiB4Mj0iNzEiIHkyPSIxMzQiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjEyOCIgeDI9IjcxIiB5Mj0iMTI4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxMjIiIHgyPSI3MSIgeTI9IjEyMiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTE2IiB4Mj0iNzEiIHkyPSIxMTYiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjExMCIgeDI9Ijc3IiB5Mj0iMTEwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iMTE0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzMzIj4xMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxMDQiIHgyPSI3MSIgeTI9IjEwNCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iOTgiIHgyPSI3MSIgeTI9Ijk4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSI5MiIgeDI9IjcxIiB5Mj0iOTIiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9Ijg2IiB4Mj0iNzEiIHkyPSI4NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iODAiIHgyPSI3NyIgeTI9IjgwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iODQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjIwwrBDPC90ZXh0PgogIDxsaW5lIHgxPSI2NSIgeTE9Ijc0IiB4Mj0iNzEiIHkyPSI3NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iNjgiIHgyPSI3MSIgeTI9IjY4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSI2MiIgeDI9IjcxIiB5Mj0iNjIiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjU2IiB4Mj0iNzEiIHkyPSI1NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iNTAiIHgyPSI3NyIgeTI9IjUwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iNTQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjMwwrBDPC90ZXh0PgogIAoKICA8IS0tIEJ1bGIgYW5kIGxpcXVpZCAtLT4KICA8IS0tIE91dGxpbmUgYmFjayAtLT4KICA8cGF0aCBkPSJNIDQzIDQwIEEgNyA3IDAgMCAxIDU3IDQwIEwgNTcgMjQ1LjUgQSAyMCAyMCAwIDEgMSA0MyAyNDUuNSBaIiBmaWxsPSIjZWVlZWVlIiAvPgogIAogIDwhLS0gTGlxdWlkIENvbHVtbiAtLT4KICA8cmVjdCB4PSI0NiIgeT0iMjAwIiB3aWR0aD0iOCIgaGVpZ2h0PSI2MCIgZmlsbD0idXJsKCNsaXF1aWQpIiAvPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iMjYwIiByPSIxNiIgZmlsbD0idXJsKCNsaXF1aWQpIiAvPgogIAogIDwhLS0gVG9wIHJvdW5kZWQgcGFydCBvZiBsaXF1aWQgLS0+CiAgPHBhdGggZD0iTSA0NiAyMDAgQSA0IDQgMCAwIDEgNTQgMjAwIEwgNTQgMjA1IEwgNDYgMjA1IFoiIGZpbGw9InVybCgjbGlxdWlkKSIgLz4KCiAgPCEtLSBHbGFzcyBPdmVybGFwIC0tPgogIDxwYXRoIGQ9Ik0gNDMgNDAgQSA3IDcgMCAwIDEgNTcgNDAgTCA1NyAyNDUuNSBBIDIwIDIwIDAgMSAxIDQzIDI0NS41IFoiIGZpbGw9InVybCgjZ2xhc3MpIiBzdHJva2U9IiNjY2MiIHN0cm9rZS13aWR0aD0iMSIgLz4KICAKICA8IS0tIEdsYXNzIHJlZmxlY3Rpb24gaGlnaGxpZ2h0IC0tPgogIDxyZWN0IHg9IjQ1IiB5PSI0MiIgd2lkdGg9IjIiIGhlaWdodD0iMTk1IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjgiIHJ4PSIxIiAvPgogIDxjaXJjbGUgY3g9IjQ1IiBjeT0iMjU1IiByPSI0IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjYiIC8+Cjwvc3ZnPg==",
+          "options": [
+            "\\(20^\\circ\\text{C}\\)",
+            "\\(-10^\\circ\\text{C}\\)",
+            "\\(-30^\\circ\\text{C}\\)",
+            "\\(-20^\\circ\\text{C}\\)"
+          ],
+          "answer": 3,
+          "hint": "Look at the red level on the scale.",
+          "solution": "The reading is $-20^\\circ\\text{C}$.",
+          "steps": [
+            {
+              "explain": "Read thermometer",
+              "work": "-20^\\circ\\text{C}"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the reading for the thermometer shown below.",
+          "figure": {
+            "jsxGraph": {
+              "width": 150,
+              "height": 350,
+              "boundingbox": [
+                -25,
+                60,
+                25,
+                -70
+              ],
+              "script": "\n        board.suspendUpdate();\n        var yOffset = -60;\n        board.create('circle', [[0, yOffset], 6], {fillColor: '#cc0000', strokeColor: '#cc0000'});\n        board.create('polygon', [[-2.5, 50], [2.5, 50], [2.5, yOffset+4], [-2.5, yOffset+4]], {fillColor: '#f8f9fa', strokeColor: '#475569', borders: {strokeWidth: 1}});\n        board.create('polygon', [[-1.5, -12], [1.5, -12], [1.5, yOffset+4], [-1.5, yOffset+4]], {fillColor: '#cc0000', strokeColor: '#cc0000', borders: {strokeWidth: 0}});\n        board.create('text', [0, 58, '°C'], {anchorX: 'middle', fontSize: 14});\n        for (var i = -60; i <= 50; i += 10) {\n          board.create('segment', [[2.5, i], [6, i]], {strokeColor: '#475569'});\n          board.create('text', [8, i, i.toString()], {anchorY: 'middle', fontSize: 12});\n        }\n        for (var i = -60; i <= 50; i += 2) {\n          if (i % 10 !== 0) board.create('segment', [[2.5, i], [4.5, i]], {strokeColor: '#475569', strokeWidth: 1});\n        }\n        board.unsuspendUpdate();\n      "
+            }
+          },
+          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDE4MCAzMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdsYXNzIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC44IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iI2UwZTBlMCIgc3RvcC1vcGFjaXR5PSIwLjQiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuOSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpcXVpZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYjcxYzFjIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y0NDMzNiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZDMyZjJmIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9InNoYWRvdyIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjIiIGR5PSI0IiBzdGREZXZpYXRpb249IjQiIGZsb29kLW9wYWNpdHk9IjAuMTUiIC8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CgogIDwhLS0gQmFja2dyb3VuZCBiYWNraW5nIC0tPgogIDxyZWN0IHg9IjIwIiB5PSIxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIzMDAiIHJ4PSIxNSIgZmlsbD0iI2ZkZmRmZCIgc3Ryb2tlPSIjZTBlMGUwIiBzdHJva2Utd2lkdGg9IjEiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgogIAogIDwhLS0gVGlja3MgLS0+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjMwIiB4Mj0iNzciIHkyPSIyMzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIyMzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0zMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIyMjQiIHgyPSI3MSIgeTI9IjIyNCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjE4IiB4Mj0iNzEiIHkyPSIyMTgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjIxMiIgeDI9IjcxIiB5Mj0iMjEyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIyMDYiIHgyPSI3MSIgeTI9IjIwNiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjAwIiB4Mj0iNzciIHkyPSIyMDAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIyMDQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0yMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxOTQiIHgyPSI3MSIgeTI9IjE5NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTg4IiB4Mj0iNzEiIHkyPSIxODgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjE4MiIgeDI9IjcxIiB5Mj0iMTgyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxNzYiIHgyPSI3MSIgeTI9IjE3NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTcwIiB4Mj0iNzciIHkyPSIxNzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIxNzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0xMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxNjQiIHgyPSI3MSIgeTI9IjE2NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTU4IiB4Mj0iNzEiIHkyPSIxNTgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjE1MiIgeDI9IjcxIiB5Mj0iMTUyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxNDYiIHgyPSI3MSIgeTI9IjE0NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTQwIiB4Mj0iNzciIHkyPSIxNDAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIxNDQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjDCsEM8L3RleHQ+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTM0IiB4Mj0iNzEiIHkyPSIxMzQiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjEyOCIgeDI9IjcxIiB5Mj0iMTI4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxMjIiIHgyPSI3MSIgeTI9IjEyMiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTE2IiB4Mj0iNzEiIHkyPSIxMTYiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjExMCIgeDI9Ijc3IiB5Mj0iMTEwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iMTE0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzMzIj4xMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxMDQiIHgyPSI3MSIgeTI9IjEwNCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iOTgiIHgyPSI3MSIgeTI9Ijk4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSI5MiIgeDI9IjcxIiB5Mj0iOTIiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9Ijg2IiB4Mj0iNzEiIHkyPSI4NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iODAiIHgyPSI3NyIgeTI9IjgwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iODQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjIwwrBDPC90ZXh0PgogIDxsaW5lIHgxPSI2NSIgeTE9Ijc0IiB4Mj0iNzEiIHkyPSI3NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iNjgiIHgyPSI3MSIgeTI9IjY4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSI2MiIgeDI9IjcxIiB5Mj0iNjIiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjU2IiB4Mj0iNzEiIHkyPSI1NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iNTAiIHgyPSI3NyIgeTI9IjUwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iNTQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjMwwrBDPC90ZXh0PgogIAoKICA8IS0tIEJ1bGIgYW5kIGxpcXVpZCAtLT4KICA8IS0tIE91dGxpbmUgYmFjayAtLT4KICA8cGF0aCBkPSJNIDQzIDQwIEEgNyA3IDAgMCAxIDU3IDQwIEwgNTcgMjQ1LjUgQSAyMCAyMCAwIDEgMSA0MyAyNDUuNSBaIiBmaWxsPSIjZWVlZWVlIiAvPgogIAogIDwhLS0gTGlxdWlkIENvbHVtbiAtLT4KICA8cmVjdCB4PSI0NiIgeT0iMTc2IiB3aWR0aD0iOCIgaGVpZ2h0PSI4NCIgZmlsbD0idXJsKCNsaXF1aWQpIiAvPgogIDxjaXJjbGUgY3g9IjUwIiBjeT0iMjYwIiByPSIxNiIgZmlsbD0idXJsKCNsaXF1aWQpIiAvPgogIAogIDwhLS0gVG9wIHJvdW5kZWQgcGFydCBvZiBsaXF1aWQgLS0+CiAgPHBhdGggZD0iTSA0NiAxNzYgQSA0IDQgMCAwIDEgNTQgMTc2IEwgNTQgMTgxIEwgNDYgMTgxIFoiIGZpbGw9InVybCgjbGlxdWlkKSIgLz4KCiAgPCEtLSBHbGFzcyBPdmVybGFwIC0tPgogIDxwYXRoIGQ9Ik0gNDMgNDAgQSA3IDcgMCAwIDEgNTcgNDAgTCA1NyAyNDUuNSBBIDIwIDIwIDAgMSAxIDQzIDI0NS41IFoiIGZpbGw9InVybCgjZ2xhc3MpIiBzdHJva2U9IiNjY2MiIHN0cm9rZS13aWR0aD0iMSIgLz4KICAKICA8IS0tIEdsYXNzIHJlZmxlY3Rpb24gaGlnaGxpZ2h0IC0tPgogIDxyZWN0IHg9IjQ1IiB5PSI0MiIgd2lkdGg9IjIiIGhlaWdodD0iMTk1IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjgiIHJ4PSIxIiAvPgogIDxjaXJjbGUgY3g9IjQ1IiBjeT0iMjU1IiByPSI0IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIwLjYiIC8+Cjwvc3ZnPg==",
+          "options": [
+            "\\(12^\\circ\\text{C}\\)",
+            "\\(-10^\\circ\\text{C}\\)",
+            "\\(-12^\\circ\\text{C}\\)",
+            "\\(-14^\\circ\\text{C}\\)"
+          ],
+          "answer": 2,
+          "hint": "Look at the red level on the scale.",
+          "solution": "The reading is $-12^\\circ\\text{C}$.",
+          "steps": [
+            {
+              "explain": "Read thermometer",
+              "work": "-12^\\circ\\text{C}"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q6d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the reading for the thermometer shown below.",
+          "figure": {
+            "jsxGraph": {
+              "width": 150,
+              "height": 350,
+              "boundingbox": [
+                -25,
+                60,
+                25,
+                -70
+              ],
+              "script": "\n        board.suspendUpdate();\n        var yOffset = -60;\n        board.create('circle', [[0, yOffset], 6], {fillColor: '#cc0000', strokeColor: '#cc0000'});\n        board.create('polygon', [[-2.5, 50], [2.5, 50], [2.5, yOffset+4], [-2.5, yOffset+4]], {fillColor: '#f8f9fa', strokeColor: '#475569', borders: {strokeWidth: 1}});\n        board.create('polygon', [[-1.5, 4], [1.5, 4], [1.5, yOffset+4], [-1.5, yOffset+4]], {fillColor: '#cc0000', strokeColor: '#cc0000', borders: {strokeWidth: 0}});\n        board.create('text', [0, 58, '°C'], {anchorX: 'middle', fontSize: 14});\n        for (var i = -60; i <= 50; i += 10) {\n          board.create('segment', [[2.5, i], [6, i]], {strokeColor: '#475569'});\n          board.create('text', [8, i, i.toString()], {anchorY: 'middle', fontSize: 12});\n        }\n        for (var i = -60; i <= 50; i += 2) {\n          if (i % 10 !== 0) board.create('segment', [[2.5, i], [4.5, i]], {strokeColor: '#475569', strokeWidth: 1});\n        }\n        board.unsuspendUpdate();\n      "
+            }
+          },
+          "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjMyMCIgdmlld0JveD0iMCAwIDE4MCAzMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdsYXNzIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC44IiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iI2UwZTBlMCIgc3RvcC1vcGFjaXR5PSIwLjQiIC8+CiAgICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuOSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpcXVpZCIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjYjcxYzFjIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2Y0NDMzNiIgLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZDMyZjJmIiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxmaWx0ZXIgaWQ9InNoYWRvdyIgeD0iLTIwJSIgeT0iLTIwJSIgd2lkdGg9IjE0MCUiIGhlaWdodD0iMTQwJSI+CiAgICAgIDxmZURyb3BTaGFkb3cgZHg9IjIiIGR5PSI0IiBzdGREZXZpYXRpb249IjQiIGZsb29kLW9wYWNpdHk9IjAuMTUiIC8+CiAgICA8L2ZpbHRlcj4KICA8L2RlZnM+CgogIDwhLS0gQmFja2dyb3VuZCBiYWNraW5nIC0tPgogIDxyZWN0IHg9IjIwIiB5PSIxMCIgd2lkdGg9IjE0MCIgaGVpZ2h0PSIzMDAiIHJ4PSIxNSIgZmlsbD0iI2ZkZmRmZCIgc3Ryb2tlPSIjZTBlMGUwIiBzdHJva2Utd2lkdGg9IjEiIGZpbHRlcj0idXJsKCNzaGFkb3cpIiAvPgogIAogIDwhLS0gVGlja3MgLS0+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjMwIiB4Mj0iNzciIHkyPSIyMzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIyMzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0zMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIyMjQiIHgyPSI3MSIgeTI9IjIyNCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjE4IiB4Mj0iNzEiIHkyPSIyMTgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjIxMiIgeDI9IjcxIiB5Mj0iMjEyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIyMDYiIHgyPSI3MSIgeTI9IjIwNiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMjAwIiB4Mj0iNzciIHkyPSIyMDAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIyMDQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0yMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxOTQiIHgyPSI3MSIgeTI9IjE5NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTg4IiB4Mj0iNzEiIHkyPSIxODgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjE4MiIgeDI9IjcxIiB5Mj0iMTgyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxNzYiIHgyPSI3MSIgeTI9IjE3NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTcwIiB4Mj0iNzciIHkyPSIxNzAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIxNzQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPi0xMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxNjQiIHgyPSI3MSIgeTI9IjE2NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTU4IiB4Mj0iNzEiIHkyPSIxNTgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjE1MiIgeDI9IjcxIiB5Mj0iMTUyIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxNDYiIHgyPSI3MSIgeTI9IjE0NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTQwIiB4Mj0iNzciIHkyPSIxNDAiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIiAvPgogIDx0ZXh0IHg9IjgyIiB5PSIxNDQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjDCsEM8L3RleHQ+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTM0IiB4Mj0iNzEiIHkyPSIxMzQiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjEyOCIgeDI9IjcxIiB5Mj0iMTI4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSIxMjIiIHgyPSI3MSIgeTI9IjEyMiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iMTE2IiB4Mj0iNzEiIHkyPSIxMTYiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjExMCIgeDI9Ijc3IiB5Mj0iMTEwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iMTE0IiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMzMzIj4xMMKwQzwvdGV4dD4KICA8bGluZSB4MT0iNjUiIHkxPSIxMDQiIHgyPSI3MSIgeTI9IjEwNCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iOTgiIHgyPSI3MSIgeTI9Ijk4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSI5MiIgeDI9IjcxIiB5Mj0iOTIiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9Ijg2IiB4Mj0iNzEiIHkyPSI4NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iODAiIHgyPSI3NyIgeTI9IjgwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iODQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjIwwrBDPC90ZXh0PgogIDxsaW5lIHgxPSI2NSIgeTE9Ijc0IiB4Mj0iNzEiIHkyPSI3NCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iNjgiIHgyPSI3MSIgeTI9IjY4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMSIgLz4KICA8bGluZSB4MT0iNjUiIHkxPSI2MiIgeDI9IjcxIiB5Mj0iNjIiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIxIiAvPgogIDxsaW5lIHgxPSI2NSIgeTE9IjU2IiB4Mj0iNzEiIHkyPSI1NiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgPGxpbmUgeDE9IjY1IiB5MT0iNTAiIHgyPSI3NyIgeTI9IjUwIiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIgLz4KICA8dGV4dCB4PSI4MiIgeT0iNTQiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZm9udC13ZWlnaHQ9ImJvbGQiIGZpbGw9IiMzMzMiPjMwwrBDPC90ZXh0PgogIAoKICA8IS0tIEJ1bGIgYW5kIGxpcXVpZCAtLT4KICA8IS0tIE91dGxpbmUgYmFjayAtLT4KICA8cGF0aCBkPSJNIDQzIDQwIEEgNyA3IDAgMCAxIDU3IDQwIEwgNTcgMjQ1LjUgQSAyMCAyMCAwIDEgMSA0MyAyNDUuNSBaIiBmaWxsPSIjZWVlZWVlIiAvPgogIAogIDwhLS0gTGlxdWlkIENvbHVtbiAtLT4KICA8cmVjdCB4PSI0NiIgeT0iMTI4IiB3aWR0aD0iOCIgaGVpZ2h0PSIxMzIiIGZpbGw9InVybCgjbGlxdWlkKSIgLz4KICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjI2MCIgcj0iMTYiIGZpbGw9InVybCgjbGlxdWlkKSIgLz4KICAKICA8IS0tIFRvcCByb3VuZGVkIHBhcnQgb2YgbGlxdWlkIC0tPgogIDxwYXRoIGQ9Ik0gNDYgMTI4IEEgNCA0IDAgMCAxIDU0IDEyOCBMIDU0IDEzMyBMIDQ2IDEzMyBaIiBmaWxsPSJ1cmwoI2xpcXVpZCkiIC8+CgogIDwhLS0gR2xhc3MgT3ZlcmxhcCAtLT4KICA8cGF0aCBkPSJNIDQzIDQwIEEgNyA3IDAgMCAxIDU3IDQwIEwgNTcgMjQ1LjUgQSAyMCAyMCAwIDEgMSA0MyAyNDUuNSBaIiBmaWxsPSJ1cmwoI2dsYXNzKSIgc3Ryb2tlPSIjY2NjIiBzdHJva2Utd2lkdGg9IjEiIC8+CiAgCiAgPCEtLSBHbGFzcyByZWZsZWN0aW9uIGhpZ2hsaWdodCAtLT4KICA8cmVjdCB4PSI0NSIgeT0iNDIiIHdpZHRoPSIyIiBoZWlnaHQ9IjE5NSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC44IiByeD0iMSIgLz4KICA8Y2lyY2xlIGN4PSI0NSIgY3k9IjI1NSIgcj0iNCIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC42IiAvPgo8L3N2Zz4=",
+          "options": [
+            "\\(-4^\\circ\\text{C}\\)",
+            "\\(4^\\circ\\text{C}\\)",
+            "\\(6^\\circ\\text{C}\\)",
+            "\\(2^\\circ\\text{C}\\)"
+          ],
+          "answer": 1,
+          "hint": "Look at the red level on the scale.",
+          "solution": "The reading is $4^\\circ\\text{C}$.",
+          "steps": [
+            {
+              "explain": "Read thermometer",
+              "work": "4^\\circ\\text{C}"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $8$",
+          "options": [
+            "\\(-8\\)",
+            "\\(8\\)",
+            "\\(0\\)",
+            "\\(-9\\)"
+          ],
+          "answer": 0,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $8$ is $-8$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "-8"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $-7$",
+          "options": [
+            "\\(-7\\)",
+            "\\(0\\)",
+            "\\(8\\)",
+            "\\(7\\)"
+          ],
+          "answer": 3,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $-7$ is $7$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "7"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $42$",
+          "options": [
+            "\\(42\\)",
+            "\\(-24\\)",
+            "\\(-42\\)",
+            "\\(-41\\)"
+          ],
+          "answer": 2,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $42$ is $-42$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "-42"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $-12$",
+          "options": [
+            "\\(-12\\)",
+            "\\(12\\)",
+            "\\(21\\)",
+            "\\(13\\)"
+          ],
+          "answer": 1,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $-12$ is $12$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "12"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $-85$",
+          "options": [
+            "\\(85\\)",
+            "\\(-85\\)",
+            "\\(58\\)",
+            "\\(84\\)"
+          ],
+          "answer": 0,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $-85$ is $85$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "85"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $93$",
+          "options": [
+            "\\(93\\)",
+            "\\(-39\\)",
+            "\\(-94\\)",
+            "\\(-93\\)"
+          ],
+          "answer": 3,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $93$ is $-93$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "-93"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $-567$",
+          "options": [
+            "\\(-567\\)",
+            "\\(657\\)",
+            "\\(567\\)",
+            "\\(568\\)"
+          ],
+          "answer": 2,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $-567$ is $567$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "567"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $20000$",
+          "options": [
+            "\\(20000\\)",
+            "\\(-20000\\)",
+            "\\(-2000\\)",
+            "\\(-20001\\)"
+          ],
+          "answer": 1,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $20000$ is $-20000$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "-20000"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $-4500$",
+          "options": [
+            "\\(4500\\)",
+            "\\(-4500\\)",
+            "\\(450\\)",
+            "\\(4501\\)"
+          ],
+          "answer": 0,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $-4500$ is $4500$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "4500"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $8900$",
+          "options": [
+            "\\(8900\\)",
+            "\\(-890\\)",
+            "\\(-8901\\)",
+            "\\(-8900\\)"
+          ],
+          "answer": 3,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $8900$ is $-8900$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "-8900"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $-67000$",
+          "options": [
+            "\\(-67000\\)",
+            "\\(-6700\\)",
+            "\\(67000\\)",
+            "\\(67001\\)"
+          ],
+          "answer": 2,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $-67000$ is $67000$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "67000"
+            }
+          ]
+        },
+        {
+          "id": "y8-4a-q7l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Determine the opposite of this integer: $84000$",
+          "options": [
+            "\\(84000\\)",
+            "\\(-84000\\)",
+            "\\(-8400\\)",
+            "\\(-84001\\)"
+          ],
+          "answer": 1,
+          "hint": "Change the sign of the integer.",
+          "solution": "The opposite of $84000$ is $-84000$.",
+          "steps": [
+            {
+              "explain": "Change sign",
+              "work": "-84000"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q9",
+          "type": "mc",
+          "stem": "The temperature changed from \\(6^\\circ\\text{C}\\) to \\(-8^\\circ\\text{C}\\) overnight. What was the change in temperature?",
+          "options": [
+            "\\(14^\\circ\\text{C decrease}\\)",
+            "\\(2^\\circ\\text{C decrease}\\)",
+            "\\(14^\\circ\\text{C increase}\\)",
+            "\\(2^\\circ\\text{C increase}\\)"
+          ],
+          "answer": 0,
+          "hint": "How many degrees does it take to get from 6 down to 0, and then from 0 down to -8?",
+          "steps": [
+            {
+              "explain": "The starting temperature was \\(6^\\circ\\text{C}\\). It dropped to \\(0^\\circ\\text{C}\\), which is a decrease of \\(6^\\circ\\text{C}\\)."
+            },
+            {
+              "explain": "Then it dropped further from \\(0^\\circ\\text{C}\\) to \\(-8^\\circ\\text{C}\\), which is an additional decrease of \\(8^\\circ\\text{C}\\)."
+            },
+            {
+              "explain": "The total decrease is \\(6 + 8 = 14^\\circ\\text{C}\\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-4d",
+      "code": "4D",
+      "title": "Multiplication and division with negative integers",
+      "questions": [
+        {
+          "id": "y8-ep1-q10a",
+          "type": "mc",
+          "stem": "Complete the following statement:<br><br>\\((-12) \\div (-12) = ...\\)",
+          "options": [
+            "\\(-1\\)",
+            "\\(-144\\)",
+            "\\(144\\)",
+            "\\(1\\)"
+          ],
+          "answer": 3,
+          "hint": "Any non-zero number divided by itself is 1. Also, a negative divided by a negative is a positive.",
+          "steps": [
+            {
+              "explain": "When dividing two negative numbers, the result is positive."
+            },
+            {
+              "explain": "Any number divided by itself is equal to 1.",
+              "work": "\\(12 \\div 12 = 1\\)"
+            },
+            {
+              "explain": "Therefore, \\((-12) \\div (-12) = 1\\)."
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q10b",
+          "type": "mc",
+          "stem": "Complete the following statement:<br><br>\\(... \\times (5 - 9) = -20\\)",
+          "options": [
+            "\\(5\\)",
+            "\\(-4\\)",
+            "\\(4\\)",
+            "\\(-5\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate the value in the brackets first.",
+          "steps": [
+            {
+              "explain": "First, evaluate the expression inside the brackets.",
+              "work": "\\(5 - 9 = -4\\)"
+            },
+            {
+              "explain": "Now we need to find what number multiplied by \\(-4\\) gives \\(-20\\).",
+              "work": "\\(x \\times (-4) = -20\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(-4\\).",
+              "work": "\\(x = \\frac{-20}{-4} = 5\\)"
+            },
+            {
+              "explain": "The missing number is 5."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-4h",
+      "code": "4H",
+      "title": "Review of negative numbers",
+      "questions": [
+        {
+          "id": "y8-4h-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate:\n\n$-18 + 26$",
+          "options": [
+            "\\(44\\)",
+            "\\(-44\\)",
+            "\\(-8\\)",
+            "\\(8\\)"
+          ],
+          "answer": 3,
+          "hint": "Adding a positive number moves to the right on the number line.",
+          "solution": "$-18 + 26 = 26 - 18 = 8$.",
+          "steps": [
+            {
+              "explain": "We need to calculate -18 + 26. Adding a positive number to a negative number moves us to the right on the number line, so the plan is to combine the two values directly."
+            },
+            {
+              "explain": "Since 26 is larger in size than 18, the result is positive. Subtract 18 from 26 to find the size of the result.",
+              "work": "\\(26 - 18 = 8\\)"
+            },
+            {
+              "explain": "Therefore, -18 + 26 equals 8. This is a positive result because the positive term outweighed the negative one.",
+              "work": "\\(8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate:\n\n$32 - (-54)$",
+          "options": [
+            "\\( 86 \\)",
+            "\\( -22 \\)",
+            "\\( -86 \\)",
+            "\\( 22 \\)"
+          ],
+          "answer": 0,
+          "hint": "Subtracting a negative is the same as adding.",
+          "solution": "Subtracting a negative is the same as adding a positive: $32 + 54 = 86$.",
+          "steps": [
+            {
+              "explain": "Subtracting a negative number is the same as adding a positive number.",
+              "work": "32 - (-54) = 32 + 54"
+            },
+            {
+              "explain": "Add the two numbers together.",
+              "work": "32 + 54 = 86"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate:\n\n$45 - 82 + 19$",
+          "options": [
+            "\\(18\\)",
+            "\\(-18\\)",
+            "\\(-56\\)",
+            "\\(56\\)"
+          ],
+          "answer": 1,
+          "hint": "Calculate from left to right.",
+          "solution": "Work from left to right: $45 - 82 = -37$. Then $-37 + 19 = -18$.",
+          "steps": [
+            {
+              "explain": "We need to calculate 45 - 82 + 19. Since there is no bracket, the plan is to work through the expression from left to right, one operation at a time."
+            },
+            {
+              "explain": "Subtract 82 from 45 first. Since 82 is larger than 45, the result is negative.",
+              "work": "\\(45 - 82 = -37\\)"
+            },
+            {
+              "explain": "Add 19 to -37 to complete the calculation. This brings the running total closer to zero.",
+              "work": "\\(-37 + 19 = -18\\)"
+            },
+            {
+              "explain": "Therefore, 45 - 82 + 19 equals -18, a negative result since the subtraction of 82 outweighed the additions. This shows how working left to right keeps track of the running total correctly.",
+              "work": "\\(-18\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate:\n\n$19 - 25 - 8$",
+          "options": [
+            "\\(-14\\)",
+            "\\(14\\)",
+            "\\(2\\)",
+            "\\(-2\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate from left to right.",
+          "solution": "Work from left to right: $19 - 25 = -6$. Then $-6 - 8 = -14$.",
+          "steps": [
+            {
+              "explain": "We need to calculate 19 - 25 - 8. Since there is no bracket, the plan is to work through the expression from left to right, one subtraction at a time."
+            },
+            {
+              "explain": "Subtract 25 from 19 first. Since 25 is larger than 19, the result is negative.",
+              "work": "\\(19 - 25 = -6\\)"
+            },
+            {
+              "explain": "Subtract 8 from -6 to complete the calculation, moving further into negative territory. Since both numbers being combined are negative, the result becomes more negative.",
+              "work": "\\(-6 - 8 = -14\\)"
+            },
+            {
+              "explain": "Therefore, 19 - 25 - 8 equals -14, since both subtractions reduced the running total below zero. This confirms the running total became increasingly negative with each step.",
+              "work": "\\(-14\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate:\n\n$-315 - (-1240) + 72$",
+          "options": [
+            "\\(-1483\\)",
+            "\\(925\\)",
+            "\\(-997\\)",
+            "\\(997\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert subtracting a negative to addition first.",
+          "solution": "Convert subtracting a negative to adding: $-315 + 1240 + 72 = 925 + 72 = 997$.",
+          "steps": [
+            {
+              "explain": "We need to calculate -315 - (-1240) + 72. Subtracting a negative is equivalent to adding a positive, so the plan is to rewrite the double negative before combining terms left to right."
+            },
+            {
+              "explain": "Convert the double negative into addition, since subtracting -1240 is the same as adding 1240. This is because subtracting a negative number always increases the value.",
+              "work": "\\(-315 - (-1240) = -315 + 1240\\)"
+            },
+            {
+              "explain": "Add -315 and 1240 together. Since 1240 is larger, the running total becomes positive.",
+              "work": "\\(-315 + 1240 = 925\\)"
+            },
+            {
+              "explain": "Add the final term, 72, to the running total to reach the answer. The result is a positive number since the additions outweighed the subtraction.",
+              "work": "\\(925 + 72 = 997\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate:\n\n$12 - (18 + (-35))$",
+          "options": [
+            "\\(-5\\)",
+            "\\(-41\\)",
+            "\\(29\\)",
+            "\\(5\\)"
+          ],
+          "answer": 2,
+          "hint": "Calculate the expression inside the brackets first.",
+          "solution": "Evaluate the brackets first: $18 + (-35) = -17$. Then $12 - (-17) = 12 + 17 = 29$.",
+          "steps": [
+            {
+              "explain": "We need to calculate 12 - (18 + (-35)). The order of operations tells us to evaluate the expression inside the brackets first, before applying the outer subtraction."
+            },
+            {
+              "explain": "Evaluate the bracket first. Adding -35 to 18 is the same as subtracting 35 from 18.",
+              "work": "\\(18 + (-35) = -17\\)"
+            },
+            {
+              "explain": "Substitute the bracket result back into the expression, converting the subtraction of a negative into an addition. Subtracting a negative number is equivalent to adding its positive counterpart.",
+              "work": "\\(12 - (-17) = 12 + 17\\)"
+            },
+            {
+              "explain": "Add 12 and 17 to reach the final answer. The result is positive because subtracting a negative bracket increased the total.",
+              "work": "\\(12 + 17 = 29\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate:\n\n$4 \\times (-7 + 12) - 8$",
+          "options": [
+            "\\(-24\\)",
+            "\\(12\\)",
+            "\\(20\\)",
+            "\\(-12\\)"
+          ],
+          "answer": 1,
+          "hint": "Follow the order of operations (BODMAS/BIDMAS).",
+          "solution": "Brackets first: $-7 + 12 = 5$. Then multiply: $4 \\times 5 = 20$. Then subtract: $20 - 8 = 12$.",
+          "steps": [
+            {
+              "explain": "We need to evaluate 4 \\times (-7 + 12) - 8. Following the order of operations (BIDMAS/BODMAS), the plan is to evaluate the bracket first, then multiply, then subtract."
+            },
+            {
+              "explain": "Evaluate the bracket first, adding -7 and 12 together. Brackets must always be simplified before any other operation is applied.",
+              "work": "\\(-7 + 12 = 5\\)"
+            },
+            {
+              "explain": "Multiply the result of the bracket by 4, since multiplication comes before the remaining subtraction. This follows the standard order of operations.",
+              "work": "\\(4 \\times 5 = 20\\)"
+            },
+            {
+              "explain": "Subtract 8 from 20 to complete the calculation. The final result is a positive number.",
+              "work": "\\(20 - 8 = 12\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate:\n\n$-4 \\times -8 - 15$",
+          "options": [
+            "\\(17\\)",
+            "\\(-47\\)",
+            "\\(47\\)",
+            "\\(-17\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply before subtracting.",
+          "solution": "Multiply first: $-4 \\times -8 = 32$. Then subtract: $32 - 15 = 17$.",
+          "steps": [
+            {
+              "explain": "We need to evaluate -4 \\times -8 - 15. Following the order of operations, the plan is to perform the multiplication first, then subtract."
+            },
+            {
+              "explain": "Multiply the two negative numbers first. A negative multiplied by a negative gives a positive result.",
+              "work": "\\(-4 \\times -8 = 32\\)"
+            },
+            {
+              "explain": "Subtract 15 from 32 to complete the calculation. This is the final step needed to reach the answer.",
+              "work": "\\(32 - 15 = 17\\)"
+            },
+            {
+              "explain": "Therefore, -4 \\times -8 - 15 equals 17, a positive result since the multiplication of two negatives produced a positive that outweighed the subtraction. This confirms that multiplying two negative numbers together always produces a positive result.",
+              "work": "\\(17\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate:\n\n$-28 \\div 4 + 7 \\times -3$",
+          "options": [
+            "\\(-14\\)",
+            "\\(14\\)",
+            "\\(28\\)",
+            "\\(-28\\)"
+          ],
+          "answer": 3,
+          "hint": "Do multiplication and division before addition.",
+          "solution": "Divide and multiply first: $-28 \\div 4 = -7$, and $7 \\times -3 = -21$. Then add: $-7 + (-21) = -28$.",
+          "steps": [
+            {
+              "explain": "We need to evaluate -28 \\div 4 + 7 \\times -3. Following the order of operations, the plan is to perform the division and multiplication before the addition."
+            },
+            {
+              "explain": "Divide -28 by 4 first. A negative divided by a positive gives a negative result.",
+              "work": "\\(-28 \\div 4 = -7\\)"
+            },
+            {
+              "explain": "Multiply 7 by -3. A positive multiplied by a negative gives a negative result.",
+              "work": "\\(7 \\times -3 = -21\\)"
+            },
+            {
+              "explain": "Add the two results together to complete the calculation. Both terms are negative, so the final answer is also negative.",
+              "work": "\\(-7 + (-21) = -28\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate:\n\n$-15 \\times (-3) - (-6 - 4) \\times 4$",
+          "options": [
+            "\\(53\\)",
+            "\\(5\\)",
+            "\\(85\\)",
+            "\\(-85\\)"
+          ],
+          "answer": 2,
+          "hint": "Evaluate brackets, then multiply, then subtract.",
+          "solution": "Brackets: $-6 - 4 = -10$. Multiply: $-15 \\times (-3) = 45$ and $-10 \\times 4 = -40$. Subtract: $45 - (-40) = 45 + 40 = 85$.",
+          "steps": [
+            {
+              "explain": "We need to evaluate -15 \\times (-3) - (-6 - 4) \\times 4. Following the order of operations, the plan is to evaluate the bracket first, then perform both multiplications, then subtract."
+            },
+            {
+              "explain": "Evaluate the bracket first by subtracting 4 from -6. Brackets are always simplified before any multiplication or subtraction outside them.",
+              "work": "\\(-6 - 4 = -10\\)"
+            },
+            {
+              "explain": "Perform both multiplications: a negative times a negative gives a positive, and the bracket result times 4 stays negative. These two products must be found before the final subtraction can be carried out.",
+              "work": "\\(-15 \\times (-3) = 45 \\text{ and } -10 \\times 4 = -40\\)"
+            },
+            {
+              "explain": "Subtract -40 from 45, which is the same as adding 40, to reach the final answer. This completes the calculation and gives a positive result.",
+              "work": "\\(45 - (-40) = 45 + 40 = 85\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate:\n\n$\\frac{-84 - 7 \\times 6}{5 - (-4)}$",
+          "options": [
+            "\\(-126\\)",
+            "\\(14\\)",
+            "\\(-\\frac{14}{3}\\)",
+            "\\(-14\\)"
+          ],
+          "answer": 3,
+          "hint": "Evaluate the numerator and denominator separately.",
+          "solution": "Numerator: $-84 - 42 = -126$. Denominator: $5 + 4 = 9$. Fraction: $\\frac{-126}{9} = -14$.",
+          "steps": [
+            {
+              "explain": "We need to evaluate \\frac{-84 - 7 \\times 6}{5 - (-4)}. The plan is to simplify the numerator and the denominator separately before dividing."
+            },
+            {
+              "explain": "Simplify the numerator by multiplying first, then subtracting, following the order of operations. Multiplication must be completed before the subtraction is carried out.",
+              "work": "\\(-84 - 7 \\times 6 = -84 - 42 = -126\\)"
+            },
+            {
+              "explain": "Simplify the denominator by converting the subtraction of a negative into an addition. This gives a positive value for the denominator.",
+              "work": "\\(5 - (-4) = 5 + 4 = 9\\)"
+            },
+            {
+              "explain": "Divide the numerator by the denominator to complete the calculation. The result is negative since a negative divided by a positive gives a negative value.",
+              "work": "\\(\\frac{-126}{9} = -14\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate:\n\n$\\frac{25 \\times 6}{3} - \\frac{9 \\times (-10)}{5}$",
+          "options": [
+            "\\(68\\)",
+            "\\(32\\)",
+            "\\(-32\\)",
+            "\\(-68\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify each fraction first.",
+          "solution": "First fraction: $\\frac{150}{3} = 50$. Second fraction: $\\frac{-90}{5} = -18$. Subtract: $50 - (-18) = 50 + 18 = 68$.",
+          "steps": [
+            {
+              "explain": "We need to evaluate \\frac{25 \\times 6}{3} - \\frac{9 \\times (-10)}{5}. The plan is to simplify each fraction separately before combining them."
+            },
+            {
+              "explain": "Simplify the first fraction by multiplying then dividing. Both operations in the numerator and division are completed to reach a whole number.",
+              "work": "\\(\\frac{25 \\times 6}{3} = \\frac{150}{3} = 50\\)"
+            },
+            {
+              "explain": "Simplify the second fraction. A positive multiplied by a negative gives a negative numerator.",
+              "work": "\\(\\frac{9 \\times (-10)}{5} = \\frac{-90}{5} = -18\\)"
+            },
+            {
+              "explain": "Subtract the second fraction from the first, converting the subtraction of a negative into addition to reach the final answer. This gives a larger positive result than either fraction alone.",
+              "work": "\\(50 - (-18) = 50 + 18 = 68\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q2g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate:\n\n$-\\frac{5}{12} + \\frac{3}{7}$",
+          "options": [
+            "\\(-\\frac{2}{19}\\)",
+            "\\(\\frac{71}{84}\\)",
+            "\\(-\\frac{1}{84}\\)",
+            "\\(\\frac{1}{84}\\)"
+          ],
+          "answer": 3,
+          "hint": "Find a common denominator.",
+          "solution": "Find a common denominator of 84. $-\\frac{35}{84} + \\frac{36}{84} = \\frac{1}{84}$.",
+          "steps": [
+            {
+              "explain": "We need to evaluate -\\frac{5}{12} + \\frac{3}{7}. Since the denominators are different, the plan is to find a common denominator before adding the fractions."
+            },
+            {
+              "explain": "The lowest common denominator of 12 and 7 is 84. Convert both fractions to have this denominator.",
+              "work": "\\(-\\frac{5}{12} = -\\frac{35}{84}, \\quad \\frac{3}{7} = \\frac{36}{84}\\)"
+            },
+            {
+              "explain": "Add the numerators now that the fractions share a common denominator. Only the numerators change when adding fractions with the same denominator.",
+              "work": "\\(-\\frac{35}{84} + \\frac{36}{84} = \\frac{1}{84}\\)"
+            },
+            {
+              "explain": "Therefore, -\\frac{5}{12} + \\frac{3}{7} equals \\frac{1}{84}, a small positive fraction since the positive term was very slightly larger once converted. Even though the fractions started far apart in size, converting to a common denominator revealed how close they actually were.",
+              "work": "\\(\\frac{1}{84}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q2h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate:\n\n$\\frac{5}{14} \\times \\left( -\\frac{7}{5} \\right) + \\frac{9}{4}$",
+          "options": [
+            "\\(\\frac{11}{4}\\)",
+            "\\(-\\frac{7}{4}\\)",
+            "\\(\\frac{7}{4}\\)",
+            "\\(\\frac{7}{8}\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply before adding.",
+          "solution": "Multiply first: $\\frac{5}{14} \\times -\\frac{7}{5} = -\\frac{35}{70} = -\\frac{1}{2}$. Then add: $-\\frac{1}{2} + \\frac{9}{4} = -\\frac{2}{4} + \\frac{9}{4} = \\frac{7}{4}$.",
+          "steps": [
+            {
+              "explain": "We need to evaluate \\frac{5}{14} \\times \\left( -\\frac{7}{5} \\right) + \\frac{9}{4}. Following the order of operations, the plan is to multiply the two fractions first, then add the last term."
+            },
+            {
+              "explain": "Multiply the first two fractions. A positive multiplied by a negative gives a negative result, and common factors cancel to simplify.",
+              "work": "\\(\\frac{5}{14} \\times \\left( -\\frac{7}{5} \\right) = -\\frac{1}{2}\\)"
+            },
+            {
+              "explain": "Convert both terms to a common denominator of 4 so they can be added. This allows the two fractions to be combined directly.",
+              "work": "\\(-\\frac{1}{2} = -\\frac{2}{4}\\)"
+            },
+            {
+              "explain": "Add the two fractions together to complete the calculation. The result is positive since the larger fraction was positive.",
+              "work": "\\(-\\frac{2}{4} + \\frac{9}{4} = \\frac{7}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The maximum temperature for Perisher today was $-6^\\circ\\text{C}$, while Mount Buller had a top temperature of $-18.5^\\circ\\text{C}$. How much warmer than Mount Buller was Perisher today?",
+          "options": [
+            "\\(-12.5^\\circ\\text{C}\\)",
+            "\\(12.5^\\circ\\text{C}\\)",
+            "\\(24.5^\\circ\\text{C}\\)",
+            "\\(6.5^\\circ\\text{C}\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract the lower temperature from the higher temperature.",
+          "solution": "Difference = $-6 - (-18.5) = -6 + 18.5 = 12.5^\\circ\\text{C}$.",
+          "steps": [
+            {
+              "explain": "Perisher had a maximum temperature of -6 degrees Celsius, while Mount Buller had -18.5 degrees Celsius. The plan is to subtract the lower temperature from the higher one to find how much warmer Perisher was."
+            },
+            {
+              "explain": "Convert the subtraction of a negative into addition, since subtracting -18.5 is the same as adding 18.5.",
+              "work": "\\(-6 - (-18.5) = -6 + 18.5\\)"
+            },
+            {
+              "explain": "Add -6 and 18.5 together. Since 18.5 is larger in size, the result is positive, confirming Perisher was warmer.",
+              "work": "\\(-6 + 18.5 = 12.5\\)"
+            },
+            {
+              "explain": "Therefore, Perisher was 12.5 degrees Celsius warmer than Mount Buller that day.",
+              "work": "\\(12.5^\\circ\\text{C}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q4",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Plot these points on the Cartesian plane. Once completed, compare your plot with the correct positions.\n\n\\(A(-5, 3), B(4, -8), C(7, 6), D(-6, 0)\\)",
+          "answer": "Check your plot against the solution.",
+          "hint": "Remember that the first number is the x-coordinate (horizontal) and the second is the y-coordinate (vertical).",
+          "solution": "Point A is 5 units left and 3 units up. Point B is 4 units right and 8 units down. Point C is 7 units right and 6 units up. Point D is 6 units left on the x-axis.",
+          "steps": [
+            {
+              "explain": "Identify the coordinates of point A(-5, 3). The x-coordinate is -5 (move 5 units left along the x-axis) and the y-coordinate is 3 (move 3 units up along the y-axis). Place a dot at this position.",
+              "work": "A(-5, 3) \\text{ is in the second quadrant (top-left).}"
+            },
+            {
+              "explain": "Identify the coordinates of point B(4, -8). The x-coordinate is 4 (move 4 units right along the x-axis) and the y-coordinate is -8 (move 8 units down along the y-axis). Place a dot at this position.",
+              "work": "B(4, -8) \\text{ is in the fourth quadrant (bottom-right).}"
+            },
+            {
+              "explain": "Identify the coordinates of point C(7, 6). The x-coordinate is 7 (move 7 units right along the x-axis) and the y-coordinate is 6 (move 6 units up along the y-axis). Place a dot at this position.",
+              "work": "C(7, 6) \\text{ is in the first quadrant (top-right).}"
+            },
+            {
+              "explain": "Identify the coordinates of point D(-6, 0). The x-coordinate is -6 (move 6 units left along the x-axis) and the y-coordinate is 0 (stay on the x-axis). Place a dot at this position.",
+              "work": "D(-6, 0) \\text{ lies directly on the negative x-axis.}"
+            },
+            {
+              "explain": "The complete plot showing all four points A, B, C, and D on the Cartesian plane is presented below. Verify your markings against this diagram.",
+              "work": "\\text{Final plotted Cartesian plane:}",
+              "figure": {
+                "jsxGraph": {
+                  "width": 300,
+                  "height": 300,
+                  "boundingbox": [
+                    -10,
+                    10,
+                    10,
+                    -10
+                  ],
+                  "showAxisLabels": true,
+                  "keepaspectratio": false,
+                  "script": "\n            board.suspendUpdate();\n            board.options.point.withLabel = false;\n            board.options.point.visible = false;\n            \n            // Draw x and y axes\n            board.create('arrow', [[-9.5, 0], [9.5, 0]], {strokeColor: '#64748b', strokeWidth: 1.5, fixed: true});\n            board.create('arrow', [[0, -9.5], [0, 9.5]], {strokeColor: '#64748b', strokeWidth: 1.5, fixed: true});\n            \n            // Draw coordinate tick marks\n            for (var i = -9; i <= 9; i++) {\n              if (i !== 0) {\n                board.create('segment', [[i, -0.2], [i, 0.2]], {strokeColor: '#cbd5e1', strokeWidth: 1, fixed: true});\n                board.create('segment', [[-0.2, i], [0.2, i]], {strokeColor: '#cbd5e1', strokeWidth: 1, fixed: true});\n              }\n            }\n            \n            // Plot points A, B, C, D\n            var points = [\n              { name: 'A(-5, 3)', coords: [-5, 3] },\n              { name: 'B(4, -8)', coords: [4, -8] },\n              { name: 'C(7, 6)', coords: [7, 6] },\n              { name: 'D(-6, 0)', coords: [-6, 0] }\n            ];\n            \n            points.forEach(function(pt) {\n              board.create('point', pt.coords, {\n                name: pt.name,\n                color: '#f43f5e',\n                strokeColor: '#fda4af',\n                strokeWidth: 1.5,\n                size: 4.5,\n                visible: true,\n                withLabel: true,\n                fixed: true,\n                label: {\n                  fontSize: 10,\n                  fontFamily: '\"Outfit\", \"Inter\", sans-serif',\n                  strokeColor: '#1e293b',\n                  offset: [10, 10]\n                }\n              });\n            });\n            \n            board.unsuspendUpdate();\n          "
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Points $A$, $B$ and $C$ have coordinates $(2, 0)$, $(5, 4)$ and $(8, 0)$ respectively. What is the area of the triangle $ABC$?",
+          "options": [
+            "\\(12\\)",
+            "\\(24\\)",
+            "\\(16\\)",
+            "\\(15\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the length of the base and the perpendicular height.",
+          "solution": "The base of the triangle is on the x-axis from $x=2$ to $x=8$, so its length is $8 - 2 = 6$. The height of the triangle is the y-coordinate of point $B$, which is $4$. Area = $\\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times 4 = 12$.",
+          "steps": [
+            {
+              "explain": "Points A(2, 0), B(5, 4) and C(8, 0) form a triangle. The plan is to use A and C, which both lie on the x-axis, as the base, and use the height of B above that axis to find the area."
+            },
+            {
+              "explain": "Find the length of the base AC by subtracting the x-coordinates of A and C, since both points sit on the x-axis. This works because the distance between two points on the same horizontal line equals the difference in their x-coordinates.",
+              "work": "\\(8 - 2 = 6\\)"
+            },
+            {
+              "explain": "Find the perpendicular height of the triangle, which is the y-coordinate of point B, since that is how far B sits above the base. This works because the base lies exactly on the x-axis, where the y-coordinate is zero.",
+              "work": "\\(\\text{height} = 4\\)"
+            },
+            {
+              "explain": "Apply the triangle area formula, half of base times height, to find the final area. This formula works for any triangle once the base and perpendicular height are known.",
+              "work": "\\(\\frac{1}{2} \\times 6 \\times 4 = 12\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q7a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate:\n\n$3 \\frac{1}{3} - 5 \\frac{3}{4}$",
+          "options": [
+            "\\(2\\frac{5}{12}\\)",
+            "\\(-2\\frac{1}{12}\\)",
+            "\\(-2\\frac{7}{12}\\)",
+            "\\(-2\\frac{5}{12}\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert to improper fractions first.",
+          "solution": "Convert to improper fractions: $\\frac{10}{3} - \\frac{23}{4}$. Find common denominator 12: $\\frac{40}{12} - \\frac{69}{12} = -\\frac{29}{12} = -2 \\frac{5}{12}$.",
+          "steps": [
+            {
+              "explain": "We need to calculate 3\\frac{1}{3} - 5\\frac{3}{4}. Since the second mixed number is larger, the plan is to convert both to improper fractions first so they can be compared and subtracted correctly."
+            },
+            {
+              "explain": "Convert each mixed number into an improper fraction. This makes it possible to subtract the two values using standard fraction rules.",
+              "work": "\\(3\\frac{1}{3} = \\frac{10}{3}, \\quad 5\\frac{3}{4} = \\frac{23}{4}\\)"
+            },
+            {
+              "explain": "Rewrite both fractions using the common denominator 12 so they can be subtracted. A common denominator is required before the numerators can be combined.",
+              "work": "\\(\\frac{10}{3} = \\frac{40}{12}, \\quad \\frac{23}{4} = \\frac{69}{12}\\)"
+            },
+            {
+              "explain": "Subtract the numerators, then convert the resulting improper fraction back into a mixed number. The answer is negative since 69 twelfths is larger than 40 twelfths.",
+              "work": "\\(\\frac{40}{12} - \\frac{69}{12} = -\\frac{29}{12} = -2\\frac{5}{12}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate:\n\n$14.5 - (-9.6) \\times \\frac{3}{4}$",
+          "options": [
+            "\\(18.08\\)",
+            "\\(7.3\\)",
+            "\\(21.7\\)",
+            "\\(22.9\\)"
+          ],
+          "answer": 2,
+          "hint": "Follow the order of operations.",
+          "solution": "Multiply first: $-9.6 \\times \\frac{3}{4} = -9.6 \\div 4 \\times 3 = -2.4 \\times 3 = -7.2$. Then subtract: $14.5 - (-7.2) = 14.5 + 7.2 = 21.7$.",
+          "steps": [
+            {
+              "explain": "We need to calculate 14.5 - (-9.6) \\times \\frac{3}{4}. Following the order of operations, the plan is to perform the multiplication before the subtraction."
+            },
+            {
+              "explain": "Multiply -9.6 by three-quarters first. A negative multiplied by a positive fraction stays negative.",
+              "work": "\\(-9.6 \\times \\frac{3}{4} = -7.2\\)"
+            },
+            {
+              "explain": "Substitute this result back into the expression, converting the subtraction of a negative into an addition. Subtracting a negative value always increases the total.",
+              "work": "\\(14.5 - (-7.2) = 14.5 + 7.2\\)"
+            },
+            {
+              "explain": "Add 14.5 and 7.2 to reach the final answer, which is a positive decimal value.",
+              "work": "\\(14.5 + 7.2 = 21.7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q7c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate:\n\n$15 \\times \\frac{4}{5} \\times \\left( - \\frac{5}{8} \\right)$",
+          "options": [
+            "\\(7\\frac{1}{2}\\)",
+            "\\(-7\\frac{1}{2}\\)",
+            "\\(-6\\frac{1}{2}\\)",
+            "\\(-8\\frac{1}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply from left to right.",
+          "solution": "Multiply first two terms: $15 \\times \\frac{4}{5} = 12$. Then multiply by the last term: $12 \\times \\left( -\\frac{5}{8} \\right) = -\\frac{60}{8} = -\\frac{15}{2} = -7 \\frac{1}{2}$.",
+          "steps": [
+            {
+              "explain": "We need to calculate 15 \\times \\frac{4}{5} \\times \\left( -\\frac{5}{8} \\right). Since there are no brackets to prioritise beyond grouping, the plan is to multiply the three terms working from left to right."
+            },
+            {
+              "explain": "Multiply the first two terms, cancelling common factors between 15 and 5. Cancelling common factors first keeps the numbers smaller and easier to work with.",
+              "work": "\\(15 \\times \\frac{4}{5} = 12\\)"
+            },
+            {
+              "explain": "Multiply this result by the final term. A positive multiplied by a negative gives a negative result.",
+              "work": "\\(12 \\times \\left( -\\frac{5}{8} \\right) = -\\frac{60}{8}\\)"
+            },
+            {
+              "explain": "Simplify the resulting fraction to lowest terms and convert to a mixed number for the final answer. Writing the answer as a mixed number makes its size easier to interpret.",
+              "work": "\\(-\\frac{60}{8} = -\\frac{15}{2} = -7\\frac{1}{2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Sam started the week with a debt of $420.75. He worked hard and earned $3500, but had $300 stolen. He won $95.50 in the lottery and had to pay an electricity bill of $250. After paying his debt and his electricity bill, how much did Sam have left?",
+          "options": [
+            "\\(2624.75\\text{ dollars}\\)",
+            "\\(3466.25\\text{ dollars}\\)",
+            "\\(2924.75\\text{ dollars}\\)",
+            "\\(3124.75\\text{ dollars}\\)"
+          ],
+          "answer": 0,
+          "hint": "Write an equation representing all his financial changes.",
+          "solution": "Calculate the net change to his balance:\nStart: $-420.75$\nEarned: $+3500$\nStolen: $-300$\nWon: $+95.50$\nPaid bill: $-250$\nTotal = $-420.75 + 3500 - 300 + 95.50 - 250 = 3595.50 - 970.75 = \\$2624.75$.",
+          "steps": [
+            {
+              "explain": "Sam started the week owing 420.75 dollars, then had several changes to his balance: earning 3500 dollars, losing 300 dollars to theft, winning 95.50 dollars, and paying a 250 dollar bill. The plan is to add every positive change and subtract every negative change from his starting position."
+            },
+            {
+              "explain": "Add together all the amounts that increased his balance: the money he earned and the money he won. Grouping the positive changes together makes the overall calculation clearer.",
+              "work": "\\(3500 + 95.50 = 3595.50\\)"
+            },
+            {
+              "explain": "Add together all the amounts that decreased his balance: his starting debt, the stolen money, and the electricity bill. Grouping the negative changes together in the same way simplifies the final subtraction.",
+              "work": "\\(420.75 + 300 + 250 = 970.75\\)"
+            },
+            {
+              "explain": "Subtract the total decreases from the total increases to find how much Sam had left at the end of the week. Since the increases were larger than the decreases, Sam ended the week with a positive balance.",
+              "work": "\\(3595.50 - 970.75 = 2624.75\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A large mountain has its peak at a height of $2510\\text{ metres}$ above sea level. Its base on the sea floor is $6845\\text{ metres}$ below sea level. What is the total height of the mountain from the sea floor to its summit?",
+          "options": [
+            "\\(4335\\text{ m}\\)",
+            "\\(-9355\\text{ m}\\)",
+            "\\(9345\\text{ m}\\)",
+            "\\(9355\\text{ m}\\)"
+          ],
+          "answer": 3,
+          "hint": "Subtract the negative height of the base from the height of the peak.",
+          "solution": "The total height is the difference between the peak and the base. $2510 - (-6845) = 2510 + 6845 = 9355\\text{ m}$.",
+          "steps": [
+            {
+              "explain": "The mountain peak sits 2510 metres above sea level, while its base on the sea floor sits 6845 metres below sea level. The plan is to subtract the base height, which is negative, from the peak height to find the total height of the mountain."
+            },
+            {
+              "explain": "Convert the subtraction of a negative into addition, since subtracting -6845 is the same as adding 6845. This is because subtracting a negative number always increases the value.",
+              "work": "\\(2510 - (-6845) = 2510 + 6845\\)"
+            },
+            {
+              "explain": "Add the two values together to find the total vertical distance from the sea floor to the summit. This distance spans both the height above sea level and the depth below it.",
+              "work": "\\(2510 + 6845 = 9355\\)"
+            },
+            {
+              "explain": "Therefore, the mountain measures 9355 metres from its base on the sea floor to its peak above sea level. This total height combines both the portion above sea level and the portion below it.",
+              "work": "\\(9355\\text{ m}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-4h-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a maths competition, Harry scored $30$. Each correct answer was worth $12$ marks. For each incorrect answer, $3$ marks were deducted. If Harry answered $5$ questions correctly, how many incorrect answers did he have?",
+          "options": [
+            "\\(10\\)",
+            "\\(9\\)",
+            "\\(20\\)",
+            "\\(30\\)"
+          ],
+          "answer": 0,
+          "hint": "Find how many marks he lost by comparing his actual score to the score he got from correct answers.",
+          "solution": "Marks from correct answers: $5 \\times 12 = 60$ marks. Let $x$ be the number of incorrect answers. Total score = $60 - 3x = 30$. $3x = 30$, so $x = 10$. Harry had 10 incorrect answers.",
+          "steps": [
+            {
+              "explain": "Harry scored a total of 30 marks, earning 12 marks for each of his 5 correct answers and losing 3 marks for every incorrect answer. The plan is to first find how many marks his correct answers alone were worth, then work out how many marks were lost to incorrect answers."
+            },
+            {
+              "explain": "Multiply the number of correct answers by the marks each is worth to find his marks from correct answers alone. This tells us the maximum score Harry would have had if every question he attempted was correct.",
+              "work": "\\(5 \\times 12 = 60\\)"
+            },
+            {
+              "explain": "Subtract his actual total score from the marks earned by correct answers to find how many marks were lost to incorrect answers. This difference represents the total penalty applied across all of his incorrect answers.",
+              "work": "\\(60 - 30 = 30\\)"
+            },
+            {
+              "explain": "Divide the marks lost by the penalty per incorrect answer to find the number of incorrect answers. This gives the number of questions Harry answered incorrectly.",
+              "work": "\\(30 \\div 3 = 10\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

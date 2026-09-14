@@ -1,0 +1,101 @@
+{
+  "chapterId": "exam:year9ch1h",
+  "title": "Exam Practice",
+  "year": "Year 9",
+  "topics": [
+    {
+      "topicId": "exam:year9ch1h",
+      "code": "",
+      "title": "Miscellaneous questions",
+      "questions": [
+        {
+          "id": "y9-1h-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the algebraic expression:\n\\(a - 3b + 2c\\)\n\nwhen \\(a = \\\\frac{b}{2},\\ b = -\\\\frac{1}{3},\\ c = \\\\frac{4b}{3}\\)",
+          "options": [
+            "\\(-\\\\frac{1}{18}\\)",
+            "\\(-\\\\frac{2}{18}\\)",
+            "\\(-\\\\frac{5}{18}\\)",
+            "\\(\\\\frac{5}{18}\\)"
+          ],
+          "answer": 0,
+          "hint": "If a or c are given in terms of b or c, calculate their numeric values first before substituting.",
+          "steps": [
+            {
+              "explain": "Find the values of \\(a\\) and \\(c\\) using the value of \\(b = -\\frac{1}{3}\\).",
+              "work": "\\(a = \\frac{-1/3}{2} = -\\frac{1}{6}, quad c = \\frac{4(-1/3)}{3} = -\\frac{4}{9}\\)"
+            },
+            {
+              "explain": "Substitute \\(a\\), \\(b\\), and \\(c\\) into the expression \\(a - 3b + 2c\\).",
+              "work": "\\(\\left(-\\frac{1}{6}\\right) - 3\\left(-\\frac{1}{3}\\right) + 2\\left(-\\frac{4}{9}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the expression and find a common denominator.",
+              "work": "\\(-\\frac{1}{6} + 1 - \\frac{8}{9} = -\\frac{3}{18} + \\frac{18}{18} - \\frac{16}{18} = -\\frac{1}{18}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1h-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the algebraic expression:\n\\(a - 3b + 2c\\)\n\nwhen \\(a = \\\\frac{2}{c},\\ b = \\\\frac{c}{3},\\ c = \\\\frac{1}{4}\\)",
+          "options": [
+            "\\(\\\\frac{33}{4}\\)",
+            "\\(\\\\frac{31}{4}\\)",
+            "\\(8\\)",
+            "\\(\\\\frac{35}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "If a or c are given in terms of b or c, calculate their numeric values first before substituting.",
+          "steps": [
+            {
+              "explain": "Calculate the values of \\(a\\) and \\(b\\) using \\(c = \\frac{1}{4}\\).",
+              "work": "\\(a = \\frac{2}{1/4} = 8, quad b = \\frac{1/4}{3} = \\frac{1}{12}\\)"
+            },
+            {
+              "explain": "Substitute the values into \\(a - 3b + 2c\\).",
+              "work": "\\(8 - 3\\left(\\frac{1}{12}\\right) + 2\\left(\\frac{1}{4}\\right)\\)"
+            },
+            {
+              "explain": "Simplify each term and add them.",
+              "work": "\\(8 - \\frac{1}{4} + \\frac{1}{2} = 8 + \\frac{1}{4} = \\frac{33}{4}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-1h-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the algebraic expression:\n\\(a - 3b + 2c\\)\n\nwhen \\(a = c^2,\\ b = \\\\frac{2}{c^2},\\ c = \\\\frac{1}{2}\\)",
+          "options": [
+            "\\(-\\\\frac{91}{4}\\)",
+            "\\(-\\\\frac{89}{4}\\)",
+            "\\(-23\\)",
+            "\\(-\\\\frac{45}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "If a or c are given in terms of b or c, calculate their numeric values first before substituting.",
+          "steps": [
+            {
+              "explain": "Calculate \\(a\\) and \\(b\\) using \\(c = \\frac{1}{2}\\).",
+              "work": "\\(a = \\left(\\frac{1}{2}\\right)^2 = \\frac{1}{4}, quad b = \\frac{2}{(1/2)^2} = \\frac{2}{1/4} = 8\\)"
+            },
+            {
+              "explain": "Substitute these values into \\(a - 3b + 2c\\).",
+              "work": "\\(\\frac{1}{4} - 3(8) + 2\\left(\\frac{1}{2}\\right)\\)"
+            },
+            {
+              "explain": "Perform the final arithmetic.",
+              "work": "\\(\\frac{1}{4} - 24 + 1 = \\frac{1}{4} - 23 = -\\frac{91}{4}\\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    }
+  ]
+}

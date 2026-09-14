@@ -1,0 +1,10 @@
+<svg viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+<line x1="170" y1="150" x2="30" y2="30" stroke="#475569" stroke-width="2.2"/>
+<line x1="170" y1="150" x2="30" y2="150" stroke="#475569" stroke-width="2.2"/>
+<line x1="30" y1="150" x2="30" y2="30" stroke="#475569" stroke-width="1.6"/>
+<rect x="30" y="138" width="12" height="12" fill="none" stroke="#475569" stroke-width="1.4"/>
+<text x="136.24" y="137.51" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="700" fill="#b45309" stroke="#f8fafc" stroke-width="3" paint-order="stroke">θ</text>
+<polyline points="148.00,150.00 148.15,147.41 148.61,144.85 149.37,142.37 150.41,139.99 151.73,137.75 153.30,135.68" fill="none" stroke="#b45309" stroke-width="1.5"/>
+<text x="100" y="166" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#475569" stroke="#f8fafc" stroke-width="3" paint-order="stroke">23</text>
+<text x="116" y="90" text-anchor="start" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#475569" stroke="#f8fafc" stroke-width="3" paint-order="stroke">27</text>
+</svg>

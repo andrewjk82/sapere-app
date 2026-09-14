@@ -1,0 +1,3282 @@
+{
+  "chapterId": "y9-4",
+  "title": "Chapter 4: Factorisation",
+  "year": "Year 9",
+  "topics": [
+    {
+      "topicId": "y9-4a",
+      "code": "4A",
+      "title": "Factorisation using common factors",
+      "questions": [
+        {
+          "id": "y9-4a-1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(15y = 15 \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(y\\)",
+            "\\(-y\\)",
+            "\\(15y\\)",
+            "\\(225y\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(y\\)",
+          "steps": [
+            {
+              "explain": "We are given \\(15y = 15 \\times \\dots\\) and need to find the missing factor. Since 15 is already factored out, divide the original expression by 15.",
+              "work": "\\(\\dots = \\frac{15y}{15}\\)"
+            },
+            {
+              "explain": "Dividing a term by its own numerical coefficient leaves just the variable part.",
+              "work": "\\(\\dots = y\\)"
+            },
+            {
+              "explain": "We can check this is correct by multiplying \\(15 \\times y\\) back together.",
+              "work": "\\(15 \\times y = 15y\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(30b = 15 \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(2b\\)",
+            "\\(2\\)",
+            "\\(450b\\)",
+            "\\(15b\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(2b\\)",
+          "steps": [
+            {
+              "explain": "We are given \\(30b = 15 \\times \\dots\\) and need to find the missing factor. Divide the original expression by 15.",
+              "work": "\\(\\dots = \\frac{30b}{15}\\)"
+            },
+            {
+              "explain": "Divide the coefficient 30 by 15.",
+              "work": "\\(\\dots = 2b\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(48xy = 12x \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(4y\\)",
+            "\\(36y\\)",
+            "\\(4xy\\)",
+            "\\(4x\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(4y\\)",
+          "steps": [
+            {
+              "explain": "We need to find the missing factor. Divide the original expression by \\(12x\\).",
+              "work": "\\(\\dots = \\frac{48xy}{12x}\\)"
+            },
+            {
+              "explain": "Divide the coefficients (48 divided by 12) and cancel the common variable \\(x\\).",
+              "work": "\\(\\dots = 4y\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(21pq = 7q \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(3q\\)",
+            "\\(3p\\)",
+            "\\(14p\\)",
+            "\\(3pq\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(3p\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor, \\(7q\\).",
+              "work": "\\(\\dots = \\frac{21pq}{7q}\\)"
+            },
+            {
+              "explain": "Divide the coefficients (21 by 7 is 3) and cancel the common variable \\(q\\).",
+              "work": "\\(\\dots = 3p\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(z^2 = z \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(z\\)",
+            "\\(1\\)",
+            "\\(z^2\\)",
+            "\\(2z\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(z\\)",
+          "steps": [
+            {
+              "explain": "Recall the definition of a squared term. \\(z^2\\) means \\(z\\) multiplied by itself.",
+              "work": "\\(z^2 = z \\times z\\)"
+            },
+            {
+              "explain": "Therefore, the missing factor is \\(z\\).",
+              "work": "\\(\\dots = z\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(8x^2 = 4x \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(4x\\)",
+            "\\(2x^2\\)",
+            "\\(2\\)",
+            "\\(2x\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(2x\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor, \\(4x\\).",
+              "work": "\\(\\dots = \\frac{8x^2}{4x}\\)"
+            },
+            {
+              "explain": "Divide the coefficients (8 by 4 is 2).",
+              "work": "\\(2 \\times \\frac{x^2}{x}\\)"
+            },
+            {
+              "explain": "Divide the variables using index laws (\\(x^2 \\div x = x\\)).",
+              "work": "\\(\\dots = 2x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-1g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(36m^2 = 9m \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(4m\\)",
+            "\\(4m^2\\)",
+            "\\(27m\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(4m\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor, \\(9m\\).",
+              "work": "\\(\\dots = \\frac{36m^2}{9m}\\)"
+            },
+            {
+              "explain": "Divide the coefficients (36 by 9 is 4) and the variables (\\(m^2 \\div m = m\\)).",
+              "work": "\\(\\dots = 4m\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-1h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(-10n^2 = 2n \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(-5n^2\\)",
+            "\\(-5n\\)",
+            "\\(-5\\)",
+            "\\(5n\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(-5n\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor, \\(2n\\).",
+              "work": "\\(\\dots = \\frac{-10n^2}{2n}\\)"
+            },
+            {
+              "explain": "Divide the coefficients (-10 by 2 is -5).",
+              "work": "\\(-5 \\times \\frac{n^2}{n}\\)"
+            },
+            {
+              "explain": "Divide the variables (\\(n^2 \\div n = n\\)).",
+              "work": "\\(\\dots = -5n\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-1i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(12p^2q = 3pq \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(4pq\\)",
+            "\\(4q\\)",
+            "\\(4p^2\\)",
+            "\\(4p\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(4p\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor, \\(3pq\\).",
+              "work": "\\(\\dots = \\frac{12p^2q}{3pq}\\)"
+            },
+            {
+              "explain": "Divide the coefficients (12 by 3 is 4).",
+              "work": "\\(4 \\times \\frac{p^2q}{pq}\\)"
+            },
+            {
+              "explain": "Cancel the common variable \\(q\\) and divide \\(p^2 \\div p = p\\).",
+              "work": "\\(\\dots = 4p\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-1j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(6a^2b = 3a \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(2ab\\)",
+            "\\(2a^2b\\)",
+            "\\(3ab\\)",
+            "\\(2a\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(2ab\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor, \\(3a\\).",
+              "work": "\\(\\dots = \\frac{6a^2b}{3a}\\)"
+            },
+            {
+              "explain": "Divide the coefficients (6 by 3 is 2).",
+              "work": "\\(2 \\times \\frac{a^2b}{a}\\)"
+            },
+            {
+              "explain": "Divide the variables (\\(a^2 \\div a = a\\)) and leave \\(b\\) as is.",
+              "work": "\\(\\dots = 2ab\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-1k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(15u^2v = 5uv \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(10u\\)",
+            "\\(3uv\\)",
+            "\\(3u\\)",
+            "\\(3u^2\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(3u\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor.",
+              "work": "\\(\\dots = \\frac{15u^2v}{5uv}\\)"
+            },
+            {
+              "explain": "Divide the coefficients (15 by 5 is 3).",
+              "work": "\\(\\dots = 3 \\times \\frac{u^2v}{uv}\\)"
+            },
+            {
+              "explain": "Divide the variables (\\(u^2 \\div u = u\\)) and cancel the common variable \\(v\\).",
+              "work": "\\(\\dots = 3u\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-1l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(40x^2y^2 = 8xy \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(5x^2y^2\\)",
+            "\\(5x\\)",
+            "\\(5xy\\)",
+            "\\(32xy\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(5xy\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor.",
+              "work": "\\(\\dots = \\frac{40x^2y^2}{8xy}\\)"
+            },
+            {
+              "explain": "Divide the coefficients (40 by 8 is 5).",
+              "work": "\\(\\dots = 5 \\times \\frac{x^2y^2}{xy}\\)"
+            },
+            {
+              "explain": "Divide the variables using index laws.",
+              "work": "\\(\\dots = 5xy\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(15xy = 5x \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(3x\\)",
+            "\\(3y\\)",
+            "\\(3xy\\)",
+            "\\(10y\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(3y\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor.",
+              "work": "\\(\\dots = \\frac{15xy}{5x}\\)"
+            },
+            {
+              "explain": "Divide the coefficients and cancel the common variable \\(x\\).",
+              "work": "\\(\\dots = 3y\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(15xy = 15 \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(y\\)",
+            "\\(x\\)",
+            "\\(15xy\\)",
+            "\\(xy\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(xy\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the numerical coefficient 15.",
+              "work": "\\(\\dots = \\frac{15xy}{15}\\)"
+            },
+            {
+              "explain": "The 15s cancel out, leaving just the variables.",
+              "work": "\\(\\dots = xy\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(15xy = 3y \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(12x\\)",
+            "\\(5xy\\)",
+            "\\(5y\\)",
+            "\\(5x\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(5x\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor.",
+              "work": "\\(\\dots = \\frac{15xy}{3y}\\)"
+            },
+            {
+              "explain": "Divide the coefficients (15 by 3 is 5) and cancel the common variable \\(y\\).",
+              "work": "\\(\\dots = 5x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(15xy = 5xy \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(3xy\\)",
+            "\\(1\\)",
+            "\\(10\\)",
+            "\\(3\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(3\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor.",
+              "work": "\\(\\dots = \\frac{15xy}{5xy}\\)"
+            },
+            {
+              "explain": "Since all variables match and cancel out, simply divide the coefficients.",
+              "work": "\\(\\dots = 3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(16b + 24 = 8 \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\((2b + 24)\\)",
+            "\\((2b + 3)\\)",
+            "\\((2b - 3)\\)",
+            "\\((8b + 16)\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide both terms by the common factor.",
+          "solution": "\\((2b + 3)\\)",
+          "steps": [
+            {
+              "explain": "We need to factor out 8 from the entire expression. This means we must divide each term inside the expression by 8.",
+              "work": "\\(\\dots = \\left(\\frac{16b}{8} + \\frac{24}{8}\\right)\\)"
+            },
+            {
+              "explain": "Divide the first term.",
+              "work": "\\(\\frac{16b}{8} = 2b\\)"
+            },
+            {
+              "explain": "Divide the second term.",
+              "work": "\\(\\frac{24}{8} = 3\\)"
+            },
+            {
+              "explain": "Combine the results inside brackets.",
+              "work": "\\(\\dots = (2b + 3)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(20q - 15 = 5 \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\((4q + 3)\\)",
+            "\\((4q - 15)\\)",
+            "\\((4q - 3)\\)",
+            "\\((15q - 10)\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide both terms by the common factor.",
+          "solution": "\\((4q - 3)\\)",
+          "steps": [
+            {
+              "explain": "Factor out 5 by dividing each term in the expression by 5.",
+              "work": "\\(\\dots = \\left(\\frac{20q}{5} - \\frac{15}{5}\\right)\\)"
+            },
+            {
+              "explain": "Divide the terms.",
+              "work": "\\(\\frac{20q}{5} = 4q\\) and \\(\\frac{15}{5} = 3\\)"
+            },
+            {
+              "explain": "Combine the results inside brackets, keeping the negative sign.",
+              "work": "\\(\\dots = (4q - 3)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(24ab - 18b = 6 \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\((4a - 3)\\)",
+            "\\((18ab - 12b)\\)",
+            "\\((4ab + 3b)\\)",
+            "\\((4ab - 3b)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((4ab - 3b)\\)",
+          "steps": [
+            {
+              "explain": "Factor out 6 by dividing each term in the expression by 6.",
+              "work": "\\(\\dots = \\left(\\frac{24ab}{6} - \\frac{18b}{6}\\right)\\)"
+            },
+            {
+              "explain": "Divide the terms.",
+              "work": "\\(\\frac{24ab}{6} = 4ab\\) and \\(\\frac{18b}{6} = 3b\\)"
+            },
+            {
+              "explain": "Combine the results inside brackets.",
+              "work": "\\(\\dots = (4ab - 3b)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(24ab - 18b = 6b \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\((4a - 3)\\)",
+            "\\((4a + 3)\\)",
+            "\\((4ab - 3b)\\)",
+            "\\((24a - 18)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((4a - 3)\\)",
+          "steps": [
+            {
+              "explain": "Factor out \\(6b\\) by dividing each term in the expression by \\(6b\\).",
+              "work": "\\(\\dots = \\left(\\frac{24ab}{6b} - \\frac{18b}{6b}\\right)\\)"
+            },
+            {
+              "explain": "Divide the first term, cancelling the \\(b\\) and dividing 24 by 6.",
+              "work": "\\(\\frac{24ab}{6b} = 4a\\)"
+            },
+            {
+              "explain": "Divide the second term, cancelling the \\(b\\) and dividing 18 by 6.",
+              "work": "\\(\\frac{18b}{6b} = 3\\)"
+            },
+            {
+              "explain": "Combine the results inside brackets.",
+              "work": "\\(\\dots = (4a - 3)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(x^2 + 5x = (x + 5) \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\(x^2\\)",
+            "\\((x - 5)\\)",
+            "\\(5x\\)",
+            "\\(x\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(x\\)",
+          "steps": [
+            {
+              "explain": "We need to find the missing factor. Divide the original expression by the given binomial factor, \\((x + 5)\\).",
+              "work": "\\(\\dots = \\frac{x^2 + 5x}{x + 5}\\)"
+            },
+            {
+              "explain": "Notice that we can factor out an \\(x\\) from the numerator.",
+              "work": "\\(x^2 + 5x = x(x + 5)\\)"
+            },
+            {
+              "explain": "Now divide this by \\((x + 5)\\). The \\((x + 5)\\) terms cancel out.",
+              "work": "\\(\\dots = \\frac{x(x + 5)}{x + 5} = x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(y^2 - 12y = y \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\((y^2 - 12)\\)",
+            "\\((y - 12)\\)",
+            "\\((y + 12)\\)",
+            "\\(12y\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((y - 12)\\)",
+          "steps": [
+            {
+              "explain": "Divide the original expression by the given factor, \\(y\\).",
+              "work": "\\(\\dots = \\frac{y^2 - 12y}{y}\\)"
+            },
+            {
+              "explain": "Divide each term in the numerator by \\(y\\).",
+              "work": "\\(\\dots = \\frac{y^2}{y} - \\frac{12y}{y}\\)"
+            },
+            {
+              "explain": "Simplify the results and combine them in brackets.",
+              "work": "\\(\\dots = (y - 12)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(8vw^2 - 24vw = 4w \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\((2w - 6)\\)",
+            "\\((2vw - 6v)\\)",
+            "\\((2v^2w - 6v)\\)",
+            "\\((4vw - 12v)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((2vw - 6v)\\)",
+          "steps": [
+            {
+              "explain": "Divide each term in the expression by \\(4w\\).",
+              "work": "\\(\\dots = \\left(\\frac{8vw^2}{4w} - \\frac{24vw}{4w}\\right)\\)"
+            },
+            {
+              "explain": "Divide the first term.",
+              "work": "\\(\\frac{8vw^2}{4w} = 2vw\\)"
+            },
+            {
+              "explain": "Divide the second term.",
+              "work": "\\(\\frac{24vw}{4w} = 6v\\)"
+            },
+            {
+              "explain": "Combine the results inside brackets.",
+              "work": "\\(\\dots = (2vw - 6v)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(8vw^2 - 24vw = vw \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\((8w - 24)\\)",
+            "\\((8vw - 24v)\\)",
+            "\\((8w - 24w)\\)",
+            "\\((w - 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((8w - 24)\\)",
+          "steps": [
+            {
+              "explain": "Divide each term in the expression by \\(vw\\).",
+              "work": "\\(\\dots = \\left(\\frac{8vw^2}{vw} - \\frac{24vw}{vw}\\right)\\)"
+            },
+            {
+              "explain": "Divide the first term by cancelling \\(v\\) and subtracting exponents for \\(w\\).",
+              "work": "\\(\\frac{8vw^2}{vw} = 8w\\)"
+            },
+            {
+              "explain": "Divide the second term by cancelling both \\(v\\) and \\(w\\).",
+              "work": "\\(\\frac{24vw}{vw} = 24\\)"
+            },
+            {
+              "explain": "Combine the results inside brackets.",
+              "work": "\\(\\dots = (8w - 24)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2m",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(8vw^2 - 24vw = -4vw \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\((2w + 6)\\)",
+            "\\((-2w + 6)\\)",
+            "\\((-2w - 6)\\)",
+            "\\((-2vw + 6v)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((-2w + 6)\\)",
+          "steps": [
+            {
+              "explain": "Divide each term in the expression by \\(-4vw\\). Be very careful with signs.",
+              "work": "\\(\\dots = \\left(\\frac{8vw^2}{-4vw} - \\frac{24vw}{-4vw}\\right)\\)"
+            },
+            {
+              "explain": "Divide the first term.",
+              "work": "\\(\\frac{8vw^2}{-4vw} = -2w\\)"
+            },
+            {
+              "explain": "Divide the second term. A negative divided by a negative is a positive.",
+              "work": "\\(\\frac{-24vw}{-4vw} = +6\\)"
+            },
+            {
+              "explain": "Combine the results inside brackets.",
+              "work": "\\(\\dots = (-2w + 6)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-2n",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the factorisation (find the missing factor):<br><br>\\\\(8vw^2 - 24vw = 8vw \\\\times \\\\dots\\\\)",
+          "options": [
+            "\\((w - 3)\\)",
+            "\\((w - 3w)\\)",
+            "\\((w - 24)\\)",
+            "\\((w + 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((w - 3)\\)",
+          "steps": [
+            {
+              "explain": "Divide each term in the expression by \\(8vw\\).",
+              "work": "\\(\\dots = \\left(\\frac{8vw^2}{8vw} - \\frac{24vw}{8vw}\\right)\\)"
+            },
+            {
+              "explain": "Divide the first term.",
+              "work": "\\(\\frac{8vw^2}{8vw} = w\\)"
+            },
+            {
+              "explain": "Divide the second term.",
+              "work": "\\(\\frac{24vw}{8vw} = 3\\)"
+            },
+            {
+              "explain": "Combine the results inside brackets.",
+              "work": "\\(\\dots = (w - 3)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-4a-3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(8y + 32\\\\)",
+          "options": [
+            "\\(8(y + 32)\\)",
+            "\\(4(2y + 8)\\)",
+            "\\(8(y + 4)\\)",
+            "\\(8y(1 + 4)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(8(y + 4)\\)",
+          "steps": [
+            {
+              "explain": "To factorise fully, we must find the Highest Common Factor (HCF) of all terms.",
+              "work": "\\(\\text{Terms: } 8y, 32\\)"
+            },
+            {
+              "explain": "The highest number that divides into both 8 and 32 is 8.",
+              "work": "\\(\\text{HCF} = 8\\)"
+            },
+            {
+              "explain": "Factor out the 8 by dividing each term by 8 and placing the result in brackets.",
+              "work": "\\(8 \\times \\left(\\frac{8y}{8} + \\frac{32}{8}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the expression inside the brackets.",
+              "work": "\\(8(y + 4)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(7b + 21\\\\)",
+          "options": [
+            "\\(7(b + 3)\\)",
+            "\\(3(2b + 7)\\)",
+            "\\(7b(1 + 3)\\)",
+            "\\(7(b + 21)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(7(b + 3)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms \\(7b\\) and \\(21\\).",
+              "work": "\\(\\text{HCF} = 7\\)"
+            },
+            {
+              "explain": "Factor out 7 by dividing each term by 7.",
+              "work": "\\(7 \\times \\left(\\frac{7b}{7} + \\frac{21}{7}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the expression inside the brackets.",
+              "work": "\\(7(b + 3)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(pq + 6p\\\\)",
+          "options": [
+            "\\(p(q + 6p)\\)",
+            "\\(p(q + 6)\\)",
+            "\\(6(pq + p)\\)",
+            "\\(q(p + 6)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(p(q + 6)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms \\(pq\\) and \\(6p\\). They share the variable \\(p\\).",
+              "work": "\\(\\text{HCF} = p\\)"
+            },
+            {
+              "explain": "Factor out \\(p\\) by dividing each term by \\(p\\).",
+              "work": "\\(p \\times \\left(\\frac{pq}{p} + \\frac{6p}{p}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the expression inside the brackets.",
+              "work": "\\(p(q + 6)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(m^2 + m\\\\)",
+          "options": [
+            "\\(m^2(1 + m)\\)",
+            "\\(m(m + m)\\)",
+            "\\(m(m + 1)\\)",
+            "\\(m(m)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(m(m + 1)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms \\(m^2\\) and \\(m\\). Both terms contain at least one \\(m\\).",
+              "work": "\\(\\text{HCF} = m\\)"
+            },
+            {
+              "explain": "Factor out \\(m\\) by dividing each term by \\(m\\).",
+              "work": "\\(m \\times \\left(\\frac{m^2}{m} + \\frac{m}{m}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets. Remember that any non-zero term divided by itself is 1.",
+              "work": "\\(m(m + 1)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(v^2 + uv\\\\)",
+          "options": [
+            "\\(v^2(1 + uv)\\)",
+            "\\(v(v + u)\\)",
+            "\\(u(v^2 + v)\\)",
+            "\\(v(v^2 + u)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(v(v + u)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms \\(v^2\\) and \\(uv\\). Both terms contain at least one \\(v\\).",
+              "work": "\\(\\text{HCF} = v\\)"
+            },
+            {
+              "explain": "Factor out \\(v\\) by dividing each term by \\(v\\).",
+              "work": "\\(v \\times \\left(\\frac{v^2}{v} + \\frac{uv}{v}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(v(v + u)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(4y + 36\\\\)",
+          "options": [
+            "\\(4(y + 36)\\)",
+            "\\(2(2y + 18)\\)",
+            "\\(4(y + 9)\\)",
+            "\\(4y(1 + 9)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(4(y + 9)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the numbers 4 and 36.",
+              "work": "\\(\\text{HCF} = 4\\)"
+            },
+            {
+              "explain": "Factor out 4 by dividing each term by 4.",
+              "work": "\\(4 \\times \\left(\\frac{4y}{4} + \\frac{36}{4}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(4(y + 9)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(5z + 30\\\\)",
+          "options": [
+            "\\(5(z + 30)\\)",
+            "\\(5(z + 6)\\)",
+            "\\(6(z + 5)\\)",
+            "\\(5z(1 + 6)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(5(z + 6)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the numbers 5 and 30.",
+              "work": "\\(\\text{HCF} = 5\\)"
+            },
+            {
+              "explain": "Factor out 5 by dividing each term by 5.",
+              "work": "\\(5 \\times \\left(\\frac{5z}{5} + \\frac{30}{5}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(5(z + 6)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(8m - 72\\\\)",
+          "options": [
+            "\\(8(m - 9)\\)",
+            "\\(8(m + 9)\\)",
+            "\\(4(2m - 18)\\)",
+            "\\(8(m - 72)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(8(m - 9)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the numbers 8 and 72.",
+              "work": "\\(\\text{HCF} = 8\\)"
+            },
+            {
+              "explain": "Factor out 8 by dividing each term by 8.",
+              "work": "\\(8 \\times \\left(\\frac{8m}{8} - \\frac{72}{8}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(8(m - 9)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(10c + 40\\\\)",
+          "options": [
+            "\\(10(c + 40)\\)",
+            "\\(10(c + 4)\\)",
+            "\\(10c(1 + 4)\\)",
+            "\\(5(2c + 8)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(10(c + 4)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the numbers 10 and 40.",
+              "work": "\\(\\text{HCF} = 10\\)"
+            },
+            {
+              "explain": "Factor out 10 by dividing each term by 10.",
+              "work": "\\(10 \\times \\left(\\frac{10c}{10} + \\frac{40}{10}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(10(c + 4)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(p^2 + 8p\\\\)",
+          "options": [
+            "\\(8(p^2 + p)\\)",
+            "\\(p(p + 8)\\)",
+            "\\(p(p^2 + 8)\\)",
+            "\\(p(p + 8p)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(p(p + 8)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms \\(p^2\\) and \\(8p\\). Both terms share the variable \\(p\\).",
+              "work": "\\(\\text{HCF} = p\\)"
+            },
+            {
+              "explain": "Factor out \\(p\\) by dividing each term by \\(p\\).",
+              "work": "\\(p \\times \\left(\\frac{p^2}{p} + \\frac{8p}{p}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(p(p + 8)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3k",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(q^2 - 4q\\\\)",
+          "options": [
+            "\\(4(q^2 - q)\\)",
+            "\\(q(q - 4)\\)",
+            "\\(q(q - 4q)\\)",
+            "\\(q(q + 4)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(q(q - 4)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms \\(q^2\\) and \\(4q\\). Both terms share the variable \\(q\\).",
+              "work": "\\(\\text{HCF} = q\\)"
+            },
+            {
+              "explain": "Factor out \\(q\\) by dividing each term by \\(q\\).",
+              "work": "\\(q \\times \\left(\\frac{q^2}{q} - \\frac{4q}{q}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(q(q - 4)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(15z + 20\\\\)",
+          "options": [
+            "\\(5(15z + 20)\\)",
+            "\\(5(3z + 4)\\)",
+            "\\(5z(3 + 4)\\)",
+            "\\(4(3z + 5)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(5(3z + 4)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the numbers 15 and 20.",
+              "work": "\\(\\text{HCF} = 5\\)"
+            },
+            {
+              "explain": "Factor out 5 by dividing each term by 5.",
+              "work": "\\(5 \\times \\left(\\frac{15z}{5} + \\frac{20}{5}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(5(3z + 4)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3m",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(30x - 45\\\\)",
+          "options": [
+            "\\(15(2x - 3)\\)",
+            "\\(5(6x - 9)\\)",
+            "\\(15(2x + 3)\\)",
+            "\\(15(2x - 45)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(15(2x - 3)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the numbers 30 and 45.",
+              "work": "\\(\\text{HCF} = 15\\)"
+            },
+            {
+              "explain": "Factor out 15 by dividing each term by 15.",
+              "work": "\\(15 \\times \\left(\\frac{30x}{15} - \\frac{45}{15}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(15(2x - 3)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3n",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(-16b - 24\\\\)",
+          "options": [
+            "\\(-8(2b - 3)\\)",
+            "\\(-4(4b + 6)\\)",
+            "\\(-8(2b + 3)\\)",
+            "\\(8(-2b - 24)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(-8(2b + 3)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of 16 and 24. Since both terms are negative, it's conventional to factor out the negative HCF.",
+              "work": "\\(\\text{HCF} = -8\\)"
+            },
+            {
+              "explain": "Factor out \\(-8\\) by dividing each term by \\(-8\\). Remember that dividing a negative by a negative results in a positive.",
+              "work": "\\(-8 \\times \\left(\\frac{-16b}{-8} - \\frac{24}{-8}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(-8(2b + 3)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3o",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(-8x - 12\\\\)",
+          "options": [
+            "\\(-4(2x - 3)\\)",
+            "\\(-4(2x + 3)\\)",
+            "\\(4(-2x - 3)\\)",
+            "\\(-2(4x + 6)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(-4(2x + 3)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of 8 and 12. Since the first term is negative, it's conventional to factor out the negative HCF.",
+              "work": "\\(\\text{HCF} = -4\\)"
+            },
+            {
+              "explain": "Factor out \\(-4\\) by dividing each term by \\(-4\\). A negative divided by a negative is a positive.",
+              "work": "\\(-4 \\times \\left(\\frac{-8x}{-4} - \\frac{12}{-4}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(-4(2x + 3)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-3p",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(-5 - 15p\\\\)",
+          "options": [
+            "\\(5(-1 - 3p)\\)",
+            "\\(-5(1 + 3p)\\)",
+            "\\(-5(3p)\\)",
+            "\\(-5(1 - 3p)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(-5(1 + 3p)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of 5 and 15. We'll factor out the negative.",
+              "work": "\\(\\text{HCF} = -5\\)"
+            },
+            {
+              "explain": "Factor out \\(-5\\) by dividing each term by \\(-5\\). Remember \\(\\frac{-5}{-5} = 1\\).",
+              "work": "\\(-5 \\times \\left(\\frac{-5}{-5} - \\frac{15p}{-5}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(-5(1 + 3p)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(5pq + 20p\\\\)",
+          "options": [
+            "\\(5p(q + 4)\\)",
+            "\\(p(5q + 20)\\)",
+            "\\(5p(q + 20)\\)",
+            "\\(5(pq + 4p)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(5p(q + 4)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms \\(5pq\\) and \\(20p\\). They share a numerical factor of 5 and a variable factor of \\(p\\).",
+              "work": "\\(\\text{HCF} = 5p\\)"
+            },
+            {
+              "explain": "Factor out \\(5p\\) by dividing each term by \\(5p\\).",
+              "work": "\\(5p \\times \\left(\\frac{5pq}{5p} + \\frac{20p}{5p}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(5p(q + 4)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(15b^2 + 10b\\\\)",
+          "options": [
+            "\\(5b(3b + 10)\\)",
+            "\\(b(15b + 10)\\)",
+            "\\(5b(3b + 2)\\)",
+            "\\(5(3b^2 + 2b)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(5b(3b + 2)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms \\(15b^2\\) and \\(10b\\). They share a numerical factor of 5 and a variable factor of \\(b\\).",
+              "work": "\\(\\text{HCF} = 5b\\)"
+            },
+            {
+              "explain": "Factor out \\(5b\\) by dividing each term by \\(5b\\).",
+              "work": "\\(5b \\times \\left(\\frac{15b^2}{5b} + \\frac{10b}{5b}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets. \\(b^2 \\div b = b\\).",
+              "work": "\\(5b(3b + 2)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(24x^2y + 12xy^2\\\\)",
+          "options": [
+            "\\(12x(2xy + y^2)\\)",
+            "\\(6xy(4x + 2y)\\)",
+            "\\(12xy(2x + 12y)\\)",
+            "\\(12xy(2x + y)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(12xy(2x + y)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The HCF of 24 and 12 is 12. Both terms share the variables \\(x\\) and \\(y\\).",
+              "work": "\\(\\text{HCF} = 12xy\\)"
+            },
+            {
+              "explain": "Factor out \\(12xy\\) by dividing each term by \\(12xy\\).",
+              "work": "\\(12xy \\times \\left(\\frac{24x^2y}{12xy} + \\frac{12xy^2}{12xy}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(12xy(2x + y)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(20u^2v^2 + 15uv^2\\\\)",
+          "options": [
+            "\\(5v^2(4u^2 + 3u)\\)",
+            "\\(5uv(4uv + 3v)\\)",
+            "\\(5uv^2(4u + 3)\\)",
+            "\\(5uv^2(4u + 15)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(5uv^2(4u + 3)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF is 5. For the variables, both terms contain \\(u\\) and \\(v^2\\).",
+              "work": "\\(\\text{HCF} = 5uv^2\\)"
+            },
+            {
+              "explain": "Factor out \\(5uv^2\\) by dividing each term by \\(5uv^2\\).",
+              "work": "\\(5uv^2 \\times \\left(\\frac{20u^2v^2}{5uv^2} + \\frac{15uv^2}{5uv^2}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(5uv^2(4u + 3)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-4e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(6m^2 + 9m\\\\)",
+          "options": [
+            "\\(m(6m + 9)\\)",
+            "\\(3(2m^2 + 3m)\\)",
+            "\\(3m(2m + 3)\\)",
+            "\\(3m(2m + 9)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(3m(2m + 3)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of \\(6m^2\\) and \\(9m\\). The numerical HCF is 3, and both terms share \\(m\\).",
+              "work": "\\(\\text{HCF} = 3m\\)"
+            },
+            {
+              "explain": "Factor out \\(3m\\) by dividing each term by \\(3m\\).",
+              "work": "\\(3m \\times \\left(\\frac{6m^2}{3m} + \\frac{9m}{3m}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(3m(2m + 3)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-4f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(10y^2 + 15xy\\\\)",
+          "options": [
+            "\\(5xy(2y + 3)\\)",
+            "\\(5y(2y + 3x)\\)",
+            "\\(5y(2y + 15x)\\)",
+            "\\(5(2y^2 + 3xy)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(5y(2y + 3x)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF of 10 and 15 is 5. Both terms share \\(y\\).",
+              "work": "\\(\\text{HCF} = 5y\\)"
+            },
+            {
+              "explain": "Factor out \\(5y\\) by dividing each term by \\(5y\\).",
+              "work": "\\(5y \\times \\left(\\frac{10y^2}{5y} + \\frac{15xy}{5y}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(5y(2y + 3x)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(4c - 8c^2\\\\)",
+          "options": [
+            "\\(4(c - 2c^2)\\)",
+            "\\(4c(c - 2c^2)\\)",
+            "\\(4c(1 - 2c)\\)",
+            "\\(4c(- 2c)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(4c(1 - 2c)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF of 4 and 8 is 4. Both terms share \\(c\\).",
+              "work": "\\(\\text{HCF} = 4c\\)"
+            },
+            {
+              "explain": "Factor out \\(4c\\) by dividing each term by \\(4c\\). Remember \\(\\frac{4c}{4c} = 1\\).",
+              "work": "\\(4c \\times \\left(\\frac{4c}{4c} - \\frac{8c^2}{4c}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(4c(1 - 2c)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(6y^2 - 9xy\\\\)",
+          "options": [
+            "\\(3y(2y - 9x)\\)",
+            "\\(3(2y^2 - 3xy)\\)",
+            "\\(3y(2y - 3x)\\)",
+            "\\(y(6y - 9x)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(3y(2y - 3x)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF of 6 and 9 is 3. Both terms share \\(y\\).",
+              "work": "\\(\\text{HCF} = 3y\\)"
+            },
+            {
+              "explain": "Factor out \\(3y\\) by dividing each term by \\(3y\\).",
+              "work": "\\(3y \\times \\left(\\frac{6y^2}{3y} - \\frac{9xy}{3y}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(3y(2y - 3x)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(12pq - 16p^2q\\\\)",
+          "options": [
+            "\\(4pq(3 - 4p)\\)",
+            "\\(4p(3q - 4pq)\\)",
+            "\\(2pq(6 - 8p)\\)",
+            "\\(4pq(3q - 4p^2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(4pq(3 - 4p)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF of 12 and 16 is 4. Both terms share \\(p\\) and \\(q\\).",
+              "work": "\\(\\text{HCF} = 4pq\\)"
+            },
+            {
+              "explain": "Factor out \\(4pq\\) by dividing each term by \\(4pq\\).",
+              "work": "\\(4pq \\times \\left(\\frac{12pq}{4pq} - \\frac{16p^2q}{4pq}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(4pq(3 - 4p)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(24z - 12z^2\\\\)",
+          "options": [
+            "\\(12z(2z - z^2)\\)",
+            "\\(6z(4 - 2z)\\)",
+            "\\(12z(2 - z)\\)",
+            "\\(12z(2 - 1)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(12z(2 - z)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF of 24 and 12 is 12. Both terms share \\(z\\).",
+              "work": "\\(\\text{HCF} = 12z\\)"
+            },
+            {
+              "explain": "Factor out \\(12z\\) by dividing each term by \\(12z\\).",
+              "work": "\\(12z \\times \\left(\\frac{24z}{12z} - \\frac{12z^2}{12z}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(12z(2 - z)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-5e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(5b - 10bc^2\\\\)",
+          "options": [
+            "\\(5b(1 - 2c^2)\\)",
+            "\\(5b(1 - 2c)\\)",
+            "\\(5bc(1 - 2c)\\)",
+            "\\(5b(b - 2c^2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(5b(1 - 2c^2)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF of 5 and 10 is 5. Both terms share \\(b\\), but only the second term has \\(c\\).",
+              "work": "\\(\\text{HCF} = 5b\\)"
+            },
+            {
+              "explain": "Factor out \\(5b\\) by dividing each term by \\(5b\\). Remember \\(\\frac{5b}{5b} = 1\\).",
+              "work": "\\(5b \\times \\left(\\frac{5b}{5b} - \\frac{10bc^2}{5b}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(5b(1 - 2c^2)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-5f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(8uv - 6u^2\\\\)",
+          "options": [
+            "\\(u(8v - 6u)\\)",
+            "\\(2u(4v - 3u)\\)",
+            "\\(2uv(4 - 3u)\\)",
+            "\\(2u(4v - 3u^2)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(2u(4v - 3u)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF of 8 and 6 is 2. Both terms share \\(u\\).",
+              "work": "\\(\\text{HCF} = 2u\\)"
+            },
+            {
+              "explain": "Factor out \\(2u\\) by dividing each term by \\(2u\\).",
+              "work": "\\(2u \\times \\left(\\frac{8uv}{2u} - \\frac{6u^2}{2u}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(2u(4v - 3u)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-5g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(18ab^2 - 27a^2b\\\\)",
+          "options": [
+            "\\(9ab(2b - 3a)\\)",
+            "\\(3ab(6b - 9a)\\)",
+            "\\(9a^2b^2(2 - 3)\\)",
+            "\\(9ab(2a - 3b)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(9ab(2b - 3a)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF of 18 and 27 is 9. Both terms share \\(a\\) and \\(b\\).",
+              "work": "\\(\\text{HCF} = 9ab\\)"
+            },
+            {
+              "explain": "Factor out \\(9ab\\) by dividing each term by \\(9ab\\).",
+              "work": "\\(9ab \\times \\left(\\frac{18ab^2}{9ab} - \\frac{27a^2b}{9ab}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(9ab(2b - 3a)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-5h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(8xy^2 - 28yx^2\\\\)",
+          "options": [
+            "\\(2xy(4y - 14x)\\)",
+            "\\(4xy(2y - 7x)\\)",
+            "\\(4xy(2x - 7y)\\)",
+            "\\(4xy(2xy - 7xy)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(4xy(2y - 7x)\\)",
+          "steps": [
+            {
+              "explain": "Note that \\(yx^2\\) is the same as \\(x^2y\\). Find the Highest Common Factor (HCF). The numerical HCF of 8 and 28 is 4. Both terms share \\(x\\) and \\(y\\).",
+              "work": "\\(\\text{HCF} = 4xy\\)"
+            },
+            {
+              "explain": "Factor out \\(4xy\\) by dividing each term by \\(4xy\\).",
+              "work": "\\(4xy \\times \\left(\\frac{8xy^2}{4xy} - \\frac{28yx^2}{4xy}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(4xy(2y - 7x)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-5i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully:<br><br>\\\\(15mn^2 - 35m^2n\\\\)",
+          "options": [
+            "\\(5(3mn^2 - 7m^2n)\\)",
+            "\\(5mn(3n - 7m)\\)",
+            "\\(5mn(3m - 7n)\\)",
+            "\\(mn(15n - 35m)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(5mn(3n - 7m)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF of 15 and 35 is 5. Both terms share \\(m\\) and \\(n\\).",
+              "work": "\\(\\text{HCF} = 5mn\\)"
+            },
+            {
+              "explain": "Factor out \\(5mn\\) by dividing each term by \\(5mn\\).",
+              "work": "\\(5mn \\times \\left(\\frac{15mn^2}{5mn} - \\frac{35m^2n}{5mn}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(5mn(3n - 7m)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully (take out a negative common factor if the first term is negative):<br><br>\\\\(-12c^2 + 6c\\\\)",
+          "options": [
+            "\\(-6(2c^2 - c)\\)",
+            "\\(-6c(2c - 1)\\)",
+            "\\(-6c(2c + 1)\\)",
+            "\\(6c(-2c + 1)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(-6c(2c - 1)\\)",
+          "steps": [
+            {
+              "explain": "Since the first term is negative, we should factor out a negative HCF. The numerical HCF of 12 and 6 is 6. Both terms share \\(c\\).",
+              "work": "\\(\\text{HCF} = -6c\\)"
+            },
+            {
+              "explain": "Factor out \\(-6c\\) by dividing each term by \\(-6c\\). Be careful with signs: \\(\\frac{+6c}{-6c} = -1\\).",
+              "work": "\\(-6c \\times \\left(\\frac{-12c^2}{-6c} + \\frac{6c}{-6c}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(-6c(2c - 1)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully (take out a negative common factor if the first term is negative):<br><br>\\\\(-20p^2q - 10pq\\\\)",
+          "options": [
+            "\\(-5pq(4p + 2)\\)",
+            "\\(-10pq(2p + 1)\\)",
+            "\\(-10pq(2p)\\)",
+            "\\(-10pq(2p - 1)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(-10pq(2p + 1)\\)",
+          "steps": [
+            {
+              "explain": "Since the first term is negative, we factor out a negative HCF. The numerical HCF of 20 and 10 is 10. Both terms share \\(p\\) and \\(q\\).",
+              "work": "\\(\\text{HCF} = -10pq\\)"
+            },
+            {
+              "explain": "Factor out \\(-10pq\\) by dividing each term by \\(-10pq\\). A negative divided by a negative is a positive.",
+              "work": "\\(-10pq \\times \\left(\\frac{-20p^2q}{-10pq} - \\frac{10pq}{-10pq}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(-10pq(2p + 1)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully (take out a negative common factor if the first term is negative):<br><br>\\\\(-u^2v - 4uv\\\\)",
+          "options": [
+            "\\(-u(uv + 4v)\\)",
+            "\\(-uv(u - 4)\\)",
+            "\\(-uv(u + 4)\\)",
+            "\\(uv(-u - 4)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(-uv(u + 4)\\)",
+          "steps": [
+            {
+              "explain": "Since the first term is negative, factor out a negative HCF. The coefficient is 1, and both terms share \\(u\\) and \\(v\\).",
+              "work": "\\(\\text{HCF} = -uv\\)"
+            },
+            {
+              "explain": "Factor out \\(-uv\\) by dividing each term by \\(-uv\\).",
+              "work": "\\(-uv \\times \\left(\\frac{-u^2v}{-uv} - \\frac{4uv}{-uv}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(-uv(u + 4)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-6d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully (take out a negative common factor if the first term is negative):<br><br>\\\\(-6ab + 24a^2\\\\)",
+          "options": [
+            "\\(-6a(b + 4a)\\)",
+            "\\(-6a(b - 4a)\\)",
+            "\\(6a(-b + 4a)\\)",
+            "\\(-6(ab - 4a^2)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(-6a(b - 4a)\\)",
+          "steps": [
+            {
+              "explain": "Since the first term is negative, we factor out a negative HCF. The numerical HCF of 6 and 24 is 6. Both terms share \\(a\\).",
+              "work": "\\(\\text{HCF} = -6a\\)"
+            },
+            {
+              "explain": "Factor out \\(-6a\\) by dividing each term by \\(-6a\\). Be careful with signs: \\(\\frac{+24a^2}{-6a} = -4a\\).",
+              "work": "\\(-6a \\times \\left(\\frac{-6ab}{-6a} + \\frac{24a^2}{-6a}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(-6a(b - 4a)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-6e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully (take out a negative common factor if the first term is negative):<br><br>\\\\(-8y^2z + 40y\\\\)",
+          "options": [
+            "\\(-8(y^2z - 5y)\\)",
+            "\\(8y(-yz + 5)\\)",
+            "\\(-8y(yz + 5)\\)",
+            "\\(-8y(yz - 5)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(-8y(yz - 5)\\)",
+          "steps": [
+            {
+              "explain": "The first term is negative, so the HCF is negative. The numerical HCF of 8 and 40 is 8. Both terms share \\(y\\).",
+              "work": "\\(\\text{HCF} = -8y\\)"
+            },
+            {
+              "explain": "Factor out \\(-8y\\) by dividing each term by \\(-8y\\).",
+              "work": "\\(-8y \\times \\left(\\frac{-8y^2z}{-8y} + \\frac{40y}{-8y}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(-8y(yz - 5)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-6f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully (take out a negative common factor if the first term is negative):<br><br>\\\\(24x^2 - 6xy\\\\)",
+          "options": [
+            "\\(6(4x^2 - xy)\\)",
+            "\\(-6x(-4x + y)\\)",
+            "\\(6x(4x - y)\\)",
+            "\\(6x(4x - 6y)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(6x(4x - y)\\)",
+          "steps": [
+            {
+              "explain": "The first term is positive, so we factor out a positive HCF. The numerical HCF of 24 and 6 is 6. Both terms share \\(x\\).",
+              "work": "\\(\\text{HCF} = 6x\\)"
+            },
+            {
+              "explain": "Factor out \\(6x\\) by dividing each term by \\(6x\\).",
+              "work": "\\(6x \\times \\left(\\frac{24x^2}{6x} - \\frac{6xy}{6x}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(6x(4x - y)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-6g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully (take out a negative common factor if the first term is negative):<br><br>\\\\(-10m^2n^2 - 4mn\\\\)",
+          "options": [
+            "\\(-2m^2n^2(5 + 2)\\)",
+            "\\(-2mn(5mn + 2)\\)",
+            "\\(-2mn(5mn - 2)\\)",
+            "\\(2mn(-5mn - 2)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(-2mn(5mn + 2)\\)",
+          "steps": [
+            {
+              "explain": "Since the first term is negative, the HCF is negative. The numerical HCF of 10 and 4 is 2. Both terms share \\(m\\) and \\(n\\).",
+              "work": "\\(\\text{HCF} = -2mn\\)"
+            },
+            {
+              "explain": "Factor out \\(-2mn\\) by dividing each term by \\(-2mn\\). Negative divided by negative is positive.",
+              "work": "\\(-2mn \\times \\left(\\frac{-10m^2n^2}{-2mn} - \\frac{4mn}{-2mn}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(-2mn(5mn + 2)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-6h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully (take out a negative common factor if the first term is negative):<br><br>\\\\(16pq^2 - 4p^2q\\\\)",
+          "options": [
+            "\\(4(4pq^2 - p^2q)\\)",
+            "\\(4pq(4p - q)\\)",
+            "\\(-4pq(-4q + p)\\)",
+            "\\(4pq(4q - p)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(4pq(4q - p)\\)",
+          "steps": [
+            {
+              "explain": "The first term is positive, so we find a positive HCF. The numerical HCF of 16 and 4 is 4. Both terms share \\(p\\) and \\(q\\).",
+              "work": "\\(\\text{HCF} = 4pq\\)"
+            },
+            {
+              "explain": "Factor out \\(4pq\\) by dividing each term by \\(4pq\\).",
+              "work": "\\(4pq \\times \\left(\\frac{16pq^2}{4pq} - \\frac{4p^2q}{4pq}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(4pq(4q - p)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-6i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise fully (take out a negative common factor if the first term is negative):<br><br>\\\\(-36u^2v^2 - 12uv^2\\\\)",
+          "options": [
+            "\\(-12uv^2(3u + 1)\\)",
+            "\\(-12uv(3uv + v)\\)",
+            "\\(-12uv^2(3u)\\)",
+            "\\(12uv^2(-3u - 1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(-12uv^2(3u + 1)\\)",
+          "steps": [
+            {
+              "explain": "The first term is negative, so the HCF is negative. The numerical HCF of 36 and 12 is 12. Both terms share \\(u\\) and \\(v^2\\).",
+              "work": "\\(\\text{HCF} = -12uv^2\\)"
+            },
+            {
+              "explain": "Factor out \\(-12uv^2\\) by dividing each term by \\(-12uv^2\\).",
+              "work": "\\(-12uv^2 \\times \\left(\\frac{-36u^2v^2}{-12uv^2} - \\frac{12uv^2}{-12uv^2}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets. Remember any term divided by itself is 1.",
+              "work": "\\(-12uv^2(3u + 1)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An expression for the area of a rectangle is \\\\(10b + 15\\\\). If the top side has length \\\\(2b + 3\\\\), find an expression for the missing side length.",
+          "options": [
+            "\\(15\\)",
+            "\\(5\\)",
+            "\\(2\\)",
+            "\\(5b\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(5\\)",
+          "steps": [
+            {
+              "explain": "The area of a rectangle is calculated by multiplying its length by its width (Area = Length \\(\\times\\) Width).",
+              "work": "\\(10b + 15 = (2b + 3) \\times \\text{Width}\\)"
+            },
+            {
+              "explain": "To find the missing side, factorise the area expression.",
+              "work": "\\(10b + 15 = 5(2b + 3)\\)"
+            },
+            {
+              "explain": "Comparing the factorised form to the given side length, the missing side is the factor outside the brackets.",
+              "work": "\\(5\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An expression for the area of a rectangle is \\\\(12m + 8mn\\\\). If the top side has length \\\\(4m\\\\), find an expression for the missing side length.",
+          "options": [
+            "\\((3 - 2n)\\)",
+            "\\((4 + 2n)\\)",
+            "\\((3 + 2n)\\)",
+            "\\((3m + 2mn)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((3 + 2n)\\)",
+          "steps": [
+            {
+              "explain": "The area of a rectangle is Length \\(\\times\\) Width.",
+              "work": "\\(12m + 8mn = 4m \\times \\text{Width}\\)"
+            },
+            {
+              "explain": "Divide the area expression by the known side to find the missing side.",
+              "work": "\\(\\text{Width} = \\frac{12m + 8mn}{4m}\\)"
+            },
+            {
+              "explain": "Divide each term in the numerator by \\(4m\\).",
+              "work": "\\(\\frac{12m}{4m} + \\frac{8mn}{4m}\\)"
+            },
+            {
+              "explain": "Simplify the terms.",
+              "work": "\\((3 + 2n)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An expression for the area of a rectangle is \\\\(14y + 21\\\\). If the left side has length \\\\(7\\\\), find an expression for the missing side length.",
+          "options": [
+            "\\((2y + 21)\\)",
+            "\\((2y + 3)\\)",
+            "\\((7y + 3)\\)",
+            "\\((2y - 3)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((2y + 3)\\)",
+          "steps": [
+            {
+              "explain": "The area of a rectangle is Length \\(\\times\\) Width.",
+              "work": "\\(14y + 21 = 7 \\times \\text{Width}\\)"
+            },
+            {
+              "explain": "Divide the area expression by the known side to find the missing side.",
+              "work": "\\(\\text{Width} = \\frac{14y + 21}{7}\\)"
+            },
+            {
+              "explain": "Divide each term in the numerator by \\(7\\).",
+              "work": "\\(\\frac{14y}{7} + \\frac{21}{7}\\)"
+            },
+            {
+              "explain": "Simplify the terms.",
+              "work": "\\((2y + 3)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An expression for the area of a rectangle is \\\\(12pq + 18qr\\\\). If the left side has length \\\\(6q\\\\), find an expression for the missing side length.",
+          "options": [
+            "\\((2pq + 3qr)\\)",
+            "\\((2p + 3q)\\)",
+            "\\((6p + 3r)\\)",
+            "\\((2p + 3r)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((2p + 3r)\\)",
+          "steps": [
+            {
+              "explain": "The area of a rectangle is Length \\(\\times\\) Width.",
+              "work": "\\(12pq + 18qr = 6q \\times \\text{Width}\\)"
+            },
+            {
+              "explain": "Divide the area expression by the known side to find the missing side.",
+              "work": "\\(\\text{Width} = \\frac{12pq + 18qr}{6q}\\)"
+            },
+            {
+              "explain": "Divide each term in the numerator by \\(6q\\).",
+              "work": "\\(\\frac{12pq}{6q} + \\frac{18qr}{6q}\\)"
+            },
+            {
+              "explain": "Simplify the terms.",
+              "work": "\\((2p + 3r)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-7e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An expression for the area of a rectangle is \\\\(3b + b^2\\\\). If the top side has length \\\\(b\\\\), find an expression for the missing side length.",
+          "options": [
+            "\\((3 + b^2)\\)",
+            "\\((3b + 1)\\)",
+            "\\((3 + b)\\)",
+            "\\((3 - b)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((3 + b)\\)",
+          "steps": [
+            {
+              "explain": "The area of a rectangle is Length \\(\\times\\) Width.",
+              "work": "\\(3b + b^2 = b \\times \\text{Width}\\)"
+            },
+            {
+              "explain": "Divide the area expression by the known side to find the missing side.",
+              "work": "\\(\\text{Width} = \\frac{3b + b^2}{b}\\)"
+            },
+            {
+              "explain": "Divide each term in the numerator by \\(b\\).",
+              "work": "\\(\\frac{3b}{b} + \\frac{b^2}{b}\\)"
+            },
+            {
+              "explain": "Simplify the terms.",
+              "work": "\\((3 + b)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-7f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An expression for the area of a rectangle is \\\\(16x^2 + 8xy\\\\). If the top side has length \\\\(8x\\\\), find an expression for the missing side length.",
+          "options": [
+            "\\((2x^2 + xy)\\)",
+            "\\((8x + y)\\)",
+            "\\((2x + 8y)\\)",
+            "\\((2x + y)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((2x + y)\\)",
+          "steps": [
+            {
+              "explain": "The area of a rectangle is Length \\(\\times\\) Width.",
+              "work": "\\(16x^2 + 8xy = 8x \\times \\text{Width}\\)"
+            },
+            {
+              "explain": "Divide the area expression by the known side to find the missing side.",
+              "work": "\\(\\text{Width} = \\frac{16x^2 + 8xy}{8x}\\)"
+            },
+            {
+              "explain": "Divide each term in the numerator by \\(8x\\).",
+              "work": "\\(\\frac{16x^2}{8x} + \\frac{8xy}{8x}\\)"
+            },
+            {
+              "explain": "Simplify the terms.",
+              "work": "\\((2x + y)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-7g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An expression for the area of a rectangle is \\\\(18uv + 9u^2\\\\). If the left side has length \\\\(9u\\\\), find an expression for the missing side length.",
+          "options": [
+            "\\((9v + u)\\)",
+            "\\((2v + u)\\)",
+            "\\((2uv + u^2)\\)",
+            "\\((2u + v)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\((2v + u)\\)",
+          "steps": [
+            {
+              "explain": "The area of a rectangle is Length \\(\\times\\) Width.",
+              "work": "\\(18uv + 9u^2 = 9u \\times \\text{Width}\\)"
+            },
+            {
+              "explain": "Divide the area expression by the known side to find the missing side.",
+              "work": "\\(\\text{Width} = \\frac{18uv + 9u^2}{9u}\\)"
+            },
+            {
+              "explain": "Divide each term in the numerator by \\(9u\\).",
+              "work": "\\(\\frac{18uv}{9u} + \\frac{9u^2}{9u}\\)"
+            },
+            {
+              "explain": "Simplify the terms.",
+              "work": "\\((2v + u)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-7h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An expression for the area of a rectangle is \\\\(30x^2y^2 - 20x^2\\\\). If the top side has length \\\\(3y^2 - 2\\\\), find an expression for the missing side length.",
+          "options": [
+            "\\(10x^2y^2\\)",
+            "\\((10x^2y^2 - 10x^2)\\)",
+            "\\(10x^2\\)",
+            "\\(10x\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(10x^2\\)",
+          "steps": [
+            {
+              "explain": "The area of a rectangle is Length \\(\\times\\) Width.",
+              "work": "\\(30x^2y^2 - 20x^2 = (3y^2 - 2) \\times \\text{Width}\\)"
+            },
+            {
+              "explain": "Notice that this is a factorisation problem where the binomial factor is given. Divide the area by the binomial factor.",
+              "work": "\\(\\text{Width} = \\frac{30x^2y^2 - 20x^2}{3y^2 - 2}\\)"
+            },
+            {
+              "explain": "Factorise the numerator first. The HCF of the two terms is \\(10x^2\\).",
+              "work": "\\(30x^2y^2 - 20x^2 = 10x^2(3y^2 - 2)\\)"
+            },
+            {
+              "explain": "Substitute this back into the fraction. The \\((3y^2 - 2)\\) terms cancel out.",
+              "work": "\\(\\text{Width} = \\frac{10x^2(3y^2 - 2)}{3y^2 - 2} = 10x^2\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise fully:<br><br>\\\\(6x^2y - 3xy + 12xy^2\\\\)",
+          "options": [
+            "\\(3x(2xy - y + 4y^2)\\)",
+            "\\(3xy(2x - 1 + 4y)\\)",
+            "\\(3y(2x^2 - x + 4xy)\\)",
+            "\\(3xy(2x - 0 + 4y)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(3xy(2x - 1 + 4y)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of all three terms. The numerical HCF of 6, 3, and 12 is 3. All terms share \\(x\\) and \\(y\\).",
+              "work": "\\(\\text{HCF} = 3xy\\)"
+            },
+            {
+              "explain": "Factor out \\(3xy\\) by dividing each term by \\(3xy\\). Remember \\(\\frac{-3xy}{3xy} = -1\\).",
+              "work": "\\(3xy \\times \\left(\\frac{6x^2y}{3xy} - \\frac{3xy}{3xy} + \\frac{12xy^2}{3xy}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(3xy(2x - 1 + 4y)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise fully:<br><br>\\\\(6a^2b - 6ab + 24b^2\\\\)",
+          "options": [
+            "\\(6ab(a - 1 + 4b)\\)",
+            "\\(6b(a^2 - a + 4b)\\)",
+            "\\(6b(a^2 - a + 4b^2)\\)",
+            "\\(2b(3a^2 - 3a + 12b)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(6b(a^2 - a + 4b)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of all three terms. The numerical HCF is 6. All terms share \\(b\\), but the third term does NOT have an \\(a\\).",
+              "work": "\\(\\text{HCF} = 6b\\)"
+            },
+            {
+              "explain": "Factor out \\(6b\\) by dividing each term by \\(6b\\).",
+              "work": "\\(6b \\times \\left(\\frac{6a^2b}{6b} - \\frac{6ab}{6b} + \\frac{24b^2}{6b}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(6b(a^2 - a + 4b)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise fully:<br><br>\\\\(9mn + 18m^2 + 27n\\\\)",
+          "options": [
+            "\\(9m(n + 2m + 3n)\\)",
+            "\\(9n(m + 2m^2 + 3)\\)",
+            "\\(9(mn + 2m^2 + 3n)\\)",
+            "\\(3(3mn + 6m^2 + 9n)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(9(mn + 2m^2 + 3n)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF is 9. There is no variable common to all three terms.",
+              "work": "\\(\\text{HCF} = 9\\)"
+            },
+            {
+              "explain": "Factor out 9 by dividing each term by 9.",
+              "work": "\\(9 \\times \\left(\\frac{9mn}{9} + \\frac{18m^2}{9} + \\frac{27n}{9}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(9(mn + 2m^2 + 3n)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise fully:<br><br>\\\\(3p^2 + 6pq + 9q\\\\)",
+          "options": [
+            "\\(3q(p^2 + 2p + 3)\\)",
+            "\\(3p(p + 2q + 3q)\\)",
+            "\\(3(p^2 + 2pq + 9q)\\)",
+            "\\(3(p^2 + 2pq + 3q)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(3(p^2 + 2pq + 3q)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF is 3. There is no variable common to all three terms.",
+              "work": "\\(\\text{HCF} = 3\\)"
+            },
+            {
+              "explain": "Factor out 3 by dividing each term by 3.",
+              "work": "\\(3 \\times \\left(\\frac{3p^2}{3} + \\frac{6pq}{3} + \\frac{9q}{3}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(3(p^2 + 2pq + 3q)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-8e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise fully:<br><br>\\\\(6x^2y + 4xy + 8xy^2\\\\)",
+          "options": [
+            "\\(xy(6x + 4 + 8y)\\)",
+            "\\(2xy(3x + 2 + 4y)\\)",
+            "\\(2xy(3x + 4y)\\)",
+            "\\(2x(3xy + 2y + 4y^2)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(2xy(3x + 2 + 4y)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF of 6, 4, and 8 is 2. All terms share \\(x\\) and \\(y\\).",
+              "work": "\\(\\text{HCF} = 2xy\\)"
+            },
+            {
+              "explain": "Factor out \\(2xy\\) by dividing each term by \\(2xy\\).",
+              "work": "\\(2xy \\times \\left(\\frac{6x^2y}{2xy} + \\frac{4xy}{2xy} + \\frac{8xy^2}{2xy}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(2xy(3x + 2 + 4y)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-8f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise fully:<br><br>\\\\(9u^2 + 12uv + 15uv^2\\\\)",
+          "options": [
+            "\\(3u(3u + 4v + 5v)\\)",
+            "\\(3uv(3u + 4 + 5v)\\)",
+            "\\(3u(3u + 4v + 5v^2)\\)",
+            "\\(3(3u^2 + 4uv + 5uv^2)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(3u(3u + 4v + 5v^2)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF is 3. All terms share \\(u\\), but the first term does NOT have a \\(v\\).",
+              "work": "\\(\\text{HCF} = 3u\\)"
+            },
+            {
+              "explain": "Factor out \\(3u\\) by dividing each term by \\(3u\\).",
+              "work": "\\(3u \\times \\left(\\frac{9u^2}{3u} + \\frac{12uv}{3u} + \\frac{15uv^2}{3u}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(3u(3u + 4v + 5v^2)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-8g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise fully:<br><br>\\\\(6a^2b^2 + 12ab^2 + 18a^2b\\\\)",
+          "options": [
+            "\\(6a^2b^2(1 + 2ab + 3a)\\)",
+            "\\(6ab^2(a + 2b + 3a^2)\\)",
+            "\\(6ab(ab + 2b + 3a)\\)",
+            "\\(3ab(2ab + 4b + 6a)\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(6ab(ab + 2b + 3a)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the three terms. The numerical HCF of 6, 12, and 18 is 6. All terms share \\(a\\) and \\(b\\).",
+              "work": "\\(\\text{HCF} = 6ab\\)"
+            },
+            {
+              "explain": "Factor out \\(6ab\\) by dividing each term by \\(6ab\\).",
+              "work": "\\(6ab \\times \\left(\\frac{6a^2b^2}{6ab} + \\frac{12ab^2}{6ab} + \\frac{18a^2b}{6ab}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(6ab(ab + 2b + 3a)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "y9-4a-8h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise fully (by taking out the common factor):<br><br>\\\\(7k^2 - 21km - 28m^2\\\\)",
+          "options": [
+            "\\(7m(k^2 - 3k - 4m)\\)",
+            "\\(7k(k - 3m - 4m^2)\\)",
+            "\\(7(k^2 - 21km - 28m^2)\\)",
+            "\\(7(k^2 - 3km - 4m^2)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor (HCF) and pull it out.",
+          "solution": "\\(7(k^2 - 3km - 4m^2)\\)",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF). The numerical HCF of 7, 21, and 28 is 7. There are no variables common to ALL three terms.",
+              "work": "\\(\\text{HCF} = 7\\)"
+            },
+            {
+              "explain": "Factor out 7 by dividing each term by 7.",
+              "work": "\\(7 \\times \\left(\\frac{7k^2}{7} - \\frac{21km}{7} - \\frac{28m^2}{7}\\right)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(7(k^2 - 3km - 4m^2)\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch4"
+          ]
+        },
+        {
+          "id": "ch9t3-q14a",
+          "type": "mc",
+          "stem": "Fully factorise the following expressions.\n\n\\(-8x^2-18x\\)",
+          "options": [
+            "\\(2x(-4x-9)\\)",
+            "\\(-8x(x+2)\\)",
+            "\\(-2x(4x-9)\\)",
+            "\\(-2x(4x+9)\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the highest common factor of \\(-8x^2\\) and \\(-18x\\) — it includes a factor of \\(-2x\\).",
+          "steps": [
+            {
+              "explain": "The highest common factor of \\(-8x^2\\) and \\(-18x\\) is \\(-2x\\) (taking out a negative to make the leading term positive inside the bracket is a common convention, though \\(2x(-4x-9)\\) is equally valid).",
+              "work": "HCF \\(= -2x\\)"
+            },
+            {
+              "explain": "Factor \\(-2x\\) out of both terms.",
+              "work": "\\(-8x^2-18x = -2x(4x+9)\\)"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "ch9t3-q14b",
+          "type": "mc",
+          "stem": "Fully factorise the following expressions.\n\n\\(54-3x-x^2\\)",
+          "options": [
+            "\\((x-6)(x-9)\\)",
+            "\\((x-6)(x+9)\\)",
+            "\\(-(x-6)(x+9)\\)",
+            "\\(-(x+6)(x-9)\\)"
+          ],
+          "answer": 2,
+          "hint": "Rearrange into standard form first (\\(-x^2-3x+54\\)), factor out \\(-1\\), then factorise the resulting monic quadratic \\(x^2+3x-54\\).",
+          "steps": [
+            {
+              "explain": "Rearrange into standard descending-power form.",
+              "work": "\\(54-3x-x^2 = -x^2-3x+54\\)"
+            },
+            {
+              "explain": "Factor out \\(-1\\) to make the leading coefficient positive.",
+              "work": "\\(= -(x^2+3x-54)\\)"
+            },
+            {
+              "explain": "Factorise the quadratic \\(x^2+3x-54\\): find two numbers that multiply to \\(-54\\) and add to \\(3\\) — these are \\(9\\) and \\(-6\\).",
+              "work": "\\(x^2+3x-54 = (x-6)(x+9)\\)"
+            },
+            {
+              "explain": "Combine with the \\(-1\\) factored out earlier.",
+              "work": "\\(54-3x-x^2 = -(x-6)(x+9)\\)"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "sg2022-q1f",
+          "type": "mc",
+          "stem": "Factorise \\(6a-a^2\\).",
+          "options": [
+            "\\(6(a-a^2)\\)",
+            "\\(a(a-6)\\)",
+            "\\(a(6-a)\\)",
+            "\\(6a(1-a)\\)"
+          ],
+          "answer": 2,
+          "hint": "Take out the highest common factor of the two terms.",
+          "steps": [
+            {
+              "explain": "The highest common factor of \\(6a\\) and \\(a^2\\) is \\(a\\). Take it out the front.",
+              "work": "\\(6a-a^2 = a(6-a)\\)"
+            },
+            {
+              "explain": "Check by expanding: \\(a\\times6-a\\times a=6a-a^2\\) ✓",
+              "work": "\\(a(6-a)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "willoughby2019-s3-fa",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise: \\(8x^2y - 6x^2y^2\\)",
+          "options": [
+            "\\(2x^2y(4 - 3y)\\)",
+            "\\(2xy(4x - 3y)\\)",
+            "\\(2x^2(4y - 3y^2)\\)",
+            "\\(4xy(2x - 3y)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the GCF and factor it out.",
+          "steps": [
+            {
+              "explain": "Find the GCF of both terms: 8x²y and 6x²y².",
+              "work": "\\(\\text{GCF} = 2x^2y\\)"
+            },
+            {
+              "explain": "Factor out the GCF.",
+              "work": "\\(2x^2y(4 - 3y)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Willoughby GHS Year 9 Yearly 2019",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "willoughby-2019-y9"
+          }
+        },
+        {
+          "id": "willoughby2019-s3-fb",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Factorise: \\(-12 + 3x\\)",
+          "options": [
+            "\\(3(x - 4)\\)",
+            "\\(3(4 - x)\\)",
+            "\\(-3(4 - x)\\)",
+            "\\(3x - 12\\)"
+          ],
+          "answer": 0,
+          "hint": "Factor out the GCF.",
+          "steps": [
+            {
+              "explain": "Rewrite in standard order: 3x - 12.",
+              "work": "-12 + 3x = 3x - 12"
+            },
+            {
+              "explain": "Find the GCF: both terms are divisible by 3.",
+              "work": "\\(3x - 12 = 3(x - 4)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Willoughby GHS Year 9 Yearly 2019",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "willoughby-2019-y9"
+          }
+        },
+        {
+          "id": "willoughby2019-s3-fc",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\(x^2 - 7x + 10\\)",
+          "options": [
+            "\\((x - 2)(x - 5)\\)",
+            "\\((x + 2)(x + 5)\\)",
+            "\\((x - 1)(x - 10)\\)",
+            "\\((x + 1)(x - 10)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two numbers that multiply to c and add to b in x² + bx + c.",
+          "steps": [
+            {
+              "explain": "We need two numbers that multiply to 10 and add to -7.",
+              "work": "\\(-2 times (-5) = 10 and -2 + (-5) = -7\\)"
+            },
+            {
+              "explain": "Factor the quadratic.",
+              "work": "\\(x^2 - 7x + 10 = (x - 2)(x - 5)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Willoughby GHS Year 9 Yearly 2019",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "willoughby-2019-y9"
+          }
+        },
+        {
+          "id": "willoughby2019-s3-fd",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Factorise: \\((x - 3)^2 - 25\\)",
+          "options": [
+            "\\((x - 8)(x + 2)\\)",
+            "\\((x - 3)(x - 25)\\)",
+            "\\((x + 5)^2 - 3\\)",
+            "\\((x - 28)(x + 22)\\)"
+          ],
+          "answer": 0,
+          "hint": "Recognize a² - b² and use (a - b)(a + b).",
+          "steps": [
+            {
+              "explain": "This is a difference of squares: a² - b² = (a - b)(a + b), where a = (x - 3) and b = 5.",
+              "work": "\\((x - 3)^2 - 25 = (x - 3)^2 - 5^2\\)"
+            },
+            {
+              "explain": "Apply the difference of squares formula.",
+              "work": "\\(= [(x - 3) - 5][(x - 3) + 5] = (x - 8)(x + 2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Willoughby GHS Year 9 Yearly 2019",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "willoughby-2019-y9"
+          }
+        },
+        {
+          "id": "willoughby2019-s3-fe",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Factorise: \\(d^3 - d^2 - d + 1\\)",
+          "options": [
+            "\\((d - 1)^2(d + 1)\\)",
+            "\\((d - 1)(d^2 - 1)\\)",
+            "\\((d + 1)(d - 1)^2\\)",
+            "\\((d - 1)^3\\)"
+          ],
+          "answer": 2,
+          "hint": "Group terms, factor each group, then factor out common binomial.",
+          "steps": [
+            {
+              "explain": "Group the first two terms and the last two terms.",
+              "work": "\\((d^3 - d^2) + (-d + 1)\\)"
+            },
+            {
+              "explain": "Factor each group.",
+              "work": "\\(d^2(d - 1) - 1(d - 1)\\)"
+            },
+            {
+              "explain": "Factor out the common factor (d - 1).",
+              "work": "\\((d - 1)(d^2 - 1)\\)"
+            },
+            {
+              "explain": "Factor d² - 1 as a difference of squares.",
+              "work": "\\((d - 1)(d - 1)(d + 1) = (d - 1)^2(d + 1)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Willoughby GHS Year 9 Yearly 2019",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "willoughby-2019-y9"
+          }
+        },
+        {
+          "id": "willoughby2019-s3-ff",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Factorise: \\(20b^2 - 52b + 24\\)",
+          "options": [
+            "\\(4(5b - 3)(b - 2)\\)",
+            "\\(4(5b + 3)(b + 2)\\)",
+            "\\(2(10b - 26)(b - 2)\\)",
+            "\\((4b - 8)(5b - 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "First factor out the GCF, then factor the remaining quadratic.",
+          "steps": [
+            {
+              "explain": "Find the GCF of all terms: 20, 52, and 24. GCF = 4.",
+              "work": "\\(20b^2 - 52b + 24 = 4(5b^2 - 13b + 6)\\)"
+            },
+            {
+              "explain": "Factor the quadratic 5b² - 13b + 6.",
+              "work": "\\((5b - 3)(b - 2): 5b(-2) + (-3)(b) = -10b - 3b = -13b\\)"
+            },
+            {
+              "explain": "Final answer.",
+              "work": "\\(4(5b - 3)(b - 2)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Willoughby GHS Year 9 Yearly 2019",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "willoughby-2019-y9"
+          }
+        },
+        {
+          "id": "willoughby2019-s5-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Fully factorise: \\(\\frac{1}{2}x^5y^3 - \\frac{1}{4}xy^2\\)",
+          "options": [
+            "\\(\\frac{1}{4}xy^2(2x^4y - 1)\\)",
+            "\\(\\frac{1}{2}xy^2(x^4y - 2)\\)",
+            "\\(xy^2(\\frac{1}{2}x^4y - \\frac{1}{4})\\)",
+            "\\(\\frac{1}{4}x^5y^3\\)"
+          ],
+          "answer": 0,
+          "solution": "½x⁵y³ - ¼xy² = ¼xy²(2x⁴y - 1)",
+          "steps": [
+            {
+              "explain": "Find the greatest common factor (GCF) of the two terms. The GCF of the coefficients ½ and ¼ is ¼. The GCF of x⁵ and x is x. The GCF of y³ and y² is y².",
+              "work": "\\(\\text{GCF} = \\frac{1}{4}xy^2\\)"
+            },
+            {
+              "explain": "Factor out the GCF from each term.",
+              "work": "\\(\\frac{1}{2}x^5y^3 = \\frac{1}{4}xy^2 \\times 2x^4y\\)"
+            },
+            {
+              "explain": "Factor out the GCF from the second term.",
+              "work": "\\(\\frac{1}{4}xy^2 = \\frac{1}{4}xy^2 \\times 1\\)"
+            },
+            {
+              "explain": "Write the complete factorisation.",
+              "work": "\\(\\frac{1}{2}x^5y^3 - \\frac{1}{4}xy^2 = \\frac{1}{4}xy^2(2x^4y - 1)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Willoughby GHS Year 9 Yearly 2019",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "willoughby-2019-y9"
+          }
+        },
+        {
+          "id": "y9-ep1-alg-quad-2a",
+          "type": "mc",
+          "stem": "Factorise the following:<br><br>\\(25x^2 - 9y^2\\)",
+          "options": [
+            "\\((5x - 3y)(5x + 3y)\\)",
+            "\\((25x - 9y)(x + y)\\)",
+            "\\((5x - 3y)^2\\)",
+            "\\(5(x - y)(5x + 9y)\\)"
+          ],
+          "answer": 0,
+          "hint": "This is a difference of two squares. Use \\(a^2 - b^2 = (a - b)(a + b)\\).",
+          "steps": [
+            {
+              "explain": "Identify the two squares.",
+              "work": "\\(25x^2 = (5x)^2\\) and \\(9y^2 = (3y)^2\\)"
+            },
+            {
+              "explain": "Apply the difference of two squares rule.",
+              "work": "\\((5x)^2 - (3y)^2 = (5x - 3y)(5x + 3y)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-alg-quad-2c",
+          "type": "mc",
+          "stem": "Factorise the following:<br><br>\\(x^2 + 5x - 14\\)",
+          "options": [
+            "\\((x + 7)(x - 2)\\)",
+            "\\((x - 7)(x + 2)\\)",
+            "\\((x + 14)(x - 1)\\)",
+            "\\((x + 5)(x - 14)\\)"
+          ],
+          "answer": 0,
+          "hint": "Find two numbers that multiply to give -14 and add to give 5.",
+          "steps": [
+            {
+              "explain": "We need two numbers that multiply to \\(-14\\) and add to \\(5\\).",
+              "work": "The factors of \\(-14\\) are \\(1, -14\\), \\(-1, 14\\), \\(2, -7\\), and \\(-2, 7\\)."
+            },
+            {
+              "explain": "Find the pair that adds to 5.",
+              "work": "\\(-2 + 7 = 5\\)"
+            },
+            {
+              "explain": "Write the factors in brackets.",
+              "work": "\\((x + 7)(x - 2)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-willoughby-19-t5q3",
+          "type": "mc",
+          "stem": "Fully factorise $\\frac{1}{2}x^5y^3 - \\frac{1}{4}xy^2$",
+          "options": [
+            "$\\frac{1}{2}xy(x^4y^2 - \\frac{1}{2}y)$",
+            "$xy^2(\\frac{1}{2}x^4y - \\frac{1}{4})$",
+            "$\\frac{1}{2}xy^2(x^4y - \\frac{1}{2})$",
+            "$\\frac{1}{4}xy^2(2x^4y - 1)$"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Identify the highest common factor of the variable parts. The lowest power of $x$ present is $x^1$, and the lowest power of $y$ present is $y^2$.",
+              "work": "\\(\\text{Variable HCF} = xy^2\\)"
+            },
+            {
+              "explain": "For \"fully\" factorised form, the fractional coefficient taken out should leave only integer coefficients inside the bracket — otherwise it is not the simplest / most fully factorised form. Test $\\frac{1}{4}$: since $\\frac{1}{2} \\div \\frac{1}{4} = 2$ and $\\frac{1}{4} \\div \\frac{1}{4} = 1$ are both integers, $\\frac{1}{4}$ (not $\\frac{1}{2}$) is the correct HCF to factor out.",
+              "work": "\\(\\text{Numerical HCF} = \\frac{1}{4}\\)"
+            },
+            {
+              "explain": "Factor $\\frac{1}{4}xy^2$ out of the full expression: divide each term by it. $\\frac{1}{2}x^5y^3 \\div \\frac{1}{4}xy^2 = 2x^4y$, and $\\frac{1}{4}xy^2 \\div \\frac{1}{4}xy^2 = 1$.",
+              "work": "\\(\\frac{1}{2}x^5y^3 - \\frac{1}{4}xy^2 = \\frac{1}{4}xy^2(2x^4y - 1)\\)"
+            },
+            {
+              "explain": "Check: expanding $\\frac{1}{4}xy^2(2x^4y-1)$ gives $\\frac{2}{4}x^5y^3 - \\frac{1}{4}xy^2 = \\frac{1}{2}x^5y^3 - \\frac{1}{4}xy^2$ ✓ — matches the original expression, and no fraction remains inside the bracket.",
+              "work": "\\(\\frac{1}{4}xy^2(2x^4y - 1)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-4a"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-4b",
+      "code": "4B",
+      "title": "Factorisation using the difference of two squares",
+      "questions": [
+        {
+          "id": "sg2022-q2b-ii",
+          "type": "mc",
+          "stem": "Factorise \\(x^2-36\\).",
+          "options": [
+            "\\((x-36)(x+1)\\)",
+            "\\((x-18)(x+2)\\)",
+            "\\((x-6)^2\\)",
+            "\\((x-6)(x+6)\\)"
+          ],
+          "answer": 3,
+          "hint": "Recognise this as a difference of two squares: \\(a^2-b^2=(a-b)(a+b)\\).",
+          "steps": [
+            {
+              "explain": "\\(x^2-36\\) is a difference of two squares, with \\(a=x\\) and \\(b=6\\) (since \\(6^2=36\\)).",
+              "work": "\\(x^2-36 = x^2-6^2\\)"
+            },
+            {
+              "explain": "Apply \\(a^2-b^2=(a-b)(a+b)\\).",
+              "work": "\\(=(x-6)(x+6)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q1a",
+          "type": "mc",
+          "stem": "Factorise the following: \\(25x^2 - 16y^2\\)",
+          "options": [
+            "\\((5x - 4y)^2\\)",
+            "\\((5x - 4y)(5x + 4y)\\)",
+            "\\((5x + 4y)^2\\)",
+            "\\((25x - 16y)(x + y)\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Recognise the difference of two squares.",
+              "work": "(5x)^2 - (4y)^2"
+            },
+            {
+              "explain": "Apply the formula \\(a^2 - b^2 = (a-b)(a+b)\\).",
+              "work": "(5x - 4y)(5x + 4y)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-4c",
+      "code": "4C",
+      "title": "Factorisation of simple quadratics",
+      "questions": [
+        {
+          "id": "y9-willoughby-17-y-pb-q1b",
+          "type": "mc",
+          "stem": "Factorise the following: \\(t^2 - 11t + 10\\)",
+          "options": [
+            "\\((t + 5)(t + 2)\\)",
+            "\\((t - 10)(t - 1)\\)",
+            "\\((t + 10)(t - 1)\\)",
+            "\\((t - 5)(t - 2)\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Find two numbers that multiply to 10 and add to -11.",
+              "work": "-10 \\text{ and } -1"
+            },
+            {
+              "explain": "Write the factorised form.",
+              "work": "(t - 10)(t - 1)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t3q6a",
+          "type": "mc",
+          "stem": "Factorise \\(8x^3y - 6x^2y^2\\)",
+          "options": [
+            "\\(x^2y(8x - 6y)\\)",
+            "\\(2xy(4x^2 - 3xy)\\)",
+            "\\(4x^2y(2x - 1.5y)\\)",
+            "\\(2x^2y(4x - 3y)\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Find the highest common factor (HCF): the numbers $8$ and $6$ share a factor of $2$; the lowest power of $x$ present is $x^2$; the lowest power of $y$ present is $y$.",
+              "work": "\\(\\text{HCF} = 2x^2y\\)"
+            },
+            {
+              "explain": "Divide each term by the HCF to find what remains inside the bracket: $8x^3y \\div 2x^2y = 4x$, and $6x^2y^2 \\div 2x^2y = 3y$.",
+              "work": "\\(2x^2y(4x - 3y)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-4e"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t3q6b",
+          "type": "mc",
+          "stem": "Factorise \\(-12 + 3x\\)",
+          "options": [
+            "\\(3(x - 4)\\)",
+            "\\(-3(x + 4)\\)",
+            "\\(4(x - 3)\\)",
+            "\\(3(x + 4)\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Rewrite in standard order: $3x - 12$. The HCF of $3$ and $12$ is $3$.",
+              "work": "\\(3x - 12, \\quad \\text{HCF} = 3\\)"
+            },
+            {
+              "explain": "Divide each term by $3$: $3x \\div 3 = x$, and $12 \\div 3 = 4$.",
+              "work": "\\(3(x - 4)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-4e"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t3q6c",
+          "type": "mc",
+          "stem": "Factorise \\(x^2 - 7x + 10\\)",
+          "options": [
+            "\\((x-2)(x-5)\\)",
+            "\\((x+2)(x+5)\\)",
+            "\\((x+2)(x-5)\\)",
+            "\\((x-1)(x-10)\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "For a monic quadratic $x^2+bx+c$, find two numbers that multiply to $c=10$ and add to $b=-7$. Since the product is positive and the sum is negative, both numbers are negative: $-2$ and $-5$.",
+              "work": "\\((-2) \\times (-5) = 10, \\quad (-2) + (-5) = -7\\)"
+            },
+            {
+              "explain": "Write these numbers as the constants in two brackets.",
+              "work": "\\((x-2)(x-5)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-4e"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t3q6d",
+          "type": "mc",
+          "stem": "Factorise \\((x-3)^2 - 25\\)",
+          "options": [
+            "\\((x+8)(x-2)\\)",
+            "\\((x-3)(x-25)\\)",
+            "\\((x-8)(x+2)\\)",
+            "\\((x-8)(x-2)\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Recognise the difference of two squares $A^2-B^2=(A-B)(A+B)$, treating $A=(x-3)$ and $B=5$ (since $25=5^2$).",
+              "work": "\\(((x-3) - 5)((x-3) + 5)\\)"
+            },
+            {
+              "explain": "Simplify inside each bracket: $x-3-5=x-8$ and $x-3+5=x+2$.",
+              "work": "\\((x-8)(x+2)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-4e"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t3q6e",
+          "type": "mc",
+          "stem": "Factorise \\(a^3 - a^2 - a + 1\\)",
+          "options": [
+            "\\((a+1)^2(a-1)\\)",
+            "\\((a-1)^3\\)",
+            "\\((a-1)^2(a+1)\\)",
+            "\\((a-1)(a^2+1)\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Factorise by grouping: pair the first two terms and the last two terms, then pull out the HCF of each pair. From $a^3-a^2$, factor $a^2$; from $-a+1$, factor $-1$.",
+              "work": "\\(a^2(a - 1) - 1(a - 1)\\)"
+            },
+            {
+              "explain": "Both terms now share the common bracket factor $(a-1)$ — factor it out.",
+              "work": "\\((a - 1)(a^2 - 1)\\)"
+            },
+            {
+              "explain": "The remaining factor $(a^2-1)$ is itself a difference of two squares: $a^2-1^2=(a-1)(a+1)$.",
+              "work": "\\((a - 1)(a - 1)(a + 1) = (a-1)^2(a+1)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-4e"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t3q6f",
+          "type": "mc",
+          "stem": "Factorise \\(20b^2 - 52b + 24\\)",
+          "options": [
+            "\\(4(b+2)(5b-3)\\)",
+            "\\(2(2b-4)(5b-3)\\)",
+            "\\(4(b-2)(5b+3)\\)",
+            "\\(4(b-2)(5b-3)\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "First take out the common factor of $4$ from all three terms: $20 \\div 4=5$, $52 \\div 4=13$, $24 \\div 4=6$.",
+              "work": "\\(4(5b^2 - 13b + 6)\\)"
+            },
+            {
+              "explain": "Factorise the non-monic quadratic inside using the \"split the middle term\" method: find two numbers multiplying to $5 \\times 6 = 30$ and adding to $-13$ — these are $-10$ and $-3$.",
+              "work": "\\(4(5b^2 - 10b - 3b + 6)\\)"
+            },
+            {
+              "explain": "Group in pairs and factor each: from $5b^2-10b$, factor $5b$; from $-3b+6$, factor $-3$. Both pairs now share the bracket $(b-2)$.",
+              "work": "\\(4[5b(b - 2) - 3(b - 2)] = 4(b - 2)(5b - 3)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-4e"
+          }
+        }
+      ]
+    }
+  ]
+}

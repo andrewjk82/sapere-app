@@ -1,0 +1,3322 @@
+{
+  "chapterId": "y8-3",
+  "title": "Chapter 3: HCF and LCM",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "y8-3a",
+      "code": "3A",
+      "title": "HCF and LCM",
+      "questions": [
+        {
+          "id": "y8-3a-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Highest Common Factor (HCF) of \\\\(9\\\\) and \\\\(15\\\\)?",
+          "options": [
+            "\\\\(2\\\\)",
+            "\\\\(5\\\\)",
+            "\\\\(3\\\\)",
+            "\\\\(9\\\\)"
+          ],
+          "answer": 2,
+          "hint": "List all factors of each number and find the largest one they share.",
+          "solution": "Factors of 9: 1, 3, 9\nFactors of 15: 1, 3, 5, 15\nThe highest common factor is 3.",
+          "steps": [
+            {
+              "explain": "List all factors of 9 (numbers that divide 9 exactly).",
+              "work": "\\\\(\\\\text{Factors of } 9: 1, 3, 9\\\\)"
+            },
+            {
+              "explain": "List all factors of 15 (numbers that divide 15 exactly).",
+              "work": "\\\\(\\\\text{Factors of } 15: 1, 3, 5, 15\\\\)"
+            },
+            {
+              "explain": "The common factors are those that appear in BOTH lists. Identify them.",
+              "work": "\\\\(\\\\text{Common factors}: 1, 3\\\\)"
+            },
+            {
+              "explain": "The Highest Common Factor is the LARGEST of these common factors.",
+              "work": "\\\\(\\\\text{HCF}(9, 15) = 3\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Highest Common Factor (HCF) of \\\\(8\\\\) and \\\\(20\\\\)?",
+          "options": [
+            "\\\\(2\\\\)",
+            "\\\\(8\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(10\\\\)"
+          ],
+          "answer": 2,
+          "hint": "List all factors of each number and find the largest one they share.",
+          "solution": "Factors of 8: 1, 2, 4, 8\nFactors of 20: 1, 2, 4, 5, 10, 20\nThe highest common factor is 4.",
+          "steps": [
+            {
+              "explain": "List all factors of 8.",
+              "work": "\\\\(\\\\text{Factors of } 8: 1, 2, 4, 8\\\\)"
+            },
+            {
+              "explain": "List all factors of 20.",
+              "work": "\\\\(\\\\text{Factors of } 20: 1, 2, 4, 5, 10, 20\\\\)"
+            },
+            {
+              "explain": "Identify common factors (appear in both lists).",
+              "work": "\\\\(\\\\text{Common factors}: 1, 2, 4\\\\)"
+            },
+            {
+              "explain": "The HCF is the largest of the common factors.",
+              "work": "\\\\(\\\\text{HCF}(8, 20) = 4\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Highest Common Factor (HCF) of \\\\(15\\\\) and \\\\(8\\\\)?",
+          "options": [
+            "\\\\(3\\\\)",
+            "\\\\(5\\\\)",
+            "\\\\(2\\\\)",
+            "\\\\(1\\\\)"
+          ],
+          "answer": 3,
+          "hint": "List all factors of each number and find the largest one they share.",
+          "solution": "Factors of 15: 1, 3, 5, 15\nFactors of 8: 1, 2, 4, 8\nThe highest common factor is 1.",
+          "steps": [
+            {
+              "explain": "List all factors of 15.",
+              "work": "\\\\(\\\\text{Factors of } 15: 1, 3, 5, 15\\\\)"
+            },
+            {
+              "explain": "List all factors of 8.",
+              "work": "\\\\(\\\\text{Factors of } 8: 1, 2, 4, 8\\\\)"
+            },
+            {
+              "explain": "The only common factor is 1, since 15 is odd and 8 is a power of 2 with no odd prime factors in common.",
+              "work": "\\\\(\\\\text{Common factors}: 1\\\\)"
+            },
+            {
+              "explain": "The HCF is 1. When two numbers share no common factor other than 1, they are called coprime.",
+              "work": "\\\\(\\\\text{HCF}(15, 8) = 1\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Highest Common Factor (HCF) of \\\\(21\\\\) and \\\\(24\\\\)?",
+          "options": [
+            "\\\\(7\\\\)",
+            "\\\\(6\\\\)",
+            "\\\\(3\\\\)",
+            "\\\\(4\\\\)"
+          ],
+          "answer": 2,
+          "hint": "List all factors of each number and find the largest one they share.",
+          "solution": "Factors of 21: 1, 3, 7, 21\nFactors of 24: 1, 2, 3, 4, 6, 8, 12, 24\nThe highest common factor is 3.",
+          "steps": [
+            {
+              "explain": "List all factors of 21.",
+              "work": "\\\\(\\\\text{Factors of } 21: 1, 3, 7, 21\\\\)"
+            },
+            {
+              "explain": "List all factors of 24.",
+              "work": "\\\\(\\\\text{Factors of } 24: 1, 2, 3, 4, 6, 8, 12, 24\\\\)"
+            },
+            {
+              "explain": "Identify common factors.",
+              "work": "\\\\(\\\\text{Common factors}: 1, 3\\\\)"
+            },
+            {
+              "explain": "The HCF is the largest common factor.",
+              "work": "\\\\(\\\\text{HCF}(21, 24) = 3\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Highest Common Factor (HCF) of \\\\(1\\\\) and \\\\(10\\\\)?",
+          "options": [
+            "\\\\(10\\\\)",
+            "\\\\(5\\\\)",
+            "\\\\(2\\\\)",
+            "\\\\(1\\\\)"
+          ],
+          "answer": 3,
+          "hint": "1 is a factor of every number.",
+          "solution": "Factors of 1: 1\nFactors of 10: 1, 2, 5, 10\nThe highest common factor is 1.",
+          "steps": [
+            {
+              "explain": "1 has only one factor: itself.",
+              "work": "\\\\(\\\\text{Factors of } 1: 1\\\\)"
+            },
+            {
+              "explain": "Factors of 10.",
+              "work": "\\\\(\\\\text{Factors of } 10: 1, 2, 5, 10\\\\)"
+            },
+            {
+              "explain": "The only factor that 1 and 10 share is 1.",
+              "work": "\\\\(\\\\text{HCF}(1, 10) = 1\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y8-3a-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Highest Common Factor (HCF) of \\\\(6\\\\) and \\\\(18\\\\)?",
+          "options": [
+            "\\\\(3\\\\)",
+            "\\\\(9\\\\)",
+            "\\\\(6\\\\)",
+            "\\\\(2\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Notice that 6 divides evenly into 18 — what does this tell you about their HCF?",
+          "solution": "Factors of 6: 1, 2, 3, 6\nFactors of 18: 1, 2, 3, 6, 9, 18\nThe highest common factor is 6.",
+          "steps": [
+            {
+              "explain": "List all factors of 6.",
+              "work": "\\\\(\\\\text{Factors of } 6: 1, 2, 3, 6\\\\)"
+            },
+            {
+              "explain": "List all factors of 18.",
+              "work": "\\\\(\\\\text{Factors of } 18: 1, 2, 3, 6, 9, 18\\\\)"
+            },
+            {
+              "explain": "Identify common factors.",
+              "work": "\\\\(\\\\text{Common factors}: 1, 2, 3, 6\\\\)"
+            },
+            {
+              "explain": "Because 6 divides into 18 exactly (18 = 3 × 6), the HCF is 6 itself.",
+              "work": "\\\\(\\\\text{HCF}(6, 18) = 6\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the HCF of \\\\(40\\\\) and \\\\(32\\\\).",
+          "options": [
+            "\\\\(4\\\\)",
+            "\\\\(16\\\\)",
+            "\\\\(8\\\\)",
+            "\\\\(2\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the prime factorisation of each number, then identify shared prime factors.",
+          "solution": "The HCF of 40 and 32 is 8.",
+          "steps": [
+            {
+              "explain": "Write 40 as a product of prime factors.",
+              "work": "\\\\(40 = 2^3 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "Write 32 as a product of prime factors.",
+              "work": "\\\\(32 = 2^5\\\\)"
+            },
+            {
+              "explain": "The HCF uses the LOWEST power of each shared prime. The only shared prime is 2, and the lower power is \\\\(2^3\\\\).",
+              "work": "\\\\(\\\\text{HCF} = 2^3 = 8\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the HCF of \\\\(14\\\\) and \\\\(21\\\\).",
+          "options": [
+            "\\\\(3\\\\)",
+            "\\\\(7\\\\)",
+            "\\\\(14\\\\)",
+            "\\\\(2\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the prime factorisation of each number.",
+          "solution": "The HCF of 14 and 21 is 7.",
+          "steps": [
+            {
+              "explain": "Prime factorise 14.",
+              "work": "\\\\(14 = 2 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "Prime factorise 21.",
+              "work": "\\\\(21 = 3 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "The only shared prime factor is 7.",
+              "work": "\\\\(\\\\text{HCF}(14, 21) = 7\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the HCF of \\\\(15\\\\) and \\\\(90\\\\).",
+          "options": [
+            "\\\\(5\\\\)",
+            "\\\\(3\\\\)",
+            "\\\\(45\\\\)",
+            "\\\\(15\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Does 15 divide evenly into 90?",
+          "solution": "The HCF of 15 and 90 is 15.",
+          "steps": [
+            {
+              "explain": "Prime factorise 15.",
+              "work": "\\\\(15 = 3 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "Prime factorise 90.",
+              "work": "\\\\(90 = 2 \\\\times 3^2 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "Take the lowest power of each shared prime: 3 (power 1) and 5 (power 1).",
+              "work": "\\\\(\\\\text{HCF} = 3 \\\\times 5 = 15\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the HCF of \\\\(36\\\\) and \\\\(25\\\\).",
+          "options": [
+            "\\\\(1\\\\)",
+            "\\\\(5\\\\)",
+            "\\\\(6\\\\)",
+            "\\\\(3\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Is there any prime factor that both numbers share?",
+          "solution": "The HCF of 36 and 25 is 1.",
+          "steps": [
+            {
+              "explain": "Prime factorise 36.",
+              "work": "\\\\(36 = 2^2 \\\\times 3^2\\\\)"
+            },
+            {
+              "explain": "Prime factorise 25.",
+              "work": "\\\\(25 = 5^2\\\\)"
+            },
+            {
+              "explain": "36 uses primes 2 and 3; 25 uses only prime 5. There are NO shared prime factors.",
+              "work": "\\\\(\\\\text{HCF}(36, 25) = 1\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the HCF of \\\\(48\\\\) and \\\\(20\\\\).",
+          "options": [
+            "\\\\(2\\\\)",
+            "\\\\(8\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(6\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the prime factorisation of each number.",
+          "solution": "The HCF of 48 and 20 is 4.",
+          "steps": [
+            {
+              "explain": "Prime factorise 48.",
+              "work": "\\\\(48 = 2^4 \\\\times 3\\\\)"
+            },
+            {
+              "explain": "Prime factorise 20.",
+              "work": "\\\\(20 = 2^2 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "The only shared prime is 2. The lower power is \\\\(2^2\\\\).",
+              "work": "\\\\(\\\\text{HCF}(48, 20) = 2^2 = 4\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q2f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the HCF of \\\\(34\\\\) and \\\\(85\\\\).",
+          "options": [
+            "\\\\(5\\\\)",
+            "\\\\(34\\\\)",
+            "\\\\(17\\\\)",
+            "\\\\(7\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Is one of these a multiple of the other? If not, try factorising both.",
+          "solution": "The HCF of 34 and 85 is 17.",
+          "steps": [
+            {
+              "explain": "Prime factorise 34.",
+              "work": "\\\\(34 = 2 \\\\times 17\\\\)"
+            },
+            {
+              "explain": "Prime factorise 85.",
+              "work": "\\\\(85 = 5 \\\\times 17\\\\)"
+            },
+            {
+              "explain": "The shared prime factor is 17.",
+              "work": "\\\\(\\\\text{HCF}(34, 85) = 17\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q2g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the HCF of \\\\(16\\\\), \\\\(24\\\\) and \\\\(40\\\\).",
+          "options": [
+            "\\\\(4\\\\)",
+            "\\\\(8\\\\)",
+            "\\\\(2\\\\)",
+            "\\\\(16\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Find shared prime factors across all three numbers.",
+          "solution": "The HCF of 16, 24 and 40 is 8.",
+          "steps": [
+            {
+              "explain": "Prime factorise all three numbers.",
+              "work": "\\\\(16 = 2^4, \\\\quad 24 = 2^3 \\\\times 3, \\\\quad 40 = 2^3 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "The only prime shared by all three is 2. Take the LOWEST power across the three: \\\\(\\\\min(4, 3, 3) = 3\\\\).",
+              "work": "\\\\(\\\\text{HCF} = 2^3 = 8\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q2h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the HCF of \\\\(21\\\\), \\\\(9\\\\) and \\\\(20\\\\).",
+          "options": [
+            "\\\\(1\\\\)",
+            "\\\\(3\\\\)",
+            "\\\\(7\\\\)",
+            "\\\\(4\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Do all three numbers share a common prime factor?",
+          "solution": "The HCF of 21, 9 and 20 is 1.",
+          "steps": [
+            {
+              "explain": "Prime factorise all three.",
+              "work": "\\\\(21 = 3 \\\\times 7, \\\\quad 9 = 3^2, \\\\quad 20 = 2^2 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "21 and 9 share the prime 3, but 20 has no factor of 3. There is no prime common to all three.",
+              "work": "\\\\(\\\\text{HCF}(21, 9, 20) = 1\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q2i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the HCF of \\\\(80\\\\), \\\\(30\\\\) and \\\\(20\\\\).",
+          "options": [
+            "\\\\(5\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(10\\\\)",
+            "\\\\(20\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Find shared prime factors across all three numbers.",
+          "solution": "The HCF of 80, 30 and 20 is 10.",
+          "steps": [
+            {
+              "explain": "Prime factorise all three.",
+              "work": "\\\\(80 = 2^4 \\\\times 5, \\\\quad 30 = 2 \\\\times 3 \\\\times 5, \\\\quad 20 = 2^2 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "Shared primes across all three: 2 (min power = 1) and 5 (min power = 1).",
+              "work": "\\\\(\\\\text{HCF} = 2^1 \\\\times 5^1 = 10\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Lowest Common Multiple (LCM) of \\\\(6\\\\) and \\\\(8\\\\)?",
+          "options": [
+            "\\\\(16\\\\)",
+            "\\\\(24\\\\)",
+            "\\\\(48\\\\)",
+            "\\\\(12\\\\)"
+          ],
+          "answer": 1,
+          "hint": "List the first few multiples of each number until you find one they share.",
+          "solution": "Multiples of 6: 6, 12, 18, 24, 30\nMultiples of 8: 8, 16, 24, 32\nThe lowest common multiple is 24.",
+          "steps": [
+            {
+              "explain": "List multiples of 6.",
+              "work": "\\\\(6, 12, 18, 24, 30, \\\\ldots\\\\)"
+            },
+            {
+              "explain": "List multiples of 8.",
+              "work": "\\\\(8, 16, 24, 32, \\\\ldots\\\\)"
+            },
+            {
+              "explain": "The first number appearing in BOTH lists is the LCM.",
+              "work": "\\\\(\\\\text{LCM}(6, 8) = 24\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Lowest Common Multiple (LCM) of \\\\(15\\\\) and \\\\(20\\\\)?",
+          "options": [
+            "\\\\(40\\\\)",
+            "\\\\(30\\\\)",
+            "\\\\(300\\\\)",
+            "\\\\(60\\\\)"
+          ],
+          "answer": 3,
+          "hint": "List multiples of each number until you find the first shared value.",
+          "solution": "Multiples of 15: 15, 30, 45, 60\nMultiples of 20: 20, 40, 60\nThe lowest common multiple is 60.",
+          "steps": [
+            {
+              "explain": "List multiples of 15.",
+              "work": "\\\\(15, 30, 45, 60, \\\\ldots\\\\)"
+            },
+            {
+              "explain": "List multiples of 20.",
+              "work": "\\\\(20, 40, 60, \\\\ldots\\\\)"
+            },
+            {
+              "explain": "The first shared multiple is 60.",
+              "work": "\\\\(\\\\text{LCM}(15, 20) = 60\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Lowest Common Multiple (LCM) of \\\\(4\\\\) and \\\\(9\\\\)?",
+          "options": [
+            "\\\\(18\\\\)",
+            "\\\\(36\\\\)",
+            "\\\\(12\\\\)",
+            "\\\\(72\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Since 4 and 9 share no common factor, their LCM equals their product.",
+          "solution": "Multiples of 4: 4, 8, 12, ..., 36\nMultiples of 9: 9, 18, 27, 36\nThe lowest common multiple is 36.",
+          "steps": [
+            {
+              "explain": "List multiples of 4.",
+              "work": "\\\\(4, 8, 12, 16, 20, 24, 28, 32, 36, \\\\ldots\\\\)"
+            },
+            {
+              "explain": "List multiples of 9.",
+              "work": "\\\\(9, 18, 27, 36, \\\\ldots\\\\)"
+            },
+            {
+              "explain": "Since HCF(4,9)=1 (coprime), LCM = 4 × 9.",
+              "work": "\\\\(\\\\text{LCM}(4, 9) = 36\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Lowest Common Multiple (LCM) of \\\\(6\\\\) and \\\\(12\\\\)?",
+          "options": [
+            "\\\\(6\\\\)",
+            "\\\\(72\\\\)",
+            "\\\\(12\\\\)",
+            "\\\\(24\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Does 6 divide evenly into 12? What does that tell you about their LCM?",
+          "solution": "Multiples of 6: 6, 12, 18\nMultiples of 12: 12, 24\nThe lowest common multiple is 12.",
+          "steps": [
+            {
+              "explain": "Since 12 is already a multiple of 6 (12 = 2 × 6), the smallest multiple they share is 12 itself.",
+              "work": "\\\\(\\\\text{Multiples of 6}: 6, 12, \\\\ldots\\\\)"
+            },
+            {
+              "explain": "When one number is a multiple of another, the LCM equals the larger number.",
+              "work": "\\\\(\\\\text{LCM}(6, 12) = 12\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y8-3a-q3e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Lowest Common Multiple (LCM) of \\\\(1\\\\) and \\\\(6\\\\)?",
+          "options": [
+            "\\\\(6\\\\)",
+            "\\\\(1\\\\)",
+            "\\\\(7\\\\)",
+            "\\\\(12\\\\)"
+          ],
+          "answer": 0,
+          "hint": "1 is a factor of every number. What is the first multiple that both 1 and 6 share?",
+          "solution": "Multiples of 1: 1, 2, 3, 4, 5, 6\nMultiples of 6: 6, 12\nThe lowest common multiple is 6.",
+          "steps": [
+            {
+              "explain": "Every positive integer is a multiple of 1. So all multiples of 6 are also multiples of 1.",
+              "work": "\\\\(\\\\text{Multiples of 6}: 6, 12, 18, \\\\ldots\\\\)"
+            },
+            {
+              "explain": "The smallest multiple of 6 is 6 itself, which is also a multiple of 1.",
+              "work": "\\\\(\\\\text{LCM}(1, 6) = 6\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y8-3a-q3f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the Lowest Common Multiple (LCM) of \\\\(8\\\\) and \\\\(12\\\\)?",
+          "options": [
+            "\\\\(48\\\\)",
+            "\\\\(96\\\\)",
+            "\\\\(24\\\\)",
+            "\\\\(36\\\\)"
+          ],
+          "answer": 2,
+          "hint": "List multiples of 12 and check which is also a multiple of 8.",
+          "solution": "Multiples of 8: 8, 16, 24\nMultiples of 12: 12, 24\nThe lowest common multiple is 24.",
+          "steps": [
+            {
+              "explain": "List multiples of 8.",
+              "work": "\\\\(8, 16, 24, \\\\ldots\\\\)"
+            },
+            {
+              "explain": "List multiples of 12.",
+              "work": "\\\\(12, 24, \\\\ldots\\\\)"
+            },
+            {
+              "explain": "The first shared multiple is 24.",
+              "work": "\\\\(\\\\text{LCM}(8, 12) = 24\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the LCM of \\\\(9\\\\) and \\\\(15\\\\).",
+          "options": [
+            "\\\\(45\\\\)",
+            "\\\\(135\\\\)",
+            "\\\\(90\\\\)",
+            "\\\\(18\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Use prime factorisation: take the highest power of each prime that appears in either number.",
+          "solution": "The LCM of 9 and 15 is 45.",
+          "steps": [
+            {
+              "explain": "Prime factorise 9 and 15.",
+              "work": "\\\\(9 = 3^2, \\\\quad 15 = 3 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "For the LCM, take the HIGHEST power of each prime: \\\\(3^2\\\\) and \\\\(5^1\\\\).",
+              "work": "\\\\(\\\\text{LCM} = 3^2 \\\\times 5 = 9 \\\\times 5 = 45\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the LCM of \\\\(9\\\\) and \\\\(10\\\\).",
+          "options": [
+            "\\\\(45\\\\)",
+            "\\\\(90\\\\)",
+            "\\\\(19\\\\)",
+            "\\\\(18\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Are 9 and 10 coprime? If so, what is their LCM?",
+          "solution": "The LCM of 9 and 10 is 90.",
+          "steps": [
+            {
+              "explain": "Prime factorise 9 and 10.",
+              "work": "\\\\(9 = 3^2, \\\\quad 10 = 2 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "They share no common prime factors (coprime), so LCM = 9 × 10.",
+              "work": "\\\\(\\\\text{LCM}(9, 10) = 9 \\\\times 10 = 90\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the LCM of \\\\(19\\\\) and \\\\(1\\\\).",
+          "options": [
+            "\\\\(20\\\\)",
+            "\\\\(1\\\\)",
+            "\\\\(19\\\\)",
+            "\\\\(38\\\\)"
+          ],
+          "answer": 2,
+          "hint": "What is the LCM of any number and 1?",
+          "solution": "The LCM of 19 and 1 is 19.",
+          "steps": [
+            {
+              "explain": "Every positive integer is a multiple of 1. So the first multiple shared by 19 and 1 is 19 itself.",
+              "work": "\\\\(\\\\text{LCM}(19, 1) = 19\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y8-3a-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the LCM of \\\\(15\\\\) and \\\\(20\\\\).",
+          "options": [
+            "\\\\(30\\\\)",
+            "\\\\(300\\\\)",
+            "\\\\(40\\\\)",
+            "\\\\(60\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Use prime factorisation and take the highest power of each prime.",
+          "solution": "The LCM of 15 and 20 is 60.",
+          "steps": [
+            {
+              "explain": "Prime factorise 15 and 20.",
+              "work": "\\\\(15 = 3 \\\\times 5, \\\\quad 20 = 2^2 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "Take highest powers: \\\\(2^2, 3^1, 5^1\\\\).",
+              "work": "\\\\(\\\\text{LCM} = 4 \\\\times 3 \\\\times 5 = 60\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q4e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the LCM of \\\\(6\\\\) and \\\\(36\\\\).",
+          "options": [
+            "\\\\(72\\\\)",
+            "\\\\(216\\\\)",
+            "\\\\(18\\\\)",
+            "\\\\(36\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Does 6 divide evenly into 36?",
+          "solution": "The LCM of 6 and 36 is 36.",
+          "steps": [
+            {
+              "explain": "Since \\\\(36 = 6 \\\\times 6\\\\), every multiple of 36 is also a multiple of 6. The LCM equals the larger number.",
+              "work": "\\\\(\\\\text{LCM}(6, 36) = 36\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y8-3a-q4f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the LCM of \\\\(25\\\\) and \\\\(100\\\\).",
+          "options": [
+            "\\\\(2500\\\\)",
+            "\\\\(500\\\\)",
+            "\\\\(50\\\\)",
+            "\\\\(100\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Does 25 divide evenly into 100?",
+          "solution": "The LCM of 25 and 100 is 100.",
+          "steps": [
+            {
+              "explain": "Since \\\\(100 = 4 \\\\times 25\\\\), the smaller divides the larger. LCM is the larger number.",
+              "work": "\\\\(\\\\text{LCM}(25, 100) = 100\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y8-3a-q4g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the LCM of \\\\(4\\\\), \\\\(6\\\\) and \\\\(8\\\\).",
+          "options": [
+            "\\\\(24\\\\)",
+            "\\\\(48\\\\)",
+            "\\\\(12\\\\)",
+            "\\\\(192\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Use prime factorisation across all three and take the highest power of each prime.",
+          "solution": "The LCM of 4, 6 and 8 is 24.",
+          "steps": [
+            {
+              "explain": "Prime factorise all three.",
+              "work": "\\\\(4 = 2^2, \\\\quad 6 = 2 \\\\times 3, \\\\quad 8 = 2^3\\\\)"
+            },
+            {
+              "explain": "Highest powers: \\\\(2^3\\\\) and \\\\(3^1\\\\).",
+              "work": "\\\\(\\\\text{LCM} = 2^3 \\\\times 3 = 8 \\\\times 3 = 24\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q4h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the LCM of \\\\(10\\\\), \\\\(12\\\\) and \\\\(15\\\\).",
+          "options": [
+            "\\\\(30\\\\)",
+            "\\\\(180\\\\)",
+            "\\\\(60\\\\)",
+            "\\\\(120\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Prime factorise all three numbers and take the highest power of each prime.",
+          "solution": "The LCM of 10, 12 and 15 is 60.",
+          "steps": [
+            {
+              "explain": "Prime factorise all three.",
+              "work": "\\\\(10 = 2 \\\\times 5, \\\\quad 12 = 2^2 \\\\times 3, \\\\quad 15 = 3 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "Highest powers: \\\\(2^2, 3^1, 5^1\\\\).",
+              "work": "\\\\(\\\\text{LCM} = 4 \\\\times 3 \\\\times 5 = 60\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q4i",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the LCM of \\\\(15\\\\), \\\\(10\\\\), \\\\(12\\\\) and \\\\(40\\\\).",
+          "options": [
+            "\\\\(60\\\\)",
+            "\\\\(240\\\\)",
+            "\\\\(120\\\\)",
+            "\\\\(360\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Prime factorise all four numbers and take the highest power of each prime.",
+          "solution": "The LCM of 15, 10, 12 and 40 is 120.",
+          "steps": [
+            {
+              "explain": "Prime factorise all four numbers.",
+              "work": "\\\\(15 = 3\\\\times 5,\\\\; 10 = 2\\\\times 5,\\\\; 12 = 2^2\\\\times 3,\\\\; 40 = 2^3\\\\times 5\\\\)"
+            },
+            {
+              "explain": "Highest powers present: \\\\(2^3, 3^1, 5^1\\\\).",
+              "work": "\\\\(\\\\text{LCM} = 2^3 \\\\times 3 \\\\times 5 = 8 \\\\times 15 = 120\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y8-3a-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In part (a), you listed all the numbers from 2 to 40 that are divisible by 2, 3, or 5. Which of the following is the complete list of numbers from 2 to 40 that are NOT divisible by 2, 3, or 5? (This list, together with 2, 3 and 5, gives all 12 prime numbers less than 40.)",
+          "options": [
+            "7, 11, 13, 17, 19, 23, 29, 31, 37",
+            "7, 9, 11, 13, 17, 19, 23, 29, 31, 37",
+            "7, 11, 13, 17, 19, 23, 29, 31",
+            "1, 7, 11, 13, 17, 19, 23, 29, 31, 37"
+          ],
+          "answer": 0,
+          "hint": "Find numbers not divisible by 2, 3, or 5.",
+          "solution": "7, 11, 13, 17, 19, 23, 29, 31, 37.\nThese numbers, combined with 2, 3, and 5, make up all the prime numbers less than 40.",
+          "steps": [
+            {
+              "explain": "Go through the numbers from 2 to 40 and cross out every number divisible by 2, 3, or 5. The numbers left over are the ones NOT divisible by any of these three.",
+              "work": "\\(\\text{Remaining numbers: } 7, 11, 13, 17, 19, 23, 29, 31, 37\\)"
+            },
+            {
+              "explain": "Check that each remaining number is indeed prime — none of 7, 11, 13, 17, 19, 23, 29, 31, or 37 has any divisor other than 1 and itself.",
+              "work": "\\(\\text{Combined with } 2, 3, 5: \\quad 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37\\)"
+            },
+            {
+              "explain": "Count the total number of primes in this combined list.",
+              "work": "\\(\\text{Total count} = 12 \\text{ prime numbers}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3a-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following is the complete list of composite numbers between 40 and 60?",
+          "options": [
+            "42, 44, 45, 46, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58",
+            "41, 42, 44, 45, 46, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58",
+            "42, 44, 45, 46, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58, 59",
+            "42, 44, 46, 48, 50, 52, 54, 56, 58"
+          ],
+          "answer": 0,
+          "hint": "Exclude prime numbers.",
+          "solution": "42, 44, 45, 46, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58.\nThese are all the non-prime integers strictly between 40 and 60.",
+          "steps": [
+            {
+              "explain": "List all integers between 40 and 60 (excluding the endpoints 40 and 60).",
+              "work": "\\(41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59\\)"
+            },
+            {
+              "explain": "Identify and remove the prime numbers in this range. The primes are 41, 43, 47, 53, and 59 — a common mistake is leaving one of these in the list.",
+              "work": "\\(\\text{Primes to remove}: \\{41, 43, 47, 53, 59\\}\\)"
+            },
+            {
+              "explain": "The remaining numbers are composite because they have factors other than 1 and themselves. Note ODD composites like 45, 49, 55, 57 must be included too — only excluding primes, not just picking the even numbers.",
+              "work": "\\(\\text{Composite numbers}: 42, 44, 45, 46, 48, 49, 50, 51, 52, 54, 55, 56, 57, 58\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3a-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following correctly lists ALL the prime divisors of \\\\(10\\\\)?",
+          "options": [
+            "\\\\(2\\\\) only",
+            "\\\\(2, 5\\\\)",
+            "\\\\(2, 5, 10\\\\)",
+            "\\\\(1, 2, 5\\\\)"
+          ],
+          "answer": 1,
+          "hint": "A prime divisor is a prime number that divides the number exactly.",
+          "solution": "The prime divisors of 10 are 2, 5.",
+          "steps": [
+            {
+              "explain": "Write 10 as a product of prime factors.",
+              "work": "\\\\(10 = 2 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "Both 2 and 5 are prime. Note that 1 is NOT prime, and 10 itself is not prime.",
+              "work": "\\\\(\\\\text{Prime divisors of } 10 = \\\\{2, 5\\\\}\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following correctly lists ALL the prime divisors of \\\\(18\\\\)?",
+          "options": [
+            "\\\\(2, 3, 9\\\\)",
+            "\\\\(2, 9\\\\)",
+            "\\\\(2, 3\\\\)",
+            "\\\\(3\\\\) only"
+          ],
+          "answer": 2,
+          "hint": "Write 18 as a product of primes.",
+          "solution": "The prime divisors of 18 are 2, 3.",
+          "steps": [
+            {
+              "explain": "Prime factorise 18.",
+              "work": "\\\\(18 = 2 \\\\times 3^2\\\\)"
+            },
+            {
+              "explain": "The distinct prime factors are 2 and 3. (9 = 3², not a prime.)",
+              "work": "\\\\(\\\\text{Prime divisors of } 18 = \\\\{2, 3\\\\}\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following correctly lists ALL the prime divisors of \\\\(21\\\\)?",
+          "options": [
+            "\\\\(3, 21\\\\)",
+            "\\\\(3, 7\\\\)",
+            "\\\\(7\\\\) only",
+            "\\\\(1, 3, 7\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Write 21 as a product of two primes.",
+          "solution": "The prime divisors of 21 are 3, 7.",
+          "steps": [
+            {
+              "explain": "Prime factorise 21.",
+              "work": "\\\\(21 = 3 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "Both 3 and 7 are prime. 1 is not a prime number.",
+              "work": "\\\\(\\\\text{Prime divisors of } 21 = \\\\{3, 7\\\\}\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q6d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following correctly lists ALL the prime divisors of \\\\(42\\\\)?",
+          "options": [
+            "\\\\(2, 3, 6, 7\\\\)",
+            "\\\\(2, 7\\\\)",
+            "\\\\(3, 7\\\\)",
+            "\\\\(2, 3, 7\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Prime factorise 42 step by step.",
+          "solution": "The prime divisors of 42 are 2, 3, 7.",
+          "steps": [
+            {
+              "explain": "Prime factorise 42.",
+              "work": "\\\\(42 = 2 \\\\times 21 = 2 \\\\times 3 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "2, 3, and 7 are all prime. 6 is NOT prime (6 = 2×3).",
+              "work": "\\\\(\\\\text{Prime divisors of } 42 = \\\\{2, 3, 7\\\\}\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q6e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following correctly lists ALL the prime divisors of \\\\(52\\\\)?",
+          "options": [
+            "\\\\(2, 13\\\\)",
+            "\\\\(2, 4, 13\\\\)",
+            "\\\\(2, 26\\\\)",
+            "\\\\(4, 13\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 52 by the smallest prime (2) first.",
+          "solution": "The prime divisors of 52 are 2, 13.",
+          "steps": [
+            {
+              "explain": "Prime factorise 52.",
+              "work": "\\\\(52 = 2^2 \\\\times 13\\\\)"
+            },
+            {
+              "explain": "The distinct prime factors are 2 and 13. (4 and 26 are not prime.)",
+              "work": "\\\\(\\\\text{Prime divisors of } 52 = \\\\{2, 13\\\\}\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q6f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following correctly lists ALL the prime divisors of \\\\(46\\\\)?",
+          "options": [
+            "\\\\(2, 23\\\\)",
+            "\\\\(2, 11, 23\\\\)",
+            "\\\\(23\\\\) only",
+            "\\\\(2, 46\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 46 by 2 first, then check if the result is prime.",
+          "solution": "The prime divisors of 46 are 2, 23.",
+          "steps": [
+            {
+              "explain": "Prime factorise 46.",
+              "work": "\\\\(46 = 2 \\\\times 23\\\\)"
+            },
+            {
+              "explain": "2 and 23 are both prime. 46 is not prime.",
+              "work": "\\\\(\\\\text{Prime divisors of } 46 = \\\\{2, 23\\\\}\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q6g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following correctly lists ALL the prime divisors of \\\\(175\\\\)?",
+          "options": [
+            "\\\\(5, 25, 7\\\\)",
+            "\\\\(5, 7\\\\)",
+            "\\\\(5, 35\\\\)",
+            "\\\\(7, 25\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Try dividing 175 by 5 first.",
+          "solution": "The prime divisors of 175 are 5, 7.",
+          "steps": [
+            {
+              "explain": "Divide 175 by 5.",
+              "work": "\\\\(175 \\\\div 5 = 35\\\\)"
+            },
+            {
+              "explain": "Divide 35 by 5 again.",
+              "work": "\\\\(35 \\\\div 5 = 7\\\\)"
+            },
+            {
+              "explain": "So \\\\(175 = 5^2 \\\\times 7\\\\). The distinct prime factors are 5 and 7. (25 is not prime.)",
+              "work": "\\\\(\\\\text{Prime divisors of } 175 = \\\\{5, 7\\\\}\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q7a-1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\\\(14\\\\) as a product of two prime numbers.",
+          "options": [
+            "\\\\(1 \\\\times 14\\\\)",
+            "\\\\(2 \\\\times 6\\\\)",
+            "\\\\(2 \\\\times 7\\\\)",
+            "\\\\(4 \\\\times 3.5\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Find two primes that multiply to give 14.",
+          "solution": "$14 = 2 \\times 7$",
+          "steps": [
+            {
+              "explain": "Check if 14 is divisible by 2 (the smallest prime).",
+              "work": "\\\\(14 \\\\div 2 = 7\\\\)"
+            },
+            {
+              "explain": "Is 7 prime? Yes — it has no factors other than 1 and itself.",
+              "work": "\\\\(14 = 2 \\\\times 7 \\\\quad \\\\checkmark\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q7a-2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\\\(15\\\\) as a product of two prime numbers.",
+          "options": [
+            "\\\\(1 \\\\times 15\\\\)",
+            "\\\\(3 \\\\times 5\\\\)",
+            "\\\\(5 \\\\times 4\\\\)",
+            "\\\\(2 \\\\times 7.5\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Find two primes that multiply to give 15.",
+          "solution": "$15 = 3 \\times 5$",
+          "steps": [
+            {
+              "explain": "Check if 15 is divisible by 3 (since it is odd, 2 does not work).",
+              "work": "\\\\(15 \\\\div 3 = 5\\\\)"
+            },
+            {
+              "explain": "Both 3 and 5 are prime.",
+              "work": "\\\\(15 = 3 \\\\times 5 \\\\quad \\\\checkmark\\\\)"
+            }
+          ],
+          "timeLimit": 45
+        },
+        {
+          "id": "y8-3a-q7b-1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\\\(42\\\\) as a product of three prime numbers.",
+          "options": [
+            "\\\\(2 \\\\times 3 \\\\times 8\\\\)",
+            "\\\\(2 \\\\times 3 \\\\times 7\\\\)",
+            "\\\\(6 \\\\times 7\\\\)",
+            "\\\\(2 \\\\times 21\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Keep dividing by the smallest prime possible at each step.",
+          "solution": "$42 = 2 \\times 3 \\times 7$",
+          "steps": [
+            {
+              "explain": "Divide 42 by 2.",
+              "work": "\\\\(42 \\\\div 2 = 21\\\\)"
+            },
+            {
+              "explain": "Divide 21 by 3.",
+              "work": "\\\\(21 \\\\div 3 = 7\\\\)"
+            },
+            {
+              "explain": "7 is prime. So we have three prime factors.",
+              "work": "\\\\(42 = 2 \\\\times 3 \\\\times 7\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q7b-2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\\\(70\\\\) as a product of three prime numbers.",
+          "options": [
+            "\\\\(2 \\\\times 5 \\\\times 7\\\\)",
+            "\\\\(7 \\\\times 10\\\\)",
+            "\\\\(2 \\\\times 35\\\\)",
+            "\\\\(2 \\\\times 7 \\\\times 6\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Keep dividing by the smallest prime possible.",
+          "solution": "$70 = 2 \\times 5 \\times 7$",
+          "steps": [
+            {
+              "explain": "Divide 70 by 2.",
+              "work": "\\\\(70 \\\\div 2 = 35\\\\)"
+            },
+            {
+              "explain": "Divide 35 by 5.",
+              "work": "\\\\(35 \\\\div 5 = 7\\\\)"
+            },
+            {
+              "explain": "7 is prime.",
+              "work": "\\\\(70 = 2 \\\\times 5 \\\\times 7\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q7c-1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\\\(25\\\\) as a power of a prime number.",
+          "options": [
+            "\\\\(5^3\\\\)",
+            "\\\\(2^5\\\\)",
+            "\\\\(5^2\\\\)",
+            "\\\\(25^1\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Which prime, raised to a power, gives 25?",
+          "solution": "$25 = 5^2$",
+          "steps": [
+            {
+              "explain": "25 = 5 × 5. The base is prime (5).",
+              "work": "\\\\(25 = 5^2\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q7c-2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\\\(27\\\\) as a power of a prime number.",
+          "options": [
+            "\\\\(3^4\\\\)",
+            "\\\\(9^2\\\\)",
+            "\\\\(3^2\\\\)",
+            "\\\\(3^3\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Which prime, raised to a power, gives 27?",
+          "solution": "$27 = 3^3$",
+          "steps": [
+            {
+              "explain": "27 = 3 × 3 × 3.",
+              "work": "\\\\(27 = 3^3\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the prime number \\\\(13\\\\) as the sum of two perfect squares.",
+          "options": [
+            "\\\\(1^2 + 3^2\\\\)",
+            "\\\\(2^2 + 3^2\\\\)",
+            "\\\\(4^2 + 1^2\\\\)",
+            "\\\\(2^2 + 2^2\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Try pairs of squares: \\\\(1^2, 2^2, 3^2, \\\\ldots\\\\)",
+          "solution": "$13 = 2^2 + 3^2$",
+          "steps": [
+            {
+              "explain": "List perfect squares up to 13: 1, 4, 9.",
+              "work": "\\\\(1^2=1,\\\\; 2^2=4,\\\\; 3^2=9\\\\)"
+            },
+            {
+              "explain": "Try pairs that sum to 13: 4 + 9 = 13 ✓",
+              "work": "\\\\(13 = 2^2 + 3^2 = 4 + 9\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the prime number \\\\(17\\\\) as the sum of two perfect squares.",
+          "options": [
+            "\\\\(3^2 + 2^2\\\\)",
+            "\\\\(1^2 + 4^2\\\\)",
+            "\\\\(2^2 + 4^2\\\\)",
+            "\\\\(1^2 + 3^2\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Try pairs of squares: 1, 4, 9, 16.",
+          "solution": "$17 = 1^2 + 4^2$",
+          "steps": [
+            {
+              "explain": "List perfect squares up to 17: 1, 4, 9, 16.",
+              "work": "\\\\(1^2=1,\\\\; 4^2=16\\\\)"
+            },
+            {
+              "explain": "Try: 1 + 16 = 17 ✓",
+              "work": "\\\\(17 = 1^2 + 4^2\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the prime number \\\\(29\\\\) as the sum of two perfect squares.",
+          "options": [
+            "\\\\(3^2 + 4^2\\\\)",
+            "\\\\(2^2 + 5^2\\\\)",
+            "\\\\(1^2 + 5^2\\\\)",
+            "\\\\(4^2 + 4^2\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Try pairs of squares up to 29.",
+          "solution": "$29 = 2^2 + 5^2$",
+          "steps": [
+            {
+              "explain": "List perfect squares up to 29: 1, 4, 9, 16, 25.",
+              "work": "\\\\(2^2=4,\\\\; 5^2=25\\\\)"
+            },
+            {
+              "explain": "4 + 25 = 29 ✓",
+              "work": "\\\\(29 = 2^2 + 5^2\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the prime number \\\\(37\\\\) as the sum of two perfect squares.",
+          "options": [
+            "\\\\(5^2 + 3^2\\\\)",
+            "\\\\(1^2 + 6^2\\\\)",
+            "\\\\(4^2 + 4^2\\\\)",
+            "\\\\(2^2 + 6^2\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Try pairs of squares up to 37.",
+          "solution": "$37 = 1^2 + 6^2$",
+          "steps": [
+            {
+              "explain": "List perfect squares up to 37: 1, 4, 9, 16, 25, 36.",
+              "work": "\\\\(1^2=1,\\\\; 6^2=36\\\\)"
+            },
+            {
+              "explain": "1 + 36 = 37 ✓",
+              "work": "\\\\(37 = 1^2 + 6^2\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q8e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the prime number \\\\(41\\\\) as the sum of two perfect squares.",
+          "options": [
+            "\\\\(1^2 + 6^2\\\\)",
+            "\\\\(4^2 + 5^2\\\\)",
+            "\\\\(3^2 + 5^2\\\\)",
+            "\\\\(2^2 + 6^2\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Try pairs of squares up to 41.",
+          "solution": "$41 = 4^2 + 5^2$",
+          "steps": [
+            {
+              "explain": "Try pairs: 16 + 25 = 41 ✓",
+              "work": "\\\\(4^2 + 5^2 = 16 + 25 = 41\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q8f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the prime number \\\\(53\\\\) as the sum of two perfect squares.",
+          "options": [
+            "\\\\(3^2 + 7^2\\\\)",
+            "\\\\(2^2 + 7^2\\\\)",
+            "\\\\(5^2 + 5^2\\\\)",
+            "\\\\(4^2 + 6^2\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Try pairs of squares up to 53.",
+          "solution": "$53 = 2^2 + 7^2$",
+          "steps": [
+            {
+              "explain": "Try pairs: 4 + 49 = 53 ✓",
+              "work": "\\\\(2^2 + 7^2 = 4 + 49 = 53\\\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y8-3a-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The Grand Palace has three long corridors of lengths \\\\(30\\\\) m, \\\\(45\\\\) m and \\\\(75\\\\) m. Square tiles of the largest possible size are to be used to tile the corridors exactly (with no cutting). What is the side length of each tile?",
+          "options": [
+            "\\\\(5\\\\) m",
+            "\\\\(3\\\\) m",
+            "\\\\(15\\\\) m",
+            "\\\\(10\\\\) m"
+          ],
+          "answer": 2,
+          "hint": "The side length of the largest square tile must divide all three corridor lengths exactly — find their HCF.",
+          "solution": "We need the Highest Common Factor (HCF) of 30, 45, and 75, which is 15. The longest piece of carpet is 15 m.",
+          "steps": [
+            {
+              "explain": "The tile side length must divide all three corridor lengths exactly. We need the largest such value — the HCF.",
+              "work": "\\\\(\\\\text{Find HCF}(30, 45, 75)\\\\)"
+            },
+            {
+              "explain": "Prime factorise each corridor length.",
+              "work": "\\\\(30 = 2\\\\times 3\\\\times 5,\\\\; 45 = 3^2\\\\times 5,\\\\; 75 = 3\\\\times 5^2\\\\)"
+            },
+            {
+              "explain": "Shared primes with lowest powers: \\\\(3^1\\\\) and \\\\(5^1\\\\).",
+              "work": "\\\\(\\\\text{HCF} = 3 \\\\times 5 = 15\\\\)"
+            },
+            {
+              "explain": "Each tile has side length 15 m. Check: 30 ÷ 15 = 2 ✓, 45 ÷ 15 = 3 ✓, 75 ÷ 15 = 5 ✓.",
+              "work": "\\\\(\\\\text{Tile side length} = 15 \\\\text{ m}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y8-3a-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A baker's truck visits a caravan park every \\\\(3\\\\) days. A fishmonger visits every \\\\(4\\\\) days. A fruit van visits every \\\\(5\\\\) days. If they all visit on day 1, after how many days will all three vendors next visit on the same day?",
+          "options": [
+            "\\\\(12\\\\) days",
+            "\\\\(20\\\\) days",
+            "\\\\(60\\\\) days",
+            "\\\\(15\\\\) days"
+          ],
+          "answer": 2,
+          "hint": "Find the LCM of the three visit intervals.",
+          "solution": "We need the Lowest Common Multiple (LCM) of 3 and 4, which is 12. They will visit together again in 12 days.",
+          "steps": [
+            {
+              "explain": "All three vendors visit together whenever the number of days is a multiple of all three intervals. We need the smallest such value — the LCM.",
+              "work": "\\\\(\\\\text{Find LCM}(3, 4, 5)\\\\)"
+            },
+            {
+              "explain": "Prime factorise each interval.",
+              "work": "\\\\(3 = 3,\\\\; 4 = 2^2,\\\\; 5 = 5\\\\)"
+            },
+            {
+              "explain": "All three are coprime (share no common prime). LCM = product.",
+              "work": "\\\\(\\\\text{LCM} = 3 \\\\times 4 \\\\times 5 = 60\\\\)"
+            },
+            {
+              "explain": "All three vendors will next coincide after 60 days.",
+              "work": "\\\\(\\\\text{Answer: } 60 \\\\text{ days}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y8-3a-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Three bugs in a puddle take \\\\(5\\\\), \\\\(10\\\\) and \\\\(4\\\\) minutes respectively to swim one lap. If they all start at the same point, after how many minutes will all three bugs next be at the starting point at the same time?",
+          "options": [
+            "\\\\(40\\\\) min",
+            "\\\\(20\\\\) min",
+            "\\\\(10\\\\) min",
+            "\\\\(200\\\\) min"
+          ],
+          "answer": 1,
+          "hint": "Find the LCM of the three lap times.",
+          "solution": "We need the Lowest Common Multiple (LCM) of 5, 10, and 4, which is 20. Therefore, 20 minutes pass. The time will be 1:20 p.m.",
+          "steps": [
+            {
+              "explain": "All three bugs are simultaneously at the start after a number of minutes that is a multiple of all three lap times. We need the LCM.",
+              "work": "\\\\(\\\\text{Find LCM}(5, 10, 4)\\\\)"
+            },
+            {
+              "explain": "Prime factorise each lap time.",
+              "work": "\\\\(5 = 5,\\\\; 10 = 2\\\\times 5,\\\\; 4 = 2^2\\\\)"
+            },
+            {
+              "explain": "Highest powers: \\\\(2^2\\\\) and \\\\(5^1\\\\).",
+              "work": "\\\\(\\\\text{LCM} = 4 \\\\times 5 = 20\\\\)"
+            },
+            {
+              "explain": "After 20 minutes, all three bugs will be back at the start simultaneously.",
+              "work": "\\\\(\\\\text{Answer: } 20 \\\\text{ min}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y8-3a-q12",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "\\\\(1105\\\\) is the product of three prime numbers. Which three primes?",
+          "options": [
+            "\\\\(5, 11, 19\\\\)",
+            "\\\\(5, 13, 17\\\\)",
+            "\\\\(5, 7, 31\\\\)",
+            "\\\\(7, 11, 13\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Try dividing 1105 by small primes: 5, 13, 17…",
+          "solution": "$1105 = 5 \\times 13 \\times 17$",
+          "steps": [
+            {
+              "explain": "1105 ends in 5, so it is divisible by 5.",
+              "work": "\\\\(1105 \\\\div 5 = 221\\\\)"
+            },
+            {
+              "explain": "Now factorise 221. Check: 221 ÷ 13 = 17.",
+              "work": "\\\\(221 \\\\div 13 = 17\\\\)"
+            },
+            {
+              "explain": "17 is prime. So the three prime factors are 5, 13, 17.",
+              "work": "\\\\(1105 = 5 \\\\times 13 \\\\times 17\\\\)"
+            },
+            {
+              "explain": "Verify: 5 × 13 = 65, and 65 × 17 = 1105 ✓",
+              "work": "\\\\(65 \\\\times 17 = 1105 \\\\quad \\\\checkmark\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y8-3a-q13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Goldbach's conjecture states that every even number greater than 2 can be expressed as the sum of two prime numbers. Which of the following correctly expresses every even number between 120 and 130 as a sum of two primes?",
+          "options": [
+            "\\(122=13+109,\\ 124=11+113,\\ 126=13+113,\\ 128=19+109\\)",
+            "\\(122=11+111,\\ 124=11+113,\\ 126=13+113,\\ 128=19+109\\)",
+            "\\(122=13+109,\\ 124=13+111,\\ 126=13+113,\\ 128=19+109\\)",
+            "\\(122=13+109,\\ 124=11+113,\\ 126=13+113,\\ 128=13+115\\)"
+          ],
+          "answer": 0,
+          "hint": "List the even numbers and find two primes that add up to each.",
+          "solution": "122 = 13 + 109\n124 = 11 + 113\n126 = 13 + 113 (or 19 + 107)\n128 = 19 + 109 (or 31 + 97)\nEach even number between 120 and 130 is written as the sum of two prime numbers.",
+          "steps": [
+            {
+              "explain": "List all the even numbers strictly between 120 and 130.",
+              "work": "\\(122, 124, 126, 128\\)"
+            },
+            {
+              "explain": "Identify prime numbers close to this range that can be used as components.",
+              "work": "\\(\\text{Relevant primes}: 11, 13, 19, 109, 113\\)"
+            },
+            {
+              "explain": "Decompose each even number into a sum of two primes. Check every component IS actually prime — a common wrong-option trick uses \\(111=3\\times37\\) or \\(115=5\\times23\\), which are composite, not prime.",
+              "work": "\\(\\begin{aligned} 122 &= 13 + 109 \\\\ 124 &= 11 + 113 \\\\ 126 &= 13 + 113 \\\\ 128 &= 19 + 109 \\end{aligned}\\)"
+            },
+            {
+              "explain": "All components used (13, 109, 11, 113, 19) are verified prime numbers, confirming Goldbach's conjecture for these values.",
+              "work": "\\(\\text{All components are prime.} \\checkmark\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3a-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Explain why a square number has an odd number of factors, and a non-square number has an even number of factors. Which explanation is correct?",
+          "options": [
+            "Factors always pair up so that \\(a \\times b = N\\). For a non-square \\(N\\), every factor \\(a\\) has a distinct partner \\(b \\ne a\\), so factors come in complete pairs (an even total). For a square \\(N\\), the factor \\(s=\\sqrt{N}\\) pairs with itself, contributing only 1 factor instead of 2 — making the total odd.",
+            "Square numbers always have exactly 3 factors (1, the square root, and the number itself), which is why the count is odd.",
+            "Every number's factors come in pairs, and squares simply have one extra factor added on at the end for no particular reason — it's a coincidence that this makes the count odd.",
+            "Non-square numbers have an odd number of factors because their square roots are irrational, while square numbers have an even number of factors because their square roots are whole numbers."
+          ],
+          "answer": 0,
+          "hint": "Consider how factors are paired up.",
+          "solution": "Factors always occur in pairs that multiply to the number.\nFor a non-square number, each factor has a distinct partner, so the total count is even.\nFor a square number, the square root pairs with itself, which only contributes one distinct number, making the total count odd.",
+          "steps": [
+            {
+              "explain": "Factors can be listed in pairs that multiply to give the number \\(N\\).",
+              "work": "\\(\\text{If } a \\times b = N, \\text{ then } a \\text{ and } b \\text{ are a factor pair.}\\)"
+            },
+            {
+              "explain": "If \\(N\\) is not a square number, every factor \\(a\\) has a distinct partner \\(b \\neq a\\). This groups the factors into pairs of size 2.",
+              "work": "\\(\\text{Non-square: pairs are distinct} \\implies \\text{Total count} = 2k \\implies \\text{Even}\\)"
+            },
+            {
+              "explain": "If \\(N\\) is a square number, there exists a factor \\(s=\\sqrt{N}\\) such that \\(s \\times s = N\\). This factor pairs with itself.",
+              "work": "\\(\\text{Square: } s \\text{ pairs with itself} \\implies \\text{only 1 distinct factor from that pair}\\)"
+            },
+            {
+              "explain": "Since every other factor pair is still distinct, the self-paired square root makes the total number of distinct factors odd.",
+              "work": "\\(\\text{Total count} = 2m + 1 \\implies \\text{Odd}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-3b",
+      "code": "3B",
+      "title": "Indices and the index laws",
+      "questions": [
+        {
+          "id": "y8-ep1-q13",
+          "type": "mc",
+          "stem": "Evaluate \\(\\sqrt[3]{729}\\).",
+          "options": [
+            "\\(7\\)",
+            "\\(9\\)",
+            "\\(81\\)",
+            "\\(27\\)"
+          ],
+          "answer": 1,
+          "hint": "What number multiplied by itself 3 times equals 729?",
+          "steps": [
+            {
+              "explain": "We need to find a number \\(x\\) such that \\(x \\times x \\times x = 729\\)."
+            },
+            {
+              "explain": "We can try some numbers. We know \\(10 \\times 10 \\times 10 = 1000\\), so the answer must be a bit less than 10."
+            },
+            {
+              "explain": "Let's try \\(9\\).",
+              "work": "\\(9 \\times 9 = 81\\)<br>\\(81 \\times 9 = 729\\)"
+            },
+            {
+              "explain": "Therefore, \\(\\sqrt[3]{729} = 9\\)."
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q15",
+          "type": "mc",
+          "stem": "Simplify \\(a^5 \\times a^9\\).",
+          "options": [
+            "\\(a^4\\)",
+            "\\(a^{45}\\)",
+            "\\(2a^{14}\\)",
+            "\\(a^{14}\\)"
+          ],
+          "answer": 3,
+          "hint": "When multiplying terms with the same base, you add the powers.",
+          "steps": [
+            {
+              "explain": "Use the multiplication index law: \\(a^m \\times a^n = a^{m+n}\\)."
+            },
+            {
+              "explain": "Add the powers 5 and 9.",
+              "work": "\\(a^{5+9} = a^{14}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q16",
+          "type": "mc",
+          "stem": "Simplify \\((a^3)^2\\).",
+          "options": [
+            "\\(a\\)",
+            "\\(a^9\\)",
+            "\\(a^6\\)",
+            "\\(a^5\\)"
+          ],
+          "answer": 2,
+          "hint": "When raising a power to another power, you multiply the powers.",
+          "steps": [
+            {
+              "explain": "Use the power of a power index law: \\((a^m)^n = a^{m \\times n}\\)."
+            },
+            {
+              "explain": "Multiply the powers 3 and 2.",
+              "work": "\\(a^{3 \\times 2} = a^6\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-3e",
+      "code": "3E",
+      "title": "Prime factorisation and its applications",
+      "questions": [
+        {
+          "id": "y8-ep1-q14",
+          "type": "mc",
+          "stem": "Which of the following is the correct prime factorisation for \\(60\\)?",
+          "options": [
+            "\\(2^2 \\times 3 \\times 5\\)",
+            "\\(2^3 \\times 5\\)",
+            "\\(4 \\times 3 \\times 5\\)",
+            "\\(2 \\times 3 \\times 10\\)"
+          ],
+          "answer": 0,
+          "hint": "Create a factor tree for 60 and break it down until only prime numbers are left.",
+          "steps": [
+            {
+              "explain": "We can split 60 into two factors, for example, 6 and 10.",
+              "work": "\\(60 = 6 \\times 10\\)"
+            },
+            {
+              "explain": "Next, break down each of these factors.",
+              "work": "\\(6 = 2 \\times 3\\)<br>\\(10 = 2 \\times 5\\)"
+            },
+            {
+              "explain": "Now, list all the prime factors together.",
+              "work": "\\(60 = 2 \\times 2 \\times 3 \\times 5\\)"
+            },
+            {
+              "explain": "Write this in index notation.",
+              "work": "\\(2^2 \\times 3 \\times 5\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-3f",
+      "code": "3F",
+      "title": "Review of factors and indices",
+      "questions": [
+        {
+          "id": "y8-3f-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find all the factors of \\\\(18\\\\).",
+          "options": [
+            "\\\\(1, 2, 3, 4, 6, 9, 18\\\\)",
+            "\\\\(1, 2, 3, 6, 9, 18\\\\)",
+            "\\\\(2, 3, 6, 9\\\\)",
+            "\\\\(1, 2, 3, 6, 12, 18\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Factors are numbers that divide 18 exactly without remainder. Find them in pairs.",
+          "steps": [
+            {
+              "explain": "To find all factors, we test divisibility starting from 1. We list factors in multiplication pairs.",
+              "work": "\\\\(1 \\\\times 18 = 18\\\\)"
+            },
+            {
+              "explain": "Test 2 since 18 is even. Then test 3.",
+              "work": "\\\\(2 \\\\times 9 = 18, \\\\quad 3 \\\\times 6 = 18\\\\)"
+            },
+            {
+              "explain": "Test 4 and 5. Neither divides 18 exactly. The next integer is 6, which is already in our list, so we have found all pairs.",
+              "work": "\\\\(\\text{Pairs}: (1, 18), (2, 9), (3, 6)\\\\)"
+            },
+            {
+              "explain": "Combine and sort these values in ascending order to list all distinct factors of 18.",
+              "work": "\\\\(\\\\text{Factors} = \\{1, 2, 3, 6, 9, 18\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find all the factors of \\\\(19\\\\).",
+          "options": [
+            "\\\\(1, 3, 9, 19\\\\)",
+            "\\\\(1, 2, 19\\\\)",
+            "\\\\(1, 19\\\\)",
+            "\\\\(19\\\\) only"
+          ],
+          "answer": 2,
+          "hint": "Is 19 a prime number?",
+          "steps": [
+            {
+              "explain": "We check integers starting from 1 to see if they divide 19 exactly.",
+              "work": "\\\\(1 \\\\times 19 = 19\\\\)"
+            },
+            {
+              "explain": "We test divisibility by prime numbers up to the square root of 19 (which is approximately 4.36). None of 2, 3, or 4 divide 19 exactly.",
+              "work": "\\\\(19 \\\\div 2 = 9.5, \\\\quad 19 \\\\div 3 = 6.33\\\\)"
+            },
+            {
+              "explain": "Since 19 has no positive divisors other than 1 and itself, it is a prime number.",
+              "work": "\\\\(\\\\text{Factors of } 19 = \\{1, 19\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find all the factors of \\\\(140\\\\).",
+          "options": [
+            "\\\\(1, 2, 4, 5, 7, 10, 14, 20, 28, 35, 70, 140\\\\)",
+            "\\\\(1, 2, 4, 5, 7, 10, 14, 20, 35, 70, 140\\\\)",
+            "\\\\(1, 2, 5, 7, 10, 14, 20, 28, 35, 70, 140\\\\)",
+            "\\\\(1, 2, 4, 5, 7, 10, 12, 14, 20, 28, 70, 140\\\\)"
+          ],
+          "answer": 0,
+          "hint": "List all divisibility pairs starting from 1.",
+          "steps": [
+            {
+              "explain": "Find all factor pairs starting from 1.",
+              "work": "\\\\(1 \\\\times 140 = 140, \\\\quad 2 \\\\times 70 = 140\\\\)"
+            },
+            {
+              "explain": "Check divisibility by 3 (fails), 4, 5, and 7.",
+              "work": "\\\\(4 \\\\times 35 = 140, \\\\quad 5 \\\\times 28 = 140, \\\\quad 7 \\\\times 20 = 140\\\\)"
+            },
+            {
+              "explain": "Check divisibility by 8, 9 (fail), and 10.",
+              "work": "\\\\(10 \\\\times 14 = 140\\\\)"
+            },
+            {
+              "explain": "No other integers between 10 and 14 divide 140. Combine all pairs in order.",
+              "work": "\\\\(\\\\text{Factors} = \\{1, 2, 4, 5, 7, 10, 14, 20, 28, 35, 70, 140\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find all the factors of \\\\(105\\\\).",
+          "options": [
+            "\\\\(1, 3, 5, 7, 12, 15, 21, 35, 105\\\\)",
+            "\\\\(1, 3, 5, 7, 15, 21, 35, 105\\\\)",
+            "\\\\(3, 5, 7, 15, 21, 35\\\\)",
+            "\\\\(1, 3, 5, 15, 21, 35, 105\\\\)"
+          ],
+          "answer": 1,
+          "hint": "List factor pairs. Since it is odd, skip even numbers.",
+          "steps": [
+            {
+              "explain": "Find factor pairs beginning with 1. Since 105 is odd, skip even integers.",
+              "work": "\\\\(1 \\\\times 105 = 105, \\\\quad 3 \\\\times 35 = 105\\\\)"
+            },
+            {
+              "explain": "Check divisibility by 5 and 7.",
+              "work": "\\\\(5 \\\\times 21 = 105, \\\\quad 7 \\\\times 15 = 105\\\\)"
+            },
+            {
+              "explain": "No integers between 7 and 15 other than these divide 105 exactly. List all factors.",
+              "work": "\\\\(\\\\text{Factors} = \\{1, 3, 5, 7, 15, 21, 35, 105\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find all the factors of \\\\(46\\\\).",
+          "options": [
+            "\\\\(1, 2, 23, 46\\\\)",
+            "\\\\(1, 2, 4, 23, 46\\\\)",
+            "\\\\(1, 2, 13, 23, 46\\\\)",
+            "\\\\(2, 23\\\\)"
+          ],
+          "answer": 0,
+          "hint": "List divisibility pairs starting from 1.",
+          "steps": [
+            {
+              "explain": "Begin with 1 and 46.",
+              "work": "\\\\(1 \\\\times 46 = 46\\\\)"
+            },
+            {
+              "explain": "Since 46 is even, divide by 2.",
+              "work": "\\\\(2 \\\\times 23 = 46\\\\)"
+            },
+            {
+              "explain": "23 is a prime number, so there are no other integer factors between 2 and 23.",
+              "work": "\\\\(\\\\text{Factors} = \\{1, 2, 23, 46\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find all the factors of \\\\(100\\\\).",
+          "options": [
+            "\\\\(1, 2, 4, 5, 10, 20, 50, 100\\\\)",
+            "\\\\(1, 2, 4, 5, 10, 20, 25, 50, 100\\\\)",
+            "\\\\(1, 2, 5, 10, 20, 25, 50, 100\\\\)",
+            "\\\\(1, 2, 4, 5, 8, 10, 20, 25, 50, 100\\\\)"
+          ],
+          "answer": 1,
+          "hint": "List all factor pairs. 100 is a square number.",
+          "steps": [
+            {
+              "explain": "List factor pairs starting from 1.",
+              "work": "\\\\(1 \\\\times 100 = 100, \\\\quad 2 \\\\times 50 = 100\\\\)"
+            },
+            {
+              "explain": "Check 4 and 5.",
+              "work": "\\\\(4 \\\\times 25 = 100, \\\\quad 5 \\\\times 20 = 100\\\\)"
+            },
+            {
+              "explain": "Since 100 is a perfect square, 10 pairs with itself.",
+              "work": "\\\\(10 \\\\times 10 = 100\\\\)"
+            },
+            {
+              "explain": "Combine all distinct factors in order.",
+              "work": "\\\\(\\\\text{Factors} = \\{1, 2, 4, 5, 10, 20, 25, 50, 100\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following lists all the prime numbers between \\\\(60\\\\) and \\\\(100\\\\)?",
+          "options": [
+            "\\\\(61, 67, 71, 73, 79, 83, 89, 91, 97\\\\)",
+            "\\\\(61, 67, 71, 73, 79, 83, 87, 89, 97\\\\)",
+            "\\\\(61, 67, 71, 73, 79, 83, 89, 97\\\\)",
+            "\\\\(61, 67, 71, 73, 77, 79, 83, 89, 97\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Primes have no divisors other than 1 and themselves. Check odd numbers in this range.",
+          "steps": [
+            {
+              "explain": "We test odd numbers in the range 60 to 100, as even numbers greater than 2 are not prime.",
+              "work": "\\\\(\\text{Check: } 61, 63, 65, \\\\ldots, 99\\\\)"
+            },
+            {
+              "explain": "Eliminate numbers ending in 5 (multiples of 5) and numbers whose digits sum to a multiple of 3.",
+              "work": "\\\\(63, 69, 75, 81, 87, 93, 99 \\text{ are multiples of 3. } 65, 85, 95 \\text{ end in 5.}\\\\)"
+            },
+            {
+              "explain": "Eliminate multiples of 7 (e.g. 77, 91). Note: \\\\(91 = 7 \\\\times 13\\\\).",
+              "work": "\\\\(77 = 7 \\\\times 11, \\\\quad 91 = 7 \\\\times 13\\\\)"
+            },
+            {
+              "explain": "The remaining numbers have no small prime factors and are prime.",
+              "work": "\\\\(\\\\text{Primes} = \\{61, 67, 71, 73, 79, 83, 89, 97\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the lowest common multiple (LCM) of \\\\(4\\\\) and \\\\(28\\\\).",
+          "options": [
+            "\\\\(4\\\\)",
+            "\\\\(28\\\\)",
+            "\\\\(56\\\\)",
+            "\\\\(112\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Does 4 divide into 28 exactly?",
+          "steps": [
+            {
+              "explain": "Since 28 is a multiple of 4, the lowest multiple they share is 28 itself.",
+              "work": "\\\\(28 = 4 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "When the larger number is divisible by the smaller, the LCM is the larger number.",
+              "work": "\\\\(\\\\text{LCM}(4, 28) = 28\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the lowest common multiple (LCM) of \\\\(12\\\\) and \\\\(30\\\\).",
+          "options": [
+            "\\\\(60\\\\)",
+            "\\\\(120\\\\)",
+            "\\\\(30\\\\)",
+            "\\\\(360\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the prime factorisations of both numbers.",
+          "steps": [
+            {
+              "explain": "Prime factorise both numbers.",
+              "work": "\\\\(12 = 2^2 \\\\times 3, \\\\quad 30 = 2 \\\\times 3 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "To find the LCM, take the highest power of each prime factor present in either number.",
+              "work": "\\\\(\\text{Highest powers}: 2^2, 3^1, 5^1\\\\)"
+            },
+            {
+              "explain": "Multiply these powers together.",
+              "work": "\\\\(\\text{LCM} = 4 \\\\times 3 \\\\times 5 = 60\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the lowest common multiple (LCM) of \\\\(140\\\\) and \\\\(55\\\\).",
+          "options": [
+            "\\\\(7700\\\\)",
+            "\\\\(1540\\\\)",
+            "\\\\(385\\\\)",
+            "\\\\(3080\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the prime factorisation of 140 and 55.",
+          "steps": [
+            {
+              "explain": "Find prime factorisations.",
+              "work": "\\\\(140 = 2^2 \\\\times 5 \\\\times 7, \\\\quad 55 = 5 \\\\times 11\\\\)"
+            },
+            {
+              "explain": "Identify the highest powers of all prime factors present: \\\\(2^2, 5^1, 7^1, 11^1\\\\).",
+              "work": "\\\\(\\text{LCM} = 2^2 \\\\times 5 \\\\times 7 \\\\times 11\\\\)"
+            },
+            {
+              "explain": "Calculate the product.",
+              "work": "\\\\(\\text{LCM} = 20 \\\\times 77 = 1540\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the lowest common multiple (LCM) of \\\\(15\\\\), \\\\(20\\\\) and \\\\(50\\\\).",
+          "options": [
+            "\\\\(3000\\\\)",
+            "\\\\(150\\\\)",
+            "\\\\(300\\\\)",
+            "\\\\(600\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Find prime factorisations and take the highest power of each prime.",
+          "steps": [
+            {
+              "explain": "Prime factorise all three numbers.",
+              "work": "\\\\(15 = 3 \\\\times 5, \\\\quad 20 = 2^2 \\\\times 5, \\\\quad 50 = 2 \\\\times 5^2\\\\)"
+            },
+            {
+              "explain": "Take the highest power of each prime factor present: \\\\(2^2, 3^1, 5^2\\\\).",
+              "work": "\\\\(\\text{LCM} = 2^2 \\\\times 3 \\\\times 5^2\\\\)"
+            },
+            {
+              "explain": "Compute the final product.",
+              "work": "\\\\(\\text{LCM} = 4 \\\\times 3 \\\\times 25 = 12 \\\\times 25 = 300\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the highest common factor (HCF) of \\\\(13\\\\) and \\\\(20\\\\).",
+          "options": [
+            "\\\\(1\\\\)",
+            "\\\\(13\\\\)",
+            "\\\\(2\\\\)",
+            "\\\\(260\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Is 13 a prime number?",
+          "steps": [
+            {
+              "explain": "13 is a prime number. Its only factors are 1 and 13.",
+              "work": "\\\\(\\text{Factors of } 13 = \\{1, 13\\}\\\\)"
+            },
+            {
+              "explain": "13 does not divide 20 exactly, so 13 is not a factor of 20.",
+              "work": "\\\\(20 = 13 \\\\times 1 + 7\\\\)"
+            },
+            {
+              "explain": "Therefore, the only common factor they share is 1.",
+              "work": "\\\\(\\\\text{HCF}(13, 20) = 1\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the highest common factor (HCF) of \\\\(84\\\\) and \\\\(35\\\\).",
+          "options": [
+            "\\\\(7\\\\)",
+            "\\\\(14\\\\)",
+            "\\\\(5\\\\)",
+            "\\\\(420\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Prime factorise both numbers.",
+          "steps": [
+            {
+              "explain": "Prime factorise 84 and 35.",
+              "work": "\\\\(84 = 2^2 \\\\times 3 \\\\times 7, \\\\quad 35 = 5 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "Identify shared prime factors. The only shared prime is 7 (power 1).",
+              "work": "\\\\(\\\\text{HCF} = 7\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the highest common factor (HCF) of \\\\(120\\\\) and \\\\(36\\\\).",
+          "options": [
+            "\\\\(6\\\\)",
+            "\\\\(12\\\\)",
+            "\\\\(18\\\\)",
+            "\\\\(360\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Prime factorise both and take the lowest power of shared primes.",
+          "steps": [
+            {
+              "explain": "Prime factorise 120 and 36.",
+              "work": "\\\\(120 = 2^3 \\\\times 3 \\\\times 5, \\\\quad 36 = 2^2 \\\\times 3^2\\\\)"
+            },
+            {
+              "explain": "Take the lowest power of each shared prime factor: \\\\(2^2\\\\) and \\\\(3^1\\\\).",
+              "work": "\\\\(\\\\text{HCF} = 2^2 \\\\times 3 = 12\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the highest common factor (HCF) of \\\\(420\\\\), \\\\(280\\\\) and \\\\(700\\\\).",
+          "options": [
+            "\\\\(70\\\\)",
+            "\\\\(140\\\\)",
+            "\\\\(280\\\\)",
+            "\\\\(10\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Prime factorise all three and find shared primes with lowest powers.",
+          "steps": [
+            {
+              "explain": "Prime factorise all three numbers.",
+              "work": "\\\\(\\begin{aligned} 420 &= 2^2 \\\\times 3 \\\\times 5 \\\\times 7 \\\\ 280 &= 2^3 \\\\times 5 \\\\times 7 \\\\ 700 &= 2^2 \\\\times 5^2 \\\\times 7 \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Identify shared prime factors present in all three: 2, 5, and 7. Take their lowest powers: \\\\(2^2, 5^1, 7^1\\\\).",
+              "work": "\\\\(\\text{HCF} = 2^2 \\\\times 5 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "Multiply to find the final HCF.",
+              "work": "\\\\(\\text{HCF} = 4 \\\\times 5 \\\\times 7 = 140\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q5a1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the numbers \\\\(18\\\\) and \\\\(42\\\\), find the product of their HCF and LCM.",
+          "options": [
+            "\\\\(378\\\\)",
+            "\\\\(756\\\\)",
+            "\\\\(252\\\\)",
+            "\\\\(180\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Calculate HCF and LCM first, then multiply them.",
+          "steps": [
+            {
+              "explain": "First, find the prime factorisations.",
+              "work": "\\\\(18 = 2 \\\\times 3^2, \\\\quad 42 = 2 \\\\times 3 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "Find HCF (lowest powers of shared primes) and LCM (highest powers of all primes).",
+              "work": "\\\\(\\text{HCF} = 2 \\\\times 3 = 6, \\\\quad \\text{LCM} = 2 \\\\times 3^2 \\\\times 7 = 126\\\\)"
+            },
+            {
+              "explain": "Multiply HCF and LCM.",
+              "work": "\\\\(\\text{Product} = 6 \\\\times 126 = 756\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q5a2",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "For the numbers $18$ and $42$, compare the product of their HCF and LCM to the product of the original pair. What do you notice?",
+          "answer": "",
+          "hint": "Calculate the product of the original pair.",
+          "solution": "The product of the HCF and LCM of 18 and 42 is equal to the product of the original numbers (18 × 42 = 756).",
+          "steps": [
+            {
+              "explain": "Calculate the product of the HCF and LCM from the previous step.",
+              "work": "\\\\(\\text{HCF} \\\\times \\text{LCM} = 6 \\\\times 126 = 756\\\\)"
+            },
+            {
+              "explain": "Calculate the product of the original numbers.",
+              "work": "\\\\(\\text{Product} = 18 \\\\times 42 = 756\\\\)"
+            },
+            {
+              "explain": "Compare the two results to conclude they are equal.",
+              "work": "\\\\(756 = 756 \\\\quad \\\\checkmark\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q5b1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the numbers \\\\(60\\\\) and \\\\(48\\\\), find the product of their HCF and LCM.",
+          "options": [
+            "\\\\(2880\\\\)",
+            "\\\\(1440\\\\)",
+            "\\\\(5760\\\\)",
+            "\\\\(120\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Recall that HCF(a,b) × LCM(a,b) = a × b.",
+          "steps": [
+            {
+              "explain": "Use the mathematical identity: for any two positive integers \\\\(a\\\\) and \\\\(b\\\\), the product of their HCF and LCM equals their product.",
+              "work": "\\\\(\\text{HCF}(a, b) \\\\times \\text{LCM}(a, b) = a \\\\times b\\\\)"
+            },
+            {
+              "explain": "Substitute the given numbers: \\\\(a = 60\\\\) and \\\\(b = 48\\\\).",
+              "work": "\\\\(\\text{Product} = 60 \\\\times 48\\\\)"
+            },
+            {
+              "explain": "Calculate the multiplication.",
+              "work": "\\\\(\\text{Product} = 2880\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q5b2",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "For the numbers $60$ and $48$, compare the product of their HCF and LCM to the product of the original pair. What do you notice?",
+          "answer": "",
+          "hint": "Calculate the product of the original pair.",
+          "solution": "The product of the HCF and LCM of 60 and 48 is equal to the product of the original numbers (60 × 48 = 2880).",
+          "steps": [
+            {
+              "explain": "Calculate the product of the HCF and LCM from the previous step.",
+              "work": "\\\\(\\text{HCF} \\\\times \\text{LCM} = 12 \\\\times 240 = 2880\\\\)"
+            },
+            {
+              "explain": "Calculate the product of the original numbers.",
+              "work": "\\\\(\\text{Product} = 60 \\\\times 48 = 2880\\\\)"
+            },
+            {
+              "explain": "Compare the two results to conclude they are equal.",
+              "work": "\\\\(2880 = 2880 \\\\quad \\\\checkmark\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\\\(x\\\\) that makes the statement true: \\\\(3^7 \\\\div 3^3 = 3^x\\\\)",
+          "options": [
+            "\\\\(10\\\\)",
+            "\\\\(21\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(5\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract the indices when dividing powers with the same base.",
+          "steps": [
+            {
+              "explain": "Use the index law for division: \\\\(a^m \\\\div a^n = a^{m-n}\\\\).",
+              "work": "\\\\(3^7 \\\\div 3^3 = 3^{7-3}\\\\)"
+            },
+            {
+              "explain": "Subtract the exponents.",
+              "work": "\\\\(3^{7-3} = 3^4\\\\)"
+            },
+            {
+              "explain": "Equate the exponents to find \\\\(x\\\\).",
+              "work": "\\\\(x = 4\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\\\(x\\\\) that makes the statement true: \\\\(7^4 \\\\times 7^2 = 7^x\\\\)",
+          "options": [
+            "\\\\(8\\\\)",
+            "\\\\(6\\\\)",
+            "\\\\(2\\\\)",
+            "\\\\(14\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Add the indices when multiplying powers with the same base.",
+          "steps": [
+            {
+              "explain": "Use the index law for multiplication: \\\\(a^m \\\\times a^n = a^{m+n}\\\\).",
+              "work": "\\\\(7^4 \\\\times 7^2 = 7^{4+2}\\\\)"
+            },
+            {
+              "explain": "Add the exponents.",
+              "work": "\\\\(7^{4+2} = 7^6\\\\)"
+            },
+            {
+              "explain": "Equate exponents.",
+              "work": "\\\\(x = 6\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\\\(x\\\\) that makes the statement true: \\\\(9^2 \\\\times 9^3 = 3^x\\\\)",
+          "options": [
+            "\\\\(5\\\\)",
+            "\\\\(6\\\\)",
+            "\\\\(10\\\\)",
+            "\\\\(12\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert the base 9 to base 3 first.",
+          "steps": [
+            {
+              "explain": "First, combine the terms using multiplication law.",
+              "work": "\\\\(9^2 \\\\times 9^3 = 9^{2+3} = 9^5\\\\)"
+            },
+            {
+              "explain": "Express 9 as a power of 3: \\\\(9 = 3^2\\\\).",
+              "work": "\\\\(9^5 = (3^2)^5\\\\)"
+            },
+            {
+              "explain": "Use the power of a power law: \\\\((a^m)^n = a^{m \\\\times n}\\\\).",
+              "work": "\\\\((3^2)^5 = 3^{2 \\\\times 5} = 3^{10}\\\\)"
+            },
+            {
+              "explain": "Equate exponents.",
+              "work": "\\\\(x = 10\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\\\(x\\\\) that makes the statement true: \\\\(10^5 \\\\div 2^5 = x^5\\\\)",
+          "options": [
+            "\\\\(5\\\\)",
+            "\\\\(8\\\\)",
+            "\\\\(20\\\\)",
+            "\\\\(12\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Use index law for division with different bases but the same exponent.",
+          "steps": [
+            {
+              "explain": "Apply the power division law: \\\\(a^m \\\\div b^m = (a \\\\div b)^m\\\\).",
+              "work": "\\\\(10^5 \\\\div 2^5 = (10 \\\\div 2)^5\\\\)"
+            },
+            {
+              "explain": "Simplify the base division.",
+              "work": "\\\\((10 \\\\div 2)^5 = 5^5\\\\)"
+            },
+            {
+              "explain": "Equate bases.",
+              "work": "\\\\(x = 5\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q6e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\\\(x\\\\) that makes the statement true: \\\\((2^3)^2 = x\\\\)",
+          "options": [
+            "\\\\(32\\\\)",
+            "\\\\(64\\\\)",
+            "\\\\(16\\\\)",
+            "\\\\(12\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Calculate the value inside the bracket first or apply index law.",
+          "steps": [
+            {
+              "explain": "Apply power of a power law.",
+              "work": "\\\\((2^3)^2 = 2^{3 \\\\times 2} = 2^6\\\\)"
+            },
+            {
+              "explain": "Calculate the value of \\\\(2^6\\\\).",
+              "work": "\\\\(2^6 = 64\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q6f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\\\(x\\\\) that makes the statement true: \\\\(x^4 \\\\div 8^4 = 1\\\\)",
+          "options": [
+            "\\\\(1\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(8\\\\)",
+            "\\\\(16\\\\)"
+          ],
+          "answer": 2,
+          "hint": "If division of two non-zero numbers equals 1, they must be equal.",
+          "steps": [
+            {
+              "explain": "A number divided by itself equals 1 (for non-zero numbers).",
+              "work": "\\\\(\\text{If } \\frac{A}{B} = 1 \\implies A = B\\\\)"
+            },
+            {
+              "explain": "Apply this to the terms.",
+              "work": "\\\\(x^4 = 8^4\\\\)"
+            },
+            {
+              "explain": "Since the exponents are equal, the positive base must be equal.",
+              "work": "\\\\(x = 8\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q6g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\\\(x\\\\) that makes the statement true: \\\\(2^4 \\\\times 2^x = 64\\\\)",
+          "options": [
+            "\\\\(4\\\\)",
+            "\\\\(2\\\\)",
+            "\\\\(3\\\\)",
+            "\\\\(6\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Express 64 as a power of 2.",
+          "steps": [
+            {
+              "explain": "Express 64 as a power of 2.",
+              "work": "\\\\(64 = 2^6\\\\)"
+            },
+            {
+              "explain": "Use multiplication law on LHS.",
+              "work": "\\\\(2^{4+x} = 2^6\\\\)"
+            },
+            {
+              "explain": "Equate exponents and solve.",
+              "work": "\\\\(4 + x = 6 \\implies x = 2\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q6h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\\\(x\\\\) that makes the statement true: \\\\((4^x)^3 = 4^{15}\\\\)",
+          "options": [
+            "\\\\(5\\\\)",
+            "\\\\(12\\\\)",
+            "\\\\(3\\\\)",
+            "\\\\(4\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply the power of a power law.",
+          "steps": [
+            {
+              "explain": "Apply power law on LHS.",
+              "work": "\\\\(4^{3x} = 4^{15}\\\\)"
+            },
+            {
+              "explain": "Equate exponents.",
+              "work": "\\\\(3x = 15\\\\)"
+            },
+            {
+              "explain": "Divide by 3.",
+              "work": "\\\\(x = 5\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q6i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the value of \\\\(x\\\\) that makes the statement true: \\\\((5^{12} \\\\div 5^8)^x = 5^{20}\\\\)",
+          "options": [
+            "\\\\(4\\\\)",
+            "\\\\(2\\\\)",
+            "\\\\(5\\\\)",
+            "\\\\(10\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Simplify inside brackets first.",
+          "steps": [
+            {
+              "explain": "Apply division index law inside the brackets.",
+              "work": "\\\\(5^{12} \\\\div 5^8 = 5^{12-8} = 5^4\\\\)"
+            },
+            {
+              "explain": "Substitute back into the equation.",
+              "work": "\\\\((5^4)^x = 5^{20}\\\\)"
+            },
+            {
+              "explain": "Apply power law.",
+              "work": "\\\\(5^{4x} = 5^{20}\\\\)"
+            },
+            {
+              "explain": "Equate exponents and solve.",
+              "work": "\\\\(4x = 20 \\implies x = 5\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\\\(7^2\\\\)",
+          "options": [
+            "\\\\(14\\\\)",
+            "\\\\(49\\\\)",
+            "\\\\(35\\\\)",
+            "\\\\(9\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 7 by itself.",
+          "steps": [
+            {
+              "explain": "Exponent 2 means multiplying the base by itself.",
+              "work": "\\\\(7^2 = 7 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "Perform the multiplication.",
+              "work": "\\\\(7 \\\\times 7 = 49\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\\\(\\\\sqrt{144}\\\\)",
+          "options": [
+            "\\\\(12\\\\)",
+            "\\\\(14\\\\)",
+            "\\\\(72\\\\)",
+            "\\\\(16\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Which positive number multiplied by itself is 144?",
+          "steps": [
+            {
+              "explain": "The square root operation finds a non-negative number which, when squared, yields 144.",
+              "work": "\\\\(x^2 = 144\\\\)"
+            },
+            {
+              "explain": "Since 12 × 12 = 144:",
+              "work": "\\\\(\\\\sqrt{144} = 12\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\\\(\\\\sqrt{83^2}\\\\)",
+          "options": [
+            "\\\\(166\\\\)",
+            "\\\\(83\\\\)",
+            "\\\\(6889\\\\)",
+            "\\\\(9\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Squaring and taking the square root are inverse operations.",
+          "steps": [
+            {
+              "explain": "For any positive number \\\\(a\\\\), taking the square root of \\\\(a^2\\\\) simply yields \\\\(a\\\\). They undo each other.",
+              "work": "\\\\(\\\\sqrt{a^2} = a\\\\)"
+            },
+            {
+              "explain": "Substitute \\\\(a = 83\\\\).",
+              "work": "\\\\(\\\\sqrt{83^2} = 83\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\\\(\\\\sqrt{3^6}\\\\)",
+          "options": [
+            "\\\\(9\\\\)",
+            "\\\\(27\\\\)",
+            "\\\\(81\\\\)",
+            "\\\\(243\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Express the square root as exponent 1/2, or write 3^6 as a square.",
+          "steps": [
+            {
+              "explain": "Express \\\\(3^6\\\\) as a square: \\\\(3^6 = (3^3)^2\\\\).",
+              "work": "\\\\(3^6 = 27^2\\\\)"
+            },
+            {
+              "explain": "Take the square root.",
+              "work": "\\\\(\\\\sqrt{27^2} = 27\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q7e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\\\((5^2)^2\\\\)",
+          "options": [
+            "\\\\(125\\\\)",
+            "\\\\(625\\\\)",
+            "\\\\(25\\\\)",
+            "\\\\(3125\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Calculate inside brackets first, or apply index law.",
+          "steps": [
+            {
+              "explain": "Evaluate the bracket first.",
+              "work": "\\\\(5^2 = 25\\\\)"
+            },
+            {
+              "explain": "Square the result.",
+              "work": "\\\\(25^2 = 25 \\\\times 25 = 625\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q7f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\\\(\\\\sqrt{3481}\\\\)",
+          "options": [
+            "\\\\(49\\\\)",
+            "\\\\(51\\\\)",
+            "\\\\(59\\\\)",
+            "\\\\(69\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Estimate using known squares: 50^2 = 2500, 60^2 = 3600. It ends in 1.",
+          "steps": [
+            {
+              "explain": "Observe that 3481 is between \\\\(2500 = 50^2\\\\) and \\\\(3600 = 60^2\\\\). Thus, its square root must be between 50 and 60.",
+              "work": "\\\\(50^2 < 3481 < 60^2\\\\)"
+            },
+            {
+              "explain": "The number ends in 1, so the square root must end in either 1 or 9.",
+              "work": "\\\\(\\text{Candidates}: 51 \\text{ or } 59\\\\)"
+            },
+            {
+              "explain": "Test 59.",
+              "work": "\\\\(59 \\\\times 59 = 3481 \\\\quad \\\\checkmark\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q7g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\\\(20^3\\\\)",
+          "options": [
+            "\\\\(6000\\\\)",
+            "\\\\(8000\\\\)",
+            "\\\\(400\\\\)",
+            "\\\\(800\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Calculate 20 × 20 × 20.",
+          "steps": [
+            {
+              "explain": "Cubing means multiplying a base by itself twice.",
+              "work": "\\\\(20^3 = 20 \\\\times 20 \\\\times 20\\\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\\\(20 \\\\times 20 = 400, \\\\quad 400 \\\\times 20 = 8000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q8a1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find all possible values of the missing digit \\\\(x\\\\) so that the number \\\\(34,82x\\\\) is divisible by \\\\(3\\\\).",
+          "options": [
+            "\\\\(1, 4, 7\\\\)",
+            "\\\\(0, 3, 6, 9\\\\)",
+            "\\\\(2, 5, 8\\\\)",
+            "\\\\(3, 6, 9\\\\)"
+          ],
+          "answer": 0,
+          "hint": "A number is divisible by 3 if the sum of its digits is divisible by 3.",
+          "steps": [
+            {
+              "explain": "A number is divisible by 3 if and only if the sum of its digits is divisible by 3.",
+              "work": "\\\\(\\text{Sum} = 3 + 4 + 8 + 2 + x = 17 + x\\\\)"
+            },
+            {
+              "explain": "Find single digits \\\\(x\\\\) from 0 to 9 such that \\\\(17 + x\\\\) is a multiple of 3 (18, 21, 24).",
+              "work": "\\\\(\\begin{aligned} 17 + x &= 18 \\implies x = 1 \\\\ 17 + x &= 21 \\implies x = 4 \\\\ 17 + x &= 24 \\implies x = 7 \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "List all solutions.",
+              "work": "\\\\(x \\\\in \\\\{1, 4, 7\\\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q8a2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find all possible values of the missing digit \\\\(x\\\\) so that the number \\\\(288x5\\\\) is divisible by \\\\(3\\\\).",
+          "options": [
+            "\\\\(2, 5, 8\\\\)",
+            "\\\\(1, 4, 7\\\\)",
+            "\\\\(0, 3, 6, 9\\\\)",
+            "\\\\(3, 6, 9\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Calculate the sum of the digits and check divisibility by 3.",
+          "steps": [
+            {
+              "explain": "Calculate sum of digits.",
+              "work": "\\\\(\\text{Sum} = 2 + 8 + 8 + x + 5 = 23 + x\\\\)"
+            },
+            {
+              "explain": "We need \\\\(23 + x\\\\) to be divisible by 3. The multiples of 3 larger than 23 are 24, 27, and 30.",
+              "work": "\\\\(\\begin{aligned} 23 + x &= 24 \\implies x = 1 \\\\ 23 + x &= 27 \\implies x = 4 \\\\ 23 + x &= 30 \\implies x = 7 \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "List all solutions.",
+              "work": "\\\\(x \\\\in \\\\{1, 4, 7\\\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q8a3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find all possible values of the missing digit \\\\(x\\\\) (which cannot be 0) so that the number \\\\(x47\\\\) is divisible by \\\\(3\\\\).",
+          "options": [
+            "\\\\(1, 4, 7\\\\)",
+            "\\\\(2, 5, 8\\\\)",
+            "\\\\(0, 3, 6, 9\\\\)",
+            "\\\\(3, 6, 9\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate digit sum. Note that x is the first digit, so x cannot be 0.",
+          "steps": [
+            {
+              "explain": "Digit sum of \\\\(x47\\\\) is:",
+              "work": "\\\\(\\text{Sum} = x + 4 + 7 = x + 11\\\\)"
+            },
+            {
+              "explain": "We need \\\\(x + 11\\\\) to be a multiple of 3 (12, 15, 18).",
+              "work": "\\\\(\\begin{aligned} x + 11 &= 12 \\implies x = 1 \\\\ x + 11 &= 15 \\implies x = 4 \\\\ x + 11 &= 18 \\implies x = 7 \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "List solutions.",
+              "work": "\\\\(x \\\\in \\\\{1, 4, 7\\\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q8b1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find all possible values of the missing digit \\\\(x\\\\) so that the number \\\\(84,73x\\\\) is divisible by \\\\(6\\\\).",
+          "options": [
+            "\\\\(2, 8\\\\)",
+            "\\·(2, 5, 8\\\\)",
+            "\\\\(0, 6\\\\)",
+            "\\\\(4, 6\\\\)"
+          ],
+          "answer": 0,
+          "hint": "A number is divisible by 6 if it is even AND the sum of its digits is divisible by 3.",
+          "steps": [
+            {
+              "explain": "Divisibility by 6 requires the number to be divisible by both 2 and 3. For divisibility by 2, \\\\(x\\\\) must be even.",
+              "work": "\\\\(x \\\\in \\\\{0, 2, 4, 6, 8\\\\}\\\\)"
+            },
+            {
+              "explain": "For divisibility by 3, digit sum must be divisible by 3.",
+              "work": "\\\\(\\text{Sum} = 8+4+7+3+x = 22 + x\\\\)"
+            },
+            {
+              "explain": "Test only even candidates: 22+0=22 (no), 22+2=24 (yes), 22+4=26 (no), 22+6=28 (no), 22+8=30 (yes).",
+              "work": "\\\\(x = 2 \\text{ or } 8\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q8b2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find all possible values of the missing digit \\\\(x\\\\) so that the number \\\\(2x04\\\\) is divisible by \\\\(6\\\\).",
+          "options": [
+            "\\\\(1, 4, 7\\\\)",
+            "\\\\(0, 3, 6, 9\\\\)",
+            "\\\\(2, 5, 8\\\\)",
+            "\\\\(0, 6\\\\)"
+          ],
+          "answer": 1,
+          "hint": "The number ends in 4, so it is even. Check digit sum divisibility by 3.",
+          "steps": [
+            {
+              "explain": "The number ends in 4, so it is even (divisible by 2). We only need to ensure divisibility by 3.",
+              "work": "\\\\(\\text{Ends in } 4 \\implies \\text{even}\\\\)"
+            },
+            {
+              "explain": "Digit sum must be divisible by 3.",
+              "work": "\\\\(\\text{Sum} = 2 + x + 0 + 4 = 6 + x\\\\)"
+            },
+            {
+              "explain": "For \\\\(6+x\\\\) to be a multiple of 3, \\\\(x\\\\) must be a multiple of 3.",
+              "work": "\\\\(x \\\\in \\\\{0, 3, 6, 9\\\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q8b3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find all possible values of the missing digit \\\\(x\\\\) so that the number \\\\(333x\\\\) is divisible by \\\\(6\\\\).",
+          "options": [
+            "\\\\(0, 6\\\\)",
+            "\\\\(2, 8\\\\)",
+            "\\\\(0, 3, 6, 9\\\\)",
+            "\\\\(4, 6\\\\)"
+          ],
+          "answer": 0,
+          "hint": "x must be even. Check digit sum.",
+          "steps": [
+            {
+              "explain": "For divisibility by 6, \\\\(x\\\\) must be an even digit.",
+              "work": "\\\\(x \\\\in \\\\{0, 2, 4, 6, 8\\\\}\\\\)"
+            },
+            {
+              "explain": "Digit sum must be a multiple of 3.",
+              "work": "\\\\(\\text{Sum} = 3 + 3 + 3 + x = 9 + x\\\\)"
+            },
+            {
+              "explain": "Test even digits: 9+0=9 (yes), 9+2=11 (no), 9+4=13 (no), 9+6=15 (yes), 9+8=17 (no).",
+              "work": "\\\\(x = 0 \\text{ or } 6\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q8c1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the missing digit \\\\(x\\\\) so that the number \\\\(20x0\\\\) is divisible by \\\\(3, 4\\\\) and \\\\(5\\\\).",
+          "options": [
+            "\\\\(2\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(6\\\\)",
+            "\\\\(8\\\\)"
+          ],
+          "answer": 1,
+          "hint": "LCM of 3, 4 and 5 is 60. Ends in 0, so it is divisible by 5. For 4, the last two digits (x0) must be a multiple of 4.",
+          "steps": [
+            {
+              "explain": "Divisibility by 5 is guaranteed since the last digit is 0. For divisibility by 4, the last two digits \\\\(x0\\\\) must be divisible by 4.",
+              "work": "\\\\(x0 \\in \\{00, 20, 40, 60, 80\\} \\implies x \\in \\{0, 2, 4, 6, 8\\}\\\\)"
+            },
+            {
+              "explain": "For divisibility by 3, digit sum must be divisible by 3.",
+              "work": "\\\\(\\text{Sum} = 2 + 0 + x + 0 = 2 + x\\\\)"
+            },
+            {
+              "explain": "Test candidates: 2+0=2, 2+2=4, 2+4=6 (yes!), 2+6=8, 2+8=10. The only valid digit is 4.",
+              "work": "\\\\(x = 4\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q8c2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the missing digit \\\\(x\\\\) so that the number \\\\(121,92x\\\\) is divisible by \\\\(3, 4\\\\) and \\\\(5\\\\).",
+          "options": [
+            "\\\\(0\\\\)",
+            "\\\\(5\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(2\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Any integer divisible by 5 must end in 0 or 5. If it is divisible by 4, it must also be even.",
+          "steps": [
+            {
+              "explain": "For divisibility by 5, the last digit \\\\(x\\\\) must be 0 or 5. But for divisibility by 4, it must be even, so \\\\(x\\\\) must be 0.",
+              "work": "\\\\(x = 0\\\\)"
+            },
+            {
+              "explain": "Check if x = 0 satisfies divisibility by 3.",
+              "work": "\\\\(\\text{Sum} = 1 + 2 + 1 + 9 + 2 + 0 = 15 \\quad \\text{(divisible by 3)}\\\\)"
+            },
+            {
+              "explain": "Check if last two digits (20) are divisible by 4.",
+              "work": "\\\\(20 \\\\div 4 = 5 \\quad \\text{(divisible by 4)}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q8c3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find all possible values of the missing digit \\\\(x\\\\) so that the number \\\\(68x40\\\\) is divisible by \\\\(3, 4\\\\) and \\\\(5\\\\).",
+          "options": [
+            "\\\\(0, 3, 6, 9\\\\)",
+            "\\\\(1, 4, 7\\\\)",
+            "\\\\(2, 5, 8\\\\)",
+            "\\\\(0, 6\\\\)"
+          ],
+          "answer": 0,
+          "hint": "The number ends in 40, which is divisible by 4 and 5. Only check divisibility by 3.",
+          "steps": [
+            {
+              "explain": "The last two digits are 40, which is divisible by 4, and it ends in 0, so it is divisible by 5. We only need to check divisibility by 3.",
+              "work": "\\\\(40 \\implies \\text{divisible by 4 and 5}\\\\)"
+            },
+            {
+              "explain": "Find the digit sum.",
+              "work": "\\\\(\\text{Sum} = 6 + 8 + x + 4 + 0 = 18 + x\\\\)"
+            },
+            {
+              "explain": "For \\\\(18 + x\\\\) to be a multiple of 3, \\\\(x\\\\) must be a multiple of 3.",
+              "work": "\\\\(x \\\\in \\\\{0, 3, 6, 9\\\\}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the missing digit \\\\(x\\\\) so that the number \\\\(34x20\\\\) is divisible by \\\\(11\\\\).",
+          "options": [
+            "\\\\(1\\\\)",
+            "\\\\(3\\\\)",
+            "\\\\(5\\\\)",
+            "\\\\(7\\\\)"
+          ],
+          "answer": 1,
+          "hint": "The alternating sum of digits must be a multiple of 11 (including 0).",
+          "steps": [
+            {
+              "explain": "A number is divisible by 11 if the alternating sum of its digits is divisible by 11.",
+              "work": "\\\\(\\text{Alternating Sum} = (3 + x + 0) - (4 + 2) = x - 3\\\\)"
+            },
+            {
+              "explain": "We need \\\\(x - 3\\\\) to be divisible by 11. Since \\\\(x\\\\) is a digit (0 to 9), the only way is if the sum is 0.",
+              "work": "\\\\(x - 3 = 0 \\implies x = 3\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q10c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the prime factorisation of \\\\(228\\\\).",
+          "options": [
+            "\\\\(2 \\\\times 3 \\\\times 19\\\\)",
+            "\\\\(2^2 \\\\times 3 \\\\times 19\\\\)",
+            "\\\\(4 \\\\times 3 \\\\times 19\\\\)",
+            "\\\\(2^2 \\\\times 5 \\\\times 11\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide by primes in ascending order.",
+          "steps": [
+            {
+              "explain": "Divide by 2.",
+              "work": "\\\\(228 \\\\div 2 = 114 \\implies 114 \\\\div 2 = 57\\\\)"
+            },
+            {
+              "explain": "Divide 57 by 3.",
+              "work": "\\\\(57 \\\\div 3 = 19\\\\)"
+            },
+            {
+              "explain": "19 is prime. Write as product.",
+              "work": "\\\\(228 = 2^2 \\\\times 3 \\\\times 19\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q11a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\\\(3^2 \\\\times 5^3\\\\)",
+          "options": [
+            "\\\\(135\\\\)",
+            "\\\\(1125\\\\)",
+            "\\\\(675\\\\)",
+            "\\\\(3375\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Evaluate powers first, then multiply.",
+          "steps": [
+            {
+              "explain": "Evaluate each power separately.",
+              "work": "\\\\(3^2 = 9, \\\\quad 5^3 = 125\\\\)"
+            },
+            {
+              "explain": "Multiply the results.",
+              "work": "\\\\(9 \\\\times 125 = 1125\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\\\(7 \\\\times 11^2\\\\)",
+          "options": [
+            "\\\\(847\\\\)",
+            "\\\\(154\\\\)",
+            "\\\\(77\\\\)",
+            "\\\\(539\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Remember order of operations: indices before multiplication.",
+          "steps": [
+            {
+              "explain": "Evaluate the index power first.",
+              "work": "\\\\(11^2 = 121\\\\)"
+            },
+            {
+              "explain": "Multiply by 7.",
+              "work": "\\\\(7 \\\\times 121 = 847\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q11c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate: \\\\(2^2 \\\\times 5 \\\\times 9 \\\\times 14\\\\)",
+          "options": [
+            "\\\\(1260\\\\)",
+            "\\\\(2520\\\\)",
+            "\\\\(5040\\\\)",
+            "\\\\(2500\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Evaluate the power of 2 first.",
+          "steps": [
+            {
+              "explain": "Evaluate \\\\(2^2\\\\).",
+              "work": "\\\\(2^2 = 4\\\\)"
+            },
+            {
+              "explain": "Multiply in order.",
+              "work": "\\\\(4 \\\\times 5 = 20, \\\\quad 20 \\\\times 9 = 180\\\\)"
+            },
+            {
+              "explain": "Multiply by 14.",
+              "work": "\\\\(180 \\\\times 14 = 2520\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q11d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\\\(2520\\\\) as a product of powers of primes.",
+          "options": [
+            "\\\\(2^3 \\\\times 3^2 \\\\times 5 \\\\times 7\\\\)",
+            "\\\\(2^2 \\\\times 3^2 \\\\times 5 \\\\times 7\\\\)",
+            "\\\\(2^3 \\\\times 3 \\\\times 5 \\\\times 7\\\\)",
+            "\\\\(2^3 \\\\times 3^2 \\\\times 35\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Recall the prime factorisation of 2520 from previous calculations.",
+          "steps": [
+            {
+              "explain": "Refer to prime factorisation steps of 2520.",
+              "work": "\\\\(2520 = 2 \\\\times 2 \\\\times 2 \\\\times 3 \\\\times 3 \\\\times 5 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "Express in index notation.",
+              "work": "\\\\(2520 = 2^3 \\\\times 3^2 \\\\times 5 \\\\times 7\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q12a1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using prime factorisation, find the highest common factor (HCF) of \\\\(5400\\\\) and \\\\(1260\\\\).",
+          "options": [
+            "\\\\(60\\\\)",
+            "\\\\(180\\\\)",
+            "\\\\(360\\\\)",
+            "\\\\(90\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Find prime factorisations and take lowest powers of shared primes.",
+          "steps": [
+            {
+              "explain": "Find prime factorisations.",
+              "work": "\\\\(5400 = 2^3 \\\\times 3^3 \\\\times 5^2, \\\\quad 1260 = 2^2 \\\\times 3^2 \\\\times 5 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "Take lowest powers of shared primes 2, 3, and 5.",
+              "work": "\\\\(\\text{HCF} = 2^2 \\\\times 3^2 \\\\times 5^1\\\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\\\(\\text{HCF} = 4 \\\\times 9 \\\\times 5 = 180\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q12a2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using prime factorisation, find the lowest common multiple (LCM) of \\\\(5400\\\\) and \\\\(1260\\\\).",
+          "options": [
+            "\\\\(37800\\\\)",
+            "\\\\(18900\\\\)",
+            "\\\\(75600\\\\)",
+            "\\\\(54000\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Find prime factorisations and take highest powers of all primes.",
+          "steps": [
+            {
+              "explain": "Refer to prime factorisations.",
+              "work": "\\\\(5400 = 2^3 \\\\times 3^3 \\\\times 5^2, \\\\quad 1260 = 2^2 \\\\times 3^2 \\\\times 5 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "Take highest powers of all primes present: \\\\(2^3, 3^3, 5^2, 7^1\\\\).",
+              "work": "\\\\(\\text{LCM} = 2^3 \\\\times 3^3 \\\\times 5^2 \\\\times 7\\\\)"
+            },
+            {
+              "explain": "Compute product.",
+              "work": "\\\\(\\text{LCM} = 8 \\\\times 27 \\\\times 25 \\\\times 7 = 37800\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q12b1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using prime factorisation, find the highest common factor (HCF) of \\\\(1350\\\\) and \\\\(882\\\\).",
+          "options": [
+            "\\\\(18\\\\)",
+            "\\\\(9\\\\)",
+            "\\\\(6\\\\)",
+            "\\\\(36\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise both and take lowest powers of common primes.",
+          "steps": [
+            {
+              "explain": "Find prime factorisations.",
+              "work": "\\\\(1350 = 2 \\\\times 3^3 \\\\times 5^2, \\\\quad 882 = 2 \\\\times 3^2 \\\\times 7^2\\\\)"
+            },
+            {
+              "explain": "Take lowest powers of shared primes 2 and 3.",
+              "work": "\\\\(\\text{HCF} = 2^1 \\\\times 3^2\\\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\\\(\\text{HCF} = 2 \\\\times 9 = 18\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q12b2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using prime factorisation, find the lowest common multiple (LCM) of \\\\(1350\\\\) and \\\\(882\\\\).",
+          "options": [
+            "\\\\(66150\\\\)",
+            "\\\\(33075\\\\)",
+            "\\\\(132300\\\\)",
+            "\\\\(110250\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise both and take highest powers of all primes.",
+          "steps": [
+            {
+              "explain": "Refer to prime factorisations.",
+              "work": "\\\\(1350 = 2 \\\\times 3^3 \\\\times 5^2, \\\\quad 882 = 2 \\\\times 3^2 \\\\times 7^2\\\\)"
+            },
+            {
+              "explain": "Take highest powers of all primes: \\\\(2^1, 3^3, 5^2, 7^2\\\\).",
+              "work": "\\\\(\\text{LCM} = 2 \\\\times 3^3 \\\\times 5^2 \\\\times 7^2\\\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\\\(\\text{LCM} = 2 \\\\times 27 \\\\times 25 \\\\times 49 = 66150\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q13a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate mentally: \\\\(25 \\\\times 24\\\\)",
+          "options": [
+            "\\\\(500\\\\)",
+            "\\\\(600\\\\)",
+            "\\\\(550\\\\)",
+            "\\\\(1000\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Use grouping: 25 × 4 = 100.",
+          "steps": [
+            {
+              "explain": "Split 24 into \\\\(4 \\\\times 6\\\\).",
+              "work": "\\\\(25 \\\\times 24 = 25 \\\\times (4 \\\\times 6)\\\\)"
+            },
+            {
+              "explain": "Multiply 25 by 4 first to get 100.",
+              "work": "\\\\(= (25 \\\\times 4) \\\\times 6 = 100 \\\\times 6\\\\)"
+            },
+            {
+              "explain": "Final multiplication.",
+              "work": "\\\\(= 600\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q13b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate mentally: \\\\(125 \\\\times 48\\\\)",
+          "options": [
+            "\\\\(6000\\\\)",
+            "\\\\(5000\\\\)",
+            "\\\\(12000\\\\)",
+            "\\\\(8000\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Recall 125 × 8 = 1000.",
+          "steps": [
+            {
+              "explain": "Split 48 into \\\\(8 \\\\times 6\\\\).",
+              "work": "\\\\(125 \\\\times 48 = 125 \\\\times (8 \\\\times 6)\\\\)"
+            },
+            {
+              "explain": "Multiply 125 by 8 first.",
+              "work": "\\\\(= (125 \\\\times 8) \\\\times 6 = 1000 \\\\times 6\\\\)"
+            },
+            {
+              "explain": "Final multiplication.",
+              "work": "\\\\(= 6000\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q13c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate mentally: \\\\(75 \\\\times 60\\\\)",
+          "options": [
+            "\\\\(4200\\\\)",
+            "\\\\(4500\\\\)",
+            "\\\\(3000\\\\)",
+            "\\\\(5000\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Recall 75 = 3 × 25.",
+          "steps": [
+            {
+              "explain": "Split 60 into \\\\(4 \\\\times 15\\\\).",
+              "work": "\\\\(75 \\\\times 60 = 75 \\\\times (4 \\\\times 15)\\\\)"
+            },
+            {
+              "explain": "Multiply 75 by 4 first to get 300.",
+              "work": "\\\\(= (75 \\\\times 4) \\\\times 15 = 300 \\\\times 15\\\\)"
+            },
+            {
+              "explain": "Final calculation.",
+              "work": "\\\\(300 \\\\times 15 = 4500\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q13d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate mentally: \\\\(5 \\\\times 648\\\\)",
+          "options": [
+            "\\\\(3240\\\\)",
+            "\\\\(3140\\\\)",
+            "\\\\(3200\\\\)",
+            "\\\\(32400\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Recall that multiplying by 5 is the same as multiplying by 10 and dividing by 2.",
+          "steps": [
+            {
+              "explain": "Rewrite 5 as \\\\(10 \\\\div 2\\\\).",
+              "work": "\\\\(5 \\\\times 648 = \\frac{10}{2} \\\\times 648 = 10 \\\\times \\left(\\frac{648}{2}\\right)\\\\)"
+            },
+            {
+              "explain": "Divide 648 by 2.",
+              "work": "\\\\(648 \\\\div 2 = 324\\\\)"
+            },
+            {
+              "explain": "Multiply by 10.",
+              "work": "\\\\(324 \\\\times 10 = 3240\\\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

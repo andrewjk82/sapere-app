@@ -1,0 +1,131 @@
+{
+  "chapterId": "exam:year11ch6e",
+  "title": "Exam year11ch6e",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11a-6E",
+      "code": "6E",
+      "title": "Given one trigonometric function, find another",
+      "questions": [
+        {
+          "id": "y11a-6e-q9c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(\\tan \\theta\\), given that \\(\\sec \\theta = -\\frac{13}{5}\\) and \\(0^{\\circ} \\le \\theta \\le 180^{\\circ}\\).",
+          "options": [
+            "\\(-\\frac{12}{5}\\)",
+            "\\(\\frac{12}{5}\\)",
+            "\\(-\\frac{5}{12}\\)",
+            "\\(\\frac{5}{12}\\)"
+          ],
+          "answer": 1,
+          "hint": "sec is negative in Quadrant II within the given range.",
+          "solution": "Since \\(\\sec \\theta < 0\\) and \\(0^{\\circ} \\le \\theta \\le 180^{\\circ}\\), \\(\\theta\\) lies in Quadrant II. In Quadrant II, tangent is negative. \\(\\cos \\theta = -\\frac{5}{13} \\implies \\sin \\theta = \\frac{12}{13}\\). Thus, \\(\\tan \\theta = -\\frac{12}{5}\\).",
+          "steps": [
+            {
+              "explain": "Determine the exact quadrant.",
+              "work": "\\(0^{\\circ} \\le \\theta \\le 180^{\\circ}\\) (Q1 or Q2) and \\(\\sec \\theta = -\\frac{13}{5} < 0\\).<br>Secant is negative in **Quadrant II**.<br>In Q2, tangent is negative.<br><br><b>Visualizing the value:</b> A right-angled reference triangle can be formed in this quadrant to find the exact ratios.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 300,
+                  "height": 300,
+                  "boundingbox": [
+                    -16.900000000000002,
+                    16.900000000000002,
+                    16.900000000000002,
+                    -16.900000000000002
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]], {strokeColor:'#cbd5e1'});\nboard.create('axis', [[0,0], [0,1]], {strokeColor:'#cbd5e1'});\nboard.create('circle', [[0,0], 13], {strokeColor:'#e2e8f0', strokeWidth:1, dash:2});\nvar origin = board.create('point', [0, 0], {name:'', visible:false});\nvar xaxis = board.create('point', [13, 0], {name:'', visible:false});\nvar p0 = board.create('point', [-5, 12], {name:'', size:3, color:'#ef4444'});\nvar px0 = board.create('point', [-5, 0], {name:'', visible:false});\nboard.create('polygon', [origin, px0, p0], {fillColor:'#3b82f6', fillOpacity:0.1, borders:{visible:false}});\nboard.create('segment', [origin, px0], {strokeColor:'#10b981', strokeWidth:3, withLabel:true, name:'-5', label:{offset:[0, -15], color:'#10b981'}});\nboard.create('segment', [px0, p0], {strokeColor:'#3b82f6', strokeWidth:2, dash:2, withLabel:true, name:'12', label:{offset:[-25, 0], color:'#3b82f6'}});\nboard.create('segment', [origin, p0], {strokeColor:'#ef4444', strokeWidth:2, withLabel:true, name:'13', label:{offset:[0, 10], color:'#ef4444'}});\nboard.create('angle', [p0, px0, origin], {radius:1.3, type:'square', color:'#64748b'});\nboard.create('angle', [xaxis, origin, p0], {name:'\\\\theta', color:'#f59e0b', fillOpacity:0.2, radius:3.9, strokeWidth:2});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Calculate the required ratio using a right-angled triangle.",
+              "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ |\\\\text{secant}| = \\frac{13}{5} \\\\implies \\text{hyp}=13, \\text{adj}=5 \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{opp} = \\sqrt{13^2 - 5^2} = 12 \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\tan \\theta = -\\frac{\\text{opp}}{\\text{adj}} = -\\frac{12}{5} \\]\n</div>"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-6e-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(\\csc B = \\frac{5}{2}\\) and \\(\\cos B < 0\\), find \\(\\tan B\\).",
+          "options": [
+            "\\(-\\frac{2}{\\sqrt{21}}\\)",
+            "\\(\\frac{2}{\\sqrt{21}}\\)",
+            "\\(-\\frac{\\sqrt{21}}{2}\\)",
+            "\\(\\frac{\\sqrt{21}}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Positive cosecant (sine) and negative cosine means Quadrant II.",
+          "solution": "In Quadrant II, tangent is negative. Since \\(\\sin B = \\frac{2}{5}\\), \\(\\cos B = -\\sqrt{1 - (2/5)^2} = -\\frac{\\sqrt{21}}{5}\\). Thus, \\(\\tan B = \\frac{\\sin B}{\\cos B} = -\\frac{2}{\\sqrt{21}}\\).",
+          "steps": [
+            {
+              "explain": "Determine the exact quadrant.",
+              "work": "\\(\\csc B = \\frac{5}{2} > 0\\) means Q1 or Q2.<br>\\(\\cos B < 0\\) means Q2 or Q3.<br>Both conditions are met only in **Quadrant II**.<br>In Q2, tangent is negative.<br><br><b>Visualizing the value:</b> A right-angled reference triangle can be formed in this quadrant to find the exact ratios.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 300,
+                  "height": 300,
+                  "boundingbox": [
+                    -6.5,
+                    6.5,
+                    6.5,
+                    -6.5
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]], {strokeColor:'#cbd5e1'});\nboard.create('axis', [[0,0], [0,1]], {strokeColor:'#cbd5e1'});\nboard.create('circle', [[0,0], 5], {strokeColor:'#e2e8f0', strokeWidth:1, dash:2});\nvar origin = board.create('point', [0, 0], {name:'', visible:false});\nvar xaxis = board.create('point', [5, 0], {name:'', visible:false});\nvar p0 = board.create('point', [-4.58257569495584, 2], {name:'', size:3, color:'#ef4444'});\nvar px0 = board.create('point', [-4.58257569495584, 0], {name:'', visible:false});\nboard.create('polygon', [origin, px0, p0], {fillColor:'#3b82f6', fillOpacity:0.1, borders:{visible:false}});\nboard.create('segment', [origin, px0], {strokeColor:'#10b981', strokeWidth:3, withLabel:true, name:'-\\\\sqrt{21}', label:{offset:[0, -15], color:'#10b981'}});\nboard.create('segment', [px0, p0], {strokeColor:'#3b82f6', strokeWidth:2, dash:2, withLabel:true, name:'2', label:{offset:[-25, 0], color:'#3b82f6'}});\nboard.create('segment', [origin, p0], {strokeColor:'#ef4444', strokeWidth:2, withLabel:true, name:'5', label:{offset:[0, 10], color:'#ef4444'}});\nboard.create('angle', [p0, px0, origin], {radius:0.5, type:'square', color:'#64748b'});\nboard.create('angle', [xaxis, origin, p0], {name:'\\\\theta', color:'#f59e0b', fillOpacity:0.2, radius:1.5, strokeWidth:2});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Calculate the required ratio using a right-angled triangle.",
+              "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ |\\\\text{cosecant}| = \\frac{5}{2} \\\\implies \\text{hyp}=5, \\text{opp}=2 \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{adj} = \\sqrt{5^2 - 2^2} = \\sqrt{21} \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\tan B = -\\frac{\\text{opp}}{\\text{adj}} = -\\frac{2}{\\sqrt{21}} \\]\n</div>"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-6e-q10c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(\\cot \\theta\\), given that \\(\\sec \\theta = -\\sqrt{3}\\) and \\(\\csc \\theta < 0\\).",
+          "options": [
+            "\\(\\frac{1}{\\sqrt{2}}\\)",
+            "\\(-\\frac{1}{\\sqrt{2}}\\)",
+            "\\(\\sqrt{2}\\)",
+            "\\(-\\sqrt{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Negative secant (cosine) and negative cosecant (sine) means Quadrant III.",
+          "solution": "In Quadrant III, cotangent is positive. \\(\\cos \\theta = -\\frac{1}{\\sqrt{3}}\\). \\(\\sin \\theta = -\\sqrt{1 - \\cos^2 \\theta} = -\\sqrt{1 - \\frac{1}{3}} = -\\frac{\\sqrt{2}}{\\sqrt{3}}\\). Thus, \\(\\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta} = \\frac{-1/\\sqrt{3}}{-\\sqrt{2}/\\sqrt{3}} = \\frac{1}{\\sqrt{2}}\\).",
+          "steps": [
+            {
+              "explain": "Determine the exact quadrant.",
+              "work": "\\(\\sec \\theta = -\\sqrt{3} < 0\\) means Q2 or Q3.<br>\\(\\csc \\theta < 0\\) means Q3 or Q4.<br>Both conditions are met only in **Quadrant III**.<br>In Q3, cotangent is positive.<br><br><b>Visualizing the value:</b> A right-angled reference triangle can be formed in this quadrant to find the exact ratios.",
+              "figure": {
+                "jsxGraph": {
+                  "width": 300,
+                  "height": 300,
+                  "boundingbox": [
+                    -2.25166604983954,
+                    2.25166604983954,
+                    2.25166604983954,
+                    -2.25166604983954
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]], {strokeColor:'#cbd5e1'});\nboard.create('axis', [[0,0], [0,1]], {strokeColor:'#cbd5e1'});\nboard.create('circle', [[0,0], 1.7320508075688772], {strokeColor:'#e2e8f0', strokeWidth:1, dash:2});\nvar origin = board.create('point', [0, 0], {name:'', visible:false});\nvar xaxis = board.create('point', [1.7320508075688772, 0], {name:'', visible:false});\nvar p0 = board.create('point', [-1, -1.4142135623730951], {name:'', size:3, color:'#ef4444'});\nvar px0 = board.create('point', [-1, 0], {name:'', visible:false});\nboard.create('polygon', [origin, px0, p0], {fillColor:'#3b82f6', fillOpacity:0.1, borders:{visible:false}});\nboard.create('segment', [origin, px0], {strokeColor:'#10b981', strokeWidth:3, withLabel:true, name:'-1', label:{offset:[0, -15], color:'#10b981'}});\nboard.create('segment', [px0, p0], {strokeColor:'#3b82f6', strokeWidth:2, dash:2, withLabel:true, name:'-\\\\sqrt{2}', label:{offset:[-25, 0], color:'#3b82f6'}});\nboard.create('segment', [origin, p0], {strokeColor:'#ef4444', strokeWidth:2, withLabel:true, name:'\\\\sqrt{3}', label:{offset:[0, 10], color:'#ef4444'}});\nboard.create('angle', [p0, px0, origin], {radius:0.17320508075688773, type:'square', color:'#64748b'});\nboard.create('angle', [xaxis, origin, p0], {name:'\\\\theta', color:'#f59e0b', fillOpacity:0.2, radius:0.5196152422706631, strokeWidth:2});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "Calculate the required ratio using a right-angled triangle.",
+              "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ |\\\\text{secant}| = \\sqrt{3} \\\\implies \\text{hyp}=\\sqrt{3}, \\text{adj}=1 \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{opp} = \\sqrt{(\\sqrt{3})^2 - 1^2} = \\sqrt{2} \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\cot \\theta = \\frac{\\text{adj}}{\\text{opp}} = \\frac{1}{\\sqrt{2}} \\]\n</div>"
+            }
+          ],
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

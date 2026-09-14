@@ -1,0 +1,44 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>
+  <rect width='300' height='300' fill='#ffffff' />
+  
+  <!-- Parallel Lines PQ and RS -->
+  <line x1='50' y1='50' x2='280' y2='50' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='50' y1='250' x2='280' y2='250' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+
+  <!-- Parallel markers -->
+  <path d='M 260 50 L 255 45 M 260 50 L 255 55' fill='none' stroke='#64748b' stroke-width='1.5' />
+  <path d='M 265 50 L 260 45 M 265 50 L 260 55' fill='none' stroke='#64748b' stroke-width='1.5' />
+  <path d='M 260 250 L 255 245 M 260 250 L 255 255' fill='none' stroke='#64748b' stroke-width='1.5' />
+  <path d='M 265 250 L 260 245 M 265 250 L 260 255' fill='none' stroke='#64748b' stroke-width='1.5' />
+
+  <!-- Zigzag PT and TU -->
+  <!-- P(100,50), T(190,150), U(159.4, 250) -->
+  <line x1='100' y1='50' x2='190' y2='150' stroke='#3b82f6' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='190' y1='150' x2='159.4' y2='250' stroke='#3b82f6' stroke-width='1.5' stroke-linecap='round' />
+
+  <!-- Angle TPQ = 48 -->
+  <!-- PQ is 0 deg. PT is -48 deg in math coords. Sweep 0 to 312 (or -48). -->
+  <path d='M 130 50 A 30 30 0 0 1 120.07391819076574 72.29434476432183' fill='none' stroke='#f59e0b' stroke-width='1.5' />
+  <text x='138' y='72' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='500' fill='#d97706'>48°</text>
+
+  <!-- Angle TUS = 73 -->
+  <!-- US is 0 deg. UT is 73 deg. Sweep 0 to 73. -->
+  <path d='M 189.4 250 A 30 30 0 0 0 168.17115114168212 221.31085732110893' fill='none' stroke='#10b981' stroke-width='1.5' />
+  <text x='190' y='235' text-anchor='middle' font-family='sans-serif' font-size='12' font-weight='500' fill='#059669'>73°</text>
+
+  <!-- Angle PTU = alpha -->
+  <!-- TP is 132 deg. TU is 253 deg (or -107 deg). Sweep from 132 to 253. -->
+  <path d='M 173.27173484102855 131.42137936306514 A 25 25 0 0 0 182.69070738193156 173.90761889907589' fill='none' stroke='#8b5cf6' stroke-width='1.5' />
+  <text x='150' y='155' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' fill='#7c3aed'>α</text>
+
+  <!-- Points -->
+  <text x='100' y='40' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>P</text>
+  <text x='240' y='40' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>Q</text>
+  <text x='159.4' y='270' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>U</text>
+  <text x='240' y='270' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>S</text>
+  <text x='202' y='155' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>T</text>
+  
+  <circle cx='100' cy='50' r='3' fill='#3b82f6' />
+  <circle cx='190' cy='150' r='3' fill='#3b82f6' />
+  <circle cx='159.4' cy='250' r='3' fill='#3b82f6' />
+</svg>

@@ -1,0 +1,66 @@
+{
+  "chapterId": "exam:year12ch5k",
+  "title": "Chapter 5: The exponential and logarithmic functions",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12a-5K",
+      "code": "5K",
+      "title": "Calculus with other bases",
+      "questions": [
+        {
+          "id": "y12a-5k-q9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Hence find the equation of the tangent to \\(y=\\log_3 x\\) at \\(x=1\\).",
+          "options": [
+            "\\(y=\\dfrac{x-1}{\\ln 3}\\)",
+            "\\(y=\\dfrac{x}{\\ln 3}\\)",
+            "\\(y=(x-1)\\ln 3\\)",
+            "\\(y=\\dfrac{1}{\\ln 3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use change of base and standard forms for \\(\\log_a\\) and \\(a^{x}\\).",
+          "solution": "The correct answer is \\(y=\\dfrac{x-1}{\\ln 3}\\).",
+          "steps": [
+            {
+              "explain": "Point \\((1,0)\\), gradient \\(\\dfrac{1}{\\ln 3}\\): \\(y-0=\\dfrac{1}{\\ln 3}(x-1)\\).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Final equation: \\(y=\\dfrac{x-1}{\\ln 3}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+              "work": "\\(y=\\dfrac{x-1}{\\ln 3}\\)"
+            }
+          ],
+          "inactive": true
+        },
+        {
+          "id": "y12a-5k-q9ci",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the equation of the tangent to \\(y=\\log_4 x\\) at \\(x=1\\).",
+          "options": [
+            "\\(y=\\dfrac{x-1}{\\ln 4}\\)",
+            "\\(y=\\dfrac{x-1}{\\ln 2}\\)",
+            "\\(y=(x-1)\\ln 4\\)",
+            "\\(y=\\dfrac{1}{\\ln 4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use change of base and standard forms for \\(\\log_a\\) and \\(a^{x}\\).",
+          "solution": "The correct answer is \\(y=\\dfrac{x-1}{\\ln 4}\\).",
+          "steps": [
+            {
+              "explain": "Gradient at 1 is \\(\\dfrac{1}{\\ln 4}\\); point \\((1,0)\\).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Final equation: \\(y=\\dfrac{x-1}{\\ln 4}\\). Why this step? It isolates one rule or evaluation so the next algebra stays exact. A common slip is confusing \\(\\log_a\\) with \\(\\ln\\), or dropping the chain-rule factor.",
+              "work": "\\(y=\\dfrac{x-1}{\\ln 4}\\)"
+            }
+          ],
+          "inactive": true
+        }
+      ]
+    }
+  ]
+}

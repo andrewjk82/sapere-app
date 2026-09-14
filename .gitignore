@@ -41,3 +41,7 @@ scratch/
 # style/difficulty reference only. Never commit, never upload to Firebase.
 # See tools/corpus/README.md.
 /tools/corpus/data/
+.secrets/
+
+# P0 Firestore snapshot (65MB) - keep locally; reports beside it are tracked
+/content/_export/raw/

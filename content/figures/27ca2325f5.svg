@@ -1,0 +1,10 @@
+<svg viewBox="0 0 240 270" width="240" height="270" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+<path d="M 220 220 A 190 190 0 0 0 30 30" fill="none" stroke="#94a3b8" stroke-width="1.6"/>
+<line x1="30" y1="220" x2="220" y2="220" stroke="#94a3b8" stroke-width="1.6"/>
+<line x1="30" y1="220" x2="30" y2="30" stroke="#94a3b8" stroke-width="1.6"/>
+<polygon points="30,220 164.35028842544403,220 164.35028842544403,85.64971157455597 30,85.64971157455597" fill="#dbeafe" fill-opacity="0.4" stroke="#475569" stroke-width="1.8"/>
+<line x1="30" y1="220" x2="164.35028842544403" y2="85.64971157455597" stroke="#dc2626" stroke-width="2"/>
+<text x="22" y="224" text-anchor="end" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#1e293b" stroke="#f8fafc" stroke-width="3" paint-order="stroke">O</text>
+<text x="97.17514421272202" y="236" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#1e293b" stroke="#f8fafc" stroke-width="3" paint-order="stroke">x</text>
+<text x="105.17514421272202" y="152.82485578727798" text-anchor="start" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#1e293b" stroke="#f8fafc" stroke-width="3" paint-order="stroke">4 cm</text>
+</svg>

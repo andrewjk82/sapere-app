@@ -1,0 +1,43 @@
+{
+  "chapterId": "exam:year8ch4review",
+  "title": "Exam Practice",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "exam:year8ch4review",
+      "code": "",
+      "title": "Review of negative numbers",
+      "questions": [
+        {
+          "id": "y8-4h-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Arrange these numbers in order from smallest to largest.\n\n$-\\frac{7}{6}, \\frac{15}{10}, 0.3, -0.05, -\\frac{5}{8}, \\frac{1}{0.5}$",
+          "options": [
+            "$-\\frac{7}{6}, -0.05, -\\frac{5}{8}, 0.3, frac{15}{10}, frac{1}{0.5}$",
+            "$-\\frac{7}{6}, -\\frac{5}{8}, -0.05, 0.3, frac{15}{10}, frac{1}{0.5}$",
+            "$-0.05, -\\frac{5}{8}, -\\frac{7}{6}, 0.3, frac{15}{10}, frac{1}{0.5}$",
+            "$-\\frac{7}{6}, -\\frac{5}{8}, 0.3, -0.05, frac{15}{10}, frac{1}{0.5}$"
+          ],
+          "answer": 1,
+          "hint": "Converting all numbers to decimals might make them easier to compare.",
+          "solution": "Convert to decimals to compare:\n$-\\frac{7}{6} \\approx -1.167$\n$\\frac{15}{10} = 1.5$\n$0.3 = 0.3$\n$-0.05 = -0.05$\n$-\\frac{5}{8} = -0.625$\n$\\frac{1}{0.5} = 2$\nOrdering from smallest (most negative) to largest: $-1.167, -0.625, -0.05, 0.3, 1.5, 2$. Therefore, the order is $-\\frac{7}{6}, -\\frac{5}{8}, -0.05, 0.3, \\frac{15}{10}, \\frac{1}{0.5}$.",
+          "steps": [
+            {
+              "explain": "Convert fractions to decimals",
+              "work": "-\\frac{7}{6} \\approx -1.167, frac{15}{10} = 1.5, -\\frac{5}{8} = -0.625, frac{1}{0.5} = 2"
+            },
+            {
+              "explain": "Order the decimals",
+              "work": "-1.167, -0.625, -0.05, 0.3, 1.5, 2"
+            },
+            {
+              "explain": "Match to original numbers",
+              "work": "-\\frac{7}{6}, -\\frac{5}{8}, -0.05, 0.3, frac{15}{10}, frac{1}{0.5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

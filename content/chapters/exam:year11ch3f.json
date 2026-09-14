@@ -1,0 +1,39 @@
+{
+  "chapterId": "exam:year11ch3f",
+  "title": "Exam year11ch3f",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ch3f",
+      "code": "EXAM",
+      "title": "The quadratic formulae and the graph",
+      "questions": [
+        {
+          "id": "y11a-3f-q11a",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Use the quadratic formula to find the roots \\( \\alpha \\) and \\( \\beta \\) of \\( x^2 - 4x + 2 = 0 \\). Hence show that both \\( \\alpha + \\beta = -\\frac{b}{a} \\) and \\( \\alpha\\beta = \\frac{c}{a} \\) hold.",
+          "answer": "roots: 2 - √2, 2 + √2.\nSum = 4 (-b/a = 4).\nProduct = 2 (c/a = 2).\nBoth hold.",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "roots: 2 - √2, 2 + √2.\nSum = 4 (-b/a = 4).\nProduct = 2 (c/a = 2).\nBoth hold.",
+          "steps": [
+            {
+              "explain": "Identify coefficients: \\( a=1, b=-4, c=2 \\). Apply quadratic formula.",
+              "work": "x = \\frac{4 \\pm \\sqrt{16 - 8}}{2} = 2 \\pm \\sqrt{2}"
+            },
+            {
+              "explain": "Compute the sum of the roots.",
+              "work": "\\alpha + \\beta = (2 - \\sqrt{2}) + (2 + \\sqrt{2}) = 4, quad -\\frac{b}{a} = -\\frac{-4}{1} = 4"
+            },
+            {
+              "explain": "Compute the product of the roots.",
+              "work": "\\alpha\\beta = (2 - \\sqrt{2})(2 + \\sqrt{2}) = 4 - 2 = 2, quad \\frac{c}{a} = \\frac{2}{1} = 2"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        }
+      ]
+    }
+  ]
+}

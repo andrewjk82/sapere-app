@@ -1,0 +1,90 @@
+{
+  "chapterId": "y9-19",
+  "title": "Chapter 19: Statistics",
+  "year": "2019",
+  "topics": [
+    {
+      "topicId": "y9-19d",
+      "code": "19D",
+      "title": "Mean, median, mode and range",
+      "questions": [
+        {
+          "id": "y9-willoughby-19-t7q3",
+          "type": "mc",
+          "stem": "The marks of 10 students on an examination are shown in the stem-and-leaf plot below (key: $5|7 = 57$). What is the mean examination mark for these students?",
+          "figure": {
+            "svg": "fig:b16d62672c"
+          },
+          "options": [
+            "$78$",
+            "$76.2$",
+            "$74.1$",
+            "$741$"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Read off every individual mark from the stem-and-leaf plot (stem = tens digit, leaf = units digit), in order.",
+              "work": "\\(57,\\ 60,\\ 62,\\ 68,\\ 68,\\ 78,\\ 81,\\ 83,\\ 89,\\ 95\\)"
+            },
+            {
+              "explain": "Add all ten marks together to find the total.",
+              "work": "\\(57+60+62+68+68+78+81+83+89+95 = 741\\)"
+            },
+            {
+              "explain": "The mean is the sum divided by the number of data values ($n=10$).",
+              "work": "\\(\\text{Mean} = \\frac{741}{10} = 74.1\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-19d"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t7q4",
+          "type": "mc",
+          "stem": "Find the median of the data presented in the dot plot below.",
+          "figure": {
+            "svg": "fig:0d83ffa82b"
+          },
+          "options": [
+            "$2$",
+            "$3.5$",
+            "$2.5$",
+            "$3$"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Find the total number of data points by adding up every score's frequency (dot count).",
+              "work": "\\(1 + 3 + 2 + 1 + 1 = 8 \\text{ data points}\\)"
+            },
+            {
+              "explain": "List every value in ascending order using the given frequencies: one $1$, three $2$s, two $3$s, one $4$, one $6$.",
+              "work": "\\(1,\\ 2,\\ 2,\\ 2,\\ 3,\\ 3,\\ 4,\\ 6\\)"
+            },
+            {
+              "explain": "Since $n=8$ is even, the median is the average of the $\\frac{n}{2}$th and $\\left(\\frac{n}{2}+1\\right)$th values — i.e. the 4th and 5th values in the ordered list.",
+              "work": "\\(\\text{4th value} = 2, \\quad \\text{5th value} = 3\\)"
+            },
+            {
+              "explain": "Average these two middle values to find the median.",
+              "work": "\\(\\text{Median} = \\frac{2 + 3}{2} = \\frac{5}{2} = 2.5\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-19d"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3280 @@
+{
+  "chapterId": "exam:abbotsleigh-2020",
+  "title": "Abbotsleigh 2020 HSC Trial",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12a-exam",
+      "code": "EXAM",
+      "title": "Abbotsleigh 2020 Trial Exam",
+      "questions": [
+        {
+          "id": "abb2020-mc1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What are the solutions to the equation $\\sin x = \\dfrac{\\sqrt{3}}{2}$, for $0 \\leq x \\leq 2\\pi$?",
+          "options": [
+            "\\(x = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6}\\)",
+            "\\(x = \\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3}\\)",
+            "\\(x = \\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4}\\)",
+            "\\(x = \\dfrac{\\pi}{2},\\ \\dfrac{3\\pi}{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Recall the exact value $\\sin 60° = \\frac{\\sqrt{3}}{2}$. Since sine is positive, the angle lies in the first and second quadrants.",
+          "solution": "The correct answer is \\(x = \\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3}\\).",
+          "steps": [
+            {
+              "explain": "Recall the exact value: \\(\\sin 60° = \\frac{\\sqrt{3}}{2}\\), which in radians is \\(\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}\\). This gives the reference angle.",
+              "work": "\\(\\sin^{-1}\\!\\left(\\frac{\\sqrt{3}}{2}\\right) = \\frac{\\pi}{3} \\Rightarrow \\alpha = \\frac{\\pi}{3}\\)"
+            },
+            {
+              "explain": "Determine which quadrants have positive sine. Sine is positive in Quadrant I (angles between \\(0\\) and \\(\\frac{\\pi}{2}\\)) and Quadrant II (angles between \\(\\frac{\\pi}{2}\\) and \\(\\pi\\)).",
+              "work": "\\(\\sin x > 0 \\text{ in Q1 and Q2}\\)",
+              "figure": {
+                "svg": "fig:95a0012bf2"
+              }
+            },
+            {
+              "explain": "Find the Q2 solution: subtract the reference angle from \\(\\pi\\) (since Q2 angles have the form \\(\\pi - \\alpha\\)).",
+              "work": "\\(x_2 = \\pi - \\frac{\\pi}{3} = \\frac{3\\pi}{3} - \\frac{\\pi}{3} = \\frac{2\\pi}{3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q1",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-EQ-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-mc2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A scatterplot shows points that trend downward from left to right, but the spread around the trend line is moderate. How would you describe the correlation between the quantities $x$ and $y$?",
+          "options": [
+            "A moderate negative correlation",
+            "A moderate positive correlation",
+            "A weak positive correlation",
+            "A strong negative correlation"
+          ],
+          "answer": 0,
+          "hint": "Check the direction (positive/negative) and strength (weak/moderate/strong) of the trend.",
+          "solution": "The correct answer is A moderate negative correlation.",
+          "steps": [
+            {
+              "explain": "Determine the direction of the correlation first. Points trending downward from left to right (as $x$ increases, $y$ decreases) means the correlation is negative.",
+              "work": "\\(\\text{Direction: as } x \\uparrow, y \\downarrow \\Rightarrow \\text{negative correlation}\\)"
+            },
+            {
+              "explain": "Determine the strength from the spread of points around the trend line. A tight cluster close to the line is strong; a wide, loose scatter is weak. \"Moderate spread\" sits in between — neither tightly hugging the line nor scattered randomly.",
+              "work": "\\(\\text{Spread: moderate} \\Rightarrow \\text{moderate strength}\\)"
+            },
+            {
+              "explain": "Combine the direction and strength: a negative direction with moderate strength gives a moderate negative correlation.",
+              "work": "\\(\\text{negative} + \\text{moderate} \\Rightarrow \\text{moderate negative correlation}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q2",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "STAT-BIV-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-mc3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For what values of $x$ is the curve $f(x) = 2x^3 + x^2$ concave down?",
+          "options": [
+            "\\(x < -\\dfrac{1}{6}\\)",
+            "\\(x > 6\\)",
+            "\\(x < -6\\)",
+            "\\(x > -\\dfrac{1}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find $f''(x)$ and set it less than zero.",
+          "solution": "The correct answer is \\(x < -\\dfrac{1}{6}\\).",
+          "steps": [
+            {
+              "explain": "To determine where a curve is concave down, we need to find its second derivative and set it to be strictly less than zero: \\(f''(x) < 0\\). First, let's find the first derivative \\(f'(x)\\).",
+              "work": "f'(x) = \\frac{d}{dx}(2x^3 + x^2) = 6x^2 + 2x"
+            },
+            {
+              "explain": "Next, find the second derivative \\(f''(x)\\) by differentiating the first derivative.",
+              "work": "f''(x) = \\frac{d}{dx}(6x^2 + 2x) = 12x + 2"
+            },
+            {
+              "explain": "Finally, set the second derivative to be less than zero and solve for \\(x\\) to find the interval where the curve is concave down.",
+              "work": "$$ \\begin{aligned} 12x + 2 &< 0 \\\\\\\\ 12x &< -2 \\\\\\\\ x &< -\\frac{1}{6} \\end{aligned} $$"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q3"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$f(x)=2x^3+x^2$ has $f'(x)=6x^2+2x$. What is $f''(x)$?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$12x+2$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$12x$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$6x+2$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Differentiate $f'(x)=6x^2+2x$ term by term."
+                ],
+                "explanation": "$f''(x)=12x+2$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "A curve is concave down where $f''(x)<0$. Solving $12x+2<0$ for $x$, what do you get?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$x<-\\dfrac16$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$x>-\\dfrac16$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$x<-\\dfrac{1}{12}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$12x<-2 \\Rightarrow x<-\\dfrac{2}{12}=-\\dfrac16$."
+                ],
+                "explanation": "$x<-\\dfrac16$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-mc4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the period of the curve $y = -3\\cos\\!\\left(2x - \\dfrac{\\pi}{4}\\right)$?",
+          "options": [
+            "\\(3\\)",
+            "\\(\\pi\\)",
+            "\\(2\\pi\\)",
+            "\\(-3\\)"
+          ],
+          "answer": 1,
+          "hint": "Period $= \\dfrac{2\\pi}{b}$ where $b$ is the coefficient of $x$.",
+          "solution": "The correct answer is \\(\\pi\\).",
+          "steps": [
+            {
+              "explain": "Write the function in standard form \\(y = A\\cos(bx + c) + d\\) and identify each parameter — only \\(b\\) (the coefficient of \\(x\\)) controls the period.",
+              "work": "\\(y = -3\\cos\\!\\left(2x - \\frac{\\pi}{4}\\right): \\quad A = -3, \\ b = 2, \\ c = -\\frac{\\pi}{4}\\)"
+            },
+            {
+              "explain": "The period formula for a cosine function is \\(T = \\frac{2\\pi}{|b|}\\). The negative amplitude and the phase shift do not affect the period — only \\(b\\) matters.",
+              "work": "\\(T = \\frac{2\\pi}{|b|} = \\frac{2\\pi}{2} = \\pi\\)",
+              "figure": {
+                "svg": "fig:a8a157161d"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020",
+            "course": "Advanced",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GRAPH-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-mc5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which one of the following is the set of all solutions to $2x^2 - 5x + 2 \\geq 0$?",
+          "options": [
+            "\\(\\left[\\dfrac{1}{2}, 2\\right]\\)",
+            "\\(\\left(\\dfrac{1}{2}, 2\\right)\\)",
+            "\\(\\left(-\\infty,\\ \\dfrac{1}{2}\\right) \\cup (2, \\infty)\\)",
+            "\\(\\left(-\\infty,\\ \\dfrac{1}{2}\\right] \\cup [2, \\infty)\\)"
+          ],
+          "answer": 3,
+          "hint": "Factor the quadratic and use a sign diagram. The parabola opens upward, so it is $\\geq 0$ outside the roots.",
+          "solution": "The correct answer is \\(\\left(-\\infty,\\ \\dfrac{1}{2}\\right] \\cup [2, \\infty)\\).",
+          "steps": [
+            {
+              "explain": "Factor the quadratic \\(2x^2 - 5x + 2\\). We need two numbers that multiply to \\(2 \\times 2 = 4\\) and add to \\(-5\\). These are \\(-4\\) and \\(-1\\): split the middle term.",
+              "work": "\\(2x^2 - 4x - x + 2 = 2x(x-2) - 1(x-2) = (2x-1)(x-2)\\)"
+            },
+            {
+              "explain": "Since the coefficient of \\(x^2\\) is positive (\\(+2\\)), the parabola opens upward. This means the quadratic is positive (≥ 0) outside the two roots and negative between them.",
+              "work": "\\(\\text{Parabola opens up} \\Rightarrow \\geq 0 \\text{ when } x \\leq \\tfrac{1}{2} \\text{ or } x \\geq 2\\)"
+            },
+            {
+              "explain": "Verify with a sign diagram. Pick \\(x = 0\\) (between roots): \\(2(0)^2 - 5(0) + 2 = 2 > 0\\)? No, \\(2 > 0\\)… wait, \\(x=0\\) is left of \\(\\frac{1}{2}\\), outside the roots. Pick \\(x = 1\\) (between roots): \\(2 - 5 + 2 = -1 < 0\\) ✓.",
+              "work": "\\(x=1: (2(1)-1)(1-2) = (1)(-1) = -1 < 0 \\checkmark\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q5"
+          },
+          "dna": {
+            "dnaId": "ALG-EQ-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-mc6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is the value of $f'(x)$ if $f(x) = 3x^4(4-x)^3$?",
+          "options": [
+            "\\(3x^3(4-x)^2(7x-16)\\)",
+            "\\(3x^3(4-x)^2(16-7x)\\)",
+            "\\(3x^3(4-x)^3(16-7x)\\)",
+            "\\(3x^3(4-x)^3(7x-16)\\)"
+          ],
+          "answer": 1,
+          "hint": "Apply the product rule: $(uv)' = u'v + uv'$ with $u = 3x^4$ and $v = (4-x)^3$.",
+          "solution": "The correct answer is \\(3x^3(4-x)^2(16-7x)\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(u = 3x^4 \\qquad v = (4-x)^3\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(u' = 12x^3\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(v' = -3(4-x)^2\\)"
+            },
+            {
+              "explain": "Final answer: 3x^3(4-x)^2(16-7x). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(3x^3(4-x)^2(16-7x)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q6",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S0",
+                "objective": "The question asks for the value of the HIGHLIGHTED notation above. What does $f'(x)$ mean?",
+                "axis": "recognition",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "The derivative of $f(x)$ — how fast $f$ is changing"
+                  },
+                  {
+                    "id": "b",
+                    "label": "The value of $f(x)$ at $x=0$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "The inverse function of $f(x)$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "The prime symbol $'$ after a function name is the standard notation for \"the derivative of\"."
+                ],
+                "explanation": "$f'(x)$ means \"the derivative of $f(x)$\" — that's what this whole question is asking you to find.",
+                "highlight": {
+                  "before": "What is the value of ",
+                  "mark": "$f'(x)$",
+                  "after": " if $f(x) = 3x^4(4-x)^3$?"
+                }
+              },
+              {
+                "step_id": "S1",
+                "objective": "The HIGHLIGHTED expression above is what you need to differentiate. It has two separate factors, $3x^4$ and $(4-x)^3$, multiplied together. Which rule does that structure need?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "Product rule (plus chain rule, since $(4-x)^3$ is itself a composition)"
+                  },
+                  {
+                    "id": "b",
+                    "label": "Quotient rule"
+                  },
+                  {
+                    "id": "c",
+                    "label": "Power rule alone, with no product involved"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Two genuinely separate pieces multiplied together — that's the signature of the product rule, $\\frac{d}{dx}[uv]=u'v+uv'$."
+                ],
+                "explanation": "Product rule for the two factors, and chain rule inside it to differentiate $(4-x)^3$.",
+                "highlight": {
+                  "before": "What is the value of $f'(x)$ if $f(x) = $",
+                  "mark": "$3x^4(4-x)^3$",
+                  "after": "?"
+                }
+              },
+              {
+                "step_id": "S2",
+                "objective": "The inner factor here is $4-x$ — FOUR MINUS $x$, not $x-4$. What is $\\dfrac{d}{dx}[4-x]$?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$-1$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$1$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$4$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Differentiate term by term: $\\dfrac{d}{dx}[4]=0$ and $\\dfrac{d}{dx}[-x]=-1$.",
+                  "This is the opposite sign from a more familiar inner expression like $x-4$ — don't assume it's $+1$."
+                ],
+                "explanation": "$\\dfrac{d}{dx}[4-x]=-1$ — this negative sign is the main trap in this particular question."
+              },
+              {
+                "step_id": "S3",
+                "objective": "Using $u=3x^4$ ($u'=12x^3$) and $v=(4-x)^3$ ($v'=3(4-x)^2\\times(-1)=-3(4-x)^2$), the product rule gives $12x^3(4-x)^3-9x^4(4-x)^2$. Both terms share a common factor of $x^3(4-x)^2$ — factoring it out, what is left inside the brackets?",
+                "axis": "simplify_and_verify",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$4(4-x)-3x=16-7x$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$4(4-x)+3x=16-x$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$3(4-x)-4x=12-7x$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$12x^3(4-x)^3=x^3(4-x)^2\\times 4(4-x)$, and $9x^4(4-x)^2=x^3(4-x)^2\\times 3x$ — check which coefficient (4 or 3) goes with which term before subtracting.",
+                  "$4(4-x)-3x=16-4x-3x=16-7x$."
+                ],
+                "explanation": "$3x^3(4-x)^2(16-7x)$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-mc7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The graph of $y = f(x)$ has a stationary point at $(2, -3)$. Which of the following is a stationary point of $y = -f\\!\\left(\\dfrac{x}{2}\\right) - 5$?",
+          "options": [
+            "\\((4, 2)\\)",
+            "\\((4,\\ -2)\\)",
+            "\\((1, 2)\\)",
+            "\\((1,\\ -2)\\)"
+          ],
+          "answer": 1,
+          "hint": "If $f$ has a stationary point at $(2, -3)$, apply the transformations one step at a time: horizontal dilation $\\times 2$ (replace $x \\to \\frac{x}{2}$), then reflect in $x$-axis, then shift down by 5.",
+          "solution": "The correct answer is \\((4,\\ -2)\\).",
+          "steps": [
+            {
+              "explain": "The original stationary point is at \\((2, -3)\\), meaning \\(f(2) = -3\\) and \\(f'(2) = 0\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\((x_0, y_0) = (2,\\ -3)\\)"
+            },
+            {
+              "explain": "The transformation \\(y = -f\\!\\left(\\frac{x}{2}\\right) - 5\\) involves three steps. First: replacing \\(x\\) with \\(\\frac{x}{2}\\) is a horizontal dilation by factor 2 — every \\(x\\)-coordinate doubles.",
+              "work": "\\(x_0 = 2 \\xrightarrow{\\times 2} x = 4\\)"
+            },
+            {
+              "explain": "Second: the negative sign in front of \\(f\\) reflects the graph in the \\(x\\)-axis — every \\(y\\)-coordinate is negated.",
+              "work": "\\(y_0 = -3 \\xrightarrow{\\text{negate}} y = -(-3) = 3\\)"
+            },
+            {
+              "explain": "Third: subtracting 5 shifts the graph down by 5 — subtract 5 from the \\(y\\)-coordinate. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(y = 3 - 5 = -2\\)"
+            },
+            {
+              "explain": "A stationary point remains stationary under these transformations (differentiability is preserved). The new stationary point is at \\((4, -2)\\).",
+              "work": "\\((4,\\ -2)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020",
+            "course": "Advanced",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-TRANS-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-mc8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the series $2\\pi,\\ \\pi,\\ \\dfrac{\\pi}{2},\\ \\ldots$, calculate the exact value of the sum of the first 6 terms.",
+          "options": [
+            "\\(\\dfrac{63\\pi}{16}\\)",
+            "\\(\\dfrac{7\\pi}{2}\\)",
+            "\\(\\dfrac{977\\pi}{256}\\)",
+            "\\(\\dfrac{63\\pi}{64}\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify $a$ and $r$, then use $S_n = \\dfrac{a(1-r^n)}{1-r}$.",
+          "solution": "The correct answer is \\(\\dfrac{63\\pi}{16}\\).",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a\\) and common ratio \\(r\\). The first term is \\(a = 2\\pi\\). To find \\(r\\), divide the second term by the first.",
+              "work": "\\(r = \\frac{\\pi}{2\\pi} = \\frac{1}{2}\\)"
+            },
+            {
+              "explain": "Confirm the ratio is consistent: \\(\\frac{\\pi/2}{\\pi} = \\frac{1}{2}\\) ✓. This is a geometric series with \\(a = 2\\pi\\), \\(r = \\frac{1}{2}\\), \\(n = 6\\).",
+              "work": "\\(a = 2\\pi, quad r = \\tfrac{1}{2}, quad n = 6\\)"
+            },
+            {
+              "explain": "Compute \\(\\left(\\frac{1}{2}\\right)^6 = \\frac{1}{64}\\), so \\(1 - \\frac{1}{64} = \\frac{63}{64}\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(\\left(\\tfrac{1}{2}\\right)^6 = \\frac{1}{64} \\Rightarrow 1 - \\frac{1}{64} = \\frac{63}{64}\\)"
+            },
+            {
+              "explain": "The denominator is \\(1 - \\frac{1}{2} = \\frac{1}{2}\\). Dividing by \\(\\frac{1}{2}\\) is the same as multiplying by 2.",
+              "work": "\\(S_6 = \\frac{2\\pi \\cdot \\frac{63}{64}}{\\frac{1}{2}} = 2\\pi \\cdot \\frac{63}{64} \\times 2 = \\frac{4\\pi \\cdot 63}{64} = \\frac{63\\pi}{16}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q8"
+          },
+          "dna": {
+            "dnaId": "SERIES-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-mc9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Consider the region bounded by the $x$-axis, the $y$-axis, the line $y = 3$, and the curve $y = \\ln(x-1)$. The exact value of the area of this region is:",
+          "options": [
+            "\\(e^3 - 1\\)",
+            "\\(e^3 + 2\\)",
+            "\\(3e^2\\)",
+            "\\(3e^3 - e^{-3} + 2\\)"
+          ],
+          "answer": 1,
+          "hint": "Express $x$ as a function of $y$ and integrate with respect to $y$ from $y=0$ to $y=3$.",
+          "solution": "The correct answer is \\(e^3 + 2\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\ln(x-1) \\Rightarrow e^y = x - 1 \\Rightarrow x = e^y + 1\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\text{Area} = \\int_0^3 (e^y + 1)\\,dy\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\int_0^3 (e^y + 1)\\,dy = \\left[e^y + y\\right]_0^3\\)"
+            },
+            {
+              "explain": "Final answer: e^3 + 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(e^3 + 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q9"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "The region is bounded by the $y$-axis, $x$-axis, the line $y=3$, and the curve $y=\\ln(x-1)$. Since the curve is easiest to describe as \"$x$ in terms of $y$\", how should you set up the area?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "Integrate horizontally: rewrite as $x=e^y+1$ and find $\\displaystyle\\int_0^3 x\\,dy$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "Integrate vertically as usual: $\\displaystyle\\int_a^b \\ln(x-1)\\,dx$ directly"
+                  },
+                  {
+                    "id": "c",
+                    "label": "The area can't be found without a diagram"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$y=\\ln(x-1) \\Rightarrow x=e^y+1$ — rewriting $x$ as a function of $y$ lets you integrate with respect to $y$ (horizontal strips), which matches boundaries that are horizontal/vertical LINES ($y$-axis, $y=3$)."
+                ],
+                "explanation": "Rewrite the curve as $x=e^y+1$ and integrate with respect to $y$ from $y=0$ to $y=3$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Evaluating $\\displaystyle\\int_0^3 (e^y+1)\\,dy = \\left[e^y+y\\right]_0^3$, what is the result?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$(e^3+3)-(1+0)=e^3+2$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$(e^3+3)-0=e^3+3$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$e^3-1$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "At $y=0$: $e^0+0=1$. Don't forget to subtract this lower-limit value."
+                ],
+                "explanation": "$(e^3+3)-(e^0+0)=e^3+3-1=e^3+2$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-mc10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A lie detector was used on 200 suspects. Of the 165 accurate tests, 95 were true statements. What is the probability that a person selected at random, given that their test was accurate, made a true statement?",
+          "options": [
+            "\\(\\dfrac{95}{105}\\)",
+            "\\(\\dfrac{95}{200}\\)",
+            "\\(\\dfrac{95}{165}\\)",
+            "\\(\\dfrac{165}{200}\\)"
+          ],
+          "answer": 2,
+          "hint": "Use conditional probability: $P(\\text{true} \\mid \\text{accurate}) = \\dfrac{P(\\text{true AND accurate})}{P(\\text{accurate})}$.",
+          "solution": "The correct answer is \\(\\dfrac{95}{165}\\).",
+          "steps": [
+            {
+              "explain": "Understand what is being asked: we want \\(P(\\text{true statement} \\mid \\text{test was accurate})\\). This is conditional probability — we already know the test was accurate (this restricts our sample space).",
+              "work": "\\(P(\\text{true} \\mid \\text{accurate}) = \\frac{P(\\text{true AND accurate})}{P(\\text{accurate})}\\)"
+            },
+            {
+              "explain": "From the data: there are 165 accurate tests in total. Of these, 95 were accurate AND true. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(n(\\text{accurate}) = 165 \\qquad n(\\text{true AND accurate}) = 95\\)"
+            },
+            {
+              "explain": "Apply the conditional probability formula using counts (the total of 200 cancels). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(P(\\text{true} \\mid \\text{accurate}) = \\frac{95/200}{165/200} = \\frac{95}{165}\\)"
+            },
+            {
+              "explain": "This fraction can be simplified by dividing numerator and denominator by 5: \\(\\frac{95}{165} = \\frac{19}{33}\\).",
+              "work": "\\(\\frac{95}{165} = \\frac{19}{33} \\approx 0.576\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q10",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-COND-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q11a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find a primitive of $\\dfrac{1}{5x+1}$.",
+          "options": [
+            "\\(\\dfrac{1}{5}\\ln|5x+1| + C\\)",
+            "\\(5\\ln|5x+1| + C\\)",
+            "\\(\\ln|5x+1| + C\\)",
+            "\\(\\dfrac{1}{(5x+1)^2} + C\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the standard form $\\displaystyle\\int \\frac{1}{ax+b}\\,dx = \\frac{1}{a}\\ln|ax+b| + C$.",
+          "solution": "The correct answer is \\(\\dfrac{1}{5}\\ln|5x+1| + C\\).",
+          "steps": [
+            {
+              "explain": "Recognise this is an integral of the form \\(\\int \\frac{1}{ax+b}\\,dx\\). The standard result is \\(\\frac{1}{a}\\ln|ax+b| + C\\).",
+              "work": "\\(\\int \\frac{1}{ax+b}\\,dx = \\frac{1}{a}\\ln|ax+b| + C\\)"
+            },
+            {
+              "explain": "Apply the formula: the coefficient in front of \\(\\ln\\) is \\(\\frac{1}{a} = \\frac{1}{5}\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(\\int \\frac{1}{5x+1}\\,dx = \\frac{1}{5}\\ln|5x+1| + C\\)"
+            },
+            {
+              "explain": "Verify by differentiating the answer using the chain rule: \\(\\frac{d}{dx}\\!\\left[\\frac{1}{5}\\ln|5x+1|\\right] = \\frac{1}{5} \\cdot \\frac{5}{5x+1} = \\frac{1}{5x+1}\\) ✓.",
+              "work": "\\(\\frac{d}{dx}\\left[\\frac{1}{5}\\ln|5x+1|\\right] = \\frac{1}{5x+1} \\checkmark\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11(a)"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$\\dfrac{1}{5x+1}$ has an inner linear expression $5x+1$. Which rule applies?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "Reverse chain rule: $\\int\\dfrac{1}{ax+b}\\,dx=\\dfrac1a\\ln|ax+b|+C$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "Plain log rule: $\\int\\dfrac1x\\,dx=\\ln|x|+C$, ignoring the $5x+1$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "Power rule on the denominator"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "A log-form integral with a linear inner expression always needs a $\\frac1a$ correction factor, where $a$ is the coefficient of $x$."
+                ],
+                "explanation": "$\\int\\dfrac{1}{ax+b}\\,dx=\\dfrac1a\\ln|ax+b|+C$ — here $a=5$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Substituting $a=5$, what is the primitive?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$\\dfrac15\\ln|5x+1|+C$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$5\\ln|5x+1|+C$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$\\ln|5x+1|+C$ (no correction factor)"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "The correction factor is $\\dfrac1a$, i.e. $\\dfrac15$ — not $a$ itself, and not omitted entirely."
+                ],
+                "explanation": "$\\dfrac15\\ln|5x+1|+C$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q11bi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A boxplot shows the heights of Year 11 students. The median is at 160 cm and the minimum is at 150 cm. What percentage of Year 11 students have a height below 160 cm?",
+          "options": [
+            "50%",
+            "25%",
+            "75%",
+            "100%"
+          ],
+          "answer": 0,
+          "hint": "The median divides a dataset in half.",
+          "solution": "The correct answer is \\(50%\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\text{Median} \\Rightarrow 50\\% \\text{ below, } 50\\% \\text{ above}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(50\\%\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(50%\\)"
+            },
+            {
+              "explain": "Final answer: 50%. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(50%\\)"
+            }
+          ],
+          "meta": {
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "STAT-DESC-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "abb2020-q11bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "From a boxplot, 25% of Year 11 students are taller than 175 cm, and 35% of Year 12 students are taller than 175 cm. The number of students taller than 175 cm is the same for both year groups. If Year 11 has 140 students, how many students are in Year 12?",
+          "options": [
+            "100",
+            "140",
+            "75",
+            "120"
+          ],
+          "answer": 0,
+          "hint": "Find the number of Year 11 students above 175 cm, then use that to find the total for Year 12.",
+          "solution": "The correct answer is \\(100\\).",
+          "steps": [
+            {
+              "explain": "From the boxplot, 25% of Year 11 students are taller than 175 cm. Year 11 has 140 students. Calculate the number of Year 11 students above 175 cm.",
+              "work": "\\(25\\% \\times 140 = 0.25 \\times 140 = 35 \\text{ students}\\)"
+            },
+            {
+              "explain": "We are told the number of students taller than 175 cm is the same for both year groups. So Year 12 also has 35 students above 175 cm.",
+              "work": "\\(n_{\\text{Year 12, above 175}} = 35\\)"
+            },
+            {
+              "explain": "For Year 12, 35% of students are taller than 175 cm. Let \\(N\\) be the total number of Year 12 students. Then \\(35\\% \\times N = 35\\).",
+              "work": "\\(0.35 \\times N = 35\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11(b)(ii)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "STAT-DESC-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q11c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the common ratio of a geometric series with a first term of $\\sqrt{2}$ and a limiting sum of $\\dfrac{3\\sqrt{2}}{2}$.",
+          "options": [
+            "\\(r = \\dfrac{1}{3}\\)",
+            "\\(r = \\dfrac{2}{3}\\)",
+            "\\(r = \\dfrac{1}{2}\\)",
+            "\\(r = \\dfrac{\\sqrt{2}}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use $S_\\infty = \\dfrac{a}{1-r}$ and solve for $r$.",
+          "solution": "The correct answer is \\(r = \\dfrac{1}{3}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(S_\\infty = \\frac{a}{1-r}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\frac{\\sqrt{2}}{1-r} = \\frac{3\\sqrt{2}}{2}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(2\\sqrt{2} = 3\\sqrt{2}(1-r)\\)"
+            },
+            {
+              "explain": "Final answer: r = \\dfrac{1}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(r = \\dfrac{1}{3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11(c)"
+          },
+          "dna": {
+            "dnaId": "SERIES-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q11d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find $\\displaystyle\\int \\frac{8x^3 - 3}{x^2}\\,dx$.",
+          "options": [
+            "\\(4x^2 + \\dfrac{3}{x} + C\\)",
+            "\\(4x^2 - \\dfrac{3}{x} + C\\)",
+            "\\(8x - \\dfrac{3}{x^2} + C\\)",
+            "\\(4x^2 + 3\\ln|x| + C\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the fraction and integrate term by term.",
+          "solution": "The correct answer is \\(4x^2 + \\dfrac{3}{x} + C\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\frac{8x^3 - 3}{x^2} = \\frac{8x^3}{x^2} - \\frac{3}{x^2} = 8x - 3x^{-2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\int(8x - 3x^{-2})\\,dx\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\int 8x\\,dx = 4x^2\\)"
+            },
+            {
+              "explain": "Final answer: 4x^2 + \\dfrac{3}{x} + C. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(4x^2 + \\dfrac{3}{x} + C\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11(d)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "Before integrating, split $\\dfrac{8x^3-3}{x^2}$ into two separate fractions. What do you get?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$8x - \\dfrac{3}{x^2}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$8x^3 - \\dfrac{3}{x^2}$ (no simplification)"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$8x + \\dfrac{3}{x^2}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$\\dfrac{8x^3}{x^2}=8x^{3-2}=8x$, and $\\dfrac{-3}{x^2}$ keeps its negative sign — split term by term before integrating."
+                ],
+                "explanation": "$\\dfrac{8x^3-3}{x^2}=8x-\\dfrac{3}{x^2}=8x-3x^{-2}$ — much easier to integrate term by term than the original fraction."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Integrating $8x-3x^{-2}$ term by term (power rule on each), what do you get?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$4x^2+\\dfrac3x+C$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$4x^2-\\dfrac3x+C$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$4x^2+3\\ln|x|+C$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$\\int -3x^{-2}\\,dx = -3\\times\\dfrac{x^{-1}}{-1}=3x^{-1}=\\dfrac3x$ — two negative signs (the $-3$ and the $-1$ power-rule denominator) cancel to a $+$."
+                ],
+                "explanation": "$4x^2+\\dfrac3x+C$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q11ei",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A curve has $\\dfrac{dy}{dx} = x^3 + 2x - 7$. Find $\\dfrac{d^2y}{dx^2}$.",
+          "options": [
+            "\\(3x^2 + 2\\)",
+            "\\(3x^2 + 2x\\)",
+            "\\(x^3 + 2x - 7\\)",
+            "\\(3x^2 - 4x + 1\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate $\\dfrac{dy}{dx}$ with respect to $x$.",
+          "solution": "The correct answer is \\(3x^2 + 2\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\frac{d^2y}{dx^2} = \\frac{d}{dx}(x^3 + 2x - 7)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(= 3x^2 + 2 + 0\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\frac{d^2y}{dx^2} = 3x^2 + 2\\)"
+            },
+            {
+              "explain": "Final answer: 3x^2 + 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(3x^2 + 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11(e)(i)"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "Given $\\dfrac{dy}{dx} = x^3+2x-7$, what do you need to do to find $\\dfrac{d^2y}{dx^2}$?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "Differentiate $\\dfrac{dy}{dx}$ again"
+                  },
+                  {
+                    "id": "b",
+                    "label": "Integrate $\\dfrac{dy}{dx}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "Substitute $x=0$ into $\\dfrac{dy}{dx}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "The second derivative is the derivative OF the first derivative."
+                ],
+                "explanation": "The second derivative is found by differentiating $\\dfrac{dy}{dx}$ a second time."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Differentiating $x^3+2x-7$ term by term, what is $\\dfrac{d^2y}{dx^2}$?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$3x^2+2$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$3x^2+2x$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$x^3+2x-7$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Each term uses the power rule; the derivative of the constant $-7$ is $0$."
+                ],
+                "explanation": "$\\dfrac{d}{dx}[x^3]=3x^2$, $\\dfrac{d}{dx}[2x]=2$, $\\dfrac{d}{dx}[-7]=0$, giving $3x^2+2$."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q11eii",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Show that $\\dfrac{d^2y}{dx^2} \\geq 2$ for all values of $x$, given that $\\dfrac{dy}{dx} = x^3 + 2x - 7$.",
+          "answer": "Since \\(3x^2 \\geq 0\\) for all \\(x\\), we have \\(d^2y/dx^2 = 3x^2 + 2 \\geq 0 + 2 = 2\\).",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "Since \\(3x^2 \\geq 0\\) for all \\(x\\), we have \\(d^2y/dx^2 = 3x^2 + 2 \\geq 0 + 2 = 2\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\frac{d^2y}{dx^2} = 3x^2 + 2\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(x^2 \\geq 0 \\text{ for all } x \\in \\mathbb{R}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(3x^2 \\geq 0\\)"
+            },
+            {
+              "explain": "Final answer: Since \\(3x^2 \\geq 0\\) for all \\(x\\), we have \\(d^2y/dx^2 = 3x^2 + 2 \\geq 0 + 2 = 2\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(Since \\(3x^2 \\geq 0\\) for all \\(x\\), we have \\(d^2y/dx^2 = 3x^2 + 2 \\geq 0 + 2 = 2\\).\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11(e)(ii)"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "You already found $\\dfrac{d^2y}{dx^2}=3x^2+2$. To show it's always $\\geq 2$, what do you know about $3x^2$ for every real $x$?",
+                "axis": "recognition",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$3x^2 \\geq 0$ for all real $x$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$3x^2 \\leq 0$ for all real $x$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$3x^2$ is always strictly positive (never $0$)"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "A square is never negative — but it CAN equal $0$ (at $x=0$), so \"always positive\" is too strong."
+                ],
+                "explanation": "$3x^2 \\geq 0$ for all real $x$ (equal to $0$ only at $x=0$)."
+              },
+              {
+                "step_id": "S2",
+                "objective": "If $3x^2 \\geq 0$, what is the smallest possible value of $3x^2+2$?",
+                "axis": "verification",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$2$ (when $x=0$)"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$0$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "There is no smallest value"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Adding $2$ to something that's at least $0$ gives something that's at least $2$."
+                ],
+                "explanation": "The minimum of $3x^2+2$ is $2$, reached at $x=0$ — so $\\dfrac{d^2y}{dx^2}\\geq2$ for all $x$. Now write the full proof."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q11eiii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A curve has $\\dfrac{dy}{dx} = x^3 + 2x - 7$ and passes through the point $P(2, 4)$. Find $y$ in terms of $x$.",
+          "options": [
+            "\\(y = \\dfrac{x^4}{4} + x^2 - 7x + 10\\)",
+            "\\(y = \\dfrac{x^4}{4} + x^2 - 7x + 4\\)",
+            "\\(y = \\dfrac{x^4}{4} + x^2 - 7x - 6\\)",
+            "\\(y = \\dfrac{x^4}{4} + x^2 - 7x + C\\)"
+          ],
+          "answer": 0,
+          "hint": "Integrate to find $y$, then substitute the point $P(2,4)$ to find the constant.",
+          "solution": "The correct answer is \\(y = \\dfrac{x^4}{4} + x^2 - 7x + 10\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\int (x^3 + 2x - 7)\\,dx\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(y = \\frac{x^4}{4} + x^2 - 7x + C\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(4 = \\frac{2^4}{4} + 2^2 - 7(2) + C\\)"
+            },
+            {
+              "explain": "Final answer: y = \\dfrac{x^4}{4} + x^2 - 7x + 10. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y = \\dfrac{x^4}{4} + x^2 - 7x + 10\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11(e)(iii)"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "Integrating $\\dfrac{dy}{dx}=x^3+2x-7$ term by term, what is the general antiderivative?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$y=\\dfrac{x^4}{4}+x^2-7x+C$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$y=\\dfrac{x^4}{4}+2x^2-7x+C$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$y=3x^2+2+C$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Power rule on each term: $\\int x^3\\,dx=\\dfrac{x^4}{4}$, $\\int 2x\\,dx=x^2$, $\\int -7\\,dx=-7x$."
+                ],
+                "explanation": "$y=\\dfrac{x^4}{4}+x^2-7x+C$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Substituting the initial condition $P(2,4)$ (i.e. $x=2,y=4$) into $y=\\dfrac{x^4}{4}+x^2-7x+C$ and solving, what is $C$?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$C=10$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$C=4$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$C=-6$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$4=\\dfrac{16}{4}+4-14+C=4+4-14+C=-6+C$ — solve for $C$."
+                ],
+                "explanation": "$4=-6+C \\Rightarrow C=10$, giving $y=\\dfrac{x^4}{4}+x^2-7x+10$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q11eiv",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find an equation for the normal to the curve at $P(2, 4)$, given $\\dfrac{dy}{dx} = x^3 + 2x - 7$. Write your answer in the form $ax + by + c = 0$ where $a$, $b$ and $c$ are integers.",
+          "options": [
+            "\\(x + 5y - 22 = 0\\)",
+            "\\(5x - y - 6 = 0\\)",
+            "\\(x + 5y - 20 = 0\\)",
+            "\\(x - 5y + 18 = 0\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the gradient of the tangent at $P$, then the gradient of the normal is its negative reciprocal.",
+          "solution": "The correct answer is \\(x + 5y - 22 = 0\\).",
+          "steps": [
+            {
+              "explain": "Find the gradient of the tangent at \\(x = 2\\) by substituting into \\(\\frac{dy}{dx} = x^3 + 2x - 7\\).",
+              "work": "\\(m_{\\text{tan}} = 2^3 + 2(2) - 7 = 8 + 4 - 7 = 5\\)"
+            },
+            {
+              "explain": "The gradient of the normal is the negative reciprocal of the tangent gradient. If the tangent has slope 5, the normal has slope \\(-\\frac{1}{5}\\).",
+              "work": "\\(m_{\\text{norm}} = -\\frac{1}{m_{\\text{tan}}} = -\\frac{1}{5}\\)"
+            },
+            {
+              "explain": "Use the point-gradient formula \\(y - y_1 = m(x - x_1)\\) with point \\(P(2, 4)\\) and \\(m = -\\frac{1}{5}\\).",
+              "work": "\\(y - 4 = -\\frac{1}{5}(x - 2)\\)"
+            },
+            {
+              "explain": "Rearrange into the form \\(ax + by + c = 0\\) by moving all terms to the left side. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(x + 5y - 20 - 2 = 0 \\Rightarrow x + 5y - 22 = 0\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q11(e)(iv)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-TAN-01",
+            "dnaConfidence": 1,
+            "dnaReclassifiedAt": "2026-08-15T12:52:47.329Z",
+            "dnaReclassifiedReason": "Question asks for the equation of the NORMAL to a curve — tests forming a tangent/normal line from a derivative (CALC-TAN-01), not plain direct differentiation. Same pattern as fortst2020-q8."
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q12ai",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "Let \\(h(x) = (x-2)(x^2+1)\\). Find where the graph of \\(y = h(x)\\) cuts the \\(x\\)-axis and the \\(y\\)-axis.",
+          "parts": [
+            {
+              "id": "abb2020-q12ai-x",
+              "type": "mc",
+              "stem": "\\(x\\)-intercept: find where the graph of \\(y = h(x) = (x-2)(x^2+1)\\) cuts the \\(x\\)-axis.",
+              "options": [
+                "\\((-2, 0)\\)",
+                "\\((0, 2)\\)",
+                "\\((2, 0)\\)",
+                "\\((2, 0)\\) and \\((\\pm i, 0)\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "To find the \\(x\\)-intercept(s), set \\(h(x) = 0\\).",
+                  "work": "(x - 2)(x^2 + 1) = 0"
+                },
+                {
+                  "explain": "Using the Null Factor Law, set each factor equal to zero. The first factor gives \\(x = 2\\).",
+                  "work": "x - 2 = 0 \\implies x = 2"
+                },
+                {
+                  "explain": "For the second factor, \\(x^2 + 1 = 0\\) has no real solutions because \\(x^2 \\geq 0\\) for every real \\(x\\), so \\(x^2 + 1 \\geq 1 > 0\\). Therefore there is only one real \\(x\\)-intercept.",
+                  "work": "x^2 + 1 = 0 \\implies \\text{no real solutions} \\implies x\\text{-intercept: } (2, 0)"
+                }
+              ]
+            },
+            {
+              "id": "abb2020-q12ai-y",
+              "type": "mc",
+              "stem": "\\(y\\)-intercept: find where the graph of \\(y = h(x) = (x-2)(x^2+1)\\) cuts the \\(y\\)-axis.",
+              "options": [
+                "\\((0, 0)\\)",
+                "\\((0, -2)\\)",
+                "\\((-2, 0)\\)",
+                "\\((0, 2)\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "To find the \\(y\\)-intercept, substitute \\(x = 0\\) into \\(h(x)\\).",
+                  "work": "h(0) = (0 - 2)(0^2 + 1)"
+                },
+                {
+                  "explain": "Simplify each factor: \\(0 - 2 = -2\\), and \\(0^2 + 1 = 1\\).",
+                  "work": "h(0) = (-2)(1) = -2"
+                },
+                {
+                  "explain": "So the graph cuts the \\(y\\)-axis at the point where \\(y = -2\\).",
+                  "work": "y\\text{-intercept: } (0, -2)"
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "hint": "For the $x$-intercept, set $h(x) = 0$. For the $y$-intercept, evaluate $h(0)$.",
+          "solution": "The correct answer is \\(x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, -2)\\).",
+          "steps": [
+            {
+              "explain": "To find the \\(y\\)-intercept, we substitute \\(x = 0\\) into the function \\(h(x)\\).",
+              "work": "h(0) = (0 - 2)(0^2 + 1) = (-2)(1) = -2"
+            },
+            {
+              "explain": "This means the graph cuts the \\(y\\)-axis at the point \\((0, -2)\\). Next, to find the \\(x\\)-intercepts, we set \\(h(x) = 0\\).",
+              "work": "(x - 2)(x^2 + 1) = 0"
+            },
+            {
+              "explain": "Using the Null Factor Law, we set each factor equal to zero. The first factor gives \\(x = 2\\).",
+              "work": "x - 2 = 0 \\implies x = 2"
+            },
+            {
+              "explain": "For the second factor, \\(x^2 + 1 = 0\\) has no real solutions because the square of any real number is always non-negative. Therefore, there is only one \\(x\\)-intercept at \\((2, 0)\\).",
+              "work": "x^2 + 1 = 0 \\implies \\text{No real solutions}"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q12(a)(i)"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q12aii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the coordinates of the stationary points on the curve $y = h(x) = (x-2)(x^2+1)$ and determine their nature.",
+          "options": [
+            "Local max at \\(\\left(\\frac{1}{3}, -\\frac{50}{27}\\right)\\) and local min at \\((1, -2)\\)",
+            "Local min at \\(\\left(\\frac{1}{3}, -\\frac{50}{27}\\right)\\) and local max at \\((1, -2)\\)",
+            "Local max at \\(\\left(\\frac{1}{3}, \\frac{50}{27}\\right)\\) and local min at \\((1, 2)\\)",
+            "Stationary points at \\(x = \\frac{1}{3}\\) and \\(x = 1\\), both are inflection points"
+          ],
+          "answer": 0,
+          "hint": "Expand $h(x)$, find $h'(x)$, set equal to zero, then use the second derivative to determine nature.",
+          "solution": "The correct answer is Local max at \\(\\left(\\frac{1}{3}, -\\frac{50}{27}\\right)\\) and local min at \\((1, -2)\\).",
+          "steps": [
+            {
+              "explain": "To find the stationary points, we first need to find the derivative \\(h'(x)\\). Expanding the original function makes it much easier to differentiate.",
+              "work": "$$ \\begin{aligned} h(x) &= (x - 2)(x^2 + 1) \\\\\\\\ &= x^3 - 2x^2 + x - 2 \\\\\\\\ h'(x) &= 3x^2 - 4x + 1 \\end{aligned} $$"
+            },
+            {
+              "explain": "Next, we set \\(h'(x) = 0\\) to find the \\(x\\)-coordinates of the stationary points. We can factorise the quadratic equation to solve for \\(x\\).",
+              "work": "$$ \\begin{aligned} 3x^2 - 4x + 1 &= 0 \\\\\\\\ (3x - 1)(x - 1) &= 0 \\\\\\\\ x &= \\frac{1}{3} \\text{ or } x = 1 \\end{aligned} $$"
+            },
+            {
+              "explain": "Now we determine the nature of each stationary point using the second derivative test. First, find \\(h''(x)\\).",
+              "work": "h''(x) = 6x - 4"
+            },
+            {
+              "explain": "Test \\(x = \\frac{1}{3}\\): The second derivative is negative, indicating a local maximum. Substitute \\(x = \\frac{1}{3}\\) back into the original function \\(h(x)\\) to find the \\(y\\)-coordinate.",
+              "work": "$$ \\begin{aligned} h''\\left(\\frac{1}{3}\\right) &= 6\\left(\\frac{1}{3}\\right) - 4 = -2 < 0 \\implies \\text{Local Maximum} \\\\\\\\ h\\left(\\frac{1}{3}\\right) &= \\left(\\frac{1}{3} - 2\\right)\\left(\\left(\\frac{1}{3}\\right)^2 + 1\\right) = \\left(-\\frac{5}{3}\\right)\\left(\\frac{10}{9}\\right) = -\\frac{50}{27} \\end{aligned} $$"
+            },
+            {
+              "explain": "Test \\(x = 1\\): The second derivative is positive, indicating a local minimum. Substitute \\(x = 1\\) into \\(h(x)\\) to find its \\(y\\)-coordinate.",
+              "work": "$$ \\begin{aligned} h''(1) &= 6(1) - 4 = 2 > 0 \\implies \\text{Local Minimum} \\\\\\\\ h(1) &= (1 - 2)(1^2 + 1) = (-1)(2) = -2 \\end{aligned} $$"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q12(a)(ii)"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "Expanding $h(x)=(x-2)(x^2+1)=x^3-2x^2+x-2$ and differentiating gives $h'(x)=3x^2-4x+1=(3x-1)(x-1)$. What are the stationary $x$-values?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$x=\\dfrac13$ and $x=1$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$x=3$ and $x=1$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$x=-\\dfrac13$ and $x=-1$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Setting each factor of $(3x-1)(x-1)=0$: $3x-1=0 \\Rightarrow x=\\tfrac13$, and $x-1=0 \\Rightarrow x=1$."
+                ],
+                "explanation": "$x=\\dfrac13$ and $x=1$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Using $h''(x)=6x-4$: at $x=\\tfrac13$, $h''=-2$ (negative); at $x=1$, $h''=2$ (positive). What is the classification of each?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "Local max at $x=\\tfrac13$ (concave down); local min at $x=1$ (concave up)"
+                  },
+                  {
+                    "id": "b",
+                    "label": "Local min at $x=\\tfrac13$; local max at $x=1$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "Both are horizontal points of inflection"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Negative $f''$ means concave down (a maximum); positive $f''$ means concave up (a minimum)."
+                ],
+                "explanation": "Local max at $\\left(\\tfrac13,-\\tfrac{50}{27}\\right)$, local min at $(1,-2)$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q12aiii",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Sketch the graph of $y = h(x) = (x-2)(x^2+1)$, showing stationary points and axes intercepts.",
+          "answer": "See the solution for the full sketch.",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "A sketch of \\(y = h(x)\\) showing the \\(x\\)-intercept at \\((2, 0)\\), \\(y\\)-intercept at \\((0, -2)\\), local maximum at \\(\\left(\\frac{1}{3}, -\\frac{50}{27}\\right)\\), and local minimum at \\((1, -2)\\).<br/>\n<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n<svg viewBox=\"0 0 400 300\" width=\"100%\" style=\"max-width:400px; background-color:white; border:1px solid #ccc; border-radius:8px;\">\n  <!-- Axes -->\n  <line x1=\"20\" y1=\"150\" x2=\"380\" y2=\"150\" stroke=\"#333\" stroke-width=\"2\" />\n  <line x1=\"100\" y1=\"20\" x2=\"100\" y2=\"280\" stroke=\"#333\" stroke-width=\"2\" />\n  \n  <!-- Labels -->\n  <text x=\"370\" y=\"140\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">x</text>\n  <text x=\"110\" y=\"30\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">y</text>\n  <text x=\"85\" y=\"145\" fill=\"#333\" font-size=\"12\" font-family=\"sans-serif\">O</text>\n\n  <!-- Curve -->\n  <polyline fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" points=\"60.0,275.0 64.0,267.8 68.0,261.4 72.0,255.5 76.0,250.3 80.0,245.6 84.0,241.5 88.0,237.9 92.0,234.8 96.0,232.2 100.0,230.0 104.0,228.2 108.0,226.8 112.0,225.7 116.0,224.9 120.0,224.4 124.0,224.1 128.0,224.1 132.0,224.2 136.0,224.6 140.0,225.0 144.0,225.5 148.0,226.2 152.0,226.8 156.0,227.5 160.0,228.1 164.0,228.7 168.0,229.2 172.0,229.6 176.0,229.9 180.0,230.0 184.0,229.9 188.0,229.6 192.0,229.0 196.0,228.1 200.0,226.9 204.0,225.3 208.0,223.4 212.0,221.0 216.0,218.3 220.0,215.0 224.0,211.2 228.0,207.0 232.0,202.1 236.0,196.7 240.0,190.6 244.0,183.9 248.0,176.5 252.0,168.4 256.0,159.6 260.0,150.0 264.0,139.6 268.0,128.4 272.0,116.3 276.0,103.3 280.0,89.4 284.0,74.5 288.0,58.7 292.0,41.8 296.0,24.0 300.0,5.0\" />\n  \n  <!-- y-intercept (0, -2) -->\n  <circle cx=\"100\" cy=\"230\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"35\" y=\"235\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">(0, -2)</text>\n\n  <!-- x-intercept (2, 0) -->\n  <circle cx=\"260\" cy=\"150\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"250\" y=\"140\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">(2, 0)</text>\n\n  <!-- local max (1/3, -50/27) -->\n  <circle cx=\"126.7\" cy=\"224.1\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"115\" y=\"215\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">Max (1/3, -50/27)</text>\n\n  <!-- local min (1, -2) -->\n  <circle cx=\"180\" cy=\"230\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"175\" y=\"245\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">Min (1, -2)</text>\n</svg>\n</div>\n",
+          "steps": [
+            {
+              "explain": "Step 1: Find the axes intercepts. Set \\(x = 0\\) to find the \\(y\\)-intercept, and set \\(h(x) = 0\\) to find the \\(x\\)-intercepts.",
+              "work": "$$ \\begin{aligned} h(0) &= (0 - 2)(0^2 + 1) = -2 \\implies y\\text{-intercept at } (0, -2) \\\\\\\\ h(x) &= 0 \\implies (x - 2)(x^2 + 1) = 0 \\implies x = 2 \\implies x\\text{-intercept at } (2, 0) \\end{aligned} $$"
+            },
+            {
+              "explain": "Step 2: Find the stationary points by setting the first derivative \\(h'(x)\\) to zero. It is easier to expand \\(h(x)\\) first before differentiating.",
+              "work": "$$ \\begin{aligned} h(x) &= x^3 - 2x^2 + x - 2 \\\\\\\\ h'(x) &= 3x^2 - 4x + 1 = 0 \\\\\\\\ (3x - 1)(x - 1) &= 0 \\implies x = \\frac{1}{3} \\text{ or } x = 1 \\end{aligned} $$"
+            },
+            {
+              "explain": "Step 3: Find the \\(y\\)-coordinates of the stationary points and use the second derivative \\(h''(x) = 6x - 4\\) to determine their nature (max or min).",
+              "work": "$$ \\begin{aligned} x &= \\frac{1}{3}: \\quad h\\left(\\frac{1}{3}\\right) = -\\frac{50}{27}, \\quad h''\\left(\\frac{1}{3}\\right) = -2 < 0 \\implies \\text{Local Max at } \\left(\\frac{1}{3}, -\\frac{50}{27}\\right) \\\\\\\\ x &= 1: \\quad h(1) = -2, \\quad h''(1) = 2 > 0 \\implies \\text{Local Min at } (1, -2) \\end{aligned} $$"
+            },
+            {
+              "explain": "Step 4: Finally, plot the intercepts and stationary points on a Cartesian plane and connect them with a smooth cubic curve. Notice that the local minimum \\((1, -2)\\) shares the exact same \\(y\\)-level as the \\(y\\)-intercept \\((0, -2)\\).",
+              "work": "\n<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n<svg viewBox=\"0 0 400 300\" width=\"100%\" style=\"max-width:400px; background-color:white; border:1px solid #ccc; border-radius:8px;\">\n  <line x1=\"20\" y1=\"150\" x2=\"380\" y2=\"150\" stroke=\"#333\" stroke-width=\"2\" />\n  <line x1=\"100\" y1=\"20\" x2=\"100\" y2=\"280\" stroke=\"#333\" stroke-width=\"2\" />\n  <text x=\"370\" y=\"140\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">x</text>\n  <text x=\"110\" y=\"30\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">y</text>\n  <text x=\"85\" y=\"145\" fill=\"#333\" font-size=\"12\" font-family=\"sans-serif\">O</text>\n  <polyline fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" points=\"60.0,275.0 64.0,267.8 68.0,261.4 72.0,255.5 76.0,250.3 80.0,245.6 84.0,241.5 88.0,237.9 92.0,234.8 96.0,232.2 100.0,230.0 104.0,228.2 108.0,226.8 112.0,225.7 116.0,224.9 120.0,224.4 124.0,224.1 128.0,224.1 132.0,224.2 136.0,224.6 140.0,225.0 144.0,225.5 148.0,226.2 152.0,226.8 156.0,227.5 160.0,228.1 164.0,228.7 168.0,229.2 172.0,229.6 176.0,229.9 180.0,230.0 184.0,229.9 188.0,229.6 192.0,229.0 196.0,228.1 200.0,226.9 204.0,225.3 208.0,223.4 212.0,221.0 216.0,218.3 220.0,215.0 224.0,211.2 228.0,207.0 232.0,202.1 236.0,196.7 240.0,190.6 244.0,183.9 248.0,176.5 252.0,168.4 256.0,159.6 260.0,150.0 264.0,139.6 268.0,128.4 272.0,116.3 276.0,103.3 280.0,89.4 284.0,74.5 288.0,58.7 292.0,41.8 296.0,24.0 300.0,5.0\" />\n  <circle cx=\"100\" cy=\"230\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"35\" y=\"235\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">(0, -2)</text>\n  <circle cx=\"260\" cy=\"150\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"250\" y=\"140\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">(2, 0)</text>\n  <circle cx=\"126.7\" cy=\"224.1\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"115\" y=\"215\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">Max (1/3, -50/27)</text>\n  <circle cx=\"180\" cy=\"230\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"175\" y=\"245\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">Min (1, -2)</text>\n</svg>\n</div>\n"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "abb2020-q12b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If $\\tan\\theta = \\dfrac{4}{5}$ and $\\theta$ is acute, find the exact value of $\\sin\\theta$.",
+          "options": [
+            "\\(\\dfrac{4}{\\sqrt{41}}\\)",
+            "\\(\\dfrac{5}{\\sqrt{41}}\\)",
+            "\\(\\dfrac{4}{5}\\)",
+            "\\(\\dfrac{\\sqrt{41}}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Draw a right-angled triangle with opposite = 4, adjacent = 5. Find the hypotenuse using Pythagoras.",
+          "solution": "The correct answer is \\(\\dfrac{4}{\\sqrt{41}}\\).",
+          "steps": [
+            {
+              "explain": "Since \\(\\tan\\theta = \\frac{4}{5} = \\frac{\\text{opposite}}{\\text{adjacent}}\\), draw a right-angled triangle with opposite side = 4, adjacent side = 5.",
+              "work": "\\(\\text{opp} = 4, quad \\text{adj} = 5\\)"
+            },
+            {
+              "explain": "Find the hypotenuse using Pythagoras' theorem: \\(\\text{hyp}^2 = 4^2 + 5^2 = 16 + 25 = 41\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(\\text{hyp} = \\sqrt{41}\\)"
+            },
+            {
+              "explain": "This can also be written as \\(\\frac{4\\sqrt{41}}{41}\\) after rationalising the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(\\sin\\theta = \\frac{4}{\\sqrt{41}} = \\frac{4\\sqrt{41}}{41}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q12(b)"
+          },
+          "dna": {
+            "dnaId": "TRIG-ID-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q12ci",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Terry makes face masks. A graph shows cost $C$ and revenue $R$ as straight lines. The lines intersect at $x = 200$. How many face masks must Terry sell to break even?",
+          "options": [
+            "\\(200\\)",
+            "\\(100\\)",
+            "\\(300\\)",
+            "\\(400\\)"
+          ],
+          "answer": 0,
+          "hint": "Break-even occurs where cost equals revenue, i.e., at the intersection point.",
+          "solution": "The correct answer is \\(200\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\text{Break-even} \\Leftrightarrow R = C\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(x = 200 \\text{ face masks}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(200\\)"
+            },
+            {
+              "explain": "Final answer: 200. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(200\\)"
+            }
+          ],
+          "dna": {
+            "dnaId": "FUNC-GRAPH-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "abb2020-q12cii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "From the cost–revenue graph for face masks: the cost line passes through $(0, 2000)$ and $(200, 4000)$; the revenue line passes through the origin and $(200, 4000)$. By forming equations for $C$ and $R$, determine how many face masks need to be sold to earn a profit of $1500.",
+          "options": [
+            "\\(350 face masks\\)",
+            "\\(300 face masks\\)",
+            "\\(400 face masks\\)",
+            "\\(500 face masks\\)"
+          ],
+          "answer": 0,
+          "hint": "Form linear equations for $C$ and $R$. Profit = $R - C$, then set equal to 1500.",
+          "solution": "The correct answer is \\(350 face masks\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(m_C = 10 \\Rightarrow C = 10x + 2000\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(m_R = 20 \\Rightarrow R = 20x\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\text{Profit} = R - C = 20x - (10x + 2000) = 10x - 2000\\)"
+            },
+            {
+              "explain": "Final answer: 350 face masks. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(350 face masks\\)"
+            }
+          ],
+          "dna": {
+            "dnaId": "FUNC-GRAPH-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "abb2020-q13a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the exact value of $\\displaystyle\\int_0^{\\pi/6} \\sec^2 2x\\,dx$.",
+          "options": [
+            "\\(\\dfrac{\\sqrt{3}}{2}\\)",
+            "\\(\\dfrac{\\sqrt{3}}{4}\\)",
+            "\\(\\sqrt{3}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use $\\displaystyle\\int \\sec^2(ax)\\,dx = \\dfrac{1}{a}\\tan(ax) + C$.",
+          "solution": "The correct answer is \\(\\dfrac{\\sqrt{3}}{2}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\int \\sec^2 2x\\,dx = \\frac{1}{2}\\tan 2x + C\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\int_0^{\\pi/6} \\sec^2 2x\\,dx = \\left[\\frac{1}{2}\\tan 2x\\right]_0^{\\pi/6}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\frac{1}{2}\\tan\\!\\left(\\frac{\\pi}{3}\\right) = \\frac{1}{2} \\cdot \\sqrt{3} = \\frac{\\sqrt{3}}{2}\\)"
+            },
+            {
+              "explain": "Final answer: \\dfrac{\\sqrt{3}}{2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{\\sqrt{3}}{2}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13(a)"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$\\sec^2 2x$ has an inner linear expression $2x$. Using $\\int\\sec^2(ax)\\,dx=\\dfrac1a\\tan(ax)+C$ with $a=2$, what is the general antiderivative?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$\\dfrac12\\tan 2x+C$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$2\\tan 2x+C$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$\\tan 2x+C$ (no correction factor)"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "A reverse-chain-rule log/trig integral with a linear inner expression always needs a $\\dfrac1a$ correction factor."
+                ],
+                "explanation": "$\\dfrac12\\tan 2x+C$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Evaluating $\\left[\\dfrac12\\tan 2x\\right]_0^{\\pi/6}=\\dfrac12\\tan\\dfrac{\\pi}{3}-\\dfrac12\\tan 0$, what is the exact value?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$\\dfrac{\\sqrt3}{2}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$\\dfrac{\\sqrt3}{4}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$\\sqrt3$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$\\tan\\dfrac{\\pi}{3}=\\sqrt3$, and $\\tan 0=0$, so this is $\\dfrac12\\times\\sqrt3-0$."
+                ],
+                "explanation": "$\\dfrac12\\sqrt3-0=\\dfrac{\\sqrt3}{2}$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q13bi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Differentiate $y = \\ln(3x^2 + 1)$ with respect to $x$.",
+          "options": [
+            "\\(\\dfrac{6x}{3x^2+1}\\)",
+            "\\(\\dfrac{6x^2}{3x^2+1}\\)",
+            "\\(\\dfrac{1}{3x^2+1}\\)",
+            "\\(\\dfrac{6x}{(3x^2+1)^2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the chain rule: $\\dfrac{d}{dx}\\ln f(x) = \\dfrac{f'(x)}{f(x)}$.",
+          "solution": "The correct answer is \\(\\dfrac{6x}{3x^2+1}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y' = \\frac{\\frac{d}{dx}(3x^2+1)}{3x^2+1}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\frac{d}{dx}(3x^2+1) = 6x\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y' = \\frac{6x}{3x^2+1}\\)"
+            },
+            {
+              "explain": "Final answer: \\dfrac{6x}{3x^2+1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{6x}{3x^2+1}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13(b)(i)"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$y=\\ln(3x^2+1)$ is $\\ln(u)$ with $u=3x^2+1$. The chain rule gives $\\dfrac{1}{u}\\times u'$. What is $u'$?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$6x$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$3x$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$6x^2$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$\\dfrac{d}{dx}[3x^2+1] = 6x$ — the power rule on $3x^2$, and $0$ for the constant $1$."
+                ],
+                "explanation": "$u' = 6x$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Substituting into $\\dfrac{1}{u}\\times u' = \\dfrac{1}{3x^2+1}\\times 6x$, what is $\\dfrac{dy}{dx}$?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$\\dfrac{6x}{3x^2+1}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$\\dfrac{6x^2}{3x^2+1}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$\\dfrac{1}{3x^2+1}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Don't drop the $u'=6x$ factor by only keeping $\\dfrac{1}{u}$."
+                ],
+                "explanation": "$\\dfrac{6x}{3x^2+1}$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q13bii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate $y = \\dfrac{\\sin x}{x^2}$ with respect to $x$.",
+          "options": [
+            "\\(\\dfrac{x\\cos x - 2\\sin x}{x^3}\\)",
+            "\\(\\dfrac{x\\cos x + 2\\sin x}{x^3}\\)",
+            "\\(\\dfrac{\\cos x}{x^2}\\)",
+            "\\(\\dfrac{x^2\\cos x - \\sin x}{x^4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply the quotient rule: $\\left(\\dfrac{u}{v}\\right)' = \\dfrac{u'v - uv'}{v^2}$.",
+          "solution": "The correct answer is \\(\\dfrac{x\\cos x - 2\\sin x}{x^3}\\).",
+          "steps": [
+            {
+              "explain": "Apply the quotient rule \\(\\left(\\frac{u}{v}\\right)' = \\frac{u'v - uv'}{v^2}\\). Identify \\(u = \\sin x\\) and \\(v = x^2\\).",
+              "work": "\\(u = \\sin x \\qquad v = x^2\\)"
+            },
+            {
+              "explain": "Differentiate \\(u\\): \\(\\frac{d}{dx}(\\sin x) = \\cos x\\). Differentiate \\(v\\): \\(\\frac{d}{dx}(x^2) = 2x\\).",
+              "work": "\\(u' = \\cos x \\qquad v' = 2x\\)"
+            },
+            {
+              "explain": "Simplify by factoring \\(x\\) from the numerator and cancelling with the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(y' = \\frac{x(x\\cos x - 2\\sin x)}{x^4} = \\frac{x\\cos x - 2\\sin x}{x^3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13(b)(ii)"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "$y=\\dfrac{\\sin x}{x^2}$ is a quotient with $u=\\sin x$ ($u'=\\cos x$), $v=x^2$ ($v'=2x$). Which is the correct quotient-rule setup (before simplifying)?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$\\dfrac{x^2\\cos x - \\sin x \\cdot 2x}{(x^2)^2}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$\\dfrac{x^2\\cos x + \\sin x \\cdot 2x}{(x^2)^2}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$\\dfrac{2x\\sin x - x^2\\cos x}{(x^2)^2}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Quotient rule is $\\dfrac{u'v-uv'}{v^2}$, and it subtracts, not adds."
+                ],
+                "explanation": "$\\dfrac{u'v-uv'}{v^2} = \\dfrac{x^2\\cos x - 2x\\sin x}{x^4}$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Every term in $\\dfrac{x^2\\cos x - 2x\\sin x}{x^4}$ has a common factor of $x$ with the denominator. Cancelling one factor of $x$ throughout, what do you get?",
+                "axis": "verification",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$\\dfrac{x\\cos x - 2\\sin x}{x^3}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$\\dfrac{x\\cos x + 2\\sin x}{x^3}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$\\dfrac{\\cos x}{x^2}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Divide every term in the numerator AND the denominator by $x$ — don't just cancel from one term."
+                ],
+                "explanation": "$\\dfrac{x^2\\cos x - 2x\\sin x}{x^4} = \\dfrac{x\\cos x - 2\\sin x}{x^3}$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q13ci",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Tess is creating a logo from the region between \\(p(x) = (5-x)(5+x)\\) and \\(q(x) = \\dfrac{2}{5}(5-x)(5+x)\\). Which expression is equal to the area \\(A\\) of the shaded region?",
+          "options": [
+            "\\(\\dfrac{3}{5}\\displaystyle\\int_0^5 (25 - x^2)\\,dx\\)",
+            "\\(\\dfrac{12}{5}\\displaystyle\\int_0^5 (25 - x^2)\\,dx\\)",
+            "\\(\\dfrac{6}{5}\\displaystyle\\int_0^5 (25 - x^2)\\,dx\\)",
+            "\\(\\dfrac{6}{5}\\displaystyle\\int_0^5 (5 - x^2)\\,dx\\)"
+          ],
+          "answer": 2,
+          "hint": "Find \\(p(x) - q(x)\\), simplify, then use symmetry about the \\(y\\)-axis to write \\(A\\) as a single definite integral from \\(0\\) to \\(5\\).",
+          "solution": "The correct answer is \\(\\dfrac{6}{5}\\displaystyle\\int_0^5 (25 - x^2)\\,dx\\).",
+          "steps": [
+            {
+              "explain": "The shaded region lies between the two curves, with \\(p(x)\\) on top since its coefficient (1) is larger than \\(q(x)\\)'s coefficient \\(\\left(\\frac{2}{5}\\right)\\) wherever \\((5-x)(5+x) \\ge 0\\). The height of a thin vertical strip at any \\(x\\) is \\(p(x) - q(x)\\).",
+              "work": "\\(p(x) - q(x) = (5-x)(5+x) - \\dfrac{2}{5}(5-x)(5+x) = \\left(1 - \\dfrac{2}{5}\\right)(5-x)(5+x) = \\dfrac{3}{5}(5-x)(5+x)\\)"
+            },
+            {
+              "explain": "Expand \\((5-x)(5+x)\\) using the difference of two squares, \\((a-b)(a+b) = a^2 - b^2\\).",
+              "work": "\\((5-x)(5+x) = 25 - x^2 \\implies p(x) - q(x) = \\dfrac{3}{5}(25 - x^2)\\)"
+            },
+            {
+              "explain": "Both \\(p(x)\\) and \\(q(x)\\) depend only on \\(x^2\\), so they are even functions and the region is symmetric about the \\(y\\)-axis. The total area equals twice the area from \\(x = 0\\) to \\(x = 5\\).",
+              "work": "\\(A = 2\\displaystyle\\int_0^5 \\dfrac{3}{5}(25 - x^2)\\,dx\\)"
+            },
+            {
+              "explain": "Multiply the constants outside the integral: \\(2 \\times \\dfrac{3}{5} = \\dfrac{6}{5}\\). This gives the required form for \\(A\\), matching option \\(\\dfrac{6}{5}\\displaystyle\\int_0^5(25-x^2)\\,dx\\).",
+              "work": "\\(A = 2 \\times \\dfrac{3}{5}\\displaystyle\\int_0^5(25-x^2)\\,dx = \\dfrac{6}{5}\\displaystyle\\int_0^5(25-x^2)\\,dx\\)"
+            }
+          ],
+          "timeLimit": 150,
+          "meta": {
+            "source": "Abbotsleigh 2020",
+            "course": "Advanced",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-AREA-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q13cii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Hence, or otherwise, find the area of the shaded region between \\(p(x) = (5-x)(5+x)\\) and \\(q(x) = \\dfrac{2}{5}(5-x)(5+x)\\).",
+          "options": [
+            "\\(\\dfrac{250}{3} \\text{ units}^2\\)",
+            "\\(100 \\text{ units}^2\\)",
+            "\\(80 \\text{ units}^2\\)",
+            "\\(120 \\text{ units}^2\\)"
+          ],
+          "answer": 1,
+          "hint": "From part (i), \\(A = \\dfrac{6}{5}\\displaystyle\\int_0^5(25-x^2)\\,dx\\). Evaluate the integral first, then multiply by \\(\\dfrac{6}{5}\\) — don't stop at the integral's value.",
+          "solution": "The correct answer is \\(100 \\text{ units}^2\\).",
+          "steps": [
+            {
+              "explain": "From part (i), \\(A = \\dfrac{6}{5}\\displaystyle\\int_0^5(25-x^2)\\,dx\\). Find the antiderivative of \\(25 - x^2\\) first.",
+              "work": "\\(\\displaystyle\\int_0^5(25-x^2)\\,dx = \\left[25x - \\frac{x^3}{3}\\right]_0^5\\)"
+            },
+            {
+              "explain": "Substitute the upper limit \\(x = 5\\) and the lower limit \\(x = 0\\), then simplify.",
+              "work": "\\(\\left[25(5) - \\frac{5^3}{3}\\right] - \\left[25(0) - \\frac{0^3}{3}\\right] = 125 - \\frac{125}{3} = \\frac{375 - 125}{3} = \\frac{250}{3}\\)"
+            },
+            {
+              "explain": "\\(\\dfrac{250}{3}\\) is the value of the integral alone — it is not yet the area. The most common mistake here is stopping at this point. \\(A\\) still needs the \\(\\dfrac{6}{5}\\) factor from part (i) multiplied through.",
+              "work": "\\(A = \\frac{6}{5} \\times \\frac{250}{3} = \\frac{6 \\times 250}{5 \\times 3} = \\frac{1500}{15} = 100\\)"
+            },
+            {
+              "explain": "So the area of the shaded region is 100 square units.",
+              "work": "\\(A = 100 \\text{ units}^2\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13(c)(ii)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-AREA-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q13d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For events $A$ and $B$ from a sample space, $P(A \\mid B) = \\dfrac{3}{4}$ and $P(B) = \\dfrac{1}{7}$. Calculate $P(A \\cap B)$.",
+          "options": [
+            "\\(\\dfrac{3}{28}\\)",
+            "\\(\\dfrac{3}{4}\\)",
+            "\\(\\dfrac{1}{7}\\)",
+            "\\(\\dfrac{4}{21}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use $P(A \\cap B) = P(A \\mid B) \\times P(B)$.",
+          "solution": "The correct answer is \\(\\dfrac{3}{28}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(P(A \\cap B) = P(A \\mid B) \\times P(B)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(P(A \\cap B) = \\frac{3}{4} \\times \\frac{1}{7}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(P(A \\cap B) = \\frac{3}{28}\\)"
+            },
+            {
+              "explain": "Final answer: \\dfrac{3}{28}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\dfrac{3}{28}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13(d)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-COND-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q13ei",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Charlotte recorded the height $H$ (metres) of a tree at various years $t$ since planting:\n\n\\begin{array}{c|cccccccc} t\\ (\\text{years}) & 1 & 2 & 3 & 4 & 6 & 7 & 8 & 9 \\\\ \\hline H\\ (\\text{m}) & 0.7 & 1.4 & 2.4 & 3.5 & 6.6 & 7.9 & 8.7 & 9.5 \\end{array}\n\nWhat is the correlation coefficient for this data (correct to 4 decimal places)?",
+          "options": [
+            "\\(r \\approx 0.9952\\)",
+            "\\(r \\approx 0.9814\\)",
+            "\\(r \\approx 0.9999\\)",
+            "\\(r \\approx 0.9567\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute Pearson's correlation coefficient directly.",
+          "solution": "The correct answer is \\(r \\approx 0.9952\\).",
+          "steps": [
+            {
+              "explain": "First, lay out the data in a table pairing each year $t$ with the tree height $H$ — this is exactly how the values will be entered into the calculator.",
+              "work": "\\(\\begin{array}{c|cccccccc} t\\ (\\text{years}) & 1 & 2 & 3 & 4 & 6 & 7 & 8 & 9 \\\\ \\hline H\\ (\\text{m}) & 0.7 & 1.4 & 2.4 & 3.5 & 6.6 & 7.9 & 8.7 & 9.5 \\end{array}\\)"
+            },
+            {
+              "explain": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+              "work": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)"
+            },
+            {
+              "explain": "Enter the $t$ values into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the $H$ values the same way.",
+              "work": "\\(X: 1\\texttt{=}\\ 2\\texttt{=}\\ 3\\texttt{=}\\ 4\\texttt{=}\\ 6\\texttt{=}\\ 7\\texttt{=}\\ 8\\texttt{=}\\ 9\\texttt{=} \\qquad Y: 0.7\\texttt{=}\\ 1.4\\texttt{=}\\ 2.4\\texttt{=}\\ 3.5\\texttt{=}\\ 6.6\\texttt{=}\\ 7.9\\texttt{=}\\ 8.7\\texttt{=}\\ 9.5\\texttt{=}\\)"
+            },
+            {
+              "explain": "Once all 8 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg} \\to \\texttt{3:}r$, then press $\\texttt{=}$ to display the correlation coefficient.",
+              "work": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{3:}r \\to \\texttt{=}\\)"
+            },
+            {
+              "explain": "The calculator displays $r$ correct to several decimal places. Since $r$ is very close to 1, this indicates a very strong positive linear relationship between years since planting and tree height.",
+              "work": "\\(r \\approx 0.9952 \\Rightarrow \\text{very strong positive linear correlation}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13(e)(i)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "STAT-CORR-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q13eii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Charlotte's tree height data is shown below.\n\n\\begin{array}{c|cccccccc} t\\ (\\text{years}) & 1 & 2 & 3 & 4 & 6 & 7 & 8 & 9 \\\\ \\hline H\\ (\\text{m}) & 0.7 & 1.4 & 2.4 & 3.5 & 6.6 & 7.9 & 8.7 & 9.5 \\end{array}\n\nFind the equation of the least-squares line of best fit, where $H = A + Bt$. Give $A$ and $B$ correct to 2 decimal places.",
+          "options": [
+            "\\(H = -0.85 + 1.19t\\)",
+            "\\(H = 0.85 + 1.19t\\)",
+            "\\(H = -0.85 + 0.19t\\)",
+            "\\(H = 1.19 - 0.85t\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute the regression coefficients directly.",
+          "solution": "The correct answer is \\(H = -0.85 + 1.19t\\).",
+          "steps": [
+            {
+              "explain": "First, lay out the data in a table pairing each year $t$ with the tree height $H$ — this is exactly how the values will be entered into the calculator.",
+              "work": "\\(\\begin{array}{c|cccccccc} t\\ (\\text{years}) & 1 & 2 & 3 & 4 & 6 & 7 & 8 & 9 \\\\ \\hline H\\ (\\text{m}) & 0.7 & 1.4 & 2.4 & 3.5 & 6.6 & 7.9 & 8.7 & 9.5 \\end{array}\\)"
+            },
+            {
+              "explain": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+              "work": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)"
+            },
+            {
+              "explain": "Enter the $t$ values (independent variable) into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the $H$ values (dependent variable) the same way.",
+              "work": "\\(X: 1\\texttt{=}\\ 2\\texttt{=}\\ 3\\texttt{=}\\ 4\\texttt{=}\\ 6\\texttt{=}\\ 7\\texttt{=}\\ 8\\texttt{=}\\ 9\\texttt{=} \\qquad Y: 0.7\\texttt{=}\\ 1.4\\texttt{=}\\ 2.4\\texttt{=}\\ 3.5\\texttt{=}\\ 6.6\\texttt{=}\\ 7.9\\texttt{=}\\ 8.7\\texttt{=}\\ 9.5\\texttt{=}\\)"
+            },
+            {
+              "explain": "Once all 8 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg}$. Select $\\texttt{1:}A$ to display the intercept, then repeat and select $\\texttt{2:}B$ to display the slope.",
+              "work": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{1:}A \\to \\texttt{=}; \\quad \\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{2:}B \\to \\texttt{=}\\)"
+            },
+            {
+              "explain": "The calculator displays $A \\approx -0.85$ (intercept) and $B \\approx 1.19$ (slope). Since $H$ is the dependent variable, write the equation as $H = A + Bt$.",
+              "work": "\\(H = -0.85 + 1.19t\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13(e)(ii)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "STAT-BIV-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q13eiii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using $H = -0.85 + 1.19t$, approximately how many years will it take the tree to reach a height of 20 metres? Answer correct to 1 decimal place.",
+          "options": [
+            "\\(17.5 \\text{ years}\\)",
+            "\\(15.2 \\text{ years}\\)",
+            "\\(18.5 \\text{ years}\\)",
+            "\\(20.0 \\text{ years}\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute $H = 20$ and solve for $t$.",
+          "solution": "The correct answer is \\(17.5 \\text{ years}\\).",
+          "steps": [
+            {
+              "explain": "Substitute $H = 20$ into the least-squares line found in part (ii).",
+              "work": "\\(20 = -0.85 + 1.19t\\)"
+            },
+            {
+              "explain": "Add 0.85 to both sides to isolate the $1.19t$ term.",
+              "work": "\\(20 + 0.85 = 1.19t \\Rightarrow 20.85 = 1.19t\\)"
+            },
+            {
+              "explain": "Divide both sides by 1.19 to solve for $t$.",
+              "work": "\\(t = \\frac{20.85}{1.19} \\approx 17.5 \\text{ years}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q13(e)(iii)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "STAT-BIV-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q13eiv",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "What is the limitation of using the linear model $H = -0.94 + 1.17t$ to predict tree height?",
+          "answer": "As \\(t\\) increases, tree growth may not continue in a linear fashion (e.g., growth slows as the tree matures), so the model is unreliable for long-term extrapolation.",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "As \\(t\\) increases, tree growth may not continue in a linear fashion (e.g., growth slows as the tree matures), so the model is unreliable for long-term extrapolation.",
+          "steps": [
+            {
+              "explain": "The linear model $H = -0.85 + 1.19t$ was fitted using data only over the observed range, $t = 1$ to $t = 9$ years. A linear model assumes the tree keeps growing by the same fixed amount (1.19 m) every year, for every value of $t$.",
+              "work": "\\(\\text{Model assumes constant growth rate for all } t\\)"
+            },
+            {
+              "explain": "In reality, trees cannot grow at a constant rate indefinitely — growth typically slows as a tree matures and approaches its natural maximum height, so the true relationship is not linear over the long term.",
+              "work": "\\(\\text{Real growth: rate decreases with age (not linear)}\\)"
+            },
+            {
+              "explain": "Therefore, using this linear model to extrapolate far beyond the range of the collected data (e.g. predicting height at $t = 30$ or $t = 50$) is unreliable, since the model would keep predicting unrealistic, ever-increasing heights.",
+              "work": "As \\(t\\) increases well beyond the data range, tree growth may not continue linearly (e.g. growth slows as the tree matures), so the model is unreliable for long-term extrapolation."
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "meta": {
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "STAT-CORR-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "abb2020-q14a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The probability that Chloe gets a concert booking on any given weekend is 65%. What is the probability that she gets at least one booking over two consecutive weekends?",
+          "options": [
+            "\\(0.8775\\)",
+            "\\(0.6500\\)",
+            "\\(0.7225\\)",
+            "\\(0.9975\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the complement: $P(\\text{at least one}) = 1 - P(\\text{no bookings})$.",
+          "solution": "The correct answer is \\(0.8775\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(P(\\text{no booking}) = 1 - 0.65 = 0.35\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(P(\\text{no booking in either weekend}) = 0.35^2 = 0.1225\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(P(\\text{at least one}) = 1 - P(\\text{none}) = 1 - 0.1225\\)"
+            },
+            {
+              "explain": "Final answer: 0.8775. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(0.8775\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14(a)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-COMP-01",
+            "dnaConfidence": 1,
+            "dnaReclassifiedAt": "2026-08-15T12:36:49.257Z",
+            "dnaReclassifiedReason": "Question is pure complement-rule probability (\"at least one booking over two weekends\") — zero calculus content."
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q14b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the centre and radius of the circle $x^2 + y^2 - 4x + 6y = 12$.",
+          "options": [
+            "Centre \\((2, -3)\\), radius \\(5\\)",
+            "Centre \\((-2, 3)\\), radius \\(5\\)",
+            "Centre \\((2, -3)\\), radius \\(25\\)",
+            "Centre \\((2, 3)\\), radius \\(5\\)"
+          ],
+          "answer": 0,
+          "hint": "Complete the square in both $x$ and $y$.",
+          "solution": "The correct answer is Centre \\((2, -3)\\), radius \\(5\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\((x^2 - 4x) + (y^2 + 6y) = 12\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\((x^2 - 4x + 4) + \\ldots = 12 + 4\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\ldots + (y^2 + 6y + 9) = 12 + 4 + 9 = 25\\)"
+            },
+            {
+              "explain": "Final answer: Centre \\((2, -3)\\), radius \\(5\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "Centre \\((2, -3)\\), radius \\(5\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14(b)"
+          },
+          "dna": {
+            "dnaId": "FUNC-GRAPH-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q14c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The score $X$ for a biased spinner has $P(X=2) = \\dfrac{1}{12}$, $P(X=4) = \\dfrac{1}{3}$, $P(X=6) = p$. Find $p$, then calculate $E(X)$ and $\\text{Var}(X)$.",
+          "options": [
+            "\\(p = \\dfrac{7}{12}\\),\\ \\(E(X) = 5\\),\\ \\(\\text{Var}(X) = \\dfrac{5}{3}\\)",
+            "\\(p = \\dfrac{5}{12}\\),\\ \\(E(X) = 5\\),\\ \\(\\text{Var}(X) = \\dfrac{5}{3}\\)",
+            "\\(p = \\dfrac{7}{12}\\),\\ \\(E(X) = 4\\),\\ \\(\\text{Var}(X) = \\dfrac{5}{3}\\)",
+            "\\(p = \\dfrac{7}{12}\\),\\ \\(E(X) = 5\\),\\ \\(\\text{Var}(X) = \\dfrac{2}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "All probabilities must sum to 1. Use $E(X) = \\sum x \\cdot P(X=x)$ and $\\text{Var}(X) = E(X^2) - [E(X)]^2$.",
+          "solution": "The correct answer is \\(p = \\dfrac{7}{12}\\),\\ \\(E(X) = 5\\),\\ \\(\\text{Var}(X) = \\dfrac{5}{3}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\frac{1}{12} + \\frac{1}{3} + p = 1 \\Rightarrow \\frac{1}{12} + \\frac{4}{12} + p = 1 \\Rightarrow p = 1 - \\frac{5}{12} = \\frac{7}{12}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(E(X) = 2 \\cdot \\frac{1}{12} + 4 \\cdot \\frac{4}{12} + 6 \\cdot \\frac{7}{12} = \\frac{2 + 16 + 42}{12} = \\frac{60}{12} = 5\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(E(X^2) = 4 \\cdot \\frac{1}{12} + 16 \\cdot \\frac{4}{12} + 36 \\cdot \\frac{7}{12} = \\frac{4 + 64 + 252}{12} = \\frac{320}{12} = \\frac{80}{3}\\)"
+            },
+            {
+              "explain": "Final answer: p = \\dfrac{7}{12}\\),\\ \\(E(X) = 5\\),\\ \\(\\text{Var}(X) = \\dfrac{5}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(p = \\dfrac{7}{12}\\),\\ \\(E(X) = 5\\),\\ \\(\\text{Var}(X) = \\dfrac{5}{3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14(c)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "PROB-DIST-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q14di",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A particle has displacement $x = t^2 - 4\\ln_e(t-1) + 5$ for $t > 1$ (metres, seconds). Find the exact displacement when $t = 4$.",
+          "options": [
+            "\\(\\(21 - 4\\ln 3\\) metres\\)",
+            "\\(\\(21 - 4\\ln 4\\) metres\\)",
+            "\\(\\(16 - 4\\ln 3\\) metres\\)",
+            "\\(\\(21 + 4\\ln 3\\) metres\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute $t = 4$ directly into the displacement equation.",
+          "solution": "The correct answer is \\(\\(21 - 4\\ln 3\\) metres\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(x = (4)^2 - 4\\ln(4-1) + 5\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(x = 16 - 4\\ln 3 + 5\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(x = 21 - 4\\ln 3 \\text{ metres}\\)"
+            },
+            {
+              "explain": "Final answer: \\(21 - 4\\ln 3\\) metres. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\(21 - 4\\ln 3\\) metres\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14(d)(i)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-MOTION-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q14dii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For $x = t^2 - 4\\ln_e(t-1) + 5$ ($t > 1$), find an expression for the velocity and hence find when the particle comes to rest.",
+          "options": [
+            "\\(\\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 2\\) s\\)",
+            "\\(\\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 3\\) s\\)",
+            "\\(\\(v = 2t + \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 2\\) s\\)",
+            "\\(\\(v = 2 - \\dfrac{4}{(t-1)^2}\\); particle never comes to rest\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate $x$ with respect to $t$ to get velocity. Set $v = 0$.",
+          "solution": "The correct answer is \\(\\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 2\\) s\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(v = \\frac{dx}{dt} = 2t - \\frac{4}{t-1}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(2t - \\frac{4}{t-1} = 0\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(2t(t-1) = 4\\)"
+            },
+            {
+              "explain": "Final answer: \\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 2\\) s. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 2\\) s\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14(d)(ii)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-MOTION-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q14diii",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Show that the acceleration remains positive for $t > 1$ given $x = t^2 - 4\\ln_e(t-1) + 5$.",
+          "answer": "\\(a = 2 + \\dfrac{4}{(t-1)^2}\\).\nSince \\((t-1)^2 > 0\\) for all \\(t \\neq 1\\), we have \\(a > 2 > 0\\) for all \\(t > 1\\).",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "\\(a = 2 + \\dfrac{4}{(t-1)^2}\\).\nSince \\((t-1)^2 > 0\\) for all \\(t \\neq 1\\), we have \\(a > 2 > 0\\) for all \\(t > 1\\).",
+          "steps": [
+            {
+              "explain": "Differentiate \\(v = 2t - \\frac{4}{t-1} = 2t - 4(t-1)^{-1}\\) with respect to \\(t\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(a = \\frac{dv}{dt} = 2 - 4 \\cdot (-1)(t-1)^{-2} \\cdot 1\\)"
+            },
+            {
+              "explain": "For all \\(t > 1\\), we have \\(t - 1 > 0\\), so \\((t-1)^2 > 0\\). Therefore \\(\\frac{4}{(t-1)^2} > 0\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(t > 1 \\Rightarrow (t-1)^2 > 0 \\Rightarrow \\frac{4}{(t-1)^2} > 0\\)"
+            },
+            {
+              "explain": "Since both terms are positive: \\(a = 2 + \\frac{4}{(t-1)^2} > 2 > 0\\) for all \\(t > 1\\). \\(\\square\\) Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(a > 2 > 0 \\text{ for all } t > 1\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14(d)(iii)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-MOTION-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q14div",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the exact distance travelled by the particle between when it comes to rest ($t = 2$ s) and $t = 4$ s, given $x = t^2 - 4\\ln_e(t-1) + 5$.",
+          "options": [
+            "\\(\\(12 - 4\\ln 3\\) metres\\)",
+            "\\(\\(12 + 4\\ln 3\\) metres\\)",
+            "\\(\\(21 - 4\\ln 3\\) metres\\)",
+            "\\(\\(12 - 4\\ln 2\\) metres\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate $x(4) - x(2)$. Since acceleration is always positive, the particle does not change direction, so distance equals displacement change.",
+          "solution": "The correct answer is \\(\\(12 - 4\\ln 3\\) metres\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\text{distance} = |x(4) - x(2)|\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(x(2) = 4 - 4\\ln(2-1) + 5 = 4 - 4\\ln 1 + 5\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(x(2) = 9 \\text{ m}\\)"
+            },
+            {
+              "explain": "Final answer: \\(12 - 4\\ln 3\\) metres. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\(12 - 4\\ln 3\\) metres\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q14(d)(iv)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-MOTION-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q15ai",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "For the function $y = e^{-x^2}$, show that $\\dfrac{d^2y}{dx^2} = 4e^{-x^2}\\!\\left(x^2 - \\dfrac{1}{2}\\right)$.",
+          "answer": "\\(y' = -2xe^{-x^2}\\).\n\\(y'' = -2e^{-x^2} + (-2x)(-2x)e^{-x^2} = e^{-x^2}(-2 + 4x^2) = 4e^{-x^2}(x^2 - \\frac{1}{2})\\).",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "\\(y' = -2xe^{-x^2}\\).\n\\(y'' = -2e^{-x^2} + (-2x)(-2x)e^{-x^2} = e^{-x^2}(-2 + 4x^2) = 4e^{-x^2}(x^2 - \\frac{1}{2})\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y' = -2xe^{-x^2}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(u = -2x, u' = -2 \\qquad v = e^{-x^2}, v' = -2xe^{-x^2}\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y'' = (-2)e^{-x^2} + (-2x)(-2x)e^{-x^2} = -2e^{-x^2} + 4x^2e^{-x^2}\\)"
+            },
+            {
+              "explain": "Final answer: \\(y' = -2xe^{-x^2}\\).\n\\(y'' = -2e^{-x^2} + (-2x)(-2x)e^{-x^2} = e^{-x^2}(-2 + 4x^2) = 4e^{-x^2}(x^2 - \\frac{1}{2})\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\(y' = -2xe^{-x^2}\\).\n\\(y'' = -2e^{-x^2} + (-2x)(-2x)e^{-x^2} = e^{-x^2}(-2 + 4x^2) = 4e^{-x^2}(x^2 - \\frac{1}{2})\\).\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q15(a)(i)"
+          },
+          "dna": {
+            "dnaId": "CALC-DIFF-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "You're given $y'=-2xe^{-x^2}$. To find $y''$, this is a PRODUCT with $u=-2x$ ($u'=-2$) and $v=e^{-x^2}$. What is $v'$ (chain rule)?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$-2xe^{-x^2}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$e^{-x^2}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$-x^2e^{-x^2}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$e^{-x^2}$ is $e^u$ with $u=-x^2$, $u'=-2x$ — don't drop this inner-derivative factor."
+                ],
+                "explanation": "$v' = -2xe^{-x^2}$ (the same chain rule used to find $y'$ in the first place)."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Applying $u'v+uv' = -2e^{-x^2} + (-2x)(-2xe^{-x^2})$, which simplifies to $e^{-x^2}(4x^2-2)$. Factoring out $4$, what matches the form $4e^{-x^2}(x^2-c)$?",
+                "axis": "verification",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$c = \\dfrac12$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$c = -\\dfrac12$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$c = 2$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "$4x^2-2 = 4\\left(x^2-\\dfrac12\\right)$ — divide both terms by $4$."
+                ],
+                "explanation": "$e^{-x^2}(4x^2-2) = 4e^{-x^2}\\left(x^2-\\dfrac12\\right)$ — now write the full proof."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q15aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the coordinates of the two points of inflection on the curve $y = e^{-x^2}$.",
+          "options": [
+            "\\(\\left(\\pm\\dfrac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\)",
+            "\\(\\left(\\pm\\dfrac{1}{\\sqrt{2}}, e^{1/2}\\right)\\)",
+            "\\(\\left(\\pm\\dfrac{1}{2}, e^{-1/4}\\right)\\)",
+            "\\(\\left(\\pm 1, e^{-1}\\right)\\)"
+          ],
+          "answer": 0,
+          "hint": "Set $d^2y/dx^2 = 0$. Since $e^{-x^2} \\neq 0$, you need $x^2 - \\frac{1}{2} = 0$.",
+          "solution": "The correct answer is \\(\\left(\\pm\\dfrac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\).",
+          "steps": [
+            {
+              "explain": "Step 1: To find the points of inflection, we first need to find the second derivative \\(y''\\). Let's start by finding the first derivative using the chain rule.",
+              "work": "$$ \\begin{aligned} y &= e^{-x^2} \\\\\\\\ y' &= -2xe^{-x^2} \\end{aligned} $$"
+            },
+            {
+              "explain": "Step 2: Now, find the second derivative by applying the product rule and chain rule to \\(y'\\).",
+              "work": "$$ \\begin{aligned} y'' &= \\frac{d}{dx}(-2x) \\cdot e^{-x^2} + (-2x) \\cdot \\frac{d}{dx}(e^{-x^2}) \\\\\\\\ &= -2e^{-x^2} + (-2x)(-2xe^{-x^2}) \\\\\\\\ &= -2e^{-x^2} + 4x^2e^{-x^2} \\\\\\\\ &= 2e^{-x^2}(2x^2 - 1) \\end{aligned} $$"
+            },
+            {
+              "explain": "Step 3: Set \\(y'' = 0\\) to find the possible points of inflection. Since the exponential function \\(e^{-x^2}\\) is strictly positive and never zero, we only need to solve the quadratic part.",
+              "work": "$$ \\begin{aligned} 2x^2 - 1 &= 0 \\\\\\\\ x^2 &= \\frac{1}{2} \\implies x = \\pm \\frac{1}{\\sqrt{2}} \\end{aligned} $$"
+            },
+            {
+              "explain": "Step 4: Substitute these \\(x\\)-values back into the original equation \\(y = e^{-x^2}\\) to find the corresponding \\(y\\)-coordinates.",
+              "work": "$$ y = e^{-\\left(\\pm \\frac{1}{\\sqrt{2}}\\right)^2} = e^{-\\frac{1}{2}} = \\frac{1}{\\sqrt{e}} $$"
+            },
+            {
+              "explain": "Step 5: A quick test of intervals (e.g., \\(x=0\\) and \\(x=\\pm 1\\)) confirms that \\(y''\\) changes sign across these points. Therefore, both points are true points of inflection.",
+              "work": "$$ \\text{Points of inflection: } \\left(\\pm \\frac{1}{\\sqrt{2}}, e^{-1/2}\\right) $$"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q15(a)(ii)"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.85,
+            "reasoning_blueprint": [
+              {
+                "step_id": "S1",
+                "objective": "Points of inflection occur where $y''=0$. Using $y''=4e^{-x^2}\\left(x^2-\\tfrac12\\right)$ (since $e^{-x^2}$ is never zero), what equation do you actually need to solve?",
+                "axis": "strategy_selection",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$x^2-\\dfrac12=0$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$x^2+\\dfrac12=0$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$4e^{-x^2}=0$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "Since $e^{-x^2}>0$ always, the only way the product can be zero is if the other factor is zero."
+                ],
+                "explanation": "$x^2-\\dfrac12=0$."
+              },
+              {
+                "step_id": "S2",
+                "objective": "Solving $x^2=\\dfrac12$ gives $x=\\pm\\dfrac{1}{\\sqrt2}$. Substituting back into $y=e^{-x^2}$, what is $y$ at these points?",
+                "axis": "execution",
+                "interaction_type": "select",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "$e^{-1/2}$"
+                  },
+                  {
+                    "id": "b",
+                    "label": "$e^{1/2}$"
+                  },
+                  {
+                    "id": "c",
+                    "label": "$e^{-1/4}$"
+                  }
+                ],
+                "expected_response": "a",
+                "hints": [
+                  "At these points, $x^2=\\dfrac12$, so $y=e^{-x^2}=e^{-1/2}$."
+                ],
+                "explanation": "$e^{-1/2}$ — select this from the options next."
+              }
+            ],
+            "hasReasoningBlueprint": true
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q15aiii",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Explain why a formula given on the Reference Sheet cannot be used to evaluate $\\displaystyle\\int_{-1/\\sqrt{2}}^{1/\\sqrt{2}} e^{-x^2}\\,dx$.",
+          "answer": "The integrand \\(e^{-x^2}\\) cannot be expressed as \\(e^{ax+b}\\) (since the exponent \\(-x^2\\) is not linear).\nNo standard antiderivative formula on the Reference Sheet covers \\(\\int e^{-x^2}\\,dx\\).",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "The integrand \\(e^{-x^2}\\) cannot be expressed as \\(e^{ax+b}\\) (since the exponent \\(-x^2\\) is not linear).\nNo standard antiderivative formula on the Reference Sheet covers \\(\\int e^{-x^2}\\,dx\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "Given data"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(The integrand \\(e^{-x^2}\\) cannot be expressed as \\(e^{ax+b}\\) (since the exponent \\(-x^2\\) is not linear).\nNo standard antiderivative formula on the Reference Sheet covers \\(\\int e^{-x^2}\\,dx\\).\\)"
+            },
+            {
+              "explain": "Final answer: The integrand \\(e^{-x^2}\\) cannot be expressed as \\(e^{ax+b}\\) (since the exponent \\(-x^2\\) is not linear).\nNo standard antiderivative formula on the Reference Sheet covers \\(\\int e^{-x^2}\\,dx\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(The integrand \\(e^{-x^2}\\) cannot be expressed as \\(e^{ax+b}\\) (since the exponent \\(-x^2\\) is not linear).\nNo standard antiderivative formula on the Reference Sheet covers \\(\\int e^{-x^2}\\,dx\\).\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85
+          }
+        },
+        {
+          "id": "abb2020-q15aiv",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Show how Isabelle used the Trapezoidal Rule with three function values to determine $\\displaystyle\\int_{-1/\\sqrt{2}}^{1/\\sqrt{2}} e^{-x^2}\\,dx \\approx \\dfrac{1}{\\sqrt{2}} + \\dfrac{1}{\\sqrt{2}\\,e}$.",
+          "answer": "Three values at \\(x = -\\frac{1}{\\sqrt{2}}, 0, \\frac{1}{\\sqrt{2}}\\): \\(f(B) = e^{-1/2} = \\frac{1}{\\sqrt{e}}\\), \\(f(0) = 1\\), \\(f(C) = e^{-1/2}\\).\nWidth \\(h = \\frac{1}{\\sqrt{2}}\\).\nTrap rule: \\(\\frac{h}{2}[f(B)+2f(0)+f(C)] = \\frac{1}{2\\sqrt{2}}\\left[\\frac{1}{\\sqrt{e}} + 2 + \\frac{1}{\\sqrt{e}}\\right] = \\frac{1}{2\\sqrt{2}} \\cdot \\frac{2}{\\sqrt{e}} + \\frac{1}{\\sqrt{2}} = \\frac{1}{\\sqrt{2}e^{1/2}} + \\frac{1}{\\sqrt{2}}\\).",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "Three values at \\(x = -\\frac{1}{\\sqrt{2}}, 0, \\frac{1}{\\sqrt{2}}\\): \\(f(B) = e^{-1/2} = \\frac{1}{\\sqrt{e}}\\), \\(f(0) = 1\\), \\(f(C) = e^{-1/2}\\).\nWidth \\(h = \\frac{1}{\\sqrt{2}}\\).\nTrap rule: \\(\\frac{h}{2}[f(B)+2f(0)+f(C)] = \\frac{1}{2\\sqrt{2}}\\left[\\frac{1}{\\sqrt{e}} + 2 + \\frac{1}{\\sqrt{e}}\\right] = \\frac{1}{2\\sqrt{2}} \\cdot \\frac{2}{\\sqrt{e}} + \\frac{1}{\\sqrt{2}} = \\frac{1}{\\sqrt{2}e^{1/2}} + \\frac{1}{\\sqrt{2}}\\).",
+          "steps": [
+            {
+              "explain": "The three \\(x\\)-values are the endpoints and midpoint: \\(x_0 = -\\frac{1}{\\sqrt{2}}\\), \\(x_1 = 0\\), \\(x_2 = \\frac{1}{\\sqrt{2}}\\). The step size is \\(h = \\frac{1}{\\sqrt{2}} - 0 = \\frac{1}{\\sqrt{2}}\\).",
+              "work": "\\(h = \\frac{1}{\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Evaluate the function at each point. At \\(x_0 = -\\frac{1}{\\sqrt{2}}\\): \\(f = e^{-(1/\\sqrt{2})^2} = e^{-1/2}\\). At \\(x_1 = 0\\): \\(f = e^0 = 1\\). At \\(x_2 = \\frac{1}{\\sqrt{2}}\\): \\(f = e^{-1/2}\\).",
+              "work": "y_0 = e^{-1/2}, quad y_1 = 1, quad y_2 = e^{-1/2}"
+            },
+            {
+              "explain": "Apply the trapezoidal rule with 2 subintervals: \\(\\int \\approx \\frac{h}{2}[y_0 + 2y_1 + y_2]\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(\\approx \\frac{1/\\sqrt{2}}{2}\\!\\left[e^{-1/2} + 2(1) + e^{-1/2}\\right] = \\frac{1}{2\\sqrt{2}}\\!\\left[\\frac{2}{\\sqrt{e}} + 2\\right]\\)"
+            },
+            {
+              "explain": "Write \\(\\frac{1}{\\sqrt{2}\\, sqrt{e}} = \\frac{1}{\\sqrt{2}\\,e^{1/2}} = \\frac{1}{\\sqrt{2}\\,e}\\) (using \\(\\sqrt{e} \\equiv e^{1/2}\\)). The approximation equals \\(\\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}\\,e}\\). \\(\\square\\).",
+              "work": "\\(\\approx \\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}\\,e}\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "meta": {
+            "source": "Abbotsleigh 2020",
+            "course": "Advanced",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-AREA-01",
+            "dnaConfidence": 1,
+            "dnaReclassifiedAt": "2026-08-15T12:57:47.530Z",
+            "dnaReclassifiedReason": "Question is about the Trapezoidal Rule approximating a definite integral (area under a curve) — zero differentiation content."
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q15av",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Why is $\\displaystyle\\int_{-\\frac{1}{\\sqrt{2}}}^{\\frac{1}{\\sqrt{2}}} e^{-x^2}\\,dx$ greater than the trapezoidal estimate with those three points?",
+          "options": [
+            "The graph is concave up, so trapeziums overestimate",
+            "Trapezoidal rule always overestimates every integral",
+            "On this interval the graph is concave down, so trapeziums lie under the curve and underestimate the integral",
+            "The rule is exact for all exponential functions"
+          ],
+          "answer": 2,
+          "hint": "Find where $y=e^{-x^2}$ changes concavity. On $\\left[-\\frac{1}{\\sqrt{2}},\\frac{1}{\\sqrt{2}}\\right]$ check the sign of $y''$.",
+          "solution": "The correct answer is On this interval the graph is concave down, so trapeziums lie under the curve and underestimate the integral.",
+          "steps": [
+            {
+              "explain": "Whether a trapezoidal estimate is high or low depends on concavity: a chord sits above a concave-up graph (overestimate) and below a concave-down graph (underestimate).",
+              "work": "\\(\\text{concavity} \\Rightarrow \\text{over/under estimate}\\)"
+            },
+            {
+              "explain": "For \\(y=e^{-x^2}\\), differentiate twice: \\(y'=-2xe^{-x^2}\\) and \\(y''=e^{-x^2}(4x^2-2)=2e^{-x^2}(2x^2-1)\\). Inflection points where \\(y''=0\\):.",
+              "work": "\\(2x^2-1=0 \\implies x=\\pm\\dfrac{1}{\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "On the open interval between the inflection points, \\(|x|<\\dfrac{1}{\\sqrt{2}}\\), so \\(2x^2-1<0\\). Since \\(e^{-x^2}>0\\), we have \\(y''<0\\): the graph is concave down on the whole integration interval.",
+              "work": "\\(y''<0 \\text{ on }\\left[-\\dfrac{1}{\\sqrt{2}},\\dfrac{1}{\\sqrt{2}}\\right]\\)"
+            },
+            {
+              "explain": "Therefore each trapezium (chord) lies under the curve, so the trapezoidal rule underestimates the true integral. That is why the true value is greater than the three-point estimate.",
+              "work": "\\(\\displaystyle\\int_{-\\frac{1}{\\sqrt{2}}}^{\\frac{1}{\\sqrt{2}}} e^{-x^2}\\,dx > \\text{trap. estimate}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020",
+            "course": "Advanced",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "CALC-AREA-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q15b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How many solutions does the equation $3\\sin x = \\dfrac{x^2}{5} - 3$ have? (Draw the graphs of $y = 3\\sin x$ and $y = \\dfrac{x^2}{5} - 3$ to determine the answer.)",
+          "options": [
+            "\\(4 solutions\\)",
+            "\\(2 solutions\\)",
+            "\\(3 solutions\\)",
+            "\\(6 solutions\\)"
+          ],
+          "answer": 0,
+          "hint": "Plot $y = 3\\sin x$ (amplitude 3, period $2\\pi$) and $y = \\frac{x^2}{5} - 3$ (upward parabola with vertex at $(0, -3)$). Count intersection points.",
+          "solution": "The correct answer is \\(4 solutions\\).",
+          "steps": [
+            {
+              "explain": "Rearrange the equation so each side is a function: the number of solutions equals the number of intersections of \\(y = 3\\sin x\\) and \\(y = \\frac{x^2}{5} - 3\\).",
+              "work": "\\(y_1 = 3\\sin x \\quad \\text{and} \\quad y_2 = \\frac{x^2}{5} - 3\\)"
+            },
+            {
+              "explain": "Analyse \\(y_1 = 3\\sin x\\): this is a sine wave with amplitude 3 and period \\(2\\pi \\approx 6.28\\), oscillating between \\(-3\\) and \\(3\\).",
+              "work": "\\(-3 \\leq 3\\sin x \\leq 3\\)"
+            },
+            {
+              "explain": "Analyse \\(y_2 = \\frac{x^2}{5} - 3\\): this is an upward-opening parabola with vertex at \\((0, -3)\\). It equals \\(3\\) when \\(x^2 = 30\\), i.e., \\(x \\approx \\pm 5.48\\).",
+              "work": "\\(y_2 = 3 \\text{ when } x \\approx \\pm 5.48\\)"
+            },
+            {
+              "explain": "The two curves can only intersect where both functions are within range \\([-3, 3]\\), i.e., for \\(|x| \\lesssim 5.5\\). Sketching both on the same axes shows the parabola intersecting the sine wave at exactly 4 points.",
+              "work": "\\(4 \\text{ intersection points} \\Rightarrow 4 \\text{ solutions}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020",
+            "course": "Advanced",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-GRAPH-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q15c",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Show that $\\dfrac{\\sec\\theta - 1}{\\sec\\theta + 1} = \\cosec\\theta - \\cot\\theta$.",
+          "answer": "LHS: substitute \\(\\sec\\theta = \\frac{1}{\\cos\\theta}\\), multiply numerator and denominator by \\(\\cos\\theta\\): \\(\\frac{1-\\cos\\theta}{1+\\cos\\theta}\\).\nMultiply by \\(\\frac{(1+\\cos\\theta)}{(1+\\cos\\theta)}\\) ...\nor use the standard method: multiply top and bottom by \\((\\sec\\theta - 1)\\) and use Pythagorean identity.",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "LHS: substitute \\(\\sec\\theta = \\frac{1}{\\cos\\theta}\\), multiply numerator and denominator by \\(\\cos\\theta\\): \\(\\frac{1-\\cos\\theta}{1+\\cos\\theta}\\).\nMultiply by \\(\\frac{(1+\\cos\\theta)}{(1+\\cos\\theta)}\\) ...\nor use the standard method: multiply top and bottom by \\((\\sec\\theta - 1)\\) and use Pythagorean identity.",
+          "steps": [
+            {
+              "explain": "Start with the LHS. Replace \\(\\sec\\theta = \\frac{1}{\\cos\\theta}\\) in numerator and denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(\\text{LHS} = \\frac{\\frac{1}{\\cos\\theta}-1}{\\frac{1}{\\cos\\theta}+1}\\)"
+            },
+            {
+              "explain": "Multiply numerator and denominator by \\(\\cos\\theta\\) to clear the compound fraction. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(= \\frac{1-\\cos\\theta}{1+\\cos\\theta}\\)"
+            },
+            {
+              "explain": "Multiply numerator and denominator by \\((1-\\cos\\theta)\\) to create a Pythagorean identity in the denominator.",
+              "work": "\\(= \\frac{(1-\\cos\\theta)^2}{(1+\\cos\\theta)(1-\\cos\\theta)} = \\frac{(1-\\cos\\theta)^2}{1-\\cos^2\\theta}\\)"
+            },
+            {
+              "explain": "Expand \\((1-\\cos\\theta)^2 = 1 - 2\\cos\\theta + \\cos^2\\theta\\) and split the fraction. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(= \\frac{1 - 2\\cos\\theta + \\cos^2\\theta}{\\sin^2\\theta}\\)"
+            },
+            {
+              "explain": "Write each term separately: \\(\\frac{1}{\\sin^2\\theta} - \\frac{2\\cos\\theta}{\\sin^2\\theta} + \\frac{\\cos^2\\theta}{\\sin^2\\theta}\\). Note this can be written as \\(\\left(\\frac{1}{\\sin\\theta} - \\frac{\\cos\\theta}{\\sin\\theta}\\right)^2\\)... but a cleaner path: note \\(\\frac{(1-\\cos\\theta)^2}{\\sin^2\\theta} = \\left(\\frac{1-\\cos\\theta}{\\sin\\theta}\\right)^2 \\cdot \\frac{\\sin^2\\theta}{\\sin^2\\theta}\\). Instead split directly: \\(= \\frac{1}{\\sin\\theta} - \\frac{\\cos\\theta}{\\sin\\theta}\\).",
+              "work": "\\(= \\cosec\\theta - \\cot\\theta = \\text{RHS} \\qquad \\square\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q15(c)"
+          },
+          "dna": {
+            "dnaId": "TRIG-ID-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q16ai",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "A cylindrical tank fits into an isosceles triangular roof. The triangle has two sides of length 10 m and a base of 16 m. Show that the height of the roof is 6 metres.",
+          "answer": "Using Pythagoras: height \\(= \\sqrt{10^2 - 8^2} = \\sqrt{100 - 64} = \\sqrt{36} = 6\\) m.",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "Using Pythagoras: height \\(= \\sqrt{10^2 - 8^2} = \\sqrt{100 - 64} = \\sqrt{36} = 6\\) m.",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(\\text{Half base} = \\frac{16}{2} = 8 \\text{ m}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(\\text{height}^2 + 8^2 = 10^2\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\text{height} = \\sqrt{36} = 6 \\text{ m} \\qquad \\square\\)"
+            },
+            {
+              "explain": "Final answer: Using Pythagoras: height \\(= \\sqrt{10^2 - 8^2} = \\sqrt{100 - 64} = \\sqrt{36} = 6\\) m.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(Using Pythagoras: height \\(= \\sqrt{10^2 - 8^2} = \\sqrt{100 - 64} = \\sqrt{36} = 6\\) m.\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q16(a)(i)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GEO-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q16aii",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "A cylinder of radius $r$ m and height $h$ m fits inside a triangular roof of height 6 m and base 16 m. Show that $h = \\dfrac{3}{4}(8 - r)$.",
+          "answer": "By similar triangles: the portion above the cylinder has height \\((6 - h)\\) and half-width \\(r\\).\nThe full triangle has height 6 and half-width 8.\nSo \\(\\frac{6-h}{r} = \\frac{6}{8} = \\frac{3}{4}\\).\nThus \\(6 - h = \\frac{3r}{4} \\Rightarrow h = 6 - \\frac{3r}{4} = \\frac{3}{4}(8-r)\\).",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "By similar triangles: the portion above the cylinder has height \\((6 - h)\\) and half-width \\(r\\).\nThe full triangle has height 6 and half-width 8.\nSo \\(\\frac{6-h}{r} = \\frac{6}{8} = \\frac{3}{4}\\).\nThus \\(6 - h = \\frac{3r}{4} \\Rightarrow h = 6 - \\frac{3r}{4} = \\frac{3}{4}(8-r)\\).",
+          "steps": [
+            {
+              "explain": "The cylinder of radius \\(r\\) and height \\(h\\) sits at the base of the triangle. The portion of the triangle above the cylinder is a smaller triangle similar to the original.",
+              "work": "\\(\\text{Smaller triangle: height } (6-h),\\ \\text{half-base } r\\)"
+            },
+            {
+              "explain": "The full triangle has height 6 m and half-base 8 m. By similar triangles, the ratios of corresponding sides are equal.",
+              "work": "\\(\\frac{r}{8} = \\frac{6-h}{6}\\)"
+            },
+            {
+              "explain": "Factor: \\(h = 6 - \\frac{3r}{4} = \\frac{3}{4}\\cdot 8 - \\frac{3r}{4} = \\frac{3}{4}(8-r)\\). \\(\\square\\).",
+              "work": "\\(h = \\frac{3}{4}(8-r)\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q16(a)(ii)"
+          },
+          "dna": {
+            "dnaId": "CALC-OPT-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q16aiii",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Show that the volume of the cylindrical tank can be expressed as $V = \\dfrac{3\\pi}{4}(8r^2 - r^3)$.",
+          "answer": "\\(V = \\pi r^2 h = \\pi r^2 \\cdot \\frac{3}{4}(8-r) = \\frac{3\\pi}{4}(8r^2 - r^3)\\).",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "\\(V = \\pi r^2 h = \\pi r^2 \\cdot \\frac{3}{4}(8-r) = \\frac{3\\pi}{4}(8r^2 - r^3)\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(V = \\pi r^2 h\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "\\(V = \\pi r^2 \\cdot \\frac{3}{4}(8-r)\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(V = \\frac{3\\pi}{4}(8r^2 - r^3) \\qquad \\square\\)"
+            },
+            {
+              "explain": "Final answer: \\(V = \\pi r^2 h = \\pi r^2 \\cdot \\frac{3}{4}(8-r) = \\frac{3\\pi}{4}(8r^2 - r^3)\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\(V = \\pi r^2 h = \\pi r^2 \\cdot \\frac{3}{4}(8-r) = \\frac{3\\pi}{4}(8r^2 - r^3)\\).\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180,
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q16(a)(iii)"
+          },
+          "dna": {
+            "dnaId": "CALC-OPT-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q16aiv",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the value of $r$ that gives the cylindrical tank its greatest volume, and calculate that volume correct to the nearest cubic metre, given $V = \\dfrac{3\\pi}{4}(8r^2 - r^3)$.",
+          "options": [
+            "\\(r = \\frac{16}{3}\\) m; \\(V_{\\max} = \\frac{512\\pi}{9} \\approx 179\\) m³",
+            "\\(r = \\frac{8}{3}\\) m; \\(V_{\\max} \\approx 89\\) m³",
+            "\\(r = 4\\) m; \\(V_{\\max} \\approx 151\\) m³",
+            "\\(r = \\frac{16}{3}\\) m; \\(V_{\\max} \\approx 90\\) m³"
+          ],
+          "answer": 0,
+          "hint": "Differentiate $V$ with respect to $r$, set equal to zero, and verify it is a maximum.",
+          "solution": "The correct answer is \\(r = \\frac{16}{3}\\) m; \\(V_{\\max} = \\frac{512\\pi}{9} \\approx 179\\) m³.",
+          "steps": [
+            {
+              "explain": "Step 1: To find the greatest volume, we need to maximize \\(V\\). First, find the first derivative of the volume with respect to the radius \\(r\\).",
+              "work": "$$ \\begin{aligned} V &= \\frac{3\\pi}{4}(8r^2 - r^3) \\\\\\\\ \\frac{dV}{dr} &= \\frac{3\\pi}{4}(16r - 3r^2) \\end{aligned} $$"
+            },
+            {
+              "explain": "Step 2: Set the derivative equal to zero to find the stationary points. We can factor and solve for \\(r\\). Note that the radius \\(r\\) must be greater than zero.",
+              "work": "$$ \\begin{aligned} \\frac{3\\pi}{4}(16r - 3r^2) &= 0 \\\\\\\\ r(16 - 3r) &= 0 \\implies r = 0 \\text{ or } r = \\frac{16}{3} \\\\\\\\ \\therefore r &= \\frac{16}{3} \\text{ m (since } r > 0) \\end{aligned} $$"
+            },
+            {
+              "explain": "Step 3: Verify that \\(r = \\frac{16}{3}\\) gives a maximum volume by checking the second derivative. If \\(\\frac{d^2V}{dr^2} < 0\\), it is a local maximum.",
+              "work": "$$ \\begin{aligned} \\frac{d^2V}{dr^2} &= \\frac{3\\pi}{4}(16 - 6r) \\\\\\\\ \\left. \\frac{d^2V}{dr^2} \\right|_{r=\\frac{16}{3}} &= \\frac{3\\pi}{4}\\left(16 - 6\\left(\\frac{16}{3}\\right)\\right) \\\\\\\\ &= \\frac{3\\pi}{4}(16 - 32) = -12\\pi < 0 \\implies \\text{Maximum} \\end{aligned} $$"
+            },
+            {
+              "explain": "Step 4: Calculate the maximum volume by substituting \\(r = \\frac{16}{3}\\) back into the original volume formula, and evaluate it to the nearest cubic metre.",
+              "work": "$$ \\begin{aligned} V_{\\max} &= \\frac{3\\pi}{4}\\left(8\\left(\\frac{16}{3}\\right)^2 - \\left(\\frac{16}{3}\\right)^3\\right) \\\\\\\\ &= \\frac{3\\pi}{4}\\left(\\frac{2048}{9} - \\frac{4096}{27}\\right) = \\frac{3\\pi}{4}\\left(\\frac{6144 - 4096}{27}\\right) \\\\\\\\ &= \\frac{3\\pi}{4}\\left(\\frac{2048}{27}\\right) = \\frac{512\\pi}{9} \\approx 178.72 \\approx 179 \\text{ m}^3 \\end{aligned} $$"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q16(a)(iv)"
+          },
+          "dna": {
+            "dnaId": "TRIG-GEO-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q16bi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Sophie models river depth by $D = a\\sin\\!\\left(nt + \\dfrac{\\pi}{3}\\right) + c$ where the maximum depth is 5 m and the minimum is 1 m. What is the amplitude $a$?",
+          "options": [
+            "\\(a = 2\\)",
+            "\\(a = 4\\)",
+            "\\(a = 3\\)",
+            "\\(a = 1\\)"
+          ],
+          "answer": 0,
+          "hint": "Amplitude $= \\dfrac{\\text{max} - \\text{min}}{2}$.",
+          "solution": "The correct answer is \\(a = 2\\).",
+          "steps": [
+            {
+              "explain": "The amplitude of a sinusoidal model is half the distance between its maximum and minimum values.",
+              "work": "\\(a = \\frac{\\text{max} - \\text{min}}{2}\\)"
+            },
+            {
+              "explain": "Substitute the given maximum (5 m) and minimum (1 m) depths.",
+              "work": "\\(a = \\frac{5 - 1}{2} = \\frac{4}{2} = 2\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020",
+            "course": "Advanced",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GRAPH-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q16bii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In Sophie's river depth model $D = a\\sin\\!\\left(nt + \\dfrac{\\pi}{3}\\right) + c$, with max depth 5 m and min depth 1 m, find the value of $c$.",
+          "options": [
+            "\\(c = 2\\)",
+            "\\(c = 5\\)",
+            "\\(c = 3\\)",
+            "\\(c = 4\\)"
+          ],
+          "answer": 2,
+          "hint": "The centre (midline) of the sinusoidal function is $c = \\dfrac{\\text{max} + \\text{min}}{2}$ — this is a different formula from amplitude, which uses subtraction, not addition.",
+          "solution": "The correct answer is \\(c = 3\\).",
+          "steps": [
+            {
+              "explain": "The centre (midline) $c$ of a sinusoidal model is the AVERAGE of its maximum and minimum values — don't confuse this with the amplitude formula, which uses their difference.",
+              "work": "\\(c = \\frac{\\text{max} + \\text{min}}{2}\\)"
+            },
+            {
+              "explain": "Substitute the given maximum (5 m) and minimum (1 m) depths.",
+              "work": "\\(c = \\frac{5 + 1}{2} = \\frac{6}{2} = 3\\)",
+              "figure": {
+                "svg": "fig:b0d800442c"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020",
+            "course": "Advanced",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GRAPH-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q16biii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In Sophie's river depth model $D = a\\sin\\!\\left(nt + \\dfrac{\\pi}{3}\\right) + c$, the period between successive peaks is exactly 12 hours. Find the value of $n$.",
+          "options": [
+            "\\(n = \\dfrac{\\pi}{12}\\)",
+            "\\(n = \\dfrac{\\pi}{3}\\)",
+            "\\(n = \\dfrac{2\\pi}{3}\\)",
+            "\\(n = \\dfrac{\\pi}{6}\\)"
+          ],
+          "answer": 3,
+          "hint": "Period $= \\dfrac{2\\pi}{n}$. Set this equal to 12 and solve for $n$ — don't invert the fraction.",
+          "solution": "The correct answer is \\(n = \\dfrac{\\pi}{6}\\).",
+          "steps": [
+            {
+              "explain": "The period of a sinusoidal model $a\\sin(nt+\\phi)+c$ is $T=\\dfrac{2\\pi}{n}$. Set this equal to the given period and solve for $n$.",
+              "work": "\\(T = \\frac{2\\pi}{n}, \\quad \\frac{2\\pi}{n} = 12\\)"
+            },
+            {
+              "explain": "Solve for $n$ by cross-multiplying — the coefficient $n$ is inversely proportional to the period, so a longer period gives a SMALLER $n$.",
+              "work": "\\(n = \\frac{2\\pi}{12} = \\frac{\\pi}{6}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020",
+            "course": "Advanced",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GRAPH-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q16biv",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Sophie's model is $D = 2\\sin\\!\\left(\\dfrac{\\pi}{6}t + \\dfrac{\\pi}{3}\\right) + 3$. She starts recording when $D = 4.73$ m. How long does she wait until the depth first reaches 1 m?",
+          "options": [
+            "\\(5 \\text{ hours}\\)",
+            "\\(7 \\text{ hours}\\)",
+            "\\(9 \\text{ hours}\\)",
+            "\\(12 \\text{ hours}\\)"
+          ],
+          "answer": 1,
+          "hint": "Set $D = 1$ and solve for $t$. Recall at $t = 0$ the depth starts near its peak (4.73 m), so $t$ must be positive and the argument must increase up to the value that gives the minimum.",
+          "solution": "The correct answer is \\(7 \\text{ hours}\\).",
+          "steps": [
+            {
+              "explain": "First verify when Sophie starts recording, at $t=0$: this confirms the starting depth matches the given 4.73 m, and tells us the argument's starting value.",
+              "work": "\\(D(0) = 2\\sin\\!\\left(\\frac{\\pi}{3}\\right) + 3 = 2\\cdot\\frac{\\sqrt{3}}{2} + 3 = \\sqrt{3}+3 \\approx 4.73 \\text{ m} \\ \\checkmark\\)"
+            },
+            {
+              "explain": "The depth is at its minimum (1 m) when $\\sin(\\cdot) = -1$, which happens when the argument equals $\\frac{3\\pi}{2}$. Since the argument starts at $\\frac{\\pi}{3}\\approx1.05$ and increases with $t$, this is the FIRST time it reaches $\\frac{3\\pi}{2}\\approx4.71$ — no smaller positive $t$ works.",
+              "work": "\\(\\frac{\\pi}{6}t + \\frac{\\pi}{3} = \\frac{3\\pi}{2}\\)"
+            },
+            {
+              "explain": "Subtract $\\frac{\\pi}{3}$ from both sides, then solve for $t$.",
+              "work": "\\(\\frac{\\pi}{6}t = \\frac{3\\pi}{2} - \\frac{\\pi}{3} = \\frac{9\\pi}{6}-\\frac{2\\pi}{6} = \\frac{7\\pi}{6} \\quad\\Rightarrow\\quad t = 7\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q16(b)(iv)",
+            "examPaper": "abbotsleigh-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GRAPH-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        },
+        {
+          "id": "abb2020-q16bv",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For $D = 2\\sin\\!\\left(\\dfrac{\\pi}{6}t + \\dfrac{\\pi}{3}\\right) + 3$, find when the greatest rate of drop in depth occurs and what that rate is. Answer correct to 2 decimal places.",
+          "options": [
+            "\\(At \\(t = 4\\) h; rate \\(= -\\dfrac{\\pi}{3} \\approx -1.05\\) m/h\\)",
+            "\\(At \\(t = 2\\) h; rate \\(\\approx -1.05\\) m/h\\)",
+            "\\(At \\(t = 4\\) h; rate \\(\\approx -0.52\\) m/h\\)",
+            "\\(At \\(t = 8\\) h; rate \\(\\approx -1.05\\) m/h\\)"
+          ],
+          "answer": 0,
+          "hint": "Differentiate $D$ with respect to $t$ to get the rate $\\dot{D}$, then minimise $\\dot{D}$ (find its most negative value).",
+          "solution": "The correct answer is \\(At \\(t = 4\\) h; rate \\(= -\\dfrac{\\pi}{3} \\approx -1.05\\) m/h\\).",
+          "steps": [
+            {
+              "explain": "Differentiate \\(D = 2\\sin\\!\\left(\\frac{\\pi}{6}t + \\frac{\\pi}{3}\\right) + 3\\) with respect to \\(t\\). Use the chain rule: derivative of \\(\\sin(u)\\) is \\(\\cos(u) \\cdot \\frac{du}{dt}\\), where \\(u = \\frac{\\pi t}{6} + \\frac{\\pi}{3}\\) and \\(\\frac{du}{dt} = \\frac{\\pi}{6}\\).",
+              "work": "\\(\\dot{D} = 2 \\cdot \\cos\\!\\left(\\frac{\\pi t}{6}+\\frac{\\pi}{3}\\right) \\cdot \\frac{\\pi}{6} = \\frac{\\pi}{3}\\cos\\!\\left(\\frac{\\pi t}{6}+\\frac{\\pi}{3}\\right)\\)"
+            },
+            {
+              "explain": "The rate of change of depth is \\(\\dot{D}\\). To find the greatest rate of drop (most negative value), we need the minimum of \\(\\dot{D}\\).",
+              "work": "\\(\\dot{D}_{\\min} \\text{ occurs when } \\cos\\!\\left(\\frac{\\pi t}{6}+\\frac{\\pi}{3}\\right) = -1\\)"
+            },
+            {
+              "explain": "Subtract \\(\\frac{\\pi}{3}\\): \\(\\frac{\\pi t}{6} = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
+              "work": "\\(\\frac{\\pi t}{6} = \\frac{2\\pi}{3}\\)"
+            },
+            {
+              "explain": "The greatest rate of drop is \\(\\dot{D} = \\frac{\\pi}{3} \\times (-1) = -\\frac{\\pi}{3} \\approx -1.05\\) m/h.",
+              "work": "\\(\\dot{D} = -\\frac{\\pi}{3} \\approx -1.05 \\text{ m/h}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Abbotsleigh 2020 Trial Q16(b)(v)"
+          },
+          "dna": {
+            "dnaId": "CALC-MOTION-01",
+            "dnaConfidence": 0.95
+          },
+          "alsoIn": [
+            "exam:abbotsleigh2020"
+          ]
+        }
+      ]
+    }
+  ]
+}

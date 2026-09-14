@@ -1,0 +1,60 @@
+{
+  "chapterId": "exam:year7ch3g",
+  "title": "Exam Practice",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "exam:year7ch3g",
+      "code": "",
+      "title": "Describing arrays, areas and number patterns",
+      "questions": [
+        {
+          "id": "y7-3g-q1",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "",
+          "parts": [
+            {
+              "id": "y7-3g-q1a",
+              "type": "short",
+              "stem": "a) How many sticks are there in the fifth diagram?",
+              "answer": "21"
+            },
+            {
+              "id": "y7-3g-q1b",
+              "type": "short",
+              "stem": "b) How many sticks are there in the 50th diagram?",
+              "answer": "201"
+            }
+          ],
+          "answer": "N/A",
+          "timeLimit": 30,
+          "inactive": true
+        },
+        {
+          "id": "y7-3g-q11",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "parts": [
+            {
+              "id": "y7-3g-q11a",
+              "type": "short",
+              "stem": "a) Find the perimeter of the rectangle.",
+              "answer": "2y + 18"
+            },
+            {
+              "id": "y7-3g-q11b",
+              "type": "short",
+              "stem": "b) Find the area of the rectangle.",
+              "answer": "5y + 20"
+            }
+          ],
+          "answer": "N/A",
+          "timeLimit": 90,
+          "inactive": true
+        }
+      ]
+    }
+  ]
+}

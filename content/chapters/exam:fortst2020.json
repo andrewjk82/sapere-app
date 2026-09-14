@@ -1,0 +1,56 @@
+{
+  "chapterId": "exam:fortst2020",
+  "title": "Arithmetic Sequences & Series",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "exam:fortst2020",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "fortst2020-mc1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The fourth term of an arithmetic series is $27$ and the seventh term is $12$. What is the common difference?",
+          "options": [
+            "\\(-5\\)",
+            "\\(2\\)",
+            "\\(-13\\)",
+            "\\(42\\)"
+          ],
+          "answer": 0,
+          "hint": "Write $T_4$ and $T_7$ using $T_n = a + (n-1)d$ and subtract.",
+          "solution": "The correct answer is \\(-5\\).",
+          "steps": [
+            {
+              "explain": "The 4th term is $T_4 = a + 3d$. Since $T_4 = 27$, this is equation (1).",
+              "work": "\\(T_4 = a + 3d = 27 \\quad\\cdots(1)\\)"
+            },
+            {
+              "explain": "The 7th term is $T_7 = a + 6d$. Since $T_7 = 12$, this is equation (2).",
+              "work": "\\(T_7 = a + 6d = 12 \\quad\\cdots(2)\\)"
+            },
+            {
+              "explain": "Subtract (1) from (2) to eliminate $a$ and solve for the common difference $d$ — no need to find $a$, since the question only asks for $d$.",
+              "work": "\\((a + 6d) - (a + 3d) = 12 - 27 \\Rightarrow 3d = -15\\)"
+            },
+            {
+              "explain": "Divide both sides by 3 to solve for $d$.",
+              "work": "\\(d = \\frac{-15}{3} = -5\\)"
+            }
+          ],
+          "meta": {
+            "source": "Fort Street 2020 Trial Q1",
+            "origin": "teacher",
+            "examPaper": "fortst-2020"
+          },
+          "dna": {
+            "dnaId": "SEQ-01",
+            "dnaConfidence": 0.85
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2248 @@
+{
+  "chapterId": "exam:year12ach1d",
+  "title": "Exam Practice",
+  "year": "Year 12a",
+  "topics": [
+    {
+      "topicId": "exam:year12ach1d",
+      "code": "",
+      "title": "Solving problems involving APs and GPs",
+      "questions": [
+        {
+          "id": "y12a-1d-q10a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Consider the geometric sequence:\n\\[162, 18, 2, \\dots\\]\nFind the formula for the general term \\(T_n\\), and find how many terms exceed \\(10^{-6}\\).",
+          "options": [
+            "\\(T_n = 162 \\times \\left(\\dfrac{1}{9}\\right)^{n-1}\\); \\(9\\) terms",
+            "\\(T_n = 162 \\times \\left(\\dfrac{1}{9}\\right)^{n-1}\\); \\(8\\) terms",
+            "\\(T_n = 162 \\times \\left(\\dfrac{1}{9}\\right)^{n}\\); \\(9\\) terms",
+            "\\(T_n = 162 \\times \\left(\\dfrac{1}{3}\\right)^{n-1}\\); \\(10\\) terms"
+          ],
+          "answer": 0,
+          "hint": "Write \\(T_n = a r^{n-1}\\) with \\(a = 162\\) and \\(r = \\dfrac{1}{9}\\), then solve \\(162 \\times \\left(\\dfrac{1}{9}\\right)^{n-1} > 10^{-6}\\).",
+          "solution": "The formula is \\(T_n = 162 \\times \\left(\\dfrac{1}{9}\\right)^{n-1}\\) and \\(9\\) terms exceed \\(10^{-6}\\).",
+          "steps": [
+            {
+              "explain": "Identify the first term and find the common ratio.",
+              "work": "\\(a = 162, quad r = \\dfrac{18}{162} = \\dfrac{1}{9}\\)"
+            },
+            {
+              "explain": "Write down the formula for \\(T_n\\).",
+              "work": "\\(T_n = 162 \\times \\left(\\dfrac{1}{9}\\right)^{n-1}\\)"
+            },
+            {
+              "explain": "Set up the inequality \\(T_n > 10^{-6}\\).",
+              "work": "\\(162 \\times \\left(\\dfrac{1}{9}\\right)^{n-1} > 10^{-6}\\)"
+            },
+            {
+              "explain": "Isolate the exponential term.",
+              "work": "\\(9^{-(n-1)} > \\dfrac{10^{-6}}{162} \\implies 9^{n-1} < 162 \\times 10^6 = 1.62 \\times 10^8\\)"
+            },
+            {
+              "explain": "Take the logarithm to solve for \\(n\\).",
+              "work": "\\(n - 1 < \\dfrac{\\log(1.62 \\times 10^8)}{\\log(9)} \\approx 8.601 \\implies n < 9.601\\)"
+            },
+            {
+              "explain": "Determine the number of integer terms.",
+              "work": "\\(n = 9\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1d-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Consider the geometric sequence:\n\\[36, 6, 1, \\dots\\]\nFind the formula for the general term \\(T_n\\), and find how many terms exceed \\(10^{-6}\\).",
+          "options": [
+            "\\(T_n = 36 \\times \\left(\\dfrac{1}{6}\\right)^{n-1}\\); \\(10\\) terms",
+            "\\(T_n = 36 \\times \\left(\\dfrac{1}{6}\\right)^{n-1}\\); \\(11\\) terms",
+            "\\(T_n = 36 \\times \\left(\\dfrac{1}{6}\\right)^{n}\\); \\(12\\) terms",
+            "\\(T_n = 36 \\times 6^{1-n}\\); \\(9\\) terms"
+          ],
+          "answer": 0,
+          "hint": "Use \\(a = 36\\), \\(r = \\dfrac{1}{6}\\), and solve \\(36 \\times 6^{1-n} > 10^{-6}\\).",
+          "solution": "The formula is \\(T_n = 36 \\times \\left(\\dfrac{1}{6}\\right)^{n-1}\\) and \\(10\\) terms exceed \\(10^{-6}\\).",
+          "steps": [
+            {
+              "explain": "Identify \\(a\\) and \\(r\\) for the sequence.",
+              "work": "\\(a = 36, quad r = \\dfrac{1}{6}\\)"
+            },
+            {
+              "explain": "Write down the general term expression.",
+              "work": "\\(T_n = 36 \\times \\left(\\dfrac{1}{6}\\right)^{n-1} = 6^2 \\times 6^{1-n} = 6^{3-n}\\)"
+            },
+            {
+              "explain": "Apply the condition \\(T_n > 10^{-6}\\).",
+              "work": "\\(6^{3-n} > 10^{-6}\\)"
+            },
+            {
+              "explain": "Take the logarithm of both sides.",
+              "work": "\\((3 - n)\\log(6) > -6\\log(10) \\implies n - 3 < \\dfrac{6}{\\log_{10}(6)} \\approx 7.712\\)"
+            },
+            {
+              "explain": "Solve for the bound on \\(n\\).",
+              "work": "\\(n < 10.712\\)"
+            },
+            {
+              "explain": "Determine the maximum integer value.",
+              "work": "\\(n = 10\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1d-q10c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Consider the geometric sequence:\n\\[1, 0.8, 0.64, \\dots\\]\nFind the formula for the general term \\(T_n\\), and find how many terms exceed \\(10^{-6}\\).",
+          "options": [
+            "\\(T_n = 0.8^{n-1}\\); \\(63\\) terms",
+            "\\(T_n = 0.8^{n-1}\\); \\(62\\) terms",
+            "\\(T_n = 0.8^{n}\\); \\(63\\) terms",
+            "\\(T_n = 1.25^{1-n}\\); \\(60\\) terms"
+          ],
+          "answer": 0,
+          "hint": "Set up the term equation with \\(a = 1\\) and \\(r = 0.8\\). Solve \\(0.8^{n-1} > 10^{-6}\\).",
+          "solution": "The formula is \\(T_n = 0.8^{n-1}\\) and \\(63\\) terms exceed \\(10^{-6}\\).",
+          "steps": [
+            {
+              "explain": "Identify the values of the first term and common ratio.",
+              "work": "\\(a = 1, quad r = 0.8\\)"
+            },
+            {
+              "explain": "State the general term formula.",
+              "work": "\\(T_n = 0.8^{n-1}\\)"
+            },
+            {
+              "explain": "Formulate the inequality.",
+              "work": "\\(0.8^{n-1} > 10^{-6}\\)"
+            },
+            {
+              "explain": "Take the logarithm of both sides.",
+              "work": "\\((n - 1) \\log(0.8) > -6 \\log(10)\\)"
+            },
+            {
+              "explain": "Solve for \\(n\\) (reversing the inequality since \\(\\log(0.8)\\) is negative).",
+              "work": "\\(n - 1 < \\dfrac{-6}{\\log_{10}(0.8)} \\approx 62.019 \\implies n < 63.019\\)"
+            },
+            {
+              "explain": "Determine the maximum integer value.",
+              "work": "\\(n = 63\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1d-q17c",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The first, third, and ninth terms of an arithmetic progression (AP) \\(T_n = a + (n-1)d\\) form a geometric sequence. Show that either \\(d = 0\\) or \\(d = a\\).",
+          "answer": "Let \\(T_1 = a\\), \\(T_3 = a + 2d\\), and \\(T_9 = a + 8d\\).\nSince they form a geometric progression, the middle term squared equals the product of the outer terms:\n\\((a + 2d)^2 = a(a + 8d)\\)\n\\(a^2 + 4ad + 4d^2 = a^2 + 8ad\\)\n\\(4d^2 - 4ad = 0\\)\n\\(4d(d - a) = 0\\)\nTherefore, either \\(d = 0\\) or \\(d = a\\).",
+          "hint": "Set \\(T_3^2 = T_1 \\times T_9\\) and expand the quadratic terms.",
+          "solution": "Equating the square of the middle term to the product of the outer terms reveals \\(4d(d-a) = 0\\), indicating \\(d=0\\) or \\(d=a\\).",
+          "steps": [
+            {
+              "explain": "Write formulas for \\(T_1\\), \\(T_3\\), and \\(T_9\\) in terms of \\(a\\) and \\(d\\).",
+              "work": "\\(T_1 = a, quad T_3 = a + 2d, quad T_9 = a + 8d\\)"
+            },
+            {
+              "explain": "Set the terms in a GP relation.",
+              "work": "\\((a + 2d)^2 = a(a + 8d)\\)"
+            },
+            {
+              "explain": "Expand both sides of the equation.",
+              "work": "\\(a^2 + 4ad + 4d^2 = a^2 + 8ad\\)"
+            },
+            {
+              "explain": "Simplify and factor the quadratic equation.",
+              "work": "\\(4d^2 - 4ad = 0 \\implies 4d(d - a) = 0\\)"
+            },
+            {
+              "explain": "Conclude the proof based on the factored solutions.",
+              "work": "\\(d = 0 \\quad \\mathrm{or} \\quad d = a\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y12a-1d-q17d",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "The first, second, and sixth terms of an arithmetic progression (AP) \\(T_n = a + (n-1)d\\) form a geometric sequence. Show that either \\(d = 0\\) or \\(d = 3a\\).",
+          "answer": "Let \\(T_1 = a\\), \\(T_2 = a + d\\), and \\(T_6 = a + 5d\\).\nSince they form a geometric progression, the middle term squared equals the product of the outer terms:\n\\((a + d)^2 = a(a + 5d)\\)\n\\(a^2 + 2ad + d^2 = a^2 + 5ad\\)\n\\(d^2 - 3ad = 0\\)\n\\(d(d - 3a) = 0\\)\nTherefore, either \\(d = 0\\) or \\(d = 3a\\).",
+          "hint": "Set up equation \\((a + d)^2 = a(a + 5d)\\).",
+          "solution": "Solving \\((a+d)^2 = a(a+5d)\\) simplifies to \\(d(d-3a) = 0\\), showing \\(d=0\\) or \\(d=3a\\).",
+          "steps": [
+            {
+              "explain": "Identify the terms as \\(T_1 = a\\), \\(T_2 = a + d\\), and \\(T_6 = a + 5d\\).",
+              "work": "\\(T_1 = a, quad T_2 = a + d, quad T_6 = a + 5d\\)"
+            },
+            {
+              "explain": "Apply the GP relation.",
+              "work": "\\((a + d)^2 = a(a + 5d)\\)"
+            },
+            {
+              "explain": "Expand the terms.",
+              "work": "\\(a^2 + 2ad + d^2 = a^2 + 5ad\\)"
+            },
+            {
+              "explain": "Rearrange and factor the quadratic expression.",
+              "work": "\\(d^2 - 3ad = 0 \\implies d(d - 3a) = 0\\)"
+            },
+            {
+              "explain": "Conclude the proof.",
+              "work": "\\(d = 0 \\quad \\mathrm{or} \\quad d = 3a\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y12a-1d-q18a",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Show that the sequence:\n\\[3^6, 3^3, 3^0, 3^{-3}, \\dots\\]\nis a geometric progression (GP), and find its \\(n\\)-th term.",
+          "answer": "First term \\(a = 729\\) (or \\(3^6\\)). The ratio between consecutive terms is:\n\\(r = \\dfrac{3^{6-3n}}{3^{9-3n}} = 3^{-3} = \\dfrac{1}{27}\\).\nSince this ratio is constant, the sequence is a GP.\nThe \\(n\\)-th term is \\(T_n = 3^{9-3n}\\).",
+          "hint": "Show that the ratio of consecutive terms \\(\\dfrac{T_{n+1}}{T_n}\\) is constant.",
+          "solution": "The constant ratio is \\(\\dfrac{1}{27}\\), verifying it is a GP with \\(T_n = 3^{9-3n}\\).",
+          "steps": [
+            {
+              "explain": "Express the general term of the sequence in terms of powers of 3.",
+              "work": "\\(T_n = 3^{9-3n}\\)"
+            },
+            {
+              "explain": "Calculate the ratio of consecutive terms \\(\\dfrac{T_{n+1}}{T_n}\\).",
+              "work": "\\(\\dfrac{T_{n+1}}{T_n} = \\dfrac{3^{9-3(n+1)}}{3^{9-3n}} = \\dfrac{3^{6-3n}}{3^{9-3n}} = 3^{-3} = \\dfrac{1}{27}\\)"
+            },
+            {
+              "explain": "Conclude that the sequence is a GP because the ratio is a constant value.",
+              "work": "\\(a = 3^6, quad r = \\dfrac{1}{27}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y12a-1d-hard-c1-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineer working in financial analytics receives a starting salary of \\(\\$55000\\) in their first year. Each subsequent year, their salary increases by a constant annual increment of \\(\\$2500\\), forming an arithmetic progression (AP). Calculate their salary in year \\(9\\).",
+          "options": [
+            "\\(\\$77500\\)",
+            "\\(\\$80000\\)",
+            "\\(\\$75000\\)",
+            "\\(\\$72500\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the general term formula for an arithmetic progression: \\(T_n = a + (n - 1)d\\), where \\(a\\) is the first term and \\(d\\) is the common difference.",
+          "solution": "\\(\\$75000\\)",
+          "steps": [
+            {
+              "explain": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 55000\\), and the common difference, which is the annual increment \\(d = 2500\\).",
+              "work": "\\(a = 55000, quad d = 2500\\)"
+            },
+            {
+              "explain": "We use the general term formula for an AP to find the salary in year \\(n = 9\\).",
+              "work": "\\(T_{9} = a + (9 - 1)d\\)"
+            },
+            {
+              "explain": "Substitute the known values of \\(a\\) and \\(d\\) into the general term formula.",
+              "work": "\\(T_{9} = 55000 + 8 \\times 2500\\)"
+            },
+            {
+              "explain": "Perform the multiplication and addition to calculate the final salary.",
+              "work": "\\(T_{9} = 55000 + 20000 = 75000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c1-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineer working in marine ecology receives a starting salary of \\(\\$60000\\) in their first year. Each subsequent year, their salary increases by a constant annual increment of \\(\\$3000\\), forming an arithmetic progression (AP). Calculate their salary in year \\(10\\).",
+          "options": [
+            "\\(\\$87000\\)",
+            "\\(\\$93000\\)",
+            "\\(\\$84000\\)",
+            "\\(\\$90000\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the general term formula for an arithmetic progression: \\(T_n = a + (n - 1)d\\), where \\(a\\) is the first term and \\(d\\) is the common difference.",
+          "solution": "\\(\\$87000\\)",
+          "steps": [
+            {
+              "explain": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 60000\\), and the common difference, which is the annual increment \\(d = 3000\\).",
+              "work": "\\(a = 60000, quad d = 3000\\)"
+            },
+            {
+              "explain": "We use the general term formula for an AP to find the salary in year \\(n = 10\\).",
+              "work": "\\(T_{10} = a + (10 - 1)d\\)"
+            },
+            {
+              "explain": "Substitute the known values of \\(a\\) and \\(d\\) into the general term formula.",
+              "work": "\\(T_{10} = 60000 + 9 \\times 3000\\)"
+            },
+            {
+              "explain": "Perform the multiplication and addition to calculate the final salary.",
+              "work": "\\(T_{10} = 60000 + 27000 = 87000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c1-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineer working in sustainable forestry receives a starting salary of \\(\\$65000\\) in their first year. Each subsequent year, their salary increases by a constant annual increment of \\(\\$3500\\), forming an arithmetic progression (AP). Calculate their salary in year \\(8\\).",
+          "options": [
+            "\\(\\$86000\\)",
+            "\\(\\$96500\\)",
+            "\\(\\$89500\\)",
+            "\\(\\$93000\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the general term formula for an arithmetic progression: \\(T_n = a + (n - 1)d\\), where \\(a\\) is the first term and \\(d\\) is the common difference.",
+          "solution": "\\(\\$89500\\)",
+          "steps": [
+            {
+              "explain": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 65000\\), and the common difference, which is the annual increment \\(d = 3500\\).",
+              "work": "\\(a = 65000, quad d = 3500\\)"
+            },
+            {
+              "explain": "We use the general term formula for an AP to find the salary in year \\(n = 8\\).",
+              "work": "\\(T_{8} = a + (8 - 1)d\\)"
+            },
+            {
+              "explain": "Substitute the known values of \\(a\\) and \\(d\\) into the general term formula.",
+              "work": "\\(T_{8} = 65000 + 7 \\times 3500\\)"
+            },
+            {
+              "explain": "Perform the multiplication and addition to calculate the final salary.",
+              "work": "\\(T_{8} = 65000 + 24500 = 89500\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c1-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineer working in robotics manufacturing receives a starting salary of \\(\\$70000\\) in their first year. Each subsequent year, their salary increases by a constant annual increment of \\(\\$2000\\), forming an arithmetic progression (AP). Calculate their salary in year \\(9\\).",
+          "options": [
+            "\\(\\$84000\\)",
+            "\\(\\$88000\\)",
+            "\\(\\$86000\\)",
+            "\\(\\$90000\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the general term formula for an arithmetic progression: \\(T_n = a + (n - 1)d\\), where \\(a\\) is the first term and \\(d\\) is the common difference.",
+          "solution": "\\(\\$86000\\)",
+          "steps": [
+            {
+              "explain": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 70000\\), and the common difference, which is the annual increment \\(d = 2000\\).",
+              "work": "\\(a = 70000, quad d = 2000\\)"
+            },
+            {
+              "explain": "We use the general term formula for an AP to find the salary in year \\(n = 9\\).",
+              "work": "\\(T_{9} = a + (9 - 1)d\\)"
+            },
+            {
+              "explain": "Substitute the known values of \\(a\\) and \\(d\\) into the general term formula.",
+              "work": "\\(T_{9} = 70000 + 8 \\times 2000\\)"
+            },
+            {
+              "explain": "Perform the multiplication and addition to calculate the final salary.",
+              "work": "\\(T_{9} = 70000 + 16000 = 86000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c1-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineer working in nuclear physics receives a starting salary of \\(\\$50000\\) in their first year. Each subsequent year, their salary increases by a constant annual increment of \\(\\$2500\\), forming an arithmetic progression (AP). Calculate their salary in year \\(10\\).",
+          "options": [
+            "\\(\\$75000\\)",
+            "\\(\\$70000\\)",
+            "\\(\\$72500\\)",
+            "\\(\\$77500\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the general term formula for an arithmetic progression: \\(T_n = a + (n - 1)d\\), where \\(a\\) is the first term and \\(d\\) is the common difference.",
+          "solution": "\\(\\$72500\\)",
+          "steps": [
+            {
+              "explain": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 50000\\), and the common difference, which is the annual increment \\(d = 2500\\).",
+              "work": "\\(a = 50000, quad d = 2500\\)"
+            },
+            {
+              "explain": "We use the general term formula for an AP to find the salary in year \\(n = 10\\).",
+              "work": "\\(T_{10} = a + (10 - 1)d\\)"
+            },
+            {
+              "explain": "Substitute the known values of \\(a\\) and \\(d\\) into the general term formula.",
+              "work": "\\(T_{10} = 50000 + 9 \\times 2500\\)"
+            },
+            {
+              "explain": "Perform the multiplication and addition to calculate the final salary.",
+              "work": "\\(T_{10} = 50000 + 22500 = 72500\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c1-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineer working in telecom engineering receives a starting salary of \\(\\$55000\\) in their first year. Each subsequent year, their salary increases by a constant annual increment of \\(\\$3000\\), forming an arithmetic progression (AP). Calculate their salary in year \\(8\\).",
+          "options": [
+            "\\(\\$82000\\)",
+            "\\(\\$76000\\)",
+            "\\(\\$79000\\)",
+            "\\(\\$73000\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the general term formula for an arithmetic progression: \\(T_n = a + (n - 1)d\\), where \\(a\\) is the first term and \\(d\\) is the common difference.",
+          "solution": "\\(\\$76000\\)",
+          "steps": [
+            {
+              "explain": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 55000\\), and the common difference, which is the annual increment \\(d = 3000\\).",
+              "work": "\\(a = 55000, quad d = 3000\\)"
+            },
+            {
+              "explain": "We use the general term formula for an AP to find the salary in year \\(n = 8\\).",
+              "work": "\\(T_{8} = a + (8 - 1)d\\)"
+            },
+            {
+              "explain": "Substitute the known values of \\(a\\) and \\(d\\) into the general term formula.",
+              "work": "\\(T_{8} = 55000 + 7 \\times 3000\\)"
+            },
+            {
+              "explain": "Perform the multiplication and addition to calculate the final salary.",
+              "work": "\\(T_{8} = 55000 + 21000 = 76000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c1-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineer working in urban planning receives a starting salary of \\(\\$60000\\) in their first year. Each subsequent year, their salary increases by a constant annual increment of \\(\\$3500\\), forming an arithmetic progression (AP). Calculate their salary in year \\(9\\).",
+          "options": [
+            "\\(\\$91500\\)",
+            "\\(\\$84500\\)",
+            "\\(\\$88000\\)",
+            "\\(\\$95000\\)"
+          ],
+          "answer": 2,
+          "hint": "Use the general term formula for an arithmetic progression: \\(T_n = a + (n - 1)d\\), where \\(a\\) is the first term and \\(d\\) is the common difference.",
+          "solution": "\\(\\$88000\\)",
+          "steps": [
+            {
+              "explain": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 60000\\), and the common difference, which is the annual increment \\(d = 3500\\).",
+              "work": "\\(a = 60000, quad d = 3500\\)"
+            },
+            {
+              "explain": "We use the general term formula for an AP to find the salary in year \\(n = 9\\).",
+              "work": "\\(T_{9} = a + (9 - 1)d\\)"
+            },
+            {
+              "explain": "Substitute the known values of \\(a\\) and \\(d\\) into the general term formula.",
+              "work": "\\(T_{9} = 60000 + 8 \\times 3500\\)"
+            },
+            {
+              "explain": "Perform the multiplication and addition to calculate the final salary.",
+              "work": "\\(T_{9} = 60000 + 28000 = 88000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c1-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineer working in biophysics receives a starting salary of \\(\\$65000\\) in their first year. Each subsequent year, their salary increases by a constant annual increment of \\(\\$2000\\), forming an arithmetic progression (AP). Calculate their salary in year \\(10\\).",
+          "options": [
+            "\\(\\$81000\\)",
+            "\\(\\$83000\\)",
+            "\\(\\$85000\\)",
+            "\\(\\$87000\\)"
+          ],
+          "answer": 1,
+          "hint": "Use the general term formula for an arithmetic progression: \\(T_n = a + (n - 1)d\\), where \\(a\\) is the first term and \\(d\\) is the common difference.",
+          "solution": "\\(\\$83000\\)",
+          "steps": [
+            {
+              "explain": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 65000\\), and the common difference, which is the annual increment \\(d = 2000\\).",
+              "work": "\\(a = 65000, quad d = 2000\\)"
+            },
+            {
+              "explain": "We use the general term formula for an AP to find the salary in year \\(n = 10\\).",
+              "work": "\\(T_{10} = a + (10 - 1)d\\)"
+            },
+            {
+              "explain": "Substitute the known values of \\(a\\) and \\(d\\) into the general term formula.",
+              "work": "\\(T_{10} = 65000 + 9 \\times 2000\\)"
+            },
+            {
+              "explain": "Perform the multiplication and addition to calculate the final salary.",
+              "work": "\\(T_{10} = 65000 + 18000 = 83000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c1-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineer working in agricultural drone fleet receives a starting salary of \\(\\$70000\\) in their first year. Each subsequent year, their salary increases by a constant annual increment of \\(\\$2500\\), forming an arithmetic progression (AP). Calculate their salary in year \\(8\\).",
+          "options": [
+            "\\(\\$87500\\)",
+            "\\(\\$90000\\)",
+            "\\(\\$92500\\)",
+            "\\(\\$85000\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the general term formula for an arithmetic progression: \\(T_n = a + (n - 1)d\\), where \\(a\\) is the first term and \\(d\\) is the common difference.",
+          "solution": "\\(\\$87500\\)",
+          "steps": [
+            {
+              "explain": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 70000\\), and the common difference, which is the annual increment \\(d = 2500\\).",
+              "work": "\\(a = 70000, quad d = 2500\\)"
+            },
+            {
+              "explain": "We use the general term formula for an AP to find the salary in year \\(n = 8\\).",
+              "work": "\\(T_{8} = a + (8 - 1)d\\)"
+            },
+            {
+              "explain": "Substitute the known values of \\(a\\) and \\(d\\) into the general term formula.",
+              "work": "\\(T_{8} = 70000 + 7 \\times 2500\\)"
+            },
+            {
+              "explain": "Perform the multiplication and addition to calculate the final salary.",
+              "work": "\\(T_{8} = 70000 + 17500 = 87500\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c1-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An engineer working in materials science receives a starting salary of \\(\\$50000\\) in their first year. Each subsequent year, their salary increases by a constant annual increment of \\(\\$3000\\), forming an arithmetic progression (AP). Calculate their salary in year \\(9\\).",
+          "options": [
+            "\\(\\$77000\\)",
+            "\\(\\$80000\\)",
+            "\\(\\$71000\\)",
+            "\\(\\$74000\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the general term formula for an arithmetic progression: \\(T_n = a + (n - 1)d\\), where \\(a\\) is the first term and \\(d\\) is the common difference.",
+          "solution": "\\(\\$74000\\)",
+          "steps": [
+            {
+              "explain": "We identify the first term of the arithmetic progression, which is the starting salary \\(a = 50000\\), and the common difference, which is the annual increment \\(d = 3000\\).",
+              "work": "\\(a = 50000, quad d = 3000\\)"
+            },
+            {
+              "explain": "We use the general term formula for an AP to find the salary in year \\(n = 9\\).",
+              "work": "\\(T_{9} = a + (9 - 1)d\\)"
+            },
+            {
+              "explain": "Substitute the known values of \\(a\\) and \\(d\\) into the general term formula.",
+              "work": "\\(T_{9} = 50000 + 8 \\times 3000\\)"
+            },
+            {
+              "explain": "Perform the multiplication and addition to calculate the final salary.",
+              "work": "\\(T_{9} = 50000 + 24000 = 74000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c2-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A research team in financial analytics monitors the growth of compound interest bond portfolio. The initial population is measured at \\(1200\\) cells/mL, and it increases by exactly \\(6\\%\\) every day, forming a geometric progression (GP). Find the population density at the start of day \\(6\\) (rounded to the nearest integer).",
+          "options": [
+            "\\(1560\\)",
+            "\\(1515\\)",
+            "\\(1702\\)",
+            "\\(1606\\)"
+          ],
+          "answer": 3,
+          "hint": "Recall the general term of a GP: \\(T_n = a r^{n-1}\\). The common ratio \\(r\\) is given by \\(1 + \\frac{\\text{percentage}}{100}\\).",
+          "solution": "\\(1606\\)",
+          "steps": [
+            {
+              "explain": "Determine the first term \\(a = 1200\\) and the common ratio \\(r\\) based on the daily growth rate of \\(6\\%\\).",
+              "work": "\\(a = 1200, quad r = 1 + \\frac{6}{100} = 1.06\\)"
+            },
+            {
+              "explain": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
+              "work": "\\(T_n = a r^{n-1}\\)"
+            },
+            {
+              "explain": "Substitute \\(n = 6\\), \\(a = 1200\\), and \\(r = 1.06\\) into the formula.",
+              "work": "\\(T_{6} = 1200 \\times (1.06)^{5}\\)"
+            },
+            {
+              "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
+              "work": "\\(T_{6} = 1200 \\times 1.3382 \\approx 1606\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c2-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A research team in marine ecology monitors the growth of phytoplankton cell count. The initial population is measured at \\(1400\\) cells/mL, and it increases by exactly \\(7\\%\\) every day, forming a geometric progression (GP). Find the population density at the start of day \\(7\\) (rounded to the nearest integer).",
+          "options": [
+            "\\(1988\\)",
+            "\\(2101\\)",
+            "\\(1964\\)",
+            "\\(2248\\)"
+          ],
+          "answer": 1,
+          "hint": "Recall the general term of a GP: \\(T_n = a r^{n-1}\\). The common ratio \\(r\\) is given by \\(1 + \\frac{\\text{percentage}}{100}\\).",
+          "solution": "\\(2101\\)",
+          "steps": [
+            {
+              "explain": "Determine the first term \\(a = 1400\\) and the common ratio \\(r\\) based on the daily growth rate of \\(7\\%\\).",
+              "work": "\\(a = 1400, quad r = 1 + \\frac{7}{100} = 1.07\\)"
+            },
+            {
+              "explain": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
+              "work": "\\(T_n = a r^{n-1}\\)"
+            },
+            {
+              "explain": "Substitute \\(n = 7\\), \\(a = 1400\\), and \\(r = 1.07\\) into the formula.",
+              "work": "\\(T_{7} = 1400 \\times (1.07)^{6}\\)"
+            },
+            {
+              "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
+              "work": "\\(T_{7} = 1400 \\times 1.5007 \\approx 2101\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c2-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A research team in sustainable forestry monitors the growth of harvestable timber volume. The initial population is measured at \\(1600\\) cells/mL, and it increases by exactly \\(8\\%\\) every day, forming a geometric progression (GP). Find the population density at the start of day \\(5\\) (rounded to the nearest integer).",
+          "options": [
+            "\\(2177\\)",
+            "\\(2351\\)",
+            "\\(2016\\)",
+            "\\(2112\\)"
+          ],
+          "answer": 0,
+          "hint": "Recall the general term of a GP: \\(T_n = a r^{n-1}\\). The common ratio \\(r\\) is given by \\(1 + \\frac{\\text{percentage}}{100}\\).",
+          "solution": "\\(2177\\)",
+          "steps": [
+            {
+              "explain": "Determine the first term \\(a = 1600\\) and the common ratio \\(r\\) based on the daily growth rate of \\(8\\%\\).",
+              "work": "\\(a = 1600, quad r = 1 + \\frac{8}{100} = 1.08\\)"
+            },
+            {
+              "explain": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
+              "work": "\\(T_n = a r^{n-1}\\)"
+            },
+            {
+              "explain": "Substitute \\(n = 5\\), \\(a = 1600\\), and \\(r = 1.08\\) into the formula.",
+              "work": "\\(T_{5} = 1600 \\times (1.08)^{4}\\)"
+            },
+            {
+              "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
+              "work": "\\(T_{5} = 1600 \\times 1.3605 \\approx 2177\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c2-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A research team in robotics manufacturing monitors the growth of precision actuator decay rate. The initial population is measured at \\(1800\\) cells/mL, and it increases by exactly \\(9\\%\\) every day, forming a geometric progression (GP). Find the population density at the start of day \\(6\\) (rounded to the nearest integer).",
+          "options": [
+            "\\(2610\\)",
+            "\\(2541\\)",
+            "\\(3019\\)",
+            "\\(2770\\)"
+          ],
+          "answer": 3,
+          "hint": "Recall the general term of a GP: \\(T_n = a r^{n-1}\\). The common ratio \\(r\\) is given by \\(1 + \\frac{\\text{percentage}}{100}\\).",
+          "solution": "\\(2770\\)",
+          "steps": [
+            {
+              "explain": "Determine the first term \\(a = 1800\\) and the common ratio \\(r\\) based on the daily growth rate of \\(9\\%\\).",
+              "work": "\\(a = 1800, quad r = 1 + \\frac{9}{100} = 1.09\\)"
+            },
+            {
+              "explain": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
+              "work": "\\(T_n = a r^{n-1}\\)"
+            },
+            {
+              "explain": "Substitute \\(n = 6\\), \\(a = 1800\\), and \\(r = 1.09\\) into the formula.",
+              "work": "\\(T_{6} = 1800 \\times (1.09)^{5}\\)"
+            },
+            {
+              "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
+              "work": "\\(T_{6} = 1800 \\times 1.5386 \\approx 2770\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c2-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A research team in nuclear physics monitors the growth of unstable isotope concentration. The initial population is measured at \\(1000\\) cells/mL, and it increases by exactly \\(5\\%\\) every day, forming a geometric progression (GP). Find the population density at the start of day \\(7\\) (rounded to the nearest integer).",
+          "options": [
+            "\\(1340\\)",
+            "\\(1407\\)",
+            "\\(1276\\)",
+            "\\(1300\\)"
+          ],
+          "answer": 0,
+          "hint": "Recall the general term of a GP: \\(T_n = a r^{n-1}\\). The common ratio \\(r\\) is given by \\(1 + \\frac{\\text{percentage}}{100}\\).",
+          "solution": "\\(1340\\)",
+          "steps": [
+            {
+              "explain": "Determine the first term \\(a = 1000\\) and the common ratio \\(r\\) based on the daily growth rate of \\(5\\%\\).",
+              "work": "\\(a = 1000, quad r = 1 + \\frac{5}{100} = 1.05\\)"
+            },
+            {
+              "explain": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
+              "work": "\\(T_n = a r^{n-1}\\)"
+            },
+            {
+              "explain": "Substitute \\(n = 7\\), \\(a = 1000\\), and \\(r = 1.05\\) into the formula.",
+              "work": "\\(T_{7} = 1000 \\times (1.05)^{6}\\)"
+            },
+            {
+              "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
+              "work": "\\(T_{7} = 1000 \\times 1.3401 \\approx 1340\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c2-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A research team in telecom engineering monitors the growth of fiber-optic signal packet queue. The initial population is measured at \\(1200\\) cells/mL, and it increases by exactly \\(6\\%\\) every day, forming a geometric progression (GP). Find the population density at the start of day \\(5\\) (rounded to the nearest integer).",
+          "options": [
+            "\\(1429\\)",
+            "\\(1606\\)",
+            "\\(1488\\)",
+            "\\(1515\\)"
+          ],
+          "answer": 3,
+          "hint": "Recall the general term of a GP: \\(T_n = a r^{n-1}\\). The common ratio \\(r\\) is given by \\(1 + \\frac{\\text{percentage}}{100}\\).",
+          "solution": "\\(1515\\)",
+          "steps": [
+            {
+              "explain": "Determine the first term \\(a = 1200\\) and the common ratio \\(r\\) based on the daily growth rate of \\(6\\%\\).",
+              "work": "\\(a = 1200, quad r = 1 + \\frac{6}{100} = 1.06\\)"
+            },
+            {
+              "explain": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
+              "work": "\\(T_n = a r^{n-1}\\)"
+            },
+            {
+              "explain": "Substitute \\(n = 5\\), \\(a = 1200\\), and \\(r = 1.06\\) into the formula.",
+              "work": "\\(T_{5} = 1200 \\times (1.06)^{4}\\)"
+            },
+            {
+              "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
+              "work": "\\(T_{5} = 1200 \\times 1.2625 \\approx 1515\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c2-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A research team in urban planning monitors the growth of municipal water reservoir supply. The initial population is measured at \\(1400\\) cells/mL, and it increases by exactly \\(7\\%\\) every day, forming a geometric progression (GP). Find the population density at the start of day \\(6\\) (rounded to the nearest integer).",
+          "options": [
+            "\\(1964\\)",
+            "\\(2101\\)",
+            "\\(1890\\)",
+            "\\(1835\\)"
+          ],
+          "answer": 0,
+          "hint": "Recall the general term of a GP: \\(T_n = a r^{n-1}\\). The common ratio \\(r\\) is given by \\(1 + \\frac{\\text{percentage}}{100}\\).",
+          "solution": "\\(1964\\)",
+          "steps": [
+            {
+              "explain": "Determine the first term \\(a = 1400\\) and the common ratio \\(r\\) based on the daily growth rate of \\(7\\%\\).",
+              "work": "\\(a = 1400, quad r = 1 + \\frac{7}{100} = 1.07\\)"
+            },
+            {
+              "explain": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
+              "work": "\\(T_n = a r^{n-1}\\)"
+            },
+            {
+              "explain": "Substitute \\(n = 6\\), \\(a = 1400\\), and \\(r = 1.07\\) into the formula.",
+              "work": "\\(T_{6} = 1400 \\times (1.07)^{5}\\)"
+            },
+            {
+              "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
+              "work": "\\(T_{6} = 1400 \\times 1.4026 \\approx 1964\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c2-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A research team in biophysics monitors the growth of neural impulse propagation speed. The initial population is measured at \\(1600\\) cells/mL, and it increases by exactly \\(8\\%\\) every day, forming a geometric progression (GP). Find the population density at the start of day \\(7\\) (rounded to the nearest integer).",
+          "options": [
+            "\\(2351\\)",
+            "\\(2742\\)",
+            "\\(2539\\)",
+            "\\(2368\\)"
+          ],
+          "answer": 2,
+          "hint": "Recall the general term of a GP: \\(T_n = a r^{n-1}\\). The common ratio \\(r\\) is given by \\(1 + \\frac{\\text{percentage}}{100}\\).",
+          "solution": "\\(2539\\)",
+          "steps": [
+            {
+              "explain": "Determine the first term \\(a = 1600\\) and the common ratio \\(r\\) based on the daily growth rate of \\(8\\%\\).",
+              "work": "\\(a = 1600, quad r = 1 + \\frac{8}{100} = 1.08\\)"
+            },
+            {
+              "explain": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
+              "work": "\\(T_n = a r^{n-1}\\)"
+            },
+            {
+              "explain": "Substitute \\(n = 7\\), \\(a = 1600\\), and \\(r = 1.08\\) into the formula.",
+              "work": "\\(T_{7} = 1600 \\times (1.08)^{6}\\)"
+            },
+            {
+              "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
+              "work": "\\(T_{7} = 1600 \\times 1.5869 \\approx 2539\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c2-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A research team in agricultural drone fleet monitors the growth of collective battery reserve. The initial population is measured at \\(1800\\) cells/mL, and it increases by exactly \\(9\\%\\) every day, forming a geometric progression (GP). Find the population density at the start of day \\(5\\) (rounded to the nearest integer).",
+          "options": [
+            "\\(2448\\)",
+            "\\(2331\\)",
+            "\\(2770\\)",
+            "\\(2541\\)"
+          ],
+          "answer": 3,
+          "hint": "Recall the general term of a GP: \\(T_n = a r^{n-1}\\). The common ratio \\(r\\) is given by \\(1 + \\frac{\\text{percentage}}{100}\\).",
+          "solution": "\\(2541\\)",
+          "steps": [
+            {
+              "explain": "Determine the first term \\(a = 1800\\) and the common ratio \\(r\\) based on the daily growth rate of \\(9\\%\\).",
+              "work": "\\(a = 1800, quad r = 1 + \\frac{9}{100} = 1.09\\)"
+            },
+            {
+              "explain": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
+              "work": "\\(T_n = a r^{n-1}\\)"
+            },
+            {
+              "explain": "Substitute \\(n = 5\\), \\(a = 1800\\), and \\(r = 1.09\\) into the formula.",
+              "work": "\\(T_{5} = 1800 \\times (1.09)^{4}\\)"
+            },
+            {
+              "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
+              "work": "\\(T_{5} = 1800 \\times 1.4116 \\approx 2541\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c2-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A research team in materials science monitors the growth of structural alloy stress threshold. The initial population is measured at \\(1000\\) cells/mL, and it increases by exactly \\(5\\%\\) every day, forming a geometric progression (GP). Find the population density at the start of day \\(6\\) (rounded to the nearest integer).",
+          "options": [
+            "\\(1340\\)",
+            "\\(1216\\)",
+            "\\(1250\\)",
+            "\\(1276\\)"
+          ],
+          "answer": 3,
+          "hint": "Recall the general term of a GP: \\(T_n = a r^{n-1}\\). The common ratio \\(r\\) is given by \\(1 + \\frac{\\text{percentage}}{100}\\).",
+          "solution": "\\(1276\\)",
+          "steps": [
+            {
+              "explain": "Determine the first term \\(a = 1000\\) and the common ratio \\(r\\) based on the daily growth rate of \\(5\\%\\).",
+              "work": "\\(a = 1000, quad r = 1 + \\frac{5}{100} = 1.05\\)"
+            },
+            {
+              "explain": "Write the general formula for the \\(n\\)-th term of a geometric progression.",
+              "work": "\\(T_n = a r^{n-1}\\)"
+            },
+            {
+              "explain": "Substitute \\(n = 6\\), \\(a = 1000\\), and \\(r = 1.05\\) into the formula.",
+              "work": "\\(T_{6} = 1000 \\times (1.05)^{5}\\)"
+            },
+            {
+              "explain": "Evaluate the exponent and multiply to calculate the final population size, rounding to the nearest integer.",
+              "work": "\\(T_{6} = 1000 \\times 1.2763 \\approx 1276\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c4-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biophysics laboratory studying compound interest bond portfolio in financial analytics finds that the propagation speed on a cell array increases geometrically by a factor of \\(1.5\\) each session. If the initial speed is \\(60\\) m/s, at which session number will the speed first exceed \\(720\\) m/s?",
+          "options": [
+            "Session \\(9\\)",
+            "Session \\(7\\)",
+            "Session \\(12\\)",
+            "Session \\(8\\)"
+          ],
+          "answer": 3,
+          "hint": "Write down the GP formula \\(T_n = a r^{n-1}\\) and take the logarithm of both sides to isolate and solve for \\(n\\).",
+          "solution": "Session \\(8\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 60\\) and common ratio \\(r = 1.5\\) from the given problem details.",
+              "work": "\\(a = 60, quad r = 1.5\\)"
+            },
+            {
+              "explain": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(720\\).",
+              "work": "\\(60 \\times (1.5)^{n-1} > 720\\)"
+            },
+            {
+              "explain": "Divide both sides by the starting value to simplify the base expression.",
+              "work": "\\((1.5)^{n-1} > \\frac{720}{60} \\approx 12\\)"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides of the inequality to isolate \\(n - 1\\).",
+              "work": "\\((n - 1) \\ln(1.5) > \\ln(12)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
+              "work": "\\(n - 1 > \\frac{\\ln(12)}{\\ln(1.5)} \\approx 6.13 \\Rightarrow n > 7.13 \\Rightarrow n = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c4-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biophysics laboratory studying phytoplankton cell count in marine ecology finds that the propagation speed on a cell array increases geometrically by a factor of \\(1.5\\) each session. If the initial speed is \\(70\\) m/s, at which session number will the speed first exceed \\(980\\) m/s?",
+          "options": [
+            "Session \\(8\\)",
+            "Session \\(9\\)",
+            "Session \\(7\\)",
+            "Session \\(14\\)"
+          ],
+          "answer": 0,
+          "hint": "Write down the GP formula \\(T_n = a r^{n-1}\\) and take the logarithm of both sides to isolate and solve for \\(n\\).",
+          "solution": "Session \\(8\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 70\\) and common ratio \\(r = 1.5\\) from the given problem details.",
+              "work": "\\(a = 70, quad r = 1.5\\)"
+            },
+            {
+              "explain": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(980\\).",
+              "work": "\\(70 \\times (1.5)^{n-1} > 980\\)"
+            },
+            {
+              "explain": "Divide both sides by the starting value to simplify the base expression.",
+              "work": "\\((1.5)^{n-1} > \\frac{980}{70} \\approx 14\\)"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides of the inequality to isolate \\(n - 1\\).",
+              "work": "\\((n - 1) \\ln(1.5) > \\ln(14)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
+              "work": "\\(n - 1 > \\frac{\\ln(14)}{\\ln(1.5)} \\approx 6.51 \\Rightarrow n > 7.51 \\Rightarrow n = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c4-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biophysics laboratory studying harvestable timber volume in sustainable forestry finds that the propagation speed on a cell array increases geometrically by a factor of \\(1.5\\) each session. If the initial speed is \\(80\\) m/s, at which session number will the speed first exceed \\(1280\\) m/s?",
+          "options": [
+            "Session \\(7\\)",
+            "Session \\(8\\)",
+            "Session \\(9\\)",
+            "Session \\(16\\)"
+          ],
+          "answer": 1,
+          "hint": "Write down the GP formula \\(T_n = a r^{n-1}\\) and take the logarithm of both sides to isolate and solve for \\(n\\).",
+          "solution": "Session \\(8\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 80\\) and common ratio \\(r = 1.5\\) from the given problem details.",
+              "work": "\\(a = 80, quad r = 1.5\\)"
+            },
+            {
+              "explain": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(1280\\).",
+              "work": "\\(80 \\times (1.5)^{n-1} > 1280\\)"
+            },
+            {
+              "explain": "Divide both sides by the starting value to simplify the base expression.",
+              "work": "\\((1.5)^{n-1} > \\frac{1280}{80} \\approx 16\\)"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides of the inequality to isolate \\(n - 1\\).",
+              "work": "\\((n - 1) \\ln(1.5) > \\ln(16)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
+              "work": "\\(n - 1 > \\frac{\\ln(16)}{\\ln(1.5)} \\approx 6.84 \\Rightarrow n > 7.84 \\Rightarrow n = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c4-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biophysics laboratory studying precision actuator decay rate in robotics manufacturing finds that the propagation speed on a cell array increases geometrically by a factor of \\(1.5\\) each session. If the initial speed is \\(90\\) m/s, at which session number will the speed first exceed \\(1620\\) m/s?",
+          "options": [
+            "Session \\(9\\)",
+            "Session \\(8\\)",
+            "Session \\(18\\)",
+            "Session \\(10\\)"
+          ],
+          "answer": 0,
+          "hint": "Write down the GP formula \\(T_n = a r^{n-1}\\) and take the logarithm of both sides to isolate and solve for \\(n\\).",
+          "solution": "Session \\(9\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 90\\) and common ratio \\(r = 1.5\\) from the given problem details.",
+              "work": "\\(a = 90, quad r = 1.5\\)"
+            },
+            {
+              "explain": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(1620\\).",
+              "work": "\\(90 \\times (1.5)^{n-1} > 1620\\)"
+            },
+            {
+              "explain": "Divide both sides by the starting value to simplify the base expression.",
+              "work": "\\((1.5)^{n-1} > \\frac{1620}{90} \\approx 18\\)"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides of the inequality to isolate \\(n - 1\\).",
+              "work": "\\((n - 1) \\ln(1.5) > \\ln(18)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
+              "work": "\\(n - 1 > \\frac{\\ln(18)}{\\ln(1.5)} \\approx 7.13 \\Rightarrow n > 8.13 \\Rightarrow n = 9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c4-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biophysics laboratory studying unstable isotope concentration in nuclear physics finds that the propagation speed on a cell array increases geometrically by a factor of \\(1.5\\) each session. If the initial speed is \\(50\\) m/s, at which session number will the speed first exceed \\(500\\) m/s?",
+          "options": [
+            "Session \\(8\\)",
+            "Session \\(10\\)",
+            "Session \\(6\\)",
+            "Session \\(7\\)"
+          ],
+          "answer": 3,
+          "hint": "Write down the GP formula \\(T_n = a r^{n-1}\\) and take the logarithm of both sides to isolate and solve for \\(n\\).",
+          "solution": "Session \\(7\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 50\\) and common ratio \\(r = 1.5\\) from the given problem details.",
+              "work": "\\(a = 50, quad r = 1.5\\)"
+            },
+            {
+              "explain": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(500\\).",
+              "work": "\\(50 \\times (1.5)^{n-1} > 500\\)"
+            },
+            {
+              "explain": "Divide both sides by the starting value to simplify the base expression.",
+              "work": "\\((1.5)^{n-1} > \\frac{500}{50} \\approx 10\\)"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides of the inequality to isolate \\(n - 1\\).",
+              "work": "\\((n - 1) \\ln(1.5) > \\ln(10)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
+              "work": "\\(n - 1 > \\frac{\\ln(10)}{\\ln(1.5)} \\approx 5.68 \\Rightarrow n > 6.68 \\Rightarrow n = 7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c4-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biophysics laboratory studying fiber-optic signal packet queue in telecom engineering finds that the propagation speed on a cell array increases geometrically by a factor of \\(1.5\\) each session. If the initial speed is \\(60\\) m/s, at which session number will the speed first exceed \\(720\\) m/s?",
+          "options": [
+            "Session \\(12\\)",
+            "Session \\(8\\)",
+            "Session \\(9\\)",
+            "Session \\(7\\)"
+          ],
+          "answer": 1,
+          "hint": "Write down the GP formula \\(T_n = a r^{n-1}\\) and take the logarithm of both sides to isolate and solve for \\(n\\).",
+          "solution": "Session \\(8\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 60\\) and common ratio \\(r = 1.5\\) from the given problem details.",
+              "work": "\\(a = 60, quad r = 1.5\\)"
+            },
+            {
+              "explain": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(720\\).",
+              "work": "\\(60 \\times (1.5)^{n-1} > 720\\)"
+            },
+            {
+              "explain": "Divide both sides by the starting value to simplify the base expression.",
+              "work": "\\((1.5)^{n-1} > \\frac{720}{60} \\approx 12\\)"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides of the inequality to isolate \\(n - 1\\).",
+              "work": "\\((n - 1) \\ln(1.5) > \\ln(12)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
+              "work": "\\(n - 1 > \\frac{\\ln(12)}{\\ln(1.5)} \\approx 6.13 \\Rightarrow n > 7.13 \\Rightarrow n = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c4-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biophysics laboratory studying municipal water reservoir supply in urban planning finds that the propagation speed on a cell array increases geometrically by a factor of \\(1.5\\) each session. If the initial speed is \\(70\\) m/s, at which session number will the speed first exceed \\(980\\) m/s?",
+          "options": [
+            "Session \\(8\\)",
+            "Session \\(14\\)",
+            "Session \\(9\\)",
+            "Session \\(7\\)"
+          ],
+          "answer": 0,
+          "hint": "Write down the GP formula \\(T_n = a r^{n-1}\\) and take the logarithm of both sides to isolate and solve for \\(n\\).",
+          "solution": "Session \\(8\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 70\\) and common ratio \\(r = 1.5\\) from the given problem details.",
+              "work": "\\(a = 70, quad r = 1.5\\)"
+            },
+            {
+              "explain": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(980\\).",
+              "work": "\\(70 \\times (1.5)^{n-1} > 980\\)"
+            },
+            {
+              "explain": "Divide both sides by the starting value to simplify the base expression.",
+              "work": "\\((1.5)^{n-1} > \\frac{980}{70} \\approx 14\\)"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides of the inequality to isolate \\(n - 1\\).",
+              "work": "\\((n - 1) \\ln(1.5) > \\ln(14)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
+              "work": "\\(n - 1 > \\frac{\\ln(14)}{\\ln(1.5)} \\approx 6.51 \\Rightarrow n > 7.51 \\Rightarrow n = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c4-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biophysics laboratory studying neural impulse propagation speed in biophysics finds that the propagation speed on a cell array increases geometrically by a factor of \\(1.5\\) each session. If the initial speed is \\(80\\) m/s, at which session number will the speed first exceed \\(1280\\) m/s?",
+          "options": [
+            "Session \\(16\\)",
+            "Session \\(7\\)",
+            "Session \\(8\\)",
+            "Session \\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "Write down the GP formula \\(T_n = a r^{n-1}\\) and take the logarithm of both sides to isolate and solve for \\(n\\).",
+          "solution": "Session \\(8\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 80\\) and common ratio \\(r = 1.5\\) from the given problem details.",
+              "work": "\\(a = 80, quad r = 1.5\\)"
+            },
+            {
+              "explain": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(1280\\).",
+              "work": "\\(80 \\times (1.5)^{n-1} > 1280\\)"
+            },
+            {
+              "explain": "Divide both sides by the starting value to simplify the base expression.",
+              "work": "\\((1.5)^{n-1} > \\frac{1280}{80} \\approx 16\\)"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides of the inequality to isolate \\(n - 1\\).",
+              "work": "\\((n - 1) \\ln(1.5) > \\ln(16)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
+              "work": "\\(n - 1 > \\frac{\\ln(16)}{\\ln(1.5)} \\approx 6.84 \\Rightarrow n > 7.84 \\Rightarrow n = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c4-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biophysics laboratory studying collective battery reserve in agricultural drone fleet finds that the propagation speed on a cell array increases geometrically by a factor of \\(1.5\\) each session. If the initial speed is \\(90\\) m/s, at which session number will the speed first exceed \\(1620\\) m/s?",
+          "options": [
+            "Session \\(18\\)",
+            "Session \\(9\\)",
+            "Session \\(10\\)",
+            "Session \\(8\\)"
+          ],
+          "answer": 1,
+          "hint": "Write down the GP formula \\(T_n = a r^{n-1}\\) and take the logarithm of both sides to isolate and solve for \\(n\\).",
+          "solution": "Session \\(9\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 90\\) and common ratio \\(r = 1.5\\) from the given problem details.",
+              "work": "\\(a = 90, quad r = 1.5\\)"
+            },
+            {
+              "explain": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(1620\\).",
+              "work": "\\(90 \\times (1.5)^{n-1} > 1620\\)"
+            },
+            {
+              "explain": "Divide both sides by the starting value to simplify the base expression.",
+              "work": "\\((1.5)^{n-1} > \\frac{1620}{90} \\approx 18\\)"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides of the inequality to isolate \\(n - 1\\).",
+              "work": "\\((n - 1) \\ln(1.5) > \\ln(18)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
+              "work": "\\(n - 1 > \\frac{\\ln(18)}{\\ln(1.5)} \\approx 7.13 \\Rightarrow n > 8.13 \\Rightarrow n = 9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c4-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A biophysics laboratory studying structural alloy stress threshold in materials science finds that the propagation speed on a cell array increases geometrically by a factor of \\(1.5\\) each session. If the initial speed is \\(50\\) m/s, at which session number will the speed first exceed \\(500\\) m/s?",
+          "options": [
+            "Session \\(8\\)",
+            "Session \\(10\\)",
+            "Session \\(6\\)",
+            "Session \\(7\\)"
+          ],
+          "answer": 3,
+          "hint": "Write down the GP formula \\(T_n = a r^{n-1}\\) and take the logarithm of both sides to isolate and solve for \\(n\\).",
+          "solution": "Session \\(7\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 50\\) and common ratio \\(r = 1.5\\) from the given problem details.",
+              "work": "\\(a = 50, quad r = 1.5\\)"
+            },
+            {
+              "explain": "Set up the inequality where the general term \\(T_n\\) exceeds the threshold value of \\(500\\).",
+              "work": "\\(50 \\times (1.5)^{n-1} > 500\\)"
+            },
+            {
+              "explain": "Divide both sides by the starting value to simplify the base expression.",
+              "work": "\\((1.5)^{n-1} > \\frac{500}{50} \\approx 10\\)"
+            },
+            {
+              "explain": "Take the natural logarithm of both sides of the inequality to isolate \\(n - 1\\).",
+              "work": "\\((n - 1) \\ln(1.5) > \\ln(10)\\)"
+            },
+            {
+              "explain": "Divide by \\(\\ln(1.5)\\) and add 1 to solve for \\(n\\), then round up to the nearest whole session number.",
+              "work": "\\(n - 1 > \\frac{\\ln(10)}{\\ln(1.5)} \\approx 5.68 \\Rightarrow n > 6.68 \\Rightarrow n = 7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c6-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A test probe used in financial analytics to measure shock absorption is dropped from a height of \\(25\\) meters onto a platform. After each bounce, it rebounds to exactly \\(80\\%\\) of its previous height. Find the rebound height after the \\(4\\)-th bounce (to two decimal places).",
+          "options": [
+            "\\(5.00\\) m",
+            "\\(8.19\\) m",
+            "\\(10.24\\) m",
+            "\\(12.80\\) m"
+          ],
+          "answer": 2,
+          "hint": "Each rebound height forms a geometric progression. The first rebound is the first term \\(a = H \\times r\\), or treat the initial height as \\(T_0\\) and the rebound height as \\(T_n = H \\times r^n\\).",
+          "solution": "\\(10.24\\) m",
+          "steps": [
+            {
+              "explain": "Define the initial drop height as \\(H = 25\\) meters and the rebound multiplier as \\(r = 0.8\\).",
+              "work": "\\(H = 25, quad r = 0.8\\)"
+            },
+            {
+              "explain": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
+              "work": "\\(H_n = H \\times r^n\\)"
+            },
+            {
+              "explain": "Substitute the value \\(n = 4\\) for the number of rebounds.",
+              "work": "\\(H_{4} = 25 \\times (0.8)^{4}\\)"
+            },
+            {
+              "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
+              "work": "\\(H_{4} = 25 \\times 0.4096 = 10.24\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c6-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A test probe used in marine ecology to measure shock absorption is dropped from a height of \\(30\\) meters onto a platform. After each bounce, it rebounds to exactly \\(80\\%\\) of its previous height. Find the rebound height after the \\(5\\)-th bounce (to two decimal places).",
+          "options": [
+            "\\(7.86\\) m",
+            "\\(9.83\\) m",
+            "\\(0.00\\) m",
+            "\\(12.29\\) m"
+          ],
+          "answer": 1,
+          "hint": "Each rebound height forms a geometric progression. The first rebound is the first term \\(a = H \\times r\\), or treat the initial height as \\(T_0\\) and the rebound height as \\(T_n = H \\times r^n\\).",
+          "solution": "\\(9.83\\) m",
+          "steps": [
+            {
+              "explain": "Define the initial drop height as \\(H = 30\\) meters and the rebound multiplier as \\(r = 0.8\\).",
+              "work": "\\(H = 30, quad r = 0.8\\)"
+            },
+            {
+              "explain": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
+              "work": "\\(H_n = H \\times r^n\\)"
+            },
+            {
+              "explain": "Substitute the value \\(n = 5\\) for the number of rebounds.",
+              "work": "\\(H_{5} = 30 \\times (0.8)^{5}\\)"
+            },
+            {
+              "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
+              "work": "\\(H_{5} = 30 \\times 0.3277 = 9.83\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c6-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A test probe used in sustainable forestry to measure shock absorption is dropped from a height of \\(35\\) meters onto a platform. After each bounce, it rebounds to exactly \\(80\\%\\) of its previous height. Find the rebound height after the \\(3\\)-th bounce (to two decimal places).",
+          "options": [
+            "\\(22.40\\) m",
+            "\\(14.34\\) m",
+            "\\(17.92\\) m",
+            "\\(14.00\\) m"
+          ],
+          "answer": 2,
+          "hint": "Each rebound height forms a geometric progression. The first rebound is the first term \\(a = H \\times r\\), or treat the initial height as \\(T_0\\) and the rebound height as \\(T_n = H \\times r^n\\).",
+          "solution": "\\(17.92\\) m",
+          "steps": [
+            {
+              "explain": "Define the initial drop height as \\(H = 35\\) meters and the rebound multiplier as \\(r = 0.8\\).",
+              "work": "\\(H = 35, quad r = 0.8\\)"
+            },
+            {
+              "explain": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
+              "work": "\\(H_n = H \\times r^n\\)"
+            },
+            {
+              "explain": "Substitute the value \\(n = 3\\) for the number of rebounds.",
+              "work": "\\(H_{3} = 35 \\times (0.8)^{3}\\)"
+            },
+            {
+              "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
+              "work": "\\(H_{3} = 35 \\times 0.5120 = 17.92\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c6-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A test probe used in robotics manufacturing to measure shock absorption is dropped from a height of \\(40\\) meters onto a platform. After each bounce, it rebounds to exactly \\(80\\%\\) of its previous height. Find the rebound height after the \\(4\\)-th bounce (to two decimal places).",
+          "options": [
+            "\\(20.48\\) m",
+            "\\(8.00\\) m",
+            "\\(16.38\\) m",
+            "\\(13.11\\) m"
+          ],
+          "answer": 2,
+          "hint": "Each rebound height forms a geometric progression. The first rebound is the first term \\(a = H \\times r\\), or treat the initial height as \\(T_0\\) and the rebound height as \\(T_n = H \\times r^n\\).",
+          "solution": "\\(16.38\\) m",
+          "steps": [
+            {
+              "explain": "Define the initial drop height as \\(H = 40\\) meters and the rebound multiplier as \\(r = 0.8\\).",
+              "work": "\\(H = 40, quad r = 0.8\\)"
+            },
+            {
+              "explain": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
+              "work": "\\(H_n = H \\times r^n\\)"
+            },
+            {
+              "explain": "Substitute the value \\(n = 4\\) for the number of rebounds.",
+              "work": "\\(H_{4} = 40 \\times (0.8)^{4}\\)"
+            },
+            {
+              "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
+              "work": "\\(H_{4} = 40 \\times 0.4096 = 16.38\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c6-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A test probe used in nuclear physics to measure shock absorption is dropped from a height of \\(20\\) meters onto a platform. After each bounce, it rebounds to exactly \\(80\\%\\) of its previous height. Find the rebound height after the \\(5\\)-th bounce (to two decimal places).",
+          "options": [
+            "\\(8.19\\) m",
+            "\\(6.55\\) m",
+            "\\(0.00\\) m",
+            "\\(5.24\\) m"
+          ],
+          "answer": 1,
+          "hint": "Each rebound height forms a geometric progression. The first rebound is the first term \\(a = H \\times r\\), or treat the initial height as \\(T_0\\) and the rebound height as \\(T_n = H \\times r^n\\).",
+          "solution": "\\(6.55\\) m",
+          "steps": [
+            {
+              "explain": "Define the initial drop height as \\(H = 20\\) meters and the rebound multiplier as \\(r = 0.8\\).",
+              "work": "\\(H = 20, quad r = 0.8\\)"
+            },
+            {
+              "explain": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
+              "work": "\\(H_n = H \\times r^n\\)"
+            },
+            {
+              "explain": "Substitute the value \\(n = 5\\) for the number of rebounds.",
+              "work": "\\(H_{5} = 20 \\times (0.8)^{5}\\)"
+            },
+            {
+              "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
+              "work": "\\(H_{5} = 20 \\times 0.3277 = 6.55\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c6-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A test probe used in telecom engineering to measure shock absorption is dropped from a height of \\(25\\) meters onto a platform. After each bounce, it rebounds to exactly \\(80\\%\\) of its previous height. Find the rebound height after the \\(3\\)-th bounce (to two decimal places).",
+          "options": [
+            "\\(16.00\\) m",
+            "\\(10.00\\) m",
+            "\\(10.24\\) m",
+            "\\(12.80\\) m"
+          ],
+          "answer": 3,
+          "hint": "Each rebound height forms a geometric progression. The first rebound is the first term \\(a = H \\times r\\), or treat the initial height as \\(T_0\\) and the rebound height as \\(T_n = H \\times r^n\\).",
+          "solution": "\\(12.80\\) m",
+          "steps": [
+            {
+              "explain": "Define the initial drop height as \\(H = 25\\) meters and the rebound multiplier as \\(r = 0.8\\).",
+              "work": "\\(H = 25, quad r = 0.8\\)"
+            },
+            {
+              "explain": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
+              "work": "\\(H_n = H \\times r^n\\)"
+            },
+            {
+              "explain": "Substitute the value \\(n = 3\\) for the number of rebounds.",
+              "work": "\\(H_{3} = 25 \\times (0.8)^{3}\\)"
+            },
+            {
+              "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
+              "work": "\\(H_{3} = 25 \\times 0.5120 = 12.80\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c6-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A test probe used in urban planning to measure shock absorption is dropped from a height of \\(30\\) meters onto a platform. After each bounce, it rebounds to exactly \\(80\\%\\) of its previous height. Find the rebound height after the \\(4\\)-th bounce (to two decimal places).",
+          "options": [
+            "\\(12.29\\) m",
+            "\\(6.00\\) m",
+            "\\(9.83\\) m",
+            "\\(15.36\\) m"
+          ],
+          "answer": 0,
+          "hint": "Each rebound height forms a geometric progression. The first rebound is the first term \\(a = H \\times r\\), or treat the initial height as \\(T_0\\) and the rebound height as \\(T_n = H \\times r^n\\).",
+          "solution": "\\(12.29\\) m",
+          "steps": [
+            {
+              "explain": "Define the initial drop height as \\(H = 30\\) meters and the rebound multiplier as \\(r = 0.8\\).",
+              "work": "\\(H = 30, quad r = 0.8\\)"
+            },
+            {
+              "explain": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
+              "work": "\\(H_n = H \\times r^n\\)"
+            },
+            {
+              "explain": "Substitute the value \\(n = 4\\) for the number of rebounds.",
+              "work": "\\(H_{4} = 30 \\times (0.8)^{4}\\)"
+            },
+            {
+              "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
+              "work": "\\(H_{4} = 30 \\times 0.4096 = 12.29\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c6-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A test probe used in biophysics to measure shock absorption is dropped from a height of \\(35\\) meters onto a platform. After each bounce, it rebounds to exactly \\(80\\%\\) of its previous height. Find the rebound height after the \\(5\\)-th bounce (to two decimal places).",
+          "options": [
+            "\\(0.00\\) m",
+            "\\(14.34\\) m",
+            "\\(9.18\\) m",
+            "\\(11.47\\) m"
+          ],
+          "answer": 3,
+          "hint": "Each rebound height forms a geometric progression. The first rebound is the first term \\(a = H \\times r\\), or treat the initial height as \\(T_0\\) and the rebound height as \\(T_n = H \\times r^n\\).",
+          "solution": "\\(11.47\\) m",
+          "steps": [
+            {
+              "explain": "Define the initial drop height as \\(H = 35\\) meters and the rebound multiplier as \\(r = 0.8\\).",
+              "work": "\\(H = 35, quad r = 0.8\\)"
+            },
+            {
+              "explain": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
+              "work": "\\(H_n = H \\times r^n\\)"
+            },
+            {
+              "explain": "Substitute the value \\(n = 5\\) for the number of rebounds.",
+              "work": "\\(H_{5} = 35 \\times (0.8)^{5}\\)"
+            },
+            {
+              "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
+              "work": "\\(H_{5} = 35 \\times 0.3277 = 11.47\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c6-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A test probe used in agricultural drone fleet to measure shock absorption is dropped from a height of \\(40\\) meters onto a platform. After each bounce, it rebounds to exactly \\(80\\%\\) of its previous height. Find the rebound height after the \\(3\\)-th bounce (to two decimal places).",
+          "options": [
+            "\\(16.38\\) m",
+            "\\(25.60\\) m",
+            "\\(16.00\\) m",
+            "\\(20.48\\) m"
+          ],
+          "answer": 3,
+          "hint": "Each rebound height forms a geometric progression. The first rebound is the first term \\(a = H \\times r\\), or treat the initial height as \\(T_0\\) and the rebound height as \\(T_n = H \\times r^n\\).",
+          "solution": "\\(20.48\\) m",
+          "steps": [
+            {
+              "explain": "Define the initial drop height as \\(H = 40\\) meters and the rebound multiplier as \\(r = 0.8\\).",
+              "work": "\\(H = 40, quad r = 0.8\\)"
+            },
+            {
+              "explain": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
+              "work": "\\(H_n = H \\times r^n\\)"
+            },
+            {
+              "explain": "Substitute the value \\(n = 3\\) for the number of rebounds.",
+              "work": "\\(H_{3} = 40 \\times (0.8)^{3}\\)"
+            },
+            {
+              "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
+              "work": "\\(H_{3} = 40 \\times 0.5120 = 20.48\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c6-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A test probe used in materials science to measure shock absorption is dropped from a height of \\(20\\) meters onto a platform. After each bounce, it rebounds to exactly \\(80\\%\\) of its previous height. Find the rebound height after the \\(4\\)-th bounce (to two decimal places).",
+          "options": [
+            "\\(6.55\\) m",
+            "\\(10.24\\) m",
+            "\\(8.19\\) m",
+            "\\(4.00\\) m"
+          ],
+          "answer": 2,
+          "hint": "Each rebound height forms a geometric progression. The first rebound is the first term \\(a = H \\times r\\), or treat the initial height as \\(T_0\\) and the rebound height as \\(T_n = H \\times r^n\\).",
+          "solution": "\\(8.19\\) m",
+          "steps": [
+            {
+              "explain": "Define the initial drop height as \\(H = 20\\) meters and the rebound multiplier as \\(r = 0.8\\).",
+              "work": "\\(H = 20, quad r = 0.8\\)"
+            },
+            {
+              "explain": "The height after each successive bounce forms a geometric sequence where the height after the \\(n\\)-th bounce is given by \\(H_n = H \\times r^n\\).",
+              "work": "\\(H_n = H \\times r^n\\)"
+            },
+            {
+              "explain": "Substitute the value \\(n = 4\\) for the number of rebounds.",
+              "work": "\\(H_{4} = 20 \\times (0.8)^{4}\\)"
+            },
+            {
+              "explain": "Calculate the final height by evaluating the exponential expression and round to two decimal places.",
+              "work": "\\(H_{4} = 20 \\times 0.4096 = 8.19\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c7-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An investment analyst in financial analytics creates a model where a client deposits \\(\\$1500\\) at the start of each year into a high-yield fund growing at \\(10\\%\\) per annum compound interest. Calculate the total value of the investment at the end of \\(4\\) years, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$6962\\)",
+            "\\(\\$6892\\)",
+            "\\(\\$6000\\)",
+            "\\(\\$7658\\)"
+          ],
+          "answer": 3,
+          "hint": "This forms a geometric series where the first deposit compounding for 4 years is \\(1500 \\times 1.10^4\\), down to the last deposit compounding for 1 year, which is \\(1500 \\times 1.10\\). Use the sum formula for a geometric series.",
+          "solution": "\\(\\$7658\\)",
+          "steps": [
+            {
+              "explain": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 1500 \\times 1.10 = 1650.0000000000002\\) and common ratio \\(r = 1.10\\).",
+              "work": "\\(a = 1650.0000000000002, quad r = 1.10, quad n = 4\\)"
+            },
+            {
+              "explain": "Recall the sum formula for a geometric series.",
+              "work": "\\(S_n = \\frac{a(r^n - 1)}{r - 1}\\)"
+            },
+            {
+              "explain": "Substitute our values into the sum formula.",
+              "work": "\\(S_{4} = \\frac{1650.0000000000002 \\times (1.10^{4} - 1)}{1.10 - 1}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the expression.",
+              "work": "\\(S_{4} = \\frac{1650.0000000000002 \\times 0.4641}{0.10} = 7658\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c7-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An investment analyst in marine ecology creates a model where a client deposits \\(\\$2000\\) at the start of each year into a high-yield fund growing at \\(10\\%\\) per annum compound interest. Calculate the total value of the investment at the end of \\(4\\) years, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$9189\\)",
+            "\\(\\$8000\\)",
+            "\\(\\$10210\\)",
+            "\\(\\$9282\\)"
+          ],
+          "answer": 2,
+          "hint": "This forms a geometric series where the first deposit compounding for 4 years is \\(2000 \\times 1.10^4\\), down to the last deposit compounding for 1 year, which is \\(2000 \\times 1.10\\). Use the sum formula for a geometric series.",
+          "solution": "\\(\\$10210\\)",
+          "steps": [
+            {
+              "explain": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 2000 \\times 1.10 = 2200\\) and common ratio \\(r = 1.10\\).",
+              "work": "\\(a = 2200, quad r = 1.10, quad n = 4\\)"
+            },
+            {
+              "explain": "Recall the sum formula for a geometric series.",
+              "work": "\\(S_n = \\frac{a(r^n - 1)}{r - 1}\\)"
+            },
+            {
+              "explain": "Substitute our values into the sum formula.",
+              "work": "\\(S_{4} = \\frac{2200 \\times (1.10^{4} - 1)}{1.10 - 1}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the expression.",
+              "work": "\\(S_{4} = \\frac{2200 \\times 0.4641}{0.10} = 10210\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c7-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An investment analyst in sustainable forestry creates a model where a client deposits \\(\\$2500\\) at the start of each year into a high-yield fund growing at \\(10\\%\\) per annum compound interest. Calculate the total value of the investment at the end of \\(4\\) years, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$11486\\)",
+            "\\(\\$10000\\)",
+            "\\(\\$12763\\)",
+            "\\(\\$11603\\)"
+          ],
+          "answer": 2,
+          "hint": "This forms a geometric series where the first deposit compounding for 4 years is \\(2500 \\times 1.10^4\\), down to the last deposit compounding for 1 year, which is \\(2500 \\times 1.10\\). Use the sum formula for a geometric series.",
+          "solution": "\\(\\$12763\\)",
+          "steps": [
+            {
+              "explain": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 2500 \\times 1.10 = 2750\\) and common ratio \\(r = 1.10\\).",
+              "work": "\\(a = 2750, quad r = 1.10, quad n = 4\\)"
+            },
+            {
+              "explain": "Recall the sum formula for a geometric series.",
+              "work": "\\(S_n = \\frac{a(r^n - 1)}{r - 1}\\)"
+            },
+            {
+              "explain": "Substitute our values into the sum formula.",
+              "work": "\\(S_{4} = \\frac{2750 \\times (1.10^{4} - 1)}{1.10 - 1}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the expression.",
+              "work": "\\(S_{4} = \\frac{2750 \\times 0.4641}{0.10} = 12763\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c7-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An investment analyst in robotics manufacturing creates a model where a client deposits \\(\\$3000\\) at the start of each year into a high-yield fund growing at \\(10\\%\\) per annum compound interest. Calculate the total value of the investment at the end of \\(4\\) years, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$13784\\)",
+            "\\(\\$13923\\)",
+            "\\(\\$12000\\)",
+            "\\(\\$15315\\)"
+          ],
+          "answer": 3,
+          "hint": "This forms a geometric series where the first deposit compounding for 4 years is \\(3000 \\times 1.10^4\\), down to the last deposit compounding for 1 year, which is \\(3000 \\times 1.10\\). Use the sum formula for a geometric series.",
+          "solution": "\\(\\$15315\\)",
+          "steps": [
+            {
+              "explain": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 3000 \\times 1.10 = 3300.0000000000005\\) and common ratio \\(r = 1.10\\).",
+              "work": "\\(a = 3300.0000000000005, quad r = 1.10, quad n = 4\\)"
+            },
+            {
+              "explain": "Recall the sum formula for a geometric series.",
+              "work": "\\(S_n = \\frac{a(r^n - 1)}{r - 1}\\)"
+            },
+            {
+              "explain": "Substitute our values into the sum formula.",
+              "work": "\\(S_{4} = \\frac{3300.0000000000005 \\times (1.10^{4} - 1)}{1.10 - 1}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the expression.",
+              "work": "\\(S_{4} = \\frac{3300.0000000000005 \\times 0.4641}{0.10} = 15315\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c7-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An investment analyst in nuclear physics creates a model where a client deposits \\(\\$1000\\) at the start of each year into a high-yield fund growing at \\(10\\%\\) per annum compound interest. Calculate the total value of the investment at the end of \\(4\\) years, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$5105\\)",
+            "\\(\\$4000\\)",
+            "\\(\\$4595\\)",
+            "\\(\\$4641\\)"
+          ],
+          "answer": 0,
+          "hint": "This forms a geometric series where the first deposit compounding for 4 years is \\(1000 \\times 1.10^4\\), down to the last deposit compounding for 1 year, which is \\(1000 \\times 1.10\\). Use the sum formula for a geometric series.",
+          "solution": "\\(\\$5105\\)",
+          "steps": [
+            {
+              "explain": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 1000 \\times 1.10 = 1100\\) and common ratio \\(r = 1.10\\).",
+              "work": "\\(a = 1100, quad r = 1.10, quad n = 4\\)"
+            },
+            {
+              "explain": "Recall the sum formula for a geometric series.",
+              "work": "\\(S_n = \\frac{a(r^n - 1)}{r - 1}\\)"
+            },
+            {
+              "explain": "Substitute our values into the sum formula.",
+              "work": "\\(S_{4} = \\frac{1100 \\times (1.10^{4} - 1)}{1.10 - 1}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the expression.",
+              "work": "\\(S_{4} = \\frac{1100 \\times 0.4641}{0.10} = 5105\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c7-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An investment analyst in telecom engineering creates a model where a client deposits \\(\\$1500\\) at the start of each year into a high-yield fund growing at \\(10\\%\\) per annum compound interest. Calculate the total value of the investment at the end of \\(4\\) years, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$6962\\)",
+            "\\(\\$6000\\)",
+            "\\(\\$7658\\)",
+            "\\(\\$6892\\)"
+          ],
+          "answer": 2,
+          "hint": "This forms a geometric series where the first deposit compounding for 4 years is \\(1500 \\times 1.10^4\\), down to the last deposit compounding for 1 year, which is \\(1500 \\times 1.10\\). Use the sum formula for a geometric series.",
+          "solution": "\\(\\$7658\\)",
+          "steps": [
+            {
+              "explain": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 1500 \\times 1.10 = 1650.0000000000002\\) and common ratio \\(r = 1.10\\).",
+              "work": "\\(a = 1650.0000000000002, quad r = 1.10, quad n = 4\\)"
+            },
+            {
+              "explain": "Recall the sum formula for a geometric series.",
+              "work": "\\(S_n = \\frac{a(r^n - 1)}{r - 1}\\)"
+            },
+            {
+              "explain": "Substitute our values into the sum formula.",
+              "work": "\\(S_{4} = \\frac{1650.0000000000002 \\times (1.10^{4} - 1)}{1.10 - 1}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the expression.",
+              "work": "\\(S_{4} = \\frac{1650.0000000000002 \\times 0.4641}{0.10} = 7658\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c7-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An investment analyst in urban planning creates a model where a client deposits \\(\\$2000\\) at the start of each year into a high-yield fund growing at \\(10\\%\\) per annum compound interest. Calculate the total value of the investment at the end of \\(4\\) years, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$10210\\)",
+            "\\(\\$8000\\)",
+            "\\(\\$9189\\)",
+            "\\(\\$9282\\)"
+          ],
+          "answer": 0,
+          "hint": "This forms a geometric series where the first deposit compounding for 4 years is \\(2000 \\times 1.10^4\\), down to the last deposit compounding for 1 year, which is \\(2000 \\times 1.10\\). Use the sum formula for a geometric series.",
+          "solution": "\\(\\$10210\\)",
+          "steps": [
+            {
+              "explain": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 2000 \\times 1.10 = 2200\\) and common ratio \\(r = 1.10\\).",
+              "work": "\\(a = 2200, quad r = 1.10, quad n = 4\\)"
+            },
+            {
+              "explain": "Recall the sum formula for a geometric series.",
+              "work": "\\(S_n = \\frac{a(r^n - 1)}{r - 1}\\)"
+            },
+            {
+              "explain": "Substitute our values into the sum formula.",
+              "work": "\\(S_{4} = \\frac{2200 \\times (1.10^{4} - 1)}{1.10 - 1}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the expression.",
+              "work": "\\(S_{4} = \\frac{2200 \\times 0.4641}{0.10} = 10210\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c7-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An investment analyst in biophysics creates a model where a client deposits \\(\\$2500\\) at the start of each year into a high-yield fund growing at \\(10\\%\\) per annum compound interest. Calculate the total value of the investment at the end of \\(4\\) years, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$11603\\)",
+            "\\(\\$12763\\)",
+            "\\(\\$10000\\)",
+            "\\(\\$11486\\)"
+          ],
+          "answer": 1,
+          "hint": "This forms a geometric series where the first deposit compounding for 4 years is \\(2500 \\times 1.10^4\\), down to the last deposit compounding for 1 year, which is \\(2500 \\times 1.10\\). Use the sum formula for a geometric series.",
+          "solution": "\\(\\$12763\\)",
+          "steps": [
+            {
+              "explain": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 2500 \\times 1.10 = 2750\\) and common ratio \\(r = 1.10\\).",
+              "work": "\\(a = 2750, quad r = 1.10, quad n = 4\\)"
+            },
+            {
+              "explain": "Recall the sum formula for a geometric series.",
+              "work": "\\(S_n = \\frac{a(r^n - 1)}{r - 1}\\)"
+            },
+            {
+              "explain": "Substitute our values into the sum formula.",
+              "work": "\\(S_{4} = \\frac{2750 \\times (1.10^{4} - 1)}{1.10 - 1}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the expression.",
+              "work": "\\(S_{4} = \\frac{2750 \\times 0.4641}{0.10} = 12763\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c7-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An investment analyst in agricultural drone fleet creates a model where a client deposits \\(\\$3000\\) at the start of each year into a high-yield fund growing at \\(10\\%\\) per annum compound interest. Calculate the total value of the investment at the end of \\(4\\) years, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$15315\\)",
+            "\\(\\$13784\\)",
+            "\\(\\$12000\\)",
+            "\\(\\$13923\\)"
+          ],
+          "answer": 0,
+          "hint": "This forms a geometric series where the first deposit compounding for 4 years is \\(3000 \\times 1.10^4\\), down to the last deposit compounding for 1 year, which is \\(3000 \\times 1.10\\). Use the sum formula for a geometric series.",
+          "solution": "\\(\\$15315\\)",
+          "steps": [
+            {
+              "explain": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 3000 \\times 1.10 = 3300.0000000000005\\) and common ratio \\(r = 1.10\\).",
+              "work": "\\(a = 3300.0000000000005, quad r = 1.10, quad n = 4\\)"
+            },
+            {
+              "explain": "Recall the sum formula for a geometric series.",
+              "work": "\\(S_n = \\frac{a(r^n - 1)}{r - 1}\\)"
+            },
+            {
+              "explain": "Substitute our values into the sum formula.",
+              "work": "\\(S_{4} = \\frac{3300.0000000000005 \\times (1.10^{4} - 1)}{1.10 - 1}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the expression.",
+              "work": "\\(S_{4} = \\frac{3300.0000000000005 \\times 0.4641}{0.10} = 15315\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c7-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An investment analyst in materials science creates a model where a client deposits \\(\\$1000\\) at the start of each year into a high-yield fund growing at \\(10\\%\\) per annum compound interest. Calculate the total value of the investment at the end of \\(4\\) years, rounded to the nearest dollar.",
+          "options": [
+            "\\(\\$5105\\)",
+            "\\(\\$4000\\)",
+            "\\(\\$4595\\)",
+            "\\(\\$4641\\)"
+          ],
+          "answer": 0,
+          "hint": "This forms a geometric series where the first deposit compounding for 4 years is \\(1000 \\times 1.10^4\\), down to the last deposit compounding for 1 year, which is \\(1000 \\times 1.10\\). Use the sum formula for a geometric series.",
+          "solution": "\\(\\$5105\\)",
+          "steps": [
+            {
+              "explain": "Write the terms representing the value of each annual deposit at the end of the investment period. This forms a GP with first term \\(a = 1000 \\times 1.10 = 1100\\) and common ratio \\(r = 1.10\\).",
+              "work": "\\(a = 1100, quad r = 1.10, quad n = 4\\)"
+            },
+            {
+              "explain": "Recall the sum formula for a geometric series.",
+              "work": "\\(S_n = \\frac{a(r^n - 1)}{r - 1}\\)"
+            },
+            {
+              "explain": "Substitute our values into the sum formula.",
+              "work": "\\(S_{4} = \\frac{1100 \\times (1.10^{4} - 1)}{1.10 - 1}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the expression.",
+              "work": "\\(S_{4} = \\frac{1100 \\times 0.4641}{0.10} = 5105\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c10-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications signal path for the compound interest bond portfolio in financial analytics transmits packets in pulses. The first pulse contains \\(150\\) packets, and each subsequent pulse contains exactly \\(30\\%\\) of the size of the previous pulse. Find the total number of packets that will ever be transmitted in this infinite sequence of pulses.",
+          "options": [
+            "\\(105.00\\)",
+            "\\(214.29\\)",
+            "\\(235.71\\)",
+            "\\(500.00\\)"
+          ],
+          "answer": 1,
+          "hint": "Since the pulses decrease by a constant fraction less than 1, we can find the total sum using the limiting sum formula for a geometric progression: \\(S_{\\infty} = \\frac{a}{1 - r}\\).",
+          "solution": "\\(214.29\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 150\\) and the common ratio \\(r = 0.3\\) from the decay rate of the pulses.",
+              "work": "\\(a = 150, quad r = 0.3\\)"
+            },
+            {
+              "explain": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{a}{1 - r}\\)"
+            },
+            {
+              "explain": "Substitute the values into the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{150}{1 - 0.3}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the division.",
+              "work": "\\(S_{\\infty} = \\frac{150}{0.70} = 214.29\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c10-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications signal path for the phytoplankton cell count in marine ecology transmits packets in pulses. The first pulse contains \\(200\\) packets, and each subsequent pulse contains exactly \\(35\\%\\) of the size of the previous pulse. Find the total number of packets that will ever be transmitted in this infinite sequence of pulses.",
+          "options": [
+            "\\(307.69\\)",
+            "\\(338.46\\)",
+            "\\(130.00\\)",
+            "\\(571.43\\)"
+          ],
+          "answer": 0,
+          "hint": "Since the pulses decrease by a constant fraction less than 1, we can find the total sum using the limiting sum formula for a geometric progression: \\(S_{\\infty} = \\frac{a}{1 - r}\\).",
+          "solution": "\\(307.69\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 200\\) and the common ratio \\(r = 0.35\\) from the decay rate of the pulses.",
+              "work": "\\(a = 200, quad r = 0.35\\)"
+            },
+            {
+              "explain": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{a}{1 - r}\\)"
+            },
+            {
+              "explain": "Substitute the values into the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{200}{1 - 0.35}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the division.",
+              "work": "\\(S_{\\infty} = \\frac{200}{0.65} = 307.69\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c10-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications signal path for the harvestable timber volume in sustainable forestry transmits packets in pulses. The first pulse contains \\(250\\) packets, and each subsequent pulse contains exactly \\(40\\%\\) of the size of the previous pulse. Find the total number of packets that will ever be transmitted in this infinite sequence of pulses.",
+          "options": [
+            "\\(458.33\\)",
+            "\\(150.00\\)",
+            "\\(416.67\\)",
+            "\\(625.00\\)"
+          ],
+          "answer": 2,
+          "hint": "Since the pulses decrease by a constant fraction less than 1, we can find the total sum using the limiting sum formula for a geometric progression: \\(S_{\\infty} = \\frac{a}{1 - r}\\).",
+          "solution": "\\(416.67\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 250\\) and the common ratio \\(r = 0.4\\) from the decay rate of the pulses.",
+              "work": "\\(a = 250, quad r = 0.4\\)"
+            },
+            {
+              "explain": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{a}{1 - r}\\)"
+            },
+            {
+              "explain": "Substitute the values into the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{250}{1 - 0.4}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the division.",
+              "work": "\\(S_{\\infty} = \\frac{250}{0.60} = 416.67\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c10-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications signal path for the precision actuator decay rate in robotics manufacturing transmits packets in pulses. The first pulse contains \\(300\\) packets, and each subsequent pulse contains exactly \\(45\\%\\) of the size of the previous pulse. Find the total number of packets that will ever be transmitted in this infinite sequence of pulses.",
+          "options": [
+            "\\(165.00\\)",
+            "\\(666.67\\)",
+            "\\(545.45\\)",
+            "\\(600.00\\)"
+          ],
+          "answer": 2,
+          "hint": "Since the pulses decrease by a constant fraction less than 1, we can find the total sum using the limiting sum formula for a geometric progression: \\(S_{\\infty} = \\frac{a}{1 - r}\\).",
+          "solution": "\\(545.45\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 300\\) and the common ratio \\(r = 0.45\\) from the decay rate of the pulses.",
+              "work": "\\(a = 300, quad r = 0.45\\)"
+            },
+            {
+              "explain": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{a}{1 - r}\\)"
+            },
+            {
+              "explain": "Substitute the values into the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{300}{1 - 0.45}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the division.",
+              "work": "\\(S_{\\infty} = \\frac{300}{0.55} = 545.45\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c10-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications signal path for the unstable isotope concentration in nuclear physics transmits packets in pulses. The first pulse contains \\(100\\) packets, and each subsequent pulse contains exactly \\(25\\%\\) of the size of the previous pulse. Find the total number of packets that will ever be transmitted in this infinite sequence of pulses.",
+          "options": [
+            "\\(133.33\\)",
+            "\\(146.67\\)",
+            "\\(400.00\\)",
+            "\\(75.00\\)"
+          ],
+          "answer": 0,
+          "hint": "Since the pulses decrease by a constant fraction less than 1, we can find the total sum using the limiting sum formula for a geometric progression: \\(S_{\\infty} = \\frac{a}{1 - r}\\).",
+          "solution": "\\(133.33\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 100\\) and the common ratio \\(r = 0.25\\) from the decay rate of the pulses.",
+              "work": "\\(a = 100, quad r = 0.25\\)"
+            },
+            {
+              "explain": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{a}{1 - r}\\)"
+            },
+            {
+              "explain": "Substitute the values into the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{100}{1 - 0.25}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the division.",
+              "work": "\\(S_{\\infty} = \\frac{100}{0.75} = 133.33\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c10-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications signal path for the fiber-optic signal packet queue in telecom engineering transmits packets in pulses. The first pulse contains \\(150\\) packets, and each subsequent pulse contains exactly \\(30\\%\\) of the size of the previous pulse. Find the total number of packets that will ever be transmitted in this infinite sequence of pulses.",
+          "options": [
+            "\\(235.71\\)",
+            "\\(105.00\\)",
+            "\\(214.29\\)",
+            "\\(500.00\\)"
+          ],
+          "answer": 2,
+          "hint": "Since the pulses decrease by a constant fraction less than 1, we can find the total sum using the limiting sum formula for a geometric progression: \\(S_{\\infty} = \\frac{a}{1 - r}\\).",
+          "solution": "\\(214.29\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 150\\) and the common ratio \\(r = 0.3\\) from the decay rate of the pulses.",
+              "work": "\\(a = 150, quad r = 0.3\\)"
+            },
+            {
+              "explain": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{a}{1 - r}\\)"
+            },
+            {
+              "explain": "Substitute the values into the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{150}{1 - 0.3}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the division.",
+              "work": "\\(S_{\\infty} = \\frac{150}{0.70} = 214.29\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c10-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications signal path for the municipal water reservoir supply in urban planning transmits packets in pulses. The first pulse contains \\(200\\) packets, and each subsequent pulse contains exactly \\(35\\%\\) of the size of the previous pulse. Find the total number of packets that will ever be transmitted in this infinite sequence of pulses.",
+          "options": [
+            "\\(307.69\\)",
+            "\\(338.46\\)",
+            "\\(130.00\\)",
+            "\\(571.43\\)"
+          ],
+          "answer": 0,
+          "hint": "Since the pulses decrease by a constant fraction less than 1, we can find the total sum using the limiting sum formula for a geometric progression: \\(S_{\\infty} = \\frac{a}{1 - r}\\).",
+          "solution": "\\(307.69\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 200\\) and the common ratio \\(r = 0.35\\) from the decay rate of the pulses.",
+              "work": "\\(a = 200, quad r = 0.35\\)"
+            },
+            {
+              "explain": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{a}{1 - r}\\)"
+            },
+            {
+              "explain": "Substitute the values into the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{200}{1 - 0.35}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the division.",
+              "work": "\\(S_{\\infty} = \\frac{200}{0.65} = 307.69\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c10-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications signal path for the neural impulse propagation speed in biophysics transmits packets in pulses. The first pulse contains \\(250\\) packets, and each subsequent pulse contains exactly \\(40\\%\\) of the size of the previous pulse. Find the total number of packets that will ever be transmitted in this infinite sequence of pulses.",
+          "options": [
+            "\\(458.33\\)",
+            "\\(416.67\\)",
+            "\\(625.00\\)",
+            "\\(150.00\\)"
+          ],
+          "answer": 1,
+          "hint": "Since the pulses decrease by a constant fraction less than 1, we can find the total sum using the limiting sum formula for a geometric progression: \\(S_{\\infty} = \\frac{a}{1 - r}\\).",
+          "solution": "\\(416.67\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 250\\) and the common ratio \\(r = 0.4\\) from the decay rate of the pulses.",
+              "work": "\\(a = 250, quad r = 0.4\\)"
+            },
+            {
+              "explain": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{a}{1 - r}\\)"
+            },
+            {
+              "explain": "Substitute the values into the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{250}{1 - 0.4}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the division.",
+              "work": "\\(S_{\\infty} = \\frac{250}{0.60} = 416.67\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c10-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications signal path for the collective battery reserve in agricultural drone fleet transmits packets in pulses. The first pulse contains \\(300\\) packets, and each subsequent pulse contains exactly \\(45\\%\\) of the size of the previous pulse. Find the total number of packets that will ever be transmitted in this infinite sequence of pulses.",
+          "options": [
+            "\\(165.00\\)",
+            "\\(600.00\\)",
+            "\\(666.67\\)",
+            "\\(545.45\\)"
+          ],
+          "answer": 3,
+          "hint": "Since the pulses decrease by a constant fraction less than 1, we can find the total sum using the limiting sum formula for a geometric progression: \\(S_{\\infty} = \\frac{a}{1 - r}\\).",
+          "solution": "\\(545.45\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 300\\) and the common ratio \\(r = 0.45\\) from the decay rate of the pulses.",
+              "work": "\\(a = 300, quad r = 0.45\\)"
+            },
+            {
+              "explain": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{a}{1 - r}\\)"
+            },
+            {
+              "explain": "Substitute the values into the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{300}{1 - 0.45}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the division.",
+              "work": "\\(S_{\\infty} = \\frac{300}{0.55} = 545.45\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1d-hard-c10-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telecommunications signal path for the structural alloy stress threshold in materials science transmits packets in pulses. The first pulse contains \\(100\\) packets, and each subsequent pulse contains exactly \\(25\\%\\) of the size of the previous pulse. Find the total number of packets that will ever be transmitted in this infinite sequence of pulses.",
+          "options": [
+            "\\(133.33\\)",
+            "\\(400.00\\)",
+            "\\(146.67\\)",
+            "\\(75.00\\)"
+          ],
+          "answer": 0,
+          "hint": "Since the pulses decrease by a constant fraction less than 1, we can find the total sum using the limiting sum formula for a geometric progression: \\(S_{\\infty} = \\frac{a}{1 - r}\\).",
+          "solution": "\\(133.33\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a = 100\\) and the common ratio \\(r = 0.25\\) from the decay rate of the pulses.",
+              "work": "\\(a = 100, quad r = 0.25\\)"
+            },
+            {
+              "explain": "Since the absolute value of the common ratio is strictly less than 1 (\\(|r| < 1\\)), we can apply the infinite sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{a}{1 - r}\\)"
+            },
+            {
+              "explain": "Substitute the values into the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{100}{1 - 0.25}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate the division.",
+              "work": "\\(S_{\\infty} = \\frac{100}{0.75} = 133.33\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<svg viewBox="-40 -40 280 280" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="100,20 176,75 147,165 53,165 24,75" fill="none" stroke="#000" stroke-width="1"/>
+  <line x1="135" y1="44" x2="141" y2="51" stroke="#000" stroke-width="1"/>
+  <line x1="165" y1="123" x2="158" y2="117" stroke="#000" stroke-width="1"/>
+  <line x1="100" y1="161" x2="100" y2="169" stroke="#000" stroke-width="1"/>
+  <line x1="35" y1="123" x2="42" y2="117" stroke="#000" stroke-width="1"/>
+  <line x1="65" y1="44" x2="59" y2="51" stroke="#000" stroke-width="1"/>
+  <text x="63" y="153" font-family="serif" font-size="12" fill="#000">α</text>
+</svg>

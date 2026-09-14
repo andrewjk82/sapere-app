@@ -1,0 +1,629 @@
+{
+  "chapterId": "y6-frac",
+  "title": "Chapter 2: Fractions",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-frac",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y6-frac-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A circle is divided into \\\\\\\\(6\\\\) equal sectors and \\\\\\\\(5\\\\) sectors are shaded. What fraction of the circle is shaded?",
+          "options": [
+            "\\\\(\\frac{5}{6}\\\\)",
+            "\\\\(\\frac{1}{6}\\\\)",
+            "\\\\(\\frac{6}{5}\\\\)",
+            "\\\\(\\frac{1}{5}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "The denominator is the total number of sectors, and the numerator is the shaded sectors.",
+          "solution": "There are \\\\\\\\(6\\\\) equal sectors in total, so the denominator is \\\\\\\\(6\\\\). Since \\\\\\\\(5\\\\) sectors are shaded, the numerator is \\\\\\\\(5\\\\). The fraction is \\\\(\\frac{5}{6}\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of equal sectors.",
+              "work": "\\text{Total sectors} = 6"
+            },
+            {
+              "explain": "Identify the number of shaded sectors.",
+              "work": "\\text{Shaded sectors} = 5"
+            },
+            {
+              "explain": "Write the fraction as Shaded sectors / Total sectors.",
+              "work": "\\frac{5}{6}"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y6-frac-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Mark spends \\\\(\\frac{2}{7}\\\\) of his pocket money on food and \\\\(\\frac{1}{4}\\\\) of it on a present for his brother. What fraction of his pocket money remains?",
+          "options": [
+            "\\\\(\\frac{13}{28}\\\\)",
+            "\\\\(\\frac{15}{28}\\\\)",
+            "\\\\(\\frac{3}{11}\\\\)",
+            "\\\\(\\frac{11}{28}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the two fractions together to find the total fraction spent, then subtract from \\\\(1\\\\) whole.",
+          "solution": "Add \\\\(\\frac{2}{7}\\\\) and \\\\(\\frac{1}{4}\\\\). Common denominator is \\\\\\\\(28\\\\). \\\\(\\frac{2}{7} = \\frac{8}{28}\\\\) and \\\\(\\frac{1}{4} = \\frac{7}{28}\\\\). Total spent = \\\\(\\frac{8}{28} + \\frac{7}{28} = \\frac{15}{28}\\\\). Fraction remaining = \\\\\\\\(1 - \\frac{15}{28} = \\frac{28}{28} - \\frac{15}{28} = \\frac{13}{28}\\\\).",
+          "steps": [
+            {
+              "explain": "Find the total fraction spent by adding the two fractions. Convert them to a common denominator (\\\\\\\\(28\\\\)).",
+              "work": "\\begin{aligned} \\frac{2}{7} &= \\frac{8}{28} \\\\ \\frac{1}{4} &= \\frac{7}{28} \\end{aligned}"
+            },
+            {
+              "explain": "Add the converted fractions.",
+              "work": "\\frac{8}{28} + \\frac{7}{28} = \\frac{15}{28}"
+            },
+            {
+              "explain": "Subtract the total spent from the whole (\\\\(1\\\\) or \\\\(\\frac{28}{28}\\\\)) to find the remaining fraction.",
+              "work": "\\frac{28}{28} - \\frac{15}{28} = \\frac{13}{28}"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y6-frac-1",
+      "code": "FRAC1",
+      "title": "Basic Fractions",
+      "questions": [
+        {
+          "id": "y6-frac-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A rectangle is divided into \\\\\\\\(8\\\\) equal parts and \\\\\\\\(3\\\\) parts are shaded. What fraction of the rectangle is shaded?",
+          "options": [
+            "\\\\(\\frac{3}{8}\\\\)",
+            "\\\\(\\frac{5}{8}\\\\)",
+            "\\\\(\\frac{1}{3}\\\\)",
+            "\\\\(\\frac{3}{5}\\\\)"
+          ],
+          "answer": null,
+          "hint": "The denominator is the total number of parts, and the numerator is the shaded parts.",
+          "solution": "There are \\\\\\\\(8\\\\) equal parts in total, so the denominator is \\\\\\\\(8\\\\). Since \\\\\\\\(3\\\\) parts are shaded, the numerator is \\\\\\\\(3\\\\). The fraction is \\\\(\\frac{3}{8}\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of parts the shape is divided into.",
+              "work": "\\text{Total parts} = 8"
+            },
+            {
+              "explain": "Identify the number of shaded parts.",
+              "work": "\\text{Shaded parts} = 3"
+            },
+            {
+              "explain": "Write the fraction as Shaded parts / Total parts.",
+              "work": "\\frac{3}{8}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q3",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Find the missing number to make the fractions equivalent: \\\\(\\frac{1}{3} = \\frac{?}{15}\\\\)",
+          "answer": "5",
+          "hint": "What do you multiply \\\\\\\\(3\\\\) by to get \\\\\\\\(15\\\\)? Multiply the numerator by the same amount.",
+          "solution": "To get from \\\\\\\\(3\\\\) to \\\\\\\\(15\\\\), multiply by \\\\\\\\(5\\\\). Therefore, multiply the numerator by \\\\\\\\(5\\\\): \\\\\\\\(1 \\times 5 = 5\\\\). The missing number is \\\\\\\\(5\\\\).",
+          "steps": [
+            {
+              "explain": "Determine the multiplier for the denominators.",
+              "work": "15 \\div 3 = 5"
+            },
+            {
+              "explain": "Multiply the numerator by the same multiplier.",
+              "work": "1 \\times 5 = 5"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q4",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Find the missing number to make the fractions equivalent: \\\\(\\frac{2}{5} = \\frac{6}{?}\\\\)",
+          "answer": "15",
+          "hint": "What do you multiply \\\\\\\\(2\\\\) by to get \\\\\\\\(6\\\\)? Multiply the denominator by the same amount.",
+          "solution": "To get from \\\\\\\\(2\\\\) to \\\\\\\\(6\\\\), multiply by \\\\\\\\(3\\\\). Therefore, multiply the denominator by \\\\\\\\(3\\\\): \\\\\\\\(5 \\times 3 = 15\\\\). The missing number is \\\\\\\\(15\\\\).",
+          "steps": [
+            {
+              "explain": "Determine the multiplier for the numerators.",
+              "work": "6 \\div 2 = 3"
+            },
+            {
+              "explain": "Multiply the denominator by the same multiplier.",
+              "work": "5 \\times 3 = 15"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the fraction \\\\(\\frac{18}{24}\\\\) in its simplest form.",
+          "options": [
+            "\\\\(\\frac{3}{4}\\\\)",
+            "\\\\(\\frac{9}{12}\\\\)",
+            "\\\\(\\frac{6}{8}\\\\)",
+            "\\\\(\\frac{2}{3}\\\\)"
+          ],
+          "answer": null,
+          "hint": "Find the highest common factor (HCF) of \\\\\\\\(18\\\\) and \\\\\\\\(24\\\\) and divide both numbers by it.",
+          "solution": "The highest common factor of \\\\\\\\(18\\\\) and \\\\\\\\(24\\\\) is \\\\\\\\(6\\\\). Dividing both the numerator and denominator by \\\\\\\\(6\\\\) gives \\\\(\\frac{18 \\div 6}{24 \\div 6} = \\frac{3}{4}\\\\).",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the numerator and denominator.",
+              "work": "\\text{Factors of } 18: 1, 2, 3, 6, 9, 18 \\\\ \\text{Factors of } 24: 1, 2, 3, 4, 6, 8, 12, 24 \\\\ \\text{HCF} = 6"
+            },
+            {
+              "explain": "Divide both the top and bottom by the HCF.",
+              "work": "\\frac{18 \\div 6}{24 \\div 6} = \\frac{3}{4}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-frac-2",
+      "code": "FRAC2",
+      "title": "Mixed to Improper",
+      "questions": [
+        {
+          "id": "y6-frac-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the mixed fraction \\\\\\\\(2\\frac{3}{4}\\\\) to an improper fraction.",
+          "options": [
+            "\\\\(\\frac{11}{4}\\\\)",
+            "\\\\(\\frac{9}{4}\\\\)",
+            "\\\\(\\frac{10}{4}\\\\)",
+            "\\\\(\\frac{5}{4}\\\\)"
+          ],
+          "answer": null,
+          "hint": "Multiply the whole number by the denominator, then add the numerator.",
+          "solution": "Multiply \\\\\\\\(2 \\times 4 = 8\\\\). Then add \\\\\\\\(3\\\\) to get \\\\\\\\(11\\\\). Keep the denominator the same. The answer is \\\\(\\frac{11}{4}\\\\).",
+          "steps": [
+            {
+              "explain": "Multiply the whole number by the denominator.",
+              "work": "2 \\times 4 = 8"
+            },
+            {
+              "explain": "Add the numerator to this product.",
+              "work": "8 + 3 = 11"
+            },
+            {
+              "explain": "Write this result over the original denominator.",
+              "work": "\\frac{11}{4}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the improper fraction \\\\(\\frac{17}{5}\\\\) to a mixed fraction.",
+          "options": [
+            "\\\\\\\\(3\\frac{2}{5}\\\\)",
+            "\\\\\\\\(3\\frac{3}{5}\\\\)",
+            "\\\\\\\\(2\\frac{7}{5}\\\\)",
+            "\\\\\\\\(4\\frac{2}{5}\\\\)"
+          ],
+          "answer": null,
+          "hint": "Divide the numerator by the denominator to find the whole number and the remainder.",
+          "solution": "\\\\\\\\(17\\\\) divided by \\\\\\\\(5\\\\) is \\\\\\\\(3\\\\) with a remainder of \\\\\\\\(2\\\\). So, it is \\\\\\\\(3\\\\) wholes and \\\\(\\frac{2}{5}\\\\) left over.",
+          "steps": [
+            {
+              "explain": "Divide the numerator by the denominator to find the whole number.",
+              "work": "17 \\div 5 = 3 \\text{ remainder } 2"
+            },
+            {
+              "explain": "The quotient becomes the whole number, and the remainder becomes the new numerator.",
+              "work": "3\\frac{2}{5}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-frac-3",
+      "code": "FRAC3",
+      "title": "Adding Mixed Fractions",
+      "questions": [
+        {
+          "id": "y6-frac-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum: \\\\(\\frac{2}{9} + \\frac{5}{9}\\\\)",
+          "options": [
+            "\\\\(\\frac{7}{9}\\\\)",
+            "\\\\(\\frac{7}{18}\\\\)",
+            "\\\\(\\frac{10}{81}\\\\)",
+            "\\\\(\\frac{3}{9}\\\\)"
+          ],
+          "answer": null,
+          "hint": "When adding fractions with the same denominator, just add the numerators.",
+          "solution": "Since the denominators are the same, add the numerators: \\\\\\\\(2 + 5 = 7\\\\). The denominator stays \\\\\\\\(9\\\\). The sum is \\\\(\\frac{7}{9}\\\\).",
+          "steps": [
+            {
+              "explain": "Check if the denominators are the same.",
+              "work": "\\text{Denominators are both } 9"
+            },
+            {
+              "explain": "Add the numerators and keep the denominator.",
+              "work": "\\frac{2 + 5}{9} = \\frac{7}{9}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the sum: \\\\\\\\(2\\frac{1}{3} + 1\\frac{1}{4}\\\\)",
+          "options": [
+            "\\\\\\\\(3\\frac{7}{12}\\\\)",
+            "\\\\\\\\(3\\frac{2}{7}\\\\)",
+            "\\\\\\\\(4\\frac{1}{12}\\\\)",
+            "\\\\\\\\(3\\frac{5}{12}\\\\)"
+          ],
+          "answer": null,
+          "hint": "Add the whole numbers together, then add the fractions by finding a common denominator.",
+          "solution": "First, add the whole numbers: \\\\\\\\(2 + 1 = 3\\\\). Next, add the fractions: \\\\(\\frac{1}{3} + \\frac{1}{4}\\\\). The common denominator is \\\\\\\\(12\\\\). \\\\(\\frac{1}{3} = \\frac{4}{12}\\\\) and \\\\(\\frac{1}{4} = \\frac{3}{12}\\\\). Add them: \\\\(\\frac{4}{12} + \\frac{3}{12} = \\frac{7}{12}\\\\). Combine with the whole number: \\\\\\\\(3\\frac{7}{12}\\\\).",
+          "steps": [
+            {
+              "explain": "Add the whole number parts.",
+              "work": "2 + 1 = 3"
+            },
+            {
+              "explain": "Find a common denominator for the fractional parts (\\\\\\\\(3\\\\) and \\\\\\\\(4\\\\)).",
+              "work": "\\text{LCM of 3 and 4 is 12}"
+            },
+            {
+              "explain": "Convert the fractions to equivalent fractions with denominator 12.",
+              "work": "\\begin{aligned} \\frac{1}{3} &= \\frac{4}{12} \\\\ \\frac{1}{4} &= \\frac{3}{12} \\end{aligned}"
+            },
+            {
+              "explain": "Add the fractions and combine with the whole number.",
+              "work": "3 + \\left( \\frac{4}{12} + \\frac{3}{12} \\right) = 3\\frac{7}{12}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the difference: \\\\(\\frac{7}{8} - \\frac{1}{4}\\\\)",
+          "options": [
+            "\\\\(\\frac{5}{8}\\\\)",
+            "\\\\(\\frac{6}{4}\\\\)",
+            "\\\\(\\frac{3}{8}\\\\)",
+            "\\\\(\\frac{1}{2}\\\\)"
+          ],
+          "answer": null,
+          "hint": "Find a common denominator before subtracting.",
+          "solution": "The lowest common denominator for \\\\\\\\(8\\\\) and \\\\\\\\(4\\\\) is \\\\\\\\(8\\\\). Convert \\\\(\\frac{1}{4}\\\\) to \\\\(\\frac{2}{8}\\\\). Now subtract: \\\\(\\frac{7}{8} - \\frac{2}{8} = \\frac{5}{8}\\\\).",
+          "steps": [
+            {
+              "explain": "Find a common denominator for \\\\\\\\(8\\\\) and \\\\\\\\(4\\\\).",
+              "work": "\\text{Common denominator is 8}"
+            },
+            {
+              "explain": "Convert \\\\(\\frac{1}{4}\\\\) to an equivalent fraction with a denominator of \\\\\\\\(8\\\\).",
+              "work": "\\frac{1}{4} = \\frac{2}{8}"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\frac{7}{8} - \\frac{2}{8} = \\frac{5}{8}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q12",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the difference: \\\\\\\\(4\\frac{1}{5} - 1\\frac{1}{2}\\\\)",
+          "options": [
+            "\\\\\\\\(2\\frac{7}{10}\\\\)",
+            "\\\\\\\\(3\\frac{3}{10}\\\\)",
+            "\\\\\\\\(2\\frac{3}{10}\\\\)",
+            "\\\\\\\\(3\\frac{7}{10}\\\\)"
+          ],
+          "answer": null,
+          "hint": "Convert both mixed numbers to improper fractions, then find a common denominator.",
+          "solution": "Convert to improper fractions: \\\\\\\\(4\\frac{1}{5} = \\frac{21}{5}\\\\) and \\\\\\\\(1\\frac{1}{2} = \\frac{3}{2}\\\\). Common denominator is \\\\\\\\(10\\\\). \\\\(\\frac{21}{5} = \\frac{42}{10}\\\\) and \\\\(\\frac{3}{2} = \\frac{15}{10}\\\\). Subtract: \\\\(\\frac{42}{10} - \\frac{15}{10} = \\frac{27}{10}\\\\). Convert back to a mixed number: \\\\\\\\(2\\frac{7}{10}\\\\).",
+          "steps": [
+            {
+              "explain": "Convert both mixed numbers to improper fractions.",
+              "work": "\\begin{aligned} 4\\frac{1}{5} &= \\frac{21}{5} \\\\ 1\\frac{1}{2} &= \\frac{3}{2} \\end{aligned}"
+            },
+            {
+              "explain": "Find a common denominator and convert.",
+              "work": "\\begin{aligned} \\frac{21}{5} &= \\frac{42}{10} \\\\ \\frac{3}{2} &= \\frac{15}{10} \\end{aligned}"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\frac{42}{10} - \\frac{15}{10} = \\frac{27}{10}"
+            },
+            {
+              "explain": "Convert the resulting improper fraction back to a mixed number.",
+              "work": "\\frac{27}{10} = 2\\frac{7}{10}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Do the multiplication and write the answer in simplest form: \\\\(\\frac{4}{5} \\times \\frac{3}{8}\\\\)",
+          "options": [
+            "\\\\(\\frac{3}{10}\\\\)",
+            "\\\\(\\frac{12}{40}\\\\)",
+            "\\\\(\\frac{7}{13}\\\\)",
+            "\\\\(\\frac{3}{5}\\\\)"
+          ],
+          "answer": null,
+          "hint": "Multiply the numerators together and the denominators together, then simplify.",
+          "solution": "Multiply numerators: \\\\\\\\(4 \\times 3 = 12\\\\). Multiply denominators: \\\\\\\\(5 \\times 8 = 40\\\\). The fraction is \\\\(\\frac{12}{40}\\\\). Simplify by dividing top and bottom by \\\\\\\\(4\\\\) to get \\\\(\\frac{3}{10}\\\\).",
+          "steps": [
+            {
+              "explain": "Multiply the numerators together.",
+              "work": "4 \\times 3 = 12"
+            },
+            {
+              "explain": "Multiply the denominators together.",
+              "work": "5 \\times 8 = 40"
+            },
+            {
+              "explain": "Simplify the resulting fraction by dividing by the highest common factor.",
+              "work": "\\frac{12 \\div 4}{40 \\div 4} = \\frac{3}{10}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find: \\\\(\\frac{2}{3} \\text{ of } 24\\\\)",
+          "options": [
+            "16",
+            "18",
+            "8",
+            "12"
+          ],
+          "answer": 0,
+          "hint": "Divide the whole number by the denominator, then multiply by the numerator.",
+          "solution": "First, find \\\\(\\frac{1}{3}\\\\) of \\\\\\\\(24\\\\) by dividing \\\\\\\\(24\\\\) by \\\\\\\\(3\\\\), which is \\\\\\\\(8\\\\). Then multiply by \\\\\\\\(2\\\\) to find \\\\(\\frac{2}{3}\\\\): \\\\\\\\(8 \\times 2 = 16\\\\).",
+          "steps": [
+            {
+              "explain": "Divide the whole number by the denominator to find one fractional part.",
+              "work": "24 \\div 3 = 8"
+            },
+            {
+              "explain": "Multiply the result by the numerator.",
+              "work": "8 \\times 2 = 16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-frac-4",
+      "code": "FRAC4",
+      "title": "Fraction Word Problems",
+      "questions": [
+        {
+          "id": "y6-frac-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Lily has \\\\\\\\(30 and spends \\\\)\\frac{1}{3}\\\\( of it on a movie and \\\\)\\frac{2}{5}$ of it on a t-shirt. How much money does she have left?",
+          "options": [
+            "\\\\$8",
+            "\\\\$10",
+            "\\\\$12",
+            "\\\\$18"
+          ],
+          "answer": null,
+          "hint": "Calculate how much she spent on the movie and t-shirt, then subtract the total spent from \\\\$30.",
+          "solution": "Movie: \\\\(\\frac{1}{3}\\\\) of \\\\(\\\\$30 = \\\\$10\\\\). T-shirt: \\\\(\\frac{2}{5}\\\\) of \\\\(\\\\$30 = \\\\$30 \\div 5 \\times 2 = \\\\$12\\\\). Total spent = \\\\(\\\\$10 + \\\\$12 = \\\\$22\\\\). Money left = \\\\(\\\\$30 - \\\\$22 = \\\\$8\\\\).",
+          "steps": [
+            {
+              "explain": "Calculate the amount spent on the movie.",
+              "work": "\\frac{1}{3} \\times 30 = \\\\$10"
+            },
+            {
+              "explain": "Calculate the amount spent on the t-shirt.",
+              "work": "\\frac{2}{5} \\times 30 = \\frac{60}{5} = \\\\$12"
+            },
+            {
+              "explain": "Add the expenses to find the total amount spent.",
+              "work": "10 + 12 = \\\\$22"
+            },
+            {
+              "explain": "Subtract the total spent from the original amount to find the money left.",
+              "work": "30 - 22 = \\\\$8"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q17",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "It takes \\\\(\\frac{2}{5}\\\\) of a bottle of juice to fill a large glass. How many glasses can be filled from \\\\\\\\(10\\\\) bottles?",
+          "options": [
+            "25",
+            "4",
+            "20",
+            "50"
+          ],
+          "answer": 0,
+          "hint": "Divide the total number of bottles (\\\\\\\\(10\\\\)) by the fraction it takes to fill one glass.",
+          "solution": "We need to find \\\\\\\\(10 \\div \\frac{2}{5}\\\\). This is the same as \\\\\\\\(10 \\times \\frac{5}{2}\\\\). Multiply: \\\\(\\frac{50}{2} = 25\\\\). So, \\\\\\\\(25\\\\) glasses can be filled.",
+          "steps": [
+            {
+              "explain": "Set up a division problem: Total bottles divided by the amount needed for one glass.",
+              "work": "10 \\div \\frac{2}{5}"
+            },
+            {
+              "explain": "To divide by a fraction, multiply by its reciprocal.",
+              "work": "10 \\times \\frac{5}{2}"
+            },
+            {
+              "explain": "Multiply and simplify.",
+              "work": "\\frac{50}{2} = 25"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q19",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Sam takes \\\\(\\frac{2}{3}\\\\) of an hour to write one page of an essay. How long will it take him to write \\\\\\\\(5\\\\) pages?",
+          "options": [
+            "\\\\\\\\(3\\frac{1}{3} \\text{ hours}\\\\)",
+            "\\\\\\\\(3\\frac{2}{3} \\text{ hours}\\\\)",
+            "\\\\\\\\(2\\frac{1}{3} \\text{ hours}\\\\)",
+            "\\\\\\\\(1\\frac{2}{3} \\text{ hours}\\\\)"
+          ],
+          "answer": null,
+          "hint": "Multiply the time taken for one page by the total number of pages.",
+          "solution": "Multiply \\\\(\\frac{2}{3} \\times 5\\\\). This gives \\\\(\\frac{10}{3}\\\\). Convert the improper fraction back to a mixed numeral: \\\\\\\\(10 \\div 3 = 3\\\\) remainder \\\\(1\\\\). So, it takes \\\\\\\\(3\\frac{1}{3}\\\\) hours.",
+          "steps": [
+            {
+              "explain": "Set up a multiplication problem: time per page multiplied by number of pages.",
+              "work": "\\frac{2}{3} \\times 5"
+            },
+            {
+              "explain": "Multiply the whole number by the numerator.",
+              "work": "\\frac{2 \\times 5}{3} = \\frac{10}{3}"
+            },
+            {
+              "explain": "Convert the improper fraction to a mixed number.",
+              "work": "10 \\div 3 = 3 \\text{ remainder } 1 \\implies 3\\frac{1}{3}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Emma saves \\\\(\\frac{3}{5}\\\\) of her weekly allowance. Of the remainder, she spends \\\\(\\frac{1}{3}\\\\) on snacks. What fraction of her total weekly allowance does she spend on snacks?",
+          "options": [
+            "\\\\(\\frac{2}{15}\\\\)",
+            "\\\\(\\frac{1}{5}\\\\)",
+            "\\\\(\\frac{4}{15}\\\\)",
+            "\\\\(\\frac{1}{3}\\\\)"
+          ],
+          "answer": null,
+          "hint": "First, find the fraction that is the 'remainder'. Then multiply that remainder by the fraction she spends on snacks.",
+          "solution": "If she saves \\\\(\\frac{3}{5}\\\\), the remainder is \\\\\\\\(1 - \\frac{3}{5} = \\frac{2}{5}\\\\). She spends \\\\(\\frac{1}{3}\\\\) of this remainder on snacks. Multiply: \\\\(\\frac{1}{3} \\times \\frac{2}{5} = \\frac{2}{15}\\\\). She spends \\\\(\\frac{2}{15}\\\\) of her total allowance on snacks.",
+          "steps": [
+            {
+              "explain": "Calculate the remaining fraction of her allowance after saving.",
+              "work": "1 - \\frac{3}{5} = \\frac{2}{5}"
+            },
+            {
+              "explain": "Calculate what fraction of the total allowance is spent on snacks by multiplying the spent fraction by the remainder.",
+              "work": "\\frac{1}{3} \\times \\frac{2}{5}"
+            },
+            {
+              "explain": "Multiply numerators and denominators.",
+              "work": "\\frac{1 \\times 2}{3 \\times 5} = \\frac{2}{15}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q22",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction is \\\\\\\\(15\\\\) minutes of \\\\(1\\\\) hour?",
+          "options": [
+            "\\\\(\\frac{1}{4}\\\\)",
+            "\\\\(\\frac{1}{3}\\\\)",
+            "\\\\(\\frac{15}{100}\\\\)",
+            "\\\\(\\frac{3}{10}\\\\)"
+          ],
+          "answer": null,
+          "hint": "There are \\\\\\\\(60\\\\) minutes in \\\\(1\\\\) hour. Put the minutes over \\\\\\\\(60\\\\) and simplify.",
+          "solution": "\\\\(1\\\\) hour \\\\(= 60\\\\) minutes. The fraction is \\\\(\\frac{15}{60}\\\\). Divide the numerator and denominator by \\\\\\\\(15\\\\) to simplify: \\\\(\\frac{1}{4}\\\\).",
+          "steps": [
+            {
+              "explain": "Convert the total time unit to the same smaller unit. (1 hour = 60 minutes).",
+              "work": "\\text{Total} = 60"
+            },
+            {
+              "explain": "Write the given amount over the total amount.",
+              "work": "\\frac{15}{60}"
+            },
+            {
+              "explain": "Simplify the fraction.",
+              "work": "\\frac{15 \\div 15}{60 \\div 15} = \\frac{1}{4}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q23",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What fraction is \\\\\\\\(4\\\\) days of \\\\(1\\\\) week?",
+          "options": [
+            "\\\\(\\frac{4}{7}\\\\)",
+            "\\\\(\\frac{1}{2}\\\\)",
+            "\\\\(\\frac{2}{3}\\\\)",
+            "\\\\(\\frac{4}{5}\\\\)"
+          ],
+          "answer": null,
+          "hint": "How many days are in a week? Use that as the denominator.",
+          "solution": "There are \\\\(7\\\\) days in a week. The fraction of the week is \\\\(\\frac{4}{7}\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the total number of days in one week.",
+              "work": "\\text{Total days} = 7"
+            },
+            {
+              "explain": "Write the given days over the total days.",
+              "work": "\\frac{4}{7}"
+            }
+          ]
+        },
+        {
+          "id": "y6-frac-q24",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The Tigers basketball team won \\\\\\\\(16\\\\) out of \\\\\\\\(24\\\\) matches. If \\\\(\\frac{3}{4}\\\\) of these wins were by more than \\\\\\\\(5\\\\) points, what fraction of all the matches were won by more than \\\\\\\\(5\\\\) points?",
+          "options": [
+            "\\\\(\\frac{1}{2}\\\\)",
+            "\\\\(\\frac{3}{4}\\\\)",
+            "\\\\(\\frac{2}{3}\\\\)",
+            "\\\\(\\frac{1}{3}\\\\)"
+          ],
+          "answer": null,
+          "hint": "First, find the total fraction of games won. Then multiply it by the fraction of wins that were by more than 5 points.",
+          "solution": "The fraction of matches won is \\\\(\\frac{16}{24}\\\\), which simplifies to \\\\(\\frac{2}{3}\\\\). We are told \\\\(\\frac{3}{4}\\\\) of these wins were by more than \\\\\\\\(5\\\\) points. Multiply the two fractions: \\\\(\\frac{2}{3} \\times \\frac{3}{4} = \\frac{6}{12} = \\frac{1}{2}\\\\). So, \\\\(\\frac{1}{2}\\\\) of all matches were won by more than \\\\\\\\(5\\\\) points.",
+          "steps": [
+            {
+              "explain": "Find the fraction of total matches won and simplify it.",
+              "work": "\\frac{16}{24} = \\frac{2}{3}"
+            },
+            {
+              "explain": "Multiply this fraction by the fraction of wins that were by >5 points.",
+              "work": "\\frac{2}{3} \\times \\frac{3}{4}"
+            },
+            {
+              "explain": "Multiply and simplify.",
+              "work": "\\frac{6}{12} = \\frac{1}{2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 240" width="300" height="240" style="display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;">
+  <!-- Grid Lines -->
+  <path d="M 0,20 H 300 M 0,40 H 300 M 0,60 H 300 M 0,80 H 300 M 0,100 H 300 M 0,140 H 300 M 0,160 H 300 M 0,180 H 300 M 0,200 H 300 M 0,220 H 300" stroke="#f1f5f9" stroke-width="1" />
+  <path d="M 20,0 V 240 M 40,0 V 240 M 60,0 V 240 M 80,0 V 240 M 100,0 V 240 M 120,0 V 240 M 160,0 V 240 M 180,0 V 240 M 200,0 V 240 M 220,0 V 240 M 240,0 V 240 M 260,0 V 240 M 280,0 V 240" stroke="#f1f5f9" stroke-width="1" />
+  <!-- Axes -->
+  <line x1="10" y1="120" x2="290" y2="120" stroke="#64748b" stroke-width="1.5" />
+  <line x1="140" y1="10" x2="140" y2="230" stroke="#64748b" stroke-width="1.5" />
+  <!-- Axes Labels -->
+  <text x="285" y="135" font-size="12" fill="#64748b" font-weight="bold">x</text>
+  <text x="125" y="15" font-size="12" fill="#64748b" font-weight="bold">y</text>
+  <!-- Curve y = x^3 -->
+  <path d="M 100,220 C 120,180 130,120 140,120 C 150,120 160,60 180,20" fill="none" stroke="#6366f1" stroke-width="2" />
+  <text x="185" y="25" font-size="10" fill="#6366f1" font-weight="bold">y = x³</text>
+  <!-- Curve y = 1/27 x^3 -->
+  <path d="M 20,220 C 80,180 110,120 140,120 C 170,120 200,60 260,20" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4" />
+  <text x="245" y="35" font-size="10" fill="#ef4444" font-weight="bold">y = 1/27 x³</text>
+</svg>

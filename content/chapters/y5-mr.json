@@ -1,0 +1,3906 @@
+{
+  "chapterId": "y5-mr",
+  "title": "Multiplicative Relations (A)",
+  "year": "Year 5",
+  "topics": [
+    {
+      "topicId": "y5-mr-1",
+      "code": "MA3-MR-01",
+      "title": "Multiply 2, 3, 4-digit × 1-digit",
+      "questions": [
+        {
+          "id": "y5-mr-1-q11a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(12 \\times 5\\)",
+          "options": [
+            "\\(65\\)",
+            "\\(50\\)",
+            "\\(60\\)",
+            "\\(55\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 12 by 5.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Multiply units digit.",
+              "work": "\\(2 \\times 5 = 10 \\implies 0\\text{ units, carry } 1\\)"
+            },
+            {
+              "explain": "Multiply tens digit and add carry.",
+              "work": "\\(1 \\times 5 + 1\\text{ (carry)} = 6\\)"
+            },
+            {
+              "explain": "Combine to get final product.",
+              "work": "\\(60\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-q11b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(17 \\times 6\\)",
+          "options": [
+            "\\(102\\)",
+            "\\(112\\)",
+            "\\(108\\)",
+            "\\(92\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 17 by 6.",
+          "steps": [
+            {
+              "explain": "Multiply units.",
+              "work": "\\(7 \\times 6 = 42 \\implies 2\\text{ units, carry } 4\\)"
+            },
+            {
+              "explain": "Multiply tens and add carry.",
+              "work": "\\(1 \\times 6 + 4\\text{ (carry)} = 10\\)"
+            },
+            {
+              "explain": "Combine columns.",
+              "work": "\\(102\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-q11c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(14 \\times 9\\)",
+          "options": [
+            "\\(124\\)",
+            "\\(136\\)",
+            "\\(126\\)",
+            "\\(116\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 14 by 9.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Multiply units.",
+              "work": "\\(4 \\times 9 = 36 \\implies 6\\text{ units, carry } 3\\)"
+            },
+            {
+              "explain": "Multiply tens.",
+              "work": "\\(1 \\times 9 + 3\\text{ (carry)} = 12\\)"
+            },
+            {
+              "explain": "Combine columns.",
+              "work": "\\(126\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-q11d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(38 \\times 7\\)",
+          "options": [
+            "\\(276\\)",
+            "\\(266\\)",
+            "\\(256\\)",
+            "\\(246\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 38 by 7.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Multiply units.",
+              "work": "\\(8 \\times 7 = 56 \\implies 6\\text{ units, carry } 5\\)"
+            },
+            {
+              "explain": "Multiply tens.",
+              "work": "\\(3 \\times 7 + 5\\text{ (carry)} = 21 + 5 = 26\\)"
+            },
+            {
+              "explain": "Combine columns.",
+              "work": "\\(266\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l2-q12a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(17 \\times 3\\)",
+          "options": [
+            "\\(54\\)",
+            "\\(51\\)",
+            "\\(41\\)",
+            "\\(48\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 17 by 3.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Multiply units and carry.",
+              "work": "\\(7 \\times 3 = 21 \\implies 1\\text{ units, carry } 2\\)"
+            },
+            {
+              "explain": "Multiply tens and add carry.",
+              "work": "\\(1 \\times 3 + 2 = 5\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(51\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l2-q12b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(12 \\times 8\\)",
+          "options": [
+            "\\(86\\)",
+            "\\(96\\)",
+            "\\(88\\)",
+            "\\(98\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 12 by 8.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Multiply units.",
+              "work": "\\(2 \\times 8 = 16 \\implies 6\\text{ units, carry } 1\\)"
+            },
+            {
+              "explain": "Multiply tens and add carry.",
+              "work": "\\(1 \\times 8 + 1 = 9\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(96\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l2-q12c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(16 \\times 7\\)",
+          "options": [
+            "\\(112\\)",
+            "\\(106\\)",
+            "\\(102\\)",
+            "\\(116\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 16 by 7.",
+          "steps": [
+            {
+              "explain": "Multiply units.",
+              "work": "\\(6 \\times 7 = 42 \\implies 2\\text{ units, carry } 4\\)"
+            },
+            {
+              "explain": "Multiply tens and add carry.",
+              "work": "\\(1 \\times 7 + 4 = 11\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(112\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l2-q12d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(38 \\times 4\\)",
+          "options": [
+            "\\(148\\)",
+            "\\(156\\)",
+            "\\(142\\)",
+            "\\(152\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply 38 by 4.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Multiply units.",
+              "work": "\\(8 \\times 4 = 32 \\implies 2\\text{ units, carry } 3\\)"
+            },
+            {
+              "explain": "Multiply tens.",
+              "work": "\\(3 \\times 4 + 3 = 15\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(152\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l3-q8a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(37 \\times 6\\)",
+          "options": [
+            "\\(222\\)",
+            "\\(228\\)",
+            "\\(212\\)",
+            "\\(182\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 37 by 6.",
+          "steps": [
+            {
+              "explain": "Multiply units.",
+              "work": "\\(7 \\times 6 = 42 \\implies 2\\text{ units, carry } 4\\)"
+            },
+            {
+              "explain": "Multiply tens.",
+              "work": "\\(3 \\times 6 + 4 = 22\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(222\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l3-q8b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(48 \\times 10\\)",
+          "options": [
+            "\\(4800\\)",
+            "\\(48\\)",
+            "\\(408\\)",
+            "\\(480\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiplying by 10 shifts digits to the left and adds a 0 to the units place.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Apply the rule for multiplying by 10.",
+              "work": "\\(48 \\times 10 = 480\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l4-q14a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Susan earns 138 dollars each day. How much will she earn in 5 days?",
+          "options": [
+            "690 dollars",
+            "790 dollars",
+            "680 dollars",
+            "590 dollars"
+          ],
+          "answer": 0,
+          "hint": "Multiply 138 by 5.",
+          "steps": [
+            {
+              "explain": "Express the word problem as a multiplication.",
+              "work": "\\(138 \\times 5\\)"
+            },
+            {
+              "explain": "Multiply units.",
+              "work": "\\(8 \\times 5 = 40 \\implies \\text{carry } 4\\)"
+            },
+            {
+              "explain": "Multiply tens.",
+              "work": "\\(3 \\times 5 + 4 = 19 \\implies \\text{carry } 1\\)"
+            },
+            {
+              "explain": "Multiply hundreds.",
+              "work": "\\(1 \\times 5 + 1 = 6\\)"
+            },
+            {
+              "explain": "Combine to find total earnings.",
+              "work": "\\(690\\text{ dollars}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l5-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "8 456 people paid 7 dollars each to watch a rugby league game. What was the total amount of money collected at the gate?",
+          "options": [
+            "59182 dollars",
+            "58192 dollars",
+            "59192 dollars",
+            "60192 dollars"
+          ],
+          "answer": 2,
+          "hint": "Multiply 8 456 by 7.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Set up the multiplication of the number of people by the ticket cost.",
+              "work": "\\(8456 \\times 7\\)"
+            },
+            {
+              "explain": "Multiply units: 6 x 7 = 42. Carry 4.",
+              "work": "\\(6 \\times 7 = 42 \\implies \\text{carry } 4\\)"
+            },
+            {
+              "explain": "Multiply tens: 5 x 7 = 35. Add 4 carry = 39. Carry 3.",
+              "work": "\\(5 \\times 7 + 4 = 39 \\implies \\text{carry } 3\\)"
+            },
+            {
+              "explain": "Multiply hundreds: 4 x 7 = 28. Add 3 carry = 31. Carry 3.",
+              "work": "\\(4 \\times 7 + 3 = 31 \\implies \\text{carry } 3\\)"
+            },
+            {
+              "explain": "Multiply thousands: 8 x 7 = 56. Add 3 carry = 59.",
+              "work": "\\(8 \\times 7 + 3 = 59\\)"
+            },
+            {
+              "explain": "Combine columns to find total collections.",
+              "work": "\\(59192\\text{ dollars}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l5-q8",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Betty sends (on average) 8 text messages every day. How many messages will she send in one year (365 days)?",
+          "options": [
+            "2910",
+            "3020",
+            "2920",
+            "2820"
+          ],
+          "answer": 2,
+          "hint": "Multiply 365 days by 8 messages.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Set up the multiplication of days by messages per day.",
+              "work": "\\(365 \\times 8\\)"
+            },
+            {
+              "explain": "Multiply columns: 5 x 8 = 40 (carry 4). 6 x 8 + 4 = 52 (carry 5). 3 x 8 + 5 = 29.",
+              "work": "\\(5 \\times 8 = 40\\) \\n \\(6 \\times 8 + 4 = 52\\) \\n \\(3 \\times 8 + 5 = 29\\)"
+            },
+            {
+              "explain": "Combine products to get the total messages sent.",
+              "work": "\\(2920\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l5-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A machine makes key rings. It makes 205 each morning, 137 each afternoon and 168 each evening. How many key rings will it produce in 7 days?",
+          "options": [
+            "3570",
+            "3670",
+            "3470",
+            "3560"
+          ],
+          "answer": 0,
+          "hint": "Find the production in one day first, then multiply by 7.",
+          "steps": [
+            {
+              "explain": "Calculate the total production for a single day.",
+              "work": "\\(205 + 137 + 168 = 510\\)"
+            },
+            {
+              "explain": "Multiply the daily production by 7 days.",
+              "work": "\\(510 \\times 7\\)"
+            },
+            {
+              "explain": "State the total key rings produced.",
+              "work": "\\(3570\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l5-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A bricklayer can lay 163 bricks each hour. How many bricks will he lay in a 9 hour working day?",
+          "options": [
+            "1567",
+            "1367",
+            "1467",
+            "1457"
+          ],
+          "answer": 2,
+          "hint": "Multiply 163 by 9.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Set up the multiplication of bricks per hour by working hours.",
+              "work": "\\(163 \\times 9\\)"
+            },
+            {
+              "explain": "Compute product.",
+              "work": "\\(3 \\times 9 = 27 \\implies 7\\text{ carry } 2\\) \\n \\(6 \\times 9 + 2 = 56 \\implies 6\\text{ carry } 5\\) \\n \\(1 \\times 9 + 5 = 14\\)"
+            },
+            {
+              "explain": "State the final number of bricks.",
+              "work": "\\(1467\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l5-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A farmer sold 8 cows for 275 dollars each. He paid the stock agent 227 dollars for selling them, and hired a truck for 196 dollars. How much does the farmer have left?",
+          "options": [
+            "1677 dollars",
+            "1767 dollars",
+            "1777 dollars",
+            "1877 dollars"
+          ],
+          "answer": 2,
+          "hint": "Find the total revenue from the cows, then subtract the agent fees and truck hire.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Calculate the total revenue from selling 8 cows.",
+              "work": "\\(275 \\times 8 = 2200\\text{ dollars}\\)"
+            },
+            {
+              "explain": "Add the expenses together.",
+              "work": "\\(227 + 196 = 423\\text{ dollars}\\)"
+            },
+            {
+              "explain": "Subtract expenses from total revenue.",
+              "work": "\\(2200 - 423\\)"
+            },
+            {
+              "explain": "State the final net amount left.",
+              "work": "\\(1777\\text{ dollars}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-l5-q12",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using a quick method, find the sum of:\n\\(6+7+8+9+6+7+8+9+6+7+8+9+6+7+8+9+6+7+8+9\\)",
+          "options": [
+            "\\(140\\)",
+            "\\(160\\)",
+            "\\(180\\)",
+            "\\(150\\)"
+          ],
+          "answer": 3,
+          "hint": "Group the repeating sequence (6+7+8+9) and multiply by its count.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Identify the repeating sequence and count its occurrences.",
+              "work": "\\(6+7+8+9 \\text{ is repeated } 5 \\text{ times}\\)"
+            },
+            {
+              "explain": "Calculate the sum of a single group.",
+              "work": "\\(6 + 7 + 8 + 9 = 30\\)"
+            },
+            {
+              "explain": "Multiply the sum of one group by the number of repetitions.",
+              "work": "\\(30 \\times 5\\)"
+            },
+            {
+              "explain": "State the final sum.",
+              "work": "\\(150\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-hard-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Steve is training for a marathon and his goal is to cycle \\(1\\ 200\\text{ km}\\) every week. In the first 6 days he averages \\(162\\text{ km}\\).\n\nHow far will he have to cycle on the \\(7\\text{th}\\) day to achieve his goal?",
+          "options": [
+            "\\(218\\text{ km}\\)",
+            "\\(228\\text{ km}\\)",
+            "\\(238\\text{ km}\\)",
+            "\\(972\\text{ km}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the total distance cycled in 6 days, then subtract from the weekly goal.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Calculate the total distance Steve cycled in the first 6 days by multiplying the daily average by 6.",
+              "work": "\\(6 \\times 162 = 972\\text{ km}\\)"
+            },
+            {
+              "explain": "Subtract the distance cycled so far from the weekly goal of 1 200 km.",
+              "work": "\\(1\\ 200 - 972 = 228\\text{ km}\\)"
+            },
+            {
+              "explain": "Conclude the distance Steve needs to cycle on the 7th day.",
+              "work": "\\(228\\text{ km}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-hard-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Wendy earns \\(165\\text{ dollars}\\) each day for working a five-day week. She has to pay \\(142\\text{ dollars}\\) in tax, \\(245\\text{ dollars}\\) in rent, and \\(115\\text{ dollars}\\) for food.\n\nHow much money does she have left over at the end of the week?",
+          "options": [
+            "\\(313\\text{ dollars}\\)",
+            "\\(323\\text{ dollars}\\)",
+            "\\(333\\text{ dollars}\\)",
+            "\\(502\\text{ dollars}\\)"
+          ],
+          "answer": 1,
+          "hint": "Calculate total weekly earnings, add up all expenses, and find the difference.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Calculate Wendy's total earnings for the 5-day working week.",
+              "work": "\\(5 \\times 165\\text{ dollars} = 825\\text{ dollars}\\)"
+            },
+            {
+              "explain": "Sum all of Wendy's expenses (tax, rent, and food).",
+              "work": "\\(142 + 245 + 115 = 502\\text{ dollars}\\)"
+            },
+            {
+              "explain": "Subtract the total expenses from the total earnings to find the money left over.",
+              "work": "\\(825 - 502 = 323\\text{ dollars}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-hard-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The average of \\(3\\) numbers is \\(9\\). A fourth number is added to the group, and the new average is \\(11\\).\n\nWhat is the fourth number?",
+          "options": [
+            "\\(15\\)",
+            "\\(17\\)",
+            "\\(19\\)",
+            "\\(20\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the sum of the numbers before and after adding the fourth number.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Find the sum of the first 3 numbers by multiplying their average by 3.",
+              "work": "\\(3 \\times 9 = 27\\)"
+            },
+            {
+              "explain": "Find the sum of the 4 numbers by multiplying their new average by 4.",
+              "work": "\\(4 \\times 11 = 44\\)"
+            },
+            {
+              "explain": "Subtract the sum of the first 3 numbers from the sum of all 4 numbers to find the fourth number.",
+              "work": "\\(44 - 27 = 17\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-hard-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Rebecca had a pair of rabbits which had \\(8\\) baby rabbits: \\(5\\) female and \\(3\\) male. By the following summer, every female rabbit had given birth to \\(4\\) new baby rabbits. Providing that no rabbits died, how many rabbits does Rebecca have in total by the summer?",
+          "options": [
+            "\\(30\\)",
+            "\\(34\\)",
+            "\\(38\\)",
+            "\\(24\\)"
+          ],
+          "answer": 1,
+          "hint": "Count the total number of female rabbits first, then calculate the new births and total rabbits.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Count the total number of female rabbits. This includes the original mother rabbit and the 5 female babies.",
+              "work": "\\(1\\text{ mother} + 5\\text{ female babies} = 6\\text{ female rabbits}\\)"
+            },
+            {
+              "explain": "Calculate the number of new baby rabbits born in the summer (4 babies per female).",
+              "work": "\\(6 \\times 4 = 24\\text{ new baby rabbits}\\)"
+            },
+            {
+              "explain": "Calculate the total number of rabbits: original pair (2) + first litter (8) + new summer births (24).",
+              "work": "\\(2 + 8 + 24 = 34\\text{ rabbits}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-1-hard-q13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "George has \\(4\\) shirts, \\(3\\) belts, and \\(5\\) ties.\n\nHow many different groupings of a shirt, a belt, and a tie can he wear?",
+          "options": [
+            "\\(60\\)",
+            "\\(12\\)",
+            "\\(45\\)",
+            "\\(50\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the fundamental counting principle: multiply the number of options for shirts, belts, and ties.",
+          "steps": [
+            {
+              "explain": "Identify the number of choices for each item of clothing.",
+              "work": "\\text{Shirts}: 4,\\ \\text{Belts}: 3,\\ \\text{Ties}: 5"
+            },
+            {
+              "explain": "Multiply the number of choices for each category to find the total number of unique combinations.",
+              "work": "\\text{Total combinations} = 4 \\times 3 \\times 5\\"
+            },
+            {
+              "explain": "Evaluate the multiplication.",
+              "work": "\\(4 \\times 3 \\times 5 = 12 \\times 5 = 60\\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y5-mr-2",
+      "code": "MA3-MR-01",
+      "title": "Multiply 2 and 3-digit × 2-digit",
+      "questions": [
+        {
+          "id": "y5-mr-2-l3-q8c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(59 \\times 13\\)",
+          "options": [
+            "\\(747\\)",
+            "\\(767\\)",
+            "\\(777\\)",
+            "\\(757\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 59 by 3, then 59 by 10, and add the results.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Multiply 59 by the units digit 3.",
+              "work": "\\(59 \\times 3 = 177\\)"
+            },
+            {
+              "explain": "Multiply 59 by the tens digit 10.",
+              "work": "\\(59 \\times 10 = 590\\)"
+            },
+            {
+              "explain": "Sum the partial products.",
+              "work": "\\(177 + 590\\)"
+            },
+            {
+              "explain": "State final product.",
+              "work": "\\(767\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-l3-q8d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the product:\n\\(68 \\times 24\\)",
+          "options": [
+            "\\(1622\\)",
+            "\\(1642\\)",
+            "\\(1632\\)",
+            "\\(1532\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 68 by 4, then 68 by 20, and add.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Multiply 68 by 4.",
+              "work": "\\(68 \\times 4 = 272\\)"
+            },
+            {
+              "explain": "Multiply 68 by 20.",
+              "work": "\\(68 \\times 20 = 1360\\)"
+            },
+            {
+              "explain": "Sum.",
+              "work": "\\(272 + 1360\\)"
+            },
+            {
+              "explain": "State final product.",
+              "work": "\\(1632\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-l4-q9a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(73 \\times 14\\)",
+          "options": [
+            "\\(922\\)",
+            "\\(1122\\)",
+            "\\(1012\\)",
+            "\\(1022\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply 73 by 4, then 73 by 10, and add the results.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Multiply 73 by the units digit 4.",
+              "work": "\\(73 \\times 4 = 292\\)"
+            },
+            {
+              "explain": "Multiply 73 by the tens digit 10.",
+              "work": "\\(73 \\times 10 = 730\\)"
+            },
+            {
+              "explain": "Add the partial products.",
+              "work": "\\(292 + 730 = 1022\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-l4-q9b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(67 \\times 18\\)",
+          "options": [
+            "\\(1206\\)",
+            "\\(1106\\)",
+            "\\(1196\\)",
+            "\\(1216\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 67 by 8, then 67 by 10, and add.",
+          "steps": [
+            {
+              "explain": "Multiply 67 by 8.",
+              "work": "\\(67 \\times 8 = 536\\)"
+            },
+            {
+              "explain": "Multiply 67 by 10.",
+              "work": "\\(67 \\times 10 = 670\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(536 + 670 = 1206\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-l4-q9c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(45 \\times 23\\)",
+          "options": [
+            "\\(1025\\)",
+            "\\(1135\\)",
+            "\\(935\\)",
+            "\\(1035\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply 45 by 3, then 45 by 20, and add.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Multiply 45 by 3.",
+              "work": "\\(45 \\times 3 = 135\\)"
+            },
+            {
+              "explain": "Multiply 45 by 20.",
+              "work": "\\(45 \\times 20 = 900\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(135 + 900 = 1035\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-l4-q9d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(89 \\times 67\\)",
+          "options": [
+            "\\(5863\\)",
+            "\\(5953\\)",
+            "\\(5963\\)",
+            "\\(6063\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 89 by 7, then 89 by 60, and add.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Multiply 89 by 7.",
+              "work": "\\(89 \\times 7 = 623\\)"
+            },
+            {
+              "explain": "Multiply 89 by 60.",
+              "work": "\\(89 \\times 60 = 5340\\)"
+            },
+            {
+              "explain": "Add.",
+              "work": "\\(623 + 5340 = 5963\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-hard-q4c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Firstly, round off the numbers to the nearest ten, and then estimate the final answer:\n\\(68 \\times 43\\)",
+          "options": [
+            "\\(2\\ 800\\)",
+            "\\(2\\ 400\\)",
+            "\\(2\\ 700\\)",
+            "\\(3\\ 200\\)"
+          ],
+          "answer": 0,
+          "hint": "Round 68 and 43 to the nearest ten before multiplying.",
+          "steps": [
+            {
+              "explain": "Round 68 to the nearest ten.",
+              "work": "\\(68 \\approx 70\\)"
+            },
+            {
+              "explain": "Round 43 to the nearest ten.",
+              "work": "\\(43 \\approx 40\\)"
+            },
+            {
+              "explain": "Multiply the rounded numbers.",
+              "work": "\\(70 \\times 40 = 2\\ 800\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-hard-q4e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Firstly, round off the numbers to the nearest ten, and then estimate the final answer:\n\\(153 \\times 59\\)",
+          "options": [
+            "\\(9\\ 000\\)",
+            "\\(9\\ 500\\)",
+            "\\(8\\ 000\\)",
+            "\\(10\\ 000\\)"
+          ],
+          "answer": 0,
+          "hint": "Round 153 and 59 to the nearest ten before multiplying.",
+          "steps": [
+            {
+              "explain": "Round 153 to the nearest ten.",
+              "work": "\\(153 \\approx 150\\)"
+            },
+            {
+              "explain": "Round 59 to the nearest ten.",
+              "work": "\\(59 \\approx 60\\)"
+            },
+            {
+              "explain": "Multiply the rounded numbers.",
+              "work": "\\(150 \\times 60 = 9\\ 000\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-hard-q8a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Multiply the numbers using column multiplication:\n\\(46 \\times 34\\)",
+          "options": [
+            "\\(1\\ 564\\)",
+            "\\(1\\ 464\\)",
+            "\\(1\\ 554\\)",
+            "\\(1\\ 664\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 46 by 4 first, then multiply 46 by 30 and add the results.",
+          "steps": [
+            {
+              "explain": "Multiply 46 by 4 units.",
+              "work": "\\(46 \\times 4 = 184\\)"
+            },
+            {
+              "explain": "Multiply 46 by 3 tens (30).",
+              "work": "\\(46 \\times 30 = 1\\ 380\\)"
+            },
+            {
+              "explain": "Add the two partial products together.",
+              "work": "\\(184 + 1\\ 380 = 1\\ 564\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-hard-q8b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Multiply the numbers using column multiplication:\n\\(67 \\times 52\\)",
+          "options": [
+            "\\(3\\ 384\\)",
+            "\\(3\\ 484\\)",
+            "\\(3\\ 474\\)",
+            "\\(3\\ 584\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 67 by 2 first, then multiply 67 by 50 and add the results.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Multiply 67 by 2 units.",
+              "work": "\\(67 \\times 2 = 134\\)"
+            },
+            {
+              "explain": "Multiply 67 by 5 tens (50).",
+              "work": "\\(67 \\times 50 = 3\\ 350\\)"
+            },
+            {
+              "explain": "Add the two partial products together.",
+              "work": "\\(134 + 3\\ 350 = 3\\ 484\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-hard-q8c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Multiply the numbers using column multiplication:\n\\(235 \\times 47\\)",
+          "options": [
+            "\\(11\\ 045\\)",
+            "\\(10\\ 945\\)",
+            "\\(11\\ 145\\)",
+            "\\(10\\ 845\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 235 by 7 first, then multiply 235 by 40 and add the results.",
+          "steps": [
+            {
+              "explain": "Multiply 235 by 7 units.",
+              "work": "\\(235 \\times 7 = 1\\ 645\\)"
+            },
+            {
+              "explain": "Multiply 235 by 4 tens (40).",
+              "work": "\\(235 \\times 40 = 9\\ 400\\)"
+            },
+            {
+              "explain": "Add the two partial products together.",
+              "work": "\\(1\\ 645 + 9\\ 400 = 11\\ 045\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-hard-q8d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Multiply the numbers using column multiplication:\n\\(614 \\times 72\\)",
+          "options": [
+            "\\(44\\ 108\\)",
+            "\\(44\\ 208\\)",
+            "\\(43\\ 208\\)",
+            "\\(45\\ 208\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 614 by 2 first, then multiply 614 by 70 and add the results.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Multiply 614 by 2 units.",
+              "work": "\\(614 \\times 2 = 1\\ 228\\)"
+            },
+            {
+              "explain": "Multiply 614 by 7 tens (70).",
+              "work": "\\(614 \\times 70 = 42\\ 980\\)"
+            },
+            {
+              "explain": "Add the two partial products together.",
+              "work": "\\(1\\ 228 + 42\\ 980 = 44\\ 208\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-hard-q7a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the product:\n\\(246 \\times 42\\)",
+          "options": [
+            "\\(10\\ 332\\)",
+            "\\(10\\ 232\\)",
+            "\\(10\\ 432\\)",
+            "\\(9\\ 832\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 246 by 2 first, then by 40, and add the products.",
+          "steps": [
+            {
+              "explain": "Multiply 246 by 2 units.",
+              "work": "\\(246 \\times 2 = 492\\)"
+            },
+            {
+              "explain": "Multiply 246 by 4 tens (40).",
+              "work": "\\(246 \\times 40 = 9\\ 840\\)"
+            },
+            {
+              "explain": "Add the two partial products to find the final product.",
+              "work": "\\(492 + 9\\ 840 = 10\\ 332\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-hard-q7b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the product:\n\\(734 \\times 53\\)",
+          "options": [
+            "\\(38\\ 902\\)",
+            "\\(38\\ 802\\)",
+            "\\(39\\ 002\\)",
+            "\\(37\\ 902\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 734 by 3 first, then by 50, and add the products.",
+          "steps": [
+            {
+              "explain": "Multiply 734 by 3 units.",
+              "work": "\\(734 \\times 3 = 2\\ 202\\)"
+            },
+            {
+              "explain": "Multiply 734 by 5 tens (50).",
+              "work": "\\(734 \\times 50 = 36\\ 700\\)"
+            },
+            {
+              "explain": "Add the two partial products to find the final product.",
+              "work": "\\(2\\ 202 + 36\\ 700 = 38\\ 902\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-hard-q7c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the product:\n\\(1\\ 482 \\times 26\\)",
+          "options": [
+            "\\(38\\ 532\\)",
+            "\\(38\\ 432\\)",
+            "\\(37\\ 532\\)",
+            "\\(39\\ 532\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 1 482 by 6 first, then by 20, and add the products.",
+          "steps": [
+            {
+              "explain": "Multiply 1 482 by 6 units.",
+              "work": "\\(1\\ 482 \\times 6 = 8\\ 892\\)"
+            },
+            {
+              "explain": "Multiply 1 482 by 2 tens (20).",
+              "work": "\\(1\\ 482 \\times 20 = 29\\ 640\\)"
+            },
+            {
+              "explain": "Add the two partial products to find the final product.",
+              "work": "\\(8\\ 892 + 29\\ 640 = 38\\ 532\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-2-hard-q7d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the product:\n\\(12\\ 813 \\times 35\\)",
+          "options": [
+            "\\(448\\ 455\\)",
+            "\\(448\\ 355\\)",
+            "\\(447\\ 455\\)",
+            "\\(458\\ 455\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 12 813 by 5 first, then by 30, and add the products.",
+          "steps": [
+            {
+              "explain": "Multiply 12 813 by 5 units.",
+              "work": "\\(12\\ 813 \\times 5 = 64\\ 065\\)"
+            },
+            {
+              "explain": "Multiply 12 813 by 3 tens (30).",
+              "work": "\\(12\\ 813 \\times 30 = 384\\ 390\\)"
+            },
+            {
+              "explain": "Add the two partial products to find the final product.",
+              "work": "\\(64\\ 065 + 384\\ 390 = 448\\ 455\\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y5-mr-3",
+      "code": "MA3-MR-01",
+      "title": "Factors and products",
+      "questions": [
+        {
+          "id": "y5-mr-3-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List all the factors of \\(6\\).",
+          "options": [
+            "\\(\\{1, 2, 3, 4, 6\\}\\)",
+            "\\(\\{1, 6\\}\\)",
+            "\\(\\{1, 2, 3, 6\\}\\)",
+            "\\(\\{2, 3\\}\\)"
+          ],
+          "answer": 2,
+          "hint": "Find divisors of 6.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Identify factor pairs.",
+              "work": "\\(1 \\times 6 = 6\\) \\n \\(2 \\times 3 = 6\\)"
+            },
+            {
+              "explain": "List the factors in order.",
+              "work": "\\(1, 2, 3, 6\\)"
+            },
+            {
+              "explain": "State the complete factors list.",
+              "work": "\\(\\{1, 2, 3, 6\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-q6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List all the factors of \\(10\\).",
+          "options": [
+            "\\(\\{1, 10\\}\\)",
+            "\\(\\{1, 2, 5, 10\\}\\)",
+            "\\(\\{1, 2, 4, 5, 10\\}\\)",
+            "\\(\\{2, 5\\}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find divisors of 10.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Identify factor pairs.",
+              "work": "\\(1 \\times 10 = 10\\) \\n \\(2 \\times 5 = 10\\)"
+            },
+            {
+              "explain": "State factors list.",
+              "work": "\\(\\{1, 2, 5, 10\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-q6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List all the factors of \\(20\\).",
+          "options": [
+            "\\(\\{1, 2, 4, 5, 10, 20\\}\\)",
+            "\\(\\{1, 20\\}\\)",
+            "\\(\\{2, 4, 5, 10\\}\\)",
+            "\\(\\{1, 2, 5, 10, 20\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find divisors of 20.",
+          "steps": [
+            {
+              "explain": "Identify factor pairs.",
+              "work": "\\(1 \\times 20 = 20\\) \\n \\(2 \\times 10 = 20\\) \\n \\(4 \\times 5 = 20\\)"
+            },
+            {
+              "explain": "State the complete factors set.",
+              "work": "\\(\\{1, 2, 4, 5, 10, 20\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-q6d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List all the factors of the prime number \\(13\\).",
+          "options": [
+            "\\(\\{13\\}\\)",
+            "\\(\\{1, 13\\}\\)",
+            "\\(\\{1, 3, 13\\}\\)",
+            "\\(\\{1, 2, 13\\}\\)"
+          ],
+          "answer": 1,
+          "hint": "Identify prime factors.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Since 13 is prime, it has no divisor pairs other than 1 and itself.",
+              "work": "\\(1 \\times 13 = 13\\)"
+            },
+            {
+              "explain": "State factors.",
+              "work": "\\(\\{1, 13\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-q7a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the first four multiples of \\(5\\).",
+          "options": [
+            "\\(\\{5, 10, 15, 25\\}\\)",
+            "\\(\\{1, 5, 10, 15\\}\\)",
+            "\\(\\{5, 10, 15, 20\\}\\)",
+            "\\(\\{10, 15, 20, 25\\}\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 5 by 1, 2, 3, 4.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Calculate multiples.",
+              "work": "\\(5 \\times 1 = 5\\) \\n \\(5 \\times 2 = 10\\) \\n \\(5 \\times 3 = 15\\) \\n \\(5 \\times 4 = 20\\)"
+            },
+            {
+              "explain": "State set.",
+              "work": "\\(\\{5, 10, 15, 20\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-q7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the first six multiples of \\(10\\).",
+          "options": [
+            "\\(\\{10, 20, 30, 40, 50, 60\\}\\)",
+            "\\(\\{10, 20, 30, 40, 50, 70\\}\\)",
+            "\\(\\{20, 30, 40, 50, 60, 70\\}\\)",
+            "\\(\\{1, 10, 20, 30, 40, 50\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 10 by integers 1 to 6.",
+          "steps": [
+            {
+              "explain": "Multiply values.",
+              "work": "\\(10, 20, 30, 40, 50, 60\\)"
+            },
+            {
+              "explain": "State set.",
+              "work": "\\(\\{10, 20, 30, 40, 50, 60\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-q7c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the multiples of \\(3\\) that are between \\(10\\) and \\(22\\).",
+          "options": [
+            "\\(\\{9, 12, 15, 18, 21\\}\\)",
+            "\\(\\{12, 15, 18, 21\\}\\)",
+            "\\(\\{10, 12, 15, 18, 21\\}\\)",
+            "\\(\\{12, 15, 18, 21, 24\\}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find multiples of 3 between 10 and 22.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "List the general multiples.",
+              "work": "\\(3, 6, 9, 12, 15, 18, 21, 24, \\dots\\)"
+            },
+            {
+              "explain": "Select values between 10 and 22.",
+              "work": "\\(12, 15, 18, 21\\)"
+            },
+            {
+              "explain": "State set.",
+              "work": "\\(\\{12, 15, 18, 21\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-q13a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the product of \\(3\\) and \\(4\\).",
+          "options": [
+            "\\(9\\)",
+            "\\(7\\)",
+            "\\(1\\)",
+            "\\(12\\)"
+          ],
+          "answer": 3,
+          "hint": "Product means multiplication.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Multiply the two numbers.",
+              "work": "\\(3 \\times 4\\)"
+            },
+            {
+              "explain": "State product.",
+              "work": "\\(3 \\times 4 = 12\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-q13f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of:\n\\(5^2\\)",
+          "options": [
+            "\\(50\\)",
+            "\\(25\\)",
+            "\\(10\\)",
+            "\\(7\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 5 by itself.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Express exponentiation as repeated multiplication.",
+              "work": "\\(5 \\times 5\\)"
+            },
+            {
+              "explain": "Perform calculation.",
+              "work": "\\(5 \\times 5 = 25\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l2-q7a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List all the factors of \\(8\\).",
+          "options": [
+            "\\(\\{1, 8\\}\\)",
+            "\\(\\{1, 2, 4, 6, 8\\}\\)",
+            "\\(\\{2, 4\\}\\)",
+            "\\(\\{1, 2, 4, 8\\}\\)"
+          ],
+          "answer": 3,
+          "hint": "Find divisors of 8.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Identify factor pairs.",
+              "work": "\\(1 \\times 8 = 8\\) \\n \\(2 \\times 4 = 8\\)"
+            },
+            {
+              "explain": "State the complete factors set.",
+              "work": "\\(\\{1, 2, 4, 8\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l2-q7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List all the factors of \\(15\\).",
+          "options": [
+            "\\(\\{3, 5\\}\\)",
+            "\\(\\{1, 3, 5, 15\\}\\)",
+            "\\(\\{1, 15\\}\\)",
+            "\\(\\{1, 3, 5, 9, 15\\}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find divisors.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Identify factor pairs.",
+              "work": "\\(1 \\times 15 = 15\\) \\n \\(3 \\times 5 = 15\\)"
+            },
+            {
+              "explain": "State factors set.",
+              "work": "\\(\\{1, 3, 5, 15\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l2-q7c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List all the factors of \\(18\\).",
+          "options": [
+            "\\(\\{2, 3, 6, 9\\}\\)",
+            "\\(\\{1, 2, 3, 6, 9, 18\\}\\)",
+            "\\(\\{1, 2, 9, 18\\}\\)",
+            "\\(\\{1, 18\\}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find divisors.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Identify factor pairs.",
+              "work": "\\(1 \\times 18 = 18\\) \\n \\(2 \\times 9 = 18\\) \\n \\(3 \\times 6 = 18\\)"
+            },
+            {
+              "explain": "State factors.",
+              "work": "\\(\\{1, 2, 3, 6, 9, 18\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l2-q7d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List all the factors of \\(24\\).",
+          "options": [
+            "\\(\\{1, 2, 4, 6, 12, 24\\}\\)",
+            "\\(\\{1, 24\\}\\)",
+            "\\(\\{1, 2, 3, 4, 6, 8, 12, 24\\}\\)",
+            "\\(\\{2, 3, 4, 6, 8, 12\\}\\)"
+          ],
+          "answer": 2,
+          "hint": "Find divisor pairs.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Identify factor pairs.",
+              "work": "\\(1 \\times 24 = 24\\) \\n \\(2 \\times 12 = 24\\) \\n \\(3 \\times 8 = 24\\) \\n \\(4 \\times 6 = 24\\)"
+            },
+            {
+              "explain": "State factors.",
+              "work": "\\(\\{1, 2, 3, 4, 6, 8, 12, 24\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l2-q7e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List all the factors of \\(30\\).",
+          "options": [
+            "\\(\\{1, 30\\}\\)",
+            "\\(\\{1, 2, 3, 5, 6, 10, 15, 30\\}\\)",
+            "\\(\\{1, 2, 5, 6, 15, 30\\}\\)",
+            "\\(\\{2, 3, 5, 6, 10, 15\\}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find divisor pairs.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Identify factor pairs.",
+              "work": "\\(1 \\times 30 = 30\\) \\n \\(2 \\times 15 = 30\\) \\n \\(3 \\times 10 = 30\\) \\n \\(5 \\times 6 = 30\\)"
+            },
+            {
+              "explain": "State factors.",
+              "work": "\\(\\{1, 2, 3, 5, 6, 10, 15, 30\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l2-q8a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the first five multiples of \\(4\\).",
+          "options": [
+            "\\(\\{4, 8, 12, 16, 24\\}\\)",
+            "\\(\\{8, 12, 16, 20, 24\\}\\)",
+            "\\(\\{4, 8, 12, 16, 20\\}\\)",
+            "\\(\\{1, 4, 8, 12, 16\\}\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 4 by integers 1 to 5.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Multiply values.",
+              "work": "\\(4, 8, 12, 16, 20\\)"
+            },
+            {
+              "explain": "State set.",
+              "work": "\\(\\{4, 8, 12, 16, 20\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l2-q8b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the first four multiples of \\(6\\).",
+          "options": [
+            "\\(\\{6, 12, 18, 30\\}\\)",
+            "\\(\\{6, 12, 18, 24\\}\\)",
+            "\\(\\{1, 6, 12, 18\\}\\)",
+            "\\(\\{12, 18, 24, 30\\}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 6 by 1, 2, 3, 4.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Multiply values.",
+              "work": "\\(6, 12, 18, 24\\)"
+            },
+            {
+              "explain": "State set.",
+              "work": "\\(\\{6, 12, 18, 24\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l2-q8c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "List the multiples of \\(7\\) that are between \\(10\\) and \\(30\\).",
+          "options": [
+            "\\(\\{14, 21, 28\\}\\)",
+            "\\(\\{7, 14, 21, 28\\}\\)",
+            "\\(\\{10, 14, 21, 28\\}\\)",
+            "\\(\\{14, 21, 28, 35\\}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find multiples of 7 between 10 and 30.",
+          "steps": [
+            {
+              "explain": "List multiples of 7.",
+              "work": "\\(7, 14, 21, 28, 35, \\dots\\)"
+            },
+            {
+              "explain": "Select values in the range.",
+              "work": "\\(14, 21, 28\\)"
+            },
+            {
+              "explain": "State set.",
+              "work": "\\(\\{14, 21, 28\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l2-q14c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the product of \\(5\\) and \\(8\\).",
+          "options": [
+            "\\(40\\)",
+            "\\(35\\)",
+            "\\(13\\)",
+            "\\(45\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 5 by 8.",
+          "steps": [
+            {
+              "explain": "Multiply values.",
+              "work": "\\(5 \\times 8 = 40\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l2-q14f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of:\n\\(8\\text{ squared}\\)",
+          "options": [
+            "\\(16\\)",
+            "\\(56\\)",
+            "\\(80\\)",
+            "\\(64\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply 8 by itself.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Translate the term 'squared'.",
+              "work": "\\(8^2 = 8 \\times 8\\)"
+            },
+            {
+              "explain": "Perform calculation.",
+              "work": "\\(8 \\times 8 = 64\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l4-q12a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the product of \\(8\\) and \\(9\\).",
+          "options": [
+            "\\(64\\)",
+            "\\(17\\)",
+            "\\(72\\)",
+            "\\(81\\)"
+          ],
+          "answer": 2,
+          "hint": "Product means multiplication.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Multiply the two numbers.",
+              "work": "\\(8 \\times 9 = 72\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l4-q12e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of:\n\\(9\\text{ squared}\\)",
+          "options": [
+            "\\(18\\)",
+            "\\(81\\)",
+            "\\(99\\)",
+            "\\(72\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 9 by itself.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Write out the square computation.",
+              "work": "\\(9^2 = 9 \\times 9\\)"
+            },
+            {
+              "explain": "Calculate the value.",
+              "work": "\\(9 \\times 9 = 81\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l4-q12f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of:\n\\(2\\text{ cubed}\\)",
+          "options": [
+            "\\(9\\)",
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(4\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 2 by itself three times: 2 x 2 x 2.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Express exponentiation as repeated multiplication.",
+              "work": "\\(2^3 = 2 \\times 2 \\times 2\\)"
+            },
+            {
+              "explain": "Perform calculation.",
+              "work": "\\(2 \\times 2 \\times 2 = 8\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-l5-q13",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find two numbers that multiply to give \\(40\\), and also add up to give \\(13\\).",
+          "options": [
+            "\\(\\{2, 20\\}\\)",
+            "\\(\\{5, 8\\}\\)",
+            "\\(\\{4, 10\\}\\)",
+            "\\(\\{6, 7\\}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find factors of 40 that sum to 13.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "List the factor pairs of 40.",
+              "work": "\\((1, 40), (2, 20), (4, 10), (5, 8)\\)"
+            },
+            {
+              "explain": "Calculate the sum of each factor pair to find which equals 13.",
+              "work": "\\(1+40=41\\) \\n \\(2+20=22\\) \\n \\(4+10=14\\) \\n \\(5+8=13\\)"
+            },
+            {
+              "explain": "Identify the correct pair.",
+              "work": "\\(\\{5, 8\\}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-hard-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Peter, Steve, and Robert play bowls regularly. Peter plays every \\(3\\text{rd}\\) day, Steve plays every \\(5\\text{th}\\) day, and Robert plays every \\(6\\text{th}\\) day. They all last played bowls together on the same day on the \\(10\\text{th}\\) of June. In how many days will they all play bowls on the same day again?",
+          "options": [
+            "\\(15\\text{ days}\\)",
+            "\\(30\\text{ days}\\)",
+            "\\(60\\text{ days}\\)",
+            "\\(90\\text{ days}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the lowest common multiple (LCM) of 3, 5, and 6.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Identify the intervals for each player and plan to find the Lowest Common Multiple (LCM).",
+              "work": "\\(\\text{Peter}: 3,\\ \\text{Steve}: 5,\\ \\text{Robert}: 6\\)"
+            },
+            {
+              "explain": "Find the multiples of 3, 5, and 6.",
+              "work": "\\(\\text{Multiples of 3}: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, \\dots\\) \\n \\(\\text{Multiples of 5}: 5, 10, 15, 20, 25, 30, \\dots\\) \\n \\(\\text{Multiples of 6}: 6, 12, 18, 24, 30, \\dots\\)"
+            },
+            {
+              "explain": "Determine the smallest multiple common to all three lists.",
+              "work": "\\(\\text{LCM}(3, 5, 6) = 30\\)"
+            },
+            {
+              "explain": "State the number of days until they play together again.",
+              "work": "\\(30\\text{ days}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-hard-q4a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the Highest Common Factor (HCF) of the following pair of numbers:\n\\(36\\) and \\(54\\)",
+          "options": [
+            "\\(18\\)",
+            "\\(9\\)",
+            "\\(6\\)",
+            "\\(12\\)"
+          ],
+          "answer": 0,
+          "hint": "List the factors of both numbers and find the largest factor they share.",
+          "steps": [
+            {
+              "explain": "List all the factors of 36.",
+              "work": "\\text{Factors of 36}: 1, 2, 3, 4, 6, 9, 12, 18, 36"
+            },
+            {
+              "explain": "List all the factors of 54.",
+              "work": "\\text{Factors of 54}: 1, 2, 3, 6, 9, 18, 27, 54"
+            },
+            {
+              "explain": "Identify the common factors and find the highest one.",
+              "work": "\\text{Common factors}: \\{1, 2, 3, 6, 9, 18\\} \\implies \\text{HCF} = 18"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-hard-q4b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the Highest Common Factor (HCF) of the following pair of numbers:\n\\(24\\) and \\(36\\)",
+          "options": [
+            "\\(6\\)",
+            "\\(12\\)",
+            "\\(8\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "hint": "List the factors of both numbers and find the largest factor they share.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "List all the factors of 24.",
+              "work": "\\text{Factors of 24}: 1, 2, 3, 4, 6, 8, 12, 24"
+            },
+            {
+              "explain": "List all the factors of 36.",
+              "work": "\\text{Factors of 36}: 1, 2, 3, 4, 6, 9, 12, 18, 36"
+            },
+            {
+              "explain": "Identify the common factors and find the highest one.",
+              "work": "\\text{Common factors}: \\{1, 2, 3, 4, 6, 12\\} \\implies \\text{HCF} = 12"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-hard-q4c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the Highest Common Factor (HCF) of the following pair of numbers:\n\\(120\\) and \\(180\\)",
+          "options": [
+            "\\(30\\)",
+            "\\(60\\)",
+            "\\(40\\)",
+            "\\(20\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the greatest factor that divides both 120 and 180 evenly.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "List the common factors of 120 and 180, or find their prime factorisations.",
+              "work": "\\(120 = 2^3 \\times 3 \\times 5\\) \\n \\(180 = 2^2 \\times 3^2 \\times 5\\)"
+            },
+            {
+              "explain": "Multiply the lowest power of the common prime factors.",
+              "work": "\\(\\text{HCF} = 2^2 \\times 3^1 \\times 5^1\\)"
+            },
+            {
+              "explain": "Evaluate the product.",
+              "work": "\\(4 \\times 3 \\times 5 = 60\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-hard-q4d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the Highest Common Factor (HCF) of the following pair of numbers:\n\\(96\\) and \\(144\\)",
+          "options": [
+            "\\(24\\)",
+            "\\(48\\)",
+            "\\(12\\)",
+            "\\(16\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the greatest factor that divides both 96 and 144 evenly.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "List the prime factorisation for both numbers.",
+              "work": "\\(96 = 2^5 \\times 3\\) \\n \\(144 = 2^4 \\times 3^2\\)"
+            },
+            {
+              "explain": "Identify the lowest power of common prime factors.",
+              "work": "\\(\\text{HCF} = 2^4 \\times 3^1\\)"
+            },
+            {
+              "explain": "Evaluate the product.",
+              "work": "\\(16 \\times 3 = 48\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-hard-q5a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the Lowest Common Multiple (LCM) of the following pair of numbers:\n\\(8\\) and \\(12\\)",
+          "options": [
+            "\\(24\\)",
+            "\\(16\\)",
+            "\\(48\\)",
+            "\\(36\\)"
+          ],
+          "answer": 0,
+          "hint": "List the multiples of both numbers and find the smallest multiple they share.",
+          "steps": [
+            {
+              "explain": "List the first few multiples of 8.",
+              "work": "\\text{Multiples of 8}: 8, 16, 24, 32, 40, 48, \\dots"
+            },
+            {
+              "explain": "List the first few multiples of 12.",
+              "work": "\\text{Multiples of 12}: 12, 24, 36, 48, \\dots"
+            },
+            {
+              "explain": "Identify the smallest multiple common to both lists.",
+              "work": "\\(\\text{LCM}(8, 12) = 24\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-hard-q5b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the Lowest Common Multiple (LCM) of the following pair of numbers:\n\\(20\\) and \\(35\\)",
+          "options": [
+            "\\(70\\)",
+            "\\(100\\)",
+            "\\(140\\)",
+            "\\(180\\)"
+          ],
+          "answer": 2,
+          "hint": "List the multiples or use prime factors to find the smallest common multiple.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Write the prime factorisations of 20 and 35.",
+              "work": "\\(20 = 2^2 \\times 5\\) \\n \\(35 = 5 \\times 7\\)"
+            },
+            {
+              "explain": "Identify the highest power of each prime factor involved.",
+              "work": "\\(\\text{LCM} = 2^2 \\times 5^1 \\times 7^1\\)"
+            },
+            {
+              "explain": "Evaluate the product.",
+              "work": "\\(4 \\times 5 \\times 7 = 20 \\times 7 = 140\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-hard-q5c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the Lowest Common Multiple (LCM) of the following pair of numbers:\n\\(18\\) and \\(24\\)",
+          "options": [
+            "\\(72\\)",
+            "\\(48\\)",
+            "\\(96\\)",
+            "\\(54\\)"
+          ],
+          "answer": 0,
+          "hint": "List the multiples or use prime factors to find the smallest common multiple.",
+          "steps": [
+            {
+              "explain": "List the multiples of 24 (the larger number) and check when a multiple of 18 is found.",
+              "work": "\\(24, 48, 72, \\dots\\)"
+            },
+            {
+              "explain": "Check if 72 is divisible by 18.",
+              "work": "\\(72 \\div 18 = 4\\)"
+            },
+            {
+              "explain": "State the lowest common multiple.",
+              "work": "\\(\\text{LCM}(18, 24) = 72\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-3-hard-q5d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the Lowest Common Multiple (LCM) of the following pair of numbers:\n\\(15\\) and \\(20\\)",
+          "options": [
+            "\\(40\\)",
+            "\\(60\\)",
+            "\\(80\\)",
+            "\\(30\\)"
+          ],
+          "answer": 1,
+          "hint": "List the multiples of both numbers and find the smallest multiple they share.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "List multiples of 15.",
+              "work": "\\text{Multiples of 15}: 15, 30, 45, 60, 75, \\dots"
+            },
+            {
+              "explain": "List multiples of 20.",
+              "work": "\\text{Multiples of 20}: 20, 40, 60, 80, \\dots"
+            },
+            {
+              "explain": "Identify the lowest common multiple.",
+              "work": "\\(\\text{LCM}(15, 20) = 60\\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y5-mr-4",
+      "code": "MA3-MR-02",
+      "title": "Division with remainders",
+      "questions": [
+        {
+          "id": "y5-mr-4-q12a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the quotient:\n\\(35 \\div 7\\)",
+          "options": [
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(7\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "Recall that 7 x 5 = 35.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Solve division via multiplication table.",
+              "work": "\\(35 \\div 7 = 5\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-q12b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the quotient:\n\\(42 \\div 3\\)",
+          "options": [
+            "\\(13\\)",
+            "\\(16\\)",
+            "\\(14\\)",
+            "\\(12\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide 42 by 3.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Divide tens first.",
+              "work": "\\(4 \\div 3 = 1 \\quad \\text{remainder } 1\\)"
+            },
+            {
+              "explain": "Divide units with carry.",
+              "work": "\\(12 \\div 3 = 4\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(14\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-q12c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the quotient:\n\\(65 \\div 5\\)",
+          "options": [
+            "\\(15\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(11\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide 65 by 5.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Divide tens first.",
+              "work": "\\(6 \\div 5 = 1 \\quad \\text{remainder } 1\\)"
+            },
+            {
+              "explain": "Divide units with carry.",
+              "work": "\\(15 \\div 5 = 3\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(13\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-q12d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the quotient:\n\\(84 \\div 7\\)",
+          "options": [
+            "\\(14\\)",
+            "\\(11\\)",
+            "\\(13\\)",
+            "\\(12\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide 84 by 7.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Divide tens.",
+              "work": "\\(8 \\div 7 = 1 \\quad \\text{remainder } 1\\)"
+            },
+            {
+              "explain": "Divide units.",
+              "work": "\\(14 \\div 7 = 2\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(12\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-q13d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the quotient of \\(6\\) and \\(3\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(18\\)",
+            "\\(9\\)"
+          ],
+          "answer": 0,
+          "hint": "Quotient means division.",
+          "steps": [
+            {
+              "explain": "Divide the numbers.",
+              "work": "\\(6 \\div 3\\)"
+            },
+            {
+              "explain": "State quotient.",
+              "work": "\\(6 \\div 3 = 2\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l2-q13a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the quotient:\n\\(45 \\div 5\\)",
+          "options": [
+            "\\(8\\)",
+            "\\(10\\)",
+            "\\(9\\)",
+            "\\(7\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide 45 by 5.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Use multiplication tables.",
+              "work": "\\(45 \\div 5 = 9\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l2-q13b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the quotient:\n\\(72 \\div 3\\)",
+          "options": [
+            "\\(23\\)",
+            "\\(24\\)",
+            "\\(22\\)",
+            "\\(26\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 72 by 3.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Divide tens first.",
+              "work": "\\(7 \\div 3 = 2 \\quad \\text{remainder } 1\\)"
+            },
+            {
+              "explain": "Divide units.",
+              "work": "\\(12 \\div 3 = 4\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(24\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l2-q13c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the quotient:\n\\(60 \\div 4\\)",
+          "options": [
+            "\\(12\\)",
+            "\\(15\\)",
+            "\\(14\\)",
+            "\\(16\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 60 by 4.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Divide tens.",
+              "work": "\\(6 \\div 4 = 1 \\quad \\text{remainder } 2\\)"
+            },
+            {
+              "explain": "Divide units.",
+              "work": "\\(20 \\div 4 = 5\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(15\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l2-q13d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate the quotient:\n\\(105 \\div 7\\)",
+          "options": [
+            "\\(16\\)",
+            "\\(12\\)",
+            "\\(14\\)",
+            "\\(15\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide 105 by 7.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Divide hundreds/tens first.",
+              "work": "\\(10 \\div 7 = 1 \\quad \\text{remainder } 3\\)"
+            },
+            {
+              "explain": "Divide units.",
+              "work": "\\(35 \\div 7 = 5\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(15\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l2-q14e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the quotient of \\(10\\) and \\(2\\).",
+          "options": [
+            "\\(5\\)",
+            "\\(20\\)",
+            "\\(12\\)",
+            "\\(8\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 10 by 2.",
+          "steps": [
+            {
+              "explain": "Perform division.",
+              "work": "\\(10 \\div 2 = 5\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l3-q9a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(51 \\div 3\\)",
+          "options": [
+            "\\(15\\)",
+            "\\(18\\)",
+            "\\(16\\)",
+            "\\(17\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide 51 by 3.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Divide tens.",
+              "work": "\\(5 \\div 3 = 1 \\quad \\text{remainder } 2\\)"
+            },
+            {
+              "explain": "Divide units with carry.",
+              "work": "\\(21 \\div 3 = 7\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(17\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l3-q9b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(84 \\div 7\\)",
+          "options": [
+            "\\(12\\)",
+            "\\(11\\)",
+            "\\(14\\)",
+            "\\(13\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 84 by 7.",
+          "steps": [
+            {
+              "explain": "Divide tens.",
+              "work": "\\(8 \\div 7 = 1 \\quad \\text{remainder } 1\\)"
+            },
+            {
+              "explain": "Divide units.",
+              "work": "\\(14 \\div 7 = 2\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(12\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l3-q9c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(53 \\div 4\\)",
+          "options": [
+            "\\(13\\text{ r } 2\\)",
+            "\\(13\\text{ r } 1\\)",
+            "\\(12\\text{ r } 1\\)",
+            "\\(14\\text{ r } 1\\)"
+          ],
+          "answer": 1,
+          "hint": "Identify quotient and remainder.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Divide 53 by 4.",
+              "work": "\\(53 \\div 4 = 13 \\quad \\text{with remainder } 1\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l3-q9d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(139 \\div 6\\)",
+          "options": [
+            "\\(23\\text{ r } 2\\)",
+            "\\(23\\text{ r } 1\\)",
+            "\\(24\\text{ r } 1\\)",
+            "\\(22\\text{ r } 1\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 139 by 6.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Divide 13 by 6.",
+              "work": "\\(13 \\div 6 = 2 \\quad \\text{remainder } 1\\)"
+            },
+            {
+              "explain": "Divide 19 by 6.",
+              "work": "\\(19 \\div 6 = 3 \\quad \\text{remainder } 1\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(23\\text{ r } 1\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l4-q10a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(68 \\div 4\\)",
+          "options": [
+            "\\(16\\)",
+            "\\(15\\)",
+            "\\(18\\)",
+            "\\(17\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide 68 by 4.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Divide tens first.",
+              "work": "\\(6 \\div 4 = 1 \\quad \\text{remainder } 2\\)"
+            },
+            {
+              "explain": "Divide units.",
+              "work": "\\(28 \\div 4 = 7\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(17\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l4-q10b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(91 \\div 7\\)",
+          "options": [
+            "\\(14\\)",
+            "\\(13\\)",
+            "\\(15\\)",
+            "\\(12\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 91 by 7.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Divide tens.",
+              "work": "\\(9 \\div 7 = 1 \\quad \\text{remainder } 2\\)"
+            },
+            {
+              "explain": "Divide units.",
+              "work": "\\(21 \\div 7 = 3\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(13\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l4-q10c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(139 \\div 6\\)",
+          "options": [
+            "\\(23\\text{ r } 1\\)",
+            "\\(22\\text{ r } 1\\)",
+            "\\(24\\text{ r } 1\\)",
+            "\\(23\\text{ r } 2\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 139 by 6.",
+          "steps": [
+            {
+              "explain": "Divide 13 by 6.",
+              "work": "\\(13 \\div 6 = 2 \\quad \\text{remainder } 1\\)"
+            },
+            {
+              "explain": "Divide 19.",
+              "work": "\\(19 \\div 6 = 3 \\quad \\text{remainder } 1\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(23\\text{ r } 1\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l4-q10d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(384 \\div 9\\)",
+          "options": [
+            "\\(42\\text{ r } 5\\)",
+            "\\(42\\text{ r } 6\\)",
+            "\\(43\\text{ r } 6\\)",
+            "\\(41\\text{ r } 6\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 384 by 9.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Divide 38 by 9.",
+              "work": "\\(38 \\div 9 = 4 \\quad \\text{remainder } 2\\)"
+            },
+            {
+              "explain": "Divide 24.",
+              "work": "\\(24 \\div 9 = 2 \\quad \\text{remainder } 6\\)"
+            },
+            {
+              "explain": "Combine.",
+              "work": "\\(42\\text{ r } 6\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l4-q12c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the quotient of \\(45\\) and \\(9\\).",
+          "options": [
+            "\\(6\\)",
+            "\\(4\\)",
+            "\\(5\\)",
+            "\\(9\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide 45 by 9.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Perform division.",
+              "work": "\\(45 \\div 9 = 5\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-l5-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A small lotto prize of 8 813 dollars has to be shared between 7 people. How much will each person receive?",
+          "options": [
+            "1359 dollars",
+            "1258 dollars",
+            "1259 dollars",
+            "1269 dollars"
+          ],
+          "answer": 2,
+          "hint": "Divide 8 813 by 7.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Set up the division.",
+              "work": "\\(8813 \\div 7\\)"
+            },
+            {
+              "explain": "Perform short division step-by-step.",
+              "work": "\\(8 \\div 7 = 1\\text{ r } 1\\) \\n \\(18 \\div 7 = 2\\text{ r } 4\\) \\n \\(41 \\div 7 = 5\\text{ r } 6\\) \\n \\(63 \\div 7 = 9\\)"
+            },
+            {
+              "explain": "State the final share for each person.",
+              "work": "\\(1259\\text{ dollars}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-hard-q4b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Firstly, round off the numbers to the nearest ten, and then estimate the final answer:\n\\(348 \\div 53\\)",
+          "options": [
+            "\\(7\\)",
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(9\\)"
+          ],
+          "answer": 0,
+          "hint": "Round 348 and 53 to the nearest ten before dividing.",
+          "steps": [
+            {
+              "explain": "Round 348 to the nearest ten.",
+              "work": "\\(348 \\approx 350\\)"
+            },
+            {
+              "explain": "Round 53 to the nearest ten.",
+              "work": "\\(53 \\approx 50\\)"
+            },
+            {
+              "explain": "Divide the rounded numbers to find the estimated quotient.",
+              "work": "\\(350 \\div 50 = 7\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-hard-q4d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Firstly, round off the numbers to the nearest ten, and then estimate the final answer:\n\\(5\\ 423 \\div 93\\)",
+          "options": [
+            "\\(50\\)",
+            "\\(60\\)",
+            "\\(70\\)",
+            "\\(55\\)"
+          ],
+          "answer": 1,
+          "hint": "Round 5 423 and 93 to the nearest ten before dividing.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Round 5 423 to the nearest ten.",
+              "work": "\\(5\\ 423 \\approx 5\\ 420\\)"
+            },
+            {
+              "explain": "Round 93 to the nearest ten.",
+              "work": "\\(93 \\approx 90\\)"
+            },
+            {
+              "explain": "Simplify the estimate by rounding 5 420 to 5 400 for compatible numbers.",
+              "work": "\\(5\\ 400 \\div 90 = 60\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-hard-q9a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the quotient and remainder for the division:\n\\(497 \\div 15\\)",
+          "options": [
+            "\\(33\\) remainder \\(2\\)",
+            "\\(33\\) remainder \\(5\\)",
+            "\\(32\\) remainder \\(7\\)",
+            "\\(34\\) remainder \\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 497 by 15 to find the quotient and remainder.",
+          "steps": [
+            {
+              "explain": "Find how many times 15 goes into 49 tens.",
+              "work": "\\(49 \\div 15 = 3\\text{ remainder } 4\\)"
+            },
+            {
+              "explain": "Bring down the 7 and divide 47 units by 15.",
+              "work": "\\(47 \\div 15 = 3\\text{ remainder } 2\\)"
+            },
+            {
+              "explain": "Combine the quotient and the remainder.",
+              "work": "\\(33\\text{ remainder } 2\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-hard-q9b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the quotient and remainder for the division:\n\\(867 \\div 18\\)",
+          "options": [
+            "\\(48\\) remainder \\(1\\)",
+            "\\(47\\) remainder \\(9\\)",
+            "\\(48\\) remainder \\(3\\)",
+            "\\(49\\) remainder \\(2\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide 867 by 18 to find the quotient and remainder.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Find how many times 18 goes into 86 tens.",
+              "work": "\\(18 \\times 4 = 72 \\implies 86 - 72 = 14\\text{ tens remainder}\\)"
+            },
+            {
+              "explain": "Bring down the 7 and divide 147 units by 18.",
+              "work": "\\(18 \\times 8 = 144 \\implies 147 - 144 = 3\\text{ remainder}\\)"
+            },
+            {
+              "explain": "Combine the quotient and the remainder.",
+              "work": "\\(48\\text{ remainder } 3\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-hard-q9c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the quotient and remainder for the division:\n\\(620 \\div 23\\)",
+          "options": [
+            "\\(26\\) remainder \\(22\\)",
+            "\\(27\\) remainder \\(2\\)",
+            "\\(26\\) remainder \\(12\\)",
+            "\\(27\\) remainder \\(12\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 620 by 23 to find the quotient and remainder.",
+          "steps": [
+            {
+              "explain": "Find how many times 23 goes into 62 tens.",
+              "work": "\\(23 \\times 2 = 46 \\implies 62 - 46 = 16\\text{ tens remainder}\\)"
+            },
+            {
+              "explain": "Bring down the 0 and divide 160 units by 23.",
+              "work": "\\(23 \\times 6 = 138 \\implies 160 - 138 = 22\\text{ remainder}\\)"
+            },
+            {
+              "explain": "Combine the quotient and the remainder.",
+              "work": "\\(26\\text{ remainder } 22\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-hard-q9d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the quotient and remainder for the division:\n\\(7\\ 647 \\div 30\\)",
+          "options": [
+            "\\(254\\) remainder \\(17\\)",
+            "\\(254\\) remainder \\(27\\)",
+            "\\(255\\) remainder \\(7\\)",
+            "\\(253\\) remainder \\(27\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 7 647 by 30 to find the quotient and remainder.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Divide the hundreds: 76 hundreds divided by 30.",
+              "work": "\\(76 \\div 30 = 2\\text{ remainder } 16\\)"
+            },
+            {
+              "explain": "Divide the tens: 164 tens divided by 30.",
+              "work": "\\(164 \\div 30 = 5\\text{ remainder } 14\\)"
+            },
+            {
+              "explain": "Divide the units: 147 units divided by 30.",
+              "work": "\\(147 \\div 30 = 4\\text{ remainder } 27\\)"
+            },
+            {
+              "explain": "Combine the results to state the final quotient and remainder.",
+              "work": "\\(254\\text{ remainder } 27\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-hard-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Mr and Mrs Chan, and their three children, spent \\(210\\text{ dollars}\\) in total on chairlift passes for one day. If the children were charged at half the price of an adult ticket, what was the cost of each adult ticket?",
+          "options": [
+            "\\(50\\text{ dollars}\\)",
+            "\\(55\\text{ dollars}\\)",
+            "\\(60\\text{ dollars}\\)",
+            "\\(45\\text{ dollars}\\)"
+          ],
+          "answer": 2,
+          "hint": "Let the adult ticket price be A. The child ticket price is 0.5A.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Set up an equation representing the total cost of tickets for 2 adults and 3 children.",
+              "work": "\\(2A + 3(0.5A) = 210\\)"
+            },
+            {
+              "explain": "Simplify the equation by combining the terms.",
+              "work": "\\(2A + 1.5A = 3.5A = 210\\)"
+            },
+            {
+              "explain": "Solve for the adult ticket price A by dividing 210 by 3.5.",
+              "work": "\\(A = 210 \\div 3.5 = 60\\text{ dollars}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-hard-q9a_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the quotient and remainder for the division:\n\\(1\\ 645 \\div 14\\)",
+          "options": [
+            "\\(117\\) remainder \\(7\\)",
+            "\\(117\\) remainder \\(5\\)",
+            "\\(118\\) remainder \\(7\\)",
+            "\\(116\\) remainder \\(9\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 1 645 by 14 using long or short division.",
+          "steps": [
+            {
+              "explain": "Divide the first part of the number: 16 hundreds divided by 14.",
+              "work": "\\(16 \\div 14 = 1\\text{ remainder } 2\\)"
+            },
+            {
+              "explain": "Bring down the 4, making it 24 tens. Divide 24 by 14.",
+              "work": "\\(24 \\div 14 = 1\\text{ remainder } 10\\)"
+            },
+            {
+              "explain": "Bring down the 5, making it 105 units. Divide 105 by 14.",
+              "work": "\\(105 \\div 14 = 7\\text{ remainder } 7\\text{ (since } 14 \\times 7 = 98\\text{ and } 105 - 98 = 7\\text{)}\\)"
+            },
+            {
+              "explain": "Combine the quotients and the final remainder.",
+              "work": "\\(117\\text{ remainder } 7\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-hard-q9b_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the quotient and remainder for the division:\n\\(1\\ 352 \\div 12\\)",
+          "options": [
+            "\\(112\\) remainder \\(8\\)",
+            "\\(112\\) remainder \\(4\\)",
+            "\\(113\\) remainder \\(8\\)",
+            "\\(111\\) remainder \\(10\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 1 352 by 12 using long or short division.",
+          "steps": [
+            {
+              "explain": "Divide the first part: 13 hundreds divided by 12.",
+              "work": "\\(13 \\div 12 = 1\\text{ remainder } 1\\)"
+            },
+            {
+              "explain": "Bring down the 5 to make 15 tens. Divide by 12.",
+              "work": "\\(15 \\div 12 = 1\\text{ remainder } 3\\)"
+            },
+            {
+              "explain": "Bring down the 2 to make 32 units. Divide by 12.",
+              "work": "\\(32 \\div 12 = 2\\text{ remainder } 8\\text{ (since } 12 \\times 2 = 24\\text{ and } 32 - 24 = 8\\text{)}\\)"
+            },
+            {
+              "explain": "State the final quotient and remainder.",
+              "work": "\\(112\\text{ remainder } 8\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-hard-q9c_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the quotient and remainder for the division:\n\\(2\\ 856 \\div 19\\)",
+          "options": [
+            "\\(150\\) remainder \\(6\\)",
+            "\\(150\\) remainder \\(16\\)",
+            "\\(151\\) remainder \\(6\\)",
+            "\\(149\\) remainder \\(16\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 2 856 by 19 using long or short division.",
+          "steps": [
+            {
+              "explain": "Divide the first part: 28 hundreds divided by 19.",
+              "work": "\\(28 \\div 19 = 1\\text{ remainder } 9\\)"
+            },
+            {
+              "explain": "Bring down the 5 to make 95 tens. Divide by 19.",
+              "work": "\\(95 \\div 19 = 5\\text{ remainder } 0\\text{ (since } 19 \\times 5 = 95\\text{)}\\)"
+            },
+            {
+              "explain": "Bring down the 6. Since 6 is less than 19, the quotient digit is 0 and the remainder is 6.",
+              "work": "\\(6 \\div 19 = 0\\text{ remainder } 6\\)"
+            },
+            {
+              "explain": "State the final quotient and remainder.",
+              "work": "\\(150\\text{ remainder } 6\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-hard-q9d_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the quotient and remainder for the division:\n\\(6\\ 523 \\div 8\\)",
+          "options": [
+            "\\(815\\) remainder \\(3\\)",
+            "\\(815\\) remainder \\(5\\)",
+            "\\(816\\) remainder \\(3\\)",
+            "\\(814\\) remainder \\(7\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 6 523 by 8 using long or short division.",
+          "steps": [
+            {
+              "explain": "Divide 65 hundreds by 8.",
+              "work": "\\(65 \\div 8 = 8\\text{ remainder } 1\\text{ (since } 8 \\times 8 = 64\\text{)}\\)"
+            },
+            {
+              "explain": "Bring down the 2 to make 12 tens. Divide by 8.",
+              "work": "\\(12 \\div 8 = 1\\text{ remainder } 4\\)"
+            },
+            {
+              "explain": "Bring down the 3 to make 43 units. Divide by 8.",
+              "work": "\\(43 \\div 8 = 5\\text{ remainder } 3\\text{ (since } 8 \\times 5 = 40\\text{)}\\)"
+            },
+            {
+              "explain": "State the final quotient and remainder.",
+              "work": "\\(815\\text{ remainder } 3\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following deals at a fruit shop is the best buy (cheapest per item)?\n- 6 apples for 42 cents\n- 4 apples for 20 cents\n- 5 apples for 30 cents",
+          "options": [
+            "\\(4 apples for 20 cents\\)",
+            "They have the same unit price",
+            "\\(6 apples for 42 cents\\)",
+            "\\(5 apples for 30 cents\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the unit price (cost of one apple) for each option by dividing the total cost by the number of apples.",
+          "solution": "The best buy is 4 apples for 20 cents.",
+          "steps": [
+            {
+              "explain": "Calculate the unit price of the first option: 6 apples for 42 cents.",
+              "work": "\\(42\\text{ cents} \\div 6 = 7\\text{ cents per apple}\\)"
+            },
+            {
+              "explain": "Calculate the unit price of the second option: 4 apples for 20 cents.",
+              "work": "\\(20\\text{ cents} \\div 4 = 5\\text{ cents per apple}\\)"
+            },
+            {
+              "explain": "Calculate the unit price of the third option: 5 apples for 30 cents.",
+              "work": "\\(30\\text{ cents} \\div 5 = 6\\text{ cents per apple}\\)"
+            },
+            {
+              "explain": "Compare the unit prices: 5 cents is the lowest cost per apple, so the second deal is the best buy.",
+              "work": "\\(5\\text{ cents} < 6\\text{ cents} < 7\\text{ cents}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following deals at a fruit shop is the best buy (cheapest per item)?\n- 10 bananas for 50 cents\n- 6 bananas for 24 cents\n- 12 bananas for 36 cents",
+          "options": [
+            "\\(12 bananas for 36 cents\\)",
+            "They have the same unit price",
+            "\\(10 bananas for 50 cents\\)",
+            "\\(6 bananas for 24 cents\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the unit price (cost of one banana) for each deal by dividing cost by quantity.",
+          "solution": "The best buy is 12 bananas for 36 cents.",
+          "steps": [
+            {
+              "explain": "Calculate the unit price for 10 bananas for 50 cents.",
+              "work": "\\(50\\text{ cents} \\div 10 = 5\\text{ cents per banana}\\)"
+            },
+            {
+              "explain": "Calculate the unit price for 6 bananas for 24 cents.",
+              "work": "\\(24\\text{ cents} \\div 6 = 4\\text{ cents per banana}\\)"
+            },
+            {
+              "explain": "Calculate the unit price for 12 bananas for 36 cents.",
+              "work": "\\(36\\text{ cents} \\div 12 = 3\\text{ cents per banana}\\)"
+            },
+            {
+              "explain": "Compare the unit prices to find the lowest one: 3 cents is the cheapest.",
+              "work": "\\(3\\text{ cents} < 4\\text{ cents} < 5\\text{ cents}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following deals at a fruit shop is the best buy (cheapest per item)?\n- 6 mangoes for \\(\\$1.50\\)\n- 5 mangoes for \\(\\$1.00\\)\n- 2 mangoes for \\(\\$0.60\\)",
+          "options": [
+            "They have the same unit price",
+            "\\(5 mangoes for \\$1.00\\)",
+            "\\(6 mangoes for \\$1.50\\)",
+            "\\(2 mangoes for \\$0.60\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert the dollar prices to cents first, then divide by the quantity to find the cost of one mango.",
+          "solution": "The best buy is 5 mangoes for \\(\\$1.00\\).",
+          "steps": [
+            {
+              "explain": "Convert all dollar amounts to cents. \\(\\$1.50 = 150\\text{ cents}\\), \\(\\$1.00 = 100\\text{ cents}\\), and \\(\\$0.60 = 60\\text{ cents}\\).",
+              "work": "\\(\\text{Costs} = 150\\text{ cents}, \\; 100\\text{ cents}, \\; 60\\text{ cents}\\)"
+            },
+            {
+              "explain": "Calculate the unit price for 6 mangoes for 150 cents.",
+              "work": "\\(150\\text{ cents} \\div 6 = 25\\text{ cents per mango}\\)"
+            },
+            {
+              "explain": "Calculate the unit price for 5 mangoes for 100 cents.",
+              "work": "\\(100\\text{ cents} \\div 5 = 20\\text{ cents per mango}\\)"
+            },
+            {
+              "explain": "Calculate the unit price for 2 mangoes for 60 cents.",
+              "work": "\\(60\\text{ cents} \\div 2 = 30\\text{ cents per mango}\\)"
+            },
+            {
+              "explain": "Compare the unit prices to find the lowest one: 20 cents is the cheapest.",
+              "work": "\\(20\\text{ cents} < 25\\text{ cents} < 30\\text{ cents}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-q3a-l2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following deals for potatoes is the best buy (cheapest per kilogram)?\n- 1.5 kg at \\(\\$2.50\\)\n- 2 kg at \\(\\$4.40\\)\n- 3 kg at \\(\\$5.40\\)",
+          "options": [
+            "They have the same price per kilogram",
+            "\\(2 kg at \\$4.40\\)",
+            "\\(3 kg at \\$5.40\\)",
+            "\\(1.5 kg at \\$2.50\\)"
+          ],
+          "answer": 3,
+          "hint": "Find the price per kilogram for each option by dividing the total cost by the weight.",
+          "solution": "The best buy is 1.5 kg at \\(\\$2.50\\).",
+          "steps": [
+            {
+              "explain": "Calculate the price per kilogram for the first option: 1.5 kg at \\(\\$2.50\\).",
+              "work": "\\(\\text{Price per kg} = \\$2.50 \\div 1.5 \\approx \\$1.67\\)"
+            },
+            {
+              "explain": "Calculate the price per kilogram for the second option: 2 kg at \\(\\$4.40\\).",
+              "work": "\\(\\text{Price per kg} = \\$4.40 \\div 2 = \\$2.20\\)"
+            },
+            {
+              "explain": "Calculate the price per kilogram for the third option: 3 kg at \\(\\$5.40\\).",
+              "work": "\\(\\text{Price per kg} = \\$5.40 \\div 3 = \\$1.80\\)"
+            },
+            {
+              "explain": "Compare the calculated unit prices. \\(\\$1.67\\) is the lowest price per kilogram.",
+              "work": "\\(\\$1.67 < \\$1.80 < \\$2.20\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-q3b-l2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following carrot deals is the best buy (cheapest per kilogram)?\n- 1 kg at \\(\\$3.90\\)\n- 2 kg at \\(\\$6.80\\)\n- 0.5 kg at \\(\\$2.10\\)",
+          "options": [
+            "\\(2 kg at \\$6.80\\)",
+            "\\(0.5 kg at \\$2.10\\)",
+            "They have the same price per kilogram",
+            "\\(1 kg at \\$3.90\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the cost of 1 kg for each option.",
+          "solution": "The best buy is 2 kg at \\(\\$6.80\\).",
+          "steps": [
+            {
+              "explain": "Identify the price per kilogram for the first option directly.",
+              "work": "\\(\\text{Price per kg} = \\$3.90\\)"
+            },
+            {
+              "explain": "Calculate the price per kilogram for the second option: 2 kg at \\(\\$6.80\\).",
+              "work": "\\(\\text{Price per kg} = \\$6.80 \\div 2 = \\$3.40\\)"
+            },
+            {
+              "explain": "Calculate the price per kilogram for the third option: 0.5 kg at \\(\\$2.10\\). Multiplying 0.5 kg by 2 gives 1 kg.",
+              "work": "\\(\\text{Price per kg} = \\$2.10 \\times 2 = \\$4.20\\)"
+            },
+            {
+              "explain": "Compare the unit prices: \\(\\$3.40\\) is the cheapest.",
+              "work": "\\(\\$3.40 < \\$3.90 < \\$4.20\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-q3c-l2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following broccoli purchases is the best buy (cheapest per 100 grams)?\n- 100 g at \\(\\$4.30\\)\n- 200 g at \\(\\$8.30\\)\n- 500 g at \\(\\$22.00\\)",
+          "options": [
+            "\\(500 g at \\$22.00\\)",
+            "\\(200 g at \\$8.30\\)",
+            "They have the same price per 100 grams",
+            "\\(100 g at \\$4.30\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the unit price per 100 grams for each purchase choice.",
+          "solution": "The best buy is 200 g at \\(\\$8.30\\).",
+          "steps": [
+            {
+              "explain": "Identify the price per 100 grams for the first option directly.",
+              "work": "\\(\\text{Price per 100g} = \\$4.30\\)"
+            },
+            {
+              "explain": "Calculate the price per 100 grams for the second option: 200 g at \\(\\$8.30\\).",
+              "work": "\\(\\text{Price per 100g} = \\$8.30 \\div 2 = \\$4.15\\)"
+            },
+            {
+              "explain": "Calculate the price per 100 grams for the third option: 500 g at \\(\\$22.00\\).",
+              "work": "\\(\\text{Price per 100g} = \\$22.00 \\div 5 = \\$4.40\\)"
+            },
+            {
+              "explain": "Compare the unit prices: \\(\\$4.15\\) is the cheapest rate.",
+              "work": "\\(\\$4.15 < \\$4.30 < \\$4.40\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-4-q3-l3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Garden compost is sold in three different bag sizes. Which bag size represents the best value (cheapest price per kilogram)?\n- 2 kg bag for \\(\\$3.85\\)\n- 6 kg bag for \\(\\$10.29\\)\n- 10 kg bag for \\(\\$17.00\\)",
+          "options": [
+            "\\(2 kg bag for \\$3.85\\)",
+            "They all have the same value",
+            "\\(10 kg bag for \\$17.00\\)",
+            "\\(6 kg bag for \\$10.29\\)"
+          ],
+          "answer": 2,
+          "hint": "Calculate the price per kilogram for each bag size by dividing the price by the weight.",
+          "solution": "The best value is the 10 kg bag for \\(\\$17.00\\).",
+          "steps": [
+            {
+              "explain": "Calculate the price per kilogram for the 2 kg bag costing \\(\\$3.85\\).",
+              "work": "\\(\\text{Unit price (2 kg)} = \\$3.85 \\div 2 = \\$1.925\\text{ per kg}\\)"
+            },
+            {
+              "explain": "Calculate the price per kilogram for the 6 kg bag costing \\(\\$10.29\\).",
+              "work": "\\(\\text{Unit price (6 kg)} = \\$10.29 \\div 6 = \\$1.715\\text{ per kg}\\)"
+            },
+            {
+              "explain": "Calculate the price per kilogram for the 10 kg bag costing \\(\\$17.00\\).",
+              "work": "\\(\\text{Unit price (10 kg)} = \\$17.00 \\div 10 = \\$1.70\\text{ per kg}\\)"
+            },
+            {
+              "explain": "Compare the three unit prices. The lowest price per kilogram represents the best value.",
+              "work": "\\(\\$1.70 < \\$1.715 < \\$1.925\\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    },
+    {
+      "topicId": "y5-mr-6",
+      "code": "MA3-MR-01",
+      "title": "Order of operations",
+      "questions": [
+        {
+          "id": "y5-mr-6-l3-q13a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression:\n\\(6 + 2 \\times 7\\)",
+          "options": [
+            "\\(15\\)",
+            "\\(56\\)",
+            "\\(20\\)",
+            "\\(21\\)"
+          ],
+          "answer": 2,
+          "hint": "BODMAS rule: perform multiplication before addition.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Perform multiplication first.",
+              "work": "\\(2 \\times 7 = 14\\)"
+            },
+            {
+              "explain": "Perform addition.",
+              "work": "\\(6 + 14 = 20\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-l3-q13b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression:\n\\(7 - 3 + 8\\)",
+          "options": [
+            "\\(6\\)",
+            "\\(12\\)",
+            "\\(11\\)",
+            "\\(18\\)"
+          ],
+          "answer": 1,
+          "hint": "Perform addition and subtraction from left to right.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Perform subtraction first.",
+              "work": "\\(7 - 3 = 4\\)"
+            },
+            {
+              "explain": "Perform addition.",
+              "work": "\\(4 + 8 = 12\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-l3-q13c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression:\n\\(8 + 6 \\div 3\\)",
+          "options": [
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(10\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide before adding.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Perform division first.",
+              "work": "\\(6 \\div 3 = 2\\)"
+            },
+            {
+              "explain": "Perform addition.",
+              "work": "\\(8 + 2 = 10\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-l3-q13d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression:\n\\(7 + (8 - 2)\\)",
+          "options": [
+            "\\(14\\)",
+            "\\(15\\)",
+            "\\(9\\)",
+            "\\(13\\)"
+          ],
+          "answer": 3,
+          "hint": "Evaluate the operations inside brackets first.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Evaluate inside brackets.",
+              "work": "\\(8 - 2 = 6\\)"
+            },
+            {
+              "explain": "Perform addition.",
+              "work": "\\(7 + 6 = 13\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-l4-q13a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression:\n\\(3 \\times (6 + 1)\\)",
+          "options": [
+            "\\(19\\)",
+            "\\(24\\)",
+            "\\(18\\)",
+            "\\(21\\)"
+          ],
+          "answer": 3,
+          "hint": "Evaluate operations in brackets first.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Evaluate bracket contents.",
+              "work": "\\(6 + 1 = 7\\)"
+            },
+            {
+              "explain": "Multiply the result by 3.",
+              "work": "\\(3 \\times 7 = 21\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-l4-q13b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression:\n\\(9 - 5 + 2\\)",
+          "options": [
+            "\\(12\\)",
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(2\\)"
+          ],
+          "answer": 1,
+          "hint": "Addition and subtraction should be evaluated left to right.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Perform subtraction first.",
+              "work": "\\(9 - 5 = 4\\)"
+            },
+            {
+              "explain": "Perform addition.",
+              "work": "\\(4 + 2 = 6\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-l4-q13c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression:\n\\((15 + 12) \\div 3\\)",
+          "options": [
+            "\\(9\\)",
+            "\\(10\\)",
+            "\\(19\\)",
+            "\\(8\\)"
+          ],
+          "answer": 0,
+          "hint": "Perform bracket addition first, then divide by 3.",
+          "steps": [
+            {
+              "explain": "Add inside brackets.",
+              "work": "\\(15 + 12 = 27\\)"
+            },
+            {
+              "explain": "Divide by 3.",
+              "work": "\\(27 \\div 3 = 9\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-l4-q13d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression:\n\\(8 + 6 \\div 2\\)",
+          "options": [
+            "\\(14\\)",
+            "\\(11\\)",
+            "\\(10\\)",
+            "\\(7\\)"
+          ],
+          "answer": 1,
+          "hint": "Perform division before addition.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Divide first.",
+              "work": "\\(6 \\div 2 = 3\\)"
+            },
+            {
+              "explain": "Add the result to 8.",
+              "work": "\\(8 + 3 = 11\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-l4-q13e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate the expression:\n\\(5 + 2 \\times 10\\)",
+          "options": [
+            "\\(70\\)",
+            "\\(20\\)",
+            "\\(25\\)",
+            "\\(35\\)"
+          ],
+          "answer": 2,
+          "hint": "Perform multiplication before addition.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Multiply first.",
+              "work": "\\(2 \\times 10 = 20\\)"
+            },
+            {
+              "explain": "Add to 5.",
+              "work": "\\(5 + 20 = 25\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "I think of a number, multiply it by \\(6\\), and then add \\(11\\) to give a total of \\(77\\).\n\nWhat is the number I first thought of?",
+          "options": [
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "hint": "Work backwards: subtract 11 from the total first, then divide by 6.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Set up an equation where x represents the number first thought of.",
+              "work": "\\(6x + 11 = 77\\)"
+            },
+            {
+              "explain": "Subtract 11 from both sides of the equation to isolate the multiplication term.",
+              "work": "\\(6x = 77 - 11 = 66\\)"
+            },
+            {
+              "explain": "Divide both sides by 6 to solve for x.",
+              "work": "\\(x = 66 \\div 6 = 11\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q10a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(20 + 12 \\div 3 + 2\\)",
+          "options": [
+            "\\(14\\)",
+            "\\(26\\)",
+            "\\(16\\)",
+            "\\(24\\)"
+          ],
+          "answer": 1,
+          "hint": "Remember the order of operations (BODMAS/BIDMAS): perform division before addition.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Perform the division first according to the order of operations.",
+              "work": "\\(12 \\div 3 = 4\\)"
+            },
+            {
+              "explain": "Substitute the result back and add the remaining numbers from left to right.",
+              "work": "\\(20 + 4 + 2 = 24 + 2 = 26\\)"
+            },
+            {
+              "explain": "Conclude the final evaluated value.",
+              "work": "\\(26\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q10b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\((20 + 12) \\div 4 + 2\\)",
+          "options": [
+            "\\(10\\)",
+            "\\(8\\)",
+            "\\(12\\)",
+            "\\(26\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the operation inside the parentheses first.",
+          "steps": [
+            {
+              "explain": "Perform the addition inside the parentheses first.",
+              "work": "\\(20 + 12 = 32\\)"
+            },
+            {
+              "explain": "Next, perform the division.",
+              "work": "\\(32 \\div 4 = 8\\)"
+            },
+            {
+              "explain": "Finally, add 2.",
+              "work": "\\(8 + 2 = 10\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q10c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\((20 + 12) \\div (6 + 2)\\)",
+          "options": [
+            "\\(8\\)",
+            "\\(12\\)",
+            "\\(4\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Perform the operations inside both parentheses first, then divide.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Perform the addition inside the first parentheses.",
+              "work": "\\(20 + 12 = 32\\)"
+            },
+            {
+              "explain": "Perform the addition inside the second parentheses.",
+              "work": "\\(6 + 2 = 8\\)"
+            },
+            {
+              "explain": "Divide the first result by the second result.",
+              "work": "\\(32 \\div 8 = 4\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q10d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(24 - 8 \\div 2 + 3\\)",
+          "options": [
+            "\\(11\\)",
+            "\\(23\\)",
+            "\\(19\\)",
+            "\\(21\\)"
+          ],
+          "answer": 1,
+          "hint": "Follow the order of operations: perform division before subtraction and addition.",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Perform the division first.",
+              "work": "\\(8 \\div 2 = 4\\)"
+            },
+            {
+              "explain": "Substitute back and evaluate addition/subtraction from left to right.",
+              "work": "\\(24 - 4 + 3 = 20 + 3 = 23\\)"
+            },
+            {
+              "explain": "State the final evaluated value.",
+              "work": "\\(23\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q10e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(24 - 8 \\div (2 + 2)\\)",
+          "options": [
+            "\\(22\\)",
+            "\\(4\\)",
+            "\\(20\\)",
+            "\\(23\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the operation inside the parentheses first.",
+          "steps": [
+            {
+              "explain": "Perform the addition inside the parentheses first.",
+              "work": "\\(2 + 2 = 4\\)"
+            },
+            {
+              "explain": "Next, perform the division.",
+              "work": "\\(8 \\div 4 = 2\\)"
+            },
+            {
+              "explain": "Finally, subtract the quotient from 24.",
+              "work": "\\(24 - 2 = 22\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q10f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\((24 - 8) \\div 4 + 3\\)",
+          "options": [
+            "\\(7\\)",
+            "\\(5\\)",
+            "\\(9\\)",
+            "\\(11\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the expression inside the parentheses first, then follow the order of operations.",
+          "steps": [
+            {
+              "explain": "Subtract inside the parentheses first.",
+              "work": "\\(24 - 8 = 16\\)"
+            },
+            {
+              "explain": "Next, divide by 4.",
+              "work": "\\(16 \\div 4 = 4\\)"
+            },
+            {
+              "explain": "Finally, add 3.",
+              "work": "\\(4 + 3 = 7\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q10a_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve the word problem:\nWhat is the difference between \\(35\\) and the product of \\(5\\) and \\(4\\)?",
+          "options": [
+            "\\(15\\)",
+            "\\(20\\)",
+            "\\(10\\)",
+            "\\(25\\)"
+          ],
+          "answer": 0,
+          "hint": "Translate the words into a mathematical expression. Evaluate the product first, then find the difference.",
+          "steps": [
+            {
+              "explain": "Translate the phrase 'product of 5 and 4' into a mathematical expression.",
+              "work": "\\(5 \\times 4 = 20\\)"
+            },
+            {
+              "explain": "Subtract the product from 35 to find the difference.",
+              "work": "\\(35 - 20 = 15\\)"
+            },
+            {
+              "explain": "State the final evaluated value.",
+              "work": "\\(15\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q10b_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve the word problem:\nIncrease the quotient of \\(42\\) and \\(7\\) by the difference between \\(19\\) and \\(13\\).",
+          "options": [
+            "\\(12\\)",
+            "\\(10\\)",
+            "\\(14\\)",
+            "\\(8\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the quotient of 42 and 7, find the difference between 19 and 13, and then add them.",
+          "steps": [
+            {
+              "explain": "Calculate the quotient of 42 and 7.",
+              "work": "\\(42 \\div 7 = 6\\)"
+            },
+            {
+              "explain": "Calculate the difference between 19 and 13.",
+              "work": "\\(19 - 13 = 6\\)"
+            },
+            {
+              "explain": "Increase the quotient by the difference (add the two values).",
+              "work": "\\(6 + 6 = 12\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q10c_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve the word problem:\nDecrease the product of \\(14\\) and \\(4\\) by the square of \\(5\\).",
+          "options": [
+            "\\(31\\)",
+            "\\(36\\)",
+            "\\(26\\)",
+            "\\(21\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate the product of 14 and 4, calculate the square of 5, and subtract the second value from the first.",
+          "steps": [
+            {
+              "explain": "Calculate the product of 14 and 4.",
+              "work": "\\(14 \\times 4 = 56\\)"
+            },
+            {
+              "explain": "Calculate the square of 5.",
+              "work": "\\(5^2 = 25\\)"
+            },
+            {
+              "explain": "Subtract the square from the product.",
+              "work": "\\(56 - 25 = 31\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q10d_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve the word problem:\nDecrease the sum of \\(18\\) and \\(5^2\\) by \\(3^3\\).",
+          "options": [
+            "\\(16\\)",
+            "\\(20\\)",
+            "\\(12\\)",
+            "\\(18\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the powers first, then calculate the sum, and finally subtract.",
+          "steps": [
+            {
+              "explain": "Evaluate the exponential powers in the expression.",
+              "work": "\\(5^2 = 25\\) \\n \\(3^3 = 27\\)"
+            },
+            {
+              "explain": "Calculate the sum of 18 and 25.",
+              "work": "\\(18 + 25 = 43\\)"
+            },
+            {
+              "explain": "Decrease the sum by 27.",
+              "work": "\\(43 - 27 = 16\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q12a_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(30 - 6 \\div 2 + 4\\)",
+          "options": [
+            "\\(31\\)",
+            "\\(16\\)",
+            "\\(21\\)",
+            "\\(29\\)"
+          ],
+          "answer": 0,
+          "hint": "Perform the division first according to the order of operations.",
+          "steps": [
+            {
+              "explain": "Perform the division first.",
+              "work": "\\(6 \\div 2 = 3\\)"
+            },
+            {
+              "explain": "Substitute the quotient back and perform the subtraction and addition from left to right.",
+              "work": "\\(30 - 3 + 4 = 27 + 4 = 31\\)"
+            },
+            {
+              "explain": "Conclude the final evaluated value.",
+              "work": "\\(31\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q12b_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(36 - 15 \\div 3 - 5\\)",
+          "options": [
+            "\\(26\\)",
+            "\\(28\\)",
+            "\\(2\\)",
+            "\\(30\\)"
+          ],
+          "answer": 0,
+          "hint": "Perform the division first according to the order of operations.",
+          "steps": [
+            {
+              "explain": "Perform the division first.",
+              "work": "\\(15 \\div 3 = 5\\)"
+            },
+            {
+              "explain": "Evaluate the remaining subtractions from left to right.",
+              "work": "\\(36 - 5 - 5 = 31 - 5 = 26\\)"
+            },
+            {
+              "explain": "Conclude the final evaluated value.",
+              "work": "\\(26\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q12c_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(16 \\div 4 + 12 \\div 3\\)",
+          "options": [
+            "\\(8\\)",
+            "\\(6\\)",
+            "\\(10\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "Perform both division operations before doing the addition.",
+          "steps": [
+            {
+              "explain": "Evaluate the first division term.",
+              "work": "\\(16 \\div 4 = 4\\)"
+            },
+            {
+              "explain": "Evaluate the second division term.",
+              "work": "\\(12 \\div 3 = 4\\)"
+            },
+            {
+              "explain": "Add the two quotients together.",
+              "work": "\\(4 + 4 = 8\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q12d_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\((36 - 12) \\div 4 - 3\\)",
+          "options": [
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(0\\)",
+            "\\(6\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate the operation inside the parentheses first.",
+          "steps": [
+            {
+              "explain": "Perform the subtraction inside the parentheses.",
+              "work": "\\(36 - 12 = 24\\)"
+            },
+            {
+              "explain": "Divide the result by 4.",
+              "work": "\\(24 \\div 4 = 6\\)"
+            },
+            {
+              "explain": "Subtract 3 from the quotient.",
+              "work": "\\(6 - 3 = 3\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y5-mr-6-hard-q12e_v2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the expression:\n\\(8 + 6 \\div 2 \\times 4 - 3\\)",
+          "options": [
+            "\\(17\\)",
+            "\\(25\\)",
+            "\\(20\\)",
+            "\\(11\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate division and multiplication from left to right before addition and subtraction.",
+          "steps": [
+            {
+              "explain": "Perform the division first according to left-to-right order.",
+              "work": "\\(6 \\div 2 = 3\\)"
+            },
+            {
+              "explain": "Multiply the quotient by 4.",
+              "work": "\\(3 \\times 4 = 12\\)"
+            },
+            {
+              "explain": "Add 8 to the result and then subtract 3.",
+              "work": "\\(8 + 12 - 3 = 20 - 3 = 17\\)"
+            }
+          ],
+          "timeLimit": 60
+        }
+      ]
+    }
+  ]
+}

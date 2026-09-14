@@ -1,0 +1,79 @@
+{
+  "chapterId": "y10-17",
+  "title": "Chapter 17: Polynomials",
+  "year": "2012",
+  "topics": [
+    {
+      "topicId": "y10-17a",
+      "code": "17a",
+      "title": "The language of polynomials",
+      "questions": [
+        {
+          "id": "jr2012-q1",
+          "type": "mc",
+          "stem": "The degree of the polynomial \\(P(x) = 6x^4-4x^3+3x^5-x+1\\) is:",
+          "options": [
+            "\\(5\\)",
+            "\\(3\\)",
+            "\\(6\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "The degree is the highest power of \\(x\\) appearing — rewrite the terms in descending order first.",
+          "steps": [
+            {
+              "explain": "Rewrite the terms in descending order of power.",
+              "work": "\\(P(x) = 3x^5+6x^4-4x^3-x+1\\)"
+            },
+            {
+              "explain": "The degree is the highest power present.",
+              "work": "Leading term is \\(3x^5\\) \\(\\Rightarrow\\) degree \\(=5\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2012 Year 10 Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y10-17d",
+      "code": "17d",
+      "title": "The remainder theorem and factor theorem",
+      "questions": [
+        {
+          "id": "jrhy2008-q27",
+          "type": "mc",
+          "stem": "The remainder when \\(3x^3-7x^2+2x+4\\) is divided by \\((x-3)\\) is:",
+          "options": [
+            "\\(-28\\)",
+            "\\(-137\\)",
+            "\\(137\\)",
+            "\\(28\\)"
+          ],
+          "answer": 3,
+          "hint": "By the remainder theorem, the remainder equals \\(P(3)\\).",
+          "steps": [
+            {
+              "explain": "By the remainder theorem, substitute \\(x=3\\) into the polynomial.",
+              "work": "\\(P(3) = 3(3)^3-7(3)^2+2(3)+4 = 3(27)-7(9)+6+4\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(= 81-63+6+4 = 28\\)"
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Half-Yearly",
+            "grade": "10"
+          }
+        }
+      ]
+    }
+  ]
+}

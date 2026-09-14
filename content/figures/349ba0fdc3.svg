@@ -1,0 +1,20 @@
+<svg viewBox="0 0 200 200" width="250" height="250" xmlns="http://www.w3.org/2000/svg">
+  <line x1="30" y1="140" x2="180" y2="140" stroke="#475569" stroke-width="1.5"/>
+  <line x1="70" y1="20" x2="70" y2="180" stroke="#475569" stroke-width="1.5"/>
+  <text x="175" y="155" font-size="12" font-family="serif">x</text>
+  <text x="55" y="30" font-size="12" font-family="serif">y</text>
+  
+  <polygon points="70,160 70,80 90,40 130,40" fill="none" stroke="black" stroke-width="1.5"/>
+  <line x1="70" y1="160" x2="130" y2="40" stroke="black" stroke-width="1.5"/>
+  <line x1="60" y1="180" x2="140" y2="20" stroke="black" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <text x="25" y="175" font-size="12" font-family="serif">A(0, -1)</text>
+  <text x="25" y="85" font-size="12" font-family="serif">B(0, 3)</text>
+  <text x="75" y="35" font-size="12" font-family="serif">C(1, 5)</text>
+  <text x="135" y="35" font-size="12" font-family="serif" font-style="italic">D</text>
+  
+  <text x="115" y="110" font-size="10" transform="rotate(-63, 115, 110)">2x - y - 1 = 0</text>
+  
+  <path d="M 105 40 L 110 37 L 110 43 Z" fill="black"/>
+  <path d="M 85 105 L 90 100 L 92 108 Z" fill="black" transform="rotate(-63, 85, 105)"/>
+</svg>

@@ -1,0 +1,24 @@
+<svg viewBox="0 0 400 250" width="100%" height="auto" style="max-width:400px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:1rem;" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b"/></marker></defs>
+  <!-- Hidden Back edges -->
+  <line x1="200" y1="140" x2="320" y2="140" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="200" y1="140" x2="220" y2="80" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="100" y1="180" x2="200" y2="140" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5"/>
+  <!-- Visible Back edges -->
+  <line x1="220" y1="80" x2="300" y2="80" stroke="#475569" stroke-width="2"/>
+  <line x1="300" y1="80" x2="320" y2="140" stroke="#475569" stroke-width="2"/>
+  <!-- Connecting Visible edges -->
+  <line x1="220" y1="180" x2="320" y2="140" stroke="#475569" stroke-width="2"/>
+  <line x1="200" y1="120" x2="300" y2="80" stroke="#475569" stroke-width="2"/>
+  <line x1="120" y1="120" x2="220" y2="80" stroke="#475569" stroke-width="2"/>
+  <!-- Front face -->
+  <polygon points="100,180 220,180 200,120 120,120" fill="#fce7f3" stroke="#ec4899" stroke-width="3" stroke-linejoin="round"/>
+  
+  <text x="170" y="116" font-family="sans-serif" font-size="14" fill="#475569" text-anchor="middle">4 cm</text>
+  <text x="160" y="195" font-family="sans-serif" font-size="14" fill="#475569" text-anchor="middle">6 cm</text>
+  <line x1="120" y1="180" x2="120" y2="120" stroke="#ec4899" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="154" y="155" font-family="sans-serif" font-size="14" fill="#be185d" text-anchor="end">2 cm</text>
+  
+  <line x1="230" y1="190" x2="330" y2="150" stroke="#64748b" stroke-width="2" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+  <text x="290" y="190" font-family="sans-serif" font-size="14" fill="#475569">12 cm</text>
+</svg>

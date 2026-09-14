@@ -1,0 +1,69 @@
+{
+  "chapterId": "y7-9",
+  "title": "",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "y7-9c",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-t3-2018-p2-alg-q5",
+          "type": "mc",
+          "stem": "Select the correct equation for the following problem:\nLilit has 324 stamps in her stamp collection. This is 4 times as many stamps as Bligh has in her collection. How many stamps does Bligh have? (Let Bligh have N stamps)",
+          "options": [
+            "\\( 4N = 324 \\)",
+            "\\( 324 - N = 4 \\)",
+            "\\( N = 4 \\times 324 \\)",
+            "\\( N + 4 = 324 \\)"
+          ],
+          "answer": 0,
+          "hint": "Lilit's total is equal to 4 times Bligh's total.",
+          "steps": [
+            {
+              "explain": "Bligh has \\(N\\) stamps."
+            },
+            {
+              "explain": "4 times as many is \\(4N\\)."
+            },
+            {
+              "explain": "Lilit has 324 stamps, so \\( 4N = 324 \\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-9d",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y7-t3-2018-p2-alg-q3c",
+          "type": "mc",
+          "stem": "Solve the equation: \\( \\frac{x}{3} + 4 = 8 \\).",
+          "options": [
+            "12",
+            "4",
+            "36",
+            "1"
+          ],
+          "answer": 0,
+          "hint": "Subtract 4 from both sides, then multiply by 3.",
+          "steps": [
+            {
+              "explain": "\\( \\frac{x}{3} + 4 = 8 \\)"
+            },
+            {
+              "explain": "Subtract 4 from both sides: \\( \\frac{x}{3} = 4 \\)"
+            },
+            {
+              "explain": "Multiply both sides by 3: \\( x = 12 \\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

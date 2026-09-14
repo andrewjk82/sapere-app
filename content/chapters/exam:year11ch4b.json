@@ -1,0 +1,64 @@
+{
+  "chapterId": "exam:year11ch4b",
+  "title": "Exam year11ch4b",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ch4b",
+      "code": "EXAM",
+      "title": "Solving quadratic inequations",
+      "questions": [
+        {
+          "id": "y11a-4b-q3b",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Explain how you can confirm your answers to part a by using tables of values.",
+          "answer": "Select test values of x in each interval (e.g.\nx = -1, 1, 7 for part i) and evaluate the quadratic expression to verify if the inequality holds true.",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "Select test values of x in each interval (e.g.\nx = -1, 1, 7 for part i) and evaluate the quadratic expression to verify if the inequality holds true.",
+          "steps": [
+            {
+              "explain": "Set up intervals bounded by the roots. For example, for \\(x(x-6) < 0\\), the boundaries are 0 and 6, dividing the number line into three regions: \\(x < 0\\), \\(0 < x < 6\\), and \\(x > 6\\).",
+              "work": "Select test values of x in each interval (e.g.\nx = -1, 1, 7 for part i) and evaluate the quadratic expression to verify if the inequality holds true."
+            },
+            {
+              "explain": "Choose test values in each interval (such as \\(x = -1\\), \\(x = 2\\), and \\(x = 7\\)) and substitute them into the expression to evaluate their signs.",
+              "work": "\\((-1)(-1-6) = 7 > 0, quad (2)(2-6) = -8 < 0, quad (7)(7-6) = 7 > 0\\)"
+            },
+            {
+              "explain": "Confirm that only the region between 0 and 6 yields a negative result, verifying the solution \\(0 < x < 6\\).",
+              "work": "Select test values of x in each interval (e.g.\nx = -1, 1, 7 for part i) and evaluate the quadratic expression to verify if the inequality holds true."
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-4b-q4b",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Confirm your answers to part a by using tables of values.",
+          "answer": "Choose points in each interval to test the sign of the product expression.",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "Choose points in each interval to test the sign of the product expression.",
+          "steps": [
+            {
+              "explain": "Set up sign check intervals. For example, in part i, testing values in regions \\(x < -3\\), \\(-3 < x < 5\\), and \\(x > 5\\).",
+              "work": "Choose points in each interval to test the sign of the product expression."
+            },
+            {
+              "explain": "Substitute values like \\(x = -4\\), \\(x = 0\\), and \\(x = 6\\) into \\((x+3)(x-5)\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+              "work": "\\((-4+3)(-4-5) = 9 > 0, quad (0+3)(0-5) = -15 < 0, quad (6+3)(6-5) = 9 > 0\\)"
+            },
+            {
+              "explain": "Confirm the product is negative only in the middle interval, supporting the solution \\(-3 < x < 5\\).",
+              "work": "Choose points in each interval to test the sign of the product expression."
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        }
+      ]
+    }
+  ]
+}

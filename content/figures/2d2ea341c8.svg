@@ -1,0 +1,23 @@
+<svg viewBox="0 0 420 220" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+&#160;&#160;&#160; <text x="20" y="20" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">Stem</text>
+&#160;&#160;&#160; <text x="130" y="20" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">Leaf</text>
+&#160;&#160;&#160; <line x1="110" y1="10" x2="110" y2="190" stroke="#475569" stroke-width="1.5"/>
+&#160;&#160;&#160; <circle cx="159" cy="70" r="11" fill="#fef3c7" stroke="#ca8a04" stroke-width="2" opacity="0.85"/><circle cx="209" cy="130" r="11" fill="#e0e7ff" stroke="#16a34a" stroke-width="2" opacity="0.85"/>
+&#160;&#160;&#160; 
+&#160;&#160;&#160;&#160;&#160;&#160;<text x="40" y="40" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">5</text>
+&#160;&#160;&#160;&#160;&#160;&#160;<text x="130" y="40" font-family="system-ui" font-size="13" fill="#1e293b">4&#160;&#160;&#160;4&#160;&#160;&#160;6&#160;&#160;&#160;7&#160;&#160;&#160;7&#160;&#160;&#160;9</text>
+&#160;&#160;&#160; 
+&#160;&#160;&#160;&#160;&#160;&#160;<text x="40" y="70" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">6</text>
+&#160;&#160;&#160;&#160;&#160;&#160;<text x="130" y="70" font-family="system-ui" font-size="13" fill="#1e293b">1&#160;&#160;&#160;4&#160;&#160;&#160;4&#160;&#160;&#160;4&#160;&#160;&#160;6&#160;&#160;&#160;7&#160;&#160;&#160;8</text>
+&#160;&#160;&#160; 
+&#160;&#160;&#160;&#160;&#160;&#160;<text x="40" y="100" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">7</text>
+&#160;&#160;&#160;&#160;&#160;&#160;<text x="130" y="100" font-family="system-ui" font-size="13" fill="#1e293b">1&#160;&#160;&#160;5&#160;&#160;&#160;7&#160;&#160;&#160;8&#160;&#160;&#160;9&#160;&#160;&#160;9</text>
+&#160;&#160;&#160; 
+&#160;&#160;&#160;&#160;&#160;&#160;<text x="40" y="130" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">8</text>
+&#160;&#160;&#160;&#160;&#160;&#160;<text x="130" y="130" font-family="system-ui" font-size="13" fill="#1e293b">0&#160;&#160;&#160;1&#160;&#160;&#160;1&#160;&#160;&#160;2&#160;&#160;&#160;3&#160;&#160;&#160;4&#160;&#160;&#160;6</text>
+&#160;&#160;&#160; 
+&#160;&#160;&#160;&#160;&#160;&#160;<text x="40" y="160" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">9</text>
+&#160;&#160;&#160;&#160;&#160;&#160;<text x="130" y="160" font-family="system-ui" font-size="13" fill="#1e293b">1&#160;&#160;&#160;3&#160;&#160;&#160;4&#160;&#160;&#160;5</text>
+&#160;&#160;&#160; 
+&#160;&#160;&#160; <text x="20" y="210" font-family="system-ui" font-size="12" fill="#1e293b">Lower half median (Q1) = 64, upper half median (Q3) = 82 -> IQR = 18</text>
+  </svg>

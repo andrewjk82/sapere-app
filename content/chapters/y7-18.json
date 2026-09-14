@@ -1,0 +1,346 @@
+{
+  "chapterId": "y7-18",
+  "title": "Chapter 18: Statistics and Graphs",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "y7-18a",
+      "code": "18A",
+      "title": "Reading tables",
+      "questions": [
+        {
+          "id": "4C66jfdjbVhFLqw6jCCS",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Data has been collected on the nationalities of some of the visitors to certain island resorts. The table below gives the available data. In the table, (A) indicates that the country is in Asia, (E) indicates that the country is in Europe and (O) indicates that the country is neither in Asia nor in Europe. Note that the numbers are in <strong>tens of thousands per year</strong>.\n\n<div style=\"display: flex; justify-content: center; margin: 16px 0;\">\n  <table style=\"width: 100%; max-width: 420px; border-collapse: collapse; font-family: inherit; font-size: 14px; text-align: center; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);\">\n    <thead>\n      <tr style=\"background: #3b82f6; color: white;\">\n        <th style=\"padding: 10px 12px; font-weight: 600; border: 1px solid #cbd5e1;\">Nationality of visitor</th>\n        <th style=\"padding: 10px 12px; font-weight: 600; border: 1px solid #cbd5e1;\">Number of visitors<br/><span style=\"font-size: 11px; font-weight: normal; opacity: 0.9;\">(tens of thousands per year)</span></th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Australia (O)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">0.5</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Britain (E)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">6</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">France (E)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">3.5</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Belgium (E)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">14</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Japan (A)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">23</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Singapore (A)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">5</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">USA (O)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">1</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Italy (E)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">45</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Germany (E)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">23</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Korea (A)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">5</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Russia (E)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">12</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">New Zealand (O)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">0.25</td></tr>\n    </tbody>\n  </table>\n</div>",
+          "parts": [
+            {
+              "id": "4C66jfdjbVhFLqw6jCCS_a",
+              "type": "mc",
+              "stem": "a) What is the total number of visitors from Japan?",
+              "options": [
+                "\\(23,000\\)",
+                "\\(230,000\\)",
+                "\\(2,300\\)",
+                "\\(2,300,000\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Locate Japan (A) in the table.",
+                  "work": "Japan corresponds to 23 ten-thousands."
+                },
+                {
+                  "explain": "Multiply by 10,000 to convert to single visitors.",
+                  "work": "\\(23 \\times 10,000 = 230,000\\) visitors per year."
+                }
+              ]
+            },
+            {
+              "id": "4C66jfdjbVhFLqw6jCCS_b",
+              "type": "mc",
+              "stem": "b) What is the total number of visitors from Asia?",
+              "options": [
+                "\\(300,000\\)",
+                "\\(33,000\\)",
+                "\\(280,000\\)",
+                "\\(330,000\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Identify all Asian countries (marked with A) in the table.",
+                  "work": "Japan (23), Singapore (5), and Korea (5)."
+                },
+                {
+                  "explain": "Add these numbers together and multiply by 10,000.",
+                  "work": "Sum = \\(23 + 5 + 5 = 33\\) ten-thousands. \\(33 \\times 10,000 = 330,000\\) visitors from Asia."
+                }
+              ]
+            },
+            {
+              "id": "4C66jfdjbVhFLqw6jCCS_c",
+              "type": "mc",
+              "stem": "c) What percentage of the total number of visitors came from Europe? Give your answer to the nearest per cent.",
+              "options": [
+                "65%",
+                "70%",
+                "75%",
+                "80%"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Calculate the total visitors from all countries.",
+                  "work": "Total = \\(0.5 + 6 + 3.5 + 14 + 23 + 5 + 1 + 45 + 23 + 5 + 12 + 0.25 = 138.25\\) ten-thousands."
+                },
+                {
+                  "explain": "Calculate the sum for European countries (E).",
+                  "work": "Europe Sum = Britain (6) + France (3.5) + Belgium (14) + Italy (45) + Germany (23) + Russia (12) = 103.5 ten-thousands."
+                },
+                {
+                  "explain": "Find the percentage.",
+                  "work": "Europe Percentage = \\(\\frac{103.5}{138.25} \\times 100 \\approx 74.86\\% \\approx 75\\%\\)."
+                }
+              ]
+            }
+          ],
+          "hint": "Calculate step-by-step using the values in the table. Remember the numbers are in tens of thousands.",
+          "timeLimit": 240
+        },
+        {
+          "id": "aqYal1bkIVWNQ9nwQbnL",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "A small country has a number of island resorts. The following information was collected for five of these resorts.\n\n<div style=\"display: flex; justify-content: center; margin: 16px 0;\">\n  <table style=\"width: 100%; max-width: 550px; border-collapse: collapse; font-family: inherit; font-size: 14px; text-align: center; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);\">\n    <thead>\n      <tr style=\"background: #10b981; color: white;\">\n        <th style=\"padding: 10px 12px; font-weight: 600; border: 1px solid #cbd5e1;\">Name of resort</th>\n        <th style=\"padding: 10px 12px; font-weight: 600; border: 1px solid #cbd5e1;\">Capacity<br/><span style=\"font-size: 11px; font-weight: normal; opacity: 0.9;\">(maximum guests at one time)</span></th>\n        <th style=\"padding: 10px 12px; font-weight: 600; border: 1px solid #cbd5e1;\">Number of staff<br/><span style=\"font-size: 11px; font-weight: normal; opacity: 0.9;\">(recreation for guests)</span></th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Belle de Mer</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">115</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">5</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Dream Island</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">243</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">20</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Hibiscus Garden</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">146</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">13</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Thalassa</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">76</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">5</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Tropic Isle</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">400</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">22</td></tr>\n    </tbody>\n  </table>\n</div>",
+          "parts": [
+            {
+              "id": "aqYal1bkIVWNQ9nwQbnL_a",
+              "type": "mc",
+              "stem": "a) What is the maximum number of guests who can stay at the Hibiscus Garden resort?",
+              "options": [
+                "243",
+                "115",
+                "400",
+                "146"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Locate Hibiscus Garden in the table.",
+                  "work": "Look at the 'Capacity' column for Hibiscus Garden: 146 guests."
+                }
+              ]
+            },
+            {
+              "id": "aqYal1bkIVWNQ9nwQbnL_b",
+              "type": "mc",
+              "stem": "b) How many staff are involved in recreation for guests at Tropic Isle?",
+              "options": [
+                "5",
+                "20",
+                "13",
+                "22"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Locate Tropic Isle in the table.",
+                  "work": "Look at the 'Number of staff' column for Tropic Isle: 22 staff."
+                }
+              ]
+            },
+            {
+              "id": "aqYal1bkIVWNQ9nwQbnL_c",
+              "type": "mc",
+              "stem": "c) What is the total capacity of the five resorts in the table?",
+              "options": [
+                "950",
+                "980",
+                "880",
+                "1,020"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Sum the capacities of all 5 resorts.",
+                  "work": "Total Capacity = \\(115 + 243 + 146 + 76 + 400 = 980\\) guests."
+                }
+              ]
+            },
+            {
+              "id": "aqYal1bkIVWNQ9nwQbnL_d",
+              "type": "mc",
+              "stem": "d) What is the ratio of staff to guests at the Hibiscus Garden?",
+              "options": [
+                "\\(5 : 76\\)",
+                "\\(146 : 13\\)",
+                "\\(13 : 146\\)",
+                "\\(13 : 115\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Retrieve staff and capacity values for Hibiscus Garden.",
+                  "work": "Staff = 13, Guests = 146."
+                },
+                {
+                  "explain": "State the ratio in simplest form.",
+                  "work": "Ratio of staff to guests = \\(13 : 146\\)."
+                }
+              ]
+            }
+          ],
+          "hint": "Read values directly from the table, summing or creating ratios where required.",
+          "timeLimit": 240
+        },
+        {
+          "id": "EOE2CtMLywrbj3Gndq46",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The first table below gives the results of a tennis tournament between Rishi, Bryce, Gerald and John. Complete the second table (the summary table) and answer parts (a) to (c):\n\n<div style=\"display: flex; justify-content: center; margin: 16px 0;\">\n  <table style=\"width: 100%; max-width: 550px; border-collapse: collapse; font-family: inherit; font-size: 13px; text-align: center; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);\">\n    <thead>\n      <tr style=\"background: #8b5cf6; color: white;\">\n        <th rowspan=\"2\" style=\"padding: 12px; font-weight: 600; border: 1px solid #cbd5e1; vertical-align: middle;\">Match</th>\n        <th colspan=\"4\" style=\"padding: 6px; font-weight: 600; border: 1px solid #cbd5e1;\">Sets won</th>\n      </tr>\n      <tr style=\"background: #7c3aed; color: white;\">\n        <th style=\"padding: 6px 12px; font-weight: 600; border: 1px solid #cbd5e1; width: 20%;\">Rishi</th>\n        <th style=\"padding: 6px 12px; font-weight: 600; border: 1px solid #cbd5e1; width: 20%;\">Bryce</th>\n        <th style=\"padding: 6px 12px; font-weight: 600; border: 1px solid #cbd5e1; width: 20%;\">Gerald</th>\n        <th style=\"padding: 6px 12px; font-weight: 600; border: 1px solid #cbd5e1; width: 20%;\">John</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Rishi vs Bryce</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">0</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">3</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Rishi vs Gerald</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">3</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">2</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Rishi vs John</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">3</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">2</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Bryce vs Gerald</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">3</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">1</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Bryce vs John</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">3</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">0</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500; text-align: left;\">Gerald vs John</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; background: #f1f5f9;\"></td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">3</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">2</td></tr>\n    </tbody>\n  </table>\n</div>\n\nComplete the following summary table using the information given above.\n\n<div style=\"display: flex; justify-content: center; margin: 16px 0;\">\n  <table style=\"width: 100%; max-width: 550px; border-collapse: collapse; font-family: inherit; font-size: 13px; text-align: center; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);\">\n    <thead>\n      <tr style=\"background: #3b82f6; color: white;\">\n        <th rowspan=\"2\" style=\"padding: 12px; font-weight: 600; border: 1px solid #cbd5e1; vertical-align: middle; text-align: left;\">Player</th>\n        <th colspan=\"2\" style=\"padding: 6px; font-weight: 600; border: 1px solid #cbd5e1;\">Matches</th>\n        <th colspan=\"2\" style=\"padding: 6px; font-weight: 600; border: 1px solid #cbd5e1;\">Sets</th>\n      </tr>\n      <tr style=\"background: #2563eb; color: white;\">\n        <th style=\"padding: 6px 12px; font-weight: 600; border: 1px solid #cbd5e1; width: 22%;\">Won</th>\n        <th style=\"padding: 6px 12px; font-weight: 600; border: 1px solid #cbd5e1; width: 22%;\">Lost</th>\n        <th style=\"padding: 6px 12px; font-weight: 600; border: 1px solid #cbd5e1; width: 22%;\">Won</th>\n        <th style=\"padding: 6px 12px; font-weight: 600; border: 1px solid #cbd5e1; width: 22%;\">Lost</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 600; text-align: left;\">Rishi</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 600; text-align: left;\">Bryce</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 600; text-align: left;\">Gerald</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 600; text-align: left;\">John</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #94a3b8; font-style: italic;\">(To complete)</td></tr>\n    </tbody>\n  </table>\n</div>",
+          "parts": [
+            {
+              "id": "EOE2CtMLywrbj3Gndq46_a",
+              "type": "mc",
+              "stem": "a) Who won the most matches?",
+              "options": [
+                "Gerald",
+                "Rishi",
+                "John",
+                "Bryce"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Determine the number of wins for each player from the matches.",
+                  "work": "Rishi vs Bryce: Bryce won (0-3)\nRishi vs Gerald: Rishi won (3-2)\nRishi vs John: Rishi won (3-2)\nBryce vs Gerald: Bryce won (3-1)\nBryce vs John: Bryce won (3-0)\nGerald vs John: Gerald won (3-2)."
+                },
+                {
+                  "explain": "Count the wins: Rishi (2), Bryce (3), Gerald (1), John (0).",
+                  "work": "Bryce won the most matches (3 wins)."
+                }
+              ]
+            },
+            {
+              "id": "EOE2CtMLywrbj3Gndq46_b",
+              "type": "mc",
+              "stem": "b) Who played the most sets?",
+              "options": [
+                "Bryce",
+                "John",
+                "Gerald",
+                "Rishi"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Sum the sets won and lost for each player.",
+                  "work": "Rishi: 6 won, 7 lost (13 total)\nBryce: 9 won, 1 lost (10 total)\nGerald: 6 won, 8 lost (14 total)\nJohn: 4 won, 9 lost (13 total)."
+                },
+                {
+                  "explain": "Compare the total sets played.",
+                  "work": "Gerald played the most sets (14 sets)."
+                }
+              ]
+            },
+            {
+              "id": "EOE2CtMLywrbj3Gndq46_c",
+              "type": "mc",
+              "stem": "c) What percentage of the matches Gerald played did he win?",
+              "options": [
+                "33%",
+                "25%",
+                "50%",
+                "67%"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Determine Gerald's matches played and matches won.",
+                  "work": "Gerald played 3 matches (vs Rishi, vs Bryce, vs John) and won exactly 1 match (vs John)."
+                },
+                {
+                  "explain": "Calculate the percentage.",
+                  "work": "\\(\\frac{1}{3} \\times 100 \\approx 33.33\\% \\approx 33\\%\\)."
+                }
+              ]
+            }
+          ],
+          "hint": "Analyze each match in the first table to complete the summary table, then answer each question.",
+          "timeLimit": 240
+        },
+        {
+          "id": "vIuMtUyprlQulGcnQv4O",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Data on the ages of male inhabitants of the Maldives in 2001 are presented in the table below. The total number of males is 226,634.\n\n<div style=\"display: flex; justify-content: center; margin: 16px 0;\">\n  <table style=\"width: 100%; max-width: 320px; border-collapse: collapse; font-family: inherit; font-size: 14px; text-align: center; border: 1px solid #cbd5e1; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);\">\n    <thead>\n      <tr style=\"background: #6366f1; color: white;\">\n        <th style=\"padding: 10px 12px; font-weight: 600; border: 1px solid #cbd5e1;\">Age group (years)</th>\n        <th style=\"padding: 10px 12px; font-weight: 600; border: 1px solid #cbd5e1;\">Number of males</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">6–9</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">30 813</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">10–14</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">41 089</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">15–19</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">33 266</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">20–24</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">23 514</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">25–29</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">20 090</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">30–34</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">18 161</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">35–39</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">15 699</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">40–44</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">12 402</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">45–49</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">7 461</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">50–54</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">5 967</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">55–59</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">5 996</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">60–64</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">6 312</td></tr>\n      <tr style=\"background: #f8fafc;\"><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">65–69</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">4 611</td></tr>\n      <tr><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; font-weight: 500;\">&gt; 69</td><td style=\"padding: 8px 12px; border: 1px solid #cbd5e1; color: #334155;\">1 253</td></tr>\n    </tbody>\n  </table>\n</div>",
+          "parts": [
+            {
+              "id": "vIuMtUyprlQulGcnQv4O_a",
+              "type": "mc",
+              "stem": "a) How many male inhabitants of the Maldives are aged between 10 and 14?",
+              "options": [
+                "23,514",
+                "33,266",
+                "30,813",
+                "41,089"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Locate age group 10–14 in the table.",
+                  "work": "The number of males is exactly 41,089."
+                }
+              ]
+            },
+            {
+              "id": "vIuMtUyprlQulGcnQv4O_b",
+              "type": "mc",
+              "stem": "b) What percentage of males are aged under 25? Give your answer to the nearest per cent.",
+              "options": [
+                "57%",
+                "45%",
+                "50%",
+                "60%"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Sum the counts for age groups 6–9, 10–14, 15–19, and 20–24.",
+                  "work": "Sum = \\(30,813 + 41,089 + 33,266 + 23,514 = 128,682\\)."
+                },
+                {
+                  "explain": "Calculate the percentage of the total (226,634).",
+                  "work": "\\(\\frac{128,682}{226,634} \\times 100 \\approx 56.78\\% \\approx 57\\%\\)."
+                }
+              ]
+            },
+            {
+              "id": "vIuMtUyprlQulGcnQv4O_c",
+              "type": "mc",
+              "stem": "c) What percentage of males are aged between 15 and 24? Give your answer to the nearest per cent.",
+              "options": [
+                "15%",
+                "20%",
+                "30%",
+                "25%"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Sum the counts for age groups 15–19 and 20–24.",
+                  "work": "Sum = \\(33,266 + 23,514 = 56,780\\)."
+                },
+                {
+                  "explain": "Calculate the percentage of the total (226,634).",
+                  "work": "\\(\\frac{56,780}{226,634} \\times 100 \\approx 25.05\\% \\approx 25\\%\\)."
+                }
+              ]
+            },
+            {
+              "id": "vIuMtUyprlQulGcnQv4O_d",
+              "type": "mc",
+              "stem": "d) What is wrong with the given data?",
+              "options": [
+                "There are too many female categories included.",
+                "The values do not sum to 100%.",
+                "Males aged 0–5 are missing from the dataset.",
+                "The categories overlap each other."
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Look at the starting age group in the table.",
+                  "work": "The table starts at age 6. Young children aged 0–5 are completely missing."
+                }
+              ]
+            }
+          ],
+          "hint": "Recall percentage formulas and look closely at the age groups in the table.",
+          "timeLimit": 240
+        }
+      ]
+    }
+  ]
+}

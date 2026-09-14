@@ -1,0 +1,971 @@
+{
+  "chapterId": "exam:year12ach1c",
+  "title": "Exam Practice",
+  "year": "Year 12a",
+  "topics": [
+    {
+      "topicId": "exam:year12ach1c",
+      "code": "",
+      "title": "",
+      "questions": [
+        {
+          "id": "y12a-1c-h1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Ethan at the robotics factory is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(4\\) and common difference \\(7\\).\nSequence B is a geometric progression (GP) with first term \\(4\\) and common ratio \\(3\\).\nFind the smallest term greater than \\(105\\) that is common to both sequences.",
+          "options": [
+            "\\(2923\\)",
+            "\\(8748\\)",
+            "\\(2916\\)",
+            "\\(972\\)"
+          ],
+          "answer": 2,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(2916\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 4 + 7(n-1)\\) for the AP, and \\(G_m = 4 \\times 3^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 4, 12, 36, 108, 324, 972, 2916, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 4\\text{ must be a multiple of } 7.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 2916 \\implies 2916 - 4 = 2912 = 7 \\times 416.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the geothermal power plant, Layla determines that the product of the first three concentrations in GP is \\(216\\).\nIf the sum of the second and third concentrations is \\(24\\), find the first concentration of the series.",
+          "options": [
+            "\\(2\\)",
+            "\\(6\\)",
+            "\\(6\\)",
+            "\\(4\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(2\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 216 \\implies a^3 = 216 \\implies a = 6\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 24 \\implies 6 + 6r = 24 \\implies r = 3\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Zara at the high-frequency trading firm is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(3\\) and common difference \\(5\\).\nSequence B is a geometric progression (GP) with first term \\(3\\) and common ratio \\(3\\).\nFind the smallest term greater than \\(140\\) that is common to both sequences.",
+          "options": [
+            "\\(243\\)",
+            "\\(248\\)",
+            "\\(729\\)",
+            "\\(81\\)"
+          ],
+          "answer": 0,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(243\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 3 + 5(n-1)\\) for the AP, and \\(G_m = 3 \\times 3^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 3, 9, 27, 81, 243, 729, 2187, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 3\\text{ must be a multiple of } 5.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 243 \\implies 243 - 3 = 240 = 5 \\times 48.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h13",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the semiconductor foundry, Tariq determines that the product of the first three concentrations in GP is \\(1728\\).\nIf the sum of the second and third concentrations is \\(36\\), find the first concentration of the series.",
+          "options": [
+            "\\(12\\)",
+            "\\(8\\)",
+            "\\(12\\)",
+            "\\(6\\)"
+          ],
+          "answer": 3,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 1728 \\implies a^3 = 1728 \\implies a = 12\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 36 \\implies 12 + 12r = 36 \\implies r = 2\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Liam at the autonomous drone fleet is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(4\\) and common difference \\(7\\).\nSequence B is a geometric progression (GP) with first term \\(4\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(175\\) that is common to both sequences.",
+          "options": [
+            "\\(256\\)",
+            "\\(512\\)",
+            "\\(263\\)",
+            "\\(128\\)"
+          ],
+          "answer": 0,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(256\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 4 + 7(n-1)\\) for the AP, and \\(G_m = 4 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 4, 8, 16, 32, 64, 128, 256, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 4\\text{ must be a multiple of } 7.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 256 \\implies 256 - 4 = 252 = 7 \\times 36.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the biotech lab, Aria determines that the product of the first three concentrations in GP is \\(216\\).\nIf the sum of the second and third concentrations is \\(24\\), find the first concentration of the series.",
+          "options": [
+            "\\(6\\)",
+            "\\(2\\)",
+            "\\(4\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(2\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 216 \\implies a^3 = 216 \\implies a = 6\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 24 \\implies 6 + 6r = 24 \\implies r = 3\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h22",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Chloe at the quantum computing array is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(5\\) and common difference \\(7\\).\nSequence B is a geometric progression (GP) with first term \\(5\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(210\\) that is common to both sequences.",
+          "options": [
+            "\\(327\\)",
+            "\\(160\\)",
+            "\\(640\\)",
+            "\\(320\\)"
+          ],
+          "answer": 3,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(320\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 5 + 7(n-1)\\) for the AP, and \\(G_m = 5 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 5\\text{ must be a multiple of } 7.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 320 \\implies 320 - 5 = 315 = 7 \\times 45.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the satellite network, Devon determines that the product of the first three concentrations in GP is \\(1728\\).\nIf the sum of the second and third concentrations is \\(36\\), find the first concentration of the series.",
+          "options": [
+            "\\(12\\)",
+            "\\(12\\)",
+            "\\(8\\)",
+            "\\(6\\)"
+          ],
+          "answer": 3,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 1728 \\implies a^3 = 1728 \\implies a = 12\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 36 \\implies 12 + 12r = 36 \\implies r = 2\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h29",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Kaelen at the marine research vessel is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(3\\) and common difference \\(5\\).\nSequence B is a geometric progression (GP) with first term \\(3\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(245\\) that is common to both sequences.",
+          "options": [
+            "\\(384\\)",
+            "\\(773\\)",
+            "\\(768\\)",
+            "\\(1536\\)"
+          ],
+          "answer": 2,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(768\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 3 + 5(n-1)\\) for the AP, and \\(G_m = 3 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 3, 6, 12, 24, 48, 96, 192, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 3\\text{ must be a multiple of } 5.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 768 \\implies 768 - 3 = 765 = 5 \\times 153.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h34",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the hydroponic farm, Sienna determines that the product of the first three concentrations in GP is \\(216\\).\nIf the sum of the second and third concentrations is \\(24\\), find the first concentration of the series.",
+          "options": [
+            "\\(6\\)",
+            "\\(2\\)",
+            "\\(6\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(2\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 216 \\implies a^3 = 216 \\implies a = 6\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 24 \\implies 6 + 6r = 24 \\implies r = 3\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h36",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Nadia at the geothermal power plant is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(5\\) and common difference \\(11\\).\nSequence B is a geometric progression (GP) with first term \\(5\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(280\\) that is common to both sequences.",
+          "options": [
+            "\\(5120\\)",
+            "\\(5131\\)",
+            "\\(10240\\)",
+            "\\(2560\\)"
+          ],
+          "answer": 0,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(5120\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 5 + 11(n-1)\\) for the AP, and \\(G_m = 5 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 5\\text{ must be a multiple of } 11.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 5120 \\implies 5120 - 5 = 5115 = 11 \\times 465.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h41",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the robotics factory, Ethan determines that the product of the first three concentrations in GP is \\(1728\\).\nIf the sum of the second and third concentrations is \\(36\\), find the first concentration of the series.",
+          "options": [
+            "\\(8\\)",
+            "\\(12\\)",
+            "\\(12\\)",
+            "\\(6\\)"
+          ],
+          "answer": 3,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 1728 \\implies a^3 = 1728 \\implies a = 12\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 36 \\implies 12 + 12r = 36 \\implies r = 2\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h43",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Marcus at the semiconductor foundry is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(2\\) and common difference \\(5\\).\nSequence B is a geometric progression (GP) with first term \\(2\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(315\\) that is common to both sequences.",
+          "options": [
+            "\\(256\\)",
+            "\\(517\\)",
+            "\\(512\\)",
+            "\\(1024\\)"
+          ],
+          "answer": 2,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(512\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 2 + 5(n-1)\\) for the AP, and \\(G_m = 2 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 2, 4, 8, 16, 32, 64, 128, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 2\\text{ must be a multiple of } 5.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 512 \\implies 512 - 2 = 510 = 5 \\times 102.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h48",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the high-frequency trading firm, Zara determines that the product of the first three concentrations in GP is \\(216\\).\nIf the sum of the second and third concentrations is \\(24\\), find the first concentration of the series.",
+          "options": [
+            "\\(6\\)",
+            "\\(2\\)",
+            "\\(4\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(2\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 216 \\implies a^3 = 216 \\implies a = 6\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 24 \\implies 6 + 6r = 24 \\implies r = 3\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h50",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Elena at the biotech lab is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(4\\) and common difference \\(9\\).\nSequence B is a geometric progression (GP) with first term \\(4\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(350\\) that is common to both sequences.",
+          "options": [
+            "\\(8192\\)",
+            "\\(16393\\)",
+            "\\(32768\\)",
+            "\\(16384\\)"
+          ],
+          "answer": 3,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(16384\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 4 + 9(n-1)\\) for the AP, and \\(G_m = 4 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 4, 8, 16, 32, 64, 128, 256, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 4\\text{ must be a multiple of } 9.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 16384 \\implies 16384 - 4 = 16380 = 9 \\times 1820.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h55",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the autonomous drone fleet, Liam determines that the product of the first three concentrations in GP is \\(1728\\).\nIf the sum of the second and third concentrations is \\(36\\), find the first concentration of the series.",
+          "options": [
+            "\\(12\\)",
+            "\\(8\\)",
+            "\\(6\\)",
+            "\\(12\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 1728 \\implies a^3 = 1728 \\implies a = 12\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 36 \\implies 12 + 12r = 36 \\implies r = 2\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h57",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Mateo at the satellite network is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(5\\) and common difference \\(7\\).\nSequence B is a geometric progression (GP) with first term \\(5\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(385\\) that is common to both sequences.",
+          "options": [
+            "\\(5120\\)",
+            "\\(1280\\)",
+            "\\(2567\\)",
+            "\\(2560\\)"
+          ],
+          "answer": 3,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(2560\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 5 + 7(n-1)\\) for the AP, and \\(G_m = 5 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 5\\text{ must be a multiple of } 7.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 2560 \\implies 2560 - 5 = 2555 = 7 \\times 365.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h62",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the quantum computing array, Chloe determines that the product of the first three concentrations in GP is \\(216\\).\nIf the sum of the second and third concentrations is \\(24\\), find the first concentration of the series.",
+          "options": [
+            "\\(2\\)",
+            "\\(6\\)",
+            "\\(4\\)",
+            "\\(6\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(2\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 216 \\implies a^3 = 216 \\implies a = 6\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 24 \\implies 6 + 6r = 24 \\implies r = 3\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h64",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Sophia at the hydroponic farm is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(5\\) and common difference \\(5\\).\nSequence B is a geometric progression (GP) with first term \\(5\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(420\\) that is common to both sequences.",
+          "options": [
+            "\\(320\\)",
+            "\\(1280\\)",
+            "\\(645\\)",
+            "\\(640\\)"
+          ],
+          "answer": 3,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(640\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 5 + 5(n-1)\\) for the AP, and \\(G_m = 5 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 5\\text{ must be a multiple of } 5.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 640 \\implies 640 - 5 = 635 = 5 \\times 127.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h69",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the marine research vessel, Kaelen determines that the product of the first three concentrations in GP is \\(1728\\).\nIf the sum of the second and third concentrations is \\(36\\), find the first concentration of the series.",
+          "options": [
+            "\\(12\\)",
+            "\\(6\\)",
+            "\\(8\\)",
+            "\\(12\\)"
+          ],
+          "answer": 1,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 1728 \\implies a^3 = 1728 \\implies a = 12\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 36 \\implies 12 + 12r = 36 \\implies r = 2\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h71",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Rohan at the robotics factory is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(3\\) and common difference \\(5\\).\nSequence B is a geometric progression (GP) with first term \\(3\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(455\\) that is common to both sequences.",
+          "options": [
+            "\\(384\\)",
+            "\\(773\\)",
+            "\\(1536\\)",
+            "\\(768\\)"
+          ],
+          "answer": 3,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(768\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 3 + 5(n-1)\\) for the AP, and \\(G_m = 3 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 3, 6, 12, 24, 48, 96, 192, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 3\\text{ must be a multiple of } 5.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 768 \\implies 768 - 3 = 765 = 5 \\times 153.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h76",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the geothermal power plant, Nadia determines that the product of the first three concentrations in GP is \\(216\\).\nIf the sum of the second and third concentrations is \\(24\\), find the first concentration of the series.",
+          "options": [
+            "\\(6\\)",
+            "\\(2\\)",
+            "\\(4\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(2\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 216 \\implies a^3 = 216 \\implies a = 6\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 24 \\implies 6 + 6r = 24 \\implies r = 3\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h78",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Priya at the high-frequency trading firm is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(5\\) and common difference \\(7\\).\nSequence B is a geometric progression (GP) with first term \\(5\\) and common ratio \\(3\\).\nFind the smallest term greater than \\(490\\) that is common to both sequences.",
+          "options": [
+            "\\(3652\\)",
+            "\\(1215\\)",
+            "\\(3645\\)",
+            "\\(10935\\)"
+          ],
+          "answer": 2,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(3645\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 5 + 7(n-1)\\) for the AP, and \\(G_m = 5 \\times 3^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 5, 15, 45, 135, 405, 1215, 3645, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 5\\text{ must be a multiple of } 7.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 3645 \\implies 3645 - 5 = 3640 = 7 \\times 520.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h83",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the semiconductor foundry, Marcus determines that the product of the first three concentrations in GP is \\(1728\\).\nIf the sum of the second and third concentrations is \\(36\\), find the first concentration of the series.",
+          "options": [
+            "\\(8\\)",
+            "\\(12\\)",
+            "\\(6\\)",
+            "\\(12\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 1728 \\implies a^3 = 1728 \\implies a = 12\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 36 \\implies 12 + 12r = 36 \\implies r = 2\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h85",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Julian at the autonomous drone fleet is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(5\\) and common difference \\(9\\).\nSequence B is a geometric progression (GP) with first term \\(5\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(525\\) that is common to both sequences.",
+          "options": [
+            "\\(20480\\)",
+            "\\(20489\\)",
+            "\\(10240\\)",
+            "\\(40960\\)"
+          ],
+          "answer": 0,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(20480\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 5 + 9(n-1)\\) for the AP, and \\(G_m = 5 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 5\\text{ must be a multiple of } 9.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 20480 \\implies 20480 - 5 = 20475 = 9 \\times 2275.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h90",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the biotech lab, Elena determines that the product of the first three concentrations in GP is \\(216\\).\nIf the sum of the second and third concentrations is \\(24\\), find the first concentration of the series.",
+          "options": [
+            "\\(4\\)",
+            "\\(6\\)",
+            "\\(2\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(2\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 216 \\implies a^3 = 216 \\implies a = 6\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 24 \\implies 6 + 6r = 24 \\implies r = 3\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{6}{3} = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h92",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Maya at the quantum computing array is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(4\\) and common difference \\(9\\).\nSequence B is a geometric progression (GP) with first term \\(4\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(560\\) that is common to both sequences.",
+          "options": [
+            "\\(16384\\)",
+            "\\(32768\\)",
+            "\\(8192\\)",
+            "\\(16393\\)"
+          ],
+          "answer": 0,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(16384\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 4 + 9(n-1)\\) for the AP, and \\(G_m = 4 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 4, 8, 16, 32, 64, 128, 256, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 4\\text{ must be a multiple of } 9.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 16384 \\implies 16384 - 4 = 16380 = 9 \\times 1820.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h97",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a biochemical analysis at the satellite network, Mateo determines that the product of the first three concentrations in GP is \\(1728\\).\nIf the sum of the second and third concentrations is \\(36\\), find the first concentration of the series.",
+          "options": [
+            "\\(12\\)",
+            "\\(8\\)",
+            "\\(6\\)",
+            "\\(12\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the terms as \\(a/r, a, ar\\) to cancel \\(r\\) in the product equation.",
+          "solution": "The first concentration is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Represent the three terms of the geometric progression in a product-friendly form.",
+              "work": "\\(\\text{Let the terms be } \\dfrac{a}{r}, a, text{ and } ar.\\)"
+            },
+            {
+              "explain": "Set the product of the three terms equal to the given value and solve for the middle term \\(a\\).",
+              "work": "\\(\\dfrac{a}{r} \\times a \\times ar = 1728 \\implies a^3 = 1728 \\implies a = 12\\)"
+            },
+            {
+              "explain": "Express the sum of the second and third terms and solve for \\(r\\).",
+              "work": "\\(a + ar = 36 \\implies 12 + 12r = 36 \\implies r = 2\\)"
+            },
+            {
+              "explain": "Find the first term of the progression.",
+              "work": "\\(T_1 = \\dfrac{a}{r} = \\dfrac{12}{2} = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1c-h99",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Leo at the marine research vessel is studying two sequences representing sensor readings.\nSequence A is an arithmetic progression (AP) with first term \\(5\\) and common difference \\(5\\).\nSequence B is a geometric progression (GP) with first term \\(5\\) and common ratio \\(2\\).\nFind the smallest term greater than \\(595\\) that is common to both sequences.",
+          "options": [
+            "\\(640\\)",
+            "\\(645\\)",
+            "\\(1280\\)",
+            "\\(320\\)"
+          ],
+          "answer": 0,
+          "hint": "List the GP terms first since they grow much faster than AP terms, then test AP divisibility.",
+          "solution": "The smallest common term is \\(640\\).",
+          "steps": [
+            {
+              "explain": "Define the general term formulas for both progressions.",
+              "work": "\\(T_n = 5 + 5(n-1)\\) for the AP, and \\(G_m = 5 \\times 2^{m-1}\\) for the GP."
+            },
+            {
+              "explain": "List the terms of the GP starting around the threshold.",
+              "work": "\\(\\text{GP terms: } 5, 10, 20, 40, 80, 160, 320, dots\\)"
+            },
+            {
+              "explain": "Check which GP term greater than the threshold satisfies the AP divisibility condition.",
+              "work": "\\(G_m - 5\\text{ must be a multiple of } 5.\\)"
+            },
+            {
+              "explain": "Identify the smallest term satisfying the remainder condition.",
+              "work": "\\(G_m = 640 \\implies 640 - 5 = 635 = 5 \\times 127.\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

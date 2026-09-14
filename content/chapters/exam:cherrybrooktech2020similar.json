@@ -1,0 +1,186 @@
+{
+  "chapterId": "exam:cherrybrooktech2020similar",
+  "title": "Exam Practice",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "y12a-2F",
+      "code": "2F",
+      "title": "Review of translations and reflections",
+      "questions": [
+        {
+          "id": "cths2020s-q24",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The diagram shows the graph of $y = h(x)$ with local maximum at $x = -4$, local minimum at $x = -2$, and local maximum at $x = 1$.\n\n(a) Sketch $h'(x)$.\n\n(b) Sketch $h(-x)$.",
+          "parts": [
+            {
+              "id": "cths2020s-q24a",
+              "type": "review",
+              "stem": "(a) Sketch $h'(x)$.",
+              "answer": "Zero at $x=-4,-2,1$. Positive on $(-\\infty,-4)\\cup(-2,1)$, negative on $(-4,-2)\\cup(1,\\infty)$.",
+              "steps": [
+                {
+                  "explain": "Mark zeros at $x=-4,-2,1$.",
+                  "work": "h'(-4)=h'(-2)=h'(1)=0"
+                },
+                {
+                  "explain": "Sketch the curve with correct sign in each interval.",
+                  "work": "+,\\;0,\\;-,\\;0,\\;+,\\;0,\\;-"
+                }
+              ]
+            },
+            {
+              "id": "cths2020s-q24b",
+              "type": "review",
+              "stem": "(b) Sketch $h(-x)$.",
+              "answer": "Reflection of $h(x)$ in the $y$-axis. Local max at $x=4$, local min at $x=2$, local max at $x=-1$.",
+              "steps": [
+                {
+                  "explain": "Reflect: $(x,y) \\to (-x,y)$.",
+                  "work": "\\text{max at }x=4,\\;\\text{min at }x=2,\\;\\text{max at }x=-1"
+                }
+              ]
+            }
+          ],
+          "answer": "(a) $h'(x)$: zero at $x=-4,-2,1$; positive on $(-\\infty,-4)$ and $(-2,1)$; negative on $(-4,-2)$ and $(1,\\infty)$.\n(b) $h(-x)$: reflection in $y$-axis; max at $x=4$, min at $x=2$, max at $x=-1$.",
+          "hint": "For (a): $h'=0$ at stationary points; sign of $h'$ matches increasing/decreasing. For (b): reflect in $y$-axis.",
+          "solution": "(a) $h'=0$ at $x=-4,-2,1$; $h'>0$ on $(-\\infty,-4)\\cup(-2,1)$; $h'<0$ on $(-4,-2)\\cup(1, infty)$. (b) Reflect in $y$-axis: max at $x=4$, min at $x=2$, max at $x=-1$.",
+          "inactive": true,
+          "meta": {
+            "source": "Cherrybrook Tech 2020 Trial Q24",
+            "examPaper": "cths-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-3B",
+      "code": "3B",
+      "title": "Stationary points and turning points",
+      "questions": [
+        {
+          "id": "cths2020s-q21",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A function is given by \\( y = 2x^3 - 3x^2 - 12x + 4 \\).",
+          "parts": [
+            {
+              "id": "cths2020s-q21a",
+              "type": "mc",
+              "stem": "(a) Find the stationary points, determine their nature, and find any points of inflection.",
+              "options": [
+                "Local max at \\((-1, 11)\\), local min at \\((2, -16)\\), inflection at \\((\\frac{1}{2}, -\\frac{5}{2})\\)",
+                "Local min at \\((-1, 11)\\), local max at \\((2, -16)\\), inflection at \\((\\frac{1}{2}, -\\frac{5}{2})\\)",
+                "Local max at \\((-2, 15)\\), local min at \\((1, -12)\\), inflection at \\((-\\frac{1}{2}, \\frac{3}{2})\\)",
+                "Local max at \\((1, 11)\\), local min at \\((-2, -16)\\), inflection at \\((-\\frac{1}{2}, -\\frac{5}{2})\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Find the first derivative \\(y'\\) using the power rule.",
+                  "work": "y' = 6x^2 - 6x - 12"
+                },
+                {
+                  "explain": "Set \\(y' = 0\\) and solve for stationary points.",
+                  "work": "6(x^2 - x - 2) = 0 \\Rightarrow 6(x-2)(x+1) = 0 \\Rightarrow x = 2 \\text{ or } x = -1"
+                },
+                {
+                  "explain": "Find the second derivative \\(y''\\) to classify.",
+                  "work": "y'' = 12x - 6"
+                },
+                {
+                  "explain": "Classify stationary points.",
+                  "work": "x=-1:\\quad y''=-18 < 0 \\Rightarrow \\text{local max at } (-1, 11)\nx=2:\\quad y''=18 > 0 \\Rightarrow \\text{local min at } (2, -16)"
+                },
+                {
+                  "explain": "Find points of inflection by setting \\(y'' = 0\\).",
+                  "work": "12x - 6 = 0 \\Rightarrow x = \\frac{1}{2}\n\\text{POI at } \\left(\\frac{1}{2}, -\\frac{5}{2}\\right)"
+                }
+              ]
+            },
+            {
+              "id": "cths2020s-q21b",
+              "type": "review",
+              "stem": "(b) Sketch the curve, showing the stationary points, the point(s) of inflection and the \\(y\\)-intercept.",
+              "answer": "",
+              "steps": [
+                {
+                  "explain": "Identify the y-intercept.",
+                  "work": "y\\text{-intercept occurs when } x=0: y = 4"
+                },
+                {
+                  "explain": "Sketch the curve passing through these key features.",
+                  "work": "\\text{Plot local max } (-1,11)\\text{, POI } \\left(\\frac{1}{2}, -\\frac{5}{2}\\right)\\text{, local min } (2,-16)\\text{, and } y\\text{-intercept } (0,4)\\text{.}",
+                  "figure": {
+                    "jsxGraph": {
+                      "width": 300,
+                      "height": 300,
+                      "boundingbox": [
+                        -4,
+                        20,
+                        5,
+                        -20
+                      ],
+                      "showGrid": true,
+                      "showAxisLabels": true,
+                      "script": "board.suspendUpdate();\nboard.create('functiongraph', [function(x){ return 2*Math.pow(x,3) - 3*Math.pow(x,2) - 12*x + 4; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();",
+                      "elements": [
+                        {
+                          "type": "point",
+                          "coords": [
+                            -1,
+                            11
+                          ],
+                          "name": "(-1, 11)",
+                          "color": "blue"
+                        },
+                        {
+                          "type": "point",
+                          "coords": [
+                            2,
+                            -16
+                          ],
+                          "name": "(2, -16)",
+                          "color": "blue"
+                        },
+                        {
+                          "type": "point",
+                          "coords": [
+                            0.5,
+                            -2.5
+                          ],
+                          "name": "(\\frac{1}{2}, -\\frac{5}{2})",
+                          "color": "slate"
+                        },
+                        {
+                          "type": "point",
+                          "coords": [
+                            0,
+                            4
+                          ],
+                          "name": "(0, 4)",
+                          "color": "slate"
+                        }
+                      ]
+                    }
+                  }
+                }
+              ],
+              "manual": true
+            }
+          ],
+          "manual": true,
+          "timeLimit": 300,
+          "meta": {
+            "source": "Cherrybrook Tech 2020 Trial Q21"
+          },
+          "dna": {
+            "dnaId": "CALC-STAT-01",
+            "dnaConfidence": 0.95
+          }
+        }
+      ]
+    }
+  ]
+}

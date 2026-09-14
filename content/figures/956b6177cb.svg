@@ -1,0 +1,13 @@
+<svg viewBox="0 0 420 300" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<path d="M 130 230 L 350 230 L 130 70 Z" fill="#dbeafe" fill-opacity="0.5" stroke="none"/>
+<line x1="130" y1="230" x2="350" y2="230" stroke="#475569" stroke-width="2"/>
+<line x1="130" y1="230" x2="130" y2="70" stroke="#e11d48" stroke-width="3"/>
+<line x1="130" y1="70" x2="350" y2="230" stroke="#475569" stroke-width="2"/>
+<path d="M 130 212 L 148 212 L 148 230" fill="none" stroke="#475569" stroke-width="1.5"/>
+<text x="240" y="258" text-anchor="middle" font-family="system-ui" font-size="13" font-weight="700" fill="#4f46e5">ST = 8 cm</text>
+<text x="120" y="150" text-anchor="end" font-family="system-ui" font-size="13" font-weight="700" fill="#e11d48">opp</text>
+<text x="303" y="207" text-anchor="end" font-family="system-ui" font-size="13" font-weight="700" fill="#4f46e5">42°</text>
+<text x="103" y="256" text-anchor="end" font-family="system-ui" font-size="15" font-weight="600" fill="#1e293b">S</text>
+<text x="367" y="256" text-anchor="start" font-family="system-ui" font-size="15" font-weight="600" fill="#1e293b">T</text>
+<text x="115" y="53" text-anchor="end" font-family="system-ui" font-size="15" font-weight="600" fill="#1e293b">U</text>
+</svg>

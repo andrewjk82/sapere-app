@@ -1,0 +1,25 @@
+<svg viewBox="0 0 420 226" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+    <text x="20" y="20" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">Stem</text>
+    <text x="130" y="20" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">Leaf</text>
+    <line x1="110" y1="10" x2="110" y2="196" stroke="#475569" stroke-width="1.5"/>
+    
+      <text x="40" y="40" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">0</text>
+      <text x="130" y="40" font-family="system-ui" font-size="13" fill="#1e293b">3   5</text>
+    
+      <text x="40" y="66" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">1</text>
+      <text x="130" y="66" font-family="system-ui" font-size="13" fill="#1e293b">1   4   7</text>
+    
+      <text x="40" y="92" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">2</text>
+      <text x="130" y="92" font-family="system-ui" font-size="13" fill="#1e293b">0   4   4   4   6   7   8   9</text>
+    
+      <text x="40" y="118" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">3</text>
+      <text x="130" y="118" font-family="system-ui" font-size="13" fill="#1e293b">1   3   5   6</text>
+    
+      <text x="40" y="144" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">4</text>
+      <text x="130" y="144" font-family="system-ui" font-size="13" fill="#1e293b">0   2</text>
+    
+      <text x="40" y="170" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">5</text>
+      <text x="130" y="170" font-family="system-ui" font-size="13" fill="#1e293b">1</text>
+    
+    <text x="20" y="216" font-family="system-ui" font-size="12" fill="#1e293b">n = 20 speeds, km/h (2|4 means 24)</text>
+  </svg>

@@ -1,0 +1,45 @@
+<svg viewBox="-40 -40 340 310" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <!-- Parallel Lines -->
+  <line x1="40" y1="190" x2="230" y2="190" stroke="#000" stroke-width="1"/>
+  <line x1="40" y1="115" x2="230" y2="115" stroke="#000" stroke-width="1"/>
+  
+  <!-- Triangle FAD -->
+  <line x1="80" y1="40" x2="80" y2="190" stroke="#000" stroke-width="1"/>
+  <line x1="80" y1="40" x2="143" y2="115" stroke="#000" stroke-width="1"/>
+  <line x1="80" y1="190" x2="143" y2="115" stroke="#000" stroke-width="1"/>
+
+  <!-- Parallel markers on CE and AB -->
+  <line x1="180" y1="110" x2="188" y2="115" stroke="#000" stroke-width="1"/>
+  <line x1="180" y1="120" x2="188" y2="115" stroke="#000" stroke-width="1"/>
+  <line x1="185" y1="110" x2="193" y2="115" stroke="#000" stroke-width="1"/>
+  <line x1="185" y1="120" x2="193" y2="115" stroke="#000" stroke-width="1"/>
+
+  <line x1="180" y1="185" x2="188" y2="190" stroke="#000" stroke-width="1"/>
+  <line x1="180" y1="195" x2="188" y2="190" stroke="#000" stroke-width="1"/>
+  <line x1="185" y1="185" x2="193" y2="190" stroke="#000" stroke-width="1"/>
+  <line x1="185" y1="195" x2="193" y2="190" stroke="#000" stroke-width="1"/>
+
+  <!-- Right angle at A -->
+  <polyline points="80,180 90,180 90,190" fill="none" stroke="#000" stroke-width="1"/>
+
+  <!-- Tick marks for FD = AD -->
+  <line x1="106" y1="82" x2="116" y2="73" stroke="#000" stroke-width="1"/>
+  <line x1="106" y1="148" x2="116" y2="157" stroke="#000" stroke-width="1"/>
+
+  <!-- Points -->
+  <circle cx="80" cy="190" r="1.2" fill="#000"/>
+  <circle cx="80" cy="40" r="1.2" fill="#000"/>
+  <circle cx="143" cy="115" r="1.2" fill="#000"/>
+  
+  <!-- Labels -->
+  <text x="70" y="208" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">A</text>
+  <text x="215" y="208" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">B</text>
+  <text x="70" y="35" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">F</text>
+  <text x="146" y="102" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">D</text>
+  <text x="40" y="107" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">C</text>
+  <text x="215" y="107" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">E</text>
+
+  <!-- Given Angle -->
+  <text x="85" y="165" font-family="serif" font-size="12" fill="#000">40°</text>
+  <text x="120" y="132" font-family="serif" font-size="12" fill="#000">α</text>
+</svg>

@@ -1,0 +1,1843 @@
+{
+  "chapterId": "exam:year12ach1e",
+  "title": "Exam Practice",
+  "year": "Year 12a",
+  "topics": [
+    {
+      "topicId": "exam:year12ach1e",
+      "code": "",
+      "title": "Adding up the terms of a sequence",
+      "questions": [
+        {
+          "id": "y12a-1e-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum \\(S_4\\) of the first four terms of the following sequence:\n\\[3, 5, 7, 9, 11, 13, \\dots\\]",
+          "options": [
+            "\\(24\\)",
+            "\\(15\\)",
+            "\\(35\\)",
+            "\\(20\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the first four terms of the sequence and add them together.",
+          "solution": "The sum \\(S_4\\) of the first four terms is \\(24\\).",
+          "steps": [
+            {
+              "explain": "To find the sum of the first four terms, we first list the first four terms of the sequence.",
+              "work": "\\(T_1 = 3, quad T_2 = 5, quad T_3 = 7, quad T_4 = 9\\)"
+            },
+            {
+              "explain": "Set up the sum expression for \\(S_4\\).",
+              "work": "\\(S_4 = T_1 + T_2 + T_3 + T_4\\)"
+            },
+            {
+              "explain": "Substitute the term values into the sum expression.",
+              "work": "\\(S_4 = 3 + 5 + 7 + 9\\)"
+            },
+            {
+              "explain": "Add the terms together to obtain the final sum.",
+              "work": "\\(S_4 = 24\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum \\(S_4\\) of the first four terms of the following sequence:\n\\[2, 6, 18, 54, 162, 486, \\dots\\]",
+          "options": [
+            "\\(80\\)",
+            "\\(26\\)",
+            "\\(72\\)",
+            "\\(242\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the first four terms of the sequence and find their sum.",
+          "solution": "The sum \\(S_4\\) of the first four terms is \\(80\\).",
+          "steps": [
+            {
+              "explain": "List the first four terms of the sequence.",
+              "work": "\\(T_1 = 2, quad T_2 = 6, quad T_3 = 18, quad T_4 = 54\\)"
+            },
+            {
+              "explain": "Express the sum \\(S_4\\) as the addition of these four terms.",
+              "work": "\\(S_4 = 2 + 6 + 18 + 54\\)"
+            },
+            {
+              "explain": "Calculate the sum to get the final result.",
+              "work": "\\(S_4 = 80\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum \\(S_4\\) of the first four terms of the following sequence:\n\\[6, 2, -2, -6, -10, -14, \\dots\\]",
+          "options": [
+            "\\(0\\)",
+            "\\(6\\)",
+            "\\(-6\\)",
+            "\\(8\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the first four terms and sum them.",
+          "solution": "The sum \\(S_4\\) of the first four terms is \\(0\\).",
+          "steps": [
+            {
+              "explain": "Identify the first four terms of the sequence, noting the negative signs.",
+              "work": "\\(T_1 = 6, quad T_2 = 2, quad T_3 = -2, quad T_4 = -6\\)"
+            },
+            {
+              "explain": "Write the sum expression.",
+              "work": "\\(S_4 = 6 + 2 + (-2) + (-6)\\)"
+            },
+            {
+              "explain": "Add the positive and negative numbers together.",
+              "work": "\\(S_4 = 0\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum \\(S_4\\) of the first four terms of the following sequence:\n\\[2, 1, \\frac{1}{2}, \\frac{1}{4}, \\frac{1}{8}, \\dots\\]",
+          "options": [
+            "\\(3.75\\)",
+            "\\(3.5\\)",
+            "\\(3.875\\)",
+            "\\(3.25\\)"
+          ],
+          "answer": 0,
+          "hint": "Sum the first four terms: 2, 1, 1/2, and 1/4.",
+          "solution": "The sum \\(S_4\\) of the first four terms is \\(3.75\\).",
+          "steps": [
+            {
+              "explain": "Identify the first four terms of the sequence.",
+              "work": "\\(T_1 = 2, quad T_2 = 1, quad T_3 = 0.5, quad T_4 = 0.25\\)"
+            },
+            {
+              "explain": "Set up the sum expression.",
+              "work": "\\(S_4 = 2 + 1 + 0.5 + 0.25\\)"
+            },
+            {
+              "explain": "Calculate the sum of the integers and decimals.",
+              "work": "\\(S_4 = 3.75\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum \\(S_3\\) of the first three terms of the following series:\n\\[200 + 150 + 100 + 50 + 0 + \\dots\\]",
+          "options": [
+            "\\(450\\)",
+            "\\(500\\)",
+            "\\(350\\)",
+            "\\(400\\)"
+          ],
+          "answer": 0,
+          "hint": "Sum the first three terms of the series.",
+          "solution": "The sum \\(S_3\\) of the first three terms is \\(450\\).",
+          "steps": [
+            {
+              "explain": "Identify the first three terms of the series.",
+              "work": "\\(T_1 = 200, quad T_2 = 150, quad T_3 = 100\\)"
+            },
+            {
+              "explain": "Add the three terms to find \\(S_3\\).",
+              "work": "\\(S_3 = 200 + 150 + 100\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_3 = 450\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum \\(S_3\\) of the first three terms of the following series:\n\\[32 - 16 + 8 - 4 + 2 - 1 + \\dots\\]",
+          "options": [
+            "\\(24\\)",
+            "\\(16\\)",
+            "\\(40\\)",
+            "\\(20\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the first three terms, keeping track of signs, and sum them.",
+          "solution": "The sum \\(S_3\\) of the first three terms is \\(24\\).",
+          "steps": [
+            {
+              "explain": "Identify the first three terms of the alternating series.",
+              "work": "\\(T_1 = 32, quad T_2 = -16, quad T_3 = 8\\)"
+            },
+            {
+              "explain": "Add the terms together.",
+              "work": "\\(S_3 = 32 + (-16) + 8\\)"
+            },
+            {
+              "explain": "Perform the arithmetic.",
+              "work": "\\(S_3 = 24\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum \\(S_3\\) of the first three terms of the following series:\n\\[-24 - 18 - 12 - 6 + 0 + 6 + \\dots\\]",
+          "options": [
+            "\\(-54\\)",
+            "\\(-42\\)",
+            "\\(-60\\)",
+            "\\(-30\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the first three terms of the series.",
+          "solution": "The sum \\(S_3\\) is \\(-54\\).",
+          "steps": [
+            {
+              "explain": "List the first three terms of the series.",
+              "work": "\\(T_1 = -24, quad T_2 = -18, quad T_3 = -12\\)"
+            },
+            {
+              "explain": "Set up the sum expression.",
+              "work": "\\(S_3 = -24 + (-18) + (-12)\\)"
+            },
+            {
+              "explain": "Calculate the sum of these negative values.",
+              "work": "\\(S_3 = -54\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the sum \\(S_3\\) of the first three terms of the following series:\n\\[5.1 + 5.2 + 5.3 + 5.4 + 5.5 + 5.6 + \\dots\\]",
+          "options": [
+            "\\(15.6\\)",
+            "\\(15.3\\)",
+            "\\(20.7\\)",
+            "\\(15.9\\)"
+          ],
+          "answer": 0,
+          "hint": "Sum the first three decimal terms.",
+          "solution": "The sum \\(S_3\\) is \\(15.6\\).",
+          "steps": [
+            {
+              "explain": "Identify the first three terms of the series.",
+              "work": "\\(T_1 = 5.1, quad T_2 = 5.2, quad T_3 = 5.3\\)"
+            },
+            {
+              "explain": "Set up the sum of the three values.",
+              "work": "\\(S_3 = 5.1 + 5.2 + 5.3\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S_3 = 15.6\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the partial sums \\(S_1, S_2, S_3, S_4,\\) and \\(S_5\\) for the following sequence:\n\\[10, 20, 30, 40, 50, 60, \\dots\\]",
+          "options": [
+            "\\(S_1=10, S_2=30, S_3=60, S_4=100, S_5=150\\)",
+            "\\(S_1=10, S_2=20, S_3=30, S_4=40, S_5=50\\)",
+            "\\(S_1=10, S_2=30, S_3=50, S_4=70, S_5=90\\)",
+            "\\(S_1=10, S_2=40, S_3=90, S_4=160, S_5=250\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate each cumulative sum from the first term to the fifth term.",
+          "solution": "The partial sums are \\(S_1=10, S_2=30, S_3=60, S_4=100, S_5=150\\).",
+          "steps": [
+            {
+              "explain": "Calculate \\(S_1\\) which is simply the first term, and \\(S_2\\) which is the sum of the first two terms.",
+              "work": "\\(S_1 = 10, quad S_2 = 10 + 20 = 30\\)"
+            },
+            {
+              "explain": "Calculate \\(S_3\\) and \\(S_4\\) by adding successive terms to the previous sum.",
+              "work": "\\(S_3 = S_2 + 30 = 60, quad S_4 = S_3 + 40 = 100\\)"
+            },
+            {
+              "explain": "Calculate \\(S_5\\) by adding the fifth term to \\(S_4\\).",
+              "work": "\\(S_5 = S_4 + 50 = 150\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the partial sums \\(S_1, S_2, S_3, S_4,\\) and \\(S_5\\) for the following sequence:\n\\[1, -3, 9, -27, 81, -243, \\dots\\]",
+          "options": [
+            "\\(S_1=1, S_2=-2, S_3=7, S_4=-20, S_5=61\\)",
+            "\\(S_1=1, S_2=-3, S_3=9, S_4=-27, S_5=81\\)",
+            "\\(S_1=1, S_2=-2, S_3=6, S_4=-20, S_5=60\\)",
+            "\\(S_1=1, S_2=-4, S_3=5, S_4=-22, S_5=59\\)"
+          ],
+          "answer": 0,
+          "hint": "Sum consecutively, paying close attention to signs.",
+          "solution": "The partial sums are \\(S_1=1, S_2=-2, S_3=7, S_4=-20, S_5=61\\).",
+          "steps": [
+            {
+              "explain": "Find \\(S_1\\) and \\(S_2\\).",
+              "work": "\\(S_1 = 1, quad S_2 = 1 + (-3) = -2\\)"
+            },
+            {
+              "explain": "Find \\(S_3\\) and \\(S_4\\).",
+              "work": "\\(S_3 = S_2 + 9 = 7, quad S_4 = S_3 + (-27) = -20\\)"
+            },
+            {
+              "explain": "Find \\(S_5\\).",
+              "work": "\\(S_5 = S_4 + 81 = 61\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the partial sums \\(S_1, S_2, S_3, S_4,\\) and \\(S_5\\) for the following sequence of perfect squares:\n\\[1, 4, 9, 16, 25, 36, \\dots\\]",
+          "options": [
+            "\\(S_1=1, S_2=5, S_3=14, S_4=30, S_5=55\\)",
+            "\\(S_1=1, S_2=4, S_3=9, S_4=16, S_5=25\\)",
+            "\\(S_1=1, S_2=5, S_3=15, S_4=31, S_5=56\\)",
+            "\\(S_1=1, S_2=6, S_3=16, S_4=32, S_5=57\\)"
+          ],
+          "answer": 0,
+          "hint": "Add up the terms step-by-step.",
+          "solution": "The partial sums are \\(S_1=1, S_2=5, S_3=14, S_4=30, S_5=55\\).",
+          "steps": [
+            {
+              "explain": "Compute the first and second partial sums.",
+              "work": "\\(S_1 = 1, quad S_2 = 1 + 4 = 5\\)"
+            },
+            {
+              "explain": "Compute the third and fourth partial sums.",
+              "work": "\\(S_3 = 5 + 9 = 14, quad S_4 = 14 + 16 = 30\\)"
+            },
+            {
+              "explain": "Compute the fifth partial sum.",
+              "work": "\\(S_5 = 30 + 25 = 55\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the partial sums \\(S_1, S_2, S_3, S_4,\\) and \\(S_5\\) for the following sequence:\n\\[3, 4\\frac{1}{2}, 6, 7\\frac{1}{2}, 9, 10\\frac{1}{2}, 12, \\dots\\]",
+          "options": [
+            "\\(S_1=3, S_2=7\\frac{1}{2}, S_3=13\\frac{1}{2}, S_4=21, S_5=30\\)",
+            "\\(S_1=3, S_2=7, S_3=13, S_4=20, S_5=29\\)",
+            "\\(S_1=3, S_2=8, S_3=14, S_4=22, S_5=31\\)",
+            "\\(S_1=3, S_2=7\\frac{1}{2}, S_3=13, S_4=21, S_5=30\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify terms as fractions or decimals, and sum consecutively.",
+          "solution": "The partial sums are \\(S_1=3, S_2=7\\frac{1}{2}, S_3=13\\frac{1}{2}, S_4=21, S_5=30\\).",
+          "steps": [
+            {
+              "explain": "List the terms in decimal form to make arithmetic easier.",
+              "work": "\\(T_1 = 3, quad T_2 = 4.5, quad T_3 = 6, quad T_4 = 7.5, quad T_5 = 9\\)"
+            },
+            {
+              "explain": "Find the first and second partial sums.",
+              "work": "\\(S_1 = 3, quad S_2 = 3 + 4.5 = 7.5 = 7\\frac{1}{2}\\)"
+            },
+            {
+              "explain": "Find the third and fourth partial sums.",
+              "work": "\\(S_3 = 7.5 + 6 = 13.5 = 13\\frac{1}{2}, quad S_4 = 13.5 + 7.5 = 21\\)"
+            },
+            {
+              "explain": "Find the fifth partial sum.",
+              "work": "\\(S_5 = 21 + 9 = 30\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the table of a sequence and its partial sums:\n- \\(T_n = [2, 5, 8, 11, 14, 17, 20]\\)\nFind the corresponding row of partial sums \\(S_n\\).",
+          "options": [
+            "\\([2, 7, 15, 26, 40, 57, 77]\\)",
+            "\\([2, 5, 8, 11, 14, 17, 20]\\)",
+            "\\([2, 7, 14, 25, 39, 56, 76]\\)",
+            "\\([2, 8, 16, 27, 41, 58, 78]\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate cumulative sums of the sequence elements.",
+          "solution": "The row of partial sums \\(S_n\\) is \\([2, 7, 15, 26, 40, 57, 77]\\).",
+          "steps": [
+            {
+              "explain": "Calculate the first few terms of \\(S_n\\) by adding terms consecutively.",
+              "work": "\\(S_1 = 2, quad S_2 = 2 + 5 = 7, quad S_3 = 7 + 8 = 15\\)"
+            },
+            {
+              "explain": "Continue adding elements to find \\(S_4\\) and \\(S_5\\).",
+              "work": "\\(S_4 = 15 + 11 = 26, quad S_5 = 26 + 14 = 40\\)"
+            },
+            {
+              "explain": "Determine the final terms \\(S_6\\) and \\(S_7\\).",
+              "work": "\\(S_6 = 40 + 17 = 57, quad S_7 = 57 + 20 = 77\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the table of a sequence and its partial sums:\n- \\(T_n = [2, -4, 6, -8, 10, -12, 14]\\)\nFind the corresponding row of partial sums \\(S_n\\).",
+          "options": [
+            "\\([2, -2, 4, -4, 6, -6, 8]\\)",
+            "\\([2, -6, 0, -8, 2, -10, 4]\\)",
+            "\\([2, -2, 2, -2, 2, -2, 2]\\)",
+            "\\([2, -2, 4, -4, 5, -5, 7]\\)"
+          ],
+          "answer": 0,
+          "hint": "Perform alternating addition and subtraction to find cumulative sums.",
+          "solution": "The row of partial sums \\(S_n\\) is \\([2, -2, 4, -4, 6, -6, 8]\\).",
+          "steps": [
+            {
+              "explain": "Calculate the initial partial sums.",
+              "work": "\\(S_1 = 2, quad S_2 = 2 + (-4) = -2, quad S_3 = -2 + 6 = 4\\)"
+            },
+            {
+              "explain": "Compute the middle partial sums.",
+              "work": "\\(S_4 = 4 + (-8) = -4, quad S_5 = -4 + 10 = 6\\)"
+            },
+            {
+              "explain": "Complete the final calculations.",
+              "work": "\\(S_6 = 6 + (-12) = -6, quad S_7 = -6 + 14 = 8\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the table of a sequence and its partial sums:\n- \\(T_n = [40, 38, 36, 34, 32, 30, 28]\\)\nFind the corresponding row of partial sums \\(S_n\\).",
+          "options": [
+            "\\([40, 78, 114, 148, 180, 210, 238]\\)",
+            "\\([40, 80, 120, 160, 200, 240, 280]\\)",
+            "\\([40, 78, 112, 144, 172, 198, 222]\\)",
+            "\\([40, 76, 110, 142, 172, 200, 226]\\)"
+          ],
+          "answer": 0,
+          "hint": "Add each term to the previous sum consecutively.",
+          "solution": "The row of partial sums \\(S_n\\) is \\([40, 78, 114, 148, 180, 210, 238]\\).",
+          "steps": [
+            {
+              "explain": "Start calculating the sums step-by-step.",
+              "work": "\\(S_1 = 40, quad S_2 = 40 + 38 = 78, quad S_3 = 78 + 36 = 114\\)"
+            },
+            {
+              "explain": "Find the next few sums.",
+              "work": "\\(S_4 = 114 + 34 = 148, quad S_5 = 148 + 32 = 180\\)"
+            },
+            {
+              "explain": "Complete the sum for the remaining elements.",
+              "work": "\\(S_6 = 180 + 30 = 210, quad S_7 = 210 + 28 = 238\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Complete the table of a sequence and its partial sums:\n- \\(T_n = [7, -7, 7, -7, 7, -7, 7]\\)\nFind the corresponding row of partial sums \\(S_n\\).",
+          "options": [
+            "\\([7, 0, 7, 0, 7, 0, 7]\\)",
+            "\\([7, -7, 7, -7, 7, -7, 7]\\)",
+            "\\([7, 14, 21, 28, 35, 42, 49]\\)",
+            "\\([7, 0, -7, 0, 7, 0, -7]\\)"
+          ],
+          "answer": 0,
+          "hint": "Since terms alternate between 7 and -7, cumulative sums will alternate between 7 and 0.",
+          "solution": "The row of partial sums \\(S_n\\) is \\([7, 0, 7, 0, 7, 0, 7]\\).",
+          "steps": [
+            {
+              "explain": "Examine the cumulative calculations.",
+              "work": "\\(S_1 = 7, quad S_2 = 7 + (-7) = 0, quad S_3 = 0 + 7 = 7\\)"
+            },
+            {
+              "explain": "Observe that the sum resets to 0 on even index terms and returns to 7 on odd index terms.",
+              "work": "\\(S_4 = 7 + (-7) = 0, quad S_5 = 0 + 7 = 7, quad S_6 = 7 + (-7) = 0, quad S_7 = 0 + 7 = 7\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y12a-1e-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Each table below gives the successive sums \\(S_1, S_2, S_3, \\dots\\) of a sequence. By taking successive differences \\(T_n = S_n - S_{n-1}\\), write out the terms of the original sequence \\(T_n\\):\n- \\(S_n = [1, 4, 9, 16, 25, 36, 49]\\)",
+          "options": [
+            "\\([1, 3, 5, 7, 9, 11, 13]\\)",
+            "\\([1, 4, 9, 16, 25, 36, 49]\\)",
+            "\\([1, 2, 3, 4, 5, 6, 7]\\)",
+            "\\([1, 3, 6, 10, 15, 21, 28]\\)"
+          ],
+          "answer": 0,
+          "hint": "Recall that \\(T_n = S_n - S_{n-1}\\) (with \\(T_1 = S_1\\)). Calculate the differences between consecutive sums.",
+          "solution": "The original sequence \\(T_n\\) is \\([1, 3, 5, 7, 9, 11, 13]\\).",
+          "steps": [
+            {
+              "explain": "The first term of the sequence is identical to the first partial sum.",
+              "work": "\\(T_1 = S_1 = 1\\)"
+            },
+            {
+              "explain": "Calculate the second and third terms by subtracting the previous sum from the current sum.",
+              "work": "\\(T_2 = S_2 - S_1 = 4 - 1 = 3, quad T_3 = S_3 - S_2 = 9 - 4 = 5\\)"
+            },
+            {
+              "explain": "Calculate the remaining terms using the same difference formula.",
+              "work": "\\(T_4 = 16 - 9 = 7, \\; T_5 = 25 - 16 = 9, \\; T_6 = 36 - 25 = 11, \\; T_7 = 49 - 36 = 13\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1e-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Each table below gives the successive sums of a sequence. By taking successive differences \\(T_n = S_n - S_{n-1}\\), write out the terms of the original sequence \\(T_n\\):\n- \\(S_n = [-3, -8, -15, -24, -35, -48, -63]\\)",
+          "options": [
+            "\\([-3, -5, -7, -9, -11, -13, -15]\\)",
+            "\\([-3, -8, -15, -24, -35, -48, -63]\\)",
+            "\\([-3, -4, -5, -6, -7, -8, -9]\\)",
+            "\\([-3, -5, -8, -11, -14, -17, -20]\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\(T_n = S_n - S_{n-1}\\) to find the difference between consecutive negative sums.",
+          "solution": "The original sequence \\(T_n\\) is \\([-3, -5, -7, -9, -11, -13, -15]\\).",
+          "steps": [
+            {
+              "explain": "Set the first term equal to the first partial sum.",
+              "work": "\\(T_1 = S_1 = -3\\)"
+            },
+            {
+              "explain": "Find the next few terms by subtracting successive values.",
+              "work": "\\(T_2 = -8 - (-3) = -5, quad T_3 = -15 - (-8) = -7\\)"
+            },
+            {
+              "explain": "Find the rest of the terms.",
+              "work": "\\(T_4 = -24 - (-15) = -9, \\; T_5 = -35 - (-24) = -11, \\; T_6 = -48 - (-35) = -13, \\; T_7 = -63 - (-48) = -15\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1e-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Each table below gives the successive sums of a sequence. By taking successive differences \\(T_n = S_n - S_{n-1}\\), write out the terms of the original sequence \\(T_n\\):\n- \\(S_n = [2, 6, 14, 30, 62, 126, 254]\\)",
+          "options": [
+            "\\([2, 4, 8, 16, 32, 64, 128]\\)",
+            "\\([2, 6, 14, 30, 62, 126, 254]\\)",
+            "\\([2, 3, 5, 9, 17, 33, 65]\\)",
+            "\\([2, 4, 6, 8, 10, 12, 14]\\)"
+          ],
+          "answer": 0,
+          "hint": "Observe that the differences between these sums will grow exponentially.",
+          "solution": "The original sequence \\(T_n\\) is \\([2, 4, 8, 16, 32, 64, 128]\\).",
+          "steps": [
+            {
+              "explain": "Set \\(T_1 = S_1\\).",
+              "work": "\\(T_1 = 2\\)"
+            },
+            {
+              "explain": "Calculate consecutive differences.",
+              "work": "\\(T_2 = 6 - 2 = 4, quad T_3 = 14 - 6 = 8\\)"
+            },
+            {
+              "explain": "Continue the pattern of subtracting previous terms.",
+              "work": "\\(T_4 = 30 - 14 = 16, \\; T_5 = 62 - 30 = 32, \\; T_6 = 126 - 62 = 64, \\; T_7 = 254 - 126 = 128\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1e-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Each table below gives the successive sums of a sequence. By taking successive differences \\(T_n = S_n - S_{n-1}\\), write out the terms of the original sequence \\(T_n\\):\n- \\(S_n = [8, 0, 8, 0, 8, 0, 8]\\)",
+          "options": [
+            "\\([8, -8, 8, -8, 8, -8, 8]\\)",
+            "\\([8, 8, 8, 8, 8, 8, 8]\\)",
+            "\\([8, 0, 8, 0, 8, 0, 8]\\)",
+            "\\([8, -16, 16, -16, 16, -16, 16]\\)"
+          ],
+          "answer": 0,
+          "hint": "Ensure you subtract the previous term correctly: 0 - 8 = -8, and 8 - 0 = 8.",
+          "solution": "The original sequence \\(T_n\\) is \\([8, -8, 8, -8, 8, -8, 8]\\).",
+          "steps": [
+            {
+              "explain": "Establish the first term.",
+              "work": "\\(T_1 = S_1 = 8\\)"
+            },
+            {
+              "explain": "Subtract successive terms to determine the alternating sequence.",
+              "work": "\\(T_2 = 0 - 8 = -8, quad T_3 = 8 - 0 = 8\\)"
+            },
+            {
+              "explain": "Observe the pattern and compute the remaining values.",
+              "work": "\\(T_4 = 0 - 8 = -8, \\; T_5 = 8 - 0 = 8, \\; T_6 = 0 - 8 = -8, \\; T_7 = 8 - 0 = 8\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1e-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The successive sums \\(S_n\\) of a sequence are given below. By taking successive differences, write out the terms of the original sequence \\(T_n\\):\n- \\(S_n = [1, 2, 3, 5, 8, 13, 21, 34]\\)\nThis represents a sequence related to the Fibonacci sequence.",
+          "options": [
+            "\\([1, 1, 1, 2, 3, 5, 8, 13]\\)",
+            "\\([1, 2, 3, 5, 8, 13, 21, 34]\\)",
+            "\\([1, 1, 2, 3, 5, 8, 13, 21]\\)",
+            "\\([1, 0, 1, 1, 2, 3, 5, 8]\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply \\(T_n = S_n - S_{n-1}\\) to find the original terms.",
+          "solution": "The original terms are \\([1, 1, 1, 2, 3, 5, 8, 13]\\).",
+          "steps": [
+            {
+              "explain": "Set the first term of the sequence.",
+              "work": "\\(T_1 = S_1 = 1\\)"
+            },
+            {
+              "explain": "Compute the differences for the next few terms.",
+              "work": "\\(T_2 = 2 - 1 = 1, quad T_3 = 3 - 2 = 1, quad T_4 = 5 - 3 = 2\\)"
+            },
+            {
+              "explain": "Continue computing the differences to complete the sequence.",
+              "work": "\\(T_5 = 8 - 5 = 3, \\; T_6 = 13 - 8 = 5, \\; T_7 = 21 - 13 = 8, \\; T_8 = 34 - 21 = 13\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1e-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The successive sums \\(S_n\\) of a sequence are given below. By taking successive differences, write out the terms of the original sequence \\(T_n\\):\n- \\(S_n = [3, 4, 7, 11, 18, 29, 47, 76]\\)\nThis represents a sequence related to the Lucas sequence.",
+          "options": [
+            "\\([3, 1, 3, 4, 7, 11, 18, 29]\\)",
+            "\\([3, 4, 7, 11, 18, 29, 47, 76]\\)",
+            "\\([3, 1, 2, 3, 5, 8, 13, 21]\\)",
+            "\\([3, 1, 4, 5, 9, 14, 23, 37]\\)"
+          ],
+          "answer": 0,
+          "hint": "Perform subtraction of consecutive sums: 4 - 3, 7 - 4, 11 - 7, etc.",
+          "solution": "The original terms are \\([3, 1, 3, 4, 7, 11, 18, 29]\\).",
+          "steps": [
+            {
+              "explain": "Set \\(T_1 = S_1\\).",
+              "work": "\\(T_1 = 3\\)"
+            },
+            {
+              "explain": "Subtract successive terms to determine the beginning sequence.",
+              "work": "\\(T_2 = 4 - 3 = 1, quad T_3 = 7 - 4 = 3, quad T_4 = 11 - 7 = 4\\)"
+            },
+            {
+              "explain": "Complete the remaining terms by taking successive differences.",
+              "work": "\\(T_5 = 18 - 11 = 7, \\; T_6 = 29 - 18 = 11, \\; T_7 = 47 - 29 = 18, \\; T_8 = 76 - 47 = 29\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y12a-1e-q9a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Use a dot diagram argument to explain why the sum of the first \\(n\\) odd positive integers is \\(n^2\\).",
+          "answer": "0",
+          "hint": "Think about building a square grid of dots by adding successive L-shaped borders.",
+          "solution": "To visualize the sum of odd numbers, we can arrange dots in concentric L-shaped borders (called gnomons) starting from a single dot in the corner.\n- The 1st shell has \\(1\\) dot.\n- The 2nd shell adds \\(3\\) dots to make a \\(2 \\times 2\\) square.\n- The 3rd shell adds \\(5\\) dots to make a \\(3 \\times 3\\) square.\n- In general, the \\(n\\)-th shell adds \\(2n-1\\) dots to a square of side \\(n-1\\) to form a square of side \\(n\\). Therefore, \\(1 + 3 + 5 + \\dots + (2n-1) = n^2\\).",
+          "steps": [
+            {
+              "explain": "Consider arranging dots in a square grid of size \\(n \\times n\\). The total number of dots is \\(n^2\\).",
+              "work": "\\(\\text{Total dots} = n^2\\)"
+            },
+            {
+              "explain": "We can partition this square into L-shaped shells starting from the top-left corner.",
+              "work": "\\(\\text{Shell 1} = 1, quad \\text{Shell 2} = 3, quad \\text{Shell 3} = 5, quad \\dots, quad \\text{Shell } n = 2n-1\\)"
+            },
+            {
+              "explain": "Adding these shells consecutively builds the square, demonstrating the identity.",
+              "work": "\\(1 + 3 + 5 + \\dots + (2n-1) = n^2\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y12a-1e-q10a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Rewrite the following sum in sigma notation, starting the sum at \\(n=1\\):\n\\[1^3 + 2^3 + 3^3 + \\dots + 40^3\\]",
+          "options": [
+            "\\(\\sum_{n=1}^{40} n^3\\)",
+            "\\(\\sum_{n=1}^{40} 3n\\)",
+            "\\(\\sum_{n=1}^{39} n^3\\)",
+            "\\(\\sum_{n=1}^{40} (n+1)^3\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the general term, which is the cube of the index \\(n\\), and find the upper limit of the summation.",
+          "solution": "The sum in sigma notation is \\(\\sum_{n=1}^{40} n^3\\).",
+          "steps": [
+            {
+              "explain": "Identify the pattern of terms in the series: each term is an integer raised to the third power.",
+              "work": "\\(T_n = n^3\\)"
+            },
+            {
+              "explain": "Determine the starting and ending values of the index \\(n\\). The first term is \\(1^3\\) and the last term is \\(40^3\\).",
+              "work": "\\(\\text{Lower limit} = 1, quad \\text{Upper limit} = 40\\)"
+            },
+            {
+              "explain": "Write the sum in sigma notation using these limits.",
+              "work": "\\(\\sum_{n=1}^{40} n^3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-q10b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Rewrite the following sum in sigma notation, starting the sum at \\(n=1\\):\n\\[1 + \\frac{1}{2} + \\frac{1}{3} + \\dots + \\frac{1}{40}\\]",
+          "options": [
+            "\\(\\sum_{n=1}^{40} \\frac{1}{n}\\)",
+            "\\(\\sum_{n=1}^{40} n^{-2}\\)",
+            "\\(\\sum_{n=1}^{39} \\frac{1}{n}\\)",
+            "\\(\\sum_{n=0}^{40} \\frac{1}{n}\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the general term as the reciprocal of \\(n\\), starting at \\(n=1\\).",
+          "solution": "The sum in sigma notation is \\(\\sum_{n=1}^{40} \\frac{1}{n}\\).",
+          "steps": [
+            {
+              "explain": "Identify the terms as reciprocals of consecutive integers.",
+              "work": "\\(T_n = \\frac{1}{n}\\)"
+            },
+            {
+              "explain": "Set the bounds of the index: the first term is \\(\\frac{1}{1} = 1\\) and the last term is \\(\\frac{1}{40}\\).",
+              "work": "\\(\\text{Lower limit} = 1, quad \\text{Upper limit} = 40\\)"
+            },
+            {
+              "explain": "Formulate the summation.",
+              "work": "\\(\\sum_{n=1}^{40} \\frac{1}{n}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-q10d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Rewrite the following sum in sigma notation, starting the sum at \\(n=1\\):\n\\[2 + 2^2 + 2^3 + \\dots + 2^{12}\\]",
+          "options": [
+            "\\(\\sum_{n=1}^{12} 2^n\\)",
+            "\\(\\sum_{n=1}^{12} 2^{n-1}\\)",
+            "\\(\\sum_{n=1}^{11} 2^{n+1}\\)",
+            "\\(\\sum_{n=0}^{12} 2^n\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the general term as the power of 2, starting at exponent 1 and ending at 12.",
+          "solution": "The sum in sigma notation is \\(\\sum_{n=1}^{12} 2^n\\).",
+          "steps": [
+            {
+              "explain": "Identify the general term as an exponential term with base 2 and exponent \\(n\\).",
+              "work": "\\(T_n = 2^n\\)"
+            },
+            {
+              "explain": "Identify the limits of summation: exponent starts at 1 and ends at 12.",
+              "work": "\\(\\text{Lower limit} = 1, quad \\text{Upper limit} = 12\\)"
+            },
+            {
+              "explain": "Construct the sigma notation.",
+              "work": "\\(\\sum_{n=1}^{12} 2^n\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-q10e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Rewrite the following sum in sigma notation, starting the sum at \\(n=1\\):\n\\[-1 + 2 - 3 + \\dots + 10\\]",
+          "options": [
+            "\\(\\sum_{n=1}^{10} (-1)^n n\\)",
+            "\\(\\sum_{n=1}^{10} (-1)^{n+1} n\\)",
+            "\\(\\sum_{n=1}^{10} (-1)^n (n-1)\\)",
+            "\\(\\sum_{n=1}^{9} (-1)^n n\\)"
+          ],
+          "answer": 0,
+          "hint": "The term magnitude is \\(n\\), and the sign alternates starting with negative on odd numbers.",
+          "solution": "The sum in sigma notation is \\(\\sum_{n=1}^{10} (-1)^n n\\).",
+          "steps": [
+            {
+              "explain": "The magnitude of each term matches its index \\(n\\). The signs alternate, starting with negative on the first term.",
+              "work": "\\(T_1 = -1, quad T_2 = 2, quad T_3 = -3\\)"
+            },
+            {
+              "explain": "Express the sign alternation: \\((-1)^n\\) is negative for odd \\(n\\) and positive for even \\(n\\).",
+              "work": "\\(T_n = (-1)^n n\\)"
+            },
+            {
+              "explain": "Determine the bounds: \\(n\\) starts at 1 and ends at 10.",
+              "work": "\\(\\text{Lower limit} = 1, quad \\text{Upper limit} = 10\\)"
+            },
+            {
+              "explain": "Assemble the sum.",
+              "work": "\\(\\sum_{n=1}^{10} (-1)^n n\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-q10f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Rewrite the following sum in sigma notation, starting the sum at \\(n=1\\):\n\\[1 - 2 + 3 - \\dots - 10\\]",
+          "options": [
+            "\\(\\sum_{n=1}^{10} (-1)^{n+1} n\\)",
+            "\\(\\sum_{n=1}^{10} (-1)^n n\\)",
+            "\\(\\sum_{n=1}^{10} (-1)^n (n+1)\\)",
+            "\\(\\sum_{n=1}^{9} (-1)^{n+1} n\\)"
+          ],
+          "answer": 0,
+          "hint": "The term magnitude is \\(n\\), and the sign alternates starting with positive on odd numbers.",
+          "solution": "The sum in sigma notation is \\(\\sum_{n=1}^{10} (-1)^{n+1} n\\).",
+          "steps": [
+            {
+              "explain": "Analyze the sequence terms: \\(T_1 = 1, \\; T_2 = -2, \\; T_3 = 3\\). The magnitude is \\(n\\), and odd index terms are positive.",
+              "work": "\\(T_n = (-1)^{n+1} n\\)"
+            },
+            {
+              "explain": "Determine the upper limit, which is 10 (since the last term is \\(-10 = (-1)^{11} 10\\)).",
+              "work": "\\(\\text{Lower limit} = 1, quad \\text{Upper limit} = 10\\)"
+            },
+            {
+              "explain": "Formulate the summation notation.",
+              "work": "\\(\\sum_{n=1}^{10} (-1)^{n+1} n\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c2-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following arithmetic series sum:\n\\[\\sum_{n=1}^{10} (2n + 3)\\]",
+          "options": [
+            "\\(140\\)",
+            "\\(130\\)",
+            "\\(110\\)",
+            "\\(150\\)"
+          ],
+          "answer": 0,
+          "hint": "This is the sum of an arithmetic progression. Find the first term, last term, and number of terms.",
+          "solution": "\\(140\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a\\) (at \\(n=1\\)) and the last term \\(L\\) (at \\(n=10\\)).",
+              "work": "\\(a = 2(1)+3 = 5, quad L = 2(10)+3 = 23\\)"
+            },
+            {
+              "explain": "Apply the AP sum formula \\(S_n = \\frac{n}{2}(a + L)\\) with \\(n=10\\).",
+              "work": "\\(S_{10} = \\frac{10}{2}(5 + 23)\\)"
+            },
+            {
+              "explain": "Simplify and calculate the final sum.",
+              "work": "\\(S_{10} = 5 \\times 28 = 140\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c2-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following geometric series sum:\n\\[\\sum_{n=1}^{4} 2 \\cdot 3^n\\]",
+          "options": [
+            "\\(240\\)",
+            "\\(242\\)",
+            "\\(80\\)",
+            "\\(162\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand the terms: \\(6 + 18 + 54 + 162\\), or use the GP sum formula.",
+          "solution": "\\(240\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a\\) (at \\(n=1\\)) and common ratio \\(r\\).",
+              "work": "\\(a = 2 \\cdot 3^1 = 6, quad r = 3\\)"
+            },
+            {
+              "explain": "Apply the GP sum formula \\(S_n = \\frac{a(r^n - 1)}{r - 1}\\) with \\(n=4\\).",
+              "work": "\\(S_4 = \\frac{6(3^4 - 1)}{3 - 1}\\)"
+            },
+            {
+              "explain": "Evaluate the exponential term and calculate the sum.",
+              "work": "\\(S_4 = \\frac{6(81 - 1)}{2} = 3 \\times 80 = 240\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c8-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In nuclear engineering, the cumulative power reserve \\(S_n\\) of the radiation absorption count satisfies the recurrence relation \\(S_n = S_{n-1} + 2n - 1\\) (for \\(n \\ge 1\\)). If the initial reserve is \\(S_0 = 1\\) Joules, find the value of \\(S_4\\).",
+          "options": [
+            "\\(17\\) Joules",
+            "\\(16\\) Joules",
+            "\\(25\\) Joules",
+            "\\(10\\) Joules"
+          ],
+          "answer": 0,
+          "hint": "Apply the formula step-by-step for \\(n = 1, 2, 3, 4\\).",
+          "solution": "\\(17\\) Joules",
+          "steps": [
+            {
+              "explain": "Compute \\(S_1\\) and \\(S_2\\).",
+              "work": "\\(S_1 = 1 + (2 \\cdot 1 - 1) = 2, quad S_2 = 2 + (2 \\cdot 2 - 1) = 5\\)"
+            },
+            {
+              "explain": "Compute \\(S_3\\) and \\(S_4\\).",
+              "work": "\\(S_3 = 5 + (2 \\cdot 3 - 1) = 10, quad S_4 = 10 + (2 \\cdot 4 - 1) = 17\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c8-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In materials chemistry, the cumulative power reserve \\(S_n\\) of the polymer chain links count satisfies the recurrence relation \\(S_n = S_{n-1} + n\\) (for \\(n \\ge 1\\)). If the initial reserve is \\(S_0 = 0\\) Joules, find the value of \\(S_4\\).",
+          "options": [
+            "\\(10\\) Joules",
+            "\\(12\\) Joules",
+            "\\(8\\) Joules",
+            "\\(6\\) Joules"
+          ],
+          "answer": 0,
+          "hint": "This sum generates the triangular numbers: \\(1, 3, 6, 10\\).",
+          "solution": "\\(10\\) Joules",
+          "steps": [
+            {
+              "explain": "Compute \\(S_1\\) and \\(S_2\\).",
+              "work": "\\(S_1 = 0 + 1 = 1, quad S_2 = 1 + 2 = 3\\)"
+            },
+            {
+              "explain": "Compute \\(S_3\\) and \\(S_4\\).",
+              "work": "\\(S_3 = 3 + 3 = 6, quad S_4 = 6 + 4 = 10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c4-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the sum of all odd integers between \\(20\\) and \\(80\\).",
+          "options": [
+            "\\(1520\\)",
+            "\\(1480\\)",
+            "\\(3000\\)",
+            "\\(1500\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(1500\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a\\) and last term \\(L\\) of the AP in the range.",
+              "work": "\\(a = 21, quad L = 79\\)"
+            },
+            {
+              "explain": "Find the number of terms \\(n\\) using \\(L = a + (n-1)d\\) with \\(d = 2\\).",
+              "work": "\\(79 = 21 + (n-1)2 \\Rightarrow 58 = (n-1)2 \\Rightarrow n = 30\\)"
+            },
+            {
+              "explain": "Apply the AP sum formula \\(S_n = \\frac{n}{2}(a + L)\\).",
+              "work": "\\(S_{30} = \\frac{30}{2}(21 + 79) = 15 \\times 100 = 1500\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c4-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the sum of all positive multiples of \\(7\\) between \\(100\\) and \\(200\\) inclusive.",
+          "options": [
+            "\\(2200\\)",
+            "\\(2107\\)",
+            "\\(2114\\)",
+            "\\(2093\\)"
+          ],
+          "answer": 1,
+          "solution": "\\(2107\\)",
+          "steps": [
+            {
+              "explain": "Identify the first multiple \\(a\\) and last multiple \\(L\\) of 7 in range.",
+              "work": "\\(a = 105, quad L = 196\\)"
+            },
+            {
+              "explain": "Calculate the number of terms \\(n\\).",
+              "work": "\\(n = \\frac{196 - 105}{7} + 1 = 14\\)"
+            },
+            {
+              "explain": "Apply the AP sum formula.",
+              "work": "\\(S_{14} = \\frac{14}{2}(105 + 196) = 7 \\times 301 = 2107\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c4-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In an AP, the \\(3\\)-rd term is \\(12\\) and the \\(7\\)-th term is \\(24\\). Find the sum of the first \\(10\\) terms, \\(S_{10}\\).",
+          "options": [
+            "\\(210\\)",
+            "\\(195\\)",
+            "\\(180\\)",
+            "\\(165\\)"
+          ],
+          "answer": 1,
+          "solution": "\\(195\\)",
+          "steps": [
+            {
+              "explain": "Write expressions for the terms: \\(T_3 = a + 2d = 12\\) and \\(T_7 = a + 6d = 24\\).",
+              "work": "\\(a + 2d = 12, quad a + 6d = 24\\)"
+            },
+            {
+              "explain": "Subtract the first equation from the second to find \\(d\\).",
+              "work": "\\(4d = 12 \\Rightarrow d = 3\\)"
+            },
+            {
+              "explain": "Substitute \\(d\\) to find the first term \\(a\\).",
+              "work": "\\(a + 2(3) = 12 \\Rightarrow a = 6\\)"
+            },
+            {
+              "explain": "Calculate the sum \\(S_{10}\\).",
+              "work": "\\(S_{10} = \\frac{10}{2}(2(6) + 9(3)) = 5(12 + 27) = 5 \\times 39 = 195\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c4-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In an AP, \\(S_5 = 35\\) and \\(S_{10} = 120\\). Find the sum of the first \\(15\\) terms, \\(S_{15}\\).",
+          "options": [
+            "\\(240\\)",
+            "\\(180\\)",
+            "\\(270\\)",
+            "\\(255\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(255\\)",
+          "steps": [
+            {
+              "explain": "Express the sum equations: \\(S_5 = 2.5(2a + 4d) = 35\\) and \\(S_{10} = 5(2a + 9d) = 120\\).",
+              "work": "\\(2a + 4d = 14, quad 2a + 9d = 24\\)"
+            },
+            {
+              "explain": "Subtract the two equations to solve for \\(d\\) and \\(a\\).",
+              "work": "\\(5d = 10 \\Rightarrow d = 2, quad a = 3\\)"
+            },
+            {
+              "explain": "Substitute the values into the formula for \\(S_{15}\\).",
+              "work": "\\(S_{15} = \\frac{15}{2}(2(3) + 14(2)) = 7.5(6 + 28) = 7.5 \\times 34 = 255\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c5-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a GP, the \\(2\\)-nd term is \\(6\\) and the \\(5\\)-th term is \\(48\\). Find the sum of the first \\(6\\) terms, \\(S_6\\).",
+          "options": [
+            "\\(192\\)",
+            "\\(126\\)",
+            "\\(93\\)",
+            "\\(189\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(189\\)",
+          "steps": [
+            {
+              "explain": "Express the terms: \\(T_2 = ar = 6\\) and \\(T_5 = ar^4 = 48\\).",
+              "work": "\\(ar = 6, quad ar^4 = 48\\)"
+            },
+            {
+              "explain": "Divide the two equations to solve for \\(r\\).",
+              "work": "\\(r^3 = \\frac{48}{6} = 8 \\Rightarrow r = 2\\)"
+            },
+            {
+              "explain": "Solve for the first term \\(a\\).",
+              "work": "\\(a(2) = 6 \\Rightarrow a = 3\\)"
+            },
+            {
+              "explain": "Calculate the sum \\(S_6\\).",
+              "work": "\\(S_6 = \\frac{3(2^6 - 1)}{2 - 1} = 3(64 - 1) = 3 \\times 63 = 189\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c5-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In a GP, \\(T_3 = 20\\) and \\(T_6 = 160\\). Find the sum of the first \\(5\\) terms, \\(S_5\\).",
+          "options": [
+            "\\(155\\)",
+            "\\(310\\)",
+            "\\(150\\)",
+            "\\(160\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(155\\)",
+          "steps": [
+            {
+              "explain": "Express the terms: \\(T_3 = ar^2 = 20\\) and \\(T_6 = ar^5 = 160\\).",
+              "work": "\\(ar^2 = 20, quad ar^5 = 160\\)"
+            },
+            {
+              "explain": "Divide to find the common ratio \\(r\\).",
+              "work": "\\(r^3 = 8 \\Rightarrow r = 2\\)"
+            },
+            {
+              "explain": "Solve for \\(a\\).",
+              "work": "\\(a(4) = 20 \\Rightarrow a = 5\\)"
+            },
+            {
+              "explain": "Calculate \\(S_5\\).",
+              "work": "\\(S_5 = \\frac{5(2^5 - 1)}{2 - 1} = 5(31) = 155\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c6-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the limiting sum of the following infinite geometric series:\n\\[12 + 4 + \\frac{4}{3} + \\dots\\]",
+          "options": [
+            "\\(16\\)",
+            "\\(18\\)",
+            "\\(15\\)",
+            "\\(24\\)"
+          ],
+          "answer": 1,
+          "solution": "\\(18\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a\\) and common ratio \\(r\\).",
+              "work": "\\(a = 12, quad r = \\frac{4}{12} = \\frac{1}{3}\\)"
+            },
+            {
+              "explain": "Apply the limiting sum formula \\(S_{\\infty} = \\frac{a}{1-r}\\).",
+              "work": "\\(S_{\\infty} = \\frac{12}{1 - 1/3} = \\frac{12}{2/3}\\)"
+            },
+            {
+              "explain": "Evaluate the expression.",
+              "work": "\\(S_{\\infty} = 18\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c6-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the limiting sum of the infinite alternating geometric series:\n\\[9 - 6 + 4 - \\frac{8}{3} + \\dots\\]",
+          "options": [
+            "\\(\\frac{9}{5}\\)",
+            "\\(5\\)",
+            "\\(\\frac{18}{5}\\)",
+            "\\(\\frac{27}{5}\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(\\frac{27}{5}\\)",
+          "steps": [
+            {
+              "explain": "Identify the first term \\(a\\) and common ratio \\(r\\).",
+              "work": "\\(a = 9, quad r = -\\frac{6}{9} = -\\frac{2}{3}\\)"
+            },
+            {
+              "explain": "Apply the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{9}{1 - (-2/3)}\\)"
+            },
+            {
+              "explain": "Simplify the denominator and evaluate.",
+              "work": "\\(S_{\\infty} = \\frac{9}{5/3} = 9 \\times \\frac{3}{5} = \\frac{27}{5}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c6-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Express the recurring decimal \\(0.\\dot{7}\\) (or \\(0.777\\dots\\)) as a simplified fraction.",
+          "options": [
+            "\\(\\frac{7}{9}\\)",
+            "\\(\\frac{7}{10}\\)",
+            "\\(\\frac{8}{9}\\)",
+            "\\(\\frac{7}{99}\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(\\frac{7}{9}\\)",
+          "steps": [
+            {
+              "explain": "Write the recurring decimal as an infinite geometric series.",
+              "work": "\\(S = \\frac{7}{10} + \\frac{7}{100} + \\frac{7}{1000} + \\dots\\)"
+            },
+            {
+              "explain": "Identify the first term \\(a\\) and common ratio \\(r\\).",
+              "work": "\\(a = \\frac{7}{10}, quad r = \\frac{1}{10}\\)"
+            },
+            {
+              "explain": "Apply the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{7/10}{1 - 1/10} = \\frac{7/10}{9/10} = \\frac{7}{9}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c6-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Express the recurring decimal \\(0.\\dot{4}\\dot{5}\\) (or \\(0.454545\\dots\\)) as a simplified fraction.",
+          "options": [
+            "\\(\\frac{45}{99}\\)",
+            "\\(\\frac{5}{11}\\)",
+            "\\(\\frac{4}{9}\\)",
+            "\\(\\frac{6}{11}\\)"
+          ],
+          "answer": 1,
+          "solution": "\\(\\frac{5}{11}\\)",
+          "steps": [
+            {
+              "explain": "Write the decimal as a GP series.",
+              "work": "\\(S = \\frac{45}{100} + \\frac{45}{10000} + \\dots\\)"
+            },
+            {
+              "explain": "Identify \\(a\\) and \\(r\\).",
+              "work": "\\(a = \\frac{45}{100}, quad r = \\frac{1}{100}\\)"
+            },
+            {
+              "explain": "Apply the limiting sum formula and simplify.",
+              "work": "\\(S_{\\infty} = \\frac{45/100}{99/100} = \\frac{45}{99} = \\frac{5}{11}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c6-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the sum to infinity of the infinite geometric series:\n\\[\\sum_{n=1}^{\\infty} 5 \\cdot (0.8)^n\\]",
+          "options": [
+            "\\(40\\)",
+            "\\(25\\)",
+            "\\(16\\)",
+            "\\(20\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(20\\)",
+          "steps": [
+            {
+              "explain": "Find the first term \\(a\\) (at \\(n=1\\)) and common ratio \\(r\\).",
+              "work": "\\(a = 5(0.8) = 4, quad r = 0.8\\)"
+            },
+            {
+              "explain": "Apply the limiting sum formula.",
+              "work": "\\(S_{\\infty} = \\frac{4}{1 - 0.8} = \\frac{4}{0.2}\\)"
+            },
+            {
+              "explain": "Calculate the final value.",
+              "work": "\\(S_{\\infty} = 20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c7-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following non-standard sum:\n\\[\\sum_{n=1}^{3} \\frac{n^2 + 1}{n}\\]",
+          "options": [
+            "\\(\\frac{49}{6}\\)",
+            "\\(\\frac{43}{6}\\)",
+            "\\(8\\)",
+            "\\(\\frac{25}{3}\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(\\frac{49}{6}\\)",
+          "steps": [
+            {
+              "explain": "Calculate the term for \\(n = 1, 2, 3\\).",
+              "work": "\\(T_1 = \\frac{2}{1} = 2, quad T_2 = \\frac{5}{2}, quad T_3 = \\frac{10}{3}\\)"
+            },
+            {
+              "explain": "Add the terms together.",
+              "work": "\\(S = 2 + \\frac{5}{2} + \\frac{10}{3}\\)"
+            },
+            {
+              "explain": "Find a common denominator of 6.",
+              "work": "\\(S = \\frac{12}{6} + \\frac{15}{6} + \\frac{20}{6} = \\frac{49}{6}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c7-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following sum:\n\\[\\sum_{n=1}^{3} \\frac{2^n - 1}{2^n}\\]",
+          "options": [
+            "\\(\\frac{15}{8}\\)",
+            "\\(\\frac{7}{4}\\)",
+            "\\(\\frac{11}{8}\\)",
+            "\\(\\frac{13}{8}\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(\\frac{13}{8}\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the terms for \\(n = 1, 2, 3\\).",
+              "work": "\\(T_1 = \\frac{1}{2}, quad T_2 = \\frac{3}{4}, quad T_3 = \\frac{7}{8}\\)"
+            },
+            {
+              "explain": "Add the fractions.",
+              "work": "\\(S = \\frac{1}{2} + \\frac{3}{4} + \\frac{7}{8}\\)"
+            },
+            {
+              "explain": "Find a common denominator of 8.",
+              "work": "\\(S = \\frac{4}{8} + \\frac{6}{8} + \\frac{7}{8} = \\frac{13}{8}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c9-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The \\(1\\)-st, \\(3\\)-rd, and \\(9\\)-th terms of an AP form the first three terms of a GP. If the first term of the AP is \\(3\\), find the common ratio \\(r\\) of the GP (assume common difference \\(d \ne 0\\)).",
+          "options": [
+            "\\(2\\)",
+            "\\(3\\)",
+            "\\(\\frac{3}{2}\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "solution": "\\(3\\)",
+          "steps": [
+            {
+              "explain": "Write the terms of the AP: \\(T_1 = 3\\), \\(T_3 = 3 + 2d\\), \\(T_9 = 3 + 8d\\).",
+              "work": "\\(T_1 = 3, quad T_3 = 3+2d, quad T_9 = 3+8d\\)"
+            },
+            {
+              "explain": "Set up the geometric ratio condition: \\(\\frac{3+8d}{3+2d} = \\frac{3+2d}{3}\\).",
+              "work": "\\(3(3+8d) = (3+2d)^2\\)"
+            },
+            {
+              "explain": "Expand and solve for \\(d\\) (where \\(d \ne 0\\)).",
+              "work": "\\(9 + 24d = 9 + 12d + 4d^2 \\Rightarrow 4d^2 - 12d = 0 \\Rightarrow d = 3\\)"
+            },
+            {
+              "explain": "Calculate the common ratio \\(r = \\frac{T_3}{T_1}\\).",
+              "work": "\\(r = \\frac{3+2(3)}{3} = \\frac{9}{3} = 3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c9-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Three numbers whose sum is \\(15\\) form an AP. If \\(1, 4,\\) and \\(19\\) are added to the first, second, and third terms respectively, the resulting numbers form a GP. Find the original three numbers.",
+          "options": [
+            "\\(3, 5, 7\\)",
+            "\\(2, 5, 8\\)",
+            "\\(1, 5, 9\\)",
+            "\\(0, 5, 10\\)"
+          ],
+          "answer": 1,
+          "solution": "\\(2, 5, 8\\)",
+          "steps": [
+            {
+              "explain": "Let the numbers be \\(a - d, a, a + d\\). Since their sum is 15, \\(3a = 15 \\Rightarrow a = 5\\).",
+              "work": "\\(a = 5\\)"
+            },
+            {
+              "explain": "The original terms are \\(5-d, 5, 5+d\\). Add \\(1, 4, 19\\) to get the GP terms.",
+              "work": "\\(GP_1 = 5-d+1 = 6-d, quad GP_2 = 5+4 = 9, quad GP_3 = 5+d+19 = 24+d\\)"
+            },
+            {
+              "explain": "Set up the GP geometric mean condition.",
+              "work": "\\((6-d)(24+d) = 9^2\\)"
+            },
+            {
+              "explain": "Expand and solve the quadratic equation.",
+              "work": "\\(144 - 18d - d^2 = 81 \\Rightarrow d^2 + 18d - 63 = 0 \\Rightarrow (d-3)(d+21) = 0\\)"
+            },
+            {
+              "explain": "Substitute positive \\(d = 3\\) to find the original numbers.",
+              "work": "\\(5-3 = 2, quad 5, quad 5+3 = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c9-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In an AP, the first term is \\(4\\). The \\(1\\)-st, \\(2\\)-nd, and \\(5\\)-th terms of this AP form a GP. Find the positive common difference \\(d\\) of the AP.",
+          "options": [
+            "\\(6\\)",
+            "\\(2\\)",
+            "\\(4\\)",
+            "\\(8\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(8\\)",
+          "steps": [
+            {
+              "explain": "Write the terms of the AP: \\(T_1 = 4\\), \\(T_2 = 4 + d\\), \\(T_5 = 4 + 4d\\).",
+              "work": "\\(T_1 = 4, quad T_2 = 4+d, quad T_5 = 4+4d\\)"
+            },
+            {
+              "explain": "Set up the geometric ratio condition.",
+              "work": "\\((4+d)^2 = 4(4+4d)\\)"
+            },
+            {
+              "explain": "Expand the equation.",
+              "work": "\\(16 + 8d + d^2 = 16 + 16d\\)"
+            },
+            {
+              "explain": "Rearrange and solve for \\(d\\) (where \\(d > 0\\)).",
+              "work": "\\(d^2 - 8d = 0 \\Rightarrow d = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c9-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The first three terms of a sequence are \\(x, x+3, y\\). If \\(x, x+3\\) are the first two terms of an AP and \\(x+3, y\\) are the first two terms of a GP with ratio \\(3\\), find the sum \\(x+y\\) if \\(x = 2\\).",
+          "options": [
+            "\\(17\\)",
+            "\\(15\\)",
+            "\\(20\\)",
+            "\\(19\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(17\\)",
+          "steps": [
+            {
+              "explain": "Identify the terms with \\(x = 2\\). The first term is 2, the second term is 5.",
+              "work": "\\(T_1 = 2, quad T_2 = 5\\)"
+            },
+            {
+              "explain": "Use the GP ratio of 3 from the second term to find the third term \\(y\\).",
+              "work": "\\(y = 3 \\times T_2 = 3 \\times 5 = 15\\)"
+            },
+            {
+              "explain": "Calculate the sum \\(x + y\\).",
+              "work": "\\(x + y = 2 + 15 = 17\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c9-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An AP and a GP have the same first term \\(a = 5\\) and the same second term. The third term of the GP is \\(1.8\\) times the third term of the AP. Find the common ratio \\(r\\) of the GP (with \\(r > 1\\)).",
+          "options": [
+            "\\(2\\)",
+            "\\(1.5\\)",
+            "\\(3\\)",
+            "\\(2.5\\)"
+          ],
+          "answer": 2,
+          "solution": "\\(3\\)",
+          "steps": [
+            {
+              "explain": "Let the second term be \\(5r). The common difference of the AP is \\(d = 5r - 5).",
+              "work": "\\(d = 5(r-1)\\)"
+            },
+            {
+              "explain": "Write the third terms: \\(T_3(GP) = 5r^2\\) and \\(T_3(AP) = 5 + 2d = 10r - 5\\).",
+              "work": "\\(T_3(GP) = 5r^2, quad T_3(AP) = 10r - 5\\)"
+            },
+            {
+              "explain": "Apply the condition \\(T_3(GP) = 1.8 T_3(AP)\\).",
+              "work": "\\(5r^2 = 1.8(10r - 5) \\Rightarrow 5r^2 = 18r - 9\\)"
+            },
+            {
+              "explain": "Solve the quadratic equation \\(5r^2 - 18r + 9 = 0\\).",
+              "work": "\\((5r - 3)(r - 3) = 0 \\Rightarrow r = 3 \\quad \\text{since } r > 1\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c9-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The \\(2\\)-nd, \\(5\\)-th, and \\(14\\)-th terms of an AP form a GP. Find the common ratio \\(r\\) of this GP.",
+          "options": [
+            "\\(2\\)",
+            "\\(4\\)",
+            "\\(1.5\\)",
+            "\\(3\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(3\\)",
+          "steps": [
+            {
+              "explain": "Express the AP terms: \\(T_2 = a+d\\), \\(T_5 = a+4d\\), \\(T_{14} = a+13d\\).",
+              "work": "\\(GP_1 = a+d, quad GP_2 = a+4d, quad GP_3 = a+13d\\)"
+            },
+            {
+              "explain": "Set up the geometric mean equation.",
+              "work": "\\((a+4d)^2 = (a+d)(a+13d)\\)"
+            },
+            {
+              "explain": "Expand and simplify the relation.",
+              "work": "\\(a^2 + 8ad + 16d^2 = a^2 + 14ad + 13d^2 \\Rightarrow 3d^2 = 6ad \\Rightarrow d = 2a\\)"
+            },
+            {
+              "explain": "Substitute \\(d = 2a\\) to find the common ratio \\(r = \\frac{GP_2}{GP_1}\\).",
+              "work": "\\(r = \\frac{a + 4(2a)}{a + 2a} = \\frac{9a}{3a} = 3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c9-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The sum of the first \\(3\\) terms of an AP is \\(18\\). If the first term is decreased by \\(1\\), the second term is increased by \\(2\\), and the third term is increased by \\(14\\), the resulting terms form a GP. Find the first term \\(T_1\\) of the AP (where \\(d > 0\\)).",
+          "options": [
+            "\\(5\\)",
+            "\\(4\\)",
+            "\\(6\\)",
+            "\\(3\\)"
+          ],
+          "answer": 3,
+          "solution": "\\(3\\)",
+          "steps": [
+            {
+              "explain": "Let the terms of the AP be \\(a - d, a, a + d\\). Their sum is \\(3a = 18 \\Rightarrow a = 6\\).",
+              "work": "\\(a = 6\\)"
+            },
+            {
+              "explain": "Write the terms of the GP after modifications.",
+              "work": "\\(GP_1 = 5-d, quad GP_2 = 8, quad GP_3 = 20+d\\)"
+            },
+            {
+              "explain": "Apply the GP condition: \\((5-d)(20+d) = 8^2\\).",
+              "work": "\\(100 - 15d - d^2 = 64\\)"
+            },
+            {
+              "explain": "Solve the quadratic equation \\(d^2 + 15d - 36 = 0\\).",
+              "work": "\\((d-3)(d+18) = 0 \\Rightarrow d = 3\\)"
+            },
+            {
+              "explain": "Calculate the first term \\(T_1 = a - d\\).",
+              "work": "\\(T_1 = 6 - 3 = 3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c10-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following absolute value sum:\n\\[\\sum_{n=1}^{3} |2n - 3|\\]",
+          "options": [
+            "\\(3\\)",
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(4\\)"
+          ],
+          "answer": 1,
+          "solution": "\\(5\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the term \\(|2n - 3|\\) for each \\(n = 1, 2, 3\\).",
+              "work": "\\(T_1 = |2(1)-3| = 1, quad T_2 = |2(2)-3| = 1, quad T_3 = |2(3)-3| = 3\\)"
+            },
+            {
+              "explain": "Add the terms.",
+              "work": "\\(S = 1 + 1 + 3\\)"
+            },
+            {
+              "explain": "Calculate the final sum.",
+              "work": "\\(S = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c10-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following absolute value sum:\n\\[\\sum_{n=1}^{4} |n - 3|\\]",
+          "options": [
+            "\\(5\\)",
+            "\\(2\\)",
+            "\\(4\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "solution": "\\(4\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the expression for \\(n = 1, 2, 3, 4\\).",
+              "work": "\\(T_1 = |1-3| = 2, quad T_2 = |2-3| = 1, quad T_3 = 0, quad T_4 = |4-3| = 1\\)"
+            },
+            {
+              "explain": "Sum the evaluated terms.",
+              "work": "\\(S = 2 + 1 + 0 + 1\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S = 4\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c10-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following absolute value sum:\n\\[\\sum_{n=1}^{3} |3n - 5|\\]",
+          "options": [
+            "\\(9\\)",
+            "\\(7\\)",
+            "\\(6\\)",
+            "\\(5\\)"
+          ],
+          "answer": 1,
+          "solution": "\\(7\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the expression for \\(n = 1, 2, 3\\).",
+              "work": "\\(T_1 = |3(1)-5| = 2, quad T_2 = |3(2)-5| = 1, quad T_3 = |3(3)-5| = 4\\)"
+            },
+            {
+              "explain": "Sum the terms.",
+              "work": "\\(S = 2 + 1 + 4\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S = 7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c10-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following absolute value sum:\n\\[\\sum_{n=1}^{4} |2^n - 6|\\]",
+          "options": [
+            "\\(18\\)",
+            "\\(16\\)",
+            "\\(20\\)",
+            "\\(14\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(18\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the expression for \\(n = 1, 2, 3, 4\\).",
+              "work": "\\(T_1 = |2-6| = 4, quad T_2 = |4-6| = 2, quad T_3 = |8-6| = 2, quad T_4 = |16-6| = 10\\)"
+            },
+            {
+              "explain": "Sum the terms.",
+              "work": "\\(S = 4 + 2 + 2 + 10\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S = 18\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c10-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following absolute value sum:\n\\[\\sum_{n=1}^{3} |n^2 - 5|\\]",
+          "options": [
+            "\\(8\\)",
+            "\\(11\\)",
+            "\\(9\\)",
+            "\\(7\\)"
+          ],
+          "answer": 2,
+          "solution": "\\(9\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the expression for \\(n = 1, 2, 3\\).",
+              "work": "\\(T_1 = |1-5| = 4, quad T_2 = |4-5| = 1, quad T_3 = |9-5| = 4\\)"
+            },
+            {
+              "explain": "Sum the terms.",
+              "work": "\\(S = 4 + 1 + 4\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S = 9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c10-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following absolute value sum:\n\\[\\sum_{n=1}^{4} |3 - 2n|\\]",
+          "options": [
+            "\\(8\\)",
+            "\\(12\\)",
+            "\\(10\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "solution": "\\(10\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the expression for \\(n = 1, 2, 3, 4\\).",
+              "work": "\\(T_1 = |3-2| = 1, quad T_2 = |3-4| = 1, quad T_3 = |3-6| = 3, quad T_4 = |3-8| = 5\\)"
+            },
+            {
+              "explain": "Sum the terms.",
+              "work": "\\(S = 1 + 1 + 3 + 5\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S = 10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c10-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following absolute value sum:\n\\[\\sum_{n=2}^{5} |n^2 - 3n|\\]",
+          "options": [
+            "\\(18\\)",
+            "\\(14\\)",
+            "\\(16\\)",
+            "\\(12\\)"
+          ],
+          "answer": 2,
+          "solution": "\\(16\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the terms from \\(n = 2\\) up to \\(n = 5\\).",
+              "work": "\\(T_2 = |4-6| = 2, quad T_3 = |9-9| = 0, quad T_4 = |16-12| = 4, quad T_5 = |25-15| = 10\\)"
+            },
+            {
+              "explain": "Sum the terms.",
+              "work": "\\(S = 2 + 0 + 4 + 10\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S = 16\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c10-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following absolute value sum:\n\\[\\sum_{n=1}^{3} |4 - n^2|\\]",
+          "options": [
+            "\\(8\\)",
+            "\\(10\\)",
+            "\\(4\\)",
+            "\\(6\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(8\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the expression for \\(n = 1, 2, 3\\).",
+              "work": "\\(T_1 = |4-1| = 3, quad T_2 = |4-4| = 0, quad T_3 = |4-9| = 5\\)"
+            },
+            {
+              "explain": "Sum the terms.",
+              "work": "\\(S = 3 + 0 + 5\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c10-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following absolute value sum:\n\\[\\sum_{n=1}^{3} |5 - 2^n|\\]",
+          "options": [
+            "\\(6\\)",
+            "\\(5\\)",
+            "\\(7\\)",
+            "\\(9\\)"
+          ],
+          "answer": 2,
+          "solution": "\\(7\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the expression for \\(n = 1, 2, 3\\).",
+              "work": "\\(T_1 = |5-2| = 3, quad T_2 = |5-4| = 1, quad T_3 = |5-8| = 3\\)"
+            },
+            {
+              "explain": "Sum the terms.",
+              "work": "\\(S = 3 + 1 + 3\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S = 7\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-1e-hard-c10-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Evaluate the following absolute value sum:\n\\[\\sum_{n=1}^{4} |n - 2.5|\\]",
+          "options": [
+            "\\(4\\)",
+            "\\(3\\)",
+            "\\(6\\)",
+            "\\(5\\)"
+          ],
+          "answer": 0,
+          "solution": "\\(4\\)",
+          "steps": [
+            {
+              "explain": "Evaluate the expression for \\(n = 1, 2, 3, 4\\).",
+              "work": "\\(T_1 = |1-2.5| = 1.5, quad T_2 = |2-2.5| = 0.5, quad T_3 = |3-2.5| = 0.5, quad T_4 = |4-2.5| = 1.5\\)"
+            },
+            {
+              "explain": "Sum the terms.",
+              "work": "\\(S = 1.5 + 0.5 + 0.5 + 1.5\\)"
+            },
+            {
+              "explain": "Evaluate the sum.",
+              "work": "\\(S = 4\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

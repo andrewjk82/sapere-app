@@ -1,0 +1,422 @@
+{
+  "chapterId": "exam:year8ch10g",
+  "title": "Exam Practice",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "exam:year8ch10g",
+      "code": "",
+      "title": "Review of rates and ratios",
+      "questions": [
+        {
+          "id": "y8-10g-q16",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A plan of a tennis court is drawn to a scale of \\(1\\text{ cm}\\) to represent \\(200\\text{ cm}\\) (\\(1 : 200\\)). The plan measurements are as follows:\n- Length of the court: \\(12\\text{ cm}\\)\n- Width of the court: \\(6\\text{ cm}\\)\n- Distance from base line to service line: \\(3.2\\text{ cm}\\)\n- Distance between singles and doubles side lines: \\(0.5\\text{ cm}\\)",
+          "figure": {
+            "geometry": {
+              "width": 320,
+              "points": {
+                "A": [
+                  0,
+                  0
+                ],
+                "B": [
+                  12,
+                  0
+                ],
+                "C": [
+                  12,
+                  6
+                ],
+                "D": [
+                  0,
+                  6
+                ],
+                "E": [
+                  6,
+                  0
+                ],
+                "F": [
+                  6,
+                  6
+                ],
+                "G": [
+                  0,
+                  0.5
+                ],
+                "H": [
+                  12,
+                  0.5
+                ],
+                "I": [
+                  0,
+                  5.5
+                ],
+                "J": [
+                  12,
+                  5.5
+                ],
+                "K": [
+                  3.2,
+                  0.5
+                ],
+                "L": [
+                  3.2,
+                  5.5
+                ],
+                "M": [
+                  8.8,
+                  0.5
+                ],
+                "N": [
+                  8.8,
+                  5.5
+                ],
+                "O": [
+                  3.2,
+                  3
+                ],
+                "P": [
+                  8.8,
+                  3
+                ],
+                "Q": [
+                  3.2,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "A"
+                },
+                {
+                  "from": "E",
+                  "to": "F",
+                  "dashed": true
+                },
+                {
+                  "from": "G",
+                  "to": "H"
+                },
+                {
+                  "from": "I",
+                  "to": "J"
+                },
+                {
+                  "from": "K",
+                  "to": "L"
+                },
+                {
+                  "from": "M",
+                  "to": "N"
+                },
+                {
+                  "from": "O",
+                  "to": "P"
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "A",
+                    "B"
+                  ],
+                  "text": "12 cm (length)"
+                },
+                {
+                  "between": [
+                    "B",
+                    "C"
+                  ],
+                  "text": "6 cm (width)"
+                },
+                {
+                  "between": [
+                    "A",
+                    "G"
+                  ],
+                  "text": "0.5 cm"
+                },
+                {
+                  "between": [
+                    "A",
+                    "Q"
+                  ],
+                  "text": "3.2 cm"
+                }
+              ]
+            }
+          },
+          "parts": [
+            {
+              "id": "y8-10g-q16a",
+              "type": "mc",
+              "stem": "What is the approximate real length of the court in metres?",
+              "options": [
+                "\\(48\\)",
+                "\\(12\\)",
+                "\\(24\\)",
+                "\\(240\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Identify the scale.",
+                  "work": "\\(\\text{Scale} = 1:200\\)"
+                },
+                {
+                  "explain": "Identify the map length from the diagram (12 cm).",
+                  "work": "\\(\\text{Map length} = 12\\text{ cm}\\)"
+                },
+                {
+                  "explain": "Multiply by the scale factor and convert to metres.",
+                  "work": "\\(12 \\times 200 = 2400\\text{ cm} = 24\\text{ m}\\)"
+                },
+                {
+                  "explain": "State the real length.",
+                  "work": "\\(24\\text{ m}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-10g-q16b",
+              "type": "mc",
+              "stem": "What is the approximate real width of the court in metres?",
+              "options": [
+                "\\(24\\)",
+                "\\(12\\)",
+                "\\(6\\)",
+                "\\(120\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the scale.",
+                  "work": "\\(\\text{Scale} = 1:200\\)"
+                },
+                {
+                  "explain": "Identify the map width from the diagram (6 cm).",
+                  "work": "\\(\\text{Map width} = 6\\text{ cm}\\)"
+                },
+                {
+                  "explain": "Multiply by the scale factor and convert to metres.",
+                  "work": "\\(6 \\times 200 = 1200\\text{ cm} = 12\\text{ m}\\)"
+                },
+                {
+                  "explain": "State the real width.",
+                  "work": "\\(12\\text{ m}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-10g-q16c",
+              "type": "mc",
+              "stem": "Find the approximate real distance from the base line to the service line on the same side of the net in metres.",
+              "options": [
+                "\\(12.8\\)",
+                "\\(3.2\\)",
+                "\\(64.0\\)",
+                "\\(6.4\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Identify the scale.",
+                  "work": "\\(\\text{Scale} = 1:200\\)"
+                },
+                {
+                  "explain": "Identify the map distance from the diagram (3.2 cm).",
+                  "work": "\\(\\text{Map distance} = 3.2\\text{ cm}\\)"
+                },
+                {
+                  "explain": "Multiply by the scale factor and convert to metres.",
+                  "work": "\\(3.2 \\times 200 = 640\\text{ cm} = 6.4\\text{ m}\\)"
+                },
+                {
+                  "explain": "State the real distance.",
+                  "work": "\\(6.4\\text{ m}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-10g-q16d",
+              "type": "mc",
+              "stem": "What is the approximate real area of the court in square metres?",
+              "options": [
+                "\\(288\\)",
+                "\\(576\\)",
+                "\\(144\\)",
+                "\\(2880\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Identify the real length and width calculated previously.",
+                  "work": "\\(\\text{Length} = 24\\text{ m}, \\quad \\text{Width} = 12\\text{ m}\\)"
+                },
+                {
+                  "explain": "Use the area formula for a rectangle: Area = Length × Width.",
+                  "work": "\\(\\text{Area} = 24 \\times 12\\)"
+                },
+                {
+                  "explain": "Perform the multiplication.",
+                  "work": "\\(288\\)"
+                },
+                {
+                  "explain": "State the real area.",
+                  "work": "\\(288\\text{ m}^2\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-10g-q16e",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "What is the approximate real distance between the singles side line and doubles side line on each side of the court in metres?",
+              "options": [
+                "\\(1\\)",
+                "\\(2\\)",
+                "\\(0.5\\)",
+                "\\(10\\)"
+              ],
+              "answer": 0,
+              "solution": "1",
+              "steps": [
+                {
+                  "explain": "Identify the scale.",
+                  "work": "\\(\\text{Scale} = 1:200\\)"
+                },
+                {
+                  "explain": "Identify the map distance from the diagram (0.5 cm).",
+                  "work": "\\(\\text{Map distance} = 0.5\\text{ cm}\\)"
+                },
+                {
+                  "explain": "Multiply by the scale factor and convert to metres.",
+                  "work": "\\(0.5 \\times 200 = 100\\text{ cm} = 1\\text{ m}\\)"
+                },
+                {
+                  "explain": "State the real distance.",
+                  "work": "\\(1\\text{ m}\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "Refer to sub-questions"
+        },
+        {
+          "id": "y8-10g-q22",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "",
+          "parts": [
+            {
+              "id": "y8-10g-q22a",
+              "type": "mc",
+              "stem": "How far, at the same rate, will she walk in \\(1\\) hour?",
+              "options": [
+                "\\(9.0\\)",
+                "\\(2.3\\)",
+                "\\(4.5\\)",
+                "\\(45.0\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Calculate Ava's walking speed.",
+                  "work": "\\(\\text{Speed} = \\frac{18\\text{ km}}{4\\text{ h}} = 4.5\\text{ km/h}\\)"
+                },
+                {
+                  "explain": "Use the formula Distance = Speed × Time.",
+                  "work": "\\(\\text{Distance} = 4.5 \\times 1\\)"
+                },
+                {
+                  "explain": "Calculate the distance.",
+                  "work": "\\(4.5\\)"
+                },
+                {
+                  "explain": "State the final answer.",
+                  "work": "\\(\\text{She will walk } 4.5\\text{ km}.\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-10g-q22b",
+              "type": "mc",
+              "stem": "How far, at the same rate, will she walk in \\(3\\) hours?",
+              "options": [
+                "\\(27.0\\)",
+                "\\(13.5\\)",
+                "\\(6.8\\)",
+                "\\(135.0\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify Ava's speed from part a.",
+                  "work": "\\(\\text{Speed} = 4.5\\text{ km/h}\\)"
+                },
+                {
+                  "explain": "Use the formula Distance = Speed × Time.",
+                  "work": "\\(\\text{Distance} = 4.5 \\times 3\\)"
+                },
+                {
+                  "explain": "Calculate the distance.",
+                  "work": "\\(13.5\\)"
+                },
+                {
+                  "explain": "State the final answer.",
+                  "work": "\\(\\text{She will walk } 13.5\\text{ km}.\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-10g-q22c",
+              "type": "mc",
+              "stem": "How far, at the same rate, will she walk in \\(5\\) hours?",
+              "options": [
+                "\\(45.0\\)",
+                "\\(11.3\\)",
+                "\\(22.5\\)",
+                "\\(225.0\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Identify Ava's speed from part a.",
+                  "work": "\\(\\text{Speed} = 4.5\\text{ km/h}\\)"
+                },
+                {
+                  "explain": "Use the formula Distance = Speed × Time.",
+                  "work": "\\(\\text{Distance} = 4.5 \\times 5\\)"
+                },
+                {
+                  "explain": "Calculate the distance.",
+                  "work": "\\(22.5\\)"
+                },
+                {
+                  "explain": "State the final answer.",
+                  "work": "\\(\\text{She will walk } 22.5\\text{ km}.\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "Refer to sub-questions"
+        }
+      ]
+    }
+  ]
+}

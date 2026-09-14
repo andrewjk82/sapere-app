@@ -1,0 +1,19 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>
+  <rect width='300' height='300' fill='#ffffff' />
+  <polygon points='41.67114716865713,130.89870045663767 41.67114716865713,169.10129954336236 150,150' fill='#f8fafc' stroke='#cbd5e1' stroke-width='1.5' stroke-linejoin='round' />
+  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />
+  <line x1='41.67114716865713' y1='130.89870045663767' x2='258.3288528313429' y2='169.10129954336244' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='150' y1='150' x2='41.67114716865713' y2='169.10129954336236' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <path d='M 128.33422943373142 153.82025990867245 A 22 22 0 0 0 171.66577056626858 153.82025990867248' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='150' y='186' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>160°</text>
+  <path d='M 54.67060950841827 133.19085640184116 A 13.2 13.2 0 0 1 41.67114716865713 144.09870045663766' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='52.72141797650315' y='148.06790039102708' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>θ</text>
+  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />
+  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>
+  <circle cx='41.67114716865713' cy='130.89870045663767' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='27.67114716865713' y='128.89870045663767' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>A</text>
+  <circle cx='258.3288528313429' cy='169.10129954336244' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='270.3288528313429' y='173.10129954336244' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>B</text>
+  <circle cx='41.67114716865713' cy='169.10129954336236' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='27.67114716865713' y='171.10129954336236' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>C</text>
+</svg>

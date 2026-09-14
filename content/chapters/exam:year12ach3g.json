@@ -1,0 +1,363 @@
+{
+  "chapterId": "exam:year12ach3g",
+  "title": "Exam Practice",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "exam:year12ach3g",
+      "code": "",
+      "title": "Applications of maximisation and minimisation",
+      "questions": [
+        {
+          "id": "y12a-3g-q10",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A \\( 16 \\) cm length of wire is cut into two pieces from which two squares are formed.",
+          "parts": [
+            {
+              "id": "y12a-3g-q10ai",
+              "type": "mc",
+              "stem": "a) i) If one piece has length \\( x \\) cm, find the side length of the first square.",
+              "options": [
+                "\\( 4x \\)",
+                "\\( x^2 \\)",
+                "\\( \\frac{x}{4} \\)",
+                "\\( \\frac{x}{2} \\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Divide by 4 since a square has 4 equal sides.",
+                  "work": "\\text{Side length} = \\frac{x}{4}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3g-q10aii",
+              "type": "mc",
+              "stem": "a) ii) Find the side length of the second square.",
+              "options": [
+                "\\( \\frac{16 - x}{2} \\)",
+                "\\( 16 - \\frac{x}{4} \\)",
+                "\\( \\frac{16 - x}{4} \\)",
+                "\\( 4(16 - x) \\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Find the length of the second piece.",
+                  "work": "16 - x"
+                },
+                {
+                  "explain": "Divide by 4.",
+                  "work": "\\text{Side length} = \\frac{16 - x}{4}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3g-q10b",
+              "type": "mc",
+              "stem": "b) Show that the combined area of the two squares is \\( A = \\frac{1}{8}(x^2 - 16x + 128) \\).",
+              "options": [
+                "\\( A = \\frac{1}{8}(x^2 - 16x + 128) \\)",
+                "\\( A = \\frac{1}{16}(2x^2 - 16x + 256) \\)",
+                "\\( A = x^2 - 16x + 128 \\)",
+                "\\( A = \\frac{1}{4}(x^2 - 8x + 64) \\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Sum the areas of the two squares.",
+                  "work": "A = \\left(\\frac{x}{4}\\right)^2 + \\left(\\frac{16 - x}{4}\\right)^2"
+                },
+                {
+                  "explain": "Expand and simplify.",
+                  "work": "A = \\frac{x^2}{16} + \\frac{256 - 32x + x^2}{16} = \\frac{2x^2 - 32x + 256}{16}"
+                },
+                {
+                  "explain": "Factor out 2.",
+                  "work": "A = \\frac{2(x^2 - 16x + 128)}{16} = \\frac{1}{8}(x^2 - 16x + 128)"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3g-q10c",
+              "type": "mc",
+              "stem": "c) Find \\( \\frac{dA}{dx} \\) and determine the value of \\( x \\) that minimises \\( A \\).",
+              "options": [
+                "\\( \\frac{dA}{dx} = \\frac{1}{4}(x - 8) \\), \\( x = 8 \\)",
+                "\\( \\frac{dA}{dx} = \\frac{1}{8}(x - 8) \\), \\( x = 8 \\)",
+                "\\( \\frac{dA}{dx} = \\frac{1}{4}(x + 8) \\), \\( x = -8 \\)",
+                "\\( \\frac{dA}{dx} = 2x - 16 \\), \\( x = 8 \\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Differentiate \\( A \\).",
+                  "work": "\\frac{dA}{dx} = \\frac{1}{8}(2x - 16) = \\frac{1}{4}(x - 8)"
+                },
+                {
+                  "explain": "Find stationary point.",
+                  "work": "\\frac{1}{4}(x - 8) = 0 \\implies x = 8"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3g-q10d",
+              "type": "mc",
+              "stem": "d) Find the least possible combined area of the two squares.",
+              "options": [
+                "16",
+                "8",
+                "32",
+                "4"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Substitute \\( x = 8 \\) into \\( A \\).",
+                  "work": "A = \\frac{1}{8}(8^2 - 16(8) + 128) = \\frac{1}{8}(64 - 128 + 128) = \\frac{64}{8} = 8 \\text{ cm}^2"
+                }
+              ]
+            }
+          ],
+          "answer": "0"
+        },
+        {
+          "id": "y12a-3g-q18",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A closed rectangular box has length \\( x \\) cm, width \\( y \\) cm, and height \\( h \\) cm. It is to be made from \\( 432 \\text{ cm}^2 \\) of thin sheet metal, and the perimeter of the base is to be \\( 48 \\text{ cm} \\).",
+          "parts": [
+            {
+              "id": "y12a-3g-q18a",
+              "type": "mc",
+              "stem": "a) Show that the volume of the box is given by \\( V = 216h - 24h^2 \\).",
+              "options": [
+                "\\( V = 432h - 48h^2 \\)",
+                "\\( V = 216 - 24h \\)",
+                "\\( V = 216h - 24h^2 \\)",
+                "\\( V = 108h - 12h^2 \\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "First, use the constraint that the perimeter of the base is 48 m. The base is a rectangle with length \\(x\\) and width \\(y\\), so its perimeter is \\(2x + 2y\\).",
+                  "work": "\\(2x + 2y = 48\\)\n\n\\(x + y = 24\\)"
+                },
+                {
+                  "explain": "Next, use the total surface area constraint (432 m²). A closed rectangular box has 6 faces: top and bottom (area \\(xy\\)), front and back (area \\(xh\\)), and two sides (area \\(yh\\)).",
+                  "work": "\\(S = 2xy + 2xh + 2yh = 432\\)\n\n\\(2xy + 2h(x + y) = 432\\)"
+                },
+                {
+                  "explain": "Substitute \\(x + y = 24\\) into the surface area equation and solve for the base area, \\(xy\\).",
+                  "work": "\\(2xy + 2h(24) = 432\\)\n\n\\(2xy + 48h = 432\\)\n\nDivide by 2:\n\\(xy + 24h = 216\\)\n\n\\(xy = 216 - 24h\\)"
+                },
+                {
+                  "explain": "The volume of the box is given by \\(V = \\text{length} \\times \\text{width} \\times \\text{height} = xyh\\). Substitute the expression for \\(xy\\) into the volume formula.",
+                  "work": "\\(V = (216 - 24h)h = 216h - 24h^2 \\checkmark\\)"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3g-q18bi",
+              "type": "mc",
+              "stem": "b) i) Find the height \\( h \\) of the box that yields the maximum possible volume.",
+              "options": [
+                "4.5",
+                "6",
+                "3",
+                "9"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "To find the height that maximises volume, differentiate \\(V = 216h - 24h^2\\) with respect to \\(h\\).",
+                  "work": "\\(\\dfrac{dV}{dh} = 216 - 48h\\)"
+                },
+                {
+                  "explain": "Set the derivative equal to zero to find the stationary point.",
+                  "work": "\\(216 - 48h = 0\\)\n\n\\(48h = 216\\)\n\n\\(h = \\dfrac{216}{48} = 4.5\\) m"
+                },
+                {
+                  "explain": "Confirm this gives a maximum by checking the second derivative.",
+                  "work": "\\(\\dfrac{d^2V}{dh^2} = -48 < 0 \\implies\\) maximum \\(\\checkmark\\)"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3g-q18bii",
+              "type": "mc",
+              "stem": "b) ii) Find the base length \\( x \\) (where \\( x \\ge y \\)) of the box that maximises the volume.",
+              "options": [
+                "24",
+                "18",
+                "9",
+                "12"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "We know from part (a) that \\(xy = 216 - 24h\\). Substitute \\(h = 4.5\\) to find the numerical value of \\(xy\\).",
+                  "work": "\\(xy = 216 - 24(4.5) = 216 - 108 = 108\\)"
+                },
+                {
+                  "explain": "We now have a system of two equations: \\(x + y = 24\\) and \\(xy = 108\\). Substitute \\(y = 24 - x\\) into the second equation to form a quadratic in terms of \\(x\\).",
+                  "work": "\\(x(24 - x) = 108\\)\n\n\\(24x - x^2 = 108\\)\n\n\\(x^2 - 24x + 108 = 0\\)"
+                },
+                {
+                  "explain": "Factorise the quadratic equation. We need two numbers that multiply to 108 and add to -24. These are -18 and -6.",
+                  "work": "\\((x - 18)(x - 6) = 0\\)\n\n\\(x = 18 \\quad \\text{or} \\quad x = 6\\)"
+                },
+                {
+                  "explain": "The question states that the length \\(x\\) is greater than or equal to the width \\(y\\). Therefore, \\(x\\) must be the larger value.",
+                  "work": "\\(\\text{Since } x \\ge y, \\text{ we choose } x = 18 \\text{ m.}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3g-q18biii",
+              "type": "mc",
+              "stem": "b) iii) Find the base width \\( y \\) of the box that maximises the volume.",
+              "options": [
+                "9",
+                "12",
+                "18",
+                "6"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Substitute \\(x = 18\\) back into \\(x + y = 24\\) to find \\(y\\).",
+                  "work": "\\(18 + y = 24 \\implies y = 6\\) m"
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "timeLimit": 240
+        },
+        {
+          "id": "y12a-3g-q21",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A page of a book is to have \\( 50 \\text{ cm}^2 \\) of printed material. There is to be a \\( 2 \\text{ cm} \\) margin at the top and bottom, and a \\( 1 \\text{ cm} \\) margin on each side. Let the page have width \\( x \\) cm and height \\( y \\) cm.",
+          "parts": [
+            {
+              "id": "y12a-3g-q21a",
+              "type": "mc",
+              "stem": "a) Show that \\( (y - 4)(x - 2) = 50 \\) and hence that \\( y = 4 + \\frac{50}{x - 2} \\).",
+              "options": [
+                "\\( (y - 4)(x - 4) = 50 \\implies y = 4 + \\frac{50}{x - 4} \\)",
+                "\\( (y - 4)(x - 2) = 50 \\implies y = 4 + \\frac{50}{x - 2} \\)",
+                "\\( xy - 8 = 50 \\implies y = \\frac{58}{x} \\)",
+                "\\( (y - 2)(x - 4) = 50 \\implies y = 2 + \\frac{50}{x - 4} \\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Find dimensions of printed area.",
+                  "work": "\\text{Height: } y - 4 \\text{ (2cm margins top/bottom). Width: } x - 2 \\text{ (1cm margins left/right).}"
+                },
+                {
+                  "explain": "Set up area equation.",
+                  "work": "(y - 4)(x - 2) = 50"
+                },
+                {
+                  "explain": "Solve for \\( y \\).",
+                  "work": "y - 4 = \\frac{50}{x - 2} \\implies y = 4 + \\frac{50}{x - 2}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3g-q21b",
+              "type": "mc",
+              "stem": "b) Show that the area of the page is \\( A = \\frac{4x^2 + 42x}{x - 2} \\).",
+              "options": [
+                "\\( A = \\frac{2x^2 + 42x}{x - 2} \\)",
+                "\\( A = \\frac{4x^2 + 50x}{x - 2} \\)",
+                "\\( A = \\frac{4x^2 - 42x}{x - 2} \\)",
+                "\\( A = \\frac{4x^2 + 42x}{x - 2} \\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Total area.",
+                  "work": "A = xy = x\\left(4 + \\frac{50}{x - 2}\\right) = \\frac{4x(x - 2) + 50x}{x - 2} = \\frac{4x^2 - 8x + 50x}{x - 2} = \\frac{4x^2 + 42x}{x - 2}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3g-q21c",
+              "type": "mc",
+              "stem": "c) Use the quotient rule to show that \\( \\frac{dA}{dx} = \\frac{4(x^2 - 4x - 21)}{(x - 2)^2} \\).",
+              "options": [
+                "\\( \\frac{dA}{dx} = \\frac{4(x^2 - 4x - 21)}{(x - 2)^2} \\)",
+                "\\( \\frac{dA}{dx} = \\frac{4x^2 - 16x - 84}{x - 2} \\)",
+                "\\( \\frac{dA}{dx} = \\frac{4(x^2 + 4x - 21)}{(x - 2)^2} \\)",
+                "\\( \\frac{dA}{dx} = \\frac{8x - 42}{(x - 2)^2} \\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Use quotient rule.",
+                  "work": "\\frac{dA}{dx} = \\frac{(8x + 42)(x - 2) - (4x^2 + 42x)(1)}{(x - 2)^2}"
+                },
+                {
+                  "explain": "Expand numerator.",
+                  "work": "8x^2 + 26x - 84 - 4x^2 - 42x = 4x^2 - 16x - 84"
+                },
+                {
+                  "explain": "Factor.",
+                  "work": "4(x^2 - 4x - 21) = 4(x - 7)(x + 3)"
+                },
+                {
+                  "explain": "Final result.",
+                  "work": "\\frac{4(x^2 - 4x - 21)}{(x - 2)^2}"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3g-q21di",
+              "type": "mc",
+              "stem": "d) i) Find the width \\( x \\) of the page in order to use the least amount of paper.",
+              "options": [
+                "7",
+                "9",
+                "3",
+                "14"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Find stationary point.",
+                  "work": "\\frac{dA}{dx} = 0 \\implies x = 7 \\text{ (since } x>0)"
+                }
+              ]
+            },
+            {
+              "id": "y12a-3g-q21dii",
+              "type": "mc",
+              "stem": "d) ii) Find the height \\( y \\) of the page that minimises the paper usage.",
+              "options": [
+                "7",
+                "28",
+                "10",
+                "14"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Substitute \\( x = 7 \\) into \\( y \\).",
+                  "work": "y = 4 + \\frac{50}{7 - 2} = 4 + \\frac{50}{5} = 4 + 10 = 14"
+                }
+              ]
+            }
+          ],
+          "answer": "0",
+          "timeLimit": 240
+        }
+      ]
+    }
+  ]
+}

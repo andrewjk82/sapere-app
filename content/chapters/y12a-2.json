@@ -1,0 +1,713 @@
+{
+  "chapterId": "y12a-2",
+  "title": "Chapter 2: Graphing techniques",
+  "year": "Year 12",
+  "topics": [
+    {
+      "topicId": "y12a-2D",
+      "code": "2D",
+      "title": "Solving inequations",
+      "questions": [
+        {
+          "id": "hillsgrammar-25-2u-q35c",
+          "type": "mc",
+          "stem": "The destroyers (with distance \\(d(t) = 10\\sqrt{1300-450t+39t^2}\\) km, starting at 9 a.m.) are \"on alert\" when they are less than \\(40\\) km apart. During what times will the two destroyers be \"on alert\"?",
+          "options": [
+            "Between about 2:10 pm and 3:22 pm",
+            "Between about 1:00 pm and 4:30 pm",
+            "Between about 11:30 am and 1:00 pm",
+            "Between about 3:22 pm and 5:00 pm"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Set up the inequality \\(d(t) < 40\\), then square both sides to remove the square root (valid since both sides are positive).",
+              "work": "\\(10\\sqrt{1300-450t+39t^2} < 40 \\implies 1300-450t+39t^2 < 16\\)"
+            },
+            {
+              "explain": "Rearrange into standard quadratic-inequality form.",
+              "work": "\\(39t^2-450t+1284 < 0\\)"
+            },
+            {
+              "explain": "Find the boundary times by solving the corresponding equation with the quadratic formula. The discriminant is \\(450^2-4(39)(1284)=202500-200304=2196\\).",
+              "work": "\\(t = \\frac{450 \\pm \\sqrt{2196}}{78} \\approx \\frac{450 \\pm 46.86}{78}\\)"
+            },
+            {
+              "explain": "Evaluate both roots — these are the boundary times (in hours after 9 a.m.) between which the quadratic is negative (since it opens upward, it's negative BETWEEN the roots).",
+              "work": "\\(t \\approx 5.17 \\text{ and } t \\approx 6.37\\)"
+            },
+            {
+              "explain": "Convert these decimal hours after 9:00 a.m. into clock times: \\(0.17h\\approx10\\)min, \\(0.37h\\approx22\\)min.",
+              "work": "\\(9:00 + 5h10m \\approx 2:10\\text{ pm}; \\quad 9:00+6h22m \\approx 3:22\\text{ pm}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-2E",
+      "code": "2E",
+      "title": "Using graphs to solve equations and inequations",
+      "questions": [
+        {
+          "id": "bb2020-q5",
+          "type": "mc",
+          "stem": "The graph below shows the income and cost lines for a small business, in dollars, against the number of boxes sold. Use the graph to determine the number of boxes that need to be sold to break even.",
+          "figure": {
+            "svg": "fig:d95b4ffe61"
+          },
+          "options": [
+            "2",
+            "4",
+            "5",
+            "3"
+          ],
+          "answer": 3,
+          "hint": "The break-even point is where the Income line and the Cost line meet — the business earns exactly what it spent.",
+          "steps": [
+            {
+              "explain": "Breaking even means Income = Cost, i.e. the point where the two lines intersect on the graph.",
+              "work": "Break-even point = point of intersection",
+              "figure": {
+                "svg": "fig:5191ef4798"
+              }
+            },
+            {
+              "explain": "Reading the graph, the Income and Cost lines cross at the point \\((3, 15)\\), i.e. after 3 boxes are sold both lines give \\$15.",
+              "work": "Intersection at \\((3,15)\\)"
+            },
+            {
+              "explain": "The \\(x\\)-coordinate of the intersection is the number of boxes.",
+              "work": "\\(\\therefore\\) 3 boxes need to be sold to break even."
+            }
+          ],
+          "meta": {
+            "source": "Blacktown Boys HS 2020 2U Trials",
+            "school": "Blacktown Boys High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "cths2020-q22a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Why does \\(\\sin x = 1 - \\dfrac{x}{4}\\) have three solutions?",
+          "options": [
+            "The line is tangent to sine three times",
+            "Sine always has three roots on \\([0, 2\\pi]\\)",
+            "The line only meets sine for \\(x > 0\\)",
+            "The line \\(y = 1 - \\dfrac{x}{4}\\) intersects \\(y = \\sin x\\) at exactly three points"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "The equation \\(\\sin x = 1 - \\dfrac{x}{4}\\) is equivalent to finding where the curve \\(y = \\sin x\\) meets the straight line \\(y = 1 - \\dfrac{x}{4}\\).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "The line has \\(y\\)-intercept \\(1\\) (so it starts at the same height as a maximum of sine) and a gentle negative slope of \\(-\\dfrac{1}{4}\\).",
+              "work": "\\(m = -\\dfrac{1}{4},\\; (0,1)\\)"
+            },
+            {
+              "explain": "Because the line decreases slowly, it can cross the oscillating sine curve more than once: typically once on the way down from the first peak, again later, and once more before the line drops below \\(-1\\).",
+              "work": "\\(\\text{multiple crossings}\\)"
+            },
+            {
+              "explain": "On the standard domain shown in the exam diagram, the line intersects \\(y = \\sin x\\) at exactly three points. That is why the equation has three solutions.",
+              "work": "\\(3 \\text{ solutions}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Cherrybrook Tech 2020",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "cths2020-q22b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Approximate the largest solution of \\(\\sin x = 1 - \\dfrac{x}{4}\\).",
+          "options": [
+            "\\(x \\approx 5.8\\)",
+            "\\(x \\approx 3.1\\)",
+            "\\(x \\approx 1.2\\)",
+            "\\(x \\approx 7.5\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "To solve the equation, we can find the intersection points of the graphs \\(y = \\sin x\\) and \\(y = 1 - \\dfrac{x}{4}\\). We want the largest of these \\(x\\)-values.",
+              "work": "\\(y = \\sin x\\)<br>\\(y = 1 - \\dfrac{x}{4}\\)"
+            },
+            {
+              "explain": "The line eventually falls below the range of sine (below \\(-1\\)), so only finitely many intersections exist. The last one occurs before the line drops too low.",
+              "work": "\\(1 - \\dfrac{x}{4} > -1 \\implies x < 8\\)"
+            },
+            {
+              "explain": "Visually, the rightmost crossing lies a little to the left of \\(2\\pi \\approx 6.28\\) on a typical sketch.",
+              "work": "\\(x \\approx 2\\pi\\)"
+            },
+            {
+              "explain": "Reading the graph carefully gives an approximate largest solution \\(x \\approx 5.8\\).",
+              "work": "\\(x \\approx 5.8\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Cherrybrook Tech 2020",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "cths2020s-q22a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Why does \\(\\cos x = 1 - \\dfrac{x}{5}\\) have three solutions?",
+          "options": [
+            "Cosine always has three zeros",
+            "The line \\(y = 1 - \\dfrac{x}{5}\\) intersects \\(y = \\cos x\\) at exactly three points",
+            "The line is vertical",
+            "There are infinitely many solutions"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Rewrite \\(\\cos x = 1 - \\dfrac{x}{5}\\) as intersections of \\(y = \\cos x\\) and the line \\(y = 1 - \\dfrac{x}{5}\\).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "The line passes through \\((0, 1)\\) (a maximum of cosine) with slope \\(-\\dfrac{1}{5}\\), so it decreases even more slowly than a slope of \\(-\\dfrac{1}{4}\\).",
+              "work": "\\(m = -\\dfrac{1}{5}\\)"
+            },
+            {
+              "explain": "A slowly decreasing line starting at a cosine peak will cross the cosine wave several times before leaving the strip \\([-1, 1]\\).",
+              "work": "\\(\\text{several crossings}\\)"
+            },
+            {
+              "explain": "On the diagram used in the exam, there are exactly three intersection points, so the equation has three solutions.",
+              "work": "\\(3 \\text{ solutions}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Cherrybrook Tech 2020 similar",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "cths2020s-q22b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Approximate the largest solution of \\(\\cos x = 1 - \\dfrac{x}{5}\\).",
+          "options": [
+            "\\(x \\approx 3.5\\)",
+            "\\(x \\approx 4.5\\)",
+            "\\(x \\approx 6.5\\)",
+            "\\(x \\approx 8.0\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "The largest solution is the rightmost intersection of \\(y = \\cos x\\) and \\(y = 1 - \\dfrac{x}{5}\\).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Because the slope is only \\(-\\dfrac{1}{5}\\), the line stays inside \\([-1,1]\\) a little longer than the previous similar problem.",
+              "work": "\\(1 - \\dfrac{x}{5} \\ge -1 \\implies x \\le 10\\)"
+            },
+            {
+              "explain": "From the graph, the final crossing is a little past \\(2\\pi\\).",
+              "work": "\\(x \\gtrsim 2\\pi\\)"
+            },
+            {
+              "explain": "A reasonable approximation is \\(x \\approx 6.5\\).",
+              "work": "\\(x \\approx 6.5\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Cherrybrook Tech 2020 similar",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "hh2020-q29",
+          "type": "review",
+          "stem": "By drawing graphs on the number plane, show how many solutions exist for the equation \\(\\cos x = \\left|\\dfrac{x-\\pi}{4}\\right|\\) in the domain \\((-\\infty,\\infty)\\).",
+          "figure": {
+            "svg": "fig:bbe81593a1"
+          },
+          "answer": "",
+          "steps": [
+            {
+              "explain": "Sketch \\(y=\\cos x\\), which oscillates forever between \\(-1\\) and \\(1\\), and \\(y=\\left|\\dfrac{x-\\pi}{4}\\right|\\), a V-shaped graph with vertex at \\((\\pi,0)\\), gradient magnitude \\(\\dfrac14\\) on each side.",
+              "work": "\\(\\cos x\\): amplitude 1, period \\(2\\pi\\). \\(\\left|\\dfrac{x-\\pi}{4}\\right|\\): V-shape, vertex \\((\\pi,0)\\), slope \\(\\pm\\tfrac14\\)",
+              "figure": {
+                "svg": "fig:bbe81593a1"
+              }
+            },
+            {
+              "explain": "Since \\(\\cos x\\) is bounded between \\(-1\\) and \\(1\\), intersections can only occur where the V-graph's height is also within \\([-1,1]\\) — i.e. where \\(\\left|\\dfrac{x-\\pi}{4}\\right| \\le 1\\), which is \\(\\pi-4 \\le x \\le \\pi+4\\), a limited window.",
+              "work": "Intersections confined to \\(x \\in [\\pi-4, \\pi+4]\\) (beyond this, the V-graph exceeds cosine's range)"
+            },
+            {
+              "explain": "Within that window, the V-graph crosses each hump/trough of the oscillating cosine curve — counting the crossings on the sketch (as shown above) gives the total number of solutions.",
+              "work": "Counting crossings on the graph: 4 intersection points visible"
+            },
+            {
+              "explain": "State the final count.",
+              "work": "\\(\\therefore\\) there are 4 solutions to the equation."
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hunters Hill HS 2020 2U Trials",
+            "school": "Hunters Hill High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-2F",
+      "code": "2F",
+      "title": "Review of translations and reflections",
+      "questions": [
+        {
+          "id": "asc2020-q22a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Point \\((-1, 3)\\) on \\(y = f(x)\\) maps under \\(y = -2f(x)\\) to which point, with which transforms?",
+          "options": [
+            "\\((-1, 6)\\); vertical stretch by 2 only",
+            "\\((-1, -6)\\); reflect in \\(x\\)-axis then vertical stretch by 2",
+            "\\((2, -3)\\); reflect in \\(y\\)-axis",
+            "\\((-2, -6)\\); horizontal stretch by 2"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The transformed graph is \\(y = -2f(x)\\). In coordinates, every point \\((x, y)\\) on the original graph is sent to \\((x, -2y)\\).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "The factor \\(-1\\) reflects the graph in the \\(x\\)-axis. The factor \\(2\\) then stretches it vertically by a factor of \\(2\\) (distances from the \\(x\\)-axis double).",
+              "work": "\\(\\text{reflect in } x\\text{-axis, then }\\times 2\\)"
+            },
+            {
+              "explain": "Apply this to the marked point: \\((-1, 3) \\mapsto (-1, -2 \\times 3) = (-1, -6)\\).",
+              "work": "\\((-1, 3) \\to (-1, -6)\\)"
+            },
+            {
+              "explain": "So the image of \\((-1, 3)\\) is \\((-1, -6)\\), and the whole curve is an inverted, vertically stretched copy of \\(f\\).",
+              "work": "\\((-1, -6)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "ASC 2020",
+            "course": "Advanced",
+            "examPaper": "asc-2020"
+          }
+        },
+        {
+          "id": "glenwood2020-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The function \\( y=(x-2)^3-2 \\) is translated 5 units to the right and 4 units up. Find the equation of the transformed curve.",
+          "options": [
+            "\\( y=(x-7)^3+2 \\)",
+            "\\( y=(x+3)^3+2 \\)",
+            "\\( y=(x-7)^3-6 \\)",
+            "\\( y=(x-2)^3+2 \\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "A translation of \\( h \\) units right replaces \\( x \\) with \\( x-h \\) in the equation.",
+              "work": "y=((x-5)-2)^3-2"
+            },
+            {
+              "explain": "Simplify the bracket.",
+              "work": "y=(x-7)^3-2"
+            },
+            {
+              "explain": "A translation of \\( k \\) units up adds \\( k \\) to the whole right-hand side.",
+              "work": "y=(x-7)^3-2+4"
+            },
+            {
+              "explain": "Combine the constants to state the final transformed equation.",
+              "work": "y=(x-7)^3+2"
+            }
+          ],
+          "timeLimit": 75,
+          "meta": {
+            "source": "Glenwood 2020 Trial Q14",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "glenwood-2020"
+          },
+          "dna": {
+            "dnaId": "FUNC-TRANS-01"
+          }
+        },
+        {
+          "id": "hg2020-q5",
+          "type": "mc",
+          "stem": "Which diagram best shows the graph of the parabola \\(y = 2-(x+1)^2\\)?",
+          "figure": {
+            "svg": "fig:30b1a8a4cb"
+          },
+          "options": [
+            "A downward-opening parabola with vertex \\((-1,2)\\), as shown above",
+            "An upward-opening parabola with vertex \\((0,2)\\)",
+            "A downward-opening parabola with vertex \\((0,2)\\)",
+            "An upward-opening parabola with vertex \\((-1,2)\\)"
+          ],
+          "answer": 0,
+          "hint": "Compare to \\(y=a(x-h)^2+k\\): the sign of \\(a\\) determines the direction it opens, and \\((h,k)\\) is the vertex.",
+          "steps": [
+            {
+              "explain": "Rewrite in the form \\(y=a(x-h)^2+k\\): here \\(y = -(x-(-1))^2+2\\), so \\(a=-1\\), \\(h=-1\\), \\(k=2\\).",
+              "work": "\\(y = 2-(x+1)^2 = -(x-(-1))^2+2\\)",
+              "figure": {
+                "svg": "fig:30b1a8a4cb"
+              }
+            },
+            {
+              "explain": "Since \\(a=-1<0\\), the parabola opens downward. The vertex is at \\((h,k) = (-1,2)\\).",
+              "work": "Opens downward, vertex \\((-1,2)\\)"
+            },
+            {
+              "explain": "This matches the graph shown, with the maximum point at \\((-1,2)\\).",
+              "work": "\\(\\therefore\\) the downward-opening parabola with vertex \\((-1,2)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hornsby Girls HS 2020 2U Trials",
+            "school": "Hornsby Girls High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-2G",
+      "code": "2G",
+      "title": "Dilations",
+      "questions": [
+        {
+          "id": "asc2020-q22b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Point \\((-1, 3)\\) on \\(y = f(x)\\) maps under \\(y = f\\!\\left(\\dfrac{x}{2} + 2\\right)\\) to:",
+          "options": [
+            "\\((-6, 3)\\)",
+            "\\((-1, 6)\\)",
+            "\\((0, 3)\\)",
+            "\\((-0.5, 3)\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "We want the image of the point \\((-1, 3)\\) under \\(y = f\\!\\left(\\dfrac{x}{2} + 2\\right)\\). The \\(y\\)-coordinate of a point on \\(y = f(\\ldots)\\) equals \\(f(\\text{input})\\), so we need the input to equal the original \\(x\\)-coordinate \\(-1\\).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Solve for the new \\(x\\): \\(\\dfrac{x}{2} = -3\\), so \\(x = -6\\).",
+              "work": "\\(x = -6\\)"
+            },
+            {
+              "explain": "The \\(y\\)-value is unchanged because we still evaluate \\(f\\) at the same number \\(-1\\): \\(y = f(-1) = 3\\).",
+              "work": "\\(y = 3\\)"
+            },
+            {
+              "explain": "Geometrically this is a horizontal dilation by factor \\(2\\) followed by a translation \\(4\\) units left. The image point is \\((-6, 3)\\).",
+              "work": "\\((-6, 3)\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "ASC 2020",
+            "course": "Advanced",
+            "examPaper": "asc-2020"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-2H",
+      "code": "2H",
+      "title": "Combinations of transformations",
+      "questions": [
+        {
+          "id": "hillsgrammar-25-2u-q27a",
+          "type": "mc",
+          "stem": "The figure shows the graph of \\(y=f(x)\\), meeting the \\(x\\)-axis at \\((-3,0)\\) and the \\(y\\)-axis at \\((0,2)\\), with a maximum at \\((3,4)\\), a minimum at \\((-3,0)\\), and a horizontal asymptote \\(y=2\\). What is the range of \\(\\frac{1}{2}f(x)\\)?",
+          "figure": {
+            "svg": "fig:9e71e8b30f"
+          },
+          "options": [
+            "\\([0, 2]\\)",
+            "\\([0, 4]\\)",
+            "\\([1, 2]\\)",
+            "\\([-1.5, 2]\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "From the graph, the curve's overall lowest value is its minimum, \\(0\\), and its overall highest value is its maximum, \\(4\\) — the asymptote \\(y=2\\) is a value the curve approaches but does not exceed further than the maximum already does.",
+              "work": "<svg viewBox=\"0 0 300 230\" width=\"300\" height=\"230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(20,20)\"><line x1=\"0\" y1=\"140\" x2=\"260\" y2=\"140\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"0\" x2=\"130\" y2=\"190\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"0\" y1=\"92\" x2=\"260\" y2=\"92\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><text x=\"254.0\" y=\"86.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">y = 2</text><path d=\"M 22.0,111.2 L 58.0,140.0 Q 101.2,132.8 130.0,92.0 Q 166.0,34.4 202.0,44.0 L 238.0,84.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"58.0\" cy=\"140.0\" r=\"3\" fill=\"#1e293b\"/><text x=\"58.0\" y=\"132.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(-3,0)</text><circle cx=\"130.0\" cy=\"92.0\" r=\"3\" fill=\"#1e293b\"/><text x=\"130.0\" y=\"84.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(0,2)</text><circle cx=\"202.0\" cy=\"44.0\" r=\"3\" fill=\"#1e293b\"/><text x=\"202.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(3,4)</text><text x=\"210.0\" y=\"44.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">y=f(x)</text></g></svg>\n\n\\(\\text{range of } f(x) = [0, 4]\\)"
+            },
+            {
+              "explain": "The transformation \\(\\frac{1}{2}f(x)\\) is a vertical dilation by factor \\(\\frac{1}{2}\\) — it multiplies every \\(y\\)-value (and hence both range endpoints) by \\(\\frac{1}{2}\\).",
+              "work": "\\(\\left[\\frac{1}{2}(0), \\frac{1}{2}(4)\\right]\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\([0, 2]\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-2u-q27b",
+          "type": "review",
+          "stem": "Sketch the graph of \\(g(x) = f(3x) - 2\\), labelling all points and asymptotes.",
+          "figure": {
+            "svg": "fig:9e71e8b30f"
+          },
+          "answer": "",
+          "steps": [
+            {
+              "explain": "The transformation \\(f(3x)\\) is a HORIZONTAL dilation by factor \\(\\frac{1}{3}\\) — every \\(x\\)-coordinate of the original points and asymptote-related features is divided by 3 (the \\(y\\)-values are unchanged).",
+              "work": "<svg viewBox=\"0 0 300 230\" width=\"300\" height=\"230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(20,20)\"><line x1=\"0\" y1=\"140\" x2=\"260\" y2=\"140\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"0\" x2=\"130\" y2=\"190\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"0\" y1=\"92\" x2=\"260\" y2=\"92\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><text x=\"254.0\" y=\"86.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#64748b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">y = 2</text><path d=\"M 94,111.2 C 98,120.8 102,140 106,140 C 115.6,140 123.6,119.2 130,92 C 138,53.6 146,44 154,44 C 158,44 162,71.2 166,84.8\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2.2\"/><circle cx=\"106.0\" cy=\"140.0\" r=\"3\" fill=\"#1e293b\"/><text x=\"106.0\" y=\"132.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(-1,0)</text><circle cx=\"130.0\" cy=\"92.0\" r=\"3\" fill=\"#1e293b\"/><text x=\"130.0\" y=\"84.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(0,2)</text><circle cx=\"154.0\" cy=\"44.0\" r=\"3\" fill=\"#1e293b\"/><text x=\"154.0\" y=\"36.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#1e293b\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(1,4)</text><text x=\"160.0\" y=\"58.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#1d4ed8\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">y=f(3x)</text></g></svg>\n\n\\((-3,0)\\to(-1,0), \\quad (0,2)\\to(0,2), \\quad (3,4)\\to(1,4)\\)"
+            },
+            {
+              "explain": "Then subtract 2 from every \\(y\\)-value (vertical shift down 2 units) — this also shifts the horizontal asymptote down by 2.",
+              "work": "\\((-1,0)\\to(-1,-2), \\quad (0,2)\\to(0,0), \\quad (1,4)\\to(1,2); \\quad y=2 \\to y=0\\)"
+            },
+            {
+              "explain": "Sketch the transformed curve through these new points, approaching the new asymptote \\(y=0\\) as \\(x\\to\\infty\\).",
+              "work": "<svg viewBox=\"0 0 300 230\" width=\"300\" height=\"230\" xmlns=\"http://www.w3.org/2000/svg\" style=\"display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;\">\n  <g transform=\"translate(20,20)\"><line x1=\"0\" y1=\"140\" x2=\"260\" y2=\"140\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"0\" x2=\"130\" y2=\"190\" stroke=\"#cbd5e1\" stroke-width=\"1.2\"/><line x1=\"0\" y1=\"140\" x2=\"260\" y2=\"140\" stroke=\"#059669\" stroke-width=\"1.2\" stroke-dasharray=\"4,3\"/><text x=\"254.0\" y=\"134.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"600\" fill=\"#047857\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"end\">y = 0</text><path d=\"M 94,159.2 C 98,168.8 102,188 106,188 C 115.6,188 123.6,167.2 130,140 C 138,101.6 146,92 154,92 C 158,92 162,119.2 166,132.8\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"2.2\"/><circle cx=\"106.0\" cy=\"188.0\" r=\"3\" fill=\"#7f1d1d\"/><text x=\"106.0\" y=\"180.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#7f1d1d\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(-1,-2)</text><circle cx=\"130.0\" cy=\"140.0\" r=\"3\" fill=\"#7f1d1d\"/><text x=\"130.0\" y=\"132.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#7f1d1d\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(0,0)</text><circle cx=\"154.0\" cy=\"92.0\" r=\"3\" fill=\"#7f1d1d\"/><text x=\"154.0\" y=\"84.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"9\" font-weight=\"700\" fill=\"#7f1d1d\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"middle\">(1,2)</text><text x=\"160.0\" y=\"92.0\" font-family=\"system-ui,-apple-system,sans-serif\" font-size=\"10\" font-weight=\"700\" fill=\"#dc2626\" stroke=\"#f8fafc\" stroke-width=\"3\" paint-order=\"stroke\" text-anchor=\"start\">y=g(x)</text></g></svg>\n\n\\(g(x) = f(3x) - 2\\)"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y12a-2I",
+      "code": "2I",
+      "title": "Trigonometric graphs",
+      "questions": [
+        {
+          "id": "car2020-q33b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How many solutions does \\(\\cos \\pi x = 1 - |x|\\) have for all real \\(x\\)?",
+          "options": [
+            "3 solutions",
+            "5 solutions",
+            "4 solutions",
+            "7 solutions"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Count intersections of \\(y = \\cos \\pi x\\) and \\(y = 1 - |x|\\).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Cosine stays in \\([-1, 1]\\). The V-shape \\(1 - |x|\\) drops below \\(-1\\) when \\(|x| > 2\\), so no intersections exist outside \\([-2, 2]\\).",
+              "work": "\\(|x| > 2:\\; \\text{none}\\)"
+            },
+            {
+              "explain": "On \\([-2, 2]\\), period-\\(2\\) cosine meets the inverted-V five times.",
+              "work": "\\(5 \\text{ crossings}\\)"
+            },
+            {
+              "explain": "Hence the equation has 5 real solutions.",
+              "work": "\\(5 \\text{ solutions}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Caringbah 2020",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "car2020s-q33b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How many solutions does \\(\\sin \\pi x = 1 - |x|\\) have for all real \\(x\\)?",
+          "options": [
+            "1 solution",
+            "5 solutions",
+            "3 solutions",
+            "7 solutions"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Count intersections of \\(y = \\sin \\pi x\\) and \\(y = 1 - |x|\\).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Sine has period \\(2\\) and range \\([-1,1]\\). The inverted-V peaks at \\((0,1)\\) and is below \\(-1\\) for \\(|x| > 2\\).",
+              "work": "\\(|x|\\le 2 \\text{ only}\\)"
+            },
+            {
+              "explain": "Unlike cosine (which has a peak at each even integer), sine is zero at integers. The sketches meet at the origin and at two symmetric side points only.",
+              "work": "\\(3 \\text{ crossings}\\)"
+            },
+            {
+              "explain": "Therefore there are 3 real solutions.",
+              "work": "\\(3 \\text{ solutions}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Caringbah 2020 similar",
+            "course": "Advanced"
+          }
+        },
+        {
+          "id": "glenwood2020-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph of \\( g(x) = 2\\cos\\left(\\dfrac{x}{2}+\\dfrac{\\pi}{3}\\right) \\) is shown below, for \\( -2\\pi \\le x \\le 2\\pi \\). Which statement about the graph is correct?",
+          "figure": {
+            "svg": "fig:863f899b1d"
+          },
+          "options": [
+            "The amplitude is 2, the period is \\( 4\\pi \\), and the y-intercept is 1",
+            "The amplitude is 2, the period is \\( \\pi \\), and the y-intercept is 1",
+            "The amplitude is 2, the period is \\( 4\\pi \\), and the y-intercept is 2",
+            "The amplitude is \\( \\tfrac12 \\), the period is \\( 4\\pi \\), and the y-intercept is 1"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "For \\( y = a\\cos(bx+c) \\), the amplitude is \\( |a| \\). Here \\( a = 2 \\).",
+              "work": "\\text{amplitude} = 2"
+            },
+            {
+              "explain": "The period is \\( \\dfrac{2\\pi}{b} \\), where \\( b \\) is the coefficient of \\( x \\) — here \\( b = \\tfrac12 \\).",
+              "work": "\\text{period} = \\dfrac{2\\pi}{1/2} = 4\\pi"
+            },
+            {
+              "explain": "Find the y-intercept by substituting \\( x = 0 \\) into \\( g(x) \\), since \\( \\cos(\\pi/3) = \\tfrac12 \\).",
+              "work": "g(0) = 2\\cos\\left(\\dfrac{\\pi}{3}\\right) = 2 \\times \\tfrac12 = 1"
+            },
+            {
+              "explain": "Combine the three features to match the correct description of the graph.",
+              "work": "\\text{amplitude }2,\\ \\text{period }4\\pi,\\ y\\text{-intercept }1"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "source": "Glenwood 2020 Trial Q5",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "glenwood-2020"
+          },
+          "dna": {
+            "dnaId": "TRIG-GRAPH-01"
+          }
+        },
+        {
+          "id": "hh2020-q3",
+          "type": "mc",
+          "stem": "What is the amplitude, period and phase of \\(f(x) = -2\\cos(5x-\\pi)\\)?",
+          "options": [
+            "Amplitude is 2, period is 5, phase shift is \\(\\dfrac{\\pi}{5}\\) to the right",
+            "Amplitude is \\(-2\\), period is \\(\\dfrac{2\\pi}{5}\\), phase shift is \\(\\dfrac{\\pi}{5}\\) to the left",
+            "Amplitude is 2, period is \\(\\dfrac{2\\pi}{5}\\), phase shift is \\(\\dfrac{\\pi}{5}\\) to the right",
+            "Amplitude is 2, period is 5, phase shift is \\(\\pi\\) to the left"
+          ],
+          "answer": 2,
+          "hint": "Amplitude is always positive (take the magnitude of the leading coefficient); period \\(=\\dfrac{2\\pi}{n}\\) for \\(\\cos(nx-c)\\); factor out \\(n\\) to find the phase shift.",
+          "steps": [
+            {
+              "explain": "Amplitude is the magnitude of the coefficient in front of cosine — always taken as positive.",
+              "work": "Amplitude \\(= |-2| = 2\\)"
+            },
+            {
+              "explain": "For \\(\\cos(nx)\\), the period is \\(\\dfrac{2\\pi}{n}\\). Here \\(n=5\\).",
+              "work": "Period \\(= \\dfrac{2\\pi}{5}\\)"
+            },
+            {
+              "explain": "Rewrite the argument by factoring out 5 to find the horizontal shift: \\(5x-\\pi = 5\\left(x-\\dfrac{\\pi}{5}\\right)\\), which is a shift to the *right*.",
+              "work": "Phase shift \\(= \\dfrac{\\pi}{5}\\) to the right"
+            }
+          ],
+          "meta": {
+            "source": "Hunters Hill HS 2020 2U Trials",
+            "school": "Hunters Hill High School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        },
+        {
+          "id": "hillsgrammar-25-2u-q10",
+          "type": "mc",
+          "stem": "The function \\(y = 2\\sin x + 1\\) is translated up \\(m\\) units and then vertically dilated by a factor of \\(n\\) from the \\(x\\)-axis, where \\(m\\) and \\(n\\) are positive numbers. What is the range of the new curve?",
+          "options": [
+            "\\([mn-2n, mn+n]\\)",
+            "\\([mn-n, mn+3n]\\)",
+            "\\([mn+n, mn+3n]\\)",
+            "\\([mn+2n, mn+n]\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "The original curve \\(y=2\\sin x+1\\) has range \\([1-2, 1+2] = [-1, 3]\\), since \\(\\sin x\\) ranges over \\([-1,1]\\).",
+              "work": "\\(\\text{range of } 2\\sin x + 1: [-1, 3]\\)"
+            },
+            {
+              "explain": "Translating up \\(m\\) units adds \\(m\\) to every value in the range.",
+              "work": "\\(\\text{new range: } [m - 1, \\ m + 3]\\)"
+            },
+            {
+              "explain": "A vertical dilation by factor \\(n\\) from the \\(x\\)-axis multiplies every \\(y\\)-value (and hence every range endpoint) by \\(n\\).",
+              "work": "\\(\\text{range: } [n(m-1), \\ n(m+3)]\\)"
+            },
+            {
+              "explain": "Expand the brackets.",
+              "work": "\\([mn - n, \\ mn + 3n]\\)"
+            }
+          ],
+          "meta": {
+            "source": "Hills Grammar 2025 2U Trials",
+            "school": "The Hills Grammar School",
+            "examType": "Trial HSC",
+            "grade": "12"
+          }
+        }
+      ]
+    }
+  ]
+}

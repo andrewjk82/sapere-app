@@ -1,0 +1,98 @@
+{
+  "chapterId": "exam:year11ch3e",
+  "title": "Exam year11ch3e",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ch3e",
+      "code": "EXAM",
+      "title": "Completing the square and the graph",
+      "questions": [
+        {
+          "id": "y11a-3e-q1",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Consider the parabola with equation \\( y = (x - 3)^2 - 4 \\) in completed square form.",
+          "figure": {
+            "jsxGraph": {
+              "width": 350,
+              "height": 250,
+              "boundingbox": [
+                -3,
+                8,
+                9,
+                -5
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [8.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-4.5], [0,7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [8.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 7.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return Math.pow(x-3, 2) - 4; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [3, -4], {name: 'V(3,-4)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, 5], {name: '(0,5)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [1, 0], {name: '1', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [5, 0], {name: '5', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('line', [[3,-5], [3,8]], {strokeColor: '#64748b', dash: 2, strokeWidth: 1});\nboard.unsuspendUpdate();"
+            }
+          },
+          "answer": "0",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the concavity by checking the sign of the leading coefficient.",
+              "work": "y = 1(x - 3)^2 - 4 \\implies a = 1 > 0 \\implies \\text{concave up}"
+            },
+            {
+              "explain": "Substitute \\( x = 0 \\) to find the y-intercept.",
+              "work": "y = (0 - 3)^2 - 4 = 9 - 4 = 5 \\implies (0, 5)"
+            },
+            {
+              "explain": "From the completed square form \\( y = a(x - h)^2 + k \\), the vertex is \\( (h, k) \\) and axis of symmetry is \\( x = h \\).",
+              "work": "\\text{Vertex } V(3, -4), quad \\text{Axis of symmetry } x = 3"
+            },
+            {
+              "explain": "Since the vertex is below the x-axis \\( (y = -4) \\) and the parabola is concave up, it must cross the x-axis. Find the intercepts by setting \\( y = 0 \\).",
+              "work": "0 = (x - 3)^2 - 4 \\implies (x - 3)^2 = 4 \\implies x - 3 = \\pm 2 \\implies x = 1, 5"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y11a-3e-q2",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Consider the concave-down parabola with completed square form \\( y = -(x - 2)^2 + 4 \\).",
+          "figure": {
+            "jsxGraph": {
+              "width": 350,
+              "height": 250,
+              "boundingbox": [
+                -3,
+                6,
+                7,
+                -2
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 5.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return -Math.pow(x-2, 2) + 4; }], {strokeColor: '#4f46e5', strokeWidth: 1.5});\nboard.create('point', [2, 4], {name: 'V(2,4)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0, 0], {name: 'O', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [4, 0], {name: '4', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('line', [[2,-2], [2,6]], {strokeColor: '#64748b', dash: 2, strokeWidth: 1});\nboard.unsuspendUpdate();"
+            }
+          },
+          "answer": "0",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Look at the negative sign in front of the parenthetical squared term.",
+              "work": "y = -1(x - 2)^2 + 4 \\implies a = -1 < 0 \\implies \\text{concave down}"
+            },
+            {
+              "explain": "Substitute \\( x = 0 \\) to calculate the y-intercept.",
+              "work": "y = -(0 - 2)^2 + 4 = -4 + 4 = 0 \\implies (0, 0)"
+            },
+            {
+              "explain": "Read off the vertex \\( (h, k) \\) from the equation form \\( y = -(x - h)^2 + k \\).",
+              "work": "\\text{Vertex } V(2, 4), quad \\text{Axis of symmetry } x = 2"
+            },
+            {
+              "explain": "Since the vertex is above the x-axis \\( (y = 4) \\) and the parabola is concave down, it must cross the x-axis. Find the intercepts by setting \\( y = 0 \\).",
+              "work": "0 = -(x - 2)^2 + 4 \\implies (x - 2)^2 = 4 \\implies x - 2 = pm 2 \\implies x = 0, 4"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        }
+      ]
+    }
+  ]
+}

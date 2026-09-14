@@ -1,0 +1,146 @@
+{
+  "chapterId": "exam:year8ch13",
+  "title": "Exam Practice",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "exam:year8ch13",
+      "code": "",
+      "title": "Parallelograms and their properties",
+      "questions": [
+        {
+          "id": "y8-13a-q7",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "parts": [
+            {
+              "id": "y8-13a-q7a",
+              "type": "review",
+              "stem": "a) Draw the diagonals $PR$ and $QS$, and label their intersection $T$.",
+              "answer": "Verify that the student drew the diagonals intersecting at $T$."
+            },
+            {
+              "id": "y8-13a-q7b",
+              "type": "review",
+              "stem": "b) Draw the circle with centre $T$ passing through $P$. Does it go through $R$? What property of the parallelogram does this illustrate?",
+              "answer": "Yes, it goes through $R$. This illustrates that the diagonals of a parallelogram bisect each other (i.e. $PT = TR$)."
+            },
+            {
+              "id": "y8-13a-q7c",
+              "type": "review",
+              "stem": "c) Draw a second circle with centre $T$ passing through $Q$. Does it go through $S$? Why or why not?",
+              "answer": "Yes, it goes through $S$. Since the diagonals bisect each other, the distance $QT$ equals $TS$, meaning $S$ is at the same distance from the centre $T$ as $Q$."
+            }
+          ],
+          "answer": "See solution for detailed verification and answers.",
+          "manual": true
+        },
+        {
+          "id": "y8-13a-q10",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "",
+          "figure": {
+            "geometry": {
+              "width": 280,
+              "showPointLabels": false,
+              "points": {
+                "S": [
+                  1.5,
+                  1
+                ],
+                "R": [
+                  7.5,
+                  1
+                ],
+                "P": [
+                  3.5,
+                  4.5
+                ],
+                "Q": [
+                  9.5,
+                  4.5
+                ]
+              },
+              "segments": [
+                {
+                  "from": "P",
+                  "to": "Q",
+                  "ticks": 2
+                },
+                {
+                  "from": "S",
+                  "to": "R",
+                  "ticks": 2
+                },
+                {
+                  "from": "P",
+                  "to": "S",
+                  "ticks": 1
+                },
+                {
+                  "from": "Q",
+                  "to": "R",
+                  "ticks": 1
+                },
+                {
+                  "from": "P",
+                  "to": "R",
+                  "dashed": true
+                }
+              ],
+              "angles": [],
+              "sideLabels": [],
+              "freeLabels": [
+                {
+                  "point": [
+                    3.1,
+                    4.7
+                  ],
+                  "text": "P"
+                },
+                {
+                  "point": [
+                    9.8,
+                    4.7
+                  ],
+                  "text": "Q"
+                },
+                {
+                  "point": [
+                    7.8,
+                    0.8
+                  ],
+                  "text": "R"
+                },
+                {
+                  "point": [
+                    1.1,
+                    0.8
+                  ],
+                  "text": "S"
+                }
+              ]
+            }
+          },
+          "parts": [
+            {
+              "id": "y8-13a-q10a",
+              "type": "review",
+              "stem": "a) Prove that $\\triangle PQR \\equiv \\triangle RSP$.",
+              "answer": "In $\\triangle PQR$ and $\\triangle RSP$:\n1. $PQ = RS$ (given)\n2. $QR = SP$ (given)\n3. $PR = RP$ (common side)\nTherefore, $\\triangle PQR \\equiv \\triangle RSP$ (SSS)."
+            },
+            {
+              "id": "y8-13a-q10b",
+              "type": "review",
+              "stem": "b) Hence show that $PQ \\parallel SR$ and $PS \\parallel QR$, and hence that $PQRS$ is a parallelogram.",
+              "answer": "Since $\\triangle PQR \\equiv \\triangle RSP$, corresponding angles are equal: $\\angle QPR = \\angle SRP$. Since these alternate interior angles are equal, $PQ \\parallel SR$. Similarly, $\\angle PRQ = \\angle RPS \\implies PS \\parallel QR$. Since both pairs of opposite sides are parallel, $PQRS$ is a parallelogram."
+            }
+          ],
+          "answer": "See proofs for parts a and b."
+        }
+      ]
+    }
+  ]
+}

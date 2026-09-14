@@ -1,0 +1,204 @@
+{
+  "chapterId": "y7-16",
+  "title": "Chapter 16: Probability",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "y7-16a",
+      "code": "16A",
+      "title": "An introduction to probability",
+      "questions": [
+        {
+          "id": "DkUpFtuPP5NCqjRMqmar",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following scenarios describes an event with a probability of \\(\\frac{1}{2}\\) (equally likely)?",
+          "options": [
+            "Rolling an odd number on a standard 6-sided die",
+            "Selecting a blue pen from a box containing 3 blue pens and 7 black pens",
+            "Rolling a 5 on a standard 6-sided die",
+            "Getting a card that is a spade from a standard 52-card deck"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Let's check the probabilities of each option:</p><ul><li><strong>Rolling an odd number on a 6-sided die</strong>: Odd numbers are {1, 3, 5} (3 outcomes out of 6). Probability = \\(\\frac{3}{6} = \\frac{1}{2}\\).</li><li>Selecting a blue pen (3 blue, 7 black): Probability = \\(\\frac{3}{10}\\).</li><li>Rolling a 5: Probability = \\(\\frac{1}{6}\\).</li><li>Getting a card that is a spade: Spades represent 13 cards out of 52. Probability = \\(\\frac{13}{52} = \\frac{1}{4}\\).</li></ul></div>"
+        },
+        {
+          "id": "gjH0zgswfcPeBeuQp3ju",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If it is Saturday today, tomorrow will be Sunday. What is the probability that tomorrow will be Sunday?",
+          "options": [
+            "\\(1 \\text{ (or } 100\\%)\\)",
+            "\\(0\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(0.75\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>In the standard calendar, Sunday always follows Saturday. Since today is Saturday, tomorrow is guaranteed to be Sunday.</p><p>This is a <strong>certain event</strong>, which has a probability of exactly <strong>1</strong>.</p></div>",
+          "steps": [
+            {
+              "explain": "Analyse the sequence of days.",
+              "work": "<div style=\"text-align: left;\"><p>In the standard calendar, Sunday always follows Saturday.</p><p>Since today is Saturday, tomorrow is guaranteed to be Sunday.</p></div>"
+            },
+            {
+              "explain": "Determine the probability.",
+              "work": "<div style=\"text-align: left;\"><p>Because this is guaranteed to happen, it is a <strong>certain event</strong>.</p><p>A certain event has a probability of exactly <strong>1</strong> (or 100%).</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "J5QjykcTSKQDDoeJH2NA",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If today is the 31st of December, there is no chance that tomorrow will be the 1st of June. What is the probability that tomorrow will be the 1st of June?",
+          "options": [
+            "\\(0\\)",
+            "\\(1\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(\\frac{1}{12}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>The day following December 31st is always January 1st. It can never be June 1st.</p><p>This is an <strong>impossible event</strong>, which has a probability of exactly <strong>0</strong>.</p></div>",
+          "steps": [
+            {
+              "explain": "Analyse the calendar dates.",
+              "work": "<div style=\"text-align: left;\"><p>The day following December 31st is always January 1st.</p><p>It can never be June 1st.</p></div>"
+            },
+            {
+              "explain": "Determine the probability.",
+              "work": "<div style=\"text-align: left;\"><p>Since this outcome can never happen, it is an <strong>impossible event</strong>.</p><p>An impossible event has a probability of exactly <strong>0</strong>.</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "l7k2AZaf4bDk9oPlOBcO",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If there are five yellow marbles and five green marbles in a bag, and you pull one out without looking: what is the probability of getting a yellow marble, and what is the probability of getting a green marble?",
+          "options": [
+            "\\(\\frac{1}{2} \\text{ and } \\frac{1}{2}\\)",
+            "\\(\\frac{1}{3} \\text{ and } \\frac{2}{3}\\)",
+            "\\(0 \\text{ and } 1\\)",
+            "\\(\\frac{1}{5} \\text{ and } \\frac{1}{5}\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Let us calculate the probabilities:</p><ul><li>Total number of marbles in the bag = \\(5 + 5 = 10\\).</li><li>Number of yellow marbles = 5, so Probability = \\(\\frac{5}{10} = \\frac{1}{2}\\).</li><li>Number of green marbles = 5, so Probability = \\(\\frac{5}{10} = \\frac{1}{2}\\).</li></ul><p>Since both outcomes have the exact same chance, they are <strong>equally likely</strong> with a probability of \\(\\frac{1}{2}\\) each.</p></div>",
+          "steps": [
+            {
+              "explain": "Find the total number of marbles.",
+              "work": "<div style=\"text-align: left;\"><p>Total number of marbles in the bag = \\(5 + 5 = 10\\).</p></div>"
+            },
+            {
+              "explain": "Calculate the probability of drawing a yellow marble.",
+              "work": "<div style=\"text-align: left;\"><p>There are 5 yellow marbles out of 10 total marbles.</p><p>Probability = \\(\\frac{5}{10} = \\frac{1}{2}\\).</p></div>"
+            },
+            {
+              "explain": "Calculate the probability of drawing a green marble.",
+              "work": "<div style=\"text-align: left;\"><p>There are 5 green marbles out of 10 total marbles.</p><p>Probability = \\(\\frac{5}{10} = \\frac{1}{2}\\).</p><p>Therefore, the probabilities are \\(\\frac{1}{2}\\) and \\(\\frac{1}{2}\\).</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "nAmsRq6KwG9iEoOidqSa",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "It is certain that an ice cube will melt when placed in boiling water. What is the probability that an ice cube will melt in boiling water?",
+          "options": [
+            "\\(1 \\text{ (or } 100\\%)\\)",
+            "\\(0\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(0.25\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>An event that is <strong>certain</strong> to happen always has a probability of exactly <strong>1</strong> (or <strong>100%</strong>).</p><p>Since an ice cube is guaranteed to melt in boiling water, this is a certain event.</p></div>",
+          "steps": [
+            {
+              "explain": "Analyse the event.",
+              "work": "<div style=\"text-align: left;\"><p>Since an ice cube is guaranteed to melt in boiling water, this is a <strong>certain event</strong>.</p></div>"
+            },
+            {
+              "explain": "Determine the probability.",
+              "work": "<div style=\"text-align: left;\"><p>An event that is certain to happen always has a probability of exactly <strong>1</strong> (or <strong>100%</strong>).</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "pfCwdyIUOxAGgddvhMmb",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following scenarios describes an event with a probability of \\(1\\) (certain)?",
+          "options": [
+            "Selecting a blue counter from a box containing only blue counters",
+            "Rolling a standard 6-sided die and getting an even number",
+            "Flipping a coin and landing on tails",
+            "It raining tomorrow in London"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>An event with a probability of 1 is guaranteed to happen (a certain event):</p><ul><li><strong>Selecting a blue counter from a box containing only blue counters</strong>: Since there are no other colors, you will always pick a blue counter. Probability = <strong>1</strong>.</li><li>Rolling an even number: Probability = \\(\\frac{3}{6} = \\frac{1}{2}\\).</li><li>Flipping a coin and landing on tails: Probability = \\(\\frac{1}{2}\\).</li><li>It raining tomorrow in London: Unsure, so the probability is between 0 and 1.</li></ul></div>",
+          "steps": [
+            {
+              "explain": "Understand what a probability of 1 means.",
+              "work": "<div style=\"text-align: left;\"><p>An event with a probability of 1 is a <strong>certain event</strong>, meaning it is guaranteed to happen.</p></div>"
+            },
+            {
+              "explain": "Evaluate each option.",
+              "work": "<div style=\"text-align: left;\"><p>An event with a probability of 1 is guaranteed to happen (a certain event):</p><ul><li><strong>Selecting a blue counter from a box containing only blue counters</strong>: Since there are no other colors, you will always pick a blue counter. Probability = <strong>1</strong>.</li><li>Rolling an even number: Probability = \\(\\frac{3}{6} = \\frac{1}{2}\\).</li><li>Flipping a coin and landing on tails: Probability = \\(\\frac{1}{2}\\).</li><li>It raining tomorrow in London: Unsure, so the probability is between 0 and 1.</li></ul></div>"
+            }
+          ]
+        },
+        {
+          "id": "RNvKtoZ8ym98QebKgeU5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "There is no chance of a human naturally flying to the moon by flapping their arms. What is the probability of a human naturally flying to the moon by flapping their arms?",
+          "options": [
+            "\\(0\\)",
+            "\\(1\\)",
+            "\\(\\frac{1}{2}\\)",
+            "\\(0.1\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>An event that has <strong>no chance</strong> of occurring (impossible event) always has a probability of exactly <strong>0</strong>.</p><p>Since naturally flying to the moon by flapping arms is physically impossible, its probability is 0.</p></div>",
+          "steps": [
+            {
+              "explain": "Analyse the event.",
+              "work": "<div style=\"text-align: left;\"><p>Since naturally flying to the moon by flapping arms is physically impossible, it is an <strong>impossible event</strong>.</p></div>"
+            },
+            {
+              "explain": "Determine the probability.",
+              "work": "<div style=\"text-align: left;\"><p>An event that has <strong>no chance</strong> of occurring always has a probability of exactly <strong>0</strong>.</p></div>"
+            }
+          ]
+        },
+        {
+          "id": "vacTTGVQ5Clqq4RFO4Js",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following scenarios describes an event with a probability of \\(0\\) (impossible)?",
+          "options": [
+            "Rolling a standard 6-sided die and getting a number greater than 6",
+            "Flipping a fair coin and landing on heads",
+            "Selecting a red ball from a bag containing only red balls",
+            "Tomorrow being a weekday if today is Thursday"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>An event with a probability of 0 is completely impossible:</p><ul><li><strong>Rolling a standard die and getting > 6</strong>: A standard die only has numbers 1 to 6. Getting a number greater than 6 is impossible. Probability = <strong>0</strong>.</li><li>Flipping a coin and landing on heads: Probability = \\(\\frac{1}{2}\\).</li><li>Selecting a red ball from a bag of only red balls: Probability = 1 (certain).</li><li>Tomorrow being a weekday if today is Thursday: Tomorrow is Friday (a weekday). Probability = 1.</li></ul></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>An event with a probability of 0 is completely impossible:</p><ul><li><strong>Rolling a standard die and getting > 6</strong>: A standard die only has numbers 1 to 6. Getting a number greater than 6 is impossible. Probability = <strong>0</strong>.</li><li>Flipping a coin and landing on heads: Probability = \\(\\frac{1}{2}\\).</li><li>Selecting a red ball from a bag of only red balls: Probability = 1 (certain).</li><li>Tomorrow being a weekday if today is Thursday: Tomorrow is Friday (a weekday). Probability = 1.</li></ul></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "Rolling a standard 6-sided die and getting a number greater than 6"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

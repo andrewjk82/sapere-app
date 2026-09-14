@@ -1,0 +1,3816 @@
+{
+  "chapterId": "y9-6",
+  "title": "Chapter 6: Formulas",
+  "year": "Year 9",
+  "topics": [
+    {
+      "topicId": "y9-6a",
+      "code": "6A",
+      "title": "Substitution into formulas",
+      "questions": [
+        {
+          "id": "y9-6a-1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject of the formula when the other pronumerals have the value indicated:\n\\(A = lw\\), where \\(l = 6, w = 9\\)",
+          "options": [
+            "54",
+            "15",
+            "69",
+            "45"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(54\\).",
+          "steps": [
+            {
+              "explain": "Substitute values.",
+              "work": "\\(A = 6 \\times 9\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(A = 54\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject of the formula when the other pronumerals have the value indicated:\n\\(s = \\frac{d}{t}\\), where \\(d = 140, t = 7\\)",
+          "options": [
+            "20",
+            "980",
+            "133",
+            "147"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(20\\).",
+          "steps": [
+            {
+              "explain": "Substitute values.",
+              "work": "\\(s = \\frac{140}{7}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(s = 20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject of the formula when the other pronumerals have the value indicated:\n\\(A = \\frac{1}{2}xy\\), where \\(x = 8, y = 5\\)",
+          "options": [
+            "20",
+            "40",
+            "13",
+            "10"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(20\\).",
+          "steps": [
+            {
+              "explain": "Substitute values.",
+              "work": "\\(A = \\frac{1}{2} \\times 8 \\times 5\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(A = 20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject of the formula when the other pronumerals have the value indicated:\n\\(A = \\frac{1}{2}(a+b)h\\), where \\(a = 3, b = 7, h = 8\\)",
+          "options": [
+            "40",
+            "80",
+            "18",
+            "31"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(40\\).",
+          "steps": [
+            {
+              "explain": "Substitute values.",
+              "work": "\\(A = \\frac{1}{2}(3+7) \\times 8\\)"
+            },
+            {
+              "explain": "Simplify brackets.",
+              "work": "\\(A = \\frac{1}{2}(10) \\times 8\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(A = 40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject of the formula when the other pronumerals have the value indicated:\n\\(v = u + at\\), where \\(u = 15, a = 5, t = 4\\)",
+          "options": [
+            "35",
+            "80",
+            "39",
+            "154"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(35\\).",
+          "steps": [
+            {
+              "explain": "Substitute values.",
+              "work": "\\(v = 15 + 5 \\times 4\\)"
+            },
+            {
+              "explain": "Multiply first.",
+              "work": "\\(v = 15 + 20\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(v = 35\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject of the formula when the other pronumerals have the value indicated:\n\\(E = \\frac{1}{2}mv^2\\), where \\(m = 10, v = 5\\)",
+          "options": [
+            "125",
+            "25",
+            "50",
+            "250"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(125\\).",
+          "steps": [
+            {
+              "explain": "Substitute values.",
+              "work": "\\(E = \\frac{1}{2} \\times 10 \\times 5^2\\)"
+            },
+            {
+              "explain": "Square \\(v\\).",
+              "work": "\\(E = \\frac{1}{2} \\times 10 \\times 25\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(E = 125\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject:\n\\(x = \\sqrt{ab}\\), where \\(a = 30, b = 40\\)\nCalculate \\(x\\) correct to 3 decimal places.",
+          "options": [
+            "35.000",
+            "34.641",
+            "600.000",
+            "1200.000"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(34.641\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(x = \\sqrt{30 \\times 40}\\)"
+            },
+            {
+              "explain": "Multiply.",
+              "work": "\\(x = \\sqrt{1200}\\)"
+            },
+            {
+              "explain": "Calculate root.",
+              "work": "\\(x \\approx 34.6410... \\approx 34.641\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject:\n\\(V = \\pi r^2 h\\), where \\(r = 10, h = 15\\)\nCalculate \\(V\\) correct to 3 decimal places.",
+          "options": [
+            "4712.389",
+            "942.478",
+            "471.239",
+            "4712.388"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(4712.389\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(V = \\pi \\times 10^2 \\times 15\\)"
+            },
+            {
+              "explain": "Calculate exact.",
+              "work": "\\(V = 1500\\pi\\)"
+            },
+            {
+              "explain": "Round.",
+              "work": "\\(V \\approx 4712.3889... \\approx 4712.389\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject:\n\\(t = a + (n-1)d\\), where \\(a = 25, n = 10, d = 3\\)",
+          "options": [
+            "27",
+            "102",
+            "52",
+            "55"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(52\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(t = 25 + (10-1) \\times 3\\)"
+            },
+            {
+              "explain": "Simplify brackets.",
+              "work": "\\(t = 25 + 9 \\times 3\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(t = 25 + 27 = 52\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject:\n\\(T = 2\\pi\\sqrt{\\frac{l}{g}}\\), where \\(l = 98.2, g = 9.8\\)\nCalculate \\(T\\) correct to 3 decimal places.",
+          "options": [
+            "19.890",
+            "19.889",
+            "39.780",
+            "6.283"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(19.888\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(T = 2\\pi\\sqrt{\\frac{98.2}{9.8}}\\)"
+            },
+            {
+              "explain": "Simplify fraction.",
+              "work": "\\(T = 2\\pi\\sqrt{10.0204...}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(T \\approx 19.8899... \\approx 19.890\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject:\n\\(s = ut + \\frac{1}{2}at^2\\), where \\(u = 12, t = 8, a = 4.5\\)",
+          "options": [
+            "480",
+            "132",
+            "114",
+            "240"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(240\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(s = 12 \\times 8 + \\frac{1}{2} \\times 4.5 \\times 8^2\\)"
+            },
+            {
+              "explain": "Square \\(t\\).",
+              "work": "\\(s = 96 + \\frac{1}{2} \\times 4.5 \\times 64\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(s = 96 + 144 = 240\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of the subject:\n\\(A = P(1+R)^n\\), where \\(P = 5000, R = 0.045, n = 8\\)\nCalculate \\(A\\) correct to 2 decimal places.",
+          "options": [
+            "6800.00",
+            "7110.51",
+            "1800.00",
+            "7110.50"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(7110.50\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(A = 5000(1+0.045)^8\\)"
+            },
+            {
+              "explain": "Calculate exponent.",
+              "work": "\\(A = 5000(1.045)^8\\)"
+            },
+            {
+              "explain": "Round.",
+              "work": "\\(A \\approx 7110.503... \\approx 7110.50\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the formula \\(v = u + at\\), find:\n\\(v\\) if \\(u = 8, a = 4, t = 6\\).",
+          "options": [
+            "32",
+            "18",
+            "56",
+            "72"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(32\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(v = 8 + 4 \\times 6\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(v = 8 + 24 = 32\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the formula \\(v = u + at\\), find:\n\\(u\\) if \\(v = 50, a = 6, t = 3\\).",
+          "options": [
+            "68",
+            "32",
+            "23",
+            "50"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(32\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(50 = u + 6 \\times 3\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(50 = u + 18\\)"
+            },
+            {
+              "explain": "Rearrange.",
+              "work": "\\(u = 50 - 18 = 32\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the formula \\(v = u + at\\), find:\n\\(a\\) if \\(v = 70, u = 10, t = 6\\).",
+          "options": [
+            "11",
+            "60",
+            "10",
+            "13"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(10\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(70 = 10 + a \\times 6\\)"
+            },
+            {
+              "explain": "Rearrange.",
+              "work": "\\(60 = 6a\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(a = 10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the formula \\(v = u + at\\), find:\n\\(t\\) if \\(v = 120, u = 30, a = 5\\).",
+          "options": [
+            "120",
+            "18",
+            "30",
+            "24"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(18\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(120 = 30 + 5 \\times t\\)"
+            },
+            {
+              "explain": "Rearrange.",
+              "work": "\\(90 = 5t\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(t = 18\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing variable by substituting the given values:\nFor \\(S = 2(a-b)\\), find \\(a\\) if \\(S = 80, b = 15\\).",
+          "options": [
+            "55",
+            "70",
+            "25",
+            "47.5"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(55\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(80 = 2(a-15)\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(40 = a-15\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(a = 55\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing variable by substituting the given values:\nFor \\(I = \\frac{180n - 360}{n}\\), find \\(n\\) if \\(I = 140\\).",
+          "options": [
+            "10",
+            "12",
+            "8",
+            "9"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(9\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(140 = \\frac{180n - 360}{n}\\)"
+            },
+            {
+              "explain": "Multiply by n.",
+              "work": "\\(140n = 180n - 360\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(40n = 360 \\implies n = 9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing variable by substituting the given values:\nFor \\(a = \\frac{m+n}{2}\\), find \\(m\\) if \\(a = 25, n = 8\\).",
+          "options": [
+            "42",
+            "58",
+            "33",
+            "17"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(42\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(25 = \\frac{m+8}{2}\\)"
+            },
+            {
+              "explain": "Multiply by 2.",
+              "work": "\\(50 = m+8\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(m = 42\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing variable by substituting the given values:\nFor \\(A = \\frac{PRT}{100}\\), find \\(P\\) if \\(A = 1800, R = 5, T = 12\\).",
+          "options": [
+            "10800",
+            "300",
+            "30000",
+            "3000"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(3000\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(1800 = \\frac{P \\times 5 \\times 12}{100}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(1800 = \\frac{60P}{100} = 0.6P\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(P = \\frac{1800}{0.6} = 3000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-4e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing variable by substituting the given values:\nFor \\(S = 2(lw + lh + hw)\\), find \\(h\\) if \\(S = 376, l = 10, w = 8\\).",
+          "options": [
+            "6",
+            "7",
+            "8",
+            "5"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(376 = 2(10 \\times 8 + 10h + 8h)\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(376 = 2(80 + 18h)\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(188 = 80 + 18h \\implies 108 = 18h \\implies h = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-4f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing variable by substituting the given values:\nFor \\(P = 2(l+w)\\), find \\(w\\) if \\(P = 40, l = 8\\).",
+          "options": [
+            "10",
+            "16",
+            "12",
+            "32"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(12\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(40 = 2(8+w)\\)"
+            },
+            {
+              "explain": "Divide by 2.",
+              "work": "\\(20 = 8+w\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(w = 12\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-4g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing variable by substituting the given values:\nFor \\(s = ut + \\frac{1}{2}at^2\\), find \\(a\\) if \\(s = 800, u = 15, t = 10\\).",
+          "options": [
+            "14",
+            "13",
+            "16",
+            "10"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(13\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(800 = 15 \\times 10 + \\frac{1}{2} \\times a \\times 10^2\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(800 = 150 + 50a\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(650 = 50a \\implies a = 13\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-4h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the missing variable by substituting the given values:\nFor \\(t = a + (n-1)d\\), find \\(n\\) if \\(t = 65, d = 4, a = 9\\).",
+          "options": [
+            "16",
+            "15",
+            "17",
+            "14"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(15\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(65 = 9 + (n-1) \\times 4\\)"
+            },
+            {
+              "explain": "Subtract 9.",
+              "work": "\\(56 = 4(n-1)\\)"
+            },
+            {
+              "explain": "Divide by 4 and solve.",
+              "work": "\\(14 = n-1 \\implies n = 15\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given \\(v^2 = u^2 + 2ax\\) and \\(v > 0\\), find the value of \\(v\\) (correct to 1 decimal place) when:\n\\(u = 0, a = 4, x = 8\\).",
+          "options": [
+            "32.0",
+            "4.0",
+            "8.0",
+            "64.0"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(8.0\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(v^2 = 0^2 + 2(4)(8)\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(v^2 = 64\\)"
+            },
+            {
+              "explain": "Solve for v (v > 0).",
+              "work": "\\(v = \\sqrt{64} = 8.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given \\(v^2 = u^2 + 2ax\\) and \\(v > 0\\), find the value of \\(v\\) (correct to 1 decimal place) when:\n\\(u = 5, a = 3, x = 10\\).",
+          "options": [
+            "9.2",
+            "42.5",
+            "85.0",
+            "11.0"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(9.2\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(v^2 = 5^2 + 2(3)(10)\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(v^2 = 25 + 60 = 85\\)"
+            },
+            {
+              "explain": "Solve for v.",
+              "work": "\\(v = \\sqrt{85} \\approx 9.219... \\approx 9.2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given \\(v^2 = u^2 + 2ax\\) and \\(v > 0\\), find the value of \\(v\\) (correct to 1 decimal place) when:\n\\(u = 4, a = 9.8, x = 15\\).",
+          "options": [
+            "155.0",
+            "310.0",
+            "21.2",
+            "17.6"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(17.6\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(v^2 = 4^2 + 2(9.8)(15)\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(v^2 = 16 + 294 = 310\\)"
+            },
+            {
+              "explain": "Solve for v.",
+              "work": "\\(v = \\sqrt{310} \\approx 17.606... \\approx 17.6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given \\(v^2 = u^2 + 2ax\\) and \\(v > 0\\), find the value of \\(v\\) (correct to 1 decimal place) when:\n\\(u = 3.2, a = 4.5, x = 12.4\\).",
+          "options": [
+            "60.9",
+            "121.8",
+            "15.1",
+            "11.0"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(11.0\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(v^2 = 3.2^2 + 2(4.5)(12.4)\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(v^2 = 10.24 + 111.6 = 121.84\\)"
+            },
+            {
+              "explain": "Solve for v.",
+              "work": "\\(v = \\sqrt{121.84} \\approx 11.038... \\approx 11.0\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given \\(\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}\\), find the value of \\(f\\) when:\n\\(u = 3, v = 6\\).",
+          "options": [
+            "0.5",
+            "18",
+            "9",
+            "2"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\frac{1}{f} = \\frac{1}{3} + \\frac{1}{6}\\)"
+            },
+            {
+              "explain": "Add fractions.",
+              "work": "\\(\\frac{1}{f} = \\frac{2}{6} + \\frac{1}{6} = \\frac{3}{6} = \\frac{1}{2}\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(f = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given \\(\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}\\), find the value of \\(f\\) when:\n\\(u = 8, v = 24\\).",
+          "options": [
+            "0.167",
+            "6",
+            "192",
+            "32"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\frac{1}{f} = \\frac{1}{8} + \\frac{1}{24}\\)"
+            },
+            {
+              "explain": "Add fractions.",
+              "work": "\\(\\frac{1}{f} = \\frac{3}{24} + \\frac{1}{24} = \\frac{4}{24} = \\frac{1}{6}\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(f = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given \\(\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}\\), find the value of \\(f\\) when:\n\\(u = 10, v = 15\\).",
+          "options": [
+            "25",
+            "6",
+            "0.167",
+            "150"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\frac{1}{f} = \\frac{1}{10} + \\frac{1}{15}\\)"
+            },
+            {
+              "explain": "Add fractions.",
+              "work": "\\(\\frac{1}{f} = \\frac{3}{30} + \\frac{2}{30} = \\frac{5}{30} = \\frac{1}{6}\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(f = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-6d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given \\(\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}\\), find the value of \\(f\\) when:\n\\(u = 4, v = 12\\).",
+          "options": [
+            "16",
+            "0.333",
+            "3",
+            "48"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\frac{1}{f} = \\frac{1}{4} + \\frac{1}{12}\\)"
+            },
+            {
+              "explain": "Add fractions.",
+              "work": "\\(\\frac{1}{f} = \\frac{3}{12} + \\frac{1}{12} = \\frac{4}{12} = \\frac{1}{3}\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(f = 3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-7a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the formula \\(s = ut + \\frac{1}{2}at^2\\), find the value of:\n\\(u\\) when \\(s = 50, t = 10, a = 0.5\\).",
+          "options": [
+            "25.0",
+            "2.5",
+            "7.5",
+            "5.0"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(2.5\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(50 = 10u + \\frac{1}{2}(0.5)(10^2)\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(50 = 10u + 25\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(10u = 25 \\implies u = 2.5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the formula \\(s = ut + \\frac{1}{2}at^2\\), find the value of:\n\\(a\\) when \\(s = 30, u = 6, t = 4\\).",
+          "options": [
+            "0.375",
+            "1.5",
+            "0.75",
+            "3.75"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(0.75\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(30 = 6(4) + \\frac{1}{2}a(4^2)\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(30 = 24 + 8a\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(6 = 8a \\implies a = 0.75\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-8a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given \\(\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}\\), find the value of \\(u\\) when:\n\\(f = 3, v = 6\\).",
+          "options": [
+            "6",
+            "2",
+            "3",
+            "9"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\frac{1}{3} = \\frac{1}{u} + \\frac{1}{6}\\)"
+            },
+            {
+              "explain": "Rearrange.",
+              "work": "\\(\\frac{1}{u} = \\frac{1}{3} - \\frac{1}{6} = \\frac{1}{6}\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(u = 6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-8b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given \\(\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}\\), find the value of \\(u\\) when:\n\\(f = 4, v = 5\\).",
+          "options": [
+            "20",
+            "10",
+            "9",
+            "2.22"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(20\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(\\frac{1}{4} = \\frac{1}{u} + \\frac{1}{5}\\)"
+            },
+            {
+              "explain": "Rearrange.",
+              "work": "\\(\\frac{1}{u} = \\frac{1}{4} - \\frac{1}{5} = \\frac{5}{20} - \\frac{4}{20} = \\frac{1}{20}\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(u = 20\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-9a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given that \\(P = \\frac{M+m}{M-m}\\), find the value of \\(P\\) when:\n\\(M = 10, m = 5\\).",
+          "options": [
+            "0.333",
+            "3",
+            "15",
+            "2"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(P = \\frac{10+5}{10-5}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(P = \\frac{15}{5} = 3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-9b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given that \\(P = \\frac{M+m}{M-m}\\), find the value of \\(P\\) when:\n\\(M = 30, m = 20\\).",
+          "options": [
+            "50",
+            "1.5",
+            "0.2",
+            "5"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(5\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(P = \\frac{30+20}{30-20}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(P = \\frac{50}{10} = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-9c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given that \\(P = \\frac{M+m}{M-m}\\), find the value of \\(P\\) when:\n\\(M = 25.5, m = 4.5\\). (Correct to 3 decimal places)",
+          "options": [
+            "1.420",
+            "1.428",
+            "5.667",
+            "1.429"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(1.429\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(P = \\frac{25.5+4.5}{25.5-4.5}\\)"
+            },
+            {
+              "explain": "Calculate.",
+              "work": "\\(P = \\frac{30}{21} = \\frac{10}{7}\\)"
+            },
+            {
+              "explain": "Round.",
+              "work": "\\(P \\approx 1.4285... \\approx 1.429\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-9d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Given that \\(P = \\frac{M+m}{M-m}\\), find the value of \\(P\\) when:\n\\(M = \\frac{4}{5}, m = \\frac{1}{3}\\). (Correct to 3 decimal places)",
+          "options": [
+            "2.428",
+            "2.429",
+            "2.500",
+            "1.333"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(2.429\\).",
+          "steps": [
+            {
+              "explain": "Substitute.",
+              "work": "\\(P = \\frac{\\frac{4}{5}+\\frac{1}{3}}{\\frac{4}{5}-\\frac{1}{3}}\\)"
+            },
+            {
+              "explain": "Add/subtract fractions.",
+              "work": "\\(P = \\frac{\\frac{12+5}{15}}{\\frac{12-5}{15}} = \\frac{\\frac{17}{15}}{\\frac{7}{15}}\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(P = \\frac{17}{7} \\approx 2.4285... \\approx 2.429\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-10",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "The area \\(A\\) cm\\(^2\\) of a square with side length \\(x\\) cm is given by \\(A = x^2\\). If \\(A = 30\\), find:\na) the exact value of \\(x\\) (in surd form)\nb) the value of \\(x\\) correct to 2 decimal places.",
+          "answer": "a) \\(\\sqrt{30}\\), b) 5.48",
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "a) \\(\\sqrt{30}\\), b) 5.48",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution into formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "\\(x = \\sqrt{30}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(x \\approx 5.48\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(a) \\(\\sqrt{30}\\), b) 5.48\\)"
+            },
+            {
+              "explain": "Final answer: a) \\(\\sqrt{30}\\), b) 5.48. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(a) \\(\\sqrt{30}\\), b) 5.48\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y9-6a-11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For a rectangle of length \\(l\\) cm and width \\(w\\) cm, the perimeter \\(P\\) cm is given by \\(P = 2(l + w)\\).\nUse this formula to calculate the length of a rectangle which has width \\(18\\) cm and perimeter \\(68\\) cm.",
+          "options": [
+            "\\(50\\)",
+            "\\(25\\)",
+            "\\(34\\)",
+            "\\(16\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(16\\).",
+          "steps": [
+            {
+              "explain": "State the formula and substitute the given values.",
+              "work": "\\(68 = 2(l + 18)\\)",
+              "figure": {
+                "html": "<div style=\"display:flex; justify-content:center; margin: 20px 0;\">\n<svg width=\"400\" height=\"260\" viewBox=\"0 0 400 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: system-ui, -apple-system, sans-serif;\">\n  <rect x=\"100\" y=\"70\" width=\"200\" height=\"120\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"3\" />\n  <text x=\"200\" y=\"55\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-style=\"italic\">l</text>\n  <text x=\"320\" y=\"130\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">18</text>\n</svg>\n</div>"
+              }
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(34 = l + 18\\)"
+            },
+            {
+              "explain": "Subtract 18 to find the length.",
+              "work": "\\(l = 34 - 18 = 16\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-12",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The sum of the first \\(n\\) whole numbers is given by \\(S = \\frac{n}{2}(n + 1)\\).\nUse this formula to calculate the sum of the first \\(30\\) whole numbers.",
+          "options": [
+            "\\(450\\)",
+            "\\(465\\)",
+            "\\(930\\)",
+            "\\(870\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(465\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(n = 30\\) into the formula.",
+              "work": "\\(S = \\frac{30}{2}(30 + 1)\\)"
+            },
+            {
+              "explain": "Simplify the fraction and the brackets.",
+              "work": "\\(S = 15 \\times 31\\)"
+            },
+            {
+              "explain": "Calculate the final sum.",
+              "work": "\\(S = 465\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-13a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The formula for finding the number of degrees Fahrenheit (\\(F\\)) for a temperature given as a number of degrees Celsius (\\(C\\)) is \\(F = \\frac{9}{5}C + 32\\). Calculate the Fahrenheit temperature for the freezing point of water, \\(0^\\circ \\text{C}\\).",
+          "options": [
+            "\\(32\\)",
+            "\\(0\\)",
+            "\\(18\\)",
+            "\\(57.6\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(32\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(C = 0\\) into the formula.",
+              "work": "\\(F = \\frac{9}{5}(0) + 32\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(F = 0 + 32 = 32\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-13b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The formula for finding the number of degrees Fahrenheit (\\(F\\)) for a temperature given as a number of degrees Celsius (\\(C\\)) is \\(F = \\frac{9}{5}C + 32\\). Calculate the Fahrenheit temperature for the boiling point of water, \\(100^\\circ \\text{C}\\).",
+          "options": [
+            "\\(100\\)",
+            "\\(180\\)",
+            "\\(244\\)",
+            "\\(212\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(212\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(C = 100\\) into the formula.",
+              "work": "\\(F = \\frac{9}{5}(100) + 32\\)"
+            },
+            {
+              "explain": "Multiply the fraction.",
+              "work": "\\(F = 9 \\times 20 + 32 = 180 + 32\\)"
+            },
+            {
+              "explain": "Calculate the final temperature.",
+              "work": "\\(F = 212\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-13c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The formula for finding the number of degrees Fahrenheit (\\(F\\)) for a temperature given as a number of degrees Celsius (\\(C\\)) is \\(F = \\frac{9}{5}C + 32\\). Calculate the Fahrenheit temperature for a nice summer temperature of \\(28^\\circ \\text{C}\\).",
+          "options": [
+            "\\(80.0\\)",
+            "\\(50.4\\)",
+            "\\(82.4\\)",
+            "\\(60.0\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(82.4\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(C = 28\\) into the formula.",
+              "work": "\\(F = \\frac{9}{5}(28) + 32\\)"
+            },
+            {
+              "explain": "Convert the fraction into a decimal to simplify.",
+              "work": "\\(F = 1.8 \\times 28 + 32 = 50.4 + 32\\)"
+            },
+            {
+              "explain": "Calculate the final temperature.",
+              "work": "\\(F = 82.4\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-14",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The length of the hypotenuse \\(c\\) cm in a right-angled triangle is given by \\(c^2 = a^2 + b^2\\), where \\(a\\) cm and \\(b\\) cm are the lengths of the perpendicular sides.\nCalculate, correct to 1 decimal place, the length of the hypotenuse in the right-angled triangle whose perpendicular sides have lengths \\(24\\) cm and \\(32\\) cm.",
+          "options": [
+            "\\(1600.0\\)",
+            "\\(21.2\\)",
+            "\\(40.0\\)",
+            "\\(56.0\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(40.0\\).",
+          "steps": [
+            {
+              "explain": "State Pythagoras' theorem and substitute the given values.",
+              "work": "\\(c^2 = 24^2 + 32^2\\)",
+              "figure": {
+                "html": "<div style=\"display:flex; justify-content:center; margin: 20px 0;\">\n<svg width=\"400\" height=\"260\" viewBox=\"0 0 400 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: system-ui, -apple-system, sans-serif;\">\n  <polygon points=\"100,210 300,210 100,60\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <polyline points=\"100,195 115,195 115,210\" fill=\"none\" stroke=\"#1e293b\" stroke-width=\"2\" />\n  \n  <text x=\"200\" y=\"235\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">24</text>\n  <text x=\"75\" y=\"135\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">32</text>\n  <text x=\"220\" y=\"120\" font-size=\"20\" fill=\"#3b82f6\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-style=\"italic\">c</text>\n</svg>\n</div>"
+              }
+            },
+            {
+              "explain": "Square the numbers.",
+              "work": "\\(c^2 = 576 + 1024\\)"
+            },
+            {
+              "explain": "Add the squared values.",
+              "work": "\\(c^2 = 1600\\)"
+            },
+            {
+              "explain": "Take the square root to find the hypotenuse.",
+              "work": "\\(c = \\sqrt{1600} = 40.0\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-15a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The area \\(A\\) cm\\(^2\\) of a triangle with side lengths \\(a\\) cm, \\(b\\) cm and \\(c\\) cm is given by Heron's formula \\(A^2 = s(s-a)(s-b)(s-c)\\), where \\(s = \\frac{a+b+c}{2}\\) is half the perimeter.\nFind the exact area of the triangle whose side lengths are 5 cm, 12 cm and 13 cm.",
+          "options": [
+            "\\(900\\)",
+            "\\(15\\)",
+            "\\(30\\)",
+            "\\(60\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(30\\).",
+          "steps": [
+            {
+              "explain": "Calculate the semi-perimeter \\(s\\).",
+              "work": "\\(s = \\frac{5 + 12 + 13}{2} = \\frac{30}{2} = 15\\)",
+              "figure": {
+                "html": "<div style=\"display:flex; justify-content:center; margin: 20px 0;\">\n<svg width=\"400\" height=\"260\" viewBox=\"0 0 400 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: system-ui, -apple-system, sans-serif;\">\n  <polygon points=\"90,169.05325443786984 310,169.05325443786984 277.4556213017752,90.94674556213016\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <text x=\"163.7278106508876\" y=\"115\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">12</text>\n  <text x=\"313.7278106508876\" y=\"115\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">5</text>\n  <text x=\"200\" y=\"194.05325443786984\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">13</text>\n</svg>\n</div>"
+              }
+            },
+            {
+              "explain": "Substitute the values into Heron's formula.",
+              "work": "\\(A^2 = 15(15-5)(15-12)(15-13)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(A^2 = 15 \\times 10 \\times 3 \\times 2\\)"
+            },
+            {
+              "explain": "Multiply the values.",
+              "work": "\\(A^2 = 900\\)"
+            },
+            {
+              "explain": "Take the square root to find the exact area.",
+              "work": "\\(A = \\sqrt{900} = 30\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-15b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The area \\(A\\) cm\\(^2\\) of a triangle with side lengths \\(a\\) cm, \\(b\\) cm and \\(c\\) cm is given by Heron's formula \\(A^2 = s(s-a)(s-b)(s-c)\\), where \\(s = \\frac{a+b+c}{2}\\) is half the perimeter.\nFind the exact area of the triangle whose side lengths are 9 cm, 12 cm and 15 cm.",
+          "options": [
+            "\\(18\\)",
+            "\\(108\\)",
+            "\\(54\\)",
+            "\\(2916\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(54\\).",
+          "steps": [
+            {
+              "explain": "Calculate the semi-perimeter \\(s\\).",
+              "work": "\\(s = \\frac{9 + 12 + 15}{2} = \\frac{36}{2} = 18\\)",
+              "figure": {
+                "html": "<div style=\"display:flex; justify-content:center; margin: 20px 0;\">\n<svg width=\"400\" height=\"260\" viewBox=\"0 0 400 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: system-ui, -apple-system, sans-serif;\">\n  <polygon points=\"90,182.8 310,182.8 230.79999999999998,77.19999999999999\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <text x=\"140.39999999999998\" y=\"115\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">12</text>\n  <text x=\"290.4\" y=\"115\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">9</text>\n  <text x=\"200\" y=\"207.8\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">15</text>\n</svg>\n</div>"
+              }
+            },
+            {
+              "explain": "Substitute the values into Heron's formula.",
+              "work": "\\(A^2 = 18(18-9)(18-12)(18-15)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(A^2 = 18 \\times 9 \\times 6 \\times 3\\)"
+            },
+            {
+              "explain": "Multiply the values.",
+              "work": "\\(A^2 = 2916\\)"
+            },
+            {
+              "explain": "Take the square root to find the exact area.",
+              "work": "\\(A = \\sqrt{2916} = 54\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-15c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The area \\(A\\) cm\\(^2\\) of a triangle with side lengths \\(a\\) cm, \\(b\\) cm and \\(c\\) cm is given by Heron's formula \\(A^2 = s(s-a)(s-b)(s-c)\\), where \\(s = \\frac{a+b+c}{2}\\) is half the perimeter.\nFind the exact area of the triangle whose side lengths are 7 cm, 24 cm and 25 cm.",
+          "options": [
+            "\\(7056\\)",
+            "\\(28\\)",
+            "\\(84\\)",
+            "\\(168\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(84\\).",
+          "steps": [
+            {
+              "explain": "Calculate the semi-perimeter \\(s\\).",
+              "work": "\\(s = \\frac{7 + 24 + 25}{2} = \\frac{56}{2} = 28\\)",
+              "figure": {
+                "html": "<div style=\"display:flex; justify-content:center; margin: 20px 0;\">\n<svg width=\"400\" height=\"260\" viewBox=\"0 0 400 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: system-ui, -apple-system, sans-serif;\">\n  <polygon points=\"89.99999999999999,159.568 310,159.568 292.752,100.43199999999999\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <text x=\"171.376\" y=\"115\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">24</text>\n  <text x=\"321.376\" y=\"115\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">7</text>\n  <text x=\"200\" y=\"184.568\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">25</text>\n</svg>\n</div>"
+              }
+            },
+            {
+              "explain": "Substitute the values into Heron's formula.",
+              "work": "\\(A^2 = 28(28-7)(28-24)(28-25)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(A^2 = 28 \\times 21 \\times 4 \\times 3\\)"
+            },
+            {
+              "explain": "Multiply the values.",
+              "work": "\\(A^2 = 7056\\)"
+            },
+            {
+              "explain": "Take the square root to find the exact area.",
+              "work": "\\(A = \\sqrt{7056} = 84\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-15d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The area \\(A\\) cm\\(^2\\) of a triangle with side lengths \\(a\\) cm, \\(b\\) cm and \\(c\\) cm is given by Heron's formula \\(A^2 = s(s-a)(s-b)(s-c)\\), where \\(s = \\frac{a+b+c}{2}\\) is half the perimeter.\nFind the exact area of the triangle whose side lengths are 10 cm, 10 cm and 12 cm.",
+          "options": [
+            "\\(2304\\)",
+            "\\(48\\)",
+            "\\(16\\)",
+            "\\(60\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(48\\).",
+          "steps": [
+            {
+              "explain": "Calculate the semi-perimeter \\(s\\).",
+              "work": "\\(s = \\frac{10 + 10 + 12}{2} = \\frac{32}{2} = 16\\)",
+              "figure": {
+                "html": "<div style=\"display:flex; justify-content:center; margin: 20px 0;\">\n<svg width=\"400\" height=\"260\" viewBox=\"0 0 400 260\" xmlns=\"http://www.w3.org/2000/svg\" style=\"font-family: system-ui, -apple-system, sans-serif;\">\n  <polygon points=\"90,203.33333333333331 310,203.33333333333331 200,56.666666666666686\" fill=\"#f8fafc\" stroke=\"#1e293b\" stroke-width=\"3\" stroke-linejoin=\"round\" />\n  <text x=\"125\" y=\"115\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">10</text>\n  <text x=\"275\" y=\"115\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">10</text>\n  <text x=\"200\" y=\"228.33333333333331\" font-size=\"20\" fill=\"#1e293b\" font-weight=\"600\" text-anchor=\"middle\" dominant-baseline=\"middle\">12</text>\n</svg>\n</div>"
+              }
+            },
+            {
+              "explain": "Substitute the values into Heron's formula.",
+              "work": "\\(A^2 = 16(16-10)(16-10)(16-12)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the brackets.",
+              "work": "\\(A^2 = 16 \\times 6 \\times 6 \\times 4\\)"
+            },
+            {
+              "explain": "Multiply the values.",
+              "work": "\\(A^2 = 2304\\)"
+            },
+            {
+              "explain": "Take the square root to find the exact area.",
+              "work": "\\(A = \\sqrt{2304} = 48\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-16a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Sam throws a stone down to the ground from the top of a cliff \\(s\\) metres high, with an initial speed of \\(u\\) m/s. It accelerates at \\(a\\) m/s\\(^2\\). The stone hits the ground with a speed of \\(v\\) m/s given by the formula \\(v^2 = u^2 + 2as\\). \nFind the speed at which the stone hits the ground, correct to 2 decimal places, if \\(u = 0, a = 9.8 \\text{ and } s = 60\\).",
+          "options": [
+            "\\(17.15\\)",
+            "\\(34.29\\)",
+            "\\(1176.00\\)",
+            "\\(588.00\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(34.29\\).",
+          "steps": [
+            {
+              "explain": "Substitute the values into the formula.",
+              "work": "\\(v^2 = 0^2 + 2 \\times 9.8 \\times 60\\)"
+            },
+            {
+              "explain": "Multiply the terms.",
+              "work": "\\(v^2 = 0 + 1176 = 1176\\)"
+            },
+            {
+              "explain": "Take the square root to find the final speed.",
+              "work": "\\(v = \\sqrt{1176} \\approx 34.2928...\\)"
+            },
+            {
+              "explain": "Round the result correct to 2 decimal places.",
+              "work": "\\(v \\approx 34.29\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-16b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Sam throws a stone down to the ground from the top of a cliff \\(s\\) metres high, with an initial speed of \\(u\\) m/s. It accelerates at \\(a\\) m/s\\(^2\\). The stone hits the ground with a speed of \\(v\\) m/s given by the formula \\(v^2 = u^2 + 2as\\). \nFind the speed at which the stone hits the ground, correct to 2 decimal places, if \\(u = 3, a = 10 \\text{ and } s = 50\\).",
+          "options": [
+            "\\(1009.00\\)",
+            "\\(31.76\\)",
+            "\\(1000.00\\)",
+            "\\(31.62\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(31.76\\).",
+          "steps": [
+            {
+              "explain": "Substitute the values into the formula.",
+              "work": "\\(v^2 = 3^2 + 2 \\times 10 \\times 50\\)"
+            },
+            {
+              "explain": "Square the initial speed and multiply the other terms.",
+              "work": "\\(v^2 = 9 + 1000 = 1009\\)"
+            },
+            {
+              "explain": "Take the square root to find the final speed.",
+              "work": "\\(v = \\sqrt{1009} \\approx 31.7647...\\)"
+            },
+            {
+              "explain": "Round the result correct to 2 decimal places.",
+              "work": "\\(v \\approx 31.76\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-16c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Sam throws a stone down to the ground from the top of a cliff \\(s\\) metres high, with an initial speed of \\(u\\) m/s. It accelerates at \\(a\\) m/s\\(^2\\). The stone hits the ground with a speed of \\(v\\) m/s given by the formula \\(v^2 = u^2 + 2as\\). \nFind the speed at which the stone hits the ground, correct to 2 decimal places, if \\(u = 6, a = 9.8 \\text{ and } s = 40\\).",
+          "options": [
+            "\\(820.00\\)",
+            "\\(28.64\\)",
+            "\\(28.63\\)",
+            "\\(14.32\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(28.64\\).",
+          "steps": [
+            {
+              "explain": "Substitute the values into the given formula.",
+              "work": "\\(v^2 = 6^2 + 2 \\times 9.8 \\times 40\\)"
+            },
+            {
+              "explain": "Square the initial speed and multiply the other terms.",
+              "work": "\\(v^2 = 36 + 784 = 820\\)"
+            },
+            {
+              "explain": "Take the square root to find the final speed.",
+              "work": "\\(v = \\sqrt{820} \\approx 28.6356...\\)"
+            },
+            {
+              "explain": "Round the result correct to 2 decimal places.",
+              "work": "\\(v \\approx 28.64\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-16d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Sam throws a stone down to the ground from the top of a cliff \\(s\\) metres high, with an initial speed of \\(u\\) m/s. It accelerates at \\(a\\) m/s\\(^2\\). The stone hits the ground with a speed of \\(v\\) m/s given by the formula \\(v^2 = u^2 + 2as\\). \nFind the speed at which the stone hits the ground, correct to 2 decimal places, if \\(u = 12, a = 9.8 \\text{ and } s = 60\\).",
+          "options": [
+            "\\(36.33\\)",
+            "\\(1320.00\\)",
+            "\\(36.34\\)",
+            "\\(18.17\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(36.33\\).",
+          "steps": [
+            {
+              "explain": "Substitute the values into the given formula.",
+              "work": "\\(v^2 = 12^2 + 2 \\times 9.8 \\times 60\\)"
+            },
+            {
+              "explain": "Square the initial speed and multiply the other terms.",
+              "work": "\\(v^2 = 144 + 1176 = 1320\\)"
+            },
+            {
+              "explain": "Take the square root to find the final speed.",
+              "work": "\\(v = \\sqrt{1320} \\approx 36.3318...\\)"
+            },
+            {
+              "explain": "Round the result correct to 2 decimal places.",
+              "work": "\\(v \\approx 36.33\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year9ch6"
+          ]
+        },
+        {
+          "id": "y9-6a-17a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The distance \\(d\\) metres Jim's car takes to stop once the brakes are applied is given by the formula \\(d = 0.2v + 0.005v^2\\), where \\(v\\) km/h is the speed of the car when the brakes are applied.\nFind the distance the car takes to stop if the brakes are applied when it is travelling at \\(50\\) km/h. (Calculate correct to 3 decimal places where appropriate).",
+          "options": [
+            "\\(25.000\\)",
+            "\\(22.500\\)",
+            "\\(10.000\\)",
+            "\\(12.500\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(22.500\\).",
+          "steps": [
+            {
+              "explain": "Substitute the speed \\(v = 50\\) into the distance formula.",
+              "work": "\\(d = 0.2(50) + 0.005(50^2)\\)"
+            },
+            {
+              "explain": "Calculate the square and multiply.",
+              "work": "\\(d = 10 + 0.005(2500)\\)"
+            },
+            {
+              "explain": "Add the two components.",
+              "work": "\\(d = 10 + 12.5\\)"
+            },
+            {
+              "explain": "Calculate the final distance.",
+              "work": "\\(d = 22.500\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-17b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The distance \\(d\\) metres Jim's car takes to stop once the brakes are applied is given by the formula \\(d = 0.2v + 0.005v^2\\), where \\(v\\) km/h is the speed of the car when the brakes are applied.\nFind the distance the car takes to stop if the brakes are applied when it is travelling at \\(55\\) km/h. (Calculate correct to 3 decimal places where appropriate).",
+          "options": [
+            "\\(11.000\\)",
+            "\\(15.125\\)",
+            "\\(52.250\\)",
+            "\\(26.125\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(26.125\\).",
+          "steps": [
+            {
+              "explain": "Substitute the speed \\(v = 55\\) into the distance formula.",
+              "work": "\\(d = 0.2(55) + 0.005(55^2)\\)"
+            },
+            {
+              "explain": "Calculate the square and multiply.",
+              "work": "\\(d = 11 + 0.005(3025)\\)"
+            },
+            {
+              "explain": "Add the two components.",
+              "work": "\\(d = 11 + 15.125\\)"
+            },
+            {
+              "explain": "Calculate the final distance.",
+              "work": "\\(d = 26.125\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-17c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The distance \\(d\\) metres Jim's car takes to stop once the brakes are applied is given by the formula \\(d = 0.2v + 0.005v^2\\), where \\(v\\) km/h is the speed of the car when the brakes are applied.\nFind the distance the car takes to stop if the brakes are applied when it is travelling at \\(80\\) km/h. (Calculate correct to 3 decimal places where appropriate).",
+          "options": [
+            "\\(80.000\\)",
+            "\\(48.000\\)",
+            "\\(16.000\\)",
+            "\\(32.000\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(48.000\\).",
+          "steps": [
+            {
+              "explain": "Substitute the speed \\(v = 80\\) into the distance formula.",
+              "work": "\\(d = 0.2(80) + 0.005(80^2)\\)"
+            },
+            {
+              "explain": "Calculate the square and multiply.",
+              "work": "\\(d = 16 + 0.005(6400)\\)"
+            },
+            {
+              "explain": "Add the two components.",
+              "work": "\\(d = 16 + 32\\)"
+            },
+            {
+              "explain": "Calculate the final distance.",
+              "work": "\\(d = 48.000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-17d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The distance \\(d\\) metres Jim's car takes to stop once the brakes are applied is given by the formula \\(d = 0.2v + 0.005v^2\\), where \\(v\\) km/h is the speed of the car when the brakes are applied.\nFind the distance the car takes to stop if the brakes are applied when it is travelling at \\(90\\) km/h. (Calculate correct to 3 decimal places where appropriate).",
+          "options": [
+            "\\(40.500\\)",
+            "\\(90.000\\)",
+            "\\(58.500\\)",
+            "\\(18.000\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(58.500\\).",
+          "steps": [
+            {
+              "explain": "Substitute the speed \\(v = 90\\) into the distance formula.",
+              "work": "\\(d = 0.2(90) + 0.005(90^2)\\)"
+            },
+            {
+              "explain": "Calculate the square and multiply.",
+              "work": "\\(d = 18 + 0.005(8100)\\)"
+            },
+            {
+              "explain": "Add the two components.",
+              "work": "\\(d = 18 + 40.5\\)"
+            },
+            {
+              "explain": "Calculate the final distance.",
+              "work": "\\(d = 58.500\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-17e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The distance \\(d\\) metres Jim's car takes to stop once the brakes are applied is given by the formula \\(d = 0.2v + 0.005v^2\\), where \\(v\\) km/h is the speed of the car when the brakes are applied.\nFind the distance the car takes to stop if the brakes are applied when it is travelling at \\(110\\) km/h. (Calculate correct to 3 decimal places where appropriate).",
+          "options": [
+            "\\(60.500\\)",
+            "\\(22.000\\)",
+            "\\(110.000\\)",
+            "\\(82.500\\)"
+          ],
+          "answer": 3,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(82.500\\).",
+          "steps": [
+            {
+              "explain": "Substitute the speed \\(v = 110\\) into the distance formula.",
+              "work": "\\(d = 0.2(110) + 0.005(110^2)\\)"
+            },
+            {
+              "explain": "Calculate the square and multiply.",
+              "work": "\\(d = 22 + 0.005(12100)\\)"
+            },
+            {
+              "explain": "Add the two components.",
+              "work": "\\(d = 22 + 60.5\\)"
+            },
+            {
+              "explain": "Calculate the final distance.",
+              "work": "\\(d = 82.500\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6a-17f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The distance \\(d\\) metres Jim's car takes to stop once the brakes are applied is given by the formula \\(d = 0.2v + 0.005v^2\\), where \\(v\\) km/h is the speed of the car when the brakes are applied.\nFind the distance the car takes to stop if the brakes are applied when it is travelling at \\(130\\) km/h. (Calculate correct to 3 decimal places where appropriate).",
+          "options": [
+            "\\(84.500\\)",
+            "\\(110.500\\)",
+            "\\(26.000\\)",
+            "\\(130.000\\)"
+          ],
+          "answer": 1,
+          "hint": "Substitute the given values into the formula and solve.",
+          "solution": "The correct answer is \\(110.500\\).",
+          "steps": [
+            {
+              "explain": "Substitute the speed \\(v = 130\\) into the distance formula.",
+              "work": "\\(d = 0.2(130) + 0.005(130^2)\\)"
+            },
+            {
+              "explain": "Calculate the square and multiply.",
+              "work": "\\(d = 26 + 0.005(16900)\\)"
+            },
+            {
+              "explain": "Add the two components.",
+              "work": "\\(d = 26 + 84.5\\)"
+            },
+            {
+              "explain": "Calculate the final distance.",
+              "work": "\\(d = 110.500\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-killara-24-t4-pb-q2a",
+          "type": "mc",
+          "stem": "Evaluate the following given that \\(a = 3\\) and \\(b = 2\\): \\(2a - 5\\)",
+          "options": [
+            "\\(-1\\)",
+            "\\(5\\)",
+            "\\(-2\\)",
+            "\\(1\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Substitute \\(a = 3\\) into the expression.",
+              "work": "2(3) - 5 = 6 - 5 = 1"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-killara-24-t4-pb-q2b",
+          "type": "mc",
+          "stem": "Evaluate the following given that \\(a = 3\\) and \\(b = 2\\): \\(ab + 4\\)",
+          "options": [
+            "\\(6\\)",
+            "\\(10\\)",
+            "\\(24\\)",
+            "\\(9\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Substitute \\(a = 3\\) and \\(b = 2\\) into the expression.",
+              "work": "(3)(2) + 4 = 6 + 4 = 10"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-killara-24-t4-pb-q2c",
+          "type": "mc",
+          "stem": "Evaluate the following given that \\(a = 3\\) and \\(b = 2\\): \\(\\frac{18}{a} - b\\)",
+          "options": [
+            "\\(8\\)",
+            "\\(4\\)",
+            "\\(2\\)",
+            "\\(16\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Substitute \\(a = 3\\) and \\(b = 2\\) into the expression.",
+              "work": "\\frac{18}{3} - 2 = 6 - 2 = 4"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-killara-24-t4-pb-q3_2",
+          "type": "mc",
+          "stem": "Given the following formula: \\(I = \\frac{PRN}{100}\\). Find the value of \\(R\\) if \\(I = 240\\), \\(P = 500\\), \\(N = 4\\).",
+          "options": [
+            "\\(R = 10\\)",
+            "\\(R = 8\\)",
+            "\\(R = 12\\)",
+            "\\(R = 14\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Substitute the given values into the formula.",
+              "work": "240 = \\frac{500 \\times R \\times 4}{100}"
+            },
+            {
+              "explain": "Simplify the numerator.",
+              "work": "240 = \\frac{2000R}{100}"
+            },
+            {
+              "explain": "Simplify the fraction.",
+              "work": "240 = 20R"
+            },
+            {
+              "explain": "Divide by 20 to solve for \\(R\\).",
+              "work": "R = \\frac{240}{20} = 12"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-6b",
+      "code": "6B",
+      "title": "Changing the subject of a formula",
+      "questions": [
+        {
+          "id": "y9-6b-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Make \\(x\\) the subject of the formula:\n\\[y = x + 5\\]",
+          "figure": {
+            "svg": "fig:8696653ae0"
+          },
+          "options": [
+            "\\(x = y + 5\\)",
+            "\\(x = 5 - y\\)",
+            "\\(x = y - 5\\)",
+            "\\(x = 5y\\)"
+          ],
+          "answer": 2,
+          "hint": "Undo addition: subtract 5 from both sides.",
+          "solution": "Subtract 5 from both sides: \\(x = y - 5\\).",
+          "steps": [
+            {
+              "explain": "Start with the given formula. The subject we want is \\(x\\), currently on the right with \\(+5\\).",
+              "work": "\\(y = x + 5\\)",
+              "figure": {
+                "svg": "fig:f08737e40d"
+              }
+            },
+            {
+              "explain": "Subtract 5 from both sides to undo the addition. Whatever you do to one side you must do to the other.",
+              "work": "\\(y - 5 = x + 5 - 5\\)",
+              "figure": {
+                "svg": "fig:4fc712ca6a"
+              }
+            },
+            {
+              "explain": "Simplify the right-hand side.",
+              "work": "\\(y - 5 = x\\)"
+            },
+            {
+              "explain": "Write with \\(x\\) as the subject (swap sides if you prefer).",
+              "work": "\\(x = y - 5\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-6b-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Make \\(x\\) the subject of the formula:\n\\[y = x - 3\\]",
+          "figure": {
+            "svg": "fig:f5689ff42e"
+          },
+          "options": [
+            "\\(x = y - 3\\)",
+            "\\(x = y + 3\\)",
+            "\\(x = 3 - y\\)",
+            "\\(x = 3y\\)"
+          ],
+          "answer": 1,
+          "hint": "Undo subtraction: add 3 to both sides.",
+          "solution": "Add 3 to both sides: \\(x = y + 3\\).",
+          "steps": [
+            {
+              "explain": "Given formula. \\(x\\) has 3 subtracted from it.",
+              "work": "\\(y = x - 3\\)"
+            },
+            {
+              "explain": "Add 3 to both sides to undo the subtraction.",
+              "work": "\\(y + 3 = x - 3 + 3\\)",
+              "figure": {
+                "svg": "fig:c6b5f58a95"
+              }
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(y + 3 = x\\)"
+            },
+            {
+              "explain": "Write with \\(x\\) as the subject.",
+              "work": "\\(x = y + 3\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-6b-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Make \\(x\\) the subject of the formula:\n\\[y = 4x\\]",
+          "figure": {
+            "svg": "fig:3a05fc97af"
+          },
+          "options": [
+            "\\(x = 4y\\)",
+            "\\(x = y - 4\\)",
+            "\\(x = \\dfrac{y}{4}\\)",
+            "\\(x = \\dfrac{4}{y}\\)"
+          ],
+          "answer": 2,
+          "hint": "Undo multiplication: divide both sides by 4.",
+          "solution": "Divide both sides by 4: \\(x = \\dfrac{y}{4}\\).",
+          "steps": [
+            {
+              "explain": "Given formula. \\(x\\) is multiplied by 4.",
+              "work": "\\(y = 4x\\)"
+            },
+            {
+              "explain": "Divide both sides by 4 to isolate \\(x\\).",
+              "work": "\\(\\dfrac{y}{4} = \\dfrac{4x}{4}\\)",
+              "figure": {
+                "svg": "fig:477294cc69"
+              }
+            },
+            {
+              "explain": "Simplify the right-hand side.",
+              "work": "\\(\\dfrac{y}{4} = x\\)"
+            },
+            {
+              "explain": "Write with \\(x\\) as the subject.",
+              "work": "\\(x = \\dfrac{y}{4}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-6b-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Make \\(x\\) the subject of the formula:\n\\[y = \\dfrac{x}{6}\\]",
+          "figure": {
+            "svg": "fig:1a33770e4b"
+          },
+          "options": [
+            "\\(x = \\dfrac{y}{6}\\)",
+            "\\(x = 6y\\)",
+            "\\(x = y - 6\\)",
+            "\\(x = \\dfrac{6}{y}\\)"
+          ],
+          "answer": 1,
+          "hint": "Undo division: multiply both sides by 6.",
+          "solution": "Multiply both sides by 6: \\(x = 6y\\).",
+          "steps": [
+            {
+              "explain": "Given formula. \\(x\\) is divided by 6.",
+              "work": "\\(y = \\dfrac{x}{6}\\)"
+            },
+            {
+              "explain": "Multiply both sides by 6.",
+              "work": "\\(6y = x\\)",
+              "figure": {
+                "svg": "fig:6aa9745549"
+              }
+            },
+            {
+              "explain": "The right-hand side is now just \\(x\\).",
+              "work": "\\(6y = x\\)"
+            },
+            {
+              "explain": "Write with \\(x\\) as the subject.",
+              "work": "\\(x = 6y\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-6b-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Make \\(q\\) the subject of the formula:\n\\[p = q - r\\]",
+          "figure": {
+            "svg": "fig:9f20c1c570"
+          },
+          "options": [
+            "\\(q = p - r\\)",
+            "\\(q = r - p\\)",
+            "\\(q = p + r\\)",
+            "\\(q = pr\\)"
+          ],
+          "answer": 2,
+          "hint": "Add \\(r\\) to both sides.",
+          "solution": "Add \\(r\\) to both sides: \\(q = p + r\\).",
+          "steps": [
+            {
+              "explain": "Given formula. We want \\(q\\) alone.",
+              "work": "\\(p = q - r\\)"
+            },
+            {
+              "explain": "Add \\(r\\) to both sides to cancel \\(-r\\).",
+              "work": "\\(p + r = q - r + r\\)",
+              "figure": {
+                "svg": "fig:a4d2b58eb4"
+              }
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(p + r = q\\)"
+            },
+            {
+              "explain": "Write with \\(q\\) as the subject.",
+              "work": "\\(q = p + r\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-6b-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Make \\(n\\) the subject of the formula:\n\\[m = n + k\\]",
+          "figure": {
+            "svg": "fig:823287f6cb"
+          },
+          "options": [
+            "\\(n = m + k\\)",
+            "\\(n = m - k\\)",
+            "\\(n = k - m\\)",
+            "\\(n = mk\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract \\(k\\) from both sides.",
+          "solution": "Subtract \\(k\\) from both sides: \\(n = m - k\\).",
+          "steps": [
+            {
+              "explain": "Given formula.",
+              "work": "\\(m = n + k\\)"
+            },
+            {
+              "explain": "Subtract \\(k\\) from both sides.",
+              "work": "\\(m - k = n + k - k\\)",
+              "figure": {
+                "svg": "fig:1de07aa960"
+              }
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(m - k = n\\)"
+            },
+            {
+              "explain": "Write with \\(n\\) as the subject.",
+              "work": "\\(n = m - k\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y9-6b-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Make \\(x\\) the subject of the formula:\n\\[y = 2x + 7\\]",
+          "figure": {
+            "svg": "fig:6803c7f0ec"
+          },
+          "options": [
+            "\\(x = 2y + 7\\)",
+            "\\(x = \\dfrac{y + 7}{2}\\)",
+            "\\(x = \\dfrac{y - 7}{2}\\)",
+            "\\(x = \\dfrac{y}{2} - 7\\)"
+          ],
+          "answer": 2,
+          "hint": "First subtract 7, then divide by 2.",
+          "solution": "\\(y - 7 = 2x\\), so \\(x = \\dfrac{y - 7}{2}\\).",
+          "steps": [
+            {
+              "explain": "Given formula. Undo operations in reverse order (opposite of BODMAS).",
+              "work": "\\(y = 2x + 7\\)"
+            },
+            {
+              "explain": "First subtract 7 from both sides.",
+              "work": "\\(y - 7 = 2x\\)",
+              "figure": {
+                "svg": "fig:b901f62e34"
+              }
+            },
+            {
+              "explain": "Then divide both sides by 2.",
+              "work": "\\(\\dfrac{y - 7}{2} = x\\)",
+              "figure": {
+                "svg": "fig:6dbe33e9a0"
+              }
+            },
+            {
+              "explain": "Write with \\(x\\) as the subject.",
+              "work": "\\(x = \\dfrac{y - 7}{2}\\)"
+            }
+          ],
+          "timeLimit": 75
+        },
+        {
+          "id": "y9-6b-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Make \\(x\\) the subject of the formula:\n\\[y = 5x - 3\\]",
+          "figure": {
+            "svg": "fig:009ca48335"
+          },
+          "options": [
+            "\\(x = \\dfrac{y - 3}{5}\\)",
+            "\\(x = \\dfrac{y + 3}{5}\\)",
+            "\\(x = 5y + 3\\)",
+            "\\(x = \\dfrac{y}{5} + 3\\)"
+          ],
+          "answer": 1,
+          "hint": "Add 3 first, then divide by 5.",
+          "solution": "\\(y + 3 = 5x\\), so \\(x = \\dfrac{y + 3}{5}\\).",
+          "steps": [
+            {
+              "explain": "Given formula.",
+              "work": "\\(y = 5x - 3\\)"
+            },
+            {
+              "explain": "Add 3 to both sides.",
+              "work": "\\(y + 3 = 5x\\)",
+              "figure": {
+                "svg": "fig:60c65133b7"
+              }
+            },
+            {
+              "explain": "Divide both sides by 5.",
+              "work": "\\(\\dfrac{y + 3}{5} = x\\)"
+            },
+            {
+              "explain": "Write with \\(x\\) as the subject.",
+              "work": "\\(x = \\dfrac{y + 3}{5}\\)"
+            }
+          ],
+          "timeLimit": 75
+        },
+        {
+          "id": "y9-6b-q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Make \\(x\\) the subject of the formula:\n\\[y = 3(x + 4)\\]",
+          "figure": {
+            "svg": "fig:2dfc95711a"
+          },
+          "options": [
+            "\\(x = \\dfrac{y}{3} + 4\\)",
+            "\\(x = \\dfrac{y + 4}{3}\\)",
+            "\\(x = \\dfrac{y}{3} - 4\\)",
+            "\\(x = 3y - 4\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide by 3 first (to remove the brackets), then subtract 4.",
+          "solution": "\\(\\dfrac{y}{3} = x + 4\\), so \\(x = \\dfrac{y}{3} - 4\\).",
+          "steps": [
+            {
+              "explain": "Given formula. The brackets mean everything inside is multiplied by 3.",
+              "work": "\\(y = 3(x + 4)\\)"
+            },
+            {
+              "explain": "Divide both sides by 3.",
+              "work": "\\(\\dfrac{y}{3} = x + 4\\)",
+              "figure": {
+                "svg": "fig:1e526384ad"
+              }
+            },
+            {
+              "explain": "Subtract 4 from both sides.",
+              "work": "\\(\\dfrac{y}{3} - 4 = x\\)"
+            },
+            {
+              "explain": "Write with \\(x\\) as the subject.",
+              "work": "\\(x = \\dfrac{y}{3} - 4\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q2d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Make \\(x\\) the subject of the formula:\n\\[y = 4(x - 2) + 1\\]",
+          "figure": {
+            "svg": "fig:4949d92dcd"
+          },
+          "options": [
+            "\\(x = \\dfrac{y - 1}{4} + 2\\)",
+            "\\(x = \\dfrac{y + 1}{4} - 2\\)",
+            "\\(x = \\dfrac{y - 1}{4} - 2\\)",
+            "\\(x = 4(y - 1) + 2\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 1, divide by 4, then add 2.",
+          "solution": "\\(y - 1 = 4(x - 2)\\) \\(\\Rightarrow\\) \\(\\dfrac{y-1}{4} = x - 2\\) \\(\\Rightarrow\\) \\(x = \\dfrac{y-1}{4} + 2\\).",
+          "steps": [
+            {
+              "explain": "Given formula.",
+              "work": "\\(y = 4(x - 2) + 1\\)",
+              "figure": {
+                "svg": "fig:0d38c54ead"
+              }
+            },
+            {
+              "explain": "Subtract 1 from both sides.",
+              "work": "\\(y - 1 = 4(x - 2)\\)",
+              "figure": {
+                "svg": "fig:b6d3567780"
+              }
+            },
+            {
+              "explain": "Divide both sides by 4.",
+              "work": "\\(\\dfrac{y - 1}{4} = x - 2\\)",
+              "figure": {
+                "svg": "fig:5952d2fb10"
+              }
+            },
+            {
+              "explain": "Add 2 to both sides to isolate \\(x\\).",
+              "work": "\\(x = \\dfrac{y - 1}{4} + 2\\)",
+              "figure": {
+                "svg": "fig:99d310ca60"
+              }
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q2e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Make \\(t\\) the subject of the formula:\n\\[v = u + at\\]",
+          "figure": {
+            "svg": "fig:76a30b14b4"
+          },
+          "options": [
+            "\\(t = v - u - a\\)",
+            "\\(t = \\dfrac{v + u}{a}\\)",
+            "\\(t = \\dfrac{v - u}{a}\\)",
+            "\\(t = a(v - u)\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract \\(u\\), then divide by \\(a\\).",
+          "solution": "\\(v - u = at\\), so \\(t = \\dfrac{v - u}{a}\\).",
+          "steps": [
+            {
+              "explain": "This is the linear motion formula relating final velocity \\(v\\), initial velocity \\(u\\), acceleration \\(a\\) and time \\(t\\).",
+              "work": "\\(v = u + at\\)",
+              "figure": {
+                "svg": "fig:68e96f3b78"
+              }
+            },
+            {
+              "explain": "Subtract \\(u\\) from both sides.",
+              "work": "\\(v - u = at\\)",
+              "figure": {
+                "svg": "fig:2e87830440"
+              }
+            },
+            {
+              "explain": "Divide both sides by \\(a\\) (assuming \\(a \\neq 0\\)).",
+              "work": "\\(\\dfrac{v - u}{a} = t\\)"
+            },
+            {
+              "explain": "Write with \\(t\\) as the subject.",
+              "work": "\\(t = \\dfrac{v - u}{a}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q2f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Make \\(u\\) the subject of the formula:\n\\[v = u + at\\]",
+          "figure": {
+            "svg": "fig:76a30b14b4"
+          },
+          "options": [
+            "\\(u = v + at\\)",
+            "\\(u = v - at\\)",
+            "\\(u = at - v\\)",
+            "\\(u = \\dfrac{v}{at}\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract \\(at\\) from both sides.",
+          "solution": "Subtract \\(at\\): \\(u = v - at\\).",
+          "steps": [
+            {
+              "explain": "Given the motion formula, isolate initial velocity \\(u\\).",
+              "work": "\\(v = u + at\\)",
+              "figure": {
+                "svg": "fig:68e96f3b78"
+              }
+            },
+            {
+              "explain": "Subtract \\(at\\) from both sides.",
+              "work": "\\(v - at = u\\)",
+              "figure": {
+                "svg": "fig:6d60a11383"
+              }
+            },
+            {
+              "explain": "The right-hand side is now just \\(u\\).",
+              "work": "\\(v - at = u\\)"
+            },
+            {
+              "explain": "Write with \\(u\\) as the subject.",
+              "work": "\\(u = v - at\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Make \\(x\\) the subject of the formula:\n\\[y = \\dfrac{x}{a} + b\\]",
+          "figure": {
+            "svg": "fig:103ee9ea07"
+          },
+          "options": [
+            "\\(x = a(y + b)\\)",
+            "\\(x = a(y - b)\\)",
+            "\\(x = \\dfrac{y - b}{a}\\)",
+            "\\(x = ay - b\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract \\(b\\), then multiply by \\(a\\).",
+          "solution": "\\(y - b = \\dfrac{x}{a}\\) \\(\\Rightarrow\\) \\(x = a(y - b)\\).",
+          "steps": [
+            {
+              "explain": "Given formula.",
+              "work": "\\(y = \\dfrac{x}{a} + b\\)",
+              "figure": {
+                "svg": "fig:a84d2b2138"
+              }
+            },
+            {
+              "explain": "Subtract \\(b\\) from both sides.",
+              "work": "\\(y - b = \\dfrac{x}{a}\\)",
+              "figure": {
+                "svg": "fig:3df66ce25d"
+              }
+            },
+            {
+              "explain": "Multiply both sides by \\(a\\).",
+              "work": "\\(a(y - b) = x\\)",
+              "figure": {
+                "svg": "fig:8114cffd4b"
+              }
+            },
+            {
+              "explain": "Write with \\(x\\) as the subject.",
+              "work": "\\(x = a(y - b)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The average of two numbers \\(m\\) and \\(n\\) is given by\n\\[a = \\dfrac{m + n}{2}\\]\nMake \\(m\\) the subject.",
+          "figure": {
+            "svg": "fig:2a9725d01d"
+          },
+          "options": [
+            "\\(m = 2a + n\\)",
+            "\\(m = 2a - n\\)",
+            "\\(m = \\dfrac{a - n}{2}\\)",
+            "\\(m = a - 2n\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply by 2, then subtract \\(n\\).",
+          "solution": "\\(2a = m + n\\) \\(\\Rightarrow\\) \\(m = 2a - n\\).",
+          "steps": [
+            {
+              "explain": "The average sits halfway between \\(m\\) and \\(n\\) on the number line.",
+              "work": "\\(a = \\dfrac{m + n}{2}\\)",
+              "figure": {
+                "svg": "fig:876e7f0e7f"
+              }
+            },
+            {
+              "explain": "Multiply both sides by 2 to clear the fraction.",
+              "work": "\\(2a = m + n\\)",
+              "figure": {
+                "svg": "fig:e4ba525494"
+              }
+            },
+            {
+              "explain": "Subtract \\(n\\) from both sides.",
+              "work": "\\(2a - n = m\\)"
+            },
+            {
+              "explain": "Write with \\(m\\) as the subject.",
+              "work": "\\(m = 2a - n\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Make \\(u\\) the subject of the formula:\n\\[v = \\dfrac{u}{t}\\]",
+          "figure": {
+            "svg": "fig:16b11f5b3e"
+          },
+          "options": [
+            "\\(u = \\dfrac{v}{t}\\)",
+            "\\(u = vt\\)",
+            "\\(u = v - t\\)",
+            "\\(u = \\dfrac{t}{v}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply both sides by \\(t\\).",
+          "solution": "Multiply by \\(t\\): \\(u = vt\\).",
+          "steps": [
+            {
+              "explain": "This is the speed formula \\(v = \\dfrac{u}{t}\\) (distance over time).",
+              "work": "\\(v = \\dfrac{u}{t}\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(t\\).",
+              "work": "\\(vt = u\\)",
+              "figure": {
+                "svg": "fig:1916074726"
+              }
+            },
+            {
+              "explain": "The right-hand side is \\(u\\).",
+              "work": "\\(vt = u\\)"
+            },
+            {
+              "explain": "Write with \\(u\\) as the subject.",
+              "work": "\\(u = vt\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q3d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The thin-lens formula is\n\\[\\dfrac{1}{f} = \\dfrac{1}{u} + \\dfrac{1}{v}\\]\nMake \\(f\\) the subject.",
+          "figure": {
+            "svg": "fig:3117600d75"
+          },
+          "options": [
+            "\\(f = u + v\\)",
+            "\\(f = \\dfrac{1}{u} + \\dfrac{1}{v}\\)",
+            "\\(f = \\dfrac{uv}{u + v}\\)",
+            "\\(f = \\dfrac{u + v}{uv}\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine the right-hand side over a common denominator, then take the reciprocal.",
+          "solution": "\\(\\dfrac{1}{f} = \\dfrac{v + u}{uv}\\) \\(\\Rightarrow\\) \\(f = \\dfrac{uv}{u + v}\\).",
+          "steps": [
+            {
+              "explain": "Given the thin-lens formula. \\(f\\) is focal length, \\(u\\) object distance, \\(v\\) image distance.",
+              "work": "\\(\\dfrac{1}{f} = \\dfrac{1}{u} + \\dfrac{1}{v}\\)",
+              "figure": {
+                "svg": "fig:7e02ecabb6"
+              }
+            },
+            {
+              "explain": "Combine the right-hand side with common denominator \\(uv\\).",
+              "work": "\\(\\dfrac{1}{f} = \\dfrac{v + u}{uv}\\)"
+            },
+            {
+              "explain": "Take the reciprocal of both sides (flip both fractions).",
+              "work": "\\(f = \\dfrac{uv}{u + v}\\)"
+            },
+            {
+              "explain": "So the focal length is the product of the distances over their sum.",
+              "work": "\\(f = \\dfrac{uv}{u + v}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6b-q3e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Given\n\\[\\dfrac{1}{f} = \\dfrac{1}{u} + \\dfrac{1}{v}\\]\nMake \\(u\\) the subject.",
+          "figure": {
+            "svg": "fig:3117600d75"
+          },
+          "options": [
+            "\\(u = f + v\\)",
+            "\\(u = \\dfrac{fv}{v - f}\\)",
+            "\\(u = \\dfrac{fv}{f - v}\\)",
+            "\\(u = \\dfrac{f + v}{fv}\\)"
+          ],
+          "answer": 1,
+          "hint": "Isolate \\(\\dfrac{1}{u}\\), then take the reciprocal.",
+          "solution": "\\(\\dfrac{1}{u} = \\dfrac{1}{f} - \\dfrac{1}{v} = \\dfrac{v - f}{fv}\\) \\(\\Rightarrow\\) \\(u = \\dfrac{fv}{v - f}\\).",
+          "steps": [
+            {
+              "explain": "Start from the thin-lens formula and isolate the term with \\(u\\).",
+              "work": "\\(\\dfrac{1}{f} = \\dfrac{1}{u} + \\dfrac{1}{v}\\)",
+              "figure": {
+                "svg": "fig:7e02ecabb6"
+              }
+            },
+            {
+              "explain": "Subtract \\(\\dfrac{1}{v}\\) from both sides.",
+              "work": "\\(\\dfrac{1}{u} = \\dfrac{1}{f} - \\dfrac{1}{v}\\)"
+            },
+            {
+              "explain": "Combine over common denominator \\(fv\\).",
+              "work": "\\(\\dfrac{1}{u} = \\dfrac{v - f}{fv}\\)"
+            },
+            {
+              "explain": "Take the reciprocal of both sides.",
+              "work": "\\(u = \\dfrac{fv}{v - f}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6b-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The area of a rectangle is \\(A = lw\\).\nMake \\(l\\) the subject.",
+          "figure": {
+            "svg": "fig:35e4efa41e"
+          },
+          "options": [
+            "\\(l = A + w\\)",
+            "\\(l = Aw\\)",
+            "\\(l = \\dfrac{A}{w}\\)",
+            "\\(l = \\dfrac{w}{A}\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide both sides by the width \\(w\\).",
+          "solution": "Divide by \\(w\\): \\(l = \\dfrac{A}{w}\\).",
+          "steps": [
+            {
+              "explain": "Area of a rectangle equals length times width.",
+              "work": "\\(A = lw\\)",
+              "figure": {
+                "svg": "fig:6978289c20"
+              }
+            },
+            {
+              "explain": "Divide both sides by \\(w\\) (assuming \\(w \\neq 0\\)).",
+              "work": "\\(\\dfrac{A}{w} = l\\)",
+              "figure": {
+                "svg": "fig:31e300242e"
+              }
+            },
+            {
+              "explain": "The right-hand side is the length.",
+              "work": "\\(\\dfrac{A}{w} = l\\)"
+            },
+            {
+              "explain": "Write with \\(l\\) as the subject.",
+              "work": "\\(l = \\dfrac{A}{w}\\)"
+            }
+          ],
+          "timeLimit": 75
+        },
+        {
+          "id": "y9-6b-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The area of a triangle is \\(A = \\dfrac{1}{2}bh\\).\nMake \\(h\\) the subject.",
+          "figure": {
+            "svg": "fig:88c0f94a20"
+          },
+          "options": [
+            "\\(h = \\dfrac{A}{2b}\\)",
+            "\\(h = \\dfrac{2A}{b}\\)",
+            "\\(h = 2Ab\\)",
+            "\\(h = \\dfrac{b}{2A}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply by 2, then divide by \\(b\\).",
+          "solution": "\\(2A = bh\\) \\(\\Rightarrow\\) \\(h = \\dfrac{2A}{b}\\).",
+          "steps": [
+            {
+              "explain": "Area of a triangle is half base times height.",
+              "work": "\\(A = \\dfrac{1}{2}bh\\)",
+              "figure": {
+                "svg": "fig:b2935aa7cf"
+              }
+            },
+            {
+              "explain": "Multiply both sides by 2 to clear the fraction.",
+              "work": "\\(2A = bh\\)",
+              "figure": {
+                "svg": "fig:3f1139101c"
+              }
+            },
+            {
+              "explain": "Divide both sides by the base \\(b\\).",
+              "work": "\\(\\dfrac{2A}{b} = h\\)"
+            },
+            {
+              "explain": "Write with \\(h\\) as the subject.",
+              "work": "\\(h = \\dfrac{2A}{b}\\)"
+            }
+          ],
+          "timeLimit": 75
+        },
+        {
+          "id": "y9-6b-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of a circle is \\(A = \\pi r^{2}\\).\nMake \\(r\\) the subject (take the positive root).",
+          "figure": {
+            "svg": "fig:5487fd4ecf"
+          },
+          "options": [
+            "\\(r = \\dfrac{A}{\\pi}\\)",
+            "\\(r = \\sqrt{A\\pi}\\)",
+            "\\(r = \\sqrt{\\dfrac{A}{\\pi}}\\)",
+            "\\(r = \\pi\\sqrt{A}\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide by \\(\\pi\\), then take the square root.",
+          "solution": "\\(\\dfrac{A}{\\pi} = r^{2}\\) \\(\\Rightarrow\\) \\(r = \\sqrt{\\dfrac{A}{\\pi}}\\).",
+          "steps": [
+            {
+              "explain": "Area of a circle with radius \\(r\\).",
+              "work": "\\(A = \\pi r^{2}\\)",
+              "figure": {
+                "svg": "fig:f043fb7ef3"
+              }
+            },
+            {
+              "explain": "Divide both sides by \\(\\pi\\).",
+              "work": "\\(\\dfrac{A}{\\pi} = r^{2}\\)",
+              "figure": {
+                "svg": "fig:f53afbc433"
+              }
+            },
+            {
+              "explain": "Take the positive square root of both sides (radius is positive).",
+              "work": "\\(r = \\sqrt{\\dfrac{A}{\\pi}}\\)"
+            },
+            {
+              "explain": "Final form with \\(r\\) as the subject.",
+              "work": "\\(r = \\sqrt{\\dfrac{A}{\\pi}}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The circumference of a circle is \\(C = 2\\pi r\\).\nMake \\(r\\) the subject.",
+          "figure": {
+            "svg": "fig:c170d50ba9"
+          },
+          "options": [
+            "\\(r = 2\\pi C\\)",
+            "\\(r = \\dfrac{C}{2\\pi}\\)",
+            "\\(r = \\dfrac{2\\pi}{C}\\)",
+            "\\(r = C - 2\\pi\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide both sides by \\(2\\pi\\).",
+          "solution": "\\(r = \\dfrac{C}{2\\pi}\\).",
+          "steps": [
+            {
+              "explain": "Circumference equals \\(2\\pi\\) times the radius.",
+              "work": "\\(C = 2\\pi r\\)",
+              "figure": {
+                "svg": "fig:8aa243bcbe"
+              }
+            },
+            {
+              "explain": "Divide both sides by \\(2\\pi\\).",
+              "work": "\\(\\dfrac{C}{2\\pi} = r\\)",
+              "figure": {
+                "svg": "fig:718b0cc70a"
+              }
+            },
+            {
+              "explain": "The right-hand side is \\(r\\).",
+              "work": "\\(\\dfrac{C}{2\\pi} = r\\)"
+            },
+            {
+              "explain": "Write with \\(r\\) as the subject.",
+              "work": "\\(r = \\dfrac{C}{2\\pi}\\)"
+            }
+          ],
+          "timeLimit": 75
+        },
+        {
+          "id": "y9-6b-q4e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The volume of a cylinder is \\(V = \\pi r^{2} h\\).\nMake \\(h\\) the subject.",
+          "figure": {
+            "svg": "fig:9df44e0a00"
+          },
+          "options": [
+            "\\(h = V\\pi r^{2}\\)",
+            "\\(h = \\dfrac{V}{\\pi r^{2}}\\)",
+            "\\(h = \\dfrac{\\pi r^{2}}{V}\\)",
+            "\\(h = V - \\pi r^{2}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide both sides by the base area \\(\\pi r^{2}\\).",
+          "solution": "\\(h = \\dfrac{V}{\\pi r^{2}}\\).",
+          "steps": [
+            {
+              "explain": "Volume of a cylinder = base area \\(\\times\\) height.",
+              "work": "\\(V = \\pi r^{2} h\\)",
+              "figure": {
+                "svg": "fig:2daacf51f9"
+              }
+            },
+            {
+              "explain": "Divide both sides by \\(\\pi r^{2}\\).",
+              "work": "\\(\\dfrac{V}{\\pi r^{2}} = h\\)",
+              "figure": {
+                "svg": "fig:faf75ea449"
+              }
+            },
+            {
+              "explain": "The right-hand side is the height.",
+              "work": "\\(\\dfrac{V}{\\pi r^{2}} = h\\)"
+            },
+            {
+              "explain": "Write with \\(h\\) as the subject.",
+              "work": "\\(h = \\dfrac{V}{\\pi r^{2}}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q4f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The volume of a cone is \\(V = \\dfrac{1}{3}\\pi r^{2} h\\).\nMake \\(r\\) the subject (take the positive root).",
+          "figure": {
+            "svg": "fig:123cb0e97c"
+          },
+          "options": [
+            "\\(r = \\sqrt{\\dfrac{3V}{\\pi h}}\\)",
+            "\\(r = \\sqrt{\\dfrac{V}{3\\pi h}}\\)",
+            "\\(r = \\dfrac{3V}{\\pi h}\\)",
+            "\\(r = \\sqrt{3V\\pi h}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply by 3, divide by \\(\\pi h\\), then take the square root.",
+          "solution": "\\(3V = \\pi r^{2} h\\) \\(\\Rightarrow\\) \\(r^{2} = \\dfrac{3V}{\\pi h}\\) \\(\\Rightarrow\\) \\(r = \\sqrt{\\dfrac{3V}{\\pi h}}\\).",
+          "steps": [
+            {
+              "explain": "Volume of a cone is one-third the volume of the enclosing cylinder.",
+              "work": "\\(V = \\dfrac{1}{3}\\pi r^{2} h\\)",
+              "figure": {
+                "svg": "fig:0c92cc378d"
+              }
+            },
+            {
+              "explain": "Multiply both sides by 3.",
+              "work": "\\(3V = \\pi r^{2} h\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(\\pi h\\).",
+              "work": "\\(r^{2} = \\dfrac{3V}{\\pi h}\\)"
+            },
+            {
+              "explain": "Take the positive square root.",
+              "work": "\\(r = \\sqrt{\\dfrac{3V}{\\pi h}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6b-q4g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of a trapezium is \\(A = \\dfrac{1}{2}(a + b)h\\).\nMake \\(h\\) the subject.",
+          "figure": {
+            "svg": "fig:91fbb3ad49"
+          },
+          "options": [
+            "\\(h = \\dfrac{A}{a + b}\\)",
+            "\\(h = \\dfrac{2A}{a + b}\\)",
+            "\\(h = 2A(a + b)\\)",
+            "\\(h = \\dfrac{a + b}{2A}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply by 2, then divide by \\((a + b)\\).",
+          "solution": "\\(2A = (a + b)h\\) \\(\\Rightarrow\\) \\(h = \\dfrac{2A}{a + b}\\).",
+          "steps": [
+            {
+              "explain": "Trapezium area uses the average of the parallel sides times the height.",
+              "work": "\\(A = \\dfrac{1}{2}(a + b)h\\)",
+              "figure": {
+                "svg": "fig:b90458b08c"
+              }
+            },
+            {
+              "explain": "Multiply both sides by 2.",
+              "work": "\\(2A = (a + b)h\\)",
+              "figure": {
+                "svg": "fig:273897f468"
+              }
+            },
+            {
+              "explain": "Divide both sides by \\((a + b)\\).",
+              "work": "\\(\\dfrac{2A}{a + b} = h\\)"
+            },
+            {
+              "explain": "Write with \\(h\\) as the subject.",
+              "work": "\\(h = \\dfrac{2A}{a + b}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q4h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The perimeter of a rectangle is \\(P = 2(l + w)\\).\nMake \\(w\\) the subject.",
+          "figure": {
+            "svg": "fig:7a939e710a"
+          },
+          "options": [
+            "\\(w = \\dfrac{P}{2} - l\\)",
+            "\\(w = \\dfrac{P - l}{2}\\)",
+            "\\(w = 2P - l\\)",
+            "\\(w = P - 2l\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide by 2, then subtract \\(l\\). (Equivalent form: \\(w = \\dfrac{P - 2l}{2}\\).)",
+          "solution": "\\(\\dfrac{P}{2} = l + w\\) \\(\\Rightarrow\\) \\(w = \\dfrac{P}{2} - l\\).",
+          "steps": [
+            {
+              "explain": "Perimeter is twice the sum of length and width.",
+              "work": "\\(P = 2(l + w)\\)",
+              "figure": {
+                "svg": "fig:bcb62856a2"
+              }
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(\\dfrac{P}{2} = l + w\\)",
+              "figure": {
+                "svg": "fig:86f9a104c7"
+              }
+            },
+            {
+              "explain": "Subtract \\(l\\) from both sides.",
+              "work": "\\(\\dfrac{P}{2} - l = w\\)"
+            },
+            {
+              "explain": "Write with \\(w\\) as the subject.",
+              "work": "\\(w = \\dfrac{P}{2} - l\\)"
+            }
+          ],
+          "timeLimit": 75
+        },
+        {
+          "id": "y9-6b-q5a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A stone is thrown from a cliff. The distance fallen is\n\\[s = ut + \\dfrac{1}{2}at^{2}\\]\nMake \\(u\\) the subject.",
+          "figure": {
+            "svg": "fig:f87f41a11f"
+          },
+          "options": [
+            "\\(u = s - \\dfrac{1}{2}at^{2}\\)",
+            "\\(u = \\dfrac{s}{t} - \\dfrac{1}{2}at\\)",
+            "\\(u = st - \\dfrac{1}{2}at^{2}\\)",
+            "\\(u = \\dfrac{s}{t} + \\dfrac{1}{2}at\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract \\(\\tfrac{1}{2}at^{2}\\), then divide by \\(t\\). Simplify \\(\\dfrac{\\tfrac{1}{2}at^{2}}{t} = \\tfrac{1}{2}at\\).",
+          "solution": "\\(s - \\tfrac{1}{2}at^{2} = ut\\) \\(\\Rightarrow\\) \\(u = \\dfrac{s}{t} - \\dfrac{1}{2}at\\).",
+          "steps": [
+            {
+              "explain": "Displacement formula with initial speed \\(u\\) and constant acceleration \\(a\\).",
+              "work": "\\(s = ut + \\dfrac{1}{2}at^{2}\\)",
+              "figure": {
+                "svg": "fig:aaccb15d52"
+              }
+            },
+            {
+              "explain": "Subtract \\(\\dfrac{1}{2}at^{2}\\) from both sides to isolate the \\(ut\\) term.",
+              "work": "\\(s - \\dfrac{1}{2}at^{2} = ut\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(t\\).",
+              "work": "\\(u = \\dfrac{s - \\tfrac{1}{2}at^{2}}{t}\\)"
+            },
+            {
+              "explain": "Split the fraction: \\(\\dfrac{s}{t} - \\dfrac{\\tfrac{1}{2}at^{2}}{t} = \\dfrac{s}{t} - \\dfrac{1}{2}at\\).",
+              "work": "\\(u = \\dfrac{s}{t} - \\dfrac{1}{2}at\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6b-q5b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Given the formula\n\\[v^{2} = u^{2} + 2as\\]\nMake \\(a\\) the subject.",
+          "figure": {
+            "svg": "fig:76a30b14b4"
+          },
+          "options": [
+            "\\(a = v^{2} - u^{2} - 2s\\)",
+            "\\(a = \\dfrac{v^{2} - u^{2}}{2s}\\)",
+            "\\(a = \\dfrac{v^{2} + u^{2}}{2s}\\)",
+            "\\(a = 2s(v^{2} - u^{2})\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract \\(u^{2}\\), then divide by \\(2s\\).",
+          "solution": "\\(v^{2} - u^{2} = 2as\\) \\(\\Rightarrow\\) \\(a = \\dfrac{v^{2} - u^{2}}{2s}\\).",
+          "steps": [
+            {
+              "explain": "This motion formula links speeds and displacement without time.",
+              "work": "\\(v^{2} = u^{2} + 2as\\)",
+              "figure": {
+                "svg": "fig:68e96f3b78"
+              }
+            },
+            {
+              "explain": "Subtract \\(u^{2}\\) from both sides.",
+              "work": "\\(v^{2} - u^{2} = 2as\\)",
+              "figure": {
+                "svg": "fig:7a9b67c57f"
+              }
+            },
+            {
+              "explain": "Divide both sides by \\(2s\\) (assuming \\(s \\neq 0\\)).",
+              "work": "\\(\\dfrac{v^{2} - u^{2}}{2s} = a\\)"
+            },
+            {
+              "explain": "Write with \\(a\\) as the subject.",
+              "work": "\\(a = \\dfrac{v^{2} - u^{2}}{2s}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6b-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The Fahrenheit–Celsius conversion is\n\\[F = \\dfrac{9}{5}C + 32\\]\nMake \\(C\\) the subject.",
+          "figure": {
+            "svg": "fig:ef69ac899e"
+          },
+          "options": [
+            "\\(C = \\dfrac{5}{9}(F + 32)\\)",
+            "\\(C = \\dfrac{5}{9}(F - 32)\\)",
+            "\\(C = \\dfrac{9}{5}(F - 32)\\)",
+            "\\(C = \\dfrac{5F}{9} - 32\\)"
+          ],
+          "answer": 1,
+          "hint": "Subtract 32, then multiply by \\(\\dfrac{5}{9}\\).",
+          "solution": "\\(F - 32 = \\dfrac{9}{5}C\\) \\(\\Rightarrow\\) \\(C = \\dfrac{5}{9}(F - 32)\\).",
+          "steps": [
+            {
+              "explain": "Temperature conversion formula from Celsius to Fahrenheit.",
+              "work": "\\(F = \\dfrac{9}{5}C + 32\\)",
+              "figure": {
+                "svg": "fig:7b86e4a763"
+              }
+            },
+            {
+              "explain": "Subtract 32 from both sides.",
+              "work": "\\(F - 32 = \\dfrac{9}{5}C\\)",
+              "figure": {
+                "svg": "fig:b0e2bb39f3"
+              }
+            },
+            {
+              "explain": "Multiply both sides by \\(\\dfrac{5}{9}\\) (the reciprocal of \\(\\dfrac{9}{5}\\)).",
+              "work": "\\(\\dfrac{5}{9}(F - 32) = C\\)"
+            },
+            {
+              "explain": "Write with \\(C\\) as the subject.",
+              "work": "\\(C = \\dfrac{5}{9}(F - 32)\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q5d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Kinetic energy is given by\n\\[E = \\dfrac{1}{2}mv^{2}\\]\nMake \\(v\\) the subject (take the positive root).",
+          "figure": {
+            "svg": "fig:a2a13de44a"
+          },
+          "options": [
+            "\\(v = \\sqrt{\\dfrac{2E}{m}}\\)",
+            "\\(v = \\sqrt{\\dfrac{E}{2m}}\\)",
+            "\\(v = \\dfrac{2E}{m}\\)",
+            "\\(v = \\sqrt{2Em}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply by 2, divide by \\(m\\), then take the square root.",
+          "solution": "\\(2E = mv^{2}\\) \\(\\Rightarrow\\) \\(v^{2} = \\dfrac{2E}{m}\\) \\(\\Rightarrow\\) \\(v = \\sqrt{\\dfrac{2E}{m}}\\).",
+          "steps": [
+            {
+              "explain": "Kinetic energy of a mass \\(m\\) moving at speed \\(v\\).",
+              "work": "\\(E = \\dfrac{1}{2}mv^{2}\\)",
+              "figure": {
+                "svg": "fig:b2e54c3579"
+              }
+            },
+            {
+              "explain": "Multiply both sides by 2.",
+              "work": "\\(2E = mv^{2}\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(m\\).",
+              "work": "\\(v^{2} = \\dfrac{2E}{m}\\)"
+            },
+            {
+              "explain": "Take the positive square root (speed is non-negative).",
+              "work": "\\(v = \\sqrt{\\dfrac{2E}{m}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6b-q5e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simple interest is given by\n\\[I = \\dfrac{PRT}{100}\\]\nMake \\(T\\) the subject.",
+          "figure": {
+            "svg": "fig:aa5cec044b"
+          },
+          "options": [
+            "\\(T = \\dfrac{100I}{PR}\\)",
+            "\\(T = \\dfrac{I}{100PR}\\)",
+            "\\(T = 100I - PR\\)",
+            "\\(T = \\dfrac{PR}{100I}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply by 100, then divide by \\(PR\\).",
+          "solution": "\\(100I = PRT\\) \\(\\Rightarrow\\) \\(T = \\dfrac{100I}{PR}\\).",
+          "steps": [
+            {
+              "explain": "Simple interest \\(I\\) depends on principal \\(P\\), rate \\(R\\)% and time \\(T\\).",
+              "work": "\\(I = \\dfrac{PRT}{100}\\)",
+              "figure": {
+                "svg": "fig:3ef94cd6ca"
+              }
+            },
+            {
+              "explain": "Multiply both sides by 100.",
+              "work": "\\(100I = PRT\\)",
+              "figure": {
+                "svg": "fig:d1dfeeef50"
+              }
+            },
+            {
+              "explain": "Divide both sides by \\(PR\\).",
+              "work": "\\(\\dfrac{100I}{PR} = T\\)"
+            },
+            {
+              "explain": "Write with \\(T\\) as the subject.",
+              "work": "\\(T = \\dfrac{100I}{PR}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q5f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The surface area of a rectangular prism is\n\\[S = 2(lw + lh + hw)\\]\nMake \\(h\\) the subject.",
+          "figure": {
+            "svg": "fig:db3df127bd"
+          },
+          "options": [
+            "\\(h = \\dfrac{S - 2lw}{2(l + w)}\\)",
+            "\\(h = \\dfrac{S}{2(l + w)} - lw\\)",
+            "\\(h = \\dfrac{S - lw}{l + w}\\)",
+            "\\(h = \\dfrac{S}{2lw} - l - w\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand, isolate terms with \\(h\\), then factor \\(h\\).",
+          "solution": "\\(\\dfrac{S}{2} = lw + h(l + w)\\) \\(\\Rightarrow\\) \\(h(l + w) = \\dfrac{S}{2} - lw\\) \\(\\Rightarrow\\) \\(h = \\dfrac{S - 2lw}{2(l + w)}\\).",
+          "steps": [
+            {
+              "explain": "Total surface area of a rectangular box with dimensions \\(l\\), \\(w\\), \\(h\\).",
+              "work": "\\(S = 2(lw + lh + hw)\\)",
+              "figure": {
+                "svg": "fig:0852c074b3"
+              }
+            },
+            {
+              "explain": "Divide by 2, then expand and group the terms that contain \\(h\\).",
+              "work": "\\(\\dfrac{S}{2} = lw + h(l + w)\\)"
+            },
+            {
+              "explain": "Subtract \\(lw\\) from both sides.",
+              "work": "\\(\\dfrac{S}{2} - lw = h(l + w)\\)"
+            },
+            {
+              "explain": "Divide by \\((l + w)\\) and rewrite the left side with common denominator 2: \\(\\dfrac{S - 2lw}{2(l + w)}\\).",
+              "work": "\\(h = \\dfrac{S - 2lw}{2(l + w)}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6b-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Make \\(x\\) the subject of the formula:\n\\[y = \\sqrt{\\dfrac{x}{a}}\\]",
+          "figure": {
+            "svg": "fig:3bb8b0b427"
+          },
+          "options": [
+            "\\(x = ay\\)",
+            "\\(x = ay^{2}\\)",
+            "\\(x = \\dfrac{y^{2}}{a}\\)",
+            "\\(x = a^{2}y\\)"
+          ],
+          "answer": 1,
+          "hint": "Square both sides, then multiply by \\(a\\).",
+          "solution": "\\(y^{2} = \\dfrac{x}{a}\\) \\(\\Rightarrow\\) \\(x = ay^{2}\\).",
+          "steps": [
+            {
+              "explain": "Given formula with a square root.",
+              "work": "\\(y = \\sqrt{\\dfrac{x}{a}}\\)"
+            },
+            {
+              "explain": "Square both sides to remove the square root.",
+              "work": "\\(y^{2} = \\dfrac{x}{a}\\)",
+              "figure": {
+                "svg": "fig:f99372c667"
+              }
+            },
+            {
+              "explain": "Multiply both sides by \\(a\\).",
+              "work": "\\(ay^{2} = x\\)"
+            },
+            {
+              "explain": "Write with \\(x\\) as the subject.",
+              "work": "\\(x = ay^{2}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "By Pythagoras,\n\\[c^{2} = a^{2} + b^{2}\\]\nMake \\(a\\) the subject (take the positive root).",
+          "figure": {
+            "svg": "fig:14c697ce38"
+          },
+          "options": [
+            "\\(a = c - b\\)",
+            "\\(a = \\sqrt{c^{2} + b^{2}}\\)",
+            "\\(a = \\sqrt{c^{2} - b^{2}}\\)",
+            "\\(a = c^{2} - b^{2}\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract \\(b^{2}\\), then take the square root.",
+          "solution": "\\(a^{2} = c^{2} - b^{2}\\) \\(\\Rightarrow\\) \\(a = \\sqrt{c^{2} - b^{2}}\\).",
+          "steps": [
+            {
+              "explain": "In a right-angled triangle, the square of the hypotenuse equals the sum of the squares of the other two sides.",
+              "work": "\\(c^{2} = a^{2} + b^{2}\\)",
+              "figure": {
+                "svg": "fig:27e541ae99"
+              }
+            },
+            {
+              "explain": "Subtract \\(b^{2}\\) from both sides.",
+              "work": "\\(c^{2} - b^{2} = a^{2}\\)",
+              "figure": {
+                "svg": "fig:04278d4e45"
+              }
+            },
+            {
+              "explain": "Take the positive square root (length is positive).",
+              "work": "\\(a = \\sqrt{c^{2} - b^{2}}\\)"
+            },
+            {
+              "explain": "Final form with \\(a\\) as the subject.",
+              "work": "\\(a = \\sqrt{c^{2} - b^{2}}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y9-6b-q6c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The period of a simple pendulum is\n\\[T = 2\\pi\\sqrt{\\dfrac{l}{g}}\\]\nMake \\(l\\) the subject.",
+          "figure": {
+            "svg": "fig:c069d45d89"
+          },
+          "options": [
+            "\\(l = \\dfrac{Tg}{2\\pi}\\)",
+            "\\(l = \\dfrac{T^{2}g}{4\\pi^{2}}\\)",
+            "\\(l = \\dfrac{T^{2}g}{2\\pi}\\)",
+            "\\(l = 4\\pi^{2}T^{2}g\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide by \\(2\\pi\\), square both sides, then multiply by \\(g\\).",
+          "solution": "\\(\\dfrac{T}{2\\pi} = \\sqrt{\\dfrac{l}{g}}\\) \\(\\Rightarrow\\) \\(\\dfrac{T^{2}}{4\\pi^{2}} = \\dfrac{l}{g}\\) \\(\\Rightarrow\\) \\(l = \\dfrac{T^{2}g}{4\\pi^{2}}\\).",
+          "steps": [
+            {
+              "explain": "Period \\(T\\) depends on length \\(l\\) and gravity \\(g\\).",
+              "work": "\\(T = 2\\pi\\sqrt{\\dfrac{l}{g}}\\)",
+              "figure": {
+                "svg": "fig:8af6ecd2aa"
+              }
+            },
+            {
+              "explain": "Divide both sides by \\(2\\pi\\).",
+              "work": "\\(\\dfrac{T}{2\\pi} = \\sqrt{\\dfrac{l}{g}}\\)"
+            },
+            {
+              "explain": "Square both sides.",
+              "work": "\\(\\dfrac{T^{2}}{4\\pi^{2}} = \\dfrac{l}{g}\\)"
+            },
+            {
+              "explain": "Multiply both sides by \\(g\\).",
+              "work": "\\(l = \\dfrac{T^{2}g}{4\\pi^{2}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-6b-q6d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Make \\(x\\) the subject of the formula:\n\\[y = \\dfrac{ax + b}{cx + d}\\]",
+          "figure": {
+            "svg": "fig:0edd5cb59e"
+          },
+          "options": [
+            "\\(x = \\dfrac{b - dy}{cy - a}\\)",
+            "\\(x = \\dfrac{dy - b}{a - cy}\\)",
+            "\\(x = \\dfrac{b - dy}{a - cy}\\)",
+            "\\(x = \\dfrac{ay - b}{c - dy}\\)"
+          ],
+          "answer": 1,
+          "hint": "Cross-multiply, collect terms with \\(x\\) on one side, then factor.",
+          "solution": "\\(y(cx + d) = ax + b\\) \\(\\Rightarrow\\) \\(cxy - ax = b - dy\\) \\(\\Rightarrow\\) \\(x(cy - a) = b - dy\\) \\(\\Rightarrow\\) \\(x = \\dfrac{dy - b}{a - cy}\\).",
+          "steps": [
+            {
+              "explain": "Start with a linear fractional formula. Multiply both sides by the denominator.",
+              "work": "\\(y(cx + d) = ax + b\\)",
+              "figure": {
+                "svg": "fig:ac666d2d56"
+              }
+            },
+            {
+              "explain": "Expand the left-hand side.",
+              "work": "\\(cxy + dy = ax + b\\)"
+            },
+            {
+              "explain": "Collect terms with \\(x\\) on the left and constants on the right: subtract \\(ax\\) and subtract \\(dy\\).",
+              "work": "\\(cxy - ax = b - dy\\)\\n\\(x(cy - a) = b - dy\\)",
+              "figure": {
+                "svg": "fig:af9a27348e"
+              }
+            },
+            {
+              "explain": "Divide by \\((cy - a)\\). Multiplying numerator and denominator by \\(-1\\) gives the equivalent form \\(\\dfrac{dy - b}{a - cy}\\).",
+              "work": "\\(x = \\dfrac{dy - b}{a - cy}\\)",
+              "figure": {
+                "svg": "fig:f7202821f5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "y9-6b-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The area of a circle is \\(A = \\pi r^{2}\\).\nRearrange to make \\(r\\) the subject, then find \\(r\\) when \\(A = 50\\) (use \\(\\pi = 3.14\\), correct to 2 decimal places).",
+          "figure": {
+            "svg": "fig:0f5c1bacdd"
+          },
+          "options": [
+            "\\(r = 3.99\\)",
+            "\\(r = 4.00\\)",
+            "\\(r = 7.98\\)",
+            "\\(r = 15.92\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(r = \\sqrt{A/\\pi} = \\sqrt{50/3.14}\\).",
+          "solution": "\\(r = \\sqrt{\\dfrac{50}{3.14}} = \\sqrt{15.9236\\ldots} \\approx 3.99\\).",
+          "steps": [
+            {
+              "explain": "Rearrange: divide by \\(\\pi\\) and take the positive square root.",
+              "work": "\\(r = \\sqrt{\\dfrac{A}{\\pi}}\\)",
+              "figure": {
+                "svg": "fig:f043fb7ef3"
+              }
+            },
+            {
+              "explain": "Substitute \\(A = 50\\) and \\(\\pi = 3.14\\).",
+              "work": "\\(r = \\sqrt{\\dfrac{50}{3.14}}\\)"
+            },
+            {
+              "explain": "Compute the quotient first.",
+              "work": "\\(\\dfrac{50}{3.14} \\approx 15.9236\\)"
+            },
+            {
+              "explain": "Take the square root and round to 2 decimal places.",
+              "work": "\\(r \\approx \\sqrt{15.9236} \\approx 3.99\\)"
+            }
+          ],
+          "timeLimit": 100
+        },
+        {
+          "id": "y9-6b-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using \\(v = u + at\\), make \\(t\\) the subject and find \\(t\\) when \\(v = 30\\), \\(u = 10\\), \\(a = 4\\).",
+          "figure": {
+            "svg": "fig:76a30b14b4"
+          },
+          "options": [
+            "\\(t = 5\\)",
+            "\\(t = 10\\)",
+            "\\(t = 2.5\\)",
+            "\\(t = 40\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(t = \\dfrac{v - u}{a} = \\dfrac{30 - 10}{4}\\).",
+          "solution": "\\(t = \\dfrac{30 - 10}{4} = \\dfrac{20}{4} = 5\\).",
+          "steps": [
+            {
+              "explain": "Rearrange for time: subtract \\(u\\), divide by \\(a\\).",
+              "work": "\\(t = \\dfrac{v - u}{a}\\)",
+              "figure": {
+                "svg": "fig:68e96f3b78"
+              }
+            },
+            {
+              "explain": "Substitute the given values.",
+              "work": "\\(t = \\dfrac{30 - 10}{4}\\)"
+            },
+            {
+              "explain": "Simplify the numerator.",
+              "work": "\\(t = \\dfrac{20}{4}\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(t = 5\\)"
+            }
+          ],
+          "timeLimit": 100
+        },
+        {
+          "id": "y9-6b-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using \\(F = \\dfrac{9}{5}C + 32\\), make \\(C\\) the subject and convert \\(F = 86\\) to Celsius.",
+          "figure": {
+            "svg": "fig:ef69ac899e"
+          },
+          "options": [
+            "\\(C = 30\\)",
+            "\\(C = 48.9\\)",
+            "\\(C = 186.8\\)",
+            "\\(C = 20\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(C = \\dfrac{5}{9}(F - 32) = \\dfrac{5}{9}(86 - 32)\\).",
+          "solution": "\\(C = \\dfrac{5}{9}(86 - 32) = \\dfrac{5}{9} \\times 54 = 30\\).",
+          "steps": [
+            {
+              "explain": "Rearranged conversion formula.",
+              "work": "\\(C = \\dfrac{5}{9}(F - 32)\\)",
+              "figure": {
+                "svg": "fig:7b86e4a763"
+              }
+            },
+            {
+              "explain": "Substitute \\(F = 86\\).",
+              "work": "\\(C = \\dfrac{5}{9}(86 - 32)\\)"
+            },
+            {
+              "explain": "Simplify inside the brackets.",
+              "work": "\\(C = \\dfrac{5}{9} \\times 54\\)"
+            },
+            {
+              "explain": "Multiply: \\(5 \\times 6 = 30\\) (since \\(54/9 = 6\\)).",
+              "work": "\\(C = 30\\)"
+            }
+          ],
+          "timeLimit": 100
+        },
+        {
+          "id": "y9-6b-q7d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A triangle has area \\(A = 48\\text{ cm}^{2}\\) and base \\(b = 12\\text{ cm}\\).\nUsing \\(A = \\dfrac{1}{2}bh\\), find the height \\(h\\).",
+          "figure": {
+            "svg": "fig:97e2ee49bd"
+          },
+          "options": [
+            "\\(h = 4\\text{ cm}\\)",
+            "\\(h = 8\\text{ cm}\\)",
+            "\\(h = 6\\text{ cm}\\)",
+            "\\(h = 2\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(h = \\dfrac{2A}{b} = \\dfrac{2 \\times 48}{12}\\).",
+          "solution": "\\(h = \\dfrac{2 \\times 48}{12} = \\dfrac{96}{12} = 8\\text{ cm}\\).",
+          "steps": [
+            {
+              "explain": "Rearrange the triangle area formula for height.",
+              "work": "\\(h = \\dfrac{2A}{b}\\)",
+              "figure": {
+                "svg": "fig:97cd504712"
+              }
+            },
+            {
+              "explain": "Substitute \\(A = 48\\) and \\(b = 12\\).",
+              "work": "\\(h = \\dfrac{2 \\times 48}{12}\\)"
+            },
+            {
+              "explain": "Compute the numerator.",
+              "work": "\\(h = \\dfrac{96}{12}\\)"
+            },
+            {
+              "explain": "Divide to find the height.",
+              "work": "\\(h = 8\\text{ cm}\\)"
+            }
+          ]
+        },
+        {
+          "id": "sg2022-q1m",
+          "type": "mc",
+          "stem": "Make \\(x\\) the subject of the formula \\(y=6x-5\\).",
+          "options": [
+            "\\(x=\\dfrac{y+5}{6}\\)",
+            "\\(x=\\dfrac{y}{6}+5\\)",
+            "\\(x=\\dfrac{y-5}{6}\\)",
+            "\\(x=6y-5\\)"
+          ],
+          "answer": 0,
+          "hint": "Add \\(5\\) to both sides first, then divide by \\(6\\).",
+          "steps": [
+            {
+              "explain": "Add \\(5\\) to both sides to isolate the term containing \\(x\\).",
+              "work": "\\(y+5=6x\\)"
+            },
+            {
+              "explain": "Divide both sides by \\(6\\).",
+              "work": "\\(x=\\dfrac{y+5}{6}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "sg2022-q3d",
+          "type": "mc",
+          "stem": "If \\(bx+5d=ax+2c\\), then \\(x\\) is equal to which of the expressions below?",
+          "options": [
+            "\\(\\dfrac{5d-(a+2c)}{b}\\)",
+            "\\(\\sqrt{\\dfrac{2c-5d}{b-a}}\\)",
+            "\\(\\dfrac{5d-2c}{a-b}\\)",
+            "\\(\\dfrac{a+2c-5d}{b}\\)"
+          ],
+          "answer": 2,
+          "hint": "Collect all the \\(x\\) terms on one side, then factorise and divide.",
+          "steps": [
+            {
+              "explain": "Move all \\(x\\) terms to one side and all other terms to the other side.",
+              "work": "\\(bx+5d=ax+2c \\Rightarrow bx-ax=2c-5d\\)"
+            },
+            {
+              "explain": "Factorise \\(x\\) out on the left.",
+              "work": "\\(x(b-a)=2c-5d\\)"
+            },
+            {
+              "explain": "Divide both sides by \\((b-a)\\), then multiply top and bottom by \\(-1\\) to match the answer format.",
+              "work": "\\(x=\\dfrac{2c-5d}{b-a}=\\dfrac{5d-2c}{a-b}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "sg2022-q8a",
+          "type": "mc",
+          "stem": "Find an expression for \\(b\\) given \\(\\dfrac{2a+1}{b}+\\dfrac1c=\\dfrac13\\). Express your answer as a single fraction.",
+          "options": [
+            "\\(b=\\dfrac{(2a+1)(c-3)}{3c}\\)",
+            "\\(b=\\dfrac{3c(2a+1)}{3-c}\\)",
+            "\\(b=\\dfrac{c-3}{3c(2a+1)}\\)",
+            "\\(b=\\dfrac{3c(2a+1)}{c-3}\\)"
+          ],
+          "answer": 3,
+          "hint": "Isolate the term containing \\(b\\) first, then take the reciprocal of both sides.",
+          "steps": [
+            {
+              "explain": "Subtract \\(\\dfrac1c\\) from both sides to isolate the term containing \\(b\\).",
+              "work": "\\(\\dfrac{2a+1}{b}=\\dfrac13-\\dfrac1c\\)"
+            },
+            {
+              "explain": "Combine the right-hand side into a single fraction over the common denominator \\(3c\\).",
+              "work": "\\(\\dfrac13-\\dfrac1c=\\dfrac{c-3}{3c}\\)"
+            },
+            {
+              "explain": "So \\(\\dfrac{2a+1}{b}=\\dfrac{c-3}{3c}\\). Take the reciprocal of both sides, then multiply both sides by \\((2a+1)\\).",
+              "work": "\\(\\dfrac{b}{2a+1}=\\dfrac{3c}{c-3} \\Rightarrow b=\\dfrac{3c(2a+1)}{c-3}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "willoughby2019-s3-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Change the subject of the formula to \\(r\\): \\(V = \\pi r^2 h\\)",
+          "options": [
+            "\\(r = \\sqrt{\\frac{V}{\\pi h}}\\)",
+            "\\(r = \\frac{V}{\\pi h}\\)",
+            "\\(r = \\sqrt{V\\pi h}\\)",
+            "\\(r = \\frac{\\pi h}{V}\\)"
+          ],
+          "answer": 0,
+          "hint": "Isolate r² first by dividing, then take the square root.",
+          "steps": [
+            {
+              "explain": "Divide both sides by πh to isolate r².",
+              "work": "\\(r^2 = \\frac{V}{\\pi h}\\)"
+            },
+            {
+              "explain": "Take the square root of both sides.",
+              "work": "\\(r = \\sqrt{\\frac{V}{\\pi h}}\\)"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "source": "Willoughby GHS Year 9 Yearly 2019",
+            "reviewStatus": "approved",
+            "origin": "teacher",
+            "examPaper": "willoughby-2019-y9"
+          }
+        },
+        {
+          "id": "y9-killara-24-t4-pb2-q4",
+          "type": "mc",
+          "stem": "Consider the following equation: \\(s = \\frac{a}{1 - r}\\). Change the subject to \\(r\\).",
+          "options": [
+            "\\(r = \\frac{a}{s - a}\\)",
+            "\\(r = \\frac{a - s}{s}\\)",
+            "\\(r = \\frac{s}{s - a}\\)",
+            "\\(r = \\frac{s - a}{s}\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Multiply both sides by \\((1 - r)\\).",
+              "work": "s(1 - r) = a"
+            },
+            {
+              "explain": "Divide both sides by \\(s\\).",
+              "work": "1 - r = \\frac{a}{s}"
+            },
+            {
+              "explain": "Rearrange to solve for \\(r\\).",
+              "work": "r = 1 - \\frac{a}{s}"
+            },
+            {
+              "explain": "Combine into a single fraction.",
+              "work": "r = \\frac{s - a}{s}"
+            }
+          ],
+          "meta": {
+            "source": "Killara High School Year 9 Task 4 2024",
+            "school": "Killara High School",
+            "examType": "Task 4",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t3q2",
+          "type": "mc",
+          "stem": "Change the subject of the formula to $r$: $V = \\pi r^2 h$",
+          "options": [
+            "$r = \\sqrt{V - \\pi h}$",
+            "$r = \\frac{\\sqrt{V}}{\\pi h}$",
+            "$r = \\sqrt{\\frac{V}{\\pi h}}$",
+            "$r = \\frac{V}{\\pi h}$"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Starting from $V = \\pi r^2 h$, isolate $r^2$ by dividing both sides by $\\pi h$.",
+              "work": "\\(\\frac{V}{\\pi h} = \\frac{\\pi r^2 h}{\\pi h} = r^2\\)"
+            },
+            {
+              "explain": "So $r^2 = \\dfrac{V}{\\pi h}$. Take the square root of both sides to isolate $r$ — since $r$ is a physical radius, take the positive root only.",
+              "work": "\\(r = \\sqrt{\\frac{V}{\\pi h}}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-6b"
+          }
+        }
+      ]
+    }
+  ]
+}

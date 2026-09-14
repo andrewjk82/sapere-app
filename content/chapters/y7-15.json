@@ -1,0 +1,1533 @@
+{
+  "chapterId": "y7-15",
+  "title": "Chapter 15: Equations",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "y7-15a",
+      "code": "15A",
+      "title": "An introduction to equations",
+      "questions": [
+        {
+          "id": "hghs-y7-t4-2024-eq-1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve for \\(x\\): \\(x + 5 = 2\\)",
+          "options": [
+            "\\(-3\\)",
+            "\\(3\\)",
+            "\\(7\\)",
+            "\\(-7\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Subtract 5 from both sides to isolate \\(x\\).",
+              "work": "x + 5 = 2 \\implies x = 2 - 5"
+            },
+            {
+              "explain": "Pitfall: adding 5 to 2 instead of subtracting (giving \\(x=7\\)) undoes the wrong operation — always do the OPPOSITE of what was done to \\(x\\).",
+              "work": "\\text{Answer: } x = -3"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2024-eq-1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve for \\(m\\): \\(6m = -4\\)",
+          "options": [
+            "\\(-\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(-24\\)",
+            "\\(-\\dfrac{3}{2}\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Divide both sides by 6.",
+              "work": "m = \\dfrac{-4}{6}"
+            },
+            {
+              "explain": "Simplify the fraction by dividing top and bottom by their HCF, 2. Pitfall: multiplying instead of dividing gives \\(-24\\) (option C); dropping the negative sign gives \\(\\dfrac{2}{3}\\) (option B).",
+              "work": "\\text{Answer: } m = -\\dfrac{2}{3}"
+            }
+          ],
+          "timeLimit": 60,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
+          }
+        },
+        {
+          "id": "2IpTJMcqvA45xGjph4gl",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation: \\(8n = 96\\)\\( to find the number of students, \\)n, in each van.",
+          "options": [
+            "\\(n = 12\\)",
+            "\\(n = 14\\)",
+            "\\(n = 10\\)",
+            "\\(n = 16\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solve the simple multiplication equation:</p><p>\\(8n = 96\\)</p><p>Divide both sides by 8:</p><p>\\(n = \\frac{96}{8} = 12\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solve the simple multiplication equation:</p><p>\\(8n = 96\\)</p><p>Divide both sides by 8:</p><p>\\(n = \\frac{96}{8} = 12\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(n = 12\\)"
+            }
+          ]
+        },
+        {
+          "id": "3VCQGRNFnpRFvQPtBACD",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Sam has 12 bags of marbles, each containing \\(x\\) marbles. He tidies his room and finds 18 more marbles under his bed. He knows that he now has a total of 378 marbles. Write an equation representing this statement.",
+          "options": [
+            "\\(12x + 18 = 378\\)",
+            "\\(18x + 12 = 378\\)",
+            "\\(12x - 18 = 378\\)",
+            "\\(12(x + 18) = 378\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Translating the word problem into algebra:</p><ul><li>\"12 bags containing \\(x\\) marbles\" \\(implies 12x\\).</li><li>\"18 loose marbles\" \\(implies +18\\).</li><li>\"Total of 378 marbles\" \\(implies = 378\\).</li></ul><p>Therefore, the equation is:</p><p>\\(12x + 18 = 378\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Read the word problem carefully and translate each phrase into algebraic terms.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Translating the word problem into algebra:</p><ul><li>\"12 bags containing \\(x\\) marbles\" \\(\\Rightarrow 12x\\).</li><li>\"18 loose marbles\" \\(\\Rightarrow +18\\).</li><li>\"Total of 378 marbles\" \\(\\Rightarrow = 378\\).</li></ul><p>Therefore, the equation is:</p><p>\\(12x + 18 = 378\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(12x + 18 = 378\\)"
+            }
+          ]
+        },
+        {
+          "id": "5OLajbrcWcsk0za1LO6f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A school runs vans, each of which carries \\(n\\) students. There are eight vans and they hold a total of 96 students. Write an equation representing this statement.",
+          "options": [
+            "\\(8n = 96\\)",
+            "\\(\\frac{n}{8} = 96\\)",
+            "\\(n + 8 = 96\\)",
+            "\\(8 + n = 96\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Translating to algebra:</p><ul><li>\"eight vans each carrying \\(n\\) students\" \\(implies 8n\\) students.</li><li>\"Total capacity is 96 students\" \\(implies = 96\\).</li></ul><p>Therefore, the equation is:</p><p>\\(8n = 96\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Translating to algebra:</p><ul><li>\"eight vans each carrying \\(n\\) students\" \\(implies 8n\\) students.</li><li>\"Total capacity is 96 students\" \\(implies = 96\\).</li></ul><p>Therefore, the equation is:</p><p>\\(8n = 96\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(8n = 96\\)"
+            }
+          ]
+        },
+        {
+          "id": "8SOK2UZ5GrHXp53WJ2hb",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(19 - x = 12\\)",
+          "options": [
+            "\\(x = 7\\)",
+            "\\(x = 31\\)",
+            "\\(x = 6\\)",
+            "\\(x = 8\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 19 - 12 = 7\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 19 - 12 = 7\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 19 - 12 = 7\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 7\\)"
+            }
+          ]
+        },
+        {
+          "id": "9iQj7JXO1W9cduNrYGrx",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(y = x - 7\\), what is the value of \\(x\\) when \\(y = 25\\)?",
+          "options": [
+            "\\(x = 32\\)",
+            "\\(x = 18\\)",
+            "\\(x = 28\\)",
+            "\\(x = 35\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Substitute \\(y = 25\\) into the formula \\(y = x - 7\\)\\(:</p><p>\\(25 = x - 7\\)</p><p>Add 7 to both sides to solve for \\)x\\(:</p><p>\\(x = 25 + 7 = 32\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Substitute the given value of \\(y\\) into the equation and solve for \\(x\\).</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Substitute \\(y = 25\\) into the formula \\(y = x - 7\\):</p><p>\\(25 = x - 7\\)</p><p>Add 7 to both sides:</p><p>\\(x = 25 + 7 = 32\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 32\\)"
+            }
+          ]
+        },
+        {
+          "id": "53BWnLQL10wmGZabBsET",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If \\(y = 4x\\), what is the value of \\(x\\) when \\(y = 48\\)?",
+          "options": [
+            "\\(x = 12\\)",
+            "\\(x = 14\\)",
+            "\\(x = 192\\)",
+            "\\(x = 44\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>We substitute \\(y = 48\\) into the formula \\(y = 4x\\)\\(:</p><p>\\(48 = 4x\\)</p><p>Solve for \\)x\\( by dividing both sides by 4:</p><p>\\(x = \\frac{48}{4} = 12\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Substitute the given value of \\(y\\) into the equation and solve for \\(x\\).</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Substitute \\(y = 48\\) into the formula \\(y = 4x\\):</p><p>\\(48 = 4x\\)</p><p>Divide both sides by 4:</p><p>\\(x = \\frac{48}{4} = 12\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 12\\)"
+            }
+          ]
+        },
+        {
+          "id": "aCHI13yJZ3NxMn8SN6eY",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(x - 6 = 13\\)",
+          "options": [
+            "\\(x = 19\\)",
+            "\\(x = 7\\)",
+            "\\(x = 18\\)",
+            "\\(x = 20\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 13 + 6 = 19\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 13 + 6 = 19\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 13 + 6 = 19\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 19\\)"
+            }
+          ]
+        },
+        {
+          "id": "aJFUv8nvEsnyLjlMriZp",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(6a = 42\\)",
+          "options": [
+            "\\(a = 7\\)",
+            "\\(a = 36\\)",
+            "\\(a = 8\\)",
+            "\\(a = 9\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = \\frac{42}{6} = 7\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = \\frac{42}{6} = 7\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = \\frac{42}{6} = 7\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(a = 7\\)"
+            }
+          ]
+        },
+        {
+          "id": "BI1MdAQzMepevH0HVfLF",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation: \\(12x + 18 = 378\\)\\( to find the number of marbles, \\)x, in each bag.",
+          "options": [
+            "\\(x = 30\\)",
+            "\\(x = 32\\)",
+            "\\(x = 25\\)",
+            "\\(x = 28\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Let's solve step-by-step:</p><p>\\(12x + 18 = 378\\)</p><p>Subtract 18 from both sides:</p><p>\\(12x = 378 - 18\\)</p><p>\\(12x = 360\\)</p><p>Divide both sides by 12:</p><p>\\(x = \\frac{360}{12} = 30\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Let's solve step-by-step:</p><p>\\(12x + 18 = 378\\)</p><p>Subtract 18 from both sides:</p><p>\\(12x = 378 - 18\\)</p><p>\\(12x = 360\\)</p><p>Divide both sides by 12:</p><p>\\(x = \\frac{360}{12} = 30\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 30\\)"
+            }
+          ]
+        },
+        {
+          "id": "BTgE3kJnYeqhcePOGfnU",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(\\frac{a}{6} = 8\\)",
+          "options": [
+            "\\(a = 48\\)",
+            "\\(a = 14\\)",
+            "\\(a = 2\\)",
+            "\\(a = 24\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 8 \\times 6 = 48\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 8 \\times 6 = 48\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 8 \\times 6 = 48\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(a = 48\\)"
+            }
+          ]
+        },
+        {
+          "id": "d4HEUCYsbxHHV59fpbb3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(3a + 12 = 39\\)",
+          "options": [
+            "\\(a = 9\\)",
+            "\\(a = 27\\)",
+            "\\(a = 8\\)",
+            "\\(a = 10\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(3a = 39 - 12 = 27 \\implies a = \\frac{27}{3} = 9\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(3a = 39 - 12 = 27 \\implies a = \\frac{27}{3} = 9\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(a = 9\\)"
+            }
+          ]
+        },
+        {
+          "id": "DfbUBeHJqtcAHFzvoVIP",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Oliver has seven packets of chocolates, each of which holds \\(c\\) chocolates. He also has nine chocolates that are not in a packet. He has a total of 149 chocolates. Write an equation representing this statement.",
+          "options": [
+            "\\(7c + 9 = 149\\)",
+            "\\(9c + 7 = 149\\)",
+            "\\(7c - 9 = 149\\)",
+            "\\(7(c + 9) = 149\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Translating to algebra:</p><ul><li>\"seven packets each containing \\(c\\) chocolates\" \\(implies 7c\\) chocolates.</li><li>\"nine loose chocolates\" \\(implies +9\\).</li><li>\"Total of 149 chocolates\" \\(implies = 149\\).</li></ul><p>Therefore, the equation is:</p><p>\\(7c + 9 = 149\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Translating to algebra:</p><ul><li>\"seven packets each containing \\(c\\) chocolates\" \\(implies 7c\\) chocolates.</li><li>\"nine loose chocolates\" \\(implies +9\\).</li><li>\"Total of 149 chocolates\" \\(implies = 149\\).</li></ul><p>Therefore, the equation is:</p><p>\\(7c + 9 = 149\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(7c + 9 = 149\\)"
+            }
+          ]
+        },
+        {
+          "id": "dVGdBjSWMJxIyRthk8sh",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(\\frac{x}{6} = 15\\)",
+          "options": [
+            "\\(x = 90\\)",
+            "\\(x = 21\\)",
+            "\\(x = 9\\)",
+            "\\(x = 60\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 15 \\times 6 = 90\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 15 \\times 6 = 90\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 15 \\times 6 = 90\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 90\\)"
+            }
+          ]
+        },
+        {
+          "id": "e2aDYBd0NCFZQa3miUMf",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(3a = 45\\)",
+          "options": [
+            "\\(a = 15\\)",
+            "\\(a = 42\\)",
+            "\\(a = 12\\)",
+            "\\(a = 13\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = \\frac{45}{3} = 15\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = \\frac{45}{3} = 15\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = \\frac{45}{3} = 15\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(a = 15\\)"
+            }
+          ]
+        },
+        {
+          "id": "H7iO9lnLF6TpTlO0cK4r",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(17 - a = 9\\)",
+          "options": [
+            "\\(a = 8\\)",
+            "\\(a = 26\\)",
+            "\\(a = 7\\)",
+            "\\(a = 9\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 17 - 9 = 8\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 17 - 9 = 8\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 17 - 9 = 8\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(a = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "J8d1z8Wp2rfSSQ6a3n5D",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(\\frac{x}{5} = 7\\)",
+          "options": [
+            "\\(x = 35\\)",
+            "\\(x = 12\\)",
+            "\\(x = 2\\)",
+            "\\(x = 40\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 7 \\times 5 = 35\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 7 \\times 5 = 35\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 7 \\times 5 = 35\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 35\\)"
+            }
+          ]
+        },
+        {
+          "id": "JIJTdIucFOw9E6GKV3Lm",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the pencil case equation: \\(4x + 6 = 46\\)\\( to find the value of \\)x.",
+          "options": [
+            "\\(x = 10\\)",
+            "\\(x = 13\\)",
+            "\\(x = 40\\)",
+            "\\(x = 8\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Let's solve the equation step-by-step:</p><p>\\(4x + 6 = 46\\)</p><p>Subtract 6 from both sides:</p><p>\\(4x = 46 - 6\\)</p><p>\\(4x = 40\\)</p><p>Divide both sides by 4:</p><p>\\(x = \\frac{40}{4}\\)</p><p>\\(x = 10\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Let's solve the equation step-by-step:</p><p>\\(4x + 6 = 46\\)</p><p>Subtract 6 from both sides:</p><p>\\(4x = 46 - 6\\)</p><p>\\(4x = 40\\)</p><p>Divide both sides by 4:</p><p>\\(x = \\frac{40}{4}\\)</p><p>\\(x = 10\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 10\\)"
+            }
+          ]
+        },
+        {
+          "id": "KetTkUfuvKeN93KLVMEO",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(y = 3x + 2\\), what is the value of \\(x\\) when \\(y = 26\\)?",
+          "options": [
+            "\\(x = 8\\)",
+            "\\(x = 6\\)",
+            "\\(x = 9\\)",
+            "\\(x = 10\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Substitute \\(y = 26\\) into the formula \\(y = 3x + 2\\)\\(:</p><p>\\(26 = 3x + 2\\)</p><p>Subtract 2 from both sides:</p><p>\\(26 - 2 = 3x\\)</p><p>\\(24 = 3x\\)</p><p>Divide both sides by 3:</p><p>\\(x = \\frac{24}{3} = 8\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Substitute \\(y = 26\\) into the formula \\(y = 3x + 2\\)\\(:</p><p>\\(26 = 3x + 2\\)</p><p>Subtract 2 from both sides:</p><p>\\(26 - 2 = 3x\\)</p><p>\\(24 = 3x\\)</p><p>Divide both sides by 3:</p><p>\\(x = \\frac{24}{3} = 8\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "laxL6uvQXfpyueRnkKTR",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Lisa has 28 stickers and gives \\(x\\) stickers to her sister. She counts the remaining stickers and discovers she now has 19. Write an equation representing this statement.",
+          "options": [
+            "\\(28 - x = 19\\)",
+            "\\(x - 28 = 19\\)",
+            "\\(28 + x = 19\\)",
+            "\\(19 - x = 28\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Translating to algebra:</p><ul><li>\"Lisa starts with 28 stickers\" \\(implies 28\\).</li><li>\"gives \\(x\\) stickers away\" \\(implies -x\\).</li><li>\"has 19 remaining\" \\(implies = 19\\).</li></ul><p>Therefore, the equation is:</p><p>\\(28 - x = 19\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Translating to algebra:</p><ul><li>\"Lisa starts with 28 stickers\" \\(implies 28\\).</li><li>\"gives \\(x\\) stickers away\" \\(implies -x\\).</li><li>\"has 19 remaining\" \\(implies = 19\\).</li></ul><p>Therefore, the equation is:</p><p>\\(28 - x = 19\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(28 - x = 19\\)"
+            }
+          ]
+        },
+        {
+          "id": "Lq3zJMVHxyqVyv7Ksdk9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(x - 15 = 8\\)",
+          "options": [
+            "\\(x = 23\\)",
+            "\\(x = 7\\)",
+            "\\(x = 22\\)",
+            "\\(x = 15\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 8 + 15 = 23\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 8 + 15 = 23\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 8 + 15 = 23\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 23\\)"
+            }
+          ]
+        },
+        {
+          "id": "LVZZ6rgnL7EMWjQ2REhN",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(2x + 8 = 17\\)",
+          "options": [
+            "\\(x = 4.5\\)",
+            "\\(x = 9\\)",
+            "\\(x = 5\\)",
+            "\\(x = 4\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(2x = 17 - 8 = 9 \\implies x = \\frac{9}{2} = 4.5\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(2x = 17 - 8 = 9 \\implies x = \\frac{9}{2} = 4.5\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 4.5\\)"
+            }
+          ]
+        },
+        {
+          "id": "LZVPB8hfCSax5clmnymP",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(3x = 12\\)",
+          "options": [
+            "\\(x = 4\\)",
+            "\\(x = 9\\)",
+            "\\(x = 15\\)",
+            "\\(x = 36\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = \\frac{12}{3} = 4\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = \\frac{12}{3} = 4\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = \\frac{12}{3} = 4\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 4\\)"
+            }
+          ]
+        },
+        {
+          "id": "N4UgC3pQhgw9dnWXDUPL",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Four pencil cases each have \\(x\\) pencils in them, and there are six loose pencils. In total there are 46 pencils. How many pencils are in each pencil case?",
+          "options": [
+            "\\(10 pencils\\)",
+            "\\(8 pencils\\)",
+            "\\(12 pencils\\)",
+            "\\(6 pencils\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>We established the equation: \\(4x + 6 = 46\\)\\(.</p><p>Solving for \\)x\\( gives \\)\\(x = 10\\)\\(. Since \\)x represents the number of pencils in each case, there are exactly 10 pencils in each pencil case.</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>We established the equation: \\(4x + 6 = 46\\)\\(.</p><p>Solving for \\)x\\( gives \\)\\(x = 10\\)\\(. Since \\)x represents the number of pencils in each case, there are exactly 10 pencils in each pencil case.</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(10 pencils\\)"
+            }
+          ]
+        },
+        {
+          "id": "OH9jrrJqtV3bACCmjdoP",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation: \\(28 - x = 19\\)\\( to find the number of stickers, \\)x, Lisa gave to her sister.",
+          "options": [
+            "\\(x = 9\\)",
+            "\\(x = 7\\)",
+            "\\(x = 8\\)",
+            "\\(x = 10\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Let's solve step-by-step:</p><p>\\(28 - x = 19\\)</p><p>Add \\)x\\( to both sides:</p><p>\\(28 = 19 + x\\)</p><p>Subtract 19 from both sides:</p><p>\\(x = 28 - 19\\)</p><p>\\(x = 9\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Let's solve step-by-step:</p><p>\\(28 - x = 19\\)</p><p>Add \\)x\\( to both sides:</p><p>\\(28 = 19 + x\\)</p><p>Subtract 19 from both sides:</p><p>\\(x = 28 - 19\\)</p><p>\\(x = 9\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 9\\)"
+            }
+          ]
+        },
+        {
+          "id": "OtCfYNpC5AlghSr3ZOuv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation: \\(7c + 9 = 149\\)\\( to find the number of chocolates, \\)c, in each packet.",
+          "options": [
+            "\\(c = 20\\)",
+            "\\(c = 22\\)",
+            "\\(c = 18\\)",
+            "\\(c = 25\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Let's solve step-by-step:</p><p>\\(7c + 9 = 149\\)</p><p>Subtract 9 from both sides:</p><p>\\(7c = 149 - 9\\)</p><p>\\(7c = 140\\)</p><p>Divide both sides by 7:</p><p>\\(c = \\frac{140}{7} = 20\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Let's solve step-by-step:</p><p>\\(7c + 9 = 149\\)</p><p>Subtract 9 from both sides:</p><p>\\(7c = 149 - 9\\)</p><p>\\(7c = 140\\)</p><p>Divide both sides by 7:</p><p>\\(c = \\frac{140}{7} = 20\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(c = 20\\)"
+            }
+          ]
+        },
+        {
+          "id": "oVRVa4IsueChizcAYhTE",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(x + 4 = 12\\)",
+          "options": [
+            "\\(x = 8\\)",
+            "\\(x = 16\\)",
+            "\\(x = 6\\)",
+            "\\(x = 12\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 12 - 4 = 8\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 12 - 4 = 8\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 12 - 4 = 8\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "PBZwvCliom7COu19Em3P",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(24 - 3x = 0\\)",
+          "options": [
+            "\\(x = 8\\)",
+            "\\(x = 24\\)",
+            "\\(x = 12\\)",
+            "\\(x = 6\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(3x = 24 \\implies x = \\frac{24}{3} = 8\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(3x = 24 \\implies x = \\frac{24}{3} = 8\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(3x = 24 \\implies x = \\frac{24}{3} = 8\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 8\\)"
+            }
+          ]
+        },
+        {
+          "id": "s3cKrBXejP3JJjU3kuI7",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Four pencil cases each have \\(x\\) pencils in them, and there are six loose pencils. In total there are 46 pencils. Write down an equation representing this scenario.",
+          "options": [
+            "\\(4x + 6 = 46\\)",
+            "\\(4x - 6 = 46\\)",
+            "\\(6x + 4 = 46\\)",
+            "\\(4(x + 6) = 46\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Let's construct the equation step-by-step from the description:</p><ul><li>\"Four pencil cases each have \\(x\\) pencils in them\" \\(implies 4x\\) pencils.</li><li>\"six loose pencils\" \\(implies +6\\) pencils.</li><li>\"In total there are 46 pencils\" \\(implies = 46\\).</li></ul><p>Combining these parts, the algebraic equation is:</p><p>\\(4x + 6 = 46\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Let's construct the equation step-by-step from the description:</p><ul><li>\"Four pencil cases each have \\(x\\) pencils in them\" \\(implies 4x\\) pencils.</li><li>\"six loose pencils\" \\(implies +6\\) pencils.</li><li>\"In total there are 46 pencils\" \\(implies = 46\\).</li></ul><p>Combining these parts, the algebraic equation is:</p><p>\\(4x + 6 = 46\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(4x + 6 = 46\\)"
+            }
+          ]
+        },
+        {
+          "id": "sCGnvXkvb0bGY05fI3HS",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation: \\(18a + 25 = 475\\)\\( to find the number of chocolates, \\)a, in each box.",
+          "options": [
+            "\\(a = 25\\)",
+            "\\(a = 20\\)",
+            "\\(a = 30\\)",
+            "\\(a = 15\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Let's solve step-by-step:</p><p>\\(18a + 25 = 475\\)</p><p>Subtract 25 from both sides:</p><p>\\(18a = 475 - 25\\)</p><p>\\(18a = 450\\)</p><p>Divide both sides by 18:</p><p>\\(a = \\frac{450}{18} = 25\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Let's solve step-by-step:</p><p>\\(18a + 25 = 475\\)</p><p>Subtract 25 from both sides:</p><p>\\(18a = 475 - 25\\)</p><p>\\(18a = 450\\)</p><p>Divide both sides by 18:</p><p>\\(a = \\frac{450}{18} = 25\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(a = 25\\)"
+            }
+          ]
+        },
+        {
+          "id": "T3NtD58407B7BgAH7RpZ",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(4a + 9 = 25\\)",
+          "options": [
+            "\\(a = 4\\)",
+            "\\(a = 16\\)",
+            "\\(a = 5\\)",
+            "\\(a = 6\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(4a = 25 - 9 = 16 \\implies a = \\frac{16}{4} = 4\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(4a = 25 - 9 = 16 \\implies a = \\frac{16}{4} = 4\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(a = 4\\)"
+            }
+          ]
+        },
+        {
+          "id": "voGOJBhTqmIn4qx8v8P9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(\\frac{x}{4} = 8\\)",
+          "options": [
+            "\\(x = 32\\)",
+            "\\(x = 2\\)",
+            "\\(x = 12\\)",
+            "\\(x = 16\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 8 \\times 4 = 32\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 8 \\times 4 = 32\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 8 \\times 4 = 32\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 32\\)"
+            }
+          ]
+        },
+        {
+          "id": "Vrf7zt9QS8bzBPvn7ZOi",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(x - 7 = 11\\)",
+          "options": [
+            "\\(x = 18\\)",
+            "\\(x = 4\\)",
+            "\\(x = 17\\)",
+            "\\(x = 21\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 11 + 7 = 18\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 11 + 7 = 18\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(x = 11 + 7 = 18\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 18\\)"
+            }
+          ]
+        },
+        {
+          "id": "w2TypDtp8FHuNKmgTddg",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Eighteen boxes of chocolates each have \\(a\\) chocolates in them. There are also 25 loose chocolates. In total there are 475 chocolates. Write an equation representing this statement.",
+          "options": [
+            "\\(18a + 25 = 475\\)",
+            "\\(25a + 18 = 475\\)",
+            "\\(18a - 25 = 475\\)",
+            "\\(18(a + 25) = 475\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Let's translate the sentence to algebra:</p><ul><li>\"Eighteen boxes each containing \\(a\\) chocolates\" \\(implies 18a\\).</li><li>\"25 loose chocolates\" \\(implies +25\\).</li><li>\"In total there are 475 chocolates\" \\(implies = 475\\).</li></ul><p>Hence, the equation is:</p><p>\\(18a + 25 = 475\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Let's translate the sentence to algebra:</p><ul><li>\"Eighteen boxes each containing \\(a\\) chocolates\" \\(implies 18a\\).</li><li>\"25 loose chocolates\" \\(implies +25\\).</li><li>\"In total there are 475 chocolates\" \\(implies = 475\\).</li></ul><p>Hence, the equation is:</p><p>\\(18a + 25 = 475\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(18a + 25 = 475\\)"
+            }
+          ]
+        },
+        {
+          "id": "xgpYOOOPI7aPItaOOAoy",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(a + 5 = 14\\)",
+          "options": [
+            "\\(a = 9\\)",
+            "\\(a = 19\\)",
+            "\\(a = 8\\)",
+            "\\(a = 10\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 14 - 5 = 9\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 14 - 5 = 9\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 14 - 5 = 9\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(a = 9\\)"
+            }
+          ]
+        },
+        {
+          "id": "Yc7A5PQsDMIUAoEUAtaJ",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(3x + 4 = 19\\)",
+          "options": [
+            "\\(x = 5\\)",
+            "\\(x = 6\\)",
+            "\\(x = 15\\)",
+            "\\(x = 8\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(3x = 19 - 4 = 15 \\implies x = \\frac{15}{3} = 5\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>We are asked to evaluate the expression step-by-step. First, identify the operations and any necessary common denominators or conversion method.</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation:</p><p>\\(3x = 19 - 4 = 15 \\implies x = \\frac{15}{3} = 5\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(x = 5\\)"
+            }
+          ]
+        },
+        {
+          "id": "ZdaITMrR6QhOzndvTFos",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve the equation mentally: \\(a - 8 = 21\\)",
+          "options": [
+            "\\(a = 29\\)",
+            "\\(a = 13\\)",
+            "\\(a = 28\\)",
+            "\\(a = 30\\)"
+          ],
+          "answer": 0,
+          "solution": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 21 + 8 = 29\\)</p></div>",
+          "steps": [
+            {
+              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 21 + 8 = 29\\)</p></div>"
+            },
+            {
+              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
+              "work": "<div style=\"text-align: left;\"><p>Solving the equation for \\(a\\):</p><p>\\(a = 21 + 8 = 29\\)</p></div>"
+            },
+            {
+              "explain": "State the final simplified answer and match it to the correct option.",
+              "work": "\\(a = 29\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y7-15b",
+      "code": "15B",
+      "title": "Equivalent equations",
+      "questions": [
+        {
+          "id": "hghs-y7-t4-2021-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Equation A: \\(x - 3 = 10\\) is equivalent to Equation B: \\(4x - 12 = 40\\) because:",
+          "options": [
+            "both sides of equation A have been multiplied by 4 to give equation B.",
+            "both sides of equation A have been divided by 4 to give equation B.",
+            "both sides of equation A have had 15 subtracted to give equation B.",
+            "the two equations are not equivalent"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Multiply every term of equation A by 4 and see if it matches equation B.",
+              "work": "4(x-3) = 4(10) \\implies 4x - 12 = 40"
+            },
+            {
+              "explain": "Compare the result to equation B — they match exactly.",
+              "work": "4x - 12 = 40 \\;\\checkmark"
+            },
+            {
+              "explain": "Pitfall: assuming the equations are unrelated (option D) just because they look different — always test a transformation (×, ÷, +, −) on the whole equation before concluding they are not equivalent.",
+              "work": "\\text{Answer: both sides of A multiplied by 4}"
+            }
+          ],
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y7-15c",
+      "code": "15C",
+      "title": "Solving equations involving more than one step",
+      "questions": [
+        {
+          "id": "hghs-y7-t4-2021-q10",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "When solving the equation \\(\\dfrac{21+4x}{3} = 18\\), which step should be performed last?",
+          "options": [
+            "Dividing both sides by 4",
+            "Adding 21 to both sides",
+            "Subtracting 21 from both sides",
+            "Multiplying both sides by 3"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "To undo the operations in the correct order, work from the outside in: first undo the division by 3, then the addition of 21, then the multiplication by 4.",
+              "work": "\\dfrac{21+4x}{3} = 18 \\;\\xrightarrow{\\times 3}\\; 21+4x = 54"
+            },
+            {
+              "explain": "Next undo the \"+21\" by subtracting 21 from both sides.",
+              "work": "21+4x = 54 \\;\\xrightarrow{-21}\\; 4x = 33"
+            },
+            {
+              "explain": "The last step left to undo the \"\\(\\times 4\\)\" is to divide both sides by 4. Pitfall: doing \"÷4\" too early (before removing the ÷3 and +21) breaks the order of operations and gives a wrong value of x.",
+              "work": "\\text{Last step: } \\div 4 \\text{ on both sides}"
+            }
+          ],
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q11",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The solution to the equation \\(2x - 5 = 1\\) is:",
+          "options": [
+            "-2",
+            "3",
+            "2",
+            "-3"
+          ],
+          "answer": 1,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Add 5 to both sides to isolate the term with \\(x\\).",
+              "work": "2x - 5 = 1 \\implies 2x = 6"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "x = 3"
+            },
+            {
+              "explain": "Pitfall: a sign slip when moving the \"-5\" (e.g. writing \\(2x = 1 - 5 = -4\\)) leads to \\(x = -2\\) instead — always add the opposite operation to both sides.",
+              "work": "\\text{Answer: } x = 3"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q22a-iii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation: \\(\\dfrac{2x-1}{3} = 4\\)",
+          "options": [
+            "\\(6\\dfrac{1}{2}\\)",
+            "\\(6\\)",
+            "\\(5\\dfrac{1}{2}\\)",
+            "\\(13\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by 3 first to clear the fraction.",
+          "solution": "x = 6\\dfrac{1}{2}",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 3 to remove the denominator.",
+              "work": "\\(\\dfrac{2x-1}{3} = 4 \\implies 2x - 1 = 12\\)"
+            },
+            {
+              "explain": "Add 1 to both sides. A common mistake is ignoring the \\(-1\\) and solving \\(2x=12\\) directly (giving 6), or subtracting instead of adding (giving 2x=11).",
+              "work": "\\(2x = 13\\)"
+            },
+            {
+              "explain": "Divide both sides by 2. Forgetting this final division leaves the wrong answer of 13.",
+              "work": "\\(x = \\dfrac{13}{2} = 6\\dfrac{1}{2}\\)"
+            }
+          ],
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2021-q22a-iv",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve the equation: \\(2x^2 = 8\\)",
+          "options": [
+            "\\(x = 2\\)",
+            "\\(x = \\pm 2\\)",
+            "\\(x = \\pm 4\\)",
+            "\\(x = \\pm\\sqrt{8}\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide both sides by 2 first, then take the square root of both sides — remember there are two roots.",
+          "solution": "x = \\pm 2",
+          "steps": [
+            {
+              "explain": "Divide both sides by 2 to isolate \\(x^2\\).",
+              "work": "2x^2 = 8 \\implies x^2 = 4"
+            },
+            {
+              "explain": "Take the square root of both sides.",
+              "work": "x = \\pm\\sqrt{4}"
+            },
+            {
+              "explain": "Pitfall: giving only the positive root (\\(x=2\\), option A) forgets that squaring a negative number also gives a positive result — \\((-2)^2 = 4\\) too, so both roots must be stated.",
+              "work": "\\text{Answer: } x = \\pm 2"
+            },
+            {
+              "explain": "Other pitfalls: taking the square root of both sides of the ORIGINAL equation before dividing by 2 gives the un-simplified \\(x=\\pm\\sqrt{8}\\) (option D); simply halving 8 without ever square-rooting gives \\(x=\\pm4\\) (option C).",
+              "work": "2x^2 = 8 \\implies x = \\pm\\sqrt{8} \\quad \\text{(divide-by-2 step skipped, not simplified)}"
+            }
+          ],
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2024-eq-1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve for \\(p\\): \\(3p + 5 = 11\\)",
+          "options": [
+            "\\(2\\)",
+            "\\(6\\)",
+            "\\(\\dfrac{16}{3}\\)",
+            "\\(-2\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Subtract 5 from both sides.",
+              "work": "3p + 5 = 11 \\implies 3p = 6"
+            },
+            {
+              "explain": "Divide both sides by 3. Pitfall: forgetting the final division leaves \\(p=6\\) (option B); adding 5 instead of subtracting gives \\(3p=16 \\implies p=\\dfrac{16}{3}\\) (option C).",
+              "work": "\\text{Answer: } p = 2"
+            }
+          ],
+          "timeLimit": 90,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2024-eq-1d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve for \\(h\\): \\(\\dfrac{h-3}{4} = 7\\)",
+          "options": [
+            "\\(31\\)",
+            "\\(10\\)",
+            "\\(25\\)",
+            "\\(40\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 4 to clear the denominator.",
+              "work": "\\dfrac{h-3}{4} = 7 \\implies h - 3 = 28"
+            },
+            {
+              "explain": "Add 3 to both sides. Pitfall: multiplying by 4 but forgetting the \"-3\" (only clearing the fraction, giving \\(h=10\\), option B) or subtracting 3 instead of adding (giving \\(h=25\\), option C).",
+              "work": "\\text{Answer: } h = 31"
+            }
+          ],
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2024-eq-1f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve for \\(z\\): \\(z^2 = \\dfrac{81}{25}\\)",
+          "options": [
+            "\\(\\pm\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{9}{5}\\)",
+            "\\(\\dfrac{81}{25}\\)",
+            "\\(\\pm\\dfrac{81}{625}\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Take the square root of both sides. Since \\(z\\) could be positive or negative, keep both roots.",
+              "work": "z = \\pm\\sqrt{\\dfrac{81}{25}}"
+            },
+            {
+              "explain": "Square-root the numerator and denominator separately. Pitfall: giving only the positive root (option B) forgets \\(\\left(-\\dfrac{9}{5}\\right)^2 = \\dfrac{81}{25}\\) too; forgetting to take the square root at all leaves \\(\\dfrac{81}{25}\\) (option C).",
+              "work": "\\text{Answer: } z = \\pm\\dfrac{9}{5}"
+            }
+          ],
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y7-15d",
+      "code": "15D",
+      "title": "Equations with negative solutions",
+      "questions": [
+        {
+          "id": "hghs-y7-t4-2021-q22b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A rectangle (not to scale) has one side labelled 10 and the OPPOSITE side labelled \\(4-2x\\). Since opposite sides of a rectangle are equal, write an equation and find the value of \\(x\\).",
+          "options": [
+            "3",
+            "7",
+            "-3",
+            "-7"
+          ],
+          "answer": 2,
+          "hint": "Opposite sides of a rectangle are equal in length, so set the two expressions equal to each other: \\(4-2x=10\\).",
+          "solution": "x = -3",
+          "steps": [
+            {
+              "explain": "Since it is a rectangle, opposite sides are equal in length. Set the two expressions for the pair of opposite sides equal to each other.",
+              "work": "4 - 2x = 10"
+            },
+            {
+              "explain": "Subtract 4 from both sides to isolate the \\(x\\) term.",
+              "work": "-2x = 6"
+            },
+            {
+              "explain": "Divide both sides by \\(-2\\). Pitfall: dividing 6 by \\(-2\\) but forgetting to keep the negative sign (giving \\(x=3\\), option A, instead of \\(x=-3\\)) — a negative divided by a negative only gives a positive when BOTH numbers are negative; here only the divisor is.",
+              "work": "x = \\dfrac{6}{-2} = -3"
+            },
+            {
+              "explain": "Other pitfalls: moving the \"4\" to the wrong side (adding instead of subtracting) gives \\(-2x=14 \\implies x=-7\\) (option D); flipping which side is subtracted from which gives \\(x=7\\) (option B).",
+              "work": "\\text{Answer: } x = -3"
+            }
+          ],
+          "timeLimit": 150,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y7-15e",
+      "code": "15E",
+      "title": "Expanding brackets and solving equations",
+      "questions": [
+        {
+          "id": "hghs-y7-t4-2021-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The solution to the equation \\(5 - 2(x-3) = 6\\) is:",
+          "options": [
+            "\\(\\dfrac{5}{2}\\)",
+            "\\(-\\dfrac{5}{2}\\)",
+            "\\(-\\dfrac{7}{2}\\)",
+            "\\(\\dfrac{7}{2}\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Expand the bracket first, being careful with the negative sign in front of it.",
+              "work": "5 - 2(x-3) = 6 \\implies 5 - 2x + 6 = 6"
+            },
+            {
+              "explain": "Simplify the left side, then isolate the \\(x\\)-term.",
+              "work": "11 - 2x = 6 \\implies -2x = -5"
+            },
+            {
+              "explain": "Divide both sides by \\(-2\\). Pitfall: expanding \\(-2(x-3)\\) as \\(-2x - 6\\) instead of \\(-2x + 6\\) (sign error on the second term) leads to \\(x = -\\dfrac{7}{2}\\) instead of the correct answer.",
+              "work": "x = \\dfrac{-5}{-2} = \\dfrac{5}{2}"
+            }
+          ],
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y7-15g",
+      "code": "15G",
+      "title": "Equations with pronumerals on both sides",
+      "questions": [
+        {
+          "id": "hghs-y7-t4-2021-q22a-ii",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve the equation: \\(3(x+12) = 5 - 2x\\)",
+          "options": [
+            "\\(x = -1\\dfrac{2}{5}\\)",
+            "\\(x = -31\\)",
+            "\\(x = -6\\dfrac{1}{5}\\)",
+            "\\(x = 8\\dfrac{1}{5}\\)"
+          ],
+          "answer": 2,
+          "hint": "Expand the bracket, collect the x terms on one side and the numbers on the other.",
+          "solution": "x = -6\\dfrac{1}{5}",
+          "steps": [
+            {
+              "explain": "Expand the bracket on the left side.",
+              "work": "3(x+12) = 5 - 2x \\implies 3x + 36 = 5 - 2x"
+            },
+            {
+              "explain": "Add \\(2x\\) to both sides to collect all the \\(x\\) terms on the left, then subtract 36 from both sides to isolate the \\(x\\) term.",
+              "work": "3x + 2x = 5 - 36 \\implies 5x = -31"
+            },
+            {
+              "explain": "Divide both sides by 5. Pitfall: forgetting to move BOTH the \\(x\\) term and the constant (e.g. only moving one of them) leaves an equation that still has terms on both sides.",
+              "work": "x = \\dfrac{-31}{5} = -6\\dfrac{1}{5}"
+            },
+            {
+              "explain": "Other pitfalls: expanding the bracket incorrectly as \\(3x+12\\) (only multiplying the first term, forgetting \\(3\\times12=36\\)) leads to \\(x=-1\\dfrac{2}{5}\\) (option A); stopping after \\(5x=-31\\) without dividing gives \\(x=-31\\) (option B); a sign slip moving 36 across (adding instead of subtracting) gives \\(x=8\\dfrac{1}{5}\\) (option D).",
+              "work": "\\text{Answer: } x = -6\\dfrac{1}{5}"
+            }
+          ],
+          "timeLimit": 150,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        },
+        {
+          "id": "hghs-y7-t4-2024-eq-1e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve for \\(x\\): \\(4x - 2 = 7x + 9\\)",
+          "options": [
+            "\\(-3\\dfrac{2}{3}\\)",
+            "\\(3\\dfrac{2}{3}\\)",
+            "\\(-\\dfrac{7}{3}\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Collect the \\(x\\) terms on one side by subtracting \\(7x\\) from both sides, and the constants on the other by adding 2 to both sides.",
+              "work": "4x - 7x = 9 + 2"
+            },
+            {
+              "explain": "Simplify both sides.",
+              "work": "-3x = 11"
+            },
+            {
+              "explain": "Divide both sides by \\(-3\\). Pitfall: a sign slip when moving the \"-2\" (subtracting 2 instead of adding) gives \\(-3x=7 \\implies x=-\\dfrac{7}{3}\\) (option C); adding the \\(x\\) terms instead of subtracting gives \\(11x=11 \\implies x=1\\) (option D).",
+              "work": "\\text{Answer: } x = \\dfrac{11}{-3} = -3\\dfrac{2}{3}"
+            }
+          ],
+          "timeLimit": 150,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y7-15h",
+      "code": "15H",
+      "title": "Solving problems using equations",
+      "questions": [
+        {
+          "id": "hghs-y7-t4-2021-q14",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Alison is \\(a\\) years old and Brendan is \\(b\\) years old. In 10 years' time their combined age will be 40. An equation that represents this scenario is:",
+          "options": [
+            "\\(a + b + 10 = 40\\)",
+            "\\(a + b + 20 = 40\\)",
+            "\\(10(a+b) = 40\\)",
+            "\\(10(a-b) = 40\\)"
+          ],
+          "answer": 1,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "In 10 years, Alison will be \\(a+10\\) years old and Brendan will be \\(b+10\\) years old.",
+              "work": "\\text{Alison: } a+10, \\quad \\text{Brendan: } b+10"
+            },
+            {
+              "explain": "Their combined age in 10 years is the sum of these two expressions, which equals 40.",
+              "work": "(a+10) + (b+10) = 40"
+            },
+            {
+              "explain": "Simplify by collecting the constant terms. Pitfall: adding only one lot of 10 (giving \\(a+b+10=40\\)) forgets that BOTH people age 10 years, not just their combined total.",
+              "work": "a + b + 20 = 40"
+            }
+          ],
+          "timeLimit": 150,
+          "meta": {
+            "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2184 @@
+{
+  "chapterId": "y11-1",
+  "title": "",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "y11-1c",
+      "code": "",
+      "title": "Algebraic Fractions",
+      "questions": [
+        {
+          "id": "y11-1c-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x}{x}\\\\)",
+          "options": [
+            "\\\\(1\\\\)",
+            "\\\\(x\\\\)",
+            "\\\\(-1\\\\)",
+            "\\\\(\\frac{1}{x}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(1\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x}{x}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(1\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(1\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{2 x}{x}\\\\)",
+          "options": [
+            "\\\\(2 x\\\\)",
+            "\\\\(\\frac{2}{x}\\\\)",
+            "\\\\(-2\\\\)",
+            "\\\\(2\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(2\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{2 x}{x}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(2\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(2\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x}{2 x}\\\\)",
+          "options": [
+            "\\\\(\\frac{x}{2}\\\\)",
+            "\\\\(\\frac{1}{2 x}\\\\)",
+            "\\\\(\\frac{1}{2}\\\\)",
+            "\\\\(- \\frac{1}{2}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{1}{2}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x}{2 x}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{1}{2}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{1}{2}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q1d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{a}{a^{2}}\\\\)",
+          "options": [
+            "\\\\(\\frac{1}{a}\\\\)",
+            "\\\\(\\frac{x}{a}\\\\)",
+            "\\\\(- \\frac{1}{a}\\\\)",
+            "\\\\(a\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{1}{a}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{a}{a^{2}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{1}{a}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{1}{a}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q1e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{3 x^{2}}{9 x y}\\\\)",
+          "options": [
+            "\\\\(\\frac{x^{2}}{3 y}\\\\)",
+            "\\\\(\\frac{x}{3 y}\\\\)",
+            "\\\\(\\frac{1}{3 y}\\\\)",
+            "\\\\(- \\frac{x}{3 y}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x}{3 y}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{3 x^{2}}{9 x y}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x}{3 y}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x}{3 y}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q1f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{12 a b}{4 a^{2} b}\\\\)",
+          "options": [
+            "\\\\(- \\frac{3}{a}\\\\)",
+            "\\\\(\\frac{3 x}{a}\\\\)",
+            "\\\\(\\frac{3}{a x}\\\\)",
+            "\\\\(\\frac{3}{a}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{3}{a}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{12 a b}{4 a^{2} b}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{3}{a}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{3}{a}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(x \\frac{1}{3} \\cdot 3 \\frac{1}{x}\\\\)",
+          "options": [
+            "\\\\(x\\\\)",
+            "\\\\(-1\\\\)",
+            "\\\\(\\frac{1}{x}\\\\)",
+            "\\\\(1\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(1\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(x \\frac{1}{3} \\cdot 3 \\frac{1}{x}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(1\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(1\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{a}{4 \\frac{a}{2}}\\\\)",
+          "options": [
+            "\\\\(\\frac{x}{2}\\\\)",
+            "\\\\(\\frac{1}{2}\\\\)",
+            "\\\\(\\frac{1}{2 x}\\\\)",
+            "\\\\(- \\frac{1}{2}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{1}{2}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{a}{4 \\frac{a}{2}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{1}{2}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{1}{2}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(x^{2} \\cdot 3 \\frac{1}{x}\\\\)",
+          "options": [
+            "\\\\(3 x\\\\)",
+            "\\\\(3\\\\)",
+            "\\\\(3 x^{2}\\\\)",
+            "\\\\(- 3 x\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(3 x\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(x^{2} \\cdot 3 \\frac{1}{x}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(3 x\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(3 x\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q2d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(1 \\frac{1}{2 b} b^{2}\\\\)",
+          "options": [
+            "\\\\(\\frac{b}{2}\\\\)",
+            "\\\\(\\frac{b}{2 x}\\\\)",
+            "\\\\(\\frac{b x}{2}\\\\)",
+            "\\\\(- \\frac{b}{2}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{b}{2}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(1 \\frac{1}{2 b} b^{2}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{b}{2}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{b}{2}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q2e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(3 x \\frac{1}{4} \\cdot 2 \\frac{1}{x^{2}}\\\\)",
+          "options": [
+            "\\\\(\\frac{3}{2 x}\\\\)",
+            "\\\\(- \\frac{3}{2 x}\\\\)",
+            "\\\\(\\frac{3}{2 x^{2}}\\\\)",
+            "\\\\(\\frac{3}{2}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{3}{2 x}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(3 x \\frac{1}{4} \\cdot 2 \\frac{1}{x^{2}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{3}{2 x}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{3}{2 x}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q2f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{5 a}{10 a}\\\\)",
+          "options": [
+            "\\\\(\\frac{1}{2 x}\\\\)",
+            "\\\\(- \\frac{1}{2}\\\\)",
+            "\\\\(\\frac{x}{2}\\\\)",
+            "\\\\(\\frac{1}{2}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{1}{2}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{5 a}{10 a}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{1}{2}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{1}{2}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q2g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(2 a b \\frac{1}{3} \\cdot 6 \\frac{1}{a b^{2}}\\\\)",
+          "options": [
+            "\\\\(\\frac{4}{b x}\\\\)",
+            "\\\\(\\frac{4}{b}\\\\)",
+            "\\\\(\\frac{4 x}{b}\\\\)",
+            "\\\\(- \\frac{4}{b}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{4}{b}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(2 a b \\frac{1}{3} \\cdot 6 \\frac{1}{a b^{2}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{4}{b}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{4}{b}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q2h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{8 a b}{5 \\frac{4 a b}{15}}\\\\)",
+          "options": [
+            "\\\\(-6\\\\)",
+            "\\\\(6\\\\)",
+            "\\\\(6 x\\\\)",
+            "\\\\(\\frac{6}{x}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(6\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{8 a b}{5 \\frac{4 a b}{15}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(6\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(6\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x}{2} + x\\\\)",
+          "options": [
+            "\\\\(\\frac{3}{2}\\\\)",
+            "\\\\(- \\frac{3 x}{2}\\\\)",
+            "\\\\(\\frac{3 x^{2}}{2}\\\\)",
+            "\\\\(\\frac{3 x}{2}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{3 x}{2}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x}{2} + x\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{3 x}{2}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{3 x}{2}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{y}{4} + \\frac{y}{2}\\\\)",
+          "options": [
+            "\\\\(\\frac{3 x y}{4}\\\\)",
+            "\\\\(\\frac{3 y}{4}\\\\)",
+            "\\\\(- \\frac{3 y}{4}\\\\)",
+            "\\\\(\\frac{3 y}{4 x}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{3 y}{4}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{y}{4} + \\frac{y}{2}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{3 y}{4}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{3 y}{4}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(- \\frac{m}{9} + \\frac{m}{3}\\\\)",
+          "options": [
+            "\\\\(\\frac{2 m x}{9}\\\\)",
+            "\\\\(\\frac{2 m}{9 x}\\\\)",
+            "\\\\(- \\frac{2 m}{9}\\\\)",
+            "\\\\(\\frac{2 m}{9}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{2 m}{9}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(- \\frac{m}{9} + \\frac{m}{3}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{2 m}{9}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{2 m}{9}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q3d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{n}{5} + \\frac{n}{2}\\\\)",
+          "options": [
+            "\\\\(- \\frac{7 n}{10}\\\\)",
+            "\\\\(\\frac{7 n}{10}\\\\)",
+            "\\\\(\\frac{7 n x}{10}\\\\)",
+            "\\\\(\\frac{7 n}{10 x}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{7 n}{10}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{n}{5} + \\frac{n}{2}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{7 n}{10}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{7 n}{10}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q3e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x}{8} - \\frac{y}{12}\\\\)",
+          "options": [
+            "\\\\(- \\frac{x}{8} - \\frac{y}{12}\\\\)",
+            "\\\\(\\frac{x}{8} - \\frac{y}{12}\\\\)",
+            "\\\\(\\frac{x}{8} + \\frac{y}{12}\\\\)",
+            "\\\\(- \\frac{x}{8} + \\frac{y}{12}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x}{8} - \\frac{y}{12}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x}{8} - \\frac{y}{12}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{3 x - 2 y}{24}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x}{8} - \\frac{y}{12}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q3f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{2 a}{3} + \\frac{3 a}{2}\\\\)",
+          "options": [
+            "\\\\(\\frac{13 a x}{6}\\\\)",
+            "\\\\(\\frac{13 a}{6 x}\\\\)",
+            "\\\\(\\frac{13 a}{6}\\\\)",
+            "\\\\(- \\frac{13 a}{6}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{13 a}{6}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{2 a}{3} + \\frac{3 a}{2}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{13 a}{6}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{13 a}{6}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q3g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(- \\frac{19 b}{30} + \\frac{7 b}{10}\\\\)",
+          "options": [
+            "\\\\(\\frac{b}{15}\\\\)",
+            "\\\\(\\frac{b}{15 x}\\\\)",
+            "\\\\(\\frac{b x}{15}\\\\)",
+            "\\\\(- \\frac{b}{15}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{b}{15}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(- \\frac{19 b}{30} + \\frac{7 b}{10}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{b}{15}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{b}{15}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q3h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(- \\frac{x y}{12} + \\frac{x y}{30}\\\\)",
+          "options": [
+            "\\\\(- \\frac{x^{2} y}{20}\\\\)",
+            "\\\\(\\frac{x y}{20}\\\\)",
+            "\\\\(- \\frac{x y}{20}\\\\)",
+            "\\\\(- \\frac{y}{20}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(- \\frac{x y}{20}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(- \\frac{x y}{12} + \\frac{x y}{30}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(- \\frac{x y}{20}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(- \\frac{x y}{20}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(1 \\frac{1}{a} + 1 \\frac{1}{a}\\\\)",
+          "options": [
+            "\\\\(\\frac{2}{a x}\\\\)",
+            "\\\\(- \\frac{2}{a}\\\\)",
+            "\\\\(\\frac{2 x}{a}\\\\)",
+            "\\\\(\\frac{2}{a}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{2}{a}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(1 \\frac{1}{a} + 1 \\frac{1}{a}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{2}{a}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{2}{a}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(- \\frac{2}{x} + 1 \\frac{1}{x}\\\\)",
+          "options": [
+            "\\\\(- \\frac{1}{x}\\\\)",
+            "\\\\(- \\frac{1}{x^{2}}\\\\)",
+            "\\\\(\\frac{1}{x}\\\\)",
+            "\\\\(-1\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(- \\frac{1}{x}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(- \\frac{2}{x} + 1 \\frac{1}{x}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(- \\frac{1}{x}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(- \\frac{1}{x}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(1 \\frac{1}{2 a} + 1 \\frac{1}{a}\\\\)",
+          "options": [
+            "\\\\(- \\frac{3}{2 a}\\\\)",
+            "\\\\(\\frac{3}{2 a}\\\\)",
+            "\\\\(\\frac{3}{2 a x}\\\\)",
+            "\\\\(\\frac{3 x}{2 a}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{3}{2 a}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(1 \\frac{1}{2 a} + 1 \\frac{1}{a}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{3}{2 a}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{3}{2 a}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(- \\frac{1}{3 x} + 1 \\frac{1}{2 x}\\\\)",
+          "options": [
+            "\\\\(\\frac{1}{6 x^{2}}\\\\)",
+            "\\\\(\\frac{1}{6}\\\\)",
+            "\\\\(- \\frac{1}{6 x}\\\\)",
+            "\\\\(\\frac{1}{6 x}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{1}{6 x}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(- \\frac{1}{3 x} + 1 \\frac{1}{2 x}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{1}{6 x}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{1}{6 x}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q4e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{3}{4 a} + \\frac{4}{3 a}\\\\)",
+          "options": [
+            "\\\\(\\frac{25}{12 a}\\\\)",
+            "\\\\(- \\frac{25}{12 a}\\\\)",
+            "\\\\(\\frac{25}{12 a x}\\\\)",
+            "\\\\(\\frac{25 x}{12 a}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{25}{12 a}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{3}{4 a} + \\frac{4}{3 a}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{25}{12 a}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{25}{12 a}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q4f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{5}{6 x} - 1 \\frac{1}{3 x}\\\\)",
+          "options": [
+            "\\\\(\\frac{1}{2 x}\\\\)",
+            "\\\\(\\frac{1}{2 x^{2}}\\\\)",
+            "\\\\(- \\frac{1}{2 x}\\\\)",
+            "\\\\(\\frac{1}{2}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{1}{2 x}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{5}{6 x} - 1 \\frac{1}{3 x}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{1}{2 x}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{1}{2 x}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x + 1}{2} + \\frac{x + 2}{3}\\\\)",
+          "options": [
+            "\\\\(\\frac{5 x}{6} - \\frac{7}{6}\\\\)",
+            "\\\\(\\frac{7}{6} - \\frac{5 x}{6}\\\\)",
+            "\\\\(- \\frac{5 x}{6} - \\frac{7}{6}\\\\)",
+            "\\\\(\\frac{5 x}{6} + \\frac{7}{6}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{5 x}{6} + \\frac{7}{6}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x + 1}{2} + \\frac{x + 2}{3}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{5 x + 7}{6}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{5 x}{6} + \\frac{7}{6}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{2 x + 3}{4} + \\frac{2 x - 1}{5}\\\\)",
+          "options": [
+            "\\\\(\\frac{11}{20} - \\frac{9 x}{10}\\\\)",
+            "\\\\(- \\frac{9 x}{10} - \\frac{11}{20}\\\\)",
+            "\\\\(\\frac{9 x}{10} + \\frac{11}{20}\\\\)",
+            "\\\\(\\frac{9 x}{10} - \\frac{11}{20}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{9 x}{10} + \\frac{11}{20}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{2 x + 3}{4} + \\frac{2 x - 1}{5}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{18 x + 11}{20}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{9 x}{10} + \\frac{11}{20}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x + 3}{6} + \\frac{x - 3}{12}\\\\)",
+          "options": [
+            "\\\\(\\frac{x}{4} - \\frac{1}{4}\\\\)",
+            "\\\\(- \\frac{x}{4} - \\frac{1}{4}\\\\)",
+            "\\\\(\\frac{1}{4} - \\frac{x}{4}\\\\)",
+            "\\\\(\\frac{x}{4} + \\frac{1}{4}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x}{4} + \\frac{1}{4}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x + 3}{6} + \\frac{x - 3}{12}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x + 1}{4}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x}{4} + \\frac{1}{4}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q5d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x + 2}{2} - \\frac{x + 3}{3}\\\\)",
+          "options": [
+            "\\\\(\\frac{1}{6}\\\\)",
+            "\\\\(\\frac{x^{2}}{6}\\\\)",
+            "\\\\(\\frac{x}{6}\\\\)",
+            "\\\\(- \\frac{x}{6}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x}{6}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x + 2}{2} - \\frac{x + 3}{3}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x}{6}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x}{6}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q5e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{2 x + 1}{4} - \\frac{2 x - 3}{5}\\\\)",
+          "options": [
+            "\\\\(\\frac{x}{10} - \\frac{17}{20}\\\\)",
+            "\\\\(\\frac{x}{10} + \\frac{17}{20}\\\\)",
+            "\\\\(\\frac{17}{20} - \\frac{x}{10}\\\\)",
+            "\\\\(- \\frac{x}{10} - \\frac{17}{20}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x}{10} + \\frac{17}{20}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{2 x + 1}{4} - \\frac{2 x - 3}{5}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{2 x + 17}{20}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x}{10} + \\frac{17}{20}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q5f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(- \\frac{2 x + 1}{6} + \\frac{2 x - 1}{3}\\\\)",
+          "options": [
+            "\\\\(\\frac{x}{3} + \\frac{1}{2}\\\\)",
+            "\\\\(- \\frac{x}{3} - \\frac{1}{2}\\\\)",
+            "\\\\(\\frac{x}{3} - \\frac{1}{2}\\\\)",
+            "\\\\(\\frac{1}{2} - \\frac{x}{3}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x}{3} - \\frac{1}{2}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(- \\frac{2 x + 1}{6} + \\frac{2 x - 1}{3}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{2 x - 3}{6}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x}{3} - \\frac{1}{2}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{2 p + 2 q}{p + q}\\\\)",
+          "options": [
+            "\\\\(\\frac{2}{x}\\\\)",
+            "\\\\(-2\\\\)",
+            "\\\\(2 x\\\\)",
+            "\\\\(2\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(2\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{2 p + 2 q}{p + q}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(2\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(2\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{3 t - 12}{2 t - 8}\\\\)",
+          "options": [
+            "\\\\(- \\frac{3}{2}\\\\)",
+            "\\\\(\\frac{3 x}{2}\\\\)",
+            "\\\\(\\frac{3}{2}\\\\)",
+            "\\\\(\\frac{3}{2 x}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{3}{2}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{3 t - 12}{2 t - 8}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{3}{2}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{3}{2}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x^{2} + 3 x}{3 x + 9}\\\\)",
+          "options": [
+            "\\\\(\\frac{x^{2}}{3}\\\\)",
+            "\\\\(- \\frac{x}{3}\\\\)",
+            "\\\\(\\frac{x}{3}\\\\)",
+            "\\\\(\\frac{1}{3}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x}{3}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x^{2} + 3 x}{3 x + 9}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x}{3}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x}{3}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{a}{a x + a y}\\\\)",
+          "options": [
+            "\\\\(\\frac{1}{x + y}\\\\)",
+            "\\\\(x + y\\\\)",
+            "\\\\(\\frac{x}{x + y}\\\\)",
+            "\\\\(- \\frac{1}{x + y}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{1}{x + y}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{a}{a x + a y}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{1}{x + y}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{1}{x + y}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q6e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{3 a^{2} - 6 a b}{2 a^{2} b - 4 a b^{2}}\\\\)",
+          "options": [
+            "\\\\(- \\frac{3}{2 b}\\\\)",
+            "\\\\(\\frac{3 x}{2 b}\\\\)",
+            "\\\\(\\frac{3}{2 b}\\\\)",
+            "\\\\(\\frac{3}{2 b x}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{3}{2 b}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{3 a^{2} - 6 a b}{2 a^{2} b - 4 a b^{2}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{3}{2 b}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{3}{2 b}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q6f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x^{2} + 2 x}{x^{2} - 4}\\\\)",
+          "options": [
+            "\\\\(\\frac{x^{2}}{x - 2}\\\\)",
+            "\\\\(\\frac{1}{x - 2}\\\\)",
+            "\\\\(\\frac{x}{x - 2}\\\\)",
+            "\\\\(- \\frac{x}{x - 2}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x}{x - 2}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x^{2} + 2 x}{x^{2} - 4}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x \\left(x + 2\\right)}{x^{2} - 4}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{x}{x - 2}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x}{x - 2}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q6g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{a^{2} - 9}{a^{2} + a - 12}\\\\)",
+          "options": [
+            "\\\\(\\frac{a + 3}{a + 4}\\\\)",
+            "\\\\(\\frac{x \\left(a + 3\\right)}{a + 4}\\\\)",
+            "\\\\(- \\frac{a + 3}{a + 4}\\\\)",
+            "\\\\(\\frac{- a - 3}{a + 4}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{a + 3}{a + 4}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{a^{2} - 9}{a^{2} + a - 12}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{a + 3}{a + 4}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{a + 3}{a + 4}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q6h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x^{2} + 2 x + 1}{x^{2} - 1}\\\\)",
+          "options": [
+            "\\\\(\\frac{- x - 1}{x - 1}\\\\)",
+            "\\\\(- \\frac{x + 1}{x - 1}\\\\)",
+            "\\\\(\\frac{x \\left(x + 1\\right)}{x - 1}\\\\)",
+            "\\\\(\\frac{x + 1}{x - 1}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x + 1}{x - 1}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x^{2} + 2 x + 1}{x^{2} - 1}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{x + 1}{x - 1}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x + 1}{x - 1}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q6i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x^{2} + 10 x + 25}{x^{2} + 9 x + 20}\\\\)",
+          "options": [
+            "\\\\(- \\frac{x + 5}{x + 4}\\\\)",
+            "\\\\(\\frac{- x - 5}{x + 4}\\\\)",
+            "\\\\(\\frac{x + 5}{x + 4}\\\\)",
+            "\\\\(\\frac{x \\left(x + 5\\right)}{x + 4}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x + 5}{x + 4}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x^{2} + 10 x + 25}{x^{2} + 9 x + 20}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{x + 5}{x + 4}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x + 5}{x + 4}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(1 \\frac{1}{x + 1} + 1 \\frac{1}{x}\\\\)",
+          "options": [
+            "\\\\(- \\frac{2 x + 1}{x^{2} + x}\\\\)",
+            "\\\\(\\frac{- 2 x - 1}{x^{2} + x}\\\\)",
+            "\\\\(\\frac{x \\left(2 x + 1\\right)}{x^{2} + x}\\\\)",
+            "\\\\(\\frac{2 x + 1}{x^{2} + x}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{2 x + 1}{x^{2} + x}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(1 \\frac{1}{x + 1} + 1 \\frac{1}{x}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{2 x + 1}{x \\left(x + 1\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{2 x + 1}{x^{2} + x}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(- \\frac{1}{x + 1} + 1 \\frac{1}{x}\\\\)",
+          "options": [
+            "\\\\(- \\frac{1}{x^{2} + x}\\\\)",
+            "\\\\(\\frac{1}{x^{2} + x}\\\\)",
+            "\\\\(\\frac{x}{x^{2} + x}\\\\)",
+            "\\\\(x^{2} + x\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{1}{x^{2} + x}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(- \\frac{1}{x + 1} + 1 \\frac{1}{x}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{1}{x \\left(x + 1\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{1}{x^{2} + x}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(1 \\frac{1}{x - 1} + 1 \\frac{1}{x + 1}\\\\)",
+          "options": [
+            "\\\\(\\frac{2 x}{x^{2} - 1}\\\\)",
+            "\\\\(\\frac{2}{x^{2} - 1}\\\\)",
+            "\\\\(\\frac{2 x^{2}}{x^{2} - 1}\\\\)",
+            "\\\\(- \\frac{2 x}{x^{2} - 1}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{2 x}{x^{2} - 1}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(1 \\frac{1}{x - 1} + 1 \\frac{1}{x + 1}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{2 x}{\\left(x - 1\\right) \\left(x + 1\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{2 x}{x^{2} - 1}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q7d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{2}{x - 3} + \\frac{3}{x - 2}\\\\)",
+          "options": [
+            "\\\\(\\frac{13 - 5 x}{x^{2} - 5 x + 6}\\\\)",
+            "\\\\(- \\frac{5 x - 13}{x^{2} - 5 x + 6}\\\\)",
+            "\\\\(\\frac{5 x - 13}{x^{2} - 5 x + 6}\\\\)",
+            "\\\\(\\frac{x \\left(5 x - 13\\right)}{x^{2} - 5 x + 6}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{5 x - 13}{x^{2} - 5 x + 6}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{2}{x - 3} + \\frac{3}{x - 2}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{5 x - 13}{\\left(x - 3\\right) \\left(x - 2\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{5 x - 13}{x^{2} - 5 x + 6}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q7e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(- \\frac{2}{x - 1} + \\frac{3}{x + 1}\\\\)",
+          "options": [
+            "\\\\(- \\frac{x - 5}{x^{2} - 1}\\\\)",
+            "\\\\(\\frac{x - 5}{x^{2} - 1}\\\\)",
+            "\\\\(\\frac{5 - x}{x^{2} - 1}\\\\)",
+            "\\\\(\\frac{x \\left(x - 5\\right)}{x^{2} - 1}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x - 5}{x^{2} - 1}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(- \\frac{2}{x - 1} + \\frac{3}{x + 1}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x - 5}{\\left(x - 1\\right) \\left(x + 1\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x - 5}{x^{2} - 1}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q7f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(1 \\frac{1}{x - 2} - 1 \\frac{1}{x + 3}\\\\)",
+          "options": [
+            "\\\\(\\frac{5 x}{x^{2} + x - 6}\\\\)",
+            "\\\\(- \\frac{5}{x^{2} + x - 6}\\\\)",
+            "\\\\(\\frac{5}{x^{2} + x - 6}\\\\)",
+            "\\\\(\\frac{5}{x \\left(x^{2} + x - 6\\right)}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{5}{x^{2} + x - 6}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(1 \\frac{1}{x - 2} - 1 \\frac{1}{x + 3}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{5}{\\left(x - 2\\right) \\left(x + 3\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{5}{x^{2} + x - 6}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x^{2} \\left(3 x + 3\\right)}{2 x \\left(x^{2} - 1\\right)}\\\\)",
+          "options": [
+            "\\\\(\\frac{3 x^{2}}{2 x - 2}\\\\)",
+            "\\\\(- \\frac{3 x}{2 x - 2}\\\\)",
+            "\\\\(\\frac{3}{2 x - 2}\\\\)",
+            "\\\\(\\frac{3 x}{2 x - 2}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{3 x}{2 x - 2}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x^{2} \\left(3 x + 3\\right)}{2 x \\left(x^{2} - 1\\right)}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{3 x \\left(x + 1\\right)}{2 \\left(x^{2} - 1\\right)}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{3 x}{2 \\left(x - 1\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{3 x}{2 x - 2}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{\\left(a^{2} - 3 a\\right) \\left(a^{2} + a - 2\\right)}{\\left(a + 2\\right) \\left(a^{2} - 4 a + 3\\right)}\\\\)",
+          "options": [
+            "\\\\(a\\\\)",
+            "\\\\(a x\\\\)",
+            "\\\\(- a\\\\)",
+            "\\\\(\\frac{a}{x}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(a\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{\\left(a^{2} - 3 a\\right) \\left(a^{2} + a - 2\\right)}{\\left(a + 2\\right) \\left(a^{2} - 4 a + 3\\right)}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{a \\left(a - 3\\right) \\left(a^{2} + a - 2\\right)}{\\left(a + 2\\right) \\left(a^{2} - 4 a + 3\\right)}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(a\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(a\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{c^{2} + 5 c + 6}{\\frac{c + 3}{c - 4} \\left(c^{2} - 16\\right)}\\\\)",
+          "options": [
+            "\\\\(- \\frac{c + 2}{c + 4}\\\\)",
+            "\\\\(\\frac{x \\left(c + 2\\right)}{c + 4}\\\\)",
+            "\\\\(\\frac{c + 2}{c + 4}\\\\)",
+            "\\\\(\\frac{- c - 2}{c + 4}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{c + 2}{c + 4}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{c^{2} + 5 c + 6}{\\frac{c + 3}{c - 4} \\left(c^{2} - 16\\right)}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{\\left(c - 4\\right) \\left(c^{2} + 5 c + 6\\right)}{\\left(c + 3\\right) \\left(c^{2} - 16\\right)}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{c + 2}{c + 4}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{c + 2}{c + 4}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{\\left(x^{2} - x - 2\\right) \\left(x^{2} - x - 20\\right)}{\\frac{x + 1}{x^{2} + 5 x} \\left(x^{2} - 25\\right) \\left(x^{2} + 2 x - 8\\right)}\\\\)",
+          "options": [
+            "\\\\(x^{2}\\\\)",
+            "\\\\(x\\\\)",
+            "\\\\(- x\\\\)",
+            "\\\\(1\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(x\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{\\left(x^{2} - x - 2\\right) \\left(x^{2} - x - 20\\right)}{\\frac{x + 1}{x^{2} + 5 x} \\left(x^{2} - 25\\right) \\left(x^{2} + 2 x - 8\\right)}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x \\left(x + 5\\right) \\left(x^{2} - x - 20\\right) \\left(x^{2} - x - 2\\right)}{\\left(x + 1\\right) \\left(x^{2} - 25\\right) \\left(x^{2} + 2 x - 8\\right)}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(x\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(x\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{- a + b}{a - b}\\\\)",
+          "options": [
+            "\\\\(- x\\\\)",
+            "\\\\(- \\frac{1}{x}\\\\)",
+            "\\\\(1\\\\)",
+            "\\\\(-1\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(-1\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{- a + b}{a - b}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(-1\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11-1c-q9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(1 \\frac{1}{a - b} - 1 \\frac{1}{- a + b}\\\\)",
+          "options": [
+            "\\\\(\\frac{2 x}{a - b}\\\\)",
+            "\\\\(- \\frac{2}{a - b}\\\\)",
+            "\\\\(\\frac{2}{a - b}\\\\)",
+            "\\\\(\\frac{2}{x \\left(a - b\\right)}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{2}{a - b}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(1 \\frac{1}{a - b} - 1 \\frac{1}{- a + b}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{2}{a - b}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{2}{a - b}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11-1c-q9c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{m}{m - n} + \\frac{n}{- m + n}\\\\)",
+          "options": [
+            "\\\\(-1\\\\)",
+            "\\\\(x\\\\)",
+            "\\\\(1\\\\)",
+            "\\\\(\\frac{1}{x}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(1\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{m}{m - n} + \\frac{n}{- m + n}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{m \\left(- m + n\\right) + n \\left(m - n\\right)}{\\left(- m + n\\right) \\left(m - n\\right)}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(1\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(1\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11-1c-q9d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{x^{2} - 5 x + 6}{2 - x}\\\\)",
+          "options": [
+            "\\\\(x + 3\\\\)",
+            "\\\\(3 - x\\\\)",
+            "\\\\(- x - 3\\\\)",
+            "\\\\(x - 3\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(3 - x\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{x^{2} - 5 x + 6}{2 - x}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{\\left(x - 3\\right) \\left(x - 2\\right)}{2 - x}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(3 - x\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11-1c-q10a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(1 \\frac{1}{x^{2} + x} + 1 \\frac{1}{x^{2} - x}\\\\)",
+          "options": [
+            "\\\\(- \\frac{2}{x^{2} - 1}\\\\)",
+            "\\\\(\\frac{2}{x^{2} - 1}\\\\)",
+            "\\\\(\\frac{2 x}{x^{2} - 1}\\\\)",
+            "\\\\(\\frac{2}{x \\left(x^{2} - 1\\right)}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{2}{x^{2} - 1}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(1 \\frac{1}{x^{2} + x} + 1 \\frac{1}{x^{2} - x}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{2}{\\left(x - 1\\right) \\left(x + 1\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{2}{x^{2} - 1}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{2 x - y}{x^{2} - y^{2}} + 1 \\frac{1}{x - y}\\\\)",
+          "options": [
+            "\\\\(\\frac{3}{x^{2} - y^{2}}\\\\)",
+            "\\\\(- \\frac{3 x}{x^{2} - y^{2}}\\\\)",
+            "\\\\(\\frac{3 x^{2}}{x^{2} - y^{2}}\\\\)",
+            "\\\\(\\frac{3 x}{x^{2} - y^{2}}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{3 x}{x^{2} - y^{2}}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{2 x - y}{x^{2} - y^{2}} + 1 \\frac{1}{x - y}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x^{2} - y^{2} + \\left(x - y\\right) \\left(2 x - y\\right)}{\\left(x - y\\right) \\left(x^{2} - y^{2}\\right)}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{3 x}{\\left(x - y\\right) \\left(x + y\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{3 x}{x^{2} - y^{2}}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q10c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{3}{x^{2} + 2 x - 8} - \\frac{2}{x^{2} + x - 6}\\\\)",
+          "options": [
+            "\\\\(- \\frac{x + 1}{x^{3} + 5 x^{2} - 2 x - 24}\\\\)",
+            "\\\\(\\frac{x + 1}{x^{3} + 5 x^{2} - 2 x - 24}\\\\)",
+            "\\\\(\\frac{- x - 1}{x^{3} + 5 x^{2} - 2 x - 24}\\\\)",
+            "\\\\(\\frac{x \\left(x + 1\\right)}{x^{3} + 5 x^{2} - 2 x - 24}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x + 1}{x^{3} + 5 x^{2} - 2 x - 24}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{3}{x^{2} + 2 x - 8} - \\frac{2}{x^{2} + x - 6}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x^{2} - x - 2}{\\left(x^{2} + x - 6\\right) \\left(x^{2} + 2 x - 8\\right)}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{x + 1}{\\left(x - 2\\right) \\left(x + 3\\right) \\left(x + 4\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x + 1}{x^{3} + 5 x^{2} - 2 x - 24}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q10d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(1 \\frac{1}{x^{2} - 5 x + 6} + 1 \\frac{1}{x^{2} - 4 x + 3} - 1 \\frac{1}{x^{2} - 3 x + 2}\\\\)",
+          "options": [
+            "\\\\(- \\frac{x}{x^{3} - 6 x^{2} + 11 x - 6}\\\\)",
+            "\\\\(\\frac{1}{x^{3} - 6 x^{2} + 11 x - 6}\\\\)",
+            "\\\\(\\frac{x^{2}}{x^{3} - 6 x^{2} + 11 x - 6}\\\\)",
+            "\\\\(\\frac{x}{x^{3} - 6 x^{2} + 11 x - 6}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x}{x^{3} - 6 x^{2} + 11 x - 6}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(1 \\frac{1}{x^{2} - 5 x + 6} + 1 \\frac{1}{x^{2} - 4 x + 3} - 1 \\frac{1}{x^{2} - 3 x + 2}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{- \\left(x^{2} - 5 x + 6\\right) \\left(x^{2} - 4 x + 3\\right) + \\left(x^{2} - 5 x + 6\\right) \\left(x^{2} - 3 x + 2\\right) + \\left(x^{2} - 4 x + 3\\right) \\left(x^{2} - 3 x + 2\\right)}{\\left(x^{2} - 5 x + 6\\right) \\left(x^{2} - 4 x + 3\\right) \\left(x^{2} - 3 x + 2\\right)}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{x}{\\left(x - 3\\right) \\left(x - 2\\right) \\left(x - 1\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x}{x^{3} - 6 x^{2} + 11 x - 6}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q11a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{1 - 1 \\cdot \\frac{1}{2}}{1 \\cdot \\frac{1}{2} + 1}\\\\)",
+          "options": [
+            "\\\\(\\frac{x}{3}\\\\)",
+            "\\\\(\\frac{1}{3 x}\\\\)",
+            "\\\\(- \\frac{1}{3}\\\\)",
+            "\\\\(\\frac{1}{3}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{1}{3}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{1 - 1 \\cdot \\frac{1}{2}}{1 \\cdot \\frac{1}{2} + 1}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{1}{3}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{1}{3}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{1 \\cdot \\frac{1}{3} + 2}{5 - \\frac{2}{3}}\\\\)",
+          "options": [
+            "\\\\(\\frac{7 x}{13}\\\\)",
+            "\\\\(\\frac{7}{13}\\\\)",
+            "\\\\(- \\frac{7}{13}\\\\)",
+            "\\\\(\\frac{7}{13 x}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{7}{13}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{1 \\cdot \\frac{1}{3} + 2}{5 - \\frac{2}{3}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{7}{13}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{7}{13}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q11c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{- \\frac{1}{5} + 1 \\cdot \\frac{1}{2}}{1 \\cdot \\frac{1}{10} + 1}\\\\)",
+          "options": [
+            "\\\\(\\frac{3}{11 x}\\\\)",
+            "\\\\(\\frac{3 x}{11}\\\\)",
+            "\\\\(- \\frac{3}{11}\\\\)",
+            "\\\\(\\frac{3}{11}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{3}{11}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{- \\frac{1}{5} + 1 \\cdot \\frac{1}{2}}{1 \\cdot \\frac{1}{10} + 1}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{3}{11}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{3}{11}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q11d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{- \\frac{3}{4} + \\frac{17}{20}}{- \\frac{3}{10} + \\frac{4}{5}}\\\\)",
+          "options": [
+            "\\\\(- \\frac{1}{5}\\\\)",
+            "\\\\(\\frac{1}{5}\\\\)",
+            "\\\\(\\frac{1}{5 x}\\\\)",
+            "\\\\(\\frac{x}{5}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{1}{5}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{- \\frac{3}{4} + \\frac{17}{20}}{- \\frac{3}{10} + \\frac{4}{5}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{1}{5}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{1}{5}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q11e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(1 \\frac{1}{x} \\frac{1}{1 + \\frac{2}{x}}\\\\)",
+          "options": [
+            "\\\\(\\frac{x}{x + 2}\\\\)",
+            "\\\\(\\frac{1}{x + 2}\\\\)",
+            "\\\\(x + 2\\\\)",
+            "\\\\(- \\frac{1}{x + 2}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{1}{x + 2}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(1 \\frac{1}{x} \\frac{1}{1 + \\frac{2}{x}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{1}{x + 2}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{1}{x + 2}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q11f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{t - 1 \\frac{1}{t}}{t + 1 \\frac{1}{t}}\\\\)",
+          "options": [
+            "\\\\(\\frac{t^{2} - 1}{t^{2} + 1}\\\\)",
+            "\\\\(\\frac{x \\left(t^{2} - 1\\right)}{t^{2} + 1}\\\\)",
+            "\\\\(- \\frac{t^{2} - 1}{t^{2} + 1}\\\\)",
+            "\\\\(\\frac{1 - t^{2}}{t^{2} + 1}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{t^{2} - 1}{t^{2} + 1}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{t - 1 \\frac{1}{t}}{t + 1 \\frac{1}{t}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{t^{2} - 1}{t^{2} + 1}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{\\left(t - 1\\right) \\left(t + 1\\right)}{t^{2} + 1}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{t^{2} - 1}{t^{2} + 1}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q11g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(1 \\frac{1}{1 \\frac{1}{b} + 1 \\frac{1}{a}}\\\\)",
+          "options": [
+            "\\\\(- \\frac{a b}{a + b}\\\\)",
+            "\\\\(\\frac{a b}{a + b}\\\\)",
+            "\\\\(\\frac{a b}{x \\left(a + b\\right)}\\\\)",
+            "\\\\(\\frac{a b x}{a + b}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{a b}{a + b}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(1 \\frac{1}{1 \\frac{1}{b} + 1 \\frac{1}{a}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{a b}{a + b}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{a b}{a + b}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q11h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{\\frac{x}{y} + \\frac{y}{x}}{\\frac{x}{y} - \\frac{y}{x}}\\\\)",
+          "options": [
+            "\\\\(- \\frac{x^{2} + y^{2}}{x^{2} - y^{2}}\\\\)",
+            "\\\\(\\frac{- x^{2} - y^{2}}{x^{2} - y^{2}}\\\\)",
+            "\\\\(\\frac{x^{2} + y^{2}}{x^{2} - y^{2}}\\\\)",
+            "\\\\(\\frac{x \\left(x^{2} + y^{2}\\right)}{x^{2} - y^{2}}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x^{2} + y^{2}}{x^{2} - y^{2}}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{\\frac{x}{y} + \\frac{y}{x}}{\\frac{x}{y} - \\frac{y}{x}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x^{2} + y^{2}}{x^{2} - y^{2}}\\\\)"
+            },
+            {
+              "explain": "Factorise both the numerator and the denominator completely where possible.",
+              "work": "\\\\(\\frac{x^{2} + y^{2}}{\\left(x - y\\right) \\left(x + y\\right)}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x^{2} + y^{2}}{x^{2} - y^{2}}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q11i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{1 - 1 \\frac{1}{x + 1}}{1 \\frac{1}{x + 1} + 1 \\frac{1}{x}}\\\\)",
+          "options": [
+            "\\\\(\\frac{x^{3}}{2 x + 1}\\\\)",
+            "\\\\(\\frac{x^{2}}{2 x + 1}\\\\)",
+            "\\\\(\\frac{x}{2 x + 1}\\\\)",
+            "\\\\(- \\frac{x^{2}}{2 x + 1}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x^{2}}{2 x + 1}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{1 - 1 \\frac{1}{x + 1}}{1 \\frac{1}{x + 1} + 1 \\frac{1}{x}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x^{2}}{2 x + 1}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x^{2}}{2 x + 1}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y11-1c-q11j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify the following expression completely:\\n\\n\\\\(\\frac{\\frac{3}{x + 2} - \\frac{2}{x + 1}}{\\frac{5}{x + 2} - \\frac{4}{x + 1}}\\\\)",
+          "options": [
+            "\\\\(\\frac{1 - x}{x - 3}\\\\)",
+            "\\\\(\\frac{x \\left(x - 1\\right)}{x - 3}\\\\)",
+            "\\\\(- \\frac{x - 1}{x - 3}\\\\)",
+            "\\\\(\\frac{x - 1}{x - 3}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Combine into a single fraction first, then factorise and cancel common terms.",
+          "solution": "The completely simplified form is \\\\(\\frac{x - 1}{x - 3}\\\\).",
+          "steps": [
+            {
+              "explain": "Write down the original expression.",
+              "work": "\\\\(\\frac{\\frac{3}{x + 2} - \\frac{2}{x + 1}}{\\frac{5}{x + 2} - \\frac{4}{x + 1}}\\\\)"
+            },
+            {
+              "explain": "Find a common denominator and combine the terms into a single fraction.",
+              "work": "\\\\(\\frac{x - 1}{x - 3}\\\\)"
+            },
+            {
+              "explain": "Cancel any common factors between the numerator and denominator to find the simplest form.",
+              "work": "\\\\(\\frac{x - 1}{x - 3}\\\\)"
+            }
+          ],
+          "timeLimit": 30
+        }
+      ]
+    }
+  ]
+}

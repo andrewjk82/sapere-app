@@ -1,0 +1,124 @@
+{
+  "chapterId": "exam:year7ch1a",
+  "title": "Exam Practice",
+  "year": "Year 7",
+  "topics": [
+    {
+      "topicId": "exam:year7ch1a",
+      "code": "",
+      "title": "The number line",
+      "questions": [
+        {
+          "id": "y7-1a-q11",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Sketch a portion of the number line showing the set of all numbers \\( x \\) that satisfy the inequality \\( -11 \\le x < 13 \\). Clearly label the endpoints and use appropriate solid/hollow dots.",
+          "answer": "A solid dot at \\( -11 \\), a hollow dot at \\( 13 \\), and a shaded line connecting them.",
+          "steps": [
+            {
+              "explain": "Identify the boundary coordinates on the number line.",
+              "work": "\\( x = -11 \\text{ and } x = 13 \\)"
+            },
+            {
+              "explain": "Determine the dot style for each boundary based on the inequality operator.",
+              "work": "\\( x \\ge -11 \\implies \\text{Solid dot at } -11, quad x < 13 \\implies \\text{Hollow dot at } 13 \\)"
+            },
+            {
+              "explain": "Shade the interval between the two endpoints to represent all valid real numbers.",
+              "work": "\\( \\text{Shaded line from } -11 \\text{ to } 13 \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y7-1a-q12",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Sketch a portion of the number line showing the set of all numbers \\( x \\) that satisfy the inequality \\( -12 \\le x < 14 \\). Clearly label the endpoints and use appropriate solid/hollow dots.",
+          "answer": "A solid dot at \\( -12 \\), a hollow dot at \\( 14 \\), and a shaded line connecting them.",
+          "steps": [
+            {
+              "explain": "Identify the boundary coordinates on the number line.",
+              "work": "\\( x = -12 \\text{ and } x = 14 \\)"
+            },
+            {
+              "explain": "Determine the dot style for each boundary based on the inequality operator.",
+              "work": "\\( x \\ge -12 \\implies \\text{Solid dot at } -12, quad x < 14 \\implies \\text{Hollow dot at } 14 \\)"
+            },
+            {
+              "explain": "Shade the interval between the two endpoints to represent all valid real numbers.",
+              "work": "\\( \\text{Shaded line from } -12 \\text{ to } 14 \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y7-1a-q13",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Sketch a portion of the number line showing the set of all numbers \\( x \\) that satisfy the inequality \\( -13 \\le x < 15 \\). Clearly label the endpoints and use appropriate solid/hollow dots.",
+          "answer": "A solid dot at \\( -13 \\), a hollow dot at \\( 15 \\), and a shaded line connecting them.",
+          "steps": [
+            {
+              "explain": "Identify the boundary coordinates on the number line.",
+              "work": "\\( x = -13 \\text{ and } x = 15 \\)"
+            },
+            {
+              "explain": "Determine the dot style for each boundary based on the inequality operator.",
+              "work": "\\( x \\ge -13 \\implies \\text{Solid dot at } -13, quad x < 15 \\implies \\text{Hollow dot at } 15 \\)"
+            },
+            {
+              "explain": "Shade the interval between the two endpoints to represent all valid real numbers.",
+              "work": "\\( \\text{Shaded line from } -13 \\text{ to } 15 \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y7-1a-q14",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Sketch a portion of the number line showing the set of all numbers \\( x \\) that satisfy the inequality \\( -14 \\le x < 16 \\). Clearly label the endpoints and use appropriate solid/hollow dots.",
+          "answer": "A solid dot at \\( -14 \\), a hollow dot at \\( 16 \\), and a shaded line connecting them.",
+          "steps": [
+            {
+              "explain": "Identify the boundary coordinates on the number line.",
+              "work": "\\( x = -14 \\text{ and } x = 16 \\)"
+            },
+            {
+              "explain": "Determine the dot style for each boundary based on the inequality operator.",
+              "work": "\\( x \\ge -14 \\implies \\text{Solid dot at } -14, quad x < 16 \\implies \\text{Hollow dot at } 16 \\)"
+            },
+            {
+              "explain": "Shade the interval between the two endpoints to represent all valid real numbers.",
+              "work": "\\( \\text{Shaded line from } -14 \\text{ to } 16 \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y7-1a-q15",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Sketch a portion of the number line showing the set of all numbers \\( x \\) that satisfy the inequality \\( -15 \\le x < 17 \\). Clearly label the endpoints and use appropriate solid/hollow dots.",
+          "answer": "A solid dot at \\( -15 \\), a hollow dot at \\( 17 \\), and a shaded line connecting them.",
+          "steps": [
+            {
+              "explain": "Identify the boundary coordinates on the number line.",
+              "work": "\\( x = -15 \\text{ and } x = 17 \\)"
+            },
+            {
+              "explain": "Determine the dot style for each boundary based on the inequality operator.",
+              "work": "\\( x \\ge -15 \\implies \\text{Solid dot at } -15, quad x < 17 \\implies \\text{Hollow dot at } 17 \\)"
+            },
+            {
+              "explain": "Shade the interval between the two endpoints to represent all valid real numbers.",
+              "work": "\\( \\text{Shaded line from } -15 \\text{ to } 17 \\)"
+            }
+          ],
+          "manual": true
+        }
+      ]
+    }
+  ]
+}

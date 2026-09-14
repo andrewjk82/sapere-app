@@ -1,0 +1,67 @@
+{
+  "chapterId": "exam:year11ch3h",
+  "title": "Exam year11ch3h",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ch3h",
+      "code": "EXAM",
+      "title": "Two graphs that have asymptotes",
+      "questions": [
+        {
+          "id": "y11a-3h-q11",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Justify the asymptotic behavior of the following curves using the language of limits.",
+          "answer": "0",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Evaluate the limits as \\( x \\to \\pm\\infty \\) or \\( x \\to 0 \\).",
+              "work": "\\lim_{x \\to -\\infty} 2^x = 0\n\\lim_{x \\to \\infty} 5^{-x} = 0\n\\lim_{x \\to \\pm\\infty} \\frac{6}{x} = 0, quad \\lim_{x \\to 0^\\pm} \\frac{6}{x} = \\pm\\infty"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y11a-3h-q15",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Some curves can cross their asymptotes. Consider the curve \\( y = \\frac{4x}{x^2+1} \\).",
+          "figure": {
+            "jsxGraph": {
+              "width": 350,
+              "height": 250,
+              "boundingbox": [
+                -7,
+                3,
+                7,
+                -3
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0], [6.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-2.5], [0,2.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 2.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return 4*x/(x*x+1); }, -6.5, 6.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [1,2], {name: 'Max(1,2)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [-1,-2], {name: 'Min(-1,-2)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.create('point', [0,0], {name: '(0,0)', visible: true, size: 2, label: {autoPosition: false, offset: [0, 10]}});\nboard.unsuspendUpdate();"
+            }
+          },
+          "answer": "0",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Evaluate \\( f(x) = \\frac{4x}{x^2+1} \\) for each x-value.",
+              "work": "f(0) = 0\nf(1) = 4/2 = 2, quad f(-1) = -2\nf(3) = 12/10 = 1.2, quad f(-3) = -1.2\nf(0.5) = 2/1.25 = 1.6, quad f(-0.5) = -1.6\nf(6) = 24/37 \\approx 0.65, quad f(-6) \\approx -0.65"
+            },
+            {
+              "explain": "As \\( x \\to \\pm\\infty \\), the denominator \\( x^2+1 \\) grows much faster than \\( 4x \\), so \\( y \\to 0 \\). Thus \\( y = 0 \\) (the x-axis) is the horizontal asymptote."
+            },
+            {
+              "explain": "Find where \\( y = 0 \\) (crosses asymptote): \\( \\frac{4x}{x^2+1} = 0 \\implies 4x = 0 \\implies x = 0 \\). The crossing point is \\( (0, 0) \\)."
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        }
+      ]
+    }
+  ]
+}

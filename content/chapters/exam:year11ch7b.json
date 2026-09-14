@@ -1,0 +1,700 @@
+{
+  "chapterId": "exam:year11ch7b",
+  "title": "Exam year11ch7b",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11a-7B",
+      "code": "7B",
+      "title": "Gradients of line segments and lines",
+      "questions": [
+        {
+          "id": "y11a-7b-q3a",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Determine if the line through \\(A(2, 3)\\) and \\(B(2, 5)\\) is horizontal, vertical, or neither.",
+          "answer": "2",
+          "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(2, 3),\\; B(2, 5)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 = x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \\neq y_2\\)\n\n**Step 4:** Same \\(x\\)-coordinate \\(x = 2\\), different \\(y\\)-coordinates, so the line is vertical.\nvertical",
+          "steps": [
+            {
+              "explain": "Compare the coordinates of the two points.",
+              "work": "\\(A(2, 3),\\; B(2, 5)\\)"
+            },
+            {
+              "explain": "A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).",
+              "work": "\\(x_1 = x_2\\)"
+            },
+            {
+              "explain": "A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).",
+              "work": "\\(y_1 \\neq y_2\\)"
+            },
+            {
+              "explain": "Same \\(x\\)-coordinate \\(x = 2\\), different \\(y\\)-coordinates, so the line is vertical.",
+              "work": "vertical"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-7b-q3b",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Determine if the line through \\(A(3, 4)\\) and \\(B(8, 4)\\) is horizontal, vertical, or neither.",
+          "answer": "2",
+          "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(3, 4),\\; B(8, 4)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \\neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 = y_2\\)\n\n**Step 4:** Same \\(y\\)-coordinate \\(y = 4\\), different \\(x\\)-coordinates, so the line is horizontal.\nhorizontal",
+          "steps": [
+            {
+              "explain": "Compare the coordinates of the two points.",
+              "work": "\\(A(3, 4),\\; B(8, 4)\\)"
+            },
+            {
+              "explain": "A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).",
+              "work": "\\(x_1 \\neq x_2\\)"
+            },
+            {
+              "explain": "A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).",
+              "work": "\\(y_1 = y_2\\)"
+            },
+            {
+              "explain": "Same \\(y\\)-coordinate \\(y = 4\\), different \\(x\\)-coordinates, so the line is horizontal.",
+              "work": "horizontal"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-7b-q3c",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Determine if the line through \\(A(4, 2)\\) and \\(B(3, 6)\\) is horizontal, vertical, or neither.",
+          "answer": "2",
+          "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(4, 2),\\; B(3, 6)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \\neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \\neq y_2\\)\n\n**Step 4:** Both \\(x\\) and \\(y\\) differ, so the line is neither horizontal nor vertical.\nneither",
+          "steps": [
+            {
+              "explain": "Compare the coordinates of the two points.",
+              "work": "\\(A(4, 2),\\; B(3, 6)\\)"
+            },
+            {
+              "explain": "A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).",
+              "work": "\\(x_1 \\neq x_2\\)"
+            },
+            {
+              "explain": "A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).",
+              "work": "\\(y_1 \\neq y_2\\)"
+            },
+            {
+              "explain": "Both \\(x\\) and \\(y\\) differ, so the line is neither horizontal nor vertical.",
+              "work": "neither"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-7b-q3d",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Determine if the line through \\(A(5, -2)\\) and \\(B(2, -2)\\) is horizontal, vertical, or neither.",
+          "answer": "2",
+          "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(5, -2),\\; B(2, -2)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \\neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 = y_2\\)\n\n**Step 4:** Same \\(y\\)-coordinate \\(y = -2\\), so the line is horizontal.\nhorizontal",
+          "steps": [
+            {
+              "explain": "Compare the coordinates of the two points.",
+              "work": "\\(A(5, -2),\\; B(2, -2)\\)"
+            },
+            {
+              "explain": "A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).",
+              "work": "\\(x_1 \\neq x_2\\)"
+            },
+            {
+              "explain": "A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).",
+              "work": "\\(y_1 = y_2\\)"
+            },
+            {
+              "explain": "Same \\(y\\)-coordinate \\(y = -2\\), so the line is horizontal.",
+              "work": "horizontal"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-7b-q3e",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Determine if the line through \\(A(-3, 3)\\) and \\(B(3, -3)\\) is horizontal, vertical, or neither.",
+          "answer": "1",
+          "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(-3, 3),\\; B(3, -3)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 \\neq x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \\neq y_2\\)\n\n**Step 4:** Both coordinates change (\\(x\\) and \\(y\\) both differ), so the line is neither horizontal nor vertical.\nneither",
+          "steps": [
+            {
+              "explain": "Compare the coordinates of the two points.",
+              "work": "\\(A(-3, 3),\\; B(3, -3)\\)"
+            },
+            {
+              "explain": "A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).",
+              "work": "\\(x_1 \\neq x_2\\)"
+            },
+            {
+              "explain": "A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).",
+              "work": "\\(y_1 \\neq y_2\\)"
+            },
+            {
+              "explain": "Both coordinates change (\\(x\\) and \\(y\\) both differ), so the line is neither horizontal nor vertical.",
+              "work": "neither"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-7b-q3f",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Determine if the line through \\(A(0, 5)\\) and \\(B(0, -5)\\) is horizontal, vertical, or neither.",
+          "answer": "0",
+          "hint": "Check if the x-coordinates are equal (vertical) or if the y-coordinates are equal (horizontal).",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Compare the coordinates of the two points.\n\\(A(0, 5),\\; B(0, -5)\\)\n\n**Step 2:** A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).\n\\(x_1 = x_2\\)\n\n**Step 3:** A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).\n\\(y_1 \\neq y_2\\)\n\n**Step 4:** Same \\(x\\)-coordinate \\(x = 0\\) (the \\(y\\)-axis), so the line is vertical.\nvertical",
+          "steps": [
+            {
+              "explain": "Compare the coordinates of the two points.",
+              "work": "\\(A(0, 5),\\; B(0, -5)\\)"
+            },
+            {
+              "explain": "A line is vertical if the \\(x\\)-coordinates are equal (undefined gradient).",
+              "work": "\\(x_1 = x_2\\)"
+            },
+            {
+              "explain": "A line is horizontal if the \\(y\\)-coordinates are equal (gradient zero).",
+              "work": "\\(y_1 \\neq y_2\\)"
+            },
+            {
+              "explain": "Same \\(x\\)-coordinate \\(x = 0\\) (the \\(y\\)-axis), so the line is vertical.",
+              "work": "vertical"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-7b-q4e",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "What geometric result about the opposite sides of a parallelogram have you verified from the lengths calculated for A(1, 4), B(3, 10), C(11, 14), D(9, 8)?",
+          "answer": "We verified that the opposite sides of a parallelogram are equal in length.",
+          "hint": "Look at the pairs of lengths: \\(AB\\) vs \\(CD\\), and \\(BC\\) vs \\(DA\\).",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** From the length calculations, opposite sides are equal: \\(AB = CD\\) and \\(BC = DA\\).\n\\(AB = CD = 2\\sqrt{10},\\; BC = DA = 4\\sqrt{5}\\)\n\n**Step 2:** This matches a standard property of parallelograms.\nOpposite sides of a parallelogram are equal in length\n\n**Step 3:** We already showed opposite sides are parallel, so both the parallel and equal-length properties hold.\nParallel + equal opposite sides\n\n**Step 4:** The geometric result verified is that opposite sides of a parallelogram are equal in length.\nOpposite sides of a parallelogram are equal",
+          "steps": [
+            {
+              "explain": "From the length calculations, opposite sides are equal: \\(AB = CD\\) and \\(BC = DA\\).",
+              "work": "\\(AB = CD = 2\\sqrt{10},\\; BC = DA = 4\\sqrt{5}\\)"
+            },
+            {
+              "explain": "This matches a standard property of parallelograms.",
+              "work": "Opposite sides of a parallelogram are equal in length"
+            },
+            {
+              "explain": "We already showed opposite sides are parallel, so both the parallel and equal-length properties hold.",
+              "work": "Parallel + equal opposite sides"
+            },
+            {
+              "explain": "The geometric result verified is that opposite sides of a parallelogram are equal in length.",
+              "work": "Opposite sides of a parallelogram are equal"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q5a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Show that \\(A(-3, -7)\\), \\(B(-1, -6)\\), \\(C(9, -8)\\), and \\(D(7, -9)\\) form a parallelogram.",
+          "answer": "m_AB = 1/2, m_CD = 1/2 (so AB || CD); m_BC = -1/5, m_AD = -1/5 (so BC || AD).\nThus ABCD is a parallelogram.",
+          "hint": "Calculate the gradients of the opposite sides and verify that they are equal.",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Compute gradients of opposite sides \\(AB\\) and \\(CD\\).\n\\(m_{AB} = \\dfrac{-6-(-7)}{-1-(-3)} = \\dfrac{1}{2},\\quad m_{CD} = \\dfrac{-9-(-8)}{7-9} = \\dfrac{-1}{-2} = \\dfrac{1}{2}\\)\n\n**Step 2:** Equal gradients give \\(AB \\parallel CD\\).\n\\(m_{AB} = m_{CD} = \\dfrac{1}{2}\\)\n\n**Step 3:** Compute gradients of the other pair \\(BC\\) and \\(AD\\).\n\\(m_{BC} = \\dfrac{-8-(-6)}{9-(-1)} = \\dfrac{-2}{10} = -\\dfrac{1}{5},\\quad m_{AD} = \\dfrac{-9-(-7)}{7-(-3)} = \\dfrac{-2}{10} = -\\dfrac{1}{5}\\)\n\n**Step 4:** Also \\(BC \\parallel AD\\). Both pairs of opposite sides are parallel, so \\(ABCD\\) is a parallelogram.\nparallelogram",
+          "steps": [
+            {
+              "explain": "Compute gradients of opposite sides \\(AB\\) and \\(CD\\).",
+              "work": "\\(m_{AB} = \\dfrac{-6-(-7)}{-1-(-3)} = \\dfrac{1}{2},\\quad m_{CD} = \\dfrac{-9-(-8)}{7-9} = \\dfrac{-1}{-2} = \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Equal gradients give \\(AB \\parallel CD\\).",
+              "work": "\\(m_{AB} = m_{CD} = \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Compute gradients of the other pair \\(BC\\) and \\(AD\\).",
+              "work": "\\(m_{BC} = \\dfrac{-8-(-6)}{9-(-1)} = \\dfrac{-2}{10} = -\\dfrac{1}{5},\\quad m_{AD} = \\dfrac{-9-(-7)}{7-(-3)} = \\dfrac{-2}{10} = -\\dfrac{1}{5}\\)"
+            },
+            {
+              "explain": "Also \\(BC \\parallel AD\\). Both pairs of opposite sides are parallel, so \\(ABCD\\) is a parallelogram.",
+              "work": "parallelogram"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q5b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Show that \\(A(3, 6)\\), \\(B(4, 8)\\), \\(C(-3, 0)\\), and \\(D(-4, 3)\\) do not form a parallelogram.",
+          "answer": "m_AB = 2, m_CD = 3.\nSince gradients of opposite sides are not equal, AB is not parallel to CD, so it is not a parallelogram.",
+          "hint": "Compute the gradients of opposite sides and show they are not equal.",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Compute the gradient of \\(AB\\) with \\(A(3, 6)\\), \\(B(4, 8)\\).\n\\(m_{AB} = \\dfrac{8-6}{4-3} = 2\\)\n\n**Step 2:** Compute the gradient of opposite side \\(CD\\) with \\(C(-3, 0)\\), \\(D(-4, 3)\\).\n\\(m_{CD} = \\dfrac{3-0}{-4-(-3)} = \\dfrac{3}{-1} = -3\\)\n\n**Step 3:** The gradients are not equal, so \\(AB\\) is not parallel to \\(CD\\).\n\\(m_{AB} \\neq m_{CD}\\)\n\n**Step 4:** A quadrilateral needs both pairs of opposite sides parallel to be a parallelogram. Therefore these points do not form a parallelogram.\nnot a parallelogram",
+          "steps": [
+            {
+              "explain": "Compute the gradient of \\(AB\\) with \\(A(3, 6)\\), \\(B(4, 8)\\).",
+              "work": "\\(m_{AB} = \\dfrac{8-6}{4-3} = 2\\)"
+            },
+            {
+              "explain": "Compute the gradient of opposite side \\(CD\\) with \\(C(-3, 0)\\), \\(D(-4, 3)\\).",
+              "work": "\\(m_{CD} = \\dfrac{3-0}{-4-(-3)} = \\dfrac{3}{-1} = -3\\)"
+            },
+            {
+              "explain": "The gradients are not equal, so \\(AB\\) is not parallel to \\(CD\\).",
+              "work": "\\(m_{AB} \\neq m_{CD}\\)"
+            },
+            {
+              "explain": "A quadrilateral needs both pairs of opposite sides parallel to be a parallelogram. Therefore these points do not form a parallelogram.",
+              "work": "not a parallelogram"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q9a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "For the quadrilateral \\(ABCD\\) with vertices A(-2, 2), B(2, 0), C(4, 4), and D(0, 6), show that the opposite sides are parallel, and hence that \\(ABCD\\) is a parallelogram.",
+          "answer": "m_AB = -1/2, m_CD = -1/2 (AB || CD); m_BC = 2, m_AD = 2 (BC || AD).\nTherefore, ABCD is a parallelogram.",
+          "hint": "Find the gradients of all 4 sides and show that opposite sides have equal gradients.",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Gradients of opposite sides \\(AB\\) and \\(CD\\).\n\\(m_{AB} = \\dfrac{0-2}{2-(-2)} = \\dfrac{-2}{4} = -\\dfrac{1}{2},\\quad m_{CD} = \\dfrac{6-4}{0-4} = \\dfrac{2}{-4} = -\\dfrac{1}{2}\\)\n\n**Step 2:** So \\(AB \\parallel CD\\). Now the other pair \\(BC\\) and \\(AD\\).\n\\(m_{BC} = \\dfrac{4-0}{4-2} = 2,\\quad m_{AD} = \\dfrac{6-2}{0-(-2)} = \\dfrac{4}{2} = 2\\)\n\n**Step 3:** So \\(BC \\parallel AD\\) as well.\n\\(m_{BC} = m_{AD} = 2\\)\n\n**Step 4:** Both pairs of opposite sides are parallel, hence \\(ABCD\\) is a parallelogram.\nparallelogram",
+          "steps": [
+            {
+              "explain": "Gradients of opposite sides \\(AB\\) and \\(CD\\).",
+              "work": "\\(m_{AB} = \\dfrac{0-2}{2-(-2)} = \\dfrac{-2}{4} = -\\dfrac{1}{2},\\quad m_{CD} = \\dfrac{6-4}{0-4} = \\dfrac{2}{-4} = -\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "So \\(AB \\parallel CD\\). Now the other pair \\(BC\\) and \\(AD\\).",
+              "work": "\\(m_{BC} = \\dfrac{4-0}{4-2} = 2,\\quad m_{AD} = \\dfrac{6-2}{0-(-2)} = \\dfrac{4}{2} = 2\\)"
+            },
+            {
+              "explain": "So \\(BC \\parallel AD\\) as well.",
+              "work": "\\(m_{BC} = m_{AD} = 2\\)"
+            },
+            {
+              "explain": "Both pairs of opposite sides are parallel, hence \\(ABCD\\) is a parallelogram.",
+              "work": "parallelogram"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q10b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Show that \\(A(5, 1)\\), \\(B(-1, 4)\\), \\(C(-2, 2)\\), and \\(D(4, -1)\\) form a rectangle.",
+          "answer": "Show that ABCD is a parallelogram (m_AB = m_DC = -1/2, m_BC = 2, m_AD = 2) and that AB is perpendicular to BC (m_AB * m_BC = -1/2 * 2 = -1).",
+          "hint": "Find gradients of the sides and check if adjacent sides are perpendicular.",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Show opposite sides are parallel using gradients.\n\\(m_{AB} = \\dfrac{4-1}{-1-5} = \\dfrac{3}{-6} = -\\dfrac{1}{2},\\; m_{DC} = \\dfrac{2-(-1)}{-2-4} = \\dfrac{3}{-6} = -\\dfrac{1}{2}\\)\n\n**Step 2:** Other pair of opposite sides.\n\\(m_{BC} = \\dfrac{2-4}{-2-(-1)} = \\dfrac{-2}{-1} = 2,\\; m_{AD} = \\dfrac{-1-1}{4-5} = \\dfrac{-2}{-1} = 2\\)\n\n**Step 3:** Both pairs parallel \\(\\Rightarrow\\) parallelogram. Check a right angle: product of adjacent gradients.\n\\(m_{AB}\\cdot m_{BC} = \\left(-\\dfrac{1}{2}\\right)\\cdot 2 = -1\\)\n\n**Step 4:** Adjacent sides are perpendicular, so the parallelogram is a rectangle.\nrectangle",
+          "steps": [
+            {
+              "explain": "Show opposite sides are parallel using gradients.",
+              "work": "\\(m_{AB} = \\dfrac{4-1}{-1-5} = \\dfrac{3}{-6} = -\\dfrac{1}{2},\\; m_{DC} = \\dfrac{2-(-1)}{-2-4} = \\dfrac{3}{-6} = -\\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Other pair of opposite sides.",
+              "work": "\\(m_{BC} = \\dfrac{2-4}{-2-(-1)} = \\dfrac{-2}{-1} = 2,\\; m_{AD} = \\dfrac{-1-1}{4-5} = \\dfrac{-2}{-1} = 2\\)"
+            },
+            {
+              "explain": "Both pairs parallel \\(\\Rightarrow\\) parallelogram. Check a right angle: product of adjacent gradients.",
+              "work": "\\(m_{AB}\\cdot m_{BC} = \\left(-\\dfrac{1}{2}\\right)\\cdot 2 = -1\\)"
+            },
+            {
+              "explain": "Adjacent sides are perpendicular, so the parallelogram is a rectangle.",
+              "work": "rectangle"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q10c",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Show that \\(A(4, 4)\\), \\(B(0, 3)\\), \\(C(1, -1)\\), and \\(D(5, 0)\\) form a square.",
+          "answer": "Show that ABCD is a parallelogram, adjacent sides are perpendicular (m_AB = 1/4, m_BC = -4), and adjacent sides are equal (AB = BC = sqrt(17)).",
+          "hint": "Verify the conditions for a parallelogram, rectangle (perpendicular sides), and square (equal adjacent sides).",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Gradients of adjacent sides \\(AB\\) and \\(BC\\).\n\\(m_{AB} = \\dfrac{3-4}{0-4} = \\dfrac{-1}{-4} = \\dfrac{1}{4},\\; m_{BC} = \\dfrac{-1-3}{1-0} = -4\\)\n\n**Step 2:** Product of adjacent gradients is \\(-1\\), so sides are perpendicular.\n\\(\\dfrac{1}{4}\\cdot(-4) = -1 \\Rightarrow AB \\perp BC\\)\n\n**Step 3:** Check adjacent side lengths are equal.\n\\(AB = \\sqrt{(0-4)^2+(3-4)^2} = \\sqrt{16+1} = \\sqrt{17},\\; BC = \\sqrt{(1-0)^2+(-1-3)^2} = \\sqrt{1+16} = \\sqrt{17}\\)\n\n**Step 4:** Right angle + equal adjacent sides + parallelogram structure \\(\\Rightarrow\\) square.\nsquare",
+          "steps": [
+            {
+              "explain": "Gradients of adjacent sides \\(AB\\) and \\(BC\\).",
+              "work": "\\(m_{AB} = \\dfrac{3-4}{0-4} = \\dfrac{-1}{-4} = \\dfrac{1}{4},\\; m_{BC} = \\dfrac{-1-3}{1-0} = -4\\)"
+            },
+            {
+              "explain": "Product of adjacent gradients is \\(-1\\), so sides are perpendicular.",
+              "work": "\\(\\dfrac{1}{4}\\cdot(-4) = -1 \\Rightarrow AB \\perp BC\\)"
+            },
+            {
+              "explain": "Check adjacent side lengths are equal.",
+              "work": "\\(AB = \\sqrt{(0-4)^2+(3-4)^2} = \\sqrt{16+1} = \\sqrt{17},\\; BC = \\sqrt{(1-0)^2+(-1-3)^2} = \\sqrt{1+16} = \\sqrt{17}\\)"
+            },
+            {
+              "explain": "Right angle + equal adjacent sides + parallelogram structure \\(\\Rightarrow\\) square.",
+              "work": "square"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q13",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "The triangle \\(ABC\\) has vertices \\(A(-2, 1)\\), \\(B(2, 3)\\), and \\(C(3, 1)\\). Calculate the gradient of each side, and hence show that \\(\\triangle ABC\\) is a right-angled triangle.",
+          "answer": "\\(m_{AB} = \\frac{1}{2}, m_{BC} = -2, m_{AC} = 0\\).\n\nSince \\(m_{AB} \\cdot m_{BC} = -1\\), \\(AB\\) is perpendicular to \\(BC\\), so it is a right-angled triangle.",
+          "hint": "Find gradients of AB, BC, and AC. Find two gradients whose product is -1.",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Gradient of \\(AB\\) with \\(A(-2, 1)\\), \\(B(2, 3)\\).\n\\(m_{AB} = \\dfrac{3-1}{2-(-2)} = \\dfrac{2}{4} = \\dfrac{1}{2}\\)\n\n**Step 2:** Gradient of \\(BC\\) with \\(B(2, 3)\\), \\(C(3, 1)\\).\n\\(m_{BC} = \\dfrac{1-3}{3-2} = \\dfrac{-2}{1} = -2\\)\n\n**Step 3:** Gradient of \\(AC\\) with \\(A(-2, 1)\\), \\(C(3, 1)\\) (same \\(y\\)).\n\\(m_{AC} = \\dfrac{1-1}{3-(-2)} = 0\\) (horizontal)\n\n**Step 4:** Check perpendicular sides: \\(m_{AB}\\cdot m_{BC} = \\frac{1}{2}\\cdot(-2) = -1\\), so \\(AB \\perp BC\\). Hence \\(\\triangle ABC\\) is right-angled at \\(B\\).\nright-angled at \\(B\\)",
+          "steps": [
+            {
+              "explain": "Gradient of \\(AB\\) with \\(A(-2, 1)\\), \\(B(2, 3)\\).",
+              "work": "\\(m_{AB} = \\dfrac{3-1}{2-(-2)} = \\dfrac{2}{4} = \\dfrac{1}{2}\\)"
+            },
+            {
+              "explain": "Gradient of \\(BC\\) with \\(B(2, 3)\\), \\(C(3, 1)\\).",
+              "work": "\\(m_{BC} = \\dfrac{1-3}{3-2} = \\dfrac{-2}{1} = -2\\)"
+            },
+            {
+              "explain": "Gradient of \\(AC\\) with \\(A(-2, 1)\\), \\(C(3, 1)\\) (same \\(y\\)).",
+              "work": "\\(m_{AC} = \\dfrac{1-1}{3-(-2)} = 0\\) (horizontal)"
+            },
+            {
+              "explain": "Check perpendicular sides: \\(m_{AB}\\cdot m_{BC} = \\frac{1}{2}\\cdot(-2) = -1\\), so \\(AB \\perp BC\\). Hence \\(\\triangle ABC\\) is right-angled at \\(B\\).",
+              "work": "right-angled at \\(B\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q14a-len",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the lengths of the two sides enclosing the right angle in the triangle with vertices P(3, -2), Q(4, 2), and R(0, 3) (enter as 'side1, side2' in surd form if necessary).",
+          "options": [
+            "\\(\\sqrt{17}, \\sqrt{17}\\)",
+            "\\(\\sqrt{17}, \\sqrt{17} - 1\\)",
+            "\\(\\sqrt{17}, \\sqrt{17} + 1\\)",
+            "\\(-\\sqrt{17}, \\sqrt{17}\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the two perpendicular sides and apply the distance formula to both.",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** The right angle is at \\(Q\\), so the enclosing sides are \\(PQ\\) and \\(QR\\).\nlegs: \\(PQ\\) and \\(QR\\)\n\n**Step 2:** Length of \\(PQ\\) with \\(P(3, -2)\\), \\(Q(4, 2)\\).\n\\(PQ = \\sqrt{(4-3)^2+(2-(-2))^2} = \\sqrt{1+16} = \\sqrt{17}\\)\n\n**Step 3:** Length of \\(QR\\) with \\(Q(4, 2)\\), \\(R(0, 3)\\).\n\\(QR = \\sqrt{(0-4)^2+(3-2)^2} = \\sqrt{16+1} = \\sqrt{17}\\)\n\n**Step 4:** Both legs have length \\(\\sqrt{17}\\).\n\\(\\sqrt{17},\\; \\sqrt{17}\\)",
+          "steps": [
+            {
+              "explain": "The right angle is at \\(Q\\), so the enclosing sides are \\(PQ\\) and \\(QR\\).",
+              "work": "legs: \\(PQ\\) and \\(QR\\)"
+            },
+            {
+              "explain": "Length of \\(PQ\\) with \\(P(3, -2)\\), \\(Q(4, 2)\\).",
+              "work": "\\(PQ = \\sqrt{(4-3)^2+(2-(-2))^2} = \\sqrt{1+16} = \\sqrt{17}\\)"
+            },
+            {
+              "explain": "Length of \\(QR\\) with \\(Q(4, 2)\\), \\(R(0, 3)\\).",
+              "work": "\\(QR = \\sqrt{(0-4)^2+(3-2)^2} = \\sqrt{16+1} = \\sqrt{17}\\)"
+            },
+            {
+              "explain": "Both legs have length \\(\\sqrt{17}\\).",
+              "work": "\\(\\sqrt{17},\\; \\sqrt{17}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q14b-len",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the lengths of the two sides enclosing the right angle in the triangle with vertices X(-2, -4), Y(1, 3), and Z(-4, 1) (enter as 'side1, side2' in surd form if necessary).",
+          "options": [
+            "\\(\\sqrt{29}, \\sqrt{29} - 1\\)",
+            "\\(-\\sqrt{29}, \\sqrt{29}\\)",
+            "\\(\\sqrt{29}, \\sqrt{29} + 1\\)",
+            "\\(\\sqrt{29}, \\sqrt{29}\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the two perpendicular sides and apply the distance formula to both.",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** The right angle is at \\(Z\\), so the legs are \\(XZ\\) and \\(YZ\\).\nlegs: \\(XZ\\) and \\(YZ\\)\n\n**Step 2:** Length of \\(XZ\\).\n\\(XZ = \\sqrt{(-4-(-2))^2+(1-(-4))^2} = \\sqrt{4+25} = \\sqrt{29}\\)\n\n**Step 3:** Length of \\(YZ\\).\n\\(YZ = \\sqrt{(-4-1)^2+(1-3)^2} = \\sqrt{25+4} = \\sqrt{29}\\)\n\n**Step 4:** Both legs equal \\(\\sqrt{29}\\).\n\\(\\sqrt{29},\\; \\sqrt{29}\\)",
+          "steps": [
+            {
+              "explain": "The right angle is at \\(Z\\), so the legs are \\(XZ\\) and \\(YZ\\).",
+              "work": "legs: \\(XZ\\) and \\(YZ\\)"
+            },
+            {
+              "explain": "Length of \\(XZ\\).",
+              "work": "\\(XZ = \\sqrt{(-4-(-2))^2+(1-(-4))^2} = \\sqrt{4+25} = \\sqrt{29}\\)"
+            },
+            {
+              "explain": "Length of \\(YZ\\).",
+              "work": "\\(YZ = \\sqrt{(-4-1)^2+(1-3)^2} = \\sqrt{25+4} = \\sqrt{29}\\)"
+            },
+            {
+              "explain": "Both legs equal \\(\\sqrt{29}\\).",
+              "work": "\\(\\sqrt{29},\\; \\sqrt{29}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q18a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "For the quadrilateral \\(ABCD\\) with vertices A(2, -5), B(4, 1), C(-4, 5) and D(-2, -1), find the midpoints \\(P\\) of \\(AB\\), \\(Q\\) of \\(BC\\), \\(R\\) of \\(CD\\), and \\(S\\) of \\(DA\\).",
+          "answer": "P(3, -2), Q(0, 3), R(-3, 2), S(0, -3)",
+          "hint": "Use the midpoint formula \\(M = \\left(\\frac{x_1 + x_2}{2}, frac{y_1 + y_2}{2}\\right)\\).",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Midpoint of \\(AB\\) with \\(A(2, -5)\\), \\(B(4, 1)\\).\n\\(P = \\left(\\dfrac{2+4}{2},\\dfrac{-5+1}{2}\\right) = (3, -2)\\)\n\n**Step 2:** Midpoint of \\(BC\\) with \\(B(4, 1)\\), \\(C(-4, 5)\\).\n\\(Q = \\left(\\dfrac{4+(-4)}{2},\\dfrac{1+5}{2}\\right) = (0, 3)\\)\n\n**Step 3:** Midpoint of \\(CD\\) with \\(C(-4, 5)\\), \\(D(-2, -1)\\).\n\\(R = \\left(\\dfrac{-4+(-2)}{2},\\dfrac{5+(-1)}{2}\\right) = (-3, 2)\\)\n\n**Step 4:** Midpoint of \\(DA\\) with \\(D(-2, -1)\\), \\(A(2, -5)\\).\n\\(S = \\left(\\dfrac{-2+2}{2},\\dfrac{-1+(-5)}{2}\\right) = (0, -3)\\)",
+          "steps": [
+            {
+              "explain": "Midpoint of \\(AB\\) with \\(A(2, -5)\\), \\(B(4, 1)\\).",
+              "work": "\\(P = \\left(\\dfrac{2+4}{2},\\dfrac{-5+1}{2}\\right) = (3, -2)\\)"
+            },
+            {
+              "explain": "Midpoint of \\(BC\\) with \\(B(4, 1)\\), \\(C(-4, 5)\\).",
+              "work": "\\(Q = \\left(\\dfrac{4+(-4)}{2},\\dfrac{1+5}{2}\\right) = (0, 3)\\)"
+            },
+            {
+              "explain": "Midpoint of \\(CD\\) with \\(C(-4, 5)\\), \\(D(-2, -1)\\).",
+              "work": "\\(R = \\left(\\dfrac{-4+(-2)}{2},\\dfrac{5+(-1)}{2}\\right) = (-3, 2)\\)"
+            },
+            {
+              "explain": "Midpoint of \\(DA\\) with \\(D(-2, -1)\\), \\(A(2, -5)\\).",
+              "work": "\\(S = \\left(\\dfrac{-2+2}{2},\\dfrac{-1+(-5)}{2}\\right) = (0, -3)\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q18b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Using the midpoints \\(P(3, -2)\\), \\(Q(0, 3)\\), \\(R(-3, 2)\\), and \\(S(0, -3)\\), prove that \\(PQRS\\) is a parallelogram by showing that \\(PQ \\parallel RS\\) and \\(PS \\parallel QR\\).",
+          "answer": "m_PQ = -5/3, m_RS = -5/3 (so PQ || RS); m_PS = -1/3, m_QR = -1/3 (so PS || QR).\nHence PQRS is a parallelogram.",
+          "hint": "Calculate gradients of the sides of the quadrilateral PQRS and check if opposite sides are parallel.",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Gradient of \\(PQ\\) with \\(P(3, -2)\\), \\(Q(0, 3)\\).\n\\(m_{PQ} = \\dfrac{3-(-2)}{0-3} = \\dfrac{5}{-3} = -\\dfrac{5}{3}\\)\n\n**Step 2:** Gradient of opposite side \\(RS\\) with \\(R(-3, 2)\\), \\(S(0, -3)\\).\n\\(m_{RS} = \\dfrac{-3-2}{0-(-3)} = \\dfrac{-5}{3} = -\\dfrac{5}{3}\\)\n\n**Step 3:** Equal gradients \\(\\Rightarrow\\) \\(PQ \\parallel RS\\). Now \\(PS\\) and \\(QR\\).\n\\(m_{PS} = \\dfrac{-3-(-2)}{0-3} = \\dfrac{-1}{-3} = \\dfrac{1}{3},\\; m_{QR} = \\dfrac{2-3}{-3-0} = \\dfrac{-1}{-3} = \\dfrac{1}{3}\\)\n\n**Step 4:** Also \\(PS \\parallel QR\\). Both pairs of opposite sides parallel \\(\\Rightarrow\\) \\(PQRS\\) is a parallelogram.\nparallelogram",
+          "steps": [
+            {
+              "explain": "Gradient of \\(PQ\\) with \\(P(3, -2)\\), \\(Q(0, 3)\\).",
+              "work": "\\(m_{PQ} = \\dfrac{3-(-2)}{0-3} = \\dfrac{5}{-3} = -\\dfrac{5}{3}\\)"
+            },
+            {
+              "explain": "Gradient of opposite side \\(RS\\) with \\(R(-3, 2)\\), \\(S(0, -3)\\).",
+              "work": "\\(m_{RS} = \\dfrac{-3-2}{0-(-3)} = \\dfrac{-5}{3} = -\\dfrac{5}{3}\\)"
+            },
+            {
+              "explain": "Equal gradients \\(\\Rightarrow\\) \\(PQ \\parallel RS\\). Now \\(PS\\) and \\(QR\\).",
+              "work": "\\(m_{PS} = \\dfrac{-3-(-2)}{0-3} = \\dfrac{-1}{-3} = \\dfrac{1}{3},\\; m_{QR} = \\dfrac{2-3}{-3-0} = \\dfrac{-1}{-3} = \\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Also \\(PS \\parallel QR\\). Both pairs of opposite sides parallel \\(\\Rightarrow\\) \\(PQRS\\) is a parallelogram.",
+              "work": "parallelogram"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q19a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Show that the points \\(A(-6, 0)\\), \\(B(6, 0)\\), and \\(C(4, sqrt{20})\\) all lie on the circle \\(x^2 + y^2 = 36\\).",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -7.5,
+                7.5,
+                7.5,
+                -7.5
+              ],
+              "width": 340,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-7.5,0],[7.5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-7.5],[0,7.5]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [6.6, -2.625, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 6.75, 'y'], {fontSize:13, color:'#64748b'}); board.create('circle', [[0,0], 6], {strokeColor:'#6366f1', strokeWidth:2.5, fillColor:'#6366f1', fillOpacity:0.06}); board.create('point', [0,0], {name:'O', size:2, color:'#64748b', fixed:true}); board.create('text', [3, 4.5, 'x² + y² = 36'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 340
+            }
+          },
+          "answer": "(-6)^2 + 0^2 = 36; 6^2 + 0^2 = 36; 4^2 + (sqrt(20))^2 = 16 + 20 = 36.\nSince all coordinates satisfy the equation, they all lie on the circle.",
+          "hint": "Substitute the coordinates of each point into the circle equation \\(x^2 + y^2\\) and check if the sum equals \\(36\\).",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Substitute \\(A(-6, 0)\\) into \\(x^2 + y^2 = 36\\).\n\\((-6)^2 + 0^2 = 36 = 36\\) ✓\n\n**Step 2:** Substitute \\(B(6, 0)\\).\n\\(6^2 + 0^2 = 36 = 36\\) ✓\n\n**Step 3:** Substitute \\(C(4, \\sqrt{20})\\).\n\\(4^2 + (\\sqrt{20})^2 = 16 + 20 = 36\\) ✓\n\n**Step 4:** All three points satisfy the circle equation, so they all lie on the circle.\nall on \\(x^2+y^2=36\\)",
+          "steps": [
+            {
+              "explain": "Substitute \\(A(-6, 0)\\) into \\(x^2 + y^2 = 36\\).",
+              "work": "\\((-6)^2 + 0^2 = 36 = 36\\) ✓"
+            },
+            {
+              "explain": "Substitute \\(B(6, 0)\\).",
+              "work": "\\(6^2 + 0^2 = 36 = 36\\) ✓"
+            },
+            {
+              "explain": "Substitute \\(C(4, \\sqrt{20})\\).",
+              "work": "\\(4^2 + (\\sqrt{20})^2 = 16 + 20 = 36\\) ✓"
+            },
+            {
+              "explain": "All three points satisfy the circle equation, so they all lie on the circle.",
+              "work": "all on \\(x^2+y^2=36\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q19b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Explain why \\(AB\\) is a diameter of the circle \\(x^2 + y^2 = 36\\) for \\(A(-6, 0)\\) and \\(B(6, 0)\\).",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -7.5,
+                7.5,
+                7.5,
+                -7.5
+              ],
+              "width": 340,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-7.5,0],[7.5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-7.5],[0,7.5]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [6.6, -2.625, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 6.75, 'y'], {fontSize:13, color:'#64748b'}); board.create('circle', [[0,0], 6], {strokeColor:'#6366f1', strokeWidth:2.5, fillColor:'#6366f1', fillOpacity:0.06}); board.create('point', [0,0], {name:'O', size:2, color:'#64748b', fixed:true}); board.create('text', [3, 4.5, 'x² + y² = 36'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 340
+            }
+          },
+          "answer": "The midpoint of AB is (0,0), which is the center of the circle, and the length of AB is 12, which is twice the radius.\nThus, AB is a diameter.",
+          "hint": "Find the midpoint of segment AB and verify that it matches the center of the circle \\((0,0)\\).",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** The centre of \\(x^2 + y^2 = 36\\) is the origin \\((0, 0)\\) and the radius is \\(6\\).\ncentre \\((0,0)\\), \\(r = 6\\)\n\n**Step 2:** Midpoint of \\(AB\\) with \\(A(-6, 0)\\), \\(B(6, 0)\\).\n\\(M = \\left(\\dfrac{-6+6}{2},\\dfrac{0+0}{2}\\right) = (0, 0)\\)\n\n**Step 3:** The midpoint is the centre, and length \\(AB = 12 = 2r\\).\n\\(AB = 12 = 2 \\times 6\\)\n\n**Step 4:** A chord whose midpoint is the centre is a diameter, so \\(AB\\) is a diameter.\n\\(AB\\) is a diameter",
+          "steps": [
+            {
+              "explain": "The centre of \\(x^2 + y^2 = 36\\) is the origin \\((0, 0)\\) and the radius is \\(6\\).",
+              "work": "centre \\((0,0)\\), \\(r = 6\\)"
+            },
+            {
+              "explain": "Midpoint of \\(AB\\) with \\(A(-6, 0)\\), \\(B(6, 0)\\).",
+              "work": "\\(M = \\left(\\dfrac{-6+6}{2},\\dfrac{0+0}{2}\\right) = (0, 0)\\)"
+            },
+            {
+              "explain": "The midpoint is the centre, and length \\(AB = 12 = 2r\\).",
+              "work": "\\(AB = 12 = 2 \\times 6\\)"
+            },
+            {
+              "explain": "A chord whose midpoint is the centre is a diameter, so \\(AB\\) is a diameter.",
+              "work": "\\(AB\\) is a diameter"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q19c",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Show that \\(AC \\perp BC\\) for \\(A(-6, 0)\\), \\(B(6, 0)\\), and \\(C(4, sqrt{20})\\).",
+          "answer": "m_AC = sqrt(20)/10, m_BC = -sqrt(20)/2.\nm_AC * m_BC = sqrt(20)/10 * -sqrt(20)/2 = -20/20 = -1.\nTherefore, AC is perpendicular to BC.",
+          "hint": "Compute the gradients of AC and BC and multiply them.",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** Gradient of \\(AC\\) with \\(A(-6, 0)\\), \\(C(4, \\sqrt{20})\\).\n\\(m_{AC} = \\dfrac{\\sqrt{20}-0}{4-(-6)} = \\dfrac{\\sqrt{20}}{10}\\)\n\n**Step 2:** Gradient of \\(BC\\) with \\(B(6, 0)\\), \\(C(4, \\sqrt{20})\\).\n\\(m_{BC} = \\dfrac{\\sqrt{20}-0}{4-6} = \\dfrac{\\sqrt{20}}{-2} = -\\dfrac{\\sqrt{20}}{2}\\)\n\n**Step 3:** Product of the gradients.\n\\(m_{AC}\\cdot m_{BC} = \\dfrac{\\sqrt{20}}{10}\\cdot\\left(-\\dfrac{\\sqrt{20}}{2}\\right) = -\\dfrac{20}{20} = -1\\)\n\n**Step 4:** Product \\(-1\\) means \\(AC \\perp BC\\) (angle in a semicircle / diameter theorem).\n\\(AC \\perp BC\\)",
+          "steps": [
+            {
+              "explain": "Gradient of \\(AC\\) with \\(A(-6, 0)\\), \\(C(4, \\sqrt{20})\\).",
+              "work": "\\(m_{AC} = \\dfrac{\\sqrt{20}-0}{4-(-6)} = \\dfrac{\\sqrt{20}}{10}\\)"
+            },
+            {
+              "explain": "Gradient of \\(BC\\) with \\(B(6, 0)\\), \\(C(4, \\sqrt{20})\\).",
+              "work": "\\(m_{BC} = \\dfrac{\\sqrt{20}-0}{4-6} = \\dfrac{\\sqrt{20}}{-2} = -\\dfrac{\\sqrt{20}}{2}\\)"
+            },
+            {
+              "explain": "Product of the gradients.",
+              "work": "\\(m_{AC}\\cdot m_{BC} = \\dfrac{\\sqrt{20}}{10}\\cdot\\left(-\\dfrac{\\sqrt{20}}{2}\\right) = -\\dfrac{20}{20} = -1\\)"
+            },
+            {
+              "explain": "Product \\(-1\\) means \\(AC \\perp BC\\) (angle in a semicircle / diameter theorem).",
+              "work": "\\(AC \\perp BC\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-7b-q21",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Given the points \\(X(-2, 0)\\), \\(Y(2, a)\\), and \\(Z(a, 3)\\), find \\(a\\) if \\(\\angle YXZ = 90^{\\circ}\\) (enter as a fraction, e.g. -8/7).",
+          "options": [
+            "\\(8/7\\)",
+            "\\(9/7\\)",
+            "\\(-8/7\\)",
+            "\\(7/8\\)"
+          ],
+          "answer": 2,
+          "hint": "Since angle YXZ is 90 degrees, segment XY is perpendicular to XZ. Set the product of their gradients to -1 and solve for a.",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** \\(\\angle YXZ = 90^{\\circ}\\) means lines \\(XY\\) and \\(XZ\\) are perpendicular, so the product of their gradients is \\(-1\\).\n\\(m_{XY}\\cdot m_{XZ} = -1\\)\n\n**Step 2:** Write the gradients in terms of \\(a\\) with \\(X(-2, 0)\\), \\(Y(2, a)\\), \\(Z(a, 3)\\).\n\\(m_{XY} = \\dfrac{a-0}{2-(-2)} = \\dfrac{a}{4},\\quad m_{XZ} = \\dfrac{3-0}{a-(-2)} = \\dfrac{3}{a+2}\\)\n\n**Step 3:** Set the product equal to \\(-1\\) and solve.\n\\(\\dfrac{a}{4}\\cdot\\dfrac{3}{a+2} = -1 \\Rightarrow \\dfrac{3a}{4(a+2)} = -1 \\Rightarrow 3a = -4(a+2)\\)\n\n**Step 4:** Expand and collect terms.\n\\(3a = -4a - 8 \\Rightarrow 7a = -8 \\Rightarrow a = -\\dfrac{8}{7}\\)",
+          "steps": [
+            {
+              "explain": "\\(\\angle YXZ = 90^{\\circ}\\) means lines \\(XY\\) and \\(XZ\\) are perpendicular, so the product of their gradients is \\(-1\\).",
+              "work": "\\(m_{XY}\\cdot m_{XZ} = -1\\)"
+            },
+            {
+              "explain": "Write the gradients in terms of \\(a\\) with \\(X(-2, 0)\\), \\(Y(2, a)\\), \\(Z(a, 3)\\).",
+              "work": "\\(m_{XY} = \\dfrac{a-0}{2-(-2)} = \\dfrac{a}{4},\\quad m_{XZ} = \\dfrac{3-0}{a-(-2)} = \\dfrac{3}{a+2}\\)"
+            },
+            {
+              "explain": "Set the product equal to \\(-1\\) and solve.",
+              "work": "\\(\\dfrac{a}{4}\\cdot\\dfrac{3}{a+2} = -1 \\Rightarrow \\dfrac{3a}{4(a+2)} = -1 \\Rightarrow 3a = -4(a+2)\\)"
+            },
+            {
+              "explain": "Expand and collect terms.",
+              "work": "\\(3a = -4a - 8 \\Rightarrow 7a = -8 \\Rightarrow a = -\\dfrac{8}{7}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y11a-7b-q22",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For the four points \\(P(k, 1)\\), \\(Q(-1, -1)\\), \\(R(2, 2)\\), and \\(S(1, k)\\), it is known that \\(PQ\\) is parallel to \\(RS\\). Find the possible values of \\(k\\) (enter as 'value1, value2').",
+          "options": [
+            "\\(0, 1\\)",
+            "\\(0, -1\\)",
+            "\\(-0, 1\\)",
+            "\\(1, 0\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate gradients of PQ and RS, equate them because the lines are parallel, and solve the quadratic equation for k.",
+          "solution": "### Step-by-Step Solution\n\n**Step 1:** For \\(PQ \\parallel RS\\), the gradients must be equal: \\(m_{PQ} = m_{RS}\\).\n\\(m_{PQ} = m_{RS}\\)\n\n**Step 2:** Gradient of \\(PQ\\) with \\(P(k, 1)\\), \\(Q(-1, -1)\\).\n\\(m_{PQ} = \\dfrac{-1-1}{-1-k} = \\dfrac{-2}{-1-k} = \\dfrac{2}{k+1}\\)\n\n**Step 3:** Gradient of \\(RS\\) with \\(R(2, 2)\\), \\(S(1, k)\\).\n\\(m_{RS} = \\dfrac{k-2}{1-2} = \\dfrac{k-2}{-1} = 2-k\\)\n\n**Step 4:** Set equal and solve the quadratic.\n\\(\\dfrac{2}{k+1} = 2-k \\Rightarrow 2 = (2-k)(k+1) = 2k+2-k^2-k = k+2-k^2\\)\n\n**Step 5:** Rearrange: \\(k^2 - k = 0 \\Rightarrow k(k-1) = 0\\). So \\(k = 0\\) or \\(k = 1\\).\n\\(k = 0,\\; 1\\)",
+          "steps": [
+            {
+              "explain": "For \\(PQ \\parallel RS\\), the gradients must be equal: \\(m_{PQ} = m_{RS}\\).",
+              "work": "\\(m_{PQ} = m_{RS}\\)"
+            },
+            {
+              "explain": "Gradient of \\(PQ\\) with \\(P(k, 1)\\), \\(Q(-1, -1)\\).",
+              "work": "\\(m_{PQ} = \\dfrac{-1-1}{-1-k} = \\dfrac{-2}{-1-k} = \\dfrac{2}{k+1}\\)"
+            },
+            {
+              "explain": "Gradient of \\(RS\\) with \\(R(2, 2)\\), \\(S(1, k)\\).",
+              "work": "\\(m_{RS} = \\dfrac{k-2}{1-2} = \\dfrac{k-2}{-1} = 2-k\\)"
+            },
+            {
+              "explain": "Set equal and solve the quadratic.",
+              "work": "\\(\\dfrac{2}{k+1} = 2-k \\Rightarrow 2 = (2-k)(k+1) = 2k+2-k^2-k = k+2-k^2\\)"
+            },
+            {
+              "explain": "Rearrange: \\(k^2 - k = 0 \\Rightarrow k(k-1) = 0\\). So \\(k = 0\\) or \\(k = 1\\).",
+              "work": "\\(k = 0,\\; 1\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

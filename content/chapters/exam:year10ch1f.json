@@ -1,0 +1,334 @@
+{
+  "chapterId": "exam:year10ch1f",
+  "title": "Exam Practice",
+  "year": "Year 10",
+  "topics": [
+    {
+      "topicId": "exam:year10ch1f",
+      "code": "",
+      "title": "Revision",
+      "questions": [
+        {
+          "id": "y10-1f-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The sum of $8000 is borrowed for $4$ years at $7\\%$ p.a. simple interest. How much interest is paid?",
+          "options": [
+            "\\(2016\\)",
+            "\\(1904\\)",
+            "\\(2240\\)",
+            "\\(2464\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Use the simple interest formula \\(I = PRN\\).",
+              "work": "I = 8000 \\times 0.07 \\times 4"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "I = 2240"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-1f-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The sum of $6000 is borrowed at $8.5\\%$ p.a. simple interest and $1530 is paid in interest. For how many years has the money been borrowed?",
+          "options": [
+            "\\(5\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(2\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Use the simple interest formula \\(I = PRN\\).",
+              "work": "1530 = 6000 \\times 0.085 \\times N"
+            },
+            {
+              "explain": "Simplify the equation.",
+              "work": "1530 = 510 \\times N"
+            },
+            {
+              "explain": "Solve for \\(N\\).",
+              "work": "\\(N = \\frac{1530}{510} = 3\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-1f-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The sum of $9000 is borrowed for $5$ years and $2700 is paid in interest. Calculate the (per annum) rate of simple interest charged, as a percentage.",
+          "options": [
+            "\\(5\\%\\)",
+            "\\(7\\%\\)",
+            "\\(6\\%\\)",
+            "\\(8\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Use the simple interest formula \\(I = PRN\\).",
+              "work": "2700 = 9000 \\times R \\times 5"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "2700 = 45000 \\times R"
+            },
+            {
+              "explain": "Solve for \\(R\\) as a decimal.",
+              "work": "\\(R = \\frac{2700}{45000} = 0.06\\)"
+            },
+            {
+              "explain": "Convert to a percentage.",
+              "work": "0.06 \\times 100\\% = 6\\%"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-1f-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A department store is offering a $30\\%$ discount on all items in the store. Calculate the discounted price on a jacket with a marked price of $250.",
+          "options": [
+            "\\(193\\)",
+            "\\(175\\)",
+            "\\(158\\)",
+            "\\(149\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Find the multiplier for a \\(30\\%\\) discount.",
+              "work": "100\\% - 30\\% = 70\\% = 0.7"
+            },
+            {
+              "explain": "Multiply the marked price by the multiplier.",
+              "work": "250 \\times 0.7 = 175"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-1f-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A music store is offering a $35\\%$ discount during a sale. Calculate the original marked price of a DVD that has a sale price of $15.60.",
+          "options": [
+            "\\(24\\)",
+            "\\(20\\)",
+            "\\(22\\)",
+            "\\(26\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "A \\(35\\%\\) discount leaves \\(65\\%\\) of the price.",
+              "work": "\\(0.65 \\times \\text{Original} = 15.60\\)"
+            },
+            {
+              "explain": "Divide to find the original price.",
+              "work": "\\(\\text{Original} = \\frac{15.60}{0.65} = 24\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-1f-q6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A music store is offering a $35\\%$ discount during a sale. Calculate the original marked price of a boxed set of DVDs that has a sale price of $52.",
+          "options": [
+            "\\(88\\)",
+            "\\(68\\)",
+            "\\(80\\)",
+            "\\(72\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "A \\(35\\%\\) discount leaves \\(65\\%\\) of the price.",
+              "work": "\\(0.65 \\times \\text{Original} = 52\\)"
+            },
+            {
+              "explain": "Divide to find the original price.",
+              "work": "\\(\\text{Original} = \\frac{52}{0.65} = 80\\)"
+            }
+          ],
+          "timeLimit": 30
+        },
+        {
+          "id": "y10-1f-q10a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A quantity is increased by $10\\%$. What further percentage change, applied to the increased value, is required to produce an overall increase of $43\\%$?",
+          "options": [
+            "\\(Increase of 27\\\\%\\)",
+            "\\(Increase of 30\\\\%\\)",
+            "\\(Increase of 24\\\\%\\)",
+            "\\(Increase of 33\\\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Let the further multiplier be \\(x\\).",
+              "work": "1.10 \\times x = 1.43"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "\\(x = \\frac{1.43}{1.10} = 1.30\\)"
+            },
+            {
+              "explain": "A multiplier of \\(1.30\\) means a \\(30\\%\\) increase.",
+              "work": "\\(\\text{Increase of 30\\%}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-1f-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A quantity is increased by $10\\%$. What further percentage change, applied to the increased value, is required to produce an overall increase of $21\\%$?",
+          "options": [
+            "\\(Increase of 11\\\\%\\)",
+            "\\(Increase of 8\\\\%\\)",
+            "\\(Increase of 10\\\\%\\)",
+            "\\(Increase of 9\\\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Let the further multiplier be \\(x\\).",
+              "work": "1.10 \\times x = 1.21"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "\\(x = \\frac{1.21}{1.10} = 1.10\\)"
+            },
+            {
+              "explain": "A multiplier of \\(1.10\\) means a \\(10\\%\\) increase.",
+              "work": "\\(\\text{Increase of 10\\%}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-1f-q10c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A quantity is increased by $10\\%$. What further percentage change, applied to the increased value, is required to produce an overall decrease of $23\\%$?",
+          "options": [
+            "\\(Decrease of 33\\\\%\\)",
+            "\\(Decrease of 30\\\\%\\)",
+            "\\(Decrease of 24\\\\%\\)",
+            "\\(Decrease of 27\\\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Let the further multiplier be \\(x\\). A \\(23\\%\\) decrease means a multiplier of \\(0.77\\).",
+              "work": "1.10 \\times x = 0.77"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "\\(x = \\frac{0.77}{1.10} = 0.70\\)"
+            },
+            {
+              "explain": "A multiplier of \\(0.70\\) means a \\(30\\%\\) decrease.",
+              "work": "\\(\\text{Decrease of 30\\%}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-1f-q10d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A quantity is increased by $10\\%$. What further percentage change, applied to the increased value, is required to produce an overall decrease of $1\\%$?",
+          "options": [
+            "\\(Decrease of 9\\\\%\\)",
+            "\\(Decrease of 10\\\\%\\)",
+            "\\(Decrease of 11\\\\%\\)",
+            "\\(Decrease of 8\\\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Let the further multiplier be \\(x\\). A \\(1\\%\\) decrease means a multiplier of \\(0.99\\).",
+              "work": "1.10 \\times x = 0.99"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "\\(x = \\frac{0.99}{1.10} = 0.90\\)"
+            },
+            {
+              "explain": "A multiplier of \\(0.90\\) means a \\(10\\%\\) decrease.",
+              "work": "\\(\\text{Decrease of 10\\%}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-1f-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the amount that an investment of $20,000 will be worth if it is invested at $5.5\\%$ p.a. for $8$ years compounded annually.",
+          "options": [
+            "\\(27623.98\\)",
+            "\\(33762.64\\)",
+            "\\(26089.31\\)",
+            "\\(30693.31\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Use the compound interest formula \\(A = P(1+R)^n\\).",
+              "work": "A = 20000(1 + 0.055)^8"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "A = 20000(1.055)^8 \\approx 30693.308"
+            },
+            {
+              "explain": "Round to the nearest cent.",
+              "work": "$30693.31"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-1f-q12a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the amount that an investment of $15,000 will be worth if it is invested at $6\\%$ p.a. for $5$ years compounded annually.",
+          "options": [
+            "\\(22080.72\\)",
+            "\\(20073.38\\)",
+            "\\(18066.04\\)",
+            "\\(17062.37\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Use the compound interest formula \\(A = P(1+R)^n\\).",
+              "work": "A = 15000(1 + 0.06)^5"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "A \\approx 20073.38"
+            }
+          ],
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

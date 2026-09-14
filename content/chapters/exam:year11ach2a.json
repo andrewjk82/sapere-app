@@ -1,0 +1,267 @@
+{
+  "chapterId": "exam:year11ach2a",
+  "title": "Exam year11ach2a",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ach2a",
+      "code": "EXAM",
+      "title": "Real numbers and intervals",
+      "questions": [
+        {
+          "id": "y11a-2a-q1b",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Classify \\(-3\\).",
+          "answer": "2",
+          "hint": "Natural numbers are positive counting numbers: \\(1, 2, 3, \\ldots\\)",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Real numbers and intervals: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "Identify given data"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(0\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q1g",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Classify \\(0\\).",
+          "answer": "2",
+          "hint": "Natural numbers start at 1.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Real numbers and intervals: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "Identify given data"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(0\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q2a",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Convert \\((6, \\infty)\\) to inequality notation.",
+          "answer": "2",
+          "hint": "A round bracket means the endpoint is NOT included.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "A round bracket \\((\\) means the endpoint is excluded (strict inequality)."
+            },
+            {
+              "explain": "\\((6, infty)\\) means all \\(x\\) greater than 6 (not including 6).",
+              "work": "\\(x > 6\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q2c",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Convert \\([4, \\infty)\\) to inequality notation.",
+          "answer": "1",
+          "hint": "Square bracket at 4 means 4 is included.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "\\([4, infty)\\) starts at 4 with a square bracket — 4 is included.",
+              "work": "\\(x \\ge 4\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q3a",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Write \\(x > -4\\) in interval notation.",
+          "answer": "3",
+          "hint": "Strict inequality \\(>\\) → round bracket.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "\\(x > -4\\) means \\(x\\) is strictly greater than \\(-4\\) — \\(-4\\) is not included."
+            },
+            {
+              "explain": "Excluded endpoint \\(-4\\) → round bracket. Extending to \\(+\\infty\\).",
+              "work": "\\((-4, infty)\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q3b",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Write \\(x \\ge -3\\) in interval notation.",
+          "answer": "0",
+          "hint": "\\(\\ge\\) means the endpoint IS included → square bracket.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "\\(x \\ge -3\\): \\(-3\\) is included (\\(\\ge\\)) → square bracket.",
+              "work": "\\([-3, infty)\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q3h",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Write \\(x \\ge 6\\) in interval notation.",
+          "answer": "3",
+          "hint": "\\(\\ge\\) includes 6 → square bracket, extending to \\(+\\infty\\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "\\(x \\ge 6\\): 6 included → square bracket; extends to \\(+\\infty\\).",
+              "work": "\\([6, infty)\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q3k",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Write \\(x < -2\\) OR \\(x \\ge 1\\) in interval notation.",
+          "answer": "2",
+          "hint": "OR combines two separate intervals with \\(\\cup\\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Real numbers and intervals: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "Identify given data"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(0\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q5a",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Which interval represents \\(x > -2\\)?",
+          "answer": "0",
+          "hint": "Strict \\(>\\) → round bracket (excluded).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "\\(x > -2\\): extends right from \\(-2\\) (excluded).",
+              "work": "\\((-2, infty)\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q5d",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Is \\(x \\ge 6\\) a bounded or unbounded set of numbers?",
+          "answer": "3",
+          "hint": "Does the interval have both a finite upper bound AND a finite lower bound?",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Real numbers and intervals: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "Identify given data"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(0\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q6b",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Which of the following is a natural number?",
+          "answer": "2",
+          "hint": "Natural numbers are the positive counting numbers: 1, 2, 3, …",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Real numbers and intervals: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "Identify given data"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "State the rule"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(0\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2686 @@
+{
+  "chapterId": "y6-rn",
+  "title": "Chapter 3: Represents Numbers (B)",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "y6-rn-2",
+      "code": "MA3-RN-01",
+      "title": "Fractions, decimals, percentages",
+      "questions": [
+        {
+          "id": "y6-rn-2-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A rectangular grid is divided into \\\\(10\\\\) equal horizontal strips. If \\\\(3\\\\) of these strips are shaded, write down the shaded area as a decimal.",
+          "options": [
+            "\\\\(0.7\\\\)",
+            "\\\\(0.3\\\\)",
+            "\\\\(3.0\\\\)",
+            "\\\\(0.03\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Count the number of shaded parts out of the total 10 parts, then convert the fraction to a decimal.",
+          "steps": [
+            {
+              "explain": "We first identify the fraction of the grid that is shaded. There are 3 shaded parts out of a total of 10 equal parts.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{3}{10}\\\\)"
+            },
+            {
+              "explain": "To convert a fraction with a denominator of 10 into a decimal, we write down the numerator and place the decimal point one position to the left.",
+              "work": "\\\\(\\\\frac{3}{10} = 0.3\\\\)"
+            },
+            {
+              "explain": "Thus, the shaded region represents 0.3 of the total grid area. This matches the first option.",
+              "work": "\\\\(\\text{Decimal} = 0.3\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A grid of \\\\(100\\\\) equal squares has \\\\(58\\\\) squares shaded. Write down the shaded area as a decimal.",
+          "options": [
+            "\\\\(0.58\\\\)",
+            "\\\\(0.058\\\\)",
+            "\\\\(5.8\\\\)",
+            "\\\\(0.42\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Write the fraction representing 58 parts out of 100, then convert to a decimal.",
+          "steps": [
+            {
+              "explain": "We write the fraction of the grid that is shaded. Since 58 squares are shaded out of 100 total squares, the fraction is 58 hundredths.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{58}{100}\\\\)"
+            },
+            {
+              "explain": "To convert a fraction with a denominator of 100 to a decimal, move the decimal point in the numerator two positions to the left.",
+              "work": "\\\\(\\\\frac{58}{100} = 0.58\\\\)"
+            },
+            {
+              "explain": "We conclude that 58 hundredths is equal to 0.58, representing the shaded area.",
+              "work": "\\\\(\\text{Decimal} = 0.58\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A grid of \\\\(100\\\\) equal squares has \\\\(9\\\\) squares shaded. Write down the shaded area as a decimal.",
+          "options": [
+            "\\\\(0.9\\\\)",
+            "\\\\(0.91\\\\)",
+            "\\\\(9.0\\\\)",
+            "\\\\(0.09\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Make sure to place a placeholder zero in the tenths column, since there are only 9 hundredths and no tenths.",
+          "steps": [
+            {
+              "explain": "We start by writing the fraction representing the shaded region. 9 squares out of 100 total squares are shaded.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{9}{100}\\\\)"
+            },
+            {
+              "explain": "When dividing 9 by 100, we move the decimal point two places to the left, which requires inserting a placeholder zero in the tenths place.",
+              "work": "\\\\(\\\\frac{9}{100} = 0.09\\\\)"
+            },
+            {
+              "explain": "Therefore, the shaded area written as a decimal is 0.09.",
+              "work": "\\\\(\\text{Decimal} = 0.09\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the place value of the digit \\\\(7\\\\) in the decimal number \\\\(53.72\\\\)?",
+          "options": [
+            "Tenths (\\\\(0.7\\\\))",
+            "Units (\\\\(7\\\\))",
+            "Hundredths (\\\\(0.07\\\\))",
+            "Tens (\\\\(70\\\\))"
+          ],
+          "answer": 0,
+          "hint": "Identify the position of the digit 7 relative to the decimal point. It is the first digit to the right of the decimal point.",
+          "steps": [
+            {
+              "explain": "Analyze the digits in the number 53.72 relative to the decimal point. The digit 5 is in the tens place, 3 is in the units place, 7 is in the first place to the right, and 2 is in the second place to the right.",
+              "work": "\\\\(53.72 = 50 + 3 + 0.7 + 0.02\\\\)"
+            },
+            {
+              "explain": "The first place to the right of the decimal point is called the tenths place. Thus, the digit 7 represents seven tenths.",
+              "work": "\\\\(\\text{Place value of } 7 = \\\\frac{7}{10} = 0.7\\\\)"
+            },
+            {
+              "explain": "We conclude that the place value of 7 in 53.72 is tenths, which corresponds to the value 0.7.",
+              "work": "\\\\(\\text{Result} = \\\\text{Tenths}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the place value of the digit \\\\(7\\\\) in the number \\\\(631.079\\\\)?",
+          "options": [
+            "Thousandths (\\\\(0.007\\\\))",
+            "Tens (\\\\(70\\\\))",
+            "Tenths (\\\\(0.7\\\\))",
+            "Hundredths (\\\\(0.07\\\\))"
+          ],
+          "answer": 3,
+          "hint": "Count the number of decimal places to the right of the decimal point. The digit 7 is in the second decimal place.",
+          "steps": [
+            {
+              "explain": "Decompose the number 631.079 to inspect the place value of each digit. 6 is in the hundreds place, 3 in tens, 1 in units, 0 in tenths, 7 in hundredths, and 9 in thousandths.",
+              "work": "\\\\(631.079 = 600 + 30 + 1 + 0 + 0.07 + 0.009\\\\)"
+            },
+            {
+              "explain": "The second digit to the right of the decimal point represents hundredths. The digit 7 therefore stands for seven hundredths.",
+              "work": "\\\\(\\text{Place value of } 7 = \\\\frac{7}{100} = 0.07\\\\)"
+            },
+            {
+              "explain": "Hence, the place value of the digit 7 is hundredths (0.07).",
+              "work": "\\\\(\\text{Result} = \\\\text{Hundredths}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the place value of the digit \\\\(7\\\\) in the number \\\\(73.5\\\\)?",
+          "options": [
+            "Units (\\\\(7\\\\))",
+            "Tens (\\\\(70\\\\))",
+            "Hundreds (\\\\(700\\\\))",
+            "Tenths (\\\\(0.7\\\\))"
+          ],
+          "answer": 1,
+          "hint": "Locate the digit 7 relative to the decimal point. It is to the left of the decimal point, in the second position.",
+          "steps": [
+            {
+              "explain": "Write the number 73.5 in expanded notation. This helps us see the place value of each digit clearly.",
+              "work": "\\\\(73.5 = 70 + 3 + 0.5\\\\)"
+            },
+            {
+              "explain": "The digit 7 is in the tens position (two places to the left of the decimal point). Its value is seven tens.",
+              "work": "\\\\(\\text{Value} = 7 \\\\times 10 = 70\\\\)"
+            },
+            {
+              "explain": "Thus, the place value of 7 is tens.",
+              "work": "\\\\(\\text{Result} = \\\\text{Tens}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the place value of the digit \\\\(7\\\\) in the number \\\\(5.937\\\\)?",
+          "options": [
+            "Hundredths (\\\\(0.07\\\\))",
+            "Thousandths (\\\\(0.007\\\\))",
+            "Units (\\\\(7\\\\))",
+            "Tenths (\\\\(0.7\\\\))"
+          ],
+          "answer": 1,
+          "hint": "Identify the position of the digit 7. It is the third digit to the right of the decimal point.",
+          "steps": [
+            {
+              "explain": "Expand the number 5.937 into its components. 5 is in units, 9 in tenths, 3 in hundredths, and 7 in thousandths.",
+              "work": "\\\\(5.937 = 5 + 0.9 + 0.03 + 0.007\\\\)"
+            },
+            {
+              "explain": "The third digit to the right of the decimal point represents thousandths. Therefore, the digit 7 represents seven thousandths.",
+              "work": "\\\\(\\text{Place value of } 7 = \\\\frac{7}{1000} = 0.007\\\\)"
+            },
+            {
+              "explain": "We conclude that the place value of 7 in 5.937 is thousandths.",
+              "work": "\\dots \\\\implies \\\\text{Thousandths}"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Order the following numbers from greatest to least: \\\\(5.69, 5.7, 5.71\\\\).",
+          "options": [
+            "\\\\(5.71, 5.69, 5.7\\\\)",
+            "\\\\(5.7, 5.71, 5.69\\\\)",
+            "\\\\(5.71, 5.7, 5.69\\\\)",
+            "\\\\(5.69, 5.7, 5.71\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Compare the digits in the tenths and hundredths places. You can write 5.7 as 5.70 to make comparison easier.",
+          "steps": [
+            {
+              "explain": "To compare these numbers easily, write each number with the same number of decimal places by adding trailing zeros where needed.",
+              "work": "\\\\(5.69, \\\\quad 5.70, \\\\quad 5.71\\\\)"
+            },
+            {
+              "explain": "Now compare the decimal parts: 71 hundredths is larger than 70 hundredths, which is larger than 69 hundredths.",
+              "work": "\\\\(71 > 70 > 69 \\\\implies 5.71 > 5.70 > 5.69\\\\)"
+            },
+            {
+              "explain": "Ordering from greatest to least, we get 5.71 first, then 5.7 (or 5.70), and finally 5.69.",
+              "work": "\\\\(5.71, 5.7, 5.69\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Order the following numbers from greatest to least: \\\\(3.47, 3.45, 3.54\\\\).",
+          "options": [
+            "\\\\(3.45, 3.47, 3.54\\\\)",
+            "\\\\(3.54, 3.47, 3.45\\\\)",
+            "\\\\(3.47, 3.54, 3.45\\\\)",
+            "\\\\(3.54, 3.45, 3.47\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Compare the tenths digit first. 3.54 has 5 in the tenths place, while the others have 4.",
+          "steps": [
+            {
+              "explain": "We compare the tenths digit of each number. 3.54 has a tenths digit of 5, while 3.47 and 3.45 have a tenths digit of 4. Therefore, 3.54 is the largest.",
+              "work": "\\\\(3.54 > 3.4x\\\\)"
+            },
+            {
+              "explain": "Next, compare the remaining numbers 3.47 and 3.45 by looking at their hundredths digits. 7 hundredths is greater than 5 hundredths.",
+              "work": "\\\\(7 > 5 \\\\implies 3.47 > 3.45\\\\)"
+            },
+            {
+              "explain": "Putting them together from greatest to least gives us 3.54, then 3.47, and lastly 3.45.",
+              "work": "\\\\(3.54 > 3.47 > 3.45\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the decimal \\\\(0.3\\\\) into a fraction.",
+          "options": [
+            "\\\\(\\frac{1}{3}\\\\)",
+            "\\\\(\\frac{3}{100}\\\\)",
+            "\\\\(\\frac{3}{1}\\\\)",
+            "\\\\(\\frac{3}{10}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "0.3 has one decimal digit, representing tenths. Write it over 10.",
+          "steps": [
+            {
+              "explain": "Identify the place value of the last digit in 0.3. Since 3 is in the tenths place, the number represents 3 tenths.",
+              "work": "\\\\(0.3 = 3 \\\\text{ tenths}\\\\)"
+            },
+            {
+              "explain": "Write this place value as a fraction with a denominator of 10.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{3}{10}\\\\)"
+            },
+            {
+              "explain": "This fraction cannot be simplified further because 3 and 10 share no common factors other than 1. Thus, the final answer is 3/10.",
+              "work": "\\\\(\\text{Simplified} = \\\\frac{3}{10}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the decimal \\\\(2.9\\\\) into a fraction (or mixed numeral).",
+          "options": [
+            "\\\\(\\frac{2}{9}\\\\)",
+            "\\\\(2\\frac{9}{10}\\\\)",
+            "\\\\(\\frac{29}{100}\\\\)",
+            "\\\\(2\\frac{9}{100}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Separate the whole number part (2) and the decimal part (0.9). Convert 0.9 to a fraction.",
+          "steps": [
+            {
+              "explain": "Separate the number 2.9 into its whole number and decimal parts.",
+              "work": "\\\\(2.9 = 2 + 0.9\\\\)"
+            },
+            {
+              "explain": "Convert the decimal part, 0.9, into a fraction. Since 9 is in the tenths place, it is 9 tenths.",
+              "work": "\\\\(0.9 = \\\\frac{9}{10}\\\\)"
+            },
+            {
+              "explain": "Combine the whole number and the fraction to write it as a mixed numeral.",
+              "work": "\\\\(2.9 = 2\\\\frac{9}{10}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the decimal \\\\(0.07\\\\) into a fraction.",
+          "options": [
+            "\\\\(\\frac{7}{10}\\\\)",
+            "\\\\(\\frac{7}{100}\\\\)",
+            "\\\\(\\frac{70}{100}\\\\)",
+            "\\\\(\\frac{7}{1000}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "There are two decimal places in 0.07, meaning it represents hundredths.",
+          "steps": [
+            {
+              "explain": "Determine the place value of the last digit in 0.07. The digit 7 is in the hundredths place (second place to the right of the decimal).",
+              "work": "\\\\(0.07 = 7 \\\\text{ hundredths}\\\\)"
+            },
+            {
+              "explain": "Write this value as a fraction with 7 in the numerator and 100 in the denominator.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{7}{100}\\\\)"
+            },
+            {
+              "explain": "Since 7 is a prime number and does not divide 100, the fraction is in its simplest form.",
+              "work": "\\\\(\\text{Result} = \\\\frac{7}{100}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the decimal \\\\(0.57\\\\) into a fraction.",
+          "options": [
+            "\\\\(\\frac{57}{10}\\\\)",
+            "\\\\(\\frac{57}{1000}\\\\)",
+            "\\\\(\\frac{57}{100}\\\\)",
+            "\\\\(\\frac{5.7}{10}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the digits 57 over 100 because there are two numbers after the decimal point.",
+          "steps": [
+            {
+              "explain": "Analyze the decimal places in 0.57. It has two decimal digits (5 in tenths and 7 in hundredths), which represents 57 hundredths.",
+              "work": "\\\\(0.57 = 57 \\\\text{ hundredths}\\\\)"
+            },
+            {
+              "explain": "Write this value as a fraction with a denominator of 100.",
+              "work": "\\dots \\\\implies \\\\frac{57}{100}"
+            },
+            {
+              "explain": "Check if 57/100 can be simplified. 57 is divisible by 3 and 19, but 100 is not. Thus, the fraction is in its simplest form.",
+              "work": "\\\\(\\text{Final Fraction} = \\\\frac{57}{100}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the fraction \\\\(\\frac{6}{10}\\\\) into a decimal.",
+          "options": [
+            "\\\\(0.6\\\\)",
+            "\\\\(0.06\\\\)",
+            "\\\\(6.0\\\\)",
+            "\\\\(0.66\\\\)"
+          ],
+          "answer": 0,
+          "hint": "A denominator of 10 means there should be one digit after the decimal point.",
+          "steps": [
+            {
+              "explain": "Understand that the fraction is six tenths.",
+              "work": "\\\\(\\frac{6}{10} = 6 \\\\text{ tenths}\\\\)"
+            },
+            {
+              "explain": "Convert tenths into a decimal by placing the digit 6 in the tenths column, which is the first position to the right of the decimal point.",
+              "work": "\\\\(6 \\\\text{ tenths} = 0.6\\\\)"
+            },
+            {
+              "explain": "Therefore, the decimal representation is 0.6.",
+              "work": "\\\\(\\text{Result} = 0.6\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the fraction \\\\(\\frac{23}{100}\\\\) into a decimal.",
+          "options": [
+            "\\\\(23.0\\\\)",
+            "\\\\(0.23\\\\)",
+            "\\\\(0.023\\\\)",
+            "\\\\(2.3\\\\)"
+          ],
+          "answer": 1,
+          "hint": "A denominator of 100 means there should be two digits after the decimal point.",
+          "steps": [
+            {
+              "explain": "We read the fraction as 23 hundredths.",
+              "work": "\\dots \\\\implies 23 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "To convert 23 hundredths to a decimal, write 23 with the decimal point moved two places to the left, which yields 0.23.",
+              "work": "\\\\(\\\\frac{23}{100} = 0.23\\\\)"
+            },
+            {
+              "explain": "Thus, the fraction 23/100 is equivalent to the decimal 0.23.",
+              "work": "\\\\(\\text{Result} = 0.23\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the fraction \\\\(\\frac{7}{1000}\\\\) into a decimal.",
+          "options": [
+            "\\\\(0.07\\\\)",
+            "\\\\(0.0007\\\\)",
+            "\\\\(0.007\\\\)",
+            "\\\\(0.7\\\\)"
+          ],
+          "answer": 2,
+          "hint": "A denominator of 1000 means the digit 7 should be in the thousandths place (the third digit after the decimal point).",
+          "steps": [
+            {
+              "explain": "We interpret the fraction as seven thousandths.",
+              "work": "\\\\(\\frac{7}{1000} = 7 \\\\text{ thousandths}\\\\)"
+            },
+            {
+              "explain": "In a decimal place value chart, the thousandths place is three steps to the right of the decimal point. We add zero placeholders for the tenths and hundredths places.",
+              "work": "\\\\(7 \\\\text{ thousandths} = 0.007\\\\)"
+            },
+            {
+              "explain": "Thus, the fraction written as a decimal is 0.007.",
+              "work": "\\\\(\\text{Result} = 0.007\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the mixed numeral \\\\(3\\\\frac{18}{100}\\\\) into a decimal.",
+          "options": [
+            "\\\\(3.18\\\\)",
+            "\\\\(31.8\\\\)",
+            "\\\\(0.318\\\\)",
+            "\\\\(3.018\\\\)"
+          ],
+          "answer": 0,
+          "hint": "The whole number part is 3, which goes before the decimal point. The fraction is 18 hundredths.",
+          "steps": [
+            {
+              "explain": "Separate the mixed number into its whole number and fractional parts.",
+              "work": "\\\\(3\\\\frac{18}{100} = 3 + \\\\frac{18}{100}\\\\)"
+            },
+            {
+              "explain": "Convert the fractional part (18 hundredths) into a decimal.",
+              "work": "\\\\(\\\\frac{18}{100} = 0.18\\\\)"
+            },
+            {
+              "explain": "Add the whole number and decimal parts together to get the final decimal number.",
+              "work": "\\\\(3 + 0.18 = 3.18\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q10a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following amount of money as a decimal: \\\\(8\\\\) dollars and \\\\(14\\\\) cents.",
+          "options": [
+            "\\\\(\\$8.014\\\\)",
+            "\\\\(\\$8.41\\\\)",
+            "\\\\(\\$8.14\\\\)",
+            "\\\\(\\$81.4\\\\)"
+          ],
+          "answer": 2,
+          "hint": "One dollar is equal to 100 cents. Therefore, cents go in the tenths and hundredths places after the decimal point.",
+          "steps": [
+            {
+              "explain": "Understand that the total amount consists of whole dollars (the integer part) and cents (the fractional decimal part).",
+              "work": "\\\\(\\text{Amount} = 8 \\text{ dollars} + 14 \\text{ cents}\\\\)"
+            },
+            {
+              "explain": "Convert cents into dollars by dividing by 100, since 100 cents = 1 dollar.",
+              "work": "\\\\(14 \\text{ cents} = \\\\frac{14}{100} \\text{ dollars} = \\$0.14\\\\)"
+            },
+            {
+              "explain": "Add the whole dollars and the decimal dollar amount together.",
+              "work": "\\\\(\\$8 + \\$0.14 = \\$8.14\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q10b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following amount of money as a decimal: \\\\(93\\\\) dollars and \\\\(5\\\\) cents.",
+          "options": [
+            "\\\\(\\$93.50\\\\)",
+            "\\\\(\\$9.35\\\\)",
+            "\\\\(\\$93.05\\\\)",
+            "\\\\(\\$93.5\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Remember that 5 cents is equal to 5 hundredths of a dollar. It must be written as .05, not .5 (which would be 50 cents).",
+          "steps": [
+            {
+              "explain": "Split the sum into whole dollars and cents.",
+              "work": "\\\\(\\text{Amount} = 93 \\text{ dollars} + 5 \\text{ cents}\\\\)"
+            },
+            {
+              "explain": "Express 5 cents in decimal form relative to a dollar by dividing by 100. Write it with a placeholder zero in the tenths column.",
+              "work": "\\\\(5 \\text{ cents} = \\\\frac{5}{100} \\text{ dollars} = \\$0.05\\\\)"
+            },
+            {
+              "explain": "Combine the whole dollars with the cents decimal value.",
+              "work": "\\\\(\\$93 + \\$0.05 = \\$93.05\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q10c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following amount of money as a decimal: \\\\(4\\\\) dollars and \\\\(50\\\\) cents.",
+          "options": [
+            "\\\\(\\$45.0\\\\)",
+            "\\\\(\\$4.5\\\\)",
+            "\\\\(\\$4.50\\\\)",
+            "\\\\(\\$4.05\\\\)"
+          ],
+          "answer": 2,
+          "hint": "For money representation, we traditionally write the zero in the hundredths place to show 50 cents.",
+          "steps": [
+            {
+              "explain": "Write down the money components: 4 dollars and 50 cents.",
+              "work": "\\\\(\\text{Amount} = 4 \\text{ dollars} + 50 \\text{ cents}\\\\)"
+            },
+            {
+              "explain": "Convert 50 cents into decimal form by dividing by 100.",
+              "work": "\\\\(50 \\text{ cents} = \\\\frac{50}{100} \\text{ dollars} = \\$0.50\\\\)"
+            },
+            {
+              "explain": "Sum the components. In finance, keep the trailing zero (write .50 instead of .5) to explicitly denote the cents value.",
+              "work": "\\\\(\\$4 + \\$0.50 = \\$4.50\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-q10d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write the following amount of money as a decimal: \\\\(27\\\\) dollars and \\\\(9\\\\) cents.",
+          "options": [
+            "\\\\(\\$27.9\\\\)",
+            "\\\\(\\$27.09\\\\)",
+            "\\\\(\\$2.79\\\\)",
+            "\\\\(\\$27.90\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Ensure you write 9 cents as .09 (nine hundredths) rather than .9 (ninety cents).",
+          "steps": [
+            {
+              "explain": "Divide the amount into whole dollars and cents.",
+              "work": "\\\\(\\text{Amount} = 27 \\text{ dollars} + 9 \\text{ cents}\\\\)"
+            },
+            {
+              "explain": "Express 9 cents as hundredths of a dollar, which requires a placeholder zero in the tenths place.",
+              "work": "\\\\(9 \\text{ cents} = \\\\frac{9}{100} \\text{ dollars} = \\$0.09\\\\)"
+            },
+            {
+              "explain": "Combine the dollars and cents to get the final decimal notation.",
+              "work": "\\\\(\\$27 + \\$0.09 = \\$27.09\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the place value of the digit \\\\(3\\\\) in the number \\\\(4.031\\\\)?",
+          "options": [
+            "Tenths (\\\\(0.3\\\\))",
+            "Hundredths (\\\\(0.03\\\\))",
+            "Units (\\\\(3\\\\))",
+            "Thousandths (\\\\(0.003\\\\))"
+          ],
+          "answer": 1,
+          "hint": "Find the position of the digit 3 relative to the decimal point. It is in the second place to the right.",
+          "steps": [
+            {
+              "explain": "Analyze the digit positions in the number 4.031. 4 is in units, 0 is in tenths, 3 is in hundredths, and 1 is in thousandths.",
+              "work": "\\\\(4.031 = 4 + 0.0 + 0.03 + 0.001\\\\)"
+            },
+            {
+              "explain": "Since 3 is the second digit to the right of the decimal point, its place value is hundredths.",
+              "work": "\\\\(\\text{Value} = \\\\frac{3}{100} = 0.03\\\\)"
+            },
+            {
+              "explain": "Thus, the place value of 3 is hundredths, representing 0.03.",
+              "work": "\\\\(\\text{Result} = \\\\text{Hundredths}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the place value of the digit \\\\(3\\\\) in the number \\\\(17.3\\\\)?",
+          "options": [
+            "Tenths (\\\\(0.3\\\\))",
+            "Hundredths (\\\\(0.03\\\\))",
+            "Units (\\\\(3\\\\))",
+            "Tens (\\\\(30\\\\))"
+          ],
+          "answer": 0,
+          "hint": "The digit 3 is the first digit to the right of the decimal point.",
+          "steps": [
+            {
+              "explain": "Look at the digit positions in 17.3. 1 is in tens, 7 in units, and 3 in tenths.",
+              "work": "\\\\(17.3 = 10 + 7 + 0.3\\\\)"
+            },
+            {
+              "explain": "The first position to the right of the decimal point is the tenths place, so 3 represents 3 tenths.",
+              "work": "\\\\(\\text{Value} = \\\\frac{3}{10} = 0.3\\\\)"
+            },
+            {
+              "explain": "Thus, the place value of 3 in 17.3 is tenths.",
+              "work": "\\\\(\\text{Result} = \\\\text{Tenths}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the place value of the digit \\\\(3\\\\) in the number \\\\(137.02\\\\)?",
+          "options": [
+            "Units (\\\\(3\\\\))",
+            "Tenths (\\\\(0.3\\\\))",
+            "Tens (\\\\(30\\\\))",
+            "Hundreds (\\\\(300\\\\))"
+          ],
+          "answer": 2,
+          "hint": "The digit 3 is in the second place to the left of the decimal point.",
+          "steps": [
+            {
+              "explain": "Write 137.02 in expanded form to find the value of each digit. 1 is hundreds, 3 is tens, 7 is units, 0 is tenths, 2 is hundredths.",
+              "work": "\\\\(137.02 = 100 + 30 + 7 + 0 + 0.02\\\\)"
+            },
+            {
+              "explain": "The second place to the left of the decimal point is the tens place. The digit 3 represents three tens.",
+              "work": "\\\\(3 \\\\times 10 = 30\\\\)"
+            },
+            {
+              "explain": "Therefore, the place value of 3 is tens.",
+              "work": "\\\\(\\text{Result} = \\\\text{Tens}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is the place value of the digit \\\\(3\\\\) in the number \\\\(18.673\\\\)?",
+          "options": [
+            "Units (\\\\(3\\\\))",
+            "Hundredths (\\\\(0.03\\\\))",
+            "Thousandths (\\\\(0.003\\\\))",
+            "Tenths (\\\\(0.3\\\\))"
+          ],
+          "answer": 2,
+          "hint": "The digit 3 is the third digit to the right of the decimal point.",
+          "steps": [
+            {
+              "explain": "Expand the number 18.673 to check each digit. 1 is tens, 8 is units, 6 is tenths, 7 is hundredths, 3 is thousandths.",
+              "work": "\\\\(18.673 = 10 + 8 + 0.6 + 0.07 + 0.003\\\\)"
+            },
+            {
+              "explain": "The third place to the right of the decimal point is the thousandths place. The digit 3 represents three thousandths.",
+              "work": "\\\\(\\text{Value} = \\\\frac{3}{1000} = 0.003\\\\)"
+            },
+            {
+              "explain": "We conclude that the place value of 3 is thousandths.",
+              "work": "\\\\(\\text{Result} = \\\\text{Thousandths}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following expanded expression as a single decimal: \\\\((5 \\\\times 100) + (0 \\\\times 10) + (3 \\\\times 1) + \\\\left(8 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(6 \\\\times \\\\frac{1}{100}\\\\right)\\\\)",
+          "options": [
+            "\\\\(503.86\\\\)",
+            "\\\\(530.86\\\\)",
+            "\\\\(503.086\\\\)",
+            "\\\\(53.86\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Calculate the value of each term first, then add them together.",
+          "steps": [
+            {
+              "explain": "Calculate the whole number terms of the expression.",
+              "work": "\\\\(5 \\\\times 100 = 500, \\\\quad 0 \\\\times 10 = 0, \\\\quad 3 \\\\times 1 = 3\\\\)"
+            },
+            {
+              "explain": "Calculate the fractional terms representing the decimals.",
+              "work": "\\\\(8 \\\\times \\\\frac{1}{10} = 0.8, \\\\quad 6 \\\\times \\\\frac{1}{100} = 0.06\\\\)"
+            },
+            {
+              "explain": "Add all values together to obtain the final decimal representation.",
+              "work": "\\\\(500 + 0 + 3 + 0.8 + 0.06 = 503.86\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the number \\\\(67.25\\\\) in expanded notation using fractions.",
+          "options": [
+            "\\\\((6 \\\\times 10) + (7 \\\\times 1) + (2 \\\\times 10) + (5 \\\\times 100)\\\\)",
+            "\\\\((6 \\\\times 10) + (7 \\\\times 1) + \\\\left(2 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(5 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)",
+            "\\\\((6 \\\\times 10) + (7 \\\\times 1) + \\\\left(2 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(5 \\\\times \\\\frac{1}{100}\\\\right)\\\\)",
+            "\\\\((6 \\\\times 100) + (7 \\\\times 10) + \\\\left(2 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(5 \\\\times \\\\frac{1}{100}\\\\right)\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Identify the place values of each digit. 6 is in tens, 7 in units, 2 in tenths, and 5 in hundredths.",
+          "steps": [
+            {
+              "explain": "Decompose 67.25 by identifying each digit's place value. 6 is tens, 7 is units, 2 is tenths, 5 is hundredths.",
+              "work": "\\\\(67.25 = 60 + 7 + 0.2 + 0.05\\\\)"
+            },
+            {
+              "explain": "Express the decimal place values (tenths and hundredths) as fractions.",
+              "work": "\\\\(0.2 = 2 \\\\times \\\\frac{1}{10}, \\\\quad 0.05 = 5 \\\\times \\\\frac{1}{100}\\\\)"
+            },
+            {
+              "explain": "Combine everything into the standard expanded notation format.",
+              "work": "\\\\(67.25 = (6 \\\\times 10) + (7 \\\\times 1) + \\\\left(2 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(5 \\\\times \\\\frac{1}{100}\\\\right)\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the number \\\\(4.036\\\\) in expanded notation using fractions.",
+          "options": [
+            "\\\\((4 \\\\times 10) + \\\\left(3 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(6 \\\\times \\\\frac{1}{100}\\\\right)\\\\)",
+            "\\\\((4 \\\\times 1) + \\\\left(3 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(6 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)",
+            "\\\\((4 \\\\times 1) + \\\\left(3 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(6 \\\\times \\\\frac{1}{100}\\\\right)\\\\)",
+            "\\\\((4 \\\\times 1) + \\\\left(0 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(3 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(6 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Ensure you include the place for the zero in the tenths column, or map the other digits to hundredths and thousandths.",
+          "steps": [
+            {
+              "explain": "Identify the values of each non-zero digit in 4.036. 4 is units, 3 is hundredths, and 6 is thousandths.",
+              "work": "\\\\(4.036 = 4 + 0.0 + 0.03 + 0.006\\\\)"
+            },
+            {
+              "explain": "Convert these place values to fractional terms.",
+              "work": "\\\\(0.03 = 3 \\\\times \\\\frac{1}{100}, \\\\quad 0.006 = 6 \\\\times \\\\frac{1}{1000}\\\\)"
+            },
+            {
+              "explain": "Combine the terms. We can include the tenths place as a zero fraction to show complete expansion.",
+              "work": "\\\\(4.036 = (4 \\\\times 1) + \\\\left(0 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(3 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(6 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the number \\\\(907.418\\\\) in expanded notation using fractions.",
+          "options": [
+            "\\\\((9 \\\\times 100) + (0 \\\\times 10) + (7 \\\\times 1) + \\\\left(4 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(1 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(8 \\\\times \\\\frac{1}{100}\\\\right)\\\\)",
+            "\\\\((9 \\\\times 100) + (7 \\\\times 1) + \\\\left(4 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(1 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(8 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)",
+            "\\\\((9 \\\\times 10) + (7 \\\\times 1) + \\\\left(4 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(1 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(8 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)",
+            "\\\\((9 \\\\times 100) + (0 \\\\times 10) + (7 \\\\times 1) + \\\\left(4 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(1 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(8 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Analyze the place value of all digits from the hundreds place down to the thousandths place.",
+          "steps": [
+            {
+              "explain": "Decompose the number 907.418 into its digits: 9 hundreds, 0 tens, 7 units, 4 tenths, 1 hundredth, 8 thousandths.",
+              "work": "\\\\(907.418 = 900 + 0 + 7 + 0.4 + 0.01 + 0.008\\\\)"
+            },
+            {
+              "explain": "Write the decimal place values as fractional factors.",
+              "work": "\\\\(0.4 = 4 \\\\times \\\\frac{1}{10}, \\\\quad 0.01 = 1 \\\\times \\\\frac{1}{100}, \\\\quad 0.008 = 8 \\\\times \\\\frac{1}{1000}\\\\)"
+            },
+            {
+              "explain": "Combine all terms into the complete expanded notation.",
+              "work": "\\\\(907.418 = (9 \\\\times 100) + (0 \\\\times 10) + (7 \\\\times 1) + \\\\left(4 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(1 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(8 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Order the following numbers from least to greatest: \\\\(4.7, 4.07, 4.72, 4.27, 4.702\\\\).",
+          "options": [
+            "\\\\(4.07, 4.27, 4.702, 4.7, 4.72\\\\)",
+            "\\\\(4.27, 4.07, 4.7, 4.702, 4.72\\\\)",
+            "\\\\(4.7, 4.07, 4.27, 4.702, 4.72\\\\)",
+            "\\\\(4.07, 4.27, 4.7, 4.702, 4.72\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Write all numbers with three decimal places (e.g. write 4.7 as 4.700) to make it easy to compare them.",
+          "steps": [
+            {
+              "explain": "Write each decimal out to 3 decimal places so they have the same length.",
+              "work": "\\\\(4.700, \\\\quad 4.070, \\\\quad 4.720, \\\\quad 4.270, \\\\quad 4.702\\\\)"
+            },
+            {
+              "explain": "Compare the decimal parts: 070 (smallest) < 270 < 700 < 702 < 720 (largest).",
+              "work": "\\\\(70 < 270 < 700 < 702 < 720\\\\)"
+            },
+            {
+              "explain": "Arrange the original numbers in order from least to greatest.",
+              "work": "\\\\(4.07 < 4.27 < 4.7 < 4.702 < 4.72\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the decimal \\\\(0.9\\\\) into a fraction.",
+          "options": [
+            "\\\\(\\frac{90}{10}\\\\)",
+            "\\\\(\\frac{9}{100}\\\\)",
+            "\\\\(\\frac{9}{10}\\\\)",
+            "\\\\(\\frac{1}{9}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "0.9 represents 9 in the tenths place.",
+          "steps": [
+            {
+              "explain": "Recognize the place value of the digit 9. It is in the first place to the right of the decimal, which is tenths.",
+              "work": "\\\\(0.9 = 9 \\\\text{ tenths}\\\\)"
+            },
+            {
+              "explain": "Write this as a fraction with a denominator of 10.",
+              "work": "\\dots \\\\implies \\\\frac{9}{10}"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the decimal \\\\(0.57\\\\) into a fraction.",
+          "options": [
+            "\\\\(\\frac{57}{100}\\\\)",
+            "\\\\(\\frac{5.7}{100}\\\\)",
+            "\\\\(\\frac{57}{1000}\\\\)",
+            "\\\\(\\frac{57}{10}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "There are two decimal places, so the denominator will be 100.",
+          "steps": [
+            {
+              "explain": "Identify the place value of the last digit. 7 is in the hundredths place, meaning the decimal represents 57 hundredths.",
+              "work": "\\\\(0.57 = 57 \\\\text{ hundredths}\\\\)"
+            },
+            {
+              "explain": "Write the value as a fraction.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{57}{100}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the decimal \\\\(4.03\\\\) into a mixed numeral.",
+          "options": [
+            "\\\\(\\frac{403}{10}\\\\)",
+            "\\\\(4\\frac{3}{10}\\\\)",
+            "\\\\(4\\frac{30}{100}\\\\)",
+            "\\\\(4\\frac{3}{100}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Separate the whole number 4 from the decimal 0.03, then convert 0.03 to a fraction.",
+          "steps": [
+            {
+              "explain": "Split the decimal into whole and decimal parts.",
+              "work": "\\\\(4.03 = 4 + 0.03\\\\)"
+            },
+            {
+              "explain": "Convert the decimal 0.03 to a fraction. The digit 3 is in the hundredths column.",
+              "work": "\\\\(0.03 = \\\\frac{3}{100}\\\\)"
+            },
+            {
+              "explain": "Combine the whole number and fraction to write as a mixed numeral.",
+              "work": "\\\\(4.03 = 4\\\\frac{3}{100}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q5d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the decimal \\\\(0.253\\\\) into a fraction.",
+          "options": [
+            "\\\\(\\frac{253}{100}\\\\)",
+            "\\\\(\\frac{25.3}{100}\\\\)",
+            "\\\\(\\frac{253}{10}\\\\)",
+            "\\\\(\\frac{253}{1000}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Count the number of decimal digits. Since there are 3 digits, write it over 1000.",
+          "steps": [
+            {
+              "explain": "Check the decimal digits. 3 is in the third place, which is the thousandths place, representing 253 thousandths.",
+              "work": "\\\\(0.253 = 253 \\\\text{ thousandths}\\\\)"
+            },
+            {
+              "explain": "Write this as a fraction with a denominator of 1000.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{253}{1000}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the fraction \\\\(\\frac{17}{100}\\\\) into a decimal.",
+          "options": [
+            "\\\\(17.0\\\\)",
+            "\\\\(0.17\\\\)",
+            "\\\\(0.017\\\\)",
+            "\\\\(1.7\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 17 by 100 by moving the decimal point two places to the left.",
+          "steps": [
+            {
+              "explain": "Read the fraction as 17 hundredths.",
+              "work": "\\\\(\\frac{17}{100} = 17 \\\\text{ hundredths}\\\\)"
+            },
+            {
+              "explain": "To write 17 hundredths as a decimal, place the digits so the last digit ends in the hundredths column.",
+              "work": "\\\\(\\frac{17}{100} = 0.17\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert the fraction \\\\(\\frac{1}{2}\\\\) into a decimal.",
+          "options": [
+            "\\\\(0.5\\\\)",
+            "\\\\(0.05\\\\)",
+            "\\\\(0.12\\\\)",
+            "\\\\(0.2\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Find an equivalent fraction with a denominator of 10 by multiplying both the numerator and denominator by 5.",
+          "steps": [
+            {
+              "explain": "Convert the fraction to an equivalent fraction with a denominator of 10. Multiply the top and bottom by 5.",
+              "work": "\\\\(\\frac{1 \\times 5}{2 \\times 5} = \\\\frac{5}{10}\\\\)"
+            },
+            {
+              "explain": "Convert 5 tenths into decimal form.",
+              "work": "\\\\(\\frac{5}{10} = 0.5\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the fraction \\\\(\\frac{4}{5}\\\\) into a decimal.",
+          "options": [
+            "\\\\(0.08\\\\)",
+            "\\\\(0.45\\\\)",
+            "\\\\(0.8\\\\)",
+            "\\\\(0.4\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the numerator and denominator by 2 to get a denominator of 10.",
+          "steps": [
+            {
+              "explain": "Find an equivalent fraction with a denominator of 10. Multiply both top and bottom by 2.",
+              "work": "\\\\(\\frac{4 \\times 2}{5 \\times 2} = \\\\frac{8}{10}\\\\)"
+            },
+            {
+              "explain": "Convert 8 tenths to decimal format.",
+              "work": "\\\\(\\frac{8}{10} = 0.8\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l2-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the fraction \\\\(\\frac{3}{20}\\\\) into a decimal.",
+          "options": [
+            "\\\\(0.3\\\\)",
+            "\\\\(0.03\\\\)",
+            "\\\\(0.15\\\\)",
+            "\\\\(0.32\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Find an equivalent fraction with a denominator of 100 by multiplying both the numerator and denominator by 5.",
+          "steps": [
+            {
+              "explain": "To make conversion easy, find an equivalent fraction with a denominator of 100. Multiply both numerator and denominator by 5.",
+              "work": "\\\\(\\frac{3 \\times 5}{20 \\times 5} = \\\\frac{15}{100}\\\\)"
+            },
+            {
+              "explain": "Convert 15 hundredths to decimal format.",
+              "work": "\\\\(\\frac{15}{100} = 0.15\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the following expanded notation expression as a single decimal: \\\\((8 \\\\times 100) + (6 \\\\times 10) + (5 \\\\times 1) + \\\\left(9 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(0 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(2 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)",
+          "options": [
+            "\\\\(86.592\\\\)",
+            "\\\\(865.092\\\\)",
+            "\\\\(865.92\\\\)",
+            "\\\\(865.902\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Analyze each place value term. Note that the hundredths place has a 0, and the thousandths place has a 2.",
+          "steps": [
+            {
+              "explain": "Calculate the integer part from the whole number products.",
+              "work": "\\\\(8 \\\\times 100 + 6 \\\\times 10 + 5 \\\\times 1 = 800 + 60 + 5 = 865\\\\)"
+            },
+            {
+              "explain": "Calculate the decimal part from the fractional products.",
+              "work": "\\\\(9 \\\\times \\\\frac{1}{10} + 0 \\\\times \\\\frac{1}{100} + 2 \\\\times \\\\frac{1}{1000} = 0.9 + 0 + 0.002 = 0.902\\\\)"
+            },
+            {
+              "explain": "Combine both parts to form the final decimal number.",
+              "work": "\\\\(865 + 0.902 = 865.902\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the decimal number \\\\(51.32\\\\) in expanded notation using fractions.",
+          "options": [
+            "\\\\((5 \\\\times 10) + (1 \\\\times 1) + (3 \\\\times 10) + (2 \\\\times 100)\\\\)",
+            "\\\\((5 \\\\times 10) + (1 \\\\times 1) + \\\\left(3 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(2 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)",
+            "\\\\((5 \\\\times 100) + (1 \\\\times 10) + \\\\left(3 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(2 \\\\times \\\\frac{1}{100}\\\\right)\\\\)",
+            "\\\\((5 \\\\times 10) + (1 \\\\times 1) + \\\\left(3 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(2 \\\\times \\\\frac{1}{100}\\\\right)\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Match the digits to tens, units, tenths, and hundredths.",
+          "steps": [
+            {
+              "explain": "Find the place values of each digit. 5 is tens, 1 is units, 3 is tenths, 2 is hundredths.",
+              "work": "\\\\(51.32 = 50 + 1 + 0.3 + 0.02\\\\)"
+            },
+            {
+              "explain": "Convert the decimal fractions to their equivalent fractional forms.",
+              "work": "\\\\(0.3 = 3 \\\\times \\\\frac{1}{10}, \\\\quad 0.02 = 2 \\\\times \\\\frac{1}{100}\\\\)"
+            },
+            {
+              "explain": "Write down the complete expanded notation.",
+              "work": "\\\\(51.32 = (5 \\\\times 10) + (1 \\\\times 1) + \\\\left(3 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(2 \\\\times \\\\frac{1}{100}\\\\right)\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the decimal number \\\\(6.705\\\\) in expanded notation using fractions.",
+          "options": [
+            "\\\\((6 \\\\times 1) + \\\\left(7 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(5 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)",
+            "\\\\((6 \\\\times 1) + \\\\left(7 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(0 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(5 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)",
+            "\\\\((6 \\\\times 10) + \\\\left(7 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(5 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)",
+            "\\\\((6 \\\\times 1) + \\\\left(7 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(5 \\\\times \\\\frac{1}{100}\\\\right)\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Check the position of the digit 5. It is in the third place after the decimal point, representing thousandths.",
+          "steps": [
+            {
+              "explain": "Assign place values: 6 is units, 7 is tenths, 0 is hundredths, 5 is thousandths.",
+              "work": "\\\\(6.705 = 6 + 0.7 + 0.00 + 0.005\\\\)"
+            },
+            {
+              "explain": "Convert these place values to fractional terms.",
+              "work": "\\\\(0.7 = 7 \\\\times \\\\frac{1}{10}, \\\\quad 0.005 = 5 \\\\times \\\\frac{1}{1000}\\\\)"
+            },
+            {
+              "explain": "Combine the terms. The zero hundredths term can be shown explicitly.",
+              "work": "\\\\(6.705 = (6 \\\\times 1) + \\\\left(7 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(0 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(5 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the decimal number \\\\(0.914\\\\) in expanded notation using fractions.",
+          "options": [
+            "\\\\(\\left(9 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(1 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(4 \\\\times \\\\frac{1}{100}\\\\right)\\\\)",
+            "\\\\((9 \\\\times 1) + \\\\left(1 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(4 \\\\times \\\\frac{1}{100}\\\\right)\\\\)",
+            "\\\\(\\left(9 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(1 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(4 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)",
+            "\\\\(\\left(9 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(1 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(4 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)"
+          ],
+          "answer": 3,
+          "hint": "There are no whole units. Begin directly with tenths, hundredths, and thousandths.",
+          "steps": [
+            {
+              "explain": "Analyze place values: 9 tenths, 1 hundredth, 4 thousandths.",
+              "work": "\\\\(0.914 = 0.9 + 0.01 + 0.004\\\\)"
+            },
+            {
+              "explain": "Convert these place values to fractional terms.",
+              "work": "\\\\(0.9 = 9 \\\\times \\\\frac{1}{10}, \\\\quad 0.01 = 1 \\\\times \\\\frac{1}{100}, \\\\quad 0.004 = 4 \\\\times \\\\frac{1}{1000}\\\\)"
+            },
+            {
+              "explain": "Combine the terms to form the final expanded expression.",
+              "work": "\\\\(0.914 = \\\\left(9 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(1 \\\\times \\\\frac{1}{100}\\\\right) + \\\\left(4 \\\\times \\\\frac{1}{1000}\\\\right)\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q2d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the decimal number \\\\(207.06\\\\) in expanded notation using fractions.",
+          "options": [
+            "\\\\((2 \\\\times 10) + (7 \\\\times 1) + \\\\left(6 \\\\times \\\\frac{1}{100}\\\\right)\\\\)",
+            "\\\\((2 \\\\times 100) + (0 \\\\times 10) + (7 \\\\times 1) + \\\\left(6 \\\\times \\\\frac{1}{10}\\\\right)\\\\)",
+            "\\\\((2 \\\\times 100) + (0 \\\\times 10) + (7 \\\\times 1) + \\\\left(0 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(6 \\\\times \\\\frac{1}{100}\\\\right)\\\\)",
+            "\\\\((2 \\\\times 100) + (7 \\\\times 1) + \\\\left(6 \\\\times \\\\frac{1}{10}\\\\right)\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Analyze the place values carefully. The digit 6 is in the hundredths place.",
+          "steps": [
+            {
+              "explain": "Identify place values of 207.06: 2 hundreds, 0 tens, 7 units, 0 tenths, 6 hundredths.",
+              "work": "\\\\(207.06 = 200 + 0 + 7 + 0.0 + 0.06\\\\)"
+            },
+            {
+              "explain": "Convert these place values to fractional terms.",
+              "work": "\\\\(0.06 = 6 \\\\times \\\\frac{1}{100}\\\\)"
+            },
+            {
+              "explain": "Combine the terms.",
+              "work": "\\\\(207.06 = (2 \\\\times 100) + (0 \\\\times 10) + (7 \\\\times 1) + \\\\left(0 \\\\times \\\\frac{1}{10}\\\\right) + \\\\left(6 \\\\times \\\\frac{1}{100}\\\\right)\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Order the following numbers from greatest to least: \\\\(1.34, 1.04, 1.4, 1.304, 1.403\\\\).",
+          "options": [
+            "\\\\(1.04, 1.304, 1.34, 1.4, 1.403\\\\)",
+            "\\\\(1.403, 1.4, 1.304, 1.34, 1.04\\\\)",
+            "\\\\(1.4, 1.403, 1.34, 1.304, 1.04\\\\)",
+            "\\\\(1.403, 1.4, 1.34, 1.304, 1.04\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert all decimals to three decimal places by appending zeros (e.g. write 1.4 as 1.400) to compare values easily.",
+          "steps": [
+            {
+              "explain": "Pad each decimal number with trailing zeros so that they all have three decimal digits.",
+              "work": "\\\\(1.340, \\\\quad 1.040, \\\\quad 1.400, \\\\quad 1.304, \\\\quad 1.403\\\\)"
+            },
+            {
+              "explain": "Compare the decimal parts: 403 (largest) > 400 > 340 > 304 > 040 (smallest).",
+              "work": "\\\\(403 > 400 > 340 > 304 > 40\\\\)"
+            },
+            {
+              "explain": "Order the original numbers from greatest to least according to their compared decimal values.",
+              "work": "\\\\(1.403 > 1.4 > 1.34 > 1.304 > 1.04\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the decimal \\\\(0.6\\\\) into a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{3}{10}\\\\)",
+            "\\\\(\\frac{6}{10}\\\\)",
+            "\\\\(\\frac{3}{5}\\\\)",
+            "\\\\(\\frac{2}{3}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert 0.6 to 6/10 first, then divide both the numerator and denominator by their greatest common factor, which is 2.",
+          "steps": [
+            {
+              "explain": "Write the decimal 0.6 as a fraction based on its place value. 6 is in tenths.",
+              "work": "\\\\(0.6 = \\\\frac{6}{10}\\\\)"
+            },
+            {
+              "explain": "Find the greatest common factor of the numerator 6 and the denominator 10. The greatest common factor is 2.",
+              "work": "\\\\(\\text{GCF}(6, 10) = 2\\\\)"
+            },
+            {
+              "explain": "Divide both the numerator and denominator by 2 to write the fraction in simplest form.",
+              "work": "\\\\(\\frac{6 \\div 2}{10 \\div 2} = \\\\frac{3}{5}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the decimal \\\\(0.25\\\\) into a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{1}{5}\\\\)",
+            "\\\\(\\frac{25}{100}\\\\)",
+            "\\\\(\\frac{1}{4}\\\\)",
+            "\\\\(\\frac{2}{5}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert 0.25 to 25/100, then divide both numerator and denominator by 25.",
+          "steps": [
+            {
+              "explain": "Write the decimal 0.25 as a fraction. Since there are two decimal places, write it over 100.",
+              "work": "\\\\(0.25 = \\\\frac{25}{100}\\\\)"
+            },
+            {
+              "explain": "Find the greatest common factor of 25 and 100, which is 25.",
+              "work": "\\\\(\\text{GCF}(25, 100) = 25\\\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by 25 to simplify.",
+              "work": "\\\\(\\frac{25 \\div 25}{100 \\div 25} = \\\\frac{1}{4}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the decimal \\\\(0.46\\\\) into a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{23}{50}\\\\)",
+            "\\\\(\\frac{46}{100}\\\\)",
+            "\\\\(\\frac{4}{6}\\\\)",
+            "\\\\(\\frac{23}{100}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Write as 46/100, then divide the top and bottom by 2.",
+          "steps": [
+            {
+              "explain": "Express the decimal 0.46 as a fraction over 100.",
+              "work": "\\\\(0.46 = \\\\frac{46}{100}\\\\)"
+            },
+            {
+              "explain": "Find the greatest common factor of 46 and 100, which is 2.",
+              "work": "\\\\(\\text{GCF}(46, 100) = 2\\\\)"
+            },
+            {
+              "explain": "Divide numerator and denominator by 2 to get the simplest fraction.",
+              "work": "\\\\(\\frac{46 \\div 2}{100 \\div 2} = \\\\frac{23}{50}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q4d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the decimal \\\\(0.35\\\\) into a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{7}{10}\\\\)",
+            "\\\\(\\frac{7}{20}\\\\)",
+            "\\\\(\\frac{3}{5}\\\\)",
+            "\\\\(\\frac{35}{100}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Write as 35/100, then divide both numerator and denominator by 5.",
+          "steps": [
+            {
+              "explain": "Express the decimal 0.35 as a fraction over 100.",
+              "work": "\\\\(0.35 = \\\\frac{35}{100}\\\\)"
+            },
+            {
+              "explain": "Identify the greatest common factor of 35 and 100, which is 5.",
+              "work": "\\\\(\\text{GCF}(35, 100) = 5\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by 5.",
+              "work": "\\\\(\\frac{35 \\div 5}{100 \\div 5} = \\\\frac{7}{20}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q11a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(0.4\\\\) of \\\\(\\$7.00\\\\).",
+          "options": [
+            "\\\\(\\$0.28\\\\)",
+            "\\\\(\\$2.8\\\\)",
+            "\\\\(\\$28.00\\\\)",
+            "\\\\(\\$2.80\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply $7.00 by 0.4. Keep the currency representation with two decimal places.",
+          "steps": [
+            {
+              "explain": "Convert the word 'of' into a multiplication sign.",
+              "work": "\\\\(0.4 \\\\times \\$7.00\\\\)"
+            },
+            {
+              "explain": "Multiply as whole numbers: 4 multiplied by 700.",
+              "work": "\\\\(4 \\\\times 700 = 2800\\\\)"
+            },
+            {
+              "explain": "Re-insert the total number of decimal places. 0.4 has one and 7.00 has two, making three decimal places, or write it directly as dollars.",
+              "work": "\\\\(0.4 \\\\times 7 = 2.8 \\\\implies \\$2.80\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(0.3\\\\) of \\\\(5\\\\text{ kg}\\\\).",
+          "options": [
+            "\\\\(0.15\\\\text{ kg}\\\\)",
+            "\\\\(1.5\\\\text{ kg}\\\\)",
+            "\\\\(1.2\\\\text{ kg}\\\\)",
+            "\\\\(15\\\\text{ kg}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 5 by 0.3, then append the unit 'kg'.",
+          "steps": [
+            {
+              "explain": "Translate the phrase into a multiplication sentence.",
+              "work": "\\\\(0.3 \\\\times 5 \\\\text{ kg}\\\\)"
+            },
+            {
+              "explain": "Multiply the numbers. 3 multiplied by 5 is 15. Place the decimal point to show one decimal place.",
+              "work": "\\\\(0.3 \\\\times 5 = 1.5\\\\)"
+            },
+            {
+              "explain": "Add the correct unit of measurement (kg) to complete the solution.",
+              "work": "\\\\(\\text{Result} = 1.5\\\\text{ kg}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l3-q11c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(0.6\\\\) of \\\\(15\\\\) apples.",
+          "options": [
+            "\\\\(7.5\\\\) apples",
+            "\\\\(6\\\\) apples",
+            "\\\\(9\\\\) apples",
+            "\\\\(90\\\\) apples"
+          ],
+          "answer": 2,
+          "hint": "Multiply 15 by 0.6. Think of 0.6 as 6 tenths.",
+          "steps": [
+            {
+              "explain": "Rewrite as a multiplication problem.",
+              "work": "\\\\(0.6 \\\\times 15\\\\)"
+            },
+            {
+              "explain": "Multiply the values: 6 multiplied by 15 is 90. Place the decimal point one position from the right.",
+              "work": "\\\\(6 \\\\times 15 = 90 \\\\implies 9.0\\\\)"
+            },
+            {
+              "explain": "Conclude that the result is 9 apples.",
+              "work": "\\\\(9 \\\\text{ apples}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l4-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the decimal \\\\(0.75\\\\) into a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{3}{5}\\\\)",
+            "\\\\(\\frac{1}{2}\\\\)",
+            "\\\\(\\frac{3}{4}\\\\)",
+            "\\\\(\\frac{75}{100}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Write 0.75 as 75/100, then divide the numerator and denominator by their greatest common factor, which is 25.",
+          "steps": [
+            {
+              "explain": "Write the decimal as a fraction over 100.",
+              "work": "\\\\(0.75 = \\\\frac{75}{100}\\\\)"
+            },
+            {
+              "explain": "Find the greatest common factor of 75 and 100, which is 25.",
+              "work": "\\\\(\\text{GCF}(75, 100) = 25\\\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by 25 to simplify the fraction.",
+              "work": "\\\\(\\frac{75 \\div 25}{100 \\div 25} = \\\\frac{3}{4}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l4-q1b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the decimal \\\\(3.45\\\\) into a mixed numeral in its simplest form.",
+          "options": [
+            "\\\\(3\\frac{45}{100}\\\\)",
+            "\\\\(3\\frac{4}{5}\\\\)",
+            "\\\\(3\\frac{9}{20}\\\\)",
+            "\\\\(3\\frac{9}{25}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Separate the whole number 3 and decimal 0.45. Convert 0.45 to 45/100, then simplify by dividing by 5.",
+          "steps": [
+            {
+              "explain": "Separate the decimal into whole and decimal parts.",
+              "work": "\\\\(3.45 = 3 + 0.45\\\\)"
+            },
+            {
+              "explain": "Convert the decimal part 0.45 into a fraction.",
+              "work": "\\\\(0.45 = \\\\frac{45}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the top and bottom by their greatest common factor, 5.",
+              "work": "\\\\(\\frac{45 \\div 5}{100 \\div 5} = \\\\frac{9}{20}\\\\)"
+            },
+            {
+              "explain": "Combine the whole number and simplified fraction.",
+              "work": "\\\\(3 + \\\\frac{9}{20} = 3\\\\frac{9}{20}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l4-q1c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the decimal \\\\(0.008\\\\) into a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{1}{125}\\\\)",
+            "\\\\(\\frac{1}{250}\\\\)",
+            "\\\\(\\frac{8}{1000}\\\\)",
+            "\\\\(\\frac{2}{25}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "0.008 has three decimal places, meaning 8 thousandths. Write it as 8/1000 and divide both parts by 8.",
+          "steps": [
+            {
+              "explain": "Write the decimal as a fraction over 1000 since it has three decimal places.",
+              "work": "\\\\(0.008 = \\\\frac{8}{1000}\\\\)"
+            },
+            {
+              "explain": "Find the greatest common factor of 8 and 1000, which is 8.",
+              "work": "\\\\(\\text{GCF}(8, 1000) = 8\\\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by 8 to simplify.",
+              "work": "\\\\(\\frac{8 \\div 8}{1000 \\div 8} = \\\\frac{1}{125}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l4-q1d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the decimal \\\\(0.125\\\\) into a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{125}{1000}\\\\)",
+            "\\\\(\\frac{3}{8}\\\\)",
+            "\\\\(\\frac{1}{8}\\\\)",
+            "\\\\(\\frac{1}{4}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Write as 125/1000, then simplify. Note that 125 goes into 1000 exactly 8 times.",
+          "steps": [
+            {
+              "explain": "Write the decimal as a fraction over 1000.",
+              "work": "\\\\(0.125 = \\\\frac{125}{1000}\\\\)"
+            },
+            {
+              "explain": "Find the GCF of 125 and 1000, which is 125.",
+              "work": "\\\\(\\text{GCF}(125, 1000) = 125\\\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by 125 to simplify.",
+              "work": "\\/ \\\\frac{125 \\div 125}{1000 \\div 125} = \\\\frac{1}{8}"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l4-q2a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the fraction \\\\(\\frac{11}{20}\\\\) into a decimal.",
+          "options": [
+            "\\\\(0.51\\\\)",
+            "\\\\(0.11\\\\)",
+            "\\\\(0.55\\\\)",
+            "\\\\(0.055\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert to an equivalent fraction with a denominator of 100 by multiplying top and bottom by 5.",
+          "steps": [
+            {
+              "explain": "To convert to a decimal easily, find an equivalent fraction with a denominator of 100. Multiply both numerator and denominator by 5.",
+              "work": "\\\\(\\frac{11 \\times 5}{20 \\times 5} = \\\\frac{55}{100}\\\\)"
+            },
+            {
+              "explain": "Convert 55 hundredths to decimal form.",
+              "work": "\\\\(\\frac{55}{100} = 0.55\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l4-q2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the fraction \\\\(\\frac{37}{50}\\\\) into a decimal.",
+          "options": [
+            "\\\\(0.74\\\\)",
+            "\\\\(0.074\\\\)",
+            "\\\\(0.72\\\\)",
+            "\\\\(0.37\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the numerator and denominator by 2 to get a denominator of 100.",
+          "steps": [
+            {
+              "explain": "Find an equivalent fraction with a denominator of 100 by multiplying the top and bottom by 2.",
+              "work": "\\\\(\\frac{37 \\times 2}{50 \\times 2} = \\\\frac{74}{100}\\\\)"
+            },
+            {
+              "explain": "Convert 74 hundredths to decimal form.",
+              "work": "\\\\(\\frac{74}{100} = 0.74\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l4-q2c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the fraction \\\\(\\frac{135}{1000}\\\\) into a decimal.",
+          "options": [
+            "\\\\(13.5\\\\)",
+            "\\\\(0.135\\\\)",
+            "\\\\(0.0135\\\\)",
+            "\\\\(1.35\\\\)"
+          ],
+          "answer": 1,
+          "hint": "A denominator of 1000 means the decimal must have three places after the decimal point.",
+          "steps": [
+            {
+              "explain": "Understand that the fraction represents 135 thousandths.",
+              "work": "\\\\(\\frac{135}{1000} = 135 \\\\text{ thousandths}\\\\)"
+            },
+            {
+              "explain": "Write 135 thousandths in decimal form, placing the last digit in the thousandths place.",
+              "work": "\\\\(\\frac{135}{1000} = 0.135\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l4-q2d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Convert the fraction \\\\(\\frac{7}{500}\\\\) into a decimal.",
+          "options": [
+            "\\\\(0.014\\\\)",
+            "\\\\(0.007\\\\)",
+            "\\\\(0.0014\\\\)",
+            "\\\\(0.14\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the numerator and denominator by 2 to get a denominator of 1000.",
+          "steps": [
+            {
+              "explain": "To get a denominator of 1000, multiply the top and bottom by 2.",
+              "work": "\\\\(\\frac{7 \\times 2}{500 \\times 2} = \\frac{14}{1000}\\\\)"
+            },
+            {
+              "explain": "Convert 14 thousandths into decimal form, using a placeholder zero for the tenths place.",
+              "work": "\\\\(\\frac{14}{1000} = 0.014\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l4-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(0.6\\\\) of \\\\(\\$1.50\\\\).",
+          "options": [
+            "\\\\(\\$0.60\\\\)",
+            "\\\\(\\$0.90\\\\)",
+            "\\\\(\\$9.00\\\\)",
+            "\\\\(\\$0.09\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 'of' to multiplication. Multiply 150 cents by 0.6.",
+          "steps": [
+            {
+              "explain": "Translate to a math sentence: 0.6 multiplied by 1.50.",
+              "work": "\\\\(0.6 \\\\times \\$1.50\\\\)"
+            },
+            {
+              "explain": "Multiply as whole numbers: 6 multiplied by 150.",
+              "work": "\\\\(6 \\\\times 150 = 900\\\\)"
+            },
+            {
+              "explain": "Position the decimal point to get the value in dollars.",
+              "work": "\\\\(0.6 \\\\times 1.5 = 0.9 \\\\implies \\$0.90\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l4-q7b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(0.9\\\\) of \\\\(\\$15.80\\\\).",
+          "options": [
+            "\\\\(\\$14.32\\\\)",
+            "\\\\(\\$13.22\\\\)",
+            "\\\\(\\$14.22\\\\)",
+            "\\\\(\\$14.02\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 1580 by 9, then insert the decimal point to show two decimal places.",
+          "steps": [
+            {
+              "explain": "Rewrite as a multiplication problem.",
+              "work": "\\\\(0.9 \\\\times \\$15.80\\\\)"
+            },
+            {
+              "explain": "Multiply the numbers ignoring decimal points.",
+              "work": "\\\\(9 \\\\times 1580 = 14220\\\\)"
+            },
+            {
+              "explain": "Place the decimal point back to get the dollar value.",
+              "work": "\\\\(14220 \\\\implies \\$14.22\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l4-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(0.75\\\\) of \\\\(\\$2.40\\\\).",
+          "options": [
+            "\\\\(\\$1.60\\\\)",
+            "\\\\(\\$1.50\\\\)",
+            "\\\\(\\$1.95\\\\)",
+            "\\\\(\\$1.80\\\\)"
+          ],
+          "answer": 3,
+          "hint": "0.75 is equivalent to the fraction 3/4. Find 3/4 of $2.40.",
+          "steps": [
+            {
+              "explain": "Recognize that 0.75 is equivalent to the fraction 3/4.",
+              "work": "\\\\(0.75 = \\\\frac{3}{4}\\\\)"
+            },
+            {
+              "explain": "Divide the dollar amount by 4.",
+              "work": "\\\\(\\$2.40 \\\\div 4 = \\$0.60\\\\)"
+            },
+            {
+              "explain": "Multiply the result by 3 to find three quarters of the amount.",
+              "work": "\\\\(3 \\\\times \\$0.60 = \\$1.80\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l5-q1a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A marine research drone completes \\\\(\\frac{3}{8}\\\\) of its underwater mapping trajectory before returning to dock. What decimal portion of the trajectory did the drone complete?",
+          "options": [
+            "\\\\(0.375\\\\)",
+            "\\\\(0.38\\\\)",
+            "\\\\(0.35\\\\)",
+            "\\\\(0.425\\\\)"
+          ],
+          "answer": 0,
+          "hint": "To convert a fraction to a decimal, divide the numerator by the denominator. Recall that \\\\(\\frac{1}{8} = 0.125\\\\).",
+          "steps": [
+            {
+              "explain": "First, we identify the given fraction and plan the conversion. The drone has completed \\\\(\\frac{3}{8}\\\\) of its journey, and we need to write this value as a decimal.",
+              "work": "\\\\(\\text{Given Fraction} = \\\\frac{3}{8}\\\\)"
+            },
+            {
+              "explain": "To convert a fraction to a decimal, divide the numerator by the denominator. We set up the division of \\\\(3\\\\) by \\\\(8\\\\) by adding placeholder zeros after the decimal point.",
+              "work": "\\\\(3 \\\\div 8 = 3.000 \\\\div 8\\\\)"
+            },
+            {
+              "explain": "Perform the long division of \\\\(3.000\\\\) by \\\\(8\\\\) step-by-step. First, \\\\(30 \\\\div 8 = 3\\\\) with a remainder of \\\\(6\\\\); then, \\\\(60 \\\\div 8 = 7\\\\) with a remainder of \\\\(4\\\\); finally, \\\\(40 \\\\div 8 = 5\\\\) with a remainder of \\\\(0\\\\).",
+              "work": "\\\\(3 \\\\div 8 = 0.375\\\\)"
+            },
+            {
+              "explain": "State the final decimal value representing the drone's completion portion. Therefore, \\\\(\\frac{3}{8}\\\\) is equivalent to \\\\(0.375\\\\).",
+              "work": "\\\\(\\text{Decimal Portion} = 0.375\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l5-q1b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A chemistry lab assistant measures a compound sample and finds it is exactly \\\\(\\frac{32}{125}\\\\) of a kilogram. Convert this fraction to its decimal equivalent for the lab report.",
+          "options": [
+            "\\\\(0.256\\\\)",
+            "\\\\(0.25\\\\)",
+            "\\\\(0.32\\\\)",
+            "\\\\(0.128\\\\)"
+          ],
+          "answer": 0,
+          "hint": "To convert a fraction with a denominator of 125 to a decimal, you can multiply both the numerator and the denominator by 8 to get a denominator of 1000.",
+          "steps": [
+            {
+              "explain": "First, identify the given fraction and plan the conversion. The given fraction is \\\\(\\frac{32}{125}\\\\), and we need to find its decimal equivalent.",
+              "work": "\\\\(\\text{Given Fraction} = \\\\frac{32}{125}\\\\)"
+            },
+            {
+              "explain": "Instead of direct long division, we can multiply the numerator and the denominator by 8 to convert the denominator to 1000. This is a very helpful shortcut because dividing by 1000 is straightforward.",
+              "work": "\\\\(\\frac{32 \\\\times 8}{125 \\\\times 8} = \\\\frac{256}{1000}\\\\)"
+            },
+            {
+              "explain": "Convert the fraction with a denominator of 1000 to a decimal. We do this by moving the decimal point of 256 three places to the left.",
+              "work": "\\\\(\\frac{256}{1000} = 0.256\\\\)"
+            },
+            {
+              "explain": "Verify that the decimal value represents the correct proportion of the kilogram. Therefore, \\\\(\\frac{32}{125}\\\\) of a kilogram is equal to 0.256 kilograms.",
+              "work": "\\\\(\\text{Decimal Value} = 0.256\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l5-q1c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An agricultural soil sensor reports that a crop field's soil moisture level is \\\\(\\frac{11}{40}\\\\) of its maximum capacity. Express this soil moisture level as a decimal.",
+          "options": [
+            "\\\\(0.22\\\\)",
+            "\\\\(0.275\\\\)",
+            "\\\\(0.27\\\\)",
+            "\\\\(0.325\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert the fraction so that the denominator is a power of 10, or divide 11 by 40 directly using long division.",
+          "steps": [
+            {
+              "explain": "Identify the given soil moisture fraction and set up the problem. The fraction is \\\\(\\frac{11}{40}\\\\), and we need to convert it to a decimal.",
+              "work": "\\\\(\\text{Given Fraction} = \\\\frac{11}{40}\\\\)"
+            },
+            {
+              "explain": "We can simplify the division by rewriting the fraction. Multiplying the numerator and denominator by 25 gives a denominator of 1000, which makes decimal conversion simple.",
+              "work": "\\\\(\\frac{11 \\\\times 25}{40 \\\\times 25} = \\\\frac{275}{1000}\\\\)"
+            },
+            {
+              "explain": "Convert the fraction \\\\(\\frac{275}{1000}\\\\) to a decimal by moving the decimal point three places to the left. This shifts the digits to their correct place values.",
+              "work": "\\\\(\\frac{275}{1000} = 0.275\\\\)"
+            },
+            {
+              "explain": "Confirm the final decimal representation of the soil moisture. The crop field's soil moisture is 0.275 of its maximum capacity.",
+              "work": "\\\\(\\text{Decimal Value} = 0.275\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l5-q1d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A flight navigation computer registers that a hybrid electric aircraft has completed \\\\(\\frac{12}{60}\\\\) of its high-altitude test cruise. Express this completion ratio as a decimal.",
+          "options": [
+            "\\\\(0.2\\\\)",
+            "\\\\(0.02\\\\)",
+            "\\\\(0.12\\\\)",
+            "\\\\(0.5\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Simplify the fraction \\\\(\\frac{12}{60}\\\\) by dividing both the numerator and the denominator by their greatest common divisor.",
+          "steps": [
+            {
+              "explain": "Identify the completion fraction of the cruise and plan to simplify it. The fraction is \\\\(\\frac{12}{60}\\\\), and we want to find its decimal equivalent.",
+              "work": "\\\\(\\text{Given Fraction} = \\\\frac{12}{60}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by 12, which is their greatest common divisor. This yields a much simpler equivalent fraction.",
+              "work": "\\\\(\\frac{12 \\\\div 12}{60 \\\\div 12} = \\\\frac{1}{5}\\\\)"
+            },
+            {
+              "explain": "Convert the simplified fraction \\\\(\\frac{1}{5}\\\\) to a decimal. We can multiply both terms by 2 to get a denominator of 10, or divide 1 by 5.",
+              "work": "\\\\(\\frac{1 \\\\times 2}{5 \\\\times 2} = \\\\frac{2}{10} = 0.2\\\\)"
+            },
+            {
+              "explain": "Conclude that the decimal equivalent of the completion ratio is 0.2. This means the aircraft has completed 0.2 of its test cruise.",
+              "work": "\\\\(\\text{Decimal Value} = 0.2\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l5-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An automated delivery drone logs a flight duration of \\\\(3\\\\) hours and \\\\(12\\\\) minutes. Express this flight duration in decimal hours.",
+          "options": [
+            "\\\\(3.2\\\\)",
+            "\\\\(3.12\\\\)",
+            "\\\\(3.5\\\\)",
+            "\\\\(3.25\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert the minutes portion into a fraction of an hour (since there are 60 minutes in an hour) and then convert that fraction to a decimal.",
+          "steps": [
+            {
+              "explain": "Identify the given hours and minutes. The time is \\\\(3\\\\) hours and \\\\(12\\\\) minutes, and we need to convert the minutes to decimal hours.",
+              "work": "\\\\(\\text{Time} = 3\\\\text{ hours} + 12\\\\text{ minutes}\\\\)"
+            },
+            {
+              "explain": "Convert \\\\(12\\\\) minutes to a fraction of an hour by dividing by \\\\(60\\\\). This is because one hour contains exactly \\\\(60\\\\) minutes.",
+              "work": "\\\\(\\text{Fraction of hour} = \\\\frac{12}{60}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by 12. This yields a basic equivalent fraction.",
+              "work": "\\\\(\\frac{12 \\\\div 12}{60 \\\\div 12} = \\\\frac{1}{5}\\\\)"
+            },
+            {
+              "explain": "Convert \\\\(\\frac{1}{5}\\\\) to a decimal by dividing 1 by 5, or multiplying the terms by 2 to get tenths.",
+              "work": "\\\\(\\frac{1}{5} = \\\\frac{2}{10} = 0.2\\\\text{ hours}\\\\)"
+            },
+            {
+              "explain": "Add the decimal hours to the whole hours to find the final answer. The total duration is 3.2 hours.",
+              "work": "\\\\(3 + 0.2 = 3.2\\\\text{ hours}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l5-q12a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A miniature microchip sensor has a width of \\\\(3\\\\text{ cm}\\) and \\\\(2\\\\text{ mm}\\\\). Express this width in centimetres as a decimal.",
+          "options": [
+            "\\\\(3.2\\\\text{ cm}\\\\)",
+            "\\\\(3.5\\\\text{ cm}\\\\)",
+            "\\\\(3.22\\\\text{ cm}\\\\)",
+            "\\\\(3.02\\\\text{ cm}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Recall that \\\\(10\\\\text{ mm} = 1\\\\text{ cm}\\\\). Convert the millimetres to centimetres first, then add it to the whole centimetre value.",
+          "steps": [
+            {
+              "explain": "Identify the measurement components and the conversion factor. The width is \\\\(3\\\\text{ cm}\\) and \\\\(2\\\\text{ mm}\\\\), and we know that \\\\(10\\\\text{ mm} = 1\\\\text{ cm}\\\\).",
+              "work": "\\\\(\\text{Conversion Factor: } 10\\\\text{ mm} = 1\\\\text{ cm}\\\\)"
+            },
+            {
+              "explain": "Convert the \\\\(2\\\\text{ mm}\\) component into centimetres by dividing by \\\\(10\\\\). This shifts the digit one place value down.",
+              "work": "\\\\(2\\\\text{ mm} = \\\\frac{2}{10}\\\\text{ cm} = 0.2\\\\text{ cm}\\\\)"
+            },
+            {
+              "explain": "Add the converted centimetre decimal to the original \\\\(3\\\\text{ cm}\\) to get the final total length.",
+              "work": "\\\\(3\\\\text{ cm} + 0.2\\\\text{ cm} = 3.2\\\\text{ cm}\\\\)"
+            },
+            {
+              "explain": "Conclude that the decimal equivalent of the width is 3.2 cm.",
+              "work": "\\\\(\\text{Total Width} = 3.2\\\\text{ cm}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l5-q12b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A geological sample weighs \\\\(5\\\\text{ kilograms}\\) and \\\\(637\\\\text{ grams}\\\\). Express this weight in kilograms as a decimal.",
+          "options": [
+            "\\\\(5.0637\\\\text{ kg}\\\\)",
+            "\\\\(5.637\\\\text{ g}\\\\)",
+            "\\\\(5.637\\\\text{ kg}\\\\)",
+            "\\\\(56.37\\\\text{ kg}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "There are \\\\(1000\\\\text{ grams}\\) in \\\\(1\\\\text{ kilogram}\\\\). Convert the grams to kilograms by dividing by \\\\(1000\\\\), then add it to the kilograms.",
+          "steps": [
+            {
+              "explain": "Identify the given weights and the conversion relationship between grams and kilograms. We have \\\\(5\\\\text{ kg}\\) and \\\\(637\\\\text{ g}\\\\), and know that \\\\(1000\\\\text{ g} = 1\\\\text{ kg}\\\\).",
+              "work": "\\\\(\\text{Conversion Factor: } 1000\\\\text{ g} = 1\\\\text{ kg}\\\\)"
+            },
+            {
+              "explain": "Convert the \\\\(637\\\\text{ g}\\) to kilograms by dividing by \\\\(1000\\\\). This shifts the decimal point three places to the left.",
+              "work": "\\\\(637\\\\text{ g} = \\\\frac{637}{1000}\\\\text{ kg} = 0.637\\\\text{ kg}\\\\)"
+            },
+            {
+              "explain": "Add the decimal kilograms to the whole kilograms to find the final decimal weight.",
+              "work": "\\\\(5\\\\text{ kg} + 0.637\\\\text{ kg} = 5.637\\\\text{ kg}\\\\)"
+            },
+            {
+              "explain": "Conclude that the sample weight expressed as a decimal is 5.637 kg.",
+              "work": "\\\\(\\text{Total Weight} = 5.637\\\\text{ kg}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l5-q12c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A coolant reservoir is filled with \\\\(4\\\\text{ litres}\\) and \\\\(38\\\\text{ millilitres}\\) of coolant fluid. Express this volume in litres as a decimal.",
+          "options": [
+            "\\\\(4.038\\\\text{ L}\\\\)",
+            "\\\\(4.38\\\\text{ L}\\\\)",
+            "\\\\(4.380\\\\text{ L}\\\\)",
+            "\\\\(4.0038\\\\text{ L}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "There are \\\\(1000\\\\text{ millilitres}\\) in \\\\(1\\\\text{ litre}\\\\). Divide the millilitres by \\\\(1000\\\\) to convert to litres, making sure to use a placeholder zero.",
+          "steps": [
+            {
+              "explain": "Identify the volume parts and the conversion factor. The volume is \\\\(4\\\\text{ L}\\) and \\\\(38\\\\text{ mL}\\\\), and we know that \\\\(1000\\\\text{ mL} = 1\\\\text{ L}\\\\).",
+              "work": "\\\\(\\text{Conversion Factor: } 1000\\\\text{ mL} = 1\\\\text{ L}\\\\)"
+            },
+            {
+              "explain": "Convert the \\\\(38\\\\text{ mL}\\) component into litres by dividing by \\\\(1000\\\\). Since 38 has only two digits, we must place a placeholder zero in the tenths position.",
+              "work": "\\\\(38\\\\text{ mL} = \\\\frac{38}{1000}\\\\text{ L} = 0.038\\\\text{ L}\\\\)"
+            },
+            {
+              "explain": "Add the converted decimal litres to the initial \\\\(4\\\\text{ L}\\) of fluid.",
+              "work": "\\\\(4\\\\text{ L} + 0.038\\\\text{ L} = 4.038\\\\text{ L}\\\\)"
+            },
+            {
+              "explain": "Conclude that the reservoir holds 4.038 litres of coolant.",
+              "work": "\\\\(\\text{Total Volume} = 4.038\\\\text{ L}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l5-q12d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A telescope mirror mounting rail has a measured length of \\\\(4\\\\text{ metres}\\) and \\\\(6\\\\text{ centimetres}\\\\). Express this length in metres as a decimal.",
+          "options": [
+            "\\\\(4.6\\\\text{ m}\\\\)",
+            "\\\\(4.06\\\\text{ m}\\\\)",
+            "\\\\(4.66\\\\text{ m}\\\\)",
+            "\\\\(4.006\\\\text{ m}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "There are \\\\(100\\\\text{ centimetres}\\) in \\\\(1\\\\text{ metre}\\\\). Divide \\\\(6\\\\) by \\\\(100\\\\) to convert it to metres, ensuring you place a placeholder zero in the tenths place.",
+          "steps": [
+            {
+              "explain": "Identify the measurements and the conversion factor. The length is \\\\(4\\\\text{ m}\\) and \\\\(6\\\\text{ cm}\\\\), and we know that \\\\(100\\\\text{ cm} = 1\\\\text{ m}\\\\).",
+              "work": "\\\\(\\text{Conversion Factor: } 100\\\\text{ cm} = 1\\\\text{ m}\\\\)"
+            },
+            {
+              "explain": "Convert \\\\(6\\\\text{ cm}\\) into metres by dividing by \\\\(100\\\\). This shifts the digit two positions to the left, requiring a placeholder zero.",
+              "work": "\\\\(6\\\\text{ cm} = \\\\frac{6}{100}\\\\text{ m} = 0.06\\\\text{ m}\\\\)"
+            },
+            {
+              "explain": "Add the converted metre value to the original \\\\(4\\\\text{ m}\\) length.",
+              "work": "\\\\(4\\\\text{ m} + 0.06\\\\text{ m} = 4.06\\\\text{ m}\\\\)"
+            },
+            {
+              "explain": "Conclude that the mounting rail length expressed as a decimal is 4.06 metres.",
+              "work": "\\\\(\\text{Total Length} = 4.06\\\\text{ m}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rn-2-l1-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What percentage of the large grid below has been shaded?",
+          "figure": {
+            "svg": "fig:8177b9c159"
+          },
+          "options": [
+            "\\\\(40\\%\\\\)",
+            "\\\\(47\\%\\\\)",
+            "\\\\(50\\%\\\\)",
+            "\\\\(37\\%\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Count the number of fully shaded rows first. Each row represents 10% of the entire grid.",
+          "steps": [
+            {
+              "explain": "First, identify the size of the grid. The grid consists of 10 rows and 10 columns, which makes a total of 100 small squares.",
+              "work": "\\\\(\\text{Total squares} = 10 \\\\times 10 = 100\\\\)"
+            },
+            {
+              "explain": "Count the number of shaded squares. There are 4 full rows of 10 squares shaded at the bottom, plus 7 additional squares in the row above.",
+              "work": "\\\\(\\text{Shaded squares} = 40 + 7 = 47\\\\)"
+            },
+            {
+              "explain": "Convert this count into a percentage. Since the total is 100, the number of shaded squares is directly equivalent to the percentage.",
+              "work": "\\\\(\\frac{47}{100} \\\\times 100\\% = 47\\%\\\\)"
+            },
+            {
+              "explain": "Confirm that 47% of the entire grid has been shaded. This matches our counts.",
+              "work": "\\\\(\\text{Percentage} = 47\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What percentage of the grid below has been shaded?",
+          "figure": {
+            "svg": "fig:c0cbae0163"
+          },
+          "options": [
+            "\\\\(60\\%\\\\)",
+            "\\\\(40\\%\\\\)",
+            "\\\\(70\\%\\\\)",
+            "\\\\(50\\%\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the number of shaded rows. Six out of ten rows are fully shaded green.",
+          "steps": [
+            {
+              "explain": "First, analyze the total number of rows. There are 10 rows in total, with each row representing 10% of the entire grid.",
+              "work": "\\\\(\\text{One row} = 10\\%\\\\)"
+            },
+            {
+              "explain": "Count the number of fully shaded rows. We observe that exactly 6 rows are colored in green.",
+              "work": "\\\\(\\text{Shaded rows} = 6\\\\)"
+            },
+            {
+              "explain": "Multiply the number of shaded rows by the percentage value of a single row to find the total percentage.",
+              "work": "\\\\(6 \\\\times 10\\% = 60\\%\\\\)"
+            },
+            {
+              "explain": "Confirm that the green shaded portion of the grid represents exactly 60%.",
+              "work": "\\\\(\\text{Percentage} = 60\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What percentage of the circular diagram below has been shaded?",
+          "figure": {
+            "svg": "fig:d734e6fa46"
+          },
+          "options": [
+            "\\\\(25\\%\\\\)",
+            "\\\\(37.5\\%\\\\)",
+            "\\\\(50\\%\\\\)",
+            "\\\\(12.5\\%\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Count the number of equal sectors in the circle. Only one of these sectors is shaded red.",
+          "steps": [
+            {
+              "explain": "First, count the total number of equal sectors the circle is divided into. We find that the circle is split into 8 equal sectors.",
+              "work": "\\\\(\\text{Total sectors} = 8\\\\)"
+            },
+            {
+              "explain": "Identify the fraction of the circle that is shaded. Exactly 1 sector is shaded red out of the total of 8.",
+              "work": "\\\\(\\text{Shaded fraction} = \\\\frac{1}{8}\\\\)"
+            },
+            {
+              "explain": "Convert the fraction to a percentage by multiplying by 100%. Divide 100 by 8 to find the value.",
+              "work": "\\\\(\\frac{1}{8} \\\\times 100\\% = 12.5\\%\\\\)"
+            },
+            {
+              "explain": "Confirm that the shaded sector represents exactly 12.5% of the circle.",
+              "work": "\\\\(\\text{Percentage} = 12.5\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Roger scored \\\\(74\\%\\\\) in his spelling test. What percentage of the questions did he get wrong?",
+          "options": [
+            "\\\\(36\\%\\\\)",
+            "\\\\(16\\%\\\\)",
+            "\\\\(26\\%\\\\)",
+            "\\\\(24\\%\\\\)"
+          ],
+          "answer": 2,
+          "hint": "The total percentage of the spelling test is 100%. Subtract his score from 100%.",
+          "steps": [
+            {
+              "explain": "First, establish that the total possible percentage in any full test is 100%. Roger's correct answers are given as a percentage of this total.",
+              "work": "\\\\(\\text{Total percentage} = 100\\%\\\\)"
+            },
+            {
+              "explain": "Set up the subtraction to find the percentage of incorrect answers. We subtract Roger's correct score from the total percentage.",
+              "work": "\\\\(\\text{Wrong percentage} = 100\\% - 74\\%\\\\)"
+            },
+            {
+              "explain": "Calculate the difference to find the percentage of wrong answers.",
+              "work": "\\\\(100 - 74 = 26\\\\)"
+            },
+            {
+              "explain": "Confirm that Roger got 26% of the spelling questions incorrect.",
+              "work": "\\\\(\\text{Incorrect percentage} = 26\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(31\\%\\\\) to a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{3}{10}\\\\)",
+            "\\\\(\\frac{31}{100}\\\\)",
+            "\\\\(\\frac{13}{100}\\\\)",
+            "\\\\(\\frac{31}{10}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "A percentage means 'out of 100'. Write 31 over 100.",
+          "steps": [
+            {
+              "explain": "First, write the percentage as a fraction with a denominator of 100.",
+              "work": "\\\\(31\\% = \\\\frac{31}{100}\\\\)"
+            },
+            {
+              "explain": "Determine if the fraction can be simplified. We check if 31 and 100 have any common factors other than 1. Since 31 is a prime number, it has no common factors with 100.",
+              "work": "\\\\(\\text{HCF}(31, 100) = 1\\\\)"
+            },
+            {
+              "explain": "Confirm that the fraction is already in its simplest form.",
+              "work": "\\\\(\\text{Simplest form} = \\\\frac{31}{100}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q3b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(49\\%\\\\) to a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{9}{20}\\\\)",
+            "\\\\(\\frac{49}{100}\\\\)",
+            "\\\\(\\frac{49}{50}\\\\)",
+            "\\\\(\\frac{1}{2}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Write 49 over 100 and check if they share any common factors like 7.",
+          "steps": [
+            {
+              "explain": "First, express the percentage as a fraction with a denominator of 100.",
+              "work": "\\\\(49\\% = \\\\frac{49}{100}\\\\)"
+            },
+            {
+              "explain": "Check for common factors between the numerator 49 and the denominator 100. The factors of 49 are 1, 7, and 49. None of these divide 100 evenly.",
+              "work": "\\\\(\\text{HCF}(49, 100) = 1\\\\)"
+            },
+            {
+              "explain": "Confirm that the fraction cannot be simplified further.",
+              "work": "\\\\(\\text{Simplest form} = \\\\frac{49}{100}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(7\\%\\\\) to a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{7}{100}\\\\)",
+            "\\\\(\\frac{14}{100}\\\\)",
+            "\\\\(\\frac{7}{10}\\\\)",
+            "\\\\(\\frac{7}{1000}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Write 7 over 100. Since 7 is prime, check if it divides 100.",
+          "steps": [
+            {
+              "explain": "First, write the percentage value as a fraction out of 100.",
+              "work": "\\\\(7\\% = \\\\frac{7}{100}\\\\)"
+            },
+            {
+              "explain": "Check if 7 divides 100. Since 7 is a prime number and does not divide 100, the fraction cannot be simplified.",
+              "work": "\\\\(100 \\\\div 7 = 14\\\\text{ R } 2\\\\)"
+            },
+            {
+              "explain": "State the final simplified fraction.",
+              "work": "\\\\(\\text{Simplest form} = \\\\frac{7}{100}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q3d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(19\\%\\\\) to a fraction in its simplest form.",
+          "options": [
+            "\\\\(\\frac{9}{50}\\\\)",
+            "\\\\(\\frac{19}{10}\\\\)",
+            "\\\\(\\frac{1}{5}\\\\)",
+            "\\\\(\\frac{19}{100}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Write 19 over 100. Since 19 is a prime number, it has no common factors with 100.",
+          "steps": [
+            {
+              "explain": "First, convert the percentage into a fraction with 100 as the denominator.",
+              "work": "\\\\(19\\% = \\\\frac{19}{100}\\\\)"
+            },
+            {
+              "explain": "Analyze if 19 and 100 share any common factors. Because 19 is prime and does not divide 100, the fraction is in its simplest form.",
+              "work": "\\\\(\\text{HCF}(19, 100) = 1\\\\)"
+            },
+            {
+              "explain": "Confirm that the simplest fractional representation of 19% is 19/100.",
+              "work": "\\\\(\\text{Simplest form} = \\\\frac{19}{100}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the fraction \\\\(\\frac{17}{100}\\\\) to a percentage.",
+          "options": [
+            "\\\\(1.7\\%\\\\)",
+            "\\\\(71\\%\\\\)",
+            "\\\\(17\\%\\\\)",
+            "\\\\(0.17\\%\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Any fraction with a denominator of 100 is directly the percentage value of its numerator.",
+          "steps": [
+            {
+              "explain": "First, write down the fraction to convert.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{17}{100}\\\\)"
+            },
+            {
+              "explain": "Multiply the fraction by 100% to convert it to a percentage format.",
+              "work": "\\\\(\\frac{17}{100} \\\\times 100\\%\\\\)"
+            },
+            {
+              "explain": "Cancel out the common factor of 100 from both the numerator and the denominator.",
+              "work": "\\\\(17\\%\\\\)"
+            },
+            {
+              "explain": "Confirm that the final percentage is 17%.",
+              "work": "\\\\(\\text{Percentage} = 17\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the fraction \\\\(\\frac{45}{100}\\\\) to a percentage.",
+          "options": [
+            "\\\\(54\\%\\\\)",
+            "\\\\(4.5\\%\\\\)",
+            "\\\\(9\\%\\\\)",
+            "\\\\(45\\%\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Since the denominator is already 100, the numerator is the percentage.",
+          "steps": [
+            {
+              "explain": "First, identify the fraction given for conversion.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{45}{100}\\\\)"
+            },
+            {
+              "explain": "Convert to a percentage by multiplying the fraction by 100%.",
+              "work": "\\\\(\\frac{45}{100} \\\\times 100\\%\\\\)"
+            },
+            {
+              "explain": "Simplify the equation by canceling the 100s.",
+              "work": "\\\\(45\\%\\\\)"
+            },
+            {
+              "explain": "Confirm the final percentage is 45%.",
+              "work": "\\\\(\\text{Percentage} = 45\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the fraction \\\\(\\frac{1}{2}\\\\) to a percentage.",
+          "options": [
+            "\\\\(5\\%\\\\)",
+            "\\\\(20\\%\\\\)",
+            "\\\\(50\\%\\\\)",
+            "\\\\(25\\%\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 1/2 by 100, or find an equivalent fraction with a denominator of 100.",
+          "steps": [
+            {
+              "explain": "First, state the fraction to convert and prepare to multiply by 100%.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{1}{2}\\\\)"
+            },
+            {
+              "explain": "Multiply the fraction by 100% to calculate the percentage value.",
+              "work": "\\\\(\\frac{1}{2} \\\\times 100\\% = \\\\frac{100}{2}\\%\\\\)"
+            },
+            {
+              "explain": "Perform the division of 100 by 2 to find the final percentage.",
+              "work": "\\\\(100 \\\\div 2 = 50\\\\)"
+            },
+            {
+              "explain": "State that half of a whole corresponds to exactly 50%.",
+              "work": "\\\\(\\text{Percentage} = 50\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the fraction \\\\(\\frac{1}{4}\\\\) to a percentage.",
+          "options": [
+            "\\\\(40\\%\\\\)",
+            "\\\\(25\\%\\\\)",
+            "\\\\(75\\%\\\\)",
+            "\\\\(14\\%\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 1/4 by 100, or recall that a quarter of 100% is 25%.",
+          "steps": [
+            {
+              "explain": "First, identify the fraction given for conversion.",
+              "work": "\\\\(\\text{Fraction} = \\\\frac{1}{4}\\\\)"
+            },
+            {
+              "explain": "Multiply the fraction by 100% to change it to a percentage.",
+              "work": "\\\\(\\frac{1}{4} \\\\times 100\\% = \\\\frac{100}{4}\\%\\\\)"
+            },
+            {
+              "explain": "Divide 100 by 4 to compute the percentage value.",
+              "work": "\\\\(100 \\\\div 4 = 25\\\\)"
+            },
+            {
+              "explain": "Confirm that one quarter of a whole is equal to 25%.",
+              "work": "\\\\(\\text{Percentage} = 25\\%\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q5a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(57\\%\\\\) to a decimal.",
+          "options": [
+            "\\\\(5.7\\\\)",
+            "\\\\(0.057\\\\)",
+            "\\\\(57.0\\\\)",
+            "\\\\(0.57\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide the percentage number by 100 to convert it to a decimal.",
+          "steps": [
+            {
+              "explain": "First, write down the percentage. A percentage can be written as a fraction over 100.",
+              "work": "\\\\(57\\% = \\\\frac{57}{100}\\\\)"
+            },
+            {
+              "explain": "To divide by 100, shift the decimal point two places to the left.",
+              "work": "\\\\(57.0 \\\\div 100 = 0.57\\\\)"
+            },
+            {
+              "explain": "Confirm that the final decimal value is 0.57.",
+              "work": "\\\\(\\text{Decimal} = 0.57\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q5b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(62\\%\\\\) to a decimal.",
+          "options": [
+            "\\\\(6.2\\\\)",
+            "\\\\(0.62\\\\)",
+            "\\\\(0.062\\\\)",
+            "\\\\(0.602\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the percentage value by 100 to find the decimal equivalent.",
+          "steps": [
+            {
+              "explain": "First, express the percentage as a fraction out of 100.",
+              "work": "\\\\(62\\% = \\\\frac{62}{100}\\\\)"
+            },
+            {
+              "explain": "Perform the division by moving the decimal point two positions to the left.",
+              "work": "\\\\(62.0 \\\\div 100 = 0.62\\\\)"
+            },
+            {
+              "explain": "Confirm that the decimal representation of 62% is 0.62.",
+              "work": "\\\\(\\text{Decimal} = 0.62\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(8\\%\\\\) to a decimal.",
+          "options": [
+            "\\\\(0.8\\\\)",
+            "\\\\(8.0\\\\)",
+            "\\\\(0.008\\\\)",
+            "\\\\(0.08\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide 8 by 100. Make sure to place the zero in the tenths place.",
+          "steps": [
+            {
+              "explain": "First, write down the percentage as a fraction with 100 as the denominator.",
+              "work": "\\\\(8\\% = \\\\frac{8}{100}\\\\)"
+            },
+            {
+              "explain": "Divide the single digit 8 by 100. This requires moving the decimal point two places to the left, which introduces a zero.",
+              "work": "\\\\(8.0 \\\\div 100 = 0.08\\\\)"
+            },
+            {
+              "explain": "Verify that 0.08 represents exactly eight hundredths.",
+              "work": "\\\\(\\text{Decimal} = 0.08\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q5d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Change the percentage \\\\(40\\%\\\\) to a decimal.",
+          "options": [
+            "\\\\(0.04\\\\)",
+            "\\\\(0.44\\\\)",
+            "\\\\(4.0\\\\)",
+            "\\\\(0.4\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide 40 by 100, which is the same as dividing 4 by 10.",
+          "steps": [
+            {
+              "explain": "First, write the percentage as a fraction out of 100.",
+              "work": "\\\\(40\\% = \\\\frac{40}{100}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing the numerator and denominator by 10 first.",
+              "work": "\\\\(\\frac{40}{100} = \\\\frac{4}{10}\\\\)"
+            },
+            {
+              "explain": "Divide 4 by 10 by moving the decimal point one place to the left.",
+              "work": "\\\\(4.0 \\\\div 10 = 0.4\\\\)"
+            },
+            {
+              "explain": "Confirm that 40% is equivalent to the decimal value of 0.4.",
+              "work": "\\\\(\\text{Decimal} = 0.4\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-2-l1-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Complete the equivalence row for a percentage value of \\\\(75\\%\\\\) by finding its corresponding decimal, fraction, and simplest fraction:\\n\\n| Percentage | Decimal | Fraction | Simplest fraction |\\n| :--- | :---: | :---: | :---: |\\n| 75% | ? | ? | ? |",
+          "options": [
+            "Decimal: \\\\(0.75\\\\), Fraction: \\\\(\\frac{75}{100}\\\\), Simplest: \\\\(\\frac{2}{3}\\\\)",
+            "Decimal: \\\\(0.75\\\\), Fraction: \\\\(\\frac{75}{100}\\\\), Simplest: \\\\(\\frac{3}{4}\\\\)",
+            "Decimal: \\\\(7.5\\\\), Fraction: \\\\(\\frac{75}{100}\\\\), Simplest: \\\\(\\frac{3}{4}\\\\)",
+            "Decimal: \\\\(0.075\\\\), Fraction: \\\\(\\frac{75}{1000}\\\\), Simplest: \\\\(\\frac{3}{40}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 75% to a decimal by dividing by 100. Then express it as a fraction and divide by the highest common factor, 25.",
+          "steps": [
+            {
+              "explain": "First, convert the percentage 75% into a decimal by dividing the number by 100.",
+              "work": "\\\\(75\\% = 75 \\\\div 100 = 0.75\\\\)"
+            },
+            {
+              "explain": "Next, write the percentage as a fraction out of 100. This is the unsimplified fraction representation.",
+              "work": "\\\\(75\\% = \\\\frac{75}{100}\\\\)"
+            },
+            {
+              "explain": "To simplify the fraction, find the Highest Common Factor (HCF) of 75 and 100. The HCF of both numbers is 25.",
+              "work": "\\\\(\\text{HCF}(75, 100) = 25\\\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by 25 to reduce the fraction to its simplest form.",
+              "work": "\\\\(\\frac{75 \\\\div 25}{100 \\\\div 25} = \\\\frac{3}{4}\\\\)"
+            },
+            {
+              "explain": "Confirm that 75% corresponds to decimal 0.75, fraction 75/100, and simplest fraction 3/4.",
+              "work": "\\\\(\\text{Equivalents: } 0.75, \\\\frac{75}{100}, \\\\frac{3}{4}\\\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-rn-3",
+      "code": "MA3-MR-01",
+      "title": "Multiply and divide decimals",
+      "questions": [
+        {
+          "id": "y6-rn-3-l1-q7a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the percentage of the quantity shown: \\\\(10\\%\\\\) of \\\\(1\\\\text{ kilogram}\\\\) (in grams).",
+          "options": [
+            "\\\\(50\\\\text{ g}\\\\)",
+            "\\\\(100\\\\text{ g}\\\\)",
+            "\\\\(1\\\\text{ g}\\\\)",
+            "\\\\(10\\\\text{ g}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 1 kilogram to grams first. Recall that 1 kg = 1000 grams.",
+          "steps": [
+            {
+              "explain": "First, identify the unit conversion required. We need the answer in grams, so we convert 1 kilogram into grams.",
+              "work": "\\\\(1\\\\text{ kg} = 1000\\\\text{ g}\\\\)"
+            },
+            {
+              "explain": "Set up the percentage calculation. We need to find 10% of 1000 grams.",
+              "work": "\\\\(10\\% \\\\text{ of } 1000\\\\text{ g} = \\\\frac{10}{100} \\\\times 1000\\\\)"
+            },
+            {
+              "explain": "Simplify the expression by dividing 1000 by 10 (since 10/100 is equivalent to 1/10).",
+              "work": "\\\\(\\frac{1}{10} \\\\times 1000 = 100\\\\)"
+            },
+            {
+              "explain": "Confirm that 10% of 1 kg is exactly 100 grams.",
+              "work": "\\\\(\\text{Result} = 100\\\\text{ g}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-3-l1-q7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the percentage of the quantity shown: \\\\(25\\%\\\\) of \\\\(1\\\\text{ Litre}\\\\) (in mL).",
+          "options": [
+            "\\\\(25\\\\text{ mL}\\\\)",
+            "\\\\(500\\\\text{ mL}\\\\)",
+            "\\\\(125\\\\text{ mL}\\\\)",
+            "\\\\(250\\\\text{ mL}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert 1 Litre to mL first. Recall that 1 L = 1000 mL, and 25% is one quarter.",
+          "steps": [
+            {
+              "explain": "First, convert 1 Litre into millilitres (mL) to match the required units.",
+              "work": "\\\\(1\\\\text{ L} = 1000\\\\text{ mL}\\\\)"
+            },
+            {
+              "explain": "Express 25% as a fraction. 25% is equal to one quarter.",
+              "work": "\\\\(25\\% = \\\\frac{25}{100} = \\\\frac{1}{4}\\\\)"
+            },
+            {
+              "explain": "Find one quarter of 1000 mL by dividing 1000 by 4.",
+              "work": "\\\\(1000 \\\\div 4 = 250\\\\)"
+            },
+            {
+              "explain": "Confirm that 25% of 1 Litre is equal to 250 millilitres.",
+              "work": "\\\\(\\text{Result} = 250\\\\text{ mL}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-3-l1-q7c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the percentage of the quantity shown: \\\\(60\\%\\\\) of \\\\(\\$2.00\\\\) (in cents).",
+          "options": [
+            "\\\\(80\\\\text{ cents}\\\\)",
+            "\\\\(1200\\\\text{ cents}\\\\)",
+            "\\\\(60\\\\text{ cents}\\\\)",
+            "\\\\(120\\\\text{ cents}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert $2.00 to cents. Recall that $1.00 = 100 cents, so $2.00 = 200 cents.",
+          "steps": [
+            {
+              "explain": "First, convert the monetary value in dollars into cents.",
+              "work": "\\\\(\\$2.00 = 200\\\\text{ cents}\\\\)"
+            },
+            {
+              "explain": "Set up the equation to find 60% of 200 cents.",
+              "work": "\\\\(60\\% \\\\text{ of } 200 = \\\\frac{60}{100} \\\\times 200\\\\)"
+            },
+            {
+              "explain": "Perform the multiplication. Divide 200 by 100 first, then multiply by 60.",
+              "work": "\\\\(60 \\\\times 2 = 120\\\\)"
+            },
+            {
+              "explain": "Confirm that 60% of $2.00 is equivalent to 120 cents (or $1.20).",
+              "work": "\\\\(\\text{Result} = 120\\\\text{ cents}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y6-rn-3-l1-q7d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the percentage of the quantity shown: \\\\(75\\%\\\\) of \\\\(2\\\\text{ metres}\\\\) (in cm).",
+          "options": [
+            "\\\\(175\\\\text{ cm}\\\\)",
+            "\\\\(150\\\\text{ cm}\\\\)",
+            "\\\\(75\\\\text{ cm}\\\\)",
+            "\\\\(100\\\\text{ cm}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 2 metres to centimetres. Recall that 1 m = 100 cm, and 75% is three-quarters.",
+          "steps": [
+            {
+              "explain": "First, convert the length from metres into centimetres.",
+              "work": "\\\\(2\\\\text{ m} = 200\\\\text{ cm}\\\\)"
+            },
+            {
+              "explain": "Express 75% as a fraction. 75% is equivalent to three-quarters.",
+              "work": "\\\\(75\\% = \\\\frac{3}{4}\\\\)"
+            },
+            {
+              "explain": "Find three-quarters of 200 cm by dividing 200 by 4, then multiplying the result by 3.",
+              "work": "\\\\(\\begin{aligned} 200 \\\\div 4 &= 50 \\\\ 50 \\\\times 3 &= 150 \\\\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Confirm that 75% of 2 metres is exactly 150 centimetres.",
+              "work": "\\\\(\\text{Result} = 150\\\\text{ cm}\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        }
+      ]
+    }
+  ]
+}

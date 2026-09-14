@@ -1,0 +1,27 @@
+<svg viewBox="0 0 320 300" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .line { stroke: #1e293b; stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .text-math { fill: #0f172a; font-family: KaTeX_Math, Times New Roman, serif; font-size: 16px; font-style: italic; }
+      .right-angle { fill: none; stroke: #94a3b8; stroke-width: 1.5; }
+      .tick { stroke: #3b82f6; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <path d="M 40,260 L 280,260" class="line" />
+  <path d="M 40,260 L 200,20" class="line" />
+  <path d="M 160,80 L 280,260" class="line" />
+  <path d="M 200,20 L 200,260" class="line" />
+  
+  <polyline points="190,260 190,250 200,250" class="right-angle" />
+  
+  <path d="M 94,166 L 106,174" class="tick" />
+  <path d="M 214,174 L 226,166" class="tick" />
+  
+  <text x="145" y="75" class="text-math">A</text>
+  <text x="25" y="275" class="text-math">B</text>
+  <text x="285" y="275" class="text-math">C</text>
+  <text x="195" y="15" class="text-math" text-anchor="middle">D</text>
+  <text x="215" y="145" class="text-math">E</text>
+  <text x="205" y="280" class="text-math">F</text>
+</svg>

@@ -1,0 +1,59 @@
+{
+  "chapterId": "exam:surds",
+  "title": "Exam Practice",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "exam:surds",
+      "code": "2A",
+      "title": "Real numbers and intervals",
+      "questions": [
+        {
+          "id": "s2a_5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write the interval $x < 5$ using bracket notation.",
+          "options": [
+            "$(-\\infty, 5)$",
+            "$[ -\\infty, 5)$",
+            "$(-\\infty, 5]$ ",
+            "$(5, infty)$"
+          ],
+          "answer": 0,
+          "hint": "Exclusive inequality uses round brackets.",
+          "solution": "$x < 5$ means everything from negative infinity up to 5 (not included)."
+        },
+        {
+          "id": "s2a_12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write $x > -4$ in interval notation.",
+          "options": [
+            "$(-4, infty)$",
+            "$[-4, infty)$",
+            "$( -\\infty, -4)$",
+            "$( -\\infty, -4]$"
+          ],
+          "answer": null,
+          "hint": "Greater than means towards positive infinity.",
+          "solution": "$x > -4$ starts at -4 (not included)."
+        },
+        {
+          "id": "s2a_15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express $(3, infty)$ using inequalities.",
+          "options": [
+            "$x > 3$",
+            "$x \\ge 3$",
+            "$x < 3$",
+            "$x \\le 3$"
+          ],
+          "answer": 0,
+          "hint": "Infinity means no upper bound.",
+          "solution": "$x > 3$"
+        }
+      ]
+    }
+  ]
+}

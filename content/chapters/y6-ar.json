@@ -1,0 +1,1033 @@
+{
+  "chapterId": "y6-ar",
+  "title": "Chapter 4: Additive Relations (B)",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-ar-2",
+      "code": "MA3-AR-01",
+      "title": "Add and subtract decimals",
+      "questions": [
+        {
+          "id": "y6-ar-2-q6a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(6.73 + 2.15\\\\).",
+          "options": [
+            "\\\\(8.88\\\\)",
+            "\\\\(8.78\\\\)",
+            "\\\\(9.88\\\\)",
+            "\\\\(8.85\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Align the decimal points vertically, then add the digits column by column starting from the right.",
+          "steps": [
+            {
+              "explain": "Line up the decimal numbers vertically so that identical place values are aligned.",
+              "work": "\\\\(\\\\begin{array}{r} 6.73 \\\\ + 2.15 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add the digits in the hundredths column: 3 + 5 = 8.",
+              "work": "\\\\(3 + 5 = 8\\\\)"
+            },
+            {
+              "explain": "Add the digits in the tenths column: 7 + 1 = 8.",
+              "work": "\\\\(7 + 1 = 8\\\\)"
+            },
+            {
+              "explain": "Add the digits in the units column: 6 + 2 = 8. Place the decimal point in the same relative position.",
+              "work": "\\\\(6 + 2 = 8 \\\\implies 8.88\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-q6b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(4.92 + 1.35\\\\).",
+          "options": [
+            "\\\\(6.25\\\\)",
+            "\\\\(5.27\\\\)",
+            "\\\\(6.27\\\\)",
+            "\\\\(6.37\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Make sure to carry over 1 to the units place when adding the tenths (9 + 3 = 12).",
+          "steps": [
+            {
+              "explain": "Align the numbers vertically by decimal points.",
+              "work": "\\\\(\\\\begin{array}{r} 4.92 \\\\ + 1.35 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add the hundredths column: 2 + 5 = 7.",
+              "work": "\\\\(2 + 5 = 7\\\\)"
+            },
+            {
+              "explain": "Add the tenths column: 9 + 3 = 12. Write down 2 in the tenths place and carry over 1 to the units column.",
+              "work": "\\dots \\\\implies 12 \\\\text{ tenths}"
+            },
+            {
+              "explain": "Add the units column, including the carry: 4 + 1 + 1 = 6.",
+              "work": "\\\\(4 + 1 + 1 = 6 \\\\implies 6.27\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-q6c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(5.74 + 8.69\\\\).",
+          "options": [
+            "\\\\(14.33\\\\)",
+            "\\\\(14.41\\\\)",
+            "\\\\(14.43\\\\)",
+            "\\\\(13.43\\\\)"
+          ],
+          "answer": 2,
+          "hint": "This addition involves carrying digits in both the hundredths and tenths columns.",
+          "steps": [
+            {
+              "explain": "Set up the vertical addition with aligned decimal places.",
+              "work": "\\\\(\\\\begin{array}{r} 5.74 \\\\ + 8.69 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add the hundredths column: 4 + 9 = 13. Write 3 in the hundredths place and carry 1 to the tenths column.",
+              "work": "\\dots \\\\implies 13 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Add the tenths column: 7 + 6 + 1 (carry) = 14. Write 4 in the tenths place and carry 1 to the units column.",
+              "work": "\\dots \\\\implies 14 \\\\text{ tenths}"
+            },
+            {
+              "explain": "Add the units column: 5 + 8 + 1 (carry) = 14.",
+              "work": "\\\\(5 + 8 + 1 = 14 \\\\implies 14.43\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-q7a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(3.9 - 2.5\\\\).",
+          "options": [
+            "\\\\(2.4\\\\)",
+            "\\\\(1.4\\\\)",
+            "\\\\(1.5\\\\)",
+            "\\\\(0.4\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Align the decimal points vertically, and subtract column by column starting from the right.",
+          "steps": [
+            {
+              "explain": "Write the problem vertically, aligning the decimal points.",
+              "work": "\\\\(\\\\begin{array}{r} 3.9 \\\\ - 2.5 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Subtract the tenths column: 9 - 5 = 4.",
+              "work": "\\\\(9 - 5 = 4\\\\)"
+            },
+            {
+              "explain": "Subtract the units column: 3 - 2 = 1. Insert the decimal point in the correct vertical position.",
+              "work": "\\\\(3 - 2 = 1 \\\\implies 1.4\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-q7b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(8.4 - 3.6\\\\).",
+          "options": [
+            "\\\\(5.2\\\\)",
+            "\\\\(5.8\\\\)",
+            "\\\\(4.6\\\\)",
+            "\\\\(4.8\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Since 4 is less than 6, you need to borrow 1 unit from the units place (8) to make it 14 tenths.",
+          "steps": [
+            {
+              "explain": "Arrange the subtraction vertically with aligned decimal points.",
+              "work": "\\\\(\\\\begin{array}{r} 8.4 \\\\ - 3.6 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Since we cannot subtract 6 from 4 in the tenths column, borrow 1 unit from the units digit 8 (leaving 7). This turns the 4 tenths into 14 tenths.",
+              "work": "\\dots \\\\implies 14 \\\\text{ tenths}"
+            },
+            {
+              "explain": "Subtract the units column (now 7 - 3): 7 - 3 = 4.",
+              "work": "\\\\(7 - 3 = 4 \\\\implies 4.8\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-q7c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(9.2 - 4.7\\\\).",
+          "options": [
+            "\\\\(4.5\\\\)",
+            "\\\\(4.7\\\\)",
+            "\\\\(5.3\\\\)",
+            "\\\\(5.5\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Borrow 1 unit from the units column to subtract the tenths column (12 tenths minus 7 tenths).",
+          "steps": [
+            {
+              "explain": "Align the numbers vertically.",
+              "work": "\\\\(\\\\begin{array}{r} 9.2 \\\\ - 4.7 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Borrow 1 from the units place (reducing 9 to 8) to convert the 2 tenths into 12 tenths. Then subtract: 12 - 7 = 5.",
+              "work": "\\dots \\\\implies 12 \\\\text{ tenths}"
+            },
+            {
+              "explain": "Subtract the units digits (now 8 - 4): 8 - 4 = 4.",
+              "work": "\\\\(8 - 4 = 4 \\\\implies 4.5\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l2-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(86.72 + 12.45\\\\).",
+          "options": [
+            "\\\\(99.17\\\\)",
+            "\\\\(99.07\\\\)",
+            "\\\\(99.27\\\\)",
+            "\\\\(98.17\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Align the decimal points vertically, and add columns from right to left.",
+          "steps": [
+            {
+              "explain": "Set up vertical addition.",
+              "work": "\\\\(\\\\begin{array}{r} 86.72 \\\\ + 12.45 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add the hundredths column: 2 + 5 = 7. Then add the tenths column: 7 + 4 = 11 (write 1, carry 1).",
+              "work": "\\dots \\\\implies 17 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Add the units column, including the carry: 6 + 2 + 1 = 9. Finally, add the tens column: 8 + 1 = 9.",
+              "work": "\\\\(86.72 + 12.45 = 99.17\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l2-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(96.75 + 32.48\\\\).",
+          "options": [
+            "\\\\(129.13\\\\)",
+            "\\\\(129.25\\\\)",
+            "\\\\(128.23\\\\)",
+            "\\\\(129.23\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Pay close attention to carrying numbers over to the next column when adding.",
+          "steps": [
+            {
+              "explain": "Write vertically with decimal points aligned.",
+              "work": "\\\\(\\\\begin{array}{r} 96.75 \\\\ + 32.48 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add hundredths: 5 + 8 = 13 (write 3, carry 1). Add tenths: 7 + 4 + 1 (carry) = 12 (write 2, carry 1).",
+              "work": "\\dots \\\\implies 23 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Add units: 6 + 2 + 1 (carry) = 9. Add tens: 9 + 3 = 12.",
+              "work": "\\\\(96.75 + 32.48 = 129.23\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l2-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(135.06 + 17.29\\\\).",
+          "options": [
+            "\\\\(152.39\\\\)",
+            "\\\\(152.25\\\\)",
+            "\\\\(142.35\\\\)",
+            "\\\\(152.35\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Set up vertical columns. Make sure the units digits (5 and 7) align.",
+          "steps": [
+            {
+              "explain": "Set up vertical addition.",
+              "work": "\\\\(\\\\begin{array}{r} 135.06 \\\\ + \\ 17.29 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add hundredths: 6 + 9 = 15 (write 5, carry 1). Add tenths: 0 + 2 + 1 (carry) = 3.",
+              "work": "\\dots \\\\implies 35 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Add units: 5 + 7 = 12 (write 2, carry 1). Add tens: 3 + 1 + 1 (carry) = 5. Add hundreds: 1.",
+              "work": "\\\\(135.06 + 17.29 = 152.35\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l2-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(16.79 - 1.43\\\\).",
+          "options": [
+            "\\\\(15.30\\\\)",
+            "\\\\(15.36\\\\)",
+            "\\\\(15.46\\\\)",
+            "\\\\(14.36\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Line up decimal places. Subtract each column from right to left.",
+          "steps": [
+            {
+              "explain": "Write the subtraction vertically.",
+              "work": "\\\\(\\\\begin{array}{r} 16.79 \\\\ - \\ 1.43 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Subtract hundredths: 9 - 3 = 6. Subtract tenths: 7 - 4 = 3.",
+              "work": "\\dots \\\\implies 36 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Subtract units: 6 - 1 = 5. Subtract tens: 1 - 0 = 1.",
+              "work": "\\\\(16.79 - 1.43 = 15.36\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l2-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(34.65 - 7.18\\\\).",
+          "options": [
+            "\\\\(27.43\\\\)",
+            "\\\\(26.47\\\\)",
+            "\\\\(27.57\\\\)",
+            "\\\\(27.47\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Borrow 1 from the tenths digit (6) to subtract 8 from 5 in the hundredths column.",
+          "steps": [
+            {
+              "explain": "Set up subtraction vertically.",
+              "work": "\\\\(\\\\begin{array}{r} 34.65 \\\\ - \\ 7.18 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Borrow 1 from tenths place (reducing 6 to 5) to make 15 hundredths. Subtract: 15 - 8 = 7. Subtract tenths: 5 - 1 = 4.",
+              "work": "\\dots \\\\implies 47 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Subtract whole numbers: 34 - 7 = 27.",
+              "work": "\\\\(34.65 - 7.18 = 27.47\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l2-q8c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(64.29 - 17.58\\\\).",
+          "options": [
+            "\\\\(47.71\\\\)",
+            "\\\\(56.71\\\\)",
+            "\\\\(46.61\\\\)",
+            "\\\\(46.71\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Set up columns and subtract. You will need to borrow to subtract the tenths column (2 - 5).",
+          "steps": [
+            {
+              "explain": "Set up subtraction vertically.",
+              "work": "\\\\(\\\\begin{array}{r} 64.29 \\\\ - 17.58 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Subtract hundredths: 9 - 8 = 1. To subtract tenths, borrow 1 from units (4 becomes 3) to make 12 tenths. Subtract: 12 - 5 = 7.",
+              "work": "\\dots \\\\implies 71 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Subtract units (3 - 7 requires borrowing from tens, so 13 - 7 = 6). Subtract tens: 5 - 1 = 4.",
+              "work": "\\\\(64.29 - 17.58 = 46.71\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l2-q11a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the total amount: \\\\(\\$8.35 + \\$16.72 + \\$0.56\\\\).",
+          "options": [
+            "\\\\(\\$24.63\\\\)",
+            "\\\\(\\$25.53\\\\)",
+            "\\\\(\\$25.63\\\\)",
+            "\\\\(\\$25.73\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Set up vertical addition with all decimal points aligned.",
+          "steps": [
+            {
+              "explain": "Align the three amounts vertically.",
+              "work": "\\\\(\\\\begin{array}{r} 8.35 \\\\ 16.72 \\\\ + \\ 0.56 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add hundredths column: 5 + 2 + 6 = 13 (write 3, carry 1).",
+              "work": "\\dots \\\\implies 3 \\\\text{ (carry 1)}"
+            },
+            {
+              "explain": "Add tenths column: 3 + 7 + 5 + 1 (carry) = 16 (write 6, carry 1).",
+              "work": "\\dots \\\\implies 63 \\\\text{ cents}"
+            },
+            {
+              "explain": "Add whole dollars: 8 + 16 + 0 + 1 (carry) = 25.",
+              "work": "\\\\(\\$8.35 + \\$16.72 + \\$0.56 = \\$25.63\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l2-q11b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(\\$183.47 - \\$69.18\\\\).",
+          "options": [
+            "\\\\(\\$114.39\\\\)",
+            "\\\\(\\$114.29\\\\)",
+            "\\\\(\\$113.29\\\\)",
+            "\\\\(\\$124.29\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Line up the decimal points and perform vertical subtraction, borrowing where necessary.",
+          "steps": [
+            {
+              "explain": "Align the numbers vertically.",
+              "work": "\\\\(\\\\begin{array}{r} 183.47 \\\\ - \\ 69.18 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Subtract cents column: 7 - 8 requires borrowing (17 - 8 = 9). 3 - 1 = 2.",
+              "work": "\\dots \\\\implies 29 \\\\text{ cents}"
+            },
+            {
+              "explain": "Subtract dollars column: 3 - 9 requires borrowing (13 - 9 = 4). 7 - 6 = 1. 1 - 0 = 1.",
+              "work": "\\\\(\\$183.47 - \\$69.18 = \\$114.29\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l3-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the sum of three decimal numbers: \\\\(16.73 + 53.21 + 8.97\\\\).",
+          "options": [
+            "\\\\(78.81\\\\)",
+            "\\\\(77.91\\\\)",
+            "\\\\(79.01\\\\)",
+            "\\\\(78.91\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Set up the numbers vertically, aligning all decimal points. Add column by column from the right.",
+          "steps": [
+            {
+              "explain": "Align the decimal numbers vertically.",
+              "work": "\\\\(\\\\begin{array}{r} 16.73 \\\\ 53.21 \\\\ + \\ 8.97 \\\\ \\\\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add the hundredths column: 3 + 1 + 7 = 11 (write 1, carry 1).",
+              "work": "\\dots \\\\implies 1 \\\\text{ (carry 1)}"
+            },
+            {
+              "explain": "Add the tenths column: 7 + 2 + 9 + 1 (carry) = 19 (write 9, carry 1).",
+              "work": "\\dots \\\\implies 91 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Add units: 6 + 3 + 8 + 1 (carry) = 18 (write 8, carry 1). Add tens: 1 + 5 + 1 (carry) = 7.",
+              "work": "\\\\(16.73 + 53.21 + 8.97 = 78.91\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l3-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate the sum: \\\\(35.90 + 4.86 + 27.59\\\\).",
+          "options": [
+            "\\\\(68.25\\\\)",
+            "\\\\(68.45\\\\)",
+            "\\\\(68.35\\\\)",
+            "\\\\(67.35\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Write the vertical columns carefully, placing 4.86 properly under the units place.",
+          "steps": [
+            {
+              "explain": "Align the decimal points vertically.",
+              "work": "\\\\(\\\\begin{array}{r} 35.90 \\\\ 4.86 \\\\ + 27.59 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add hundredths column: 0 + 6 + 9 = 15 (write 5, carry 1).",
+              "work": "\\dots \\\\implies 5 \\\\text{ (carry 1)}"
+            },
+            {
+              "explain": "Add tenths column: 9 + 8 + 5 + 1 (carry) = 23 (write 3, carry 2).",
+              "work": "\\dots \\\\implies 35 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Add units: 5 + 4 + 7 + 2 (carry) = 18 (write 8, carry 1). Add tens: 3 + 2 + 1 (carry) = 6.",
+              "work": "\\\\(35.90 + 4.86 + 27.59 = 68.35\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l3-q5c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(107.31 + 9.562 + 48.37\\\\).",
+          "options": [
+            "\\\\(165.242\\\\)",
+            "\\\\(165.142\\\\)",
+            "\\\\(155.242\\\\)",
+            "\\\\(164.242\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Padding the numbers with trailing zeros (like 107.310 and 48.370) will keep the place values aligned.",
+          "steps": [
+            {
+              "explain": "Add trailing zeros to align all numbers to three decimal places.",
+              "work": "\\\\(\\\\begin{array}{r} 107.310 \\\\ 9.562 \\\\ + \\ 48.370 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add thousandths: 0 + 2 + 0 = 2. Add hundredths: 1 + 6 + 7 = 14 (write 4, carry 1).",
+              "work": "\\dots \\\\implies 42 \\\\text{ thousandths}"
+            },
+            {
+              "explain": "Add tenths: 3 + 5 + 3 + 1 (carry) = 12 (write 2, carry 1).",
+              "work": "\\dots \\\\implies 242 \\\\text{ thousandths}"
+            },
+            {
+              "explain": "Add units: 7 + 9 + 8 + 1 (carry) = 25 (write 5, carry 2). Add tens: 0 + 4 + 2 (carry) = 6. Add hundreds: 1.",
+              "work": "\\\\(107.31 + 9.562 + 48.37 = 165.242\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l3-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(68.35 - 14.93\\\\).",
+          "options": [
+            "\\\\(54.42\\\\)",
+            "\\\\(53.42\\\\)",
+            "\\\\(53.32\\\\)",
+            "\\\\(53.48\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Set up subtraction vertically, and borrow from the units digit (8) to subtract the tenths digit.",
+          "steps": [
+            {
+              "explain": "Align decimal points vertically.",
+              "work": "\\\\(\\\\begin{array}{r} 68.35 \\\\ - 14.93 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Subtract hundredths column: 5 - 3 = 2.",
+              "work": "\\\\(5 - 3 = 2\\\\)"
+            },
+            {
+              "explain": "Borrow 1 unit from units place (8 becomes 7) to make 13 tenths. Subtract: 13 - 9 = 4.",
+              "work": "\\dots \\\\implies 42 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Subtract units (7 - 4 = 3) and tens (6 - 1 = 5).",
+              "work": "\\\\(68.35 - 14.93 = 53.42\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l3-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(357.21 - 63.18\\\\).",
+          "options": [
+            "\\\\(284.03\\\\)",
+            "\\\\(293.03\\\\)",
+            "\\\\(294.13\\\\)",
+            "\\\\(294.03\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Borrow 1 from the tenths digit (2) to subtract the hundredths column.",
+          "steps": [
+            {
+              "explain": "Write vertical columns.",
+              "work": "\\\\(\\\\begin{array}{r} 357.21 \\\\ - \\ 63.18 \\\\ \\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Borrow from tenths (2 becomes 1) to make 11 hundredths. Subtract: 11 - 8 = 3. Subtract tenths: 1 - 1 = 0.",
+              "work": "\\dots \\\\implies 03 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Subtract units: 7 - 3 = 4. Subtract tens (borrowing from hundreds): 15 - 6 = 9. Hundreds: 2.",
+              "work": "\\\\(357.21 - 63.18 = 294.03\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l3-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(496.72 - 138.15\\\\).",
+          "options": [
+            "\\\\(348.57\\\\)",
+            "\\\\(358.67\\\\)",
+            "\\\\(357.57\\\\)",
+            "\\\\(358.57\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Set up subtraction vertically. You will need to borrow in both the hundredths and units columns.",
+          "steps": [
+            {
+              "explain": "Align columns vertically.",
+              "work": "\\dots \\\\implies \\\\\\begin{array}{r} 496.72 \\\\ - 138.15 \\\\ \\hline \\\\end{array}"
+            },
+            {
+              "explain": "Borrow from tenths (7 becomes 6) to make 12 hundredths. Subtract: 12 - 5 = 7. Subtract tenths: 6 - 1 = 5.",
+              "work": "\\dots \\\\implies 57 \\\\text{ hundredths}"
+            },
+            {
+              "explain": "Borrow from tens (9 becomes 8) to make 16 units. Subtract: 16 - 8 = 8. Subtract tens: 8 - 3 = 5. Subtract hundreds: 4 - 1 = 3.",
+              "work": "\\\\(496.72 - 138.15 = 358.57\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l3-q12a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate the total amount: \\\\(\\$132 + \\$76.08 + 72\\\\text{ cents} + \\$15.94\\\\).",
+          "options": [
+            "\\\\(\\$224.02\\\\)",
+            "\\\\(\\$214.74\\\\)",
+            "\\\\(\\$224.74\\\\)",
+            "\\\\(\\$224.82\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert 72 cents to dollars ($0.72) first, then add all four numbers vertically.",
+          "steps": [
+            {
+              "explain": "Convert 72 cents to dollars so all terms have the same currency unit.",
+              "work": "\\\\(72\\\\text{ cents} = \\$0.72\\\\)"
+            },
+            {
+              "explain": "Align all four values vertically by decimal points, adding trailing zeros to $132.",
+              "work": "\\\\(\\\\begin{array}{r} 132.00 \\\\ 76.08 \\\\ 0.72 \\\\ + \\ 15.94 \\\\ \\\\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add hundredths column: 0 + 8 + 2 + 4 = 14 (write 4, carry 1).",
+              "work": "\\dots \\\\implies 4 \\\\text{ (carry 1)}"
+            },
+            {
+              "explain": "Add tenths column: 0 + 0 + 7 + 9 + 1 (carry) = 17 (write 7, carry 1).",
+              "work": "\\dots \\\\implies 74 \\\\text{ cents}"
+            },
+            {
+              "explain": "Add units: 2 + 6 + 0 + 5 + 1 (carry) = 14 (write 4, carry 1). Add tens: 3 + 7 + 0 + 1 + 1 (carry) = 12 (write 2, carry 1). Add hundreds: 1 + 1 (carry) = 2.",
+              "work": "\\\\(\\$132.00 + \\$76.08 + \\$0.72 + \\$15.94 = \\$224.74\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l3-q12b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(\\$100 - \\$16.72\\\\).",
+          "options": [
+            "\\\\(\\$83.38\\\\)",
+            "\\\\(\\$73.28\\\\)",
+            "\\\\(\\$83.28\\\\)",
+            "\\\\(\\$84.28\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Set up subtraction vertically. Write $100 as $100.00 and borrow across zeros.",
+          "steps": [
+            {
+              "explain": "Align the digits vertically, writing $100 with cents places.",
+              "work": "\\\\(\\\\begin{array}{r} 100.00 \\\\ - \\ 16.72 \\\\ \\\\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Borrow across the zeros from the hundreds place. The units digit becomes 9, and the last digit becomes 10.",
+              "work": "\\dots \\\\implies 100.00 \\\\text{ turns to } 99.9(10)"
+            },
+            {
+              "explain": "Subtract columns from right to left: 10 - 2 = 8, 9 - 7 = 2, 9 - 6 = 3, 9 - 1 = 8.",
+              "work": "\\\\(\\$100.00 - \\$16.72 = \\$83.28\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l4-q3a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(\\$8.60 + \\$4.98 + \\$128.37 + \\$0.70\\\\).",
+          "options": [
+            "\\\\(\\$142.65\\\\)",
+            "\\\\(\\$132.65\\\\)",
+            "\\\\(\\$141.65\\\\)",
+            "\\\\(\\$142.55\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Set up vertical addition, ensuring all decimal points are aligned.",
+          "steps": [
+            {
+              "explain": "Align the numbers vertically by their decimal points.",
+              "work": "\\\\(\\\\begin{array}{r} 8.60 \\\\ 4.98 \\\\ 128.37 \\\\ + \\ 0.70 \\\\ \\\\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add the hundredths column: 0 + 8 + 7 + 0 = 15 (write 5, carry 1).",
+              "work": "\\dots \\\\implies 5 \\\\text{ (carry 1)}"
+            },
+            {
+              "explain": "Add the tenths column: 6 + 9 + 3 + 7 + 1 (carry) = 26 (write 6, carry 2).",
+              "work": "\\dots \\\\implies 65 \\\\text{ cents}"
+            },
+            {
+              "explain": "Add the units column: 8 + 4 + 8 + 0 + 2 (carry) = 22 (write 2, carry 2). Add tens: 2 + 2 (carry) = 4. Add hundreds: 1.",
+              "work": "\\\\(\\$8.60 + \\$4.98 + \\$128.37 + \\$0.70 = \\$142.65\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l4-q3b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(\\$369.14 + \\$70.32 + \\$0.15 + \\$9.65\\\\).",
+          "options": [
+            "\\\\(\\$449.16\\\\)",
+            "\\\\(\\$448.26\\\\)",
+            "\\\\(\\$449.26\\\\)",
+            "\\\\(\\$439.26\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Set up vertical columns. Watch the carries across columns.",
+          "steps": [
+            {
+              "explain": "Align the decimal points vertically.",
+              "work": "\\\\(\\\\begin{array}{r} 369.14 \\\\ 70.32 \\\\ 0.15 \\\\ + \\ 9.65 \\\\ \\\\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add hundredths column: 4 + 2 + 5 + 5 = 16 (write 6, carry 1).",
+              "work": "\\dots \\\\implies 6 \\\\text{ (carry 1)}"
+            },
+            {
+              "explain": "Add tenths column: 1 + 3 + 1 + 6 + 1 (carry) = 12 (write 2, carry 1).",
+              "work": "\\dots \\\\implies 26 \\\\text{ cents}"
+            },
+            {
+              "explain": "Add units: 9 + 0 + 0 + 9 + 1 (carry) = 19 (write 9, carry 1). Add tens: 6 + 7 + 1 (carry) = 14 (write 4, carry 1). Add hundreds: 3 + 1 (carry) = 4.",
+              "work": "\\\\(\\$369.14 + \\$70.32 + \\$0.15 + \\$9.65 = \\$449.26\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l4-q3c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(\\$793.58 + 16\\\\text{ cents} + \\$205.07 + \\$48.35\\\\).",
+          "options": [
+            "\\\\(\\$1047.06\\\\)",
+            "\\\\(\\$1047.16\\\\)",
+            "\\\\(\\$1046.16\\\\)",
+            "\\\\(\\$1037.16\\\\)"
+          ],
+          "answer": 1,
+          "hint": "First convert 16 cents into dollars ($0.16), then set up vertical addition.",
+          "steps": [
+            {
+              "explain": "Convert 16 cents to dollar format.",
+              "work": "\\\\(16\\\\text{ cents} = \\$0.16\\\\)"
+            },
+            {
+              "explain": "Align all values vertically.",
+              "work": "\\\\(\\\\begin{array}{r} 793.58 \\\\ 0.16 \\\\ 205.07 \\\\ + \\ 48.35 \\\\ \\\\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Add hundredths: 8 + 6 + 7 + 5 = 26 (write 6, carry 2). Add tenths: 5 + 1 + 0 + 3 + 2 (carry) = 11 (write 1, carry 1).",
+              "work": "\\dots \\\\implies 16 \\\\text{ cents}"
+            },
+            {
+              "explain": "Add units: 3 + 0 + 5 + 8 + 1 (carry) = 17 (write 7, carry 1). Add tens: 9 + 0 + 0 + 4 + 1 (carry) = 14 (write 4, carry 1). Add hundreds: 7 + 2 + 1 (carry) = 10.",
+              "work": "\\\\(\\$793.58 + \\$0.16 + \\$205.07 + \\$48.35 = \\$1047.16\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l4-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(\\$72.35 - \\$16.47\\\\).",
+          "options": [
+            "\\\\(\\$55.98\\\\)",
+            "\\\\(\\$55.78\\\\)",
+            "\\\\(\\$56.88\\\\)",
+            "\\\\(\\$55.88\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Write vertically and borrow across columns starting from the right.",
+          "steps": [
+            {
+              "explain": "Line up by decimal points.",
+              "work": "\\\\(\\\\begin{array}{r} 72.35 \\\\ - \\ 16.47 \\\\ \\\\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Subtract hundredths: 5 - 7 requires borrowing (15 - 7 = 8). Subtract tenths: (2 - 4 requires borrowing, so 12 - 4 = 8).",
+              "work": "\\dots \\\\implies 88 \\\\text{ cents}"
+            },
+            {
+              "explain": "Subtract units (1 - 6 requires borrowing, so 11 - 6 = 5). Subtract tens: 6 - 1 = 5.",
+              "work": "\\\\(\\$72.35 - \\$16.47 = \\$55.88\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l4-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(\\$130.47 - \\$48.29\\\\).",
+          "options": [
+            "\\\\(\\$82.18\\\\)",
+            "\\\\(\\$81.18\\\\)",
+            "\\\\(\\$82.28\\\\)",
+            "\\\\(\\$92.18\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Set up vertical subtraction. Make sure you align the units digit 8 of $48 under the 0 of $130.",
+          "steps": [
+            {
+              "explain": "Set up vertical subtraction.",
+              "work": "\\\\(\\\\begin{array}{r} 130.47 \\\\ - \\ 48.29 \\\\ \\\\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Subtract hundredths: borrow from tenths (7 becomes 17, 4 becomes 3). 17 - 9 = 8. Subtract tenths: 3 - 2 = 1.",
+              "work": "\\dots \\\\implies 18 \\\\text{ cents}"
+            },
+            {
+              "explain": "Subtract whole dollars: 130 - 48 = 82.",
+              "work": "\\\\(\\$130.47 - \\$48.29 = \\$82.18\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l4-q4c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(\\$49.53 - \\$6.41 - \\$12.85\\\\).",
+          "options": [
+            "\\\\(\\$30.27\\\\)",
+            "\\\\(\\$29.27\\\\)",
+            "\\\\(\\$31.27\\\\)",
+            "\\\\(\\$30.37\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract the second number first, then subtract the third number from the result.",
+          "steps": [
+            {
+              "explain": "Perform the first subtraction: $49.53 - $6.41.",
+              "work": "\\\\(\\$49.53 - \\$6.41 = \\$43.12\\\\)"
+            },
+            {
+              "explain": "Perform the second subtraction: subtract $12.85 from $43.12.",
+              "work": "\\\\(\\\\begin{array}{r} 43.12 \\\\ - \\ 12.85 \\\\ \\\\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Borrow where needed. 12 - 5 = 7 (hundredths). 10 - 8 = 2 (tenths). 42 - 12 = 30 (dollars).",
+              "work": "\\\\(\\$43.12 - \\$12.85 = \\$30.27\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l4-q9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Decrease \\\\(13.72\\\\) by \\\\(5.8\\\\).",
+          "options": [
+            "\\\\(7.92\\\\)",
+            "\\\\(7.82\\\\)",
+            "\\\\(7.98\\\\)",
+            "\\\\(8.92\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 5.8 from 13.72. Pad 5.8 as 5.80 to keep place values aligned.",
+          "steps": [
+            {
+              "explain": "Write the decrease as a subtraction expression.",
+              "work": "\\\\(13.72 - 5.8\\\\)"
+            },
+            {
+              "explain": "Set up vertical subtraction, adding a zero placeholder to 5.8.",
+              "work": "\\\\(\\\\begin{array}{r} 13.72 \\\\ - \\ 5.80 \\\\ \\\\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Subtract the columns: 2 - 0 = 2. 7 - 8 requires borrowing (17 - 8 = 9). 12 - 5 = 7.",
+              "work": "\\\\(13.72 - 5.80 = 7.92\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l4-q9c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the difference between \\\\(18.01\\\\) and \\\\(3.94\\\\).",
+          "options": [
+            "\\\\(14.93\\\\)",
+            "\\\\(14.17\\\\)",
+            "\\\\(14.07\\\\)",
+            "\\\\(15.07\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Subtract 3.94 from 18.01 using vertical columns.",
+          "steps": [
+            {
+              "explain": "Express the difference as a subtraction sentence.",
+              "work": "\\\\(18.01 - 3.94\\\\)"
+            },
+            {
+              "explain": "Set up vertical subtraction.",
+              "work": "\\\\(\\\\begin{array}{r} 18.01 \\\\ - \\ 3.94 \\\\ \\\\hline \\\\end{array}\\\\)"
+            },
+            {
+              "explain": "Borrow across columns to complete the subtraction: 11 - 4 = 7. 9 - 9 = 0. 17 - 3 = 14.",
+              "work": "\\\\(18.01 - 3.94 = 14.07\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l4-q9e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Increase \\\\(16.82\\\\) by \\\\(4.79\\\\) and subtract the result from \\\\(25\\\\).",
+          "options": [
+            "\\\\(21.61\\\\)",
+            "\\\\(4.39\\\\)",
+            "\\\\(3.49\\\\)",
+            "\\\\(3.39\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Calculate the sum (16.82 + 4.79) first, then subtract that sum from 25.",
+          "steps": [
+            {
+              "explain": "Perform the first step: increase 16.82 by 4.79.",
+              "work": "\\\\(16.82 + 4.79 = 21.61\\\\)"
+            },
+            {
+              "explain": "Set up subtraction to subtract the sum 21.61 from 25.",
+              "work": "\\\\(25 - 21.61\\\\)"
+            },
+            {
+              "explain": "Align decimal points and subtract: 25.00 - 21.61 = 3.39.",
+              "work": "\\\\(\\\\begin{array}{r} 25.00 \\\\ - 21.61 \\\\ \\hline \\\\end{array} \\\\implies 3.39\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l5-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A logistics courier has a daily budget of \\\\(\\$50.00\\\\) for dispatch expenses. They spend \\\\(\\$18.35\\\\) on fuel refills, \\\\(\\$8.49\\\\) on road tolls, and \\\\(\\$4.38\\\\) on package sealing tape. How much of the daily budget remains?",
+          "options": [
+            "\\\\(\\$18.68\\\\)",
+            "\\\\(\\$18.78\\\\)",
+            "\\\\(\\$31.22\\\\)",
+            "\\\\(\\$19.78\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the total amount spent by adding the three individual expenses together, then subtract this total from the initial budget of \\\\(\\$50.00\\\\).",
+          "steps": [
+            {
+              "explain": "First, identify the initial budget and list all the individual expenses. The initial budget is \\\\(\\$50.00\\\\), and the expenses are \\\\(\\$18.35\\\\), \\\\(\\$8.49\\\\), and \\\\(\\$4.38\\\\).",
+              "work": "\\\\(\\text{Budget} = \\\\$50.00, \\\\quad \\\\text{Expenses} = \\\\{\\$18.35, \\\\$8.49, \\\\$4.38\\\\}\\\\)"
+            },
+            {
+              "explain": "Add the three expenses together to find the total amount spent. Align the decimal points vertically to ensure accurate addition of cents and dollars.",
+              "work": "\\\\(18.35 + 8.49 + 4.38 = 31.22\\\\)"
+            },
+            {
+              "explain": "Subtract the total expenses of \\\\(\\$31.22\\\\) from the initial budget of \\\\(\\$50.00\\\\) to determine the remaining amount. Again, align the decimal points and perform the subtraction.",
+              "work": "\\\\(50.00 - 31.22 = 18.78\\\\)"
+            },
+            {
+              "explain": "Verify that the final calculated difference represents the remaining budget. The logistics courier has \\\\(\\$18.78\\\\) left in their daily budget.",
+              "work": "\\\\(\\text{Remaining Budget} = \\\\$18.78\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-ar-2-l5-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An environmental volunteer team allocates a budget of \\\\(\\$20.00\\\\) for planting supplies. A volunteer spends \\\\(\\$1.68\\\\) on biodegradable seed bags, \\\\(\\$3.45\\\\) on organic fertilizer tablets, and \\\\(70\\\\) cents on compost labels. How much budget remains?",
+          "options": [
+            "\\\\(\\$13.83\\\\)",
+            "\\\\(\\$14.27\\\\)",
+            "\\\\(\\$14.17\\\\)",
+            "\\\\(\\$5.83\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Ensure all values are in the same currency unit. Note that \\\\(70\\\\) cents is equivalent to \\\\(\\$0.70\\\\). Sum the expenses and subtract from \\\\(\\$20.00\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the starting budget and convert the 70 cents expense into dollars so that all quantities are in the same unit. This is necessary before performing any addition.",
+              "work": "\\\\(\\text{Budget} = \\\\$20.00, \\\\quad 70\\\\text{ cents} = \\\\$0.70\\\\)"
+            },
+            {
+              "explain": "Add all three individual expenses together. Make sure to align the decimal points: \\\\(\\$1.68\\\\) for seed bags, \\\\(\\$3.45\\\\) for fertilizer, and \\\\(\\$0.70\\\\) for labels.",
+              "work": "\\\\(1.68 + 3.45 + 0.70 = 5.83\\\\)"
+            },
+            {
+              "explain": "Subtract the total spent of \\\\(\\$5.83\\\\) from the initial budget of \\\\(\\$20.00\\\\). Align the decimal points and perform the subtraction.",
+              "work": "\\\\(20.00 - 5.83 = 14.17\\\\)"
+            },
+            {
+              "explain": "Confirm the remaining budget in dollars. The environmental volunteer team has \\\\(\\$14.17\\\\) remaining.",
+              "work": "\\\\(\\text{Remaining Budget} = \\\\$14.17\\\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-ar-4",
+      "code": "MA3-MR-01",
+      "title": "Multiply and divide decimals",
+      "questions": [
+        {
+          "id": "y6-ar-4-l4-q8d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Round off \\\\(\\$3.476\\\\) to the nearest cent.",
+          "options": [
+            "\\\\(\\$3.40\\\\)",
+            "\\\\(\\$3.47\\\\)",
+            "\\\\(\\$3.50\\\\)",
+            "\\\\(\\$3.48\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Cents are represented by the hundredths place (second decimal place). Look at the third digit (6) to decide whether to round up or down.",
+          "steps": [
+            {
+              "explain": "Identify the target rounding place value. Cents correspond to the hundredths place, which is the digit 7 in $3.476.",
+              "work": "\\dots \\\\implies \\\\text{Hundredths place}"
+            },
+            {
+              "explain": "Inspect the digit in the thousandths place (the digit immediately to the right of the hundredths place), which is 6.",
+              "work": "\\\\(6 \\ge 5 \\\\implies \\text{Round up}\\\\)"
+            },
+            {
+              "explain": "Round the hundredths digit up by 1 and truncate the following digits.",
+              "work": "\\\\(\\$3.476 \\\\approx \\$3.48\\\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

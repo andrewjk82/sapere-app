@@ -1,0 +1,30 @@
+<svg viewBox="-30 0 290 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <line x1="20" y1="150" x2="200" y2="150" stroke="#000" stroke-width="1"/>
+  <polygon points="80,93 40,150 120,150" fill="none" stroke="#000" stroke-width="1"/>
+  <line x1="40" y1="150" x2="94" y2="73" stroke="#000" stroke-width="1"/>
+  <line x1="66" y1="73" x2="140" y2="178.5" stroke="#000" stroke-width="1"/>
+  <line x1="70" y1="164.25" x2="140" y2="64.5" stroke="#000" stroke-width="1"/>
+  
+  <!-- Parallel arrows moved down -->
+  <g transform="translate(50.5, 135) rotate(-55)"><polygon points="0,0 -8,-4 -8,4" fill="#000"/></g>
+  <g transform="translate(90.5, 135) rotate(-55)"><polygon points="0,0 -8,-4 -8,4" fill="#000"/></g>
+  
+  <circle cx="40" cy="150" r="1.2" fill="#000"/>
+  <circle cx="120" cy="150" r="1.2" fill="#000"/>
+  <circle cx="80" cy="93" r="1.2" fill="#000"/>
+  <circle cx="100" cy="121.5" r="1.2" fill="#000"/>
+  <text x="35" y="165" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">C</text>
+  <text x="115" y="165" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">D</text>
+  <text x="175" y="165" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">E</text>
+  <text x="75" y="85" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">A</text>
+  <text x="82" y="125" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">G</text>
+  <text x="60" y="172" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">H</text>
+  <text x="145" y="70" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">J</text>
+  
+  <!-- Tick marks for AC = AD moved up near A -->
+  <line x1="67.5" y1="102" x2="75.5" y2="108" stroke="#000" stroke-width="1"/>
+  <line x1="84.5" y1="108" x2="92.5" y2="102" stroke="#000" stroke-width="1"/>
+  
+  <text x="50" y="145" font-family="serif" font-size="12" fill="#000">55°</text>
+  <text x="110" y="127" font-family="serif" font-weight="bold" font-style="italic" font-size="12" fill="#000">α</text>
+</svg>

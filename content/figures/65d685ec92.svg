@@ -1,0 +1,46 @@
+<svg viewBox="0 0 400 70" width="100%" height="70" style="background:#f8fafc; border-radius:12px; display:block; margin:8px auto;" xmlns="http://www.w3.org/2000/svg">
+    <line x1="15" y1="40" x2="385" y2="40" stroke="#64748b" stroke-width="2" stroke-linecap="round" />
+    
+        <line x1="35" y1="34" x2="35" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="35" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">-5</text>
+      
+        <line x1="65" y1="34" x2="65" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="65" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">-4</text>
+      
+        <line x1="95" y1="34" x2="95" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="95" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">-3</text>
+      
+        <line x1="125" y1="34" x2="125" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="125" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">-2</text>
+      
+        <line x1="155" y1="34" x2="155" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="155" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">-1</text>
+      
+        <line x1="185" y1="34" x2="185" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="185" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">0</text>
+      
+        <line x1="215" y1="34" x2="215" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="215" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">1</text>
+      
+        <line x1="245" y1="34" x2="245" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="245" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">2</text>
+      
+        <line x1="275" y1="34" x2="275" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="275" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">3</text>
+      
+        <line x1="305" y1="34" x2="305" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="305" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">4</text>
+      
+        <line x1="335" y1="34" x2="335" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="335" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">5</text>
+      
+        <line x1="365" y1="34" x2="365" y2="46" stroke="#64748b" stroke-width="1.5" />
+        <text x="365" y="62" text-anchor="middle" fill="#475569" font-size="11" font-weight="600" font-family="'Outfit', sans-serif">6</text>
+      
+    <!-- Segment between boundaries -->
+    <line x1="155" y1="40" x2="245" y2="40" stroke="#4f46e5" stroke-width="4.5" />
+    <!-- Boundary circle 1 -->
+    <circle cx="155" cy="40" r="6.5" fill="#4f46e5" stroke="#4f46e5" stroke-width="2.5" />
+    <!-- Boundary circle 2 -->
+    <circle cx="245" cy="40" r="6.5" fill="#4f46e5" stroke="#4f46e5" stroke-width="2.5" />
+  </svg>

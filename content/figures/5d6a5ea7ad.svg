@@ -1,0 +1,39 @@
+<svg viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+.axis { stroke: #94a3b8; stroke-width: 2; }
+.curve-abs { stroke: #3b82f6; stroke-width: 3; fill: none; }
+.curve-line { stroke: #ef4444; stroke-width: 3; fill: none; }
+.label { font-size: 14px; fill: #1e293b; font-family: sans-serif; }
+.pt { fill: #1e293b; }
+</style>
+</defs>
+<rect width="400" height="350" fill="#ffffff" />
+<g>
+  <!-- Axes -->
+  <line x1="20" y1="280" x2="380" y2="280" class="axis" />
+  <text x="370" y="300" class="label">x</text>
+  <line x1="220" y1="330" x2="220" y2="20" class="axis" />
+  <text x="205" y="25" class="label">y</text>
+  <text x="205" y="300" class="label">0</text>
+  
+  <!-- Curves -->
+  <polyline points="40,55 190,280 300,115" class="curve-abs" />
+  <polyline points="40,70 300,265" class="curve-line" />
+  
+  <!-- Labels -->
+  <text x="305" y="115" class="label" fill="#3b82f6">y = |2x + 3|</text>
+  <text x="305" y="270" class="label" fill="#ef4444">y = -x + 5</text>
+  
+  <!-- Vertex -->
+  <circle cx="190" cy="280" r="4" class="pt" />
+  <text x="165" y="300" class="label">(-1.5, 0)</text>
+  
+  <!-- Intersections -->
+  <circle cx="60" cy="85" r="4" class="pt" />
+  <text x="5" y="80" class="label">(-8, 13)</text>
+  
+  <circle cx="233.33333333333334" cy="215" r="4" class="pt" />
+  <text x="238.33333333333334" y="205" class="label">(2/3, 13/3)</text>
+</g>
+</svg>

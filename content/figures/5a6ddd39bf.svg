@@ -1,0 +1,19 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>
+  <rect width='300' height='300' fill='#ffffff' />
+  <polygon points='41.67114716865713,169.10129954336236 258.3288528313429,169.10129954336244 150,40' fill='#f8fafc' stroke='#cbd5e1' stroke-width='1.5' stroke-linejoin='round' />
+  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />
+  <line x1='150' y1='150' x2='41.67114716865713' y2='169.10129954336236' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <line x1='150' y1='150' x2='258.3288528313429' y2='169.10129954336244' stroke='#64748b' stroke-width='1.5' stroke-linecap='round'  />
+  <path d='M 128.7880088803442 65.27946662292626 A 33 33 0 0 0 171.21199111965578 65.2794666229263' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='150' y='87' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>95°</text>
+  <path d='M 124.00107532047771 154.58431189040695 A 26.4 26.4 0 0 0 175.99892467952228 154.58431189040698' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='150' y='190.4' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>α</text>
+  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />
+  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>
+  <circle cx='41.67114716865713' cy='169.10129954336236' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='27.67114716865713' y='171.10129954336236' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>A</text>
+  <circle cx='258.3288528313429' cy='169.10129954336244' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='270.3288528313429' y='173.10129954336244' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>B</text>
+  <circle cx='150' cy='40' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='150' y='28' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>C</text>
+</svg>

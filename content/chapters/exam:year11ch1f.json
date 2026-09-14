@@ -1,0 +1,1445 @@
+{
+  "chapterId": "exam:year11ch1f",
+  "title": "Exam year11ch1f",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ch1f",
+      "code": "EXAM",
+      "title": "Exam",
+      "questions": [
+        {
+          "id": "3861404245232cfa6b5efbc01941e337",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Two numbers have a sum of 11 and a product of 28. Find the two numbers.",
+          "answer": "0",
+          "hint": "Let one number be \\( x \\) and express the other in terms of \\( x \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "x + y = 11, quad xy = 28"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(x(11 - x) = 28\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(x^2 - 11x + 28 = 0\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "41b587abf81daca012bf2ff6936ba675",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve using the quadratic formula: \\( 5x^2 - 3x - 1 = 0 \\)",
+          "options": [
+            "\\(x = \\frac{3 \\pm \\sqrt{29}}{10}\\)",
+            "\\(x = \\frac{-3 \\pm \\sqrt{29}}{10}\\)",
+            "\\(x = \\frac{3 \\pm \\sqrt{31}}{12}\\)",
+            "\\(x = \\frac{3 \\pm \\sqrt{29}}{12}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the quadratic formula with \\( a = 5, b = -3, c = -1 \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "a = 5, quad b = -3, quad c = -1"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(\\Delta = 9 + 20 = 29\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(x = \\frac{3 \\pm \\sqrt{29}}{10}\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ]
+        },
+        {
+          "id": "58147252bdc92d59f284c90760ee55c8",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Solve using the quadratic formula: \\( x^2 - 6x + 2 = 0 \\)",
+          "answer": "0",
+          "hint": "Use \\( x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exam: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "work": "a = 1, quad b = -6, quad c = 2"
+            },
+            {
+              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "work": "\\(\\Delta = 36 - 8 = 28\\)"
+            },
+            {
+              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+              "work": "\\(x = \\frac{6 \\pm \\sqrt{28}}{2} = \\frac{6 \\pm 2\\sqrt{7}}{2} = 3 \\pm \\sqrt{7}\\)"
+            },
+            {
+              "explain": "Final answer: 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+              "work": "\\(0\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "8e255461b5cb152124f6fa334ce970d0",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Factor: \\( x^2 + 7x + 12 \\)",
+          "answer": "0",
+          "hint": "Find two numbers that multiply to 12 and add to 7.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Find two numbers whose product is 12 and sum is 7: 3 and 4.",
+              "work": "3 \\times 4 = 12, quad 3 + 4 = 7"
+            },
+            {
+              "explain": "Write the factored form.",
+              "work": "(x + 3)(x + 4)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "8fe204292b3eb597966dd9927308c371",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Factor: \\( 3x^2 - 11x - 4 \\)",
+          "answer": "0",
+          "hint": "Find two numbers that multiply to \\( 3 \\times (-4) = -12 \\) and add to -11.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Find two numbers with product -12 and sum -11: -12 and 1.",
+              "work": "-12 \\times 1 = -12, quad -12 + 1 = -11"
+            },
+            {
+              "explain": "Split the middle term.",
+              "work": "3x^2 - 12x + x - 4 = 3x(x - 4) + 1(x - 4)"
+            },
+            {
+              "explain": "Factor.",
+              "work": "(3x + 1)(x - 4)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "a0ad87daccd6c3b2e3fa255b9709c93f",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Factor: \\( 2x^2 + 5x + 3 \\)",
+          "answer": "0",
+          "hint": "For \\( ax^2 + bx + c \\), find two numbers that multiply to \\( ac = 6 \\) and add to 5.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Find two numbers with product \\( 2 \\times 3 = 6 \\) and sum 5: 2 and 3.",
+              "work": "2 \\times 3 = 6, quad 2 + 3 = 5"
+            },
+            {
+              "explain": "Split the middle term and group.",
+              "work": "2x^2 + 2x + 3x + 3 = 2x(x + 1) + 3(x + 1)"
+            },
+            {
+              "explain": "Factor out the common binomial.",
+              "work": "(2x + 3)(x + 1)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 90
+        },
+        {
+          "id": "bf64dfbabcdddbd2f3536781c189b76f",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Factor: \\( x^2 - 5x - 14 \\)",
+          "answer": "0",
+          "hint": "Find two numbers that multiply to -14 and add to -5.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Find factors of -14 that sum to -5: -7 and 2.",
+              "work": "-7 \\times 2 = -14, quad -7 + 2 = -5"
+            },
+            {
+              "explain": "Write the factored form.",
+              "work": "(x - 7)(x + 2)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 60
+        },
+        {
+          "id": "y11-1f-h1",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Factor completely: \\( (3x + 4)^2 - (2x + 6)^2 \\)",
+          "answer": "0",
+          "hint": "Apply the difference of squares identity: \\( A^2 - B^2 = (A - B)(A + B) \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the terms for the difference of squares identity.",
+              "work": "\\(A = 3x + 4, quad B = 2x + 6\\)"
+            },
+            {
+              "explain": "Set up the factorization \\( (A - B)(A + B) \\).",
+              "work": "\\(((3x + 4) - (2x + 6))((3x + 4) + (2x + 6))\\)"
+            },
+            {
+              "explain": "Simplify the terms inside each pair of brackets.",
+              "work": "\\((1x - 2)(5x + 10)\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h2",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Factor completely: \\( (4x + 5)^2 - (3x + 7)^2 \\)",
+          "answer": "0",
+          "hint": "Apply the difference of squares identity: \\( A^2 - B^2 = (A - B)(A + B) \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the terms for the difference of squares identity.",
+              "work": "\\(A = 4x + 5, quad B = 3x + 7\\)"
+            },
+            {
+              "explain": "Set up the factorization \\( (A - B)(A + B) \\).",
+              "work": "\\(((4x + 5) - (3x + 7))((4x + 5) + (3x + 7))\\)"
+            },
+            {
+              "explain": "Simplify the terms inside each pair of brackets.",
+              "work": "\\((1x - 2)(7x + 12)\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h3",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Factor completely: \\( (5x + 6)^2 - (4x + 8)^2 \\)",
+          "answer": "0",
+          "hint": "Apply the difference of squares identity: \\( A^2 - B^2 = (A - B)(A + B) \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the terms for the difference of squares identity.",
+              "work": "\\(A = 5x + 6, quad B = 4x + 8\\)"
+            },
+            {
+              "explain": "Set up the factorization \\( (A - B)(A + B) \\).",
+              "work": "\\(((5x + 6) - (4x + 8))((5x + 6) + (4x + 8))\\)"
+            },
+            {
+              "explain": "Simplify the terms inside each pair of brackets.",
+              "work": "\\((1x - 2)(9x + 14)\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h4",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Factor completely: \\( (6x + 7)^2 - (5x + 9)^2 \\)",
+          "answer": "0",
+          "hint": "Apply the difference of squares identity: \\( A^2 - B^2 = (A - B)(A + B) \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the terms for the difference of squares identity.",
+              "work": "\\(A = 6x + 7, quad B = 5x + 9\\)"
+            },
+            {
+              "explain": "Set up the factorization \\( (A - B)(A + B) \\).",
+              "work": "\\(((6x + 7) - (5x + 9))((6x + 7) + (5x + 9))\\)"
+            },
+            {
+              "explain": "Simplify the terms inside each pair of brackets.",
+              "work": "\\((1x - 2)(11x + 16)\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h9",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Factor: \\( 8x^3 + 27 \\)",
+          "answer": "0",
+          "hint": "Use the sum of cubes formula: \\( A^3 + B^3 = (A + B)(A^2 - AB + B^2) \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the cube roots of each term.",
+              "work": "\\(A = 2x, quad B = 3\\)"
+            },
+            {
+              "explain": "Apply the sum of cubes identity.",
+              "work": "\\((2x + 3)((2x)^2 - (2x)(3) + 3^2)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the quadratic factor.",
+              "work": "\\((2x + 3)(4x^2 - 6x + 9)\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h10",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Factor: \\( 27x^3 + 64 \\)",
+          "answer": "0",
+          "hint": "Use the sum of cubes formula: \\( A^3 + B^3 = (A + B)(A^2 - AB + B^2) \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the cube roots of each term.",
+              "work": "\\(A = 3x, quad B = 4\\)"
+            },
+            {
+              "explain": "Apply the sum of cubes identity.",
+              "work": "\\((3x + 4)((3x)^2 - (3x)(4) + 4^2)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the quadratic factor.",
+              "work": "\\((3x + 4)(9x^2 - 12x + 16)\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h11",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Factor: \\( 64x^3 + 125 \\)",
+          "answer": "0",
+          "hint": "Use the sum of cubes formula: \\( A^3 + B^3 = (A + B)(A^2 - AB + B^2) \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the cube roots of each term.",
+              "work": "\\(A = 4x, quad B = 5\\)"
+            },
+            {
+              "explain": "Apply the sum of cubes identity.",
+              "work": "\\((4x + 5)((4x)^2 - (4x)(5) + 5^2)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the quadratic factor.",
+              "work": "\\((4x + 5)(16x^2 - 20x + 25)\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h12",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Factor: \\( 125x^3 + 216 \\)",
+          "answer": "0",
+          "hint": "Use the sum of cubes formula: \\( A^3 + B^3 = (A + B)(A^2 - AB + B^2) \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the cube roots of each term.",
+              "work": "\\(A = 5x, quad B = 6\\)"
+            },
+            {
+              "explain": "Apply the sum of cubes identity.",
+              "work": "\\((5x + 6)((5x)^2 - (5x)(6) + 6^2)\\)"
+            },
+            {
+              "explain": "Simplify the terms inside the quadratic factor.",
+              "work": "\\((5x + 6)(25x^2 - 30x + 36)\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h21",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^3 - 8}{x^2 - 4} \\)",
+          "answer": "0",
+          "hint": "Factor the numerator using the difference of cubes and the denominator using the difference of squares.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor the numerator using difference of cubes.",
+              "work": "\\(x^3 - 8 = (x - 2)(x^2 + 2x + 4)\\)"
+            },
+            {
+              "explain": "Factor the denominator using difference of squares.",
+              "work": "\\(x^2 - 4 = (x - 2)(x + 2)\\)"
+            },
+            {
+              "explain": "Cancel the common binomial factor \\( (x - \\({a}) \\).\\)",
+              "work": "\\(\\frac{x^2 + 2x + 4}{x + 2}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h22",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^3 - 27}{x^2 - 9} \\)",
+          "answer": "0",
+          "hint": "Factor the numerator using the difference of cubes and the denominator using the difference of squares.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor the numerator using difference of cubes.",
+              "work": "\\(x^3 - 27 = (x - 3)(x^2 + 3x + 9)\\)"
+            },
+            {
+              "explain": "Factor the denominator using difference of squares.",
+              "work": "\\(x^2 - 9 = (x - 3)(x + 3)\\)"
+            },
+            {
+              "explain": "Cancel the common binomial factor \\( (x - \\({a}) \\).\\)",
+              "work": "\\(\\frac{x^2 + 3x + 9}{x + 3}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h23",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^3 - 64}{x^2 - 16} \\)",
+          "answer": "0",
+          "hint": "Factor the numerator using the difference of cubes and the denominator using the difference of squares.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor the numerator using difference of cubes.",
+              "work": "\\(x^3 - 64 = (x - 4)(x^2 + 4x + 16)\\)"
+            },
+            {
+              "explain": "Factor the denominator using difference of squares.",
+              "work": "\\(x^2 - 16 = (x - 4)(x + 4)\\)"
+            },
+            {
+              "explain": "Cancel the common binomial factor \\( (x - \\({a}) \\).\\)",
+              "work": "\\(\\frac{x^2 + 4x + 16}{x + 4}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h24",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^3 - 125}{x^2 - 25} \\)",
+          "answer": "0",
+          "hint": "Factor the numerator using the difference of cubes and the denominator using the difference of squares.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor the numerator using difference of cubes.",
+              "work": "\\(x^3 - 125 = (x - 5)(x^2 + 5x + 25)\\)"
+            },
+            {
+              "explain": "Factor the denominator using difference of squares.",
+              "work": "\\(x^2 - 25 = (x - 5)(x + 5)\\)"
+            },
+            {
+              "explain": "Cancel the common binomial factor \\( (x - \\({a}) \\).\\)",
+              "work": "\\(\\frac{x^2 + 5x + 25}{x + 5}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h25",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^2 - 4}{x^2 - 9} \\times \\frac{x^2 + 6x + 9}{(x - 2)^2} \\)",
+          "answer": "0",
+          "hint": "Factor all quadratics first, then cancel terms.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor each quadratic expression.",
+              "work": "\\(x^2 - 4 = (x - 2)(x + 2), quad x^2 - 9 = (x - 3)(x + 3), quad x^2 + 6x + 9 = (x + 3)^2\\)"
+            },
+            {
+              "explain": "Substitute the factors into the product expression.",
+              "work": "\\(\\frac{(x - 2)(x + 2)}{(x - 3)(x + 3)} \\times \\frac{(x + 3)^2}{(x - 2)^2}\\)"
+            },
+            {
+              "explain": "Cancel out the common terms from numerator and denominator.",
+              "work": "\\(\\frac{(x + 2)(x + 3)}{(x - 2)(x - 3)}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h26",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^2 - 9}{x^2 - 16} \\times \\frac{x^2 + 8x + 16}{(x - 3)^2} \\)",
+          "answer": "0",
+          "hint": "Factor all quadratics first, then cancel terms.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor each quadratic expression.",
+              "work": "\\(x^2 - 9 = (x - 3)(x + 3), quad x^2 - 16 = (x - 4)(x + 4), quad x^2 + 8x + 16 = (x + 4)^2\\)"
+            },
+            {
+              "explain": "Substitute the factors into the product expression.",
+              "work": "\\(\\frac{(x - 3)(x + 3)}{(x - 4)(x + 4)} \\times \\frac{(x + 4)^2}{(x - 3)^2}\\)"
+            },
+            {
+              "explain": "Cancel out the common terms from numerator and denominator.",
+              "work": "\\(\\frac{(x + 3)(x + 4)}{(x - 3)(x - 4)}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h27",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^2 - 16}{x^2 - 25} \\times \\frac{x^2 + 10x + 25}{(x - 4)^2} \\)",
+          "answer": "0",
+          "hint": "Factor all quadratics first, then cancel terms.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor each quadratic expression.",
+              "work": "\\(x^2 - 16 = (x - 4)(x + 4), quad x^2 - 25 = (x - 5)(x + 5), quad x^2 + 10x + 25 = (x + 5)^2\\)"
+            },
+            {
+              "explain": "Substitute the factors into the product expression.",
+              "work": "\\(\\frac{(x - 4)(x + 4)}{(x - 5)(x + 5)} \\times \\frac{(x + 5)^2}{(x - 4)^2}\\)"
+            },
+            {
+              "explain": "Cancel out the common terms from numerator and denominator.",
+              "work": "\\(\\frac{(x + 4)(x + 5)}{(x - 4)(x - 5)}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h28",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^2 - 25}{x^2 - 36} \\times \\frac{x^2 + 12x + 36}{(x - 5)^2} \\)",
+          "answer": "0",
+          "hint": "Factor all quadratics first, then cancel terms.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor each quadratic expression.",
+              "work": "\\(x^2 - 25 = (x - 5)(x + 5), quad x^2 - 36 = (x - 6)(x + 6), quad x^2 + 12x + 36 = (x + 6)^2\\)"
+            },
+            {
+              "explain": "Substitute the factors into the product expression.",
+              "work": "\\(\\frac{(x - 5)(x + 5)}{(x - 6)(x + 6)} \\times \\frac{(x + 6)^2}{(x - 5)^2}\\)"
+            },
+            {
+              "explain": "Cancel out the common terms from numerator and denominator.",
+              "work": "\\(\\frac{(x + 5)(x + 6)}{(x - 5)(x - 6)}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h33",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify the complex fraction: \\( \\frac{1 - \\frac{a}{x}}{1 - \\frac{a^2}{x^2}} \\) where \\( a = 2 \\)",
+          "answer": "0",
+          "hint": "Multiply the numerator and denominator by \\( x^2 \\) to clear the internal fractions.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Find common denominators for the numerator and denominator separately.",
+              "work": "\\(\\text{Numerator} = \\frac{x - 2}{x}, quad \\text{Denominator} = \\frac{x^2 - 4}{x^2}\\)"
+            },
+            {
+              "explain": "Rewrite the division as a multiplication by the reciprocal.",
+              "work": "\\(\\frac{x - 2}{x} \\times \\frac{x^2}{x^2 - 4}\\)"
+            },
+            {
+              "explain": "Factor the quadratic difference of squares and cancel common terms.",
+              "work": "\\(\\frac{(x - 2)x^2}{x(x - 2)(x + 2)} = \\frac{x}{x + 2}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h34",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify the complex fraction: \\( \\frac{1 - \\frac{a}{x}}{1 - \\frac{a^2}{x^2}} \\) where \\( a = 3 \\)",
+          "answer": "0",
+          "hint": "Multiply the numerator and denominator by \\( x^2 \\) to clear the internal fractions.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Find common denominators for the numerator and denominator separately.",
+              "work": "\\(\\text{Numerator} = \\frac{x - 3}{x}, quad \\text{Denominator} = \\frac{x^2 - 9}{x^2}\\)"
+            },
+            {
+              "explain": "Rewrite the division as a multiplication by the reciprocal.",
+              "work": "\\(\\frac{x - 3}{x} \\times \\frac{x^2}{x^2 - 9}\\)"
+            },
+            {
+              "explain": "Factor the quadratic difference of squares and cancel common terms.",
+              "work": "\\(\\frac{(x - 3)x^2}{x(x - 3)(x + 3)} = \\frac{x}{x + 3}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h35",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify the complex fraction: \\( \\frac{1 - \\frac{a}{x}}{1 - \\frac{a^2}{x^2}} \\) where \\( a = 4 \\)",
+          "answer": "0",
+          "hint": "Multiply the numerator and denominator by \\( x^2 \\) to clear the internal fractions.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Find common denominators for the numerator and denominator separately.",
+              "work": "\\(\\text{Numerator} = \\frac{x - 4}{x}, quad \\text{Denominator} = \\frac{x^2 - 16}{x^2}\\)"
+            },
+            {
+              "explain": "Rewrite the division as a multiplication by the reciprocal.",
+              "work": "\\(\\frac{x - 4}{x} \\times \\frac{x^2}{x^2 - 16}\\)"
+            },
+            {
+              "explain": "Factor the quadratic difference of squares and cancel common terms.",
+              "work": "\\(\\frac{(x - 4)x^2}{x(x - 4)(x + 4)} = \\frac{x}{x + 4}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h36",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify the complex fraction: \\( \\frac{1 - \\frac{a}{x}}{1 - \\frac{a^2}{x^2}} \\) where \\( a = 5 \\)",
+          "answer": "0",
+          "hint": "Multiply the numerator and denominator by \\( x^2 \\) to clear the internal fractions.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Find common denominators for the numerator and denominator separately.",
+              "work": "\\(\\text{Numerator} = \\frac{x - 5}{x}, quad \\text{Denominator} = \\frac{x^2 - 25}{x^2}\\)"
+            },
+            {
+              "explain": "Rewrite the division as a multiplication by the reciprocal.",
+              "work": "\\(\\frac{x - 5}{x} \\times \\frac{x^2}{x^2 - 25}\\)"
+            },
+            {
+              "explain": "Factor the quadratic difference of squares and cancel common terms.",
+              "work": "\\(\\frac{(x - 5)x^2}{x(x - 5)(x + 5)} = \\frac{x}{x + 5}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h37",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^2 - 6x + 8}{x^2 - 4x + 4} \\div \\frac{x^2 - 3x}{x^2 - 2x} \\)",
+          "answer": "3",
+          "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor each of the quadratic expressions.",
+              "work": "\\(x^2 - 6x + 8 = (x - 2)(x - 4), quad x^2 - 4x + 4 = (x - 2)^2\\)"
+            },
+            {
+              "explain": "Factor the numerator and denominator of the divisor.",
+              "work": "\\(x^2 - 3x = x(x - 3), quad x^2 - 2x = x(x - 2)\\)"
+            },
+            {
+              "explain": "Invert the divisor, multiply, and cancel common factors.",
+              "work": "\\(\\frac{(x - 2)(x - 4)}{(x - 2)^2} \\times \\frac{x(x - 2)}{x(x - 3)} = \\frac{x - 4}{x - 3}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h38",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^2 - 8x + 15}{x^2 - 6x + 9} \\div \\frac{x^2 - 4x}{x^2 - 3x} \\)",
+          "answer": "3",
+          "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor each of the quadratic expressions.",
+              "work": "\\(x^2 - 8x + 15 = (x - 3)(x - 5), quad x^2 - 6x + 9 = (x - 3)^2\\)"
+            },
+            {
+              "explain": "Factor the numerator and denominator of the divisor.",
+              "work": "\\(x^2 - 4x = x(x - 4), quad x^2 - 3x = x(x - 3)\\)"
+            },
+            {
+              "explain": "Invert the divisor, multiply, and cancel common factors.",
+              "work": "\\(\\frac{(x - 3)(x - 5)}{(x - 3)^2} \\times \\frac{x(x - 3)}{x(x - 4)} = \\frac{x - 5}{x - 4}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h39",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^2 - 10x + 24}{x^2 - 8x + 16} \\div \\frac{x^2 - 5x}{x^2 - 4x} \\)",
+          "answer": "3",
+          "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor each of the quadratic expressions.",
+              "work": "\\(x^2 - 10x + 24 = (x - 4)(x - 6), quad x^2 - 8x + 16 = (x - 4)^2\\)"
+            },
+            {
+              "explain": "Factor the numerator and denominator of the divisor.",
+              "work": "\\(x^2 - 5x = x(x - 5), quad x^2 - 4x = x(x - 4)\\)"
+            },
+            {
+              "explain": "Invert the divisor, multiply, and cancel common factors.",
+              "work": "\\(\\frac{(x - 4)(x - 6)}{(x - 4)^2} \\times \\frac{x(x - 4)}{x(x - 5)} = \\frac{x - 6}{x - 5}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h40",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Simplify: \\( \\frac{x^2 - 12x + 35}{x^2 - 10x + 25} \\div \\frac{x^2 - 6x}{x^2 - 5x} \\)",
+          "answer": "3",
+          "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Factor each of the quadratic expressions.",
+              "work": "\\(x^2 - 12x + 35 = (x - 5)(x - 7), quad x^2 - 10x + 25 = (x - 5)^2\\)"
+            },
+            {
+              "explain": "Factor the numerator and denominator of the divisor.",
+              "work": "\\(x^2 - 6x = x(x - 6), quad x^2 - 5x = x(x - 5)\\)"
+            },
+            {
+              "explain": "Invert the divisor, multiply, and cancel common factors.",
+              "work": "\\(\\frac{(x - 5)(x - 7)}{(x - 5)^2} \\times \\frac{x(x - 5)}{x(x - 6)} = \\frac{x - 7}{x - 6}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h41",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve for real roots: \\( (x^2 - 2x)^2 - 4(x^2 - 2x) - 8 = 0 \\)",
+          "answer": "0",
+          "hint": "Substitute \\( u = x^2 - ax \\) to form a quadratic equation.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Substitute \\( u = x^2 - \\({a}x \\) and solve for \\( u \\).\\)",
+              "work": "\\(u^2 - 4u - 8 = 0 \\Rightarrow (u - 4)(u + 2) = 0\\)"
+            },
+            {
+              "explain": "Solve the first case: \\( x^2 - \\({a}x = -2 \\).\\)",
+              "work": "\\(x^2 - 2x + 2 = 0 \\Rightarrow \\Delta = 4 - 8 < 0 \\quad \\text{(No real roots)}\\)"
+            },
+            {
+              "explain": "Solve the second case: \\( x^2 - \\({a}x = \\){a + 2} \\).",
+              "work": "\\(x^2 - 2x - 4 = 0 \\Rightarrow (x - 3)(x + 1) = 0 \\Rightarrow x = -1, 3\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h42",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve for real roots: \\( (x^2 - 3x)^2 - 5(x^2 - 3x) - 10 = 0 \\)",
+          "answer": "0",
+          "hint": "Substitute \\( u = x^2 - ax \\) to form a quadratic equation.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Substitute \\( u = x^2 - \\({a}x \\) and solve for \\( u \\).\\)",
+              "work": "\\(u^2 - 5u - 10 = 0 \\Rightarrow (u - 5)(u + 2) = 0\\)"
+            },
+            {
+              "explain": "Solve the first case: \\( x^2 - \\({a}x = -2 \\).\\)",
+              "work": "\\(x^2 - 3x + 2 = 0 \\Rightarrow \\Delta = 9 - 8 < 0 \\quad \\text{(No real roots)}\\)"
+            },
+            {
+              "explain": "Solve the second case: \\( x^2 - \\({a}x = \\){a + 2} \\).",
+              "work": "\\(x^2 - 3x - 5 = 0 \\Rightarrow (x - 4)(x + 1) = 0 \\Rightarrow x = -1, 4\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h43",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve for real roots: \\( (x^2 - 4x)^2 - 6(x^2 - 4x) - 12 = 0 \\)",
+          "answer": "0",
+          "hint": "Substitute \\( u = x^2 - ax \\) to form a quadratic equation.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Substitute \\( u = x^2 - \\({a}x \\) and solve for \\( u \\).\\)",
+              "work": "\\(u^2 - 6u - 12 = 0 \\Rightarrow (u - 6)(u + 2) = 0\\)"
+            },
+            {
+              "explain": "Solve the first case: \\( x^2 - \\({a}x = -2 \\).\\)",
+              "work": "\\(x^2 - 4x + 2 = 0 \\Rightarrow \\Delta = 16 - 8 < 0 \\quad \\text{(No real roots)}\\)"
+            },
+            {
+              "explain": "Solve the second case: \\( x^2 - \\({a}x = \\){a + 2} \\).",
+              "work": "\\(x^2 - 4x - 6 = 0 \\Rightarrow (x - 5)(x + 1) = 0 \\Rightarrow x = -1, 5\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h44",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve for real roots: \\( (x^2 - 5x)^2 - 7(x^2 - 5x) - 14 = 0 \\)",
+          "answer": "0",
+          "hint": "Substitute \\( u = x^2 - ax \\) to form a quadratic equation.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Substitute \\( u = x^2 - \\({a}x \\) and solve for \\( u \\).\\)",
+              "work": "\\(u^2 - 7u - 14 = 0 \\Rightarrow (u - 7)(u + 2) = 0\\)"
+            },
+            {
+              "explain": "Solve the first case: \\( x^2 - \\({a}x = -2 \\).\\)",
+              "work": "\\(x^2 - 5x + 2 = 0 \\Rightarrow \\Delta = 25 - 8 < 0 \\quad \\text{(No real roots)}\\)"
+            },
+            {
+              "explain": "Solve the second case: \\( x^2 - \\({a}x = \\){a + 2} \\).",
+              "work": "\\(x^2 - 5x - 7 = 0 \\Rightarrow (x - 6)(x + 1) = 0 \\Rightarrow x = -1, 6\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h45",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve: \\( \\frac{x}{x - 2} + \\frac{x - 6}{x} = 2 \\)",
+          "answer": "0",
+          "hint": "Multiply through by the lowest common denominator \\( x(x - a) \\) to eliminate fractions.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Multiply through by \\( x(x - \\({a}) \\).\\)",
+              "work": "\\(x^2 + (x - 6)(x - 2) = 2x(x - 2)\\)"
+            },
+            {
+              "explain": "Expand both sides.",
+              "work": "\\(x^2 + x^2 - 8x + 12 = 2x^2 - 4x\\)"
+            },
+            {
+              "explain": "Rearrange and solve for \\( x \\).",
+              "work": "\\(-4x + 12 = 0 \\Rightarrow x = \\frac{3}{2}2\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h46",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve: \\( \\frac{x}{x - 3} + \\frac{x - 9}{x} = 2 \\)",
+          "answer": "0",
+          "hint": "Multiply through by the lowest common denominator \\( x(x - a) \\) to eliminate fractions.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Multiply through by \\( x(x - \\({a}) \\).\\)",
+              "work": "\\(x^2 + (x - 9)(x - 3) = 2x(x - 3)\\)"
+            },
+            {
+              "explain": "Expand both sides.",
+              "work": "\\(x^2 + x^2 - 12x + 27 = 2x^2 - 6x\\)"
+            },
+            {
+              "explain": "Rearrange and solve for \\( x \\).",
+              "work": "\\(-6x + 27 = 0 \\Rightarrow x = \\frac{3}{2}3\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h47",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve: \\( \\frac{x}{x - 4} + \\frac{x - 12}{x} = 2 \\)",
+          "answer": "0",
+          "hint": "Multiply through by the lowest common denominator \\( x(x - a) \\) to eliminate fractions.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Multiply through by \\( x(x - \\({a}) \\).\\)",
+              "work": "\\(x^2 + (x - 12)(x - 4) = 2x(x - 4)\\)"
+            },
+            {
+              "explain": "Expand both sides.",
+              "work": "\\(x^2 + x^2 - 16x + 48 = 2x^2 - 8x\\)"
+            },
+            {
+              "explain": "Rearrange and solve for \\( x \\).",
+              "work": "\\(-8x + 48 = 0 \\Rightarrow x = \\frac{3}{2}4\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h48",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve: \\( \\frac{x}{x - 5} + \\frac{x - 15}{x} = 2 \\)",
+          "answer": "0",
+          "hint": "Multiply through by the lowest common denominator \\( x(x - a) \\) to eliminate fractions.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Multiply through by \\( x(x - \\({a}) \\).\\)",
+              "work": "\\(x^2 + (x - 15)(x - 5) = 2x(x - 5)\\)"
+            },
+            {
+              "explain": "Expand both sides.",
+              "work": "\\(x^2 + x^2 - 20x + 75 = 2x^2 - 10x\\)"
+            },
+            {
+              "explain": "Rearrange and solve for \\( x \\).",
+              "work": "\\(-10x + 75 = 0 \\Rightarrow x = \\frac{3}{2}5\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h57",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "If the roots of the quadratic equation \\( x^2 - 4x - k = 0 \\) differ by 2, find the value of \\( k \\).",
+          "answer": "0",
+          "hint": "Let the roots be \\( \\alpha \\) and \\( \\alpha + 2 \\). Use the sum and product of roots.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Set up the equations for sum of roots.",
+              "work": "\\(\\alpha + \\beta = 4, quad \\beta - \\alpha = 2\\)"
+            },
+            {
+              "explain": "Solve for the individual roots.",
+              "work": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 4 \\Rightarrow \\alpha = 1, quad \\beta = 3\\)"
+            },
+            {
+              "explain": "Use the product of roots formula to solve for \\( k \\).",
+              "work": "\\(\\alpha \\times \\beta = -k \\Rightarrow (1)(3) = -k \\Rightarrow 3 = -k \\Rightarrow k = -3\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h58",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "If the roots of the quadratic equation \\( x^2 - 6x - k = 0 \\) differ by 2, find the value of \\( k \\).",
+          "answer": "0",
+          "hint": "Let the roots be \\( \\alpha \\) and \\( \\alpha + 2 \\). Use the sum and product of roots.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Set up the equations for sum of roots.",
+              "work": "\\(\\alpha + \\beta = 6, quad \\beta - \\alpha = 2\\)"
+            },
+            {
+              "explain": "Solve for the individual roots.",
+              "work": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 6 \\Rightarrow \\alpha = 2, quad \\beta = 4\\)"
+            },
+            {
+              "explain": "Use the product of roots formula to solve for \\( k \\).",
+              "work": "\\(\\alpha \\times \\beta = -k \\Rightarrow (2)(4) = -k \\Rightarrow 8 = -k \\Rightarrow k = -8\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h59",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "If the roots of the quadratic equation \\( x^2 - 8x - k = 0 \\) differ by 2, find the value of \\( k \\).",
+          "answer": "0",
+          "hint": "Let the roots be \\( \\alpha \\) and \\( \\alpha + 2 \\). Use the sum and product of roots.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Set up the equations for sum of roots.",
+              "work": "\\(\\alpha + \\beta = 8, quad \\beta - \\alpha = 2\\)"
+            },
+            {
+              "explain": "Solve for the individual roots.",
+              "work": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 8 \\Rightarrow \\alpha = 3, quad \\beta = 5\\)"
+            },
+            {
+              "explain": "Use the product of roots formula to solve for \\( k \\).",
+              "work": "\\(\\alpha \\times \\beta = -k \\Rightarrow (3)(5) = -k \\Rightarrow 15 = -k \\Rightarrow k = -15\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h60",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "If the roots of the quadratic equation \\( x^2 - 10x - k = 0 \\) differ by 2, find the value of \\( k \\).",
+          "answer": "0",
+          "hint": "Let the roots be \\( \\alpha \\) and \\( \\alpha + 2 \\). Use the sum and product of roots.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Set up the equations for sum of roots.",
+              "work": "\\(\\alpha + \\beta = 10, quad \\beta - \\alpha = 2\\)"
+            },
+            {
+              "explain": "Solve for the individual roots.",
+              "work": "\\(\\beta = \\alpha + 2 \\Rightarrow 2\\alpha + 2 = 10 \\Rightarrow \\alpha = 4, quad \\beta = 6\\)"
+            },
+            {
+              "explain": "Use the product of roots formula to solve for \\( k \\).",
+              "work": "\\(\\alpha \\times \\beta = -k \\Rightarrow (4)(6) = -k \\Rightarrow 24 = -k \\Rightarrow k = -24\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h65",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneous equations: \\( y = x^2 + 2x \\) and \\( y = 5x - 2 \\).",
+          "answer": "0",
+          "hint": "Equate the two expressions for \\( y \\) to form a quadratic in terms of \\( x \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Equate the quadratic and linear equations.",
+              "work": "\\(x^2 + 2x = 5x - 2\\)"
+            },
+            {
+              "explain": "Rearrange into standard form and factor.",
+              "work": "\\(x^2 - 3x + 2 = 0 \\Rightarrow (x - 1)(x - 2) = 0\\)"
+            },
+            {
+              "explain": "Find the corresponding \\( y \\) values by substituting \\( x \\) back.",
+              "work": "\\(x = 1 \\Rightarrow y = 3, quad x = 2 \\Rightarrow y = 6\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h66",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneous equations: \\( y = x^2 + 3x \\) and \\( y = 6x - 2 \\).",
+          "answer": "0",
+          "hint": "Equate the two expressions for \\( y \\) to form a quadratic in terms of \\( x \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Equate the quadratic and linear equations.",
+              "work": "\\(x^2 + 3x = 6x - 2\\)"
+            },
+            {
+              "explain": "Rearrange into standard form and factor.",
+              "work": "\\(x^2 - 3x + 2 = 0 \\Rightarrow (x - 1)(x - 2) = 0\\)"
+            },
+            {
+              "explain": "Find the corresponding \\( y \\) values by substituting \\( x \\) back.",
+              "work": "\\(x = 1 \\Rightarrow y = 4, quad x = 2 \\Rightarrow y = 8\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h67",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneous equations: \\( y = x^2 + 4x \\) and \\( y = 7x - 2 \\).",
+          "answer": "0",
+          "hint": "Equate the two expressions for \\( y \\) to form a quadratic in terms of \\( x \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Equate the quadratic and linear equations.",
+              "work": "\\(x^2 + 4x = 7x - 2\\)"
+            },
+            {
+              "explain": "Rearrange into standard form and factor.",
+              "work": "\\(x^2 - 3x + 2 = 0 \\Rightarrow (x - 1)(x - 2) = 0\\)"
+            },
+            {
+              "explain": "Find the corresponding \\( y \\) values by substituting \\( x \\) back.",
+              "work": "\\(x = 1 \\Rightarrow y = 5, quad x = 2 \\Rightarrow y = 10\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h68",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneous equations: \\( y = x^2 + 5x \\) and \\( y = 8x - 2 \\).",
+          "answer": "0",
+          "hint": "Equate the two expressions for \\( y \\) to form a quadratic in terms of \\( x \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Equate the quadratic and linear equations.",
+              "work": "\\(x^2 + 5x = 8x - 2\\)"
+            },
+            {
+              "explain": "Rearrange into standard form and factor.",
+              "work": "\\(x^2 - 3x + 2 = 0 \\Rightarrow (x - 1)(x - 2) = 0\\)"
+            },
+            {
+              "explain": "Find the corresponding \\( y \\) values by substituting \\( x \\) back.",
+              "work": "\\(x = 1 \\Rightarrow y = 6, quad x = 2 \\Rightarrow y = 12\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h77",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously: \\( y - 2x = 4 \\) and \\( x^2 + y^2 = 16 \\).",
+          "answer": "0",
+          "hint": "Substitute \\( y = ax + b \\) into the second equation.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Substitute \\( y = \\({a}x + \\){b} \\) into the circle equation.",
+              "work": "\\(x^2 + (2x + 4)^2 = 16\\)"
+            },
+            {
+              "explain": "Expand and simplify.",
+              "work": "\\(x^2 + 4x^2 + 16x + 16 = 16 \\Rightarrow (5)x^2 + 16x = 0\\)"
+            },
+            {
+              "explain": "Solve for \\( x \\) and find \\( y \\).",
+              "work": "\\(x( (5)x + 16 ) = 0 \\Rightarrow x = 0 \\text{ or } x = -\\frac{2*a*b}{5} \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h78",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously: \\( y - 3x = 9 \\) and \\( x^2 + y^2 = 81 \\).",
+          "answer": "0",
+          "hint": "Substitute \\( y = ax + b \\) into the second equation.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Substitute \\( y = \\({a}x + \\){b} \\) into the circle equation.",
+              "work": "\\(x^2 + (3x + 9)^2 = 81\\)"
+            },
+            {
+              "explain": "Expand and simplify.",
+              "work": "\\(x^2 + 9x^2 + 54x + 81 = 81 \\Rightarrow (10)x^2 + 54x = 0\\)"
+            },
+            {
+              "explain": "Solve for \\( x \\) and find \\( y \\).",
+              "work": "\\(x( (10)x + 54 ) = 0 \\Rightarrow x = 0 \\text{ or } x = -\\frac{2*a*b}{10} \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h79",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously: \\( y - 4x = 16 \\) and \\( x^2 + y^2 = 256 \\).",
+          "answer": "0",
+          "hint": "Substitute \\( y = ax + b \\) into the second equation.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Substitute \\( y = \\({a}x + \\){b} \\) into the circle equation.",
+              "work": "\\(x^2 + (4x + 16)^2 = 256\\)"
+            },
+            {
+              "explain": "Expand and simplify.",
+              "work": "\\(x^2 + 16x^2 + 128x + 256 = 256 \\Rightarrow (17)x^2 + 128x = 0\\)"
+            },
+            {
+              "explain": "Solve for \\( x \\) and find \\( y \\).",
+              "work": "\\(x( (17)x + 128 ) = 0 \\Rightarrow x = 0 \\text{ or } x = -\\frac{2*a*b}{17} \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h80",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Solve simultaneously: \\( y - 5x = 25 \\) and \\( x^2 + y^2 = 625 \\).",
+          "answer": "0",
+          "hint": "Substitute \\( y = ax + b \\) into the second equation.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Substitute \\( y = \\({a}x + \\){b} \\) into the circle equation.",
+              "work": "\\(x^2 + (5x + 25)^2 = 625\\)"
+            },
+            {
+              "explain": "Expand and simplify.",
+              "work": "\\(x^2 + 25x^2 + 250x + 625 = 625 \\Rightarrow (26)x^2 + 250x = 0\\)"
+            },
+            {
+              "explain": "Solve for \\( x \\) and find \\( y \\).",
+              "work": "\\(x( (26)x + 250 ) = 0 \\Rightarrow x = 0 \\text{ or } x = -\\frac{2*a*b}{26} \\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h93",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Find the dimensions of a rectangle with a perimeter of \\( 22 \\) cm and an area of \\( 28 \\) cm\\(^2\\).",
+          "answer": "0",
+          "hint": "Use the formulas \\( 2(w+l) = P \\) and \\( wl = A \\) to set up simultaneous equations.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Set up equations for area and perimeter.",
+              "work": "\\(2(w + l) = 22, quad wl = 28\\)"
+            },
+            {
+              "explain": "Form a single quadratic equation for the width \\( w \\).",
+              "work": "\\(w(11 - w) = 28 \\Rightarrow w^2 - 11w + 28 = 0\\)"
+            },
+            {
+              "explain": "Solve the quadratic equation to find both dimensions.",
+              "work": "\\((w - 4)(w - 7) = 0 \\Rightarrow w = 4, quad l = 7\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h94",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Find the dimensions of a rectangle with a perimeter of \\( 26 \\) cm and an area of \\( 40 \\) cm\\(^2\\).",
+          "answer": "0",
+          "hint": "Use the formulas \\( 2(w+l) = P \\) and \\( wl = A \\) to set up simultaneous equations.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Set up equations for area and perimeter.",
+              "work": "\\(2(w + l) = 26, quad wl = 40\\)"
+            },
+            {
+              "explain": "Form a single quadratic equation for the width \\( w \\).",
+              "work": "\\(w(13 - w) = 40 \\Rightarrow w^2 - 13w + 40 = 0\\)"
+            },
+            {
+              "explain": "Solve the quadratic equation to find both dimensions.",
+              "work": "\\((w - 5)(w - 8) = 0 \\Rightarrow w = 5, quad l = 8\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h95",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Find the dimensions of a rectangle with a perimeter of \\( 30 \\) cm and an area of \\( 54 \\) cm\\(^2\\).",
+          "answer": "0",
+          "hint": "Use the formulas \\( 2(w+l) = P \\) and \\( wl = A \\) to set up simultaneous equations.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Set up equations for area and perimeter.",
+              "work": "\\(2(w + l) = 30, quad wl = 54\\)"
+            },
+            {
+              "explain": "Form a single quadratic equation for the width \\( w \\).",
+              "work": "\\(w(15 - w) = 54 \\Rightarrow w^2 - 15w + 54 = 0\\)"
+            },
+            {
+              "explain": "Solve the quadratic equation to find both dimensions.",
+              "work": "\\((w - 6)(w - 9) = 0 \\Rightarrow w = 6, quad l = 9\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h96",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "Find the dimensions of a rectangle with a perimeter of \\( 34 \\) cm and an area of \\( 70 \\) cm\\(^2\\).",
+          "answer": "0",
+          "hint": "Use the formulas \\( 2(w+l) = P \\) and \\( wl = A \\) to set up simultaneous equations.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Set up equations for area and perimeter.",
+              "work": "\\(2(w + l) = 34, quad wl = 70\\)"
+            },
+            {
+              "explain": "Form a single quadratic equation for the width \\( w \\).",
+              "work": "\\(w(17 - w) = 70 \\Rightarrow w^2 - 17w + 70 = 0\\)"
+            },
+            {
+              "explain": "Solve the quadratic equation to find both dimensions.",
+              "work": "\\((w - 7)(w - 10) = 0 \\Rightarrow w = 7, quad l = 10\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h97",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "A ball is projected upwards. Its height \\( h \\) meters after \\( t \\) seconds is given by \\( h = -5t^2 + 25t + 10 \\). Find the time taken to reach the maximum height.",
+          "answer": "0",
+          "hint": "The maximum height of a quadratic \\( at^2 + bt + c \\) is reached at the axis of symmetry \\( t = -\\frac{b}{2a} \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the coefficients from the quadratic formula for height.",
+              "work": "\\(a = -5, quad b = 25, quad c = 10\\)"
+            },
+            {
+              "explain": "Use the vertex time formula \\( t = -\\frac{b}{2a} \\).",
+              "work": "\\(t = -\\frac{25}{2(-5)}\\)"
+            },
+            {
+              "explain": "Simplify to find the final time.",
+              "work": "\\(t = 2.5 \\text{ seconds}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h98",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "A ball is projected upwards. Its height \\( h \\) meters after \\( t \\) seconds is given by \\( h = -5t^2 + 30t + 10 \\). Find the time taken to reach the maximum height.",
+          "answer": "0",
+          "hint": "The maximum height of a quadratic \\( at^2 + bt + c \\) is reached at the axis of symmetry \\( t = -\\frac{b}{2a} \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the coefficients from the quadratic formula for height.",
+              "work": "\\(a = -5, quad b = 30, quad c = 10\\)"
+            },
+            {
+              "explain": "Use the vertex time formula \\( t = -\\frac{b}{2a} \\).",
+              "work": "\\(t = -\\frac{30}{2(-5)}\\)"
+            },
+            {
+              "explain": "Simplify to find the final time.",
+              "work": "\\(t = 3 \\text{ seconds}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h99",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "A ball is projected upwards. Its height \\( h \\) meters after \\( t \\) seconds is given by \\( h = -5t^2 + 35t + 10 \\). Find the time taken to reach the maximum height.",
+          "answer": "0",
+          "hint": "The maximum height of a quadratic \\( at^2 + bt + c \\) is reached at the axis of symmetry \\( t = -\\frac{b}{2a} \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the coefficients from the quadratic formula for height.",
+              "work": "\\(a = -5, quad b = 35, quad c = 10\\)"
+            },
+            {
+              "explain": "Use the vertex time formula \\( t = -\\frac{b}{2a} \\).",
+              "work": "\\(t = -\\frac{35}{2(-5)}\\)"
+            },
+            {
+              "explain": "Simplify to find the final time.",
+              "work": "\\(t = 3.5 \\text{ seconds}\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y11-1f-h100",
+          "type": "review",
+          "difficulty": "hard",
+          "stem": "A ball is projected upwards. Its height \\( h \\) meters after \\( t \\) seconds is given by \\( h = -5t^2 + 40t + 10 \\). Find the time taken to reach the maximum height.",
+          "answer": "0",
+          "hint": "The maximum height of a quadratic \\( at^2 + bt + c \\) is reached at the axis of symmetry \\( t = -\\frac{b}{2a} \\).",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Identify the coefficients from the quadratic formula for height.",
+              "work": "\\(a = -5, quad b = 40, quad c = 10\\)"
+            },
+            {
+              "explain": "Use the vertex time formula \\( t = -\\frac{b}{2a} \\).",
+              "work": "\\(t = -\\frac{40}{2(-5)}\\)"
+            },
+            {
+              "explain": "Simplify to find the final time.",
+              "work": "\\(t = 4 \\text{ seconds}\\)"
+            }
+          ],
+          "manual": true
+        }
+      ]
+    }
+  ]
+}

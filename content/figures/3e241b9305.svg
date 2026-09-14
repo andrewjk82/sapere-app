@@ -1,0 +1,44 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>
+  <rect width='300' height='300' fill='#ffffff' />
+  
+  <polygon points='150,40 65.74,220.73 150,150 234.26,220.73 260,150' fill='#f8fafc' stroke='none' />
+  
+  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />
+  
+  <line x1='150' y1='150' x2='65.74' y2='220.73' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='150' y1='150' x2='234.26' y2='220.73' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='150' y1='150' x2='260' y2='150' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+  
+  <line x1='150' y1='40' x2='65.74' y2='220.73' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='150' y1='40' x2='234.26' y2='220.73' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+  <line x1='150' y1='40' x2='260' y2='150' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />
+
+  <!-- Angles -->
+  <path d='M 137.32340258103022 67.19014302789466 A 30 30 0 0 0 162.67659741896978 67.19014302789466' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='150' y='85' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>50°</text>
+
+  <path d='M 166.90212989195967 76.2535240371929 A 40 40 0 0 0 178.2842712474619 68.2842712474619' fill='none' stroke='#8b5cf6' stroke-width='1.5' stroke-linecap='round' />
+  <text x='181' y='85' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#7c3aed'>β</text>
+
+  <path d='M 134.6815700586076 162.85868205263094 A 20 20 0 0 0 165.3184299413924 162.85868205263094' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />
+  <text x='150' y='185' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>α</text>
+
+  <path d='M 165.3184299413924 162.85868205263094 A 20 20 0 0 0 170 150' fill='none' stroke='#8b5cf6' stroke-width='1.5' stroke-linecap='round' />
+  <text x='182' y='162' text-anchor='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#7c3aed'>40°</text>
+
+  <!-- Points -->
+  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />
+  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>
+  
+  <circle cx='150' cy='40' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='150' y='28' text-anchor='middle' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>P</text>
+  
+  <circle cx='65.74' cy='220.73' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='53.739999999999995' y='232.73' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>Q</text>
+  
+  <circle cx='234.26' cy='220.73' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='246.26' y='232.73' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>R</text>
+
+  <circle cx='260' cy='150' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />
+  <text x='272' y='150' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>S</text>
+</svg>

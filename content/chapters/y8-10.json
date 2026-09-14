@@ -1,0 +1,3297 @@
+{
+  "chapterId": "y8-10",
+  "title": "Chapter 10: Rates and ratios",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "y8-10a",
+      "code": "10A",
+      "title": "Review of the unitary method",
+      "questions": [
+        {
+          "id": "y8-10a-q1a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If \\(4\\) kg of potatoes cost \\(4.80, find the cost of \\)7 kg.",
+          "options": [
+            "\\(\\$7.00\\)",
+            "\\(\\$8.40\\)",
+            "\\(\\$8.60\\)",
+            "\\(\\$10.20\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the cost of 1 kg first by dividing the total cost by the weight.",
+          "solution": "1. Find the cost of \\(1\\) kg of potatoes:\n   \\(\\\\)4.80 \\div 4 = \\\\(1.20\\)\n2. Multiply the cost of \\(1\\) kg by \\(7\\) to find the cost of \\(7\\) kg:\n   \\(\\\\)1.20 \\times 7 = \\\\(8.40\\)",
+          "steps": [
+            {
+              "explain": "Find the cost of 1 kg of potatoes by dividing the total cost by the weight.",
+              "work": "\\(\\frac{\\$4.80}{4\\text{ kg}} = \\$1.20\\text{ per kg}\\)"
+            },
+            {
+              "explain": "Multiply the unit cost by the new quantity (7 kg).",
+              "work": "\\(\\$1.20 \\times 7\\)"
+            },
+            {
+              "explain": "Calculate the final cost.",
+              "work": "\\(\\$8.40\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{The cost of 7 kg is } \\$8.40.\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10"
+          ]
+        },
+        {
+          "id": "y8-10a-q1b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If \\(6\\) pens cost \\(24, find the cost of \\)8 pens.",
+          "options": [
+            "\\(\\$28\\)",
+            "\\(\\$30\\)",
+            "\\(\\$32\\)",
+            "\\(\\$36\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the cost of 1 pen first.",
+          "solution": "1. Find the cost of \\(1\\) pen:\n   \\(\\\\)24 \\div 6 = \\\\(4\\)\n2. Multiply the cost of \\(1\\) pen by \\(8\\):\n   \\(\\\\)4 \\times 8 = \\\\(32\\)",
+          "steps": [
+            {
+              "explain": "Find the cost of 1 pen by dividing the total cost by the quantity.",
+              "work": "\\(\\frac{\\$24}{6} = \\$4\\text{ per pen}\\)"
+            },
+            {
+              "explain": "Multiply the unit cost by the new quantity (8 pens).",
+              "work": "\\(\\$4 \\times 8\\)"
+            },
+            {
+              "explain": "Calculate the final cost.",
+              "work": "\\(\\$32\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{The cost of 8 pens is } \\$32.\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10"
+          ]
+        },
+        {
+          "id": "y8-10a-q1c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If \\(6\\) tennis balls cost \\(15, find the cost of \\)16 tennis balls.",
+          "options": [
+            "\\(\\$35\\)",
+            "\\(\\$38\\)",
+            "\\(\\$40\\)",
+            "\\(\\$42\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the cost of 1 tennis ball first.",
+          "solution": "1. Find the cost of \\(1\\) tennis ball:\n   \\(\\\\)15 \\div 6 = \\\\(2.50\\)\n2. Multiply by \\(16\\) to find the cost of \\(16\\) tennis balls:\n   \\(\\\\)2.50 \\times 16 = \\\\(40\\)",
+          "steps": [
+            {
+              "explain": "Find the cost of 1 tennis ball by dividing the total cost by the quantity.",
+              "work": "\\(\\frac{\\$15}{6} = \\$2.50\\text{ per ball}\\)"
+            },
+            {
+              "explain": "Multiply the unit cost by the new quantity (16 balls).",
+              "work": "\\(\\$2.50 \\times 16\\)"
+            },
+            {
+              "explain": "Calculate the final cost.",
+              "work": "\\(\\$40\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{The cost of 16 tennis balls is } \\$40.\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10"
+          ]
+        },
+        {
+          "id": "y8-10a-q1d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If \\(8\\) billiard balls weigh \\(1280\\) g, how much do \\(5\\) billiard balls weigh?",
+          "options": [
+            "\\(700\\text{ g}\\)",
+            "\\(800\\text{ g}\\)",
+            "\\(850\\text{ g}\\)",
+            "\\(900\\text{ g}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the weight of 1 billiard ball first.",
+          "solution": "1. Find the weight of \\(1\\) billiard ball:\n   \\(1280\\text{ g} \\div 8 = 160\\text{ g}\\)\n2. Multiply by \\(5\\) to find the weight of \\(5\\) billiard balls:\n   \\(160\\text{ g} \\times 5 = 800\\text{ g}\\)",
+          "steps": [
+            {
+              "explain": "Find the weight of 1 billiard ball by dividing the total weight by the quantity.",
+              "work": "\\(\\frac{1280\\text{ g}}{8} = 160\\text{ g per ball}\\)"
+            },
+            {
+              "explain": "Multiply the unit weight by the new quantity (5 balls).",
+              "work": "\\(160 \\times 5\\)"
+            },
+            {
+              "explain": "Calculate the final weight.",
+              "work": "\\(800\\text{ g}\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{5 billiard balls weigh } 800\\text{ g}.\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10"
+          ]
+        },
+        {
+          "id": "y8-10a-q1e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If the length of a row of \\(15\\) seats is \\(675\\) cm, how long will a row of \\(22\\) seats be?",
+          "options": [
+            "\\(950\\text{ cm}\\)",
+            "\\(990\\text{ cm}\\)",
+            "\\(1050\\text{ cm}\\)",
+            "\\(1100\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the width of 1 seat first.",
+          "solution": "1. Find the width of \\(1\\) seat:\n   \\(675\\text{ cm} \\div 15 = 45\\text{ cm}\\)\n2. Multiply by \\(22\\) to find the length of \\(22\\) seats:\n   \\(45\\text{ cm} \\times 22 = 990\\text{ cm}\\)",
+          "steps": [
+            {
+              "explain": "Find the length of 1 seat by dividing the total length by the number of seats.",
+              "work": "\\(\\frac{675\\text{ cm}}{15} = 45\\text{ cm per seat}\\)"
+            },
+            {
+              "explain": "Multiply the unit length by the new quantity (22 seats).",
+              "work": "\\(45 \\times 22\\)"
+            },
+            {
+              "explain": "Calculate the final length.",
+              "work": "\\(990\\text{ cm}\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{The row of 22 seats will be } 990\\text{ cm long}.\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10"
+          ]
+        },
+        {
+          "id": "y8-10a-q1f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The cookies of a certain bakery contain \\(18\\) g of sugar 'per standard serve'. If one standard serve is \\(3\\) cookies, how much sugar, in grams, is consumed by a person who eats \\(8\\) cookies?",
+          "options": [
+            "\\(42\\text{ g}\\)",
+            "\\(48\\text{ g}\\)",
+            "\\(52\\text{ g}\\)",
+            "\\(54\\text{ g}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the amount of sugar in 1 cookie first.",
+          "solution": "1. Find the amount of sugar in \\(1\\) cookie:\n   \\(18\\text{ g} \\div 3 = 6\\text{ g}\\)\n2. Multiply by \\(8\\) to find the total sugar consumed:\n   \\(6\\text{ g} \\times 8 = 48\\text{ g}\\)",
+          "steps": [
+            {
+              "explain": "Find the sugar content of 1 cookie by dividing the sugar per serve by the cookies per serve.",
+              "work": "\\(\\frac{18\\text{ g}}{3\\text{ cookies}} = 6\\text{ g per cookie}\\)"
+            },
+            {
+              "explain": "Multiply the unit sugar content by the new quantity (8 cookies).",
+              "work": "\\(6 \\times 8\\)"
+            },
+            {
+              "explain": "Calculate the final sugar amount.",
+              "work": "\\(48\\text{ g}\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{8 cookies contain } 48\\text{ g of sugar}.\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10"
+          ]
+        },
+        {
+          "id": "y8-10a-q2a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If \\(8\\) bananas cost \\(3.60, how many can I buy for \\)13.50?",
+          "options": [
+            "\\(24\\)",
+            "\\(28\\)",
+            "\\(30\\)",
+            "\\(32\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the cost of 1 banana first.",
+          "solution": "1. Find the cost of \\(1\\) banana:\n   \\(\\\\)3.60 \\div 8 = \\\\(0.45\\)\n2. Divide the total money available by the cost of \\(1\\) banana:\n   \\(\\\\)13.50 \\div \\\\(0.45 = 30\\)",
+          "steps": [
+            {
+              "explain": "Find the cost of 1 banana.",
+              "work": "\\(\\frac{\\$3.60}{8} = \\$0.45\\text{ per banana}\\)"
+            },
+            {
+              "explain": "Divide the new total money by the cost of 1 banana to find the quantity.",
+              "work": "\\(\\frac{\\$13.50}{\\$0.45}\\)"
+            },
+            {
+              "explain": "Calculate the quantity.",
+              "work": "\\(30\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{You can buy } 30\\text{ bananas}.\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10"
+          ]
+        },
+        {
+          "id": "y8-10a-q2b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How many shares can I buy for \\(7200 if \\)800\\( shares cost \\)960?",
+          "options": [
+            "\\(5600\\)",
+            "\\(5800\\)",
+            "\\(6000\\)",
+            "\\(6400\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the price per share first.",
+          "solution": "1. Find the cost of \\(1\\) share:\n   \\(\\\\)960 \\div 800 = \\\\(1.20\\)\n2. Divide the total budget by the share price:\n   \\(\\\\)7200 \\div \\\\(1.20 = 6000\\)",
+          "steps": [
+            {
+              "explain": "Find the cost of 1 share.",
+              "work": "\\(\\frac{\\$960}{800} = \\$1.20\\text{ per share}\\)"
+            },
+            {
+              "explain": "Divide the new total money by the cost of 1 share.",
+              "work": "\\(\\frac{\\$7200}{\\$1.20}\\)"
+            },
+            {
+              "explain": "Calculate the quantity.",
+              "work": "\\(6000\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{You can buy } 6000\\text{ shares}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q2c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "At a sale, notebooks cost \\(6 per dozen. How many can I buy for \\)25?",
+          "options": [
+            "\\(45\\)",
+            "\\(48\\)",
+            "\\(50\\)",
+            "\\(52\\)"
+          ],
+          "answer": 2,
+          "hint": "A dozen has 12 notebooks. Find the price per notebook first.",
+          "solution": "1. Find the cost of \\(1\\) notebook (remembering that \\(1\\) dozen = \\(12\\) notebooks):\n   \\(\\\\)6 \\div 12 = \\\\(0.50\\)\n2. Divide the budget by the cost of \\(1\\) notebook:\n   \\(\\text{Number of notebooks} = \\\\)25 \\div \\\\(0.50 = 50\\)",
+          "steps": [
+            {
+              "explain": "Find the cost of 1 notebook (a dozen is 12).",
+              "work": "\\(\\frac{\\$6}{12} = \\$0.50\\text{ per notebook}\\)"
+            },
+            {
+              "explain": "Divide the new total money by the cost of 1 notebook.",
+              "work": "\\(\\frac{\\$25}{\\$0.50}\\)"
+            },
+            {
+              "explain": "Calculate the quantity.",
+              "work": "\\(50\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{You can buy } 50\\text{ notebooks}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q2d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A caterer must buy \\(5\\) lettuces to make sandwiches for \\(60\\) people. How many lettuces will he need to buy to feed \\(204\\) people?",
+          "options": [
+            "\\(15\\)",
+            "\\(16\\)",
+            "\\(17\\)",
+            "\\(18\\)"
+          ],
+          "answer": 2,
+          "hint": "Find how many people 1 lettuce feeds first.",
+          "solution": "1. Find how many people can be fed by \\(1\\) lettuce:\n   \\(60 \\div 5 = 12\\text{ people}\\)\n2. Divide the total number of people by \\(12\\) to find the required number of lettuces:\n   \\(204 \\div 12 = 17\\)",
+          "steps": [
+            {
+              "explain": "Find the number of people 1 lettuce feeds.",
+              "work": "\\(\\frac{60}{5} = 12\\text{ people per lettuce}\\)"
+            },
+            {
+              "explain": "Divide the new number of people by the rate.",
+              "work": "\\(\\frac{204}{12}\\)"
+            },
+            {
+              "explain": "Calculate the quantity.",
+              "work": "\\(17\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{He needs } 17\\text{ lettuces}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q2e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The first \\(3\\) pages of a student's essay contain \\(1050\\) words. How many pages are needed if the essay is to meet the requirement of \\(4550\\) words? (Assume that each page contains the same number of words.)",
+          "options": [
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(13\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the words per page first.",
+          "solution": "1. Find the number of words on \\(1\\) page:\n   \\(1050 \\div 3 = 350\\text{ words}\\)\n2. Divide the total required words by the words per page:\n   \\(4550 \\div 350 = 13\\text{ pages}\\)",
+          "steps": [
+            {
+              "explain": "Find the number of words on 1 page.",
+              "work": "\\(\\frac{1050}{3} = 350\\text{ words per page}\\)"
+            },
+            {
+              "explain": "Divide the target word count by words per page.",
+              "work": "\\(\\frac{4550}{350}\\)"
+            },
+            {
+              "explain": "Calculate the number of pages.",
+              "work": "\\(13\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{The essay needs } 13\\text{ pages}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q3a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "On a map, \\(6\\) cm represents \\(3\\) km. How far apart are two suburbs A and B if they are \\(22\\) cm apart on the map?",
+          "options": [
+            "\\(9\\text{ km}\\)",
+            "\\(11\\text{ km}\\)",
+            "\\(14\\text{ km}\\)",
+            "\\(16\\text{ km}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find how many kilometers 1 cm represents on the map.",
+          "solution": "1. Find the distance represented by \\(1\\) cm on the map:\n   \\(3\\text{ km} \\div 6 = 0.5\\text{ km}\\)\n2. Multiply this by the map distance of \\(22\\) cm:\n   \\(0.5\\text{ km} \\times 22 = 11\\text{ km}\\)",
+          "steps": [
+            {
+              "explain": "Find the actual distance for 1 cm on the map.",
+              "work": "\\(\\frac{3\\text{ km}}{6\\text{ cm}} = 0.5\\text{ km per cm}\\)"
+            },
+            {
+              "explain": "Multiply the unit rate by the new map distance.",
+              "work": "\\(0.5 \\times 22\\)"
+            },
+            {
+              "explain": "Calculate the actual distance.",
+              "work": "\\(11\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{The suburbs are } 11\\text{ km apart}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q3b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "On a map, \\(8\\) cm represents a distance of \\(40\\) km. What distance on the map would represent \\(75\\) km?",
+          "options": [
+            "\\(12\\text{ cm}\\)",
+            "\\(15\\text{ cm}\\)",
+            "\\(18\\text{ cm}\\)",
+            "\\(20\\text{ cm}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find how many centimeters represent 1 km first.",
+          "solution": "1. Find how many centimeters represent \\(1\\) km:\n   \\(8\\text{ cm} \\div 40 = 0.2\\text{ cm}\\)\n2. Multiply this by the actual distance of \\(75\\) km:\n   \\(0.2\\text{ cm} \\times 75 = 15\\text{ cm}\\)",
+          "steps": [
+            {
+              "explain": "Find the map distance for 1 km.",
+              "work": "\\(\\frac{8\\text{ cm}}{40\\text{ km}} = 0.2\\text{ cm per km}\\)"
+            },
+            {
+              "explain": "Multiply by the new actual distance.",
+              "work": "\\(0.2 \\times 75\\)"
+            },
+            {
+              "explain": "Calculate the map distance.",
+              "work": "\\(15\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{The map distance is } 15\\text{ cm}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q3c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "At a certain time of day, a woman \\(1.6\\) m tall casts a shadow \\(2.4\\) m long. What is the height of a person who casts a shadow of length \\(1.8\\) m?",
+          "options": [
+            "\\(1.0\\text{ m}\\)",
+            "\\(1.2\\text{ m}\\)",
+            "\\(1.4\\text{ m}\\)",
+            "\\(1.5\\text{ m}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the ratio of height to shadow length.",
+          "solution": "1. Find the ratio of height to shadow length:\n   \\(\\frac{1.6}{2.4} = \\frac{2}{3}\\)\n2. Multiply the shadow length of \\(1.8\\) m by this ratio to find the height:\n   \\(1.8 \\times \\frac{2}{3} = 1.2\\text{ m}\\)",
+          "steps": [
+            {
+              "explain": "Find the ratio of height to shadow length.",
+              "work": "\\(\\frac{1.6\\text{ m}}{2.4\\text{ m}} = \\frac{2}{3}\\)"
+            },
+            {
+              "explain": "Multiply the ratio by the new shadow length.",
+              "work": "\\(\\frac{2}{3} \\times 1.8\\)"
+            },
+            {
+              "explain": "Calculate the new height.",
+              "work": "\\(1.2\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{The person is } 1.2\\text{ m tall}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q3d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If a flag pole of height \\(10\\) m casts a shadow of length \\(14.5\\) m, how long a shadow will a pole of height \\(8\\) m cast?",
+          "options": [
+            "\\(10.8\\text{ m}\\)",
+            "\\(11.6\\text{ m}\\)",
+            "\\(12.4\\text{ m}\\)",
+            "\\(13.2\\text{ m}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the ratio of shadow length to height.",
+          "solution": "1. Find the ratio of shadow length to height:\n   \\(\\frac{14.5}{10} = 1.45\\)\n2. Multiply the height of the new pole (\\(8\\) m) by this ratio:\n   \\(8 \\times 1.45 = 11.6\\text{ m}\\)",
+          "steps": [
+            {
+              "explain": "Find the ratio of shadow length to height.",
+              "work": "\\(\\frac{14.5\\text{ m}}{10\\text{ m}} = 1.45\\)"
+            },
+            {
+              "explain": "Multiply the ratio by the new height.",
+              "work": "\\(1.45 \\times 8\\)"
+            },
+            {
+              "explain": "Calculate the new shadow length.",
+              "work": "\\(11.6\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{The shadow is } 11.6\\text{ m long}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q3e",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A chef's favourite cake recipe uses \\(6\\) eggs and \\(450\\) g of flour. If he scales the recipe up to use \\(15\\) eggs, how many grams of flour should he use?",
+          "options": [
+            "\\(1025\\text{ g}\\)",
+            "\\(1125\\text{ g}\\)",
+            "\\(1225\\text{ g}\\)",
+            "\\(1325\\text{ g}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the amount of flour per egg.",
+          "solution": "1. Find the amount of flour used per egg:\n   \\(450\\text{ g} \\div 6 = 75\\text{ g}\\)\n2. Multiply this by the new number of eggs (\\(15\\)):\n   \\(75\\text{ g} \\times 15 = 1125\\text{ g}\\)",
+          "steps": [
+            {
+              "explain": "Find the amount of flour per egg.",
+              "work": "\\(\\frac{450\\text{ g}}{6} = 75\\text{ g per egg}\\)"
+            },
+            {
+              "explain": "Multiply by the new number of eggs.",
+              "work": "\\(75 \\times 15\\)"
+            },
+            {
+              "explain": "Calculate the new amount of flour.",
+              "work": "\\(1125\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{He should use } 1125\\text{ g of flour}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(4\\) kg of tomatoes cost \\(14, how many kilograms of tomatoes can I buy for \\)35?",
+          "options": [
+            "\\(8\\text{ kg}\\)",
+            "\\(10\\text{ kg}\\)",
+            "\\(12\\text{ kg}\\)",
+            "\\(14\\text{ kg}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the cost of 1 kg first, then divide the budget by it.",
+          "solution": "1. Find the cost of \\(1\\) kg of tomatoes:\n   \\(\\\\)14 \\div 4 = \\\\(3.50\\)\n2. Divide the total money available by the cost of \\(1\\) kg:\n   \\(35 \\div 3.50 = 10\\text{ kg}\\)",
+          "steps": [
+            {
+              "explain": "Find the amount of tomatoes per dollar.",
+              "work": "\\(\\frac{4\\text{ kg}}{\\$14} = \\frac{2}{7}\\text{ kg per dollar}\\)"
+            },
+            {
+              "explain": "Multiply by the new amount of money.",
+              "work": "\\(\\frac{2}{7} \\times 35\\)"
+            },
+            {
+              "explain": "Calculate the quantity.",
+              "work": "\\(10\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{You can buy } 10\\text{ kg of tomatoes}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If a dozen oranges costs \\(4.80, how much do \\)19 oranges cost?",
+          "options": [
+            "\\(\\$7.20\\)",
+            "\\(\\$7.40\\)",
+            "\\(\\$7.60\\)",
+            "\\(\\$7.80\\)"
+          ],
+          "answer": 2,
+          "hint": "A dozen is 12. Find the cost of 1 orange first.",
+          "solution": "1. Find the cost of \\(1\\) orange (since \\(1\\) dozen = \\(12\\) oranges):\n   \\(\\\\)4.80 \\div 12 = \\\\(0.40\\)\n2. Multiply the cost of \\(1\\) orange by \\(19\\):\n   \\(\\\\)0.40 \\times 19 = \\\\(7.60\\)",
+          "steps": [
+            {
+              "explain": "Find the cost per orange.",
+              "work": "\\(\\frac{\\$4.80}{12} = \\$0.40\\text{ per orange}\\)"
+            },
+            {
+              "explain": "Multiply by the new quantity.",
+              "work": "\\(\\$0.40 \\times 19\\)"
+            },
+            {
+              "explain": "Calculate the total cost.",
+              "work": "\\(\\$7.60\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{19 oranges cost } \\$7.60.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(450\\) g of tinned peaches contains \\(270\\) g of fruit, how much fruit will \\(800\\) g contain?",
+          "options": [
+            "\\(420\\text{ g}\\)",
+            "\\(480\\text{ g}\\)",
+            "\\(520\\text{ g}\\)",
+            "\\(540\\text{ g}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the proportion of fruit in 1 g of tin contents.",
+          "solution": "1. Find the ratio of fruit weight to total weight:\n   \\(\\frac{270}{450} = 0.6\\)\n2. Multiply the total weight (\\(800\\) g) by this ratio:\n   \\(800 \\times 0.6 = 480\\text{ g}\\)",
+          "steps": [
+            {
+              "explain": "Find the ratio of fruit to tinned peaches.",
+              "work": "\\(\\frac{270}{450} = 0.6\\)"
+            },
+            {
+              "explain": "Multiply the ratio by the new total weight.",
+              "work": "\\(0.6 \\times 800\\)"
+            },
+            {
+              "explain": "Calculate the fruit content.",
+              "work": "\\(480\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{It will contain } 480\\text{ g of fruit}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q5d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(800\\) mL of juice contains \\(128\\) g of sugar, how much sugar will \\(1.5\\) litres contain?",
+          "options": [
+            "\\(200\\text{ g}\\)",
+            "\\(240\\text{ g}\\)",
+            "\\(260\\text{ g}\\)",
+            "\\(280\\text{ g}\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert 1.5 litres to mL (1500 mL) first.",
+          "solution": "1. Convert \\(1.5\\) litres to mL:\n   \\(1.5\\text{ L} = 1500\\text{ mL}\\)\n2. Find the sugar content per mL:\n   \\(128\\text{ g} \\div 800\\text{ mL} = 0.16\\text{ g/mL}\\)\n3. Multiply by \\(1500\\) mL:\n   \\(0.16 \\times 1500 = 240\\text{ g}\\)",
+          "steps": [
+            {
+              "explain": "Find the sugar content per mL.",
+              "work": "\\(\\frac{128\\text{ g}}{800\\text{ mL}} = 0.16\\text{ g/mL}\\)"
+            },
+            {
+              "explain": "Multiply by the new volume (1.5 litres = 1500 mL).",
+              "work": "\\(0.16 \\times 1500\\)"
+            },
+            {
+              "explain": "Calculate the total sugar.",
+              "work": "\\(240\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{1.5 L contains } 240\\text{ g of sugar}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Four-fifths of an amount is 360. Find three-fifths of the amount.",
+          "options": [
+            "\\(240\\)",
+            "\\(250\\)",
+            "\\(270\\)",
+            "\\(290\\)"
+          ],
+          "answer": 2,
+          "hint": "Find one-fifth of the amount first.",
+          "solution": "1. Find one-fifth (\\(\\frac{1}{5}\\)) of the amount:\n   \\(\\\\)360 \\div 4 = \\\\(90\\)\n2. Multiply this by \\(3\\) to find three-fifths (\\(\\frac{3}{5}\\)) of the amount:\n   \\(\\\\)90 \\times 3 = \\\\(270\\)",
+          "steps": [
+            {
+              "explain": "Find one-fifth of the amount.",
+              "work": "\\(\\frac{360}{4} = 90\\)"
+            },
+            {
+              "explain": "Multiply by 3 to find three-fifths.",
+              "work": "\\(90 \\times 3\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(270\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{Three-fifths of the amount is } 270.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A worker can paint \\(18\\) panels in three-quarters of an hour. How many panels can he paint in half an hour, working at the same rate?",
+          "options": [
+            "\\(10\\)",
+            "\\(11\\)",
+            "\\(12\\)",
+            "\\(14\\)"
+          ],
+          "answer": 2,
+          "hint": "Note that three-quarters of an hour is 45 minutes, and half an hour is 30 minutes.",
+          "solution": "1. Convert times to minutes:\n   \\(\\frac{3}{4}\\text{ hour} = 45\\text{ minutes}\\)\n   \\(\\frac{1}{2}\\text{ hour} = 30\\text{ minutes}\\)\n2. Find the rate of painting per minute:\n   \\(18 \\div 45 = 0.4\\text{ panels/minute}\\)\n3. Multiply by \\(30\\) minutes:\n   \\(0.4 \\times 30 = 12\\text{ panels}\\)",
+          "steps": [
+            {
+              "explain": "Find the number of panels painted in one-quarter of an hour.",
+              "work": "\\(\\frac{18}{3} = 6\\text{ panels}\\)"
+            },
+            {
+              "explain": "Multiply by 2 for half an hour (two-quarters).",
+              "work": "\\(6 \\times 2\\)"
+            },
+            {
+              "explain": "Calculate the total panels.",
+              "work": "\\(12\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{He can paint } 12\\text{ panels}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "One-third of a volunteer group can clear \\(15\\) bags of litter in an hour. How many bags of litter could three-fifths of the group clear in the same time?",
+          "options": [
+            "\\(24\\)",
+            "\\(25\\)",
+            "\\(27\\)",
+            "\\(30\\)"
+          ],
+          "answer": 2,
+          "hint": "Find how many bags the whole group clears first.",
+          "solution": "1. Find the amount cleared by the entire group (\\(1\\) or \\(\\frac{3}{3}\\)):\n   \\(15 \\times 3 = 45\\text{ bags}\\)\n2. Find three-fifths (\\(\\frac{3}{5}\\)) of this total amount:\n   \\(45 \\times \\frac{3}{5} = 27\\text{ bags}\\)",
+          "steps": [
+            {
+              "explain": "Find how many bags one-fifteenth of the group clears (multiply by 5, divide by 3). Or find the total group's capacity.",
+              "work": "\\(\\text{Total group} = 15 \\times 3 = 45\\text{ bags}\\)"
+            },
+            {
+              "explain": "Calculate three-fifths of the total capacity.",
+              "work": "\\(\\frac{3}{5} \\times 45\\)"
+            },
+            {
+              "explain": "Perform the calculation.",
+              "work": "\\(3 \\times 9 = 27\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{They could clear } 27\\text{ bags}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q6d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "100 g of cereal contains \\(1.5\\) g of saturated fat. How much cereal contains \\(4.5\\) g of saturated fat?",
+          "options": [
+            "\\(250\\text{ g}\\)",
+            "\\(300\\text{ g}\\)",
+            "\\(350\\text{ g}\\)",
+            "\\(400\\text{ g}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the ratio between the target fat and the given fat.",
+          "solution": "1. Determine how many times greater the target fat is:\n   \\(4.5\\text{ g} \\div 1.5\\text{ g} = 3\\)\n2. Multiply the cereal weight by this factor:\n   \\(100\\text{ g} \\times 3 = 300\\text{ g}\\)",
+          "steps": [
+            {
+              "explain": "Find the multiplier for the fat content.",
+              "work": "\\(\\frac{4.5\\text{ g}}{1.5\\text{ g}} = 3\\)"
+            },
+            {
+              "explain": "Multiply the base amount of cereal by this multiplier.",
+              "work": "\\(100\\text{ g} \\times 3\\)"
+            },
+            {
+              "explain": "Calculate the total cereal.",
+              "work": "\\(300\\text{ g}\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{It takes } 300\\text{ g of cereal}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q6e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The label on a dog vitamin bottle states that \\(4.5\\) mL should be given for every kilogram of body weight. How much vitamin liquid should be given to a puppy weighing \\(3.4\\) kg?",
+          "options": [
+            "\\(13.5\\text{ mL}\\)",
+            "\\(15.3\\text{ mL}\\)",
+            "\\(16.5\\text{ mL}\\)",
+            "\\(18.2\\text{ mL}\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the dosage per kilogram by the body weight of the puppy.",
+          "solution": "Multiply the dosage by the puppy's weight:\n   \\(4.5\\text{ mL/kg} \\times 3.4\\text{ kg} = 15.3\\text{ mL}\\)",
+          "steps": [
+            {
+              "explain": "Identify the dosage per kilogram.",
+              "work": "\\(\\text{Dosage} = 4.5\\text{ mL/kg}\\)"
+            },
+            {
+              "explain": "Multiply the dosage by the puppy's weight.",
+              "work": "\\(4.5 \\times 3.4\\)"
+            },
+            {
+              "explain": "Perform the multiplication.",
+              "work": "\\(15.3\\)"
+            },
+            {
+              "explain": "State the final answer with units.",
+              "work": "\\(\\text{Give the puppy } 15.3\\text{ mL}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which is the better buy: \\(500\\) g of tinned peaches costing \\(6.50, or \\)650\\( g costing \\)8.19?",
+          "options": [
+            "\\(650\\text{ g}\\)",
+            "\\(500\\text{ g}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the cost per gram or per 100 grams for both options to compare.",
+          "solution": "1. Find the cost per \\(100\\) g of the first option:\n   \\(\\frac{\\\\)6.50}{5} = \\\\(1.30\\text{ per 100g}\\)\n2. Find the cost per \\(100\\) g of the second option:\n   \\(\\frac{\\\\)8.19}{6.5} = \\\\(1.26\\text{ per 100g}\\)\n3. Compare the costs:\n   \\(\\\\)1.26 < \\\\(1.30\\)\nTherefore, \\(650\\) g costing 8.19 is the better buy.",
+          "steps": [
+            {
+              "explain": "Calculate the cost per 100 g for the 500 g tin.",
+              "work": "\\(\\frac{\\$6.50}{5} = \\$1.30\\text{ per } 100\\text{ g}\\)"
+            },
+            {
+              "explain": "Calculate the cost per 100 g for the 650 g tin.",
+              "work": "\\(\\frac{\\$8.19}{6.5} = \\$1.26\\text{ per } 100\\text{ g}\\)"
+            },
+            {
+              "explain": "Compare the unit prices.",
+              "work": "\\(\\$1.26 < \\$1.30\\)"
+            },
+            {
+              "explain": "State the better buy.",
+              "work": "\\(\\text{The } 650\\text{ g tin is the better buy.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which is the better buy: \\(600\\) g of grapes costing \\(5.40, or \\)400\\( g costing \\)3.80?",
+          "options": [
+            "\\(600\\text{ g}\\)",
+            "\\(400\\text{ g}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the cost per 100 grams for both options.",
+          "solution": "1. Find the cost per \\(100\\) g of the first option:\n   \\(\\frac{\\\\)5.40}{6} = \\\\(0.90\\text{ per 100g}\\)\n2. Find the cost per \\(100\\) g of the second option:\n   \\(\\frac{\\\\)3.80}{4} = \\\\(0.95\\text{ per 100g}\\)\n3. Compare the costs:\n   \\(\\\\)0.90 < \\\\(0.95\\)\nTherefore, \\(600\\) g costing 5.40 is the better buy.",
+          "steps": [
+            {
+              "explain": "Calculate the cost per 100 g for the 600 g grapes.",
+              "work": "\\(\\frac{\\$5.40}{6} = \\$0.90\\text{ per } 100\\text{ g}\\)"
+            },
+            {
+              "explain": "Calculate the cost per 100 g for the 400 g grapes.",
+              "work": "\\(\\frac{\\$3.80}{4} = \\$0.95\\text{ per } 100\\text{ g}\\)"
+            },
+            {
+              "explain": "Compare the unit prices.",
+              "work": "\\(\\$0.90 < \\$0.95\\)"
+            },
+            {
+              "explain": "State the better buy.",
+              "work": "\\(\\text{The } 600\\text{ g grapes are the better buy.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which is the better buy: \\(150\\) g of toothpaste costing \\(1.80, or \\)200\\( g costing \\)2.60?",
+          "options": [
+            "\\(150\\text{ g}\\)",
+            "\\(200\\text{ g}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the cost per 50 grams or per gram for both options.",
+          "solution": "1. Find the cost per \\(50\\) g of the first option:\n   \\(\\frac{\\\\)1.80}{3} = \\\\(0.60\\text{ per 50g}\\)\n2. Find the cost per \\(50\\) g of the second option:\n   \\(\\frac{\\\\)2.60}{4} = \\\\(0.65\\text{ per 50g}\\)\n3. Compare the costs:\n   \\(\\text{First option is cheaper (\\\\)0.60 < \\\\(0.65)}\\)\nTherefore, \\(150\\) g costing 1.80 is the better buy.",
+          "steps": [
+            {
+              "explain": "Calculate the cost per 50 g for the 150 g toothpaste.",
+              "work": "\\(\\frac{\\$1.80}{3} = \\$0.60\\text{ per } 50\\text{ g}\\)"
+            },
+            {
+              "explain": "Calculate the cost per 50 g for the 200 g toothpaste.",
+              "work": "\\(\\frac{\\$2.60}{4} = \\$0.65\\text{ per } 50\\text{ g}\\)"
+            },
+            {
+              "explain": "Compare the unit prices.",
+              "work": "\\(\\$0.60 < \\$0.65\\)"
+            },
+            {
+              "explain": "State the better buy.",
+              "work": "\\(\\text{The } 150\\text{ g toothpaste is the better buy.}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10a-q8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If a box of cereal is selling on special at \\(4.20 for a \\)350\\( g packet, how much is \\)500\\( g of the cereal at this price? If there is actually a \\)500\\( g box selling for \\)5.50, which is the cheaper way to buy \\(500\\) g of cereal, and by how much?",
+          "options": [
+            "The 500 g box is cheaper by \\(\\$0.50\\)",
+            "The special packet is cheaper by \\(\\$0.50\\)",
+            "The 500 g box is cheaper by \\(\\$1.00\\)",
+            "The special packet is cheaper by \\(\\$1.00\\)"
+          ],
+          "answer": 0,
+          "hint": "First scale the cost of the 350 g packet to 500 g, then compare it to 5.50.",
+          "solution": "Buying the 500 g box for \\(5.50 is cheaper by \\)0.50 (the scaled special packet costs 6.00).",
+          "steps": [
+            {
+              "explain": "Calculate the cost of 500 g at the special rate.",
+              "work": "\\(\\frac{\\$4.20}{350} \\times 500 = \\frac{\\$4.20}{7} \\times 10 = \\$6.00\\)"
+            },
+            {
+              "explain": "Compare with the actual 500 g box.",
+              "work": "\\(\\$5.50 < \\$6.00\\)"
+            },
+            {
+              "explain": "Calculate the difference in price.",
+              "work": "\\(\\$6.00 - \\$5.50 = \\$0.50\\)"
+            },
+            {
+              "explain": "State the final conclusion.",
+              "work": "\\(\\text{The } 500\\text{ g box is cheaper by } \\$0.50.\\)"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y8-10a-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A ship has taken \\(18\\) days to travel \\(\\frac{3}{8}\\) of its journey. How much longer will it take to complete the journey?",
+          "options": [
+            "\\(28\\text{ days}\\)",
+            "\\(30\\text{ days}\\)",
+            "\\(32\\text{ days}\\)",
+            "\\(36\\text{ days}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the time taken for 1/8 of the journey first, then multiply by the remaining fraction of the journey (5/8).",
+          "solution": "1. Find the time taken to travel \\(\\frac{1}{8}\\) of the journey:\n   \\(18\\text{ days} \\div 3 = 6\\text{ days}\\)\n2. Find the remaining fraction of the journey:\n   \\(1 - \\frac{3}{8} = \\frac{5}{8}\\)\n3. Calculate the time needed for the remaining \\(\\frac{5}{8}\\):\n   \\(5 \\times 6\\text{ days} = 30\\text{ days}\\)",
+          "steps": [
+            {
+              "explain": "Find the time taken for 1/8 of the journey.",
+              "work": "\\(\\frac{18\\text{ days}}{3} = 6\\text{ days}\\)"
+            },
+            {
+              "explain": "Determine the remaining fraction of the journey.",
+              "work": "\\(1 - \\frac{3}{8} = \\frac{5}{8}\\)"
+            },
+            {
+              "explain": "Multiply the unit time by the remaining fraction parts.",
+              "work": "\\(6 \\times 5\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{It will take } 30\\text{ more days}.\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-10c",
+      "code": "10C",
+      "title": "Speed",
+      "questions": [
+        {
+          "id": "y8-ep1-q4a_graph",
+          "type": "mc",
+          "stem": "A person travelled from town A to town C, stopping at B. The distance-time graph is shown below.<br><br>How far is town B from town A?<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"400\" height=\"300\" viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Axes -->\n  <line x1=\"60\" y1=\"250\" x2=\"380\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  \n  <text x=\"220\" y=\"290\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\">Time of Day</text>\n  <text x=\"20\" y=\"140\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" transform=\"rotate(-90 20 140)\">Distance (km)</text>\n  \n  <!-- Y-axis (0 to 140, interval 20) -->\n  <!-- 7 intervals, 30px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">\n    <text x=\"50\" y=\"255\">0</text>\n    <text x=\"50\" y=\"225\">20</text>\n    <text x=\"50\" y=\"195\">40</text>\n    <text x=\"50\" y=\"165\">60</text>\n    <text x=\"50\" y=\"135\">80</text>\n    <text x=\"50\" y=\"105\">100</text>\n    <text x=\"50\" y=\"75\">120</text>\n    <text x=\"50\" y=\"45\">140</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"55\" y1=\"250\" x2=\"65\" y2=\"250\"/>\n    <line x1=\"55\" y1=\"220\" x2=\"65\" y2=\"220\"/>\n    <line x1=\"55\" y1=\"190\" x2=\"65\" y2=\"190\"/>\n    <line x1=\"55\" y1=\"160\" x2=\"65\" y2=\"160\"/>\n    <line x1=\"55\" y1=\"130\" x2=\"65\" y2=\"130\"/>\n    <line x1=\"55\" y1=\"100\" x2=\"65\" y2=\"100\"/>\n    <line x1=\"55\" y1=\"70\" x2=\"65\" y2=\"70\"/>\n    <line x1=\"55\" y1=\"40\" x2=\"65\" y2=\"40\"/>\n  </g>\n  \n  <!-- X-axis (9am to 2pm, interval 1 hr) -->\n  <!-- 5 hours, 60px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">\n    <text x=\"60\" y=\"270\">9:00</text>\n    <text x=\"120\" y=\"270\">10:00</text>\n    <text x=\"180\" y=\"270\">11:00</text>\n    <text x=\"240\" y=\"270\">12:00</text>\n    <text x=\"300\" y=\"270\">1:00</text>\n    <text x=\"360\" y=\"270\">2:00</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"60\" y1=\"245\" x2=\"60\" y2=\"255\"/>\n    <line x1=\"120\" y1=\"245\" x2=\"120\" y2=\"255\"/>\n    <line x1=\"180\" y1=\"245\" x2=\"180\" y2=\"255\"/>\n    <line x1=\"240\" y1=\"245\" x2=\"240\" y2=\"255\"/>\n    <line x1=\"300\" y1=\"245\" x2=\"300\" y2=\"255\"/>\n    <line x1=\"360\" y1=\"245\" x2=\"360\" y2=\"255\"/>\n  </g>\n  \n  <!-- Grid lines -->\n  <g stroke=\"lightgray\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\">\n    <!-- horizontal -->\n    <line x1=\"60\" y1=\"160\" x2=\"380\" y2=\"160\"/>\n    <line x1=\"60\" y1=\"40\" x2=\"380\" y2=\"40\"/>\n    <!-- vertical (half hours) -->\n    <line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"250\"/>\n    <line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"250\"/>\n    <line x1=\"330\" y1=\"30\" x2=\"330\" y2=\"250\"/>\n  </g>\n  \n  <!-- The line graph -->\n  <!-- A: (9:00, 0) -> x=60, y=250 -->\n  <!-- B start: (10:30, 60) -> x=150, y=160 -->\n  <!-- B end: (11:30, 60) -> x=210, y=160 -->\n  <!-- C: (1:30, 140) -> x=330, y=40 -->\n  <polyline points=\"60,250 150,160 210,160 330,40\" fill=\"none\" stroke=\"blue\" stroke-width=\"3\"/>\n  \n  <!-- Labels A, B, C -->\n  <text x=\"50\" y=\"240\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">A</text>\n  <text x=\"140\" y=\"150\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">B</text>\n  <text x=\"320\" y=\"30\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">C</text>\n</svg></div>",
+          "options": [
+            "\\(80\\text{ km}\\)",
+            "\\(60\\text{ km}\\)",
+            "\\(140\\text{ km}\\)",
+            "\\(40\\text{ km}\\)"
+          ],
+          "answer": 1,
+          "hint": "Look at the y-axis (Distance) for point B.",
+          "steps": [
+            {
+              "explain": "Town A is at the starting point (Distance = 0 km).",
+              "work": "<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"400\" height=\"300\" viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Axes -->\n  <line x1=\"60\" y1=\"250\" x2=\"380\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  \n  <text x=\"220\" y=\"290\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\">Time of Day</text>\n  <text x=\"20\" y=\"140\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" transform=\"rotate(-90 20 140)\">Distance (km)</text>\n  \n  <!-- Y-axis (0 to 140, interval 20) -->\n  <!-- 7 intervals, 30px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">\n    <text x=\"50\" y=\"255\">0</text>\n    <text x=\"50\" y=\"225\">20</text>\n    <text x=\"50\" y=\"195\">40</text>\n    <text x=\"50\" y=\"165\">60</text>\n    <text x=\"50\" y=\"135\">80</text>\n    <text x=\"50\" y=\"105\">100</text>\n    <text x=\"50\" y=\"75\">120</text>\n    <text x=\"50\" y=\"45\">140</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"55\" y1=\"250\" x2=\"65\" y2=\"250\"/>\n    <line x1=\"55\" y1=\"220\" x2=\"65\" y2=\"220\"/>\n    <line x1=\"55\" y1=\"190\" x2=\"65\" y2=\"190\"/>\n    <line x1=\"55\" y1=\"160\" x2=\"65\" y2=\"160\"/>\n    <line x1=\"55\" y1=\"130\" x2=\"65\" y2=\"130\"/>\n    <line x1=\"55\" y1=\"100\" x2=\"65\" y2=\"100\"/>\n    <line x1=\"55\" y1=\"70\" x2=\"65\" y2=\"70\"/>\n    <line x1=\"55\" y1=\"40\" x2=\"65\" y2=\"40\"/>\n  </g>\n  \n  <!-- X-axis (9am to 2pm, interval 1 hr) -->\n  <!-- 5 hours, 60px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">\n    <text x=\"60\" y=\"270\">9:00</text>\n    <text x=\"120\" y=\"270\">10:00</text>\n    <text x=\"180\" y=\"270\">11:00</text>\n    <text x=\"240\" y=\"270\">12:00</text>\n    <text x=\"300\" y=\"270\">1:00</text>\n    <text x=\"360\" y=\"270\">2:00</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"60\" y1=\"245\" x2=\"60\" y2=\"255\"/>\n    <line x1=\"120\" y1=\"245\" x2=\"120\" y2=\"255\"/>\n    <line x1=\"180\" y1=\"245\" x2=\"180\" y2=\"255\"/>\n    <line x1=\"240\" y1=\"245\" x2=\"240\" y2=\"255\"/>\n    <line x1=\"300\" y1=\"245\" x2=\"300\" y2=\"255\"/>\n    <line x1=\"360\" y1=\"245\" x2=\"360\" y2=\"255\"/>\n  </g>\n  \n  <!-- Grid lines -->\n  <g stroke=\"lightgray\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\">\n    <!-- horizontal -->\n    <line x1=\"60\" y1=\"160\" x2=\"380\" y2=\"160\"/>\n    <line x1=\"60\" y1=\"40\" x2=\"380\" y2=\"40\"/>\n    <!-- vertical (half hours) -->\n    <line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"250\"/>\n    <line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"250\"/>\n    <line x1=\"330\" y1=\"30\" x2=\"330\" y2=\"250\"/>\n  </g>\n  \n  <!-- The line graph -->\n  <!-- A: (9:00, 0) -> x=60, y=250 -->\n  <!-- B start: (10:30, 60) -> x=150, y=160 -->\n  <!-- B end: (11:30, 60) -> x=210, y=160 -->\n  <!-- C: (1:30, 140) -> x=330, y=40 -->\n  <polyline points=\"60,250 150,160 210,160 330,40\" fill=\"none\" stroke=\"blue\" stroke-width=\"3\"/>\n  \n  <!-- Labels A, B, C -->\n  <text x=\"50\" y=\"240\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">A</text>\n  <text x=\"140\" y=\"150\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">B</text>\n  <text x=\"320\" y=\"30\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">C</text>\n\n  <!-- Step visual -->\n  <line x1=\"55\" y1=\"160\" x2=\"150\" y2=\"160\" stroke=\"red\" stroke-width=\"3\" stroke-dasharray=\"5,5\"/>\n  <circle cx=\"150\" cy=\"160\" r=\"5\" fill=\"red\"/>\n  <rect x=\"25\" y=\"150\" width=\"35\" height=\"20\" fill=\"yellow\" opacity=\"0.5\"/>\n  <text x=\"42\" y=\"165\" font-family=\"sans-serif\" font-size=\"14\" fill=\"red\" font-weight=\"bold\" text-anchor=\"middle\">60</text>\n\n</svg></div><br>"
+            },
+            {
+              "explain": "Town B is represented by the horizontal section of the graph (where distance doesn't change)."
+            },
+            {
+              "explain": "Looking at the y-axis, the horizontal section is at a distance of 60 km."
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q4b_graph",
+          "type": "mc",
+          "stem": "A person travelled from town A to town C, stopping at B. The distance-time graph is shown below.<br><br>How long did it take to travel from town A to town B?<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"400\" height=\"300\" viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Axes -->\n  <line x1=\"60\" y1=\"250\" x2=\"380\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  \n  <text x=\"220\" y=\"290\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\">Time of Day</text>\n  <text x=\"20\" y=\"140\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" transform=\"rotate(-90 20 140)\">Distance (km)</text>\n  \n  <!-- Y-axis (0 to 140, interval 20) -->\n  <!-- 7 intervals, 30px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">\n    <text x=\"50\" y=\"255\">0</text>\n    <text x=\"50\" y=\"225\">20</text>\n    <text x=\"50\" y=\"195\">40</text>\n    <text x=\"50\" y=\"165\">60</text>\n    <text x=\"50\" y=\"135\">80</text>\n    <text x=\"50\" y=\"105\">100</text>\n    <text x=\"50\" y=\"75\">120</text>\n    <text x=\"50\" y=\"45\">140</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"55\" y1=\"250\" x2=\"65\" y2=\"250\"/>\n    <line x1=\"55\" y1=\"220\" x2=\"65\" y2=\"220\"/>\n    <line x1=\"55\" y1=\"190\" x2=\"65\" y2=\"190\"/>\n    <line x1=\"55\" y1=\"160\" x2=\"65\" y2=\"160\"/>\n    <line x1=\"55\" y1=\"130\" x2=\"65\" y2=\"130\"/>\n    <line x1=\"55\" y1=\"100\" x2=\"65\" y2=\"100\"/>\n    <line x1=\"55\" y1=\"70\" x2=\"65\" y2=\"70\"/>\n    <line x1=\"55\" y1=\"40\" x2=\"65\" y2=\"40\"/>\n  </g>\n  \n  <!-- X-axis (9am to 2pm, interval 1 hr) -->\n  <!-- 5 hours, 60px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">\n    <text x=\"60\" y=\"270\">9:00</text>\n    <text x=\"120\" y=\"270\">10:00</text>\n    <text x=\"180\" y=\"270\">11:00</text>\n    <text x=\"240\" y=\"270\">12:00</text>\n    <text x=\"300\" y=\"270\">1:00</text>\n    <text x=\"360\" y=\"270\">2:00</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"60\" y1=\"245\" x2=\"60\" y2=\"255\"/>\n    <line x1=\"120\" y1=\"245\" x2=\"120\" y2=\"255\"/>\n    <line x1=\"180\" y1=\"245\" x2=\"180\" y2=\"255\"/>\n    <line x1=\"240\" y1=\"245\" x2=\"240\" y2=\"255\"/>\n    <line x1=\"300\" y1=\"245\" x2=\"300\" y2=\"255\"/>\n    <line x1=\"360\" y1=\"245\" x2=\"360\" y2=\"255\"/>\n  </g>\n  \n  <!-- Grid lines -->\n  <g stroke=\"lightgray\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\">\n    <!-- horizontal -->\n    <line x1=\"60\" y1=\"160\" x2=\"380\" y2=\"160\"/>\n    <line x1=\"60\" y1=\"40\" x2=\"380\" y2=\"40\"/>\n    <!-- vertical (half hours) -->\n    <line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"250\"/>\n    <line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"250\"/>\n    <line x1=\"330\" y1=\"30\" x2=\"330\" y2=\"250\"/>\n  </g>\n  \n  <!-- The line graph -->\n  <!-- A: (9:00, 0) -> x=60, y=250 -->\n  <!-- B start: (10:30, 60) -> x=150, y=160 -->\n  <!-- B end: (11:30, 60) -> x=210, y=160 -->\n  <!-- C: (1:30, 140) -> x=330, y=40 -->\n  <polyline points=\"60,250 150,160 210,160 330,40\" fill=\"none\" stroke=\"blue\" stroke-width=\"3\"/>\n  \n  <!-- Labels A, B, C -->\n  <text x=\"50\" y=\"240\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">A</text>\n  <text x=\"140\" y=\"150\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">B</text>\n  <text x=\"320\" y=\"30\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">C</text>\n</svg></div>",
+          "options": [
+            "\\(1\\text{ hour and } 30\\text{ minutes}\\)",
+            "\\(2\\text{ hours}\\)",
+            "\\(30\\text{ minutes}\\)",
+            "\\(1\\text{ hour}\\)"
+          ],
+          "answer": 0,
+          "hint": "Look at the x-axis (Time) for when the journey started and when they reached B.",
+          "steps": [
+            {
+              "explain": "The journey starts at A at 9:00 am.",
+              "work": "<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"400\" height=\"300\" viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Axes -->\n  <line x1=\"60\" y1=\"250\" x2=\"380\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  \n  <text x=\"220\" y=\"290\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\">Time of Day</text>\n  <text x=\"20\" y=\"140\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" transform=\"rotate(-90 20 140)\">Distance (km)</text>\n  \n  <!-- Y-axis (0 to 140, interval 20) -->\n  <!-- 7 intervals, 30px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">\n    <text x=\"50\" y=\"255\">0</text>\n    <text x=\"50\" y=\"225\">20</text>\n    <text x=\"50\" y=\"195\">40</text>\n    <text x=\"50\" y=\"165\">60</text>\n    <text x=\"50\" y=\"135\">80</text>\n    <text x=\"50\" y=\"105\">100</text>\n    <text x=\"50\" y=\"75\">120</text>\n    <text x=\"50\" y=\"45\">140</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"55\" y1=\"250\" x2=\"65\" y2=\"250\"/>\n    <line x1=\"55\" y1=\"220\" x2=\"65\" y2=\"220\"/>\n    <line x1=\"55\" y1=\"190\" x2=\"65\" y2=\"190\"/>\n    <line x1=\"55\" y1=\"160\" x2=\"65\" y2=\"160\"/>\n    <line x1=\"55\" y1=\"130\" x2=\"65\" y2=\"130\"/>\n    <line x1=\"55\" y1=\"100\" x2=\"65\" y2=\"100\"/>\n    <line x1=\"55\" y1=\"70\" x2=\"65\" y2=\"70\"/>\n    <line x1=\"55\" y1=\"40\" x2=\"65\" y2=\"40\"/>\n  </g>\n  \n  <!-- X-axis (9am to 2pm, interval 1 hr) -->\n  <!-- 5 hours, 60px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">\n    <text x=\"60\" y=\"270\">9:00</text>\n    <text x=\"120\" y=\"270\">10:00</text>\n    <text x=\"180\" y=\"270\">11:00</text>\n    <text x=\"240\" y=\"270\">12:00</text>\n    <text x=\"300\" y=\"270\">1:00</text>\n    <text x=\"360\" y=\"270\">2:00</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"60\" y1=\"245\" x2=\"60\" y2=\"255\"/>\n    <line x1=\"120\" y1=\"245\" x2=\"120\" y2=\"255\"/>\n    <line x1=\"180\" y1=\"245\" x2=\"180\" y2=\"255\"/>\n    <line x1=\"240\" y1=\"245\" x2=\"240\" y2=\"255\"/>\n    <line x1=\"300\" y1=\"245\" x2=\"300\" y2=\"255\"/>\n    <line x1=\"360\" y1=\"245\" x2=\"360\" y2=\"255\"/>\n  </g>\n  \n  <!-- Grid lines -->\n  <g stroke=\"lightgray\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\">\n    <!-- horizontal -->\n    <line x1=\"60\" y1=\"160\" x2=\"380\" y2=\"160\"/>\n    <line x1=\"60\" y1=\"40\" x2=\"380\" y2=\"40\"/>\n    <!-- vertical (half hours) -->\n    <line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"250\"/>\n    <line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"250\"/>\n    <line x1=\"330\" y1=\"30\" x2=\"330\" y2=\"250\"/>\n  </g>\n  \n  <!-- The line graph -->\n  <!-- A: (9:00, 0) -> x=60, y=250 -->\n  <!-- B start: (10:30, 60) -> x=150, y=160 -->\n  <!-- B end: (11:30, 60) -> x=210, y=160 -->\n  <!-- C: (1:30, 140) -> x=330, y=40 -->\n  <polyline points=\"60,250 150,160 210,160 330,40\" fill=\"none\" stroke=\"blue\" stroke-width=\"3\"/>\n  \n  <!-- Labels A, B, C -->\n  <text x=\"50\" y=\"240\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">A</text>\n  <text x=\"140\" y=\"150\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">B</text>\n  <text x=\"320\" y=\"30\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">C</text>\n\n  <!-- Step visual -->\n  <line x1=\"60\" y1=\"250\" x2=\"150\" y2=\"160\" stroke=\"red\" stroke-width=\"4\"/>\n  <line x1=\"150\" y1=\"160\" x2=\"150\" y2=\"250\" stroke=\"red\" stroke-width=\"3\" stroke-dasharray=\"5,5\"/>\n  <rect x=\"40\" y=\"255\" width=\"40\" height=\"20\" fill=\"yellow\" opacity=\"0.5\"/>\n  <rect x=\"130\" y=\"255\" width=\"40\" height=\"20\" fill=\"yellow\" opacity=\"0.5\"/>\n  <text x=\"150\" y=\"270\" font-family=\"sans-serif\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\" font-weight=\"bold\">10:30</text>\n  <text x=\"60\" y=\"270\" font-family=\"sans-serif\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\" font-weight=\"bold\">9:00</text>\n\n</svg></div><br>"
+            },
+            {
+              "explain": "The person arrives at town B when the graph becomes horizontal. This happens exactly halfway between 10:00 am and 11:00 am.",
+              "work": "\\(\\text{Time of arrival} = 10:30\\text{ am}\\)"
+            },
+            {
+              "explain": "Calculate the difference in time.",
+              "work": "From 9:00 am to 10:30 am is 1 hour and 30 minutes."
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q4c_graph",
+          "type": "mc",
+          "stem": "A person travelled from town A to town C, stopping at B. The distance-time graph is shown below.<br><br>How long was the stop at town B?<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"400\" height=\"300\" viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Axes -->\n  <line x1=\"60\" y1=\"250\" x2=\"380\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  \n  <text x=\"220\" y=\"290\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\">Time of Day</text>\n  <text x=\"20\" y=\"140\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" transform=\"rotate(-90 20 140)\">Distance (km)</text>\n  \n  <!-- Y-axis (0 to 140, interval 20) -->\n  <!-- 7 intervals, 30px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">\n    <text x=\"50\" y=\"255\">0</text>\n    <text x=\"50\" y=\"225\">20</text>\n    <text x=\"50\" y=\"195\">40</text>\n    <text x=\"50\" y=\"165\">60</text>\n    <text x=\"50\" y=\"135\">80</text>\n    <text x=\"50\" y=\"105\">100</text>\n    <text x=\"50\" y=\"75\">120</text>\n    <text x=\"50\" y=\"45\">140</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"55\" y1=\"250\" x2=\"65\" y2=\"250\"/>\n    <line x1=\"55\" y1=\"220\" x2=\"65\" y2=\"220\"/>\n    <line x1=\"55\" y1=\"190\" x2=\"65\" y2=\"190\"/>\n    <line x1=\"55\" y1=\"160\" x2=\"65\" y2=\"160\"/>\n    <line x1=\"55\" y1=\"130\" x2=\"65\" y2=\"130\"/>\n    <line x1=\"55\" y1=\"100\" x2=\"65\" y2=\"100\"/>\n    <line x1=\"55\" y1=\"70\" x2=\"65\" y2=\"70\"/>\n    <line x1=\"55\" y1=\"40\" x2=\"65\" y2=\"40\"/>\n  </g>\n  \n  <!-- X-axis (9am to 2pm, interval 1 hr) -->\n  <!-- 5 hours, 60px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">\n    <text x=\"60\" y=\"270\">9:00</text>\n    <text x=\"120\" y=\"270\">10:00</text>\n    <text x=\"180\" y=\"270\">11:00</text>\n    <text x=\"240\" y=\"270\">12:00</text>\n    <text x=\"300\" y=\"270\">1:00</text>\n    <text x=\"360\" y=\"270\">2:00</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"60\" y1=\"245\" x2=\"60\" y2=\"255\"/>\n    <line x1=\"120\" y1=\"245\" x2=\"120\" y2=\"255\"/>\n    <line x1=\"180\" y1=\"245\" x2=\"180\" y2=\"255\"/>\n    <line x1=\"240\" y1=\"245\" x2=\"240\" y2=\"255\"/>\n    <line x1=\"300\" y1=\"245\" x2=\"300\" y2=\"255\"/>\n    <line x1=\"360\" y1=\"245\" x2=\"360\" y2=\"255\"/>\n  </g>\n  \n  <!-- Grid lines -->\n  <g stroke=\"lightgray\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\">\n    <!-- horizontal -->\n    <line x1=\"60\" y1=\"160\" x2=\"380\" y2=\"160\"/>\n    <line x1=\"60\" y1=\"40\" x2=\"380\" y2=\"40\"/>\n    <!-- vertical (half hours) -->\n    <line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"250\"/>\n    <line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"250\"/>\n    <line x1=\"330\" y1=\"30\" x2=\"330\" y2=\"250\"/>\n  </g>\n  \n  <!-- The line graph -->\n  <!-- A: (9:00, 0) -> x=60, y=250 -->\n  <!-- B start: (10:30, 60) -> x=150, y=160 -->\n  <!-- B end: (11:30, 60) -> x=210, y=160 -->\n  <!-- C: (1:30, 140) -> x=330, y=40 -->\n  <polyline points=\"60,250 150,160 210,160 330,40\" fill=\"none\" stroke=\"blue\" stroke-width=\"3\"/>\n  \n  <!-- Labels A, B, C -->\n  <text x=\"50\" y=\"240\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">A</text>\n  <text x=\"140\" y=\"150\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">B</text>\n  <text x=\"320\" y=\"30\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">C</text>\n</svg></div>",
+          "options": [
+            "\\(2\\text{ hours}\\)",
+            "\\(1\\text{ hour}\\)",
+            "\\(30\\text{ minutes}\\)",
+            "\\(1\\text{ hour and } 30\\text{ minutes}\\)"
+          ],
+          "answer": 1,
+          "hint": "The stop is the horizontal section of the graph. Calculate the time from the start to the end of this section.",
+          "steps": [
+            {
+              "explain": "The stop begins when the person reaches B at 10:30 am.",
+              "work": "<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"400\" height=\"300\" viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Axes -->\n  <line x1=\"60\" y1=\"250\" x2=\"380\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  \n  <text x=\"220\" y=\"290\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\">Time of Day</text>\n  <text x=\"20\" y=\"140\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" transform=\"rotate(-90 20 140)\">Distance (km)</text>\n  \n  <!-- Y-axis (0 to 140, interval 20) -->\n  <!-- 7 intervals, 30px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">\n    <text x=\"50\" y=\"255\">0</text>\n    <text x=\"50\" y=\"225\">20</text>\n    <text x=\"50\" y=\"195\">40</text>\n    <text x=\"50\" y=\"165\">60</text>\n    <text x=\"50\" y=\"135\">80</text>\n    <text x=\"50\" y=\"105\">100</text>\n    <text x=\"50\" y=\"75\">120</text>\n    <text x=\"50\" y=\"45\">140</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"55\" y1=\"250\" x2=\"65\" y2=\"250\"/>\n    <line x1=\"55\" y1=\"220\" x2=\"65\" y2=\"220\"/>\n    <line x1=\"55\" y1=\"190\" x2=\"65\" y2=\"190\"/>\n    <line x1=\"55\" y1=\"160\" x2=\"65\" y2=\"160\"/>\n    <line x1=\"55\" y1=\"130\" x2=\"65\" y2=\"130\"/>\n    <line x1=\"55\" y1=\"100\" x2=\"65\" y2=\"100\"/>\n    <line x1=\"55\" y1=\"70\" x2=\"65\" y2=\"70\"/>\n    <line x1=\"55\" y1=\"40\" x2=\"65\" y2=\"40\"/>\n  </g>\n  \n  <!-- X-axis (9am to 2pm, interval 1 hr) -->\n  <!-- 5 hours, 60px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">\n    <text x=\"60\" y=\"270\">9:00</text>\n    <text x=\"120\" y=\"270\">10:00</text>\n    <text x=\"180\" y=\"270\">11:00</text>\n    <text x=\"240\" y=\"270\">12:00</text>\n    <text x=\"300\" y=\"270\">1:00</text>\n    <text x=\"360\" y=\"270\">2:00</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"60\" y1=\"245\" x2=\"60\" y2=\"255\"/>\n    <line x1=\"120\" y1=\"245\" x2=\"120\" y2=\"255\"/>\n    <line x1=\"180\" y1=\"245\" x2=\"180\" y2=\"255\"/>\n    <line x1=\"240\" y1=\"245\" x2=\"240\" y2=\"255\"/>\n    <line x1=\"300\" y1=\"245\" x2=\"300\" y2=\"255\"/>\n    <line x1=\"360\" y1=\"245\" x2=\"360\" y2=\"255\"/>\n  </g>\n  \n  <!-- Grid lines -->\n  <g stroke=\"lightgray\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\">\n    <!-- horizontal -->\n    <line x1=\"60\" y1=\"160\" x2=\"380\" y2=\"160\"/>\n    <line x1=\"60\" y1=\"40\" x2=\"380\" y2=\"40\"/>\n    <!-- vertical (half hours) -->\n    <line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"250\"/>\n    <line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"250\"/>\n    <line x1=\"330\" y1=\"30\" x2=\"330\" y2=\"250\"/>\n  </g>\n  \n  <!-- The line graph -->\n  <!-- A: (9:00, 0) -> x=60, y=250 -->\n  <!-- B start: (10:30, 60) -> x=150, y=160 -->\n  <!-- B end: (11:30, 60) -> x=210, y=160 -->\n  <!-- C: (1:30, 140) -> x=330, y=40 -->\n  <polyline points=\"60,250 150,160 210,160 330,40\" fill=\"none\" stroke=\"blue\" stroke-width=\"3\"/>\n  \n  <!-- Labels A, B, C -->\n  <text x=\"50\" y=\"240\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">A</text>\n  <text x=\"140\" y=\"150\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">B</text>\n  <text x=\"320\" y=\"30\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">C</text>\n\n  <!-- Step visual -->\n  <line x1=\"150\" y1=\"160\" x2=\"210\" y2=\"160\" stroke=\"red\" stroke-width=\"4\"/>\n  <line x1=\"150\" y1=\"160\" x2=\"150\" y2=\"250\" stroke=\"red\" stroke-width=\"3\" stroke-dasharray=\"5,5\"/>\n  <line x1=\"210\" y1=\"160\" x2=\"210\" y2=\"250\" stroke=\"red\" stroke-width=\"3\" stroke-dasharray=\"5,5\"/>\n  <rect x=\"130\" y=\"255\" width=\"40\" height=\"20\" fill=\"yellow\" opacity=\"0.5\"/>\n  <rect x=\"190\" y=\"255\" width=\"40\" height=\"20\" fill=\"yellow\" opacity=\"0.5\"/>\n  <text x=\"150\" y=\"270\" font-family=\"sans-serif\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\" font-weight=\"bold\">10:30</text>\n  <text x=\"210\" y=\"270\" font-family=\"sans-serif\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\" font-weight=\"bold\">11:30</text>\n\n</svg></div><br>"
+            },
+            {
+              "explain": "The stop ends when they start moving again, which is exactly halfway between 11:00 am and 12:00 pm.",
+              "work": "\\(\\text{End of stop} = 11:30\\text{ am}\\)"
+            },
+            {
+              "explain": "Calculate the difference.",
+              "work": "From 10:30 am to 11:30 am is exactly 1 hour."
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q4d_graph",
+          "type": "mc",
+          "stem": "A person travelled from town A to town C, stopping at B. The distance-time graph is shown below.<br><br>Calculate the average speed of the vehicle from B to C in km/h.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"400\" height=\"300\" viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Axes -->\n  <line x1=\"60\" y1=\"250\" x2=\"380\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  \n  <text x=\"220\" y=\"290\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\">Time of Day</text>\n  <text x=\"20\" y=\"140\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" transform=\"rotate(-90 20 140)\">Distance (km)</text>\n  \n  <!-- Y-axis (0 to 140, interval 20) -->\n  <!-- 7 intervals, 30px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">\n    <text x=\"50\" y=\"255\">0</text>\n    <text x=\"50\" y=\"225\">20</text>\n    <text x=\"50\" y=\"195\">40</text>\n    <text x=\"50\" y=\"165\">60</text>\n    <text x=\"50\" y=\"135\">80</text>\n    <text x=\"50\" y=\"105\">100</text>\n    <text x=\"50\" y=\"75\">120</text>\n    <text x=\"50\" y=\"45\">140</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"55\" y1=\"250\" x2=\"65\" y2=\"250\"/>\n    <line x1=\"55\" y1=\"220\" x2=\"65\" y2=\"220\"/>\n    <line x1=\"55\" y1=\"190\" x2=\"65\" y2=\"190\"/>\n    <line x1=\"55\" y1=\"160\" x2=\"65\" y2=\"160\"/>\n    <line x1=\"55\" y1=\"130\" x2=\"65\" y2=\"130\"/>\n    <line x1=\"55\" y1=\"100\" x2=\"65\" y2=\"100\"/>\n    <line x1=\"55\" y1=\"70\" x2=\"65\" y2=\"70\"/>\n    <line x1=\"55\" y1=\"40\" x2=\"65\" y2=\"40\"/>\n  </g>\n  \n  <!-- X-axis (9am to 2pm, interval 1 hr) -->\n  <!-- 5 hours, 60px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">\n    <text x=\"60\" y=\"270\">9:00</text>\n    <text x=\"120\" y=\"270\">10:00</text>\n    <text x=\"180\" y=\"270\">11:00</text>\n    <text x=\"240\" y=\"270\">12:00</text>\n    <text x=\"300\" y=\"270\">1:00</text>\n    <text x=\"360\" y=\"270\">2:00</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"60\" y1=\"245\" x2=\"60\" y2=\"255\"/>\n    <line x1=\"120\" y1=\"245\" x2=\"120\" y2=\"255\"/>\n    <line x1=\"180\" y1=\"245\" x2=\"180\" y2=\"255\"/>\n    <line x1=\"240\" y1=\"245\" x2=\"240\" y2=\"255\"/>\n    <line x1=\"300\" y1=\"245\" x2=\"300\" y2=\"255\"/>\n    <line x1=\"360\" y1=\"245\" x2=\"360\" y2=\"255\"/>\n  </g>\n  \n  <!-- Grid lines -->\n  <g stroke=\"lightgray\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\">\n    <!-- horizontal -->\n    <line x1=\"60\" y1=\"160\" x2=\"380\" y2=\"160\"/>\n    <line x1=\"60\" y1=\"40\" x2=\"380\" y2=\"40\"/>\n    <!-- vertical (half hours) -->\n    <line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"250\"/>\n    <line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"250\"/>\n    <line x1=\"330\" y1=\"30\" x2=\"330\" y2=\"250\"/>\n  </g>\n  \n  <!-- The line graph -->\n  <!-- A: (9:00, 0) -> x=60, y=250 -->\n  <!-- B start: (10:30, 60) -> x=150, y=160 -->\n  <!-- B end: (11:30, 60) -> x=210, y=160 -->\n  <!-- C: (1:30, 140) -> x=330, y=40 -->\n  <polyline points=\"60,250 150,160 210,160 330,40\" fill=\"none\" stroke=\"blue\" stroke-width=\"3\"/>\n  \n  <!-- Labels A, B, C -->\n  <text x=\"50\" y=\"240\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">A</text>\n  <text x=\"140\" y=\"150\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">B</text>\n  <text x=\"320\" y=\"30\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">C</text>\n</svg></div>",
+          "options": [
+            "\\(140\\text{ km/h}\\)",
+            "\\(80\\text{ km/h}\\)",
+            "\\(40\\text{ km/h}\\)",
+            "\\(53.3\\text{ km/h}\\)"
+          ],
+          "answer": 2,
+          "hint": "Speed = Distance ÷ Time. Find the distance travelled between B and C, and the time it took.",
+          "steps": [
+            {
+              "explain": "First, find the distance travelled from B to C.",
+              "work": "<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"400\" height=\"300\" viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Axes -->\n  <line x1=\"60\" y1=\"250\" x2=\"380\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"60\" y1=\"30\" x2=\"60\" y2=\"250\" stroke=\"black\" stroke-width=\"2\"/>\n  \n  <text x=\"220\" y=\"290\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\">Time of Day</text>\n  <text x=\"20\" y=\"140\" font-family=\"sans-serif\" font-size=\"14\" text-anchor=\"middle\" transform=\"rotate(-90 20 140)\">Distance (km)</text>\n  \n  <!-- Y-axis (0 to 140, interval 20) -->\n  <!-- 7 intervals, 30px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"end\">\n    <text x=\"50\" y=\"255\">0</text>\n    <text x=\"50\" y=\"225\">20</text>\n    <text x=\"50\" y=\"195\">40</text>\n    <text x=\"50\" y=\"165\">60</text>\n    <text x=\"50\" y=\"135\">80</text>\n    <text x=\"50\" y=\"105\">100</text>\n    <text x=\"50\" y=\"75\">120</text>\n    <text x=\"50\" y=\"45\">140</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"55\" y1=\"250\" x2=\"65\" y2=\"250\"/>\n    <line x1=\"55\" y1=\"220\" x2=\"65\" y2=\"220\"/>\n    <line x1=\"55\" y1=\"190\" x2=\"65\" y2=\"190\"/>\n    <line x1=\"55\" y1=\"160\" x2=\"65\" y2=\"160\"/>\n    <line x1=\"55\" y1=\"130\" x2=\"65\" y2=\"130\"/>\n    <line x1=\"55\" y1=\"100\" x2=\"65\" y2=\"100\"/>\n    <line x1=\"55\" y1=\"70\" x2=\"65\" y2=\"70\"/>\n    <line x1=\"55\" y1=\"40\" x2=\"65\" y2=\"40\"/>\n  </g>\n  \n  <!-- X-axis (9am to 2pm, interval 1 hr) -->\n  <!-- 5 hours, 60px each -->\n  <g font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">\n    <text x=\"60\" y=\"270\">9:00</text>\n    <text x=\"120\" y=\"270\">10:00</text>\n    <text x=\"180\" y=\"270\">11:00</text>\n    <text x=\"240\" y=\"270\">12:00</text>\n    <text x=\"300\" y=\"270\">1:00</text>\n    <text x=\"360\" y=\"270\">2:00</text>\n  </g>\n  <g stroke=\"black\" stroke-width=\"1\">\n    <line x1=\"60\" y1=\"245\" x2=\"60\" y2=\"255\"/>\n    <line x1=\"120\" y1=\"245\" x2=\"120\" y2=\"255\"/>\n    <line x1=\"180\" y1=\"245\" x2=\"180\" y2=\"255\"/>\n    <line x1=\"240\" y1=\"245\" x2=\"240\" y2=\"255\"/>\n    <line x1=\"300\" y1=\"245\" x2=\"300\" y2=\"255\"/>\n    <line x1=\"360\" y1=\"245\" x2=\"360\" y2=\"255\"/>\n  </g>\n  \n  <!-- Grid lines -->\n  <g stroke=\"lightgray\" stroke-width=\"0.5\" stroke-dasharray=\"2,2\">\n    <!-- horizontal -->\n    <line x1=\"60\" y1=\"160\" x2=\"380\" y2=\"160\"/>\n    <line x1=\"60\" y1=\"40\" x2=\"380\" y2=\"40\"/>\n    <!-- vertical (half hours) -->\n    <line x1=\"150\" y1=\"30\" x2=\"150\" y2=\"250\"/>\n    <line x1=\"210\" y1=\"30\" x2=\"210\" y2=\"250\"/>\n    <line x1=\"330\" y1=\"30\" x2=\"330\" y2=\"250\"/>\n  </g>\n  \n  <!-- The line graph -->\n  <!-- A: (9:00, 0) -> x=60, y=250 -->\n  <!-- B start: (10:30, 60) -> x=150, y=160 -->\n  <!-- B end: (11:30, 60) -> x=210, y=160 -->\n  <!-- C: (1:30, 140) -> x=330, y=40 -->\n  <polyline points=\"60,250 150,160 210,160 330,40\" fill=\"none\" stroke=\"blue\" stroke-width=\"3\"/>\n  \n  <!-- Labels A, B, C -->\n  <text x=\"50\" y=\"240\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">A</text>\n  <text x=\"140\" y=\"150\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">B</text>\n  <text x=\"320\" y=\"30\" font-family=\"sans-serif\" font-size=\"14\" font-weight=\"bold\" fill=\"blue\">C</text>\n\n  <!-- Step visual -->\n  <line x1=\"210\" y1=\"160\" x2=\"330\" y2=\"40\" stroke=\"red\" stroke-width=\"4\"/>\n  <line x1=\"210\" y1=\"160\" x2=\"210\" y2=\"250\" stroke=\"red\" stroke-width=\"2\" stroke-dasharray=\"5,5\"/>\n  <line x1=\"330\" y1=\"40\" x2=\"330\" y2=\"250\" stroke=\"red\" stroke-width=\"2\" stroke-dasharray=\"5,5\"/>\n  <line x1=\"210\" y1=\"160\" x2=\"60\" y2=\"160\" stroke=\"green\" stroke-width=\"2\" stroke-dasharray=\"5,5\"/>\n  <line x1=\"330\" y1=\"40\" x2=\"60\" y2=\"40\" stroke=\"green\" stroke-width=\"2\" stroke-dasharray=\"5,5\"/>\n  \n  <rect x=\"190\" y=\"255\" width=\"40\" height=\"20\" fill=\"yellow\" opacity=\"0.5\"/>\n  <rect x=\"310\" y=\"255\" width=\"40\" height=\"20\" fill=\"yellow\" opacity=\"0.5\"/>\n  <text x=\"210\" y=\"270\" font-family=\"sans-serif\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\" font-weight=\"bold\">11:30</text>\n  <text x=\"330\" y=\"270\" font-family=\"sans-serif\" font-size=\"12\" fill=\"red\" text-anchor=\"middle\" font-weight=\"bold\">1:30</text>\n  \n  <rect x=\"25\" y=\"150\" width=\"30\" height=\"20\" fill=\"lightgreen\" opacity=\"0.5\"/>\n  <rect x=\"25\" y=\"30\" width=\"30\" height=\"20\" fill=\"lightgreen\" opacity=\"0.5\"/>\n  <text x=\"40\" y=\"165\" font-family=\"sans-serif\" font-size=\"14\" fill=\"green\" font-weight=\"bold\" text-anchor=\"middle\">60</text>\n  <text x=\"40\" y=\"45\" font-family=\"sans-serif\" font-size=\"14\" fill=\"green\" font-weight=\"bold\" text-anchor=\"middle\">140</text>\n\n</svg></div><br>Town B is at 60 km. Town C is at 140 km.<br>\\(\\text{Distance} = 140 - 60 = 80\\text{ km}\\)"
+            },
+            {
+              "explain": "Next, find the time taken to travel from B to C.",
+              "work": "Departure from B is at 11:30 am. Arrival at C is exactly halfway between 1:00 pm and 2:00 pm, which is 1:30 pm."
+            },
+            {
+              "explain": "Calculate the time difference.",
+              "work": "From 11:30 am to 1:30 pm is exactly 2 hours."
+            },
+            {
+              "explain": "Calculate the average speed.",
+              "work": "\\(\\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} = \\frac{80}{2} = 40\\text{ km/h}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-10d",
+      "code": "10D",
+      "title": "Ratios",
+      "questions": [
+        {
+          "id": "y8-ep1-q1_ratio",
+          "type": "mc",
+          "stem": "Write the ratio \\(3.5\\text{kg} : 4.2\\text{kg}\\) in its simplest form.",
+          "options": [
+            "\\(6 : 5\\)",
+            "\\(35 : 42\\)",
+            "\\(7 : 8\\)",
+            "\\(5 : 6\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply both sides by 10 to remove the decimals, then simplify.",
+          "steps": [
+            {
+              "explain": "First, write the ratio without units, as they are the same.",
+              "work": "\\(3.5 : 4.2\\)"
+            },
+            {
+              "explain": "Multiply both sides by 10 to get whole numbers.",
+              "work": "\\(35 : 42\\)"
+            },
+            {
+              "explain": "Divide both numbers by their highest common factor, which is 7.",
+              "work": "\\(35 \\div 7 = 5\\)<br>\\(42 \\div 7 = 6\\)"
+            },
+            {
+              "explain": "The simplified ratio is \\(5 : 6\\)."
+            }
+          ]
+        },
+        {
+          "id": "y8-ep1-q2_ratio",
+          "type": "mc",
+          "stem": "Write the ratio \\(40\\text{c}\\) to \\(\\$2.00\\) in simplest form.",
+          "options": [
+            "\\(40 : 2\\)",
+            "\\(1 : 50\\)",
+            "\\(4 : 20\\)",
+            "\\(1 : 5\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert both amounts to the same unit (e.g., cents) before simplifying.",
+          "steps": [
+            {
+              "explain": "Convert \\(\\$2.00\\) to cents so that both parts of the ratio have the same units.",
+              "work": "\\(\\$2.00 = 200\\text{c}\\)"
+            },
+            {
+              "explain": "Write the ratio in cents.",
+              "work": "\\(40 : 200\\)"
+            },
+            {
+              "explain": "Divide both sides by 40 to simplify.",
+              "work": "\\(40 \\div 40 = 1\\)<br>\\(200 \\div 40 = 5\\)"
+            },
+            {
+              "explain": "The simplified ratio is \\(1 : 5\\)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-10e",
+      "code": "10E",
+      "title": "Using ratios in problems",
+      "questions": [
+        {
+          "id": "y8-ep1-q3_ratio",
+          "type": "mc",
+          "stem": "A total of 42 tickets were sold for a concert. The ratio of adult to child tickets sold was \\(3 : 4\\). Find the number of child tickets sold.",
+          "options": [
+            "\\(18\\)",
+            "\\(28\\)",
+            "\\(24\\)",
+            "\\(6\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the total number of parts, then find the value of one part.",
+          "steps": [
+            {
+              "explain": "First, find the total number of parts in the ratio.",
+              "work": "\\(3 + 4 = 7\\text{ parts}\\)"
+            },
+            {
+              "explain": "Divide the total number of tickets by the total number of parts to find the value of 1 part.",
+              "work": "\\(42 \\div 7 = 6\\text{ tickets per part}\\)"
+            },
+            {
+              "explain": "The ratio of children is 4 parts. Multiply this by the value of one part.",
+              "work": "\\(4 \\times 6 = 24\\)"
+            },
+            {
+              "explain": "There were 24 child tickets sold."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y8-10G",
+      "code": "10G",
+      "title": "Review of rates and ratios",
+      "questions": [
+        {
+          "id": "y8-10g-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Copy and complete the equivalent ratio:\n\n\\(3 : 4 = \\Box : 12\\)",
+          "options": [
+            "\\(9\\)",
+            "\\(18\\)",
+            "\\(5\\)",
+            "\\(90\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the number that \\(4\\) is multiplied by to get \\(12\\), and multiply \\(3\\) by the same number.",
+          "solution": "To find the missing number in the equivalent ratio:\n1. Compare the second terms of the ratios: \\(4\\) and \\(12\\). Since \\(12 = 4 \\times 3\\), we need to multiply the first term by \\(3\\) to keep the ratios equivalent.\n2. Multiply the first term \\(3\\) by \\(3\\):\n   \\(3 \\times 3 = 9\\)\n\nTherefore, the missing number is \\(9\\).",
+          "steps": [
+            {
+              "explain": "Identify the multiplier or divisor between the given equivalent terms.",
+              "work": "\\(12 \\div 4 = 3\\)"
+            },
+            {
+              "explain": "Apply the same multiplier or divisor to the other term.",
+              "work": "\\(3 \\times 3 = 9\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(9\\)"
+            },
+            {
+              "explain": "State the final missing number.",
+              "work": "\\(9\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Copy and complete the equivalent ratio:\n\n\\(8 : 20 = \\Box : 5\\)",
+          "options": [
+            "\\(2\\)",
+            "\\(4\\)",
+            "\\(16\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "Identify the number that \\(20\\) is divided by to get \\(5\\), and divide \\(8\\) by the same number.",
+          "solution": "2",
+          "steps": [
+            {
+              "explain": "Identify the multiplier or divisor between the given equivalent terms.",
+              "work": "\\(20 \\div 5 = 4\\)"
+            },
+            {
+              "explain": "Apply the same multiplier or divisor to the other term.",
+              "work": "\\(8 \\div 4 = 2\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(2\\)"
+            },
+            {
+              "explain": "State the final missing number.",
+              "work": "\\(2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Copy and complete the equivalent ratio:\n\n\\(12 : 18 = \\Box : 6\\)",
+          "options": [
+            "\\(4\\)",
+            "\\(8\\)",
+            "\\(2\\)",
+            "\\(40\\)"
+          ],
+          "answer": 0,
+          "hint": "What do you divide \\(18\\) by to get \\(6\\)? Apply the same operation to \\(12\\).",
+          "solution": "To find the missing number in the equivalent ratio:\n1. Compare the second terms of the ratios: \\(18\\) and \\(6\\). Since \\(6 = 18 \\div 3\\), we need to divide the first term by \\(3\\).\n2. Divide \\(12\\) by \\(3\\):\n   \\(12 \\div 3 = 4\\)\n\nTherefore, the missing number is \\(4\\).",
+          "steps": [
+            {
+              "explain": "Identify the multiplier or divisor between the given equivalent terms.",
+              "work": "\\(18 \\div 6 = 3\\)"
+            },
+            {
+              "explain": "Apply the same multiplier or divisor to the other term.",
+              "work": "\\(12 \\div 3 = 4\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(4\\)"
+            },
+            {
+              "explain": "State the final missing number.",
+              "work": "\\(4\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Copy and complete the equivalent ratio:\n\n\\(15 : 25 = \\Box : 5\\)",
+          "options": [
+            "\\(3\\)",
+            "\\(5\\)",
+            "\\(15\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide \\(15\\) by the same factor used to reduce \\(25\\) to \\(5\\).",
+          "solution": "3",
+          "steps": [
+            {
+              "explain": "Identify the multiplier or divisor between the given equivalent terms.",
+              "work": "\\(25 \\div 5 = 5\\)"
+            },
+            {
+              "explain": "Apply the same multiplier or divisor to the other term.",
+              "work": "\\(15 \\div 5 = 3\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(3\\)"
+            },
+            {
+              "explain": "State the final missing number.",
+              "work": "\\(3\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the ratio \\(6 : 18\\) in simplest form.",
+          "options": [
+            "\\(3:1\\)",
+            "\\(1:4\\)",
+            "\\(2:3\\)",
+            "\\(1:3\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide both parts of the ratio by their highest common factor, which is \\(6\\).",
+          "solution": "To simplify the ratio \\(6 : 18\\):\n1. Find the highest common factor (HCF) of \\(6\\) and \\(18\\), which is \\(6\\).\n2. Divide both terms of the ratio by \\(6\\):\n   \\((6 \\div 6) : (18 \\div 6) = 1 : 3\\)\n\nTherefore, the simplest form is \\(1:3\\).",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms in the ratio.",
+              "work": "\\(\\text{HCF}(6, 18) = 6\\)"
+            },
+            {
+              "explain": "Divide each term in the ratio by the HCF.",
+              "work": "\\(6 \\div 6 = 1, \\quad 18 \\div 6 = 3\\)"
+            },
+            {
+              "explain": "Write the resulting simplified ratio.",
+              "work": "\\(1:3\\)"
+            },
+            {
+              "explain": "State the final simplified ratio.",
+              "work": "\\(1:3\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the ratio \\(26 : 6\\) in simplest form.",
+          "options": [
+            "\\(13:3\\)",
+            "\\(3:13\\)",
+            "\\(13:4\\)",
+            "\\(14:3\\)"
+          ],
+          "answer": 0,
+          "hint": "Find a number that divides both \\(26\\) and \\(6\\) evenly.",
+          "solution": "To simplify the ratio \\(26 : 6\\):\n1. Find the HCF of \\(26\\) and \\(6\\), which is \\(2\\).\n2. Divide both terms by \\(2\\):\n   \\((26 \\div 2) : (6 \\div 2) = 13 : 3\\)\n\nTherefore, the simplest form is \\(13:3\\).",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms in the ratio.",
+              "work": "\\(\\text{HCF}(26, 6) = 2\\)"
+            },
+            {
+              "explain": "Divide each term in the ratio by the HCF.",
+              "work": "\\(26 \\div 2 = 13, \\quad 6 \\div 2 = 3\\)"
+            },
+            {
+              "explain": "Write the resulting simplified ratio.",
+              "work": "\\(13:3\\)"
+            },
+            {
+              "explain": "State the final simplified ratio.",
+              "work": "\\(13:3\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the ratio \\(150 : 450\\) in simplest form.",
+          "options": [
+            "\\(3:1\\)",
+            "\\(1:4\\)",
+            "\\(1:3\\)",
+            "\\(2:3\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide both terms by \\(150\\) or simplify in steps by first dividing by \\(10\\).",
+          "solution": "To simplify the ratio \\(150 : 450\\):\n1. Divide both terms by \\(10\\) to get \\(15 : 45\\).\n2. The HCF of \\(15\\) and \\(45\\) is \\(15\\). Divide both terms by \\(15\\):\n   \\((15 \\div 15) : (45 \\div 15) = 1 : 3\\)\n\nTherefore, the simplest form is \\(1:3\\).",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms in the ratio.",
+              "work": "\\(150 : 450 = 15 : 45\\)"
+            },
+            {
+              "explain": "Divide each term in the ratio by the HCF.",
+              "work": "\\(15 \\div 15 = 1, \\quad 45 \\div 15 = 3\\)"
+            },
+            {
+              "explain": "Write the resulting simplified ratio.",
+              "work": "\\(1:3\\)"
+            },
+            {
+              "explain": "State the final simplified ratio.",
+              "work": "\\(1:3\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the ratio \\(4 : 12\\) in simplest form.",
+          "options": [
+            "\\(1:3\\)",
+            "\\(3:1\\)",
+            "\\(1:4\\)",
+            "\\(2:3\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide both parts of the ratio by their HCF (\\(4\\)).",
+          "solution": "To simplify the ratio \\(4 : 12\\):\n1. Find the HCF of \\(4\\) and \\(12\\), which is \\(4\\).\n2. Divide both terms by \\(4\\):\n   \\((4 \\div 4) : (12 \\div 4) = 1 : 3\\)\n\nTherefore, the simplest form is \\(1:3\\).",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms in the ratio.",
+              "work": "\\(\\text{HCF}(4, 12) = 4\\)"
+            },
+            {
+              "explain": "Divide each term in the ratio by the HCF.",
+              "work": "\\(4 \\div 4 = 1, \\quad 12 \\div 4 = 3\\)"
+            },
+            {
+              "explain": "Write the resulting simplified ratio.",
+              "work": "\\(1:3\\)"
+            },
+            {
+              "explain": "State the final simplified ratio.",
+              "work": "\\(1:3\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the ratio \\(36 : 81\\) in simplest form.",
+          "options": [
+            "\\(9:4\\)",
+            "\\(4:10\\)",
+            "\\(5:9\\)",
+            "\\(4:9\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide both parts by \\(9\\).",
+          "solution": "To simplify the ratio \\(36 : 81\\):\n1. The HCF of \\(36\\) and \\(81\\) is \\(9\\).\n2. Divide both terms by \\(9\\):\n   \\((36 \\div 9) : (81 \\div 9) = 4 : 9\\)\n\nTherefore, the simplest form is \\(4:9\\).",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms in the ratio.",
+              "work": "\\(\\text{HCF}(36, 81) = 9\\)"
+            },
+            {
+              "explain": "Divide each term in the ratio by the HCF.",
+              "work": "\\(36 \\div 9 = 4, \\quad 81 \\div 9 = 9\\)"
+            },
+            {
+              "explain": "Write the resulting simplified ratio.",
+              "work": "\\(4:9\\)"
+            },
+            {
+              "explain": "State the final simplified ratio.",
+              "work": "\\(4:9\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the ratio \\(84 : 21\\) in simplest form.",
+          "options": [
+            "\\(1:4\\)",
+            "\\(4:1\\)",
+            "\\(4:2\\)",
+            "\\(5:1\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the highest common factor of \\(84\\) and \\(21\\). Note that \\(84\\) is a multiple of \\(21\\).",
+          "solution": "To simplify the ratio \\(84 : 21\\):\n1. The HCF of \\(84\\) and \\(21\\) is \\(21\\).\n2. Divide both terms by \\(21\\):\n   \\((84 \\div 21) : (21 \\div 21) = 4 : 1\\)\n\nTherefore, the simplest form is \\(4:1\\).",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms in the ratio.",
+              "work": "\\(84 \\div 21 = 4\\)"
+            },
+            {
+              "explain": "Divide each term in the ratio by the HCF.",
+              "work": "\\(84 \\div 21 = 4, \\quad 21 \\div 21 = 1\\)"
+            },
+            {
+              "explain": "Write the resulting simplified ratio.",
+              "work": "\\(4:1\\)"
+            },
+            {
+              "explain": "State the final simplified ratio.",
+              "work": "\\(4:1\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q2g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the ratio \\(175 : 125\\) in simplest form.",
+          "options": [
+            "\\(5:7\\)",
+            "\\(7:6\\)",
+            "\\(7:5\\)",
+            "\\(8:5\\)"
+          ],
+          "answer": 2,
+          "hint": "Think of common factors like \\(25\\). How many times does \\(25\\) go into each number?",
+          "solution": "To simplify the ratio \\(175 : 125\\):\n1. The HCF of \\(175\\) and \\(125\\) is \\(25\\).\n2. Divide both terms by \\(25\\):\n   \\((175 \\div 25) : (125 \\div 25) = 7 : 5\\)\n\nTherefore, the simplest form is \\(7:5\\).",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms in the ratio.",
+              "work": "\\(\\text{HCF}(175, 125) = 25\\)"
+            },
+            {
+              "explain": "Divide each term in the ratio by the HCF.",
+              "work": "\\(175 \\div 25 = 7, \\quad 125 \\div 25 = 5\\)"
+            },
+            {
+              "explain": "Write the resulting simplified ratio.",
+              "work": "\\(7:5\\)"
+            },
+            {
+              "explain": "State the final simplified ratio.",
+              "work": "\\(7:5\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q2h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express the ratio \\(30 : 150\\) in simplest form.",
+          "options": [
+            "\\(5:1\\)",
+            "\\(1:6\\)",
+            "\\(1:5\\)",
+            "\\(2:5\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide both terms by \\(30\\).",
+          "solution": "To simplify the ratio \\(30 : 150\\):\n1. Divide both terms by their HCF, which is \\(30\\):\n   \\((30 \\div 30) : (150 \\div 30) = 1 : 5\\)\n\nTherefore, the simplest form is \\(1:5\\).",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms in the ratio.",
+              "work": "\\(\\text{HCF}(30, 150) = 30\\)"
+            },
+            {
+              "explain": "Divide each term in the ratio by the HCF.",
+              "work": "\\(30 \\div 30 = 1, \\quad 150 \\div 30 = 5\\)"
+            },
+            {
+              "explain": "Write the resulting simplified ratio.",
+              "work": "\\(1:5\\)"
+            },
+            {
+              "explain": "State the final simplified ratio.",
+              "work": "\\(1:5\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In a box of candies, the ratio of strawberry wrappers to lemon wrappers is \\(4 : 5\\), while the ratio of lemon wrappers to blueberry wrappers is \\(2 : 7\\). Find the ratio of strawberry wrappers to blueberry wrappers.",
+          "options": [
+            "\\(35:8\\)",
+            "\\(8:35\\)",
+            "\\(8:36\\)",
+            "\\(9:35\\)"
+          ],
+          "answer": 1,
+          "hint": "Find the LCM of the lemon wrapper terms (\\(5\\) and \\(2\\)) to link the two ratios.",
+          "solution": "To find the ratio of strawberry (\\(S\\)) to blueberry (\\(B\\)):\n1. Write down the ratios:\n   \\(S : L = 4 : 5\\)\n   \\(L : B = 2 : 7\\)\n2. To combine these, make the lemon (\\(L\\)) part equal in both ratios by finding the lowest common multiple (LCM) of \\(5\\) and \\(2\\), which is \\(10\\).\n3. Adjust the ratios:\n   - Multiply \\(S : L = 4 : 5\\) by \\(2\\) to get \\(S : L = 8 : 10\\).\n   - Multiply \\(L : B = 2 : 7\\) by \\(5\\) to get \\(L : B = 10 : 35\\).\n4. Now, the combined ratio is:\n   \\(S : L : B = 8 : 10 : 35\\)\n5. Extract the ratio of strawberry to blueberry wrappers (\\(S : B\\)):\n   \\(S : B = 8 : 35\\)\n\nSince \\(8\\) and \\(35\\) share no common factors other than \\(1\\), the simplest form is \\(8:35\\).",
+          "steps": [
+            {
+              "explain": "Identify the given information and state the goal.",
+              "work": "S : L = 4 : 5, \\quad L : B = 2 : 7"
+            },
+            {
+              "explain": "Apply the relevant formula or mathematical rule.",
+              "work": "\\(\\text{LCM}(5, 2) = 10\\)"
+            },
+            {
+              "explain": "Substitute the values and perform the calculation.",
+              "work": "S : L = 8 : 10, \\quad L : B = 10 : 35"
+            },
+            {
+              "explain": "State the final answer with correct units or in simplest form.",
+              "work": "\\(8:35\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q4",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Divide \\(240\\) in the ratio \\(5 : 3\\).",
+          "options": [
+            "\\(300, 90\\)",
+            "\\(150, 90\\)",
+            "\\(75, 90\\)",
+            "\\(1500, 90\\)"
+          ],
+          "answer": 1,
+          "hint": "Add the ratio numbers to find the total parts, divide the total quantity by this sum, and multiply each ratio term by the result.",
+          "solution": "To divide \\(240\\) in the ratio \\(5 : 3\\):\n1. Find the total number of parts:\n   \\(\\text{Total parts} = 5 + 3 = 8\\)\n2. Find the value of one part:\n   \\(\\text{Value of 1 part} = 240 \\div 8 = 30\\)\n3. Calculate the two shares:\n   - Larger share: \\(5 \\times 30 = 150\\)\n   - Smaller share: \\(3 \\times 30 = 90\\)\n\nThus, the parts are \\(150\\) and \\(90\\).",
+          "steps": [
+            {
+              "explain": "Calculate the total number of parts by adding the terms of the ratio.",
+              "work": "\\(5 + 3 = 8\\)"
+            },
+            {
+              "explain": "Divide the total quantity by the total number of parts to find the value of one part.",
+              "work": "\\(240 \\div 8 = 30\\)"
+            },
+            {
+              "explain": "Multiply the value of one part by each term in the ratio to find the individual shares.",
+              "work": "\\(5 \\times 30 = 150, \\quad 3 \\times 30 = 90\\)"
+            },
+            {
+              "explain": "State the final shares.",
+              "work": "\\(150, 90\\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          },
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q5",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Divide \\(1350 in the ratio \\)4 : 1.",
+          "options": [
+            "\\(2160, 270\\)",
+            "\\(1080, 270\\)",
+            "\\(540, 270\\)",
+            "\\(10800, 270\\)"
+          ],
+          "answer": 1,
+          "hint": "Add \\(4\\) and \\(1\\) to find the total parts, then calculate the value of each part.",
+          "solution": "To divide \\(1350 in the ratio \\)4 : 1:\n1. Find the total parts:\n   \\(\\text{Total parts} = 4 + 1 = 5\\)\n2. Find the value of one part:\n   \\(\\text{Value of 1 part} = 1350 \\div 5 = 270\\)\n3. Find the two parts:\n   - First part: \\(4 \\times 270 = 1080\\)\n   - Second part: \\(1 \\times 270 = 270\\)\n\nSo the two parts are \\(1080 and \\)270.",
+          "steps": [
+            {
+              "explain": "Calculate the total number of parts by adding the terms of the ratio.",
+              "work": "\\(4 + 1 = 5\\)"
+            },
+            {
+              "explain": "Divide the total quantity by the total number of parts to find the value of one part.",
+              "work": "\\(1350 \\div 5 = 270\\)"
+            },
+            {
+              "explain": "Multiply the value of one part by each term in the ratio to find the individual shares.",
+              "work": "\\(4 \\times 270 = 1080, \\quad 1 \\times 270 = 270\\)"
+            },
+            {
+              "explain": "State the final shares.",
+              "work": "\\(1080, 270\\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          },
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Divide \\(2520 in the ratio \\)4 : 2 : 1.",
+          "options": [
+            "\\(2880, 720, 360\\)",
+            "\\(720, 720, 360\\)",
+            "\\(14400, 720, 360\\)",
+            "\\(1440, 720, 360\\)"
+          ],
+          "answer": 3,
+          "hint": "Determine the sum of the ratio parts first. Then divide 2520 by that sum to find the value of one part.",
+          "solution": "To divide \\(2520 in the ratio \\)4 : 2 : 1:\n1. Total number of parts:\n   \\(\\text{Total parts} = 4 + 2 + 1 = 7\\)\n2. Value of one part:\n   \\(\\text{Value of 1 part} = 2520 \\div 7 = 360\\)\n3. Calculate the three shares:\n   - First part: \\(4 \\times 360 = 1440\\)\n   - Second part: \\(2 \\times 360 = 720\\)\n   - Third part: \\(1 \\times 360 = 360\\)\n\nThus, the parts are \\(1440, \\)720 and 360.",
+          "steps": [
+            {
+              "explain": "Calculate the total number of parts by adding the terms of the ratio.",
+              "work": "\\(4 + 2 + 1 = 7\\)"
+            },
+            {
+              "explain": "Divide the total quantity by the total number of parts to find the value of one part.",
+              "work": "\\(2520 \\div 7 = 360\\)"
+            },
+            {
+              "explain": "Multiply the value of one part by each term in the ratio to find the individual shares.",
+              "work": "\\(4 \\times 360 = 1440, \\quad 2 \\times 360 = 720, \\quad 1 \\times 360 = 360\\)"
+            },
+            {
+              "explain": "State the final shares.",
+              "work": "\\(1440, 720, 360\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q7",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If a dozen eggs costs \\(4.80, what is the cost of \\)35 eggs?",
+          "options": [
+            "\\(28\\)",
+            "\\(7\\)",
+            "\\(14\\)",
+            "\\(140\\)"
+          ],
+          "answer": 2,
+          "hint": "A dozen is \\(12\\) eggs. Find the price of \\(1\\) egg first by dividing \\(4.80 by \\)12.",
+          "solution": "To find the cost of \\(35\\) eggs using the unitary method:\n1. Identify that a dozen eggs means \\(12\\) eggs cost 4.80.\n2. Calculate the cost of \\(1\\) egg:\n   \\(\\text{Cost of 1 egg} = 4.80 \\div 12 = 0.40\\text{ dollars} \\quad (40\\text{ cents})\\)\n3. Calculate the cost of \\(35\\) eggs:\n   \\(\\text{Cost of 35 eggs} = 35 \\times 0.40 = 14\\text{ dollars}\\)\n\nTherefore, the cost of \\(35\\) eggs is 14.",
+          "steps": [
+            {
+              "explain": "Determine the unit rate by dividing the given quantity by the base number of units.",
+              "work": "\\(4.80 \\div 12 = 0.40\\)"
+            },
+            {
+              "explain": "Multiply the unit rate by the target number of units to find the required quantity.",
+              "work": "\\(35 \\times 0.40 = 14\\)"
+            },
+            {
+              "explain": "Perform the calculation.",
+              "work": "\\(14\\)"
+            },
+            {
+              "explain": "State the final answer in context.",
+              "work": "\\(14\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q8a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "What is their hourly rate?",
+          "options": [
+            "\\(48\\)",
+            "\\(24\\)",
+            "\\(12\\)",
+            "\\(240\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(24\\).",
+          "steps": [
+            {
+              "explain": "Identify the total pay and total hours.",
+              "work": "\\(\\text{Pay} = \\$192, \\quad \\text{Hours} = 8\\)"
+            },
+            {
+              "explain": "Divide the total pay by the number of hours.",
+              "work": "\\(\\frac{\\$192}{8}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(24\\)"
+            },
+            {
+              "explain": "State the hourly rate.",
+              "work": "\\(\\text{The hourly rate is } \\$24.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q8b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much do they get paid for \\(12\\) hours work?",
+          "options": [
+            "\\(576\\)",
+            "\\(144\\)",
+            "\\(2880\\)",
+            "\\(288\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(288\\).",
+          "steps": [
+            {
+              "explain": "Identify the hourly rate from the previous part.",
+              "work": "\\(\\text{Hourly rate} = \\$24\\text{/hour}\\)"
+            },
+            {
+              "explain": "Multiply the hourly rate by the new number of hours (12).",
+              "work": "\\(\\$24 \\times 12\\)"
+            },
+            {
+              "explain": "Perform the multiplication.",
+              "work": "\\(288\\)"
+            },
+            {
+              "explain": "State the final pay.",
+              "work": "\\(\\text{The pay for 12 hours is } \\$288.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q9",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A car uses \\(30\\text{ L}\\) of petrol to travel \\(360\\text{ km}\\). How far can it travel with \\(45\\text{ L}\\) of petrol?",
+          "options": [
+            "\\(1080\\)",
+            "\\(270\\)",
+            "\\(540\\)",
+            "\\(5400\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the distance covered by \\(1\\text{ L}\\) of petrol first, then multiply by \\(45\\).",
+          "solution": "Using the unitary method:\n1. Determine how far the car travels on \\(1\\text{ L}\\) of petrol:\n   \\(\\text{Distance per litre} = 360 \\div 30 = 12\\text{ km/L}\\)\n2. Find the distance the car can travel on \\(45\\text{ L}\\):\n   \\(\\text{Distance} = 45 \\times 12 = 540\\text{ km}\\)\n\nTherefore, the car can travel \\(540\\text{ km}\\).",
+          "steps": [
+            {
+              "explain": "Determine the unit rate by dividing the given quantity by the base number of units.",
+              "work": "\\(360 \\div 30 = 12\\)"
+            },
+            {
+              "explain": "Multiply the unit rate by the target number of units to find the required quantity.",
+              "work": "\\(45 \\times 12 = 540\\)"
+            },
+            {
+              "explain": "Perform the calculation.",
+              "work": "\\(540\\)"
+            },
+            {
+              "explain": "State the final answer in context.",
+              "work": "\\(540\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q10a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How much does \\(3.6\\text{ kg}\\) of this kind of fish cost?",
+          "options": [
+            "\\(68.4\\)",
+            "\\(34.2\\)",
+            "\\(17.1\\)",
+            "\\(342.0\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(34.2\\).",
+          "steps": [
+            {
+              "explain": "Identify the unit cost.",
+              "work": "\\(\\text{Cost per kg} = \\$9.50\\)"
+            },
+            {
+              "explain": "Multiply the unit cost by the quantity (3.6 kg).",
+              "work": "\\(9.50 \\times 3.6\\)"
+            },
+            {
+              "explain": "Perform the multiplication.",
+              "work": "\\(34.20\\)"
+            },
+            {
+              "explain": "State the total cost.",
+              "work": "\\(\\text{The cost is } \\$34.20.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q10b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many kilograms can you buy for 57?",
+          "options": [
+            "\\(12\\)",
+            "\\(6\\)",
+            "\\(3\\)",
+            "\\(60\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(6\\).",
+          "steps": [
+            {
+              "explain": "Identify the unit cost and total money available.",
+              "work": "\\(\\text{Unit cost} = \\$9.50, \\quad \\text{Total money} = \\$57\\)"
+            },
+            {
+              "explain": "Divide the total money by the unit cost.",
+              "work": "\\(\\frac{57}{9.50}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(6\\)"
+            },
+            {
+              "explain": "State the quantity in kg.",
+              "work": "\\(\\text{You can buy } 6\\text{ kg}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q11a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(60\\text{ g}\\) to \\(240\\text{ g}\\) as a ratio in simplest form.",
+          "options": [
+            "\\(1:4\\)",
+            "\\(4:1\\)",
+            "\\(1:5\\)",
+            "\\(2:4\\)"
+          ],
+          "answer": 0,
+          "hint": "Write as a ratio \\(60 : 240\\) and divide both sides by \\(60\\).",
+          "solution": "To write the ratio in simplest form:\n1. Since the units are already the same (grams), write the numbers as a ratio:\n   \\(60 : 240\\)\n2. Divide both terms by their HCF, which is \\(60\\):\n   \\((60 \\div 60) : (240 \\div 60) = 1 : 4\\)\n\nTherefore, the ratio is \\(1:4\\).",
+          "steps": [
+            {
+              "explain": "Write the quantities as a ratio, ensuring units match.",
+              "work": "\\(60\\text{ g} : 240\\text{ g}\\)"
+            },
+            {
+              "explain": "Find the HCF of 60 and 240, which is 60.",
+              "work": "\\(\\text{HCF} = 60\\)"
+            },
+            {
+              "explain": "Divide both sides by 60.",
+              "work": "\\(\\frac{60}{60} : \\frac{240}{60}\\)"
+            },
+            {
+              "explain": "State the simplified ratio.",
+              "work": "\\(1:4\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q11b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(800\\text{ g}\\) to \\(2\\text{ kg}\\) as a ratio in simplest form.",
+          "options": [
+            "\\(5:2\\)",
+            "\\(2:6\\)",
+            "\\(2:5\\)",
+            "\\(3:5\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert \\(2\\text{ kg}\\) to \\(2000\\text{ g}\\) so both quantities are in grams before simplifying.",
+          "solution": "To express the ratio in simplest form:\n1. First convert both terms to the same unit. Since \\(1\\text{ kg} = 1000\\text{ g}\\):\n   \\(2\\text{ kg} = 2 \\times 1000 = 2000\\text{ g}\\)\n2. Write the ratio using the same units:\n   \\(800 : 2000\\)\n3. Simplify the ratio by dividing both sides by their HCF, which is \\(400\\):\n   \\((800 \\div 400) : (2000 \\div 400) = 2 : 5\\)\n\nTherefore, the simplest ratio is \\(2:5\\).",
+          "steps": [
+            {
+              "explain": "Write the quantities as a ratio. Convert kg to g so units match.",
+              "work": "\\(2\\text{ kg} = 2000\\text{ g}\\)"
+            },
+            {
+              "explain": "Set up the ratio.",
+              "work": "\\(800 : 2000\\)"
+            },
+            {
+              "explain": "Divide both sides by the HCF (400).",
+              "work": "\\(\\frac{800}{400} : \\frac{2000}{400}\\)"
+            },
+            {
+              "explain": "State the simplified ratio.",
+              "work": "\\(2:5\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q12",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a co-educational school of \\(800\\) pupils, \\(350\\) are girls. What is the ratio of the number of girls to the number of boys in simplest form?",
+          "options": [
+            "\\(9:7\\)",
+            "\\(7:10\\)",
+            "\\(7:9\\)",
+            "\\(8:9\\)"
+          ],
+          "answer": 2,
+          "hint": "Find the number of boys by subtracting \\(350\\) from \\(800\\), then write and simplify the ratio of girls to boys.",
+          "solution": "To find the ratio of girls to boys:\n1. Calculate the number of boys:\n   \\(\\text{Number of boys} = 800 - 350 = 450\\)\n2. Write the ratio of girls to boys:\n   \\(\\text{Girls} : \\text{Boys} = 350 : 450\\)\n3. Simplify the ratio by dividing both terms by their HCF, which is \\(50\\):\n   \\((350 \\div 50) : (450 \\div 50) = 7 : 9\\)\n\nTherefore, the ratio of girls to boys is \\(7:9\\).",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms in the ratio.",
+              "work": "\\(800 - 350 = 450\\)"
+            },
+            {
+              "explain": "Divide each term in the ratio by the HCF.",
+              "work": "350 : 450"
+            },
+            {
+              "explain": "Write the resulting simplified ratio.",
+              "work": "\\(350 \\div 50 = 7, \\quad 450 \\div 50 = 9\\)"
+            },
+            {
+              "explain": "State the final simplified ratio.",
+              "work": "\\(7:9\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The ratio of the number of birds to the number of cats owned by people in a neighbourhood is \\(4 : 3\\). The number of cats is \\(72\\). How many birds are there?",
+          "options": [
+            "\\(192\\)",
+            "\\(96\\)",
+            "\\(48\\)",
+            "\\(960\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide \\(72\\) by \\(3\\) to find the value of \\(1\\) part, then multiply by \\(4\\) to find the number of birds.",
+          "solution": "We are given:\n- The ratio of birds to cats is \\(4 : 3\\).\n- The number of cats corresponds to \\(3\\) parts of the ratio and is equal to \\(72\\).\n1. Find the value of \\(1\\) part of the ratio:\n   \\(\\text{Value of 1 part} = 72 \\div 3 = 24\\)\n2. Find the number of birds, which corresponds to \\(4\\) parts:\n   \\(\\text{Number of birds} = 4 \\times 24 = 96\\)\n\nTherefore, there are \\(96\\) birds in the neighbourhood.",
+          "steps": [
+            {
+              "explain": "Identify the given information and state the goal.",
+              "work": "\\(72 \\div 3 = 24\\)"
+            },
+            {
+              "explain": "Apply the relevant formula or mathematical rule.",
+              "work": "\\(4 \\times 24 = 96\\)"
+            },
+            {
+              "explain": "Substitute the values and perform the calculation.",
+              "work": "\\(96\\)"
+            },
+            {
+              "explain": "State the final answer with correct units or in simplest form.",
+              "work": "\\(96\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q14",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In an apartment block, \\(36\\) apartments have two bedrooms and \\(48\\) have one bedroom. Give the ratio of the number of two-bedroom apartments to the number of one-bedroom apartments in simplest form.",
+          "options": [
+            "\\(4:3\\)",
+            "\\(3:5\\)",
+            "\\(4:4\\)",
+            "\\(3:4\\)"
+          ],
+          "answer": 3,
+          "hint": "Write the ratio \\(36 : 48\\) and divide both numbers by their highest common factor, which is \\(12\\).",
+          "solution": "To write the ratio of two-bedroom to one-bedroom apartments in simplest form:\n1. Express the count as a ratio:\n   \\(\\text{Two-bedroom} : \\text{One-bedroom} = 36 : 48\\)\n2. Identify the HCF of \\(36\\) and \\(48\\), which is \\(12\\).\n3. Divide both terms by \\(12\\):\n   \\((36 \\div 12) : (48 \\div 12) = 3 : 4\\)\n\nTherefore, the simplified ratio is \\(3:4\\).",
+          "steps": [
+            {
+              "explain": "Find the Highest Common Factor (HCF) of the terms in the ratio.",
+              "work": "36 : 48"
+            },
+            {
+              "explain": "Divide each term in the ratio by the HCF.",
+              "work": "\\(36 \\div 12 = 3, \\quad 48 \\div 12 = 4\\)"
+            },
+            {
+              "explain": "Write the resulting simplified ratio.",
+              "work": "\\(3:4\\)"
+            },
+            {
+              "explain": "State the final simplified ratio.",
+              "work": "\\(3:4\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q15",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Three bricklayers can build a certain wall in \\(12\\) days. How long would it take six bricklayers to build it?",
+          "options": [
+            "\\(12\\)",
+            "\\(3\\)",
+            "\\(60\\)",
+            "\\(6\\)"
+          ],
+          "answer": 1,
+          "hint": "As the number of bricklayers increases, the number of days decreases. Find the total 'bricklayer-days' by multiplying \\(3\\) and \\(12\\), then divide by \\(6\\).",
+          "solution": "This is a problem involving inverse proportion:\n1. Find the total effort required in terms of bricklayer-days:\n   \\(\\text{Total effort} = 3 \\text{ bricklayers} \\times 12 \\text{ days} = 36 \\text{ bricklayer-days}\\)\n2. Find the time needed for \\(6\\) bricklayers to complete this total effort:\n   \\(\\text{Number of days} = 36 \\text{ bricklayer-days} \\div 6 \\text{ bricklayers} = 6 \\text{ days}\\)\n\nTherefore, it would take \\(6\\) bricklayers \\(6\\) days to build the wall.",
+          "steps": [
+            {
+              "explain": "Identify the given information and state the goal.",
+              "work": "\\(3 \\times 12 = 36\\)"
+            },
+            {
+              "explain": "Apply the relevant formula or mathematical rule.",
+              "work": "\\(36 \\div 6 = 6\\)"
+            },
+            {
+              "explain": "Substitute the values and perform the calculation.",
+              "work": "\\(6\\)"
+            },
+            {
+              "explain": "State the final answer with correct units or in simplest form.",
+              "work": "\\(6\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q16a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the approximate real length of the court in metres?",
+          "options": [
+            "\\(48\\)",
+            "\\(12\\)",
+            "\\(24\\)",
+            "\\(240\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(24\\).",
+          "steps": [
+            {
+              "explain": "Identify the scale.",
+              "work": "\\(\\text{Scale} = 1:200\\)"
+            },
+            {
+              "explain": "Identify the map length from the diagram (12 cm).",
+              "work": "\\(\\text{Map length} = 12\\text{ cm}\\)"
+            },
+            {
+              "explain": "Multiply by the scale factor and convert to metres.",
+              "work": "\\(12 \\times 200 = 2400\\text{ cm} = 24\\text{ m}\\)"
+            },
+            {
+              "explain": "State the real length.",
+              "work": "\\(24\\text{ m}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q16b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the approximate real width of the court in metres?",
+          "options": [
+            "\\(24\\)",
+            "\\(12\\)",
+            "\\(6\\)",
+            "\\(120\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(12\\).",
+          "steps": [
+            {
+              "explain": "Identify the scale.",
+              "work": "\\(\\text{Scale} = 1:200\\)"
+            },
+            {
+              "explain": "Identify the map width from the diagram (6 cm).",
+              "work": "\\(\\text{Map width} = 6\\text{ cm}\\)"
+            },
+            {
+              "explain": "Multiply by the scale factor and convert to metres.",
+              "work": "\\(6 \\times 200 = 1200\\text{ cm} = 12\\text{ m}\\)"
+            },
+            {
+              "explain": "State the real width.",
+              "work": "\\(12\\text{ m}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q16c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the approximate real distance from the base line to the service line on the same side of the net in metres.",
+          "options": [
+            "\\(12.8\\)",
+            "\\(3.2\\)",
+            "\\(64.0\\)",
+            "\\(6.4\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(6.4\\).",
+          "steps": [
+            {
+              "explain": "Identify the scale.",
+              "work": "\\(\\text{Scale} = 1:200\\)"
+            },
+            {
+              "explain": "Identify the map distance from the diagram (3.2 cm).",
+              "work": "\\(\\text{Map distance} = 3.2\\text{ cm}\\)"
+            },
+            {
+              "explain": "Multiply by the scale factor and convert to metres.",
+              "work": "\\(3.2 \\times 200 = 640\\text{ cm} = 6.4\\text{ m}\\)"
+            },
+            {
+              "explain": "State the real distance.",
+              "work": "\\(6.4\\text{ m}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q16d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the approximate real area of the court in square metres?",
+          "options": [
+            "\\(288\\)",
+            "\\(576\\)",
+            "\\(144\\)",
+            "\\(2880\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(288\\).",
+          "steps": [
+            {
+              "explain": "Identify the real length and width calculated previously.",
+              "work": "\\(\\text{Length} = 24\\text{ m}, \\quad \\text{Width} = 12\\text{ m}\\)"
+            },
+            {
+              "explain": "Use the area formula for a rectangle: Area = Length × Width.",
+              "work": "\\(\\text{Area} = 24 \\times 12\\)"
+            },
+            {
+              "explain": "Perform the multiplication.",
+              "work": "\\(288\\)"
+            },
+            {
+              "explain": "State the real area.",
+              "work": "\\(288\\text{ m}^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q16e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What is the approximate real distance between the singles side line and doubles side line on each side of the court in metres?",
+          "options": [
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(0.5\\)",
+            "\\(10\\)"
+          ],
+          "answer": 0,
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Identify the scale.",
+              "work": "\\(\\text{Scale} = 1:200\\)"
+            },
+            {
+              "explain": "Identify the map distance from the diagram (0.5 cm).",
+              "work": "\\(\\text{Map distance} = 0.5\\text{ cm}\\)"
+            },
+            {
+              "explain": "Multiply by the scale factor and convert to metres.",
+              "work": "\\(0.5 \\times 200 = 100\\text{ cm} = 1\\text{ m}\\)"
+            },
+            {
+              "explain": "State the real distance.",
+              "work": "\\(1\\text{ m}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q17a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the scale \\(4\\text{ cm} : 96\\text{ cm}\\) to a ratio of whole numbers, reduced to lowest terms.",
+          "options": [
+            "\\(24:1\\)",
+            "\\(1:24\\)",
+            "\\(1:25\\)",
+            "\\(2:24\\)"
+          ],
+          "answer": 1,
+          "hint": "Write the ratio without units, then simplify by dividing both numbers by \\(4\\).",
+          "solution": "To write the scale \\(4\\text{ cm} : 96\\text{ cm}\\) as a ratio:\n1. Since the units are the same (cm), write it as a dimensionless ratio:\n   \\(4 : 96\\)\n2. Divide both terms by their HCF, which is \\(4\\):\n   \\((4 \\div 4) : (96 \\div 4) = 1 : 24\\)\n\nTherefore, the scale ratio is \\(1:24\\).",
+          "steps": [
+            {
+              "explain": "Write the scale with matching units.",
+              "work": "\\(4\\text{ cm} : 96\\text{ cm}\\)"
+            },
+            {
+              "explain": "Remove the units to form a ratio.",
+              "work": "\\(4 : 96\\)"
+            },
+            {
+              "explain": "Divide both sides by the HCF (4).",
+              "work": "\\(\\frac{4}{4} : \\frac{96}{4}\\)"
+            },
+            {
+              "explain": "State the simplified ratio.",
+              "work": "\\(1:24\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q17b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the scale \\(5\\text{ cm} : 0.2\\text{ m}\\) to a ratio of whole numbers, reduced to lowest terms.",
+          "options": [
+            "\\(4:1\\)",
+            "\\(1:5\\)",
+            "\\(1:4\\)",
+            "\\(2:4\\)"
+          ],
+          "answer": 2,
+          "hint": "Convert \\(0.2\\text{ m}\\) to centimetres (\\(20\\text{ cm}\\)) first, then simplify \\(5 : 20\\).",
+          "solution": "To convert the scale \\(5\\text{ cm} : 0.2\\text{ m}\\) to a simplified ratio:\n1. Convert both measurements to the same unit (centimetres). Since \\(1\\text{ m} = 100\\text{ cm}\\):\n   \\(0.2\\text{ m} = 0.2 \\times 100 = 20\\text{ cm}\\)\n2. Write the ratio with identical units:\n   \\(5 : 20\\)\n3. Simplify the ratio by dividing both terms by their HCF (\\(5\\)):\n   \\((5 \\div 5) : (20 \\div 5) = 1 : 4\\)\n\nTherefore, the scale ratio is \\(1:4\\).",
+          "steps": [
+            {
+              "explain": "Convert 0.2 m to cm to match units.",
+              "work": "\\(0.2\\text{ m} = 20\\text{ cm}\\)"
+            },
+            {
+              "explain": "Write the scale ratio.",
+              "work": "\\(5\\text{ cm} : 20\\text{ cm} \\rightarrow 5 : 20\\)"
+            },
+            {
+              "explain": "Divide both sides by the HCF (5).",
+              "work": "\\(\\frac{5}{5} : \\frac{20}{5}\\)"
+            },
+            {
+              "explain": "State the simplified ratio.",
+              "work": "\\(1:4\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q17c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the scale \\(8\\text{ cm} : 20\\text{ mm}\\) to a ratio of whole numbers, reduced to lowest terms.",
+          "options": [
+            "\\(1:4\\)",
+            "\\(4:1\\)",
+            "\\(4:2\\)",
+            "\\(5:1\\)"
+          ],
+          "answer": 1,
+          "hint": "Convert \\(8\\text{ cm}\\) to millimetres (\\(80\\text{ mm}\\)) to match the units, then simplify.",
+          "solution": "To convert \\(8\\text{ cm} : 20\\text{ mm}\\) to a ratio:\n1. Convert centimetres to millimetres. Since \\(1\\text{ cm} = 10\\text{ mm}\\):\n   \\(8\\text{ cm} = 8 \\times 10 = 80\\text{ mm}\\)\n2. Write the ratio using identical units:\n   \\(80 : 20\\)\n3. Simplify by dividing both terms by their HCF (\\(20\\)):\n   \\((80 \\div 20) : (20 \\div 20) = 4 : 1\\)\n\nTherefore, the ratio is \\(4:1\\).",
+          "steps": [
+            {
+              "explain": "Convert 8 cm to mm to match units.",
+              "work": "\\(8\\text{ cm} = 80\\text{ mm}\\)"
+            },
+            {
+              "explain": "Write the scale ratio.",
+              "work": "\\(80\\text{ mm} : 20\\text{ mm} \\rightarrow 80 : 20\\)"
+            },
+            {
+              "explain": "Divide both sides by the HCF (20).",
+              "work": "\\(\\frac{80}{20} : \\frac{20}{20}\\)"
+            },
+            {
+              "explain": "State the simplified ratio.",
+              "work": "\\(4:1\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q17d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert the scale \\(25\\text{ cm} : 5\\text{ km}\\) to a ratio of whole numbers, reduced to lowest terms.",
+          "options": [
+            "\\(20000:1\\)",
+            "\\(1:20001\\)",
+            "\\(2:20000\\)",
+            "\\(1:20000\\)"
+          ],
+          "answer": 3,
+          "hint": "Convert \\(5\\text{ km}\\) to centimetres (\\(500,000\\text{ cm}\\)) and simplify the ratio.",
+          "solution": "To convert the scale \\(25\\text{ cm} : 5\\text{ km}\\) to a ratio:\n1. Convert \\(5\\text{ km}\\) to centimetres:\n   \\(5\\text{ km} = 5 \\times 1000\\text{ m} = 5000\\text{ m}\\)\n   \\(5000\\text{ m} = 5000 \\times 100\\text{ cm} = 500\\,000\\text{ cm}\\)\n2. Write the ratio using centimetres:\n   \\(25 : 500\\,000\\)\n3. Simplify the ratio by dividing both terms by their HCF (\\(25\\)):\n   \\((25 \\div 25) : (500\\,000 \\div 25) = 1 : 20\\,000\\)\n\nTherefore, the scale is \\(1:20000\\).",
+          "steps": [
+            {
+              "explain": "Convert 5 km to cm to match units.",
+              "work": "\\(5\\text{ km} = 5000\\text{ m} = 500,000\\text{ cm}\\)"
+            },
+            {
+              "explain": "Write the scale ratio.",
+              "work": "\\(25\\text{ cm} : 500,000\\text{ cm} \\rightarrow 25 : 500,000\\)"
+            },
+            {
+              "explain": "Divide both sides by the HCF (25).",
+              "work": "\\(\\frac{25}{25} : \\frac{500,000}{25}\\)"
+            },
+            {
+              "explain": "State the simplified ratio.",
+              "work": "\\(1:20000\\)"
+            }
+          ],
+          "alsoIn": [
+            "exam:year8ch10g"
+          ]
+        },
+        {
+          "id": "y8-10g-q18a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For the scale ratio \\(5 : 8\\), complete the conversion of scale:\n\n\\(1\\text{ cm} : \\text{\\_\\_\\_\\_ cm}\\)",
+          "options": [
+            "\\(3.2\\)",
+            "\\(0.8\\)",
+            "\\(16.0\\)",
+            "\\(1.6\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide the real value (\\(8\\)) by the map value (\\(5\\)) to find what \\(1\\text{ unit}\\) represents.",
+          "solution": "To find the number of centimetres represented by \\(1\\text{ cm}\\):\n1. The ratio is \\(5 : 8\\), meaning \\(5\\text{ units}\\) on the plan represents \\(8\\text{ units}\\) in reality.\n2. Divide both terms by \\(5\\) to find what \\(1\\text{ unit}\\) on the plan represents:\n   \\((5 \\div 5) : (8 \\div 5) = 1 : 1.6\\)\n3. So, \\(1\\text{ cm}\\) represents \\(1.6\\text{ cm}\\).\n\nTherefore, the missing number is \\(1.6\\).",
+          "steps": [
+            {
+              "explain": "Identify the scale ratio.",
+              "work": "\\(5 : 8\\)"
+            },
+            {
+              "explain": "This means 5 cm on the map represents 8 cm in reality.",
+              "work": "\\(5\\text{ cm} : 8\\text{ cm}\\)"
+            },
+            {
+              "explain": "Divide by 5 to find what 1 cm represents.",
+              "work": "\\(1\\text{ cm} : \\frac{8}{5}\\text{ cm}\\)"
+            },
+            {
+              "explain": "Calculate the result.",
+              "work": "\\(1\\text{ cm} : 1.6\\text{ cm}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q18b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For the scale ratio \\(5 : 8\\), complete the conversion of scale:\n\n\\(1\\text{ cm} : \\text{\\_\\_\\_\\_ mm}\\)",
+          "options": [
+            "\\(32\\)",
+            "\\(8\\)",
+            "\\(160\\)",
+            "\\(16\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply the centimetre equivalent (\\(1.6\\text{ cm}\\)) by \\(10\\) to convert it to millimetres.",
+          "solution": "To find the scale in millimetres:\n1. From the previous step, we know that \\(1\\text{ cm}\\) represents \\(1.6\\text{ cm}\\).\n2. Convert \\(1.6\\text{ cm}\\) to millimetres by multiplying by \\(10\\):\n   \\(1.6 \\times 10 = 16\\text{ mm}\\)\n\nTherefore, the missing number is \\(16\\).",
+          "steps": [
+            {
+              "explain": "Identify the scale from the previous part.",
+              "work": "\\(1\\text{ cm} : 1.6\\text{ cm}\\)"
+            },
+            {
+              "explain": "Convert 1.6 cm to mm.",
+              "work": "\\(1.6 \\times 10 = 16\\text{ mm}\\)"
+            },
+            {
+              "explain": "Write the new ratio.",
+              "work": "\\(1\\text{ cm} : 16\\text{ mm}\\)"
+            },
+            {
+              "explain": "State the final missing value.",
+              "work": "\\(16\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q18c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For the scale ratio \\(5 : 8\\), complete the conversion of scale:\n\n\\(1\\text{ cm} : \\text{\\_\\_\\_\\_ m}\\)",
+          "options": [
+            "\\(0.016\\)",
+            "\\(1.6\\)",
+            "\\(160\\)",
+            "\\(0.16\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the centimetre equivalent (\\(1.6\\text{ cm}\\)) by \\(100\\) to convert it to metres.",
+          "solution": "To find the scale in metres:\n1. From the first step, \\(1\\text{ cm}\\) represents \\(1.6\\text{ cm}\\).\n2. Convert \\(1.6\\text{ cm}\\) to metres by dividing by \\(100\\):\n   \\(1.6 \\div 100 = 0.016\\text{ m}\\)\n\nTherefore, the missing number is \\(0.016\\).",
+          "steps": [
+            {
+              "explain": "Identify the scale from part a.",
+              "work": "\\(1\\text{ cm} : 1.6\\text{ cm}\\)"
+            },
+            {
+              "explain": "Convert 1.6 cm to metres.",
+              "work": "\\(1.6 \\div 100 = 0.016\\text{ m}\\)"
+            },
+            {
+              "explain": "Write the new ratio.",
+              "work": "\\(1\\text{ cm} : 0.016\\text{ m}\\)"
+            },
+            {
+              "explain": "State the final missing value.",
+              "work": "\\(0.016\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q19",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A car travels at \\(85\\text{ km/h}\\) for \\(4\\) hours. How far does it go?",
+          "options": [
+            "\\(340\\)",
+            "\\(680\\)",
+            "\\(170\\)",
+            "\\(3400\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the speed (\\(85\\text{ km/h}\\)) by the time (\\(4\\text{ hours}\\)).",
+          "solution": "To calculate the distance travelled:\n1. Use the distance formula:\n   \\(\\text{Distance} = \\text{Speed} \\times \\text{Time}\\)\n2. Substitute the values: speed \\(= 85\\text{ km/h}\\), time \\(= 4\\text{ hours}\\):\n   \\(\\text{Distance} = 85 \\times 4 = 340\\text{ km}\\)\n\nTherefore, the car travels \\(340\\text{ km}\\).",
+          "steps": [
+            {
+              "explain": "Identify the given variables (Distance, Speed, or Time).",
+              "work": "\\(d = s \\times t\\)"
+            },
+            {
+              "explain": "Select the appropriate formula: \\(D = S \\times T\\), \\(S = \\frac{D}{T}\\), or \\(T = \\frac{D}{S}\\).",
+              "work": "\\(85 \\times 4 = 340\\)"
+            },
+            {
+              "explain": "Substitute the known values into the formula and calculate.",
+              "work": "\\(340\\)"
+            },
+            {
+              "explain": "State the final answer with correct units.",
+              "work": "\\(340\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q20",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A train takes \\(6\\) hours to complete a journey of \\(450\\text{ km}\\). What is the average speed of the train in km/h?",
+          "options": [
+            "\\(150\\)",
+            "\\(75\\)",
+            "\\(38\\)",
+            "\\(750\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the total distance (\\(450\\text{ km}\\)) by the total time (\\(6\\text{ hours}\\)).",
+          "solution": "To calculate the average speed:\n1. Use the speed formula:\n   \\(\\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}}\\)\n2. Substitute the values: distance \\(= 450\\text{ km}\\), time \\(= 6\\text{ hours}\\):\n   \\(\\text{Speed} = \\frac{450}{6} = 75\\text{ km/h}\\)\n\nTherefore, the average speed of the train is \\(75\\text{ km/h}\\).",
+          "steps": [
+            {
+              "explain": "Identify the given variables (Distance, Speed, or Time).",
+              "work": "\\(s = \\frac{d}{t}\\)"
+            },
+            {
+              "explain": "Select the appropriate formula: \\(D = S \\times T\\), \\(S = \\frac{D}{T}\\), or \\(T = \\frac{D}{S}\\).",
+              "work": "\\(450 \\div 6 = 75\\)"
+            },
+            {
+              "explain": "Substitute the known values into the formula and calculate.",
+              "work": "\\(75\\)"
+            },
+            {
+              "explain": "State the final answer with correct units.",
+              "work": "\\(75\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q21",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A car travels a distance of \\(360\\text{ km}\\) at an average speed of \\(80\\text{ km/h}\\). How long did the journey take in hours?",
+          "options": [
+            "\\(9.0\\)",
+            "\\(4.5\\)",
+            "\\(2.3\\)",
+            "\\(45.0\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the total distance (\\(360\\text{ km}\\)) by the average speed (\\(80\\text{ km/h}\\)).",
+          "solution": "To calculate the time taken:\n1. Use the time formula:\n   \\(\\text{Time} = \\frac{\\text{Distance}}{\\text{Speed}}\\)\n2. Substitute the values: distance \\(= 360\\text{ km}\\), speed \\(= 80\\text{ km/h}\\):\n   \\(\\text{Time} = \\frac{360}{80} = 4.5\\text{ hours}\\)\n\nTherefore, the journey took \\(4.5\\) hours.",
+          "steps": [
+            {
+              "explain": "Identify the given variables (Distance, Speed, or Time).",
+              "work": "\\(t = \\frac{d}{s}\\)"
+            },
+            {
+              "explain": "Select the appropriate formula: \\(D = S \\times T\\), \\(S = \\frac{D}{T}\\), or \\(T = \\frac{D}{S}\\).",
+              "work": "\\(360 \\div 80 = 4.5\\)"
+            },
+            {
+              "explain": "Substitute the known values into the formula and calculate.",
+              "work": "\\(4.5\\)"
+            },
+            {
+              "explain": "State the final answer with correct units.",
+              "work": "\\(4.5\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q22a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How far, at the same rate, will she walk in \\(1\\) hour? (Enter the distance in km, e.g. 4.5)",
+          "options": [
+            "\\(9.0\\)",
+            "\\(2.3\\)",
+            "\\(4.5\\)",
+            "\\(45.0\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(4.5\\).",
+          "steps": [
+            {
+              "explain": "Calculate Ava's walking speed.",
+              "work": "\\(\\text{Speed} = \\frac{18\\text{ km}}{4\\text{ h}} = 4.5\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Use the formula Distance = Speed × Time.",
+              "work": "\\(\\text{Distance} = 4.5 \\times 1\\)"
+            },
+            {
+              "explain": "Calculate the distance.",
+              "work": "\\(4.5\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{She will walk } 4.5\\text{ km}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q22b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How far, at the same rate, will she walk in \\(3\\) hours? (Enter the distance in km, e.g. 13.5)",
+          "options": [
+            "\\(27.0\\)",
+            "\\(13.5\\)",
+            "\\(6.8\\)",
+            "\\(135.0\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(13.5\\).",
+          "steps": [
+            {
+              "explain": "Identify Ava's speed from part a.",
+              "work": "\\(\\text{Speed} = 4.5\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Use the formula Distance = Speed × Time.",
+              "work": "\\(\\text{Distance} = 4.5 \\times 3\\)"
+            },
+            {
+              "explain": "Calculate the distance.",
+              "work": "\\(13.5\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{She will walk } 13.5\\text{ km}.\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q22c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How far, at the same rate, will she walk in \\(5\\) hours? ",
+          "options": [
+            "\\(45.0\\)",
+            "\\(11.3\\)",
+            "\\(22.5\\)",
+            "\\(225.0\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(22.5\\).",
+          "steps": [
+            {
+              "explain": "Identify Ava's speed from part a.",
+              "work": "\\(\\text{Speed} = 4.5\\text{ km/h}\\)"
+            },
+            {
+              "explain": "Use the formula Distance = Speed × Time.",
+              "work": "\\(\\text{Distance} = 4.5 \\times 5\\)"
+            },
+            {
+              "explain": "Calculate the distance.",
+              "work": "\\(22.5\\)"
+            },
+            {
+              "explain": "State the final answer.",
+              "work": "\\(\\text{She will walk } 22.5\\text{ km}.\\)"
+            }
+          ],
+          "meta": {
+            "origin": "teacher"
+          }
+        },
+        {
+          "id": "y8-10g-q23",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An aircraft travels \\(5600\\text{ km}\\) in \\(8\\) hours. What is its average speed in km/h?",
+          "options": [
+            "\\(1400\\)",
+            "\\(700\\)",
+            "\\(350\\)",
+            "\\(7000\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the distance (\\(5600\\text{ km}\\)) by the time (\\(8\\) hours).",
+          "solution": "To calculate the average speed of the aircraft:\n1. Use the speed formula:\n   \\(\\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}}\\)\n2. Substitute the given values: distance \\(= 5600\\text{ km}\\), time \\(= 8\\text{ hours}\\):\n   \\(\\text{Speed} = \\frac{5600}{8} = 700\\text{ km/h}\\)\n\nTherefore, the aircraft's average speed is \\(700\\text{ km/h}\\).",
+          "steps": [
+            {
+              "explain": "Identify the given variables (Distance, Speed, or Time).",
+              "work": "\\(s = \\frac{d}{t}\\)"
+            },
+            {
+              "explain": "Select the appropriate formula: \\(D = S \\times T\\), \\(S = \\frac{D}{T}\\), or \\(T = \\frac{D}{S}\\).",
+              "work": "\\(5600 \\div 8 = 700\\)"
+            },
+            {
+              "explain": "Substitute the known values into the formula and calculate.",
+              "work": "\\(700\\)"
+            },
+            {
+              "explain": "State the final answer with correct units.",
+              "work": "\\(700\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q24",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A train travels for \\(36\\) minutes at \\(90\\text{ km/h}\\). How far does it go in km?",
+          "options": [
+            "\\(54\\)",
+            "\\(108\\)",
+            "\\(27\\)",
+            "\\(540\\)"
+          ],
+          "answer": 0,
+          "hint": "Convert \\(36\\) minutes to hours first by dividing by \\(60\\), then multiply by the speed (\\(90\\text{ km/h}\\)).",
+          "solution": "To calculate the distance travelled:\n1. Convert the travelling time from minutes to hours:\n   \\(\\text{Time} = 36\\text{ minutes} = \\frac{36}{60}\\text{ hours} = 0.6\\text{ hours}\\)\n2. Use the distance formula:\n   \\(\\text{Distance} = \\text{Speed} \\times \\text{Time}\\)\n3. Substitute the values:\n   \\(\\text{Distance} = 90 \\times 0.6 = 54\\text{ km}\\)\n\nTherefore, the train goes \\(54\\text{ km}\\).",
+          "steps": [
+            {
+              "explain": "Identify the given variables (Distance, Speed, or Time).",
+              "work": "\\(36 \\div 60 = 0.6\\text{ hours}\\)"
+            },
+            {
+              "explain": "Select the appropriate formula: \\(D = S \\times T\\), \\(S = \\frac{D}{T}\\), or \\(T = \\frac{D}{S}\\).",
+              "work": "\\(90 \\times 0.6 = 54\\)"
+            },
+            {
+              "explain": "Substitute the known values into the formula and calculate.",
+              "work": "\\(54\\)"
+            },
+            {
+              "explain": "State the final answer with correct units.",
+              "work": "\\(54\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q25a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "How long is she travelling in total in minutes?",
+          "options": [
+            "\\(180\\)",
+            "\\(45\\)",
+            "\\(90\\)",
+            "\\(900\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(90\\).",
+          "steps": [
+            {
+              "explain": "Convert the train time to minutes.",
+              "work": "\\(\\frac{3}{4}\\text{ hour} = \\frac{3}{4} \\times 60 = 45\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Identify the cycling time.",
+              "work": "\\(\\text{Cycle time} = 45\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Add the times together.",
+              "work": "\\(45 + 45 = 90\\)"
+            },
+            {
+              "explain": "State the total time.",
+              "work": "\\(90\\text{ minutes}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q25b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is her average speed during the train trip in km/h?",
+          "options": [
+            "\\(120\\)",
+            "\\(30\\)",
+            "\\(600\\)",
+            "\\(60\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(60\\).",
+          "steps": [
+            {
+              "explain": "Identify the train distance and time in hours.",
+              "work": "\\(\\text{Distance} = 45\\text{ km}, \\quad \\text{Time} = \\frac{3}{4}\\text{ h} = 0.75\\text{ h}\\)"
+            },
+            {
+              "explain": "Use the speed formula: Speed = Distance / Time.",
+              "work": "\\(\\text{Speed} = \\frac{45}{0.75}\\)"
+            },
+            {
+              "explain": "Calculate the speed.",
+              "work": "\\(60\\)"
+            },
+            {
+              "explain": "State the average speed.",
+              "work": "\\(60\\text{ km/h}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q25c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is her average speed during the bike trip in km/h?",
+          "options": [
+            "\\(20\\)",
+            "\\(40\\)",
+            "\\(10\\)",
+            "\\(200\\)"
+          ],
+          "answer": 0,
+          "solution": "The correct answer is \\(20\\).",
+          "steps": [
+            {
+              "explain": "Identify the bike distance and time in hours.",
+              "work": "\\(\\text{Distance} = 15\\text{ km}, \\quad \\text{Time} = 45\\text{ mins} = 0.75\\text{ h}\\)"
+            },
+            {
+              "explain": "Use the speed formula: Speed = Distance / Time.",
+              "work": "\\(\\text{Speed} = \\frac{15}{0.75}\\)"
+            },
+            {
+              "explain": "Calculate the speed.",
+              "work": "\\(20\\)"
+            },
+            {
+              "explain": "State the average speed.",
+              "work": "\\(20\\text{ km/h}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q25d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "What is her average speed over the whole trip in km/h?",
+          "options": [
+            "\\(80\\)",
+            "\\(20\\)",
+            "\\(400\\)",
+            "\\(40\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(40\\).",
+          "steps": [
+            {
+              "explain": "Find the total distance and total time.",
+              "work": "\\(\\text{Total Dist} = 45 + 15 = 60\\text{ km}, \\quad \\text{Total Time} = 0.75 + 0.75 = 1.5\\text{ h}\\)"
+            },
+            {
+              "explain": "Use the average speed formula: Total Distance / Total Time.",
+              "work": "\\(\\text{Average Speed} = \\frac{60}{1.5}\\)"
+            },
+            {
+              "explain": "Calculate the average speed.",
+              "work": "\\(40\\)"
+            },
+            {
+              "explain": "State the average speed.",
+              "work": "\\(40\\text{ km/h}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-10g-q8",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "A person works for $8$ hours and gets paid $192.",
+          "parts": [
+            {
+              "id": "y8-10g-q8a",
+              "type": "mc",
+              "stem": "What is their hourly rate?",
+              "options": [
+                "\\(48\\)",
+                "\\(24\\)",
+                "\\(12\\)",
+                "\\(240\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the total pay and total hours.",
+                  "work": "\\(\\text{Pay} = \\$192, \\quad \\text{Hours} = 8\\)"
+                },
+                {
+                  "explain": "Divide the total pay by the number of hours.",
+                  "work": "\\(\\frac{\\$192}{8}\\)"
+                },
+                {
+                  "explain": "Perform the division.",
+                  "work": "\\(24\\)"
+                },
+                {
+                  "explain": "State the hourly rate.",
+                  "work": "\\(\\text{The hourly rate is } \\$24.\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-10g-q8b",
+              "type": "mc",
+              "stem": "How much do they get paid for \\(12\\) hours work?",
+              "options": [
+                "\\(576\\)",
+                "\\(144\\)",
+                "\\(2880\\)",
+                "\\(288\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Identify the hourly rate from the previous part.",
+                  "work": "\\(\\text{Hourly rate} = \\$24\\text{/hour}\\)"
+                },
+                {
+                  "explain": "Multiply the hourly rate by the new number of hours (12).",
+                  "work": "\\(\\$24 \\times 12\\)"
+                },
+                {
+                  "explain": "Perform the multiplication.",
+                  "work": "\\(288\\)"
+                },
+                {
+                  "explain": "State the final pay.",
+                  "work": "\\(\\text{The pay for 12 hours is } \\$288.\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "Refer to sub-questions",
+          "hint": "Divide the total pay by hours worked to get the rate per hour, then multiply by $12$.",
+          "solution": "To solve this problem:\na) Calculate the hourly rate by dividing the total pay by the hours worked:\n   $$\\text{Hourly rate} = 192 \\div 8 = 24\\text{ dollars/hour}$$\nb) Multiply the hourly rate by the number of hours worked ($12$):\n   $$\\text{Pay for 12 hours} = 12 \\times 24 = 288\\text{ dollars}$$"
+        },
+        {
+          "id": "y8-10g-q10",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "The cost of $1\\text{ kg}$ of a certain type of fish is $9.50.",
+          "parts": [
+            {
+              "id": "y8-10g-q10a",
+              "type": "mc",
+              "stem": "How much does \\(3.6\\text{ kg}\\) of this kind of fish cost?",
+              "options": [
+                "\\(68.4\\)",
+                "\\(34.2\\)",
+                "\\(17.1\\)",
+                "\\(342.0\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the unit cost.",
+                  "work": "\\(\\text{Cost per kg} = \\$9.50\\)"
+                },
+                {
+                  "explain": "Multiply the unit cost by the quantity (3.6 kg).",
+                  "work": "\\(9.50 \\times 3.6\\)"
+                },
+                {
+                  "explain": "Perform the multiplication.",
+                  "work": "\\(34.20\\)"
+                },
+                {
+                  "explain": "State the total cost.",
+                  "work": "\\(\\text{The cost is } \\$34.20.\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-10g-q10b",
+              "type": "mc",
+              "stem": "How many kilograms can you buy for 57?",
+              "options": [
+                "\\(12\\)",
+                "\\(6\\)",
+                "\\(3\\)",
+                "\\(60\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Identify the unit cost and total money available.",
+                  "work": "\\(\\text{Unit cost} = \\$9.50, \\quad \\text{Total money} = \\$57\\)"
+                },
+                {
+                  "explain": "Divide the total money by the unit cost.",
+                  "work": "\\(\\frac{57}{9.50}\\)"
+                },
+                {
+                  "explain": "Perform the division.",
+                  "work": "\\(6\\)"
+                },
+                {
+                  "explain": "State the quantity in kg.",
+                  "work": "\\(\\text{You can buy } 6\\text{ kg}.\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "Refer to sub-questions",
+          "hint": "For part a, multiply weight by cost per kg. For part b, divide total money by cost per kg.",
+          "solution": "Using rates:\na) Find the cost of $3.6\\text{ kg}$ by multiplying the weight by the price per kg:\n   $$\\text{Cost} = 3.6 \\times 9.50 = 34.20\\text{ dollars}$$\nb) Find the weight you can buy for $57 by dividing the budget by the price per kg:\n   $$\\text{Weight} = 57 \\div 9.50 = 6\\text{ kg}$$"
+        },
+        {
+          "id": "y8-10g-q25",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Sophia travels $45\\text{ km}$ by train in $\\frac{3}{4}$ of an hour and then cycles for $15\\text{ km}$ in $45$ minutes.",
+          "parts": [
+            {
+              "id": "y8-10g-q25a",
+              "type": "mc",
+              "stem": "How long is she travelling in total in minutes?",
+              "options": [
+                "\\(180\\)",
+                "\\(45\\)",
+                "\\(90\\)",
+                "\\(900\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Convert the train time to minutes.",
+                  "work": "\\(\\frac{3}{4}\\text{ hour} = \\frac{3}{4} \\times 60 = 45\\text{ minutes}\\)"
+                },
+                {
+                  "explain": "Identify the cycling time.",
+                  "work": "\\(\\text{Cycle time} = 45\\text{ minutes}\\)"
+                },
+                {
+                  "explain": "Add the times together.",
+                  "work": "\\(45 + 45 = 90\\)"
+                },
+                {
+                  "explain": "State the total time.",
+                  "work": "\\(90\\text{ minutes}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-10g-q25b",
+              "type": "mc",
+              "stem": "What is her average speed during the train trip in km/h?",
+              "options": [
+                "\\(120\\)",
+                "\\(30\\)",
+                "\\(600\\)",
+                "\\(60\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Identify the train distance and time in hours.",
+                  "work": "\\(\\text{Distance} = 45\\text{ km}, \\quad \\text{Time} = \\frac{3}{4}\\text{ h} = 0.75\\text{ h}\\)"
+                },
+                {
+                  "explain": "Use the speed formula: Speed = Distance / Time.",
+                  "work": "\\(\\text{Speed} = \\frac{45}{0.75}\\)"
+                },
+                {
+                  "explain": "Calculate the speed.",
+                  "work": "\\(60\\)"
+                },
+                {
+                  "explain": "State the average speed.",
+                  "work": "\\(60\\text{ km/h}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-10g-q25c",
+              "type": "mc",
+              "stem": "What is her average speed during the bike trip in km/h?",
+              "options": [
+                "\\(20\\)",
+                "\\(40\\)",
+                "\\(10\\)",
+                "\\(200\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Identify the bike distance and time in hours.",
+                  "work": "\\(\\text{Distance} = 15\\text{ km}, \\quad \\text{Time} = 45\\text{ mins} = 0.75\\text{ h}\\)"
+                },
+                {
+                  "explain": "Use the speed formula: Speed = Distance / Time.",
+                  "work": "\\(\\text{Speed} = \\frac{15}{0.75}\\)"
+                },
+                {
+                  "explain": "Calculate the speed.",
+                  "work": "\\(20\\)"
+                },
+                {
+                  "explain": "State the average speed.",
+                  "work": "\\(20\\text{ km/h}\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-10g-q25d",
+              "type": "mc",
+              "stem": "What is her average speed over the whole trip in km/h?",
+              "options": [
+                "\\(80\\)",
+                "\\(20\\)",
+                "\\(400\\)",
+                "\\(40\\)"
+              ],
+              "answer": 3,
+              "steps": [
+                {
+                  "explain": "Find the total distance and total time.",
+                  "work": "\\(\\text{Total Dist} = 45 + 15 = 60\\text{ km}, \\quad \\text{Total Time} = 0.75 + 0.75 = 1.5\\text{ h}\\)"
+                },
+                {
+                  "explain": "Use the average speed formula: Total Distance / Total Time.",
+                  "work": "\\(\\text{Average Speed} = \\frac{60}{1.5}\\)"
+                },
+                {
+                  "explain": "Calculate the average speed.",
+                  "work": "\\(40\\)"
+                },
+                {
+                  "explain": "State the average speed.",
+                  "work": "\\(40\\text{ km/h}\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "Refer to sub-questions",
+          "hint": "Calculate the speeds of each part of the trip by dividing distance by time in hours. For the whole trip, divide the total distance by total time.",
+          "solution": "To solve this problem:\n- Train: $d_1 = 45\\text{ km}$, $t_1 = 0.75\\text{ hours} = 45\\text{ minutes}$\n- Bike: $d_2 = 15\\text{ km}$, $t_2 = 45\\text{ minutes} = 0.75\\text{ hours}$\n\na) Total travelling time: $45 + 45 = 90\\text{ minutes}$.\nb) Train average speed: \n   $$\\text{Speed} = \\frac{45}{0.75} = 60\\text{ km/h}$$\nc) Bike average speed:\n   $$\\text{Speed} = \\frac{15}{0.75} = 20\\text{ km/h}$$\nd) Overall average speed:\n   $$\\text{Total distance} = 45 + 15 = 60\\text{ km}$$\n   $$\\text{Total time} = 45 + 45 = 90\\text{ minutes} = 1.5\\text{ hours}$$\n   $$\\text{Overall speed} = \\frac{60}{1.5} = 40\\text{ km/h}$$"
+        }
+      ]
+    }
+  ]
+}

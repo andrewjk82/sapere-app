@@ -1,0 +1,110 @@
+{
+  "chapterId": "exam:year8ch3review",
+  "title": "Exam Practice",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "exam:year8ch3review",
+      "code": "",
+      "title": "Review of factors and indices",
+      "questions": [
+        {
+          "id": "y8-3f-q10a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the prime factorisation of \\\\(330\\\\).",
+          "options": [
+            "\\\\(2 \\\\times 3^2 \\\\times 5 \\\\times 11\\\\)",
+            "\\\\(2 \\\\times 3 \\\\times 5 \\\\times 11\\\\)",
+            "\\\\(2 \\\\times 5 \\\\times 33\\\\)",
+            "\\\\(6 \\\\times 5 \\\\times 11\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Factorise 330 into prime factors in ascending order.",
+          "steps": [
+            {
+              "explain": "Divide 330 by 2.",
+              "work": "\\\\(330 \\\\div 2 = 165\\\\)"
+            },
+            {
+              "explain": "165 is odd. Try dividing by 3.",
+              "work": "\\\\(165 \\\\div 3 = 55\\\\)"
+            },
+            {
+              "explain": "Divide 55 by 5.",
+              "work": "\\\\(55 \\\\div 5 = 11\\\\)"
+            },
+            {
+              "explain": "11 is prime. Write as product.",
+              "work": "\\\\(330 = 2 \\\\times 3 \\\\times 5 \\\\times 11\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the prime factorisation of \\\\(2520\\\\).",
+          "options": [
+            "\\\\(2^3 \\\\times 3^2 \\\\times 5 \\\\times 7\\\\)",
+            "\\\\(2^2 \\\\times 3^2 \\\\times 5 \\\\times 7\\\\)",
+            "\\\\(2^3 \\\\times 3 \\\\times 5 \\\\times 7\\\\)",
+            "\\\\(8 \\\\times 9 \\\\times 5 \\\\times 7\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Perform prime factorisation and write in index notation.",
+          "steps": [
+            {
+              "explain": "Keep dividing by 2.",
+              "work": "\\\\(2520 \\\\div 2 = 1260 \\implies 1260 \\\\div 2 = 630 \\implies 630 \\\\div 2 = 315\\\\)"
+            },
+            {
+              "explain": "Divide 315 by 3.",
+              "work": "\\\\(315 \\\\div 3 = 105 \\implies 105 \\\\div 3 = 35\\\\)"
+            },
+            {
+              "explain": "Divide 35 by 5.",
+              "work": "\\\\(35 \\\\div 5 = 7\\\\)"
+            },
+            {
+              "explain": "Collect all factors using exponents.",
+              "work": "\\\\(2520 = 2^3 \\\\times 3^2 \\\\times 5 \\\\times 7\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3f-q10d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the prime factorisation of \\\\(1170\\\\).",
+          "options": [
+            "\\\\(2 \\\\times 3^2 \\\\times 5 \\\\times 13\\\\)",
+            "\\\\(2^2 \\\\times 3 \\\\times 5 \\\\times 13\\\\)",
+            "\\\\(2 \\\\times 3 \\\\times 5 \\\\times 13\\\\)",
+            "\\\\(2 \\\\times 9 \\\\times 5 \\\\times 13\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide by primes.",
+          "steps": [
+            {
+              "explain": "Divide 1170 by 2.",
+              "work": "\\\\(1170 \\\\div 2 = 585\\\\)"
+            },
+            {
+              "explain": "Divide 585 by 3.",
+              "work": "\\\\(585 \\\\div 3 = 195 \\implies 195 \\\\div 3 = 65\\\\)"
+            },
+            {
+              "explain": "Divide 65 by 5.",
+              "work": "\\\\(65 \\\\div 5 = 13\\\\)"
+            },
+            {
+              "explain": "13 is prime. Write in index form.",
+              "work": "\\\\(1170 = 2 \\\\times 3^2 \\\\times 5 \\\\times 13\\\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

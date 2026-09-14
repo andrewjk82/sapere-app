@@ -1,0 +1,47 @@
+{
+  "chapterId": "exam:year11ach4e",
+  "title": "Exam year11ach4e",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ach4e",
+      "code": "EXAM",
+      "title": "Revision",
+      "questions": [
+        {
+          "id": "y11a-4e-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A certain business has fixed costs of 8000 dollars and variable costs of 150 dollars per item sold. Each item sells for 350 dollars. Using an inequation, find the minimum number \\(n\\) of items that must be sold in order to make a profit.",
+          "options": [
+            "\\(43\\)",
+            "\\(40\\)",
+            "\\(41\\)",
+            "\\(42\\)"
+          ],
+          "answer": 2,
+          "hint": "Set up the inequality where Revenue is strictly greater than Total Cost.",
+          "solution": "The correct answer is \\(41\\).",
+          "steps": [
+            {
+              "explain": "Create expressions for total cost and revenue in terms of \\(n\\) items.",
+              "work": "\\mathrm{Cost} = 8000 + 150n, quad \\mathrm{Revenue} = 350n"
+            },
+            {
+              "explain": "Set up the inequality representing a positive profit (Revenue > Cost).",
+              "work": "350n > 8000 + 150n"
+            },
+            {
+              "explain": "Subtract \\(150n\\) from both sides to group the variable terms.",
+              "work": "200n > 8000"
+            },
+            {
+              "explain": "Divide by 200 to find the minimum value of \\(n\\). Since \\(n\\) must be an integer strictly greater than 40, the minimum number of items is 41.",
+              "work": "n > 40 \\implies \\mathrm{Minimum\\; } n = 41"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

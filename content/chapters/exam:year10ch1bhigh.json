@@ -1,0 +1,473 @@
+{
+  "chapterId": "exam:year10ch1bhigh",
+  "title": "Exam Practice",
+  "year": "Year 10",
+  "topics": [
+    {
+      "topicId": "exam:year10ch1bhigh",
+      "code": "",
+      "title": "Percentage increase and decrease",
+      "questions": [
+        {
+          "id": "y10-1b-high-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Charlotte bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$1641\\). Later, she sold the used delivery trucks at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$-64.10\\), find the original cost price of the used delivery trucks.",
+          "options": [
+            "\\(500\\)",
+            "\\(450\\)",
+            "\\(525\\)",
+            "\\(550\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 1641\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -64.10 \\implies 10x - 10y = -6410\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(10x - 10(1641 - x) = -6410 \\implies (10 + 10)x - 16410 = -6410 \\implies x = 500\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q11",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Harper bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$2017\\). Later, she sold the antique clocks at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$8.30\\), find the original cost price of the antique clocks.",
+          "options": [
+            "\\(630\\)",
+            "\\(700\\)",
+            "\\(735\\)",
+            "\\(770\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 2017\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 8.30 \\implies 20x - 10y = 830\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(20x - 10(2017 - x) = 830 \\implies (20 + 10)x - 20170 = 830 \\implies x = 700\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Abigail bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$2205\\). Later, she sold the rehabilitated office desk suites at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$-50.50\\), find the original cost price of the rehabilitated office desk suites.",
+          "options": [
+            "\\(850\\)",
+            "\\(935\\)",
+            "\\(893\\)",
+            "\\(765\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 2205\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -50.50 \\implies 10x - 10y = -5050\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(10x - 10(2205 - x) = -5050 \\implies (10 + 10)x - 22050 = -5050 \\implies x = 850\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q19",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Mila bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$2393\\). Later, she sold the second-hand server cabinets at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$-1.80\\), find the original cost price of the second-hand server cabinets.",
+          "options": [
+            "\\(855\\)",
+            "\\(1045\\)",
+            "\\(998\\)",
+            "\\(950\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 2393\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{15}{100}x - \\frac{10}{100}y = -1.80 \\implies 15x - 10y = -180\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(15x - 10(2393 - x) = -180 \\implies (15 + 10)x - 23930 = -180 \\implies x = 950\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q23",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Avery bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$2581\\). Later, she sold the used delivery trucks at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$56.90\\), find the original cost price of the used delivery trucks.",
+          "options": [
+            "\\(945\\)",
+            "\\(1155\\)",
+            "\\(1103\\)",
+            "\\(1050\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 2581\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 56.90 \\implies 20x - 10y = 5690\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(20x - 10(2581 - x) = 5690 \\implies (20 + 10)x - 25810 = 5690 \\implies x = 1050\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Camila bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$2769\\). Later, she sold the estate jewellery rings at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$-36.90\\), find the original cost price of the estate jewellery rings.",
+          "options": [
+            "\\(1320\\)",
+            "\\(1260\\)",
+            "\\(1200\\)",
+            "\\(1080\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 2769\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -36.90 \\implies 10x - 10y = -3690\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(10x - 10(2769 - x) = -3690 \\implies (10 + 10)x - 27690 = -3690 \\implies x = 1200\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q31",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Sophia bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$2957\\). Later, she sold the antique clocks at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$29.30\\), find the original cost price of the antique clocks.",
+          "options": [
+            "\\(1365\\)",
+            "\\(1170\\)",
+            "\\(1430\\)",
+            "\\(1300\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 2957\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 29.30 \\implies 15x - 10y = 2930\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(15x - 10(2957 - x) = 2930 \\implies (15 + 10)x - 29570 = 2930 \\implies x = 1300\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q35",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Amelia bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$3145\\). Later, she sold the rehabilitated office desk suites at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$105.50\\), find the original cost price of the rehabilitated office desk suites.",
+          "options": [
+            "\\(1540\\)",
+            "\\(1260\\)",
+            "\\(1400\\)",
+            "\\(1470\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 3145\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 105.50 \\implies 20x - 10y = 10550\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(20x - 10(3145 - x) = 10550 \\implies (20 + 10)x - 31450 = 10550 \\implies x = 1400\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q39",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Isabella bought two units of second-hand server cabinets and fiber-optic switch routers for a total bulk purchase price of \\(\\$3333\\). Later, she sold the second-hand server cabinets at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the fiber-optic switch routers. If her net profit from the double transaction was \\(\\$-23.30\\), find the original cost price of the second-hand server cabinets.",
+          "options": [
+            "\\(1550\\)",
+            "\\(1705\\)",
+            "\\(1628\\)",
+            "\\(1395\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{second-hand server cabinets}, text{ and } y \\text{ be the cost of } \\text{fiber-optic switch routers}.\\ \\rightarrow\\ x + y = 3333\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -23.30 \\implies 10x - 10y = -2330\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(10x - 10(3333 - x) = -2330 \\implies (10 + 10)x - 33330 = -2330 \\implies x = 1550\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q43",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Evelyn bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$3521\\). Later, she sold the used delivery trucks at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$60.40\\), find the original cost price of the used delivery trucks.",
+          "options": [
+            "\\(1815\\)",
+            "\\(1733\\)",
+            "\\(1650\\)",
+            "\\(1485\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 3521\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 60.40 \\implies 15x - 10y = 6040\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(15x - 10(3521 - x) = 6040 \\implies (15 + 10)x - 35210 = 6040 \\implies x = 1650\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q47",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Elizabeth bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$3709\\). Later, she sold the estate jewellery rings at a \\(20\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$154.10\\), find the original cost price of the estate jewellery rings.",
+          "options": [
+            "\\(1838\\)",
+            "\\(1575\\)",
+            "\\(1925\\)",
+            "\\(1750\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 3709\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{20}{100}x - \\frac{10}{100}y = 154.10 \\implies 20x - 10y = 15410\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(20x - 10(3709 - x) = 15410 \\implies (20 + 10)x - 37090 = 15410 \\implies x = 1750\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q50",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Ella bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$3897\\). Later, she sold the antique clocks at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$-9.70\\), find the original cost price of the antique clocks.",
+          "options": [
+            "\\(1900\\)",
+            "\\(1995\\)",
+            "\\(1710\\)",
+            "\\(2090\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 3897\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{10}{100}x - \\frac{10}{100}y = -9.70 \\implies 10x - 10y = -970\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(10x - 10(3897 - x) = -970 \\implies (10 + 10)x - 38970 = -970 \\implies x = 1900\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q54",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Sofia bought two units of rehabilitated office desk suites and ergonomic office chairs for a total bulk purchase price of \\(\\$4085\\). Later, she sold the rehabilitated office desk suites at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the ergonomic office chairs. If her net profit from the double transaction was \\(\\$91.50\\), find the original cost price of the rehabilitated office desk suites.",
+          "options": [
+            "\\(2000\\)",
+            "\\(2100\\)",
+            "\\(2200\\)",
+            "\\(1800\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{rehabilitated office desk suites}, text{ and } y \\text{ be the cost of } \\text{ergonomic office chairs}.\\ \\rightarrow\\ x + y = 4085\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 91.50 \\implies 15x - 10y = 9150\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(15x - 10(4085 - x) = 9150 \\implies (15 + 10)x - 40850 = 9150 \\implies x = 2000\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q62",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Charlotte bought two units of used delivery trucks and warehouse cargo forklifts for a total bulk purchase price of \\(\\$4461\\). Later, she sold the used delivery trucks at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the warehouse cargo forklifts. If her net profit from the double transaction was \\(\\$3.90\\), find the original cost price of the used delivery trucks.",
+          "options": [
+            "\\(2363\\)",
+            "\\(2250\\)",
+            "\\(2475\\)",
+            "\\(2025\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{used delivery trucks}, text{ and } y \\text{ be the cost of } \\text{warehouse cargo forklifts}.\\ \\rightarrow\\ x + y = 4461\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{10}{100}x - \\frac{10}{100}y = 3.90 \\implies 10x - 10y = 390\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(10x - 10(4461 - x) = 390 \\implies (10 + 10)x - 44610 = 390 \\implies x = 2250\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q66",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Olivia bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$4649\\). Later, she sold the estate jewellery rings at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$122.60\\), find the original cost price of the estate jewellery rings.",
+          "options": [
+            "\\(2115\\)",
+            "\\(2350\\)",
+            "\\(2585\\)",
+            "\\(2468\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 4649\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 122.60 \\implies 15x - 10y = 12260\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(15x - 10(4649 - x) = 12260 \\implies (15 + 10)x - 46490 = 12260 \\implies x = 2350\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q86",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Camila bought two units of estate jewellery rings and antique pocket watches for a total bulk purchase price of \\(\\$5589\\). Later, she sold the estate jewellery rings at a \\(10\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the antique pocket watches. If her net profit from the double transaction was \\(\\$21.10\\), find the original cost price of the estate jewellery rings.",
+          "options": [
+            "\\(2900\\)",
+            "\\(3045\\)",
+            "\\(3190\\)",
+            "\\(2610\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{estate jewellery rings}, text{ and } y \\text{ be the cost of } \\text{antique pocket watches}.\\ \\rightarrow\\ x + y = 5589\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{10}{100}x - \\frac{10}{100}y = 21.10 \\implies 10x - 10y = 2110\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(10x - 10(5589 - x) = 2110 \\implies (10 + 10)x - 55890 = 2110 \\implies x = 2900\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1b-high-q90",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An independent wholesale dealer Sophia bought two units of antique clocks and retro record players for a total bulk purchase price of \\(\\$5777\\). Later, she sold the antique clocks at a \\(15\\%\\) profit, but incurred a \\(10\\%\\) loss on the sale of the retro record players. If her net profit from the double transaction was \\(\\$184.80\\), find the original cost price of the antique clocks.",
+          "options": [
+            "\\(3355\\)",
+            "\\(3203\\)",
+            "\\(2745\\)",
+            "\\(3050\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "State equations representing total cost.",
+              "work": "\\(\\text{Let } x \\text{ be the cost of } \\text{antique clocks}, text{ and } y \\text{ be the cost of } \\text{retro record players}.\\ \\rightarrow\\ x + y = 5777\\)"
+            },
+            {
+              "explain": "Write the net profit equation expressing profit as positive and loss as negative.",
+              "work": "\\(\\frac{15}{100}x - \\frac{10}{100}y = 184.80 \\implies 15x - 10y = 18480\\)"
+            },
+            {
+              "explain": "Substitute y to solve for the cost price of the first item.",
+              "work": "\\(15x - 10(5777 - x) = 18480 \\implies (15 + 10)x - 57770 = 18480 \\implies x = 3050\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

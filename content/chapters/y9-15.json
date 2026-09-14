@@ -1,0 +1,923 @@
+{
+  "chapterId": "y9-15",
+  "title": "Chapter 15: Further factorisation",
+  "year": "2025",
+  "topics": [
+    {
+      "topicId": "y9-15a",
+      "code": "15A",
+      "title": "Review of factorisation",
+      "questions": [
+        {
+          "id": "y9-ep1-alg-quad-2b",
+          "type": "mc",
+          "stem": "Factorise the following:<br><br>\\(4ax - 12x - 5a + 15\\)",
+          "options": [
+            "\\((a - 3)(4x - 5)\\)",
+            "\\((4x - 3)(a - 5)\\)",
+            "\\((a + 3)(4x - 5)\\)",
+            "\\((4a - 5)(x - 3)\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise by grouping. Group the first two terms and the last two terms.",
+          "steps": [
+            {
+              "explain": "Group the terms in pairs.",
+              "work": "\\((4ax - 12x) - (5a - 15)\\)"
+            },
+            {
+              "explain": "Take out the common factor in each pair.",
+              "work": "\\(4x(a - 3) - 5(a - 3)\\)"
+            },
+            {
+              "explain": "Factor out the common binomial bracket \\((a - 3)\\).",
+              "work": "\\((a - 3)(4x - 5)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-alg-quad-2d",
+          "type": "mc",
+          "stem": "Factorise the following:<br><br>\\(2x^2 + 13x - 7\\)",
+          "options": [
+            "\\((2x - 1)(x + 7)\\)",
+            "\\((2x + 1)(x - 7)\\)",
+            "\\((2x - 7)(x + 1)\\)",
+            "\\((x - 1)(2x + 7)\\)"
+          ],
+          "answer": 0,
+          "hint": "This is a non-monic quadratic. You can use the cross-method or grouping (splitting the middle term).",
+          "steps": [
+            {
+              "explain": "Multiply the coefficient of \\(x^2\\) (which is 2) by the constant term (-7).",
+              "work": "\\(2 \\times -7 = -14\\)"
+            },
+            {
+              "explain": "Find two numbers that multiply to \\(-14\\) and add to the middle coefficient (13).",
+              "work": "The numbers are 14 and -1."
+            },
+            {
+              "explain": "Split the middle term \\(13x\\) using these numbers.",
+              "work": "\\(2x^2 + 14x - 1x - 7\\)"
+            },
+            {
+              "explain": "Factorise by grouping.",
+              "work": "\\(2x(x + 7) - 1(x + 7)\\)"
+            },
+            {
+              "explain": "Factor out the common binomial.",
+              "work": "\\((2x - 1)(x + 7)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-alg-quad-3a",
+          "type": "mc",
+          "stem": "Simplify:<br><br>\\(\\frac{2x + 1}{5} - \\frac{x - 2}{3}\\)",
+          "options": [
+            "\\(\\frac{x + 13}{15}\\)",
+            "\\(\\frac{x - 7}{15}\\)",
+            "\\(\\frac{x - 3}{2}\\)",
+            "\\(\\frac{x + 3}{15}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find a common denominator (15) and combine the numerators.",
+          "steps": [
+            {
+              "explain": "Find the lowest common denominator, which is 15."
+            },
+            {
+              "explain": "Multiply the numerator and denominator of each fraction to get the common denominator.",
+              "work": "\\(\\frac{3(2x + 1)}{15} - \\frac{5(x - 2)}{15}\\)"
+            },
+            {
+              "explain": "Combine into a single fraction.",
+              "work": "\\(\\frac{3(2x + 1) - 5(x - 2)}{15}\\)"
+            },
+            {
+              "explain": "Expand the brackets in the numerator. Be careful with the negative sign.",
+              "work": "\\(\\frac{6x + 3 - 5x + 10}{15}\\)"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "\\(\\frac{x + 13}{15}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-ep1-alg-quad-3b",
+          "type": "mc",
+          "stem": "Simplify:<br><br>\\(\\frac{x^2 + 3x - 4}{x^2 - 9} \\times \\frac{4x - 12}{x + 4}\\)",
+          "options": [
+            "\\(\\frac{4(x - 1)}{x + 3}\\)",
+            "\\(\\frac{4(x + 1)}{x - 3}\\)",
+            "\\(\\frac{4(x - 4)}{x + 3}\\)",
+            "\\(\\frac{x - 1}{x + 3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise every numerator and denominator first, then cancel out common factors.",
+          "steps": [
+            {
+              "explain": "Factorise \\(x^2 + 3x - 4\\).",
+              "work": "\\((x + 4)(x - 1)\\)"
+            },
+            {
+              "explain": "Factorise \\(x^2 - 9\\) (difference of two squares).",
+              "work": "\\((x + 3)(x - 3)\\)"
+            },
+            {
+              "explain": "Factorise \\(4x - 12\\).",
+              "work": "\\(4(x - 3)\\)"
+            },
+            {
+              "explain": "Substitute the factorised forms back into the expression.",
+              "work": "\\(\\frac{(x + 4)(x - 1)}{(x + 3)(x - 3)} \\times \\frac{4(x - 3)}{x + 4}\\)"
+            },
+            {
+              "explain": "Cancel out common factors in the numerator and denominator: \\((x + 4)\\) and \\((x - 3)\\).",
+              "work": "\\(\\frac{x - 1}{x + 3} \\times \\frac{4}{1}\\)"
+            },
+            {
+              "explain": "Multiply the remaining terms.",
+              "work": "\\(\\frac{4(x - 1)}{x + 3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q2a",
+          "type": "mc",
+          "stem": "FULLY factorise the following: \\((x + 2)^2 - 9\\)",
+          "options": [
+            "\\((x + 5)(x - 1)\\)",
+            "\\((x + 5)(x + 1)\\)",
+            "\\((x + 11)(x - 7)\\)",
+            "\\((x + 3)(x - 3)\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Recognise the difference of two squares: \\(A^2 - B^2\\).",
+              "work": "(x + 2)^2 - 3^2"
+            },
+            {
+              "explain": "Apply the formula.",
+              "work": "(x + 2 + 3)(x + 2 - 3)"
+            },
+            {
+              "explain": "Simplify the brackets.",
+              "work": "(x + 5)(x - 1)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-15b",
+      "code": "15b",
+      "title": "Grouping",
+      "questions": [
+        {
+          "id": "ch9t3-q19",
+          "type": "mc",
+          "stem": "Which of the following is the complete factorisation of \\(24x^3-4x^2-6x+1\\)?",
+          "options": [
+            "\\((2x-1)^2(6x-1)\\)",
+            "\\((2x-1)(2x+1)(6x-1)\\)",
+            "\\((2x-1)(2x+1)(6x+1)\\)",
+            "\\((4x-1)(6x^2-1)\\)"
+          ],
+          "answer": 1,
+          "hint": "Group the four terms into two pairs, factor each pair to reveal a common bracket, then factorise the resulting difference of squares.",
+          "steps": [
+            {
+              "explain": "Group the terms into two pairs: the first two terms share a factor of \\(4x^2\\), and the last two share a factor of \\(-1\\).",
+              "work": "\\(24x^3-4x^2-6x+1 = 4x^2(6x-1) - 1(6x-1)\\)"
+            },
+            {
+              "explain": "Both terms now share the common factor \\((6x-1)\\) — factor it out.",
+              "work": "\\(= (4x^2-1)(6x-1)\\)"
+            },
+            {
+              "explain": "Recognise \\(4x^2-1\\) as a difference of squares, \\((2x)^2-1^2\\), and factorise it further.",
+              "work": "\\(4x^2-1 = (2x-1)(2x+1)\\)"
+            },
+            {
+              "explain": "Combine for the complete factorisation.",
+              "work": "\\(= (2x-1)(2x+1)(6x-1)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q2c",
+          "type": "mc",
+          "stem": "FULLY factorise the following: \\(3(a - b) - b(a - b) - 2a^2 + 2ab\\)",
+          "options": [
+            "\\((a - b)(3 + b - 2a)\\)",
+            "\\((a - b)(3 - b - 2a)\\)",
+            "\\((a - b)(3 - b + 2a)\\)",
+            "\\((a + b)(3 - b - 2a)\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Group the first two terms and factor out \\((a - b)\\).",
+              "work": "(a - b)(3 - b) - 2a^2 + 2ab"
+            },
+            {
+              "explain": "Factor out \\(-2a\\) from the last two terms.",
+              "work": "(a - b)(3 - b) - 2a(a - b)"
+            },
+            {
+              "explain": "Factor out the common bracket \\((a - b)\\).",
+              "work": "(a - b)(3 - b - 2a)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-15c",
+      "code": "15C",
+      "title": "Factorising monic quadratics",
+      "questions": [
+        {
+          "id": "sg2022-q2b-i",
+          "type": "mc",
+          "stem": "Factorise \\(x^2+7x+12\\).",
+          "options": [
+            "\\((x-3)(x-4)\\)",
+            "\\((x+3)(x+4)\\)",
+            "\\((x+1)(x+12)\\)",
+            "\\((x+2)(x+6)\\)"
+          ],
+          "answer": 1,
+          "hint": "Find two numbers that multiply to \\(12\\) and add to \\(7\\).",
+          "steps": [
+            {
+              "explain": "Find two numbers that multiply to give \\(12\\) and add to give \\(7\\): these are \\(3\\) and \\(4\\).",
+              "work": "\\(3\\times4=12,\\quad3+4=7\\)"
+            },
+            {
+              "explain": "Write the factorised form using these two numbers.",
+              "work": "\\(x^2+7x+12=(x+3)(x+4)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q1c",
+          "type": "mc",
+          "stem": "Factorise the following: \\(3m^2 + 14m + 8\\)",
+          "options": [
+            "\\((3m - 2)(m - 4)\\)",
+            "\\((3m + 1)(m + 8)\\)",
+            "\\((3m + 2)(m + 4)\\)",
+            "\\((3m + 4)(m + 2)\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Use grouping or the cross method. Find numbers that multiply to \\(3 \\times 8 = 24\\) and add to 14.",
+              "work": "12 \\text{ and } 2"
+            },
+            {
+              "explain": "Split the middle term.",
+              "work": "3m^2 + 12m + 2m + 8"
+            },
+            {
+              "explain": "Factorise by grouping.",
+              "work": "3m(m + 4) + 2(m + 4)"
+            },
+            {
+              "explain": "Final factorised form.",
+              "work": "(3m + 2)(m + 4)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q2b",
+          "type": "mc",
+          "stem": "FULLY factorise the following: \\(27x^2 - 54x + 15\\)",
+          "options": [
+            "\\(3(9x - 1)(x - 5)\\)",
+            "\\(9(3x - 1)(x - 5)\\)",
+            "\\(3(3x - 1)(3x - 5)\\)",
+            "\\(3(3x + 1)(3x + 5)\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Factor out the common factor of 3.",
+              "work": "3(9x^2 - 18x + 5)"
+            },
+            {
+              "explain": "Factorise the quadratic inside the bracket. Find numbers that multiply to 45 and add to -18.",
+              "work": "-15 \\text{ and } -3"
+            },
+            {
+              "explain": "Split the middle term.",
+              "work": "3[9x^2 - 15x - 3x + 5]"
+            },
+            {
+              "explain": "Factorise by grouping.",
+              "work": "3[3x(3x - 5) - 1(3x - 5)]"
+            },
+            {
+              "explain": "Final answer.",
+              "work": "3(3x - 1)(3x - 5)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-15d",
+      "code": "15d",
+      "title": "Factorising the general quadratic ax^2 + bx + c",
+      "questions": [
+        {
+          "id": "ch9t3-q18a",
+          "type": "mc",
+          "stem": "Fully factorise the following expressions.\n\n\\(6x^2+11x-35\\)",
+          "options": [
+            "\\((3x-5)(2x+7)\\)",
+            "\\((3x+5)(2x-7)\\)",
+            "\\((3x-7)(2x+5)\\)",
+            "\\((6x-5)(x+7)\\)"
+          ],
+          "answer": 0,
+          "hint": "Look for factors of \\(6\\) and \\(-35\\) that combine (via the \"split the middle term\" method) to give a middle term of \\(11x\\).",
+          "steps": [
+            {
+              "explain": "Try the factor pair \\((3x-5)(2x+7)\\) and check by expanding.",
+              "work": "\\((3x-5)(2x+7) = 6x^2+21x-10x-35\\)"
+            },
+            {
+              "explain": "Collect like terms and confirm this matches the original expression.",
+              "work": "\\(= 6x^2+11x-35\\)"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "ch9t3-q18b",
+          "type": "mc",
+          "stem": "Fully factorise the following expressions.\n\n\\(25x^2-40x+16\\)",
+          "options": [
+            "\\((5x+4)^2\\)",
+            "\\((25x-4)(x-4)\\)",
+            "\\((5x-4)^2\\)",
+            "\\((5x-4)(5x+4)\\)"
+          ],
+          "answer": 2,
+          "hint": "Check if this is a perfect square: is \\(25x^2=(5x)^2\\), \\(16=4^2\\), and \\(40x=2(5x)(4)\\)?",
+          "steps": [
+            {
+              "explain": "Recognise the pattern of a perfect square: \\(25x^2=(5x)^2\\), \\(16=4^2\\), and check the middle term.",
+              "work": "\\(2\\times(5x)\\times4 = 40x\\) ✓ (matches the middle term, with the correct sign for subtraction)"
+            },
+            {
+              "explain": "Write as a perfect square using \\((a-b)^2=a^2-2ab+b^2\\).",
+              "work": "\\(25x^2-40x+16 = (5x-4)^2\\)"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "ch9t3-q18c",
+          "type": "mc",
+          "stem": "Fully factorise the following expressions.\n\n\\(12x^2-3xy-4x+y\\)",
+          "options": [
+            "\\((3x-1)(4x+y)\\)",
+            "\\((12x-y)(x-1)\\)",
+            "\\((3x+1)(4x-y)\\)",
+            "\\((3x-1)(4x-y)\\)"
+          ],
+          "answer": 3,
+          "hint": "Use grouping: pair the first two terms and the last two terms, factoring out a common factor from each pair.",
+          "steps": [
+            {
+              "explain": "Group the terms into two pairs and factor each pair.",
+              "work": "\\(12x^2-3xy-4x+y = 3x(4x-y)-1(4x-y)\\)"
+            },
+            {
+              "explain": "Both terms now share the common factor \\((4x-y)\\) — factor it out.",
+              "work": "\\(= (3x-1)(4x-y)\\)"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "sg2022-q5c",
+          "type": "mc",
+          "stem": "Factorise \\(4x^2+16x+7\\).",
+          "options": [
+            "\\((4x+1)(x+7)\\)",
+            "\\((4x+7)(x+1)\\)",
+            "\\((2x+7)(2x+1)\\)",
+            "\\((2x+1)(2x+7)\\)"
+          ],
+          "answer": 3,
+          "hint": "Look for two numbers that multiply to \\(4\\times7=28\\) and add to \\(16\\) — these are \\(2\\) and \\(14\\).",
+          "steps": [
+            {
+              "explain": "Find two numbers that multiply to \\(4\\times7=28\\) and add to \\(16\\): these are \\(2\\) and \\(14\\).",
+              "work": "\\(2\\times14=28,\\quad2+14=16\\)"
+            },
+            {
+              "explain": "Split the middle term using these numbers, then factorise by grouping.",
+              "work": "\\(4x^2+2x+14x+7 = 2x(2x+1)+7(2x+1)\\)"
+            },
+            {
+              "explain": "Take out the common factor \\((2x+1)\\).",
+              "work": "\\(=(2x+1)(2x+7)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-15e",
+      "code": "15E",
+      "title": "Simplifying, multiplying and dividing algebraic fractions",
+      "questions": [
+        {
+          "id": "sg2022-q4c",
+          "type": "mc",
+          "stem": "Factorise and simplify \\(\\dfrac{x^2-9x+14}{x^2-2x-35}\\).",
+          "options": [
+            "\\(\\dfrac{x-2}{x-5}\\)",
+            "\\(\\dfrac{x+2}{x-5}\\)",
+            "\\(\\dfrac{x-2}{x+5}\\)",
+            "\\(\\dfrac{x-7}{x+5}\\)"
+          ],
+          "answer": 2,
+          "hint": "Factorise the numerator and denominator separately, then cancel any common factor.",
+          "steps": [
+            {
+              "explain": "Factorise the numerator: find two numbers that multiply to \\(14\\) and add to \\(-9\\) — these are \\(-2\\) and \\(-7\\).",
+              "work": "\\(x^2-9x+14=(x-2)(x-7)\\)"
+            },
+            {
+              "explain": "Factorise the denominator: find two numbers that multiply to \\(-35\\) and add to \\(-2\\) — these are \\(-7\\) and \\(5\\).",
+              "work": "\\(x^2-2x-35=(x-7)(x+5)\\)"
+            },
+            {
+              "explain": "Cancel the common factor \\((x-7)\\) from the numerator and denominator.",
+              "work": "\\(\\dfrac{(x-2)(x-7)}{(x-7)(x+5)}=\\dfrac{x-2}{x+5}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "sg2022-q7c",
+          "type": "mc",
+          "stem": "Simplify \\(\\dfrac{3x^2-12}{30x+15}\\div\\dfrac{2x^2-3x-2}{4x^2+4x+1}\\).",
+          "options": [
+            "\\(\\dfrac{3(x+2)}{5}\\)",
+            "\\(\\dfrac{x+2}{5}\\)",
+            "\\(\\dfrac{x+2}{15}\\)",
+            "\\(\\dfrac{x-2}{5}\\)"
+          ],
+          "answer": 1,
+          "hint": "Factorise every expression fully first, then multiply by the reciprocal of the second fraction.",
+          "steps": [
+            {
+              "explain": "Factorise every expression. \\(3x^2-12=3(x-2)(x+2)\\); \\(30x+15=15(2x+1)\\); \\(2x^2-3x-2=(2x+1)(x-2)\\); \\(4x^2+4x+1=(2x+1)^2\\).",
+              "work": "\\(\\dfrac{3(x-2)(x+2)}{15(2x+1)}\\div\\dfrac{(2x+1)(x-2)}{(2x+1)^2}\\)"
+            },
+            {
+              "explain": "Dividing by a fraction means multiplying by its reciprocal.",
+              "work": "\\(=\\dfrac{3(x-2)(x+2)}{15(2x+1)}\\times\\dfrac{(2x+1)^2}{(2x+1)(x-2)}\\)"
+            },
+            {
+              "explain": "Cancel the common factors \\((x-2)\\) and \\((2x+1)^2\\wedge(2x+1)\\) between numerator and denominator.",
+              "work": "\\(=\\dfrac{3(x+2)}{15}\\)"
+            },
+            {
+              "explain": "Simplify \\(\\dfrac{3}{15}\\) to \\(\\dfrac15\\).",
+              "work": "\\(=\\dfrac{x+2}{5}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q3a",
+          "type": "mc",
+          "stem": "Simplify the following algebraic fraction: \\(\\frac{2(x - 3)^2}{x^2 - 11x + 24} \\div \\frac{x^2 - 4}{x - 2}\\)",
+          "options": [
+            "\\(\\frac{2(x - 3)}{(x + 8)(x - 2)}\\)",
+            "\\(\\frac{2(x - 3)}{(x - 8)(x + 2)}\\)",
+            "\\(\\frac{x - 3}{(x - 8)(x - 2)}\\)",
+            "\\(\\frac{2}{(x - 8)}\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Factorise all polynomials.",
+              "work": "x^2 - 11x + 24 = (x - 8)(x - 3)\\\\x^2 - 4 = (x - 2)(x + 2)"
+            },
+            {
+              "explain": "Rewrite the division as multiplication by the reciprocal.",
+              "work": "\\frac{2(x - 3)^2}{(x - 8)(x - 3)} \\times \\frac{x - 2}{(x - 2)(x + 2)}"
+            },
+            {
+              "explain": "Cancel common factors.",
+              "work": "\\frac{2(x - 3)}{(x - 8)} \\times \\frac{1}{(x + 2)}"
+            },
+            {
+              "explain": "Multiply fractions.",
+              "work": "\\frac{2(x - 3)}{(x - 8)(x + 2)}"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t3q7a",
+          "type": "mc",
+          "stem": "Simplify \\(\\frac{3x^2 - x - 2}{x^2 - 1}\\)",
+          "options": [
+            "\\(\\frac{3x-2}{x+1}\\)",
+            "\\(\\frac{3x-2}{x-1}\\)",
+            "\\(\\frac{3x+2}{x+1}\\)",
+            "\\(\\frac{3x+2}{x-1}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Factorise the numerator (numbers multiplying to $3\\times(-2)=-6$, adding to $-1$: these are $-3$ and $2$) and the denominator (difference of two squares).",
+              "work": "\\(\\frac{(3x+2)(x-1)}{(x-1)(x+1)}\\)"
+            },
+            {
+              "explain": "The factor $(x-1)$ appears in both the numerator and denominator, so it cancels (valid since $x \\ne 1$).",
+              "work": "\\(\\frac{3x+2}{x+1}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-15e"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t3q7b",
+          "type": "mc",
+          "stem": "Simplify \\(\\frac{2m+4}{7m} \\div \\frac{m^2+2m}{14m^3}\\)",
+          "options": [
+            "\\(14m^2\\)",
+            "\\(4m\\)",
+            "\\(\\frac{4}{m}\\)",
+            "\\(\\frac{1}{4m}\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Dividing by a fraction is the same as multiplying by its reciprocal — flip the second fraction.",
+              "work": "\\(\\frac{2m+4}{7m} \\times \\frac{14m^3}{m^2+2m}\\)"
+            },
+            {
+              "explain": "Factorise: $2m+4=2(m+2)$ and $m^2+2m=m(m+2)$.",
+              "work": "\\(\\frac{2(m+2)}{7m} \\times \\frac{14m^3}{m(m+2)}\\)"
+            },
+            {
+              "explain": "Multiply numerators and denominators, then cancel the common factors $(m+2)$, one factor of $m$, and simplify $\\frac{2\\times14}{7}=4$.",
+              "work": "\\(\\frac{2(m+2) \\times 14m^3}{7m \\times m(m+2)} = \\frac{28m^3}{7m^2} = 4m\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-15e"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t3q7c",
+          "type": "mc",
+          "stem": "Simplify \\(\\frac{5}{y^2+2y} - \\frac{2}{y^2-4}\\)",
+          "options": [
+            "\\(\\frac{3y-10}{y(y+2)(y-2)}\\)",
+            "\\(\\frac{3y+10}{y(y+2)(y-2)}\\)",
+            "\\(\\frac{3y-10}{y^2(y-2)}\\)",
+            "\\(\\frac{3}{y(y-2)}\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Factorise each denominator: $y^2+2y=y(y+2)$, and $y^2-4=(y-2)(y+2)$ (difference of two squares).",
+              "work": "\\(\\frac{5}{y(y+2)} - \\frac{2}{(y-2)(y+2)}\\)"
+            },
+            {
+              "explain": "The lowest common denominator is $y(y+2)(y-2)$. Multiply the first fraction by $\\frac{y-2}{y-2}$ and the second by $\\frac{y}{y}$.",
+              "work": "\\(\\frac{5(y-2)}{y(y+2)(y-2)} - \\frac{2y}{y(y+2)(y-2)}\\)"
+            },
+            {
+              "explain": "Combine over the common denominator, then expand and simplify the numerator: $5(y-2)-2y = 5y-10-2y$.",
+              "work": "\\(\\frac{5y - 10 - 2y}{y(y+2)(y-2)} = \\frac{3y-10}{y(y+2)(y-2)}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-15e"
+          }
+        },
+        {
+          "id": "y9-willoughby-19-t3q7d",
+          "type": "mc",
+          "stem": "Simplify \\(\\frac{3x+6}{x^2+x-6} \\div \\frac{x^2-2x-8}{x^2-x-12}\\)",
+          "options": [
+            "\\(\\frac{3}{x+2}\\)",
+            "\\(\\frac{x+2}{x-2}\\)",
+            "\\(\\frac{3}{x-2}\\)",
+            "\\(3(x-2)\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Dividing by a fraction is the same as multiplying by its reciprocal — flip the second fraction.",
+              "work": "\\(\\frac{3x+6}{x^2+x-6} \\times \\frac{x^2-x-12}{x^2-2x-8}\\)"
+            },
+            {
+              "explain": "Factorise every numerator and denominator: $3x+6=3(x+2)$; $x^2+x-6=(x+3)(x-2)$; $x^2-x-12=(x-4)(x+3)$; $x^2-2x-8=(x-4)(x+2)$.",
+              "work": "\\(\\frac{3(x+2)}{(x+3)(x-2)} \\times \\frac{(x-4)(x+3)}{(x-4)(x+2)}\\)"
+            },
+            {
+              "explain": "Cancel every factor that appears in both a numerator and a denominator: $(x+2)$, $(x+3)$, and $(x-4)$ all cancel.",
+              "work": "\\(\\frac{3}{x-2}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2019 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9",
+            "topic": "y9-15e"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-15f",
+      "code": "15f",
+      "title": "Adding and subtracting algebraic fractions",
+      "questions": [
+        {
+          "id": "ch9t3-q15a",
+          "type": "mc",
+          "stem": "Express as a single fraction in simplest form.\n\n\\(\\dfrac{3a}{8}-\\dfrac{2a^2}{3}\\)",
+          "options": [
+            "\\(\\dfrac{3a-2a^2}{5}\\)",
+            "\\(\\dfrac{9a-16a^2}{24}\\)",
+            "\\(\\dfrac{9a-2a^2}{24}\\)",
+            "\\(\\dfrac{9a-16a^2}{11}\\)"
+          ],
+          "answer": 1,
+          "hint": "Find a common denominator (24) for both fractions, then combine.",
+          "steps": [
+            {
+              "explain": "Find the lowest common denominator (24) and rewrite both fractions.",
+              "work": "\\(\\dfrac{3a}{8} = \\dfrac{9a}{24}, \\qquad \\dfrac{2a^2}{3} = \\dfrac{16a^2}{24}\\)"
+            },
+            {
+              "explain": "Subtract the two fractions.",
+              "work": "\\(\\dfrac{9a}{24}-\\dfrac{16a^2}{24} = \\dfrac{9a-16a^2}{24}\\)"
+            }
+          ],
+          "manual": true,
+          "meta": {
+            "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
+            "school": "Chatswood High School",
+            "examType": "Assessment Task",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "sg2022-q1g",
+          "type": "mc",
+          "stem": "Simplify \\(\\dfrac{2x}{y}+\\dfrac{x}{y}\\).",
+          "options": [
+            "\\(\\dfrac{2x}{y^2}\\)",
+            "\\(\\dfrac{3x}{y}\\)",
+            "\\(\\dfrac{x}{y}\\)",
+            "\\(\\dfrac{3x}{2y}\\)"
+          ],
+          "answer": 1,
+          "hint": "Since both fractions already share the denominator \\(y\\), add the numerators directly.",
+          "steps": [
+            {
+              "explain": "The two fractions share the same denominator, \\(y\\), so combine the numerators.",
+              "work": "\\(\\dfrac{2x}{y}+\\dfrac{x}{y}=\\dfrac{2x+x}{y}\\)"
+            },
+            {
+              "explain": "Combine like terms in the numerator.",
+              "work": "\\(=\\dfrac{3x}{y}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "sg2022-q3i",
+          "type": "mc",
+          "stem": "Write \\(\\dfrac{a}{b+1}-\\dfrac{a}{(b+1)^2}\\) as a single fraction in simplest form.",
+          "options": [
+            "\\(\\dfrac{ab}{(b+1)^2}\\)",
+            "\\(\\dfrac{a(b+2)}{(b+1)^2}\\)",
+            "\\(\\dfrac{a}{(b+1)^2}\\)",
+            "\\(0\\)"
+          ],
+          "answer": 0,
+          "hint": "The lowest common denominator is \\((b+1)^2\\). Multiply the first fraction top and bottom by \\((b+1)\\).",
+          "steps": [
+            {
+              "explain": "The lowest common denominator is \\((b+1)^2\\). Rewrite the first fraction over this denominator.",
+              "work": "\\(\\dfrac{a}{b+1}=\\dfrac{a(b+1)}{(b+1)^2}\\)"
+            },
+            {
+              "explain": "Subtract the two fractions now that they share a denominator.",
+              "work": "\\(\\dfrac{a(b+1)}{(b+1)^2}-\\dfrac{a}{(b+1)^2}=\\dfrac{a(b+1)-a}{(b+1)^2}\\)"
+            },
+            {
+              "explain": "Expand and simplify the numerator.",
+              "work": "\\(a(b+1)-a=ab+a-a=ab\\)"
+            },
+            {
+              "explain": "Write the final simplified fraction.",
+              "work": "\\(=\\dfrac{ab}{(b+1)^2}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        },
+        {
+          "id": "y9-willoughby-17-y-pb-q3b",
+          "type": "mc",
+          "stem": "Simplify the following algebraic fraction: \\(\\frac{3}{x^2 - 7x + 10} - \\frac{2}{5x - 10}\\)",
+          "options": [
+            "\\(\\frac{5}{5(x - 5)(x - 2)}\\)",
+            "\\(\\frac{15 - 2x}{5(x - 5)(x - 2)}\\)",
+            "\\(\\frac{25 - 2x}{5(x - 5)(x - 2)}\\)",
+            "\\(\\frac{25 + 2x}{5(x - 5)(x - 2)}\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Factorise the denominators.",
+              "work": "\\frac{3}{(x - 5)(x - 2)} - \\frac{2}{5(x - 2)}"
+            },
+            {
+              "explain": "Find the lowest common denominator, which is \\(5(x - 5)(x - 2)\\). Adjust numerators.",
+              "work": "\\frac{3 \\times 5}{5(x - 5)(x - 2)} - \\frac{2(x - 5)}{5(x - 5)(x - 2)}"
+            },
+            {
+              "explain": "Combine over the common denominator and expand.",
+              "work": "\\frac{15 - (2x - 10)}{5(x - 5)(x - 2)} = \\frac{15 - 2x + 10}{5(x - 5)(x - 2)}"
+            },
+            {
+              "explain": "Simplify the numerator.",
+              "work": "\\frac{25 - 2x}{5(x - 5)(x - 2)}"
+            }
+          ],
+          "meta": {
+            "source": "Willoughby Y9 2017 Yearly Exam",
+            "school": "Willoughby Girls High School",
+            "examType": "Yearly",
+            "grade": "9"
+          }
+        }
+      ]
+    },
+    {
+      "topicId": "y9-15g",
+      "code": "15G",
+      "title": "Completing the square",
+      "questions": [
+        {
+          "id": "sg2022-q5d",
+          "type": "mc",
+          "stem": "Use the method of completing the square to solve \\(x^2-4x-4=0\\).",
+          "options": [
+            "\\(x=-2\\pm2\\sqrt2\\)",
+            "\\(x=2\\pm\\sqrt2\\)",
+            "\\(x=4\\pm2\\sqrt2\\)",
+            "\\(x=2\\pm2\\sqrt2\\)"
+          ],
+          "answer": 3,
+          "hint": "Halve the coefficient of \\(x\\), and add/subtract its square to complete the square on the left.",
+          "steps": [
+            {
+              "explain": "Move the constant to the right-hand side.",
+              "work": "\\(x^2-4x=4\\)"
+            },
+            {
+              "explain": "Halve the coefficient of \\(x\\) (\\(-4\\div2=-2\\)), square it (\\(4\\)), and add it to both sides to complete the square.",
+              "work": "\\(x^2-4x+4=4+4\\)"
+            },
+            {
+              "explain": "Write the left-hand side as a perfect square.",
+              "work": "\\((x-2)^2=8\\)"
+            },
+            {
+              "explain": "Take the square root of both sides (remembering the \\(\\pm\\)), then solve for \\(x\\).",
+              "work": "\\(x-2=\\pm\\sqrt8=\\pm2\\sqrt2 \\Rightarrow x=2\\pm2\\sqrt2\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Grammar School Form III Annual Examination 2022",
+            "school": "Sydney Grammar School",
+            "examType": "Annual Examination",
+            "grade": "9"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 300 70" width="300" height="70" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:0.5rem auto;background-color:#f8fafc;border-radius:12px;border:1px solid #e2e8f0;">
+<line x1="20" y1="35" x2="280" y2="35" stroke="#475569" stroke-width="1.6"/>
+<line x1="150" y1="28" x2="150" y2="42" stroke="#475569" stroke-width="1.4"/>
+<text x="150" y="55" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="600" fill="#1e293b" stroke="#f8fafc" stroke-width="3" paint-order="stroke">1.5</text>
+<line x1="20" y1="35" x2="150" y2="35" stroke="#dc2626" stroke-width="3.5"/>
+<circle cx="150" cy="35" r="5" fill="#dc2626"/>
+<polygon points="20,35 30,30 30,40" fill="#dc2626"/>
+</svg>

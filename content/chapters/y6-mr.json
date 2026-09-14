@@ -1,0 +1,1258 @@
+{
+  "chapterId": "y6-mr",
+  "title": "Chapter 5: Multiplicative Relations (B)",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-mr-2",
+      "code": "MA3-MR-01",
+      "title": "Multiply and divide decimals",
+      "questions": [
+        {
+          "id": "y6-mr-2-q8a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(2.1 \\\\times 4\\\\).",
+          "options": [
+            "\\\\(8.1\\\\)",
+            "\\\\(6.4\\\\)",
+            "\\\\(8.4\\\\)",
+            "\\\\(0.84\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply as if they are whole numbers (21 x 4), then place the decimal point so there is one decimal place in the product.",
+          "steps": [
+            {
+              "explain": "We can rewrite the decimal multiplication by ignoring the decimal point first and multiplying as whole numbers.",
+              "work": "\\\\(21 \\\\times 4 = 84\\\\)"
+            },
+            {
+              "explain": "Count the number of decimal places in the factors. 2.1 has one decimal place, while 4 has zero. The answer must have one decimal place.",
+              "work": "\\dots \\\\implies 8.4"
+            },
+            {
+              "explain": "Thus, 2.1 multiplied by 4 equals 8.4.",
+              "work": "\\\\(2.1 \\\\times 4 = 8.4\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-q8b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(3.8 \\\\times 5\\\\).",
+          "options": [
+            "\\\\(15.0\\\\)",
+            "\\\\(1.9\\\\)",
+            "\\\\(19\\\\) (or \\\\(19.0\\\\))",
+            "\\\\(19.8\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 38 by 5, then place the decimal point to have one decimal place.",
+          "steps": [
+            {
+              "explain": "Multiply the digits as if they were whole numbers: 38 multiplied by 5.",
+              "work": "\\\\(38 \\\\times 5 = 190\\\\)"
+            },
+            {
+              "explain": "Since 3.8 has one decimal digit, insert the decimal point in the result so that there is exactly one digit after it.",
+              "work": "\\dots \\\\implies 19.0"
+            },
+            {
+              "explain": "We simplify 19.0 to the whole number 19.",
+              "work": "\\\\(19.0 = 19\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-q8c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(6.4 \\\\times 8\\\\).",
+          "options": [
+            "\\\\(51.2\\\\)",
+            "\\\\(512\\\\)",
+            "\\\\(48.2\\\\)",
+            "\\\\(5.12\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 64 by 8, then place the decimal point one place from the right.",
+          "steps": [
+            {
+              "explain": "Perform the multiplication ignoring the decimal point: 64 multiplied by 8.",
+              "work": "\\\\(64 \\\\times 8 = 512\\\\)"
+            },
+            {
+              "explain": "Because the number 6.4 contains exactly one decimal place, the product must also have one decimal place.",
+              "work": "\\dots \\\\implies 51.2"
+            },
+            {
+              "explain": "Thus, the product of 6.4 and 8 is 51.2.",
+              "work": "\\\\(6.4 \\\\times 8 = 51.2\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-q9a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(6.8 \\\\div 2\\\\).",
+          "options": [
+            "\\\\(0.34\\\\)",
+            "\\\\(3.9\\\\)",
+            "\\\\(3.2\\\\)",
+            "\\\\(3.4\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide the whole number part first (6 / 2), then the decimal part (8 tenths / 2). Keep the decimal point in line.",
+          "steps": [
+            {
+              "explain": "We set up short division for the decimal number. Write the division aligning the decimal point of the quotient directly above that of the dividend.",
+              "work": "\\dots \\\\implies 6.8 \\\\div 2"
+            },
+            {
+              "explain": "Divide the units digit: 6 divided by 2 is 3 with no remainder.",
+              "work": "\\\\(6 \\\\div 2 = 3\\\\)"
+            },
+            {
+              "explain": "Divide the tenths digit: 8 divided by 2 is 4. Placing this after the decimal point yields 3.4.",
+              "work": "\\\\(8 \\\\div 2 = 4 \\\\implies 3.4\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-q9b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(7.5 \\\\div 5\\\\).",
+          "options": [
+            "\\\\(1.5\\\\)",
+            "\\\\(0.15\\\\)",
+            "\\\\(1.1\\\\)",
+            "\\\\(1.25\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 7 by 5, carry the remainder of 2 over to the tenths place to make it 25 tenths, then divide by 5.",
+          "steps": [
+            {
+              "explain": "Set up the division vertically. Direct the decimal point straight up from the dividend 7.5 to the quotient line.",
+              "work": "\\dots \\\\implies 7.5 \\\\div 5"
+            },
+            {
+              "explain": "Divide the units digit: 7 divided by 5 is 1, with a remainder of 2.",
+              "work": "\\dots \\\\implies 1 \\\\text{ remainder } 2"
+            },
+            {
+              "explain": "Carry the remainder of 2 into the tenths column, combining it with 5 to make 25 tenths. Divide: 25 divided by 5 is 5.",
+              "work": "\\\\(25 \\\\div 5 = 5 \\\\implies 1.5\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-q9c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(8.4 \\\\div 4\\\\).",
+          "options": [
+            "\\\\(1.2\\\\)",
+            "\\\\(2.1\\\\)",
+            "\\\\(0.21\\\\)",
+            "\\\\(2.2\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the units digit first, then divide the tenths digit.",
+          "steps": [
+            {
+              "explain": "Set up the vertical division problem, keeping the decimal points aligned.",
+              "work": "\\dots \\\\implies 8.4 \\\\div 4"
+            },
+            {
+              "explain": "Divide the units digit: 8 divided by 4 is 2 with zero remainder.",
+              "work": "\\\\(8 \\\\div 4 = 2\\\\)"
+            },
+            {
+              "explain": "Divide the tenths digit: 4 divided by 4 is 1. Putting the components together gives 2.1.",
+              "work": "\\\\(4 \\\\div 4 = 1 \\\\implies 2.1\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l2-q9a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(5.4 \\\\times 7\\\\).",
+          "options": [
+            "\\\\(378\\\\)",
+            "\\\\(37.8\\\\)",
+            "\\\\(3.78\\\\)",
+            "\\\\(35.8\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 54 by 7, then insert the decimal point one place from the right.",
+          "steps": [
+            {
+              "explain": "Multiply as whole numbers.",
+              "work": "\\\\(54 \\\\times 7 = 378\\\\)"
+            },
+            {
+              "explain": "Insert the decimal point since the factor 5.4 has one decimal place.",
+              "work": "\\\\(378 \\\\implies 37.8\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l2-q9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(13.2 \\\\times 5\\\\).",
+          "options": [
+            "\\\\(66\\\\) (or \\\\(66.0\\\\))",
+            "\\\\(6.6\\\\)",
+            "\\\\(65.0\\\\)",
+            "\\\\(660\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 132 by 5, then place the decimal point one position from the right.",
+          "steps": [
+            {
+              "explain": "Multiply the factors as whole numbers.",
+              "work": "\\\\(132 \\\\times 5 = 660\\\\)"
+            },
+            {
+              "explain": "Position the decimal point to match the single decimal place in the factor 13.2.",
+              "work": "\\\\(660 \\\\implies 66.0 = 66\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l2-q9c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(0.7 \\\\times 0.4\\\\).",
+          "options": [
+            "\\\\(0.028\\\\)",
+            "\\\\(0.35\\\\)",
+            "\\\\(0.28\\\\)",
+            "\\\\(2.8\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 7 by 4. Since both decimal numbers have one decimal digit, the result must have two decimal digits.",
+          "steps": [
+            {
+              "explain": "First, multiply the numbers ignoring decimal points.",
+              "work": "\\\\(7 \\\\times 4 = 28\\\\)"
+            },
+            {
+              "explain": "Count total decimal places in both factors. 0.7 has 1 and 0.4 has 1, which sum to 2 decimal places.",
+              "work": "\\\\(1 + 1 = 2\\\\)"
+            },
+            {
+              "explain": "Place the decimal point in the product so that there are 2 places after it.",
+              "work": "\\\\(28 \\\\implies 0.28\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l2-q10a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(6.5 \\\\div 5\\\\).",
+          "options": [
+            "\\\\(1.25\\\\)",
+            "\\\\(1.3\\\\)",
+            "\\\\(0.13\\\\)",
+            "\\\\(1.5\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 6 by 5. Carry the remainder of 1 over to the tenths to make it 15 tenths, then divide by 5.",
+          "steps": [
+            {
+              "explain": "Divide the units place digit: 6 divided by 5 is 1, with a remainder of 1.",
+              "work": "\\\\(6 \\\\div 5 = 1 \\text{ remainder } 1\\\\)"
+            },
+            {
+              "explain": "Carry the remainder of 1 into the tenths column, giving 15 tenths. Divide: 15 divided by 5 is 3.",
+              "work": "\\\\(15 \\\\div 5 = 3 \\\\implies 1.3\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l2-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(3.2 \\\\div 4\\\\).",
+          "options": [
+            "\\\\(0.75\\\\)",
+            "\\\\(0.8\\\\)",
+            "\\\\(8.0\\\\)",
+            "\\\\(0.08\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Since 3 is less than 4, the units place digit will be 0. Divide 32 tenths by 4.",
+          "steps": [
+            {
+              "explain": "Identify that 3 cannot be divided by 4, so write 0 in the units place of the quotient.",
+              "work": "\\\\(3 \\\\div 4 = 0 \\text{ remainder } 3\\\\)"
+            },
+            {
+              "explain": "Combine the remainder 3 with the tenths digit 2 to get 32 tenths. Divide: 32 divided by 4 is 8.",
+              "work": "\\\\(32 \\\\div 4 = 8 \\\\implies 0.8\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l2-q10c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(0.21 \\\\div 3\\\\).",
+          "options": [
+            "\\\\(0.07\\\\)",
+            "\\\\(0.007\\\\)",
+            "\\\\(0.7\\\\)",
+            "\\\\(0.14\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Note that 2 cannot be divided by 3, so there must be a placeholder zero in the tenths column of the answer.",
+          "steps": [
+            {
+              "explain": "Divide tenths: 2 cannot be divided by 3, so the tenths digit of the quotient is 0.",
+              "work": "\\\\(2 \\\\div 3 = 0 \\text{ remainder } 2\\\\)"
+            },
+            {
+              "explain": "Combine the remainder 2 with the hundredths digit 1 to make 21 hundredths. Divide: 21 divided by 3 is 7.",
+              "work": "\\\\(21 \\\\div 3 = 7 \\\\implies 0.07\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l2-q11c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(5 \\\\times \\$3.47\\\\).",
+          "options": [
+            "\\\\(\\$17.35\\\\)",
+            "\\\\(\\$17.45\\\\)",
+            "\\\\(\\$15.35\\\\)",
+            "\\\\(\\$17.05\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 347 by 5, then place the decimal point so there are two decimal places.",
+          "steps": [
+            {
+              "explain": "Multiply as whole numbers ignoring the decimal point.",
+              "work": "\\\\(347 \\\\times 5 = 1735\\\\)"
+            },
+            {
+              "explain": "Since the factor $3.47 has two decimal places, the product must also have two decimal places.",
+              "work": "\\\\(1735 \\\\implies \\$17.35\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l2-q11d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(\\$6.25 \\\\div 5\\\\).",
+          "options": [
+            "\\\\(\\$1.25\\\\)",
+            "\\\\(\\$1.20\\\\)",
+            "\\\\(\\$1.05\\\\)",
+            "\\\\(\\$1.15\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the dollar amount using vertical short division.",
+          "steps": [
+            {
+              "explain": "Divide the whole dollar part first: 6 divided by 5 is 1, with a remainder of 1.",
+              "work": "\\\\(6 \\\\div 5 = 1 \\text{ remainder } 1\\\\)"
+            },
+            {
+              "explain": "Carry the remainder of 1 to make 12 tenths. 12 divided by 5 is 2, remainder 2.",
+              "work": "\\\\(12 \\\\div 5 = 2 \\text{ remainder } 2\\\\)"
+            },
+            {
+              "explain": "Carry the remainder of 2 to make 25 hundredths. 25 divided by 5 is 5.",
+              "work": "\\\\(25 \\\\div 5 = 5 \\\\implies \\$1.25\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q7a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(12.5 \\\\times 7\\\\).",
+          "options": [
+            "\\\\(84.5\\\\)",
+            "\\\\(875\\\\)",
+            "\\\\(87.5\\\\)",
+            "\\\\(8.75\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply 125 by 7, then insert the decimal point one position from the right.",
+          "steps": [
+            {
+              "explain": "Ignore the decimal point and multiply the numbers as if they were integers.",
+              "work": "\\\\(125 \\\\times 7 = 875\\\\)"
+            },
+            {
+              "explain": "Place the decimal point back. Since 12.5 has one decimal place, the answer must have one decimal place.",
+              "work": "\\\\(875 \\\\implies 87.5\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q7b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(0.5 \\\\times 0.3\\\\).",
+          "options": [
+            "\\\\(0.05\\\\)",
+            "\\\\(0.15\\\\)",
+            "\\\\(1.5\\\\)",
+            "\\\\(0.015\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 5 by 3. Since both numbers have one decimal place, their product must have two decimal places.",
+          "steps": [
+            {
+              "explain": "Multiply the numbers ignoring decimal points.",
+              "work": "\\\\(5 \\\\times 3 = 15\\\\)"
+            },
+            {
+              "explain": "Calculate the total decimal places. Each factor has one decimal place, which sums to two decimal places.",
+              "work": "\\\\(1 + 1 = 2\\\\)"
+            },
+            {
+              "explain": "Insert the decimal point to show two decimal places.",
+              "work": "\\\\(15 \\\\implies 0.15\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q7c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(0.32 \\\\times 8\\\\).",
+          "options": [
+            "\\\\(2.48\\\\)",
+            "\\\\(2.56\\\\)",
+            "\\\\(25.6\\\\)",
+            "\\\\(0.256\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 32 by 8, then place the decimal point so there are two decimal places in the answer.",
+          "steps": [
+            {
+              "explain": "Multiply as whole numbers.",
+              "work": "\\\\(32 \\\\times 8 = 256\\\\)"
+            },
+            {
+              "explain": "Count decimal places in factors. 0.32 has two decimal places, so the product must have two decimal places.",
+              "work": "\\\\(256 \\\\implies 2.56\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(13.8 \\\\div 6\\\\).",
+          "options": [
+            "\\\\(0.23\\\\)",
+            "\\\\(2.8\\\\)",
+            "\\\\(2.3\\\\)",
+            "\\\\(2.13\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Divide 13 by 6 first. Carry the remainder of 1 to the tenths column to divide 18 tenths by 6.",
+          "steps": [
+            {
+              "explain": "Divide the whole units: 13 divided by 6 is 2, with a remainder of 1.",
+              "work": "\\\\(13 \\\\div 6 = 2 \\text{ remainder } 1\\\\)"
+            },
+            {
+              "explain": "Carry the remainder of 1 to the tenths column to make 18 tenths. Divide: 18 divided by 6 is 3.",
+              "work": "\\\\(18 \\\\div 6 = 3 \\\\implies 2.3\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(136.5 \\\\div 5\\\\).",
+          "options": [
+            "\\\\(27.1\\\\)",
+            "\\\\(25.3\\\\)",
+            "\\\\(27.5\\\\)",
+            "\\\\(27.3\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide 13 by 5, carry the remainder to 6, then carry the next remainder to 5.",
+          "steps": [
+            {
+              "explain": "Divide the first two digits: 13 divided by 5 is 2, remainder 3.",
+              "work": "\\\\(13 \\\\div 5 = 2 \\text{ remainder } 3\\\\)"
+            },
+            {
+              "explain": "Carry 3 to make 36. 36 divided by 5 is 7, remainder 1.",
+              "work": "\\\\(36 \\\\div 5 = 7 \\text{ remainder } 1\\\\)"
+            },
+            {
+              "explain": "Carry 1 to the tenths column to make 15 tenths. Divide: 15 divided by 5 is 3.",
+              "work": "\\\\(15 \\\\div 5 = 3 \\\\implies 27.3\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q8c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(44.66 \\\\div 7\\\\).",
+          "options": [
+            "\\\\(6.28\\\\)",
+            "\\\\(6.38\\\\)",
+            "\\\\(6.37\\\\)",
+            "\\\\(6.48\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide 44 by 7 (quotient 6, remainder 2). Carry 2 to the tenths place, and continue.",
+          "steps": [
+            {
+              "explain": "Divide units: 44 divided by 7 is 6, with a remainder of 2.",
+              "work": "\\\\(44 \\\\div 7 = 6 \\text{ remainder } 2\\\\)"
+            },
+            {
+              "explain": "Carry 2 to make 26 tenths. 26 divided by 7 is 3, with a remainder of 5.",
+              "work": "\\\\(26 \\\\div 7 = 3 \\text{ remainder } 5\\\\)"
+            },
+            {
+              "explain": "Carry 5 to make 56 hundredths. Divide: 56 divided by 7 is 8.",
+              "work": "\\\\(56 \\\\div 7 = 8 \\\\implies 6.38\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q9a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(7.31 \\\\times 10\\\\).",
+          "options": [
+            "\\\\(73.1\\\\)",
+            "\\\\(731\\\\)",
+            "\\\\(7.310\\\\)",
+            "\\\\(0.731\\\\)"
+          ],
+          "answer": 0,
+          "hint": "When multiplying a decimal by 10, shift the decimal point one position to the right.",
+          "steps": [
+            {
+              "explain": "Identify the multiplier. Since we are multiplying by 10 (which has one zero), we shift the decimal point one place to the right.",
+              "work": "\\dots \\\\implies 1 \\\\text{ place right}"
+            },
+            {
+              "explain": "Perform the shift on the decimal number 7.31.",
+              "work": "\\\\(7.31 \\\\times 10 = 73.1\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(6.32 \\\\times 1000\\\\).",
+          "options": [
+            "\\\\(632\\\\)",
+            "\\\\(0.00632\\\\)",
+            "\\\\(6320\\\\)",
+            "\\\\(63200\\\\)"
+          ],
+          "answer": 2,
+          "hint": "When multiplying by 1000 (three zeros), shift the decimal point three positions to the right, adding placeholder zeros if needed.",
+          "steps": [
+            {
+              "explain": "Count the number of zeros in 1000. There are 3 zeros, meaning we must move the decimal point three places to the right.",
+              "work": "\\dots \\\\implies 3 \\\\text{ places right}"
+            },
+            {
+              "explain": "Move the decimal point on 6.32. After moving two places, it becomes 632. We must add one trailing zero placeholder to complete the three-place shift.",
+              "work": "\\\\(6.32 \\\\times 1000 = 6320\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q9c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(4.089 \\\\times 100\\\\).",
+          "options": [
+            "\\\\(40.89\\\\)",
+            "\\\\(408.9\\\\)",
+            "\\\\(4.08900\\\\)",
+            "\\\\(4089\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiplying by 100 shifts the decimal point two places to the right.",
+          "steps": [
+            {
+              "explain": "Identify the number of zeros in 100. There are two zeros, so move the decimal point two places to the right.",
+              "work": "\\dots \\\\implies 2 \\\\text{ places right}"
+            },
+            {
+              "explain": "Perform the decimal shift on the number 4.089.",
+              "work": "\\\\(4.089 \\\\times 100 = 408.9\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q10a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\\\(73.2 \\\\div 10\\\\).",
+          "options": [
+            "\\\\(7.32\\\\)",
+            "\\\\(0.732\\\\)",
+            "\\\\(732\\\\)",
+            "\\\\(73.20\\\\)"
+          ],
+          "answer": 0,
+          "hint": "When dividing a decimal by 10, shift the decimal point one position to the left.",
+          "steps": [
+            {
+              "explain": "Division by 10 shifts the decimal point one place to the left, since there is one zero in 10.",
+              "work": "\\dots \\\\implies 1 \\\\text{ place left}"
+            },
+            {
+              "explain": "Shift the decimal point of 73.2 to obtain the quotient.",
+              "work": "\\\\(73.2 \\\\div 10 = 7.32\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q10b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(816.9 \\\\div 100\\\\).",
+          "options": [
+            "\\\\(8.169\\\\)",
+            "\\\\(8169\\\\)",
+            "\\\\(0.8169\\\\)",
+            "\\\\(81.69\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Shift the decimal point two positions to the left because you are dividing by 100.",
+          "steps": [
+            {
+              "explain": "Since 100 contains two zeros, we must shift the decimal point of the dividend two places to the left.",
+              "work": "\\dots \\\\implies 2 \\\\text{ places left}"
+            },
+            {
+              "explain": "Perform the decimal shift on the number 816.9.",
+              "work": "\\\\(816.9 \\\\div 100 = 8.169\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q10c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(27.35 \\\\div 1000\\\\).",
+          "options": [
+            "\\\\(0.02735\\\\)",
+            "\\\\(0.002735\\\\)",
+            "\\\\(0.2735\\\\)",
+            "\\\\(27350\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide by 1000 by shifting the decimal point three positions to the left, adding a leading placeholder zero.",
+          "steps": [
+            {
+              "explain": "Division by 1000 (three zeros) requires shifting the decimal point three places to the left.",
+              "work": "\\dots \\\\implies 3 \\\\text{ places left}"
+            },
+            {
+              "explain": "Move the decimal point on 27.35. Since there are only two digits to the left of the decimal, add one leading zero as a placeholder.",
+              "work": "\\\\(27.35 \\\\div 1000 = 0.02735\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q12c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(10 \\\\times \\$7.42\\\\).",
+          "options": [
+            "\\\\(\\$742.00\\\\)",
+            "\\\\(\\$74.2\\\\)",
+            "\\\\(\\$7.420\\\\)",
+            "\\\\(\\$74.20\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Shift the decimal point one place to the right. Remember to include the trailing zero for cents format.",
+          "steps": [
+            {
+              "explain": "Since we are multiplying by 10, shift the decimal point one position to the right.",
+              "work": "\\dots \\\\implies 1 \\\\text{ place right}"
+            },
+            {
+              "explain": "Perform the shift: 7.42 becomes 74.2.",
+              "work": "\\\\(7.42 \\\\times 10 = 74.2\\\\)"
+            },
+            {
+              "explain": "Format the value as money by adding a trailing zero in the hundredths place to show cents.",
+              "work": "\\\\(74.2 = \\$74.20\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l3-q12d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(\\$13.50 \\\\div 10\\\\).",
+          "options": [
+            "\\\\(\\$1.350\\\\)",
+            "\\\\(\\$1.35\\\\)",
+            "\\\\(\\$13.5\\\\)",
+            "\\\\(\\$0.135\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Shift the decimal point one place to the left because you are dividing by 10.",
+          "steps": [
+            {
+              "explain": "To divide by 10, shift the decimal point one place to the left.",
+              "work": "\\dots \\\\implies 1 \\\\text{ place left}"
+            },
+            {
+              "explain": "Shift the decimal point of 13.50 one place to the left to find the value in dollars.",
+              "work": "\\\\(\\$13.50 \\\\div 10 = \\$1.35\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l4-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(\\$32.76 \\\\times 7\\\\).",
+          "options": [
+            "\\\\(\\$229.32\\\\)",
+            "\\\\(\\$229.22\\\\)",
+            "\\\\(\\$228.32\\\\)",
+            "\\\\(\\$239.32\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply 3276 by 7, then insert the decimal point so there are two decimal places.",
+          "steps": [
+            {
+              "explain": "Multiply as whole numbers ignoring the decimal point.",
+              "work": "\\\\(3276 \\\\times 7 = 22932\\\\)"
+            },
+            {
+              "explain": "Re-insert the two decimal places to format the product as dollars and cents.",
+              "work": "\\\\(22932 \\\\implies \\$229.32\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l4-q5b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(\\$8.16 \\\\times 12\\\\).",
+          "options": [
+            "\\\\(\\$97.82\\\\)",
+            "\\\\(\\$87.92\\\\)",
+            "\\\\(\\$98.02\\\\)",
+            "\\\\(\\$97.92\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply 816 by 12 using double-digit multiplication, then position the decimal point.",
+          "steps": [
+            {
+              "explain": "Multiply the digits as whole numbers.",
+              "work": "\\\\(816 \\\\times 12 = 9792\\\\)"
+            },
+            {
+              "explain": "Place the decimal point. Since the original value has two decimal places, the answer must also have two decimal places.",
+              "work": "\\\\(9792 \\\\implies \\$97.92\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l4-q5c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(\\$9.63 \\\\times 27\\\\).",
+          "options": [
+            "\\\\(\\$260.07\\\\)",
+            "\\\\(\\$260.01\\\\)",
+            "\\\\(\\$250.01\\\\)",
+            "\\\\(\\$260.11\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Perform long multiplication of 963 by 27, then insert the decimal point.",
+          "steps": [
+            {
+              "explain": "Multiply the numbers ignoring the decimal point.",
+              "work": "\\\\(963 \\\\times 27 = 26001\\\\)"
+            },
+            {
+              "explain": "Position the decimal point to match the two decimal places of the currency value.",
+              "work": "\\\\(26001 \\\\implies \\$260.01\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l4-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(\\$51.03 \\\\div 9\\\\).",
+          "options": [
+            "\\\\(\\$5.57\\\\)",
+            "\\\\(\\$5.77\\\\)",
+            "\\\\(\\$0.57\\\\)",
+            "\\\\(\\$5.67\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Perform short division. Place the decimal point in the quotient directly above the decimal point in the dividend.",
+          "steps": [
+            {
+              "explain": "Divide the whole dollar part: 51 divided by 9 is 5, with a remainder of 6.",
+              "work": "\\\\(51 \\\\div 9 = 5 \\text{ remainder } 6\\\\)"
+            },
+            {
+              "explain": "Carry the remainder 6 to the tenths place to make 60. 60 divided by 9 is 6, remainder 6.",
+              "work": "\\\\(60 \\\\div 9 = 6 \\text{ remainder } 6\\\\)"
+            },
+            {
+              "explain": "Carry the remainder 6 to the hundredths place to make 63. 63 divided by 9 is 7.",
+              "work": "\\\\(63 \\\\div 9 = 7 \\\\implies \\$5.67\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l4-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\(\\$33.04 \\\\div 7\\\\).",
+          "options": [
+            "\\\\(\\$4.74\\\\)",
+            "\\\\(\\$4.62\\\\)",
+            "\\\\(\\$0.47\\\\)",
+            "\\\\(\\$4.72\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Divide 33 by 7 to find the whole dollars and carry the remainder.",
+          "steps": [
+            {
+              "explain": "Divide whole dollars: 33 divided by 7 is 4, remainder 5.",
+              "work": "\\\\(33 \\\\div 7 = 4 \\text{ remainder } 5\\\\)"
+            },
+            {
+              "explain": "Carry 5 to make 50 tenths. 50 divided by 7 is 7, remainder 1.",
+              "work": "\\\\(50 \\\\div 7 = 7 \\text{ remainder } 1\\\\)"
+            },
+            {
+              "explain": "Carry 1 to make 14 hundredths. Divide: 14 divided by 7 is 2.",
+              "work": "\\\\(14 \\\\div 7 = 2 \\\\implies \\$4.72\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l4-q6c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate: \\\\(\\$104.76 \\\\div 12\\\\).",
+          "options": [
+            "\\\\(\\$8.75\\\\)",
+            "\\\\(\\$8.73\\\\)",
+            "\\\\(\\$8.63\\\\)",
+            "\\\\(\\$9.73\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide by 12. Check how many times 12 goes into 104 first.",
+          "steps": [
+            {
+              "explain": "Divide whole dollars: 104 divided by 12 is 8, remainder 8 (since 12 x 8 = 96).",
+              "work": "\\\\(104 \\\\div 12 = 8 \\text{ remainder } 8\\\\)"
+            },
+            {
+              "explain": "Carry 8 to make 87 tenths. 87 divided by 12 is 7, remainder 3 (since 12 x 7 = 84).",
+              "work": "\\\\(87 \\\\div 12 = 7 \\text{ remainder } 3\\\\)"
+            },
+            {
+              "explain": "Carry 3 to make 36 hundredths. Divide: 36 divided by 12 is 3.",
+              "work": "\\\\(36 \\\\div 12 = 3 \\\\implies \\$8.73\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l4-q8a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\\\((0.3)^2\\\\).",
+          "options": [
+            "\\\\(0.6\\\\)",
+            "\\\\(0.009\\\\)",
+            "\\\\(0.9\\\\)",
+            "\\\\(0.09\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Squaring a number means multiplying it by itself. Calculate 0.3 x 0.3.",
+          "steps": [
+            {
+              "explain": "Write the squared term as a product.",
+              "work": "\\\\(0.3 \\\\times 0.3\\\\)"
+            },
+            {
+              "explain": "Multiply the numbers: 3 multiplied by 3 is 9. Count decimal places: 1 + 1 = 2.",
+              "work": "\\\\(3 \\\\times 3 = 9 \\\\implies 2 \\text{ decimal places}\\\\)"
+            },
+            {
+              "explain": "Write the result with two decimal places using a placeholder zero.",
+              "work": "\\\\(0.3 \\\\times 0.3 = 0.09\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l4-q8b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate using order of operations (BODMAS): \\\\(4.1 + 3 \\\\times 0.7\\\\).",
+          "options": [
+            "\\\\(6.2\\\\)",
+            "\\\\(7.1\\\\)",
+            "\\\\(5.0\\\\)",
+            "\\\\(4.97\\\\)"
+          ],
+          "answer": 0,
+          "hint": "BODMAS rule states that multiplication must be performed before addition.",
+          "steps": [
+            {
+              "explain": "Identify order of operations. Multiplication comes before addition, so calculate 3 x 0.7 first.",
+              "work": "\\\\(3 \\\\times 0.7 = 2.1\\\\)"
+            },
+            {
+              "explain": "Add the product 2.1 to the first term 4.1.",
+              "work": "\\\\(4.1 + 2.1 = 6.2\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l4-q8c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Calculate using order of operations (BODMAS): \\\\(8.1 - 3.95 \\\\div 5 + 6.4\\\\).",
+          "options": [
+            "\\\\(13.81\\\\)",
+            "\\\\(13.61\\\\)",
+            "\\\\(13.71\\\\)",
+            "\\\\(7.24\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Perform the division first, then complete the subtraction and addition from left to right.",
+          "steps": [
+            {
+              "explain": "Perform the division step first.",
+              "work": "\\\\(3.95 \\\\div 5 = 0.79\\\\)"
+            },
+            {
+              "explain": "Perform subtraction: subtract 0.79 from 8.1.",
+              "work": "\\\\(8.1 - 0.79 = 7.31\\\\)"
+            },
+            {
+              "explain": "Perform addition: add 6.4 to the result.",
+              "work": "\\\\(7.31 + 6.4 = 13.71\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l4-q9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the product of \\\\(8.75\\\\) and \\\\(5\\\\).",
+          "options": [
+            "\\\\(43.55\\\\)",
+            "\\\\(43.75\\\\)",
+            "\\\\(40.75\\\\)",
+            "\\\\(4.375\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply 875 by 5, then place the decimal point so the result has two decimal places.",
+          "steps": [
+            {
+              "explain": "Write the problem as a multiplication expression.",
+              "work": "\\\\(8.75 \\\\times 5\\\\)"
+            },
+            {
+              "explain": "Multiply the numbers ignoring the decimal point.",
+              "work": "\\\\(875 \\\\times 5 = 4375\\\\)"
+            },
+            {
+              "explain": "Re-insert the two decimal places of the factor 8.75.",
+              "work": "\\\\(4375 \\\\implies 43.75\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l4-q9d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the quotient of \\\\(8.75\\\\) and \\\\(5\\\\).",
+          "options": [
+            "\\\\(1.55\\\\)",
+            "\\\\(1.75\\\\)",
+            "\\\\(0.175\\\\)",
+            "\\\\(1.70\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Perform vertical short division, dividing 8.75 by 5.",
+          "steps": [
+            {
+              "explain": "Write the problem as a division expression.",
+              "work": "\\\\(8.75 \\\\div 5\\\\)"
+            },
+            {
+              "explain": "Divide the units digit: 8 divided by 5 is 1, remainder 3.",
+              "work": "\\\\(8 \\\\div 5 = 1 \\text{ remainder } 3\\\\)"
+            },
+            {
+              "explain": "Carry 3 to make 37 tenths. 37 divided by 5 is 7, remainder 2.",
+              "work": "\\\\(37 \\\\div 5 = 7 \\text{ remainder } 2\\\\)"
+            },
+            {
+              "explain": "Carry 2 to make 25 hundredths. 25 divided by 5 is 5.",
+              "work": "\\\\(25 \\\\div 5 = 5 \\\\implies 1.75\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l5-q4",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An industrial warehouse robot traverses a distance of \\\\(16.47\\\\) metres in \\\\(9\\\\) seconds. At this constant speed, how many metres will the robot travel in exactly one minute?",
+          "options": [
+            "\\\\(109.8\\\\text{ m}\\\\)",
+            "\\\\(98.82\\\\text{ m}\\\\)",
+            "\\\\(109.08\\\\text{ m}\\\\)",
+            "\\\\(148.23\\\\text{ m}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "First find the speed of the robot per second by dividing \\\\(16.47\\\\) by \\\\(9\\\\). Then, multiply this speed by \\\\(60\\\\) seconds (one minute).",
+          "steps": [
+            {
+              "explain": "Identify the given values and plan the steps. The robot travels \\\\(16.47\\\\) metres in \\\\(9\\\\) seconds, and we need to find the distance traveled in \\\\(60\\\\) seconds.",
+              "work": "\\\\(\\text{Distance in } 9\\text{s} = 16.47\\\\text{ m}, \\\\quad \\\\text{Target time} = 60\\\\text{ s}\\\\)"
+            },
+            {
+              "explain": "Calculate the robot's speed per second by dividing the distance by the time. This gives the rate of travel in metres per second.",
+              "work": "\\\\(\\text{Speed} = 16.47 \\\\div 9 = 1.83\\\\text{ m/s}\\\\)"
+            },
+            {
+              "explain": "Multiply the speed by 60 to find the total distance covered in one minute (60 seconds). Multi-digit multiplication is used.",
+              "work": "\\\\(\\text{Distance in 60s} = 1.83 \\\\times 60 = 109.8\\\\text{ m}\\\\)"
+            },
+            {
+              "explain": "State the final conclusion with appropriate units. The warehouse robot will travel a total distance of 109.8 metres in one minute.",
+              "work": "\\\\(\\text{Total Distance} = 109.8\\\\text{ m}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l5-q5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Premium carbon fiber tape costs \\\\(\\$4.70\\\\) per metre. How much will it cost an aerospace engineering team to purchase \\\\(8.5\\\\) metres of this tape?",
+          "options": [
+            "\\\\(\\$37.60\\\\)",
+            "\\\\(\\$39.95\\\\)",
+            "\\\\(\\$40.00\\\\)",
+            "\\\\(\\$39.50\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the cost per metre by the total length required: \\\\(4.70 \\\\times 8.5\\\\).",
+          "steps": [
+            {
+              "explain": "First, identify the rate and the quantity to find the total cost. The rate is \\\\(\\$4.70\\\\) per metre, and the total length is \\\\(8.5\\\\) metres.",
+              "work": "\\\\(\\text{Rate} = \\\\$4.70\\\\text{/m}, \\\\quad \\\\text{Length} = 8.5\\\\text{ m}\\\\)"
+            },
+            {
+              "explain": "Set up the multiplication of the decimal values. We can ignore the decimal points initially and multiply the integers, then place the decimal point.",
+              "work": "\\\\(4.70 \\\\times 8.5 = 4.7 \\\\times 8.5\\\\)"
+            },
+            {
+              "explain": "Perform the multiplication \\\\(47 \\\\times 85 = 3995\\\\). Since there are two decimal places in total between the factors (one in 4.7 and one in 8.5), place the decimal point two digits from the right.",
+              "work": "\\\\(4.7 \\\\times 8.5 = 39.95\\\\)"
+            },
+            {
+              "explain": "Write the final cost with the currency symbol. The total cost to buy 8.5 metres of carbon fiber tape is \\\\(\\$39.95\\\\).",
+              "work": "\\\\(\\text{Total Cost} = \\\\$39.95\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l5-q6",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A precision assembly arm records the cycle times in seconds for assembling six components: \\\\(10.7\\\\), \\\\(10.5\\\\), \\\\(10.8\\\\), \\\\(10.9\\\\), \\\\(11.0\\\\), and \\\\(10.3\\\\) seconds. What is the average cycle time of the robot in seconds?",
+          "options": [
+            "\\\\(10.7\\\\)",
+            "\\\\(10.8\\\\)",
+            "\\\\(10.6\\\\)",
+            "\\\\(10.5\\\\)"
+          ],
+          "answer": 0,
+          "hint": "To find the average, sum all six cycle times together and then divide the sum by the total number of components, which is \\\\(6\\\\).",
+          "steps": [
+            {
+              "explain": "First, identify the dataset of times and the number of values. The times are \\\\(\\{10.7, 10.5, 10.8, 10.9, 11.0, 10.3\\}\\) and the count is \\\\(6\\\\).",
+              "work": "\\\\(\\text{Count} = 6\\\\)"
+            },
+            {
+              "explain": "Add the six decimal times together. Align the decimal points and sum the values.",
+              "work": "\\\\(10.7 + 10.5 + 10.8 + 10.9 + 11.0 + 10.3 = 64.2\\\\)"
+            },
+            {
+              "explain": "Divide the sum \\\\(64.2\\\\) by the count \\\\(6\\\\) to find the mean average. Perform the decimal division.",
+              "work": "\\\\(64.2 \\\\div 6 = 10.7\\\\)"
+            },
+            {
+              "explain": "Conclude that the average cycle time is 10.7 seconds. This represents the central tendency of the assembly time.",
+              "work": "\\\\(\\text{Average} = 10.7\\\\text{ seconds}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l5-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A chemical laboratory purchases high-grade liquid nitrogen at a rate of \\\\(\\$8.40\\\\) per litre. What is the total cost in dollars to purchase exactly \\\\(1.3\\\\) litres of liquid nitrogen?",
+          "options": [
+            "\\\\(\\$10.80\\\\)",
+            "\\\\(\\$10.92\\\\)",
+            "\\\\(\\$11.12\\\\)",
+            "\\\\(\\$9.70\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply the price per litre by the number of litres: \\\\(8.40 \\\\times 1.3\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the unit price and quantity required. The price is \\\\(\\$8.40\\\\) per litre, and the quantity is \\\\(1.3\\\\) litres.",
+              "work": "\\\\(\\text{Rate} = \\\\$8.40\\\\text{/L}, \\\\quad \\\\text{Volume} = 1.3\\\\text{ L}\\\\)"
+            },
+            {
+              "explain": "Set up the multiplication of the decimal values. You can drop the trailing zero in 8.40 to simplify the calculation.",
+              "work": "\\\\(8.4 \\\\times 1.3\\\\)"
+            },
+            {
+              "explain": "Multiply the numbers as integers: \\\\(84 \\\\times 13 = 1092\\\\). Since the factors have two decimal places combined, place the decimal point two spaces from the right.",
+              "work": "\\\\(8.4 \\\\times 1.3 = 10.92\\\\)"
+            },
+            {
+              "explain": "Confirm the final cost in dollars. The total cost of the liquid nitrogen is \\\\(\\$10.92\\\\).",
+              "work": "\\\\(\\text{Total Cost} = \\\\$10.92\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l5-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A specialized 3D printing service charges \\\\(\\$7.42\\\\) per hour of machine operation. How much in dollars will a client be charged for a print job that requires exactly \\\\(35\\\\) hours of continuous operation?",
+          "options": [
+            "\\\\(\\$245.70\\\\)",
+            "\\\\(\\$259.00\\\\)",
+            "\\\\(\\$259.70\\\\)",
+            "\\\\(\\$260.40\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply the hourly charge rate of \\\\(\\$7.42\\\\) by the total duration of \\\\(35\\\\) hours.",
+          "steps": [
+            {
+              "explain": "Identify the hourly charge and the total hours to calculate the overall cost. The hourly rate is \\\\(\\$7.42\\\\), and the total duration is \\\\(35\\\\) hours.",
+              "work": "\\\\(\\text{Hourly Rate} = \\\\$7.42, \\\\quad \\\\text{Hours} = 35\\\\)"
+            },
+            {
+              "explain": "Set up the multiplication of the decimal number \\\\(7.42\\\\) and the whole number \\\\(35\\\\).",
+              "work": "\\\\(7.42 \\\\times 35\\\\)"
+            },
+            {
+              "explain": "Multiply the digits: \\\\(742 \\\\times 35 = 25970\\\\). Since the factor 7.42 has two decimal places, place the decimal point two digits from the right of 25970.",
+              "work": "\\\\(7.42 \\\\times 35 = 259.70\\\\)"
+            },
+            {
+              "explain": "Conclude with the final cost in dollars. The client will be charged \\\\(\\$259.70\\\\) for the printing service.",
+              "work": "\\\\(\\text{Total Cost} = \\\\$259.70\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l5-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A community greenhouse receives a utility bill of \\\\(\\$334\\\\) for a heating pump that ran continuously for \\\\(40\\\\) hours. What is the average operating cost of the heating pump per hour?",
+          "options": [
+            "\\\\(\\$8.45\\\\)",
+            "\\\\(\\$8.35\\\\)",
+            "\\\\(\\$8.25\\\\)",
+            "\\\\(\\$8.50\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Divide the total utility bill of \\\\(\\$334\\\\) by the total operating time of \\\\(40\\\\) hours.",
+          "steps": [
+            {
+              "explain": "Identify the total cost and hours to find the hourly rate. The total cost is \\\\(\\$334\\\\), and the duration is \\\\(40\\\\) hours.",
+              "work": "\\\\(\\text{Total Cost} = \\\\$334, \\\\quad \\\\text{Duration} = 40\\\\text{ hours}\\\\)"
+            },
+            {
+              "explain": "Set up the division of the total cost by the number of hours. This can be simplified by dividing by 10 first, then by 4.",
+              "work": "\\\\(334 \\\\div 40 = \\\\frac{334}{40}\\\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by 10 to simplify the fraction. This makes the divisor a single digit.",
+              "work": "\\\\(\\frac{33.4}{4} = 33.4 \\\\div 4\\\\)"
+            },
+            {
+              "explain": "Perform long division of \\\\(33.4\\\\) by \\\\(4\\\\) to get the final decimal quotient.",
+              "work": "\\\\(33.4 \\\\div 4 = 8.35\\\\)"
+            },
+            {
+              "explain": "Express the result in currency terms. The average operating cost of the heating pump is \\\\(\\$8.35\\\\) per hour.",
+              "work": "\\\\(\\text{Hourly Cost} = \\\\$8.35\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-mr-2-l5-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A solar energy storage system feeds electricity back into the grid, returning \\\\(32\\\\) cents of credit for every dollar value of energy produced. How much credit in dollars will a household receive if their total produced energy value is \\\\(\\$350.00\\\\)?",
+          "options": [
+            "\\\\(\\$115.00\\\\)",
+            "\\\\(\\$105.00\\\\)",
+            "\\\\(\\$112.00\\\\)",
+            "\\\\(\\$96.00\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Express the 32 cents tax/credit rate as a decimal value of \\\\(0.32\\\\) per dollar, then multiply by the total value of \\\\(\\$350.00\\\\).",
+          "steps": [
+            {
+              "explain": "Identify the credit rate and the total energy value. The rate is \\\\(32\\\\) cents per dollar (which is \\\\(\\$0.32\\\\) per dollar), and the total value is \\\\(\\$350\\\\).",
+              "work": "\\\\(\\text{Rate} = \\\\$0.32, \\\\quad \\\\text{Energy Value} = \\\\$350\\\\)"
+            },
+            {
+              "explain": "Set up the multiplication of the total energy value and the decimal rate. This determines the total credits earned.",
+              "work": "\\\\(350 \\\\times 0.32\\\\)"
+            },
+            {
+              "explain": "Multiply the numbers as integers first: \\\\(350 \\\\times 32 = 11200\\\\). Since the rate has two decimal places, move the decimal point two places to the left.",
+              "work": "\\\\(350 \\\\times 0.32 = 112.00\\\\)"
+            },
+            {
+              "explain": "Confirm the final credit amount. The household will receive a total credit of \\\\(\\$112.00\\\\).",
+              "work": "\\\\(\\text{Total Credit} = \\\\$112.00\\\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

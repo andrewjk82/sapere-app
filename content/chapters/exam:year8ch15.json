@@ -1,0 +1,642 @@
+{
+  "chapterId": "exam:year8ch15",
+  "title": "Exam Practice",
+  "year": "Year 8",
+  "topics": [
+    {
+      "topicId": "exam:year8ch15",
+      "code": "",
+      "title": "Review of area and length",
+      "questions": [
+        {
+          "id": "y8-15a-q7",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "figure": {
+            "geometry": {
+              "width": 280,
+              "showPointLabels": false,
+              "points": {
+                "A": [
+                  0,
+                  0
+                ],
+                "B": [
+                  18,
+                  0
+                ],
+                "C": [
+                  5,
+                  12
+                ],
+                "D": [
+                  5,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                },
+                {
+                  "from": "C",
+                  "to": "D",
+                  "dashed": true
+                }
+              ],
+              "angles": [
+                {
+                  "at": "D",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "A",
+                    "C"
+                  ],
+                  "text": "13 cm"
+                },
+                {
+                  "between": [
+                    "A",
+                    "D"
+                  ],
+                  "text": "5 cm"
+                },
+                {
+                  "between": [
+                    "D",
+                    "B"
+                  ],
+                  "text": "15 cm"
+                },
+                {
+                  "between": [
+                    "C",
+                    "D"
+                  ],
+                  "text": "h cm"
+                }
+              ],
+              "freeLabels": []
+            }
+          },
+          "parts": [
+            {
+              "id": "y8-15a-q7a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "a) Use Pythagoras' theorem to find \\(h\\).",
+              "options": [
+                "\\(11\\)",
+                "\\(12\\)",
+                "\\(13\\)",
+                "\\(14\\)"
+              ],
+              "answer": 2,
+              "solution": "The correct answer is \\(12\\).",
+              "steps": [
+                {
+                  "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+                  "work": "\\(Identify given data\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(State the rule\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(12\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(12\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-15a-q7b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Use Pythagoras' theorem to find \\(h\\) and hence find the area of the triangle in the diagram.\nb) Hence find the area of the triangle.",
+              "options": [
+                "\\(119\\)",
+                "\\(121\\)",
+                "\\(122\\)",
+                "\\(120\\)"
+              ],
+              "answer": 2,
+              "solution": "The correct answer is \\(120\\).",
+              "steps": [
+                {
+                  "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+                  "work": "\\(Identify given data\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(State the rule\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(120\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(120\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "h = 12, Area = 120 cm^2"
+        },
+        {
+          "id": "y8-15a-q8",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "",
+          "figure": {
+            "geometry": {
+              "width": 280,
+              "showPointLabels": false,
+              "points": {
+                "A": [
+                  0,
+                  0
+                ],
+                "B": [
+                  15,
+                  0
+                ],
+                "C": [
+                  15,
+                  8
+                ],
+                "D": [
+                  0,
+                  8
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C",
+                  "ticks": 1
+                },
+                {
+                  "from": "C",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "A",
+                  "ticks": 1
+                },
+                {
+                  "from": "A",
+                  "to": "C"
+                }
+              ],
+              "angles": [
+                {
+                  "at": "D",
+                  "right": true
+                }
+              ],
+              "sideLabels": [
+                {
+                  "between": [
+                    "D",
+                    "A"
+                  ],
+                  "text": "8 m"
+                },
+                {
+                  "between": [
+                    "A",
+                    "C"
+                  ],
+                  "text": "17 m"
+                }
+              ],
+              "freeLabels": []
+            }
+          },
+          "parts": [
+            {
+              "id": "y8-15a-q8a",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find \\(x\\) and hence find the area of the rectangle shown.\na) Find \\(x\\).",
+              "options": [
+                "\\(14\\)",
+                "\\(16\\)",
+                "\\(15\\)",
+                "\\(17\\)"
+              ],
+              "answer": 2,
+              "solution": "The correct answer is \\(15\\).",
+              "steps": [
+                {
+                  "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+                  "work": "\\(Identify given data\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(State the rule\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(15\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(15\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-15a-q8b",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Find \\(x\\) and hence find the area of the rectangle shown.\nb) Hence find the area of the rectangle.",
+              "options": [
+                "\\(119\\)",
+                "\\(120\\)",
+                "\\(121\\)",
+                "\\(122\\)"
+              ],
+              "answer": 2,
+              "solution": "The correct answer is \\(120\\).",
+              "steps": [
+                {
+                  "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+                  "work": "\\(Identify given data\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(State the rule\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(120\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(120\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "x = 15, Area = 120 m^2"
+        },
+        {
+          "id": "y8-15a-q10",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "",
+          "figure": {
+            "geometry": {
+              "width": 280,
+              "showPointLabels": false,
+              "points": {
+                "A": [
+                  0,
+                  0
+                ],
+                "B": [
+                  10,
+                  0
+                ],
+                "C": [
+                  10,
+                  7
+                ],
+                "D": [
+                  0,
+                  7
+                ],
+                "P1": [
+                  5.5,
+                  0
+                ],
+                "P2": [
+                  5.5,
+                  3.5
+                ],
+                "P3": [
+                  5.5,
+                  7
+                ],
+                "K1": [
+                  7.5,
+                  0
+                ],
+                "K2": [
+                  7.5,
+                  3.5
+                ],
+                "K3": [
+                  7.5,
+                  7
+                ],
+                "W_div": [
+                  0,
+                  3.5
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "A"
+                },
+                {
+                  "from": "P1",
+                  "to": "P3"
+                },
+                {
+                  "from": "K1",
+                  "to": "K2"
+                },
+                {
+                  "from": "W_div",
+                  "to": "P2"
+                },
+                {
+                  "from": "P2",
+                  "to": "K2"
+                },
+                {
+                  "from": "K2",
+                  "to": "K3"
+                }
+              ],
+              "angles": [],
+              "sideLabels": [],
+              "freeLabels": [
+                {
+                  "point": [
+                    2.7,
+                    5.2
+                  ],
+                  "text": "family room"
+                },
+                {
+                  "point": [
+                    2.7,
+                    1.7
+                  ],
+                  "text": "patio"
+                },
+                {
+                  "point": [
+                    6.5,
+                    5.2
+                  ],
+                  "text": "kitchen"
+                },
+                {
+                  "point": [
+                    6.5,
+                    1.7
+                  ],
+                  "text": "hall"
+                },
+                {
+                  "point": [
+                    8.7,
+                    3.5
+                  ],
+                  "text": "lounge"
+                }
+              ]
+            }
+          },
+          "parts": [
+            {
+              "id": "y8-15a-q10a",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\na) What is the length of the house (in metres)?",
+              "options": [
+                "\\(27\\text{ m}\\)",
+                "\\(31\\text{ m}\\)",
+                "\\(30\\text{ m}\\)",
+                "\\(10\\text{ m}\\)"
+              ],
+              "answer": 2,
+              "solution": "The correct answer is \\(30\\).",
+              "steps": [
+                {
+                  "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+                  "work": "\\(Identify given data\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(State the rule\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(30\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(30\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-15a-q10b",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\nb) What is the width of the house (in metres)?",
+              "options": [
+                "\\(20\\text{ m}\\)",
+                "\\(22\\text{ m}\\)",
+                "\\(7\\text{ m}\\)",
+                "\\(21\\text{ m}\\)"
+              ],
+              "answer": 2,
+              "solution": "The correct answer is \\(21\\).",
+              "steps": [
+                {
+                  "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+                  "work": "\\(Identify given data\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(State the rule\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(21\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(21\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-15a-q10c",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\nc) Find the length and width of the family room in the form 'L by W'.",
+              "options": [
+                "\\(15\\text{ by } 10\\)",
+                "\\(15\\text{ by } 10.5\\)",
+                "\\(10.5\\text{ by } 15\\)",
+                "\\(18\\text{ by } 10.5\\)"
+              ],
+              "answer": 1,
+              "solution": "The correct answer is \\(15 by 10.5\\).",
+              "steps": [
+                {
+                  "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+                  "work": "\\(Identify given data\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(State the rule\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(15 by 10.5\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(15 by 10.5\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-15a-q10d",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\nd) What is the area of the kitchen (in square metres)?",
+              "options": [
+                "\\(94.5\\text{ m}^2\\)",
+                "\\(31.5\\text{ m}^2\\)",
+                "\\(90\\text{ m}^2\\)",
+                "\\(10.5\\text{ m}^2\\)"
+              ],
+              "answer": 2,
+              "solution": "The correct answer is \\(94.5\\).",
+              "steps": [
+                {
+                  "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+                  "work": "\\(Identify given data\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(State the rule\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(94.5\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(94.5\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-15a-q10e",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\ne) What is the width of the lounge at its widest point (in metres)?",
+              "options": [
+                "\\(1.67\\text{ m}\\)",
+                "\\(12\\text{ m}\\)",
+                "\\(5\\text{ m}\\)",
+                "\\(15\\text{ m}\\)"
+              ],
+              "answer": 2,
+              "solution": "The correct answer is \\(15\\).",
+              "steps": [
+                {
+                  "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+                  "work": "\\(Identify given data\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(State the rule\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(15\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(15\\)"
+                }
+              ]
+            },
+            {
+              "id": "y8-15a-q10f",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "This diagram is the ground floor plan of a house drawn to a scale of \\(1\\text{ cm}\\) to represent \\(3\\text{ metres}\\). The plan has the following measured dimensions on the paper:\n- Total length of the house: \\(10\\text{ cm}\\)\n- Total width of the house: \\(7\\text{ cm}\\)\n- Family room: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Kitchen: length \\(3.5\\text{ cm}\\), width \\(3\\text{ cm}\\)\n- Hall: length \\(1.5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n- Lounge: width \\(5\\text{ cm}\\) at its widest point\n- Patio: length \\(5\\text{ cm}\\), width \\(3.5\\text{ cm}\\)\n\nAnswer the questions below using the scale.\nf) What is the area of the patio (in square metres)?",
+              "options": [
+                "\\(105\\text{ m}^2\\)",
+                "\\(52.5\\text{ m}^2\\)",
+                "\\(157.5\\text{ m}^2\\)",
+                "\\(17.5\\text{ m}^2\\)"
+              ],
+              "answer": 2,
+              "solution": "The correct answer is \\(157.5\\).",
+              "steps": [
+                {
+                  "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of area and length: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+                  "work": "\\(Identify given data\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(State the rule\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(157.5\\)"
+                },
+                {
+                  "explain": "Evaluate the mathematical expression and calculate the result.",
+                  "work": "\\(157.5\\)"
+                }
+              ]
+            }
+          ],
+          "answer": "See sub-questions for individual answers.",
+          "manual": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "chapterId": "y12a-exam",
+  "title": "Exam Practice",
+  "year": "",
+  "topics": [
+    {
+      "topicId": "y12a-exam",
+      "code": "6D",
+      "title": "Integrating the trigonometric functions",
+      "questions": [
+        {
+          "id": "asc2020-q34-a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "(a) What is the first time after 9:45 am at which the flow rate is zero?",
+          "options": [
+            "\\(t = 30\\) minutes after 9:45 am (10:15 am)",
+            "\\(t = 15\\) minutes after 9:45 am (10:00 am)",
+            "\\(t = 60\\) minutes after 9:45 am (10:45 am)",
+            "\\(t = 0\\) (already zero when the pump starts)"
+          ],
+          "answer": 0,
+          "hint": "Set the sine factor equal to zero and take the first positive \\(t\\).",
+          "solution": "The correct answer is \\(t = 30\\) minutes after 9:45 am (10:15 am).",
+          "steps": [
+            {
+              "explain": "Flow rate zero means \\(\\dfrac{dV}{dt} = 0\\). Given \\(\\dfrac{dV}{dt} = -0.3\\sin\\dfrac{\\pi t}{30}\\), and \\(-0.3 \neq 0\\), we need \\(\\sin\\dfrac{\\pi t}{30} = 0\\).",
+              "work": "\\(\\sin\\dfrac{\\pi t}{30} = 0\\)"
+            },
+            {
+              "explain": "Sine is zero when its argument is an integer multiple of \\(\\pi\\): \\(\\dfrac{\\pi t}{30} = n\\pi\\) for integer \\(n\\), so \\(t = 30n\\).",
+              "work": "\\(t = 30n\\)"
+            },
+            {
+              "explain": "The first time after 9:45 am is the first positive solution: \\(n = 1\\) gives \\(t = 30\\) minutes. (\\(n = 0\\) is the switch-on instant, not “after”.)",
+              "work": "\\(t = 30\\)"
+            },
+            {
+              "explain": "Clock time: 9:45 am plus 30 minutes is 10:15 am. A common slip solves \\(\\cos\\dfrac{\\pi t}{30}=0\\) (that would be extrema of volume, not zero flow).",
+              "work": "\\(10{:}15\\ \\text{am}\\)"
+            },
+            {
+              "explain": "Final answer: \\(t = 30\\) minutes after 9:45 am (10:15 am).",
+              "work": "\\(t = 30\\ \\text{min (10:15 am)}\\)"
+            }
+          ],
+          "inactive": true
+        },
+        {
+          "id": "asc2020-q34-b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "(b) Find an expression for the volume \\(V\\) of water in the pool after \\(t\\) minutes.",
+          "options": [
+            "\\(V = 100 - \\dfrac{9}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)",
+            "\\(V = 100 + \\dfrac{9}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)",
+            "\\(V = 100 + \\dfrac{1}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)",
+            "\\(V = 100 + \\dfrac{\\pi}{9}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)"
+          ],
+          "answer": 1,
+          "hint": "Integrate \\(dV/dt\\) and use \\(V(0)=100\\).",
+          "solution": "The correct answer is \\(V = 100 + \\dfrac{9}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\).",
+          "steps": [
+            {
+              "explain": "Volume is the integral of flow rate: \\(V(t) = \\int -0.3\\sin\\dfrac{\\pi t}{30}\\,dt\\). Why integrate? Flow rate is \\(\\dfrac{dV}{dt}\\), so volume is an antiderivative of the given rate.",
+              "work": "\\(V = \\int -0.3\\sin\\dfrac{\\pi t}{30}\\,dt\\)"
+            },
+            {
+              "explain": "Chain rule reverse: let \\(u = \\dfrac{\\pi t}{30}\\), then \\(du = \\dfrac{\\pi}{30}\\,dt\\). \\(\\int\\sin\\dfrac{\\pi t}{30}\\,dt = -\\dfrac{30}{\\pi}\\cos\\dfrac{\\pi t}{30}\\).",
+              "work": "\\(\\int\\sin\\dfrac{\\pi t}{30}\\,dt = -\\dfrac{30}{\\pi}\\cos\\dfrac{\\pi t}{30}\\)"
+            },
+            {
+              "explain": "Therefore \\(\\int -0.3\\sin\\dfrac{\\pi t}{30}\\,dt = -0.3\\left(-\\dfrac{30}{\\pi}\\cos\\dfrac{\\pi t}{30}\\right) + C = \\dfrac{9}{\\pi}\\cos\\dfrac{\\pi t}{30} + C\\) (since \\(0.3\\times 30 = 9\\)).",
+              "work": "\\(V(t) = \\dfrac{9}{\\pi}\\cos\\dfrac{\\pi t}{30} + C\\)"
+            },
+            {
+              "explain": "Initial condition: pool full at \\(t = 0\\), so \\(V(0) = 100\\). Then \\(100 = \\dfrac{9}{\\pi}\\cos 0 + C = \\dfrac{9}{\\pi} + C\\), hence \\(C = 100 - \\dfrac{9}{\\pi}\\).",
+              "work": "\\(C = 100 - \\dfrac{9}{\\pi}\\)"
+            },
+            {
+              "explain": "Combine: \\(V(t) = \\dfrac{9}{\\pi}\\cos\\dfrac{\\pi t}{30} + 100 - \\dfrac{9}{\\pi} = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\).",
+              "work": "\\(V = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)"
+            },
+            {
+              "explain": "Final answer: \\(V = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\). Check: at \\(t=0\\), cos = 1 so \\(V=100\\). A common slip flips the sign in front of the cosine term.",
+              "work": "\\(V = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)"
+            }
+          ],
+          "timeLimit": 150,
+          "inactive": true
+        },
+        {
+          "id": "asc2020-q34-c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "(c) Find the minimum volume of water in the pool during the pumping cycle. Leave your answer in terms of \\(\\pi\\).",
+          "options": [
+            "\\(V_{\\min} = 100 - \\dfrac{9}{\\pi}\\) kL",
+            "\\(V_{\\min} = 100 - \\dfrac{18}{\\pi}\\) kL",
+            "\\(V_{\\min} = 100 + \\dfrac{18}{\\pi}\\) kL",
+            "\\(V_{\\min} = 100 - \\dfrac{\\pi}{18}\\) kL"
+          ],
+          "answer": 1,
+          "hint": "Minimise the cosine term in the expression from (b).",
+          "solution": "The correct answer is \\(V_{\\min} = 100 - \\dfrac{18}{\\pi}\\) kL.",
+          "steps": [
+            {
+              "explain": "From part (b): \\(V(t) = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\). The constant 100 and \\(-\\dfrac{9}{\\pi}\\) do not change which cos value minimises \\(V\\).",
+              "work": "\\(V = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)"
+            },
+            {
+              "explain": "Since \\(\\dfrac{9}{\\pi} > 0\\), \\(V\\) is minimised when \\(\\cos\\dfrac{\\pi t}{30}\\) is minimised. The minimum of cosine is \\(-1\\).",
+              "work": "\\(\\cos\\dfrac{\\pi t}{30} = -1\\)"
+            },
+            {
+              "explain": "Substitute: \\(V_{\\min} = 100 + \\dfrac{9}{\\pi}(-1 - 1) = 100 + \\dfrac{9}{\\pi}(-2) = 100 - \\dfrac{18}{\\pi}\\) kL.",
+              "work": "\\(V_{\\min} = 100 - \\dfrac{18}{\\pi}\\)"
+            },
+            {
+              "explain": "When does this occur? \\(\\cos\\dfrac{\\pi t}{30} = -1 \\Rightarrow \\dfrac{\\pi t}{30} = \\pi \\Rightarrow t = 30\\) min (same instant as zero flow in part (a) for the first cycle trough).",
+              "work": "\\(t = 30\\)"
+            },
+            {
+              "explain": "Final answer: \\(V_{\\min} = 100 - \\dfrac{18}{\\pi}\\) kL. A common slip uses \\(\\cos = 0\\) or forgets the \\(-1\\) inside the brackets and gets \\(100 - \\dfrac{9}{\\pi}\\).",
+              "work": "\\(100 - \\dfrac{18}{\\pi}\\ \\text{kL}\\)"
+            }
+          ],
+          "inactive": true
+        },
+        {
+          "id": "asc2020-q34",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A small-sized home swimming pool contains \\(100\\) kL of water when full. The flow rate of the volume of water that the pump filters (in kL/min) is given by\n\n\\[\\dfrac{dV}{dt} = -0.3\\sin\\dfrac{\\pi t}{30}.\\]\n\nAt 9:45 am the swimming pool is full and the pump is switched on. Time \\(t\\) is measured in minutes after 9:45 am.",
+          "parts": [
+            {
+              "id": "asc2020-q34-a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "(a) What is the first time after 9:45 am at which the flow rate is zero?",
+              "options": [
+                "\\(t = 30\\) minutes after 9:45 am (10:15 am)",
+                "\\(t = 15\\) minutes after 9:45 am (10:00 am)",
+                "\\(t = 60\\) minutes after 9:45 am (10:45 am)",
+                "\\(t = 0\\) (already zero when the pump starts)"
+              ],
+              "answer": 0,
+              "hint": "Set the sine factor equal to zero and take the first positive \\(t\\).",
+              "solution": "The correct answer is \\(t = 30\\) minutes after 9:45 am (10:15 am).",
+              "steps": [
+                {
+                  "explain": "Flow rate zero means \\(\\dfrac{dV}{dt} = 0\\). Given \\(\\dfrac{dV}{dt} = -0.3\\sin\\dfrac{\\pi t}{30}\\), and \\(-0.3 \\neq 0\\), we need \\(\\sin\\dfrac{\\pi t}{30} = 0\\).",
+                  "work": "\\(\\sin\\dfrac{\\pi t}{30} = 0\\)"
+                },
+                {
+                  "explain": "Sine is zero when its argument is an integer multiple of \\(\\pi\\): \\(\\dfrac{\\pi t}{30} = n\\pi\\) for integer \\(n\\), so \\(t = 30n\\).",
+                  "work": "\\(t = 30n\\)"
+                },
+                {
+                  "explain": "The first time after 9:45 am is the first positive solution: \\(n = 1\\) gives \\(t = 30\\) minutes. (\\(n = 0\\) is the switch-on instant, not “after”.)",
+                  "work": "\\(t = 30\\)"
+                },
+                {
+                  "explain": "Clock time: 9:45 am plus 30 minutes is 10:15 am. A common slip solves \\(\\cos\\dfrac{\\pi t}{30}=0\\) (that would be extrema of volume, not zero flow).",
+                  "work": "\\(10{:}15\\ \\text{am}\\)"
+                },
+                {
+                  "explain": "Final answer: \\(t = 30\\) minutes after 9:45 am (10:15 am).",
+                  "work": "\\(t = 30\\ \\text{min (10:15 am)}\\)"
+                }
+              ],
+              "inactive": true
+            },
+            {
+              "id": "asc2020-q34-b",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "(b) Find an expression for the volume \\(V\\) of water in the pool after \\(t\\) minutes.",
+              "options": [
+                "\\(V = 100 - \\dfrac{9}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)",
+                "\\(V = 100 + \\dfrac{9}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)",
+                "\\(V = 100 + \\dfrac{1}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)",
+                "\\(V = 100 + \\dfrac{\\pi}{9}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)"
+              ],
+              "answer": 1,
+              "hint": "Integrate \\(dV/dt\\) and use \\(V(0)=100\\).",
+              "solution": "The correct answer is \\(V = 100 + \\dfrac{9}{\\pi}\\!\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\).",
+              "steps": [
+                {
+                  "explain": "Volume is the integral of flow rate: \\(V(t) = \\int -0.3\\sin\\dfrac{\\pi t}{30}\\,dt\\). Why integrate? Flow rate is \\(\\dfrac{dV}{dt}\\), so volume is an antiderivative of the given rate.",
+                  "work": "\\(V = \\int -0.3\\sin\\dfrac{\\pi t}{30}\\,dt\\)"
+                },
+                {
+                  "explain": "Chain rule reverse: let \\(u = \\dfrac{\\pi t}{30}\\), then \\(du = \\dfrac{\\pi}{30}\\,dt\\). \\(\\int\\sin\\dfrac{\\pi t}{30}\\,dt = -\\dfrac{30}{\\pi}\\cos\\dfrac{\\pi t}{30}\\).",
+                  "work": "\\(\\int\\sin\\dfrac{\\pi t}{30}\\,dt = -\\dfrac{30}{\\pi}\\cos\\dfrac{\\pi t}{30}\\)"
+                },
+                {
+                  "explain": "Therefore \\(\\int -0.3\\sin\\dfrac{\\pi t}{30}\\,dt = -0.3\\left(-\\dfrac{30}{\\pi}\\cos\\dfrac{\\pi t}{30}\\right) + C = \\dfrac{9}{\\pi}\\cos\\dfrac{\\pi t}{30} + C\\) (since \\(0.3\\times 30 = 9\\)).",
+                  "work": "\\(V(t) = \\dfrac{9}{\\pi}\\cos\\dfrac{\\pi t}{30} + C\\)"
+                },
+                {
+                  "explain": "Initial condition: pool full at \\(t = 0\\), so \\(V(0) = 100\\). Then \\(100 = \\dfrac{9}{\\pi}\\cos 0 + C = \\dfrac{9}{\\pi} + C\\), hence \\(C = 100 - \\dfrac{9}{\\pi}\\).",
+                  "work": "\\(C = 100 - \\dfrac{9}{\\pi}\\)"
+                },
+                {
+                  "explain": "Combine: \\(V(t) = \\dfrac{9}{\\pi}\\cos\\dfrac{\\pi t}{30} + 100 - \\dfrac{9}{\\pi} = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\).",
+                  "work": "\\(V = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)"
+                },
+                {
+                  "explain": "Final answer: \\(V = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\). Check: at \\(t=0\\), cos = 1 so \\(V=100\\). A common slip flips the sign in front of the cosine term.",
+                  "work": "\\(V = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)"
+                }
+              ],
+              "timeLimit": 150,
+              "inactive": true
+            },
+            {
+              "id": "asc2020-q34-c",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "(c) Find the minimum volume of water in the pool during the pumping cycle. Leave your answer in terms of \\(\\pi\\).",
+              "options": [
+                "\\(V_{\\min} = 100 - \\dfrac{9}{\\pi}\\) kL",
+                "\\(V_{\\min} = 100 - \\dfrac{18}{\\pi}\\) kL",
+                "\\(V_{\\min} = 100 + \\dfrac{18}{\\pi}\\) kL",
+                "\\(V_{\\min} = 100 - \\dfrac{\\pi}{18}\\) kL"
+              ],
+              "answer": 1,
+              "hint": "Minimise the cosine term in the expression from (b).",
+              "solution": "The correct answer is \\(V_{\\min} = 100 - \\dfrac{18}{\\pi}\\) kL.",
+              "steps": [
+                {
+                  "explain": "From part (b): \\(V(t) = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\). The constant 100 and \\(-\\dfrac{9}{\\pi}\\) do not change which cos value minimises \\(V\\).",
+                  "work": "\\(V = 100 + \\dfrac{9}{\\pi}\\left(\\cos\\dfrac{\\pi t}{30} - 1\\right)\\)"
+                },
+                {
+                  "explain": "Since \\(\\dfrac{9}{\\pi} > 0\\), \\(V\\) is minimised when \\(\\cos\\dfrac{\\pi t}{30}\\) is minimised. The minimum of cosine is \\(-1\\).",
+                  "work": "\\(\\cos\\dfrac{\\pi t}{30} = -1\\)"
+                },
+                {
+                  "explain": "Substitute: \\(V_{\\min} = 100 + \\dfrac{9}{\\pi}(-1 - 1) = 100 + \\dfrac{9}{\\pi}(-2) = 100 - \\dfrac{18}{\\pi}\\) kL.",
+                  "work": "\\(V_{\\min} = 100 - \\dfrac{18}{\\pi}\\)"
+                },
+                {
+                  "explain": "When does this occur? \\(\\cos\\dfrac{\\pi t}{30} = -1 \\Rightarrow \\dfrac{\\pi t}{30} = \\pi \\Rightarrow t = 30\\) min (same instant as zero flow in part (a) for the first cycle trough).",
+                  "work": "\\(t = 30\\)"
+                },
+                {
+                  "explain": "Final answer: \\(V_{\\min} = 100 - \\dfrac{18}{\\pi}\\) kL. A common slip uses \\(\\cos = 0\\) or forgets the \\(-1\\) inside the brackets and gets \\(100 - \\dfrac{9}{\\pi}\\).",
+                  "work": "\\(100 - \\dfrac{18}{\\pi}\\ \\text{kL}\\)"
+                }
+              ],
+              "inactive": true
+            }
+          ],
+          "hint": "Set flow rate to zero for (a); integrate with \\(V(0)=100\\) for (b); minimise cosine for (c).",
+          "timeLimit": 400,
+          "meta": {
+            "source": "Ascham 2020 Trial Q34"
+          },
+          "dna": {
+            "dnaId": "CALC-INT-01",
+            "dnaConfidence": 0.85
+          },
+          "alsoIn": [
+            "exam:ascham2020"
+          ]
+        }
+      ]
+    }
+  ]
+}

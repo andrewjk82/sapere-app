@@ -1,0 +1,86 @@
+{
+  "chapterId": "exam:year11ch3j",
+  "title": "Exam year11ch3j",
+  "year": "Year 11",
+  "topics": [
+    {
+      "topicId": "y11-exam-year11ch3j",
+      "code": "EXAM",
+      "title": "Revision",
+      "questions": [
+        {
+          "id": "y11a-3j-q2",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Write down the domain and range of each relation in Question 1.",
+          "answer": "0",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Domain refers to all possible input values (x-values), and Range refers to all possible output values (y-values) for each relation."
+            },
+            {
+              "explain": "a) For the circle centered at the origin with radius 3, both \\( x \\) and \\( y \\) values are bounded between \\( -3 \\) and \\( 3 \\).",
+              "work": "-3 \\le x \\le 3, quad -3 \\le y \\le 3"
+            },
+            {
+              "explain": "b) The cubic polynomial is defined for all real numbers, and its range extends from negative infinity to positive infinity.",
+              "work": "\\text{Domain: all real } x, quad \\text{Range: all real } y"
+            },
+            {
+              "explain": "c) Since \\( x = y^2 \\) and \\( y^2 \\ge 0 \\) for all real \\( y \\), the \\( x \\)-values must be non-negative. However, \\( y \\) can take any real value.",
+              "work": "x \\ge 0"
+            },
+            {
+              "explain": "d) The horizontal line \\( y = 2 \\) exists for all real \\( x \\), but the only output value is \\( y = 2 \\).",
+              "work": "\\text{Domain: all real } x, quad \\text{Range: } y = 2"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        },
+        {
+          "id": "y11a-3j-q9",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Use factoring to find the zeroes of each quadratic function, identify the coordinates of the vertex, and state the domain and range.",
+          "answer": "0",
+          "hint": "Write a full structured solution for the teacher to mark.",
+          "solution": "0",
+          "steps": [
+            {
+              "explain": "Zeroes are found by setting \\( f(x) = 0 \\). The vertex \\( x_v \\) lies midway between the zeroes. The vertex \\( y_v = f(x_v) \\) determines the range."
+            },
+            {
+              "explain": "a) For \\( 9 - x^2 = (3-x)(3+x) = 0 \\), zeroes are \\( 3, -3 \\). The vertex is at \\( x = 0 \\), giving \\( y = 9 \\). Since the coefficient of \\( x^2 \\) is negative, it opens downwards.",
+              "work": "vertex: (0, 9), quad \\text{range: } y \\le 9"
+            },
+            {
+              "explain": "b) For \\( x(x-4) = 0 \\), zeroes are \\( 0, 4 \\). Midway point is \\( x = 2 \\), giving \\( y = 2(2-4) = -4 \\). It opens upwards.",
+              "work": "vertex: (2, -4), quad \\text{range: } y \\ge -4"
+            },
+            {
+              "explain": "c) For \\( (x-1)(x-5) = 0 \\), zeroes are \\( 1, 5 \\). Midway point is \\( x = 3 \\), giving \\( y = (3-1)(3-5) = -4 \\). It opens upwards.",
+              "work": "vertex: (3, -4), quad \\text{range: } y \\ge -4"
+            },
+            {
+              "explain": "d) For \\( -(x+4)(x-2) = 0 \\), zeroes are \\( -4, 2 \\). Midway point is \\( x = -1 \\), giving \\( y = -(-1+4)(-1-2) = 9 \\). It opens downwards.",
+              "work": "vertex: (-1, 9), quad \\text{range: } y \\le 9"
+            },
+            {
+              "explain": "e) Factor \\( x^2 + 2x - 8 = (x+4)(x-2) = 0 \\), giving zeroes \\( -4, 2 \\). Midway is \\( x = -1 \\), giving \\( y = (-1)^2 + 2(-1) - 8 = -9 \\). It opens upwards.",
+              "work": "vertex: (-1, -9), quad \\text{range: } y \\ge -9"
+            },
+            {
+              "explain": "f) Factor \\( -x^2 + 4x + 5 = -(x^2 - 4x - 5) = -(x-5)(x+1) = 0 \\), giving zeroes \\( 5, -1 \\). Midway is \\( x = 2 \\), giving \\( y = -(2)^2 + 4(2) + 5 = 9 \\). It opens downwards.",
+              "work": "vertex: (2, 9), quad \\text{range: } y \\le 9"
+            }
+          ],
+          "manual": true,
+          "timeLimit": 180
+        }
+      ]
+    }
+  ]
+}
