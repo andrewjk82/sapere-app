@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year8ch3review",
+      "synthetic": true,
       "code": "",
       "title": "Review of factors and indices",
       "questions": [

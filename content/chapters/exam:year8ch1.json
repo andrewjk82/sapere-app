@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year8ch1",
+      "synthetic": true,
       "code": "",
       "title": "Problem solving",
       "questions": [

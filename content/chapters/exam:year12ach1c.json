@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year12ach1c",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [

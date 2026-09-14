@@ -2293,6 +2293,7 @@
         {
           "id": "bb2020-q8",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The diagram below shows the graph of \\(y=f(x)\\) with a point \\(P(a, f(a))\\) marked on a falling, concave-down section of the curve, just before it reaches its local maximum. Which statement is true about \\(f\\) at \\(x=a\\)?",
           "figure": {
             "svg": "fig:967eb9b4c4"
@@ -2332,6 +2333,7 @@
         {
           "id": "hh2020-q16",
           "type": "review",
+          "difficulty": "hard",
           "stem": "The diagram shows the graph of \\(f(x)\\), a cubic with \\(x\\)-intercepts at \\(x=-3, -1, 2\\). Sketch \\(f'(x)\\) below, showing all critical features.",
           "figure": {
             "svg": "fig:2f0500c4b2"
@@ -4211,6 +4213,7 @@
         {
           "id": "hg2020-q16",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Let \\(f(x) = (x-2)(x^2+1)\\).",
           "parts": [
             {
@@ -5914,6 +5917,7 @@
         {
           "id": "hg2020-q24",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "A curve with the equation \\(y=f(x)\\) has \\(\\dfrac{dy}{dx} = x^3+2x-7\\).",
           "parts": [
             {
@@ -7348,6 +7352,7 @@
         {
           "id": "hg2020-q3",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "For what values of \\(x\\) is the curve \\(f(x) = 2x^3+x^2\\) concave down?",
           "options": [
             "\\(x < -6\\)",
@@ -7381,6 +7386,7 @@
         {
           "id": "hillsgrammar-25-2u-q34",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The graph of \\(y=f(x)\\), where \\(f(x)=x^2e^{-x}\\), has points of inflection at \\(P\\) and \\(Q\\) (do NOT prove this). What is the distance between the \\(x\\)-values of the points of inflection, \\(d\\)?",
           "options": [
             "\\(d = 2\\sqrt2\\)",
@@ -8114,6 +8120,7 @@
         {
           "id": "bb2020-q26",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Consider the curve \\(y=3x-x^3-1\\), for \\(-3 \\le x \\le 2\\).",
           "parts": [
             {
@@ -8358,6 +8365,7 @@
         {
           "id": "hh2020-q24",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Consider the curve \\(y=\\sin x+\\cos x\\) in the domain \\(-\\pi \\le x \\le \\pi\\).",
           "parts": [
             {
@@ -8664,6 +8672,7 @@
         {
           "id": "hillsgrammar-25-2u-q19",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Determine the global maximum and minimum values of \\(y\\) for the curve \\(y = e^2 + e^x - xe^2\\) in the domain \\(0 \\le x \\le 5\\). (Give your answers as exact values.)",
           "options": [
             "Max \\(=e^5-4e^2\\), Min \\(=0\\)",
@@ -11436,6 +11445,7 @@
         {
           "id": "bb2020-q32",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "A rectangular window surmounted by a semi-circle (as shown) has perimeter \\(16\\pi\\) metres. Let the radius of the semi-circle be \\(r\\) metres and the height of the rectangle be \\(h\\) metres.",
           "figure": {
             "svg": "fig:08b666fceb"
@@ -11781,6 +11791,7 @@
         {
           "id": "hh2020-q31",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Let \\(f(x) = 2e^{-x/5}\\) for \\(x \\ge 0\\). A right-angled triangle \\(OQP\\) has vertex \\(O\\) at the origin, vertex \\(Q\\) on the \\(x\\)-axis and vertex \\(P\\) on the graph of \\(f(x)\\), with coordinates \\((x,f(x))\\).",
           "figure": {
             "svg": "fig:0f46261166"
@@ -11896,6 +11907,7 @@
         {
           "id": "hillsgrammar-25-2u-q33a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "When a car travels at a constant speed of \\(s\\) km/h, its fuel rate is \\(R = \\dfrac{s^3}{100000}+\\dfrac{s}{25}+\\dfrac{1}{s}\\) litres per hour. The car travels 100 km, using a total of \\(Q\\) litres. Which expression correctly gives \\(Q\\) in terms of \\(s\\)?",
           "options": [
             "\\(Q = \\dfrac{s^2}{1000}+4+100s^{-2}\\)",
@@ -11937,6 +11949,7 @@
         {
           "id": "hillsgrammar-25-2u-q33b",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Find the speed that minimises the total fuel required for the journey \\(\\left(Q=\\dfrac{s^2}{1000}+4+100s^{-2}\\right)\\), correct to 1 decimal place.",
           "options": [
             "\\(s \\approx 17.8\\) km/h",
@@ -11978,6 +11991,7 @@
         {
           "id": "hillsgrammar-25-2u-q33c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A car travelling 100 km at constant speed \\(s\\) km/h uses a total of \\(Q = \\dfrac{s^2}{1000}+4+100s^{-2}\\) litres of fuel. This amount is minimised when \\(s \\approx 17.8\\) km/h. Find the minimum amount of fuel required for the journey, correct to 1 decimal place.",
           "options": [
             "\\(4.6\\) litres",
@@ -14303,6 +14317,7 @@
         {
           "id": "bb2020-q20",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The curve \\(y=f(x)\\) passes through the point \\((-1,2)\\) and \\(f'(x) = 4x^3-3\\). Find \\(f(x)\\).",
           "options": [
             "\\(f(x) = 12x^2-2\\)",

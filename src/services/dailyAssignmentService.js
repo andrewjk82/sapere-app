@@ -14,6 +14,7 @@ import {
   where,
 } from "../firebase/firestoreWrapper";
 import { readChapterIndex } from "./questionIndexService";
+import { getQuestionsByIds as cdnByIds } from "./contentLoader";
 import { db } from "../firebase/config";
 import { CURRICULUM_DATA } from "../constants/curriculumData";
 import {
@@ -444,15 +445,18 @@ const fetchChapterQuestionsLegacy = async (chapterId, fetchLimit = 100) => {
 
 // Fetch specific questions by ID (Firestore `in` allows 30 IDs per query).
 export const fetchQuestionsByIds = async (ids) => {
+  // Chapters served from /content/ never touch Firestore; `remaining` are the ids that still must.
+  const cdn = await cdnByIds(ids);
+  if (!cdn.remaining.length) return cdn.docs;
   const qRef = collection(db, "questions");
   const batches = [];
-  for (let i = 0; i < ids.length; i += 30) {
-    batches.push(ids.slice(i, i + 30));
+  for (let i = 0; i < cdn.remaining.length; i += 30) {
+    batches.push(cdn.remaining.slice(i, i + 30));
   }
   const snaps = await Promise.all(
     batches.map((batch) => getDocs(query(qRef, where(documentId(), "in", batch)))),
   );
-  return snaps.flatMap((snap) => snap.docs.map((item) => ({ id: item.id, ...item.data() })));
+  return cdn.docs.concat(snaps.flatMap((snap) => snap.docs.map((item) => ({ id: item.id, ...item.data() }))));
 };
 
 /**

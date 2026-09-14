@@ -22,6 +22,7 @@ import { collection, query, where, getDocs, getDoc, doc, setDoc, serverTimestamp
 import { addMistakes } from '../utils/secretNote';
 import { idbGet, idbSet, idbDel } from '../utils/idbStore';
 import { readChapterIndex } from './questionIndexService';
+import { getQuestionsByIds as cdnByIds } from './contentLoader';
 
 export const EXAM_PREP_NOTE_KIND = 'exam_prep';
 
@@ -609,7 +610,9 @@ export const ensurePool = async (uid, selection, { force = false } = {}) => {
 
   // Fetch indexed questions by document ID (Firestore `in` caps at 30 per query).
   // A stale ID that no longer exists simply isn't returned — no error, fewer rows.
-  const uniqueIds = [...new Set(indexedIds.map(String))];
+  const cdn = await cdnByIds([...new Set(indexedIds.map(String))]);
+  cdn.docs.forEach((d) => { if (d.isActive !== false) all.push(d); });
+  const uniqueIds = cdn.remaining;
   for (let i = 0; i < uniqueIds.length; i += 30) {
     const batch = uniqueIds.slice(i, i + 30);
     const snap = await getDocs(query(

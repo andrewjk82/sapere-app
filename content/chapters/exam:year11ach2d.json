@@ -42,7 +42,7 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "Write down the conjugate of:\n\n\\\\(2\\\\sqrt{5}+3\\\\)",
-          "answer": "1",
+          "answer": "0",
           "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
           "solution": "0",
           "steps": [
@@ -71,7 +71,7 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "Write down the conjugate of:\n\n\\\\(\\\\sqrt{7}-\\\\sqrt{2}\\\\)",
-          "answer": "2",
+          "answer": "0",
           "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
           "solution": "0",
           "steps": [
@@ -100,7 +100,7 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "Write down the conjugate of:\n\n\\\\(3\\\\sqrt{11}+4\\\\sqrt{6}\\\\)",
-          "answer": "3",
+          "answer": "0",
           "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
           "solution": "0",
           "steps": [
@@ -129,7 +129,7 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "Write down the result when the expression \\\\(\\\\sqrt{3}-1\\\\) is multiplied by its conjugate.",
-          "answer": "3",
+          "answer": "0",
           "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
           "solution": "0",
           "steps": [

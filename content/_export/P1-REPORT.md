@@ -46,3 +46,47 @@ Acceptance vs today's Firestore indexes (from raw-meta snapshot):
 - chapter membership: 263/328 identical; the 65 others fully explained — 17 empty index docs, 22 inactive (filtered today too), 98 orphan ids (no doc). **0 unexplained.**
 - topic membership: published sets ⊇ `question_topic_index` (311 identical, 217 larger). The Firestore topic index only ever held the seeder's own ids, so teacher/script-added questions (2,801) never reached topic practice — the published files correct that. Exam-paper questions tagged with curriculum topicIds also appear under that topic; P3 loader must exclude `exam:*` chapters from topic practice by default to keep today's behaviour.
 - `figure.html` carrying inline SVG (raw Firestore used the html key): preserved as-is, not de-duplicated — P5 cleanup.
+
+---
+# P3 — loader switch (2026-09-14)
+
+`src/services/contentLoader.js` serves questions from `/content/` in the **legacy Firestore document
+shape** (`toLegacy`), so no component changed. It is wired into the two chokepoints every student
+path already goes through:
+
+| chokepoint | consumers | change |
+|---|---|---|
+| `questionIndexService.readChapterIndex(chapterId)` | dailyAssignment, practicePool, examPrep, chapterQuestionsCache | CDN ids when `useCdn(chapterId)` |
+| `fetchQuestionsByIds(ids)` (×3: chapterQuestionsCache, dailyAssignmentService, examPrepService) | Daily Challenge, Topic Practice, Exam Prep | CDN docs for ids in CDN chapters; `remaining` still from Firestore |
+| `chapterQuestionsCache.getChapter/TopicQuestions` | Topic Practice | direct CDN (no localStorage cache) |
+
+Switch: `VITE_CONTENT_SOURCE` = `firestore` (default, **code path unchanged**) | `cdn` | `y7-7,exam:` (chapter ids/prefixes).
+Per-browser override: `localStorage.setItem('sapere:contentSource','cdn')` — lets the admin test the CDN
+path on production without affecting any student or redeploying. Kill-switch: manifest fetch failure ⇒
+Firestore paths, automatically.
+
+## Acceptance — `npm run test:content-parity` (24,274 active Firestore docs vs CDN legacy output)
+Every remaining difference is intentional or explained; **0 unexplained**:
+| kind | count | meaning |
+|---|---|---|
+| recovered (question / hint / solution / steps / options / graphData) | 12,815 | Firestore was empty or generic-template; seed content restored |
+| mc-answer(adjudicated) | 18 | the 18 key fixes — matches exactly |
+| mc-answer(fs unresolvable today) | 19 | Firestore answer matches no option (ungradeable today); CDN resolves via LaTeX-normalised match |
+| difficulty | 544 | `Medium` → `medium` |
+| graphData | 193 | `diagramSvg` key → `svg` (MathView reads both) |
+| chapterId | 43 | docs whose own `chapterId` is an HSC type slug; home = index chapter (what the app uses) |
+| type | 31 | test artifact — MC parents with sub-parts, both sides `multiple_choice` |
+| answer / solution / options | 4 / 2 / 1 | stray `a:0` on review parents; my 2 solution-text fixes; q2b typo option |
+| MISSING-from-cdn | 9 | BROKEN (empty stem / no options) → published as inactive |
+
+MC correctness is by construction: the normaliser and the parity test both call the app's own
+`resolveCorrectOptionIndex` (src/utils/mcOptionShuffle.js), so the published index is exactly
+what students are graded against today.
+
+Fidelity decisions made here: `options[].isCorrect` ignored (app never reads it); bare top-level jsxgraph
+configs kept under `figure.raw` (MathView only renders `.jsxGraph`, so they do not draw today either);
+synthetic topics (Firestore `topicId:''`) come back as `''`; `examPaper` only when the doc had one.
+
+Browser smoke (vite preview of a `VITE_CONTENT_SOURCE=cdn` build): app boots, 0 console errors,
+manifest 200 / 228 chapters, topic file resolves with SVG inlined. Logged-in flows need a real
+account — verify via the localStorage override on production.

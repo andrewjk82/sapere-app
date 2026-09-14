@@ -41,6 +41,8 @@ const INDEX_COLLECTION = 'question_index';
 const META_DOC_ID = '_meta';
 
 const indexRef = (chapterId) => doc(db, INDEX_COLLECTION, chapterId);
+import { useCdn, getChapterIndex } from './contentLoader';
+
 const metaRef = () => doc(db, INDEX_COLLECTION, META_DOC_ID);
 const questionsVersionRef = () => doc(db, 'sync_meta', 'questions');
 
@@ -53,6 +55,11 @@ const questionsVersionRef = () => doc(db, 'sync_meta', 'questions');
  */
 export const readChapterIndex = async (chapterId) => {
   if (!chapterId) return null;
+  // Chapters served from /content/ (see contentLoader.useCdn) get their membership from the
+  // published manifest — zero Firestore reads. Falls through to Firestore if the CDN path fails.
+  if (useCdn(chapterId)) {
+    try { const idx = await getChapterIndex(chapterId); if (idx) return idx; } catch { /* fall through */ }
+  }
   try {
     const snap = await getDoc(indexRef(chapterId));
     if (!snap.exists()) return null;

@@ -11,6 +11,7 @@
         {
           "id": "hillsgrammar-25-2u-q35c",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The destroyers (with distance \\(d(t) = 10\\sqrt{1300-450t+39t^2}\\) km, starting at 9 a.m.) are \"on alert\" when they are less than \\(40\\) km apart. During what times will the two destroyers be \"on alert\"?",
           "options": [
             "Between about 2:10 pm and 3:22 pm",
@@ -58,6 +59,7 @@
         {
           "id": "bb2020-q5",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The graph below shows the income and cost lines for a small business, in dollars, against the number of boxes sold. Use the graph to determine the number of boxes that need to be sold to break even.",
           "figure": {
             "svg": "fig:d95b4ffe61"
@@ -241,6 +243,7 @@
         {
           "id": "hh2020-q29",
           "type": "review",
+          "difficulty": "hard",
           "stem": "By drawing graphs on the number plane, show how many solutions exist for the equation \\(\\cos x = \\left|\\dfrac{x-\\pi}{4}\\right|\\) in the domain \\((-\\infty,\\infty)\\).",
           "figure": {
             "svg": "fig:bbe81593a1"
@@ -363,6 +366,7 @@
         {
           "id": "hg2020-q5",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Which diagram best shows the graph of the parabola \\(y = 2-(x+1)^2\\)?",
           "figure": {
             "svg": "fig:30b1a8a4cb"
@@ -453,6 +457,7 @@
         {
           "id": "hillsgrammar-25-2u-q27a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The figure shows the graph of \\(y=f(x)\\), meeting the \\(x\\)-axis at \\((-3,0)\\) and the \\(y\\)-axis at \\((0,2)\\), with a maximum at \\((3,4)\\), a minimum at \\((-3,0)\\), and a horizontal asymptote \\(y=2\\). What is the range of \\(\\frac{1}{2}f(x)\\)?",
           "figure": {
             "svg": "fig:9e71e8b30f"
@@ -488,6 +493,7 @@
         {
           "id": "hillsgrammar-25-2u-q27b",
           "type": "review",
+          "difficulty": "medium",
           "stem": "Sketch the graph of \\(g(x) = f(3x) - 2\\), labelling all points and asymptotes.",
           "figure": {
             "svg": "fig:9e71e8b30f"
@@ -641,6 +647,7 @@
         {
           "id": "hh2020-q3",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "What is the amplitude, period and phase of \\(f(x) = -2\\cos(5x-\\pi)\\)?",
           "options": [
             "Amplitude is 2, period is 5, phase shift is \\(\\dfrac{\\pi}{5}\\) to the right",
@@ -674,6 +681,7 @@
         {
           "id": "hillsgrammar-25-2u-q10",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The function \\(y = 2\\sin x + 1\\) is translated up \\(m\\) units and then vertically dilated by a factor of \\(n\\) from the \\(x\\)-axis, where \\(m\\) and \\(n\\) are positive numbers. What is the range of the new curve?",
           "options": [
             "\\([mn-2n, mn+n]\\)",

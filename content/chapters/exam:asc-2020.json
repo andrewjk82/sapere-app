@@ -4153,7 +4153,7 @@
           "difficulty": "hard",
           "stem": "(a) Find the expression for the remaining shaded area \\(A\\) in terms of \\(\\theta\\).",
           "figure": {
-            "jsxGraph": {
+            "raw": {
               "elements": [
                 {
                   "type": "point",
@@ -4389,7 +4389,7 @@
           "difficulty": "hard",
           "stem": "(b) Find the angle \\(\\theta\\) so that the area is a maximum. Give your answer correct to 2 decimal places.",
           "figure": {
-            "jsxGraph": {
+            "raw": {
               "elements": [
                 {
                   "type": "point",
@@ -4620,7 +4620,7 @@
           "difficulty": "hard",
           "stem": "A shape has area $A = 20(2\\theta + \\sin\\theta)$ cm², where $\\theta$ is measured in radians and $0 < \\theta < \\pi$.\n\nFind the value of $\\theta$ that maximises the area.",
           "figure": {
-            "jsxGraph": {
+            "raw": {
               "elements": [
                 {
                   "type": "point",
@@ -4830,7 +4830,7 @@
               "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Ascham 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
               "work": "\\(\\frac{dA}{d\\theta} = 20(2 + \\cos\\theta)\\)",
               "figure": {
-                "jsxGraph": {
+                "raw": {
                   "elements": [
                     {
                       "type": "point",

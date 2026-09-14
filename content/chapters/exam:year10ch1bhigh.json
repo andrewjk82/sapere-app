@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year10ch1bhigh",
+      "synthetic": true,
       "code": "",
       "title": "Percentage increase and decrease",
       "questions": [

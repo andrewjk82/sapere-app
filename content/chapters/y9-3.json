@@ -4151,11 +4151,13 @@
         {
           "id": "sg2022-q4d",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "Josh invests \\(\\$50\\,000\\) into an account which earns \\(6\\%\\) interest p.a., compounded annually. (i) What is the value of the account at the end of eight years? (ii) How many years will it take for him to accumulate a total interest of \\(\\$200\\,000\\)?",
           "parts": [
             {
               "id": "sg2022-q4d-i",
               "type": "mc",
+              "difficulty": "medium",
               "stem": "Josh invests \\(\\$50\\,000\\) into an account which earns \\(6\\%\\) interest p.a., compounded annually. What is the value of the account at the end of eight years? Give your answer correct to the nearest cent.",
               "options": [
                 "\\(\\$52\\,000.00\\)",
@@ -4185,6 +4187,7 @@
             {
               "id": "sg2022-q4d-ii",
               "type": "mc",
+              "difficulty": "hard",
               "stem": "Using the same investment (\\(\\$50\\,000\\) at \\(6\\%\\) p.a. compounded annually), how many years will it take for Josh to accumulate a total interest of \\(\\$200\\,000\\)? Give your answer rounded up to the nearest year.",
               "options": [
                 "\\(23\\) years",
@@ -4237,6 +4240,7 @@
         {
           "id": "sg2022-q6d",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Alex's average homework effort, measured in minutes per week, depreciates by \\(15\\%\\) a week over a ten week term. How long did Alex work on homework in the first week of term if, in the tenth week of term, he completed two hours? Give your answer correct to the nearest minute.",
           "options": [
             "\\(704\\) minutes",

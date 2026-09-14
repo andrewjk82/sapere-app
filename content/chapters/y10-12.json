@@ -2688,6 +2688,7 @@
         {
           "id": "jr2012-q2",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The point \\(Y\\) is on a bearing of \\(065°\\text{T}\\) from point \\(X\\), and point \\(Z\\) is on a bearing of \\(165°\\text{T}\\) from \\(Y\\). The size of \\(\\angle XYZ\\) is:",
           "options": [
             "\\(115°\\)",
@@ -2723,6 +2724,7 @@
         {
           "id": "jr2012-q7",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The diagonals of a trapezium \\(ABCD\\) make angles of \\(30°\\) as shown. The base \\(CD\\) has length \\(10\\) units. The perimeter of the trapezium is:",
           "figure": {
             "svg": "fig:3b797686d6"
@@ -2762,6 +2764,7 @@
         {
           "id": "jrhy2008-q22",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Daniel sailed due south for 40 km. Then he sailed due east for 30 km to reach a reef. What is the true bearing of the reef from Daniel's starting point?",
           "options": [
             "053°",
@@ -7265,6 +7268,7 @@
         {
           "id": "jr2012-q34e",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "\\(ABCDE\\) is a pyramid with a square base \\(ABCD\\) of side length \\(10\\text{ cm}\\) and \\(OE=12\\text{ cm}\\), where \\(O\\) is the centre of the base.",
           "figure": {
             "svg": "fig:1dc643c430"
@@ -7928,6 +7932,7 @@
         {
           "id": "jr2013-qCc",
           "type": "review",
+          "difficulty": "hard",
           "stem": "(c) A boat starts at port \\(A\\) and travels on a bearing of \\(222°\\text{T}\\) until it reaches point \\(B\\). From \\(B\\), two buoys \\(X\\) and \\(Y\\) are seen due South of \\(B\\); \\(Y\\) is known to be 200 m due South of \\(X\\). The boat continues on the same course (\\(222°\\text{T}\\)) until it reaches point \\(C\\). From \\(C\\), the bearing of \\(X\\) is \\(140°\\text{T}\\) and the bearing of \\(Y\\) is \\(165°\\text{T}\\). Draw a diagram showing all of the information given above.",
           "figure": {
             "svg": "fig:e7c7fd5c51"
@@ -9873,6 +9878,7 @@
         {
           "id": "jr2012-q32a",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "\\(ABC\\) is a triangle such that \\(AB=AC=8\\text{ cm}\\) and \\(BC=10\\text{ cm}\\), constructed using a ruler and compasses with base \\(BC\\) horizontal.",
           "parts": [
             {
@@ -9950,6 +9956,7 @@
         {
           "id": "jr2012-q32b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Solve the equation \\(\\cos^2x=\\sin^2x\\) for \\(0°\\le x\\le360°\\).",
           "options": [
             "\\(x = 45°, 135°, 225°, 315°\\)",
@@ -9979,6 +9986,7 @@
         {
           "id": "jr2012-q32c",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "A box contains exactly five balls, three red and two white. Balls are randomly removed, one at a time, without replacement.",
           "parts": [
             {
@@ -10050,6 +10058,7 @@
         {
           "id": "jr2012-q32d",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "\\(A\\) is a point due East of \\(O\\), and \\(B\\) is a point due North of \\(O\\). \\(P\\) is the point on a bearing of \\(120°\\text{T}\\) from \\(B\\) and \\(345°\\text{T}\\) from \\(A\\). \\(AP=3\\text{ km}\\) and \\(BP=5\\text{ km}\\), and the bearing of \\(P\\) from \\(O\\) is \\(\\theta°\\text{T}\\), as shown in the diagram.",
           "figure": {
             "svg": "fig:f05b4dd51d"
@@ -10175,6 +10184,7 @@
         {
           "id": "jr2012-q32e",
           "type": "review",
+          "difficulty": "hard",
           "stem": "Sketch the graph of \\(y=1-2\\cos\\left(\\dfrac{x}{3}\\right)\\) for \\(0°\\le x\\le720°\\), showing all intercepts with the coordinate axes. Use a horizontal scale of \\(1\\text{ cm}=90°\\) and a vertical scale of \\(2\\text{ cm}=1\\) unit.",
           "answer": "",
           "steps": [
@@ -12591,6 +12601,7 @@
         {
           "id": "jr2012-q34c",
           "type": "review",
+          "difficulty": "hard",
           "stem": "\n\\(ABC\\) is a triangle. Side \\(BC\\) is trisected at points \\(X\\) and \\(Y\\) (so \\(BX=XY=YC\\)). (i) Copy the diagram and write a formula for \\(\\cos\\angle AXB\\) in terms of the lengths of \\(AB\\), \\(AX\\) and \\(BC\\). (ii) Hence, or otherwise, show that \\(AB^2-AC^2=3(AX^2-AY^2)\\), giving reasons.",
           "figure": {
             "svg": "fig:30a5dc4f16"
@@ -16123,6 +16134,7 @@
         {
           "id": "jrhy2008-q17",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Two sides of a triangular field are 60 m and 50 m, and the included angle is \\(140°\\). The area of the field, correct to the nearest square metre, is:",
           "options": [
             "\\(496\\text{ m}^2\\)",
@@ -16197,7 +16209,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar B = board.create('point', [5,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar C = board.create('point', [2,4], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]}});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "73.2"
+              "answer": "73.2",
+              "options": [
+                "\\(-73.2\\)",
+                "\\(72.2\\)",
+                "\\(73.2\\)",
+                "\\(74.2\\)"
+              ]
             },
             {
               "id": "y10-12h-q3b",
@@ -16222,7 +16240,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar B = board.create('point', [5,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar C = board.create('point', [2,4], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]}});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "56.8"
+              "answer": "56.8",
+              "options": [
+                "\\(-56.8\\)",
+                "\\(55.8\\)",
+                "\\(56.8\\)",
+                "\\(57.8\\)"
+              ]
             },
             {
               "id": "y10-12h-q3c",
@@ -16247,7 +16271,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar B = board.create('point', [5,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar C = board.create('point', [2,4], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]}});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "134"
+              "answer": "134",
+              "options": [
+                "\\(136\\)",
+                "\\(133\\)",
+                "\\(134\\)",
+                "\\(135\\)"
+              ]
             }
           ],
           "hint": "Use the sine rule to find the unknown angle, then use the angle sum of a triangle to find the third angle. Finally, apply the area formula.",
@@ -16302,7 +16332,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar B = board.create('point', [5,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar C = board.create('point', [2,4], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]}});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "117"
+              "answer": "117",
+              "options": [
+                "\\(119\\)",
+                "\\(116\\)",
+                "\\(117\\)",
+                "\\(118\\)"
+              ]
             },
             {
               "id": "y10-12h-q4b",
@@ -16327,7 +16363,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [-10,-10]} });\nvar B = board.create('point', [5,0], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [10,-10]}});\nvar C = board.create('point', [2,4], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0,10]}});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2}});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "21"
+              "answer": "21",
+              "options": [
+                "\\(23\\)",
+                "\\(20\\)",
+                "\\(21\\)",
+                "\\(22\\)"
+              ]
             }
           ],
           "hint": "First find the angle $\\angle BAC$ using the cosine rule, then calculate the area using the sine area formula.",
@@ -16487,7 +16529,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0, 4], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar B = board.create('point', [4, 1], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar C = board.create('point', [2.5, -3], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar D = board.create('point', [-2.5, -3], {name: 'D', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar E = board.create('point', [-4, 1], {name: 'E', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar p = board.create('polygon', [A,B,C,D,E], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('segment', [A,C], {strokeColor: '#4f46e5', dash: 2});\nboard.create('segment', [A,D], {strokeColor: '#4f46e5', dash: 2});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "108"
+              "answer": "108",
+              "options": [
+                "\\(110\\)",
+                "\\(107\\)",
+                "\\(108\\)",
+                "\\(109\\)"
+              ]
             },
             {
               "id": "y10-12h-q9b",
@@ -16512,7 +16560,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0, 4], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar B = board.create('point', [4, 1], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar C = board.create('point', [2.5, -3], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar D = board.create('point', [-2.5, -3], {name: 'D', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar E = board.create('point', [-4, 1], {name: 'E', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar p = board.create('polygon', [A,B,C,D,E], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('segment', [A,C], {strokeColor: '#4f46e5', dash: 2});\nboard.create('segment', [A,D], {strokeColor: '#4f46e5', dash: 2});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "47.55"
+              "answer": "47.55",
+              "options": [
+                "\\(-47.55\\)",
+                "\\(46.55\\)",
+                "\\(47.55\\)",
+                "\\(48.55\\)"
+              ]
             },
             {
               "id": "y10-12h-q9c",
@@ -16537,7 +16591,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0, 4], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar B = board.create('point', [4, 1], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar C = board.create('point', [2.5, -3], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar D = board.create('point', [-2.5, -3], {name: 'D', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar E = board.create('point', [-4, 1], {name: 'E', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar p = board.create('polygon', [A,B,C,D,E], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('segment', [A,C], {strokeColor: '#4f46e5', dash: 2});\nboard.create('segment', [A,D], {strokeColor: '#4f46e5', dash: 2});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "16.18"
+              "answer": "16.18",
+              "options": [
+                "\\(-16.18\\)",
+                "\\(15.18\\)",
+                "\\(16.18\\)",
+                "\\(17.18\\)"
+              ]
             },
             {
               "id": "y10-12h-q9d",
@@ -16562,7 +16622,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0, 4], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar B = board.create('point', [4, 1], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar C = board.create('point', [2.5, -3], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar D = board.create('point', [-2.5, -3], {name: 'D', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar E = board.create('point', [-4, 1], {name: 'E', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar p = board.create('polygon', [A,B,C,D,E], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('segment', [A,C], {strokeColor: '#4f46e5', dash: 2});\nboard.create('segment', [A,D], {strokeColor: '#4f46e5', dash: 2});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "36"
+              "answer": "36",
+              "options": [
+                "\\(38\\)",
+                "\\(35\\)",
+                "\\(36\\)",
+                "\\(37\\)"
+              ]
             },
             {
               "id": "y10-12h-q9e",
@@ -16587,7 +16653,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0, 4], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar B = board.create('point', [4, 1], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar C = board.create('point', [2.5, -3], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar D = board.create('point', [-2.5, -3], {name: 'D', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar E = board.create('point', [-4, 1], {name: 'E', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar p = board.create('polygon', [A,B,C,D,E], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('segment', [A,C], {strokeColor: '#4f46e5', dash: 2});\nboard.create('segment', [A,D], {strokeColor: '#4f46e5', dash: 2});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "72"
+              "answer": "72",
+              "options": [
+                "\\(74\\)",
+                "\\(71\\)",
+                "\\(72\\)",
+                "\\(73\\)"
+              ]
             },
             {
               "id": "y10-12h-q9f",
@@ -16612,7 +16684,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0, 4], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar B = board.create('point', [4, 1], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar C = board.create('point', [2.5, -3], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar D = board.create('point', [-2.5, -3], {name: 'D', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar E = board.create('point', [-4, 1], {name: 'E', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar p = board.create('polygon', [A,B,C,D,E], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('segment', [A,C], {strokeColor: '#4f46e5', dash: 2});\nboard.create('segment', [A,D], {strokeColor: '#4f46e5', dash: 2});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "36"
+              "answer": "36",
+              "options": [
+                "\\(38\\)",
+                "\\(35\\)",
+                "\\(36\\)",
+                "\\(37\\)"
+              ]
             },
             {
               "id": "y10-12h-q9g",
@@ -16637,7 +16715,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0, 4], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar B = board.create('point', [4, 1], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar C = board.create('point', [2.5, -3], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar D = board.create('point', [-2.5, -3], {name: 'D', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar E = board.create('point', [-4, 1], {name: 'E', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar p = board.create('polygon', [A,B,C,D,E], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('segment', [A,C], {strokeColor: '#4f46e5', dash: 2});\nboard.create('segment', [A,D], {strokeColor: '#4f46e5', dash: 2});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "76.94"
+              "answer": "76.94",
+              "options": [
+                "\\(-76.94\\)",
+                "\\(75.94\\)",
+                "\\(76.94\\)",
+                "\\(77.94\\)"
+              ]
             },
             {
               "id": "y10-12h-q9h",
@@ -16662,7 +16746,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0, 4], {name: 'A', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar B = board.create('point', [4, 1], {name: 'B', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar C = board.create('point', [2.5, -3], {name: 'C', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar D = board.create('point', [-2.5, -3], {name: 'D', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar E = board.create('point', [-4, 1], {name: 'E', size: 2, color: '#64748b', label: {autoPosition: false, offset: [0, 10]}});\nvar p = board.create('polygon', [A,B,C,D,E], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.create('segment', [A,C], {strokeColor: '#4f46e5', dash: 2});\nboard.create('segment', [A,D], {strokeColor: '#4f46e5', dash: 2});\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "172.04"
+              "answer": "172.04",
+              "options": [
+                "\\(-172.04\\)",
+                "\\(171.04\\)",
+                "\\(172.04\\)",
+                "\\(173.04\\)"
+              ]
             }
           ],
           "hint": "Recall that the interior angle of a regular pentagon is $108°$. Use this to find the side lengths and areas of the triangles inside it.",
@@ -16717,7 +16807,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [5,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [2,4], {visible: true, size: 2, color: '#64748b'});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "31.29"
+              "answer": "31.29",
+              "options": [
+                "\\(-31.29\\)",
+                "\\(30.29\\)",
+                "\\(31.29\\)",
+                "\\(32.29\\)"
+              ]
             },
             {
               "id": "y10-12h-q13b",
@@ -16742,7 +16838,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [5,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [2,4], {visible: true, size: 2, color: '#64748b'});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "42.85"
+              "answer": "42.85",
+              "options": [
+                "\\(-42.85\\)",
+                "\\(41.85\\)",
+                "\\(42.85\\)",
+                "\\(43.85\\)"
+              ]
             },
             {
               "id": "y10-12h-q13c",
@@ -16767,7 +16869,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [5,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [2,4], {visible: true, size: 2, color: '#64748b'});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "34"
+              "answer": "34",
+              "options": [
+                "\\(36\\)",
+                "\\(33\\)",
+                "\\(34\\)",
+                "\\(35\\)"
+              ]
             },
             {
               "id": "y10-12h-q13d",
@@ -16792,7 +16900,13 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [5,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [2,4], {visible: true, size: 2, color: '#64748b'});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": "42.85"
+              "answer": "42.85",
+              "options": [
+                "\\(-42.85\\)",
+                "\\(41.85\\)",
+                "\\(42.85\\)",
+                "\\(43.85\\)"
+              ]
             },
             {
               "id": "y10-12h-q13e",

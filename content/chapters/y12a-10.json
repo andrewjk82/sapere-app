@@ -119,6 +119,7 @@
         {
           "id": "bb2020-q28",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "The length of time, in minutes, that a customer queues to buy toilet paper is a continuous random variable \\(X\\) with probability density function \\(f(x) = k(64-x^2)\\) for \\(0 \\le x \\le 8\\), and \\(f(x)=0\\) otherwise, where \\(k\\) is a constant.",
           "parts": [
             {
@@ -395,6 +396,7 @@
         {
           "id": "hg2020-q21",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "The probability density function for the continuous random variable \\(X\\) is given by \\(f(x)=|1-x|\\) for \\(0 \\le x \\le 2\\), and \\(f(x)=0\\) otherwise.",
           "parts": [
             {
@@ -465,6 +467,7 @@
         {
           "id": "hh2020-q6",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Which of the following graphs could NOT represent a probability density function \\(f(x)\\)?",
           "options": [
             "A cubic-like curve, rising and entirely above the \\(x\\)-axis",
@@ -671,7 +674,14 @@
               ]
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\(2\\\\text{ suites per week}\\)",
+            "\\(1\\\\text{ suite per week}\\)",
+            "\\(3\\\\text{ suites per week}\\)",
+            "\\(4\\\\text{ suites per week}\\)"
+          ],
+          "mc": true,
+          "answer": 0,
           "hint": "Use $E(X) = \\sum xP(x)$ and $\\text{Var}(X) = E(X^2) - [E(X)]^2$.",
           "solution": "$E(X) \\approx 2$, $\\text{Var}(X) \\approx 0.98$. Shop $X$ pays more ($700 vs $650).",
           "timeLimit": 180,
@@ -862,6 +872,7 @@
         {
           "id": "hg2020-q4",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The probability density function for the continuous random variable \\(X\\) is \\(f(x) = x^3-x+4\\) for \\(0 \\le x \\le 1\\), and \\(f(x)=0\\) otherwise. What is \\(E(X)\\)?",
           "options": [
             "\\(0\\)",
@@ -899,6 +910,7 @@
         {
           "id": "hh2020-q21",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "A continuous random variable \\(X\\) has a probability density function \\(f(x) = 2x^3-x+a\\) for \\(0 \\le x \\le 1\\), and \\(f(x)=0\\) otherwise.",
           "parts": [
             {
@@ -978,6 +990,7 @@
         {
           "id": "hg2020-q9",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The continuous random variable \\(X\\) has a normal distribution with mean 11 and standard deviation 2. If \\(Z\\) has the standard normal distribution, the probability that \\(X\\) is greater than 16 is equal to:",
           "options": [
             "\\(P(Z<2.5)\\)",
@@ -1007,6 +1020,7 @@
         {
           "id": "hg2020-q30",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Using a standard normal table where the entry for \\(z\\) gives \\(P(Z\\le z)\\) (and \\(P(Z<-2.3)=0.0107\\)), find \\(P(-2.3 \\le z \\le 1.72)\\).",
           "figure": {
             "svg": "fig:301566f0ee"
@@ -1046,6 +1060,7 @@
         {
           "id": "hh2020-q7",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "The length of a type of ant is approximately normally distributed with a mean of 5.1 mm and a standard deviation of 1.2 mm. A standardised ant length of \\(z=-0.5\\) corresponds to an actual ant length of:",
           "options": [
             "13 mm",
@@ -1079,6 +1094,7 @@
         {
           "id": "hh2020-q27",
           "type": "review",
+          "difficulty": "medium",
           "stem": "The table below shows Bob's scores in PDHPE and Biology examinations, along with the mean and standard deviation for each subject: PDHPE (\\(\\mu=65,\\sigma=4\\), score 74); Biology (\\(\\mu=80,\\sigma=3\\), score 84). Explain which is his strongest subject, showing mathematical working.",
           "answer": "",
           "steps": [
@@ -1309,6 +1325,7 @@
         {
           "id": "bb2020-q6",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Travel times for a bus route are normally distributed with a mean of 85 minutes and a standard deviation of 4 minutes. The percentage of travel times between 81 and 93 minutes is closest to:",
           "figure": {
             "svg": "fig:6d7da9c7e6"
@@ -1348,6 +1365,7 @@
         {
           "id": "bb2020-q27",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "The chocolate consumption per person per day of a population is normally distributed with mean \\(\\mu=68.95\\) grams and standard deviation \\(\\sigma=18.45\\).",
           "parts": [
             {
@@ -1525,6 +1543,7 @@
         {
           "id": "hg2020-q25",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "Students at a school were surveyed on the number of hours of sleep per week. The results were normally distributed: 95% of students had between 42 and 54 hours of sleep per week.",
           "parts": [
             {
@@ -1612,6 +1631,7 @@
         {
           "id": "hh2020-q33",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "The weight, in grams, of beans in a tin is normally distributed with mean \\(\\mu\\) and standard deviation 7.8. It is known that 10.03% of tins contain less than 200 g.",
           "figure": {
             "svg": "fig:30c55e4c31"

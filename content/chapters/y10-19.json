@@ -11,6 +11,7 @@
         {
           "id": "jrhy2008-q11",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Given that \\(\\sin A=t\\) and \\(90° \\lt A \\lt 180°\\), then \\(\\cos A\\) is:",
           "options": [
             "\\(\\sqrt{1+t^2}\\)",
@@ -47,6 +48,7 @@
         {
           "id": "jr2012-q12",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "\\(\\cos[(90+\\alpha)°]-\\cos[(90-\\alpha)°]=\\)",
           "options": [
             "\\(-2\\cos(\\alpha°)\\)",
@@ -76,6 +78,7 @@
         {
           "id": "jr2013-q6",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "\\(\\dfrac{\\cos^2x°-1}{\\sin(90°-x°)-1} = \\)",
           "options": [
             "\\(\\cos(x°)+1\\)",
@@ -116,6 +119,7 @@
         {
           "id": "jr2013-qCa",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Solve the equation \\(2\\cos x°=\\cot x°\\) for \\(0\\le x\\le360\\).",
           "options": [
             "\\(x=90, 270\\)",
@@ -154,6 +158,7 @@
         {
           "id": "jr2013-qCb",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "On the same set of axes, sketch the graphs of \\(y=3\\sin2x\\) and \\(y=\\cos^2x\\), for \\(-180°\\le x\\le180°\\), then state the number of solutions to \\(3\\sin2x-\\cos^2x=0\\) in this domain.",
           "parts": [
             {

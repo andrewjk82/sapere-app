@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "unassigned",
+      "synthetic": true,
       "code": "1A",
       "title": "Expanding brackets",
       "questions": [
@@ -1945,7 +1946,7 @@
             "\\(1.72\\%\\)",
             "\\(1.56\\%\\)"
           ],
-          "answer": null,
+          "answer": 3,
           "steps": [
             {
               "explain": "Each removal step leaves behind \\(50\\% = 0.50\\) of the remaining air.",
@@ -1969,7 +1970,7 @@
             "\\(3.87\\%\\)",
             "\\(3.17\\%\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "steps": [
             {
               "explain": "Each dilution step reduces the concentration of the liquid by a factor of \\(400 \\div 500 = 0.8\\).",
@@ -2117,7 +2118,14 @@
               "timeLimit": 90
             }
           ],
-          "answer": "1",
+          "options": [
+            "\\\\(- 2\\\\)",
+            "\\\\(\\\\)",
+            "\\\\(+ 1\\\\)",
+            "\\\\(\\\\)"
+          ],
+          "mc": true,
+          "answer": 1,
           "steps": [
             {
               "explain": "Read the question carefully and determine the appropriate mathematical rules to apply.",
@@ -2197,7 +2205,14 @@
               "timeLimit": 90
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\\\(\\\\)",
+            "\\\\(- 2\\\\)",
+            "\\\\(+ 1\\\\)",
+            "\\\\(\\\\)"
+          ],
+          "mc": true,
+          "answer": 0,
           "steps": [
             {
               "explain": "Read the question carefully and determine the appropriate mathematical rules to apply.",
@@ -2277,7 +2292,14 @@
               "timeLimit": 90
             }
           ],
-          "answer": "1",
+          "options": [
+            "\\\\(- 2\\\\)",
+            "\\\\(\\\\)",
+            "\\\\(+ 1\\\\)",
+            "\\\\(\\\\)"
+          ],
+          "mc": true,
+          "answer": 1,
           "steps": [
             {
               "explain": "Read the question carefully and determine the appropriate mathematical rules to apply.",
@@ -14387,7 +14409,13 @@
               "solution": "1. The sum of interior angles on the same side is $180^\\circ$.\n2. We have:\n   $$\\angle EFG = 180^\\circ - 72^\\circ = 108^\\circ$$"
             }
           ],
-          "answer": "Select a sub-question to solve.",
+          "options": [
+            "BAC = 80°, ACB = 50°",
+            "BAC = 70°, ACB = 60°",
+            "BAC = 90°, ACB = 45°",
+            "BAC = 60°, ACB = 60°"
+          ],
+          "mc": true,
           "hint": "Use the property that base angles of an isosceles triangle are equal, and parallel line properties.",
           "solution": "Refer to the worked solutions inside each sub-question."
         },
@@ -14564,7 +14592,13 @@
               "solution": "1. The angles subtended by the same arc at the circumference are equal.\n2. Solving using the cyclic quadrilateral properties and right angle triangle relationships, we find:\n   $$\\angle ABD = 90^\\circ - 20^\\circ = 70^\\circ$$"
             }
           ],
-          "answer": "Select a sub-question to solve.",
+          "options": [
+            "AOC = 2α",
+            "AOC = α",
+            "AOC = 90°",
+            "AOC = 180° - α"
+          ],
+          "mc": true,
           "hint": "Use the circle theorem that the angle at the centre is twice the angle at the circumference.",
           "solution": "Refer to the worked solutions inside each sub-question."
         }

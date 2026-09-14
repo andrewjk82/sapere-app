@@ -11,6 +11,7 @@
         {
           "id": "y9-willoughby-19-t7q1",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "An experiment was conducted to find how many matches were in 100 matchboxes. The results are shown below.",
           "figure": {
             "svg": "fig:fa8231b608"
@@ -109,6 +110,7 @@
         {
           "id": "y9-willoughby-19-t7q2",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Two coins are tossed. Find the probability that the result on both coins is a tail.",
           "options": [
             "$\\frac{1}{3}$",

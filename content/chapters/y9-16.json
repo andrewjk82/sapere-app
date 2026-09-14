@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y9-16",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -2346,6 +2347,7 @@
         {
           "id": "y9-willoughby-19-t6q1",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Calculate the perimeter of a sector of a circle with a radius of $24 \\text{ cm}$ and a central angle of $280^\\circ$. Give your answer correct to 2 decimal places.",
           "figure": {
             "svg": "fig:c2d3af590e"
@@ -2388,6 +2390,7 @@
         {
           "id": "y9-willoughby-19-t6q2",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A sector of a circle has an area of $75 \\text{ cm}^2$ and a central angle of $120^\\circ$. Find the radius of the sector, correct to one decimal place.",
           "figure": {
             "svg": "fig:ab95f44a51"
@@ -3161,6 +3164,7 @@
         {
           "id": "sg2022-q5e",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The diagram shows a rectangular prism of clay with \\(AB=20\\text{ cm}\\), \\(BC=16\\text{ cm}\\), \\(EA=40\\text{ cm}\\). A corner has been sliced off through the planar rectangular cut \\(PQRS\\), where \\(EP=HQ=15\\text{ cm}\\) and \\(SB=RC=30\\text{ cm}\\) (so \\(AP=25\\text{ cm}\\) and \\(BS=30\\text{ cm}\\) remain on the two front vertical edges). Calculate the exact surface area of the prism that remains.",
           "figure": {
             "svg": "fig:b93ca45169"
@@ -3217,6 +3221,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q4a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A solid wooden block is in the shape of a rectangular prism with dimensions 8 cm (length), 4 cm (width), and 4 cm (height). What is the surface area of this block?",
           "options": [
             "\\(192 \\text{ cm}^2\\)",
@@ -3249,6 +3254,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q7a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A prism is made from two 'L' shape ends and rectangles. The 'L' shape has a total width of \\(2k\\), a total height of \\(2k\\), a top width of \\(k\\), and a right vertical height of \\(k\\). The length of the prism is \\(5k\\). In terms of \\(k\\), what is the surface area of the prism?",
           "options": [
             "\\(40k^2\\)",
@@ -3289,6 +3295,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q7b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A prism is made from two 'L' shape ends and rectangles. The 'L' shape has a total width of \\(2k\\), a total height of \\(2k\\), a top width of \\(k\\), and a right vertical height of \\(k\\). The length of the prism is \\(5k\\). If the surface area of the prism is \\(414 \\text{ m}^2\\), find the value of \\(k\\).",
           "figure": {
             "svg": "fig:28ea665ac3"
@@ -5026,6 +5033,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q5",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A cylinder has a height of 10cm. Its diameter is twice its height. What is the exact surface area of the closed cylinder?",
           "options": [
             "\\(200\\pi \\text{ cm}^2\\)",
@@ -10805,6 +10813,7 @@
         {
           "id": "sg2022-q4e",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "A cylinder has height \\(9\\text{ cm}\\) and radius \\(3\\text{ cm}\\). A wedge-shaped slice with a \\(20°\\) angle at the centre of the circular face is cut out, running the full height of the cylinder (as shown). Calculate the exact volume of the remaining shape once the slice has been removed.",
           "figure": {
             "svg": "fig:c3b7fa5368"
@@ -10882,6 +10891,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q4b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A solid wooden block is in the shape of a rectangular prism with dimensions 8 cm (length), 4 cm (width), and 4 cm (height). What is the volume of the block in cubic metres (\\(\\text{m}^3\\))?",
           "options": [
             "\\(0.00128 \\text{ m}^3\\)",
@@ -10910,6 +10920,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q6",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A cube has a surface area of \\(294 \\text{ m}^2\\). What is the volume of the cube?",
           "options": [
             "\\(49 \\text{ m}^3\\)",
@@ -10950,6 +10961,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q7c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A prism is made from two 'L' shape ends and rectangles. The 'L' shape has a total width of \\(2k\\), a total height of \\(2k\\), a top width of \\(k\\), and a right vertical height of \\(k\\). The length of the prism is \\(5k\\). If \\(k = 3\\), calculate the volume of the prism.",
           "figure": {
             "svg": "fig:28ea665ac3"
@@ -10989,6 +11001,7 @@
         {
           "id": "y9-willoughby-19-t6q3",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the volume of a triangular prism where the triangular cross-section has a base of $12 \\text{ cm}$ and a perpendicular height of $8 \\text{ cm}$, and the length (or depth) of the prism is $32 \\text{ cm}$.",
           "figure": {
             "svg": "fig:a829310dd7"
@@ -12427,6 +12440,7 @@
         {
           "id": "sg2022-q3b",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Which of the areas below is equivalent to \\(4\\text{ cm}^2\\)?",
           "options": [
             "\\(0.4\\text{ mm}^2\\)",

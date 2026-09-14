@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year6fractions",
+      "synthetic": true,
       "code": "FRAC4",
       "title": "Fraction Word Problems",
       "questions": [
@@ -19,7 +20,7 @@
             "\\\\(\\frac{3}{4}, \\frac{5}{8}, \\frac{1}{2}\\\\)",
             "\\\\(\\frac{1}{2}, \\frac{3}{4}, \\frac{5}{8}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Convert all fractions to a common denominator (e.g., \\\\\\\\(8\\\\)) to compare them easily.",
           "solution": "Convert to denominator \\\\\\\\(8\\\\): \\\\(\\frac{3}{4} = \\frac{6}{8}\\\\), \\\\(\\frac{5}{8} = \\frac{5}{8}\\\\), \\\\(\\frac{1}{2} = \\frac{4}{8}\\\\). Now order the numerators: \\\\\\\\(4, 5, 6\\\\). So, the order is \\\\(\\frac{1}{2}\\\\), \\\\(\\frac{5}{8}\\\\), \\\\(\\frac{3}{4}\\\\).",
           "steps": [
@@ -48,7 +49,7 @@
             "\\\\\\\\(1\\frac{3}{7}\\\\)",
             "\\\\(\\frac{3}{10}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Divide the number of items being shared by the number of people sharing them.",
           "solution": "You divide the \\\\(7\\\\) pies by \\\\\\\\(10\\\\) people. This can be written directly as the fraction \\\\(\\frac{7}{10}\\\\). Each person gets \\\\(\\frac{7}{10}\\\\) of a pie.",
           "steps": [
@@ -73,7 +74,7 @@
             "\\\\$480",
             "\\\\$240"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Work backwards. If \\\\(\\frac{1}{5}\\\\) of his 'left over' money is \\\\$60, find the total 'left over' money. Then figure out his original wage.",
           "solution": "Let his left over money be \\\\(L\\\\). \\\\(\\frac{1}{5}\\\\) of \\\\(L = \\\\$60\\\\), so \\\\(L = \\\\$60 \\times 5 = \\\\$300\\\\). This \\\\\\\\(300 is what remains after a \\\\)\\frac{1}{4}\\\\( tax. So, \\\\\\\\)300 is \\\\(\\frac{3}{4}\\\\) of his total wage. Let his total wage be \\\\(W\\\\). \\\\(\\frac{3}{4}\\\\) of \\\\(W = \\\\$300\\\\). So, \\\\(W = \\\\$300 \\div 3 \\times 4 = \\\\$100 \\times 4 = \\\\$400\\\\).",
           "steps": [

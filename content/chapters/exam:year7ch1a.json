@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year7ch1a",
+      "synthetic": true,
       "code": "",
       "title": "The number line",
       "questions": [

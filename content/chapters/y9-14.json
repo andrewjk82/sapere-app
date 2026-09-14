@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y9-14",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -3959,6 +3960,7 @@
         {
           "id": "sg2022-q3h",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Solve the following equations simultaneously: \\(3x-y=6\\) and \\(y=x+2\\).",
           "options": [
             "\\(x=2,\\; y=4\\)",
@@ -4004,6 +4006,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q4",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Solve the following simultaneous equations:\n\\(2x - y = 12\\)\n\\(3x - 2y = 8\\)",
           "options": [
             "\\(x = 20, y = 16\\)",
@@ -6537,6 +6540,7 @@
         {
           "id": "sg2022-q4b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Solve the following equations simultaneously: \\(3x+5y=8\\) and \\(x-2y=-1\\).",
           "options": [
             "\\(x=6,\\; y=-2\\)",
@@ -6624,6 +6628,7 @@
         {
           "id": "y9-willoughby-19-t3q4",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Solve simultaneously:\n\n\\(2x - y = 12\\)\n\n\\(3x - 2y = 8\\)",
           "options": [
             "$x = 12, y = 14$",
@@ -7745,6 +7750,7 @@
         {
           "id": "y9-killara-24-t4-pc-t2q5",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Kathy paid \\(\\$320\\) in cash for a set of headphones. If she paid in \\(\\$20\\) and \\(\\$10\\) notes, and there were 23 notes altogether. Let \\(x\\) be the number of \\(\\$20\\) notes and \\(y\\) be the number of \\(\\$10\\) notes, how many of each type were there?",
           "options": [
             "10 \\$20 notes and 13 \\$10 notes",

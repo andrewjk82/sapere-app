@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y10-8",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -904,6 +905,7 @@
         {
           "id": "jr2013-qCd",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "(d) \\(ABCD\\) is a square and \\(CDX\\) is an equilateral triangle, with \\(X\\) inside the square, as shown. What is the size of \\(\\angle XAD\\)?",
           "figure": {
             "svg": "fig:7affc74ea3"
@@ -947,6 +949,7 @@
         {
           "id": "jrhy2008-q10",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "In the diagram, two parallel lines are each cut by a separate transversal, making corresponding angles of \\((2p+6)°\\) and \\((3p-1)°\\) with the parallel line. The value of \\(p\\) is:",
           "figure": {
             "svg": "fig:18e5b72cc2"
@@ -985,6 +988,7 @@
         {
           "id": "jrhy2008-q29",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "\\(\\triangle ABC\\) is isosceles with \\(AB=CB\\). \\(Y\\) and \\(Z\\) are the midpoints of \\(AB\\) and \\(CB\\) respectively. \\(X\\) is a point on \\(AC\\) such that \\(YX=ZX\\) (by symmetry, \\(X\\) is the midpoint of \\(AC\\), directly below the apex \\(B\\)). Given \\(AC=6.2\\text{ cm}\\) and the height from \\(B\\) to \\(AC\\) is \\(4.4\\text{ cm}\\), the length of \\(AB\\) (in cm) is closest to:",
           "figure": {
             "svg": "fig:4a9a60aa48"
@@ -1024,6 +1028,7 @@
         {
           "id": "jrhy2008-q30",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Using the same diagram as the previous question, \\(\\angle BYX\\) is closest to:",
           "options": [
             "\\(35°\\)",
@@ -1068,6 +1073,7 @@
         {
           "id": "jrhy2008-q34",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Question 34 — congruent triangles in a rhombus, and the circumcircle of a right-angled triangle (parts a–b).",
           "parts": [
             {
@@ -1163,6 +1169,7 @@
         {
           "id": "jrhy2008-q12",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "\\(\\triangle ACD\\) is equilateral, with \\(D\\) on \\(AB\\). The area of \\(\\triangle ACD\\) is half the area of \\(\\triangle ABC\\). What is the size of \\(\\angle ACB\\)?",
           "figure": {
             "svg": "fig:0c12abecfa"
@@ -1217,6 +1224,7 @@
         {
           "id": "jr2012-q26",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Triangle \\(ABC\\) has points \\(U,V\\) trisecting \\(AB\\); \\(W,X\\) trisecting \\(AC\\); and \\(Y,Z\\) trisecting \\(BC\\), as shown. The ratio of the area of quadrilateral \\(ZVXY\\) to the area of \\(\\triangle ABC\\) is:",
           "figure": {
             "svg": "fig:30a5dc4f16"

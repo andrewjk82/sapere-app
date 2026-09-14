@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year12ach3e",
+      "synthetic": true,
       "code": "",
       "title": "Systematic curve sketching with the derivative",
       "questions": [

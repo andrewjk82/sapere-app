@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y10-7",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -2744,6 +2745,7 @@
         {
           "id": "jr2012-q4",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "A parabola with a vertical axis of symmetry has its vertex at \\((0,8)\\) and an \\(x\\)-intercept of \\(2\\). If the parabola passes through the point \\((1,a)\\), then \\(a\\) is:",
           "options": [
             "\\(5.5\\)",
@@ -2784,6 +2786,7 @@
         {
           "id": "jr2012-q33a",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "\\(A\\) is the point \\((-2,0)\\) and \\(T(t,t^2)\\) is a point on the parabola \\(y=x^2\\). The point \\(P(x,y)\\) divides the interval \\(AT\\) in the ratio \\(3:1\\) (from \\(A\\) to \\(T\\)), as shown.",
           "figure": {
             "svg": "fig:3183f542ff"
@@ -2869,6 +2872,7 @@
         {
           "id": "jr2012-q33b",
           "type": "review",
+          "difficulty": "hard",
           "stem": "Prove that \\(\\dfrac{\\sin^3A}{\\cos A}-\\dfrac{\\cos^3A}{\\sin A} = \\tan A-\\cot A\\).",
           "answer": "",
           "steps": [
@@ -2905,6 +2909,7 @@
         {
           "id": "jr2012-q33c",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Given \\(\\alpha\\) and \\(\\beta\\) are roots of \\(ax^2+bx+c=0\\), and \\(\\gamma\\) and \\(\\delta\\) are roots of \\(cx^2+ax+b=0\\).",
           "parts": [
             {
@@ -2972,6 +2977,7 @@
         {
           "id": "jr2012-q33d",
           "type": "review",
+          "difficulty": "hard",
           "stem": "\\(XY\\) and \\(ZC\\) are tangents at points \\(B\\) and \\(E\\) respectively to a circle with centre \\(O\\). \\(AB\\) is a diameter, and points \\(A\\), \\(E\\) and \\(D\\) are collinear. Copy the diagram and prove that \\(\\triangle ECD\\) is isosceles, giving reasons.",
           "figure": {
             "svg": "fig:e235221ca6"
@@ -3040,6 +3046,7 @@
         {
           "id": "jr2012-q33e",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "It is given that the population standard deviation formula \\(\\sigma_n=\\sqrt{\\dfrac{\\Sigma(x-\\bar x)^2}{n}}\\) can be rewritten as \\(\\sigma_n=\\sqrt{\\dfrac{\\Sigma(x^2)}{n}-(\\bar x)^2}\\). For a class of \\(22\\) students, the mean is \\(62\\) and the standard deviation is \\(25.20\\) (2 d.p.).",
           "parts": [
             {
@@ -3122,6 +3129,7 @@
         {
           "id": "jrhy2008-q26",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The shaded region in the diagram (bounded by the lines through \\((0,6),(3,0)\\) and \\((0,3),(5,0)\\), and the \\(x\\)-axis) is best described by:",
           "figure": {
             "svg": "fig:15f75bf88b"

@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year9ch1e",
+      "synthetic": true,
       "code": "",
       "title": "Binomial products",
       "questions": [

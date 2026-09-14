@@ -1888,6 +1888,7 @@
         {
           "id": "y9-killara-24-t4-pb-q2a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Evaluate the following given that \\(a = 3\\) and \\(b = 2\\): \\(2a - 5\\)",
           "options": [
             "\\(-1\\)",
@@ -1912,6 +1913,7 @@
         {
           "id": "y9-killara-24-t4-pb-q2b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Evaluate the following given that \\(a = 3\\) and \\(b = 2\\): \\(ab + 4\\)",
           "options": [
             "\\(6\\)",
@@ -1936,6 +1938,7 @@
         {
           "id": "y9-killara-24-t4-pb-q2c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Evaluate the following given that \\(a = 3\\) and \\(b = 2\\): \\(\\frac{18}{a} - b\\)",
           "options": [
             "\\(8\\)",
@@ -1960,6 +1963,7 @@
         {
           "id": "y9-killara-24-t4-pb-q3_2",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Given the following formula: \\(I = \\frac{PRN}{100}\\). Find the value of \\(R\\) if \\(I = 240\\), \\(P = 500\\), \\(N = 4\\).",
           "options": [
             "\\(R = 10\\)",
@@ -3622,6 +3626,7 @@
         {
           "id": "sg2022-q1m",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Make \\(x\\) the subject of the formula \\(y=6x-5\\).",
           "options": [
             "\\(x=\\dfrac{y+5}{6}\\)",
@@ -3651,6 +3656,7 @@
         {
           "id": "sg2022-q3d",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "If \\(bx+5d=ax+2c\\), then \\(x\\) is equal to which of the expressions below?",
           "options": [
             "\\(\\dfrac{5d-(a+2c)}{b}\\)",
@@ -3684,6 +3690,7 @@
         {
           "id": "sg2022-q8a",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Find an expression for \\(b\\) given \\(\\dfrac{2a+1}{b}+\\dfrac1c=\\dfrac13\\). Express your answer as a single fraction.",
           "options": [
             "\\(b=\\dfrac{(2a+1)(c-3)}{3c}\\)",
@@ -3748,6 +3755,7 @@
         {
           "id": "y9-killara-24-t4-pb2-q4",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Consider the following equation: \\(s = \\frac{a}{1 - r}\\). Change the subject to \\(r\\).",
           "options": [
             "\\(r = \\frac{a}{s - a}\\)",
@@ -3784,6 +3792,7 @@
         {
           "id": "y9-willoughby-19-t3q2",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Change the subject of the formula to $r$: $V = \\pi r^2 h$",
           "options": [
             "$r = \\sqrt{V - \\pi h}$",

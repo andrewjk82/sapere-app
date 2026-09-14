@@ -3934,6 +3934,7 @@
         {
           "id": "hg2020-q6",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Which of the following is the set of all solutions to \\(2x^2-5x+2 \\ge 0\\)?",
           "options": [
             "\\(\\left(-\\infty,\\dfrac12\\right]\\cup[2,\\infty)\\)",

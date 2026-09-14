@@ -3634,6 +3634,7 @@
         {
           "id": "bb2020-q2",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "What is the angle of inclination of the line \\(\\sqrt{3}x - y + 2\\sqrt{3} = 0\\) with the positive \\(x\\)-axis?",
           "options": [
             "\\(150°\\)",
@@ -5887,6 +5888,7 @@
         {
           "id": "hillsgrammar-25-2u-q1",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Which equation describes the relationship between the two variables \\(a\\) and \\(b\\)?",
           "figure": {
             "svg": "fig:35e0318d70"

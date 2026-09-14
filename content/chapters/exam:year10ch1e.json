@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year10ch1e",
+      "synthetic": true,
       "code": "",
       "title": "Compound depreciation",
       "questions": [

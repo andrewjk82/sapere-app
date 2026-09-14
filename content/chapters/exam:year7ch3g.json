@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year7ch3g",
+      "synthetic": true,
       "code": "",
       "title": "Describing arrays, areas and number patterns",
       "questions": [

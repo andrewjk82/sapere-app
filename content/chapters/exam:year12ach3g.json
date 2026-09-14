@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year12ach3g",
+      "synthetic": true,
       "code": "",
       "title": "Applications of maximisation and minimisation",
       "questions": [

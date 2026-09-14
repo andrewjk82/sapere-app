@@ -3899,6 +3899,7 @@
         {
           "id": "bb2020-q22",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Solve \\(4\\cos^2 x - 3 = 0\\) for \\(-\\pi \\le x \\le \\pi\\).",
           "options": [
             "\\(x = -\\dfrac{5\\pi}{6}, \\dfrac{5\\pi}{6}\\)",
@@ -3936,6 +3937,7 @@
         {
           "id": "hg2020-q10",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "What are the solutions to the equation \\(2\\sin x+\\sqrt3=0\\), for \\(\\{x: 0 \\le x \\le 2\\pi\\}\\)?",
           "options": [
             "\\(\\dfrac{\\pi}{3}, \\dfrac{2\\pi}{3}\\)",
@@ -3969,6 +3971,7 @@
         {
           "id": "hillsgrammar-25-2u-q18",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Find all the values of \\(\\theta\\), where \\(0° \\le \\theta \\le 360°\\), such that \\(\\sin(2\\theta - 30°) = -\\frac{1}{2}\\).",
           "options": [
             "\\(\\theta = 0°, 120°, 180°, 300°, 360°\\)",
@@ -4024,6 +4027,7 @@
         {
           "id": "hillsgrammar-25-2u-q12",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The sector \\(OAB\\) has an area of \\(\\frac{25\\pi}{6}\\) square units. The arc \\(AB\\) is \\(\\frac{5\\pi}{3}\\) units long. Find the exact values of \\(r\\) and \\(\\theta\\).",
           "options": [
             "\\(r=5, \\theta=\\frac{\\pi}{3}\\)",
@@ -4067,6 +4071,7 @@
         {
           "id": "hg2020-q31",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "The height, \\(h(t)\\), metres of the tide above the mean sea level on 1st April is given by \\(h(t)=4\\sin\\left(\\dfrac{\\pi}{8}t\\right)\\), where \\(t\\) is the number of hours after midnight.",
           "parts": [
             {

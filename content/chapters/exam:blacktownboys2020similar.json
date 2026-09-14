@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:blacktownboys2020similar",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [

@@ -13,7 +13,7 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "Classify \\(-3\\).",
-          "answer": "2",
+          "answer": "0",
           "hint": "Natural numbers are positive counting numbers: \\(1, 2, 3, \\ldots\\)",
           "solution": "0",
           "steps": [
@@ -42,7 +42,7 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "Classify \\(0\\).",
-          "answer": "2",
+          "answer": "0",
           "hint": "Natural numbers start at 1.",
           "solution": "0",
           "steps": [
@@ -71,7 +71,7 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "Convert \\((6, \\infty)\\) to inequality notation.",
-          "answer": "2",
+          "answer": "0",
           "hint": "A round bracket means the endpoint is NOT included.",
           "solution": "0",
           "steps": [
@@ -91,7 +91,7 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "Convert \\([4, \\infty)\\) to inequality notation.",
-          "answer": "1",
+          "answer": "0",
           "hint": "Square bracket at 4 means 4 is included.",
           "solution": "0",
           "steps": [
@@ -108,7 +108,7 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "Write \\(x > -4\\) in interval notation.",
-          "answer": "3",
+          "answer": "0",
           "hint": "Strict inequality \\(>\\) → round bracket.",
           "solution": "0",
           "steps": [
@@ -145,7 +145,7 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "Write \\(x \\ge 6\\) in interval notation.",
-          "answer": "3",
+          "answer": "0",
           "hint": "\\(\\ge\\) includes 6 → square bracket, extending to \\(+\\infty\\).",
           "solution": "0",
           "steps": [
@@ -162,7 +162,7 @@
           "type": "review",
           "difficulty": "medium",
           "stem": "Write \\(x < -2\\) OR \\(x \\ge 1\\) in interval notation.",
-          "answer": "2",
+          "answer": "0",
           "hint": "OR combines two separate intervals with \\(\\cup\\).",
           "solution": "0",
           "steps": [
@@ -208,7 +208,7 @@
           "type": "review",
           "difficulty": "easy",
           "stem": "Is \\(x \\ge 6\\) a bounded or unbounded set of numbers?",
-          "answer": "3",
+          "answer": "0",
           "hint": "Does the interval have both a finite upper bound AND a finite lower bound?",
           "solution": "0",
           "steps": [
@@ -237,7 +237,7 @@
           "type": "review",
           "difficulty": "medium",
           "stem": "Which of the following is a natural number?",
-          "answer": "2",
+          "answer": "0",
           "hint": "Natural numbers are the positive counting numbers: 1, 2, 3, …",
           "solution": "0",
           "steps": [

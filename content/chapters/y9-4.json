@@ -2577,6 +2577,7 @@
         {
           "id": "ch9t3-q14a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Fully factorise the following expressions.\n\n\\(-8x^2-18x\\)",
           "options": [
             "\\(2x(-4x-9)\\)",
@@ -2607,6 +2608,7 @@
         {
           "id": "ch9t3-q14b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Fully factorise the following expressions.\n\n\\(54-3x-x^2\\)",
           "options": [
             "\\((x-6)(x-9)\\)",
@@ -2645,6 +2647,7 @@
         {
           "id": "sg2022-q1f",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Factorise \\(6a-a^2\\).",
           "options": [
             "\\(6(a-a^2)\\)",
@@ -2961,6 +2964,7 @@
         {
           "id": "y9-willoughby-19-t5q3",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Fully factorise $\\frac{1}{2}x^5y^3 - \\frac{1}{4}xy^2$",
           "options": [
             "$\\frac{1}{2}xy(x^4y^2 - \\frac{1}{2}y)$",
@@ -3005,6 +3009,7 @@
         {
           "id": "sg2022-q2b-ii",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Factorise \\(x^2-36\\).",
           "options": [
             "\\((x-36)(x+1)\\)",
@@ -3034,6 +3039,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q1a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Factorise the following: \\(25x^2 - 16y^2\\)",
           "options": [
             "\\((5x - 4y)^2\\)",
@@ -3069,6 +3075,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q1b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Factorise the following: \\(t^2 - 11t + 10\\)",
           "options": [
             "\\((t + 5)(t + 2)\\)",
@@ -3097,6 +3104,7 @@
         {
           "id": "y9-willoughby-19-t3q6a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Factorise \\(8x^3y - 6x^2y^2\\)",
           "options": [
             "\\(x^2y(8x - 6y)\\)",
@@ -3126,6 +3134,7 @@
         {
           "id": "y9-willoughby-19-t3q6b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Factorise \\(-12 + 3x\\)",
           "options": [
             "\\(3(x - 4)\\)",
@@ -3155,6 +3164,7 @@
         {
           "id": "y9-willoughby-19-t3q6c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Factorise \\(x^2 - 7x + 10\\)",
           "options": [
             "\\((x-2)(x-5)\\)",
@@ -3184,6 +3194,7 @@
         {
           "id": "y9-willoughby-19-t3q6d",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Factorise \\((x-3)^2 - 25\\)",
           "options": [
             "\\((x+8)(x-2)\\)",
@@ -3213,6 +3224,7 @@
         {
           "id": "y9-willoughby-19-t3q6e",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Factorise \\(a^3 - a^2 - a + 1\\)",
           "options": [
             "\\((a+1)^2(a-1)\\)",
@@ -3246,6 +3258,7 @@
         {
           "id": "y9-willoughby-19-t3q6f",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Factorise \\(20b^2 - 52b + 24\\)",
           "options": [
             "\\(4(b+2)(5b-3)\\)",

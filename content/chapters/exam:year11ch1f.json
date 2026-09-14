@@ -676,7 +676,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Simplify: \\( \\frac{x^2 - 6x + 8}{x^2 - 4x + 4} \\div \\frac{x^2 - 3x}{x^2 - 2x} \\)",
-          "answer": "3",
+          "answer": "0",
           "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
           "solution": "0",
           "steps": [
@@ -700,7 +700,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Simplify: \\( \\frac{x^2 - 8x + 15}{x^2 - 6x + 9} \\div \\frac{x^2 - 4x}{x^2 - 3x} \\)",
-          "answer": "3",
+          "answer": "0",
           "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
           "solution": "0",
           "steps": [
@@ -724,7 +724,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Simplify: \\( \\frac{x^2 - 10x + 24}{x^2 - 8x + 16} \\div \\frac{x^2 - 5x}{x^2 - 4x} \\)",
-          "answer": "3",
+          "answer": "0",
           "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
           "solution": "0",
           "steps": [
@@ -748,7 +748,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Simplify: \\( \\frac{x^2 - 12x + 35}{x^2 - 10x + 25} \\div \\frac{x^2 - 6x}{x^2 - 5x} \\)",
-          "answer": "3",
+          "answer": "0",
           "hint": "Factor all polynomials, change division to multiplication by the reciprocal, then simplify.",
           "solution": "0",
           "steps": [

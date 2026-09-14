@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y1-number",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [

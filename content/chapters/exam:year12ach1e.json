@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year12ach1e",
+      "synthetic": true,
       "code": "",
       "title": "Adding up the terms of a sequence",
       "questions": [

@@ -25,3 +25,8 @@ A topicId can appear under several chapters (exam papers tag questions with curr
 Built once by `tools/content/normalize.mjs` from the Firestore export + `src/constants/seed*.js`
 using field-level merge rules (see `_export/P0-REPORT.md`). **Do not re-run normalize after hand
 edits begin** — it would overwrite them. Open items: `_export/review-queue.json`.
+
+## Serving (P3)
+`src/services/contentLoader.js` reads `/content/` and returns legacy-shaped docs. Switched on per chapter by
+`VITE_CONTENT_SOURCE` (`firestore` default | `cdn` | comma list of chapter ids/prefixes) or per browser by
+`localStorage 'sapere:contentSource'`. `npm run test:content-parity` proves CDN output == today's Firestore docs.

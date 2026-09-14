@@ -1687,6 +1687,7 @@
         {
           "id": "sg2022-q2c",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Find the length of the interval \\(AB\\), given \\(A(3,7)\\) and \\(B(6,11)\\).",
           "options": [
             "\\(5\\)",
@@ -1724,6 +1725,7 @@
         {
           "id": "sg2022-q7a",
           "type": "review",
+          "difficulty": "hard",
           "stem": "The points \\(A(2+\\sqrt2,-1)\\), \\(B(8+\\sqrt2,3)\\), \\(C(6+\\sqrt2,6)\\) and \\(D(\\sqrt2,2)\\) are the vertices of the quadrilateral \\(ABCD\\). Prove that \\(ABCD\\) is a rectangle.",
           "answer": "",
           "hint": "Show that \\(AB\\parallel DC\\) and \\(AD\\parallel BC\\) (so \\(ABCD\\) is a parallelogram), then show one angle is \\(90°\\) using gradients.",
@@ -1985,6 +1987,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q8c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "What is the exact distance \\(EF\\), where \\(E(-5, 3)\\) and \\(F(4, -1)\\)?",
           "options": [
             "\\(\\sqrt{85}\\)",
@@ -3845,7 +3848,7 @@
           "type": "review",
           "difficulty": "medium",
           "stem": "The triangle \\(ABC\\) has vertices \\(A(1, 2)\\), \\(B(3, 8)\\) and \\(C(7, 2)\\). Complete the following tasks.\nShow that \\(BC = 2MP\\) and \\(AB = 2PN\\).",
-          "answer": "2",
+          "answer": "BC = 2\\sqrt{13}, MP = \\sqrt{13}; AB = 2\\sqrt{10}, PN = \\sqrt{10}",
           "hint": "Write a full structured solution for the teacher to mark.",
           "solution": "BC = 2\\sqrt{13}, MP = \\sqrt{13}; AB = 2\\sqrt{10}, PN = \\sqrt{10}",
           "steps": [
@@ -4089,6 +4092,7 @@
         {
           "id": "sg2022-q3a",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "What are the coordinates of the midpoint of \\(AB\\), given \\(A(-3,1)\\) and \\(B(5,-7)\\)?",
           "options": [
             "\\((-1,-2)\\)",
@@ -4161,6 +4165,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q8a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "On the number plane, the points \\(E(-5, 3)\\) and \\(F(4, -1)\\) are plotted. What is the midpoint of \\(EF\\)?",
           "options": [
             "\\((-\\frac{1}{2}, 1)\\)",
@@ -5971,6 +5976,7 @@
         {
           "id": "sg2022-q1d",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "State the gradient of the line \\(y=4x-1\\).",
           "options": [
             "\\(-1\\)",
@@ -6000,11 +6006,13 @@
         {
           "id": "sg2022-q5a",
           "type": "multipart",
+          "difficulty": "easy",
           "stem": "A straight line passes through the points \\((1,5)\\) and \\((5,-7)\\).",
           "parts": [
             {
               "id": "sg2022-q5a-i",
               "type": "mc",
+              "difficulty": "easy",
               "stem": "A straight line passes through the points \\((1,5)\\) and \\((5,-7)\\). Find the gradient of the line.",
               "options": [
                 "\\(-3\\)",
@@ -6034,6 +6042,7 @@
             {
               "id": "sg2022-q5a-ii",
               "type": "mc",
+              "difficulty": "medium",
               "stem": "Hence find the equation of the line through \\((1,5)\\) and \\((5,-7)\\) (using the gradient \\(m=-3\\) found in the previous part).",
               "options": [
                 "\\(y=-3x+8\\)",
@@ -6282,6 +6291,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q8b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "What is the gradient of the line passing through \\(E(-5, 3)\\) and \\(F(4, -1)\\)?",
           "options": [
             "\\(\\frac{2}{9}\\)",
@@ -9440,6 +9450,7 @@
         {
           "id": "sg2022-q3e",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Write down the equation of the vertical line that passes through \\((2,3)\\).",
           "options": [
             "\\(x=2\\)",
@@ -9465,6 +9476,7 @@
         {
           "id": "sg2022-q3f",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Find the \\(x\\)-intercept and \\(y\\)-intercept of the line \\(y=-x+3\\).",
           "options": [
             "\\(x\\text{-intercept}=(3,0), \\quad y\\text{-intercept}=(0,3)\\)",
@@ -9606,6 +9618,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q8d",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Identify the correct equation of the line \\(EF\\) in general form, passing through \\(E(-5, 3)\\) and \\(F(4, -1)\\).",
           "options": [
             "\\(4x + 9y + 7 = 0\\)",
@@ -9642,6 +9655,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q8e",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The line \\(EF\\) passing through \\(E(-5, 3)\\) and \\(F(4, -1)\\) has the equation \\(4x + 9y - 7 = 0\\). Which of the following correctly describes how to show that the point \\((1, \\frac{1}{3})\\) lies on the line \\(EF\\)?",
           "options": [
             "Substitute \\(x=1\\) into the equation \\(4x + 9y - 7 = 0\\) and show that \\(y = \\frac{1}{3}\\) (or RHS = 0).",
@@ -9674,6 +9688,7 @@
         {
           "id": "y9-willoughby-19-t2q2",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "Given the line $4x - 8y = 16$.",
           "parts": [
             {
@@ -11216,6 +11231,7 @@
         {
           "id": "y9-willoughby-19-t2q3",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Which two points (x-intercept and y-intercept) does the line $2x - 3y = 6$ pass through on the axes?",
           "options": [
             "$(-3, 0)$ and $(0, 2)$",
@@ -15773,6 +15789,7 @@
         {
           "id": "sg2022-q4a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Which of the following lines is perpendicular to the line \\(2x+y=10\\)?",
           "options": [
             "\\(y=2x+2\\)",
@@ -15807,6 +15824,7 @@
         {
           "id": "sg2022-q6a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The straight line \\(l\\) is parallel to \\(y=5x-8\\) and passes through the point \\((-1,-14)\\). Find the equation of line \\(l\\).",
           "options": [
             "\\(y=5x-9\\)",
@@ -16963,6 +16981,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q8f",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The line \\(EF\\) passes through \\(E(-5, 3)\\) and \\(F(4, -1)\\). What is the equation of the line that is perpendicular to \\(EF\\) and passes through the midpoint of \\(EF\\)? Give your answer in general form.",
           "options": [
             "\\(8x - 18y + 17 = 0\\)",
@@ -17003,6 +17022,7 @@
         {
           "id": "y9-willoughby-19-t2q4",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "What is the equation of the line perpendicular to $2x - y + 6 = 0$ passing through $(-2, 3)$?",
           "options": [
             "$y = -\\frac{1}{2}x + 2$",
@@ -21164,6 +21184,7 @@
         {
           "id": "y9-willoughby-19-t2q1",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "In the diagram, ABCO is a trapezium with AB parallel to OC. The coordinates are O$(0,0)$, C$(2,1)$, and B$(4,5)$.",
           "figure": {
             "svg": "fig:c3d4de07f5"

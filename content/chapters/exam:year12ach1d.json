@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year12ach1d",
+      "synthetic": true,
       "code": "",
       "title": "Solving problems involving APs and GPs",
       "questions": [

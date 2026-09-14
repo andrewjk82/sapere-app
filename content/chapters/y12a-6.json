@@ -4048,6 +4048,7 @@
         {
           "id": "hillsgrammar-25-2u-q16b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Differentiate \\(\\dfrac{\\sin x}{\\sqrt{x}}\\) with respect to \\(x\\), leaving your answer in factorised surd form.",
           "options": [
             "\\(\\frac{2x\\cos x - \\sin x}{2\\sqrt{x^3}}\\)",
@@ -4084,6 +4085,7 @@
         {
           "id": "hillsgrammar-25-2u-q20a",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "Let \\(f(x) = e^x \\tan x\\).",
           "parts": [
             {
@@ -6448,6 +6450,7 @@
         {
           "id": "bb2020-q18",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "Consider the curve \\(y = e^{2x}\\cos x\\).",
           "parts": [
             {
@@ -9849,6 +9852,7 @@
         {
           "id": "hg2020-q17",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Find the exact value of \\(\\displaystyle\\int_{\\frac{\\pi}{4}}^{\\frac{\\pi}{2}} \\cos x\\,dx\\).",
           "options": [
             "\\(\\dfrac{\\sqrt2}{2}\\)",
@@ -9856,7 +9860,7 @@
             "\\(1\\)",
             "\\(-\\dfrac{\\sqrt2}{2}\\)"
           ],
-          "answer": 1,
+          "answer": 2,
           "hint": "The primitive of \\(\\cos x\\) is \\(\\sin x\\). Evaluate at the two limits and subtract.",
           "steps": [
             {
@@ -9882,6 +9886,7 @@
         {
           "id": "hh2020-q9",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "A trigonometric function \\(f(x)\\) satisfies \\(\\displaystyle\\int_0^{\\pi/2} f(x)\\,dx \\ne \\int_{\\pi/2}^{\\pi} f(x)\\,dx\\). Which function could be \\(f(x)\\)?",
           "options": [
             "\\(f(x)=\\sin x\\)",

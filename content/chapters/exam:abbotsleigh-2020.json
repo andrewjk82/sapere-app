@@ -1373,7 +1373,6 @@
               ]
             }
           ],
-          "answer": "0",
           "hint": "For the $x$-intercept, set $h(x) = 0$. For the $y$-intercept, evaluate $h(0)$.",
           "solution": "The correct answer is \\(x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, -2)\\).",
           "steps": [

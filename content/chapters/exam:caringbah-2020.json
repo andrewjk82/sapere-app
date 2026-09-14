@@ -896,7 +896,6 @@
               ]
             }
           ],
-          "answer": "2",
           "hint": "For (a), solve $x^2 - x - 6 = 0$. For (b), the curve is below the $x$-axis on $[0,3]$ and above on $[3,6]$, so split the integral and take the absolute value of each part.",
           "solution": "The correct answer is (a) \\(A = (3,\\ 0)\\)\n\n(b) \\(45\\) square units.",
           "steps": [
@@ -1251,7 +1250,6 @@
               ]
             }
           ],
-          "answer": "3",
           "hint": "For (a), use the property that alternate angles on parallel north lines are equal. For (b), use the area formula $A = \\frac{1}{2}ab\\sin C$.",
           "solution": "The correct answer is (a) \\(\\angle ABC = \\angle ABN + \\angle NBC = 40° + 32° = 72°\\)\n\n(b) \\(\\approx 19 \\text{ km}^2\\).",
           "steps": [

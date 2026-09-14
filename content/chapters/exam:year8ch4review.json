@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year8ch4review",
+      "synthetic": true,
       "code": "",
       "title": "Review of negative numbers",
       "questions": [

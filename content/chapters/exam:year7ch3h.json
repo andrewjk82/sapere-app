@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year7ch3h",
+      "synthetic": true,
       "code": "",
       "title": "Chapter review",
       "questions": [

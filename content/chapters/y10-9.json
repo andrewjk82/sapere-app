@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y10-9",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -3110,6 +3111,7 @@
         {
           "id": "jrhy2008-q2",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "\\(6x^0+7 = \\)",
           "options": [
             "\\(6\\)",
@@ -3139,6 +3141,7 @@
         {
           "id": "jrhy2008-q4",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "\\(12\\times\\left(\\dfrac23\\right)^{-2} = \\)",
           "options": [
             "\\(27\\)",
@@ -3175,6 +3178,7 @@
         {
           "id": "jr2013-q1",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "The numbers \\(A=5.6\\times10^{-2}\\), \\(B=0.93\\times10^{-1}\\) and \\(C=71\\times10^{-3}\\), listed in ascending order, is:",
           "options": [
             "\\(C, A, B\\)",
@@ -3204,6 +3208,7 @@
         {
           "id": "jr2013-q3",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "\\((1.2\\times10^3)^2 = \\)",
           "options": [
             "\\(1.44\\times10^5\\)",
@@ -3236,6 +3241,7 @@
         {
           "id": "jr2012-q10",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Which of the following values of \\(x\\) satisfies the equation \\(25^{-2} = \\dfrac{5^{\\frac{48}{x}}}{\\left(5^{\\frac{26}{x}}\\right)\\times\\left(25^{\\frac{17}{x}}\\right)}\\)?",
           "options": [
             "\\(5\\)",
@@ -3269,6 +3275,7 @@
         {
           "id": "jr2012-q24",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Given the formula \\(P=ab^2\\). If \\(a=0.05\\), \\(b>0\\) and \\(P=4.5\\times10^{15}\\), then the value of \\(b\\) is:",
           "options": [
             "\\(1.5\\times10^7\\)",
@@ -3309,6 +3316,7 @@
         {
           "id": "jr2012-q25",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The graph of \\(y=2(2^{x+1})-8\\) has \\(x\\) and \\(y\\) intercepts with the coordinate axes at:",
           "options": [
             "\\(x=1\\) and \\(y=-4\\)",
@@ -3345,6 +3353,7 @@
         {
           "id": "jrhy2008-q20",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "If \\(9^{x-2}=27\\), then \\(x=\\)",
           "options": [
             "\\(-3\\)",
@@ -3352,7 +3361,7 @@
             "\\(-\\dfrac72\\)",
             "\\(\\dfrac72\\)"
           ],
-          "answer": 3,
+          "answer": 1,
           "hint": "Write both sides as powers of 3: \\(9=3^2\\) and \\(27=3^3\\).",
           "steps": [
             {

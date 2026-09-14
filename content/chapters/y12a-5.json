@@ -7336,6 +7336,7 @@
         {
           "id": "hh2020-q15",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Differentiate \\(e^{x^2\\cos x}\\).",
           "options": [
             "\\((2x\\cos x + x^2\\sin x)e^{x^2\\cos x}\\)",
@@ -7365,6 +7366,7 @@
         {
           "id": "hillsgrammar-25-2u-q16a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Differentiate \\(\\sqrt{e^{2x} - 2x}\\) with respect to \\(x\\), leaving your answer in factorised surd form.",
           "options": [
             "\\(\\frac{e^{2x}-1}{\\sqrt{e^{2x}-2x}}\\)",
@@ -13101,6 +13103,7 @@
         {
           "id": "hillsgrammar-25-2u-q5",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "What is \\(\\int(e^{2x} + e^{2x+1})\\,dx\\)?",
           "options": [
             "\\(\\frac{e^{2x}(3-2e)}{2}+c\\)",
@@ -17335,6 +17338,7 @@
         {
           "id": "hillsgrammar-25-2u-q8",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Consider the function \\(f(x) = \\ln(x-2) + \\sqrt{3-x}\\). What is the domain of the function?",
           "options": [
             "\\(x \\in (-\\infty, \\infty)\\)",
@@ -20590,6 +20594,7 @@
         {
           "id": "hg2020-q19a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Differentiate \\(\\ln(x^2+2)\\) with respect to \\(x\\).",
           "options": [
             "\\(2x\\ln(x^2+2)\\)",
@@ -20615,6 +20620,7 @@
         {
           "id": "hg2020-q19b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Differentiate \\(\\dfrac{\\sin x}{x^2}\\) with respect to \\(x\\).",
           "options": [
             "\\(\\dfrac{\\cos x - 2\\sin x}{x^3}\\)",
@@ -20644,6 +20650,7 @@
         {
           "id": "hh2020-q12",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the equation of the normal to the curve \\(f(x)=\\ln(x-1)+2\\) at the point \\((2,0)\\).",
           "options": [
             "\\(y = -x+2\\)",
@@ -20681,6 +20688,7 @@
         {
           "id": "hillsgrammar-25-2u-q13",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Find the gradient of the tangent to the curve \\(y = \\ln x\\) when \\(x = 2\\).",
           "options": [
             "\\(\\frac{1}{2}\\)",
@@ -20717,6 +20725,7 @@
         {
           "id": "hillsgrammar-25-2u-q21",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Differentiate \\(y = \\ln\\left(\\dfrac{x^2}{\\sqrt{x+1}}\\right)\\), leaving your answer in simplest form.",
           "options": [
             "\\(\\frac{2}{x} - \\frac{1}{2(x+1)}\\)",
@@ -22707,6 +22716,7 @@
         {
           "id": "hg2020-q28",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The curve \\(y = 2x^2-\\ln\\left(\\dfrac{x}{2}\\right)-4\\) has a minimum turning point. Find the coordinates of this point.",
           "options": [
             "\\(\\left(\\dfrac12, \\ln4-3\\dfrac12\\right)\\)",
@@ -27201,6 +27211,7 @@
         {
           "id": "hg2020-q11",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the primitive function of \\(\\dfrac{1}{1-2x}\\) with respect to \\(x\\).",
           "options": [
             "\\(-\\dfrac{1}{2}\\ln|1-2x|+C\\)",

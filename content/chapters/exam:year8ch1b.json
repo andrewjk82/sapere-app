@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year8ch1b",
+      "synthetic": true,
       "code": "1B",
       "title": "Multiplication and division",
       "questions": [

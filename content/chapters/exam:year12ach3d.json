@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year12ach3d",
+      "synthetic": true,
       "code": "",
       "title": "Concavity and points of inflection",
       "questions": [

@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y10-1",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -4593,7 +4594,14 @@
               ]
             }
           ],
-          "answer": "0",
+          "options": [
+            " (A)",
+            " (B)",
+            "",
+            " (C)"
+          ],
+          "mc": true,
+          "answer": 0,
           "solution": "0",
           "timeLimit": 60
         },
@@ -4669,7 +4677,14 @@
               ]
             }
           ],
-          "answer": "0",
+          "options": [
+            " (C)",
+            "",
+            " (A)",
+            " (B)"
+          ],
+          "mc": true,
+          "answer": 0,
           "solution": "0",
           "timeLimit": 90
         },
@@ -5409,7 +5424,14 @@
               ]
             }
           ],
-          "answer": "1",
+          "options": [
+            "",
+            " (C)",
+            " (A)",
+            " (B)"
+          ],
+          "mc": true,
+          "answer": 1,
           "solution": "1",
           "timeLimit": 90
         },
@@ -9032,6 +9054,7 @@
         {
           "id": "jr2012-q29",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Tim invests his savings as follows: half at \\(12\\%\\) p.a., one third at \\(9\\%\\) p.a., and the remainder at \\(6\\%\\) p.a. The overall percentage interest rate per annum on his total savings is:",
           "options": [
             "\\(9\\)",
@@ -9073,6 +9096,7 @@
         {
           "id": "jrhy2008-q9",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The ratio of boys to girls in a Maths class is \\(4:5\\). The number of girls increases from 15 to 18 (the number of boys stays the same). What is the new ratio of boys to girls?",
           "options": [
             "\\(2:3\\)",
@@ -9102,6 +9126,7 @@
         {
           "id": "jrhy2008-q25",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "A shop bought an MP3 player for \\(\\$60\\) and sold it for \\(\\$80\\). Which statement(s) must be true? a) The profit was 20% of the selling price. b) The profit was 25% of the cost price. c) The cost price was 25% less than the selling price. d) The selling price was \\(33\\tfrac13\\%\\) more than the cost price.",
           "options": [
             "c, d",
@@ -10886,12 +10911,20 @@
               ]
             }
           ],
-          "answer": "3",
+          "options": [
+            "undefined (rounded)",
+            "undefined (nominal)",
+            "undefined (estimated)",
+            "undefined"
+          ],
+          "mc": true,
+          "answer": 3,
           "timeLimit": 90
         },
         {
           "id": "jr2012-q5",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "An energy-conscious homeowner makes three successive improvements that save, in turn, \\(20\\%\\), \\(25\\%\\) and \\(55\\%\\) on the heating costs of the house. The overall percentage saved is:",
           "options": [
             "\\(73\\)",
@@ -10925,6 +10958,7 @@
         {
           "id": "jrhy2008-q6",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Katie invests \\$1000 in a share plan. It makes 20% in the first year but loses 20% in the second year. How much is Katie's investment worth after two years?",
           "options": [
             "\\$1440",
@@ -11469,7 +11503,14 @@
               ]
             }
           ],
-          "answer": "0",
+          "options": [
+            "undefined",
+            "undefined (estimated)",
+            "undefined (nominal)",
+            "undefined (rounded)"
+          ],
+          "mc": true,
+          "answer": 0,
           "timeLimit": 60
         },
         {
@@ -11515,7 +11556,14 @@
               ]
             }
           ],
-          "answer": "2",
+          "options": [
+            "undefined (nominal)",
+            "undefined (estimated)",
+            "undefined",
+            "undefined (rounded)"
+          ],
+          "mc": true,
+          "answer": 2,
           "timeLimit": 60
         },
         {
@@ -11561,7 +11609,14 @@
               ]
             }
           ],
-          "answer": "1",
+          "options": [
+            "undefined (nominal)",
+            "undefined",
+            "undefined (estimated)",
+            "undefined (rounded)"
+          ],
+          "mc": true,
+          "answer": 1,
           "timeLimit": 60
         },
         {
@@ -11829,7 +11884,14 @@
               ]
             }
           ],
-          "answer": "2",
+          "options": [
+            "undefined (nominal)",
+            "undefined (estimated)",
+            "undefined",
+            "undefined (rounded)"
+          ],
+          "mc": true,
+          "answer": 2,
           "timeLimit": 90
         },
         {

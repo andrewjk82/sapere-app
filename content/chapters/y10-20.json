@@ -11,6 +11,7 @@
         {
           "id": "jr2012-q13",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "If \\(f(x) = x^2-9x+14\\), then the asymptotes of the curve with equation \\(y=\\dfrac{1}{f(x)}\\) are:",
           "options": [
             "\\(x=2, x=7\\) and \\(y=\\dfrac{1}{14}\\)",

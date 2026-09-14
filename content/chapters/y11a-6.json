@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y11a-6",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -1050,6 +1051,7 @@
         {
           "id": "hg2020-q23",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "If \\(\\tan\\theta = \\dfrac23\\), and \\(\\theta\\) is acute, find the exact value of \\(\\sin\\theta\\).",
           "options": [
             "\\(\\dfrac{3\\sqrt{13}}{13}\\)",
@@ -6587,6 +6589,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\sin 15^{\\circ}\\) using the ASTC rule.",
           "answer": "0",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "15° is in the first quadrant.",
           "solution": "0",
           "steps": [
@@ -6634,6 +6642,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\cos 40^{\\circ}\\) using the ASTC rule.",
           "answer": "0",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "40° is in Quadrant I.",
           "solution": "0",
           "steps": [
@@ -6681,6 +6695,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\cos 110^{\\circ}\\) using the ASTC rule.",
           "answer": "1",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "110° is in the second quadrant.",
           "solution": "1",
           "steps": [
@@ -6728,6 +6748,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\tan 130^{\\circ}\\) using the ASTC rule.",
           "answer": "1",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "130° lies in Quadrant II.",
           "solution": "1",
           "steps": [
@@ -6775,6 +6801,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\tan 240^{\\circ}\\) using the ASTC rule.",
           "answer": "0",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "240° is in the third quadrant.",
           "solution": "0",
           "steps": [
@@ -6822,6 +6854,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\sin 320^{\\circ}\\) using the ASTC rule.",
           "answer": "1",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "320° is in the fourth quadrant.",
           "solution": "1",
           "steps": [
@@ -6869,6 +6907,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\sin 220^{\\circ}\\) using the ASTC rule.",
           "answer": "1",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "220° is in the third quadrant.",
           "solution": "1",
           "steps": [
@@ -6916,6 +6960,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\cos 290^{\\circ}\\) using the ASTC rule.",
           "answer": "0",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "290° is in the fourth quadrant.",
           "solution": "0",
           "steps": [
@@ -6963,6 +7013,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\sin 330^{\\circ}\\) using the ASTC rule.",
           "answer": "1",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "330° is in Quadrant IV.",
           "solution": "1",
           "steps": [
@@ -7010,6 +7066,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\cos 340^{\\circ}\\) using the ASTC rule.",
           "answer": "0",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "340° is in Quadrant IV.",
           "solution": "0",
           "steps": [
@@ -7057,6 +7119,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\tan 300^{\\circ}\\) using the ASTC rule.",
           "answer": "1",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "300° is in Quadrant IV.",
           "solution": "1",
           "steps": [
@@ -7104,6 +7172,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\cos 210^{\\circ}\\) using the ASTC rule.",
           "answer": "1",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "210° is in Quadrant III.",
           "solution": "1",
           "steps": [
@@ -7151,6 +7225,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\tan 160^{\\circ}\\) using the ASTC rule.",
           "answer": "1",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "160° is in Quadrant II.",
           "solution": "1",
           "steps": [
@@ -7198,6 +7278,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\sin 100^{\\circ}\\) using the ASTC rule.",
           "answer": "0",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "100° is in Quadrant II.",
           "solution": "0",
           "steps": [
@@ -7245,6 +7331,12 @@
           "difficulty": "easy",
           "stem": "Determine the sign (+ or -) of \\(\\tan 75^{\\circ}\\) using the ASTC rule.",
           "answer": "0",
+          "options": [
+            "+",
+            "-",
+            "Both + and -",
+            "Cannot be determined"
+          ],
           "hint": "75° is in Quadrant I.",
           "solution": "0",
           "steps": [
@@ -8309,6 +8401,12 @@
           "difficulty": "easy",
           "stem": "Use the trigonometric graphs to find the value of \\(\\sin 180^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
           "answer": "0",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(0\\)",
+            "undefined"
+          ],
           "hint": "Look at the sine curve at x = 180°.",
           "solution": "0",
           "steps": [
@@ -8343,6 +8441,12 @@
           "difficulty": "easy",
           "stem": "Use the trigonometric graphs to find the value of \\(\\cos 360^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
           "answer": "1",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(0\\)",
+            "undefined"
+          ],
           "hint": "Look at the cosine curve at x = 360°.",
           "solution": "1",
           "steps": [
@@ -8377,6 +8481,12 @@
           "difficulty": "easy",
           "stem": "Use the trigonometric graphs to find the value of \\(\\cos 270^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
           "answer": "0",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(0\\)",
+            "undefined"
+          ],
           "hint": "Look at the cosine curve at x = 270°.",
           "solution": "0",
           "steps": [
@@ -8411,6 +8521,12 @@
           "difficulty": "easy",
           "stem": "Use the trigonometric graphs to find the value of \\(\\tan 180^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
           "answer": "0",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(0\\)",
+            "undefined"
+          ],
           "hint": "Recall that tan(x) = sin(x)/cos(x).",
           "solution": "0",
           "steps": [
@@ -8523,6 +8639,12 @@
           "difficulty": "easy",
           "stem": "Use the trigonometric graphs to find the value of \\(\\sin 90^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
           "answer": "1",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(0\\)",
+            "undefined"
+          ],
           "hint": "Look at the sine curve at x = 90°.",
           "solution": "1",
           "steps": [
@@ -8596,6 +8718,12 @@
           "difficulty": "easy",
           "stem": "Use the trigonometric graphs to find the value of \\(\\sin 0^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
           "answer": "0",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(0\\)",
+            "undefined"
+          ],
           "hint": "Look at the origin of the sine graph.",
           "solution": "0",
           "steps": [
@@ -8630,6 +8758,12 @@
           "difficulty": "easy",
           "stem": "Use the trigonometric graphs to find the value of \\(\\cos 90^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
           "answer": "0",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(0\\)",
+            "undefined"
+          ],
           "hint": "Look at the cosine curve at x = 90°.",
           "solution": "0",
           "steps": [
@@ -8703,6 +8837,12 @@
           "difficulty": "easy",
           "stem": "Use the trigonometric graphs to find the value of \\(\\tan 0^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
           "answer": "0",
+          "options": [
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(0\\)",
+            "undefined"
+          ],
           "hint": "Find sin 0° / cos 0°.",
           "solution": "0",
           "steps": [
@@ -9439,6 +9579,12 @@
           "difficulty": "medium",
           "stem": "Find the exact value of \\(\\tan 225^{\\circ}\\).",
           "answer": "1",
+          "options": [
+            "\\(1\\)",
+            "\\(-1\\)",
+            "\\(\\sqrt{3}\\)",
+            "\\(-\\sqrt{3}\\)"
+          ],
           "hint": "Determine quadrant and reference angle for 225°.",
           "solution": "1",
           "steps": [
@@ -10321,6 +10467,12 @@
           "difficulty": "medium",
           "stem": "Use the trigonometric graphs to find the value of \\(\\csc 90^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
           "answer": "1",
+          "options": [
+            "\\(1\\)",
+            "\\(-1\\)",
+            "\\(0\\)",
+            "undefined"
+          ],
           "hint": "Recall csc(x) = 1/sin(x).",
           "solution": "1",
           "steps": [
@@ -10433,6 +10585,12 @@
           "difficulty": "medium",
           "stem": "Use the trigonometric graphs to find the value of \\(\\cot 270^{\\circ}\\) (if it exists). If it does not exist, write 'undefined'.",
           "answer": "0",
+          "options": [
+            "\\(0\\)",
+            "undefined",
+            "\\(1\\)",
+            "\\(-1\\)"
+          ],
           "hint": "Recall cot(x) = cos(x)/sin(x).",
           "solution": "0",
           "steps": [
@@ -11034,6 +11192,12 @@
           "difficulty": "medium",
           "stem": "Find the exact value of \\(\\tan(-135^{\\circ})\\).",
           "answer": "1",
+          "options": [
+            "\\(1\\)",
+            "\\(-1\\)",
+            "\\(\\sqrt{3}\\)",
+            "\\(-\\frac{1}{\\sqrt{3}}\\)"
+          ],
           "hint": "Use negative angle identity.",
           "solution": "1",
           "steps": [
@@ -12491,6 +12655,7 @@
         {
           "id": "hh2020-q17",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "If \\(\\cos\\alpha = -\\dfrac45\\) and \\(\\sin\\alpha < 0\\), find the exact value of \\(\\tan\\alpha\\).",
           "options": [
             "\\(-\\dfrac34\\)",
@@ -16905,6 +17070,7 @@
         {
           "id": "hh2020-q25",
           "type": "review",
+          "difficulty": "medium",
           "stem": "Prove that \\(\\dfrac{1}{1+\\sin\\theta}+\\dfrac{1}{1-\\sin\\theta} = 2\\sec^2\\theta\\).",
           "answer": "",
           "steps": [
@@ -16936,6 +17102,7 @@
         {
           "id": "hillsgrammar-25-2u-q22",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify \\(\\dfrac{\\sin x}{1+\\cos x} + \\dfrac{\\sin x}{1-\\cos x}\\).",
           "options": [
             "\\(2\\csc x\\)",
@@ -22169,6 +22336,7 @@
         {
           "id": "hh2020-q10",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Which of the following would give the correct value for the area of the triangle shown, with sides 2.4 cm and 2.5 cm meeting at a 50° angle, and the third side 1.6 cm?",
           "figure": {
             "svg": "fig:9897f8e5b6"
@@ -22204,6 +22372,7 @@
         {
           "id": "hillsgrammar-25-2u-q26",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A triangle has one side that is 5 metres in length with the angle opposite being \\(72°33'\\) correct to the nearest minute. A second side is 3 metres in length. What is the size of \\(\\theta\\), the acute angle opposite the side of length 3 metres, correct to the nearest minute?",
           "options": [
             "\\(34°55'\\)",
@@ -22407,7 +22576,14 @@
               ]
             }
           ],
-          "answer": "\\(2\\)",
+          "options": [
+            "\\(2\\)",
+            "\\(1\\)",
+            "\\(0\\)",
+            "\\(3\\)"
+          ],
+          "mc": true,
+          "answer": 0,
           "hint": "There are two possible triangles because the side opposite the given angle is shorter than the other adjacent side.",
           "solution": "A triangle sketch showing the two possible configurations (acute or obtuse angle Q) because q > p.",
           "steps": [
@@ -23998,6 +24174,7 @@
         {
           "id": "bb2020-q11",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "Triangle \\(ABC\\) has \\(AB=8\\text{ cm}\\), \\(BC=7\\text{ cm}\\) and \\(AC=10\\text{ cm}\\) (diagram not to scale).",
           "parts": [
             {
@@ -24062,6 +24239,7 @@
         {
           "id": "hillsgrammar-25-2u-q35a",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Three buoys are at sea at \\(A\\), \\(B\\) and \\(C\\). A helicopter flies along \\(FH\\) then \\(HG\\), where \\(F,G,H\\) are points of the same height vertically above \\(A,B,C\\) respectively. When the helicopter reaches \\(H\\), the angles of depression of \\(A\\) and \\(B\\) are \\(60°\\) and \\(30°\\) respectively, while the true bearings of \\(A\\) and \\(B\\) from \\(C\\) are \\(250°\\) and \\(130°\\) respectively. The distance between \\(A\\) and \\(B\\) is \\(100\\sqrt{13}\\) km. What is the distance between \\(A\\) and \\(C\\)?",
           "figure": {
             "svg": "fig:ffb5ac3514"
@@ -24110,6 +24288,7 @@
         {
           "id": "hillsgrammar-25-2u-q35b",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "At 9 a.m., two destroyers start travelling from \\(A\\) and \\(B\\) (with \\(AC=100\\) km, \\(BC=300\\) km, \\(\\angle ACB=120°\\) from the previous part). The destroyer at \\(A\\) travels along \\(AC\\) at \\(20\\) km/h; the destroyer at \\(B\\) travels along \\(BC\\) at \\(50\\) km/h. Which expression correctly gives the distance \\(d\\) between the two destroyers after \\(t\\) hours?",
           "figure": {
             "svg": "fig:ffb5ac3514"
@@ -24204,7 +24383,14 @@
               "hscType": "multiple_choice"
             }
           ],
-          "answer": "\\(\\sqrt{31}\\)",
+          "options": [
+            "\\(\\sqrt{31}\\)",
+            "\\(\\sqrt{91}\\)",
+            "\\(\\sqrt{61}\\)",
+            "\\(\\sqrt{11}\\)"
+          ],
+          "mc": true,
+          "answer": 0,
           "hint": "Use the cosine rule: \\(x^2 = a^2 + b^2 - 2ab \\cos 60^{\\circ}\\).",
           "solution": "Using the cosine rule: \\(x^2 = 5^2 + 6^2 - 2(5)(6) \\cos 60^{\\circ} = 25 + 36 - 60 \\left(\\frac{1}{2}\\right) = 61 - 30 = 31 \\implies x = \\sqrt{31}\\).",
           "steps": [
@@ -24272,7 +24458,14 @@
               "hscType": "multiple_choice"
             }
           ],
-          "answer": "\\(100^\\circ 18'\\)",
+          "options": [
+            "\\(100^\\circ 18'\\)",
+            "\\(79^\\circ 42'\\)",
+            "\\(100^\\circ 42'\\)",
+            "\\(79^\\circ 18'\\)"
+          ],
+          "mc": true,
+          "answer": 0,
           "hint": "In triangle BCD, the sides are 50 mm, 32 mm, and 64 mm. Use the cosine rule to find angle C.",
           "solution": "In \\(\\triangle BCD\\), the side opposite to \\(\\angle BCD\\) is \\(BD = 64\\). The adjacent sides are \\(BC = 32\\) and \\(CD = 50\\). By the cosine rule: \\(\\cos C = \\frac{32^2 + 50^2 - 64^2}{2(32)(50)} = \\frac{1024 + 2500 - 4096}{3200} = \\frac{-572}{3200} = -0.17875 \\implies C = \\arccos(-0.17875) \\approx 100.297^{\\circ} = 100^{\\circ} 18'\\). Let's double check: 32^2 = 1024, 50^2 = 2500, sum = 3524. 64^2 = 4096. 3524 - 4096 = -572. 2 * 32 * 50 = 3200. -572 / 3200 = -0.17875. arccos(-0.17875) = 100.2974° = 100° 18'.",
           "steps": [
@@ -25851,6 +26044,12 @@
               "type": "short",
               "stem": "Using the same triangle configuration, find the distance \\(QT\\), correct to the nearest metre.",
               "answer": "23",
+              "options": [
+                "\\(25\\)",
+                "\\(22\\)",
+                "\\(23\\)",
+                "\\(24\\)"
+              ],
               "steps": [
                 {
                   "explain": "Identify that \\(QT\\) is the adjacent side to angle \\(Q\\) in \\(\\triangle PQT\\).",
@@ -25883,6 +26082,12 @@
               "type": "short",
               "stem": "Using the same triangle configuration, find the height \\(BC\\), correct to the nearest centimetre.",
               "answer": "18",
+              "options": [
+                "\\(20\\)",
+                "\\(17\\)",
+                "\\(18\\)",
+                "\\(19\\)"
+              ],
               "steps": [
                 {
                   "explain": "Apply the sine ratio to find the vertical side \\(BC\\).",
@@ -25947,6 +26152,12 @@
               "type": "short",
               "stem": "Using the angle \\(\\angle ABC \\approx 48^{\\circ}30'\\), calculate the area of \\(\\triangle ABC\\) to the nearest square centimetre.",
               "answer": "15",
+              "options": [
+                "\\(17\\)",
+                "\\(14\\)",
+                "\\(15\\)",
+                "\\(16\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use the sine area formula with sides AB and BC.",
@@ -26378,6 +26589,12 @@
           "difficulty": "easy",
           "stem": "Simplify the expression: \\\\(\\\\text{cosec}^2 \\\\theta - \\\\cot^2 \\\\theta\\\\)",
           "answer": "\\(1\\)",
+          "options": [
+            "\\(\\tan^2 \\theta\\)",
+            "\\(-1\\)",
+            "\\(1\\)",
+            "\\(\\sin^2 \\theta\\)"
+          ],
           "hint": "Recall the identity linking cosecant and cotangent: \\(1 + \\cot^2 \\theta = \\text{cosec}^2 \\theta\\).",
           "solution": "\\(1\\)",
           "steps": [
@@ -26425,6 +26642,12 @@
           "difficulty": "medium",
           "stem": "Simplify the expression: \\\\(\\\\sin \\\\theta \\\\text{ cosec } \\\\theta\\\\)",
           "answer": "\\(1\\)",
+          "options": [
+            "\\(\\cos \\theta\\)",
+            "\\(1\\)",
+            "\\(\\tan \\theta\\)",
+            "\\(\\sin^2 \\theta\\)"
+          ],
           "hint": "Express cosecant as the reciprocal of sine.",
           "solution": "\\(1\\)",
           "steps": [
@@ -26450,6 +26673,12 @@
           "difficulty": "medium",
           "stem": "Simplify the expression: \\\\(\\\\frac{\\\\tan \\\\theta}{\\\\sin \\\\theta}\\\\)",
           "answer": "\\(\\sec \\theta\\)",
+          "options": [
+            "\\(\\sec \\theta\\)",
+            "\\(\\cot \\theta\\)",
+            "\\(\\text{cosec} \\theta\\)",
+            "\\(\\cos \\theta\\)"
+          ],
           "hint": "Express tangent as sine over cosine, then divide by sine.",
           "solution": "\\(\\sec \\theta\\)",
           "steps": [
@@ -26479,6 +26708,12 @@
           "difficulty": "medium",
           "stem": "Which of the following expressions is equivalent to \\\\(\\\\cos^2 \\\\theta - \\\\sin^2 \\\\theta\\\\)?",
           "answer": "\\(1 - 2\\sin^2 \\theta\\)",
+          "options": [
+            "\\(2\\sin^2 \\theta - 1\\)",
+            "\\(1\\)",
+            "\\(2\\cos^2 \\theta + 1\\)",
+            "\\(1 - 2\\sin^2 \\theta\\)"
+          ],
           "hint": "Substitute \\(\\cos^2 \\theta = 1 - \\sin^2 \\theta\\) into the left-hand side.",
           "solution": "\\(1 - 2\\sin^2 \\theta\\)",
           "steps": [
@@ -26504,6 +26739,12 @@
           "difficulty": "medium",
           "stem": "Which of the following expressions is equivalent to \\\\(5\\\\sec^2 \\\\theta - 4\\\\)?",
           "answer": "\\(1 + 5\\tan^2 \\theta\\)",
+          "options": [
+            "\\(9 + 5\\tan^2 \\theta\\)",
+            "\\(1 + 5\\tan^2 \\theta\\)",
+            "\\(5\\sin^2 \\theta + 1\\)",
+            "\\(5\\tan^2 \\theta - 1\\)"
+          ],
           "hint": "Substitute \\(\\sec^2 \\theta = 1 + \\tan^2 \\theta\\) into the left-hand side.",
           "solution": "\\(1 + 5\\tan^2 \\theta\\)",
           "steps": [
@@ -26533,6 +26774,12 @@
           "difficulty": "medium",
           "stem": "Simplify the expression: \\\\(\\\\sin \\\\theta + \\\\cot \\\\theta \\\\cos \\\\theta\\\\)",
           "answer": "\\(\\text{cosec } \\theta\\)",
+          "options": [
+            "\\(\\sec \\theta\\)",
+            "\\(1\\)",
+            "\\(\\cos \\theta\\)",
+            "\\(\\text{cosec } \\theta\\)"
+          ],
           "hint": "Rewrite cotangent using cosine and sine, then find a common denominator.",
           "solution": "\\(\\text{cosec } \\theta\\)",
           "steps": [
@@ -28203,6 +28450,12 @@
             }
           },
           "answer": "\\\\(\\\\frac{500 \\\\sin 9^\\\\circ}{\\\\sin 156^\\\\circ}\\\\)",
+          "options": [
+            "\\\\(\\\\frac{500 \\\\sin 15^\\\\circ}{\\\\sin 156^\\\\circ}\\\\)",
+            "\\\\(\\\\frac{500 \\\\sin 9^\\\\circ}{\\\\sin 24^\\\\circ}\\\\)",
+            "\\\\(\\\\frac{500 \\\\sin 9^\\\\circ}{\\\\sin 156^\\\\circ}\\\\)",
+            "\\\\(\\\\frac{500 \\\\sin 15^\\\\circ}{\\\\sin 24^\\\\circ}\\\\)"
+          ],
           "hint": "Find \\(\\angle AHB\\) first, then apply the sine rule: \\(\\frac{HB}{\\sin(\\angle HAB)} = \\frac{AB}{\\sin(\\angle AHB)}\\).",
           "solution": "\\\\(\\\\frac{500 \\\\sin 9^\\\\circ}{\\\\sin 156^\\\\circ}\\\\)",
           "steps": [
@@ -28576,6 +28829,12 @@
             }
           },
           "answer": "\\(\\frac{60 \\sin 12^{\\circ}}{\\sin 10^{\\circ}}\\)",
+          "options": [
+            "\\(\\frac{60 \\sin 12^{\\circ}}{\\sin 10^{\\circ}}\\)",
+            "\\(\\frac{60 \\sin 22^{\\circ}}{\\sin 10^{\\circ}}\\)",
+            "\\(\\frac{60 \\sin 10^{\\circ}}{\\sin 12^{\\circ}}\\)",
+            "\\(\\frac{60 \\sin 12^{\\circ}}{\\sin 34^{\\circ}}\\)"
+          ],
           "hint": "Work out \\(\\angle TPQ\\) and \\(\\angle PTQ\\) inside triangle \\(PTQ\\) and apply the sine rule.",
           "solution": "\\(\\frac{60 \\sin 12^{\\circ}}{\\sin 10^{\\circ}}\\)",
           "steps": [

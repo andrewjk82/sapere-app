@@ -11,6 +11,7 @@
         {
           "id": "sg2022-q2f",
           "type": "multipart",
+          "difficulty": "easy",
           "stem": "In the diagram, \\(\\triangle ABC\\)\\(\\lvert\\rvert\\lvert\\rvert\\)\\(\\triangle XYZ\\), as shown.",
           "figure": {
             "svg": "fig:3894730de4"
@@ -19,6 +20,7 @@
             {
               "id": "sg2022-q2f-i",
               "type": "mc",
+              "difficulty": "easy",
               "stem": "Which similarity test justifies this?",
               "options": [
                 "AA (equiangular)",
@@ -48,6 +50,7 @@
             {
               "id": "sg2022-q2f-ii",
               "type": "mc",
+              "difficulty": "medium",
               "stem": "Hence calculate the length \\(XY\\), given \\(AB=8\\text{ cm}\\), \\(BC=6\\text{ cm}\\), \\(YZ=9\\text{ cm}\\) (with \\(A\\leftrightarrow X\\), \\(B\\leftrightarrow Y\\), \\(C\\leftrightarrow Z\\)).",
               "options": [
                 "\\(12\\text{ cm}\\)",
@@ -79,7 +82,14 @@
               }
             }
           ],
-          "answer": "0",
+          "options": [
+            "AA (equiangular)",
+            "SAS",
+            "RHS",
+            "SSS"
+          ],
+          "mc": true,
+          "answer": 0,
           "hint": "Two pairs of matching angles are marked equal in each triangle.",
           "steps": [
             {

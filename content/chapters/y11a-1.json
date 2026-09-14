@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y11a-1",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -11238,6 +11239,7 @@
         {
           "id": "hg2020-q18",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Given that \\(f(x) = (x^2-6x)(x-3)+2x\\).",
           "parts": [
             {

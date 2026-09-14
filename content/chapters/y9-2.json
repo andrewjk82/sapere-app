@@ -1554,6 +1554,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q4a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify: \\(\\sqrt{12} + \\sqrt{36} - 2\\sqrt{48}\\)",
           "options": [
             "\\(2\\sqrt{3} + 6\\)",
@@ -1590,6 +1591,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q4b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify: \\(2\\sqrt{75} - \\sqrt{80} + 3\\sqrt{108} - 2\\sqrt{180}\\)",
           "options": [
             "\\(28\\sqrt{3} - 16\\sqrt{5}\\)",
@@ -1626,6 +1628,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q5a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Expand: \\((2\\sqrt{3} + 5)(1 - \\sqrt{3})\\)",
           "options": [
             "\\(-3\\sqrt{3} - 1\\)",
@@ -1662,6 +1665,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q5b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Rationalise the denominator: \\(\\frac{3}{2\\sqrt{5}}\\)",
           "options": [
             "\\(\\frac{3\\sqrt{5}}{10}\\)",
@@ -1694,6 +1698,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q5c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Rationalise the denominator: \\(\\frac{7}{2\\sqrt{3} - 1}\\)",
           "options": [
             "\\(\\frac{14\\sqrt{3} + 7}{5}\\)",
@@ -1730,6 +1735,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q5d",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "If \\(t = 3\\sqrt{2}\\), find the value of: \\(5t^2 - 20\\).",
           "options": [
             "\\(40\\)",
@@ -1766,6 +1772,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q5e",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Evaluate the expression \\(\\frac{3-\\sqrt{2}}{3+\\sqrt{2}} + \\frac{3+\\sqrt{2}}{3-\\sqrt{2}}\\) to show that it is a rational number. What is its value?",
           "options": [
             "\\(\\frac{18}{7}\\)",
@@ -1806,6 +1813,7 @@
         {
           "id": "y9-willoughby-19-t5q4a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify \\(5\\sqrt{12} \\times 3\\sqrt{2}\\)",
           "options": [
             "\\(30\\sqrt{3}\\)",
@@ -1839,6 +1847,7 @@
         {
           "id": "y9-willoughby-19-t5q4b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify \\(\\sqrt{a^4b^2}\\)",
           "options": [
             "\\(a^2b\\)",
@@ -1868,6 +1877,7 @@
         {
           "id": "y9-willoughby-19-t5q4c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify \\(3\\sqrt{75} - \\sqrt{20} + 5\\sqrt{3}\\)",
           "options": [
             "\\(15\\sqrt{3} - \\sqrt{5}\\)",
@@ -1912,6 +1922,7 @@
         {
           "id": "ch9t3-q2",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the exact perimeter of the rectangle \\(ABCD\\) shown, with \\(AB=\\sqrt{27}\\) and \\(BC=\\sqrt{12}\\). Give your answer in the form \\(a\\sqrt b\\).",
           "figure": {
             "svg": "fig:61a7d2f332"
@@ -1955,6 +1966,7 @@
         {
           "id": "sg2022-q1a",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Simplify \\(2\\sqrt2+3\\sqrt2\\).",
           "options": [
             "\\(6\\sqrt2\\)",
@@ -1991,6 +2003,7 @@
         {
           "id": "ch9t3-q3",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Given that \\(a\\) is an integer such that \\((14+a\\sqrt2)(2-2\\sqrt2)=-14\\sqrt2\\), find the value of \\(a\\).",
           "options": [
             "\\(7\\)",
@@ -2035,6 +2048,7 @@
         {
           "id": "sg2022-q1i",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Express \\(\\dfrac{2}{\\sqrt7}\\) with a rational denominator.",
           "options": [
             "\\(\\dfrac{2}{7}\\)",

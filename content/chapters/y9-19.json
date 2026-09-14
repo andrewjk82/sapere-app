@@ -11,6 +11,7 @@
         {
           "id": "y9-willoughby-19-t7q3",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The marks of 10 students on an examination are shown in the stem-and-leaf plot below (key: $5|7 = 57$). What is the mean examination mark for these students?",
           "figure": {
             "svg": "fig:b16d62672c"
@@ -47,6 +48,7 @@
         {
           "id": "y9-willoughby-19-t7q4",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the median of the data presented in the dot plot below.",
           "figure": {
             "svg": "fig:0d83ffa82b"

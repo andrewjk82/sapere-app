@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year8ch13",
+      "synthetic": true,
       "code": "",
       "title": "Parallelograms and their properties",
       "questions": [

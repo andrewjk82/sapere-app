@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year10ch5a",
+      "synthetic": true,
       "code": "",
       "title": "Solution of quadratic equations",
       "questions": [

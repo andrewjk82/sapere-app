@@ -47,6 +47,7 @@ import {
 import { db } from '../firebase/config';
 import { trackRead } from './trafficTrackerService';
 import { readChapterIndex } from './questionIndexService';
+import { useCdn, getChapterQuestions as cdnChapter, getTopicQuestions as cdnTopic, getQuestionsByIds as cdnByIds } from './contentLoader';
 
 const CACHE_PREFIX = 'sapere:qcache';
 const TOPIC_CACHE_PREFIX = 'sapere:tqcache';
@@ -176,8 +177,12 @@ const writeCacheEntry = (key, questions, chapterVersion) => {
 
 /** Batched documentId-in fetches (max 30 per query). */
 const fetchQuestionsByIds = async (ids, trackTag) => {
-  const unique = [...new Set((ids || []).map(String).filter(Boolean))];
+  let unique = [...new Set((ids || []).map(String).filter(Boolean))];
   if (!unique.length) return [];
+  // ids whose chapter is served from /content/ come from there; only the rest hit Firestore.
+  const cdn = await cdnByIds(unique);
+  unique = cdn.remaining;
+  if (!unique.length) return cdn.docs.filter((q) => q.isActive !== false);
   const batches = [];
   for (let i = 0; i < unique.length; i += IN_QUERY_LIMIT) {
     batches.push(unique.slice(i, i + IN_QUERY_LIMIT));
@@ -189,7 +194,7 @@ const fetchQuestionsByIds = async (ids, trackTag) => {
   );
   const docs = snaps.flatMap((snap) => snap.docs.map((d) => ({ id: d.id, ...d.data() })));
   trackRead(docs.length || 1, trackTag);
-  return docs.filter((q) => q.isActive !== false);
+  return cdn.docs.concat(docs).filter((q) => q.isActive !== false);
 };
 
 /**
@@ -256,6 +261,8 @@ const fetchTopicFromFirestore = async (chapterId, topicId) => {
  * Full chapter questions (cached). Prefer getTopicQuestions for practice.
  */
 export const getChapterQuestions = async (uid, chapterId) => {
+  // CDN chapters: one GET per topic file, browser-cached by hash. No localStorage, no version doc.
+  if (useCdn(chapterId)) { try { return await cdnChapter(chapterId); } catch { /* fall back to Firestore */ } }
   const { version, index } = await resolveChapterVersion(chapterId);
   const key = cacheKey(uid || 'anon', chapterId);
   const cached = readCacheEntry(key, version);
@@ -271,6 +278,7 @@ export const getChapterQuestions = async (uid, chapterId) => {
  */
 export const getTopicQuestions = async (uid, chapterId, topicId) => {
   if (!topicId) return getChapterQuestions(uid, chapterId);
+  if (useCdn(chapterId)) { try { return await cdnTopic(topicId, { chapterId }); } catch { /* fall back to Firestore */ } }
 
   const { version } = await resolveChapterVersion(chapterId);
   const key = topicCacheKey(uid || 'anon', chapterId, topicId);

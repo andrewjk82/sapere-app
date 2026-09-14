@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year9ch1h",
+      "synthetic": true,
       "code": "",
       "title": "Miscellaneous questions",
       "questions": [

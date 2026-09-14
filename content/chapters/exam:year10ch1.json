@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year10ch1",
+      "synthetic": true,
       "code": "",
       "title": "Review of percentage",
       "questions": [

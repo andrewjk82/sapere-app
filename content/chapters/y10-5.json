@@ -2892,6 +2892,7 @@
         {
           "id": "jrhy2008-q5",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The solutions of \\(4m^2=m\\) are:",
           "options": [
             "\\(m=0, \\dfrac14\\)",
@@ -3186,6 +3187,7 @@
         {
           "id": "jr2012-q21",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The minimum value of the function \\(f(x,y) = x^2+y^2-2x+6y+3\\) is:",
           "options": [
             "\\(3\\)",
@@ -5381,7 +5383,14 @@
               ]
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\\\(5\\text{ cm}\\\\)",
+            "\\\\(12\\text{ cm}\\\\)",
+            "\\\\(7\\text{ cm}\\\\)",
+            "\\\\(3\\text{ cm}\\\\)"
+          ],
+          "mc": true,
+          "answer": 0,
           "hint": "Let the shortest side be \\(x\\) and set up the equation using Pythagoras' Theorem: \\(a^2 + b^2 = c^2\\).",
           "meta": {
             "course": "Mathematics"
@@ -5446,7 +5455,14 @@
               ]
             }
           ],
-          "answer": "1",
+          "options": [
+            "\\\\(t = 5 \\text{ s or } t = 10 \\text{ s}\\\\)",
+            "\\\\(t = 4 \\text{ s or } t = 12 \\text{ s}\\\\)",
+            "\\\\(t = 4 \\text{ s only}\\\\)",
+            "\\\\(t = 6 \\text{ s or } t = 8 \\text{ s}\\\\)"
+          ],
+          "mc": true,
+          "answer": 1,
           "hint": "Use the Null Factor Law or quadratic formula to solve for the unknown variable.",
           "meta": {
             "course": "Mathematics"
@@ -5541,7 +5557,14 @@
               ]
             }
           ],
-          "answer": "1",
+          "options": [
+            "\\\\(x = 5 \\text{ cm}\\\\)",
+            "\\\\(x = 2.5 \\text{ cm}\\\\)",
+            "\\\\(x = 3 \\text{ cm}\\\\)",
+            "\\\\(x = 1.5 \\text{ cm}\\\\)"
+          ],
+          "mc": true,
+          "answer": 1,
           "hint": "Define variable \\(x\\) for the unknown dimension, set up a quadratic equation based on area/volume, and solve.",
           "meta": {
             "course": "Mathematics"
@@ -5763,7 +5786,14 @@
               ]
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\\\(7 \\text{ m}\\\\)",
+            "\\\\(10 \\text{ m}\\\\)",
+            "\\\\(5 \\text{ m}\\\\)",
+            "\\\\(8 \\text{ m}\\\\)"
+          ],
+          "mc": true,
+          "answer": 0,
           "hint": "Define variable \\(x\\) for the unknown dimension, set up a quadratic equation based on area/volume, and solve.",
           "meta": {
             "course": "Mathematics"
@@ -5842,7 +5872,14 @@
               ]
             }
           ],
-          "answer": "2",
+          "options": [
+            "\\\\(b = \\pm 12\\\\)",
+            "\\\\(b = \\pm 3\\\\)",
+            "\\\\(b = \\pm 6\\\\)",
+            "\\\\(b = \\pm 9\\\\)"
+          ],
+          "mc": true,
+          "answer": 2,
           "hint": "A quadratic equation has one repeated root when its discriminant is zero: \\(\\Delta = b^2 - 4ac = 0\\).",
           "meta": {
             "course": "Mathematics"
@@ -5925,7 +5962,14 @@
               ]
             }
           ],
-          "answer": "3",
+          "options": [
+            "\\\\(a = \\dfrac{5}{9}\\\\)",
+            "\\\\(a = 9\\\\)",
+            "\\\\(a = \\dfrac{3}{5}\\\\)",
+            "\\\\(a = \\dfrac{9}{5}\\\\)"
+          ],
+          "mc": true,
+          "answer": 3,
           "hint": "A quadratic equation has one repeated root when its discriminant is zero: \\(\\Delta = b^2 - 4ac = 0\\).",
           "meta": {
             "course": "Mathematics"

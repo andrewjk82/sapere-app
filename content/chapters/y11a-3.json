@@ -514,6 +514,7 @@
         {
           "id": "bb2020-q1",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "What is the domain of \\(f(x) = \\sqrt{1-x^2}\\)?",
           "options": [
             "\\([0,1]\\)",
@@ -1299,6 +1300,7 @@
         {
           "id": "hh2020-q5",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Given \\(f(x) = \\ln(2x-1)\\) and \\(g(x)=x+2\\), the domain of \\(f(g(x))\\) is:",
           "options": [
             "\\(x \\in (-2,0)\\)",
@@ -1336,6 +1338,7 @@
         {
           "id": "hh2020-q23",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Let \\(f(x) = \\sqrt{x+1}\\) for \\(x \\ge 0\\).",
           "parts": [
             {
@@ -11871,6 +11874,7 @@
         {
           "id": "hillsgrammar-25-2u-q7",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Consider the diagram of the parabola \\(y = -x^2 + 2x + 8\\). What are the coordinates of the turning point?",
           "figure": {
             "svg": "fig:e5011c10fb"
@@ -12128,6 +12132,7 @@
         {
           "id": "hillsgrammar-25-2u-q24a",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "The time it takes for a cupcake at a picnic to be eaten by ants (\\(t\\) minutes) varies inversely with the number of ants eating the cupcake (\\(N\\) ants). When there are 10 ants the cupcake is eaten in 120 minutes. The equation relating \\(t\\) and \\(N\\) is \\(t = \\frac{k}{N}\\). What is the value of \\(k\\)?",
           "options": [
             "\\(1200\\)",
@@ -12156,6 +12161,7 @@
         {
           "id": "hillsgrammar-25-2u-q24b",
           "type": "review",
+          "difficulty": "medium",
           "stem": "By first completing the table of values, graph the curve \\(t = \\frac{1200}{N}\\) representing the relationship between the time taken for the cupcake to be eaten and the number of ants eating the cupcake, from \\(N=10\\) to \\(N=120\\).",
           "answer": "",
           "steps": [

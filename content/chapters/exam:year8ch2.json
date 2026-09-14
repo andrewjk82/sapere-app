@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year8ch2",
+      "synthetic": true,
       "code": "",
       "title": "Review of fractions and decimals",
       "questions": [

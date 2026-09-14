@@ -11,6 +11,7 @@
         {
           "id": "bb2020-q4",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "John works in a cake shop. He records which of the five most popular cakes each customer buys. What type of data is this?",
           "options": [
             "Categorical nominal",
@@ -40,6 +41,7 @@
         {
           "id": "bb2020-q7",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The Pareto chart below shows the number of orders received each month (bars) and the cumulative percentage of orders (line). What percentage of orders were received in May?",
           "figure": {
             "svg": "fig:93e877b61c"
@@ -79,6 +81,7 @@
         {
           "id": "hh2020-q14",
           "type": "review",
+          "difficulty": "medium",
           "stem": "A sample of 14 people were asked how many hours of television they watched the previous night. The results are shown in the dot plot below. Find the mean and sample standard deviation of these times, correct to one decimal place.",
           "figure": {
             "svg": "fig:83e73c8654"
@@ -131,6 +134,7 @@
         {
           "id": "hg2020-q7",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Which statement is true for an ungrouped data set with no outliers?",
           "options": [
             "The largest possible range is 5 times the interquartile range.",
@@ -164,6 +168,7 @@
         {
           "id": "hh2020-q30",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "The scatterplot shows the relationship between expenditure per primary school student (as a % of GDP) and life expectancy (years) for 15 countries. The lower quartile of expenditure is \\(Q_L=8.4\\) and upper quartile \\(Q_U=22.5\\).",
           "figure": {
             "svg": "fig:4dc29bfc05"
@@ -279,6 +284,7 @@
         {
           "id": "hillsgrammar-25-2u-q14a",
           "type": "review",
+          "difficulty": "medium",
           "stem": "Sets of data on the attention span of participants (in seconds) are collected for two groups of people. The stem-and-leaf plot shows the data for Group X. Using the same scale as the given box plot for Group A, draw a box plot for Group X.",
           "figure": {
             "svg": "fig:b966c2710e"
@@ -309,6 +315,7 @@
         {
           "id": "hillsgrammar-25-2u-q14b",
           "type": "review",
+          "difficulty": "medium",
           "stem": "Compare the skew and spread of the two sets of data (Group A and Group X), quoting appropriate results from the parallel box plots.",
           "figure": {
             "svg": "fig:8bed939369"
@@ -362,6 +369,7 @@
         {
           "id": "bb2020-q25",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "A biologist measured the amount of fertiliser (\\(x\\), grams) given to 8 tomato plants and the resulting yield (\\(y\\), kg). The scatterplot below shows the 8 data points with a fitted line, and \\(R^2 = 0.9453\\).",
           "figure": {
             "svg": "fig:cdfaa83e2b"
@@ -467,6 +475,7 @@
         {
           "id": "hg2020-q2",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "A scatterplot of reported pain against drug dosage (mg) is shown below. How could you describe the correlation between the pain and the dosage?",
           "figure": {
             "svg": "fig:fbc6520b9b"
@@ -506,6 +515,7 @@
         {
           "id": "hh2020-q2",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The graph shows a scatterplot for a set of data. Which of the following values is the most appropriate Pearson's correlation coefficient for this data?",
           "figure": {
             "svg": "fig:00790f2719"
@@ -833,6 +843,7 @@
         {
           "id": "hg2020-q29",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "Hayden is studying the growth of a tree. Heights recorded (metres) at years 1–9 since planting are: \\(0.7, 1.4, 2.4, 3.5, H, 6.6, 7.9, 8.7, 9.5\\) (year 5's height, \\(H\\), was not recorded). A scatterplot of the recorded data is shown.",
           "figure": {
             "svg": "fig:05acdfb88c"
@@ -956,6 +967,7 @@
         {
           "id": "hillsgrammar-25-2u-q29a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A manager is in charge of four teenage employees. The number of weeks they have been working (\\(x\\)) and the number of times they ask for assistance during a four-hour shift (\\(y\\)) are: \\((2,15), (6,10), (10,6), (17,3)\\). Use a calculator to find the equation of the least-squares regression line for this dataset, finding the gradient and \\(y\\)-intercept to 2 decimal places.",
           "options": [
             "\\(y = -0.79x + 15.38\\)",
@@ -988,6 +1000,7 @@
         {
           "id": "hillsgrammar-25-2u-q29b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Using the least-squares regression line \\(y=-0.79x+15.38\\) as a guide, on average how many full weeks will an employee have been working before they require assistance less than 8 times during a four-hour shift?",
           "options": [
             "10 weeks",

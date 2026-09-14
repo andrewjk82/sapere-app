@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year8ch15",
+      "synthetic": true,
       "code": "",
       "title": "Review of area and length",
       "questions": [

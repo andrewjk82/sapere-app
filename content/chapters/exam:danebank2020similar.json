@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:danebank2020similar",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [

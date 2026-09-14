@@ -13,7 +13,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Solve simultaneously for \\\\(  x  \\\\):\n\\\\(  3x + y = 7  \\\\)\n\\\\(  9x^2 + y^2 = 25  \\\\)",
-          "answer": "1",
+          "answer": "0",
           "hint": "Isolate \\( y \\) from the linear equation and substitute.",
           "solution": "0",
           "steps": [
@@ -78,7 +78,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "A rectangle has a perimeter of 34 cm and an area of 60 cm\\\\( ^2 \\\\). Find the dimensions.",
-          "answer": "2",
+          "answer": "0",
           "hint": "Use perimeter and area to set up a system of equations.",
           "solution": "0",
           "steps": [
@@ -106,7 +106,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "A two-digit number has digits that sum to 11. When the digits are reversed, the new number is 27 more than the original. Find the original number.",
-          "answer": "1",
+          "answer": "0",
           "hint": "Set up equations for the digit sum and the difference between the numbers.",
           "solution": "0",
           "steps": [
@@ -190,7 +190,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Solve simultaneously for \\\\(  y  \\\\):\n\\\\(  x + 2y = 3  \\\\)\n\\\\(  2xy - x^2 = 1  \\\\)",
-          "answer": "1",
+          "answer": "0",
           "hint": "Substitute \\( x = 3 - 2y \\) into the second equation and solve the quadratic in \\( y \\).",
           "solution": "0",
           "steps": [
@@ -214,7 +214,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Solve simultaneously for \\\\(  x  \\\\):\n\\\\(  x + 2y = 3  \\\\)\n\\\\(  2xy - x^2 = 1  \\\\)",
-          "answer": "2",
+          "answer": "0",
           "hint": "Express \\( x = 3 - 2y \\) from the linear equation and substitute.",
           "solution": "0",
           "steps": [
@@ -254,7 +254,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Solve simultaneously:\n\\\\(  x - y = 2  \\\\)\n\\\\(  x^2 - y^2 = 8  \\\\)",
-          "answer": "1",
+          "answer": "0",
           "hint": "Factor the difference of squares and use the known difference.",
           "solution": "0",
           "steps": [
@@ -311,7 +311,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Solve simultaneously:\n\\\\(  \\\\\\sqrt{x} + \\\\\\sqrt{y} = 5  \\\\)\n\\\\(  x + y = 13  \\\\)",
-          "answer": "3",
+          "answer": "0",
           "hint": "Use substitution u = sqrt(x), v = sqrt(y) to reduce to a standard sum/product problem.",
           "solution": "0",
           "steps": [
@@ -340,7 +340,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Solve the system:\n\\\\(  x + y + z = 9  \\\\)\n\\\\(  x + 2y + 3z = 22  \\\\)\n\\\\(  2x + y + z = 12  \\\\)",
-          "answer": "1",
+          "answer": "0",
           "hint": "Subtract equations to simplify the system.",
           "solution": "0",
           "steps": [
@@ -369,7 +369,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Solve the system:\n\\\\(  x + y = 5  \\\\)\n\\\\(  y + z = 7  \\\\)\n\\\\(  x + z = 6  \\\\)",
-          "answer": "2",
+          "answer": "0",
           "hint": "Add all three equations to find the total sum, then subtract each equation.",
           "solution": "0",
           "steps": [
@@ -398,7 +398,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "A rectangular garden has an area of 150 m\\\\( ^2 \\\\). Its length is 5 m more than its width. Find the dimensions.",
-          "answer": "3",
+          "answer": "0",
           "hint": "Use the area formula and the given relationship between length and width.",
           "solution": "0",
           "steps": [
@@ -478,7 +478,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Solve simultaneously:\n\\\\(  x^2 - y^2 = 7  \\\\)\n\\\\(  x + y = 7  \\\\)",
-          "answer": "2",
+          "answer": "0",
           "hint": "Use the difference of squares factorisation.",
           "solution": "0",
           "steps": [
@@ -506,7 +506,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Solve simultaneously:\n\\\\(  x + y = 6  \\\\)\n\\\\(  x^2 - y^2 = 12  \\\\)",
-          "answer": "2",
+          "answer": "0",
           "hint": "Factor the difference of squares and use the known sum.",
           "solution": "0",
           "steps": [
@@ -534,7 +534,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "In a triangle, angle A is twice angle B. Angle C is 20° more than angle B. Find all three angles.",
-          "answer": "1",
+          "answer": "0",
           "hint": "Use angle sum of a triangle and the given relationships.",
           "solution": "0",
           "steps": [
@@ -562,7 +562,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "In a right triangle, the two shorter sides differ by 1 and the hypotenuse is \\\\(  \\\\\\sqrt{61}  \\\\). Find the two shorter sides.",
-          "answer": "3",
+          "answer": "0",
           "hint": "Use Pythagoras' theorem and the given difference.",
           "solution": "0",
           "steps": [
@@ -590,7 +590,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Two numbers have a sum of 12 and a product of 35. Find the two numbers.",
-          "answer": "3",
+          "answer": "0",
           "hint": "Set up sum and product equations, then form a quadratic.",
           "solution": "0",
           "steps": [
@@ -647,7 +647,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "Solve simultaneously:\n\\\\(  x^2 + y^2 = 50  \\\\)\n\\\\(  x - y = 0  \\\\)",
-          "answer": "1",
+          "answer": "0",
           "hint": "Use x = y to simplify the quadratic equation.",
           "solution": "0",
           "steps": [
@@ -699,7 +699,7 @@
           "type": "review",
           "difficulty": "hard",
           "stem": "One number is 4 more than another. Their product is 60. Find both numbers.",
-          "answer": "2",
+          "answer": "0",
           "hint": "Set up equations from the conditions and solve the quadratic.",
           "solution": "0",
           "steps": [

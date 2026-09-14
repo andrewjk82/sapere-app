@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y9-8",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -5027,6 +5028,7 @@
         {
           "id": "sg2022-q8b",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The numbers \\(a\\) and \\(b\\) can be expressed as \\(a=2^p\\) and \\(b=2^q\\), where \\(p\\) and \\(q\\) are integers. It is also known that \\(ab=32\\) and \\(2a^2b=32\\). Find the values of \\(p\\) and \\(q\\).",
           "options": [
             "\\(p=2,\\; q=3\\)",
@@ -5584,6 +5586,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q3a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Evaluate the following: \\(3 + 3^3 - 3^2\\)",
           "options": [
             "\\(18\\)",
@@ -5612,6 +5615,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q3b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Evaluate the following using the index laws: \\(\\frac{8^2 \\times 2^3}{4^2}\\)",
           "options": [
             "\\(128\\)",
@@ -5648,6 +5652,7 @@
         {
           "id": "y9-willoughby-19-t5q2a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify \\(p^3 + p^0\\)",
           "options": [
             "\\(p^4\\)",
@@ -5677,6 +5682,7 @@
         {
           "id": "y9-willoughby-19-t5q2b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify \\(4p^2q^3 \\times 2p^5q^9\\)",
           "options": [
             "\\(6p^7q^{12}\\)",
@@ -5717,6 +5723,7 @@
         {
           "id": "sg2022-q1j",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Express \\(b^{-4}\\) with a positive index.",
           "options": [
             "\\(-b^4\\)",
@@ -5742,6 +5749,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q6a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Solve the following equation: \\(5^{x+2} = \\frac{1}{\\sqrt[3]{125}}\\)",
           "options": [
             "\\(x = 1\\)",
@@ -5785,6 +5793,7 @@
         {
           "id": "sg2022-q1l",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify \\(16^{\\frac14}\\).",
           "options": [
             "\\(64\\)",
@@ -5814,6 +5823,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q5",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Express in simplest form with positive indices: \\(\\frac{c^{-1}a^{-3}}{b^{-4}c^2}\\)",
           "options": [
             "\\(\\frac{1}{a^3 b^4 c^3}\\)",
@@ -5849,6 +5859,7 @@
         {
           "id": "sg2022-q1k",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Write \\(2.15\\times10^4\\) as a basic numeral.",
           "options": [
             "\\(0.000215\\)",
@@ -5874,6 +5885,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q1a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Write the following in scientific notation to 4 significant figures: \\(32\\,405\\,211\\)",
           "options": [
             "\\(3.241 \\times 10^7\\)",
@@ -5902,6 +5914,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q1b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Write the following in scientific notation to 4 significant figures: \\(0.000\\,500\\,967\\)",
           "options": [
             "\\(5.009 \\times 10^{-4}\\)",
@@ -5930,6 +5943,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q2a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Write the following as an ordinary decimal: \\(5.69 \\times 10^{-7}\\)",
           "options": [
             "\\(0.000\\,000\\,056\\,9\\)",
@@ -5954,6 +5968,7 @@
         {
           "id": "y9-willoughby-17-y-pa-q2b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Write the following as an ordinary decimal: \\(0.075823 \\times 10^{5}\\)",
           "options": [
             "\\(75823\\)",
@@ -5978,6 +5993,7 @@
         {
           "id": "y9-willoughby-19-t5q1",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Express $0.000907$ in scientific notation.",
           "options": [
             "$9.07 \\times 10^4$",

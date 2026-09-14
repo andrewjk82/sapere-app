@@ -469,7 +469,7 @@
             "\\(1.4\\text{ m}\\)",
             "\\(1.5\\text{ m}\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Find the ratio of height to shadow length.",
           "solution": "1. Find the ratio of height to shadow length:\n   \\(\\frac{1.6}{2.4} = \\frac{2}{3}\\)\n2. Multiply the shadow length of \\(1.8\\) m by this ratio to find the height:\n   \\(1.8 \\times \\frac{2}{3} = 1.2\\text{ m}\\)",
           "steps": [

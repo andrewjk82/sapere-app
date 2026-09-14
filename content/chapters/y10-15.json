@@ -677,6 +677,7 @@
         {
           "id": "jr2012-q34d",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Two standard 6-sided dice are rolled. The number on the upper face of the first die determines the coefficient \\(b\\), and the number on the upper face of the second die determines the value of \\(c\\), in the quadratic equation \\(x^2+bx+c=0\\). What is the probability that this quadratic equation will have two different real roots?",
           "options": [
             "\\(\\dfrac{13}{36}\\)",
@@ -711,6 +712,7 @@
         {
           "id": "jr2013-q2",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Bob, Mary and Tom have a race to reach the canteen at recess time. Bob and Mary are each twice as likely as Tom to be first of the three to get to the canteen. What is the probability that Tom will be first of the three to reach the canteen?",
           "options": [
             "\\(\\dfrac13\\)",
@@ -740,6 +742,7 @@
         {
           "id": "jr2013-qF",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Section F — weighted-dice probability, the remainder theorem, discriminant/range/asymptotes of a rational function, and circle geometry with two intersecting circles (parts a–d).",
           "parts": [
             {
@@ -2696,6 +2699,7 @@
         {
           "id": "jr2012-q11",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Sets \\(X\\), \\(Y\\) and \\(Z\\) are shown in a Venn diagram, where the region shaded is inside both \\(X\\) and \\(Y\\) (or their union), but excludes all of \\(Z\\). The shaded area represents the set:",
           "figure": {
             "svg": "fig:db987ce236"
@@ -4767,6 +4771,7 @@
         {
           "id": "jr2012-q28",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Coin \\(A\\) is flipped 3 times and coin \\(B\\) is flipped 4 times. What is the probability that the number of heads obtained from flipping the two coins is the same?",
           "options": [
             "\\(\\dfrac12\\)",

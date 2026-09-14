@@ -1010,6 +1010,7 @@
         {
           "id": "jr2013-q10",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The relationship between two variables is \\(A=kB^3\\). Which of the following graphs would produce a straight line?",
           "options": [
             "\\(A^3\\) plotted against \\(B^3\\)",
@@ -1039,6 +1040,7 @@
         {
           "id": "jr2013-qE",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Section E — proportion, parallel lines, ratio division, simultaneous equations, Venn diagrams, and a rates word problem (parts a–f).",
           "parts": [
             {
@@ -2412,6 +2414,7 @@
         {
           "id": "jrhy2008-q18",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Given that \\(x\\) is inversely proportional to the square of \\(y\\), and \\(x=2\\) when \\(y=4\\), find the value of \\(x\\) when \\(y=-2\\).",
           "options": [
             "\\(4\\)",
@@ -2484,6 +2487,12 @@
               "type": "short",
               "stem": "Assuming that there is a simple relationship between the two variables, find a formula for \\(b\\) in terms of \\(a\\).",
               "answer": "0",
+              "options": [
+                "\\(b = 18/a\\)",
+                "\\(b = 18/a + 1\\)",
+                "\\(b = 19/a\\)",
+                "\\(\\text{None of the above}\\)"
+              ],
               "steps": [
                 {
                   "explain": "From the straight-line graph through the origin, \\(b = k \\times \\frac{1}{a}\\).",
@@ -2536,6 +2545,12 @@
               "type": "short",
               "stem": "Assuming that there is a simple relationship between the two variables, find a formula for \\(y\\) in terms of \\(x\\).",
               "answer": "0",
+              "options": [
+                "\\(y = 64/x^2\\)",
+                "\\(y = 64/x^2 + 1\\)",
+                "\\(y = 64/x^3\\)",
+                "\\(y = 64/x^{1}\\)"
+              ],
               "steps": [
                 {
                   "explain": "Since \\(x^2 y = 64\\) is constant, \\(y\\) is inversely proportional to \\(x^2\\).",
@@ -2717,6 +2732,12 @@
               "type": "short",
               "stem": "For cones of volume \\(18\\pi\\) cm\\(^3\\), state the constant of proportionality in the relationship \\(h \\propto \\frac{1}{r^2}\\).",
               "answer": "54",
+              "options": [
+                "\\(56\\)",
+                "\\(53\\)",
+                "\\(54\\)",
+                "\\(55\\)"
+              ],
               "steps": [
                 {
                   "explain": "Substitute \\(V = 18\\pi\\) into the volume formula.",
@@ -3462,6 +3483,7 @@
         {
           "id": "jrhy2008-q21",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Four people need 3 days to paint an area of \\(2000\\text{ m}^2\\). How many days do 3 people need to paint an area of \\(500\\text{ m}^2\\)?",
           "options": [
             "\\(3\\)",
@@ -3469,7 +3491,7 @@
             "\\(1\\)",
             "\\(2\\)"
           ],
-          "answer": 2,
+          "answer": 3,
           "hint": "Find the total \"person-days per unit area\" rate from the first scenario, then apply it to the second.",
           "steps": [
             {

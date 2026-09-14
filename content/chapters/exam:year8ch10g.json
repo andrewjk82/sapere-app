@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year8ch10g",
+      "synthetic": true,
       "code": "",
       "title": "Review of rates and ratios",
       "questions": [

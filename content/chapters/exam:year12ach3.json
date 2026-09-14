@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year12ach3",
+      "synthetic": true,
       "code": "",
       "title": "Increasing, decreasing and stationary at a point",
       "questions": [

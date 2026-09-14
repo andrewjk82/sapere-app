@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y10-4",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -403,6 +404,7 @@
         {
           "id": "jrhy2008-q14",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The coordinates of the point that divides the interval from \\((-5,6)\\) to \\((4,-3)\\) in the ratio \\(1:2\\) are:",
           "options": [
             "\\((3,-2)\\)",
@@ -693,7 +695,14 @@
               ]
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\(4\\)",
+            "\\(3\\)",
+            "\\(4.5\\)",
+            "\\(-4\\)"
+          ],
+          "mc": true,
+          "answer": 0,
           "hint": "Gradient conditions.",
           "timeLimit": 90
         },
@@ -756,7 +765,14 @@
               ]
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\(3.5\\)",
+            "\\(3\\)",
+            "\\(4.5\\)",
+            "\\(2.5\\)"
+          ],
+          "mc": true,
+          "answer": 0,
           "hint": "For collinear points, $m_{AB} = m_{AC}$. For perpendicular, $m_{AB} \\times m_{AC} = -1$."
         },
         {
@@ -1247,6 +1263,7 @@
         {
           "id": "jr2012-q14",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "A candle is initially \\(30\\text{ cm}\\) long. After burning for three hours its length is \\(24\\text{ cm}\\). If the length of the candle (\\(L\\) cm) is linearly related to the burning time (\\(t\\) hours), the rule relating \\(L\\) and \\(t\\) is:",
           "options": [
             "\\(L=30-12t\\)",
@@ -1276,6 +1293,7 @@
         {
           "id": "jrhy2008-q23",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Which of the following lines is perpendicular to the line \\(2x+3y=10\\)?",
           "options": [
             "\\(3x=2y\\)",
@@ -2012,6 +2030,7 @@
         {
           "id": "jr2012-q34b",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Find the equation of the straight line which passes through the point of intersection of the two lines \\(x-y=1\\) and \\(3x-2y-1=0\\), and makes an angle of \\(135°\\) with the positive direction of the \\(x\\)-axis.",
           "options": [
             "\\(x-y+3=0\\)",
@@ -2946,6 +2965,7 @@
         {
           "id": "jrhy2008-q16",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The equation of the straight line through the point of intersection of \\(x+3y-4=0\\) and \\(3x-4y+1=0\\), which also passes through the point \\((3,-1)\\), may be given by \\(x+3y-4+k(3x-4y+1)=0\\), where \\(k\\) is:",
           "options": [
             "\\(\\dfrac27\\)",
@@ -4716,6 +4736,12 @@
               ]
             }
           ],
+          "options": [
+            "D(a-3, 5)",
+            "D(3, 2)",
+            "D(a, 2)",
+            "D(a-3, 2)"
+          ],
           "answer": "3"
         },
         {
@@ -4844,6 +4870,12 @@
                 }
               ]
             }
+          ],
+          "options": [
+            "V = -40t + 40000",
+            "V = -20t + 40000",
+            "V = 40t + 20000",
+            "V = -40t + 20000"
           ],
           "answer": "0"
         },
@@ -4990,6 +5022,12 @@
                 }
               ]
             }
+          ],
+          "options": [
+            "",
+            "",
+            "",
+            ""
           ],
           "answer": "0",
           "manual": true,
@@ -5138,6 +5176,12 @@
                 }
               ]
             }
+          ],
+          "options": [
+            "",
+            "",
+            "",
+            ""
           ],
           "answer": "0",
           "manual": true,

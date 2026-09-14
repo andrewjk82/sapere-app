@@ -196,6 +196,7 @@
         {
           "id": "mrcroker-q3a",
           "type": "review",
+          "difficulty": "medium",
           "stem": "Prove that a triangle with sides of length \\(48\\text{ cm}\\), \\(55\\text{ cm}\\) and \\(73\\text{ cm}\\) is right-angled.",
           "answer": "",
           "hint": "Use the converse of Pythagoras' theorem: check whether the sum of the squares of the two shorter sides equals the square of the longest side.",
@@ -239,6 +240,7 @@
         {
           "id": "mrcroker-q5",
           "type": "review",
+          "difficulty": "hard",
           "stem": "The isosceles triangle \\(OLR\\) has two equal sides \\(OL=OR=a\\) and base \\(LR=b\\). The perpendicular height from \\(O\\) to \\(LR\\) meets \\(LR\\) at its midpoint \\(M\\), with \\(OM=h\\). Show that \\(h=\\dfrac12\\sqrt{4a^2-b^2}\\).",
           "answer": "",
           "hint": "Since \\(OM\\) is the perpendicular height to the base of an isosceles triangle, it bisects the base, so \\(LM=\\dfrac{b}{2}\\). Apply Pythagoras' theorem in right triangle \\(OML\\).",
@@ -282,6 +284,7 @@
         {
           "id": "mrcroker-q6",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A square of side length \\(x\\) is drawn in a quadrant (quarter circle) of a circle with radius \\(4\\text{ cm}\\), with one corner of the square at the centre \\(O\\) and the opposite corner touching the arc. Find the value of \\(x\\).",
           "options": [
             "\\(2\\sqrt2\\text{ cm}\\)",
@@ -316,6 +319,7 @@
         {
           "id": "mrcroker-q7i",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "In the rectangular prism shown, \\(FG=6\\text{ cm}\\) and \\(HG=8\\text{ cm}\\). Find the length of \\(FH\\).",
           "figure": {
             "svg": "fig:d50af71c83"
@@ -326,7 +330,7 @@
             "\\(10\\text{ cm}\\)",
             "\\(2\\text{ cm}\\)"
           ],
-          "answer": 2,
+          "answer": 3,
           "hint": "\\(FH\\) is the diagonal of rectangle \\(EFGH\\) — use Pythagoras' theorem with legs \\(FG\\) and \\(HG\\).",
           "steps": [
             {
@@ -349,6 +353,7 @@
         {
           "id": "mrcroker-q9",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "In the right triangle shown, the sides are \\(10\\), \\(x^2-1\\) and hypotenuse \\(1+x^2\\). Find the value of \\(x\\) (given \\(x\\) represents a length, so \\(x>0\\)). Hint: there may be some algebraic expansion involved.",
           "figure": {
             "svg": "fig:39042c1647"

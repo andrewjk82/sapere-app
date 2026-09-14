@@ -35,7 +35,8 @@
     "content:validate:report": "npm run content:validate -- --report",
     "content:drift": "node --no-warnings --import ./scripts/extResolve.mjs tools/content/drift.mjs",
     "content:publish": "node tools/content/publish.mjs",
-    "build:app": "vite build"
+    "build:app": "vite build",
+    "test:content-parity": "npm run content:publish && node --no-warnings --import ./scripts/extResolve.mjs tools/content/tests/adapterParity.mjs"
   },
   "dependencies": {
     "@babel/generator": "^7.27.0",

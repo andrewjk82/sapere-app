@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y10-18",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -792,6 +793,7 @@
         {
           "id": "jr2012-q20",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The mean, median, mode and range of a collection of eight integers are all equal to 8. The largest possible integer that can be an element of this collection is:",
           "options": [
             "\\(11\\)",
@@ -833,6 +835,7 @@
         {
           "id": "jr2013-q7",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A data set of nine scores has a median of 7. The scores of 6, 6, 12 and 17 are added to this data set. The median of the data set is now:",
           "options": [
             "\\(8\\)",
@@ -866,6 +869,7 @@
         {
           "id": "jrhy2008-q8",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the median for the number of hours spent on homework each week in the previous question.",
           "options": [
             "\\(10.5\\)",
@@ -1242,7 +1246,6 @@
               ]
             }
           ],
-          "answer": "0",
           "hint": "For an even n, the median lies between the n/2th and (n/2+1)th values. Split the data into two equal halves of n/2 and find the median position of each half (that half's own middle position, mapped back onto the whole data set).",
           "solution": "n=100 (even): LQ=25.5th, median=50.5th, UQ=75.5th. n=101 (odd): LQ=25.5th, median=51st, UQ=76.5th.",
           "steps": [
@@ -1730,6 +1733,7 @@
         {
           "id": "jr2013-qCf",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Ben's test results: English — mean 50, SD 15, Ben scored 67; Mathematics — mean 55, SD 12, Ben scored 68. (i) In which subject did Ben do better? (ii) What is the equivalent mark in English to a Mathematics mark of 87?",
           "parts": [
             {
@@ -2915,6 +2919,7 @@
         {
           "id": "jrhy2008-q7",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "There are 12 students in a class. The stem-and-leaf plot shows the number of hours spent on homework each week: stem 0 | leaf 3 7 7 9 9; stem 1 | leaf 0 1 1 1 4; stem 2 | leaf 8 9. What is the mean number of hours spent, correct to one decimal place?",
           "options": [
             "\\(4.9\\)",
@@ -3563,6 +3568,7 @@
         {
           "id": "jr2012-q17",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "In a particular town, the age of the population is normally distributed. The mean age is 43 years and the standard deviation is 14 years. The percentage of the population between the ages of 43 and 71 is closest to:",
           "options": [
             "\\(95\\)",

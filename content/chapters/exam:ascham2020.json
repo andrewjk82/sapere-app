@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:ascham2020",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -327,7 +328,7 @@
               "difficulty": "hard",
               "stem": "(b) Find the angle \\(\\theta\\) so that the area is a maximum. Give your answer correct to 2 decimal places.",
               "figure": {
-                "jsxGraph": {
+                "raw": {
                   "elements": [
                     {
                       "type": "point",
@@ -784,7 +785,14 @@
               ]
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\(a = \\dfrac{3}{500}\\)",
+            "\\(a = \\dfrac{1}{500}\\)",
+            "\\(a = \\dfrac{3}{250}\\)",
+            "\\(a = \\dfrac{3}{1000}\\)"
+          ],
+          "mc": true,
+          "answer": 0,
           "hint": "Integrate to find $a$, then integrate again for CDF, then use $P(X>7) = 1 - F(7)$.",
           "solution": "$a = 3/500$; $F(x) = x^2(15-x)/500$; $P(X>7) = 0.216$.",
           "meta": {

@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year7ch3c",
+      "synthetic": true,
       "code": "",
       "title": "Substitution",
       "questions": [

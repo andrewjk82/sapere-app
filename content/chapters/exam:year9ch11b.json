@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year9ch11b",
+      "synthetic": true,
       "code": "",
       "title": "The midpoint of an interval",
       "questions": [

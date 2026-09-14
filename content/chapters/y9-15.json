@@ -146,6 +146,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q2a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "FULLY factorise the following: \\((x + 2)^2 - 9\\)",
           "options": [
             "\\((x + 5)(x - 1)\\)",
@@ -185,6 +186,7 @@
         {
           "id": "ch9t3-q19",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Which of the following is the complete factorisation of \\(24x^3-4x^2-6x+1\\)?",
           "options": [
             "\\((2x-1)^2(6x-1)\\)",
@@ -222,6 +224,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q2c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "FULLY factorise the following: \\(3(a - b) - b(a - b) - 2a^2 + 2ab\\)",
           "options": [
             "\\((a - b)(3 + b - 2a)\\)",
@@ -261,6 +264,7 @@
         {
           "id": "sg2022-q2b-i",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Factorise \\(x^2+7x+12\\).",
           "options": [
             "\\((x-3)(x-4)\\)",
@@ -290,6 +294,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q1c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Factorise the following: \\(3m^2 + 14m + 8\\)",
           "options": [
             "\\((3m - 2)(m - 4)\\)",
@@ -326,6 +331,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q2b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "FULLY factorise the following: \\(27x^2 - 54x + 15\\)",
           "options": [
             "\\(3(9x - 1)(x - 5)\\)",
@@ -373,6 +379,7 @@
         {
           "id": "ch9t3-q18a",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Fully factorise the following expressions.\n\n\\(6x^2+11x-35\\)",
           "options": [
             "\\((3x-5)(2x+7)\\)",
@@ -403,6 +410,7 @@
         {
           "id": "ch9t3-q18b",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Fully factorise the following expressions.\n\n\\(25x^2-40x+16\\)",
           "options": [
             "\\((5x+4)^2\\)",
@@ -433,6 +441,7 @@
         {
           "id": "ch9t3-q18c",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Fully factorise the following expressions.\n\n\\(12x^2-3xy-4x+y\\)",
           "options": [
             "\\((3x-1)(4x+y)\\)",
@@ -463,6 +472,7 @@
         {
           "id": "sg2022-q5c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Factorise \\(4x^2+16x+7\\).",
           "options": [
             "\\((4x+1)(x+7)\\)",
@@ -503,6 +513,7 @@
         {
           "id": "sg2022-q4c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Factorise and simplify \\(\\dfrac{x^2-9x+14}{x^2-2x-35}\\).",
           "options": [
             "\\(\\dfrac{x-2}{x-5}\\)",
@@ -536,6 +547,7 @@
         {
           "id": "sg2022-q7c",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Simplify \\(\\dfrac{3x^2-12}{30x+15}\\div\\dfrac{2x^2-3x-2}{4x^2+4x+1}\\).",
           "options": [
             "\\(\\dfrac{3(x+2)}{5}\\)",
@@ -573,6 +585,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q3a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify the following algebraic fraction: \\(\\frac{2(x - 3)^2}{x^2 - 11x + 24} \\div \\frac{x^2 - 4}{x - 2}\\)",
           "options": [
             "\\(\\frac{2(x - 3)}{(x + 8)(x - 2)}\\)",
@@ -609,6 +622,7 @@
         {
           "id": "y9-willoughby-19-t3q7a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify \\(\\frac{3x^2 - x - 2}{x^2 - 1}\\)",
           "options": [
             "\\(\\frac{3x-2}{x+1}\\)",
@@ -638,6 +652,7 @@
         {
           "id": "y9-willoughby-19-t3q7b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify \\(\\frac{2m+4}{7m} \\div \\frac{m^2+2m}{14m^3}\\)",
           "options": [
             "\\(14m^2\\)",
@@ -671,6 +686,7 @@
         {
           "id": "y9-willoughby-19-t3q7c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify \\(\\frac{5}{y^2+2y} - \\frac{2}{y^2-4}\\)",
           "options": [
             "\\(\\frac{3y-10}{y(y+2)(y-2)}\\)",
@@ -704,6 +720,7 @@
         {
           "id": "y9-willoughby-19-t3q7d",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify \\(\\frac{3x+6}{x^2+x-6} \\div \\frac{x^2-2x-8}{x^2-x-12}\\)",
           "options": [
             "\\(\\frac{3}{x+2}\\)",
@@ -744,6 +761,7 @@
         {
           "id": "ch9t3-q15a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Express as a single fraction in simplest form.\n\n\\(\\dfrac{3a}{8}-\\dfrac{2a^2}{3}\\)",
           "options": [
             "\\(\\dfrac{3a-2a^2}{5}\\)",
@@ -774,6 +792,7 @@
         {
           "id": "sg2022-q1g",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Simplify \\(\\dfrac{2x}{y}+\\dfrac{x}{y}\\).",
           "options": [
             "\\(\\dfrac{2x}{y^2}\\)",
@@ -803,6 +822,7 @@
         {
           "id": "sg2022-q3i",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Write \\(\\dfrac{a}{b+1}-\\dfrac{a}{(b+1)^2}\\) as a single fraction in simplest form.",
           "options": [
             "\\(\\dfrac{ab}{(b+1)^2}\\)",
@@ -810,7 +830,7 @@
             "\\(\\dfrac{a}{(b+1)^2}\\)",
             "\\(0\\)"
           ],
-          "answer": 0,
+          "answer": 3,
           "hint": "The lowest common denominator is \\((b+1)^2\\). Multiply the first fraction top and bottom by \\((b+1)\\).",
           "steps": [
             {
@@ -840,6 +860,7 @@
         {
           "id": "y9-willoughby-17-y-pb-q3b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Simplify the following algebraic fraction: \\(\\frac{3}{x^2 - 7x + 10} - \\frac{2}{5x - 10}\\)",
           "options": [
             "\\(\\frac{5}{5(x - 5)(x - 2)}\\)",
@@ -883,6 +904,7 @@
         {
           "id": "sg2022-q5d",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Use the method of completing the square to solve \\(x^2-4x-4=0\\).",
           "options": [
             "\\(x=-2\\pm2\\sqrt2\\)",

@@ -3460,42 +3460,6 @@
   ]
  },
  {
-  "id": "y6-frac-q18",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{7}{10}$",
-  "options": [
-   "\\\\(\\frac{7}{10}\\\\)",
-   "\\\\(\\frac{10}{7}\\\\)",
-   "\\\\\\\\(1\\frac{3}{7}\\\\)",
-   "\\\\(\\frac{3}{10}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q21",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$400",
-  "options": [
-   "\\\\$400",
-   "\\\\$300",
-   "\\\\$480",
-   "\\\\$240"
-  ]
- },
- {
-  "id": "y6-frac-q8",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{1}{2}, \\frac{5}{8}, \\frac{3}{4}$",
-  "options": [
-   "\\\\(\\frac{1}{2}, \\frac{5}{8}, \\frac{3}{4}\\\\)",
-   "\\\\(\\frac{5}{8}, \\frac{1}{2}, \\frac{3}{4}\\\\)",
-   "\\\\(\\frac{3}{4}, \\frac{5}{8}, \\frac{1}{2}\\\\)",
-   "\\\\(\\frac{1}{2}, \\frac{3}{4}, \\frac{5}{8}\\\\)"
-  ]
- },
- {
   "id": "y7-23e-q1e",
   "reason": "empty-stem",
   "severity": "BROKEN"
@@ -8666,6 +8630,44 @@
    "\\\\((x - 5)^2 + (y + 12)^2 = 13\\)",
    "\\\\((x - 5)^2 + (y + 12)^2 = 169\\)",
    "\\\\((x - 5)^2 + (y + 12)^2 = 26\\)"
+  ]
+ },
+ {
+  "id": "y10-11b-1d",
+  "reason": "mc-answer-differs",
+  "severity": "revision",
+  "fs": "\\(y = 1\\)",
+  "seed": "\\(y = \\frac{2}{3}\\)",
+  "fsOptions": [
+   "\\(y = -\\frac{2}{3}\\)",
+   "\\(y = \\frac{2}{3}\\)",
+   "\\(y = \\frac{3}{2}\\)",
+   "\\(y = 1\\)"
+  ],
+  "seedOptions": [
+   "\\(-y = \\frac{2}{3}\\)",
+   "\\(y = \\frac{2}{3}\\)",
+   "\\(y = \\frac{3}{2}\\)",
+   "\\(y = \\frac{3}{3}\\)"
+  ]
+ },
+ {
+  "id": "y10-11b-3b",
+  "reason": "mc-answer-differs",
+  "severity": "revision",
+  "fs": "\\(y = 1\\)",
+  "seed": "\\(y = \\frac{1}{2}\\)",
+  "fsOptions": [
+   "\\(y = -\\frac{1}{2}\\)",
+   "\\(y = \\frac{1}{2}\\)",
+   "\\(y = 1\\)",
+   "\\(y = -1\\)"
+  ],
+  "seedOptions": [
+   "\\(-y = \\frac{1}{2}\\)",
+   "\\(y = \\frac{1}{2}\\)",
+   "\\(y = \\frac{1}{3}\\)",
+   "\\(y = \\frac{2}{1}\\)"
   ]
  },
  {
@@ -21228,186 +21230,6 @@
   ]
  },
  {
-  "id": "y6-frac-q1",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{3}{8}$",
-  "options": [
-   "\\\\(\\frac{3}{8}\\\\)",
-   "\\\\(\\frac{5}{8}\\\\)",
-   "\\\\(\\frac{1}{3}\\\\)",
-   "\\\\(\\frac{3}{5}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q10",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$3\\frac{7}{12}$",
-  "options": [
-   "\\\\\\\\(3\\frac{7}{12}\\\\)",
-   "\\\\\\\\(3\\frac{2}{7}\\\\)",
-   "\\\\\\\\(4\\frac{1}{12}\\\\)",
-   "\\\\\\\\(3\\frac{5}{12}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q11",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{5}{8}$",
-  "options": [
-   "\\\\(\\frac{5}{8}\\\\)",
-   "\\\\(\\frac{6}{4}\\\\)",
-   "\\\\(\\frac{3}{8}\\\\)",
-   "\\\\(\\frac{1}{2}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q12",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$2\\frac{7}{10}$",
-  "options": [
-   "\\\\\\\\(2\\frac{7}{10}\\\\)",
-   "\\\\\\\\(3\\frac{3}{10}\\\\)",
-   "\\\\\\\\(2\\frac{3}{10}\\\\)",
-   "\\\\\\\\(3\\frac{7}{10}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q13",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{3}{10}$",
-  "options": [
-   "\\\\(\\frac{3}{10}\\\\)",
-   "\\\\(\\frac{12}{40}\\\\)",
-   "\\\\(\\frac{7}{13}\\\\)",
-   "\\\\(\\frac{3}{5}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q15",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$8",
-  "options": [
-   "\\\\$8",
-   "\\\\$10",
-   "\\\\$12",
-   "\\\\$18"
-  ]
- },
- {
-  "id": "y6-frac-q19",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$3\\frac{1}{3} \\text{ hours}$",
-  "options": [
-   "\\\\\\\\(3\\frac{1}{3} \\text{ hours}\\\\)",
-   "\\\\\\\\(3\\frac{2}{3} \\text{ hours}\\\\)",
-   "\\\\\\\\(2\\frac{1}{3} \\text{ hours}\\\\)",
-   "\\\\\\\\(1\\frac{2}{3} \\text{ hours}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q20",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{2}{15}$",
-  "options": [
-   "\\\\(\\frac{2}{15}\\\\)",
-   "\\\\(\\frac{1}{5}\\\\)",
-   "\\\\(\\frac{4}{15}\\\\)",
-   "\\\\(\\frac{1}{3}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q22",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{1}{4}$",
-  "options": [
-   "\\\\(\\frac{1}{4}\\\\)",
-   "\\\\(\\frac{1}{3}\\\\)",
-   "\\\\(\\frac{15}{100}\\\\)",
-   "\\\\(\\frac{3}{10}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q23",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{4}{7}$",
-  "options": [
-   "\\\\(\\frac{4}{7}\\\\)",
-   "\\\\(\\frac{1}{2}\\\\)",
-   "\\\\(\\frac{2}{3}\\\\)",
-   "\\\\(\\frac{4}{5}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q24",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{1}{2}$",
-  "options": [
-   "\\\\(\\frac{1}{2}\\\\)",
-   "\\\\(\\frac{3}{4}\\\\)",
-   "\\\\(\\frac{2}{3}\\\\)",
-   "\\\\(\\frac{1}{3}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q5",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{3}{4}$",
-  "options": [
-   "\\\\(\\frac{3}{4}\\\\)",
-   "\\\\(\\frac{9}{12}\\\\)",
-   "\\\\(\\frac{6}{8}\\\\)",
-   "\\\\(\\frac{2}{3}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q6",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{11}{4}$",
-  "options": [
-   "\\\\(\\frac{11}{4}\\\\)",
-   "\\\\(\\frac{9}{4}\\\\)",
-   "\\\\(\\frac{10}{4}\\\\)",
-   "\\\\(\\frac{5}{4}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q7",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$3\\frac{2}{5}$",
-  "options": [
-   "\\\\\\\\(3\\frac{2}{5}\\\\)",
-   "\\\\\\\\(3\\frac{3}{5}\\\\)",
-   "\\\\\\\\(2\\frac{7}{5}\\\\)",
-   "\\\\\\\\(4\\frac{2}{5}\\\\)"
-  ]
- },
- {
-  "id": "y6-frac-q9",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "$\\frac{7}{9}$",
-  "options": [
-   "\\\\(\\frac{7}{9}\\\\)",
-   "\\\\(\\frac{7}{18}\\\\)",
-   "\\\\(\\frac{10}{81}\\\\)",
-   "\\\\(\\frac{3}{9}\\\\)"
-  ]
- },
- {
   "id": "y7-1c-q3d1",
   "reason": "mc-answer-differs",
   "severity": "revision",
@@ -21424,18 +21246,6 @@
    "\\\\( -2 \\\\)",
    "\\\\( 8 \\\\)",
    "\\\\( 18 \\\\)"
-  ]
- },
- {
-  "id": "WTdiGhbvvzV2zz5hg8aw",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "\\\\(-20 °C\\\\)",
-  "options": [
-   "\\(-22 °C\\)",
-   "\\(-20 °C\\)",
-   "\\(-25 °C\\)",
-   "\\(22 °C\\)"
   ]
  },
  {
@@ -23547,6 +23357,25 @@
    "\\(0.\\dot{7}1428\\dot{5}\\)",
    "\\(0.\\dot{5}7142\\dot{8}\\)",
    "\\(0.\\dot{7}14285\\dot{7}\\)"
+  ]
+ },
+ {
+  "id": "y8-10g-q18c",
+  "reason": "mc-answer-differs",
+  "severity": "revision",
+  "fs": "\\(0.016\\)",
+  "seed": "\\(0.0\\)",
+  "fsOptions": [
+   "\\(0.016\\)",
+   "\\(1.6\\)",
+   "\\(160\\)",
+   "\\(0.16\\)"
+  ],
+  "seedOptions": [
+   "\\(0.016\\)",
+   "\\(0.0\\)",
+   "\\(0.0\\)",
+   "\\(0.2\\)"
   ]
  },
  {
@@ -26208,30 +26037,6 @@
    "$\\frac{2\\sqrt{3} - 2\\sqrt{2}}{2}$",
    "$\\sqrt{3} - \\sqrt{2}$",
    "$\\frac{\\sqrt{12} + 2\\sqrt{2}}{2}$"
-  ]
- },
- {
-  "id": "y10-1e-q9",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "1.56%",
-  "options": [
-   "\\(1.40\\%\\)",
-   "\\(1.64\\%\\)",
-   "\\(1.72\\%\\)",
-   "\\(1.56\\%\\)"
-  ]
- },
- {
-  "id": "y10-1e-q13",
-  "reason": "mc-answer-unresolvable",
-  "severity": "BROKEN",
-  "answer": "3.52%",
-  "options": [
-   "\\(3.52\\%\\)",
-   "\\(3.70\\%\\)",
-   "\\(3.87\\%\\)",
-   "\\(3.17\\%\\)"
   ]
  },
  {

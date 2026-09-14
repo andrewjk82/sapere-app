@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y10-6",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -1772,6 +1773,7 @@
         {
           "id": "jr2012-q16",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "A cube has a volume of \\(2\\,400\\,000\\text{ cm}^3\\). This is equivalent to:",
           "options": [
             "\\(240\\,000\\text{ m}^3\\)",
@@ -1801,6 +1803,7 @@
         {
           "id": "jr2013-q5",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The roof of a building has \\(1.056\\) million tiles. If each tile covers \\(175\\text{ cm}^2\\), the area covered by the tiles is:",
           "options": [
             "\\(1\\,848\\,000\\text{ m}^2\\)",
@@ -1837,6 +1840,7 @@
         {
           "id": "jrhy2008-q19",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "If the diameter of a sphere is increased by 15%, which of the following is true? a) Radius is increased by 15%. b) Surface area is increased by a factor matching \\((1.15)^2-1\\). c) Volume is increased by a factor matching \\((1.15)^3-1\\). d) Capacity is increased by the same factor as volume.",
           "options": [
             "None of the above",
@@ -1881,6 +1885,7 @@
         {
           "id": "jr2012-q19",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "One litre of water was used to make exactly 64 ice cubes of a certain size. Larger ice cubes with double the dimensions were then made. How many of the larger ice cubes can be made using one litre of water?",
           "options": [
             "\\(4\\)",

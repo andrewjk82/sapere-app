@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year12ach1h",
+      "synthetic": true,
       "code": "",
       "title": "The limiting sum of a geometric series",
       "questions": [

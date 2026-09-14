@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:surds",
+      "synthetic": true,
       "code": "2A",
       "title": "Real numbers and intervals",
       "questions": [

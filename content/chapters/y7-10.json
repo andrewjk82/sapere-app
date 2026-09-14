@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y7-10",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -1788,7 +1789,7 @@
             "\\(-25 °C\\)",
             "\\(22 °C\\)"
           ],
-          "answer": null,
+          "answer": 1,
           "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p><strong>Step 1:</strong> Identify the major temperature line below the top of the red liquid column.</p>\n      <p><strong>Step 2:</strong> Count the small division ticks (representing \\(1^\\circ\\text{C}\\) each) up or down to find the exact level.</p>\n      <p><strong>Step 3:</strong> For this thermometer, the liquid top lies exactly at \\(-22^\\circ\\text{C}\\).</p>\n    </div>",
           "steps": [
             {

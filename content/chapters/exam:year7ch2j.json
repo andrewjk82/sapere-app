@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year7ch2j",
+      "synthetic": true,
       "code": "",
       "title": "Revision",
       "questions": [

@@ -11,6 +11,7 @@
         {
           "id": "bb2020-q23",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "A discrete random variable \\(X\\) has the probability distribution shown below, where \\(m\\) is a constant.",
           "figure": {
             "svg": "fig:cb189500c7"
@@ -183,6 +184,7 @@
         {
           "id": "hg2020-q13",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "The discrete random variable \\(X\\) has the probability distribution shown below.",
           "figure": {
             "svg": "fig:020fd86451"
@@ -250,6 +252,7 @@
         {
           "id": "hillsgrammar-25-2u-q6",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A teacher asked fifty students to identify their favourite type of pet. A partially completed Pareto chart shows some of the data collected. How many students picked cats as their favourite pet?",
           "figure": {
             "svg": "fig:d1ba111e96"
@@ -285,6 +288,7 @@
         {
           "id": "hillsgrammar-25-2u-q28",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "A discrete random variable \\(X\\) has the probability distribution shown below, where \\(r\\) is a constant. Find \\(Var(X)\\).",
           "figure": {
             "svg": "fig:e2fa9579f3"
@@ -331,6 +335,7 @@
         {
           "id": "hillsgrammar-25-2u-q9",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The stem and leaf plot below shows the number of lollies that fourteen students in the class have eaten this week. Two students were absent when this data was collected. Once their data was added to the data of the rest of the class, the grouped frequency distribution table below was completed. The cumulative frequency for the \\(10-19\\) class is marked with \\(X\\). Which of the following values for \\(X\\) could be true?",
           "figure": {
             "svg": "fig:a84e96547c"

@@ -398,7 +398,12 @@
               }
             }
           ],
-          "answer": "1",
+          "options": [
+            "\\(|A|=3, |B|=2, A\\cup B=\\{1,2,4,5\\}, |A\\cup B|=4, A\\cap B=\\{2\\}, |A\\cap B|=1, \\overline{A}=\\{3,5,6\\}, \\overline{B}=\\{1,3,4,6\\}\\)",
+            "\\(|A|=3, |B|=2, A\\cup B=\\{1,2,4,5\\}, |A\\cup B|=4, A\\cap B=\\{2\\}, |A\\cap B|=2, \\overline{A}=\\{3,5,6\\}, \\overline{B}=\\{1,3,4,6\\}\\)",
+            "\\(|A|=3, |B|=2, A\\cup B=\\{1,2,4,5\\}, |A\\cup B|=4, A\\cap B=\\{2\\}, |A\\cap B|=1, \\overline{A}=\\{1,2,4\\}, \\overline{B}=\\{2,5\\}\\)",
+            "\\(|A|=2, |B|=3, A\\cup B=\\{1,2,4,5\\}, |A\\cup B|=4, A\\cap B=\\{2\\}, |A\\cap B|=1, \\overline{A}=\\{3,5,6\\}, \\overline{B}=\\{1,3,4,6\\}\\)"
+          ],
           "hint": "For the complement, remove the elements of the set from the universal set \\(E\\).",
           "solution": "|A|=3, |B|=2, A∪B={1,2,4,5}, |A∪B|=4, A∩B={2}, |A∩B|=1, Ā={3,5,6}, B̄={1,3,4,6}",
           "steps": [
@@ -534,7 +539,12 @@
               }
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\((a) \\(\\emptyset, \\{x\\}\\); (b) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{x, y\\}\\); (c) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{z\\}, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x, y, z\\}\\); (d) \\(\\emptyset\\)\\)",
+            "\\((a) \\(\\{x\\}\\); (b) \\(\\{x\\}, \\{y\\}, \\{x, y\\}\\); (c) \\(\\{x\\}, \\{y\\}, \\{z\\}, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x, y, z\\}\\); (d) \\(\\{0\\}\\)\\)",
+            "\\((a) \\(\\emptyset, \\{x\\}\\); (b) \\(\\emptyset, \\{x, y\\}\\); (c) \\(\\emptyset, \\{x, y, z\\}\\); (d) \\(\\emptyset\\)\\)",
+            "\\((a) \\(\\{x\\}, \\{-x\\}\\); (b) \\(\\{x\\}, \\{y\\}, \\{x, y\\}, \\{y, x\\}\\); (c) \\(\\emptyset, \\{x\\}, \\{y\\}, \\{z\\}, \\{x, y, z\\}\\); (d) \\(\\{\\emptyset\\}\\)\\)"
+          ],
           "hint": "A set with \\(n\\) elements has exactly \\(2^n\\) subsets. The empty set \\(\\emptyset\\) is always a subset.",
           "solution": "A set with \\(n\\) elements has \\(2^n\\) subsets, always including \\(\\emptyset\\) and itself.",
           "steps": [
@@ -652,7 +662,12 @@
               }
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\(\\(A \\cap B\\): students who play both tennis and basketball; \\(A \\cup B\\): students who play tennis or basketball (or both)\\)",
+            "\\(\\(A \\cap B\\): students who play tennis or basketball; \\(A \\cup B\\): students who play both sports\\)",
+            "\\(\\(A \\cap B\\): students who play tennis but not basketball; \\(A \\cup B\\): students who play basketball but not tennis\\)",
+            "\\(\\(A \\cap B\\): students who play neither sport; \\(A \\cup B\\): all students in the school\\)"
+          ],
           "hint": "Think: \\(\\cap\\) means AND (overlap); \\(\\cup\\) means OR (at least one).",
           "solution": "\\(A \\cap B\\) = both sports (AND); \\(A \\cup B\\) = at least one sport (OR).",
           "steps": [
@@ -728,7 +743,12 @@
               }
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\)",
+            "\\(A \\cup B = \\{\\text{y}\\}\\) and \\(A \\cap B = \\{\\text{a, c, l, n, r, u, y}\\}\\)",
+            "\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\) and \\(A \\cap B = \\emptyset\\)",
+            "\\(A \\cup B = \\{\\text{a, c, l, n, r, u}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\)"
+          ],
           "hint": "These are the letters of the names 'ryan' and 'lucy'. Look for a shared letter.",
           "solution": "\\(A \\cup B = \\{\\text{a,c,l,n,r,u,y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\).",
           "steps": [
@@ -966,7 +986,12 @@
               }
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\(\\(\\overline{A}\\): students who do not play violin; \\(\\overline{B}\\): students who do not sing in the choir; \\(A \\cup B\\): students who play violin or sing in the choir (or both); \\(A \\cap B\\): students who play violin and sing in the choir\\)",
+            "\\(\\(\\overline{A}\\): students who play violin; \\(\\overline{B}\\): students who sing in the choir; \\(A \\cup B\\): students who do neither; \\(A \\cap B\\): students who do both\\)",
+            "\\(\\(\\overline{A}\\): students who do not play violin; \\(\\overline{B}\\): students who do not sing in the choir; \\(A \\cup B\\): students who play violin AND sing in the choir; \\(A \\cap B\\): students who play violin OR sing in the choir\\)",
+            "\\(\\(\\overline{A}\\): students at another school; \\(\\overline{B}\\): all students at Oakridge; \\(A \\cup B\\): all students; \\(A \\cap B\\): no students\\)"
+          ],
           "hint": "The complement \\(\\overline{A}\\) consists of everyone in \\(E\\) who is NOT in \\(A\\).",
           "solution": "Option 1 correctly describes all four set operations.",
           "steps": [
@@ -1042,7 +1067,12 @@
               }
             }
           ],
-          "answer": "0",
+          "options": [
+            "\\(A \\cup B = \\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\) and \\(A \\cap B = \\{\\text{e, n}\\}\\)",
+            "\\(A \\cup B = \\{\\text{e, n}\\}\\) and \\(A \\cap B = \\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\)",
+            "\\(A \\cup B = \\{\\text{b, d, e, l, m, n, o, r, s, u, y}\\}\\) and \\(A \\cap B = \\{\\text{d, e, n}\\}\\)",
+            "\\(A \\cup B = \\{\\text{b, l, m, o, r, s, u, y}\\}\\) and \\(A \\cap B = \\{\\text{e, n}\\}\\)"
+          ],
           "hint": "These sets are the letters of 'sydney' and 'melbourne'. Which letters appear in both words?",
           "solution": "\\(A \\cup B = \\{\\text{b,d,e,l,m,n,o,r,s,u,y}\\}\\) and \\(A \\cap B = \\{\\text{e,n}\\}\\).",
           "steps": [
@@ -1207,6 +1237,7 @@
         {
           "id": "bb2020-q9",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A box contains 5 red marbles and 4 blue marbles (9 marbles in total). Stella selects 3 marbles at random without replacement. What is the probability that at least one of the marbles she selects is red?",
           "options": [
             "\\(\\dfrac{20}{21}\\)",
@@ -1240,6 +1271,7 @@
         {
           "id": "hillsgrammar-25-2u-q2",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "\\(A\\) and \\(B\\) are two independent events with \\(P(A) = \\frac{5}{8}\\) and \\(P(B) = \\frac{1}{6}\\). What is the value of \\(P(A \\cap B)\\)?",
           "options": [
             "\\(\\frac{5}{48}\\)",
@@ -1447,6 +1479,7 @@
         {
           "id": "hh2020-q19",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "A bag contains 9 blue lollies and 7 green lollies. Georgia takes out a lolly without looking and eats it, then takes out another lolly without looking and eats it.",
           "parts": [
             {
@@ -1515,6 +1548,7 @@
         {
           "id": "hillsgrammar-25-2u-q11a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Cody wins the first set against Sofia in two out of every seven tennis matches they play. If he wins the first set, he wins the second set three out of every five times, but if he loses the first set, he wins the second set one out of every five times. Complete the probability tree and find the probability that Cody loses both sets.",
           "options": [
             "\\(\\frac{4}{7}\\)",
@@ -1551,6 +1585,7 @@
         {
           "id": "hillsgrammar-25-2u-q11b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Cody wins the first set against Sofia in two out of every seven tennis matches they play. If he wins the first set, he wins the second set three out of every five times, but if he loses the first set, he wins the second set one out of every five times. Suppose Cody and Sofia play 70 matches in a year. In how many of those matches would Cody expect to win at least one set?",
           "options": [
             "30 matches",
@@ -1602,6 +1637,7 @@
         {
           "id": "hg2020-q8",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "\\(A\\) and \\(B\\) are events of a sample space. Given that \\(P(A|B)=4p\\), \\(P(B)=p^3\\) and \\(P(A)=2p^2\\), \\(P(B|A)\\) is equal to:",
           "options": [
             "\\(\\dfrac{p^2}{2}\\)",
@@ -1639,6 +1675,7 @@
         {
           "id": "hh2020-q4",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "\\(A\\) and \\(B\\) are events from a sample space such that \\(P(A)=p\\), where \\(p>0\\), \\(P(B|A)=m\\) and \\(P(B|A')=n\\). \\(A\\) and \\(B\\) are independent events when:",
           "options": [
             "\\(m+n=1\\)",

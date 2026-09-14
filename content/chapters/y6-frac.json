@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y6-frac",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -90,7 +91,7 @@
             "\\\\(\\frac{1}{3}\\\\)",
             "\\\\(\\frac{3}{5}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "The denominator is the total number of parts, and the numerator is the shaded parts.",
           "solution": "There are \\\\\\\\(8\\\\) equal parts in total, so the denominator is \\\\\\\\(8\\\\). Since \\\\\\\\(3\\\\) parts are shaded, the numerator is \\\\\\\\(3\\\\). The fraction is \\\\(\\frac{3}{8}\\\\).",
           "steps": [
@@ -157,7 +158,7 @@
             "\\\\(\\frac{6}{8}\\\\)",
             "\\\\(\\frac{2}{3}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Find the highest common factor (HCF) of \\\\\\\\(18\\\\) and \\\\\\\\(24\\\\) and divide both numbers by it.",
           "solution": "The highest common factor of \\\\\\\\(18\\\\) and \\\\\\\\(24\\\\) is \\\\\\\\(6\\\\). Dividing both the numerator and denominator by \\\\\\\\(6\\\\) gives \\\\(\\frac{18 \\div 6}{24 \\div 6} = \\frac{3}{4}\\\\).",
           "steps": [
@@ -189,7 +190,7 @@
             "\\\\(\\frac{10}{4}\\\\)",
             "\\\\(\\frac{5}{4}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Multiply the whole number by the denominator, then add the numerator.",
           "solution": "Multiply \\\\\\\\(2 \\times 4 = 8\\\\). Then add \\\\\\\\(3\\\\) to get \\\\\\\\(11\\\\). Keep the denominator the same. The answer is \\\\(\\frac{11}{4}\\\\).",
           "steps": [
@@ -218,7 +219,7 @@
             "\\\\\\\\(2\\frac{7}{5}\\\\)",
             "\\\\\\\\(4\\frac{2}{5}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Divide the numerator by the denominator to find the whole number and the remainder.",
           "solution": "\\\\\\\\(17\\\\) divided by \\\\\\\\(5\\\\) is \\\\\\\\(3\\\\) with a remainder of \\\\\\\\(2\\\\). So, it is \\\\\\\\(3\\\\) wholes and \\\\(\\frac{2}{5}\\\\) left over.",
           "steps": [
@@ -250,7 +251,7 @@
             "\\\\(\\frac{10}{81}\\\\)",
             "\\\\(\\frac{3}{9}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "When adding fractions with the same denominator, just add the numerators.",
           "solution": "Since the denominators are the same, add the numerators: \\\\\\\\(2 + 5 = 7\\\\). The denominator stays \\\\\\\\(9\\\\). The sum is \\\\(\\frac{7}{9}\\\\).",
           "steps": [
@@ -275,7 +276,7 @@
             "\\\\\\\\(4\\frac{1}{12}\\\\)",
             "\\\\\\\\(3\\frac{5}{12}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Add the whole numbers together, then add the fractions by finding a common denominator.",
           "solution": "First, add the whole numbers: \\\\\\\\(2 + 1 = 3\\\\). Next, add the fractions: \\\\(\\frac{1}{3} + \\frac{1}{4}\\\\). The common denominator is \\\\\\\\(12\\\\). \\\\(\\frac{1}{3} = \\frac{4}{12}\\\\) and \\\\(\\frac{1}{4} = \\frac{3}{12}\\\\). Add them: \\\\(\\frac{4}{12} + \\frac{3}{12} = \\frac{7}{12}\\\\). Combine with the whole number: \\\\\\\\(3\\frac{7}{12}\\\\).",
           "steps": [
@@ -308,7 +309,7 @@
             "\\\\(\\frac{3}{8}\\\\)",
             "\\\\(\\frac{1}{2}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Find a common denominator before subtracting.",
           "solution": "The lowest common denominator for \\\\\\\\(8\\\\) and \\\\\\\\(4\\\\) is \\\\\\\\(8\\\\). Convert \\\\(\\frac{1}{4}\\\\) to \\\\(\\frac{2}{8}\\\\). Now subtract: \\\\(\\frac{7}{8} - \\frac{2}{8} = \\frac{5}{8}\\\\).",
           "steps": [
@@ -337,7 +338,7 @@
             "\\\\\\\\(2\\frac{3}{10}\\\\)",
             "\\\\\\\\(3\\frac{7}{10}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Convert both mixed numbers to improper fractions, then find a common denominator.",
           "solution": "Convert to improper fractions: \\\\\\\\(4\\frac{1}{5} = \\frac{21}{5}\\\\) and \\\\\\\\(1\\frac{1}{2} = \\frac{3}{2}\\\\). Common denominator is \\\\\\\\(10\\\\). \\\\(\\frac{21}{5} = \\frac{42}{10}\\\\) and \\\\(\\frac{3}{2} = \\frac{15}{10}\\\\). Subtract: \\\\(\\frac{42}{10} - \\frac{15}{10} = \\frac{27}{10}\\\\). Convert back to a mixed number: \\\\\\\\(2\\frac{7}{10}\\\\).",
           "steps": [
@@ -370,7 +371,7 @@
             "\\\\(\\frac{7}{13}\\\\)",
             "\\\\(\\frac{3}{5}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Multiply the numerators together and the denominators together, then simplify.",
           "solution": "Multiply numerators: \\\\\\\\(4 \\times 3 = 12\\\\). Multiply denominators: \\\\\\\\(5 \\times 8 = 40\\\\). The fraction is \\\\(\\frac{12}{40}\\\\). Simplify by dividing top and bottom by \\\\\\\\(4\\\\) to get \\\\(\\frac{3}{10}\\\\).",
           "steps": [
@@ -431,7 +432,7 @@
             "\\\\$12",
             "\\\\$18"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Calculate how much she spent on the movie and t-shirt, then subtract the total spent from \\\\$30.",
           "solution": "Movie: \\\\(\\frac{1}{3}\\\\) of \\\\(\\\\$30 = \\\\$10\\\\). T-shirt: \\\\(\\frac{2}{5}\\\\) of \\\\(\\\\$30 = \\\\$30 \\div 5 \\times 2 = \\\\$12\\\\). Total spent = \\\\(\\\\$10 + \\\\$12 = \\\\$22\\\\). Money left = \\\\(\\\\$30 - \\\\$22 = \\\\$8\\\\).",
           "steps": [
@@ -493,7 +494,7 @@
             "\\\\\\\\(2\\frac{1}{3} \\text{ hours}\\\\)",
             "\\\\\\\\(1\\frac{2}{3} \\text{ hours}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "Multiply the time taken for one page by the total number of pages.",
           "solution": "Multiply \\\\(\\frac{2}{3} \\times 5\\\\). This gives \\\\(\\frac{10}{3}\\\\). Convert the improper fraction back to a mixed numeral: \\\\\\\\(10 \\div 3 = 3\\\\) remainder \\\\(1\\\\). So, it takes \\\\\\\\(3\\frac{1}{3}\\\\) hours.",
           "steps": [
@@ -522,7 +523,7 @@
             "\\\\(\\frac{4}{15}\\\\)",
             "\\\\(\\frac{1}{3}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "First, find the fraction that is the 'remainder'. Then multiply that remainder by the fraction she spends on snacks.",
           "solution": "If she saves \\\\(\\frac{3}{5}\\\\), the remainder is \\\\\\\\(1 - \\frac{3}{5} = \\frac{2}{5}\\\\). She spends \\\\(\\frac{1}{3}\\\\) of this remainder on snacks. Multiply: \\\\(\\frac{1}{3} \\times \\frac{2}{5} = \\frac{2}{15}\\\\). She spends \\\\(\\frac{2}{15}\\\\) of her total allowance on snacks.",
           "steps": [
@@ -551,7 +552,7 @@
             "\\\\(\\frac{15}{100}\\\\)",
             "\\\\(\\frac{3}{10}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "There are \\\\\\\\(60\\\\) minutes in \\\\(1\\\\) hour. Put the minutes over \\\\\\\\(60\\\\) and simplify.",
           "solution": "\\\\(1\\\\) hour \\\\(= 60\\\\) minutes. The fraction is \\\\(\\frac{15}{60}\\\\). Divide the numerator and denominator by \\\\\\\\(15\\\\) to simplify: \\\\(\\frac{1}{4}\\\\).",
           "steps": [
@@ -580,7 +581,7 @@
             "\\\\(\\frac{2}{3}\\\\)",
             "\\\\(\\frac{4}{5}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "How many days are in a week? Use that as the denominator.",
           "solution": "There are \\\\(7\\\\) days in a week. The fraction of the week is \\\\(\\frac{4}{7}\\\\).",
           "steps": [
@@ -605,7 +606,7 @@
             "\\\\(\\frac{2}{3}\\\\)",
             "\\\\(\\frac{1}{3}\\\\)"
           ],
-          "answer": null,
+          "answer": 0,
           "hint": "First, find the total fraction of games won. Then multiply it by the fraction of wins that were by more than 5 points.",
           "solution": "The fraction of matches won is \\\\(\\frac{16}{24}\\\\), which simplifies to \\\\(\\frac{2}{3}\\\\). We are told \\\\(\\frac{3}{4}\\\\) of these wins were by more than \\\\\\\\(5\\\\) points. Multiply the two fractions: \\\\(\\frac{2}{3} \\times \\frac{3}{4} = \\frac{6}{12} = \\frac{1}{2}\\\\). So, \\\\(\\frac{1}{2}\\\\) of all matches were won by more than \\\\\\\\(5\\\\) points.",
           "steps": [

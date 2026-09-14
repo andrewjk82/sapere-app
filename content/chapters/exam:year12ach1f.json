@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year12ach1f",
+      "synthetic": true,
       "code": "",
       "title": "Summing an arithmetic series",
       "questions": [

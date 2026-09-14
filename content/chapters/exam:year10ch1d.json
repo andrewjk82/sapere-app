@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year10ch1d",
+      "synthetic": true,
       "code": "",
       "title": "Compound interest",
       "questions": [

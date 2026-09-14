@@ -73,7 +73,7 @@ for (const f of fs.readdirSync(SRC).filter((x) => x.endsWith('.json')).sort(natu
       if (q.hscType) (hscTypes[q.hscType] ||= []).push(q.id);
       for (const other of q.alsoIn || []) ((extra[other] ||= {})[t.topicId] ||= []).push(q.id);
     }
-    const body = JSON.stringify({ topicId: t.topicId, chapterId: ch.chapterId, code: t.code, title: t.title, questions: active.map(inlineQuestion) });
+    const body = JSON.stringify({ topicId: t.topicId, ...(t.synthetic ? { synthetic: true } : {}), chapterId: ch.chapterId, chapterTitle: ch.title, year: ch.year, code: t.code, title: t.title, questions: active.map(inlineQuestion) });
     const h = sha(body);
     const name = `topics/${fileSafe(ch.chapterId)}__${fileSafe(t.topicId)}.${h}.json`;
     fs.writeFileSync(path.join(OUT, name), body); bytes += body.length;

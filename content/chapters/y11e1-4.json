@@ -2419,7 +2419,14 @@
               "timeLimit": 60
             }
           ],
-          "answer": "Refer to solution steps for parts a, b, c, and d.",
+          "options": [
+            "Information insufficient",
+            "Refer to solution steps for parts a, b, c, and d.",
+            "None of the above",
+            "Cannot be determined"
+          ],
+          "mc": true,
+          "answer": 1,
           "solution": "See detailed steps below.",
           "timeLimit": 90
         },
@@ -2778,7 +2785,14 @@
               ]
             }
           ],
-          "answer": "Complete the proofs for parts a, b, c, and d.",
+          "options": [
+            "Complete the proofs for parts a, b, c, and d.",
+            "Cannot evaluate",
+            "Cannot be determined",
+            "None of the above"
+          ],
+          "mc": true,
+          "answer": 0,
           "solution": "See detailed steps below.",
           "manual": true
         },
@@ -3145,7 +3159,14 @@
               "timeLimit": 90
             }
           ],
-          "answer": "Refer to parts a and b for verification.",
+          "options": [
+            "Cannot be determined",
+            "None of the above",
+            "Refer to parts a and b for verification.",
+            "Cannot evaluate"
+          ],
+          "mc": true,
+          "answer": 2,
           "solution": "See detailed steps below.",
           "timeLimit": 90
         },
@@ -3215,7 +3236,14 @@
               "timeLimit": 90
             }
           ],
-          "answer": "Refer to parts a and b for the final answers.",
+          "options": [
+            "Refer to parts a and b for the final answers.",
+            "None of the above",
+            "Cannot be determined",
+            "Not enough data"
+          ],
+          "mc": true,
+          "answer": 0,
           "solution": "See detailed steps below."
         },
         {
@@ -3276,7 +3304,14 @@
               ]
             }
           ],
-          "answer": "Refer to parts a and b for the final expressions.",
+          "options": [
+            "None of the above",
+            "Cannot be determined",
+            "Refer to parts a and b for the final expressions.",
+            "Cannot evaluate"
+          ],
+          "mc": true,
+          "answer": 2,
           "solution": "See detailed steps below."
         },
         {
@@ -3418,7 +3453,14 @@
               ]
             }
           ],
-          "answer": "Refer to proof steps for parts a and b.",
+          "options": [
+            "Information insufficient",
+            "Refer to proof steps for parts a and b.",
+            "Cannot be determined",
+            "None of the above"
+          ],
+          "mc": true,
+          "answer": 1,
           "solution": "See detailed steps below.",
           "manual": true
         },

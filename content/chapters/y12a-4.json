@@ -11,6 +11,7 @@
         {
           "id": "bb2020-q21",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "What is \\(\\displaystyle\\int_0^2 \\sqrt{4x+1}\\,dx\\)?",
           "options": [
             "\\(\\dfrac{9}{2}\\)",
@@ -204,6 +205,7 @@
         {
           "id": "bb2020-q17a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the primitive function of \\(\\displaystyle\\int (5x+3)^{19}\\,dx\\).",
           "options": [
             "\\(\\dfrac{(5x+3)^{20}}{20}+C\\)",
@@ -233,6 +235,7 @@
         {
           "id": "bb2020-q17b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the primitive function of \\(\\displaystyle\\int \\left(2x^3+\\dfrac{1}{3x+1}\\right)dx\\).",
           "options": [
             "\\(\\dfrac{x^4}{2}+3\\ln|3x+1|+C\\)",
@@ -266,6 +269,7 @@
         {
           "id": "bb2020-q17c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the primitive function of \\(\\displaystyle\\int \\left(\\sin 10x - \\dfrac{2}{e^{5x}}\\right)dx\\).",
           "options": [
             "\\(-\\dfrac{1}{10}\\cos 10x+\\dfrac{2}{5}e^{-5x}+C\\)",
@@ -403,6 +407,7 @@
         {
           "id": "hg2020-q14",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Find \\(\\displaystyle\\int \\left(6x^2+2+x^{-1/2}\\right)dx\\), giving each term in its simplest form.",
           "options": [
             "\\(2x^3+2x-2x^{-3/2}+C\\)",
@@ -443,6 +448,7 @@
         {
           "id": "hg2020-q20",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The diagram shows the curve \\(y=x^3-5x^2+2x+8\\). Find the shaded area enclosed by the curve and the coordinate axes (between \\(x=0\\) and the curve's next positive \\(x\\)-intercept).",
           "figure": {
             "svg": "fig:34d3b8cb87"
@@ -486,6 +492,7 @@
         {
           "id": "hg2020-q32",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Consider the graph of \\(y=\\ln(x+r)\\) shown below, where \\(r>1\\). The shaded region bound by the curve, the coordinate axes and the line \\(x=t\\) (where \\(t>0\\)) is used to model a garden.",
           "figure": {
             "svg": "fig:f0775c38f6"
@@ -563,6 +570,7 @@
         {
           "id": "bb2020-q10",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The diagram shows two curves, \\(y=f(x)\\) (dashed, upper) and \\(y=g(x)\\) (solid, lower), with \\(f(x) \\ge g(x)\\) for all \\(x\\) between \\(x=a\\) and \\(x=d\\). The shaded region lies between the two curves from \\(x=a\\) to \\(x=d\\). Which expression represents the area of the shaded region?",
           "figure": {
             "svg": "fig:2c37216936"
@@ -598,6 +606,7 @@
         {
           "id": "bb2020-q29",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "The diagram below shows the graphs of \\(y=5-x\\) and \\(y=\\dfrac{4}{2x-1}\\), which intersect at points \\(A\\) and \\(B\\), with the shaded region between them.",
           "figure": {
             "svg": "fig:5862200143"
@@ -691,6 +700,7 @@
         {
           "id": "hillsgrammar-25-2u-q31",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The curve \\(y=\\sqrt{x}\\) intersects the curve \\(y=\\frac{8}{x}\\) at \\((4,2)\\). The region bounded by \\(y=\\sqrt{x}\\), \\(y=\\frac{8}{x}\\), the line \\(x=8\\), and the \\(x\\)-axis is shaded. What is the exact area of the shaded region?",
           "options": [
             "\\(\\frac{8(2+3\\ln 2)}{3}\\)",
@@ -742,6 +752,7 @@
         {
           "id": "bb2020-q24",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "Consider the function \\(y = \\log_e(2^x - x)\\). The table below shows values of \\(y\\) for \\(x=1, 1.5, 2, 2.5, 3\\), where one value is missing.",
           "figure": {
             "svg": "fig:e9bb6218b5"
@@ -994,6 +1005,7 @@
         {
           "id": "hg2020-q26",
           "type": "review",
+          "difficulty": "medium",
           "stem": "A symmetrical lake has two straight roads, 420 metres apart, forming two of its sides. Equally spaced measurements of the width of the lake (perpendicular to the roads) are 30, 40, 60, 80, 60, 40, 30 metres, as shown.",
           "figure": {
             "svg": "fig:e890d184e1"
@@ -1034,6 +1046,7 @@
         {
           "id": "hh2020-q26",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "A field (shaded) is bordered on one side by 120 metres of road and on the other side by a river. Equally spaced measurements from the road to the river are: \\(x, 50.6, 45.8, 30.0, 32.5\\) metres (5 measurements, 4 equal strips of 30 m each).",
           "figure": {
             "svg": "fig:6f65119a77"
@@ -1111,6 +1124,7 @@
         {
           "id": "hillsgrammar-25-2u-q15",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Use two applications of the trapezoidal rule to find an approximate value, correct to two decimal places, for \\(\\int_1^3 \\ln(x^2+1)\\,dx\\).",
           "options": [
             "\\(3.00\\)",
@@ -1158,6 +1172,7 @@
         {
           "id": "hillsgrammar-25-2u-q23",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find \\(\\displaystyle\\int \\dfrac{6x^2+1}{2x^3+x+1}\\,dx\\).",
           "options": [
             "\\(\\ln|2x^3+x+1|+c\\)",

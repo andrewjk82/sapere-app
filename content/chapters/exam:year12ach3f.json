@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year12ach3f",
+      "synthetic": true,
       "code": "",
       "title": "Global maximum and minimum",
       "questions": [

@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:fortst2020",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [

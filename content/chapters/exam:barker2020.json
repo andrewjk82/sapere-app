@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:barker2020",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [

@@ -44,6 +44,12 @@
           "difficulty": "medium",
           "stem": "Simplify the expression: \\\\(\\\\cot \\\\theta \\\\sec \\\\theta\\\\)",
           "answer": "\\(\\text{cosec } \\theta\\)",
+          "options": [
+            "\\(\\text{cosec } \\theta\\)",
+            "\\(\\sin \\theta\\)",
+            "\\(\\cos \\theta\\)",
+            "\\(\\tan \\theta\\)"
+          ],
           "hint": "Rewrite cotangent and secant in terms of sine and cosine.",
           "solution": "\\(\\text{cosec } \\theta\\)",
           "steps": [

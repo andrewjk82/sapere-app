@@ -11,6 +11,7 @@
         {
           "id": "sg2022-q1e",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Use your calculator to find \\(\\cos32°\\). Give your answer correct to three decimal places.",
           "options": [
             "\\(0.625\\)",
@@ -230,6 +231,7 @@
         {
           "id": "sg2022-q8c",
           "type": "review",
+          "difficulty": "hard",
           "stem": "An engineer erects a vertical radio mast on horizontal ground at \\(O\\). Three wires from point \\(A\\) are fixed to the mast at points \\(X\\), \\(Y\\) and \\(Z\\). The wires form straight lines and \\(XY=YZ\\). (i) Prove that \\(OY=\\dfrac12(OX+OZ)\\). (ii) Hence prove that \\(\\tan(\\angle XAO)+\\tan(\\angle ZAO)=2\\tan(\\angle YAO)\\).",
           "answer": "",
           "hint": "For (i), X, Y, Z are points on a vertical line, so use basic 1D distance properties. For (ii), use right-angled triangles AOX, AOY, AOZ to write the tangent ratios.",
@@ -280,6 +282,7 @@
         {
           "id": "ch9t3-q4a",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Find the value of \\(x\\), correct to the nearest whole number, in each triangle.\n\nA right triangle has the \\(42°\\) angle at the bottom, adjacent side \\(11\\text{ cm}\\), and opposite side \\(x\\text{ cm}\\).",
           "figure": {
             "svg": "fig:cc8805c33c"
@@ -320,6 +323,7 @@
         {
           "id": "ch9t3-q4b",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Find the value of \\(x\\), correct to the nearest whole number, in each triangle.\n\nA right triangle has hypotenuse \\(24\\text{ cm}\\), adjacent side \\(16\\text{ cm}\\) (both meeting at the angle \\(x°\\)).",
           "figure": {
             "svg": "fig:e8a8201f13"
@@ -360,6 +364,7 @@
         {
           "id": "ch9t3-q5",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "In a right triangle with hypotenuse 12 and \\(\\sin\\theta=\\dfrac14\\) (\\(\\theta\\) at the top vertex), find the exact value of \\(\\cos\\theta\\), without using a calculator.",
           "options": [
             "\\(\\dfrac{3\\sqrt{15}}{12}\\)",
@@ -397,6 +402,7 @@
         {
           "id": "ch9t3-q8",
           "type": "review",
+          "difficulty": "medium",
           "stem": "By considering a right-angled triangle, explain why \\(\\sin\\theta\\) can never equal \\(\\dfrac95\\).",
           "answer": "",
           "steps": [
@@ -424,6 +430,7 @@
         {
           "id": "mrcroker-q1a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "In the right triangle shown, find \\(x\\) correct to one decimal place.",
           "figure": {
             "svg": "fig:8cbf3b0ed1"
@@ -461,6 +468,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q1a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Calculate the value of the pronumeral \\(b\\) in the right-angled triangle. The hypotenuse is 8.7 cm and the angle is 39°. Give your answer to one decimal place.",
           "options": [
             "\\(7.1 \\text{ cm}\\)",
@@ -497,6 +505,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q1b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Calculate the value of the pronumeral \\(w\\) in the right-angled triangle. Give your answer to four significant figures.",
           "options": [
             "\\(4.58 \\text{ m}\\)",
@@ -533,6 +542,7 @@
         {
           "id": "y9-willoughby-19-t1q1a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the value of the pro-numeral $y$ correct to 2 decimal places.",
           "figure": {
             "svg": "fig:a6d8419f47"
@@ -575,6 +585,7 @@
         {
           "id": "y9-willoughby-19-t1q1b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the value of the pro-numeral $x$ correct to 2 decimal places.",
           "figure": {
             "svg": "fig:2729313c27"
@@ -624,6 +635,7 @@
         {
           "id": "mrcroker-q1b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "In the right triangle shown (hypotenuse \\(27\\), adjacent side \\(23\\)), find \\(\\theta\\) correct to the nearest degree.",
           "figure": {
             "svg": "fig:a8be803109"
@@ -661,6 +673,7 @@
         {
           "id": "mrcroker-q3b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A triangle has sides of length \\(48\\text{ cm}\\), \\(55\\text{ cm}\\) and \\(73\\text{ cm}\\), and is right-angled (with the right angle opposite the \\(73\\text{ cm}\\) side). Find the smallest angle in the triangle, correct to the nearest degree.",
           "options": [
             "\\(34°\\)",
@@ -692,6 +705,7 @@
         {
           "id": "sg2022-q1h",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Given \\(\\tan\\theta=1.804\\), find \\(\\theta\\). Give your answer correct to the nearest degree.",
           "options": [
             "\\(56°\\)",
@@ -721,6 +735,7 @@
         {
           "id": "sg2022-q3g",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "In the triangle shown, \\(\\angle A=90°\\), \\(AC=12\\text{ cm}\\) and \\(AB=5\\text{ cm}\\). Find the angle \\(\\theta\\), correct to the nearest degree.",
           "figure": {
             "svg": "fig:67f46d2d14"
@@ -760,6 +775,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q1c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Calculate the value of the pronumeral \\(\\theta\\) in the right-angled triangle. Give your answer to the nearest minute.",
           "options": [
             "\\(42^\\circ 0'\\)",
@@ -796,6 +812,7 @@
         {
           "id": "y9-willoughby-19-t1q2",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find $\\theta$ correct to the nearest degree.",
           "figure": {
             "svg": "fig:c2d9b8ad07"
@@ -845,6 +862,7 @@
         {
           "id": "ch9t3-q6",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A ladder \\(AB\\) is leaning against a wall, touching it at height \\(BC=3.5\\text{ m}\\), with \\(\\angle ABC=30°35'\\) (the angle between the ladder and the wall). Find the length of the ladder, \\(AB\\), rounded to 2 decimal places.",
           "options": [
             "\\(2.07\\text{ m}\\)",
@@ -887,6 +905,7 @@
         {
           "id": "ch9t3-q7",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "A ramp is placed on top of a set of 3 stairs (each step 13 cm high and 30 cm deep — so the stairs are 39 cm tall and 60 cm deep in total), sloping down at \\(5°\\) to the ground. Find the extra horizontal distance \\(d\\) covered by the ramp beyond the base of the stairs, correct to 2 decimal places.",
           "figure": {
             "svg": "fig:0945508142"
@@ -930,6 +949,7 @@
         {
           "id": "ch9t3-q9",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "A pyramid \\(VABCD\\) has a square base of side length 8 cm. \\(M\\) is the midpoint of diagonal \\(AC\\), and \\(VM\\) (the perpendicular height) is 10 cm. Calculate the size of \\(\\angle VAM\\), correct to the nearest degree.",
           "figure": {
             "svg": "fig:5ccbf204f6"
@@ -973,6 +993,7 @@
         {
           "id": "ch9t3-q11",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "A submarine dives from the ocean surface at an angle of \\(22°\\). It travels a diagonal distance of 650 metres before reaching the bottom. Find the depth of the ocean, correct to the nearest whole number.",
           "options": [
             "\\(696\\text{ m}\\)",
@@ -1006,6 +1027,7 @@
         {
           "id": "mrcroker-q4",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "A large flagpole \\(AB\\) stands on top of a building. From \\(D\\), located \\(50\\) metres from \\(C\\), the angle of elevation to the top of the building is \\(45°\\). The angle of elevation from \\(D\\) to the top of the flagpole is \\(48°\\). Let \\(b\\) be the height of the building, and \\(f\\) be the length of the flagpole. Find the height of the flagpole, correct to the nearest metre.",
           "figure": {
             "svg": "fig:143675c4e6"
@@ -1050,6 +1072,7 @@
         {
           "id": "mrcroker-q7ii",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "In the rectangular prism shown, \\(FH=10\\text{ cm}\\) (the diagonal of the base) and \\(\\angle BHF=60°\\). Hence, find the length of \\(BH\\).",
           "figure": {
             "svg": "fig:d50af71c83"
@@ -1087,6 +1110,7 @@
         {
           "id": "sg2022-q2d",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "In \\(\\triangle ABC\\), \\(\\angle C=90°\\), \\(\\angle A=70°\\) and \\(AB=20\\text{ cm}\\), as shown. Find the value of \\(x\\), correct to one decimal place.",
           "figure": {
             "svg": "fig:16454044f7"
@@ -1126,6 +1150,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q3a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A young boy is flying a kite at an angle of elevation of \\(50^\\circ\\) with a string of length 35m. His hand holding the string is 1.2m above the ground. Calculate the approximate height of the kite above the ground (nearest metre).",
           "options": [
             "\\(35 \\text{ m}\\)",
@@ -1162,6 +1187,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q3b",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A young boy is flying a kite at an angle of elevation of \\(50^\\circ\\) with a string of length 35m. Find the horizontal distance (\\(d\\)) the boy is from the kite. Answer to one decimal place.",
           "options": [
             "\\(22.5 \\text{ m}\\)",
@@ -1194,6 +1220,7 @@
         {
           "id": "y9-willoughby-19-t1q4",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A man standing on a vertical cliff 52 metres high, notices a shark in the water. If the angle of depression is $41^\\circ 17'$, how far is the shark from the base of the cliff? (to the nearest metre)",
           "figure": {
             "svg": "fig:a17aba8e04"
@@ -1241,6 +1268,7 @@
         {
           "id": "ch9t3-q10",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "Point \\(A\\) is shown on a diagram, at \\(28°\\) measured from due South, on the South-East side. (a) What is the compass bearing of point \\(A\\) from \\(O\\)? (b) Find the true bearing of \\(O\\) from \\(A\\).",
           "parts": [
             {
@@ -1307,6 +1335,7 @@
         {
           "id": "ch9t3-q12",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Allen and Ben were camping at site \\(P\\). Allen walked on a bearing of \\(035°\\text{T}\\) for 7 km to location \\(A\\). Ben walked on a bearing of \\(125°\\text{T}\\) for 9 km to location \\(B\\).",
           "figure": {
             "svg": "fig:e999b00bf1"
@@ -1381,6 +1410,7 @@
         {
           "id": "mrcroker-q2",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Town \\(A\\) is \\(2.6\\text{ km}\\) east of Town \\(C\\). Town \\(C\\) is \\(1.7\\text{ km}\\) due south of Town \\(B\\). Find the bearing of Town \\(B\\) from Town \\(A\\), correct to the nearest degree.",
           "options": [
             "\\(123°\\text{T}\\)",
@@ -1418,6 +1448,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q2ii",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A boat sails from Sydney (S) and travels on a bearing of \\(130^\\circ \\text{T}\\) for 285 km to a port P. How far east is port P from Sydney? Answer to the nearest km.",
           "options": [
             "\\(218 \\text{ km}\\)",
@@ -1454,6 +1485,7 @@
         {
           "id": "y9-willoughby-17-y-pc-q2iii",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A boat sails from Sydney (S) and travels on a bearing of \\(130^\\circ \\text{T}\\) for 285 km to a port P. What is the bearing of Sydney from port P?",
           "options": [
             "\\(310^\\circ \\text{T}\\)",
@@ -1478,6 +1510,7 @@
         {
           "id": "y9-willoughby-19-t1q3",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "A plane flies from Melbourne at a bearing of \\(310^\\circ\\). After flying 600km it is at a point P.",
           "parts": [
             {

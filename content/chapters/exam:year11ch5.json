@@ -1868,6 +1868,12 @@
           "difficulty": "easy",
           "stem": "Consider the function \\(h(x) = x^3 + 2x^2 - 4\\).\n**a)** Simplify \\(h(-x)\\).\n**b)** Hence, show algebraically that \\(h(x)\\) is neither even nor odd.",
           "answer": "See solution steps.",
+          "options": [
+            "\\(h(-x) = x^3 - 2x^2 - 4\\); Even",
+            "\\(h(-x) = -x^3 - 2x^2 + 4\\); Odd",
+            "\\(h(-x) = -x^3 + 2x^2 - 4\\); Neither",
+            "\\(h(-x) = x^3 + 2x^2 - 4\\); Even"
+          ],
           "hint": "Show that \\(h(-x)\\) is not equal to \\(h(x)\\) and not equal to \\(-h(x)\\).",
           "solution": "See solution steps.",
           "steps": [
@@ -1897,6 +1903,12 @@
           "difficulty": "medium",
           "stem": "Factor the polynomial \\(f(x) = x^5 - 25x\\) and write down its zeroes. Then sketch its graph to visually confirm it exhibits the expected symmetry for an **odd** function.",
           "answer": "Zeroes at x=0, 5, -5 (plus complex roots).\nActually, x(x^4-25)=x(x^2-5)(x^2+5).\nRoots 0, sqrt(5), -sqrt(5).",
+          "options": [
+            "\\(x(x^2-5)(x^2+5)\\); real zeroes at \\(x = 0, \\sqrt{5}, -\\sqrt{5}\\)",
+            "\\(x(x-5)(x+5)\\); real zeroes at \\(x = 0, 5, -5\\)",
+            "\\(x^3(x-5)(x+5)\\); real zeroes at \\(x = 0, 5, -5\\)",
+            "\\(x(x^2-25)\\); real zeroes at \\(x = 0, 25\\)"
+          ],
           "hint": "Factor out \\(x\\), then use difference of two squares.",
           "solution": "Zeroes at x=0, 5, -5 (plus complex roots).\nActually, x(x^4-25)=x(x^2-5)(x^2+5).\nRoots 0, sqrt(5), -sqrt(5).",
           "steps": [

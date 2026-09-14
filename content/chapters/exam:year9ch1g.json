@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year9ch1g",
+      "synthetic": true,
       "code": "",
       "title": "Difference of two squares",
       "questions": [

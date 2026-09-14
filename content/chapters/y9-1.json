@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y9-1",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -2972,6 +2973,7 @@
         {
           "id": "sg2022-q1b",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "If \\(a=-4\\) and \\(b=2\\), evaluate \\(\\dfrac{a^2}{b}\\).",
           "options": [
             "\\(-4\\)",
@@ -20063,6 +20065,7 @@
         {
           "id": "ch9t3-q13b",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Expand and simplify the following expressions.\n\n\\((x+4)(5x-1)\\)",
           "options": [
             "\\(5x^2-19x-4\\)",
@@ -20093,6 +20096,7 @@
         {
           "id": "ch9t3-q16",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Write an expression for the area of the composite (L-shaped) figure shown, with the small rectangle \\((2c+1)\\) wide and \\(4\\) tall, sitting beside a taller rectangle \\((9-c)\\) tall, together spanning \\((3c+4)\\) across the base. Leave your answer in simplest expanded form.",
           "figure": {
             "svg": "fig:54603d1383"
@@ -20136,6 +20140,7 @@
         {
           "id": "sg2022-q3c",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Which expression is equivalent to \\((x+2)(x+4)-(x-2)(x-5)\\)?",
           "options": [
             "\\(-2-x\\)",
@@ -27647,6 +27652,7 @@
         {
           "id": "y9-killara-24-t4-pc-t2q7",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Find the values for \\(A\\), \\(B\\), and \\(C\\) if \\(y^2 - 6x + 16y + 94 = (y + C)^2 - B(x + A)\\)",
           "options": [
             "\\(A = -5, B = 6, C = 8\\)",
@@ -27691,6 +27697,7 @@
         {
           "id": "y9-willoughby-19-t3q1",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "Expand and simplify if possible:",
           "parts": [
             {

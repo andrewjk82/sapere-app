@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year7ch1b",
+      "synthetic": true,
       "code": "",
       "title": "Parity Rules",
       "questions": [

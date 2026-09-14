@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year9ch11c",
+      "synthetic": true,
       "code": "",
       "title": "The gradient of a line",
       "questions": [

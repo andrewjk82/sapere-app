@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y10-3",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -2273,6 +2274,7 @@
         {
           "id": "jrhy2008-q1",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "Expand and simplify: \\((3k-1)-2(k-5)\\)",
           "options": [
             "\\(k+9\\)",
@@ -4205,6 +4207,7 @@
         {
           "id": "jr2012-q27",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "If \\(x>0\\), which of the following must always be less than one?",
           "options": [
             "\\(\\dfrac{1+x}{x}\\)",
@@ -6385,6 +6388,7 @@
         {
           "id": "jr2012-q8",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "The value of \\(x\\) which satisfies the equation \\(\\dfrac{3}{\\left(2-\\frac{x}{2}\\right)}=2\\) is:",
           "options": [
             "\\(\\dfrac12\\)",
@@ -6414,6 +6418,7 @@
         {
           "id": "jr2012-q18",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "If \\(-2.4 < x < -1.5\\) and \\(0 < p < 2\\), then:",
           "options": [
             "\\(-4.8 < px < 0\\)",
@@ -8122,6 +8127,7 @@
         {
           "id": "jr2012-q6",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "If \\(G = H+\\sqrt{\\dfrac4L}\\), and \\(L>0\\) and \\(G>H\\), then \\(L\\) equals:",
           "options": [
             "\\(\\dfrac{4}{G^2-H^2}\\)",
@@ -8155,6 +8161,7 @@
         {
           "id": "jrhy2008-q33",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "Question 33 — making a formula subject, sketching a trig graph, and a pendulum proportionality problem (parts a–c).",
           "parts": [
             {
@@ -10059,6 +10066,7 @@
         {
           "id": "jr2012-q34a",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Factorise the expression \\(x^2-a^2+4y^2+4xy-b^2+2ab\\) into the product of two factors.",
           "options": [
             "\\((x+2y-a+b)(x+2y+a-b)\\)",
@@ -11955,6 +11963,7 @@
         {
           "id": "jrhy2008-q24",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Solve for \\(x\\): \\(\\dfrac{3}{2x-3} = \\dfrac{5}{2+x}\\)",
           "options": [
             "\\(4\\)",

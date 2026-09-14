@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year10ch1c",
+      "synthetic": true,
       "code": "",
       "title": "Repeated increases and decreases",
       "questions": [

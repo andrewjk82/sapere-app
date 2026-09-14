@@ -11,6 +11,7 @@
         {
           "id": "jr2013-q8",
           "type": "mc",
+          "difficulty": "easy",
           "stem": "The number of terms in the series \\(\\displaystyle\\sum_{r=28}^{57}(2r+1)\\) is:",
           "options": [
             "\\(28\\)",
@@ -47,6 +48,7 @@
         {
           "id": "jr2013-qCe",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "(e) A sequence is defined by \\(t_1=3\\) and \\(t_{n+1}=\\dfrac{1+3t_n}{3+t_n}\\) for all integers \\(n\\ge1\\). Evaluate \\(t_3\\).",
           "options": [
             "\\(\\dfrac53\\)",

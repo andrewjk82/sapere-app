@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year7ch23e",
+      "synthetic": true,
       "code": "",
       "title": "Writing algebraic expressions",
       "questions": [

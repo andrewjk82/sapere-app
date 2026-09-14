@@ -11,6 +11,7 @@
         {
           "id": "bb2020-q31",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "A particle moves in a straight line. At time \\(t\\) seconds, its displacement is \\(x\\) metres from the origin \\(O\\). Its velocity is given by \\(v = 2-4\\cos 2t\\), for \\(0 \\le t \\le 2\\pi\\).",
           "parts": [
             {
@@ -374,6 +375,7 @@
         {
           "id": "hg2020-q27",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "A particle moves in a straight line. At time \\(t\\) seconds, its distance \\(x\\) metres from a fixed point \\(O\\) on the line is given by \\(x = 1-\\cos 2t\\).",
           "parts": [
             {
@@ -502,6 +504,7 @@
         {
           "id": "hh2020-q8",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A particle moves along the \\(x\\)-axis. At a certain time, \\(\\dfrac{d^2x}{dt^2}=-2\\text{ ms}^{-2}\\) and \\(\\dfrac{dx}{dt}=1\\text{ ms}^{-1}\\). Which statement describes the motion of the particle at that time?",
           "options": [
             "The particle is moving to the right with increasing speed.",
@@ -535,6 +538,7 @@
         {
           "id": "hillsgrammar-25-2u-q30a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A particle moves along the \\(x\\)-axis, and after \\(t\\) seconds its displacement, \\(x\\) metres, is given by \\(x = (t^2-1)^2\\) metres. Find the acceleration of the particle, \\(\\ddot{x}\\), as a function of \\(t\\).",
           "options": [
             "\\(12t^2 - 4\\)",
@@ -563,6 +567,7 @@
         {
           "id": "hillsgrammar-25-2u-q30b",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "The particle (with \\(x=(t^2-1)^2, \\ \\dot{x}=4t^3-4t\\)) initially moves left, before turning around and moving to the right. Find the particle's acceleration when it returns to its initial position.",
           "options": [
             "\\(20\\) m/s\\(^2\\)",
@@ -610,6 +615,7 @@
         {
           "id": "hg2020-q34",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "A particle \\(P_1\\) has acceleration \\(\\dfrac{d^2x}{dt^2} = e^{-t}+e^{-2t}\\) (in m/s\\(^2\\)). Initially, \\(P_1\\) is \\(\\dfrac34\\) m to the right of the origin, travelling at velocity \\(\\dfrac{dx}{dt}=-\\dfrac32\\) m/s.",
           "parts": [
             {
@@ -717,6 +723,7 @@
         {
           "id": "hh2020-q18",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "The velocity of a particle moving along the \\(x\\)-axis at \\(v\\) metres per second at \\(t\\) seconds is shown in the graph below (a straight line from \\((0,3)\\) to \\((5,0)\\)). Initially, the displacement \\(x\\) is equal to 13 metres.",
           "figure": {
             "svg": "fig:3e76be06b5"
@@ -928,6 +935,7 @@
         {
           "id": "hg2020-q33",
           "type": "review",
+          "difficulty": "hard",
           "stem": "A nest of insects has a population, \\(P\\), that grows exponentially so that \\(\\dfrac{dP}{dt} = 1200e^{0.3t}\\), where \\(t\\) is in months. A nest had a population of 5000 after one month. A viable nest needs a population between 100 000 and 500 000. Determine how long it will take the nest to reach the viable stage (population = 100 000), correct to the nearest month.",
           "answer": "",
           "steps": [
@@ -967,6 +975,7 @@
         {
           "id": "hh2020-q32",
           "type": "multipart",
+          "difficulty": "hard",
           "stem": "The population of a white-ant colony is modelled by \\(P=Ae^{kt}\\), where \\(A\\) and \\(k\\) are positive constants and \\(t\\) is time in weeks. Initially, the population is 1000. Two weeks later, the population is 1500.",
           "parts": [
             {

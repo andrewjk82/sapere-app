@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "y9-7",
+      "synthetic": true,
       "code": "",
       "title": "",
       "questions": [
@@ -5208,6 +5209,7 @@
         {
           "id": "y9-killara-24-t4-pc-t1q1",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "Which congruence test would be used to show that this pair of triangles are congruent?",
           "figure": {
             "svg": "fig:d1cfc35b50"
@@ -5235,6 +5237,7 @@
         {
           "id": "y9-killara-24-t4-pc-t1q2",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "In the diagram below, \\(O\\) is the centre of both circles. To prove that \\(\\Delta XOY \\equiv \\Delta VOW\\), which of the following provides the correct congruence test and the correct reason for the equal angles?",
           "figure": {
             "svg": "fig:1ac894ed1b"
@@ -5277,6 +5280,7 @@
         {
           "id": "sg2022-q7d",
           "type": "review",
+          "difficulty": "hard",
           "stem": "Consider the rectangle \\(ABCD\\) shown, where \\(P\\) and \\(Q\\) are the midpoints of \\(AD\\) and \\(BC\\) respectively. Prove, with full geometric reasoning, that \\(PQ\\) bisects \\(BD\\).",
           "figure": {
             "svg": "fig:d6cc460004"
@@ -5320,6 +5324,7 @@
         {
           "id": "sg2022-q7e",
           "type": "review",
+          "difficulty": "easy",
           "stem": "Name a special quadrilateral which is not necessarily a trapezium.",
           "answer": "",
           "hint": "A trapezium has at least one pair of parallel sides. Think of a special quadrilateral that does not need to have any parallel sides.",
@@ -5349,6 +5354,7 @@
         {
           "id": "sg2022-q8d",
           "type": "review",
+          "difficulty": "hard",
           "stem": "Consider the quadrilateral \\(ABCD\\), in which \\(AB\\parallel PQ\\parallel DC\\), \\(AP=PD\\) and \\(BQ=QC\\). Intervals \\(AB\\), \\(PQ\\) and \\(DC\\) are related by \\(AB=2x-7\\), \\(PQ=x+1\\) and \\(DC=x-3\\), for some value \\(x\\). Prove that \\(x=12\\).",
           "answer": "",
           "hint": "Since \\(P\\) and \\(Q\\) are midpoints of \\(AD\\) and \\(BC\\), \\(PQ\\) is the midsegment of trapezium \\(ABCD\\), so \\(PQ\\) equals the average of the two parallel sides \\(AB\\) and \\(DC\\).",

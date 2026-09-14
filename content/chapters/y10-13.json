@@ -5628,6 +5628,7 @@
         {
           "id": "jr2012-q3",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The chord \\(BC\\) of a circle, centre \\(O\\), where \\(A\\) is a point on the major arc with \\(\\angle OBA=5°\\) and \\(\\angle OCB=40°\\), as shown. The value of \\(x=\\angle BOC\\)-related angle at \\(A\\) is:",
           "figure": {
             "svg": "fig:56f1ad1c30"
@@ -5667,6 +5668,7 @@
         {
           "id": "jr2013-q4",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "The arc length of a sector of a circle, of radius 10 cm, is 12 cm. The angle subtended by the arc is closest to:",
           "options": [
             "\\(48°\\)",
@@ -5706,6 +5708,7 @@
         {
           "id": "jr2012-q23",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "Points \\(A\\), \\(B\\) and \\(D\\) are on the circle centre \\(O\\), and point \\(C\\) is outside the circle where lines through \\(A\\) and \\(D\\) meet at \\(C\\) (with \\(B\\) also on line \\(AC\\)). Which of the following statements is correct?",
           "figure": {
             "svg": "fig:4ee1458f3d"

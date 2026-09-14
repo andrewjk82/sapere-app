@@ -5,6 +5,7 @@
   "topics": [
     {
       "topicId": "exam:year8ch19",
+      "synthetic": true,
       "code": "",
       "title": "Comparing means and medians",
       "questions": [

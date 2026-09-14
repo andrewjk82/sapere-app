@@ -11,11 +11,13 @@
         {
           "id": "sg2022-q7b",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "A passenger on a train travelling due north at 160 km/h sees a light due east at 9pm; at 9:45pm the light bears 150°T.",
           "parts": [
             {
               "id": "sg2022-q7b-i",
               "type": "mc",
+              "difficulty": "medium",
               "stem": "How far did the passenger travel between 9pm and 9:45pm?",
               "options": [
                 "\\(120\\text{ km}\\)",
@@ -48,6 +50,7 @@
             {
               "id": "sg2022-q7b-ii",
               "type": "mc",
+              "difficulty": "hard",
               "stem": "How far away is the light from the passenger at 9:45pm? Give your answer as an exact value.",
               "options": [
                 "\\(80\\sqrt3\\text{ km}\\)",
@@ -96,6 +99,7 @@
         {
           "id": "sg2022-q8e",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "A professor is due to be picked up at university by her husband immediately after her last lecture of the day is scheduled to finish. She unexpectedly finishes 3 hours early and immediately begins to walk home at a constant speed of \\(6\\text{ km/h}\\). Her husband, who knows nothing of her early finish, leaves home in his car at exactly the right time in order to meet her at the university at the originally anticipated completion time of her last lecture. On the way to the university he sees his wife and picks her up \\(9\\text{ km}\\) from home. They immediately drive home together and reach home \\(2\\) hours earlier than was scheduled. Calculate the average speed of the car for its entire journey.",
           "options": [
             "\\(24\\text{ km/h}\\)",

@@ -12,6 +12,7 @@ export const Figure = z.object({
   html: z.string().optional(),
   source: z.any().optional(),
   plot: z.any().optional(),
+  raw: z.any().optional(),      // legacy bare jsxgraph config, not rendered today
 }).strict().refine((f) => Object.keys(f).length > 0, 'figure must not be empty');
 
 export const Step = z.object({
@@ -56,6 +57,7 @@ const Mc = z.object({
 const Short = z.object({
   ...Base, type: z.literal('short'),
   answer: z.string(),
+  options: z.array(Option).optional(),
   accepted: z.array(z.string()).optional(),
   blanks: z.array(z.any()).optional(),
 }).strict();
@@ -63,16 +65,17 @@ const Short = z.object({
 const Review = z.object({
   ...Base, type: z.literal('review'),
   answer: z.string(),
+  options: z.array(Option).optional(),
   accepted: z.array(z.string()).optional(),
 }).strict();
 
 export const Question = z.lazy(() => z.discriminatedUnion('type', [
   Mc, Short, Review,
-  z.object({ ...Base, type: z.literal('multipart'), answer: z.string().optional(), parts: z.array(Question).min(1) }).strict(),
+  z.object({ ...Base, type: z.literal('multipart'), mc: z.literal(true).optional(), options: z.array(Option).optional(), answer: z.union([z.string(), z.number().int().min(0)]).optional(), parts: z.array(Question).min(1) }).strict(),
 ]));
 
 export const Topic = z.object({
-  topicId: z.string().min(1), code: z.string(), title: z.string(),
+  topicId: z.string().min(1), synthetic: z.literal(true).optional(), code: z.string(), title: z.string(),
   questions: z.array(Question),
 }).strict();
 

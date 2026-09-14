@@ -3482,6 +3482,7 @@
         {
           "id": "bb2020-q30",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "A gardener plants rose bushes in rows. The first row has 24 plants, the second has 29 plants, and each succeeding row has 5 more plants than the previous row.",
           "parts": [
             {
@@ -4213,6 +4214,12 @@
               "type": "short",
               "stem": "a) A graphic designer starts on an annual salary of $65,000, with annual increments of $4,500. Find his annual salary in the 8th year.",
               "answer": "96500",
+              "options": [
+                "\\(96502\\)",
+                "\\(96499\\)",
+                "\\(96500\\)",
+                "\\(96501\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up arithmetic sequence",
@@ -4233,6 +4240,12 @@
               "type": "short",
               "stem": "b) Find his total earnings at the end of 8 years.",
               "answer": "646000",
+              "options": [
+                "\\(646002\\)",
+                "\\(645999\\)",
+                "\\(646000\\)",
+                "\\(646001\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use AP sum formula with n=8",
@@ -4253,6 +4266,12 @@
               "type": "short",
               "stem": "c) In which year will his salary first reach $101,000? State the year as an integer (e.g. 9).",
               "answer": "9",
+              "options": [
+                "\\(11\\)",
+                "\\(10\\)",
+                "\\(8\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set term formula equal to 101000",
@@ -4298,6 +4317,12 @@
               "type": "short",
               "stem": "b) State the common ratio of the geometric progression.",
               "answer": "1.06",
+              "options": [
+                "\\(-1.06\\)",
+                "\\(0.06\\)",
+                "\\(1.06\\)",
+                "\\(2.06\\)"
+              ],
               "steps": [
                 {
                   "explain": "Identify ratio",
@@ -4310,6 +4335,12 @@
               "type": "short",
               "stem": "c) Find her annual salary in the 8th year, correct to the nearest dollar.",
               "answer": "135327",
+              "options": [
+                "\\(135329\\)",
+                "\\(135326\\)",
+                "\\(135327\\)",
+                "\\(135328\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up GP term formula",
@@ -4330,6 +4361,12 @@
               "type": "short",
               "stem": "d) Find her total earnings at the end of 8 years, correct to the nearest dollar.",
               "answer": "890772",
+              "options": [
+                "\\(890774\\)",
+                "\\(890771\\)",
+                "\\(890772\\)",
+                "\\(890773\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use GP sum formula",
@@ -6296,6 +6333,12 @@
               "type": "short",
               "stem": "b) i) State the first term \\( a \\) of the sequence.",
               "answer": "8",
+              "options": [
+                "\\(10\\)",
+                "\\(7\\)",
+                "\\(8\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Identify the first term from the sequence",
@@ -6308,6 +6351,12 @@
               "type": "short",
               "stem": "b) ii) State the common ratio \\( r \\) of the sequence.",
               "answer": "1.1",
+              "options": [
+                "\\(-1.1\\)",
+                "\\(0.1\\)",
+                "\\(1.1\\)",
+                "\\(2.1\\)"
+              ],
               "steps": [
                 {
                   "explain": "Identify the common ratio from part a",
@@ -6320,6 +6369,12 @@
               "type": "short",
               "stem": "c) Use the formula \\( T_n = ar^{n-1} \\) to write down the twelfth term, correct to two decimal places.",
               "answer": "22.82",
+              "options": [
+                "\\(-22.82\\)",
+                "\\(21.82\\)",
+                "\\(22.82\\)",
+                "\\(23.82\\)"
+              ],
               "steps": [
                 {
                   "explain": "Identify parameters",
@@ -6340,6 +6395,12 @@
               "type": "short",
               "stem": "d) Find the number of terms less than 50 using trial-and-error on your calculator.",
               "answer": "20",
+              "options": [
+                "\\(22\\)",
+                "\\(19\\)",
+                "\\(20\\)",
+                "\\(21\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up the inequality for the term value",
@@ -6381,6 +6442,12 @@
               "type": "short",
               "stem": "a) ii) Find the common ratio of the geometric progression.",
               "answer": "1.06",
+              "options": [
+                "\\(-1.06\\)",
+                "\\(0.06\\)",
+                "\\(1.06\\)",
+                "\\(2.06\\)"
+              ],
               "steps": [
                 {
                   "explain": "Identify the common ratio from the increment factor",
@@ -6393,6 +6460,12 @@
               "type": "short",
               "stem": "b) i) Find her annual salary in her 10th year, correct to the nearest dollar.",
               "answer": "84474",
+              "options": [
+                "\\(84476\\)",
+                "\\(84473\\)",
+                "\\(84474\\)",
+                "\\(84475\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up the term formula",
@@ -6413,6 +6486,12 @@
               "type": "short",
               "stem": "b) ii) Find her total earnings at the end of 10 years, correct to the nearest dollar.",
               "answer": "659040",
+              "options": [
+                "\\(659042\\)",
+                "\\(659039\\)",
+                "\\(659040\\)",
+                "\\(659041\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up sum formula for GP",
@@ -6433,6 +6512,12 @@
               "type": "short",
               "stem": "c) In which year will her salary first exceed $90,000? State the year as an integer.",
               "answer": "12",
+              "options": [
+                "\\(14\\)",
+                "\\(11\\)",
+                "\\(12\\)",
+                "\\(13\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up inequality for salary exceeding $90,000",
@@ -6462,6 +6547,12 @@
               "type": "short",
               "stem": "a) Solve: \\( 2^n > 40 \\)",
               "answer": "6",
+              "options": [
+                "\\(8\\)",
+                "\\(5\\)",
+                "\\(6\\)",
+                "\\(7\\)"
+              ],
               "steps": [
                 {
                   "explain": "Take the logarithm of both sides",
@@ -6482,6 +6573,12 @@
               "type": "short",
               "stem": "b) Solve: \\( 2^n > 25\\,000 \\)",
               "answer": "15",
+              "options": [
+                "\\(17\\)",
+                "\\(14\\)",
+                "\\(15\\)",
+                "\\(16\\)"
+              ],
               "steps": [
                 {
                   "explain": "Take the logarithm of both sides",
@@ -6502,6 +6599,12 @@
               "type": "short",
               "stem": "c) Solve: \\( 2^n > 5\\,000\\,000 \\)",
               "answer": "23",
+              "options": [
+                "\\(25\\)",
+                "\\(22\\)",
+                "\\(23\\)",
+                "\\(24\\)"
+              ],
               "steps": [
                 {
                   "explain": "Take the logarithm of both sides",
@@ -6542,6 +6645,12 @@
               "type": "short",
               "stem": "e) Solve: \\( 3^n > 25\\,000 \\)",
               "answer": "10",
+              "options": [
+                "\\(12\\)",
+                "\\(10\\)",
+                "\\(11\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Take the logarithm of both sides",
@@ -6562,6 +6671,12 @@
               "type": "short",
               "stem": "f) Solve: \\( 3^n > 8\\,000\\,000 \\)",
               "answer": "15",
+              "options": [
+                "\\(17\\)",
+                "\\(14\\)",
+                "\\(15\\)",
+                "\\(16\\)"
+              ],
               "steps": [
                 {
                   "explain": "Take the logarithm of both sides",
@@ -6582,6 +6697,12 @@
               "type": "short",
               "stem": "g) Solve: \\( \\left(\\frac{1}{2}\\right)^n < 0.05 \\)",
               "answer": "5",
+              "options": [
+                "\\(7\\)",
+                "\\(4\\)",
+                "\\(5\\)",
+                "\\(6\\)"
+              ],
               "steps": [
                 {
                   "explain": "Take the logarithm of both sides (note that dividing by log(0.5) flips the inequality since log(0.5) < 0)",
@@ -6602,6 +6723,12 @@
               "type": "short",
               "stem": "h) Solve: \\( \\left(\\frac{1}{2}\\right)^n < 0.002 \\)",
               "answer": "9",
+              "options": [
+                "\\(11\\)",
+                "\\(10\\)",
+                "\\(8\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Take the logarithm of both sides",
@@ -6622,6 +6749,12 @@
               "type": "short",
               "stem": "i) Solve: \\( \\left(\\frac{1}{2}\\right)^n < 0.00005 \\)",
               "answer": "15",
+              "options": [
+                "\\(17\\)",
+                "\\(14\\)",
+                "\\(15\\)",
+                "\\(16\\)"
+              ],
               "steps": [
                 {
                   "explain": "Take the logarithm of both sides",
@@ -6662,6 +6795,12 @@
               "type": "short",
               "stem": "k) Solve: \\( \\left(\\frac{1}{3}\\right)^n < 0.005 \\)",
               "answer": "5",
+              "options": [
+                "\\(7\\)",
+                "\\(4\\)",
+                "\\(5\\)",
+                "\\(6\\)"
+              ],
               "steps": [
                 {
                   "explain": "Take the logarithm of both sides",
@@ -6682,6 +6821,12 @@
               "type": "short",
               "stem": "l) Solve: \\( \\left(\\frac{1}{3}\\right)^n < 0.00002 \\)",
               "answer": "10",
+              "options": [
+                "\\(12\\)",
+                "\\(10\\)",
+                "\\(11\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Take the logarithm of both sides",
@@ -6710,6 +6855,12 @@
               "type": "short",
               "stem": "a) Find the number of terms in the sequence 8, 8.8, 9.68, \\dots that are less than 50 (from Question 2).",
               "answer": "20",
+              "options": [
+                "\\(22\\)",
+                "\\(19\\)",
+                "\\(20\\)",
+                "\\(21\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up inequality",
@@ -6734,6 +6885,12 @@
               "type": "short",
               "stem": "b) Find the year in which the analyst's salary first exceeds $90,000 (from Question 3).",
               "answer": "12",
+              "options": [
+                "\\(14\\)",
+                "\\(11\\)",
+                "\\(12\\)",
+                "\\(13\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up inequality",
@@ -6758,6 +6915,12 @@
               "type": "short",
               "stem": "c) Find the year in which the salary first doubles the original (from Question 4).",
               "answer": "16",
+              "options": [
+                "\\(18\\)",
+                "\\(15\\)",
+                "\\(16\\)",
+                "\\(17\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up inequality",
@@ -6790,6 +6953,12 @@
               "type": "short",
               "stem": "a) i) What percentage of UV light does SF40 let through?",
               "answer": "60%",
+              "options": [
+                "\\(-60\\)",
+                "\\(59\\)",
+                "\\(60%\\)",
+                "\\(61\\)"
+              ],
               "steps": [
                 {
                   "explain": "Subtract the percentage cut out from 100%",
@@ -6802,6 +6971,12 @@
               "type": "short",
               "stem": "a) ii) What percentage of UV light does SF64 let through?",
               "answer": "36%",
+              "options": [
+                "\\(-36\\)",
+                "\\(35\\)",
+                "\\(36%\\)",
+                "\\(37\\)"
+              ],
               "steps": [
                 {
                   "explain": "Subtract the percentage cut out from 100%",
@@ -6814,6 +6989,12 @@
               "type": "short",
               "stem": "a) iii) What percentage of UV light does SF84 let through?",
               "answer": "16%",
+              "options": [
+                "\\(-16\\)",
+                "\\(15\\)",
+                "\\(16%\\)",
+                "\\(17\\)"
+              ],
               "steps": [
                 {
                   "explain": "Subtract the percentage cut out from 100%",
@@ -6842,6 +7023,12 @@
               "type": "short",
               "stem": "c) Use logarithms to find the minimum number of layers of SF40 that would be required to cut out at least as much UV light as one layer of SF84.",
               "answer": "4",
+              "options": [
+                "\\(6\\)",
+                "\\(3\\)",
+                "\\(4\\)",
+                "\\(5\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up inequality. SF84 lets through 16% (0.16). We want the remaining light through n layers of SF40 to be less than or equal to 0.16.",
@@ -6862,6 +7049,12 @@
               "type": "short",
               "stem": "d) Similarly, find how many layers of SF40 would be required to cut out 98% of UV rays.",
               "answer": "8",
+              "options": [
+                "\\(10\\)",
+                "\\(7\\)",
+                "\\(8\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Cutting out 98% means letting through 2% (0.02) or less.",
@@ -6970,6 +7163,12 @@
               "type": "short",
               "stem": "a) In which year do annual sales first exceed $800,000? State the year as an integer.",
               "answer": "9",
+              "options": [
+                "\\(11\\)",
+                "\\(10\\)",
+                "\\(8\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up inequality",
@@ -6994,6 +7193,12 @@
               "type": "short",
               "stem": "b) In which year do total sales since foundation first exceed $2,000,000? State the year as an integer.",
               "answer": "7",
+              "options": [
+                "\\(9\\)",
+                "\\(6\\)",
+                "\\(7\\)",
+                "\\(8\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up sum inequality",
@@ -7046,6 +7251,12 @@
               "type": "short",
               "stem": "b) A population is increasing by 20% every year. How many full years will it take the population to increase by over 400%? State the year as an integer.",
               "answer": "9",
+              "options": [
+                "\\(11\\)",
+                "\\(10\\)",
+                "\\(8\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Setting original population to P_0, we want the population to be greater than 5*P_0 (an increase of over 400%).",
@@ -7078,6 +7289,12 @@
               "type": "short",
               "stem": "a) Find a formula for the sum \\( S_n \\) of the first \\( n \\) terms of the series.",
               "answer": "16*(1-0.75^n)",
+              "options": [
+                "\\(-16*(1-0.75^n)\\)",
+                "\\(16*(1+0.75^n)\\)",
+                "\\(16*(1-0.75^n)\\)",
+                "\\(16*(1-0.75^n) + 1\\)"
+              ],
               "steps": [
                 {
                   "explain": "Identify GP parameters",
@@ -7114,6 +7331,12 @@
               "type": "short",
               "stem": "b) ii) Determine the limiting sum \\( S \\).",
               "answer": "16",
+              "options": [
+                "\\(18\\)",
+                "\\(15\\)",
+                "\\(16\\)",
+                "\\(17\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use limiting sum formula",
@@ -7130,6 +7353,12 @@
               "type": "short",
               "stem": "c) Find the smallest value of \\( n \\) for which \\( S - S_n < 0.01 \\). State the value as an integer.",
               "answer": "26",
+              "options": [
+                "\\(28\\)",
+                "\\(25\\)",
+                "\\(26\\)",
+                "\\(27\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up inequality",
@@ -9866,6 +10095,12 @@
               "type": "short",
               "stem": "a) Find the final value of the investment, correct to the nearest cent.",
               "answer": "20235.27",
+              "options": [
+                "\\(-20235.27\\)",
+                "\\(20234.27\\)",
+                "\\(20235.27\\)",
+                "\\(20236.27\\)"
+              ],
               "steps": [
                 {
                   "explain": "Convert rate and periods to monthly units",
@@ -9882,6 +10117,12 @@
               "type": "short",
               "stem": "b) What rate of simple interest, correct to two significant figures, would be needed to yield the same final balance? Give your answer as a percentage (e.g. 5.8%).",
               "answer": "5.8%",
+              "options": [
+                "\\(-5.8\\)",
+                "\\(4.8\\)",
+                "\\(5.8%\\)",
+                "\\(6.8\\)"
+              ],
               "steps": [
                 {
                   "explain": "Interest earned: \\( I = 20235.27 - 15000 = 5235.27 \\)",
@@ -9898,6 +10139,12 @@
               "type": "short",
               "stem": "c) How many full months will it take for the money to exceed \\( \\$22000 \\)?",
               "answer": "93",
+              "options": [
+                "\\(95\\)",
+                "\\(92\\)",
+                "\\(93\\)",
+                "\\(94\\)"
+              ],
               "steps": [
                 {
                   "explain": "Setup compounding inequality: \\( 15000 \\times (1 + \\frac{0.05}{12})^n > 22000 \\)",
@@ -9926,6 +10173,12 @@
               "type": "short",
               "stem": "a) Find the smallest number of years required for the investment to double.",
               "answer": "10",
+              "options": [
+                "\\(12\\)",
+                "\\(10\\)",
+                "\\(11\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up compounding inequality for doubling (multiplier \\( \\ge 2 \\))",
@@ -9946,6 +10199,12 @@
               "type": "short",
               "stem": "b) Find the smallest number of years required for the investment to treble.",
               "answer": "15",
+              "options": [
+                "\\(17\\)",
+                "\\(14\\)",
+                "\\(15\\)",
+                "\\(16\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up compounding inequality for trebling (multiplier \\( \\ge 3 \\))",
@@ -9966,6 +10225,12 @@
               "type": "short",
               "stem": "c) Find the smallest number of years required for the investment to quadruple.",
               "answer": "19",
+              "options": [
+                "\\(21\\)",
+                "\\(18\\)",
+                "\\(19\\)",
+                "\\(20\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up compounding inequality for quadrupling (multiplier \\( \\ge 4 \\))",
@@ -9986,6 +10251,12 @@
               "type": "short",
               "stem": "d) Find the smallest number of years required for the investment to increase by a factor of 10.",
               "answer": "30",
+              "options": [
+                "\\(32\\)",
+                "\\(29\\)",
+                "\\(30\\)",
+                "\\(31\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up compounding inequality for factor of 10 (multiplier \\( \\ge 10 \\))",
@@ -10102,6 +10373,12 @@
               "type": "short",
               "stem": "a) Find the simple interest earned.",
               "answer": "4800",
+              "options": [
+                "\\(4802\\)",
+                "\\(4799\\)",
+                "\\(4800\\)",
+                "\\(4801\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use simple interest formula \\( I = PRn \\)",
@@ -10114,6 +10391,12 @@
               "type": "short",
               "stem": "b) Hence write down the total value of the investment.",
               "answer": "24800",
+              "options": [
+                "\\(24802\\)",
+                "\\(24799\\)",
+                "\\(24800\\)",
+                "\\(24801\\)"
+              ],
               "steps": [
                 {
                   "explain": "Add interest to the principal",
@@ -10126,6 +10409,12 @@
               "type": "short",
               "stem": "c) What rate of compound interest would yield the same amount if compounded annually? Give your answer as a percentage correct to three significant figures (e.g. 5.53%).",
               "answer": "5.53%",
+              "options": [
+                "\\(-5.53\\)",
+                "\\(4.53\\)",
+                "\\(5.53%\\)",
+                "\\(6.53\\)"
+              ],
               "steps": [
                 {
                   "explain": "Setup compound interest equation",
@@ -10155,6 +10444,12 @@
               "type": "short",
               "stem": "a) She incorrectly thought that because she was working in reverse, she should use the depreciation formula. What value did she get, correct to the nearest dollar?",
               "answer": "29239",
+              "options": [
+                "\\(29241\\)",
+                "\\(29238\\)",
+                "\\(29239\\)",
+                "\\(29240\\)"
+              ],
               "steps": [
                 {
                   "explain": "Substitute given values into depreciation formula \\( A_{incorrect} = P(1-R)^n \\)",
@@ -10171,6 +10466,12 @@
               "type": "short",
               "stem": "b) What is the correct answer, correct to the nearest dollar?",
               "answer": "30000",
+              "options": [
+                "\\(30002\\)",
+                "\\(29999\\)",
+                "\\(30000\\)",
+                "\\(30001\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use correct compound interest formula to work back: \\( P = \\frac{A}{(1+R)^n} \\)",
@@ -10216,6 +10517,12 @@
               "type": "short",
               "stem": "b) Hence find the period of the investment, correct to the nearest quarter.",
               "answer": "9",
+              "options": [
+                "\\(11\\)",
+                "\\(10\\)",
+                "\\(8\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use relation from part a: \\( 1.02^n = 1.1940 \\)",
@@ -11968,6 +12275,7 @@
         {
           "id": "bb2020-q19",
           "type": "multipart",
+          "difficulty": "medium",
           "stem": "The table below is an excerpt from a Present Value Interest Factor for an Annuity (PVA) table, showing the factor for \\(N\\) payments at a given interest rate per period.",
           "figure": {
             "svg": "fig:6b5d58071e"
@@ -12041,6 +12349,7 @@
         {
           "id": "hillsgrammar-25-2u-q17",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "A table of future values for an annuity of $1 invested at the start of each period is shown. Liv plans to save \\(\\$150{,}000\\) over the next 5 years to use as a deposit for buying a house. She intends to make equal quarterly investments at the start of each quarter for 5 years, and the investments will earn 4% per annum compounded quarterly. What is the amount of her quarterly investment?",
           "options": [
             "\\(\\$6745.87\\)",
@@ -12077,6 +12386,7 @@
         {
           "id": "hillsgrammar-25-2u-q32a",
           "type": "mc",
+          "difficulty": "medium",
           "stem": "On Arian's first day of work, he deposited \\(\\$10{,}000\\) into a superannuation account earning \\(4.5\\%\\) per annum, compounded annually. He deposited the same amount at the start of each subsequent year. What is the value of the account at the end of Arian's third year of work?",
           "options": [
             "\\(\\$32{,}781.91\\)",
@@ -12118,6 +12428,7 @@
         {
           "id": "hillsgrammar-25-2u-q32b",
           "type": "mc",
+          "difficulty": "hard",
           "stem": "At the end of Arian's 30th year of work, his superannuation balance was \\(\\$637{,}523.88\\) (do NOT prove this). From the start of Year 31 to the start of Year 45 inclusive, Arian increased his annual deposit to \\(\\$30{,}000\\), continuing to deposit at the start of each year. He retired after 45 full years of work, with the final interest added at the end of Year 45. What was the balance in his superannuation account when he retired?",
           "options": [
             "\\(\\approx \\$1{,}885{,}369\\)",
@@ -12688,6 +12999,12 @@
               "type": "short",
               "stem": "b) Evaluate \\( A_{25} \\) correct to the nearest dollar.",
               "answer": "1184316",
+              "options": [
+                "\\(1184318\\)",
+                "\\(1184315\\)",
+                "\\(1184316\\)",
+                "\\(1184317\\)"
+              ],
               "steps": [
                 {
                   "explain": "Substitute and evaluate the GP sum",
@@ -12704,6 +13021,12 @@
               "type": "short",
               "stem": "c) By how much does this exceed the total contributions Zoya made? Give your answer to the nearest dollar.",
               "answer": "809316",
+              "options": [
+                "\\(809318\\)",
+                "\\(809315\\)",
+                "\\(809316\\)",
+                "\\(809317\\)"
+              ],
               "steps": [
                 {
                   "explain": "Calculate total contributions",
@@ -12736,6 +13059,12 @@
               "type": "short",
               "stem": "e) What would Zoya's annual contribution have to be in order for her superannuation to have a total value of \\( \\$1500000 \\) at the end of the 25 years? Give your answer to the nearest dollar.",
               "answer": "18998",
+              "options": [
+                "\\(19000\\)",
+                "\\(18997\\)",
+                "\\(18998\\)",
+                "\\(18999\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set the formula equal to 1500000",
@@ -12866,6 +13195,12 @@
               "type": "short",
               "stem": "a) How much did the person invest over the life of the fund?",
               "answer": "240000",
+              "options": [
+                "\\(240002\\)",
+                "\\(239999\\)",
+                "\\(240000\\)",
+                "\\(240001\\)"
+              ],
               "steps": [
                 {
                   "explain": "Count number of annual payments: from 2023 to 2042 inclusive is 20 payments.",
@@ -12882,6 +13217,12 @@
               "type": "short",
               "stem": "b) Calculate, correct to the nearest dollar, the amount to which the 2023 payment has grown by the beginning of 2043.",
               "answer": "55931",
+              "options": [
+                "\\(55933\\)",
+                "\\(55930\\)",
+                "\\(55931\\)",
+                "\\(55932\\)"
+              ],
               "steps": [
                 {
                   "explain": "The 2023 payment compounds for 20 years (from 1st Jan 2023 to 1st Jan 2043).",
@@ -12902,6 +13243,12 @@
               "type": "short",
               "stem": "c) Find the total value of the fund when it is paid out on 1st January 2043. Give your answer to the nearest dollar.",
               "answer": "593075",
+              "options": [
+                "\\(593077\\)",
+                "\\(593074\\)",
+                "\\(593075\\)",
+                "\\(593076\\)"
+              ],
               "steps": [
                 {
                   "explain": "The total value after 20 years is the sum of a GP with \\( a = 12000(1.08) = 12960 \\), \\( r = 1.08 \\), and \\( n = 20 \\).",
@@ -12922,6 +13269,12 @@
               "type": "short",
               "stem": "d) i) The person wants to reach a total value of \\( \\$1200000 \\) in superannuation. Find a formula for \\( A_n \\), the value of the investment after \\( n \\) years in simplified factorised form. (Format: '162000*(1.08^n - 1)')",
               "answer": "162000*(1.08^n - 1)",
+              "options": [
+                "\\(-162000*(1.08^n - 1)\\)",
+                "\\(162000*(1.08^n - 1)\\)",
+                "\\(162000*(1.08^n - 1) + 1\\)",
+                "\\(164000*(1.08^n - 1)\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up sum formula for GP representing \\( n \\) annual instalments",
@@ -12958,6 +13311,12 @@
               "type": "short",
               "stem": "d) iii) At the end of which year will the superannuation be worth \\( \\$1200000 \\)?",
               "answer": "28",
+              "options": [
+                "\\(30\\)",
+                "\\(27\\)",
+                "\\(28\\)",
+                "\\(29\\)"
+              ],
               "steps": [
                 {
                   "explain": "Evaluate the inequality: \\( 1.08^n > \\frac{227}{27} \\approx 8.4074 \\)",
@@ -12978,6 +13337,12 @@
               "type": "short",
               "stem": "e) Suppose instead that the person wanted to achieve the same total investment of \\( \\$1200000 \\) after only 20 years. What annual contribution would produce this amount? Give your answer to the nearest dollar.",
               "answer": "24280",
+              "options": [
+                "\\(24282\\)",
+                "\\(24279\\)",
+                "\\(24280\\)",
+                "\\(24281\\)"
+              ],
               "steps": [
                 {
                   "explain": "Let \\( M \\) be the contribution. Set final value equal to 1200000 at \\( n = 20 \\):",
@@ -13007,6 +13372,12 @@
               "type": "short",
               "stem": "a) How much money had Jane's parents deposited in the account?",
               "answer": "1050",
+              "options": [
+                "\\(1052\\)",
+                "\\(1049\\)",
+                "\\(1050\\)",
+                "\\(1051\\)"
+              ],
               "steps": [
                 {
                   "explain": "Jane has birthdays from age 0 to age 20. This counts the number of deposits into the account.",
@@ -13023,6 +13394,12 @@
               "type": "short",
               "stem": "b) How much money did she receive from her parents on her 21st birthday in total (including the cash in hand)? Give your answer to the nearest cent.",
               "answer": "2928.23",
+              "options": [
+                "\\(-2928.23\\)",
+                "\\(2927.23\\)",
+                "\\(2928.23\\)",
+                "\\(2929.23\\)"
+              ],
               "steps": [
                 {
                   "explain": "The 21 deposits compound to age 21. Deposit 1 (age 0) compounds for 21 years; deposit 21 (age 20) compounds for 1 year.",
@@ -13052,6 +13429,12 @@
               "type": "short",
               "stem": "a) The man is in a dangerous job. What will be the payout if he dies just before he turns 32?",
               "answer": "56678",
+              "options": [
+                "\\(56680\\)",
+                "\\(56677\\)",
+                "\\(56678\\)",
+                "\\(56679\\)"
+              ],
               "steps": [
                 {
                   "explain": "He makes contributions on birthdays 25, 26, 27, 28, 29, 30, 31 (7 contributions). They compound to age 32.",
@@ -13072,6 +13455,12 @@
               "type": "short",
               "stem": "b) The man's father died of a heart attack just before age 52. Suppose that the man also dies of a heart attack just before age 52. How much will his wife inherit?",
               "answer": "518709",
+              "options": [
+                "\\(518711\\)",
+                "\\(518708\\)",
+                "\\(518709\\)",
+                "\\(518710\\)"
+              ],
               "steps": [
                 {
                   "explain": "He makes contributions from age 25 to age 51 (27 contributions) compounding to age 52.",
@@ -13092,6 +13481,12 @@
               "type": "short",
               "stem": "c) What will the insurance company pay the man if he survives to his 65th birthday?",
               "answer": "1465805",
+              "options": [
+                "\\(1465807\\)",
+                "\\(1465804\\)",
+                "\\(1465805\\)",
+                "\\(1465806\\)"
+              ],
               "steps": [
                 {
                   "explain": "He makes contributions from age 25 to age 64 (40 contributions) compounding to age 65.",
@@ -13121,6 +13516,12 @@
               "type": "short",
               "stem": "a) Susan is sent to the school, starting in Year 7 in 2021. If she continues through to her HSC year, how much will her parents have paid the school over the six years? Give your answer to the nearest dollar.",
               "answer": "157204",
+              "options": [
+                "\\(157206\\)",
+                "\\(157203\\)",
+                "\\(157204\\)",
+                "\\(157205\\)"
+              ],
               "steps": [
                 {
                   "explain": "Fees are paid at the start of each year for 6 years: Year 7 fee = \\( 24000 \\), Year 8 fee = \\( 24000 \\times 1.035 \\), ..., Year 12 fee = \\( 24000 \\times 1.035^5 \\).",
@@ -13141,6 +13542,12 @@
               "type": "short",
               "stem": "b) Susan's younger sister is starting in Year 1 in 2021. How much will they spend on her school fees over the next 12 years if she goes through to her HSC? Give your answer to the nearest dollar.",
               "answer": "350447",
+              "options": [
+                "\\(350449\\)",
+                "\\(350446\\)",
+                "\\(350447\\)",
+                "\\(350448\\)"
+              ],
               "steps": [
                 {
                   "explain": "The sister goes to school for 12 years. This is a GP sum with \\( a = 24000 \\), \\( r = 1.035 \\), and \\( n = 12 \\).",
@@ -13166,6 +13573,12 @@
               "type": "short",
               "stem": "a) What is the value of the payout, correct to the nearest dollar, at age 65?",
               "answer": "223825",
+              "options": [
+                "\\(223827\\)",
+                "\\(223824\\)",
+                "\\(223825\\)",
+                "\\(223826\\)"
+              ],
               "steps": [
                 {
                   "explain": "She makes contributions from age 25 to 64 inclusive (40 payments). Find the future value of the fund at age 65.",
@@ -13186,6 +13599,12 @@
               "type": "short",
               "stem": "b) i) Unfortunately she dies at age 50, just before her 26th premium is due. What is the current value of the life insurance, correct to the nearest dollar?",
               "answer": "63164",
+              "options": [
+                "\\(63166\\)",
+                "\\(63163\\)",
+                "\\(63164\\)",
+                "\\(63165\\)"
+              ],
               "steps": [
                 {
                   "explain": "She has made 25 payments (ages 25 to 49) which have compounded for 25 years to age 50.",
@@ -13206,6 +13625,12 @@
               "type": "short",
               "stem": "b) ii) How much does the life insurance company pay her family, correct to the nearest dollar?",
               "answer": "103329",
+              "options": [
+                "\\(103331\\)",
+                "\\(103328\\)",
+                "\\(103329\\)",
+                "\\(103330\\)"
+              ],
               "steps": [
                 {
                   "explain": "The company pays the current value plus 25% of the difference between the target value at age 65 and the current value.",
@@ -13235,6 +13660,12 @@
               "type": "short",
               "stem": "a) How much is the fund worth at the end of 10 years? Give your answer to the nearest dollar.",
               "answer": "44351",
+              "options": [
+                "\\(44353\\)",
+                "\\(44350\\)",
+                "\\(44351\\)",
+                "\\(44352\\)"
+              ],
               "steps": [
                 {
                   "explain": "Accumulate 10 annual payments of 3000 at 7% simple-compound structure (first term is \\( 3000 \\times 1.07 = 3210 \\)).",
@@ -13255,6 +13686,12 @@
               "type": "short",
               "stem": "b) In which year will the fund reach \\( \\$100000 \\)?",
               "answer": "18",
+              "options": [
+                "\\(20\\)",
+                "\\(17\\)",
+                "\\(18\\)",
+                "\\(19\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set up inequality for fund reaching 100000:",
@@ -15810,6 +16247,12 @@
               "type": "short",
               "stem": "c) Find the amount owing on the loan at the end of the tenth year (120 months), and state whether this is more or less than half the amount borrowed. (Format: '$185,284 owing, more')",
               "answer": "$185,284 owing, more",
+              "options": [
+                "\\(-185,284 owing, more\\)",
+                "\\(185,284 owing, more\\)",
+                "\\(185,284 owing, more + 1\\)",
+                "\\(185,484 owing, more\\)"
+              ],
               "steps": [
                 {
                   "explain": "Evaluate the formula for \\( n = 120 \\). Note \\( 1.005^{120} \\approx 1.819397 \\).",
@@ -15866,6 +16309,12 @@
               "type": "short",
               "stem": "f) Find how many months early the loan is paid off. Give your answer to the nearest integer.",
               "answer": "70",
+              "options": [
+                "\\(72\\)",
+                "\\(69\\)",
+                "\\(70\\)",
+                "\\(71\\)"
+              ],
               "steps": [
                 {
                   "explain": "Calculate the exact number of months needed to pay off the loan.",
@@ -15923,6 +16372,12 @@
               "type": "short",
               "stem": "c) Find how long it will take to pay off the loan. Give your answer in whole months.",
               "answer": "59",
+              "options": [
+                "\\(61\\)",
+                "\\(58\\)",
+                "\\(59\\)",
+                "\\(60\\)"
+              ],
               "steps": [
                 {
                   "explain": "Solve the inequality \\( 1.0055^n \\geq 1.38 \\) using logarithms.",
@@ -16218,6 +16673,12 @@
               "type": "short",
               "stem": "b) Which value of \\( n \\) is the first to give a balance less than or equal to zero?",
               "answer": "61",
+              "options": [
+                "\\(63\\)",
+                "\\(60\\)",
+                "\\(61\\)",
+                "\\(62\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set the balance formula to zero and solve for \\( n \\).",
@@ -17785,6 +18246,12 @@
               "type": "short",
               "stem": "b) How many terms are there in this series?",
               "answer": "20",
+              "options": [
+                "\\(22\\)",
+                "\\(19\\)",
+                "\\(20\\)",
+                "\\(21\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use the arithmetic term formula: \\( T_n = a + (n-1)d \\) with \\( T_n = 272 \\).",
@@ -17801,6 +18268,12 @@
               "type": "short",
               "stem": "c) Find the sum of the series.",
               "answer": "2970",
+              "options": [
+                "\\(2972\\)",
+                "\\(2969\\)",
+                "\\(2970\\)",
+                "\\(2971\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use the arithmetic sum formula: \\( S_n = \\frac{n}{2}(a + L) \\) with \\( n = 20 \\), \\( a = 25 \\), and \\( L = 272 \\).",
@@ -17911,6 +18384,12 @@
               "type": "short",
               "stem": "a) \\( 3^n > 5000 \\)",
               "answer": "8",
+              "options": [
+                "\\(10\\)",
+                "\\(7\\)",
+                "\\(8\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use logarithms to solve the inequality.",
@@ -17931,6 +18410,12 @@
               "type": "short",
               "stem": "b) \\( (1.06)^n > 1000 \\)",
               "answer": "119",
+              "options": [
+                "\\(121\\)",
+                "\\(118\\)",
+                "\\(119\\)",
+                "\\(120\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use logarithms to solve the inequality.",
@@ -17951,6 +18436,12 @@
               "type": "short",
               "stem": "c) \\( (0.95)^n < 0.05 \\)",
               "answer": "59",
+              "options": [
+                "\\(61\\)",
+                "\\(58\\)",
+                "\\(59\\)",
+                "\\(60\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use logarithms to solve the inequality. Remember to reverse the sign when dividing by a negative log.",
@@ -17971,6 +18462,12 @@
               "type": "short",
               "stem": "d) \\( (0.4)^n < 0.001 \\)",
               "answer": "8",
+              "options": [
+                "\\(10\\)",
+                "\\(7\\)",
+                "\\(8\\)",
+                "\\(9\\)"
+              ],
               "steps": [
                 {
                   "explain": "Use logarithms to solve the inequality.",
@@ -18057,6 +18554,12 @@
               "type": "short",
               "stem": "a) Find a formula for \\( T_n \\), his salary in the \\( n \\)th year. (Note: use n as the variable, write without spaces, e.g. 47000+5000*n or 47000+5000n)",
               "answer": "47000+5000n",
+              "options": [
+                "\\(-47000+5000n\\)",
+                "\\(47000+5000n\\)",
+                "\\(47000+5000n + 1\\)",
+                "\\(47000-5000n\\)"
+              ],
               "steps": [
                 {
                   "explain": "This is an AP with \\( a = 52000 \\) and \\( d = 5000 \\). Apply term formula: \\( T_n = a + (n-1)d \\).",
@@ -18073,6 +18576,12 @@
               "type": "short",
               "stem": "b) In which year will Leo's salary first be at least twice what it was in 2012?",
               "answer": "2023",
+              "options": [
+                "\\(2025\\)",
+                "\\(2022\\)",
+                "\\(2023\\)",
+                "\\(2024\\)"
+              ],
               "steps": [
                 {
                   "explain": "Determine the target salary.",
@@ -18171,6 +18680,12 @@
               "type": "short",
               "stem": "a) What will the car's depreciated value be in another four years? Give your answer correct to the nearest dollar.",
               "answer": "19683",
+              "options": [
+                "\\(19685\\)",
+                "\\(19682\\)",
+                "\\(19683\\)",
+                "\\(19684\\)"
+              ],
               "steps": [
                 {
                   "explain": "The current value compounds depreciation for another 4 years at 10%.",
@@ -18187,6 +18702,12 @@
               "type": "short",
               "stem": "b) Find the average loss in value per year over the next four years. Give your answer correct to the nearest dollar.",
               "answer": "2579",
+              "options": [
+                "\\(2581\\)",
+                "\\(2578\\)",
+                "\\(2579\\)",
+                "\\(2580\\)"
+              ],
               "steps": [
                 {
                   "explain": "Find the total loss over the 4 years.",
@@ -18207,6 +18728,12 @@
               "type": "short",
               "stem": "c) What was the new price of the car? Give your answer correct to the nearest dollar.",
               "answer": "45725",
+              "options": [
+                "\\(45727\\)",
+                "\\(45724\\)",
+                "\\(45725\\)",
+                "\\(45726\\)"
+              ],
               "steps": [
                 {
                   "explain": "Set the initial value \\( P_0 \\) such that it depreciates to \\$30000 in 4 years.",
@@ -18227,6 +18754,12 @@
               "type": "short",
               "stem": "d) Find the average loss in value per year over the first four years from when it was new. Give your answer correct to the nearest dollar.",
               "answer": "3931",
+              "options": [
+                "\\(3933\\)",
+                "\\(3930\\)",
+                "\\(3931\\)",
+                "\\(3932\\)"
+              ],
               "steps": [
                 {
                   "explain": "Find the total loss from new price to 4-year-old price.",
@@ -18272,6 +18805,12 @@
               "type": "short",
               "stem": "b) Evaluate \\( A_{15} \\) correct to the nearest dollar.",
               "answer": "148035",
+              "options": [
+                "\\(148037\\)",
+                "\\(148034\\)",
+                "\\(148035\\)",
+                "\\(148036\\)"
+              ],
               "steps": [
                 {
                   "explain": "Evaluate the formula using \\( 1.06^{15} \\approx 2.396558 \\).",
@@ -18288,6 +18827,12 @@
               "type": "short",
               "stem": "c) By how much does \\( A_{15} \\) exceed the total contributions Elena made over these years? Give your answer correct to the nearest dollar.",
               "answer": "58035",
+              "options": [
+                "\\(58037\\)",
+                "\\(58034\\)",
+                "\\(58035\\)",
+                "\\(58036\\)"
+              ],
               "steps": [
                 {
                   "explain": "Calculate total contributions over 15 years.",
@@ -18455,6 +19000,12 @@
               "type": "short",
               "stem": "a) Let \\( A_n \\) be the balance of the loan after \\( n \\) months. Find a series expression for \\( A_n \\). (Format: '1500000*1.004^n - 16500(1 + ... + 1.004^(n-1))')",
               "answer": "1500000*1.004^n - 16500(1 + ... + 1.004^(n-1))",
+              "options": [
+                "\\(-1500000*1.004^n - 16500(1 + ... + 1.004^(n-1))\\)",
+                "\\(1500000*1.004^n + 16500(1 - ... - 1.004^(n+1))\\)",
+                "\\(1500000*1.004^n - 16500(1 + ... + 1.004^(n-1))\\)",
+                "\\(1500000*1.004^n - 16500(1 + ... + 1.004^(n-1)) + 1\\)"
+              ],
               "steps": [
                 {
                   "explain": "Identify monthly interest rate: \\( 4.8\\%/12 = 0.4\\% = 0.004 \\).",
@@ -18487,6 +19038,12 @@
               "type": "short",
               "stem": "c) Find the amount owing on the loan at the end of the fifth year (60 months), and state whether this is more or less than half the amount borrowed. (Format: '$789,567 owing, more')",
               "answer": "$789,567 owing, more",
+              "options": [
+                "\\(-789,567 owing, more\\)",
+                "\\(789,567 owing, more\\)",
+                "\\(789,567 owing, more + 1\\)",
+                "\\(\\dfrac{13}{x + 3}\\)"
+              ],
               "steps": [
                 {
                   "explain": "Substitute \\( n = 60 \\) and \\( 1.004^{60} \\approx 1.270641 \\) into the balance equation.",
@@ -18543,6 +19100,12 @@
               "type": "short",
               "stem": "f) Find how many months early the loan is paid off. Give your answer to the nearest integer.",
               "answer": "6",
+              "options": [
+                "\\(8\\)",
+                "\\(5\\)",
+                "\\(6\\)",
+                "\\(7\\)"
+              ],
               "steps": [
                 {
                   "explain": "Calculate the exact number of months needed to pay off the loan.",
