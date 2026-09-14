@@ -2841,7 +2841,7 @@
             "\\(2\\)"
           ],
           "answer": 3,
-          "solution": "The correct answer is \\(0\\).",
+          "solution": "The correct answer is \\(2\\).",
           "steps": [
             {
               "explain": "The Zero Index Law: Any non-zero base raised to the power of 0 is equal to 1. Mathematically, \\( a^0 = 1 \\)."
@@ -2869,7 +2869,7 @@
             "\\(1\\)"
           ],
           "answer": 3,
-          "solution": "The correct answer is \\(7\\).",
+          "solution": "The correct answer is \\(1\\).",
           "steps": [
             {
               "explain": "This question uses the Zero Index Law: any number or expression raised to the power of 0 equals 1.",

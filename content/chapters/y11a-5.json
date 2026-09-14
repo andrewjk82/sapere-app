@@ -1715,7 +1715,7 @@
             "\\(y = 3x + 2\\)",
             "\\(y = 3(x + 4) - 2\\)"
           ],
-          "answer": 1,
+          "answer": 2,
           "hint": "Add \\(4\\) to the entire function.",
           "solution": "\\(y = (3x - 2) + 4 = 3x + 2\\).",
           "steps": [

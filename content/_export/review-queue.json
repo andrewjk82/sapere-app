@@ -54,7 +54,9 @@
    "\\(b = \\pi\\)",
    "\\(b = 2\\pi\\)",
    "\\(b = 4\\pi\\)"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "asc2020-mc4",
@@ -92,7 +94,9 @@
    "\\(33\\)",
    "\\(45\\)",
    "\\(42\\)"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "asc2020-mc5",
@@ -187,7 +191,9 @@
    "\\(25000 \\div 1.3686\\)",
    "\\(25000 \\times 1.1717\\)",
    "\\(25000 \\div 1.1717\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "asc2020-mc9",
@@ -453,7 +459,9 @@
    "\\((1, \\ln 2)\\) and \\((0, 0)\\)",
    "\\((2, \\ln 5)\\) and \\((-2, \\ln 5)\\)",
    "\\((1, \\log 2)\\) and \\((-1, \\log 2)\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "baulko2020-q14ci",
@@ -1308,7 +1316,9 @@
    "\\((0, 0)\\) is a maximum turning point; \\((3, 27)\\) is a horizontal point of inflection.",
    "\\((0, 0)\\) is a horizontal point of inflection; \\((3, 27)\\) is a minimum turning point.",
    "\\((0, 0)\\) is a horizontal point of inflection; \\((3, 27)\\) is a maximum turning point."
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "dane2020s-q21a",
@@ -1327,7 +1337,9 @@
    "\\((0, 0)\\) is a maximum turning point; \\((2, 16)\\) is a horizontal point of inflection.",
    "\\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a minimum turning point.",
    "\\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a maximum turning point."
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "fortst2020-mc3",
@@ -3070,7 +3082,9 @@
    "no real zeroes",
    "4, two irrational roots",
    "4, two rational roots"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y11e1-4c-q2b",
@@ -3089,7 +3103,9 @@
    "40, two irirrational roots",
    "40, two irrational roots",
    "Not enough information"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y11e1-4c-q2c",
@@ -3108,7 +3124,9 @@
    "-16, no real roots",
    "-17, no real roots",
    "-15, no real roots"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y11e1-4c-q2e",
@@ -3127,7 +3145,9 @@
    "-3, no real roots",
    "-4, no real roots",
    "-2, no real roots"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y11e1-4c-q2f",
@@ -3146,7 +3166,9 @@
    "361, two irrational roots",
    "None of the above",
    "no real zeroes"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y11e1-4c-q3c",
@@ -3165,7 +3187,9 @@
    "-3/3",
    "-2/3",
    "-1/3"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y11e1-4c-q3d",
@@ -3184,7 +3208,9 @@
    "11",
    "10",
    "12"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y11a-6e-q10b",
@@ -8982,7 +9008,9 @@
    "\\(-4\\)",
    "\\(-5\\)",
    "\\(4\\)"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y10-14e-q1f",
@@ -9001,7 +9029,9 @@
    "\\(-3\\)",
    "\\(-4\\)",
    "\\(3\\)"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y10-14e-q1h",
@@ -9020,7 +9050,9 @@
    "\\(-2\\)",
    "\\(-3\\)",
    "\\(2\\)"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y10-14e-q2a",
@@ -12250,7 +12282,9 @@
    "\\(\\sqrt{7}+\\sqrt{3}\\)",
    "\\(\\sqrt{7}-\\sqrt{3}\\)",
    "\\(4\\sqrt{2}+7\\)"
-  ]
+  ],
+  "resolved": false,
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y10-2g-q11",
@@ -13010,7 +13044,9 @@
    "\\( x = -2, \\; y = 3 \\)",
    "\\( x = -2, \\; y = -3 \\)",
    "\\( x = 2, \\; y = 3 \\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "00428f2373f88b962c3e7a07936b33f3",
@@ -13067,7 +13103,9 @@
    "\\( 8 \\text{ and } 7 \\)",
    "\\( -9 \\text{ and } 6 \\)",
    "\\( 9 \\text{ and } 6 \\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "00df4a1dd22197a17f59226df4343534",
@@ -13086,7 +13124,9 @@
    "\\( x = 4, \\; y = 1 \\)",
    "\\( x = -4, \\; y = 1 \\)",
    "\\( x = -4, \\; y = -1 \\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "0206d7bb16f3fe47f832d9533a8f2e6a",
@@ -13426,7 +13466,9 @@
    "\\( x = -7, \\; y = -3 \\)",
    "\\( x = 7, \\; y = 3 \\)",
    "\\( x = -7, \\; y = 3 \\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "36639205166a37a9b833ba7ce5d5560c",
@@ -13612,7 +13654,9 @@
    "\\( x = -2, \\; y = -3 \\)",
    "\\( x = 2, \\; y = -3 \\)",
    "\\( x = 2, \\; y = 3 \\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "5505e185be3603e3850daabf5e72f31a",
@@ -13859,7 +13903,9 @@
    "\\( x = -3, \\; y = 2 \\)",
    "\\( x = -3, \\; y = -2 \\)",
    "\\( x = 3, \\; y = -2 \\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "91eb465a6c66678b5a685727ecb7849a",
@@ -13916,7 +13962,9 @@
    "\\( x = 2, \\; y = 4 \\)",
    "\\( x = -2, \\; y = -4 \\)",
    "\\( x = -2, \\; y = 4 \\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "a13f44e86f30a5fae10d070f870c8817",
@@ -13973,7 +14021,9 @@
    "\\( x = 2, \\; y = 1 \\)",
    "\\( x = -2, \\; y = -1 \\)",
    "\\( x = 2, \\; y = -1 \\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "a6fb0e5a18f5a4aab2229fc016c5cc5f",
@@ -14199,7 +14249,9 @@
    "\\( x = -2, \\; y = -3 \\)",
    "\\( x = -2, \\; y = 3 \\)",
    "\\( x = 2, \\; y = -3 \\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "c5997788183f608217359896dc5abd6d",
@@ -14255,7 +14307,9 @@
    "\\( x = 2, \\; y = 3 \\)",
    "\\( x = -2, \\; y = -3 \\)",
    "\\( x = -2, \\; y = 3 \\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "ce952c0948e6809c620644d1d7b83647",
@@ -14274,7 +14328,9 @@
    "\\( x = -5, \\; y = -2 \\)",
    "\\( x = 5, \\; y = 2 \\)",
    "\\( x = 5, \\; y = -2 \\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "cf949946557956ef90adbc2bcf598354",
@@ -14969,7 +15025,9 @@
    "\\(y = 3x - 6\\)",
    "\\(y = 3(x-4) - 2\\)",
    "\\(y = 3(x+4) - 2\\)"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y11a-5A-new-11a",
@@ -19928,7 +19986,9 @@
    "\\(-1, 45\\)",
    "\\(1, 45\\)",
    "\\(45, 1\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y11a-7d-q17g",
@@ -20750,7 +20810,9 @@
    "Graph II",
    "Graph III",
    "Graph I"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y12a-3a-q16c",
@@ -20769,7 +20831,9 @@
    "Graph II",
    "Graph I",
    "Graph IV"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y12a-3a-q16d",
@@ -20788,7 +20852,9 @@
    "Graph II",
    "Graph IV",
    "Graph I"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y12a-3a-q6a",
@@ -21389,7 +21455,9 @@
    "\\(\\dfrac{1}{15}\\)",
    "\\(3\\)",
    "\\(15\\)"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-4i-q1g",
@@ -21408,7 +21476,9 @@
    "\\(\\dfrac{1}{12}\\)",
    "\\(3\\)",
    "\\(12\\)"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-4i-q1h",
@@ -21427,7 +21497,9 @@
    "\\(\\dfrac{1}{15}\\)",
    "\\(3\\)",
    "\\(15\\)"
-  ]
+  ],
+  "resolved": "seed-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-6a-q3a",
@@ -21807,7 +21879,9 @@
    "\\(3 + 5 + 4 + 0.1 + 0.08 + 0.009\\)",
    "\\(300 + 50 + 4 + \\frac{1}{100} + \\frac{8}{1000} + \\frac{9}{10000}\\)",
    "\\(300 + 50 + 4 + \\frac{1}{10} + \\frac{8}{100} + \\frac{9}{1000}\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q11",
@@ -21826,7 +21900,9 @@
    "\\(2.468\\)",
    "\\(2.46\\)",
    "\\(246.8\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q14",
@@ -21845,7 +21921,9 @@
    "3",
    "1",
    "2"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q18",
@@ -21864,7 +21942,9 @@
    "\\(0.42\\)",
    "\\(0.5\\)",
    "They are equal"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q19",
@@ -21883,7 +21963,9 @@
    "They are equal",
    "\\(2.7\\)",
    "\\(2.83\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q2",
@@ -21902,7 +21984,9 @@
    "\\frac{6148}{1000}",
    "\\frac{6148}{100}",
    "\\frac{6148}{10}"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q20",
@@ -21921,7 +22005,9 @@
    "None of these",
    "\\(7.09\\)",
    "They are equal"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q21",
@@ -21940,7 +22026,9 @@
    "\\(4.82\\)",
    "None of these",
    "They are equal"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q24",
@@ -21959,7 +22047,9 @@
    "\\(9.88867\\)",
    "None of these",
    "\\(9.453\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q26",
@@ -21978,7 +22068,9 @@
    "\\(185.34\\)",
    "\\(185.3468\\)",
    "None of these"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q27",
@@ -21997,7 +22089,9 @@
    "\\(1.24\\)",
    "They are equal",
    "\\(12.4\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q28",
@@ -22016,7 +22110,9 @@
    "They are equal",
    "\\(323.78658\\)",
    "None of these"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q29",
@@ -22035,7 +22131,9 @@
    "\\(4.59999\\)",
    "\\(4.67\\)",
    "None of these"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q3",
@@ -22054,7 +22152,9 @@
    "0.069",
    "0.69",
    "6.9"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q30",
@@ -22073,7 +22173,9 @@
    "\\(0.3, 3.4, 8.3, 5.09, 9.264\\)",
    "\\(0.3, 3.4, 5.09, 8.3, 9.264\\)",
    "\\(0.3, 5.09, 3.4, 8.3, 9.264\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q31",
@@ -22092,7 +22194,9 @@
    "\\(2.08, 2.48, 2.40, 2.8, 2.84\\)",
    "\\(2.08, 2.40, 2.48, 2.8, 2.84\\)",
    "\\(2.08, 2.40, 2.48, 2.84, 2.8\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q33",
@@ -22111,7 +22215,9 @@
    "\\(5.3, 5.55, 5.8143, 5.777, 5.89463\\)",
    "\\(5.3, 5.55, 5.777, 5.8143, 5.89463\\)",
    "\\(5.55, 5.3, 5.777, 5.8143, 5.89463\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q35",
@@ -22130,7 +22236,9 @@
    "Exactly halfway between \\(6\\) and \\(7\\)",
    "Closer to \\(7\\)",
    "None of these"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q36",
@@ -22149,7 +22257,9 @@
    "Exactly halfway between \\(6\\) and \\(7\\)",
    "Closer to \\(6\\)",
    "None of these"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q37",
@@ -22168,7 +22278,9 @@
    "Closer to \\(6\\)",
    "None of these",
    "Closer to \\(7\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q38",
@@ -22187,7 +22299,9 @@
    "Closer to \\(7\\)",
    "Closer to \\(6\\)",
    "Exactly halfway between \\(6\\) and \\(7\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q39",
@@ -22206,7 +22320,9 @@
    "Closer to \\(7\\)",
    "None of these",
    "Exactly halfway between \\(6\\) and \\(7\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q4",
@@ -22244,7 +22360,9 @@
    "Closer to \\(7\\)",
    "None of these",
    "Exactly halfway between \\(6\\) and \\(7\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q41",
@@ -22263,7 +22381,9 @@
    "Exactly halfway between \\(6\\) and \\(7\\)",
    "Closer to \\(6\\)",
    "None of these"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q42",
@@ -22282,7 +22402,9 @@
    "Exactly halfway between \\(6\\) and \\(7\\)",
    "None of these",
    "Closer to \\(6\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q44",
@@ -22301,7 +22423,9 @@
    "Exactly halfway between \\(6\\) and \\(7\\)",
    "Closer to \\(6\\)",
    "None of these"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q45",
@@ -22320,7 +22444,9 @@
    "None of these",
    "Closer to \\(6\\)",
    "Exactly halfway between \\(6\\) and \\(7\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q6",
@@ -22339,7 +22465,9 @@
    "Hundredths",
    "Tenths",
    "Thousandths"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q64",
@@ -22358,7 +22486,9 @@
    "Units",
    "Tenths",
    "Thousandths"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q65",
@@ -22377,7 +22507,9 @@
    "Tenths",
    "Units",
    "Hundredths"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q66",
@@ -22396,7 +22528,9 @@
    "Tenths",
    "Hundredths",
    "Units"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q67",
@@ -22415,7 +22549,9 @@
    "Ten-thousandths",
    "Tenths",
    "Units"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q68",
@@ -22434,7 +22570,9 @@
    "Tenths",
    "Units",
    "Thousandths"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q69",
@@ -22453,7 +22591,9 @@
    "Thousandths",
    "Hundredths",
    "Units"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q7",
@@ -22472,7 +22612,9 @@
    "Hundredths",
    "Tenths",
    "Units"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q71",
@@ -22491,7 +22633,9 @@
    "Units",
    "Ten-thousandths",
    "Hundredths"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q72",
@@ -22510,7 +22654,9 @@
    "None of these",
    "\\(0.54\\)",
    "\\(0.9\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q73",
@@ -22529,7 +22675,9 @@
    "They are equal",
    "\\(0.6\\)",
    "None of these"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q75",
@@ -22548,7 +22696,9 @@
    "\\(3.2\\)",
    "\\(3.1976\\)",
    "None of these"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q76",
@@ -22567,7 +22717,9 @@
    "\\(8.7\\)",
    "They are equal",
    "None of these"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q78",
@@ -22586,7 +22738,9 @@
    "None of these",
    "They are equal",
    "\\(2.00004\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q8",
@@ -22605,7 +22759,9 @@
    "Thousandths",
    "Tenths",
    "Hundredths"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q81",
@@ -22624,7 +22780,9 @@
    "\\(4.068, 4.007, 4.072, 4.2, 4.56\\)",
    "\\(4.007, 4.072, 4.068, 4.2, 4.56\\)",
    "\\(4.007, 4.068, 4.072, 4.2, 4.56\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q82",
@@ -22643,7 +22801,9 @@
    "\\(5.0003, 5.304, 5.33333, 5.4, 5.43\\)",
    "\\(5.304, 5.0003, 5.33333, 5.4, 5.43\\)",
    "\\(5.0003, 5.304, 5.33333, 5.43, 5.4\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7a-q9",
@@ -22662,7 +22822,9 @@
    "Tenths",
    "Hundred-thousandths",
    "Hundredths"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7b-q1",
@@ -22814,7 +22976,9 @@
    "\\(4.56\\)",
    "\\(0.456\\)",
    "\\(45.6\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7b-q19",
@@ -22852,7 +23016,9 @@
    "\\(\\frac{75}{10}\\)",
    "\\(\\frac{3}{5}\\)",
    "\\(\\frac{1}{4}\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7b-q21",
@@ -23118,7 +23284,9 @@
    "\\(57.550\\)",
    "\\(58.556\\)",
    "\\(57.556\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7c-q5",
@@ -23137,7 +23305,9 @@
    "\\(311.5218\\)",
    "\\(301.5218\\)",
    "\\(312.5218\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7c-q6",
@@ -23156,7 +23326,9 @@
    "\\(16.391\\)",
    "\\(15.391384\\)",
    "\\(16.391384\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7e-q2",
@@ -23175,7 +23347,9 @@
    "\\(280.672\\)",
    "\\(28.0672\\)",
    "\\(2806.72\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7f-q1",
@@ -23194,7 +23368,9 @@
    "\\(17.31\\)",
    "\\(173.1\\)",
    "\\(43.275\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7f-q2",
@@ -23213,7 +23389,9 @@
    "\\(12.88\\dot{3}\\)",
    "\\(128.\\dot{8}\\)",
    "\\(128.8\\dot{3}\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7f-q3",
@@ -23232,7 +23410,9 @@
    "\\(8692.3\\)",
    "\\(86920.3\\)",
    "\\(8692.03\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7g-q1",
@@ -23308,7 +23488,9 @@
    "\\(0.\\dot{8}3\\)",
    "\\(0.\\dot{8}\\dot{3}\\)",
    "\\(0.8\\dot{3}\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y7-7g-q5",
@@ -23536,7 +23718,9 @@
    "\\(2x+4\\)",
    "\\(2x+1\\)",
    "\\(2x-1\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y9-1e-q9a",
@@ -23669,7 +23853,9 @@
    "\\(\\sqrt{10}\\)",
    "\\(2\\sqrt{10}\\)",
    "\\(4\\sqrt{10}\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y9-11a-q7b",
@@ -23688,7 +23874,9 @@
    "\\(3\\sqrt{5}\\)",
    "\\(4\\sqrt{5}\\)",
    "\\(\\sqrt{5}\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y9-11a-q7c",
@@ -23707,7 +23895,9 @@
    "\\(3\\sqrt{5}\\)",
    "\\(\\sqrt{5}\\)",
    "\\(4\\sqrt{5}\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y9-11b-q8b",
@@ -25622,7 +25812,9 @@
    "\\(1\\)",
    "\\(0\\)",
    "\\(2b\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y9-8a-12c",
@@ -25641,7 +25833,9 @@
    "\\(7\\)",
    "\\(0\\)",
    "\\(7n\\)"
-  ]
+  ],
+  "resolved": "firestore-was-right",
+  "resolvedAt": "2026-09-14"
  },
  {
   "id": "y9-8a-15a",

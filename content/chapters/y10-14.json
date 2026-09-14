@@ -5534,7 +5534,7 @@
             "\\(-5\\)",
             "\\(4\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Write 1/16 as a negative power of 2.",
           "solution": "\\(\\log_2 (16^{-1}) = \\log_2(2^{-4}) = -4\\)",
           "steps": [
@@ -5563,7 +5563,7 @@
             "\\(-4\\)",
             "\\(3\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Write 1/125 as a negative power of 5.",
           "solution": "\\(\\log_5 (125^{-1}) = \\log_5(5^{-3}) = -3\\)",
           "steps": [
@@ -5618,7 +5618,7 @@
             "\\(-3\\)",
             "\\(2\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Write 0.01 as a fraction, then as a negative power of 10.",
           "solution": "\\(\\log_{10} (0.01) = \\log_{10}(10^{-2}) = -2\\)",
           "steps": [

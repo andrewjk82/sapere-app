@@ -1,0 +1,1651 @@
+[
+ {
+  "id": "asc2020-mc10",
+  "file": "exam:asc-2020.json",
+  "stem": "Consider the cumulative distribution function:\n$$F(x) = \\begin{cases} 0 & , quad (-\\infty, 0) \\\\ \\sin\\!\\left(\\dfrac{x}{2}\\right) & , quad [0, b] \\\\ 1 & , quad (b, infty) \\end{cases}$$\nFind $b$.",
+  "options": [
+   "\\(b = 2\\pi\\)",
+   "\\(b = \\dfrac{\\pi}{2}\\)",
+   "\\(b = \\pi\\)",
+   "\\(b = 4\\pi\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 2,
+  "solutionHint": "seed",
+  "solution": "The correct answer is \\(b = \\pi\\).",
+  "lastStep": "\\(b = \\pi\\)"
+ },
+ {
+  "id": "asc2020-mc4v",
+  "file": "exam:asc-2020.json",
+  "stem": "A set of data has a lower quartile of $15$ and an upper quartile of $27$. Assuming there are no outliers, what is the maximum possible value in the data set?",
+  "options": [
+   "45",
+   "27",
+   "33",
+   "42"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 0,
+  "solutionHint": "seed",
+  "solution": "The correct answer is \\(45\\).",
+  "lastStep": "\\(45\\)"
+ },
+ {
+  "id": "asc2020-mc8",
+  "file": "exam:asc-2020.json",
+  "stem": "Percy hopes to have $\\\\$25\\\\,000$ in 4 years to buy a car. He opens an account today which pays interest of 4% p.a., compounded every 6 months. Using the compound interest table, which expression calculates the minimum single sum that Percy needs to invest today to ensure he reaches his savings goal?\n\nNote: 4% p.a. compounded every 6 months means 2% per period, and 4 years = 8 periods. The compounded value of $1 at 2% over 8 periods is 1.1717.",
+  "options": [
+   "\\(25000 \\times 1.3686\\)",
+   "\\(25000 \\div 1.3686\\)",
+   "\\(25000 \\times 1.1717\\)",
+   "\\(25000 \\div 1.1717\\)"
+  ],
+  "current": 3,
+  "fsIdx": 3,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "The correct answer is \\(25000 \\div 1.1717\\).",
+  "lastStep": "\\(25000 \\times 1.3686\\)"
+ },
+ {
+  "id": "baulko2020-q13diii",
+  "file": "exam:baulko-2020.json",
+  "stem": "Find any points of inflection of $f(x) = \\ln(x^2+1)$.",
+  "options": [
+   "\\((1, \\ln 2)\\) and \\((-1, \\ln 2)\\)",
+   "\\((1, \\ln 2)\\) and \\((0, 0)\\)",
+   "\\((2, \\ln 5)\\) and \\((-2, \\ln 5)\\)",
+   "\\((1, \\log 2)\\) and \\((-1, \\log 2)\\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": "fs",
+  "solution": "The correct answer is $(1, \\ln 2)$ and $(-1, \\ln 2)$.",
+  "lastStep": "$$ \\therefore \\text{Points of inflection at } (1, \\ln 2) \\text{ and } (-1, \\ln 2) $$"
+ },
+ {
+  "id": "dane2020-q21a",
+  "file": "exam:dane-2020.json",
+  "stem": "Consider the function $f(x) = 4x^3 - x^4$. Find the stationary points on the curve $y = f(x)$ and determine their nature.",
+  "options": [
+   "\\((0, 0)\\) is a minimum turning point; \\((3, 27)\\) is a maximum turning point.",
+   "\\((0, 0)\\) is a maximum turning point; \\((3, 27)\\) is a horizontal point of inflection.",
+   "\\((0, 0)\\) is a horizontal point of inflection; \\((3, 27)\\) is a minimum turning point.",
+   "\\((0, 0)\\) is a horizontal point of inflection; \\((3, 27)\\) is a maximum turning point."
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "The correct answer is \\((0, 0)\\) is a horizontal point of inflection; \\((3, 27)\\) is a maximum turning point.",
+  "lastStep": "$$ \\text{Since } f'(x) \\text{ does not change sign, } (0, 0) \\text{ is a horizontal point of inflection.} $$"
+ },
+ {
+  "id": "dane2020s-q21a",
+  "file": "exam:dane-2020.json",
+  "stem": "Consider $f(x) = 8x^3 - 3x^4$. Find the stationary points on $y = f(x)$ and determine their nature.",
+  "options": [
+   "\\((0, 0)\\) is a minimum turning point; \\((2, 16)\\) is a maximum turning point.",
+   "\\((0, 0)\\) is a maximum turning point; \\((2, 16)\\) is a horizontal point of inflection.",
+   "\\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a minimum turning point.",
+   "\\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a maximum turning point."
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "The correct answer is \\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a maximum turning point.",
+  "lastStep": "$$ \\text{Since } f'(x) \\text{ does not change sign, } (0, 0) \\text{ is a horizontal point of inflection.} $$"
+ },
+ {
+  "id": "y11e1-4c-q2a",
+  "file": "exam:year11ch4c.json",
+  "stem": "Find the discriminant \\(\\Delta\\) for the equation \\(x^2 - 6x + 8 = 0\\). Hence state how many roots there are, and whether or not they are rational.",
+  "options": [
+   "None of the above",
+   "no real zeroes",
+   "4, two irrational roots",
+   "4, two rational roots"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "The discriminant is \\(\\Delta = 4\\). Since \\(\\Delta > 0\\) and is a perfect square, there are two rational roots.",
+  "lastStep": "\\Delta = 4 \\implies \\mathrm{two\\:rational\\:roots}"
+ },
+ {
+  "id": "y11e1-4c-q2b",
+  "file": "exam:year11ch4c.json",
+  "stem": "Find the discriminant \\(\\Delta\\) for the equation \\(x^2 + 4x - 6 = 0\\). Hence state how many roots there are, and whether or not they are rational.",
+  "options": [
+   "no real zeroes",
+   "40, two irirrational roots",
+   "40, two irrational roots",
+   "Not enough information"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "The discriminant is \\(\\Delta = 40\\). Since \\(\\Delta > 0\\) and is not a perfect square, there are two irrational roots.",
+  "lastStep": "\\Delta = 40 \\implies \\mathrm{two\\:irrational\\:roots}"
+ },
+ {
+  "id": "y11e1-4c-q2c",
+  "file": "exam:year11ch4c.json",
+  "stem": "Find the discriminant \\(\\Delta\\) for the equation \\(x^2 + 2x + 5 = 0\\). Hence state how many roots there are, and whether or not they are rational.",
+  "options": [
+   "16, no real roots",
+   "-16, no real roots",
+   "-17, no real roots",
+   "-15, no real roots"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "The discriminant is \\(\\Delta = -16\\). Since \\(\\Delta < 0\\), there are no real roots.",
+  "lastStep": "\\Delta = -16 < 0 \\implies \\mathrm{no\\:real\\:roots}"
+ },
+ {
+  "id": "y11e1-4c-q2e",
+  "file": "exam:year11ch4c.json",
+  "stem": "Find the discriminant \\(\\Delta\\) for the equation \\(x^2 - 5x + 7 = 0\\). Hence state how many roots there are, and whether or not they are rational.",
+  "options": [
+   "3, no real roots",
+   "-3, no real roots",
+   "-4, no real roots",
+   "-2, no real roots"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "The discriminant is \\(\\Delta = -3\\). Since \\(\\Delta < 0\\), there are no real roots.",
+  "lastStep": "\\Delta = -3 < 0 \\implies \\mathrm{no\\:real\\:roots}"
+ },
+ {
+  "id": "y11e1-4c-q2f",
+  "file": "exam:year11ch4c.json",
+  "stem": "Find the discriminant \\(\\Delta\\) for the equation \\(4x^2 + 13x - 12 = 0\\). Hence state how many roots there are, and whether or not they are rational.",
+  "options": [
+   "361, two rational roots",
+   "361, two irrational roots",
+   "None of the above",
+   "no real zeroes"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "The discriminant is \\(\\Delta = 361\\). Since \\(\\Delta = 19^2 > 0\\) and is a perfect square, there are two distinct rational roots.",
+  "lastStep": "\\sqrt{361} = 19 \\implies \\mathrm{two\\:distinct\\:rational\\:roots}"
+ },
+ {
+  "id": "y11e1-4c-q3c",
+  "file": "exam:year11ch4c.json",
+  "stem": "Find the value of \\(k\\) for which the quadratic function \\(y = 3x^2 - 4x + (k + 2)\\) has exactly one zero.",
+  "options": [
+   "2/3",
+   "-3/3",
+   "-2/3",
+   "-1/3"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "Set \\(\\Delta = 0\\: \\((-4)^2 - 4(3)(k+2) = 0 \\implies 16 - 12(k+2) = 0 \\implies 16 - 12k - 24 = 0 \\implies -12k = 8 \\implies k = -2/3\\).",
+  "lastStep": "16 - 12k - 24 = 0 \\implies -12k = 8 \\implies k = -\\frac{2}{3}"
+ },
+ {
+  "id": "y11e1-4c-q3d",
+  "file": "exam:year11ch4c.json",
+  "stem": "Find the value of \\(k\\) for which the quadratic function \\(y = (k - 3)x^2 + 8x + 2\\) has exactly one zero.",
+  "options": [
+   "-11",
+   "11",
+   "10",
+   "12"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 1,
+  "solutionHint": "seed",
+  "solution": "Set \\(\\Delta = 0\\: \\(8^2 - 4(k-3)(2) = 0 \\implies 64 - 8(k-3) = 0 \\implies 8(k-3) = 64 \\implies k-3 = 8 \\implies k = 11\\).",
+  "lastStep": "8(k-3) = 64 \\implies k - 3 = 8 \\implies k = 11"
+ },
+ {
+  "id": "y10-14e-q1e",
+  "file": "y10-14.json",
+  "stem": "Calculate the logarithm: \\(\\log_2 \\frac{1}{16}\\)",
+  "options": [
+   "\\(-4\\)",
+   "\\(-3\\)",
+   "\\(-5\\)",
+   "\\(4\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": "seed",
+  "solution": "\\(\\log_2 (16^{-1}) = \\log_2(2^{-4}) = -4\\)",
+  "lastStep": "\\(\\log_2 \\frac{1}{16} = -4\\)"
+ },
+ {
+  "id": "y10-14e-q1f",
+  "file": "y10-14.json",
+  "stem": "Calculate the logarithm: \\(\\log_5 \\frac{1}{125}\\)",
+  "options": [
+   "\\(-3\\)",
+   "\\(-2\\)",
+   "\\(-4\\)",
+   "\\(3\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": "seed",
+  "solution": "\\(\\log_5 (125^{-1}) = \\log_5(5^{-3}) = -3\\)",
+  "lastStep": "\\(\\log_5 \\frac{1}{125} = -3\\)"
+ },
+ {
+  "id": "y10-14e-q1h",
+  "file": "y10-14.json",
+  "stem": "Calculate the logarithm: \\(\\log_{10} (0.01)\\)",
+  "options": [
+   "\\(-2\\)",
+   "\\(-1\\)",
+   "\\(-3\\)",
+   "\\(2\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": "seed",
+  "solution": "\\(\\log_{10} (0.01) = \\log_{10}(10^{-2}) = -2\\)",
+  "lastStep": "\\(\\log_{10}(0.01) = -2\\)"
+ },
+ {
+  "id": "y10-2g-q10",
+  "file": "y10-2.json",
+  "stem": "A square box of side 9 cm is leaning against a vertical wall. Find the height of point C above the floor in exact form.",
+  "options": [
+   "\\(3\\sqrt{2}\\)",
+   "\\(\\sqrt{7}+\\sqrt{3}\\)",
+   "\\(\\sqrt{7}-\\sqrt{3}\\)",
+   "\\(4\\sqrt{2}+7\\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "The correct answer is \\(4\\sqrt{2}+7\\).",
+  "lastStep": "h_C = 3\\sqrt{2}"
+ },
+ {
+  "id": "0038d23960d139db7d6eb9044f37f527",
+  "file": "y11a-1.json",
+  "stem": "Solve the simultaneous equations:\\n\\\\(  3x - 5y = 21  \\\\)\\n\\\\(  2x + 3y = -5  \\\\)",
+  "options": [
+   "\\( x = 2, \\; y = -3 \\)",
+   "\\( x = -2, \\; y = 3 \\)",
+   "\\( x = -2, \\; y = -3 \\)",
+   "\\( x = 2, \\; y = 3 \\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "\\( x = 2, \\; y = -3 \\)",
+  "lastStep": "<div style=\"text-align: center;\">\\( 2(2) + 3y = -5 \\Rightarrow 3y = -9 \\Rightarrow y = -3 \\)</div>"
+ },
+ {
+  "id": "00821c7fba77eeea4a22c24d95581a6c",
+  "file": "y11a-1.json",
+  "stem": "The sum of two numbers is 15 and their difference is 3. Find the two numbers.",
+  "options": [
+   "\\( 10 \\text{ and } 5 \\)",
+   "\\( 8 \\text{ and } 7 \\)",
+   "\\( -9 \\text{ and } 6 \\)",
+   "\\( 9 \\text{ and } 6 \\)"
+  ],
+  "current": 3,
+  "fsIdx": 3,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "\\( 9 \\text{ and } 6 \\)",
+  "lastStep": "<div style=\"text-align: center;\">\\( 9 + y = 15 \\Rightarrow y = 6 \\)</div>"
+ },
+ {
+  "id": "00df4a1dd22197a17f59226df4343534",
+  "file": "y11a-1.json",
+  "stem": "Solve simultaneously:\\n\\\\(  x + y = 5  \\\\)\\n\\\\(  x^2 - y^2 = 15  \\\\)",
+  "options": [
+   "\\( x = 4, \\; y = -1 \\)",
+   "\\( x = 4, \\; y = 1 \\)",
+   "\\( x = -4, \\; y = 1 \\)",
+   "\\( x = -4, \\; y = -1 \\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "\\( x = 4, \\; y = 1 \\)",
+  "lastStep": "<div style=\"text-align: center;\">\\( y = 5 - (4) = 1 \\)</div>"
+ },
+ {
+  "id": "35d27203c66ff0bcc084a802ea01f3e9",
+  "file": "y11a-1.json",
+  "stem": "Solve the simultaneous equations:\\n\\\\(  4x - 5y = 13  \\\\)\\n\\\\(  6x + 5y = 57  \\\\)",
+  "options": [
+   "\\( x = 7, \\; y = 3 \\)",
+   "\\( x = -7, \\; y = -3 \\)",
+   "\\( x = 7, \\; y = -3 \\)",
+   "\\( x = -7, \\; y = 3 \\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "\\( x = 7, \\; y = 3 \\)",
+  "lastStep": "<div style=\"text-align: center;\">\\( 4(7) - 5y = 13 \\)<br>\\( 28 - 5y = 13 \\Rightarrow 5y = 15 \\Rightarrow y = 3 \\)</div>"
+ },
+ {
+  "id": "54363a1aebf887b79f1606080715072c",
+  "file": "y11a-1.json",
+  "stem": "Solve the simultaneous equations:\\n\\\\(  2x + 5y = 19  \\\\)\\n\\\\(  3x - 2y = 0  \\\\)",
+  "options": [
+   "\\( x = 2, \\; y = 3 \\)",
+   "\\( x = -2, \\; y = -3 \\)",
+   "\\( x = -2, \\; y = 3 \\)",
+   "\\( x = 2, \\; y = -3 \\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "\\( x = 2, \\; y = 3 \\)",
+  "lastStep": "<div style=\"text-align: center;\">\\( 3(2) - 2y = 0 \\)<br>\\( 6 = 2y \\Rightarrow y = 3 \\)</div>"
+ },
+ {
+  "id": "91907c30b9689f426f8b7c47df3843c8",
+  "file": "y11a-1.json",
+  "stem": "Solve simultaneously:\\n\\\\(  x - y = 1  \\\\)\\n\\\\(  x^2 - y^2 = 5  \\\\)",
+  "options": [
+   "\\( x = 3, \\; y = 2 \\)",
+   "\\( x = -3, \\; y = 2 \\)",
+   "\\( x = -3, \\; y = -2 \\)",
+   "\\( x = 3, \\; y = -2 \\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "\\( x = 3, \\; y = 2 \\)",
+  "lastStep": "<div style=\"text-align: center;\">\\( x = 2 + 1 = 3 \\)</div>"
+ },
+ {
+  "id": "99ce6ba42ed6a19b1cd75fca11457478",
+  "file": "y11a-1.json",
+  "stem": "Solve simultaneously:\\n\\\\(  y = x^2  \\\\)\\n\\\\(  y = 4x - 4  \\\\)",
+  "options": [
+   "\\( x = 2, \\; y = 4 \\)",
+   "\\( x = -2, \\; y = -4 \\)",
+   "\\( x = -2, \\; y = 4 \\)",
+   "\\( x = 2, \\; y = -4 \\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "\\( x = 2, \\; y = 4 \\)",
+  "lastStep": "<div style=\"text-align: center;\">\\( y = 2^2 \\)<br>\\( y = 4 \\)</div>"
+ },
+ {
+  "id": "a646905334b5cbd5ff543d1d56ab58ce",
+  "file": "y11a-1.json",
+  "stem": "Solve the simultaneous equations:\\n\\\\(  2x + 3y = 7  \\\\)\\n\\\\(  5x - 4y = 6  \\\\)",
+  "options": [
+   "\\( x = -2, \\; y = -1 \\)",
+   "\\( x = 2, \\; y = 1 \\)",
+   "\\( x = -2, \\; y = 1 \\)",
+   "\\( x = 2, \\; y = -1 \\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "\\( x = 2, \\; y = 1 \\)",
+  "lastStep": "<div style=\"text-align: center;\">\\( 2(2) + 3y = 7 \\)<br>\\( 4 + 3y = 7 \\)<br>\\( 3y = 3 \\Rightarrow y = 1 \\)</div>"
+ },
+ {
+  "id": "c519c8ee02819521e1e2c40470783fdc",
+  "file": "y11a-1.json",
+  "stem": "Solve the simultaneous equations:\\n\\\\(  3x + 4y = 18  \\\\)\\n\\\\(  5x + 2y = 16  \\\\)",
+  "options": [
+   "\\( x = 2, \\; y = 3 \\)",
+   "\\( x = -2, \\; y = -3 \\)",
+   "\\( x = -2, \\; y = 3 \\)",
+   "\\( x = 2, \\; y = -3 \\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "\\( x = 2, \\; y = 3 \\)",
+  "lastStep": "<div style=\"text-align: center;\">\\( 3(2) + 4y = 18 \\)<br>\\( 6 + 4y = 18 \\)<br>\\( 4y = 12 \\Rightarrow y = 3 \\)</div>"
+ },
+ {
+  "id": "cc18cbe29ede46681b722e6c852215f4",
+  "file": "y11a-1.json",
+  "stem": "Solve the system:\\n\\\\(  x + y + z = 10  \\\\)\\n\\\\(  2x - y + z = 6  \\\\)\\n\\\\(  x + 2y - z = 3  \\\\)",
+  "options": [
+   "\\( x = 2, \\; y = -3 \\)",
+   "\\( x = 2, \\; y = 3 \\)",
+   "\\( x = -2, \\; y = -3 \\)",
+   "\\( x = -2, \\; y = 3 \\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "\\( x = 2, \\; y = 3 \\)",
+  "lastStep": "<div style=\"text-align: center;\">\\( y = 9 - 3(2) = 3 \\)</div>"
+ },
+ {
+  "id": "ce952c0948e6809c620644d1d7b83647",
+  "file": "y11a-1.json",
+  "stem": "Solve the simultaneous equations:\\n\\\\(  5x + 3y = 19  \\\\)\\n\\\\(  4x - 9y = 38  \\\\)",
+  "options": [
+   "\\( x = -5, \\; y = 2 \\)",
+   "\\( x = -5, \\; y = -2 \\)",
+   "\\( x = 5, \\; y = -2 \\)",
+   "\\( x = 5, \\; y = 2 \\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "\\( x = 5, \\; y = -2 \\)",
+  "lastStep": "<div style=\"text-align: center;\">\\( 5(5) + 3y = 19 \\)<br>\\( 25 + 3y = 19 \\)<br>\\( 3y = -6 \\Rightarrow y = -2 \\)</div>"
+ },
+ {
+  "id": "y11a-5-14a",
+  "file": "y11a-5.json",
+  "stem": "Write the new equation of the line \\(y = 3x - 2\\) after it is translated \\(4\\) units upwards.",
+  "options": [
+   "\\(y = 3(x - 4) - 2\\)",
+   "\\(y = 3x - 6\\)",
+   "\\(y = 3x + 2\\)",
+   "\\(y = 3(x + 4) - 2\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 2,
+  "solutionHint": "seed",
+  "solution": "\\(y = (3x - 2) + 4 = 3x + 2\\).",
+  "lastStep": "\\(y = 3x + 2\\)"
+ },
+ {
+  "id": "y11a-7d-q17a",
+  "file": "y11a-7.json",
+  "stem": "The three points A(1, 0), B(0, 5), and C(5, 4) form a triangle. Let \\(\\theta\\) be the angle between \\(AC\\) and the x-axis. Find the gradient of the line segment \\(AC\\) and hence determine \\(\\theta\\) (correct to the nearest degree).",
+  "options": [
+   "\\(1, 45\\)",
+   "\\(-1, 45\\)",
+   "\\(1, -45\\)",
+   "\\(45, 1\\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "\\(m_{AC} = \\frac{4-0}{5-1} = 1\\). Thus \\(\\tan \\theta = 1 \\implies \\theta = 45^{\\circ}\\).",
+  "lastStep": "\\[ \\tan \\theta = 1 \\implies \\theta = 45^\\circ \\]"
+ },
+ {
+  "id": "y12a-3a-q16a",
+  "file": "y12a-3.json",
+  "stem": "The graph of function A, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\nGraph I: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\nGraph II: A straight line through the origin with negative slope.\nGraph III: A straight line through the origin with positive slope.\nGraph IV: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
+  "options": [
+   "Graph III",
+   "Graph I",
+   "Graph II",
+   "Graph IV"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 3,
+  "solutionHint": "fs",
+  "solution": "0",
+  "lastStep": "The derivative of a positive quadratic is a linear function with a positive slope (e.g. \\( y' = 2x \\)). This matches Graph III."
+ },
+ {
+  "id": "y12a-3a-q16c",
+  "file": "y12a-3.json",
+  "stem": "The graph of function C, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\nGraph I: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\nGraph II: A straight line through the origin with negative slope.\nGraph III: A straight line through the origin with positive slope.\nGraph IV: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
+  "options": [
+   "Graph II",
+   "Graph I",
+   "Graph III",
+   "Graph IV"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 2,
+  "solutionHint": "fs",
+  "solution": "0",
+  "lastStep": "The derivative of a negative quadratic is a linear function with a negative slope (e.g. \\( y' = -2x \\)). This matches Graph II."
+ },
+ {
+  "id": "y12a-3a-q16d",
+  "file": "y12a-3.json",
+  "stem": "The graph of function D, \\( y = f(x) \\), is shown below. Match this function with the graph of its derivative.\n\nCandidates:\nGraph I: A parabola opening upwards with roots at \\( x = -1 \\) and \\( x = 1 \\).\nGraph II: A straight line through the origin with negative slope.\nGraph III: A straight line through the origin with positive slope.\nGraph IV: A parabola opening downwards with roots at \\( x = -1 \\) and \\( x = 1 \\).",
+  "options": [
+   "Graph IV",
+   "Graph I",
+   "Graph II",
+   "Graph III"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 3,
+  "solutionHint": "fs",
+  "solution": "0",
+  "lastStep": "The derivative of a negative cubic is a negative quadratic (a parabola opening downwards). It has roots at the turning points of the cubic (around \\( x = -1 \\) and \\( x = 1 \\)). This matches Graph IV."
+ },
+ {
+  "id": "y7-4i-q1a",
+  "file": "y7-4.json",
+  "stem": "Calculate:\n\\[6 \\div \\dfrac{2}{5}\\]",
+  "options": [
+   "\\(\\dfrac{12}{5}\\)",
+   "\\(\\dfrac{1}{15}\\)",
+   "\\(3\\)",
+   "\\(15\\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "\\(6 \\div \\dfrac{2}{5} = 6 \\times \\dfrac{5}{2} = 15\\).",
+  "lastStep": "\\(15\\)"
+ },
+ {
+  "id": "y7-4i-q1g",
+  "file": "y7-4.json",
+  "stem": "Calculate:\n\\[9 \\div \\dfrac{3}{4}\\]",
+  "options": [
+   "\\(\\dfrac{27}{4}\\)",
+   "\\(\\dfrac{1}{12}\\)",
+   "\\(3\\)",
+   "\\(12\\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "\\(9 \\div \\dfrac{3}{4} = 9 \\times \\dfrac{4}{3} = 12\\).",
+  "lastStep": "\\(12\\)"
+ },
+ {
+  "id": "y7-4i-q1h",
+  "file": "y7-4.json",
+  "stem": "Calculate:\n\\[12 \\div \\dfrac{4}{5}\\]",
+  "options": [
+   "\\(\\dfrac{48}{5}\\)",
+   "\\(\\dfrac{1}{15}\\)",
+   "\\(3\\)",
+   "\\(15\\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 3,
+  "solutionHint": "seed",
+  "solution": "\\(12 \\div \\dfrac{4}{5} = 12 \\times \\dfrac{5}{4} = 15\\).",
+  "lastStep": "\\(15\\)"
+ },
+ {
+  "id": "y7-7a-q1",
+  "file": "y7-7.json",
+  "stem": "Using the place values of the digits, write the decimal number \\(354.1809\\) as a sum of hundreds, tens, units, tenths, hundredths, thousandths and ten-thousandths.",
+  "options": [
+   "\\(300 + 50 + 4 + \\frac{1}{10} + \\frac{8}{100} + \\frac{0}{1000} + \\frac{9}{10000}\\)",
+   "\\(3 + 5 + 4 + 0.1 + 0.08 + 0.009\\)",
+   "\\(300 + 50 + 4 + \\frac{1}{100} + \\frac{8}{1000} + \\frac{9}{10000}\\)",
+   "\\(300 + 50 + 4 + \\frac{1}{10} + \\frac{8}{100} + \\frac{9}{1000}\\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 3,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\(354.1809 = 300 + 50 + 4 + \\frac{1}{10} + \\frac{8}{100} + \\frac{0}{1000} + \\frac{9}{10000}\\)"
+ },
+ {
+  "id": "y7-7a-q11",
+  "file": "y7-7.json",
+  "stem": "Which of the following is NOT a valid decimal that can be formed using the digits \\(2, 4, 6, 8\\) and a decimal point exactly once?",
+  "options": [
+   "\\(24.68\\)",
+   "\\(2.468\\)",
+   "\\(2.46\\)",
+   "\\(246.8\\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q14",
+  "file": "y7-7.json",
+  "stem": "Find the whole number closest to the decimal \\(2.17984\\).",
+  "options": [
+   "2.179840",
+   "3",
+   "1",
+   "2"
+  ],
+  "current": 3,
+  "fsIdx": 3,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q18",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(0.5\\) or \\(0.42\\)?",
+  "options": [
+   "None of these",
+   "\\(0.42\\)",
+   "\\(0.5\\)",
+   "They are equal"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q19",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(2.7\\) or \\(2.83\\)?",
+  "options": [
+   "None of these",
+   "They are equal",
+   "\\(2.7\\)",
+   "\\(2.83\\)"
+  ],
+  "current": 3,
+  "fsIdx": 3,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q2",
+  "file": "y7-7.json",
+  "stem": "Write \\(6.148\\) as a fraction whose denominator is a power of \\(10\\).",
+  "options": [
+   "\\frac{6148}{10000}",
+   "\\frac{6148}{1000}",
+   "\\frac{6148}{100}",
+   "\\frac{6148}{10}"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 2,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\(6.148 = \\frac{6148}{1000}\\)"
+ },
+ {
+  "id": "y7-7a-q20",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(7.9\\) or \\(7.09\\)?",
+  "options": [
+   "\\(7.9\\)",
+   "None of these",
+   "\\(7.09\\)",
+   "They are equal"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q21",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(4.82\\) or \\(4.083\\)?",
+  "options": [
+   "\\(4.083\\)",
+   "\\(4.82\\)",
+   "None of these",
+   "They are equal"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q24",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(9.88867\\) or \\(9.453\\)?",
+  "options": [
+   "They are equal",
+   "\\(9.88867\\)",
+   "None of these",
+   "\\(9.453\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q26",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(185.3468\\) or \\(185.34\\)?",
+  "options": [
+   "They are equal",
+   "\\(185.34\\)",
+   "\\(185.3468\\)",
+   "None of these"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q27",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(12.4\\) or \\(1.24\\)?",
+  "options": [
+   "None of these",
+   "\\(1.24\\)",
+   "They are equal",
+   "\\(12.4\\)"
+  ],
+  "current": 3,
+  "fsIdx": 3,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q28",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(323.78658\\) or \\(323.71189\\)?",
+  "options": [
+   "\\(323.71189\\)",
+   "They are equal",
+   "\\(323.78658\\)",
+   "None of these"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q29",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(4.67\\) or \\(4.59999\\)?",
+  "options": [
+   "They are equal",
+   "\\(4.59999\\)",
+   "\\(4.67\\)",
+   "None of these"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q3",
+  "file": "y7-7.json",
+  "stem": "Write \\(\\frac{69}{1000}\\) as a decimal.",
+  "options": [
+   "0.0069",
+   "0.069",
+   "0.69",
+   "6.9"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\(\\frac{69}{1000} = 0.069\\)"
+ },
+ {
+  "id": "y7-7a-q30",
+  "file": "y7-7.json",
+  "stem": "Order these numbers from smallest to largest: \\(3.4, 0.3, 9.264, 8.3, 5.09\\).",
+  "options": [
+   "\\(3.4, 0.3, 5.09, 8.3, 9.264\\)",
+   "\\(0.3, 3.4, 8.3, 5.09, 9.264\\)",
+   "\\(0.3, 3.4, 5.09, 8.3, 9.264\\)",
+   "\\(0.3, 5.09, 3.4, 8.3, 9.264\\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q31",
+  "file": "y7-7.json",
+  "stem": "Order these numbers from smallest to largest: \\(2.08, 2.84, 2.48, 2.8, 2.40\\).",
+  "options": [
+   "\\(2.40, 2.08, 2.48, 2.8, 2.84\\)",
+   "\\(2.08, 2.48, 2.40, 2.8, 2.84\\)",
+   "\\(2.08, 2.40, 2.48, 2.8, 2.84\\)",
+   "\\(2.08, 2.40, 2.48, 2.84, 2.8\\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q33",
+  "file": "y7-7.json",
+  "stem": "Order these numbers from smallest to largest: \\(5.55, 5.3, 5.8143, 5.777, 5.89463\\).",
+  "options": [
+   "\\(5.3, 5.55, 5.777, 5.89463, 5.8143\\)",
+   "\\(5.3, 5.55, 5.8143, 5.777, 5.89463\\)",
+   "\\(5.3, 5.55, 5.777, 5.8143, 5.89463\\)",
+   "\\(5.55, 5.3, 5.777, 5.8143, 5.89463\\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q35",
+  "file": "y7-7.json",
+  "stem": "State whether the decimal \\(6.99\\) is closer to \\(6\\) or closer to \\(7\\).",
+  "options": [
+   "Closer to \\(6\\)",
+   "Exactly halfway between \\(6\\) and \\(7\\)",
+   "Closer to \\(7\\)",
+   "None of these"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q36",
+  "file": "y7-7.json",
+  "stem": "State whether the decimal \\(6.6\\) is closer to \\(6\\) or closer to \\(7\\).",
+  "options": [
+   "Closer to \\(7\\)",
+   "Exactly halfway between \\(6\\) and \\(7\\)",
+   "Closer to \\(6\\)",
+   "None of these"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q37",
+  "file": "y7-7.json",
+  "stem": "State whether the decimal \\(6.52\\) is closer to \\(6\\) or closer to \\(7\\).",
+  "options": [
+   "Exactly halfway between \\(6\\) and \\(7\\)",
+   "Closer to \\(6\\)",
+   "None of these",
+   "Closer to \\(7\\)"
+  ],
+  "current": 3,
+  "fsIdx": 3,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q38",
+  "file": "y7-7.json",
+  "stem": "State whether the decimal \\(6.01\\) is closer to \\(6\\) or closer to \\(7\\).",
+  "options": [
+   "None of these",
+   "Closer to \\(7\\)",
+   "Closer to \\(6\\)",
+   "Exactly halfway between \\(6\\) and \\(7\\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q39",
+  "file": "y7-7.json",
+  "stem": "State whether the decimal \\(6.09879562\\) is closer to \\(6\\) or closer to \\(7\\).",
+  "options": [
+   "Closer to \\(6\\)",
+   "Closer to \\(7\\)",
+   "None of these",
+   "Exactly halfway between \\(6\\) and \\(7\\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q40",
+  "file": "y7-7.json",
+  "stem": "State whether the decimal \\(6.49\\) is closer to \\(6\\) or closer to \\(7\\).",
+  "options": [
+   "Closer to \\(6\\)",
+   "Closer to \\(7\\)",
+   "None of these",
+   "Exactly halfway between \\(6\\) and \\(7\\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q41",
+  "file": "y7-7.json",
+  "stem": "State whether the decimal \\(6.00003\\) is closer to \\(6\\) or closer to \\(7\\).",
+  "options": [
+   "Closer to \\(7\\)",
+   "Exactly halfway between \\(6\\) and \\(7\\)",
+   "Closer to \\(6\\)",
+   "None of these"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q42",
+  "file": "y7-7.json",
+  "stem": "State whether the decimal \\(6.499989\\) is closer to \\(6\\) or closer to \\(7\\).",
+  "options": [
+   "Closer to \\(7\\)",
+   "Exactly halfway between \\(6\\) and \\(7\\)",
+   "None of these",
+   "Closer to \\(6\\)"
+  ],
+  "current": 3,
+  "fsIdx": 3,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q44",
+  "file": "y7-7.json",
+  "stem": "State whether the decimal \\(6.83112\\) is closer to \\(6\\) or closer to \\(7\\).",
+  "options": [
+   "Closer to \\(7\\)",
+   "Exactly halfway between \\(6\\) and \\(7\\)",
+   "Closer to \\(6\\)",
+   "None of these"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q45",
+  "file": "y7-7.json",
+  "stem": "State whether the decimal \\(6.12109\\) is closer to \\(6\\) or closer to \\(7\\).",
+  "options": [
+   "Closer to \\(7\\)",
+   "None of these",
+   "Closer to \\(6\\)",
+   "Exactly halfway between \\(6\\) and \\(7\\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q6",
+  "file": "y7-7.json",
+  "stem": "Write down the place value of the digit \\(4\\) in the decimal \\(0.41\\).",
+  "options": [
+   "Units",
+   "Hundredths",
+   "Tenths",
+   "Thousandths"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q64",
+  "file": "y7-7.json",
+  "stem": "Write the place value of the digit \\(6\\) in the number \\(46.809\\).",
+  "options": [
+   "Hundredths",
+   "Units",
+   "Tenths",
+   "Thousandths"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q65",
+  "file": "y7-7.json",
+  "stem": "Write the place value of the digit \\(6\\) in the number \\(683.712\\).",
+  "options": [
+   "Hundreds",
+   "Tenths",
+   "Units",
+   "Hundredths"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q66",
+  "file": "y7-7.json",
+  "stem": "Write the place value of the digit \\(6\\) in the number \\(3.6\\).",
+  "options": [
+   "Thousandths",
+   "Tenths",
+   "Hundredths",
+   "Units"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q67",
+  "file": "y7-7.json",
+  "stem": "Write the place value of the digit \\(6\\) in the number \\(7.8886\\).",
+  "options": [
+   "Hundredths",
+   "Ten-thousandths",
+   "Tenths",
+   "Units"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q68",
+  "file": "y7-7.json",
+  "stem": "Write the place value of the digit \\(6\\) in the number \\(5.69\\).",
+  "options": [
+   "Hundredths",
+   "Tenths",
+   "Units",
+   "Thousandths"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 2,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\\\(\\\\text{Tenths}\\\\)"
+ },
+ {
+  "id": "y7-7a-q69",
+  "file": "y7-7.json",
+  "stem": "Write the place value of the digit \\(6\\) in the number \\(8.136\\).",
+  "options": [
+   "Tenths",
+   "Thousandths",
+   "Hundredths",
+   "Units"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q7",
+  "file": "y7-7.json",
+  "stem": "Write down the place value of the digit \\(4\\) in the decimal \\(47.09\\).",
+  "options": [
+   "Tens",
+   "Hundredths",
+   "Tenths",
+   "Units"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q71",
+  "file": "y7-7.json",
+  "stem": "Write the place value of the digit \\(6\\) in the number \\(2.4286\\).",
+  "options": [
+   "Tenths",
+   "Units",
+   "Ten-thousandths",
+   "Hundredths"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q72",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(0.9\\) or \\(0.54\\)?",
+  "options": [
+   "They are equal",
+   "None of these",
+   "\\(0.54\\)",
+   "\\(0.9\\)"
+  ],
+  "current": 3,
+  "fsIdx": 3,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q73",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(0.6\\) or \\(0.87\\)?",
+  "options": [
+   "\\(0.87\\)",
+   "They are equal",
+   "\\(0.6\\)",
+   "None of these"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q75",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(3.2\\) or \\(3.1976\\)?",
+  "options": [
+   "They are equal",
+   "\\(3.2\\)",
+   "\\(3.1976\\)",
+   "None of these"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q76",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(8.7\\) or \\(8.31415\\)?",
+  "options": [
+   "\\(8.31415\\)",
+   "\\(8.7\\)",
+   "They are equal",
+   "None of these"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q78",
+  "file": "y7-7.json",
+  "stem": "Which of the following numbers is the larger one: \\(2.00004\\) or \\(2.04\\)?",
+  "options": [
+   "\\(2.04\\)",
+   "None of these",
+   "They are equal",
+   "\\(2.00004\\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q8",
+  "file": "y7-7.json",
+  "stem": "Write down the place value of the digit \\(4\\) in the decimal \\(0.004\\).",
+  "options": [
+   "Units",
+   "Thousandths",
+   "Tenths",
+   "Hundredths"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q81",
+  "file": "y7-7.json",
+  "stem": "Order these numbers from smallest to largest: \\(4.56, 4.072, 4.068, 4.2, 4.007\\).",
+  "options": [
+   "\\(4.007, 4.068, 4.072, 4.56, 4.2\\)",
+   "\\(4.068, 4.007, 4.072, 4.2, 4.56\\)",
+   "\\(4.007, 4.072, 4.068, 4.2, 4.56\\)",
+   "\\(4.007, 4.068, 4.072, 4.2, 4.56\\)"
+  ],
+  "current": 3,
+  "fsIdx": 3,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q82",
+  "file": "y7-7.json",
+  "stem": "Order these numbers from smallest to largest: \\(5.43, 5.304, 5.33333, 5.0003, 5.4\\).",
+  "options": [
+   "\\(5.0003, 5.33333, 5.304, 5.4, 5.43\\)",
+   "\\(5.0003, 5.304, 5.33333, 5.4, 5.43\\)",
+   "\\(5.304, 5.0003, 5.33333, 5.4, 5.43\\)",
+   "\\(5.0003, 5.304, 5.33333, 5.43, 5.4\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 3,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7a-q9",
+  "file": "y7-7.json",
+  "stem": "Write down the place value of the digit \\(4\\) in the decimal \\(67.951842\\).",
+  "options": [
+   "Units",
+   "Tenths",
+   "Hundred-thousandths",
+   "Hundredths"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": ""
+ },
+ {
+  "id": "y7-7b-q18",
+  "file": "y7-7.json",
+  "stem": "Express the fraction \\(\\frac{456}{1000}\\) as a decimal.",
+  "options": [
+   "\\(45.6\\)",
+   "\\(0.456\\)",
+   "\\(4.56\\)",
+   "\\(0.0456\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 3,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\(0.456\\)"
+ },
+ {
+  "id": "y7-7b-q2",
+  "file": "y7-7.json",
+  "stem": "Express the decimal \\(0.75\\) as a fraction or mixed fraction in simplest form.",
+  "options": [
+   "\\(\\frac{3}{4}\\)",
+   "\\(\\frac{75}{10}\\)",
+   "\\(\\frac{3}{5}\\)",
+   "\\(\\frac{1}{4}\\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 2,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\(\\frac{3}{4}\\)"
+ },
+ {
+  "id": "y7-7c-q4",
+  "file": "y7-7.json",
+  "stem": "Calculate: \\(345.006 - 287.45\\).",
+  "options": [
+   "\\(57.656\\)",
+   "\\(57.556\\)",
+   "\\(58.556\\)",
+   "\\(57.550\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 3,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\( 57.556 \\)"
+ },
+ {
+  "id": "y7-7c-q5",
+  "file": "y7-7.json",
+  "stem": "Calculate: \\(58.0387 + 253.4831\\).",
+  "options": [
+   "\\(311.4218\\)",
+   "\\(311.5218\\)",
+   "\\(301.5218\\)",
+   "\\(312.5218\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 3,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\( 311.5218 \\)"
+ },
+ {
+  "id": "y7-7c-q6",
+  "file": "y7-7.json",
+  "stem": "Calculate: \\(14.0045 + 2.386884\\).",
+  "options": [
+   "\\(16.381384\\)",
+   "\\(16.391384\\)",
+   "\\(16.391\\)",
+   "\\(15.391384\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 2,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": "\\( 16.391384 \\)"
+ },
+ {
+  "id": "y7-7e-q2",
+  "file": "y7-7.json",
+  "stem": "Calculate: \\(35.084 \\times 8\\).",
+  "options": [
+   "\\(280.64\\)",
+   "\\(280.672\\)",
+   "\\(28.0672\\)",
+   "\\(2806.72\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\( 280.672 \\)"
+ },
+ {
+  "id": "y7-7f-q1",
+  "file": "y7-7.json",
+  "stem": "Calculate: \\(86.55 \\div 0.5\\).",
+  "options": [
+   "\\(17.31\\)",
+   "\\(173.1\\)",
+   "\\(1731\\)",
+   "\\(43.275\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\( 173.1 \\)"
+ },
+ {
+  "id": "y7-7f-q2",
+  "file": "y7-7.json",
+  "stem": "Calculate: \\(38.65 \\div 0.3\\).",
+  "options": [
+   "\\(12.88\\dot{3}\\)",
+   "\\(128.8\\dot{3}\\)",
+   "\\(128.\\dot{8}\\)",
+   "\\(128.83\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 2,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\( 128.8333... = 128.8\\dot{3} \\)"
+ },
+ {
+  "id": "y7-7f-q3",
+  "file": "y7-7.json",
+  "stem": "Calculate: \\(347.6812 \\div 0.04\\).",
+  "options": [
+   "\\(8692.3\\)",
+   "\\(8692.03\\)",
+   "\\(869.203\\)",
+   "\\(86920.3\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": "fs",
+  "solution": "",
+  "lastStep": "\\( 8692.03 \\)"
+ },
+ {
+  "id": "y7-7g-q4",
+  "file": "y7-7.json",
+  "stem": "Write the fraction \\\\(\\\\frac{5}{6}\\\\) as a recurring decimal.",
+  "options": [
+   "\\(0.\\dot{8}\\dot{3}\\)",
+   "\\(0.8\\dot{3}\\)",
+   "\\(0.\\dot{8}3\\)",
+   "\\(0.83\\)"
+  ],
+  "current": 1,
+  "fsIdx": 1,
+  "seedIdx": 0,
+  "solutionHint": "fs",
+  "solution": "\\(0.8\\dot{3}\\)",
+  "lastStep": "\\(0.8\\dot{3}\\)"
+ },
+ {
+  "id": "y9-1e-q6e",
+  "file": "y9-1.json",
+  "stem": "Fill in the missing binomial expression: \\((x+4)(......) = 2x^2+9x+4\\).",
+  "options": [
+   "\\(x+1\\)",
+   "\\(2x+4\\)",
+   "\\(2x+1\\)",
+   "\\(2x-1\\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 0,
+  "solutionHint": null,
+  "solution": "",
+  "lastStep": "$$ ax+b = 2x+1 $$"
+ },
+ {
+  "id": "y9-11a-q7a",
+  "file": "y9-11.json",
+  "stem": "Given \\(\\Delta PQR\\) with vertices \\(P(0, -1)\\), \\(Q(-6, 1)\\) and \\(R(-4, -3)\\), calculate the distance \\(PQ\\).",
+  "options": [
+   "\\(3\\sqrt{10}\\)",
+   "\\(\\sqrt{10}\\)",
+   "\\(2\\sqrt{10}\\)",
+   "\\(4\\sqrt{10}\\)"
+  ],
+  "current": 2,
+  "fsIdx": 2,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "Using the distance formula: \\(PQ = \\sqrt{(-6 - 0)^2 + (1 - (-1))^2} = \\sqrt{(-6)^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} = 2\\sqrt{10}\\).",
+  "lastStep": "\\( d = \\sqrt{4 \\times 10} = 2\\sqrt{10} \\text{ units} \\)"
+ },
+ {
+  "id": "y9-11a-q7b",
+  "file": "y9-11.json",
+  "stem": "Given \\(\\Delta PQR\\) with vertices \\(P(0, -1)\\), \\(Q(-6, 1)\\) and \\(R(-4, -3)\\), calculate the distance \\(PR\\).",
+  "options": [
+   "\\(2\\sqrt{5}\\)",
+   "\\(3\\sqrt{5}\\)",
+   "\\(4\\sqrt{5}\\)",
+   "\\(\\sqrt{5}\\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": "fs",
+  "solution": "Using the distance formula: \\(PR = \\sqrt{(-4 - 0)^2 + (-3 - (-1))^2} = \\sqrt{(-4)^2 + (-2)^2} = \\sqrt{16 + 4} = \\sqrt{20} = 2\\sqrt{5}\\).",
+  "lastStep": "\\( d = \\sqrt{4 \\times 5} = 2\\sqrt{5} \\text{ units} \\)"
+ },
+ {
+  "id": "y9-11a-q7c",
+  "file": "y9-11.json",
+  "stem": "Given \\(\\Delta PQR\\) with vertices \\(P(0, -1)\\), \\(Q(-6, 1)\\) and \\(R(-4, -3)\\), calculate the distance \\(QR\\).",
+  "options": [
+   "\\(2\\sqrt{5}\\)",
+   "\\(3\\sqrt{5}\\)",
+   "\\(\\sqrt{5}\\)",
+   "\\(4\\sqrt{5}\\)"
+  ],
+  "current": 0,
+  "fsIdx": 0,
+  "seedIdx": 1,
+  "solutionHint": "fs",
+  "solution": "Using the distance formula: \\(QR = \\sqrt{(-4 - (-6))^2 + (-3 - 1)^2} = \\sqrt{2^2 + (-4)^2} = \\sqrt{4 + 16} = \\sqrt{20} = 2\\sqrt{5}\\).",
+  "lastStep": "\\(QR = \\sqrt{4 \\times 5} = 2\\sqrt{5} \\text{ units}\\)"
+ },
+ {
+  "id": "y9-8a-12b",
+  "file": "y9-8.json",
+  "stem": "Simplify: \\(2b^0\\)",
+  "options": [
+   "\\(1\\)",
+   "\\(0\\)",
+   "\\(2b\\)",
+   "\\(2\\)"
+  ],
+  "current": 3,
+  "fsIdx": 3,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "The correct answer is \\(0\\).",
+  "lastStep": "\\(2\\)"
+ },
+ {
+  "id": "y9-8a-12c",
+  "file": "y9-8.json",
+  "stem": "Simplify: \\((7n)^0\\)",
+  "options": [
+   "\\(7n\\)",
+   "\\(7\\)",
+   "\\(0\\)",
+   "\\(1\\)"
+  ],
+  "current": 3,
+  "fsIdx": 3,
+  "seedIdx": 1,
+  "solutionHint": null,
+  "solution": "The correct answer is \\(7\\).",
+  "lastStep": "\\(1\\)"
+ }
+]

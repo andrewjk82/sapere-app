@@ -235,7 +235,7 @@
             "33",
             "42"
           ],
-          "answer": 2,
+          "answer": 0,
           "hint": "Calculate the IQR, then apply the upper fence formula $Q_3 + 1.5 \\times IQR$.",
           "solution": "The correct answer is \\(45\\).",
           "steps": [
@@ -554,7 +554,7 @@
             },
             {
               "explain": "Final answer: 25000 \\times 1.3686. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(25000 \\times 1.3686\\)"
+              "work": "\\(25000 \\div 1.1717\\)"
             }
           ],
           "dna": {
@@ -865,7 +865,7 @@
             "\\(b = \\pi\\)",
             "\\(b = 4\\pi\\)"
           ],
-          "answer": 1,
+          "answer": 2,
           "hint": "A CDF must equal 1 at the upper boundary. Set $\\sin\\!\\left(\\frac{b}{2}\\right) = 1$ and solve for $b$.",
           "solution": "The correct answer is \\(b = \\pi\\).",
           "steps": [
