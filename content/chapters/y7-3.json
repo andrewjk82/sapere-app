@@ -15396,6 +15396,100 @@
               "explain": "\\( = \\frac{5}{14} \\)"
             }
           ]
+        },
+        {
+          "id": "y7-3h-q28a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Explore the identity \\\\((m+3)(m-3) = m^2 - 9\\\\).\n\nThe table below shows values for different values of \\\\(m\\\\). When \\\\(m = 6\\\\), what is the value of \\\\((m+3)(m-3)\\\\)?",
+          "figure": {
+            "html": "\n<div style=\"overflow-x:auto; margin-top:8px;\">\n  <table style=\"border-collapse:collapse; font-family:'KaTeX_Main','Times New Roman',serif; font-size:15px; margin:0 auto;\">\n    <thead>\n      <tr style=\"background:#eff6ff;\">\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px; font-style:italic;\">m</th>\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px;\">m + 3</th>\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px;\">m − 3</th>\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px;\">(m+3)(m−3)</th>\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px;\">m²</th>\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px;\">m² − 9</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">3</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">6</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">0</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">0</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">9</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">0</td>\n      </tr>\n      <tr style=\"background:#f8fafc;\">\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">4</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n      </tr>\n      <tr>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">5</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n      </tr>\n      <tr style=\"background:#f8fafc;\">\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">6</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n      </tr>\n      <tr>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">7</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n      </tr>\n      <tr style=\"background:#f8fafc;\">\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">8</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n        <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center; color:#94a3b8;\">?</td>\n      </tr>\n    </tbody>\n  </table>\n</div>"
+          },
+          "options": [
+            "\\\\(25\\\\)",
+            "\\\\(36\\\\)",
+            "\\\\(27\\\\)",
+            "\\\\(30\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Substitute m = 6: calculate (m+3) and (m−3) first, then multiply them.",
+          "steps": [
+            {
+              "explain": "Substitute \\\\(m = 6\\\\) into each expression.",
+              "work": "\\\\(m + 3 = 6 + 3 = 9, \\quad m - 3 = 6 - 3 = 3\\\\)"
+            },
+            {
+              "explain": "Now multiply the two results together.",
+              "work": "\\\\((m+3)(m-3) = 9 \\times 3 = 27\\\\)"
+            },
+            {
+              "explain": "Check using the identity: \\\\(m^2 - 9 = 36 - 9 = 27\\\\). ✓",
+              "work": "\\\\(27 = 27 \\ \\checkmark\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-3h-q28b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Explore the identity \\\\((m+3)(m-3) = m^2 - 9\\\\).\n\nThe completed table is shown below. What do you observe about the columns \\\\((m+3)(m-3)\\\\) and \\\\(m^2 - 9\\\\) for every row?",
+          "figure": {
+            "html": "\n<div style=\"overflow-x:auto; margin-top:8px;\">\n  <table style=\"border-collapse:collapse; font-family:'KaTeX_Main','Times New Roman',serif; font-size:15px; margin:0 auto;\">\n    <thead>\n      <tr style=\"background:#eff6ff;\">\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px; font-style:italic;\">m</th>\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px;\">m + 3</th>\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px;\">m − 3</th>\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px;\">(m+3)(m−3)</th>\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px;\">m²</th>\n        <th style=\"border:1.5px solid #94a3b8; padding:8px 14px;\">m² − 9</th>\n      </tr>\n    </thead>\n    <tbody>\n      <tr style=\"\">\n          <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">3</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">6</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">0</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">0</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">9</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">0</td>\n        </tr><tr style=\"background:#f8fafc;\">\n          <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">4</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">7</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">1</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">7</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">16</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">7</td>\n        </tr><tr style=\"\">\n          <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">5</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">8</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">2</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">16</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">25</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">16</td>\n        </tr><tr style=\"background:#f8fafc;\">\n          <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">6</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">9</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">3</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">27</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">36</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">27</td>\n        </tr><tr style=\"\">\n          <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">7</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">10</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">4</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">40</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">49</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">40</td>\n        </tr><tr style=\"background:#f8fafc;\">\n          <td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">8</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">11</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">5</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">55</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">64</td><td style=\"border:1.5px solid #94a3b8; padding:7px 14px; text-align:center;\">55</td>\n        </tr>\n    </tbody>\n  </table>\n</div>"
+          },
+          "options": [
+            "\\\\((m+3)(m-3)\\\\) is always 9 more than \\\\(m^2 - 9\\\\)",
+            "\\\\((m+3)(m-3)\\\\) and \\\\(m^2 - 9\\\\) are always equal",
+            "\\\\((m+3)(m-3)\\\\) is always 9 less than \\\\(m^2\\\\)",
+            "The two columns differ only for odd values of \\\\(m\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Look at the last two columns of each row carefully.",
+          "steps": [
+            {
+              "explain": "Check the values in the \\\\((m+3)(m-3)\\\\) column against \\\\(m^2 - 9\\\\) for each row.",
+              "work": "\\\\(m=3: 0 = 9-9=0 \\ \\checkmark\\\\)"
+            },
+            {
+              "explain": "Continue checking each row.",
+              "work": "\\\\(m=4: 7=16-9=7, \\quad m=5: 16=25-9=16, \\quad m=6: 27=36-9=27 \\ \\checkmark\\\\)"
+            },
+            {
+              "explain": "In every single row, the two columns are identical.",
+              "work": "\\\\(\\therefore (m+3)(m-3) = m^2 - 9 \\text{ for all tested values}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-3h-q28c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Explore the identity \\\\((m+3)(m-3) = m^2 - 9\\\\).\n\nExpand \\\\((m+3)(m-3)\\\\) to show algebraically why the identity holds for ALL values of \\\\(m\\\\).",
+          "options": [
+            "\\\\(m^2 - 6m - 9\\\\)",
+            "\\\\(m^2 + 9\\\\)",
+            "\\\\(m^2 - 9\\\\)",
+            "\\\\(m^2 - 3m - 9\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Expand using the distributive law: multiply each term in the first bracket by each term in the second bracket.",
+          "steps": [
+            {
+              "explain": "Expand the brackets using the distributive law. Multiply each term in the first bracket by each term in the second.",
+              "work": "\\\\((m+3)(m-3) = m \\times m + m \\times (-3) + 3 \\times m + 3 \\times (-3)\\\\)"
+            },
+            {
+              "explain": "Simplify each term.",
+              "work": "\\\\(= m^2 - 3m + 3m - 9\\\\)"
+            },
+            {
+              "explain": "The middle terms \\\\(-3m\\\\) and \\\\(+3m\\\\) cancel each other out.",
+              "work": "\\\\(= m^2 - 9 \\ \\checkmark\\\\)"
+            },
+            {
+              "explain": "Since we used algebra (not specific numbers), this proves the identity holds for ALL values of \\\\(m\\\\).",
+              "work": "\\\\(\\therefore (m+3)(m-3) = m^2 - 9 \\text{ for all } m\\\\)"
+            }
+          ]
         }
       ]
     }

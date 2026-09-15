@@ -2338,6 +2338,49 @@
           "solution": "Channel C has by far the smallest interquartile range (2.5, vs 6 for A and 9 for B) and the highest lower quartile (Q1 = 15, vs 13 for A and 12 for B). So a criterion like \"most consistent channel\" (smallest IQR) or \"channel whose worst-rated 75% of programs still rate the highest\" (highest Q1) makes Channel C the winner — even though it never has a single standout hit show, it never has a real flop either.",
           "manual": true,
           "timeLimit": 180
+        },
+        {
+          "id": "y10-18b2-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the pulse rate data from the previous question (median = 75, Q1 = 69.5, Q3 = 78.5), which five-number summary would correctly draw the boxplot for this data?",
+          "figure": {
+            "svg": "fig:34922ffe65"
+          },
+          "options": [
+            "min = 60, Q1 = 69.5, median = 75, Q3 = 78.5, max = 90",
+            "min = 61, Q1 = 69.5, median = 75, Q3 = 78.5, max = 90",
+            "min = 60, Q1 = 70, median = 75, Q3 = 78.5, max = 90",
+            "min = 60, Q1 = 69.5, median = 75, Q3 = 78.5, max = 89"
+          ],
+          "answer": 0,
+          "hint": "The whiskers of a boxplot run out to the actual minimum and maximum data values, not the calculated quartiles.",
+          "solution": "The full ordered list starts at 60 and ends at 90, so those are the whisker ends.",
+          "steps": [
+            {
+              "explain": "The minimum and maximum for the boxplot whiskers come from the actual smallest and largest data values in the original ordered list, not from any calculation.",
+              "work": "\\(60,\\ 61,\\ 67,\\ldots,\\ 89,\\ 90\\)"
+            },
+            {
+              "explain": "Read the first and last values of the ordered list.",
+              "work": "\\(\\text{min} = 60, \\quad \\text{max} = 90\\)"
+            },
+            {
+              "explain": "Combine with the median and quartiles already found to get the complete five-number summary.",
+              "work": "\\(\\text{min}=60,\\ Q_1=69.5,\\ \\text{median}=75,\\ Q_3=78.5,\\ \\text{max}=90\\)",
+              "figure": {
+                "svg": "fig:34922ffe65"
+              }
+            },
+            {
+              "explain": "Final answer: this is the exact five-number summary the boxplot is drawn from. Pitfall: mistaking the second-smallest value (61) for the minimum, or the second-largest (89) for the maximum, are common off-by-one reading errors.",
+              "work": "\\((60,\\ 69.5,\\ 75,\\ 78.5,\\ 90)\\)",
+              "figure": {
+                "svg": "fig:34922ffe65"
+              }
+            }
+          ],
+          "timeLimit": 90
         }
       ]
     },

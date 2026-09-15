@@ -4528,6 +4528,1183 @@
           "solution": "See detailed steps below."
         }
       ]
+    },
+    {
+      "topicId": "y11e1-4E",
+      "code": "4E",
+      "title": "Revision",
+      "questions": [
+        {
+          "id": "y11e1-4e-q1a",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Solve the linear inequation \\(3x + 4 < 19\\), and sketch your solution on a number line.",
+          "answer": "x < 5",
+          "hint": "Isolate x by performing inverse operations on both sides of the inequality.",
+          "solution": "Subtract 4 from both sides to get \\(3x < 15\\), then divide by 3 to obtain \\(x < 5\\). Draw an open circle at 5 on the number line and shade to the left.",
+          "steps": [
+            {
+              "explain": "To solve the inequality, first subtract 4 from both sides to isolate the term containing \\(x\\).",
+              "work": "3x < 19 - 4"
+            },
+            {
+              "explain": "Simplify the right-hand side of the inequality.",
+              "work": "3x < 15"
+            },
+            {
+              "explain": "Divide both sides by 3 to find the final inequality for \\(x\\).",
+              "work": "x < 5"
+            },
+            {
+              "explain": "Sketch the solution on a number line by placing an open circle at 5 (since it is strictly less than) and drawing an arrow pointing to the left."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q1b",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Solve the linear inequation \\(4x + 3 > 19\\), and sketch your solution on a number line.",
+          "answer": "x > 4",
+          "hint": "Perform standard algebraic operations to isolate the variable x.",
+          "solution": "Subtract 3 from both sides to get \\(4x > 16\\), then divide by 4 to obtain \\(x > 4\\). Draw an open circle at 4 on the number line and shade to the right.",
+          "steps": [
+            {
+              "explain": "Subtract 3 from both sides of the inequality to isolate the variable term.",
+              "work": "4x > 19 - 3"
+            },
+            {
+              "explain": "Simplify the arithmetic on the right-hand side.",
+              "work": "4x > 16"
+            },
+            {
+              "explain": "Divide both sides by 4 to solve for \\(x\\).",
+              "work": "x > 4"
+            },
+            {
+              "explain": "Represent the solution on a number line with an open circle at 4 and an arrow pointing to the right."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q1c",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Solve the linear inequation \\(5 - 2x \\ge 13\\), and sketch your solution on a number line.",
+          "answer": "x \\le -4",
+          "hint": "Remember to reverse the inequality sign when multiplying or dividing by a negative number.",
+          "solution": "Subtract 5 from both sides to get \\(-2x \\ge 8\\). Divide by -2 and reverse the inequality sign to obtain \\(x \\le -4\\). Draw a solid circle at -4 and shade to the left.",
+          "steps": [
+            {
+              "explain": "Subtract 5 from both sides to begin isolating the variable term \\(-2x\\).",
+              "work": "-2x \\ge 13 - 5"
+            },
+            {
+              "explain": "Simplify the right-hand side.",
+              "work": "-2x \\ge 8"
+            },
+            {
+              "explain": "Divide both sides by -2. Since you are dividing by a negative number, you must reverse the inequality sign.",
+              "work": "x \\le -4"
+            },
+            {
+              "explain": "On the number line, draw a solid circle at -4 (since the inequality includes equals to) and an arrow pointing to the left."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q1d",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Solve the linear inequation \\(3 - 4x \\le 11\\), and sketch your solution on a number line.",
+          "answer": "x \\ge -2",
+          "hint": "Isolate x and be careful with the inequality sign when dividing by a negative number.",
+          "solution": "Subtract 3 from both sides to get \\(-4x \\le 8\\). Divide by -4 and reverse the inequality sign to obtain \\(x \\ge -2\\). Draw a solid circle at -2 and shade to the right.",
+          "steps": [
+            {
+              "explain": "Subtract 3 from both sides of the inequality.",
+              "work": "-4x \\le 11 - 3"
+            },
+            {
+              "explain": "Simplify the right-hand side.",
+              "work": "-4x \\le 8"
+            },
+            {
+              "explain": "Divide both sides by -4 and reverse the inequality sign because of the negative divisor.",
+              "work": "x \\ge -2"
+            },
+            {
+              "explain": "Sketch the solution on a number line with a solid circle at -2 and an arrow pointing to the right."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q1e",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Solve the linear inequation \\(7 - 2x < 2x - 5\\), and sketch your solution on a number line.",
+          "answer": "x > 3",
+          "hint": "Collect all variable terms on one side and constant terms on the other side.",
+          "solution": "Add \\(2x\\) to both sides to get \\(7 < 4x - 5\\). Add 5 to both sides to get \\(12 < 4x\\), then divide by 4 to obtain \\(x > 3\\). Draw an open circle at 3 and shade to the right.",
+          "steps": [
+            {
+              "explain": "Collect the variable terms on the right side by adding \\(2x\\) to both sides of the inequality.",
+              "work": "7 < 4x - 5"
+            },
+            {
+              "explain": "Isolate the variable term by adding 5 to both sides.",
+              "work": "12 < 4x"
+            },
+            {
+              "explain": "Divide both sides by 4 to solve for \\(x\\). Note that \\(12 < 4x\\) is equivalent to \\(4x > 12\\).",
+              "work": "x > 3"
+            },
+            {
+              "explain": "Graph the solution on a number line with an open circle at 3 and an arrow pointing to the right."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q1f",
+          "type": "review",
+          "difficulty": "easy",
+          "stem": "Solve the linear inequation \\(8x + 6 \\le 2x - 6\\), and sketch your solution on a number line.",
+          "answer": "x \\le -2",
+          "hint": "Rearrange the inequality to bring all x terms to one side.",
+          "solution": "Subtract \\(2x\\) from both sides to get \\(6x + 6 \\le -6\\). Subtract 6 from both sides to get \\(6x \\le -12\\), and divide by 6 to obtain \\(x \\le -2\\). Draw a solid circle at -2 and shade to the left.",
+          "steps": [
+            {
+              "explain": "Subtract \\(2x\\) from both sides to group the variable terms on the left.",
+              "work": "6x + 6 \\le -6"
+            },
+            {
+              "explain": "Subtract 6 from both sides to isolate the variable term.",
+              "work": "6x \\le -12"
+            },
+            {
+              "explain": "Divide both sides by 6 to find the solution for \\(x\\).",
+              "work": "x \\le -2"
+            },
+            {
+              "explain": "Sketch a solid circle at -2 on the number line and draw an arrow pointing to the left."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q2a",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Solve the double inequation \\(3 < x + 2 \\le 8\\) and write your answer using bracket interval notation.",
+          "answer": "(1, 6]",
+          "hint": "Apply the same operation to all three parts of the inequality to isolate x.",
+          "solution": "Subtract 2 from all parts of the inequality to get \\(1 < x \\le 6\\). In interval notation, this is written as \\((1, 6]\\).",
+          "steps": [
+            {
+              "explain": "Identify the operations needed to isolate \\(x\\). Subtract 2 from all three parts of the compound inequality.",
+              "work": "3 - 2 < x \\le 8 - 2"
+            },
+            {
+              "explain": "Simplify the expressions to obtain the inequality range for \\(x\\).",
+              "work": "1 < x \\le 6"
+            },
+            {
+              "explain": "Convert the inequality range into interval notation. Use a parenthesis for open boundaries and a square bracket for closed boundaries.",
+              "work": "\\therefore\\; (1, 6]"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q2b",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Solve the double inequation \\(2 \\le 3x + 5 < 17\\) and write your answer using bracket interval notation.",
+          "answer": "[-1, 4)",
+          "hint": "First subtract the constant from all parts, then divide by the coefficient of x.",
+          "solution": "Subtract 5 from all parts to get \\(-3 \\le 3x < 12\\). Divide all parts by 3 to get \\(-1 \\le x < 4\\). In interval notation, this is \\([-1, 4)\\).",
+          "steps": [
+            {
+              "explain": "Subtract 5 from all three parts of the inequality to isolate the variable term \\(3x\\).",
+              "work": "2 - 5 \\le 3x < 17 - 5"
+            },
+            {
+              "explain": "Simplify the results.",
+              "work": "-3 \\le 3x < 12"
+            },
+            {
+              "explain": "Divide all parts by 3 to solve for \\(x\\).",
+              "work": "-1 \\le x < 4"
+            },
+            {
+              "explain": "Express the solution in bracket interval notation.",
+              "work": "\\therefore\\; [-1, 4)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q2c",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Solve the double inequation \\(-2 < 4 - 2x \\le 10\\) and write your answer using bracket interval notation.",
+          "answer": "[-3, 3)",
+          "hint": "Remember to reverse both inequality signs when dividing by a negative number.",
+          "solution": "Subtract 4 from all parts to get \\(-6 < -2x \\le 6\\). Divide by -2 and reverse the inequality signs to get \\(3 > x \\ge -3\\), which is \\(-3 \\le x < 3\\). In interval notation, this is \\([-3, 3)\\).",
+          "steps": [
+            {
+              "explain": "Subtract 4 from all three parts of the inequality.",
+              "work": "-2 - 4 < -2x \\le 10 - 4"
+            },
+            {
+              "explain": "Simplify the terms.",
+              "work": "-6 < -2x \\le 6"
+            },
+            {
+              "explain": "Divide all parts by -2 and reverse both inequality signs.",
+              "work": "3 > x \\ge -3"
+            },
+            {
+              "explain": "Rewrite the inequality in standard ascending order and convert to interval notation.",
+              "work": "-3 \\le x < 3 \\implies [-3, 3)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q3",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "For what values of \\(x\\) does the line \\(y = \\frac{1}{3}x + 2\\) lie between \\(y = -1\\) and \\(y = 3\\)?",
+          "answer": "-9 < x < 3",
+          "hint": "Form a compound inequality with the line equation bounded by -1 and 3.",
+          "solution": "Set up the inequality \\(-1 < \\frac{1}{3}x + 2 < 3\\). Subtract 2 from all parts to get \\(-3 < \\frac{1}{3}x < 1\\). Multiply all parts by 3 to obtain \\(-9 < x < 3\\).",
+          "steps": [
+            {
+              "explain": "Set up a compound inequality representing the condition that \\(y\\) lies strictly between -1 and 3.",
+              "work": "-1 < \\frac{1}{3}x + 2 < 3"
+            },
+            {
+              "explain": "Subtract 2 from all parts of the inequality.",
+              "work": "-3 < \\frac{1}{3}x < 1"
+            },
+            {
+              "explain": "Multiply all parts of the inequality by 3 to solve for \\(x\\).",
+              "work": "-9 < x < 3"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q4a",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Find the discriminant \\(\\Delta\\) of the equation \\(x^2 - 8x + 16 = 0\\), and state the number and nature of its zeroes.",
+          "answer": "1 rational zero",
+          "hint": "Calculate the discriminant using the formula \\(\\Delta = b^2 - 4ac\\).",
+          "solution": "Using \\(\\Delta = b^2 - 4ac\\), we find \\(\\Delta = (-8)^2 - 4(1)(16) = 0\\). Since \\(\\Delta = 0\\), there is 1 rational zero.",
+          "steps": [
+            {
+              "explain": "Identify the coefficients \\(a\\), \\(b\\), and \\(c\\) from the quadratic equation.",
+              "work": "a = 1, \\; b = -8, \\; c = 16"
+            },
+            {
+              "explain": "Substitute the coefficients into the discriminant formula \\(\\Delta = b^2 - 4ac\\).",
+              "work": "\\Delta = (-8)^2 - 4(1)(16) = 64 - 64 = 0"
+            },
+            {
+              "explain": "Determine the nature of the roots. Since \\(\\Delta = 0\\), there is exactly one real, rational root (a double root).",
+              "work": "\\therefore\\; 1\\; \\mathrm{rational\\; zero}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q4b",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Find the discriminant \\(\\Delta\\) of the equation \\(-x^2 - 6x + 3 = 0\\), and state the number and nature of its zeroes.",
+          "answer": "2 irrational zeroes",
+          "hint": "Substitute coefficients into \\(\\Delta = b^2 - 4ac\\) and check if it is positive and a perfect square.",
+          "solution": "Using \\(\\Delta = b^2 - 4ac\\), we find \\(\\Delta = (-6)^2 - 4(-1)(3) = 36 + 12 = 48\\). Since \\(\\Delta = 48 > 0\\) and is not a perfect square, there are 2 distinct irrational zeroes.",
+          "steps": [
+            {
+              "explain": "Identify the coefficients of the quadratic equation.",
+              "work": "a = -1, \\; b = -6, \\; c = 3"
+            },
+            {
+              "explain": "Calculate the discriminant \\(\\Delta\\).",
+              "work": "\\Delta = (-6)^2 - 4(-1)(3) = 36 + 12 = 48"
+            },
+            {
+              "explain": "Interpret the result. Since \\(\\Delta > 0\\) and 48 is not a perfect square, the equation has two distinct irrational roots.",
+              "work": "\\therefore\\; 2\\; \\mathrm{irrational\\; zeroes}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q4c",
+          "type": "short",
+          "difficulty": "easy",
+          "stem": "Find the discriminant \\(\\Delta\\) of the equation \\(4x^2 - 9 = 0\\), and state the number and nature of its zeroes.",
+          "answer": "2 rational zeroes",
+          "hint": "Identify b as 0 and calculate the discriminant.",
+          "solution": "Using \\(\\Delta = b^2 - 4ac\\), we find \\(\\Delta = 0^2 - 4(4)(-9) = 144\\). Since \\(\\Delta = 144 > 0\\) and is a perfect square, there are 2 distinct rational zeroes.",
+          "steps": [
+            {
+              "explain": "Identify the coefficients, noting that the linear coefficient \\(b\\) is 0.",
+              "work": "a = 4, \\; b = 0, \\; c = -9"
+            },
+            {
+              "explain": "Calculate the discriminant \\(\\Delta\\).",
+              "work": "\\Delta = 0^2 - 4(4)(-9) = 144"
+            },
+            {
+              "explain": "Interpret the nature of the roots. Since \\(\\Delta > 0\\) and 144 is a perfect square (\\(12^2\\)), the quadratic has two distinct rational roots.",
+              "work": "\\therefore\\; 2\\; \\mathrm{rational\\; zeroes}"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q5",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "The parabola \\(y = x^2 - 3x - 4\\) is sketched below. Find the values of \\(x\\) for which:\na) \\(y = 0\\)\nb) \\(y > 0\\)\nc) \\(y < 0\\)",
+          "figure": {
+            "jsxGraph": {
+              "width": 300,
+              "height": 300,
+              "boundingbox": [
+                -3,
+                6,
+                6,
+                -6
+              ],
+              "boardOptions": {
+                "keepaspectratio": true
+              },
+              "elements": [
+                {
+                  "type": "point",
+                  "id": "A",
+                  "coords": [
+                    -1,
+                    0
+                  ],
+                  "name": "-1",
+                  "color": "blue",
+                  "label": {
+                    "offset": [
+                      -10,
+                      10
+                    ]
+                  }
+                },
+                {
+                  "type": "point",
+                  "id": "B",
+                  "coords": [
+                    4,
+                    0
+                  ],
+                  "name": "4",
+                  "color": "blue",
+                  "label": {
+                    "offset": [
+                      10,
+                      10
+                    ]
+                  }
+                },
+                {
+                  "type": "point",
+                  "id": "C",
+                  "coords": [
+                    0,
+                    -4
+                  ],
+                  "name": "-4",
+                  "color": "slate",
+                  "label": {
+                    "offset": [
+                      10,
+                      0
+                    ]
+                  }
+                }
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[5.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5.5],[0,5.5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x - 3*x - 4; }, -2, 5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+            }
+          },
+          "parts": [
+            {
+              "id": "y11e1-4e-q5a",
+              "type": "short",
+              "difficulty": "easy",
+              "stem": "Find the values of \\(x\\) for which \\(y = 0\\).",
+              "answer": "x = -1, 4",
+              "steps": [
+                {
+                  "explain": "Identify the points where the curve intersects the \\(x\\)-axis.",
+                  "work": "y = 0"
+                },
+                {
+                  "explain": "Read the coordinates directly from the graph intersections.",
+                  "work": "x = -1 \\quad \\mathrm{or} \\quad x = 4"
+                },
+                {
+                  "explain": "State the final solutions.",
+                  "work": "\\therefore\\; x = -1, \\; 4"
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "y11e1-4e-q5b",
+              "type": "short",
+              "difficulty": "easy",
+              "stem": "Find the values of \\(x\\) for which \\(y > 0\\).",
+              "answer": "x < -1 or x > 4",
+              "steps": [
+                {
+                  "explain": "Determine the intervals where the parabola lies strictly above the \\(x\\)-axis.",
+                  "work": "y > 0"
+                },
+                {
+                  "explain": "Observe from the sketch that the graph is above the horizontal axis to the left of \\(-1\\) and to the right of \\(4\\).",
+                  "work": "x < -1 \\quad \\mathrm{or} \\quad x > 4"
+                },
+                {
+                  "explain": "Combine these intervals into the final solution statement.",
+                  "work": "\\therefore\\; x < -1 \\; \\mathrm{or} \\; x > 4"
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "y11e1-4e-q5c",
+              "type": "short",
+              "difficulty": "easy",
+              "stem": "Find the values of \\(x\\) for which \\(y < 0\\).",
+              "answer": "-1 < x < 4",
+              "steps": [
+                {
+                  "explain": "Determine the interval where the parabola lies below the \\(x\\)-axis.",
+                  "work": "y < 0"
+                },
+                {
+                  "explain": "Observe that the graph dips below the horizontal axis between its two intercepts \\(-1\\) and \\(4\\).",
+                  "work": "-1 < x < 4"
+                },
+                {
+                  "explain": "Formulate this range as a single compound inequality.",
+                  "work": "\\therefore\\; -1 < x < 4"
+                }
+              ],
+              "timeLimit": 60
+            }
+          ],
+          "answer": "a) x = -1, 4; b) x < -1 or x > 4; c) -1 < x < 4",
+          "hint": "Look at the intersections and positions of the parabola relative to the horizontal x-axis.",
+          "solution": "a) The curve crosses the x-axis at \\(x = -1\\) and \\(x = 4\\).\nb) The curve lies above the x-axis for \\(x < -1\\) or \\(x > 4\\).\nc) The curve lies below the x-axis for \\( -1 < x < 4 \\).",
+          "timeLimit": 60
+        },
+        {
+          "id": "y11e1-4e-q6a",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the quadratic inequation \\(x^2 + 3x < 0\\), using the graph provided.",
+          "figure": {
+            "jsxGraph": {
+              "width": 300,
+              "height": 300,
+              "boundingbox": [
+                -5,
+                4,
+                3,
+                -4
+              ],
+              "boardOptions": {
+                "keepaspectratio": true
+              },
+              "elements": [
+                {
+                  "type": "point",
+                  "id": "P1",
+                  "coords": [
+                    -3,
+                    0
+                  ],
+                  "name": "-3",
+                  "color": "blue",
+                  "label": {
+                    "offset": [
+                      -8,
+                      10
+                    ]
+                  }
+                },
+                {
+                  "type": "point",
+                  "id": "P2",
+                  "coords": [
+                    0,
+                    0
+                  ],
+                  "name": "0",
+                  "color": "blue",
+                  "label": {
+                    "offset": [
+                      8,
+                      10
+                    ]
+                  }
+                }
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0],[2,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3.5],[0,3.5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x + 3*x; }, -4, 1], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+            }
+          },
+          "answer": "-3 < x < 0",
+          "hint": "Identify the x-intercepts of the parabola and observe where the curve lies below the horizontal axis.",
+          "solution": "The graph is below the x-axis between the x-intercepts at -3 and 0. Therefore, the solution is \\(-3 < x < 0\\).",
+          "steps": [
+            {
+              "explain": "Identify the critical boundary values where the quadratic equals zero from the provided graph.",
+              "work": "x^2 + 3x = 0 \\implies x(x + 3) = 0 \\implies x = -3, \\; 0"
+            },
+            {
+              "explain": "Determine the region where the curve lies below the \\(x\\)-axis, representing the inequality \\(< 0\\).",
+              "work": "-3 < x < 0"
+            },
+            {
+              "explain": "State the final interval.",
+              "work": "\\therefore\\; -3 < x < 0"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q6b",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the quadratic inequation \\(x^2 + 3x - 10 \\ge 0\\), using the graph provided.",
+          "figure": {
+            "jsxGraph": {
+              "width": 300,
+              "height": 300,
+              "boundingbox": [
+                -7,
+                5,
+                4,
+                -13
+              ],
+              "boardOptions": {
+                "keepaspectratio": true
+              },
+              "elements": [
+                {
+                  "type": "point",
+                  "id": "X1",
+                  "coords": [
+                    -5,
+                    0
+                  ],
+                  "name": "-5",
+                  "color": "blue",
+                  "label": {
+                    "offset": [
+                      -8,
+                      12
+                    ]
+                  }
+                },
+                {
+                  "type": "point",
+                  "id": "X2",
+                  "coords": [
+                    2,
+                    0
+                  ],
+                  "name": "2",
+                  "color": "blue",
+                  "label": {
+                    "offset": [
+                      8,
+                      12
+                    ]
+                  }
+                },
+                {
+                  "type": "point",
+                  "id": "Y1",
+                  "coords": [
+                    0,
+                    -10
+                  ],
+                  "name": "-10",
+                  "color": "slate",
+                  "label": {
+                    "offset": [
+                      8,
+                      0
+                    ]
+                  }
+                }
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0],[3.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-12.5],[0,4.5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x + 3*x - 10; }, -6, 3], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+            }
+          },
+          "answer": "x <= -5 or x >= 2",
+          "hint": "Identify the x-intercepts of the parabola and observe where the curve lies above or on the horizontal axis.",
+          "solution": "The graph is above or on the x-axis for values of x that are less than or equal to -5, or greater than or equal to 2. The solution is \\(x \\le -5\\) or \\(x \\ge 2\\).",
+          "steps": [
+            {
+              "explain": "Determine the \\(x\\)-intercepts of the parabola shown in the graph.",
+              "work": "x = -5 \\quad \\mathrm{or} \\quad x = 2"
+            },
+            {
+              "explain": "Identify the sections of the curve that are on or above the \\(x\\)-axis to satisfy \\(\\ge 0\\).",
+              "work": "x \\le -5 \\quad \\mathrm{or} \\quad x \\ge 2"
+            },
+            {
+              "explain": "Confirm the union of these two intervals as the complete solution.",
+              "work": "\\therefore\\; x \\le -5 \\; \\mathrm{or} \\; x \\ge 2"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q7a",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the quadratic inequation \\((x + 5)(x - 2) < 0\\) using a sketch or table of values.",
+          "answer": "-5 < x < 2",
+          "hint": "Find the roots of the quadratic equation first, then consider the shape of the parabola.",
+          "solution": "The boundary points are \\(x = -5\\) and \\(x = 2\\). A sketch of the upright parabola shows that the curve is below the x-axis between these roots. Thus, \\(-5 < x < 2\\).",
+          "steps": [
+            {
+              "explain": "Find the boundary points by setting the quadratic expression equal to 0.",
+              "work": "(x + 5)(x - 2) = 0 \\implies x = -5, \\; 2"
+            },
+            {
+              "explain": "Sketch an upright parabola (since the coefficient of \\(x^2\\) is positive) with x-intercepts at -5 and 2.",
+              "work": "\\mathrm{Upright\\; parabola\\; with\\; roots\\; -5\\; and\\; 2}"
+            },
+            {
+              "explain": "Find where the graph is below the \\(x\\)-axis. This occurs between the two boundary roots.",
+              "work": "-5 < x < 2"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q7b",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the quadratic inequation \\((x - 2)(x + 4) \\ge 0\\) using a sketch or table of values.",
+          "answer": "x <= -4 or x >= 2",
+          "hint": "Identify the critical points and check the region outside of them.",
+          "solution": "The boundary points are \\(x = -4\\) and \\(x = 2\\). An upright parabola is above the x-axis outside the roots. Thus, \\(x \\le -4\\) or \\(x \\ge 2\\).",
+          "steps": [
+            {
+              "explain": "Determine the roots where the expression equals zero.",
+              "work": "(x - 2)(x + 4) = 0 \\implies x = 2, \\; -4"
+            },
+            {
+              "explain": "Consider the upright parabola shape. The inequality \\(\\ge 0\\) requires the regions on or above the \\(x\\)-axis.",
+              "work": "\\mathrm{Outer\\; regions\\; of\\; the\\; roots}"
+            },
+            {
+              "explain": "Write down the combined inequalities.",
+              "work": "x \\le -4 \\quad \\mathrm{or} \\quad x \\ge 2"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q7c",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the quadratic inequation \\(x^2 - 5x > 0\\) using a sketch or table of values.",
+          "answer": "x < 0 or x > 5",
+          "hint": "Factorise the quadratic expression to find the boundary points.",
+          "solution": "Factorise to get \\(x(x - 5) > 0\\). The roots are 0 and 5. The upright parabola is above the x-axis outside these roots. Thus, \\(x < 0\\) or \\(x > 5\\).",
+          "steps": [
+            {
+              "explain": "Factorise the quadratic expression to find the boundary roots.",
+              "work": "x(x - 5) > 0 \\implies \\mathrm{roots\\; at\\; } x = 0, \\; 5"
+            },
+            {
+              "explain": "Analyze the sign of \\(x(x-5)\\). For \\(> 0\\), the values must be outside the interval \\([0, 5]\\).",
+              "work": "\\mathrm{Parabola\\; lies\\; above\\; the\\; x-axis\\; outside\\; the\\; roots}"
+            },
+            {
+              "explain": "Write the solution as a pair of separate inequalities.",
+              "work": "x < 0 \\quad \\mathrm{or} \\quad x > 5"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q7d",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the quadratic inequation \\(x^2 - 16 \\le 0\\) using a sketch or table of values.",
+          "answer": "-4 <= x <= 4",
+          "hint": "Factorise the expression as a difference of two squares.",
+          "solution": "Factorise as a difference of squares: \\((x-4)(x+4) \\le 0\\). The roots are -4 and 4. The upright parabola lies below or on the x-axis between these roots. Thus, \\(-4 \\le x \\le 4\\).",
+          "steps": [
+            {
+              "explain": "Factorise the left side of the inequality using the difference of squares identity.",
+              "work": "(x - 4)(x + 4) \\le 0"
+            },
+            {
+              "explain": "State the critical boundary values.",
+              "work": "x = 4 \\quad \\mathrm{or} \\quad x = -4"
+            },
+            {
+              "explain": "Identify the region between the roots since the inequality requires the expression to be less than or equal to zero.",
+              "work": "-4 \\le x \\le 4"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q7e",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the quadratic inequation \\(x^2 - 2x - 8 \\ge 0\\) using a sketch or table of values.",
+          "answer": "x <= -2 or x >= 4",
+          "hint": "Factorise the quadratic trinomial by finding two numbers that multiply to -8 and add to -2.",
+          "solution": "Factorise the quadratic to get \\((x-4)(x+2) \\ge 0\\). The roots are -2 and 4. The upright parabola is on or above the x-axis outside these roots. Thus, \\(x \\le -2\\) or \\(x \\ge 4\\).",
+          "steps": [
+            {
+              "explain": "Factorise the quadratic expression.",
+              "work": "(x - 4)(x + 2) \\ge 0"
+            },
+            {
+              "explain": "Identify the boundary roots.",
+              "work": "x = 4 \\quad \\mathrm{or} \\quad x = -2"
+            },
+            {
+              "explain": "Determine the intervals that satisfy \\(\\ge 0\\) (on or above the x-axis).",
+              "work": "x \\le -2 \\quad \\mathrm{or} \\quad x \\ge 4"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q7f",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the quadratic inequation \\(2x^2 + 3x - 2 < 0\\) using a sketch or table of values.",
+          "answer": "-2 < x < 0.5",
+          "hint": "Factorise the quadratic by decomposition or trial and error.",
+          "solution": "Factorise the trinomial to get \\((2x-1)(x+2) < 0\\). The roots are -2 and 0.5. The upright parabola is below the x-axis between these roots. Thus, \\(-2 < x < 0.5\\).",
+          "steps": [
+            {
+              "explain": "Factorise the quadratic trinomial.",
+              "work": "(2x - 1)(x + 2) < 0"
+            },
+            {
+              "explain": "Find the boundary points by setting each factor to zero.",
+              "work": "x = 0.5 \\quad \\mathrm{or} \\quad x = -2"
+            },
+            {
+              "explain": "Locate the interval between these roots where the quadratic is strictly negative.",
+              "work": "-2 < x < 0.5"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q8a",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Find the values of \\(k\\) for which the quadratic equation \\(x^2 + 8x + k = 0\\) has real roots.",
+          "answer": "k <= 16",
+          "hint": "Real roots require the discriminant to satisfy the condition \\(\\Delta \\ge 0\\).",
+          "solution": "For real roots, the discriminant \\(\\Delta\\) must be greater than or equal to 0. Since \\(\\Delta = 8^2 - 4(1)(k) = 64 - 4k\\), we solve \\(64 - 4k \\ge 0\\) to get \\(k \\le 16\\).",
+          "steps": [
+            {
+              "explain": "Set up the discriminant formula for the quadratic equation.",
+              "work": "\\Delta = b^2 - 4ac = 8^2 - 4(1)(k) = 64 - 4k"
+            },
+            {
+              "explain": "Set the discriminant to be greater than or equal to zero for real roots.",
+              "work": "64 - 4k \\ge 0"
+            },
+            {
+              "explain": "Solve the inequality for \\(k\\).",
+              "work": "64 \\ge 4k \\implies k \\le 16"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q8b",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Find the values of \\(k\\) for which the quadratic equation \\(x^2 + 8x + k = 0\\) has equal roots.",
+          "answer": "k = 16",
+          "hint": "Equal roots require the discriminant to satisfy \\(\\Delta = 0\\).",
+          "solution": "For equal roots, the discriminant must equal 0. Solving \\(64 - 4k = 0\\) yields \\(k = 16\\).",
+          "steps": [
+            {
+              "explain": "Write the expression for the discriminant of the quadratic equation.",
+              "work": "\\Delta = 64 - 4k"
+            },
+            {
+              "explain": "Set the discriminant equal to zero to represent the condition for equal roots.",
+              "work": "64 - 4k = 0"
+            },
+            {
+              "explain": "Solve the linear equation for \\(k\\).",
+              "work": "4k = 64 \\implies k = 16"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q8c",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Find the values of \\(k\\) for which the quadratic equation \\(x^2 + 8x + k = 0\\) has unreal roots.",
+          "answer": "k > 16",
+          "hint": "Unreal roots require the discriminant to satisfy \\(\\Delta < 0\\).",
+          "solution": "For unreal roots, the discriminant must be strictly less than 0. Solving \\(64 - 4k < 0\\) yields \\(k > 16\\).",
+          "steps": [
+            {
+              "explain": "Identify the expression for the discriminant.",
+              "work": "\\Delta = 64 - 4k"
+            },
+            {
+              "explain": "Set the discriminant to be strictly less than zero for unreal roots.",
+              "work": "64 - 4k < 0"
+            },
+            {
+              "explain": "Solve the inequality for \\(k\\).",
+              "work": "64 < 4k \\implies k > 16"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q9a",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Find the values of \\(m\\) for which the quadratic equation \\(x^2 - 4mx + 16 = 0\\) has real roots.",
+          "answer": "m <= -2 or m >= 2",
+          "hint": "Write down the discriminant with variable m and solve the quadratic inequality.",
+          "solution": "For real roots, \\(\\Delta \\ge 0\\). The discriminant is \\((-4m)^2 - 4(1)(16) = 16m^2 - 64\\). Setting \\(16m^2 - 64 \\ge 0\\) gives \\(m^2 \\ge 4\\), so \\(m \\le -2\\) or \\(m \\ge 2\\).",
+          "steps": [
+            {
+              "explain": "Construct the expression for the discriminant \\(\\Delta\\).",
+              "work": "\\Delta = (-4m)^2 - 4(1)(16) = 16m^2 - 64"
+            },
+            {
+              "explain": "Set up the inequality for real roots.",
+              "work": "16m^2 - 64 \\ge 0 \\implies m^2 \\ge 4"
+            },
+            {
+              "explain": "Solve the quadratic inequality for \\(m\\).",
+              "work": "m \\le -2 \\quad \\mathrm{or} \\quad m \\ge 2"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q9b",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Find the values of \\(m\\) for which the quadratic equation \\(x^2 - 4mx + 16 = 0\\) has equal roots.",
+          "answer": "m = -2, 2",
+          "hint": "Set the discriminant expression equal to zero.",
+          "solution": "For equal roots, \\(\\Delta = 0\\). Solving \\(16m^2 - 64 = 0\\) yields \\(m^2 = 4\\), which gives \\(m = 2\\) or \\(m = -2\\).",
+          "steps": [
+            {
+              "explain": "Identify the discriminant equation.",
+              "work": "\\Delta = 16m^2 - 64"
+            },
+            {
+              "explain": "Equate the discriminant to zero.",
+              "work": "16m^2 - 64 = 0"
+            },
+            {
+              "explain": "Solve for \\(m\\).",
+              "work": "m^2 = 4 \\implies m = \\pm 2"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q9c",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Find the values of \\(m\\) for which the quadratic equation \\(x^2 - 4mx + 16 = 0\\) has unreal roots.",
+          "answer": "-2 < m < 2",
+          "hint": "Set the discriminant expression to be strictly less than zero.",
+          "solution": "For unreal roots, \\(\\Delta < 0\\). Solving \\(16m^2 - 64 < 0\\) yields \\(m^2 < 4\\), which gives the interval \\(-2 < m < 2\\).",
+          "steps": [
+            {
+              "explain": "Express the condition for unreal roots using the discriminant.",
+              "work": "\\Delta = 16m^2 - 64 < 0"
+            },
+            {
+              "explain": "Simplify the quadratic inequality.",
+              "work": "m^2 < 4"
+            },
+            {
+              "explain": "Find the bounding interval for \\(m\\).",
+              "work": "-2 < m < 2"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11e1-4e-q10",
+          "type": "short",
+          "difficulty": "hard",
+          "stem": "Find the values of \\(\\ell\\) that will make the quadratic expression \\(y = (\\ell + 3)x^2 - 2\\ell x + 4\\) a perfect square.",
+          "answer": "ell = -2, 6",
+          "hint": "Set the discriminant of the quadratic expression to zero.",
+          "solution": "A quadratic expression is a perfect square when its discriminant is zero. Evaluating \\(\\Delta = (-2\\ell)^2 - 4(\\ell + 3)(4) = 4\\ell^2 - 16\\ell - 48 = 0\\), we factorise to get \\(4(\\ell - 6)(\\ell + 2) = 0\\), which gives \\(\\ell = 6\\) or \\(\\ell = -2\\).",
+          "steps": [
+            {
+              "explain": "Identify coefficients of the quadratic expression in terms of \\(\\ell\\).",
+              "work": "a = \\ell + 3, \\; b = -2\\ell, \\; c = 4"
+            },
+            {
+              "explain": "Construct the discriminant equation and simplify it.",
+              "work": "\\Delta = b^2 - 4ac = (-2\\ell)^2 - 4(\\ell + 3)(4) = 4\\ell^2 - 16\\ell - 48"
+            },
+            {
+              "explain": "Set the simplified discriminant to zero and solve the quadratic equation.",
+              "work": "4\\ell^2 - 16\\ell - 48 = 0 \\implies \\ell^2 - 4\\ell - 12 = 0"
+            },
+            {
+              "explain": "Factorise the quadratic and state the final values of \\(\\ell\\).",
+              "work": "(\\ell - 6)(\\ell + 2) = 0 \\implies \\ell = 6 \\quad \\mathrm{or} \\quad \\ell = -2"
+            }
+          ]
+        },
+        {
+          "id": "y11e1-4e-q12",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A rectangle has a perimeter of 26 cm. Let one side have a length of \\(x\\) cm. Complete the sub-questions.",
+          "parts": [
+            {
+              "id": "y11e1-4e-q12a",
+              "type": "short",
+              "difficulty": "medium",
+              "stem": "Write down an expression for the area \\(A\\) of this rectangle in terms of \\(x\\).",
+              "answer": "x(13 - x)",
+              "steps": [
+                {
+                  "explain": "Determine the sum of the adjacent sides using the perimeter of 26 cm.",
+                  "work": "\\mathrm{Sum\\; of\\; adjacent\\; sides} = \\frac{26}{2} = 13"
+                },
+                {
+                  "explain": "Express the length of the second side in terms of \\(x\\).",
+                  "work": "\\mathrm{Side\\; 2} = 13 - x"
+                },
+                {
+                  "explain": "Formulate the area \\(A\\) as the product of the two perpendicular side lengths.",
+                  "work": "A = x(13 - x)"
+                }
+              ],
+              "timeLimit": 90
+            },
+            {
+              "id": "y11e1-4e-q12b",
+              "type": "short",
+              "difficulty": "hard",
+              "stem": "What values may \\(x\\) take if the area \\(A\\) is strictly greater than 36 square centimeters?",
+              "answer": "4 < x < 9",
+              "steps": [
+                {
+                  "explain": "Set up the inequality using the area expression derived in part a.",
+                  "work": "x(13 - x) > 36"
+                },
+                {
+                  "explain": "Expand the left side and rearrange terms into a standard quadratic inequality.",
+                  "work": "13x - x^2 > 36 \\implies x^2 - 13x + 36 < 0"
+                },
+                {
+                  "explain": "Factorise the quadratic expression to identify the boundary points.",
+                  "work": "(x - 4)(x - 9) < 0"
+                },
+                {
+                  "explain": "Identify the range of \\(x\\) that makes the product negative (between the roots).",
+                  "work": "4 < x < 9"
+                }
+              ]
+            }
+          ],
+          "answer": "Refer to sub-questions for expression and solution interval.",
+          "hint": "Use the perimeter formula to express the other side length in terms of x.",
+          "solution": "The other side length is \\(13 - x\\). The area is \\(A = x(13 - x)\\). For \\(A > 36\\), the width \\(x\\) must lie in the interval \\(4 < x < 9\\)."
+        },
+        {
+          "id": "y11e1-4e-q13",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A farmer builds a rectangular holding pen for some sheep. The side of a barn will be used for one side of the pen, and there is 80 m of fencing available for the remaining three sides. Let \\(x\\) be the length of each side perpendicular to the barn wall. Complete the sub-questions.",
+          "parts": [
+            {
+              "id": "y11e1-4e-q13a",
+              "type": "short",
+              "difficulty": "medium",
+              "stem": "Find an expression for the length of the third side (parallel to the barn wall) in terms of \\(x\\).",
+              "answer": "80 - 2x",
+              "steps": [
+                {
+                  "explain": "Express the total length of fencing as the sum of the three fenced side lengths.",
+                  "work": "x + x + \\mathrm{Third\\; Side} = 80"
+                },
+                {
+                  "explain": "Simplify the equation to express the third side in terms of \\(x\\).",
+                  "work": "2x + \\mathrm{Third\\; Side} = 80"
+                },
+                {
+                  "explain": "Isolate the term for the third side.",
+                  "work": "\\mathrm{Third\\; Side} = 80 - 2x"
+                }
+              ],
+              "timeLimit": 90
+            },
+            {
+              "id": "y11e1-4e-q13b",
+              "type": "short",
+              "difficulty": "hard",
+              "stem": "If the area \\(A\\) of the pen must be at least 600 square meters, find the smallest value of \\(x\\) that satisfies this requirement.",
+              "answer": "10",
+              "steps": [
+                {
+                  "explain": "Write the area equation as the product of the adjacent side lengths and set up the inequality.",
+                  "work": "x(80 - 2x) \\ge 600"
+                },
+                {
+                  "explain": "Expand the left side and rearrange the inequality into standard form.",
+                  "work": "80x - 2x^2 \\ge 600 \\implies 2x^2 - 80x + 600 \\le 0"
+                },
+                {
+                  "explain": "Divide the entire inequality by 2 and factorise the quadratic trinomial.",
+                  "work": "x^2 - 40x + 300 \\le 0 \\implies (x - 10)(x - 30) \\le 0"
+                },
+                {
+                  "explain": "Identify the range of values for \\(x\\) and determine the minimum boundary.",
+                  "work": "10 \\le x \\le 30 \\implies \\mathrm{smallest\\; } x = 10"
+                }
+              ]
+            }
+          ],
+          "answer": "Refer to sub-questions for expressions and calculations.",
+          "hint": "Recall that only three sides of the rectangle need fencing because the barn wall forms the fourth side.",
+          "solution": "The three fenced sides are \\(x\\), \\(x\\), and the third side. The third side is \\(80 - 2x\\). For \\(A \\ge 600\\), \\(10 \\le x \\le 30\\), meaning the smallest valid value of \\(x\\) is 10."
+        },
+        {
+          "id": "y11e1-4e-q14",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Express the quadratic expression in the form \\(2x^2 - 3x + 5 = a(x-2)^2 + b(x-2) + c\\) for all values of \\(x\\). Complete the sub-questions.",
+          "parts": [
+            {
+              "id": "y11e1-4e-q14a",
+              "type": "short",
+              "difficulty": "hard",
+              "stem": "Find the values of the constants \\(a\\), \\(b\\), and \\(c\\).",
+              "answer": "a = 2, b = 5, c = 7",
+              "steps": [
+                {
+                  "explain": "Substitute \\(x = 2\\) into both sides of the identity to isolate \\(c\\).",
+                  "work": "2(2)^2 - 3(2) + 5 = a(2-2)^2 + b(2-2) + c"
+                },
+                {
+                  "explain": "Simplify the arithmetic on both sides to solve for \\(c\\).",
+                  "work": "8 - 6 + 5 = c \\implies c = 7"
+                },
+                {
+                  "explain": "Equate the leading coefficients of \\(x^2\\) on both sides of the equation to find \\(a\\).",
+                  "work": "2x^2 = ax^2 \\implies a = 2"
+                },
+                {
+                  "explain": "Substitute another simple value, e.g., \\(x = 3\\), to solve for \\(b\\).",
+                  "work": "2(3)^2 - 3(3) + 5 = 2(3-2)^2 + b(3-2) + 7 \\implies 14 = 9 + b \\implies b = 5"
+                }
+              ]
+            },
+            {
+              "id": "y11e1-4e-q14b",
+              "type": "short",
+              "difficulty": "medium",
+              "stem": "Hence, evaluate \\(2x^2 - 3x + 5\\) when \\(x = 2.03\\) without using a calculator.",
+              "answer": "7.1518",
+              "steps": [
+                {
+                  "explain": "Substitute \\(x = 2.03\\) into the rewritten form of the quadratic expression \\(2(x-2)^2 + 5(x-2) + 7\\).",
+                  "work": "2(2.03 - 2)^2 + 5(2.03 - 2) + 7"
+                },
+                {
+                  "explain": "Simplify the terms inside the parentheses.",
+                  "work": "2(0.03)^2 + 5(0.03) + 7"
+                },
+                {
+                  "explain": "Calculate the arithmetic values step-by-step.",
+                  "work": "2(0.0009) + 0.15 + 7 = 0.0018 + 0.15 + 7"
+                },
+                {
+                  "explain": "Add the terms together to get the final result.",
+                  "work": "\\therefore\\; 7.1518"
+                }
+              ],
+              "timeLimit": 90
+            }
+          ],
+          "answer": "Refer to sub-questions for constants and evaluation.",
+          "hint": "Substitute x = 2 to easily find the constant c first.",
+          "solution": "By substituting convenient values of x (such as 2, 3) or equating coefficients, we find \\(a=2, b=5, c=7\\). Evaluating at \\(x=2.03\\) yields 7.1518."
+        },
+        {
+          "id": "y11e1-4e-q15",
+          "type": "short",
+          "difficulty": "hard",
+          "stem": "Determine the values of \\(p\\), \\(q\\), and \\(r\\) so that \\(2x^2 - 4x + 6 = px^2 + q(x-1)^2 + r(x-2)^2\\) for all values of \\(x\\).",
+          "answer": "p = 2, q = -2, r = 2",
+          "hint": "Expand the right side and equate the coefficients of like terms.",
+          "solution": "Expand the RHS to get \\((p+q+r)x^2 - (2q+4r)x + (q+4r)\\). Equating coefficients with the LHS yields \\(q+4r = 6\\), \\(2q+4r = 4\\), and \\(p+q+r = 2\\). Solving this system gives \\(p=2, q=-2, r=2\\).",
+          "steps": [
+            {
+              "explain": "Expand the terms on the right-hand side of the equation.",
+              "work": "px^2 + q(x^2 - 2x + 1) + r(x^2 - 4x + 4) = (p + q + r)x^2 - (2q + 4r)x + (q + 4r)"
+            },
+            {
+              "explain": "Equate the constant terms and the linear coefficients to set up a system of equations.",
+              "work": "q + 4r = 6 \\quad \\mathrm{and} \\quad 2q + 4r = 4"
+            },
+            {
+              "explain": "Subtract the second equation from the first to solve for \\(r\\).",
+              "work": "(2q + 4r) - (q + 4r) = 4 - 6 \\implies q = -2"
+            },
+            {
+              "explain": "Substitute \\(q = -2\\) back to find \\(r\\), then equate the \\(x^2\\) coefficients to find \\(p\\).",
+              "work": "-2 + 4r = 6 \\implies r = 2; \\quad p + q + r = 2 \\implies p - 2 + 2 = 2 \\implies p = 2"
+            },
+            {
+              "explain": "State the final values for \\(p\\), \\(q\\), and \\(r\\).",
+              "work": "\\therefore\\; p = 2, \\; q = -2, \\; r = 2"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

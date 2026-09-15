@@ -1609,6 +1609,96 @@
               "work": "\\(\\text{Total count} = 2m + 1 \\implies \\text{Odd}\\)"
             }
           ]
+        },
+        {
+          "id": "y8-3a-q5ai",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Count to 40 in 2s.",
+          "answer": "2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40.\nThese are all the positive multiples of 2 up to 40.",
+          "hint": "Write multiples of 2 up to 40.",
+          "solution": "2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40.\nThese are all the positive multiples of 2 up to 40.",
+          "steps": [
+            {
+              "explain": "Understand the counting pattern. We start at 2 and continuously add 2 to list all even numbers up to 40.",
+              "work": "\\\\(2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40\\\\)"
+            },
+            {
+              "explain": "Check the upper limit. Make sure the list ends exactly at 40.",
+              "work": "\\\\(40 = 2 \\times 20 \\implies \\text{List contains exactly 20 numbers.}\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3a-q5aii",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Count to 40 in 3s.",
+          "answer": "3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39.\nThese are all the positive multiples of 3 less than 40.",
+          "hint": "Write multiples of 3 up to 40.",
+          "solution": "3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39.\nThese are all the positive multiples of 3 less than 40.",
+          "steps": [
+            {
+              "explain": "Understand the counting pattern. We start at 3 and continuously add 3 to list all multiples of 3 up to 40.",
+              "work": "\\\\(3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39\\\\)"
+            },
+            {
+              "explain": "Check the upper limit. Since the next multiple is 42, which exceeds 40, our list must stop at 39.",
+              "work": "\\\\(39 = 3 \\times 13 < 40\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3a-q5aiii",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Count to 40 in 5s.",
+          "answer": "5, 10, 15, 20, 25, 30, 35, 40.\nThese are all the positive multiples of 5 up to 40.",
+          "hint": "Write multiples of 5 up to 40.",
+          "solution": "5, 10, 15, 20, 25, 30, 35, 40.\nThese are all the positive multiples of 5 up to 40.",
+          "steps": [
+            {
+              "explain": "Understand the counting pattern. We start at 5 and continuously add 5 to list all multiples of 5 up to 40.",
+              "work": "\\\\(5, 10, 15, 20, 25, 30, 35, 40\\\\)"
+            },
+            {
+              "explain": "Check the upper limit. The final term is exactly 40.",
+              "work": "\\\\(40 = 5 \\times 8\\\\)"
+            }
+          ]
+        },
+        {
+          "id": "y8-3a-q14",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "The prime factors of \\\\(330\\\\) are \\\\(2, 3, 5\\\\) and \\\\(11\\\\). Which of the following lists six other distinct factors of \\\\(330\\\\) that can be found by multiplying combinations of these prime factors?",
+          "options": [
+            "\\\\(6, 10, 15, 22, 33, 55\\\\)",
+            "\\\\(4, 9, 25, 6, 10, 15\\\\)",
+            "\\\\(6, 10, 12, 15, 22, 44\\\\)",
+            "\\\\(8, 12, 18, 20, 30, 40\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply pairs of the prime factors (e.g. 2 × 3, 2 × 5, etc.) to generate other factors.",
+          "solution": "The six other factors are: 6, 10, 15, 22, 33, and 55.\nThese are obtained by multiplying pairs of the prime factors.",
+          "steps": [
+            {
+              "explain": "Identify the given prime factors of 330.",
+              "work": "\\\\(\\text{Prime factors} = \\{2, 3, 5, 11\\}\\\\)"
+            },
+            {
+              "explain": "Multiply combinations of two prime factors together to find new distinct factors.",
+              "work": "\\\\(\\begin{aligned} 2 \\times 3 &= 6 \\\\ 2 \\times 5 &= 10 \\\\ 2 \\times 11 &= 22 \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Continue multiplying other pairs of prime factors.",
+              "work": "\\\\(\\begin{aligned} 3 \\times 5 &= 15 \\\\ 3 \\times 11 &= 33 \\\\ 5 \\times 11 &= 55 \\end{aligned}\\\\)"
+            },
+            {
+              "explain": "Gather the six distinct factors found.",
+              "work": "\\\\(\\{6, 10, 15, 22, 33, 55\\}\\\\)"
+            }
+          ]
         }
       ]
     },

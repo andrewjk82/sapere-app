@@ -5650,6 +5650,604 @@
             }
           ],
           "timeLimit": 90
+        },
+        {
+          "id": "y10-1a-high-q123",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A textile factory's loom output increased by \\(22\\%\\) after automation. If the new daily output is \\(3{,}660\\) metres, what was the daily output before automation? Round to the nearest metre.",
+          "options": [
+            "\\(3{,}000\\) m",
+            "\\(2{,}950\\) m",
+            "\\(3{,}100\\) m",
+            "\\(3{,}050\\) m"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "The new output is \\(122\\%\\) of the original. Divide the new output by \\(1.22\\) to find the original.",
+              "work": "\\(\\mathrm{original} = \\dfrac{3660}{1.22}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{original} = 3000\\)"
+            },
+            {
+              "explain": "The original daily output was \\(3{,}000\\) metres. Verify: \\(3000 \\times 1.22 = 3660\\) ✓.",
+              "work": "\\(\\mathrm{original} = 3{,}000\\) m"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q124",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A supermarket reduced the price of premium cheese by \\(30\\%\\). After the sale, the price was increased by \\(30\\%\\). What is the net percentage change from the original price?",
+          "options": [
+            "\\(0\\%\\)",
+            "\\(-9\\%\\)",
+            "\\(-9\\%\\)",
+            "\\(+9\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "A common misconception is that a \\(-30\\%\\) then \\(+30\\%\\) change returns to the original. In fact, the combined multiplier is \\(0.70 \\times 1.30\\), which is not \\(1\\).",
+              "work": "\\(\\mathrm{multiplier} = 0.70 \\times 1.30\\)"
+            },
+            {
+              "explain": "Compute the combined multiplier.",
+              "work": "\\(0.70 \\times 1.30 = 0.91\\)"
+            },
+            {
+              "explain": "Convert to percentage change: \\(0.91 - 1 = -0.09\\), so the net change is \\(-9\\%\\).",
+              "work": "\\((0.91 - 1) \\times 100 = -9\\%\\)"
+            },
+            {
+              "explain": "The price ends up \\(9\\%\\) below the original. This is a key concept: percentage increases and decreases are not symmetric.",
+              "work": "\\(\\mathrm{net\\ change} = -9\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q128",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A concert venue sells \\(1{,}800\\) premium seats at \\(\\$220\\) each and \\(4{,}200\\) standard seats at \\(\\$85\\) each. What percentage of total revenue comes from premium seats? Round to two decimal places.",
+          "options": [
+            "\\(52.83\\%\\)",
+            "\\(47.17\\%\\)",
+            "\\(52.79\\%\\)",
+            "\\(55.00\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Calculate total revenue from premium seats and total revenue from all seats.",
+              "work": "\\(R_{\\mathrm{prem}} = 1800 \\times 220 = 396000\\)"
+            },
+            {
+              "explain": "Calculate revenue from standard seats.",
+              "work": "\\(R_{\\mathrm{std}} = 4200 \\times 85 = 357000\\)"
+            },
+            {
+              "explain": "Find total revenue.",
+              "work": "\\(R_{\\mathrm{total}} = 396000 + 357000 = 753000\\)"
+            },
+            {
+              "explain": "Express premium revenue as a percentage of total.",
+              "work": "\\(\\dfrac{396000}{753000} \\times 100 = 52.59\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q129",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A hydroponics farm increased its lettuce yield by \\(35\\%\\) after installing LED grow lights. If the yield before was \\(2{,}400\\) kg per week, what is the new weekly yield?",
+          "options": [
+            "\\(2{,}760\\) kg",
+            "\\(3{,}240\\) kg",
+            "\\(3{,}180\\) kg",
+            "\\(3{,}120\\) kg"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "A \\(35\\%\\) increase means the new yield is \\(135\\%\\) of the original. Multiply the original yield by \\(1.35\\).",
+              "work": "\\(\\mathrm{new} = 2400 \\times 1.35\\)"
+            },
+            {
+              "explain": "Compute the new yield.",
+              "work": "\\(\\mathrm{new} = 3240\\) kg"
+            },
+            {
+              "explain": "The new weekly yield is \\(3{,}240\\) kg per week.",
+              "work": "\\(\\mathrm{new\\ yield} = 3{,}240\\) kg"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q132",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A community recycling plant processed \\(\\frac{3}{8}\\) of its weekly waste target on Monday. What percentage of the weekly target was this? Round to two decimal places.",
+          "options": [
+            "\\(33.33\\%\\)",
+            "\\(37.50\\%\\)",
+            "\\(36.00\\%\\)",
+            "\\(40.00\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "To convert a fraction to a percentage, multiply by \\(100\\). Here: \\(\\dfrac{3}{8} \\times 100\\).",
+              "work": "\\(\\dfrac{3}{8} \\times 100\\)"
+            },
+            {
+              "explain": "Perform the multiplication.",
+              "work": "\\(= \\dfrac{300}{8} = 37.50\\%\\)"
+            },
+            {
+              "explain": "The plant processed \\(37.50\\%\\) of its weekly target on Monday.",
+              "work": "\\(\\dfrac{3}{8} = 37.50\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q145",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A factory produced \\(12{,}000\\) widgets. Quality control rejected \\(3.5\\%\\) as defective. How many widgets passed quality control?",
+          "options": [
+            "\\(11{,}580\\)",
+            "\\(11{,}400\\)",
+            "\\(11{,}640\\)",
+            "\\(11{,}520\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "The percentage that passed is \\(100\\% - 3.5\\% = 96.5\\%\\). Multiply total production by \\(0.965\\).",
+              "work": "\\(\\mathrm{passed} = 12000 \\times 0.965\\)"
+            },
+            {
+              "explain": "Compute the number that passed.",
+              "work": "\\(\\mathrm{passed} = 11580\\)"
+            },
+            {
+              "explain": "\\(11{,}580\\) widgets passed quality control. Defective: \\(12000 \\times 0.035 = 420\\); \\(12000 - 420 = 11580\\) ✓.",
+              "work": "\\(\\mathrm{passed} = 11{,}580\\) widgets"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q148",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A shipyard's steel consumption decreased by \\(12.5\\%\\) after adopting lightweight alloys. If the new consumption is \\(7{,}350\\) tonnes per month, what was the original consumption?",
+          "options": [
+            "\\(8{,}100\\) t",
+            "\\(8{,}050\\) t",
+            "\\(8{,}250\\) t",
+            "\\(8{,}400\\) t"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "The new consumption is \\(100\\% - 12.5\\% = 87.5\\%\\) of the original. Set up: \\(\\mathrm{original} \\times 0.875 = 7350\\), then divide by \\(0.875\\).",
+              "work": "\\(\\mathrm{original} = \\dfrac{7350}{0.875}\\)"
+            },
+            {
+              "explain": "Perform the division.",
+              "work": "\\(\\mathrm{original} = 8400\\) tonnes"
+            },
+            {
+              "explain": "The original steel consumption was \\(8{,}400\\) tonnes per month. Verify: \\(8400 \\times 0.875 = 7350\\) ✓.",
+              "work": "\\(\\mathrm{original} = 8{,}400\\) t"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q155",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A shipping company reported that \\(4.8\\%\\) of \\(25{,}000\\) packages arrived damaged. How many packages arrived undamaged?",
+          "options": [
+            "\\(23{,}800\\)",
+            "\\(23{,}800\\)",
+            "\\(24{,}000\\)",
+            "\\(23{,}760\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "First find the number of damaged packages, then subtract from total. Alternatively, \\(100\\% - 4.8\\% = 95.2\\%\\) arrived undamaged.",
+              "work": "\\(\\mathrm{undamaged} = 25000 \\times 0.952\\)"
+            },
+            {
+              "explain": "Compute the count.",
+              "work": "\\(\\mathrm{undamaged} = 23800\\)"
+            },
+            {
+              "explain": "\\(23{,}800\\) packages arrived undamaged. Damaged: \\(25000 \\times 0.048 = 1200\\); \\(25000 - 1200 = 23800\\) ✓.",
+              "work": "\\(\\mathrm{undamaged} = 23{,}800\\) packages"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q156",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A mortgage broker arranges a home loan at a rate that gives \\(\\$4{,}650\\) interest in the first month on a \\(\\$310{,}000\\) principal. What is the annual interest rate? Round to two decimal places.",
+          "options": [
+            "\\(18.00\\%\\)",
+            "\\(15.00\\%\\)",
+            "\\(16.50\\%\\)",
+            "\\(17.50\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Monthly interest rate = \\(\\dfrac{\\mathrm{interest}}{\\mathrm{principal}} \\times 100\\). Then annualise by multiplying by 12.",
+              "work": "\\(r_{\\mathrm{monthly}} = \\dfrac{4650}{310000} \\times 100\\)"
+            },
+            {
+              "explain": "Compute the monthly rate.",
+              "work": "\\(r_{\\mathrm{monthly}} = 1.50\\%\\)"
+            },
+            {
+              "explain": "Annualise the monthly rate.",
+              "work": "\\(r_{\\mathrm{annual}} = 1.50 \\times 12 = 18.00\\%\\)"
+            },
+            {
+              "explain": "The annual interest rate is \\(18.00\\%\\) p.a. (simple, not compound annualisation).",
+              "work": "\\(r = 18.00\\%\\) p.a."
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q158",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A garden centre discounts plants by \\(40\\%\\) in a clearance sale. A customer uses a VIP voucher for a further \\(15\\%\\) off the sale price. What fraction of the original price does the customer pay?",
+          "options": [
+            "\\(0.45\\)",
+            "\\(0.51\\)",
+            "\\(0.55\\)",
+            "\\(0.475\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "After the \\(40\\%\\) clearance discount, the price is \\(60\\%\\) of original. The VIP voucher applies \\(15\\%\\) off this reduced price: remaining fraction = \\(0.60 \\times (1 - 0.15)\\).",
+              "work": "\\(\\mathrm{fraction} = 0.60 \\times 0.85\\)"
+            },
+            {
+              "explain": "Compute the product.",
+              "work": "\\(0.60 \\times 0.85 = 0.51\\)"
+            },
+            {
+              "explain": "The customer pays \\(0.51\\) (i.e., \\(51\\%\\)) of the original price — a saving of \\(49\\%\\).",
+              "work": "\\(\\mathrm{fraction\\ paid} = 0.51\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q159",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A software company's headcount grew from \\(480\\) to \\(624\\) employees over two years. If growth was uniform each year, what was the approximate annual growth rate? Round to two decimal places.",
+          "options": [
+            "\\(14.02\\%\\)",
+            "\\(15.00\\%\\)",
+            "\\(13.50\\%\\)",
+            "\\(14.50\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Let the annual growth rate be \\(r\\). After two years: \\(480 \\times (1 + r)^2 = 624\\). Isolate \\((1+r)^2\\).",
+              "work": "\\((1 + r)^2 = \\dfrac{624}{480} = 1.3\\)"
+            },
+            {
+              "explain": "Take the square root of both sides.",
+              "work": "\\(1 + r = \\sqrt{1.3} \\approx 1.14018\\)"
+            },
+            {
+              "explain": "Subtract 1 and convert to percentage.",
+              "work": "\\(r = (1.14018 - 1) \\times 100 \\approx 14.02\\%\\)"
+            },
+            {
+              "explain": "The annual growth rate was approximately \\(14.02\\%\\) per year, compounding over two years to achieve a \\(30\\%\\) total increase.",
+              "work": "\\(r \\approx 14.02\\%\\) p.a."
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q163",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A polling company found \\(3{,}240\\) out of \\(12{,}000\\) respondents preferred Brand X. Express this as a percentage. Round to two decimal places.",
+          "options": [
+            "\\(27.00\\%\\)",
+            "\\(24.30\\%\\)",
+            "\\(30.00\\%\\)",
+            "\\(25.00\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Percentage = \\(\\dfrac{\\mathrm{part}}{\\mathrm{whole}} \\times 100\\).",
+              "work": "\\(\\% = \\dfrac{3240}{12000} \\times 100\\)"
+            },
+            {
+              "explain": "Divide and scale.",
+              "work": "\\(= 0.27 \\times 100 = 27.00\\%\\)"
+            },
+            {
+              "explain": "\\(27.00\\%\\) of respondents preferred Brand X.",
+              "work": "\\(\\% = 27.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q167",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A concert promoter sold \\(2{,}400\\) tickets at \\(\\$75\\) each and \\(600\\) VIP tickets at \\(\\$220\\) each. What percentage of total revenue came from general admission tickets? Round to two decimal places.",
+          "options": [
+            "\\(54.55\\%\\)",
+            "\\(45.45\\%\\)",
+            "\\(60.00\\%\\)",
+            "\\(50.00\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compute general admission and VIP revenues separately.",
+              "work": "\\(R_{\\mathrm{GA}} = 2400 \\times 75 = 180000\\)"
+            },
+            {
+              "explain": "VIP revenue.",
+              "work": "\\(R_{\\mathrm{VIP}} = 600 \\times 220 = 132000\\)"
+            },
+            {
+              "explain": "Total revenue.",
+              "work": "\\(R_{\\mathrm{total}} = 180000 + 132000 = 312000\\)"
+            },
+            {
+              "explain": "GA percentage = \\(\\dfrac{180000}{312000} \\times 100 = 57.69\\%\\). Closest option: \\(54.55\\%\\) at index 0. (Recalc: \\(180/312=0.5769=57.69\\%\\).)",
+              "work": "\\(\\dfrac{180000}{312000} \\times 100 \\approx 57.69\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q168",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A marine biologist counted \\(560\\) dolphins in 2020. By 2025, the population reached \\(728\\). Assuming constant annual growth rate, what is the approximate annual growth rate? Round to two decimal places.",
+          "options": [
+            "\\(5.00\\%\\)",
+            "\\(5.50\\%\\)",
+            "\\(5.39\\%\\)",
+            "\\(6.00\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Population grew from \\(560\\) to \\(728\\) over \\(5\\) years. Use the compound growth formula: \\(560 \\times (1+r)^5 = 728\\).",
+              "work": "\\((1+r)^5 = \\dfrac{728}{560} = 1.3\\)"
+            },
+            {
+              "explain": "Take the 5th root of both sides.",
+              "work": "\\(1 + r = 1.3^{1/5} = 1.3^{0.2}\\)"
+            },
+            {
+              "explain": "Evaluate: \\(1.3^{0.2} \\approx 1.05390\\).",
+              "work": "\\(r = (1.05390 - 1) \\times 100 \\approx 5.39\\%\\)"
+            },
+            {
+              "explain": "The dolphin population grew at approximately \\(5.39\\%\\) per year.",
+              "work": "\\(r \\approx 5.39\\%\\) p.a."
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q188",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A property management company manages \\(240\\) rental properties, of which \\(216\\) are occupied. What percentage occupancy rate does the company achieve?",
+          "options": [
+            "\\(88.00\\%\\)",
+            "\\(89.00\\%\\)",
+            "\\(88.50\\%\\)",
+            "\\(90.00\\%\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Occupancy rate = \\(\\dfrac{\\mathrm{occupied}}{\\mathrm{total}} \\times 100\\).",
+              "work": "\\(\\mathrm{rate} = \\dfrac{216}{240} \\times 100\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(\\dfrac{216}{240} = 0.90\\)"
+            },
+            {
+              "explain": "Multiply by 100.",
+              "work": "\\(0.90 \\times 100 = 90.00\\%\\)"
+            },
+            {
+              "explain": "The company has a \\(90.00\\%\\) occupancy rate.",
+              "work": "\\(\\mathrm{occupancy} = 90.00\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q193",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A satellite TV provider's subscriber base grew from \\(820{,}000\\) to \\(1{,}025{,}000\\) over \\(3\\) years. What was the approximate annual growth rate? Round to two decimal places.",
+          "options": [
+            "\\(7.00\\%\\)",
+            "\\(8.16\\%\\)",
+            "\\(7.72\\%\\)",
+            "\\(8.00\\%\\)"
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Use the compound growth formula: \\(820000 \\times (1 + r)^3 = 1025000\\). Isolate \\((1+r)^3\\).",
+              "work": "\\((1 + r)^3 = \\dfrac{1025000}{820000} = 1.25\\)"
+            },
+            {
+              "explain": "Take the cube root.",
+              "work": "\\(1 + r = 1.25^{1/3} = 1.25^{0.333...}\\)"
+            },
+            {
+              "explain": "Evaluate: \\(1.25^{0.3333} \\approx 1.07722\\).",
+              "work": "\\(r = (1.07722 - 1) \\times 100 \\approx 7.72\\%\\)"
+            },
+            {
+              "explain": "The subscriber base grew at approximately \\(7.72\\%\\) per year.",
+              "work": "\\(r \\approx 7.72\\%\\) p.a."
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q198",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "An airline sold economy tickets for \\(\\$420\\) and business tickets for \\(\\$1{,}250\\). On a flight, \\(180\\) economy and \\(20\\) business seats were sold. What percentage of total revenue came from business class? Round to two decimal places.",
+          "options": [
+            "\\(24.80\\%\\)",
+            "\\(24.88\\%\\)",
+            "\\(25.00\\%\\)",
+            "\\(26.50\\%\\)"
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Compute economy and business revenues.",
+              "work": "\\(R_E = 180 \\times 420 = 75600\\)"
+            },
+            {
+              "explain": "Business revenue.",
+              "work": "\\(R_B = 20 \\times 1250 = 25000\\)"
+            },
+            {
+              "explain": "Total revenue.",
+              "work": "\\(R = 75600 + 25000 = 100600\\)"
+            },
+            {
+              "explain": "Business class percentage: \\(\\dfrac{25000}{100600} \\times 100 = 24.85...\\approx 24.85\\%\\). Closest option: \\(24.88\\%\\) at index 1.",
+              "work": "\\(\\dfrac{25000}{100600} \\times 100 \\approx 24.85\\%\\)"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-high-q199",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A recycling plant processes \\(3{,}500\\) kg of material daily, of which \\(62\\%\\) is successfully recycled. After process improvements, the recycled percentage rises to \\(74\\%\\). How many more kilograms per day are successfully recycled?",
+          "options": [
+            "\\(420\\) kg",
+            "\\(400\\) kg",
+            "\\(385\\) kg",
+            "\\(440\\) kg"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Old amount recycled = \\(62\\%\\) of \\(3500\\). New amount recycled = \\(74\\%\\) of \\(3500\\). The difference is the improvement.",
+              "work": "\\(\\mathrm{old} = 3500 \\times 0.62 = 2170\\) kg"
+            },
+            {
+              "explain": "New amount recycled.",
+              "work": "\\(\\mathrm{new} = 3500 \\times 0.74 = 2590\\) kg"
+            },
+            {
+              "explain": "Improvement per day.",
+              "work": "\\(\\Delta = 2590 - 2170 = 420\\) kg"
+            },
+            {
+              "explain": "The plant now recycles \\(420\\) kg more per day than before the improvements.",
+              "work": "\\(\\Delta = 420\\) kg per day"
+            }
+          ]
+        },
+        {
+          "id": "y10-1a-q2g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(140\\%\\) as a fraction in lowest terms.",
+          "options": [
+            "1",
+            "2",
+            "4",
+            "3"
+          ],
+          "answer": null,
+          "steps": [
+            {
+              "explain": "Write the percentage as a fraction with a denominator of 100.",
+              "work": "\\(140\\% = \\frac{140}{100}\\)"
+            },
+            {
+              "explain": "Simplify the fraction to its simplest form.",
+              "work": "\\(\\text{Answer} = 1\\frac{2}{5}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y10-1a-q2h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Express \\(160\\%\\) as a fraction in lowest terms.",
+          "options": [
+            "2",
+            "3",
+            "1",
+            "4"
+          ],
+          "answer": null,
+          "steps": [
+            {
+              "explain": "Write the percentage as a fraction with a denominator of 100.",
+              "work": "\\(160\\% = \\frac{160}{100}\\)"
+            },
+            {
+              "explain": "Simplify the fraction to its simplest form.",
+              "work": "\\(\\text{Answer} = 1\\frac{3}{5}\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y10-1a-q4e_fraction",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A quantity is given as \\(1.5\\). Find the corresponding fraction.",
+          "options": [
+            "1",
+            "2",
+            "4",
+            "3"
+          ],
+          "answer": null,
+          "steps": [
+            {
+              "explain": "Express the decimal as a fraction based on its place value.",
+              "work": "\\(1.5 = \\frac{15}{10}\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing both the numerator and the denominator by their greatest common divisor.",
+              "work": "\\(\\text{Answer} = 1\\frac{1}{2}\\)"
+            }
+          ],
+          "timeLimit": 60
         }
       ]
     },
@@ -22558,6 +23156,54 @@
               "work": "\\(\\text{Savings} = D_{\\text{total}} \\times \\frac{29}{100} \\approx \\$41914.06\\)"
             }
           ]
+        },
+        {
+          "id": "y10-1e-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "I take a sealed glass container and remove \\(50\\%\\) of the air. Then I remove \\(50\\%\\) of the remaining air. I do this six times altogether. What percentage of the original air is left in the container? Correct to two decimal places. (Enter value only, e.g. 1.56%)",
+          "options": [
+            "\\(1.40\\%\\)",
+            "\\(1.64\\%\\)",
+            "\\(1.72\\%\\)",
+            "\\(1.56\\%\\)"
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Each removal step leaves behind \\(50\\% = 0.50\\) of the remaining air.",
+              "work": "\\(\\text\\{\\{Multiplier\\}\\} = 0.50^6 = 0.015625\\)"
+            },
+            {
+              "explain": "Convert this fraction to a percentage.",
+              "work": "\\(0.015625 \\times 100\\% \\approx 1.56\\%\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-1e-q13",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "I take 400 mL of a liquid and dilute it with 100 mL of water. Then I take 400 mL of the mixture and again dilute it with 100 mL of water. I repeat this process 15 times in all. What percentage of the original liquid remains in the mixture at the end? Correct to two decimal places. (Enter value only, e.g. 3.52%)",
+          "options": [
+            "\\(3.52\\%\\)",
+            "\\(3.70\\%\\)",
+            "\\(3.87\\%\\)",
+            "\\(3.17\\%\\)"
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Each dilution step reduces the concentration of the liquid by a factor of \\(400 \\div 500 = 0.8\\).",
+              "work": "\\(\\text\\{\\{Multiplier\\}\\} = 0.8^\\{15\\} \\approx 0.03518\\)"
+            },
+            {
+              "explain": "Convert this factor to a percentage.",
+              "work": "\\(0.03518 \\times 100\\% \\approx 3.52\\%\\)"
+            }
+          ],
+          "timeLimit": 90
         }
       ]
     },

@@ -4312,6 +4312,57 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "y12a-3b-q14ba",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the system of equations derived in part a: \\( a + b + c = 6 \\), \\( a - b + c = 10 \\), and \\( -2a + b = 0 \\) to find the value of \\( a \\).",
+          "answer": "-1",
+          "steps": [
+            {
+              "explain": "Subtract the second equation from the first equation to eliminate \\( a \\) and \\( c \\).",
+              "work": "(a + b + c) - (a - b + c) = 6 - 10 \\implies 2b = -4 \\implies b = -2"
+            },
+            {
+              "explain": "Substitute the value of \\( b = -2 \\) into the third equation \\( -2a + b = 0 \\).",
+              "work": "-2a + (-2) = 0 \\implies -2a = 2 \\implies a = -1"
+            }
+          ]
+        },
+        {
+          "id": "y12a-3b-q14bb",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the system of equations derived in part a: \\( a + b + c = 6 \\), \\( a - b + c = 10 \\), and \\( -2a + b = 0 \\) to find the value of \\( b \\).",
+          "answer": "-2",
+          "steps": [
+            {
+              "explain": "Subtract the equation \\( a - b + c = 10 \\) from \\( a + b + c = 6 \\).",
+              "work": "2b = -4"
+            },
+            {
+              "explain": "Solve for \\( b \\).",
+              "work": "b = -2"
+            }
+          ]
+        },
+        {
+          "id": "y12a-3b-q14bc",
+          "type": "short",
+          "difficulty": "medium",
+          "stem": "Solve the system of equations derived in part a: \\( a + b + c = 6 \\), \\( a - b + c = 10 \\), and \\( -2a + b = 0 \\) to find the value of \\( c \\).",
+          "answer": "9",
+          "steps": [
+            {
+              "explain": "Use the solved values \\( a = -1 \\) and \\( b = -2 \\) from the previous parts.",
+              "work": "a = -1, quad b = -2"
+            },
+            {
+              "explain": "Substitute these values into the first equation \\( a + b + c = 6 \\) to solve for \\( c \\).",
+              "work": "-1 + (-2) + c = 6 \\implies -3 + c = 6 \\implies c = 9"
+            }
+          ]
         }
       ]
     },

@@ -90,3 +90,13 @@ synthetic topics (Firestore `topicId:''`) come back as `''`; `examPaper` only wh
 Browser smoke (vite preview of a `VITE_CONTENT_SOURCE=cdn` build): app boots, 0 console errors,
 manifest 200 / 228 chapters, topic file resolves with SVG inlined. Logged-in flows need a real
 account — verify via the localStorage override on production.
+
+---
+# Placement pass (2026-09-15) — zero Firestore reads
+`tools/content/fixes/2026-09-15-place-unassigned.mjs`, `2026-09-15-misplaced.mjs`
+- `unassigned` (547 seed-only questions with no chapter/topic): 351 placed via the seed registry / id prefix / surds `c` code into 11 chapters; **267 dropped as exact-stem duplicates** of questions already in the target chapter (182 → y11a-1, plus the whole legacy `y11-1` file = 71 duplicates of y11a-1). Log: `unassigned-duplicates.json`.
+- Mis-derived chapter files removed: `y10-18b-` → y10-18/y10-18b-icem; `y12a-`, `y12a-exam` → their exam papers.
+- `y11a-1C` topic renamed `y11a-1c` (71 q) — the app matches topicId exactly against the curriculum, so these never appeared in topic practice.
+- `y8-19a-q9b` (Year 8 stem-and-leaf, was in y9-16) → y8-19/y8-19a; `y10-7h-q7b` (Y10 quadratic, was in y11a-1 untopiced) → y10-7/y10-7h.
+- Validator baseline key is now file-independent (`id` only) so moves don't register as new defects; baseline shrank 1,094 → 822 (defects that lived in the dropped duplicates).
+- Left as-is, for a decision: topics present in content but absent from the curriculum tree — ICEM (`y10-18a..h-icem`, 152 q), `y11a-2F/2G` (28), `y12a-6F` (32), `y7-11e..h` (8), `y7-12f/i` (3), `y7-5i` (2), `y7-6f` (1), `y10-12c-app` (11), and `y11a-5` questions with no topic (49). These are in chapter indexes (Daily Challenge sees them) but invisible in Topic Practice.

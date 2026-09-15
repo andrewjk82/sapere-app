@@ -74,7 +74,8 @@ for (const f of fs.readdirSync(DIR).filter((x) => x.endsWith('.json')).sort()) {
   for (const t of data.topics) for (const q of t.questions) walk(q, f);
 }
 
-const key = (e) => e.replace(/ at position \d+:.*?(?= ::)/, '').slice(0, 200);
+// baseline key ignores the file name (questions move between chapter files) and KaTeX positions
+const key = (e) => e.replace(/^[^#]+#/, '').replace(/ at position \d+:.*?(?= ::)/, '').slice(0, 200);
 let baseline = new Set();
 try { baseline = new Set(JSON.parse(fs.readFileSync(BASELINE, 'utf8'))); } catch {}
 const newErrors = errors.filter((e) => !baseline.has(key(e)));

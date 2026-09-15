@@ -21,6 +21,1443 @@
       ]
     },
     {
+      "topicId": "y11a-2A",
+      "code": "2A",
+      "title": "Real numbers and intervals",
+      "questions": [
+        {
+          "id": "s2a_1",
+          "type": "mc",
+          "stem": "Is $\\sqrt{45}$ rational or irrational?",
+          "options": [
+            "Rational",
+            "Irrational",
+            "Integer",
+            "Fraction"
+          ],
+          "answer": 1,
+          "hint": "45 is not a perfect square.",
+          "solution": "$\\sqrt{45} = 3\\sqrt{5}$, which is an irrational number."
+        },
+        {
+          "id": "s2a_2",
+          "type": "mc",
+          "stem": "Identify if $\\sqrt[3]{64}$ is rational or irrational.",
+          "options": [
+            "Rational",
+            "Irrational",
+            "Surd",
+            "Complex"
+          ],
+          "answer": 0,
+          "hint": "Calculate the cube root.",
+          "solution": "$\\sqrt[3]{64} = 4$, which is an integer (Rational)."
+        },
+        {
+          "id": "s2a_3",
+          "type": "mc",
+          "stem": "Express $0.32$ as a fraction in simplest form.",
+          "options": [
+            "$\\frac{8}{25}$",
+            "$\\frac{32}{100}$",
+            "$\\frac{4}{12}$",
+            "$\\frac{16}{50}$"
+          ],
+          "answer": 0,
+          "hint": "32/100 and simplify.",
+          "solution": "$0.32 = \\frac{32}{100} = \\frac{8}{25}$"
+        },
+        {
+          "id": "s2a_4",
+          "type": "mc",
+          "stem": "Classify $\\pi + 2$ as rational or irrational.",
+          "options": [
+            "Rational",
+            "Irrational",
+            "Algebraic",
+            "Integer"
+          ],
+          "answer": 1,
+          "hint": "Adding a rational to an irrational results in an irrational.",
+          "solution": "$\\pi$ is irrational, so $\\pi + 2$ is also irrational."
+        },
+        {
+          "id": "s2a_6",
+          "type": "mc",
+          "stem": "Express the interval $[-2, 7]$ using inequalities.",
+          "options": [
+            "$-2 \\le x \\le 7$",
+            "$-2 < x < 7$",
+            "$-2 \\le x < 7$",
+            "$-2 < x \\le 7$"
+          ],
+          "answer": 0,
+          "hint": "Square brackets mean inclusive.",
+          "solution": "Notation $[-2, 7]$ means $x$ is between -2 and 7, including both."
+        },
+        {
+          "id": "s2a_7",
+          "type": "mc",
+          "stem": "Write the inequality $-3 < x \\le 4$ in bracket notation.",
+          "options": [
+            "$(-3, 4]$",
+            "$[-3, 4]$",
+            "$(-3, 4)$",
+            "$[-3, 4)$"
+          ],
+          "answer": 0,
+          "hint": "Check which endpoint is included.",
+          "solution": "-3 is not included ($>$), 4 is included ($\\le$)."
+        },
+        {
+          "id": "s2a_8",
+          "type": "mc",
+          "stem": "Write the interval $(-\\infty, -4]$ using inequalities.",
+          "options": [
+            "$x \\le -4$",
+            "$x < -4$",
+            "$x \\ge -4$",
+            "$x > -4$"
+          ],
+          "answer": 0,
+          "hint": "Infinity means no boundary on one side.",
+          "solution": "Up to and including -4."
+        },
+        {
+          "id": "s2a_9",
+          "type": "mc",
+          "stem": "Classify $\\sqrt{1.44}$ as rational or irrational.",
+          "options": [
+            "Rational",
+            "Irrational",
+            "Surd",
+            "Imaginary"
+          ],
+          "answer": 0,
+          "hint": "Calculate the square root of 1.44.",
+          "solution": "$\\sqrt{1.44} = 1.2 = 6/5$. Rational."
+        },
+        {
+          "id": "s2a_10",
+          "type": "mc",
+          "stem": "Identify if $3\\sqrt{7}$ is rational or irrational.",
+          "options": [
+            "Rational",
+            "Irrational",
+            "Integer",
+            "Fraction"
+          ],
+          "answer": 1,
+          "hint": "Multiple of an irrational.",
+          "solution": "Product of rational and irrational is irrational."
+        },
+        {
+          "id": "s2a_11",
+          "type": "mc",
+          "stem": "Write $-4 \\le x < 6$ in interval notation.",
+          "options": [
+            "$[-4, 6)$",
+            "$(-4, 6]$",
+            "$[-4, 6]$",
+            "$(-4, 6)$"
+          ],
+          "answer": 0,
+          "hint": "Check the symbols.",
+          "solution": "$-4$ is included, $6$ is not."
+        },
+        {
+          "id": "s2a_13",
+          "type": "mc",
+          "stem": "Express $(-5, 3)$ using inequalities.",
+          "options": [
+            "$-5 < x < 3$",
+            "$-5 \\le x \\le 3$",
+            "$-5 < x \\le 3$",
+            "$-5 \\le x < 3$"
+          ],
+          "answer": 0,
+          "hint": "Round brackets mean strictly greater/less.",
+          "solution": "$-5 < x < 3$"
+        },
+        {
+          "id": "s2a_14",
+          "type": "mc",
+          "stem": "Express $[-5, 3]$ using inequalities.",
+          "options": [
+            "$-5 \\le x \\le 3$",
+            "$-5 < x < 3$",
+            "$-5 \\le x < 3$",
+            "$-5 < x \\le 3$"
+          ],
+          "answer": 0,
+          "hint": "Square brackets mean inclusive.",
+          "solution": "$-5 \\le x \\le 3$"
+        },
+        {
+          "id": "s2a_16",
+          "type": "mc",
+          "stem": "Express $(-\\infty, -5]$ using inequalities.",
+          "options": [
+            "$x \\le -5$",
+            "$x < -5$",
+            "$x \\ge -5$",
+            "$x > -5$"
+          ],
+          "answer": 0,
+          "hint": "Up to -5, inclusive.",
+          "solution": "$x \\le -5$"
+        },
+        {
+          "id": "y11a-2a-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following best classifies \\(\\sqrt{2}\\)?",
+          "options": [
+            "\\(\\sqrt{2}\\) is rational",
+            "\\(\\sqrt{2}\\) is irrational",
+            "\\(\\sqrt{2}\\) is an integer",
+            "\\(\\sqrt{2}\\) is a natural number"
+          ],
+          "answer": 1,
+          "hint": "Can \\(\\sqrt{2}\\) be written as a fraction \\(p/q\\) where \\(p\\) and \\(q\\) are integers?",
+          "steps": [
+            {
+              "explain": "A rational number can be expressed as \\(p/q\\) where \\(p, q\\) are integers and \\(q \ne 0\\)."
+            },
+            {
+              "explain": "\\(\\sqrt{2}\\) cannot be written as such a fraction — its decimal expansion is non-terminating and non-repeating.",
+              "work": "\\(\\sqrt{2} = 1.41421356...\\)"
+            },
+            {
+              "explain": "Therefore \\(\\sqrt{2}\\) is irrational."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify \\(0.\\overline{3}\\) (i.e. \\(0.333\\ldots\\)).",
+          "options": [
+            "Rational",
+            "Irrational",
+            "Integer",
+            "Natural number"
+          ],
+          "answer": 0,
+          "hint": "A recurring decimal can always be written as a fraction.",
+          "steps": [
+            {
+              "explain": "Let \\(x = 0.\\overline{3}\\). Then \\(10x = 3.\\overline{3}\\).",
+              "work": "\\(10x - x = 3.333\\ldots - 0.333\\ldots\\)"
+            },
+            {
+              "explain": "Subtract: \\(9x = 3\\), so \\(x = 1/3\\).",
+              "work": "\\(0.\\overline{3} = \\dfrac{1}{3}\\)"
+            },
+            {
+              "explain": "Since \\(0.\\overline{3} = 1/3\\), it is rational."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q1d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify \\(\\sqrt{4}\\).",
+          "options": [
+            "Irrational",
+            "Rational only (not an integer)",
+            "Natural number only",
+            "Integer and rational"
+          ],
+          "answer": 3,
+          "hint": "Evaluate \\(\\sqrt{4}\\) first.",
+          "steps": [
+            {
+              "explain": "Evaluate the square root: \\(\\sqrt{4} = 2\\).",
+              "work": "\\(\\sqrt{4} = 2\\)"
+            },
+            {
+              "explain": "\\(2\\) is a natural number, integer, and rational number."
+            },
+            {
+              "explain": "It is NOT irrational. Answer: integer and rational."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q1e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify \\(\\sqrt{10}\\).",
+          "options": [
+            "Rational",
+            "Irrational",
+            "Integer",
+            "Natural number"
+          ],
+          "answer": 1,
+          "hint": "Is 10 a perfect square?",
+          "steps": [
+            {
+              "explain": "Check if 10 is a perfect square: \\(3^2 = 9\\), \\(4^2 = 16\\). 10 is NOT a perfect square."
+            },
+            {
+              "explain": "Since 10 is not a perfect square, \\(\\sqrt{10}\\) is irrational.",
+              "work": "\\(\\sqrt{10} = 3.16227\\ldots\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q1f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify \\(1\\tfrac{1}{2}\\).",
+          "options": [
+            "Rational (but not an integer)",
+            "Irrational",
+            "Integer",
+            "Natural number"
+          ],
+          "answer": 0,
+          "hint": "Can \\(1\\frac{1}{2}\\) be written as \\(p/q\\)?",
+          "steps": [
+            {
+              "explain": "\\(1\\tfrac{1}{2} = \\dfrac{3}{2}\\), which is a fraction of two integers."
+            },
+            {
+              "explain": "It is rational. It is not an integer (not a whole number)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q1h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify \\(12\\%\\).",
+          "options": [
+            "Rational",
+            "Irrational",
+            "Integer",
+            "Natural number"
+          ],
+          "answer": 0,
+          "hint": "Convert \\(12\\%\\) to a fraction.",
+          "steps": [
+            {
+              "explain": "\\(12\\% = \\dfrac{12}{100} = \\dfrac{3}{25}\\)."
+            },
+            {
+              "explain": "This is a ratio of two integers, so it is rational."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q1i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Classify \\(\\sqrt[3]{27}\\).",
+          "options": [
+            "Irrational",
+            "Rational only (not an integer)",
+            "Real but not rational",
+            "Integer and rational"
+          ],
+          "answer": 3,
+          "hint": "Evaluate \\(\\sqrt[3]{27}\\) first.",
+          "steps": [
+            {
+              "explain": "\\(\\sqrt[3]{27} = 3\\) since \\(3^3 = 27\\).",
+              "work": "\\(\\sqrt[3]{27} = 3\\)"
+            },
+            {
+              "explain": "\\(3\\) is a natural number, integer, and rational."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q1j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is \\(\\sqrt{1.44}\\) rational or irrational?",
+          "options": [
+            "Rational, because \\(\\sqrt{1.44} = 1.2\\)",
+            "Irrational, because 1.44 is a decimal",
+            "Irrational, because surds are always irrational",
+            "Rational, but only because it's less than 2"
+          ],
+          "answer": 0,
+          "hint": "Evaluate \\(\\sqrt{1.44}\\).",
+          "steps": [
+            {
+              "explain": "\\(1.44 = \\dfrac{144}{100}\\), so \\(\\sqrt{1.44} = \\dfrac{\\sqrt{144}}{\\sqrt{100}} = \\dfrac{12}{10} = 1.2\\).",
+              "work": "\\(\\sqrt{1.44} = 1.2 = \\dfrac{6}{5}\\)"
+            },
+            {
+              "explain": "Since \\(1.2 = 6/5\\) is a fraction of integers, it is rational."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q1k",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following is irrational?",
+          "options": [
+            "\\(\\sqrt{9}\\)",
+            "\\(0.25\\)",
+            "\\(\\sqrt{3}\\)",
+            "\\(\\sqrt[3]{64}\\)"
+          ],
+          "answer": 2,
+          "hint": "Which of these cannot be expressed as a fraction?",
+          "steps": [
+            {
+              "explain": "\\(\\sqrt{9} = 3\\) — rational. \\(0.25 = 1/4\\) — rational. \\(\\sqrt[3]{64} = 4\\) — rational."
+            },
+            {
+              "explain": "\\(\\sqrt{3} = 1.7320\\ldots\\) — non-terminating, non-repeating. 3 is not a perfect square."
+            },
+            {
+              "explain": "Therefore \\(\\sqrt{3}\\) is the only irrational option."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q1l",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which of the following is NOT rational?",
+          "options": [
+            "\\(\\sqrt{16}\\)",
+            "\\(0.\\overline{142857}\\)",
+            "\\(-\\dfrac{7}{3}\\)",
+            "\\(\\sqrt{2} + \\sqrt{3}\\)"
+          ],
+          "answer": 3,
+          "hint": "A sum of two irrationals is generally irrational.",
+          "steps": [
+            {
+              "explain": "\\(\\sqrt{16} = 4\\) — rational. \\(0.\\overline{142857} = 1/7\\) — rational. \\(-7/3\\) — rational."
+            },
+            {
+              "explain": "\\(\\sqrt{2}+\\sqrt{3}\\) cannot be simplified to a ratio of integers."
+            },
+            {
+              "explain": "Therefore \\(\\sqrt{2}+\\sqrt{3}\\) is irrational."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q2b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\((-\\infty, -6]\\) to inequality notation.",
+          "options": [
+            "\\(x \\le -6\\)",
+            "\\(x < -6\\)",
+            "\\(x \\ge -6\\)",
+            "\\(x > -6\\)"
+          ],
+          "answer": 0,
+          "hint": "A square bracket means the endpoint IS included.",
+          "steps": [
+            {
+              "explain": "A square bracket \\(]\\) means the endpoint is included (\\(\\le\\) or \\(\\ge\\))."
+            },
+            {
+              "explain": "\\((-\\infty, -6]\\) means all \\(x\\) up to and including \\(-6\\).",
+              "work": "\\(x \\le -6\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q2d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\((-6, 6]\\) to inequality notation.",
+          "options": [
+            "\\(-6 \\le x \\le 6\\)",
+            "\\(-6 < x < 6\\)",
+            "\\(-6 \\le x < 6\\)",
+            "\\(-6 < x \\le 6\\)"
+          ],
+          "answer": 3,
+          "hint": "Check each bracket type: round = excluded, square = included.",
+          "steps": [
+            {
+              "explain": "Round bracket at \\(-6\\): not included, so \\(x > -6\\)."
+            },
+            {
+              "explain": "Square bracket at \\(6\\): included, so \\(x \\le 6\\)."
+            },
+            {
+              "explain": "Combined: \\(-6 < x \\le 6\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q2e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\([-6, 6]\\) to inequality notation.",
+          "options": [
+            "\\(-6 \\le x \\le 6\\)",
+            "\\(-6 < x < 6\\)",
+            "\\(-6 \\le x < 6\\)",
+            "\\(-6 < x \\le 6\\)"
+          ],
+          "answer": 0,
+          "hint": "Both brackets are square — both endpoints are included.",
+          "steps": [
+            {
+              "explain": "Both brackets are square: both endpoints are included.",
+              "work": "\\(-6 \\le x \\le 6\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q2f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\((-6, 6)\\) to inequality notation.",
+          "options": [
+            "\\(-6 \\le x \\le 6\\)",
+            "\\(-6 < x < 6\\)",
+            "\\(-6 \\le x < 6\\)",
+            "\\(-6 < x \\le 6\\)"
+          ],
+          "answer": 1,
+          "hint": "Both brackets are round — neither endpoint is included.",
+          "steps": [
+            {
+              "explain": "Both round brackets: neither endpoint is included.",
+              "work": "\\(-6 < x < 6\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q2g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\([-6, 6)\\) to inequality notation.",
+          "options": [
+            "\\(-6 \\le x \\le 6\\)",
+            "\\(-6 < x < 6\\)",
+            "\\(-6 \\le x < 6\\)",
+            "\\(-6 < x \\le 6\\)"
+          ],
+          "answer": 2,
+          "hint": "Square at left, round at right.",
+          "steps": [
+            {
+              "explain": "Square bracket at \\(-6\\): included \\(\\Rightarrow x \\ge -6\\)."
+            },
+            {
+              "explain": "Round bracket at \\(6\\): excluded \\(\\Rightarrow x < 6\\)."
+            },
+            {
+              "explain": "Combined: \\(-6 \\le x < 6\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q2h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\([-2, 7]\\) to inequality notation.",
+          "options": [
+            "\\(-2 < x < 7\\)",
+            "\\(-2 < x \\le 7\\)",
+            "\\(-2 \\le x < 7\\)",
+            "\\(-2 \\le x \\le 7\\)"
+          ],
+          "answer": 3,
+          "hint": "Both endpoints have square brackets.",
+          "steps": [
+            {
+              "explain": "Both brackets are square: \\(-2 \\le x \\le 7\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q2i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\((-\\infty, 5)\\) to inequality notation.",
+          "options": [
+            "\\(x < 5\\)",
+            "\\(x \\le 5\\)",
+            "\\(x > 5\\)",
+            "\\(x \\ge 5\\)"
+          ],
+          "answer": 0,
+          "hint": "Round bracket at 5 means 5 is excluded.",
+          "steps": [
+            {
+              "explain": "\\((-\\infty, 5)\\): all values less than 5, with 5 excluded (round bracket).",
+              "work": "\\(x < 5\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q2j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\((0, 5]\\) to inequality notation.",
+          "options": [
+            "\\(0 \\le x \\le 5\\)",
+            "\\(0 < x \\le 5\\)",
+            "\\(0 < x < 5\\)",
+            "\\(0 \\le x < 5\\)"
+          ],
+          "answer": 1,
+          "hint": "Round at left (excluded), square at right (included).",
+          "steps": [
+            {
+              "explain": "Round bracket at 0 → excluded: \\(x > 0\\)."
+            },
+            {
+              "explain": "Square bracket at 5 → included: \\(x \\le 5\\)."
+            },
+            {
+              "explain": "Combined: \\(0 < x \\le 5\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q2k",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert \\([-5, 5)\\) to inequality notation.",
+          "options": [
+            "\\(-5 < x < 5\\)",
+            "\\(-5 \\le x \\le 5\\)",
+            "\\(-5 \\le x < 5\\)",
+            "\\(-5 < x \\le 5\\)"
+          ],
+          "answer": 2,
+          "hint": "Square bracket at left; round at right.",
+          "steps": [
+            {
+              "explain": "Square at \\(-5\\): included \\(\\Rightarrow x \\ge -5\\). Round at 5: excluded \\(\\Rightarrow x < 5\\).",
+              "work": "\\(-5 \\le x < 5\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q3c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(x \\le 0\\) in interval notation.",
+          "options": [
+            "\\([0, \\infty)\\)",
+            "\\((-\\infty, 0]\\)",
+            "\\((0, \\infty)\\)",
+            "\\((-\\infty, 0)\\)"
+          ],
+          "answer": 1,
+          "hint": "All values less than or equal to 0.",
+          "steps": [
+            {
+              "explain": "\\(x \\le 0\\): extends left to \\(-\\infty\\), includes 0 (square bracket).",
+              "work": "\\((-\\infty, 0]\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q3d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\(-1 < x \\le 4\\) in interval notation.",
+          "options": [
+            "\\([-1, 4]\\)",
+            "\\([-1, 4)\\)",
+            "\\((-1, 4]\\)",
+            "\\((-1, 4)\\)"
+          ],
+          "answer": 2,
+          "hint": "\\(-1\\) is excluded; \\(4\\) is included.",
+          "steps": [
+            {
+              "explain": "\\(-1\\) is excluded (strict \\(<\\)) → round bracket."
+            },
+            {
+              "explain": "\\(4\\) is included (\\(\\le\\)) → square bracket.",
+              "work": "\\((-1, 4]\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q3e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\(-3 < x \\le 4\\) in interval notation.",
+          "options": [
+            "\\((-3, 4]\\)",
+            "\\([-3, 4]\\)",
+            "\\((-3, 4)\\)",
+            "\\([-3, 4)\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(-3\\) excluded, \\(4\\) included.",
+          "steps": [
+            {
+              "explain": "\\(-3\\) excluded → round; \\(4\\) included → square.",
+              "work": "\\((-3, 4]\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q3f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\(-2 \\le x \\le 7\\) in interval notation.",
+          "options": [
+            "\\((-2, 7)\\)",
+            "\\([-2, 7]\\)",
+            "\\([-2, 7)\\)",
+            "\\((-2, 7]\\)"
+          ],
+          "answer": 1,
+          "hint": "Both endpoints are included.",
+          "steps": [
+            {
+              "explain": "Both \\(\\le\\) signs → both endpoints included → both square brackets.",
+              "work": "\\([-2, 7]\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q3g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(x < 5\\) in interval notation.",
+          "options": [
+            "\\([5, \\infty)\\)",
+            "\\((-\\infty, 5]\\)",
+            "\\((-\\infty, 5)\\)",
+            "\\((5, \\infty)\\)"
+          ],
+          "answer": 2,
+          "hint": "Extends left from 5 (excluded).",
+          "steps": [
+            {
+              "explain": "\\(x < 5\\): all values below 5, with 5 excluded → round bracket.",
+              "work": "\\((-\\infty, 5)\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q3i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\(0 \\le x \\le 7\\) in interval notation.",
+          "options": [
+            "\\([0, 7]\\)",
+            "\\((0, 7)\\)",
+            "\\([0, 7)\\)",
+            "\\((0, 7]\\)"
+          ],
+          "answer": 0,
+          "hint": "Both endpoints included.",
+          "steps": [
+            {
+              "explain": "Both \\(\\le\\) → both included → both square brackets: \\([0, 7]\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q3j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\(0 < x \\le 5\\) in interval notation.",
+          "options": [
+            "\\([0, 5]\\)",
+            "\\((0, 5]\\)",
+            "\\([0, 5)\\)",
+            "\\((0, 5)\\)"
+          ],
+          "answer": 1,
+          "hint": "0 excluded, 5 included.",
+          "steps": [
+            {
+              "explain": "\\(0 < x\\): 0 excluded → round. \\(x \\le 5\\): 5 included → square.",
+              "work": "\\((0, 5]\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Between which two consecutive integers does \\(\\sqrt{2}\\) lie?",
+          "options": [
+            "1 and 2",
+            "2 and 3",
+            "0 and 1",
+            "3 and 4"
+          ],
+          "answer": 0,
+          "hint": "Find \\(n\\) so that \\(n^2 < 2 < (n+1)^2\\).",
+          "steps": [
+            {
+              "explain": "Check consecutive perfect squares: \\(1^2=1\\) and \\(2^2=4\\).",
+              "work": "\\(1 < 2 < 4\\)"
+            },
+            {
+              "explain": "So \\(\\sqrt{1} < \\sqrt{2} < \\sqrt{4}\\), i.e. \\(1 < \\sqrt{2} < 2\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Between which two consecutive integers does \\(\\sqrt{5}\\) lie?",
+          "options": [
+            "1 and 2",
+            "2 and 3",
+            "4 and 5",
+            "3 and 4"
+          ],
+          "answer": 1,
+          "hint": "Find \\(n^2 < 5 < (n+1)^2\\).",
+          "steps": [
+            {
+              "explain": "\\(2^2 = 4 < 5 < 9 = 3^2\\)."
+            },
+            {
+              "explain": "Therefore \\(2 < \\sqrt{5} < 3\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Between which two consecutive integers does \\(\\sqrt{15}\\) lie?",
+          "options": [
+            "2 and 3",
+            "4 and 5",
+            "3 and 4",
+            "5 and 6"
+          ],
+          "answer": 2,
+          "hint": "Find \\(n^2 < 15 < (n+1)^2\\).",
+          "steps": [
+            {
+              "explain": "\\(3^2 = 9 < 15 < 16 = 4^2\\)."
+            },
+            {
+              "explain": "Therefore \\(3 < \\sqrt{15} < 4\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Between which two consecutive integers does \\(\\sqrt{30}\\) lie?",
+          "options": [
+            "4 and 5",
+            "3 and 4",
+            "6 and 7",
+            "5 and 6"
+          ],
+          "answer": 3,
+          "hint": "Find \\(n^2 < 30 < (n+1)^2\\).",
+          "steps": [
+            {
+              "explain": "\\(5^2 = 25 < 30 < 36 = 6^2\\)."
+            },
+            {
+              "explain": "Therefore \\(5 < \\sqrt{30} < 6\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Between which two consecutive integers does \\(\\sqrt{50}\\) lie?",
+          "options": [
+            "7 and 8",
+            "6 and 7",
+            "8 and 9",
+            "5 and 6"
+          ],
+          "answer": 0,
+          "hint": "\\(7^2 = 49\\) and \\(8^2 = 64\\).",
+          "steps": [
+            {
+              "explain": "\\(7^2 = 49 < 50 < 64 = 8^2\\)."
+            },
+            {
+              "explain": "Therefore \\(7 < \\sqrt{50} < 8\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Between which two consecutive integers does \\(\\sqrt{150}\\) lie?",
+          "options": [
+            "11 and 12",
+            "12 and 13",
+            "13 and 14",
+            "10 and 11"
+          ],
+          "answer": 1,
+          "hint": "Calculate \\(12^2\\) and \\(13^2\\).",
+          "steps": [
+            {
+              "explain": "\\(12^2 = 144 < 150 < 169 = 13^2\\)."
+            },
+            {
+              "explain": "Therefore \\(12 < \\sqrt{150} < 13\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Between which two consecutive integers does \\(\\sqrt{200}\\) lie?",
+          "options": [
+            "13 and 14",
+            "15 and 16",
+            "14 and 15",
+            "12 and 13"
+          ],
+          "answer": 2,
+          "hint": "Calculate \\(14^2\\) and \\(15^2\\).",
+          "steps": [
+            {
+              "explain": "\\(14^2 = 196 < 200 < 225 = 15^2\\)."
+            },
+            {
+              "explain": "Therefore \\(14 < \\sqrt{200} < 15\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4h",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Between which two consecutive integers does \\(\\sqrt{7}\\) lie?",
+          "options": [
+            "1 and 2",
+            "3 and 4",
+            "4 and 5",
+            "2 and 3"
+          ],
+          "answer": 3,
+          "hint": "\\(2^2 = 4\\) and \\(3^2 = 9\\).",
+          "steps": [
+            {
+              "explain": "\\(2^2 = 4 < 7 < 9 = 3^2\\)."
+            },
+            {
+              "explain": "Therefore \\(2 < \\sqrt{7} < 3\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Between which two consecutive integers does \\(-\\sqrt{3}\\) lie?",
+          "options": [
+            "\\(-2\\) and \\(-1\\)",
+            "\\(-3\\) and \\(-2\\)",
+            "\\(-1\\) and \\(0\\)",
+            "\\(1\\) and \\(2\\)"
+          ],
+          "answer": 0,
+          "hint": "Since \\(1 < \\sqrt{3} < 2\\), what does that mean for \\(-\\sqrt{3}\\)?",
+          "steps": [
+            {
+              "explain": "\\(1^2 = 1 < 3 < 4 = 2^2\\), so \\(1 < \\sqrt{3} < 2\\)."
+            },
+            {
+              "explain": "Negating reverses the inequality: \\(-2 < -\\sqrt{3} < -1\\)."
+            },
+            {
+              "explain": "Therefore \\(-\\sqrt{3}\\) lies between \\(-2\\) and \\(-1\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4j",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Between which two consecutive integers does \\(\\pi\\) lie?",
+          "options": [
+            "2 and 3",
+            "3 and 4",
+            "4 and 5",
+            "1 and 2"
+          ],
+          "answer": 1,
+          "hint": "\\(\\pi \\approx 3.14159\\ldots\\)",
+          "steps": [
+            {
+              "explain": "\\(\\pi = 3.14159\\ldots\\), which lies between 3 and 4.",
+              "work": "\\(3 < \\pi < 4\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4k",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Between which two consecutive integers does \\(\\sqrt[3]{15}\\) lie?",
+          "options": [
+            "1 and 2",
+            "3 and 4",
+            "2 and 3",
+            "4 and 5"
+          ],
+          "answer": 2,
+          "hint": "Find \\(n^3 < 15 < (n+1)^3\\).",
+          "steps": [
+            {
+              "explain": "\\(2^3 = 8 < 15 < 27 = 3^3\\)."
+            },
+            {
+              "explain": "Therefore \\(2 < \\sqrt[3]{15} < 3\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q4l",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Between which two consecutive integers does \\(\\sqrt{20}\\) lie?",
+          "options": [
+            "3 and 4",
+            "5 and 6",
+            "3 and 5",
+            "4 and 5"
+          ],
+          "answer": 3,
+          "hint": "\\(4^2 = 16\\) and \\(5^2 = 25\\).",
+          "steps": [
+            {
+              "explain": "\\(4^2 = 16 < 20 < 25 = 5^2\\)."
+            },
+            {
+              "explain": "Therefore \\(4 < \\sqrt{20} < 5\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which interval represents \\(-3 < x \\le 4\\)?",
+          "options": [
+            "\\([-3, 4]\\)",
+            "\\((-3, 4]\\)",
+            "\\((-3, 4)\\)",
+            "\\([-3, 4)\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(-3\\) excluded (round), \\(4\\) included (square).",
+          "steps": [
+            {
+              "explain": "\\(-3\\) excluded → round; \\(4\\) included → square: \\((-3, 4]\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q5c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is the interval \\([0, 7]\\) open, closed, or half-open?",
+          "options": [
+            "Open",
+            "Half-open",
+            "Closed",
+            "Unbounded"
+          ],
+          "answer": 2,
+          "hint": "A closed interval has square brackets on both sides.",
+          "steps": [
+            {
+              "explain": "\\([0, 7]\\) has square brackets on both sides — both endpoints are included."
+            },
+            {
+              "explain": "This is a closed interval."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q5e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The intersection of \\(x \\ge -1\\) and \\(x \\le 1\\) is:",
+          "options": [
+            "\\([-1, 1]\\)",
+            "\\((-1, 1)\\)",
+            "\\((-\\infty, -1] \\cup [1, \\infty)\\)",
+            "\\([-1, 1)\\)"
+          ],
+          "answer": 0,
+          "hint": "Intersection = values satisfying BOTH inequalities.",
+          "steps": [
+            {
+              "explain": "\\(x \\ge -1\\) AND \\(x \\le 1\\) means \\(-1 \\le x \\le 1\\)."
+            },
+            {
+              "explain": "Both endpoints are included: \\([-1, 1]\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q5f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Is the interval \\((2, 5)\\) open or closed?",
+          "options": [
+            "Closed",
+            "Open",
+            "Half-open (closed at left)",
+            "Half-open (closed at right)"
+          ],
+          "answer": 1,
+          "hint": "Round brackets on both sides.",
+          "steps": [
+            {
+              "explain": "Both brackets are round — neither endpoint is included."
+            },
+            {
+              "explain": "This is an open interval."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q5g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A number line shows a closed circle at \\(-5\\), an open circle at \\(5\\), with the region between shaded. Which interval does this represent?",
+          "options": [
+            "\\((-5, 5)\\)",
+            "\\([-5, 5]\\)",
+            "\\([-5, 5)\\)",
+            "\\((-5, 5]\\)"
+          ],
+          "answer": 2,
+          "hint": "Closed circle = included (square bracket). Open circle = excluded (round bracket).",
+          "steps": [
+            {
+              "explain": "Closed circle at \\(-5\\) → included → square bracket \\([\\)."
+            },
+            {
+              "explain": "Open circle at \\(5\\) → excluded → round bracket \\()\\)."
+            },
+            {
+              "explain": "Interval: \\([-5, 5)\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q5h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A number line shows an open circle at \\(-3\\), a closed circle at \\(4\\), with the region between shaded. Which interval does this represent?",
+          "options": [
+            "\\([-3, 4]\\)",
+            "\\((-3, 4)\\)",
+            "\\([-3, 4)\\)",
+            "\\((-3, 4]\\)"
+          ],
+          "answer": 3,
+          "hint": "Open circle = excluded (round bracket). Closed circle = included (square bracket).",
+          "steps": [
+            {
+              "explain": "Open circle at \\(-3\\) → excluded → round bracket \\((\\)."
+            },
+            {
+              "explain": "Closed circle at \\(4\\) → included → square bracket \\(]\\)."
+            },
+            {
+              "explain": "Interval: \\((-3, 4]\\)."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q5i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Is \\((-\\infty, 7]\\) open, closed, or half-open?",
+          "options": [
+            "Open, because of the \\(-\\infty\\)",
+            "Half-open (closed at one end only)",
+            "Closed, because of the square bracket",
+            "Bounded and closed"
+          ],
+          "answer": 1,
+          "hint": "One bracket is round (\\(-\\infty\\) is never included), the other is square.",
+          "steps": [
+            {
+              "explain": "\\(-\\infty\\) always uses a round bracket (never included)."
+            },
+            {
+              "explain": "The right end at 7 has a square bracket (included)."
+            },
+            {
+              "explain": "One end included, one not → half-open interval."
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q5j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which interval notation represents: all real numbers greater than \\(-1\\) and less than or equal to \\(5\\)?",
+          "options": [
+            "\\((-1, 5]\\)",
+            "\\([-1, 5]\\)",
+            "\\((-1, 5)\\)",
+            "\\([-1, 5)\\)"
+          ],
+          "answer": 0,
+          "hint": "Greater than (excluded) → round; less than or equal to (included) → square.",
+          "steps": [
+            {
+              "explain": "Greater than \\(-1\\): excluded → round bracket."
+            },
+            {
+              "explain": "Less than or equal to \\(5\\): included → square bracket.",
+              "work": "\\((-1, 5]\\)"
+            }
+          ],
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-2a-q6a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Express \\(0.32\\) as a fraction in simplest form.",
+          "options": [
+            "\\(\\dfrac{32}{100}\\)",
+            "\\(\\dfrac{16}{100}\\)",
+            "\\(\\dfrac{4}{25}\\)",
+            "\\(\\dfrac{8}{25}\\)"
+          ],
+          "answer": 3,
+          "hint": "Write as a fraction over 100, then simplify.",
+          "steps": [
+            {
+              "explain": "\\(0.32 = \\dfrac{32}{100}\\)."
+            },
+            {
+              "explain": "Simplify by dividing numerator and denominator by \\(\\gcd(32,100) = 4\\).",
+              "work": "\\(\\dfrac{32 \\div 4}{100 \\div 4} = \\dfrac{8}{25}\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2a-q6c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which number is irrational?",
+          "options": [
+            "\\(\\sqrt{3}\\)",
+            "\\(\\sqrt{9}\\)",
+            "\\(0.5\\)",
+            "\\(0.1\\overline{1}\\)"
+          ],
+          "answer": 0,
+          "hint": "Evaluate each option — which cannot be written as p/q?",
+          "steps": [
+            {
+              "explain": "\\(\\sqrt{9} = 3\\) — rational. \\(0.5 = 1/2\\) — rational. \\(0.1\\overline{1} = 1/9\\) — rational."
+            },
+            {
+              "explain": "\\(\\sqrt{3}\\): 3 is not a perfect square, so \\(\\sqrt{3}\\) is irrational."
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2a-q6d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which is the key step in proving \\(\\sqrt{3}\\) is irrational?",
+          "options": [
+            "Show that \\(\\sqrt{3} > 1\\)",
+            "Assume \\(\\sqrt{3} = p/q\\) in lowest terms and derive a contradiction",
+            "Show that \\(3\\) is a prime number",
+            "Calculate \\(\\sqrt{3}\\) to many decimal places"
+          ],
+          "answer": 1,
+          "hint": "Proof by contradiction assumes the opposite of what you want to prove.",
+          "steps": [
+            {
+              "explain": "Assume \\(\\sqrt{3} = p/q\\) in lowest terms (i.e. \\(\\gcd(p,q)=1\\))."
+            },
+            {
+              "explain": "Then \\(3 = p^2/q^2\\), so \\(p^2 = 3q^2\\). This means \\(3 \\mid p^2\\), so \\(3 \\mid p\\)."
+            },
+            {
+              "explain": "Writing \\(p=3k\\) gives \\(9k^2 = 3q^2\\), so \\(3 \\mid q\\). But then \\(\\gcd(p,q) \\ge 3\\) — contradiction."
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2a-q6e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Is \\(\\sqrt[3]{64}\\) rational or irrational?",
+          "options": [
+            "Rational, because \\(\\sqrt[3]{64} = 4\\)",
+            "Irrational, because cube roots are always irrational",
+            "Irrational, because \\(64\\) is not a perfect square",
+            "Rational, but only barely"
+          ],
+          "answer": 0,
+          "hint": "Evaluate \\(\\sqrt[3]{64}\\).",
+          "steps": [
+            {
+              "explain": "\\(4^3 = 64\\), so \\(\\sqrt[3]{64} = 4\\).",
+              "work": "\\(\\sqrt[3]{64} = 4\\)"
+            },
+            {
+              "explain": "\\(4\\) is an integer and therefore rational."
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2a-q6f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which of these correctly places \\(\\sqrt{10}\\) on a number line?",
+          "options": [
+            "Between 2 and 3",
+            "Between 4 and 5",
+            "Between 3 and 4, closer to 3",
+            "Between 3 and 4, closer to 4"
+          ],
+          "answer": 2,
+          "hint": "Calculate \\(3.1^2\\) and \\(3.2^2\\) to narrow it down.",
+          "steps": [
+            {
+              "explain": "\\(3^2 = 9 < 10 < 16 = 4^2\\), so \\(3 < \\sqrt{10} < 4\\)."
+            },
+            {
+              "explain": "\\(3.1^2 = 9.61 < 10 < 10.24 = 3.2^2\\), so \\(3.1 < \\sqrt{10} < 3.2\\)."
+            },
+            {
+              "explain": "\\(\\sqrt{10} \\approx 3.162\\) — closer to 3 than to 4."
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2a-q6g",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which of the following is true about \\(\\sqrt{2} + \\sqrt{8}\\)?",
+          "options": [
+            "It equals \\(\\sqrt{10}\\) and is irrational",
+            "It is irrational and cannot be simplified",
+            "It equals \\(2\\sqrt{10}\\) and is rational",
+            "It equals \\(3\\sqrt{2}\\) and is irrational"
+          ],
+          "answer": 3,
+          "hint": "Simplify \\(\\sqrt{8}\\) first.",
+          "steps": [
+            {
+              "explain": "\\(\\sqrt{8} = \\sqrt{4 \\times 2} = 2\\sqrt{2}\\)."
+            },
+            {
+              "explain": "\\(\\sqrt{2} + \\sqrt{8} = \\sqrt{2} + 2\\sqrt{2} = 3\\sqrt{2}\\)."
+            },
+            {
+              "explain": "\\(3\\sqrt{2}\\) is irrational (a rational multiple of an irrational is still irrational)."
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2a-q6h",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Which of the following correctly describes the set of values for \\(x\\) satisfying \\(x^2 < 9\\)?",
+          "options": [
+            "\\(x < 3\\)",
+            "\\(-3 < x < 3\\)",
+            "\\(-3 \\le x \\le 3\\)",
+            "\\(x > -3\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(x^2 < 9\\) means \\(|x| < 3\\).",
+          "steps": [
+            {
+              "explain": "\\(x^2 < 9 \\Rightarrow |x| < 3\\)."
+            },
+            {
+              "explain": "This means \\(-3 < x < 3\\), i.e. \\((-3, 3)\\)."
+            }
+          ],
+          "timeLimit": 90
+        }
+      ]
+    },
+    {
       "topicId": "y11a-2B",
       "code": "2B",
       "title": "Surds and their arithmetic",
@@ -2304,6 +3741,410 @@
               "work": "x = 96"
             }
           ]
+        },
+        {
+          "id": "y11a-2b-r01",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator: \\\\(\\\\dfrac{1}{\\\\sqrt{3}}\\\\)",
+          "options": [
+            "\\\\(\\\\dfrac{1}{3}\\\\)",
+            "\\\\(\\\\sqrt{3}\\\\)",
+            "\\\\(\\\\dfrac{\\\\sqrt{3}}{3}\\\\)",
+            "\\\\(\\\\dfrac{3}{\\\\sqrt{3}}\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply numerator and denominator by \\\\(\\\\sqrt{3}\\\\).",
+          "steps": [
+            {
+              "explain": "Multiply numerator and denominator by \\\\(\\\\sqrt{3}\\\\) to eliminate the surd from the denominator.",
+              "work": "\\\\dfrac{1}{\\\\sqrt{3}} \\\\times \\\\dfrac{\\\\sqrt{3}}{\\\\sqrt{3}}"
+            },
+            {
+              "explain": "Evaluate the denominator: \\\\(\\\\sqrt{3} \\\\times \\\\sqrt{3} = 3\\\\).",
+              "work": "= \\\\dfrac{\\\\sqrt{3}}{3}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2b-r02",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator: \\\\(\\\\dfrac{5}{\\\\sqrt{5}}\\\\)",
+          "options": [
+            "\\\\(\\\\sqrt{5}\\\\)",
+            "\\\\(5\\\\sqrt{5}\\\\)",
+            "\\\\(\\\\dfrac{5}{\\\\sqrt{5}}\\\\)",
+            "\\\\(\\\\dfrac{1}{\\\\sqrt{5}}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply top and bottom by \\\\(\\\\sqrt{5}\\\\).",
+          "steps": [
+            {
+              "explain": "Multiply numerator and denominator by \\\\(\\\\sqrt{5}\\\\).",
+              "work": "\\\\dfrac{5}{\\\\sqrt{5}} \\\\times \\\\dfrac{\\\\sqrt{5}}{\\\\sqrt{5}} = \\\\dfrac{5\\\\sqrt{5}}{5}"
+            },
+            {
+              "explain": "Cancel the factor of 5.",
+              "work": "= \\\\sqrt{5}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2b-r03",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalise the denominator: \\\\(\\\\dfrac{6}{\\\\sqrt{2}}\\\\)",
+          "options": [
+            "\\\\(3\\\\)",
+            "\\\\(3\\\\sqrt{2}\\\\)",
+            "\\\\(6\\\\sqrt{2}\\\\)",
+            "\\\\(\\\\dfrac{6}{2}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Multiply top and bottom by \\\\(\\\\sqrt{2}\\\\).",
+          "steps": [
+            {
+              "explain": "Multiply numerator and denominator by \\\\(\\\\sqrt{2}\\\\).",
+              "work": "\\\\dfrac{6}{\\\\sqrt{2}} \\\\times \\\\dfrac{\\\\sqrt{2}}{\\\\sqrt{2}} = \\\\dfrac{6\\\\sqrt{2}}{2}"
+            },
+            {
+              "explain": "Simplify by dividing numerator and denominator by 2.",
+              "work": "= 3\\\\sqrt{2}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2b-r04",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Rationalise the denominator: \\\\(\\\\dfrac{1}{3 + \\\\sqrt{2}}\\\\)",
+          "options": [
+            "\\\\(\\\\dfrac{1}{3 - \\\\sqrt{2}}\\\\)",
+            "\\\\(3 - \\\\sqrt{2}\\\\)",
+            "\\\\(\\\\dfrac{3 + \\\\sqrt{2}}{7}\\\\)",
+            "\\\\(\\\\dfrac{3 - \\\\sqrt{2}}{7}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Multiply by the conjugate \\\\(3 - \\\\sqrt{2}\\\\).",
+          "steps": [
+            {
+              "explain": "Multiply numerator and denominator by the conjugate \\\\(3 - \\\\sqrt{2}\\\\).",
+              "work": "\\\\dfrac{1}{3+\\\\sqrt{2}} \\\\times \\\\dfrac{3-\\\\sqrt{2}}{3-\\\\sqrt{2}}"
+            },
+            {
+              "explain": "Expand the denominator using the difference of two squares: \\\\((3)^2 - (\\\\sqrt{2})^2 = 9 - 2 = 7\\\\).",
+              "work": "= \\\\dfrac{3-\\\\sqrt{2}}{7}"
+            }
+          ]
+        },
+        {
+          "id": "y11a-2b-r05",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Rationalise the denominator: \\\\(\\\\dfrac{4}{\\\\sqrt{5} - 1}\\\\)",
+          "options": [
+            "\\\\(\\\\dfrac{4}{\\\\sqrt{5}+1}\\\\)",
+            "\\\\(\\\\dfrac{4(\\\\sqrt{5}-1)}{4}\\\\)",
+            "\\\\(\\\\sqrt{5}+1\\\\)",
+            "\\\\(\\\\sqrt{5}-1\\\\)"
+          ],
+          "answer": 2,
+          "hint": "Multiply by the conjugate \\\\(\\\\sqrt{5}+1\\\\).",
+          "steps": [
+            {
+              "explain": "Multiply by the conjugate \\\\(\\\\sqrt{5}+1\\\\).",
+              "work": "\\\\dfrac{4}{\\\\sqrt{5}-1} \\\\times \\\\dfrac{\\\\sqrt{5}+1}{\\\\sqrt{5}+1}"
+            },
+            {
+              "explain": "Denominator: \\\\((\\\\sqrt{5})^2 - 1^2 = 5-1 = 4\\\\).",
+              "work": "= \\\\dfrac{4(\\\\sqrt{5}+1)}{4}"
+            },
+            {
+              "explain": "Cancel the factor of 4.",
+              "work": "= \\\\sqrt{5}+1"
+            }
+          ]
+        },
+        {
+          "id": "y11a-2b-e01",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\\\((\\\\sqrt{3} + 1)^2\\\\)",
+          "options": [
+            "\\\\(3 + 1\\\\)",
+            "\\\\(4 + 2\\\\sqrt{3}\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(2\\\\sqrt{3} + 3\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Use \\\\((a+b)^2 = a^2 + 2ab + b^2\\\\).",
+          "steps": [
+            {
+              "explain": "Apply the perfect square formula with \\\\(a = \\\\sqrt{3}\\\\), \\\\(b = 1\\\\).",
+              "work": "(\\\\sqrt{3})^2 + 2(\\\\sqrt{3})(1) + 1^2"
+            },
+            {
+              "explain": "Simplify each term.",
+              "work": "= 3 + 2\\\\sqrt{3} + 1"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "= 4 + 2\\\\sqrt{3}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2b-e02",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\\\((\\\\sqrt{5} - 2)^2\\\\)",
+          "options": [
+            "\\\\(1\\\\)",
+            "\\\\(9 + 4\\\\sqrt{5}\\\\)",
+            "\\\\(5 + 4\\\\)",
+            "\\\\(9 - 4\\\\sqrt{5}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Use \\\\((a-b)^2 = a^2 - 2ab + b^2\\\\).",
+          "steps": [
+            {
+              "explain": "Apply the perfect square formula with \\\\(a = \\\\sqrt{5}\\\\), \\\\(b = 2\\\\).",
+              "work": "(\\\\sqrt{5})^2 - 2(\\\\sqrt{5})(2) + 2^2"
+            },
+            {
+              "explain": "Simplify each term.",
+              "work": "= 5 - 4\\\\sqrt{5} + 4"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "= 9 - 4\\\\sqrt{5}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2b-e03",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\\\((\\\\sqrt{7} + \\\\sqrt{3})(\\\\sqrt{7} - \\\\sqrt{3})\\\\)",
+          "options": [
+            "\\\\(4\\\\)",
+            "\\\\(10\\\\)",
+            "\\\\(\\\\sqrt{4}\\\\)",
+            "\\\\(7 + 3\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the difference of two squares: \\\\((a+b)(a-b) = a^2 - b^2\\\\).",
+          "steps": [
+            {
+              "explain": "Apply the difference of two squares with \\\\(a = \\\\sqrt{7}\\\\), \\\\(b = \\\\sqrt{3}\\\\).",
+              "work": "(\\\\sqrt{7})^2 - (\\\\sqrt{3})^2"
+            },
+            {
+              "explain": "Evaluate each square.",
+              "work": "= 7 - 3 = 4"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2b-e04",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\\\((2 + \\\\sqrt{3})(5 - \\\\sqrt{3})\\\\)",
+          "options": [
+            "\\\\(7 + 3\\\\sqrt{3}\\\\)",
+            "\\\\(13 - 3\\\\sqrt{3}\\\\)",
+            "\\\\(10 + 3\\\\sqrt{3}\\\\)",
+            "\\\\(7 - 3\\\\sqrt{3}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand using FOIL then collect like terms.",
+          "steps": [
+            {
+              "explain": "Expand using FOIL.",
+              "work": "2(5) + 2(-\\\\sqrt{3}) + \\\\sqrt{3}(5) + \\\\sqrt{3}(-\\\\sqrt{3})"
+            },
+            {
+              "explain": "Simplify each term.",
+              "work": "= 10 - 2\\\\sqrt{3} + 5\\\\sqrt{3} - 3"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "= 7 + 3\\\\sqrt{3}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2b-e05",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify: \\\\((3 - \\\\sqrt{2})(1 + 2\\\\sqrt{2})\\\\)",
+          "options": [
+            "\\\\(3 + 5\\\\sqrt{2}\\\\)",
+            "\\\\(-1 + 5\\\\sqrt{2}\\\\)",
+            "\\\\(7 + 5\\\\sqrt{2}\\\\)",
+            "\\\\(-1 - 5\\\\sqrt{2}\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Expand using FOIL then collect like terms.",
+          "steps": [
+            {
+              "explain": "Expand using FOIL.",
+              "work": "3(1) + 3(2\\\\sqrt{2}) + (-\\\\sqrt{2})(1) + (-\\\\sqrt{2})(2\\\\sqrt{2})"
+            },
+            {
+              "explain": "Simplify each term: \\\\((-\\\\sqrt{2})(2\\\\sqrt{2}) = -2(2) = -4\\\\).",
+              "work": "= 3 + 6\\\\sqrt{2} - \\\\sqrt{2} - 4"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "= -1 + 5\\\\sqrt{2}"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-2b-e06",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write \\\\((1 + \\\\sqrt{2})^2\\\\) in the form \\\\(a + b\\\\sqrt{2}\\\\).",
+          "options": [
+            "\\\\(1 + 2\\\\sqrt{2}\\\\)",
+            "\\\\(2 + \\\\sqrt{2}\\\\)",
+            "\\\\(1 + \\\\sqrt{2}\\\\)",
+            "\\\\(3 + 2\\\\sqrt{2}\\\\)"
+          ],
+          "answer": 3,
+          "hint": "Use \\\\((1+\\\\sqrt{2})^2 = 1 + 2\\\\sqrt{2} + 2\\\\).",
+          "steps": [
+            {
+              "explain": "Expand the square.",
+              "work": "1^2 + 2(1)(\\\\sqrt{2}) + (\\\\sqrt{2})^2"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "= 1 + 2\\\\sqrt{2} + 2"
+            },
+            {
+              "explain": "Collect constants.",
+              "work": "= 3 + 2\\\\sqrt{2}"
+            }
+          ]
+        },
+        {
+          "id": "y11a-2b-e07",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write \\\\((3 - \\\\sqrt{5})^2\\\\) in the form \\\\(a + b\\\\sqrt{5}\\\\).",
+          "options": [
+            "\\\\(14 - 6\\\\sqrt{5}\\\\)",
+            "\\\\(4 - 6\\\\sqrt{5}\\\\)",
+            "\\\\(14 + 6\\\\sqrt{5}\\\\)",
+            "\\\\(4 + 6\\\\sqrt{5}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\\\((a-b)^2 = a^2 - 2ab + b^2\\\\).",
+          "steps": [
+            {
+              "explain": "Expand.",
+              "work": "3^2 - 2(3)(\\\\sqrt{5}) + (\\\\sqrt{5})^2"
+            },
+            {
+              "explain": "Simplify each term.",
+              "work": "= 9 - 6\\\\sqrt{5} + 5"
+            },
+            {
+              "explain": "Collect constants.",
+              "work": "= 14 - 6\\\\sqrt{5}"
+            }
+          ]
+        },
+        {
+          "id": "y11a-2b-e08",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\\\((\\\\sqrt{6} + \\\\sqrt{2})(\\\\sqrt{6} - \\\\sqrt{2})\\\\)",
+          "options": [
+            "\\\\(8\\\\)",
+            "\\\\(4\\\\)",
+            "\\\\(2\\\\sqrt{3}\\\\)",
+            "\\\\(6 - 2\\\\)"
+          ],
+          "answer": 1,
+          "hint": "Difference of two squares: \\\\((\\\\sqrt{6})^2 - (\\\\sqrt{2})^2\\\\).",
+          "steps": [
+            {
+              "explain": "Apply the difference of two squares.",
+              "work": "(\\\\sqrt{6})^2 - (\\\\sqrt{2})^2"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "= 6 - 2 = 4"
+            }
+          ]
+        },
+        {
+          "id": "y11a-2b-e09",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Expand and simplify: \\\\((2\\\\sqrt{3} + \\\\sqrt{5})(\\\\sqrt{3} - 2\\\\sqrt{5})\\\\)",
+          "options": [
+            "\\\\(-4 - 3\\\\sqrt{15}\\\\)",
+            "\\\\(16 - 3\\\\sqrt{15}\\\\)",
+            "\\\\(4 - 3\\\\sqrt{15}\\\\)",
+            "\\\\(16 + 3\\\\sqrt{15}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand using FOIL carefully.",
+          "steps": [
+            {
+              "explain": "Expand using FOIL.",
+              "work": "2\\\\sqrt{3}(\\\\sqrt{3}) + 2\\\\sqrt{3}(-2\\\\sqrt{5}) + \\\\sqrt{5}(\\\\sqrt{3}) + \\\\sqrt{5}(-2\\\\sqrt{5})"
+            },
+            {
+              "explain": "Simplify each term.",
+              "work": "= 2(3) - 4\\\\sqrt{15} + \\\\sqrt{15} - 2(5)"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "= 6 - 10 + (-4+1)\\\\sqrt{15} = -4 - 3\\\\sqrt{15}"
+            }
+          ]
+        },
+        {
+          "id": "y11a-2b-e10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Write \\\\((2 + 3\\\\sqrt{2})(1 - \\\\sqrt{2})\\\\) in the form \\\\(a + b\\\\sqrt{2}\\\\).",
+          "options": [
+            "\\\\(-4 + \\\\sqrt{2}\\\\)",
+            "\\\\(8 + \\\\sqrt{2}\\\\)",
+            "\\\\(-4 - \\\\sqrt{2}\\\\)",
+            "\\\\(4 + \\\\sqrt{2}\\\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand using FOIL.",
+          "steps": [
+            {
+              "explain": "Expand.",
+              "work": "2(1) + 2(-\\\\sqrt{2}) + 3\\\\sqrt{2}(1) + 3\\\\sqrt{2}(-\\\\sqrt{2})"
+            },
+            {
+              "explain": "Simplify: \\\\(3\\\\sqrt{2}(-\\\\sqrt{2}) = -3(2) = -6\\\\).",
+              "work": "= 2 - 2\\\\sqrt{2} + 3\\\\sqrt{2} - 6"
+            },
+            {
+              "explain": "Collect like terms.",
+              "work": "= -4 + \\\\sqrt{2}"
+            }
+          ]
         }
       ]
     },
@@ -3080,6 +4921,132 @@
               "work": "x = \\\\sqrt{2}"
             }
           ]
+        },
+        {
+          "id": "s2bc_1",
+          "type": "mc",
+          "stem": "Simplify $\\sqrt{48}$.",
+          "options": [
+            "$4\\sqrt{3}$",
+            "$2\\sqrt{12}$",
+            "$16\\sqrt{3}$",
+            "$3\\sqrt{4}$"
+          ],
+          "answer": 0,
+          "hint": "Find largest square factor (16).",
+          "solution": "$\\sqrt{48} = \\sqrt{16 \\times 3} = 4\\sqrt{3}$"
+        },
+        {
+          "id": "s2bc_2",
+          "type": "mc",
+          "stem": "Simplify $\\sqrt{150}$.",
+          "options": [
+            "$5\\sqrt{6}$",
+            "$25\\sqrt{6}$",
+            "$6\\sqrt{5}$",
+            "$10\\sqrt{1.5}$"
+          ],
+          "answer": 0,
+          "hint": "150 = 25 x 6.",
+          "solution": "$\\sqrt{150} = \\sqrt{25 \\times 6} = 5\\sqrt{6}$"
+        },
+        {
+          "id": "s2bc_3",
+          "type": "mc",
+          "stem": "Simplify $3\\sqrt{24}$.",
+          "options": [
+            "$6\\sqrt{6}$",
+            "$12\\sqrt{6}$",
+            "$3\\sqrt{6}$",
+            "$6\\sqrt{4}$"
+          ],
+          "answer": 0,
+          "hint": "24 = 4 x 6.",
+          "solution": "$3\\sqrt{4 \\times 6} = 3 \\times 2\\sqrt{6} = 6\\sqrt{6}$"
+        },
+        {
+          "id": "s2bc_4",
+          "type": "mc",
+          "stem": "Simplify $2\\sqrt{80}$.",
+          "options": [
+            "$8\\sqrt{5}$",
+            "$4\\sqrt{20}$",
+            "$16\\sqrt{5}$",
+            "$4\\sqrt{5}$"
+          ],
+          "answer": 0,
+          "hint": "80 = 16 x 5.",
+          "solution": "$2\\sqrt{16 \\times 5} = 2 \\times 4\\sqrt{5} = 8\\sqrt{5}$"
+        },
+        {
+          "id": "s2bc_9",
+          "type": "mc",
+          "stem": "Simplify $\\sqrt{27} - \\sqrt{12}$.",
+          "options": [
+            "$\\sqrt{3}$",
+            "$\\sqrt{15}$",
+            "$3\\sqrt{3}$",
+            "$-3\\sqrt{3}$"
+          ],
+          "answer": 0,
+          "hint": "$3\\sqrt{3} - 2\\sqrt{3}$.",
+          "solution": "$3\\sqrt{3} - 2\\sqrt{3} = \\sqrt{3}$"
+        },
+        {
+          "id": "s2bc_10",
+          "type": "mc",
+          "stem": "Simplify $3\\sqrt{2} + 4\\sqrt{50} - \\sqrt{32}$.",
+          "options": [
+            "$19\\sqrt{2}$",
+            "$23\\sqrt{2}$",
+            "$15\\sqrt{2}$",
+            "$27\\sqrt{2}$"
+          ],
+          "answer": 0,
+          "hint": "Convert everything to $\\sqrt{2}$ form.",
+          "solution": "$3\\sqrt{2} + 4(5\\sqrt{2}) - 4\\sqrt{2} = 3\\sqrt{2} + 20\\sqrt{2} - 4\\sqrt{2} = 19\\sqrt{2}$"
+        },
+        {
+          "id": "s2bc_11",
+          "type": "mc",
+          "stem": "Simplify $\\sqrt{54} - \\sqrt{24} + \\sqrt{150}$.",
+          "options": [
+            "$6\\sqrt{6}$",
+            "$4\\sqrt{6}$",
+            "$\\sqrt{180}$",
+            "$12\\sqrt{6}$"
+          ],
+          "answer": 0,
+          "hint": "Simplify to $\\sqrt{6}$ terms.",
+          "solution": "$3\\sqrt{6} - 2\\sqrt{6} + 5\\sqrt{6} = 6\\sqrt{6}$"
+        },
+        {
+          "id": "s2bc_14",
+          "type": "mc",
+          "stem": "Simplify $\\sqrt{98} - \\sqrt{72}$.",
+          "options": [
+            "$\\sqrt{2}$",
+            "$2\\sqrt{2}$",
+            "$\\sqrt{26}$",
+            "$0$"
+          ],
+          "answer": 0,
+          "hint": "$7\\sqrt{2} - 6\\sqrt{2}$.",
+          "solution": "$\\sqrt{2}$"
+        },
+        {
+          "id": "s2bc_15",
+          "type": "mc",
+          "stem": "Simplify $2\\sqrt{45} - \\sqrt{20} + 3\\sqrt{5}$.",
+          "options": [
+            "$7\\sqrt{5}$",
+            "$9\\sqrt{5}$",
+            "$5\\sqrt{5}$",
+            "$11\\sqrt{5}$"
+          ],
+          "answer": 0,
+          "hint": "$6\\sqrt{5} - 2\\sqrt{5} + 3\\sqrt{5}$.",
+          "solution": "$7\\sqrt{5}$"
         }
       ]
     },
@@ -4964,6 +6931,76 @@
           "dna": {
             "dnaId": "ALG-SURD-01"
           }
+        },
+        {
+          "id": "s2f_1",
+          "type": "mc",
+          "stem": "Rationalize $\\frac{5}{\\sqrt{7}}$.",
+          "options": [
+            "$\\frac{5\\sqrt{7}}{7}$",
+            "$\\frac{\\sqrt{35}}{7}$",
+            "$\\frac{5}{7}$",
+            "$5\\sqrt{7}$"
+          ],
+          "answer": 0,
+          "hint": "Multiply by $\\sqrt{7}/\\sqrt{7}$.",
+          "solution": "$\\frac{5\\sqrt{7}}{7}$"
+        },
+        {
+          "id": "s2f_2",
+          "type": "mc",
+          "stem": "Rationalize $\\frac{\\sqrt{3}}{2\\sqrt{5}}$.",
+          "options": [
+            "$\\frac{\\sqrt{15}}{10}$",
+            "$\\frac{\\sqrt{3}}{10}$",
+            "$\\frac{3}{10}$",
+            "$\\frac{\\sqrt{15}}{5}$"
+          ],
+          "answer": 0,
+          "hint": "Multiply by $\\sqrt{5}/\\sqrt{5}$.",
+          "solution": "$\\frac{\\sqrt{15}}{2(5)} = \\frac{\\sqrt{15}}{10}$"
+        },
+        {
+          "id": "s2f_9",
+          "type": "mc",
+          "stem": "Rationalize $\\frac{1}{\\sqrt{5}}$.",
+          "options": [
+            "$\\frac{\\sqrt{5}}{5}$",
+            "$\\sqrt{5}$",
+            "$\\frac{1}{5}$",
+            "$\\frac{5}{\\sqrt{5}}$"
+          ],
+          "answer": 0,
+          "hint": "Simple rationalize.",
+          "solution": "$\\frac{\\sqrt{5}}{5}$"
+        },
+        {
+          "id": "s2f_10",
+          "type": "mc",
+          "stem": "Rationalize $\\frac{3}{\\sqrt{2}}$.",
+          "options": [
+            "$\\frac{3\\sqrt{2}}{2}$",
+            "$3\\sqrt{2}$",
+            "$\\frac{\\sqrt{6}}{2}$",
+            "$\\frac{2\\sqrt{3}}{3}$"
+          ],
+          "answer": 0,
+          "hint": "Multiply by $\\sqrt{2}$.",
+          "solution": "$\\frac{3\\sqrt{2}}{2}$"
+        },
+        {
+          "id": "s2f_11",
+          "type": "mc",
+          "stem": "Rationalize $\\frac{1}{5\\sqrt{3}}$.",
+          "options": [
+            "$\\frac{\\sqrt{3}}{15}$",
+            "$\\frac{5\\sqrt{3}}{15}$",
+            "$\\frac{\\sqrt{3}}{5}$",
+            "$\\frac{1}{15}$"
+          ],
+          "answer": 0,
+          "hint": "Multiply by $\\sqrt{3}$.",
+          "solution": "$\\frac{\\sqrt{3}}{5(3)} = \\frac{\\sqrt{3}}{15}$"
         }
       ]
     },
@@ -7112,6 +9149,188 @@
             }
           ],
           "manual": true
+        },
+        {
+          "id": "s2e_1",
+          "type": "mc",
+          "stem": "Expand and simplify: $\\sqrt{5}(3 - \\sqrt{5})$.",
+          "options": [
+            "$3\\sqrt{5} - 5$",
+            "$3\\sqrt{5} - 25$",
+            "$15 - 5$",
+            "$3\\sqrt{5} + 5$"
+          ],
+          "answer": 0,
+          "hint": "Distribute the $\\sqrt{5}$.",
+          "solution": "$3\\sqrt{5} - (\\sqrt{5})^2 = 3\\sqrt{5} - 5$"
+        },
+        {
+          "id": "s2e_2",
+          "type": "mc",
+          "stem": "Expand and simplify: $2\\sqrt{3}(\\sqrt{6} + 4)$.",
+          "options": [
+            "$6\\sqrt{2} + 8\\sqrt{3}$",
+            "$2\\sqrt{18} + 8\\sqrt{3}$",
+            "$12 + 8\\sqrt{3}$",
+            "$6\\sqrt{3} + 8\\sqrt{3}$"
+          ],
+          "answer": 0,
+          "hint": "$\\sqrt{3} \\times \\sqrt{6} = \\sqrt{18} = 3\\sqrt{2}$.",
+          "solution": "$2\\sqrt{18} + 8\\sqrt{3} = 2(3\\sqrt{2}) + 8\\sqrt{3} = 6\\sqrt{2} + 8\\sqrt{3}$"
+        },
+        {
+          "id": "s2e_3",
+          "type": "mc",
+          "stem": "Expand: $(\\sqrt{3} + 4)(\\sqrt{3} - 1)$.",
+          "options": [
+            "$-1 + 3\\sqrt{3}$",
+            "$3 + 3\\sqrt{3} - 4$",
+            "$-1 - 3\\sqrt{3}$",
+            "$7 + 3\\sqrt{3}$"
+          ],
+          "answer": 0,
+          "hint": "Use FOIL.",
+          "solution": "$3 - \\sqrt{3} + 4\\sqrt{3} - 4 = -1 + 3\\sqrt{3}$"
+        },
+        {
+          "id": "s2e_4",
+          "type": "mc",
+          "stem": "Expand and simplify: $(2\\sqrt{5} + 3)(3\\sqrt{5} - 2)$.",
+          "options": [
+            "$24 + 5\\sqrt{5}$",
+            "$30 + 5\\sqrt{5} - 6$",
+            "$24 - 5\\sqrt{5}$",
+            "$36 + 5\\sqrt{5}$"
+          ],
+          "answer": 0,
+          "hint": "Use FOIL.",
+          "solution": "$6(5) - 4\\sqrt{5} + 9\\sqrt{5} - 6 = 30 + 5\\sqrt{5} - 6 = 24 + 5\\sqrt{5}$"
+        },
+        {
+          "id": "s2e_5",
+          "type": "mc",
+          "stem": "Simplify: $(\\sqrt{11} - 3)(\\sqrt{11} + 3)$.",
+          "options": [
+            "$2$",
+            "$8$",
+            "$121 - 9$",
+            "$20$"
+          ],
+          "answer": 0,
+          "hint": "Difference of squares.",
+          "solution": "$11 - 9 = 2$"
+        },
+        {
+          "id": "s2e_6",
+          "type": "mc",
+          "stem": "Expand: $(\\sqrt{6} - 2)^2$.",
+          "options": [
+            "$10 - 4\\sqrt{6}$",
+            "$8 - 4\\sqrt{6}$",
+            "$10 + 4\\sqrt{6}$",
+            "$2$"
+          ],
+          "answer": 0,
+          "hint": "$a^2 - 2ab + b^2$.",
+          "solution": "$6 - 2(2\\sqrt{6}) + 4 = 10 - 4\\sqrt{6}$"
+        },
+        {
+          "id": "s2e_7",
+          "type": "mc",
+          "stem": "Expand: $(3 + 2\\sqrt{2})^2$.",
+          "options": [
+            "$17 + 12\\sqrt{2}$",
+            "$11 + 12\\sqrt{2}$",
+            "$17 + 6\\sqrt{2}$",
+            "$25$"
+          ],
+          "answer": 0,
+          "hint": "$9 + 2(3)(2\\sqrt{2}) + (2\\sqrt{2})^2$.",
+          "solution": "$9 + 12\\sqrt{2} + 8 = 17 + 12\\sqrt{2}$"
+        },
+        {
+          "id": "s2e_8",
+          "type": "mc",
+          "stem": "Expand and simplify: $(\\sqrt{5} + 2)(3 - \\sqrt{5})$.",
+          "options": [
+            "$\\sqrt{5} + 1$",
+            "$\\sqrt{5} - 1$",
+            "$3\\sqrt{5} - 5 + 6 - 2\\sqrt{5}$",
+            "$11$"
+          ],
+          "answer": 0,
+          "hint": "FOIL.",
+          "solution": "$3\\sqrt{5} - 5 + 6 - 2\\sqrt{5} = \\sqrt{5} + 1$"
+        },
+        {
+          "id": "s2e_9",
+          "type": "mc",
+          "stem": "Expand: $(2\\sqrt{3} - 1)(3\\sqrt{3} + 5)$.",
+          "options": [
+            "$13 + 7\\sqrt{3}$",
+            "$18 + 7\\sqrt{3} - 5$",
+            "$23 + 7\\sqrt{3}$",
+            "$13 - 7\\sqrt{3}$"
+          ],
+          "answer": 0,
+          "hint": "FOIL.",
+          "solution": "$6(3) + 10\\sqrt{3} - 3\\sqrt{3} - 5 = 18 + 7\\sqrt{3} - 5 = 13 + 7\\sqrt{3}$"
+        },
+        {
+          "id": "s2e_10",
+          "type": "mc",
+          "stem": "Expand: $(\\sqrt{10} - 3)(\\sqrt{10} + 3)$.",
+          "options": [
+            "$1$",
+            "$7$",
+            "$19$",
+            "$10-9$"
+          ],
+          "answer": 0,
+          "hint": "Difference of squares.",
+          "solution": "$10 - 9 = 1$"
+        },
+        {
+          "id": "s2e_11",
+          "type": "mc",
+          "stem": "Expand: $(\\sqrt{7} - 2)^2$.",
+          "options": [
+            "$11 - 4\\sqrt{7}$",
+            "$9 - 4\\sqrt{7}$",
+            "$11 + 4\\sqrt{7}$",
+            "$3$"
+          ],
+          "answer": 0,
+          "hint": "$7 - 2(2\\sqrt{7}) + 4$.",
+          "solution": "$11 - 4\\sqrt{7}$"
+        },
+        {
+          "id": "s2e_12",
+          "type": "mc",
+          "stem": "Expand: $(\\sqrt{5} + \\sqrt{2})^2$.",
+          "options": [
+            "$7 + 2\\sqrt{10}$",
+            "$5 + 2$",
+            "$7 + \\sqrt{10}$",
+            "$9$"
+          ],
+          "answer": 0,
+          "hint": "$5 + 2\\sqrt{10} + 2$.",
+          "solution": "$7 + 2\\sqrt{10}$"
+        },
+        {
+          "id": "s2e_13",
+          "type": "mc",
+          "stem": "Expand: $(4 - 3\\sqrt{2})^2$.",
+          "options": [
+            "$34 - 24\\sqrt{2}$",
+            "$16 - 18 + 24\\sqrt{2}$",
+            "$22 - 24\\sqrt{2}$",
+            "$16 - 24\\sqrt{2} + 18$"
+          ],
+          "answer": 0,
+          "hint": "$16 - 2(4)(3\\sqrt{2}) + 18$.",
+          "solution": "$16 - 24\\sqrt{2} + 18 = 34 - 24\\sqrt{2}$"
         }
       ]
     },

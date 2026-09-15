@@ -3964,6 +3964,30 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "y11a-4b-q8c",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "How could the graph in part a (which plots \\(y = 8 + 2x - x^2\\)) be used to solve the problem in part b?",
+          "answer": "The curve in part b is shifted down by 5 units compared to part a. Therefore, solving part b is equivalent to finding where the curve in part a is less than or equal to 0.",
+          "hint": "Compare the expressions \\(8+2x-x^2\\) and \\(3+2x-x^2\\).",
+          "solution": "The curve in part b is shifted down by 5 units compared to part a. Therefore, solving part b is equivalent to finding where the curve in part a is less than or equal to 0.",
+          "steps": [
+            {
+              "explain": "Compare the two quadratic functions algebraically by taking their difference.",
+              "work": "(8 + 2x - x^2) - (3 + 2x - x^2) = 5"
+            },
+            {
+              "explain": "Notice that the function in part b is exactly 5 units lower than the function in part a.",
+              "work": "f_b(x) = f_a(x) - 5"
+            },
+            {
+              "explain": "Therefore, solving \\(f_b(x) \\le -5\\) is equivalent to solving \\(f_a(x) - 5 \\le -5\\), which simplifies directly.",
+              "work": "f_a(x) \\le 0"
+            }
+          ],
+          "timeLimit": 90
         }
       ]
     },
@@ -5439,6 +5463,160 @@
               "explain": "If \\(d < r\\), the line cuts the circle at two points (secant). If \\(d = r\\), the line touches the circle at one point (tangent). If \\(d > r\\), the line does not intersect the circle."
             }
           ]
+        },
+        {
+          "id": "y11a-4c-q10",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Prove the relationships between the discriminant and the zeroes of the general quadratic parabola \\(y = ax^2 + bx + c\\).",
+          "parts": [
+            {
+              "id": "y11a-4c-q10a",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "Rearrange the equation of the parabola to show that \\(x^2 + \\frac{b}{a}x = \\frac{y-c}{a}\\), then add an appropriate quantity to both sides in order to complete the square on the left hand side.",
+              "answer": "Add (b/(2a))^2 to both sides.",
+              "steps": [
+                {
+                  "explain": "Divide the entire equation by \\(a\\) to isolate the quadratic terms.",
+                  "work": "\\frac{y}{a} = x^2 + \\frac{b}{a}x + \\frac{c}{a}"
+                },
+                {
+                  "explain": "Subtract the constant term \\(\\frac{c}{a}\\) from both sides.",
+                  "work": "x^2 + \\frac{b}{a}x = \\frac{y-c}{a}"
+                },
+                {
+                  "explain": "Complete the square by adding the square of half the coefficient of \\(x\\), which is \\(\\left(\\frac{b}{2a}\\right)^2 = \\frac{b^2}{4a^2}\\), to both sides.",
+                  "work": "\\left(x + \\frac{b}{2a}\\right)^2 = \\frac{y-c}{a} + \\frac{b^2}{4a^2}"
+                }
+              ]
+            },
+            {
+              "id": "y11a-4c-q10b",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "Explain why there are no zeroes when \\(\\Delta < 0\\). That is, explain why there is no solution if \\(y = 0\\) and \\(b^2 - 4ac < 0\\).",
+              "answer": "A negative value cannot equal a perfect square.",
+              "steps": [
+                {
+                  "explain": "Substitute \\(y = 0\\) into the completed square equation and find a common denominator.",
+                  "work": "\\left(x + \\frac{b}{2a}\\right)^2 = -\\frac{c}{a} + \\frac{b^2}{4a^2} = \\frac{b^2 - 4ac}{4a^2}"
+                },
+                {
+                  "explain": "Define the numerator as the discriminant \\(\\Delta = b^2 - 4ac\\).",
+                  "work": "\\left(x + \\frac{b}{2a}\\right)^2 = \\frac{\\Delta}{4a^2}"
+                },
+                {
+                  "explain": "Since the left side is a perfect square of a real number, it must be non-negative. If \\(\\Delta < 0\\), the right side is negative, which is a contradiction. Thus, no real solutions exist.",
+                  "work": "\\mathrm{No\\:real\\:solutions}"
+                }
+              ]
+            },
+            {
+              "id": "y11a-4c-q10c",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "Explain why there is a double zero when \\(\\Delta = 0\\). That is, explain why there is one solution if \\(y = 0\\) and \\(b^2 - 4ac = 0\\).",
+              "answer": "The square term equals zero, yielding a single root.",
+              "steps": [
+                {
+                  "explain": "Set the discriminant to zero in the formula.",
+                  "work": "\\left(x + \\frac{b}{2a}\\right)^2 = \\frac{0}{4a^2} = 0"
+                },
+                {
+                  "explain": "Take the square root of both sides.",
+                  "work": "x + \\frac{b}{2a} = 0"
+                },
+                {
+                  "explain": "Solve for \\(x\\) to show there is only one distinct root.",
+                  "work": "x = -\\frac{b}{2a}"
+                }
+              ]
+            },
+            {
+              "id": "y11a-4c-q10d",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "Explain why there are two zeroes when \\(\\Delta > 0\\) and determine the formula for the zeroes in this case.",
+              "answer": "Taking square root of positive number yields two roots.",
+              "steps": [
+                {
+                  "explain": "Since \\(\\Delta > 0\\), we can take the square root on both sides, yielding two distinct branches.",
+                  "work": "x + \\frac{b}{2a} = \\pm \\frac{\\sqrt{\\Delta}}{2a}"
+                },
+                {
+                  "explain": "Move the constant term to the right-hand side.",
+                  "work": "x = -\\frac{b}{2a} \\pm \\frac{\\sqrt{\\Delta}}{2a}"
+                },
+                {
+                  "explain": "Combine the terms over the common denominator to obtain the quadratic formula.",
+                  "work": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}"
+                }
+              ]
+            }
+          ],
+          "answer": "Complete the proofs for parts a, b, c, and d.",
+          "solution": "See detailed steps below."
+        },
+        {
+          "id": "y11a-4c-q19",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "Prove the roots properties for the given quadratic equations. Complete the sub-questions.",
+          "parts": [
+            {
+              "id": "y11a-4c-q19a",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "Prove that the roots of each equation are real and distinct for all real values of \\(\\lambda\\).",
+              "answer": "Find the discriminant and show that it is positive.",
+              "steps": [
+                {
+                  "explain": "For the first equation \\(x^2 + \\lambda x - 2 = 0\\), compute the discriminant.",
+                  "work": "\\Delta_1 = \\lambda^2 - 4(1)(-2) = \\lambda^2 + 8"
+                },
+                {
+                  "explain": "Since \\(\\lambda^2 \\ge 0\\) for any real number \\(\\lambda\\), the discriminant \\(\\Delta_1\\) is always strictly positive, guaranteeing real and distinct roots.",
+                  "work": "\\lambda^2 + 8 \\ge 8 > 0"
+                },
+                {
+                  "explain": "For the second equation \\(x^2 + (\\lambda + 2)x + (\\lambda - 3) = 0\\), compute the discriminant.",
+                  "work": "\\Delta_2 = (\\lambda + 2)^2 - 4(1)(\\lambda - 3)"
+                },
+                {
+                  "explain": "Expand and simplify the second discriminant.",
+                  "work": "\\Delta_2 = (\\lambda^2 + 4\\lambda + 4) - 4\\lambda + 12 = \\lambda^2 + 16"
+                },
+                {
+                  "explain": "Observe that \\(\\Delta_2\\) is also a sum of a perfect square and a positive number, hence always positive.",
+                  "work": "\\lambda^2 + 16 \\ge 16 > 0"
+                }
+              ]
+            },
+            {
+              "id": "y11a-4c-q19b",
+              "type": "review",
+              "difficulty": "hard",
+              "stem": "In the case of equation (i) \\(x^2 + \\lambda x - 2 = 0\\), use the concavity and y-intercept of the associated parabola to give an alternative explanation for why the roots are real and distinct.",
+              "answer": "Parabola opens upwards and has a negative y-intercept, so it must cross the x-axis twice.",
+              "steps": [
+                {
+                  "explain": "Identify the concavity of the associated parabola \\(y = x^2 + \\lambda x - 2\\). Since the coefficient of \\(x^2\\) is 1 (positive), the parabola is concave upwards.",
+                  "work": "\\mathrm{Concave\\:upwards}"
+                },
+                {
+                  "explain": "Find the y-intercept of the parabola by setting \\(x = 0\\).",
+                  "work": "y = 0^2 + \\lambda(0) - 2 = -2"
+                },
+                {
+                  "explain": "Since the parabola opens upwards and its vertex/lowest parts must lie below the x-axis (as it passes through the negative y-intercept \\((0, -2)\\)), it must cross the x-axis twice: once on the left and once on the right of the y-axis. This guarantees two real and distinct roots.",
+                  "work": "\\mathrm{Crosses\\:x-axis\\:twice}"
+                }
+              ]
+            }
+          ],
+          "answer": "Refer to proof steps for parts a and b.",
+          "solution": "See detailed steps below."
         }
       ]
     },
@@ -6425,6 +6603,263 @@
           ],
           "solution": "See detailed steps below.",
           "manual": true
+        },
+        {
+          "id": "y11a-4d-q5",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "The quadratic \\(f(x) = a(x+2)^2 + b(x+2) + c\\) has the same graph as \\(g(x) = 3x^2 - 2x + 1\\). Complete the sub-questions.",
+          "parts": [
+            {
+              "id": "y11a-4d-q5a",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Compare the coefficients of \\(x^2\\) to find the value of \\(a\\).",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Write down the expanded leading term of \\(f(x)\\).",
+                  "work": "a(x+2)^2 = ax^2 + 4ax + 4a"
+                },
+                {
+                  "explain": "Identify the leading coefficient of \\(g(x)\\).",
+                  "work": "3x^2"
+                },
+                {
+                  "explain": "Equate the coefficients of \\(x^2\\).",
+                  "work": "a = 3"
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "y11a-4d-q5b",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Substitute \\(x = -2\\) to find the value of \\(c\\).",
+              "options": [
+                "13",
+                "15",
+                "17",
+                "19"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Evaluate \\(f(-2)\\) and set it equal to \\(g(-2)\\).",
+                  "work": "f(-2) = c \\quad \\mathrm{and} \\quad g(-2) = 3(-2)^2 - 2(-2) + 1"
+                },
+                {
+                  "explain": "Calculate the value.",
+                  "work": "c = 3(4) + 4 + 1"
+                },
+                {
+                  "explain": "State the final value of \\(c\\).",
+                  "work": "c = 17"
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "y11a-4d-q5c",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Substitute another suitable value of \\(x\\) to determine \\(b\\).",
+              "options": [
+                "-16",
+                "-14",
+                "-12",
+                "-10"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Choose a simple value, e.g., \\(x = -1\\), and substitute it along with \\(a = 3\\) and \\(c = 17\\).",
+                  "work": "f(-1) = 3(-1+2)^2 + b(-1+2) + 17 = 3 + b + 17"
+                },
+                {
+                  "explain": "Evaluate \\(g(-1)\\).",
+                  "work": "g(-1) = 3(-1)^2 - 2(-1) + 1 = 3 + 2 + 1 = 6"
+                },
+                {
+                  "explain": "Set \\(f(-1) = g(-1)\\) and solve for \\(b\\).",
+                  "work": "20 + b = 6 \\implies b = -14"
+                }
+              ],
+              "timeLimit": 60
+            },
+            {
+              "id": "y11a-4d-q5d",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Write down the resulting quadratic identity.",
+              "options": [
+                "\\(3x^2-2x+1 = 3(x+2)^2-12(x+2)+15\\)",
+                "\\(3x^2-2x+1 = 3(x+2)^2-14(x+2)+17\\)",
+                "\\(3x^2-2x+1 = 3(x+2)^2-10(x+2)+13\\)",
+                "\\(3x^2-2x+1 = 3(x+2)^2-16(x+2)+19\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Collect the calculated coefficients.",
+                  "work": "a = 3, \\quad b = -14, \\quad c = 17"
+                },
+                {
+                  "explain": "Substitute these coefficients back into \\(f(x)\\).",
+                  "work": "f(x) = 3(x+2)^2 - 14(x+2) + 17"
+                },
+                {
+                  "explain": "Equate to \\(g(x)\\) to state the identity.",
+                  "work": "3x^2 - 2x + 1 = 3(x+2)^2 - 14(x+2) + 17"
+                }
+              ],
+              "timeLimit": 60
+            }
+          ],
+          "answer": "Refer to sub-questions for values of a, b, and c.",
+          "solution": "See detailed steps below.",
+          "timeLimit": 60
+        },
+        {
+          "id": "y11a-4d-q12",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Consider the identity \\(Am^2 + B(m-1)^2 = 4m - 2\\). Complete the sub-questions.",
+          "parts": [
+            {
+              "id": "y11a-4d-q12a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find \\(A\\) and \\(B\\) such that \\(Am^2 + B(m-1)^2 = 4m - 2\\).",
+              "options": [
+                "\\(A = 2, B = 2\\)",
+                "\\(A = 2, B = -2\\)",
+                "\\(A = -2, B = 2\\)",
+                "\\(A = 4, B = -2\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Expand the left-hand side of the equation.",
+                  "work": "Am^2 + B(m^2 - 2m + 1) = (A + B)m^2 - 2Bm + B"
+                },
+                {
+                  "explain": "Equate the coefficients to the right-hand side \\(4m - 2\\).",
+                  "work": "A + B = 0 \\\\ -2B = 4 \\\\ B = -2"
+                },
+                {
+                  "explain": "Solve for \\(A\\) using \\(A = -B\\).",
+                  "work": "A = 2"
+                }
+              ],
+              "timeLimit": 90
+            },
+            {
+              "id": "y11a-4d-q12b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Hence find the sum of \\(2 + 6 + 10 + \\dots + 98\\).",
+              "options": [
+                "1150",
+                "1200",
+                "1250",
+                "1300"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Identify the general term of the sequence \\(2, 6, 10, \\dots\\). The terms are of the form \\(4m - 2\\). Find the number of terms \\(N\\).",
+                  "work": "4m - 2 = 98 \\implies 4m = 100 \\implies m = 25"
+                },
+                {
+                  "explain": "Rewrite the sum using the identity \\(4m - 2 = 2m^2 - 2(m-1)^2\\).",
+                  "work": "\\sum_{m=1}^{25} (4m - 2) = \\sum_{m=1}^{25} [2m^2 - 2(m-1)^2]"
+                },
+                {
+                  "explain": "Observe that this is a telescoping sum and simplify.",
+                  "work": "2(1^2 - 0^2) + 2(2^2 - 1^2) + \\dots + 2(25^2 - 24^2) = 2(25^2 - 0) = 2(625) = 1250"
+                }
+              ],
+              "timeLimit": 90
+            }
+          ],
+          "answer": "Refer to sub-questions for values of A and B and the sum.",
+          "solution": "See detailed steps below.",
+          "timeLimit": 90
+        },
+        {
+          "id": "y11a-4d-q13",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Let \\(11x^2 - 5x + 4 = a(3-x)^2 + b(3-x) + c\\). Complete the sub-questions.",
+          "parts": [
+            {
+              "id": "y11a-4d-q13a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Evaluate the constants \\(a\\), \\(b\\) and \\(c\\).",
+              "options": [
+                "\\(a = 11, b = -60, c = 88\\)",
+                "\\(a = 11, b = -61, c = 88\\)",
+                "\\(a = 11, b = -61, c = 80\\)",
+                "\\(a = 10, b = -61, c = 88\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Determine \\(a\\) by matching the coefficient of \\(x^2\\). Note that \\(a(3-x)^2 = ax^2 + \\dots\\).",
+                  "work": "a = 11"
+                },
+                {
+                  "explain": "Substitute \\(x = 3\\) to find \\(c\\).",
+                  "work": "11(3)^2 - 5(3) + 4 = c \\implies 99 - 15 + 4 = c \\implies c = 88"
+                },
+                {
+                  "explain": "Substitute \\(x = 2\\) along with \\(a = 11\\) and \\(c = 88\\) to solve for \\(b\\).",
+                  "work": "11(2)^2 - 5(2) + 4 = 11(3-2)^2 + b(3-2) + 88 \\implies 38 = 11 + b + 88 \\implies b = -61"
+                }
+              ],
+              "timeLimit": 90
+            },
+            {
+              "id": "y11a-4d-q13b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Hence evaluate \\(11x^2 - 5x + 4\\) when \\(x = 2.99\\) without using a calculator.",
+              "options": [
+                "86.3911",
+                "87.1911",
+                "87.3911",
+                "88.3911"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Substitute \\(x = 2.99\\) into the identity form using \\(a = 11\\), \\(b = -61\\), and \\(c = 88\\).",
+                  "work": "11(3 - 2.99)^2 - 61(3 - 2.99) + 88"
+                },
+                {
+                  "explain": "Evaluate the term \\(3 - 2.99\\).",
+                  "work": "3 - 2.99 = 0.01"
+                },
+                {
+                  "explain": "Perform the arithmetic calculation.",
+                  "work": "11(0.01)^2 - 61(0.01) + 88 = 11(0.0001) - 0.61 + 88 = 0.0011 - 0.61 + 88 = 87.3911"
+                }
+              ],
+              "timeLimit": 90
+            }
+          ],
+          "answer": "Refer to sub-questions for values of a, b, and c.",
+          "solution": "See detailed steps below.",
+          "timeLimit": 90
         }
       ]
     },

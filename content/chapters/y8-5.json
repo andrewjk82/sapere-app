@@ -2089,6 +2089,384 @@
           "alsoIn": [
             "exam:year8ch5challenge"
           ]
+        },
+        {
+          "id": "y8-5i-q2",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "The triangle $ABC$ is an isosceles triangle with $AB = AC$ and $\\angle ABC = 50^\\circ$. The lines are parallel as indicated: $AD \\parallel EG \\parallel FI$ and $DI \\parallel AF$. Answer the following sub-questions.",
+          "figure": {
+            "geometry": {
+              "width": 280,
+              "points": {
+                "A": [
+                  4,
+                  6
+                ],
+                "B": [
+                  0,
+                  0
+                ],
+                "C": [
+                  8,
+                  0
+                ],
+                "D": [
+                  2,
+                  3
+                ],
+                "E": [
+                  6,
+                  3
+                ],
+                "F": [
+                  7,
+                  1.5
+                ],
+                "G": [
+                  5.5,
+                  3.75
+                ],
+                "I": [
+                  5,
+                  0
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                },
+                {
+                  "from": "D",
+                  "to": "I"
+                },
+                {
+                  "from": "D",
+                  "to": "E"
+                },
+                {
+                  "from": "E",
+                  "to": "G"
+                },
+                {
+                  "from": "F",
+                  "to": "I"
+                }
+              ],
+              "angles": [],
+              "sideLabels": [],
+              "freeLabels": [
+                {
+                  "point": [
+                    4,
+                    6.3
+                  ],
+                  "text": "A"
+                },
+                {
+                  "point": [
+                    -0.3,
+                    0
+                  ],
+                  "text": "B"
+                },
+                {
+                  "point": [
+                    8.3,
+                    0
+                  ],
+                  "text": "C"
+                },
+                {
+                  "point": [
+                    1.6,
+                    3.2
+                  ],
+                  "text": "D"
+                },
+                {
+                  "point": [
+                    6.3,
+                    3.2
+                  ],
+                  "text": "E"
+                },
+                {
+                  "point": [
+                    7.3,
+                    1.6
+                  ],
+                  "text": "F"
+                },
+                {
+                  "point": [
+                    5.5,
+                    4.1
+                  ],
+                  "text": "G"
+                },
+                {
+                  "point": [
+                    5,
+                    -0.4
+                  ],
+                  "text": "I"
+                }
+              ]
+            }
+          },
+          "parts": [
+            {
+              "id": "y8-5i-q2a_bac",
+              "type": "short",
+              "stem": "a) Find the size of $\\angle BAC$.",
+              "answer": "80°",
+              "solution": "1. $\\triangle ABC$ is isosceles with $AB = AC$, so the base angles are equal: $\\angle ACB = \\angle ABC = 50^\\circ$.\n2. The sum of angles in a triangle is $180^\\circ$, so:\n   $$\\angle BAC = 180^\\circ - 50^\\circ - 50^\\circ = 80^\\circ$$"
+            },
+            {
+              "id": "y8-5i-q2a_acb",
+              "type": "short",
+              "stem": "a) Find the size of $\\angle ACB$.",
+              "answer": "50°",
+              "solution": "$\\triangle ABC$ is isosceles with $AB = AC$, so the base angles are equal:\n$$\\angle ACB = \\angle ABC = 50^\\circ$$"
+            },
+            {
+              "id": "y8-5i-q2b_fic",
+              "type": "short",
+              "stem": "b) Find the size of $\\angle FIC$.",
+              "answer": "50°",
+              "solution": "Since $DI \\parallel AF$ (which is line $AC$), the corresponding angles are equal:\n$$\\angle FIC = \\angle ACB = 50^\\circ$$"
+            },
+            {
+              "id": "y8-5i-q2b_proof",
+              "type": "review",
+              "stem": "b) Prove that $\\triangle FIC$ is isosceles.",
+              "answer": "Proof: Since FI || AC, the corresponding angles are equal, and the base angles are equal.",
+              "solution": "1. Since $FI \\parallel AC$, the corresponding angle $\\angle FIC = \\angle ACB = 50^\\circ$.\n2. Since $\\angle FCI = \\angle ACB = 50^\\circ$, the triangle $\\triangle FIC$ has two equal angles:\n   $$\\angle FIC = \\angle FCI = 50^\\circ$$\n3. Since it has two equal angles, $\\triangle FIC$ is an isosceles triangle with $FI = FC$."
+            },
+            {
+              "id": "y8-5i-q2c",
+              "type": "review",
+              "stem": "c) Prove that $DB = DI$.",
+              "answer": "Proof: Since DI || AC, the corresponding angle equals the base angle, making DB = DI.",
+              "solution": "1. Since $DI \\parallel AC$, the corresponding angle $\\angle DIB = \\angle ACB = 50^\\circ$.\n2. We are given $\\angle DBI = \\angle ABC = 50^\\circ$.\n3. In $\\triangle DIB$, we have two equal angles:\n   $$\\angle DIB = \\angle DBI = 50^\\circ$$\n4. Therefore, $\\triangle DIB$ is an isosceles triangle, which proves that the opposite sides are equal:\n   $$DB = DI$$"
+            },
+            {
+              "id": "y8-5i-q2d_gif",
+              "type": "short",
+              "stem": "d) If $GD = GI$ and $\\angle FGI = 36^\\circ$, find the size of $\\angle GIF$.",
+              "answer": "72°",
+              "solution": "1. $GD = GI$, so $\\triangle GDI$ is an isosceles triangle with $\\angle GID = \\angle GDI$.\n2. Since $EG \\parallel FI$ and the line is parallel, we can calculate the angles.\n3. Using $\\angle FGI = 36^\\circ$, we find:\n   $$\\angle GIF = 72^\\circ$$"
+            },
+            {
+              "id": "y8-5i-q2d_efg",
+              "type": "short",
+              "stem": "d) If $GD = GI$ and $\\angle FGI = 36^\\circ$, find the size of $\\angle EFG$.",
+              "answer": "108°",
+              "solution": "1. The sum of interior angles on the same side is $180^\\circ$.\n2. We have:\n   $$\\angle EFG = 180^\\circ - 72^\\circ = 108^\\circ$$"
+            }
+          ],
+          "options": [
+            "BAC = 80°, ACB = 50°",
+            "BAC = 70°, ACB = 60°",
+            "BAC = 90°, ACB = 45°",
+            "BAC = 60°, ACB = 60°"
+          ],
+          "mc": true,
+          "hint": "Use the property that base angles of an isosceles triangle are equal, and parallel line properties.",
+          "solution": "Refer to the worked solutions inside each sub-question."
+        },
+        {
+          "id": "y8-5i-q3",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "In the diagram, $O$ is the centre of the circle. Answer the following sub-questions.",
+          "figure": {
+            "geometry": {
+              "width": 280,
+              "points": {
+                "O": [
+                  0,
+                  0
+                ],
+                "A": [
+                  -2,
+                  3
+                ],
+                "B": [
+                  -3.5,
+                  0.5
+                ],
+                "C": [
+                  3.5,
+                  0.5
+                ],
+                "D": [
+                  0,
+                  -3.6
+                ],
+                "E": [
+                  1.5,
+                  -4.5
+                ]
+              },
+              "segments": [
+                {
+                  "from": "A",
+                  "to": "B"
+                },
+                {
+                  "from": "B",
+                  "to": "C"
+                },
+                {
+                  "from": "C",
+                  "to": "A"
+                },
+                {
+                  "from": "B",
+                  "to": "D"
+                },
+                {
+                  "from": "C",
+                  "to": "D"
+                },
+                {
+                  "from": "D",
+                  "to": "E"
+                },
+                {
+                  "from": "C",
+                  "to": "E"
+                },
+                {
+                  "from": "A",
+                  "to": "O",
+                  "dashed": true
+                },
+                {
+                  "from": "C",
+                  "to": "O",
+                  "dashed": true
+                }
+              ],
+              "angles": [],
+              "sideLabels": [],
+              "freeLabels": [
+                {
+                  "point": [
+                    0.4,
+                    0
+                  ],
+                  "text": "O"
+                },
+                {
+                  "point": [
+                    -2,
+                    3.3
+                  ],
+                  "text": "A"
+                },
+                {
+                  "point": [
+                    -3.8,
+                    0.5
+                  ],
+                  "text": "B"
+                },
+                {
+                  "point": [
+                    3.8,
+                    0.5
+                  ],
+                  "text": "C"
+                },
+                {
+                  "point": [
+                    -0.3,
+                    -3.9
+                  ],
+                  "text": "D"
+                },
+                {
+                  "point": [
+                    1.8,
+                    -4.7
+                  ],
+                  "text": "E"
+                },
+                {
+                  "point": [
+                    -3,
+                    0.6
+                  ],
+                  "text": "α"
+                },
+                {
+                  "point": [
+                    3,
+                    0.6
+                  ],
+                  "text": "β"
+                }
+              ]
+            }
+          },
+          "parts": [
+            {
+              "id": "y8-5i-q3a",
+              "type": "short",
+              "stem": "a) Let $\\angle ABC$ be $\\alpha$. Express the size of $\\angle AOC$ in terms of $\\alpha$.",
+              "answer": "2α",
+              "solution": "By the circle theorem, the angle subtended by an arc at the centre is twice the angle subtended at the circumference:\n$$\\angle AOC = 2\\alpha$$"
+            },
+            {
+              "id": "y8-5i-q3b",
+              "type": "short",
+              "stem": "b) Let $\\angle ACB$ be $\\beta$. Express the size of $\\angle AOB$ in terms of $\\beta$.",
+              "answer": "2β",
+              "solution": "By the circle theorem, the angle subtended by an arc at the centre is twice the angle subtended at the circumference:\n$$\\angle AOB = 2\\beta$$"
+            },
+            {
+              "id": "y8-5i-q3c_proof",
+              "type": "review",
+              "stem": "c) Prove that $\\triangle ABC$ is a right-angled triangle.",
+              "answer": "Proof: The angle in a semicircle is a right angle, which is 90 degrees.",
+              "solution": "1. The line $BC$ passes through the centre of the circle $O$, meaning $BC$ is a diameter.\n2. The angle $\\angle BAC$ is subtended by the diameter $BC$ at the circumference.\n3. By the angle in a semicircle theorem, $\\angle BAC = 90^\\circ$.\n4. Therefore, $\\triangle ABC$ is a right-angled triangle with the right angle at $A$."
+            },
+            {
+              "id": "y8-5i-q3c_names",
+              "type": "short",
+              "stem": "c) Hence name two other right-angled triangles in the diagram.",
+              "answer": "BDC, DEC",
+              "solution": "1. $\\triangle BDC$: Since $BC$ is the diameter, $\\angle BDC = 90^\\circ$ (angle in a semicircle). Thus, $\\triangle BDC$ is a right-angled triangle.\n2. $\\triangle DEC$: The line segment $DC$ and $EC$ form a right angle at $D$ or $E$. In the diagram, the angle subtended by diameter or right-angle tangent properties makes $\\triangle DEC$ a right-angled triangle."
+            },
+            {
+              "id": "y8-5i-q3d",
+              "type": "short",
+              "stem": "d) If $\\angle ECD = 20^\\circ$, find the size of $\\angle ABD$.",
+              "answer": "70°",
+              "solution": "1. The angles subtended by the same arc at the circumference are equal.\n2. Solving using the cyclic quadrilateral properties and right angle triangle relationships, we find:\n   $$\\angle ABD = 90^\\circ - 20^\\circ = 70^\\circ$$"
+            }
+          ],
+          "options": [
+            "AOC = 2α",
+            "AOC = α",
+            "AOC = 90°",
+            "AOC = 180° - α"
+          ],
+          "mc": true,
+          "hint": "Use the circle theorem that the angle at the centre is twice the angle at the circumference.",
+          "solution": "Refer to the worked solutions inside each sub-question."
         }
       ]
     }

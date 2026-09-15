@@ -14935,6 +14935,267 @@
               "work": "\\\\(\\frac{4x(x+4)}{-16(x+2)} = -\\frac{x(x+4)}{4(x+2)}\\\\)"
             }
           ]
+        },
+        {
+          "id": "y10-3j-q6",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "A gardener has \\\\(80\\\\) m of garden edging, which she uses to set out a rectangular garden with width \\\\(6\\\\) m less than the length. Let \\\\(x\\\\) metres be the length of the garden.",
+          "parts": [
+            {
+              "id": "y10-3j-q6a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "a) Find, in terms of \\\\(x\\\\), the width of the garden.",
+              "options": [
+                "\\\\(x - 6\\\\)",
+                "\\\\(z - 6\\\\)",
+                "\\\\(x - 6 + 1\\\\)",
+                "\\\\(x - 6 - 2\\\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Analyze the sub-question and set up the corresponding calculation.",
+                  "work": "\\\\(x - 6\\\\)"
+                },
+                {
+                  "explain": "Perform the intermediate steps to simplify the equation.",
+                  "work": "\\\\(x - 6\\\\)"
+                },
+                {
+                  "explain": "Confirm the final answer.",
+                  "work": "\\\\(x - 6\\\\)"
+                }
+              ],
+              "timeLimit": 90
+            },
+            {
+              "id": "y10-3j-q6b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "b) Form an equation and solve it to find the length of the garden in metres.",
+              "options": [
+                "\\\\(21\\\\)",
+                "\\\\(25\\\\)",
+                "\\\\(23\\\\)",
+                "\\\\(-23\\\\)"
+              ],
+              "answer": 2,
+              "steps": [
+                {
+                  "explain": "Analyze the sub-question and set up the corresponding calculation.",
+                  "work": "\\\\(23\\\\)"
+                },
+                {
+                  "explain": "Perform the intermediate steps to simplify the equation.",
+                  "work": "\\\\(23\\\\)"
+                },
+                {
+                  "explain": "Confirm the final answer.",
+                  "work": "\\\\(23\\\\)"
+                }
+              ],
+              "timeLimit": 90
+            }
+          ],
+          "options": [
+            "\\\\(- 2\\\\)",
+            "\\\\(\\\\)",
+            "\\\\(+ 1\\\\)",
+            "\\\\(\\\\)"
+          ],
+          "mc": true,
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Read the question carefully and determine the appropriate mathematical rules to apply.",
+              "work": "\\\\(\\\\)"
+            },
+            {
+              "explain": "Perform the intermediate algebraic steps systematically.",
+              "work": "\\\\(\\\\)"
+            },
+            {
+              "explain": "Check your calculations and state the final result.",
+              "work": "\\\\(\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-3j-q11",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Given the relationship \\\\(s = ut + \\frac{1}{2}at^2\\\\):",
+          "parts": [
+            {
+              "id": "y10-3j-q11a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "a) calculate \\\\(s\\\\) when \\\\(u = 15.5\\\\), \\\\(t = 2.0\\\\) and \\\\(a = 9.8\\\\)",
+              "options": [
+                "\\\\(-50.6\\\\)",
+                "\\\\(50.6\\\\)",
+                "\\\\(48.6\\\\)",
+                "\\\\(52.6\\\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Analyze the sub-question and set up the corresponding calculation.",
+                  "work": "\\\\(50.6\\\\)"
+                },
+                {
+                  "explain": "Perform the intermediate steps to simplify the equation.",
+                  "work": "\\\\(50.6\\\\)"
+                },
+                {
+                  "explain": "Confirm the final answer.",
+                  "work": "\\\\(50.6\\\\)"
+                }
+              ],
+              "timeLimit": 90
+            },
+            {
+              "id": "y10-3j-q11b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "b) rearrange the formula to make \\\\(a\\\\) the subject",
+              "options": [
+                "\\\\(\\frac{2(s-ut)}{t^2}\\\\)",
+                "\\\\(\\frac{2(s-ut)}{t^2} + 1\\\\)",
+                "\\\\(\\frac{2(s-ut)}{t^2}\\\\)",
+                "\\\\(\\frac{4(s-ut)}{t^4}\\\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Analyze the sub-question and set up the corresponding calculation.",
+                  "work": "\\\\(\\frac{2(s-ut)}{t^2}\\\\)"
+                },
+                {
+                  "explain": "Perform the intermediate steps to simplify the equation.",
+                  "work": "\\\\(\\frac{2(s-ut)}{t^2}\\\\)"
+                },
+                {
+                  "explain": "Confirm the final answer.",
+                  "work": "\\\\(\\frac{2(s-ut)}{t^2}\\\\)"
+                }
+              ],
+              "timeLimit": 90
+            }
+          ],
+          "options": [
+            "\\\\(\\\\)",
+            "\\\\(- 2\\\\)",
+            "\\\\(+ 1\\\\)",
+            "\\\\(\\\\)"
+          ],
+          "mc": true,
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Read the question carefully and determine the appropriate mathematical rules to apply.",
+              "work": "\\\\(\\\\)"
+            },
+            {
+              "explain": "Perform the intermediate algebraic steps systematically.",
+              "work": "\\\\(\\\\)"
+            },
+            {
+              "explain": "Check your calculations and state the final result.",
+              "work": "\\\\(\\\\)"
+            }
+          ],
+          "timeLimit": 90
+        },
+        {
+          "id": "y10-3j-q12",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The formula for the time of swing, \\\\(T\\\\) seconds, of a pendulum is \\\\(T = 2\\pi\\sqrt{\\frac{p}{g}}\\\\), where \\\\(p\\\\) metres is the length of the pendulum and \\\\(g\\\\) is a constant related to gravity.",
+          "parts": [
+            {
+              "id": "y10-3j-q12a",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "a) Make \\\\(g\\\\) the subject of this formula.",
+              "options": [
+                "\\\\(\\frac{4\\pi^2 p}{T^2}\\\\)",
+                "\\\\(\\frac{4\\pi^4 p}{T^4}\\\\)",
+                "\\\\(\\frac{4\\pi^2 p}{T^2} + 1\\\\)",
+                "\\\\(\\frac{4\\pi^2 p}{T^2}\\\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Analyze the sub-question and set up the corresponding calculation.",
+                  "work": "\\\\(\\frac{4\\pi^2 p}{T^2}\\\\)"
+                },
+                {
+                  "explain": "Perform the intermediate steps to simplify the equation.",
+                  "work": "\\\\(\\frac{4\\pi^2 p}{T^2}\\\\)"
+                },
+                {
+                  "explain": "Confirm the final answer.",
+                  "work": "\\\\(\\frac{4\\pi^2 p}{T^2}\\\\)"
+                }
+              ],
+              "timeLimit": 90
+            },
+            {
+              "id": "y10-3j-q12b",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "b) The time of swing is found to be \\\\(4\\\\) seconds when the length of the pendulum is \\\\(3.5\\\\) m. What is the exact value of \\\\(g\\\\)?",
+              "options": [
+                "\\\\(\\frac{7\\pi^2}{8} + 1\\\\)",
+                "\\\\(\\frac{7\\pi^2}{8}\\\\)",
+                "\\\\(\\frac{7\\pi^2}{8}\\\\)",
+                "\\\\(\\frac{7\\pi^4}{8}\\\\)"
+              ],
+              "answer": 1,
+              "steps": [
+                {
+                  "explain": "Analyze the sub-question and set up the corresponding calculation.",
+                  "work": "\\\\(\\frac{7\\pi^2}{8}\\\\)"
+                },
+                {
+                  "explain": "Perform the intermediate steps to simplify the equation.",
+                  "work": "\\\\(\\frac{7\\pi^2}{8}\\\\)"
+                },
+                {
+                  "explain": "Confirm the final answer.",
+                  "work": "\\\\(\\frac{7\\pi^2}{8}\\\\)"
+                }
+              ],
+              "timeLimit": 90
+            }
+          ],
+          "options": [
+            "\\\\(- 2\\\\)",
+            "\\\\(\\\\)",
+            "\\\\(+ 1\\\\)",
+            "\\\\(\\\\)"
+          ],
+          "mc": true,
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Read the question carefully and determine the appropriate mathematical rules to apply.",
+              "work": "\\\\(\\\\)"
+            },
+            {
+              "explain": "Perform the intermediate algebraic steps systematically.",
+              "work": "\\\\(\\\\)"
+            },
+            {
+              "explain": "Check your calculations and state the final result.",
+              "work": "\\\\(\\\\)"
+            }
+          ],
+          "timeLimit": 90
         }
       ]
     }
