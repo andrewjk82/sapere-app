@@ -3646,6 +3646,60 @@
             }
           ],
           "timeLimit": 60
+        },
+        {
+          "id": "y7-t3-2018-p1-q38",
+          "type": "mc",
+          "stem": "Rewrite \\( 2.370370370\\ldots \\) as a recurring decimal.",
+          "options": [
+            "\\( 2.\\overline{370} \\)",
+            "\\( 2.3\\overline{70} \\)",
+            "\\( 2.\\dot{3}7\\dot{0} \\)",
+            "\\( 2.37\\dot{0} \\)"
+          ],
+          "answer": 0,
+          "hint": "Find the pattern of digits that repeats infinitely.",
+          "steps": [
+            {
+              "explain": "The digits '370' repeat in the same order."
+            },
+            {
+              "explain": "We place a bar over the repeating part to write it as a recurring decimal."
+            },
+            {
+              "explain": "Result: \\( 2.\\overline{370} \\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p1-q40",
+          "type": "mc",
+          "stem": "Convert \\( \\frac{2}{11} \\) to a recurring decimal.",
+          "options": [
+            "\\( 0.\\overline{18} \\)",
+            "\\( 0.1\\overline{8} \\)",
+            "\\( 0.\\overline{11} \\)",
+            "\\( 0.\\overline{21} \\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 2 by 11 using long division.",
+          "steps": [
+            {
+              "explain": "\\( 2 \\div 11 = 0 \\) remainder 2"
+            },
+            {
+              "explain": "\\( 20 \\div 11 = 1 \\) remainder 9"
+            },
+            {
+              "explain": "\\( 90 \\div 11 = 8 \\) remainder 2"
+            },
+            {
+              "explain": "The remainders repeat (2, 9, 2, 9...), so the quotient digits repeat."
+            },
+            {
+              "explain": "Result: \\( 0.181818\\ldots = 0.\\overline{18} \\)"
+            }
+          ]
         }
       ]
     },

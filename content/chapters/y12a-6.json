@@ -4156,6 +4156,674 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "y12a-6f-q1a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = 4 \\sin x \\)",
+          "options": [
+            "\\(y' = 4 -\\cos x\\)",
+            "\\(y' = 4 \\cos x\\)",
+            "\\(y' = 4 \\cos x + 1\\)",
+            "\\(y' = 4 \\sin x\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(y' = 4 \\cos x\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = 4 \\sin x\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y' = 4 \\cos x\\)"
+            },
+            {
+              "explain": "Final answer: y' = 4 \\cos x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y' = 4 \\cos x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\sin 4x \\)",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -4,
+                4,
+                4,
+                -4
+              ],
+              "width": 360,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.sin(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = sin x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 260
+            }
+          },
+          "options": [
+            "\\(y' = 4 -\\cos 4x\\)",
+            "\\(y' = 4 \\cos 4x\\)",
+            "\\(y' = 4 \\cos 4x + 1\\)",
+            "\\(y' = 4 \\sin 4x\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(y' = 4 \\cos 4x\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\sin 4x\\)",
+              "figure": {
+                "jsxGraph": {
+                  "width": 360,
+                  "height": 260,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.sin(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = sin x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y' = 4 \\cos 4x\\)"
+            },
+            {
+              "explain": "Final answer: y' = 4 \\cos 4x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y' = 4 \\cos 4x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q1c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = 4 \\cos 4x \\)",
+          "options": [
+            "\\(y' = +16 \\sin 4x\\)",
+            "\\(y' = -16 -\\sin 4x\\)",
+            "\\(y' = -16 \\sin 4x\\)",
+            "\\(y' = -16 \\sin 4x + 1\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(y' = -16 \\sin 4x\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = 4 \\cos 4x\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y' = -16 \\sin 4x\\)"
+            },
+            {
+              "explain": "Final answer: y' = -16 \\sin 4x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y' = -16 \\sin 4x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q1d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\tan(4x - 3) \\)",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -4,
+                4,
+                4,
+                -4
+              ],
+              "width": 360,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 260
+            }
+          },
+          "options": [
+            "\\(y' = 4 \\sec^2 (4x + 3)\\)",
+            "\\(y' = 4 \\sec^2 (4x - 3)\\)",
+            "\\(y' = 4 \\sec^2 (4x - 3) + 1\\)",
+            "\\(y' = 4 \\sec^4 (4x - 4)\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(y' = 4 \\sec^2 (4x - 3)\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\tan(4x - 3)\\)",
+              "figure": {
+                "jsxGraph": {
+                  "width": 360,
+                  "height": 260,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y' = 4 \\sec^2 (4x - 3)\\)"
+            },
+            {
+              "explain": "Final answer: y' = 4 \\sec^2 (4x - 3). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y' = 4 \\sec^2 (4x - 3)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q1e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = x \\sin 4x \\)",
+          "options": [
+            "\\(y' = -\\sin 4x + 4x -\\cos 4x\\)",
+            "\\(y' = \\sin 4x + 4x \\cos 4x\\)",
+            "\\(y' = \\sin 4x + 4x \\cos 4x + 1\\)",
+            "\\(y' = \\sin 4x + 4x \\sin 4x\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(y' = \\sin 4x + 4x \\cos 4x\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = x \\sin 4x\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y' = \\sin 4x + 4x \\cos 4x\\)"
+            },
+            {
+              "explain": "Final answer: y' = \\sin 4x + 4x \\cos 4x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y' = \\sin 4x + 4x \\cos 4x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q1f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\frac{\\cos 4x}{x} \\)",
+          "options": [
+            "\\(-y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}\\)",
+            "\\(y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}\\)",
+            "\\(y' = \\frac{4x \\sin 4x - \\cos 4x}{x^2}\\)",
+            "\\(y' = \\frac{x^2}{-4x \\sin 4x - \\cos 4x}\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\frac{\\cos 4x}{x}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}\\)"
+            },
+            {
+              "explain": "Final answer: y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q1g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\sin^4 x \\)",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -4,
+                4,
+                4,
+                -4
+              ],
+              "width": 360,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.sin(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = sin x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 260
+            }
+          },
+          "options": [
+            "\\(y' = 4 -\\sin^3 x -\\cos x\\)",
+            "\\(y' = 4 \\sin^3 x \\cos x\\)",
+            "\\(y' = 4 \\sin^3 x \\sin x\\)",
+            "\\(y' = 4 \\sin^4 x \\cos x\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(y' = 4 \\sin^3 x \\cos x\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\sin^4 x\\)",
+              "figure": {
+                "jsxGraph": {
+                  "width": 360,
+                  "height": 260,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.sin(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = sin x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y' = 4 \\sin^3 x \\cos x\\)"
+            },
+            {
+              "explain": "Final answer: y' = 4 \\sin^3 x \\cos x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y' = 4 \\sin^3 x \\cos x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q1h",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\tan(x^4) \\)",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -4,
+                4,
+                4,
+                -4
+              ],
+              "width": 360,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 260
+            }
+          },
+          "options": [
+            "\\(\\dfrac{13}{x + 3}\\)",
+            "\\(y' = 4x^3 \\sec^2(x^4)\\)",
+            "\\(y' = 4x^3 \\sec^2(x^4) + 1\\)",
+            "\\(y' = 4x^4 \\sec^4(x^4)\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(y' = 4x^3 \\sec^2(x^4)\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\tan(x^4)\\)",
+              "figure": {
+                "jsxGraph": {
+                  "width": 360,
+                  "height": 260,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y' = 4x^3 \\sec^2(x^4)\\)"
+            },
+            {
+              "explain": "Final answer: y' = 4x^3 \\sec^2(x^4). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y' = 4x^3 \\sec^2(x^4)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q1i",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = e^{\\cos 4x} \\)",
+          "options": [
+            "\\(y' = +4 \\sin 4x \\cdot e^{\\cos 4x}\\)",
+            "\\(y' = -4 -\\sin 4x \\cdot e^{-\\cos 4x}\\)",
+            "\\(y' = -4 \\sin 4x \\cdot e^{\\cos 4x}\\)",
+            "\\(y' = -4 \\sin 4x \\cdot e^{\\sin 4x}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(y' = -4 \\sin 4x \\cdot e^{\\cos 4x}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = e^{\\cos 4x}\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y' = -4 \\sin 4x \\cdot e^{\\cos 4x}\\)"
+            },
+            {
+              "explain": "Final answer: y' = -4 \\sin 4x \\cdot e^{\\cos 4x}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y' = -4 \\sin 4x \\cdot e^{\\cos 4x}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q1j",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\log_e(\\sin 4x) \\)",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                0.1,
+                4,
+                5,
+                -2
+              ],
+              "width": 360,
+              "script": "board.suspendUpdate(); board.create('arrow', [[0.1,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.25, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.log(x); }, 0.15, 4.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.5, 2.2, 'y = ln x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 260
+            }
+          },
+          "options": [
+            "\\(\\dfrac{12}{x + 2}\\)",
+            "\\(\\dfrac{13}{x + 3}\\)",
+            "\\(y' = 4 \\cot 4x\\)",
+            "\\(y' = 4 \\cot 4x + 1\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(y' = 4 \\cot 4x\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\log_e(\\sin 4x)\\)",
+              "figure": {
+                "jsxGraph": {
+                  "width": 360,
+                  "height": 260,
+                  "boundingbox": [
+                    0.1,
+                    4,
+                    5,
+                    -2
+                  ],
+                  "script": "board.suspendUpdate(); board.create('arrow', [[0.1,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.25, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.log(x); }, 0.15, 4.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.5, 2.2, 'y = ln x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y' = 4 \\cot 4x\\)"
+            },
+            {
+              "explain": "Final answer: y' = 4 \\cot 4x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y' = 4 \\cot 4x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q10a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the exact area of the shaded region bounded by \\( y = \\sin 2x \\) and \\( y = \\sin x \\) from \\( x = 0 \\) to \\( x = \\frac{\\pi}{3} \\).",
+          "figure": {
+            "jsxGraph": {
+              "width": 350,
+              "height": 250,
+              "boundingbox": [
+                -0.2,
+                1.2,
+                1.2,
+                -0.2
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.2, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.15, -0.05], 'x', {anchorX: 'right', anchorY: 'top'});\nboard.create('text', [-0.05, 1.15], 'y', {anchorX: 'right', anchorY: 'top'});\nvar c1 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, 0, Math.PI/3], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(x);}, 0, Math.PI/3], {strokeColor: 'black'});\nboard.create('inequality', [c1], {inverse: true, fillColor: 'lightblue', fillOpacity: 0.5});\nboard.create('text', [Math.PI/3, -0.05], '\\\\(\\\frac{\\pi}{3}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
+            }
+          },
+          "options": [
+            "\\(-0.25\\)",
+            "\\(-0.75\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(1.25\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{1}{4}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\sin 2x  and  y = \\sin x  from  x = 0  to  x = \\frac{\\pi}{3} .\\)",
+              "figure": {
+                "jsxGraph": {
+                  "width": 350,
+                  "height": 250,
+                  "boundingbox": [
+                    -0.2,
+                    1.2,
+                    1.2,
+                    -0.2
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.2, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.15, -0.05], 'x', {anchorX: 'right', anchorY: 'top'});\nboard.create('text', [-0.05, 1.15], 'y', {anchorX: 'right', anchorY: 'top'});\nvar c1 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, 0, Math.PI/3], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(x);}, 0, Math.PI/3], {strokeColor: 'black'});\nboard.create('inequality', [c1], {inverse: true, fillColor: 'lightblue', fillOpacity: 0.5});\nboard.create('text', [Math.PI/3, -0.05], '\\\\(\\\frac{\\pi}{3}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\frac{1}{4}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{1}{4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\frac{1}{4}\\)"
+            }
+          ],
+          "timeLimit": 180
+        },
+        {
+          "id": "y12a-6f-q10b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the exact area of the shaded region bounded by \\( y = \\cos x \\) and \\( y = \\sin 2x \\) from \\( x = \\frac{\\pi}{6} \\) to \\( x = \\frac{\\pi}{2} \\).",
+          "figure": {
+            "jsxGraph": {
+              "width": 350,
+              "height": 250,
+              "boundingbox": [
+                0,
+                1.2,
+                1.8,
+                -0.5
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.8, 0]], {strokeColor: 'black', strokeWidth: 1});\nvar c1 = board.create('functiongraph', [function(x){return Math.cos(x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nboard.create('text', [Math.PI/6, -0.05], '\\\\(\\\frac{\\pi}{6}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.create('text', [Math.PI/2, -0.05], '\\\\(\\\frac{\\pi}{2}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
+            }
+          },
+          "options": [
+            "\\(-0.25\\)",
+            "\\(-0.75\\)",
+            "\\(\\frac{1}{4}\\)",
+            "\\(1.25\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{1}{4}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\cos x  and  y = \\sin 2x  from  x = \\frac{\\pi}{6}  to  x = \\frac{\\pi}{2} .\\)",
+              "figure": {
+                "jsxGraph": {
+                  "width": 350,
+                  "height": 250,
+                  "boundingbox": [
+                    0,
+                    1.2,
+                    1.8,
+                    -0.5
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.8, 0]], {strokeColor: 'black', strokeWidth: 1});\nvar c1 = board.create('functiongraph', [function(x){return Math.cos(x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nboard.create('text', [Math.PI/6, -0.05], '\\\\(\\\frac{\\pi}{6}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.create('text', [Math.PI/2, -0.05], '\\\\(\\\frac{\\pi}{2}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\frac{1}{4}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{1}{4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\frac{1}{4}\\)"
+            }
+          ],
+          "timeLimit": 180
+        },
+        {
+          "id": "y12a-6f-q11a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "a) Write \\( \\cot x \\) in terms of \\( \\sin x \\) and \\( \\cos x \\).",
+          "options": [
+            "\\(-\\frac{\\cos x}{\\sin x}\\)",
+            "\\(\\frac{1}{\\sin x}\\)",
+            "\\(\\frac{\\cos x}{\\sin x}\\)",
+            "\\(\\frac{\\sin x}{\\cos x}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{\\cos x}{\\sin x}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "Given data"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\frac{\\cos x}{\\sin x}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{\\cos x}{\\sin x}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\frac{\\cos x}{\\sin x}\\)"
+            }
+          ],
+          "timeLimit": 180
+        },
+        {
+          "id": "y12a-6f-q11b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "b) Hence find the exact area of the shaded region bounded by \\( y = \\cot x \\), the \\( x \\)-axis, and the vertical lines \\( x = \\frac{\\pi}{6} \\) and \\( x = \\frac{\\pi}{2} \\).",
+          "options": [
+            "\\(-\\ln 2\\)",
+            "\\(\\ln 2\\)",
+            "\\(\\ln 4\\)",
+            "\\(\\log 2\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(\\ln 2\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\cot x , the  x -axis, and the vertical lines  x = \\frac{\\pi}{6}  and  x = \\frac{\\pi}{2} .\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\ln 2\\)"
+            },
+            {
+              "explain": "Final answer: \\ln 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\ln 2\\)"
+            }
+          ],
+          "timeLimit": 180
+        },
+        {
+          "id": "y12a-6f-q11",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "",
+          "figure": {
+            "jsxGraph": {
+              "width": 300,
+              "height": 250,
+              "boundingbox": [
+                -0.5,
+                3,
+                2,
+                -0.5
+              ],
+              "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 3]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [2, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return Math.cos(x)/Math.sin(x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nboard.create('text', [Math.PI/6, -0.1], '\\\\(\\\frac{\\pi}{6}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.create('text', [Math.PI/2, -0.1], '\\\\(\\\frac{\\pi}{2}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
+            }
+          },
+          "parts": [
+            {
+              "id": "y12a-6f-q11a",
+              "type": "short",
+              "stem": "a) Write \\( \\cot x \\) in terms of \\( \\sin x \\) and \\( \\cos x \\).",
+              "answer": "\\frac{\\cos x}{\\sin x}"
+            },
+            {
+              "id": "y12a-6f-q11b",
+              "type": "short",
+              "stem": "b) Hence find the exact area of the shaded region bounded by \\( y = \\cot x \\), the \\( x \\)-axis, and the vertical lines \\( x = \\frac{\\pi}{6} \\) and \\( x = \\frac{\\pi}{2} \\).",
+              "answer": "\\ln 2"
+            }
+          ],
+          "timeLimit": 180
         }
       ]
     },
@@ -6515,6 +7183,238 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "y12a-6f-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the exact gradient of the tangent to \\( y = \\cos 3x \\) at the point on the curve where \\( x = \\frac{\\pi}{4} \\).",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -4,
+                4,
+                4,
+                -4
+              ],
+              "width": 360,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.cos(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = cos x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 260
+            }
+          },
+          "options": [
+            "\\(-\\frac{4}{\\sqrt{2}}\\)",
+            "\\(-\\frac{1}{\\sqrt{2}}\\)",
+            "\\(-\\frac{3}{\\sqrt{2}}\\)",
+            "\\(-\\frac{\\sqrt{2}{3}}\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(-\\frac{3}{\\sqrt{2}}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\cos 3x  at the point on the curve where  x = \\frac{\\pi}{4} .\\)",
+              "figure": {
+                "jsxGraph": {
+                  "width": 360,
+                  "height": 260,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.cos(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = cos x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(-\\frac{3}{\\sqrt{2}}\\)"
+            },
+            {
+              "explain": "Final answer: -\\frac{3}{\\sqrt{2}}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(-\\frac{3}{\\sqrt{2}}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "a) Find the equation of the tangent to \\( y = \\tan x \\) at the point where \\( x = \\frac{\\pi}{4} \\).",
+          "figure": {
+            "jsxGraph": {
+              "boundingbox": [
+                -4,
+                4,
+                4,
+                -4
+              ],
+              "width": 360,
+              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
+              "height": 260
+            }
+          },
+          "options": [
+            "\\(-y = 2x - \\frac{\\pi}{2} + 1\\)",
+            "\\(y = 2x - \\frac{1}{2} + 1\\)",
+            "\\(y = 2x - \\frac{2}{\\pi} + 1\\)",
+            "\\(y = 2x - \\frac{\\pi}{2} + 1\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(y = 2x - \\frac{\\pi}{2} + 1\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\tan x  at the point where  x = \\frac{\\pi}{4} .\\)",
+              "figure": {
+                "jsxGraph": {
+                  "width": 360,
+                  "height": 260,
+                  "boundingbox": [
+                    -4,
+                    4,
+                    4,
+                    -4
+                  ],
+                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+                }
+              }
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y = 2x - \\frac{\\pi}{2} + 1\\)"
+            },
+            {
+              "explain": "Final answer: y = 2x - \\frac{\\pi}{2} + 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y = 2x - \\frac{\\pi}{2} + 1\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "b) Find the equation of the tangent to \\( y = x \\sin x \\) at the point where \\( x = \\frac{\\pi}{2} \\).",
+          "options": [
+            "\\(\\dfrac{12}{x + 2}\\)",
+            "\\(\\dfrac{13}{x + 3}\\)",
+            "\\(y = x\\)",
+            "\\(y = x + 1\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(y = x\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = x \\sin x  at the point where  x = \\frac{\\pi}{2} .\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y = x\\)"
+            },
+            {
+              "explain": "Final answer: y = x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y = x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q4a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the \\( x \\)-coordinates of the stationary points on the curve \\( y = x - 2\\sin x \\), for \\( 0 \\le x \\le 2\\pi \\).<br>(Enter answers separated by commas)",
+          "options": [
+            "\\(-\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\)",
+            "\\(\\frac{1}{3}, \\frac{5\\pi}{3}\\)",
+            "\\(\\frac{3}{\\pi}, \\frac{5\\pi}{3}\\)",
+            "\\(\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = x - 2\\sin x , for  0 \\le x \\le 2\\pi .<br>(Enter answers separated by commas)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{\\pi}{3}, \\frac{5\\pi}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q4b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the \\( x \\)-coordinates of the stationary points on the curve \\( y = \\sqrt{3}\\sin x + \\cos x \\), for \\( 0 \\le x \\le 2\\pi \\).<br>(Enter answers separated by commas)",
+          "options": [
+            "\\(-\\frac{\\pi}{3}, \\frac{4\\pi}{3}\\)",
+            "\\(\\frac{1}{3}, \\frac{4\\pi}{3}\\)",
+            "\\(\\frac{3}{\\pi}, \\frac{4\\pi}{3}\\)",
+            "\\(\\frac{\\pi}{3}, \\frac{4\\pi}{3}\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(\\frac{\\pi}{3}, \\frac{4\\pi}{3}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "\\(y = \\sqrt{3}\\sin x + \\cos x , for  0 \\le x \\le 2\\pi .<br>(Enter answers separated by commas)\\)"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\frac{\\pi}{3}, \\frac{4\\pi}{3}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{\\pi}{3}, \\frac{4\\pi}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\frac{\\pi}{3}, \\frac{4\\pi}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q3",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "",
+          "parts": [
+            {
+              "id": "y12a-6f-q3a",
+              "type": "short",
+              "stem": "a) Find the equation of the tangent to \\( y = \\tan x \\) at the point where \\( x = \\frac{\\pi}{4} \\).",
+              "answer": "y = 2x - \\frac{\\pi}{2} + 1"
+            },
+            {
+              "id": "y12a-6f-q3b",
+              "type": "short",
+              "stem": "b) Find the equation of the tangent to \\( y = x \\sin x \\) at the point where \\( x = \\frac{\\pi}{2} \\).",
+              "answer": "y = x"
+            }
+          ]
         }
       ]
     },
@@ -9916,6 +10816,254 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "y12a-6f-q5a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find:<br>\\( \\int 5\\sin x \\, dx \\)<br>(Omit the constant of integration \\( C \\) in your answer)",
+          "options": [
+            "\\(-5-\\cos x\\)",
+            "\\(-5\\cos x\\)",
+            "\\(-5\\sin x\\)",
+            "\\(5\\cos x\\)"
+          ],
+          "answer": 1,
+          "solution": "The correct answer is \\(-5\\cos x\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "Given data"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(-5\\cos x\\)"
+            },
+            {
+              "explain": "Final answer: -5\\cos x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(-5\\cos x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q5b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find:<br>\\( \\int \\cos 5x \\, dx \\)<br>(Omit the constant of integration \\( C \\) in your answer)",
+          "options": [
+            "\\(-\\frac{1}{5}\\sin 5x\\)",
+            "\\(\\frac{1}{5}-\\sin 5x\\)",
+            "\\(\\frac{1}{5}\\sin 5x\\)",
+            "\\(\\frac{5}{1}\\sin 5x\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{1}{5}\\sin 5x\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "Given data"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\frac{1}{5}\\sin 5x\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{1}{5}\\sin 5x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\frac{1}{5}\\sin 5x\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q5c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find:<br>\\( \\int \\sec^2 \\frac{x}{5} \\, dx \\)<br>(Omit the constant of integration \\( C \\) in your answer)",
+          "options": [
+            "\\(-5\\tan \\frac{x}{5}\\)",
+            "\\(5\\tan \\frac{1}{5}\\)",
+            "\\(5\\tan \\frac{5}{x}\\)",
+            "\\(5\\tan \\frac{x}{5}\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(5\\tan \\frac{x}{5}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "Given data"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(5\\tan \\frac{x}{5}\\)"
+            },
+            {
+              "explain": "Final answer: 5\\tan \\frac{x}{5}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(5\\tan \\frac{x}{5}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q6a",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Find the exact value of:<br>\\( \\int_{0}^{\\frac{\\pi}{4}} \\sec^2 x \\, dx \\)",
+          "answer": "1",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "Given data"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(1\\)"
+            },
+            {
+              "explain": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(1\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y12a-6f-q6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the exact value of:<br>\\( \\int_{0}^{\\frac{\\pi}{6}} \\cos 3x \\, dx \\)",
+          "options": [
+            "\\(-0.3333333333333333\\)",
+            "\\(-0.6666666666666667\\)",
+            "\\(\\frac{1}{3}\\)",
+            "\\(1.3333333333333333\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(\\frac{1}{3}\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "Given data"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(\\frac{1}{3}\\)"
+            },
+            {
+              "explain": "Final answer: \\frac{1}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(\\frac{1}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y12a-6f-q6c",
+          "type": "review",
+          "difficulty": "medium",
+          "stem": "Find the exact value of:<br>\\( \\int_{0}^{\\frac{1}{2}} \\pi \\cos(\\pi x) \\, dx \\)",
+          "answer": "1",
+          "solution": "1",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "Given data"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(1\\)"
+            },
+            {
+              "explain": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(1\\)"
+            }
+          ],
+          "manual": true
+        },
+        {
+          "id": "y12a-6f-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the value of \\( \\int_{0}^{\\frac{\\pi}{3}} \\cos 2x \\, dx \\), correct to three decimal places.",
+          "options": [
+            "\\(-0.433\\)",
+            "\\(-0.567\\)",
+            "\\(0.433\\)",
+            "\\(1.433\\)"
+          ],
+          "answer": 2,
+          "solution": "The correct answer is \\(0.433\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "Given data"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(0.433\\)"
+            },
+            {
+              "explain": "Final answer: 0.433. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(0.433\\)"
+            }
+          ],
+          "timeLimit": 180
+        },
+        {
+          "id": "y12a-6f-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A curve has gradient function \\( y' = \\sin \\frac{1}{2}x \\) and passes through the point \\( (\\pi, 2) \\). Find its equation.",
+          "options": [
+            "\\(-y = -2\\cos \\frac{x}{2} + 2\\)",
+            "\\(y = -2\\cos \\frac{1}{2} + 2\\)",
+            "\\(y = -2\\cos \\frac{2}{x} + 2\\)",
+            "\\(y = -2\\cos \\frac{x}{2} + 2\\)"
+          ],
+          "answer": 3,
+          "solution": "The correct answer is \\(y = -2\\cos \\frac{x}{2} + 2\\).",
+          "steps": [
+            {
+              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "work": "Given data"
+            },
+            {
+              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+              "work": "Apply the appropriate standard form"
+            },
+            {
+              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+              "work": "\\(y = -2\\cos \\frac{x}{2} + 2\\)"
+            },
+            {
+              "explain": "Final answer: y = -2\\cos \\frac{x}{2} + 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+              "work": "\\(y = -2\\cos \\frac{x}{2} + 2\\)"
+            }
+          ],
+          "timeLimit": 180
         }
       ]
     },
@@ -12131,923 +13279,6 @@
           "dna": {
             "dnaId": "CALC-AREA-01"
           }
-        }
-      ]
-    },
-    {
-      "topicId": "y12a-6F",
-      "code": "6F",
-      "title": "Chapter review exercise",
-      "questions": [
-        {
-          "id": "y12a-6f-q1a",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = 4 \\sin x \\)",
-          "options": [
-            "\\(y' = 4 -\\cos x\\)",
-            "\\(y' = 4 \\cos x\\)",
-            "\\(y' = 4 \\cos x + 1\\)",
-            "\\(y' = 4 \\sin x\\)"
-          ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y' = 4 \\cos x\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = 4 \\sin x\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y' = 4 \\cos x\\)"
-            },
-            {
-              "explain": "Final answer: y' = 4 \\cos x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y' = 4 \\cos x\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q1b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\sin 4x \\)",
-          "figure": {
-            "jsxGraph": {
-              "boundingbox": [
-                -4,
-                4,
-                4,
-                -4
-              ],
-              "width": 360,
-              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.sin(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = sin x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
-              "height": 260
-            }
-          },
-          "options": [
-            "\\(y' = 4 -\\cos 4x\\)",
-            "\\(y' = 4 \\cos 4x\\)",
-            "\\(y' = 4 \\cos 4x + 1\\)",
-            "\\(y' = 4 \\sin 4x\\)"
-          ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y' = 4 \\cos 4x\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\sin 4x\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.sin(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = sin x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y' = 4 \\cos 4x\\)"
-            },
-            {
-              "explain": "Final answer: y' = 4 \\cos 4x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y' = 4 \\cos 4x\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q1c",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = 4 \\cos 4x \\)",
-          "options": [
-            "\\(y' = +16 \\sin 4x\\)",
-            "\\(y' = -16 -\\sin 4x\\)",
-            "\\(y' = -16 \\sin 4x\\)",
-            "\\(y' = -16 \\sin 4x + 1\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(y' = -16 \\sin 4x\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = 4 \\cos 4x\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y' = -16 \\sin 4x\\)"
-            },
-            {
-              "explain": "Final answer: y' = -16 \\sin 4x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y' = -16 \\sin 4x\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q1d",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\tan(4x - 3) \\)",
-          "figure": {
-            "jsxGraph": {
-              "boundingbox": [
-                -4,
-                4,
-                4,
-                -4
-              ],
-              "width": 360,
-              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
-              "height": 260
-            }
-          },
-          "options": [
-            "\\(y' = 4 \\sec^2 (4x + 3)\\)",
-            "\\(y' = 4 \\sec^2 (4x - 3)\\)",
-            "\\(y' = 4 \\sec^2 (4x - 3) + 1\\)",
-            "\\(y' = 4 \\sec^4 (4x - 4)\\)"
-          ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y' = 4 \\sec^2 (4x - 3)\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\tan(4x - 3)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y' = 4 \\sec^2 (4x - 3)\\)"
-            },
-            {
-              "explain": "Final answer: y' = 4 \\sec^2 (4x - 3). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y' = 4 \\sec^2 (4x - 3)\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q1e",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = x \\sin 4x \\)",
-          "options": [
-            "\\(y' = -\\sin 4x + 4x -\\cos 4x\\)",
-            "\\(y' = \\sin 4x + 4x \\cos 4x\\)",
-            "\\(y' = \\sin 4x + 4x \\cos 4x + 1\\)",
-            "\\(y' = \\sin 4x + 4x \\sin 4x\\)"
-          ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y' = \\sin 4x + 4x \\cos 4x\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = x \\sin 4x\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y' = \\sin 4x + 4x \\cos 4x\\)"
-            },
-            {
-              "explain": "Final answer: y' = \\sin 4x + 4x \\cos 4x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y' = \\sin 4x + 4x \\cos 4x\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q1f",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\frac{\\cos 4x}{x} \\)",
-          "options": [
-            "\\(-y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}\\)",
-            "\\(y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}\\)",
-            "\\(y' = \\frac{4x \\sin 4x - \\cos 4x}{x^2}\\)",
-            "\\(y' = \\frac{x^2}{-4x \\sin 4x - \\cos 4x}\\)"
-          ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\frac{\\cos 4x}{x}\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}\\)"
-            },
-            {
-              "explain": "Final answer: y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y' = \\frac{-4x \\sin 4x - \\cos 4x}{x^2}\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q1g",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\sin^4 x \\)",
-          "figure": {
-            "jsxGraph": {
-              "boundingbox": [
-                -4,
-                4,
-                4,
-                -4
-              ],
-              "width": 360,
-              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.sin(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = sin x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
-              "height": 260
-            }
-          },
-          "options": [
-            "\\(y' = 4 -\\sin^3 x -\\cos x\\)",
-            "\\(y' = 4 \\sin^3 x \\cos x\\)",
-            "\\(y' = 4 \\sin^3 x \\sin x\\)",
-            "\\(y' = 4 \\sin^4 x \\cos x\\)"
-          ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y' = 4 \\sin^3 x \\cos x\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\sin^4 x\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.sin(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = sin x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y' = 4 \\sin^3 x \\cos x\\)"
-            },
-            {
-              "explain": "Final answer: y' = 4 \\sin^3 x \\cos x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y' = 4 \\sin^3 x \\cos x\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q1h",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\tan(x^4) \\)",
-          "figure": {
-            "jsxGraph": {
-              "boundingbox": [
-                -4,
-                4,
-                4,
-                -4
-              ],
-              "width": 360,
-              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
-              "height": 260
-            }
-          },
-          "options": [
-            "\\(\\dfrac{13}{x + 3}\\)",
-            "\\(y' = 4x^3 \\sec^2(x^4)\\)",
-            "\\(y' = 4x^3 \\sec^2(x^4) + 1\\)",
-            "\\(y' = 4x^4 \\sec^4(x^4)\\)"
-          ],
-          "answer": 1,
-          "solution": "The correct answer is \\(y' = 4x^3 \\sec^2(x^4)\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\tan(x^4)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y' = 4x^3 \\sec^2(x^4)\\)"
-            },
-            {
-              "explain": "Final answer: y' = 4x^3 \\sec^2(x^4). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y' = 4x^3 \\sec^2(x^4)\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q1i",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = e^{\\cos 4x} \\)",
-          "options": [
-            "\\(y' = +4 \\sin 4x \\cdot e^{\\cos 4x}\\)",
-            "\\(y' = -4 -\\sin 4x \\cdot e^{-\\cos 4x}\\)",
-            "\\(y' = -4 \\sin 4x \\cdot e^{\\cos 4x}\\)",
-            "\\(y' = -4 \\sin 4x \\cdot e^{\\sin 4x}\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(y' = -4 \\sin 4x \\cdot e^{\\cos 4x}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = e^{\\cos 4x}\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y' = -4 \\sin 4x \\cdot e^{\\cos 4x}\\)"
-            },
-            {
-              "explain": "Final answer: y' = -4 \\sin 4x \\cdot e^{\\cos 4x}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y' = -4 \\sin 4x \\cdot e^{\\cos 4x}\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q1j",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Differentiate with respect to \\( x \\):<br>\\( y = \\log_e(\\sin 4x) \\)",
-          "figure": {
-            "jsxGraph": {
-              "boundingbox": [
-                0.1,
-                4,
-                5,
-                -2
-              ],
-              "width": 360,
-              "script": "board.suspendUpdate(); board.create('arrow', [[0.1,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.25, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.log(x); }, 0.15, 4.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.5, 2.2, 'y = ln x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
-              "height": 260
-            }
-          },
-          "options": [
-            "\\(\\dfrac{12}{x + 2}\\)",
-            "\\(\\dfrac{13}{x + 3}\\)",
-            "\\(y' = 4 \\cot 4x\\)",
-            "\\(y' = 4 \\cot 4x + 1\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(y' = 4 \\cot 4x\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\log_e(\\sin 4x)\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    0.1,
-                    4,
-                    5,
-                    -2
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[0.1,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.25, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.log(x); }, 0.15, 4.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.5, 2.2, 'y = ln x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y' = 4 \\cot 4x\\)"
-            },
-            {
-              "explain": "Final answer: y' = 4 \\cot 4x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y' = 4 \\cot 4x\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q2",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Find the exact gradient of the tangent to \\( y = \\cos 3x \\) at the point on the curve where \\( x = \\frac{\\pi}{4} \\).",
-          "figure": {
-            "jsxGraph": {
-              "boundingbox": [
-                -4,
-                4,
-                4,
-                -4
-              ],
-              "width": 360,
-              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.cos(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = cos x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
-              "height": 260
-            }
-          },
-          "options": [
-            "\\(-\\frac{4}{\\sqrt{2}}\\)",
-            "\\(-\\frac{1}{\\sqrt{2}}\\)",
-            "\\(-\\frac{3}{\\sqrt{2}}\\)",
-            "\\(-\\frac{\\sqrt{2}{3}}\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(-\\frac{3}{\\sqrt{2}}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\cos 3x  at the point on the curve where  x = \\frac{\\pi}{4} .\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.cos(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = cos x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(-\\frac{3}{\\sqrt{2}}\\)"
-            },
-            {
-              "explain": "Final answer: -\\frac{3}{\\sqrt{2}}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(-\\frac{3}{\\sqrt{2}}\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q3a",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "a) Find the equation of the tangent to \\( y = \\tan x \\) at the point where \\( x = \\frac{\\pi}{4} \\).",
-          "figure": {
-            "jsxGraph": {
-              "boundingbox": [
-                -4,
-                4,
-                4,
-                -4
-              ],
-              "width": 360,
-              "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();",
-              "height": 260
-            }
-          },
-          "options": [
-            "\\(-y = 2x - \\frac{\\pi}{2} + 1\\)",
-            "\\(y = 2x - \\frac{1}{2} + 1\\)",
-            "\\(y = 2x - \\frac{2}{\\pi} + 1\\)",
-            "\\(y = 2x - \\frac{\\pi}{2} + 1\\)"
-          ],
-          "answer": 3,
-          "solution": "The correct answer is \\(y = 2x - \\frac{\\pi}{2} + 1\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\tan x  at the point where  x = \\frac{\\pi}{4} .\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 260,
-                  "boundingbox": [
-                    -4,
-                    4,
-                    4,
-                    -4
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.tan(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = tan x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = 2x - \\frac{\\pi}{2} + 1\\)"
-            },
-            {
-              "explain": "Final answer: y = 2x - \\frac{\\pi}{2} + 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = 2x - \\frac{\\pi}{2} + 1\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q3b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "b) Find the equation of the tangent to \\( y = x \\sin x \\) at the point where \\( x = \\frac{\\pi}{2} \\).",
-          "options": [
-            "\\(\\dfrac{12}{x + 2}\\)",
-            "\\(\\dfrac{13}{x + 3}\\)",
-            "\\(y = x\\)",
-            "\\(y = x + 1\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(y = x\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = x \\sin x  at the point where  x = \\frac{\\pi}{2} .\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = x\\)"
-            },
-            {
-              "explain": "Final answer: y = x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = x\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q4a",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Find the \\( x \\)-coordinates of the stationary points on the curve \\( y = x - 2\\sin x \\), for \\( 0 \\le x \\le 2\\pi \\).<br>(Enter answers separated by commas)",
-          "options": [
-            "\\(-\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\)",
-            "\\(\\frac{1}{3}, \\frac{5\\pi}{3}\\)",
-            "\\(\\frac{3}{\\pi}, \\frac{5\\pi}{3}\\)",
-            "\\(\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\)"
-          ],
-          "answer": 3,
-          "solution": "The correct answer is \\(\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = x - 2\\sin x , for  0 \\le x \\le 2\\pi .<br>(Enter answers separated by commas)\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\)"
-            },
-            {
-              "explain": "Final answer: \\frac{\\pi}{3}, \\frac{5\\pi}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(\\frac{\\pi}{3}, \\frac{5\\pi}{3}\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q4b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Find the \\( x \\)-coordinates of the stationary points on the curve \\( y = \\sqrt{3}\\sin x + \\cos x \\), for \\( 0 \\le x \\le 2\\pi \\).<br>(Enter answers separated by commas)",
-          "options": [
-            "\\(-\\frac{\\pi}{3}, \\frac{4\\pi}{3}\\)",
-            "\\(\\frac{1}{3}, \\frac{4\\pi}{3}\\)",
-            "\\(\\frac{3}{\\pi}, \\frac{4\\pi}{3}\\)",
-            "\\(\\frac{\\pi}{3}, \\frac{4\\pi}{3}\\)"
-          ],
-          "answer": 3,
-          "solution": "The correct answer is \\(\\frac{\\pi}{3}, \\frac{4\\pi}{3}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\sqrt{3}\\sin x + \\cos x , for  0 \\le x \\le 2\\pi .<br>(Enter answers separated by commas)\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\frac{\\pi}{3}, \\frac{4\\pi}{3}\\)"
-            },
-            {
-              "explain": "Final answer: \\frac{\\pi}{3}, \\frac{4\\pi}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(\\frac{\\pi}{3}, \\frac{4\\pi}{3}\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q5a",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Find:<br>\\( \\int 5\\sin x \\, dx \\)<br>(Omit the constant of integration \\( C \\) in your answer)",
-          "options": [
-            "\\(-5-\\cos x\\)",
-            "\\(-5\\cos x\\)",
-            "\\(-5\\sin x\\)",
-            "\\(5\\cos x\\)"
-          ],
-          "answer": 1,
-          "solution": "The correct answer is \\(-5\\cos x\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(-5\\cos x\\)"
-            },
-            {
-              "explain": "Final answer: -5\\cos x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(-5\\cos x\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q5b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Find:<br>\\( \\int \\cos 5x \\, dx \\)<br>(Omit the constant of integration \\( C \\) in your answer)",
-          "options": [
-            "\\(-\\frac{1}{5}\\sin 5x\\)",
-            "\\(\\frac{1}{5}-\\sin 5x\\)",
-            "\\(\\frac{1}{5}\\sin 5x\\)",
-            "\\(\\frac{5}{1}\\sin 5x\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(\\frac{1}{5}\\sin 5x\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\frac{1}{5}\\sin 5x\\)"
-            },
-            {
-              "explain": "Final answer: \\frac{1}{5}\\sin 5x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(\\frac{1}{5}\\sin 5x\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q5c",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Find:<br>\\( \\int \\sec^2 \\frac{x}{5} \\, dx \\)<br>(Omit the constant of integration \\( C \\) in your answer)",
-          "options": [
-            "\\(-5\\tan \\frac{x}{5}\\)",
-            "\\(5\\tan \\frac{1}{5}\\)",
-            "\\(5\\tan \\frac{5}{x}\\)",
-            "\\(5\\tan \\frac{x}{5}\\)"
-          ],
-          "answer": 3,
-          "solution": "The correct answer is \\(5\\tan \\frac{x}{5}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(5\\tan \\frac{x}{5}\\)"
-            },
-            {
-              "explain": "Final answer: 5\\tan \\frac{x}{5}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(5\\tan \\frac{x}{5}\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q6a",
-          "type": "review",
-          "difficulty": "medium",
-          "stem": "Find the exact value of:<br>\\( \\int_{0}^{\\frac{\\pi}{4}} \\sec^2 x \\, dx \\)",
-          "answer": "1",
-          "solution": "1",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(1\\)"
-            },
-            {
-              "explain": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(1\\)"
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y12a-6f-q6b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Find the exact value of:<br>\\( \\int_{0}^{\\frac{\\pi}{6}} \\cos 3x \\, dx \\)",
-          "options": [
-            "\\(-0.3333333333333333\\)",
-            "\\(-0.6666666666666667\\)",
-            "\\(\\frac{1}{3}\\)",
-            "\\(1.3333333333333333\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(\\frac{1}{3}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\frac{1}{3}\\)"
-            },
-            {
-              "explain": "Final answer: \\frac{1}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(\\frac{1}{3}\\)"
-            }
-          ]
-        },
-        {
-          "id": "y12a-6f-q6c",
-          "type": "review",
-          "difficulty": "medium",
-          "stem": "Find the exact value of:<br>\\( \\int_{0}^{\\frac{1}{2}} \\pi \\cos(\\pi x) \\, dx \\)",
-          "answer": "1",
-          "solution": "1",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(1\\)"
-            },
-            {
-              "explain": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(1\\)"
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y12a-6f-q7",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Find the value of \\( \\int_{0}^{\\frac{\\pi}{3}} \\cos 2x \\, dx \\), correct to three decimal places.",
-          "options": [
-            "\\(-0.433\\)",
-            "\\(-0.567\\)",
-            "\\(0.433\\)",
-            "\\(1.433\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(0.433\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(0.433\\)"
-            },
-            {
-              "explain": "Final answer: 0.433. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(0.433\\)"
-            }
-          ],
-          "timeLimit": 180
-        },
-        {
-          "id": "y12a-6f-q8",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "A curve has gradient function \\( y' = \\sin \\frac{1}{2}x \\) and passes through the point \\( (\\pi, 2) \\). Find its equation.",
-          "options": [
-            "\\(-y = -2\\cos \\frac{x}{2} + 2\\)",
-            "\\(y = -2\\cos \\frac{1}{2} + 2\\)",
-            "\\(y = -2\\cos \\frac{2}{x} + 2\\)",
-            "\\(y = -2\\cos \\frac{x}{2} + 2\\)"
-          ],
-          "answer": 3,
-          "solution": "The correct answer is \\(y = -2\\cos \\frac{x}{2} + 2\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(y = -2\\cos \\frac{x}{2} + 2\\)"
-            },
-            {
-              "explain": "Final answer: y = -2\\cos \\frac{x}{2} + 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(y = -2\\cos \\frac{x}{2} + 2\\)"
-            }
-          ],
-          "timeLimit": 180
         },
         {
           "id": "y12a-6f-q9a",
@@ -13107,210 +13338,6 @@
           "timeLimit": 180
         },
         {
-          "id": "y12a-6f-q10a",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Find the exact area of the shaded region bounded by \\( y = \\sin 2x \\) and \\( y = \\sin x \\) from \\( x = 0 \\) to \\( x = \\frac{\\pi}{3} \\).",
-          "figure": {
-            "jsxGraph": {
-              "width": 350,
-              "height": 250,
-              "boundingbox": [
-                -0.2,
-                1.2,
-                1.2,
-                -0.2
-              ],
-              "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.2, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.15, -0.05], 'x', {anchorX: 'right', anchorY: 'top'});\nboard.create('text', [-0.05, 1.15], 'y', {anchorX: 'right', anchorY: 'top'});\nvar c1 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, 0, Math.PI/3], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(x);}, 0, Math.PI/3], {strokeColor: 'black'});\nboard.create('inequality', [c1], {inverse: true, fillColor: 'lightblue', fillOpacity: 0.5});\nboard.create('text', [Math.PI/3, -0.05], '\\\\(\\\frac{\\pi}{3}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
-            }
-          },
-          "options": [
-            "\\(-0.25\\)",
-            "\\(-0.75\\)",
-            "\\(\\frac{1}{4}\\)",
-            "\\(1.25\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(\\frac{1}{4}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\sin 2x  and  y = \\sin x  from  x = 0  to  x = \\frac{\\pi}{3} .\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 350,
-                  "height": 250,
-                  "boundingbox": [
-                    -0.2,
-                    1.2,
-                    1.2,
-                    -0.2
-                  ],
-                  "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.2, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.15, -0.05], 'x', {anchorX: 'right', anchorY: 'top'});\nboard.create('text', [-0.05, 1.15], 'y', {anchorX: 'right', anchorY: 'top'});\nvar c1 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, 0, Math.PI/3], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(x);}, 0, Math.PI/3], {strokeColor: 'black'});\nboard.create('inequality', [c1], {inverse: true, fillColor: 'lightblue', fillOpacity: 0.5});\nboard.create('text', [Math.PI/3, -0.05], '\\\\(\\\frac{\\pi}{3}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
-                }
-              }
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\frac{1}{4}\\)"
-            },
-            {
-              "explain": "Final answer: \\frac{1}{4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(\\frac{1}{4}\\)"
-            }
-          ],
-          "timeLimit": 180
-        },
-        {
-          "id": "y12a-6f-q10b",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Find the exact area of the shaded region bounded by \\( y = \\cos x \\) and \\( y = \\sin 2x \\) from \\( x = \\frac{\\pi}{6} \\) to \\( x = \\frac{\\pi}{2} \\).",
-          "figure": {
-            "jsxGraph": {
-              "width": 350,
-              "height": 250,
-              "boundingbox": [
-                0,
-                1.2,
-                1.8,
-                -0.5
-              ],
-              "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.8, 0]], {strokeColor: 'black', strokeWidth: 1});\nvar c1 = board.create('functiongraph', [function(x){return Math.cos(x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nboard.create('text', [Math.PI/6, -0.05], '\\\\(\\\frac{\\pi}{6}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.create('text', [Math.PI/2, -0.05], '\\\\(\\\frac{\\pi}{2}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
-            }
-          },
-          "options": [
-            "\\(-0.25\\)",
-            "\\(-0.75\\)",
-            "\\(\\frac{1}{4}\\)",
-            "\\(1.25\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(\\frac{1}{4}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\cos x  and  y = \\sin 2x  from  x = \\frac{\\pi}{6}  to  x = \\frac{\\pi}{2} .\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 350,
-                  "height": 250,
-                  "boundingbox": [
-                    0,
-                    1.2,
-                    1.8,
-                    -0.5
-                  ],
-                  "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 1.2]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [1.8, 0]], {strokeColor: 'black', strokeWidth: 1});\nvar c1 = board.create('functiongraph', [function(x){return Math.cos(x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nvar c2 = board.create('functiongraph', [function(x){return Math.sin(2*x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nboard.create('text', [Math.PI/6, -0.05], '\\\\(\\\frac{\\pi}{6}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.create('text', [Math.PI/2, -0.05], '\\\\(\\\frac{\\pi}{2}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
-                }
-              }
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\frac{1}{4}\\)"
-            },
-            {
-              "explain": "Final answer: \\frac{1}{4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(\\frac{1}{4}\\)"
-            }
-          ],
-          "timeLimit": 180
-        },
-        {
-          "id": "y12a-6f-q11a",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "a) Write \\( \\cot x \\) in terms of \\( \\sin x \\) and \\( \\cos x \\).",
-          "options": [
-            "\\(-\\frac{\\cos x}{\\sin x}\\)",
-            "\\(\\frac{1}{\\sin x}\\)",
-            "\\(\\frac{\\cos x}{\\sin x}\\)",
-            "\\(\\frac{\\sin x}{\\cos x}\\)"
-          ],
-          "answer": 2,
-          "solution": "The correct answer is \\(\\frac{\\cos x}{\\sin x}\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\frac{\\cos x}{\\sin x}\\)"
-            },
-            {
-              "explain": "Final answer: \\frac{\\cos x}{\\sin x}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(\\frac{\\cos x}{\\sin x}\\)"
-            }
-          ],
-          "timeLimit": 180
-        },
-        {
-          "id": "y12a-6f-q11b",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "b) Hence find the exact area of the shaded region bounded by \\( y = \\cot x \\), the \\( x \\)-axis, and the vertical lines \\( x = \\frac{\\pi}{6} \\) and \\( x = \\frac{\\pi}{2} \\).",
-          "options": [
-            "\\(-\\ln 2\\)",
-            "\\(\\ln 2\\)",
-            "\\(\\ln 4\\)",
-            "\\(\\log 2\\)"
-          ],
-          "answer": 1,
-          "solution": "The correct answer is \\(\\ln 2\\).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Chapter review exercise: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = \\cot x , the  x -axis, and the vertical lines  x = \\frac{\\pi}{6}  and  x = \\frac{\\pi}{2} .\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(\\ln 2\\)"
-            },
-            {
-              "explain": "Final answer: \\ln 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(\\ln 2\\)"
-            }
-          ],
-          "timeLimit": 180
-        },
-        {
-          "id": "y12a-6f-q3",
-          "type": "multipart",
-          "difficulty": "medium",
-          "stem": "",
-          "parts": [
-            {
-              "id": "y12a-6f-q3a",
-              "type": "short",
-              "stem": "a) Find the equation of the tangent to \\( y = \\tan x \\) at the point where \\( x = \\frac{\\pi}{4} \\).",
-              "answer": "y = 2x - \\frac{\\pi}{2} + 1"
-            },
-            {
-              "id": "y12a-6f-q3b",
-              "type": "short",
-              "stem": "b) Find the equation of the tangent to \\( y = x \\sin x \\) at the point where \\( x = \\frac{\\pi}{2} \\).",
-              "answer": "y = x"
-            }
-          ]
-        },
-        {
           "id": "y12a-6f-q9",
           "type": "multipart",
           "difficulty": "hard",
@@ -13327,40 +13354,6 @@
               "type": "short",
               "stem": "b) Calculate the exact value of the shaded area in part (a).",
               "answer": "3"
-            }
-          ],
-          "timeLimit": 180
-        },
-        {
-          "id": "y12a-6f-q11",
-          "type": "multipart",
-          "difficulty": "hard",
-          "stem": "",
-          "figure": {
-            "jsxGraph": {
-              "width": 300,
-              "height": 250,
-              "boundingbox": [
-                -0.5,
-                3,
-                2,
-                -0.5
-              ],
-              "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 3]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [2, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('functiongraph', [function(x){return Math.cos(x)/Math.sin(x);}, Math.PI/6, Math.PI/2], {strokeColor: 'black'});\nboard.create('text', [Math.PI/6, -0.1], '\\\\(\\\frac{\\pi}{6}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.create('text', [Math.PI/2, -0.1], '\\\\(\\\frac{\\pi}{2}\\\\)', {anchorX: 'middle', anchorY: 'top'});\nboard.unsuspendUpdate();"
-            }
-          },
-          "parts": [
-            {
-              "id": "y12a-6f-q11a",
-              "type": "short",
-              "stem": "a) Write \\( \\cot x \\) in terms of \\( \\sin x \\) and \\( \\cos x \\).",
-              "answer": "\\frac{\\cos x}{\\sin x}"
-            },
-            {
-              "id": "y12a-6f-q11b",
-              "type": "short",
-              "stem": "b) Hence find the exact area of the shaded region bounded by \\( y = \\cot x \\), the \\( x \\)-axis, and the vertical lines \\( x = \\frac{\\pi}{6} \\) and \\( x = \\frac{\\pi}{2} \\).",
-              "answer": "\\ln 2"
             }
           ],
           "timeLimit": 180

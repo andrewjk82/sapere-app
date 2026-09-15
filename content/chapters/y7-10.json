@@ -2158,6 +2158,37 @@
           ]
         }
       ]
+    },
+    {
+      "topicId": "y7-10f",
+      "code": "F",
+      "title": "Indices and order of operations",
+      "questions": [
+        {
+          "id": "y7-t3-2018-p1-q2",
+          "type": "mc",
+          "stem": "Evaluate \\( -2 \\times 7 + 15 \\div (-3) \\).",
+          "options": [
+            "-19",
+            "19",
+            "-9",
+            "9"
+          ],
+          "answer": 0,
+          "hint": "Remember order of operations (BEDMAS). Multiply and divide first.",
+          "steps": [
+            {
+              "explain": "\\( -2 \\times 7 + 15 \\div (-3) \\)"
+            },
+            {
+              "explain": "\\( = -14 + (-5) \\)"
+            },
+            {
+              "explain": "\\( = -19 \\)"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

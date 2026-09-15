@@ -888,6 +888,120 @@
               "work": "\\(2\\)"
             }
           ]
+        },
+        {
+          "id": "y7-t3-2018-p2-q2-mc",
+          "type": "mc",
+          "stem": "Which of the following does not equal \\(180^\\circ\\)?",
+          "options": [
+            "Angle sum of a square",
+            "Angle sum of a triangle",
+            "Supplementary angles",
+            "Co-interior angles on parallel lines"
+          ],
+          "answer": 0,
+          "hint": "What is the angle sum of a 4-sided shape?",
+          "steps": [
+            {
+              "explain": "Angle sum of a triangle = \\(180^\\circ\\)"
+            },
+            {
+              "explain": "Supplementary angles add up to \\(180^\\circ\\)"
+            },
+            {
+              "explain": "Co-interior angles on parallel lines add up to \\(180^\\circ\\)"
+            },
+            {
+              "explain": "Angle sum of a square = \\(360^\\circ\\)"
+            },
+            {
+              "explain": "Therefore, 'Angle sum of a square' does not equal \\(180^\\circ\\)."
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p2-q4i",
+          "type": "mc",
+          "stem": "Find the value of the pronumeral \\(n\\).<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"200\" height=\"120\" viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"20,100 180,100 130,20\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"50\" y=\"95\" font-family=\"sans-serif\" font-size=\"12\">80°</text>\n  <text x=\"150\" y=\"95\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\">n°</text>\n  <text x=\"120\" y=\"45\" font-family=\"sans-serif\" font-size=\"12\">60°</text>\n</svg></div>",
+          "options": [
+            "40",
+            "60",
+            "80",
+            "140"
+          ],
+          "answer": 0,
+          "hint": "The angle sum of a triangle is \\(180^\\circ\\).",
+          "steps": [
+            {
+              "explain": "Angle sum of a triangle = \\(180^\\circ\\)"
+            },
+            {
+              "explain": "\\( 80 + 60 + n = 180 \\)"
+            },
+            {
+              "explain": "\\( 140 + n = 180 \\)"
+            },
+            {
+              "explain": "\\( n = 40 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p2-q4iii",
+          "type": "mc",
+          "stem": "Find the value of the pronumeral \\(x\\).<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"200\" height=\"140\" viewBox=\"0 0 200 140\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"100,20 40,120 160,120\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <!-- tick marks for isosceles -->\n  <line x1=\"65\" y1=\"70\" x2=\"75\" y2=\"70\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"125\" y1=\"70\" x2=\"135\" y2=\"70\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"100\" y=\"55\" font-family=\"sans-serif\" font-size=\"12\" text-anchor=\"middle\">40°</text>\n  <text x=\"65\" y=\"110\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\" text-anchor=\"middle\">x°</text>\n  <text x=\"135\" y=\"110\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\" text-anchor=\"middle\">x°</text>\n</svg></div>",
+          "options": [
+            "70",
+            "140",
+            "40",
+            "50"
+          ],
+          "answer": 0,
+          "hint": "The base angles of an isosceles triangle are equal.",
+          "steps": [
+            {
+              "explain": "Angle sum of a triangle = \\(180^\\circ\\)"
+            },
+            {
+              "explain": "\\( x + x + 40 = 180 \\)"
+            },
+            {
+              "explain": "\\( 2x = 140 \\)"
+            },
+            {
+              "explain": "\\( x = 70 \\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p2-q4iv",
+          "type": "mc",
+          "stem": "Find the value of the pronumeral \\(x\\).<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"200\" height=\"120\" viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <!-- Triangle with extended base line -->\n  <polygon points=\"60,100 160,100 140,20\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <line x1=\"20\" y1=\"100\" x2=\"60\" y2=\"100\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"40\" y=\"90\" font-family=\"sans-serif\" font-size=\"12\">140°</text>\n  <text x=\"132\" y=\"95\" font-family=\"sans-serif\" font-size=\"12\">80°</text>\n  <text x=\"130\" y=\"45\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\">x°</text>\n</svg></div>",
+          "options": [
+            "60",
+            "40",
+            "80",
+            "100"
+          ],
+          "answer": 0,
+          "hint": "The exterior angle of a triangle equals the sum of the two opposite interior angles.",
+          "steps": [
+            {
+              "explain": "Exterior angle theorem: \\( x + 80 = 140 \\)"
+            },
+            {
+              "explain": "\\( x = 140 - 80 \\)"
+            },
+            {
+              "explain": "\\( x = 60 \\)"
+            },
+            {
+              "explain": "Alternatively, interior angle adjacent to 140 is \\( 180 - 140 = 40^\\circ \\)."
+            },
+            {
+              "explain": "Then \\( x + 40 + 80 = 180 \\implies x + 120 = 180 \\implies x = 60 \\)."
+            }
+          ]
         }
       ]
     },
@@ -987,6 +1101,27 @@
             },
             {
               "explain": "\\(100,000 \\div 1,000,000 = 0.1 \\text{ m}^3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y7-t3-2018-p2-q1-mc",
+          "type": "mc",
+          "stem": "Which of the following is a property of an equilateral triangle?",
+          "options": [
+            "Three equal angles",
+            "Only two equal sides",
+            "Only two equal angles",
+            "One obtuse angle"
+          ],
+          "answer": 0,
+          "hint": "Equilateral means all sides and all angles are equal.",
+          "steps": [
+            {
+              "explain": "An equilateral triangle has 3 equal sides and 3 equal angles (each 60 degrees)."
+            },
+            {
+              "explain": "Therefore, 'Three equal angles' is the correct property."
             }
           ]
         }
@@ -1366,114 +1501,34 @@
               "explain": "Total Area = \\(4y^2 + 2y^2 = 6y^2\\)."
             }
           ]
-        }
-      ]
-    },
-    {
-      "topicId": "y7-12f",
-      "code": "",
-      "title": "",
-      "questions": [
-        {
-          "id": "y7-t3-2018-p2-area-q4a",
-          "type": "mc",
-          "stem": "Find the area of the following composite shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"250\" height=\"180\" viewBox=\"0 0 250 180\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"50,20 150,20 150,80 180,80 180,140 50,140\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"15\" y=\"80\" font-family=\"sans-serif\" font-size=\"12\">9 cm</text>\n  <text x=\"100\" y=\"15\" font-family=\"sans-serif\" font-size=\"12\">x</text>\n  <text x=\"115\" y=\"155\" font-family=\"sans-serif\" font-size=\"12\">12 cm</text>\n  <text x=\"165\" y=\"55\" font-family=\"sans-serif\" font-size=\"12\">5 cm</text>\n  <text x=\"190\" y=\"115\" font-family=\"sans-serif\" font-size=\"12\">y</text>\n</svg></div>",
-          "options": [
-            "\\(88 \\text{ cm}^2\\)",
-            "\\(108 \\text{ cm}^2\\)",
-            "\\(72 \\text{ cm}^2\\)",
-            "\\(96 \\text{ cm}^2\\)"
-          ],
-          "answer": 0,
-          "hint": "Split the shape into two rectangles. Find the missing side lengths first.",
-          "steps": [
-            {
-              "explain": "The shape can be split into two rectangles."
-            },
-            {
-              "explain": "Missing right vertical side \\(y = 9 - 5 = 4 \\text{ cm}\\)."
-            },
-            {
-              "explain": "Missing top horizontal side \\(x = 12 - 4 = 8 \\text{ cm}\\) (assuming the bottom right extension is 4 cm wide based on tick marks in original, or derived from splitting)."
-            },
-            {
-              "explain": "Wait, the solution says \\(y = 9 - 5 = 4\\) cm and \\(x = 12 - 4 = 8\\) cm."
-            },
-            {
-              "explain": "Let's assume the indent width is equal to \\(y\\), making the bottom right piece a \\(4 \\times 4\\) square."
-            },
-            {
-              "explain": "Area 1 (left rectangle) = \\( 9 \\times 8 = 72 \\text{ cm}^2 \\)."
-            },
-            {
-              "explain": "Area 2 (right square) = \\( 4 \\times 4 = 16 \\text{ cm}^2 \\)."
-            },
-            {
-              "explain": "Total Area = \\( 72 + 16 = 88 \\text{ cm}^2 \\)."
-            }
-          ]
         },
         {
-          "id": "y7-t3-2018-p2-area-q4b",
+          "id": "y7-t3-2018-p2-q4ii",
           "type": "mc",
-          "stem": "Find the area of the following composite shape.<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"250\" height=\"180\" viewBox=\"0 0 250 180\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"50\" y=\"20\" width=\"100\" height=\"100\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <polygon points=\"50,120 150,120 100,70\" fill=\"white\" stroke=\"black\" stroke-width=\"2\"/>\n  <!-- The image shows a square with a triangle cut out from the bottom -->\n  <line x1=\"50\" y1=\"120\" x2=\"150\" y2=\"120\" stroke=\"white\" stroke-width=\"3\"/>\n  <line x1=\"50\" y1=\"120\" x2=\"150\" y2=\"120\" stroke=\"black\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n  <text x=\"35\" y=\"70\" font-family=\"sans-serif\" font-size=\"12\" transform=\"rotate(-90 35 70)\">9 cm</text>\n  <line x1=\"100\" y1=\"120\" x2=\"100\" y2=\"70\" stroke=\"black\" stroke-width=\"1\" stroke-dasharray=\"4,4\"/>\n  <text x=\"95\" y=\"105\" font-family=\"sans-serif\" font-size=\"12\" transform=\"rotate(-90 95 105)\">4 cm</text>\n  <text x=\"75\" y=\"135\" font-family=\"sans-serif\" font-size=\"12\">4 cm</text>\n  <text x=\"125\" y=\"135\" font-family=\"sans-serif\" font-size=\"12\">5 cm</text>\n</svg></div>",
+          "stem": "Find the value of the pronumeral \\(n\\).<div style=\"display: block; text-align: center; margin-top: 15px;\">\n<svg width=\"200\" height=\"120\" viewBox=\"0 0 200 120\" xmlns=\"http://www.w3.org/2000/svg\">\n  <polygon points=\"20,100 180,100 180,20 100,50\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <!-- Right angle at bottom right -->\n  <polyline points=\"180,85 165,85 165,100\" fill=\"none\" stroke=\"black\" stroke-width=\"1.5\"/>\n  <text x=\"40\" y=\"95\" font-family=\"sans-serif\" font-size=\"12\" font-style=\"italic\">n°</text>\n  <text x=\"110\" y=\"65\" font-family=\"sans-serif\" font-size=\"12\">120°</text>\n  <text x=\"160\" y=\"40\" font-family=\"sans-serif\" font-size=\"12\">80°</text>\n</svg></div>",
           "options": [
-            "\\(71 \\text{ cm}^2\\)",
-            "\\(61 \\text{ cm}^2\\)",
-            "\\(81 \\text{ cm}^2\\)",
-            "\\(76 \\text{ cm}^2\\)"
+            "70",
+            "90",
+            "110",
+            "60"
           ],
           "answer": 0,
-          "hint": "Subtract the area of the triangle from the area of the square.",
+          "hint": "The angle sum of a quadrilateral is \\(360^\\circ\\).",
           "steps": [
             {
-              "explain": "Area of the square = \\( 9 \\times 9 = 81 \\text{ cm}^2 \\)"
+              "explain": "Angle sum of a quadrilateral = \\(360^\\circ\\)"
             },
             {
-              "explain": "The missing piece is a triangle with base = \\( 4 + 5 = 9 \\text{ cm}\\) (wait, looking at the solution: \\( \\frac{1}{2} \\times 5 \\times 4 \\))."
+              "explain": "The bottom right angle is a right angle (\\(90^\\circ\\))."
             },
             {
-              "explain": "Ah, the base of the triangle cut out is 5 cm, and the height is 4 cm."
+              "explain": "\\( n + 120 + 80 + 90 = 360 \\)"
             },
             {
-              "explain": "Area of the triangle = \\( \\frac{1}{2} \\times 5 \\times 4 = 10 \\text{ cm}^2 \\)"
+              "explain": "\\( n + 290 = 360 \\)"
             },
             {
-              "explain": "Total Area = \\( 81 - 10 = 71 \\text{ cm}^2 \\)."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "topicId": "y7-12i",
-      "code": "",
-      "title": "",
-      "questions": [
-        {
-          "id": "y7-t3-2018-p2-area-q6",
-          "type": "mc",
-          "stem": "Sarah's rectangular fish tank is 60 cm in length, 40 cm wide and 50 cm high. She fills the tank fully with water. Find the volume of water in the fish tank.",
-          "options": [
-            "\\(120,000 \\text{ cm}^3\\)",
-            "\\(12,000 \\text{ cm}^3\\)",
-            "\\(1,200,000 \\text{ cm}^3\\)",
-            "\\(150 \\text{ cm}^3\\)"
-          ],
-          "answer": 0,
-          "hint": "Volume of a rectangular prism = length \\(\\times\\) width \\(\\times\\) height.",
-          "steps": [
-            {
-              "explain": "\\( \\text{Volume} = l \\times w \\times h \\)"
-            },
-            {
-              "explain": "\\( V = 60 \\times 40 \\times 50 \\)"
-            },
-            {
-              "explain": "\\( V = 2400 \\times 50 \\)"
-            },
-            {
-              "explain": "\\( V = 120,000 \\text{ cm}^3 \\)"
+              "explain": "\\( n = 70 \\)"
             }
           ]
         }

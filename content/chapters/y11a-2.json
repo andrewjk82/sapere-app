@@ -5047,6 +5047,48 @@
           "answer": 0,
           "hint": "$6\\sqrt{5} - 2\\sqrt{5} + 3\\sqrt{5}$.",
           "solution": "$7\\sqrt{5}$"
+        },
+        {
+          "id": "DrDBa7gxvKNSv8JPTRaJ",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find $x$ if $\\sqrt{12} + \\sqrt{27} = \\sqrt{x}$.",
+          "options": [
+            "$39$",
+            "$75$",
+            "$15$",
+            "$45$"
+          ],
+          "answer": 1,
+          "solution": "$5\\sqrt{3} = \\sqrt{25 \\times 3} = \\sqrt{75}$"
+        },
+        {
+          "id": "hircY9W5PAe05munthlw",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find $x$ if $\\sqrt{18} + \\sqrt{50} = \\sqrt{x}$.",
+          "options": [
+            "$128$",
+            "$68$",
+            "$32$",
+            "$98$"
+          ],
+          "answer": 0,
+          "solution": "$8\\sqrt{2} = \\sqrt{64 \\times 2} = \\sqrt{128}$"
+        },
+        {
+          "id": "u7Kg66CNIq3U1J81kcwX",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If $\\sqrt{20} + \\sqrt{45} = \\sqrt{x}$, find $x$.",
+          "options": [
+            "$100$",
+            "$65$",
+            "$25$",
+            "$125$"
+          ],
+          "answer": 3,
+          "solution": "$5\\sqrt{5} = \\sqrt{125}$"
         }
       ]
     },
@@ -7001,6 +7043,178 @@
           "answer": 0,
           "hint": "Multiply by $\\sqrt{3}$.",
           "solution": "$\\frac{\\sqrt{3}}{5(3)} = \\frac{\\sqrt{3}}{15}$"
+        },
+        {
+          "id": "7G4vdwp1VFhbJBviPVvX",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalize $\\frac{\\sqrt{7} - \\sqrt{5}}{\\sqrt{7} + \\sqrt{5}}$.",
+          "options": [
+            "$6 - \\sqrt{35}$",
+            "$1$",
+            "$12 - 2\\sqrt{35}$",
+            "$\\frac{12-2\\sqrt{35}}{2}$"
+          ],
+          "answer": 0,
+          "solution": "$\\frac{7 - 2\\sqrt{35} + 5}{7-5} = \\frac{12-2\\sqrt{35}}{2} = 6-\\sqrt{35}$"
+        },
+        {
+          "id": "7PWANcOG1dBONfrPJLoS",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalize $\\frac{3\\sqrt{7}}{2\\sqrt{5} - \\sqrt{7}}$.",
+          "options": [
+            "$\\frac{6\\sqrt{35} + 21}{13}$",
+            "$\\frac{6\\sqrt{35} - 21}{13}$",
+            "$21$",
+            "$\\frac{3\\sqrt{35} + 21}{13}$"
+          ],
+          "answer": 0,
+          "solution": "$\\frac{3\\sqrt{7}(2\\sqrt{5}+\\sqrt{7})}{4(5)-7} = \\frac{6\\sqrt{35}+21}{13}$"
+        },
+        {
+          "id": "8hwsLMjjcg85OSPzvTGz",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalize $\\frac{1}{\\sqrt{5} + 2}$.",
+          "options": [
+            "$\\sqrt{5} + 2$",
+            "$\\sqrt{5} - 2$",
+            "$\\frac{1}{\\sqrt{5}-2}$",
+            "$\\frac{\\sqrt{5}-2}{1}$"
+          ],
+          "answer": 1,
+          "solution": "$\\frac{\\sqrt{5}-2}{5-4} = \\sqrt{5}-2$"
+        },
+        {
+          "id": "ACeWrQJdv7DeTii0U1YB",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify $\\frac{3}{\\sqrt{5}-2} + \\frac{3}{\\sqrt{5}+2}$.",
+          "options": [
+            "$2\\sqrt{5}$",
+            "$12$",
+            "$6$",
+            "$6\\sqrt{5}$"
+          ],
+          "answer": 3,
+          "solution": "$\\frac{3(\\sqrt{5}+2) + 3(\\sqrt{5}-2)}{1} = 3\\sqrt{5} + 6 + 3\\sqrt{5} - 6 = 6\\sqrt{5}$"
+        },
+        {
+          "id": "HhxnyWC55OAkDS0RTyYA",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalize $\\frac{6}{\\sqrt{5} - \\sqrt{2}}$.",
+          "options": [
+            "$\\frac{6(\\sqrt{5}+\\sqrt{2})}{3}$",
+            "$2\\sqrt{5} + 2\\sqrt{2}$",
+            "$2(\\sqrt{5} + \\sqrt{2})$",
+            "$3(\\sqrt{5} + \\sqrt{2})$"
+          ],
+          "answer": 2,
+          "solution": "$\\frac{6(\\sqrt{5}+\\sqrt{2})}{3} = 2(\\sqrt{5}+\\sqrt{2})$"
+        },
+        {
+          "id": "jCcLLG95XjfarL72lz07",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalize $\\frac{\\sqrt{2}}{\\sqrt{6} + 2}$.",
+          "options": [
+            "$\\frac{2\\sqrt{3} - 2\\sqrt{2}}{2}$",
+            "$\\frac{\\sqrt{12} + 2\\sqrt{2}}{2}$",
+            "$\\frac{\\sqrt{3} - \\sqrt{2}}{1}$",
+            "$\\sqrt{3} - \\sqrt{2}$"
+          ],
+          "answer": null,
+          "solution": "$\\frac{\\sqrt{12}-2\\sqrt{2}}{6-4} = \\frac{2\\sqrt{3}-2\\sqrt{2}}{2} = \\sqrt{3}-\\sqrt{2}$"
+        },
+        {
+          "id": "KiLw4CYOkKmdYxlZ6A9f",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalize $\\frac{3\\sqrt{2} + 1}{3\\sqrt{2} - 1}$.",
+          "options": [
+            "$1$",
+            "$\\frac{19 + 6\\sqrt{2}}{17}$",
+            "$\\frac{19 - 6\\sqrt{2}}{17}$",
+            "$\\frac{17 + 6\\sqrt{2}}{19}$"
+          ],
+          "answer": 1,
+          "solution": "$\\frac{(3\\sqrt{2}+1)^2}{17} = \\frac{18 + 6\\sqrt{2} + 1}{17} = \\frac{19+6\\sqrt{2}}{17}$"
+        },
+        {
+          "id": "MWXqOOtHG83Cdp1DcpB8",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalize $\\frac{\\sqrt{3}}{\\sqrt{3} + 1}$.",
+          "options": [
+            "$\\frac{3 - \\sqrt{3}}{2}$",
+            "$\\frac{\\sqrt{3}-3}{2}$",
+            "$1 - \\sqrt{3}$",
+            "$\\frac{3 + \\sqrt{3}}{2}$"
+          ],
+          "answer": 0,
+          "solution": "$\\frac{3 - \\sqrt{3}}{3-1} = \\frac{3-\\sqrt{3}}{2}$"
+        },
+        {
+          "id": "Q53HP9x4DCaUUCKm3OYC",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rationalize $\\frac{1}{\\sqrt{5} + \\sqrt{2}}$.",
+          "options": [
+            "$\\frac{\\sqrt{5} + \\sqrt{2}}{3}$",
+            "$\\frac{\\sqrt{3}}{3}$",
+            "$\\frac{\\sqrt{5} - \\sqrt{2}}{3}$",
+            "$\\sqrt{5} - \\sqrt{2}$"
+          ],
+          "answer": 2,
+          "solution": "$\\frac{\\sqrt{5}-\\sqrt{2}}{5-2} = \\frac{\\sqrt{5}-\\sqrt{2}}{3}$"
+        },
+        {
+          "id": "bbwvZDKtjrmIKqmJLoaZ",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find $p$ and $q$ if $\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}$.",
+          "options": [
+            "$p=10, q=2$",
+            "$p=5, q=2$",
+            "$p=2, q=1$",
+            "$p=5, q=1$"
+          ],
+          "answer": 1,
+          "solution": "$\\frac{\\sqrt{5}(\\sqrt{5}+2)}{(\\sqrt{5}-2)(\\sqrt{5}+2)} = \\frac{5 + 2\\sqrt{5}}{5-4} = 5 + 2\\sqrt{5}$. Therefore, $p=5$ and $q=2$.",
+          "steps": [
+            {
+              "explain": "Rationalise the denominator by multiplying the numerator and denominator by the conjugate \\(\\sqrt{5} + 2\\).",
+              "work": "\\(\\frac{\\sqrt{5}}{\\sqrt{5}-2} \\times \\frac{\\sqrt{5}+2}{\\sqrt{5}+2}\\)"
+            },
+            {
+              "explain": "Expand the numerator and the denominator (difference of two squares).",
+              "work": "\\(= \\frac{\\sqrt{5}(\\sqrt{5}) + 2\\sqrt{5}}{(\\sqrt{5})^2 - 2^2}\\)"
+            },
+            {
+              "explain": "Simplify the expressions.",
+              "work": "\\(= \\frac{5 + 2\\sqrt{5}}{5 - 4} = 5 + 2\\sqrt{5}\\)"
+            },
+            {
+              "explain": "Equate to \\(p + q\\sqrt{5}\\) to find \\(p\\) and \\(q\\).",
+              "work": "\\(p = 5\\) and \\(q = 2\\)"
+            }
+          ]
+        },
+        {
+          "id": "Uakoudk3Co6J5j8Jl3w0",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find $a$ and $b$ if $\\frac{2}{\\sqrt{3}-1} = a + b\\sqrt{3}$.",
+          "options": [
+            "$a=1, b=2$",
+            "$a=1, b=1$",
+            "$a=2, b=1$",
+            "$a=1, b=-1$"
+          ],
+          "answer": 1,
+          "solution": "$\\frac{2(\\sqrt{3}+1)}{3-1} = \\frac{2(\\sqrt{3}+1)}{2} = 1 + \\sqrt{3}$. So $a=1, b=1$."
         }
       ]
     },
@@ -9331,234 +9545,6 @@
           "answer": 0,
           "hint": "$16 - 2(4)(3\\sqrt{2}) + 18$.",
           "solution": "$16 - 24\\sqrt{2} + 18 = 34 - 24\\sqrt{2}$"
-        }
-      ]
-    },
-    {
-      "topicId": "y11a-2F",
-      "code": "2F",
-      "title": "Further rationalising the denominator",
-      "questions": [
-        {
-          "id": "7G4vdwp1VFhbJBviPVvX",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Rationalize $\\frac{\\sqrt{7} - \\sqrt{5}}{\\sqrt{7} + \\sqrt{5}}$.",
-          "options": [
-            "$6 - \\sqrt{35}$",
-            "$1$",
-            "$12 - 2\\sqrt{35}$",
-            "$\\frac{12-2\\sqrt{35}}{2}$"
-          ],
-          "answer": 0,
-          "solution": "$\\frac{7 - 2\\sqrt{35} + 5}{7-5} = \\frac{12-2\\sqrt{35}}{2} = 6-\\sqrt{35}$"
-        },
-        {
-          "id": "7PWANcOG1dBONfrPJLoS",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Rationalize $\\frac{3\\sqrt{7}}{2\\sqrt{5} - \\sqrt{7}}$.",
-          "options": [
-            "$\\frac{6\\sqrt{35} + 21}{13}$",
-            "$\\frac{6\\sqrt{35} - 21}{13}$",
-            "$21$",
-            "$\\frac{3\\sqrt{35} + 21}{13}$"
-          ],
-          "answer": 0,
-          "solution": "$\\frac{3\\sqrt{7}(2\\sqrt{5}+\\sqrt{7})}{4(5)-7} = \\frac{6\\sqrt{35}+21}{13}$"
-        },
-        {
-          "id": "8hwsLMjjcg85OSPzvTGz",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Rationalize $\\frac{1}{\\sqrt{5} + 2}$.",
-          "options": [
-            "$\\sqrt{5} + 2$",
-            "$\\sqrt{5} - 2$",
-            "$\\frac{1}{\\sqrt{5}-2}$",
-            "$\\frac{\\sqrt{5}-2}{1}$"
-          ],
-          "answer": 1,
-          "solution": "$\\frac{\\sqrt{5}-2}{5-4} = \\sqrt{5}-2$"
-        },
-        {
-          "id": "ACeWrQJdv7DeTii0U1YB",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Simplify $\\frac{3}{\\sqrt{5}-2} + \\frac{3}{\\sqrt{5}+2}$.",
-          "options": [
-            "$2\\sqrt{5}$",
-            "$12$",
-            "$6$",
-            "$6\\sqrt{5}$"
-          ],
-          "answer": 3,
-          "solution": "$\\frac{3(\\sqrt{5}+2) + 3(\\sqrt{5}-2)}{1} = 3\\sqrt{5} + 6 + 3\\sqrt{5} - 6 = 6\\sqrt{5}$"
-        },
-        {
-          "id": "HhxnyWC55OAkDS0RTyYA",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Rationalize $\\frac{6}{\\sqrt{5} - \\sqrt{2}}$.",
-          "options": [
-            "$\\frac{6(\\sqrt{5}+\\sqrt{2})}{3}$",
-            "$2\\sqrt{5} + 2\\sqrt{2}$",
-            "$2(\\sqrt{5} + \\sqrt{2})$",
-            "$3(\\sqrt{5} + \\sqrt{2})$"
-          ],
-          "answer": 2,
-          "solution": "$\\frac{6(\\sqrt{5}+\\sqrt{2})}{3} = 2(\\sqrt{5}+\\sqrt{2})$"
-        },
-        {
-          "id": "jCcLLG95XjfarL72lz07",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Rationalize $\\frac{\\sqrt{2}}{\\sqrt{6} + 2}$.",
-          "options": [
-            "$\\frac{2\\sqrt{3} - 2\\sqrt{2}}{2}$",
-            "$\\frac{\\sqrt{12} + 2\\sqrt{2}}{2}$",
-            "$\\frac{\\sqrt{3} - \\sqrt{2}}{1}$",
-            "$\\sqrt{3} - \\sqrt{2}$"
-          ],
-          "answer": null,
-          "solution": "$\\frac{\\sqrt{12}-2\\sqrt{2}}{6-4} = \\frac{2\\sqrt{3}-2\\sqrt{2}}{2} = \\sqrt{3}-\\sqrt{2}$"
-        },
-        {
-          "id": "KiLw4CYOkKmdYxlZ6A9f",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Rationalize $\\frac{3\\sqrt{2} + 1}{3\\sqrt{2} - 1}$.",
-          "options": [
-            "$1$",
-            "$\\frac{19 + 6\\sqrt{2}}{17}$",
-            "$\\frac{19 - 6\\sqrt{2}}{17}$",
-            "$\\frac{17 + 6\\sqrt{2}}{19}$"
-          ],
-          "answer": 1,
-          "solution": "$\\frac{(3\\sqrt{2}+1)^2}{17} = \\frac{18 + 6\\sqrt{2} + 1}{17} = \\frac{19+6\\sqrt{2}}{17}$"
-        },
-        {
-          "id": "MWXqOOtHG83Cdp1DcpB8",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Rationalize $\\frac{\\sqrt{3}}{\\sqrt{3} + 1}$.",
-          "options": [
-            "$\\frac{3 - \\sqrt{3}}{2}$",
-            "$\\frac{\\sqrt{3}-3}{2}$",
-            "$1 - \\sqrt{3}$",
-            "$\\frac{3 + \\sqrt{3}}{2}$"
-          ],
-          "answer": 0,
-          "solution": "$\\frac{3 - \\sqrt{3}}{3-1} = \\frac{3-\\sqrt{3}}{2}$"
-        },
-        {
-          "id": "Q53HP9x4DCaUUCKm3OYC",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Rationalize $\\frac{1}{\\sqrt{5} + \\sqrt{2}}$.",
-          "options": [
-            "$\\frac{\\sqrt{5} + \\sqrt{2}}{3}$",
-            "$\\frac{\\sqrt{3}}{3}$",
-            "$\\frac{\\sqrt{5} - \\sqrt{2}}{3}$",
-            "$\\sqrt{5} - \\sqrt{2}$"
-          ],
-          "answer": 2,
-          "solution": "$\\frac{\\sqrt{5}-\\sqrt{2}}{5-2} = \\frac{\\sqrt{5}-\\sqrt{2}}{3}$"
-        }
-      ]
-    },
-    {
-      "topicId": "y11a-2G",
-      "code": "2G",
-      "title": "Surd equations",
-      "questions": [
-        {
-          "id": "bbwvZDKtjrmIKqmJLoaZ",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Find $p$ and $q$ if $\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}$.",
-          "options": [
-            "$p=10, q=2$",
-            "$p=5, q=2$",
-            "$p=2, q=1$",
-            "$p=5, q=1$"
-          ],
-          "answer": 1,
-          "solution": "$\\frac{\\sqrt{5}(\\sqrt{5}+2)}{(\\sqrt{5}-2)(\\sqrt{5}+2)} = \\frac{5 + 2\\sqrt{5}}{5-4} = 5 + 2\\sqrt{5}$. Therefore, $p=5$ and $q=2$.",
-          "steps": [
-            {
-              "explain": "Rationalise the denominator by multiplying the numerator and denominator by the conjugate \\(\\sqrt{5} + 2\\).",
-              "work": "\\(\\frac{\\sqrt{5}}{\\sqrt{5}-2} \\times \\frac{\\sqrt{5}+2}{\\sqrt{5}+2}\\)"
-            },
-            {
-              "explain": "Expand the numerator and the denominator (difference of two squares).",
-              "work": "\\(= \\frac{\\sqrt{5}(\\sqrt{5}) + 2\\sqrt{5}}{(\\sqrt{5})^2 - 2^2}\\)"
-            },
-            {
-              "explain": "Simplify the expressions.",
-              "work": "\\(= \\frac{5 + 2\\sqrt{5}}{5 - 4} = 5 + 2\\sqrt{5}\\)"
-            },
-            {
-              "explain": "Equate to \\(p + q\\sqrt{5}\\) to find \\(p\\) and \\(q\\).",
-              "work": "\\(p = 5\\) and \\(q = 2\\)"
-            }
-          ]
-        },
-        {
-          "id": "DrDBa7gxvKNSv8JPTRaJ",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Find $x$ if $\\sqrt{12} + \\sqrt{27} = \\sqrt{x}$.",
-          "options": [
-            "$39$",
-            "$75$",
-            "$15$",
-            "$45$"
-          ],
-          "answer": 1,
-          "solution": "$5\\sqrt{3} = \\sqrt{25 \\times 3} = \\sqrt{75}$"
-        },
-        {
-          "id": "hircY9W5PAe05munthlw",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Find $x$ if $\\sqrt{18} + \\sqrt{50} = \\sqrt{x}$.",
-          "options": [
-            "$128$",
-            "$68$",
-            "$32$",
-            "$98$"
-          ],
-          "answer": 0,
-          "solution": "$8\\sqrt{2} = \\sqrt{64 \\times 2} = \\sqrt{128}$"
-        },
-        {
-          "id": "u7Kg66CNIq3U1J81kcwX",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "If $\\sqrt{20} + \\sqrt{45} = \\sqrt{x}$, find $x$.",
-          "options": [
-            "$100$",
-            "$65$",
-            "$25$",
-            "$125$"
-          ],
-          "answer": 3,
-          "solution": "$5\\sqrt{5} = \\sqrt{125}$"
-        },
-        {
-          "id": "Uakoudk3Co6J5j8Jl3w0",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Find $a$ and $b$ if $\\frac{2}{\\sqrt{3}-1} = a + b\\sqrt{3}$.",
-          "options": [
-            "$a=1, b=2$",
-            "$a=1, b=1$",
-            "$a=2, b=1$",
-            "$a=1, b=-1$"
-          ],
-          "answer": 1,
-          "solution": "$\\frac{2(\\sqrt{3}+1)}{3-1} = \\frac{2(\\sqrt{3}+1)}{2} = 1 + \\sqrt{3}$. So $a=1, b=1$."
         }
       ]
     }

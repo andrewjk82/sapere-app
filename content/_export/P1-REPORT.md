@@ -99,4 +99,8 @@ account — verify via the localStorage override on production.
 - `y11a-1C` topic renamed `y11a-1c` (71 q) — the app matches topicId exactly against the curriculum, so these never appeared in topic practice.
 - `y8-19a-q9b` (Year 8 stem-and-leaf, was in y9-16) → y8-19/y8-19a; `y10-7h-q7b` (Y10 quadratic, was in y11a-1 untopiced) → y10-7/y10-7h.
 - Validator baseline key is now file-independent (`id` only) so moves don't register as new defects; baseline shrank 1,094 → 822 (defects that lived in the dropped duplicates).
-- Left as-is, for a decision: topics present in content but absent from the curriculum tree — ICEM (`y10-18a..h-icem`, 152 q), `y11a-2F/2G` (28), `y12a-6F` (32), `y7-11e..h` (8), `y7-12f/i` (3), `y7-5i` (2), `y7-6f` (1), `y10-12c-app` (11), and `y11a-5` questions with no topic (49). These are in chapter indexes (Daily Challenge sees them) but invisible in Topic Practice.
+- Non-curriculum topics re-filed (`2026-09-15-reclassify-noncurriculum-topics.mjs`, 120 q, each read by hand):
+  Y7 term-3 2018 exam items under `y7-11e..h/12f/12i/5i/6f` → y7-12a/c/e, y7-5d/e, y7-8f/h, y7-7g, y7-10f;
+  `y11a-2F` → 2D, `y11a-2G` → 2C/2D; `y12a-6F` (chapter review) → 6B/6C/6D/6E by section;
+  `y10-12c-app` → 12a (right-angled) / 12i (non-right); untopiced `y11a-5*-new-*` → 5D/5E from the id.
+  Kept as-is by decision: ICEM `y10-18a..h-icem` (153 q, separate programme).
