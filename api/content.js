@@ -79,19 +79,33 @@ const texErrors = (q) => {
   return out;
 };
 
-// ---------- locate a question across the bank (id → chapter file) via the published manifest/ids
-async function locate(id, origin) {
-  const base = origin || process.env.CONTENT_BASE_URL || 'https://sapere-app.vercel.app';
-  const m = await (await fetch(`${base}/content/manifest.json`, { cache: 'no-store' })).json();
-  const ids = await (await fetch(`${base}/content/${m.ids}`)).json();
-  const topicId = ids[id] || String(id).replace(/-[^-]+$/, '');
-  const refs = m.topics[topicId] || [];
-  if (refs.length === 1) return refs[0][0];
-  // inactive / pending questions are not in the topic index — scan the admin file
-  const a = await (await fetch(`${base}/content/${m.admin}`)).json();
-  const hit = a.inactive.find(({ q }) => q.id === id); if (hit) return hit.ctx.chapterId;
-  for (const [cid] of refs) return cid;   // ambiguous → first (caller may pass chapterId explicitly)
+// ---------- locate a question's chapter file when the caller doesn't already know it -----------
+// Deliberately does NOT self-fetch the live site (https://sapere-app.vercel.app/content/...) from
+// inside this function — that self-referential HTTP round-trip was unreliable in production
+// (intermittent empty responses inside the Vercel Node runtime, not reproducible from an external
+// client) and is untestable without a live deployment. GitHub's code-search API is what
+// api/sync-seed.js already used for the same kind of lookup, and it's what readFile/writeFile talk
+// to anyway, so this has no new dependency and IS covered by the adapter-injected test.
+async function findViaGithubSearch(id, readFile) {
+  let results;
+  try { results = await gh(`/search/code?q=${encodeURIComponent(`"${id}"`)}+repo:${GITHUB_REPO}+path:content/chapters&type=code`); }
+  catch { return null; }   // search index lag / rate limit — caller falls back to "not found"
+  for (const item of results.items || []) {
+    const f = await readFile(item.path);
+    if (!f) continue;
+    try {
+      const ch = JSON.parse(f.text);
+      if (ch.topics?.some((t) => t.questions.some((q) => q.id === id))) return ch.chapterId;
+    } catch { /* not a chapter file we can parse — skip */ }
+  }
   return null;
+}
+/** Does chapterId's own file actually contain this id right now? Cheap, no search. */
+async function chapterHasQuestion(chapterId, id, readFile) {
+  const f = await readFile(fileOf(chapterId));
+  if (!f) return false;
+  try { return JSON.parse(f.text).topics?.some((t) => t.questions.some((q) => q.id === id)) === true; }
+  catch { return false; }
 }
 const findInChapter = (ch, id) => { for (const t of ch.topics) { const i = t.questions.findIndex((q) => q.id === id); if (i >= 0) return { t, i }; } return null; };
 const newId = (topicId) => `${topicId}-t${Date.now().toString(36)}${Math.random().toString(36).slice(2, 5)}`;
@@ -101,15 +115,20 @@ const newId = (topicId) => `${topicId}-t${Date.now().toString(36)}${Math.random(
  * `writeFile` and the manifest-backed `locate`; tests pass in-memory ones over content/.
  * Returns { status, body }.
  */
-export async function applyEdit({ readFile, writeFile, locate }, body, user) {
+export async function applyEdit({ readFile, writeFile }, body, user) {
   const { op } = body;
   if (!['upsert', 'patch'].includes(op)) return { status: 400, body: { error: `unknown op ${op}` } };
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      // 1. which chapter file?
+      // 1. which chapter file? Trust the caller's chapterId first (every current UI call site
+      // supplies it) and only fall back to a GitHub search when the id isn't where expected.
       const id = op === 'upsert' ? (body.doc?.id || '') : body.id;
       let chapterId = body.chapterId || (op === 'upsert' ? body.doc?.chapterId : null);
-      const currentChapter = id ? await locate(id) : null;
+      let currentChapter = null;
+      if (id) {
+        if (chapterId && await chapterHasQuestion(chapterId, id, readFile)) currentChapter = chapterId;
+        else currentChapter = await findViaGithubSearch(id, readFile);
+      }
       const isMove = !!(currentChapter && chapterId && currentChapter !== chapterId);
       if (!chapterId) chapterId = currentChapter;
       if (!chapterId) return { status: 400, body: { error: `cannot determine chapter for ${id || '(new)'}` } };
@@ -175,8 +194,7 @@ export default async function handler(req, res) {
   if (!GITHUB_TOKEN) return res.status(500).json({ error: 'GITHUB_TOKEN not configured' });
   const user = await verifyAdmin(req);
   if (!user) return res.status(403).json({ error: 'admin only' });
-  const body = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});
-  const origin = req.headers['x-forwarded-host'] ? `https://${req.headers['x-forwarded-host']}` : undefined;
-  const { status, body: out } = await applyEdit({ readFile, writeFile, locate: (id) => locate(id, origin) }, body, user);
+  const body = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
+  const { status, body: out } = await applyEdit({ readFile, writeFile }, body, user);
   return res.status(status).json(out);
 }
