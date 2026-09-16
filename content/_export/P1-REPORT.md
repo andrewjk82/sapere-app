@@ -104,3 +104,12 @@ account — verify via the localStorage override on production.
   `y11a-2F` → 2D, `y11a-2G` → 2C/2D; `y12a-6F` (chapter review) → 6B/6C/6D/6E by section;
   `y10-12c-app` → 12a (right-angled) / 12i (non-right); untopiced `y11a-5*-new-*` → 5D/5E from the id.
   Kept as-is by decision: ICEM `y10-18a..h-icem` (153 q, separate programme).
+
+---
+# P4 — teacher edits → git (2026-09-16)
+- `content/legacy.js`: `toLegacy` / `fromLegacy` shared by browser and API. **Round-trip lossless on all 25,043 questions.**
+- `api/content.js`: POST `{op:'upsert'|'patch'}` → verify admin ID token → read chapter file from GitHub → merge (form fields over the canonical doc, nothing dropped) → zod schema + KaTeX (renderer preprocessing; only NEW math errors rejected) → inline SVG externalised to `content/figures/` → commit (sha lock, 1 retry). New questions land `inactive` + `reviewStatus:pending`. `applyEdit()` core is adapter-injected; `npm run test:content-api` runs 21 scenarios over in-memory content (edit/add/approve/timeLimit/delete/move/bad LaTeX/bad MC answer/SVG/unknown id).
+- Publisher now also emits `admin.<hash>.json` (inactive/pending docs), `all-ids.<hash>.json` (id-prefix search), and `hsc-types` with `byDna` (replaces the last student-side Firestore query in HscTypePracticeSession).
+- `contentLoader`: admin reads (`adminChapterQuestions`, `adminPendingQuestions`, `searchIds`, `adminGetQuestion`, `getQuestionsByHscType`, `getContentCounts`) and a per-browser **edit overlay** (localStorage, keyed by manifest `contentHash`) so the editor sees a save immediately while Vercel rebuilds.
+- Surfaces switched (CDN branch ahead of the untouched Firestore code): QuestionBankPage (load/search/delete/timeLimit; Sync-All hidden; isNew no-op), QuestionBankModal (list/save/delete; no index/membershipVersion/count writes), PendingReviewPanel (list/approve/reject), ReportsAdmin (question reads/delete), HscTypePracticeSession (type/dna reads), Curriculum counts (manifest).
+- Needs on Vercel: `GITHUB_TOKEN` (fine-grained PAT, repo `sapere-app`, Contents: read/write). Until set, saves fail with a visible error — nothing is silently lost.

@@ -29,6 +29,8 @@ import { removeQuestionFromIndex } from '../services/questionIndexService';
 import { applyCountDeltas } from '../services/questionCountsService';
 import { answersMatch } from '../utils/answerMatching';
 import { resolveCorrectOptionIndex } from '../utils/mcOptionShuffle';
+import { cdnEnabledAtAll, adminChapterQuestions, getChapterQuestions as cdnChapter, getQuestionsByHscType, searchIds, getQuestionsByIds as cdnByIds, adminGetQuestion } from '../services/contentLoader';
+import { contentPatch } from '../services/contentApi';
 
 // Split a long model-answer string into sentence-level lines for readability.
 // Careful to skip periods inside math delimiters \(...\) and $$...$$.
@@ -103,9 +105,22 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
       return;
     }
 
-    // 2. Search globally in Firestore
+    // 2. Search globally
     setLoading(true);
     try {
+      if (cdnEnabledAtAll()) {
+        const exact = await adminGetQuestion(trimmed);
+        const hits = exact && exact.isActive !== false ? [exact] : (await cdnByIds((await searchIds(trimmed)).map((h) => h.id))).docs.filter((d) => d.isActive !== false);
+        if (!hits.length) { showToast(`No question found with ID "${trimmed}"`, 'error'); return; }
+        const newIds = hits.map((d) => d.id).sort();
+        const newLoaded = {}; hits.forEach((d) => { newLoaded[d.id] = d; });
+        setLoadedQuestions((prev) => ({ ...prev, ...newLoaded }));
+        setQuestionIds((prev) => [...newIds, ...prev.filter((id) => !newIds.includes(id))]);
+        setCurrentIdx(0);
+        showToast(newIds.length === 1 ? 'Question found and loaded globally!' : `Loaded ${newIds.length} questions with ID starting "${trimmed}"`, 'success');
+        setSearchQuery('');
+        return;
+      }
       // Exact ID match first (fast single-doc read).
       const docRef = doc(db, 'questions', trimmed);
       const docSnap = await getDocFromServer(docRef);
@@ -251,6 +266,31 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
       const isSearchChapter = chapter.id?.startsWith('search:');
       let ids = [];
 
+      if (cdnEnabledAtAll()) {
+        // Git-backed bank served from /content/: load every doc for this view in one go
+        // (chapter = a few cached files), so the lazy per-id fetch below has nothing left to do.
+        let docs;
+        if (isSearchChapter) {
+          const prefix = chapter.searchPrefix || chapter.id.replace('search:', '');
+          const hits = await searchIds(prefix);
+          docs = hits.length ? (await cdnByIds(hits.map((h) => h.id))).docs : [];
+          if (!docs.length) showToast(`No questions found with ID starting "${prefix}"`, 'error');
+        } else if (isTypeChapter) {
+          docs = await getQuestionsByHscType(chapter.typeSlug || chapter.id.replace('type:', ''));
+        } else if (isExamChapter) {
+          docs = await cdnChapter(chapter.id);
+        } else {
+          docs = await adminChapterQuestions(chapter.id, topic?.id);
+        }
+        docs = docs.filter((d) => d.isActive !== false).sort((a, b) => String(a.id).localeCompare(String(b.id)));
+        const fetched = {}; docs.forEach((d) => { fetched[d.id] = d; });
+        setLoadedQuestions((prev) => ({ ...prev, ...fetched }));
+        const cdnIds = docs.map((d) => d.id);
+        setQuestionIds(cdnIds);
+        setCurrentIdx((prev) => (prev >= cdnIds.length ? Math.max(0, cdnIds.length - 1) : prev));
+        return;
+      }
+
       if (isSearchChapter) {
         // Global ID-prefix search, any chapter/topic — ONE bounded
         // documentId() range query, never a full collection scan.
@@ -393,6 +433,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     const loaded = loadedQuestions[qId];
     if (!loaded || loaded.isNew !== true) return;
     setLoadedQuestions(prev => ({ ...prev, [qId]: { ...prev[qId], isNew: false } }));
+    if (cdnEnabledAtAll()) return;   // isNew is a Firestore-era badge; nothing to persist in the git bank
     updateDoc(doc(db, 'questions', qId), { isNew: false }).catch((e) => {
       console.error('Failed to clear isNew flag', qId, e);
     });
@@ -497,6 +538,12 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     if (!q) return;
     if (!window.confirm(`Delete this question (${q.id})?`)) return;
     try {
+      if (cdnEnabledAtAll()) {
+        await contentPatch(q.id, { isActive: false }, { chapterId: q.chapterId || chapter?.id });
+        showToast('Question deleted — gone for students in ~2 minutes', 'success');
+        await reload();
+        return;
+      }
       await updateDoc(doc(db, 'questions', q.id), { isActive: false, updatedAt: serverTimestamp() });
       // One shared version across the index stamp, sync_meta and the counts
       // doc — if they diverge the counts doc looks stale and triggers a full
@@ -542,13 +589,14 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
             <div style={{ fontSize: '1rem', fontWeight: 900, color: '#1e1b4b' }}>{topic?.title || 'All topics'}</div>
           </div>
           <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-            <button
+            {/* Seed sync is meaningless once the bank lives in git (content/); hidden in CDN mode. */}
+            {!cdnEnabledAtAll() && <button
               onClick={handleSyncAll}
               disabled={isSyncingAll}
               style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #e2e8f0', background: isSyncingAll ? '#f1f5f9' : '#fff', color: isSyncingAll ? '#94a3b8' : '#475569', fontWeight: 700, cursor: isSyncingAll ? 'wait' : 'pointer' }}
             >
               <DownloadCloud size={16} /> {isSyncingAll ? 'Syncing...' : 'Sync DB to Seeds'}
-            </button>
+            </button>}
             {/* PDF Export button */}
             <button
               onClick={() => { setPdfCount(Math.min(10, total)); setShowPdfModal(true); }}
@@ -691,7 +739,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                       onClick={async () => {
                         if (!q?.id) return;
                         try {
-                          await updateDoc(doc(db, 'questions', q.id), { timeLimit: sec });
+                          if (cdnEnabledAtAll()) await contentPatch(q.id, { timeLimit: sec }, { chapterId: q.chapterId || chapter?.id });
+                          else await updateDoc(doc(db, 'questions', q.id), { timeLimit: sec });
                           setLoadedQuestions(prev => ({
                             ...prev,
                             [q.id]: { ...prev[q.id], timeLimit: sec }

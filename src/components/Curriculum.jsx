@@ -41,6 +41,7 @@ import HscJourney from './HscJourney';
 import HscTypePractice from './hsc/HscTypePractice';
 import { seedChapterQuestions } from '../services/chapterSeeder';
 import { readAggregatedCounts, writeAggregatedCounts } from '../services/questionCountsService';
+import { cdnEnabledAtAll, getContentCounts } from '../services/contentLoader';
 
 // ── MC seeding ─────────────────────────────────────────────────────────────
 // Seed options in AUTHORED order and return the correct option's index.
@@ -2352,6 +2353,17 @@ const Curriculum = () => {
 
     const fetchVisibleCounts = async () => {
       try {
+        if (cdnEnabledAtAll()) {
+          // Git-backed bank: the published manifest carries every (chapter, topic) count — 1 cached GET.
+          const counts = await getContentCounts();
+          if (cancelled) return;
+          const merged = { ...cached.counts };
+          countChapterIds.forEach((id) => { merged[id] = counts.chapters[id] ?? 0; });
+          countTopicIds.forEach((id) => { merged[id] = counts.topics[id] ?? 0; });
+          setQuestionCounts(merged);
+          saveCachedQuestionCounts(merged, counts.version);
+          return;
+        }
         const metaSnap = await getDoc(doc(db, 'sync_meta', 'questions'));
         const remoteVersion = Number(metaSnap.data()?.version || metaSnap.data()?.updatedAt?.toMillis?.() || 0);
         const hasFreshCounts = Date.now() - Number(cached.savedAt || 0) < QUESTION_COUNT_CACHE_TTL_MS

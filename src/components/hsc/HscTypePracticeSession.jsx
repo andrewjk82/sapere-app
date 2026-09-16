@@ -17,6 +17,7 @@ import { parseSolutionSteps } from '../../utils/solutionSteps';
 import { MATH_SYMBOLS } from '../../utils/challengeUtils';
 import DnaReasoningWarmup from './DnaReasoningWarmup';
 import QuestionReasoningSteps from './QuestionReasoningSteps';
+import { cdnEnabledAtAll, getQuestionsByHscType } from '../../services/contentLoader';
 
 // Scaffolded learning mode (Sapere_Question_DNA_v2.0 §5 "Scaffolded — Practise").
 // Once a student has correctly answered a DNA's real final question this many
@@ -419,7 +420,12 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack, dnaLabels
     (async () => {
       try {
         let qs = [];
-        if (type.dnaFocus) {
+        if (cdnEnabledAtAll()) {
+          // Git-backed bank: hsc-types.<hash>.json indexes both dnaId and questionType per slug.
+          const all = await getQuestionsByHscType(type.slug);
+          if (cancelled) return;
+          qs = shuffleArray(all.filter(q => q.isActive !== false)).slice(0, type.dnaFocus ? 12 : 12).map(shuffleOptions);
+        } else if (type.dnaFocus) {
           // DNA-focus mode — no dedicated index doc (small sets, ~30 max), a
           // scoped equality query is fine (not an unfiltered collection scan).
           const qSnap = await getDocs(query(collection(db, 'questions'), where('dnaId', '==', type.slug)));

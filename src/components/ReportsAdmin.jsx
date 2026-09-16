@@ -15,9 +15,11 @@ import InteractiveFractionGrid from './challenge/InteractiveFractionGrid';
 import WorkedSolutionSteps from './challenge/WorkedSolutionSteps';
 import { parseSolutionSteps } from '../utils/solutionSteps';
 import { answersMatch } from '../utils/answerMatching';
-import { resolveCorrectOptionIndex } from '../utils/mcOptionShuffle';
+import { resolveCorrectOptionIndex, resolveCorrectOptionText } from '../utils/mcOptionShuffle';
 import TrafficMonitorPanel from './TrafficMonitorPanel';
 import ModeReviewPanel from './ModeReviewPanel';
+import { cdnEnabledAtAll, adminGetQuestion } from '../services/contentLoader';
+import { contentPatch } from '../services/contentApi';
 import {
   fetchModeReviewSessions,
   countUnreviewedModeSessions,
@@ -215,6 +217,15 @@ const SourceBadge = ({ report }) => {
   );
 };
 
+
+// Latest copy of a question for the report views: from the git bank (/content/) when enabled,
+// otherwise the live Firestore doc (getDocFromServer — never the IndexedDB cache).
+const readLiveQuestion = async (qid) => {
+  if (cdnEnabledAtAll()) { const d = await adminGetQuestion(qid); return d ? { ...d } : null; }
+  const snap = await getDocFromServer(doc(db, 'questions', qid));
+  return snap.exists() ? { id: snap.id, ...snap.data() } : null;
+};
+
 const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
   const { showToast } = useToast();
   const [viewMode, setViewMode] = useState(initialViewMode);
@@ -282,8 +293,8 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
       const next = {};
       await Promise.all(ids.map(async (qid) => {
         try {
-          const snap = await getDocFromServer(doc(db, 'questions', qid));
-          if (snap.exists()) next[qid] = snap.data();
+          const d = await readLiveQuestion(qid);
+          if (d) next[qid] = d;
         } catch { /* non-fatal */ }
       }));
       if (cancelled || Object.keys(next).length === 0) return;
@@ -374,8 +385,8 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
       const liveById = {};
       await Promise.all(idsToFetch.map(async (qid) => {
         try {
-          const snap = await getDocFromServer(doc(db, 'questions', qid));
-          if (snap.exists()) liveById[qid] = snap.data();
+          const d = await readLiveQuestion(qid);
+          if (d) liveById[qid] = d;
         } catch { /* non-fatal — report still renders its parent prompt */ }
       }));
       const enriched = rawReports.map(r => {
@@ -447,15 +458,13 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
 
     try {
       setPreviewAttemptLoading(true);
-      findReportAttempt(report)
+      findReportAttempt(report, { requireUnresolved: false })
         .then((attempt) => setPreviewAttempt(attempt))
         .catch((err) => console.warn('Could not fetch reported answer attempt:', err))
         .finally(() => setPreviewAttemptLoading(false));
 
-      const questionSnap = await getDocFromServer(doc(db, 'questions', questionId));
-      if (questionSnap.exists()) {
-        setPreviewQuestion({ id: questionSnap.id, ...questionSnap.data() });
-      }
+      const live = await readLiveQuestion(questionId);
+      if (live) setPreviewQuestion(live);
     } catch (err) {
       console.warn('Could not fetch latest reported question:', err);
     }
@@ -478,8 +487,10 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
       // just resolved; they have no scored attempt to restore).
       // Credit restore is best-effort — failures don't block the delete.
       await Promise.all([
-        updateDoc(doc(db, 'questions', question.id), { isActive: false }),
-        removeQuestionFromIndex(question.chapterId, question.id).catch(() => {}),
+        cdnEnabledAtAll()
+          ? contentPatch(question.id, { isActive: false }, { chapterId: question.chapterId })
+          : updateDoc(doc(db, 'questions', question.id), { isActive: false }),
+        cdnEnabledAtAll() ? Promise.resolve() : removeQuestionFromIndex(question.chapterId, question.id).catch(() => {}),
         // Blocklist + version stamp. Students getDoc once when opening Secret
         // Note; if version matches local cache they skip prune work.
         setDoc(doc(db, 'system_config', 'secretNoteBlocklist'), {

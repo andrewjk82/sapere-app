@@ -23,6 +23,8 @@ import { geometryToSvgDataUrl } from '../utils/geometrySvg';
 import { resolveCorrectOptionIndex } from '../utils/mcOptionShuffle';
 import { syncQuestionIndexOnSave, removeQuestionFromIndex } from '../services/questionIndexService';
 import { applyCountDeltas, stampCountsVersion } from '../services/questionCountsService';
+import { cdnEnabledAtAll, adminChapterQuestions } from '../services/contentLoader';
+import { contentUpsert, contentPatch } from '../services/contentApi';
 
 const QUESTION_PAGE_SIZE = 10;
 const questionBankSessionCache = new Map();
@@ -1546,6 +1548,12 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     else setLoadingMore(true);
 
     try {
+      if (cdnEnabledAtAll()) {
+        // Content is served from /content/ — the whole chapter is one cached fetch, no paging needed.
+        const all = (await adminChapterQuestions(chapterId)).sort((a, b) => String(a.id).localeCompare(String(b.id)));
+        setQuestions(all); setLastQuestionDoc(null); setHasMoreQuestions(false);
+        return;
+      }
       const constraints = [
         where('chapterId', '==', chapterId),
         orderBy(documentId()),
@@ -1859,6 +1867,18 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         // whatever's already on the doc untouched).
       });
 
+      if (cdnEnabledAtAll()) {
+        // Git-backed bank: one API call commits the question; students see it after the build.
+        const docBody = { ...payload }; delete docBody.updatedAt;   // serverTimestamp() is not serialisable
+        if (editingQuestion) docBody.id = editingQuestion;
+        await contentUpsert(docBody, { chapterId: payload.chapterId, topicId: payload.topicId });
+        questionBankSessionCache.delete(`questions:${chapterId}`);
+        await loadQuestionPage({ reset: true });
+        if (directEditQuestion) onClose(); else setIsFormOpen(false);
+        showToast(editingQuestion ? 'Saved — live for students in ~2 minutes.' : 'Added as pending — approve it in Pending Review.', 'success');
+        return;
+      }
+
       let savedQuestionId = editingQuestion;
       let isNewPending = false;
       if (editingQuestion) {
@@ -1948,10 +1968,18 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   const handleDelete = async (id, { closeAfter = false } = {}) => {
     if (!window.confirm("Delete this question? This cannot be undone.")) return;
     try {
+      if (cdnEnabledAtAll()) {
+        await contentPatch(id, { isActive: false }, { chapterId: questions.find(q => q.id === id)?.chapterId || chapterId });
+      } else {
       await updateDoc(doc(db, 'questions', id), {
         isActive: false,
         updatedAt: serverTimestamp(),
       });
+      }
+      // Firestore-era bookkeeping (index / membershipVersion / counts) — irrelevant once the bank
+      // is served from /content/ (the manifest is the index), and the membershipVersion bump was the
+      // 2026-07 practice_pool storm trigger, so never fire it in CDN mode.
+      if (!cdnEnabledAtAll()) {
       // One shared version across the index stamp and the counts doc — if
       // they diverge, the counts doc looks stale and triggers a full rebuild.
       const bankVersion = Date.now();
@@ -1970,6 +1998,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
           ...(deleted?.chapterId || chapterId ? { [deleted?.chapterId || chapterId]: -1 } : {}),
           ...(deleted?.topicId ? { [deleted.topicId]: -1 } : {}),
         }, bankVersion);
+      }
       }
       // Resolve all open reports linked to this question.
       // Query both questionId field and questionData.id (some reports store ID only in questionData).

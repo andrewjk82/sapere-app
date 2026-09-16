@@ -7,6 +7,8 @@ import { syncQuestionIndexOnSave } from '../services/questionIndexService';
 import { applyCountDeltas } from '../services/questionCountsService';
 import QuestionPreviewCard from './QuestionPreviewCard';
 import QuestionBankModal from './QuestionBankModal';
+import { cdnEnabledAtAll, adminPendingQuestions, adminGetQuestion } from '../services/contentLoader';
+import { contentPatch } from '../services/contentApi';
 
 // QuestionBankModal expects a real curriculum `chapter` ({id, title, topics})
 // so its topic dropdown works — a pending question only carries its own
@@ -47,8 +49,9 @@ const PendingReviewPanel = () => {
     let cancelled = false;
     (async () => {
       try {
-        const snap = await getDocs(query(collection(db, 'questions'), where('reviewStatus', '==', 'pending')));
-        const rows = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+        const rows = cdnEnabledAtAll()
+          ? await adminPendingQuestions()   // published in admin.<hash>.json — pending never reaches students
+          : (await getDocs(query(collection(db, 'questions'), where('reviewStatus', '==', 'pending')))).docs.map((d) => ({ id: d.id, ...d.data() }));
         rows.sort((a, b) => (b.createdAt?.seconds || 0) - (a.createdAt?.seconds || 0));
         if (!cancelled) setItems(rows);
       } catch (err) {
@@ -68,6 +71,12 @@ const PendingReviewPanel = () => {
       // (same pattern as QuestionBankModal.jsx's handleSave).
       // eslint-disable-next-line react-hooks/purity
       const version = Date.now();
+      if (cdnEnabledAtAll()) {
+        await contentPatch(q.id, { isActive: true, reviewStatus: 'approved' }, { chapterId: q.chapterId });
+        setItems((prev) => prev.filter((it) => it.id !== q.id));
+        showToast('Approved — visible to students in ~2 minutes.', 'success');
+        return;
+      }
       await updateDoc(doc(db, 'questions', q.id), {
         isActive: true,
         reviewStatus: 'approved',
@@ -101,7 +110,8 @@ const PendingReviewPanel = () => {
     if (!window.confirm(`Reject this question? It stays hidden from students but is not deleted — you can still find it via origin in the Question Bank.`)) return;
     setBusyId(q.id);
     try {
-      await updateDoc(doc(db, 'questions', q.id), {
+      if (cdnEnabledAtAll()) await contentPatch(q.id, { isActive: false, reviewStatus: 'rejected' }, { chapterId: q.chapterId });
+      else await updateDoc(doc(db, 'questions', q.id), {
         reviewStatus: 'rejected',
         updatedAt: serverTimestamp(),
       });
@@ -124,6 +134,11 @@ const PendingReviewPanel = () => {
     setEditingQuestion(null);
     if (!id) return;
     try {
+      if (cdnEnabledAtAll()) {
+        const updated = await adminGetQuestion(id);
+        if (updated) setItems((prev) => prev.map((it) => (it.id === id ? updated : it)));
+        return;
+      }
       const snap = await getDoc(doc(db, 'questions', id));
       if (snap.exists()) {
         const updated = { id: snap.id, ...snap.data() };

@@ -4,7 +4,7 @@
  */
 import { z } from 'zod';
 
-const FigRef = z.string().regex(/^fig:[0-9a-f]{10}$/);
+const FigRef = z.string().regex(/^fig:[0-9a-f]{10}$/).or(z.string().regex(/^\s*<svg[\s\S]*<\/svg>\s*$/));
 export const Figure = z.object({
   svg: FigRef.optional(),
   jsxGraph: z.any().optional(),

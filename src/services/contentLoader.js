@@ -76,62 +76,10 @@ const getIdMap = async () => {
   return idsCache;
 };
 
-// ---------- legacy shape adapter -----------------------------------------------------------------
-const TYPE_BACK = { mc: 'multiple_choice', short: 'short_answer', review: 'teacher_review', multipart: 'multi_part' };
-const figBack = (fig) => {
-  if (!fig) return null;
-  const g = {};
-  if (fig.svg) g.svg = fig.svg;
-  if (fig.jsxGraph) g.jsxGraph = fig.jsxGraph;
-  if (fig.geometry) g.geometry = fig.geometry;
-  if (fig.html) g.html = fig.html;
-  if (fig.source) g.diagramSource = fig.source;
-  if (fig.plot) Object.assign(g, fig.plot);
-  if (fig.raw) Object.assign(g, fig.raw);
-  return Object.keys(g).length ? g : null;
-};
-const optBack = (o) => (typeof o === 'string'
-  ? { text: o, imageUrl: '' }
-  : { text: o.text || '', imageUrl: o.image || '', ...(o.figure ? { graphData: figBack(o.figure) } : {}) });
+// ---------- legacy shape adapter (shared with api/content.js) ----------------------------------
+import { toLegacy } from '../../content/legacy.js';
+export { toLegacy };
 
-/** canonical question (content/schema.js) → the Firestore document shape every component expects */
-export const toLegacy = (q, ctx = {}) => {
-  const isMC = q.type === 'mc' || (q.type === 'multipart' && q.mc === true);
-  const d = {
-    id: q.id,
-    type: q.type === 'short' && q.blanks?.length ? 'fill_blank' : (isMC ? 'multiple_choice' : (TYPE_BACK[q.type] || 'short_answer')),
-    question: q.stem || '',
-    options: (q.options || []).map(optBack),
-    answer: isMC ? (q.answer == null ? '' : String(q.answer)) : (q.answer ?? ''),
-    hint: q.hint || '',
-    solution: q.solution || '',
-    solutionSteps: (q.steps || []).map((s) => ({ explanation: s.explain || '', workingOut: s.work || '', graphData: figBack(s.figure), ...(s.ext || {}) })),
-    graphData: figBack(q.figure),
-    questionImage: q.image || '',
-    subQuestions: (q.parts || []).map((p) => toLegacy(p, ctx)),
-    blanks: q.blanks || [],
-    acceptedAnswers: q.accepted || [],
-    difficulty: q.difficulty || '',
-    timeLimit: q.timeLimit || 120,
-    requiresManualGrading: q.manual === true,
-    isManual: true,
-    isActive: q.inactive !== true,
-    topicId: ctx.synthetic ? '' : (ctx.topicId || ''),   // synthetic topic (topicId was '' in Firestore)
-    topicCode: ctx.code || '',
-    topicTitle: ctx.title || '',
-    chapterId: ctx.chapterId || '',
-    chapterTitle: ctx.chapterTitle || '',
-    year: ctx.year || '',
-    examPaper: q.meta?.examPaper || '',
-    origin: q.meta?.origin || 'seed',
-    title: `${(q.stem || '').replace(/\$/g, '').slice(0, 30)}...`,
-  };
-  if (q.hscType) d.questionType = q.hscType;
-  if (q.meta) for (const k of ['source', 'sourcePaper', 'school', 'examType', 'course', 'grade', 'tags', 'reviewStatus']) if (q.meta[k] != null) d[k] = q.meta[k];
-  if (q.dna) Object.assign(d, q.dna);
-  if (q.ext) Object.assign(d, q.ext);
-  return d;
-};
 const legacyFromTopicFile = (tf) => tf.questions.map((q) => toLegacy(q, { topicId: tf.topicId, synthetic: tf.synthetic === true, code: tf.code, title: tf.title, chapterId: tf.chapterId, chapterTitle: tf.chapterTitle, year: tf.year }));
 
 // ---------- public reads (all zero-Firestore) ----------------------------------------------------
@@ -217,3 +165,88 @@ export const getQuestionsByIds = async (ids) => {
 
 /** Single question (null if not served). */
 export const getQuestion = async (id) => (await getQuestionsByIds([id])).docs[0] || null;
+
+// ================================================================================================
+// Admin / HSC surfaces and the local edit overlay (P4)
+// ================================================================================================
+
+// ---------- edit overlay ------------------------------------------------------------------------
+// A teacher's save goes to git and reaches /content/ after the Vercel build (~2 min). Until the
+// manifest's contentHash changes, this browser layers its own saved docs on top of what it reads so
+// the editor sees the edit immediately. Per-browser only (localStorage); never affects students.
+const OVERLAY_KEY = 'sapere:contentOverlay';
+const readOverlay = () => { try { return JSON.parse(window.localStorage.getItem(OVERLAY_KEY) || 'null') || { hash: null, docs: {}, removed: [] }; } catch { return { hash: null, docs: {}, removed: [] }; } };
+const writeOverlay = (o) => { try { window.localStorage.setItem(OVERLAY_KEY, JSON.stringify(o)); } catch { /* ignore */ } };
+let overlayHash = null;
+const overlayFor = async () => {
+  const m = await getManifest();
+  const o = readOverlay();
+  if (o.hash && o.hash !== m.contentHash) { writeOverlay({ hash: null, docs: {}, removed: [] }); return { docs: {}, removed: [] }; } // build landed → drop
+  overlayHash = m.contentHash;
+  return o;
+};
+/** Record a just-saved legacy doc (or a removal) so this browser shows it before the next build. */
+export const overlayPut = async (doc) => { const o = await overlayFor(); o.hash = overlayHash; o.docs[doc.id] = doc; o.removed = o.removed.filter((id) => id !== doc.id); writeOverlay(o); };
+export const overlayRemove = async (id) => { const o = await overlayFor(); o.hash = overlayHash; delete o.docs[id]; if (!o.removed.includes(id)) o.removed.push(id); writeOverlay(o); };
+export const overlayGet = async (id) => (await overlayFor()).docs[id] || null;
+const applyOverlay = async (docs, { chapterId, topicId } = {}) => {
+  const o = await overlayFor();
+  const removed = new Set(o.removed);
+  const out = docs.filter((d) => !removed.has(d.id)).map((d) => o.docs[d.id] || d);
+  const seen = new Set(out.map((d) => d.id));
+  for (const d of Object.values(o.docs)) {
+    if (seen.has(d.id)) continue;
+    if (chapterId && d.chapterId !== chapterId) continue;
+    if (topicId && d.topicId !== topicId) continue;
+    if (chapterId || topicId) out.push(d);   // newly added question in this chapter/topic
+  }
+  return out;
+};
+
+// ---------- admin reads ---------------------------------------------------------------------------
+/** Active questions of a chapter (optionally one topic) for the Question Bank, overlay applied. */
+export const adminChapterQuestions = async (chapterId, topicId) => {
+  const docs = topicId ? await getTopicQuestions(topicId, { chapterId }) : await getChapterQuestions(chapterId);
+  return applyOverlay(docs, { chapterId, topicId });
+};
+/** Inactive / pending questions (published in admin.<hash>.json only). */
+export const adminInactiveQuestions = async () => {
+  const m = await getManifest();
+  const a = await fetchJson(`/content/${m.admin}`);
+  return applyOverlay(a.inactive.map(({ ctx, q }) => toLegacy(q, ctx)));
+};
+export const adminPendingQuestions = async () => (await adminInactiveQuestions()).filter((d) => d.reviewStatus === 'pending');
+/** Every active id with its chapter/topic — loaded once, for id-prefix search. */
+let allIdsCache = null;
+export const searchIds = async (prefix) => {
+  const m = await getManifest();
+  if (!allIdsCache) allIdsCache = fetchJson(`/content/${m.allIds}`).catch((e) => { allIdsCache = null; throw e; });
+  const p = String(prefix).toLowerCase();
+  return (await allIdsCache).filter(([id]) => id.toLowerCase().startsWith(p)).map(([id, chapterId, topicId]) => ({ id, chapterId, topicId }));
+};
+/** Single question by id, overlay-aware; falls back to the inactive set for admin use. */
+export const adminGetQuestion = async (id) => {
+  const ov = await overlayGet(id); if (ov) return ov;
+  const live = await getQuestion(id); if (live) return live;
+  return (await adminInactiveQuestions()).find((d) => d.id === id) || null;
+};
+/** HSC type practice: questions tagged with a DNA/type slug (replaces the dnaId / questionType / question_type_index queries). */
+export const getQuestionsByHscType = async (slug) => {
+  const m = await getManifest();
+  const idx = await fetchJson(`/content/${m.hscTypes}`);
+  const ids = [...new Set([...(idx.byDna?.[slug] || []), ...(idx.byType?.[slug] || [])])];
+  return ids.length ? (await getQuestionsByIds(ids)).docs : [];
+};
+
+/** Question counts per chapter and per topic straight from the manifest (Curriculum tab badges). */
+export const getContentCounts = async () => {
+  const m = await getManifest();
+  const chapters = {}; const topics = {};
+  for (const [cid, tps] of Object.entries(m.chapters)) {
+    let sum = 0;
+    for (const [tid, [, count]] of Object.entries(tps)) { topics[tid] = (topics[tid] || 0) + count; sum += count; }
+    chapters[cid] = sum;
+  }
+  let version = 0; for (const c of m.contentHash || '') version = (version * 31 + c.charCodeAt(0)) >>> 0;
+  return { chapters, topics, version };
+};

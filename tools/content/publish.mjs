@@ -11,7 +11,9 @@
  *                                 ├─ topics/<chapter>__<topic>.<hash>.json   one file per (chapter, topic), immutable
  *                                 ├─ ids.<hash>.json               id → topicId for ids whose topic isn't derivable from the prefix
  *                                 ├─ extra.<hash>.json             chapter → { topicId: [ids] } cross-listings (alsoIn)
- *                                 └─ hsc-types.<hash>.json         hscType slug → [ids]  (replaces question_type_index)
+ *                                 ├─ hsc-types.<hash>.json         { byType: {slug:[ids]}, byDna: {dnaId:[ids]} }  (replaces question_type_index)
+ *                                 ├─ all-ids.<hash>.json           [[id, chapterId, topicId], …] every ACTIVE question — admin id-prefix search only
+ *                                 └─ admin.<hash>.json             inactive/pending questions with context — admin surfaces only
  *
  * Rules:
  *   - inactive questions are NOT published (they stay in git)
@@ -58,7 +60,7 @@ fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(path.join(OUT, 'topics'), { recursive: true });
 
 const manifest = { builtAt: new Date().toISOString(), topics: {}, chapters: {} };
-const idToTopic = {}; const extra = {}; const hscTypes = {};
+const idToTopic = {}; const extra = {}; const hscTypes = {}; const dnaTypes = {}; const allIds = []; const adminDocs = [];
 let nQ = 0, nInactive = 0, bytes = 0;
 
 for (const f of fs.readdirSync(SRC).filter((x) => x.endsWith('.json')).sort(natural)) {
@@ -67,10 +69,14 @@ for (const f of fs.readdirSync(SRC).filter((x) => x.endsWith('.json')).sort(natu
   for (const t of ch.topics) {
     const active = t.questions.filter((q) => !q.inactive);
     nInactive += t.questions.length - active.length;
+    const ctx = { topicId: t.topicId, synthetic: t.synthetic === true, code: t.code, title: t.title, chapterId: ch.chapterId, chapterTitle: ch.title, year: ch.year };
+    for (const q of t.questions) if (q.inactive) adminDocs.push({ ctx, q: inlineQuestion(q) });
     for (const q of active) {
       nQ++;
       if (q.id.replace(/-[^-]+$/, '') !== t.topicId) idToTopic[q.id] = t.topicId;
       if (q.hscType) (hscTypes[q.hscType] ||= []).push(q.id);
+      if (q.dna?.dnaId) (dnaTypes[q.dna.dnaId] ||= []).push(q.id);
+      allIds.push([q.id, ch.chapterId, t.topicId]);
       for (const other of q.alsoIn || []) ((extra[other] ||= {})[t.topicId] ||= []).push(q.id);
     }
     const body = JSON.stringify({ topicId: t.topicId, ...(t.synthetic ? { synthetic: true } : {}), chapterId: ch.chapterId, chapterTitle: ch.title, year: ch.year, code: t.code, title: t.title, questions: active.map(inlineQuestion) });
@@ -86,8 +92,12 @@ for (const k in hscTypes) hscTypes[k].sort(natural);
 const side = (name, obj) => { const body = JSON.stringify(obj); const n = `${name}.${sha(body)}.json`; fs.writeFileSync(path.join(OUT, n), body); return [n, body.length]; };
 const [idsName, idsLen] = side('ids', idToTopic);
 const [extraName] = side('extra', extra);
-const [hscName] = side('hsc-types', hscTypes);
-manifest.ids = idsName; manifest.extra = extraName; manifest.hscTypes = hscName;
+for (const k in dnaTypes) dnaTypes[k].sort(natural);
+const [hscName] = side('hsc-types', { byType: hscTypes, byDna: dnaTypes });
+allIds.sort((a, b) => natural(a[0], b[0]));
+const [allIdsName] = side('all-ids', allIds);
+const [adminName] = side('admin', { inactive: adminDocs });
+manifest.ids = idsName; manifest.extra = extraName; manifest.hscTypes = hscName; manifest.allIds = allIdsName; manifest.admin = adminName;
 manifest.contentHash = sha(Object.values(manifest.chapters).flatMap((c) => Object.values(c).map((v) => v[0])).join(''));
 fs.writeFileSync(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 1));
 
