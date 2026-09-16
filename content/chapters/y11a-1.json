@@ -53,8 +53,8 @@
         {
           "id": "0020afdcda6504b35f3882205e8211b9",
           "type": "mc",
-          "difficulty": "hard",
           "stem": "Expand: \\((4y - 1)^3\\)",
+          "difficulty": "hard",
           "options": [
             "\\(64y^3 - 48y^2 + 12y - 1\\)",
             "\\(64y^3 - 48y^2 - 12y - 1\\)",
@@ -62,7 +62,7 @@
             "\\(64y^3 - 96y^2 + 24y - 1\\)"
           ],
           "answer": 0,
-          "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\)",
+          "hint": "Use the cubic identity: \\((A \\pm B)^3 = A^3 \\pm 3A^2B + 3AB^2 \\pm B^3\\) test",
           "solution": "\\(64y^3 - 48y^2 + 12y - 1\\)",
           "steps": [
             {
@@ -90,7 +90,10 @@
               "work": "\\(64y^3 - 48y^2 + 12y - 1\\)"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "meta": {
+            "origin": "teacher"
+          }
         },
         {
           "id": "03832022b0a22f0e935270f33b507588",
