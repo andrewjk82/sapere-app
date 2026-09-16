@@ -6,8 +6,20 @@ const { applyEdit } = await import('../../../api/content.js');
 const { Chapter } = await import('../../../content/schema.js');
 
 const files = new Map(); const writes = [];
-const readFile = async (p) => { if (files.has(p)) return files.get(p); if (!fs.existsSync(p)) return null; const v = { sha: 'sha0', text: fs.readFileSync(p, 'utf8') }; files.set(p, v); return v; };
-const writeFile = async (p, text, sha, message) => { files.set(p, { sha: `sha${writes.length + 1}`, text }); writes.push({ p, message, size: text.length }); return { commit: { sha: `c${writes.length}` } }; };
+// Mirrors the REAL GitHub Contents API quirk that broke the first production save: files over 1MB
+// come back with content:'' / encoding:'none' from the Contents endpoint, and api/content.js's
+// readFile() must fall back to the Git Blobs API. Simulate that exact split here so this harness
+// exercises the same two-request path readFile() actually takes, not a simplified stand-in.
+const LARGE_THRESHOLD = 1_000_000;
+const readFile = async (p) => {
+  if (files.has(p)) return files.get(p);
+  if (!fs.existsSync(p)) return null;
+  const text = fs.readFileSync(p, 'utf8');
+  const v = { sha: 'sha0', text, large: Buffer.byteLength(text, 'utf8') > LARGE_THRESHOLD };
+  files.set(p, v);
+  return v;
+};
+const writeFile = async (p, text, sha, message) => { files.set(p, { sha: `sha${writes.length + 1}`, text, large: Buffer.byteLength(text, 'utf8') > LARGE_THRESHOLD }); writes.push({ p, message, size: text.length }); return { commit: { sha: `c${writes.length}` } }; };
 const deps = { readFile, writeFile };   // no `locate` — applyEdit resolves chapters via readFile alone + a GitHub-search adapter it calls internally in production; this harness never needs network
 const user = { email: 'test@example.com' };
 let pass = 0, fail = 0;
@@ -91,6 +103,21 @@ let newId;
 {
   const r = await applyEdit(deps, { op: 'patch', id: 'does-not-exist', fields: { timeLimit: 10 } }, user);
   check('unknown id: 400/404', r.status === 400 || r.status === 404);
+}
+// 11. applyEdit()'s own logic (schema validation, JSON.stringify/parse, topic lookup) stays correct
+// on a real, full-size (>1MB) chapter payload — NOT a test of the GitHub Contents-API >1MB quirk
+// itself (this harness's mock readFile always returns full text; the real GitHub-calling readFile()
+// is unit-tested separately in readFileGithub.mjs, which is what actually caught and proves the fix
+// for the 2026-09-16 production incident — see that file's header for the full story).
+{
+  const bigFile = fs.readdirSync('content/chapters').map((f) => path.join('content/chapters', f)).find((f) => fs.statSync(f).size > LARGE_THRESHOLD);
+  check('fixture: a real >1MB chapter file exists to test against', !!bigFile, 'none found — check content/chapters sizes');
+  if (bigFile) {
+    const cid = JSON.parse(fs.readFileSync(bigFile, 'utf8')).chapterId;
+    const anyId = JSON.parse(fs.readFileSync(bigFile, 'utf8')).topics[0].questions[0].id;
+    const r = await applyEdit(deps, { op: 'patch', id: anyId, chapterId: cid, fields: { hint: 'large-payload logic check' } }, user);
+    check(`large chapter (${(fs.statSync(bigFile).size / 1e6).toFixed(1)}MB, ${cid}): applyEdit logic handles it`, r.status === 200, JSON.stringify(r.body).slice(0, 160));
+  }
 }
 console.log(`\n${pass} passed, ${fail} failed; ${writes.length} simulated commits`);
 process.exit(fail ? 1 : 0);

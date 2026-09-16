@@ -45,9 +45,19 @@ async function gh(path, options = {}) {
   return data;
 }
 const fileOf = (chapterId) => `content/chapters/${chapterId.replace(/[^a-z0-9:_-]/gi, '_')}.json`;
-async function readFile(path) {
-  try { const d = await gh(`/repos/${GITHUB_REPO}/contents/${encodeURIComponent(path).replace(/%2F/g, '/')}?ref=${GITHUB_BRANCH}`); return { sha: d.sha, text: Buffer.from(d.content, 'base64').toString('utf8') }; }
-  catch (e) { if (e.status === 404) return null; throw e; }
+/**
+ * The Contents API omits `content` (encoding:'none', content:'') for files over 1MB — 11 of our 228
+ * chapter files already cross that (y11a-1, y11a-5, y7-1, ...), so this was hit on the very first
+ * real save and must never regress: it's the exact input tools/content/tests/apiEdit.mjs's
+ * "large file" case exercises. Fall back to the Git Data Blobs API (works up to 100MB) by sha.
+ */
+export async function readFile(path) {
+  try {
+    const d = await gh(`/repos/${GITHUB_REPO}/contents/${encodeURIComponent(path).replace(/%2F/g, '/')}?ref=${GITHUB_BRANCH}`);
+    if (d.content) return { sha: d.sha, text: Buffer.from(d.content, 'base64').toString('utf8') };
+    const blob = await gh(`/repos/${GITHUB_REPO}/git/blobs/${d.sha}`);
+    return { sha: d.sha, text: Buffer.from(blob.content, 'base64').toString('utf8') };
+  } catch (e) { if (e.status === 404) return null; throw e; }
 }
 async function writeFile(path, text, sha, message) {
   return gh(`/repos/${GITHUB_REPO}/contents/${encodeURIComponent(path).replace(/%2F/g, '/')}`, { method: 'PUT', body: JSON.stringify({ message, content: Buffer.from(text, 'utf8').toString('base64'), branch: GITHUB_BRANCH, ...(sha ? { sha } : {}) }) });

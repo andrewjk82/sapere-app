@@ -37,8 +37,9 @@
     "content:publish": "node tools/content/publish.mjs",
     "build:app": "vite build",
     "test:content-parity": "npm run content:publish && node --no-warnings --import ./scripts/extResolve.mjs tools/content/tests/adapterParity.mjs",
-    "test:content-api": "node --no-warnings tools/content/tests/apiEdit.mjs",
-    "test:content": "npm run test:content-parity && npm run test:content-api"
+    "test:content-api": "npm run test:content-readfile && node --no-warnings tools/content/tests/apiEdit.mjs",
+    "test:content": "npm run test:content-parity && npm run test:content-api",
+    "test:content-readfile": "node --no-warnings tools/content/tests/readFileGithub.mjs"
   },
   "dependencies": {
     "3d-force-graph": "^1.80.0",
