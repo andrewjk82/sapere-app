@@ -9958,7 +9958,7 @@
           "id": "y9-14f-q6a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "The lines with equations \\( y = x + k \\) and \\( y = mx + 3 \\) intersect at \\( (1, 2) \\). Find \\( k \\).",
+          "stem": "The lines with equations \\( y = x + k \\) and \\( y = mx + 3 \\) intersect at \\( (1, 2) \\). Find \\( k \\).\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"300\" height=\"240\" viewBox=\"0 0 300 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs>\n    <pattern id=\"grid\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\"><path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><path d=\"M 0 30 L 30 30\" fill=\"none\" stroke=\"#f1f5f9\" stroke-width=\"1\"/></pattern>\n  </defs>\n  <rect width=\"300\" height=\"240\" fill=\"url(#grid)\" rx=\"12\"/>\n  \n  <!-- Axes -->\n  <line x1=\"0\" y1=\"180\" x2=\"300\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\"/>\n  <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"240\" stroke=\"#94a3b8\" stroke-width=\"2\"/>\n  \n  <!-- Line 1: y = x + 1 -->\n  <line x1=\"60\" y1=\"270\" x2=\"270\" y2=\"60\" stroke=\"#3b82f6\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Line 2: y = mx + 3 (dashed representation) -->\n  <line x1=\"90\" y1=\"30\" x2=\"270\" y2=\"210\" stroke=\"#ef4444\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-dasharray=\"6,4\"/>\n  \n  <!-- Intersection Point (1, 2) -->\n  <circle cx=\"180\" cy=\"120\" r=\"4.5\" fill=\"#10b981\"/>\n  <text x=\"195\" y=\"115\" text-anchor=\"start\" fill=\"#10b981\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"600\">(1, 2)</text>\n  \n  <!-- Labels -->\n  <text x=\"285\" y=\"174\" text-anchor=\"end\" fill=\"#64748b\" font-family=\"'Outfit', sans-serif\" font-size=\"12\">x</text>\n  <text x=\"156\" y=\"15\" text-anchor=\"start\" fill=\"#64748b\" font-family=\"'Outfit', sans-serif\" font-size=\"12\">y</text>\n  <text x=\"260\" y=\"50\" text-anchor=\"end\" fill=\"#3b82f6\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"600\">y = x + k</text>\n  <text x=\"100\" y=\"25\" text-anchor=\"start\" fill=\"#ef4444\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"600\">y = mx + 3</text>\n</svg></div>",
           "options": [
             "\\(0\\)",
             "\\(1\\)",
@@ -9966,40 +9966,20 @@
             "\\(3\\)"
           ],
           "answer": 1,
-          "hint": "Substitute the x and y values of the intersection point into the first equation.",
-          "solution": "1",
           "steps": [
             {
               "explain": "Understand the meaning of an intersection point.",
-              "work": "If two lines intersect at a point, that point must lie on both lines. This means the coordinates of the point must satisfy the equations of both lines."
+              "work": "\\text{If two lines intersect at a point, that point must lie on both lines.} \\\\ \\text{Therefore, the coordinates } (x, y) = (1, 2) \\text{ must satisfy both equations.}"
             },
             {
-              "explain": "Substitute the coordinates into the relevant equation.",
-              "work": "We are looking for \\(k\\), which is in the first equation: \\(y = x + k\\). Substitute the intersection point \\((x=1, y=2)\\) into this equation."
+              "explain": "Substitute the coordinates into the first equation to find \\(k\\).",
+              "work": "\\begin{aligned} y &= x + k \\\\ 2 &= 1 + k \\end{aligned}"
             },
             {
               "explain": "Solve for \\(k\\).",
-              "work": "\\(2 = 1 + k \\implies k = 2 - 1 \\implies k = 1\\)."
-            },
-            {
-              "explain": "State the final answer.",
-              "work": "Therefore, \\(k = 1\\).",
-              "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 280,
-                  "boundingbox": [
-                    -6,
-                    6,
-                    6,
-                    -6
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (1)*x + (0); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
-              }
+              "work": "\\begin{aligned} k &= 2 - 1 \\\\ k &= 1 \\end{aligned}"
             }
           ],
-          "manual": true,
           "timeLimit": 90
         },
         {
