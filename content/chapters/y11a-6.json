@@ -26669,37 +26669,34 @@
         },
         {
           "id": "y11a-6k-q3c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
-          "stem": "Simplify the expression: \\\\(\\\\frac{\\\\tan \\\\theta}{\\\\sin \\\\theta}\\\\)",
-          "answer": "\\(\\sec \\theta\\)",
+          "stem": "Simplify the expression: \\(\\frac{\\tan \\theta}{\\sin \\theta}\\)",
+          "answer": 0,
           "options": [
             "\\(\\sec \\theta\\)",
             "\\(\\cot \\theta\\)",
             "\\(\\text{cosec} \\theta\\)",
             "\\(\\cos \\theta\\)"
           ],
-          "hint": "Express tangent as sine over cosine, then divide by sine.",
-          "solution": "\\(\\sec \\theta\\)",
           "steps": [
             {
-              "explain": "Express \\(\\tan \\theta\\) in terms of sine and cosine.",
-              "work": "\\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\)"
+              "explain": "Start by expressing \\(\\tan \\theta\\) in terms of sine and cosine.",
+              "work": "\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}"
             },
             {
-              "explain": "Substitute this into the fraction.",
-              "work": "\\(\\frac{\\frac{\\sin \\theta}{\\cos \\theta}}{\\sin \\theta}\\)"
+              "explain": "Substitute this into the fraction and rewrite the division as multiplication by the reciprocal.",
+              "work": "\\begin{aligned} \\frac{\\tan \\theta}{\\sin \\theta} &= \\frac{\\frac{\\sin \\theta}{\\cos \\theta}}{\\sin \\theta} \\\\ &= \\frac{\\sin \\theta}{\\cos \\theta} \\times \\frac{1}{\\sin \\theta} \\end{aligned}"
             },
             {
-              "explain": "Simplify the complex fraction.",
-              "work": "\\(\\frac{\\sin \\theta}{\\cos \\theta} \\times \\frac{1}{\\sin \\theta}\\)"
+              "explain": "Cancel the common \\(\\sin \\theta\\) terms in the numerator and denominator.",
+              "work": "\\frac{\\sin \\theta}{\\cos \\theta} \\times \\frac{1}{\\sin \\theta} = \\frac{1}{\\cos \\theta}"
             },
             {
-              "explain": "Cancel \\(\\sin \\theta\\) and use the reciprocal identity.",
-              "work": "\\(\\frac{1}{\\cos \\theta} = \\sec \\theta\\)"
+              "explain": "Finally, apply the reciprocal identity for cosine.",
+              "work": "\\frac{1}{\\cos \\theta} = \\sec \\theta"
             }
           ],
-          "manual": true,
           "timeLimit": 90
         },
         {
