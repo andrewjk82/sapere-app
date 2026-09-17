@@ -15068,10 +15068,10 @@
               "type": "mc",
               "stem": "d) What does this result tell us about \\(\\Delta ABC\\)?",
               "options": [
-                "\\(Angle\\ A\\ is\\ a\\ right\\ angle\\ (90^\\circ).\\)",
-                "\\(Angle\\ C\\ is\\ a\\ right\\ angle\\ (90^\\circ).\\)",
-                "\\(Angle\\ B\\ is\\ a\\ right\\ angle\\ (90^\\circ).\\)",
-                "\\(The\\ triangle\\ is\\ equilateral.\\)"
+                "Angle A is a right angle (\\(90^\\circ\\)).",
+                "Angle C is a right angle (\\(90^\\circ\\)).",
+                "Angle B is a right angle (\\(90^\\circ\\)).",
+                "The triangle is equilateral."
               ],
               "answer": 2,
               "steps": [
