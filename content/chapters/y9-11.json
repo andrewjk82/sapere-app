@@ -15006,7 +15006,7 @@
                   "work": "m = \\frac{y_2 - y_1}{x_2 - x_1}"
                 },
                 {
-                  "explain": "Substitute the coordinates of $A(2, 1)$ and $B(5, 5)$.",
+                  "explain": "Substitute the coordinates of \\(A(2, 1)\\) and \\(B(5, 5)\\).",
                   "work": "m_{AB} = \\frac{5 - 1}{5 - 2}"
                 },
                 {
@@ -15032,7 +15032,7 @@
                   "work": "m = \\frac{y_2 - y_1}{x_2 - x_1}"
                 },
                 {
-                  "explain": "Substitute the coordinates of $B(5, 5)$ and $C(9, 2)$.",
+                  "explain": "Substitute the coordinates of \\(B(5, 5)\\) and \\(C(9, 2)\\).",
                   "work": "m_{BC} = \\frac{2 - 5}{9 - 5}"
                 },
                 {
@@ -15054,7 +15054,7 @@
               "answer": 3,
               "steps": [
                 {
-                  "explain": "Multiply the gradient of $AB$ by the gradient of $BC$.",
+                  "explain": "Multiply the gradient of \\(AB\\) by the gradient of \\(BC\\).",
                   "work": "m_{AB} \\times m_{BC} = \\frac{4}{3} \\times \\left(-\\frac{3}{4}\\right)"
                 },
                 {
@@ -16338,132 +16338,6 @@
           ],
           "answer": "a) m = 2, b) C(5, 8), c) y = -1/2x + 21/2, d) 10.5",
           "hint": "Find the gradient and midpoint of AB first, then determine the perpendicular gradient and point-slope equation."
-        },
-        {
-          "id": "y9-11g-q13a",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Triangle \\(ABC\\) has vertices \\(A(2, 1)\\), \\(B(5, 5)\\) and \\(C(9, 2)\\). Answer the following sub-questions to show that \\(\\Delta ABC\\) is right-angled.\nFind the gradient of \\(AB\\).",
-          "figure": {
-            "jsxGraph": {
-              "width": 360,
-              "height": 280,
-              "boundingbox": [
-                -1,
-                7,
-                11,
-                -1
-              ],
-              "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[11,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-1],[0,7]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [10.5, -0.5, 'x'], {fontSize:13, color:'#64748b'});\nboard.create('text', [0.2, 6.5, 'y'], {fontSize:13, color:'#64748b'});\n\nboard.create('point', [2, 1], {name:'A', size:3, color:'#ef4444'});\nboard.create('point', [5, 5], {name:'B', size:3, color:'#ef4444'});\nboard.create('point', [9, 2], {name:'C', size:3, color:'#ef4444'});\n\nboard.create('segment', [[2,1], [5,5]], {strokeColor:'#6366f1', strokeWidth:2});\nboard.create('segment', [[5,5], [9,2]], {strokeColor:'#6366f1', strokeWidth:2});\nboard.create('segment', [[9,2], [2,1]], {strokeColor:'#94a3b8', strokeWidth:1.5, dash:2});\n\nboard.unsuspendUpdate();"
-            }
-          },
-          "options": [
-            "\\(-\\frac{3}{4}\\)",
-            "\\(\\frac{3}{4}\\)",
-            "\\(\\frac{4}{3}\\)",
-            "\\(\\frac{5}{3}\\)"
-          ],
-          "answer": 2,
-          "steps": [
-            {
-              "explain": "State the gradient formula.",
-              "work": "m = \\frac{y_2 - y_1}{x_2 - x_1}"
-            },
-            {
-              "explain": "Substitute the coordinates of $A(2, 1)$ and $B(5, 5)$.",
-              "work": "m_{AB} = \\frac{5 - 1}{5 - 2}"
-            },
-            {
-              "explain": "Simplify to find the gradient.",
-              "work": "m_{AB} = \\frac{4}{3}"
-            }
-          ],
-          "manual": true,
-          "timeLimit": 60,
-          "meta": {
-            "origin": "teacher"
-          }
-        },
-        {
-          "id": "y9-11g-q13c",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Triangle \\(ABC\\) has vertices \\(A(2, 1)\\), \\(B(5, 5)\\) and \\(C(9, 2)\\). Answer the following sub-questions to show that \\(\\Delta ABC\\) is right-angled.\nc) Calculate the product of the gradients of \\(AB\\) and \\(BC\\).",
-          "figure": {
-            "jsxGraph": {
-              "width": 360,
-              "height": 280,
-              "boundingbox": [
-                -1,
-                7,
-                11,
-                -1
-              ],
-              "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[11,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-1],[0,7]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [10.5, -0.5, 'x'], {fontSize:13, color:'#64748b'});\nboard.create('text', [0.2, 6.5, 'y'], {fontSize:13, color:'#64748b'});\n\nboard.create('point', [2, 1], {name:'A', size:3, color:'#ef4444'});\nboard.create('point', [5, 5], {name:'B', size:3, color:'#ef4444'});\nboard.create('point', [9, 2], {name:'C', size:3, color:'#ef4444'});\n\nboard.create('segment', [[2,1], [5,5]], {strokeColor:'#6366f1', strokeWidth:2});\nboard.create('segment', [[5,5], [9,2]], {strokeColor:'#6366f1', strokeWidth:2});\nboard.create('segment', [[9,2], [2,1]], {strokeColor:'#94a3b8', strokeWidth:1.5, dash:2});\n\nboard.unsuspendUpdate();"
-            }
-          },
-          "options": [
-            "\\(0\\)",
-            "\\(3\\)",
-            "\\(-2\\)",
-            "\\(-1\\)"
-          ],
-          "answer": 3,
-          "steps": [
-            {
-              "explain": "Multiply the gradient of $AB$ by the gradient of $BC$.",
-              "work": "m_{AB} \\times m_{BC} = \\frac{4}{3} \\times \\left(-\\frac{3}{4}\\right)"
-            },
-            {
-              "explain": "Simplify the multiplication.",
-              "work": "m_{AB} \\times m_{BC} = -1"
-            }
-          ],
-          "timeLimit": 60,
-          "meta": {
-            "origin": "teacher"
-          }
-        },
-        {
-          "id": "y9-11g-q13d",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Triangle \\(ABC\\) has vertices \\(A(2, 1)\\), \\(B(5, 5)\\) and \\(C(9, 2)\\). Answer the following sub-questions to show that \\(\\Delta ABC\\) is right-angled.\nd) What does this result tell us about \\(\\Delta ABC\\)?",
-          "figure": {
-            "jsxGraph": {
-              "width": 360,
-              "height": 280,
-              "boundingbox": [
-                -1,
-                7,
-                11,
-                -1
-              ],
-              "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[11,0]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('arrow', [[0,-1],[0,7]], {strokeColor:'#94a3b8', strokeWidth:1.5});\nboard.create('text', [10.5, -0.5, 'x'], {fontSize:13, color:'#64748b'});\nboard.create('text', [0.2, 6.5, 'y'], {fontSize:13, color:'#64748b'});\n\nboard.create('point', [2, 1], {name:'A', size:3, color:'#ef4444'});\nboard.create('point', [5, 5], {name:'B', size:3, color:'#ef4444'});\nboard.create('point', [9, 2], {name:'C', size:3, color:'#ef4444'});\n\nboard.create('segment', [[2,1], [5,5]], {strokeColor:'#6366f1', strokeWidth:2});\nboard.create('segment', [[5,5], [9,2]], {strokeColor:'#6366f1', strokeWidth:2});\nboard.create('segment', [[9,2], [2,1]], {strokeColor:'#94a3b8', strokeWidth:1.5, dash:2});\n\nboard.unsuspendUpdate();"
-            }
-          },
-          "options": [
-            "\\(Angle\\ A\\ is\\ a\\ right\\ angle\\ (90^\\circ).\\)",
-            "\\(Angle\\ C\\ is\\ a\\ right\\ angle\\ (90^\\circ).\\)",
-            "\\(Angle\\ B\\ is\\ a\\ right\\ angle\\ (90^\\circ).\\)",
-            "\\(The\\ triangle\\ is\\ equilateral.\\)"
-          ],
-          "answer": 2,
-          "steps": [
-            {
-              "explain": "Recall the condition for perpendicular lines.",
-              "work": "m_1 \\times m_2 = -1"
-            },
-            {
-              "explain": "Since the product of gradients is -1, the lines are perpendicular.",
-              "work": "AB \\perp BC"
-            },
-            {
-              "explain": "Therefore, the angle formed by these two lines is a right angle.",
-              "work": "\\angle B = 90^\\circ"
-            }
-          ],
-          "timeLimit": 60
         },
         {
           "id": "y9-11g-q15",

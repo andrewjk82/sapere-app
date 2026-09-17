@@ -7606,10 +7606,10 @@
       "questions": [
         {
           "id": "y11a-5C-new-1a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "A function \\(y = f(x)\\) is represented by a parabola that opens upwards and has its vertex on the \\(y\\)-axis. Classify this function as even, odd, or neither.",
-          "answer": "0",
+          "answer": 3,
           "options": [
             "Odd",
             "Neither",
@@ -7617,33 +7617,27 @@
             "Even"
           ],
           "hint": "Check for symmetry across the y-axis or about the origin.",
-          "solution": "0",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(\\text{Symmetric about the } y\\text{-axis.} \\implies \\text{Even}\\)"
+              "explain": "Analyse the symmetry of a parabola with its vertex on the \\(y\\)-axis.",
+              "work": "\\text{The axis of symmetry is the } y\\text{-axis (i.e., the line } x = 0)."
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
+              "explain": "Recall the graphical definition of an even function.",
+              "work": "\\text{An even function is symmetric about the } y\\text{-axis.}"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(0\\)"
-            },
-            {
-              "explain": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(0\\)"
+              "explain": "Conclude the classification.",
+              "work": "\\text{Therefore, the function is Even.}"
             }
-          ],
-          "manual": true
+          ]
         },
         {
           "id": "y11a-5C-new-1b",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "A function \\(y = f(x)\\) is represented by a straight line that has a positive gradient and a non-zero \\(y\\)-intercept. Classify this function as even, odd, or neither.",
-          "answer": "2",
+          "answer": 0,
           "options": [
             "Neither",
             "Even",
@@ -7651,33 +7645,27 @@
             "Both"
           ],
           "hint": "Does it pass through the origin? Is it symmetric across the y-axis?",
-          "solution": "2",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(\\text{No } y\\text{-axis symmetry. No origin symmetry.} \\implies \\text{Neither}\\)"
+              "explain": "Recall the conditions for even and odd symmetry for a straight line \\(y = mx + b\\).",
+              "work": "\\text{Even if } m = 0 \\text{ (horizontal line). Odd if } b = 0 \\text{ (passes through origin).}"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
+              "explain": "Check the given properties against the conditions.",
+              "work": "\\text{Given } m > 0 \\text{ and } b \\neq 0."
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(2\\)"
-            },
-            {
-              "explain": "Final answer: 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(2\\)"
+              "explain": "Conclude the classification.",
+              "work": "\\text{The line does not possess } y\\text{-axis symmetry nor point symmetry about the origin. Thus, it is Neither.}"
             }
-          ],
-          "manual": true
+          ]
         },
         {
           "id": "y11a-5C-new-1c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "A function \\(y = f(x)\\) is represented by a cubic curve that passes through the origin and exhibits \\(180^{\\circ}\\) point symmetry about the origin. Classify this function.",
-          "answer": "1",
+          "answer": 1,
           "options": [
             "Even",
             "Odd",
@@ -7685,26 +7673,20 @@
             "Both"
           ],
           "hint": "What type of symmetry defines an odd function?",
-          "solution": "1",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(\\text{Symmetric about the origin.} \\implies \\text{Odd}\\)"
+              "explain": "Recall the graphical definition of an odd function.",
+              "work": "\\text{An odd function exhibits } 180^\\circ \\text{ point symmetry about the origin.}"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
+              "explain": "Check the given properties.",
+              "work": "\\text{The cubic curve passes through the origin and is symmetric about it.}"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(1\\)"
-            },
-            {
-              "explain": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(1\\)"
+              "explain": "Conclude the classification.",
+              "work": "\\text{Therefore, the function is Odd.}"
             }
-          ],
-          "manual": true
+          ]
         },
         {
           "id": "y11a-5C-new-1d",
