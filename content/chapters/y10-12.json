@@ -15714,7 +15714,7 @@
         },
         {
           "id": "y10-12h-q13e",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "A triangle has sides of length \\(8\\) cm, \\(11\\) cm and \\(15\\) cm.\nCheck that your answers to parts b and d are the same.",
           "figure": {
@@ -15736,45 +15736,28 @@
               "height": 250
             }
           },
-          "answer": "",
-          "hint": "Verify that both calculation methods yield the same area.",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Area of a triangle: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "Identify given data",
-              "figure": {
-                "jsxGraph": {
-                  "width": 300,
-                  "height": 250,
-                  "boundingbox": [
-                    -6,
-                    6,
-                    8,
-                    -5
-                  ],
-                  "boardOptions": {
-                    "axis": false,
-                    "grid": false,
-                    "keepaspectratio": true,
-                    "showNavigation": false
-                  },
-                  "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [5,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [2,4], {visible: true, size: 2, color: '#64748b'});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.unsuspendUpdate();"
-                }
-              }
+              "explain": "Recall the area calculated in part (b) using the sine area formula \\(\\frac{1}{2}ab\\sin(C)\\).",
+              "work": "\\text{Area from part (b)} \\approx 42.85 \\text{ cm}^2"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "State the rule"
+              "explain": "Recall the area calculated in part (d) using Heron's formula \\(\\sqrt{s(s-a)(s-b)(s-c)}\\).",
+              "work": "\\text{Area from part (d)} \\approx 42.85 \\text{ cm}^2"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints."
+              "explain": "Compare the two results.",
+              "work": "\\text{Both formulas yield the same area of } 42.85 \\text{ cm}^2."
             }
           ],
-          "manual": true,
-          "timeLimit": 180
+          "timeLimit": 180,
+          "options": [
+            "Yes, both methods give approximately \\(42.85\\text{ cm}^2\\).",
+            "No, Heron's formula gives a different result.",
+            "No, the sine rule area formula gives a different result.",
+            "Cannot be determined from the given information."
+          ]
         },
         {
           "id": "jrhy2008-q17",
@@ -16555,7 +16538,7 @@
             },
             {
               "id": "y10-12h-q13e",
-              "type": "review",
+              "type": "mc",
               "stem": "Check that your answers to parts b and d are the same.",
               "figure": {
                 "jsxGraph": {
@@ -16576,7 +16559,27 @@
                   "script": "board.suspendUpdate();\nvar A = board.create('point', [0,0], {visible: true, size: 2, color: '#64748b'});\nvar B = board.create('point', [5,0], {visible: true, size: 2, color: '#64748b'});\nvar C = board.create('point', [2,4], {visible: true, size: 2, color: '#64748b'});\nvar t = board.create('polygon', [A,B,C], {fillColor: '#e0e7ff', borders: {strokeColor: '#4f46e5', strokeWidth: 2} });\nboard.unsuspendUpdate();"
                 }
               },
-              "answer": ""
+              "answer": 0,
+              "options": [
+                "Yes, both methods give approximately \\(42.85\\text{ cm}^2\\).",
+                "No, Heron's formula gives a different result.",
+                "No, the sine rule area formula gives a different result.",
+                "Cannot be determined from the given information."
+              ],
+              "steps": [
+                {
+                  "explain": "Recall the area calculated in part (b) using the sine area formula \\(\\frac{1}{2}ab\\sin(C)\\).",
+                  "work": "\\text{Area from part (b)} \\approx 42.85 \\text{ cm}^2"
+                },
+                {
+                  "explain": "Recall the area calculated in part (d) using Heron's formula \\(\\sqrt{s(s-a)(s-b)(s-c)}\\).",
+                  "work": "\\text{Area from part (d)} \\approx 42.85 \\text{ cm}^2"
+                },
+                {
+                  "explain": "Compare the two results.",
+                  "work": "\\text{Both formulas yield the same area of } 42.85 \\text{ cm}^2."
+                }
+              ]
             }
           ],
           "hint": "Use the cosine rule to find the angle opposite the smallest side, then use the sine area formula.",
