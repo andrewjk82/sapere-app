@@ -34,15 +34,22 @@ const manifest = JSON.parse(fs.readFileSync(path.join(PUB, 'manifest.json'), 'ut
 const parts = JSON.parse(fs.readFileSync(path.join(PUB, manifest.parts), 'utf8'));
 check('fixture: manifest.parts exists and is non-empty', Object.keys(parts).length > 0, `${Object.keys(parts).length} entries`);
 
-const known = parts['jrhy2008-q32b'];
-check('fixture: the reported id (jrhy2008-q32b) is in the part index', known?.parentId === 'jrhy2008-q32', JSON.stringify(known));
-
-if (known) {
-  const doc = await adminGetQuestion('jrhy2008-q32b');
-  check('resolves to the PARENT id, not the bare part', doc?.id === 'jrhy2008-q32', doc?.id);
-  check('parent brings its full subQuestions array (not just the reported part)', doc?.subQuestions?.length === 3, doc?.subQuestions?.length);
-  check('the reported part is one of the returned siblings', doc?.subQuestions?.some((s) => s.id === 'jrhy2008-q32b'));
-  check('siblings a and c are ALSO present (not split out)', ['jrhy2008-q32a', 'jrhy2008-q32c'].every((id) => doc.subQuestions.some((s) => s.id === id)));
+// jrhy2008-q32b itself was the original report subject (2026-09-17), but per the user's own
+// follow-up it has since been split out into its own standalone question (a genuinely different
+// exam topic bundled under the same paper number) — it is deliberately no longer a part of anything.
+// Confirm that split landed correctly, then re-run the actual regression check against the two
+// original siblings (a, c) that ARE still properly nested, which is what this test exists to prove.
+check('jrhy2008-q32b was intentionally split out — no longer in the part index', !parts['jrhy2008-q32b']);
+{
+  const stillNested = await adminGetQuestion('jrhy2008-q32a');
+  check('sibling jrhy2008-q32a still resolves to its parent jrhy2008-q32', stillNested?.id === 'jrhy2008-q32', stillNested?.id);
+  check('parent now carries exactly its 2 remaining parts (a, c)', stillNested?.subQuestions?.length === 2, stillNested?.subQuestions?.length);
+  check('both remaining siblings (a, c) are present', ['jrhy2008-q32a', 'jrhy2008-q32c'].every((id) => stillNested.subQuestions.some((s) => s.id === id)));
+}
+{
+  const split = await adminGetQuestion('jrhy2008-q32b');
+  check('jrhy2008-q32b now resolves DIRECTLY (real standalone question, not a redirect)', split?.id === 'jrhy2008-q32b', split?.id);
+  check('its own 3 sub-questions (i, ii, iii) are intact', split?.subQuestions?.length === 3, split?.subQuestions?.length);
 }
 
 // Sample real part ids from the manifest to catch anything id-specific in the fix. A part id can

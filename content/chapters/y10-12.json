@@ -9772,6 +9772,95 @@
             "examType": "Yearly",
             "grade": "10"
           }
+        },
+        {
+          "id": "jrhy2008-q32b",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "In \\(\\triangle PQR\\), \\(PQ=15\\text{ cm}\\), \\(PR=10\\text{ cm}\\) and \\(\\angle PQR=40°\\). Answer the following sub-questions.",
+          "figure": {
+            "svg": "fig:d3d31ab9e8"
+          },
+          "parts": [
+            {
+              "id": "jrhy2008-q32b-i",
+              "type": "mc",
+              "stem": "(i) What is \\(\\sin R\\), correct to four decimal places?",
+              "options": [
+                "\\(0.9642\\)",
+                "\\(0.6428\\)",
+                "\\(0.4285\\)",
+                "\\(1.2856\\)"
+              ],
+              "answer": 0,
+              "hint": "Apply the sine rule: \\(\\dfrac{PQ}{\\sin R}=\\dfrac{PR}{\\sin Q}\\).",
+              "steps": [
+                {
+                  "explain": "Apply the sine rule. Side \\(PQ\\) (opposite \\(\\angle R\\)) and side \\(PR\\) (opposite \\(\\angle Q\\)) are related by \\(\\dfrac{PQ}{\\sin R}=\\dfrac{PR}{\\sin Q}\\).",
+                  "work": "\\(\\dfrac{15}{\\sin R} = \\dfrac{10}{\\sin40°} \\Rightarrow \\sin R = \\dfrac{15\\sin40°}{10}\\)"
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(\\sin R = 1.5\\times0.6428 = 0.9642\\)"
+                }
+              ]
+            },
+            {
+              "id": "jrhy2008-q32b-ii",
+              "type": "mc",
+              "stem": "(ii) What are the two possible values of \\(\\angle R\\), correct to the nearest degree?",
+              "figure": {
+                "svg": "fig:d3d31ab9e8"
+              },
+              "options": [
+                "\\(75°\\text{ and }105°\\)",
+                "\\(75°\\text{ only}\\)",
+                "\\(15°\\text{ and }105°\\)",
+                "\\(65°\\text{ and }115°\\)"
+              ],
+              "answer": 0,
+              "hint": "Since \\(\\sin R=0.9642\\) is positive and less than \\(1\\), there are two possible angles between \\(0°\\) and \\(180°\\) with this sine value (the ambiguous case).",
+              "steps": [
+                {
+                  "explain": "Since \\(\\sin R=0.9642\\) is positive and less than 1, there are two possible values of \\(R\\) between \\(0°\\) and \\(180°\\) (the ambiguous case): one acute, one obtuse.",
+                  "work": "\\(R \\approx 74.6°\\) or \\(R \\approx 180°-74.6°=105.4°\\)"
+                },
+                {
+                  "explain": "Round each to the nearest degree.",
+                  "work": "\\(R \\approx 75°\\text{ or }105°\\)"
+                }
+              ]
+            },
+            {
+              "id": "jrhy2008-q32b-iii",
+              "type": "mc",
+              "stem": "(iii) What is the area of the SMALLER triangle \\(PQR\\), correct to one decimal place?",
+              "options": [
+                "\\(42.6\\text{ cm}^2\\)",
+                "\\(68.2\\text{ cm}^2\\)",
+                "\\(75.0\\text{ cm}^2\\)",
+                "\\(37.5\\text{ cm}^2\\)"
+              ],
+              "answer": 0,
+              "hint": "The smaller triangle corresponds to the larger value of \\(\\angle R\\) (so the smaller \\(\\angle P\\)), since \\(\\text{Area}=\\tfrac12\\times PQ\\times PR\\times\\sin P\\) is smaller for a smaller \\(\\sin P\\).",
+              "steps": [
+                {
+                  "explain": "The smaller triangle corresponds to \\(R\\approx105°\\), so \\(\\angle P \\approx 180°-40°-105°=35°\\)… more precisely \\(P\\approx34.6°\\) using the unrounded angle.",
+                  "work": "\\(\\text{Area} = \\dfrac12\\times15\\times10\\times\\sin(34.6°)\\)"
+                },
+                {
+                  "explain": "Evaluate.",
+                  "work": "\\(\\text{Area} \\approx 75\\times0.5679 \\approx 42.6\\text{ cm}^2\\)"
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
+            "school": "James Ruse Agricultural High School",
+            "examType": "Half-Yearly",
+            "grade": "10"
+          }
         }
       ]
     },

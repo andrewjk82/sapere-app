@@ -11453,7 +11453,7 @@
           "id": "jrhy2008-q32",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "Question 32 — factorising a sum of cubes, the ambiguous case of the sine rule, and a family of lines (parts a–c).",
+          "stem": "Question 32 — factorising a sum of cubes, and a family of lines (parts a and c).",
           "parts": [
             {
               "id": "jrhy2008-q32a",
@@ -11477,45 +11477,6 @@
                   "work": "\\(= (x+3y)(x^2-3xy+9y^2)\\)"
                 }
               ]
-            },
-            {
-              "id": "jrhy2008-q32b",
-              "type": "review",
-              "stem": "(b) In \\(\\triangle PQR\\), \\(PQ=15\\text{ cm}\\), \\(PR=10\\text{ cm}\\) and \\(\\angle PQR=40°\\). (i) Show that \\(\\sin R=0.9642\\) (4 d.p.). (ii) Illustrate the two possible configurations of \\(\\triangle PQR\\) (angles to the nearest degree). (iii) Find the area of the smaller triangle \\(PQR\\).",
-              "figure": {
-                "svg": "fig:d3d31ab9e8"
-              },
-              "answer": "",
-              "steps": [
-                {
-                  "explain": "Apply the sine rule. Side \\(PQ\\) (opposite \\(\\angle R\\)) and side \\(PR\\) (opposite \\(\\angle Q\\)) are related by \\(\\dfrac{PQ}{\\sin R}=\\dfrac{PR}{\\sin Q}\\).",
-                  "work": "\\(\\dfrac{15}{\\sin R} = \\dfrac{10}{\\sin40°} \\Rightarrow \\sin R = \\dfrac{15\\sin40°}{10}\\)"
-                },
-                {
-                  "explain": "Evaluate.",
-                  "work": "\\(\\sin R = 1.5\\times0.6428 = 0.9642\\), as required."
-                },
-                {
-                  "explain": "Since \\(\\sin R=0.9642\\) is positive and less than 1, there are two possible values of \\(R\\) between \\(0°\\) and \\(180°\\) (the ambiguous case): one acute, one obtuse.",
-                  "work": "\\(R \\approx 74.6°\\) or \\(R \\approx 180°-74.6°=105.4°\\)",
-                  "figure": {
-                    "svg": "fig:d3d31ab9e8"
-                  }
-                },
-                {
-                  "explain": "Find the corresponding \\(\\angle P\\) for each configuration, using the angle sum \\(180°-40°-R\\).",
-                  "work": "Configuration 1: \\(R\\approx75°\\), \\(P\\approx65°\\). Configuration 2: \\(R\\approx105°\\), \\(P\\approx35°\\)."
-                },
-                {
-                  "explain": "For part (iii): the SMALLER triangle corresponds to the smaller angle \\(P\\) (configuration 2, \\(P\\approx34.6°\\)), since area \\(=\\tfrac12\\times PQ\\times PR\\times\\sin P\\) is smaller for a smaller \\(\\sin P\\).",
-                  "work": "\\(\\text{Area} = \\dfrac12\\times15\\times10\\times\\sin(34.6°) \\approx 75\\times0.5668\\)"
-                },
-                {
-                  "explain": "Evaluate.",
-                  "work": "\\(\\text{Area} \\approx 42.5\\text{ cm}^2\\)"
-                }
-              ],
-              "manual": true
             },
             {
               "id": "jrhy2008-q32c",
