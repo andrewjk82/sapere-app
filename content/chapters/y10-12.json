@@ -15644,20 +15644,24 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "First, calculate the area using Heron's formula from the given diagram.",
+              "explain": "Let's use the diagram to calculate the area using two different methods and compare them. \n\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"200\" viewBox=\"0 0 280 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"200\" fill=\"url(#grid)\" rx=\"12\"/>\n  <polygon points=\"20,160 245,160 161,74.35\" fill=\"#e0e7ff\" stroke=\"#4f46e5\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <text x=\"132.5\" y=\"182\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"14\" font-weight=\"600\">15 cm</text>\n  <text x=\"80\" y=\"110\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"14\" font-weight=\"600\">11 cm</text>\n  <text x=\"215\" y=\"110\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"14\" font-weight=\"600\">8 cm</text>\n</svg></div>\n\nFirst, we use Heron's formula which directly uses the three side lengths (8 cm, 11 cm, and 15 cm) shown in the diagram.",
               "work": "s = \\frac{8+11+15}{2} = 17 \\\\ \\text{Area} = \\sqrt{17(17-8)(17-11)(17-15)} \\\\ = \\sqrt{17 \\times 9 \\times 6 \\times 2} \\\\ = \\sqrt{1836} \\approx 42.85\\text{ cm}^2"
             },
             {
-              "explain": "Next, check the area using the sine rule. First, find the smallest angle (opposite the 8 cm side) using the cosine rule.",
-              "work": "8^2 = 11^2 + 15^2 - 2(11)(15)\\cos(\\theta) \\\\ 64 = 346 - 330\\cos(\\theta) \\\\ \\cos(\\theta) = \\frac{282}{330} = \\frac{47}{55} \\\\ \\sin(\\theta) = \\sqrt{1 - \\left(\\frac{47}{55}\\right)^2} = \\frac{4\\sqrt{51}}{55}"
+              "explain": "Next, we calculate the area using the sine rule ($\\frac{1}{2}ab\\sin C$). To do this, we need an angle. Let's find the smallest angle (opposite the 8 cm side) located between the 11 cm and 15 cm sides. We use the cosine rule:",
+              "work": "8^2 = 11^2 + 15^2 - 2(11)(15)\\cos(\\theta) \\\\ 64 = 346 - 330\\cos(\\theta) \\\\ \\cos(\\theta) = \\frac{346 - 64}{330} = \\frac{282}{330} = \\frac{47}{55}"
             },
             {
-              "explain": "Now, apply the sine area formula: \\(\\text{Area} = \\frac{1}{2}ab\\sin(\\theta)\\).",
-              "work": "\\text{Area} = \\frac{1}{2}(11)(15)\\left(\\frac{4\\sqrt{51}}{55}\\right) \\\\ = \\frac{165}{2} \\times \\frac{4\\sqrt{51}}{55} \\\\ = 6\\sqrt{51} = \\sqrt{1836} \\approx 42.85\\text{ cm}^2"
+              "explain": "Now, we convert the cosine of this angle to sine to use in the area formula.",
+              "work": "\\sin(\\theta) = \\sqrt{1 - \\cos^2(\\theta)} = \\sqrt{1 - \\left(\\frac{47}{55}\\right)^2} = \\frac{4\\sqrt{51}}{55}"
             },
             {
-              "explain": "Compare the two exact area values.",
-              "work": "\\text{Both methods yield exactly } \\sqrt{1836}\\text{ cm}^2."
+              "explain": "Finally, we apply the sine area formula using the 11 cm and 15 cm sides that enclose our angle $\\theta$:",
+              "work": "\\text{Area} = \\frac{1}{2}(11)(15)\\sin(\\theta) \\\\ = \\frac{165}{2} \\times \\frac{4\\sqrt{51}}{55} \\\\ = 6\\sqrt{51} = \\sqrt{1836} \\approx 42.85\\text{ cm}^2"
+            },
+            {
+              "explain": "Conclusion:",
+              "work": "\\text{Both methods exactly yield } \\sqrt{1836}\\text{ cm}^2."
             }
           ],
           "timeLimit": 180,
@@ -16363,20 +16367,24 @@
               ],
               "steps": [
                 {
-                  "explain": "First, calculate the area using Heron's formula from the given diagram.",
+                  "explain": "Let's use the diagram to calculate the area using two different methods and compare them. \n\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"280\" height=\"200\" viewBox=\"0 0 280 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs><pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f8fafc\" stroke-width=\"1\"/></pattern></defs>\n  <rect width=\"280\" height=\"200\" fill=\"url(#grid)\" rx=\"12\"/>\n  <polygon points=\"20,160 245,160 161,74.35\" fill=\"#e0e7ff\" stroke=\"#4f46e5\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <text x=\"132.5\" y=\"182\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"14\" font-weight=\"600\">15 cm</text>\n  <text x=\"80\" y=\"110\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"14\" font-weight=\"600\">11 cm</text>\n  <text x=\"215\" y=\"110\" text-anchor=\"middle\" fill=\"#0f172a\" font-family=\"'Outfit', sans-serif\" font-size=\"14\" font-weight=\"600\">8 cm</text>\n</svg></div>\n\nFirst, we use Heron's formula which directly uses the three side lengths (8 cm, 11 cm, and 15 cm) shown in the diagram.",
                   "work": "s = \\frac{8+11+15}{2} = 17 \\\\ \\text{Area} = \\sqrt{17(17-8)(17-11)(17-15)} \\\\ = \\sqrt{17 \\times 9 \\times 6 \\times 2} \\\\ = \\sqrt{1836} \\approx 42.85\\text{ cm}^2"
                 },
                 {
-                  "explain": "Next, check the area using the sine rule. First, find the smallest angle (opposite the 8 cm side) using the cosine rule.",
-                  "work": "8^2 = 11^2 + 15^2 - 2(11)(15)\\cos(\\theta) \\\\ 64 = 346 - 330\\cos(\\theta) \\\\ \\cos(\\theta) = \\frac{282}{330} = \\frac{47}{55} \\\\ \\sin(\\theta) = \\sqrt{1 - \\left(\\frac{47}{55}\\right)^2} = \\frac{4\\sqrt{51}}{55}"
+                  "explain": "Next, we calculate the area using the sine rule ($\\frac{1}{2}ab\\sin C$). To do this, we need an angle. Let's find the smallest angle (opposite the 8 cm side) located between the 11 cm and 15 cm sides. We use the cosine rule:",
+                  "work": "8^2 = 11^2 + 15^2 - 2(11)(15)\\cos(\\theta) \\\\ 64 = 346 - 330\\cos(\\theta) \\\\ \\cos(\\theta) = \\frac{346 - 64}{330} = \\frac{282}{330} = \\frac{47}{55}"
                 },
                 {
-                  "explain": "Now, apply the sine area formula: \\(\\text{Area} = \\frac{1}{2}ab\\sin(\\theta)\\).",
-                  "work": "\\text{Area} = \\frac{1}{2}(11)(15)\\left(\\frac{4\\sqrt{51}}{55}\\right) \\\\ = \\frac{165}{2} \\times \\frac{4\\sqrt{51}}{55} \\\\ = 6\\sqrt{51} = \\sqrt{1836} \\approx 42.85\\text{ cm}^2"
+                  "explain": "Now, we convert the cosine of this angle to sine to use in the area formula.",
+                  "work": "\\sin(\\theta) = \\sqrt{1 - \\cos^2(\\theta)} = \\sqrt{1 - \\left(\\frac{47}{55}\\right)^2} = \\frac{4\\sqrt{51}}{55}"
                 },
                 {
-                  "explain": "Compare the two exact area values.",
-                  "work": "\\text{Both methods yield exactly } \\sqrt{1836}\\text{ cm}^2."
+                  "explain": "Finally, we apply the sine area formula using the 11 cm and 15 cm sides that enclose our angle $\\theta$:",
+                  "work": "\\text{Area} = \\frac{1}{2}(11)(15)\\sin(\\theta) \\\\ = \\frac{165}{2} \\times \\frac{4\\sqrt{51}}{55} \\\\ = 6\\sqrt{51} = \\sqrt{1836} \\approx 42.85\\text{ cm}^2"
+                },
+                {
+                  "explain": "Conclusion:",
+                  "work": "\\text{Both methods exactly yield } \\sqrt{1836}\\text{ cm}^2."
                 }
               ]
             }
