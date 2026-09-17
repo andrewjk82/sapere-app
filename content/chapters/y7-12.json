@@ -647,7 +647,6 @@
               "work": "\\(65^\\circ\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "meta": {
             "origin": "teacher"
