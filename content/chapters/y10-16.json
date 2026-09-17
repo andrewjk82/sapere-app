@@ -107,34 +107,33 @@
         },
         {
           "id": "y10-16a-q2b",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
-          "stem": "Using the table from Q2:\n\n| \\(p\\) | 0 | 1 | 4 | 9 | 25 |\n|---|---|---|---|---|---|\n| \\(q\\) | 0 | 3 | 6 | 9 | 15 |\n| \\(\\sqrt{p}\\) | | | | | |\n\nComplete the \\(\\sqrt{p}\\) row and calculate \\(\\frac{q}{\\sqrt{p}}\\) for each pair \\((q, \\sqrt{p})\\) where \\(p > 0\\).",
-          "answer": "sqrt(p) row: 0, 1, 2, 3, 5.\nq/sqrt(p) = 3 for all non-zero pairs.",
-          "hint": "Calculate \\(\\sqrt{p}\\) for each value of \\(p\\), then divide \\(q\\) by \\(\\sqrt{p}\\).",
-          "solution": "sqrt(p) row: 0, 1, 2, 3, 5.\nq/sqrt(p) = 3 for all non-zero pairs.",
+          "stem": "Using the table from Q2:\n\n| \\(p\\) | 0 | 1 | 4 | 9 | 25 |\n|---|---|---|---|---|---|\n| \\(q\\) | 0 | 3 | 6 | 9 | 15 |\n| \\(\\sqrt{p}\\) | | | | | |\n\nComplete the \\(\\sqrt{p}\\) row and calculate \\(\\frac{q}{\\sqrt{p}}\\) for each pair \\((q, \\sqrt{p})\\) where \\(p > 0\\).\n\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"300\" height=\"200\" viewBox=\"0 0 300 200\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs>\n    <pattern id=\"grid\" width=\"20\" height=\"20\" patternUnits=\"userSpaceOnUse\"><path d=\"M 20 0 L 0 0 0 20\" fill=\"none\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><path d=\"M 0 20 L 20 20\" fill=\"none\" stroke=\"#f1f5f9\" stroke-width=\"1\"/></pattern>\n  </defs>\n  <rect width=\"300\" height=\"200\" fill=\"url(#grid)\" rx=\"12\"/>\n  \n  <!-- Axes -->\n  <line x1=\"40\" y1=\"170\" x2=\"280\" y2=\"170\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <line x1=\"40\" y1=\"170\" x2=\"40\" y2=\"20\" stroke=\"#0f172a\" stroke-width=\"2\"/>\n  <text x=\"285\" y=\"174\" font-family=\"'Outfit', sans-serif\" font-size=\"12\" fill=\"#0f172a\" font-weight=\"600\">p</text>\n  <text x=\"35\" y=\"15\" font-family=\"'Outfit', sans-serif\" font-size=\"12\" fill=\"#0f172a\" font-weight=\"600\">q</text>\n  \n  <!-- Curve -->\n  <path d=\"M 40 170 L 49.6 140.0 L 59.2 127.6 L 68.8 118.0 L 78.4 110.0 L 88.0 102.9 L 97.6 96.5 L 107.2 90.6 L 116.8 85.1 L 126.4 80.0 L 136.0 75.1 L 145.6 70.5 L 155.2 66.1 L 164.8 61.8 L 174.4 57.8 L 184.0 53.8 L 193.6 50.0 L 203.2 46.3 L 212.8 42.7 L 222.4 39.2 L 232.0 35.8 L 241.6 32.5 L 251.2 29.3 L 260.8 26.1 L 270.4 23.0 L 280.0 20.0\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"3\" stroke-linecap=\"round\"/>\n  \n  <!-- Points -->\n  <circle cx=\"40\" cy=\"170\" r=\"4\" fill=\"#ef4444\"/>\n  <circle cx=\"49.6\" cy=\"140\" r=\"4\" fill=\"#ef4444\"/>\n  <circle cx=\"78.4\" cy=\"110\" r=\"4\" fill=\"#ef4444\"/>\n  <circle cx=\"126.4\" cy=\"80\" r=\"4\" fill=\"#ef4444\"/>\n  <circle cx=\"280\" cy=\"20\" r=\"4\" fill=\"#ef4444\"/>\n  \n  <!-- Labels -->\n  <text x=\"55\" y=\"145\" font-family=\"'Outfit', sans-serif\" font-size=\"11\" fill=\"#475569\">(1, 3)</text>\n  <text x=\"85\" y=\"115\" font-family=\"'Outfit', sans-serif\" font-size=\"11\" fill=\"#475569\">(4, 6)</text>\n  <text x=\"132\" y=\"85\" font-family=\"'Outfit', sans-serif\" font-size=\"11\" fill=\"#475569\">(9, 9)</text>\n  <text x=\"245\" y=\"15\" font-family=\"'Outfit', sans-serif\" font-size=\"11\" fill=\"#475569\">(25, 15)</text>\n</svg></div>",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Direct proportion: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(\\sqrt{0}=0,\\; \\sqrt{1}=1,\\; \\sqrt{4}=2,\\; \\sqrt{9}=3,\\; \\sqrt{25}=5\\)"
+              "explain": "First, identify the values of \\(p\\) from the given table and calculate \\(\\sqrt{p}\\) for each value.",
+              "work": "\\begin{aligned} \\sqrt{1} &= 1 \\\\ \\sqrt{4} &= 2 \\\\ \\sqrt{9} &= 3 \\\\ \\sqrt{25} &= 5 \\end{aligned}"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(\\frac{3}{1}=3, quad \\frac{6}{2}=3, quad \\frac{9}{3}=3, quad \\frac{15}{5}=3\\)"
+              "explain": "Next, for each pair where \\(p > 0\\), calculate the ratio \\(\\frac{q}{\\sqrt{p}}\\) using the corresponding values of \\(q\\).",
+              "work": "\\begin{aligned} \\frac{3}{1} &= 3 \\\\ \\frac{6}{2} &= 3 \\\\ \\frac{9}{3} &= 3 \\\\ \\frac{15}{5} &= 3 \\end{aligned}"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(\\frac{q}{\\sqrt{p}} = 3 \\implies q \\propto \\sqrt{p}\\)"
-            },
-            {
-              "explain": "Final answer: sqrt(p) row: 0, 1, 2, 3, 5.\nq/sqrt(p) = 3 for all non-zero pairs.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "sqrt(p) row: 0, 1, 2, 3, 5.\nq/sqrt(p) = 3 for all non-zero pairs."
+              "explain": "Since the ratio is constant for all data points, we can establish the mathematical relationship.",
+              "work": "\\frac{q}{\\sqrt{p}} = 3 \\implies q = 3\\sqrt{p}"
             }
           ],
-          "manual": true,
           "timeLimit": 60,
           "alsoIn": [
             "exam:year10ch16"
+          ],
+          "options": [
+            "3",
+            "\\frac{1}{3}",
+            "9",
+            "6"
           ]
         },
         {
