@@ -1381,6 +1381,17 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   const finishQuiz = async (isAbandoned = false) => {
     if (isFinishingRef.current) return;
     isFinishingRef.current = true;
+    try {
+      await finishQuizInner(isAbandoned);
+    } finally {
+      // Always release the guard, even if something threw before reaching
+      // setStep('result') — otherwise a first failed attempt (auto-timer or
+      // manual click) permanently blocks every later click from doing
+      // anything, which looks like "Finish button doesn't respond".
+      isFinishingRef.current = false;
+    }
+  };
+  const finishQuizInner = async (isAbandoned = false) => {
     clearDraft();
     // Release FlameBuddy quiz hold so post-result / briefing can speak again.
     try {
