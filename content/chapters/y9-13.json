@@ -282,8 +282,8 @@
         {
           "id": "ch9t3-q4a",
           "type": "mc",
-          "difficulty": "easy",
           "stem": "Find the value of \\(x\\), correct to the nearest whole number, in each triangle.\n\nA right triangle has the \\(42°\\) angle at the bottom, adjacent side \\(11\\text{ cm}\\), and opposite side \\(x\\text{ cm}\\).",
+          "difficulty": "easy",
           "figure": {
             "svg": "fig:cc8805c33c"
           },
@@ -312,12 +312,12 @@
               "work": "\\(x \\approx 10\\text{ cm}\\)"
             }
           ],
-          "manual": true,
           "meta": {
             "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
             "school": "Chatswood High School",
             "examType": "Assessment Task",
-            "grade": "9"
+            "grade": "9",
+            "origin": "teacher"
           }
         },
         {
