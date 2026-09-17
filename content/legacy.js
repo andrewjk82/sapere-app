@@ -25,13 +25,22 @@ const optBack = (o) => (typeof o === 'string'
 
 /** canonical question → the Firestore document shape every component expects */
 export const toLegacy = (q, ctx = {}) => {
-  const isMC = q.type === 'mc' || (q.type === 'multipart' && q.mc === true);
+  // `mc:true` on a multipart parent means "this parent ALSO carries a vestigial combined-answer MC
+  // shape" (kept for provenance from the original data) — it must NEVER make the reported top-level
+  // `type` read 'multiple_choice', because a multipart ALWAYS has `parts` (schema-enforced), and any
+  // consumer that trusts `type` without separately checking `subQuestions.length` (ExamPrep.jsx did,
+  // until the 2026-09-17 fix) would render the vestigial paired options as if they were the actual
+  // question instead of the real per-part sub-questions — exactly the "정답이 이상해요" report on
+  // y9-5a-7. `options`/`answer` below still get the MC shape (harmless — no current consumer reads a
+  // multipart's own options/answer when subQuestions is non-empty) so nothing else changes.
+  const isMcOptions = q.type === 'mc' || (q.type === 'multipart' && q.mc === true);
+  const reportedType = q.type === 'multipart' ? 'multi_part' : (q.type === 'mc' ? 'multiple_choice' : (TYPE_BACK[q.type] || 'short_answer'));
   const d = {
     id: q.id,
-    type: q.type === 'short' && q.blanks?.length ? 'fill_blank' : (isMC ? 'multiple_choice' : (TYPE_BACK[q.type] || 'short_answer')),
+    type: q.type === 'short' && q.blanks?.length ? 'fill_blank' : reportedType,
     question: q.stem || '',
     options: (q.options || []).map(optBack),
-    answer: isMC ? (q.answer == null ? '' : String(q.answer)) : (q.answer ?? ''),
+    answer: isMcOptions ? (q.answer == null ? '' : String(q.answer)) : (q.answer ?? ''),
     hint: q.hint || '',
     solution: q.solution || '',
     solutionSteps: (q.steps || []).map((s) => ({ explanation: s.explain || '', workingOut: s.work || '', graphData: figBack(s.figure), ...(s.ext || {}) })),
