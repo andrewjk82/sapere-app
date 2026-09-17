@@ -11655,23 +11655,31 @@
         },
         {
           "id": "y7-2j-q19c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "The 8 button on a calculator does not work. Explain how you could use the calculator to work out: \\(82 \\times 6\\).",
-          "answer": "(92 - 10) * 6 or (83 - 1) * 6 (written without 8)",
-          "hint": "Find a way to write 82 without using the digit 8. For example, 92 - 10.",
-          "solution": "(92 - 10) * 6 or (83 - 1) * 6 (written without 8)",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Write 82 using digits other than 8.",
+              "explain": "We need to calculate \\(82 \\times 6\\), but the \\(8\\) button is broken. We must express \\(82\\) using numbers that do not contain the digit \\(8\\).",
               "work": "82 = 92 - 10"
             },
             {
-              "explain": "Multiply by 6.",
-              "work": "(92 - 10) \\times 6"
+              "explain": "Substitute \\(92 - 10\\) into the original expression. Note that we must use brackets to ensure the subtraction happens before the multiplication.",
+              "work": "\\begin{aligned} 82 \\times 6 &= (92 - 10) \\times 6 \\\\ &= 492 \\end{aligned}"
+            },
+            {
+              "explain": "Check that none of the numbers used contain the digit \\(8\\).",
+              "work": "\\text{The calculation } (92 - 10) \\times 6 \\text{ is valid.}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "options": [
+            "\\\\((92 - 10) \\times 6\\\\)",
+            "\\\\((90 - 2) \\times 6\\\\)",
+            "\\\\((72 + 10) \\times 6\\\\)",
+            "\\\\(92 - 10 \\times 6\\\\)"
+          ]
         },
         {
           "id": "y7-2j-q19d",
