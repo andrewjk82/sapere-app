@@ -16,6 +16,26 @@ description: >
 
 # Sapere Question DNA Reasoning-Blueprint Skill
 
+> **⚠️ 2026-09 migration note.** `question_dna/{dnaId}` (the DNA-generic warmup pool collection) is
+> genuinely still live Firestore, untouched by the content migration — rule 5's `pickRandomSteps()`
+> and `DnaWarmupReviewPage.jsx`/`HscTypePractice.jsx` still query it directly (`getDocs(collection
+> (db,'question_dna'))`), so writing/reading it via Firebase Admin as this skill describes is still
+> correct. **But question-specific pre-steps are NOT** — `reasoning_blueprint` and
+> `hasReasoningBlueprint` are carried through `content/legacy.js`'s `DNA_KEYS` from a question's
+> canonical `dna.reasoning_blueprint` / `dna.hasReasoningBlueprint` fields in
+> `content/chapters/*.json` (same as `dnaId`/`dnaConfidence`), then flattened back onto the legacy
+> doc shape that `HscTypePracticeSession.jsx` reads (`q.reasoning_blueprint`). A script that still
+> writes `reasoning_blueprint` onto a Firestore `questions/{id}` doc (as rules 6–7 and the
+> boilerplate section below describe) **no longer reaches students** once that chapter is served
+> from the CDN — write it into the question's `dna: {...}` object in `content/chapters/<chapterId>
+> .json` instead, then `npm run content:validate` and `git commit && git push`; there is no
+> `touchChapterIndex` call needed since there's no separate index to touch (the CDN publish step
+> regenerates everything from the chapter file on every build). Rule 6's `hasReasoningBlueprint`
+> flag and its indexed Firestore query still exist and still matter for questions not yet on the
+> CDN path, but for CDN-served chapters the flag lives in the same `dna` object and the review page
+> would need to read it from there — this hasn't been fully reconciled and is worth verifying
+> against the current `QuestionPreStepsReviewPage.jsx` before relying on it.
+
 ## Overview
 
 Question DNA v2.0 pipeline: HSC Question → Question DNA → Reasoning

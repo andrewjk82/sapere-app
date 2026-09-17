@@ -1,101 +1,115 @@
 # Question Schema Reference
 
-## Complete Field Specification
+> **Canonical source of truth is `content/schema.js`** (zod). This file is a human-readable
+> walkthrough of that schema for `content/chapters/*.json` — edit chapter files to match this
+> shape. The old Firestore/seed shape is kept below, clearly marked, only because
+> `content/legacy.js`'s `toLegacy`/`fromLegacy` still produces/accepts it at the browser-component
+> boundary (so components like `MathView.jsx` don't need to change) — never write the legacy
+> field names into a chapter file.
 
-### Top-Level Fields
+## Canonical shape (`content/chapters/<chapterId>.json`)
+
+Each chapter file is `{ chapterId, topics: [{ topicId, questions: [...] }] }`. A question:
 
 ```javascript
 {
   // === Identity ===
-  id: "y11a-5i-q18a",        // Format: y{year}a-{chapter}-q{number}{sub}
-  topicId: "y11a-5I",         // Topic grouping
-  c: "5I",                    // Chapter code
-  t: "Revision",              // Topic label
+  id: "y11a-5i-q18a",         // Format: y{year}a-{chapter}-q{number}{sub}
+  // topicId / chapter placement comes from where the question sits in the file — not a field.
 
   // === Question Content ===
-  type: "multiple_choice",    // "multiple_choice" | "short_answer" | "teacher_review" | "graph_sketch"
-  difficulty: "medium",       // "easy" | "medium" | "hard"
-  timeLimit: 60,              // Seconds
-  question: "...",            // LaTeX-enabled string using \\( \\)
+  type: "mc",                  // "mc" | "short" | "review" | "multipart"
+  difficulty: "medium",        // "easy" | "medium" | "hard"
+  timeLimit: 60,                // seconds
+  stem: "...",                  // LaTeX-enabled string using \\( \\)
 
-  // === Answer (MC) ===
-  opts: [                     // Exactly 4 options
-    "\\(7\\)",                // Each option uses \\( \\) for math
+  // === Answer (mc) ===
+  options: [                    // exactly 4 options (string, or {text, image?, figure?})
+    "\\(7\\)",
     "\\(-7\\)",
     "\\(0\\)",
     "\\(1\\)"
   ],
-  a: 0,                       // 0-indexed correct answer
-  answer: "0",                // String version of `a`
+  answer: 0,                    // 0-indexed integer — ALWAYS a plain number for mc, never a string
 
-  // === Answer (Short Answer / Teacher Review) ===
-  // For short_answer:
-  answer: "x = 3",            // Expected text answer
-  // For teacher_review:
-  answer: null,               // No auto-gradable answer
+  // === Answer (short / review) ===
+  // For short:  answer: "x = 3"   (expected text answer)
+  // For review: answer: null      (no auto-gradable answer; manual grading)
 
   // === Hints & Solutions ===
   hint: "Brief hint text",
   solution: "Final answer text with LaTeX",
 
   // === Step-by-Step Solution ===
-  solutionSteps: [
+  steps: [
     {
-      explanation: "Natural language explanation of this step",
-      workingOut: "LaTeX math expression for the calculation",
-      graphData: null          // or JSXGraph object (usually only on last step)
+      explain: "Natural language explanation of this step",
+      work: "LaTeX math expression for the calculation",
+      figure: null              // or { svg: "<svg>...</svg>" | "fig:<sha>" } (usually only on last step)
     }
   ],
 
   // === Visual ===
-  graphData: {                 // null if no graph needed
-    jsxGraph: {
-      width: 300,
-      height: 300,
-      boundingbox: [-5, 5, 5, -3],  // [xMin, yMax, xMax, yMin]
-      boardOptions: { keepaspectratio: true },
-      script: "board.suspendUpdate();\n..."  // JSXGraph commands
-    }
+  figure: {                     // omit/null if no diagram needed
+    svg: "<svg ...>...</svg>",  // hand-authored SVG; build externalises it to content/figures/<sha>.svg
+    // or a bare JSXGraph config kept under figure.raw for continuity — MathView only renders
+    // figure.jsxGraph today, see legacy.js for exact field carry-through
   },
 
   // === Metadata ===
-  isNew: true,
-  requiresManualGrading: false,  // true for teacher_review, graph_sketch
+  manual: false,                // true only when this needs a human to grade (review-type default)
+  meta: { source: "...", school: "..." },
 
-  // === Sub-Questions (optional) ===
-  subQuestions: [
-    { /* same schema as top-level */ }
+  // === Sub-parts (multipart questions only) ===
+  parts: [
+    { /* same schema, recursively */ }
   ]
 }
 ```
 
-## Firestore `options` Field
+## Type-specific required fields
 
-When writing to Firestore, `opts` must also be written as `options`:
+### `mc`
+| Field | Required | Notes |
+|-------|----------|-------|
+| options | ✅ | exactly 4 strings (or option objects) |
+| answer | ✅ | 0-indexed integer |
+| manual | ❌ | always `false` (or omitted) |
+
+### `review`
+| Field | Required | Notes |
+|-------|----------|-------|
+| options | ❌ | omit |
+| answer | ❌ | can be `null` |
+| manual | ✅ | `true` |
+
+### `multipart`
+| Field | Required | Notes |
+|-------|----------|-------|
+| parts | ✅ | array of sub-questions, same schema recursively |
+| top-level `steps` | ❌ | must be empty `[]` when every part already has its own `steps` — see SKILL.md §13 |
+
+---
+
+## Legacy shape (display-only — `content/legacy.js` output, what old components still read)
+
+This is what `toLegacy()` produces (and `fromLegacy()` accepts back) at the UI boundary — you
+should never author this shape by hand in a chapter file, but it's useful to recognise when
+reading component code (`ExamPrep.jsx`, `MathView.jsx`, etc.) that still expects it:
+
 ```javascript
-options: opts.map(o => ({ text: o, imageUrl: '' }))
+{
+  type: "multiple_choice",     // "multiple_choice" | "short_answer" | "teacher_review" | "multi_part"
+  question: "...",              // ← canonical stem
+  opts: [...],                  // ← canonical options
+  a: 0,                         // ← canonical answer (mc only)
+  answer: "0",                  // stringified `a` for mc; raw text for short/review
+  solutionSteps: [{ explanation, workingOut, graphData }],  // ← canonical steps[].{explain,work,figure}
+  graphData: { jsxGraph: {...} },  // ← canonical figure
+  requiresManualGrading: false,     // ← canonical manual
+  subQuestions: [...]               // ← canonical parts
+}
 ```
 
-## Type-Specific Required Fields
-
-### `multiple_choice`
-| Field | Required | Notes |
-|-------|----------|-------|
-| opts | ✅ | Exactly 4 strings |
-| a | ✅ | 0-indexed integer |
-| answer | ✅ | String of `a` |
-| requiresManualGrading | ✅ | Always `false` |
-
-### `teacher_review`
-| Field | Required | Notes |
-|-------|----------|-------|
-| opts | ❌ | Should be deleted/null |
-| a | ❌ | Should be deleted/null |
-| answer | ❌ | Can be null |
-| requiresManualGrading | ✅ | Always `true` |
-
-### `graph_sketch`
-| Field | Required | Notes |
-|-------|----------|-------|
-| graphData | ✅ | The reference graph to sketch on |
-| requiresManualGrading | ✅ | Always `true` |
+Field-for-field mapping is the same table as CLAUDE.md's top section — that table is the
+authoritative one if this ever drifts from it.

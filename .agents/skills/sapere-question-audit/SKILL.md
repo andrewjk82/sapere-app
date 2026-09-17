@@ -15,6 +15,16 @@ description: >
 
 # Sapere Question Audit & Repair Skill
 
+> **⚠️ 2026-09 migration: question content lives in `content/chapters/*.json` (git), not
+> Firestore or `src/constants/seed*.js`.** See CLAUDE.md's top section and the `sapere-math-question`
+> skill. Anywhere below that says "Firestore에 업데이트/병합/push" or references a seed file, read
+> it as: edit `content/chapters/<chapterId>.json` directly, run `npm run content:validate`, then
+> `git commit && git push` — no service account, no seed-file regex, no Firestore write. **Never**
+> run a scan/`.where(...)` query over the `questions` collection (see
+> `feedback_never-scan-questions-collection`) — it's also simply pointless now, since nothing reads
+> that collection for content. The diagnostic categories below (broken graphs, bad distractors,
+> generic solutions, etc.) are still fully valid — only the *fix mechanism* changed.
+
 ## Overview
 
 This skill provides a systematic workflow for diagnosing and repairing
@@ -30,7 +40,14 @@ categories of defects found in production questions.
   - **연속된 숫자 금지**: +1/-1 차이만 나는 의미 없는 오답(예: 59, 60, 61)은 금지합니다.
   - **비논리적 값 금지**: 도형의 길이나 경사각(Angle of inclination, 항상 \(0^\circ \le \alpha < 180^\circ\)) 문제에서 음수 값을 오답으로 넣지 마세요. 대신 30°, 45°, 60°, 90°, 120° 같은 기하학적으로 의미 있는 각도나, 보각(180 - x), 여각(90 - x) 등을 활용하세요.
 - **[G] No Mixed Formats (포맷 통일)**: Never mix fractions and decimals in multiple-choice options. If one option is a fraction, ALL options must be fractions. If one is a decimal, ALL must be decimals.
-- **[H] Firestore Update Enforcement (필수사항)**: When you modify a local seed file to fix questions, you MUST ALWAYS write and run a Node.js script to push those changes to Firestore (`db.collection('questions').doc(id).update({...})` or `set({...}, { merge: true })`). Do not just stop at editing the local file, as live production relies on Firestore data. **CRITICAL:** When replacing legacy fields (e.g. replacing `opts` with `options`), you MUST explicitly delete the old field in Firestore using `FieldValue.delete()` (e.g. `updateData.opts = FieldValue.delete()`). Otherwise, `{ merge: true }` will leave the old fields intact, causing bugs in the app UI.
+- **[H] Content Update Enforcement (필수사항)**: When you fix a question, you MUST ALWAYS edit its
+  entry directly in `content/chapters/<chapterId>.json` (the git-tracked canonical source), run
+  `npm run content:validate`, and `git commit && git push`. Do not just stop at diagnosing the
+  issue — live production is served from that file via the CDN build, not from Firestore or a
+  seed file. There is no separate old-field-deletion step needed: you're editing one JSON object
+  in place, so a stale field simply doesn't exist unless you leave it there — just don't carry
+  legacy field names (`opts`, `a`, `graphData`, `solutionSteps`, `subQuestions`) into the edit;
+  use the canonical ones (`options`, `answer`, `figure`, `steps`, `parts`).
 - **[I] Graphical Representations (SVG vs jsxGraph)**: If a question relies on `graphData.jsxGraph` for diagrams, you must replace the `jsxGraph` payload entirely with a highly polished inline SVG (`graphData: { svg: "<svg>...</svg>" }`).
   - **Visuals:** Use harmonious colors (e.g. pastel fills for faces, slightly darker strokes). Do not use generic browser defaults.
   - **3D Geometry & Visibility:** For 3D prisms or cylinders, strictly respect the viewing perspective. Draw visible edges as **Solid Lines** and occluded/hidden edges as **Dashed Lines** (e.g., `stroke-dasharray="5,5"`).
@@ -53,7 +70,7 @@ categories of defects found in production questions.
 | `\\n` 이중 이스케이프 | `script.includes('\\\\n')` → true | `script.replace(/\\\\n/g, '\n')` |
 | 문법 오류 (괄호 불일치) | `new Function('board','JXG', script)` throw | 스크립트 수동 검토 후 수정 |
 | 지원되지 않는 JSXGraph 요소 | `slider`, `angle` 등 사용 | `functiongraph`, `point`, `text` 등으로 대체 |
-| `graphData`가 null 또는 누락 | DB에서 확인 | seed 파일에서 올바른 graphData 재삽입 |
+| `figure`가 null 또는 누락 | `content/chapters/<chapterId>.json`에서 확인 | 올바른 `figure`를 그 파일에 직접 재삽입 |
 | 시드 데이터 중복 (duplicate entries) | 같은 ID가 2번 이상 | 중복 제거, 올바른 데이터만 유지 |
 
 **Diagnosis Script:**
@@ -282,7 +299,7 @@ for (const q of questions) {
 - [ ] 각 Step이 이전 Step의 논리적 연장선인지 확인
 - [ ] 마지막 Step의 `workingOut`이 정답(`opts[a]` 또는 `answer`)과 일치하는지 확인
 - [ ] 그래프 문제: 스크립트가 정상 파싱되는지 mock board로 테스트
-- [ ] Firestore 업데이트 후 실제 화면에서 렌더링 확인
+- [ ] `npm run content:validate` 통과 확인 후 commit/push, 배포(~2분) 후 실제 화면에서 렌더링 확인
 
 ---
 
@@ -362,33 +379,32 @@ node tools/scripts/cleanupLazyDistractors.js src/constants/seedYear7ChXX*.js
 node tools/scripts/enrichSolutionsTextbook.js src/constants/seedYear7ChXX*.js
 ```
 
-#### Step 3: Firestore 업로드 (백업 필수 포함)
-업로드 스크립트를 작성(`tools/scripts/upload_y7_chXX.js`)하여 Admin SDK로 배포.
-**⚠️ 삭제 전 반드시 기존 데이터를 백업** (Rule G):
-```javascript
-// 반드시 이 패턴을 upload 스크립트에 포함할 것
-const existing = await db.collection('questions').where('chapterId', '==', chapterId).get();
-const backup = existing.docs.map(d => ({ id: d.id, ...d.data() }));
-fs.writeFileSync(`tools/audit-state/backup_${chapterId}_${Date.now()}.json`, JSON.stringify(backup, null, 2));
-console.log(`Backed up ${backup.length} docs.`);
-// 백업 확인 후에만 삭제 진행
-```
-```bash
-node tools/scripts/upload_y7_chXX.js
-```
+#### Step 3: `content/chapters/*.json`에 병합 (2026-09 migration)
+> This category predates the git migration and describes converting a raw import file into the
+> old seed format for a Firestore upload. That upload step is retired. Once you have the
+> converted, cleaned-up question objects (Steps 1–2 above), merge them directly into the target
+> chapter's canonical file instead of writing a seed file or an upload script:
+> 1. Map each converted object onto the canonical schema (`content/schema.js` — `stem`/`options`/
+>    `answer:number`/`steps`/`figure`/`parts`, not the old `opts`/`a`/`solutionSteps`/`graphData`).
+> 2. Insert/merge the question objects into `content/chapters/<chapterId>.json` under the right
+>    topic, by hand or with a small script that reads/edits/writes that one JSON file.
+> 3. `npm run content:validate`, then `git commit && git push`. No backup step is needed here the
+>    way a destructive Firestore delete once needed one — you're editing a git-tracked file, so
+>    `git diff`/`git log` is the audit trail, and a bad edit is a revert away. **Never** back this
+>    up by scanning the Firestore `questions` collection — that collection isn't the source of
+>    truth for content anymore and scanning it is banned regardless.
 
-#### Step 4: Question Index 재빌드 (절대 생략 금지)
-업로드 직후 반드시 실행 (Rule H). 생략 시 앱의 문제 수 표시가 틀어집니다:
-```bash
-node tools/scripts/rebuildQuestionIndexes.js y7-XX
-```
+#### Step 4: (retired)
+There is no separate "question index" to rebuild — `npm run build` (Vercel's build step)
+regenerates `public/content/manifest.json` and everything under it automatically from the chapter
+files on every push.
 
 ### 주의사항
-- **레거시 파일 (`importYear7Ch*.js`)을 직접 수정하지 말 것**: 항상 현대 포맷으로 변환 후 `seedYear7Ch*Questions.js`를 수정한다.
-- **HTML 해설을 직접 재사용하지 말 것**: 반드시 `solutionSteps` 배열로 변환하고, 해당 챕터의 Textbook Profile 원칙을 주입한다 (Rule F 참조).
+- **레거시 파일 (`importYear7Ch*.js`)을 직접 수정하지 말 것**: 항상 변환된 질문 객체를 대상 `content/chapters/*.json` 파일에 병합한다.
+- **HTML 해설을 직접 재사용하지 말 것**: 반드시 `steps` 배열로 변환하고, 해당 챕터의 Textbook Profile 원칙을 주입한다 (Rule F 참조).
 - **구형 LaTeX `$...$` 절대 사용 금지**: 변환 후 `\\(...\\)` 형식만 허용 (Rule C 참조).
-- **기존 데이터 삭제 전 백업 필수**: 백업 없이 delete 실행 금지 (Rule G 참조).
-- **업로드 후 인덱스 재빌드 필수**: `rebuildQuestionIndexes.js` 실행 없이 작업 완료 불가 (Rule H 참조).
+- **`npm run content:validate` 통과 후에만 commit/push**: 신규 결함이 있으면 빌드가 실패한다.
+- **questions 컬렉션을 절대 스캔하지 말 것**: 백업이든 감사든, 알려진 ID로만 조회한다 (`feedback_never-scan-questions-collection`).
 
 ---
 
@@ -434,7 +450,7 @@ node tools/scripts/rebuildQuestionIndexes.js y7-XX
 2. JavaScript 정규식을 사용하여 안전하게 백슬래시를 추가하는 스크립트를 작성합니다.
    - 예시: `str.replace(/(?<![a-zA-Z\\])(sin|cos|tan|csc|sec|cot)(?![a-zA-Z])/g, '\\\\$1');`
    - 주의: `cosine` 같은 단어 내부의 `cos`를 치환하지 않도록 부정형 전방/후방 탐색(Negative Lookaround)을 반드시 사용해야 합니다.
-3. 수정된 시드 데이터를 다시 Firestore에 병합(merge) 또는 덮어쓰기 합니다.
+3. 수정된 내용을 `content/chapters/*.json`에 직접 반영하고, `npm run content:validate` → `git commit && git push`합니다.
 
 ---
 
@@ -453,7 +469,7 @@ node tools/scripts/rebuildQuestionIndexes.js y7-XX
 **Fix Workflow:**
 1. `solutionSteps`를 동적으로 생성하는 스크립트를 작성할 때, `workingOut` 속성에 들어가는 모든 수식 문자열의 양 끝을 `\(` 와 `\)` 로 감싸는 코드를 반드시 포함하세요.
 2. 서술형 문항(`type: 'teacher_review'`)의 `answer` 와 `solution` 필드를 스캔하여, 수식이 포함되어 있다면 양 끝에 `\(` 와 `\)` 가 있는지 확인하고 없으면 씌웁니다.
-3. `answer` 와 `solution` 필드를 스캔하여 `/` 또는 `*` 기호가 사용된 수식이 있다면, 이를 정규 LaTeX 포맷인 `\frac{numerator}{denominator}` 로 치환하는 스크립트를 작성하여 Firestore에 병합합니다.
+3. `answer` 와 `solution` 필드를 스캔하여 `/` 또는 `*` 기호가 사용된 수식이 있다면, 이를 정규 LaTeX 포맷인 `\frac{numerator}{denominator}` 로 치환하는 스크립트를 작성하여 `content/chapters/*.json`에 직접 반영한 뒤 commit/push합니다.
 
 ---
 
@@ -485,8 +501,11 @@ node tools/scripts/rebuildQuestionIndexes.js y7-XX
 - Bulk conversion scripts fail to convert sub-questions (e.g., `q16a, q16b`) to `multiple_choice` because they are nested inside the parent document's `subQuestions` array, or they are incorrectly marked as `type: 'teacher_review'`.
 
 **Fix Workflow:**
-- When converting to multiple choice, scripts must explicitly check and overwrite `type: 'multiple_choice'`, `isManual: false`, and `requiresManualGrading: false` for *every* child object inside the parent document's `subQuestions` array.
-- Crucially, you must explicitly push the updated `subQuestions` array back to the parent document in Firestore.
+- When converting to `mc`, explicitly check and overwrite `type: 'mc'` and `manual: false` for
+  *every* entry inside the parent question's `parts` array in `content/chapters/*.json` — a
+  bulk-conversion script iterating only over top-level questions will silently skip nested parts.
+- Write the updated `parts` array back into the same chapter file, then `npm run content:validate`
+  and `git commit && git push`.
 
 ---
 
@@ -496,8 +515,14 @@ node tools/scripts/rebuildQuestionIndexes.js y7-XX
 - Questions with simple, deterministic answers (like True/False, or straightforward numerical comparisons like "$0.50 cheaper") are unnecessarily configured as `teacher_review` (`isManual: true`), requiring manual grading.
 
 **Fix Workflow:**
-- Convert these deterministic questions to `multiple_choice` by calculating the exact answer, generating plausible distractors dynamically, injecting a proper 4-option array, and updating both the local seed file and Firestore.
-- **CRITICAL:** When converting a question to `type: 'multiple_choice'`, you MUST explicitly set `isManual: false`. If `isManual: true` is left intact, the app will display a text input box instead of radio buttons, causing student answers to be incorrectly rejected during exact string comparison!
+- Convert these deterministic questions to `type: 'mc'` by calculating the exact answer, generating
+  plausible distractors dynamically, injecting a proper 4-option `options` array with an
+  `answer:number` index, and editing the question directly in `content/chapters/*.json`, then
+  `npm run content:validate` and `git commit && git push`.
+- **CRITICAL:** When converting a question to `type: 'mc'`, you MUST explicitly set `manual: false`
+  (or remove it). If `manual: true` is left intact, the app will display a text input box instead
+  of radio buttons, causing student answers to be incorrectly rejected during exact string
+  comparison!
 
 ---
 

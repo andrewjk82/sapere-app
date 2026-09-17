@@ -1,5 +1,56 @@
 # Sapere — project rules
 
+## ⚠️ Question content lives in git now, not Firestore or seed files (2026-09 migration)
+
+**If you are an AI (any assistant, any tool) about to edit a math question, read this first — it
+overrides anything below or in `.agents/skills/sapere-math-question/` or
+`.agents/skills/sapere-question-audit/` that talks about seed files or writing to Firestore.**
+
+As of 2026-09-16, the question bank's single source of truth is **`content/chapters/*.json`** (git).
+Firestore `questions`, `question_index`, `question_topic_index`, `sync_meta` and
+`src/constants/seed*.js` are **retired for question content** — still physically present (deletion
+is a later cleanup step) but no longer read by students or the Question Bank UI, and editing them
+does **nothing** for anyone. See `content/README.md` for the full picture; the short version:
+
+```
+edit content/chapters/<chapterId>.json     — canonical schema: content/schema.js (NOT the old
+                                              opts/a/graphData/subQuestions seed shape — see below)
+npm run content:validate                   — schema + KaTeX + MC-key checks; fails the build on
+                                              any NEW defect (existing ones are grandfathered)
+git commit && git push                     — Vercel then runs content:validate → content:publish
+                                              → vite build automatically; live in ~2 minutes
+```
+
+**Never**: write to Firestore `questions`/`question_index`/`question_topic_index`/`sync_meta` for
+content changes, edit `src/constants/seed*.js`, run `db.collection('questions').get()` or any
+`.where(...)` query over it (a full/partial scan of that collection is banned regardless — see
+`feedback_never-scan-questions-collection` — and is also simply pointless now, since nothing reads
+that collection for content). `api/content.js` is the one exception — it's what the live Question
+Bank UI itself calls to commit an edit as a human teacher; an AI editing files directly doesn't need
+it.
+
+**Canonical schema quick reference** (full schema: `content/schema.js`; legacy/display-only shape
+used at the UI boundary: `content/legacy.js`'s `toLegacy`/`fromLegacy`):
+
+| canonical (content/chapters/*.json) | old seed/Firestore shape | notes |
+|---|---|---|
+| `type: 'mc' \| 'short' \| 'review' \| 'multipart'` | `type: 'multiple_choice' \| 'short_answer' \| 'teacher_review'` | |
+| `stem` | `question` | |
+| `options: string[]` (or `{text, image?, figure?}[]`) | `opts` | |
+| `answer: number` (the option index, always) | `a` (index) / `answer` (often a stringified index) | MC answer is ALWAYS a plain number now, never a string |
+| `figure: { svg: "fig:<sha>" \| "<svg>...</svg>" }` | `graphData` | inline `<svg>...</svg>` is fine to author by hand — the build externalises it to `content/figures/` automatically |
+| `steps: [{ explain, work, figure? }]` | `solutionSteps: [{ explanation, workingOut, graphData? }]` | |
+| `parts: [...]` (a `multipart` question's sub-questions, same schema recursively) | `subQuestions: [...]` | |
+| `hint`, `difficulty`, `timeLimit`, `meta: {source, school, ...}` | same names, or `h`, `c`/`t` (topic code/title — now just file placement, not a field) | |
+
+Everything else in this file and in `.agents/skills/sapere-math-question/SKILL.md` /
+`sapere-question-audit/SKILL.md` about **distractor design, LaTeX conventions, SVG diagram rules,
+multi-part question structure, and solution-writing pedagogy is still fully in force** — only the
+storage format and update mechanism changed. `question_dna` (Firestore, DNA warmup pools) is a
+**separate, still-live** collection, untouched by this migration — see `sapere-question-dna` skill.
+
+---
+
 ## Multiple-choice option shuffle (Daily Challenge / quiz)
 
 Seed/bank MC answers are often a **0-based index** (`"0"`…`"3"`). When options

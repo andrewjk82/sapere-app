@@ -8,11 +8,17 @@ description: Ensures that when generating math questions (seed files), the gener
 When writing scripts that generate or process seed questions for mathematical problems (e.g., using `generate_seed.py` or `.cjs` scripts), ensure you add a sanitisation step to evaluate any unsimplified algebraic expressions in the generated options.
 
 ## Problem Description
-Language models or logic generation scripts sometimes produce options like \`\( x = -1, y = 2 + 1 \)\` or \`\( -x = -1, y = 6 \)\` instead of the fully simplified values. These must be caught and evaluated before pushing to the database.
+Language models or logic generation scripts sometimes produce options like \`\( x = -1, y = 2 + 1 \)\` or \`\( -x = -1, y = 6 \)\` instead of the fully simplified values. These must be caught and evaluated before the question is committed.
+
+> **2026-09 migration note:** question content now lives in `content/chapters/*.json` (git), not
+> Firestore or `src/constants/seed*.js` — see CLAUDE.md's top section. The canonical field is
+> `options` (not the legacy `opts`); apply this same sanitisation before writing into a chapter
+> file, then `npm run content:validate` and `git commit && git push` — there's no separate
+> database push step.
 
 ## Solution / Implementation Pattern
 
-When generating the JSON structure or array of questions for a seed file, apply a sanitisation function to `q.opts` that evaluates these simple arithmetic strings using Regex.
+When generating the JSON structure or array of questions for a chapter file, apply a sanitisation function to `q.options` that evaluates these simple arithmetic strings using Regex.
 
 ### Example Sanitisation Logic (JavaScript/Node.js)
 

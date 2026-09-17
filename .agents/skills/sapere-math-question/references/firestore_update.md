@@ -1,181 +1,78 @@
-# Firestore Update Template
+# Content Update Template (git — 2026-09 migration)
 
-## Template Script (`.cjs`)
+> This file used to hold a Node/Firebase-Admin script template that wrote to Firestore via a
+> service account and rewrote a `seed*.js` file. That path is retired for question content — see
+> CLAUDE.md's top section. Kept at this filename (not renamed) so old links/skill references still
+> land here; the content below is the current workflow.
 
-```javascript
-const fs = require('fs');
-const { initializeApp, cert } = require('firebase-admin/app');
-const { getFirestore } = require('firebase-admin/firestore');
+## Finding the question
 
-// ── 1. Read seed file ──
-const filePath = '/Users/andrewkim/Desktop/sapere1/src/constants/seedYear11Ch5IQuestions.js';
-let content = fs.readFileSync(filePath, 'utf8');
-const match = content.match(/export const Y11_CH5I_QUESTIONS = (\[[\s\S]*\]);$/m);
-let questions = eval(match[1]);
-
-let updatedQs = [];
-
-// ── 2. Define updates ──
-const updates = {
-  'y11a-5i-q__': {
-    type: 'multiple_choice',       // or 'teacher_review'
-    opts: [
-      "Option A \\(LaTeX\\)",
-      "Option B \\(LaTeX\\)",
-      "Option C \\(LaTeX\\)",       // ← correct
-      "Option D \\(LaTeX\\)"
-    ],
-    a: 2,                          // 0-indexed correct answer
-    steps: [
-      {
-        explanation: "Step 1 explanation",
-        workingOut: "Step 1 LaTeX"
-      },
-      {
-        explanation: "Step 2 explanation",
-        workingOut: "Step 2 LaTeX"
-      },
-      {
-        explanation: "Final step",
-        workingOut: "Final answer LaTeX"
-      }
-    ],
-    // Optional: graph for last solution step
-    graph: {
-      jsxGraph: {
-        width: 400,
-        height: 300,
-        boundingbox: [-5, 5, 5, -3],
-        script: `board.suspendUpdate();
-board.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});
-board.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});
-board.create('functiongraph', [function(x){ return x*x; }, -5, 5],
-  {strokeColor:'blue', strokeWidth:2});
-board.unsuspendUpdate();`
-      }
-    }
-  }
-};
-
-// ── 3. Apply updates to seed array ──
-for (let id of Object.keys(updates)) {
-  let q = questions.find(x => x.id === id);
-  if (!q) {
-    let parent = questions.find(x =>
-      x.subQuestions && x.subQuestions.some(sq => sq.id === id));
-    if (parent) q = parent.subQuestions.find(sq => sq.id === id);
-  }
-  if (!q) { console.warn(`Question ${id} not found!`); continue; }
-
-  let upd = updates[id];
-
-  if (upd.type === 'multiple_choice') {
-    q.type = 'multiple_choice';
-    q.opts = upd.opts;
-    q.a = upd.a;
-    q.answer = upd.a.toString();
-    q.requiresManualGrading = false;
-    q.graphData = null;
-  } else {
-    q.type = 'teacher_review';
-    delete q.opts;
-    delete q.a;
-    delete q.answer;
-    q.requiresManualGrading = true;
-  }
-
-  q.solutionSteps = upd.steps;
-  if (upd.graph) {
-    q.solutionSteps[q.solutionSteps.length - 1].graphData = upd.graph;
-  }
-  q.solution = upd.steps[upd.steps.length - 1].workingOut;
-
-  updatedQs.push(q);
-}
-
-// ── 4. Write seed file ──
-const newArrayStr = JSON.stringify(questions, null, 2)
-  .replace(/"([a-zA-Z_$][0-9a-zA-Z_$]*)":/g, '$1:');
-fs.writeFileSync(filePath,
-  content.substring(0, match.index)
-  + 'export const Y11_CH5I_QUESTIONS = ' + newArrayStr + ';\n',
-  'utf8');
-
-// ── 5. Update Firestore ──
-async function updateDb() {
-  const serviceAccount = JSON.parse(fs.readFileSync(
-    '/Users/andrewkim/Downloads/sapere-fe23e-firebase-adminsdk-fbsvc-d9dd93623b.json',
-    'utf8'));
-  initializeApp({ credential: cert(serviceAccount) });
-  const db = getFirestore();
-
-  for (let q of updatedQs) {
-    let isSub = !questions.find(x => x.id === q.id);
-
-    if (!isSub) {
-      // Top-level question
-      await db.collection('questions').doc(q.id).update({
-        type: q.type,
-        opts: q.opts || null,
-        options: q.opts ? q.opts.map(o => ({ text: o, imageUrl: '' })) : null,
-        a: q.a !== undefined ? q.a : null,
-        answer: q.answer || null,
-        solution: q.solution,
-        solutionSteps: q.solutionSteps,
-        requiresManualGrading: q.requiresManualGrading,
-        graphData: q.graphData
-      });
-    } else {
-      // Sub-question: read parent, patch, write back
-      let parent = questions.find(x =>
-        x.subQuestions && x.subQuestions.some(sq => sq.id === q.id));
-      if (parent) {
-        let parentDoc = await db.collection('questions').doc(parent.id).get();
-        if (parentDoc.exists) {
-          let pData = parentDoc.data();
-          let sqIdx = pData.subQuestions.findIndex(sq => sq.id === q.id);
-          if (sqIdx > -1) {
-            Object.assign(pData.subQuestions[sqIdx], {
-              type: q.type,
-              opts: q.opts || null,
-              options: q.opts ? q.opts.map(o => ({ text: o, imageUrl: '' })) : null,
-              a: q.a !== undefined ? q.a : null,
-              answer: q.answer || null,
-              solution: q.solution,
-              solutionSteps: q.solutionSteps,
-              requiresManualGrading: q.requiresManualGrading,
-              graphData: q.graphData
-            });
-            await db.collection('questions').doc(parent.id).update({
-              subQuestions: pData.subQuestions
-            });
-          }
-        }
-      }
-    }
-  }
-  console.log('Successfully updated all questions.');
-  process.exit(0);
-}
-updateDb();
+Chapter files are `content/chapters/<chapterId>.json`. If you don't know which file an id lives
+in:
+```bash
+grep -rl '"y11a-5i-q__"' content/chapters/
 ```
 
-## Usage
+## Editing in place
 
-1. Copy the template to `tools/scripts/fix_<description>.cjs`
-2. Replace `Y11_CH5I_QUESTIONS` with the correct constant name
-3. Fill in the `updates` object with actual question data
-4. Run: `node tools/scripts/fix_<description>.cjs`
+Open the file, find the question object (or, for a sub-part, its parent's `parts[]` entry), and
+edit it directly to match `content/schema.js` (see `references/question_schema.md` for the full
+canonical shape). Example — converting a question to MC with steps and a graph on the last step:
 
-## Adapting for Other Year/Chapter Files
-
-| Year | Constant Name Pattern | File Path |
-|------|-----------------------|-----------|
-| Y7 | `Y7_CH1F_QUESTIONS` | `seedYear7Ch1FQuestions.js` |
-| Y10 | `Y10_CH8_QUESTIONS` | `seedYear10Ch8Questions.js` |
-| Y11 | `Y11_CH5I_QUESTIONS` | `seedYear11Ch5IQuestions.js` |
-
-Adjust the regex accordingly:
-```javascript
-const match = content.match(/export const Y{XX}_CH{YY}_QUESTIONS = (\[[\s\S]*\]);$/m);
+```json
+{
+  "id": "y11a-5i-q__",
+  "type": "mc",
+  "options": [
+    "Option A \\(LaTeX\\)",
+    "Option B \\(LaTeX\\)",
+    "Option C \\(LaTeX\\)",
+    "Option D \\(LaTeX\\)"
+  ],
+  "answer": 2,
+  "manual": false,
+  "steps": [
+    { "explain": "Step 1 explanation", "work": "Step 1 LaTeX" },
+    { "explain": "Step 2 explanation", "work": "Step 2 LaTeX" },
+    {
+      "explain": "Final step",
+      "work": "Final answer LaTeX",
+      "figure": {
+        "svg": "<svg viewBox=\"0 0 400 300\">...</svg>"
+      }
+    }
+  ],
+  "solution": "Final answer LaTeX"
+}
 ```
+
+Notes:
+- `answer` is always a plain 0-indexed number for `mc` — never a string.
+- A JSXGraph config is still fine to keep as raw JSON under `figure.raw` for continuity with
+  older questions, but prefer a hand-authored SVG under `figure.svg` for new work (see SKILL.md §5
+  / `references/jsxgraph_patterns.md`); either way it's just a JSON value now, no escaping layer.
+- For a sub-part, edit it inside the parent question's `parts[]` array — there's no separate
+  document, so no "read parent → patch → write parent back" dance; it's the same file.
+- To convert to `type: 'review'` instead: drop `options`/`answer`, set `manual: true`.
+
+## Validate, commit, push
+
+```bash
+npm run content:validate      # schema + KaTeX (renderer preprocessing) + MC-key checks
+git add content/chapters/<chapterId>.json content/figures/  # figures/ only if you added an SVG
+git commit -m "Fix <id>: <what and why>"
+git push
+```
+
+`npm run content:validate` fails the build only on a *new* defect — pre-existing issues elsewhere
+in the file are grandfathered via `content/known-defects.json` and won't block your commit.
+Pushing triggers Vercel's build (`content:validate` → `content:publish` → `vite build`), live for
+students in ~2 minutes. No service account, no manual Firestore write, no seed-file regex dance.
+
+## If you need to script a bulk edit across many questions
+
+Read/modify/write the JSON file(s) directly with any scripting tool (Node, Python, a short
+in-editor script) — `JSON.parse`/`JSON.stringify` the chapter file, no `eval()` of a JS array
+literal needed since these are plain `.json` files now. Still run `npm run content:validate`
+before committing a bulk change, and check the diff for the number of questions you actually
+intended to touch.
