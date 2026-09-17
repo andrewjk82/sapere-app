@@ -8072,59 +8072,63 @@
         },
         {
           "id": "y11a-5C-new-6a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Simplify \\(f(-x)\\) for the function \\(f(x) = x^2 - 16\\), and hence determine whether it is even, odd, or neither.",
-          "answer": "0",
+          "answer": 0,
           "hint": "Substitute \\(-x\\) into the equation. What happens to \\((-x)^2\\)?",
-          "solution": "0",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(f(-x) = (-x)^2 - 16 = x^2 - 16\\)"
+              "explain": "Substitute \\(-x\\) into the function \\(f(x)\\).",
+              "work": "\\(f(-x) = (-x)^2 - 16\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(f(-x) = f(x) \\implies \\text{Even}\\)"
+              "explain": "Simplify the expression using the properties of even powers.",
+              "work": "\\(f(-x) = x^2 - 16 = f(x)\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(0\\)"
-            },
-            {
-              "explain": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(0\\)"
+              "explain": "Conclude the classification.",
+              "work": "\\text{Since } f(-x) = f(x)\\text{, the function is Even.}"
             }
           ],
-          "manual": true
+          "options": [
+            "Even",
+            "Odd",
+            "Neither",
+            "Both"
+          ]
         },
         {
           "id": "y11a-5C-new-6b",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Simplify \\(f(-x)\\) for the function \\(f(x) = x^2 - 4x + 3\\), and hence determine whether it is even, odd, or neither.",
-          "answer": "2",
+          "answer": 2,
           "hint": "Substitute \\(-x\\). Does it perfectly equal \\(f(x)\\) or \\(-f(x)\\)?",
-          "solution": "2",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "explain": "Substitute \\(-x\\) into the function \\(f(x)\\).",
+              "work": "\\(f(-x) = (-x)^2 - 4(-x) + 3\\)"
+            },
+            {
+              "explain": "Simplify the expression.",
               "work": "\\(f(-x) = x^2 + 4x + 3\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(f(-x) \\neq f(x) \\text{ and } f(-x) \\neq -f(x) \\implies \\text{Neither}\\)"
+              "explain": "Compare \\(f(-x)\\) with \\(f(x)\\) and \\(-f(x)\\).",
+              "work": "\\(f(-x) \\neq f(x)\\text{ and }f(-x) \\neq -f(x)\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(2\\)"
-            },
-            {
-              "explain": "Final answer: 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(2\\)"
+              "explain": "Conclude the classification.",
+              "work": "\\text{Therefore, the function is Neither.}"
             }
           ],
-          "manual": true
+          "options": [
+            "Even",
+            "Odd",
+            "Neither",
+            "Both"
+          ]
         },
         {
           "id": "y11a-5C-new-6c",
@@ -8161,87 +8165,91 @@
         },
         {
           "id": "y11a-5C-new-6d",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Simplify \\(f(-x)\\) for the function \\(f(x) = x^4 - 16x^2\\), and hence determine whether it is even, odd, or neither.",
-          "answer": "0",
+          "answer": 0,
           "hint": "Even powers of \\(-x\\) become positive.",
-          "solution": "0",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(f(-x) = x^4 - 16x^2\\)"
+              "explain": "Substitute \\(-x\\) into the function \\(f(x)\\).",
+              "work": "\\(f(-x) = (-x)^4 - 16(-x)^2\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(f(-x) = f(x) \\implies \\text{Even}\\)"
+              "explain": "Simplify using the properties of even powers.",
+              "work": "\\(f(-x) = x^4 - 16x^2 = f(x)\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(0\\)"
-            },
-            {
-              "explain": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(0\\)"
+              "explain": "Conclude the classification.",
+              "work": "\\text{Since } f(-x) = f(x)\\text{, the function is Even.}"
             }
           ],
-          "manual": true
+          "options": [
+            "Even",
+            "Odd",
+            "Neither",
+            "Both"
+          ]
         },
         {
           "id": "y11a-5C-new-6e",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Simplify \\(f(-x)\\) for the function \\(f(x) = x^3 + 2x^2\\), and hence determine whether it is even, odd, or neither.",
-          "answer": "2",
+          "answer": 2,
           "hint": "Does it perfectly negate or perfectly remain the same?",
-          "solution": "2",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "explain": "Substitute \\(-x\\) into the function \\(f(x)\\).",
+              "work": "\\(f(-x) = (-x)^3 + 2(-x)^2\\)"
+            },
+            {
+              "explain": "Simplify using exponent properties.",
               "work": "\\(f(-x) = -x^3 + 2x^2\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{Neither}\\)"
+              "explain": "Compare \\(f(-x)\\) with \\(f(x)\\) and \\(-f(x)\\).",
+              "work": "\\(f(-x) \\neq f(x)\\text{ and }f(-x) \\neq -(x^3 + 2x^2)\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(2\\)"
-            },
-            {
-              "explain": "Final answer: 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(2\\)"
+              "explain": "Conclude the classification.",
+              "work": "\\text{Therefore, the function is Neither.}"
             }
           ],
-          "manual": true
+          "options": [
+            "Even",
+            "Odd",
+            "Neither",
+            "Both"
+          ]
         },
         {
           "id": "y11a-5C-new-6f",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Simplify \\(f(-x)\\) for the function \\(f(x) = x^5 - 25x\\), and hence determine whether it is even, odd, or neither.",
-          "answer": "1",
+          "answer": 1,
           "hint": "Substitute \\(-x\\). Odd powers preserve the negative sign.",
-          "solution": "1",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Transformations and symmetry: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+              "explain": "Substitute \\(-x\\) into the function \\(f(x)\\).",
+              "work": "\\(f(-x) = (-x)^5 - 25(-x)\\)"
+            },
+            {
+              "explain": "Simplify using the properties of odd powers.",
               "work": "\\(f(-x) = -x^5 + 25x = -(x^5 - 25x)\\)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(f(-x) = -f(x) \\implies \\text{Odd}\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(1\\)"
-            },
-            {
-              "explain": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(1\\)"
+              "explain": "Conclude the classification.",
+              "work": "\\text{Since } f(-x) = -f(x)\\text{, the function is Odd.}"
             }
           ],
-          "manual": true
+          "options": [
+            "Even",
+            "Odd",
+            "Neither",
+            "Both"
+          ]
         },
         {
           "id": "y11a-5C-new-7a",
