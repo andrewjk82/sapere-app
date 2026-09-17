@@ -224,11 +224,28 @@ export const searchIds = async (prefix) => {
   const p = String(prefix).toLowerCase();
   return (await allIdsCache).filter(([id]) => id.toLowerCase().startsWith(p)).map(([id, chapterId, topicId]) => ({ id, chapterId, topicId }));
 };
-/** Single question by id, overlay-aware; falls back to the inactive set for admin use. */
+/**
+ * Single question by id, overlay-aware, for admin use. If `id` is a SUB-QUESTION's own id — never
+ * independently servable, since a part only ever exists inside its parent's `.parts` — resolves back
+ * to the whole PARENT multipart question instead of returning null. Without this, an admin flow that
+ * looks a question up by id (a student's report snapshots the specific part they were looking at, so
+ * `report.questionId` is very often a part id) finds nothing and silently falls back to whatever was
+ * snapshotted at report time — rendering that one part stranded with no parent stem or sibling parts,
+ * exactly the "서브 문제들이 섞여서 있어" report on jrhy2008-q32b (2026-09-17). No caller needs "just
+ * the part" — QuestionBankModal always edits a multipart as one whole document — so redirecting to
+ * the parent here, once, is correct for every admin consumer of this function.
+ */
 export const adminGetQuestion = async (id) => {
   const ov = await overlayGet(id); if (ov) return ov;
   const live = await getQuestion(id); if (live) return live;
-  return (await adminInactiveQuestions()).find((d) => d.id === id) || null;
+  const inactive = (await adminInactiveQuestions()).find((d) => d.id === id);
+  if (inactive) return inactive;
+  try {
+    const m = await getManifest();
+    const entry = m.parts && (await fetchJson(`/content/${m.parts}`))[id];
+    if (entry) return adminGetQuestion(entry.parentId);
+  } catch { /* no parts index / network — fall through to null, same as before this existed */ }
+  return null;
 };
 /** HSC type practice: questions tagged with a DNA/type slug (replaces the dnaId / questionType / question_type_index queries). */
 export const getQuestionsByHscType = async (slug) => {

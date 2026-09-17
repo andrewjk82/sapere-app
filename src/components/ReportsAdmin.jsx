@@ -220,6 +220,10 @@ const SourceBadge = ({ report }) => {
 
 // Latest copy of a question for the report views: from the git bank (/content/) when enabled,
 // otherwise the live Firestore doc (getDocFromServer — never the IndexedDB cache).
+// contentLoader.adminGetQuestion resolves a sub-question's own id back to its parent multipart
+// (a student's report snapshots the specific part they were looking at, so `report.questionId` is
+// often a part id) — Firestore fallback has no equivalent (would need a collection scan, which is
+// banned); CDN mode is fully live in production, so this only matters if that switch is ever off.
 const readLiveQuestion = async (qid) => {
   if (cdnEnabledAtAll()) { const d = await adminGetQuestion(qid); return d ? { ...d } : null; }
   const snap = await getDocFromServer(doc(db, 'questions', qid));
@@ -557,8 +561,18 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
     let resultIndex = questionId
       ? results.findIndex(r => String(r?.questionId || '') === String(questionId))
       : -1;
+    // Index fallback only applies to legacy entries with no recorded
+    // questionId at all — never to a slot that already names a DIFFERENT
+    // question. Trusting position alone across stat docs (different days,
+    // different quizzes) previously matched a same-index answer to an
+    // unrelated question and displayed its (irrelevant) answer/working-out
+    // for this report.
     if (resultIndex === -1 && fallbackIndex != null && results[fallbackIndex] != null) {
-      resultIndex = fallbackIndex;
+      const fallbackEntry = results[fallbackIndex];
+      const fallbackHasOwnId = !!fallbackEntry?.questionId;
+      if (!fallbackHasOwnId || (questionId && String(fallbackEntry.questionId) === String(questionId))) {
+        resultIndex = fallbackIndex;
+      }
     }
     if (resultIndex === -1) return null;
 
@@ -569,7 +583,14 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
     };
   };
 
-  const findReportAttempt = async (report) => {
+  // `requireUnresolved: true` (the default) is for credit-restore — only an
+  // attempt that's still marked wrong is worth restoring credit on. Display
+  // callers (showing "what did the student answer") want the actual matching
+  // attempt regardless of its correct/incorrect status — skipping a correct
+  // match here used to make the search fall through to a *different* day's
+  // stat doc, where an unrelated question could satisfy the loose index
+  // fallback and get shown as if it were this report's answer.
+  const findReportAttempt = async (report, { requireUnresolved = true } = {}) => {
     const studentId = report.studentId;
     const questionId = report.questionId || report.questionData?.id;
     const fallbackIndex = report.questionIndex ?? null;
@@ -588,6 +609,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
       return d.toLocaleDateString('en-CA');
     });
 
+    let firstMatch = null;
     for (const dateKey of candidateDates) {
       for (const root of roots) {
         for (const statCollection of statCollections) {
@@ -595,10 +617,15 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
           if (attempt) {
             const isUnresolved = attempt.results[attempt.resultIndex]?.correct !== true;
             if (isUnresolved) return attempt;
+            if (!firstMatch) firstMatch = attempt;
           }
         }
       }
     }
+    // No unresolved attempt found — for display purposes, a resolved (already
+    // correct) match is still the right thing to show; only credit-restore
+    // needs to keep treating this as "nothing to restore".
+    if (!requireUnresolved && firstMatch) return firstMatch;
 
     // NO scan fallback. Reports created from a scored quiz carry direct stat
     // pointers (statRoot/statCollection/statId) and are resolved without any
@@ -1076,7 +1103,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                           <MathView content={sq.question || sq.text || ''} graphData={sq.graphData} style={{ fontWeight: 600, color: '#1e293b', fontSize: '0.95rem' }} />
                           {(sq.answer ?? '') !== '' && (
                             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '6px', color: '#64748b', fontWeight: 700, fontSize: '0.82rem' }}>
-                              Answer: <MathView content={String(sq.answer ?? '')} style={{ color: '#166534', fontWeight: 800 }} />
+                              Answer: <MathView content={sq.type === 'multiple_choice' ? (resolveCorrectOptionText(sq) || String(sq.answer ?? '')) : String(sq.answer ?? '')} style={{ color: '#166534', fontWeight: 800 }} />
                             </div>
                           )}
                         </div>

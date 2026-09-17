@@ -13,7 +13,13 @@
  *                                 ├─ extra.<hash>.json             chapter → { topicId: [ids] } cross-listings (alsoIn)
  *                                 ├─ hsc-types.<hash>.json         { byType: {slug:[ids]}, byDna: {dnaId:[ids]} }  (replaces question_type_index)
  *                                 ├─ all-ids.<hash>.json           [[id, chapterId, topicId], …] every ACTIVE question — admin id-prefix search only
- *                                 └─ admin.<hash>.json             inactive/pending questions with context — admin surfaces only
+ *                                 ├─ admin.<hash>.json             inactive/pending questions with context — admin surfaces only
+ *                                 └─ parts.<hash>.json             { partId: { topicId, parentId } } for every sub-question id — lets a
+ *                                                                  report/preview reached by a PART's own id (a student's report snapshot
+ *                                                                  captures the sub-question, not the parent) resolve back to the whole
+ *                                                                  multipart question instead of rendering that part in isolation, out of
+ *                                                                  context. Parts are never independently listed elsewhere (allIds, ids,
+ *                                                                  hscTypes) — a part is only ever reachable as .parts[] of its parent.
  *
  * Rules:
  *   - inactive questions are NOT published (they stay in git)
@@ -60,7 +66,7 @@ fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(path.join(OUT, 'topics'), { recursive: true });
 
 const manifest = { builtAt: new Date().toISOString(), topics: {}, chapters: {} };
-const idToTopic = {}; const extra = {}; const hscTypes = {}; const dnaTypes = {}; const allIds = []; const adminDocs = [];
+const idToTopic = {}; const extra = {}; const hscTypes = {}; const dnaTypes = {}; const allIds = []; const adminDocs = []; const partIndex = {};
 let nQ = 0, nInactive = 0, bytes = 0;
 
 for (const f of fs.readdirSync(SRC).filter((x) => x.endsWith('.json')).sort(natural)) {
@@ -78,6 +84,8 @@ for (const f of fs.readdirSync(SRC).filter((x) => x.endsWith('.json')).sort(natu
       if (q.dna?.dnaId) (dnaTypes[q.dna.dnaId] ||= []).push(q.id);
       allIds.push([q.id, ch.chapterId, t.topicId]);
       for (const other of q.alsoIn || []) ((extra[other] ||= {})[t.topicId] ||= []).push(q.id);
+      const indexParts = (parts, parentId) => { for (const p of parts || []) { partIndex[p.id] = { topicId: t.topicId, parentId }; indexParts(p.parts, parentId); } };
+      indexParts(q.parts, q.id);
     }
     const body = JSON.stringify({ topicId: t.topicId, ...(t.synthetic ? { synthetic: true } : {}), chapterId: ch.chapterId, chapterTitle: ch.title, year: ch.year, code: t.code, title: t.title, questions: active.map(inlineQuestion) });
     const h = sha(body);
@@ -97,7 +105,8 @@ const [hscName] = side('hsc-types', { byType: hscTypes, byDna: dnaTypes });
 allIds.sort((a, b) => natural(a[0], b[0]));
 const [allIdsName] = side('all-ids', allIds);
 const [adminName] = side('admin', { inactive: adminDocs });
-manifest.ids = idsName; manifest.extra = extraName; manifest.hscTypes = hscName; manifest.allIds = allIdsName; manifest.admin = adminName;
+const [partsName] = side('parts', partIndex);
+manifest.ids = idsName; manifest.extra = extraName; manifest.hscTypes = hscName; manifest.allIds = allIdsName; manifest.admin = adminName; manifest.parts = partsName;
 manifest.contentHash = sha(Object.values(manifest.chapters).flatMap((c) => Object.values(c).map((v) => v[0])).join(''));
 fs.writeFileSync(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 1));
 
