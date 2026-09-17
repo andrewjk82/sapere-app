@@ -6669,7 +6669,7 @@
         },
         {
           "id": "y9-11d-q2d",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Write down the gradient and \\(y\\)-intercept of the line \\(y = -2x + 2\\).",
           "figure": {
@@ -6690,54 +6690,36 @@
               "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, 0]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 0], {size: 3, color: 'red', name: '(1, 0)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
             }
           },
-          "answer": "m = -2, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((1, 0)\\).",
+          "answer": 0,
           "hint": "Identify \\(m\\) and \\(c\\) directly from the equation, plot the \\(y\\)-intercept, and substitute another \\(x\\) value to find a second point.",
-          "solution": "m = -2, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((1, 0)\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "m = -2, quad c = 2",
-              "figure": {
-                "jsxGraph": {
-                  "width": 300,
-                  "height": 300,
-                  "boundingbox": [
-                    -5,
-                    7,
-                    5,
-                    -7
-                  ],
-                  "showConstructionPoints": true,
-                  "boardOptions": {
-                    "axis": true,
-                    "grid": true
-                  },
-                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nvar pt1 = board.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nvar pt2 = board.create('point', [1, 0], {size: 3, color: 'red', name: '(1, 0)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('functiongraph', [function(x){ return -2*x + 2; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
-                }
-              }
+              "explain": "Recall the gradient-intercept form of a linear equation.",
+              "work": "\\(y = mx + c\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(x = 1 \\implies y = 0\\)"
+              "explain": "Identify the gradient \\(m\\), which is the coefficient of \\(x\\).",
+              "work": "\\(m = -2\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "m = -2, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((1, 0)\\)."
-            },
-            {
-              "explain": "Final answer: m = -2, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((1, 0)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "m = -2, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((1, 0)\\)."
+              "explain": "Identify the \\(y\\)-intercept \\(c\\), which is the constant term.",
+              "work": "\\(c = 2\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
+          ],
+          "options": [
+            "Gradient: \\(-2\\), \\(y\\)-intercept: \\(2\\)",
+            "Gradient: \\(2\\), \\(y\\)-intercept: \\(2\\)",
+            "Gradient: \\(-2\\), \\(y\\)-intercept: \\(-2\\)",
+            "Gradient: \\(2\\), \\(y\\)-intercept: \\(-2\\)"
           ]
         },
         {
           "id": "y9-11d-q2e",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Write down the gradient and \\(y\\)-intercept of the line \\(y = -4x - 3\\).",
           "figure": {
@@ -6758,54 +6740,36 @@
               "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -9.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, -3], [1, -7]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -7], {size: 3, color: 'red', name: '(1, -7)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
             }
           },
-          "answer": "m = -4, y-intercept = -3.\nLine passes through \\((0, -3)\\) and \\((1, -7)\\).",
+          "answer": 0,
           "hint": "Identify \\(m\\) and \\(c\\) directly from the equation, plot the \\(y\\)-intercept, and substitute another \\(x\\) value to find a second point.",
-          "solution": "m = -4, y-intercept = -3.\nLine passes through \\((0, -3)\\) and \\((1, -7)\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "m = -4, quad c = -3",
-              "figure": {
-                "jsxGraph": {
-                  "width": 300,
-                  "height": 300,
-                  "boundingbox": [
-                    -5,
-                    7,
-                    5,
-                    -10
-                  ],
-                  "showConstructionPoints": true,
-                  "boardOptions": {
-                    "axis": true,
-                    "grid": true
-                  },
-                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -9.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nvar pt1 = board.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nvar pt2 = board.create('point', [1, -7], {size: 3, color: 'red', name: '(1, -7)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('functiongraph', [function(x){ return -4*x - 3; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
-                }
-              }
+              "explain": "Recall the gradient-intercept form of a linear equation.",
+              "work": "\\(y = mx + c\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(x = 1 \\implies y = -7\\)"
+              "explain": "Identify the gradient \\(m\\), which is the coefficient of \\(x\\).",
+              "work": "\\(m = -4\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "m = -4, y-intercept = -3.\nLine passes through \\((0, -3)\\) and \\((1, -7)\\)."
-            },
-            {
-              "explain": "Final answer: m = -4, y-intercept = -3.\nLine passes through \\((0, -3)\\) and \\((1, -7)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "m = -4, y-intercept = -3.\nLine passes through \\((0, -3)\\) and \\((1, -7)\\)."
+              "explain": "Identify the \\(y\\)-intercept \\(c\\), which is the constant term.",
+              "work": "\\(c = -3\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
+          ],
+          "options": [
+            "Gradient: \\(-4\\), \\(y\\)-intercept: \\(-3\\)",
+            "Gradient: \\(4\\), \\(y\\)-intercept: \\(-3\\)",
+            "Gradient: \\(-4\\), \\(y\\)-intercept: \\(3\\)",
+            "Gradient: \\(-3\\), \\(y\\)-intercept: \\(-4\\)"
           ]
         },
         {
           "id": "y9-11d-q2f",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Write down the gradient and \\(y\\)-intercept of the line \\(y = -3x - 5\\).",
           "figure": {
@@ -6826,54 +6790,36 @@
               "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -10.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, -5], [1, -8]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -5], {size: 3, color: 'red', name: '(0, -5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -8], {size: 3, color: 'red', name: '(1, -8)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
             }
           },
-          "answer": "m = -3, y-intercept = -5.\nLine passes through \\((0, -5)\\) and \\((1, -8)\\).",
+          "answer": 0,
           "hint": "Identify \\(m\\) and \\(c\\) directly from the equation, plot the \\(y\\)-intercept, and substitute another \\(x\\) value to find a second point.",
-          "solution": "m = -3, y-intercept = -5.\nLine passes through \\((0, -5)\\) and \\((1, -8)\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "m = -3, quad c = -5",
-              "figure": {
-                "jsxGraph": {
-                  "width": 300,
-                  "height": 300,
-                  "boundingbox": [
-                    -5,
-                    7,
-                    5,
-                    -11
-                  ],
-                  "showConstructionPoints": true,
-                  "boardOptions": {
-                    "axis": true,
-                    "grid": true
-                  },
-                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -10.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nvar pt1 = board.create('point', [0, -5], {size: 3, color: 'red', name: '(0, -5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nvar pt2 = board.create('point', [1, -8], {size: 3, color: 'red', name: '(1, -8)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('functiongraph', [function(x){ return -3*x - 5; }], {strokeColor: 'blue', strokeWidth: 2});\nboard.unsuspendUpdate();"
-                }
-              }
+              "explain": "Recall the gradient-intercept form of a linear equation.",
+              "work": "\\(y = mx + c\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(x = 1 \\implies y = -8\\)"
+              "explain": "Identify the gradient \\(m\\), which is the coefficient of \\(x\\).",
+              "work": "\\(m = -3\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "m = -3, y-intercept = -5.\nLine passes through \\((0, -5)\\) and \\((1, -8)\\)."
-            },
-            {
-              "explain": "Final answer: m = -3, y-intercept = -5.\nLine passes through \\((0, -5)\\) and \\((1, -8)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "m = -3, y-intercept = -5.\nLine passes through \\((0, -5)\\) and \\((1, -8)\\)."
+              "explain": "Identify the \\(y\\)-intercept \\(c\\), which is the constant term.",
+              "work": "\\(c = -5\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
+          ],
+          "options": [
+            "Gradient: \\(-3\\), \\(y\\)-intercept: \\(-5\\)",
+            "Gradient: \\(3\\), \\(y\\)-intercept: \\(-5\\)",
+            "Gradient: \\(-3\\), \\(y\\)-intercept: \\(5\\)",
+            "Gradient: \\(-5\\), \\(y\\)-intercept: \\(-3\\)"
           ]
         },
         {
           "id": "y9-11d-q2g",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Write down the gradient and \\(y\\)-intercept of the line \\(y = \\frac{1}{3}x - 3\\).",
           "figure": {
@@ -6894,54 +6840,36 @@
               "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5, 0], [5.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, -3], [3, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [3, -2], {size: 3, color: 'red', name: '(3, -2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
             }
           },
-          "answer": "m = \\frac{1}{3}, y-intercept = -3.\nLine passes through \\((0, -3)\\) and \\((3, -2)\\).",
+          "answer": 0,
           "hint": "Identify \\(m\\) and \\(c\\) directly from the equation, plot the \\(y\\)-intercept, and substitute another \\(x\\) value to find a second point.",
-          "solution": "m = \\frac{1}{3}, y-intercept = -3.\nLine passes through \\((0, -3)\\) and \\((3, -2)\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(m = \\frac{1}{3}, quad c = -3\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 300,
-                  "height": 300,
-                  "boundingbox": [
-                    -6,
-                    7,
-                    6,
-                    -7
-                  ],
-                  "showConstructionPoints": true,
-                  "boardOptions": {
-                    "axis": true,
-                    "grid": true
-                  },
-                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5, 0], [5.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, -3], [3, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [3, -2], {size: 3, color: 'red', name: '(3, -2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-                }
-              }
+              "explain": "Recall the gradient-intercept form of a linear equation.",
+              "work": "\\(y = mx + c\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(x = 3 \\implies y = -2\\)"
+              "explain": "Identify the gradient \\(m\\), which is the coefficient of \\(x\\).",
+              "work": "\\(m = \\frac{1}{3}\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "m = \\frac{1}{3}, y-intercept = -3.\nLine passes through \\((0, -3)\\) and \\((3, -2)\\)."
-            },
-            {
-              "explain": "Final answer: m = \\frac{1}{3}, y-intercept = -3.\nLine passes through \\((0, -3)\\) and \\((3, -2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "m = \\frac{1}{3}, y-intercept = -3.\nLine passes through \\((0, -3)\\) and \\((3, -2)\\)."
+              "explain": "Identify the \\(y\\)-intercept \\(c\\), which is the constant term.",
+              "work": "\\(c = -3\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
+          ],
+          "options": [
+            "Gradient: \\(\\frac{1}{3}\\), \\(y\\)-intercept: \\(-3\\)",
+            "Gradient: \\(-\\frac{1}{3}\\), \\(y\\)-intercept: \\(-3\\)",
+            "Gradient: \\(\\frac{1}{3}\\), \\(y\\)-intercept: \\(3\\)",
+            "Gradient: \\(3\\), \\(y\\)-intercept: \\(-\\frac{1}{3}\\)"
           ]
         },
         {
           "id": "y9-11d-q2h",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Write down the gradient and \\(y\\)-intercept of the line \\(y = \\frac{3}{4}x + 2\\).",
           "figure": {
@@ -6962,49 +6890,31 @@
               "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5, 0], [6.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [4, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [4, 5], {size: 3, color: 'red', name: '(4, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
             }
           },
-          "answer": "m = \\frac{3}{4}, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((4, 5)\\).",
+          "answer": 0,
           "hint": "Identify \\(m\\) and \\(c\\) directly from the equation, plot the \\(y\\)-intercept, and substitute another \\(x\\) value to find a second point.",
-          "solution": "m = \\frac{3}{4}, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((4, 5)\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The equation of a straight line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(m = \\frac{3}{4}, quad c = 2\\)",
-              "figure": {
-                "jsxGraph": {
-                  "width": 300,
-                  "height": 300,
-                  "boundingbox": [
-                    -7,
-                    8,
-                    7,
-                    -7
-                  ],
-                  "showConstructionPoints": true,
-                  "boardOptions": {
-                    "axis": true,
-                    "grid": true
-                  },
-                  "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5, 0], [6.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6.5], [0, 7.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.2, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [4, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [4, 5], {size: 3, color: 'red', name: '(4, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-                }
-              }
+              "explain": "Recall the gradient-intercept form of a linear equation.",
+              "work": "\\(y = mx + c\\)"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(x = 4 \\implies y = 5\\)"
+              "explain": "Identify the gradient \\(m\\), which is the coefficient of \\(x\\).",
+              "work": "\\(m = \\frac{3}{4}\\)"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "m = \\frac{3}{4}, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((4, 5)\\)."
-            },
-            {
-              "explain": "Final answer: m = \\frac{3}{4}, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((4, 5)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "m = \\frac{3}{4}, y-intercept = 2.\nLine passes through \\((0, 2)\\) and \\((4, 5)\\)."
+              "explain": "Identify the \\(y\\)-intercept \\(c\\), which is the constant term.",
+              "work": "\\(c = 2\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 30,
           "alsoIn": [
             "exam:year9ch11d"
+          ],
+          "options": [
+            "Gradient: \\(\\frac{3}{4}\\), \\(y\\)-intercept: \\(2\\)",
+            "Gradient: \\(-\\frac{3}{4}\\), \\(y\\)-intercept: \\(2\\)",
+            "Gradient: \\(\\frac{3}{4}\\), \\(y\\)-intercept: \\(-2\\)",
+            "Gradient: \\(2\\), \\(y\\)-intercept: \\(\\frac{3}{4}\\)"
           ]
         },
         {
