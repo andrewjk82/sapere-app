@@ -5323,33 +5323,41 @@
         },
         {
           "id": "sg2022-q7e",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Name a special quadrilateral which is not necessarily a trapezium.",
-          "answer": "",
+          "answer": 0,
           "hint": "A trapezium has at least one pair of parallel sides. Think of a special quadrilateral that does not need to have any parallel sides.",
-          "solution": "A kite (a kite is not necessarily a trapezium, since it does not need any pair of parallel sides).",
           "steps": [
             {
-              "explain": "A trapezium is defined as a quadrilateral with at least one pair of parallel sides.",
-              "work": "Trapezium: at least one pair of parallel sides"
+              "explain": "Recall the inclusive definition of a trapezium.",
+              "work": "\\text{A trapezium is a quadrilateral with at least one pair of parallel sides.}"
             },
             {
-              "explain": "A kite has two pairs of adjacent equal sides, but does not need any parallel sides at all.",
-              "work": "A kite need not have any parallel sides"
+              "explain": "Analyze the given options to see which one does not guarantee parallel sides.",
+              "work": "\\text{Parallelograms, rectangles, and rhombuses all have two pairs of parallel sides, meaning they are always trapeziums.}"
             },
             {
-              "explain": "Therefore a kite is a valid example of a special quadrilateral that is not necessarily a trapezium.",
-              "work": "\\(\\therefore\\) a kite"
+              "explain": "Consider the properties of a kite.",
+              "work": "\\text{A kite has two pairs of adjacent equal sides, but it generally has no parallel sides.}"
+            },
+            {
+              "explain": "Conclude which quadrilateral fits the criteria.",
+              "work": "\\text{Therefore, a kite is not necessarily a trapezium.}"
             }
           ],
-          "manual": true,
           "meta": {
             "source": "Sydney Grammar School Form III Annual Examination 2022",
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "options": [
+            "Kite",
+            "Parallelogram",
+            "Rectangle",
+            "Rhombus"
+          ]
         },
         {
           "id": "sg2022-q8d",
