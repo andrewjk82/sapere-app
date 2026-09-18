@@ -1570,90 +1570,6 @@
           "timeLimit": 90
         },
         {
-          "id": "y12a-8a-q9ai",
-          "type": "review",
-          "difficulty": "medium",
-          "stem": "Answer the following theoretical questions about APs and GPs:\na) i) What can be said about the terms of an AP in which the common difference is zero?",
-          "answer": "All terms in the sequence are identical (it is a constant sequence: \\( a, a, a, \\dots \\)).",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "solution": "All terms in the sequence are identical (it is a constant sequence: \\( a, a, a, \\dots \\)).",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Applications of APs and GPs: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(T_n = a + (n-1)(0) = a\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "All terms in the sequence are identical (it is a constant sequence: \\( a, a, a, \\dots \\))."
-            },
-            {
-              "explain": "Final answer: All terms in the sequence are identical (it is a constant sequence: \\( a, a, a, \\dots \\)).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "All terms in the sequence are identical (it is a constant sequence: \\( a, a, a, \\dots \\))."
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y12a-8a-q9aii",
-          "type": "review",
-          "difficulty": "medium",
-          "stem": "Answer the following theoretical questions about APs and GPs:\na) ii) What can be said about the terms of an AP in which the common difference is negative?",
-          "answer": "The terms decrease in value as \\( n \\) increases.\nThe sequence is strictly decreasing.",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "solution": "The terms decrease in value as \\( n \\) increases.\nThe sequence is strictly decreasing.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Applications of APs and GPs: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(T_{n+1} - T_n = d < 0 \\implies T_{n+1} < T_n\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "The terms decrease in value as \\( n \\) increases.\nThe sequence is strictly decreasing."
-            },
-            {
-              "explain": "Final answer: The terms decrease in value as \\( n \\) increases.\nThe sequence is strictly decreasing.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "The terms decrease in value as \\( n \\) increases.\nThe sequence is strictly decreasing."
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y12a-8a-q9b",
-          "type": "review",
-          "difficulty": "medium",
-          "stem": "Answer the following theoretical questions about APs and GPs:\nb) Why can't the common ratio of a GP be zero?",
-          "answer": "If the common ratio were zero, every term after the first term would be zero (e.g.\n\\( a, 0, 0, 0, \\dots \\)).\nBy definition, a geometric sequence consists of non-zero terms so that the ratio of consecutive terms \\( \\frac{T_{n+1}}{T_n} \\) is defined.",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "solution": "If the common ratio were zero, every term after the first term would be zero (e.g.\n\\( a, 0, 0, 0, \\dots \\)).\nBy definition, a geometric sequence consists of non-zero terms so that the ratio of consecutive terms \\( \\frac{T_{n+1}}{T_n} \\) is defined.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Applications of APs and GPs: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(T_n = a \\times 0^{n-1} = 0 \\text{ for } n > 1\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "\\(\\text{Ratio } \\frac{T_{n+1}}{T_n} = \\frac{0}{0} \\text{ is undefined}\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "If the common ratio were zero, every term after the first term would be zero (e.g.\n\\( a, 0, 0, 0, \\dots \\)).\nBy definition, a geometric sequence consists of non-zero terms so that the ratio of consecutive terms \\( \\frac{T_{n+1}}{T_n} \\) is defined."
-            },
-            {
-              "explain": "Final answer: If the common ratio were zero, every term after the first term would be zero (e.g.\n\\( a, 0, 0, 0, \\dots \\)).\nBy definition, a geometric sequence consists of non-zero terms so that the ratio of consecutive terms \\( \\frac{T_{n+1}}{T_n} \\) is defined.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "If the common ratio were zero, every term after the first term would be zero (e.g.\n\\( a, 0, 0, 0, \\dots \\)).\nBy definition, a geometric sequence consists of non-zero terms so that the ratio of consecutive terms \\( \\frac{T_{n+1}}{T_n} \\) is defined."
-            }
-          ],
-          "manual": true
-        },
-        {
           "id": "y12a-8a-q9ci",
           "type": "review",
           "difficulty": "medium",
@@ -4386,98 +4302,83 @@
           "timeLimit": 90
         },
         {
-          "id": "y12a-8a-q9",
-          "type": "multipart",
+          "id": "y12a-8a-q9ai",
+          "type": "mc",
           "difficulty": "medium",
-          "stem": "Answer the following theoretical questions about APs and GPs:",
-          "parts": [
+          "stem": "What can be said about the terms of an arithmetic progression (AP) in which the common difference is zero?",
+          "options": [
+            "All terms are identical (it is a constant sequence).",
+            "The terms strictly increase.",
+            "The terms strictly decrease.",
+            "The terms alternate between positive and negative values."
+          ],
+          "answer": 0,
+          "steps": [
             {
-              "id": "y12a-8a-q9ai",
-              "type": "review",
-              "stem": "a) i) What can be said about the terms of an AP in which the common difference is zero?",
-              "answer": "All terms in the sequence are identical (it is a constant sequence: \\( a, a, a, \\dots \\)).",
-              "steps": [
-                {
-                  "explain": "Analyze term formula with d = 0",
-                  "work": "T_n = a + (n-1)(0) = a"
-                }
-              ]
+              "explain": "Recall the formula for the \\(n\\)-th term of an Arithmetic Progression.",
+              "work": "\\(T_n = a + (n - 1)d\\)"
             },
             {
-              "id": "y12a-8a-q9aii",
-              "type": "review",
-              "stem": "a) ii) What can be said about the terms of an AP in which the common difference is negative?",
-              "answer": "The terms decrease in value as \\( n \\) increases. The sequence is strictly decreasing.",
-              "steps": [
-                {
-                  "explain": "Analyze term difference",
-                  "work": "T_{n+1} - T_n = d < 0 \\implies T_{n+1} < T_n"
-                }
-              ]
+              "explain": "Substitute the common difference \\(d = 0\\) into the formula.",
+              "work": "\\begin{aligned} T_n &= a + (n - 1)(0) \\\\ &= a \\end{aligned}"
             },
             {
-              "id": "y12a-8a-q9b",
-              "type": "review",
-              "stem": "b) Why can't the common ratio of a GP be zero?",
-              "answer": "If the common ratio were zero, every term after the first term would be zero (e.g. \\( a, 0, 0, 0, \\dots \\)). By definition, a geometric sequence consists of non-zero terms so that the ratio of consecutive terms \\( \\frac{T_{n+1}}{T_n} \\) is defined.",
-              "steps": [
-                {
-                  "explain": "Show terms if r = 0",
-                  "work": "T_n = a \\times 0^{n-1} = 0 \\text{ for } n > 1"
-                },
-                {
-                  "explain": "Explain division by zero issue",
-                  "work": "\\text{Ratio } \\frac{T_{n+1}}{T_n} = \\frac{0}{0} \\text{ is undefined}"
-                }
-              ]
+              "explain": "Analyze the result.",
+              "work": "\\text{Since } T_n = a \\text{ for all } n, \\text{ every term in the sequence is identical to the first term } a."
+            }
+          ]
+        },
+        {
+          "id": "y12a-8a-q9aii",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "What can be said about the terms of an arithmetic progression (AP) in which the common difference is negative?",
+          "options": [
+            "The terms strictly decrease.",
+            "The terms strictly increase.",
+            "All terms are identical.",
+            "The terms alternate between positive and negative values."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Recall the relationship between consecutive terms in an Arithmetic Progression.",
+              "work": "\\(T_{n+1} - T_n = d\\)"
             },
             {
-              "id": "y12a-8a-q9ci",
-              "type": "review",
-              "stem": "c) i) What can be said about the terms of a GP with common ratio \\( r \\) in which \\( r < 0 \\)?",
-              "answer": "The signs of the terms alternate between positive and negative (e.g. \\( a, -ar, ar^2, -ar^3, \\dots \\)).",
-              "steps": [
-                {
-                  "explain": "Examine term signs",
-                  "work": "\\text{Sign}(T_{n+1}) = -\\text{Sign}(T_n)"
-                }
-              ]
+              "explain": "Analyze the case where the common difference \\(d < 0\\).",
+              "work": "\\begin{aligned} T_{n+1} - T_n &< 0 \\\\ T_{n+1} &< T_n \\end{aligned}"
             },
             {
-              "id": "y12a-8a-q9cii",
-              "type": "review",
-              "stem": "c) ii) What can be said about the terms of a GP with common ratio \\( r \\) in which \\( r = 1 \\)?",
-              "answer": "All terms in the sequence are identical to the first term (it is a constant sequence: \\( a, a, a, \\dots \\)).",
-              "steps": [
-                {
-                  "explain": "Use term formula with r = 1",
-                  "work": "T_n = a \\times 1^{n-1} = a"
-                }
-              ]
+              "explain": "Conclude the behavior of the sequence.",
+              "work": "\\text{Since each term is smaller than the previous one, the sequence is strictly decreasing.}"
+            }
+          ]
+        },
+        {
+          "id": "y12a-8a-q9b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Why can't the common ratio of a geometric progression (GP) be zero?",
+          "options": [
+            "If the common ratio were zero, the ratio of consecutive terms \\(\\frac{T_{n+1}}{T_n}\\) would be undefined since \\(T_n = 0\\) for \\(n > 1\\).",
+            "If the common ratio were zero, all terms would be negative.",
+            "If the common ratio were zero, the sequence would be an AP instead.",
+            "A common ratio of zero implies the first term must also be zero."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Consider the definition of a geometric progression and its \\(n\\)-th term.",
+              "work": "\\text{A GP has the form } T_n = a r^{n-1} \\text{ where } r \\text{ is the common ratio.}"
             },
             {
-              "id": "y12a-8a-q9ciii",
-              "type": "review",
-              "stem": "c) iii) What can be said about the terms of a GP with common ratio \\( r \\) in which \\( r = -1 \\)?",
-              "answer": "The terms alternate in sign but remain constant in absolute value (e.g. \\( a, -a, a, -a, \\dots \\)).",
-              "steps": [
-                {
-                  "explain": "Analyze term formula with r = -1",
-                  "work": "T_n = a \\times (-1)^{n-1}"
-                }
-              ]
+              "explain": "Substitute \\(r = 0\\) to see what happens to the terms.",
+              "work": "\\begin{aligned} T_1 &= a \\\\ T_2 &= a(0) = 0 \\\\ T_3 &= a(0)^2 = 0 \\end{aligned}"
             },
             {
-              "id": "y12a-8a-q9civ",
-              "type": "review",
-              "stem": "c) iv) What can be said about the terms of a GP with common ratio \\( r \\) in which \\( 0 < |r| < 1 \\)?",
-              "answer": "The absolute value of the terms decreases, and the sequence converges towards zero.",
-              "steps": [
-                {
-                  "explain": "Evaluate limit as n approaches infinity",
-                  "work": "\\lim_{n \\to \\infty} |T_n| = \\lim_{n \\to \\infty} |a| |r|^{n-1} = 0"
-                }
-              ]
+              "explain": "Check if the defining property of a GP holds for these terms.",
+              "work": "\\text{The common ratio } r \\text{ is defined as } \\frac{T_{n+1}}{T_n}. \\text{ However, for } n \\geq 2, \\frac{T_3}{T_2} = \\frac{0}{0}, \\text{ which is mathematically undefined.}"
             }
           ]
         }
