@@ -13075,7 +13075,7 @@
           "id": "y9-16f-q8",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "To find the volume of a dam on a farm, use the following steps:\n- Step 1: Determine the width, length and depth of the dam.\n- Step 2: Calculate the circular surface area in square metres (diameter = \\(40\\text{ m}\\)).\n- Step 3: Calculate volume: \\(Volume = 0.4 \\times surface\\,area \\times depth\\) (where depth = \\(4\\text{ m}\\)).\n- Step 4: Convert capacity to megalitres (ML) by dividing the volume in cubic metres by 1000.\n\nCalculate the volume of water held in the dam in megalitres.",
+          "stem": "To find the volume of a dam on a farm, use the following steps:\n- Step 1: Determine the diameter and depth of the circular dam.\n- Step 2: Calculate the circular surface area in square metres (diameter = \\(40\\text{ m}\\)).\n- Step 3: Calculate volume: \\(\\text{Volume} = 0.4 \\times \\text{surface area} \\times \\text{depth}\\) (where depth = \\(4\\text{ m}\\)).\n- Step 4: Convert capacity to megalitres (ML) by dividing the volume in cubic metres by 1000.\n\nCalculate the volume of water held in the dam in megalitres.",
           "options": [
             "\\(2.01\\text{ ML}\\)",
             "\\(2.01 \\times 10^3\\text{ ML}\\)",
@@ -13083,20 +13083,18 @@
             "\\(0.50\\text{ ML}\\)"
           ],
           "answer": 0,
-          "hint": "Find the area of the circle with radius 20 m first, then find the volume, and finally divide by 1000.",
-          "solution": "Calculate surface area (circle with \\(r = 20\\text{ m}\\)):\n\\[A = \\pi \\times 20^2 = 400\\pi \\approx 1256.64\\text{ m}^2\\]\nCalculate volume using formula in Step 3 (depth = \\(4\\text{ m}\\)):\n\\[V = 0.4 \\times 1256.64 \\times 4 \\approx 2010.62\\text{ m}^3\\]\nConvert to capacity in megalitres by dividing by 1000:\n\\[\\text{Capacity} = 2010.62 \\div 1000 \\approx 2.01\\text{ ML}\\]",
           "steps": [
             {
-              "explain": "Calculate the circular surface area of the dam using the formula for the area of a circle, with radius \\(r = 20\\text{ m}\\) (half of the diameter of \\(40\\text{ m}\\)).",
-              "work": "\\( A = \\pi \\times 20^2 = 400\\pi \\approx 1256.64\\text{ m}^2 \\)"
+              "explain": "First, determine the radius from the given diameter to calculate the circular surface area.",
+              "work": "\\begin{aligned} r &= \\frac{d}{2} = \\frac{40}{2} = 20\\text{ m} \\\\ \\text{Area} &= \\pi r^2 = \\pi (20)^2 = 400\\pi \\approx 1256.64\\text{ m}^2 \\end{aligned}"
             },
             {
-              "explain": "Calculate the volume in cubic metres using the provided formula: \\(Volume = 0.4 \\times surface\\,area \\times depth\\).",
-              "work": "\\( V = 0.4 \\times 1256.64 \\times 4 = 2010.62\\text{ m}^3 \\)"
+              "explain": "Calculate the volume in cubic metres using the formula provided in Step 3.",
+              "work": "\\begin{aligned} \\text{Volume} &= 0.4 \\times \\text{Area} \\times \\text{depth} \\\\ &= 0.4 \\times 1256.64 \\times 4 \\\\ &= 2010.624\\text{ m}^3 \\end{aligned}"
             },
             {
-              "explain": "Convert the capacity to megalitres (ML) by dividing the volume in cubic metres by 1000. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
-              "work": "\\( \\text{Capacity} = 2010.62 \\div 1000 \\approx 2.01\\text{ ML} \\)"
+              "explain": "Convert the capacity to megalitres (ML) by dividing by 1000, as stated in Step 4.",
+              "work": "\\begin{aligned} \\text{Capacity (ML)} &= \\frac{2010.624}{1000} \\\\ &\\approx 2.01\\text{ ML} \\end{aligned}"
             }
           ],
           "timeLimit": 90
