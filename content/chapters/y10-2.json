@@ -11477,31 +11477,6 @@
                   "work": "\\(= (x+3y)(x^2-3xy+9y^2)\\)"
                 }
               ]
-            },
-            {
-              "id": "jrhy2008-q32c",
-              "type": "review",
-              "stem": "(c)(i) Write down the general equation (with constant \\(k\\)) of a line passing through \\(P\\), the intersection of \\(3x-2y+7=0\\) and \\(y=4x+1\\). (ii) Hence find the equation of the line through \\(P\\) parallel to \\(y=2x-3\\).",
-              "answer": "",
-              "steps": [
-                {
-                  "explain": "Rewrite \\(y=4x+1\\) in general form: \\(4x-y+1=0\\). The family of lines through the intersection of two lines \\(L_1=0\\) and \\(L_2=0\\) is \\(L_1+kL_2=0\\).",
-                  "work": "\\(3x-2y+7 + k(4x-y+1) = 0\\)"
-                },
-                {
-                  "explain": "For part (ii): first find the actual point \\(P\\) by solving the two original equations simultaneously.",
-                  "work": "Substituting \\(y=4x+1\\) into \\(3x-2y+7=0\\): \\(3x-2(4x+1)+7=0 \\Rightarrow -5x+5=0 \\Rightarrow x=1, y=5\\). So \\(P=(1,5)\\)."
-                },
-                {
-                  "explain": "The required line passes through \\(P(1,5)\\) with the same gradient as \\(y=2x-3\\) (gradient \\(2\\), for a parallel line).",
-                  "work": "Using point-gradient form: \\(y-5=2(x-1)\\)"
-                },
-                {
-                  "explain": "Simplify into general form.",
-                  "work": "\\(y-5=2x-2 \\Rightarrow y=2x+3 \\Rightarrow 2x-y+3=0\\)"
-                }
-              ],
-              "manual": true
             }
           ],
           "manual": true,
@@ -11511,6 +11486,70 @@
             "examType": "Half-Yearly",
             "grade": "10"
           }
+        },
+        {
+          "id": "jrhy2008-q32c",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Consider the two lines \\(3x-2y+7=0\\) and \\(y=4x+1\\), which intersect at a point \\(P\\).",
+          "parts": [
+            {
+              "id": "jrhy2008-q32c-i",
+              "type": "mc",
+              "stem": "(i) Write down the general equation (with constant \\(k\\)) of a line passing through \\(P\\).",
+              "options": [
+                "\\(3x-2y+7 + k(4x-y+1) = 0\\)",
+                "\\(3x-2y+7 + k(y-4x+1) = 0\\)",
+                "\\(4x-y+1 + k(3x-2y-7) = 0\\)",
+                "\\(3x-2y-7 + k(4x-y-1) = 0\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "The family of lines passing through the intersection of two lines \\(L_1=0\\) and \\(L_2=0\\) can be written in the form \\(L_1+kL_2=0\\).",
+                  "work": "\\text{Identify } L_1 \\text{ and } L_2."
+                },
+                {
+                  "explain": "Rewrite \\(y=4x+1\\) in the general form.",
+                  "work": "4x-y+1=0"
+                },
+                {
+                  "explain": "Substitute the two equations into the family of lines formula.",
+                  "work": "3x-2y+7 + k(4x-y+1) = 0"
+                }
+              ]
+            },
+            {
+              "id": "jrhy2008-q32c-ii",
+              "type": "mc",
+              "stem": "(ii) Hence find the equation of the line through \\(P\\) parallel to \\(y=2x-3\\).",
+              "options": [
+                "\\(2x-y+3=0\\)",
+                "\\(2x+y-3=0\\)",
+                "\\(x-2y+3=0\\)",
+                "\\(2x-y-3=0\\)"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "First, find the actual coordinates of point \\(P\\) by solving the two original equations simultaneously.",
+                  "work": "\\begin{aligned} \\text{Substitute } y=4x+1 \\text{ into } 3x-2y+7=0&: \\\\ 3x-2(4x+1)+7 &= 0 \\\\ 3x-8x-2+7 &= 0 \\\\ -5x+5 &= 0 \\\\ x &= 1 \\\\ \\text{Substitute } x=1 \\text{ into } y=4x+1&: \\\\ y &= 4(1)+1 = 5 \\\\ \\text{So } P &= (1, 5) \\end{aligned}"
+                },
+                {
+                  "explain": "The required line is parallel to \\(y=2x-3\\), so it has the same gradient.",
+                  "work": "\\text{Gradient } m = 2."
+                },
+                {
+                  "explain": "Use the point-gradient form to find the equation of the line passing through \\(P(1, 5)\\) with gradient \\(m=2\\).",
+                  "work": "\\begin{aligned} y - y_1 &= m(x - x_1) \\\\ y - 5 &= 2(x - 1) \\\\ y - 5 &= 2x - 2 \\end{aligned}"
+                },
+                {
+                  "explain": "Simplify the equation into general form.",
+                  "work": "\\begin{aligned} 2x - y + 3 &= 0 \\end{aligned}"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
