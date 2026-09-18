@@ -11451,41 +11451,33 @@
         },
         {
           "id": "jrhy2008-q32",
-          "type": "multipart",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Question 32 — factorising a sum of cubes, and a family of lines (parts a and c).",
-          "parts": [
-            {
-              "id": "jrhy2008-q32a",
-              "type": "mc",
-              "stem": "(a) Factorise \\(x^3+27y^3\\).",
-              "options": [
-                "\\((x+3y)^3\\)",
-                "\\((x-3y)(x^2+3xy+9y^2)\\)",
-                "\\((x+3y)(x^2+3xy+9y^2)\\)",
-                "\\((x+3y)(x^2-3xy+9y^2)\\)"
-              ],
-              "answer": 3,
-              "hint": "Use the sum of cubes formula: \\(a^3+b^3=(a+b)(a^2-ab+b^2)\\), with \\(a=x\\) and \\(b=3y\\).",
-              "steps": [
-                {
-                  "explain": "Recognise this as a sum of cubes: \\(x^3+27y^3=x^3+(3y)^3\\). Apply the sum of cubes formula \\(a^3+b^3=(a+b)(a^2-ab+b^2)\\) with \\(a=x\\), \\(b=3y\\).",
-                  "work": "\\(x^3+(3y)^3 = (x+3y)\\big(x^2-x(3y)+(3y)^2\\big)\\)"
-                },
-                {
-                  "explain": "Simplify the second factor.",
-                  "work": "\\(= (x+3y)(x^2-3xy+9y^2)\\)"
-                }
-              ]
-            }
-          ],
-          "manual": true,
+          "stem": "Factorise \\(x^3+27y^3\\).",
           "meta": {
             "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
-          }
+          },
+          "options": [
+            "\\((x+3y)^3\\)",
+            "\\((x-3y)(x^2+3xy+9y^2)\\)",
+            "\\((x+3y)(x^2+3xy+9y^2)\\)",
+            "\\((x+3y)(x^2-3xy+9y^2)\\)"
+          ],
+          "answer": 3,
+          "hint": "Use the sum of cubes formula: \\(a^3+b^3=(a+b)(a^2-ab+b^2)\\), with \\(a=x\\) and \\(b=3y\\).",
+          "steps": [
+            {
+              "explain": "Recognise this as a sum of cubes: \\(x^3+27y^3=x^3+(3y)^3\\). Apply the sum of cubes formula \\(a^3+b^3=(a+b)(a^2-ab+b^2)\\) with \\(a=x\\), \\(b=3y\\).",
+              "work": "\\(x^3+(3y)^3 = (x+3y)\\big(x^2-x(3y)+(3y)^2\\big)\\)"
+            },
+            {
+              "explain": "Simplify the second factor.",
+              "work": "\\(= (x+3y)(x^2-3xy+9y^2)\\)"
+            }
+          ]
         },
         {
           "id": "jrhy2008-q32c",
