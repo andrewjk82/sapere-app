@@ -18788,231 +18788,6 @@
           "manual": true
         },
         {
-          "id": "y11-5g-q10a-i",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\na) i) Let \\(g(x) = f(x + 2)\\). Describe the transformation of \\(f(x)\\) to obtain \\(g(x)\\).",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = f(\\ell(x)) = f(ax + b) can be obtained by two transformations of y = f(x).\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y11-5g-q10a-ii",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\nii) Let \\(h(x) = g(3x)\\). Describe the transformation of \\(g(x)\\) to obtain \\(h(x)\\).",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = f(\\ell(x)) = f(ax + b) can be obtained by two transformations of y = f(x).\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y11-5g-q10a-iii",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\niii) Hence describe \\(h(x)\\) as a transformation of \\(f(x)\\), and write \\(h(x)\\) in terms of \\(f\\).",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(h(x) = f(3x + 2)\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y11-5g-q10b-i",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\nb) i) Let \\(p(x) = f(3x)\\). Describe the transformation of \\(f(x)\\) to obtain \\(p(x)\\).",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = f(\\ell(x)) = f(ax + b) can be obtained by two transformations of y = f(x).\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y11-5g-q10b-ii",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\nii) Let \\(q(x) = p\\left(x + \\frac{2}{3}\\right)\\). Describe the transformation of \\(p(x)\\) to obtain \\(q(x)\\).",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = f(\\ell(x)) = f(ax + b) can be obtained by two transformations of y = f(x).\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y11-5g-q10b-iii",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\niii) Hence describe \\(q(x)\\) as a transformation of \\(f(x)\\), and write \\(q(x)\\) in terms of \\(f\\).",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(q(x) = f(3x + 2)\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y11-5g-q10c",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\nc) The functions \\(h(x)\\) and \\(q(x)\\) are identical. Explain why the horizontal shifts of \\(f\\) differ in parts a and b.",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = f(\\ell(x)) = f(ax + b) can be obtained by two transformations of y = f(x).\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y11-5g-q10d",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\nd) Describe \\(y = f(ax + b)\\) as transformations of \\(y = f(x)\\) in two different ways.",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = f(\\ell(x)) = f(ax + b) can be obtained by two transformations of y = f(x).\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
-            }
-          ],
-          "manual": true
-        },
-        {
-          "id": "y11-5g-q10e",
-          "type": "review",
-          "difficulty": "hard",
-          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\ne) Describe \\(y = a f(x) + b\\) as transformations of \\(y = f(x)\\) in two different ways.",
-          "answer": "",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "steps": [
-            {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "\\(y = f(\\ell(x)) = f(ax + b) can be obtained by two transformations of y = f(x).\\)"
-            },
-            {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
-            },
-            {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer."
-            },
-            {
-              "explain": "Final answer: . Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions."
-            }
-          ],
-          "manual": true
-        },
-        {
           "id": "y11a-5-17a",
           "type": "mc",
           "difficulty": "hard",
@@ -20236,239 +20011,230 @@
           "hint": "Perform the operations one by one and check the final equation."
         },
         {
-          "id": "y11-5g-q10",
-          "type": "multipart",
-          "difficulty": "hard",
-          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).",
-          "parts": [
-            {
-              "id": "y11-5g-q10a-i",
-              "type": "mc",
-              "stem": "Let \\(g(x) = f(x + 2)\\). Which statement correctly describes the transformation of \\(y = f(x)\\) to obtain \\(y = g(x)\\)?",
-              "options": [
-                "Translate the graph of \\(f\\) 2 units to the right.",
-                "Translate the graph of \\(f\\) 2 units up.",
-                "Translate the graph of \\(f\\) 2 units to the left.",
-                "Dilate the graph of \\(f\\) horizontally by a factor of 2."
-              ],
-              "answer": 2,
-              "steps": [
-                {
-                  "explain": "Identify the change to the independent variable.",
-                  "work": "x \\to x + 2"
-                },
-                {
-                  "explain": "Apply the translation rule for functions.",
-                  "work": "f(x+c) \\text{ translates the graph } c \\text{ units to the left if } c > 0."
-                },
-                {
-                  "explain": "Conclude the transformation.",
-                  "work": "\\text{Translate the graph of } f \\text{ 2 units to the left.}"
-                }
-              ]
-            },
-            {
-              "id": "y11-5g-q10a-ii",
-              "type": "mc",
-              "stem": "Let \\(h(x) = g(3x)\\). Which statement correctly describes the transformation of \\(y = g(x)\\) to obtain \\(y = h(x)\\)?",
-              "options": [
-                "Dilate the graph of \\(g\\) horizontally by a factor of \\(\\dfrac{1}{3}\\) (towards the \\(y\\)-axis).",
-                "Dilate the graph of \\(g\\) horizontally by a factor of 3.",
-                "Dilate the graph of \\(g\\) vertically by a factor of 3.",
-                "Translate the graph of \\(g\\) 3 units to the left."
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "Identify the change to the independent variable.",
-                  "work": "x \\to 3x"
-                },
-                {
-                  "explain": "Apply the horizontal dilation rule.",
-                  "work": "f(kx) \\text{ dilates the graph horizontally by a factor of } \\frac{1}{k}."
-                },
-                {
-                  "explain": "Conclude the transformation.",
-                  "work": "\\text{Dilate the graph of } g \\text{ horizontally by a factor of } \\frac{1}{3}."
-                }
-              ]
-            },
-            {
-              "id": "y11-5g-q10a-iii",
-              "type": "mc",
-              "stem": "Hence which option correctly describes \\(h\\) as a transformation of \\(f\\), and gives \\(h\\) in terms of \\(f\\)?",
-              "options": [
-                "Dilate \\(f\\) horizontally by \\(\\dfrac{1}{3}\\), then translate left by 2; \\(h(x) = f(3x + 2)\\).",
-                "Translate \\(f\\) right by 2, then dilate horizontally by 3; \\(h(x) = f\\!\\left(\\dfrac{x}{3} - 2\\right)\\).",
-                "Translate \\(f\\) left by 2 only; \\(h(x) = f(x + 2)\\).",
-                "Translate \\(f\\) left by 2, then dilate horizontally by \\(\\dfrac{1}{3}\\); \\(h(x) = f(3x + 2)\\)."
-              ],
-              "answer": 3,
-              "steps": [
-                {
-                  "explain": "Combine the transformations.",
-                  "work": "g(x) = f(x+2)"
-                },
-                {
-                  "explain": "Substitute into the second transformation.",
-                  "work": "h(x) = g(3x) = f(3x+2)"
-                },
-                {
-                  "explain": "Describe the sequence.",
-                  "work": "\\text{Translate } f \\text{ left by 2, then dilate horizontally by } \\frac{1}{3}."
-                }
-              ]
-            },
-            {
-              "id": "y11-5g-q10b-i",
-              "type": "mc",
-              "stem": "Let \\(p(x) = f(3x)\\). Which statement correctly describes the transformation of \\(y = f(x)\\) to obtain \\(y = p(x)\\)?",
-              "options": [
-                "Dilate the graph of \\(f\\) horizontally by a factor of 3.",
-                "Dilate the graph of \\(f\\) horizontally by a factor of \\(\\dfrac{1}{3}\\) (towards the \\(y\\)-axis).",
-                "Translate the graph of \\(f\\) 3 units to the left.",
-                "Dilate the graph of \\(f\\) vertically by a factor of 3."
-              ],
-              "answer": 1,
-              "steps": [
-                {
-                  "explain": "Identify the change to the independent variable.",
-                  "work": "x \\to 3x"
-                },
-                {
-                  "explain": "Apply the horizontal dilation rule.",
-                  "work": "f(kx) \\text{ dilates horizontally by a factor of } \\frac{1}{k}."
-                },
-                {
-                  "explain": "Conclude the transformation.",
-                  "work": "\\text{Dilate the graph of } f \\text{ horizontally by a factor of } \\frac{1}{3}."
-                }
-              ]
-            },
-            {
-              "id": "y11-5g-q10b-ii",
-              "type": "mc",
-              "stem": "Let \\(q(x) = p\\!\\left(x + \\dfrac{2}{3}\\right)\\). Which statement correctly describes the transformation of \\(y = p(x)\\) to obtain \\(y = q(x)\\)?",
-              "options": [
-                "Translate the graph of \\(p\\) \\(\\dfrac{2}{3}\\) units to the right.",
-                "Translate the graph of \\(p\\) \\(\\dfrac{2}{3}\\) units to the left.",
-                "Translate the graph of \\(p\\) 2 units to the left.",
-                "Dilate the graph of \\(p\\) horizontally by a factor of \\(\\dfrac{2}{3}\\)."
-              ],
-              "answer": 1,
-              "steps": [
-                {
-                  "explain": "Identify the change to the independent variable.",
-                  "work": "x \\to x + \\frac{2}{3}"
-                },
-                {
-                  "explain": "Apply the translation rule.",
-                  "work": "f(x+c) \\text{ translates left by } c."
-                },
-                {
-                  "explain": "Conclude the transformation.",
-                  "work": "\\text{Translate the graph of } p \\text{ } \\frac{2}{3} \\text{ units to the left.}"
-                }
-              ]
-            },
-            {
-              "id": "y11-5g-q10b-iii",
-              "type": "mc",
-              "stem": "Hence which option correctly describes \\(q\\) as a transformation of \\(f\\), and gives \\(q\\) in terms of \\(f\\)?",
-              "options": [
-                "Translate \\(f\\) left by 2, then dilate horizontally by \\(\\dfrac{1}{3}\\); \\(q(x) = f(3x + 2)\\).",
-                "Dilate \\(f\\) horizontally by 3, then translate left by 2; \\(q(x) = f\\!\\left(\\dfrac{x}{3} + 2\\right)\\).",
-                "Translate \\(f\\) left by \\(\\dfrac{2}{3}\\) only; \\(q(x) = f\\!\\left(x + \\dfrac{2}{3}\\right)\\).",
-                "Dilate \\(f\\) horizontally by \\(\\dfrac{1}{3}\\), then translate left by \\(\\dfrac{2}{3}\\); \\(q(x) = f(3x + 2)\\)."
-              ],
-              "answer": 3,
-              "steps": [
-                {
-                  "explain": "Combine the transformations.",
-                  "work": "p(x) = f(3x)"
-                },
-                {
-                  "explain": "Substitute into the second transformation.",
-                  "work": "q(x) = p\\left(x + \\frac{2}{3}\\right) = f\\left(3\\left(x + \\frac{2}{3}\\right)\\right) = f(3x + 2)"
-                },
-                {
-                  "explain": "Describe the sequence.",
-                  "work": "\\text{Dilate } f \\text{ horizontally by } \\frac{1}{3}, \\text{ then translate left by } \\frac{2}{3}."
-                }
-              ]
-            },
-            {
-              "id": "y11-5g-q10c",
-              "type": "mc",
-              "stem": "The functions \\(h(x)\\) and \\(q(x)\\) are identical. Why do the horizontal shifts of \\(f\\) differ in parts (a) and (b)?",
-              "options": [
-                "In (a) the shift of 2 is applied before the dilation, so the dilation compresses that shift; in (b) the shift is applied after dilation, so only a shift of \\(\\dfrac{2}{3}\\) is needed.",
-                "The two composites are actually different functions, so the shifts cannot be compared.",
-                "Horizontal dilations never affect translations, so the difference is only notational.",
-                "Part (a) uses a vertical shift while part (b) uses a horizontal shift."
-              ],
-              "answer": 0,
-              "steps": [
-                {
-                  "explain": "Compare the algebraic expressions.",
-                  "work": "h(x) = f(3x + 2) \\text{ and } q(x) = f(3x + 2)"
-                },
-                {
-                  "explain": "Analyze Method (a).",
-                  "work": "\\text{Shift applied before dilation. The subsequent dilation compresses the shift from 2 to } \\frac{2}{3}."
-                },
-                {
-                  "explain": "Analyze Method (b).",
-                  "work": "\\text{Shift applied after dilation, so it must be exactly } \\frac{2}{3} \\text{ to match.}"
-                }
-              ]
-            },
-            {
-              "id": "y11-5g-q10d",
-              "type": "mc",
-              "stem": "Which pair correctly describes \\(y = f(ax + b)\\) (assume \\(a > 0\\)) as transformations of \\(y = f(x)\\) in two different ways?",
-              "options": [
-                "Method 1: translate right by \\(b\\), then dilate horizontally by \\(a\\). Method 2: dilate by \\(a\\), then translate right by \\(ab\\).",
-                "Method 1: translate left by \\(b\\) only. Method 2: dilate vertically by \\(a\\).",
-                "Method 1: translate left by \\(b\\), then dilate horizontally by \\(\\dfrac{1}{a}\\). Method 2: dilate horizontally by \\(\\dfrac{1}{a}\\), then translate left by \\(\\dfrac{b}{a}\\).",
-                "Method 1: dilate vertically by \\(a\\), then translate up by \\(b\\). Method 2: translate up by \\(b\\), then dilate vertically by \\(a\\)."
-              ],
-              "answer": 2,
-              "steps": [
-                {
-                  "explain": "Formulate Method 1 (Translation first).",
-                  "work": "f(x) \\to f(x+b) \\text{ (Left by } b) \\to f(ax+b) \\text{ (Dilate horizontally by } \\frac{1}{a})"
-                },
-                {
-                  "explain": "Formulate Method 2 (Dilation first).",
-                  "work": "f(x) \\to f(ax) \\text{ (Dilate horizontally by } \\frac{1}{a}) \\to f\\left(a\\left(x + \\frac{b}{a}\\right)\\right) = f(ax+b) \\text{ (Left by } \\frac{b}{a})"
-                }
-              ]
-            },
-            {
-              "id": "y11-5g-q10e",
-              "type": "mc",
-              "stem": "Which pair correctly describes \\(y = af(x) + b\\) (with \\(a \\ne 0\\)) as transformations of \\(y = f(x)\\) in two different ways?",
-              "options": [
-                "Method 1: translate vertically by \\(b\\), then dilate vertically by \\(a\\) only works when \\(a = 1\\).",
-                "Method 1: dilate vertically by \\(a\\), then translate vertically by \\(b\\). Method 2: translate vertically by \\(\\dfrac{b}{a}\\), then dilate vertically by \\(a\\).",
-                "Method 1: dilate horizontally by \\(a\\), then translate left by \\(b\\). Method 2: the reverse order.",
-                "Method 1: reflect in the \\(x\\)-axis, then translate by \\(b\\). Method 2: translate by \\(b\\), then reflect."
-              ],
-              "answer": 1,
-              "steps": [
-                {
-                  "explain": "Formulate Method 1 (Dilation first).",
-                  "work": "y = f(x) \\to y = af(x) \\text{ (Dilate vertically by } a) \\to y = af(x) + b \\text{ (Translate vertically by } b)"
-                },
-                {
-                  "explain": "Formulate Method 2 (Translation first).",
-                  "work": "y = f(x) \\to y = f(x) + \\frac{b}{a} \\text{ (Translate vertically by } \\frac{b}{a}) \\to y = a\\left(f(x) + \\frac{b}{a}\\right) = af(x) + b \\text{ (Dilate vertically by } a)"
-                }
-              ]
-            }
+          "id": "y11-5g-q10a-i",
+          "type": "mc",
+          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\n\nLet \\(g(x) = f(x + 2)\\). Which statement correctly describes the transformation of \\(y = f(x)\\) to obtain \\(y = g(x)\\)?",
+          "options": [
+            "Translate the graph of \\(f\\) 2 units to the right.",
+            "Translate the graph of \\(f\\) 2 units up.",
+            "Translate the graph of \\(f\\) 2 units to the left.",
+            "Dilate the graph of \\(f\\) horizontally by a factor of 2."
           ],
-          "hint": "Analyze the shifts and dilations step-by-step."
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Identify the change to the independent variable.",
+              "work": "x \\to x + 2"
+            },
+            {
+              "explain": "Apply the translation rule for functions.",
+              "work": "f(x+c) \\text{ translates the graph } c \\text{ units to the left if } c > 0."
+            },
+            {
+              "explain": "Conclude the transformation.",
+              "work": "\\text{Translate the graph of } f \\text{ 2 units to the left.}"
+            }
+          ]
+        },
+        {
+          "id": "y11-5g-q10a-ii",
+          "type": "mc",
+          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\n\nLet \\(h(x) = g(3x)\\). Which statement correctly describes the transformation of \\(y = g(x)\\) to obtain \\(y = h(x)\\)?",
+          "options": [
+            "Dilate the graph of \\(g\\) horizontally by a factor of \\(\\dfrac{1}{3}\\) (towards the \\(y\\)-axis).",
+            "Dilate the graph of \\(g\\) horizontally by a factor of 3.",
+            "Dilate the graph of \\(g\\) vertically by a factor of 3.",
+            "Translate the graph of \\(g\\) 3 units to the left."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Identify the change to the independent variable.",
+              "work": "x \\to 3x"
+            },
+            {
+              "explain": "Apply the horizontal dilation rule.",
+              "work": "f(kx) \\text{ dilates the graph horizontally by a factor of } \\frac{1}{k}."
+            },
+            {
+              "explain": "Conclude the transformation.",
+              "work": "\\text{Dilate the graph of } g \\text{ horizontally by a factor of } \\frac{1}{3}."
+            }
+          ]
+        },
+        {
+          "id": "y11-5g-q10a-iii",
+          "type": "mc",
+          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\n\nHence which option correctly describes \\(h\\) as a transformation of \\(f\\), and gives \\(h\\) in terms of \\(f\\)?",
+          "options": [
+            "Dilate \\(f\\) horizontally by \\(\\dfrac{1}{3}\\), then translate left by 2; \\(h(x) = f(3x + 2)\\).",
+            "Translate \\(f\\) right by 2, then dilate horizontally by 3; \\(h(x) = f\\!\\left(\\dfrac{x}{3} - 2\\right)\\).",
+            "Translate \\(f\\) left by 2 only; \\(h(x) = f(x + 2)\\).",
+            "Translate \\(f\\) left by 2, then dilate horizontally by \\(\\dfrac{1}{3}\\); \\(h(x) = f(3x + 2)\\)."
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Combine the transformations.",
+              "work": "g(x) = f(x+2)"
+            },
+            {
+              "explain": "Substitute into the second transformation.",
+              "work": "h(x) = g(3x) = f(3x+2)"
+            },
+            {
+              "explain": "Describe the sequence.",
+              "work": "\\text{Translate } f \\text{ left by 2, then dilate horizontally by } \\frac{1}{3}."
+            }
+          ]
+        },
+        {
+          "id": "y11-5g-q10b-i",
+          "type": "mc",
+          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\n\nLet \\(p(x) = f(3x)\\). Which statement correctly describes the transformation of \\(y = f(x)\\) to obtain \\(y = p(x)\\)?",
+          "options": [
+            "Dilate the graph of \\(f\\) horizontally by a factor of 3.",
+            "Dilate the graph of \\(f\\) horizontally by a factor of \\(\\dfrac{1}{3}\\) (towards the \\(y\\)-axis).",
+            "Translate the graph of \\(f\\) 3 units to the left.",
+            "Dilate the graph of \\(f\\) vertically by a factor of 3."
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the change to the independent variable.",
+              "work": "x \\to 3x"
+            },
+            {
+              "explain": "Apply the horizontal dilation rule.",
+              "work": "f(kx) \\text{ dilates horizontally by a factor of } \\frac{1}{k}."
+            },
+            {
+              "explain": "Conclude the transformation.",
+              "work": "\\text{Dilate the graph of } f \\text{ horizontally by a factor of } \\frac{1}{3}."
+            }
+          ]
+        },
+        {
+          "id": "y11-5g-q10b-ii",
+          "type": "mc",
+          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\n\nLet \\(q(x) = p\\!\\left(x + \\dfrac{2}{3}\\right)\\). Which statement correctly describes the transformation of \\(y = p(x)\\) to obtain \\(y = q(x)\\)?",
+          "options": [
+            "Translate the graph of \\(p\\) \\(\\dfrac{2}{3}\\) units to the right.",
+            "Translate the graph of \\(p\\) \\(\\dfrac{2}{3}\\) units to the left.",
+            "Translate the graph of \\(p\\) 2 units to the left.",
+            "Dilate the graph of \\(p\\) horizontally by a factor of \\(\\dfrac{2}{3}\\)."
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Identify the change to the independent variable.",
+              "work": "x \\to x + \\frac{2}{3}"
+            },
+            {
+              "explain": "Apply the translation rule.",
+              "work": "f(x+c) \\text{ translates left by } c."
+            },
+            {
+              "explain": "Conclude the transformation.",
+              "work": "\\text{Translate the graph of } p \\text{ } \\frac{2}{3} \\text{ units to the left.}"
+            }
+          ]
+        },
+        {
+          "id": "y11-5g-q10b-iii",
+          "type": "mc",
+          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\n\nHence which option correctly describes \\(q\\) as a transformation of \\(f\\), and gives \\(q\\) in terms of \\(f\\)?",
+          "options": [
+            "Translate \\(f\\) left by 2, then dilate horizontally by \\(\\dfrac{1}{3}\\); \\(q(x) = f(3x + 2)\\).",
+            "Dilate \\(f\\) horizontally by 3, then translate left by 2; \\(q(x) = f\\!\\left(\\dfrac{x}{3} + 2\\right)\\).",
+            "Translate \\(f\\) left by \\(\\dfrac{2}{3}\\) only; \\(q(x) = f\\!\\left(x + \\dfrac{2}{3}\\right)\\).",
+            "Dilate \\(f\\) horizontally by \\(\\dfrac{1}{3}\\), then translate left by \\(\\dfrac{2}{3}\\); \\(q(x) = f(3x + 2)\\)."
+          ],
+          "answer": 3,
+          "steps": [
+            {
+              "explain": "Combine the transformations.",
+              "work": "p(x) = f(3x)"
+            },
+            {
+              "explain": "Substitute into the second transformation.",
+              "work": "q(x) = p\\left(x + \\frac{2}{3}\\right) = f\\left(3\\left(x + \\frac{2}{3}\\right)\\right) = f(3x + 2)"
+            },
+            {
+              "explain": "Describe the sequence.",
+              "work": "\\text{Dilate } f \\text{ horizontally by } \\frac{1}{3}, \\text{ then translate left by } \\frac{2}{3}."
+            }
+          ]
+        },
+        {
+          "id": "y11-5g-q10c",
+          "type": "mc",
+          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\n\nThe functions \\(h(x)\\) and \\(q(x)\\) are identical. Why do the horizontal shifts of \\(f\\) differ in parts (a) and (b)?",
+          "options": [
+            "In (a) the shift of 2 is applied before the dilation, so the dilation compresses that shift; in (b) the shift is applied after dilation, so only a shift of \\(\\dfrac{2}{3}\\) is needed.",
+            "The two composites are actually different functions, so the shifts cannot be compared.",
+            "Horizontal dilations never affect translations, so the difference is only notational.",
+            "Part (a) uses a vertical shift while part (b) uses a horizontal shift."
+          ],
+          "answer": 0,
+          "steps": [
+            {
+              "explain": "Compare the algebraic expressions.",
+              "work": "h(x) = f(3x + 2) \\text{ and } q(x) = f(3x + 2)"
+            },
+            {
+              "explain": "Analyze Method (a).",
+              "work": "\\text{Shift applied before dilation. The subsequent dilation compresses the shift from 2 to } \\frac{2}{3}."
+            },
+            {
+              "explain": "Analyze Method (b).",
+              "work": "\\text{Shift applied after dilation, so it must be exactly } \\frac{2}{3} \\text{ to match.}"
+            }
+          ]
+        },
+        {
+          "id": "y11-5g-q10d",
+          "type": "mc",
+          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\n\nWhich pair correctly describes \\(y = f(ax + b)\\) (assume \\(a > 0\\)) as transformations of \\(y = f(x)\\) in two different ways?",
+          "options": [
+            "Method 1: translate right by \\(b\\), then dilate horizontally by \\(a\\). Method 2: dilate by \\(a\\), then translate right by \\(ab\\).",
+            "Method 1: translate left by \\(b\\) only. Method 2: dilate vertically by \\(a\\).",
+            "Method 1: translate left by \\(b\\), then dilate horizontally by \\(\\dfrac{1}{a}\\). Method 2: dilate horizontally by \\(\\dfrac{1}{a}\\), then translate left by \\(\\dfrac{b}{a}\\).",
+            "Method 1: dilate vertically by \\(a\\), then translate up by \\(b\\). Method 2: translate up by \\(b\\), then dilate vertically by \\(a\\)."
+          ],
+          "answer": 2,
+          "steps": [
+            {
+              "explain": "Formulate Method 1 (Translation first).",
+              "work": "f(x) \\to f(x+b) \\text{ (Left by } b) \\to f(ax+b) \\text{ (Dilate horizontally by } \\frac{1}{a})"
+            },
+            {
+              "explain": "Formulate Method 2 (Dilation first).",
+              "work": "f(x) \\to f(ax) \\text{ (Dilate horizontally by } \\frac{1}{a}) \\to f\\left(a\\left(x + \\frac{b}{a}\\right)\\right) = f(ax+b) \\text{ (Left by } \\frac{b}{a})"
+            }
+          ]
+        },
+        {
+          "id": "y11-5g-q10e",
+          "type": "mc",
+          "stem": "Let \\(f(x)\\) be any function and let \\(\\ell(x) = ax + b\\), a linear function. The graph of \\(y = f(\\ell(x)) = f(ax + b)\\) can be obtained by two transformations of \\(y = f(x)\\).\n\nWhich pair correctly describes \\(y = af(x) + b\\) (with \\(a \\ne 0\\)) as transformations of \\(y = f(x)\\) in two different ways?",
+          "options": [
+            "Method 1: translate vertically by \\(b\\), then dilate vertically by \\(a\\) only works when \\(a = 1\\).",
+            "Method 1: dilate vertically by \\(a\\), then translate vertically by \\(b\\). Method 2: translate vertically by \\(\\dfrac{b}{a}\\), then dilate vertically by \\(a\\).",
+            "Method 1: dilate horizontally by \\(a\\), then translate left by \\(b\\). Method 2: the reverse order.",
+            "Method 1: reflect in the \\(x\\)-axis, then translate by \\(b\\). Method 2: translate by \\(b\\), then reflect."
+          ],
+          "answer": 1,
+          "steps": [
+            {
+              "explain": "Formulate Method 1 (Dilation first).",
+              "work": "y = f(x) \\to y = af(x) \\text{ (Dilate vertically by } a) \\to y = af(x) + b \\text{ (Translate vertically by } b)"
+            },
+            {
+              "explain": "Formulate Method 2 (Translation first).",
+              "work": "y = f(x) \\to y = f(x) + \\frac{b}{a} \\text{ (Translate vertically by } \\frac{b}{a}) \\to y = a\\left(f(x) + \\frac{b}{a}\\right) = af(x) + b \\text{ (Dilate vertically by } a)"
+            }
+          ]
         }
       ]
     },
