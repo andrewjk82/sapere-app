@@ -6783,30 +6783,35 @@
         },
         {
           "id": "y11a-2d-q9d",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Show that the expression is rational by first rationalising the denominators:\n\n\\\\(\\\\frac{8}{3-\\\\sqrt{7}} - \\\\frac{6}{2\\\\sqrt{7}-5}\\\\)",
-          "answer": "Step 1: Rationalise \\(\\frac{8}{3-\\sqrt{7}}\\) using conjugate \\(3+\\sqrt{7}\\):\n\\[\\frac{8(3+\\sqrt{7})}{(3-\\sqrt{7})(3+\\sqrt{7})} = \\frac{24+8\\sqrt{7}}{9-7} = \\frac{24+8\\sqrt{7}}{2} = 12+4\\sqrt{7}\\]\n\nStep 2: Rationalise \\(\\frac{6}{2\\sqrt{7}-5}\\) using conjugate \\(2\\sqrt{7}+5\\):\n\\[\\frac{6(2\\sqrt{7}+5)}{(2\\sqrt{7}-5)(2\\sqrt{7}+5)} = \\frac{12\\sqrt{7}+30}{28-25} = \\frac{12\\sqrt{7}+30}{3} = 4\\sqrt{7}+10\\]\n\nStep 3: Subtract the two rationalised expressions:\n\\[(12+4\\sqrt{7}) - (4\\sqrt{7}+10) = 12 - 10 + 4\\sqrt{7} - 4\\sqrt{7} = 2\\]\n\nThe surd terms cancel, leaving the rational number 2. ✓",
-          "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
+          "stem": "What is \\( \\frac{8}{3-\\sqrt{7}} - \\frac{6}{2\\sqrt{7}-5} \\)?",
+          "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\(a+\\sqrt{b}\\) is \\(a-\\sqrt{b}\\)). Multiplying a binomial surd by its conjugate uses \\((x+y)(x-y)=x^2-y^2\\) to eliminate the surd from the denominator.",
           "steps": [
             {
               "explain": "Rationalise the first fraction using its conjugate \\(3+\\sqrt{7}\\).",
-              "work": "\\\\frac{8(3+\\\\sqrt{7})}{9-7} = \\\\frac{24+8\\\\sqrt{7}}{2} = 12+4\\\\sqrt{7}"
+              "work": "\\frac{8(3+\\sqrt{7})}{(3-\\sqrt{7})(3+\\sqrt{7})} = \\frac{24+8\\sqrt{7}}{9-7} = 12+4\\sqrt{7}"
             },
             {
               "explain": "Rationalise the second fraction using its conjugate \\(2\\sqrt{7}+5\\).",
-              "work": "\\\\frac{6(2\\\\sqrt{7}+5)}{(2\\\\sqrt{7}-5)(2\\\\sqrt{7}+5)} = \\\\frac{12\\\\sqrt{7}+30}{28-25} = \\\\frac{12\\\\sqrt{7}+30}{3} = 4\\\\sqrt{7}+10"
+              "work": "\\frac{6(2\\sqrt{7}+5)}{(2\\sqrt{7}-5)(2\\sqrt{7}+5)} = \\frac{12\\sqrt{7}+30}{28-25} = 4\\sqrt{7}+10"
             },
             {
               "explain": "Perform the subtraction between the two rationalised expressions.",
-              "work": "(12+4\\\\sqrt{7}) - (4\\\\sqrt{7}+10)"
+              "work": "(12+4\\sqrt{7}) - (4\\sqrt{7}+10)"
             },
             {
               "explain": "Distribute the negative sign, collect like terms, and cancel the surds.",
-              "work": "= 12 + 4\\\\sqrt{7} - 4\\\\sqrt{7} - 10 = 2"
+              "work": "= 12 + 4\\sqrt{7} - 4\\sqrt{7} - 10 = 2"
             }
           ],
-          "manual": true
+          "options": [
+            "\\( 2 \\)",
+            "\\( 4 \\)",
+            "\\( -2 \\)",
+            "\\( 10 \\)"
+          ],
+          "answer": 0
         },
         {
           "id": "y11a-2d-q10",
