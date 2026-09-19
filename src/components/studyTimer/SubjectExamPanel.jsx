@@ -2,25 +2,14 @@ import { useState } from 'react';
 import { Pencil, X } from 'lucide-react';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
-
-const todayMidnight = () => new Date(new Date().toDateString());
-
-const ddayFor = (dateStr) => {
-  if (!dateStr) return null;
-  return Math.ceil((new Date(dateStr) - todayMidnight()) / 86400000);
-};
-
-const formatDate = (dateStr) => {
-  if (!dateStr) return null;
-  const d = new Date(`${dateStr}T00:00:00`);
-  return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
-};
+import { normalizeExamEntry, ddayFor, formatExamDate, formatExamTime } from '../../utils/examCountdown';
 
 /**
  * Shows only the currently-selected subject's exam D-day — mirrors whichever
  * subject is active in SubjectStopwatch (see its onSubjectChange prop),
  * rather than listing every subject at once. Exam dates live on
- * users/{uid}.studySubjectExamDates, a map keyed by subject name.
+ * users/{uid}.studySubjectExamDates, a map keyed by subject name (see
+ * src/utils/examCountdown.js for the stored shape).
  */
 const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetExamDate }) => {
   const [editing, setEditing] = useState(false);
@@ -28,8 +17,16 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
   if (!subject) return null;
 
   const c = subjectColors[subject] || DEFAULT_SUBJECT_COLOR;
-  const dateStr = examDates[subject] || '';
-  const dday = ddayFor(dateStr);
+  const entry = normalizeExamEntry(examDates[subject]);
+  const dday = ddayFor(entry);
+
+  const handleDateChange = (e) => {
+    onSetExamDate?.(subject, { date: e.target.value, time: entry?.time || '' });
+  };
+  const handleTimeChange = (e) => {
+    if (!entry?.date) return;
+    onSetExamDate?.(subject, { date: entry.date, time: e.target.value });
+  };
 
   return (
     <div style={{
@@ -47,22 +44,37 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
           <span style={{ fontWeight: 800, fontSize: '0.95rem', color: c }}>{normalizeSubjectLabel(subject)}</span>
           {editing ? (
-            <input
-              type="date"
-              autoFocus
-              value={dateStr}
-              onChange={(e) => { onSetExamDate?.(subject, e.target.value); setEditing(false); }}
-              style={{
-                marginTop: 4, padding: '8px 10px', borderRadius: 10, border: `1px solid ${c}55`,
-                fontSize: '0.85rem', outline: 'none', color: '#1e1b4b',
-              }}
-            />
-          ) : dateStr ? (
+            <div style={{ display: 'flex', gap: 8, marginTop: 4, flexWrap: 'wrap' }}>
+              <input
+                type="date"
+                autoFocus
+                value={entry?.date || ''}
+                onChange={handleDateChange}
+                style={{
+                  padding: '8px 10px', borderRadius: 10, border: `1px solid ${c}55`,
+                  fontSize: '0.85rem', outline: 'none', color: '#1e1b4b',
+                }}
+              />
+              <input
+                type="time"
+                value={entry?.time || ''}
+                disabled={!entry?.date}
+                onChange={handleTimeChange}
+                style={{
+                  padding: '8px 10px', borderRadius: 10, border: `1px solid ${c}55`,
+                  fontSize: '0.85rem', outline: 'none', color: '#1e1b4b',
+                  opacity: entry?.date ? 1 : 0.5,
+                }}
+              />
+            </div>
+          ) : entry ? (
             <>
               <span style={{ fontSize: '1.6rem', fontWeight: 900, color: dday <= 0 ? '#ef4444' : dday <= 7 ? '#f59e0b' : c }}>
                 {dday > 0 ? `D-${dday}` : dday === 0 ? 'D-Day' : 'Past'}
               </span>
-              <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#64748b' }}>{formatDate(dateStr)}</span>
+              <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#64748b' }}>
+                {formatExamDate(entry)}{entry.time ? ` · ${formatExamTime(entry)}` : ''}
+              </span>
             </>
           ) : (
             <span style={{ fontSize: '0.82rem', fontWeight: 600, color: '#94a3b8' }}>No exam date set</span>

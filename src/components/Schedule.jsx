@@ -4,8 +4,10 @@ import { db } from '../firebase/config';
 import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc, getDoc } from 'firebase/firestore';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
+import { useProfile } from '../context/ProfileContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
+import { normalizeExamEntry, formatExamTime } from '../utils/examCountdown';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
 import { getCachedSessions, setCachedSessions } from '../utils/sessionsCache';
@@ -237,7 +239,23 @@ const buildScheduleUpdateHtml = (session, updatePayload) => {
 const Schedule = ({ students = [] }) => {
   const { user, isAdmin } = useAuth();
   const { showToast } = useToast();
+  const { profile } = useProfile();
   const [sessions, setSessions] = useState([]);
+
+  // Exam dates set on the Study Planner (see examCountdown.js), grouped by
+  // date string — student's own view only, an admin has no single "my
+  // subjects" to show here. Not real `sessions` docs; rendered as extra
+  // read-only blocks on top of the grid.
+  const examsByDate = useMemo(() => {
+    if (isAdmin) return {};
+    const map = {};
+    Object.entries(profile?.studySubjectExamDates || {}).forEach(([subject, raw]) => {
+      const entry = normalizeExamEntry(raw);
+      if (!entry?.date) return;
+      (map[entry.date] ||= []).push({ subject, entry });
+    });
+    return map;
+  }, [isAdmin, profile?.studySubjectExamDates]);
   const [selectedSession, setSelectedSession] = useState(null);
   const [showScheduleModal, setShowScheduleModal] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -882,6 +900,34 @@ const Schedule = ({ students = [] }) => {
                     );
                   });
                 })()}
+
+                {(examsByDate[dateStr] || []).map(({ subject, entry }) => {
+                  const [h, m] = entry.time ? entry.time.split(':').map(Number) : [null, null];
+                  const hasTime = h != null;
+                  const top = hasTime ? (h + m / 60 - GRID_START_HOUR) * slotH : 2;
+                  const height = hasTime ? Math.max(slotH * 0.6, minEventH) : 20;
+                  return (
+                    <div
+                      key={`exam-${subject}`}
+                      style={{
+                        position: 'absolute', top: `${top + 1}px`, height: `${height}px`,
+                        left: '4px', right: '4px',
+                        background: '#fef2f2', border: '1.5px dashed #ef4444',
+                        borderRadius: '8px', padding: '3px 6px',
+                        zIndex: 6, overflow: 'hidden',
+                        display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: 0,
+                      }}
+                      title={`${normalizeSubjectLabel(subject)} exam${entry.time ? ` · ${formatExamTime(entry)}` : ''}`}
+                    >
+                      <div style={{ fontSize: '9px', fontWeight: 900, color: '#ef4444', textTransform: 'uppercase', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                        📝 {normalizeSubjectLabel(subject)} Exam
+                      </div>
+                      {entry.time && height >= 30 && (
+                        <div style={{ fontSize: '9px', color: '#b91c1c', fontWeight: 800 }}>{formatExamTime(entry)}</div>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             );
           })}
