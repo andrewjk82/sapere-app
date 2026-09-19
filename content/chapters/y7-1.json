@@ -23125,7 +23125,7 @@
           "id": "y7-1g-h73",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "In the total count of 730,987,639 recorded for library digital catalog archives, what is the difference between the value of the digit 7 and the digit 3?",
+          "stem": "In the total count of 730,984,659 recorded for library digital catalog archives, what is the difference between the value of the digit 7 and the digit 3?",
           "options": [
             "\\(670,200,000\\)",
             "\\(669,995,000\\)",
@@ -23135,16 +23135,16 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Locate the digit 7 and compute its place value.",
-              "work": "\\(7 \\text{ is at index } 0 \\implies 700,000,000\\)"
+              "explain": "Locate the digit 7 and determine its place value.",
+              "work": "\\text{The digit 7 is in the hundred millions place, so its value is } 700,000,000."
             },
             {
-              "explain": "Locate the digit 3 and compute its place value.",
-              "work": "\\(3 \\text{ is at index } 1 \\implies 30,000,000\\)"
+              "explain": "Locate the digit 3 and determine its place value.",
+              "work": "\\text{The digit 3 is in the ten millions place, so its value is } 30,000,000."
             },
             {
-              "explain": "Subtract the smaller value from the larger value.",
-              "work": "\\(|700000000 - 30000000| = 670,000,000\\)"
+              "explain": "Subtract the smaller value from the larger value to find the difference.",
+              "work": "700,000,000 - 30,000,000 = 670,000,000"
             }
           ]
         },
