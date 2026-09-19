@@ -1,0 +1,202 @@
+{
+  "chapterId": "y6-data",
+  "title": "Data (B)",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-data-1",
+      "code": "MA3-DATA-01",
+      "title": "Extended data displays",
+      "questions": [
+        {
+          "id": "y6-data-1-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The two-way table shows students' favourite sport by gender. How many more girls than boys prefer netball?",
+          "figure": {
+            "svg": "fig:79d1f8f903"
+          },
+          "options": [
+            "\\(10\\)",
+            "\\(6\\)",
+            "\\(4\\)",
+            "\\(18\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the netball values for boys and girls, then subtract.",
+          "steps": [
+            {
+              "explain": "Read off the number of girls and boys who prefer netball.",
+              "work": "Girls: 14, Boys: 4"
+            },
+            {
+              "explain": "Subtract to find the difference.",
+              "work": "\\(14-4=10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-data-1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A dot plot shows the number of pets owned by 15 students: 0 pets — 3 students, 1 pet — 6 students, 2 pets — 4 students, 3 pets — 2 students. What is the mode of this data?",
+          "options": [
+            "\\(1\\text{ pet}\\)",
+            "\\(0\\text{ pets}\\)",
+            "\\(6\\text{ pets}\\)",
+            "\\(15\\text{ pets}\\)"
+          ],
+          "answer": 0,
+          "hint": "The mode is the value that occurs most often.",
+          "steps": [
+            {
+              "explain": "Compare the number of students for each value: 3, 6, 4, 2.",
+              "work": "The highest count is 6, for \"1 pet\""
+            },
+            {
+              "explain": "The mode is the pet count with the highest frequency, not the frequency itself.",
+              "work": "\\(\\text{Mode}=1\\text{ pet}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-data-1-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A line graph records temperature through the day: 6am — \\(10°\\text{C}\\), 9am — \\(14°\\text{C}\\), 12pm — \\(22°\\text{C}\\), 3pm — \\(25°\\text{C}\\), 6pm — \\(19°\\text{C}\\). What is the range of temperatures recorded?",
+          "options": [
+            "\\(15°\\text{C}\\)",
+            "\\(25°\\text{C}\\)",
+            "\\(10°\\text{C}\\)",
+            "\\(6°\\text{C}\\)"
+          ],
+          "answer": 0,
+          "hint": "Range = highest value − lowest value.",
+          "steps": [
+            {
+              "explain": "Identify the highest and lowest recorded temperatures.",
+              "work": "Highest: \\(25°\\text{C}\\), Lowest: \\(10°\\text{C}\\)"
+            },
+            {
+              "explain": "Subtract to find the range.",
+              "work": "\\(25-10=15°\\text{C}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-data-2",
+      "code": "MA3-DATA-01",
+      "title": "Misleading data",
+      "questions": [
+        {
+          "id": "y6-data-2-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bar graph's vertical axis starts at \\(50\\) instead of \\(0\\), as shown. What effect does this have on how the bars appear?",
+          "figure": {
+            "svg": "fig:41e2efbd6f"
+          },
+          "options": [
+            "It makes the difference between the bars look much bigger than it really is",
+            "It makes the difference between the bars look smaller than it really is",
+            "It has no effect on how the bars look",
+            "It makes both bars look identical"
+          ],
+          "answer": 0,
+          "hint": "Compare the true difference (65−55=10) to how large that difference LOOKS when the axis is cut off at 50 rather than starting at 0.",
+          "steps": [
+            {
+              "explain": "The true difference between the two values is only 10 (65 − 55).",
+              "work": "\\(65-55=10\\)"
+            },
+            {
+              "explain": "But because the axis starts at 50 (not 0), that difference of 10 takes up a much larger share of the visible bar heights than it should.",
+              "work": "Truncating the axis exaggerates the visual difference"
+            }
+          ]
+        },
+        {
+          "id": "y6-data-2-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A pie chart shows the favourite fruit of a class: Apples \\(40\\%\\), Bananas \\(35\\%\\), Oranges \\(35\\%\\). What is wrong with this pie chart?",
+          "options": [
+            "The percentages add up to more than \\(100\\%\\), which is impossible for a whole pie chart",
+            "Pie charts cannot show fruit data",
+            "There are too few categories",
+            "Nothing is wrong with it"
+          ],
+          "answer": 0,
+          "hint": "Add up all the percentages shown.",
+          "steps": [
+            {
+              "explain": "Add the three percentages together.",
+              "work": "\\(40+35+35=110\\%\\)"
+            },
+            {
+              "explain": "A complete pie chart must represent exactly \\(100\\%\\) — this one is inaccurate.",
+              "work": "\\(110\\% \\ne 100\\%\\), so the chart is misleading/incorrect"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-data-3",
+      "code": "MA3-DATA-01",
+      "title": "Data in digital media",
+      "questions": [
+        {
+          "id": "y6-data-3-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "An online poll on a video-game website asks visitors \"Do you play video games daily?\" and finds that \\(95\\%\\) said yes. Why might this result be misleading if used to describe the general population?",
+          "options": [
+            "The people surveyed were already visitors to a gaming website, so they are not a representative sample of everyone",
+            "95% is too high a number to be measured accurately",
+            "Online polls can never be about video games",
+            "The question was too short"
+          ],
+          "answer": 0,
+          "hint": "Think about who would be visiting a gaming website in the first place.",
+          "steps": [
+            {
+              "explain": "The sample (visitors to a gaming website) is heavily biased toward people who are already interested in gaming.",
+              "work": "Sample is not representative of the wider population"
+            },
+            {
+              "explain": "This is called sampling bias — the result cannot be generalised beyond that specific group.",
+              "work": "The 95% figure overstates video-game habits in the general population"
+            }
+          ]
+        },
+        {
+          "id": "y6-data-3-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A graph in a news article shows that both ice-cream sales and shark attacks increase during summer months. Does this mean ice-cream sales cause shark attacks?",
+          "options": [
+            "No — both are likely caused by a third factor (warm weather leads to more swimming and more ice-cream eating)",
+            "Yes — the graph proves ice-cream causes shark attacks",
+            "Yes, but only in coastal towns",
+            "No, because sharks do not eat ice-cream"
+          ],
+          "answer": 0,
+          "hint": "Two things happening at the same time (correlation) does not mean one causes the other.",
+          "steps": [
+            {
+              "explain": "Both ice-cream sales and shark attacks rise in warm weather, but for unrelated reasons — more people swim, and more people buy ice-cream.",
+              "work": "Warm weather is the common underlying cause of both"
+            },
+            {
+              "explain": "This is an example of correlation without causation.",
+              "work": "Ice-cream does not cause shark attacks"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

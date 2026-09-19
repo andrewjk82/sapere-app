@@ -1,0 +1,358 @@
+{
+  "chapterId": "y6-rqf",
+  "title": "Representing Quantity Fractions (B)",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-rqf-1",
+      "code": "MA3-RQF-01",
+      "title": "Compare fractions (different denominators)",
+      "questions": [
+        {
+          "id": "y6-rqf-1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which fraction is greater: \\(\\dfrac{3}{4}\\) or \\(\\dfrac{5}{6}\\)?",
+          "options": [
+            "\\(\\dfrac{3}{4}\\)",
+            "\\(\\dfrac{5}{6}\\)",
+            "They are equal",
+            "Cannot be compared"
+          ],
+          "answer": 1,
+          "hint": "Convert both fractions to a common denominator (12), then compare the numerators.",
+          "steps": [
+            {
+              "explain": "Find the lowest common denominator of 4 and 6, which is 12.",
+              "work": "\\(\\dfrac{3}{4}=\\dfrac{9}{12}, \\quad \\dfrac{5}{6}=\\dfrac{10}{12}\\)"
+            },
+            {
+              "explain": "Compare the numerators now that the denominators match.",
+              "work": "\\(\\dfrac{10}{12} \\gt \\dfrac{9}{12}\\)"
+            },
+            {
+              "explain": "So the original fraction with the larger equivalent numerator is greater.",
+              "work": "\\(\\dfrac{5}{6} \\gt \\dfrac{3}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rqf-1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which fraction is greater: \\(\\dfrac{2}{5}\\) or \\(\\dfrac{3}{7}\\)?",
+          "options": [
+            "\\(\\dfrac{2}{5}\\)",
+            "\\(\\dfrac{3}{7}\\)",
+            "They are equal",
+            "Cannot be compared"
+          ],
+          "answer": 1,
+          "hint": "Find the lowest common denominator of 5 and 7, which is 35.",
+          "steps": [
+            {
+              "explain": "Convert both fractions to have a common denominator of 35.",
+              "work": "\\(\\dfrac{2}{5}=\\dfrac{14}{35}, \\quad \\dfrac{3}{7}=\\dfrac{15}{35}\\)"
+            },
+            {
+              "explain": "Compare the numerators.",
+              "work": "\\(\\dfrac{15}{35} \\gt \\dfrac{14}{35}\\)"
+            },
+            {
+              "explain": "So \\(\\dfrac{3}{7}\\) is the greater fraction.",
+              "work": "\\(\\dfrac{3}{7} \\gt \\dfrac{2}{5}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rqf-1-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which of the following fractions is equivalent to \\(\\dfrac{2}{3}\\)?",
+          "options": [
+            "\\(\\dfrac{6}{9}\\)",
+            "\\(\\dfrac{4}{9}\\)",
+            "\\(\\dfrac{3}{2}\\)",
+            "\\(\\dfrac{2}{6}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the numerator and denominator by the same number.",
+          "steps": [
+            {
+              "explain": "Multiply both the numerator and denominator of \\(\\dfrac{2}{3}\\) by 3.",
+              "work": "\\(\\dfrac{2\\times3}{3\\times3}=\\dfrac{6}{9}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-rqf-2",
+      "code": "MA3-RQF-01",
+      "title": "Add fractions with related denominators",
+      "questions": [
+        {
+          "id": "y6-rqf-2-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Calculate: \\(\\dfrac{1}{2}+\\dfrac{1}{4}\\).",
+          "options": [
+            "\\(\\dfrac{3}{4}\\)",
+            "\\(\\dfrac{2}{6}\\)",
+            "\\(\\dfrac{1}{6}\\)",
+            "\\(\\dfrac{2}{4}\\)"
+          ],
+          "answer": 0,
+          "hint": "Since 4 is a multiple of 2, rewrite \\(\\dfrac12\\) with a denominator of 4.",
+          "steps": [
+            {
+              "explain": "Convert \\(\\dfrac12\\) to an equivalent fraction with denominator 4.",
+              "work": "\\(\\dfrac{1}{2}=\\dfrac{2}{4}\\)"
+            },
+            {
+              "explain": "Add the numerators now that the denominators match.",
+              "work": "\\(\\dfrac{2}{4}+\\dfrac{1}{4}=\\dfrac{3}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rqf-2-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(\\dfrac{2}{3}+\\dfrac{1}{6}\\).",
+          "options": [
+            "\\(\\dfrac{5}{6}\\)",
+            "\\(\\dfrac{3}{9}\\)",
+            "\\(\\dfrac{3}{6}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Since 6 is a multiple of 3, rewrite \\(\\dfrac23\\) with a denominator of 6.",
+          "steps": [
+            {
+              "explain": "Convert \\(\\dfrac23\\) to an equivalent fraction with denominator 6.",
+              "work": "\\(\\dfrac{2}{3}=\\dfrac{4}{6}\\)"
+            },
+            {
+              "explain": "Add the numerators.",
+              "work": "\\(\\dfrac{4}{6}+\\dfrac{1}{6}=\\dfrac{5}{6}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rqf-2-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Calculate: \\(\\dfrac{3}{4}-\\dfrac{1}{8}\\).",
+          "options": [
+            "\\(\\dfrac{5}{8}\\)",
+            "\\(\\dfrac{2}{4}\\)",
+            "\\(\\dfrac{2}{8}\\)",
+            "\\(\\dfrac{3}{8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Rewrite \\(\\dfrac34\\) with a denominator of 8.",
+          "steps": [
+            {
+              "explain": "Convert \\(\\dfrac34\\) to an equivalent fraction with denominator 8.",
+              "work": "\\(\\dfrac{3}{4}=\\dfrac{6}{8}\\)"
+            },
+            {
+              "explain": "Subtract the numerators.",
+              "work": "\\(\\dfrac{6}{8}-\\dfrac{1}{8}=\\dfrac{5}{8}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-rqf-3",
+      "code": "MA3-RQF-01",
+      "title": "Fractions of whole numbers",
+      "questions": [
+        {
+          "id": "y6-rqf-3-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find \\(\\dfrac{3}{5}\\) of \\(40\\).",
+          "options": [
+            "\\(24\\)",
+            "\\(15\\)",
+            "\\(8\\)",
+            "\\(35\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 40 by the denominator first, then multiply by the numerator.",
+          "steps": [
+            {
+              "explain": "Divide 40 by the denominator, 5, to find one fifth.",
+              "work": "\\(40\\div5=8\\)"
+            },
+            {
+              "explain": "Multiply by the numerator, 3, to find three fifths.",
+              "work": "\\(8\\times3=24\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rqf-3-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A netball team scored 60 points in a match. \\(\\dfrac{2}{3}\\) of the points were scored in the first half. How many points were scored in the first half?",
+          "options": [
+            "\\(40\\)",
+            "\\(30\\)",
+            "\\(20\\)",
+            "\\(45\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 60 by 3, then multiply by 2.",
+          "steps": [
+            {
+              "explain": "Divide the total by the denominator, 3, to find one third.",
+              "work": "\\(60\\div3=20\\)"
+            },
+            {
+              "explain": "Multiply by the numerator, 2, to find two thirds.",
+              "work": "\\(20\\times2=40\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rqf-3-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find \\(\\dfrac{7}{10}\\) of \\(90\\).",
+          "options": [
+            "\\(63\\)",
+            "\\(70\\)",
+            "\\(9\\)",
+            "\\(83\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 90 by 10 first, then multiply by 7.",
+          "steps": [
+            {
+              "explain": "Divide 90 by the denominator, 10.",
+              "work": "\\(90\\div10=9\\)"
+            },
+            {
+              "explain": "Multiply by the numerator, 7.",
+              "work": "\\(9\\times7=63\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-rqf-4",
+      "code": "MA3-RQF-02",
+      "title": "Fractions as division",
+      "questions": [
+        {
+          "id": "y6-rqf-4-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The fraction \\(\\dfrac{3}{4}\\) represents which division, and what is its decimal value?",
+          "options": [
+            "\\(3\\div4=0.75\\)",
+            "\\(4\\div3=1.33\\)",
+            "\\(3\\times4=12\\)",
+            "\\(3+4=7\\)"
+          ],
+          "answer": 0,
+          "hint": "A fraction \\(\\dfrac{a}{b}\\) represents \\(a\\div b\\).",
+          "steps": [
+            {
+              "explain": "A fraction \\(\\dfrac{a}{b}\\) means \\(a\\) divided by \\(b\\).",
+              "work": "\\(\\dfrac34 = 3\\div4\\)"
+            },
+            {
+              "explain": "Evaluate the division.",
+              "work": "\\(3\\div4=0.75\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rqf-4-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "If \\(\\dfrac{2}{5}\\) of a number is \\(20\\), what is the number?",
+          "options": [
+            "\\(50\\)",
+            "\\(40\\)",
+            "\\(8\\)",
+            "\\(100\\)"
+          ],
+          "answer": 0,
+          "hint": "Find one fifth first (divide by 2), then multiply by 5 to find the whole.",
+          "steps": [
+            {
+              "explain": "Since \\(\\dfrac25\\) of the number is 20, find one fifth by dividing by 2.",
+              "work": "\\(20\\div2=10\\) (one fifth)"
+            },
+            {
+              "explain": "Multiply by 5 to find the whole number (five fifths).",
+              "work": "\\(10\\times5=50\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-rqf-5",
+      "code": "MA3-RQF-01",
+      "title": "Simplify fractions",
+      "questions": [
+        {
+          "id": "y6-rqf-5-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\dfrac{12}{18}\\) to its lowest terms.",
+          "options": [
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{6}{9}\\)",
+            "\\(\\dfrac{4}{6}\\)",
+            "\\(\\dfrac{1}{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor of 12 and 18.",
+          "steps": [
+            {
+              "explain": "The highest common factor of 12 and 18 is 6.",
+              "work": "\\(\\text{HCF}(12,18)=6\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by 6.",
+              "work": "\\(\\dfrac{12\\div6}{18\\div6}=\\dfrac{2}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-rqf-5-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\dfrac{15}{20}\\) to its lowest terms.",
+          "options": [
+            "\\(\\dfrac{3}{4}\\)",
+            "\\(\\dfrac{5}{10}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{15}{20}\\) (already simplest)"
+          ],
+          "answer": 0,
+          "hint": "Find the highest common factor of 15 and 20.",
+          "steps": [
+            {
+              "explain": "The highest common factor of 15 and 20 is 5.",
+              "work": "\\(\\text{HCF}(15,20)=5\\)"
+            },
+            {
+              "explain": "Divide the numerator and denominator by 5.",
+              "work": "\\(\\dfrac{15\\div5}{20\\div5}=\\dfrac{3}{4}\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

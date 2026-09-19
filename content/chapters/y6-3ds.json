@@ -1,0 +1,168 @@
+{
+  "chapterId": "y6-3ds",
+  "title": "3D Spatial Structure (B)",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-3ds-1",
+      "code": "MA3-3DS-01",
+      "title": "Construct 3D objects",
+      "questions": [
+        {
+          "id": "y6-3ds-1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "How many faces does a triangular prism have?",
+          "options": [
+            "\\(5\\)",
+            "\\(6\\)",
+            "\\(4\\)",
+            "\\(3\\)"
+          ],
+          "answer": 0,
+          "hint": "A triangular prism has 2 triangular ends and some rectangular sides connecting them.",
+          "steps": [
+            {
+              "explain": "A triangular prism has 2 triangular faces (the ends) and 3 rectangular faces (the sides).",
+              "work": "\\(2\\text{ triangles}+3\\text{ rectangles}\\)"
+            },
+            {
+              "explain": "Add the faces together.",
+              "work": "\\(2+3=5\\text{ faces}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-3ds-1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How many vertices (corners) does a square pyramid have?",
+          "options": [
+            "\\(5\\)",
+            "\\(4\\)",
+            "\\(6\\)",
+            "\\(8\\)"
+          ],
+          "answer": 0,
+          "hint": "Count the 4 corners of the square base, plus the apex at the top.",
+          "steps": [
+            {
+              "explain": "The square base has 4 corners.",
+              "work": "4 base vertices"
+            },
+            {
+              "explain": "Add the single apex point at the top.",
+              "work": "\\(4+1=5\\) vertices"
+            }
+          ]
+        },
+        {
+          "id": "y6-3ds-1-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A cube is unfolded flat into its net. How many square faces does the net contain?",
+          "options": [
+            "\\(6\\)",
+            "\\(4\\)",
+            "\\(8\\)",
+            "\\(12\\)"
+          ],
+          "answer": 0,
+          "hint": "A cube has the same number of faces whether folded up or laid out flat as a net.",
+          "steps": [
+            {
+              "explain": "A cube has 6 identical square faces (top, bottom, and 4 sides).",
+              "work": "6 faces"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-3ds-2",
+      "code": "MA3-3DS-02",
+      "title": "Volume — cm³ and m³",
+      "questions": [
+        {
+          "id": "y6-3ds-2-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the volume of the rectangular prism shown.",
+          "figure": {
+            "svg": "fig:624cd8cab0"
+          },
+          "options": [
+            "\\(60\\text{ cm}^3\\)",
+            "\\(12\\text{ cm}^3\\)",
+            "\\(35\\text{ cm}^3\\)",
+            "\\(47\\text{ cm}^3\\)"
+          ],
+          "answer": 0,
+          "hint": "Volume of a rectangular prism \\(=\\text{length}\\times\\text{width}\\times\\text{height}\\).",
+          "steps": [
+            {
+              "explain": "Use the volume formula for a rectangular prism.",
+              "work": "\\(V=l\\times w\\times h\\)"
+            },
+            {
+              "explain": "Substitute the three dimensions: 4 cm, 5 cm and 3 cm.",
+              "work": "\\(V=4\\times5\\times3\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(V=60\\text{ cm}^3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-3ds-2-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A fish tank measures \\(2\\text{ m}\\) long, \\(1\\text{ m}\\) wide and \\(1.5\\text{ m}\\) high. Find its volume in cubic metres.",
+          "options": [
+            "\\(3\\text{ m}^3\\)",
+            "\\(4.5\\text{ m}^3\\)",
+            "\\(2\\text{ m}^3\\)",
+            "\\(1.5\\text{ m}^3\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the three dimensions together.",
+          "steps": [
+            {
+              "explain": "Multiply the length, width and height.",
+              "work": "\\(V=2\\times1\\times1.5\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(V=3\\text{ m}^3\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-3ds-2-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A rectangular box has a volume of \\(72\\text{ cm}^3\\). Its length is \\(6\\text{ cm}\\) and its width is \\(4\\text{ cm}\\). Find its height.",
+          "options": [
+            "\\(3\\text{ cm}\\)",
+            "\\(12\\text{ cm}\\)",
+            "\\(6\\text{ cm}\\)",
+            "\\(24\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the volume by the length and width to find the missing height.",
+          "steps": [
+            {
+              "explain": "Use the volume formula and substitute the known values.",
+              "work": "\\(72=6\\times4\\times h\\)"
+            },
+            {
+              "explain": "Simplify \\(6\\times4=24\\), then divide.",
+              "work": "\\(72=24h \\Rightarrow h=72\\div24=3\\text{ cm}\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

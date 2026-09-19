@@ -1,0 +1,179 @@
+{
+  "chapterId": "y6-chan",
+  "title": "Chance (B)",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-chan-1",
+      "code": "MA3-CHAN-01",
+      "title": "Create random generators",
+      "questions": [
+        {
+          "id": "y6-chan-1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A spinner is divided into 4 equal sections coloured red, blue, green and yellow. What is the probability of landing on blue?",
+          "figure": {
+            "svg": "fig:be25d6b986"
+          },
+          "options": [
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{1}{2}\\)",
+            "\\(\\dfrac{1}{3}\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "There are 4 equal sections in total, and only 1 is blue.",
+          "steps": [
+            {
+              "explain": "There are 4 equally likely sections, and blue is 1 of them.",
+              "work": "\\(P(\\text{blue}) = \\dfrac{\\text{favourable outcomes}}{\\text{total outcomes}} = \\dfrac{1}{4}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-chan-1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bag contains 3 red counters and 5 blue counters. What is the probability of picking a red counter at random?",
+          "options": [
+            "\\(\\dfrac{3}{8}\\)",
+            "\\(\\dfrac{3}{5}\\)",
+            "\\(\\dfrac{5}{8}\\)",
+            "\\(\\dfrac{1}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "The total number of counters is \\(3+5=8\\).",
+          "steps": [
+            {
+              "explain": "Find the total number of counters.",
+              "work": "\\(3+5=8\\text{ counters total}\\)"
+            },
+            {
+              "explain": "The probability of red is the number of red counters over the total.",
+              "work": "\\(P(\\text{red})=\\dfrac{3}{8}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-chan-2",
+      "code": "MA3-CHAN-01",
+      "title": "Small and large trials",
+      "questions": [
+        {
+          "id": "y6-chan-2-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Coin A is flipped 10 times and lands on heads 8 times. Coin B is flipped 1000 times and lands on heads 512 times. Which coin's result is closer to the theoretical probability of \\(50\\%\\), and why?",
+          "options": [
+            "Coin B — larger trials tend to give results closer to the theoretical probability",
+            "Coin A — smaller trials are always more accurate",
+            "Both are equally accurate",
+            "Neither is close to 50%"
+          ],
+          "answer": 0,
+          "hint": "Compare \\(\\dfrac{8}{10}\\) and \\(\\dfrac{512}{1000}\\) as percentages.",
+          "steps": [
+            {
+              "explain": "Convert both results to percentages.",
+              "work": "Coin A: \\(\\dfrac{8}{10}=80\\%\\); \\quad Coin B: \\(\\dfrac{512}{1000}=51.2\\%\\)"
+            },
+            {
+              "explain": "Compare each to the theoretical probability of 50%.",
+              "work": "\\(80\\%\\) is \\(30\\) points away; \\(51.2\\%\\) is only \\(1.2\\) points away"
+            },
+            {
+              "explain": "Coin B's larger number of trials gives a result much closer to the true probability — this is a general property of random trials.",
+              "work": "Coin B is closer"
+            }
+          ]
+        },
+        {
+          "id": "y6-chan-2-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A die is rolled 30 times and lands on an even number 22 times. What is the experimental probability of rolling an even number, as a percentage?",
+          "options": [
+            "\\(73.3\\%\\)",
+            "\\(22\\%\\)",
+            "\\(30\\%\\)",
+            "\\(50\\%\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the number of favourable outcomes by the total number of trials.",
+          "steps": [
+            {
+              "explain": "Divide the number of even results by the total number of rolls.",
+              "work": "\\(\\dfrac{22}{30}\\)"
+            },
+            {
+              "explain": "Convert to a percentage.",
+              "work": "\\(\\dfrac{22}{30}\\times100\\%\\approx73.3\\%\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-chan-3",
+      "code": "MA3-CHAN-01",
+      "title": "Observed vs expected",
+      "questions": [
+        {
+          "id": "y6-chan-3-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A fair die is rolled 60 times. Based on theoretical probability, how many times would you expect to roll a 6?",
+          "options": [
+            "\\(10\\)",
+            "\\(6\\)",
+            "\\(60\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "The theoretical probability of rolling a 6 is \\(\\dfrac16\\). Multiply this by the number of trials.",
+          "steps": [
+            {
+              "explain": "The theoretical probability of any single number on a fair die is \\(\\dfrac16\\).",
+              "work": "\\(P(6)=\\dfrac16\\)"
+            },
+            {
+              "explain": "Multiply by the number of trials to find the expected count.",
+              "work": "\\(60\\times\\dfrac16=10\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-chan-3-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A spinner with 4 equal sections is spun 200 times. It lands on \"red\" 60 times. How does the observed probability of red compare to the expected (theoretical) probability?",
+          "options": [
+            "Observed is \\(30\\%\\), which is higher than the expected \\(25\\%\\)",
+            "Observed is \\(25\\%\\), exactly matching the expected value",
+            "Observed is \\(60\\%\\), much higher than expected",
+            "Observed is \\(20\\%\\), lower than expected"
+          ],
+          "answer": 0,
+          "hint": "Expected probability \\(=\\dfrac14=25\\%\\). Observed probability \\(=\\dfrac{60}{200}\\).",
+          "steps": [
+            {
+              "explain": "The expected (theoretical) probability for one of 4 equal sections is 25%.",
+              "work": "\\(P(\\text{expected})=\\dfrac14=25\\%\\)"
+            },
+            {
+              "explain": "The observed probability is the actual result divided by the total spins.",
+              "work": "\\(P(\\text{observed})=\\dfrac{60}{200}=30\\%\\)"
+            },
+            {
+              "explain": "Compare the two values.",
+              "work": "\\(30\\%\\gt25\\%\\) — the observed result is somewhat higher than expected"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

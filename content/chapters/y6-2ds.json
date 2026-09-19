@@ -1,0 +1,243 @@
+{
+  "chapterId": "y6-2ds",
+  "title": "2D Spatial Structure (B)",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-2ds-1",
+      "code": "MA2-2DS-01",
+      "title": "Transformations on a grid",
+      "questions": [
+        {
+          "id": "y6-2ds-1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A point at \\((2, 3)\\) is translated 4 units right and 1 unit down. What are its new coordinates?",
+          "options": [
+            "\\((6, 2)\\)",
+            "\\((6, 4)\\)",
+            "\\((-2, 2)\\)",
+            "\\((2, 7)\\)"
+          ],
+          "answer": 0,
+          "hint": "Moving right increases the \\(x\\)-coordinate; moving down decreases the \\(y\\)-coordinate.",
+          "steps": [
+            {
+              "explain": "4 units right adds 4 to the \\(x\\)-coordinate.",
+              "work": "\\(x=2+4=6\\)"
+            },
+            {
+              "explain": "1 unit down subtracts 1 from the \\(y\\)-coordinate.",
+              "work": "\\(y=3-1=2\\)"
+            },
+            {
+              "explain": "Combine to state the new coordinates.",
+              "work": "\\((6,2)\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-2ds-1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Point \\(A(2, 5)\\) is reflected in the \\(y\\)-axis. What are the coordinates of the image?",
+          "options": [
+            "\\((-2, 5)\\)",
+            "\\((2, -5)\\)",
+            "\\((-2, -5)\\)",
+            "\\((5, 2)\\)"
+          ],
+          "answer": 0,
+          "hint": "A reflection in the \\(y\\)-axis flips the sign of the \\(x\\)-coordinate only.",
+          "steps": [
+            {
+              "explain": "Reflecting in the \\(y\\)-axis negates the \\(x\\)-coordinate and keeps \\(y\\) the same.",
+              "work": "\\((2,5) \\to (-2,5)\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-2ds-2",
+      "code": "MA2-2DS-01",
+      "title": "Enlargement",
+      "questions": [
+        {
+          "id": "y6-2ds-2-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A rectangle measuring \\(3\\text{ cm}\\) by \\(4\\text{ cm}\\) is enlarged by a scale factor of \\(2\\). What are the new dimensions?",
+          "options": [
+            "\\(6\\text{ cm}\\times8\\text{ cm}\\)",
+            "\\(5\\text{ cm}\\times6\\text{ cm}\\)",
+            "\\(3\\text{ cm}\\times8\\text{ cm}\\)",
+            "\\(9\\text{ cm}\\times12\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply each side length by the scale factor.",
+          "steps": [
+            {
+              "explain": "Multiply both dimensions by the scale factor, 2.",
+              "work": "\\(3\\times2=6, \\quad 4\\times2=8\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-2ds-2-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A shape has an area of \\(12\\text{ cm}^2\\). It is enlarged by a scale factor of \\(3\\). What is the area of the enlarged shape?",
+          "options": [
+            "\\(108\\text{ cm}^2\\)",
+            "\\(36\\text{ cm}^2\\)",
+            "\\(15\\text{ cm}^2\\)",
+            "\\(24\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "When lengths are scaled by a factor \\(k\\), area is scaled by \\(k^2\\), not just \\(k\\).",
+          "steps": [
+            {
+              "explain": "Area scales by the square of the length scale factor.",
+              "work": "\\(\\text{Area scale factor}=3^2=9\\)"
+            },
+            {
+              "explain": "Multiply the original area by this factor.",
+              "work": "\\(12\\times9=108\\text{ cm}^2\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-2ds-3",
+      "code": "MA3-2DS-03",
+      "title": "Area of composite figures",
+      "questions": [
+        {
+          "id": "y6-2ds-3-q1",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the total area of the L-shaped figure shown, by dividing it into two rectangles.",
+          "figure": {
+            "svg": "fig:15c8630de4"
+          },
+          "options": [
+            "\\(68\\text{ units}^2\\)",
+            "\\(48\\text{ units}^2\\)",
+            "\\(80\\text{ units}^2\\)",
+            "\\(60\\text{ units}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Split the L-shape into a left rectangle (full height) and a right rectangle (the upper part only), then add their areas.",
+          "steps": [
+            {
+              "explain": "The left rectangle has width 6 and the full height, 8.",
+              "work": "\\(\\text{Rectangle A}=6\\times8=48\\)"
+            },
+            {
+              "explain": "The right rectangle has width 4 and height equal to the total height minus the step, \\(8-3=5\\).",
+              "work": "\\(\\text{Rectangle B}=4\\times5=20\\)"
+            },
+            {
+              "explain": "Add the two rectangle areas.",
+              "work": "\\(48+20=68\\text{ units}^2\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-2ds-4",
+      "code": "MA3-2DS-02",
+      "title": "Area of parallelograms",
+      "questions": [
+        {
+          "id": "y6-2ds-4-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the parallelogram shown.",
+          "figure": {
+            "svg": "fig:e294a34700"
+          },
+          "options": [
+            "\\(40\\text{ cm}^2\\)",
+            "\\(26\\text{ cm}^2\\)",
+            "\\(13\\text{ cm}^2\\)",
+            "\\(80\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Area of a parallelogram \\(=\\text{base}\\times\\text{height}\\).",
+          "steps": [
+            {
+              "explain": "Use the formula for the area of a parallelogram.",
+              "work": "\\(\\text{Area}=\\text{base}\\times\\text{height}\\)"
+            },
+            {
+              "explain": "Substitute the base (8 cm) and the perpendicular height (5 cm).",
+              "work": "\\(\\text{Area}=8\\times5=40\\text{ cm}^2\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-2ds-5",
+      "code": "MA3-2DS-02",
+      "title": "Area of triangles",
+      "questions": [
+        {
+          "id": "y6-2ds-5-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the area of the triangle shown.",
+          "figure": {
+            "svg": "fig:91faaf824c"
+          },
+          "options": [
+            "\\(30\\text{ cm}^2\\)",
+            "\\(60\\text{ cm}^2\\)",
+            "\\(16\\text{ cm}^2\\)",
+            "\\(48\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Area of a triangle \\(=\\dfrac12\\times\\text{base}\\times\\text{height}\\).",
+          "steps": [
+            {
+              "explain": "Use the triangle area formula.",
+              "work": "\\(\\text{Area}=\\dfrac12\\times\\text{base}\\times\\text{height}\\)"
+            },
+            {
+              "explain": "Substitute the base (10 cm) and height (6 cm).",
+              "work": "\\(\\text{Area}=\\dfrac12\\times10\\times6=30\\text{ cm}^2\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-2ds-5-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A triangle has a base of \\(12\\text{ cm}\\) and a height of \\(5\\text{ cm}\\). Find its area.",
+          "options": [
+            "\\(30\\text{ cm}^2\\)",
+            "\\(60\\text{ cm}^2\\)",
+            "\\(17\\text{ cm}^2\\)",
+            "\\(35\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Area of a triangle \\(=\\dfrac12\\times\\text{base}\\times\\text{height}\\).",
+          "steps": [
+            {
+              "explain": "Substitute the values into the triangle area formula.",
+              "work": "\\(\\text{Area}=\\dfrac12\\times12\\times5\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(=30\\text{ cm}^2\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

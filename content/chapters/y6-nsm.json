@@ -1,0 +1,161 @@
+{
+  "chapterId": "y6-nsm",
+  "title": "Non-Spatial Measure (B)",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-nsm-1",
+      "code": "MA3-NSM-01",
+      "title": "Convert mass units",
+      "questions": [
+        {
+          "id": "y6-nsm-1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(2.5\\text{ kg}\\) to grams.",
+          "options": [
+            "\\(2500\\text{ g}\\)",
+            "\\(250\\text{ g}\\)",
+            "\\(25\\text{ g}\\)",
+            "\\(0.0025\\text{ g}\\)"
+          ],
+          "answer": 0,
+          "hint": "There are 1000 g in 1 kg.",
+          "steps": [
+            {
+              "explain": "Multiply by 1000, since \\(1\\text{ kg}=1000\\text{ g}\\).",
+              "work": "\\(2.5\\times1000=2500\\text{ g}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-nsm-1-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(3200\\text{ g}\\) to kilograms.",
+          "options": [
+            "\\(3.2\\text{ kg}\\)",
+            "\\(32\\text{ kg}\\)",
+            "\\(0.32\\text{ kg}\\)",
+            "\\(320\\text{ kg}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide by 1000, since \\(1\\text{ kg}=1000\\text{ g}\\).",
+          "steps": [
+            {
+              "explain": "Divide by 1000.",
+              "work": "\\(3200\\div1000=3.2\\text{ kg}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-nsm-1-q3",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A box of cereal has a gross mass (box + contents) of \\(850\\text{ g}\\). The empty box weighs \\(60\\text{ g}\\). What is the net mass of the cereal alone?",
+          "options": [
+            "\\(790\\text{ g}\\)",
+            "\\(910\\text{ g}\\)",
+            "\\(60\\text{ g}\\)",
+            "\\(850\\text{ g}\\)"
+          ],
+          "answer": 0,
+          "hint": "Net mass = gross mass − mass of the container.",
+          "steps": [
+            {
+              "explain": "Subtract the mass of the empty box from the gross mass.",
+              "work": "\\(850-60=790\\text{ g}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-nsm-2",
+      "code": "MA3-NSM-02",
+      "title": "Duration problems",
+      "questions": [
+        {
+          "id": "y6-nsm-2-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A train departs at \\(9{:}45\\text{ am}\\) and arrives at \\(1{:}20\\text{ pm}\\). How long is the journey?",
+          "options": [
+            "\\(3\\text{ h } 35\\text{ min}\\)",
+            "\\(3\\text{ h } 25\\text{ min}\\)",
+            "\\(4\\text{ h } 35\\text{ min}\\)",
+            "\\(2\\text{ h } 35\\text{ min}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the time from 9:45am to 12:00pm first, then add the remaining time to 1:20pm.",
+          "steps": [
+            {
+              "explain": "Find the time from 9:45am to 12:00 noon.",
+              "work": "\\(9{:}45\\text{ am}\\to12{:}00\\text{ pm}=2\\text{ h }15\\text{ min}\\)"
+            },
+            {
+              "explain": "Find the time from 12:00pm to 1:20pm.",
+              "work": "\\(12{:}00\\text{ pm}\\to1{:}20\\text{ pm}=1\\text{ h }20\\text{ min}\\)"
+            },
+            {
+              "explain": "Add the two parts together.",
+              "work": "\\(2\\text{ h }15\\text{ min}+1\\text{ h }20\\text{ min}=3\\text{ h }35\\text{ min}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-nsm-2-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(15{:}30\\) (24-hour time) as a 12-hour time.",
+          "options": [
+            "\\(3{:}30\\text{ pm}\\)",
+            "\\(5{:}30\\text{ pm}\\)",
+            "\\(3{:}30\\text{ am}\\)",
+            "\\(1{:}30\\text{ pm}\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 12 from the hour if it is 13 or more.",
+          "steps": [
+            {
+              "explain": "Since \\(15\\) is more than \\(12\\), subtract \\(12\\) to convert to 12-hour time.",
+              "work": "\\(15-12=3\\)"
+            },
+            {
+              "explain": "Times after 12:00 noon are labelled \"pm\".",
+              "work": "\\(15{:}30 = 3{:}30\\text{ pm}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-nsm-2-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bus timetable shows a bus leaving at \\(07{:}55\\) and the next one leaving \\(40\\) minutes later. What time (24-hour) does the next bus leave?",
+          "options": [
+            "\\(08{:}35\\)",
+            "\\(08{:}05\\)",
+            "\\(07{:}95\\)",
+            "\\(08{:}45\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the minutes, and carry over into the next hour once you reach 60 minutes.",
+          "steps": [
+            {
+              "explain": "Add 40 minutes to 07:55.",
+              "work": "\\(55+40=95\\text{ minutes}\\)"
+            },
+            {
+              "explain": "Since 95 minutes is more than 60, convert the extra 60 minutes into 1 hour.",
+              "work": "\\(95\\text{ min}=1\\text{ h }35\\text{ min}\\)"
+            },
+            {
+              "explain": "Add this to the hour of 07:00.",
+              "work": "\\(07{:}00+1\\text{ h }35\\text{ min}=08{:}35\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

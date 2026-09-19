@@ -1,0 +1,361 @@
+{
+  "chapterId": "y6-gm",
+  "title": "Geometric Measure (B)",
+  "year": "Year 6",
+  "topics": [
+    {
+      "topicId": "y6-gm-1",
+      "code": "MA3-GM-01",
+      "title": "All 4 quadrants",
+      "questions": [
+        {
+          "id": "y6-gm-1-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In which quadrant is the point \\(P(-3, 4)\\) located?",
+          "figure": {
+            "svg": "fig:fdd590b375"
+          },
+          "options": [
+            "Quadrant I",
+            "Quadrant II",
+            "Quadrant III",
+            "Quadrant IV"
+          ],
+          "answer": 1,
+          "hint": "The \\(x\\)-coordinate is negative and the \\(y\\)-coordinate is positive.",
+          "steps": [
+            {
+              "explain": "A negative \\(x\\) and positive \\(y\\) place the point to the left of the \\(y\\)-axis and above the \\(x\\)-axis.",
+              "work": "\\(x=-3 \\lt 0, \\quad y=4 \\gt 0\\)"
+            },
+            {
+              "explain": "This region is Quadrant II.",
+              "work": "\\(P(-3,4)\\) is in Quadrant II"
+            }
+          ]
+        },
+        {
+          "id": "y6-gm-1-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A point is located 5 units to the left of the origin and 2 units below it. What are its coordinates?",
+          "options": [
+            "\\((-5, -2)\\)",
+            "\\((5, -2)\\)",
+            "\\((-5, 2)\\)",
+            "\\((-2, -5)\\)"
+          ],
+          "answer": 0,
+          "hint": "Left of the origin means a negative \\(x\\); below the origin means a negative \\(y\\).",
+          "steps": [
+            {
+              "explain": "5 units left of the origin gives \\(x=-5\\).",
+              "work": "\\(x=-5\\)"
+            },
+            {
+              "explain": "2 units below the origin gives \\(y=-2\\).",
+              "work": "\\(y=-2\\)"
+            },
+            {
+              "explain": "Combine to state the coordinates.",
+              "work": "\\((-5,-2)\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-gm-2",
+      "code": "MA3-GM-02",
+      "title": "Convert metric length units",
+      "questions": [
+        {
+          "id": "y6-gm-2-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(3.5\\text{ m}\\) to centimetres.",
+          "options": [
+            "\\(350\\text{ cm}\\)",
+            "\\(35\\text{ cm}\\)",
+            "\\(3500\\text{ cm}\\)",
+            "\\(0.035\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "There are 100 cm in 1 m.",
+          "steps": [
+            {
+              "explain": "Multiply by 100, since \\(1\\text{ m}=100\\text{ cm}\\).",
+              "work": "\\(3.5\\times100=350\\text{ cm}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-gm-2-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Convert \\(2500\\text{ m}\\) to kilometres.",
+          "options": [
+            "\\(2.5\\text{ km}\\)",
+            "\\(25\\text{ km}\\)",
+            "\\(0.25\\text{ km}\\)",
+            "\\(250\\text{ km}\\)"
+          ],
+          "answer": 0,
+          "hint": "There are 1000 m in 1 km.",
+          "steps": [
+            {
+              "explain": "Divide by 1000, since \\(1\\text{ km}=1000\\text{ m}\\).",
+              "work": "\\(2500\\div1000=2.5\\text{ km}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-gm-2-q3",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Convert \\(45\\text{ mm}\\) to centimetres.",
+          "options": [
+            "\\(4.5\\text{ cm}\\)",
+            "\\(450\\text{ cm}\\)",
+            "\\(0.45\\text{ cm}\\)",
+            "\\(45\\text{ cm}\\)"
+          ],
+          "answer": 0,
+          "hint": "There are 10 mm in 1 cm.",
+          "steps": [
+            {
+              "explain": "Divide by 10, since \\(1\\text{ cm}=10\\text{ mm}\\).",
+              "work": "\\(45\\div10=4.5\\text{ cm}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-gm-3",
+      "code": "MA3-GM-02",
+      "title": "Solve length problems",
+      "questions": [
+        {
+          "id": "y6-gm-3-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which distance is longer: \\(1.2\\text{ km}\\) or \\(1050\\text{ m}\\)?",
+          "options": [
+            "\\(1.2\\text{ km}\\)",
+            "\\(1050\\text{ m}\\)",
+            "They are equal",
+            "Cannot be compared"
+          ],
+          "answer": 0,
+          "hint": "Convert both distances to the same unit before comparing.",
+          "steps": [
+            {
+              "explain": "Convert \\(1.2\\text{ km}\\) to metres.",
+              "work": "\\(1.2\\times1000=1200\\text{ m}\\)"
+            },
+            {
+              "explain": "Compare with \\(1050\\text{ m}\\).",
+              "work": "\\(1200\\text{ m} \\gt 1050\\text{ m}\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-gm-3-q2",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A garden path is made from 8 paving stones, each \\(45\\text{ cm}\\) long, laid end to end. What is the total length of the path in metres?",
+          "options": [
+            "\\(3.6\\text{ m}\\)",
+            "\\(36\\text{ m}\\)",
+            "\\(0.36\\text{ m}\\)",
+            "\\(45\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the number of stones by the length of each, then convert to metres.",
+          "steps": [
+            {
+              "explain": "Multiply the number of stones by the length of one stone.",
+              "work": "\\(8\\times45=360\\text{ cm}\\)"
+            },
+            {
+              "explain": "Convert centimetres to metres by dividing by 100.",
+              "work": "\\(360\\div100=3.6\\text{ m}\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-gm-4",
+      "code": "MA3-GM-03",
+      "title": "Angles on a straight line",
+      "questions": [
+        {
+          "id": "y6-gm-4-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(ABC\\) is a straight line. Find the value of \\(x\\).",
+          "figure": {
+            "svg": "fig:e6c8e3588f"
+          },
+          "options": [
+            "\\(115°\\)",
+            "\\(65°\\)",
+            "\\(25°\\)",
+            "\\(295°\\)"
+          ],
+          "answer": 0,
+          "hint": "Angles on a straight line add to \\(180°\\).",
+          "steps": [
+            {
+              "explain": "Since \\(ABC\\) is a straight line, \\(\\angle ABD\\) and \\(\\angle DBC\\) add to \\(180°\\).",
+              "work": "\\(65°+x=180°\\)"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "\\(x=180°-65°=115°\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-gm-4-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Two angles on a straight line are \\(38°\\) and \\(y°\\). Find \\(y\\).",
+          "options": [
+            "\\(142\\)",
+            "\\(38\\)",
+            "\\(52\\)",
+            "\\(322\\)"
+          ],
+          "answer": 0,
+          "hint": "Angles on a straight line add to \\(180°\\).",
+          "steps": [
+            {
+              "explain": "Set up the angle sum equation.",
+              "work": "\\(38+y=180\\)"
+            },
+            {
+              "explain": "Solve for \\(y\\).",
+              "work": "\\(y=180-38=142\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-gm-5",
+      "code": "MA3-GM-03",
+      "title": "Angles at a point",
+      "questions": [
+        {
+          "id": "y6-gm-5-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, three angles meet at point \\(O\\). Find the value of \\(x\\).",
+          "figure": {
+            "svg": "fig:af58a12a83"
+          },
+          "options": [
+            "\\(150°\\)",
+            "\\(210°\\)",
+            "\\(140°\\)",
+            "\\(90°\\)"
+          ],
+          "answer": 0,
+          "hint": "Angles at a point add to \\(360°\\).",
+          "steps": [
+            {
+              "explain": "The three angles around point \\(O\\) add to \\(360°\\).",
+              "work": "\\(90°+120°+x=360°\\)"
+            },
+            {
+              "explain": "Simplify and solve for \\(x\\).",
+              "work": "\\(210°+x=360° \\Rightarrow x=150°\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-gm-5-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Four angles meet at a point: \\(70°\\), \\(95°\\), \\(110°\\) and \\(y°\\). Find \\(y\\).",
+          "options": [
+            "\\(85\\)",
+            "\\(95\\)",
+            "\\(360\\)",
+            "\\(275\\)"
+          ],
+          "answer": 0,
+          "hint": "Angles at a point add to \\(360°\\).",
+          "steps": [
+            {
+              "explain": "Add the three known angles.",
+              "work": "\\(70+95+110=275\\)"
+            },
+            {
+              "explain": "Subtract from \\(360°\\) to find \\(y\\).",
+              "work": "\\(y=360-275=85\\)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topicId": "y6-gm-6",
+      "code": "MA3-GM-03",
+      "title": "Vertically opposite angles",
+      "questions": [
+        {
+          "id": "y6-gm-6-q1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two straight lines intersect as shown. Find the value of \\(x\\).",
+          "figure": {
+            "svg": "fig:ec803d539b"
+          },
+          "options": [
+            "\\(72°\\)",
+            "\\(108°\\)",
+            "\\(18°\\)",
+            "\\(288°\\)"
+          ],
+          "answer": 0,
+          "hint": "Vertically opposite angles (angles across the intersection point from each other) are always equal.",
+          "steps": [
+            {
+              "explain": "\\(x\\) and the \\(72°\\) angle are vertically opposite — they are formed on opposite sides of the point where the two lines cross.",
+              "work": "\\(x\\) and \\(72°\\) are vertically opposite angles"
+            },
+            {
+              "explain": "Vertically opposite angles are always equal.",
+              "work": "\\(x=72°\\)"
+            }
+          ]
+        },
+        {
+          "id": "y6-gm-6-q2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Two straight lines cross at a point. One of the four angles formed is \\(115°\\). What is the size of the angle vertically opposite to it?",
+          "options": [
+            "\\(115°\\)",
+            "\\(65°\\)",
+            "\\(245°\\)",
+            "\\(90°\\)"
+          ],
+          "answer": 0,
+          "hint": "Vertically opposite angles are equal.",
+          "steps": [
+            {
+              "explain": "The angle vertically opposite a given angle is always equal to it.",
+              "work": "\\(\\text{Vertically opposite angle}=115°\\)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
