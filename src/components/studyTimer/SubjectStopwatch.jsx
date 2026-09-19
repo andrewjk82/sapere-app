@@ -325,115 +325,10 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
       borderRadius: 32, padding: '32px 28px', background: '#fff',
       border: '1px solid #eceaf6', boxShadow: '0 12px 30px rgba(99,102,241,0.08)', position: 'relative', overflow: 'visible',
     }}>
-      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 24 }}>
-        {subjectOptions.map((s) => {
-          const c = colorFor(s);
-          const selected = s === subject;
-          return (
-            <div
-              key={s}
-              style={{ position: 'relative' }}
-              onMouseEnter={() => setHoveredSubject(s)}
-              onMouseLeave={() => setHoveredSubject((cur) => (cur === s ? null : cur))}
-            >
-              <button
-                type="button"
-                onClick={() => handleSubjectChange(s)}
-                style={{
-                  display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px 7px 10px', borderRadius: 999,
-                  border: selected ? `1px solid ${c}` : '1px solid #e2e8f0',
-                  background: selected ? c : '#f8fafc',
-                  color: selected ? '#fff' : '#334155',
-                  fontWeight: 800, fontSize: '0.78rem', cursor: 'pointer', transition: 'all .2s',
-                }}
-              >
-                <span
-                  role="button"
-                  tabIndex={0}
-                  aria-label={`Change color for ${normalizeSubjectLabel(s)}`}
-                  onClick={(e) => { e.stopPropagation(); setColorPickerFor((cur) => (cur === s ? null : s)); }}
-                  style={{
-                    width: 14, height: 14, borderRadius: '50%', background: selected ? '#fff' : c,
-                    border: selected ? `2px solid ${c}` : '2px solid rgba(255,255,255,0.8)',
-                    boxShadow: '0 0 0 1px rgba(0,0,0,0.06)', flexShrink: 0, cursor: 'pointer',
-                  }}
-                />
-                {normalizeSubjectLabel(s)}
-              </button>
-
-              {hoveredSubject === s && subjectOptions.length > 1 && (
-                <button
-                  type="button"
-                  onClick={(e) => handleRemoveSubjectClick(s, e)}
-                  aria-label={`Remove ${normalizeSubjectLabel(s)}`}
-                  style={{
-                    position: 'absolute', top: -7, right: -7, width: 20, height: 20, borderRadius: '50%',
-                    border: '2px solid #fff', background: '#ef4444', color: '#fff',
-                    display: 'grid', placeItems: 'center', cursor: 'pointer', padding: 0,
-                    boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
-                  }}
-                >
-                  <X size={11} strokeWidth={3} />
-                </button>
-              )}
-
-              <AnimatePresence>
-                {colorPickerFor === s && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -6, scale: 0.96 }}
-                    animate={{ opacity: 1, y: 0, scale: 1 }}
-                    exit={{ opacity: 0, y: -6, scale: 0.96 }}
-                    transition={{ duration: 0.15 }}
-                    style={{
-                      position: 'absolute', top: 'calc(100% + 8px)', left: 0, zIndex: 20,
-                      background: '#fff', borderRadius: 16, padding: 10, boxShadow: '0 16px 40px rgba(30,27,75,0.25)',
-                      border: '1px solid #eceaf6', display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 6,
-                    }}
-                  >
-                    {SUBJECT_COLOR_PALETTE.map((paletteColor) => (
-                      <button
-                        key={paletteColor}
-                        type="button"
-                        onClick={(e) => { e.stopPropagation(); onSetSubjectColor?.(s, paletteColor); setColorPickerFor(null); }}
-                        aria-label={`Set color ${paletteColor}`}
-                        style={{
-                          width: 22, height: 22, borderRadius: '50%', background: paletteColor, cursor: 'pointer',
-                          border: paletteColor === c ? '2px solid #1e1b4b' : '2px solid transparent', padding: 0,
-                        }}
-                      />
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-          );
-        })}
-
-        <button
-          type="button"
-          onClick={() => setAddModalOpen(true)}
-          aria-label="Add subject"
-          style={{
-            width: 34, height: 34, borderRadius: '50%', display: 'grid', placeItems: 'center',
-            border: '1px dashed #cbd5e1', background: '#f8fafc',
-            color: '#64748b', cursor: 'pointer',
-          }}
-        >
-          <Plus size={16} />
-        </button>
-      </div>
-
-      <AddSubjectModal
-        open={addModalOpen}
-        existingSubjects={subjectOptions}
-        onClose={() => setAddModalOpen(false)}
-        onPick={handlePickSubject}
-      />
-
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
         <div style={{ position: 'relative', width: RING_SIZE, height: RING_SIZE }}>
           <svg width={RING_SIZE} height={RING_SIZE} style={{ transform: 'rotate(-90deg)' }}>
-            <circle cx={RING_SIZE / 2} cy={RING_SIZE / 2} r={RING_R} fill="none" stroke="#f1f0f8" strokeWidth={RING_STROKE} />
+            <circle cx={RING_SIZE / 2} cy={RING_SIZE / 2} r={RING_R} fill="none" stroke={`${activeColor}1f`} strokeWidth={RING_STROKE} />
             <motion.circle
               cx={RING_SIZE / 2} cy={RING_SIZE / 2} r={RING_R} fill="none" stroke={activeColor} strokeWidth={RING_STROKE}
               strokeLinecap="round" strokeDasharray={RING_C}
@@ -453,10 +348,10 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
                 />
               )}
             </AnimatePresence>
-            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '2rem', fontWeight: 900, letterSpacing: '-0.02em', zIndex: 1, color: '#0f172a' }}>
+            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '2rem', fontWeight: 900, letterSpacing: '-0.02em', zIndex: 1, color: activeColor }}>
               {formatElapsed(displayElapsedSec)}
             </span>
-            <span style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#64748b', marginTop: 4, zIndex: 1 }}>
+            <span style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: activeColor, marginTop: 4, zIndex: 1 }}>
               {normalizeSubjectLabel(subject)}{phase === 'paused' ? ' · Paused' : ''}
             </span>
           </div>
@@ -483,6 +378,117 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
         </div>
       </div>
     </div>
+
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))', gap: 12 }}>
+      {subjectOptions.map((s) => {
+        const c = colorFor(s);
+        const selected = s === subject;
+        return (
+          <div
+            key={s}
+            style={{ position: 'relative', height: '100%' }}
+            onMouseEnter={() => setHoveredSubject(s)}
+            onMouseLeave={() => setHoveredSubject((cur) => (cur === s ? null : cur))}
+          >
+            <button
+              type="button"
+              onClick={() => handleSubjectChange(s)}
+              style={{
+                display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '14px 20px', borderRadius: 20,
+                border: selected ? `1px solid ${c}` : `1px solid ${c}33`,
+                background: selected ? c : `${c}1a`,
+                color: selected ? '#fff' : c,
+                fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer', transition: 'all .2s',
+                boxShadow: selected ? `0 10px 24px ${c}40` : `0 6px 16px ${c}14`,
+                width: '100%', height: '100%', boxSizing: 'border-box',
+              }}
+            >
+              {normalizeSubjectLabel(s)}
+            </button>
+
+            {hoveredSubject === s && (
+              <span
+                role="button"
+                tabIndex={0}
+                aria-label={`Change color for ${normalizeSubjectLabel(s)}`}
+                onClick={(e) => { e.stopPropagation(); setColorPickerFor((cur) => (cur === s ? null : s)); }}
+                style={{
+                  position: 'absolute', top: -7, left: -7, width: 20, height: 20, borderRadius: '50%',
+                  border: '2px solid #fff', background: c, color: '#fff',
+                  display: 'grid', placeItems: 'center', cursor: 'pointer', padding: 0,
+                  boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+                }}
+              />
+            )}
+
+            {hoveredSubject === s && subjectOptions.length > 1 && (
+              <button
+                type="button"
+                onClick={(e) => handleRemoveSubjectClick(s, e)}
+                aria-label={`Remove ${normalizeSubjectLabel(s)}`}
+                style={{
+                  position: 'absolute', top: -7, right: -7, width: 20, height: 20, borderRadius: '50%',
+                  border: '2px solid #fff', background: '#ef4444', color: '#fff',
+                  display: 'grid', placeItems: 'center', cursor: 'pointer', padding: 0,
+                  boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+                }}
+              >
+                <X size={11} strokeWidth={3} />
+              </button>
+            )}
+
+            <AnimatePresence>
+              {colorPickerFor === s && (
+                <motion.div
+                  initial={{ opacity: 0, y: -6, scale: 0.96 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: -6, scale: 0.96 }}
+                  transition={{ duration: 0.15 }}
+                  style={{
+                    position: 'absolute', top: 'calc(100% + 8px)', left: 0, zIndex: 20,
+                    background: '#fff', borderRadius: 16, padding: 10, boxShadow: '0 16px 40px rgba(30,27,75,0.25)',
+                    border: '1px solid #eceaf6', display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 6,
+                  }}
+                >
+                  {SUBJECT_COLOR_PALETTE.map((paletteColor) => (
+                    <button
+                      key={paletteColor}
+                      type="button"
+                      onClick={(e) => { e.stopPropagation(); onSetSubjectColor?.(s, paletteColor); setColorPickerFor(null); }}
+                      aria-label={`Set color ${paletteColor}`}
+                      style={{
+                        width: 22, height: 22, borderRadius: '50%', background: paletteColor, cursor: 'pointer',
+                        border: paletteColor === c ? '2px solid #1e1b4b' : '2px solid transparent', padding: 0,
+                      }}
+                    />
+                  ))}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+        );
+      })}
+
+      <button
+        type="button"
+        onClick={() => setAddModalOpen(true)}
+        aria-label="Add subject"
+        style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 60, padding: '14px 20px',
+          borderRadius: 20, border: '1px dashed #cbd5e1', background: '#f8fafc',
+          color: '#64748b', cursor: 'pointer',
+        }}
+      >
+        <Plus size={18} />
+      </button>
+    </div>
+
+    <AddSubjectModal
+      open={addModalOpen}
+      existingSubjects={subjectOptions}
+      onClose={() => setAddModalOpen(false)}
+      onPick={handlePickSubject}
+    />
 
     <AnimatePresence>
       {focusMode && (

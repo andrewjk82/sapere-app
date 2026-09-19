@@ -103,7 +103,7 @@ const StudyTimerPage = () => {
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="app-page">
       <div style={{ marginBottom: 20 }}>
-        <h1 style={{ margin: 0, fontSize: isMobile ? '1.5rem' : '1.9rem', fontWeight: 900, color: '#1e1b4b' }}>Study Timer</h1>
+        <h1 style={{ margin: 0, fontSize: isMobile ? '1.5rem' : '1.9rem', fontWeight: 900, color: '#1e1b4b' }}>Study Planner</h1>
         <p style={{ margin: '4px 0 0', color: '#64748b', fontWeight: 600, fontSize: '0.85rem' }}>
           Start the clock, pick a subject, and watch your progress add up.
         </p>

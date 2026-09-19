@@ -115,7 +115,7 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
         <SidebarItem icon={Timer} label="Times Table" active={activeTab === 'TimesTableSprint'} onClick={() => setActiveTab('TimesTableSprint')} disabled={isLocked && activeTab !== 'TimesTableSprint'} />
 
         {!isAdmin && (
-          <SidebarItem icon={Clock} label="Study Timer" active={activeTab === 'StudyTimer'} onClick={() => setActiveTab('StudyTimer')} disabled={isLocked} />
+          <SidebarItem icon={Clock} label="Study Planner" active={activeTab === 'StudyTimer'} onClick={() => setActiveTab('StudyTimer')} disabled={isLocked} />
         )}
 
         {!isAdmin && profile?.examPrepEnabled === true && (
