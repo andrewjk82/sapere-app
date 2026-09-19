@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pencil, X } from 'lucide-react';
+import { Pencil, X, Check } from 'lucide-react';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
 import { normalizeExamEntry, ddayFor, formatExamDate, formatExamTime } from '../../utils/examCountdown';
@@ -10,22 +10,25 @@ import { normalizeExamEntry, ddayFor, formatExamDate, formatExamTime } from '../
  * rather than listing every subject at once. Exam dates live on
  * users/{uid}.studySubjectExamDates, a map keyed by subject name (see
  * src/utils/examCountdown.js for the stored shape).
+ *
+ * Editing is a local draft — nothing is written to Firestore until Save is
+ * pressed; Cancel discards the draft and reverts to the last saved value.
  */
 const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetExamDate }) => {
-  const [editing, setEditing] = useState(false);
+  const [draft, setDraft] = useState(null); // { date, time } while editing, else null
 
   if (!subject) return null;
 
   const c = subjectColors[subject] || DEFAULT_SUBJECT_COLOR;
   const entry = normalizeExamEntry(examDates[subject]);
   const dday = ddayFor(entry);
+  const editing = draft !== null;
 
-  const handleDateChange = (e) => {
-    onSetExamDate?.(subject, { date: e.target.value, time: entry?.time || '' });
-  };
-  const handleTimeChange = (e) => {
-    if (!entry?.date) return;
-    onSetExamDate?.(subject, { date: entry.date, time: e.target.value });
+  const startEditing = () => setDraft({ date: entry?.date || '', time: entry?.time || '' });
+  const cancelEditing = () => setDraft(null);
+  const save = () => {
+    if (draft.date) onSetExamDate?.(subject, draft);
+    setDraft(null);
   };
 
   return (
@@ -48,8 +51,8 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
               <input
                 type="date"
                 autoFocus
-                value={entry?.date || ''}
-                onChange={handleDateChange}
+                value={draft.date}
+                onChange={(e) => setDraft((d) => ({ ...d, date: e.target.value }))}
                 style={{
                   padding: '8px 10px', borderRadius: 10, border: `1px solid ${c}55`,
                   fontSize: '0.85rem', outline: 'none', color: '#1e1b4b',
@@ -57,13 +60,13 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
               />
               <input
                 type="time"
-                value={entry?.time || ''}
-                disabled={!entry?.date}
-                onChange={handleTimeChange}
+                value={draft.time}
+                disabled={!draft.date}
+                onChange={(e) => setDraft((d) => ({ ...d, time: e.target.value }))}
                 style={{
                   padding: '8px 10px', borderRadius: 10, border: `1px solid ${c}55`,
                   fontSize: '0.85rem', outline: 'none', color: '#1e1b4b',
-                  opacity: entry?.date ? 1 : 0.5,
+                  opacity: draft.date ? 1 : 0.5,
                 }}
               />
             </div>
@@ -81,18 +84,48 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
           )}
         </div>
 
-        <button
-          type="button"
-          onClick={() => setEditing((cur) => !cur)}
-          aria-label={editing ? `Close exam date for ${normalizeSubjectLabel(subject)}` : `Set exam date for ${normalizeSubjectLabel(subject)}`}
-          style={{
-            background: editing ? '#fff' : c, border: editing ? `1px solid ${c}55` : 'none', cursor: 'pointer',
-            width: 36, height: 36, borderRadius: '50%', display: 'grid', placeItems: 'center', flexShrink: 0,
-            color: editing ? c : '#fff', boxShadow: editing ? 'none' : `0 6px 16px ${c}40`,
-          }}
-        >
-          {editing ? <X size={16} /> : <Pencil size={15} />}
-        </button>
+        {editing ? (
+          <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
+            <button
+              type="button"
+              onClick={cancelEditing}
+              aria-label={`Cancel editing exam date for ${normalizeSubjectLabel(subject)}`}
+              style={{
+                background: '#fff', border: `1px solid ${c}55`, cursor: 'pointer',
+                width: 36, height: 36, borderRadius: '50%', display: 'grid', placeItems: 'center',
+                color: c,
+              }}
+            >
+              <X size={16} />
+            </button>
+            <button
+              type="button"
+              onClick={save}
+              disabled={!draft.date}
+              aria-label={`Save exam date for ${normalizeSubjectLabel(subject)}`}
+              style={{
+                background: draft.date ? c : '#e2e8f0', border: 'none', cursor: draft.date ? 'pointer' : 'not-allowed',
+                width: 36, height: 36, borderRadius: '50%', display: 'grid', placeItems: 'center',
+                color: '#fff', boxShadow: draft.date ? `0 6px 16px ${c}40` : 'none',
+              }}
+            >
+              <Check size={16} />
+            </button>
+          </div>
+        ) : (
+          <button
+            type="button"
+            onClick={startEditing}
+            aria-label={`Set exam date for ${normalizeSubjectLabel(subject)}`}
+            style={{
+              background: c, border: 'none', cursor: 'pointer',
+              width: 36, height: 36, borderRadius: '50%', display: 'grid', placeItems: 'center', flexShrink: 0,
+              color: '#fff', boxShadow: `0 6px 16px ${c}40`,
+            }}
+          >
+            <Pencil size={15} />
+          </button>
+        )}
       </div>
     </div>
   );
