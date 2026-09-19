@@ -632,6 +632,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
 
         {!isAdmin && upcomingExams(profile?.studySubjectExamDates).map((next) => {
           const urgent = next.dday <= 7;
+          const c = profile?.studySubjectColors?.[next.subject] || (urgent ? '#f59e0b' : '#6366f1');
           return (
             <button
               key={next.subject}
@@ -642,9 +643,9 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                 margin: isMobile ? '0 0 16px' : '0 0 24px',
                 maxWidth: '100%',
                 padding: '20px 24px', borderRadius: '28px',
-                background: urgent ? 'linear-gradient(135deg, #f59e0b, #ef4444)' : 'linear-gradient(135deg, #6366f1, #4f46e5)',
+                background: `linear-gradient(135deg, ${c}, ${c}cc)`,
                 color: '#fff', border: 'none', cursor: 'pointer', textAlign: 'left',
-                boxShadow: urgent ? '0 15px 35px rgba(239,68,68,0.25)' : '0 15px 35px rgba(99,102,241,0.25)',
+                boxShadow: `0 15px 35px ${c}40`,
                 position: 'relative', overflow: 'hidden',
                 transition: 'transform 0.15s, box-shadow 0.15s',
               }}

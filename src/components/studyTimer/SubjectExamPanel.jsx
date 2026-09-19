@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Pencil, X, Check } from 'lucide-react';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
-import { normalizeExamEntry, ddayFor, formatExamDate, formatExamTime } from '../../utils/examCountdown';
+import { normalizeExamEntry, ddayFor, formatExamDate } from '../../utils/examCountdown';
 
 /**
  * Shows only the currently-selected subject's exam D-day — mirrors whichever
@@ -15,7 +15,7 @@ import { normalizeExamEntry, ddayFor, formatExamDate, formatExamTime } from '../
  * pressed; Cancel discards the draft and reverts to the last saved value.
  */
 const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetExamDate }) => {
-  const [draft, setDraft] = useState(null); // { date, time } while editing, else null
+  const [draft, setDraft] = useState(null); // date string while editing, else null
 
   if (!subject) return null;
 
@@ -24,10 +24,10 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
   const dday = ddayFor(entry);
   const editing = draft !== null;
 
-  const startEditing = () => setDraft({ date: entry?.date || '', time: entry?.time || '' });
+  const startEditing = () => setDraft(entry?.date || '');
   const cancelEditing = () => setDraft(null);
   const save = () => {
-    if (draft.date) onSetExamDate?.(subject, draft);
+    if (draft) onSetExamDate?.(subject, { date: draft, time: '' });
     setDraft(null);
   };
 
@@ -47,36 +47,23 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
         <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
           <span style={{ fontWeight: 800, fontSize: '0.95rem', color: c }}>{normalizeSubjectLabel(subject)}</span>
           {editing ? (
-            <div style={{ display: 'flex', gap: 8, marginTop: 4, flexWrap: 'wrap' }}>
-              <input
-                type="date"
-                autoFocus
-                value={draft.date}
-                onChange={(e) => setDraft((d) => ({ ...d, date: e.target.value }))}
-                style={{
-                  padding: '8px 10px', borderRadius: 10, border: `1px solid ${c}55`,
-                  fontSize: '0.85rem', outline: 'none', color: '#1e1b4b',
-                }}
-              />
-              <input
-                type="time"
-                value={draft.time}
-                disabled={!draft.date}
-                onChange={(e) => setDraft((d) => ({ ...d, time: e.target.value }))}
-                style={{
-                  padding: '8px 10px', borderRadius: 10, border: `1px solid ${c}55`,
-                  fontSize: '0.85rem', outline: 'none', color: '#1e1b4b',
-                  opacity: draft.date ? 1 : 0.5,
-                }}
-              />
-            </div>
+            <input
+              type="date"
+              autoFocus
+              value={draft}
+              onChange={(e) => setDraft(e.target.value)}
+              style={{
+                marginTop: 4, padding: '8px 10px', borderRadius: 10, border: `1px solid ${c}55`,
+                fontSize: '0.85rem', outline: 'none', color: '#1e1b4b',
+              }}
+            />
           ) : entry ? (
             <>
               <span style={{ fontSize: '1.6rem', fontWeight: 900, color: dday <= 0 ? '#ef4444' : dday <= 7 ? '#f59e0b' : c }}>
                 {dday > 0 ? `D-${dday}` : dday === 0 ? 'D-Day' : 'Past'}
               </span>
               <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#64748b' }}>
-                {formatExamDate(entry)}{entry.time ? ` · ${formatExamTime(entry)}` : ''}
+                {formatExamDate(entry)}
               </span>
             </>
           ) : (
@@ -101,12 +88,12 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
             <button
               type="button"
               onClick={save}
-              disabled={!draft.date}
+              disabled={!draft}
               aria-label={`Save exam date for ${normalizeSubjectLabel(subject)}`}
               style={{
-                background: draft.date ? c : '#e2e8f0', border: 'none', cursor: draft.date ? 'pointer' : 'not-allowed',
+                background: draft ? c : '#e2e8f0', border: 'none', cursor: draft ? 'pointer' : 'not-allowed',
                 width: 36, height: 36, borderRadius: '50%', display: 'grid', placeItems: 'center',
-                color: '#fff', boxShadow: draft.date ? `0 6px 16px ${c}40` : 'none',
+                color: '#fff', boxShadow: draft ? `0 6px 16px ${c}40` : 'none',
               }}
             >
               <Check size={16} />
