@@ -48,7 +48,7 @@ const RING_C = 2 * Math.PI * RING_R;
  * a student before double-running the timer on two devices, and stops this
  * device's session if another device takes it over while this tab was away.
  */
-const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSubjectColor, onAddSubject, onRemoveSubject, onFlushed }) => {
+const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSubjectColor, onAddSubject, onRemoveSubject, onFlushed, onSubjectChange }) => {
   const sessionKey = `${SESSION_KEY_PREFIX}${uid}`;
   const avatarUrl = useMemo(() => buildAvatarUrl(profile, uid), [profile, uid]);
   const subjectOptions = useMemo(
@@ -58,6 +58,11 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
   const colorFor = (s) => subjectColors[s] || DEFAULT_SUBJECT_COLOR;
 
   const [subject, setSubject] = useState(subjectOptions[0]);
+
+  // Let the parent page know which subject is currently active (e.g. to show
+  // that subject's exam countdown), without lifting all of this component's
+  // timer state up.
+  useEffect(() => { onSubjectChange?.(subject); }, [subject]); // eslint-disable-line react-hooks/exhaustive-deps
   const [addModalOpen, setAddModalOpen] = useState(false);
   const [hoveredSubject, setHoveredSubject] = useState(null);
   const [colorPickerFor, setColorPickerFor] = useState(null);

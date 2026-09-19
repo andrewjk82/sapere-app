@@ -7,6 +7,7 @@ import { useProfile } from '../../context/ProfileContext';
 import { useToast } from '../../context/ToastContext';
 import { randomSubjectColor } from '../../utils/subjectColors';
 import SubjectStopwatch from './SubjectStopwatch';
+import SubjectExamPanel from './SubjectExamPanel';
 import StudyStatsCharts from './StudyStatsCharts';
 import StudyTimeLeaderboard from './StudyTimeLeaderboard';
 
@@ -22,6 +23,7 @@ const StudyTimerPage = () => {
   const [isMobile] = useState(window.innerWidth < 768);
   const [myTotalSec, setMyTotalSec] = useState(null);
   const [lastFlush, setLastFlush] = useState(null); // { totalSec, subject, dateStr, deltaSec, hourBreakdown }
+  const [activeSubject, setActiveSubject] = useState(null); // mirrors SubjectStopwatch's selected subject
 
   const handleFlushed = (info) => {
     if (Number.isFinite(info?.totalSec)) setMyTotalSec(info.totalSec);
@@ -41,6 +43,17 @@ const StudyTimerPage = () => {
   }, [profile]);
 
   const subjectColors = profile?.studySubjectColors || {};
+  const examDates = profile?.studySubjectExamDates || {};
+
+  const handleSetExamDate = async (subjectName, dateStr) => {
+    if (!user?.uid) return;
+    try {
+      await setDoc(doc(db, 'users', user.uid), { studySubjectExamDates: { [subjectName]: dateStr } }, { merge: true });
+    } catch (e) {
+      console.warn('[studytime] exam date save failed:', e?.code || e);
+      showToast?.('Could not save that exam date — try again.', 'error');
+    }
+  };
   const assigningColorRef = useRef(new Set());
   const lastAssignedColorRef = useRef(null);
 
@@ -120,6 +133,13 @@ const StudyTimerPage = () => {
             onAddSubject={handleAddSubject}
             onRemoveSubject={handleRemoveSubject}
             onFlushed={handleFlushed}
+            onSubjectChange={setActiveSubject}
+          />
+          <SubjectExamPanel
+            subject={activeSubject || subjects[0]}
+            subjectColors={subjectColors}
+            examDates={examDates}
+            onSetExamDate={handleSetExamDate}
           />
           <StudyStatsCharts uid={user?.uid} lastFlush={lastFlush} subjectColors={subjectColors} />
         </div>
