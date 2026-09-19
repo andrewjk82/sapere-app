@@ -18156,35 +18156,37 @@
         },
         {
           "id": "y11-5g-q5e",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Do horizontal dilation and horizontal translation commute?",
-          "answer": "1",
+          "answer": 1,
           "hint": "Check the arguments of the function under both orders of transformations.",
-          "solution": "1",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Combining transformations: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-              "work": "Given data"
+              "explain": "Let's apply a horizontal translation by \\( c \\) followed by a horizontal dilation (replacing \\( x \\) with \\( kx \\)).",
+              "work": "\\text{Translation: } f(x) \\rightarrow f(x - c) \\\\ \\text{Dilation: } f(x - c) \\rightarrow f(kx - c)"
             },
             {
-              "explain": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-              "work": "Apply the appropriate standard form"
+              "explain": "Now, let's reverse the order: apply a horizontal dilation (replacing \\( x \\) with \\( kx \\)) followed by a horizontal translation by \\( c \\).",
+              "work": "\\text{Dilation: } f(x) \\rightarrow f(kx) \\\\ \\text{Translation: } f(kx) \\rightarrow f(k(x - c)) = f(kx - kc)"
             },
             {
-              "explain": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-              "work": "\\(1\\)"
+              "explain": "Compare the two resulting expressions.",
+              "work": "\\text{Since } f(kx - c) \\neq f(kx - kc) \\text{ (unless } k=1 \\text{ or } c=0 \\text{), the order of transformations changes the result.}"
             },
             {
-              "explain": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-              "work": "\\(1\\)"
+              "explain": "Conclude whether the transformations commute.",
+              "work": "\\text{Therefore, horizontal dilation and horizontal translation do not commute.}"
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
-          }
+          },
+          "options": [
+            "Yes, they commute.",
+            "No, they do not commute."
+          ]
         },
         {
           "id": "y11-5g-q5f",
