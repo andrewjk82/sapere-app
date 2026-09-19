@@ -9335,34 +9335,35 @@
         },
         {
           "id": "y11a-2e-q17",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Show that \\\\(\\\\frac{2}{6-3\\\\sqrt{3}} - \\\\frac{1}{2\\\\sqrt{3}+3}\\\\) is rational by first rationalising each denominator.",
-          "answer": "Step 1: Rationalise \\(\\frac{2}{6-3\\sqrt{3}}\\) by first factoring 3 from the denominator, then multiplying by the conjugate \\(2+\\sqrt{3}\\):\n\\[\\frac{2}{6-3\\sqrt{3}} = \\frac{2}{3(2-\\sqrt{3})} = \\frac{2(2+\\sqrt{3})}{3(2-\\sqrt{3})(2+\\sqrt{3})} = \\frac{4+2\\sqrt{3}}{3(4-3)} = \\frac{4+2\\sqrt{3}}{3}\\]\n\nStep 2: Rationalise \\(\\frac{1}{2\\sqrt{3}+3}\\) by multiplying by the conjugate \\(2\\sqrt{3}-3\\):\n\\[\\frac{2\\sqrt{3}-3}{(2\\sqrt{3}+3)(2\\sqrt{3}-3)} = \\frac{2\\sqrt{3}-3}{12-9} = \\frac{2\\sqrt{3}-3}{3}\\]\n\nStep 3: Subtract the two rationalised fractions (common denominator = 3):\n\\[\\frac{4+2\\sqrt{3}}{3} - \\frac{2\\sqrt{3}-3}{3} = \\frac{4+2\\sqrt{3}-2\\sqrt{3}+3}{3} = \\frac{7}{3}\\]\n\nThe surd terms cancel, leaving the rational number \\(\\frac{7}{3}\\). ✓",
-          "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\\\(a+\\\\sqrt{b}\\\\) is \\\\(a-\\\\sqrt{b}\\\\)). Multiplying a binomial surd by its conjugate uses \\\\((x+y)(x-y)=x^2-y^2\\\\) to eliminate the surd from the denominator.",
+          "stem": "What is \\( \\frac{2}{6-3\\sqrt{3}} - \\frac{1}{2\\sqrt{3}+3} \\)?",
+          "answer": 0,
+          "hint": "A conjugate is formed by flipping the sign between two terms in a binomial surd expression (e.g. the conjugate of \\(a+\\sqrt{b}\\) is \\(a-\\sqrt{b}\\)). Multiplying a binomial surd by its conjugate uses \\((x+y)(x-y)=x^2-y^2\\) to eliminate the surd from the denominator.",
           "steps": [
             {
               "explain": "Factor the first denominator to make the conjugate easier to spot, then rationalise using that conjugate.",
-              "work": "\\\\frac{2}{6-3\\\\sqrt{3}} = \\\\frac{2}{3(2-\\\\sqrt{3})} = \\\\frac{2(2+\\\\sqrt{3})}{3(4-3)} = \\\\frac{4+2\\\\sqrt{3}}{3}"
+              "work": "\\frac{2}{6-3\\sqrt{3}} = \\frac{2}{3(2-\\sqrt{3})} = \\frac{2(2+\\sqrt{3})}{3(4-3)} = \\frac{4+2\\sqrt{3}}{3}"
             },
             {
               "explain": "Rationalise the second fraction by multiplying by the conjugate of \\(2\\sqrt{3}+3\\), which is \\(2\\sqrt{3}-3\\).",
-              "work": "\\\\frac{2\\\\sqrt{3}-3}{(2\\\\sqrt{3}+3)(2\\\\sqrt{3}-3)} = \\\\frac{2\\\\sqrt{3}-3}{12-9} = \\\\frac{2\\\\sqrt{3}-3}{3}"
+              "work": "\\frac{2\\sqrt{3}-3}{(2\\sqrt{3}+3)(2\\sqrt{3}-3)} = \\frac{2\\sqrt{3}-3}{12-9} = \\frac{2\\sqrt{3}-3}{3}"
             },
             {
               "explain": "Subtract the two rationalised fractions, which now share a common denominator of 3.",
-              "work": "\\\\frac{4+2\\\\sqrt{3}}{3} - \\\\frac{2\\\\sqrt{3}-3}{3} = \\\\frac{4+2\\\\sqrt{3}-2\\\\sqrt{3}+3}{3}"
+              "work": "\\frac{4+2\\sqrt{3}}{3} - \\frac{2\\sqrt{3}-3}{3} = \\frac{4+2\\sqrt{3}-2\\sqrt{3}+3}{3}"
             },
             {
-              "explain": "Simplify the numerator: the surd terms cancel out, leaving a rational value.",
-              "work": "= \\\\frac{7}{3}"
-            },
-            {
-              "explain": "State the conclusion: since the expression simplifies to a fraction of two integers, it is rational.",
-              "work": "\\\\frac{7}{3} \\\\text{ is rational} \\\\checkmark"
+              "explain": "Simplify the numerator.",
+              "work": "= \\frac{7}{3}"
             }
           ],
-          "manual": true
+          "options": [
+            "\\( \\frac{7}{3} \\)",
+            "\\( \\frac{4}{3} \\)",
+            "\\( \\frac{5}{3} \\)",
+            "\\( \\frac{11}{3} \\)"
+          ]
         },
         {
           "id": "s2e_1",
