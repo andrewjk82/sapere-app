@@ -1146,32 +1146,57 @@
         },
         {
           "id": "y9-6a-10",
-          "type": "review",
+          "type": "multipart",
           "difficulty": "medium",
-          "stem": "The area \\(A\\) cm\\(^2\\) of a square with side length \\(x\\) cm is given by \\(A = x^2\\). If \\(A = 30\\), find:\na) the exact value of \\(x\\) (in surd form)\nb) the value of \\(x\\) correct to 2 decimal places.",
-          "answer": "a) \\(\\sqrt{30}\\), b) 5.48",
+          "stem": "The area \\(A\\) cm\\(^2\\) of a square with side length \\(x\\) cm is given by \\(A = x^2\\). If \\(A = 30\\), find:",
           "hint": "Substitute the given values into the formula and solve.",
-          "solution": "a) \\(\\sqrt{30}\\), b) 5.48",
-          "steps": [
+          "timeLimit": 180,
+          "parts": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Substitution into formulas: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(x = \\sqrt{30}\\)"
+              "id": "y9-6a-10a",
+              "type": "mc",
+              "stem": "the exact value of \\(x\\) (in surd form).",
+              "options": [
+                "\\(\\sqrt{30}\\)",
+                "\\(\\sqrt{15}\\)",
+                "15",
+                "900"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Substitute \\(A = 30\\) into the given formula.",
+                  "work": "30 = x^2"
+                },
+                {
+                  "explain": "Solve for \\(x\\) by taking the square root. Since side length must be positive, take the positive root.",
+                  "work": "x = \\sqrt{30}"
+                }
+              ]
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(x \\approx 5.48\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(a) \\(\\sqrt{30}\\), b) 5.48\\)"
-            },
-            {
-              "explain": "Final answer: a) \\(\\sqrt{30}\\), b) 5.48. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(a) \\(\\sqrt{30}\\), b) 5.48\\)"
+              "id": "y9-6a-10b",
+              "type": "mc",
+              "stem": "the value of \\(x\\) correct to 2 decimal places.",
+              "options": [
+                "5.48",
+                "5.47",
+                "5.50",
+                "15.00"
+              ],
+              "answer": 0,
+              "steps": [
+                {
+                  "explain": "Use a calculator to approximate \\(\\sqrt{30}\\).",
+                  "work": "x \\approx 5.47722..."
+                },
+                {
+                  "explain": "Round the result to 2 decimal places.",
+                  "work": "x \\approx 5.48"
+                }
+              ]
             }
-          ],
-          "manual": true,
-          "timeLimit": 180
+          ]
         },
         {
           "id": "y9-6a-11",
