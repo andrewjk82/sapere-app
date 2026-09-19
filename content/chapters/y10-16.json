@@ -663,32 +663,40 @@
         },
         {
           "id": "y10-16a-q10b",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "The surface area of a sphere, \\(A\\) cm\\(^2\\), is directly proportional to the square of the radius, \\(r\\) cm. What is the effect on the radius when the surface area is tripled?",
-          "answer": "The radius is multiplied by sqrt(3).",
+          "answer": 0,
           "hint": "Set \\(A' = 3A\\) and solve for the new \\(r\\).",
-          "solution": "The radius is multiplied by sqrt(3).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Direct proportion: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(A = kr^2\\)"
+              "explain": "Write down the relationship given by direct proportion.",
+              "work": "A = kr^2"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(3A = k(r')^2\\)"
+              "explain": "Let the new surface area be \\(A' = 3A\\) and the new radius be \\(r'\\). Write the equation for the new area.",
+              "work": "A' = k(r')^2 \\implies 3A = k(r')^2"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(3kr^2 = k(r')^2 \\implies (r')^2 = 3r^2\\)"
+              "explain": "Substitute \\(A = kr^2\\) into the equation.",
+              "work": "3(kr^2) = k(r')^2"
             },
             {
-              "explain": "Final answer: The radius is multiplied by sqrt(3).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "The radius is multiplied by sqrt(3)."
+              "explain": "Solve for \\(r'\\) in terms of \\(r\\).",
+              "work": "3r^2 = (r')^2 \\implies r' = \\sqrt{3}r"
+            },
+            {
+              "explain": "Conclude the effect on the radius.",
+              "work": "\\text{The radius is multiplied by } \\sqrt{3}."
             }
           ],
-          "manual": true,
-          "timeLimit": 90
+          "timeLimit": 90,
+          "options": [
+            "The radius is multiplied by \\( \\sqrt{3} \\).",
+            "The radius is multiplied by \\( 3 \\).",
+            "The radius is multiplied by \\( 9 \\).",
+            "The radius is divided by \\( \\sqrt{3} \\)."
+          ]
         },
         {
           "id": "y10-16a-q11a",
