@@ -297,34 +297,37 @@
         },
         {
           "id": "y8-19a-q4c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "Sue spent the following amounts on her lunch each day over the course of two working weeks:\n\n\\(\\$16, \\$8, \\$13, \\$49.50, \\$9.50, \\$13.50, \\$9, \\$11, \\$9.50, \\$10.50\\)\n\nCompare the median and mean and comment on which is the better indicator of how much Sue usually spent on her daily lunch.",
-          "answer": "The median ($10.75) is a better indicator of Sue's usual spending. This is because the mean ($14.95) is heavily skewed upwards by an outlier ($49.50), which is much higher than her other daily lunch costs.",
-          "hint": "Write a full structured solution for the teacher to mark.",
-          "solution": "The median ($10.75) is a better indicator of Sue's usual spending. This is because the mean ($14.95) is heavily skewed upwards by an outlier ($49.50), which is much higher than her other daily lunch costs.",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Let's review the two values we calculated in parts a) and b).",
-              "work": "\\(\\text{Median} = \\$10.75\\)\n\\(\\text{Mean} = \\$14.95\\)"
+              "explain": "First, state the median and mean calculated from the data.",
+              "work": "\\(\\text{Median} = \\$10.75, \\quad \\text{Mean} = \\$14.95\\)"
             },
             {
-              "explain": "Look closely at the original data. Most days, Sue spends between \\(\\$8\\) and \\(\\$16\\) on lunch. However, on one day she spent \\(\\$49.50\\). This unusually high number is called an **outlier**.",
-              "work": "\\text{Outlier: } \\$49.50"
+              "explain": "Identify the extreme value (outlier) in the dataset.",
+              "work": "\\(\\text{Outlier} = \\$49.50\\)"
             },
             {
-              "explain": "The mean calculates the average using the total sum, so this single huge outlier (\\(\\$49.50\\)) artificially pulls the mean way up to \\(\\$14.95\\). But if you look at the data, Sue rarely spends that much on a normal day.",
-              "work": "\\text{The mean is heavily skewed upwards by the outlier.}"
+              "explain": "The outlier significantly increases the mean, skewing it upwards.",
+              "work": "\\(\\text{Mean } (\\$14.95) > \\text{Median } (\\$10.75)\\)"
             },
             {
-              "explain": "The median (\\(\\$10.75\\)) only cares about the middle numbers when ordered, so it completely ignores how extreme the outlier is. Therefore, \\(\\$10.75\\) is a much better reflection of her \"usual\" daily spending.",
-              "work": "\\text{The median is a better indicator.}"
+              "explain": "Conclude which measure of center is more appropriate when an outlier is present.",
+              "work": "\\(\\text{The median is the better indicator.}\\)"
             }
           ],
-          "manual": true,
           "meta": {
             "origin": "teacher"
-          }
+          },
+          "options": [
+            "The median (\\(\\$10.75\\)) is a better indicator because the mean is heavily skewed upwards by the outlier (\\(\\$49.50\\)).",
+            "The mean (\\(\\$14.95\\)) is a better indicator because the median ignores the extreme value of \\(\\$49.50\\).",
+            "Both the mean and the median are equally good indicators of her usual spending.",
+            "The median is a better indicator because it is higher than the mean."
+          ]
         },
         {
           "id": "y8-19a-q5a",

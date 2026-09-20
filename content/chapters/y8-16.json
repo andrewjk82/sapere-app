@@ -1689,20 +1689,20 @@
               "answer": 3,
               "steps": [
                 {
-                  "explain": "Identify the total number of possible outcomes (the sample space).",
-                  "work": "\\\\text{Total outcomes} = 28 \\\\text{ (Total marbles = 14 (blue) + 6 (green) + 8 (purple) = 28 marbles.)}"
+                  "explain": "First, find the total number of marbles in the bag.",
+                  "work": "\\(14 + 6 + 8 = 28\\)"
                 },
                 {
-                  "explain": "Identify the number of favourable outcomes for the given event.",
-                  "work": "\\\\text{Favourable outcomes} = 14 \\\\text{ (There are 14 blue marbles.)}"
+                  "explain": "Identify the number of blue marbles, which are the favourable outcomes.",
+                  "work": "\\(\\text{Blue marbles} = 14\\)"
                 },
                 {
-                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
-                  "work": "\\\\text{Probability} = \\\\frac{14}{28}"
+                  "explain": "Calculate the probability of picking a blue marble by dividing the number of blue marbles by the total number of marbles.",
+                  "work": "\\(P(\\text{blue}) = \\frac{14}{28}\\)"
                 },
                 {
-                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
-                  "work": "\\\\text{Final answer: } \\\\frac{1}{2}"
+                  "explain": "Simplify the fraction.",
+                  "work": "\\(P(\\text{blue}) = \\frac{1}{2}\\)"
                 }
               ]
             },
@@ -1719,20 +1719,20 @@
               "answer": 2,
               "steps": [
                 {
-                  "explain": "Identify the total number of possible outcomes (the sample space).",
-                  "work": "\\\\text{Total outcomes} = 28 \\\\text{ (Total marbles = 28.)}"
+                  "explain": "Find the total number of marbles in the bag.",
+                  "work": "\\(14 + 6 + 8 = 28\\)"
                 },
                 {
-                  "explain": "Identify the number of favourable outcomes for the given event.",
-                  "work": "\\\\text{Favourable outcomes} = 6 \\\\text{ (There are 6 green marbles.)}"
+                  "explain": "Identify the number of green marbles.",
+                  "work": "\\(\\text{Green marbles} = 6\\)"
                 },
                 {
-                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
-                  "work": "\\\\text{Probability} = \\\\frac{6}{28}"
+                  "explain": "Calculate the probability of picking a green marble.",
+                  "work": "\\(P(\\text{green}) = \\frac{6}{28}\\)"
                 },
                 {
-                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
-                  "work": "\\\\text{Final answer: } \\\\frac{3}{14}"
+                  "explain": "Simplify the fraction.",
+                  "work": "\\(P(\\text{green}) = \\frac{3}{14}\\)"
                 }
               ]
             },
@@ -1749,27 +1749,26 @@
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Identify the total number of possible outcomes (the sample space).",
-                  "work": "\\\\text{Total outcomes} = 28 \\\\text{ (Total marbles = 28. To find \"not blue\", we can subtract the probability of \"blue\" from 1, or count the non-blue marbles.)}"
+                  "explain": "Find the total number of marbles in the bag.",
+                  "work": "\\(14 + 6 + 8 = 28\\)"
                 },
                 {
-                  "explain": "Identify the number of favourable outcomes for the given event.",
-                  "work": "\\\\text{Favourable outcomes} = 14 \\\\text{ (Non-blue marbles = 6 (green) + 8 (purple) = 14.)}"
+                  "explain": "Calculate the total number of marbles that are not blue.",
+                  "work": "\\(\\text{Not blue} = 6 + 8 = 14\\)"
                 },
                 {
-                  "explain": "Calculate the probability using the formula: \\\\( P(\\\\text{Event}) = \\\\frac{\\\\text{Favourable}}{\\\\text{Total}} \\\\)",
-                  "work": "\\\\text{Probability} = \\\\frac{14}{28}"
+                  "explain": "Calculate the probability of picking a marble that is not blue.",
+                  "work": "\\(P(\\text{not blue}) = \\frac{14}{28}\\)"
                 },
                 {
-                  "explain": "Simplify the fraction to its lowest terms to find the final answer.",
-                  "work": "\\\\text{Final answer: } \\\\frac{1}{2}"
+                  "explain": "Simplify the fraction.",
+                  "work": "\\(P(\\text{not blue}) = \\frac{1}{2}\\)"
                 }
               ]
             }
           ],
           "answer": "See sub-questions for individual answers.",
-          "hint": "Calculate the total number of marbles first, then determine the fraction for each event, simplifying where possible.",
-          "solution": "See individual step-by-step solutions for each sub-question."
+          "hint": "Calculate the total number of marbles first, then determine the fraction for each event, simplifying where possible."
         },
         {
           "id": "y8-16a-q23",

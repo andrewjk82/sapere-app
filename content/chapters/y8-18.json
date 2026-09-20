@@ -2449,7 +2449,7 @@
         },
         {
           "id": "y8-18i-q11a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
           "stem": "Find the \\(y\\)-intercept of this line by substituting \\(x = 0\\).\n\n\\(y = 5x + 2\\)",
           "figure": {
@@ -2465,12 +2465,11 @@
               "height": 280
             }
           },
-          "answer": "2",
+          "answer": 0,
           "hint": "Substitute \\(x = 0\\) into the equation.",
-          "solution": "2",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+              "explain": "To find the \\(y\\)-intercept of the line, substitute \\(x = 0\\) into the given linear equation.",
               "work": "\\(y = 5(0) + 2\\)",
               "figure": {
                 "jsxGraph": {
@@ -2487,21 +2486,22 @@
               }
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+              "explain": "Multiply \\(5\\) by \\(0\\).",
+              "work": "\\(y = 0 + 2\\)"
+            },
+            {
+              "explain": "Calculate the final value for \\(y\\), which is the \\(y\\)-intercept.",
               "work": "\\(y = 2\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(2\\)"
-            },
-            {
-              "explain": "Final answer: 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(2\\)"
             }
           ],
-          "manual": true,
           "alsoIn": [
             "exam:year8ch18i"
+          ],
+          "options": [
+            "\\(2\\)",
+            "\\(5\\)",
+            "\\(-2\\)",
+            "\\(0\\)"
           ]
         },
         {

@@ -2630,20 +2630,22 @@
             "\\(4\\)"
           ],
           "answer": 2,
-          "hint": "Get all \\(x\\) terms on one side by adding \\(5x\\) to both sides, then add \\(4\\) and divide by \\(8\\).",
-          "solution": "2",
           "steps": [
             {
-              "explain": "Add \\(5x\\) to both sides to gather the \\(x\\) terms on the left.",
-              "work": "\\(3x-4=-5x+12 \\Rightarrow 8x-4=12\\)"
+              "explain": "Write down the given equation.",
+              "work": "\\(3x - 4 = -5x + 12\\)"
+            },
+            {
+              "explain": "Add \\(5x\\) to both sides.",
+              "work": "\\(8x - 4 = 12\\)"
             },
             {
               "explain": "Add \\(4\\) to both sides.",
-              "work": "\\(8x=16\\)"
+              "work": "\\(8x = 16\\)"
             },
             {
-              "explain": "Divide both sides by \\(8\\).",
-              "work": "\\(x=2\\)"
+              "explain": "Divide both sides by \\(8\\) to solve for \\(x\\).",
+              "work": "\\(x = 2\\)"
             }
           ]
         },

@@ -4913,16 +4913,12 @@
               "answer": 2,
               "steps": [
                 {
-                  "explain": "Car A starts its trip at time t = 0.",
-                  "work": "t = 0"
+                  "explain": "Look at the starting point of Car A's graph (the blue line) at time \\(t = 0\\).",
+                  "work": "\\(\\text{The graph starts at } (0, 30)\\)"
                 },
                 {
-                  "explain": "Look at the starting coordinate pair (0, 30) for Car A.",
-                  "work": "(t, \\; d) = (0, \\; 30)"
-                },
-                {
-                  "explain": "Thus, the starting distance of Car A from Melbourne is 30 km.",
-                  "work": "d_{\\text{start}} = 30"
+                  "explain": "The vertical axis represents the distance from Melbourne.",
+                  "work": "\\(d_{\\text{start}} = 30 \\text{ km}\\)"
                 }
               ]
             },
@@ -4939,12 +4935,12 @@
               "answer": 3,
               "steps": [
                 {
-                  "explain": "Car A ends its trip at the coordinate point (2.5, 180).",
-                  "work": "(t, \\; d) = (2.5, \\; 180)"
+                  "explain": "Look at the finishing point of Car A's graph at the end of its trip.",
+                  "work": "\\(\\text{The graph ends at } (2.5, 180)\\)"
                 },
                 {
-                  "explain": "Read the distance value from the coordinates.",
-                  "work": "d_{\\text{finish}} = 180"
+                  "explain": "The vertical axis at this point gives the final distance from Melbourne.",
+                  "work": "\\(d_{\\text{finish}} = 180 \\text{ km}\\)"
                 }
               ]
             },
@@ -4961,12 +4957,12 @@
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Find the time taken by taking the difference between the finish and start times.",
-                  "work": "$t_{\\text{taken}} = t_{\\text{finish}} - t_{\\text{start}}$"
+                  "explain": "The time taken is the difference between the finish time and the start time on the horizontal axis.",
+                  "work": "\\(t_{\\text{taken}} = t_{\\text{finish}} - t_{\\text{start}}\\)"
                 },
                 {
-                  "explain": "Substitute the values: t = 2.5 at finish, and t = 0 at start.",
-                  "work": "t_{\\text{taken}} = 2.5 - 0 = 2.5"
+                  "explain": "Substitute the times from the graph.",
+                  "work": "\\(t_{\\text{taken}} = 2.5 - 0 = 2.5 \\text{ hours}\\)"
                 }
               ]
             },
@@ -4983,16 +4979,16 @@
               "answer": 0,
               "steps": [
                 {
-                  "explain": "First, determine the total distance traveled by Car A.",
-                  "work": "\\text{Distance} = 180 - 30 = 150"
+                  "explain": "First, find the total distance traveled by Car A by subtracting the starting distance from the finishing distance.",
+                  "work": "\\(\\text{Distance} = 180 - 30 = 150 \\text{ km}\\)"
                 },
                 {
-                  "explain": "The average speed is the total distance divided by the time taken.",
-                  "work": "$\\text{Speed} = \\dfrac{\\text{Distance}}{\\text{Time}} = \\dfrac{150}{2.5}$"
+                  "explain": "Average speed is the total distance divided by the total time taken.",
+                  "work": "\\(\\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}} = \\frac{150}{2.5}\\)"
                 },
                 {
                   "explain": "Evaluate the fraction.",
-                  "work": "\\text{Speed} = 60"
+                  "work": "\\(\\text{Speed} = 60 \\text{ km/h}\\)"
                 }
               ]
             },
@@ -5009,28 +5005,20 @@
               "answer": 1,
               "steps": [
                 {
-                  "explain": "A linear equation is written in the form d = mt + c.",
-                  "work": "d = mt + c"
+                  "explain": "The trip is represented by a straight line, which follows the linear equation \\(d = mt + c\\).",
+                  "work": "\\(d = mt + c\\)"
                 },
                 {
-                  "explain": "Substitute the gradient (speed) m = 60 and initial distance (intercept) c = 30.",
-                  "work": "m = 60, \\; c = 30"
+                  "explain": "The gradient \\(m\\) is the average speed we calculated, and the y-intercept \\(c\\) is the starting distance.",
+                  "work": "\\(m = 60, \\; c = 30\\)"
                 },
                 {
-                  "explain": "State the final equation for Car A.",
-                  "work": "d = 60t + 30"
+                  "explain": "Substitute these values into the linear equation.",
+                  "work": "\\(d = 60t + 30\\)"
                 }
               ]
             }
           ],
-          "options": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "answer": "0",
-          "manual": true,
           "timeLimit": 180,
           "meta": {
             "course": "Mathematics",
@@ -5177,14 +5165,6 @@
               ]
             }
           ],
-          "options": [
-            "",
-            "",
-            "",
-            ""
-          ],
-          "answer": "0",
-          "manual": true,
           "timeLimit": 180,
           "meta": {
             "course": "Mathematics",
