@@ -4899,13 +4899,13 @@
           "difficulty": "hard",
           "stem": "Solve the complex linear equation: \\\\(\\\\frac{3x - 1}{2} - \\\\frac{2x + 5}{3} = \\\\frac{x - 3}{4}\\\\)",
           "options": [
-            "\\\\(x = 12\\\\)",
-            "\\\\(x = 11\\\\)",
-            "\\\\(x = 10\\\\)",
-            "\\\\(x = 9\\\\)"
+            "\\(x = \\dfrac{17}{7}\\)",
+            "\\(x = -\\dfrac{17}{7}\\)",
+            "\\(x = \\dfrac{11}{7}\\)",
+            "\\(x = \\dfrac{15}{7}\\)"
           ],
-          "answer": 1,
-          "hint": "Find the LCD of 2, 3, and 4 (which is 12) and multiply the entire equation by it.",
+          "answer": 0,
+          "hint": "Find the LCD of 2, 3, and 4 (which is 12) and multiply the entire equation by it. Watch your signs carefully when expanding -4(2x+5).",
           "steps": [
             {
               "explain": "Identify the denominators 2, 3, and 4, and plan to multiply the entire equation by 12.",
@@ -4929,7 +4929,7 @@
             },
             {
               "explain": "Subtract 3x and add 26 to both sides.",
-              "work": "\\\\(7x = 17 \\Rightarrow x = \\frac{17}{7} \\approx 2.43\\\\)"
+              "work": "\\(7x = 17 \\Rightarrow x = \\dfrac{17}{7}\\)"
             }
           ]
         },
