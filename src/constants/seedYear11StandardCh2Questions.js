@@ -253,18 +253,6 @@ export const Y11S_CH2_QUESTIONS = [
     question: 'A square pyramid has a base side length of 8 cm and a perpendicular height of 9 cm. Find its volume.',
     options: ['\\( 192 \\text{ cm}^3 \\)', '\\( 576 \\text{ cm}^3 \\)', '\\( 64 \\text{ cm}^3 \\)', '\\( 288 \\text{ cm}^3 \\)'],
     answer: '0',
-    graphData: {
-      svg: `<svg viewBox="0 0 180 180" width="100%" height="auto" style="max-width:300px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;" xmlns="http://www.w3.org/2000/svg">
-        <path d="M90,150 L165,132 L90,40 Z" fill="#dbeafe" fill-opacity="0.6" stroke="#475569" stroke-width="2" stroke-linejoin="round"/>
-        <path d="M90,150 L15,132 L90,40 Z" fill="#fef3c7" fill-opacity="0.55" stroke="#475569" stroke-width="2" stroke-linejoin="round"/>
-        <path d="M15,132 L90,114 L165,132" fill="none" stroke="#94a3b8" stroke-width="1.3" stroke-dasharray="4 3"/>
-        <path d="M90,114 L90,40" stroke="#94a3b8" stroke-width="1.3" stroke-dasharray="4 3"/>
-        <path d="M90,150 L90,40" stroke="#64748b" stroke-width="1.2" stroke-dasharray="3 2"/>
-        <path d="M84,150 L84,144 L90,144" fill="none" stroke="#64748b" stroke-width="1.2"/>
-        <text x="128" y="148" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle">8 cm</text>
-        <text x="72" y="92" font-family="system-ui,-apple-system,sans-serif" font-size="12" font-weight="600" fill="#1e293b" text-anchor="middle">9 cm</text>
-      </svg>`,
-    },
     solutionSteps: [
       { explanation: 'Use the volume formula for a pyramid.', workingOut: '\\( V = \\dfrac{1}{3} \\times \\text{base area} \\times \\text{height} \\)' },
       { explanation: 'Substitute the base area \\( (8\\times8=64) \\) and height, then evaluate.', workingOut: '\\( V = \\dfrac{1}{3}(64)(9) = 192 \\text{ cm}^3 \\)' },

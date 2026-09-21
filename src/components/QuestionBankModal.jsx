@@ -1771,7 +1771,19 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     }
 
     try {
-      const selectedTopic = (chapter.topics || []).find(topic => topic.id === formData.topicId);
+      // Synthetic browsing chapters (global ID search, past-paper "type:",
+      // "exam:" drill-downs) carry no real `topics` list and no curriculum
+      // chapterId of their own — saving an EXISTING question opened this way
+      // used to stamp chapterId/chapterTitle from this fake wrapper
+      // ("search:jr2012" / 'Search: "jr2012"') and blank out topicId/topicCode
+      // /topicTitle, silently detaching the question from its real chapter and
+      // topic index. Editing a question found via search must preserve its
+      // own chapter/topic unless the teacher is in a real chapter/topic view.
+      const isSyntheticChapter = /^(search:|type:|exam:)/.test(chapter?.id || '');
+      const preserveOriginalTopic = isSyntheticChapter && !!editingQuestion;
+      const selectedTopic = preserveOriginalTopic
+        ? null
+        : (chapter.topics || []).find(topic => topic.id === formData.topicId);
       let graphData = null;
       if (formData.graphData && formData.graphData.trim()) {
         try {
@@ -1812,11 +1824,11 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       }
 
       const payload = stripUndefined({
-        chapterId: chapter.id,
-        chapterTitle: chapter.title,
-        topicId: selectedTopic?.id || '',
-        topicCode: selectedTopic?.code || '',
-        topicTitle: selectedTopic?.title || '',
+        chapterId: preserveOriginalTopic ? (editingQuestionChapterId || chapter.id) : chapter.id,
+        chapterTitle: preserveOriginalTopic ? (directEditQuestion?.chapterTitle || chapter.title) : chapter.title,
+        topicId: preserveOriginalTopic ? (formData.topicId || '') : (selectedTopic?.id || ''),
+        topicCode: preserveOriginalTopic ? (formData.topicCode || '') : (selectedTopic?.code || ''),
+        topicTitle: preserveOriginalTopic ? (formData.topicTitle || '') : (selectedTopic?.title || ''),
         isManual: true, // to distinguish from AI gen
         title: formData.title,
         question: formData.questionText,

@@ -539,36 +539,36 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "In an arithmetic series, the first term is 20 and the sum of the first 20 terms is 1160. Show that the 20th term is 96.",
+    "question": "In an arithmetic series, the first term is 20 and the sum of the first 20 terms is 1160. Find the 20th term.",
     "opts": [
-      "\\(-S_{20} = \\frac{20}{2}(20 + l) = 1160 \\Rightarrow 20 + l = 116 \\Rightarrow l = 96\\)",
-      "\\(S_{20} = \\frac{1}{2}(20 + l) = 1160 \\Rightarrow 20 + l = 116 \\Rightarrow l = 96\\)",
-      "\\(S_{20} = \\frac{20}{2}(20 + l) = 1160 \\Rightarrow 20 + l = 116 \\Rightarrow l = 96\\)",
-      "\\(S_{20} = \\frac{2}{20}(20 + l) = 1160 \\Rightarrow 20 + l = 116 \\Rightarrow l = 96\\)"
+      "\\(58\\)",
+      "\\(96\\)",
+      "\\(106\\)",
+      "\\(116\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "1",
     "hint": "Use $S_n = \\frac{n}{2}(a + l)$ where $l$ is the last term.",
-    "solution": "The correct answer is \\(S_{20} = \\frac{20}{2}(20 + l) = 1160 \\Rightarrow 20 + l = 116 \\Rightarrow l = 96\\).",
+    "solution": "The correct answer is \\(96\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "The sum of an arithmetic series can be written using the first and last terms: $S_n = \\dfrac{n}{2}(a+l)$, where $l$ is the last (20th) term. Substitute $n=20$, $a=20$, $S_{20}=1160$.",
         "workingOut": "\\(S_{20} = \\frac{20}{2}(20 + l) = 1160\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(10(20 + l) = 1160 \\Rightarrow 20 + l = 116 \\Rightarrow l = 96\\)",
+        "explanation": "Simplify the coefficient $\\frac{20}{2}=10$, then divide both sides by 10 to isolate $20+l$.",
+        "workingOut": "\\(10(20+l) = 1160 \\Rightarrow 20+l = 116\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(S_{20} = \\frac{20}{2}(20 + l) = 1160 \\Rightarrow 20 + l = 116 \\Rightarrow l = 96\\)",
+        "explanation": "Solve for the last term $l$ by subtracting 20 from both sides.",
+        "workingOut": "\\(l = 116 - 20 = 96\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: S_{20} = \\frac{20}{2}(20 + l) = 1160 \\Rightarrow 20 + l = 116 \\Rightarrow l = 96. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(S_{20} = \\frac{20}{2}(20 + l) = 1160 \\Rightarrow 20 + l = 116 \\Rightarrow l = 96\\)",
+        "explanation": "So the 20th term is $T_{20} = l = 96$. (Option A comes from mistakenly dividing $S_{20}$ by $n=20$ as if it were a simple average; option D stops at the intermediate value $20+l=116$ without subtracting 20.)",
+        "workingOut": "\\(T_{20} = 96\\)",
         "graphData": null
       }
     ],
@@ -586,10 +586,10 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "In an arithmetic series, the first term is 20 and the 20th term is 96. Find the common difference.",
     "opts": [
-      "\\(\\dfrac{12}{x + 2}\\)",
-      "\\(\\dfrac{13}{x + 3}\\)",
+      "\\(d = 3\\)",
+      "\\(d = -4\\)",
       "\\(d = 4\\)",
-      "\\(d = 4 + 1\\)"
+      "\\(d = 5\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -597,23 +597,18 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "solution": "The correct answer is \\(d = 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(T_{20} = 20 + (20-1)d \\Rightarrow 96 = 20 + 19d\\)",
+        "explanation": "Use $T_n = a+(n-1)d$ with $n=20$, $a=20$, $T_{20}=96$ (given/found in part (a)).",
+        "workingOut": "\\(T_{20} = a + (20-1)d \\Rightarrow 96 = 20 + 19d\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(19d = 76 \\Rightarrow d = 4\\)",
+        "explanation": "Subtract 20 from both sides to isolate the $19d$ term.",
+        "workingOut": "\\(96 - 20 = 19d \\Rightarrow 19d = 76\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(d = 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: d = 4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(d = 4\\)",
+        "explanation": "Divide both sides by 19 to solve for the common difference $d$.",
+        "workingOut": "\\(d = \\frac{76}{19} = 4\\)",
         "graphData": null
       }
     ],
@@ -631,10 +626,10 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "In an arithmetic series with first term 20 and common difference 4, find the sum of the first 35 terms.",
     "opts": [
-      "\\(\\dfrac{13}{x + 3}\\)",
+      "\\(S_{35} = 2730\\)",
       "\\(S_{35} = 3080\\)",
-      "\\(S_{35} = 3080 + 1\\)",
-      "\\(S_{45} = 4080\\)"
+      "\\(S_{35} = 3150\\)",
+      "\\(S_{35} = 3255\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -642,23 +637,18 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "solution": "The correct answer is \\(S_{35} = 3080\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(S_{35} = \\frac{35}{2}(2 \\times 20 + (35-1) \\times 4)\\)",
+        "explanation": "Use $S_n = \\dfrac{n}{2}(2a+(n-1)d)$ with $n=35$, $a=20$, $d=4$.",
+        "workingOut": "\\(S_{35} = \\frac{35}{2}\\big(2(20) + (35-1)(4)\\big)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(S_{35} = \\frac{35}{2}(40 + 136) = \\frac{35 \\times 176}{2} = 3080\\)",
+        "explanation": "Simplify inside the brackets: $2(20)=40$ and $(35-1)(4) = 34 \\times 4 = 136$.",
+        "workingOut": "\\(S_{35} = \\frac{35}{2}(40 + 136) = \\frac{35}{2}(176)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(S_{35} = 3080\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: S_{35} = 3080. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(S_{35} = 3080\\)",
+        "explanation": "Multiply 35 by 176, then divide by 2 to get the final sum.",
+        "workingOut": "\\(S_{35} = \\frac{35 \\times 176}{2} = \\frac{6160}{2} = 3080\\)",
         "graphData": null
       }
     ],
@@ -1539,26 +1529,26 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Consider the direction of the trend and how closely the points follow a line.",
-    "solution": "The correct answer is Strong, positive, linear association..",
+    "solution": "The correct answer is Strong, positive, linear association.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\text{Direction: positive}\\)",
+        "explanation": "The scatterplot shows an upward trend — as study hours $x$ increase, exam score $y$ also tends to increase — so the direction is positive.",
+        "workingOut": "\\(\\text{Trend: upward} \\Rightarrow \\text{positive direction}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{Strength: strong}\\)",
+        "explanation": "The strength is measured by $|r| = \\sqrt{R^2}$. Take the square root of the given $R^2 = 0.9901$.",
+        "workingOut": "\\(|r| = \\sqrt{0.9901} \\approx 0.995\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "Strong, positive, linear association.",
+        "explanation": "Since $|r| \\approx 0.995$ is very close to 1, the association is strong. The problem also states the points show a \"clear upward linear trend\", confirming a linear (not curved) pattern.",
+        "workingOut": "\\(|r| \\approx 0.995 \\Rightarrow \\text{strong; linear trend given} \\Rightarrow \\text{linear}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Strong, positive, linear association.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Strong, positive, linear association.",
+        "explanation": "Combine strength, direction, and pattern into the final description.",
+        "workingOut": "\\(\\text{Strong, positive, linear association}\\)",
         "graphData": null
       }
     ],
@@ -1574,36 +1564,36 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "For the study hours data, determine the equation of the least-squares regression line. Round values to 2 significant figures. (Data: $x$: 1.0, 1.0, 2.0, 3.0, 3.5, 4.0, 4.5, 5.0; $y$: 35, 38, 46, 58, 62, 68, 72, 77)",
+    "question": "The study hours data is shown below.\n\n\\begin{array}{c|cccccccc} x\\ (\\text{hours}) & 1.0 & 1.0 & 2.0 & 3.0 & 3.5 & 4.0 & 4.5 & 5.0 \\\\ \\hline y\\ (\\text{score}) & 35 & 38 & 46 & 58 & 62 & 68 & 72 & 77 \\end{array}\n\nDetermine the equation of the least-squares regression line. Round values to 2 significant figures.",
     "opts": [
-      "\\(y \\approx 8.5x + 27\\)",
-      "\\(y \\approx 8.5x + 27 + 1\\)",
-      "\\(y \\approx 8.5x + 47\\)",
-      "\\(y \\approx 8.5x - 27\\)"
+      "\\(y \\approx 10x + 26\\)",
+      "\\(y \\approx 5.1x + 26\\)",
+      "\\(y \\approx 10x + 46\\)",
+      "\\(y \\approx 10x - 26\\)"
     ],
     "a": 0,
     "answer": "0",
-    "hint": "Use a calculator in statistics mode to find the regression coefficients, rounded to 2 significant figures.",
-    "solution": "The correct answer is \\(y \\approx 8.5x + 27\\).",
+    "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute the regression coefficients directly.",
+    "solution": "The correct answer is \\(y \\approx 10x + 26\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(A \\approx 27, B \\approx 8.5\\)",
+        "explanation": "First, lay out the data in a table pairing each student's study hours $x$ with their exam score $y$ — this is exactly how the values will be entered into the calculator.",
+        "workingOut": "\\(\\begin{array}{c|cccccccc} x\\ (\\text{hours}) & 1.0 & 1.0 & 2.0 & 3.0 & 3.5 & 4.0 & 4.5 & 5.0 \\\\ \\hline y\\ (\\text{score}) & 35 & 38 & 46 & 58 & 62 & 68 & 72 & 77 \\end{array}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y \\approx 8.5x + 27\\)",
+        "explanation": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+        "workingOut": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y \\approx 8.5x + 27\\)",
+        "explanation": "Enter the $x$ values into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the $y$ values the same way. Once done, press $\\texttt{AC}$, then $\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{1:}A \\to \\texttt{=}$ for the intercept and $\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{2:}B \\to \\texttt{=}$ for the slope.",
+        "workingOut": "\\(A \\approx 26.27, \\quad B \\approx 10.24\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: y \\approx 8.5x + 27. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(y \\approx 8.5x + 27\\)",
+        "explanation": "Round $A$ and $B$ to 2 significant figures ($A \\approx 26$, $B \\approx 10$) and write the regression equation.",
+        "workingOut": "\\(y \\approx 10x + 26\\)",
         "graphData": null
       }
     ],
@@ -1619,36 +1609,31 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "A student who studied for 2.5 hours was absent during data collection. Predict their exam score using the regression line $y = 8.5x + 27$.",
+    "question": "A student who studied for 2.5 hours was absent during data collection. Predict their exam score using the regression line $y = 10x + 26$.",
     "opts": [
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
-      "\\(y \\approx 48.25\\) (about \\(48\\) marks)",
-      "\\(\\dfrac{13}{x + 3}\\)"
+      "\\(y \\approx 36\\) (about \\(36\\) marks)",
+      "\\(y \\approx 45\\) (about \\(45\\) marks)",
+      "\\(y \\approx 51\\) (about \\(51\\) marks)",
+      "\\(y \\approx 56\\) (about \\(56\\) marks)"
     ],
     "a": 2,
     "answer": "2",
     "hint": "Substitute $x = 2.5$ into the regression equation.",
-    "solution": "The correct answer is \\(y \\approx 48.25\\) (about \\(48\\) marks).",
+    "solution": "The correct answer is \\(y \\approx 51\\) (about \\(51\\) marks).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = 8.5(2.5) + 27 = 21.25 + 27 = 48.25 \\text{ marks}\\)",
+        "explanation": "Substitute $x = 2.5$ into the regression equation $y = 10x + 26$ found in the previous part.",
+        "workingOut": "\\(y = 10(2.5) + 26\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Multiply $10 \\times 2.5$ first.",
+        "workingOut": "\\(y = 25 + 26\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y \\approx 48.25\\) (about \\(48\\) marks)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: \\(y \\approx 48.25\\) (about \\(48\\) marks). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(y \\approx 48.25\\) (about \\(48\\) marks)",
+        "explanation": "Add to find the predicted exam score.",
+        "workingOut": "\\(y \\approx 51 \\text{ marks}\\)",
         "graphData": null
       }
     ],
@@ -1674,26 +1659,21 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Extrapolation goes beyond the range of the observed data.",
-    "solution": "The correct answer is The data only covers the range of approximately 1 to 5 hours. Extrapolating to 20 hours assumes the linear relationship continues far beyond the observed range, which is unreliable — there are likely diminishing returns and a score cannot exceed 100..",
+    "solution": "The correct answer is The data only covers the range of approximately 1 to 5 hours. Extrapolating to 20 hours assumes the linear relationship continues far beyond the observed range, which is unreliable — there are likely diminishing returns and a score cannot exceed 100.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\text{Extrapolation is unreliable beyond the observed data range}\\)",
+        "explanation": "A regression line is only fitted to, and only reliable within, the range of $x$-values actually observed in the data (here, roughly 1.0 to 5.0 hours of study).",
+        "workingOut": "\\(\\text{Regression line valid only within the observed data range}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Predicting $y$ at $x = 20$ hours is far outside that range, so it is extrapolation — there is no evidence the same linear pattern continues that far.",
+        "workingOut": "\\(20 \\text{ hours} \\gg \\text{observed range} \\Rightarrow \\text{extrapolation}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "The data only covers the range of approximately 1 to 5 hours. Extrapolating to 20 hours assumes the linear relationship continues far beyond the observed range, which is unreliable — there are likely diminishing returns and a score cannot exceed 100.",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: The data only covers the range of approximately 1 to 5 hours. Extrapolating to 20 hours assumes the linear relationship continues far beyond the observed range, which is unreliable — there are likely diminishing returns and a score cannot exceed 100.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "The data only covers the range of approximately 1 to 5 hours. Extrapolating to 20 hours assumes the linear relationship continues far beyond the observed range, which is unreliable — there are likely diminishing returns and a score cannot exceed 100.",
+        "explanation": "In this real-world context, exam scores are capped at 100 and are unlikely to keep increasing indefinitely with more study — there are likely diminishing returns, so a straight-line prediction would be unrealistic.",
+        "workingOut": "\\(\\text{Scores are bounded (max 100)} \\Rightarrow \\text{linear trend cannot continue indefinitely}\\)",
         "graphData": null
       }
     ],

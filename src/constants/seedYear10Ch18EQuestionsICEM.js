@@ -12,6 +12,74 @@
 // described shape (uniform / bell-shaped / U-shaped) — same approach used
 // for scanned diagrams throughout this chapter's other ICE-EM topics.
 
+// Simple bar chart: values on the x-axis, frequency as bar height. Used to
+// actually show charts (i), (ii), (iii) referenced in Q5, instead of only
+// describing them in text.
+// Modern bar chart: gradient bars with rounded tops, faint horizontal grid,
+// generous top margin so the title never collides with the tallest bar.
+const barChartSvg = (freqByValue, label, gradientId) => {
+  const values = Object.keys(freqByValue).map(Number).sort((a, b) => a - b);
+  const maxFreq = Math.max(...Object.values(freqByValue));
+  const x0 = 36;
+  const barW = 40;
+  const gap = 16;
+  const chartH = 130;
+  const titleY = 24;
+  const y0 = titleY + 40 + chartH; // axis baseline, well below the title
+  const radius = 8;
+  const x = (i) => x0 + i * (barW + gap);
+
+  const gridLines = Array.from({ length: 4 }, (_, i) => {
+    const frac = (i + 1) / 4;
+    const y = y0 - frac * chartH;
+    return `<line x1="${x0 - 8}" y1="${y}" x2="${x(values.length - 1) + barW + 8}" y2="${y}" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="3 4"/>`;
+  }).join('');
+
+  const bars = values
+    .map((v, i) => {
+      const f = freqByValue[v];
+      const h = Math.max((f / maxFreq) * chartH, 4);
+      const barTop = y0 - h;
+      // A rect with only its top corners rounded (path-based, since SVG rect
+      // rx rounds all four corners and would look odd sitting on a flat axis).
+      const r = Math.min(radius, barW / 2, h);
+      const path = `
+        M ${x(i)} ${barTop + r}
+        Q ${x(i)} ${barTop} ${x(i) + r} ${barTop}
+        L ${x(i) + barW - r} ${barTop}
+        Q ${x(i) + barW} ${barTop} ${x(i) + barW} ${barTop + r}
+        L ${x(i) + barW} ${y0}
+        L ${x(i)} ${y0}
+        Z
+      `;
+      return `
+      <path d="${path}" fill="url(#${gradientId})" stroke="#4f46e5" stroke-width="1" stroke-opacity="0.25"/>
+      <text x="${x(i) + barW / 2}" y="${barTop - 10}" font-family="system-ui" font-size="13" font-weight="700" fill="#4338ca" text-anchor="middle">${f}</text>
+      <text x="${x(i) + barW / 2}" y="${y0 + 22}" font-family="system-ui" font-size="13" font-weight="600" fill="#475569" text-anchor="middle">${v}</text>
+    `;
+    })
+    .join('');
+
+  const width = x0 + values.length * (barW + gap) + 20;
+  const height = y0 + 40;
+  return `<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+    <defs>
+      <linearGradient id="${gradientId}" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#818cf8"/>
+        <stop offset="100%" stop-color="#6366f1"/>
+      </linearGradient>
+    </defs>
+    <text x="${width / 2}" y="${titleY}" font-family="system-ui" font-size="13" font-weight="600" fill="#64748b" text-anchor="middle">${label}</text>
+    ${gridLines}
+    <line x1="${x0 - 8}" y1="${y0}" x2="${x(values.length - 1) + barW + 8}" y2="${y0}" stroke="#cbd5e1" stroke-width="1.5"/>
+    ${bars}
+  </svg>`;
+};
+
+const svgChartI = barChartSvg({ 4: 3, 5: 3, 6: 3, 7: 3, 8: 3 }, 'Bar chart (i)', 'ch18eBarGradI');
+const svgChartII = barChartSvg({ 4: 1, 5: 2, 6: 3, 7: 3, 8: 2, 9: 1 }, 'Bar chart (ii)', 'ch18eBarGradII');
+const svgChartIII = barChartSvg({ 3: 3, 4: 2, 5: 1, 6: 1, 7: 2, 8: 3 }, 'Bar chart (iii)', 'ch18eBarGradIII');
+
 export const Y10_CH18E_ICEM_QUESTIONS = [
   // ---- Q1: mean and SD of three data sets, then compare ----
   {
@@ -452,26 +520,38 @@ export const Y10_CH18E_ICEM_QUESTIONS = [
     ],
     a: 3,
     answer: '3',
-    hint: 'Use your calculator\'s statistics mode: enter each subject\'s 15 marks separately and read \\(\\bar{x}\\) and \\(\\sigma x\\) for each.',
-    solution: 'Maths: mean=242/15≈16.13, σ≈2.63. English: mean=238/15≈15.87, σ≈2.82.',
+    hint: 'Use your calculator\'s statistics mode (e.g. Casio fx-82AU PLUS): enter each subject\'s 15 marks as individual \\(x\\)-entries, then read \\(\\bar{x}\\) and \\(\\sigma x\\) for each from the STAT variable menu.',
+    solution: 'On a Casio fx-82AU PLUS: MODE → STAT → 1-VAR, enter the 15 Maths marks, read x̄≈16.13, σx≈2.63; clear and repeat for English to get x̄≈15.87, σx≈2.82.',
     solutionSteps: [
       {
-        explanation: 'Enter the 15 mathematics marks into your calculator\'s statistics mode (MODE → STAT → 1-VAR) and read off \\(\\bar{x}\\) and \\(\\sigma x\\).',
-        workingOut: '\\(\\bar{x}_{Maths} = \\dfrac{242}{15} \\approx 16.13, \\quad \\sigma_{Maths} \\approx 2.63\\)',
+        explanation:
+          'Put the calculator into statistics mode. On a Casio fx-82AU PLUS: press MODE, then select STAT (usually "2"), then select 1-VAR (usually "1"). This opens a table with an X column ready for data entry.',
+        workingOut: '\\(\\text{MODE} \\rightarrow \\text{STAT} \\rightarrow \\text{1-VAR}\\)',
         graphData: null,
       },
       {
-        explanation: 'Clear the data (SHIFT → CLR → Stat) and enter the 15 English marks the same way.',
-        workingOut: '\\(\\bar{x}_{English} = \\dfrac{238}{15} \\approx 15.87, \\quad \\sigma_{English} \\approx 2.82\\)',
+        explanation:
+          'Enter all 15 Mathematics marks into the X column in order, pressing \\(=\\) after every value to move to the next row. Repeated values (like 15, 18 and 19, which each occur more than once) are simply typed in again each time.',
+        workingOut: '\\(12,16,14,19,17,18,15,15,19,20,14,18,19,15,11\\)',
         graphData: null,
       },
       {
-        explanation: 'Pitfall: reading off the variance display instead of \\(\\sigma x\\), or selecting \\(sx\\) (which divides by n-1) instead of \\(\\sigma x\\), both give wrong-looking distractor values.',
-        workingOut: '\\(\\sigma x \\neq \\text{variance}, \\quad \\sigma x \\neq sx\\)',
+        explanation: 'Press AC to finish entering data, open the statistics variable menu, and read off \\(\\bar{x}\\) and \\(\\sigma x\\) (not \\(sx\\), which divides by n-1 and is a different value this course does not use).',
+        workingOut: '\\(\\text{AC} \\rightarrow \\text{SHIFT } 1 \\text{ (STAT)} \\rightarrow \\text{Var}\\)\\\\ \\(\\bar{x}_{Maths} \\approx 16.13, \\quad \\sigma_{Maths} \\approx 2.63\\)',
         graphData: null,
       },
       {
-        explanation: 'Final answer: Mathematics has mean 16.13 and SD 2.63; English has mean 15.87 and SD 2.82.',
+        explanation: 'Clear the stored data (SHIFT → CLR → Stat, or re-enter STAT mode fresh) so the old Maths data doesn\'t mix with the next data set, then enter all 15 English marks the same way.',
+        workingOut: '\\(10,13,16,19,20,19,18,16,15,14,17,11,15,18,17\\)',
+        graphData: null,
+      },
+      {
+        explanation: 'Press AC and read off \\(\\bar{x}\\) and \\(\\sigma x\\) for English.',
+        workingOut: '\\(\\bar{x}_{English} \\approx 15.87, \\quad \\sigma_{English} \\approx 2.82\\)',
+        graphData: null,
+      },
+      {
+        explanation: 'Final answer: Mathematics has mean 16.13 and SD 2.63; English has mean 15.87 and SD 2.82. Pitfall: forgetting to clear the first data set before entering the second is a common mistake that silently corrupts both results.',
         workingOut: '\\(\\text{Maths: } (16.13, 2.63), \\quad \\text{English: } (15.87, 2.82)\\)',
         graphData: null,
       },
@@ -596,31 +676,45 @@ export const Y10_CH18E_ICEM_QUESTIONS = [
     ],
     a: 3,
     answer: '3',
-    hint: 'Use your calculator\'s statistics mode: enter each value 4-8 with frequency 3.',
-    solution: 'mean = 90/15 = 6.00. Sum of squared deviations = 30. Variance = 2. SD = sqrt(2) ≈ 1.41.',
+    hint: 'Use your calculator\'s statistics mode (e.g. Casio fx-82AU PLUS): enter each value 4-8 with frequency 3, then read \\(\\bar{x}\\) and \\(\\sigma x\\) directly from the STAT variable menu.',
+    solution: 'On a Casio fx-82AU PLUS: MODE → STAT → 1-VAR, turn Frequency on, enter each x/f pair, then read x̄ = 6.00 and σx ≈ 1.41 from SHIFT 1 (STAT) → Var.',
     solutionSteps: [
       {
-        explanation: 'Enter the data into your calculator\'s statistics mode: values 4, 5, 6, 7, 8 each with frequency 3.',
-        workingOut: '\\(\\sum f_ix_i = 4(3)+5(3)+6(3)+7(3)+8(3) = 12+15+18+21+24 = 90\\)',
+        explanation:
+          'Put the calculator into statistics mode. On a Casio fx-82AU PLUS: press MODE, then select STAT (usually "2"), then select 1-VAR (usually "1"). This opens a table with an X column ready for data entry.',
+        workingOut: '\\(\\text{MODE} \\rightarrow \\text{STAT} \\rightarrow \\text{1-VAR}\\)',
+        graphData: { svg: svgChartI },
+      },
+      {
+        explanation:
+          'Turn on the frequency column so each value can be entered once alongside its frequency, instead of typing it in repeatedly. Press SHIFT then MODE (SETUP), scroll down to STAT, and turn Frequency ON. Re-enter STAT mode afterwards if needed.',
+        workingOut: '\\(\\text{SHIFT} \\rightarrow \\text{MODE (SETUP)} \\rightarrow \\text{STAT} \\rightarrow \\text{Frequency: On}\\)',
         graphData: null,
       },
       {
-        explanation: 'Divide by n = 15 to find the mean.',
-        workingOut: '\\(\\bar{x} = \\dfrac{90}{15} = 6.00\\)',
+        explanation:
+          'Enter each value in the X column and its frequency in the FREQ column, pressing \\(=\\) after each entry to move to the next row.',
+        workingOut: '\\(X: 4,5,6,7,8 \\quad \\text{FREQ}: 3,3,3,3,3\\)',
         graphData: null,
       },
       {
-        explanation: 'Read \\(\\sigma x\\) from the calculator\'s Var menu (or compute by hand: deviations -2,-1,0,1,2 each with frequency 3).',
-        workingOut: '\\(\\sum f(x-\\bar{x})^2 = 3(4+1+0+1+4) = 30, \\quad \\sigma^2 = \\dfrac{30}{15} = 2\\)',
+        explanation: 'Press AC to finish entering data, open the statistics variable menu, and select \\(\\bar{x}\\) to read the mean.',
+        workingOut: '\\(\\text{AC} \\rightarrow \\text{SHIFT } 1 \\text{ (STAT)} \\rightarrow \\text{Var} \\rightarrow \\bar{x}\\)\\\\ \\(\\bar{x} = 6.00\\)',
         graphData: null,
       },
       {
-        explanation: 'Final answer: take the square root.',
-        workingOut: '\\(\\sigma = \\sqrt{2} \\approx 1.41\\)',
+        explanation:
+          'Reopen the same menu and select \\(\\sigma x\\) (the population standard deviation — NOT \\(sx\\), which divides by n-1 and is a different value this course does not use).',
+        workingOut: '\\(\\text{SHIFT } 1 \\text{ (STAT)} \\rightarrow \\text{Var} \\rightarrow \\sigma x\\)',
+        graphData: null,
+      },
+      {
+        explanation: 'Final answer: the calculator gives both statistics directly. Pitfall: reading off the variance display (2.00) instead of \\(\\sigma x\\), or selecting \\(sx\\) instead of \\(\\sigma x\\) (which would give 1.46), are both common mix-ups.',
+        workingOut: '\\(\\bar{x} = 6.00, \\quad \\sigma x \\approx 1.41\\)',
         graphData: null,
       },
     ],
-    graphData: null,
+    graphData: { svg: svgChartI },
     isNew: true,
     requiresManualGrading: false,
   },
@@ -642,31 +736,39 @@ export const Y10_CH18E_ICEM_QUESTIONS = [
     ],
     a: 3,
     answer: '3',
-    hint: 'Use your calculator\'s statistics mode: enter each value 4-9 with its frequency.',
-    solution: 'mean = 78/12 = 6.50. Sum of squared deviations = 23. Variance ≈ 1.92. SD ≈ 1.38.',
+    hint: 'Use your calculator\'s statistics mode (e.g. Casio fx-82AU PLUS): enter each value 4-9 with its frequency, then read \\(\\bar{x}\\) and \\(\\sigma x\\) directly from the STAT variable menu.',
+    solution: 'On a Casio fx-82AU PLUS: MODE → STAT → 1-VAR, turn Frequency on, enter each x/f pair, then read x̄ = 6.50 and σx ≈ 1.38 from SHIFT 1 (STAT) → Var.',
     solutionSteps: [
       {
-        explanation: 'Enter the data into your calculator\'s statistics mode: values 4,5,6,7,8,9 with frequencies 1,2,3,3,2,1.',
-        workingOut: '\\(\\sum f_ix_i = 4+10+18+21+16+9 = 78\\)',
+        explanation:
+          'Put the calculator into statistics mode. On a Casio fx-82AU PLUS: press MODE, then select STAT (usually "2"), then select 1-VAR (usually "1"), and turn on the frequency column (SHIFT → MODE (SETUP) → STAT → Frequency: On) if it is not already showing.',
+        workingOut: '\\(\\text{MODE} \\rightarrow \\text{STAT} \\rightarrow \\text{1-VAR}\\)',
+        graphData: { svg: svgChartII },
+      },
+      {
+        explanation:
+          'Enter each value in the X column and its frequency in the FREQ column, pressing \\(=\\) after each entry to move to the next row.',
+        workingOut: '\\(X: 4,5,6,7,8,9 \\quad \\text{FREQ}: 1,2,3,3,2,1\\)',
         graphData: null,
       },
       {
-        explanation: 'Divide by n = 12 to find the mean.',
-        workingOut: '\\(\\bar{x} = \\dfrac{78}{12} = 6.50\\)',
+        explanation: 'Press AC to finish entering data, open the statistics variable menu, and select \\(\\bar{x}\\) to read the mean.',
+        workingOut: '\\(\\text{AC} \\rightarrow \\text{SHIFT } 1 \\text{ (STAT)} \\rightarrow \\text{Var} \\rightarrow \\bar{x}\\)\\\\ \\(\\bar{x} = 6.50\\)',
         graphData: null,
       },
       {
-        explanation: 'Read \\(\\sigma x\\) from the calculator\'s Var menu.',
-        workingOut: '\\(\\sum f(x-\\bar{x})^2 = 23, \\quad \\sigma^2 = \\dfrac{23}{12} \\approx 1.92\\)',
+        explanation:
+          'Reopen the same menu and select \\(\\sigma x\\) (the population standard deviation — NOT \\(sx\\), which divides by n-1 and is a different value this course does not use).',
+        workingOut: '\\(\\text{SHIFT } 1 \\text{ (STAT)} \\rightarrow \\text{Var} \\rightarrow \\sigma x\\)',
         graphData: null,
       },
       {
-        explanation: 'Final answer: take the square root.',
-        workingOut: '\\(\\sigma = \\sqrt{1.92} \\approx 1.38\\)',
+        explanation: 'Final answer: the calculator gives both statistics directly. Pitfall: selecting \\(sx\\) instead of \\(\\sigma x\\) gives the close-but-wrong distractor 1.45.',
+        workingOut: '\\(\\bar{x} = 6.50, \\quad \\sigma x \\approx 1.38\\)',
         graphData: null,
       },
     ],
-    graphData: null,
+    graphData: { svg: svgChartII },
     isNew: true,
     requiresManualGrading: false,
   },
@@ -688,31 +790,39 @@ export const Y10_CH18E_ICEM_QUESTIONS = [
     ],
     a: 3,
     answer: '3',
-    hint: 'Use your calculator\'s statistics mode: enter each value 3-8 with its frequency.',
-    solution: 'mean = 66/12 = 5.50. Sum of squared deviations = 47. Variance ≈ 3.92. SD ≈ 1.98.',
+    hint: 'Use your calculator\'s statistics mode (e.g. Casio fx-82AU PLUS): enter each value 3-8 with its frequency, then read \\(\\bar{x}\\) and \\(\\sigma x\\) directly from the STAT variable menu.',
+    solution: 'On a Casio fx-82AU PLUS: MODE → STAT → 1-VAR, turn Frequency on, enter each x/f pair, then read x̄ = 5.50 and σx ≈ 1.98 from SHIFT 1 (STAT) → Var.',
     solutionSteps: [
       {
-        explanation: 'Enter the data into your calculator\'s statistics mode: values 3,4,5,6,7,8 with frequencies 3,2,1,1,2,3.',
-        workingOut: '\\(\\sum f_ix_i = 9+8+5+6+14+24 = 66\\)',
+        explanation:
+          'Put the calculator into statistics mode. On a Casio fx-82AU PLUS: press MODE, then select STAT (usually "2"), then select 1-VAR (usually "1"), and turn on the frequency column (SHIFT → MODE (SETUP) → STAT → Frequency: On) if it is not already showing.',
+        workingOut: '\\(\\text{MODE} \\rightarrow \\text{STAT} \\rightarrow \\text{1-VAR}\\)',
+        graphData: { svg: svgChartIII },
+      },
+      {
+        explanation:
+          'Enter each value in the X column and its frequency in the FREQ column, pressing \\(=\\) after each entry to move to the next row.',
+        workingOut: '\\(X: 3,4,5,6,7,8 \\quad \\text{FREQ}: 3,2,1,1,2,3\\)',
         graphData: null,
       },
       {
-        explanation: 'Divide by n = 12 to find the mean.',
-        workingOut: '\\(\\bar{x} = \\dfrac{66}{12} = 5.50\\)',
+        explanation: 'Press AC to finish entering data, open the statistics variable menu, and select \\(\\bar{x}\\) to read the mean.',
+        workingOut: '\\(\\text{AC} \\rightarrow \\text{SHIFT } 1 \\text{ (STAT)} \\rightarrow \\text{Var} \\rightarrow \\bar{x}\\)\\\\ \\(\\bar{x} = 5.50\\)',
         graphData: null,
       },
       {
-        explanation: 'Read \\(\\sigma x\\) from the calculator\'s Var menu. Notice this "U-shaped" distribution has a much larger SD than the bell-shaped one in the previous question, despite having a similar range — the U-shape packs its values away from the centre.',
-        workingOut: '\\(\\sum f(x-\\bar{x})^2 = 47, \\quad \\sigma^2 = \\dfrac{47}{12} \\approx 3.92\\)',
+        explanation:
+          'Reopen the same menu and select \\(\\sigma x\\) (the population standard deviation — NOT \\(sx\\), which divides by n-1 and is a different value this course does not use). Notice this "U-shaped" distribution has a much larger SD than the bell-shaped one in the previous question, despite having a similar range — the U-shape packs its values away from the centre.',
+        workingOut: '\\(\\text{SHIFT } 1 \\text{ (STAT)} \\rightarrow \\text{Var} \\rightarrow \\sigma x\\)',
         graphData: null,
       },
       {
-        explanation: 'Final answer: take the square root.',
-        workingOut: '\\(\\sigma = \\sqrt{3.92} \\approx 1.98\\)',
+        explanation: 'Final answer: the calculator gives both statistics directly. Pitfall: selecting \\(sx\\) instead of \\(\\sigma x\\) gives the close-but-wrong distractor 2.07.',
+        workingOut: '\\(\\bar{x} = 5.50, \\quad \\sigma x \\approx 1.98\\)',
         graphData: null,
       },
     ],
-    graphData: null,
+    graphData: { svg: svgChartIII },
     isNew: true,
     requiresManualGrading: false,
   },
@@ -740,7 +850,7 @@ export const Y10_CH18E_ICEM_QUESTIONS = [
       {
         explanation: 'Adding a constant c to every value in a data set shifts the mean by exactly c, since the mean is just the (shifted) total divided by n.',
         workingOut: '\\(\\bar{x}_{new} = \\bar{x}_{old} + 5 = 6.00 + 5 = 11.00\\)',
-        graphData: null,
+        graphData: { svg: svgChartI },
       },
       {
         explanation: 'Consider what happens to each deviation from the mean: if every value shifts by 5 AND the mean shifts by 5, the difference between each value and the mean is unchanged.',
@@ -758,7 +868,7 @@ export const Y10_CH18E_ICEM_QUESTIONS = [
         graphData: null,
       },
     ],
-    graphData: null,
+    graphData: { svg: svgChartI },
     isNew: true,
     requiresManualGrading: false,
   },
@@ -786,7 +896,7 @@ export const Y10_CH18E_ICEM_QUESTIONS = [
       {
         explanation: 'Multiplying every value in a data set by a constant k multiplies the mean by the same k, since the mean is the (scaled) total divided by n.',
         workingOut: '\\(\\bar{x}_{new} = 2 \\times \\bar{x}_{old} = 2 \\times 6.00 = 12.00\\)',
-        graphData: null,
+        graphData: { svg: svgChartI },
       },
       {
         explanation: 'Consider what happens to each deviation from the mean: if every value doubles AND the mean doubles, the gap between each value and the mean also doubles.',
@@ -804,7 +914,7 @@ export const Y10_CH18E_ICEM_QUESTIONS = [
         graphData: null,
       },
     ],
-    graphData: null,
+    graphData: { svg: svgChartI },
     isNew: true,
     requiresManualGrading: false,
   },

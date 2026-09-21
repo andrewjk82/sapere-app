@@ -65,23 +65,18 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "solution": "The correct answer is A moderate negative correlation.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\text{Direction: negative (downward trend)}\\)",
+        "explanation": "Determine the direction of the correlation first. Points trending downward from left to right (as $x$ increases, $y$ decreases) means the correlation is negative.",
+        "workingOut": "\\(\\text{Direction: as } x \\uparrow, y \\downarrow \\Rightarrow \\text{negative correlation}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{Strength: moderate}\\)",
+        "explanation": "Determine the strength from the spread of points around the trend line. A tight cluster close to the line is strong; a wide, loose scatter is weak. \"Moderate spread\" sits in between — neither tightly hugging the line nor scattered randomly.",
+        "workingOut": "\\(\\text{Spread: moderate} \\Rightarrow \\text{moderate strength}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Correlation} = \\text{moderate negative}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: A moderate negative correlation. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "A moderate negative correlation",
+        "explanation": "Combine the direction and strength: a negative direction with moderate strength gives a moderate negative correlation.",
+        "workingOut": "\\(\\text{negative} + \\text{moderate} \\Rightarrow \\text{moderate negative correlation}\\)",
         "graphData": null
       }
     ],
@@ -1335,31 +1330,41 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Charlotte recorded the height $H$ (metres) of a tree at years $t = 1, 2, 3, 4, 6, 7, 8, 9$ since planting, getting values $0.7, 1.4, 2.4, 3.5, 6.6, 7.9, 8.7, 9.5$. What is the correlation coefficient for this data (correct to 4 decimal places)?",
+    "question": "Charlotte recorded the height $H$ (metres) of a tree at various years $t$ since planting:\n\n\\begin{array}{c|cccccccc} t\\ (\\text{years}) & 1 & 2 & 3 & 4 & 6 & 7 & 8 & 9 \\\\ \\hline H\\ (\\text{m}) & 0.7 & 1.4 & 2.4 & 3.5 & 6.6 & 7.9 & 8.7 & 9.5 \\end{array}\n\nWhat is the correlation coefficient for this data (correct to 4 decimal places)?",
     "opts": [
-      "\\(r \\approx 0.9936\\)",
+      "\\(r \\approx 0.9952\\)",
       "\\(r \\approx 0.9814\\)",
       "\\(r \\approx 0.9999\\)",
       "\\(r \\approx 0.9567\\)"
     ],
     "a": 0,
     "answer": "0",
-    "hint": "Use technology (calculator or software) to compute Pearson's correlation coefficient.",
-    "solution": "The correct answer is \\(r \\approx 0.9936\\).",
+    "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute Pearson's correlation coefficient directly.",
+    "solution": "The correct answer is \\(r \\approx 0.9952\\).",
     "solutionSteps": [
       {
-        "explanation": "Enter the \\(t\\) values (years) and \\(H\\) values (heights) into a calculator or spreadsheet as two lists.",
-        "workingOut": "t: 1, 2, 3, 4, 6, 7, 8, 9",
+        "explanation": "First, lay out the data in a table pairing each year $t$ with the tree height $H$ — this is exactly how the values will be entered into the calculator.",
+        "workingOut": "\\(\\begin{array}{c|cccccccc} t\\ (\\text{years}) & 1 & 2 & 3 & 4 & 6 & 7 & 8 & 9 \\\\ \\hline H\\ (\\text{m}) & 0.7 & 1.4 & 2.4 & 3.5 & 6.6 & 7.9 & 8.7 & 9.5 \\end{array}\\)",
         "graphData": null
       },
       {
-        "explanation": "Use the statistics or linear regression function on the calculator to compute Pearson's correlation coefficient \\(r\\).",
-        "workingOut": "\\(r = \\text{CORR}(t, H)\\)",
+        "explanation": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+        "workingOut": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)",
         "graphData": null
       },
       {
-        "explanation": "Since \\(r\\) is very close to 1, this indicates a very strong positive linear relationship between years since planting and tree height.",
-        "workingOut": "\\(r \\approx 0.9936 \\approx 1 \\Rightarrow \\text{very strong positive linear correlation}\\)",
+        "explanation": "Enter the $t$ values into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the $H$ values the same way.",
+        "workingOut": "\\(X: 1\\texttt{=}\\ 2\\texttt{=}\\ 3\\texttt{=}\\ 4\\texttt{=}\\ 6\\texttt{=}\\ 7\\texttt{=}\\ 8\\texttt{=}\\ 9\\texttt{=} \\qquad Y: 0.7\\texttt{=}\\ 1.4\\texttt{=}\\ 2.4\\texttt{=}\\ 3.5\\texttt{=}\\ 6.6\\texttt{=}\\ 7.9\\texttt{=}\\ 8.7\\texttt{=}\\ 9.5\\texttt{=}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Once all 8 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg} \\to \\texttt{3:}r$, then press $\\texttt{=}$ to display the correlation coefficient.",
+        "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{3:}r \\to \\texttt{=}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The calculator displays $r$ correct to several decimal places. Since $r$ is very close to 1, this indicates a very strong positive linear relationship between years since planting and tree height.",
+        "workingOut": "\\(r \\approx 0.9952 \\Rightarrow \\text{very strong positive linear correlation}\\)",
         "graphData": null
       }
     ],
@@ -1375,31 +1380,41 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Find the equation of the least-squares line of best fit for the tree height data, where $H = A + Bt$. Give $A$ and $B$ correct to 2 decimal places.",
+    "question": "Charlotte's tree height data is shown below.\n\n\\begin{array}{c|cccccccc} t\\ (\\text{years}) & 1 & 2 & 3 & 4 & 6 & 7 & 8 & 9 \\\\ \\hline H\\ (\\text{m}) & 0.7 & 1.4 & 2.4 & 3.5 & 6.6 & 7.9 & 8.7 & 9.5 \\end{array}\n\nFind the equation of the least-squares line of best fit, where $H = A + Bt$. Give $A$ and $B$ correct to 2 decimal places.",
     "opts": [
-      "\\(H = -0.94 + 1.17t\\)",
-      "\\(H = 0.94 + 1.17t\\)",
-      "\\(H = -0.94 + 0.17t\\)",
-      "\\(H = 1.17 - 0.94t\\)"
+      "\\(H = -0.85 + 1.19t\\)",
+      "\\(H = 0.85 + 1.19t\\)",
+      "\\(H = -0.85 + 0.19t\\)",
+      "\\(H = 1.19 - 0.85t\\)"
     ],
     "a": 0,
     "answer": "0",
-    "hint": "Use a calculator to perform linear regression on the data.",
-    "solution": "The correct answer is \\(H = -0.94 + 1.17t\\).",
+    "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute the regression coefficients directly.",
+    "solution": "The correct answer is \\(H = -0.85 + 1.19t\\).",
     "solutionSteps": [
       {
-        "explanation": "With the data already entered in the calculator, run the linear regression (LinReg) function. This finds the line \\(H = A + Bt\\) that best fits the data by minimising the sum of squared residuals.",
-        "workingOut": "\\(\\text{LinReg}(t, H) \\to A, B\\)",
+        "explanation": "First, lay out the data in a table pairing each year $t$ with the tree height $H$ — this is exactly how the values will be entered into the calculator.",
+        "workingOut": "\\(\\begin{array}{c|cccccccc} t\\ (\\text{years}) & 1 & 2 & 3 & 4 & 6 & 7 & 8 & 9 \\\\ \\hline H\\ (\\text{m}) & 0.7 & 1.4 & 2.4 & 3.5 & 6.6 & 7.9 & 8.7 & 9.5 \\end{array}\\)",
         "graphData": null
       },
       {
-        "explanation": "The calculator returns the \\(y\\)-intercept \\(A \\approx -0.94\\) (to 2 decimal places). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(A \\approx -0.94\\)",
+        "explanation": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+        "workingOut": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)",
         "graphData": null
       },
       {
-        "explanation": "The calculator returns the slope \\(B \\approx 1.17\\) (to 2 decimal places). This means the tree grows approximately 1.17 m per year on average.",
-        "workingOut": "\\(B \\approx 1.17\\)",
+        "explanation": "Enter the $t$ values (independent variable) into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the $H$ values (dependent variable) the same way.",
+        "workingOut": "\\(X: 1\\texttt{=}\\ 2\\texttt{=}\\ 3\\texttt{=}\\ 4\\texttt{=}\\ 6\\texttt{=}\\ 7\\texttt{=}\\ 8\\texttt{=}\\ 9\\texttt{=} \\qquad Y: 0.7\\texttt{=}\\ 1.4\\texttt{=}\\ 2.4\\texttt{=}\\ 3.5\\texttt{=}\\ 6.6\\texttt{=}\\ 7.9\\texttt{=}\\ 8.7\\texttt{=}\\ 9.5\\texttt{=}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Once all 8 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg}$. Select $\\texttt{1:}A$ to display the intercept, then repeat and select $\\texttt{2:}B$ to display the slope.",
+        "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{1:}A \\to \\texttt{=}; \\quad \\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{2:}B \\to \\texttt{=}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The calculator displays $A \\approx -0.85$ (intercept) and $B \\approx 1.19$ (slope). Since $H$ is the dependent variable, write the equation as $H = A + Bt$.",
+        "workingOut": "\\(H = -0.85 + 1.19t\\)",
         "graphData": null
       }
     ],
@@ -1415,36 +1430,31 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Using $H = -0.94 + 1.17t$, approximately how many years will it take the tree to reach a height of 20 metres? Answer correct to 1 decimal place.",
+    "question": "Using $H = -0.85 + 1.19t$, approximately how many years will it take the tree to reach a height of 20 metres? Answer correct to 1 decimal place.",
     "opts": [
-      "\\(17.9 years\\)",
-      "\\(15.2 years\\)",
-      "\\(18.5 years\\)",
-      "\\(20.0 years\\)"
+      "\\(17.5 \\text{ years}\\)",
+      "\\(15.2 \\text{ years}\\)",
+      "\\(18.5 \\text{ years}\\)",
+      "\\(20.0 \\text{ years}\\)"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Substitute $H = 20$ and solve for $t$.",
-    "solution": "The correct answer is \\(17.9 years\\).",
+    "solution": "The correct answer is \\(17.5 \\text{ years}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(20 = -0.94 + 1.17t\\)",
+        "explanation": "Substitute $H = 20$ into the least-squares line found in part (ii).",
+        "workingOut": "\\(20 = -0.85 + 1.19t\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(20 + 0.94 = 1.17t \\Rightarrow 20.94 = 1.17t\\)",
+        "explanation": "Add 0.85 to both sides to isolate the $1.19t$ term.",
+        "workingOut": "\\(20 + 0.85 = 1.19t \\Rightarrow 20.85 = 1.19t\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(t = \\frac{20.94}{1.17} \\approx 17.9 \\text{ years}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 17.9 years. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(17.9 years\\)",
+        "explanation": "Divide both sides by 1.19 to solve for $t$.",
+        "workingOut": "\\(t = \\frac{20.85}{1.19} \\approx 17.5 \\text{ years}\\)",
         "graphData": null
       }
     ],
@@ -1466,23 +1476,18 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "solution": "As \\(t\\) increases, tree growth may not continue in a linear fashion (e.g., growth slows as the tree matures), so the model is unreliable for long-term extrapolation.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "The linear model $H = -0.85 + 1.19t$ was fitted using data only over the observed range, $t = 1$ to $t = 9$ years. A linear model assumes the tree keeps growing by the same fixed amount (1.19 m) every year, for every value of $t$.",
+        "workingOut": "\\(\\text{Model assumes constant growth rate for all } t\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "In reality, trees cannot grow at a constant rate indefinitely — growth typically slows as a tree matures and approaches its natural maximum height, so the true relationship is not linear over the long term.",
+        "workingOut": "\\(\\text{Real growth: rate decreases with age (not linear)}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "As \\(t\\) increases, tree growth may not continue in a linear fashion (e.g., growth slows as the tree matures), so the model is unreliable for long-term extrapolation.",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: As \\(t\\) increases, tree growth may not continue in a linear fashion (e.g., growth slows as the tree matures), so the model is unreliable for long-term extrapolation.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "As \\(t\\) increases, tree growth may not continue in a linear fashion (e.g., growth slows as the tree matures), so the model is unreliable for long-term extrapolation.",
+        "explanation": "Therefore, using this linear model to extrapolate far beyond the range of the collected data (e.g. predicting height at $t = 30$ or $t = 50$) is unreliable, since the model would keep predicting unrealistic, ever-increasing heights.",
+        "workingOut": "As \\(t\\) increases well beyond the data range, tree growth may not continue linearly (e.g. growth slows as the tree matures), so the model is unreliable for long-term extrapolation.",
         "graphData": null
       }
     ],

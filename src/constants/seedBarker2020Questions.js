@@ -1883,36 +1883,41 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "A scatterplot shows Push-ups ($P$) vs Sit-ups ($S$) for 10 students with data points roughly: (5,15), (10,25), (15,25), (20,25), (25,35), (30,50), (35,45), (40,50), (45,50), (50,60). Calculate the correlation coefficient correct to 2 decimal places and comment on the strength and direction.",
+    "question": "A scatterplot shows Push-ups ($P$) vs Sit-ups ($S$) for 10 students.\n\n\\begin{array}{c|cccccccccc} S & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\\\ \\hline P & 15 & 25 & 25 & 25 & 35 & 50 & 45 & 50 & 50 & 60 \\end{array}\n\nCalculate the correlation coefficient correct to 2 decimal places and comment on the strength and direction.",
     "opts": [
       "\\(r \\approx 0.96\\); strong positive correlation",
-      "\\(r \\approx 0.96\\); strong positive correlation + 1",
-      "\\(\\dfrac{12}{x + 2}\\)",
-      "\\(\\dfrac{13}{x + 3}\\)"
+      "\\(r \\approx 0.58\\); moderate positive correlation",
+      "\\(r \\approx 0.96\\); strong negative correlation",
+      "\\(r \\approx -0.96\\); strong negative correlation"
     ],
     "a": 0,
     "answer": "0",
-    "hint": "Enter the data into your calculator and use the statistics function to find $r$.",
+    "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute Pearson's correlation coefficient directly.",
     "solution": "The correct answer is \\(r \\approx 0.96\\); strong positive correlation.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Barker 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\((S, P) \\text{ pairs entered}\\)",
+        "explanation": "First, lay out the data in a table pairing each student's sit-ups $S$ with their push-ups $P$ — this is exactly how the values will be entered into the calculator.",
+        "workingOut": "\\(\\begin{array}{c|cccccccccc} S & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\\\ \\hline P & 15 & 25 & 25 & 25 & 35 & 50 & 45 & 50 & 50 & 60 \\end{array}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(r \\approx 0.96\\)",
+        "explanation": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+        "workingOut": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(|r| \\approx 1 \\Rightarrow \\text{strong; } r > 0 \\Rightarrow \\text{positive correlation}\\)",
+        "explanation": "Enter the $S$ values into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the $P$ values the same way.",
+        "workingOut": "\\(X: 5\\texttt{=}\\ 10\\texttt{=}\\ 15\\texttt{=}\\ 20\\texttt{=}\\ 25\\texttt{=}\\ 30\\texttt{=}\\ 35\\texttt{=}\\ 40\\texttt{=}\\ 45\\texttt{=}\\ 50\\texttt{=} \\qquad Y: 15\\texttt{=}\\ 25\\texttt{=}\\ 25\\texttt{=}\\ 25\\texttt{=}\\ 35\\texttt{=}\\ 50\\texttt{=}\\ 45\\texttt{=}\\ 50\\texttt{=}\\ 50\\texttt{=}\\ 60\\texttt{=}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\(r \\approx 0.96\\); strong positive correlation. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(r \\approx 0.96\\); strong positive correlation",
+        "explanation": "Once all 10 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg} \\to \\texttt{3:}r$, then press $\\texttt{=}$ to display the correlation coefficient.",
+        "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{3:}r \\to \\texttt{=}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The calculator displays $r \\approx 0.96$. Since $|r|$ is close to 1 and $r > 0$, this is a strong positive correlation — as push-ups increase, sit-ups tend to increase too.",
+        "workingOut": "\\(r \\approx 0.96 \\Rightarrow |r| \\approx 1 \\text{ (strong)}, \\ r > 0 \\text{ (positive)}\\)",
         "graphData": null
       }
     ],
@@ -1941,23 +1946,18 @@ export const BARKER_2020_QUESTIONS = [
     "solution": "The correct answer is Strong positive correlation.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Barker 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\Rightarrow \\text{strong correlation}\\)",
+        "explanation": "Judge the strength from the magnitude $|r|$. Values close to $1$ (say $|r| \\ge 0.85$) indicate a strong correlation; here $|r|=0.91$ is close to 1.",
+        "workingOut": "\\(|r| = 0.91 \\Rightarrow \\text{strong correlation}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\Rightarrow \\text{positive direction}\\)",
+        "explanation": "Judge the direction from the sign of $r$. A positive $r$ means the variables increase together (matches the described upward trend); a negative $r$ would mean one increases as the other decreases.",
+        "workingOut": "\\(r = 0.91 > 0 \\Rightarrow \\text{positive direction}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Strong positive correlation}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Strong positive correlation. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Strong positive correlation",
+        "explanation": "Combine the strength and direction into a single description of the correlation.",
+        "workingOut": "\\(\\text{strong} + \\text{positive} \\Rightarrow \\text{strong positive correlation}\\)",
         "graphData": null
       }
     ],
@@ -1973,35 +1973,40 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Determine the equation of the least-squares regression line for the push-ups ($P$) and sit-ups ($S$) data, expressing $P$ in terms of $S$.",
+    "question": "The push-ups ($P$) vs sit-ups ($S$) data is shown below.\n\n\\begin{array}{c|cccccccccc} S & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\\\ \\hline P & 15 & 25 & 25 & 25 & 35 & 50 & 45 & 50 & 50 & 60 \\end{array}\n\nDetermine the equation of the least-squares regression line, expressing $P$ in terms of $S$.",
     "opts": [
       "\\(P = 0.95S + 12\\)",
-      "\\(P = 0.95S + 12 + 1\\)",
+      "\\(P = 1.05S + 12\\)",
       "\\(P = 0.95S + 14\\)",
       "\\(P = 0.95S - 12\\)"
     ],
     "a": 0,
     "answer": "0",
-    "hint": "Use your calculator's linear regression function. The line is $P = bS + a$.",
+    "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute the regression coefficients directly.",
     "solution": "The correct answer is \\(P = 0.95S + 12\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Barker 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\text{Linear regression: } y = bx + a\\)",
+        "explanation": "First, lay out the data in a table pairing each student's sit-ups $S$ with their push-ups $P$ — this is exactly how the values will be entered into the calculator.",
+        "workingOut": "\\(\\begin{array}{c|cccccccccc} S & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\\\ \\hline P & 15 & 25 & 25 & 25 & 35 & 50 & 45 & 50 & 50 & 60 \\end{array}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(b \\approx 0.95, quad a \\approx 12\\)",
+        "explanation": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+        "workingOut": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(P = 0.95S + 12\\)",
+        "explanation": "Enter the $S$ values (independent variable) into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the $P$ values (dependent variable) the same way.",
+        "workingOut": "\\(X: 5\\texttt{=}\\ 10\\texttt{=}\\ 15\\texttt{=}\\ 20\\texttt{=}\\ 25\\texttt{=}\\ 30\\texttt{=}\\ 35\\texttt{=}\\ 40\\texttt{=}\\ 45\\texttt{=}\\ 50\\texttt{=} \\qquad Y: 15\\texttt{=}\\ 25\\texttt{=}\\ 25\\texttt{=}\\ 25\\texttt{=}\\ 35\\texttt{=}\\ 50\\texttt{=}\\ 45\\texttt{=}\\ 50\\texttt{=}\\ 50\\texttt{=}\\ 60\\texttt{=}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: P = 0.95S + 12. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Once all 10 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg}$. Select $\\texttt{1:}A$ to display the intercept, then repeat and select $\\texttt{2:}B$ to display the slope.",
+        "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{1:}A \\to \\texttt{=}; \\quad \\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{2:}B \\to \\texttt{=}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The calculator displays $A \\approx 12$ (intercept) and $B \\approx 0.95$ (slope). Since $P$ is the dependent variable, write the equation as $P = BS + A$.",
         "workingOut": "\\(P = 0.95S + 12\\)",
         "graphData": null
       }
@@ -2022,7 +2027,7 @@ export const BARKER_2020_QUESTIONS = [
     "opts": [
       "\\(A = 1.02H + 3.5\\)",
       "\\(A = 1.02H - 3.5\\)",
-      "\\(A = 1.02H - 3.5 + 1\\)",
+      "\\(A = -1.02H - 3.5\\)",
       "\\(A = 1.04H - 4.5\\)"
     ],
     "a": 1,
@@ -2031,22 +2036,17 @@ export const BARKER_2020_QUESTIONS = [
     "solution": "The correct answer is \\(A = 1.02H - 3.5\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Barker 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(A = 1.02H - 3.5\\)",
+        "explanation": "A linear regression equation has the form $y = mx + c$, where $m$ is the gradient and $c$ is the $y$-intercept. Here the dependent variable is $A$ (arm span) and the independent variable is $H$ (height).",
+        "workingOut": "\\(A = mH + c\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Substitute the given gradient $m = 1.02$ and $y$-intercept $c = -3.5$ directly into the equation.",
+        "workingOut": "\\(A = 1.02H + (-3.5)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(A = 1.02H - 3.5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: A = 1.02H - 3.5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Simplify by writing the negative intercept as a subtraction.",
         "workingOut": "\\(A = 1.02H - 3.5\\)",
         "graphData": null
       }
@@ -2065,34 +2065,34 @@ export const BARKER_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Using the regression line $P = 0.95S + 12$, predict the number of sit-ups a person can do if they can do 100 push-ups.",
     "opts": [
-      "\\(-93 sit-ups\\)",
-      "\\(93 sit-ups\\)",
-      "\\(93 sit-ups + 1\\)",
-      "\\(94 sit-ups\\)"
+      "\\(-93 \\text{ sit-ups}\\)",
+      "\\(93 \\text{ sit-ups}\\)",
+      "\\(88 \\text{ sit-ups}\\)",
+      "\\(94 \\text{ sit-ups}\\)"
     ],
     "a": 1,
     "answer": "1",
     "hint": "Substitute $P = 100$ into the equation and solve for $S$.",
-    "solution": "The correct answer is \\(93 sit-ups\\).",
+    "solution": "The correct answer is \\(93 \\text{ sit-ups}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Barker 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Substitute $P = 100$ into the regression equation $P = 0.95S + 12$ found in the previous part.",
         "workingOut": "\\(100 = 0.95S + 12\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(0.95S = 88 \\Rightarrow S = \\frac{88}{0.95} \\approx 92.6\\)",
+        "explanation": "Subtract 12 from both sides to isolate the $0.95S$ term.",
+        "workingOut": "\\(100 - 12 = 0.95S \\Rightarrow 0.95S = 88\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Divide both sides by 0.95 to solve for $S$.",
+        "workingOut": "\\(S = \\frac{88}{0.95} \\approx 92.6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since the number of sit-ups must be a whole number, round to the nearest sit-up.",
         "workingOut": "\\(S \\approx 93 \\text{ sit-ups}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 93 sit-ups. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(93 sit-ups\\)",
         "graphData": null
       }
     ],
@@ -2111,9 +2111,9 @@ export const BARKER_2020_QUESTIONS = [
     "question": "Using the regression line $A = 1.02H - 3.5$, predict the arm span of a person who is 170 cm tall.",
     "opts": [
       "\\(169.9\\) cm",
-      "\\(169.9\\) cm + 1",
-      "\\(\\dfrac{12}{x + 2}\\)",
-      "\\(\\dfrac{13}{x + 3}\\)"
+      "\\(173.4\\) cm",
+      "\\(166.5\\) cm",
+      "\\(176.9\\) cm"
     ],
     "a": 0,
     "answer": "0",
@@ -2121,23 +2121,18 @@ export const BARKER_2020_QUESTIONS = [
     "solution": "The correct answer is \\(169.9\\) cm.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Barker 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(A = 1.02(170) - 3.5 = 173.4 - 3.5 = 169.9 \\text{ cm}\\)",
+        "explanation": "Substitute $H = 170$ into the regression equation $A = 1.02H - 3.5$.",
+        "workingOut": "\\(A = 1.02(170) - 3.5\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Multiply $1.02 \\times 170$ first.",
+        "workingOut": "\\(A = 173.4 - 3.5\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(169.9\\) cm",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: \\(169.9\\) cm. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(169.9\\) cm",
+        "explanation": "Subtract to find the predicted arm span.",
+        "workingOut": "\\(A = 169.9 \\text{ cm}\\)",
         "graphData": null
       }
     ],
@@ -2335,34 +2330,34 @@ export const BARKER_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "In an arithmetic series, the sum of the first 16 terms is 288 and the sixth term is 8. Find the first term and the common difference.",
     "opts": [
-      "a = +12\\), \\(d = 4",
-      "a = -12\\), \\(d = 4",
-      "a = -12\\), \\(d = 4 + 1",
-      "a = -14\\), \\(d = 4"
+      "\\(a = 12,\\ d = 4\\)",
+      "\\(a = -12,\\ d = 4\\)",
+      "\\(a = 8,\\ d = 4\\)",
+      "\\(a = -12,\\ d = -4\\)"
     ],
     "a": 1,
     "answer": "1",
     "hint": "Use $T_6 = a + 5d$ and $S_{16} = \\dfrac{16}{2}(2a + 15d)$. Solve simultaneously.",
-    "solution": "The correct answer is a = -12\\), \\(d = 4.",
+    "solution": "The correct answer is \\(a = -12,\\ d = 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Barker 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "The 6th term of an arithmetic sequence is $T_6 = a + 5d$. Since $T_6 = 8$, this is equation (1).",
         "workingOut": "\\(a + 5d = 8 \\quad\\cdots(1)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\frac{16}{2}(2a+15d) = 288 \\Rightarrow 2a+15d = 36 \\quad\\cdots(2)\\)",
+        "explanation": "The sum of the first 16 terms is $S_{16} = \\dfrac{16}{2}(2a+15d) = 8(2a+15d)$. Since $S_{16} = 288$, dividing both sides by 8 gives equation (2).",
+        "workingOut": "\\(8(2a+15d) = 288 \\Rightarrow 2a+15d = 36 \\quad\\cdots(2)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(2(8-5d)+15d = 36 \\Rightarrow 16+5d=36 \\Rightarrow d=4\\)",
+        "explanation": "Solve (1) and (2) simultaneously. From (1), $a = 8 - 5d$. Substitute into (2) and solve for $d$.",
+        "workingOut": "\\(2(8-5d)+15d = 36 \\Rightarrow 16+5d=36 \\Rightarrow 5d = 20 \\Rightarrow d=4\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: a = -12\\), \\(d = 4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "a = -12\\), \\(d = 4",
+        "explanation": "Substitute $d = 4$ back into $a = 8 - 5d$ to find the first term.",
+        "workingOut": "\\(a = 8 - 5(4) = 8 - 20 = -12\\)",
         "graphData": null
       }
     ],
@@ -2380,34 +2375,34 @@ export const BARKER_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "In an arithmetic series, the sum of the first 10 terms is 95 and the fourth term is 14. Find the first term and the common difference.",
     "opts": [
-      "a = 23\\), \\(d = +3",
-      "a = 23\\), \\(d = -3",
-      "a = 23\\), \\(d = -3 + 1",
-      "a = 44\\), \\(d = -4"
+      "\\(a = -23,\\ d = -3\\)",
+      "\\(a = 23,\\ d = -3\\)",
+      "\\(a = 23,\\ d = 3\\)",
+      "\\(a = 14,\\ d = -3\\)"
     ],
     "a": 1,
     "answer": "1",
     "hint": "Use $T_4 = a+3d$ and $S_{10} = \\dfrac{10}{2}(2a+9d)$. Solve simultaneously.",
-    "solution": "The correct answer is a = 23\\), \\(d = -3.",
+    "solution": "The correct answer is \\(a = 23,\\ d = -3\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Barker 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "The 4th term is $T_4 = a + 3d$. Since $T_4 = 14$, this is equation (1).",
         "workingOut": "\\(a + 3d = 14 \\quad\\cdots(1)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "The sum of the first 10 terms is $S_{10} = \\dfrac{10}{2}(2a+9d) = 5(2a+9d)$. Since $S_{10} = 95$, dividing both sides by 5 gives equation (2).",
         "workingOut": "\\(5(2a+9d) = 95 \\Rightarrow 2a+9d = 19 \\quad\\cdots(2)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(2(14-3d)+9d=19 \\Rightarrow 28+3d=19 \\Rightarrow d=-3\\)",
+        "explanation": "Solve (1) and (2) simultaneously. From (1), $a = 14 - 3d$. Substitute into (2) and solve for $d$.",
+        "workingOut": "\\(2(14-3d)+9d=19 \\Rightarrow 28+3d=19 \\Rightarrow 3d=-9 \\Rightarrow d=-3\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: a = 23\\), \\(d = -3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "a = 23\\), \\(d = -3",
+        "explanation": "Substitute $d = -3$ back into $a = 14 - 3d$ to find the first term.",
+        "workingOut": "\\(a = 14 - 3(-3) = 14 + 9 = 23\\)",
         "graphData": null
       }
     ],

@@ -40,9 +40,9 @@ function TermResultsSection({ label, prefix, student, editingTerm, setEditingTer
                       <span style={{ fontSize: "0.85rem", fontWeight: 800, color: "#6366f1" }}>Term {term}</span>
                       {score && <span style={{ fontSize: "0.85rem", fontWeight: 900, color: "#8b5cf6" }}>{score}</span>}
                     </div>
-                    {dday !== null && (
-                      <span style={{ fontSize: "0.65rem", fontWeight: 800, color: dday === 0 ? "#ef4444" : dday < 0 ? "#94a3b8" : dday <= 7 ? "#f59e0b" : "#6366f1" }}>
-                        {dday === 0 ? "D-Day" : dday < 0 ? `D+${Math.abs(dday)}` : `D-${dday}`}
+                    {dday !== null && dday >= 0 && (
+                      <span style={{ fontSize: "0.65rem", fontWeight: 800, color: dday === 0 ? "#ef4444" : dday <= 7 ? "#f59e0b" : "#6366f1" }}>
+                        {dday === 0 ? "D-Day" : `D-${dday}`}
                       </span>
                     )}
                   </div>

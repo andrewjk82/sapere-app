@@ -13085,16 +13085,16 @@
           "answer": 0,
           "steps": [
             {
-              "explain": "First, determine the radius from the given diameter to calculate the circular surface area.",
-              "work": "\\begin{aligned} r &= \\frac{d}{2} = \\frac{40}{2} = 20\\text{ m} \\\\ \\text{Area} &= \\pi r^2 = \\pi (20)^2 = 400\\pi \\approx 1256.64\\text{ m}^2 \\end{aligned}"
+              "explain": "Calculate the circular surface area.",
+              "work": "\\begin{aligned} r &= \\frac{40}{2} = 20\\text{ m} \\\\ \\text{Area} &= \\pi \\times 20^2 \\\\ &= 400\\pi \\text{ m}^2 \\end{aligned}"
             },
             {
-              "explain": "Calculate the volume in cubic metres using the formula provided in Step 3.",
-              "work": "\\begin{aligned} \\text{Volume} &= 0.4 \\times \\text{Area} \\times \\text{depth} \\\\ &= 0.4 \\times 1256.64 \\times 4 \\\\ &= 2010.624\\text{ m}^3 \\end{aligned}"
+              "explain": "Calculate the volume in cubic metres.",
+              "work": "\\begin{aligned} \\text{Volume} &= 0.4 \\times 400\\pi \\times 4 \\\\ &= 640\\pi \\\\ &\\approx 2010.62\\text{ m}^3 \\end{aligned}"
             },
             {
-              "explain": "Convert the capacity to megalitres (ML) by dividing by 1000, as stated in Step 4.",
-              "work": "\\begin{aligned} \\text{Capacity (ML)} &= \\frac{2010.624}{1000} \\\\ &\\approx 2.01\\text{ ML} \\end{aligned}"
+              "explain": "Convert the volume to megalitres (ML).",
+              "work": "\\begin{aligned} \\text{Capacity} &= \\frac{2010.62}{1000} \\\\ &\\approx 2.01\\text{ ML} \\end{aligned}"
             }
           ],
           "timeLimit": 90

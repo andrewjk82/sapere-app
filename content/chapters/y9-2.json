@@ -281,22 +281,31 @@
             "\\(6.85\\)"
           ],
           "answer": 1,
-          "hint": "Identify the two shorter sides (a cm and b cm) and apply Pythagoras' theorem: \\(c = \\sqrt{a^2 + b^2}\\).",
+          "hint": "First, use Pythagoras' theorem to find the hypotenuse PR. Then, use the area of the triangle to find the altitude h.",
           "solution": "The correct answer is \\(7.06\\).",
           "steps": [
             {
-              "explain": "Identify the given sides and state Pythagoras' theorem.",
-              "work": "\\text{The two shorter sides are } a = a\\text{ cm and } b = b\\text{ cm}. \\text{ The hypotenuse is } c."
+              "explain": "Use Pythagoras' theorem in the large right-angled triangle \\(\\triangle PQR\\) to find the hypotenuse \\(PR\\).",
+              "work": "\\begin{aligned} PR &= \\sqrt{PQ^2 + QR^2} \\\\ &= \\sqrt{15^2 + 8^2} \\\\ &= \\sqrt{289} = 17 \\end{aligned}",
+              "figure": {
+                "svg": "fig:d3f9c2b783"
+              }
             },
             {
-              "explain": "Substitute the side lengths into the formula \\(c = \\sqrt{a^2 + b^2}\\).",
-              "work": "c = \\sqrt{a^2 + b^2} = \\sqrt{NaN + NaN}"
+              "explain": "The area of \\(\\triangle PQR\\) can be calculated in two ways: using legs \\(PQ\\) and \\(QR\\), or using base \\(PR\\) and height \\(QS\\) (which is \\(h\\)).",
+              "work": "\\begin{aligned} \\frac{1}{2} \\times PQ \\times QR &= \\frac{1}{2} \\times PR \\times QS \\\\ 15 \\times 8 &= 17 \\times h \\\\ 120 &= 17h \\end{aligned}",
+              "figure": {
+                "svg": "fig:7112822ada"
+              }
             },
             {
-              "explain": "Calculate the sum of the squares and find the square root.",
-              "work": "c = \\sqrt{NaN} = 7.06\\text{ cm}"
+              "explain": "Solve for \\(h\\) and round to 2 decimal places.",
+              "work": "\\begin{aligned} h &= \\frac{120}{17} \\\\ &\\approx 7.0588... \\\\ &\\approx 7.06 \\end{aligned}"
             }
-          ]
+          ],
+          "figure": {
+            "svg": "fig:31d3ae3d32"
+          }
         },
         {
           "id": "y9-2a-15c",
@@ -314,18 +323,27 @@
           "solution": "The correct answer is \\(3.76\\).",
           "steps": [
             {
-              "explain": "Identify the given sides and state Pythagoras' theorem.",
-              "work": "\\text{The two shorter sides are } a = a\\text{ cm and } b = b\\text{ cm}. \\text{ The hypotenuse is } c."
+              "explain": "Use Pythagoras' theorem in the large right-angled triangle \\(\\triangle PQR\\) to find the hypotenuse \\(PR\\).",
+              "work": "\\(PR = \\sqrt{PQ^2 + QR^2} = \\sqrt{15^2 + 8^2} = \\sqrt{289} = 17\\)",
+              "figure": {
+                "svg": "fig:c9d8d51973"
+              }
             },
             {
-              "explain": "Substitute the side lengths into the formula \\(c = \\sqrt{a^2 + b^2}\\).",
-              "work": "c = \\sqrt{a^2 + b^2} = \\sqrt{NaN + NaN}"
+              "explain": "Let \\(QS = h\\) and \\(PS = 17 - x\\). Apply Pythagoras' theorem to the two smaller right-angled triangles, \\(\\triangle QSR\\) and \\(\\triangle PSQ\\), to find expressions for \\(h^2\\).",
+              "work": "\\text{In } \\triangle QSR: \\quad h^2 + x^2 = 8^2 \\Rightarrow h^2 = 64 - x^2 \\\\ \\text{In } \\triangle PSQ: \\quad h^2 + (17 - x)^2 = 15^2 \\Rightarrow h^2 = 225 - (17 - x)^2",
+              "figure": {
+                "svg": "fig:a46910bfeb"
+              }
             },
             {
-              "explain": "Calculate the sum of the squares and find the square root.",
-              "work": "c = \\sqrt{NaN} = 3.76\\text{ cm}"
+              "explain": "Equate the two expressions for \\(h^2\\) and solve for \\(x\\).",
+              "work": "\\begin{aligned} 64 - x^2 &= 225 - (289 - 34x + x^2) \\\\ 64 - x^2 &= 225 - 289 + 34x - x^2 \\\\ 64 &= -64 + 34x \\\\ 128 &= 34x \\\\ x &= \\frac{128}{34} = \\frac{64}{17} \\approx 3.76 \\end{aligned}"
             }
-          ]
+          ],
+          "figure": {
+            "svg": "fig:2da0200b5c"
+          }
         },
         {
           "id": "y9-2a-16",

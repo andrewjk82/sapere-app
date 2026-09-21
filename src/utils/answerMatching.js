@@ -255,14 +255,14 @@ export const expandAnswerCandidates = (value) => {
   return out;
 };
 
-export const parseNumericAnswer = (value) => {
+export const parseNumericAnswer = (value, isAlg = false) => {
   if (value === null || value === undefined) return null;
   const raw = stripLatexWrappers(value);
   if (!raw) return null;
 
   // First try pure number (possibly after stripping "or" wrappers by taking first candidate).
   const tryParse = (str) => {
-    const cleaned = str
+    let cleaned = str
       .replace(/[−–—]/g, '-')
       .replace(/\\\$/g, '').replace(/\$/g, '')
       .replace(/\\%/g, '%')          // LaTeX \% → %
@@ -271,12 +271,16 @@ export const parseNumericAnswer = (value) => {
       // Strip measurement units so "9355 m" → "9355", "15m" → "15"
       .replace(/\s*(kilometres?|meters?|metres?|centimetres?|centimeters?|millimetres?|millimeters?|kilograms?|grams?|litres?|liters?|millilitres?|milliliters?|seconds?|minutes?|hours?|units?)\s*/gi, '')
       .replace(/\\text\s*\{[^{}]*\}/g, '')
-      .replace(/\s*(km²|m²|cm²|mm²|km³|m³|cm³|mm³|km|cm|mm|ml|mg|kg|MJ|kJ)\s*/g, '')
-      .replace(/(\d)\s*m\b/, '$1')   // trailing m after digit
-      .replace(/(\d)\s*g\b/, '$1')   // trailing g after digit
-      .replace(/(\d)\s*[Ll]\b/, '$1') // trailing L after digit
-      .replace(/(\d)\s*s\b/, '$1')   // trailing s (seconds) after digit
-      .trim();
+      .replace(/\s*(km²|m²|cm²|mm²|km³|m³|cm³|mm³|km|cm|mm|ml|mg|kg|MJ|kJ)\s*/g, '');
+
+    if (!isAlg) {
+      cleaned = cleaned
+        .replace(/(\d)\s*m\b/, '$1')   // trailing m after digit
+        .replace(/(\d)\s*g\b/, '$1')   // trailing g after digit
+        .replace(/(\d)\s*[Ll]\b/, '$1') // trailing L after digit
+        .replace(/(\d)\s*s\b/, '$1');   // trailing s (seconds) after digit
+    }
+    cleaned = cleaned.trim();
 
     if (!/^-?\d+(?:\.\d+)?%?$/.test(cleaned)) return null;
     const isPercent = cleaned.endsWith('%');
@@ -334,7 +338,7 @@ const isAlgebraicStr = (str) => {
   return false;
 };
 
-const isQuestionAlgebraic = (question) => {
+export const isQuestionAlgebraic = (question) => {
   if (!question) return false;
   const answerText = String(question.answer || '').toLowerCase();
   if (isAlgebraicStr(answerText)) return true;
@@ -408,8 +412,8 @@ const answersMatchOne = (studentAnswer, expectedAnswer, isAlgebraic = false) => 
     return true;
   }
 
-  const studentNumeric = parseNumericAnswer(sStr);
-  const expectedNumeric = parseNumericAnswer(eStr);
+  const studentNumeric = parseNumericAnswer(sStr, isAlg);
+  const expectedNumeric = parseNumericAnswer(eStr, isAlg);
 
   if (studentNumeric && expectedNumeric) {
     // Same number, allow % vs no-% mismatch (student may or may not include symbol)
@@ -428,14 +432,14 @@ const answersMatchOne = (studentAnswer, expectedAnswer, isAlgebraic = false) => 
 
   if (sRhs === null && eRhs !== null) {
     if (robustNormalize(sStr, isAlg) === robustNormalize(eRhs, isAlg)) return true;
-    const sNum = parseNumericAnswer(sStr);
-    const eNum = parseNumericAnswer(eRhs);
+    const sNum = parseNumericAnswer(sStr, isAlg);
+    const eNum = parseNumericAnswer(eRhs, isAlg);
     if (sNum && eNum && Math.abs(sNum.number - eNum.number) < 0.000001) return true;
   }
 
   if (sRhs !== null && eRhs === null) {
     if (robustNormalize(sRhs, isAlg) === robustNormalize(eStr, isAlg)) return true;
-    const sNum = parseNumericAnswer(sRhs);
+    const sNum = parseNumericAnswer(sRhs, isAlg);
     const eNum = parseNumericAnswer(eStr);
     if (sNum && eNum && Math.abs(sNum.number - eNum.number) < 0.000001) return true;
   }

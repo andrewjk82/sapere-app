@@ -189,34 +189,34 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "The $5^{\\text{th}}$ term of an arithmetic sequence is $23$ and the $9^{\\text{th}}$ term is $43$. Find the first term $a$ and the common difference $d$.",
     "opts": [
-      "a = 3\\) and \\(d = 5",
-      "a = 5\\) and \\(d = 3",
-      "a = -3\\) and \\(d = 5",
-      "a = 3\\) and \\(d = -5"
+      "\\(a = 3\\) and \\(d = 5\\)",
+      "\\(a = 5\\) and \\(d = 3\\)",
+      "\\(a = -3\\) and \\(d = 5\\)",
+      "\\(a = 3\\) and \\(d = -5\\)"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Use $T_n = a + (n-1)d$ to write two equations and subtract.",
-    "solution": "The correct answer is a = 3\\) and \\(d = 5.",
+    "solution": "The correct answer is \\(a = 3\\) and \\(d = 5\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Danebank 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(a + 4d = 23\\)",
+        "explanation": "The 5th term is $T_5 = a + 4d$. Since $T_5 = 23$, this is equation (1).",
+        "workingOut": "\\(a + 4d = 23 \\quad\\cdots(1)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(a + 8d = 43\\)",
+        "explanation": "The 9th term is $T_9 = a + 8d$. Since $T_9 = 43$, this is equation (2).",
+        "workingOut": "\\(a + 8d = 43 \\quad\\cdots(2)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(4d = 20 \\Rightarrow d = 5\\)",
+        "explanation": "Subtract (1) from (2) to eliminate $a$ and solve for the common difference $d$.",
+        "workingOut": "\\((a+8d)-(a+4d) = 43-23 \\Rightarrow 4d = 20 \\Rightarrow d = 5\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: a = 3\\) and \\(d = 5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "a = 3\\) and \\(d = 5",
+        "explanation": "Substitute $d = 5$ back into equation (1) to find the first term $a$.",
+        "workingOut": "\\(a + 4(5) = 23 \\Rightarrow a = 23 - 20 = 3\\)",
         "graphData": null
       }
     ],

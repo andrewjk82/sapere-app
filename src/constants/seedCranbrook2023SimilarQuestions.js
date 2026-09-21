@@ -93,7 +93,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
         "boardOptions": {
           "keepaspectratio": false
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0],[12,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,0],[0,11]], {strokeColor:'black'});\nvar pts = [[1.5,2],[2.5,8],[4.5,7],[4.5,9],[5,6.5],[5,5],[6.5,4.5],[5.5,3],[9,9.5],[9,8.5],[11,6]];\nfor (var i=0;i<pts.length;i++){ board.create('point', pts[i], {name:'', size:3, color:'#475569', fixed:true}); }\nboard.create('point', [4,6.5], {name:'Q', size:3, color:'#475569', fixed:true, label:{offset:[-14,2], fontSize:15}});\nboard.create('point', [7,4.5], {name:'P', size:3, color:'#475569', fixed:true, label:{offset:[10,2], fontSize:15}});\nboard.create('text', [4.5, -1.1, 'weight (kg)'], {fontSize:13});\nboard.create('text', [0.2, 10.6, 'height (cm)'], {fontSize:13});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0],[12,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,0],[0,11]], {strokeColor:'black'});\nvar pts = [[1.5,2],[2.5,8],[4.5,7],[4.5,9],[5,6.5],[5,5],[6.5,4.5],[5.5,3],[9,9.5],[9,8.5],[11,6]];\nfor (var i=0;i<pts.length;i++){ board.create('point', pts[i], {name:'', size:3, color:'#475569', fixed:true}); }\nboard.create('point', [2,9.3], {name:'Q', size:4, color:'#dc2626', fixed:true, label:{offset:[-18,10], fontSize:15, cssStyle:'font-weight:bold'}});\nboard.create('point', [7,4.5], {name:'P', size:3, color:'#475569', fixed:true, label:{offset:[10,2], fontSize:15}});\nboard.create('text', [4.5, -1.1, 'weight (kg)'], {fontSize:13});\nboard.create('text', [0.2, 10.6, 'height (cm)'], {fontSize:13});\nboard.unsuspendUpdate();"
       }
     },
     "isNew": true,
@@ -160,23 +160,28 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "solution": "The correct answer is \\(60\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Cranbrook 2023 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(S_3 = 3a + 3d = 24 \\implies a + d = 8\\)",
+        "explanation": "Write the sum formula for an arithmetic series, $S_n = \\dfrac{n}{2}(2a+(n-1)d)$, and apply it with $n=3$ using the given $S_3=24$.",
+        "workingOut": "\\(S_3 = \\frac{3}{2}(2a+2d) = 3a+3d = 24 \\implies a+d = 8\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(S_4 = 4a + 6d = 40 \\implies 2a + 3d = 20\\)",
+        "explanation": "Apply the same formula with $n=4$ using the given $S_4=40$ to get a second equation.",
+        "workingOut": "\\(S_4 = \\frac{4}{2}(2a+3d) = 4a+6d = 40 \\implies 2a+3d = 20\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(2(8 - d) + 3d = 20 \\implies 16 + d = 20 \\implies d = 4, \\; a = 4\\)",
+        "explanation": "Solve the two equations simultaneously. Substitute $a = 8-d$ from the first equation into the second to eliminate $a$, then solve for $d$.",
+        "workingOut": "\\(2(8-d)+3d=20 \\implies 16+d=20 \\implies d=4\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 60. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(60\\)",
+        "explanation": "Substitute $d=4$ back into $a=8-d$ to find the first term $a$.",
+        "workingOut": "\\(a = 8-4 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Use $S_n = \\dfrac{n}{2}(2a+(n-1)d)$ with $n=5$, $a=4$, $d=4$ to find the sum of the first 5 terms.",
+        "workingOut": "\\(S_5 = \\frac{5}{2}(2(4)+4(4)) = \\frac{5}{2}(8+16) = \\frac{5}{2}(24) = 60\\)",
         "graphData": null
       }
     ],

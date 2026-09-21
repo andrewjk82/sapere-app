@@ -4136,153 +4136,7 @@
           "difficulty": "hard",
           "stem": "Find the values of \\(\\alpha\\) and \\(\\beta\\). Enter your answer as two numbers separated by a comma.",
           "figure": {
-            "svg": "fig:0b60577df0",
-            "jsxGraph": {
-              "width": 300,
-              "height": 300,
-              "boundingbox": [
-                -6,
-                6,
-                6,
-                -6
-              ],
-              "boardOptions": {
-                "axis": false,
-                "keepaspectratio": true,
-                "showNavigation": false
-              },
-              "elements": [
-                {
-                  "type": "circle",
-                  "id": "c1",
-                  "center": "O",
-                  "radius": 5
-                },
-                {
-                  "type": "point",
-                  "id": "O",
-                  "coords": [
-                    0,
-                    0
-                  ],
-                  "name": "O",
-                  "color": "red",
-                  "label": {
-                    "offset": [
-                      8,
-                      8
-                    ]
-                  }
-                },
-                {
-                  "type": "point",
-                  "id": "A",
-                  "on": "c1",
-                  "angle": 60,
-                  "name": "A",
-                  "label": {
-                    "offset": [
-                      -6,
-                      -12
-                    ]
-                  }
-                },
-                {
-                  "type": "point",
-                  "id": "B",
-                  "on": "c1",
-                  "angle": 150,
-                  "name": "B",
-                  "label": {
-                    "offset": [
-                      6,
-                      12
-                    ]
-                  }
-                },
-                {
-                  "type": "point",
-                  "id": "P",
-                  "on": "c1",
-                  "angle": 0,
-                  "name": "P",
-                  "label": {
-                    "offset": [
-                      12,
-                      0
-                    ]
-                  }
-                },
-                {
-                  "type": "segment",
-                  "from": "A",
-                  "to": "B"
-                },
-                {
-                  "type": "segment",
-                  "from": "O",
-                  "to": "A",
-                  "id": "seg_OA"
-                },
-                {
-                  "type": "segment",
-                  "from": "A",
-                  "to": "P",
-                  "id": "seg_AP"
-                },
-                {
-                  "type": "segment",
-                  "from": "O",
-                  "to": "P"
-                },
-                {
-                  "type": "segment",
-                  "from": "B",
-                  "to": "P"
-                },
-                {
-                  "type": "tick",
-                  "segment": "seg_OA"
-                },
-                {
-                  "type": "tick",
-                  "segment": "seg_AP"
-                },
-                {
-                  "type": "angle",
-                  "points": [
-                    "A",
-                    "O",
-                    "P"
-                  ],
-                  "name": "α",
-                  "radius": 1,
-                  "label": {
-                    "offset": [
-                      0,
-                      0
-                    ]
-                  }
-                },
-                {
-                  "type": "angle",
-                  "points": [
-                    "A",
-                    "B",
-                    "P"
-                  ],
-                  "name": "β",
-                  "radius": 1.5,
-                  "label": {
-                    "offset": [
-                      0,
-                      0
-                    ]
-                  }
-                }
-              ]
-            },
-            "html": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' width='100%' height='100%'>\n  <rect width='300' height='300' fill='#ffffff' />\n  <circle cx='150' cy='150' r='110' fill='none' stroke='#cbd5e1' stroke-width='1.5' />\n  \n  <line x1='150' y1='150' x2='205' y2='54.74' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />\n  <line x1='205' y1='54.74' x2='260' y2='150' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />\n  <line x1='150' y1='150' x2='260' y2='150' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />\n  <line x1='205' y1='54.74' x2='54.74' y2='95' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />\n  <line x1='54.74' y1='95' x2='260' y2='150' stroke='#64748b' stroke-width='1.5' stroke-linecap='round' />\n  \n  <!-- Ticks -->\n  <line x1='173.17' y1='99.87' x2='181.83' y2='104.87' stroke='#ef4444' stroke-width='1.5' stroke-linecap='round' />\n  <line x1='236.83' y1='99.87' x2='228.17' y2='104.87' stroke='#ef4444' stroke-width='1.5' stroke-linecap='round' />\n  \n  <!-- Alpha Arc -->\n  <path d='M 172 150 A 22 22 0 0 0 161 130.95' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />\n  <text x='180.3' y='132.5' text-anchor='middle' dominant-baseline='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>α</text>\n  \n  <!-- Beta Arc -->\n  <path d='M 86.61 86.46 A 33 33 0 0 1 86.61 103.54' fill='none' stroke='#f59e0b' stroke-width='1.5' stroke-linecap='round' />\n  <text x='99.74' y='95' text-anchor='middle' dominant-baseline='middle' font-family='sans-serif' font-size='14' font-weight='500' font-style='italic' fill='#d97706'>β</text>\n  \n  <circle cx='150' cy='150' r='3' fill='#94a3b8' stroke='#ffffff' stroke-width='1.5' />\n  <text x='158' y='142' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>O</text>\n  \n  <circle cx='205' cy='54.74' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='211' y='42.74' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>A</text>\n  \n  <circle cx='54.74' cy='95' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='42.74' y='83' text-anchor='end' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>B</text>\n  \n  <circle cx='260' cy='150' r='4' fill='#3b82f6' stroke='#ffffff' stroke-width='1.5' />\n  <text x='272' y='160' text-anchor='start' font-family='sans-serif' font-size='13' font-weight='600' fill='#475569'>P</text>\n</svg>"
+            "svg": "fig:f529d8faa4"
           },
           "options": [
             "\\\\(\\alpha = 30^\\\\circ, \\beta = 60^\\\\circ\\\\)",
@@ -4291,16 +4145,22 @@
             "\\\\(\\alpha = 30^\\\\circ, \\beta = 15^\\\\circ\\\\)"
           ],
           "answer": 2,
-          "hint": "Look for an equilateral triangle formed by radii and a chord.",
-          "solution": "In \\(\\triangle OAP\\), \\(OA = OP\\) (radii) and \\(OA = AP\\) (given). Thus \\(\\triangle OAP\\) is equilateral, so \\(\\alpha = \\angle AOP = 60^\\circ\\).\nSince \\(AOB\\) is a straight line (diameter), \\(\\angle POB = 180^\\circ - 60^\\circ = 120^\\circ\\).\nIn isosceles \\(\\triangle OPB\\) (\\(OB = OP\\) radii), \\(\\beta = \\angle OBP = (180^\\circ - 120^\\circ) / 2 = 30^\\circ\\).",
+          "hint": "First, identify what type of triangle \\(\\triangle OAP\\) is. Then, use the angle at the centre theorem.",
+          "solution": "In \\(\\triangle OAP\\), \\(OA = OP\\) (both are radii) and \\(OA = AP\\) (given by tick marks). Thus \\(\\triangle OAP\\) is equilateral, so \\(\\alpha = \\angle AOP = 60^\\circ\\).\nThe angle at the centre (\\(\\angle AOP\\)) and the angle at the circumference (\\(\\beta = \\angle ABP\\)) both subtend the same arc \\(AP\\). Therefore, \\(\\beta = \\alpha / 2 = 30^\\circ\\).",
           "steps": [
             {
-              "explain": "Use the circle theorem to find the central angle $\\alpha$.",
-              "work": "The angle at the centre is twice the angle at the circumference. Let the corresponding inscribed angle be \\(30^\\circ\\).\n\n\\(\\alpha = 2 \\times 30^\\circ\\)\n\n\\(\\alpha = 60^\\circ\\)"
+              "explain": "First, find the angle \\(\\alpha\\) by identifying the properties of \\(\\triangle OAP\\). Both \\(OA\\) and \\(OP\\) are radii of the circle, so they are equal in length. We are also given that \\(OA = AP\\). Therefore, \\(\\triangle OAP\\) is an equilateral triangle.",
+              "work": "\\begin{aligned} OA &= OP \\text{ (radii)} \\\\ OA &= AP \\text{ (given)} \\\\ \\therefore \\triangle OAP &\\text{ is equilateral} \\\\ \\alpha &= \\angle AOP = 60^\\circ \\end{aligned}",
+              "figure": {
+                "svg": "fig:f36654f301"
+              }
             },
             {
-              "explain": "Use the circle theorem to find the inscribed angle $\\beta$.",
-              "work": "The angle at the centre is twice the angle at the circumference. Let the corresponding central angle be \\(60^\\circ\\).\n\n\\(2\\beta = 60^\\circ\\)\n\n\\(\\beta = \\frac{60^\\circ}{2}\\)\n\n\\(\\beta = 30^\\circ\\)"
+              "explain": "Next, find the angle \\(\\beta\\) using circle theorems. The angle at the centre (\\(\\angle AOP\\)) and the angle at the circumference (\\(\\angle ABP = \\beta\\)) both subtend the same arc \\(AP\\). The angle at the centre is always twice the angle at the circumference.",
+              "work": "\\begin{aligned} \\angle AOP &= 2 \\times \\angle ABP \\\\ 60^\\circ &= 2 \\times \\beta \\\\ \\beta &= \\frac{60^\\circ}{2} \\\\ \\beta &= 30^\\circ \\end{aligned}",
+              "figure": {
+                "svg": "fig:a4e7b37aed"
+              }
             }
           ],
           "alsoIn": [

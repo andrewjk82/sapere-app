@@ -507,6 +507,9 @@
           "type": "mc",
           "difficulty": "medium",
           "stem": "Calculate the value of the pronumeral \\(w\\) in the right-angled triangle. Give your answer to four significant figures.",
+          "figure": {
+            "svg": "fig:db71f30a0c"
+          },
           "options": [
             "\\(4.58 \\text{ m}\\)",
             "\\(10.45 \\text{ m}\\)",
@@ -516,23 +519,22 @@
           "answer": 2,
           "steps": [
             {
-              "explain": "Identify the sides relative to the 26° angle.",
-              "work": "\\(\\text{Opposite} = 9.4, \\text{Adjacent} = w\\)",
+              "explain": "Set up the trigonometric equation using tangent.",
+              "work": "\\begin{aligned} \\tan(\\theta) &= \\frac{\\text{Opposite}}{\\text{Adjacent}} \\\\ \\tan(26^\\circ) &= \\frac{9.4}{w} \\end{aligned}",
               "figure": {
-                "svg": "fig:f28859ea8a"
+                "svg": "fig:d7a4fde2e5"
               }
             },
             {
-              "explain": "Use the tangent ratio: \\(\\tan(\\theta) = \\frac{\\text{Opposite}}{\\text{Adjacent}}\\).",
-              "work": "\\tan(26^\\circ) = \\frac{9.4}{w}"
-            },
-            {
-              "explain": "Solve for \\(w\\).",
-              "work": "w = \\frac{9.4}{\\tan(26^\\circ)}"
+              "explain": "Rearrange the equation to isolate \\(w\\).",
+              "work": "\\begin{aligned} w \\times \\tan(26^\\circ) &= 9.4 \\\\ w &= \\frac{9.4}{\\tan(26^\\circ)} \\end{aligned}"
             },
             {
               "explain": "Calculate and round to four significant figures.",
-              "work": "w \\approx 19.2736... \\approx 19.27 \\text{ m}"
+              "work": "\\begin{aligned} w &\\approx \\frac{9.4}{0.4877} \\\\ w &\\approx 19.27 \\text{ m} \\end{aligned}",
+              "figure": {
+                "svg": "fig:93a5420c58"
+              }
             }
           ],
           "meta": {
@@ -540,9 +542,6 @@
             "school": "Willoughby Girls High School",
             "examType": "Yearly",
             "grade": "9"
-          },
-          "figure": {
-            "svg": "fig:f28859ea8a"
           }
         },
         {

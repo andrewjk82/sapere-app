@@ -407,7 +407,7 @@ const QuizView = ({
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
           <span style={{ fontSize: '0.68rem', fontWeight: 900, background: '#e0e7ff', color: '#4f46e5', padding: '5px 11px', borderRadius: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-            {q.topicTitle || q.chapterTitle}
+            {q.topicTitle || (q.chapterTitle?.startsWith('Search:') ? null : q.chapterTitle) || q.topicId}
           </span>
           {q.source && (
             <span style={{ fontSize: '0.65rem', fontWeight: 900, background: '#fef3c7', color: '#92400e', padding: '5px 10px', borderRadius: '8px', letterSpacing: '0.03em' }}>
@@ -847,7 +847,7 @@ const ReviewView = ({ questions, answers, onDone }) => {
       <div className="app-panel" style={{ padding: '22px', borderRadius: '22px' }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px', flexWrap: 'wrap', gap: '8px' }}>
           <span style={{ fontSize: '0.7rem', fontWeight: 800, background: '#e0e7ff', color: '#6366f1', padding: '4px 10px', borderRadius: '8px', textTransform: 'uppercase' }}>
-            {q.topicTitle || q.chapterTitle}
+            {q.topicTitle || (q.chapterTitle?.startsWith('Search:') ? null : q.chapterTitle) || q.topicId}
           </span>
           <span style={{
             display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 12px', borderRadius: '999px', fontWeight: 800, fontSize: '0.82rem',

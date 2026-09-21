@@ -340,7 +340,7 @@
           "id": "cra2023-mc8",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "A particle is moving in a straight line such that its displacement $x$ metres at time $t$ seconds from the origin is given by $x = k\\cos(at + b)$, where $a$, $b$ and $k$ are constants. The particle is stationary when $t = \\dfrac{5\\pi}{12}, dfrac{11\\pi}{12}, dfrac{17\\pi}{12}, ldots$ The initial acceleration of the particle is $6\\sqrt{3}\\ \\text{ms}^{-2}$. What could be the values of $a$, $b$ and $k$?",
+          "stem": "A particle is moving in a straight line such that its displacement $x$ metres at time $t$ seconds from the origin is given by $x = k\\cos(at + b)$, where $a$, $b$ and $k$ are constants. The particle is stationary when $t = \\dfrac{5\\pi}{12}, \\dfrac{11\\pi}{12}, \\dfrac{17\\pi}{12}, ldots$ The initial acceleration of the particle is $6\\sqrt{3}\\ \\text{ms}^{-2}$. What could be the values of $a$, $b$ and $k$?",
           "options": [
             "\\(a = 4, b = -\\dfrac{5\\pi}{6}, k = 3\\)",
             "\\(a = 2, b = -\\dfrac{5\\pi}{6}, k = -3\\)",
@@ -352,20 +352,20 @@
           "solution": "The correct answer is \\(a = 2, b = \\dfrac{\\pi}{6}, k = -3\\).",
           "steps": [
             {
-              "explain": "The particle is stationary when its velocity is zero. For \\(x = k\\cos(at+b)\\), the velocity \\(\\dot{x} = -ka\\sin(at+b)\\) vanishes every half-period, i.e. at intervals of \\(\\dfrac{\\pi}{a}\\). Use the spacing of the given stationary times to find \\(a\\).",
-              "work": "\\(\\dfrac{11\\pi}{12} - \\dfrac{5\\pi}{12} = \\dfrac{6\\pi}{12} = \\dfrac{\\pi}{2} = \\dfrac{\\pi}{a} \\implies a = 2\\)"
+              "explain": "Find the period using the interval between stationary points to determine \\(a\\).",
+              "work": "\\begin{aligned} \\text{Period } (T) &= 2 \\times \\left( \\frac{11\\pi}{12} - \\frac{5\\pi}{12} \\right) \\\\ &= 2 \\times \\frac{\\pi}{2} = \\pi \\\\ a &= \\frac{2\\pi}{T} = 2 \\end{aligned}"
             },
             {
-              "explain": "This immediately eliminates option (A), which has \\(a = 4\\). Next, differentiate twice to find the acceleration function.",
-              "work": "\\(\\ddot{x} = -ka^2\\cos(at+b) = -4k\\cos(2t + b)\\)"
+              "explain": "Find the acceleration function by differentiating the displacement twice.",
+              "work": "\\begin{aligned} x &= k\\cos(2t+b) \\\\ \\dot{x} &= -2k\\sin(2t+b) \\\\ \\ddot{x} &= -4k\\cos(2t+b) \\end{aligned}"
             },
             {
-              "explain": "Test option (D): \\(b = \\dfrac{\\pi}{6}\\), \\(k = -3\\). Substitute and check, using \\(\\cos\\dfrac{\\pi}{6} = \\dfrac{\\sqrt{3}}{2}\\).",
-              "work": "\\(-4(-3)\\cos\\dfrac{\\pi}{6} = 12 \\times \\dfrac{\\sqrt{3}}{2} = 6\\sqrt{3} \\quad \\checkmark\\)"
+              "explain": "Use the given initial acceleration \\(\\ddot{x}(0) = 6\\sqrt{3}\\) to establish a relationship for \\(k\\) and \\(b\\).",
+              "work": "\\begin{aligned} \\ddot{x}(0) &= -4k\\cos(b) \\\\ -4k\\cos(b) &= 6\\sqrt{3} \\end{aligned}"
             },
             {
-              "explain": "Verify a stationary time also fits: \\(\\dot{x} = 6\\sin(2t + \\tfrac{\\pi}{6}) = 0\\) at \\(2t + \\tfrac{\\pi}{6} = \\pi\\), i.e. \\(t = \\dfrac{5\\pi}{12}\\) ✓. Check option (C) for contrast: \\(k = 3\\) would give \\(\\ddot{x}(0) = -6\\sqrt{3}\\), the wrong sign. The answer is (D).",
-              "work": "\\(t = \\dfrac{\\pi - \\pi/6}{2} = \\dfrac{5\\pi}{12} \\quad \\checkmark \\implies \\text{(D)}\\)"
+              "explain": "Test the options to satisfy the initial acceleration condition.",
+              "work": "\\begin{aligned} \\text{Test } k&=-3, b=\\frac{\\pi}{6}: \\\\ -4(-3)\\cos\\left(\\frac{\\pi}{6}\\right) &= 12 \\times \\frac{\\sqrt{3}}{2} = 6\\sqrt{3} \\\\ \\text{This satisfies } &\\text{the given condition.} \\end{aligned}"
             }
           ],
           "meta": {
@@ -2169,30 +2169,30 @@
           "difficulty": "hard",
           "stem": "For the particle with position $x = 2\\ln(t^2 + 3) - t$ (for $t \\geq 0$), find the maximum velocity of the particle.",
           "options": [
-            "v_{\\max} = \\dfrac{2\\sqrt{3}}{3} + 1 \\approx 0.15\\) m/s, at \\(t = \\sqrt{3}",
-            "v_{\\max} = \\dfrac{2\\sqrt{3}}{3} - 1 \\approx 0.15\\) m/s, at \\(t = \\sqrt{3}",
-            "v_{\\max} = \\dfrac{2\\sqrt{3}}{3} - 1 \\approx 0.15\\) m/s, at \\(t = \\sqrt{3} + 1",
-            "v_{\\max} = \\dfrac{4\\sqrt{4}}{4} - 1 \\approx 0.15\\) m/s, at \\(t = \\sqrt{4}"
+            "\\(v_{\\max} = \\dfrac{2\\sqrt{3}}{3} + 1 \\approx 0.15 \\text{ m/s, at } t = \\sqrt{3}\\)",
+            "\\(v_{\\max} = \\dfrac{2\\sqrt{3}}{3} - 1 \\approx 0.15 \\text{ m/s, at } t = \\sqrt{3}\\)",
+            "\\(v_{\\max} = \\dfrac{2\\sqrt{3}}{3} - 1 \\approx 0.15 \\text{ m/s, at } t = \\sqrt{3} + 1\\)",
+            "\\(v_{\\max} = \\dfrac{4\\sqrt{4}}{4} - 1 \\approx 0.15 \\text{ m/s, at } t = \\sqrt{4}\\)"
           ],
           "answer": 1,
           "hint": "Maximise $v(t) = \\dfrac{4t}{t^2+3} - 1$ by setting the acceleration $\\dfrac{dv}{dt} = 0$.",
-          "solution": "The correct answer is v_{\\max} = \\dfrac{2\\sqrt{3}}{3} - 1 \\approx 0.15\\) m/s, at \\(t = \\sqrt{3}.",
+          "solution": "The correct answer is \\(v_{\\max} = \\dfrac{2\\sqrt{3}}{3} - 1 \\approx 0.15 \\text{ m/s, at } t = \\sqrt{3}\\).",
           "steps": [
             {
-              "explain": "The velocity is greatest where its derivative — the acceleration — is zero. Differentiate \\(v = \\dfrac{4t}{t^2+3} - 1\\) using the quotient rule.",
-              "work": "\\(a = \\dfrac{dv}{dt} = \\dfrac{4(t^2+3) - 4t(2t)}{(t^2+3)^2} = \\dfrac{12 - 4t^2}{(t^2+3)^2}\\)"
+              "explain": "Differentiate velocity using the quotient rule.",
+              "work": "\\begin{aligned} v &= \\dfrac{4t}{t^2+3} - 1 \\\\ a &= \\dfrac{dv}{dt} = \\dfrac{4(t^2+3) - 4t(2t)}{(t^2+3)^2} \\\\ &= \\dfrac{12 - 4t^2}{(t^2+3)^2} \\end{aligned}"
             },
             {
-              "explain": "Set the numerator to zero to find the stationary point of the velocity (the denominator is always positive).",
-              "work": "\\(4(3 - t^2) = 0 \\implies t = \\sqrt{3} \\;\\; (t \\geq 0)\\)"
+              "explain": "Set the numerator to zero to find the stationary point.",
+              "work": "\\begin{aligned} 12 - 4t^2 &= 0 \\\\ 4t^2 &= 12 \\\\ t^2 &= 3 \\\\ t &= \\sqrt{3} \\quad (t \\geq 0) \\end{aligned}"
             },
             {
-              "explain": "Confirm this is a maximum: the acceleration is positive for \\(t < \\sqrt{3}\\) (velocity increasing) and negative for \\(t > \\sqrt{3}\\) (velocity decreasing), so the velocity peaks at \\(t = \\sqrt{3}\\).",
-              "work": "\\(a > 0 \\text{ for } t < \\sqrt{3}, quad a < 0 \\text{ for } t > \\sqrt{3} \\implies \\text{maximum}\\)"
+              "explain": "Confirm this is a maximum.",
+              "work": "\\begin{aligned} a &> 0 \\text{ for } t < \\sqrt{3} \\\\ a &< 0 \\text{ for } t > \\sqrt{3} \\end{aligned}"
             },
             {
-              "explain": "Substitute \\(t = \\sqrt{3}\\) into the velocity function and simplify, rationalising the fraction. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-              "work": "\\(v(\\sqrt{3}) = \\dfrac{4\\sqrt{3}}{(\\sqrt{3})^2 + 3} - 1 = \\dfrac{4\\sqrt{3}}{6} - 1 = \\dfrac{2\\sqrt{3}}{3} - 1\\)"
+              "explain": "Substitute \\(t = \\sqrt{3}\\) into the velocity function.",
+              "work": "\\begin{aligned} v(\\sqrt{3}) &= \\dfrac{4\\sqrt{3}}{(\\sqrt{3})^2 + 3} - 1 \\\\ &= \\dfrac{4\\sqrt{3}}{6} - 1 \\\\ &= \\dfrac{2\\sqrt{3}}{3} - 1 \\end{aligned}"
             }
           ],
           "meta": {

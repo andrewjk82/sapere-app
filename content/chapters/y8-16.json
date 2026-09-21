@@ -1681,28 +1681,20 @@
               "type": "mc",
               "stem": "a) What is the probability that the marble is blue?",
               "options": [
-                "\\\\(\\\\frac{14}{14}\\\\)",
-                "\\\\(\\\\frac{1}{3}\\\\)",
-                "\\\\(\\\\frac{14}{20}\\\\)",
-                "\\\\(\\\\frac{1}{2}\\\\)"
+                "\\(\\frac{14}{14}\\)",
+                "\\(\\frac{1}{3}\\)",
+                "\\(\\frac{14}{20}\\)",
+                "\\(\\frac{1}{2}\\)"
               ],
               "answer": 3,
               "steps": [
                 {
-                  "explain": "First, find the total number of marbles in the bag.",
-                  "work": "\\(14 + 6 + 8 = 28\\)"
+                  "explain": "Find the total number of marbles.",
+                  "work": "14 + 6 + 8 = 28"
                 },
                 {
-                  "explain": "Identify the number of blue marbles, which are the favourable outcomes.",
-                  "work": "\\(\\text{Blue marbles} = 14\\)"
-                },
-                {
-                  "explain": "Calculate the probability of picking a blue marble by dividing the number of blue marbles by the total number of marbles.",
-                  "work": "\\(P(\\text{blue}) = \\frac{14}{28}\\)"
-                },
-                {
-                  "explain": "Simplify the fraction.",
-                  "work": "\\(P(\\text{blue}) = \\frac{1}{2}\\)"
+                  "explain": "Calculate the probability of picking a blue marble.",
+                  "work": "\\begin{aligned} P(\\text{blue}) &= \\frac{14}{28} \\\\ &= \\frac{1}{2} \\end{aligned}"
                 }
               ]
             },
@@ -1711,28 +1703,20 @@
               "type": "mc",
               "stem": "b) What is the probability that the marble is green?",
               "options": [
-                "\\\\(\\\\frac{3}{7}\\\\)",
-                "\\\\(\\\\frac{1}{6}\\\\)",
-                "\\\\(\\\\frac{3}{14}\\\\)",
-                "\\\\(\\\\frac{6}{22}\\\\)"
+                "\\(\\frac{3}{7}\\)",
+                "\\(\\frac{1}{6}\\)",
+                "\\(\\frac{3}{14}\\)",
+                "\\(\\frac{6}{22}\\)"
               ],
               "answer": 2,
               "steps": [
                 {
-                  "explain": "Find the total number of marbles in the bag.",
-                  "work": "\\(14 + 6 + 8 = 28\\)"
-                },
-                {
-                  "explain": "Identify the number of green marbles.",
-                  "work": "\\(\\text{Green marbles} = 6\\)"
+                  "explain": "Find the total number of marbles.",
+                  "work": "14 + 6 + 8 = 28"
                 },
                 {
                   "explain": "Calculate the probability of picking a green marble.",
-                  "work": "\\(P(\\text{green}) = \\frac{6}{28}\\)"
-                },
-                {
-                  "explain": "Simplify the fraction.",
-                  "work": "\\(P(\\text{green}) = \\frac{3}{14}\\)"
+                  "work": "\\begin{aligned} P(\\text{green}) &= \\frac{6}{28} \\\\ &= \\frac{3}{14} \\end{aligned}"
                 }
               ]
             },
@@ -1741,28 +1725,20 @@
               "type": "mc",
               "stem": "c) What is the probability that the marble is not blue?",
               "options": [
-                "\\\\(\\\\frac{4}{7}\\\\)",
-                "\\\\(\\\\frac{1}{2}\\\\)",
-                "\\\\(\\\\frac{1}{3}\\\\)",
-                "\\\\(\\\\frac{3}{14}\\\\)"
+                "\\(\\frac{4}{7}\\)",
+                "\\(\\frac{1}{2}\\)",
+                "\\(\\frac{1}{3}\\)",
+                "\\(\\frac{3}{14}\\)"
               ],
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Find the total number of marbles in the bag.",
-                  "work": "\\(14 + 6 + 8 = 28\\)"
-                },
-                {
-                  "explain": "Calculate the total number of marbles that are not blue.",
-                  "work": "\\(\\text{Not blue} = 6 + 8 = 14\\)"
+                  "explain": "Find the total number of marbles.",
+                  "work": "14 + 6 + 8 = 28"
                 },
                 {
                   "explain": "Calculate the probability of picking a marble that is not blue.",
-                  "work": "\\(P(\\text{not blue}) = \\frac{14}{28}\\)"
-                },
-                {
-                  "explain": "Simplify the fraction.",
-                  "work": "\\(P(\\text{not blue}) = \\frac{1}{2}\\)"
+                  "work": "\\begin{aligned} P(\\text{not blue}) &= \\frac{6 + 8}{28} \\\\ &= \\frac{14}{28} \\\\ &= \\frac{1}{2} \\end{aligned}"
                 }
               ]
             }

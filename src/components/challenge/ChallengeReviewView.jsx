@@ -348,13 +348,13 @@ const ChallengeReviewView = ({
                 </button>
               )}
             </div>
-            {(q.topicCode || q.topicTitle || q.chapterTitle) && (
+            {(q.topicCode || q.topicTitle || (q.chapterTitle?.startsWith('Search:') ? null : q.chapterTitle) || q.topicId) && (
               <div style={{
                 display: 'inline-block', marginBottom: '12px',
                 fontSize: '0.66rem', fontWeight: 800, letterSpacing: '0.06em', textTransform: 'uppercase',
                 color: '#7c3aed', background: '#f5f3ff', padding: '5px 11px', borderRadius: '999px',
               }}>
-                {[q.topicCode, q.topicTitle || q.chapterTitle].filter(Boolean).join(' · ')}
+                {[q.topicCode, q.topicTitle || (q.chapterTitle?.startsWith('Search:') ? null : q.chapterTitle) || q.topicId].filter(Boolean).join(' · ')}
               </div>
             )}
             {/* Review is always shown post-completion (no pre-feedback state

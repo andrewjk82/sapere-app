@@ -825,7 +825,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
           {activeQ?.topicTitle || activeQ?.chapterTitle ? (
             <div className="sn__topic" style={{ background: accent.soft, color: accent.text, marginBottom: 0 }}>
               {activeQ.topicCode ? `${activeQ.topicCode} · ` : ''}
-              {activeQ.topicTitle || activeQ.chapterTitle}
+              {activeQ.topicTitle || (activeQ.chapterTitle?.startsWith('Search:') ? null : activeQ.chapterTitle) || activeQ.topicId}
             </div>
           ) : <span />}
         </div>

@@ -539,36 +539,36 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "In an arithmetic series, the first term is 18 and the sum of the first 20 terms is 1310. Show that the 20th term is 113.",
+    "question": "In an arithmetic series, the first term is 18 and the sum of the first 20 terms is 1310. Find the 20th term.",
     "opts": [
-      "\\(-S_{20} = \\frac{20}{2}(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113\\)",
-      "\\(S_{20} = \\frac{1}{2}(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113\\)",
-      "\\(S_{20} = \\frac{20}{2}(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113\\)",
-      "\\(S_{20} = \\frac{2}{20}(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113\\)"
+      "\\(65.5\\)",
+      "\\(113\\)",
+      "\\(121\\)",
+      "\\(131\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "1",
     "hint": "Use $S_n = \\frac{n}{2}(a + l)$ where $l$ is the last term.",
-    "solution": "The correct answer is \\(S_{20} = \\frac{20}{2}(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113\\).",
+    "solution": "The correct answer is \\(113\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "The sum of an arithmetic series can be written using the first and last terms: $S_n = \\dfrac{n}{2}(a+l)$, where $l$ is the last (20th) term. Substitute $n=20$, $a=18$, $S_{20}=1310$.",
         "workingOut": "\\(S_{20} = \\frac{20}{2}(18 + l) = 1310\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(10(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113\\)",
+        "explanation": "Simplify the coefficient $\\frac{20}{2}=10$, then divide both sides by 10 to isolate $18+l$.",
+        "workingOut": "\\(10(18+l) = 1310 \\Rightarrow 18+l = 131\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(S_{20} = \\frac{20}{2}(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113\\)",
+        "explanation": "Solve for the last term $l$ by subtracting 18 from both sides.",
+        "workingOut": "\\(l = 131 - 18 = 113\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: S_{20} = \\frac{20}{2}(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(S_{20} = \\frac{20}{2}(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113\\)",
+        "explanation": "So the 20th term is $T_{20} = l = 113$. (Option A comes from mistakenly dividing $S_{20}$ by $n=20$ as if it were a simple average; option D stops at the intermediate value $18+l=131$ without subtracting 18.)",
+        "workingOut": "\\(T_{20} = 113\\)",
         "graphData": null
       }
     ],
@@ -586,10 +586,10 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "In an arithmetic series, the first term is 18 and the 20th term is 113. Find the common difference.",
     "opts": [
-      "\\(\\dfrac{12}{x + 2}\\)",
-      "\\(\\dfrac{13}{x + 3}\\)",
+      "\\(d = 4\\)",
+      "\\(d = -5\\)",
       "\\(d = 5\\)",
-      "\\(d = 5 + 1\\)"
+      "\\(d = 6\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -597,23 +597,18 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "solution": "The correct answer is \\(d = 5\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Use $T_n = a+(n-1)d$ with $n=20$, $a=18$, $T_{20}=113$ (given/found in part (a)).",
         "workingOut": "\\(T_{20} = a + (20-1)d \\Rightarrow 113 = 18 + 19d\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(19d = 95 \\Rightarrow d = 5\\)",
+        "explanation": "Subtract 18 from both sides to isolate the $19d$ term.",
+        "workingOut": "\\(113 - 18 = 19d \\Rightarrow 19d = 95\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(d = 5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: d = 5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(d = 5\\)",
+        "explanation": "Divide both sides by 19 to solve for the common difference $d$.",
+        "workingOut": "\\(d = \\frac{95}{19} = 5\\)",
         "graphData": null
       }
     ],
@@ -631,10 +626,10 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "In an arithmetic series with first term 18 and common difference 5, find the sum of the first 35 terms.",
     "opts": [
-      "\\(\\dfrac{13}{x + 3}\\)",
+      "\\(S_{35} = 3290\\)",
       "\\(S_{35} = 3605\\)",
-      "\\(S_{35} = 3605 + 1\\)",
-      "\\(S_{45} = 4605\\)"
+      "\\(S_{35} = 3395\\)",
+      "\\(S_{35} = 3710\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -642,23 +637,18 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "solution": "The correct answer is \\(S_{35} = 3605\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(S_{35} = \\frac{35}{2}(2 \\times 18 + (35-1) \\times 5)\\)",
+        "explanation": "Use $S_n = \\dfrac{n}{2}(2a+(n-1)d)$ with $n=35$, $a=18$, $d=5$.",
+        "workingOut": "\\(S_{35} = \\frac{35}{2}\\big(2(18) + (35-1)(5)\\big)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(S_{35} = \\frac{35}{2}(36 + 170) = \\frac{35 \\times 206}{2} = 3605\\)",
+        "explanation": "Simplify inside the brackets: $2(18)=36$ and $(35-1)(5) = 34 \\times 5 = 170$.",
+        "workingOut": "\\(S_{35} = \\frac{35}{2}(36 + 170) = \\frac{35}{2}(206)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(S_{35} = 3605\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: S_{35} = 3605. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(S_{35} = 3605\\)",
+        "explanation": "Multiply 35 by 206, then divide by 2 to get the final sum.",
+        "workingOut": "\\(S_{35} = \\frac{35 \\times 206}{2} = \\frac{7210}{2} = 3605\\)",
         "graphData": null
       }
     ],
@@ -1539,26 +1529,26 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Consider the direction of the trend and how closely the points follow a line.",
-    "solution": "The correct answer is Strong, positive, linear association..",
+    "solution": "The correct answer is Strong, positive, linear association.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\text{Direction: positive}\\)",
+        "explanation": "The scatterplot shows an upward trend — as fertiliser $x$ increases, yield $y$ also tends to increase — so the direction is positive.",
+        "workingOut": "\\(\\text{Trend: upward} \\Rightarrow \\text{positive direction}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{Strength: strong}\\)",
+        "explanation": "The strength is measured by $|r| = \\sqrt{R^2}$. Take the square root of the given $R^2 = 0.9453$.",
+        "workingOut": "\\(|r| = \\sqrt{0.9453} \\approx 0.9723\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "Strong, positive, linear association.",
+        "explanation": "Since $|r| \\approx 0.972$ is very close to 1, the association is strong. The problem also states the points show a \"clear upward linear trend\", confirming a linear (not curved) pattern.",
+        "workingOut": "\\(|r| \\approx 0.972 \\Rightarrow \\text{strong; linear trend given} \\Rightarrow \\text{linear}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Strong, positive, linear association.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Strong, positive, linear association.",
+        "explanation": "Combine strength, direction, and pattern into the final description.",
+        "workingOut": "\\(\\text{Strong, positive, linear association}\\)",
         "graphData": null
       }
     ],
@@ -1574,35 +1564,40 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "For the tomato fertiliser data, determine the equation of the least-squares regression line. Round values to 2 significant figures. (Data: $x$: 1.0, 1.0, 1.5, 2.0, 2.5, 2.8, 3.0, 3.5; $y$: 3.9, 4.0, 4.4, 5.8, 6.6, 6.8, 7.0, 7.1)",
+    "question": "The tomato fertiliser data is shown below.\n\n\\begin{array}{c|cccccccc} x\\ (\\text{fertiliser}) & 1.0 & 1.0 & 1.5 & 2.0 & 2.5 & 2.8 & 3.0 & 3.5 \\\\ \\hline y\\ (\\text{yield}) & 3.9 & 4.0 & 4.4 & 5.8 & 6.6 & 6.8 & 7.0 & 7.1 \\end{array}\n\nDetermine the equation of the least-squares regression line. Round values to 2 significant figures.",
     "opts": [
       "\\(y \\approx 1.4x + 2.6\\)",
-      "\\(y \\approx 1.4x + 2.6 + 1\\)",
+      "\\(y \\approx 0.69x + 2.6\\)",
       "\\(y \\approx 1.4x + 4.6\\)",
       "\\(y \\approx 1.4x - 2.6\\)"
     ],
     "a": 0,
     "answer": "0",
-    "hint": "Use a calculator in statistics mode to find the regression coefficients $A$ (intercept) and $B$ (gradient), rounded to 2 significant figures.",
+    "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute the regression coefficients directly.",
     "solution": "The correct answer is \\(y \\approx 1.4x + 2.6\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(A \\approx 2.59, B \\approx 1.44\\)",
+        "explanation": "First, lay out the data in a table pairing each fertiliser amount $x$ with the tomato yield $y$ — this is exactly how the values will be entered into the calculator.",
+        "workingOut": "\\(\\begin{array}{c|cccccccc} x\\ (\\text{fertiliser}) & 1.0 & 1.0 & 1.5 & 2.0 & 2.5 & 2.8 & 3.0 & 3.5 \\\\ \\hline y\\ (\\text{yield}) & 3.9 & 4.0 & 4.4 & 5.8 & 6.6 & 6.8 & 7.0 & 7.1 \\end{array}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y \\approx 1.4x + 2.6\\)",
+        "explanation": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+        "workingOut": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y \\approx 1.4x + 2.6\\)",
+        "explanation": "Enter the $x$ values (independent variable) into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the $y$ values (dependent variable) the same way.",
+        "workingOut": "\\(X: 1.0\\texttt{=}\\ 1.0\\texttt{=}\\ 1.5\\texttt{=}\\ 2.0\\texttt{=}\\ 2.5\\texttt{=}\\ 2.8\\texttt{=}\\ 3.0\\texttt{=}\\ 3.5\\texttt{=} \\qquad Y: 3.9\\texttt{=}\\ 4.0\\texttt{=}\\ 4.4\\texttt{=}\\ 5.8\\texttt{=}\\ 6.6\\texttt{=}\\ 6.8\\texttt{=}\\ 7.0\\texttt{=}\\ 7.1\\texttt{=}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: y \\approx 1.4x + 2.6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Once all 8 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg}$. Select $\\texttt{1:}A$ to display the intercept, then repeat and select $\\texttt{2:}B$ to display the slope.",
+        "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{1:}A \\to \\texttt{=}; \\quad \\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{2:}B \\to \\texttt{=}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The calculator displays $A \\approx 2.59$ and $B \\approx 1.44$. Round both to 2 significant figures ($A \\approx 2.6$, $B \\approx 1.4$) and write the equation as $y = Bx + A$.",
         "workingOut": "\\(y \\approx 1.4x + 2.6\\)",
         "graphData": null
       }
@@ -1622,9 +1617,9 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "question": "A plant with 2.2 grams of fertiliser was not recorded by accident. Calculate the predicted yield for this plant using the regression line $y = 1.4x + 2.6$.",
     "opts": [
       "\\(y \\approx 5.68\\) kg",
-      "\\(y \\approx 5.68\\) kg + 1",
-      "\\(\\dfrac{12}{x + 2}\\)",
-      "\\(\\dfrac{13}{x + 3}\\)"
+      "\\(y \\approx 3.08\\) kg",
+      "\\(y \\approx 5.88\\) kg",
+      "\\(y \\approx 6.68\\) kg"
     ],
     "a": 0,
     "answer": "0",
@@ -1632,23 +1627,18 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "solution": "The correct answer is \\(y \\approx 5.68\\) kg.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = 1.4(2.2) + 2.6 = 3.08 + 2.6 = 5.68 \\text{ kg}\\)",
+        "explanation": "Substitute $x = 2.2$ into the regression equation $y = 1.4x + 2.6$.",
+        "workingOut": "\\(y = 1.4(2.2) + 2.6\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Multiply $1.4 \\times 2.2$ first.",
+        "workingOut": "\\(y = 3.08 + 2.6\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y \\approx 5.68\\) kg",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: \\(y \\approx 5.68\\) kg. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(y \\approx 5.68\\) kg",
+        "explanation": "Add to find the predicted yield.",
+        "workingOut": "\\(y \\approx 5.68 \\text{ kg}\\)",
         "graphData": null
       }
     ],
@@ -1674,26 +1664,21 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "Extrapolation assumes the trend continues beyond the data range, which may not be valid.",
-    "solution": "The correct answer is The linear relationship may not hold beyond the observed range of the data. High doses of fertiliser could damage the plants, so the yield may plateau or decrease rather than continue to rise linearly..",
+    "solution": "The correct answer is The linear relationship may not hold beyond the observed range of the data. High doses of fertiliser could damage the plants, so the yield may plateau or decrease rather than continue to rise linearly.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\text{Extrapolation is unreliable beyond the data range}\\)",
+        "explanation": "A regression line is only fitted to, and only reliable within, the range of $x$-values actually observed in the data (here, roughly 1.0 to 3.5 grams of fertiliser).",
+        "workingOut": "\\(\\text{Regression line valid only within the observed data range}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Predicting $y$ for an $x$-value well outside that range (\"high rates of fertiliser\") is extrapolation — there is no evidence the same linear pattern continues out there.",
+        "workingOut": "\\(\\text{High fertiliser rate} \\Rightarrow \\text{outside observed range} \\Rightarrow \\text{extrapolation}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "The linear relationship may not hold beyond the observed range of the data. High doses of fertiliser could damage the plants, so the yield may plateau or decrease rather than continue to rise linearly.",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: The linear relationship may not hold beyond the observed range of the data. High doses of fertiliser could damage the plants, so the yield may plateau or decrease rather than continue to rise linearly.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "The linear relationship may not hold beyond the observed range of the data. High doses of fertiliser could damage the plants, so the yield may plateau or decrease rather than continue to rise linearly.",
+        "explanation": "In this real-world context, plants have biological limits: too much fertiliser can damage roots or leaves, so yield is likely to plateau or decline rather than keep rising linearly forever.",
+        "workingOut": "\\(\\text{Excess fertiliser can harm plants} \\Rightarrow \\text{yield may plateau/decrease}\\)",
         "graphData": null
       }
     ],

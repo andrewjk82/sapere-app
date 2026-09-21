@@ -405,18 +405,23 @@ export const CARINGBAH_2020_QUESTIONS = [
     "solution": "The correct answer is \\(n(2n+1)\\ln 2\\).",
     "solutionSteps": [
       {
-        "explanation": "Rewrite each logarithm term using the log power rule \\(\\ln a^k = k\\ln a\\), expressing everything as a multiple of \\(\\ln 2\\).",
+        "explanation": "Rewrite each logarithm term using the log power rule $\\ln a^k = k\\ln a$, expressing every term as a multiple of $\\ln 2$: the terms are $\\ln 2^1, \\ln 2^2, \\ln 2^3, \\ldots, \\ln 2^{2n}$.",
         "workingOut": "\\(\\ln 2^1 + \\ln 2^2 + \\ln 2^3 + \\cdots + \\ln 2^{2n} = (1 + 2 + 3 + \\cdots + 2n)\\ln 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the inner sum as an arithmetic series with first term \\(a = 1\\), last term \\(l = 2n\\), and \\(2n\\) terms in total.",
-        "workingOut": "\\(a = 1, quad l = 2n, quad n_{\\text{terms}} = 2n\\)",
+        "explanation": "The bracketed sum $1+2+3+\\cdots+2n$ is an arithmetic series with first term $a=1$, common difference $d=1$, last term $l=2n$, and $2n$ terms in total.",
+        "workingOut": "\\(a = 1,\\ d = 1,\\ l = 2n,\\ \\text{number of terms} = 2n\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the arithmetic series sum formula \\(S = \\frac{n_{\\text{terms}}}{2}(a + l)\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(S = \\dfrac{2n}{2}(1 + 2n) = n(1 + 2n)\\)",
+        "explanation": "Apply the arithmetic series sum formula $S = \\dfrac{n_{\\text{terms}}}{2}(a+l)$ with $n_{\\text{terms}} = 2n$, $a=1$, $l=2n$.",
+        "workingOut": "\\(S = \\frac{2n}{2}(1 + 2n) = n(2n+1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply this sum back by the common factor $\\ln 2$ to get the value of the original series.",
+        "workingOut": "\\(\\ln 2 + \\ln 4 + \\ln 8 + \\cdots + \\ln 2^{2n} = n(2n+1)\\ln 2\\)",
         "graphData": null
       }
     ],
@@ -1267,40 +1272,101 @@ export const CARINGBAH_2020_QUESTIONS = [
     "topicId": "y12a-exam",
     "c": "9E",
     "t": "Line of best fit",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "The table below shows the English marks ($x$) and Mathematics marks ($y$) for a class of 12 students (A–L). Only the English mark is available for student $L$ ($x = 80$).\n\n(a) Calculate the correlation coefficient between $x$ and $y$ for students $A$ to $K$. Describe the nature of the correlation.\n\n(b) Find the equation of the least squares regression line of $y$ on $x$ for students $A$ to $K$. Estimate the Mathematics mark of student $L$.",
-    "opts": [
-      "\\(\\dfrac{9}{5}\\)",
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
-      "(a) \\(r \\approx 0.9\\); strong positive correlation.\n\n(b) \\(y = 18 + 0.72x\\); student \\(L\\)'s estimated mark \\(\\approx 76\\)."
-    ],
-    "a": 3,
-    "answer": "3",
-    "hint": "Use a calculator in statistics mode. Describe the sign and strength of $r$. Substitute $x = 80$ into the regression line to predict $L$'s mark.",
-    "solution": "The correct answer is (a) \\(r \\approx 0.9\\); strong positive correlation.\n\n(b) \\(y = 18 + 0.72x\\); student \\(L\\)'s estimated mark \\(\\approx 76\\)..",
-    "solutionSteps": [
+    "type": "multi_part",
+    "isManual": true,
+    "question": "The table below shows the English marks ($x$) and Mathematics marks ($y$) for 11 students (A–K). A 12th student, $L$, only has an English mark recorded ($x = 80$); their Mathematics mark is missing.\n\n\\begin{array}{c|ccccccccccc} \\text{Student} & A & B & C & D & E & F & G & H & I & J & K \\\\ \\hline x\\ (\\text{English}) & 45 & 50 & 55 & 60 & 65 & 68 & 72 & 75 & 80 & 85 & 90 \\\\ \\hline y\\ (\\text{Maths}) & 47 & 58 & 52 & 63 & 70 & 63 & 73 & 70 & 82 & 74 & 84 \\end{array}",
+    "a": "",
+    "solution": "",
+    "subQuestions": [
       {
-        "explanation": "Enter the data for students A to K into a calculator and compute the correlation coefficient \\(r\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(r \\approx 0.9\\)",
-        "graphData": null
+        "id": "car2020-q26a",
+        "topicId": "y12a-exam",
+        "c": "9E",
+        "t": "Line of best fit",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "(a) Calculate the correlation coefficient $r$ between $x$ and $y$ for students A to K, correct to 2 decimal places, and describe the nature of the correlation.",
+        "opts": [
+          "\\(r \\approx 0.93\\); strong positive correlation",
+          "\\(r \\approx 0.58\\); moderate positive correlation",
+          "\\(r \\approx 0.93\\); strong negative correlation",
+          "\\(r \\approx -0.93\\); strong negative correlation"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute Pearson's correlation coefficient directly.",
+        "solution": "The correct answer is \\(r \\approx 0.93\\); strong positive correlation.",
+        "solutionSteps": [
+          {
+            "explanation": "The data for students A to K is shown in the table above, pairing each student's English mark $x$ with their Mathematics mark $y$ — this is exactly how the values will be entered into the calculator.",
+            "workingOut": "\\(\\begin{array}{c|ccccccccccc} x & 45 & 50 & 55 & 60 & 65 & 68 & 72 & 75 & 80 & 85 & 90 \\\\ \\hline y & 47 & 58 & 52 & 63 & 70 & 63 & 73 & 70 & 82 & 74 & 84 \\end{array}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+            "workingOut": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Enter the 11 English marks into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the 11 Maths marks the same way.",
+            "workingOut": "\\(X: 45\\texttt{=}\\ 50\\texttt{=}\\ 55\\texttt{=}\\ 60\\texttt{=}\\ 65\\texttt{=}\\ 68\\texttt{=}\\ 72\\texttt{=}\\ 75\\texttt{=}\\ 80\\texttt{=}\\ 85\\texttt{=}\\ 90\\texttt{=} \\qquad Y: 47\\texttt{=}\\ 58\\texttt{=}\\ 52\\texttt{=}\\ 63\\texttt{=}\\ 70\\texttt{=}\\ 63\\texttt{=}\\ 73\\texttt{=}\\ 70\\texttt{=}\\ 82\\texttt{=}\\ 74\\texttt{=}\\ 84\\texttt{=}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Once all 11 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg} \\to \\texttt{3:}r$, then press $\\texttt{=}$ to display the correlation coefficient.",
+            "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{3:}r \\to \\texttt{=}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The calculator displays $r \\approx 0.93$. Since $|r|$ is close to 1 and $r>0$, this is a strong positive correlation — as English marks increase, Mathematics marks tend to increase too.",
+            "workingOut": "\\(r \\approx 0.93 \\Rightarrow \\text{strong positive correlation}\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "isNew": true,
+        "requiresManualGrading": false
       },
       {
-        "explanation": "Interpret \\(r\\): since \\(r\\) is close to \\(+1\\), the correlation is strong and positive — as English marks increase, Mathematics marks tend to increase as well.",
-        "workingOut": "\\(\\text{Strong positive correlation}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Using the calculator's linear regression function, find the least squares regression line. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(y = 18 + 0.72x\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Substitute student \\(L\\)'s English mark \\(x = 80\\) into the regression equation. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(y = 18 + 0.72(80) = 18 + 57.6 = 75.6\\)",
-        "graphData": null
+        "id": "car2020-q26b",
+        "topicId": "y12a-exam",
+        "c": "9E",
+        "t": "Line of best fit",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "(b) Find the equation of the least-squares regression line of $y$ on $x$ for students A to K, then use it to estimate student $L$'s Mathematics mark.",
+        "opts": [
+          "\\(y = 16.09 + 0.75x\\); estimated mark \\(\\approx 76\\)",
+          "\\(y = -16.09 + 0.75x\\); estimated mark \\(\\approx 44\\)",
+          "\\(y = 16.09 + 0.75x\\); estimated mark \\(\\approx 70\\)",
+          "\\(y = 16.09 - 0.75x\\); estimated mark \\(\\approx -44\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute the regression coefficients directly, then substitute $x=80$.",
+        "solution": "The correct answer is \\(y = 16.09 + 0.75x\\); estimated mark \\(\\approx 76\\).",
+        "solutionSteps": [
+          {
+            "explanation": "With the same 11 $(x,y)$ pairs still entered from part (a), open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg}$. Select $\\texttt{1:}A$ to display the intercept, then repeat and select $\\texttt{2:}B$ to display the slope.",
+            "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{1:}A \\to \\texttt{=}; \\quad \\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{2:}B \\to \\texttt{=}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The calculator displays $A \\approx 16.09$ (intercept) and $B \\approx 0.75$ (slope). Write the equation as $y = A + Bx$.",
+            "workingOut": "\\(y = 16.09 + 0.75x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute student $L$'s English mark $x = 80$ into the regression equation to estimate their Mathematics mark.",
+            "workingOut": "\\(y = 16.09 + 0.75(80) = 16.09 + 60 = 76.09 \\approx 76\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "isNew": true,
+        "requiresManualGrading": false
       }
     ],
     "graphData": null,

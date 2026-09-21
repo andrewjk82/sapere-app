@@ -10931,118 +10931,7 @@
           "difficulty": "medium",
           "stem": "Find the value of \\(\\beta\\) in degrees.",
           "figure": {
-            "geometry": {
-              "width": 280,
-              "points": {
-                "A": [
-                  0,
-                  6
-                ],
-                "B": [
-                  6,
-                  6
-                ],
-                "C": [
-                  0,
-                  0
-                ],
-                "D": [
-                  6,
-                  0
-                ],
-                "E": [
-                  12,
-                  0
-                ],
-                "F": [
-                  6,
-                  -6
-                ]
-              },
-              "segments": [
-                {
-                  "from": "A",
-                  "to": "B",
-                  "ticks": 1
-                },
-                {
-                  "from": "B",
-                  "to": "D",
-                  "ticks": 1
-                },
-                {
-                  "from": "D",
-                  "to": "C",
-                  "ticks": 1
-                },
-                {
-                  "from": "C",
-                  "to": "A",
-                  "ticks": 1
-                },
-                {
-                  "from": "C",
-                  "to": "B",
-                  "arrow": true
-                },
-                {
-                  "from": "B",
-                  "to": "E",
-                  "arrow": true
-                },
-                {
-                  "from": "C",
-                  "to": "F",
-                  "arrow": true
-                },
-                {
-                  "from": "F",
-                  "to": "E"
-                }
-              ],
-              "angles": [
-                {
-                  "at": "A",
-                  "right": true
-                },
-                {
-                  "at": "F",
-                  "right": true
-                }
-              ],
-              "sideLabels": [
-                {
-                  "between": [
-                    "A",
-                    "B"
-                  ],
-                  "text": "6"
-                },
-                {
-                  "between": [
-                    "D",
-                    "E"
-                  ],
-                  "text": "x"
-                }
-              ],
-              "freeLabels": [
-                {
-                  "point": [
-                    1,
-                    0.4
-                  ],
-                  "text": "α"
-                },
-                {
-                  "point": [
-                    6.6,
-                    -1
-                  ],
-                  "text": "β"
-                }
-              ]
-            }
+            "svg": "fig:59f0136cbb"
           },
           "options": [
             "\\(47\\)",
@@ -11051,138 +10940,21 @@
             "\\(46\\)"
           ],
           "answer": 2,
-          "hint": "Determine the angles of the right-angled isosceles triangle \\(\\triangle CFE\\).",
-          "solution": "The bottom triangle \\(\\triangle CFE\\) is a right-angled isosceles triangle. Since \\(\\angle FCE = 45^\\circ\\) and \\(\\angle CFE = 90^\\circ\\), we have \\(\\angle FEC = 45^\\circ\\). The angle \\(\\beta\\) is between the vertical bisector and the side \\(FE\\), which is \\(45^\\circ\\).",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(\\beta = 45^\\circ\\)",
+              "explain": "The parallel segments extend the square to form a right-angled triangle \\(\\triangle FDE\\) where \\(DE = 6\\) and \\(DF = 6\\).",
+              "work": "\\text{See highlighted } \\triangle FDE",
               "figure": {
-                "geometry": {
-                  "width": 280,
-                  "points": {
-                    "A": [
-                      0,
-                      6
-                    ],
-                    "B": [
-                      6,
-                      6
-                    ],
-                    "C": [
-                      0,
-                      0
-                    ],
-                    "D": [
-                      6,
-                      0
-                    ],
-                    "E": [
-                      12,
-                      0
-                    ],
-                    "F": [
-                      6,
-                      -6
-                    ]
-                  },
-                  "segments": [
-                    {
-                      "from": "A",
-                      "to": "B",
-                      "ticks": 1
-                    },
-                    {
-                      "from": "B",
-                      "to": "D",
-                      "ticks": 1
-                    },
-                    {
-                      "from": "D",
-                      "to": "C",
-                      "ticks": 1
-                    },
-                    {
-                      "from": "C",
-                      "to": "A",
-                      "ticks": 1
-                    },
-                    {
-                      "from": "C",
-                      "to": "B",
-                      "arrow": true
-                    },
-                    {
-                      "from": "B",
-                      "to": "E",
-                      "arrow": true
-                    },
-                    {
-                      "from": "C",
-                      "to": "F",
-                      "arrow": true
-                    },
-                    {
-                      "from": "F",
-                      "to": "E"
-                    }
-                  ],
-                  "angles": [
-                    {
-                      "at": "A",
-                      "right": true
-                    },
-                    {
-                      "at": "F",
-                      "right": true
-                    }
-                  ],
-                  "sideLabels": [
-                    {
-                      "between": [
-                        "A",
-                        "B"
-                      ],
-                      "text": "6"
-                    },
-                    {
-                      "between": [
-                        "D",
-                        "E"
-                      ],
-                      "text": "x"
-                    }
-                  ],
-                  "freeLabels": [
-                    {
-                      "point": [
-                        1,
-                        0.4
-                      ],
-                      "text": "α"
-                    },
-                    {
-                      "point": [
-                        6.6,
-                        -1
-                      ],
-                      "text": "β"
-                    }
-                  ]
-                }
+                "svg": "fig:9cda7cdd1d"
               }
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "State the rule"
+              "explain": "Since \\(\\triangle FDE\\) has two equal sides (\\(DF = DE = 6\\)) and a right angle at \\(D\\), it is a right-angled isosceles triangle.",
+              "work": "\\triangle FDE \\text{ is right-angled isosceles}"
             },
             {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(45\\)"
-            },
-            {
-              "explain": "Final answer: 45. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(45\\)"
+              "explain": "The base angles of a right-angled isosceles triangle are \\(45^\\circ\\).",
+              "work": "\\beta = 45^\\circ"
             }
           ],
           "alsoIn": [

@@ -425,23 +425,23 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "solution": "The correct answer is \\(n(2n+1)\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Caringbah 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\((1+2+3+\\cdots+2n)\\ln 3\\)",
+        "explanation": "Rewrite each logarithm term using the log power rule $\\ln a^k = k\\ln a$, expressing every term as a multiple of $\\ln 3$: the terms are $\\ln 3^1, \\ln 3^2, \\ln 3^3, \\ldots, \\ln 3^{2n}$.",
+        "workingOut": "\\(\\ln 3^1 + \\ln 3^2 + \\ln 3^3 + \\cdots + \\ln 3^{2n} = (1 + 2 + 3 + \\cdots + 2n)\\ln 3\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(n(2n+1)\\)",
+        "explanation": "The bracketed sum $1+2+3+\\cdots+2n$ is an arithmetic series with first term $a=1$, common difference $d=1$, last term $l=2n$, and $2n$ terms in total.",
+        "workingOut": "\\(a = 1,\\ d = 1,\\ l = 2n,\\ \\text{number of terms} = 2n\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(n(2n+1)\\ln 3\\)",
+        "explanation": "Apply the arithmetic series sum formula $S = \\dfrac{n_{\\text{terms}}}{2}(a+l)$ with $n_{\\text{terms}} = 2n$, $a=1$, $l=2n$.",
+        "workingOut": "\\(S = \\frac{2n}{2}(1 + 2n) = n(2n+1)\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: n(2n+1)\\ln 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(n(2n+1)\\ln 3\\)",
+        "explanation": "Multiply this sum back by the common factor $\\ln 3$ to get the value of the original series.",
+        "workingOut": "\\(\\ln 3 + \\ln 9 + \\ln 27 + \\cdots + \\ln 3^{2n} = n(2n+1)\\ln 3\\)",
         "graphData": null
       }
     ],
@@ -1280,40 +1280,96 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "topicId": "y12a-exam",
     "c": "9E",
     "t": "Line of best fit",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Data shows Science marks ($x$) and History marks ($y$) for 10 students. The correlation coefficient is $r = 0.85$ and the regression line is $y = 12 + 0.65x$. A student scored $70$ in Science but their History mark was not recorded.\n\n(a) Describe the nature of the correlation coefficient.\n\n(b) Estimate the student's History mark.",
-    "opts": [
-      "\\(\\dfrac{7}{3}\\)",
-      "(a) Strong positive correlation.\n\n(b) \\(\\approx 57.5\\), so approximately \\(58\\).",
-      "\\(\\dfrac{12}{x + 2}\\)",
-      "\\(\\dfrac{13}{x + 3}\\)"
-    ],
-    "a": 1,
-    "answer": "1",
-    "hint": "For (a), interpret $r = 0.85$ in terms of direction and strength. For (b), substitute $x = 70$ into the regression line.",
-    "solution": "The correct answer is (a) Strong positive correlation.\n\n(b) \\(\\approx 57.5\\), so approximately \\(58\\)..",
-    "solutionSteps": [
+    "type": "multi_part",
+    "isManual": true,
+    "question": "The table below shows the Science marks ($x$) and History marks ($y$) for 10 students. An 11th student scored $70$ in Science, but their History mark was not recorded.\n\n\\begin{array}{c|cccccccccc} x\\ (\\text{Science}) & 40 & 48 & 52 & 58 & 63 & 67 & 72 & 78 & 83 & 90 \\\\ \\hline y\\ (\\text{History}) & 44 & 40 & 50 & 46 & 58 & 52 & 64 & 58 & 70 & 66 \\end{array}",
+    "a": "",
+    "solution": "",
+    "subQuestions": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Caringbah 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\text{Strong positive correlation}\\)",
-        "graphData": null
+        "id": "car2020s-q26a",
+        "topicId": "y12a-exam",
+        "c": "9E",
+        "t": "Line of best fit",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "(a) Calculate the correlation coefficient $r$ between $x$ and $y$, correct to 2 decimal places, and describe the nature of the correlation.",
+        "opts": [
+          "\\(r \\approx 0.89\\); strong positive correlation",
+          "\\(r \\approx 0.55\\); moderate positive correlation",
+          "\\(r \\approx 0.89\\); strong negative correlation",
+          "\\(r \\approx -0.89\\); strong negative correlation"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute Pearson's correlation coefficient directly.",
+        "solution": "The correct answer is \\(r \\approx 0.89\\); strong positive correlation.",
+        "solutionSteps": [
+          {
+            "explanation": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+            "workingOut": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Enter the 10 Science marks into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the 10 History marks the same way.",
+            "workingOut": "\\(X: 40\\texttt{=}\\ 48\\texttt{=}\\ 52\\texttt{=}\\ 58\\texttt{=}\\ 63\\texttt{=}\\ 67\\texttt{=}\\ 72\\texttt{=}\\ 78\\texttt{=}\\ 83\\texttt{=}\\ 90\\texttt{=} \\qquad Y: 44\\texttt{=}\\ 40\\texttt{=}\\ 50\\texttt{=}\\ 46\\texttt{=}\\ 58\\texttt{=}\\ 52\\texttt{=}\\ 64\\texttt{=}\\ 58\\texttt{=}\\ 70\\texttt{=}\\ 66\\texttt{=}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Once all 10 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg} \\to \\texttt{3:}r$, then press $\\texttt{=}$ to display the correlation coefficient.",
+            "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{3:}r \\to \\texttt{=}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The calculator displays $r \\approx 0.89$. Since $|r|$ is close to 1 and $r>0$, this is a strong positive correlation — as Science marks increase, History marks tend to increase too.",
+            "workingOut": "\\(r \\approx 0.89 \\Rightarrow \\text{strong positive correlation}\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "isNew": true,
+        "requiresManualGrading": false
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y = 12 + 0.65(70) = 12 + 45.5 = 57.5 \\approx 58\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "(a) Strong positive correlation.\n\n(b) \\(\\approx 57.5\\), so approximately \\(58\\).",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: (a) Strong positive correlation.\n\n(b) \\(\\approx 57.5\\), so approximately \\(58\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "(a) Strong positive correlation.\n\n(b) \\(\\approx 57.5\\), so approximately \\(58\\).",
-        "graphData": null
+        "id": "car2020s-q26b",
+        "topicId": "y12a-exam",
+        "c": "9E",
+        "t": "Line of best fit",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "(b) Find the equation of the least-squares regression line of $y$ on $x$, then use it to estimate the 11th student's History mark.",
+        "opts": [
+          "\\(y = 18.31 + 0.56x\\); estimated mark \\(\\approx 58\\)",
+          "\\(y = -18.31 + 0.56x\\); estimated mark \\(\\approx 21\\)",
+          "\\(y = 18.31 + 0.56x\\); estimated mark \\(\\approx 51\\)",
+          "\\(y = 18.31 - 0.56x\\); estimated mark \\(\\approx -21\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute the regression coefficients directly, then substitute $x=70$.",
+        "solution": "The correct answer is \\(y = 18.31 + 0.56x\\); estimated mark \\(\\approx 58\\).",
+        "solutionSteps": [
+          {
+            "explanation": "With the same 10 $(x,y)$ pairs still entered from part (a), open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg}$. Select $\\texttt{1:}A$ to display the intercept, then repeat and select $\\texttt{2:}B$ to display the slope.",
+            "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{1:}A \\to \\texttt{=}; \\quad \\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{2:}B \\to \\texttt{=}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The calculator displays $A \\approx 18.31$ (intercept) and $B \\approx 0.56$ (slope). Write the equation as $y = A + Bx$.",
+            "workingOut": "\\(y = 18.31 + 0.56x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute the 11th student's Science mark $x = 70$ into the regression equation to estimate their History mark.",
+            "workingOut": "\\(y = 18.31 + 0.56(70) = 18.31 + 39.2 = 57.51 \\approx 58\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "isNew": true,
+        "requiresManualGrading": false
       }
     ],
     "graphData": null,

@@ -93,7 +93,7 @@ export const CRANBROOK_2023_QUESTIONS = [
         "boardOptions": {
           "keepaspectratio": false
         },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0],[12,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,0],[0,11]], {strokeColor:'black'});\nvar pts = [[1.5,2],[2.5,8],[4.5,7],[4.5,9],[5,6.5],[5,5],[6.5,4.5],[5.5,3],[9,9.5],[9,8.5],[11,6]];\nfor (var i=0;i<pts.length;i++){ board.create('point', pts[i], {name:'', size:3, color:'#475569', fixed:true}); }\nboard.create('point', [4,6.5], {name:'A', size:3, color:'#475569', fixed:true, label:{offset:[-14,2], fontSize:15}});\nboard.create('point', [7,4.5], {name:'B', size:3, color:'#475569', fixed:true, label:{offset:[10,2], fontSize:15}});\nboard.create('text', [4.5, -1.1, 'weight (kg)'], {fontSize:13});\nboard.create('text', [0.2, 10.6, 'height (cm)'], {fontSize:13});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0],[12,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,0],[0,11]], {strokeColor:'black'});\nvar pts = [[1.5,2],[2.5,8],[4.5,7],[4.5,9],[5,6.5],[5,5],[6.5,4.5],[5.5,3],[9,9.5],[9,8.5],[11,6]];\nfor (var i=0;i<pts.length;i++){ board.create('point', pts[i], {name:'', size:3, color:'#475569', fixed:true}); }\nboard.create('point', [2,9.3], {name:'A', size:4, color:'#dc2626', fixed:true, label:{offset:[-18,10], fontSize:15, cssStyle:'font-weight:bold'}});\nboard.create('point', [7,4.5], {name:'B', size:3, color:'#475569', fixed:true, label:{offset:[10,2], fontSize:15}});\nboard.create('text', [4.5, -1.1, 'weight (kg)'], {fontSize:13});\nboard.create('text', [0.2, 10.6, 'height (cm)'], {fontSize:13});\nboard.unsuspendUpdate();"
       }
     },
     "isNew": true,
@@ -177,6 +177,16 @@ export const CRANBROOK_2023_QUESTIONS = [
       {
         "explanation": "Solve the two equations simultaneously. Substitute \\(a = 7 - d\\) from the first equation into the second to eliminate \\(a\\).",
         "workingOut": "\\(2(7 - d) + 3d = 18 \\implies 14 + d = 18 \\implies d = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute \\(d = 4\\) back into \\(a = 7 - d\\) to find the first term \\(a\\).",
+        "workingOut": "\\(a = 7 - 4 = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Use \\(S_n = \\dfrac{n}{2}(2a+(n-1)d)\\) with \\(n=5\\), \\(a=3\\), \\(d=4\\) to find the sum of the first 5 terms.",
+        "workingOut": "\\(S_5 = \\frac{5}{2}(2(3) + 4(4)) = \\frac{5}{2}(6+16) = \\frac{5}{2}(22) = 55\\)",
         "graphData": null
       }
     ],
@@ -1197,7 +1207,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Ivy has plotted the income she received each week for the past five weeks: $(1, 200), (2, 100), (3, 300), (4, 300), (5, 400)$, where the first coordinate is the week number $n$ and the second is the amount in dollars. Over the same five weeks, Ivy's expenses, which were originally $200 per week, increase by $20 each week. Write the equation of the least-squares regression line for Ivy's income, and determine the equation of Ivy's expenses.",
+    "question": "Ivy has recorded the income she received each week for the past five weeks, where $n$ is the week number.\n\n\\begin{array}{c|ccccc} n\\ (\\text{week}) & 1 & 2 & 3 & 4 & 5 \\\\ \\hline \\text{Income (\\$)} & 200 & 100 & 300 & 300 & 400 \\end{array}\n\nOver the same five weeks, Ivy's expenses, which were originally $200 per week, increase by $20 each week. Write the equation of the least-squares regression line for Ivy's income, and determine the equation of Ivy's expenses.",
     "opts": [
       "Income \\(= 60n + 80\\); Expenses \\(= 20n + 180\\)",
       "Income \\(= 10n + 230\\); Expenses \\(= 20n + 180\\)",
@@ -1210,37 +1220,37 @@ export const CRANBROOK_2023_QUESTIONS = [
     "solution": "The correct answer is Income \\(= 60n + 80\\); Expenses \\(= 20n + 180\\).",
     "solutionSteps": [
       {
-        "explanation": "Compute the means of the week numbers and the income values, which are needed for the least-squares formulas.",
-        "workingOut": "\\(\\bar{n} = \\dfrac{1+2+3+4+5}{5} = 3, quad \\bar{y} = \\dfrac{200+100+300+300+400}{5} = 260\\)",
+        "explanation": "First, lay out Ivy's income data in a table pairing each week $n$ with the income received — this is exactly how the values will be entered into the calculator.",
+        "workingOut": "\\(\\begin{array}{c|ccccc} n & 1 & 2 & 3 & 4 & 5 \\\\ \\hline \\text{Income (\\$)} & 200 & 100 & 300 & 300 & 400 \\end{array}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compute the two sums required for the gradient: the sum of the products \\(\\sum ny\\) and the sum of squares \\(\\sum n^2\\).",
-        "workingOut": "\\(\\sum ny = 200 + 200 + 900 + 1200 + 2000 = 4500, quad \\sum n^2 = 1+4+9+16+25 = 55\\)",
+        "explanation": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+        "workingOut": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply the least-squares gradient formula, which measures how income co-varies with the week number. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(b = \\dfrac{\\sum ny - 5\\bar{n}\\bar{y}}{\\sum n^2 - 5\\bar{n}^2} = \\dfrac{4500 - 3900}{55 - 45} = \\dfrac{600}{10} = 60\\)",
+        "explanation": "Enter the week numbers into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the income values the same way.",
+        "workingOut": "\\(X: 1\\texttt{=}\\ 2\\texttt{=}\\ 3\\texttt{=}\\ 4\\texttt{=}\\ 5\\texttt{=} \\qquad Y: 200\\texttt{=}\\ 100\\texttt{=}\\ 300\\texttt{=}\\ 300\\texttt{=}\\ 400\\texttt{=}\\)",
         "graphData": null
       },
       {
-        "explanation": "Find the intercept using the property that the regression line passes through the mean point \\((\\bar{n}, bar{y})\\).",
-        "workingOut": "\\(a = \\bar{y} - b\\bar{n} = 260 - 60(3) = 80 \\implies \\text{Income} = 60n + 80\\)",
+        "explanation": "Once all 5 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg}$. Select $\\texttt{1:}A$ to display the intercept, then repeat and select $\\texttt{2:}B$ to display the slope.",
+        "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{1:}A \\to \\texttt{=}; \\quad \\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{2:}B \\to \\texttt{=}\\)",
         "graphData": null
       },
       {
-        "explanation": "Model the expenses: they start at \\\\(200 in week 1 and increase by \\\\)20 each subsequent week, so this is a linear function with gradient 20 passing through \\((1, 200)\\).",
-        "workingOut": "\\(E = 200 + 20(n - 1) = 20n + 180\\)",
+        "explanation": "The calculator displays $A = 80$ (intercept) and $B = 60$ (slope). Write the income equation as $\\text{Income} = A + Bn$.",
+        "workingOut": "\\(\\text{Income} = 60n + 80\\)",
         "graphData": null
       },
       {
-        "explanation": "State both equations, then plot them over the data. The income line \\(y = 60n + 80\\) has \\(y\\)-intercept \\(80\\) and gradient \\(60\\); the expenses line \\(y = 20n + 180\\) has \\(y\\)-intercept \\(180\\) and gradient \\(20\\).",
-        "workingOut": "\\(\\text{Income} = 60n + 80, quad \\text{Expenses} = 20n + 180\\)",
+        "explanation": "The expenses are not a regression — they are given directly: $\\$200$ in week 1, increasing by $\\$20$ every subsequent week. This is a linear (arithmetic) pattern with gradient 20 passing through $(1, 200)$.",
+        "workingOut": "\\(\\text{Expenses} = 200 + 20(n - 1) = 20n + 180\\)",
         "graphData": null
       },
       {
-        "explanation": "Draw both lines neatly over Ivy's five income data points \\((1,200), (2,100), (3,300), (4,300), (5,400)\\). The income regression line (blue) passes through the mean point \\((3, 260)\\); the expenses line (green) starts at \\((1, 200)\\) and rises \\(20 each week.\\).",
+        "explanation": "Draw both lines over Ivy's five income data points $(1,200), (2,100), (3,300), (4,300), (5,400)$. The income regression line (blue) passes through the mean point $(3, 260)$; the expenses line (green) starts at $(1, 200)$ and rises $\\$20$ each week.",
         "workingOut": "Income \\(= 60n + 80\\); Expenses \\(= 20n + 180\\)",
         "graphData": {
           "jsxGraph": {

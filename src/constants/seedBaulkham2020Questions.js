@@ -1084,23 +1084,23 @@ export const BAULKHAM_2020_QUESTIONS = [
     "solution": "The correct answer is \\(259\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Baulkham Hills 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "Write the two given terms using $T_n = a + (n-1)d$: the 3rd term gives equation (1) and the 10th term gives equation (2).",
         "workingOut": "\\(a+2d=5\\quad\\cdots(1);\\quad a+9d=26\\quad\\cdots(2)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(7d=21 \\Rightarrow d=3\\)",
+        "explanation": "Subtract (1) from (2) to eliminate $a$ and solve for the common difference $d$.",
+        "workingOut": "\\((a+9d)-(a+2d)=26-5 \\Rightarrow 7d=21 \\Rightarrow d=3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(a=5-2(3)=-1\\)",
+        "explanation": "Substitute $d=3$ back into equation (1) to find the first term $a$.",
+        "workingOut": "\\(a+2(3)=5 \\Rightarrow a=5-6=-1\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 259. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(259\\)",
+        "explanation": "Use $S_n = \\dfrac{n}{2}(2a+(n-1)d)$ with $n=14$, $a=-1$, $d=3$ to find the sum of the first 14 terms.",
+        "workingOut": "\\(S_{14}=\\frac{14}{2}(2(-1)+13(3))=7(-2+39)=7(37)=259\\)",
         "graphData": null
       }
     ],
@@ -1129,23 +1129,23 @@ export const BAULKHAM_2020_QUESTIONS = [
     "solution": "The correct answer is \\(246\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Baulkham Hills 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(6d=18\\Rightarrow d=3;\\quad a=4\\)",
+        "explanation": "Write the two given terms using $T_n = a + (n-1)d$: the 2nd term gives equation (1) and the 8th term gives equation (2).",
+        "workingOut": "\\(a+d=7\\quad\\cdots(1);\\quad a+7d=25\\quad\\cdots(2)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(246\\)",
+        "explanation": "Subtract (1) from (2) to eliminate $a$ and solve for the common difference $d$.",
+        "workingOut": "\\((a+7d)-(a+d)=25-7 \\Rightarrow 6d=18 \\Rightarrow d=3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(246\\)",
+        "explanation": "Substitute $d=3$ back into equation (1) to find the first term $a$.",
+        "workingOut": "\\(a+3=7 \\Rightarrow a=4\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 246. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(246\\)",
+        "explanation": "Use $S_n = \\dfrac{n}{2}(2a+(n-1)d)$ with $n=12$, $a=4$, $d=3$ to find the sum of the first 12 terms.",
+        "workingOut": "\\(S_{12}=\\frac{12}{2}(2(4)+11(3))=6(8+33)=6(41)=246\\)",
         "graphData": null
       }
     ],
@@ -2408,36 +2408,41 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "Waist measurements (cm): 72, 67, 85, 96, 80, 90, 98, 105. Weights (kg): 58, 50, 72, 85, 70, 79, 82, 84. Calculate the correlation coefficient $r$ correct to 3 decimal places and describe the strength of the relationship.",
+    "question": "The table below shows waist measurement and weight for 8 people.\n\n\\begin{array}{c|cccccccc} \\text{Waist (cm)} & 72 & 67 & 85 & 96 & 80 & 90 & 98 & 105 \\\\ \\hline \\text{Weight (kg)} & 58 & 50 & 72 & 85 & 70 & 79 & 82 & 84 \\end{array}\n\nCalculate the correlation coefficient $r$ correct to 3 decimal places and describe the strength of the relationship.",
     "opts": [
       "\\(r \\approx 0.959\\); strong positive correlation",
-      "\\(r \\approx 0.959\\); strong positive correlation + 1",
-      "\\(\\dfrac{12}{x + 2}\\)",
-      "\\(\\dfrac{13}{x + 3}\\)"
+      "\\(r \\approx 0.72\\); moderate positive correlation",
+      "\\(r \\approx 0.959\\); strong negative correlation",
+      "\\(r \\approx -0.959\\); strong negative correlation"
     ],
     "a": 0,
     "answer": "0",
-    "hint": "Enter data into calculator and use the linear regression function.",
+    "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute Pearson's correlation coefficient directly.",
     "solution": "The correct answer is \\(r \\approx 0.959\\); strong positive correlation.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Baulkham Hills 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\((x,y) \\text{ pairs entered}\\)",
+        "explanation": "First, lay out the data in a table pairing each person's waist measurement $x$ with their weight $y$ — this is exactly how the values will be entered into the calculator.",
+        "workingOut": "\\(\\begin{array}{c|cccccccc} \\text{Waist (cm)} & 72 & 67 & 85 & 96 & 80 & 90 & 98 & 105 \\\\ \\hline \\text{Weight (kg)} & 58 & 50 & 72 & 85 & 70 & 79 & 82 & 84 \\end{array}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(r \\approx 0.959\\)",
+        "explanation": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+        "workingOut": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(|r|\\approx 1, r>0 \\Rightarrow \\text{strong positive correlation}\\)",
+        "explanation": "Enter the waist values into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the weight values the same way.",
+        "workingOut": "\\(X: 72\\texttt{=}\\ 67\\texttt{=}\\ 85\\texttt{=}\\ 96\\texttt{=}\\ 80\\texttt{=}\\ 90\\texttt{=}\\ 98\\texttt{=}\\ 105\\texttt{=} \\qquad Y: 58\\texttt{=}\\ 50\\texttt{=}\\ 72\\texttt{=}\\ 85\\texttt{=}\\ 70\\texttt{=}\\ 79\\texttt{=}\\ 82\\texttt{=}\\ 84\\texttt{=}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\(r \\approx 0.959\\); strong positive correlation. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(r \\approx 0.959\\); strong positive correlation",
+        "explanation": "Once all 8 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg} \\to \\texttt{3:}r$, then press $\\texttt{=}$ to display the correlation coefficient.",
+        "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{3:}r \\to \\texttt{=}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The calculator displays $r \\approx 0.959$. Since $|r|$ is close to 1 and $r>0$, this is a strong positive correlation.",
+        "workingOut": "\\(r \\approx 0.959 \\Rightarrow \\text{strong positive correlation}\\)",
         "graphData": null
       }
     ],
@@ -2453,35 +2458,40 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "Find the equation of the Least-Squares Regression Line for the waist/weight data.",
+    "question": "The waist/weight data is shown below.\n\n\\begin{array}{c|cccccccc} \\text{Waist (cm)} & 72 & 67 & 85 & 96 & 80 & 90 & 98 & 105 \\\\ \\hline \\text{Weight (kg)} & 58 & 50 & 72 & 85 & 70 & 79 & 82 & 84 \\end{array}\n\nFind the equation of the least-squares regression line.",
     "opts": [
       "\\(y = +8.237 - 0.932x\\)",
       "\\(y = -8.237 + 0.932x\\)",
-      "\\(y = -8.237 + 0.932x + 1\\)",
+      "\\(y = 8.237 + 0.932x\\)",
       "\\(y = -8.447 + 0.944x\\)"
     ],
     "a": 1,
     "answer": "1",
-    "hint": "Use calculator's linear regression function with waist as $x$ and weight as $y$.",
+    "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute the regression coefficients directly.",
     "solution": "The correct answer is \\(y = -8.237 + 0.932x\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Baulkham Hills 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "A=-8.2368, quad B=0.93203",
+        "explanation": "First, lay out the data in a table pairing each person's waist measurement $x$ with their weight $y$ — this is exactly how the values will be entered into the calculator.",
+        "workingOut": "\\(\\begin{array}{c|cccccccc} \\text{Waist (cm)} & 72 & 67 & 85 & 96 & 80 & 90 & 98 & 105 \\\\ \\hline \\text{Weight (kg)} & 58 & 50 & 72 & 85 & 70 & 79 & 82 & 84 \\end{array}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y=-8.237+0.932x\\)",
+        "explanation": "On the Casio fx-82AU PLUS II, open Statistics mode and select linear regression: press $\\texttt{MODE}$, then $\\texttt{2:STAT}$, then $\\texttt{2:A+BX}$. This gives you an $X$ column and a $Y$ column to fill in.",
+        "workingOut": "\\(\\texttt{MODE} \\to \\texttt{2:STAT} \\to \\texttt{2:A+BX}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y = -8.237 + 0.932x\\)",
+        "explanation": "Enter the waist values (independent variable) into the $X$ column, pressing $\\texttt{=}$ after each one. Then use the right-arrow key to move to the $Y$ column and enter the weight values (dependent variable) the same way.",
+        "workingOut": "\\(X: 72\\texttt{=}\\ 67\\texttt{=}\\ 85\\texttt{=}\\ 96\\texttt{=}\\ 80\\texttt{=}\\ 90\\texttt{=}\\ 98\\texttt{=}\\ 105\\texttt{=} \\qquad Y: 58\\texttt{=}\\ 50\\texttt{=}\\ 72\\texttt{=}\\ 85\\texttt{=}\\ 70\\texttt{=}\\ 79\\texttt{=}\\ 82\\texttt{=}\\ 84\\texttt{=}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: y = -8.237 + 0.932x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Once all 8 pairs are entered, press $\\texttt{AC}$ to leave data-entry view, then open the regression-calculation menu: $\\texttt{SHIFT}\\ \\texttt{1}$ (STAT) $\\to \\texttt{5:Reg}$. Select $\\texttt{1:}A$ to display the intercept, then repeat and select $\\texttt{2:}B$ to display the slope.",
+        "workingOut": "\\(\\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{1:}A \\to \\texttt{=}; \\quad \\texttt{SHIFT}\\ \\texttt{1} \\to \\texttt{5:Reg} \\to \\texttt{2:}B \\to \\texttt{=}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The calculator displays $A \\approx -8.237$ (intercept) and $B \\approx 0.932$ (slope). Write the equation as $y = Bx + A$.",
         "workingOut": "\\(y = -8.237 + 0.932x\\)",
         "graphData": null
       }
@@ -2501,9 +2511,9 @@ export const BAULKHAM_2020_QUESTIONS = [
     "question": "A regression line for shoe size ($x$) vs height in cm ($y$) is $y = 130 + 4x$. Predict the height of someone with shoe size 10.",
     "opts": [
       "\\(170\\) cm",
-      "\\(170\\) cm + 1",
-      "\\(\\dfrac{12}{x + 2}\\)",
-      "\\(\\dfrac{13}{x + 3}\\)"
+      "\\(130\\) cm",
+      "\\(174\\) cm",
+      "\\(140\\) cm"
     ],
     "a": 0,
     "answer": "0",
@@ -2511,23 +2521,18 @@ export const BAULKHAM_2020_QUESTIONS = [
     "solution": "The correct answer is \\(170\\) cm.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Baulkham Hills 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y=130+40=170 \\text{ cm}\\)",
+        "explanation": "Substitute $x = 10$ into the regression equation $y = 130 + 4x$.",
+        "workingOut": "\\(y = 130 + 4(10)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Multiply $4 \\times 10 = 40$ first.",
+        "workingOut": "\\(y = 130 + 40\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(170\\) cm",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: \\(170\\) cm. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(170\\) cm",
+        "explanation": "Add to find the predicted height.",
+        "workingOut": "\\(y = 170 \\text{ cm}\\)",
         "graphData": null
       }
     ],

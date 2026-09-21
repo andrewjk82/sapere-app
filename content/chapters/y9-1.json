@@ -6515,24 +6515,21 @@
           "difficulty": "hard",
           "stem": "A retail supply chain optimizes inventory holding costs across warehouses. This analysis monitors signal routing coefficients represented by \\(\\frac{4x +1}{3} + \\frac{1x -4}{3}\\). Simplify this expression into a single fraction.",
           "options": [
-            "\\(\\frac{15x -9}{9}\\)",
+            "\\(\\frac{5x -3}{3}\\)",
             "\\(\\frac{5x -3}{6}\\)",
-            "\\(\\frac{15x - -9}{9}\\)",
-            "\\(\\frac{15x + 14}{9}\\)"
+            "\\(\\frac{5x +3}{3}\\)",
+            "\\(\\frac{3x -3}{3}\\)"
           ],
           "answer": 0,
           "solution": "0",
           "steps": [
             {
-              "explain": "Identify the common denominator for the two fractions, which is the product of \\(3\\) and \\(3\\)."
+              "explain": "Since both fractions already share a common denominator of \\(3\\), combine their numerators over this single denominator.",
+              "work": "\\(\\frac{(4x + 1) + (1x - 4)}{3}\\)"
             },
             {
-              "explain": "Multiply the numerator of each fraction by the denominator of the other.",
-              "work": "\\(\\frac{3(4x +1) + 3(1x -4)}{9}\\)"
-            },
-            {
-              "explain": "Expand the terms in the numerator and collect the like terms.",
-              "work": "\\(\\frac{12x +3 3x -12}{9} = \\frac{15x -9}{9}\\)"
+              "explain": "Group and add the like terms in the numerator: \\(4x + 1x = 5x\\) and \\(1 - 4 = -3\\).",
+              "work": "\\(\\frac{5x - 3}{3}\\)"
             }
           ]
         },

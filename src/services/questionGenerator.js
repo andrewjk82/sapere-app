@@ -667,9 +667,15 @@ const genOddEven = (difficulty) => {
   const correctIsOdd = correct % 2 !== 0;
   const matchesAsk = askOdd ? correctIsOdd : !correctIsOdd;
   const target = matchesAsk ? correct : (correct % 2 === 0 ? correct + 1 : correct + 1);
-  const wrong = Array.from({ length: 10 }, (_, i) => target + (i % 2 === 0 ? i + 1 : i + 2))
-    .filter(n => n > 0 && n <= max && (n % 2 !== 0) !== askOdd);
-  const opts = getUniqueOptions(target, wrong.slice(0, 3), 1, max + 10);
+  
+  // Create 3 distractors of the OPPOSITE parity to the target.
+  const wrong = [
+    target === 1 ? 2 : target - 1,
+    target + 1,
+    target + 3
+  ];
+  const opts = getUniqueOptions(target, wrong, 1, max + 10);
+  
   return q('odd_even', `Which of these numbers is ${askOdd ? 'odd' : 'even'}?`, opts, target, `${target} is ${askOdd ? 'odd' : 'even'} because it ${askOdd ? 'cannot' : 'can'} be divided evenly by 2.`, 20);
 };
 
@@ -837,8 +843,11 @@ const genNumberPattern = () => genSkipCounting('medium');
 const genLength = () => {
   const a = randomInt(3, 12);
   const b = randomInt(3, 12);
-  const answer = a > b ? 'pencil' : 'ruler';
-  return q('length_compare', `A pencil is ${a} blocks long. A ruler is ${b} blocks long. Which is longer?`, [answer, answer === 'pencil' ? 'ruler' : 'pencil', 'they are the same length', 'we cannot tell'], answer, `Compare ${a} and ${b}. The larger measurement is longer.`, 25);
+  let answer = 'they are the same length';
+  if (a > b) answer = 'pencil';
+  else if (b > a) answer = 'ruler';
+  
+  return q('length_compare', `A pencil is ${a} blocks long. A ruler is ${b} blocks long. Which is longer?`, ['pencil', 'ruler', 'they are the same length', 'we cannot tell'], answer, `Compare ${a} and ${b}. ${a === b ? 'They are equal.' : 'The larger measurement is longer.'}`, 25);
 };
 
 const genLengthOrder = () => {

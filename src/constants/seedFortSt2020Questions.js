@@ -20,23 +20,23 @@ export const FORT_STREET_2020_QUESTIONS = [
     "solution": "The correct answer is \\(-5\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Fort Street 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(T_4 = a + 3d = 27\\)",
+        "explanation": "The 4th term is $T_4 = a + 3d$. Since $T_4 = 27$, this is equation (1).",
+        "workingOut": "\\(T_4 = a + 3d = 27 \\quad\\cdots(1)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(T_7 = a + 6d = 12\\)",
+        "explanation": "The 7th term is $T_7 = a + 6d$. Since $T_7 = 12$, this is equation (2).",
+        "workingOut": "\\(T_7 = a + 6d = 12 \\quad\\cdots(2)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Subtract (1) from (2) to eliminate $a$ and solve for the common difference $d$ — no need to find $a$, since the question only asks for $d$.",
         "workingOut": "\\((a + 6d) - (a + 3d) = 12 - 27 \\Rightarrow 3d = -15\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-5\\)",
+        "explanation": "Divide both sides by 3 to solve for $d$.",
+        "workingOut": "\\(d = \\frac{-15}{3} = -5\\)",
         "graphData": null
       }
     ],
@@ -1016,23 +1016,23 @@ export const FORT_STREET_2020_QUESTIONS = [
     "solution": "The correct answer is \\(k \\leq \\dfrac{19}{10}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Fort Street 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\Delta = b^2 - 4ac \\geq 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "explanation": "For a quadratic $ax^2+bx+c=0$ to have real roots, the discriminant must satisfy $\\Delta = b^2 - 4ac \\geq 0$. Here $a=5$, $b=-2$, $c=8k-15$.",
         "workingOut": "\\((-2)^2 - 4(5)(8k - 15) \\geq 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(4 - 160k + 300 \\geq 0\\)",
+        "explanation": "Expand $(-2)^2 = 4$ and $4(5)(8k-15) = 20(8k-15) = 160k - 300$.",
+        "workingOut": "\\(4 - (160k - 300) \\geq 0 \\Rightarrow 4 - 160k + 300 \\geq 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: k \\leq \\dfrac{19}{10}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(k \\leq \\dfrac{19}{10}\\)",
+        "explanation": "Combine the constant terms: $4 + 300 = 304$.",
+        "workingOut": "\\(304 - 160k \\geq 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Rearrange to isolate $k$: add $160k$ to both sides, then divide by 160 and simplify the fraction.",
+        "workingOut": "\\(304 \\geq 160k \\Rightarrow k \\leq \\frac{304}{160} = \\frac{19}{10}\\)",
         "graphData": null
       }
     ],
@@ -2426,10 +2426,10 @@ export const FORT_STREET_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "For $V = 3600\\left(1 - \\dfrac{t}{60}\\right)^2$ ($0 \\le t \\le 60$), how long will it take for the tank to become half full (to the nearest minute)?",
     "opts": [
-      "\\(\\dfrac{7}{3}\\)",
+      "\\(\\approx 9\\) minutes (\\(t \\approx 8.8\\))",
       "\\(\\approx 18\\) minutes (\\(t \\approx 17.6\\))",
-      "\\(\\dfrac{12}{x + 2}\\)",
-      "\\(\\dfrac{13}{x + 3}\\)"
+      "\\(\\approx 30\\) minutes",
+      "\\(\\approx 42\\) minutes (\\(t \\approx 42.4\\))"
     ],
     "a": 1,
     "answer": "1",
@@ -2437,23 +2437,23 @@ export const FORT_STREET_2020_QUESTIONS = [
     "solution": "The correct answer is \\(\\approx 18\\) minutes (\\(t \\approx 17.6\\)).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Fort Street 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "The tank starts at $V(0) = 3600$ L, so \"half full\" means $V = 1800$. Set the model equal to 1800.",
         "workingOut": "\\(3600\\left(1 - \\frac{t}{60}\\right)^2 = 1800\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\left(1 - \\frac{t}{60}\\right)^2 = \\frac{1}{2} \\Rightarrow 1 - \\frac{t}{60} = \\pm\\frac{1}{\\sqrt2}\\)",
+        "explanation": "Divide both sides by 3600, then take the square root of both sides — remembering both the positive and negative root.",
+        "workingOut": "\\(\\left(1 - \\frac{t}{60}\\right)^2 = \\frac{1}{2} \\Rightarrow 1 - \\frac{t}{60} = \\pm\\frac{1}{\\sqrt{2}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(t = 60\\left(1 - \\tfrac{1}{\\sqrt2}\\right) \\approx 17.6 \\;\\text{ or }\\; t = 60\\left(1 + \\tfrac{1}{\\sqrt2}\\right) \\approx 102.4\\)",
+        "explanation": "Solve each sign separately for $t$.",
+        "workingOut": "\\(t = 60\\left(1 - \\tfrac{1}{\\sqrt{2}}\\right) \\approx 17.6 \\quad\\text{or}\\quad t = 60\\left(1 + \\tfrac{1}{\\sqrt{2}}\\right) \\approx 102.4\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\(\\approx 18\\) minutes (\\(t \\approx 17.6\\)). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(\\approx 18\\) minutes (\\(t \\approx 17.6\\))",
+        "explanation": "The domain is $0 \\le t \\le 60$, so $t \\approx 102.4$ is rejected. The valid solution $t \\approx 17.6$ rounds to 18 minutes.",
+        "workingOut": "\\(t \\approx 17.6 \\Rightarrow \\text{about 18 minutes}\\)",
         "graphData": null
       }
     ],

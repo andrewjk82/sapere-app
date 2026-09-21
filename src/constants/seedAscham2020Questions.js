@@ -991,10 +991,10 @@ export const ASCHAM_2020_QUESTIONS = [
     timeLimit: 120,
     question: "Solve $|5 - 2x| = 3$.",
     opts: [
-      "\\(x = 1\\) or \\(x = 4\\)",
-      "\\(x = -1\\) or \\(x = 4\\)",
-      "\\(x = 1\\) or \\(x = -4\\)",
-      "\\(x = 2\\) or \\(x = 3\\)",
+      "\\(x = 1 \\text{ or } x = 4\\)",
+      "\\(x = -1 \\text{ or } x = 4\\)",
+      "\\(x = 1 \\text{ or } x = -4\\)",
+      "\\(x = 2 \\text{ or } x = 3\\)",
     ],
     a: 0,
     answer: "0",
@@ -1022,7 +1022,7 @@ export const ASCHAM_2020_QUESTIONS = [
       {
         explanation:
           "Final answer: x = 1\\) or \\(x = 4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        workingOut: "\\(x = 1\\) or \\(x = 4\\)",
+        workingOut: "\\(x = 1 \\text{ or } x = 4\\)",
         graphData: null,
       },
     ],
@@ -1040,10 +1040,10 @@ export const ASCHAM_2020_QUESTIONS = [
     timeLimit: 120,
     question: "Solve $|3x - 7| = 5$.",
     opts: [
-      "\\(x = 4\\) or \\(x = \\dfrac{2}{3}\\)",
-      "\\(x = -4\\) or \\(x = \\dfrac{2}{3}\\)",
-      "\\(x = 4\\) or \\(x = -\\dfrac{2}{3}\\)",
-      "\\(x = 3\\) or \\(x = 1\\)",
+      "\\(x = 4 \\text{ or } x = \\dfrac{2}{3}\\)",
+      "\\(x = -4 \\text{ or } x = \\dfrac{2}{3}\\)",
+      "\\(x = 4 \\text{ or } x = -\\dfrac{2}{3}\\)",
+      "\\(x = 3 \\text{ or } x = 1\\)",
     ],
     a: 0,
     answer: "0",
@@ -1071,7 +1071,7 @@ export const ASCHAM_2020_QUESTIONS = [
       {
         explanation:
           "Final answer: x = 4\\) or \\(x = \\dfrac{2}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        workingOut: "\\(x = 4\\) or \\(x = \\dfrac{2}{3}\\)",
+        workingOut: "\\(x = 4 \\text{ or } x = \\dfrac{2}{3}\\)",
         graphData: null,
       },
     ],
@@ -1752,47 +1752,81 @@ export const ASCHAM_2020_QUESTIONS = [
     topicId: "y12a-exam",
     c: "9E",
     t: "Line of best fit",
-    type: "multiple_choice",
-    difficulty: "medium",
-    timeLimit: 120,
+    type: "multi_part",
+    isManual: true,
     question:
-      "A dataset has $\\bar{x} = 4.2$, $\\bar{y} = 8.6$, and a least squares regression slope of $b = -1.5$.\n\n(a) Find the equation of the least squares regression line.\n\n(b) Predict the value of $y$ when $x = 5$.",
-    opts: [
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
-      "(a) \\(\\hat{y} = -1.5x + 14.9\\) (b) \\(\\hat{y} = 7.4\\)",
-      "\\(\\dfrac{13}{x + 3}\\)",
-    ],
-    a: 2,
-    answer: "2",
-    hint: "Use $a = \\bar{y} - b\\bar{x}$ to find the intercept, then substitute $x = 5$.",
-    solution:
-      "The correct answer is (a) \\(\\hat{y} = -1.5x + 14.9\\) (b) \\(\\hat{y} = 7.4\\).",
-    solutionSteps: [
+      "A dataset has $\\bar{x} = 4.2$, $\\bar{y} = 8.6$, and a least squares regression slope of $b = -1.5$.",
+    a: "",
+    solution: "",
+    subQuestions: [
       {
-        explanation:
-          "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Ascham 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        workingOut: "\\(a = 8.6 - (-1.5)(4.2) = 8.6 + 6.3 = 14.9\\)",
+        id: "asc2020-q17v-a",
+        topicId: "y12a-exam",
+        c: "9E",
+        t: "Line of best fit",
+        type: "multiple_choice",
+        difficulty: "medium",
+        timeLimit: 120,
+        question: "(a) Find the equation of the least squares regression line.",
+        opts: [
+          "\\(\\hat{y} = -1.5x + 14.9\\)",
+          "\\(\\hat{y} = 1.5x + 14.9\\)",
+          "\\(\\hat{y} = -1.5x - 14.9\\)",
+          "\\(\\hat{y} = -1.5x + 6.3\\)",
+        ],
+        a: 0,
+        answer: "0",
+        hint: "Use $a = \\bar{y} - b\\bar{x}$ to find the intercept, then write $\\hat{y} = bx + a$.",
+        solution: "The correct answer is \\(\\hat{y} = -1.5x + 14.9\\).",
+        solutionSteps: [
+          {
+            explanation:
+              "The least-squares line passes through $(\\bar{x}, \\bar{y})$, so the intercept is $a = \\bar{y} - b\\bar{x}$. Substitute $\\bar{y}=8.6$, $b=-1.5$, $\\bar{x}=4.2$.",
+            workingOut: "\\(a = 8.6 - (-1.5)(4.2) = 8.6 + 6.3 = 14.9\\)",
+            graphData: null,
+          },
+          {
+            explanation:
+              "So the regression equation is $\\hat{y} = bx + a$, using the given slope $b=-1.5$ and the intercept found above.",
+            workingOut: "\\(\\hat{y} = -1.5x + 14.9\\)",
+            graphData: null,
+          },
+        ],
         graphData: null,
+        isNew: true,
+        requiresManualGrading: false,
       },
       {
-        explanation:
-          "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        workingOut: "\\(\\hat{y} = -1.5x + 14.9\\)",
+        id: "asc2020-q17v-b",
+        topicId: "y12a-exam",
+        c: "9E",
+        t: "Line of best fit",
+        type: "multiple_choice",
+        difficulty: "medium",
+        timeLimit: 120,
+        question:
+          "(b) Using the regression line from part (a), predict the value of $y$ when $x = 5$.",
+        opts: [
+          "\\(\\hat{y} = 6.9\\)",
+          "\\(\\hat{y} = 22.4\\)",
+          "\\(\\hat{y} = 7.4\\)",
+          "\\(\\hat{y} = -22.4\\)",
+        ],
+        a: 2,
+        answer: "2",
+        hint: "Substitute $x=5$ into $\\hat{y} = -1.5x + 14.9$.",
+        solution: "The correct answer is \\(\\hat{y} = 7.4\\).",
+        solutionSteps: [
+          {
+            explanation:
+              "To predict $y$ when $x=5$, substitute $x=5$ into the regression equation $\\hat{y} = -1.5x + 14.9$ found in part (a) and simplify.",
+            workingOut: "\\(\\hat{y} = -1.5(5) + 14.9 = -7.5 + 14.9 = 7.4\\)",
+            graphData: null,
+          },
+        ],
         graphData: null,
-      },
-      {
-        explanation:
-          "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        workingOut: "\\(\\hat{y} = -1.5(5) + 14.9 = -7.5 + 14.9 = 7.4\\)",
-        graphData: null,
-      },
-      {
-        explanation:
-          "Final answer: (a) \\(\\hat{y} = -1.5x + 14.9\\) (b) \\(\\hat{y} = 7.4\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        workingOut:
-          "(a) \\(\\hat{y} = -1.5x + 14.9\\) (b) \\(\\hat{y} = 7.4\\)",
-        graphData: null,
+        isNew: true,
+        requiresManualGrading: false,
       },
     ],
     graphData: null,

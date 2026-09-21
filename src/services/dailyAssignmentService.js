@@ -233,15 +233,27 @@ const shuffle = (items) => {
   return arr;
 };
 
+// assignedChapters is shared storage for both the Curriculum tab's progress
+// tracking AND the Daily Calculation / Clock manual-topic picker (calc-*/
+// clock-* ids — see DailyChallenge.jsx startCalculationQuiz). Daily Challenge
+// ('daily') has its own dedicated flow for those (startCalculationQuiz /
+// generateCalculationSet) and must never pull the 'Daily Calculation'
+// pseudo-year into its own target pool, regardless of calculationEnabled —
+// otherwise calc/clock chapters leak into ordinary daily practice questions.
+const isDailyCalcChapterId = (chapterId) =>
+  typeof chapterId === "string" && (chapterId.startsWith("calc-") || chapterId.startsWith("clock-"));
+
+const excludeDailyCalcChapters = (chapterIds) =>
+  (Array.isArray(chapterIds) ? chapterIds : []).filter((id) => !isDailyCalcChapterId(id));
+
 export const buildDailyTargets = (studentProfile = {}) => {
   const config = studentProfile.dailyPracticeConfig || {};
+  const configChapters = excludeDailyCalcChapters(config.chapters);
   const hasConfigYears = Array.isArray(config.years) && config.years.length > 0;
-  const hasConfigChapters = Array.isArray(config.chapters) && config.chapters.length > 0;
+  const hasConfigChapters = configChapters.length > 0;
 
   // Curriculum-tab chapter assignment — used as fallback when no dailyPracticeConfig is set.
-  const curriculumChapters = Array.isArray(studentProfile.assignedChapters) && studentProfile.assignedChapters.length > 0
-    ? studentProfile.assignedChapters
-    : [];
+  const curriculumChapters = excludeDailyCalcChapters(studentProfile.assignedChapters);
   const hasCurriculumChapters = curriculumChapters.length > 0;
 
   let assignedYears;
@@ -249,7 +261,7 @@ export const buildDailyTargets = (studentProfile = {}) => {
     assignedYears = config.years.map(normalizeYearLabel).filter(Boolean);
   } else if (hasConfigChapters) {
     assignedYears = [...new Set(
-      config.chapters.map((chapterId) => CHAPTER_YEAR_MAP[chapterId]).filter(Boolean),
+      configChapters.map((chapterId) => CHAPTER_YEAR_MAP[chapterId]).filter(Boolean),
     )].map(normalizeYearLabel).filter(Boolean);
   } else if (hasCurriculumChapters) {
     // No dailyPracticeConfig set — fall back to curriculum-tab chapter assignment.
@@ -257,12 +269,21 @@ export const buildDailyTargets = (studentProfile = {}) => {
       curriculumChapters.map((chapterId) => CHAPTER_YEAR_MAP[chapterId]).filter(Boolean),
     )].map(normalizeYearLabel).filter(Boolean);
   }
-  if (!assignedYears || assignedYears.length === 0) {
+  // Keep only labels that resolve to a real curriculum year. A profile whose
+  // year is a truncated "Y" (someone typing "Year 7" and stopping) normalises
+  // to the string "Y" — not empty, so it used to survive as assignedYears:["Y"].
+  // getQuestionTargets then silently fell back to a Year-1 target pool while
+  // this function still reported ["Y"], so the year-range gate in
+  // buildQuestionsForStudent rejected every fetched question → 4 empty top-up
+  // rounds + legacy path → "Assignment load timed out" for the student.
+  const keepRealYears = (labels) => (labels || []).filter((label) => CURRICULUM_DATA[label]);
+  assignedYears = keepRealYears(assignedYears);
+  if (assignedYears.length === 0) {
     const rawYear = studentProfile.assignedYear || studentProfile.year || DEFAULT_YEAR;
-    assignedYears = (Array.isArray(rawYear)
+    assignedYears = keepRealYears((Array.isArray(rawYear)
       ? rawYear
       : String(rawYear).split(",").map((year) => year.trim()).filter(Boolean))
-      .map(normalizeYearLabel).filter(Boolean);
+      .map(normalizeYearLabel).filter(Boolean));
   }
   if (assignedYears.length === 0) assignedYears = [DEFAULT_YEAR];
 
@@ -279,7 +300,7 @@ export const buildDailyTargets = (studentProfile = {}) => {
   // applies when NO dailyPracticeConfig (years or chapters) is set at all.
   const hasDailyConfig = hasConfigYears || hasConfigChapters;
   let assignedChapters = hasConfigChapters
-    ? config.chapters.slice()
+    ? configChapters.slice()
     : hasDailyConfig
       ? [] // config.years only → all chapters of those years
       : hasCurriculumChapters

@@ -1,22 +1,5 @@
 [
   {
-    "candidate_id": "CAND-ALG-SURD-001",
-    "proposed_family": "FUNCTIONS_ALGEBRA",
-    "proposed_skill": "Surd arithmetic & rationalising",
-    "similarity_to_existing_dna": {
-      "ALG-EQ-01": 0.2
-    },
-    "occurrence_count": 5,
-    "example_question_ids": [
-      "car2020-q11",
-      "girr2020-mc4",
-      "girr2020-mc32",
-      "girr2020-mc4s",
-      "girr2020-mc32s"
-    ],
-    "promotion_status": "READY_FOR_DNA_REVIEW"
-  },
-  {
     "candidate_id": "CAND-PROB-COUNT-001",
     "proposed_family": "PROBABILITY",
     "proposed_skill": "Permutations, combinations & counting",
@@ -28,6 +11,19 @@
     "example_question_ids": [
       "girr2020-mc13",
       "girr2020-mc13s"
+    ],
+    "promotion_status": "ACCUMULATING_EVIDENCE"
+  },
+  {
+    "candidate_id": "CAND-ALG-FRAC-001",
+    "proposed_family": "FUNCTIONS_ALGEBRA",
+    "proposed_skill": "Algebraic fraction simplification",
+    "similarity_to_existing_dna": {
+      "ALG-EQ-01": 0.3
+    },
+    "occurrence_count": 1,
+    "example_question_ids": [
+      "glenwood2020-q4"
     ],
     "promotion_status": "ACCUMULATING_EVIDENCE"
   }

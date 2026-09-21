@@ -555,12 +555,11 @@
               "answer": 1,
               "steps": [
                 {
-                  "explain": "Identify the base variable: Liam's average swimming speed is \\(x\\) km/h.",
-                  "work": "\\(\\text{Swimming Speed} = x\\)"
-                },
-                {
-                  "explain": "Translate 'running speed was 4 times swimming speed': multiply swimming speed \\(x\\) by \\(4\\).",
-                  "work": "\\(\\text{Running Speed} = 4x\\)"
+                  "explain": "Express the running speed \\(R\\) mathematically as \\(4\\) times the swimming speed \\(x\\).",
+                  "work": "\\begin{aligned} R &= 4 \\times x \\\\ R &= 4x \\end{aligned}",
+                  "figure": {
+                    "svg": "fig:5972881c45"
+                  }
                 }
               ]
             },
@@ -577,38 +576,21 @@
               "answer": 2,
               "steps": [
                 {
-                  "explain": "Calculate running speed multiplied by \\(3\\): \\(3 \\times 4x = 12x\\).",
-                  "work": "\\(3 \\times \\text{Running Speed} = 12x\\)"
-                },
-                {
-                  "explain": "Translate 'this number was 5 less than cycling speed (C)': \\(12x = C - 5\\). Rearrange to solve for cycling speed \\(C\\) by adding \\(5\\) to both sides.",
-                  "work": "\\(C = 12x + 5\\)"
+                  "explain": "Set up the equation based on the condition: \\(3\\) times the running speed is \\(5\\) less than the cycling speed \\(C\\), then solve for \\(C\\).",
+                  "work": "\\begin{aligned} 3R &= C - 5 \\\\ 3(4x) &= C - 5 \\\\ 12x &= C - 5 \\\\ C &= 12x + 5 \\end{aligned}",
+                  "figure": {
+                    "svg": "fig:570f97dfbe"
+                  }
                 }
               ]
             }
           ],
-          "options": [
-            "\\(4x, 12x + 5\\)",
-            "\\(4x, 12x - 5\\)",
-            "\\(x+4, 3x+5\\)",
-            "\\(x-4, 4x+5\\)"
-          ],
-          "mc": true,
-          "answer": 0,
-          "hint": "Translate the English words into mathematical symbols.",
-          "steps": [
-            {
-              "explain": "a) Running speed is \\(4\\) times swimming speed (\\(x\\)).",
-              "work": "$4x$"
-            },
-            {
-              "explain": "b) Running speed \\(\\times 3 = 4x \\times 3 = 12x\\). This is \\(5\\) less than cycling speed (\\(C\\)). So \\(12x = C - 5\\).",
-              "work": "$C = 12x + 5$"
-            }
-          ],
           "alsoIn": [
             "exam:year9ch5"
-          ]
+          ],
+          "figure": {
+            "svg": "fig:7f5611bf20"
+          }
         },
         {
           "id": "y9-5a-8a",

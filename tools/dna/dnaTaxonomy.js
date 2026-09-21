@@ -17,7 +17,7 @@
  * personal_priority = 0.55 * priorityScore + 0.45 * (100 - student_mastery).
  */
 
-export const DNA_TAXONOMY_VERSION = '1.4';
+export const DNA_TAXONOMY_VERSION = '1.5';
 
 // ─── Version history ────────────────────────────────────────────────────────
 // v1.0 — initial 32-entry taxonomy from the master prompt (§7).
@@ -46,6 +46,18 @@ export const DNA_TAXONOMY_VERSION = '1.4';
 //   steps also retagged directly in Firestore (asc2020-mc8/mc8v S3,
 //   dane2020-q34b S3, bar2020-q17biib/biibv S1) — see
 //   tools/scripts/tagBackwardReasoningD5.mjs. No answer/content changes.
+// v1.5 (2026-08-27) — promoted CAND-ALG-SURD-001 to a real DNA:
+//   ALG-SURD-01 (Surd arithmetic & rationalising, FUNCTIONS_ALGEBRA).
+//   6 occurrences (car2020-q11, girr2020-mc4/mc32/mc4s/mc32s,
+//   glenwood2020-q11), similarity 0.2 to nearest existing DNA (ALG-EQ-01) —
+//   meets the §12 promotion trigger (occurrences>=3 AND similarity<0.75).
+//   3-item reasoningBlueprint warmup pool authored (recognising when to
+//   rationalise, identifying the conjugate, why conjugate/conjugate=1).
+//   CAND-ALG-SURD-001 removed from tools/dna/output/question_dna_candidates.json.
+//   NOTE: algebraic-fraction simplification (Glenwood q4) was NOT promoted —
+//   only 1 occurrence in the corpus so far, below the occurrences>=3
+//   threshold. Added as a new candidate instead (see candidates file) to
+//   accumulate evidence rather than force a premature DNA.
 
 export const QUESTION_DNA = [
   // ── CALCULUS ────────────────────────────────────────────────────────────
@@ -3820,6 +3832,120 @@ export const QUESTION_DNA = [
           "A log answers \"what power do I raise the base to, to get this result?\" — converting back means writing exactly that power statement."
         ],
         "explanation": "$\\log_a b=c$ means \"$a$ raised to the power $c$ gives $b$\", i.e. $a^c=b$ — this conversion is often the key first step in solving a log equation."
+      }
+    ],
+  },
+  {
+    dna_id: 'ALG-SURD-01', family: 'FUNCTIONS_ALGEBRA', skill: 'Surd arithmetic & rationalising',
+    operations: ['simplify_surd', 'identify_conjugate', 'rationalise_denominator'], priorityScore: 74, // E1
+    reasoningBlueprint: [
+      {
+        "step_id": "W1",
+        "objective": "Recognise when a denominator needs rationalising.",
+        "required_skill": "ALG-SURD-01.1",
+        "axis": "recognition",
+        "interaction_type": "select",
+        "options": [
+          {
+            "id": "a",
+            "label": "$\\dfrac{8}{3-\\sqrt5}$ — the denominator itself contains a surd term"
+          },
+          {
+            "id": "b",
+            "label": "$\\dfrac{8}{3}\\sqrt5$ — a surd multiplies a fraction that already has a rational denominator"
+          },
+          {
+            "id": "c",
+            "label": "$\\sqrt{45}$ — a single surd with no fraction involved"
+          }
+        ],
+        "expected_response": "a",
+        "common_errors": [
+          {
+            "id": "b",
+            "error_type": "ALG-SURD-01.E1_rationalising_unnecessary_denominator"
+          },
+          {
+            "id": "c",
+            "error_type": "ALG-SURD-01.E2_rationalising_confused_with_simplifying"
+          }
+        ],
+        "hints": [
+          "Rationalising only applies when a surd sits in the DENOMINATOR — a surd multiplying an already-rational fraction, or a lone surd with no fraction, needs simplifying instead."
+        ],
+        "explanation": "Rationalising the denominator means removing a surd from underneath a fraction — it only applies when the denominator itself contains a surd term, like $3-\\sqrt5$."
+      },
+      {
+        "step_id": "W2",
+        "objective": "Identify the conjugate of a binomial denominator.",
+        "required_skill": "ALG-SURD-01.2",
+        "axis": "strategy_selection",
+        "interaction_type": "select",
+        "options": [
+          {
+            "id": "a",
+            "label": "The conjugate of $3-\\sqrt5$ is $3+\\sqrt5$ — same terms, opposite sign in the middle"
+          },
+          {
+            "id": "b",
+            "label": "The conjugate of $3-\\sqrt5$ is $-3-\\sqrt5$ — negate the whole expression"
+          },
+          {
+            "id": "c",
+            "label": "The conjugate of $3-\\sqrt5$ is $\\sqrt5-3$ — swap the two terms"
+          }
+        ],
+        "expected_response": "a",
+        "common_errors": [
+          {
+            "id": "b",
+            "error_type": "ALG-SURD-01.E3_conjugate_whole_expression_negated"
+          },
+          {
+            "id": "c",
+            "error_type": "ALG-SURD-01.E4_conjugate_terms_swapped"
+          }
+        ],
+        "hints": [
+          "Only the sign BETWEEN the two terms flips — each term itself stays exactly the same."
+        ],
+        "explanation": "The conjugate keeps both terms the same and flips only the sign between them: $a-\\sqrt b$'s conjugate is $a+\\sqrt b$. Multiplying by it uses $(a-\\sqrt b)(a+\\sqrt b)=a^2-b$ to eliminate the surd."
+      },
+      {
+        "step_id": "W3",
+        "objective": "Know why multiplying by the conjugate over itself is valid.",
+        "required_skill": "ALG-SURD-01.3",
+        "axis": "strategy_selection",
+        "interaction_type": "select",
+        "options": [
+          {
+            "id": "a",
+            "label": "Multiplying top and bottom by $\\dfrac{\\text{conjugate}}{\\text{conjugate}}$ is really multiplying by $1$ — the value of the fraction doesn't change"
+          },
+          {
+            "id": "b",
+            "label": "Multiplying top and bottom by the conjugate changes the fraction's value but simplifies its form"
+          },
+          {
+            "id": "c",
+            "label": "Only the denominator gets multiplied by the conjugate — the numerator is left as-is"
+          }
+        ],
+        "expected_response": "a",
+        "common_errors": [
+          {
+            "id": "b",
+            "error_type": "ALG-SURD-01.E5_conjugate_value_changed_misconception"
+          },
+          {
+            "id": "c",
+            "error_type": "ALG-SURD-01.E6_numerator_not_multiplied"
+          }
+        ],
+        "hints": [
+          "$\\dfrac{\\text{conjugate}}{\\text{conjugate}}=1$ — multiplying by it never changes the value, only the form. Both the numerator AND denominator must be multiplied by it."
+        ],
+        "explanation": "Multiplying by $\\dfrac{\\text{conjugate}}{\\text{conjugate}}$ is multiplying by 1, so the value is preserved while the denominator becomes rational — this must be applied to both the numerator and the denominator."
       }
     ],
   },

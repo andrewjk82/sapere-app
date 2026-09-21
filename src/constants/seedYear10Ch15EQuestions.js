@@ -9,13 +9,13 @@ export const Y10_CH15E_QUESTIONS = [
     "timeLimit": 60,
     "question": "A card is drawn at random from a standard deck of 52 playing cards. It is replaced and the deck is shuffled. A second card is then drawn. Find the probability that both cards are Spades.",
     "opts": [
-      "\\(-0.0625\\)",
-      "\\(-0.9375\\)",
-      "\\(1/16\\)",
-      "\\(1.0625\\)"
+      "\\(\\frac{1}{16}\\)",
+      "\\(\\frac{3}{16}\\)",
+      "\\(\\frac{5}{16}\\)",
+      "\\(\\frac{7}{16}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "Think about whether the draws are independent, and find the probability of drawing a Spade on each turn.",
     "solution": "Since the first card is replaced before drawing the second card, the two events are independent. The probability of drawing a Spade is \\(\\frac{13}{52} = \\frac{1}{4}\\). Thus, the probability of drawing two Spades is \\(\\frac{1}{4} \\times \\frac{1}{4} = \\frac{1}{16}\\).",
     "solutionSteps": [
@@ -42,7 +42,29 @@ export const Y10_CH15E_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{1}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{3}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{5}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{7}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15e-q1b",
@@ -54,13 +76,13 @@ export const Y10_CH15E_QUESTIONS = [
     "timeLimit": 60,
     "question": "A card is drawn at random from a standard deck of 52 playing cards. It is replaced and the deck is shuffled. A second card is then drawn. Find the probability that neither card is a Spade.",
     "opts": [
-      "\\(-0.4375\\)",
-      "\\(-0.5625\\)",
-      "\\(9/16\\)",
-      "\\(1.5625\\)"
+      "\\(\\frac{9}{16}\\)",
+      "\\(\\frac{11}{16}\\)",
+      "\\(\\frac{7}{16}\\)",
+      "\\(\\frac{13}{16}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "First find the probability of drawing a card that is not a Spade.",
     "solution": "The probability of not drawing a Spade is \\(1 - \\frac{1}{4} = \\frac{3}{4}\\). Since the card is replaced, the two draws are independent. The probability that neither card is a Spade is \\(\\frac{3}{4} \\times \\frac{3}{4} = \\frac{9}{16}\\).",
     "solutionSteps": [
@@ -87,7 +109,29 @@ export const Y10_CH15E_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{9}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{11}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{7}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{13}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15e-q1c",
@@ -99,13 +143,13 @@ export const Y10_CH15E_QUESTIONS = [
     "timeLimit": 60,
     "question": "A card is drawn at random from a standard deck of 52 playing cards. It is replaced and the deck is shuffled. A second card is then drawn. Find the probability that only one of the cards is a Spade.",
     "opts": [
-      "\\(-0.375\\)",
-      "\\(-0.625\\)",
-      "\\(3/8\\)",
-      "\\(1.375\\)"
+      "\\(\\frac{3}{8}\\)",
+      "\\(\\frac{5}{8}\\)",
+      "\\(\\frac{1}{8}\\)",
+      "\\(\\frac{7}{8}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "Identify the different orders in which you can draw exactly one Spade.",
     "solution": "The probability of drawing only one Spade can occur in two mutually exclusive ways: drawing a Spade then a non-Spade, or drawing a non-Spade then a Spade. The probability is \\(\\left(\\frac{1}{4} \\times \\frac{3}{4}\\right) + \\left(\\frac{3}{4} \\times \\frac{1}{4}\\right) = \\frac{3}{16} + \\frac{3}{16} = \\frac{6}{16} = \\frac{3}{8}\\).",
     "solutionSteps": [
@@ -132,7 +176,29 @@ export const Y10_CH15E_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{8}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{5}{8}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{1}{8}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{7}{8}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15e-q1d",
@@ -144,13 +210,13 @@ export const Y10_CH15E_QUESTIONS = [
     "timeLimit": 60,
     "question": "A card is drawn at random from a standard deck of 52 playing cards. It is replaced and the deck is shuffled. A second card is then drawn. Find the probability that only the first card is a Spade.",
     "opts": [
-      "\\(-0.1875\\)",
-      "\\(-0.8125\\)",
-      "\\(3/16\\)",
-      "\\(1.1875\\)"
+      "\\(\\frac{3}{16}\\)",
+      "\\(\\frac{1}{16}\\)",
+      "\\(\\frac{5}{16}\\)",
+      "\\(\\frac{7}{16}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "The first card must be a Spade, and the second card must not be a Spade.",
     "solution": "This requires the first card to be a Spade and the second card to be a non-Spade. The probability is \\(\\frac{1}{4} \\times \\frac{3}{4} = \\frac{3}{16}\\).",
     "solutionSteps": [
@@ -177,7 +243,29 @@ export const Y10_CH15E_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{1}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{5}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{7}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15e-q1e",
@@ -189,13 +277,13 @@ export const Y10_CH15E_QUESTIONS = [
     "timeLimit": 60,
     "question": "A card is drawn at random from a standard deck of 52 playing cards. It is replaced and the deck is shuffled. A second card is then drawn. Find the probability that only the second card is a Spade.",
     "opts": [
-      "\\(-0.1875\\)",
-      "\\(-0.8125\\)",
-      "\\(3/16\\)",
-      "\\(1.1875\\)"
+      "\\(\\frac{3}{16}\\)",
+      "\\(\\frac{1}{16}\\)",
+      "\\(\\frac{5}{16}\\)",
+      "\\(\\frac{7}{16}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "The first card must not be a Spade, and the second card must be a Spade.",
     "solution": "This requires the first card to be a non-Spade and the second card to be a Spade. The probability is \\(\\frac{3}{4} \\times \\frac{1}{4} = \\frac{3}{16}\\).",
     "solutionSteps": [
@@ -222,7 +310,29 @@ export const Y10_CH15E_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{1}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{5}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{7}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15e-q1f",
@@ -234,13 +344,13 @@ export const Y10_CH15E_QUESTIONS = [
     "timeLimit": 60,
     "question": "A card is drawn at random from a standard deck of 52 playing cards. It is replaced and the deck is shuffled. A second card is then drawn. Find the probability that at least one of the cards is a Spade.",
     "opts": [
-      "\\(-0.4375\\)",
-      "\\(-0.5625\\)",
-      "\\(7/16\\)",
-      "\\(1.4375\\)"
+      "\\(\\frac{7}{16}\\)",
+      "\\(\\frac{9}{16}\\)",
+      "\\(\\frac{5}{16}\\)",
+      "\\(\\frac{11}{16}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "Use the complement rule: subtract the probability of getting no Spades from 1.",
     "solution": "The probability of at least one Spade is the complement of drawing no Spades: \\(1 - P(\\text{neither is a Spade}) = 1 - \\frac{9}{16} = \\frac{7}{16}\\).",
     "solutionSteps": [
@@ -267,7 +377,29 @@ export const Y10_CH15E_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{7}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{9}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{5}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{11}{16}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15e-q2a",
@@ -279,13 +411,13 @@ export const Y10_CH15E_QUESTIONS = [
     "timeLimit": 60,
     "question": "One card is drawn at random from a standard deck of 52 playing cards. It is not replaced. A second card is then drawn. Find the probability that both cards are Clubs.",
     "opts": [
-      "\\(-0.058823529411764705\\)",
-      "\\(-0.9411764705882353\\)",
-      "\\(1/17\\)",
-      "\\(1.0588235294117647\\)"
+      "\\(\\frac{1}{17}\\)",
+      "\\(\\frac{2}{17}\\)",
+      "\\(\\frac{3}{17}\\)",
+      "\\(\\frac{4}{17}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "Without replacement, the total number of cards and the number of Clubs both decrease by 1 for the second draw.",
     "solution": "For the first draw, the probability of drawing a Club is \\(\\frac{13}{52} = \\frac{1}{4}\\). Since the card is not replaced, 51 cards remain, of which 12 are Clubs. The probability that both are Clubs is \\(\\frac{13}{52} \\times \\frac{12}{51} = \\frac{1}{4} \\times \\frac{4}{17} = \\frac{1}{17}\\).",
     "solutionSteps": [
@@ -312,7 +444,29 @@ export const Y10_CH15E_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{1}{17}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{2}{17}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{3}{17}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{4}{17}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15e-q2b",
@@ -324,13 +478,13 @@ export const Y10_CH15E_QUESTIONS = [
     "timeLimit": 60,
     "question": "One card is drawn at random from a standard deck of 52 playing cards. It is not replaced. A second card is then drawn. Find the probability that neither card is a Club.",
     "opts": [
-      "\\(-0.4411764705882353\\)",
-      "\\(-0.5588235294117647\\)",
-      "\\(19/34\\)",
-      "\\(1.5588235294117647\\)"
+      "\\(\\frac{19}{34}\\)",
+      "\\(\\frac{21}{34}\\)",
+      "\\(\\frac{15}{34}\\)",
+      "\\(\\frac{17}{34}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "Find the probability of drawing two consecutive cards that are not Clubs, keeping in mind the deck is not replaced.",
     "solution": "There are 39 non-Clubs initially. The probability of drawing a non-Club first is \\(\\frac{39}{52} = \\frac{3}{4}\\). After drawing one non-Club, 38 non-Clubs remain out of 51 cards. The probability that neither is a Club is \\(\\frac{39}{52} \\times \\frac{38}{51} = \\frac{3}{4} \\times \\frac{38}{51} = \\frac{19}{34}\\).",
     "solutionSteps": [
@@ -357,7 +511,29 @@ export const Y10_CH15E_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{19}{34}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{21}{34}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{15}{34}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{17}{34}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15e-q2c",
@@ -369,13 +545,13 @@ export const Y10_CH15E_QUESTIONS = [
     "timeLimit": 60,
     "question": "One card is drawn at random from a standard deck of 52 playing cards. It is not replaced. A second card is then drawn. Find the probability that only one of the cards is a Club.",
     "opts": [
-      "\\(-0.38235294117647056\\)",
-      "\\(-0.6176470588235294\\)",
-      "\\(13/34\\)",
-      "\\(1.3823529411764706\\)"
+      "\\(\\frac{13}{34}\\)",
+      "\\(\\frac{15}{34}\\)",
+      "\\(\\frac{11}{34}\\)",
+      "\\(\\frac{17}{34}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "Sum the probabilities of (Club, non-Club) and (non-Club, Club).",
     "solution": "This can happen in two ways: Club then non-Club, or non-Club then Club. The probability is \\(\\left(\\frac{13}{52} \\times \\frac{39}{51}\\right) + \\left(\\frac{39}{52} \\times \\frac{13}{51}\\right) = \\left(\\frac{1}{4} \\times \\frac{39}{51}\\right) + \\left(\\frac{3}{4} \\times \\frac{13}{51}\\right) = \\frac{39}{204} + \\frac{39}{204} = \\frac{78}{204} = \\frac{13}{34}\\).",
     "solutionSteps": [
@@ -402,7 +578,29 @@ export const Y10_CH15E_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{13}{34}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{15}{34}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{11}{34}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{17}{34}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15e-q2d",

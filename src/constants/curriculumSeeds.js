@@ -1,3 +1,5 @@
+import Y7_EXAM_PAPER2_QUESTIONS from './seedYear7ExamPaper2Questions.js';
+import { Y8_EXAM_PAPER1_QUESTIONS } from './seedYear8ExamPaper1Questions.js';
 import { Y9_CH1_QUESTIONS } from './seedYear9Ch1Questions.js';
 import { Y9_CH1B_QUESTIONS } from './seedYear9Ch1BQuestions.js';
 import { Y9_CH1C_QUESTIONS } from './seedYear9Ch1CQuestions.js';
@@ -219,6 +221,8 @@ import { Y7_CH1D_QUESTIONS } from './seedYear7Ch1DQuestions.js';
 import { Y7_CH1E_QUESTIONS } from './seedYear7Ch1EQuestions.js';
 import { Y7_CH1F_QUESTIONS } from './seedYear7Ch1FQuestions.js';
 import { Y7_PRACTICE_EXAM_QUESTIONS } from './seedYear7PracticeExamQuestions.js';
+import { Y7_TASK3_ASSESSMENT_2018_QUESTIONS } from './seedYear7Task3Assessment2018Questions.js';
+import { BAULKHAM_Y10_2020_QUESTIONS } from './seedBaulkhamHillsY10Yearly2020.js';
 import { Y10_CH1_QUESTIONS } from './seedYear10Ch1Questions.js';
 import { Y10_CH1B_QUESTIONS } from './seedYear10Ch1BQuestions.js';
 import { Y10_CH1C_QUESTIONS } from './seedYear10Ch1CQuestions.js';
@@ -286,6 +290,9 @@ import { Y10_CH18B_ICEM_QUESTIONS } from './seedYear10Ch18BQuestionsICEM.js';
 import { Y10_CH18C_ICEM_QUESTIONS } from './seedYear10Ch18CQuestionsICEM.js';
 import { Y10_CH18D_ICEM_QUESTIONS } from './seedYear10Ch18DQuestionsICEM.js';
 import { Y10_CH18E_ICEM_QUESTIONS } from './seedYear10Ch18EQuestionsICEM.js';
+import { Y10_CH18F_ICEM_QUESTIONS } from './seedYear10Ch18FQuestionsICEM.js';
+import { Y10_CH18G_ICEM_QUESTIONS } from './seedYear10Ch18GQuestionsICEM.js';
+import { Y10_CH18H_ICEM_QUESTIONS } from './seedYear10Ch18HQuestionsICEM.js';
 import { CARINGBAH_2020_QUESTIONS } from './seedCaringbah2020Questions.js';
 import { CARINGBAH_2020_SIMILAR_QUESTIONS } from './seedCaringbah2020SimilarQuestions.js';
 import { ABBOTSLEIGH_2020_QUESTIONS } from './seedAbbotsleigh2020Questions.js';
@@ -1143,6 +1150,9 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18c-icem', topicCode: '18C', topicTitle: 'Boxplots, histograms and outliers', year: 'Year 10', seed: Y10_CH18C_ICEM_QUESTIONS, label: 'Y10 Ch18 · 18C (ICE-EM) Boxplots, histograms and outliers' },
   { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18d-icem', topicCode: '18D', topicTitle: 'The mean and the standard deviation', year: 'Year 10', seed: Y10_CH18D_ICEM_QUESTIONS, label: 'Y10 Ch18 · 18D (ICE-EM) The mean and the standard deviation' },
   { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18e-icem', topicCode: '18E', topicTitle: 'Interpreting the standard deviation', year: 'Year 10', seed: Y10_CH18E_ICEM_QUESTIONS, label: 'Y10 Ch18 · 18E (ICE-EM) Interpreting the standard deviation' },
+  { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18f-icem', topicCode: '18F', topicTitle: 'Time-series data', year: 'Year 10', seed: Y10_CH18F_ICEM_QUESTIONS, label: 'Y10 Ch18 · 18F (ICE-EM) Time-series data' },
+  { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18g-icem', topicCode: '18G', topicTitle: 'Bivariate data', year: 'Year 10', seed: Y10_CH18G_ICEM_QUESTIONS, label: 'Y10 Ch18 · 18G (ICE-EM) Bivariate data' },
+  { chapterId: 'y10-18', chapterTitle: 'Chapter 18: Statistics', topicId: 'y10-18h-icem', topicCode: '18H', topicTitle: 'Line of best fit', year: 'Year 10', seed: Y10_CH18H_ICEM_QUESTIONS, label: 'Y10 Ch18 · 18H (ICE-EM) Line of best fit' },
   {
     chapterId: 'y11a-1',
     chapterTitle: 'Chapter 1: Algebra review',
@@ -1345,9 +1355,11 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23i', topicCode: '23I', topicTitle: 'Applying algebra', year: 'Year 7', seed: Y7_CH23I_QUESTIONS, label: 'Y7 Ch23 · Applying algebra' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23j', topicCode: '23J', topicTitle: 'Problem solving with algebra', year: 'Year 7', seed: Y7_CH23J_QUESTIONS, label: 'Y7 Ch23 · Problem solving with algebra' },
   { chapterId: 'exam:y7-practice-1', badgeLabel: 'Y7 EXAM', examPaper: 'y7-practice-1', chapterTitle: 'Year 7 Mixed Practice Exam', topicId: 'y7-exam-practice1', topicCode: 'EXAM', topicTitle: 'Year 7 Mixed Practice Exam', year: 'Year 7', seed: Y7_PRACTICE_EXAM_QUESTIONS, label: 'Y7 · Mixed Practice Exam' },
+  { chapterId: 'exam:y7-task3-2018', badgeLabel: 'Y7 TASK3', examPaper: 'y7-task3-2018', chapterTitle: 'Year 7 Task 3 Assessment 2018', topicId: 'y7-exam-task3-2018', topicCode: 'EXAM', topicTitle: 'Year 7 Task 3 Assessment 2018', year: 'Year 7', seed: Y7_TASK3_ASSESSMENT_2018_QUESTIONS, label: 'Y7 · Task 3 Assessment 2018' },
   { chapterId: 'y10-5', chapterTitle: 'Chapter 5: Quadratic equations', topicId: 'y10-5a', topicCode: '5A', topicTitle: 'Solution of quadratic equations', year: 'Year 10', seed: Y10_CH5A_QUESTIONS, label: 'Y10 Ch5 · Solution of quadratic equations' },
   { chapterId: 'y10-6', chapterTitle: 'Chapter 6: Surface area and volume', topicId: 'y10-6a', topicCode: '6A', topicTitle: 'Review of prisms and cylinders', year: 'Year 10', seed: Y10_CH6_QUESTIONS, label: 'Y10 Ch6 · Review of prisms and cylinders' },
   // ── HSC Trial Exam Papers (multi-topic — each question carries its own topicId) ──
+  { chapterId: 'exam:baulko-y10-2020', badgeLabel: 'Y10 EXAM', examPaper: 'baulko-y10-2020', chapterTitle: 'Baulkham Hills 2020 Y10 Yearly', topicId: 'y10-exam', topicCode: 'EXAM', topicTitle: 'Baulkham Hills 2020 Y10 Yearly Exam', year: 'Year 10', seed: BAULKHAM_Y10_2020_QUESTIONS, label: 'Y10 · Baulkham Hills 2020 Y10 Yearly' },
   { chapterId: 'exam:caringbah-2020', badgeLabel: 'Y12 EXAM', examPaper: 'caringbah-2020', chapterTitle: 'Caringbah 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Caringbah 2020 Trial Exam', year: 'Year 12', seed: [...CARINGBAH_2020_QUESTIONS, ...CARINGBAH_2020_SIMILAR_QUESTIONS], label: 'Y12 · Caringbah 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:abbotsleigh-2020', badgeLabel: 'Y12 EXAM', examPaper: 'abbotsleigh-2020', chapterTitle: 'Abbotsleigh 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Abbotsleigh 2020 Trial Exam', year: 'Year 12', seed: ABBOTSLEIGH_2020_QUESTIONS, label: 'Y12 · Abbotsleigh 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:abb-2020-ext1', badgeLabel: 'Y12 EXAM', examPaper: 'abb-2020-ext1', chapterTitle: 'Abbotsleigh 2020 HSC Trial (Ext 1)', topicId: 'y12e1-exam', topicCode: 'EXAM', topicTitle: 'Abbotsleigh 2020 Trial Exam (Extension 1)', year: 'Year 12', seed: [...ABB_2020_EXT1_QUESTIONS, ...ABB_2020_EXT1_SIMILAR_QUESTIONS], label: 'Y12 · Abbotsleigh 2020 HSC Trial (Extension 1)' },
@@ -1372,6 +1384,9 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5J', topicCode: '5J', topicTitle: 'Areas and the logarithmic function', year: 'Year 12', seed: Y12A_CH5J_QUESTIONS, label: 'Y12 Ch5 · 5J Areas and the logarithmic function' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5K', topicCode: '5K', topicTitle: 'Calculus with other bases', year: 'Year 12', seed: Y12A_CH5K_QUESTIONS, label: 'Y12 Ch5 · 5K Calculus with other bases' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5L', topicCode: '5L', topicTitle: 'Chapter 5 Revision', year: 'Year 12', seed: Y12A_CH5L_QUESTIONS, label: 'Y12 Ch5 · 5L Chapter 5 Revision' },
+
+  { chapterId: 'exam:y7-paper2', badgeLabel: 'Y7 EXAM', examPaper: 'y7-paper2', chapterTitle: 'Year 7 Practice Exam 2', topicId: 'y7-exam-paper2', topicCode: 'EXAM', topicTitle: 'Year 7 Practice Exam 2', year: 'Year 7', seed: Y7_EXAM_PAPER2_QUESTIONS, label: 'Y7 · Practice Exam 2' },
+  { chapterId: 'exam:y8-paper1', badgeLabel: 'Y8 EXAM', examPaper: 'y8-paper1', chapterTitle: 'Year 8 Practice Exam 1', topicId: 'y8-exam-paper1', topicCode: 'EXAM', topicTitle: 'Year 8 Practice Exam 1', year: 'Year 8', seed: Y8_EXAM_PAPER1_QUESTIONS, label: 'Y8 · Practice Exam 1' },
 ];
 
 export {
@@ -1382,6 +1397,7 @@ export {
   CH5_QUESTIONS_Y11A,
   Y7_CH4I_QUESTIONS,
   Y7_PRACTICE_EXAM_QUESTIONS,
+  Y7_TASK3_ASSESSMENT_2018_QUESTIONS,
   Y9_CH2A_QUESTIONS,
   Y9_CH3A_QUESTIONS,
   Y9_CH3B_QUESTIONS,

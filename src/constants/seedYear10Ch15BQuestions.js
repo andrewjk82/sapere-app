@@ -1130,27 +1130,50 @@ export const Y10_CH15B_QUESTIONS = [
           {
             "explanation": "Draw two intersecting circles inside a rectangle. Let the circles represent Chemistry and Biology.",
             "workingOut": "\\text{Total = 120}",
-            "graphData": null
+            "graphData": {
+              "type": "svg",
+              "svg": "<svg viewBox=\"0 0 400 250\" width=\"400\" height=\"250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"10\" y=\"10\" width=\"380\" height=\"230\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"20\" y=\"30\" font-family=\"Arial\" font-size=\"14\">Total = 120</text>\n  \n  <!-- Chemistry Circle -->\n  <circle cx=\"150\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"115\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#2563eb\">Chemistry</text>\n  \n  <!-- Biology Circle -->\n  <circle cx=\"250\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"225\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#16a34a\">Biology</text>\n  \n  <!-- Numbers -->\n  \n  \n  \n  \n</svg>"
+            }
           },
           {
             "explanation": "Fill in the intersection first. We are given that 40 study both.",
             "workingOut": "\\text{Both} = 40",
-            "graphData": null
+            "graphData": {
+              "type": "svg",
+              "svg": "<svg viewBox=\"0 0 400 250\" width=\"400\" height=\"250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"10\" y=\"10\" width=\"380\" height=\"230\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"20\" y=\"30\" font-family=\"Arial\" font-size=\"14\">Total = 120</text>\n  \n  <!-- Chemistry Circle -->\n  <circle cx=\"150\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"115\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#2563eb\">Chemistry</text>\n  \n  <!-- Biology Circle -->\n  <circle cx=\"250\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"225\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#16a34a\">Biology</text>\n  \n  <!-- Numbers -->\n  \n  <text x=\"200\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">40</text>\n  \n  \n</svg>"
+            }
           },
           {
             "explanation": "Find the number of students who study Chemistry only by subtracting the intersection from the total Chemistry students.",
             "workingOut": "\\text{Chem only} = 70 - 40 = 30",
-            "graphData": null
+            "graphData": {
+              "type": "svg",
+              "svg": "<svg viewBox=\"0 0 400 250\" width=\"400\" height=\"250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"10\" y=\"10\" width=\"380\" height=\"230\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"20\" y=\"30\" font-family=\"Arial\" font-size=\"14\">Total = 120</text>\n  \n  <!-- Chemistry Circle -->\n  <circle cx=\"150\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"115\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#2563eb\">Chemistry</text>\n  \n  <!-- Biology Circle -->\n  <circle cx=\"250\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"225\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#16a34a\">Biology</text>\n  \n  <!-- Numbers -->\n  <text x=\"110\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">30</text>\n  <text x=\"200\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">40</text>\n  \n  \n</svg>"
+            }
           },
           {
             "explanation": "Find the number of students who study Biology only.",
             "workingOut": "\\text{Bio only} = 80 - 40 = 40",
-            "graphData": null
+            "graphData": {
+              "type": "svg",
+              "svg": "<svg viewBox=\"0 0 400 250\" width=\"400\" height=\"250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"10\" y=\"10\" width=\"380\" height=\"230\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"20\" y=\"30\" font-family=\"Arial\" font-size=\"14\">Total = 120</text>\n  \n  <!-- Chemistry Circle -->\n  <circle cx=\"150\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"115\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#2563eb\">Chemistry</text>\n  \n  <!-- Biology Circle -->\n  <circle cx=\"250\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"225\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#16a34a\">Biology</text>\n  \n  <!-- Numbers -->\n  <text x=\"110\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">30</text>\n  <text x=\"200\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">40</text>\n  <text x=\"290\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">40</text>\n  \n</svg>"
+            }
           },
           {
             "explanation": "Find the number of students who study neither by subtracting all those in the circles from the total.",
             "workingOut": "\\text{Neither} = 120 - (30 + 40 + 40) = 120 - 110 = 10",
-            "graphData": null
+            "graphData": {
+              "type": "svg",
+              "svg": "<svg viewBox=\"0 0 400 250\" width=\"400\" height=\"250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"10\" y=\"10\" width=\"380\" height=\"230\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"20\" y=\"30\" font-family=\"Arial\" font-size=\"14\">Total = 120</text>\n  \n  <!-- Chemistry Circle -->\n  <circle cx=\"150\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"115\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#2563eb\">Chemistry</text>\n  \n  <!-- Biology Circle -->\n  <circle cx=\"250\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"225\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#16a34a\">Biology</text>\n  \n  <!-- Numbers -->\n  <text x=\"110\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">30</text>\n  <text x=\"200\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">40</text>\n  <text x=\"290\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">40</text>\n  <text x=\"360\" y=\"220\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">10</text>\n</svg>"
+            }
+          },
+          {
+            "explanation": "The completed Venn diagram is shown below.",
+            "workingOut": "",
+            "graphData": {
+              "type": "svg",
+              "svg": "<svg viewBox=\"0 0 400 250\" width=\"400\" height=\"250\" xmlns=\"http://www.w3.org/2000/svg\">\n  <rect x=\"10\" y=\"10\" width=\"380\" height=\"230\" fill=\"none\" stroke=\"black\" stroke-width=\"2\"/>\n  <text x=\"20\" y=\"30\" font-family=\"Arial\" font-size=\"14\">Total = 120</text>\n  \n  <!-- Chemistry Circle -->\n  <circle cx=\"150\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"2\"/>\n  <text x=\"115\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#2563eb\">Chemistry</text>\n  \n  <!-- Biology Circle -->\n  <circle cx=\"250\" cy=\"130\" r=\"80\" fill=\"none\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n  <text x=\"225\" y=\"40\" font-family=\"Arial\" font-size=\"14\" fill=\"#16a34a\">Biology</text>\n  \n  <!-- Numbers -->\n  <text x=\"110\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">30</text>\n  <text x=\"200\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">40</text>\n  <text x=\"290\" y=\"135\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">40</text>\n  <text x=\"360\" y=\"220\" font-family=\"Arial\" font-size=\"16\" text-anchor=\"middle\">10</text>\n</svg>"
+            }
           }
         ],
         "graphData": null,
@@ -1188,7 +1211,29 @@ export const Y10_CH15B_QUESTIONS = [
           }
         ],
         "graphData": null,
-        "requiresManualGrading": false
+        "requiresManualGrading": false,
+        "options": [
+          {
+            "text": "\\(1/5\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          },
+          {
+            "text": "\\(1/4\\)",
+            "imageUrl": "",
+            "isCorrect": true
+          },
+          {
+            "text": "\\(1/2\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          },
+          {
+            "text": "\\(3/4\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          }
+        ]
       },
       {
         "id": "y10-15b-q9bii",
@@ -1222,7 +1267,29 @@ export const Y10_CH15B_QUESTIONS = [
           }
         ],
         "graphData": null,
-        "requiresManualGrading": false
+        "requiresManualGrading": false,
+        "options": [
+          {
+            "text": "\\(1/4\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          },
+          {
+            "text": "\\(1/3\\)",
+            "imageUrl": "",
+            "isCorrect": true
+          },
+          {
+            "text": "\\(1/2\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          },
+          {
+            "text": "\\(2/3\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          }
+        ]
       },
       {
         "id": "y10-15b-q9biii",
@@ -1256,7 +1323,29 @@ export const Y10_CH15B_QUESTIONS = [
           }
         ],
         "graphData": null,
-        "requiresManualGrading": false
+        "requiresManualGrading": false,
+        "options": [
+          {
+            "text": "\\(1/12\\)",
+            "imageUrl": "",
+            "isCorrect": true
+          },
+          {
+            "text": "\\(1/6\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          },
+          {
+            "text": "\\(1/4\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          },
+          {
+            "text": "\\(11/12\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          }
+        ]
       }
     ],
     "graphData": null,

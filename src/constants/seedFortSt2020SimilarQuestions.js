@@ -20,23 +20,23 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "solution": "The correct answer is \\(-7\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Fort Street 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "a + 3d = 40, quad a + 6d = 19",
+        "explanation": "The 4th term is $T_4 = a + 3d$. Since $T_4 = 40$, this is equation (1).",
+        "workingOut": "\\(T_4 = a + 3d = 40 \\quad\\cdots(1)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(3d = 19 - 40 = -21\\)",
+        "explanation": "The 7th term is $T_7 = a + 6d$. Since $T_7 = 19$, this is equation (2).",
+        "workingOut": "\\(T_7 = a + 6d = 19 \\quad\\cdots(2)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(d = -7\\)",
+        "explanation": "Subtract (1) from (2) to eliminate $a$ and solve for the common difference $d$ — no need to find $a$, since the question only asks for $d$.",
+        "workingOut": "\\((a + 6d) - (a + 3d) = 19 - 40 \\Rightarrow 3d = -21\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -7. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(-7\\)",
+        "explanation": "Divide both sides by 3 to solve for $d$.",
+        "workingOut": "\\(d = \\frac{-21}{3} = -7\\)",
         "graphData": null
       }
     ],
@@ -1016,23 +1016,23 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "solution": "The correct answer is \\(k \\leq \\dfrac{25}{6}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Fort Street 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\Delta = b^2 - 4ac \\geq 0\\)",
+        "explanation": "For a quadratic $ax^2+bx+c=0$ to have real roots, the discriminant must satisfy $\\Delta = b^2 - 4ac \\geq 0$. Here $a=3$, $b=-4$, $c=2k-7$.",
+        "workingOut": "\\((-4)^2 - 4(3)(2k - 7) \\geq 0\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(16 - 4(3)(2k - 7) \\geq 0\\)",
+        "explanation": "Expand $(-4)^2 = 16$ and $4(3)(2k-7) = 12(2k-7) = 24k - 84$.",
+        "workingOut": "\\(16 - (24k - 84) \\geq 0 \\Rightarrow 16 - 24k + 84 \\geq 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(16 - 24k + 84 \\geq 0\\)",
+        "explanation": "Combine the constant terms: $16 + 84 = 100$.",
+        "workingOut": "\\(100 - 24k \\geq 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: k \\leq \\dfrac{25}{6}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(k \\leq \\dfrac{25}{6}\\)",
+        "explanation": "Rearrange to isolate $k$: add $24k$ to both sides, then divide by 24 and simplify the fraction.",
+        "workingOut": "\\(100 \\geq 24k \\Rightarrow k \\leq \\frac{100}{24} = \\frac{25}{6}\\)",
         "graphData": null
       }
     ],
@@ -2446,10 +2446,10 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "For $V = 4900\\left(1 - \\dfrac{t}{70}\\right)^2$ ($0 \\le t \\le 70$), how long until the tank is half full (to the nearest minute)?",
     "opts": [
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
+      "\\(\\approx 10\\) minutes (\\(t \\approx 9.8\\))",
+      "\\(\\approx 35\\) minutes",
       "\\(\\approx 21\\) minutes (\\(t \\approx 20.5\\))",
-      "\\(\\dfrac{13}{x + 3}\\)"
+      "\\(\\approx 49\\) minutes (\\(t \\approx 49.5\\))"
     ],
     "a": 2,
     "answer": "2",
@@ -2457,23 +2457,23 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "solution": "The correct answer is \\(\\approx 21\\) minutes (\\(t \\approx 20.5\\)).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Fort Street 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "explanation": "The tank starts at $V(0) = 4900$ L, so \"half full\" means $V = 2450$. Set the model equal to 2450.",
         "workingOut": "\\(4900\\left(1 - \\frac{t}{70}\\right)^2 = 2450\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(1 - \\frac{t}{70} = \\pm\\frac{1}{\\sqrt2}\\)",
+        "explanation": "Divide both sides by 4900, then take the square root of both sides — remembering both the positive and negative root.",
+        "workingOut": "\\(\\left(1 - \\frac{t}{70}\\right)^2 = \\frac{1}{2} \\Rightarrow 1 - \\frac{t}{70} = \\pm\\frac{1}{\\sqrt{2}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(t = 70\\left(1 - \\tfrac{1}{\\sqrt2}\\right) \\approx 20.5\\)",
+        "explanation": "Solve each sign separately for $t$.",
+        "workingOut": "\\(t = 70\\left(1 - \\tfrac{1}{\\sqrt{2}}\\right) \\approx 20.5 \\quad\\text{or}\\quad t = 70\\left(1 + \\tfrac{1}{\\sqrt{2}}\\right) \\approx 119.5\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\(\\approx 21\\) minutes (\\(t \\approx 20.5\\)). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(\\approx 21\\) minutes (\\(t \\approx 20.5\\))",
+        "explanation": "The domain is $0 \\le t \\le 70$, so $t \\approx 119.5$ is rejected. The valid solution $t \\approx 20.5$ rounds to 21 minutes.",
+        "workingOut": "\\(t \\approx 20.5 \\Rightarrow \\text{about 21 minutes}\\)",
         "graphData": null
       }
     ],

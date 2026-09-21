@@ -1511,119 +1511,7 @@ export const Y11_CH6I_QUESTIONS = [
         "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for The cosine rule: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
         "workingOut": "\\(7^2 = x^2 + 8^2 - 2(8)(x) \\cos 60^{\\circ}\\)",
         "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -1,
-              9,
-              9,
-              -1
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "elements": [
-              {
-                "type": "point",
-                "id": "A",
-                "coords": [
-                  0,
-                  0
-                ],
-                "name": "A",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    -15,
-                    10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "B",
-                "coords": [
-                  8,
-                  0
-                ],
-                "name": "B",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    10,
-                    10
-                  ]
-                }
-              },
-              {
-                "type": "point",
-                "id": "C",
-                "coords": [
-                  2.5,
-                  4.3
-                ],
-                "name": "C",
-                "size": 0,
-                "label": {
-                  "offset": [
-                    5,
-                    15
-                  ]
-                }
-              },
-              {
-                "type": "polygon",
-                "points": [
-                  "A",
-                  "B",
-                  "C"
-                ],
-                "fillColor": "none",
-                "strokeColor": "black"
-              },
-              {
-                "type": "angle",
-                "points": [
-                  "B",
-                  "A",
-                  "C"
-                ],
-                "name": "60°",
-                "radius": 0.8,
-                "label": {
-                  "offset": [
-                    18,
-                    12
-                  ]
-                }
-              },
-              {
-                "type": "text",
-                "coords": [
-                  4,
-                  -0.5
-                ],
-                "content": "8"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  1.2,
-                  2.5
-                ],
-                "content": "x"
-              },
-              {
-                "type": "text",
-                "coords": [
-                  5.5,
-                  2.5
-                ],
-                "content": "7"
-              }
-            ]
-          }
+          "svg": "<svg viewBox='0 0 240 200' width='100%' height='auto' xmlns='http://www.w3.org/2000/svg'><polygon points='20,170 212,170 80,66.8' fill='#dbeafe' fill-opacity='0.5' stroke='#475569' stroke-width='2' stroke-linejoin='round'/><path d='M 45,170 A 25,25 0 0,0 32.6,148.4' fill='none' stroke='#475569' stroke-width='1.5'/><circle cx='20' cy='170' r='3' fill='#1e293b'/><circle cx='212' cy='170' r='3' fill='#1e293b'/><circle cx='80' cy='66.8' r='3' fill='#1e293b'/><text x='6' y='182' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>A</text><text x='216' y='182' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>B</text><text x='78' y='58' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' text-anchor='middle'>C</text><text x='53' y='155' font-family='system-ui, sans-serif' font-size='11' font-weight='600' fill='#1e293b'>60°</text><text x='116' y='186' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' text-anchor='middle'>8</text><text x='34' y='118' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' text-anchor='middle'>x</text><text x='160' y='112' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' text-anchor='middle'>7</text></svg>"
         }
       },
       {
@@ -1643,119 +1531,7 @@ export const Y11_CH6I_QUESTIONS = [
       }
     ],
     "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -1,
-          9,
-          9,
-          -1
-        ],
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "elements": [
-          {
-            "type": "point",
-            "id": "A",
-            "coords": [
-              0,
-              0
-            ],
-            "name": "A",
-            "size": 0,
-            "label": {
-              "offset": [
-                -15,
-                10
-              ]
-            }
-          },
-          {
-            "type": "point",
-            "id": "B",
-            "coords": [
-              8,
-              0
-            ],
-            "name": "B",
-            "size": 0,
-            "label": {
-              "offset": [
-                10,
-                10
-              ]
-            }
-          },
-          {
-            "type": "point",
-            "id": "C",
-            "coords": [
-              2.5,
-              4.3
-            ],
-            "name": "C",
-            "size": 0,
-            "label": {
-              "offset": [
-                5,
-                15
-              ]
-            }
-          },
-          {
-            "type": "polygon",
-            "points": [
-              "A",
-              "B",
-              "C"
-            ],
-            "fillColor": "none",
-            "strokeColor": "black"
-          },
-          {
-            "type": "angle",
-            "points": [
-              "B",
-              "A",
-              "C"
-            ],
-            "name": "60°",
-            "radius": 0.8,
-            "label": {
-              "offset": [
-                18,
-                12
-              ]
-            }
-          },
-          {
-            "type": "text",
-            "coords": [
-              4,
-              -0.5
-            ],
-            "content": "8"
-          },
-          {
-            "type": "text",
-            "coords": [
-              1.2,
-              2.5
-            ],
-            "content": "x"
-          },
-          {
-            "type": "text",
-            "coords": [
-              5.5,
-              2.5
-            ],
-            "content": "7"
-          }
-        ]
-      }
+      "svg": "<svg viewBox='0 0 240 200' width='100%' height='auto' xmlns='http://www.w3.org/2000/svg'><polygon points='20,170 212,170 80,66.8' fill='#dbeafe' fill-opacity='0.5' stroke='#475569' stroke-width='2' stroke-linejoin='round'/><path d='M 45,170 A 25,25 0 0,0 32.6,148.4' fill='none' stroke='#475569' stroke-width='1.5'/><circle cx='20' cy='170' r='3' fill='#1e293b'/><circle cx='212' cy='170' r='3' fill='#1e293b'/><circle cx='80' cy='66.8' r='3' fill='#1e293b'/><text x='6' y='182' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>A</text><text x='216' y='182' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>B</text><text x='78' y='58' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' text-anchor='middle'>C</text><text x='53' y='155' font-family='system-ui, sans-serif' font-size='11' font-weight='600' fill='#1e293b'>60°</text><text x='116' y='186' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' text-anchor='middle'>8</text><text x='34' y='118' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' text-anchor='middle'>x</text><text x='160' y='112' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' text-anchor='middle'>7</text></svg>"
     },
     "isNew": true,
     "requiresManualGrading": false
@@ -1794,7 +1570,9 @@ export const Y11_CH6I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "svg": "<svg viewBox='0 0 260 250' width='100%' height='auto' xmlns='http://www.w3.org/2000/svg'><polygon points='40,220 196,220 216.57,118.05' fill='#dbeafe' fill-opacity='0.5' stroke='#475569' stroke-width='2' stroke-linejoin='round'/><line x1='196' y1='220' x2='97.43' y2='186.85' stroke='#64748b' stroke-width='1.5' stroke-dasharray='4 3'/><line x1='216.57' y1='118.05' x2='231.4' y2='109.5' stroke='#94a3b8' stroke-width='1.2' stroke-dasharray='4 3'/><path d='M 70,220 A 30,30 0 0,0 65.98,205' fill='none' stroke='#475569' stroke-width='1.5'/><circle cx='40' cy='220' r='3' fill='#1e293b'/><circle cx='196' cy='220' r='3' fill='#1e293b'/><circle cx='216.57' cy='118.05' r='3' fill='#1e293b'/><circle cx='97.43' cy='186.85' r='3.5' fill='#fff' stroke='#64748b' stroke-width='1.5'/><text x='24' y='238' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>A</text><text x='200' y='238' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>B</text><text x='220' y='108' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>C</text><text x='68' y='182' font-family='system-ui, sans-serif' font-size='12' font-weight='600' fill='#64748b'>C′</text><text x='47' y='214' font-family='system-ui, sans-serif' font-size='11' font-weight='600' fill='#1e293b'>30°</text><text x='118' y='234' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' text-anchor='middle'>6</text><text x='222' y='166' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>4</text><text x='152' y='198' font-family='system-ui, sans-serif' font-size='11' font-weight='600' fill='#64748b'>4</text><text x='117' y='150' font-family='system-ui, sans-serif' font-size='12' font-weight='600' fill='#1e293b' text-anchor='middle' transform='rotate(-30 117 150)'>x ≈ 7.84</text></svg>"
+    },
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1832,7 +1610,9 @@ export const Y11_CH6I_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "svg": "<svg viewBox='0 0 260 250' width='100%' height='auto' xmlns='http://www.w3.org/2000/svg'><polygon points='40,220 196,220 216.57,118.05' fill='#dbeafe' fill-opacity='0.5' stroke='#475569' stroke-width='2' stroke-linejoin='round'/><line x1='196' y1='220' x2='97.43' y2='186.85' stroke='#64748b' stroke-width='1.5' stroke-dasharray='4 3'/><line x1='216.57' y1='118.05' x2='231.4' y2='109.5' stroke='#94a3b8' stroke-width='1.2' stroke-dasharray='4 3'/><path d='M 70,220 A 30,30 0 0,0 65.98,205' fill='none' stroke='#475569' stroke-width='1.5'/><circle cx='40' cy='220' r='3' fill='#1e293b'/><circle cx='196' cy='220' r='3' fill='#1e293b'/><circle cx='216.57' cy='118.05' r='3' fill='#1e293b'/><circle cx='97.43' cy='186.85' r='3.5' fill='#fff' stroke='#64748b' stroke-width='1.5'/><text x='24' y='238' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>A</text><text x='200' y='238' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>B</text><text x='220' y='108' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>C</text><text x='68' y='182' font-family='system-ui, sans-serif' font-size='12' font-weight='600' fill='#64748b'>C′</text><text x='47' y='214' font-family='system-ui, sans-serif' font-size='11' font-weight='600' fill='#1e293b'>30°</text><text x='118' y='234' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b' text-anchor='middle'>6</text><text x='222' y='166' font-family='system-ui, sans-serif' font-size='13' font-weight='600' fill='#1e293b'>4</text><text x='152' y='198' font-family='system-ui, sans-serif' font-size='11' font-weight='600' fill='#64748b'>4</text><text x='117' y='150' font-family='system-ui, sans-serif' font-size='12' font-weight='600' fill='#1e293b' text-anchor='middle' transform='rotate(-30 117 150)'>x ≈ 7.84</text></svg>"
+    },
     "isNew": true,
     "requiresManualGrading": true
   }

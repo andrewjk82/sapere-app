@@ -24,7 +24,7 @@
  *
  * Pure module — no Firebase / React imports (safe for node test scripts).
  */
-import { answersMatch } from './answerMatching.js';
+import { answersMatch, isQuestionAlgebraic } from './answerMatching.js';
 import { toDisplayText } from './mathPreprocess.js';
 
 const optionText = (option) => toDisplayText(option);
@@ -50,7 +50,7 @@ export function isOptionIndexAnswer(raw, options) {
   if (!/^\d+$/.test(s)) return false;
   const idx = Number(s);
   if (!Number.isInteger(idx) || idx < 0 || idx >= options.length) return false;
-  if (options.some((o) => answersMatch(optionText(o), s))) return false;
+  if (options.some((o) => answersMatch(optionText(o), s, false))) return false;
   return true;
 }
 
@@ -90,7 +90,7 @@ export function resolveCorrectOptionIndex(question, options = optionList(questio
   const target = optionText(text).trim();
   const exact = options.findIndex((o) => optionText(o).trim() === target);
   if (exact >= 0) return exact;
-  return options.findIndex((o) => answersMatch(optionText(o), text));
+  return options.findIndex((o) => answersMatch(optionText(o), text, isQuestionAlgebraic(question)));
 }
 
 /**
@@ -131,7 +131,7 @@ export function prepareShuffledMcOptions(question, opts = {}) {
     const newIdx = order.indexOf(originalIdx);
     question._shuffledAnswerIndex = newIdx >= 0 ? newIdx : undefined;
   } else {
-    const byText = shuffled.findIndex((o) => answersMatch(optionText(o), correctText));
+    const byText = shuffled.findIndex((o) => answersMatch(optionText(o), correctText, isQuestionAlgebraic(question)));
     question._shuffledAnswerIndex = byText >= 0 ? byText : undefined;
   }
   return shuffled;
@@ -170,19 +170,19 @@ export function isDisplayedOptionCorrect(question, displayOptions, displayIndex)
   }
 
   if (shuffled) {
-    return answersMatch(optText, question._shuffledAnswer);
+    return answersMatch(optText, question._shuffledAnswer, isQuestionAlgebraic(question));
   }
 
   const raw = question.answer ?? question.a;
   const correctText = resolveCorrectOptionText(question, displayOptions);
-  if (answersMatch(optText, correctText)) return true;
+  if (answersMatch(optText, correctText, isQuestionAlgebraic(question))) return true;
   if (isOptionIndexAnswer(raw, displayOptions)) {
     return displayIndex === Number(String(raw).trim());
   }
   if (question.isManual && /^\d+$/.test(String(raw ?? '').trim())) {
     return displayIndex === Number(String(raw).trim());
   }
-  return answersMatch(optText, String(raw ?? ''));
+  return answersMatch(optText, String(raw ?? ''), isQuestionAlgebraic(question));
 }
 
 /** Grade a student's MC pick. */
@@ -196,7 +196,7 @@ export function gradeMcSelection(question, optionTextIn, optIdx, displayOptions)
 
   // Same rule as the highlight: text decides. A student who picked an option
   // reading exactly like the answer is correct, whichever copy they tapped.
-  if (answersMatch(optionTextIn, correctText)) return true;
+  if (answersMatch(optionTextIn, correctText, isQuestionAlgebraic(question))) return true;
 
   // Callers pass either the raw stored option text or its display form —
   // both must grade identically. correctText is display-normalised
@@ -204,7 +204,7 @@ export function gradeMcSelection(question, optionTextIn, optIdx, displayOptions)
   // \\\f-mangled LaTeX ("\<FF>rac…") that toDisplayText heals, so the raw
   // text only matches the answer AFTER the same healing.
   const normalizedIn = optionText(optionTextIn);
-  if (normalizedIn !== optionTextIn && answersMatch(normalizedIn, correctText)) return true;
+  if (normalizedIn !== optionTextIn && answersMatch(normalizedIn, correctText, isQuestionAlgebraic(question))) return true;
 
   // Diagram-only pick (graphData, no text): a text comparison can only ever
   // say "no" here (see isDisplayedOptionCorrect), so a student who tapped the

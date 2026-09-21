@@ -4,13 +4,12 @@ export const Y10_CH15D_QUESTIONS = [
     "topicId": "y10-15d",
     "c": "15D",
     "t": "Independent events",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "200 people were surveyed about their attitudes to the use of headgear in professional boxing and classified according to sex. The results are shown in the table below.\n\nSurvey question: Should the use of headgear be mandatory in professional boxing?\n\n\\(\\begin{array}{l|cc|c} & \\mathrm{Male} & \\mathrm{Female} & \\mathrm{Total} \\\\ \\hline \\mathrm{Yes} & 35 & 45 & 80 \\\\ \\mathrm{No} & 65 & 55 & 120 \\\\ \\hline \\mathrm{Total} & 100 & 100 & 200 \\end{array}\\)\n\nIs attitude to the use of headgear in professional boxing independent of sex?",
-    "answer": "No.\nP(Yes and Male) = 7/40 but P(Yes) x P(Male) = 8/40.\nSince these are not equal, attitude is not independent of sex.",
-    "hint": "Write a full structured solution for the teacher to mark.",
-    "solution": "No.\nP(Yes and Male) = 7/40 but P(Yes) x P(Male) = 8/40.\nSince these are not equal, attitude is not independent of sex.",
+    "answer": "0",
+    "solution": "No, because \\(P(\\text{Yes} \\cap \\text{Male}) \\neq P(\\text{Yes}) \\times P(\\text{Male})\\)",
     "solutionSteps": [
       {
         "explanation": "For two events to be independent, the condition \\(P(A \\cap B) = P(A) \\times P(B)\\) must hold. We will test whether the events 'answering Yes' and 'being Male' are independent.",
@@ -30,135 +29,253 @@ export const Y10_CH15D_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "No, because \\(P(\\text{Yes} \\cap \\text{Male}) \\neq P(\\text{Yes}) \\times P(\\text{Male})\\)",
+      "Yes, because \\(P(\\text{Yes} \\cap \\text{Male}) = P(\\text{Yes}) \\times P(\\text{Male})\\)",
+      "No, because \\(P(\\text{Yes} \\cap \\text{Male}) = P(\\text{Yes}) \\times P(\\text{Male})\\)",
+      "Yes, because \\(P(\\text{Yes} \\cap \\text{Male}) \\neq P(\\text{Yes}) \\times P(\\text{Male})\\)"
+    ],
+    "options": [
+      {
+        "text": "No, because \\(P(\\text{Yes} \\cap \\text{Male}) \\neq P(\\text{Yes}) \\times P(\\text{Male})\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "Yes, because \\(P(\\text{Yes} \\cap \\text{Male}) = P(\\text{Yes}) \\times P(\\text{Male})\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "No, because \\(P(\\text{Yes} \\cap \\text{Male}) = P(\\text{Yes}) \\times P(\\text{Male})\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "Yes, because \\(P(\\text{Yes} \\cap \\text{Male}) \\neq P(\\text{Yes}) \\times P(\\text{Male})\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ],
+    "a": 0
   },
   {
     "id": "y10-15d-q2",
     "topicId": "y10-15d",
     "c": "15D",
     "t": "Independent events",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "90 adults were surveyed about whether they play video games more than once a week and their age category was recorded ('under 25' and '25 years or older'). The results are shown below.\n\n\\(\\begin{array}{l|cc|c} & < 25 & \\geq 25 & \\mathrm{Total} \\\\ \\hline \\mathrm{Yes} & 40 & 20 & 60 \\\\ \\mathrm{No} & 10 & 20 & 30 \\\\ \\hline \\mathrm{Total} & 50 & 40 & 90 \\end{array}\\)\n\nIs playing video games multiple times a week independent of age category?",
-    "answer": "No.\nP(Yes and Under 25) = 4/9, but P(Yes) x P(Under 25) = 10/27.\nSince 12/27 does not equal 10/27, playing video games is not independent of age category.",
-    "hint": "Write a full structured solution for the teacher to mark.",
-    "solution": "No.\nP(Yes and Under 25) = 4/9, but P(Yes) x P(Under 25) = 10/27.\nSince 12/27 does not equal 10/27, playing video games is not independent of age category.",
+    "answer": "0",
+    "solution": "No, because \\(P(\\text{Yes} \\cap \\text{<25}) \\neq P(\\text{Yes}) \\times P(\\text{<25})\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Independent events: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(P(\\mathrm{Yes}) = \\frac{60}{90} = \\frac{2}{3}\\)",
+        "explanation": "For two events to be independent, the condition \\(P(A \\cap B) = P(A) \\times P(B)\\) must hold. We test this for \\(\\text{Yes}\\) and \\(\\text{<25}\\).",
+        "workingOut": "\\(P(\\text{Yes}) = \\frac{60}{90} = \\frac{2}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(P(< 25) = \\frac{50}{90} = \\frac{5}{9}\\)",
+        "explanation": "Calculate the probability of being under 25 years old.",
+        "workingOut": "\\(P(\\text{<25}) = \\frac{50}{90} = \\frac{5}{9}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(P(\\mathrm{Yes} \\cap {<}25) = \\frac{40}{90} = \\frac{4}{9}\\)",
+        "explanation": "Find the product of the marginal probabilities.",
+        "workingOut": "\\(P(\\text{Yes}) \\times P(\\text{<25}) = \\frac{2}{3} \\times \\frac{5}{9} = \\frac{10}{27}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: No.\nP(Yes and Under 25) = 4/9, but P(Yes) x P(Under 25) = 10/27.\nSince 12/27 does not equal 10/27, playing video games is not independent of age category.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "No.\nP(Yes and Under 25) = 4/9, but P(Yes) x P(Under 25) = 10/27.\nSince 12/27 does not equal 10/27, playing video games is not independent of age category.",
+        "explanation": "Find the actual intersection probability from the table and compare it to the product.",
+        "workingOut": "\\(P(\\text{Yes} \\cap \\text{<25}) = \\frac{40}{90} = \\frac{4}{9} = \\frac{12}{27}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since the values are not equal (\\(\\frac{12}{27} \\neq \\frac{10}{27}\\)), the events are not independent.",
+        "workingOut": "\\(P(\\text{Yes} \\cap \\text{<25}) \\neq P(\\text{Yes}) \\times P(\\text{<25})\\)",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "No, because \\(P(\\text{Yes} \\cap \\text{<25}) \\neq P(\\text{Yes}) \\times P(\\text{<25})\\)",
+      "Yes, because \\(P(\\text{Yes} \\cap \\text{<25}) = P(\\text{Yes}) \\times P(\\text{<25})\\)",
+      "No, because \\(P(\\text{Yes} \\cap \\text{<25}) = P(\\text{Yes}) \\times P(\\text{<25})\\)",
+      "Yes, because \\(P(\\text{Yes} \\cap \\text{<25}) \\neq P(\\text{Yes}) \\times P(\\text{<25})\\)"
+    ],
+    "options": [
+      {
+        "text": "No, because \\(P(\\text{Yes} \\cap \\text{<25}) \\neq P(\\text{Yes}) \\times P(\\text{<25})\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "Yes, because \\(P(\\text{Yes} \\cap \\text{<25}) = P(\\text{Yes}) \\times P(\\text{<25})\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "No, because \\(P(\\text{Yes} \\cap \\text{<25}) = P(\\text{Yes}) \\times P(\\text{<25})\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "Yes, because \\(P(\\text{Yes} \\cap \\text{<25}) \\neq P(\\text{Yes}) \\times P(\\text{<25})\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ],
+    "a": 0
   },
   {
-    "id": "y10-15d-q3a",
+    "id": "y10-15d-q3",
     "topicId": "y10-15d",
     "c": "15D",
     "t": "Independent events",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 120,
-    "question": "250 road accidents recorded by the Traffic Authority were studied in terms of vehicle speed at the time of collision, relative to the local speed limit, and the accident severity. The results are shown below.\n\n\\(\\begin{array}{l|ccc|c} & (1) & (2) & (3) & \\mathrm{Total} \\\\ \\hline \\mathrm{Minor} & 52 & 105 & 23 & 180 \\\\ \\mathrm{Major} & 3 & 40 & 27 & 70 \\\\ \\hline \\mathrm{Total} & 55 & 145 & 50 & 250 \\end{array}\\)\n\nWhere: (1) = Not speeding, (2) = Up to 10 km/h over the limit, (3) = More than 10 km/h over the limit.\nFind the probability that a randomly selected accident in the study is classed as 'major'.",
-    "opts": [
-      "\\(-0.28\\)",
-      "\\(-0.72\\)",
-      "\\(7/25\\)",
-      "\\(1.28\\)"
-    ],
-    "a": 2,
-    "answer": "2",
-    "hint": "",
-    "solution": "The correct answer is \\(7/25\\).",
-    "solutionSteps": [
+    "type": "multipart",
+    "difficulty": "medium",
+    "timeLimit": 300,
+    "question": "250 road accidents recorded by the Traffic Authority were studied in terms of vehicle speed at the time of collision, relative to the local speed limit, and the accident severity. The results are shown below.",
+    "subQuestions": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Independent events: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(n(\\mathrm{Major}) = 70\\)",
-        "graphData": null
+        "id": "y10-15d-q3a",
+        "topicId": "y10-15d",
+        "c": "15D",
+        "t": "Independent events",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "timeLimit": 120,
+        "question": "\\(\\begin{array}{l|ccc|c} & (1) & (2) & (3) & \\mathrm{Total} \\\\ \\hline \\mathrm{Minor} & 52 & 105 & 23 & 180 \\\\ \\mathrm{Major} & 3 & 40 & 27 & 70 \\\\ \\hline \\mathrm{Total} & 55 & 145 & 50 & 250 \\end{array}\\)\n\nWhere: (1) = Not speeding, (2) = Up to 10 km/h over the limit, (3) = More than 10 km/h over the limit.\nFind the probability that a randomly selected accident in the study is classed as 'major'.",
+        "opts": [
+          "\\(\\frac{7}{25}\\)",
+          "\\(\\frac{8}{25}\\)",
+          "\\(\\frac{6}{25}\\)",
+          "\\(\\frac{9}{25}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "",
+        "solution": "The correct answer is \\(7/25\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Independent events: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+            "workingOut": "\\(n(\\mathrm{Major}) = 70\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+            "workingOut": "\\(n(S) = 250\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+            "workingOut": "\\(P(\\mathrm{Major}) = \\frac{70}{250} = \\frac{7}{25}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: 7/25. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+            "workingOut": "\\(7/25\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "isNew": true,
+        "requiresManualGrading": false,
+        "options": [
+          {
+            "text": "\\(\\frac{7}{25}\\)",
+            "imageUrl": "",
+            "isCorrect": true
+          },
+          {
+            "text": "\\(\\frac{8}{25}\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          },
+          {
+            "text": "\\(\\frac{6}{25}\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          },
+          {
+            "text": "\\(\\frac{9}{25}\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          }
+        ]
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(n(S) = 250\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(P(\\mathrm{Major}) = \\frac{70}{250} = \\frac{7}{25}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 7/25. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(7/25\\)",
-        "graphData": null
+        "id": "y10-15d-q3b",
+        "topicId": "y10-15d",
+        "c": "15D",
+        "t": "Independent events",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "timeLimit": 120,
+        "question": "\\(\\begin{array}{l|ccc|c} & (1) & (2) & (3) & \\mathrm{Total} \\\\ \\hline \\mathrm{Minor} & 52 & 105 & 23 & 180 \\\\ \\mathrm{Major} & 3 & 40 & 27 & 70 \\\\ \\hline \\mathrm{Total} & 55 & 145 & 50 & 250 \\end{array}\\)\n\nWhere: (1) = Not speeding, (2) = Up to 10 km/h over the limit, (3) = More than 10 km/h over the limit.\nFind the probability that an accident was classed as major given that it collided at a speed greater than 10 km/h over the local speed limit.",
+        "opts": [
+          "\\(\\frac{27}{50}\\)",
+          "\\(\\frac{29}{50}\\)",
+          "\\(\\frac{23}{50}\\)",
+          "\\(\\frac{31}{50}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "",
+        "solution": "The correct answer is \\(27/50\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Independent events: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+            "workingOut": "\\(n({>}10\\;\\mathrm{over}) = 50\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+            "workingOut": "\\(n(\\mathrm{Major} \\cap {>}10\\;\\mathrm{over}) = 27\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+            "workingOut": "\\(P(\\mathrm{Major} \\mid {>}10\\;\\mathrm{over}) = \\frac{27}{50}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: 27/50. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+            "workingOut": "\\(27/50\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "isNew": true,
+        "requiresManualGrading": false,
+        "options": [
+          {
+            "text": "\\(\\frac{27}{50}\\)",
+            "imageUrl": "",
+            "isCorrect": true
+          },
+          {
+            "text": "\\(\\frac{29}{50}\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          },
+          {
+            "text": "\\(\\frac{23}{50}\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          },
+          {
+            "text": "\\(\\frac{31}{50}\\)",
+            "imageUrl": "",
+            "isCorrect": false
+          }
+        ]
       }
-    ],
-    "graphData": null,
-    "isNew": true,
-    "requiresManualGrading": false
-  },
-  {
-    "id": "y10-15d-q3b",
-    "topicId": "y10-15d",
-    "c": "15D",
-    "t": "Independent events",
-    "type": "multiple_choice",
-    "difficulty": "hard",
-    "timeLimit": 120,
-    "question": "250 road accidents recorded by the Traffic Authority were studied in terms of vehicle speed at the time of collision, relative to the local speed limit, and the accident severity. The results are shown below.\n\n\\(\\begin{array}{l|ccc|c} & (1) & (2) & (3) & \\mathrm{Total} \\\\ \\hline \\mathrm{Minor} & 52 & 105 & 23 & 180 \\\\ \\mathrm{Major} & 3 & 40 & 27 & 70 \\\\ \\hline \\mathrm{Total} & 55 & 145 & 50 & 250 \\end{array}\\)\n\nWhere: (1) = Not speeding, (2) = Up to 10 km/h over the limit, (3) = More than 10 km/h over the limit.\nFind the probability that an accident was classed as major given that it collided at a speed greater than 10 km/h over the local speed limit.",
-    "opts": [
-      "\\(-0.45999999999999996\\)",
-      "\\(-0.54\\)",
-      "\\(27/50\\)",
-      "\\(1.54\\)"
-    ],
-    "a": 2,
-    "answer": "2",
-    "hint": "",
-    "solution": "The correct answer is \\(27/50\\).",
-    "solutionSteps": [
-      {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Independent events: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(n({>}10\\;\\mathrm{over}) = 50\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(n(\\mathrm{Major} \\cap {>}10\\;\\mathrm{over}) = 27\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(P(\\mathrm{Major} \\mid {>}10\\;\\mathrm{over}) = \\frac{27}{50}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 27/50. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(27/50\\)",
-        "graphData": null
-      }
-    ],
-    "graphData": null,
-    "isNew": true,
-    "requiresManualGrading": false
+    ]
   },
   {
     "id": "y10-15d-q3c",
@@ -236,13 +353,13 @@ export const Y10_CH15D_QUESTIONS = [
     "timeLimit": 120,
     "question": "The probability that a person cycles to work is \\(\\frac{2}{5}\\), and the probability that a person owns a pet is \\(\\frac{1}{4}\\). If these events are independent, find the following probabilities.\nA person cycles to work and owns a pet.",
     "opts": [
-      "\\(-0.1\\)",
-      "\\(-0.9\\)",
-      "\\(1/10\\)",
-      "\\(1.1\\)"
+      "\\(\\frac{1}{10}\\)",
+      "\\(\\frac{3}{10}\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{2}{5}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "",
     "solution": "The correct answer is \\(1/10\\).",
     "solutionSteps": [
@@ -269,7 +386,29 @@ export const Y10_CH15D_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{1}{10}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{3}{10}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{1}{5}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{2}{5}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15d-q4b",
@@ -281,13 +420,13 @@ export const Y10_CH15D_QUESTIONS = [
     "timeLimit": 120,
     "question": "The probability that a person cycles to work is \\(\\frac{2}{5}\\), and the probability that a person owns a pet is \\(\\frac{1}{4}\\). If these events are independent, find the following probabilities.\nA person does not own a pet but cycles to work.",
     "opts": [
-      "\\(-0.3\\)",
-      "\\(-0.7\\)",
-      "\\(3/10\\)",
-      "\\(1.3\\)"
+      "\\(\\frac{3}{10}\\)",
+      "\\(\\frac{1}{10}\\)",
+      "\\(\\frac{7}{10}\\)",
+      "\\(\\frac{9}{10}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "",
     "solution": "The correct answer is \\(3/10\\).",
     "solutionSteps": [
@@ -314,7 +453,29 @@ export const Y10_CH15D_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{3}{10}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{1}{10}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{7}{10}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{9}{10}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15d-q4c",
@@ -326,13 +487,13 @@ export const Y10_CH15D_QUESTIONS = [
     "timeLimit": 120,
     "question": "The probability that a person cycles to work is \\(\\frac{2}{5}\\), and the probability that a person owns a pet is \\(\\frac{1}{4}\\). If these events are independent, find the following probabilities.\nA person does not own a pet and does not cycle to work.",
     "opts": [
-      "\\(-0.45\\)",
-      "\\(-0.55\\)",
-      "\\(9/20\\)",
-      "\\(1.45\\)"
+      "\\(\\frac{9}{20}\\)",
+      "\\(\\frac{11}{20}\\)",
+      "\\(\\frac{7}{20}\\)",
+      "\\(\\frac{13}{20}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "",
     "solution": "The correct answer is \\(9/20\\).",
     "solutionSteps": [
@@ -359,7 +520,29 @@ export const Y10_CH15D_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{9}{20}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{11}{20}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{7}{20}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{13}{20}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15d-q4d",
@@ -371,13 +554,13 @@ export const Y10_CH15D_QUESTIONS = [
     "timeLimit": 120,
     "question": "The probability that a person cycles to work is \\(\\frac{2}{5}\\), and the probability that a person owns a pet is \\(\\frac{1}{4}\\). If these events are independent, find the following probabilities.\nA person cycles to work or owns a pet.",
     "opts": [
-      "\\(-0.44999999999999996\\)",
-      "\\(-0.55\\)",
-      "\\(11/20\\)",
-      "\\(1.55\\)"
+      "\\(\\frac{11}{20}\\)",
+      "\\(\\frac{9}{20}\\)",
+      "\\(\\frac{13}{20}\\)",
+      "\\(\\frac{7}{20}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "",
     "solution": "The correct answer is \\(11/20\\).",
     "solutionSteps": [
@@ -404,7 +587,29 @@ export const Y10_CH15D_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(\\frac{11}{20}\\)",
+        "imageUrl": "",
+        "isCorrect": true
+      },
+      {
+        "text": "\\(\\frac{9}{20}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{13}{20}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      },
+      {
+        "text": "\\(\\frac{7}{20}\\)",
+        "imageUrl": "",
+        "isCorrect": false
+      }
+    ]
   },
   {
     "id": "y10-15d-q5",

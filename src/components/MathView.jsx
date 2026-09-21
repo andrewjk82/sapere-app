@@ -274,10 +274,16 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
       {hasText && (
         <div ref={containerRef} style={textStyle}>
           {lines.map((line, idx) => {
-            const isSecondLine = idx === 1;
             const hasDisplayMath = /\\+\[|\$\$/.test(String(line));
             const isPureMath = /^\s*(?:\$\$|\\+\[|\$|\\+\()[\s\S]+?(?:\$\$|\\+\]|\$|\\+\))[\s,;:?.!]*$/.test(String(line).trim());
-            const isCentered = idx > 0 && (hasDisplayMath || isPureMath);
+            // Center any line that's display/pure math, including the first line —
+            // a workingOut block made entirely of stacked equations (no prose stem)
+            // had its first equation stuck left-aligned while later ones centered
+            // (2026-09-05, "가운데 정렬" report). The old idx>0 gate was meant only
+            // for the "Solve: $$x=5$$" case where line 0 is prose — that line never
+            // matches hasDisplayMath/isPureMath on its own, so dropping idx>0 here
+            // doesn't affect it.
+            const isCentered = hasDisplayMath || isPureMath;
             return (
               <div
                 key={idx}

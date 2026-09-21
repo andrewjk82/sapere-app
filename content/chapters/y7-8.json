@@ -2503,20 +2503,15 @@
             "\\(0.54\\text{ cm}\\)",
             "\\(0.54\\text{ cm}1\\)"
           ],
-          "answer": 2,
-          "solution": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert \\(4\\text{ mm}\\) to cm (\\(4 \\div 10 = 0.4\\text{ cm}\\)), then add to \\(5\\text{ cm}\\):<br>\\(5 + 0.4 = 5.4\\text{ cm}\\).</p>\n    </div>",
+          "answer": 0,
           "steps": [
             {
-              "explain": "Identify what the question is asking and note the given information. Choose the appropriate method (calculate, simplify, convert, or list elements).",
-              "work": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert \\(4\\text{ mm}\\) to cm (\\(4 \\div 10 = 0.4\\text{ cm}\\)), then add to \\(5\\text{ cm}\\):<br>\\(5 + 0.4 = 5.4\\text{ cm}\\).</p>\n    </div>"
+              "explain": "Convert the millimetre measurement to centimetres by dividing by \\(10\\).",
+              "work": "\\(4\\text{ mm} = 4 \\div 10\\text{ cm} = 0.4\\text{ cm}\\)"
             },
             {
-              "explain": "Carry out the calculation or algebraic rearrangement step by step. Watch signs, place value, and order of operations.",
-              "work": "<div style=\"text-align: left;\">\n      <p><strong>Step-by-step breakdown:</strong></p>\n      <p>Convert \\(4\\text{ mm}\\) to cm (\\(4 \\div 10 = 0.4\\text{ cm}\\)), then add to \\(5\\text{ cm}\\):<br>\\(5 + 0.4 = 5.4\\text{ cm}\\).</p>\n    </div>"
-            },
-            {
-              "explain": "State the final simplified answer and match it to the correct option.",
-              "work": "\\(0.54\\text{ cm}\\)"
+              "explain": "Add this to the original centimetre measurement.",
+              "work": "\\(5\\text{ cm} + 0.4\\text{ cm} = 5.4\\text{ cm}\\)"
             }
           ],
           "timeLimit": 45

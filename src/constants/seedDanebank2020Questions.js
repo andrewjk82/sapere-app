@@ -189,34 +189,34 @@ export const DANEBANK_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "The $7^{\\text{th}}$ term of an arithmetic sequence is $45$ and the $11^{\\text{th}}$ term is $77$. Find the first term $a$ and the common difference $d$.",
     "opts": [
-      "a = -3\\) and \\(d = 8",
-      "a = 3\\) and \\(d = 8",
-      "a = 8\\) and \\(d = -3",
-      "a = 8\\) and \\(d = 3"
+      "\\(a = -3\\) and \\(d = 8\\)",
+      "\\(a = 3\\) and \\(d = 8\\)",
+      "\\(a = 8\\) and \\(d = -3\\)",
+      "\\(a = 8\\) and \\(d = 3\\)"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Use $T_n = a + (n-1)d$ to write two equations and subtract them.",
-    "solution": "The correct answer is a = -3\\) and \\(d = 8.",
+    "solution": "The correct answer is \\(a = -3\\) and \\(d = 8\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Danebank 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(T_7 = a + 6d = 45\\)",
+        "explanation": "The 7th term is $T_7 = a + 6d$. Since $T_7 = 45$, this is equation (1).",
+        "workingOut": "\\(a + 6d = 45 \\quad\\cdots(1)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(T_{11} = a + 10d = 77\\)",
+        "explanation": "The 11th term is $T_{11} = a + 10d$. Since $T_{11} = 77$, this is equation (2).",
+        "workingOut": "\\(a + 10d = 77 \\quad\\cdots(2)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(4d = 32 \\Rightarrow d = 8\\)",
+        "explanation": "Subtract (1) from (2) to eliminate $a$ and solve for the common difference $d$.",
+        "workingOut": "\\((a+10d)-(a+6d) = 77-45 \\Rightarrow 4d = 32 \\Rightarrow d = 8\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: a = -3\\) and \\(d = 8. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "a = -3\\) and \\(d = 8",
+        "explanation": "Substitute $d = 8$ back into equation (1) to find the first term $a$.",
+        "workingOut": "\\(a + 6(8) = 45 \\Rightarrow a = 45 - 48 = -3\\)",
         "graphData": null
       }
     ],

@@ -9958,7 +9958,7 @@
           "id": "y9-14f-q6a",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "The lines with equations \\( y = x + k \\) and \\( y = mx + 3 \\) intersect at \\( (1, 2) \\). Find \\( k \\).\n<div style=\"display:flex; justify-content:center; margin:16px 0;\"><svg width=\"300\" height=\"240\" viewBox=\"0 0 300 240\" xmlns=\"http://www.w3.org/2000/svg\" style=\"background:#ffffff; border-radius:12px; border:1px solid #e2e8f0; display:block; margin:10px auto; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05);\">\n  <defs>\n    <pattern id=\"grid\" width=\"30\" height=\"30\" patternUnits=\"userSpaceOnUse\"><path d=\"M 30 0 L 0 0 0 30\" fill=\"none\" stroke=\"#f1f5f9\" stroke-width=\"1\"/><path d=\"M 0 30 L 30 30\" fill=\"none\" stroke=\"#f1f5f9\" stroke-width=\"1\"/></pattern>\n  </defs>\n  <rect width=\"300\" height=\"240\" fill=\"url(#grid)\" rx=\"12\"/>\n  \n  <!-- Axes -->\n  <line x1=\"0\" y1=\"180\" x2=\"300\" y2=\"180\" stroke=\"#94a3b8\" stroke-width=\"2\"/>\n  <line x1=\"150\" y1=\"0\" x2=\"150\" y2=\"240\" stroke=\"#94a3b8\" stroke-width=\"2\"/>\n  \n  <!-- Line 1: y = x + 1 -->\n  <line x1=\"90\" y1=\"210\" x2=\"270\" y2=\"30\" stroke=\"#3b82f6\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  \n  <!-- Line 2: y = mx + 3 (dashed representation) -->\n  <line x1=\"90\" y1=\"30\" x2=\"270\" y2=\"210\" stroke=\"#ef4444\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-dasharray=\"6,4\"/>\n  \n  <!-- Intersection Point (1, 2) -->\n  <circle cx=\"180\" cy=\"120\" r=\"4.5\" fill=\"#10b981\"/>\n  <text x=\"195\" y=\"115\" text-anchor=\"start\" fill=\"#10b981\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"600\">(1, 2)</text>\n  \n  <!-- Labels -->\n  <text x=\"285\" y=\"174\" text-anchor=\"end\" fill=\"#64748b\" font-family=\"'Outfit', sans-serif\" font-size=\"12\">x</text>\n  <text x=\"156\" y=\"15\" text-anchor=\"start\" fill=\"#64748b\" font-family=\"'Outfit', sans-serif\" font-size=\"12\">y</text>\n  <text x=\"260\" y=\"50\" text-anchor=\"end\" fill=\"#3b82f6\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"600\">y = x + k</text>\n  <text x=\"100\" y=\"25\" text-anchor=\"start\" fill=\"#ef4444\" font-family=\"'Outfit', sans-serif\" font-size=\"13\" font-weight=\"600\">y = mx + 3</text>\n</svg></div>",
+          "stem": "The lines with equations \\( y = x + k \\) and \\( y = mx + 3 \\) intersect at \\( (1, 2) \\). Find \\( k \\).",
           "options": [
             "\\(0\\)",
             "\\(1\\)",
@@ -9968,19 +9968,21 @@
           "answer": 1,
           "steps": [
             {
-              "explain": "Understand the meaning of an intersection point.",
-              "work": "\\text{If two lines intersect at a point, that point must lie on both lines.} \\\\ \\text{Therefore, the coordinates } (x, y) = (1, 2) \\text{ must satisfy both equations.}"
+              "explain": "Since the point \\((1, 2)\\) is the intersection of both lines, its coordinates must satisfy the equation \\(y = x + k\\).",
+              "work": "\\begin{aligned} x &= 1 \\\\ y &= 2 \\end{aligned}",
+              "figure": {
+                "svg": "fig:60ff7d2a70"
+              }
             },
             {
-              "explain": "Substitute the coordinates into the first equation to find \\(k\\).",
-              "work": "\\begin{aligned} y &= x + k \\\\ 2 &= 1 + k \\end{aligned}"
-            },
-            {
-              "explain": "Solve for \\(k\\).",
-              "work": "\\begin{aligned} k &= 2 - 1 \\\\ k &= 1 \\end{aligned}"
+              "explain": "Substitute the coordinates into the equation to find \\(k\\).",
+              "work": "\\begin{aligned} y &= x + k \\\\ 2 &= 1 + k \\\\ k &= 1 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "figure": {
+            "svg": "fig:9b1b56a2f3"
+          }
         },
         {
           "id": "y9-14f-q6b",
@@ -9998,36 +10000,21 @@
           "solution": "Substitute the intersection point \\( (1, 2) \\) into the second equation:\n\\( 2 = m(1) + 3 \\implies 2 = m + 3 \\implies m = -1 \\).",
           "steps": [
             {
-              "explain": "Understand the meaning of an intersection point.",
-              "work": "If two lines intersect at a point, that point must lie on both lines. This means the coordinates of the point must satisfy the equations of both lines."
-            },
-            {
-              "explain": "Substitute the coordinates into the relevant equation.",
-              "work": "We are looking for \\(m\\), which is in the second equation: \\(y = mx + 3\\). Substitute the intersection point \\((x=1, y=2)\\) into this equation."
-            },
-            {
-              "explain": "Solve for \\(m\\).",
-              "work": "\\(2 = m(1) + 3 \\implies 2 = m + 3 \\implies m = 2 - 3 \\implies m = -1\\)."
-            },
-            {
-              "explain": "State the final answer.",
-              "work": "Therefore, \\(m = -1\\).",
+              "explain": "Similarly, the intersection point \\((1, 2)\\) must also satisfy the equation \\(y = mx + 3\\).",
+              "work": "\\begin{aligned} x &= 1 \\\\ y &= 2 \\end{aligned}",
               "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 280,
-                  "boundingbox": [
-                    -6,
-                    6,
-                    6,
-                    -6
-                  ],
-                  "script": "board.suspendUpdate(); board.create('arrow', [[-6,0],[6,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-6],[0,6]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [5.28, -2.0999999999999996, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 5.4, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return (1)*x + (0); }, -5.5, 5.5], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [2.2, 3.5, 'y = x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
-                }
+                "svg": "fig:a07c664d80"
               }
+            },
+            {
+              "explain": "Substitute the coordinates into the equation to find \\(m\\).",
+              "work": "\\begin{aligned} y &= mx + 3 \\\\ 2 &= m(1) + 3 \\\\ m &= 2 - 3 \\\\ m &= -1 \\end{aligned}"
             }
           ],
-          "timeLimit": 90
+          "timeLimit": 90,
+          "figure": {
+            "svg": "fig:9b1b56a2f3"
+          }
         },
         {
           "id": "y9-14f-q7a",
@@ -12668,38 +12655,33 @@
           "solution": "Let \\( c = AB \\), \\( a = BC \\), and \\( b = AC \\).\nFrom the perimeter condition:\n1) \\( a + b + c = 12 \\)\nFrom the other conditions:\n2) \\( c + a = 2b \\implies a + c = 2b \\)\nSubstitute this into (1):\n\\( (a + c) + b = 12 \\implies 2b + b = 12 \\implies 3b = 12 \\implies b = 4 \\).\n3) \\( c + b = 3a \\implies b + c = 3a \\)\nSubstitute this into (1):\n\\( a + (b + c) = 12 \\implies a + 3a = 12 \\implies 4a = 12 \\implies a = 3 \\).\nNow find \\( c \\):\n\\( a + b + c = 12 \\implies 3 + 4 + c = 12 \\implies 7 + c = 12 \\implies c = 5 \\).\nThus, the length of side AB is 5 m.",
           "steps": [
             {
-              "explain": "Define variables and set up the equations.",
-              "work": "Let the side lengths be \\(x = AB\\), \\(y = BC\\), and \\(z = AC\\).\n\nSince the perimeter is 12, the sum of all sides is 12:\n**Equation 1:** \\(x + y + z = 12\\)\n\nFrom the problem description, we are given two more conditions:\n**Equation 2:** \\(x + y = 2z\\)  (from \\(AB + BC = 2AC\\))\n**Equation 3:** \\(x + z = 3y\\)  (from \\(AB + AC = 3BC\\))"
-            },
-            {
-              "explain": "Use smart substitution to find z (Side AC).",
-              "work": "Notice that Equation 2 tells us that \\((x + y)\\) is exactly equal to \\(2z\\).\nWe can group the terms in Equation 1 like this: \\((x + y) + z = 12\\).\n\nReplace \\((x + y)\\) with \\(2z\\):\n\\[2z + z = 12\\]\n\\[3z = 12\\]\n\\[z = 4\\]\nSo, the length of side AC is 4."
-            },
-            {
-              "explain": "Use smart substitution to find y (Side BC).",
-              "work": "Similarly, Equation 3 tells us that \\((x + z)\\) is equal to \\(3y\\).\nWe can rearrange Equation 1 to group those terms: \\((x + z) + y = 12\\).\n\nReplace \\((x + z)\\) with \\(3y\\):\n\\[3y + y = 12\\]\n\\[4y = 12\\]\n\\[y = 3\\]\nSo, the length of side BC is 3."
-            },
-            {
-              "explain": "Find x (Side AB).",
-              "work": "Now we know two of the sides: \\(y = 3\\) and \\(z = 4\\).\nSince the total perimeter is 12:\n\\[x + 3 + 4 = 12\\]\n\\[x + 7 = 12\\]\n\\[x = 5\\]\nThe length of side AB is 5.",
+              "explain": "Use the perimeter and the first condition to find the length of \\(AC\\).",
+              "work": "\\begin{aligned} AB + BC + AC &= 12 \\\\ (AB + BC) + AC &= 12 \\\\ 2AC + AC &= 12 \\quad (\\text{since } AB + BC = 2AC) \\\\ 3AC &= 12 \\\\ AC &= 4 \\text{ m} \\end{aligned}",
               "figure": {
-                "jsxGraph": {
-                  "width": 360,
-                  "height": 300,
-                  "boundingbox": [
-                    -2,
-                    5,
-                    5,
-                    -2
-                  ],
-                  "script": "board.suspendUpdate();\nvar pC = board.create('point', [0, 0], {name:'C', size:3, color:'#334155', label:{offset:[-15,-15]}});\nvar pB = board.create('point', [3, 0], {name:'B', size:3, color:'#334155', label:{offset:[5,-15]}});\nvar pA = board.create('point', [0, 4], {name:'A', size:3, color:'#334155', label:{offset:[-15,5]}});\nvar poly = board.create('polygon', [pC, pB, pA], {fillColor:'#fbbf24', fillOpacity:0.3, borders:{strokeWidth:2, strokeColor:'#6366f1'}});\nboard.create('text', [1.5, -0.5, 'BC = 3'], {fontSize:14, color:'#334155'});\nboard.create('text', [-1, 2, 'AC = 4'], {fontSize:14, color:'#334155'});\nboard.create('text', [1.7, 2.2, 'AB = 5'], {fontSize:14, color:'#334155', cssClass: 'rotate-angle'});\nboard.create('angle', [pB, pC, pA], {radius:0.4, type:'sector', hasInner:true, color:'#f59e0b', fillOpacity:0.2});\nboard.unsuspendUpdate();"
-                }
+                "svg": "fig:3b8463f81f"
+              }
+            },
+            {
+              "explain": "Use the perimeter and the second condition to find the length of \\(BC\\).",
+              "work": "\\begin{aligned} AB + BC + AC &= 12 \\\\ (AB + AC) + BC &= 12 \\\\ 3BC + BC &= 12 \\quad (\\text{since } AB + AC = 3BC) \\\\ 4BC &= 12 \\\\ BC &= 3 \\text{ m} \\end{aligned}",
+              "figure": {
+                "svg": "fig:229b86abb6"
+              }
+            },
+            {
+              "explain": "Substitute the known side lengths into the perimeter equation to find \\(AB\\).",
+              "work": "\\begin{aligned} AB + 3 + 4 &= 12 \\\\ AB + 7 &= 12 \\\\ AB &= 5 \\text{ m} \\end{aligned}",
+              "figure": {
+                "svg": "fig:bc27d7e8ac"
               }
             }
           ],
           "alsoIn": [
             "exam:year9ch14g"
-          ]
+          ],
+          "figure": {
+            "svg": "fig:d28e36016d"
+          }
         },
         {
           "id": "y9-14g-q25b",

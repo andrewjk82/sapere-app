@@ -325,23 +325,23 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "solution": "The correct answer is \\(n(2n+1)\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Cherrybrook Tech 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\ln 3 + \\ln 9 + \\cdots + \\ln 3^{2n} = 1\\cdot\\ln 3 + 2\\cdot\\ln 3 + \\cdots + 2n\\cdot\\ln 3\\)",
+        "explanation": "Rewrite each logarithm term using the log power rule $\\ln a^k = k\\ln a$, converting the series into a sum of multiples of $\\ln 3$.",
+        "workingOut": "\\(\\ln 3^1 + \\ln 3^2 + \\ln 3^3 + \\cdots + \\ln 3^{2n} = 1\\cdot\\ln 3 + 2\\cdot\\ln 3 + 3\\cdot\\ln 3 + \\cdots + 2n\\cdot\\ln 3\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(= \\ln 3 \\cdot (1 + 2 + \\cdots + 2n)\\)",
+        "explanation": "Factor $\\ln 3$ out of every term, leaving the arithmetic series $1+2+3+\\cdots+2n$ inside the brackets.",
+        "workingOut": "\\(= \\ln 3 \\cdot (1 + 2 + 3 + \\cdots + 2n)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1 + 2 + \\cdots + 2n = \\frac{2n(2n+1)}{2} = n(2n+1)\\)",
+        "explanation": "The bracketed sum is an arithmetic series with first term $1$, last term $2n$, and $2n$ terms. Apply $S = \\dfrac{n_{\\text{terms}}}{2}(a+l)$.",
+        "workingOut": "\\(1 + 2 + \\cdots + 2n = \\frac{2n}{2}(1+2n) = n(2n+1)\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: n(2n+1)\\ln 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(n(2n+1)\\ln 3\\)",
+        "explanation": "Multiply this result back by $\\ln 3$ to get the value of the original series.",
+        "workingOut": "\\(\\ln 3 + \\ln 9 + \\ln 27 + \\cdots + \\ln 3^{2n} = n(2n+1)\\ln 3\\)",
         "graphData": null
       }
     ],

@@ -3820,20 +3820,26 @@
           "difficulty": "medium",
           "stem": "Change the subject of the formula to $r$: $V = \\pi r^2 h$",
           "options": [
-            "$r = \\sqrt{V - \\pi h}$",
-            "$r = \\frac{\\sqrt{V}}{\\pi h}$",
+            "$r = \\pm \\sqrt{V - \\pi h}$",
             "$r = \\sqrt{\\frac{V}{\\pi h}}$",
+            "$r = \\pm \\sqrt{\\frac{V}{\\pi h}}$",
             "$r = \\frac{V}{\\pi h}$"
           ],
           "answer": 2,
           "steps": [
             {
-              "explain": "Starting from $V = \\pi r^2 h$, isolate $r^2$ by dividing both sides by $\\pi h$.",
-              "work": "\\(\\frac{V}{\\pi h} = \\frac{\\pi r^2 h}{\\pi h} = r^2\\)"
+              "explain": "Divide both sides by \\(\\pi h\\) to isolate the term with \\(r\\).",
+              "work": "\\begin{aligned} V &= \\pi r^2 h \\\\ \\frac{V}{\\pi h} &= r^2 \\end{aligned}",
+              "figure": {
+                "svg": "fig:9dbc04333e"
+              }
             },
             {
-              "explain": "So $r^2 = \\dfrac{V}{\\pi h}$. Take the square root of both sides to isolate $r$ — since $r$ is a physical radius, take the positive root only.",
-              "work": "\\(r = \\sqrt{\\frac{V}{\\pi h}}\\)"
+              "explain": "Take the square root of both sides to make \\(r\\) the subject. Since it's an algebraic equation, we include both positive and negative solutions.",
+              "work": "\\begin{aligned} r^2 &= \\frac{V}{\\pi h} \\\\ r &= \\pm \\sqrt{\\frac{V}{\\pi h}} \\end{aligned}",
+              "figure": {
+                "svg": "fig:65391f852e"
+              }
             }
           ],
           "meta": {
@@ -3842,6 +3848,9 @@
             "examType": "Yearly",
             "grade": "9",
             "topic": "y9-6b"
+          },
+          "figure": {
+            "svg": "fig:e7cacf2145"
           }
         }
       ]

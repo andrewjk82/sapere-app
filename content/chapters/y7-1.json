@@ -8348,17 +8348,23 @@
             "\\\\( 167 \\\\)",
             "\\\\( 67 \\\\)"
           ],
-          "answer": 2,
+          "answer": 3,
           "steps": [
             {
-              "explain": "Locate the initial quantity and the subtraction delta in the text.",
-              "work": "\\\\( 1013 - 946 \\\\)"
+              "explain": "Set up the subtraction to find the difference between the initial pressure and the final pressure.",
+              "work": "\\begin{aligned} \\text{Decrease} &= \\text{Initial} - \\text{Final} \\\\ &= 1013 - 946 \\end{aligned}"
             },
             {
-              "explain": "Perform column subtraction to find the remaining amount.",
-              "work": "\\\\( 1013 - 946 = 67 \\\\)"
+              "explain": "Perform the calculation to find the pressure decrease.",
+              "work": "1013 - 946 = 67 \\text{ hPa}",
+              "figure": {
+                "svg": "fig:0ad6121c2e"
+              }
             }
-          ]
+          ],
+          "figure": {
+            "svg": "fig:396926daa5"
+          }
         },
         {
           "id": "y7-1c-h14",
@@ -31777,15 +31783,15 @@
           "stem": "A forestry unit plants 5642 saplings across 7 zones. Find the average number of saplings per zone, along with any leftover saplings.",
           "options": [
             "\\(805\\text{ r }1\\)",
-            "\\(806 r 0\\)",
             "\\(806\\text{ r }0\\)",
+            "\\(805\\text{ r }2\\)",
             "\\(807\\text{ r }0\\)"
           ],
           "answer": 1,
           "steps": [
             {
-              "explain": "Perform the division using the short division algorithm.",
-              "work": "\\(5642 \\div 7 = 806\\)"
+              "explain": "Perform the division to find the quotient and remainder.",
+              "work": "\\begin{aligned} 5642 \\div 7 &= 806 \\\\ \\text{Remainder} &= 0 \\\\ \\text{Result} &= 806\\text{ r }0 \\end{aligned}"
             }
           ]
         },
