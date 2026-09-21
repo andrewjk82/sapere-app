@@ -643,16 +643,13 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(15,23,42,0.03)'; }}
                   onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
                 >
-                  <div style={{ width: '38px', height: '38px', borderRadius: '12px', background: `linear-gradient(135deg, ${item.color}, ${item.color}cc)`, display: 'grid', placeItems: 'center', fontSize: '1.1rem', flexShrink: 0 }}>
-                    {item.icon}
-                  </div>
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#0f172a' }}>{item.title}</div>
                     <div style={{ fontSize: '0.72rem', color: '#64748b', marginTop: '1px' }}>
                       {item.dday === 0 ? 'Exam is today! Good luck! 🎉' : item.subtitle}
                     </div>
                   </div>
-                  <div style={{ fontSize: '0.95rem', fontWeight: 900, color: item.color, flexShrink: 0 }}>
+                  <div style={{ fontSize: '1.425rem', fontWeight: 900, color: item.color, flexShrink: 0 }}>
                     {item.dday === 0 ? 'D-Day' : `D-${item.dday}`}
                   </div>
                   <ArrowRight size={14} color="#94a3b8" style={{ flexShrink: 0 }} />
