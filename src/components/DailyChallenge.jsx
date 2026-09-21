@@ -38,7 +38,6 @@ import ChallengeQuizView from './challenge/ChallengeQuizView';
 import ChallengeResultView from './challenge/ChallengeResultView';
 import ChallengeReviewView from './challenge/ChallengeReviewView';
 import SecretNoteView from './challenge/SecretNoteView';
-import ChallengeModeSelect from './challenge/ChallengeModeSelect';
 import ReportModal from './challenge/ReportModal';
 import {
   applyModeTimeScale,
@@ -145,8 +144,6 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   const [isFinishing, setIsFinishing] = useState(false);
   const isFinishingRef = useRef(false);
   const [loading, setLoading] = useState(false);
-  // Difficulty lobby: null | 'daily' | 'calc' while picker is open
-  const [modePickerType, setModePickerType] = useState(null);
   const [challengeMode, setChallengeMode] = useState('normal');
   const challengeModeRef = useRef('normal');
 
@@ -776,7 +773,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       showToast("Today's Daily Practice has already been used. Please try again tomorrow.", 'info');
       return;
     }
-    setModePickerType('daily');
+    startDailyQuiz();
   };
 
   const requestStartCalc = () => {
@@ -784,14 +781,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       showToast("Today's Daily Calculation has already been used. Please try again tomorrow.", 'info');
       return;
     }
-    setModePickerType('calc');
-  };
-
-  const confirmModeAndStart = (modeId) => {
-    const type = modePickerType;
-    setModePickerType(null);
-    if (type === 'calc') startCalculationQuiz(modeId);
-    else if (type === 'daily') startDailyQuiz(modeId);
+    startCalculationQuiz();
   };
 
   const setupQuestion = (q, idx = currentIdx) => {
@@ -2523,13 +2513,6 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                 />
               )}
             </AnimatePresence>
-
-            <ChallengeModeSelect
-              open={Boolean(modePickerType)}
-              challengeType={modePickerType || 'daily'}
-              onCancel={() => setModePickerType(null)}
-              onConfirm={confirmModeAndStart}
-            />
           </motion.div>
         )}
       </AnimatePresence>
