@@ -643,6 +643,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(15,23,42,0.03)'; }}
                   onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
                 >
+                  <div style={{ width: '38px', height: '38px', borderRadius: '12px', background: `linear-gradient(135deg, ${item.color}, ${item.color}cc)`, flexShrink: 0 }} />
                   <div style={{ flex: 1, minWidth: 0 }}>
                     <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#0f172a' }}>{item.title}</div>
                     <div style={{ fontSize: '0.72rem', color: '#64748b', marginTop: '1px' }}>
