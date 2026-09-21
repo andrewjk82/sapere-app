@@ -5361,10 +5361,10 @@
         },
         {
           "id": "sg2022-q8d",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
-          "stem": "Consider the quadrilateral \\(ABCD\\), in which \\(AB\\parallel PQ\\parallel DC\\), \\(AP=PD\\) and \\(BQ=QC\\). Intervals \\(AB\\), \\(PQ\\) and \\(DC\\) are related by \\(AB=2x-7\\), \\(PQ=x+1\\) and \\(DC=x-3\\), for some value \\(x\\). Prove that \\(x=12\\).",
-          "answer": "",
+          "stem": "Consider the quadrilateral \\(ABCD\\), in which \\(AB\\parallel PQ\\parallel DC\\), \\(AP=PD\\) and \\(BQ=QC\\). Intervals \\(AB\\), \\(PQ\\) and \\(DC\\) are related by \\(AB=2x-7\\), \\(PQ=x+1\\) and \\(DC=x-3\\), for some value \\(x\\). What is the value of \\(x\\)?",
+          "answer": 2,
           "hint": "Since \\(P\\) and \\(Q\\) are midpoints of \\(AD\\) and \\(BC\\), \\(PQ\\) is the midsegment of trapezium \\(ABCD\\), so \\(PQ\\) equals the average of the two parallel sides \\(AB\\) and \\(DC\\).",
           "solution": "By the midsegment (trapezium) theorem, \\(PQ=\\dfrac12(AB+DC)\\). Substituting the given expressions and solving gives \\(x=12\\).",
           "steps": [
@@ -5389,16 +5389,21 @@
             },
             {
               "explain": "Solve for \\(x\\).",
-              "work": "\\(12=x\\), i.e. \\(x=12\\), as required"
+              "work": "\\(12=x\\), i.e. \\(x=12\\)"
             }
           ],
-          "manual": true,
           "meta": {
             "source": "Sydney Grammar School Form III Annual Examination 2022",
             "school": "Sydney Grammar School",
             "examType": "Annual Examination",
             "grade": "9"
-          }
+          },
+          "options": [
+            "\\(4\\)",
+            "\\(8\\)",
+            "\\(12\\)",
+            "\\(16\\)"
+          ]
         }
       ]
     }

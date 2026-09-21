@@ -1037,23 +1037,23 @@
             "\\(45°\\)"
           ],
           "answer": 1,
-          "hint": "Set up coordinates using the right-angled triangle from the previous question (\\(A(0,0), C(6.2,0), X(3.1,0), B(3.1,4.4)\\)), find \\(Y\\) as the midpoint of \\(AB\\), then compute the angle between \\(\\vec{YB}\\) and \\(\\vec{YX}\\).",
+          "hint": "In the right-angled \\(\\triangle ABX\\), \\(Y\\) is the midpoint of the hypotenuse \\(AB\\), so \\(YX = YB\\). Apply the cosine rule in \\(\\triangle BYX\\).",
           "steps": [
             {
-              "explain": "Set up coordinates: \\(A(0,0)\\), \\(C(6.2,0)\\), \\(X(3.1,0)\\) (midpoint of \\(AC\\)), \\(B(3.1,4.4)\\) (directly above \\(X\\)). Find \\(Y\\), the midpoint of \\(AB\\).",
-              "work": "\\(Y = \\left(\\dfrac{0+3.1}{2}, \\dfrac{0+4.4}{2}\\right) = (1.55, 2.2)\\)"
+              "explain": "In the right-angled \\(\\triangle ABX\\), \\(Y\\) is the midpoint of the hypotenuse \\(AB\\). The median to the hypotenuse is half the length of the hypotenuse, so \\(YX = YB = \\frac{1}{2}AB\\).",
+              "work": "\\begin{aligned} YX &= YB \\\\ &= \\frac{1}{2}\\sqrt{3.1^2 + 4.4^2} \\\\ &= \\frac{\\sqrt{28.97}}{2} \\end{aligned}"
             },
             {
-              "explain": "Find the vectors \\(\\vec{YB}\\) and \\(\\vec{YX}\\) from \\(Y\\).",
-              "work": "\\(\\vec{YB} = (1.55, 2.2), \\qquad \\vec{YX} = (1.55, -2.2)\\)"
+              "explain": "Apply the cosine rule in \\(\\triangle BYX\\) to find \\(\\angle BYX\\).",
+              "work": "\\begin{aligned} \\cos(\\angle BYX) &= \\frac{YB^2 + YX^2 - BX^2}{2(YB)(YX)} \\\\ &= \\frac{2 \\left(\\frac{\\sqrt{28.97}}{2}\\right)^2 - 4.4^2}{2 \\left(\\frac{\\sqrt{28.97}}{2}\\right)^2} \\end{aligned}"
             },
             {
-              "explain": "Use the dot product formula to find the angle between them.",
-              "work": "\\(\\cos\\theta = \\dfrac{\\vec{YB}\\cdot\\vec{YX}}{|\\vec{YB}||\\vec{YX}|} = \\dfrac{1.55^2-2.2^2}{1.55^2+2.2^2} \\approx \\dfrac{-2.44}{7.24} \\approx -0.337\\)"
+              "explain": "Evaluate the expression.",
+              "work": "\\begin{aligned} \\cos(\\angle BYX) &= \\frac{2 \\left(\\frac{28.97}{4}\\right) - 19.36}{2 \\left(\\frac{28.97}{4}\\right)} \\\\ &= \\frac{14.485 - 19.36}{14.485} \\\\ &\\approx -0.33655 \\end{aligned}"
             },
             {
-              "explain": "Take the inverse cosine.",
-              "work": "\\(\\theta \\approx \\cos^{-1}(-0.337) \\approx 109.7° \\approx 110°\\)"
+              "explain": "Take the inverse cosine to find the angle.",
+              "work": "\\begin{aligned} \\angle BYX &= \\cos^{-1}(-0.33655) \\\\ &\\approx 109.67^\\circ \\\\ &\\approx 110^\\circ \\end{aligned}"
             }
           ],
           "meta": {
@@ -1061,6 +1061,9 @@
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
             "grade": "10"
+          },
+          "figure": {
+            "svg": "fig:4a9a60aa48"
           }
         }
       ]

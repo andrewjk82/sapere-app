@@ -3981,32 +3981,29 @@
         },
         {
           "id": "y10-12b-q2a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Find the exact value, rationalising the denominator where appropriate:\n\n\\( (\\sin 60^\\circ)^2 + (\\cos 60^\\circ)^2 \\)",
-          "answer": "1",
+          "answer": 1,
           "hint": "Substitute the exact values for the trigonometric ratios.",
           "solution": "1",
           "steps": [
             {
-              "explain": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Exact trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-              "work": "\\(\\left(\\frac{\\sqrt{3}}{2}\\right)^2 + \\left(\\frac{1}{2}\\right)^2\\)"
+              "explain": "Substitute the exact values for the trigonometric ratios.",
+              "work": "\\begin{aligned} (\\sin 60^\\circ)^2 + (\\cos 60^\\circ)^2 &= \\left(\\frac{\\sqrt{3}}{2}\\right)^2 + \\left(\\frac{1}{2}\\right)^2 \\end{aligned}"
             },
             {
-              "explain": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-              "work": "\\(\\frac{3}{4} + \\frac{1}{4} = 1\\)"
-            },
-            {
-              "explain": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-              "work": "\\(\\therefore 1\\)"
-            },
-            {
-              "explain": "Final answer: 1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-              "work": "\\(1\\)"
+              "explain": "Square the fractions and add them together.",
+              "work": "\\begin{aligned} &= \\frac{3}{4} + \\frac{1}{4} \\\\ &= 1 \\end{aligned}"
             }
           ],
-          "manual": true,
-          "timeLimit": 60
+          "timeLimit": 60,
+          "options": [
+            "\\(0\\)",
+            "\\(1\\)",
+            "\\(2\\)",
+            "\\(\\frac{1}{2}\\)"
+          ]
         },
         {
           "id": "y10-12b-q2b",

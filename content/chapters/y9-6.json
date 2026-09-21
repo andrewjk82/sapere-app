@@ -3818,14 +3818,14 @@
           "id": "y9-willoughby-19-t3q2",
           "type": "mc",
           "difficulty": "medium",
-          "stem": "Change the subject of the formula to $r$: $V = \\pi r^2 h$",
+          "stem": "Change the subject of the formula to \\(r\\): \\(V = \\pi r^2 h\\)",
           "options": [
-            "$r = \\pm \\sqrt{V - \\pi h}$",
-            "$r = \\sqrt{\\frac{V}{\\pi h}}$",
-            "$r = \\pm \\sqrt{\\frac{V}{\\pi h}}$",
-            "$r = \\frac{V}{\\pi h}$"
+            "\\(r = \\pm \\sqrt{V - \\pi h}\\)",
+            "\\(r = \\sqrt{\\frac{V}{\\pi h}}\\)",
+            "\\(r = \\pm \\sqrt{\\frac{V}{\\pi h}}\\)",
+            "\\(r = \\frac{V}{\\pi h}\\)"
           ],
-          "answer": 2,
+          "answer": 1,
           "steps": [
             {
               "explain": "Divide both sides by \\(\\pi h\\) to isolate the term with \\(r\\).",
@@ -3835,8 +3835,8 @@
               }
             },
             {
-              "explain": "Take the square root of both sides to make \\(r\\) the subject. Since it's an algebraic equation, we include both positive and negative solutions.",
-              "work": "\\begin{aligned} r^2 &= \\frac{V}{\\pi h} \\\\ r &= \\pm \\sqrt{\\frac{V}{\\pi h}} \\end{aligned}",
+              "explain": "Take the square root of both sides to make \\(r\\) the subject. Since \\(r\\) represents a length (the radius of a cylinder), it must be positive.",
+              "work": "\\begin{aligned} r^2 &= \\frac{V}{\\pi h} \\\\ r &= \\sqrt{\\frac{V}{\\pi h}} \\quad (\\text{since } r > 0) \\end{aligned}",
               "figure": {
                 "svg": "fig:65391f852e"
               }

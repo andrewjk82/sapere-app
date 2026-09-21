@@ -2501,17 +2501,17 @@
             "\\(5.4\\text{ cm}\\)",
             "\\(54\\text{ cm}\\)",
             "\\(0.54\\text{ cm}\\)",
-            "\\(0.54\\text{ cm}1\\)"
+            "\\(0.054\\text{ cm}\\)"
           ],
           "answer": 0,
           "steps": [
             {
-              "explain": "Convert the millimetre measurement to centimetres by dividing by \\(10\\).",
-              "work": "\\(4\\text{ mm} = 4 \\div 10\\text{ cm} = 0.4\\text{ cm}\\)"
+              "explain": "Convert the millimetre measurement to centimetres.",
+              "work": "\\begin{aligned} 4\\text{ mm} &= 4 \\div 10\\text{ cm} \\\\ &= 0.4\\text{ cm} \\end{aligned}"
             },
             {
               "explain": "Add this to the original centimetre measurement.",
-              "work": "\\(5\\text{ cm} + 0.4\\text{ cm} = 5.4\\text{ cm}\\)"
+              "work": "\\begin{aligned} 5\\text{ cm} + 0.4\\text{ cm} &= 5.4\\text{ cm} \\end{aligned}"
             }
           ],
           "timeLimit": 45

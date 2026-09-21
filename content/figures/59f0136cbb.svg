@@ -15,10 +15,10 @@
   <path d="M 72 80 L 80 80 L 80 88" fill="none" stroke="black" stroke-width="2" />
   <path d="M 172 80 L 180 80 L 180 72" fill="none" stroke="black" stroke-width="2" />
   <path d="M 72 180 L 80 180 L 80 172" fill="none" stroke="black" stroke-width="2" />
-  <path d="M 130 200 A 30 30 0 0 0 151 209" fill="none" stroke="black" stroke-width="1.5" />
+  <path d="M 130 200 A 30 30 0 0 1 151 209" fill="none" stroke="black" stroke-width="1.5" />
   <text x="135" y="195" font-family="sans-serif" font-style="italic" font-size="16">β</text>
   <path d="M 50 130 A 20 20 0 0 0 30 110" fill="none" stroke="black" stroke-width="1.5" />
-  <text x="40" y="125" font-family="sans-serif" font-style="italic" font-size="16">α</text>
+  <text x="50" y="125" font-family="sans-serif" font-style="italic" font-size="16">α</text>
   <text x="15" y="25" font-family="sans-serif" font-weight="bold" font-size="14">A</text>
   <text x="140" y="25" font-family="sans-serif" font-weight="bold" font-size="14">B</text>
   <text x="15" y="140" font-family="sans-serif" font-weight="bold" font-size="14">C</text>

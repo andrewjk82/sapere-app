@@ -6,14 +6,14 @@
     <line x1="130" y1="30" x2="230" y2="130" stroke="black" stroke-width="1.5" />
     <line x1="30" y1="130" x2="130" y2="230" stroke="black" stroke-width="1.5" />
     <path d="M 50 130 A 20 20 0 0 0 30 110" fill="none" stroke="black" stroke-width="1.5" />
-    <text x="40" y="125" font-family="sans-serif" font-style="italic" font-size="16">α</text>
+    <text x="50" y="125" font-family="sans-serif" font-style="italic" font-size="16">α</text>
   </g>
   <polyline points="120,220 130,210 140,220" fill="none" stroke="#e11d48" stroke-width="2" />
   <line x1="130" y1="130" x2="130" y2="230" stroke="#e11d48" stroke-width="3" />
   <line x1="130" y1="130" x2="230" y2="130" stroke="#e11d48" stroke-width="3" />
   <line x1="130" y1="230" x2="230" y2="130" stroke="#e11d48" stroke-width="3" />
   <polyline points="130,145 145,145 145,130" fill="none" stroke="#e11d48" stroke-width="2" />
-  <path d="M 130 200 A 30 30 0 0 0 151 209" fill="none" stroke="#2563eb" stroke-width="2.5" />
+  <path d="M 130 200 A 30 30 0 0 1 151 209" fill="none" stroke="#2563eb" stroke-width="2.5" />
   <text x="135" y="195" font-family="sans-serif" font-style="italic" font-weight="bold" font-size="16" fill="#2563eb">β</text>
   <text x="135" y="180" font-family="sans-serif" font-weight="bold" font-size="14" fill="#e11d48">6</text>
   <text x="175" y="120" font-family="sans-serif" font-weight="bold" font-size="14" fill="#e11d48">6</text>
