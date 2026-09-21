@@ -1,0 +1,13 @@
+<svg viewBox="0 0 160 180" width="240" height="270" xmlns="http://www.w3.org/2000/svg">
+  <polygon points="40,10 40,160 120,160" fill="#f8fafc" stroke="#334155" stroke-width="2" />
+  <polyline points="40,150 50,150 50,160" fill="none" stroke="#334155" stroke-width="1.5" />
+  <line x1="40" y1="160" x2="102.3" y2="126.8" stroke="#334155" stroke-width="1.5" stroke-dasharray="4" />
+  <polygon points="102.3,126.8 93.5,131.5 98.2,140.3 107.0,135.6" fill="none" stroke="#334155" stroke-width="1.5" />
+  <text x="30" y="10" font-family="sans-serif" font-weight="bold" font-size="14" fill="#475569">P</text>
+  <text x="25" y="170" font-family="sans-serif" font-weight="bold" font-size="14" fill="#475569">Q</text>
+  <text x="125" y="170" font-family="sans-serif" font-weight="bold" font-size="14" fill="#475569">R</text>
+  <text x="110" y="125" font-family="sans-serif" font-weight="bold" font-size="14" fill="#475569">S</text>
+  <text x="15" y="90" font-family="sans-serif" font-weight="bold" font-size="14" fill="#0284c7">15</text>
+  <text x="75" y="175" font-family="sans-serif" font-weight="bold" font-size="14" fill="#0284c7">8</text>
+  <text x="60" y="135" font-family="sans-serif" font-weight="bold" font-size="14" fill="#e11d48">h</text>
+</svg>

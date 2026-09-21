@@ -1,0 +1,19 @@
+<svg viewBox="0 0 200 250" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.3">
+    <polyline points="50,190 60,190 60,200" fill="none" stroke="black" stroke-width="1.5" />
+  </g>
+  <polygon points="50,50 50,200 130,200" fill="none" stroke="black" stroke-width="1.5" />
+  <line x1="50" y1="200" x2="112.3" y2="166.8" stroke="#2563eb" stroke-width="2.5" />
+  <line x1="50" y1="50" x2="112.3" y2="166.8" stroke="#e11d48" stroke-width="2.5" />
+  <line x1="130" y1="200" x2="112.3" y2="166.8" stroke="#e11d48" stroke-width="2.5" />
+  <polyline points="117,175.6 108.2,180.3 103.5,171.5" fill="none" stroke="#2563eb" stroke-width="2" />
+  <text x="40" y="45" font-family="sans-serif" font-weight="bold" font-size="14">P</text>
+  <text x="35" y="215" font-family="sans-serif" font-weight="bold" font-size="14">Q</text>
+  <text x="140" y="215" font-family="sans-serif" font-weight="bold" font-size="14">R</text>
+  <text x="115" y="155" font-family="sans-serif" font-weight="bold" font-size="14">S</text>
+  <text x="30" y="130" font-family="sans-serif" font-size="14">15</text>
+  <text x="90" y="220" font-family="sans-serif" font-size="14">8</text>
+  <text x="130" y="185" font-family="sans-serif" font-style="italic" font-weight="bold" font-size="14" fill="#e11d48">x</text>
+  <text x="75" y="115" font-family="sans-serif" font-size="14" fill="#e11d48">17 - x</text>
+  <text x="65" y="180" font-family="sans-serif" font-style="italic" font-weight="bold" font-size="14" fill="#2563eb">h</text>
+</svg>

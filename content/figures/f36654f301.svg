@@ -1,0 +1,25 @@
+<svg viewBox="0 0 300 300" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.3">
+    <circle cx="150" cy="150" r="110" fill="none" stroke="#94a3b8" stroke-width="2" />
+    <line x1="205" y1="54.74" x2="54.74" y2="95" stroke="#475569" stroke-width="1.5" />
+    <line x1="54.74" y1="95" x2="260" y2="150" stroke="#475569" stroke-width="1.5" />
+    <path d="M 86.61 86.46 A 33 33 0 0 1 86.61 103.54" fill="none" stroke="#d97706" stroke-width="2" />
+    <text x="100" y="95" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#d97706">β</text>
+    <circle cx="54.74" cy="95" r="4" fill="#3b82f6" />
+    <text x="40" y="95" text-anchor="end" font-family="sans-serif" font-size="14" font-weight="bold" fill="#334155">B</text>
+  </g>
+  <line x1="150" y1="150" x2="205" y2="54.74" stroke="#e11d48" stroke-width="3" />
+  <line x1="205" y1="54.74" x2="260" y2="150" stroke="#e11d48" stroke-width="3" />
+  <line x1="150" y1="150" x2="260" y2="150" stroke="#e11d48" stroke-width="3" />
+  <line x1="173.17" y1="99.87" x2="181.83" y2="104.87" stroke="#e11d48" stroke-width="2.5" />
+  <line x1="236.83" y1="99.87" x2="228.17" y2="104.87" stroke="#e11d48" stroke-width="2.5" />
+  <line x1="205" y1="145" x2="205" y2="155" stroke="#e11d48" stroke-width="2.5" />
+  <path d="M 172 150 A 22 22 0 0 0 161 130.95" fill="none" stroke="#e11d48" stroke-width="2" />
+  <text x="195" y="130" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#e11d48">α = 60°</text>
+  <circle cx="150" cy="150" r="5" fill="#334155" />
+  <text x="140" y="145" text-anchor="end" font-family="sans-serif" font-size="14" font-weight="bold" fill="#334155">O</text>
+  <circle cx="205" cy="54.74" r="5" fill="#e11d48" />
+  <text x="205" y="45" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#334155">A</text>
+  <circle cx="260" cy="150" r="5" fill="#e11d48" />
+  <text x="270" y="155" text-anchor="start" font-family="sans-serif" font-size="14" font-weight="bold" fill="#334155">P</text>
+</svg>

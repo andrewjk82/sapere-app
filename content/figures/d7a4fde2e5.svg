@@ -1,0 +1,17 @@
+<svg viewBox="0 0 260 180" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <g opacity="0.3">
+    <polygon points="50,50 50,130 210,130" fill="#f8fafc" stroke="#334155" stroke-width="2" />
+    <polyline points="50,120 60,120 60,130" fill="none" stroke="#334155" stroke-width="1.5" />
+    <text x="40" y="45" font-family="sans-serif" font-weight="bold" font-size="14" fill="#475569">P</text>
+    <text x="35" y="145" font-family="sans-serif" font-weight="bold" font-size="14" fill="#475569">Q</text>
+    <text x="215" y="145" font-family="sans-serif" font-weight="bold" font-size="14" fill="#475569">R</text>
+  </g>
+  <path d="M 170 130 A 40 40 0 0 1 174.2 112.1" fill="none" stroke="#d97706" stroke-width="2" />
+  <text x="145" y="125" font-family="sans-serif" font-weight="bold" font-size="13" fill="#d97706">26°</text>
+  <line x1="50" y1="50" x2="50" y2="130" stroke="#e11d48" stroke-width="3.5" />
+  <line x1="50" y1="130" x2="210" y2="130" stroke="#2563eb" stroke-width="3.5" />
+  <text x="10" y="90" font-family="sans-serif" font-weight="bold" font-size="12" fill="#e11d48">Opposite</text>
+  <text x="15" y="105" font-family="sans-serif" font-weight="bold" font-size="14" fill="#e11d48">9.4 m</text>
+  <text x="105" y="150" font-family="sans-serif" font-weight="bold" font-size="12" fill="#2563eb">Adjacent</text>
+  <text x="125" y="165" font-family="sans-serif" font-weight="bold" font-size="14" fill="#2563eb">w</text>
+</svg>
