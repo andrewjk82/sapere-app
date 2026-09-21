@@ -568,114 +568,99 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
 
         {!isAdmin && <OnlineStudySessionCard />}
 
-        {!isAdmin && profile?.examPrepEnabled === true && (() => {
-          // D-Day is only useful for students whose teacher has enabled Exam
-          // Prep AND has set at least one term exam date — otherwise hide.
-          const assignedCourses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse || 'Advanced'];
-          const isExtension = assignedCourses.some(c => c === 'Extension 1' || c === 'Extension 2');
-          const examEntries = [1, 2, 3, 4].flatMap(t => {
-            const entries = [{ term: t, label: `Term ${t}`, date: profile?.[`term${t}ExamDate`] }];
-            if (isExtension) entries.push({ term: t, label: `Ext1 Term ${t}`, date: profile?.[`ext1term${t}ExamDate`] });
-            return entries;
+        {!isAdmin && (() => {
+          // Collect every upcoming exam (term D-Day + per-subject study exams)
+          // into one list of compact rows inside a single card, instead of a
+          // separate full-width banner per exam.
+          const items = [];
+
+          if (profile?.examPrepEnabled === true) {
+            // D-Day is only useful for students whose teacher has enabled Exam
+            // Prep AND has set at least one term exam date — otherwise skip.
+            const assignedCourses = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse : [profile?.assignedCourse || 'Advanced'];
+            const isExtension = assignedCourses.some(c => c === 'Extension 1' || c === 'Extension 2');
+            const examEntries = [1, 2, 3, 4].flatMap(t => {
+              const entries = [{ term: t, label: `Term ${t}`, date: profile?.[`term${t}ExamDate`] }];
+              if (isExtension) entries.push({ term: t, label: `Ext1 Term ${t}`, date: profile?.[`ext1term${t}ExamDate`] });
+              return entries;
+            });
+            const nextExam = examEntries
+              .filter(t => t.date)
+              .map(t => ({ ...t, dday: Math.ceil((new Date(t.date) - new Date(new Date().toDateString())) / 86400000) }))
+              .filter(t => t.dday >= 0)
+              .sort((a, b) => a.dday - b.dday)[0];
+            if (nextExam) {
+              const urgent = nextExam.dday <= 7;
+              items.push({
+                key: 'term-exam',
+                icon: urgent ? '🔥' : '📅',
+                color: urgent ? '#ef4444' : '#6366f1',
+                title: `${nextExam.label} Exam`,
+                subtitle: 'Tap to practise',
+                dday: nextExam.dday,
+                onClick: () => setActiveTab('ExamPrep'),
+              });
+            }
+          }
+
+          upcomingExams(profile?.studySubjectExamDates).forEach((next) => {
+            const urgent = next.dday <= 7;
+            const c = profile?.studySubjectColors?.[next.subject] || (urgent ? '#f59e0b' : '#6366f1');
+            items.push({
+              key: `subject-${next.subject}`,
+              icon: urgent ? '🔥' : '📝',
+              color: c,
+              title: `${normalizeSubjectLabel(next.subject)} Exam`,
+              subtitle: `${formatExamDate(next.entry)}${next.entry.time ? ` · ${formatExamTime(next.entry)}` : ''}`,
+              dday: next.dday,
+              onClick: () => setActiveTab('StudyTimer'),
+            });
           });
-          const nextExam = examEntries
-            .filter(t => t.date)
-            .map(t => ({ ...t, dday: Math.ceil((new Date(t.date) - new Date(new Date().toDateString())) / 86400000) }))
-            .filter(t => t.dday >= 0)
-            .sort((a, b) => a.dday - b.dday)[0];
 
-          if (!nextExam) return null;
+          if (items.length === 0) return null;
+          items.sort((a, b) => a.dday - b.dday);
 
-          const urgent = nextExam.dday <= 7;
           return (
-            <button
-              type="button"
-              onClick={() => setActiveTab('ExamPrep')}
-              style={{
-                display: 'flex', alignItems: 'center', gap: '16px', width: '100%',
-                margin: isMobile ? '0 0 16px' : '0 0 24px',
-                maxWidth: '100%',
-                padding: '20px 24px', borderRadius: '28px',
-                background: urgent ? 'linear-gradient(135deg, #f59e0b, #ef4444)' : 'linear-gradient(135deg, #6366f1, #4f46e5)',
-                color: '#fff', border: 'none', cursor: 'pointer', textAlign: 'left',
-                boxShadow: urgent ? '0 15px 35px rgba(239,68,68,0.25)' : '0 15px 35px rgba(99,102,241,0.25)',
-                position: 'relative', overflow: 'hidden',
-                transition: 'transform 0.15s, box-shadow 0.15s',
-              }}
-              onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.99)'; }}
-              onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
-            >
-              <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '120px', height: '120px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
-              <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', fontSize: '1.4rem', flexShrink: 0 }}>
-                {urgent ? '🔥' : '📅'}
+            <div style={{
+              width: '100%', margin: isMobile ? '0 0 16px' : '0 0 24px', maxWidth: '100%',
+              borderRadius: '28px', background: '#fff', border: '1px solid rgba(15,23,42,0.06)',
+              boxShadow: '0 10px 30px rgba(15,23,42,0.06)', overflow: 'hidden',
+            }}>
+              <div style={{ padding: '16px 20px 6px', fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#94a3b8' }}>
+                Upcoming exams
               </div>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.75)', marginBottom: '3px' }}>
-                  {nextExam.label} Exam · Tap to practise
-                </div>
-                <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#fff' }}>
-                  {nextExam.dday === 0 ? 'Exam is today! Good luck! 🎉' : `${nextExam.dday} day${nextExam.dday > 1 ? 's' : ''} to go — keep it up!`}
-                </div>
-              </div>
-              <div style={{ textAlign: 'center', flexShrink: 0, display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>
-                  {nextExam.dday === 0 ? 'D-Day' : `D-${nextExam.dday}`}
-                </div>
-                <div style={{ width: '32px', height: '32px', borderRadius: '10px', background: 'rgba(255,255,255,0.18)', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
-                  <ArrowRight size={16} />
-                </div>
-              </div>
-            </button>
+              {items.map((item, i) => (
+                <button
+                  key={item.key}
+                  type="button"
+                  onClick={item.onClick}
+                  style={{
+                    display: 'flex', alignItems: 'center', gap: '14px', width: '100%',
+                    padding: '12px 20px', border: 'none', background: 'transparent', cursor: 'pointer', textAlign: 'left',
+                    borderTop: i === 0 ? 'none' : '1px solid rgba(15,23,42,0.06)',
+                    transition: 'background 0.15s',
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(15,23,42,0.03)'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
+                >
+                  <div style={{ width: '38px', height: '38px', borderRadius: '12px', background: `linear-gradient(135deg, ${item.color}, ${item.color}cc)`, display: 'grid', placeItems: 'center', fontSize: '1.1rem', flexShrink: 0 }}>
+                    {item.icon}
+                  </div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#0f172a' }}>{item.title}</div>
+                    <div style={{ fontSize: '0.72rem', color: '#64748b', marginTop: '1px' }}>
+                      {item.dday === 0 ? 'Exam is today! Good luck! 🎉' : item.subtitle}
+                    </div>
+                  </div>
+                  <div style={{ fontSize: '0.95rem', fontWeight: 900, color: item.color, flexShrink: 0 }}>
+                    {item.dday === 0 ? 'D-Day' : `D-${item.dday}`}
+                  </div>
+                  <ArrowRight size={14} color="#94a3b8" style={{ flexShrink: 0 }} />
+                </button>
+              ))}
+            </div>
           );
         })()}
-
-        {!isAdmin && upcomingExams(profile?.studySubjectExamDates).map((next) => {
-          const urgent = next.dday <= 7;
-          const c = profile?.studySubjectColors?.[next.subject] || (urgent ? '#f59e0b' : '#6366f1');
-          return (
-            <button
-              key={next.subject}
-              type="button"
-              onClick={() => setActiveTab('StudyTimer')}
-              style={{
-                display: 'flex', alignItems: 'center', gap: '16px', width: '100%',
-                margin: isMobile ? '0 0 16px' : '0 0 24px',
-                maxWidth: '100%',
-                padding: '20px 24px', borderRadius: '28px',
-                background: `linear-gradient(135deg, ${c}, ${c}cc)`,
-                color: '#fff', border: 'none', cursor: 'pointer', textAlign: 'left',
-                boxShadow: `0 15px 35px ${c}40`,
-                position: 'relative', overflow: 'hidden',
-                transition: 'transform 0.15s, box-shadow 0.15s',
-              }}
-              onMouseDown={(e) => { e.currentTarget.style.transform = 'scale(0.99)'; }}
-              onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
-            >
-              <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '120px', height: '120px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
-              <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', fontSize: '1.4rem', flexShrink: 0 }}>
-                {urgent ? '🔥' : '📝'}
-              </div>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.75)', marginBottom: '3px' }}>
-                  {normalizeSubjectLabel(next.subject)} Exam · {formatExamDate(next.entry)}{next.entry.time ? ` · ${formatExamTime(next.entry)}` : ''}
-                </div>
-                <div style={{ fontSize: '0.97rem', fontWeight: 700, color: '#fff' }}>
-                  {next.dday === 0 ? 'Exam is today! Good luck! 🎉' : `${next.dday} day${next.dday > 1 ? 's' : ''} to go — keep it up!`}
-                </div>
-              </div>
-              <div style={{ textAlign: 'center', flexShrink: 0, display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <div style={{ fontSize: '1.6rem', fontWeight: 900, color: '#fff', lineHeight: 1 }}>
-                  {next.dday === 0 ? 'D-Day' : `D-${next.dday}`}
-                </div>
-                <div style={{ width: '32px', height: '32px', borderRadius: '10px', background: 'rgba(255,255,255,0.18)', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
-                  <ArrowRight size={16} />
-                </div>
-              </div>
-            </button>
-          );
-        })}
 
         {!isAdmin && Number(profile?.unreadFeedbackCount) > 0 && (
           <button type="button" onClick={() => setActiveTab('Feedback')} style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', margin: isMobile ? '0 0 16px' : '0 0 24px', maxWidth: '100%', padding: '20px 24px', borderRadius: '28px', cursor: 'pointer', textAlign: 'left', background: 'linear-gradient(135deg, #0ea5e9, #6366f1)', border: 'none', color: '#fff', boxShadow: '0 15px 35px rgba(14,165,233,0.25)', position: 'relative', overflow: 'hidden' }}>
