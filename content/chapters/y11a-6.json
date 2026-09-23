@@ -15454,10 +15454,10 @@
           "difficulty": "easy",
           "stem": "If \\(\\cos\\theta=\\dfrac{12}{13}\\) and \\(0°<\\theta<90°\\), then \\(\\sin\\theta\\) is:",
           "options": [
-            "\\(\\dfrac{5}{13}\\)",
-            "\\(\\dfrac{11}{13}\\)",
-            "\\(\\dfrac{12}{13}\\)",
-            "\\(\\dfrac{13}{5}\\)"
+            "&#8203;\\(\\dfrac{5}{13}\\)",
+            "&#8203;\\(\\dfrac{11}{13}\\)",
+            "&#8203;\\(\\dfrac{12}{13}\\)",
+            "&#8203;\\(\\dfrac{13}{5}\\)"
           ],
           "answer": 0,
           "hint": "Draw a right triangle with adjacent 12 and hypotenuse 13, then use Pythagoras to find the opposite side.",
@@ -18421,10 +18421,10 @@
           "difficulty": "hard",
           "stem": "Solve \\(3\\sin^2x-\\cos^2x=1\\) for \\(-\\pi\\le x\\le\\pi\\). Give all solutions in exact form.",
           "options": [
-            "\\(x=\\dfrac{\\pi}{4},\\ -\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4},\\ -\\dfrac{3\\pi}{4}\\)",
-            "\\(x=\\dfrac{\\pi}{4},\\ -\\dfrac{\\pi}{4}\\text{ only}\\)",
-            "\\(x=\\dfrac{\\pi}{3},\\ -\\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3},\\ -\\dfrac{2\\pi}{3}\\)",
-            "\\(x=\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4}\\text{ only}\\)"
+            "&#8203;\\(x=\\dfrac{\\pi}{4},\\ -\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4},\\ -\\dfrac{3\\pi}{4}\\)",
+            "&#8203;\\(x=\\dfrac{\\pi}{4},\\ -\\dfrac{\\pi}{4}\\text{ only}\\)",
+            "&#8203;\\(x=\\dfrac{\\pi}{3},\\ -\\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3},\\ -\\dfrac{2\\pi}{3}\\)",
+            "&#8203;\\(x=\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4}\\text{ only}\\)"
           ],
           "answer": 0,
           "hint": "Replace \\(\\cos^2x\\) with \\(1-\\sin^2x\\) so the whole equation is in terms of \\(\\sin x\\).",
@@ -26354,10 +26354,10 @@
               "type": "mc",
               "stem": "Determine the bearing of Alpha from Bravo.",
               "options": [
-                "\\(245°\\)",
-                "\\(065°\\)",
-                "\\(115°\\)",
-                "\\(295°\\)"
+                "&#8203;\\(245°\\)",
+                "&#8203;\\(065°\\)",
+                "&#8203;\\(115°\\)",
+                "&#8203;\\(295°\\)"
               ],
               "answer": 0,
               "hint": "The bearing of Alpha from Bravo is the reverse (back) bearing of \"Bravo from Alpha\" — add 180° (since it's less than 180°).",
@@ -26392,10 +26392,10 @@
               "type": "mc",
               "stem": "In triangle ABC, show that length \\\\(BC=32.6\\\\ \\\\text{km}\\\\), correct to the nearest hundred metres, using the sine rule.",
               "options": [
-                "\\(32.6\\ \\text{km}\\)",
-                "\\(9.6\\ \\text{km}\\)",
-                "\\(16.9\\ \\text{km}\\)",
-                "\\(20.2\\ \\text{km}\\)"
+                "&#8203;\\(32.6\\ \\text{km}\\)",
+                "&#8203;\\(9.6\\ \\text{km}\\)",
+                "&#8203;\\(16.9\\ \\text{km}\\)",
+                "&#8203;\\(20.2\\ \\text{km}\\)"
               ],
               "answer": 0,
               "hint": "Use the sine rule: \\(\\dfrac{BC}{\\sin A}=\\dfrac{AB}{\\sin C}\\).",
@@ -26434,10 +26434,10 @@
               "type": "mc",
               "stem": "Using \\\\(BC\\\\approx32.627\\\\ \\\\text{km}\\\\), \\\\(AB=18\\\\ \\\\text{km}\\\\) and the included angle \\\\(\\\\angle ABC=85^\\\\circ\\\\), use the cosine rule to find the distance between Alpha and Charlie.",
               "options": [
-                "\\(35.9\\ \\text{km}\\)",
-                "\\(32.6\\ \\text{km}\\)",
-                "\\(38.4\\ \\text{km}\\)",
-                "\\(28.7\\ \\text{km}\\)"
+                "&#8203;\\(35.9\\ \\text{km}\\)",
+                "&#8203;\\(32.6\\ \\text{km}\\)",
+                "&#8203;\\(38.4\\ \\text{km}\\)",
+                "&#8203;\\(28.7\\ \\text{km}\\)"
               ],
               "answer": 0,
               "hint": "Use the cosine rule: \\(AC^2=BC^2+AB^2-2\\times BC\\times AB\\times\\cos(\\angle ABC)\\).",

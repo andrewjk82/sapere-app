@@ -336,10 +336,10 @@
               "type": "mc",
               "stem": "Find the value of \\\\(A\\\\).",
               "options": [
-                "\\(14\\)",
-                "\\(10\\)",
-                "\\(24\\)",
-                "\\(17\\)"
+                "&#8203;\\(14\\)",
+                "&#8203;\\(10\\)",
+                "&#8203;\\(24\\)",
+                "&#8203;\\(17\\)"
               ],
               "answer": 0,
               "hint": "The cumulative frequency for 10-14 is the sum of all frequencies up to and including that class.",
@@ -359,10 +359,10 @@
               "type": "mc",
               "stem": "A person is selected at random. Find the probability the student read between 10 and 19 books.",
               "options": [
-                "\\(\\dfrac{3}{5}\\)",
-                "\\(\\dfrac{7}{20}\\)",
-                "\\(\\dfrac{1}{4}\\)",
-                "\\(\\dfrac{6}{25}\\)"
+                "&#8203;\\(\\dfrac{3}{5}\\)",
+                "&#8203;\\(\\dfrac{7}{20}\\)",
+                "&#8203;\\(\\dfrac{1}{4}\\)",
+                "&#8203;\\(\\dfrac{6}{25}\\)"
               ],
               "answer": 0,
               "hint": "Add the frequencies for the 10-14 and 15-19 classes, then divide by the total of 40.",
@@ -382,10 +382,10 @@
               "type": "mc",
               "stem": "In this survey, is the number of books read by each student a discrete or continuous variable?",
               "options": [
-                "Discrete, because it only takes whole-number values",
-                "Continuous, because it can take any value",
-                "Discrete, because it was grouped into class intervals",
-                "Continuous, because time was involved"
+                "&#8203;Discrete, because it only takes whole-number values",
+                "&#8203;Continuous, because it can take any value",
+                "&#8203;Discrete, because it was grouped into class intervals",
+                "&#8203;Continuous, because time was involved"
               ],
               "answer": 0,
               "hint": "Think about whether you can read half a book, or only a whole number of books.",
@@ -455,10 +455,10 @@
           "difficulty": "hard",
           "stem": "A cumulative frequency histogram represents the number of goals a team conceded in 40 games, with cumulative frequencies 5, 25, 28, 30, 34, 40 for \\(x=1\\) to \\(6\\) goals respectively. Which of the following statements is false?",
           "options": [
-            "The mode is 6",
-            "The median is 2",
-            "The IQR is 2",
-            "The range is 5"
+            "&#8203;The mode is 6",
+            "&#8203;The median is 2",
+            "&#8203;The IQR is 2",
+            "&#8203;The range is 5"
           ],
           "answer": 0,
           "hint": "Find the frequency of each individual value first (the jump in cumulative frequency), then check each statement.",

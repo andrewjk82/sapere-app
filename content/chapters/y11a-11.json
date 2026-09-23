@@ -3903,10 +3903,10 @@
               "type": "mc",
               "stem": "The length of fence AB is 63 m. What is the size of \\\\(\\\\angle AOB\\\\) in radians?",
               "options": [
-                "\\(1.4\\ \\text{rad}\\)",
-                "\\(0.7\\ \\text{rad}\\)",
-                "\\(1.6\\ \\text{rad}\\)",
-                "\\(2835\\ \\text{rad}\\)"
+                "&#8203;\\(1.4\\ \\text{rad}\\)",
+                "&#8203;\\(0.7\\ \\text{rad}\\)",
+                "&#8203;\\(1.6\\ \\text{rad}\\)",
+                "&#8203;\\(2835\\ \\text{rad}\\)"
               ],
               "answer": 0,
               "hint": "Use the arc length formula \\(l=r\\theta\\), rearranged for \\(\\theta\\).",
@@ -3956,10 +3956,10 @@
               "type": "mc",
               "stem": "The shaded plot of land ABCD has an area of \\\\(974\\\\ \\\\text{m}^2\\\\). Calculate the length of \\\\(OC=s\\\\), to the nearest metre.",
               "options": [
-                "\\(30\\ \\text{m}\\)",
-                "\\(21\\ \\text{m}\\)",
-                "\\(45\\ \\text{m}\\)",
-                "\\(35\\ \\text{m}\\)"
+                "&#8203;\\(30\\ \\text{m}\\)",
+                "&#8203;\\(21\\ \\text{m}\\)",
+                "&#8203;\\(45\\ \\text{m}\\)",
+                "&#8203;\\(35\\ \\text{m}\\)"
               ],
               "answer": 0,
               "hint": "Find the area of the full sector OAB first, subtract the shaded area to get the area of triangle OCD, then use \\(\\text{Area}=\\dfrac12s^2\\sin(1.4)\\) to solve for \\(s\\).",

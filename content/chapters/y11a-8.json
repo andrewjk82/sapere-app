@@ -4552,10 +4552,10 @@
           "difficulty": "medium",
           "stem": "Solve \\(\\left(\\dfrac13\\right)^{2x-1}=27^{x-2}\\).",
           "options": [
-            "\\(\\dfrac75\\)",
-            "\\(\\dfrac54\\)",
-            "\\(\\dfrac74\\)",
-            "\\(\\dfrac57\\)"
+            "&#8203;\\(\\dfrac75\\)",
+            "&#8203;\\(\\dfrac54\\)",
+            "&#8203;\\(\\dfrac74\\)",
+            "&#8203;\\(\\dfrac57\\)"
           ],
           "answer": 0,
           "hint": "Write both sides as powers of 3, then equate the exponents.",
@@ -4721,10 +4721,10 @@
           "difficulty": "hard",
           "stem": "Let \\(a=\\log_3 2\\) and \\(b=\\log_3 5\\). Which of the following is equal to \\(\\log_3\\left(\\dfrac{200}{9}\\right)\\)?",
           "options": [
-            "\\(3a+2b-2\\)",
-            "\\(2a+3b-2\\)",
-            "\\(3a+2b+2\\)",
-            "\\(2a+3b+2\\)"
+            "&#8203;\\(3a+2b-2\\)",
+            "&#8203;\\(2a+3b-2\\)",
+            "&#8203;\\(3a+2b+2\\)",
+            "&#8203;\\(2a+3b+2\\)"
           ],
           "answer": 0,
           "hint": "Write \\(200=2^3\\times5^2\\) and \\(9=3^2\\), then apply the log laws.",
@@ -4776,10 +4776,10 @@
           "difficulty": "medium",
           "stem": "Which of the following correctly simplifies \\(\\log_3(27x^2)\\) in terms of \\(\\log_3 x\\)?",
           "options": [
-            "\\(3+2\\log_3 x\\)",
-            "\\(27+2\\log_3 x\\)",
-            "\\(3+\\log_3 x\\)",
-            "\\(1+2\\log_3 x\\)"
+            "&#8203;\\(3+2\\log_3 x\\)",
+            "&#8203;\\(27+2\\log_3 x\\)",
+            "&#8203;\\(3+\\log_3 x\\)",
+            "&#8203;\\(1+2\\log_3 x\\)"
           ],
           "answer": 0,
           "hint": "Split \\(\\log_3(27x^2)\\) into \\(\\log_3(27)+\\log_3(x^2)\\) using the log of a product law.",
@@ -4828,10 +4828,10 @@
               "type": "mc",
               "stem": "Determine the population of the town in 2036, to the nearest whole person.",
               "options": [
-                "\\(25391\\ \\text{people}\\)",
-                "\\(18630\\ \\text{people}\\)",
-                "\\(23400\\ \\text{people}\\)",
-                "\\(25400\\ \\text{people}\\)"
+                "&#8203;\\(25391\\ \\text{people}\\)",
+                "&#8203;\\(18630\\ \\text{people}\\)",
+                "&#8203;\\(23400\\ \\text{people}\\)",
+                "&#8203;\\(25400\\ \\text{people}\\)"
               ],
               "answer": 0,
               "hint": "2036 is 10 years after 2026, so substitute \\(t=10\\).",
@@ -4855,10 +4855,10 @@
               "type": "mc",
               "stem": "Determine the year the population exceeds 70,000, to the nearest year.",
               "options": [
-                "\\(2065\\)",
-                "\\(2066\\)",
-                "\\(2064\\)",
-                "\\(2036\\)"
+                "&#8203;\\(2065\\)",
+                "&#8203;\\(2066\\)",
+                "&#8203;\\(2064\\)",
+                "&#8203;\\(2036\\)"
               ],
               "answer": 0,
               "hint": "Set \\(P=70000\\), solve for \\(t\\) using logarithms, then add \\(t\\) (rounded) onto the year 2026.",
