@@ -15447,6 +15447,30 @@
           "dna": {
             "dnaId": "TRIG-ID-01"
           }
+        },
+        {
+          "id": "killara2026-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If \\(\\cos\\theta=\\dfrac{12}{13}\\) and \\(0°<\\theta<90°\\), then \\(\\sin\\theta\\) is:",
+          "options": [
+            "\\(\\dfrac{5}{13}\\)",
+            "\\(\\dfrac{11}{13}\\)",
+            "\\(\\dfrac{12}{13}\\)",
+            "\\(\\dfrac{13}{5}\\)"
+          ],
+          "answer": 0,
+          "hint": "Draw a right triangle with adjacent 12 and hypotenuse 13, then use Pythagoras to find the opposite side.",
+          "steps": [
+            {
+              "explain": "Use the Pythagorean identity \\(\\sin^2\\theta+\\cos^2\\theta=1\\), or Pythagoras' theorem on a 5-12-13 triangle.",
+              "work": "\\(\\text{opposite}=\\sqrt{13^2-12^2}=\\sqrt{25}=5\\)"
+            },
+            {
+              "explain": "Since \\(0°<\\theta<90°\\), \\(\\sin\\theta\\) is positive.",
+              "work": "\\(\\sin\\theta=\\dfrac{5}{13}\\)"
+            }
+          ]
         }
       ]
     },
@@ -18367,6 +18391,38 @@
           "dna": {
             "dnaId": "TRIG-EQ-01"
           }
+        },
+        {
+          "id": "killara2026-q23",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Solve \\(3\\sin^2x-\\cos^2x=1\\) for \\(-\\pi\\le x\\le\\pi\\). Give all solutions in exact form.",
+          "options": [
+            "\\(x=\\dfrac{\\pi}{4},\\ -\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4},\\ -\\dfrac{3\\pi}{4}\\)",
+            "\\(x=\\dfrac{\\pi}{4},\\ -\\dfrac{\\pi}{4}\\)\\text{ only}",
+            "\\(x=\\dfrac{\\pi}{3},\\ -\\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3},\\ -\\dfrac{2\\pi}{3}\\)",
+            "\\(x=\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4}\\)\\text{ only}"
+          ],
+          "answer": 0,
+          "hint": "Replace \\(\\cos^2x\\) with \\(1-\\sin^2x\\) so the whole equation is in terms of \\(\\sin x\\).",
+          "steps": [
+            {
+              "explain": "Use the Pythagorean identity to write \\(\\cos^2x=1-\\sin^2x\\).",
+              "work": "\\(3\\sin^2x-(1-\\sin^2x)=1\\)"
+            },
+            {
+              "explain": "Expand and collect like terms.",
+              "work": "\\(4\\sin^2x-1=1 \\Rightarrow 4\\sin^2x=2 \\Rightarrow \\sin^2x=\\dfrac12\\)"
+            },
+            {
+              "explain": "Take the square root of both sides.",
+              "work": "\\(\\sin x=\\pm\\dfrac{1}{\\sqrt2}\\)"
+            },
+            {
+              "explain": "The reference angle is \\(45°=\\dfrac{\\pi}{4}\\). Find every solution with this reference angle in \\([-\\pi,\\pi]\\).",
+              "work": "\\(x=\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4},\\ -\\dfrac{\\pi}{4},\\ -\\dfrac{3\\pi}{4}\\)"
+            }
+          ]
         }
       ]
     },
@@ -22726,6 +22782,34 @@
             }
           ],
           "timeLimit": 90
+        },
+        {
+          "id": "killara2026-q22b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In triangle ABC (bearing question above), \\(\\angle BAC=130°-65°=65°\\) and \\(\\angle ABC=180°-160°-\\ldots=85°\\), giving \\(\\angle ACB=30°\\). Show that length \\(BC=32.6\\ \\text{km}\\), correct to the nearest hundred metres, using the sine rule with \\(AB=18\\ \\text{km}\\).",
+          "options": [
+            "\\(32.6\\ \\text{km}\\)",
+            "\\(9.6\\ \\text{km}\\)",
+            "\\(16.9\\ \\text{km}\\)",
+            "\\(20.2\\ \\text{km}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the sine rule: \\(\\dfrac{BC}{\\sin A}=\\dfrac{AB}{\\sin C}\\).",
+          "steps": [
+            {
+              "explain": "Apply the sine rule, with \\(BC\\) opposite the 65° angle and \\(AB=18\\) opposite the 30° angle.",
+              "work": "\\(\\dfrac{BC}{\\sin65°}=\\dfrac{18}{\\sin30°}\\)"
+            },
+            {
+              "explain": "Solve for BC.",
+              "work": "\\(BC=\\dfrac{18\\sin65°}{\\sin30°}\\approx32.627\\ \\text{km}\\)"
+            },
+            {
+              "explain": "Round to the nearest hundred metres.",
+              "work": "\\(32.6\\ \\text{km}\\)"
+            }
+          ]
         }
       ]
     },
@@ -24746,6 +24830,34 @@
             }
           ],
           "manual": true
+        },
+        {
+          "id": "killara2026-q22c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using \\(BC\\approx32.627\\ \\text{km}\\), \\(AB=18\\ \\text{km}\\) and the angle between them \\(\\angle ABC=85°\\), use the cosine rule to find the distance between Alpha and Charlie.",
+          "options": [
+            "\\(35.9\\ \\text{km}\\)",
+            "\\(32.6\\ \\text{km}\\)",
+            "\\(38.4\\ \\text{km}\\)",
+            "\\(28.7\\ \\text{km}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the cosine rule: \\(AC^2=BC^2+AB^2-2\\times BC\\times AB\\times\\cos(\\angle ABC)\\).",
+          "steps": [
+            {
+              "explain": "Apply the cosine rule with the two known sides and the included angle.",
+              "work": "\\(AC^2=32.627^2+18^2-2(32.627)(18)\\cos85°\\)"
+            },
+            {
+              "explain": "Evaluate the right-hand side.",
+              "work": "\\(AC^2\\approx1286.16\\)"
+            },
+            {
+              "explain": "Take the square root.",
+              "work": "\\(AC\\approx35.9\\ \\text{km}\\)"
+            }
+          ]
         }
       ]
     },
@@ -26245,6 +26357,33 @@
           "answer": "111",
           "hint": "At B, draw a north line. The co-interior angle to the first bearing is \\(180^{\\circ} - 60^{\\circ} = 120^{\\circ}\\) (south-west direction). The bearing to C is \\(290^{\\circ}\\). The angle \\(\\angle ABC = 360^{\\circ} - (290^{\\circ} - 60^{\\circ}) - 180^{\\circ} = 50^{\\circ}\\). Then use the cosine rule: \\(AC^2 = AB^2 + BC^2 - 2(AB)(BC)\\cos 50^{\\circ}\\).",
           "solution": "The angle \\(\\angle ABC = 180^{\\circ} - (290^{\\circ} - 180^{\\circ} - 60^{\\circ}) = 50^{\\circ}\\). By the cosine rule: \\(AC^2 = 60^2 + 140^2 - 2(60)(140) \\cos 50^{\\circ} = 3600 + 19600 - 16800(0.6428) = 23200 - 10799 = 12401 \\implies AC = \\sqrt{12401} \\approx 111.36\\text{ km} \\approx 111\\text{ km}\\)."
+        },
+        {
+          "id": "killara2026-q22a",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Three boats, Alpha, Bravo and Charlie, are sailing in a harbour. Bravo is 18 km from Alpha on a bearing of 065°. Charlie is on a bearing of 130° from Alpha and a bearing of 160° from Bravo. Determine the bearing of Alpha from Bravo.",
+          "figure": {
+            "svg": "fig:02f9c0880d"
+          },
+          "options": [
+            "\\(245°\\)",
+            "\\(065°\\)",
+            "\\(115°\\)",
+            "\\(295°\\)"
+          ],
+          "answer": 0,
+          "hint": "The bearing of Alpha from Bravo is the reverse (back) bearing of \"Bravo from Alpha\" — add 180° (since it's less than 180°).",
+          "steps": [
+            {
+              "explain": "The bearing of Bravo from Alpha is 065°.",
+              "work": "\\(\\text{Bearing of B from A}=065°\\)"
+            },
+            {
+              "explain": "The reverse bearing (Alpha from Bravo) is found by adding 180° (since \\(065°<180°\\)).",
+              "work": "\\(065°+180°=245°\\)"
+            }
+          ]
         }
       ]
     },

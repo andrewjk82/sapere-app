@@ -3888,6 +3888,33 @@
           "meta": {
             "course": "Advanced"
           }
+        },
+        {
+          "id": "killara2026-q25a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A fence from point A to point B forms an arc of a circle with centre O and radius 45 m, as shown. The length of fence AB is 63 m. What is the size of \\(\\angle AOB\\) in radians?",
+          "figure": {
+            "svg": "fig:0a83e12e9a"
+          },
+          "options": [
+            "\\(1.4\\ \\text{rad}\\)",
+            "\\(0.7\\ \\text{rad}\\)",
+            "\\(1.6\\ \\text{rad}\\)",
+            "\\(2835\\ \\text{rad}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the arc length formula \\(l=r\\theta\\), rearranged for \\(\\theta\\).",
+          "steps": [
+            {
+              "explain": "Rearrange the arc length formula to make \\(\\theta\\) the subject.",
+              "work": "\\(\\theta=\\dfrac{l}{r}\\)"
+            },
+            {
+              "explain": "Substitute the given arc length and radius.",
+              "work": "\\(\\theta=\\dfrac{63}{45}=1.4\\ \\text{rad}\\)"
+            }
+          ]
         }
       ]
     },
@@ -4060,6 +4087,34 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "killara2026-q25b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Points C and D lie on OB and OA respectively, with \\(OC=OD=s\\). The shaded plot of land ABCD has an area of \\(974\\ \\text{m}^2\\), \\(\\angle AOB=1.4\\ \\text{rad}\\) and the full sector OAB has radius 45 m. Calculate the length of \\(OC=s\\), to the nearest metre.",
+          "options": [
+            "\\(30\\ \\text{m}\\)",
+            "\\(21\\ \\text{m}\\)",
+            "\\(45\\ \\text{m}\\)",
+            "\\(35\\ \\text{m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find the area of the full sector OAB first, subtract the shaded area to get the area of triangle OCD, then use \\(\\text{Area}=\\dfrac12s^2\\sin(1.4)\\) to solve for \\(s\\).",
+          "steps": [
+            {
+              "explain": "Find the area of the full sector OAB, using \\(\\text{Area}=\\dfrac12r^2\\theta\\).",
+              "work": "\\(\\text{Area}=\\dfrac12(45)^2(1.4)=1417.5\\ \\text{m}^2\\)"
+            },
+            {
+              "explain": "Subtract the shaded area ABCD to find the area of the remaining sector-shaped triangle OCD.",
+              "work": "\\(1417.5-974=443.5\\ \\text{m}^2\\)"
+            },
+            {
+              "explain": "Use the area-of-triangle formula \\(\\text{Area}=\\dfrac12s^2\\sin(1.4)\\) and solve for \\(s\\).",
+              "work": "\\(443.5=\\dfrac12s^2\\sin(1.4) \\Rightarrow s^2\\approx900.1 \\Rightarrow s\\approx30\\ \\text{m}\\)"
+            }
+          ]
         }
       ]
     },

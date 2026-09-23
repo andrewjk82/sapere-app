@@ -324,6 +324,78 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "killara2026-q15a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A survey grouped data as: 0-4 (freq 3), 5-9 (freq 7), 10-14 (freq A, cf 24), 15-19 (freq 10, cf 34), 20-24 (freq 6, cf 40). Find the value of A.",
+          "options": [
+            "\\(14\\)",
+            "\\(10\\)",
+            "\\(24\\)",
+            "\\(17\\)"
+          ],
+          "answer": 0,
+          "hint": "The cumulative frequency for 10-14 is the sum of all frequencies up to and including that class.",
+          "steps": [
+            {
+              "explain": "The cumulative frequency up to 10-14 is 24, and the frequencies before it are 3 and 7.",
+              "work": "\\(24=3+7+A\\)"
+            },
+            {
+              "explain": "Solve for A.",
+              "work": "\\(A=24-10=14\\)"
+            }
+          ]
+        },
+        {
+          "id": "killara2026-q15b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Using the grouped data (frequencies 3, 7, 14, 10, 6 for classes 0-4 up to 20-24, total 40), a person is selected at random. Find the probability the student read between 10 and 19 books.",
+          "options": [
+            "\\(\\dfrac{3}{5}\\)",
+            "\\(\\dfrac{7}{20}\\)",
+            "\\(\\dfrac{1}{4}\\)",
+            "\\(\\dfrac{6}{25}\\)"
+          ],
+          "answer": 0,
+          "hint": "Add the frequencies for the 10-14 and 15-19 classes, then divide by the total of 40.",
+          "steps": [
+            {
+              "explain": "Add the frequencies of the two relevant classes.",
+              "work": "\\(14+10=24\\)"
+            },
+            {
+              "explain": "Divide by the total number of students surveyed.",
+              "work": "\\(\\dfrac{24}{40}=\\dfrac35\\)"
+            }
+          ]
+        },
+        {
+          "id": "killara2026-q15c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In this survey, is the number of books read by each student a discrete or continuous variable?",
+          "options": [
+            "Discrete, because it only takes whole-number values",
+            "Continuous, because it can take any value",
+            "Discrete, because it was grouped into class intervals",
+            "Continuous, because time was involved"
+          ],
+          "answer": 0,
+          "hint": "Think about whether you can read half a book, or only a whole number of books.",
+          "steps": [
+            {
+              "explain": "The number of books read is always a whole number — you cannot read 3.5 books.",
+              "work": "\\(\\text{Only whole-number values are possible}\\)"
+            },
+            {
+              "explain": "A variable restricted to distinct, countable values (not any value in a range) is discrete.",
+              "work": "\\(\\text{Discrete}\\)"
+            }
+          ]
         }
       ]
     },
@@ -371,6 +443,34 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "killara2026-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A cumulative frequency histogram represents the number of goals a team conceded in 40 games, with cumulative frequencies 5, 25, 28, 30, 34, 40 for \\(x=1\\) to \\(6\\) goals respectively. Which of the following statements is false?",
+          "options": [
+            "The mode is 6",
+            "The median is 2",
+            "The IQR is 2",
+            "The range is 5"
+          ],
+          "answer": 0,
+          "hint": "Find the frequency of each individual value first (the jump in cumulative frequency), then check each statement.",
+          "steps": [
+            {
+              "explain": "Find the frequency of each value from the jumps in cumulative frequency: 5, 20, 3, 2, 4, 6.",
+              "work": "\\(\\text{Frequencies: }5,20,3,2,4,6\\)"
+            },
+            {
+              "explain": "The mode is the value with the highest frequency, which is \\(x=2\\) (frequency 20), not \\(x=6\\).",
+              "work": "\\(\\text{Mode}=2,\\text{ not }6\\)"
+            },
+            {
+              "explain": "Check the other statements: median (position 20) falls at \\(x=2\\); \\(Q_1\\) (position 10) is 2 and \\(Q_3\\) (position 30) is 4, giving IQR \\(=2\\); range \\(=6-1=5\\) — all true.",
+              "work": "\\(\\text{Only \"the mode is 6\" is false}\\)"
+            }
+          ]
         }
       ]
     }

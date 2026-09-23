@@ -665,6 +665,96 @@
               "work": "\\(f(x) = \\frac{11}{3}x + 1,\\; f'(x) = \\frac{11}{3}\\)"
             }
           ]
+        },
+        {
+          "id": "killara2026-q9",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Points **a**, **b** and **c** lie on the function shown. The gradient of the tangent at point **b** is equal to 0. Which of the following statements is true?",
+          "figure": {
+            "svg": "fig:932e5d6243"
+          },
+          "options": [
+            "\\(f'(a)<f'(b)<f(c)\\)",
+            "\\(f(c)<f'(a)<f(b)\\)",
+            "\\(f(a)<f'(b)<f'(c)\\)",
+            "\\(f'(a)<f'(b)<f'(c)\\)"
+          ],
+          "answer": 2,
+          "hint": "Point \\(a\\) lies deep below the x-axis (a large negative function value), \\(b\\) is a stationary point so \\(f'(b)=0\\), and \\(c\\) is on a steep rising part of the curve.",
+          "steps": [
+            {
+              "explain": "Point \\(a\\) has a very negative y-value, so \\(f(a)\\) is a large negative number.",
+              "work": "\\(f(a) \\ll 0\\)"
+            },
+            {
+              "explain": "\\(b\\) is a stationary (turning) point, so its gradient is exactly 0.",
+              "work": "\\(f'(b)=0\\)"
+            },
+            {
+              "explain": "\\(c\\) sits on a steep, rising part of the curve, so its gradient is a large positive number.",
+              "work": "\\(f'(c)>0\\)"
+            },
+            {
+              "explain": "Ordering these three values from smallest to largest gives the true statement.",
+              "work": "\\(f(a)<f'(b)<f'(c)\\)"
+            }
+          ]
+        },
+        {
+          "id": "killara2026-q16",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The graph below shows a function \\(f(x)\\) with a horizontal asymptote at \\(y=a\\). As \\(x\\to\\infty\\), what must be true about \\(f'(x)\\)?",
+          "figure": {
+            "svg": "fig:12869f9380"
+          },
+          "options": [
+            "\\(f'(x)\\to 0\\)",
+            "\\(f'(x)\\to a\\)",
+            "\\(f'(x)\\to \\infty\\)",
+            "\\(f'(x)\\) is undefined"
+          ],
+          "answer": 0,
+          "hint": "A horizontal asymptote means the curve flattens out and stops rising or falling as \\(x\\) gets large.",
+          "steps": [
+            {
+              "explain": "As \\(x\\to\\infty\\), \\(f(x)\\) approaches the constant value \\(a\\) and the curve becomes flatter and flatter.",
+              "work": "\\(f(x)\\to a\\)"
+            },
+            {
+              "explain": "The gradient of a curve that is flattening out towards a constant height must itself approach zero.",
+              "work": "\\(f'(x)\\to 0\\)"
+            }
+          ]
+        },
+        {
+          "id": "killara2026-q21a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A car's speed at time \\(t\\) seconds is \\(v(t)=\\dfrac{500t}{t^2+100}\\) m/s. Calculate the average rate of change of the car's speed between \\(t=5\\) and \\(t=10\\) seconds.",
+          "options": [
+            "\\(1\\ \\text{m/s}^2\\)",
+            "\\(5\\ \\text{m/s}^2\\)",
+            "\\(0.2\\ \\text{m/s}^2\\)",
+            "\\(20\\ \\text{m/s}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Average rate of change \\(=\\dfrac{v(10)-v(5)}{10-5}\\).",
+          "steps": [
+            {
+              "explain": "Evaluate \\(v(5)\\).",
+              "work": "\\(v(5)=\\dfrac{500(5)}{25+100}=\\dfrac{2500}{125}=20\\)"
+            },
+            {
+              "explain": "Evaluate \\(v(10)\\).",
+              "work": "\\(v(10)=\\dfrac{500(10)}{100+100}=\\dfrac{5000}{200}=25\\)"
+            },
+            {
+              "explain": "Divide the change in speed by the change in time.",
+              "work": "\\(\\dfrac{25-20}{10-5}=\\dfrac{5}{5}=1\\ \\text{m/s}^2\\)"
+            }
+          ]
         }
       ]
     },
@@ -717,6 +807,34 @@
           "dna": {
             "dnaId": "CALC-DIFF-01"
           }
+        },
+        {
+          "id": "killara2026-q14a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The function \\(f(x)=x^2+2\\). Use differentiation by first principles, \\(f'(x)=\\lim\\limits_{h\\to0}\\dfrac{f(x+h)-f(x)}{h}\\), to find \\(f'(x)\\).",
+          "options": [
+            "\\(2x\\)",
+            "\\(x^2+2x\\)",
+            "\\(2x+2\\)",
+            "\\(x\\)"
+          ],
+          "answer": 0,
+          "hint": "Expand \\(f(x+h)=(x+h)^2+2\\), subtract \\(f(x)\\), divide by \\(h\\), then let \\(h\\to 0\\).",
+          "steps": [
+            {
+              "explain": "Expand \\(f(x+h)\\).",
+              "work": "\\(f(x+h)=(x+h)^2+2=x^2+2xh+h^2+2\\)"
+            },
+            {
+              "explain": "Subtract \\(f(x)=x^2+2\\) and divide by \\(h\\).",
+              "work": "\\(\\dfrac{f(x+h)-f(x)}{h}=\\dfrac{2xh+h^2}{h}=2x+h\\)"
+            },
+            {
+              "explain": "Let \\(h\\to0\\).",
+              "work": "\\(f'(x)=2x\\)"
+            }
+          ]
         }
       ]
     },
@@ -831,6 +949,114 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "killara2026-q26a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A delivery robot's displacement is \\(x(t)=t(t-4)^2\\) metres. Determine the velocity function \\(v(t)\\) of the robot.",
+          "options": [
+            "\\(v(t)=3t^2-16t+16\\)",
+            "\\(v(t)=3t^2-8t+16\\)",
+            "\\(v(t)=t^2-16t+16\\)",
+            "\\(v(t)=3t^2-16t\\)"
+          ],
+          "answer": 0,
+          "hint": "First expand \\(x(t)=t(t-4)^2\\) into a cubic in \\(t\\), then differentiate term by term.",
+          "steps": [
+            {
+              "explain": "Expand \\((t-4)^2\\) then multiply by \\(t\\).",
+              "work": "\\(x(t)=t(t^2-8t+16)=t^3-8t^2+16t\\)"
+            },
+            {
+              "explain": "Differentiate term by term to find the velocity.",
+              "work": "\\(v(t)=x'(t)=3t^2-16t+16\\)"
+            }
+          ]
+        },
+        {
+          "id": "killara2026-q26b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using \\(v(t)=3t^2-16t+16\\), find the times at which the robot is stationary, for \\(0\\le t\\le 6\\).",
+          "options": [
+            "\\(t=4\\ \\text{or}\\ t=\\dfrac{4}{3}\\)",
+            "\\(t=4\\ \\text{only}\\)",
+            "\\(t=8\\ \\text{or}\\ t=\\dfrac{8}{3}\\)",
+            "\\(t=0\\ \\text{or}\\ t=6\\)"
+          ],
+          "answer": 0,
+          "hint": "The robot is stationary when \\(v(t)=0\\). Solve the quadratic \\(3t^2-16t+16=0\\).",
+          "steps": [
+            {
+              "explain": "Set \\(v(t)=0\\) and solve using the quadratic formula.",
+              "work": "\\(t=\\dfrac{16\\pm\\sqrt{256-192}}{6}=\\dfrac{16\\pm8}{6}\\)"
+            },
+            {
+              "explain": "Evaluate both solutions.",
+              "work": "\\(t=4\\ \\text{or}\\ t=\\dfrac{4}{3}\\)"
+            },
+            {
+              "explain": "Both lie in \\(0\\le t\\le6\\), so both are valid.",
+              "work": "\\(t=4,\\ \\dfrac{4}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "killara2026-q26c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For the robot with \\(v(t)=3t^2-16t+16\\), determine the velocity of the robot when the acceleration is equal to zero.",
+          "options": [
+            "\\(-\\dfrac{16}{3}\\ \\text{m/s}\\)",
+            "\\(\\dfrac{16}{3}\\ \\text{m/s}\\)",
+            "\\(0\\ \\text{m/s}\\)",
+            "\\(-16\\ \\text{m/s}\\)"
+          ],
+          "answer": 0,
+          "hint": "Find \\(a(t)=v'(t)\\), set it to 0 to find the time, then substitute that time back into \\(v(t)\\).",
+          "steps": [
+            {
+              "explain": "Differentiate \\(v(t)\\) to get the acceleration function.",
+              "work": "\\(a(t)=v'(t)=6t-16\\)"
+            },
+            {
+              "explain": "Set \\(a(t)=0\\) and solve for \\(t\\).",
+              "work": "\\(6t-16=0 \\Rightarrow t=\\dfrac{8}{3}\\)"
+            },
+            {
+              "explain": "Substitute \\(t=\\dfrac{8}{3}\\) into \\(v(t)\\).",
+              "work": "\\(v\\!\\left(\\dfrac83\\right)=3\\left(\\dfrac83\\right)^2-16\\left(\\dfrac83\\right)+16=-\\dfrac{16}{3}\\ \\text{m/s}\\)"
+            }
+          ]
+        },
+        {
+          "id": "killara2026-q26d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "For the robot with \\(x(t)=t(t-4)^2\\), find the total distance the robot has travelled over the interval \\(0\\le t\\le6\\), correct to the nearest metre.",
+          "options": [
+            "\\(43\\ \\text{m}\\)",
+            "\\(24\\ \\text{m}\\)",
+            "\\(34\\ \\text{m}\\)",
+            "\\(19\\ \\text{m}\\)"
+          ],
+          "answer": 0,
+          "hint": "The robot changes direction at \\(t=\\dfrac43\\) and \\(t=4\\) (the stationary points). Add up the distance travelled in each separate leg of the trip — do not just subtract the start and end position.",
+          "steps": [
+            {
+              "explain": "Evaluate the position at \\(t=0\\), the two turning points, and \\(t=6\\).",
+              "work": "\\(x(0)=0,\\ x\\!\\left(\\tfrac43\\right)=\\tfrac{256}{27}\\approx9.48,\\ x(4)=0,\\ x(6)=24\\)"
+            },
+            {
+              "explain": "The robot moves forward to \\(t=\\tfrac43\\), reverses back to \\(t=4\\), then moves forward again to \\(t=6\\). Add the distance covered in each leg.",
+              "work": "\\(9.48+9.48+24=42.96\\ \\text{m}\\)"
+            },
+            {
+              "explain": "Round to the nearest metre.",
+              "work": "\\(\\approx 43\\ \\text{m}\\)"
+            }
+          ]
         }
       ]
     },
@@ -871,6 +1097,66 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "killara2026-q10",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Consider \\(f(x)=ax^2+bx+5\\). The tangent to the graph at \\(x=1\\) has equation \\(y=8x-2\\). Find the value of \\(a-b\\).",
+          "options": [
+            "\\(-2\\)",
+            "\\(1\\)",
+            "\\(8\\)",
+            "\\(13\\)"
+          ],
+          "answer": 3,
+          "hint": "The tangent line gives you both the y-value at \\(x=1\\) (from the line equation) and the gradient there (the line's slope).",
+          "steps": [
+            {
+              "explain": "The point of contact lies on both the curve and the tangent. Find its y-coordinate from the tangent line at \\(x=1\\).",
+              "work": "\\(y=8(1)-2=6\\), \\text{ so } f(1)=a+b+5=6 \\Rightarrow a+b=1\\)"
+            },
+            {
+              "explain": "The gradient of the tangent equals \\(f'(1)\\). Differentiate \\(f(x)\\) and set \\(f'(1)\\) equal to the tangent's slope of 8.",
+              "work": "\\(f'(x)=2ax+b \\Rightarrow f'(1)=2a+b=8\\)"
+            },
+            {
+              "explain": "Solve the two simultaneous equations \\(a+b=1\\) and \\(2a+b=8\\) by subtracting.",
+              "work": "\\(a=7,\\ b=1-7=-6\\)"
+            },
+            {
+              "explain": "Compute \\(a-b\\).",
+              "work": "\\(a-b=7-(-6)=13\\)"
+            }
+          ]
+        },
+        {
+          "id": "killara2026-q14b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using \\(f(x)=x^2+2\\) and \\(f'(x)=2x\\), find the equation of the tangent to the curve at the point where \\(x=2\\).",
+          "options": [
+            "\\(y=4x-2\\)",
+            "\\(y=4x+2\\)",
+            "\\(y=2x-2\\)",
+            "\\(y=4x-6\\)"
+          ],
+          "answer": 0,
+          "hint": "First find the point of contact \\((2, f(2))\\), then the gradient \\(f'(2)\\), then use \\(y-y_1=m(x-x_1)\\).",
+          "steps": [
+            {
+              "explain": "Find the y-coordinate of the point of contact.",
+              "work": "\\(f(2)=2^2+2=6\\), \\text{ so the point is }(2,6)\\)"
+            },
+            {
+              "explain": "Find the gradient of the tangent.",
+              "work": "\\(f'(2)=2(2)=4\\)"
+            },
+            {
+              "explain": "Substitute into the point-gradient form of a line.",
+              "work": "\\(y-6=4(x-2) \\Rightarrow y=4x-2\\)"
+            }
+          ]
         }
       ]
     },
@@ -1018,6 +1304,30 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "killara2026-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Consider \\(f(x)=(3x^2-2)^5\\). \\(f'(x)\\) is equal to:",
+          "options": [
+            "\\(30x(3x^2-2)^4\\)",
+            "\\(30x(3x^2-2)^5\\)",
+            "\\(5(3x^2-2)^4\\)",
+            "\\(30(3x^2-2)^5\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the chain rule: differentiate the outer power, then multiply by the derivative of the inner function.",
+          "steps": [
+            {
+              "explain": "Apply the chain rule: bring down the power 5, reduce it by 1, then multiply by the derivative of the inner function \\(3x^2-2\\).",
+              "work": "\\(f'(x)=5(3x^2-2)^4\\times 6x\\)"
+            },
+            {
+              "explain": "Simplify the constants.",
+              "work": "\\(f'(x)=30x(3x^2-2)^4\\)"
+            }
+          ]
         }
       ]
     },
@@ -1091,6 +1401,34 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "killara2026-q21b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the instantaneous rate of change of the car's speed, \\(v(t)=\\dfrac{500t}{t^2+100}\\), at \\(t=5\\) seconds.",
+          "options": [
+            "\\(\\dfrac{12}{5}\\ \\text{m/s}^2\\)",
+            "\\(1\\ \\text{m/s}^2\\)",
+            "\\(20\\ \\text{m/s}^2\\)",
+            "\\(\\dfrac{5}{12}\\ \\text{m/s}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the quotient rule with \\(u=500t\\), \\(v=t^2+100\\), then evaluate \\(v'(5)\\).",
+          "steps": [
+            {
+              "explain": "Apply the quotient rule \\(v'(t)=\\dfrac{u'v-uv'}{v^2}\\) with \\(u=500t,\\ u'=500,\\ v=t^2+100,\\ v'=2t\\).",
+              "work": "\\(v'(t)=\\dfrac{500(t^2+100)-500t(2t)}{(t^2+100)^2}=\\dfrac{500(100-t^2)}{(t^2+100)^2}\\)"
+            },
+            {
+              "explain": "Substitute \\(t=5\\).",
+              "work": "\\(v'(5)=\\dfrac{500(100-25)}{(125)^2}=\\dfrac{37500}{15625}\\)"
+            },
+            {
+              "explain": "Simplify the fraction.",
+              "work": "\\(v'(5)=\\dfrac{12}{5}\\ \\text{m/s}^2\\)"
+            }
+          ]
         }
       ]
     }

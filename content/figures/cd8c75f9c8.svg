@@ -1,0 +1,18 @@
+<svg viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<line x1="15" y1="110" x2="305" y2="110" stroke="#475569" stroke-width="1.5"/>
+<line x1="160" y1="10" x2="160" y2="210" stroke="#475569" stroke-width="1.5"/>
+<text x="295" y="105" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">x</text>
+<path d="M 40 200 C 60 150, 75 95, 95 90 C 115 85, 120 118, 130 118 C 140 118, 150 88, 160 88
+  C 170 88, 180 118, 190 118 C 200 118, 205 85, 225 90 C 245 95, 260 150, 280 20"
+  fill="none" stroke="#1e293b" stroke-width="2.5"/>
+<circle cx="40" cy="110" r="3.5" fill="#475569"/>
+<circle cx="95" cy="110" r="3.5" fill="#475569"/>
+<circle cx="130" cy="110" r="3.5" fill="#475569"/>
+<circle cx="160" cy="110" r="3.5" fill="#475569"/>
+<circle cx="190" cy="110" r="3.5" fill="#475569"/>
+<text x="30" y="128" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">-2</text>
+<text x="86" y="128" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">-1</text>
+<text x="153" y="128" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">0</text>
+<text x="185" y="128" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">1</text>
+<text x="215" y="128" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">2</text>
+</svg>

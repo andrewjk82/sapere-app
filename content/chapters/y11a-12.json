@@ -1128,6 +1128,50 @@
           "meta": {
             "course": "Advanced"
           }
+        },
+        {
+          "id": "killara2026-q18a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "A company has 60 employees. 25 have completed a first-aid course (F), 18 have completed a workplace safety course (S), and 7 have completed both. How many employees have completed only the first-aid course (F, but not S)?",
+          "options": [
+            "\\(18\\)",
+            "\\(25\\)",
+            "\\(11\\)",
+            "\\(7\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract the number who did both courses from the total number who did the first-aid course.",
+          "steps": [
+            {
+              "explain": "Only-F is the total who did F, minus those who also did S.",
+              "work": "\\(25-7=18\\)"
+            }
+          ]
+        },
+        {
+          "id": "killara2026-q19a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In a school, \\(P(S)=0.45\\) is the probability a student plays sport, and \\(P(M)=0.30\\) is the probability a student is in a music ensemble. \\(P(S\\cup M)=0.57\\). Find \\(P(S\\cap M)\\).",
+          "options": [
+            "\\(0.18\\)",
+            "\\(0.75\\)",
+            "\\(0.12\\)",
+            "\\(0.135\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the addition rule \\(P(S\\cup M)=P(S)+P(M)-P(S\\cap M)\\), rearranged for \\(P(S\\cap M)\\).",
+          "steps": [
+            {
+              "explain": "Rearrange the addition rule to make \\(P(S\\cap M)\\) the subject.",
+              "work": "\\(P(S\\cap M)=P(S)+P(M)-P(S\\cup M)\\)"
+            },
+            {
+              "explain": "Substitute the given values.",
+              "work": "\\(=0.45+0.30-0.57=0.18\\)"
+            }
+          ]
         }
       ]
     },
@@ -1300,6 +1344,34 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "killara2026-q6",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A library has 8 fiction books and 4 non-fiction books. A student chooses two books one after another without replacement. What is the probability that at least one is non-fiction?",
+          "options": [
+            "\\(\\dfrac{19}{33}\\)",
+            "\\(\\dfrac{20}{33}\\)",
+            "\\(\\dfrac{24}{36}\\)",
+            "\\(\\dfrac{22}{33}\\)"
+          ],
+          "answer": 0,
+          "hint": "It's easier to find \\(1-P(\\text{both fiction})\\).",
+          "steps": [
+            {
+              "explain": "Find the probability that both books chosen are fiction, without replacement.",
+              "work": "\\(P(FF)=\\dfrac{8}{12}\\times\\dfrac{7}{11}=\\dfrac{56}{132}\\)"
+            },
+            {
+              "explain": "\"At least one non-fiction\" is the complement of \"both fiction\".",
+              "work": "\\(P(\\text{at least one NF})=1-\\dfrac{56}{132}=\\dfrac{76}{132}\\)"
+            },
+            {
+              "explain": "Simplify the fraction.",
+              "work": "\\(\\dfrac{76}{132}=\\dfrac{19}{33}\\)"
+            }
+          ]
         }
       ]
     },
@@ -1626,6 +1698,34 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "killara2026-q27",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A magician has three 6-sided dice: one always shows 6 (biased), one has \\(P(\\text{even})=0.8\\) (biased), and one is fair. A die is selected at random and rolled, showing an even number. What is the probability that it was one of the two biased dice?",
+          "options": [
+            "\\(\\dfrac{18}{23}\\)",
+            "\\(\\dfrac{2}{3}\\)",
+            "\\(\\dfrac{23}{30}\\)",
+            "\\(\\dfrac{9}{15}\\)"
+          ],
+          "answer": 0,
+          "hint": "Use Bayes' theorem: \\(P(\\text{biased}\\mid\\text{even})=\\dfrac{P(\\text{biased}\\cap\\text{even})}{P(\\text{even})}\\), building both from the full probability tree (each die chosen with probability \\(\\frac13\\)).",
+          "steps": [
+            {
+              "explain": "Find \\(P(\\text{even})\\) by adding the even-probability of each die, each weighted by \\(\\frac13\\) (chance of selecting it).",
+              "work": "\\(P(\\text{even})=\\dfrac13(1)+\\dfrac13(0.8)+\\dfrac13(0.5)=\\dfrac{23}{30}\\)"
+            },
+            {
+              "explain": "Find \\(P(\\text{biased die}\\cap\\text{even})\\), using only the two biased dice.",
+              "work": "\\(\\dfrac13(1)+\\dfrac13(0.8)=\\dfrac13+\\dfrac{4}{15}=\\dfrac{9}{15}=\\dfrac35\\)"
+            },
+            {
+              "explain": "Divide to apply Bayes' theorem.",
+              "work": "\\(P(\\text{biased}\\mid\\text{even})=\\dfrac{3/5}{23/30}=\\dfrac{3}{5}\\times\\dfrac{30}{23}=\\dfrac{18}{23}\\)"
+            }
+          ]
         }
       ]
     },
@@ -1701,6 +1801,50 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
+        },
+        {
+          "id": "killara2026-q18b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using the same data (25 completed F, 18 completed S, 7 completed both, out of 60 employees), find \\(P(F\\mid S)\\).",
+          "options": [
+            "\\(\\dfrac{7}{18}\\)",
+            "\\(\\dfrac{7}{25}\\)",
+            "\\(\\dfrac{18}{25}\\)",
+            "\\(\\dfrac{11}{18}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(P(F\\mid S)=\\dfrac{P(F\\cap S)}{P(S)}\\), which is the same as \\(\\dfrac{n(F\\cap S)}{n(S)}\\).",
+          "steps": [
+            {
+              "explain": "Use the conditional probability formula with the counts directly.",
+              "work": "\\(P(F\\mid S)=\\dfrac{n(F\\cap S)}{n(S)}=\\dfrac{7}{18}\\)"
+            }
+          ]
+        },
+        {
+          "id": "killara2026-q19b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using \\(P(S)=0.45\\), \\(P(M)=0.30\\) and \\(P(S\\cap M)=0.18\\), are events S and M independent?",
+          "options": [
+            "No, since \\(P(S)\\times P(M)=0.135\\ne0.18=P(S\\cap M)\\)",
+            "Yes, since \\(P(S\\cap M)>0\\)",
+            "No, since \\(P(S\\cup M)\\ne1\\)",
+            "Yes, since \\(P(S)+P(M)=0.75\\)"
+          ],
+          "answer": 0,
+          "hint": "Two events are independent only if \\(P(S\\cap M)=P(S)\\times P(M)\\) exactly.",
+          "steps": [
+            {
+              "explain": "Compute \\(P(S)\\times P(M)\\) and compare it with the actual \\(P(S\\cap M)\\).",
+              "work": "\\(P(S)\\times P(M)=0.45\\times0.30=0.135\\)"
+            },
+            {
+              "explain": "Since \\(0.135\\ne0.18\\), the independence condition fails.",
+              "work": "\\(S\\text{ and }M\\text{ are not independent}\\)"
+            }
+          ]
         }
       ]
     }

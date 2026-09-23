@@ -9504,6 +9504,34 @@
               "explain": "The square root ranges from \\(0\\) to \\(11\\), so \\(f\\) ranges from \\(20-11=9\\) to \\(20-0=20\\): \\( 9 \\leq y \\leq 20 \\)."
             }
           ]
+        },
+        {
+          "id": "killara2026-q13a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The function \\(f(x)=x^5-5x^3+kx\\) passes through the point \\((2,0)\\). Find the value of \\(k\\).",
+          "options": [
+            "\\(4\\)",
+            "\\(-4\\)",
+            "\\(8\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(x=2, f(x)=0\\) into the equation and solve for \\(k\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(x=2\\) and \\(f(2)=0\\) into the function.",
+              "work": "\\(0=2^5-5(2)^3+2k\\)"
+            },
+            {
+              "explain": "Simplify the powers of 2.",
+              "work": "\\(0=32-40+2k=-8+2k\\)"
+            },
+            {
+              "explain": "Solve for \\(k\\).",
+              "work": "\\(2k=8 \\Rightarrow k=4\\)"
+            }
+          ]
         }
       ]
     },
@@ -14779,6 +14807,34 @@
               "explain": "The midpoint of the interval \\( [0, -\\frac{b}{a}] \\) is \\( x = -\\frac{b}{2a} \\), which is the axis of symmetry. Symmetrical inputs always produce equal outputs."
             }
           ]
+        },
+        {
+          "id": "killara2026-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The function \\(f(x)=3x^2-12x+7\\) has its vertex at:",
+          "options": [
+            "\\((2,-5)\\)",
+            "\\((2,-7)\\)",
+            "\\((-2,-5)\\)",
+            "\\((4,7)\\)"
+          ],
+          "answer": 0,
+          "hint": "The x-coordinate of the vertex of \\(ax^2+bx+c\\) is \\(x=-\\dfrac{b}{2a}\\).",
+          "steps": [
+            {
+              "explain": "Find the x-coordinate of the vertex using \\(x=-\\dfrac{b}{2a}\\).",
+              "work": "\\(x=-\\dfrac{-12}{2(3)}=2\\)"
+            },
+            {
+              "explain": "Substitute \\(x=2\\) back into \\(f(x)\\) to find the y-coordinate.",
+              "work": "\\(f(2)=3(4)-24+7=12-24+7=-5\\)"
+            },
+            {
+              "explain": "The vertex is the point \\((x,y)\\) found above.",
+              "work": "\\((2,-5)\\)"
+            }
+          ]
         }
       ]
     },
@@ -15911,6 +15967,41 @@
             },
             {
               "explain": "Behavior differences: \\( x^3 + 2x \\) has a derivative of \\( 3x^2 + 2 > 0 \\), so it is strictly increasing with no stationary points. \\( 2x^3 \\) has derivative \\( 6x^2 \\), which is 0 only at the origin (flat inflection). \\( x^3 - 4x \\) factorizes as \\( x(x-2)(x+2) \\) and has stationary points where \\( 3x^2 - 4 = 0 \\implies x = \\pm \\frac{2}{\\sqrt{3}} \\)."
+            }
+          ]
+        },
+        {
+          "id": "killara2026-q13c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "How many x-intercepts does \\(f(x)=x^5-5x^3+4x\\) have?",
+          "figure": {
+            "svg": "fig:cd8c75f9c8"
+          },
+          "options": [
+            "\\(5\\)",
+            "\\(3\\)",
+            "\\(4\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise \\(f(x)\\) completely by taking out \\(x\\), then factorising the quartic as a difference of two squares.",
+          "steps": [
+            {
+              "explain": "Take out the common factor of \\(x\\).",
+              "work": "\\(f(x)=x(x^4-5x^2+4)\\)"
+            },
+            {
+              "explain": "Factorise the quartic in \\(x^2\\) as a product of two quadratics.",
+              "work": "\\(x^4-5x^2+4=(x^2-4)(x^2-1)\\)"
+            },
+            {
+              "explain": "Factorise each difference of squares fully.",
+              "work": "\\(f(x)=x(x-2)(x+2)(x-1)(x+1)\\)"
+            },
+            {
+              "explain": "Each distinct linear factor gives one x-intercept: \\(x=0,2,-2,1,-1\\).",
+              "work": "\\(5\\text{ x-intercepts}\\)"
             }
           ]
         }
