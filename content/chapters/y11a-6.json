@@ -15463,12 +15463,35 @@
           "hint": "Draw a right triangle with adjacent 12 and hypotenuse 13, then use Pythagoras to find the opposite side.",
           "steps": [
             {
-              "explain": "Use the Pythagorean identity \\(\\sin^2\\theta+\\cos^2\\theta=1\\), or Pythagoras' theorem on a 5-12-13 triangle.",
-              "work": "\\(\\text{opposite}=\\sqrt{13^2-12^2}=\\sqrt{25}=5\\)"
+              "explain": "First, determine the quadrant. The condition \\\\(0^\\\\circ < \\\\theta < 90^\\\\circ\\\\) tells us the angle is in the 1st quadrant. In the 1st quadrant, all trigonometric ratios (sin, cos, tan) are positive.",
+              "work": "\\\\(\\text{Quadrant 1: } \\\\sin\\\\theta > 0\\\\)"
             },
             {
-              "explain": "Since \\(0°<\\theta<90°\\), \\(\\sin\\theta\\) is positive.",
-              "work": "\\(\\sin\\theta=\\dfrac{5}{13}\\)"
+              "explain": "Since \\\\(\\cos\\\\theta = \\\\frac{\\\\text{adjacent}}{\\\\text{hypotenuse}} = \\\\frac{12}{13}\\\\), we can draw a right-angled triangle in the 1st quadrant with an adjacent side of 12 and a hypotenuse of 13.",
+              "work": "\\\\(\\text{adj} = 12, \\\\text{hyp} = 13\\\\)",
+              "figure": {
+                "jsxGraph": {
+                  "attributes": {
+                    "boundingbox": [
+                      -2,
+                      7,
+                      15,
+                      -2
+                    ],
+                    "axis": true,
+                    "showNavigation": false
+                  },
+                  "script": "var O = board.create('point', [0, 0], {name: 'O', fixed: true, size: 0});\nvar A = board.create('point', [12, 0], {name: '', fixed: true, size: 0});\nvar B = board.create('point', [12, 5], {name: '', fixed: true, size: 0});\n\nboard.create('polygon', [O, A, B], {fillColor: '#3b82f6', fillOpacity: 0.1, borders: {strokeWidth: 2}});\n\nboard.create('text', [6, -0.8, '12'], {fontSize: 16, strokeColor: '#1e293b'});\nboard.create('text', [12.5, 2.5, 'y'], {fontSize: 16, strokeColor: '#1e293b'});\nboard.create('text', [5, 3.5, '13'], {fontSize: 16, strokeColor: '#1e293b'});\n\nboard.create('angle', [A, O, B], {name: '&theta;', radius: 2, fontSize: 18});\n\n// Right angle marker\nboard.create('segment', [[11,0], [11,1]], {strokeWidth: 1, strokeColor: 'black'});\nboard.create('segment', [[11,1], [12,1]], {strokeWidth: 1, strokeColor: 'black'});"
+                }
+              }
+            },
+            {
+              "explain": "Use Pythagoras' theorem to find the length of the opposite side (y).",
+              "work": "\\\\(y = \\\\sqrt{13^2 - 12^2} = \\\\sqrt{169 - 144} = \\\\sqrt{25} = 5\\\\)"
+            },
+            {
+              "explain": "Now, we can find \\\\(\\sin\\\\theta\\\\) using the ratio \\\\(\\frac{\\\\text{opposite}}{\\\\text{hypotenuse}}\\\\). We know the result must be positive because it is in the 1st quadrant.",
+              "work": "\\\\(\\sin\\\\theta = \\\\dfrac{5}{13}\\\\)"
             }
           ]
         }
@@ -18399,28 +18422,43 @@
           "stem": "Solve \\(3\\sin^2x-\\cos^2x=1\\) for \\(-\\pi\\le x\\le\\pi\\). Give all solutions in exact form.",
           "options": [
             "\\(x=\\dfrac{\\pi}{4},\\ -\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4},\\ -\\dfrac{3\\pi}{4}\\)",
-            "\\(x=\\dfrac{\\pi}{4},\\ -\\dfrac{\\pi}{4}\\)\\text{ only}",
+            "\\(x=\\dfrac{\\pi}{4},\\ -\\dfrac{\\pi}{4}\\text{ only}\\)",
             "\\(x=\\dfrac{\\pi}{3},\\ -\\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3},\\ -\\dfrac{2\\pi}{3}\\)",
-            "\\(x=\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4}\\)\\text{ only}"
+            "\\(x=\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4}\\text{ only}\\)"
           ],
           "answer": 0,
           "hint": "Replace \\(\\cos^2x\\) with \\(1-\\sin^2x\\) so the whole equation is in terms of \\(\\sin x\\).",
           "steps": [
             {
-              "explain": "Use the Pythagorean identity to write \\(\\cos^2x=1-\\sin^2x\\).",
-              "work": "\\(3\\sin^2x-(1-\\sin^2x)=1\\)"
+              "explain": "Use the Pythagorean identity to write \\\\(\\\\cos^2x=1-\\\\sin^2x\\\\).",
+              "work": "\\\\(3\\\\sin^2x-(1-\\\\sin^2x)=1\\\\)"
             },
             {
               "explain": "Expand and collect like terms.",
-              "work": "\\(4\\sin^2x-1=1 \\Rightarrow 4\\sin^2x=2 \\Rightarrow \\sin^2x=\\dfrac12\\)"
+              "work": "\\\\(4\\\\sin^2x-1=1 \\\\Rightarrow 4\\\\sin^2x=2 \\\\Rightarrow \\\\sin^2x=\\\\dfrac12\\\\)"
             },
             {
-              "explain": "Take the square root of both sides.",
-              "work": "\\(\\sin x=\\pm\\dfrac{1}{\\sqrt2}\\)"
+              "explain": "Take the square root of both sides. Notice that we get both positive and negative values, meaning our solutions will be in all four quadrants (사분면).",
+              "work": "\\\\(\\\\sin x=\\\\pm\\\\dfrac{1}{\\\\sqrt2}\\\\)"
             },
             {
-              "explain": "The reference angle is \\(45°=\\dfrac{\\pi}{4}\\). Find every solution with this reference angle in \\([-\\pi,\\pi]\\).",
-              "work": "\\(x=\\dfrac{\\pi}{4},\\ \\dfrac{3\\pi}{4},\\ -\\dfrac{\\pi}{4},\\ -\\dfrac{3\\pi}{4}\\)"
+              "explain": "The reference angle (기준각) is \\\\(45^\\\\circ=\\\\dfrac{\\\\pi}{4}\\\\). Since \\\\(\\\\sin x\\\\) can be both positive and negative, we need the angles in all four quadrants within the given domain \\\\([-\\\\pi,\\\\pi]\\\\).",
+              "work": "\\\\(x=\\\\dfrac{\\\\pi}{4},\\\\ \\\\dfrac{3\\\\pi}{4},\\\\ -\\\\dfrac{\\\\pi}{4},\\\\ -\\\\dfrac{3\\\\pi}{4}\\\\)",
+              "figure": {
+                "jsxGraph": {
+                  "attributes": {
+                    "boundingbox": [
+                      -1.5,
+                      1.5,
+                      1.5,
+                      -1.5
+                    ],
+                    "axis": true,
+                    "showNavigation": false
+                  },
+                  "script": "var O = board.create('point', [0, 0], {name: 'O', fixed: true, size: 0});\nvar circle = board.create('circle', [O, 1], {strokeWidth: 2, strokeColor: '#94a3b8'});\n\nvar p1 = board.create('point', [Math.cos(Math.PI/4), Math.sin(Math.PI/4)], {name: '&pi;/4', size: 3, fillColor: '#ef4444', label: {offset: [10, 10]}});\nvar p2 = board.create('point', [Math.cos(3*Math.PI/4), Math.sin(3*Math.PI/4)], {name: '3&pi;/4', size: 3, fillColor: '#ef4444', label: {offset: [-30, 10]}});\nvar p3 = board.create('point', [Math.cos(-3*Math.PI/4), Math.sin(-3*Math.PI/4)], {name: '-3&pi;/4', size: 3, fillColor: '#ef4444', label: {offset: [-40, -15]}});\nvar p4 = board.create('point', [Math.cos(-Math.PI/4), Math.sin(-Math.PI/4)], {name: '-&pi;/4', size: 3, fillColor: '#ef4444', label: {offset: [10, -15]}});\n\nboard.create('segment', [O, p1], {strokeColor: '#3b82f6', strokeWidth: 2});\nboard.create('segment', [O, p2], {strokeColor: '#3b82f6', strokeWidth: 2});\nboard.create('segment', [O, p3], {strokeColor: '#3b82f6', strokeWidth: 2});\nboard.create('segment', [O, p4], {strokeColor: '#3b82f6', strokeWidth: 2});\n\nvar pX = board.create('point', [1, 0], {visible: false});\nvar pNegX = board.create('point', [-1, 0], {visible: false});\n\nboard.create('angle', [pX, O, p1], {name: '&pi;/4', radius: 0.3, fillColor: '#3b82f6'});\nboard.create('angle', [p2, O, pNegX], {name: '&pi;/4', radius: 0.3, fillColor: '#3b82f6'});\nboard.create('angle', [pNegX, O, p3], {name: '&pi;/4', radius: 0.3, fillColor: '#3b82f6'});\nboard.create('angle', [p4, O, pX], {name: '&pi;/4', radius: 0.3, fillColor: '#3b82f6'});"
+                }
+              }
             }
           ]
         }
@@ -22782,34 +22820,6 @@
             }
           ],
           "timeLimit": 90
-        },
-        {
-          "id": "killara2026-q22b",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "In triangle ABC (bearing question above), \\(\\angle BAC=130°-65°=65°\\) and \\(\\angle ABC=180°-160°-\\ldots=85°\\), giving \\(\\angle ACB=30°\\). Show that length \\(BC=32.6\\ \\text{km}\\), correct to the nearest hundred metres, using the sine rule with \\(AB=18\\ \\text{km}\\).",
-          "options": [
-            "\\(32.6\\ \\text{km}\\)",
-            "\\(9.6\\ \\text{km}\\)",
-            "\\(16.9\\ \\text{km}\\)",
-            "\\(20.2\\ \\text{km}\\)"
-          ],
-          "answer": 0,
-          "hint": "Use the sine rule: \\(\\dfrac{BC}{\\sin A}=\\dfrac{AB}{\\sin C}\\).",
-          "steps": [
-            {
-              "explain": "Apply the sine rule, with \\(BC\\) opposite the 65° angle and \\(AB=18\\) opposite the 30° angle.",
-              "work": "\\(\\dfrac{BC}{\\sin65°}=\\dfrac{18}{\\sin30°}\\)"
-            },
-            {
-              "explain": "Solve for BC.",
-              "work": "\\(BC=\\dfrac{18\\sin65°}{\\sin30°}\\approx32.627\\ \\text{km}\\)"
-            },
-            {
-              "explain": "Round to the nearest hundred metres.",
-              "work": "\\(32.6\\ \\text{km}\\)"
-            }
-          ]
         }
       ]
     },
@@ -24830,34 +24840,6 @@
             }
           ],
           "manual": true
-        },
-        {
-          "id": "killara2026-q22c",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Using \\(BC\\approx32.627\\ \\text{km}\\), \\(AB=18\\ \\text{km}\\) and the angle between them \\(\\angle ABC=85°\\), use the cosine rule to find the distance between Alpha and Charlie.",
-          "options": [
-            "\\(35.9\\ \\text{km}\\)",
-            "\\(32.6\\ \\text{km}\\)",
-            "\\(38.4\\ \\text{km}\\)",
-            "\\(28.7\\ \\text{km}\\)"
-          ],
-          "answer": 0,
-          "hint": "Use the cosine rule: \\(AC^2=BC^2+AB^2-2\\times BC\\times AB\\times\\cos(\\angle ABC)\\).",
-          "steps": [
-            {
-              "explain": "Apply the cosine rule with the two known sides and the included angle.",
-              "work": "\\(AC^2=32.627^2+18^2-2(32.627)(18)\\cos85°\\)"
-            },
-            {
-              "explain": "Evaluate the right-hand side.",
-              "work": "\\(AC^2\\approx1286.16\\)"
-            },
-            {
-              "explain": "Take the square root.",
-              "work": "\\(AC\\approx35.9\\ \\text{km}\\)"
-            }
-          ]
         }
       ]
     },
@@ -26359,29 +26341,139 @@
           "solution": "The angle \\(\\angle ABC = 180^{\\circ} - (290^{\\circ} - 180^{\\circ} - 60^{\\circ}) = 50^{\\circ}\\). By the cosine rule: \\(AC^2 = 60^2 + 140^2 - 2(60)(140) \\cos 50^{\\circ} = 3600 + 19600 - 16800(0.6428) = 23200 - 10799 = 12401 \\implies AC = \\sqrt{12401} \\approx 111.36\\text{ km} \\approx 111\\text{ km}\\)."
         },
         {
-          "id": "killara2026-q22a",
-          "type": "mc",
+          "id": "killara2026-q22",
+          "type": "multipart",
           "difficulty": "hard",
-          "stem": "Three boats, Alpha, Bravo and Charlie, are sailing in a harbour. Bravo is 18 km from Alpha on a bearing of 065°. Charlie is on a bearing of 130° from Alpha and a bearing of 160° from Bravo. Determine the bearing of Alpha from Bravo.",
+          "stem": "Three boats, Alpha (A), Bravo (B) and Charlie (C), are sailing in a harbour. Bravo is 18 km from Alpha on a bearing of 065°. Charlie is on a bearing of 130° from Alpha and a bearing of 160° from Bravo.",
           "figure": {
             "svg": "fig:02f9c0880d"
           },
-          "options": [
-            "\\(245°\\)",
-            "\\(065°\\)",
-            "\\(115°\\)",
-            "\\(295°\\)"
-          ],
-          "answer": 0,
-          "hint": "The bearing of Alpha from Bravo is the reverse (back) bearing of \"Bravo from Alpha\" — add 180° (since it's less than 180°).",
-          "steps": [
+          "parts": [
             {
-              "explain": "The bearing of Bravo from Alpha is 065°.",
-              "work": "\\(\\text{Bearing of B from A}=065°\\)"
+              "id": "killara2026-q22a",
+              "type": "mc",
+              "stem": "Determine the bearing of Alpha from Bravo.",
+              "options": [
+                "\\(245°\\)",
+                "\\(065°\\)",
+                "\\(115°\\)",
+                "\\(295°\\)"
+              ],
+              "answer": 0,
+              "hint": "The bearing of Alpha from Bravo is the reverse (back) bearing of \"Bravo from Alpha\" — add 180° (since it's less than 180°).",
+              "steps": [
+                {
+                  "explain": "The bearing of Bravo from Alpha is 065°. Draw North lines at both A and B to visualize this.",
+                  "work": "\\\\(\\text{Bearing of B from A}=065^\\\\circ\\\\)",
+                  "figure": {
+                    "jsxGraph": {
+                      "attributes": {
+                        "boundingbox": [
+                          -5,
+                          25,
+                          25,
+                          -5
+                        ],
+                        "axis": false,
+                        "showNavigation": false
+                      },
+                      "script": "\n  var A = board.create('point', [0, 0], {name: 'A', fixed: true, size: 2});\n  var B = board.create('point', [18 * Math.cos(25*Math.PI/180), 18 * Math.sin(25*Math.PI/180)], {name: 'B', fixed: true, size: 2});\n  // AC length approx 35.9, angle 130 deg bearing -> -40 deg standard math angle\n  var C = board.create('point', [35.9 * Math.cos(-40*Math.PI/180), 35.9 * Math.sin(-40*Math.PI/180)], {name: 'C', fixed: true, size: 2});\n  board.create('polygon', [A, B, C], {fillColor: '#f8fafc', borders: {strokeWidth: 2, strokeColor: '#94a3b8'}});\n\n          var NA = board.create('segment', [A, [0, 20]], {strokeColor: 'gray', dash: 2});\n          var NB = board.create('segment', [B, [B.X(), B.Y()+10]], {strokeColor: 'gray', dash: 2});\n          var SB = board.create('segment', [B, [B.X(), B.Y()-10]], {strokeColor: 'gray', dash: 2});\n          board.create('text', [0, 21, 'N']);\n          board.create('text', [B.X(), B.Y()+11, 'N']);\n          \n          board.create('angle', [[0,10], A, B], {name: '65&deg;', radius: 3, fillColor: '#3b82f6'});\n          board.create('angle', [B, [B.X(), B.Y()-10], A], {name: '65&deg;', radius: 3, fillColor: '#10b981'});\n          board.create('text', [15, 10, 'Alternate angles']);\n        "
+                    }
+                  }
+                },
+                {
+                  "explain": "The reverse bearing (Alpha from Bravo) is measured clockwise from North at Bravo. We can add 180° to the forward bearing since it's less than 180°.",
+                  "work": "\\\\(065^\\\\circ + 180^\\\\circ = 245^\\\\circ\\\\)"
+                }
+              ]
             },
             {
-              "explain": "The reverse bearing (Alpha from Bravo) is found by adding 180° (since \\(065°<180°\\)).",
-              "work": "\\(065°+180°=245°\\)"
+              "id": "killara2026-q22b",
+              "type": "mc",
+              "stem": "In triangle ABC, show that length \\\\(BC=32.6\\\\ \\\\text{km}\\\\), correct to the nearest hundred metres, using the sine rule.",
+              "options": [
+                "\\(32.6\\ \\text{km}\\)",
+                "\\(9.6\\ \\text{km}\\)",
+                "\\(16.9\\ \\text{km}\\)",
+                "\\(20.2\\ \\text{km}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the sine rule: \\(\\dfrac{BC}{\\sin A}=\\dfrac{AB}{\\sin C}\\).",
+              "steps": [
+                {
+                  "explain": "First, find the interior angles of the triangle. \\\\(\\\\angle BAC = 130^\\\\circ - 65^\\\\circ = 65^\\\\circ\\\\). The bearing of C from B is 160°, and A from B is 245°, so \\\\(\\\\angle ABC = 245^\\\\circ - 160^\\\\circ = 85^\\\\circ\\\\). Thus, \\\\(\\\\angle ACB = 180^\\\\circ - (65^\\\\circ + 85^\\\\circ) = 30^\\\\circ\\\\).",
+                  "work": "\\\\(\\\\angle A = 65^\\\\circ, \\\\angle B = 85^\\\\circ, \\\\angle C = 30^\\\\circ\\\\)"
+                },
+                {
+                  "explain": "Set up the sine rule using the known side \\\\(AB = 18\\\\) and its opposite angle \\\\(C = 30^\\\\circ\\\\), and the unknown side \\\\(BC\\\\) and its opposite angle \\\\(A = 65^\\\\circ\\\\).",
+                  "work": "\\\\(\\\\dfrac{BC}{\\\\sin 65^\\\\circ} = \\\\dfrac{18}{\\\\sin 30^\\\\circ}\\\\)",
+                  "figure": {
+                    "jsxGraph": {
+                      "attributes": {
+                        "boundingbox": [
+                          -5,
+                          20,
+                          35,
+                          -30
+                        ],
+                        "axis": false,
+                        "showNavigation": false
+                      },
+                      "script": "\n  var A = board.create('point', [0, 0], {name: 'A', fixed: true, size: 2});\n  var B = board.create('point', [18 * Math.cos(25*Math.PI/180), 18 * Math.sin(25*Math.PI/180)], {name: 'B', fixed: true, size: 2});\n  // AC length approx 35.9, angle 130 deg bearing -> -40 deg standard math angle\n  var C = board.create('point', [35.9 * Math.cos(-40*Math.PI/180), 35.9 * Math.sin(-40*Math.PI/180)], {name: 'C', fixed: true, size: 2});\n  board.create('polygon', [A, B, C], {fillColor: '#f8fafc', borders: {strokeWidth: 2, strokeColor: '#94a3b8'}});\n\n          // Highlight Sine rule pairs\n          board.create('segment', [A, B], {strokeWidth: 4, strokeColor: '#ef4444'});\n          board.create('angle', [B, C, A], {name: '30&deg;', radius: 4, fillColor: '#ef4444'});\n          board.create('text', [8, 12, '18 km'], {strokeColor: '#ef4444', fontSize: 16});\n          \n          board.create('segment', [B, C], {strokeWidth: 4, strokeColor: '#3b82f6'});\n          board.create('angle', [C, A, B], {name: '65&deg;', radius: 4, fillColor: '#3b82f6'});\n          board.create('text', [25, -5, 'BC'], {strokeColor: '#3b82f6', fontSize: 16});\n        "
+                    }
+                  }
+                },
+                {
+                  "explain": "Solve for BC.",
+                  "work": "\\\\(BC = \\\\dfrac{18 \\\\sin 65^\\\\circ}{\\\\sin 30^\\\\circ} = \\\\dfrac{18 \\\\times 0.9063}{0.5} \\\\approx 32.627 \\\\approx 32.6 \\\\text{ km}\\\\)"
+                }
+              ]
+            },
+            {
+              "id": "killara2026-q22c",
+              "type": "mc",
+              "stem": "Using \\\\(BC\\\\approx32.627\\\\ \\\\text{km}\\\\), \\\\(AB=18\\\\ \\\\text{km}\\\\) and the included angle \\\\(\\\\angle ABC=85^\\\\circ\\\\), use the cosine rule to find the distance between Alpha and Charlie.",
+              "options": [
+                "\\(35.9\\ \\text{km}\\)",
+                "\\(32.6\\ \\text{km}\\)",
+                "\\(38.4\\ \\text{km}\\)",
+                "\\(28.7\\ \\text{km}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the cosine rule: \\(AC^2=BC^2+AB^2-2\\times BC\\times AB\\times\\cos(\\angle ABC)\\).",
+              "steps": [
+                {
+                  "explain": "Identify the two known sides (AB and BC) and the included angle (\\(\\angle ABC\\)) to find the opposite side (AC) using the cosine rule.",
+                  "work": "\\\\(b^2 = a^2 + c^2 - 2ac \\\\cos B\\\\)",
+                  "figure": {
+                    "jsxGraph": {
+                      "attributes": {
+                        "boundingbox": [
+                          -5,
+                          20,
+                          35,
+                          -30
+                        ],
+                        "axis": false,
+                        "showNavigation": false
+                      },
+                      "script": "\n  var A = board.create('point', [0, 0], {name: 'A', fixed: true, size: 2});\n  var B = board.create('point', [18 * Math.cos(25*Math.PI/180), 18 * Math.sin(25*Math.PI/180)], {name: 'B', fixed: true, size: 2});\n  // AC length approx 35.9, angle 130 deg bearing -> -40 deg standard math angle\n  var C = board.create('point', [35.9 * Math.cos(-40*Math.PI/180), 35.9 * Math.sin(-40*Math.PI/180)], {name: 'C', fixed: true, size: 2});\n  board.create('polygon', [A, B, C], {fillColor: '#f8fafc', borders: {strokeWidth: 2, strokeColor: '#94a3b8'}});\n\n          // Highlight Cosine rule components\n          board.create('segment', [A, B], {strokeWidth: 4, strokeColor: '#10b981'});\n          board.create('segment', [B, C], {strokeWidth: 4, strokeColor: '#10b981'});\n          board.create('angle', [A, B, C], {name: '85&deg;', radius: 4, fillColor: '#10b981'});\n          board.create('text', [8, 12, '18 km'], {strokeColor: '#10b981', fontSize: 16});\n          board.create('text', [25, -5, '32.627 km'], {strokeColor: '#10b981', fontSize: 16});\n          \n          board.create('segment', [A, C], {strokeWidth: 4, strokeColor: '#ef4444', dash: 2});\n          board.create('text', [15, -15, 'AC = ?'], {strokeColor: '#ef4444', fontSize: 16});\n        "
+                    }
+                  }
+                },
+                {
+                  "explain": "Substitute the values into the formula.",
+                  "work": "\\\\(AC^2 = 18^2 + 32.627^2 - 2(18)(32.627)\\\\cos 85^\\\\circ\\\\)"
+                },
+                {
+                  "explain": "Calculate the result.",
+                  "work": "\\\\(AC^2 = 324 + 1064.52 - 1174.572 \\\\times 0.0872 \\\\approx 1286.15\\\\)"
+                },
+                {
+                  "explain": "Take the square root to find the distance AC.",
+                  "work": "\\\\(AC = \\\\sqrt{1286.15} \\\\approx 35.86 \\\\approx 35.9 \\\\text{ km}\\\\)"
+                }
+              ]
             }
           ]
         }

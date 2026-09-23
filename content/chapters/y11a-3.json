@@ -6108,10 +6108,10 @@
           "difficulty": "medium",
           "stem": "Solve the equation \\( 3x - y + 4 = 0 \\) for \\( y \\) and hence explain why it represents a function.",
           "options": [
-            "\\( y = 3x + 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
-            "\\( y = 3x + 4 \\). It represents a relation but not a function because it is a straight line.",
-            "\\( y = 3x - 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
-            "\\( y = -3x + 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\)."
+            "&#8203;\\( y = 3x + 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
+            "&#8203;\\( y = 3x + 4 \\). It represents a relation but not a function because it is a straight line.",
+            "&#8203;\\( y = 3x - 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
+            "&#8203;\\( y = -3x + 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\)."
           ],
           "answer": 0,
           "solution": "0",
@@ -6139,10 +6139,10 @@
           "difficulty": "medium",
           "stem": "Solve the equation \\( xy = 6 \\) for \\( y \\) and explain why it represents a function.",
           "options": [
-            "\\( y = \\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
-            "\\( y = \\frac{6}{x} \\). It represents a relation but not a function because \\( x = 0 \\) gives undefined values.",
-            "\\( y = -\\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
-            "\\( y = \\frac{x}{6} \\). It represents a function because for every input \\( x \\), there is exactly one value of \\( y \\)."
+            "&#8203;\\( y = \\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
+            "&#8203;\\( y = \\frac{6}{x} \\). It represents a relation but not a function because \\( x = 0 \\) gives undefined values.",
+            "&#8203;\\( y = -\\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
+            "&#8203;\\( y = \\frac{x}{6} \\). It represents a function because for every input \\( x \\), there is exactly one value of \\( y \\)."
           ],
           "answer": 0,
           "solution": "0",
@@ -6170,10 +6170,10 @@
           "difficulty": "medium",
           "stem": "Solve the equation \\( xy - 3y = 4 \\) for \\( y \\) and explain why it represents a function.",
           "options": [
-            "\\( y = \\frac{4}{x+3} \\). It represents a function because for any input \\( x \\) (except \\( x = -3 \\)), there is exactly one value of \\( y \\).",
-            "\\( y = \\frac{x-3}{4} \\). It represents a function because for any input \\( x \\), there is exactly one value of \\( y \\).",
-            "\\( y = \\frac{4}{x-3} \\). It represents a function because for any input \\( x \\) (except \\( x = 3 \\)), there is exactly one value of \\( y \\).",
-            "\\( y = \\frac{4}{x-3} \\). It represents a relation but not a function because \\( x = 3 \\) is undefined."
+            "&#8203;\\( y = \\frac{4}{x+3} \\). It represents a function because for any input \\( x \\) (except \\( x = -3 \\)), there is exactly one value of \\( y \\).",
+            "&#8203;\\( y = \\frac{x-3}{4} \\). It represents a function because for any input \\( x \\), there is exactly one value of \\( y \\).",
+            "&#8203;\\( y = \\frac{4}{x-3} \\). It represents a function because for any input \\( x \\) (except \\( x = 3 \\)), there is exactly one value of \\( y \\).",
+            "&#8203;\\( y = \\frac{4}{x-3} \\). It represents a relation but not a function because \\( x = 3 \\) is undefined."
           ],
           "answer": 2,
           "solution": "2",
@@ -6202,10 +6202,10 @@
           "difficulty": "hard",
           "stem": "Solve the equation \\( y + 3 = \\sqrt{16 - x^2} \\) for \\( y \\) and explain why it represents a function.",
           "options": [
-            "\\( y = \\sqrt{16+x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\).",
-            "\\( y = \\pm\\sqrt{16-x^2} - 3 \\). It represents a relation but not a function because each \\( x \\)-value gives two \\( y \\)-values.",
-            "\\( y = \\sqrt{16-x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\) for each input \\( x \\) in the domain \\( [-4, 4] \\).",
-            "\\( y = \\sqrt{16-x^2} + 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\)."
+            "&#8203;\\( y = \\sqrt{16+x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\).",
+            "&#8203;\\( y = \\pm\\sqrt{16-x^2} - 3 \\). It represents a relation but not a function because each \\( x \\)-value gives two \\( y \\)-values.",
+            "&#8203;\\( y = \\sqrt{16-x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\) for each input \\( x \\) in the domain \\( [-4, 4] \\).",
+            "&#8203;\\( y = \\sqrt{16-x^2} + 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\)."
           ],
           "answer": 2,
           "solution": "2",
@@ -12329,10 +12329,10 @@
           "difficulty": "hard",
           "stem": "Find the \\( x \\)-intercepts and the \\( y \\)-intercept of the non-monic quadratic function \\( y = 2x^2 + 9x + 4 \\).",
           "options": [
-            "\\( x \\)-intercepts: \\( x = -4, -\\dfrac{1}{2} \\); \\( y \\)-intercept: \\( (0, 4) \\)",
-            "\\( x \\)-intercepts: \\( x = -4, -\\dfrac{1}{2} \\); \\( y \\)-intercept: \\( (0, -4) \\)",
-            "\\( x \\)-intercepts: \\( x = 4, \\dfrac{1}{2} \\); \\( y \\)-intercept: \\( (0, 4) \\)",
-            "\\( x \\)-intercepts: \\( x = -2, -4 \\); \\( y \\)-intercept: \\( (0, 4) \\)"
+            "&#8203;\\( x \\)-intercepts: \\( x = -4, -\\dfrac{1}{2} \\); \\( y \\)-intercept: \\( (0, 4) \\)",
+            "&#8203;\\( x \\)-intercepts: \\( x = -4, -\\dfrac{1}{2} \\); \\( y \\)-intercept: \\( (0, -4) \\)",
+            "&#8203;\\( x \\)-intercepts: \\( x = 4, \\dfrac{1}{2} \\); \\( y \\)-intercept: \\( (0, 4) \\)",
+            "&#8203;\\( x \\)-intercepts: \\( x = -2, -4 \\); \\( y \\)-intercept: \\( (0, 4) \\)"
           ],
           "answer": 0,
           "hint": "Factor by grouping to solve \\( 2x^2 + 9x + 4 = 0 \\).",
@@ -12358,10 +12358,10 @@
           "difficulty": "hard",
           "stem": "Find the \\( x \\)-intercepts and the \\( y \\)-intercept of the non-monic quadratic function \\( y = 2x^2 + 3x - 5 \\).",
           "options": [
-            "\\( x \\)-intercepts: \\( x = 1, -\\dfrac{5}{2} \\); \\( y \\)-intercept: \\( (0, -5) \\)",
-            "\\( x \\)-intercepts: \\( x = 1, 5 \\); \\( y \\)-intercept: \\( (0, -5) \\)",
-            "\\( x \\)-intercepts: \\( x = 1, -\\dfrac{5}{2} \\); \\( y \\)-intercept: \\( (0, 5) \\)",
-            "\\( x \\)-intercepts: \\( x = -1, \\dfrac{5}{2} \\); \\( y \\)-intercept: \\( (0, -5) \\)"
+            "&#8203;\\( x \\)-intercepts: \\( x = 1, -\\dfrac{5}{2} \\); \\( y \\)-intercept: \\( (0, -5) \\)",
+            "&#8203;\\( x \\)-intercepts: \\( x = 1, 5 \\); \\( y \\)-intercept: \\( (0, -5) \\)",
+            "&#8203;\\( x \\)-intercepts: \\( x = 1, -\\dfrac{5}{2} \\); \\( y \\)-intercept: \\( (0, 5) \\)",
+            "&#8203;\\( x \\)-intercepts: \\( x = -1, \\dfrac{5}{2} \\); \\( y \\)-intercept: \\( (0, -5) \\)"
           ],
           "answer": 0,
           "hint": "Factor by grouping: look for numbers that multiply to -10 and add to 3.",
@@ -12387,10 +12387,10 @@
           "difficulty": "hard",
           "stem": "Find the \\( x \\)-intercepts and the \\( y \\)-intercept of the non-monic quadratic function \\( y = 3x^2 + 4x - 4 \\).",
           "options": [
-            "\\( x \\)-intercepts: \\( x = \\dfrac{2}{3}, -2 \\); \\( y \\)-intercept: \\( (0, -4) \\)",
-            "\\( x \\)-intercepts: \\( x = -\\dfrac{2}{3}, 2 \\); \\( y \\)-intercept: \\( (0, -4) \\)",
-            "\\( x \\)-intercepts: \\( x = 1, -4 \\); \\( y \\)-intercept: \\( (0, -4) \\)",
-            "\\( x \\)-intercepts: \\( x = \\dfrac{2}{3}, -2 \\); \\( y \\)-intercept: \\( (0, 4) \\)"
+            "&#8203;\\( x \\)-intercepts: \\( x = \\dfrac{2}{3}, -2 \\); \\( y \\)-intercept: \\( (0, -4) \\)",
+            "&#8203;\\( x \\)-intercepts: \\( x = -\\dfrac{2}{3}, 2 \\); \\( y \\)-intercept: \\( (0, -4) \\)",
+            "&#8203;\\( x \\)-intercepts: \\( x = 1, -4 \\); \\( y \\)-intercept: \\( (0, -4) \\)",
+            "&#8203;\\( x \\)-intercepts: \\( x = \\dfrac{2}{3}, -2 \\); \\( y \\)-intercept: \\( (0, 4) \\)"
           ],
           "answer": 0,
           "hint": "Factor the expression: product is -12, sum is 4.",
@@ -15975,9 +15975,6 @@
           "type": "mc",
           "difficulty": "medium",
           "stem": "How many x-intercepts does \\(f(x)=x^5-5x^3+4x\\) have?",
-          "figure": {
-            "svg": "fig:cd8c75f9c8"
-          },
           "options": [
             "\\(5\\)",
             "\\(3\\)",
@@ -16001,7 +15998,20 @@
             },
             {
               "explain": "Each distinct linear factor gives one x-intercept: \\(x=0,2,-2,1,-1\\).",
-              "work": "\\(5\\text{ x-intercepts}\\)"
+              "work": "\\(5\\text{ x-intercepts}\\)",
+              "figure": {
+                "jsxGraph": {
+                  "width": 400,
+                  "height": 250,
+                  "boundingbox": [
+                    -3,
+                    10,
+                    3,
+                    -10
+                  ],
+                  "script": "board.suspendUpdate();\nboard.create('axis', [[0,0], [1,0]], {ticks: {visible: true}});\nboard.create('axis', [[0,0], [0,1]], {ticks: {visible: false}});\nboard.create('functiongraph', [function(x){ return Math.pow(x,5) - 5*Math.pow(x,3) + 4*x; }, -2.5, 2.5], {strokeColor: '#3b82f6', strokeWidth: 2});\nboard.create('point', [-2, 0], {name: '-2', size: 3, color: '#dc2626', label: {offset: [-5, -15]}});\nboard.create('point', [-1, 0], {name: '-1', size: 3, color: '#dc2626', label: {offset: [-5, -15]}});\nboard.create('point', [0, 0], {name: '0', size: 3, color: '#dc2626', label: {offset: [-15, -15]}});\nboard.create('point', [1, 0], {name: '1', size: 3, color: '#dc2626', label: {offset: [-5, -15]}});\nboard.create('point', [2, 0], {name: '2', size: 3, color: '#dc2626', label: {offset: [-5, -15]}});\nboard.unsuspendUpdate();"
+                }
+              }
             }
           ]
         }

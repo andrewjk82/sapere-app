@@ -1130,46 +1130,102 @@
           }
         },
         {
-          "id": "killara2026-q18a",
-          "type": "mc",
+          "id": "killara2026-q18",
+          "type": "multipart",
           "difficulty": "easy",
-          "stem": "A company has 60 employees. 25 have completed a first-aid course (F), 18 have completed a workplace safety course (S), and 7 have completed both. How many employees have completed only the first-aid course (F, but not S)?",
-          "options": [
-            "\\(18\\)",
-            "\\(25\\)",
-            "\\(11\\)",
-            "\\(7\\)"
-          ],
-          "answer": 0,
-          "hint": "Subtract the number who did both courses from the total number who did the first-aid course.",
-          "steps": [
+          "stem": "A company has 60 employees. 25 have completed a first-aid course (F), 18 have completed a workplace safety course (S), and 7 have completed both.",
+          "parts": [
             {
-              "explain": "Only-F is the total who did F, minus those who also did S.",
-              "work": "\\(25-7=18\\)"
+              "id": "killara2026-q18a",
+              "type": "mc",
+              "stem": "How many employees have completed only the first-aid course (F, but not S)?",
+              "options": [
+                "\\(18\\)",
+                "\\(25\\)",
+                "\\(11\\)",
+                "\\(7\\)"
+              ],
+              "answer": 0,
+              "hint": "Subtract the number who did both courses from the total number who did the first-aid course.",
+              "steps": [
+                {
+                  "explain": "Only-F is the total who did F, minus those who also did S.",
+                  "work": "\\(25-7=18\\)"
+                }
+              ]
+            },
+            {
+              "id": "killara2026-q18b",
+              "type": "mc",
+              "stem": "Find \\\\(P(F\\\\mid S)\\\\).",
+              "options": [
+                "\\(\\dfrac{7}{18}\\)",
+                "\\(\\dfrac{7}{25}\\)",
+                "\\(\\dfrac{18}{25}\\)",
+                "\\(\\dfrac{11}{18}\\)"
+              ],
+              "answer": 0,
+              "hint": "\\(P(F\\mid S)=\\dfrac{P(F\\cap S)}{P(S)}\\), which is the same as \\(\\dfrac{n(F\\cap S)}{n(S)}\\).",
+              "steps": [
+                {
+                  "explain": "Use the conditional probability formula with the counts directly.",
+                  "work": "\\(P(F\\mid S)=\\dfrac{n(F\\cap S)}{n(S)}=\\dfrac{7}{18}\\)"
+                }
+              ]
             }
           ]
         },
         {
-          "id": "killara2026-q19a",
-          "type": "mc",
+          "id": "killara2026-q19",
+          "type": "multipart",
           "difficulty": "medium",
-          "stem": "In a school, \\(P(S)=0.45\\) is the probability a student plays sport, and \\(P(M)=0.30\\) is the probability a student is in a music ensemble. \\(P(S\\cup M)=0.57\\). Find \\(P(S\\cap M)\\).",
-          "options": [
-            "\\(0.18\\)",
-            "\\(0.75\\)",
-            "\\(0.12\\)",
-            "\\(0.135\\)"
-          ],
-          "answer": 0,
-          "hint": "Use the addition rule \\(P(S\\cup M)=P(S)+P(M)-P(S\\cap M)\\), rearranged for \\(P(S\\cap M)\\).",
-          "steps": [
+          "stem": "In a school, \\\\(P(S)=0.45\\\\) is the probability a student plays sport, and \\\\(P(M)=0.30\\\\) is the probability a student is in a music ensemble.",
+          "parts": [
             {
-              "explain": "Rearrange the addition rule to make \\(P(S\\cap M)\\) the subject.",
-              "work": "\\(P(S\\cap M)=P(S)+P(M)-P(S\\cup M)\\)"
+              "id": "killara2026-q19a",
+              "type": "mc",
+              "stem": "Given that \\\\(P(S\\\\cup M)=0.57\\\\), find \\\\(P(S\\\\cap M)\\\\).",
+              "options": [
+                "\\(0.18\\)",
+                "\\(0.75\\)",
+                "\\(0.12\\)",
+                "\\(0.135\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the addition rule \\(P(S\\cup M)=P(S)+P(M)-P(S\\cap M)\\), rearranged for \\(P(S\\cap M)\\).",
+              "steps": [
+                {
+                  "explain": "Rearrange the addition rule to make \\(P(S\\cap M)\\) the subject.",
+                  "work": "\\(P(S\\cap M)=P(S)+P(M)-P(S\\cup M)\\)"
+                },
+                {
+                  "explain": "Substitute the given values.",
+                  "work": "\\(=0.45+0.30-0.57=0.18\\)"
+                }
+              ]
             },
             {
-              "explain": "Substitute the given values.",
-              "work": "\\(=0.45+0.30-0.57=0.18\\)"
+              "id": "killara2026-q19b",
+              "type": "mc",
+              "stem": "Using \\\\(P(S\\\\cap M)=0.18\\\\), are events S and M independent?",
+              "options": [
+                "No, since \\(P(S)\\times P(M)=0.135\\ne0.18=P(S\\cap M)\\)",
+                "Yes, since \\(P(S\\cap M)>0\\)",
+                "No, since \\(P(S\\cup M)\\ne1\\)",
+                "Yes, since \\(P(S)+P(M)=0.75\\)"
+              ],
+              "answer": 0,
+              "hint": "Two events are independent only if \\(P(S\\cap M)=P(S)\\times P(M)\\) exactly.",
+              "steps": [
+                {
+                  "explain": "Compute \\(P(S)\\times P(M)\\) and compare it with the actual \\(P(S\\cap M)\\).",
+                  "work": "\\(P(S)\\times P(M)=0.45\\times0.30=0.135\\)"
+                },
+                {
+                  "explain": "Since \\(0.135\\ne0.18\\), the independence condition fails.",
+                  "work": "\\(S\\text{ and }M\\text{ are not independent}\\)"
+                }
+              ]
             }
           ]
         }
@@ -1360,16 +1416,39 @@
           "hint": "It's easier to find \\(1-P(\\text{both fiction})\\).",
           "steps": [
             {
-              "explain": "Find the probability that both books chosen are fiction, without replacement.",
-              "work": "\\(P(FF)=\\dfrac{8}{12}\\times\\dfrac{7}{11}=\\dfrac{56}{132}\\)"
+              "explain": "We have 8 fiction (F) and 4 non-fiction (NF) books, making 12 books in total. We want the probability of selecting \"at least one non-fiction\" in two picks without replacement.",
+              "work": "\\\\(P(\\\\text{at least one NF})\\\\)"
             },
             {
-              "explain": "\"At least one non-fiction\" is the complement of \"both fiction\".",
-              "work": "\\(P(\\text{at least one NF})=1-\\dfrac{56}{132}=\\dfrac{76}{132}\\)"
+              "explain": "It is much easier to use the complement rule: \\\\( P(\\\\text{at least one NF}) = 1 - P(\\\\text{both fiction}) \\\\). Let's calculate the probability of picking two fiction books in a row (F, F).",
+              "work": "\\\\(P(\\\\text{F, F}) = P(\\\\text{1st is F}) \\\\times P(\\\\text{2nd is F | 1st was F})\\\\)"
             },
             {
-              "explain": "Simplify the fraction.",
-              "work": "\\(\\dfrac{76}{132}=\\dfrac{19}{33}\\)"
+              "explain": "For the first pick, there are 8 F out of 12. For the second pick, one F is gone, leaving 7 F out of 11 books.",
+              "work": "\\\\(P(\\\\text{F, F}) = \\\\frac{8}{12} \\\\times \\\\frac{7}{11} = \\\\frac{56}{132}\\\\)",
+              "figure": {
+                "jsxGraph": {
+                  "attributes": {
+                    "boundingbox": [
+                      -1,
+                      4,
+                      6,
+                      -4
+                    ],
+                    "axis": false,
+                    "showNavigation": false
+                  },
+                  "script": "var O = board.create('point', [0, 0], {name: 'Start', size: 2, fixed:true});\nvar F1 = board.create('point', [2, 2], {name: 'F (8/12)', size: 2, fixed:true});\nvar NF1 = board.create('point', [2, -2], {name: 'NF (4/12)', size: 2, fixed:true});\nvar F2 = board.create('point', [4, 3], {name: 'F (7/11)', size: 2, fixed:true});\nvar NF2 = board.create('point', [4, 1], {name: 'NF (4/11)', size: 2, fixed:true});\n\nboard.create('segment', [O, F1], {strokeColor: '#ef4444', strokeWidth: 3, name: '8/12'});\nboard.create('segment', [O, NF1], {strokeColor: '#94a3b8', strokeWidth: 2});\nboard.create('segment', [F1, F2], {strokeColor: '#ef4444', strokeWidth: 3, name: '7/11'});\nboard.create('segment', [F1, NF2], {strokeColor: '#94a3b8', strokeWidth: 2});\n\nboard.create('text', [0.5, 1.5, '8/12'], {strokeColor: '#ef4444', fontSize: 14});\nboard.create('text', [2.5, 2.8, '7/11'], {strokeColor: '#ef4444', fontSize: 14});\nboard.create('text', [1, -3, 'Highlighting the complement: (F, F)'], {fontSize: 16});"
+                }
+              }
+            },
+            {
+              "explain": "Subtract this from 1 to find the probability of the complement (at least one NF).",
+              "work": "\\\\(P(\\\\text{at least one NF}) = 1 - \\\\frac{56}{132} = \\\\frac{132 - 56}{132} = \\\\frac{76}{132}\\\\)"
+            },
+            {
+              "explain": "Simplify the fraction by dividing numerator and denominator by their greatest common divisor (4).",
+              "work": "\\\\(\\\\frac{76 \\\\div 4}{132 \\\\div 4} = \\\\frac{19}{33}\\\\)"
             }
           ]
         }
@@ -1801,50 +1880,6 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
-        },
-        {
-          "id": "killara2026-q18b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Using the same data (25 completed F, 18 completed S, 7 completed both, out of 60 employees), find \\(P(F\\mid S)\\).",
-          "options": [
-            "\\(\\dfrac{7}{18}\\)",
-            "\\(\\dfrac{7}{25}\\)",
-            "\\(\\dfrac{18}{25}\\)",
-            "\\(\\dfrac{11}{18}\\)"
-          ],
-          "answer": 0,
-          "hint": "\\(P(F\\mid S)=\\dfrac{P(F\\cap S)}{P(S)}\\), which is the same as \\(\\dfrac{n(F\\cap S)}{n(S)}\\).",
-          "steps": [
-            {
-              "explain": "Use the conditional probability formula with the counts directly.",
-              "work": "\\(P(F\\mid S)=\\dfrac{n(F\\cap S)}{n(S)}=\\dfrac{7}{18}\\)"
-            }
-          ]
-        },
-        {
-          "id": "killara2026-q19b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Using \\(P(S)=0.45\\), \\(P(M)=0.30\\) and \\(P(S\\cap M)=0.18\\), are events S and M independent?",
-          "options": [
-            "No, since \\(P(S)\\times P(M)=0.135\\ne0.18=P(S\\cap M)\\)",
-            "Yes, since \\(P(S\\cap M)>0\\)",
-            "No, since \\(P(S\\cup M)\\ne1\\)",
-            "Yes, since \\(P(S)+P(M)=0.75\\)"
-          ],
-          "answer": 0,
-          "hint": "Two events are independent only if \\(P(S\\cap M)=P(S)\\times P(M)\\) exactly.",
-          "steps": [
-            {
-              "explain": "Compute \\(P(S)\\times P(M)\\) and compare it with the actual \\(P(S\\cap M)\\).",
-              "work": "\\(P(S)\\times P(M)=0.45\\times0.30=0.135\\)"
-            },
-            {
-              "explain": "Since \\(0.135\\ne0.18\\), the independence condition fails.",
-              "work": "\\(S\\text{ and }M\\text{ are not independent}\\)"
-            }
-          ]
         }
       ]
     }

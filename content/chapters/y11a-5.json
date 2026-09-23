@@ -9439,10 +9439,10 @@
           "difficulty": "medium",
           "stem": "Using \\(k=4\\), so that \\(f(x)=x^5-5x^3+4x\\), which statement about \\(f(x)\\) is true?",
           "options": [
-            "\\(f(x)\\) is an odd function, since \\(f(-x)=-f(x)\\)",
-            "\\(f(x)\\) is an even function, since \\(f(-x)=f(x)\\)",
-            "\\(f(x)\\) is neither odd nor even",
-            "\\(f(x)\\) is both odd and even"
+            "The function \\(f(x)\\) is an odd function, since \\(f(-x)=-f(x)\\)",
+            "The function \\(f(x)\\) is an even function, since \\(f(-x)=f(x)\\)",
+            "The function \\(f(x)\\) is neither odd nor even",
+            "The function \\(f(x)\\) is both odd and even"
           ],
           "answer": 0,
           "hint": "Compute \\(f(-x)\\) and compare it with \\(f(x)\\) and \\(-f(x)\\).",
@@ -11097,7 +11097,7 @@
           "options": [
             "\\(f(-x) = (-x)^3 - 4x = f(x)\\)",
             "\\(f(-x) = (-x)^3 - 4(-x) = -x^3 + 4x = -f(x)\\)",
-            "\\(f(-x) = f(x)\\) because the powers cancel out",
+            "&#8203;\\(f(-x) = f(x)\\) because the powers cancel out",
             "\\(f(-x) = -x^3 - 4x = -f(x)\\)"
           ],
           "answer": 1,
@@ -11192,7 +11192,7 @@
           "options": [
             "\\(f(-x) = -9 + x^2 = -f(x)\\)",
             "\\(f(-x) = 9 - (-x) = 9 + x\\)",
-            "\\(f(-x) = 0\\) since it is symmetrical",
+            "&#8203;\\(f(-x) = 0\\) since it is symmetrical",
             "\\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\)"
           ],
           "answer": 3,
@@ -11599,10 +11599,10 @@
           "difficulty": "medium",
           "stem": "Consider the hyperbola \\(y = \\frac{2}{x}\\).\nWhich family of functions has the same property as \\(y = \\frac{2}{x}\\) — where a horizontal dilation by \\(k\\) produces the same result as a vertical dilation by \\(k\\)?",
           "options": [
-            "\\(y = \\frac{A}{x}\\) (hyperbolas with horizontal asymptotes through the origin)",
-            "\\(y = A \\sin(x)\\) (sinusoidal functions)",
-            "\\(y = Ax + B\\) (linear functions)",
-            "\\(y = Ax^2\\) (parabolas through the origin)"
+            "&#8203;\\(y = \\frac{A}{x}\\) (hyperbolas with horizontal asymptotes through the origin)",
+            "&#8203;\\(y = A \\sin(x)\\) (sinusoidal functions)",
+            "&#8203;\\(y = Ax + B\\) (linear functions)",
+            "&#8203;\\(y = Ax^2\\) (parabolas through the origin)"
           ],
           "answer": 0,
           "hint": "Think about which functions have \\(x\\) in the denominator to the power 1, so that scaling \\(x\\) by \\(k\\) is algebraically equivalent to scaling \\(y\\) by \\(k\\).",
@@ -11911,10 +11911,10 @@
           "difficulty": "medium",
           "stem": "The mass \\(M\\) grams of a certain radioactive substance after \\(t\\) years is modelled by \\(M = 5 \\times 2^{-\\frac{t}{20}}\\).\nUsing the new equation \\(M = 10 \\times 2^{-\\frac{t}{20}}\\), what is the half-life of the doubled substance?",
           "options": [
-            "\\(2.5\\) years — it quartered.",
-            "\\(40\\) years — it doubled.",
-            "\\(10\\) years — it halved.",
-            "\\(20\\) years — the same as before."
+            "&#8203;\\(2.5\\) years — it quartered.",
+            "&#8203;\\(40\\) years — it doubled.",
+            "&#8203;\\(10\\) years — it halved.",
+            "&#8203;\\(20\\) years — the same as before."
           ],
           "answer": 3,
           "hint": "Find \\(t\\) when \\(M = 5\\) (half of 10) in the new equation.",
@@ -12791,9 +12791,9 @@
           "difficulty": "easy",
           "stem": "Verify that \\(|x| = |-x|\\) for \\(x = 5\\). Which statement is correct?",
           "options": [
-            "\\(|5| = 5\\) and \\(|-5| = 5\\), so both sides equal 5.",
-            "\\(|5| = 5\\) and \\(|-5| = -5\\), so both sides equal 5.",
-            "\\(|5| = 5\\) but \\(|-5| = -5\\), so the sides differ.",
+            "&#8203;\\(|5| = 5\\) and \\(|-5| = 5\\), so both sides equal 5.",
+            "&#8203;\\(|5| = 5\\) and \\(|-5| = -5\\), so both sides equal 5.",
+            "&#8203;\\(|5| = 5\\) but \\(|-5| = -5\\), so the sides differ.",
             "The identity only holds when \\(x \\ge 0\\)."
           ],
           "answer": 0,
@@ -12828,9 +12828,9 @@
           "stem": "Verify that \\(|x - y| = |y - x|\\) for \\(x = 5,\\; y = -3\\). Which statement is correct?",
           "options": [
             "Both sides equal -8.",
-            "\\(|5 - (-3)| = 8\\) and \\(|-3 - (5)| = 8\\), so both sides equal 8.",
+            "&#8203;\\(|5 - (-3)| = 8\\) and \\(|-3 - (5)| = 8\\), so both sides equal 8.",
             "The two sides are always opposite in sign, so they cannot be equal.",
-            "\\(|5 - (-3)| = 8\\) without absolute value."
+            "&#8203;\\(|5 - (-3)| = 8\\) without absolute value."
           ],
           "answer": 1,
           "solution": "The correct answer is \\(|5 - (-3)| = 8\\) and \\(|-3 - (5)| = 8\\), so both sides equal 8..",
@@ -12863,10 +12863,10 @@
           "difficulty": "easy",
           "stem": "Verify that \\(|xy| = |x||y|\\) for \\(x = 5,\\; y = -3\\). Which statement is correct?",
           "options": [
-            "\\(|xy| = -15\\) (absolute value forgotten).",
+            "&#8203;\\(|xy| = -15\\) (absolute value forgotten).",
             "\\(|5\\times(-3)| = 15\\) and \\(|5|\\,|-3| = 5\\times3 = 15\\).",
             "The product rule for absolute values is false when both factors are negative.",
-            "\\(|x||y| = 15\\) (absolute value only on \\(y\\))."
+            "&#8203;\\(|x||y| = 15\\) (absolute value only on \\(y\\))."
           ],
           "answer": 1,
           "solution": "The correct answer is \\(|5\\times(-3)| = 15\\) and \\(|5|\\,|-3| = 5\\times3 = 15\\)..",
@@ -12900,9 +12900,9 @@
           "stem": "Verify that \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|}\\) for \\(x = 5,\\; y = -3\\). Which statement is correct?",
           "options": [
             "The quotient rule fails whenever \\(y < 0\\).",
-            "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{-3}\\) without taking absolute value.",
-            "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\).",
-            "\\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{-3}\\) (signs left on the fraction)."
+            "&#8203;\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{-3}\\) without taking absolute value.",
+            "&#8203;\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\).",
+            "&#8203;\\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{-3}\\) (signs left on the fraction)."
           ],
           "answer": 2,
           "solution": "The correct answer is \\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\)..",
@@ -12931,9 +12931,9 @@
           "difficulty": "easy",
           "stem": "Verify that \\(|x| = |-x|\\) for \\(x = -5\\). Which statement is correct?",
           "options": [
-            "\\(|-5| = 5\\) and \\(|--5| = 5\\), so both sides equal 5.",
-            "\\(|-5| = 5\\) but \\(|--5| = -5\\), so the sides differ.",
-            "\\(|-5| = -5\\) and \\(|--5| = 5\\), so both sides equal -5.",
+            "&#8203;\\(|-5| = 5\\) and \\(|--5| = 5\\), so both sides equal 5.",
+            "&#8203;\\(|-5| = 5\\) but \\(|--5| = -5\\), so the sides differ.",
+            "&#8203;\\(|-5| = -5\\) and \\(|--5| = 5\\), so both sides equal -5.",
             "The identity only holds when \\(x \\ge 0\\)."
           ],
           "answer": 0,
@@ -12968,8 +12968,8 @@
           "stem": "Verify that \\(|x - y| = |y - x|\\) for \\(x = -5,\\; y = 3\\). Which statement is correct?",
           "options": [
             "The two sides are always opposite in sign, so they cannot be equal.",
-            "\\(|-5 - (3)| = 8\\) and \\(|3 - (-5)| = 8\\), so both sides equal 8.",
-            "\\(|-5 - (3)| = -8\\) without absolute value.",
+            "&#8203;\\(|-5 - (3)| = 8\\) and \\(|3 - (-5)| = 8\\), so both sides equal 8.",
+            "&#8203;\\(|-5 - (3)| = -8\\) without absolute value.",
             "Both sides equal -8."
           ],
           "answer": 1,
@@ -13005,8 +13005,8 @@
           "options": [
             "\\(|-5\\times(3)| = 15\\) and \\(|-5|\\,|3| = 5\\times3 = 15\\).",
             "The product rule for absolute values is false when both factors are negative.",
-            "\\(|xy| = -15\\) (absolute value forgotten).",
-            "\\(|x||y| = -15\\) (absolute value only on \\(y\\))."
+            "&#8203;\\(|xy| = -15\\) (absolute value forgotten).",
+            "&#8203;\\(|x||y| = -15\\) (absolute value only on \\(y\\))."
           ],
           "answer": 0,
           "solution": "The correct answer is \\(|-5\\times(3)| = 15\\) and \\(|-5|\\,|3| = 5\\times3 = 15\\)..",
@@ -13039,10 +13039,10 @@
           "difficulty": "easy",
           "stem": "Verify that \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|}\\) for \\(x = -5,\\; y = 3\\). Which statement is correct?",
           "options": [
-            "\\(\\dfrac{|-5|}{|3|} = \\dfrac{-5}{3}\\) (signs left on the fraction).",
+            "&#8203;\\(\\dfrac{|-5|}{|3|} = \\dfrac{-5}{3}\\) (signs left on the fraction).",
             "The quotient rule fails whenever \\(y < 0\\).",
-            "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{-5}{3}\\) without taking absolute value.",
-            "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\)."
+            "&#8203;\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{-5}{3}\\) without taking absolute value.",
+            "&#8203;\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\)."
           ],
           "answer": 3,
           "solution": "The correct answer is \\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\)..",
@@ -13071,10 +13071,10 @@
           "difficulty": "easy",
           "stem": "Verify that \\(|x| = |-x|\\) for \\(x = -5\\). Which statement is correct?",
           "options": [
-            "\\(|-5| = -5\\) and \\(|--5| = 5\\), so both sides equal -5.",
-            "\\(|-5| = 5\\) and \\(|--5| = 5\\), so both sides equal 5.",
+            "&#8203;\\(|-5| = -5\\) and \\(|--5| = 5\\), so both sides equal -5.",
+            "&#8203;\\(|-5| = 5\\) and \\(|--5| = 5\\), so both sides equal 5.",
             "The identity only holds when \\(x \\ge 0\\).",
-            "\\(|-5| = 5\\) but \\(|--5| = -5\\), so the sides differ."
+            "&#8203;\\(|-5| = 5\\) but \\(|--5| = -5\\), so the sides differ."
           ],
           "answer": 1,
           "solution": "The correct answer is \\(|-5| = 5\\) and \\(|--5| = 5\\), so both sides equal 5..",
@@ -13107,9 +13107,9 @@
           "difficulty": "easy",
           "stem": "Verify that \\(|x - y| = |y - x|\\) for \\(x = -5,\\; y = -3\\). Which statement is correct?",
           "options": [
-            "\\(|-5 - (-3)| = -2\\) without absolute value.",
+            "&#8203;\\(|-5 - (-3)| = -2\\) without absolute value.",
             "The two sides are always opposite in sign, so they cannot be equal.",
-            "\\(|-5 - (-3)| = 2\\) and \\(|-3 - (-5)| = 2\\), so both sides equal 2.",
+            "&#8203;\\(|-5 - (-3)| = 2\\) and \\(|-3 - (-5)| = 2\\), so both sides equal 2.",
             "Both sides equal -2."
           ],
           "answer": 2,
@@ -13143,8 +13143,8 @@
           "difficulty": "easy",
           "stem": "Verify that \\(|xy| = |x||y|\\) for \\(x = -5,\\; y = -3\\). Which statement is correct?",
           "options": [
-            "\\(|xy| = 15\\) (absolute value forgotten).",
-            "\\(|x||y| = -15\\) (absolute value only on \\(y\\)).",
+            "&#8203;\\(|xy| = 15\\) (absolute value forgotten).",
+            "&#8203;\\(|x||y| = -15\\) (absolute value only on \\(y\\)).",
             "\\(|-5\\times(-3)| = 15\\) and \\(|-5|\\,|-3| = 5\\times3 = 15\\).",
             "The product rule for absolute values is false when both factors are negative."
           ],
@@ -13179,9 +13179,9 @@
           "difficulty": "easy",
           "stem": "Verify that \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|}\\) for \\(x = -5,\\; y = -3\\). Which statement is correct?",
           "options": [
-            "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|-3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\).",
-            "\\(\\dfrac{|-5|}{|-3|} = \\dfrac{-5}{-3}\\) (signs left on the fraction).",
-            "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{-5}{-3}\\) without taking absolute value.",
+            "&#8203;\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|-3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\).",
+            "&#8203;\\(\\dfrac{|-5|}{|-3|} = \\dfrac{-5}{-3}\\) (signs left on the fraction).",
+            "&#8203;\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{-5}{-3}\\) without taking absolute value.",
             "The quotient rule fails whenever \\(y < 0\\)."
           ],
           "answer": 0,
@@ -13954,10 +13954,10 @@
           "difficulty": "medium",
           "stem": "Show that \\(x \\le |x|\\) is true when \\(x = -4\\). Which evaluation is correct?",
           "options": [
-            "\\(-4 \\le |-4|\\) becomes \\(-4 \\le 4\\), which is true.",
-            "\\(-4 \\le 4\\) is false.",
-            "\\(-4 \\le |-4|\\) becomes \\(-4 \\le -4\\) only.",
-            "\\(|-4| = -4\\), so the inequality fails."
+            "&#8203;\\(-4 \\le |-4|\\) becomes \\(-4 \\le 4\\), which is true.",
+            "&#8203;\\(-4 \\le 4\\) is false.",
+            "&#8203;\\(-4 \\le |-4|\\) becomes \\(-4 \\le -4\\) only.",
+            "&#8203;\\(|-4| = -4\\), so the inequality fails."
           ],
           "answer": 0,
           "solution": "The correct answer is \\(-4 \\le |-4|\\) becomes \\(-4 \\le 4\\), which is true..",
@@ -13991,8 +13991,8 @@
           "stem": "Show that \\(-|x| \\le x\\) is true when \\(x = -4\\). Which evaluation is correct?",
           "options": [
             "The inequality never holds for negative \\(x\\).",
-            "\\(-4 \\le -4\\) is false.",
-            "\\(-|-4| \\le -4\\) becomes \\(-4 \\le -4\\), which is true.",
+            "&#8203;\\(-4 \\le -4\\) is false.",
+            "&#8203;\\(-|-4| \\le -4\\) becomes \\(-4 \\le -4\\), which is true.",
             "LHS is \\(4\\), so \\(4 \\le -4\\)."
           ],
           "answer": 2,
@@ -14172,7 +14172,7 @@
           "options": [
             "Both sides equal 4.",
             "LHS \\(= 4\\), RHS \\(= 2\\); \\(4 \\not< 2\\), so the strict inequality is false.",
-            "\\(4 < 2\\) is true.",
+            "&#8203;\\(4 < 2\\) is true.",
             "Both sides equal 2."
           ],
           "answer": 1,
@@ -16448,10 +16448,10 @@
           "difficulty": "medium",
           "stem": "Consider the functions \\(y = |x - 2|\\) and \\(y = |x| - 2\\).\nHow is each graph obtained by shifting \\(y = |x|\\)?",
           "options": [
-            "\\(y = |x-2|\\) is shifted 2 units up; \\(y = |x|-2\\) is shifted 2 units right.",
-            "\\(y = |x-2|\\) is shifted 2 units left; \\(y = |x|-2\\) is shifted 2 units up.",
+            "&#8203;\\(y = |x-2|\\) is shifted 2 units up; \\(y = |x|-2\\) is shifted 2 units right.",
+            "&#8203;\\(y = |x-2|\\) is shifted 2 units left; \\(y = |x|-2\\) is shifted 2 units up.",
             "Both are shifted 2 units right.",
-            "\\(y = |x-2|\\) is shifted 2 units right; \\(y = |x|-2\\) is shifted 2 units down."
+            "&#8203;\\(y = |x-2|\\) is shifted 2 units right; \\(y = |x|-2\\) is shifted 2 units down."
           ],
           "answer": 3,
           "solution": "The correct answer is \\(y = |x-2|\\) is shifted 2 units right; \\(y = |x|-2\\) is shifted 2 units down..",
@@ -16667,10 +16667,10 @@
           "difficulty": "hard",
           "stem": "Consider the absolute value function \\(f(x) = |x|\\).\nUsing \\(f(x) = \\sqrt{x^2}\\), which statement correctly proves that \\(f(x) = |x|\\) is even?",
           "options": [
-            "\\(f(-x) = \\sqrt{-x^2} = -\\sqrt{x^2} = -f(x)\\) for all real \\(x\\)",
-            "\\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\) for all real \\(x\\)",
-            "\\(f(-x) = f(x)\\) only when \\(x \\ge 0\\)",
-            "\\(f(-x) = -\\sqrt{x^2} = -f(x)\\), so \\(f\\) is odd"
+            "&#8203;\\(f(-x) = \\sqrt{-x^2} = -\\sqrt{x^2} = -f(x)\\) for all real \\(x\\)",
+            "&#8203;\\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\) for all real \\(x\\)",
+            "&#8203;\\(f(-x) = f(x)\\) only when \\(x \\ge 0\\)",
+            "&#8203;\\(f(-x) = -\\sqrt{x^2} = -f(x)\\), so \\(f\\) is odd"
           ],
           "answer": 1,
           "solution": "The correct answer is \\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\) for all real \\(x\\).",
@@ -16736,12 +16736,35 @@
           "hint": "An absolute value expression \\(|2x-4|\\) is defined for every real \\(x\\), and its minimum value is 0.",
           "steps": [
             {
-              "explain": "There is no restriction on \\(x\\) — absolute value accepts every real input.",
-              "work": "Domain: \\((-\\infty,\\infty)\\)"
+              "explain": "First, analyze the domain of an absolute value function. The expression inside the absolute value, \\\\(2x - 4\\\\), is a linear polynomial, which is defined for all real numbers. The absolute value operation also has no restrictions.",
+              "work": "Domain: \\\\((-\\\\infty, \\\\infty)\\\\)"
             },
             {
-              "explain": "The minimum of \\(|2x-4|\\) is 0 (at \\(x=2\\)), so the minimum of \\(f(x)\\) is \\(0-3=-3\\). As \\(x\\) moves away from 2, \\(f(x)\\) increases without bound.",
-              "work": "Range: \\([-3,\\infty)\\)"
+              "explain": "Next, analyze the range. The absolute value of any real number is always non-negative: \\\\(|2x - 4| \\\\ge 0\\\\).",
+              "work": "\\\\(|2x - 4| \\\\ge 0\\\\)"
+            },
+            {
+              "explain": "Subtract 3 from both sides of the inequality to match our function \\\\(f(x)\\\\).",
+              "work": "\\\\(|2x - 4| - 3 \\\\ge 0 - 3 \\\\implies f(x) \\\\ge -3\\\\)"
+            },
+            {
+              "explain": "The minimum value is exactly -3 (which occurs when \\\\(2x - 4 = 0\\\\), or \\\\(x = 2\\\\)). As \\\\(x\\\\) moves in either direction, \\\\(f(x)\\\\) increases to infinity.",
+              "work": "Range: \\\\([-3, \\\\infty)\\\\)",
+              "figure": {
+                "jsxGraph": {
+                  "attributes": {
+                    "boundingbox": [
+                      -2,
+                      6,
+                      6,
+                      -4
+                    ],
+                    "axis": true,
+                    "showNavigation": false
+                  },
+                  "script": "var f = function(x){ return Math.abs(2*x - 4) - 3; };\nboard.create('functiongraph', [f, -2, 6], {strokeColor: '#3b82f6', strokeWidth: 3});\nvar vertex = board.create('point', [2, -3], {name: 'Min: (2, -3)', size: 4, fillColor: '#ef4444', strokeColor: '#ef4444'});\nboard.create('segment', [[2,0], vertex], {strokeColor: 'gray', dash: 2});\nboard.create('segment', [[0,-3], vertex], {strokeColor: 'gray', dash: 2});\nboard.create('text', [3.5, 2, 'Domain: all real numbers'], {fontSize: 14});\nboard.create('text', [3.5, 1, 'Range: y &ge; -3'], {fontSize: 14});"
+                }
+              }
             }
           ]
         }
@@ -16979,10 +17002,10 @@
           "difficulty": "medium",
           "stem": "Consider \\( f(x)=\\sqrt{x} \\) and \\( g(x)=49-x^2 \\). Which option correctly gives \\( f(g(x)) \\) together with its domain and range?",
           "options": [
-            "\\( f(g(x))=\\sqrt{49-x^2} \\), domain \\( [-7,7] \\), range \\( [0,7] \\)",
-            "\\( f(g(x))=\\sqrt{49-x^2} \\), domain \\( [0,7] \\), range \\( [-7,7] \\)",
-            "\\( f(g(x))=49-x^2 \\), domain \\( [-7,7] \\), range \\( [0,49] \\)",
-            "\\( f(g(x))=\\sqrt{49-x^2} \\), domain \\( (-\\infty,\\infty) \\), range \\( [0,7] \\)"
+            "&#8203;\\( f(g(x))=\\sqrt{49-x^2} \\), domain \\( [-7,7] \\), range \\( [0,7] \\)",
+            "&#8203;\\( f(g(x))=\\sqrt{49-x^2} \\), domain \\( [0,7] \\), range \\( [-7,7] \\)",
+            "&#8203;\\( f(g(x))=49-x^2 \\), domain \\( [-7,7] \\), range \\( [0,49] \\)",
+            "&#8203;\\( f(g(x))=\\sqrt{49-x^2} \\), domain \\( (-\\infty,\\infty) \\), range \\( [0,7] \\)"
           ],
           "answer": 0,
           "steps": [
@@ -17110,58 +17133,64 @@
           ]
         },
         {
-          "id": "killara2026-q17a",
-          "type": "mc",
+          "id": "killara2026-q17",
+          "type": "multipart",
           "difficulty": "medium",
-          "stem": "Let \\(f(x)=x^4-2x^2\\) and \\(g(x)=\\sqrt{3-x}\\). Find \\(f(g(x))\\).",
-          "options": [
-            "\\(x^2-4x+3\\)",
-            "\\(x^2+4x-3\\)",
-            "\\(9-x^2\\)",
-            "\\((3-x)^2\\)"
-          ],
-          "answer": 0,
-          "hint": "Substitute \\(g(x)=\\sqrt{3-x}\\) into \\(f\\), and simplify \\((\\sqrt{3-x})^4=(3-x)^2\\).",
-          "steps": [
+          "stem": "Let \\\\(f(x)=x^4-2x^2\\\\) and \\\\(g(x)=\\\\sqrt{3-x}\\\\).",
+          "parts": [
             {
-              "explain": "Substitute \\(g(x)\\) for \\(x\\) in \\(f(x)\\).",
-              "work": "\\(f(g(x))=(\\sqrt{3-x})^4-2(\\sqrt{3-x})^2\\)"
+              "id": "killara2026-q17a",
+              "type": "mc",
+              "stem": "Find \\\\(f(g(x))\\\\).",
+              "options": [
+                "\\(x^2-4x+3\\)",
+                "\\(x^2+4x-3\\)",
+                "\\(9-x^2\\)",
+                "\\((3-x)^2\\)"
+              ],
+              "answer": 0,
+              "hint": "Substitute \\(g(x)=\\sqrt{3-x}\\) into \\(f\\), and simplify \\((\\sqrt{3-x})^4=(3-x)^2\\).",
+              "steps": [
+                {
+                  "explain": "Substitute \\(g(x)\\) for \\(x\\) in \\(f(x)\\).",
+                  "work": "\\(f(g(x))=(\\sqrt{3-x})^4-2(\\sqrt{3-x})^2\\)"
+                },
+                {
+                  "explain": "Simplify each power, using \\((\\sqrt{a})^2=a\\).",
+                  "work": "\\((3-x)^2-2(3-x)\\)"
+                },
+                {
+                  "explain": "Expand and collect like terms.",
+                  "work": "\\(9-6x+x^2-6+2x=x^2-4x+3\\)"
+                }
+              ]
             },
             {
-              "explain": "Simplify each power, using \\((\\sqrt{a})^2=a\\).",
-              "work": "\\((3-x)^2-2(3-x)\\)"
-            },
-            {
-              "explain": "Expand and collect like terms.",
-              "work": "\\(9-6x+x^2-6+2x=x^2-4x+3\\)"
-            }
-          ]
-        },
-        {
-          "id": "killara2026-q17b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Hence, find the domain of \\(f(g(x))\\), where \\(f(x)=x^4-2x^2\\) and \\(g(x)=\\sqrt{3-x}\\).",
-          "options": [
-            "\\(x\\le 3\\)",
-            "\\(x\\ge 3\\)",
-            "\\(x<3\\)",
-            "\\(x\\in\\mathbb{R}\\)"
-          ],
-          "answer": 0,
-          "hint": "The domain is restricted only by \\(g(x)=\\sqrt{3-x}\\), which needs a non-negative value under the square root.",
-          "steps": [
-            {
-              "explain": "\\(g(x)\\) requires the expression under the square root to be non-negative.",
-              "work": "\\(3-x\\ge 0\\)"
-            },
-            {
-              "explain": "Solve this inequality for \\(x\\).",
-              "work": "\\(x\\le 3\\)"
-            },
-            {
-              "explain": "\\(f(x)=x^4-2x^2\\) accepts all real inputs, so this is the only restriction.",
-              "work": "\\(\\text{Domain: }x\\le 3\\)"
+              "id": "killara2026-q17b",
+              "type": "mc",
+              "stem": "Hence, find the domain of \\\\(f(g(x))\\\\).",
+              "options": [
+                "\\(x\\le 3\\)",
+                "\\(x\\ge 3\\)",
+                "\\(x<3\\)",
+                "\\(x\\in\\mathbb{R}\\)"
+              ],
+              "answer": 0,
+              "hint": "The domain is restricted only by \\(g(x)=\\sqrt{3-x}\\), which needs a non-negative value under the square root.",
+              "steps": [
+                {
+                  "explain": "\\(g(x)\\) requires the expression under the square root to be non-negative.",
+                  "work": "\\(3-x\\ge 0\\)"
+                },
+                {
+                  "explain": "Solve this inequality for \\(x\\).",
+                  "work": "\\(x\\le 3\\)"
+                },
+                {
+                  "explain": "\\(f(x)=x^4-2x^2\\) accepts all real inputs, so this is the only restriction.",
+                  "work": "\\(\\text{Domain: }x\\le 3\\)"
+                }
+              ]
             }
           ]
         }
@@ -19112,10 +19141,10 @@
           "difficulty": "hard",
           "stem": "A function \\(y = f(x)\\) has a maximum turning point at \\((4, 10)\\). What is the turning point of \\(y = -f(x)\\)?",
           "options": [
-            "\\((-4, 10)\\) (maximum)",
-            "\\((-4, -10)\\) (minimum)",
-            "\\((4, -10)\\) (maximum)",
-            "\\((4, -10)\\) (minimum)"
+            "&#8203;\\((-4, 10)\\) (maximum)",
+            "&#8203;\\((-4, -10)\\) (minimum)",
+            "&#8203;\\((4, -10)\\) (maximum)",
+            "&#8203;\\((4, -10)\\) (minimum)"
           ],
           "answer": 3,
           "solution": "The correct answer is \\((4, -10)\\) (minimum).",
@@ -19148,10 +19177,10 @@
           "difficulty": "hard",
           "stem": "A function \\(y = f(x)\\) has a maximum turning point at \\((4, 10)\\). What is the turning point of \\(y = f(-x)\\)?",
           "options": [
-            "\\((-4, 10)\\) (maximum)",
-            "\\((4, -10)\\) (minimum)",
-            "\\((4, 10)\\) (minimum)",
-            "\\((-4, -10)\\) (maximum)"
+            "&#8203;\\((-4, 10)\\) (maximum)",
+            "&#8203;\\((4, -10)\\) (minimum)",
+            "&#8203;\\((4, 10)\\) (minimum)",
+            "&#8203;\\((-4, -10)\\) (maximum)"
           ],
           "answer": 0,
           "solution": "The correct answer is \\((-4, 10)\\) (maximum).",
@@ -21566,61 +21595,94 @@
           }
         },
         {
-          "id": "killara2026-q24a",
-          "type": "mc",
+          "id": "killara2026-q24",
+          "type": "multipart",
           "difficulty": "medium",
-          "stem": "Consider \\(f(x)=\\begin{cases}2x^2 & x<1\\\\ kx-1 & 1\\le x<3\\\\ 2 & x\\ge 3\\end{cases}\\). Find the value of \\(k\\) that makes \\(f(x)\\) continuous at \\(x=1\\).",
-          "options": [
-            "\\(3\\)",
-            "\\(2\\)",
-            "\\(1\\)",
-            "\\(-3\\)"
-          ],
-          "answer": 0,
-          "hint": "For continuity at \\(x=1\\), the two pieces must meet: \\(2(1)^2=k(1)-1\\).",
-          "steps": [
+          "stem": "Consider \\\\(f(x)=\\\\begin{cases}2x^2 & x<1\\\\\\\\ kx-1 & 1\\\\le x<3\\\\\\\\ 2 & x\\\\ge 3\\\\end{cases}\\\\).",
+          "parts": [
             {
-              "explain": "Evaluate the first piece at \\(x=1\\).",
-              "work": "\\(2(1)^2=2\\)"
+              "id": "killara2026-q24a",
+              "type": "mc",
+              "stem": "Find the value of \\\\(k\\\\) that makes \\\\(f(x)\\\\) continuous at \\\\(x=1\\\\).",
+              "options": [
+                "\\(3\\)",
+                "\\(2\\)",
+                "\\(1\\)",
+                "\\(-3\\)"
+              ],
+              "answer": 0,
+              "hint": "For continuity at \\(x=1\\), the two pieces must meet: \\(2(1)^2=k(1)-1\\).",
+              "steps": [
+                {
+                  "explain": "For continuity at \\\\(x=1\\\\), the left-hand limit (from the first piece) must equal the right-hand limit and function value (from the second piece). First, evaluate the left-hand limit as \\\\(x \\\\to 1^-\\\\).",
+                  "work": "\\\\(\\\\lim_{x \\\\to 1^-} 2x^2 = 2(1)^2 = 2\\\\)"
+                },
+                {
+                  "explain": "Evaluate the right-hand limit and function value as \\\\(x \\\\to 1^+\\\\).",
+                  "work": "\\\\(\\\\lim_{x \\\\to 1^+} (kx - 1) = k(1) - 1 = k - 1\\\\)"
+                },
+                {
+                  "explain": "Set them equal and solve for \\\\(k\\\\).",
+                  "work": "\\\\(k - 1 = 2 \\\\implies k = 3\\\\)",
+                  "figure": {
+                    "jsxGraph": {
+                      "attributes": {
+                        "boundingbox": [
+                          -1,
+                          5,
+                          2.5,
+                          -1
+                        ],
+                        "axis": true,
+                        "showNavigation": false
+                      },
+                      "script": "var f1 = function(x){ return 2*x*x; };\nvar f2 = function(x){ return 3*x-1; };\nboard.create('functiongraph', [f1, -1, 1], {strokeColor: '#3b82f6', strokeWidth: 3});\nboard.create('functiongraph', [f2, 1, 2.5], {strokeColor: '#10b981', strokeWidth: 3});\nboard.create('point', [1, 2], {fillColor: '#10b981', strokeColor: '#10b981', size: 4, name: 'Continuous at x=1'});\nboard.create('segment', [[1,0], [1,2]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[0,2], [1,2]], {dash: 2, strokeColor: 'gray'});"
+                    }
+                  }
+                }
+              ]
             },
             {
-              "explain": "Set the second piece equal to this value at \\(x=1\\).",
-              "work": "\\(k(1)-1=2\\)"
-            },
-            {
-              "explain": "Solve for \\(k\\).",
-              "work": "\\(k=3\\)"
-            }
-          ]
-        },
-        {
-          "id": "killara2026-q24b",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "Using \\(k=3\\), the graph of \\(f(x)\\) has a discontinuity at \\(x=3\\) (shown below). What are the two y-values on either side of this jump?",
-          "figure": {
-            "svg": "fig:1d4653bb3f"
-          },
-          "options": [
-            "\\(8\\) (open circle) jumping down to \\(2\\) (closed circle)",
-            "\\(2\\) (open circle) jumping up to \\(8\\) (closed circle)",
-            "\\(6\\) (open circle) jumping down to \\(2\\) (closed circle)",
-            "There is no discontinuity at \\(x=3\\)"
-          ],
-          "answer": 0,
-          "hint": "Evaluate the middle piece \\(3x-1\\) as \\(x\\to 3^-\\), and the third piece at \\(x=3\\).",
-          "steps": [
-            {
-              "explain": "As \\(x\\to 3^-\\), use the middle piece \\(f(x)=3x-1\\).",
-              "work": "\\(3(3)-1=8\\text{ (open circle, not included)}\\)"
-            },
-            {
-              "explain": "At \\(x=3\\) and beyond, \\(f(x)=2\\) exactly.",
-              "work": "\\(f(3)=2\\text{ (closed circle)}\\)"
-            },
-            {
-              "explain": "So the graph jumps from an open circle at \\(y=8\\) down to a closed circle at \\(y=2\\).",
-              "work": "\\(8\\to 2\\)"
+              "id": "killara2026-q24b",
+              "type": "mc",
+              "stem": "Using \\\\(k=3\\\\), the graph of \\\\(f(x)\\\\) has a discontinuity at \\\\(x=3\\\\). What are the two y-values on either side of this jump?",
+              "options": [
+                "&#8203;\\(8\\) (open circle) jumping down to \\(2\\) (closed circle)",
+                "&#8203;\\(2\\) (open circle) jumping up to \\(8\\) (closed circle)",
+                "&#8203;\\(6\\) (open circle) jumping down to \\(2\\) (closed circle)",
+                "There is no discontinuity at \\(x=3\\)"
+              ],
+              "answer": 0,
+              "hint": "Evaluate the middle piece \\(3x-1\\) as \\(x\\to 3^-\\), and the third piece at \\(x=3\\).",
+              "steps": [
+                {
+                  "explain": "Analyze the limits at \\\\(x=3\\\\). As \\\\(x\\\\to 3^-\\\\), use the middle piece \\\\(f(x)=3x-1\\\\).",
+                  "work": "\\\\(\\\\lim_{x \\\\to 3^-} (3x - 1) = 3(3) - 1 = 8\\\\) (open circle, not included)"
+                },
+                {
+                  "explain": "At \\\\(x=3\\\\) and beyond (\\\\(x \\\\to 3^+\\\\)), use the third piece \\\\(f(x)=2\\\\).",
+                  "work": "\\\\(f(3) = 2\\\\) (closed circle)"
+                },
+                {
+                  "explain": "So the graph jumps from an open circle at \\\\(y=8\\\\) down to a closed circle at \\\\(y=2\\\\).",
+                  "work": "\\\\(8 \\\\to 2\\\\)",
+                  "figure": {
+                    "jsxGraph": {
+                      "attributes": {
+                        "boundingbox": [
+                          -1,
+                          10,
+                          5,
+                          -1
+                        ],
+                        "axis": true,
+                        "showNavigation": false
+                      },
+                      "script": "var f1 = function(x){ return 2*x*x; };\nvar f2 = function(x){ return 3*x-1; };\nvar f3 = function(x){ return 2; };\n\nboard.create('functiongraph', [f1, -1, 1], {strokeColor: '#3b82f6', strokeWidth: 3});\nboard.create('functiongraph', [f2, 1, 3], {strokeColor: '#3b82f6', strokeWidth: 3});\nboard.create('functiongraph', [f3, 3, 5], {strokeColor: '#3b82f6', strokeWidth: 3});\n\nboard.create('point', [1, 2], {fillColor: '#3b82f6', strokeColor: '#3b82f6', size: 4, name: ''});\nboard.create('point', [3, 8], {fillColor: 'white', strokeColor: '#3b82f6', strokeWidth: 2, size: 4, name: 'y=8'});\nboard.create('point', [3, 2], {fillColor: '#3b82f6', strokeColor: '#3b82f6', size: 4, name: 'y=2'});\n\nboard.create('segment', [[3,0], [3,8]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[0,8], [3,8]], {dash: 2, strokeColor: 'gray'});\nboard.create('segment', [[0,2], [3,2]], {dash: 2, strokeColor: 'gray'});\n\n// Jump arrow\nboard.create('arrow', [[3, 7.5], [3, 2.5]], {strokeColor: '#ef4444', strokeWidth: 2});\nboard.create('text', [3.2, 5, 'Jump'], {strokeColor: '#ef4444', fontSize: 16});"
+                    }
+                  }
+                }
+              ]
             }
           ]
         }

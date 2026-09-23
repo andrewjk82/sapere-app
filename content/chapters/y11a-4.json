@@ -2236,10 +2236,10 @@
           "difficulty": "medium",
           "stem": "Call-out fee $250 + $60/light. Budget $800. Max lights?",
           "options": [
-            "\\(10\\) lights",
-            "\\(9.17\\) lights",
-            "\\(8\\) lights",
-            "\\(9\\) lights"
+            "&#8203;\\(10\\) lights",
+            "&#8203;\\(9.17\\) lights",
+            "&#8203;\\(8\\) lights",
+            "&#8203;\\(9\\) lights"
           ],
           "answer": 3,
           "solution": "Step 1: $250 + 60n \\le 800 \\implies 60n \\le 550 \\implies n \\le 9.16$. Max lights = 9.",
@@ -5118,10 +5118,10 @@
           "difficulty": "easy",
           "stem": "Consider the circle \\(x^2 + y^2 = 9\\) and the line \\(y = x + 2\\). Find the discriminant for the associated quadratic equation and hence state how many times the line intersects the circle.",
           "options": [
-            "\\(\\Delta = -56\\), does not intersect",
-            "\\(\\Delta = 96\\), intersects twice",
-            "\\(\\Delta = 16\\), intersects twice",
-            "\\(\\Delta = 56\\), intersects twice"
+            "&#8203;\\(\\Delta = -56\\), does not intersect",
+            "&#8203;\\(\\Delta = 96\\), intersects twice",
+            "&#8203;\\(\\Delta = 16\\), intersects twice",
+            "&#8203;\\(\\Delta = 56\\), intersects twice"
           ],
           "answer": 3,
           "hint": "Calculate the discriminant \\(b^2 - 4ac\\) of the equation from part ai.",
@@ -7232,10 +7232,10 @@
           "difficulty": "easy",
           "stem": "Find the discriminant \\(\\Delta\\) of the equation \\(x^2 - 8x + 16 = 0\\), and state the number and nature of its zeroes.",
           "options": [
-            "\\(\\Delta = 0\\), 1 rational zero",
-            "\\(\\Delta = 64\\), 2 rational zeroes",
-            "\\(\\Delta = -64\\), no real zeroes",
-            "\\(\\Delta = 0\\), 2 irrational zeroes"
+            "&#8203;\\(\\Delta = 0\\), 1 rational zero",
+            "&#8203;\\(\\Delta = 64\\), 2 rational zeroes",
+            "&#8203;\\(\\Delta = -64\\), no real zeroes",
+            "&#8203;\\(\\Delta = 0\\), 2 irrational zeroes"
           ],
           "answer": 0,
           "hint": "Calculate the discriminant using the formula \\(\\Delta = b^2 - 4ac\\).",
@@ -7262,10 +7262,10 @@
           "difficulty": "easy",
           "stem": "Find the discriminant \\(\\Delta\\) of the equation \\(-x^2 - 6x + 3 = 0\\), and state the number and nature of its zeroes.",
           "options": [
-            "\\(\\Delta = 48\\), 2 irrational zeroes",
-            "\\(\\Delta = 48\\), 2 rational zeroes",
-            "\\(\\Delta = 24\\), 2 irrational zeroes",
-            "\\(\\Delta = -24\\), no real zeroes"
+            "&#8203;\\(\\Delta = 48\\), 2 irrational zeroes",
+            "&#8203;\\(\\Delta = 48\\), 2 rational zeroes",
+            "&#8203;\\(\\Delta = 24\\), 2 irrational zeroes",
+            "&#8203;\\(\\Delta = -24\\), no real zeroes"
           ],
           "answer": 0,
           "hint": "Substitute coefficients into \\(\\Delta = b^2 - 4ac\\) and check if it is positive and a perfect square.",
@@ -7292,10 +7292,10 @@
           "difficulty": "easy",
           "stem": "Find the discriminant \\(\\Delta\\) of the equation \\(4x^2 - 9 = 0\\), and state the number and nature of its zeroes.",
           "options": [
-            "\\(\\Delta = 144\\), 2 rational zeroes",
-            "\\(\\Delta = 144\\), 2 irrational zeroes",
-            "\\(\\Delta = -144\\), no real zeroes",
-            "\\(\\Delta = 0\\), 1 rational zero"
+            "&#8203;\\(\\Delta = 144\\), 2 rational zeroes",
+            "&#8203;\\(\\Delta = 144\\), 2 irrational zeroes",
+            "&#8203;\\(\\Delta = -144\\), no real zeroes",
+            "&#8203;\\(\\Delta = 0\\), 1 rational zero"
           ],
           "answer": 0,
           "hint": "Identify b as 0 and calculate the discriminant.",

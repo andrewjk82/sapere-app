@@ -3890,29 +3890,123 @@
           }
         },
         {
-          "id": "killara2026-q25a",
-          "type": "mc",
-          "difficulty": "medium",
-          "stem": "A fence from point A to point B forms an arc of a circle with centre O and radius 45 m, as shown. The length of fence AB is 63 m. What is the size of \\(\\angle AOB\\) in radians?",
+          "id": "killara2026-q25",
+          "type": "multipart",
+          "difficulty": "hard",
+          "stem": "A fence from point A to point B forms an arc of a circle with centre O and radius 45 m. Points C and D lie on OB and OA respectively, with \\\\(OC=OD=s\\\\).",
           "figure": {
             "svg": "fig:0a83e12e9a"
           },
-          "options": [
-            "\\(1.4\\ \\text{rad}\\)",
-            "\\(0.7\\ \\text{rad}\\)",
-            "\\(1.6\\ \\text{rad}\\)",
-            "\\(2835\\ \\text{rad}\\)"
-          ],
-          "answer": 0,
-          "hint": "Use the arc length formula \\(l=r\\theta\\), rearranged for \\(\\theta\\).",
-          "steps": [
+          "parts": [
             {
-              "explain": "Rearrange the arc length formula to make \\(\\theta\\) the subject.",
-              "work": "\\(\\theta=\\dfrac{l}{r}\\)"
+              "id": "killara2026-q25a",
+              "type": "mc",
+              "stem": "The length of fence AB is 63 m. What is the size of \\\\(\\\\angle AOB\\\\) in radians?",
+              "options": [
+                "\\(1.4\\ \\text{rad}\\)",
+                "\\(0.7\\ \\text{rad}\\)",
+                "\\(1.6\\ \\text{rad}\\)",
+                "\\(2835\\ \\text{rad}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the arc length formula \\(l=r\\theta\\), rearranged for \\(\\theta\\).",
+              "steps": [
+                {
+                  "explain": "Rearrange the arc length formula \\\\(l=r\\\\theta\\\\) to make \\\\(\\\\theta\\\\) the subject.",
+                  "work": "\\\\(\\\\theta=\\\\dfrac{l}{r}\\\\)",
+                  "figure": {
+                    "jsxGraph": {
+                      "attributes": {
+                        "boundingbox": [
+                          -5,
+                          50,
+                          50,
+                          -5
+                        ],
+                        "axis": false,
+                        "showNavigation": false
+                      },
+                      "script": "\n  var O = board.create('point', [0, 0], {name: 'O', fixed: true, size: 2});\n  var A = board.create('point', [45, 0], {name: 'A', fixed: true, size: 2});\n  var B = board.create('point', [45*Math.cos(1.4), 45*Math.sin(1.4)], {name: 'B', fixed: true, size: 2});\n  var arcAB = board.create('arc', [O, A, B], {strokeColor: '#94a3b8', strokeWidth: 2});\n  var segOA = board.create('segment', [O, A], {strokeColor: '#94a3b8'});\n  var segOB = board.create('segment', [O, B], {strokeColor: '#94a3b8'});\n\n          board.create('arc', [O, A, B], {strokeColor: '#3b82f6', strokeWidth: 4});\n          board.create('text', [25, 45, 'l = 63 m'], {strokeColor: '#3b82f6', fontSize: 16});\n          board.create('segment', [O, A], {strokeColor: '#10b981', strokeWidth: 4});\n          board.create('text', [20, -3, 'r = 45 m'], {strokeColor: '#10b981', fontSize: 16});\n        "
+                    }
+                  }
+                },
+                {
+                  "explain": "Substitute the given arc length and radius to find the angle.",
+                  "work": "\\\\(\\\\theta=\\\\dfrac{63}{45}=1.4\\\\ \\\\text{rad}\\\\)",
+                  "figure": {
+                    "jsxGraph": {
+                      "attributes": {
+                        "boundingbox": [
+                          -5,
+                          50,
+                          50,
+                          -5
+                        ],
+                        "axis": false,
+                        "showNavigation": false
+                      },
+                      "script": "\n  var O = board.create('point', [0, 0], {name: 'O', fixed: true, size: 2});\n  var A = board.create('point', [45, 0], {name: 'A', fixed: true, size: 2});\n  var B = board.create('point', [45*Math.cos(1.4), 45*Math.sin(1.4)], {name: 'B', fixed: true, size: 2});\n  var arcAB = board.create('arc', [O, A, B], {strokeColor: '#94a3b8', strokeWidth: 2});\n  var segOA = board.create('segment', [O, A], {strokeColor: '#94a3b8'});\n  var segOB = board.create('segment', [O, B], {strokeColor: '#94a3b8'});\n\n          board.create('angle', [A, O, B], {name: '&theta; = 1.4 rad', radius: 10, fillColor: '#f59e0b', strokeColor: '#f59e0b'});\n        "
+                    }
+                  }
+                }
+              ]
             },
             {
-              "explain": "Substitute the given arc length and radius.",
-              "work": "\\(\\theta=\\dfrac{63}{45}=1.4\\ \\text{rad}\\)"
+              "id": "killara2026-q25b",
+              "type": "mc",
+              "stem": "The shaded plot of land ABCD has an area of \\\\(974\\\\ \\\\text{m}^2\\\\). Calculate the length of \\\\(OC=s\\\\), to the nearest metre.",
+              "options": [
+                "\\(30\\ \\text{m}\\)",
+                "\\(21\\ \\text{m}\\)",
+                "\\(45\\ \\text{m}\\)",
+                "\\(35\\ \\text{m}\\)"
+              ],
+              "answer": 0,
+              "hint": "Find the area of the full sector OAB first, subtract the shaded area to get the area of triangle OCD, then use \\(\\text{Area}=\\dfrac12s^2\\sin(1.4)\\) to solve for \\(s\\).",
+              "steps": [
+                {
+                  "explain": "Find the area of the full sector OAB, using \\\\(\\\\text{Area}=\\\\dfrac12 r^2\\\\theta\\\\).",
+                  "work": "\\\\(\\\\text{Area}_{OAB}=\\\\dfrac12(45)^2(1.4)=1417.5\\\\ \\\\text{m}^2\\\\)",
+                  "figure": {
+                    "jsxGraph": {
+                      "attributes": {
+                        "boundingbox": [
+                          -5,
+                          50,
+                          50,
+                          -5
+                        ],
+                        "axis": false,
+                        "showNavigation": false
+                      },
+                      "script": "\n  var O = board.create('point', [0, 0], {name: 'O', fixed: true, size: 2});\n  var A = board.create('point', [45, 0], {name: 'A', fixed: true, size: 2});\n  var B = board.create('point', [45*Math.cos(1.4), 45*Math.sin(1.4)], {name: 'B', fixed: true, size: 2});\n  var arcAB = board.create('arc', [O, A, B], {strokeColor: '#94a3b8', strokeWidth: 2});\n  var segOA = board.create('segment', [O, A], {strokeColor: '#94a3b8'});\n  var segOB = board.create('segment', [O, B], {strokeColor: '#94a3b8'});\n\n          board.create('sector', [O, A, B], {fillColor: '#3b82f6', fillOpacity: 0.2, strokeWidth: 0});\n          board.create('text', [15, 20, 'Sector OAB Area = 1417.5'], {fontSize: 16});\n        "
+                    }
+                  }
+                },
+                {
+                  "explain": "Subtract the shaded area ABCD from the full sector to find the area of the inner triangle OCD.",
+                  "work": "\\\\(\\\\text{Area}_{OCD} = 1417.5 - 974 = 443.5\\\\ \\\\text{m}^2\\\\)",
+                  "figure": {
+                    "jsxGraph": {
+                      "attributes": {
+                        "boundingbox": [
+                          -5,
+                          50,
+                          50,
+                          -5
+                        ],
+                        "axis": false,
+                        "showNavigation": false
+                      },
+                      "script": "\n  var O = board.create('point', [0, 0], {name: 'O', fixed: true, size: 2});\n  var A = board.create('point', [45, 0], {name: 'A', fixed: true, size: 2});\n  var B = board.create('point', [45*Math.cos(1.4), 45*Math.sin(1.4)], {name: 'B', fixed: true, size: 2});\n  var arcAB = board.create('arc', [O, A, B], {strokeColor: '#94a3b8', strokeWidth: 2});\n  var segOA = board.create('segment', [O, A], {strokeColor: '#94a3b8'});\n  var segOB = board.create('segment', [O, B], {strokeColor: '#94a3b8'});\n\n          var D = board.create('point', [30, 0], {name: 'D', fixed: true, size: 2});\n          var C = board.create('point', [30*Math.cos(1.4), 30*Math.sin(1.4)], {name: 'C', fixed: true, size: 2});\n          board.create('polygon', [O, D, C], {fillColor: '#10b981', fillOpacity: 0.4});\n          // Approximation of shaded region for visual\n          board.create('text', [10, 15, 'Area OCD = 443.5'], {fontSize: 14});\n        "
+                    }
+                  }
+                },
+                {
+                  "explain": "Use the area-of-triangle formula \\\\(\\\\text{Area}=\\\\dfrac12 ab\\\\sin C\\\\) for triangle OCD, where both sides are \\\\(s\\\\) and the included angle is \\\\(1.4\\\\) rad, then solve for \\\\(s\\\\).",
+                  "work": "\\\\(443.5 = \\\\dfrac12(s)(s)\\\\sin(1.4) \\\\Rightarrow s^2 \\\\approx 900.1 \\\\Rightarrow s \\\\approx 30\\\\ \\\\text{m}\\\\)"
+                }
+              ]
             }
           ]
         }
@@ -4087,34 +4181,6 @@
             "examType": "Trial HSC",
             "grade": "12"
           }
-        },
-        {
-          "id": "killara2026-q25b",
-          "type": "mc",
-          "difficulty": "hard",
-          "stem": "Points C and D lie on OB and OA respectively, with \\(OC=OD=s\\). The shaded plot of land ABCD has an area of \\(974\\ \\text{m}^2\\), \\(\\angle AOB=1.4\\ \\text{rad}\\) and the full sector OAB has radius 45 m. Calculate the length of \\(OC=s\\), to the nearest metre.",
-          "options": [
-            "\\(30\\ \\text{m}\\)",
-            "\\(21\\ \\text{m}\\)",
-            "\\(45\\ \\text{m}\\)",
-            "\\(35\\ \\text{m}\\)"
-          ],
-          "answer": 0,
-          "hint": "Find the area of the full sector OAB first, subtract the shaded area to get the area of triangle OCD, then use \\(\\text{Area}=\\dfrac12s^2\\sin(1.4)\\) to solve for \\(s\\).",
-          "steps": [
-            {
-              "explain": "Find the area of the full sector OAB, using \\(\\text{Area}=\\dfrac12r^2\\theta\\).",
-              "work": "\\(\\text{Area}=\\dfrac12(45)^2(1.4)=1417.5\\ \\text{m}^2\\)"
-            },
-            {
-              "explain": "Subtract the shaded area ABCD to find the area of the remaining sector-shaped triangle OCD.",
-              "work": "\\(1417.5-974=443.5\\ \\text{m}^2\\)"
-            },
-            {
-              "explain": "Use the area-of-triangle formula \\(\\text{Area}=\\dfrac12s^2\\sin(1.4)\\) and solve for \\(s\\).",
-              "work": "\\(443.5=\\dfrac12s^2\\sin(1.4) \\Rightarrow s^2\\approx900.1 \\Rightarrow s\\approx30\\ \\text{m}\\)"
-            }
-          ]
         }
       ]
     },

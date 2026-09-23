@@ -213,10 +213,10 @@
           "difficulty": "easy",
           "stem": "Which of the following best classifies \\(\\sqrt{2}\\)?",
           "options": [
-            "\\(\\sqrt{2}\\) is rational",
-            "\\(\\sqrt{2}\\) is irrational",
-            "\\(\\sqrt{2}\\) is an integer",
-            "\\(\\sqrt{2}\\) is a natural number"
+            "&#8203;\\(\\sqrt{2}\\) is rational",
+            "&#8203;\\(\\sqrt{2}\\) is irrational",
+            "&#8203;\\(\\sqrt{2}\\) is an integer",
+            "&#8203;\\(\\sqrt{2}\\) is a natural number"
           ],
           "answer": 1,
           "hint": "Can \\(\\sqrt{2}\\) be written as a fraction \\(p/q\\) where \\(p\\) and \\(q\\) are integers?",
