@@ -2534,7 +2534,7 @@
           "options": [
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(t = 6\\) minutes and \\(t = 20\\) minutes",
+            "&#8203;\\(t = 6\\) minutes and \\(t = 20\\) minutes",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
           "answer": 2,
@@ -2578,7 +2578,7 @@
           "stem": "Water flows into a tank at a rate $\\dfrac{dV}{dt} = 80 + 18t - t^2$ litres per minute. At what times is the tank filling at twice the initial rate?",
           "options": [
             "\\(\\dfrac{7}{3}\\)",
-            "\\(t = 4\\) minutes and \\(t = 14\\) minutes",
+            "&#8203;\\(t = 4\\) minutes and \\(t = 14\\) minutes",
             "\\(\\dfrac{12}{x + 2}\\)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
@@ -2712,10 +2712,10 @@
           "difficulty": "easy",
           "stem": "A scatterplot shows Push-ups ($P$) vs Sit-ups ($S$) for 10 students.\n\n\\begin{array}{c|cccccccccc} S & 5 & 10 & 15 & 20 & 25 & 30 & 35 & 40 & 45 & 50 \\\\ \\hline P & 15 & 25 & 25 & 25 & 35 & 50 & 45 & 50 & 50 & 60 \\end{array}\n\nCalculate the correlation coefficient correct to 2 decimal places and comment on the strength and direction.",
           "options": [
-            "\\(r \\approx 0.96\\); strong positive correlation",
-            "\\(r \\approx 0.58\\); moderate positive correlation",
-            "\\(r \\approx 0.96\\); strong negative correlation",
-            "\\(r \\approx -0.96\\); strong negative correlation"
+            "&#8203;\\(r \\approx 0.96\\); strong positive correlation",
+            "&#8203;\\(r \\approx 0.58\\); moderate positive correlation",
+            "&#8203;\\(r \\approx 0.96\\); strong negative correlation",
+            "&#8203;\\(r \\approx -0.96\\); strong negative correlation"
           ],
           "answer": 0,
           "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute Pearson's correlation coefficient directly.",
@@ -5063,10 +5063,10 @@
           "difficulty": "hard",
           "stem": "Find the exact time when the particle (with $x = 3e^t - 6e^{-t} + 3$) is at $x = 10$ metres.",
           "options": [
-            "\\(t = \\ln 3\\) seconds",
-            "\\(t = \\ln 3\\) seconds + 1",
-            "\\(t = \\ln 4\\) seconds",
-            "\\(t = \\log 3\\) seconds"
+            "&#8203;\\(t = \\ln 3\\) seconds",
+            "&#8203;\\(t = \\ln 3\\) seconds + 1",
+            "&#8203;\\(t = \\ln 4\\) seconds",
+            "&#8203;\\(t = \\log 3\\) seconds"
           ],
           "answer": 0,
           "hint": "Set $x=10$, multiply through by $e^t$ to get a quadratic in $e^t$.",
@@ -5108,10 +5108,10 @@
           "difficulty": "hard",
           "stem": "Find the exact time when the particle with $x = 2e^t - 4e^{-t} + 2$ is at $x = 4$ metres.",
           "options": [
-            "\\(t = \\ln 2\\) seconds",
-            "\\(t = \\ln 2\\) seconds + 1",
-            "\\(t = \\ln 4\\) seconds",
-            "\\(t = \\log 2\\) seconds"
+            "&#8203;\\(t = \\ln 2\\) seconds",
+            "&#8203;\\(t = \\ln 2\\) seconds + 1",
+            "&#8203;\\(t = \\ln 4\\) seconds",
+            "&#8203;\\(t = \\log 2\\) seconds"
           ],
           "answer": 0,
           "hint": "Set $x=8$, multiply by $e^t$ to get a quadratic in $e^t$.",

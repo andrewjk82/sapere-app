@@ -670,7 +670,7 @@
           "id": "killara2026-q9",
           "type": "mc",
           "difficulty": "hard",
-          "stem": "Points **a**, **b** and **c** lie on the function shown. The gradient of the tangent at point **b** is equal to 0. Which of the following statements is true?",
+          "stem": "Points \\(a\\), \\(b\\) and \\(c\\) lie on the function shown. The gradient of the tangent at point \\(b\\) is equal to 0. Which of the following statements is true?",
           "figure": {
             "jsxGraph": {
               "attributes": {
@@ -696,7 +696,7 @@
           "hint": "Point \\(a\\) lies deep below the x-axis (a large negative function value), \\(b\\) is a stationary point so \\(f'(b)=0\\), and \\(c\\) is on a steep rising part of the curve.",
           "steps": [
             {
-              "explain": "Let's evaluate \\\\(f(a)\\\\). Point **a** is located far below the x-axis, which means its function value (y-coordinate) is a large negative number.",
+              "explain": "Let's evaluate \\\\(f(a)\\\\). Point \\(a\\) is located far below the x-axis, which means its function value (y-coordinate) is a large negative number.",
               "work": "\\\\(f(a) < 0\\\\) (specifically, it is very negative)",
               "figure": {
                 "jsxGraph": {
@@ -710,12 +710,12 @@
                     "axis": true,
                     "showNavigation": false
                   },
-                  "script": "var f = function(x){ return Math.pow(x,3) - 3*x; };\nboard.create('functiongraph', [f, -3, 3], {strokeColor: '#3b82f6', strokeWidth: 3});\nvar pA = board.create('point', [-2.2, f(-2.2)], {name: 'a', size: 4, fillColor: '#10b981', strokeColor: '#10b981'});\nvar pB = board.create('point', [1, f(1)], {name: 'b', size: 4, fillColor: '#10b981', strokeColor: '#10b981'});\nvar pC = board.create('point', [2, f(2)], {name: 'c', size: 4, fillColor: '#10b981', strokeColor: '#10b981'});\nboard.create('segment', [[-2.2, 0], pA], {strokeColor: '#ef4444', strokeWidth: 3, dash: 2});\nboard.create('text', [-2, -2, 'f(a) is large negative'], {fontSize: 14, strokeColor: '#ef4444'});"
+                  "script": "\nvar f = function(x){ return Math.pow(x,3) - 3*x; };\nboard.create('functiongraph', [f, -3, 3], {strokeColor: '#3b82f6', strokeWidth: 3});\nvar pA = board.create('point', [-2.2, f(-2.2)], {name: 'a', size: 4, fillColor: '#10b981', strokeColor: '#10b981'});\nvar pB = board.create('point', [1, f(1)], {name: 'b', size: 4, fillColor: '#10b981', strokeColor: '#10b981'});\nvar pC = board.create('point', [2, f(2)], {name: 'c', size: 4, fillColor: '#10b981', strokeColor: '#10b981'});\nboard.create('text', [0, -4.5, 'f(a) is a large negative number'], {fontSize: 14, strokeColor: '#ef4444', anchorX: 'middle'});\n"
                 }
               }
             },
             {
-              "explain": "Next, let's look at point **b**. It is a local minimum (a stationary point). The tangent line here is perfectly horizontal, meaning its gradient \\\\(f'(b)\\\\) is exactly 0.",
+              "explain": "Next, let's look at point \\(b\\). It is a local minimum (a stationary point). The tangent line here is perfectly horizontal, meaning its gradient \\\\(f'(b)\\\\) is exactly 0.",
               "work": "\\\\(f'(b) = 0\\\\)",
               "figure": {
                 "jsxGraph": {
@@ -734,7 +734,7 @@
               }
             },
             {
-              "explain": "Finally, consider point **c**. The curve at **c** is rising steeply from left to right. Therefore, the gradient of the tangent at **c**, \\\\(f'(c)\\\\), is a large positive number.",
+              "explain": "Finally, consider point \\(c\\). The curve at \\(c\\) is rising steeply from left to right. Therefore, the gradient of the tangent at \\(c\\), \\\\(f'(c)\\\\), is a large positive number.",
               "work": "\\\\(f'(c) > 0\\\\) (large positive)",
               "figure": {
                 "jsxGraph": {
@@ -753,7 +753,7 @@
               }
             },
             {
-              "explain": "Now we can order these three values from smallest to largest:\\\\n1. \\\\(f(a)\\\\) is a large negative number.\\\\n2. \\\\(f'(b)\\\\) is exactly 0.\\\\n3. \\\\(f'(c)\\\\) is a large positive number.",
+              "explain": "Now we can order these three values from smallest to largest: (1) \\(f(a)\\) is a large negative number. (2) \\(f'(b)\\) is exactly 0. (3) \\(f'(c)\\) is a large positive number.",
               "work": "\\\\(f(a) < f'(b) < f'(c)\\\\)"
             }
           ]
@@ -1072,9 +1072,9 @@
                       "attributes": {
                         "boundingbox": [
                           -1,
-                          26,
-                          7,
-                          -10
+                          12,
+                          6,
+                          -7
                         ],
                         "axis": true,
                         "showNavigation": false
@@ -1110,9 +1110,9 @@
                       "attributes": {
                         "boundingbox": [
                           -1,
-                          20,
-                          7,
-                          -10
+                          12,
+                          6,
+                          -7
                         ],
                         "axis": true,
                         "showNavigation": false
@@ -1152,9 +1152,9 @@
                       "attributes": {
                         "boundingbox": [
                           -1,
-                          20,
-                          7,
-                          -10
+                          12,
+                          6,
+                          -7
                         ],
                         "axis": true,
                         "showNavigation": false
@@ -1190,9 +1190,9 @@
                       "attributes": {
                         "boundingbox": [
                           -1,
-                          26,
-                          7,
-                          -5
+                          12,
+                          6,
+                          -7
                         ],
                         "axis": true,
                         "showNavigation": false

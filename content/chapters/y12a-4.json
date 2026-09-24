@@ -454,10 +454,10 @@
             "svg": "fig:34d3b8cb87"
           },
           "options": [
-            "\\(10\\dfrac23\\) sq. units",
-            "\\(16\\) sq. units",
-            "\\(\\dfrac{32}{3}\\) sq. units (unsimplified)",
-            "\\(8\\) sq. units"
+            "&#8203;\\(10\\dfrac23\\) sq. units",
+            "&#8203;\\(16\\) sq. units",
+            "&#8203;\\(\\dfrac{32}{3}\\) sq. units (unsimplified)",
+            "&#8203;\\(8\\) sq. units"
           ],
           "answer": 0,
           "hint": "From the diagram, the shaded region runs from \\(x=0\\) to \\(x=2\\) (where the curve crosses the \\(x\\)-axis). Integrate the curve over that interval.",

@@ -1398,10 +1398,10 @@
           "difficulty": "hard",
           "stem": "A ball is dropped from a height of \\(30\\) meters. Each time it hits the ground, it bounces back to \\(70\\%\\) of its previous height. Find the total distance traveled by the ball before it comes to rest.",
           "options": [
-            "\\(170\\) meters",
-            "\\(100\\) meters",
-            "\\(200\\) meters",
-            "\\(150\\) meters"
+            "&#8203;\\(170\\) meters",
+            "&#8203;\\(100\\) meters",
+            "&#8203;\\(200\\) meters",
+            "&#8203;\\(150\\) meters"
           ],
           "answer": 0,
           "hint": "The total distance includes the initial drop plus twice the sum of all subsequent bounce heights.",
@@ -1530,10 +1530,10 @@
           "difficulty": "hard",
           "stem": "A tree grows by \\(1.5\\) meters in its first year. Each year thereafter, its growth is \\(75\\%\\) of its growth in the previous year. What is the maximum possible height the tree can grow (excluding its initial height)?",
           "options": [
-            "\\(6\\) meters",
-            "\\(5\\) meters",
-            "\\(8\\) meters",
-            "\\(4\\) meters"
+            "&#8203;\\(6\\) meters",
+            "&#8203;\\(5\\) meters",
+            "&#8203;\\(8\\) meters",
+            "&#8203;\\(4\\) meters"
           ],
           "answer": 0,
           "hint": "The annual growth values form an infinite geometric series with limiting sum.",
@@ -3422,10 +3422,10 @@
           "difficulty": "easy",
           "stem": "Lucas collects trading cards. He found a collection of 600 trading cards in his basement a few years ago, and every month since then he has been buying 120 interesting trading cards to add to his collection. Thus the numbers of trading cards at the end of each month after his discovery form a sequence:\n\\(720, 840, \\dots\\)\n\nAfter how many months did his collection first exceed 1800 trading cards?",
           "options": [
-            "\\(12\\) months",
-            "\\(9\\) months",
-            "\\(10\\) months",
-            "\\(11\\) months"
+            "&#8203;\\(12\\) months",
+            "&#8203;\\(9\\) months",
+            "&#8203;\\(10\\) months",
+            "&#8203;\\(11\\) months"
           ],
           "answer": 3,
           "hint": "Write an inequality for the number of cards after n months.",
@@ -6330,10 +6330,10 @@
           "difficulty": "easy",
           "stem": "Lucas collects trading cards. He found a collection of 600 trading cards in his basement a few years ago, and every month since then he has been buying 120 interesting trading cards to add to his collection. Thus the numbers of trading cards at the end of each month after his discovery form a sequence:\n\\(720, 840, \\dots\\)\n\nAfter how many months did his collection first exceed 1800 trading cards?",
           "options": [
-            "\\(12\\) months",
-            "\\(9\\) months",
-            "\\(10\\) months",
-            "\\(11\\) months"
+            "&#8203;\\(12\\) months",
+            "&#8203;\\(9\\) months",
+            "&#8203;\\(10\\) months",
+            "&#8203;\\(11\\) months"
           ],
           "answer": 3,
           "hint": "Write an inequality for the number of cards after n months.",
@@ -10060,10 +10060,10 @@
           "difficulty": "hard",
           "stem": "A ball is dropped from a height of \\(30\\) meters. Each time it hits the ground, it bounces back to \\(70\\%\\) of its previous height. Find the total distance traveled by the ball before it comes to rest.",
           "options": [
-            "\\(170\\) meters",
-            "\\(100\\) meters",
-            "\\(200\\) meters",
-            "\\(150\\) meters"
+            "&#8203;\\(170\\) meters",
+            "&#8203;\\(100\\) meters",
+            "&#8203;\\(200\\) meters",
+            "&#8203;\\(150\\) meters"
           ],
           "answer": 0,
           "hint": "The total distance includes the initial drop plus twice the sum of all subsequent bounce heights.",
@@ -18913,10 +18913,10 @@
           "difficulty": "medium",
           "stem": "Each set of three numbers below forms an arithmetic progression (AP). Find \\(x\\) and determine the three numbers:\n\\[x - 2, 20, x + 16\\]",
           "options": [
-            "\\(x = 13\\); numbers: \\(11, 20, 29\\)",
-            "\\(x = 12\\); numbers: \\(10, 20, 30\\)",
-            "\\(x = 14\\); numbers: \\(12, 20, 28\\)",
-            "\\(x = 11\\); numbers: \\(9, 20, 31\\)"
+            "&#8203;\\(x = 13\\); numbers: \\(11, 20, 29\\)",
+            "&#8203;\\(x = 12\\); numbers: \\(10, 20, 30\\)",
+            "&#8203;\\(x = 14\\); numbers: \\(12, 20, 28\\)",
+            "&#8203;\\(x = 11\\); numbers: \\(9, 20, 31\\)"
           ],
           "answer": 0,
           "hint": "Apply \\(T_2 - T_1 = T_3 - T_2\\) to solve for \\(x\\), then substitute back.",
@@ -18947,10 +18947,10 @@
           "difficulty": "medium",
           "stem": "Each set of three numbers below forms an arithmetic progression (AP). Find \\(x\\) and determine the three numbers:\n\\[2x + 2, x - 5, 6x\\]",
           "options": [
-            "\\(x = -2\\); numbers: \\(-2, -7, -12\\)",
-            "\\(x = -1\\); numbers: \\(0, -6, -6\\)",
-            "\\(x = -3\\); numbers: \\(-4, -8, -18\\)",
-            "\\(x = 0\\); numbers: \\(2, -5, 0\\)"
+            "&#8203;\\(x = -2\\); numbers: \\(-2, -7, -12\\)",
+            "&#8203;\\(x = -1\\); numbers: \\(0, -6, -6\\)",
+            "&#8203;\\(x = -3\\); numbers: \\(-4, -8, -18\\)",
+            "&#8203;\\(x = 0\\); numbers: \\(2, -5, 0\\)"
           ],
           "answer": 0,
           "hint": "Set up differences: \\((x - 5) - (2x + 2) = 6x - (x - 5)\\).",
@@ -18981,10 +18981,10 @@
           "difficulty": "medium",
           "stem": "Each set of three numbers below forms an arithmetic progression (AP). Find \\(x\\) and determine the three numbers:\n\\[x - 5, 7, 2x + 10\\]",
           "options": [
-            "\\(x = 3\\); numbers: \\(-2, 7, 16\\)",
-            "\\(x = 4\\); numbers: \\(-1, 7, 18\\)",
-            "\\(x = 2\\); numbers: \\(-3, 7, 14\\)",
-            "\\(x = 5\\); numbers: \\(0, 7, 20\\)"
+            "&#8203;\\(x = 3\\); numbers: \\(-2, 7, 16\\)",
+            "&#8203;\\(x = 4\\); numbers: \\(-1, 7, 18\\)",
+            "&#8203;\\(x = 2\\); numbers: \\(-3, 7, 14\\)",
+            "&#8203;\\(x = 5\\); numbers: \\(0, 7, 20\\)"
           ],
           "answer": 0,
           "hint": "Set up differences: \\(7 - (x - 5) = (2x + 10) - 7\\).",
@@ -19015,10 +19015,10 @@
           "difficulty": "medium",
           "stem": "Each set of three numbers below forms an arithmetic progression (AP). Find \\(x\\) and determine the three numbers:\n\\[3x - 3, x, x + 15\\]",
           "options": [
-            "\\(x = -6\\); numbers: \\(-21, -6, 9\\)",
-            "\\(x = -5\\); numbers: \\(-18, -5, 10\\)",
-            "\\(x = -4\\); numbers: \\(-15, -4, 11\\)",
-            "\\(x = -7\\); numbers: \\(-24, -7, 8\\)"
+            "&#8203;\\(x = -6\\); numbers: \\(-21, -6, 9\\)",
+            "&#8203;\\(x = -5\\); numbers: \\(-18, -5, 10\\)",
+            "&#8203;\\(x = -4\\); numbers: \\(-15, -4, 11\\)",
+            "&#8203;\\(x = -7\\); numbers: \\(-24, -7, 8\\)"
           ],
           "answer": 0,
           "hint": "Set up differences: \\(x - (3x - 3) = (x + 15) - x\\).",
@@ -19271,10 +19271,10 @@
           "difficulty": "hard",
           "stem": "The pipe lengths in a rank of organ pipes decrease from left to right. The lengths form a GP with ratio \\(r = \\left(\\dfrac{1}{2}\\right)^{\\dfrac{1}{12}}\\).\nFind which pipes are closest to about three-quarters and five-sixths of the length of the first pipe.",
           "options": [
-            "\\(6\\)-th pipe (three-quarters) and \\(4\\)-th pipe (five-sixths)",
-            "\\(5\\)-th pipe (three-quarters) and \\(3\\)-th pipe (five-sixths)",
-            "\\(7\\)-th pipe (three-quarters) and \\(4\\)-th pipe (five-sixths)",
-            "\\(6\\)-th pipe (three-quarters) and \\(5\\)-th pipe (five-sixths)"
+            "&#8203;\\(6\\)-th pipe (three-quarters) and \\(4\\)-th pipe (five-sixths)",
+            "&#8203;\\(5\\)-th pipe (three-quarters) and \\(3\\)-th pipe (five-sixths)",
+            "&#8203;\\(7\\)-th pipe (three-quarters) and \\(4\\)-th pipe (five-sixths)",
+            "&#8203;\\(6\\)-th pipe (three-quarters) and \\(5\\)-th pipe (five-sixths)"
           ],
           "answer": 0,
           "hint": "Solve \\(r^{n-1} \\approx 0.75\\) and \\(r^{n-1} \\approx 0.833\\).",
@@ -19300,10 +19300,10 @@
           "difficulty": "hard",
           "stem": "The pipe lengths in a rank of organ pipes decrease from left to right. The lengths form a GP with ratio \\(r = \\left(\\dfrac{1}{2}\\right)^{\\dfrac{1}{12}}\\).\nWhat simple fractions are closest to the relative lengths of the third pipe and the second pipe?",
           "options": [
-            "\\(\\dfrac{9}{10}\\) (third pipe) and \\(\\dfrac{17}{18}\\) (second pipe)",
-            "\\(\\dfrac{8}{9}\\) (third pipe) and \\(\\dfrac{16}{17}\\) (second pipe)",
-            "\\(\\dfrac{9}{10}\\) (third pipe) and \\(\\dfrac{14}{15}\\) (second pipe)",
-            "\\(\\dfrac{7}{8}\\) (third pipe) and \\(\\dfrac{17}{18}\\) (second pipe)"
+            "&#8203;\\(\\dfrac{9}{10}\\) (third pipe) and \\(\\dfrac{17}{18}\\) (second pipe)",
+            "&#8203;\\(\\dfrac{8}{9}\\) (third pipe) and \\(\\dfrac{16}{17}\\) (second pipe)",
+            "&#8203;\\(\\dfrac{9}{10}\\) (third pipe) and \\(\\dfrac{14}{15}\\) (second pipe)",
+            "&#8203;\\(\\dfrac{7}{8}\\) (third pipe) and \\(\\dfrac{17}{18}\\) (second pipe)"
           ],
           "answer": 0,
           "hint": "Find values of \\(r^2\\) and \\(r\\) as decimals, then approximate with fractions.",
@@ -22120,10 +22120,10 @@
           "difficulty": "hard",
           "stem": "In aerospace logistics, the cumulative power reserve \\(S_n\\) of the payload delivery fuel burn satisfies the recurrence relation \\(S_n = 2S_{n-1} + 24\\) (for \\(n \\ge 1\\)). If the initial reserve is \\(S_0 = 5\\) Joules, find the value of \\(S_2\\).",
           "options": [
-            "\\(88\\) Joules",
-            "\\(34\\) Joules",
-            "\\(92\\) Joules",
-            "\\(102\\) Joules"
+            "&#8203;\\(88\\) Joules",
+            "&#8203;\\(34\\) Joules",
+            "&#8203;\\(92\\) Joules",
+            "&#8203;\\(102\\) Joules"
           ],
           "answer": 2,
           "hint": "Find \\(S_1\\) first using the recurrence relation, then use it to find \\(S_2\\).",
@@ -22149,10 +22149,10 @@
           "difficulty": "hard",
           "stem": "In marine science, the cumulative power reserve \\(S_n\\) of the phytoplankton biomass growth satisfies the recurrence relation \\(S_n = S_{n-1} + n^2\\) (for \\(n \\ge 1\\)). If the initial reserve is \\(S_0 = 10\\) Joules, find the value of \\(S_3\\).",
           "options": [
-            "\\(20\\) Joules",
-            "\\(24\\) Joules",
-            "\\(35\\) Joules",
-            "\\(15\\) Joules"
+            "&#8203;\\(20\\) Joules",
+            "&#8203;\\(24\\) Joules",
+            "&#8203;\\(35\\) Joules",
+            "&#8203;\\(15\\) Joules"
           ],
           "answer": 1,
           "hint": "Add successive perfect squares to \\(S_0\\).",
@@ -22178,10 +22178,10 @@
           "difficulty": "hard",
           "stem": "In agricultural robotics, the cumulative power reserve \\(S_n\\) of the actuator power draw satisfies the recurrence relation \\(S_n = S_{n-1} + 2^n\\) (for \\(n \\ge 1\\)). If the initial reserve is \\(S_0 = 3\\) Joules, find the value of \\(S_3\\).",
           "options": [
-            "\\(21\\) Joules",
-            "\\(15\\) Joules",
-            "\\(9\\) Joules",
-            "\\(17\\) Joules"
+            "&#8203;\\(21\\) Joules",
+            "&#8203;\\(15\\) Joules",
+            "&#8203;\\(9\\) Joules",
+            "&#8203;\\(17\\) Joules"
           ],
           "answer": 3,
           "hint": "Add successive powers of 2 to the previous terms.",
@@ -22207,10 +22207,10 @@
           "difficulty": "hard",
           "stem": "In financial analytics, the cumulative power reserve \\(S_n\\) of the dividend yield series satisfies the recurrence relation \\(S_n = 3S_{n-1} - 10\\) (for \\(n \\ge 2\\)). If the reserve in cycle 1 is \\(S_1 = 8\\) Joules, find the value of \\(S_3\\).",
           "options": [
-            "\\(14\\) Joules",
-            "\\(24\\) Joules",
-            "\\(32\\) Joules",
-            "\\(38\\) Joules"
+            "&#8203;\\(14\\) Joules",
+            "&#8203;\\(24\\) Joules",
+            "&#8203;\\(32\\) Joules",
+            "&#8203;\\(38\\) Joules"
           ],
           "answer": 2,
           "hint": "Compute \\(S_2\\) first, then use it to find \\(S_3\\).",
@@ -22232,10 +22232,10 @@
           "difficulty": "hard",
           "stem": "In telecommunications, the cumulative power reserve \\(S_n\\) of the network packet delay time satisfies the recurrence relation \\(S_n = 0.5S_{n-1} + 8\\) (for \\(n \\ge 1\\)). If the initial reserve is \\(S_0 = 12\\) Joules, find the value of \\(S_2\\).",
           "options": [
-            "\\(14\\) Joules",
-            "\\(14.5\\) Joules",
-            "\\(16\\) Joules",
-            "\\(15\\) Joules"
+            "&#8203;\\(14\\) Joules",
+            "&#8203;\\(14.5\\) Joules",
+            "&#8203;\\(16\\) Joules",
+            "&#8203;\\(15\\) Joules"
           ],
           "answer": 3,
           "hint": "Find \\(S_1\\) first by halving \\(S_0\\) and adding 8.",
@@ -22257,10 +22257,10 @@
           "difficulty": "hard",
           "stem": "In quantum computing, the cumulative power reserve \\(S_n\\) of the qubit error rate count satisfies the recurrence relation \\(S_n = 3S_{n-1}\\) (for \\(n \\ge 2\\)). If the reserve in cycle 1 is \\(S_1 = 4\\) Joules, find the value of \\(S_4\\).",
           "options": [
-            "\\(324\\) Joules",
-            "\\(36\\) Joules",
-            "\\(80\\) Joules",
-            "\\(108\\) Joules"
+            "&#8203;\\(324\\) Joules",
+            "&#8203;\\(36\\) Joules",
+            "&#8203;\\(80\\) Joules",
+            "&#8203;\\(108\\) Joules"
           ],
           "answer": 3,
           "hint": "Multiply the previous value by 3 for each step.",
@@ -22286,10 +22286,10 @@
           "difficulty": "hard",
           "stem": "In urban hydrology, the cumulative power reserve \\(S_n\\) of the aquifer water intake rate satisfies the recurrence relation \\(S_n = S_{n-1} + 3^n\\) (for \\(n \\ge 1\\)). If the initial reserve is \\(S_0 = 1\\) Joules, find the value of \\(S_3\\).",
           "options": [
-            "\\(13\\) Joules",
-            "\\(40\\) Joules",
-            "\\(39\\) Joules",
-            "\\(31\\) Joules"
+            "&#8203;\\(13\\) Joules",
+            "&#8203;\\(40\\) Joules",
+            "&#8203;\\(39\\) Joules",
+            "&#8203;\\(31\\) Joules"
           ],
           "answer": 1,
           "hint": "Add successive powers of 3 to the previous terms.",
@@ -22315,10 +22315,10 @@
           "difficulty": "hard",
           "stem": "In optics engineering, the cumulative power reserve \\(S_n\\) of the laser pulse intensity factor satisfies the recurrence relation \\(S_n = S_{n-1} + 3n + 1\\) (for \\(n \\ge 1\\)). If the initial reserve is \\(S_0 = 2\\) Joules, find the value of \\(S_3\\).",
           "options": [
-            "\\(13\\) Joules",
-            "\\(25\\) Joules",
-            "\\(21\\) Joules",
-            "\\(23\\) Joules"
+            "&#8203;\\(13\\) Joules",
+            "&#8203;\\(25\\) Joules",
+            "&#8203;\\(21\\) Joules",
+            "&#8203;\\(23\\) Joules"
           ],
           "answer": 3,
           "hint": "Compute \\(S_1\\), \\(S_2\\), and \\(S_3\\) by evaluating \\(3n+1\\) at each step.",
@@ -24155,10 +24155,10 @@
           "difficulty": "medium",
           "stem": "How many legs are there on \\(25\\) fish, \\(25\\) ducks, \\(25\\) dogs, \\(25\\) beetles, \\(25\\) spiders, and \\(25\\) ten-legged grubs?\\nHow many of these creatures have the mean number of legs?",
           "options": [
-            "\\(750\\) legs, \\(50\\) creatures",
-            "\\(750\\) legs, \\(25\\) creatures",
-            "\\(750\\) legs, \\(0\\) creatures",
-            "\\(600\\) legs, \\(0\\) creatures"
+            "&#8203;\\(750\\) legs, \\(50\\) creatures",
+            "&#8203;\\(750\\) legs, \\(25\\) creatures",
+            "&#8203;\\(750\\) legs, \\(0\\) creatures",
+            "&#8203;\\(600\\) legs, \\(0\\) creatures"
           ],
           "answer": 2,
           "hint": "The leg counts are an AP: 0, 2, 4, 6, 8, 10. Compute the mean first.",
@@ -46117,10 +46117,10 @@
           "difficulty": "medium",
           "stem": "Mary decides to train for a marathon by running each day \\(d\\) minutes longer than the previous day. On the third day she is running for 21 minutes, and on the tenth day she is running for 49 minutes. Find how long she was running on the first day (in minutes).",
           "options": [
-            "\\(11\\) minutes",
-            "\\(13\\) minutes",
-            "\\(15\\) minutes",
-            "\\(17\\) minutes"
+            "&#8203;\\(11\\) minutes",
+            "&#8203;\\(13\\) minutes",
+            "&#8203;\\(15\\) minutes",
+            "&#8203;\\(17\\) minutes"
           ],
           "answer": 1,
           "hint": "Set up simultaneous equations for a and d, then solve for the first term a.",
@@ -46147,10 +46147,10 @@
           "difficulty": "medium",
           "stem": "Mary decides to train for a marathon by running each day \\(d\\) minutes longer than the previous day. On the third day she is running for 21 minutes, and on the tenth day she is running for 49 minutes. Find the daily increase in running time \\(d\\) (in minutes).",
           "options": [
-            "\\(5\\) minutes",
-            "\\(2\\) minutes",
-            "\\(3\\) minutes",
-            "\\(4\\) minutes"
+            "&#8203;\\(5\\) minutes",
+            "&#8203;\\(2\\) minutes",
+            "&#8203;\\(3\\) minutes",
+            "&#8203;\\(4\\) minutes"
           ],
           "answer": 3,
           "hint": "Solve the simultaneous equations for the common difference d.",
@@ -46565,10 +46565,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(12\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(48\\) tokens",
-            "\\(192\\) tokens",
-            "\\(188\\) tokens",
-            "\\(197\\) tokens"
+            "&#8203;\\(48\\) tokens",
+            "&#8203;\\(192\\) tokens",
+            "&#8203;\\(188\\) tokens",
+            "&#8203;\\(197\\) tokens"
           ],
           "answer": 1,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -46701,10 +46701,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(10\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(45\\) tokens",
-            "\\(36\\) tokens",
-            "\\(40\\) tokens",
-            "\\(20\\) tokens"
+            "&#8203;\\(45\\) tokens",
+            "&#8203;\\(36\\) tokens",
+            "&#8203;\\(40\\) tokens",
+            "&#8203;\\(20\\) tokens"
           ],
           "answer": 2,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -46834,10 +46834,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(14\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(42\\) tokens",
-            "\\(122\\) tokens",
-            "\\(131\\) tokens",
-            "\\(126\\) tokens"
+            "&#8203;\\(42\\) tokens",
+            "&#8203;\\(122\\) tokens",
+            "&#8203;\\(131\\) tokens",
+            "&#8203;\\(126\\) tokens"
           ],
           "answer": 3,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -46970,10 +46970,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(12\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(48\\) tokens",
-            "\\(197\\) tokens",
-            "\\(188\\) tokens",
-            "\\(192\\) tokens"
+            "&#8203;\\(48\\) tokens",
+            "&#8203;\\(197\\) tokens",
+            "&#8203;\\(188\\) tokens",
+            "&#8203;\\(192\\) tokens"
           ],
           "answer": 3,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -47105,10 +47105,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(10\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(36\\) tokens",
-            "\\(45\\) tokens",
-            "\\(40\\) tokens",
-            "\\(20\\) tokens"
+            "&#8203;\\(36\\) tokens",
+            "&#8203;\\(45\\) tokens",
+            "&#8203;\\(40\\) tokens",
+            "&#8203;\\(20\\) tokens"
           ],
           "answer": 2,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -47241,10 +47241,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(14\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(131\\) tokens",
-            "\\(126\\) tokens",
-            "\\(42\\) tokens",
-            "\\(122\\) tokens"
+            "&#8203;\\(131\\) tokens",
+            "&#8203;\\(126\\) tokens",
+            "&#8203;\\(42\\) tokens",
+            "&#8203;\\(122\\) tokens"
           ],
           "answer": 1,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -47376,10 +47376,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(12\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(48\\) tokens",
-            "\\(192\\) tokens",
-            "\\(188\\) tokens",
-            "\\(197\\) tokens"
+            "&#8203;\\(48\\) tokens",
+            "&#8203;\\(192\\) tokens",
+            "&#8203;\\(188\\) tokens",
+            "&#8203;\\(197\\) tokens"
           ],
           "answer": 1,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -47511,10 +47511,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(10\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(20\\) tokens",
-            "\\(36\\) tokens",
-            "\\(40\\) tokens",
-            "\\(45\\) tokens"
+            "&#8203;\\(20\\) tokens",
+            "&#8203;\\(36\\) tokens",
+            "&#8203;\\(40\\) tokens",
+            "&#8203;\\(45\\) tokens"
           ],
           "answer": 2,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -47646,10 +47646,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(14\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(126\\) tokens",
-            "\\(131\\) tokens",
-            "\\(42\\) tokens",
-            "\\(122\\) tokens"
+            "&#8203;\\(126\\) tokens",
+            "&#8203;\\(131\\) tokens",
+            "&#8203;\\(42\\) tokens",
+            "&#8203;\\(122\\) tokens"
           ],
           "answer": 0,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -47781,10 +47781,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(12\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(188\\) tokens",
-            "\\(197\\) tokens",
-            "\\(192\\) tokens",
-            "\\(48\\) tokens"
+            "&#8203;\\(188\\) tokens",
+            "&#8203;\\(197\\) tokens",
+            "&#8203;\\(192\\) tokens",
+            "&#8203;\\(48\\) tokens"
           ],
           "answer": 2,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -47916,10 +47916,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(10\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(45\\) tokens",
-            "\\(36\\) tokens",
-            "\\(20\\) tokens",
-            "\\(40\\) tokens"
+            "&#8203;\\(45\\) tokens",
+            "&#8203;\\(36\\) tokens",
+            "&#8203;\\(20\\) tokens",
+            "&#8203;\\(40\\) tokens"
           ],
           "answer": 3,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -48050,10 +48050,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(14\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(131\\) tokens",
-            "\\(122\\) tokens",
-            "\\(126\\) tokens",
-            "\\(42\\) tokens"
+            "&#8203;\\(131\\) tokens",
+            "&#8203;\\(122\\) tokens",
+            "&#8203;\\(126\\) tokens",
+            "&#8203;\\(42\\) tokens"
           ],
           "answer": 2,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -48185,10 +48185,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(12\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(48\\) tokens",
-            "\\(192\\) tokens",
-            "\\(197\\) tokens",
-            "\\(188\\) tokens"
+            "&#8203;\\(48\\) tokens",
+            "&#8203;\\(192\\) tokens",
+            "&#8203;\\(197\\) tokens",
+            "&#8203;\\(188\\) tokens"
           ],
           "answer": 1,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -48320,10 +48320,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(10\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(40\\) tokens",
-            "\\(45\\) tokens",
-            "\\(36\\) tokens",
-            "\\(20\\) tokens"
+            "&#8203;\\(40\\) tokens",
+            "&#8203;\\(45\\) tokens",
+            "&#8203;\\(36\\) tokens",
+            "&#8203;\\(20\\) tokens"
           ],
           "answer": 0,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -48455,10 +48455,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(14\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(131\\) tokens",
-            "\\(122\\) tokens",
-            "\\(126\\) tokens",
-            "\\(42\\) tokens"
+            "&#8203;\\(131\\) tokens",
+            "&#8203;\\(122\\) tokens",
+            "&#8203;\\(126\\) tokens",
+            "&#8203;\\(42\\) tokens"
           ],
           "answer": 2,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -48588,10 +48588,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(12\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(197\\) tokens",
-            "\\(192\\) tokens",
-            "\\(188\\) tokens",
-            "\\(48\\) tokens"
+            "&#8203;\\(197\\) tokens",
+            "&#8203;\\(192\\) tokens",
+            "&#8203;\\(188\\) tokens",
+            "&#8203;\\(48\\) tokens"
           ],
           "answer": 1,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -48724,10 +48724,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(10\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(20\\) tokens",
-            "\\(40\\) tokens",
-            "\\(36\\) tokens",
-            "\\(45\\) tokens"
+            "&#8203;\\(20\\) tokens",
+            "&#8203;\\(40\\) tokens",
+            "&#8203;\\(36\\) tokens",
+            "&#8203;\\(45\\) tokens"
           ],
           "answer": 1,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -48859,10 +48859,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(14\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(131\\) tokens",
-            "\\(42\\) tokens",
-            "\\(126\\) tokens",
-            "\\(122\\) tokens"
+            "&#8203;\\(131\\) tokens",
+            "&#8203;\\(42\\) tokens",
+            "&#8203;\\(126\\) tokens",
+            "&#8203;\\(122\\) tokens"
           ],
           "answer": 2,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -48995,10 +48995,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(12\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(197\\) tokens",
-            "\\(48\\) tokens",
-            "\\(192\\) tokens",
-            "\\(188\\) tokens"
+            "&#8203;\\(197\\) tokens",
+            "&#8203;\\(48\\) tokens",
+            "&#8203;\\(192\\) tokens",
+            "&#8203;\\(188\\) tokens"
           ],
           "answer": 2,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -49131,10 +49131,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(10\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(40\\) tokens",
-            "\\(45\\) tokens",
-            "\\(20\\) tokens",
-            "\\(36\\) tokens"
+            "&#8203;\\(40\\) tokens",
+            "&#8203;\\(45\\) tokens",
+            "&#8203;\\(20\\) tokens",
+            "&#8203;\\(36\\) tokens"
           ],
           "answer": 0,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -49265,10 +49265,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(14\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(42\\) tokens",
-            "\\(122\\) tokens",
-            "\\(131\\) tokens",
-            "\\(126\\) tokens"
+            "&#8203;\\(42\\) tokens",
+            "&#8203;\\(122\\) tokens",
+            "&#8203;\\(131\\) tokens",
+            "&#8203;\\(126\\) tokens"
           ],
           "answer": 3,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -49400,10 +49400,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(12\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(48\\) tokens",
-            "\\(192\\) tokens",
-            "\\(188\\) tokens",
-            "\\(197\\) tokens"
+            "&#8203;\\(48\\) tokens",
+            "&#8203;\\(192\\) tokens",
+            "&#8203;\\(188\\) tokens",
+            "&#8203;\\(197\\) tokens"
           ],
           "answer": 1,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -49535,10 +49535,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(10\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(20\\) tokens",
-            "\\(40\\) tokens",
-            "\\(36\\) tokens",
-            "\\(45\\) tokens"
+            "&#8203;\\(20\\) tokens",
+            "&#8203;\\(40\\) tokens",
+            "&#8203;\\(36\\) tokens",
+            "&#8203;\\(45\\) tokens"
           ],
           "answer": 1,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",
@@ -49671,10 +49671,10 @@
           "difficulty": "hard",
           "stem": "A cryptocurrency token distribution launches with a base minting fee. The fees for the 1st, 2nd, and 5th minting blocks form an arithmetic sequence with a non-zero common difference. If the 1st minting fee is \\(14\\) tokens, and the 1st, 2nd, and 5th fees also form a geometric progression, find the 5th minting block fee.",
           "options": [
-            "\\(131\\) tokens",
-            "\\(122\\) tokens",
-            "\\(126\\) tokens",
-            "\\(42\\) tokens"
+            "&#8203;\\(131\\) tokens",
+            "&#8203;\\(122\\) tokens",
+            "&#8203;\\(126\\) tokens",
+            "&#8203;\\(42\\) tokens"
           ],
           "answer": 2,
           "hint": "Express the terms as AP elements, apply the GP geometric mean condition, and solve for the common difference.",

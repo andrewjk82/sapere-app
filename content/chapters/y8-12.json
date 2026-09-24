@@ -3993,10 +3993,10 @@
           "difficulty": "easy",
           "stem": "Which of the following triangles is congruent to \\(\\triangle ABC\\) with side lengths \\(AB = 5\\text{ cm}\\), \\(BC = 6\\text{ cm}\\), and \\(AC = 7\\text{ cm}\\)?",
           "options": [
-            "\\(\\triangle DEF\\) with \\(DE = 6\\text{ cm}\\), \\(EF = 7\\text{ cm}\\), and \\(DF = 5\\text{ cm}\\)",
-            "\\(\\triangle DEF\\) with \\(DE = 5\\text{ cm}\\), \\(EF = 5\\text{ cm}\\), and \\(DF = 7\\text{ cm}\\)",
-            "\\(\\triangle DEF\\) with \\(DE = 6\\text{ cm}\\), \\(EF = 6\\text{ cm}\\), and \\(DF = 7\\text{ cm}\\)",
-            "\\(\\triangle DEF\\) with \\(DE = 5\\text{ cm}\\), \\(EF = 6\\text{ cm}\\), and \\(DF = 8\\text{ cm}\\)"
+            "&#8203;\\(\\triangle DEF\\) with \\(DE = 6\\text{ cm}\\), \\(EF = 7\\text{ cm}\\), and \\(DF = 5\\text{ cm}\\)",
+            "&#8203;\\(\\triangle DEF\\) with \\(DE = 5\\text{ cm}\\), \\(EF = 5\\text{ cm}\\), and \\(DF = 7\\text{ cm}\\)",
+            "&#8203;\\(\\triangle DEF\\) with \\(DE = 6\\text{ cm}\\), \\(EF = 6\\text{ cm}\\), and \\(DF = 7\\text{ cm}\\)",
+            "&#8203;\\(\\triangle DEF\\) with \\(DE = 5\\text{ cm}\\), \\(EF = 6\\text{ cm}\\), and \\(DF = 8\\text{ cm}\\)"
           ],
           "answer": 0,
           "hint": "Congruent triangles must have the exact same three side lengths.",
@@ -4059,10 +4059,10 @@
           "difficulty": "easy",
           "stem": "Which of the following shapes is congruent to a regular hexagon with side length \\(4\\text{ cm}\\) split by a diagonal line connecting opposite vertices?",
           "options": [
-            "\\(A regular hexagon with side length \\(4\\text{ cm}\\) split by a diagonal line (rotated by \\(90^\\circ\\))\\)",
-            "\\(A regular hexagon with side length \\(4\\text{ cm}\\) split by a line connecting midpoints of opposite sides\\)",
-            "\\(A regular pentagon with side length \\(4\\text{ cm}\\) split by a diagonal line\\)",
-            "\\(A regular hexagon with side length \\(5\\text{ cm}\\) split by a diagonal line\\)"
+            "&#8203;\\(A regular hexagon with side length \\(4\\text{ cm}\\) split by a diagonal line (rotated by \\(90^\\circ\\))\\)",
+            "&#8203;\\(A regular hexagon with side length \\(4\\text{ cm}\\) split by a line connecting midpoints of opposite sides\\)",
+            "&#8203;\\(A regular pentagon with side length \\(4\\text{ cm}\\) split by a diagonal line\\)",
+            "&#8203;\\(A regular hexagon with side length \\(5\\text{ cm}\\) split by a diagonal line\\)"
           ],
           "answer": 0,
           "hint": "Rotation does not change the congruence of a shape. Look for the same outer shape and split line.",

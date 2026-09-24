@@ -7485,10 +7485,10 @@
           "difficulty": "easy",
           "stem": "Consider the curve \\( y = e^{2x-2} \\).\n\nFind the equation of the tangent at \\(A\\). Which statement is correct?",
           "options": [
-            "\\(y=2x-1\\), and it passes through \\((0,-1)\\)",
-            "\\(y=2x+1\\), and it passes through \\((0,1)\\)",
-            "\\(y=x-1\\), and it passes through \\((0,-1)\\)",
-            "\\(y=2x-1\\), and it passes through \\((0,1)\\)"
+            "&#8203;\\(y=2x-1\\), and it passes through \\((0,-1)\\)",
+            "&#8203;\\(y=2x+1\\), and it passes through \\((0,1)\\)",
+            "&#8203;\\(y=x-1\\), and it passes through \\((0,-1)\\)",
+            "&#8203;\\(y=2x-1\\), and it passes through \\((0,1)\\)"
           ],
           "answer": 0,
           "hint": "Point–gradient form with \\(A(1,1)\\) and gradient \\(m=2\\). Then check \\(x=0\\).",
@@ -7807,10 +7807,10 @@
           "difficulty": "easy",
           "stem": "Consider the point \\( B(0,2) \\) on the curves \\(y=2e^{x}\\) and \\(y=2e^{-x}\\).\n\nFind the equation of the tangent to \\(y=2e^{x}\\) at \\(B(0,2)\\), and where it meets the x-axis.",
           "options": [
-            "\\(y=2x+2\\), meets x-axis at \\(F(-1,0)\\)",
-            "\\(y=2x+2\\), meets x-axis at \\(F(1,0)\\)",
-            "\\(y=x+2\\), meets x-axis at \\(F(-2,0)\\)",
-            "\\(y=2x-2\\), meets x-axis at \\(F(1,0)\\)"
+            "&#8203;\\(y=2x+2\\), meets x-axis at \\(F(-1,0)\\)",
+            "&#8203;\\(y=2x+2\\), meets x-axis at \\(F(1,0)\\)",
+            "&#8203;\\(y=x+2\\), meets x-axis at \\(F(-2,0)\\)",
+            "&#8203;\\(y=2x-2\\), meets x-axis at \\(F(1,0)\\)"
           ],
           "answer": 0,
           "hint": "Gradient at \\(B\\) is 2. Point–gradient form, then set \\(y=0\\).",
@@ -7867,10 +7867,10 @@
           "difficulty": "easy",
           "stem": "Consider the point \\( B(0,2) \\) on the curves \\(y=2e^{x}\\) and \\(y=2e^{-x}\\).\n\nFind the equation of the tangent to \\(y=2e^{-x}\\) at \\(B(0,2)\\), and where it meets the x-axis.",
           "options": [
-            "\\(y=-2x+2\\), meets x-axis at \\(G(1,0)\\)",
-            "\\(y=-2x+2\\), meets x-axis at \\(G(-1,0)\\)",
-            "\\(y=2x+2\\), meets x-axis at \\(G(1,0)\\)",
-            "\\(y=-x+2\\), meets x-axis at \\(G(2,0)\\)"
+            "&#8203;\\(y=-2x+2\\), meets x-axis at \\(G(1,0)\\)",
+            "&#8203;\\(y=-2x+2\\), meets x-axis at \\(G(-1,0)\\)",
+            "&#8203;\\(y=2x+2\\), meets x-axis at \\(G(1,0)\\)",
+            "&#8203;\\(y=-x+2\\), meets x-axis at \\(G(2,0)\\)"
           ],
           "answer": 0,
           "hint": "Gradient at \\(B\\) is \\(-2\\). Point–gradient form, then set \\(y=0\\).",
@@ -7961,10 +7961,10 @@
           "difficulty": "easy",
           "stem": "Consider the curve \\( y = 2x - e^{x} \\).\n\nWrite down the equation of the tangent at \\(x=0\\), and which point it passes through.",
           "options": [
-            "\\(y=x-1\\), and it passes through \\((1,0)\\)",
-            "\\(y=x+1\\), and it passes through \\((1,2)\\)",
-            "\\(y=2x-1\\), and it passes through \\((1,1)\\)",
-            "\\(y=x-1\\), and it passes through \\((0,1)\\)"
+            "&#8203;\\(y=x-1\\), and it passes through \\((1,0)\\)",
+            "&#8203;\\(y=x+1\\), and it passes through \\((1,2)\\)",
+            "&#8203;\\(y=2x-1\\), and it passes through \\((1,1)\\)",
+            "&#8203;\\(y=x-1\\), and it passes through \\((0,1)\\)"
           ],
           "answer": 0,
           "hint": "Point of contact is \\((0,-1)\\) with gradient 1.",
@@ -8021,10 +8021,10 @@
           "difficulty": "medium",
           "stem": "Consider the curve \\( y = 2x - e^{x} \\).\n\nWhich statement correctly describes the concavity of \\(y=2x-e^{x}\\)?",
           "options": [
-            "\\(y''=-e^{x}<0\\) for all \\(x\\), so the curve is always concave down",
-            "\\(y''=-e^{x}>0\\) for all \\(x\\), so the curve is always concave up",
-            "\\(y''\\) changes sign, so there is a point of inflection",
-            "\\(y''=0\\) for all \\(x\\), so the curve is a straight line"
+            "&#8203;\\(y''=-e^{x}<0\\) for all \\(x\\), so the curve is always concave down",
+            "&#8203;\\(y''=-e^{x}>0\\) for all \\(x\\), so the curve is always concave up",
+            "&#8203;\\(y''\\) changes sign, so there is a point of inflection",
+            "&#8203;\\(y''=0\\) for all \\(x\\), so the curve is a straight line"
           ],
           "answer": 0,
           "hint": "Use the sign of \\(y''=-e^{x}\\).",
@@ -8051,10 +8051,10 @@
           "difficulty": "medium",
           "stem": "Consider the curve \\( y = 2x - e^{x} \\).\n\nFind any stationary points, and determine their nature.",
           "options": [
-            "\\((\\ln 2,\\; 2\\ln 2-2)\\), local maximum",
-            "\\((\\ln 2,\\; 2\\ln 2-2)\\), local minimum",
-            "\\((0,-1)\\), local maximum",
-            "\\((\\ln 2,\\; 0)\\), point of inflection"
+            "&#8203;\\((\\ln 2,\\; 2\\ln 2-2)\\), local maximum",
+            "&#8203;\\((\\ln 2,\\; 2\\ln 2-2)\\), local minimum",
+            "&#8203;\\((0,-1)\\), local maximum",
+            "&#8203;\\((\\ln 2,\\; 0)\\), point of inflection"
           ],
           "answer": 0,
           "hint": "Solve \\(y'=0\\), then check \\(y''\\).",
@@ -8613,10 +8613,10 @@
           "difficulty": "medium",
           "stem": "The equation of the tangent at \\(x=t\\) and its x-intercept are",
           "options": [
-            "\\(y=e^{t}(x-t+1)\\), x-intercept \\(t-1\\)",
-            "\\(y=e^{t}(x-t)\\), x-intercept \\(t\\)",
-            "\\(y=e^{t}x\\), x-intercept \\(0\\)",
-            "\\(y=e^{t}(x+t-1)\\), x-intercept \\(1-t\\)"
+            "&#8203;\\(y=e^{t}(x-t+1)\\), x-intercept \\(t-1\\)",
+            "&#8203;\\(y=e^{t}(x-t)\\), x-intercept \\(t\\)",
+            "&#8203;\\(y=e^{t}x\\), x-intercept \\(0\\)",
+            "&#8203;\\(y=e^{t}(x+t-1)\\), x-intercept \\(1-t\\)"
           ],
           "answer": 0,
           "hint": "Point–gradient form, then set \\(y=0\\).",
@@ -8733,10 +8733,10 @@
           "difficulty": "medium",
           "stem": "Consider the curve \\( y = e^{x} \\) and its normal line at \\( x = t \\).\n\nWhy is there exactly one value of \\(t\\) for which the normal passes through the origin?",
           "options": [
-            "\\(g(t)=t+e^{2t}\\) is strictly increasing and ranges from \\(-\\infty\\) to \\(\\infty\\), so it has exactly one root",
-            "\\(g(t)=t+e^{2t}\\) is always positive, so it has no roots",
-            "\\(g(t)=t+e^{2t}\\) is a quadratic with two real roots",
-            "\\(g(t)=t+e^{2t}\\) is periodic, so it has infinitely many roots"
+            "&#8203;\\(g(t)=t+e^{2t}\\) is strictly increasing and ranges from \\(-\\infty\\) to \\(\\infty\\), so it has exactly one root",
+            "&#8203;\\(g(t)=t+e^{2t}\\) is always positive, so it has no roots",
+            "&#8203;\\(g(t)=t+e^{2t}\\) is a quadratic with two real roots",
+            "&#8203;\\(g(t)=t+e^{2t}\\) is periodic, so it has infinitely many roots"
           ],
           "answer": 0,
           "hint": "Analyse \\(g(t)=t+e^{2t}\\) and its derivative \\(g'(t)\\).",
@@ -8823,10 +8823,10 @@
           "difficulty": "medium",
           "stem": "Consider the curve \\( y = x e^{2x} \\).\n\nShow that there is one stationary point, and determine its nature.",
           "options": [
-            "\\((-\\dfrac{1}{2},-\\dfrac{1}{2e})\\), local minimum",
-            "\\((-\\dfrac{1}{2},-\\dfrac{1}{2e})\\), local maximum",
-            "\\((0,0)\\), local minimum",
-            "\\((-1,-e^{-2})\\), local minimum"
+            "&#8203;\\((-\\dfrac{1}{2},-\\dfrac{1}{2e})\\), local minimum",
+            "&#8203;\\((-\\dfrac{1}{2},-\\dfrac{1}{2e})\\), local maximum",
+            "&#8203;\\((0,0)\\), local minimum",
+            "&#8203;\\((-1,-e^{-2})\\), local minimum"
           ],
           "answer": 0,
           "hint": "Solve y'=0; use y'' test.",
@@ -9127,10 +9127,10 @@
           "difficulty": "hard",
           "stem": "The hyperbolic cosine is defined by\n\\( \\displaystyle \\cosh x = \\dfrac{e^{x} + e^{-x}}{2} \\).\nConsider the curve \\( y = \\cosh x \\).\n\nUsing the definition \\(\\cosh x = \\dfrac{e^{x}+e^{-x}}{2}\\), which statement is correct?",
           "options": [
-            "\\(\\cosh x\\) is even (\\(f(-x)=f(x)\\)) and always positive",
-            "\\(\\cosh x\\) is odd (\\(f(-x)=-f(x)\\)) and always positive",
-            "\\(\\cosh x\\) is even and can be negative",
-            "\\(\\cosh x\\) is odd and can be negative"
+            "&#8203;\\(\\cosh x\\) is even (\\(f(-x)=f(x)\\)) and always positive",
+            "&#8203;\\(\\cosh x\\) is odd (\\(f(-x)=-f(x)\\)) and always positive",
+            "&#8203;\\(\\cosh x\\) is even and can be negative",
+            "&#8203;\\(\\cosh x\\) is odd and can be negative"
           ],
           "answer": 0,
           "hint": "Compute \\(\\cosh(-x)\\) from the definition, and note that both exponentials are positive.",
@@ -9157,10 +9157,10 @@
           "difficulty": "hard",
           "stem": "The hyperbolic cosine is defined by\n\\( \\displaystyle \\cosh x = \\dfrac{e^{x} + e^{-x}}{2} \\).\nConsider the curve \\( y = \\cosh x \\).\n\nUsing \\(y=\\dfrac{e^{x}+e^{-x}}{2}\\), find \\(\\dfrac{dy}{dx}\\) and the stationary point at the y-intercept.",
           "options": [
-            "\\(y'=\\dfrac{e^{x}-e^{-x}}{2}\\); stationary point \\((0,1)\\)",
-            "\\(y'=\\dfrac{e^{x}+e^{-x}}{2}\\); stationary point \\((0,1)\\)",
-            "\\(y'=\\dfrac{e^{x}-e^{-x}}{2}\\); stationary point \\((1,0)\\)",
-            "\\(y'=e^{x}-e^{-x}\\); stationary point \\((0,1)\\)"
+            "&#8203;\\(y'=\\dfrac{e^{x}-e^{-x}}{2}\\); stationary point \\((0,1)\\)",
+            "&#8203;\\(y'=\\dfrac{e^{x}+e^{-x}}{2}\\); stationary point \\((0,1)\\)",
+            "&#8203;\\(y'=\\dfrac{e^{x}-e^{-x}}{2}\\); stationary point \\((1,0)\\)",
+            "&#8203;\\(y'=e^{x}-e^{-x}\\); stationary point \\((0,1)\\)"
           ],
           "answer": 0,
           "hint": "Differentiate each exponential term separately. Set the derivative equal to zero.",
@@ -9195,10 +9195,10 @@
           "difficulty": "hard",
           "stem": "The hyperbolic cosine is defined by\n\\( \\displaystyle \\cosh x = \\dfrac{e^{x} + e^{-x}}{2} \\).\nConsider the curve \\( y = \\cosh x \\).\n\nWhich statement correctly describes the concavity of \\(y=\\dfrac{e^{x}+e^{-x}}{2}\\)?",
           "options": [
-            "\\(y''=\\dfrac{e^{x}+e^{-x}}{2}>0\\) for all \\(x\\), so always concave up",
-            "\\(y''=\\dfrac{e^{x}-e^{-x}}{2}\\) changes sign, so concavity changes",
-            "\\(y''=-\\dfrac{e^{x}+e^{-x}}{2}<0\\) for all \\(x\\), so always concave down",
-            "\\(y''=0\\) for all \\(x\\), so the curve is a straight line"
+            "&#8203;\\(y''=\\dfrac{e^{x}+e^{-x}}{2}>0\\) for all \\(x\\), so always concave up",
+            "&#8203;\\(y''=\\dfrac{e^{x}-e^{-x}}{2}\\) changes sign, so concavity changes",
+            "&#8203;\\(y''=-\\dfrac{e^{x}+e^{-x}}{2}<0\\) for all \\(x\\), so always concave down",
+            "&#8203;\\(y''=0\\) for all \\(x\\), so the curve is a straight line"
           ],
           "answer": 0,
           "hint": "Differentiate the first derivative again. Compare with the original function.",
@@ -20454,7 +20454,7 @@
           "options": [
             "\\(\\ln x\\)  and  \\(\\ln(-x)\\)",
             "\\(\\ln x\\)  and  \\(-\\ln x\\)",
-            "\\(\\ln x\\)  for all  \\(x \\neq 0\\)",
+            "&#8203;\\(\\ln x\\)  for all  \\(x \\neq 0\\)",
             "\\(|\\ln x|\\)  and  \\(|\\ln x|\\)"
           ],
           "answer": 0,
@@ -20567,7 +20567,7 @@
           "difficulty": "easy",
           "stem": "Why must \\(x = 0\\) be excluded from the domain of \\(y = \\ln|x|\\)?",
           "options": [
-            "\\(\\ln|0|\\) is undefined, because \\(\\ln\\) requires a positive argument",
+            "&#8203;\\(\\ln|0|\\) is undefined, because \\(\\ln\\) requires a positive argument",
             "The derivative \\(\\dfrac{1}{x}\\) equals zero at \\(x = 0\\)",
             "\\(\\ln 0 = 1\\)",
             "The curve has a horizontal tangent at \\(x = 0\\)"
@@ -21758,10 +21758,10 @@
           "difficulty": "easy",
           "stem": "Consider the curve \\(y = 2\\ln x\\).\n\nGiven domain \\(x > 0\\) and \\(y' = \\dfrac{2}{x}\\), why is the gradient of every tangent positive?",
           "options": [
-            "\\(\\dfrac{2}{x} > 0\\) for all \\(x > 0\\)",
-            "\\(\\dfrac{2}{x} < 0\\) for all \\(x > 0\\)",
-            "\\(y' = 0\\) everywhere",
-            "\\(y'\\) is undefined on the domain"
+            "&#8203;\\(\\dfrac{2}{x} > 0\\) for all \\(x > 0\\)",
+            "&#8203;\\(\\dfrac{2}{x} < 0\\) for all \\(x > 0\\)",
+            "&#8203;\\(y' = 0\\) everywhere",
+            "&#8203;\\(y'\\) is undefined on the domain"
           ],
           "answer": 0,
           "hint": "Differentiate carefully; evaluate at the given point when asked.",
@@ -21784,8 +21784,8 @@
           "difficulty": "medium",
           "stem": "Consider the curve \\(y = 2\\ln x\\).\n\nGiven \\(y' = \\dfrac{2}{x}\\) for \\(x > 0\\), why is the gradient of every normal negative?",
           "options": [
-            "\\(m_n = -\\dfrac{x}{2} < 0\\) for all \\(x > 0\\)",
-            "\\(m_n = \\dfrac{x}{2} > 0\\) for all \\(x > 0\\)",
+            "&#8203;\\(m_n = -\\dfrac{x}{2} < 0\\) for all \\(x > 0\\)",
+            "&#8203;\\(m_n = \\dfrac{x}{2} > 0\\) for all \\(x > 0\\)",
             "\\(m_n = -\\dfrac{2}{x} > 0\\)",
             "Normals have the same gradient as tangents"
           ],
@@ -21836,10 +21836,10 @@
           "difficulty": "medium",
           "stem": "Consider the curve \\(y = 2\\ln x\\).\n\nGiven \\(y'' = -\\dfrac{2}{x^{2}}\\) on \\(x > 0\\), which statement is correct?",
           "options": [
-            "\\(y'' < 0\\) for all \\(x > 0\\), so the curve is concave down",
-            "\\(y'' > 0\\) for all \\(x > 0\\), so the curve is concave up",
-            "\\(y'' = 0\\) everywhere, so the curve is a straight line",
-            "\\(y''\\) changes sign, so there is a point of inflection"
+            "&#8203;\\(y'' < 0\\) for all \\(x > 0\\), so the curve is concave down",
+            "&#8203;\\(y'' > 0\\) for all \\(x > 0\\), so the curve is concave up",
+            "&#8203;\\(y'' = 0\\) everywhere, so the curve is a straight line",
+            "&#8203;\\(y''\\) changes sign, so there is a point of inflection"
           ],
           "answer": 0,
           "hint": "Differentiate carefully; evaluate at the given point when asked.",
@@ -22144,10 +22144,10 @@
           "difficulty": "medium",
           "stem": "Consider the function \\(y = 2x - \\ln x\\).\n\nGiven \\(y'' = \\dfrac{1}{x^{2}}\\) and domain \\(x > 0\\), which statement correctly shows the curve is concave up on its domain?",
           "options": [
-            "\\(y'' > 0\\) for all \\(x > 0\\), so the curve is concave up",
-            "\\(y'' < 0\\) for all \\(x > 0\\), so the curve is concave down",
-            "\\(y'' = 0\\) for all \\(x > 0\\)",
-            "\\(y''\\) changes sign at \\(x = 1\\)"
+            "&#8203;\\(y'' > 0\\) for all \\(x > 0\\), so the curve is concave up",
+            "&#8203;\\(y'' < 0\\) for all \\(x > 0\\), so the curve is concave down",
+            "&#8203;\\(y'' = 0\\) for all \\(x > 0\\)",
+            "&#8203;\\(y''\\) changes sign at \\(x = 1\\)"
           ],
           "answer": 0,
           "hint": "Differentiate carefully; evaluate at the given point when asked.",
@@ -26812,7 +26812,7 @@
           "stem": "Differentiate \\(\\ln(2\\ln x)\\) and hence find the family of primitives of \\(\\dfrac{1}{x\\ln x}\\).",
           "options": [
             "\\(\\ln|\\ln x| + C\\)",
-            "\\(\\ln|2\\ln x| + C\\) (not simplified)",
+            "&#8203;\\(\\ln|2\\ln x| + C\\) (not simplified)",
             "\\(\\dfrac{1}{\\ln x} + C\\)",
             "\\(\\ln|x\\ln x| + C\\)"
           ],
@@ -27524,7 +27524,7 @@
           "stem": "Differentiate \\(\\ln(2\\ln x)\\) and hence find the family of primitives of \\(\\dfrac{1}{x\\ln x}\\).",
           "options": [
             "\\(\\ln|\\ln x| + C\\)",
-            "\\(\\ln|2\\ln x| + C\\) (not simplified)",
+            "&#8203;\\(\\ln|2\\ln x| + C\\) (not simplified)",
             "\\(\\dfrac{1}{\\ln x} + C\\)",
             "\\(\\ln|x\\ln x| + C\\)"
           ],
@@ -32364,10 +32364,10 @@
           "difficulty": "hard",
           "stem": "Given \\(f(x)=e^{x}-ex\\), which argument correctly shows \\(f(x)\\ge 0\\) for all real \\(x\\), with equality only at \\(x=1\\)?",
           "options": [
-            "\\(f'(x)=e^{x}-e=0\\) only at \\(x=1\\); \\(f''(1)=e>0\\) so a minimum; \\(f(1)=0\\); hence \\(f\\ge 0\\)",
+            "&#8203;\\(f'(x)=e^{x}-e=0\\) only at \\(x=1\\); \\(f''(1)=e>0\\) so a minimum; \\(f(1)=0\\); hence \\(f\\ge 0\\)",
             "\\(f'(x)=0\\) at \\(x=0\\) and \\(f(0)=1>0\\)",
-            "\\(f(x)=e^{x}(1-x)\\) which is always positive",
-            "\\(f''(x)<0\\) everywhere so the graph is always above the axis"
+            "&#8203;\\(f(x)=e^{x}(1-x)\\) which is always positive",
+            "&#8203;\\(f''(x)<0\\) everywhere so the graph is always above the axis"
           ],
           "answer": 0,
           "hint": "Use standard derivatives and integrals of exponential and logarithmic functions.",

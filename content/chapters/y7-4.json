@@ -566,10 +566,10 @@
           "difficulty": "medium",
           "stem": "Consider the fractions \\(A = \\dfrac{2}{5}\\), \\(B = 1\\dfrac{3}{5}\\), and \\(C = \\dfrac{12}{5}\\) on a number line marked with whole numbers \\(0, 1, 2, 3\\). Which statement about their locations is true?",
           "options": [
-            "\\(A\\) is between \\(1\\) and \\(2\\); \\(B\\) is between \\(2\\) and \\(3\\); \\(C\\) is exactly at \\(2\\).",
-            "\\(A\\) is between \\(0\\) and \\(1\\); \\(B\\) is exactly at \\(1\\); \\(C\\) is between \\(1\\) and \\(2\\).",
-            "\\(A\\) is between \\(0\\) and \\(1\\); \\(B\\) is between \\(1\\) and \\(2\\); \\(C\\) is between \\(2\\) and \\(3\\).",
-            "\\(A\\) is between \\(2\\) and \\(3\\); \\(B\\) is between \\(0\\) and \\(1\\); \\(C\\) is between \\(1\\) and \\(2\\)."
+            "&#8203;\\(A\\) is between \\(1\\) and \\(2\\); \\(B\\) is between \\(2\\) and \\(3\\); \\(C\\) is exactly at \\(2\\).",
+            "&#8203;\\(A\\) is between \\(0\\) and \\(1\\); \\(B\\) is exactly at \\(1\\); \\(C\\) is between \\(1\\) and \\(2\\).",
+            "&#8203;\\(A\\) is between \\(0\\) and \\(1\\); \\(B\\) is between \\(1\\) and \\(2\\); \\(C\\) is between \\(2\\) and \\(3\\).",
+            "&#8203;\\(A\\) is between \\(2\\) and \\(3\\); \\(B\\) is between \\(0\\) and \\(1\\); \\(C\\) is between \\(1\\) and \\(2\\)."
           ],
           "answer": 2,
           "steps": [
@@ -604,10 +604,10 @@
           "difficulty": "medium",
           "stem": "Consider the fractions \\(P = \\dfrac{5}{6}\\), \\(Q = 1\\dfrac{2}{3}\\), and \\(R = \\dfrac{13}{6}\\) on a number line. Which statement about their locations is true?",
           "options": [
-            "\\(P\\) is between \\(1\\) and \\(2\\); \\(Q\\) is between \\(0\\) and \\(1\\); \\(R\\) is between \\(2\\) and \\(3\\).",
-            "\\(P\\) is between \\(0\\) and \\(1\\); \\(Q\\) is between \\(1\\) and \\(2\\); \\(R\\) is between \\(2\\) and \\(3\\).",
-            "\\(P\\) is between \\(0\\) and \\(1\\); \\(Q\\) is between \\(2\\) and \\(3\\); \\(R\\) is exactly at \\(2\\).",
-            "\\(P\\) is exactly at \\(1\\); \\(Q\\) is between \\(1\\) and \\(2\\); \\(R\\) is between \\(0\\) and \\(1\\)."
+            "&#8203;\\(P\\) is between \\(1\\) and \\(2\\); \\(Q\\) is between \\(0\\) and \\(1\\); \\(R\\) is between \\(2\\) and \\(3\\).",
+            "&#8203;\\(P\\) is between \\(0\\) and \\(1\\); \\(Q\\) is between \\(1\\) and \\(2\\); \\(R\\) is between \\(2\\) and \\(3\\).",
+            "&#8203;\\(P\\) is between \\(0\\) and \\(1\\); \\(Q\\) is between \\(2\\) and \\(3\\); \\(R\\) is exactly at \\(2\\).",
+            "&#8203;\\(P\\) is exactly at \\(1\\); \\(Q\\) is between \\(1\\) and \\(2\\); \\(R\\) is between \\(0\\) and \\(1\\)."
           ],
           "answer": 1,
           "steps": [
@@ -682,10 +682,10 @@
           "difficulty": "easy",
           "stem": "Where are the points \\(A = \\dfrac{3}{5}\\), \\(B = \\dfrac{9}{5}\\), and \\(C = \\dfrac{15}{5}\\) located on a number line?",
           "options": [
-            "\\(A\\) is between \\(1\\) and \\(2\\); \\(B\\) is between \\(2\\) and \\(3\\); \\(C\\) is exactly at \\(5\\).",
-            "\\(A\\) is exactly at \\(1\\); \\(B\\) is between \\(1\\) and \\(2\\); \\(C\\) is between \\(2\\) and \\(3\\).",
-            "\\(A\\) is between \\(0\\) and \\(1\\); \\(B\\) is between \\(1\\) and \\(2\\); \\(C\\) is exactly at \\(3\\).",
-            "\\(A\\) is between \\(0\\) and \\(1\\); \\(B\\) is exactly at \\(2\\); \\(C\\) is between \\(3\\) and \\(4\\)."
+            "&#8203;\\(A\\) is between \\(1\\) and \\(2\\); \\(B\\) is between \\(2\\) and \\(3\\); \\(C\\) is exactly at \\(5\\).",
+            "&#8203;\\(A\\) is exactly at \\(1\\); \\(B\\) is between \\(1\\) and \\(2\\); \\(C\\) is between \\(2\\) and \\(3\\).",
+            "&#8203;\\(A\\) is between \\(0\\) and \\(1\\); \\(B\\) is between \\(1\\) and \\(2\\); \\(C\\) is exactly at \\(3\\).",
+            "&#8203;\\(A\\) is between \\(0\\) and \\(1\\); \\(B\\) is exactly at \\(2\\); \\(C\\) is between \\(3\\) and \\(4\\)."
           ],
           "answer": 2,
           "steps": [

@@ -489,10 +489,10 @@
             }
           },
           "options": [
-            "\\(130^\\circ\\) (Angles at a point)",
-            "\\(130^\\circ\\) (Angles on a straight line)",
-            "\\(40^\\circ\\) (Angles at a point)",
-            "\\(50^\\circ\\) (Vertically opposite angles)"
+            "&#8203;\\(130^\\circ\\) (Angles at a point)",
+            "&#8203;\\(130^\\circ\\) (Angles on a straight line)",
+            "&#8203;\\(40^\\circ\\) (Angles at a point)",
+            "&#8203;\\(50^\\circ\\) (Vertically opposite angles)"
           ],
           "answer": 0,
           "hint": "Sum of angles around a point is \\(360^\\circ\\).",

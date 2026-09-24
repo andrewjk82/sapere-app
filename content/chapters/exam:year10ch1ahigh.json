@@ -758,10 +758,10 @@
           "difficulty": "hard",
           "stem": "A theme park reduced its ticket price by \\(15\\%\\) and saw attendance jump by \\(40\\%\\). What percentage change occurred in total ticket revenue? Round to two decimal places.",
           "options": [
-            "\\(19.00\\%\\) increase",
-            "\\(25.00\\%\\) increase",
-            "\\(19.00\\%\\) decrease",
-            "\\(21.00\\%\\) increase"
+            "&#8203;\\(19.00\\%\\) increase",
+            "&#8203;\\(25.00\\%\\) increase",
+            "&#8203;\\(19.00\\%\\) decrease",
+            "&#8203;\\(21.00\\%\\) increase"
           ],
           "answer": 0,
           "steps": [

@@ -1470,9 +1470,9 @@
           "difficulty": "medium",
           "stem": "A soft drink company produces a bottled drink. The amount of liquid poured into each bottle by the bottling machine is normally distributed, with a mean of 300 mL and a standard deviation of 10 mL.\n\n(a) A bottle has a $z$-score of $-1.2$. How many mL below the mean is this bottle?\n\n(b) In order to comply with local regulations, at least $97.5\\%$ of bottles must contain more liquid than indicated on the label. What is the largest amount of millilitres the bottle's label should show in order to comply with the regulations?",
           "options": [
-            "\\((a) 12 mL below the mean\n(b) 280 mL\\)",
-            "\\((a) 12 mL below the mean\n(b) 280 mL + 1\\)",
-            "\\((a) 14 mL below the mean\n(b) 480 mL\\)",
+            "&#8203;\\((a) 12 mL below the mean\n(b) 280 mL\\)",
+            "&#8203;\\((a) 12 mL below the mean\n(b) 280 mL + 1\\)",
+            "&#8203;\\((a) 14 mL below the mean\n(b) 480 mL\\)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
           "answer": 0,
@@ -1556,9 +1556,9 @@
           "difficulty": "hard",
           "stem": "The functions $y = \\sqrt{x+1}$ and $y = 11-x$ are sketched below. They intersect at $(8, 3)$.\n\nCalculate the area bounded by the curves $y = \\sqrt{x+1}$ and $y = 11-x$ and the $x$-axis.",
           "options": [
-            "\\(22.5\\) square units",
-            "\\(22.5\\) square units + 1",
-            "\\(44.5\\) square units",
+            "&#8203;\\(22.5\\) square units",
+            "&#8203;\\(22.5\\) square units + 1",
+            "&#8203;\\(44.5\\) square units",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
           "answer": 0,
@@ -3346,9 +3346,9 @@
           "difficulty": "medium",
           "stem": "A juice company fills bottles using a machine. The volume poured is normally distributed, with a mean of 500 mL and a standard deviation of 15 mL.\n\n(a) A bottle has a $z$-score of $-1.4$. How many mL below the mean is this bottle?\n\n(b) At least $97.5\\%$ of bottles must contain more liquid than shown on the label. What is the largest label value the company should use?",
           "options": [
-            "\\((a) 21 mL below the mean\n(b) 470 mL\\)",
-            "\\((a) 21 mL below the mean\n(b) 470 mL + 1\\)",
-            "\\((a) 41 mL below the mean\n(b) 470 mL\\)",
+            "&#8203;\\((a) 21 mL below the mean\n(b) 470 mL\\)",
+            "&#8203;\\((a) 21 mL below the mean\n(b) 470 mL + 1\\)",
+            "&#8203;\\((a) 41 mL below the mean\n(b) 470 mL\\)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
           "answer": 0,

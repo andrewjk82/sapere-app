@@ -967,10 +967,10 @@
           "difficulty": "medium",
           "stem": "Hence, or otherwise, find the area bounded by the curve $y = f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x - \\pi)\\right)$ and the $x$-axis in the interval $[-\\pi, pi]$.",
           "options": [
-            "\\(4\\) square units",
-            "\\(4\\) square units + 1",
-            "\\(2\\) square units",
-            "\\(8\\) square units"
+            "&#8203;\\(4\\) square units",
+            "&#8203;\\(4\\) square units + 1",
+            "&#8203;\\(2\\) square units",
+            "&#8203;\\(8\\) square units"
           ],
           "answer": 0,
           "hint": "From part (a), $f(x) = \\cos\\dfrac{x}{2}$, which is non-negative on $[-\\pi, pi]$. Use the even symmetry to double the integral over $[0, pi]$.",
@@ -1239,8 +1239,8 @@
           "difficulty": "medium",
           "stem": "For the oven model $T = 175 - 150 \\times (0.9)^{0.2t}$, calculate the average rate at which the temperature changes per minute from $t = 25$ to $t = 75$, correct to two decimal places.",
           "options": [
-            "\\(\\approx 1.15\\) °C per minute",
-            "\\(\\approx 1.15\\) °C per minute + 1",
+            "&#8203;\\(\\approx 1.15\\) °C per minute",
+            "&#8203;\\(\\approx 1.15\\) °C per minute + 1",
             "\\(\\dfrac{12}{x + 2}\\)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
@@ -1618,7 +1618,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(A = \\pi r^2 + \\pi rh + 2rh\\); substituting \\(h = \\dfrac{2V}{\\pi r^2}\\) gives \\(A = \\pi r^2 + \\dfrac{2V}{\\pi}\\left(\\dfrac{2+\\pi}{r}\\right)\\)."
+            "&#8203;\\(A = \\pi r^2 + \\pi rh + 2rh\\); substituting \\(h = \\dfrac{2V}{\\pi r^2}\\) gives \\(A = \\pi r^2 + \\dfrac{2V}{\\pi}\\left(\\dfrac{2+\\pi}{r}\\right)\\)."
           ],
           "answer": 3,
           "hint": "The closed half-cylinder has two semicircular ends, a curved half-cylindrical surface, and a flat rectangular top. Express $h$ in terms of $V$ and substitute.",
@@ -2262,10 +2262,10 @@
           "difficulty": "medium",
           "stem": "For $f(x) = 3x\\left(1 - \\dfrac{x}{4}\\right)^3 + 1$, explain why the graph of $y = f(x)$ must cross the $x$-axis at least once between $x = 5$ and $x = 6$.",
           "options": [
-            "\\(f(5) = -\\dfrac{15}{64} < 0\\) and \\(f(6) = \\dfrac{9}{4} > 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis.",
-            "\\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = \\dfrac{5}{4} > 0\\); since the derivative changes sign, it must cross the \\(x\\)-axis.",
-            "\\(f(5) = -\\dfrac{49}{64} < 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since the second derivative is zero, it must cross the \\(x\\)-axis.",
-            "\\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis."
+            "&#8203;\\(f(5) = -\\dfrac{15}{64} < 0\\) and \\(f(6) = \\dfrac{9}{4} > 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis.",
+            "&#8203;\\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = \\dfrac{5}{4} > 0\\); since the derivative changes sign, it must cross the \\(x\\)-axis.",
+            "&#8203;\\(f(5) = -\\dfrac{49}{64} < 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since the second derivative is zero, it must cross the \\(x\\)-axis.",
+            "&#8203;\\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis."
           ],
           "answer": 3,
           "hint": "Evaluate $f(5)$ and $f(6)$ and apply the sign-change argument for a continuous function.",
@@ -2418,7 +2418,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(f(x) \\geq 0\\) everywhere, and \\(\\displaystyle\\int_0^{\\ln 4} e^{-x/2}\\,dx = 1\\), so \\(f\\) is a valid pdf."
+            "&#8203;\\(f(x) \\geq 0\\) everywhere, and \\(\\displaystyle\\int_0^{\\ln 4} e^{-x/2}\\,dx = 1\\), so \\(f\\) is a valid pdf."
           ],
           "answer": 3,
           "hint": "Check both conditions: $f(x) \\geq 0$ on its domain, and the total integral equals 1. Note $e^{-\\frac{1}{2}\\ln 4} = \\dfrac{1}{2}$.",
@@ -2708,10 +2708,10 @@
             }
           },
           "options": [
-            "\\(2\\) square units",
-            "\\(2 + \\ln 4\\) square units",
-            "\\(2 - \\log 4\\) square units",
-            "\\(2 - \\ln 4\\) square units (i.e. \\(2 - 2\\ln 2\\))"
+            "&#8203;\\(2\\) square units",
+            "&#8203;\\(2 + \\ln 4\\) square units",
+            "&#8203;\\(2 - \\log 4\\) square units",
+            "&#8203;\\(2 - \\ln 4\\) square units (i.e. \\(2 - 2\\ln 2\\))"
           ],
           "answer": 3,
           "hint": "The curves intersect at $x = \\dfrac{\\pi}{6}, dfrac{\\pi}{2}, dfrac{5\\pi}{6}$. Determine which curve is on top in each strip, integrate $2\\cos x - \\cot x$ accordingly. Note $\\int \\cot x\\,dx = \\ln|\\sin x|$.",
@@ -2891,10 +2891,10 @@
           "difficulty": "hard",
           "stem": "A heater converts electrical power, measured in watts, into heat such that the heat produced is given by $h(x) = (f(x))^2$. The heater is plugged into a faulty socket which outputs $x = g(t)$ watts at time $t$ seconds. The power output at time $t = 1$ is 3 watts and is increasing at a rate of 4 watts per second. By considering $h'(x)$ and using the fact that $\\dfrac{d}{dt}f(g(t)) = f'(g(t)) \\times g'(t)$, find the rate of change of the heat produced at time $t = 1$, given that $f(3) = 5$ and $f'(3) = 2$.",
           "options": [
-            "\\(80\\) watts per second",
-            "\\(80\\) watts per second + 1",
-            "\\(20\\) watts per second",
-            "\\(40\\) watts per second"
+            "&#8203;\\(80\\) watts per second",
+            "&#8203;\\(80\\) watts per second + 1",
+            "&#8203;\\(20\\) watts per second",
+            "&#8203;\\(40\\) watts per second"
           ],
           "answer": 0,
           "hint": "The heat as a function of time is $H(t) = (f(g(t)))^2$. Differentiate with the chain rule: $H'(t) = 2f(g(t)) \\cdot f'(g(t)) \\cdot g'(t)$.",
@@ -3508,7 +3508,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(y = \\dfrac{9 - x}{4}\\) (equivalently \\(x + 4y - 9 = 0\\))"
+            "&#8203;\\(y = \\dfrac{9 - x}{4}\\) (equivalently \\(x + 4y - 9 = 0\\))"
           ],
           "answer": 3,
           "hint": "The normal is perpendicular to the tangent: its gradient is the negative reciprocal of $\\dfrac{dy}{dx}$ at the point.",
@@ -3739,8 +3739,8 @@
           "difficulty": "medium",
           "stem": "Hence, or otherwise, find the area bounded by the curve $y = f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x + \\pi)\\right)$ and the $x$-axis in the interval $[-\\pi, pi]$.",
           "options": [
-            "\\(4\\) square units",
-            "\\(4\\) square units + 1",
+            "&#8203;\\(4\\) square units",
+            "&#8203;\\(4\\) square units + 1",
             "\\(\\dfrac{12}{x + 2}\\)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
@@ -3944,9 +3944,9 @@
           "difficulty": "medium",
           "stem": "For the oven model $T = 190 - 160 \\times (0.85)^{0.25t}$, calculate the average rate at which the temperature changes per minute from $t = 20$ to $t = 60$, correct to two decimal places.",
           "options": [
-            "\\(\\approx 1.43\\) °C per minute",
-            "\\(\\approx 1.43\\) °C per minute + 1",
-            "\\(\\approx 1.44\\) °C per minute",
+            "&#8203;\\(\\approx 1.43\\) °C per minute",
+            "&#8203;\\(\\approx 1.43\\) °C per minute + 1",
+            "&#8203;\\(\\approx 1.44\\) °C per minute",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
           "answer": 0,
@@ -4284,7 +4284,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(A = 2\\pi r^2 + 2\\pi rh\\); substituting \\(h = \\dfrac{V}{\\pi r^2}\\) gives \\(A = 2\\pi r^2 + \\dfrac{2V}{r}\\)."
+            "&#8203;\\(A = 2\\pi r^2 + 2\\pi rh\\); substituting \\(h = \\dfrac{V}{\\pi r^2}\\) gives \\(A = 2\\pi r^2 + \\dfrac{2V}{r}\\)."
           ],
           "answer": 3,
           "hint": "The closed cylinder has two circular ends and a curved surface. Express $h$ in terms of $V$ and substitute.",
@@ -4941,10 +4941,10 @@
           "difficulty": "medium",
           "stem": "For $g(x) = 2x\\left(1 - \\dfrac{x}{3}\\right)^3 + 1$, explain why the graph of $y = g(x)$ must cross the $x$-axis at least once between $x = 4$ and $x = 5$.",
           "options": [
-            "\\(g(4) = -\\dfrac{19}{27} < 0\\) and \\(g(5) = \\dfrac{53}{27} > 0\\); since \\(g\\) is continuous and changes sign, it must cross the \\(x\\)-axis.",
-            "\\(g(4) = \\dfrac{19}{27} > 0\\) and \\(g(5) = \\dfrac{53}{27} > 0\\); since the derivative changes sign, it must cross the \\(x\\)-axis.",
-            "\\(g(4) = -\\dfrac{19}{27} < 0\\) and \\(g(5) = -\\dfrac{53}{27} < 0\\); since the second derivative is zero, it must cross the \\(x\\)-axis.",
-            "\\(g(4) = \\dfrac{19}{27} > 0\\) and \\(g(5) = -\\dfrac{53}{27} < 0\\); since \\(g\\) is continuous and changes sign, it must cross the \\(x\\)-axis."
+            "&#8203;\\(g(4) = -\\dfrac{19}{27} < 0\\) and \\(g(5) = \\dfrac{53}{27} > 0\\); since \\(g\\) is continuous and changes sign, it must cross the \\(x\\)-axis.",
+            "&#8203;\\(g(4) = \\dfrac{19}{27} > 0\\) and \\(g(5) = \\dfrac{53}{27} > 0\\); since the derivative changes sign, it must cross the \\(x\\)-axis.",
+            "&#8203;\\(g(4) = -\\dfrac{19}{27} < 0\\) and \\(g(5) = -\\dfrac{53}{27} < 0\\); since the second derivative is zero, it must cross the \\(x\\)-axis.",
+            "&#8203;\\(g(4) = \\dfrac{19}{27} > 0\\) and \\(g(5) = -\\dfrac{53}{27} < 0\\); since \\(g\\) is continuous and changes sign, it must cross the \\(x\\)-axis."
           ],
           "answer": 3,
           "hint": "Evaluate $g(4)$ and $g(5)$ and apply the sign-change argument for a continuous function.",
@@ -5036,7 +5036,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(f(x) \\geq 0\\) everywhere, and \\(\\displaystyle\\int_0^{\\ln(27/8)} e^{-x/3}\\,dx = 1\\), so \\(f\\) is a valid pdf."
+            "&#8203;\\(f(x) \\geq 0\\) everywhere, and \\(\\displaystyle\\int_0^{\\ln(27/8)} e^{-x/3}\\,dx = 1\\), so \\(f\\) is a valid pdf."
           ],
           "answer": 3,
           "hint": "Check both conditions: $f(x) \\geq 0$, and the total integral equals 1. Note $e^{-\\frac{1}{3}\\ln(27/8)} = \\dfrac{2}{3}$.",
@@ -5306,10 +5306,10 @@
             }
           },
           "options": [
-            "\\(1 + \\ln 2\\) square units",
-            "\\(1 - \\ln 2\\) square units",
-            "\\(1 - \\ln 4\\) square units",
-            "\\(1 - \\log 2\\) square units"
+            "&#8203;\\(1 + \\ln 2\\) square units",
+            "&#8203;\\(1 - \\ln 2\\) square units",
+            "&#8203;\\(1 - \\ln 4\\) square units",
+            "&#8203;\\(1 - \\log 2\\) square units"
           ],
           "answer": 1,
           "hint": "The curves intersect at $x = 0$ and $x = \\dfrac{\\pi}{3}$, with $2\\sin x$ on top. Note $\\int \\tan x\\,dx = -\\ln|\\cos x|$.",
@@ -5444,8 +5444,8 @@
           "difficulty": "hard",
           "stem": "A heater converts electrical power, measured in watts, into heat such that the heat produced is given by $h(x) = (f(x))^3$. The heater is plugged into a faulty socket which outputs $x = g(t)$ watts at time $t$ seconds. The power output at time $t = 2$ is 4 watts and is increasing at a rate of 5 watts per second. By considering $h'(x)$ and using the fact that $\\dfrac{d}{dt}f(g(t)) = f'(g(t)) \\times g'(t)$, find the rate of change of the heat produced at time $t = 2$, given that $f(4) = 2$ and $f'(4) = 3$.",
           "options": [
-            "\\(180\\) watts per second",
-            "\\(180\\) watts per second + 1",
+            "&#8203;\\(180\\) watts per second",
+            "&#8203;\\(180\\) watts per second + 1",
             "\\(\\dfrac{12}{x + 2}\\)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],

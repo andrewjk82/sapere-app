@@ -16762,7 +16762,7 @@
                     "axis": true,
                     "showNavigation": false
                   },
-                  "script": "var f = function(x){ return Math.abs(2*x - 4) - 3; };\nboard.create('functiongraph', [f, -2, 6], {strokeColor: '#3b82f6', strokeWidth: 3});\nvar vertex = board.create('point', [2, -3], {name: 'Min: (2, -3)', size: 4, fillColor: '#ef4444', strokeColor: '#ef4444'});\nboard.create('segment', [[2,0], vertex], {strokeColor: 'gray', dash: 2});\nboard.create('segment', [[0,-3], vertex], {strokeColor: 'gray', dash: 2});\nboard.create('text', [3.5, 2, 'Domain: all real numbers'], {fontSize: 14});\nboard.create('text', [3.5, 1, 'Range: y &ge; -3'], {fontSize: 14});"
+                  "script": "var f = function(x){ return Math.abs(2*x - 4) - 3; };\nboard.create('functiongraph', [f, -2, 6], {strokeColor: '#3b82f6', strokeWidth: 3});\nvar vertex = board.create('point', [2, -3], {name: 'Min: (2, -3)', size: 4, fillColor: '#ef4444', strokeColor: '#ef4444'});\n\n\nboard.create('text', [3.5, 2, 'Domain: all real numbers'], {fontSize: 14});\nboard.create('text', [3.5, 1, 'Range: y &ge; -3'], {fontSize: 14});"
                 }
               }
             }
@@ -21628,10 +21628,10 @@
                     "jsxGraph": {
                       "attributes": {
                         "boundingbox": [
-                          -1,
-                          5,
-                          2.5,
-                          -1
+                          -2,
+                          10,
+                          8,
+                          -2
                         ],
                         "axis": true,
                         "showNavigation": false
@@ -21670,10 +21670,10 @@
                     "jsxGraph": {
                       "attributes": {
                         "boundingbox": [
-                          -1,
+                          -2,
                           10,
-                          5,
-                          -1
+                          8,
+                          -2
                         ],
                         "axis": true,
                         "showNavigation": false

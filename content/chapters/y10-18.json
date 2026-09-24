@@ -6475,10 +6475,10 @@
             "svg": "fig:32d46cd840"
           },
           "options": [
-            "\\(4.3\\) million",
-            "\\(4.0\\) million",
-            "\\(4.6\\) million",
-            "\\(4.1\\) million"
+            "&#8203;\\(4.3\\) million",
+            "&#8203;\\(4.0\\) million",
+            "&#8203;\\(4.6\\) million",
+            "&#8203;\\(4.1\\) million"
           ],
           "answer": 0,
           "hint": "Find the equation of the line through (0, 1) and (10, 4), then substitute Year = 11.",

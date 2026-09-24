@@ -2503,9 +2503,9 @@
           "stem": "At time \\(t\\) years after it was purchased, the value \\(\\$V\\) of a car is given by\n\\( V = 25\\,000e^{-0.5t} \\).\nFind the loss in value of the car during the third year (from the start of year 3 to the end of year 3).",
           "options": [
             "\\(\\$2\\,500\\)",
-            "\\(\\$3\\,620\\) (approx.)",
+            "&#8203;\\(\\$3\\,620\\) (approx.)",
             "\\(\\$5\\,000\\)",
-            "\\(\\$9\\,200\\) (approx.)"
+            "&#8203;\\(\\$9\\,200\\) (approx.)"
           ],
           "answer": 1,
           "hint": "The third year runs from \\(t=2\\) to \\(t=3\\). Loss \\(= V(2)-V(3)\\).",
@@ -4240,8 +4240,8 @@
           "options": [
             "\\(\\$120\\)",
             "\\(\\$200\\)",
-            "\\(\\$265\\) (approx.)",
-            "\\(\\$480\\) (approx.)"
+            "&#8203;\\(\\$265\\) (approx.)",
+            "&#8203;\\(\\$480\\) (approx.)"
           ],
           "answer": 2,
           "hint": "The second year runs from \\(t=1\\) to \\(t=2\\). Loss \\(= V(1)-V(2)\\).",

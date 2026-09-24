@@ -465,7 +465,7 @@
           "steps": [
             {
               "explain": "To analyze the mode, median, IQR, and range, we first need to convert the cumulative frequencies back into regular frequencies. The frequency for each value is the difference between its cumulative frequency and the previous one.",
-              "work": "\\\\(f(1)=5\\\\)\\\\n\\\\(f(2)=25-5=20\\\\)\\\\n\\\\(f(3)=28-25=3\\\\)\\\\n\\\\(f(4)=30-28=2\\\\)\\\\n\\\\(f(5)=34-30=4\\\\)\\\\n\\\\(f(6)=40-34=6\\\\)"
+              "work": "\\\\[ \\\\begin{aligned} f(1) &= 5 \\\\\\\\ f(2) &= 25 - 5 = 20 \\\\\\\\ f(3) &= 28 - 25 = 3 \\\\\\\\ f(4) &= 30 - 28 = 2 \\\\\\\\ f(5) &= 34 - 30 = 4 \\\\\\\\ f(6) &= 40 - 34 = 6 \\\\end{aligned} \\\\]"
             },
             {
               "explain": "The mode is the value with the highest frequency. Looking at our calculated frequencies, the highest is 20, which corresponds to \\\\(x=2\\\\). Therefore, the mode is 2, not 6.",
@@ -482,7 +482,7 @@
                     "axis": true,
                     "showNavigation": false
                   },
-                  "script": "var chart = board.create('chart', [[1,2,3,4,5,6], [5,20,3,2,4,6]], {chartStyle:'bar', width:0.6, colors:['#94a3b8','#ef4444','#94a3b8','#94a3b8','#94a3b8','#94a3b8']});\nboard.create('text', [2, 22, 'Mode: Highest frequency is at x=2'], {strokeColor: '#ef4444', fontSize: 16});"
+                  "script": "\nvar x = [1,2,3,4,5,6];\nvar y = [5,20,3,2,4,6];\nfor(var i=0; i<6; i++) {\n  var color = (i===1) ? '#ef4444' : '#94a3b8';\n  board.create('polygon', [[x[i]-0.4, 0], [x[i]+0.4, 0], [x[i]+0.4, y[i]], [x[i]-0.4, y[i]]], {fillColor: color, borders:{strokeColor:'none'}});\n}\nboard.create('text', [2, 22, 'Mode: Highest frequency is at x=2'], {strokeColor: '#ef4444', fontSize: 16});\n      "
                 }
               }
             },

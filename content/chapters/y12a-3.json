@@ -708,10 +708,10 @@
           "difficulty": "easy",
           "stem": "Explain why \\( f(x) = 2x^2 \\) is increasing for \\( x > 0 \\) and decreasing for \\( x < 0 \\). Describe what happens at \\( x = 0 \\).",
           "options": [
-            "\\( f'(x) = 4x^2 \\). The derivative is always positive, so it is always increasing.",
-            "\\( f'(x) = 4x \\). For \\( x > 0 \\), \\( f'(x) < 0 \\). For \\( x < 0 \\), \\( f'(x) > 0 \\). At \\( x = 0 \\), it is stationary.",
-            "\\( f'(x) = 4x \\). For \\( x > 0 \\), \\( f'(x) > 0 \\). For \\( x < 0 \\), \\( f'(x) < 0 \\). At \\( x = 0 \\), it is stationary.",
-            "\\( f'(x) = 2x \\). It is increasing because it is a parabola."
+            "&#8203;\\( f'(x) = 4x^2 \\). The derivative is always positive, so it is always increasing.",
+            "&#8203;\\( f'(x) = 4x \\). For \\( x > 0 \\), \\( f'(x) < 0 \\). For \\( x < 0 \\), \\( f'(x) > 0 \\). At \\( x = 0 \\), it is stationary.",
+            "&#8203;\\( f'(x) = 4x \\). For \\( x > 0 \\), \\( f'(x) > 0 \\). For \\( x < 0 \\), \\( f'(x) < 0 \\). At \\( x = 0 \\), it is stationary.",
+            "&#8203;\\( f'(x) = 2x \\). It is increasing because it is a parabola."
           ],
           "answer": null,
           "solution": "The derivative is \\( f'(x) = 4x \\). For \\( x > 0 \\), \\( f'(x) = 4x > 0 \\) (increasing). For \\( x < 0 \\), \\( f'(x) = 4x < 0 \\) (decreasing). At \\( x = 0 \\), \\( f'(0) = 0 \\), meaning the function has a stationary point (a vertex).",
@@ -12045,10 +12045,10 @@
           "difficulty": "medium",
           "stem": "A car travelling 100 km at constant speed \\(s\\) km/h uses a total of \\(Q = \\dfrac{s^2}{1000}+4+100s^{-2}\\) litres of fuel. This amount is minimised when \\(s \\approx 17.8\\) km/h. Find the minimum amount of fuel required for the journey, correct to 1 decimal place.",
           "options": [
-            "\\(4.6\\) litres",
-            "\\(4.0\\) litres",
-            "\\(17.8\\) litres",
-            "\\(0.6\\) litres"
+            "&#8203;\\(4.6\\) litres",
+            "&#8203;\\(4.0\\) litres",
+            "&#8203;\\(17.8\\) litres",
+            "&#8203;\\(0.6\\) litres"
           ],
           "answer": 0,
           "steps": [

@@ -604,10 +604,10 @@
           "difficulty": "hard",
           "stem": "A tree grows by \\(1.5\\) meters in its first year. Each year thereafter, its growth is \\(75\\%\\) of its growth in the previous year. What is the maximum possible height the tree can grow (excluding its initial height)?",
           "options": [
-            "\\(6\\) meters",
-            "\\(5\\) meters",
-            "\\(8\\) meters",
-            "\\(4\\) meters"
+            "&#8203;\\(6\\) meters",
+            "&#8203;\\(5\\) meters",
+            "&#8203;\\(8\\) meters",
+            "&#8203;\\(4\\) meters"
           ],
           "answer": 0,
           "hint": "The annual growth values form an infinite geometric series with limiting sum.",

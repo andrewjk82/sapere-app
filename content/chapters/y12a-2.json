@@ -291,10 +291,10 @@
           "difficulty": "medium",
           "stem": "Point \\((-1, 3)\\) on \\(y = f(x)\\) maps under \\(y = -2f(x)\\) to which point, with which transforms?",
           "options": [
-            "\\((-1, 6)\\); vertical stretch by 2 only",
-            "\\((-1, -6)\\); reflect in \\(x\\)-axis then vertical stretch by 2",
-            "\\((2, -3)\\); reflect in \\(y\\)-axis",
-            "\\((-2, -6)\\); horizontal stretch by 2"
+            "&#8203;\\((-1, 6)\\); vertical stretch by 2 only",
+            "&#8203;\\((-1, -6)\\); reflect in \\(x\\)-axis then vertical stretch by 2",
+            "&#8203;\\((2, -3)\\); reflect in \\(y\\)-axis",
+            "&#8203;\\((-2, -6)\\); horizontal stretch by 2"
           ],
           "answer": 1,
           "steps": [

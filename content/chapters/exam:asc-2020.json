@@ -1661,7 +1661,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(C = 120 + 8x\\),  \\(I = 14x\\);  break-even at \\(x = 20\\) candles"
+            "&#8203;\\(C = 120 + 8x\\),  \\(I = 14x\\);  break-even at \\(x = 20\\) candles"
           ],
           "answer": 3,
           "hint": "Set $C = I$ to find the break-even point.",
@@ -2888,7 +2888,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(k = 2,\\; b = \\pi\\) (or equivalently \\(k = -2,\\; b = 0\\))"
+            "&#8203;\\(k = 2,\\; b = \\pi\\) (or equivalently \\(k = -2,\\; b = 0\\))"
           ],
           "answer": 3,
           "hint": "The amplitude gives $|k|$. Use a known point (e.g. the minimum or maximum) to find $b$.",
@@ -4586,8 +4586,8 @@
             }
           },
           "options": [
-            "\\(\\theta \\approx 1.91\\) radians",
-            "\\(\\theta \\approx 1.91\\) radians + 1",
+            "&#8203;\\(\\theta \\approx 1.91\\) radians",
+            "&#8203;\\(\\theta \\approx 1.91\\) radians + 1",
             "\\(\\dfrac{12}{x + 2}\\)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
@@ -4820,7 +4820,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(\\theta = \\pi\\) (as \\(\\frac{dA}{d\\theta} = 20(2 + \\cos\\theta) > 0\\) for all \\(\\theta \\in (0,\\pi)\\), so \\(A\\) is increasing — maximum at the boundary \\(\\theta = \\pi\\))"
+            "&#8203;\\(\\theta = \\pi\\) (as \\(\\frac{dA}{d\\theta} = 20(2 + \\cos\\theta) > 0\\) for all \\(\\theta \\in (0,\\pi)\\), so \\(A\\) is increasing — maximum at the boundary \\(\\theta = \\pi\\))"
           ],
           "answer": 3,
           "hint": "Differentiate and set $\\frac{dA}{d\\theta} = 0$. Check if solutions exist in $(0, pi)$.",
@@ -5058,8 +5058,8 @@
           "difficulty": "medium",
           "stem": "(a) Find the standard deviation of swim times for this race.",
           "options": [
-            "\\(\\sigma = 1.5\\) minutes",
-            "\\(\\sigma = 1.5\\) minutes + 1",
+            "&#8203;\\(\\sigma = 1.5\\) minutes",
+            "&#8203;\\(\\sigma = 1.5\\) minutes + 1",
             "\\(\\dfrac{12}{x + 2}\\)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
@@ -5221,10 +5221,10 @@
           "difficulty": "medium",
           "stem": "(a) What is the first time after 9:45 am at which the flow rate is zero?",
           "options": [
-            "\\(t = 30\\) minutes after 9:45 am (10:15 am)",
-            "\\(t = 15\\) minutes after 9:45 am (10:00 am)",
-            "\\(t = 60\\) minutes after 9:45 am (10:45 am)",
-            "\\(t = 0\\) (already zero when the pump starts)"
+            "&#8203;\\(t = 30\\) minutes after 9:45 am (10:15 am)",
+            "&#8203;\\(t = 15\\) minutes after 9:45 am (10:00 am)",
+            "&#8203;\\(t = 60\\) minutes after 9:45 am (10:45 am)",
+            "&#8203;\\(t = 0\\) (already zero when the pump starts)"
           ],
           "answer": 0,
           "hint": "Set the sine factor equal to zero and take the first positive \\(t\\).",

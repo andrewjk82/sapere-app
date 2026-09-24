@@ -15,10 +15,10 @@
           "difficulty": "hard",
           "stem": "A superelastic ball is dropped from a height of 10 metres. Each time it hits the ground, it rebounds to exactly 70\\% of the height from which it fell. Find the total distance the ball travels before coming to rest.",
           "options": [
-            "\\(50\\) metres",
-            "\\(33\\frac{1}{3}\\) metres",
-            "\\(56\\frac{2}{3}\\) metres",
-            "\\(48\\) metres"
+            "&#8203;\\(50\\) metres",
+            "&#8203;\\(33\\frac{1}{3}\\) metres",
+            "&#8203;\\(56\\frac{2}{3}\\) metres",
+            "&#8203;\\(48\\) metres"
           ],
           "answer": 2,
           "hint": "Calculate the first drop distance separately, and treat the subsequent upward and downward bounces as an infinite GP.",
@@ -51,10 +51,10 @@
           "difficulty": "hard",
           "stem": "A scholarship fund needs to provide $5000 at the end of each year for the next 15 years. If the fund earns 6\\% per annum compound interest, what is the minimum lump sum that must be invested today to fund these payments?",
           "options": [
-            "\\(48561\\) dollars",
-            "\\(45611\\) dollars",
-            "\\(47155\\) dollars",
-            "\\(51200\\) dollars"
+            "&#8203;\\(48561\\) dollars",
+            "&#8203;\\(45611\\) dollars",
+            "&#8203;\\(47155\\) dollars",
+            "&#8203;\\(51200\\) dollars"
           ],
           "answer": 0,
           "hint": "Find the present value of each payment by discounting them, and sum them as a GP.",

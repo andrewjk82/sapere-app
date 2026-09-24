@@ -275,10 +275,10 @@
             "svg": "fig:90549e80cd"
           },
           "options": [
-            "\\(100\\pi\\text{ cm}^2\\) (approx. \\(314.16\\text{ cm}^2\\))",
-            "\\(25\\pi\\text{ cm}^2\\) (approx. \\(78.54\\text{ cm}^2\\))",
-            "\\(10\\pi\\text{ cm}^2\\) (approx. \\(31.42\\text{ cm}^2\\))",
-            "\\(5\\pi\\text{ cm}^2\\) (approx. \\(15.71\\text{ cm}^2\\))"
+            "&#8203;\\(100\\pi\\text{ cm}^2\\) (approx. \\(314.16\\text{ cm}^2\\))",
+            "&#8203;\\(25\\pi\\text{ cm}^2\\) (approx. \\(78.54\\text{ cm}^2\\))",
+            "&#8203;\\(10\\pi\\text{ cm}^2\\) (approx. \\(31.42\\text{ cm}^2\\))",
+            "&#8203;\\(5\\pi\\text{ cm}^2\\) (approx. \\(15.71\\text{ cm}^2\\))"
           ],
           "answer": 1,
           "hint": "Area of a circle = \\(\\pi r^2\\). Square the radius, then multiply by \\(\\pi\\).",
@@ -315,10 +315,10 @@
             "svg": "fig:2e9a6bf16e"
           },
           "options": [
-            "\\(50\\pi\\text{ cm}^2\\) (approx. \\(157.08\\text{ cm}^2\\))",
-            "\\(20\\pi\\text{ cm}^2\\) (approx. \\(62.83\\text{ cm}^2\\))",
-            "\\(100\\pi\\text{ cm}^2\\) (approx. \\(314.16\\text{ cm}^2\\))",
-            "\\(25\\pi\\text{ cm}^2\\) (approx. \\(78.54\\text{ cm}^2\\))"
+            "&#8203;\\(50\\pi\\text{ cm}^2\\) (approx. \\(157.08\\text{ cm}^2\\))",
+            "&#8203;\\(20\\pi\\text{ cm}^2\\) (approx. \\(62.83\\text{ cm}^2\\))",
+            "&#8203;\\(100\\pi\\text{ cm}^2\\) (approx. \\(314.16\\text{ cm}^2\\))",
+            "&#8203;\\(25\\pi\\text{ cm}^2\\) (approx. \\(78.54\\text{ cm}^2\\))"
           ],
           "answer": 3,
           "hint": "First find the radius: \\(r = d/2\\). Then use \\(A = \\pi r^2\\).",
@@ -823,10 +823,10 @@
             "svg": "fig:3d34637e14"
           },
           "options": [
-            "\\(A = (b_1 + b_2)h\\) because the parallelogram has base \\(b_1 + b_2\\) and height \\(h\\)",
-            "\\(A = b_1 b_2 h\\) by multiplying all three given lengths",
-            "\\(A = \\dfrac{1}{2}(b_1 + b_2)h\\), since the parallelogram of area \\((b_1 + b_2)h\\) is made of two identical trapeziums",
-            "\\(A = \\dfrac{1}{2}b_1 b_2\\), treating the parallel sides like diagonals of a kite"
+            "&#8203;\\(A = (b_1 + b_2)h\\) because the parallelogram has base \\(b_1 + b_2\\) and height \\(h\\)",
+            "&#8203;\\(A = b_1 b_2 h\\) by multiplying all three given lengths",
+            "&#8203;\\(A = \\dfrac{1}{2}(b_1 + b_2)h\\), since the parallelogram of area \\((b_1 + b_2)h\\) is made of two identical trapeziums",
+            "&#8203;\\(A = \\dfrac{1}{2}b_1 b_2\\), treating the parallel sides like diagonals of a kite"
           ],
           "answer": 2,
           "hint": "Two copies make a parallelogram of base \\(b_1 + b_2\\) and height \\(h\\); one trapezium is half of that.",
@@ -866,10 +866,10 @@
             "svg": "fig:d2ae31b999"
           },
           "options": [
-            "\\(A = d_1 d_2\\) because the kite fills the whole rectangle",
-            "\\(A = 2d_1 d_2\\) because four triangles make two rectangles",
-            "\\(A = \\dfrac{1}{4}d_1 d_2\\) because only one of the four right triangles is shaded",
-            "\\(A = \\dfrac{1}{2}d_1 d_2\\) because the kite occupies exactly half of the enclosing rectangle"
+            "&#8203;\\(A = d_1 d_2\\) because the kite fills the whole rectangle",
+            "&#8203;\\(A = 2d_1 d_2\\) because four triangles make two rectangles",
+            "&#8203;\\(A = \\dfrac{1}{4}d_1 d_2\\) because only one of the four right triangles is shaded",
+            "&#8203;\\(A = \\dfrac{1}{2}d_1 d_2\\) because the kite occupies exactly half of the enclosing rectangle"
           ],
           "answer": 3,
           "hint": "The kite’s four right triangles match the four corner triangles left outside it — so the kite is half the rectangle.",
@@ -1365,10 +1365,10 @@
             "svg": "fig:058655ada4"
           },
           "options": [
-            "\\(20\\pi\\text{ cm}^2\\) (approx. \\(62.83\\text{ cm}^2\\))",
-            "\\(16\\pi\\text{ cm}^2\\) (approx. \\(50.27\\text{ cm}^2\\))",
-            "\\(52\\pi\\text{ cm}^2\\) (approx. \\(163.36\\text{ cm}^2\\))",
-            "\\(10\\pi\\text{ cm}^2\\) (approx. \\(31.42\\text{ cm}^2\\))"
+            "&#8203;\\(20\\pi\\text{ cm}^2\\) (approx. \\(62.83\\text{ cm}^2\\))",
+            "&#8203;\\(16\\pi\\text{ cm}^2\\) (approx. \\(50.27\\text{ cm}^2\\))",
+            "&#8203;\\(52\\pi\\text{ cm}^2\\) (approx. \\(163.36\\text{ cm}^2\\))",
+            "&#8203;\\(10\\pi\\text{ cm}^2\\) (approx. \\(31.42\\text{ cm}^2\\))"
           ],
           "answer": 0,
           "hint": "Annulus area = outer circle − inner circle = \\(\\pi(R^2 - r^2)\\).",

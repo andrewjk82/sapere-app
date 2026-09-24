@@ -1694,10 +1694,10 @@
           "difficulty": "easy",
           "stem": "Refer to the abacus diagram (a) with:\n- Hundreds (H) has 5 beads\n- Tens (T) has 3 beads\n- Units (U) has 6 beads\n\nWrite down this numeral and its representation in words.",
           "options": [
-            "\\(5036\\) (Five thousand and thirty-six)",
-            "\\(536\\) (Fifty-three six)",
-            "\\(536\\) (Five hundred and thirty-six)",
-            "\\(536\\) (Five hundred thirty six)"
+            "&#8203;\\(5036\\) (Five thousand and thirty-six)",
+            "&#8203;\\(536\\) (Fifty-three six)",
+            "&#8203;\\(536\\) (Five hundred and thirty-six)",
+            "&#8203;\\(536\\) (Five hundred thirty six)"
           ],
           "answer": 2,
           "hint": "Read the value in H, T, and U respectively.",
@@ -1723,10 +1723,10 @@
           "difficulty": "easy",
           "stem": "Refer to the abacus diagram (b) with:\n- Thousands (Th) has 5 beads\n- Hundreds (H) has 3 beads\n- Tens (T) has 0 beads\n- Units (U) has 2 beads\n\nWrite down this numeral and its representation in words.",
           "options": [
-            "\\(50302\\) (Fifty thousand, three hundred and two)",
-            "\\(5302\\) (Five thousand three hundred two)",
-            "\\(5320\\) (Five thousand, three hundred and twenty)",
-            "\\(5302\\) (Five thousand, three hundred and two)"
+            "&#8203;\\(50302\\) (Fifty thousand, three hundred and two)",
+            "&#8203;\\(5302\\) (Five thousand three hundred two)",
+            "&#8203;\\(5320\\) (Five thousand, three hundred and twenty)",
+            "&#8203;\\(5302\\) (Five thousand, three hundred and two)"
           ],
           "answer": 3,
           "hint": "Read Th, H, T, and U respectively.",
@@ -1752,10 +1752,10 @@
           "difficulty": "easy",
           "stem": "Refer to the abacus diagram (c) with:\n- Hundreds (H) has 5 beads\n- Tens (T) has 0 beads\n- Units (U) has 4 beads\n\nWrite down this numeral and its representation in words.",
           "options": [
-            "\\(504\\) (Five hundred and four)",
-            "\\(504\\) (Five hundred four)",
-            "\\(540\\) (Five hundred and forty)",
-            "\\(5004\\) (Five thousand and four)"
+            "&#8203;\\(504\\) (Five hundred and four)",
+            "&#8203;\\(504\\) (Five hundred four)",
+            "&#8203;\\(540\\) (Five hundred and forty)",
+            "&#8203;\\(5004\\) (Five thousand and four)"
           ],
           "answer": 0,
           "hint": "Read H, T, and U respectively.",

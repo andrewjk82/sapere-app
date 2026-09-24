@@ -2842,8 +2842,8 @@
           "difficulty": "hard",
           "stem": "Which is the best value: \\(6\\) oranges for \\(\\$2.52\\) or \\(45\\) oranges for \\(\\$18.45\\)?",
           "options": [
-            "\\(45\\) oranges for \\(\\$18.45\\) (better value)",
-            "\\(6\\) oranges for \\(\\$2.52\\) (better value)",
+            "&#8203;\\(45\\) oranges for \\(\\$18.45\\) (better value)",
+            "&#8203;\\(6\\) oranges for \\(\\$2.52\\) (better value)",
             "Both offer exactly the same value",
             "Cannot be determined"
           ],

@@ -337,7 +337,7 @@
             "\\(\\dfrac{3}{4}\\)",
             "\\(\\dfrac{5}{10}\\)",
             "\\(\\dfrac{1}{2}\\)",
-            "\\(\\dfrac{15}{20}\\) (already simplest)"
+            "&#8203;\\(\\dfrac{15}{20}\\) (already simplest)"
           ],
           "answer": 0,
           "hint": "Find the highest common factor of 15 and 20.",

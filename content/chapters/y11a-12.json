@@ -1430,15 +1430,15 @@
                 "jsxGraph": {
                   "attributes": {
                     "boundingbox": [
-                      -1,
-                      4,
-                      6,
-                      -4
+                      -2,
+                      7,
+                      10,
+                      -7
                     ],
                     "axis": false,
                     "showNavigation": false
                   },
-                  "script": "var O = board.create('point', [0, 0], {name: 'Start', size: 2, fixed:true});\nvar F1 = board.create('point', [2, 2], {name: 'F (8/12)', size: 2, fixed:true});\nvar NF1 = board.create('point', [2, -2], {name: 'NF (4/12)', size: 2, fixed:true});\nvar F2 = board.create('point', [4, 3], {name: 'F (7/11)', size: 2, fixed:true});\nvar NF2 = board.create('point', [4, 1], {name: 'NF (4/11)', size: 2, fixed:true});\n\nboard.create('segment', [O, F1], {strokeColor: '#ef4444', strokeWidth: 3, name: '8/12'});\nboard.create('segment', [O, NF1], {strokeColor: '#94a3b8', strokeWidth: 2});\nboard.create('segment', [F1, F2], {strokeColor: '#ef4444', strokeWidth: 3, name: '7/11'});\nboard.create('segment', [F1, NF2], {strokeColor: '#94a3b8', strokeWidth: 2});\n\nboard.create('text', [0.5, 1.5, '8/12'], {strokeColor: '#ef4444', fontSize: 14});\nboard.create('text', [2.5, 2.8, '7/11'], {strokeColor: '#ef4444', fontSize: 14});\nboard.create('text', [1, -3, 'Highlighting the complement: (F, F)'], {fontSize: 16});"
+                  "script": "\nvar O = board.create('point', [0, 0], {name: 'Start', size: 2, fixed:true, label: {offset: [-40, 0]}});\nvar F1 = board.create('point', [4, 4], {name: 'F', size: 2, fixed:true, label: {offset: [10, 10], fontSize: 16}});\nvar NF1 = board.create('point', [4, -4], {name: 'NF', size: 2, fixed:true, label: {offset: [10, -10], fontSize: 16}});\nvar F2 = board.create('point', [8, 6], {name: 'F', size: 2, fixed:true, label: {offset: [10, 10], fontSize: 16}});\nvar NF2 = board.create('point', [8, 2], {name: 'NF', size: 2, fixed:true, label: {offset: [10, -10], fontSize: 16}});\n\nboard.create('segment', [O, F1], {strokeColor: '#ef4444', strokeWidth: 4});\nboard.create('segment', [O, NF1], {strokeColor: '#94a3b8', strokeWidth: 2});\nboard.create('segment', [F1, F2], {strokeColor: '#ef4444', strokeWidth: 4});\nboard.create('segment', [F1, NF2], {strokeColor: '#94a3b8', strokeWidth: 2});\n\nboard.create('text', [1.5, 2.8, '8/12'], {strokeColor: '#ef4444', fontSize: 16});\nboard.create('text', [1.5, -2.8, '4/12'], {strokeColor: '#475569', fontSize: 16});\nboard.create('text', [5.5, 5.5, '7/11'], {strokeColor: '#ef4444', fontSize: 16});\nboard.create('text', [5.5, 2.5, '4/11'], {strokeColor: '#475569', fontSize: 16});\n\nboard.create('text', [1, -6, 'Highlighting the complement: (F, F)'], {fontSize: 16, strokeColor: '#ef4444'});\n        "
                 }
               }
             },

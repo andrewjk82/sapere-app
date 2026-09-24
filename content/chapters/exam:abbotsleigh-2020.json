@@ -2394,10 +2394,10 @@
           "difficulty": "easy",
           "stem": "A particle has displacement $x = t^2 - 4\\ln_e(t-1) + 5$ for $t > 1$ (metres, seconds). Find the exact displacement when $t = 4$.",
           "options": [
-            "\\(\\(21 - 4\\ln 3\\) metres\\)",
-            "\\(\\(21 - 4\\ln 4\\) metres\\)",
-            "\\(\\(16 - 4\\ln 3\\) metres\\)",
-            "\\(\\(21 + 4\\ln 3\\) metres\\)"
+            "&#8203;\\(\\(21 - 4\\ln 3\\) metres\\)",
+            "&#8203;\\(\\(21 - 4\\ln 4\\) metres\\)",
+            "&#8203;\\(\\(16 - 4\\ln 3\\) metres\\)",
+            "&#8203;\\(\\(21 + 4\\ln 3\\) metres\\)"
           ],
           "answer": 0,
           "hint": "Substitute $t = 4$ directly into the displacement equation.",
@@ -2439,10 +2439,10 @@
           "difficulty": "medium",
           "stem": "For $x = t^2 - 4\\ln_e(t-1) + 5$ ($t > 1$), find an expression for the velocity and hence find when the particle comes to rest.",
           "options": [
-            "\\(\\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 2\\) s\\)",
-            "\\(\\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 3\\) s\\)",
-            "\\(\\(v = 2t + \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 2\\) s\\)",
-            "\\(\\(v = 2 - \\dfrac{4}{(t-1)^2}\\); particle never comes to rest\\)"
+            "&#8203;\\(\\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 2\\) s\\)",
+            "&#8203;\\(\\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 3\\) s\\)",
+            "&#8203;\\(\\(v = 2t + \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 2\\) s\\)",
+            "&#8203;\\(\\(v = 2 - \\dfrac{4}{(t-1)^2}\\); particle never comes to rest\\)"
           ],
           "answer": 0,
           "hint": "Differentiate $x$ with respect to $t$ to get velocity. Set $v = 0$.",
@@ -2521,10 +2521,10 @@
           "difficulty": "hard",
           "stem": "Find the exact distance travelled by the particle between when it comes to rest ($t = 2$ s) and $t = 4$ s, given $x = t^2 - 4\\ln_e(t-1) + 5$.",
           "options": [
-            "\\(12 - 4\\ln 3\\) metres",
-            "\\(12 + 4\\ln 3\\) metres",
-            "\\(21 - 4\\ln 3\\) metres",
-            "\\(12 - 4\\ln 2\\) metres"
+            "&#8203;\\(12 - 4\\ln 3\\) metres",
+            "&#8203;\\(12 + 4\\ln 3\\) metres",
+            "&#8203;\\(21 - 4\\ln 3\\) metres",
+            "&#8203;\\(12 - 4\\ln 2\\) metres"
           ],
           "answer": 0,
           "hint": "Evaluate $x(4) - x(2)$. Since acceleration is always positive, the particle does not change direction, so distance equals displacement change.",
@@ -3289,10 +3289,10 @@
           "difficulty": "hard",
           "stem": "For $D = 2\\sin\\!\\left(\\dfrac{\\pi}{6}t + \\dfrac{\\pi}{3}\\right) + 3$, find when the greatest rate of drop in depth occurs and what that rate is. Answer correct to 2 decimal places.",
           "options": [
-            "\\(At \\(t = 4\\) h; rate \\(= -\\dfrac{\\pi}{3} \\approx -1.05\\) m/h\\)",
-            "\\(At \\(t = 2\\) h; rate \\(\\approx -1.05\\) m/h\\)",
-            "\\(At \\(t = 4\\) h; rate \\(\\approx -0.52\\) m/h\\)",
-            "\\(At \\(t = 8\\) h; rate \\(\\approx -1.05\\) m/h\\)"
+            "&#8203;\\(At \\(t = 4\\) h; rate \\(= -\\dfrac{\\pi}{3} \\approx -1.05\\) m/h\\)",
+            "&#8203;\\(At \\(t = 2\\) h; rate \\(\\approx -1.05\\) m/h\\)",
+            "&#8203;\\(At \\(t = 4\\) h; rate \\(\\approx -0.52\\) m/h\\)",
+            "&#8203;\\(At \\(t = 8\\) h; rate \\(\\approx -1.05\\) m/h\\)"
           ],
           "answer": 0,
           "hint": "Differentiate $D$ with respect to $t$ to get the rate $\\dot{D}$, then minimise $\\dot{D}$ (find its most negative value).",

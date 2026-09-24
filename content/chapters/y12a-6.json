@@ -16,7 +16,7 @@
           "options": [
             "\\(\\dfrac{\\pi}{36}\\)",
             "\\(\\dfrac{\\pi}{30}\\)",
-            "\\(\\dfrac{5\\pi}{180}\\) left unsimplified only",
+            "&#8203;\\(\\dfrac{5\\pi}{180}\\) left unsimplified only",
             "\\(\\dfrac{\\pi}{5}\\)"
           ],
           "answer": 0,
@@ -61,7 +61,7 @@
           "options": [
             "If \\(x\\) is small and measured in radians, then \\(\\sin x \\approx x\\) and \\(\\tan x \\approx x\\).",
             "If \\(x\\) is small and measured in degrees, then \\(\\sin x \\approx x\\).",
-            "\\(\\sin x \\approx x\\) is valid for all real \\(x\\).",
+            "&#8203;\\(\\sin x \\approx x\\) is valid for all real \\(x\\).",
             "Only \\(\\cos x \\approx x\\) is used for small angles."
           ],
           "answer": 0,

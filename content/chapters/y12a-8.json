@@ -2636,8 +2636,8 @@
           "options": [
             "\\(\\dfrac{32}{64} = 2\\) and \\(\\dfrac{16}{32} = 2\\), so \\(r = 2\\)",
             "\\(\\dfrac{32}{64} = \\dfrac{1}{2}\\) and \\(\\dfrac{16}{32} = \\dfrac{1}{2}\\), so \\(r = \\dfrac{1}{2}\\)",
-            "\\(32 - 64 = -32\\) and \\(16 - 32 = -16\\), so it is an AP with \\(d = -32\\)",
-            "\\(\\dfrac{32}{64} = \\dfrac{1}{2}\\) but \\(\\dfrac{16}{32} = 2\\), so it is not a GP"
+            "&#8203;\\(32 - 64 = -32\\) and \\(16 - 32 = -16\\), so it is an AP with \\(d = -32\\)",
+            "&#8203;\\(\\dfrac{32}{64} = \\dfrac{1}{2}\\) but \\(\\dfrac{16}{32} = 2\\), so it is not a GP"
           ],
           "answer": 1,
           "hint": "Divide consecutive terms: 32/64 and 16/32.",
@@ -11269,9 +11269,9 @@
           "difficulty": "easy",
           "stem": "A company makes contributions of \\( \\$4000 \\) to the superannuation fund of one of its employees on 1st July each year. The money earns compound interest at \\( 7.5\\% \\) per annum. Round all currency amounts correct to the nearest dollar.\nc) What will be the value of the fund after 20 years, and what will be the total amount of the contributions? (Format: '\\(186,214 value, \\)80,000 contributions')",
           "options": [
-            "\\(186,214 value, \\)80,000 contributions",
-            "\\(186,214 value, \\)80,000 contributions + 1",
-            "\\(186,414 value, \\)80,000 contributions",
+            "&#8203;\\(186,214 value, \\)80,000 contributions",
+            "&#8203;\\(186,214 value, \\)80,000 contributions + 1",
+            "&#8203;\\(186,414 value, \\)80,000 contributions",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
           "answer": 0,

@@ -15,10 +15,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(1 + 2 + 3 + \\dots + 120\\).",
           "options": [
-            "\\(120\\) terms, sum \\(= 7261\\)",
-            "\\(119\\) terms, sum \\(= 7140\\)",
-            "\\(120\\) terms, sum \\(= 7260\\)",
-            "\\(121\\) terms, sum \\(= 7380\\)"
+            "&#8203;\\(120\\) terms, sum \\(= 7261\\)",
+            "&#8203;\\(119\\) terms, sum \\(= 7140\\)",
+            "&#8203;\\(120\\) terms, sum \\(= 7260\\)",
+            "&#8203;\\(121\\) terms, sum \\(= 7380\\)"
           ],
           "answer": 2,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -45,10 +45,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(1 + 3 + 5 + \\dots + 149\\).",
           "options": [
-            "\\(76\\) terms, sum \\(= 5774\\)",
-            "\\(75\\) terms, sum \\(= 5626\\)",
-            "\\(74\\) terms, sum \\(= 5476\\)",
-            "\\(75\\) terms, sum \\(= 5625\\)"
+            "&#8203;\\(76\\) terms, sum \\(= 5774\\)",
+            "&#8203;\\(75\\) terms, sum \\(= 5626\\)",
+            "&#8203;\\(74\\) terms, sum \\(= 5476\\)",
+            "&#8203;\\(75\\) terms, sum \\(= 5625\\)"
           ],
           "answer": 3,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -75,10 +75,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(2 + 4 + 6 + \\dots + 160\\).",
           "options": [
-            "\\(80\\) terms, sum \\(= 6480\\)",
-            "\\(79\\) terms, sum \\(= 6320\\)",
-            "\\(80\\) terms, sum \\(= 6482\\)",
-            "\\(81\\) terms, sum \\(= 6640\\)"
+            "&#8203;\\(80\\) terms, sum \\(= 6480\\)",
+            "&#8203;\\(79\\) terms, sum \\(= 6320\\)",
+            "&#8203;\\(80\\) terms, sum \\(= 6482\\)",
+            "&#8203;\\(81\\) terms, sum \\(= 6640\\)"
           ],
           "answer": 0,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -105,10 +105,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(3 + 6 + 9 + \\dots + 360\\).",
           "options": [
-            "\\(120\\) terms, sum \\(= 21783\\)",
-            "\\(119\\) terms, sum \\(= 21420\\)",
-            "\\(121\\) terms, sum \\(= 22140\\)",
-            "\\(120\\) terms, sum \\(= 21780\\)"
+            "&#8203;\\(120\\) terms, sum \\(= 21783\\)",
+            "&#8203;\\(119\\) terms, sum \\(= 21420\\)",
+            "&#8203;\\(121\\) terms, sum \\(= 22140\\)",
+            "&#8203;\\(120\\) terms, sum \\(= 21780\\)"
           ],
           "answer": 3,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -135,10 +135,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(201 + 203 + 205 + \\dots + 299\\).",
           "options": [
-            "\\(50\\) terms, sum \\(= 12500\\)",
-            "\\(49\\) terms, sum \\(= 12201\\)",
-            "\\(50\\) terms, sum \\(= 12701\\)",
-            "\\(51\\) terms, sum \\(= 12799\\)"
+            "&#8203;\\(50\\) terms, sum \\(= 12500\\)",
+            "&#8203;\\(49\\) terms, sum \\(= 12201\\)",
+            "&#8203;\\(50\\) terms, sum \\(= 12701\\)",
+            "&#8203;\\(51\\) terms, sum \\(= 12799\\)"
           ],
           "answer": 0,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -165,10 +165,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(1001 + 1002 + 1003 + \\dots + 4000\\).",
           "options": [
-            "\\(3000\\) terms, sum \\(= 7502501\\)",
-            "\\(3000\\) terms, sum \\(= 7501500\\)",
-            "\\(3001\\) terms, sum \\(= 7505500\\)",
-            "\\(2999\\) terms, sum \\(= 7497500\\)"
+            "&#8203;\\(3000\\) terms, sum \\(= 7502501\\)",
+            "&#8203;\\(3000\\) terms, sum \\(= 7501500\\)",
+            "&#8203;\\(3001\\) terms, sum \\(= 7505500\\)",
+            "&#8203;\\(2999\\) terms, sum \\(= 7497500\\)"
           ],
           "answer": 1,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -195,10 +195,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(2 + 4 + 6 + \\dots + 240\\).",
           "options": [
-            "\\(121\\) terms, sum \\(= 14760\\)",
-            "\\(120\\) terms, sum \\(= 14520\\)",
-            "\\(120\\) terms, sum \\(= 14522\\)",
-            "\\(119\\) terms, sum \\(= 14280\\)"
+            "&#8203;\\(121\\) terms, sum \\(= 14760\\)",
+            "&#8203;\\(120\\) terms, sum \\(= 14520\\)",
+            "&#8203;\\(120\\) terms, sum \\(= 14522\\)",
+            "&#8203;\\(119\\) terms, sum \\(= 14280\\)"
           ],
           "answer": 1,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -225,10 +225,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(2 + 6 + 10 + \\dots + 298\\).",
           "options": [
-            "\\(75\\) terms, sum \\(= 11250\\)",
-            "\\(74\\) terms, sum \\(= 10952\\)",
-            "\\(76\\) terms, sum \\(= 11548\\)",
-            "\\(75\\) terms, sum \\(= 11252\\)"
+            "&#8203;\\(75\\) terms, sum \\(= 11250\\)",
+            "&#8203;\\(74\\) terms, sum \\(= 10952\\)",
+            "&#8203;\\(76\\) terms, sum \\(= 11548\\)",
+            "&#8203;\\(75\\) terms, sum \\(= 11252\\)"
           ],
           "answer": 0,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -255,10 +255,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(4 + 8 + 12 + \\dots + 320\\).",
           "options": [
-            "\\(81\\) terms, sum \\(= 13280\\)",
-            "\\(80\\) terms, sum \\(= 12960\\)",
-            "\\(79\\) terms, sum \\(= 12640\\)",
-            "\\(80\\) terms, sum \\(= 12964\\)"
+            "&#8203;\\(81\\) terms, sum \\(= 13280\\)",
+            "&#8203;\\(80\\) terms, sum \\(= 12960\\)",
+            "&#8203;\\(79\\) terms, sum \\(= 12640\\)",
+            "&#8203;\\(80\\) terms, sum \\(= 12964\\)"
           ],
           "answer": 1,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -285,10 +285,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(6 + 12 + 18 + \\dots + 720\\).",
           "options": [
-            "\\(121\\) terms, sum \\(= 44280\\)",
-            "\\(120\\) terms, sum \\(= 43566\\)",
-            "\\(119\\) terms, sum \\(= 42840\\)",
-            "\\(120\\) terms, sum \\(= 43560\\)"
+            "&#8203;\\(121\\) terms, sum \\(= 44280\\)",
+            "&#8203;\\(120\\) terms, sum \\(= 43566\\)",
+            "&#8203;\\(119\\) terms, sum \\(= 42840\\)",
+            "&#8203;\\(120\\) terms, sum \\(= 43560\\)"
           ],
           "answer": 3,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -315,10 +315,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(402 + 406 + 410 + \\dots + 598\\).",
           "options": [
-            "\\(49\\) terms, sum \\(= 24402\\)",
-            "\\(50\\) terms, sum \\(= 25000\\)",
-            "\\(50\\) terms, sum \\(= 25402\\)",
-            "\\(51\\) terms, sum \\(= 25598\\)"
+            "&#8203;\\(49\\) terms, sum \\(= 24402\\)",
+            "&#8203;\\(50\\) terms, sum \\(= 25000\\)",
+            "&#8203;\\(50\\) terms, sum \\(= 25402\\)",
+            "&#8203;\\(51\\) terms, sum \\(= 25598\\)"
           ],
           "answer": 1,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -345,10 +345,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(2002 + 2004 + 2006 + \\dots + 8000\\).",
           "options": [
-            "\\(3000\\) terms, sum \\(= 15003000\\)",
-            "\\(2999\\) terms, sum \\(= 14995000\\)",
-            "\\(3000\\) terms, sum \\(= 15005002\\)",
-            "\\(3001\\) terms, sum \\(= 15011000\\)"
+            "&#8203;\\(3000\\) terms, sum \\(= 15003000\\)",
+            "&#8203;\\(2999\\) terms, sum \\(= 14995000\\)",
+            "&#8203;\\(3000\\) terms, sum \\(= 15005002\\)",
+            "&#8203;\\(3001\\) terms, sum \\(= 15011000\\)"
           ],
           "answer": 0,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -375,10 +375,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(3 + 6 + 9 + \\dots + 360\\).",
           "options": [
-            "\\(119\\) terms, sum \\(= 21420\\)",
-            "\\(120\\) terms, sum \\(= 21780\\)",
-            "\\(121\\) terms, sum \\(= 22140\\)",
-            "\\(120\\) terms, sum \\(= 21783\\)"
+            "&#8203;\\(119\\) terms, sum \\(= 21420\\)",
+            "&#8203;\\(120\\) terms, sum \\(= 21780\\)",
+            "&#8203;\\(121\\) terms, sum \\(= 22140\\)",
+            "&#8203;\\(120\\) terms, sum \\(= 21783\\)"
           ],
           "answer": 1,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -405,10 +405,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(3 + 9 + 15 + \\dots + 447\\).",
           "options": [
-            "\\(75\\) terms, sum \\(= 16878\\)",
-            "\\(74\\) terms, sum \\(= 16428\\)",
-            "\\(76\\) terms, sum \\(= 17322\\)",
-            "\\(75\\) terms, sum \\(= 16875\\)"
+            "&#8203;\\(75\\) terms, sum \\(= 16878\\)",
+            "&#8203;\\(74\\) terms, sum \\(= 16428\\)",
+            "&#8203;\\(76\\) terms, sum \\(= 17322\\)",
+            "&#8203;\\(75\\) terms, sum \\(= 16875\\)"
           ],
           "answer": 3,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -435,10 +435,10 @@
           "difficulty": "easy",
           "stem": "State how many terms the following sum has, then evaluate it:\n\\(6 + 12 + 18 + \\dots + 480\\).",
           "options": [
-            "\\(80\\) terms, sum \\(= 19440\\)",
-            "\\(79\\) terms, sum \\(= 18960\\)",
-            "\\(81\\) terms, sum \\(= 19920\\)",
-            "\\(80\\) terms, sum \\(= 19446\\)"
+            "&#8203;\\(80\\) terms, sum \\(= 19440\\)",
+            "&#8203;\\(79\\) terms, sum \\(= 18960\\)",
+            "&#8203;\\(81\\) terms, sum \\(= 19920\\)",
+            "&#8203;\\(80\\) terms, sum \\(= 19446\\)"
           ],
           "answer": 0,
           "hint": "First find the number of terms using \\(T_n = a + (n-1)d\\), then apply the sum formula \\(S_n = \\frac{n}{2}(a + l)\\).",
@@ -1281,10 +1281,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(12 + 16 + 20 + \\dots + 52\\)",
           "options": [
-            "\\(12\\) terms, sum \\(= 404\\)",
-            "\\(11\\) terms, sum \\(= 364\\)",
-            "\\(10\\) terms, sum \\(= 300\\)",
-            "\\(11\\) terms, sum \\(= 352\\)"
+            "&#8203;\\(12\\) terms, sum \\(= 404\\)",
+            "&#8203;\\(11\\) terms, sum \\(= 364\\)",
+            "&#8203;\\(10\\) terms, sum \\(= 300\\)",
+            "&#8203;\\(11\\) terms, sum \\(= 352\\)"
           ],
           "answer": 3,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -1311,10 +1311,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(14 + 19 + 24 + \\dots + 69\\)",
           "options": [
-            "\\(12\\) terms, sum \\(= 498\\)",
-            "\\(11\\) terms, sum \\(= 429\\)",
-            "\\(12\\) terms, sum \\(= 512\\)",
-            "\\(13\\) terms, sum \\(= 567\\)"
+            "&#8203;\\(12\\) terms, sum \\(= 498\\)",
+            "&#8203;\\(11\\) terms, sum \\(= 429\\)",
+            "&#8203;\\(12\\) terms, sum \\(= 512\\)",
+            "&#8203;\\(13\\) terms, sum \\(= 567\\)"
           ],
           "answer": 0,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -1341,10 +1341,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(16 + 19 + 22 + \\dots + 52\\)",
           "options": [
-            "\\(12\\) terms, sum \\(= 390\\)",
-            "\\(14\\) terms, sum \\(= 494\\)",
-            "\\(13\\) terms, sum \\(= 442\\)",
-            "\\(13\\) terms, sum \\(= 458\\)"
+            "&#8203;\\(12\\) terms, sum \\(= 390\\)",
+            "&#8203;\\(14\\) terms, sum \\(= 494\\)",
+            "&#8203;\\(13\\) terms, sum \\(= 442\\)",
+            "&#8203;\\(13\\) terms, sum \\(= 458\\)"
           ],
           "answer": 2,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -1371,10 +1371,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(18 + 22 + 26 + \\dots + 70\\)",
           "options": [
-            "\\(14\\) terms, sum \\(= 616\\)",
-            "\\(13\\) terms, sum \\(= 546\\)",
-            "\\(14\\) terms, sum \\(= 634\\)",
-            "\\(15\\) terms, sum \\(= 686\\)"
+            "&#8203;\\(14\\) terms, sum \\(= 616\\)",
+            "&#8203;\\(13\\) terms, sum \\(= 546\\)",
+            "&#8203;\\(14\\) terms, sum \\(= 634\\)",
+            "&#8203;\\(15\\) terms, sum \\(= 686\\)"
           ],
           "answer": 0,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -1401,10 +1401,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(20 + 25 + 30 + \\dots + 90\\)",
           "options": [
-            "\\(15\\) terms, sum \\(= 825\\)",
-            "\\(14\\) terms, sum \\(= 735\\)",
-            "\\(15\\) terms, sum \\(= 845\\)",
-            "\\(16\\) terms, sum \\(= 915\\)"
+            "&#8203;\\(15\\) terms, sum \\(= 825\\)",
+            "&#8203;\\(14\\) terms, sum \\(= 735\\)",
+            "&#8203;\\(15\\) terms, sum \\(= 845\\)",
+            "&#8203;\\(16\\) terms, sum \\(= 915\\)"
           ],
           "answer": 0,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -1431,10 +1431,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(22 + 25 + 28 + \\dots + 67\\)",
           "options": [
-            "\\(16\\) terms, sum \\(= 734\\)",
-            "\\(17\\) terms, sum \\(= 779\\)",
-            "\\(16\\) terms, sum \\(= 712\\)",
-            "\\(15\\) terms, sum \\(= 645\\)"
+            "&#8203;\\(16\\) terms, sum \\(= 734\\)",
+            "&#8203;\\(17\\) terms, sum \\(= 779\\)",
+            "&#8203;\\(16\\) terms, sum \\(= 712\\)",
+            "&#8203;\\(15\\) terms, sum \\(= 645\\)"
           ],
           "answer": 2,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -1461,10 +1461,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(24 + 28 + 32 + \\dots + 88\\)",
           "options": [
-            "\\(18\\) terms, sum \\(= 1040\\)",
-            "\\(17\\) terms, sum \\(= 976\\)",
-            "\\(16\\) terms, sum \\(= 864\\)",
-            "\\(17\\) terms, sum \\(= 952\\)"
+            "&#8203;\\(18\\) terms, sum \\(= 1040\\)",
+            "&#8203;\\(17\\) terms, sum \\(= 976\\)",
+            "&#8203;\\(16\\) terms, sum \\(= 864\\)",
+            "&#8203;\\(17\\) terms, sum \\(= 952\\)"
           ],
           "answer": 3,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -1491,10 +1491,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(26 + 31 + 36 + \\dots + 111\\)",
           "options": [
-            "\\(18\\) terms, sum \\(= 1233\\)",
-            "\\(17\\) terms, sum \\(= 1122\\)",
-            "\\(19\\) terms, sum \\(= 1344\\)",
-            "\\(18\\) terms, sum \\(= 1259\\)"
+            "&#8203;\\(18\\) terms, sum \\(= 1233\\)",
+            "&#8203;\\(17\\) terms, sum \\(= 1122\\)",
+            "&#8203;\\(19\\) terms, sum \\(= 1344\\)",
+            "&#8203;\\(18\\) terms, sum \\(= 1259\\)"
           ],
           "answer": 0,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -1521,10 +1521,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(28 + 31 + 34 + \\dots + 82\\)",
           "options": [
-            "\\(19\\) terms, sum \\(= 1045\\)",
-            "\\(18\\) terms, sum \\(= 963\\)",
-            "\\(19\\) terms, sum \\(= 1073\\)",
-            "\\(20\\) terms, sum \\(= 1127\\)"
+            "&#8203;\\(19\\) terms, sum \\(= 1045\\)",
+            "&#8203;\\(18\\) terms, sum \\(= 963\\)",
+            "&#8203;\\(19\\) terms, sum \\(= 1073\\)",
+            "&#8203;\\(20\\) terms, sum \\(= 1127\\)"
           ],
           "answer": 0,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -1551,10 +1551,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(30 + 34 + 38 + \\dots + 106\\)",
           "options": [
-            "\\(20\\) terms, sum \\(= 1390\\)",
-            "\\(20\\) terms, sum \\(= 1360\\)",
-            "\\(19\\) terms, sum \\(= 1254\\)",
-            "\\(21\\) terms, sum \\(= 1466\\)"
+            "&#8203;\\(20\\) terms, sum \\(= 1390\\)",
+            "&#8203;\\(20\\) terms, sum \\(= 1360\\)",
+            "&#8203;\\(19\\) terms, sum \\(= 1254\\)",
+            "&#8203;\\(21\\) terms, sum \\(= 1466\\)"
           ],
           "answer": 1,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -1581,10 +1581,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(32 + 37 + 42 + \\dots + 132\\)",
           "options": [
-            "\\(22\\) terms, sum \\(= 1854\\)",
-            "\\(21\\) terms, sum \\(= 1754\\)",
-            "\\(20\\) terms, sum \\(= 1590\\)",
-            "\\(21\\) terms, sum \\(= 1722\\)"
+            "&#8203;\\(22\\) terms, sum \\(= 1854\\)",
+            "&#8203;\\(21\\) terms, sum \\(= 1754\\)",
+            "&#8203;\\(20\\) terms, sum \\(= 1590\\)",
+            "&#8203;\\(21\\) terms, sum \\(= 1722\\)"
           ],
           "answer": 3,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -1611,10 +1611,10 @@
           "difficulty": "medium",
           "stem": "Find the number of terms and the sum of the following series:\n\\(34 + 37 + 40 + \\dots + 97\\)",
           "options": [
-            "\\(22\\) terms, sum \\(= 1475\\)",
-            "\\(23\\) terms, sum \\(= 1538\\)",
-            "\\(21\\) terms, sum \\(= 1344\\)",
-            "\\(22\\) terms, sum \\(= 1441\\)"
+            "&#8203;\\(22\\) terms, sum \\(= 1475\\)",
+            "&#8203;\\(23\\) terms, sum \\(= 1538\\)",
+            "&#8203;\\(21\\) terms, sum \\(= 1344\\)",
+            "&#8203;\\(22\\) terms, sum \\(= 1441\\)"
           ],
           "answer": 3,
           "hint": "Find the number of terms using \\(l = a + (n-1)d\\), then sum them.",
@@ -2421,10 +2421,10 @@
           "difficulty": "medium",
           "stem": "A graduate earns \\(28000\\) dollars in her first year, then each successive year her salary rises by \\(1600\\) dollars.\nWhat are her total earnings over \\(10\\) years?",
           "options": [
-            "\\(352000\\) dollars",
-            "\\(280000\\) dollars",
-            "\\(344000\\) dollars",
-            "\\(360000\\) dollars"
+            "&#8203;\\(352000\\) dollars",
+            "&#8203;\\(280000\\) dollars",
+            "&#8203;\\(344000\\) dollars",
+            "&#8203;\\(360000\\) dollars"
           ],
           "answer": 0,
           "hint": "This is an AP sum with a = 28000, d = 1600, n = 10.",
@@ -3111,10 +3111,10 @@
           "difficulty": "hard",
           "stem": "Logs of wood are stacked with \\(15\\) on the top row, \\(16\\) on the next, and so on.\nIf there are \\(360\\) logs in total, find the number of rows and the number of logs on the bottom row.",
           "options": [
-            "\\(16\\) rows, \\(30\\) logs on the bottom row",
-            "\\(18\\) rows, \\(32\\) logs on the bottom row",
-            "\\(20\\) rows, \\(35\\) logs on the bottom row",
-            "\\(15\\) rows, \\(29\\) logs on the bottom row"
+            "&#8203;\\(16\\) rows, \\(30\\) logs on the bottom row",
+            "&#8203;\\(18\\) rows, \\(32\\) logs on the bottom row",
+            "&#8203;\\(20\\) rows, \\(35\\) logs on the bottom row",
+            "&#8203;\\(15\\) rows, \\(29\\) logs on the bottom row"
           ],
           "answer": 0,
           "hint": "This is an AP with a = 15, d = 1, S_n = 360. Find n.",
@@ -3181,10 +3181,10 @@
           "difficulty": "hard",
           "stem": "A truck deposits loads of gravel at equally spaced intervals along a straight road.\nThe first load is deposited \\(24\\) km from the quarry, and the last is \\(12\\) km further (at \\(36\\) km).\nIf the truck travels \\(600\\) km in total during these deliveries (including its return to the quarry after the last delivery), how many trips does it make, and how far apart are the deposits?",
           "options": [
-            "\\(9\\) trips, \\(1.50\\) km apart",
-            "\\(12\\) trips, \\(1.09\\) km apart",
-            "\\(10\\) trips, \\(1.20\\) km apart",
-            "\\(10\\) trips, \\(1.33\\) km apart"
+            "&#8203;\\(9\\) trips, \\(1.50\\) km apart",
+            "&#8203;\\(12\\) trips, \\(1.09\\) km apart",
+            "&#8203;\\(10\\) trips, \\(1.20\\) km apart",
+            "&#8203;\\(10\\) trips, \\(1.33\\) km apart"
           ],
           "answer": 3,
           "hint": "The total distance is twice the sum of the distances of the deposits. S_n = n/2 * (a + l).",

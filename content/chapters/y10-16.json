@@ -1040,10 +1040,10 @@
           "difficulty": "hard",
           "stem": "The relationship between two variables is \\(A=kB^3\\). Which of the following graphs would produce a straight line?",
           "options": [
-            "\\(A^3\\) plotted against \\(B^3\\)",
-            "\\(A\\) plotted against \\(\\sqrt[3]{B}\\)",
-            "\\(A^3\\) plotted against \\(B\\)",
-            "\\(\\sqrt[3]{A}\\) plotted against \\(B\\)"
+            "&#8203;\\(A^3\\) plotted against \\(B^3\\)",
+            "&#8203;\\(A\\) plotted against \\(\\sqrt[3]{B}\\)",
+            "&#8203;\\(A^3\\) plotted against \\(B\\)",
+            "&#8203;\\(\\sqrt[3]{A}\\) plotted against \\(B\\)"
           ],
           "answer": 3,
           "hint": "Take the cube root of both sides of \\(A=kB^3\\) to find a linear relationship.",

@@ -2988,10 +2988,10 @@
           "difficulty": "hard",
           "stem": "For $v = 2 - 4\\cos 2t$ and initial displacement 3 m to the right of the origin, find the exact displacement when $t = \\pi$.",
           "options": [
-            "\\(x = 2\\pi + 3\\) metres",
-            "\\(x = 2\\pi + 3\\) metres + 1",
-            "\\(x = 2\\pi - 3\\) metres",
-            "\\(x = 4\\pi + 4\\) metres"
+            "&#8203;\\(x = 2\\pi + 3\\) metres",
+            "&#8203;\\(x = 2\\pi + 3\\) metres + 1",
+            "&#8203;\\(x = 2\\pi - 3\\) metres",
+            "&#8203;\\(x = 4\\pi + 4\\) metres"
           ],
           "answer": 0,
           "hint": "Integrate $v$ to get $x(t)$, apply the initial condition $x(0) = 3$, then substitute $t = \\pi$.",
@@ -4570,10 +4570,10 @@
           "difficulty": "easy",
           "stem": "A student who studied for 2.5 hours was absent during data collection. Predict their exam score using the regression line $y = 10x + 26$.",
           "options": [
-            "\\(y \\approx 36\\) (about \\(36\\) marks)",
-            "\\(y \\approx 45\\) (about \\(45\\) marks)",
-            "\\(y \\approx 51\\) (about \\(51\\) marks)",
-            "\\(y \\approx 56\\) (about \\(56\\) marks)"
+            "&#8203;\\(y \\approx 36\\) (about \\(36\\) marks)",
+            "&#8203;\\(y \\approx 45\\) (about \\(45\\) marks)",
+            "&#8203;\\(y \\approx 51\\) (about \\(51\\) marks)",
+            "&#8203;\\(y \\approx 56\\) (about \\(56\\) marks)"
           ],
           "answer": 2,
           "hint": "Substitute $x = 2.5$ into the regression equation.",
@@ -4764,8 +4764,8 @@
           "difficulty": "easy",
           "stem": "Daily screen time for adults is normally distributed with mean 75 minutes and standard deviation 10 minutes. Above what screen time does 2.5% of this population lie?",
           "options": [
-            "\\(95\\) minutes",
-            "\\(95\\) minutes + 1",
+            "&#8203;\\(95\\) minutes",
+            "&#8203;\\(95\\) minutes + 1",
             "\\(\\dfrac{12}{x + 2}\\)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
@@ -5337,10 +5337,10 @@
           "difficulty": "hard",
           "stem": "For $v = 3 - 6\\cos 2t$ and initial displacement 5 m to the right of the origin, find the exact displacement when $t = \\pi$.",
           "options": [
-            "\\(x = 3\\pi + 5\\) metres",
-            "\\(x = 3\\pi + 5\\) metres + 1",
-            "\\(x = 3\\pi - 5\\) metres",
-            "\\(x = 4\\pi + 5\\) metres"
+            "&#8203;\\(x = 3\\pi + 5\\) metres",
+            "&#8203;\\(x = 3\\pi + 5\\) metres + 1",
+            "&#8203;\\(x = 3\\pi - 5\\) metres",
+            "&#8203;\\(x = 4\\pi + 5\\) metres"
           ],
           "answer": 0,
           "hint": "Integrate $v$ to get $x(t)$, apply the initial condition $x(0) = 5$, then substitute $t = \\pi$.",

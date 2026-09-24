@@ -4243,10 +4243,10 @@
           "difficulty": "hard",
           "stem": "Alex's average homework effort, measured in minutes per week, depreciates by \\(15\\%\\) a week over a ten week term. How long did Alex work on homework in the first week of term if, in the tenth week of term, he completed two hours? Give your answer correct to the nearest minute.",
           "options": [
-            "\\(704\\) minutes",
-            "\\(518\\) minutes",
-            "\\(140\\) minutes",
-            "\\(459\\) minutes"
+            "&#8203;\\(704\\) minutes",
+            "&#8203;\\(518\\) minutes",
+            "&#8203;\\(140\\) minutes",
+            "&#8203;\\(459\\) minutes"
           ],
           "answer": 1,
           "hint": "The tenth week is \\(9\\) depreciation steps after the first week. Use \\(A=P(1-r)^n\\) with \\(n=9\\), and solve for \\(P\\).",

@@ -2672,10 +2672,10 @@
           "difficulty": "hard",
           "stem": "Find the quotient and remainder for the division:\n\\(497 \\div 15\\)",
           "options": [
-            "\\(33\\) remainder \\(2\\)",
-            "\\(33\\) remainder \\(5\\)",
-            "\\(32\\) remainder \\(7\\)",
-            "\\(34\\) remainder \\(1\\)"
+            "&#8203;\\(33\\) remainder \\(2\\)",
+            "&#8203;\\(33\\) remainder \\(5\\)",
+            "&#8203;\\(32\\) remainder \\(7\\)",
+            "&#8203;\\(34\\) remainder \\(1\\)"
           ],
           "answer": 0,
           "hint": "Divide 497 by 15 to find the quotient and remainder.",
@@ -2701,10 +2701,10 @@
           "difficulty": "hard",
           "stem": "Find the quotient and remainder for the division:\n\\(867 \\div 18\\)",
           "options": [
-            "\\(48\\) remainder \\(1\\)",
-            "\\(47\\) remainder \\(9\\)",
-            "\\(48\\) remainder \\(3\\)",
-            "\\(49\\) remainder \\(2\\)"
+            "&#8203;\\(48\\) remainder \\(1\\)",
+            "&#8203;\\(47\\) remainder \\(9\\)",
+            "&#8203;\\(48\\) remainder \\(3\\)",
+            "&#8203;\\(49\\) remainder \\(2\\)"
           ],
           "answer": 2,
           "hint": "Divide 867 by 18 to find the quotient and remainder.",
@@ -2731,10 +2731,10 @@
           "difficulty": "hard",
           "stem": "Find the quotient and remainder for the division:\n\\(620 \\div 23\\)",
           "options": [
-            "\\(26\\) remainder \\(22\\)",
-            "\\(27\\) remainder \\(2\\)",
-            "\\(26\\) remainder \\(12\\)",
-            "\\(27\\) remainder \\(12\\)"
+            "&#8203;\\(26\\) remainder \\(22\\)",
+            "&#8203;\\(27\\) remainder \\(2\\)",
+            "&#8203;\\(26\\) remainder \\(12\\)",
+            "&#8203;\\(27\\) remainder \\(12\\)"
           ],
           "answer": 0,
           "hint": "Divide 620 by 23 to find the quotient and remainder.",
@@ -2760,10 +2760,10 @@
           "difficulty": "hard",
           "stem": "Find the quotient and remainder for the division:\n\\(7\\ 647 \\div 30\\)",
           "options": [
-            "\\(254\\) remainder \\(17\\)",
-            "\\(254\\) remainder \\(27\\)",
-            "\\(255\\) remainder \\(7\\)",
-            "\\(253\\) remainder \\(27\\)"
+            "&#8203;\\(254\\) remainder \\(17\\)",
+            "&#8203;\\(254\\) remainder \\(27\\)",
+            "&#8203;\\(255\\) remainder \\(7\\)",
+            "&#8203;\\(253\\) remainder \\(27\\)"
           ],
           "answer": 1,
           "hint": "Divide 7 647 by 30 to find the quotient and remainder.",
@@ -2824,10 +2824,10 @@
           "difficulty": "hard",
           "stem": "Find the quotient and remainder for the division:\n\\(1\\ 645 \\div 14\\)",
           "options": [
-            "\\(117\\) remainder \\(7\\)",
-            "\\(117\\) remainder \\(5\\)",
-            "\\(118\\) remainder \\(7\\)",
-            "\\(116\\) remainder \\(9\\)"
+            "&#8203;\\(117\\) remainder \\(7\\)",
+            "&#8203;\\(117\\) remainder \\(5\\)",
+            "&#8203;\\(118\\) remainder \\(7\\)",
+            "&#8203;\\(116\\) remainder \\(9\\)"
           ],
           "answer": 0,
           "hint": "Divide 1 645 by 14 using long or short division.",
@@ -2857,10 +2857,10 @@
           "difficulty": "hard",
           "stem": "Find the quotient and remainder for the division:\n\\(1\\ 352 \\div 12\\)",
           "options": [
-            "\\(112\\) remainder \\(8\\)",
-            "\\(112\\) remainder \\(4\\)",
-            "\\(113\\) remainder \\(8\\)",
-            "\\(111\\) remainder \\(10\\)"
+            "&#8203;\\(112\\) remainder \\(8\\)",
+            "&#8203;\\(112\\) remainder \\(4\\)",
+            "&#8203;\\(113\\) remainder \\(8\\)",
+            "&#8203;\\(111\\) remainder \\(10\\)"
           ],
           "answer": 0,
           "hint": "Divide 1 352 by 12 using long or short division.",
@@ -2890,10 +2890,10 @@
           "difficulty": "hard",
           "stem": "Find the quotient and remainder for the division:\n\\(2\\ 856 \\div 19\\)",
           "options": [
-            "\\(150\\) remainder \\(6\\)",
-            "\\(150\\) remainder \\(16\\)",
-            "\\(151\\) remainder \\(6\\)",
-            "\\(149\\) remainder \\(16\\)"
+            "&#8203;\\(150\\) remainder \\(6\\)",
+            "&#8203;\\(150\\) remainder \\(16\\)",
+            "&#8203;\\(151\\) remainder \\(6\\)",
+            "&#8203;\\(149\\) remainder \\(16\\)"
           ],
           "answer": 0,
           "hint": "Divide 2 856 by 19 using long or short division.",
@@ -2923,10 +2923,10 @@
           "difficulty": "hard",
           "stem": "Find the quotient and remainder for the division:\n\\(6\\ 523 \\div 8\\)",
           "options": [
-            "\\(815\\) remainder \\(3\\)",
-            "\\(815\\) remainder \\(5\\)",
-            "\\(816\\) remainder \\(3\\)",
-            "\\(814\\) remainder \\(7\\)"
+            "&#8203;\\(815\\) remainder \\(3\\)",
+            "&#8203;\\(815\\) remainder \\(5\\)",
+            "&#8203;\\(816\\) remainder \\(3\\)",
+            "&#8203;\\(814\\) remainder \\(7\\)"
           ],
           "answer": 0,
           "hint": "Divide 6 523 by 8 using long or short division.",

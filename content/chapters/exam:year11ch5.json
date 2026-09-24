@@ -504,9 +504,9 @@
           "difficulty": "medium",
           "stem": "Write down the centre and radius of the circle: \\((x + 5)^2 + (y - 2)^2 = 7\\)",
           "options": [
-            "\\(Centre \\((5,-2)\\), radius \\(\\sqrt{7}\\)\\)",
+            "&#8203;\\(Centre \\((5,-2)\\), radius \\(\\sqrt{7}\\)\\)",
             "Centre \\((5,-2)\\), radius \\(7\\)",
-            "\\(Centre \\((-5,2)\\), radius \\(\\sqrt{7}\\)\\)",
+            "&#8203;\\(Centre \\((-5,2)\\), radius \\(\\sqrt{7}\\)\\)",
             "Centre \\((-5,2)\\), radius \\(7\\)"
           ],
           "answer": 2,
@@ -1736,10 +1736,10 @@
           "difficulty": "medium",
           "stem": "Given \\(f(x) = x^4 - 3x^2 + 5\\), evaluate \\(f(-x)\\) and classify the function.",
           "options": [
-            "\\(\\(f(-x) = -x^4 - 3x^2 + 5\\), Neither\\)",
+            "&#8203;\\(\\(f(-x) = -x^4 - 3x^2 + 5\\), Neither\\)",
             "\\(\\(f(-x) = x^4 - 3x^2 + 5\\), Even\\)",
             "\\(\\(f(-x) = -x^4 + 3x^2 - 5\\), Odd\\)",
-            "\\(\\(f(-x) = x^4 + 3x^2 + 5\\), Neither\\)"
+            "&#8203;\\(\\(f(-x) = x^4 + 3x^2 + 5\\), Neither\\)"
           ],
           "answer": 1,
           "hint": "Substitute \\(-x\\) into the function. Note that \\((-x)^2 = x^2\\) and \\((-x)^4 = x^4\\).",
@@ -1770,7 +1770,7 @@
           "stem": "Given \\(f(x) = x^5 - 2x^3 + x\\), evaluate \\(f(-x)\\) and classify the function.",
           "options": [
             "\\(\\(f(-x) = x^5 - 2x^3 + x\\), Even\\)",
-            "\\(\\(f(-x) = x^5 + 2x^3 + x\\), Neither\\)",
+            "&#8203;\\(\\(f(-x) = x^5 + 2x^3 + x\\), Neither\\)",
             "\\(\\(f(-x) = -x^5 + 2x^3 - x\\), Odd\\)",
             "\\(\\(f(-x) = -x^5 - 2x^3 - x\\), Odd\\)"
           ],
@@ -1805,7 +1805,7 @@
             "\\(\\(f(-x) = \\frac{-2}{-x}\\), Even\\)",
             "\\(\\(f(-x) = -\\frac{2}{x}\\), Odd\\)",
             "\\(\\(f(-x) = \\frac{2}{x}\\), Even\\)",
-            "\\(\\(f(-x) = \\frac{2}{-x}\\), Neither\\)"
+            "&#8203;\\(\\(f(-x) = \\frac{2}{-x}\\), Neither\\)"
           ],
           "answer": 1,
           "hint": "Substitute \\(-x\\).",
@@ -1835,9 +1835,9 @@
           "difficulty": "medium",
           "stem": "Given \\(f(x) = x^2 + 4x\\), evaluate \\(f(-x)\\) and classify the function.",
           "options": [
-            "\\(\\(f(-x) = -x^2 + 4x\\), Neither\\)",
+            "&#8203;\\(\\(f(-x) = -x^2 + 4x\\), Neither\\)",
             "\\(\\(f(-x) = x^2 + 4x\\), Even\\)",
-            "\\(\\(f(-x) = x^2 - 4x\\), Neither\\)",
+            "&#8203;\\(\\(f(-x) = x^2 - 4x\\), Neither\\)",
             "\\(\\(f(-x) = -x^2 - 4x\\), Odd\\)"
           ],
           "answer": 2,
@@ -2240,10 +2240,10 @@
           "difficulty": "hard",
           "stem": "Hence, write down the equations of the two branches of \\(y = \\frac{|x|}{x}\\).",
           "options": [
-            "\\(y = x\\) for \\(x > 0\\), and \\(y = -x\\) for \\(x < 0\\).",
-            "\\(y = 1\\) for all \\(x\\).",
-            "\\(y = 1\\) for \\(x > 0\\), and \\(y = -1\\) for \\(x < 0\\).",
-            "\\(y = -1\\) for all \\(x\\)."
+            "&#8203;\\(y = x\\) for \\(x > 0\\), and \\(y = -x\\) for \\(x < 0\\).",
+            "&#8203;\\(y = 1\\) for all \\(x\\).",
+            "&#8203;\\(y = 1\\) for \\(x > 0\\), and \\(y = -1\\) for \\(x < 0\\).",
+            "&#8203;\\(y = -1\\) for all \\(x\\)."
           ],
           "answer": 2,
           "solution": "The correct answer is \\(y = 1\\) for \\(x > 0\\), and \\(y = -1\\) for \\(x < 0\\)..",
@@ -4268,7 +4268,7 @@
             "\\(F(G(x)) = 9\\sqrt{x}\\) and \\(G(F(x)) = 3\\sqrt{x}\\), so \\(F(G(x)) = 3\\,G(F(x))\\)",
             "\\(F(G(x)) = 3\\sqrt{x}\\) and \\(G(F(x)) = 9\\sqrt{x}\\)",
             "F(G(x)) = 9x\\) and \\(G(F(x)) = 3x",
-            "\\(F(G(x)) = G(F(x))\\) for all \\(x \\ge 0\\)"
+            "&#8203;\\(F(G(x)) = G(F(x))\\) for all \\(x \\ge 0\\)"
           ],
           "answer": 0,
           "solution": "The correct answer is \\(F(G(x)) = 9\\sqrt{x}\\) and \\(G(F(x)) = 3\\sqrt{x}\\), so \\(F(G(x)) = 3\\,G(F(x))\\).",
@@ -4590,10 +4590,10 @@
           "difficulty": "hard",
           "stem": "Let \\(f(x) = -4 - |x|\\) and \\(g(x) = \\sqrt{x}\\). Which option correctly gives \\(f(g(x))\\) with its domain and range?",
           "options": [
-            "\\(f(g(x)) = \\sqrt{-4 - |x|}\\); domain empty",
-            "\\(f(g(x)) = -4 - \\sqrt{x}\\); domain \\([0,\\infty)\\); range \\((-\\infty,-4]\\)",
-            "\\(f(g(x)) = -4 - \\sqrt{x}\\); domain \\(\\mathbb{R}\\); range \\((-\\infty,-4]\\)",
-            "\\(f(g(x)) = -4 + \\sqrt{x}\\); domain \\([0,\\infty)\\); range \\([-4,\\infty)\\)"
+            "&#8203;\\(f(g(x)) = \\sqrt{-4 - |x|}\\); domain empty",
+            "&#8203;\\(f(g(x)) = -4 - \\sqrt{x}\\); domain \\([0,\\infty)\\); range \\((-\\infty,-4]\\)",
+            "&#8203;\\(f(g(x)) = -4 - \\sqrt{x}\\); domain \\(\\mathbb{R}\\); range \\((-\\infty,-4]\\)",
+            "&#8203;\\(f(g(x)) = -4 + \\sqrt{x}\\); domain \\([0,\\infty)\\); range \\([-4,\\infty)\\)"
           ],
           "answer": 1,
           "solution": "The correct answer is \\(f(g(x)) = -4 - \\sqrt{x}\\); domain \\([0,\\infty)\\); range \\((-\\infty,-4]\\).",
@@ -4624,10 +4624,10 @@
           "difficulty": "hard",
           "stem": "Let \\(f(x) = -4 - |x|\\) and \\(g(x) = \\sqrt{x}\\). Why is the composite \\(g(f(x))\\) empty (empty domain)?",
           "options": [
-            "\\(g(f(x)) = -4 - \\sqrt{x}\\) for all real \\(x\\)",
-            "\\(g(f(x)) = \\sqrt{-4 - |x|}\\) is undefined for all real \\(x\\) because \\(-4 - |x| < 0\\)",
-            "\\(g(f(x))\\) has domain \\(|x| \\le 4\\)",
-            "\\(g(f(x)) = \\sqrt{-4 - |x|}\\) is defined for all \\(x\\)"
+            "&#8203;\\(g(f(x)) = -4 - \\sqrt{x}\\) for all real \\(x\\)",
+            "&#8203;\\(g(f(x)) = \\sqrt{-4 - |x|}\\) is undefined for all real \\(x\\) because \\(-4 - |x| < 0\\)",
+            "&#8203;\\(g(f(x))\\) has domain \\(|x| \\le 4\\)",
+            "&#8203;\\(g(f(x)) = \\sqrt{-4 - |x|}\\) is defined for all \\(x\\)"
           ],
           "answer": 1,
           "solution": "The correct answer is \\(g(f(x)) = \\sqrt{-4 - |x|}\\) is undefined for all real \\(x\\) because \\(-4 - |x| < 0\\).",
@@ -4655,10 +4655,10 @@
           "difficulty": "medium",
           "stem": "Let \\(g(x) = \\sqrt{9 + x}\\) and \\(R(x) = -x\\). Find the expression for the composite function \\(y = g(R(x))\\) and interpret the result as a transformation of the graph of \\(y = g(x)\\).",
           "options": [
-            "\\(y = \\sqrt{9 - x}\\), which is a translation of the graph of \\(y = g(x)\\) by \\(9\\) units left.",
-            "\\(y = \\sqrt{9 - x}\\), which is a reflection of the graph of \\(y = g(x)\\) in the \\(y\\)-axis.",
-            "\\(y = \\sqrt{9 + x} - x\\), which is a translation of the graph of \\(y = g(x)\\) downwards.",
-            "\\(y = -\\sqrt{9 + x}\\), which is a reflection of the graph of \\(y = g(x)\\) in the \\(x\\)-axis."
+            "&#8203;\\(y = \\sqrt{9 - x}\\), which is a translation of the graph of \\(y = g(x)\\) by \\(9\\) units left.",
+            "&#8203;\\(y = \\sqrt{9 - x}\\), which is a reflection of the graph of \\(y = g(x)\\) in the \\(y\\)-axis.",
+            "&#8203;\\(y = \\sqrt{9 + x} - x\\), which is a translation of the graph of \\(y = g(x)\\) downwards.",
+            "&#8203;\\(y = -\\sqrt{9 + x}\\), which is a reflection of the graph of \\(y = g(x)\\) in the \\(x\\)-axis."
           ],
           "answer": 1,
           "hint": "Substitute the expression for \\(R(x) = -x\\) inside \\(g(x)\\). Recall that replacing \\(x\\) with \\(-x\\) reflects a graph across the \\(y\\)-axis.",
@@ -4719,10 +4719,10 @@
           "difficulty": "medium",
           "stem": "Let \\(H(x) = x - 3\\), \\(g(x) = \\sqrt{9 + x}\\), and \\(R(x) = -x\\). Find the expression for \\(y = H(g(R(x)))\\) and interpret it as a transformation of the graph of \\(y = g(R(x)) = \\sqrt{9 - x}\\).",
           "options": [
-            "\\(y = \\sqrt{6 - x}\\), which is a horizontal translation of \\(y = g(R(x))\\) left by \\(3\\) units.",
-            "\\(y = \\sqrt{9 - x} - 3\\), which is a vertical translation of \\(y = g(R(x))\\) downwards by \\(3\\) units.",
-            "\\(y = \\sqrt{12 - x}\\), which is a horizontal translation of \\(y = g(R(x))\\) right by \\(3\\) units.",
-            "\\(y = \\sqrt{9 - x} + 3\\), which is a vertical translation of \\(y = g(R(x))\\) upwards by \\(3\\) units."
+            "&#8203;\\(y = \\sqrt{6 - x}\\), which is a horizontal translation of \\(y = g(R(x))\\) left by \\(3\\) units.",
+            "&#8203;\\(y = \\sqrt{9 - x} - 3\\), which is a vertical translation of \\(y = g(R(x))\\) downwards by \\(3\\) units.",
+            "&#8203;\\(y = \\sqrt{12 - x}\\), which is a horizontal translation of \\(y = g(R(x))\\) right by \\(3\\) units.",
+            "&#8203;\\(y = \\sqrt{9 - x} + 3\\), which is a vertical translation of \\(y = g(R(x))\\) upwards by \\(3\\) units."
           ],
           "answer": 1,
           "hint": "Substitute the expression for \\(g(R(x))\\) into \\(H(x) = x - 3\\). Think about what subtracting \\(3\\) from a function does geometrically.",
@@ -4855,7 +4855,7 @@
           "options": [
             "Even inside only preserves evenness when \\(g\\) is also even.",
             "If \\(f\\) is even, then \\(g \\circ f\\) is odd for every \\(g\\).",
-            "\\(g(f(-x)) = -g(f(x))\\) whenever \\(f\\) is even.",
+            "&#8203;\\(g(f(-x)) = -g(f(x))\\) whenever \\(f\\) is even.",
             "If \\(f\\) is even, then \\(f(-x) = f(x)\\), so \\(g(f(-x)) = g(f(x))\\) for any \\(g\\); thus \\(g \\circ f\\) is even."
           ],
           "answer": 3,

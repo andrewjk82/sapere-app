@@ -2315,10 +2315,10 @@
           "difficulty": "hard",
           "stem": "Two factors of \\(252\\), namely \\(12\\) and \\(21\\), can each be written by reversing the digits of the other. Which of the following is another number that has a pair of factors with this same digit-reversal property?",
           "options": [
-            "\\(380\\) (with factor pair \\(14\\) and \\(41\\))",
-            "\\(480\\) (with factor pair \\(13\\) and \\(31\\))",
-            "\\(620\\) (with factor pair \\(15\\) and \\(51\\))",
-            "\\(504\\) (with factor pair \\(12\\) and \\(21\\))"
+            "&#8203;\\(380\\) (with factor pair \\(14\\) and \\(41\\))",
+            "&#8203;\\(480\\) (with factor pair \\(13\\) and \\(31\\))",
+            "&#8203;\\(620\\) (with factor pair \\(15\\) and \\(51\\))",
+            "&#8203;\\(504\\) (with factor pair \\(12\\) and \\(21\\))"
           ],
           "answer": 3,
           "solution": "Step 1: Understand the property using the example: \\(12\\) and \\(21\\) are digit-reversals of each other, and BOTH divide \\(252\\) exactly (\\(252 \\div 12 = 21\\) and \\(252 \\div 21 = 12\\)). We need another number where both numbers of such a pair are factors. Step 2: Test each option by dividing. Both divisions must be exact. \\(380 \\div 14 = 27\\text{ r }2\\)  \\(480 \\div 13 = 36\\text{ r }12\\)  \\(620 \\div 15 = 41\\text{ r }5\\)  \\(504 \\div 12 = 42\\) Step 3: Rule out the failures: \\(14\\) does not divide \\(380\\) exactly; \\(13\\) does not divide \\(480\\) exactly; \\(15\\) does not divide \\(620\\) exactly. Step 4: Only \\(504\\) works: \\(504 \\div 12 = 42\\) and \\(504 \\div 21 = 24\\), so both \\(12\\) and \\(21\\) are factors of \\(504\\). \\(12 \\times 42 = 504\\)  \\(21 \\times 24 = 504\\)",
@@ -7897,10 +7897,10 @@
           "difficulty": "medium",
           "stem": "A bell rings every 15 minutes and a whistle is blown every 18 minutes. The bell is rung and the whistle blown at 8 a.m. How many minutes will it be before the bell is rung and the whistle blown at the same time again?",
           "options": [
-            "\\(120\\) minutes",
-            "\\(90\\) minutes",
-            "\\(180\\) minutes",
-            "\\(60\\) minutes"
+            "&#8203;\\(120\\) minutes",
+            "&#8203;\\(90\\) minutes",
+            "&#8203;\\(180\\) minutes",
+            "&#8203;\\(60\\) minutes"
           ],
           "answer": 1,
           "hint": "This problem requires finding the Lowest Common Multiple (LCM) of 15 and 18.",
@@ -7959,10 +7959,10 @@
           "difficulty": "hard",
           "stem": "Three swimmers take 28 seconds, 44 seconds and 68 seconds to complete a lap of the pool. If they start together, how many seconds will it be before they are side by side at one end of the pool again?",
           "options": [
-            "\\(1309\\) seconds",
-            "\\(5236\\) seconds",
-            "\\(10472\\) seconds",
-            "\\(2618\\) seconds"
+            "&#8203;\\(1309\\) seconds",
+            "&#8203;\\(5236\\) seconds",
+            "&#8203;\\(10472\\) seconds",
+            "&#8203;\\(2618\\) seconds"
           ],
           "answer": 1,
           "hint": "This question requires finding the Lowest Common Multiple (LCM) of 28, 44, and 68.",

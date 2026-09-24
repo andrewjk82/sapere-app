@@ -3438,10 +3438,10 @@
             }
           },
           "options": [
-            "\\(1200\\pi\\text{ mL}\\) (approx \\(3.8\\text{ L}\\))",
-            "\\(6000\\pi\\text{ mL}\\) (approx \\(18.8\\text{ L}\\))",
-            "\\(300\\pi\\text{ mL}\\) (approx \\(0.9\\text{ L}\\))",
-            "\\(3000\\pi\\text{ mL}\\) (approx \\(9.4\\text{ L}\\))"
+            "&#8203;\\(1200\\pi\\text{ mL}\\) (approx \\(3.8\\text{ L}\\))",
+            "&#8203;\\(6000\\pi\\text{ mL}\\) (approx \\(18.8\\text{ L}\\))",
+            "&#8203;\\(300\\pi\\text{ mL}\\) (approx \\(0.9\\text{ L}\\))",
+            "&#8203;\\(3000\\pi\\text{ mL}\\) (approx \\(9.4\\text{ L}\\))"
           ],
           "answer": 3,
           "hint": "Use \\(V = \\pi r^2 h\\) to find the volume, and remember that \\(1000 \\text{ mL} = 1 \\text{ L}\\).",

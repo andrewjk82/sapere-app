@@ -667,10 +667,10 @@
           "difficulty": "medium",
           "stem": "For $V = 3600\\left(1 - \\dfrac{t}{60}\\right)^2$ ($0 \\le t \\le 60$), how long will it take for the tank to become half full (to the nearest minute)?",
           "options": [
-            "\\(\\approx 9\\) minutes (\\(t \\approx 8.8\\))",
-            "\\(\\approx 18\\) minutes (\\(t \\approx 17.6\\))",
-            "\\(\\approx 30\\) minutes",
-            "\\(\\approx 42\\) minutes (\\(t \\approx 42.4\\))"
+            "&#8203;\\(\\approx 9\\) minutes (\\(t \\approx 8.8\\))",
+            "&#8203;\\(\\approx 18\\) minutes (\\(t \\approx 17.6\\))",
+            "&#8203;\\(\\approx 30\\) minutes",
+            "&#8203;\\(\\approx 42\\) minutes (\\(t \\approx 42.4\\))"
           ],
           "answer": 1,
           "hint": "Set $V = 1800$, take square roots (both signs), and reject the root outside $0 \\le t \\le 60$.",
@@ -739,10 +739,10 @@
           "difficulty": "medium",
           "stem": "For $V = 4900\\left(1 - \\dfrac{t}{70}\\right)^2$ ($0 \\le t \\le 70$), how long until the tank is half full (to the nearest minute)?",
           "options": [
-            "\\(\\approx 10\\) minutes (\\(t \\approx 9.8\\))",
-            "\\(\\approx 35\\) minutes",
-            "\\(\\approx 21\\) minutes (\\(t \\approx 20.5\\))",
-            "\\(\\approx 49\\) minutes (\\(t \\approx 49.5\\))"
+            "&#8203;\\(\\approx 10\\) minutes (\\(t \\approx 9.8\\))",
+            "&#8203;\\(\\approx 35\\) minutes",
+            "&#8203;\\(\\approx 21\\) minutes (\\(t \\approx 20.5\\))",
+            "&#8203;\\(\\approx 49\\) minutes (\\(t \\approx 49.5\\))"
           ],
           "answer": 2,
           "hint": "Set $V = 2450$, take square roots (both signs), reject the root outside $[0, 70]$.",

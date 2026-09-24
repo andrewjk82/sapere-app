@@ -1080,10 +1080,10 @@
           "difficulty": "medium",
           "stem": "Find \\(f(-x)\\) for the function \\(f(x) = x + 5\\), and then decide whether the function is odd, even, or neither.",
           "options": [
-            "\\(f(-x) = x + 5\\), so the function is Even",
-            "\\(f(-x) = -x + 5\\), so the function is Odd",
-            "\\(f(-x) = -x + 5\\), so the function is Neither",
-            "\\(f(-x) = -x - 5\\), so the function is Odd"
+            "&#8203;\\(f(-x) = x + 5\\), so the function is Even",
+            "&#8203;\\(f(-x) = -x + 5\\), so the function is Odd",
+            "&#8203;\\(f(-x) = -x + 5\\), so the function is Neither",
+            "&#8203;\\(f(-x) = -x - 5\\), so the function is Odd"
           ],
           "answer": 2,
           "hint": "Replace \\(x\\) with \\(-x\\) and check if \\(f(-x) = f(x)\\) or \\(f(-x) = -f(x)\\).",
@@ -1114,10 +1114,10 @@
           "difficulty": "medium",
           "stem": "Find \\(f(-x)\\) for the function \\(f(x) = 3x^2 - 7\\), and then decide whether the function is odd, even, or neither.",
           "options": [
-            "\\(f(-x) = -3x^2 - 7\\), so the function is Neither",
-            "\\(f(-x) = 3x^2 - 7\\), so the function is Even",
-            "\\(f(-x) = 3x^2 - 7\\), so the function is Neither",
-            "\\(f(-x) = -3x^2 + 7\\), so the function is Odd"
+            "&#8203;\\(f(-x) = -3x^2 - 7\\), so the function is Neither",
+            "&#8203;\\(f(-x) = 3x^2 - 7\\), so the function is Even",
+            "&#8203;\\(f(-x) = 3x^2 - 7\\), so the function is Neither",
+            "&#8203;\\(f(-x) = -3x^2 + 7\\), so the function is Odd"
           ],
           "answer": 1,
           "hint": "Substitute \\(-x\\) and evaluate \\((-x)^2\\).",
@@ -1148,10 +1148,10 @@
           "difficulty": "medium",
           "stem": "Find \\(f(-x)\\) for the function \\(f(x) = \\frac{3}{x}\\), and then decide whether the function is odd, even, or neither.",
           "options": [
-            "\\(f(-x) = \\frac{3}{-x}\\), so the function is Neither",
-            "\\(f(-x) = -\\frac{3}{x}\\), so the function is Odd",
-            "\\(f(-x) = \\frac{-3}{-x}\\), so the function is Even",
-            "\\(f(-x) = \\frac{3}{x}\\), so the function is Even"
+            "&#8203;\\(f(-x) = \\frac{3}{-x}\\), so the function is Neither",
+            "&#8203;\\(f(-x) = -\\frac{3}{x}\\), so the function is Odd",
+            "&#8203;\\(f(-x) = \\frac{-3}{-x}\\), so the function is Even",
+            "&#8203;\\(f(-x) = \\frac{3}{x}\\), so the function is Even"
           ],
           "answer": 1,
           "hint": "Evaluate \\(f(-x)\\) and compare to \\(-f(x)\\).",
@@ -1182,10 +1182,10 @@
           "difficulty": "medium",
           "stem": "Find \\(f(-x)\\) for the function \\(f(x) = \\frac{2x}{x^2 + 3}\\), and then decide whether the function is odd, even, or neither.",
           "options": [
-            "\\(f(-x) = \\frac{-2x}{x^2 + 3}\\), so the function is Neither",
-            "\\(f(-x) = \\frac{-2x}{x^2 + 3}\\), so the function is Odd",
-            "\\(f(-x) = \\frac{-2x}{x^2 - 3}\\), so the function is Odd",
-            "\\(f(-x) = \\frac{-2x}{-x^2 + 3}\\), so the function is Neither"
+            "&#8203;\\(f(-x) = \\frac{-2x}{x^2 + 3}\\), so the function is Neither",
+            "&#8203;\\(f(-x) = \\frac{-2x}{x^2 + 3}\\), so the function is Odd",
+            "&#8203;\\(f(-x) = \\frac{-2x}{x^2 - 3}\\), so the function is Odd",
+            "&#8203;\\(f(-x) = \\frac{-2x}{-x^2 + 3}\\), so the function is Neither"
           ],
           "answer": 1,
           "hint": "Replace every \\(x\\) with \\(-x\\) and simplify.",

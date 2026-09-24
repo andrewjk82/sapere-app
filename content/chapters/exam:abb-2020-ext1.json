@@ -371,10 +371,10 @@
           "difficulty": "medium",
           "stem": "The graph of $y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)$ is obtained from the graph of $y = \\cos^{-1}(x)$ by which transformation?",
           "options": [
-            "\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a horizontal translation \\(6\\) right then compress by \\(3\\)",
-            "\\(\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a horizontal dilation by factor \\(3\\) then a translation of \\(6\\) units to the left\\)",
-            "\\(\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a horizontal dilation by \\(\\frac{1}{3}\\) then translate \\(6\\) right\\)",
-            "\\(\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a translation \\(2\\) left only\\)"
+            "&#8203;\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a horizontal translation \\(6\\) right then compress by \\(3\\)",
+            "&#8203;\\(\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a horizontal dilation by factor \\(3\\) then a translation of \\(6\\) units to the left\\)",
+            "&#8203;\\(\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a horizontal dilation by \\(\\frac{1}{3}\\) then translate \\(6\\) right\\)",
+            "&#8203;\\(\\(y = \\cos^{-1}\\!\\left(\\dfrac{x+6}{3}\\right)\\) is a translation \\(2\\) left only\\)"
           ],
           "answer": 1,
           "hint": "Write the argument as $\\dfrac{x+6}{3} = \\dfrac{1}{3}(x+6)$. This is a dilation then translation applied to $x$.",
@@ -445,8 +445,8 @@
           "difficulty": "medium",
           "stem": "A school needs to seat 2733 students in classrooms that hold at most 40 students each. What is the minimum number of classrooms required?",
           "options": [
-            "\\(69\\) classrooms",
-            "\\(69\\) classrooms + 1",
+            "&#8203;\\(69\\) classrooms",
+            "&#8203;\\(69\\) classrooms + 1",
             "\\(\\dfrac{12}{x + 2}\\)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
@@ -814,9 +814,9 @@
           "difficulty": "hard",
           "stem": "How many triangles can be formed by joining vertices of a regular decagon (10-sided polygon), given that no three vertices are collinear?",
           "options": [
-            "\\(\\binom{10}{3} = 120\\) triangles",
-            "\\(\\binom{10}{3} = 120\\) triangles + 1",
-            "\\(\\binom{10}{4} = 140\\) triangles",
+            "&#8203;\\(\\binom{10}{3} = 120\\) triangles",
+            "&#8203;\\(\\binom{10}{3} = 120\\) triangles + 1",
+            "&#8203;\\(\\binom{10}{4} = 140\\) triangles",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
           "answer": 0,
@@ -1018,7 +1018,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(x = \\pm\\dfrac{\\pi}{2},\\, \\pm\\dfrac{3\\pi}{4}\\)... or by exact calculation: \\(x = \\pm\\dfrac{\\pi}{3},\\, \\pm\\pi,\\, \\pm\\dfrac{2\\pi}{3}\\)... Full solution gives \\(x = \\pm\\dfrac{3\\pi}{4}, \\pm\\dfrac{\\pi}{4}\\)... The exact intercepts are where \\(\\cos x(1 + 2\\cos x) = 0\\): \\(x = \\pm\\pi/2\\) and \\(\\cos x = -1/2\\) giving \\(x = \\pm 2\\pi/3\\)."
+            "&#8203;\\(x = \\pm\\dfrac{\\pi}{2},\\, \\pm\\dfrac{3\\pi}{4}\\)... or by exact calculation: \\(x = \\pm\\dfrac{\\pi}{3},\\, \\pm\\pi,\\, \\pm\\dfrac{2\\pi}{3}\\)... Full solution gives \\(x = \\pm\\dfrac{3\\pi}{4}, \\pm\\dfrac{\\pi}{4}\\)... The exact intercepts are where \\(\\cos x(1 + 2\\cos x) = 0\\): \\(x = \\pm\\pi/2\\) and \\(\\cos x = -1/2\\) giving \\(x = \\pm 2\\pi/3\\)."
           ],
           "answer": 3,
           "hint": "Use the identity $\\cos 2x = 2\\cos^2 x - 1$ to write the equation as a quadratic in $\\cos x$.",
@@ -1059,7 +1059,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(3\\sqrt{3}/2 - \\) ... area \\(\\approx 3\\) m²... or \\(3\\) m² for the given region."
+            "&#8203;\\(3\\sqrt{3}/2 - \\) ... area \\(\\approx 3\\) m²... or \\(3\\) m² for the given region."
           ],
           "answer": 3,
           "hint": "Integrate $|\\cos x + \\cos 2x|$ over the given interval, splitting where the function changes sign.",
@@ -1456,7 +1456,7 @@
           "options": [
             "\\(P(\\beta) \\neq 0\\)",
             "\\(P'(\\beta) = 0\\)",
-            "\\(\\(P''(\\beta) \\neq 0\\) always\\)",
+            "&#8203;\\(\\(P''(\\beta) \\neq 0\\) always\\)",
             "\\(P'''(\\beta) = 0\\)"
           ],
           "answer": 1,
@@ -1644,7 +1644,7 @@
           "options": [
             "Translation \\(4\\) right then compress by factor \\(2\\)",
             "Horizontal dilation by factor \\(2\\), then translation \\(4\\) units to the right",
-            "\\(Horizontal dilation by \\(\\tfrac{1}{2}\\) then translate \\(4\\) left\\)",
+            "&#8203;\\(Horizontal dilation by \\(\\tfrac{1}{2}\\) then translate \\(4\\) left\\)",
             "Translation \\(2\\) right only"
           ],
           "answer": 1,
@@ -1722,8 +1722,8 @@
           "difficulty": "medium",
           "stem": "A concert venue needs to seat 3518 audience members in sections that hold at most 45 people each. What is the minimum number of sections required?",
           "options": [
-            "\\(79\\) sections",
-            "\\(79\\) sections + 1",
+            "&#8203;\\(79\\) sections",
+            "&#8203;\\(79\\) sections + 1",
             "\\(\\dfrac{12}{x + 2}\\)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
@@ -1845,7 +1845,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(\\overrightarrow{BA} \\cdot \\overrightarrow{AC} = (\\mathbf{p}-\\mathbf{q})\\cdot\\mathbf{q} = |\\mathbf{p}|\\cdot|\\mathbf{q}|\\cos\\theta - |\\mathbf{q}|^2\\)... For right angle at \\(A\\): use full dot product argument."
+            "&#8203;\\(\\overrightarrow{BA} \\cdot \\overrightarrow{AC} = (\\mathbf{p}-\\mathbf{q})\\cdot\\mathbf{q} = |\\mathbf{p}|\\cdot|\\mathbf{q}|\\cos\\theta - |\\mathbf{q}|^2\\)... For right angle at \\(A\\): use full dot product argument."
           ],
           "answer": 3,
           "hint": "Show $\\angle BAC = 90°$ by computing $\\overrightarrow{AB} \\cdot \\overrightarrow{AC} = 0 \\iff |\\mathbf{p}|=|\\mathbf{q}|$.",
@@ -2082,9 +2082,9 @@
           "difficulty": "hard",
           "stem": "How many triangles can be formed by joining vertices of a regular 12-sided polygon (dodecagon), given that no three vertices are collinear?",
           "options": [
-            "\\(\\binom{12}{3} = 220\\) triangles",
-            "\\(\\binom{12}{3} = 220\\) triangles + 1",
-            "\\(\\binom{14}{4} = 440\\) triangles",
+            "&#8203;\\(\\binom{12}{3} = 220\\) triangles",
+            "&#8203;\\(\\binom{12}{3} = 220\\) triangles + 1",
+            "&#8203;\\(\\binom{14}{4} = 440\\) triangles",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
           "answer": 0,
@@ -2241,7 +2241,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(t \\in \\left[0, \\dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{11\\pi}{6}, 2\\pi\\right] \\cup\\) (corresponding in \\([2\\pi,4\\pi]\\))"
+            "&#8203;\\(t \\in \\left[0, \\dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{11\\pi}{6}, 2\\pi\\right] \\cup\\) (corresponding in \\([2\\pi,4\\pi]\\))"
           ],
           "answer": 3,
           "hint": "Inequality becomes $2\\cos(t-\\pi/3) \\geq \\sqrt{3}$, i.e. $\\cos(u) \\geq \\sqrt{3}/2$.",
@@ -2518,9 +2518,9 @@
           "difficulty": "hard",
           "stem": "A second projectile is launched from the same point with the same speed $V = 20$ m/s but at $30°$. Find its horizontal range.",
           "options": [
-            "\\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges)",
-            "\\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges) + 1",
-            "\\(40\\sqrt{4}\\) m (same range — complementary angles give equal ranges)",
+            "&#8203;\\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges)",
+            "&#8203;\\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges) + 1",
+            "&#8203;\\(40\\sqrt{4}\\) m (same range — complementary angles give equal ranges)",
             "\\(\\dfrac{13}{x + 3}\\)"
           ],
           "answer": 0,

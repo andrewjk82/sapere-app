@@ -932,10 +932,10 @@
           "difficulty": "medium",
           "stem": "Given $f(x) = \\dfrac{x}{x^2-5}$, which of the following statements is true?",
           "options": [
-            "\\(\\(f(x)\\) is even and one-to-one\\)",
-            "\\(\\(f(x)\\) is even and many-to-one\\)",
-            "\\(\\(f(x)\\) is odd and one-to-one\\)",
-            "\\(\\(f(x)\\) is odd and many-to-one\\)"
+            "&#8203;\\(\\(f(x)\\) is even and one-to-one\\)",
+            "&#8203;\\(\\(f(x)\\) is even and many-to-one\\)",
+            "&#8203;\\(\\(f(x)\\) is odd and one-to-one\\)",
+            "&#8203;\\(\\(f(x)\\) is odd and many-to-one\\)"
           ],
           "answer": 3,
           "hint": "Check $f(-x)$: if $f(-x)=-f(x)$ it's odd. Use horizontal line test for one-to-one vs many-to-one.",
@@ -976,10 +976,10 @@
           "difficulty": "medium",
           "stem": "Given $f(x) = x^2 - 3$, which of the following statements is true?",
           "options": [
-            "\\(\\(f(x)\\) is odd and one-to-one\\)",
-            "\\(\\(f(x)\\) is even and one-to-one\\)",
-            "\\(\\(f(x)\\) is odd and many-to-one\\)",
-            "\\(\\(f(x)\\) is even and many-to-one\\)"
+            "&#8203;\\(\\(f(x)\\) is odd and one-to-one\\)",
+            "&#8203;\\(\\(f(x)\\) is even and one-to-one\\)",
+            "&#8203;\\(\\(f(x)\\) is odd and many-to-one\\)",
+            "&#8203;\\(\\(f(x)\\) is even and many-to-one\\)"
           ],
           "answer": 3,
           "hint": "$f(-x)=(-x)^2-3=x^2-3=f(x)$ → even. Parabola fails horizontal line test → many-to-one.",
@@ -1998,7 +1998,7 @@
             "\\(\\dfrac{9}{5}\\)",
             "\\(\\dfrac{8}{4}\\)",
             "\\(\\dfrac{7}{3}\\)",
-            "\\(\\sin^2 x + C\\) (or equivalently \\(-\\dfrac{1}{2}\\cos 2x + C\\))"
+            "&#8203;\\(\\sin^2 x + C\\) (or equivalently \\(-\\dfrac{1}{2}\\cos 2x + C\\))"
           ],
           "answer": 3,
           "hint": "Since $\\sin 2x = \\frac{d}{dx}(\\sin^2 x)$, integrate both sides.",
@@ -2815,10 +2815,10 @@
           "difficulty": "easy",
           "stem": "The table below shows waist measurement and weight for 8 people.\n\n\\begin{array}{c|cccccccc} \\text{Waist (cm)} & 72 & 67 & 85 & 96 & 80 & 90 & 98 & 105 \\\\ \\hline \\text{Weight (kg)} & 58 & 50 & 72 & 85 & 70 & 79 & 82 & 84 \\end{array}\n\nCalculate the correlation coefficient $r$ correct to 3 decimal places and describe the strength of the relationship.",
           "options": [
-            "\\(r \\approx 0.959\\); strong positive correlation",
-            "\\(r \\approx 0.72\\); moderate positive correlation",
-            "\\(r \\approx 0.959\\); strong negative correlation",
-            "\\(r \\approx -0.959\\); strong negative correlation"
+            "&#8203;\\(r \\approx 0.959\\); strong positive correlation",
+            "&#8203;\\(r \\approx 0.72\\); moderate positive correlation",
+            "&#8203;\\(r \\approx 0.959\\); strong negative correlation",
+            "&#8203;\\(r \\approx -0.959\\); strong negative correlation"
           ],
           "answer": 0,
           "hint": "Use the STAT mode on a Casio fx-82AU PLUS II (or similar) to compute Pearson's correlation coefficient directly.",
@@ -3333,10 +3333,10 @@
           "difficulty": "hard",
           "stem": "Hence find the area bounded by $y=(1+\\tan x)^2$ and the $x$-axis between $-\\dfrac{\\pi}{4}\\leq x\\leq\\dfrac{\\pi}{4}$.",
           "options": [
-            "\\(2\\) square units",
-            "\\(2\\) square units + 1",
-            "\\(4\\) square units",
-            "\\(1\\) square unit"
+            "&#8203;\\(2\\) square units",
+            "&#8203;\\(2\\) square units + 1",
+            "&#8203;\\(4\\) square units",
+            "&#8203;\\(1\\) square unit"
           ],
           "answer": 0,
           "hint": "Use part (i): $(1+\\tan x)^2=2\\tan x+\\sec^2 x$. Integrate from $-\\pi/4$ to $\\pi/4$.",
