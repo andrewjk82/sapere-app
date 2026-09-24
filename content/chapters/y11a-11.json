@@ -3893,22 +3893,7 @@
           "id": "killara2026-q25",
           "type": "multipart",
           "difficulty": "hard",
-          "stem": "A fence from point A to point B forms an arc of a circle with centre O and radius 45 m. Points C and D lie on OB and OA respectively, with \\\\(OC=OD=s\\\\).",
-          "figure": {
-            "jsxGraph": {
-              "attributes": {
-                "boundingbox": [
-                  -10,
-                  50,
-                  55,
-                  -10
-                ],
-                "axis": false,
-                "showNavigation": false
-              },
-              "script": "\n  var O = board.create('point', [0, 0], {name: 'O', fixed: true, size: 2});\n  var A = board.create('point', [45, 0], {name: 'A', fixed: true, size: 2});\n  var B = board.create('point', [45 * Math.cos(1.4), 45 * Math.sin(1.4)], {name: 'B', fixed: true, size: 2, label: {offset: [-10, 15]}});\n\n      var s = 30; // Just for visual representation\n      var D = board.create('point', [s, 0], {name: 'D', fixed: true, size: 2});\n      var C = board.create('point', [s * Math.cos(1.4), s * Math.sin(1.4)], {name: 'C', fixed: true, size: 2, label: {offset: [-20, 10]}});\n      \n      // Draw sector OAB\n      var sec = board.create('sector', [O, A, B], {fillColor: '#f8fafc', strokeColor: '#94a3b8', strokeWidth: 2});\n      \n      // Draw line CD\n      var cd = board.create('segment', [C, D], {strokeColor: '#475569', strokeWidth: 2});\n      \n      // Shade ABCD using a filled polygon for OCD to \"cut out\" the inner part of a shaded sector?\n      // Better: just draw the sector with light shade, then a white polygon for OCD, then redraw CD.\n      board.create('sector', [O, A, B], {fillColor: '#cbd5e1', fillOpacity: 0.5, strokeWidth: 0});\n      board.create('polygon', [O, C, D], {fillColor: '#ffffff', fillOpacity: 1, borders: {strokeWidth: 2, strokeColor: '#475569'}});\n      // Redraw sector boundary\n      board.create('arc', [O, A, B], {strokeColor: '#475569', strokeWidth: 2});\n      board.create('segment', [D, A], {strokeColor: '#475569', strokeWidth: 2});\n      board.create('segment', [C, B], {strokeColor: '#475569', strokeWidth: 2});\n      \n      board.create('text', [35, 25, 'Shaded Area'], {fontSize: 14});\n      board.create('text', [35, 20, 'ABCD = 974 m&sup2;'], {fontSize: 14});\n      \n      board.create('text', [22, -3, 'r = 45 m'], {fontSize: 14});\n      board.create('text', [15, 2, 's'], {fontSize: 14});\n      board.create('text', [10, 12, 's'], {fontSize: 14});\n      board.create('text', [40, 30, 'Arc = 63 m'], {fontSize: 14});\n    "
-            }
-          },
+          "stem": "A fence from point A to point B forms an arc of a circle with centre O and radius 45 m. Points C and D lie on OB and OA respectively, with \\\\(OC=OD=s\\\\).\\n<svg viewBox=\"0 -10 320 250\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block;\">\\n  <path d=\"M 50 200 L 250 200 A 200 200 0 0 0 84 3 Z\" fill=\"#cbd5e1\" stroke=\"#94a3b8\" stroke-width=\"2\" />\\n  <polygon points=\"50,200 183.3,200 72.7,68.7\" fill=\"#ffffff\" stroke=\"#475569\" stroke-width=\"2\" />\\n  <path d=\"M 183.3 200 L 250 200 A 200 200 0 0 0 84 3 L 72.7 68.7\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\" />\\n  <text x=\"120\" y=\"100\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#1e293b\">Shaded Area</text>\\n  <text x=\"120\" y=\"120\" font-family=\"sans-serif\" font-size=\"14\" fill=\"#1e293b\">ABCD = 974 m&sup2;</text>\\n  <circle cx=\"50\" cy=\"200\" r=\"4\" fill=\"#1e293b\" />\\n  <text x=\"35\" y=\"210\" font-family=\"sans-serif\" fill=\"#1e293b\">O</text>\\n  <circle cx=\"250\" cy=\"200\" r=\"4\" fill=\"#1e293b\" />\\n  <text x=\"255\" y=\"210\" font-family=\"sans-serif\" fill=\"#1e293b\">A</text>\\n  <circle cx=\"84\" cy=\"3\" r=\"4\" fill=\"#1e293b\" />\\n  <text x=\"70\" y=\"15\" font-family=\"sans-serif\" fill=\"#1e293b\">B</text>\\n  <circle cx=\"183.3\" cy=\"200\" r=\"4\" fill=\"#1e293b\" />\\n  <text x=\"175\" y=\"215\" font-family=\"sans-serif\" fill=\"#1e293b\">D</text>\\n  <circle cx=\"72.7\" cy=\"68.7\" r=\"4\" fill=\"#1e293b\" />\\n  <text x=\"50\" y=\"70\" font-family=\"sans-serif\" fill=\"#1e293b\">C</text>\\n  <text x=\"110\" y=\"215\" font-family=\"sans-serif\" fill=\"#1e293b\">s</text>\\n  <text x=\"45\" y=\"130\" font-family=\"sans-serif\" fill=\"#1e293b\">s</text>\\n  <text x=\"150\" y=\"225\" font-family=\"sans-serif\" fill=\"#10b981\">r = 45 m</text>\\n  <text x=\"210\" y=\"80\" font-family=\"sans-serif\" fill=\"#3b82f6\" font-weight=\"bold\">Arc = 63 m</text>\\n</svg>",
           "parts": [
             {
               "id": "killara2026-q25a",
