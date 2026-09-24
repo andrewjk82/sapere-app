@@ -79,8 +79,18 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
   // Firestore gets one write at Finish — see studyNotesService.js.
   const updateNotes = (next) => {
     setNotesItems(next);
-    saveNotesDraft(uid, { subject, items: next });
+    saveNotesDraft(uid, { subject, items: next, savedAt: nowMs() });
   };
+
+  // The draft only exists to survive a reload mid-session. A finished session
+  // always clears it; a stale one (older than the resume cap, or another
+  // subject) is never carried into a new session.
+  const restorableDraft = (draft, forSubject) => (
+    draft?.subject === forSubject
+    && Array.isArray(draft.items) && draft.items.length
+    && Number(draft.savedAt) > nowMs() - RESUME_CAP_SEC * 1000
+      ? draft.items : null
+  );
 
   // The visible clock counts continuously from Start to Stop/subject-switch
   // (surviving pauses and periodic Firestore flushes) — only Stop or a
@@ -234,7 +244,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     persistLocal(subject, 'running');
     if (phase === 'stopped') {
       const draft = loadNotesDraft(uid);
-      setNotesItems(draft?.subject === subject && Array.isArray(draft.items) && draft.items.length ? draft.items : emptyItems());
+      setNotesItems(restorableDraft(draft, subject) || emptyItems());
     }
     setSessionStage('plan');
     setFocusMode(true);
@@ -253,7 +263,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
   const handleRequestEnd = () => {
     if (!focusMode) {
       const draft = loadNotesDraft(uid);
-      setNotesItems(draft?.subject === subject && Array.isArray(draft.items) && draft.items.length ? draft.items : emptyItems());
+      setNotesItems(restorableDraft(draft, subject) || emptyItems());
       setFocusMode(true);
     }
     setSessionStage('review');
@@ -268,12 +278,12 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     try {
       await handleStop();
       const id = await saveSessionNotes({ uid, subject: sessionSubject, items: itemsToSave, durationSec, dateStr: todayStr() });
-      clearNotesDraft(uid);
       if (id) onNotesSaved?.(sessionSubject);
     } catch (e) {
       console.warn('[studytime] notes save failed:', e?.code || e);
       window.alert(`Could not save your notes (${e?.code || 'error'}). Please try again later.`);
     } finally {
+      clearNotesDraft(uid); // session is over either way — next one starts blank
       setFinishing(false);
       setFocusMode(false);
       setSessionStage('plan');
