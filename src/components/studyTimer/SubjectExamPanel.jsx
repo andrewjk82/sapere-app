@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pencil, X, Check } from 'lucide-react';
+import { Pencil, X, Check, NotebookPen, ChevronRight } from 'lucide-react';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
 import { normalizeExamEntry, ddayFor, formatExamDate } from '../../utils/examCountdown';
@@ -14,7 +14,7 @@ import { normalizeExamEntry, ddayFor, formatExamDate } from '../../utils/examCou
  * Editing is a local draft — nothing is written to Firestore until Save is
  * pressed; Cancel discards the draft and reverts to the last saved value.
  */
-const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetExamDate }) => {
+const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetExamDate, onOpenNotes }) => {
   const [draft, setDraft] = useState(null); // date string while editing, else null
 
   if (!subject) return null;
@@ -40,6 +40,26 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
         Exam Countdown
       </div>
 
+      <div style={{ display: 'grid', gridTemplateColumns: onOpenNotes ? 'repeat(auto-fit, minmax(220px, 1fr))' : '1fr', gap: 14 }}>
+      {onOpenNotes && (
+        <button
+          type="button"
+          onClick={onOpenNotes}
+          style={{
+            borderRadius: 24, padding: '20px 24px', border: '1px solid #6366f133', background: '#6366f10d',
+            display: 'flex', alignItems: 'center', gap: 14, cursor: 'pointer', textAlign: 'left',
+          }}
+        >
+          <span style={{ width: 42, height: 42, borderRadius: 14, background: '#6366f1', color: '#fff', display: 'grid', placeItems: 'center', flexShrink: 0, boxShadow: '0 6px 16px #6366f140' }}>
+            <NotebookPen size={19} />
+          </span>
+          <span style={{ display: 'flex', flexDirection: 'column', gap: 2, minWidth: 0 }}>
+            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#4f46e5' }}>Study Notes</span>
+            <span style={{ fontSize: '0.8rem', fontWeight: 600, color: '#64748b' }}>Past plans &amp; study hours</span>
+          </span>
+          <ChevronRight size={18} color="#6366f1" style={{ marginLeft: 'auto', flexShrink: 0 }} />
+        </button>
+      )}
       <div style={{
         borderRadius: 24, padding: '20px 24px', border: `1px solid ${c}33`, background: `${c}0d`,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap',
@@ -113,6 +133,7 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
             <Pencil size={15} />
           </button>
         )}
+      </div>
       </div>
     </div>
   );

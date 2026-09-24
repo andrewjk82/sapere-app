@@ -75,3 +75,14 @@ export const fetchSubjectNotes = async (uid, subject, max = 60) => {
     .map((d) => ({ id: d.id, ...d.data() }))
     .sort((a, b) => msOf(b) - msOf(a));
 };
+
+// Every subject's sessions, newest first (notes page "All" tab).
+export const fetchAllNotes = async (uid, max = 100) => {
+  if (!uid) return [];
+  const snap = await getDocs(query(collection(db, 'users', uid, 'study_notes'), limit(max)));
+  trackRead(Math.max(1, snap.size), 'study_notes');
+  const msOf = (d) => Number(d.createdMs) || Number(String(d.id).split('__').pop()) || 0;
+  return snap.docs
+    .map((d) => ({ id: d.id, ...d.data() }))
+    .sort((a, b) => msOf(b) - msOf(a));
+};

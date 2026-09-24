@@ -8,7 +8,7 @@ import { useToast } from '../../context/ToastContext';
 import { randomSubjectColor } from '../../utils/subjectColors';
 import SubjectStopwatch from './SubjectStopwatch';
 import SubjectExamPanel from './SubjectExamPanel';
-import StudyNotesPanel from './StudyNotesPanel';
+import StudyNotesPage from './StudyNotesPage';
 import StudyStatsCharts from './StudyStatsCharts';
 import StudyTimeLeaderboard from './StudyTimeLeaderboard';
 
@@ -26,6 +26,7 @@ const StudyTimerPage = () => {
   const [lastFlush, setLastFlush] = useState(null); // { totalSec, subject, dateStr, deltaSec, hourBreakdown }
   const [activeSubject, setActiveSubject] = useState(null); // mirrors SubjectStopwatch's selected subject
   const [notesRefreshKey, setNotesRefreshKey] = useState(0);
+  const [view, setView] = useState('timer'); // 'timer' | 'notes'
 
   const handleFlushed = (info) => {
     if (Number.isFinite(info?.totalSec)) setMyTotalSec(info.totalSec);
@@ -124,7 +125,18 @@ const StudyTimerPage = () => {
         </p>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 300px', gap: 24, alignItems: 'start' }}>
+      {view === 'notes' && (
+        <StudyNotesPage
+          uid={user?.uid}
+          subjects={subjects}
+          subjectColors={subjectColors}
+          initialSubject={activeSubject || 'all'}
+          refreshKey={notesRefreshKey}
+          onBack={() => setView('timer')}
+        />
+      )}
+
+      <div style={{ display: view === 'timer' ? 'grid' : 'none', gridTemplateColumns: isMobile ? '1fr' : '1fr 300px', gap: 24, alignItems: 'start' }}>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
           <SubjectStopwatch
             uid={user?.uid}
@@ -143,12 +155,7 @@ const StudyTimerPage = () => {
             subjectColors={subjectColors}
             examDates={examDates}
             onSetExamDate={handleSetExamDate}
-          />
-          <StudyNotesPanel
-            uid={user?.uid}
-            subject={activeSubject || subjects[0]}
-            subjectColors={subjectColors}
-            refreshKey={notesRefreshKey}
+            onOpenNotes={() => { setView('notes'); window.scrollTo({ top: 0 }); }}
           />
           <StudyStatsCharts uid={user?.uid} lastFlush={lastFlush} subjectColors={subjectColors} />
         </div>
