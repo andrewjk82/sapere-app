@@ -272,6 +272,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
       if (id) onNotesSaved?.(sessionSubject);
     } catch (e) {
       console.warn('[studytime] notes save failed:', e?.code || e);
+      window.alert(`Could not save your notes (${e?.code || 'error'}). Please try again later.`);
     } finally {
       setFinishing(false);
       setFocusMode(false);

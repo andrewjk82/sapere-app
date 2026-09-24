@@ -38,7 +38,7 @@ const StudyNotesPanel = ({ uid, subject, subjectColors = {}, refreshKey = 0 }) =
       .then((list) => { if (!cancelled) setLoaded({ key: loadKey, notes: list, error: false }); })
       .catch((e) => {
         console.warn('[studytime] notes fetch failed:', e?.code || e);
-        if (!cancelled) setLoaded({ key: loadKey, notes: [], error: true });
+        if (!cancelled) setLoaded({ key: loadKey, notes: [], error: e?.code || 'unknown' });
       });
     return () => { cancelled = true; };
   }, [open, notes, uid, subject, loadKey]);
@@ -58,7 +58,7 @@ const StudyNotesPanel = ({ uid, subject, subjectColors = {}, refreshKey = 0 }) =
         <div style={{ padding: '0 20px 18px', display: 'flex', flexDirection: 'column', gap: 12 }}>
           {notes === null && <p style={mutedText}>Loading…</p>}
           {notes !== null && notes.length === 0 && (
-            <p style={mutedText}>{error ? 'Could not load notes — try again later.' : 'No notes yet. Start the timer to write your first study plan.'}</p>
+            <p style={mutedText}>{error ? `Could not load notes — try again later. (${error})` : 'No notes yet. Start the timer to write your first study plan.'}</p>
           )}
           {(notes || []).map((n) => {
             const items = Array.isArray(n.items) ? n.items : [];

@@ -9,11 +9,12 @@
  *
  * Traffic model: the in-progress checklist lives in localStorage only (it
  * survives reloads); Firestore sees exactly ONE write per session, at the
- * end. Reading a subject's history is one on-demand range query on the doc
- * id prefix — ordered by document id, so no composite index is needed.
+ * end. Reading a subject's history is one on-demand equality query on
+ * `subjectKey` (single-field index, automatic); newest-first sorting is done
+ * client-side from the ms suffix in the doc id, so no composite index.
  */
 import {
-  collection, doc, documentId, getDocs, limit, orderBy, query, serverTimestamp, setDoc, where,
+  collection, doc, getDocs, limit, query, serverTimestamp, setDoc, where,
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { trackRead, trackWrite } from './trafficTrackerService';
@@ -50,6 +51,8 @@ export const saveSessionNotes = async ({ uid, subject, items, durationSec, dateS
   const id = `${subjectKey(subject)}__${Date.now()}`;
   await setDoc(doc(db, 'users', uid, 'study_notes', id), {
     subject,
+    subjectKey: subjectKey(subject),
+    createdMs: Date.now(),
     date: dateStr,
     items: cleaned,
     durationSec: Math.max(0, Math.floor(durationSec || 0)),
@@ -59,16 +62,16 @@ export const saveSessionNotes = async ({ uid, subject, items, durationSec, dateS
   return id;
 };
 
-export const fetchSubjectNotes = async (uid, subject, max = 30) => {
+export const fetchSubjectNotes = async (uid, subject, max = 60) => {
   if (!uid) return [];
-  const prefix = `${subjectKey(subject)}__`;
   const snap = await getDocs(query(
     collection(db, 'users', uid, 'study_notes'),
-    where(documentId(), '>=', prefix),
-    where(documentId(), '<', `${prefix}`),
-    orderBy(documentId(), 'desc'),
+    where('subjectKey', '==', subjectKey(subject)),
     limit(max),
   ));
   trackRead(Math.max(1, snap.size), 'study_notes');
-  return snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+  const msOf = (d) => Number(d.createdMs) || Number(String(d.id).split('__').pop()) || 0;
+  return snap.docs
+    .map((d) => ({ id: d.id, ...d.data() }))
+    .sort((a, b) => msOf(b) - msOf(a));
 };
