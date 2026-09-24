@@ -15473,15 +15473,15 @@
                 "jsxGraph": {
                   "attributes": {
                     "boundingbox": [
-                      -1,
-                      4,
-                      5,
-                      -1
+                      -16,
+                      16,
+                      16,
+                      -16
                     ],
-                    "axis": false,
+                    "axis": true,
                     "showNavigation": false
                   },
-                  "script": "\nvar O = board.create('point', [0, 0], {name: '', visible: false});\nvar A = board.create('point', [4, 0], {name: '', visible: false});\nvar B = board.create('point', [4, 3], {name: '', visible: false});\n\nboard.create('polygon', [O, A, B], {fillColor: '#3b82f6', fillOpacity: 0.1, borders: {strokeWidth: 2}});\n\nboard.create('text', [1.8, -0.4, '12'], {fontSize: 18, strokeColor: '#1e293b'});\nboard.create('text', [4.2, 1.5, 'y'], {fontSize: 18, strokeColor: '#1e293b'});\nboard.create('text', [1.5, 1.8, '13'], {fontSize: 18, strokeColor: '#1e293b'});\n\nboard.create('angle', [A, O, B], {name: '&theta;', radius: 0.8, fontSize: 18});\n\n// Right angle marker\nboard.create('segment', [[3.6, 0], [3.6, 0.4]], {strokeWidth: 1.5, strokeColor: 'black'});\nboard.create('segment', [[3.6, 0.4], [4, 0.4]], {strokeWidth: 1.5, strokeColor: 'black'});\n          "
+                  "script": "\nvar O = board.create('point', [0, 0], {name: 'O', fixed: true, size: 2, label: {offset: [-15, -15]}});\nvar C = board.create('circle', [O, 13], {strokeColor: '#94a3b8', strokeWidth: 1.5, dash: 2});\nvar P = board.create('point', [12, 5], {name: 'P(12, y)', fixed: true, size: 3, fillColor: '#ef4444', strokeColor: '#ef4444', label: {offset: [10, 10], fontSize: 16}});\nvar X = board.create('point', [12, 0], {name: '', fixed: true, visible: false});\nvar xAxisPoint = board.create('point', [13, 0], {name: '', fixed: true, visible: false});\n\nboard.create('segment', [O, P], {strokeColor: '#3b82f6', strokeWidth: 3});\nboard.create('segment', [O, X], {strokeColor: '#10b981', strokeWidth: 3});\nboard.create('segment', [X, P], {strokeColor: '#f59e0b', strokeWidth: 3});\n\nboard.create('text', [6, -2, 'adj = 12'], {fontSize: 16, strokeColor: '#10b981'});\nboard.create('text', [12.5, 2.5, 'opp = y'], {fontSize: 16, strokeColor: '#f59e0b'});\nboard.create('text', [4, 4.5, 'hyp = 13'], {fontSize: 16, strokeColor: '#3b82f6'});\n\nboard.create('angle', [xAxisPoint, O, P], {name: '&theta;', radius: 2.5, fontSize: 18, fillColor: '#bfdbfe', strokeColor: '#3b82f6'});\n\n// Right angle marker\nboard.create('segment', [[11, 0], [11, 1]], {strokeWidth: 1.5, strokeColor: '#64748b'});\nboard.create('segment', [[11, 1], [12, 1]], {strokeWidth: 1.5, strokeColor: '#64748b'});\n"
                 }
               }
             },

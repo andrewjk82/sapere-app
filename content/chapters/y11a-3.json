@@ -9511,10 +9511,10 @@
           "difficulty": "medium",
           "stem": "The function \\(f(x)=x^5-5x^3+kx\\) passes through the point \\((2,0)\\). Find the value of \\(k\\).",
           "options": [
-            "\\(4\\)",
-            "\\(-4\\)",
-            "\\(8\\)",
-            "\\(2\\)"
+            "&#8203;\\(4\\)",
+            "&#8203;\\(-4\\)",
+            "&#8203;\\(8\\)",
+            "&#8203;\\(2\\)"
           ],
           "answer": 0,
           "hint": "Substitute \\(x=2, f(x)=0\\) into the equation and solve for \\(k\\).",
@@ -14814,10 +14814,10 @@
           "difficulty": "easy",
           "stem": "The function \\(f(x)=3x^2-12x+7\\) has its vertex at:",
           "options": [
-            "\\((2,-5)\\)",
-            "\\((2,-7)\\)",
-            "\\((-2,-5)\\)",
-            "\\((4,7)\\)"
+            "&#8203;\\((2,-5)\\)",
+            "&#8203;\\((2,-7)\\)",
+            "&#8203;\\((-2,-5)\\)",
+            "&#8203;\\((4,7)\\)"
           ],
           "answer": 0,
           "hint": "The x-coordinate of the vertex of \\(ax^2+bx+c\\) is \\(x=-\\dfrac{b}{2a}\\).",
@@ -15976,10 +15976,10 @@
           "difficulty": "medium",
           "stem": "How many x-intercepts does \\(f(x)=x^5-5x^3+4x\\) have?",
           "options": [
-            "\\(5\\)",
-            "\\(3\\)",
-            "\\(4\\)",
-            "\\(2\\)"
+            "&#8203;\\(5\\)",
+            "&#8203;\\(3\\)",
+            "&#8203;\\(4\\)",
+            "&#8203;\\(2\\)"
           ],
           "answer": 0,
           "hint": "Factorise \\(f(x)\\) completely by taking out \\(x\\), then factorising the quartic as a difference of two squares.",
