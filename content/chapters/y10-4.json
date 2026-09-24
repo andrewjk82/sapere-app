@@ -1826,6 +1826,36 @@
           ],
           "hint": "Use midpoints and negative reciprocal gradients.",
           "timeLimit": 60
+        },
+        {
+          "id": "sth2013-q6",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The gradient of the line \\(2x-5y+1=0\\) is",
+          "options": [
+            "\\(-2\\)",
+            "\\(-\\tfrac25\\)",
+            "\\(\\tfrac25\\)",
+            "\\(2\\)"
+          ],
+          "answer": 2,
+          "hint": "Rearrange into the form \\(y=mx+b\\); the gradient is \\(m\\).",
+          "steps": [
+            {
+              "explain": "Make \\(y\\) the subject.",
+              "work": "\\(5y=2x+1\\ \\Rightarrow\\ y=\\tfrac25x+\\tfrac15\\)"
+            },
+            {
+              "explain": "Read off the coefficient of \\(x\\).",
+              "work": "\\(m=\\tfrac25\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -2294,6 +2324,49 @@
               "work": "\\(y + 3 = -0.5x + 2 \\;\\Rightarrow\\; y = -0.5x - 1\\)"
             }
           ]
+        },
+        {
+          "id": "sth2013-q4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The points which are equidistant from \\((1,1)\\) and \\((3,3)\\) lie on the line with equation",
+          "figure": {
+            "svg": "fig:4690ae42bf"
+          },
+          "options": [
+            "\\(x=2\\)",
+            "\\(y=2\\)",
+            "\\(y=x\\)",
+            "\\(x+y=4\\)"
+          ],
+          "answer": 3,
+          "hint": "Points equidistant from two points lie on the perpendicular bisector of the interval joining them.",
+          "steps": [
+            {
+              "explain": "The equidistant points form the perpendicular bisector, which passes through the midpoint M of the interval.",
+              "work": "\\(M=\\left(\\tfrac{1+3}{2},\\tfrac{1+3}{2}\\right)=(2,2)\\)",
+              "figure": {
+                "svg": "fig:c103f98b51"
+              }
+            },
+            {
+              "explain": "The interval has gradient \\(\\tfrac{3-1}{3-1}=1\\), so the perpendicular bisector has gradient \\(-1\\) (negative reciprocal).",
+              "work": "\\(m_\\perp=-1\\)"
+            },
+            {
+              "explain": "Use point-gradient form through \\(M(2,2)\\).",
+              "work": "\\(y-2=-1(x-2)\\ \\Rightarrow\\ x+y=4\\)",
+              "figure": {
+                "svg": "fig:59b1641762"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -2759,6 +2832,40 @@
             "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
             "course": "Advanced",
             "origin": "teacher"
+          }
+        },
+        {
+          "id": "sth2013-q16c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve simultaneously: \\(x-y=-2\\) and \\(2x+3y=41\\).",
+          "options": [
+            "\\(x=7,\\ y=9\\)",
+            "\\(x=9,\\ y=7\\)",
+            "\\(x=13,\\ y=5\\)",
+            "\\(x=4,\\ y=11\\)"
+          ],
+          "answer": 0,
+          "hint": "Make \\(x\\) the subject of the first equation and substitute into the second.",
+          "steps": [
+            {
+              "explain": "From the first equation, \\(x=y-2\\). Substitute into the second.",
+              "work": "\\(2(y-2)+3y=41\\ \\Rightarrow\\ 5y-4=41\\)"
+            },
+            {
+              "explain": "Solve for \\(y\\), then back-substitute.",
+              "work": "\\(y=9,\\quad x=9-2=7\\)"
+            },
+            {
+              "explain": "Check in both equations: \\(7-9=-2\\ \\checkmark\\), \\(14+27=41\\ \\checkmark\\). (The other options each satisfy at most one equation.)",
+              "work": "\\((x,y)=(7,9)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
           }
         }
       ]
@@ -5170,6 +5277,139 @@
             "course": "Mathematics",
             "origin": "teacher"
           }
+        },
+        {
+          "id": "sth2013-q17a",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The points \\(A(1,7)\\), \\(B(-1,5)\\) and \\(C(4,-1)\\) are plotted on a number plane.",
+          "figure": {
+            "svg": "fig:244148c522"
+          },
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          },
+          "parts": [
+            {
+              "id": "sth2013-q17a-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the exact length of \\(AC\\).",
+              "options": [
+                "\\(\\sqrt{73}\\)",
+                "\\(\\sqrt{89}\\)",
+                "\\(\\sqrt{45}\\)",
+                "\\(\\sqrt{65}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the distance formula \\(d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\\).",
+              "steps": [
+                {
+                  "explain": "The horizontal change from A to C is \\(4-1=3\\), and the vertical change is \\(-1-7=-8\\). These are the two shorter sides of a right triangle.",
+                  "work": "\\(\\Delta x=3,\\quad\\Delta y=-8\\)",
+                  "figure": {
+                    "svg": "fig:7a8cf3b839"
+                  }
+                },
+                {
+                  "explain": "Apply Pythagoras / the distance formula.",
+                  "work": "\\(AC=\\sqrt{3^2+(-8)^2}=\\sqrt{9+64}=\\sqrt{73}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q17a-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the gradient of \\(AC\\).",
+              "options": [
+                "\\(-\\tfrac83\\)",
+                "\\(-\\tfrac38\\)",
+                "\\(\\tfrac83\\)",
+                "\\(-\\tfrac85\\)"
+              ],
+              "answer": 0,
+              "hint": "Gradient \\(=\\dfrac{\\text{rise}}{\\text{run}}=\\dfrac{y_2-y_1}{x_2-x_1}\\).",
+              "steps": [
+                {
+                  "explain": "Use the same rise and run as in the triangle for AC.",
+                  "work": "\\(m_{AC}=\\dfrac{-1-7}{4-1}=\\dfrac{-8}{3}\\)",
+                  "figure": {
+                    "svg": "fig:7a8cf3b839"
+                  }
+                },
+                {
+                  "explain": "The line falls from left to right, so a negative gradient makes sense.",
+                  "work": "\\(m_{AC}=-\\tfrac83\\)"
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q17a-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the equation of \\(AC\\) in general form.",
+              "options": [
+                "\\(8x+3y-29=0\\)",
+                "\\(8x-3y+13=0\\)",
+                "\\(3x+8y-59=0\\)",
+                "\\(8x+3y-13=0\\)"
+              ],
+              "answer": 0,
+              "hint": "Use point-gradient form with \\(A(1,7)\\) and \\(m=-\\tfrac83\\), then clear the fraction.",
+              "steps": [
+                {
+                  "explain": "Point-gradient form through \\(A(1,7)\\).",
+                  "work": "\\(y-7=-\\tfrac83(x-1)\\)"
+                },
+                {
+                  "explain": "Multiply both sides by 3 and move every term to one side.",
+                  "work": "\\(3y-21=-8x+8\\ \\Rightarrow\\ 8x+3y-29=0\\)",
+                  "figure": {
+                    "svg": "fig:5be0c784ac"
+                  }
+                },
+                {
+                  "explain": "Check with C: \\(8(4)+3(-1)-29=0\\ \\checkmark\\).",
+                  "work": "\\(8x+3y-29=0\\)"
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q17a-iv",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "If \\(ABCD\\) is a parallelogram, find the coordinates of \\(D\\).",
+              "options": [
+                "\\((6,1)\\)",
+                "\\((2,-3)\\)",
+                "\\((-4,13)\\)",
+                "\\((2.5,3)\\)"
+              ],
+              "answer": 0,
+              "hint": "The diagonals of a parallelogram bisect each other, so AC and BD share a midpoint.",
+              "steps": [
+                {
+                  "explain": "The diagonals AC and BD have the same midpoint.",
+                  "work": "\\(M_{AC}=\\left(\\tfrac{1+4}{2},\\tfrac{7-1}{2}\\right)=(2.5,\\,3)\\)"
+                },
+                {
+                  "explain": "D is as far past M as B is before it.",
+                  "work": "\\(D=(2\\times2.5-(-1),\\ 2\\times3-5)=(6,1)\\)",
+                  "figure": {
+                    "svg": "fig:1500d3b964"
+                  }
+                },
+                {
+                  "explain": "Check: vertex order A→B→C→D, and \\(\\vec{AD}=\\vec{BC}=(5,-6)\\ \\checkmark\\).",
+                  "work": "\\(D(6,1)\\)"
+                }
+              ]
+            }
+          ]
         }
       ]
     }

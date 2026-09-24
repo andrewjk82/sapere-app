@@ -1065,6 +1065,52 @@
           "figure": {
             "svg": "fig:4a9a60aa48"
           }
+        },
+        {
+          "id": "sth2013-q12",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "PQRS is a rhombus (not to scale). T lies on PS, \\(\\angle QSR=36^\\circ\\) and \\(\\angle PRT=30^\\circ\\). Find the value of \\(x\\), where \\(x^\\circ=\\angle PTR\\).",
+          "figure": {
+            "svg": "fig:9888c255a2"
+          },
+          "options": [
+            "\\(90\\)",
+            "\\(96\\)",
+            "\\(102\\)",
+            "\\(108\\)"
+          ],
+          "answer": 1,
+          "hint": "The diagonals of a rhombus bisect its angles. Find \\(\\angle PSR\\) and \\(\\angle PRS\\) first.",
+          "steps": [
+            {
+              "explain": "The diagonal SQ bisects \\(\\angle PSR\\), so \\(\\angle PSQ=\\angle QSR=36^\\circ\\).",
+              "work": "\\(\\angle PSR=2\\times36^\\circ=72^\\circ\\)",
+              "figure": {
+                "svg": "fig:b800b5c229"
+              }
+            },
+            {
+              "explain": "Co-interior angles of the rhombus add to 180°, so \\(\\angle SRQ=108^\\circ\\). The diagonal PR bisects it, giving \\(\\angle PRS=54^\\circ\\), so \\(\\angle TRS=54^\\circ-30^\\circ=24^\\circ\\).",
+              "work": "\\(\\angle TRS=54^\\circ-30^\\circ=24^\\circ\\)",
+              "figure": {
+                "svg": "fig:a8bb8f753b"
+              }
+            },
+            {
+              "explain": "In triangle STR, \\(x^\\circ\\) is the exterior angle at T, so it equals the sum of the two interior opposite angles.",
+              "work": "\\(x=\\angle TSR+\\angle TRS=72+24=96\\)",
+              "figure": {
+                "svg": "fig:69b671d355"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -1216,6 +1262,49 @@
             "examType": "Half-Yearly",
             "grade": "10"
           }
+        },
+        {
+          "id": "sth2013-q8",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In triangles \\(LMN\\) and \\(PQR\\) (not to scale), \\(\\angle L=\\angle P=\\alpha\\), \\(\\angle M=\\angle Q=\\beta\\), and \\(LN=QR\\) (marked). Consider these statements: I. Triangles LMN and PQR are congruent. II. Triangles LMN and PQR are similar. Which is always correct?",
+          "figure": {
+            "svg": "fig:9175960bb7"
+          },
+          "options": [
+            "I only",
+            "II only",
+            "Both I and II",
+            "Neither I nor II"
+          ],
+          "answer": 1,
+          "hint": "Two pairs of equal angles guarantee similarity (AA). For congruence the equal sides must also be in matching positions.",
+          "steps": [
+            {
+              "explain": "Two pairs of angles are equal, so the third pair is equal too (angle sum 180°). That is the AA test, so the triangles are always similar.",
+              "work": "\\(\\triangle LMN\\sim\\triangle PQR\\ \\ (\\text{AA})\\)",
+              "figure": {
+                "svg": "fig:bdf5292670"
+              }
+            },
+            {
+              "explain": "Matching sides sit opposite equal angles. LN is opposite \\(\\beta\\), but QR is opposite \\(\\alpha\\). So the equal sides are not corresponding sides.",
+              "work": "\\(LN\\leftrightarrow PR,\\ \\ QR\\leftrightarrow MN\\)",
+              "figure": {
+                "svg": "fig:2280408d54"
+              }
+            },
+            {
+              "explain": "Since the equal sides don't correspond, the triangles need not be the same size — congruence is not guaranteed. Only II is always true.",
+              "work": "\\(\\text{II only}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -1274,6 +1363,197 @@
             "source": "James Ruse AHS 2012 Year 10 Yearly",
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q9",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A student uses the diagram (not to scale) to find the width of the river, \\(w\\). The sides marked 15 m and \\(w\\) are parallel. The value of \\(w\\) is",
+          "figure": {
+            "svg": "fig:900d42f63b"
+          },
+          "options": [
+            "\\(18\\)",
+            "\\(25\\)",
+            "\\(27\\)",
+            "\\(36\\)"
+          ],
+          "answer": 1,
+          "hint": "The two triangles meeting at O are similar. Match each side with its partner in the other triangle.",
+          "steps": [
+            {
+              "explain": "The two triangles meeting at O have vertically opposite angles at O. Because the marked sides are parallel, their alternate angles are equal too. So the triangles are similar (AA).",
+              "work": "\\(\\text{small }\\triangle\\sim\\text{large }\\triangle\\)",
+              "figure": {
+                "svg": "fig:482fde9efc"
+              }
+            },
+            {
+              "explain": "Corresponding sides: 18 m (along the sight line) matches 30 m, and 15 m (a parallel side) matches \\(w\\).",
+              "work": "\\(\\dfrac{w}{15}=\\dfrac{30}{18}\\)",
+              "figure": {
+                "svg": "fig:394d8c16ed"
+              }
+            },
+            {
+              "explain": "Solve for \\(w\\).",
+              "work": "\\(w=\\dfrac{15\\times30}{18}=25\\text{ m}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q17e",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(PQ\\parallel WY\\), \\(XP=5\\text{ cm}\\), \\(PW=3\\text{ cm}\\), \\(XQ=8\\text{ cm}\\), \\(QY=x\\text{ cm}\\), \\(PQ=6\\text{ cm}\\) and \\(WY=y\\text{ cm}\\).",
+          "figure": {
+            "svg": "fig:1efc88a267"
+          },
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          },
+          "parts": [
+            {
+              "id": "sth2013-q17e-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Which test proves that \\(\\triangle XPQ\\sim\\triangle XWY\\)?",
+              "options": [
+                "Equiangular (AA): \\(\\angle X\\) is common and \\(\\angle XPQ=\\angle XWY\\) (corresponding angles, \\(PQ\\parallel WY\\))",
+                "SAS: \\(XP:XW=XQ:XY\\) with the included angle equal",
+                "SSS: all three pairs of sides are in the same ratio",
+                "RHS: both triangles are right-angled"
+              ],
+              "answer": 0,
+              "hint": "Look for two pairs of equal angles. One angle is shared; the parallel lines give another.",
+              "steps": [
+                {
+                  "explain": "\\(\\angle X\\) belongs to both triangles, so it is common.",
+                  "work": "\\(\\angle PXQ=\\angle WXY\\ (\\text{common})\\)",
+                  "figure": {
+                    "svg": "fig:27f5307913"
+                  }
+                },
+                {
+                  "explain": "PQ ∥ WY, and XW is a transversal, so the angles at P and W are corresponding angles.",
+                  "work": "\\(\\angle XPQ=\\angle XWY\\ (\\text{corresp., }PQ\\parallel WY)\\)",
+                  "figure": {
+                    "svg": "fig:01453d87a7"
+                  }
+                },
+                {
+                  "explain": "Two pairs of equal angles: the triangles are equiangular. (SAS and SSS can't be used — \\(x\\) and \\(y\\) are unknown, so the side ratios aren't known yet.)",
+                  "work": "\\(\\triangle XPQ\\sim\\triangle XWY\\ (\\text{equiangular})\\)"
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q17e-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the value of \\(x\\).",
+              "options": [
+                "\\(\\tfrac{24}{5}\\)",
+                "\\(\\tfrac{64}{5}\\)",
+                "\\(\\tfrac{40}{3}\\)",
+                "\\(\\tfrac{15}{8}\\)"
+              ],
+              "answer": 0,
+              "hint": "Compare whole sides from X: \\(XP:XW=XQ:XY\\), where \\(XW=5+3\\) and \\(XY=8+x\\).",
+              "steps": [
+                {
+                  "explain": "Match the sides from the common vertex X: XP with XW, and XQ with XY.",
+                  "work": "\\(\\dfrac{XP}{XW}=\\dfrac{XQ}{XY}\\ \\Rightarrow\\ \\dfrac58=\\dfrac{8}{8+x}\\)",
+                  "figure": {
+                    "svg": "fig:5a71d8275f"
+                  }
+                },
+                {
+                  "explain": "Cross-multiply and solve. (\\(\\tfrac{64}{5}\\) is XY, the whole side — not \\(x\\).)",
+                  "work": "\\(5(8+x)=64\\ \\Rightarrow\\ 5x=24\\ \\Rightarrow\\ x=\\tfrac{24}5=4.8\\)"
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q17e-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the value of \\(y\\).",
+              "options": [
+                "\\(\\tfrac{48}{5}\\)",
+                "\\(\\tfrac{15}{4}\\)",
+                "\\(\\tfrac{18}{5}\\)",
+                "\\(\\tfrac{64}{5}\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the same ratio \\(5:8\\) with the parallel sides PQ and WY.",
+              "steps": [
+                {
+                  "explain": "PQ corresponds to WY, with the same scale factor \\(\\tfrac{XP}{XW}=\\tfrac58\\).",
+                  "work": "\\(\\dfrac{PQ}{WY}=\\dfrac{XP}{XW}\\ \\Rightarrow\\ \\dfrac6y=\\dfrac58\\)",
+                  "figure": {
+                    "svg": "fig:1b6b916873"
+                  }
+                },
+                {
+                  "explain": "Solve for \\(y\\). (Using \\(\\tfrac{5}{3}\\) — part to part — instead of \\(\\tfrac58\\) gives the wrong \\(\\tfrac{18}5\\).)",
+                  "work": "\\(5y=48\\ \\Rightarrow\\ y=\\tfrac{48}5=9.6\\)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sth2013-q18d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "In the diagram, \\(AB\\parallel DE\\), with \\(AE\\) and \\(BD\\) meeting at C. \\(AC=4\\), \\(CB=3\\), \\(DC=6\\) and \\(CE=x\\). Find \\(x\\).",
+          "figure": {
+            "svg": "fig:1784c41d70"
+          },
+          "options": [
+            "\\(8\\)",
+            "\\(4.5\\)",
+            "\\(2\\)",
+            "\\(12\\)"
+          ],
+          "answer": 0,
+          "hint": "The triangles ABC and EDC are similar. Match A with E and B with D.",
+          "steps": [
+            {
+              "explain": "\\(\\angle BAC=\\angle DEC\\) (alternate angles, AB ∥ DE) and \\(\\angle ACB=\\angle ECD\\) (vertically opposite). So \\(\\triangle ABC\\sim\\triangle EDC\\), with A↔E and B↔D.",
+              "work": "\\(\\triangle ABC\\sim\\triangle EDC\\ (\\text{equiangular})\\)",
+              "figure": {
+                "svg": "fig:0832de3bb5"
+              }
+            },
+            {
+              "explain": "Corresponding sides: AC ↔ EC, and BC ↔ DC.",
+              "work": "\\(\\dfrac{EC}{AC}=\\dfrac{DC}{BC}\\ \\Rightarrow\\ \\dfrac x4=\\dfrac63\\)",
+              "figure": {
+                "svg": "fig:0577c1d8f5"
+              }
+            },
+            {
+              "explain": "Solve. (Pairing AC with DC by mistake gives 4.5.)",
+              "work": "\\(x=4\\times2=8\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
             "grade": "10"
           }
         }

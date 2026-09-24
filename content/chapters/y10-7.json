@@ -2734,6 +2734,97 @@
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
           }
+        },
+        {
+          "id": "sth2013-q19d",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "For the curve \\(y=4-(x+1)^2\\):",
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          },
+          "parts": [
+            {
+              "id": "sth2013-q19d-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the vertex.",
+              "options": [
+                "\\((-1,4)\\)",
+                "\\((1,4)\\)",
+                "\\((-1,-4)\\)",
+                "\\((4,-1)\\)"
+              ],
+              "answer": 0,
+              "hint": "Compare with \\(y=-(x-h)^2+k\\), which has vertex \\((h,k)\\).",
+              "steps": [
+                {
+                  "explain": "Write it as \\(y=-(x-(-1))^2+4\\). The squared term is largest (zero) when \\(x=-1\\), giving the maximum \\(y=4\\).",
+                  "work": "\\(h=-1,\\ k=4\\)"
+                },
+                {
+                  "explain": "The vertex is the maximum turning point (the parabola is concave down).",
+                  "work": "\\((-1,4)\\)",
+                  "figure": {
+                    "svg": "fig:ee763fc124"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q19d-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the y-intercept.",
+              "options": [
+                "\\(y=3\\)",
+                "\\(y=4\\)",
+                "\\(y=5\\)",
+                "\\(y=-3\\)"
+              ],
+              "answer": 0,
+              "hint": "Substitute \\(x=0\\).",
+              "steps": [
+                {
+                  "explain": "Substitute \\(x=0\\).",
+                  "work": "\\(y=4-(0+1)^2=4-1=3\\)",
+                  "figure": {
+                    "svg": "fig:4b07e8eef3"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q19d-iii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the x-intercepts.",
+              "options": [
+                "\\(x=1\\text{ and }x=-3\\)",
+                "\\(x=-1\\text{ and }x=3\\)",
+                "\\(x=3\\text{ and }x=-5\\)",
+                "\\(x=2\\text{ and }x=-2\\)"
+              ],
+              "answer": 0,
+              "hint": "Set \\(y=0\\), isolate the square, then take square roots (both signs).",
+              "steps": [
+                {
+                  "explain": "Set \\(y=0\\) and isolate the squared bracket.",
+                  "work": "\\((x+1)^2=4\\)"
+                },
+                {
+                  "explain": "Take the square root of both sides — remember both signs.",
+                  "work": "\\(x+1=\\pm2\\ \\Rightarrow\\ x=1\\text{ or }x=-3\\)",
+                  "figure": {
+                    "svg": "fig:3259315260"
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -3116,6 +3207,43 @@
             "source": "James Ruse AHS 2012 Year 10 Yearly",
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q19b-ii",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which description matches the graph of \\(y=x^2-x\\)?",
+          "options": [
+            "A concave-up parabola cutting the x-axis at \\(x=0\\) and \\(x=1\\), and the y-axis at \\(y=0\\)",
+            "A concave-up parabola cutting the x-axis at \\(x=0\\) and \\(x=-1\\), and the y-axis at \\(y=0\\)",
+            "A concave-down parabola cutting the x-axis at \\(x=0\\) and \\(x=1\\)",
+            "A concave-up parabola cutting the x-axis at \\(x=\\pm1\\), and the y-axis at \\(y=-1\\)"
+          ],
+          "answer": 0,
+          "hint": "Factorise to find the x-intercepts, and look at the sign of \\(x^2\\) for concavity.",
+          "steps": [
+            {
+              "explain": "The coefficient of \\(x^2\\) is positive, so the parabola is concave up.",
+              "work": "\\(a=1>0\\)"
+            },
+            {
+              "explain": "Factorise to find the x-intercepts.",
+              "work": "\\(x(x-1)=0\\ \\Rightarrow\\ x=0\\text{ or }x=1\\)"
+            },
+            {
+              "explain": "The y-intercept: substitute \\(x=0\\). The vertex lies midway between the roots.",
+              "work": "\\(y=0;\\quad\\text{vertex }\\left(\\tfrac12,-\\tfrac14\\right)\\)",
+              "figure": {
+                "svg": "fig:44021ae134"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
             "grade": "10"
           }
         }

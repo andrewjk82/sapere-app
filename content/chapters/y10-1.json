@@ -9762,6 +9762,40 @@
             "examType": "Half-Yearly",
             "grade": "10"
           }
+        },
+        {
+          "id": "sth2013-q5",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The local sports store advertised a 45% discount on all tennis racquets. Chris bought a racquet and paid \\$88 after discount. How much did Chris save?",
+          "options": [
+            "\\(\\$16.00\\)",
+            "\\(\\$39.60\\)",
+            "\\(\\$48.40\\)",
+            "\\(\\$72.00\\)"
+          ],
+          "answer": 3,
+          "hint": "After a 45% discount Chris paid 55% of the original price. Find the original price first.",
+          "steps": [
+            {
+              "explain": "A 45% discount means Chris paid \\(100\\%-45\\%=55\\%\\) of the original price.",
+              "work": "\\(0.55\\times\\text{original}=88\\)"
+            },
+            {
+              "explain": "Solve for the original price.",
+              "work": "\\(\\text{original}=\\dfrac{88}{0.55}=\\$160\\)"
+            },
+            {
+              "explain": "The saving is the difference. (\\$39.60 is 45% of \\$88 — the common mistake of taking the discount off the sale price.)",
+              "work": "\\(160-88=\\$72.00\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },

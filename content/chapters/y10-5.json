@@ -3100,6 +3100,40 @@
           "meta": {
             "course": "Mathematics"
           }
+        },
+        {
+          "id": "sth2013-q18g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Rearrange \\(x=\\dfrac{5x-3}{x}\\) into the form \\(ax^2+bx+c=0\\) and hence solve for \\(x\\), correct to 2 decimal places.",
+          "options": [
+            "\\(x=4.30\\text{ or }x=0.70\\)",
+            "\\(x=5.54\\text{ or }x=-0.54\\)",
+            "\\(x=-0.70\\text{ or }x=-4.30\\)",
+            "\\(x=8.61\\text{ or }x=1.39\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by \\(x\\), bring every term to one side, then use the quadratic formula.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by \\(x\\) and rearrange into standard form.",
+              "work": "\\(x^2=5x-3\\ \\Rightarrow\\ x^2-5x+3=0\\)"
+            },
+            {
+              "explain": "Quadratic formula with \\(a=1,\\ b=-5,\\ c=3\\).",
+              "work": "\\(x=\\dfrac{5\\pm\\sqrt{25-12}}{2}=\\dfrac{5\\pm\\sqrt{13}}{2}\\)"
+            },
+            {
+              "explain": "Evaluate both roots. (Forgetting to halve gives 8.61 and 1.39; writing \\(+3\\) as \\(-3\\) gives 5.54 and −0.54.)",
+              "work": "\\(x\\approx4.30\\ \\text{ or }\\ x\\approx0.70\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -3335,6 +3369,40 @@
             "sourceId": "t2-y10-algebra-linear-formula-2024",
             "sourcePdf": "T2 math_ algebra, linear, equation & formula.pdf",
             "course": "Advanced"
+          }
+        },
+        {
+          "id": "sth2013-q17d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve for \\(t\\), leaving your answer in simplest exact form: \\(t^2-4t-2=0\\).",
+          "options": [
+            "\\(t=2\\pm\\sqrt6\\)",
+            "\\(t=-2\\pm\\sqrt6\\)",
+            "\\(t=2\\pm2\\sqrt6\\)",
+            "\\(t=4\\pm\\sqrt6\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the quadratic formula, then simplify the surd and divide every term by 2.",
+          "steps": [
+            {
+              "explain": "Quadratic formula with \\(a=1,\\ b=-4,\\ c=-2\\).",
+              "work": "\\(t=\\dfrac{4\\pm\\sqrt{16+8}}{2}=\\dfrac{4\\pm\\sqrt{24}}{2}\\)"
+            },
+            {
+              "explain": "Simplify the surd.",
+              "work": "\\(\\sqrt{24}=\\sqrt{4\\times6}=2\\sqrt6\\)"
+            },
+            {
+              "explain": "Divide both terms of the numerator by 2.",
+              "work": "\\(t=\\dfrac{4\\pm2\\sqrt6}{2}=2\\pm\\sqrt6\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
           }
         }
       ]

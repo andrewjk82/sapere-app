@@ -2259,6 +2259,39 @@
             }
           ],
           "timeLimit": 90
+        },
+        {
+          "id": "sth2013-q19b-i",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which description matches the graph of \\(x^2+y^2=4\\)?",
+          "options": [
+            "A circle with centre \\((0,0)\\) and radius 2, cutting the axes at \\((\\pm2,0)\\) and \\((0,\\pm2)\\)",
+            "A circle with centre \\((0,0)\\) and radius 4, cutting the axes at \\((\\pm4,0)\\) and \\((0,\\pm4)\\)",
+            "A circle with centre \\((2,2)\\) and radius 2",
+            "A parabola with vertex \\((0,4)\\)"
+          ],
+          "answer": 0,
+          "hint": "Compare with the circle equation \\(x^2+y^2=r^2\\).",
+          "steps": [
+            {
+              "explain": "Compare with \\(x^2+y^2=r^2\\): the centre is the origin and \\(r^2=4\\).",
+              "work": "\\(r=\\sqrt4=2\\)"
+            },
+            {
+              "explain": "Intercepts: \\(y=0\\Rightarrow x=\\pm2\\), and \\(x=0\\Rightarrow y=\\pm2\\). (Radius 4 is the mistake of forgetting the square root.)",
+              "work": "\\((\\pm2,0),\\ (0,\\pm2)\\)",
+              "figure": {
+                "svg": "fig:5874246ebb"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -4953,6 +4986,36 @@
             "reviewStatus": "approved",
             "origin": "teacher",
             "examPaper": "nbsc2021-y10-t4"
+          }
+        },
+        {
+          "id": "sth2013-q19c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "For the curve \\(y=\\dfrac{-2}{x}\\), find the equation of the vertical asymptote.",
+          "options": [
+            "\\(x=0\\)",
+            "\\(y=0\\)",
+            "\\(x=-2\\)",
+            "\\(y=-2\\)"
+          ],
+          "answer": 0,
+          "hint": "A vertical asymptote occurs where the function is undefined.",
+          "steps": [
+            {
+              "explain": "\\(\\dfrac{-2}{x}\\) is undefined when the denominator is zero.",
+              "work": "\\(x=0\\)"
+            },
+            {
+              "explain": "So the curve approaches the y-axis but never meets it. (\\(y=0\\) is the horizontal asymptote.)",
+              "work": "\\(\\text{vertical asymptote: }x=0\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
           }
         }
       ]
@@ -8480,6 +8543,52 @@
           ],
           "manual": true,
           "timeLimit": 90
+        },
+        {
+          "id": "sth2013-q3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Which pair of inequalities could represent the shaded region?",
+          "figure": {
+            "svg": "fig:e684fd09a3"
+          },
+          "options": [
+            "\\(y\\le\\tfrac13x,\\ \\ y\\le3x\\)",
+            "\\(y\\le\\tfrac13x,\\ \\ y\\ge3x\\)",
+            "\\(y\\ge\\tfrac13x,\\ \\ y\\le3x\\)",
+            "\\(y\\ge\\tfrac13x,\\ \\ y\\ge3x\\)"
+          ],
+          "answer": 1,
+          "hint": "Pick a test point inside the shaded region, such as \\((-4,-4)\\), and check it against each boundary line.",
+          "steps": [
+            {
+              "explain": "Choose a test point inside the shaded region: \\((-4,-4)\\). Test it against the shallow line \\(y=\\tfrac13x\\).",
+              "work": "\\(-4\\ \\le\\ \\tfrac13(-4)=-1.\\overline{3}\\ \\ \\checkmark\\ \\Rightarrow\\ y\\le\\tfrac13x\\)",
+              "figure": {
+                "svg": "fig:6f975ea78c"
+              }
+            },
+            {
+              "explain": "Now test the same point against the steep line \\(y=3x\\).",
+              "work": "\\(-4\\ \\ge\\ 3(-4)=-12\\ \\ \\checkmark\\ \\Rightarrow\\ y\\ge3x\\)",
+              "figure": {
+                "svg": "fig:5f90e9ad9e"
+              }
+            },
+            {
+              "explain": "The shaded region is the overlap of both conditions — below \\(y=\\tfrac13x\\) and above \\(y=3x\\).",
+              "work": "\\(y\\le\\tfrac13x\\ \\text{ and }\\ y\\ge3x\\)",
+              "figure": {
+                "svg": "fig:e6c69a54e7"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },

@@ -11542,6 +11542,40 @@
               ]
             }
           ]
+        },
+        {
+          "id": "sth2013-q17b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand and simplify \\((3-2\\sqrt3)^2\\).",
+          "options": [
+            "\\(21-12\\sqrt3\\)",
+            "\\(21-6\\sqrt3\\)",
+            "\\(21\\)",
+            "\\(-3-12\\sqrt3\\)"
+          ],
+          "answer": 0,
+          "hint": "Use \\((a-b)^2=a^2-2ab+b^2\\) with \\(a=3\\), \\(b=2\\sqrt3\\).",
+          "steps": [
+            {
+              "explain": "Identify \\(a=3\\) and \\(b=2\\sqrt3\\) in \\((a-b)^2=a^2-2ab+b^2\\).",
+              "work": "\\(3^2-2(3)(2\\sqrt3)+(2\\sqrt3)^2\\)"
+            },
+            {
+              "explain": "Evaluate each term: \\((2\\sqrt3)^2=4\\times3=12\\).",
+              "work": "\\(9-12\\sqrt3+12\\)"
+            },
+            {
+              "explain": "Collect the whole numbers.",
+              "work": "\\(21-12\\sqrt3\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -13555,6 +13589,40 @@
             }
           ],
           "timeLimit": 90
+        },
+        {
+          "id": "sth2013-q18c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(\\dfrac{\\sqrt2-\\sqrt3}{\\sqrt2}=a+b\\sqrt6\\), find \\(a\\) and \\(b\\).",
+          "options": [
+            "\\(a=1,\\ b=-\\tfrac12\\)",
+            "\\(a=1,\\ b=\\tfrac12\\)",
+            "\\(a=2,\\ b=-1\\)",
+            "\\(a=-\\tfrac12,\\ b=1\\)"
+          ],
+          "answer": 0,
+          "hint": "Rationalise by multiplying top and bottom by \\(\\sqrt2\\).",
+          "steps": [
+            {
+              "explain": "Multiply numerator and denominator by \\(\\sqrt2\\).",
+              "work": "\\(\\dfrac{(\\sqrt2-\\sqrt3)\\sqrt2}{\\sqrt2\\cdot\\sqrt2}=\\dfrac{2-\\sqrt6}{2}\\)"
+            },
+            {
+              "explain": "Split into two terms.",
+              "work": "\\(1-\\tfrac12\\sqrt6\\)"
+            },
+            {
+              "explain": "Compare with \\(a+b\\sqrt6\\).",
+              "work": "\\(a=1,\\quad b=-\\tfrac12\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },

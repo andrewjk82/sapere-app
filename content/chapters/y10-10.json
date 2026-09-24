@@ -78,6 +78,49 @@
             "examType": "Yearly",
             "grade": "10"
           }
+        },
+        {
+          "id": "sth2013-q15",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Bottles are packed into a box with a piece of packing between each pair of neighbouring bottles, as shown (\\(n=4\\), \\(k=3\\)). How many pieces of packing are needed to pack a rectangular box fully, if the box has \\(n\\) bottles along the length and \\(k\\) bottles across the breadth?",
+          "figure": {
+            "svg": "fig:96d99bbf58"
+          },
+          "options": [
+            "\\(nk\\)",
+            "\\((n-1)(k-1)\\)",
+            "\\(nk+(n-1)+(k-1)\\)",
+            "\\(n(k-1)+k(n-1)\\)"
+          ],
+          "answer": 3,
+          "hint": "Count the pieces between side-by-side bottles and the pieces between front-and-back bottles separately.",
+          "steps": [
+            {
+              "explain": "Each row of \\(n\\) bottles has \\(n-1\\) gaps, and there are \\(k\\) rows.",
+              "work": "\\(\\text{side-by-side pieces}=k(n-1)\\quad(3\\times3=9)\\)",
+              "figure": {
+                "svg": "fig:34d3656c3e"
+              }
+            },
+            {
+              "explain": "Each column of \\(k\\) bottles has \\(k-1\\) gaps, and there are \\(n\\) columns.",
+              "work": "\\(\\text{front-to-back pieces}=n(k-1)\\quad(4\\times2=8)\\)",
+              "figure": {
+                "svg": "fig:ed4b36d52d"
+              }
+            },
+            {
+              "explain": "Add both kinds and check against the diagram (\\(9+8=17\\) pieces).",
+              "work": "\\(n(k-1)+k(n-1)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     }

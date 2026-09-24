@@ -2659,6 +2659,200 @@
             }
           ],
           "timeLimit": 90
+        },
+        {
+          "id": "sth2013-q18e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(\\log(x^2+6x+9)-\\log(x+3)\\).",
+          "options": [
+            "\\(\\log(x^2+5x+6)\\)",
+            "\\(\\log(x+3)\\)",
+            "\\(\\log x+\\log3\\)",
+            "\\(2\\)"
+          ],
+          "answer": 1,
+          "hint": "Use \\(\\log a-\\log b=\\log\\dfrac ab\\), and notice \\(x^2+6x+9\\) is a perfect square.",
+          "steps": [
+            {
+              "explain": "Combine the logs with the quotient law.",
+              "work": "\\(\\log\\dfrac{x^2+6x+9}{x+3}\\)"
+            },
+            {
+              "explain": "Factorise the perfect square and cancel.",
+              "work": "\\(\\log\\dfrac{(x+3)^2}{x+3}=\\log(x+3)\\)"
+            },
+            {
+              "explain": "Note \\(\\log(x+3)\\ne\\log x+\\log3\\) — the log law splits products, not sums.",
+              "work": "\\(\\log(x+3)\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q18f",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Given \\(\\log_b2=0.43\\) and \\(\\log_b3=0.68\\):",
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          },
+          "parts": [
+            {
+              "id": "sth2013-q18f-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Evaluate \\(\\log_b6\\).",
+              "options": [
+                "\\(1.11\\)",
+                "\\(0.29\\)",
+                "\\(0.25\\)",
+                "\\(1.58\\)"
+              ],
+              "answer": 0,
+              "hint": "\\(6=2\\times3\\), and the log of a product is the sum of the logs.",
+              "steps": [
+                {
+                  "explain": "Write 6 as a product and use the product law.",
+                  "work": "\\(\\log_b6=\\log_b(2\\times3)=\\log_b2+\\log_b3\\)"
+                },
+                {
+                  "explain": "Substitute. (Multiplying the logs gives the wrong 0.29.)",
+                  "work": "\\(0.43+0.68=1.11\\)"
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q18f-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Evaluate \\(\\log_b2\\sqrt3\\).",
+              "options": [
+                "\\(0.77\\)",
+                "\\(1.11\\)",
+                "\\(1.79\\)",
+                "\\(0.90\\)"
+              ],
+              "answer": 0,
+              "hint": "\\(\\sqrt3=3^{1/2}\\), so \\(\\log_b\\sqrt3=\\tfrac12\\log_b3\\).",
+              "steps": [
+                {
+                  "explain": "Split the product, and write the root as a power.",
+                  "work": "\\(\\log_b(2\\sqrt3)=\\log_b2+\\log_b3^{1/2}=\\log_b2+\\tfrac12\\log_b3\\)"
+                },
+                {
+                  "explain": "Substitute.",
+                  "work": "\\(0.43+\\tfrac12(0.68)=0.43+0.34=0.77\\)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sth2013-q19e",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(\\log_2\\left(\\dfrac18\\right)\\).",
+          "options": [
+            "\\(-3\\)",
+            "\\(3\\)",
+            "\\(-8\\)",
+            "\\(-2\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(\\dfrac18\\) as a power of 2.",
+          "steps": [
+            {
+              "explain": "\\(\\tfrac18=\\tfrac1{2^3}=2^{-3}\\).",
+              "work": "\\(\\log_2\\left(2^{-3}\\right)\\)"
+            },
+            {
+              "explain": "\\(\\log_2(2^k)=k\\).",
+              "work": "\\(-3\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q19f",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify fully \\(\\log_7 49a-\\log_7 a\\).",
+          "options": [
+            "\\(2\\)",
+            "\\(\\log_7 48\\)",
+            "\\(49\\)",
+            "\\(1\\)"
+          ],
+          "answer": 0,
+          "hint": "Use the quotient law: \\(\\log_7 49a-\\log_7 a=\\log_7\\dfrac{49a}{a}\\).",
+          "steps": [
+            {
+              "explain": "Combine with the quotient law and cancel \\(a\\).",
+              "work": "\\(\\log_7\\dfrac{49a}{a}=\\log_7 49\\)"
+            },
+            {
+              "explain": "\\(49=7^2\\).",
+              "work": "\\(\\log_7 7^2=2\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q20e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve for \\(x\\): \\(\\log_2(x+1)-\\log_2(x-1)=3\\).",
+          "options": [
+            "\\(x=\\tfrac97\\)",
+            "\\(x=\\tfrac79\\)",
+            "\\(x=-\\tfrac97\\)",
+            "\\(x=\\tfrac75\\)"
+          ],
+          "answer": 0,
+          "hint": "Combine into one log, then change to index form.",
+          "steps": [
+            {
+              "explain": "Quotient law.",
+              "work": "\\(\\log_2\\dfrac{x+1}{x-1}=3\\)"
+            },
+            {
+              "explain": "Convert to index form.",
+              "work": "\\(\\dfrac{x+1}{x-1}=2^3=8\\)"
+            },
+            {
+              "explain": "Solve.",
+              "work": "\\(x+1=8x-8\\ \\Rightarrow\\ 7x=9\\ \\Rightarrow\\ x=\\tfrac97\\)"
+            },
+            {
+              "explain": "Check the domain: both \\(x+1\\) and \\(x-1\\) must be positive, and \\(\\tfrac97>1\\ \\checkmark\\).",
+              "work": "\\(x=\\tfrac97\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -3540,6 +3734,74 @@
             }
           ],
           "timeLimit": 60
+        },
+        {
+          "id": "sth2013-q20b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(4^t=100\\), find \\(t\\) correct to 2 decimal places.",
+          "options": [
+            "\\(3.32\\)",
+            "\\(25.00\\)",
+            "\\(1.66\\)",
+            "\\(0.30\\)"
+          ],
+          "answer": 0,
+          "hint": "Take logs of both sides: \\(t=\\dfrac{\\log100}{\\log4}\\).",
+          "steps": [
+            {
+              "explain": "Take \\(\\log_{10}\\) of both sides and bring the power down.",
+              "work": "\\(t\\log4=\\log100\\)"
+            },
+            {
+              "explain": "Divide.",
+              "work": "\\(t=\\dfrac{\\log100}{\\log4}=\\dfrac{2}{0.6021}\\approx3.32\\)"
+            },
+            {
+              "explain": "Check: \\(4^{3.32}\\approx99.6\\approx100\\ \\checkmark\\).",
+              "work": "\\(t\\approx3.32\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q20f",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Let \\(x=\\log_ba\\) and \\(y=\\log_ab\\). Which statement is true?",
+          "options": [
+            "\\(xy=1\\), so \\(\\log_ba\\cdot\\log_ab=1\\)",
+            "\\(x=y\\) for all valid \\(a\\) and \\(b\\)",
+            "\\(x+y=1\\)",
+            "\\(xy=ab\\)"
+          ],
+          "answer": 0,
+          "hint": "Write both statements in index form: \\(b^x=a\\) and \\(a^y=b\\).",
+          "steps": [
+            {
+              "explain": "Convert each log statement to index form.",
+              "work": "\\(b^x=a,\\qquad a^y=b\\)"
+            },
+            {
+              "explain": "Substitute \\(a=b^x\\) into the second statement.",
+              "work": "\\((b^x)^y=b\\ \\Rightarrow\\ b^{xy}=b^1\\)"
+            },
+            {
+              "explain": "Equate the indices.",
+              "work": "\\(xy=1\\ \\Rightarrow\\ \\log_ba\\cdot\\log_ab=1\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -4258,6 +4520,80 @@
           "hint": "The base determines the steepness of the curve.",
           "solution": "Completed in parts.",
           "timeLimit": 90
+        },
+        {
+          "id": "sth2013-q20c",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "The diagram shows \\(y=5^x\\) and \\(y=\\log_3x\\). ABCD is a rectangle, and the coordinates of D are \\((0,-1)\\).",
+          "figure": {
+            "svg": "fig:a776cf3c7d"
+          },
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          },
+          "parts": [
+            {
+              "id": "sth2013-q20c-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the coordinates of C.",
+              "options": [
+                "\\(\\left(\\tfrac13,-1\\right)\\)",
+                "\\(\\left(-1,\\tfrac13\\right)\\)",
+                "\\((3,-1)\\)",
+                "\\(\\left(\\tfrac15,-1\\right)\\)"
+              ],
+              "answer": 0,
+              "hint": "C is on \\(y=\\log_3x\\) at the same height as D, so \\(\\log_3x=-1\\).",
+              "steps": [
+                {
+                  "explain": "DC is horizontal, so C has the same y-coordinate as D: \\(y=-1\\). C lies on \\(y=\\log_3x\\).",
+                  "work": "\\(\\log_3x=-1\\)",
+                  "figure": {
+                    "svg": "fig:3092846938"
+                  }
+                },
+                {
+                  "explain": "Convert to index form.",
+                  "work": "\\(x=3^{-1}=\\tfrac13\\ \\Rightarrow\\ C\\left(\\tfrac13,-1\\right)\\)",
+                  "figure": {
+                    "svg": "fig:578715c764"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q20c-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the area of rectangle ABCD.",
+              "options": [
+                "\\(\\tfrac23\\text{ units}^2\\)",
+                "\\(\\tfrac13\\text{ units}^2\\)",
+                "\\(\\tfrac43\\text{ units}^2\\)",
+                "\\(\\tfrac32\\text{ units}^2\\)"
+              ],
+              "answer": 0,
+              "hint": "A is the y-intercept of \\(y=5^x\\). The width comes from C.",
+              "steps": [
+                {
+                  "explain": "A is where \\(y=5^x\\) meets the y-axis.",
+                  "work": "\\(5^0=1\\ \\Rightarrow\\ A(0,1)\\)"
+                },
+                {
+                  "explain": "Width \\(=\\tfrac13\\) (from C) and height \\(=1-(-1)=2\\).",
+                  "work": "\\(\\text{Area}=\\tfrac13\\times2=\\tfrac23\\text{ units}^2\\)",
+                  "figure": {
+                    "svg": "fig:6dbadf852e"
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },

@@ -3230,6 +3230,40 @@
             "examType": "Yearly",
             "grade": "10"
           }
+        },
+        {
+          "id": "sth2013-q16a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If \\(m=\\dfrac{1.6\\times10^{-19}}{1.76\\times10^{11}}\\), write \\(m\\) in scientific notation correct to 4 significant figures.",
+          "options": [
+            "\\(9.091\\times10^{-31}\\)",
+            "\\(9.091\\times10^{-30}\\)",
+            "\\(9.091\\times10^{-8}\\)",
+            "\\(2.816\\times10^{-8}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide the numbers, and subtract the powers of ten: \\(-19-11\\).",
+          "steps": [
+            {
+              "explain": "Divide the decimal parts.",
+              "work": "\\(1.6\\div1.76=0.909090\\ldots\\)"
+            },
+            {
+              "explain": "Subtract the indices (division).",
+              "work": "\\(10^{-19}\\div10^{11}=10^{-19-11}=10^{-30}\\)"
+            },
+            {
+              "explain": "\\(0.9091\\) is less than 1, so move the decimal point one place right and lower the index by 1. (Leaving \\(10^{-30}\\) is the most common slip.)",
+              "work": "\\(0.90909\\times10^{-30}=9.091\\times10^{-31}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -3303,6 +3337,36 @@
             "source": "James Ruse AHS 2012 Year 10 Yearly",
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q10",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If \\(x\\) is a number between 0 and 1, which of the following has the greatest (maximum) value?",
+          "options": [
+            "\\(x^{-1}\\)",
+            "\\(x^{0}\\)",
+            "\\(x^{1/2}\\)",
+            "\\(x^{2}\\)"
+          ],
+          "answer": 0,
+          "hint": "Try a sample value such as \\(x=\\tfrac14\\) and evaluate each option.",
+          "steps": [
+            {
+              "explain": "Substitute a sample value between 0 and 1, say \\(x=\\tfrac14\\).",
+              "work": "\\(x^{-1}=4,\\quad x^0=1,\\quad x^{1/2}=\\tfrac12,\\quad x^2=\\tfrac1{16}\\)"
+            },
+            {
+              "explain": "For \\(0<x<1\\), \\(x^{-1}=\\tfrac1x\\) is always greater than 1, and \\(x^0=1\\). The positive powers are smaller than 1.",
+              "work": "\\(x^{-1}\\text{ is greatest}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
             "grade": "10"
           }
         }
@@ -3381,6 +3445,36 @@
             "source": "James Ruse AHS 2008 Year 10 Half-Yearly",
             "school": "James Ruse Agricultural High School",
             "examType": "Half-Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q17c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve for \\(x\\): \\(3^x=\\dfrac1{81}\\).",
+          "options": [
+            "\\(x=-4\\)",
+            "\\(x=4\\)",
+            "\\(x=-3\\)",
+            "\\(x=-27\\)"
+          ],
+          "answer": 0,
+          "hint": "Write \\(\\dfrac1{81}\\) as a power of 3.",
+          "steps": [
+            {
+              "explain": "\\(81=3^4\\), so \\(\\tfrac1{81}=3^{-4}\\).",
+              "work": "\\(3^x=3^{-4}\\)"
+            },
+            {
+              "explain": "Equal bases, so the indices are equal.",
+              "work": "\\(x=-4\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
             "grade": "10"
           }
         }

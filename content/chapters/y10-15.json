@@ -1007,6 +1007,40 @@
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
           }
+        },
+        {
+          "id": "sth2013-q20d",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Three coins are tossed simultaneously. Find the probability that at most two heads are thrown.",
+          "options": [
+            "\\(\\tfrac78\\)",
+            "\\(\\tfrac38\\)",
+            "\\(\\tfrac12\\)",
+            "\\(\\tfrac18\\)"
+          ],
+          "answer": 0,
+          "hint": "\\\"At most two heads\\\" is everything except three heads.",
+          "steps": [
+            {
+              "explain": "A tree diagram for three coins has \\(2\\times2\\times2=8\\) equally likely outcomes.",
+              "work": "\\(|S|=8\\)"
+            },
+            {
+              "explain": "\\\"At most two heads\\\" means 0, 1 or 2 heads — the only excluded outcome is HHH.",
+              "work": "\\(P(\\text{at most 2H})=1-P(HHH)=1-\\tfrac18\\)"
+            },
+            {
+              "explain": "Evaluate. (\\(\\tfrac38\\) is exactly two heads.)",
+              "work": "\\(\\tfrac78\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -2734,6 +2768,104 @@
             "examType": "Yearly",
             "grade": "10"
           }
+        },
+        {
+          "id": "sth2013-q16g",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "If the probability of an event occurring is \\(\\dfrac1x\\), what is the probability of the event not occurring?",
+          "options": [
+            "\\(\\dfrac{x-1}{x}\\)",
+            "\\(\\dfrac{1-x}{x}\\)",
+            "\\(x-1\\)",
+            "\\(\\dfrac{1}{x-1}\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(P(\\text{not }E)=1-P(E)\\).",
+          "steps": [
+            {
+              "explain": "Use the complement rule.",
+              "work": "\\(P(\\text{not occurring})=1-\\dfrac1x\\)"
+            },
+            {
+              "explain": "Write as a single fraction over \\(x\\).",
+              "work": "\\(\\dfrac{x}{x}-\\dfrac1x=\\dfrac{x-1}{x}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q18h",
+          "type": "multipart",
+          "difficulty": "easy",
+          "stem": "In a class of 26 students, all of whom take at least one of History or Geography, there are 20 who take History and 17 who take Geography.",
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          },
+          "parts": [
+            {
+              "id": "sth2013-q18h-i",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "How many students take both History and Geography?",
+              "options": [
+                "\\(11\\)",
+                "\\(37\\)",
+                "\\(6\\)",
+                "\\(3\\)"
+              ],
+              "answer": 0,
+              "hint": "\\(20+17\\) counts the students who take both subjects twice.",
+              "steps": [
+                {
+                  "explain": "Adding the two subject totals counts every student who takes both subjects twice.",
+                  "work": "\\(20+17=37\\)"
+                },
+                {
+                  "explain": "There are only 26 students, so the extra \\(37-26\\) students were double-counted — they take both subjects.",
+                  "work": "\\(37-26=11\\)",
+                  "figure": {
+                    "svg": "fig:c80bd2d79c"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q18h-ii",
+              "type": "mc",
+              "difficulty": "easy",
+              "stem": "Find the probability that a student chosen at random will study History but not Geography.",
+              "options": [
+                "\\(\\tfrac9{26}\\)",
+                "\\(\\tfrac{10}{13}\\)",
+                "\\(\\tfrac{11}{26}\\)",
+                "\\(\\tfrac9{20}\\)"
+              ],
+              "answer": 0,
+              "hint": "History only = History total − both.",
+              "steps": [
+                {
+                  "explain": "History-only students: take the ones doing both out of the History total.",
+                  "work": "\\(20-11=9\\)",
+                  "figure": {
+                    "svg": "fig:a060805bd5"
+                  }
+                },
+                {
+                  "explain": "Divide by the whole class. (\\(\\tfrac9{20}\\) divides by History students only — that's a conditional probability.)",
+                  "work": "\\(P=\\dfrac9{26}\\)"
+                }
+              ]
+            }
+          ]
         }
       ]
     },

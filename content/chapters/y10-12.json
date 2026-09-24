@@ -3152,6 +3152,49 @@
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
           }
+        },
+        {
+          "id": "sth2013-q1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In the right-angled triangle shown, the hypotenuse is 13 and the side opposite \\(\\theta\\) is 5. Correct to 2 decimal places, \\(\\tan\\theta=\\)",
+          "figure": {
+            "svg": "fig:56fe5f1b30"
+          },
+          "options": [
+            "\\(0.38\\)",
+            "\\(0.42\\)",
+            "\\(2.40\\)",
+            "\\(22.62\\)"
+          ],
+          "answer": 1,
+          "hint": "\\(\\tan\\theta=\\dfrac{\\text{opposite}}{\\text{adjacent}}\\) — but the adjacent side isn't given, so find it first with Pythagoras.",
+          "steps": [
+            {
+              "explain": "The adjacent side is missing. The hypotenuse (13) and the opposite side (5) give it by Pythagoras.",
+              "work": "\\(\\text{adj}=\\sqrt{13^2-5^2}=\\sqrt{169-25}=\\sqrt{144}=12\\)",
+              "figure": {
+                "svg": "fig:a346b29698"
+              }
+            },
+            {
+              "explain": "Now use the opposite side (5) and the adjacent side (12) — the two sides touching the tangent ratio.",
+              "work": "\\(\\tan\\theta=\\dfrac{5}{12}=0.41\\overline{6}\\approx0.42\\)",
+              "figure": {
+                "svg": "fig:d788cab4c8"
+              }
+            },
+            {
+              "explain": "Check the distractors: \\(0.38=\\tfrac{5}{13}\\) is \\(\\sin\\theta\\), \\(2.40=\\tfrac{12}{5}\\) is the ratio upside down, and \\(22.62\\) is the angle \\(\\theta\\) itself in degrees, not \\(\\tan\\theta\\).",
+              "work": "\\(\\tan\\theta\\approx0.42\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -7622,6 +7665,49 @@
             "source": "James Ruse AHS 2012 Year 10 Yearly",
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q7",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the rectangular prism shown, \\(AB=4\\text{ m}\\), \\(BF=2\\text{ m}\\) and \\(FG=3\\text{ m}\\). The size of \\(\\angle BHF\\), to the nearest minute, is",
+          "figure": {
+            "svg": "fig:aed691c9cf"
+          },
+          "options": [
+            "\\(21^\\circ48'\\)",
+            "\\(23^\\circ35'\\)",
+            "\\(26^\\circ34'\\)",
+            "\\(36^\\circ52'\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(\\angle BHF\\) sits in the right-angled triangle \\(BFH\\) (BF is vertical). You need \\(HF\\), the diagonal of the base, first.",
+          "steps": [
+            {
+              "explain": "HF is the diagonal of the base rectangle. In right triangle \\(HGF\\), \\(HG=AB=4\\) and \\(GF=3\\).",
+              "work": "\\(HF=\\sqrt{4^2+3^2}=\\sqrt{25}=5\\text{ m}\\)",
+              "figure": {
+                "svg": "fig:0114dae743"
+              }
+            },
+            {
+              "explain": "BF is vertical, so it is perpendicular to the base: triangle \\(BFH\\) has its right angle at F. Relative to \\(\\angle BHF\\), BF is opposite and HF is adjacent.",
+              "work": "\\(\\tan\\angle BHF=\\dfrac{BF}{HF}=\\dfrac{2}{5}\\)",
+              "figure": {
+                "svg": "fig:c91264bbc7"
+              }
+            },
+            {
+              "explain": "Take the inverse tangent and convert to degrees and minutes.",
+              "work": "\\(\\angle BHF=\\tan^{-1}(0.4)=21.801^\\circ\\approx21^\\circ48'\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
             "grade": "10"
           }
         }
@@ -16389,6 +16475,45 @@
           "hint": "Use the cosine rule to find the angle opposite the smallest side, then use the sine area formula.",
           "solution": "This problem contains multiple parts.",
           "timeLimit": 90
+        },
+        {
+          "id": "sth2013-q19g",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the exact area of the parallelogram with sides 6 cm and 8 cm and an angle of \\(60^\\circ\\) between them.",
+          "figure": {
+            "svg": "fig:02b69fa94e"
+          },
+          "options": [
+            "\\(24\\sqrt3\\text{ cm}^2\\)",
+            "\\(48\\text{ cm}^2\\)",
+            "\\(24\\text{ cm}^2\\)",
+            "\\(12\\sqrt3\\text{ cm}^2\\)"
+          ],
+          "answer": 0,
+          "hint": "Area = base × perpendicular height. Find the height from the 6 cm side and the 60° angle.",
+          "steps": [
+            {
+              "explain": "The perpendicular height \\(h\\) is opposite the 60° angle in the right triangle whose hypotenuse is the 6 cm side.",
+              "work": "\\(h=6\\sin60^\\circ=6\\times\\tfrac{\\sqrt3}{2}=3\\sqrt3\\text{ cm}\\)",
+              "figure": {
+                "svg": "fig:e723cc6730"
+              }
+            },
+            {
+              "explain": "Area = base × height. (Using 6 cm as the height gives 48 — the slanted side is not the height.)",
+              "work": "\\(A=8\\times3\\sqrt3=24\\sqrt3\\text{ cm}^2\\)",
+              "figure": {
+                "svg": "fig:0df274e850"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -17930,6 +18055,111 @@
             {
               "explain": "Use the Sine Rule in \\(\\triangle ATV\\) to find the height of the tree, \\(TV\\).",
               "work": "\\(\\frac{TV}{\\sin(17^\\circ)} = \\frac{40}{\\sin(47^\\circ)}\\)<br />\\(TV = \\frac{40 \\sin(17^\\circ)}{\\sin(47^\\circ)} \\approx 15.98 \\text{ m}\\)<br />Rounding to the nearest metre, the height is \\(16 \\text{ m}\\)."
+            }
+          ]
+        },
+        {
+          "id": "sth2013-q20a",
+          "type": "multipart",
+          "difficulty": "medium",
+          "stem": "Boat A sails 9 km from port P on a bearing of 035°. Boat B sails 7 km from port P on a bearing of 160°.",
+          "figure": {
+            "svg": "fig:76ae367e64"
+          },
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          },
+          "parts": [
+            {
+              "id": "sth2013-q20a-i",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the distance \\(AB\\), correct to 1 decimal place.",
+              "options": [
+                "\\(14.2\\text{ km}\\)",
+                "\\(7.6\\text{ km}\\)",
+                "\\(15.9\\text{ km}\\)",
+                "\\(11.4\\text{ km}\\)"
+              ],
+              "answer": 0,
+              "hint": "First find \\(\\angle APB\\) from the two bearings, then use the cosine rule.",
+              "steps": [
+                {
+                  "explain": "Both bearings are measured clockwise from north, so the angle between the two paths is their difference.",
+                  "work": "\\(\\angle APB=160^\\circ-35^\\circ=125^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:036ae90e55"
+                  }
+                },
+                {
+                  "explain": "Two sides and the included angle are known: use the cosine rule for the third side.",
+                  "work": "\\(AB^2=9^2+7^2-2(9)(7)\\cos125^\\circ=130+72.27=202.27\\)",
+                  "figure": {
+                    "svg": "fig:4d824fe22b"
+                  }
+                },
+                {
+                  "explain": "Take the square root. (Using \\(+\\cos\\) instead of \\(-\\cos\\) — i.e. treating \\(\\cos125^\\circ\\) as positive — gives 7.6 km.)",
+                  "work": "\\(AB=\\sqrt{202.27}\\approx14.2\\text{ km}\\)"
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q20a-ii",
+              "type": "mc",
+              "difficulty": "medium",
+              "stem": "Find the angle \\(PAB\\), to the nearest degree.",
+              "options": [
+                "\\(24^\\circ\\)",
+                "\\(31^\\circ\\)",
+                "\\(55^\\circ\\)",
+                "\\(35^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "Use the sine rule: the side opposite \\(\\angle PAB\\) is \\(PB=7\\text{ km}\\).",
+              "steps": [
+                {
+                  "explain": "The side opposite \\(\\angle PAB\\) is PB = 7, and the side opposite \\(\\angle APB=125^\\circ\\) is AB ≈ 14.22.",
+                  "work": "\\(\\dfrac{\\sin\\angle PAB}{7}=\\dfrac{\\sin125^\\circ}{14.22}\\)",
+                  "figure": {
+                    "svg": "fig:456614cc37"
+                  }
+                },
+                {
+                  "explain": "Solve. (Using 9 instead of 7 gives \\(31^\\circ\\), which is actually \\(\\angle PBA\\).)",
+                  "work": "\\(\\sin\\angle PAB=\\dfrac{7\\sin125^\\circ}{14.22}\\approx0.403\\ \\Rightarrow\\ \\angle PAB\\approx24^\\circ\\)"
+                }
+              ]
+            },
+            {
+              "id": "sth2013-q20a-iii",
+              "type": "mc",
+              "difficulty": "hard",
+              "stem": "Hence, find the bearing of B from A, to the nearest degree.",
+              "options": [
+                "\\(191^\\circ\\)",
+                "\\(239^\\circ\\)",
+                "\\(011^\\circ\\)",
+                "\\(215^\\circ\\)"
+              ],
+              "answer": 0,
+              "hint": "First find the bearing of P from A (the back bearing of 035°), then turn by \\(\\angle PAB\\).",
+              "steps": [
+                {
+                  "explain": "The bearing of P from A is the back bearing of 035°.",
+                  "work": "\\(035^\\circ+180^\\circ=215^\\circ\\)"
+                },
+                {
+                  "explain": "Standing at A facing P (215°), B lies \\(24^\\circ\\) anticlockwise from that direction (towards south). Subtract.",
+                  "work": "\\(215^\\circ-24^\\circ=191^\\circ\\)",
+                  "figure": {
+                    "svg": "fig:3f06073ee2"
+                  }
+                }
+              ]
             }
           ]
         }

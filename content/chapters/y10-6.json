@@ -1874,6 +1874,40 @@
             "examType": "Half-Yearly",
             "grade": "10"
           }
+        },
+        {
+          "id": "sth2013-q18b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A lead cube of side 8 cm is melted down to make lead spheres, each with radius 7 mm. How many complete spheres can be made?",
+          "options": [
+            "\\(356\\)",
+            "\\(357\\)",
+            "\\(44\\)",
+            "\\(475\\)"
+          ],
+          "answer": 0,
+          "hint": "Work in the same units (e.g. cm: \\(7\\text{ mm}=0.7\\text{ cm}\\)), divide the volumes, and keep only complete spheres.",
+          "steps": [
+            {
+              "explain": "Volume of the cube.",
+              "work": "\\(V_{\\text{cube}}=8^3=512\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Volume of one sphere, with \\(r=7\\text{ mm}=0.7\\text{ cm}\\).",
+              "work": "\\(V_{\\text{sphere}}=\\tfrac43\\pi(0.7)^3\\approx1.4368\\text{ cm}^3\\)"
+            },
+            {
+              "explain": "Divide. Only complete spheres count, so always round down — 357 spheres would need more lead than the cube contains.",
+              "work": "\\(\\dfrac{512}{1.4368}\\approx356.4\\ \\Rightarrow\\ 356\\text{ complete spheres}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     },
@@ -1909,6 +1943,79 @@
             "source": "James Ruse AHS 2012 Year 10 Yearly",
             "school": "James Ruse Agricultural High School",
             "examType": "Yearly",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q11",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "This shape is made by cutting a small regular octagon from the centre of a larger similar regular octagon. Corresponding sides are in the ratio \\(3:4\\). What fraction of the larger octagon has been cut out?",
+          "figure": {
+            "svg": "fig:dc6e8d71bd"
+          },
+          "options": [
+            "\\(\\tfrac14\\)",
+            "\\(\\tfrac34\\)",
+            "\\(\\tfrac7{16}\\)",
+            "\\(\\tfrac9{16}\\)"
+          ],
+          "answer": 3,
+          "hint": "For similar figures, if lengths are in the ratio \\(a:b\\), areas are in the ratio \\(a^2:b^2\\).",
+          "steps": [
+            {
+              "explain": "The octagons are similar with side lengths in the ratio 3 : 4.",
+              "work": "\\(\\text{length ratio}=3:4\\)",
+              "figure": {
+                "svg": "fig:5a3f777300"
+              }
+            },
+            {
+              "explain": "Area scales by the square of the length ratio. The cut-out part is the small octagon.",
+              "work": "\\(\\dfrac{\\text{small area}}{\\text{large area}}=\\left(\\dfrac34\\right)^2=\\dfrac9{16}\\)",
+              "figure": {
+                "svg": "fig:976516fa69"
+              }
+            },
+            {
+              "explain": "So \\(\\tfrac9{16}\\) of the large octagon was removed. (\\(\\tfrac7{16}\\) is the shaded ring that remains; \\(\\tfrac34\\) forgets to square.)",
+              "work": "\\(\\tfrac9{16}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
+        },
+        {
+          "id": "sth2013-q19a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "The ratio of the heights of two similar cylinders is \\(2:3\\). If 4 kg of gas fills the smaller cylinder, how much gas is needed to fill the larger one?",
+          "options": [
+            "\\(13.5\\text{ kg}\\)",
+            "\\(6\\text{ kg}\\)",
+            "\\(9\\text{ kg}\\)",
+            "\\(12\\text{ kg}\\)"
+          ],
+          "answer": 0,
+          "hint": "For similar solids, volumes scale by the cube of the length ratio.",
+          "steps": [
+            {
+              "explain": "Lengths are in the ratio 2 : 3, so volumes are in the ratio \\(2^3:3^3\\).",
+              "work": "\\(V_S:V_L=8:27\\)"
+            },
+            {
+              "explain": "The gas needed is in proportion to the volume. (6 kg uses the length ratio; 9 kg uses the area ratio.)",
+              "work": "\\(4\\times\\dfrac{27}{8}=13.5\\text{ kg}\\)"
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
             "grade": "10"
           }
         }
@@ -3516,6 +3623,52 @@
             }
           ],
           "timeLimit": 90
+        },
+        {
+          "id": "sth2013-q18a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A square pyramid with base edge 16 cm and height 12 cm has another square pyramid with base edge 8 cm and height 6 cm removed from its top. Find the volume of the frustum that is formed.",
+          "figure": {
+            "svg": "fig:7864adb9be"
+          },
+          "options": [
+            "\\(896\\text{ cm}^3\\)",
+            "\\(2688\\text{ cm}^3\\)",
+            "\\(1024\\text{ cm}^3\\)",
+            "\\(384\\text{ cm}^3\\)"
+          ],
+          "answer": 0,
+          "hint": "Frustum = large pyramid − small pyramid, with \\(V=\\tfrac13Ah\\) for each.",
+          "steps": [
+            {
+              "explain": "Volume of the large pyramid (base 16 cm, height 12 cm).",
+              "work": "\\(V_L=\\tfrac13\\times16^2\\times12=\\tfrac13\\times256\\times12=1024\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "fig:2e150f6678"
+              }
+            },
+            {
+              "explain": "Volume of the small pyramid that was removed (base 8 cm, height 6 cm).",
+              "work": "\\(V_S=\\tfrac13\\times8^2\\times6=\\tfrac13\\times64\\times6=128\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "fig:fe5490d08a"
+              }
+            },
+            {
+              "explain": "The frustum is what remains. (Forgetting the \\(\\tfrac13\\) gives 2688.)",
+              "work": "\\(V=1024-128=896\\text{ cm}^3\\)",
+              "figure": {
+                "svg": "fig:0d5373bbe7"
+              }
+            }
+          ],
+          "meta": {
+            "source": "Sydney Technical High School Year 10 Yearly Examination 2013",
+            "school": "Sydney Technical High School",
+            "examType": "Yearly Examination",
+            "grade": "10"
+          }
         }
       ]
     }
