@@ -1071,6 +1071,26 @@
               "work": "\\(a = 29\\)"
             }
           ]
+        },
+        {
+          "id": "hghs2026-e1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve: \\(p+12=30\\).",
+          "options": [
+            "\\(p=18\\)",
+            "\\(p=42\\)",
+            "\\(p=2.5\\)",
+            "\\(p=-18\\)"
+          ],
+          "answer": 0,
+          "hint": "Subtract 12 from both sides.",
+          "steps": [
+            {
+              "explain": "Subtract 12 from both sides.",
+              "work": "\\(p=30-12=18\\)"
+            }
+          ]
         }
       ]
     },
@@ -1109,6 +1129,34 @@
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
           }
+        },
+        {
+          "id": "hghs2026-e2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Is \\(M=9\\) a solution to the equation \\(\\dfrac{M}{3}+2=-4+M\\)?",
+          "options": [
+            "Yes — substituting \\(M=9\\) gives \\(5=5\\) on both sides",
+            "No — substituting \\(M=9\\) gives \\(5\\ne9\\)",
+            "Yes — because \\(M=9\\) is a whole number",
+            "No — the equation has no solution"
+          ],
+          "answer": 0,
+          "hint": "Substitute \\(M=9\\) into both the left-hand side and the right-hand side separately, then compare.",
+          "steps": [
+            {
+              "explain": "Substitute \\(M=9\\) into the left-hand side.",
+              "work": "\\(\\dfrac93+2=3+2=5\\)"
+            },
+            {
+              "explain": "Substitute \\(M=9\\) into the right-hand side.",
+              "work": "\\(-4+9=5\\)"
+            },
+            {
+              "explain": "Both sides equal 5, so \\(M=9\\) is indeed a solution.",
+              "work": "\\(\\text{LHS}=\\text{RHS}=5\\)"
+            }
+          ]
         }
       ]
     },
@@ -1329,6 +1377,74 @@
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           }
+        },
+        {
+          "id": "hghs2026-e1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve: \\(5x-2=43\\).",
+          "options": [
+            "\\(x=9\\)",
+            "\\(x=8\\)",
+            "\\(x=45\\)",
+            "\\(x=8.2\\)"
+          ],
+          "answer": 0,
+          "hint": "Add 2 to both sides first, then divide both sides by 5.",
+          "steps": [
+            {
+              "explain": "Add 2 to both sides.",
+              "work": "\\(5x=45\\)"
+            },
+            {
+              "explain": "Divide both sides by 5.",
+              "work": "\\(x=9\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-e1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Solve: \\(\\dfrac{m+2}{3}=11\\).",
+          "options": [
+            "\\(m=31\\)",
+            "\\(m=33\\)",
+            "\\(m=29\\)",
+            "\\(m=35\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply both sides by 3 first, then subtract 2.",
+          "steps": [
+            {
+              "explain": "Multiply both sides by 3.",
+              "work": "\\(m+2=33\\)"
+            },
+            {
+              "explain": "Subtract 2 from both sides.",
+              "work": "\\(m=31\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-e1e",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(x^2=81\\).",
+          "options": [
+            "\\(x=\\pm9\\)",
+            "\\(x=9\\)\\text{ only}",
+            "\\(x=40.5\\)",
+            "\\(x=6561\\)"
+          ],
+          "answer": 0,
+          "hint": "Taking a square root of both sides gives both a positive and a negative solution.",
+          "steps": [
+            {
+              "explain": "Take the square root of both sides — remember both the positive and negative root satisfy the equation.",
+              "work": "\\(x=\\pm\\sqrt{81}=\\pm9\\)"
+            }
+          ]
         }
       ]
     },
@@ -1411,6 +1527,30 @@
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
           }
+        },
+        {
+          "id": "hghs2026-e1d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Solve: \\(3(x-4)=12\\).",
+          "options": [
+            "\\(x=8\\)",
+            "\\(x=0\\)",
+            "\\(x=16\\)",
+            "\\(x=\\dfrac{8}{3}\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide both sides by 3 first, then add 4.",
+          "steps": [
+            {
+              "explain": "Divide both sides by 3.",
+              "work": "\\(x-4=4\\)"
+            },
+            {
+              "explain": "Add 4 to both sides.",
+              "work": "\\(x=8\\)"
+            }
+          ]
         }
       ]
     },
@@ -1487,6 +1627,62 @@
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           }
+        },
+        {
+          "id": "hghs2026-e4",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Five times a number is the same as 6 more than 3 times the number. Find the number.",
+          "options": [
+            "\\(3\\)",
+            "\\(6\\)",
+            "\\(2\\)",
+            "\\(9\\)"
+          ],
+          "answer": 0,
+          "hint": "Let the number be \\(x\\). Translate the sentence into an equation with \\(x\\) on both sides.",
+          "steps": [
+            {
+              "explain": "Let the number be \\(x\\), and write the equation described.",
+              "work": "\\(5x=3x+6\\)"
+            },
+            {
+              "explain": "Subtract \\(3x\\) from both sides.",
+              "work": "\\(2x=6\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(x=3\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-wm1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "If you multiply Liam's favourite number by 3 and add 1, you get the same answer as if you multiplied the number by 5 and took away 11. What is Liam's favourite number?",
+          "options": [
+            "\\(6\\)",
+            "\\(5\\)",
+            "\\(12\\)",
+            "\\(-6\\)"
+          ],
+          "answer": 0,
+          "hint": "Let Liam's number be \\(x\\), and translate the sentence into an equation with \\(x\\) on both sides.",
+          "steps": [
+            {
+              "explain": "Let Liam's number be \\(x\\), and set up the equation.",
+              "work": "\\(3x+1=5x-11\\)"
+            },
+            {
+              "explain": "Subtract \\(3x\\) from both sides.",
+              "work": "\\(1=2x-11\\)"
+            },
+            {
+              "explain": "Add 11 to both sides, then divide by 2.",
+              "work": "\\(12=2x \\Rightarrow x=6\\)"
+            }
+          ]
         }
       ]
     },
@@ -1526,6 +1722,34 @@
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
           }
+        },
+        {
+          "id": "hghs2026-e3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Given the formula \\(P=2l+2w\\), find \\(l\\) when \\(P=32\\) and \\(w=12\\).",
+          "options": [
+            "\\(l=4\\)",
+            "\\(l=8\\)",
+            "\\(l=28\\)",
+            "\\(l=2\\)"
+          ],
+          "answer": 0,
+          "hint": "Substitute the known values first, then solve the resulting equation for \\(l\\).",
+          "steps": [
+            {
+              "explain": "Substitute \\(P=32\\) and \\(w=12\\).",
+              "work": "\\(32=2l+2(12)=2l+24\\)"
+            },
+            {
+              "explain": "Subtract 24 from both sides.",
+              "work": "\\(8=2l\\)"
+            },
+            {
+              "explain": "Divide both sides by 2.",
+              "work": "\\(l=4\\)"
+            }
+          ]
         }
       ]
     }

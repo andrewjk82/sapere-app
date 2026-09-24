@@ -4444,6 +4444,30 @@
             }
           ],
           "timeLimit": 150
+        },
+        {
+          "id": "hghs2026-q3c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify, cancelling common factors: \\(\\dfrac{15mnp}{3m^2p^2}\\).",
+          "options": [
+            "\\(\\dfrac{5n}{mp}\\)",
+            "\\(\\dfrac{5n}{m^2p^2}\\)",
+            "\\(\\dfrac{5mn}{p}\\)",
+            "\\(\\dfrac{5np}{m}\\)"
+          ],
+          "answer": 0,
+          "hint": "Cancel the numerical factors first (15÷3=5), then cancel matching pronumeral factors top and bottom.",
+          "steps": [
+            {
+              "explain": "Cancel the numbers: \\(15\\div3=5\\).",
+              "work": "\\(\\dfrac{5mnp}{m^2p^2}\\)"
+            },
+            {
+              "explain": "Cancel one factor of \\(m\\) (top and bottom), and one factor of \\(p\\) (top and bottom).",
+              "work": "\\(\\dfrac{5n}{mp}\\)"
+            }
+          ]
         }
       ]
     },

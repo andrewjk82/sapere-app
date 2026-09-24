@@ -1846,6 +1846,34 @@
               "work": "\\(y = \\sqrt{20^2 + 15^2} = \\sqrt{400 + 225} = \\sqrt{625}\\)<br>\\(y = 25\\)"
             }
           ]
+        },
+        {
+          "id": "hghs2026-p1",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Which calculation correctly shows whether \\((5,12,13)\\) is a Pythagorean triad?",
+          "options": [
+            "\\(5^2+12^2=13^2\\), since \\(25+144=169\\)",
+            "\\(5^2+12^2=13^2\\), since \\(25+144=170\\)",
+            "\\(5+12=13\\), since \\(17\\ne13\\)",
+            "\\(5^2\\times12^2=13^2\\), since \\(60\\ne169\\)"
+          ],
+          "answer": 0,
+          "hint": "Check whether the sum of the squares of the two smaller numbers equals the square of the largest number.",
+          "steps": [
+            {
+              "explain": "Square each of the two smaller numbers and add them.",
+              "work": "\\(5^2+12^2=25+144=169\\)"
+            },
+            {
+              "explain": "Square the largest number and compare.",
+              "work": "\\(13^2=169\\)"
+            },
+            {
+              "explain": "Since both sides are equal, \\((5,12,13)\\) is indeed a Pythagorean triad.",
+              "work": "\\(169=169\\ \\checkmark\\)"
+            }
+          ]
         }
       ]
     }

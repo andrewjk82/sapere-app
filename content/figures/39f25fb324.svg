@@ -1,0 +1,7 @@
+<svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<polygon points="30,30 30,120 200,120" fill="#fef3c7" fill-opacity="0.4" stroke="#475569" stroke-width="2"/>
+<rect x="30" y="108" width="12" height="12" fill="none" stroke="#475569" stroke-width="1.5"/>
+<text x="8" y="80" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">3x cm</text>
+<text x="95" y="140" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">4x cm</text>
+<text x="110" y="65" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">10 cm</text>
+</svg>

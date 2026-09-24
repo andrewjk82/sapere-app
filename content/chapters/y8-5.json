@@ -884,6 +884,106 @@
               "explain": "Divide both sides by 2: \\(e = 35\\)"
             }
           ]
+        },
+        {
+          "id": "hghs2026-a1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "The diagram shows a single angle marked at point I, between two rays IJ and IK. Is it correct to say this diagram shows a revolution?",
+          "figure": {
+            "svg": "fig:ab87ba0eb6"
+          },
+          "options": [
+            "False — a revolution is a complete 360° turn, not a single marked angle",
+            "True — any angle at a point is a revolution",
+            "True — the rays IJ and IK make a full turn",
+            "False — there is no such thing as a revolution"
+          ],
+          "answer": 0,
+          "hint": "A revolution is defined as one complete turn, measuring exactly 360°.",
+          "steps": [
+            {
+              "explain": "A revolution must measure exactly 360° (a complete turn around a point). The diagram only shows one angle between two rays, not a full turn.",
+              "work": "\\(\\text{False}\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-a2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Use the letters given in the diagram to name the marked angle.",
+          "figure": {
+            "svg": "fig:91d46c6b9d"
+          },
+          "options": [
+            "\\(\\angle JKL\\)",
+            "\\(\\angle KJL\\)",
+            "\\(\\angle LJK\\)",
+            "\\(\\angle JLK\\)"
+          ],
+          "answer": 0,
+          "hint": "Name an angle with the vertex letter in the middle.",
+          "steps": [
+            {
+              "explain": "The vertex of the angle (where the two rays meet) is K, so K must be the middle letter.",
+              "work": "\\(\\angle JKL\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-a3a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "In the diagram, \\(\\angle ABC=90°\\) is split into \\(\\angle ABD=x°\\) and \\(\\angle DBC=34°\\). Find the value of \\(x\\), giving a reason.",
+          "figure": {
+            "svg": "fig:e414b39ea3"
+          },
+          "options": [
+            "\\(56\\), since complementary angles sum to 90°",
+            "\\(34\\), since the angles are equal",
+            "\\(90\\), since it's a right angle",
+            "\\(146\\), since angles on a straight line sum to 180°"
+          ],
+          "answer": 0,
+          "hint": "The two angles together make up the right angle \\(\\angle ABC=90°\\).",
+          "steps": [
+            {
+              "explain": "\\(x°\\) and \\(34°\\) together make up the right angle, so they are complementary (sum to 90°).",
+              "work": "\\(x=90-34\\)"
+            },
+            {
+              "explain": "Evaluate.",
+              "work": "\\(x=56\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-a3b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Three lines meet at point E. On one side, two adjacent angles measure 30° and \\(x°\\); directly opposite them (vertically opposite the combined angle) is a single angle of 106°. Find \\(x\\), giving a reason.",
+          "figure": {
+            "svg": "fig:61677517c9"
+          },
+          "options": [
+            "\\(76\\), since vertically opposite angles are equal",
+            "\\(136\\), since angles on a straight line sum to 180°",
+            "\\(30\\), since the angles are equal",
+            "\\(106\\), since corresponding angles are equal"
+          ],
+          "answer": 0,
+          "hint": "The angle vertically opposite the 106° angle must also be 106° — and that opposite angle is made up of the 30° and \\(x°\\) angles together.",
+          "steps": [
+            {
+              "explain": "Vertically opposite angles are equal, so the angle made of \\(30°+x°\\) combined equals 106°.",
+              "work": "\\(30+x=106\\)"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "\\(x=106-30=76\\)"
+            }
+          ]
         }
       ]
     },
@@ -936,6 +1036,52 @@
               "explain": "Corresponding angles are equal on parallel lines. Therefore, \\(y = 42\\)."
             }
           ]
+        },
+        {
+          "id": "hghs2026-a1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Two parallel lines AB and CD are cut by a transversal EF, meeting them at G and H respectively. What is the relationship between \\(\\angle BGH\\) and \\(\\angle DHF\\), which lie on the same side of the transversal in matching positions?",
+          "figure": {
+            "svg": "fig:29c7c1c999"
+          },
+          "options": [
+            "Corresponding angles (equal)",
+            "Alternate angles (equal)",
+            "Co-interior angles (sum to 180°)",
+            "Vertically opposite angles (equal)"
+          ],
+          "answer": 0,
+          "hint": "Angles in matching positions at each intersection, on the same side of the transversal, are corresponding angles.",
+          "steps": [
+            {
+              "explain": "\\(\\angle BGH\\) and \\(\\angle DHF\\) sit in matching corners at the two intersection points, on the same side of the transversal.",
+              "work": "\\(\\text{Corresponding angles}\\Rightarrow\\angle BGH=\\angle DHF\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-a1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "For the same parallel lines AB, CD and transversal EF (meeting at G and H), why does \\(\\angle AGH+\\angle CHG=180°\\)?",
+          "figure": {
+            "svg": "fig:2eb1415bca"
+          },
+          "options": [
+            "Co-interior angles on parallel lines sum to 180°",
+            "Corresponding angles are equal",
+            "Alternate angles are equal",
+            "Angles on a straight line sum to 180°"
+          ],
+          "answer": 0,
+          "hint": "\\(\\angle AGH\\) and \\(\\angle CHG\\) both lie between the parallel lines, on the same side of the transversal.",
+          "steps": [
+            {
+              "explain": "Both angles lie between the two parallel lines, on the same side of the transversal — this is the definition of co-interior (allied) angles.",
+              "work": "\\(\\text{Co-interior angles on parallel lines sum to }180°\\)"
+            }
+          ]
         }
       ]
     },
@@ -974,6 +1120,87 @@
             },
             {
               "explain": "\\(z = 60\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-a3c-x",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Lines AB and CD are parallel, cut by a transversal. The angle vertically below \\(x°\\) (on line CD) is 74°, and \\(x°\\) (on line AB) is co-interior with it. Find \\(x\\).",
+          "figure": {
+            "svg": "fig:5ba3b90309"
+          },
+          "options": [
+            "\\(106\\)",
+            "\\(74\\)",
+            "\\(180\\)",
+            "\\(16\\)"
+          ],
+          "answer": 0,
+          "hint": "Co-interior angles on parallel lines add to 180°.",
+          "steps": [
+            {
+              "explain": "Co-interior angles on parallel lines sum to 180°.",
+              "work": "\\(x+74=180\\)"
+            },
+            {
+              "explain": "Solve for \\(x\\).",
+              "work": "\\(x=106\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-a3c-y",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using the same diagram, \\(y°\\) is formed where a second transversal (parallel to the first) crosses line AB. Given \\(x=106°\\) and the two transversals are parallel to each other, find \\(y\\).",
+          "figure": {
+            "svg": "fig:5ba3b90309"
+          },
+          "options": [
+            "\\(106\\)",
+            "\\(74\\)",
+            "\\(180\\)",
+            "\\(53\\)"
+          ],
+          "answer": 0,
+          "hint": "Since the two transversals are parallel, \\(y°\\) and \\(x°\\) are corresponding angles.",
+          "steps": [
+            {
+              "explain": "Because the two transversals are parallel to each other, \\(y°\\) corresponds to \\(x°\\) (same relative position at each line).",
+              "work": "\\(y=x=106\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-a3d",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "In the diagram, AB is parallel to CD. A line FG is constructed through E parallel to both AB and CD. Given \\(\\angle BAE=75°\\) and \\(\\angle DCE=34°\\), find \\(x°=\\angle FEC\\text{(combined with)}\\angle FEA\\), i.e. \\(\\angle AEC\\).",
+          "figure": {
+            "svg": "fig:faf235b839"
+          },
+          "options": [
+            "\\(109\\)",
+            "\\(41\\)",
+            "\\(75\\)",
+            "\\(150\\)"
+          ],
+          "answer": 0,
+          "hint": "Construct FG through E, parallel to AB and CD. Then use alternate angles twice: once between FG and CD, once between FG and AB.",
+          "steps": [
+            {
+              "explain": "Since \\(CD\\parallel FG\\), \\(\\angle FEC\\) and \\(\\angle DCE\\) are alternate angles, so they're equal.",
+              "work": "\\(\\angle FEC=34°\\)"
+            },
+            {
+              "explain": "Since \\(AB\\parallel FG\\), \\(\\angle FEA\\) and \\(\\angle BAE\\) are alternate angles, so they're equal.",
+              "work": "\\(\\angle FEA=75°\\)"
+            },
+            {
+              "explain": "\\(x°=\\angle AEC\\) is the sum of these two alternate angles.",
+              "work": "\\(x=75+34=109\\)"
             }
           ]
         }

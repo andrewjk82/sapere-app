@@ -6813,6 +6813,50 @@
             }
           ],
           "timeLimit": 30
+        },
+        {
+          "id": "hghs2026-q1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write an algebraic expression for: \"The number of times 3 divides into \\(e\\)\".",
+          "options": [
+            "\\(\\dfrac{e}{3}\\)",
+            "\\(\\dfrac{3}{e}\\)",
+            "\\(3e\\)",
+            "\\(e-3\\)"
+          ],
+          "answer": 0,
+          "hint": "\"The number of times 3 divides into e\" means e divided by 3.",
+          "steps": [
+            {
+              "explain": "\"Divides into\" means the larger quantity is split by the smaller — \\(e\\) is divided by 3.",
+              "work": "\\(\\dfrac{e}{3}\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-q1b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write an algebraic expression for: \"Half of the difference between 20 and \\(g\\)\".",
+          "options": [
+            "\\(\\dfrac{20-g}{2}\\)",
+            "\\(\\dfrac{g-20}{2}\\)",
+            "\\(20-\\dfrac{g}{2}\\)",
+            "\\(2(20-g)\\)"
+          ],
+          "answer": 0,
+          "hint": "First find the difference (20 minus g), then take half of the whole thing.",
+          "steps": [
+            {
+              "explain": "The difference between 20 and \\(g\\) is \\(20-g\\).",
+              "work": "\\(20-g\\)"
+            },
+            {
+              "explain": "\"Half of\" this difference means the whole expression is divided by 2.",
+              "work": "\\(\\dfrac{20-g}{2}\\)"
+            }
+          ]
         }
       ]
     },

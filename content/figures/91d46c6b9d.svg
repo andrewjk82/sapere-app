@@ -1,0 +1,8 @@
+<svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<line x1="20" y1="30" x2="110" y2="90" stroke="#1e293b" stroke-width="2"/>
+<line x1="110" y1="90" x2="200" y2="90" stroke="#1e293b" stroke-width="2"/>
+<path d="M 90 90 A 20 20 0 0 1 100 74" fill="#dbeafe" fill-opacity="0.6" stroke="#475569" stroke-width="1.2"/>
+<text x="8" y="25" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">J</text>
+<text x="107" y="108" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">K</text>
+<text x="203" y="94" font-family="system-ui" font-size="13" font-weight="600" fill="#1e293b">L</text>
+</svg>

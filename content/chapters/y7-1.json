@@ -41073,6 +41073,66 @@
           "meta": {
             "examPaper": "y7-practice-1"
           }
+        },
+        {
+          "id": "hghs2026-i4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate: \\(3^3+2\\times5^2\\).",
+          "options": [
+            "\\(77\\)",
+            "\\(71\\)",
+            "\\(125\\)",
+            "\\(53\\)"
+          ],
+          "answer": 0,
+          "hint": "Follow the order of operations: powers first, then multiplication, then addition.",
+          "steps": [
+            {
+              "explain": "Evaluate the powers first.",
+              "work": "\\(3^3=27,\\quad5^2=25\\)"
+            },
+            {
+              "explain": "Do the multiplication next.",
+              "work": "\\(2\\times25=50\\)"
+            },
+            {
+              "explain": "Finally, add.",
+              "work": "\\(27+50=77\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-i5",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Find the missing whole number, represented by \\(\\bigcirc\\), that makes this number sentence true: \\([3\\times\\bigcirc^2+(\\sqrt{25}-\\bigcirc)]=\\sqrt{\\bigcirc}\\times9\\times3-5\\).",
+          "options": [
+            "\\(4\\)",
+            "\\(3\\)",
+            "\\(5\\)",
+            "\\(2\\)"
+          ],
+          "answer": 0,
+          "hint": "Try substituting small whole numbers and checking both sides — start with \\(\\bigcirc=4\\), since \\(\\sqrt{\\bigcirc}\\) should be a whole number.",
+          "steps": [
+            {
+              "explain": "Since the right side has \\(\\sqrt{\\bigcirc}\\), try a value of \\(\\bigcirc\\) that is a perfect square, such as 4.",
+              "work": "\\(\\text{Try }\\bigcirc=4\\)"
+            },
+            {
+              "explain": "Substitute \\(\\bigcirc=4\\) into the left side.",
+              "work": "\\(3(4)^2+(5-4)=48+1=49\\)"
+            },
+            {
+              "explain": "Substitute \\(\\bigcirc=4\\) into the right side.",
+              "work": "\\(\\sqrt4\\times9\\times3-5=2\\times27-5=49\\)"
+            },
+            {
+              "explain": "Both sides equal 49, so \\(\\bigcirc=4\\) makes the number sentence true.",
+              "work": "\\(\\bigcirc=4\\)"
+            }
+          ]
         }
       ]
     },

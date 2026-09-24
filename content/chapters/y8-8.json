@@ -392,6 +392,126 @@
             "source": "Mr Croker Trig Revision Exam Questions",
             "grade": "8"
           }
+        },
+        {
+          "id": "hghs2026-p2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Find the value of \\(x\\) in the right-angled triangle, where the two legs are 6 cm and 8 cm.",
+          "figure": {
+            "svg": "fig:fba514cfeb"
+          },
+          "options": [
+            "\\(x=10\\)",
+            "\\(x=14\\)",
+            "\\(x=\\sqrt{28}\\)",
+            "\\(x=100\\)"
+          ],
+          "answer": 0,
+          "hint": "Use Pythagoras' theorem, \\(a^2+b^2=c^2\\), with \\(x\\) as the hypotenuse.",
+          "steps": [
+            {
+              "explain": "Apply Pythagoras' theorem with the two given legs.",
+              "work": "\\(6^2+8^2=x^2\\)"
+            },
+            {
+              "explain": "Simplify.",
+              "work": "\\(36+64=100=x^2\\)"
+            },
+            {
+              "explain": "Take the square root.",
+              "work": "\\(x=\\sqrt{100}=10\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-p2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A right-angled triangle has legs \\(3x\\) cm and \\(4x\\) cm, and hypotenuse 10 cm. Find the value of \\(x\\) (given \\(x>0\\)).",
+          "figure": {
+            "svg": "fig:39f25fb324"
+          },
+          "options": [
+            "\\(x=2\\)",
+            "\\(x=4\\)",
+            "\\(x=\\sqrt{4}\\)\\text{ cm (units wrong)}",
+            "\\(x=5\\)"
+          ],
+          "answer": 0,
+          "hint": "Apply Pythagoras' theorem, then solve for \\(x^2\\) before taking the square root.",
+          "steps": [
+            {
+              "explain": "Apply Pythagoras' theorem.",
+              "work": "\\((3x)^2+(4x)^2=10^2\\)"
+            },
+            {
+              "explain": "Expand and collect like terms.",
+              "work": "\\(9x^2+16x^2=100 \\Rightarrow 25x^2=100\\)"
+            },
+            {
+              "explain": "Divide by 25 and take the square root (rejecting the negative root since \\(x>0\\)).",
+              "work": "\\(x^2=4 \\Rightarrow x=2\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-p3-2",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Using \\(AB=12\\text{ m}\\) and \\(BD=9\\text{ m}\\), with \\(\\angle ABD=90°\\), find the length of the second wire \\(AD\\).",
+          "figure": {
+            "svg": "fig:6aa06bd580"
+          },
+          "options": [
+            "\\(15\\text{ m}\\)",
+            "\\(21\\text{ m}\\)",
+            "\\(3\\text{ m}\\)",
+            "\\(\\sqrt{63}\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "AD is the hypotenuse of right triangle ABD.",
+          "steps": [
+            {
+              "explain": "Apply Pythagoras' theorem to triangle ABD.",
+              "work": "\\(AD^2=AB^2+BD^2=12^2+9^2=144+81=225\\)"
+            },
+            {
+              "explain": "Take the square root.",
+              "work": "\\(AD=\\sqrt{225}=15\\text{ m}\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-wm2b",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Two cafes on opposite sides of a shopping-centre atrium are 10 m and 15 m above the ground floor. A 20 m escalator links them directly. Find the horizontal distance across the atrium between the two cafes, leaving your answer in exact form.",
+          "figure": {
+            "svg": "fig:5e9d58c235"
+          },
+          "options": [
+            "\\(\\sqrt{375}\\text{ m}\\)",
+            "\\(\\sqrt{325}\\text{ m}\\)",
+            "\\(5\\text{ m}\\)",
+            "\\(\\sqrt{500}\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "The vertical difference in height is \\(15-10=5\\text{ m}\\). This, the horizontal distance, and the 20 m escalator form a right-angled triangle with the escalator as the hypotenuse.",
+          "steps": [
+            {
+              "explain": "Find the vertical difference in height between the two cafes.",
+              "work": "\\(15-10=5\\text{ m}\\)"
+            },
+            {
+              "explain": "Apply Pythagoras' theorem, with the escalator (20 m) as the hypotenuse.",
+              "work": "\\(20^2-5^2=x^2\\)"
+            },
+            {
+              "explain": "Simplify, leaving the answer in exact (surd) form.",
+              "work": "\\(400-25=375 \\Rightarrow x=\\sqrt{375}\\text{ m}\\)"
+            }
+          ]
         }
       ]
     },
@@ -583,6 +703,33 @@
             {
               "explain": "Take the square root and round to 1 decimal place.",
               "work": "\\(w = \\sqrt{28.29} \\approx 5.3188 \\approx 5.3\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-p3-1",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A power pole AB is supported by two wires AC and AD. \\(AC=13\\text{ m}\\), \\(CB=5\\text{ m}\\), and \\(\\angle ABC=90°\\). Find the height of the pole, \\(AB\\).",
+          "figure": {
+            "svg": "fig:6aa06bd580"
+          },
+          "options": [
+            "\\(12\\text{ m}\\)",
+            "\\(18\\text{ m}\\)",
+            "\\(8\\text{ m}\\)",
+            "\\(\\sqrt{194}\\text{ m}\\)"
+          ],
+          "answer": 0,
+          "hint": "AC is the hypotenuse of right triangle ABC, so \\(AB^2=AC^2-CB^2\\).",
+          "steps": [
+            {
+              "explain": "Apply Pythagoras' theorem to triangle ABC, where AC is the hypotenuse.",
+              "work": "\\(AB^2=13^2-5^2=169-25=144\\)"
+            },
+            {
+              "explain": "Take the square root.",
+              "work": "\\(AB=\\sqrt{144}=12\\text{ m}\\)"
             }
           ]
         }

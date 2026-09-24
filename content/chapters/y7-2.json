@@ -5005,6 +5005,162 @@
               "explain": "\\( = 81 \\)"
             }
           ]
+        },
+        {
+          "id": "hghs2026-i1a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Write \\(2^4\\times4^2\\) in expanded form.",
+          "options": [
+            "\\(2\\times2\\times2\\times2\\times4\\times4\\)",
+            "\\(2\\times4\\times2\\times4\\)",
+            "\\(2\\times2\\times2\\times2\\times4\\)",
+            "\\(8\\times8\\)"
+          ],
+          "answer": 0,
+          "hint": "Write out each base the number of times shown by its own index.",
+          "steps": [
+            {
+              "explain": "Write 2 four times (for \\(2^4\\)) and 4 two times (for \\(4^2\\)).",
+              "work": "\\(2\\times2\\times2\\times2\\times4\\times4\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-i1b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write \\(\\dfrac{6^4}{6^5}\\) in expanded form and simplify.",
+          "options": [
+            "\\(\\dfrac{6\\times6\\times6\\times6}{6\\times6\\times6\\times6\\times6}=\\dfrac16\\)",
+            "\\(\\dfrac{6\\times6\\times6\\times6}{6\\times6\\times6\\times6\\times6}=1\\)",
+            "\\(6^{-1}=-6\\)",
+            "\\(\\dfrac{6^4}{6^5}=6\\)"
+          ],
+          "answer": 0,
+          "hint": "Write out both powers in full, then cancel matching factors of 6 from the top and bottom.",
+          "steps": [
+            {
+              "explain": "Expand both the numerator and denominator.",
+              "work": "\\(\\dfrac{6\\times6\\times6\\times6}{6\\times6\\times6\\times6\\times6}\\)"
+            },
+            {
+              "explain": "Cancel four matching factors of 6, leaving one factor of 6 in the denominator.",
+              "work": "\\(\\dfrac16\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-i1c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\((5^x)^3\\).",
+          "options": [
+            "\\(5^{3x}\\)",
+            "\\(5^{x+3}\\)",
+            "\\(5^{x^3}\\)",
+            "\\(15^x\\)"
+          ],
+          "answer": 0,
+          "hint": "When raising a power to another power, multiply the indices.",
+          "steps": [
+            {
+              "explain": "Use the power-of-a-power rule: multiply the indices \\(x\\) and 3.",
+              "work": "\\((5^x)^3=5^{x\\times3}=5^{3x}\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-i2a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\(9^5\\times9^2\\), giving your answer with positive indices.",
+          "options": [
+            "\\(9^7\\)",
+            "\\(9^{10}\\)",
+            "\\(81^7\\)",
+            "\\(9^3\\)"
+          ],
+          "answer": 0,
+          "hint": "When multiplying powers with the same base, add the indices.",
+          "steps": [
+            {
+              "explain": "Same base, so add the indices.",
+              "work": "\\(9^5\\times9^2=9^{5+2}=9^7\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-i2b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\(\\dfrac{10^4}{10^{13}}\\), giving your answer with positive indices.",
+          "options": [
+            "\\(\\dfrac{1}{10^9}\\)",
+            "\\(10^9\\)",
+            "\\(\\dfrac{1}{10^{17}}\\)",
+            "\\(10^{-9}\\)\\text{, i.e. leave the negative index}"
+          ],
+          "answer": 0,
+          "hint": "When dividing powers with the same base, subtract the indices; a negative index means the reciprocal.",
+          "steps": [
+            {
+              "explain": "Same base, so subtract the indices.",
+              "work": "\\(10^{4-13}=10^{-9}\\)"
+            },
+            {
+              "explain": "A negative index means \"one over\" that positive power — this gives positive indices.",
+              "work": "\\(10^{-9}=\\dfrac{1}{10^9}\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-i2c",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Simplify \\((8^{10})^3\\).",
+          "options": [
+            "\\(8^{30}\\)",
+            "\\(8^{13}\\)",
+            "\\(8^{1000}\\)",
+            "\\(24^{10}\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the indices when raising a power to another power.",
+          "steps": [
+            {
+              "explain": "Multiply the indices 10 and 3.",
+              "work": "\\((8^{10})^3=8^{10\\times3}=8^{30}\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-i2d",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify \\((4^0\\times3^4\\div3^3)^2\\).",
+          "options": [
+            "\\(9\\)",
+            "\\(3\\)",
+            "\\(81\\)",
+            "\\(6\\)"
+          ],
+          "answer": 0,
+          "hint": "Anything to the power of 0 is 1. Simplify inside the brackets first, then apply the outer power.",
+          "steps": [
+            {
+              "explain": "\\(4^0=1\\) (anything to the power 0 is 1).",
+              "work": "\\((1\\times3^4\\div3^3)^2\\)"
+            },
+            {
+              "explain": "Simplify \\(3^4\\div3^3\\) by subtracting indices.",
+              "work": "\\(3^4\\div3^3=3^1=3\\)"
+            },
+            {
+              "explain": "Apply the outer power of 2.",
+              "work": "\\(3^2=9\\)"
+            }
+          ]
         }
       ]
     },
@@ -6369,6 +6525,30 @@
               "explain": "Prime factorisation: \\( 2 \\times 3 \\times 5 \\times 7 \\)"
             }
           ]
+        },
+        {
+          "id": "hghs2026-i6b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Write 432 and 500 in index form as the product of prime factors.",
+          "options": [
+            "\\(432=2^4\\times3^3,\\ \\ 500=2^2\\times5^3\\)",
+            "\\(432=2^3\\times3^4,\\ \\ 500=2^3\\times5^2\\)",
+            "\\(432=2^4\\times3^3,\\ \\ 500=2^3\\times5^2\\)",
+            "\\(432=2^2\\times3^3,\\ \\ 500=2^2\\times5^3\\)"
+          ],
+          "answer": 0,
+          "hint": "Use a factor tree, dividing repeatedly by prime numbers, and collect the prime factors as powers.",
+          "steps": [
+            {
+              "explain": "Repeatedly divide 432 by prime factors: \\(432=2\\times2\\times2\\times2\\times3\\times3\\times3\\).",
+              "work": "\\(432=2^4\\times3^3\\)"
+            },
+            {
+              "explain": "Repeatedly divide 500 by prime factors: \\(500=2\\times2\\times5\\times5\\times5\\).",
+              "work": "\\(500=2^2\\times5^3\\)"
+            }
+          ]
         }
       ]
     },
@@ -7235,6 +7415,46 @@
               "explain": "\\( 11^2 = 11 \\times 11 = 121 \\)"
             }
           ]
+        },
+        {
+          "id": "hghs2026-i4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Evaluate \\(\\sqrt{49}\\).",
+          "options": [
+            "\\(7\\)",
+            "\\(\\pm7\\)",
+            "\\(24.5\\)",
+            "\\(14\\)"
+          ],
+          "answer": 0,
+          "hint": "The square root symbol \\(\\sqrt{\\ }\\) always means the positive (principal) square root only.",
+          "steps": [
+            {
+              "explain": "By convention, \\(\\sqrt{\\ }\\) gives only the positive root.",
+              "work": "\\(\\sqrt{49}=7\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-i4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Evaluate \\(\\sqrt[3]{-216}\\).",
+          "options": [
+            "\\(-6\\)",
+            "\\(6\\)",
+            "\\(-72\\)",
+            "\\(-36\\)"
+          ],
+          "answer": 0,
+          "hint": "Unlike square roots, cube roots of negative numbers are real and negative.",
+          "steps": [
+            {
+              "explain": "Find the number which, when cubed, gives \\(-216\\).",
+              "work": "\\((-6)^3=-216,\\ \\text{so}\\ \\sqrt[3]{-216}=-6\\)"
+            }
+          ]
         }
       ]
     },
@@ -8071,6 +8291,30 @@
               "explain": "The highest common factor is 16."
             }
           ]
+        },
+        {
+          "id": "hghs2026-i6c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "Using \\(432=2^4\\times3^3\\) and \\(500=2^2\\times5^3\\), express the HCF and LCM of 432 and 500 in index form.",
+          "options": [
+            "\\(\\text{HCF}=2^2,\\ \\ \\text{LCM}=2^4\\times3^3\\times5^3\\)",
+            "\\(\\text{HCF}=2^2\\times3^3\\times5^3,\\ \\ \\text{LCM}=2^4\\times3^3\\times5^3\\)",
+            "\\(\\text{HCF}=2^4,\\ \\ \\text{LCM}=2^2\\times3^3\\times5^3\\)",
+            "\\(\\text{HCF}=2^2,\\ \\ \\text{LCM}=2^6\\times3^3\\times5^3\\)"
+          ],
+          "answer": 0,
+          "hint": "The HCF only includes prime factors common to BOTH numbers, using the lower power. The LCM includes every prime factor, using the higher power.",
+          "steps": [
+            {
+              "explain": "3 only appears in 432, and 5 only appears in 500 — neither is common to both, so the HCF only uses the shared prime, 2, with the smaller power.",
+              "work": "\\(\\text{HCF}=2^{\\min(4,2)}=2^2\\)"
+            },
+            {
+              "explain": "The LCM uses every prime factor that appears in either number, each raised to its highest power.",
+              "work": "\\(\\text{LCM}=2^{\\max(4,2)}\\times3^3\\times5^3=2^4\\times3^3\\times5^3\\)"
+            }
+          ]
         }
       ]
     },
@@ -8895,6 +9139,30 @@
           ],
           "alsoIn": [
             "exam:year7ch2i"
+          ]
+        },
+        {
+          "id": "hghs2026-i3",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Find the smallest number that is greater than 1000 and is divisible by 6.",
+          "options": [
+            "\\(1002\\)",
+            "\\(1001\\)",
+            "\\(1003\\)",
+            "\\(1006\\)"
+          ],
+          "answer": 0,
+          "hint": "Divide 1000 by 6 to see how far past the last multiple of 6 it is, then find the next multiple.",
+          "steps": [
+            {
+              "explain": "Divide 1000 by 6.",
+              "work": "\\(1000\\div6=166\\text{ remainder }4\\)"
+            },
+            {
+              "explain": "\\(166\\times6=996\\), so the next multiple of 6 after 1000 is found by adding 6 to 996.",
+              "work": "\\(996+6=1002\\)"
+            }
           ]
         }
       ]

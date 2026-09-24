@@ -3159,6 +3159,30 @@
               "explain": "Improper fraction: \\( \\frac{31}{9} \\)"
             }
           ]
+        },
+        {
+          "id": "hghs2026-q2",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Rewrite into conventional algebraic notation: \\(-8 \\div (k+4\\times j)\\).",
+          "options": [
+            "\\(\\dfrac{-8}{k+4j}\\)",
+            "\\(\\dfrac{-8}{4k+j}\\)",
+            "\\(-8(k+4j)\\)",
+            "\\(\\dfrac{-8}{k}+4j\\)"
+          ],
+          "answer": 0,
+          "hint": "\\(4\\times j\\) is written as \\(4j\\), and \\(a\\div b\\) is written as the fraction \\(\\dfrac{a}{b}\\), keeping the whole denominator together.",
+          "steps": [
+            {
+              "explain": "Write the multiplication \\(4\\times j\\) in conventional notation.",
+              "work": "\\(4\\times j=4j\\)"
+            },
+            {
+              "explain": "Write the division as a fraction, keeping \\(k+4j\\) together as the denominator.",
+              "work": "\\(-8\\div(k+4j)=\\dfrac{-8}{k+4j}\\)"
+            }
+          ]
         }
       ]
     },
@@ -5073,6 +5097,34 @@
               "explain": "\\( \\frac{9}{15} = \\frac{3}{5} \\)"
             }
           ]
+        },
+        {
+          "id": "hghs2026-q3a",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify: \\(4bc-8a+2bc-a\\).",
+          "options": [
+            "\\(6bc-9a\\)",
+            "\\(6bc-7a\\)",
+            "\\(6bc-8a\\)",
+            "\\(2bc-9a\\)"
+          ],
+          "answer": 0,
+          "hint": "Collect the \\(bc\\) terms together, and the \\(a\\) terms together, being careful with the negative signs.",
+          "steps": [
+            {
+              "explain": "Collect the like terms in \\(bc\\).",
+              "work": "\\(4bc+2bc=6bc\\)"
+            },
+            {
+              "explain": "Collect the like terms in \\(a\\), remembering both are negative.",
+              "work": "\\(-8a-a=-9a\\)"
+            },
+            {
+              "explain": "Combine both results.",
+              "work": "\\(6bc-9a\\)"
+            }
+          ]
         }
       ]
     },
@@ -6457,6 +6509,74 @@
               "explain": "\\( 2 \\frac{12}{10} - 1 \\frac{5}{10} = 1 \\frac{7}{10} \\)"
             }
           ]
+        },
+        {
+          "id": "hghs2026-q4a",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand by applying the distributive law: \\(6(x+y)\\).",
+          "options": [
+            "\\(6x+6y\\)",
+            "\\(6x+y\\)",
+            "\\(6xy\\)",
+            "\\(x+6y\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the term outside the brackets by each term inside.",
+          "steps": [
+            {
+              "explain": "Multiply 6 by \\(x\\), then 6 by \\(y\\).",
+              "work": "\\(6(x+y)=6x+6y\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-q4b",
+          "type": "mc",
+          "difficulty": "easy",
+          "stem": "Expand: \\(-9(5+2x)\\).",
+          "options": [
+            "\\(-45-18x\\)",
+            "\\(-45+18x\\)",
+            "\\(45-18x\\)",
+            "\\(-14-11x\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply \\(-9\\) by each term inside the brackets — watch the signs carefully.",
+          "steps": [
+            {
+              "explain": "Multiply \\(-9\\) by 5, then \\(-9\\) by \\(2x\\).",
+              "work": "\\(-9(5+2x)=-45-18x\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-q4c",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Expand: \\(4n(2n+5m)\\).",
+          "options": [
+            "\\(8n^2+20mn\\)",
+            "\\(8n+20mn\\)",
+            "\\(8n^2+20m\\)",
+            "\\(6n^2+9mn\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply \\(4n\\) by each term inside the brackets, using index laws for the \\(n\\times n\\) term.",
+          "steps": [
+            {
+              "explain": "Multiply \\(4n\\) by \\(2n\\).",
+              "work": "\\(4n\\times2n=8n^2\\)"
+            },
+            {
+              "explain": "Multiply \\(4n\\) by \\(5m\\).",
+              "work": "\\(4n\\times5m=20mn\\)"
+            },
+            {
+              "explain": "Combine both results.",
+              "work": "\\(8n^2+20mn\\)"
+            }
+          ]
         }
       ]
     },
@@ -7622,6 +7742,34 @@
             },
             {
               "explain": "\\( N = 28 \\times 6 = 168 \\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-q3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "Simplify: \\(5x\\times4\\times{-2y}\\).",
+          "options": [
+            "\\(-40xy\\)",
+            "\\(40xy\\)",
+            "\\(-20xy\\)",
+            "\\(-40x+y\\)"
+          ],
+          "answer": 0,
+          "hint": "Multiply the numbers together first, then multiply the pronumerals together.",
+          "steps": [
+            {
+              "explain": "Multiply the numerical coefficients together.",
+              "work": "\\(5\\times4\\times(-2)=-40\\)"
+            },
+            {
+              "explain": "Multiply the pronumerals together.",
+              "work": "\\(x\\times y=xy\\)"
+            },
+            {
+              "explain": "Combine both results.",
+              "work": "\\(-40xy\\)"
             }
           ]
         }
@@ -8906,6 +9054,54 @@
             }
           ],
           "timeLimit": 90
+        },
+        {
+          "id": "hghs2026-wm3b",
+          "type": "mc",
+          "difficulty": "medium",
+          "stem": "A bacterium splits in two every 5 minutes, and new cells continue splitting the same way. How long will it take for 1 cell to divide into 64 cells?",
+          "options": [
+            "\\(30\\text{ minutes}\\)",
+            "\\(20\\text{ minutes}\\)",
+            "\\(64\\text{ minutes}\\)",
+            "\\(320\\text{ minutes}\\)"
+          ],
+          "answer": 0,
+          "hint": "The number of cells doubles every 5 minutes: \\(1,2,4,8,16,32,64,\\ldots\\). Count how many doublings are needed to reach 64.",
+          "steps": [
+            {
+              "explain": "List the number of cells after each 5-minute interval.",
+              "work": "\\(1\\to2\\to4\\to8\\to16\\to32\\to64\\ \\text{(6 doublings)}\\)"
+            },
+            {
+              "explain": "Each doubling takes 5 minutes, so multiply the number of doublings by 5.",
+              "work": "\\(6\\times5=30\\text{ minutes}\\)"
+            }
+          ]
+        },
+        {
+          "id": "hghs2026-wm3c",
+          "type": "mc",
+          "difficulty": "hard",
+          "stem": "A single cell is set aside to divide (doubling every 5 minutes) for 1 hour. How many cells will there be after this time?",
+          "options": [
+            "\\(4096\\)",
+            "\\(3600\\)",
+            "\\(7936\\)",
+            "\\(64\\)"
+          ],
+          "answer": 0,
+          "hint": "One hour is 12 lots of 5 minutes, so the number of cells doubles 12 times: \\(1\\times2^{12}\\).",
+          "steps": [
+            {
+              "explain": "Find how many 5-minute intervals fit into 1 hour (60 minutes).",
+              "work": "\\(60\\div5=12\\text{ doublings}\\)"
+            },
+            {
+              "explain": "Starting from 1 cell, apply 12 doublings.",
+              "work": "\\(1\\times2^{12}=4096\\)"
+            }
+          ]
         }
       ]
     },

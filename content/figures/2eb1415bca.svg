@@ -1,0 +1,15 @@
+<svg viewBox="0 0 300 220" xmlns="http://www.w3.org/2000/svg" width="100%" height="auto">
+<line x1="20" y1="80" x2="280" y2="80" stroke="#475569" stroke-width="2"/>
+<line x1="20" y1="160" x2="280" y2="160" stroke="#475569" stroke-width="2"/>
+<line x1="90" y1="20" x2="210" y2="220" stroke="#1e293b" stroke-width="2"/>
+<text x="10" y="85" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">A</text>
+<text x="285" y="85" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">B</text>
+<text x="10" y="165" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">C</text>
+<text x="285" y="165" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">D</text>
+<text x="95" y="15" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">E</text>
+<text x="212" y="218" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">F</text>
+<text x="120" y="68" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">G</text>
+<text x="150" y="150" font-family="system-ui" font-size="12" font-weight="600" fill="#1e293b">H</text>
+<path d="M 118 80 A 22 22 0 0 0 100 100" fill="#dbeafe" fill-opacity="0.6" stroke="#475569" stroke-width="1.2"/>
+<path d="M 150 160 A 22 22 0 0 1 168 140" fill="#fef3c7" fill-opacity="0.6" stroke="#475569" stroke-width="1.2"/>
+</svg>
