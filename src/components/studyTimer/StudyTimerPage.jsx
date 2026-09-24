@@ -8,6 +8,7 @@ import { useToast } from '../../context/ToastContext';
 import { randomSubjectColor } from '../../utils/subjectColors';
 import SubjectStopwatch from './SubjectStopwatch';
 import SubjectExamPanel from './SubjectExamPanel';
+import StudyNotesPanel from './StudyNotesPanel';
 import StudyStatsCharts from './StudyStatsCharts';
 import StudyTimeLeaderboard from './StudyTimeLeaderboard';
 
@@ -24,6 +25,7 @@ const StudyTimerPage = () => {
   const [myTotalSec, setMyTotalSec] = useState(null);
   const [lastFlush, setLastFlush] = useState(null); // { totalSec, subject, dateStr, deltaSec, hourBreakdown }
   const [activeSubject, setActiveSubject] = useState(null); // mirrors SubjectStopwatch's selected subject
+  const [notesRefreshKey, setNotesRefreshKey] = useState(0);
 
   const handleFlushed = (info) => {
     if (Number.isFinite(info?.totalSec)) setMyTotalSec(info.totalSec);
@@ -134,12 +136,19 @@ const StudyTimerPage = () => {
             onRemoveSubject={handleRemoveSubject}
             onFlushed={handleFlushed}
             onSubjectChange={setActiveSubject}
+            onNotesSaved={() => setNotesRefreshKey((k) => k + 1)}
           />
           <SubjectExamPanel
             subject={activeSubject || subjects[0]}
             subjectColors={subjectColors}
             examDates={examDates}
             onSetExamDate={handleSetExamDate}
+          />
+          <StudyNotesPanel
+            uid={user?.uid}
+            subject={activeSubject || subjects[0]}
+            subjectColors={subjectColors}
+            refreshKey={notesRefreshKey}
           />
           <StudyStatsCharts uid={user?.uid} lastFlush={lastFlush} subjectColors={subjectColors} />
         </div>

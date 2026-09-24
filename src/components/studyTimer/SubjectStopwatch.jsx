@@ -8,6 +8,8 @@ import { buildAvatarUrl } from '../../utils/avatarUtils';
 import { nowMs, splitSecondsIntoHourBuckets } from '../../utils/timeUtils';
 import { SUBJECT_COLOR_PALETTE, DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
 import AddSubjectModal from './AddSubjectModal';
+import StudySessionScreen from './StudySessionScreen';
+import { emptyItems, loadNotesDraft, saveNotesDraft, clearNotesDraft, saveSessionNotes } from '../../services/studyNotesService';
 
 const HEARTBEAT_MS = 5 * 60 * 1000; // flush a running session every 5 min
 const RESUME_CAP_SEC = 3 * 60 * 60; // ignore >3h of "stale" localStorage time (laptop was asleep)
@@ -48,7 +50,7 @@ const RING_C = 2 * Math.PI * RING_R;
  * a student before double-running the timer on two devices, and stops this
  * device's session if another device takes it over while this tab was away.
  */
-const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSubjectColor, onAddSubject, onRemoveSubject, onFlushed, onSubjectChange }) => {
+const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSubjectColor, onAddSubject, onRemoveSubject, onFlushed, onSubjectChange, onNotesSaved }) => {
   const sessionKey = `${SESSION_KEY_PREFIX}${uid}`;
   const avatarUrl = useMemo(() => buildAvatarUrl(profile, uid), [profile, uid]);
   const subjectOptions = useMemo(
@@ -69,6 +71,16 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
   const [phase, setPhase] = useState('stopped'); // 'stopped' | 'running' | 'paused'
   const [displayElapsedSec, setDisplayElapsedSec] = useState(0);
   const [focusMode, setFocusMode] = useState(false);
+  const [sessionStage, setSessionStage] = useState('plan'); // 'plan' | 'focus' (black clock) | 'review'
+  const [notesItems, setNotesItems] = useState(() => emptyItems());
+  const [finishing, setFinishing] = useState(false);
+
+  // In-progress checklist lives in localStorage only (survives reloads);
+  // Firestore gets one write at Finish — see studyNotesService.js.
+  const updateNotes = (next) => {
+    setNotesItems(next);
+    saveNotesDraft(uid, { subject, items: next });
+  };
 
   // The visible clock counts continuously from Start to Stop/subject-switch
   // (surviving pauses and periodic Firestore flushes) — only Stop or a
@@ -220,9 +232,53 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     runningSinceRef.current = nowMs();
     setPhase('running');
     persistLocal(subject, 'running');
+    if (phase === 'stopped') {
+      const draft = loadNotesDraft(uid);
+      setNotesItems(draft?.subject === subject && Array.isArray(draft.items) && draft.items.length ? draft.items : emptyItems());
+    }
+    setSessionStage('plan');
     setFocusMode(true);
     publishTransition('running', subject);
   };
+
+  const handleResumeInSession = () => {
+    runningSinceRef.current = nowMs();
+    setPhase('running');
+    persistLocal(subject, 'running');
+    publishTransition('running', subject);
+  };
+
+  // Stop never ends the session directly — it first opens the checklist in
+  // review mode so the student ticks off what they finished.
+  const handleRequestEnd = () => {
+    if (!focusMode) {
+      const draft = loadNotesDraft(uid);
+      setNotesItems(draft?.subject === subject && Array.isArray(draft.items) && draft.items.length ? draft.items : emptyItems());
+      setFocusMode(true);
+    }
+    setSessionStage('review');
+  };
+
+  async function handleFinishSession() {
+    if (finishing) return;
+    setFinishing(true);
+    const durationSec = currentTotalSec();
+    const itemsToSave = notesItems;
+    const sessionSubject = subject;
+    try {
+      await handleStop();
+      const id = await saveSessionNotes({ uid, subject: sessionSubject, items: itemsToSave, durationSec, dateStr: todayStr() });
+      clearNotesDraft(uid);
+      if (id) onNotesSaved?.(sessionSubject);
+    } catch (e) {
+      console.warn('[studytime] notes save failed:', e?.code || e);
+    } finally {
+      setFinishing(false);
+      setFocusMode(false);
+      setSessionStage('plan');
+      setNotesItems(emptyItems());
+    }
+  }
 
   const handlePause = () => {
     bankedSecRef.current = currentTotalSec();
@@ -374,7 +430,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
           )}
           <button
             type="button"
-            onClick={handleStop}
+            onClick={handleRequestEnd}
             disabled={displayElapsedSec <= 0}
             style={{ ...btnStyle('#ef4444'), opacity: displayElapsedSec <= 0 ? 0.4 : 1 }}
           >
@@ -496,12 +552,13 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     />
 
     <AnimatePresence>
-      {focusMode && (
+      {focusMode && sessionStage === 'focus' && (
         <motion.div
+          key="focus-clock"
           role="button"
           tabIndex={0}
           aria-label="Tap to end study session"
-          onClick={() => { handleStop(); setFocusMode(false); }}
+          onClick={handleRequestEnd}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -522,6 +579,25 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
             Tap anywhere to end session
           </span>
         </motion.div>
+      )}
+      {focusMode && sessionStage !== 'focus' && (
+        <StudySessionScreen
+          key="session-notes"
+          subject={subject}
+          color={activeColor}
+          elapsedLabel={formatElapsed(displayElapsedSec)}
+          phase={phase}
+          stage={sessionStage}
+          items={notesItems}
+          onItemsChange={updateNotes}
+          onPause={handlePause}
+          onResume={handleResumeInSession}
+          onRequestEnd={handleRequestEnd}
+          onBackToStudy={() => setSessionStage('focus')}
+          onSave={() => setSessionStage('focus')}
+          onFinish={handleFinishSession}
+          finishing={finishing}
+        />
       )}
     </AnimatePresence>
     </>
