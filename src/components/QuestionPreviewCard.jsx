@@ -128,7 +128,7 @@ const QuestionPreviewCard = ({ question: q }) => {
                           <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCorrectOpt ? '#10b981' : '#f1f5f9', color: isCorrectOpt ? '#fff' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>
                             {String.fromCharCode(65 + oIdx)}
                           </div>
-                          <MathView content={typeof opt === 'string' ? opt : opt.text} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ flex: 1, fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
+                          <MathView align="left" content={typeof opt === 'string' ? opt : opt.text} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ flex: 1, fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
                           {isCorrectOpt && <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#10b981', textTransform: 'uppercase', letterSpacing: '0.08em', flexShrink: 0 }}>Correct</span>}
                         </div>
                       );
@@ -271,7 +271,7 @@ const QuestionPreviewCard = ({ question: q }) => {
                     {String.fromCharCode(65 + i)}
                   </div>
                   <div style={{ flex: 1 }}>
-                    <MathView content={optText} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ fontWeight: 500, fontSize: '1.05rem', color: '#1e1b4b' }} />
+                    <MathView align="left" content={optText} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ fontWeight: 500, fontSize: '1.05rem', color: '#1e1b4b' }} />
                     {typeof opt === 'object' && opt.imageUrl && <img src={opt.imageUrl} alt="" style={{ maxHeight: '60px', marginTop: '8px', display: 'block', borderRadius: '8px' }} />}
                   </div>
                 </div>

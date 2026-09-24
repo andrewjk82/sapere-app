@@ -716,7 +716,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                   }}>
                     {correct ? <Check size={16} /> : wrong ? <X size={16} /> : String.fromCharCode(65 + i)}
                   </div>
-                  <MathView content={optText} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ fontSize: '0.98rem', fontWeight: 600, color: '#1e1b4b', flex: 1 }} />
+                  <MathView align="left" content={optText} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ fontSize: '0.98rem', fontWeight: 600, color: '#1e1b4b', flex: 1 }} />
                 </motion.button>
               );
             })}

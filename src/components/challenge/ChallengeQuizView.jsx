@@ -480,7 +480,7 @@ const ChallengeQuizView = ({
                             <div style={{ width: '32px', height: '32px', borderRadius: '50%', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.85rem', background: isCorrectAnswer ? '#10b981' : isWrong ? '#ef4444' : isSelected ? '#6366f1' : '#f1f5f9', color: isCorrectAnswer || isWrong || isSelected ? '#fff' : '#64748b' }}>
                               {String.fromCharCode(65 + oIdx)}
                             </div>
-                            <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ flex: 1, fontSize: '1rem', color: isCorrectAnswer ? '#166534' : isWrong ? '#991b1b' : isSelected ? '#4f46e5' : '#1e1b4b', fontWeight: 500 }} />
+                            <MathView align="left" content={typeof opt === 'string' ? opt : opt.text} style={{ flex: 1, fontSize: '1rem', color: isCorrectAnswer ? '#166534' : isWrong ? '#991b1b' : isSelected ? '#4f46e5' : '#1e1b4b', fontWeight: 500 }} />
                             {isCorrectAnswer && <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#10b981', textTransform: 'uppercase', letterSpacing: '0.08em', flexShrink: 0 }}>Correct</span>}
                             {isWrong && <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#ef4444', textTransform: 'uppercase', letterSpacing: '0.08em', flexShrink: 0 }}>Wrong</span>}
                           </button>
@@ -784,7 +784,7 @@ const ChallengeQuizView = ({
                             // Only show the number line graph, no text
                             return <NumberLine {...nlData} />;
                           }
-                          return <MathView content={optText} graphData={optGraphData} style={{ fontWeight: 500, fontSize: '0.98rem', color: '#1e1b4b' }} />;
+                          return <MathView align="left" content={optText} graphData={optGraphData} style={{ fontWeight: 500, fontSize: '0.98rem', color: '#1e1b4b' }} />;
                         })()}
                         {!!optImage && (
                           <img

@@ -51,7 +51,7 @@ const convertMarkdownTables = (str) => {
   return out.join('\n');
 };
 
-const MathView = ({ content, graphData: rawGraphData, style }) => {
+const MathView = ({ content, graphData: rawGraphData, style, align }) => {
   const containerRef = useRef(null);
 
   // Pre-process: convert markdown tables to HTML before line-splitting
@@ -289,7 +289,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
                 key={idx}
                 className={`math-view-line-${idx}`}
                 style={{
-                  textAlign: isCentered ? 'center' : 'inherit',
+                  textAlign: align || (isCentered ? 'center' : 'inherit'),
                   width: '100%',
                   display: 'block',
                   marginTop: idx > 0 ? '8px' : '0px'

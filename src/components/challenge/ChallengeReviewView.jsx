@@ -446,7 +446,7 @@ const ChallengeReviewView = ({
                   <MathView content={wrapMath(studentText)} style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.05rem' }} />
                 ) : (studentOptGraphData || studentOptImage) ? (
                   <>
-                    <MathView content={getOptionText(studentOption)} graphData={studentOptGraphData} style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.05rem' }} />
+                    <MathView align="left" content={getOptionText(studentOption)} graphData={studentOptGraphData} style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.05rem' }} />
                     {!!studentOptImage && (
                       <img src={studentOptImage} alt="Your answer" style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: '8px', display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9' }} />
                     )}
@@ -473,7 +473,7 @@ const ChallengeReviewView = ({
                     <MathView content={wrapMath(correctText)} style={{ color: '#065f46', fontWeight: 500, fontSize: '1.05rem' }} />
                   ) : (
                     <>
-                      <MathView content={getOptionText(correctOption)} graphData={correctOptGraphData} style={{ color: '#065f46', fontWeight: 500, fontSize: '1.05rem' }} />
+                      <MathView align="left" content={getOptionText(correctOption)} graphData={correctOptGraphData} style={{ color: '#065f46', fontWeight: 500, fontSize: '1.05rem' }} />
                       {!!correctOptImage && (
                         <img src={correctOptImage} alt="Correct answer" style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: '8px', display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9' }} />
                       )}

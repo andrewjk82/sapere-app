@@ -520,7 +520,7 @@ const QuizView = ({
               {String.fromCharCode(65 + i)}
             </div>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <MathView content={optText} graphData={optGraphData} style={{ fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
+              <MathView align="left" content={optText} graphData={optGraphData} style={{ fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
               {!!optImage && (
                 <img src={optImage} alt={`Option ${String.fromCharCode(65 + i)}`} style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: '8px', display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9' }} />
               )}

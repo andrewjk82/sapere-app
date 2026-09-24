@@ -897,7 +897,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
                             <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: isSel ? '#8b5cf6' : '#f1f5f9', color: isSel ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.8rem', flexShrink: 0 }}>
                               {String.fromCharCode(65 + i)}
                             </div>
-                            <MathView content={optText} graphData={optGraphData} style={{ fontWeight: 600, flex: 1 }} />
+                            <MathView align="left" content={optText} graphData={optGraphData} style={{ fontWeight: 600, flex: 1 }} />
                           </button>
                         );
                       })}
@@ -949,7 +949,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
                         return <NumberLine {...nlData} />;
                       }
                       return (!hasImage || (optText && optText !== String.fromCharCode(65 + i)) || optGraphData) ? (
-                        <MathView content={optText} graphData={optGraphData} style={{ fontWeight: 700 }} />
+                        <MathView align="left" content={optText} graphData={optGraphData} style={{ fontWeight: 700 }} />
                       ) : null;
                     })()}
                     {!!optImage && (

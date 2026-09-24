@@ -2595,7 +2595,7 @@ const Checkpoint = ({ prompt, options = [], explanation = '' }) => {
           return (
             <motion.button key={i} whileTap={{ scale: 0.94 }} onClick={() => setSelected(i)}
               style={{ padding: '10px 18px', borderRadius: 14, border: `2px solid ${border}`, background: bg, color, fontWeight: 800, cursor: 'pointer', fontFamily: FONT, fontSize: '0.9rem' }}>
-              <MathView content={opt.text} style={{ fontSize: '0.9rem', fontWeight: 800, color: 'inherit' }} />
+              <MathView align="left" content={opt.text} style={{ fontSize: '0.9rem', fontWeight: 800, color: 'inherit' }} />
             </motion.button>
           );
         })}
