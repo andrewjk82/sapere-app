@@ -1015,7 +1015,7 @@
               "work": "\\(x=106-30=76\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         }
       ]
     },
@@ -1210,7 +1210,7 @@
               "work": "\\(y=x=106\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "hghs2026-a3d",
@@ -1242,7 +1242,7 @@
               "work": "\\(x=75+34=109\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         }
       ]
     },
@@ -2066,7 +2066,7 @@
           "alsoIn": [
             "exam:year8ch5challenge"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y8-5i-q1a_beta",
@@ -2103,7 +2103,7 @@
           "alsoIn": [
             "exam:year8ch5challenge"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y8-5i-q1b_alpha",
@@ -2136,7 +2136,7 @@
           "alsoIn": [
             "exam:year8ch5challenge"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y8-5i-q1b_beta",
@@ -2173,7 +2173,7 @@
           "alsoIn": [
             "exam:year8ch5challenge"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y8-5i-q1b_gamma",
@@ -2201,7 +2201,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y8-5i-q1d_alpha",
@@ -2230,7 +2230,7 @@
               "work": "\\alpha = 75"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y8-5i-q1d_beta",
@@ -2263,7 +2263,7 @@
           "alsoIn": [
             "exam:year8ch5challenge"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y8-5i-q1e_alpha",
@@ -2296,7 +2296,7 @@
           "alsoIn": [
             "exam:year8ch5challenge"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y8-5i-q1e_beta",
@@ -2324,7 +2324,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y8-5i-q1f_alpha",
@@ -2356,7 +2356,7 @@
           "alsoIn": [
             "exam:year8ch5challenge"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y8-5i-q1f_beta",
@@ -2388,7 +2388,7 @@
           "alsoIn": [
             "exam:year8ch5challenge"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y8-5i-q2",
