@@ -579,7 +579,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-1-hard-q5",
@@ -610,7 +610,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-1-hard-q8",
@@ -641,7 +641,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-1-hard-q9",
@@ -672,7 +672,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-1-hard-q13",
@@ -702,7 +702,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         }
       ]
     },
@@ -932,7 +932,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-2-hard-q4e",
@@ -962,7 +962,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-2-hard-q8a",
@@ -992,7 +992,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-2-hard-q8b",
@@ -1023,7 +1023,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-2-hard-q8c",
@@ -1053,7 +1053,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-2-hard-q8d",
@@ -1084,7 +1084,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-2-hard-q7a",
@@ -1114,7 +1114,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-2-hard-q7b",
@@ -1144,7 +1144,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-2-hard-q7c",
@@ -1174,7 +1174,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-2-hard-q7d",
@@ -1204,7 +1204,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         }
       ]
     },
@@ -1871,7 +1871,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-3-hard-q4a",
@@ -1901,7 +1901,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-3-hard-q4b",
@@ -1932,7 +1932,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-3-hard-q4c",
@@ -1963,7 +1963,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-3-hard-q4d",
@@ -1994,7 +1994,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-3-hard-q5a",
@@ -2024,7 +2024,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-3-hard-q5b",
@@ -2055,7 +2055,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-3-hard-q5c",
@@ -2085,7 +2085,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-3-hard-q5d",
@@ -2116,7 +2116,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         }
       ]
     },
@@ -2725,7 +2725,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-4-hard-q4d",
@@ -2756,7 +2756,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-4-hard-q9a",
@@ -2786,7 +2786,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-4-hard-q9b",
@@ -2817,7 +2817,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-4-hard-q9c",
@@ -2847,7 +2847,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-4-hard-q9d",
@@ -2882,7 +2882,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-4-hard-q10",
@@ -2913,7 +2913,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-4-hard-q9a_v2",
@@ -2947,7 +2947,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-4-hard-q9b_v2",
@@ -2981,7 +2981,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-4-hard-q9c_v2",
@@ -3015,7 +3015,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-4-hard-q9d_v2",
@@ -3049,7 +3049,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-4-q3a",
@@ -3578,7 +3578,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-6-hard-q10a",
@@ -3791,7 +3791,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-6-hard-q10b_v2",
@@ -3821,7 +3821,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-6-hard-q10c_v2",
@@ -3851,7 +3851,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-6-hard-q10d_v2",
@@ -3881,7 +3881,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-mr-6-hard-q12a_v2",

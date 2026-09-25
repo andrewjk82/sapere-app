@@ -2358,7 +2358,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q1b",
@@ -2388,7 +2388,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q1c",
@@ -2418,7 +2418,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q1d",
@@ -2448,7 +2448,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q2a",
@@ -2481,7 +2481,7 @@
           "alsoIn": [
             "exam:year5ch1"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q2b",
@@ -2514,7 +2514,7 @@
           "alsoIn": [
             "exam:year5ch1"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q2c",
@@ -2547,7 +2547,7 @@
           "alsoIn": [
             "exam:year5ch1"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q2d",
@@ -2580,7 +2580,7 @@
           "alsoIn": [
             "exam:year5ch1"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q5a",
@@ -2610,7 +2610,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q5b",
@@ -2640,7 +2640,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q1a_p34",
@@ -2674,7 +2674,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q1b_p34",
@@ -2708,7 +2708,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q1c_p34",
@@ -2738,7 +2738,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q2a_p34",
@@ -2768,7 +2768,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q2b_p34",
@@ -2798,7 +2798,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q2c_p34",
@@ -2828,7 +2828,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q3a",
@@ -2858,7 +2858,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q3b",
@@ -2888,7 +2888,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q3c",
@@ -2918,7 +2918,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q3d",
@@ -2948,7 +2948,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q14a",
@@ -2978,7 +2978,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q14b",
@@ -3008,7 +3008,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q14c",
@@ -3038,7 +3038,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-hard-q14d",
@@ -3068,7 +3068,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-1-l1-q1a",
@@ -6271,7 +6271,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q5b-l4",
@@ -6306,7 +6306,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q5c-l4",
@@ -6341,7 +6341,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y5-rn-4-q5d-l4",
@@ -6376,7 +6376,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         }
       ]
     },
