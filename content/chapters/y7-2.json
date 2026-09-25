@@ -454,7 +454,7 @@
               "explain": "The smaller gap wins: the closest multiple of \\(12\\) is \\(84\\). Be careful — a choice like \\(80\\) may look close to \\(80\\), but it is not a multiple of \\(12\\), so it can never be the answer. Always check divisibility first."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "7naAIBvfLzFOyg2HfC6P",
@@ -517,7 +517,7 @@
               "explain": "The smaller gap wins: the closest multiple of \\(12\\) is \\(804\\). Be careful — a choice like \\(800\\) may look close to \\(800\\), but it is not a multiple of \\(12\\), so it can never be the answer. Always check divisibility first."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "9Kql4oU6n9GPsYy66qlF",
@@ -1095,7 +1095,7 @@
               "explain": "Check the traps: \\(38\\) and \\(40\\) are not perfect squares, so their factors all pair up (even count). \\(64 = 8^2\\) IS a perfect square, but \\(49\\) comes first, and the question asks for the NEXT one after \\(36\\)."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "e4kw3FTHvjGjqQcwAHpP",
@@ -1260,7 +1260,7 @@
               "explain": "The smaller gap wins: the closest multiple of \\(12\\) is \\(132\\). Be careful — a choice like \\(128\\) may look close to \\(130\\), but it is not a multiple of \\(12\\), so it can never be the answer. Always check divisibility first."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "fYAgnmTH7QcryfHVXlHb",
@@ -1358,7 +1358,7 @@
               "explain": "The smaller gap wins: the closest multiple of \\(12\\) is \\(396\\). Be careful — a choice like \\(402\\) may look close to \\(400\\), but it is not a multiple of \\(12\\), so it can never be the answer. Always check divisibility first."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "gcxLCBeqiar8YNXfXBSf",
@@ -1547,7 +1547,7 @@
               "work": "\\(\\{25, 50, 75, 150, 175, 350, 525, 1050\\}\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "izT2CkOpxnzKB90I8cB9",
@@ -1674,7 +1674,7 @@
               "work": "\\(\\{1, 4, 16, 25, 64, 100, 400, 1600\\}\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "JtWAvGlvPRbHNsTnMcSK",
@@ -2058,7 +2058,7 @@
               "explain": "The smaller gap wins: the closest multiple of \\(12\\) is \\(72\\). Be careful — a choice like \\(68\\) may look close to \\(70\\), but it is not a multiple of \\(12\\), so it can never be the answer. Always check divisibility first."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "QLeDUS4up0QagsMxCK3p",
@@ -2219,7 +2219,7 @@
               "explain": "The smaller gap wins: the closest multiple of \\(12\\) is \\(156\\). Be careful — a choice like \\(162\\) may look close to \\(160\\), but it is not a multiple of \\(12\\), so it can never be the answer. Always check divisibility first."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "t1WHdlPajUNdvO24SGJb",
@@ -2251,7 +2251,7 @@
               "explain": "Rule out the traps: \\(700\\), \\(600\\), \\(500\\) are round numbers, but none of them divides exactly by both \\(13\\) and \\(31\\)."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "TMPfEezUtFIssb5TjEbx",
@@ -2282,7 +2282,7 @@
               "work": "\\(9 \\times 9 = 81\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "UAcCx8sz3ycOjAo1FHkm",
@@ -2412,7 +2412,7 @@
               "work": "\\(12 \\times 42 = 504\\)  \\(21 \\times 24 = 504\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         }
       ]
     },
@@ -3815,7 +3815,7 @@
               "work": "\\text{The smallest odd number is } 11"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p1-q12",
@@ -5104,7 +5104,7 @@
               "work": "1024 \\times 1024 = 1,048,576"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-ep2-q1a",
@@ -6692,7 +6692,7 @@
               "work": "{30, 42, 66, 70, 78}"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p1-q10",
@@ -7600,7 +7600,7 @@
           "meta": {
             "examPaper": "y7-practice-1"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p1-q7",
@@ -8484,7 +8484,7 @@
           "alsoIn": [
             "exam:year7ch2h"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2h-q7",
@@ -8521,7 +8521,7 @@
           "alsoIn": [
             "exam:year7ch2h"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p1-q15",
@@ -8599,7 +8599,7 @@
               "work": "\\(\\text{LCM}=2^{\\max(4,2)}\\times3^3\\times5^3=2^4\\times3^3\\times5^3\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         }
       ]
     },
@@ -9144,7 +9144,7 @@
               "work": "13 + x = 18 \\implies x = 5 \\implies \\text{First box} = 5"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2i-q11a",
@@ -9421,7 +9421,7 @@
               "work": "499 - 332 = 167"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2i-q14",
@@ -9454,7 +9454,7 @@
           "alsoIn": [
             "exam:year7ch2i"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "hghs2026-i3",
@@ -12023,7 +12023,7 @@
               "work": "10000"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q16b",
@@ -12053,7 +12053,7 @@
               "work": "30 \\times 7 = 210"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q16c",
@@ -12075,7 +12075,7 @@
               "work": "210 \\times 11 = 2310"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q16d",
@@ -12101,7 +12101,7 @@
               "work": "900"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q16e",
@@ -12130,7 +12130,7 @@
           "alsoIn": [
             "exam:year7ch2j"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q16f",
@@ -12156,7 +12156,7 @@
               "work": "100 \\times 45 = 4500"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q16g",
@@ -12182,7 +12182,7 @@
               "work": "42 \\times 42 = 1764"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q16h",
@@ -12208,7 +12208,7 @@
               "work": "33 \\times 33 = 1089"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q16i",
@@ -12234,7 +12234,7 @@
               "work": "3 \\times 100 = 300"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q17",
@@ -12267,7 +12267,7 @@
           "alsoIn": [
             "exam:year7ch2j"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q18",
@@ -12458,7 +12458,7 @@
               "work": "18, 20, 24, 30"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q21b",
@@ -12518,7 +12518,7 @@
               "work": "65, 85"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q23a",
@@ -12764,7 +12764,7 @@
               "work": "0, 0"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q26b",
@@ -12798,7 +12798,7 @@
               "work": "0, 5"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q26c",
@@ -12824,7 +12824,7 @@
               "work": "0, 0"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q27",
@@ -12858,7 +12858,7 @@
               "work": "1, 8"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q28a",
@@ -12930,7 +12930,7 @@
               "work": "13 \\times 6 = 78"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q29a",
@@ -13033,7 +13033,7 @@
               "work": "16 + 3 = 19"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q31a",
@@ -13135,7 +13135,7 @@
           "alsoIn": [
             "exam:year7ch2j"
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q33a",
@@ -13169,7 +13169,7 @@
               "work": "21012"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q33b",
@@ -13203,7 +13203,7 @@
               "work": "20202"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-2j-q33c",
@@ -13240,7 +13240,7 @@
           "alsoIn": [
             "exam:year7ch2j"
           ],
-          "xp": 3
+          "xp": 2
         }
       ]
     }

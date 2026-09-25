@@ -100,7 +100,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         }
       ]
     },
@@ -283,7 +283,7 @@
             }
           ],
           "timeLimit": 45,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "4vj5e5HnpBAXKaCjmhSP",
@@ -1555,7 +1555,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "nQudCSIyefXdg1I3t9BP",
@@ -2961,7 +2961,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "PqkPCvFYaqnx9lWlM9PN",
@@ -3141,7 +3141,7 @@
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 3, Term 4 2024"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "A1iUNDuZo4TxE0KWK5Wq",
@@ -3170,7 +3170,7 @@
               "work": "\\(8a + 6b\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "WcWeS0kFb1w28KWt2mRf",
@@ -3286,7 +3286,7 @@
               "work": "\\(30\\text{ cm}\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         }
       ]
     },
@@ -3353,7 +3353,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "k56c1jUjetnbRguHK0NN",
@@ -3465,7 +3465,7 @@
           "meta": {
             "sourcePaper": "Hornsby Girls HS — Year 7 Assessment 4, Term 4 2021"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "ZaYbm4MMeKXuyP5wgJEe",
@@ -3494,7 +3494,7 @@
               "work": "\\(36\\text{ cm}^2\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y7-t3-2018-p2-area-q4a",
@@ -3741,7 +3741,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "DY2ahdkhYs1sIyJR7F92",
@@ -3771,7 +3771,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "FPkxv3YmD6wkDnwCadJo",
@@ -3861,7 +3861,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         }
       ]
     }

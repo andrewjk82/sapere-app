@@ -235,7 +235,7 @@
               "work": "V - E + F = 2 for all five Platonic solids (Euler's formula)."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "09ug56WNhETeKwdAT2zl",
@@ -496,7 +496,7 @@
               "work": "(b) V - E + F = 2; (c) F = n + 1, E = 2n, V = n + 1; (d) V - E + F = (n + 1) - 2n + (n + 1) = 2"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "wmxAxsAKLuFECkgVTxTR",
@@ -525,7 +525,7 @@
               "work": "(b) V - E + F = 2; (c) F = n + 2, E = 3n, V = 2n; (d) V - E + F = 2n - 3n + (n + 2) = 2"
             }
           ],
-          "xp": 3
+          "xp": 2
         }
       ]
     }
