@@ -290,7 +290,7 @@
         },
         {
           "id": "y11a-4b-q2aii",
-          "type": "short",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "For the parabola \\(y = x^2 - 6x + 8\\), state the values of \\(x\\) for which \\(y > 0\\).",
           "figure": {
@@ -309,7 +309,7 @@
               "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[6,0]], {strokeColor:'gray', strokeWidth:1});\nboard.create('arrow', [[0,-3],[0,10]], {strokeColor:'gray', strokeWidth:1});\nboard.create('functiongraph', [function(x){ return x*x - 6*x + 8; }, -0.5, 5.5], {strokeColor:'blue', strokeWidth:2});\nboard.create('point', [2, 0], { name: '2', color: 'blue', size: 1, label: { offset: [-12, -12] } });\nboard.create('point', [4, 0], { name: '4', color: 'blue', size: 1, label: { offset: [8, -12] } });\nboard.create('point', [0, 8], { name: '8', color: 'blue', size: 1, label: { offset: [-12, 8] } });\nboard.unsuspendUpdate();"
             }
           },
-          "answer": "x < 2 or x > 4",
+          "answer": 0,
           "hint": "Identify the intervals where the curve goes above the x-axis.",
           "solution": "x < 2 or x > 4",
           "steps": [
@@ -326,11 +326,17 @@
               "work": "x < 2 \\quad \\mathrm{or} \\quad x > 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "options": [
+            "\\( x < 2 \\text{ or } x > 4 \\)",
+            "\\( 2 < x < 4 \\)",
+            "\\( x \\le 2 \\text{ or } x \\ge 4 \\)",
+            "\\( 2 \\le x \\le 4 \\)"
+          ]
         },
         {
           "id": "y11a-4b-q2aiii",
-          "type": "short",
+          "type": "mc",
           "difficulty": "easy",
           "stem": "For the parabola \\(y = x^2 - 6x + 8\\), state the values of \\(x\\) for which \\(y < 0\\).",
           "figure": {
@@ -349,7 +355,7 @@
               "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[6,0]], {strokeColor:'gray', strokeWidth:1});\nboard.create('arrow', [[0,-3],[0,10]], {strokeColor:'gray', strokeWidth:1});\nboard.create('functiongraph', [function(x){ return x*x - 6*x + 8; }, -0.5, 5.5], {strokeColor:'blue', strokeWidth:2});\nboard.create('point', [2, 0], { name: '2', color: 'blue', size: 1, label: { offset: [-12, -12] } });\nboard.create('point', [4, 0], { name: '4', color: 'blue', size: 1, label: { offset: [8, -12] } });\nboard.create('point', [0, 8], { name: '8', color: 'blue', size: 1, label: { offset: [-12, 8] } });\nboard.unsuspendUpdate();"
             }
           },
-          "answer": "2 < x < 4",
+          "answer": 0,
           "hint": "Identify the region between the roots where the parabola goes below the x-axis.",
           "solution": "2 < x < 4",
           "steps": [
@@ -366,7 +372,13 @@
               "work": "2 < x < 4"
             }
           ],
-          "timeLimit": 60
+          "timeLimit": 60,
+          "options": [
+            "\\( 2 < x < 4 \\)",
+            "\\( x < 2 \\text{ or } x > 4 \\)",
+            "\\( 2 \\le x \\le 4 \\)",
+            "\\( x \\le 2 \\text{ or } x \\ge 4 \\)"
+          ]
         },
         {
           "id": "y11a-4b-q2bi",

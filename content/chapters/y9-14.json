@@ -7753,36 +7753,36 @@
           "difficulty": "medium",
           "stem": "Kathy paid \\(\\$320\\) in cash for a set of headphones. If she paid in \\(\\$20\\) and \\(\\$10\\) notes, and there were 23 notes altogether. Let \\(x\\) be the number of \\(\\$20\\) notes and \\(y\\) be the number of \\(\\$10\\) notes, how many of each type were there?",
           "options": [
-            "10 \\$20 notes and 13 \\$10 notes",
-            "9 \\$20 notes and 14 \\$10 notes",
-            "12 \\$20 notes and 11 \\$10 notes",
-            "14 \\$20 notes and 9 \\$10 notes"
+            "10 \\(\\\\) notes and 13 \\(\\\\) notes",
+            "9 \\(\\\\) notes and 14 \\(\\\\) notes",
+            "12 \\(\\\\) notes and 11 \\(\\\\) notes",
+            "14 \\(\\\\) notes and 9 \\(\\\\) notes"
           ],
           "answer": 1,
           "steps": [
             {
               "explain": "Form the first equation for the total number of notes.",
-              "work": "x + y = 23"
+              "work": "\\(x + y = 23\\)"
             },
             {
               "explain": "Form the second equation for the total value.",
-              "work": "20x + 10y = 320"
+              "work": "\\(20x + 10y = 320\\)"
             },
             {
               "explain": "Divide the second equation by 10.",
-              "work": "2x + y = 32"
+              "work": "\\(2x + y = 32\\)"
             },
             {
               "explain": "Subtract the first equation from the simplified second equation to eliminate \\(y\\).",
-              "work": "(2x + y) - (x + y) = 32 - 23 \\implies x = 9"
+              "work": "\\((2x + y) - (x + y) = 32 - 23 \\implies x = 9\\)"
             },
             {
               "explain": "Substitute \\(x = 9\\) back into the first equation to find \\(y\\).",
-              "work": "9 + y = 23 \\implies y = 14"
+              "work": "\\(9 + y = 23 \\implies y = 14\\)"
             },
             {
               "explain": "State the final answer.",
-              "work": "9 \\text{ \\$20 notes and } 14 \\text{ \\$10 notes}"
+              "work": "There are 9 \\(\\\\) notes and 14 \\(\\\\) notes."
             }
           ],
           "meta": {

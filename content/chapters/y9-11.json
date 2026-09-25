@@ -1556,7 +1556,6 @@
               "work": "Since Pythagoras' theorem is satisfied, \\(\\Delta ABC\\) is a right-angled triangle."
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "meta": {
             "manualReview": false
