@@ -12052,7 +12052,7 @@
             "\\(2\\sqrt{3}\\)",
             "\\(\\frac{2}{3}\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Simplify the expression using the properties of surds.",
           "solution": "The correct answer is \\(\\frac{2\\sqrt{3}}{3}\\).",
           "steps": [
@@ -12678,7 +12678,7 @@
             "\\(\\frac{\\sqrt{5}-1}{2}\\)",
             "\\(\\sqrt{5}-1\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Simplify the expression using the properties of surds.",
           "solution": "The correct answer is \\(\\frac{\\sqrt{5}-1}{2}\\).",
           "steps": [
@@ -14008,7 +14008,7 @@
             "\\(136+96\\sqrt{2}\\)",
             "\\(\\frac{136+387\\sqrt{2}}{4}\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Simplify the expression using the properties of surds.",
           "solution": "The correct answer is \\(\\frac{540+387\\sqrt{2}}{4}\\).",
           "steps": [

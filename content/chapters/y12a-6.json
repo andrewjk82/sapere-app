@@ -11047,7 +11047,7 @@
             "\\(1\\)",
             "\\(-\\dfrac{\\sqrt2}{2}\\)"
           ],
-          "answer": 2,
+          "answer": 1,
           "hint": "The primitive of \\(\\cos x\\) is \\(\\sin x\\). Evaluate at the two limits and subtract.",
           "steps": [
             {

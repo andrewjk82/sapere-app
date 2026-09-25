@@ -2265,7 +2265,7 @@
             "\\(60\\)",
             "\\(6\\)"
           ],
-          "answer": 1,
+          "answer": 3,
           "hint": "As the number of bricklayers increases, the number of days decreases. Find the total 'bricklayer-days' by multiplying \\(3\\) and \\(12\\), then divide by \\(6\\).",
           "solution": "This is a problem involving inverse proportion:\n1. Find the total effort required in terms of bricklayer-days:\n   \\(\\text{Total effort} = 3 \\text{ bricklayers} \\times 12 \\text{ days} = 36 \\text{ bricklayer-days}\\)\n2. Find the time needed for \\(6\\) bricklayers to complete this total effort:\n   \\(\\text{Number of days} = 36 \\text{ bricklayer-days} \\div 6 \\text{ bricklayers} = 6 \\text{ days}\\)\n\nTherefore, it would take \\(6\\) bricklayers \\(6\\) days to build the wall.",
           "steps": [

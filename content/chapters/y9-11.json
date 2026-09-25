@@ -14089,7 +14089,7 @@
                 "\\(-3\\)",
                 "\\(\\frac{1}{3}\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "steps": [
                 {
                   "explain": "State the relationship between perpendicular gradients.",
@@ -14116,7 +14116,7 @@
                 "\\(-3\\)",
                 "\\(3\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "steps": [
                 {
                   "explain": "State the relationship between perpendicular gradients.",
@@ -14143,7 +14143,7 @@
                 "\\(-\\frac{5}{2}\\)",
                 "\\(-\\frac{2}{5}\\)"
               ],
-              "answer": 0,
+              "answer": 3,
               "steps": [
                 {
                   "explain": "State the relationship between perpendicular gradients.",
@@ -14170,7 +14170,7 @@
                 "\\(-\\frac{1}{4}\\)",
                 "\\(4\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "steps": [
                 {
                   "explain": "State the relationship between perpendicular gradients.",
@@ -14197,7 +14197,7 @@
                 "\\(-\\frac{2}{3}\\)",
                 "\\(\\frac{2}{3}\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "steps": [
                 {
                   "explain": "State the relationship between perpendicular gradients.",
@@ -14224,7 +14224,7 @@
                 "\\(3\\)",
                 "\\(\\frac{1}{3}\\)"
               ],
-              "answer": 0,
+              "answer": 3,
               "steps": [
                 {
                   "explain": "State the relationship between perpendicular gradients.",
@@ -14251,7 +14251,7 @@
                 "\\(\\frac{1}{4}\\)",
                 "\\(-4\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "steps": [
                 {
                   "explain": "State the relationship between perpendicular gradients.",
@@ -14305,7 +14305,7 @@
                 "\\(-\\frac{3}{5}\\)",
                 "\\(\\frac{3}{5}\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "steps": [
                 {
                   "explain": "State the relationship between perpendicular gradients.",
@@ -14332,7 +14332,7 @@
                 "\\(-\\frac{4}{3}\\)",
                 "\\(\\frac{3}{4}\\)"
               ],
-              "answer": 0,
+              "answer": 2,
               "steps": [
                 {
                   "explain": "State the relationship between perpendicular gradients.",

@@ -3787,7 +3787,7 @@
             "-\\dfrac{1}{2}",
             "-2"
           ],
-          "answer": 2,
+          "answer": 0,
           "steps": [
             {
               "explain": "The equation is already in gradient-intercept form y = mx + c. Identify its gradient.",

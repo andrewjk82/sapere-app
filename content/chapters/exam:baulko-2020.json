@@ -3770,7 +3770,7 @@
             "\\(\\dfrac{9}{7}\\)",
             "\\(\\dfrac{4}{3}\\)"
           ],
-          "answer": 3,
+          "answer": 0,
           "hint": "$P(X=0)=\\frac{3}{7}\\cdot\\frac{2}{6}$, $P(X=1)=2\\cdot\\frac{4}{7}\\cdot\\frac{3}{6}$, $P(X=2)=\\frac{4}{7}\\cdot\\frac{3}{6}$.",
           "solution": "The correct answer is P(X=0)=\\dfrac{1}{7}\\), \\(P(X=1)=\\dfrac{4}{7}\\), \\(P(X=2)=\\dfrac{2}{7}\\); \\(E(X)=\\dfrac{8}{7}.",
           "steps": [

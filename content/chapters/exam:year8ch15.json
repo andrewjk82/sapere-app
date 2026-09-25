@@ -106,7 +106,7 @@
                 "\\(13\\)",
                 "\\(14\\)"
               ],
-              "answer": 2,
+              "answer": 1,
               "solution": "The correct answer is \\(12\\).",
               "steps": [
                 {
@@ -139,7 +139,7 @@
                 "\\(122\\)",
                 "\\(120\\)"
               ],
-              "answer": 2,
+              "answer": 3,
               "solution": "The correct answer is \\(120\\).",
               "steps": [
                 {
@@ -285,7 +285,7 @@
                 "\\(121\\)",
                 "\\(122\\)"
               ],
-              "answer": 2,
+              "answer": 1,
               "solution": "The correct answer is \\(120\\).",
               "steps": [
                 {

@@ -843,7 +843,7 @@
             "9",
             "2"
           ],
-          "answer": 2,
+          "answer": 3,
           "hint": "Substitute the given values into the formula and solve.",
           "solution": "2",
           "steps": [
@@ -933,7 +933,7 @@
             "3",
             "48"
           ],
-          "answer": 3,
+          "answer": 2,
           "hint": "Substitute the given values into the formula and solve.",
           "solution": "3",
           "steps": [
@@ -1083,7 +1083,7 @@
             "15",
             "2"
           ],
-          "answer": 3,
+          "answer": 1,
           "hint": "Substitute the given values into the formula and solve.",
           "solution": "3",
           "steps": [

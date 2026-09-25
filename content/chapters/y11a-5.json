@@ -53,7 +53,7 @@
               "work": "The turning point is \\((-5, -3)\\)."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5-12c",
@@ -100,7 +100,7 @@
               "work": "The turning point is \\((3, 5)\\)."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5-12d",
@@ -147,7 +147,7 @@
               "work": "The turning point is \\((-6, 4)\\)."
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5-14a",
@@ -181,7 +181,7 @@
               "work": "\\(y = 3x + 2\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5A-new-5a",
@@ -1175,7 +1175,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5A-new-10d",
@@ -1211,7 +1211,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5A-new-10e",
@@ -1395,7 +1395,7 @@
               "work": "\\(y=(x-4)^2\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5A-new-11c",
@@ -1455,7 +1455,7 @@
               "work": "\\(y=(x-3)^2-2\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5A-new-13a",
@@ -1489,7 +1489,7 @@
               "work": "\\((x-3)^2+(y-4)^2=4\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5A-new-13b",
@@ -1523,7 +1523,7 @@
               "work": "\\((x+5)^2+(y+2)^2=36\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5A-new-13c",
@@ -1557,7 +1557,7 @@
               "work": "\\((x+3)^2+(y-1)^2=49\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5A-new-13d",
@@ -1591,7 +1591,7 @@
               "work": "\\((x-6)^2+(y+5)^2=81\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5A-new-14a-i",
@@ -1699,7 +1699,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5A-new-14b-i",
@@ -1807,7 +1807,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "6sbczoZEyZyncxxazxmt",
@@ -1861,7 +1861,7 @@
             }
           ],
           "timeLimit": 45,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "OFUUDmjJQ312RCLZDX3V",
@@ -7315,7 +7315,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 1
+          "xp": 3
         },
         {
           "id": "y11a-5B-new-6a",
@@ -7449,7 +7449,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5B-new-6d",
@@ -7485,7 +7485,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5B-new-6e",
@@ -7593,7 +7593,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5B-new-7b-i",
@@ -7629,7 +7629,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5B-new-7b-ii",
@@ -7665,7 +7665,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5B-new-9",
@@ -7737,7 +7737,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 4
+          "xp": 5
         },
         {
           "id": "10PPDHiS4nKAOd1XMrVK",
@@ -7827,7 +7827,7 @@
               "work": "\\(y = -x^2 + 5x - 7\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         }
       ]
     },
@@ -8062,7 +8062,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-2a-ii",
@@ -8098,7 +8098,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-2b-i",
@@ -8134,7 +8134,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-2b-ii",
@@ -8170,7 +8170,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-2c-i",
@@ -8206,7 +8206,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-2c-ii",
@@ -8242,7 +8242,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-3",
@@ -8278,7 +8278,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-4",
@@ -8314,7 +8314,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-6a",
@@ -8343,7 +8343,7 @@
             "Neither",
             "Both"
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-6b",
@@ -8376,7 +8376,7 @@
             "Neither",
             "Both"
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-6c",
@@ -8410,7 +8410,7 @@
             }
           ],
           "manual": true,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-6d",
@@ -8439,7 +8439,7 @@
             "Neither",
             "Both"
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-6e",
@@ -8472,7 +8472,7 @@
             "Neither",
             "Both"
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-6f",
@@ -8501,7 +8501,7 @@
             "Neither",
             "Both"
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-7a",
@@ -8605,7 +8605,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5C-new-8b",
@@ -8641,7 +8641,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5C-new-8c",
@@ -8677,7 +8677,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5C-new-8d",
@@ -8713,7 +8713,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5C-new-8e",
@@ -8749,7 +8749,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5C-new-9a",
@@ -9001,10 +9001,10 @@
         },
         {
           "id": "y11a-5C-new-10a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
           "stem": "Determine whether the function is even, odd, or neither: \\(f(x) = 5^x\\)",
-          "answer": "2",
+          "answer": 2,
           "hint": "Does \\(5^{-x}\\) equal \\(5^x\\) or \\(-5^x\\)?",
           "solution": "2",
           "steps": [
@@ -9025,15 +9025,19 @@
               "work": "\\(2\\)"
             }
           ],
-          "manual": true,
-          "xp": 3
+          "xp": 3,
+          "options": [
+            "Even",
+            "Odd",
+            "Neither"
+          ]
         },
         {
           "id": "y11a-5C-new-10b",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
           "stem": "Determine whether the function is even, odd, or neither: \\(f(x) = 5^{-x}\\)",
-          "answer": "2",
+          "answer": 2,
           "hint": "Does \\(5^x\\) equal \\(5^{-x}\\) or \\(-5^{-x}\\)?",
           "solution": "2",
           "steps": [
@@ -9054,15 +9058,19 @@
               "work": "\\(2\\)"
             }
           ],
-          "manual": true,
-          "xp": 3
+          "xp": 3,
+          "options": [
+            "Even",
+            "Odd",
+            "Neither"
+          ]
         },
         {
           "id": "y11a-5C-new-10c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
           "stem": "Determine whether the function is even, odd, or neither: \\(f(x) = \\sqrt{25 - x^2}\\)",
-          "answer": "0",
+          "answer": 0,
           "hint": "Substitute \\(-x\\).",
           "solution": "0",
           "steps": [
@@ -9083,15 +9091,19 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true,
-          "xp": 3
+          "xp": 3,
+          "options": [
+            "Even",
+            "Odd",
+            "Neither"
+          ]
         },
         {
           "id": "y11a-5C-new-10d",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
           "stem": "Determine whether the function is even, odd, or neither: \\(f(x) = \\frac{2}{x^2 + 4}\\)",
-          "answer": "0",
+          "answer": 0,
           "hint": "Substitute \\(-x\\).",
           "solution": "0",
           "steps": [
@@ -9112,15 +9124,19 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true,
-          "xp": 3
+          "xp": 3,
+          "options": [
+            "Even",
+            "Odd",
+            "Neither"
+          ]
         },
         {
           "id": "y11a-5C-new-10e",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
           "stem": "Determine whether the function is even, odd, or neither: \\(f(x) = \\frac{3x}{x^2 + 9}\\)",
-          "answer": "1",
+          "answer": 1,
           "hint": "Substitute \\(-x\\).",
           "solution": "1",
           "steps": [
@@ -9141,15 +9157,19 @@
               "work": "\\(1\\)"
             }
           ],
-          "manual": true,
-          "xp": 3
+          "xp": 3,
+          "options": [
+            "Even",
+            "Odd",
+            "Neither"
+          ]
         },
         {
           "id": "y11a-5C-new-10f",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
           "stem": "Determine whether the function is even, odd, or neither: \\(f(x) = 4^x + 4^{-x}\\)",
-          "answer": "0",
+          "answer": 0,
           "hint": "Addition is commutative.",
           "solution": "0",
           "steps": [
@@ -9170,8 +9190,12 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true,
-          "xp": 3
+          "xp": 3,
+          "options": [
+            "Even",
+            "Odd",
+            "Neither"
+          ]
         },
         {
           "id": "y11a-5C-new-10g",
@@ -9207,10 +9231,10 @@
         },
         {
           "id": "y11a-5C-new-10h",
-          "type": "review",
+          "type": "mc",
           "difficulty": "hard",
           "stem": "Determine whether the function is even, odd, or neither: \\(f(x) = 4^x + x^3\\)",
-          "answer": "2",
+          "answer": 2,
           "hint": "Does \\(f(-x)\\) perfectly equal \\(f(x)\\) or \\(-f(x)\\)?",
           "solution": "2",
           "steps": [
@@ -9231,8 +9255,12 @@
               "work": "\\(2\\)"
             }
           ],
-          "manual": true,
-          "xp": 3
+          "xp": 3,
+          "options": [
+            "Even",
+            "Odd",
+            "Neither"
+          ]
         },
         {
           "id": "y11a-5C-new-11a",
@@ -9268,7 +9296,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5C-new-11b",
@@ -9304,7 +9332,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 4
+          "xp": 3
         },
         {
           "id": "y11a-5C-new-11c",
@@ -9340,7 +9368,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 4
+          "xp": 3
         },
         {
           "id": "y11a-5C-new-11d",
@@ -9376,7 +9404,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-5C-new-11e",
@@ -9412,7 +9440,7 @@
           ],
           "manual": true,
           "timeLimit": 180,
-          "xp": 4
+          "xp": 5
         },
         {
           "id": "y11a-5C-new-12a",
@@ -9786,7 +9814,7 @@
               "work": "\\(\\text{Transformation: Vertical dilation by a factor of } 3\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5-18b",
@@ -9816,7 +9844,7 @@
               "work": "\\(\\text{Transformation: Horizontal dilation by a factor of } \\frac{1}{4}\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5D-new-1a",
@@ -9859,7 +9887,7 @@
               "work": "Replace \\(x\\) with \\(\\frac{x}{1/3} = 3x\\). The new equation is \\(y = (3x)^2 = 9x^2\\). The sketch is a much steeper parabola."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-1b",
@@ -9889,7 +9917,7 @@
               "work": "Multiply the function by 4. The new equation is \\(y = 4 \\times 3^x\\). The sketch is the exponential curve shifted upwards multiplicatively, with a new y-intercept of 4."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-1c",
@@ -9932,7 +9960,7 @@
               "work": "Multiply by 3. \\(y = 3(x^2 - 2) = 3x^2 - 6\\). The parabola is steeper and its vertex is now at \\((0, -6)\\)."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-1d",
@@ -9962,7 +9990,7 @@
               "work": "Replace \\(x\\) with \\(\\frac{x}{3}\\). \\(y = \\frac{2}{x/3} = \\frac{6}{x}\\). The hyperbola is stretched further away from the origin."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-1e",
@@ -9992,7 +10020,7 @@
               "work": "Replace \\(y\\) with \\(\\frac{y}{1/2} = 2y\\). The equation becomes \\(x^2 + (2y)^2 = 9 \\implies x^2 + 4y^2 = 9\\). This is an ellipse with x-intercepts \\(\\pm 3\\) and y-intercepts \\(\\pm 1.5\\)."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-1f",
@@ -10022,7 +10050,7 @@
               "work": "Replace \\(x\\) with \\(-\\frac{x}{2}\\). The new equation is \\(y = \\sqrt{2 - (-\\frac{x}{2})} = \\sqrt{2 + \\frac{x}{2}}\\). The domain is now \\(x \\ge -4\\), and the curve goes to the right."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-1g",
@@ -10052,7 +10080,7 @@
               "work": "Replace \\(x\\) with \\(4x\\). \\(y = \\sqrt{16 - (4x)^2} = \\sqrt{16 - 16x^2} = 4\\sqrt{1 - x^2}\\). This is the upper half of an ellipse."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-1h",
@@ -10082,7 +10110,7 @@
               "work": "Multiply by \\(-3\\) to get \\(y = -3\\sqrt{x}\\). The graph is stretched vertically by 3 and reflected across the x-axis."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-2a-i",
@@ -10112,7 +10140,7 @@
               "work": "Horizontal dilation by factor \\(1/2\\) halves the x-coordinates of the zeroes: \\(x = -2, 1, 2\\). The \\(y\\)-intercept is unchanged: \\(y = -2\\)."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-2a-ii",
@@ -10142,7 +10170,7 @@
               "work": "Vertical dilation by factor \\(2\\) doubles the y-coordinates. Zeroes are unchanged: \\(x = -4, 2, 4\\). The \\(y\\)-intercept doubles to \\(y = -4\\)."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-2c-i",
@@ -10172,7 +10200,7 @@
               "work": "\\(y = 3h(x)\\) means all \\(y\\)-values are tripled. The zero remains at \\(x=2\\). The \\(y\\)-intercept becomes \\(2 \\times 3 = 6\\)."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-2c-ii",
@@ -10202,7 +10230,7 @@
               "work": "Horizontal dilation by factor 3 triples the \\(x\\)-coordinates. The zero is at \\(x = 6\\). The \\(y\\)-intercept is unchanged at \\(y = 2\\)."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-2d-i",
@@ -10232,7 +10260,7 @@
               "work": "\\(y = \\frac{1}{3}g(x)\\) is a vertical compression. The \\(y\\)-values are divided by 3. Zeroes remain \\(x = -3, 3\\). The \\(y\\)-intercept becomes \\(y = 1\\)."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-2d-ii",
@@ -10262,7 +10290,7 @@
               "work": "Horizontal dilation by factor \\(\\frac{1}{3}\\) divides the \\(x\\)-coordinates by 3. Zeroes are \\(x = -1, 1\\). The \\(y\\)-intercept is unchanged at \\(y = 3\\)."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-4a",
@@ -10292,7 +10320,7 @@
               "work": "Replacing \\(x\\) with \\(\\frac{x}{a}\\) corresponds to a horizontal stretch by a factor of \\(a\\). Here \\(a=4\\)."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-4c",
@@ -10322,7 +10350,7 @@
               "work": "Replacing \\(x\\) with \\(5x\\) means the horizontal coordinates are multiplied by \\(\\frac{1}{5}\\), representing a horizontal compression by a factor of \\(\\frac{1}{5}\\)."
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-5a",
@@ -10352,7 +10380,7 @@
               "work": "Dilation from the origin by factor \\(1/2\\) means replacing \\(x\\) with \\(2x\\) and \\(y\\) with \\(2y\\). \\n\\((2x - 4)^2 + (2y)^2 = 9\\) \\n\\(4(x - 2)^2 + 4y^2 = 9\\) \\n\\((x - 2)^2 + y^2 = \\frac{9}{4}\\). \\nThe new shape is a circle centered at \\((2, 0)\\) with radius \\(1.5\\)."
             }
           ],
-          "xp": 1
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-5b",
@@ -10382,7 +10410,7 @@
               "work": "Replace \\(x\\) and \\(y\\): \\n\\(\\frac{y}{\\sqrt{5}} = \\frac{2}{\\frac{x}{\\sqrt{5}}}\\) \\n\\(\\frac{y}{\\sqrt{5}} = \\frac{2\\sqrt{5}}{x}\\) \\nMultiply both sides by \\(\\sqrt{5}\\): \\n\\(y = \\frac{10}{x}\\)."
             }
           ],
-          "xp": 1
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-7c",
@@ -10466,7 +10494,7 @@
           ],
           "manual": true,
           "timeLimit": 150,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-11a",
@@ -10555,7 +10583,7 @@
               }
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-12a",
@@ -10598,7 +10626,7 @@
               "work": "The second equation is \\(y = 5(x^2 - 4x)\\), which is 5 times the first equation. This corresponds to a vertical stretch by a factor of 5."
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-12b",
@@ -10628,7 +10656,7 @@
               "work": "Replacing \\(x\\) with \\(4x\\) (which is \\(x / 0.25\\)) means the graph is horizontally compressed by a factor of \\(\\frac{1}{4}\\)."
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-12c",
@@ -10658,7 +10686,7 @@
               "work": "Replacing \\(x\\) with \\(\\frac{x}{3}\\) represents a horizontal stretch by a factor of 3."
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-12d",
@@ -10688,7 +10716,7 @@
               "work": "The second equation is \\(6 \\times \\frac{1}{x+5}\\), which represents a vertical stretch by a factor of 6."
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-16",
@@ -10748,7 +10776,7 @@
               "work": "A horizontal stretch by 5 replaces \\(x\\) with \\(x/5\\). A vertical stretch by 2 replaces \\(y\\) with \\(y/2\\). Therefore, the equation becomes \\((\\frac{x}{5})^2 + (\\frac{y}{2})^2 = 1\\)."
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-5D-new-17b",
@@ -10778,7 +10806,7 @@
               "work": "The original graph has a \\(y\\)-intercept of \\(1\\). The new graph has a \\(y\\)-intercept of \\(-3\\). This indicates a vertical stretch by a factor of \\(-3\\). Thus, \\(y = -3(4^x)\\). Checking the point \\(x=1\\): \\(y = -3(4^1) = -12\\), which perfectly matches."
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-5D-new-17c",
@@ -10821,7 +10849,7 @@
               "work": "The original \\(x\\)-intercepts of \\(y = x^2 - 9\\) are \\(\\pm 3\\). The new \\(x\\)-intercepts are \\(\\pm 2\\). This represents a horizontal compression by a factor of \\(\\frac{2}{3}\\). Therefore, we replace \\(x\\) with \\(\\frac{x}{2/3} = \\frac{3x}{2}\\). The equation is \\(y = (\\frac{3x}{2})^2 - 9\\)."
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-5D-new-18",
@@ -10881,7 +10909,7 @@
               "work": "Transformation 1: Replacing \\(x\\) with \\(x+2\\) is a horizontal translation to the left by 2 units.\\nTransformation 2: Since \\(4^{x+2} = 16 \\times 4^x\\), it can also be viewed as a vertical stretch by a factor of 16."
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-5D-new-19a-ii",
@@ -10911,7 +10939,7 @@
               "work": "Transformation 1: \\(y = k^2(\\frac{3}{x})\\) represents a vertical stretch by a factor of \\(k^2\\).\\nTransformation 2: \\(y = \\frac{3}{x/k^2}\\) represents a horizontal stretch (or compression) by a factor of \\(\\frac{1}{k^2}\\)."
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-5D-new-19a-iii",
@@ -10941,7 +10969,7 @@
               "work": "Transformation 1: The center moves from \\((0, 4)\\) to \\((0, -4)\\), which is a vertical translation downwards by 8 units.\\nTransformation 2: Replacing \\(y\\) with \\(-y\\) yields \\(x^2 + (-y-4)^2 = 1 \\implies x^2 + (y+4)^2 = 1\\), which represents a reflection across the \\(x\\)-axis."
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-5D-new-19b",
@@ -10971,7 +10999,7 @@
               "work": "Consider \\(y = x^2\\) and \\(y = 9x^2\\). This can be viewed as:\\n1) A vertical stretch by a factor of 9.\\n2) A horizontal compression by a factor of \\(\\frac{1}{3}\\), since \\(y = (3x)^2 = 9x^2\\)."
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-5D-new-20",
@@ -11245,7 +11273,7 @@
               "work": "A circle centred at the origin with radius 4"
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-6b-2",
@@ -11275,7 +11303,7 @@
               "work": "\\(\\text{Ellipse: semi-axes } 8 \\text{ (horizontal)}, 16 \\text{ (vertical)}\\)"
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-6b-3",
@@ -11305,7 +11333,7 @@
               "work": "\\(\\text{Ellipse: semi-axes } 1 \\text{ (horizontal)}, 2 \\text{ (vertical)}\\)"
             }
           ],
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5D-new-7a-i",
@@ -11919,7 +11947,7 @@
               "work": "\\(\\text{Conclusion: both transformations give the same equation } y = \\frac{6}{x}\\)"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-13d",
@@ -11949,7 +11977,7 @@
               "work": "\\(\\text{Enlargement factor: } k = \\sqrt{3} \\approx 1.73\\)"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-13e",
@@ -11979,7 +12007,7 @@
               "work": "\\(\\text{General family: } y = \\frac{A}{x} \\text{ satisfies: horizontal stretch by } k = \\text{vertical stretch by } k\\)"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-14a",
@@ -12095,7 +12123,7 @@
               "work": "\\(\\text{Conclusion: the equations are identical}\\)"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-14d",
@@ -12138,7 +12166,7 @@
               "work": "\\(\\text{Enlargement factor: } k = \\frac{1}{9}\\)"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-14e",
@@ -12168,7 +12196,7 @@
               "work": "\\(\\text{Horizontal dilation by } \\frac{1}{k} = \\text{Vertical dilation by } k^n\\)"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-15a",
@@ -12202,7 +12230,7 @@
               "work": "\\(5\\) grams"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-15b",
@@ -12236,7 +12264,7 @@
               "work": "\\(20\\) years"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-15c-i",
@@ -12270,7 +12298,7 @@
               "work": "Vertical dilation by 2: \\(M = 10 \\times 2^{-\\frac{t}{20}}\\)"
             }
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5D-new-15c-ii",
@@ -12300,7 +12328,7 @@
               "work": "\\(\\text{Half-life} = 20 \\text{ years (unchanged)}\\)"
             }
           ],
-          "xp": 2
+          "xp": 3
         }
       ]
     },
@@ -12476,7 +12504,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5-2b",
@@ -12623,7 +12651,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5-8b",
@@ -12667,7 +12695,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5-8c",
@@ -12711,7 +12739,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5-8d",
@@ -12755,7 +12783,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5-10a",
@@ -12788,7 +12816,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5-10b",
@@ -14257,7 +14285,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-6b",
@@ -14294,7 +14322,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-6c",
@@ -14331,7 +14359,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-6d",
@@ -14368,7 +14396,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-6e",
@@ -14405,7 +14433,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-6f",
@@ -14442,7 +14470,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-7a",
@@ -14479,7 +14507,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-7b",
@@ -14516,7 +14544,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-7c",
@@ -14553,7 +14581,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-7d",
@@ -14590,7 +14618,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-7e",
@@ -14627,7 +14655,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-7f",
@@ -14664,7 +14692,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5E-new-8a",
@@ -14701,7 +14729,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-8b",
@@ -15185,7 +15213,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-10b-i",
@@ -15229,7 +15257,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-10b-ii",
@@ -15273,7 +15301,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-10b-iii",
@@ -15317,7 +15345,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-10b-iv",
@@ -15361,7 +15389,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-10b-v",
@@ -15405,7 +15433,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-10b-vi",
@@ -15449,7 +15477,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-11a-i",
@@ -15493,7 +15521,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-11a-ii",
@@ -15537,7 +15565,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-11b-i",
@@ -15581,7 +15609,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-11b-ii",
@@ -15625,7 +15653,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-12a",
@@ -15669,7 +15697,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-12b",
@@ -15713,7 +15741,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-12c",
@@ -15757,7 +15785,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-13a",
@@ -15801,7 +15829,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-13b",
@@ -15845,7 +15873,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-13c",
@@ -15889,7 +15917,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-14a",
@@ -15933,7 +15961,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-14b",
@@ -15977,7 +16005,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-14c",
@@ -16021,7 +16049,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-17a",
@@ -16054,7 +16082,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-17b",
@@ -16098,7 +16126,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-18",
@@ -16139,7 +16167,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 4
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-19a",
@@ -16183,7 +16211,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-19b",
@@ -16227,7 +16255,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-19c",
@@ -16271,7 +16299,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-19d",
@@ -16328,7 +16356,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "bb2020-q13",
@@ -16396,7 +16424,7 @@
                   "work": "\\(\\therefore x \\le 1\\) or \\(x \\ge 4\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "meta": {
@@ -16439,7 +16467,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "PpQw9cQKdEg9f5GUzoPZ",
@@ -16569,7 +16597,7 @@
                   "work": "\\(|x|-2 = 0,-1,-2,-1,0,1,2\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-5E-new-5b",
@@ -16697,7 +16725,7 @@
                   "work": "\\(\\text{Solution: } x = 2 \\text{ or } x = 6\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-5E-new-15b-i",
@@ -16720,7 +16748,7 @@
                   "work": "\\(x = 1 \\text{ or } x = -5\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-5E-new-15b-ii",
@@ -16743,7 +16771,7 @@
                   "work": "\\(x = 4 \\text{ or } x = -1\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-5E-new-15b-iii",
@@ -16766,7 +16794,7 @@
                   "work": "\\(\\text{No real solution}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-5E-new-15b-iv",
@@ -16789,7 +16817,7 @@
                   "work": "\\(x = -2\\)"
                 }
               ],
-              "xp": 2
+              "xp": 1
             }
           ],
           "hint": "Find where the V-shape intersects the horizontal line.",
@@ -16830,7 +16858,7 @@
                   "work": "\\(\\text{Hence } f \\text{ is even.}\\)"
                 }
               ],
-              "xp": 3
+              "xp": 1
             },
             {
               "id": "y11a-5E-new-16b",
@@ -16860,7 +16888,7 @@
                   "work": "\\(\\text{Answer: y-axis symmetry}\\)"
                 }
               ],
-              "xp": 3
+              "xp": 1
             }
           ],
           "hint": "Substitute \\(-x\\) into the function.",
@@ -16897,7 +16925,7 @@
               "work": "\\(|x|-2 = 0,-1,-2,-1,0,1,2\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-5b",
@@ -17023,7 +17051,7 @@
               "work": "\\(\\text{Solution: } x = 2 \\text{ or } x = 6\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-15b-i",
@@ -17056,7 +17084,7 @@
               "work": "\\(x = 1\\) or \\(x = -5\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-15b-ii",
@@ -17089,7 +17117,7 @@
               "work": "\\(x = 4\\) or \\(x = -1\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-15b-iii",
@@ -17122,7 +17150,7 @@
               "work": "No solution"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-15b-iv",
@@ -17155,7 +17183,7 @@
               "work": "\\(x = -2\\)"
             }
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-16a",
@@ -17184,7 +17212,7 @@
               "work": "\\(\\text{Hence } f \\text{ is even.}\\)"
             }
           ],
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y11a-5E-new-16b",
@@ -17217,7 +17245,7 @@
               "work": "The graph is symmetric about the \\(y\\)-axis (left–right mirror image)."
             }
           ],
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "killara2026-q5",
@@ -17265,7 +17293,7 @@
               }
             }
           ],
-          "xp": 2
+          "xp": 3
         }
       ]
     },
@@ -17305,7 +17333,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5-15b",
@@ -17338,7 +17366,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5-16a",
@@ -17437,7 +17465,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 1
+          "xp": 3
         },
         {
           "id": "y11a-5F-new-11a",
@@ -17500,7 +17528,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "glenwood2020-q13",
@@ -17542,7 +17570,7 @@
           "dna": {
             "dnaId": "FUNC-COMP-01"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "gosford2020-q6",
@@ -17579,7 +17607,7 @@
           "dna": {
             "dnaId": "FUNC-TRANS-01"
           },
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "lTbqu3o99Xgms5Fsqsgo",
@@ -17954,7 +17982,7 @@
           ],
           "manual": true,
           "timeLimit": 60,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q2a-i",
@@ -18197,7 +18225,7 @@
           ],
           "manual": true,
           "timeLimit": 60,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q3a-i",
@@ -18427,7 +18455,7 @@
           ],
           "manual": true,
           "timeLimit": 60,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q4a-i",
@@ -18686,14 +18714,14 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q5a",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Do reflection in the y-axis and horizontal translation commute?",
-          "answer": "1",
+          "answer": 1,
           "hint": "Try translating a function by \\(a\\) and reflecting it, compared to reflecting first and then translating.",
           "solution": "1",
           "steps": [
@@ -18714,12 +18742,15 @@
               "work": "\\(1\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3,
+          "options": [
+            "Yes, they commute.",
+            "No, they do not commute."
+          ]
         },
         {
           "id": "y11-5g-q5b",
@@ -18761,14 +18792,14 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q5c",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Do vertical dilation and reflection in the x-axis commute?",
-          "answer": "0",
+          "answer": 0,
           "hint": "Both transformations correspond to multiplying the entire y-value by a constant.",
           "solution": "0",
           "steps": [
@@ -18789,19 +18820,22 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3,
+          "options": [
+            "Yes, they commute.",
+            "No, they do not commute."
+          ]
         },
         {
           "id": "y11-5g-q5d",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Do horizontal translation and vertical translation commute?",
-          "answer": "0",
+          "answer": 0,
           "hint": "Think about whether moving a graph horizontally and then vertically differs from doing it in reverse.",
           "solution": "0",
           "steps": [
@@ -18822,12 +18856,15 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3,
+          "options": [
+            "Yes, they commute.",
+            "No, they do not commute."
+          ]
         },
         {
           "id": "y11-5g-q5e",
@@ -18862,14 +18899,14 @@
             "Yes, they commute.",
             "No, they do not commute."
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q5f",
-          "type": "review",
+          "type": "mc",
           "difficulty": "medium",
           "stem": "Do reflection in the x-axis and horizontal translation commute?",
-          "answer": "0",
+          "answer": 0,
           "hint": "Check if shifting horizontally affects the vertical reflection or vice versa.",
           "solution": "0",
           "steps": [
@@ -18890,12 +18927,15 @@
               "work": "\\(0\\)"
             }
           ],
-          "manual": true,
           "timeLimit": 90,
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3,
+          "options": [
+            "Yes, they commute.",
+            "No, they do not commute."
+          ]
         },
         {
           "id": "y11-5g-q6a",
@@ -18951,7 +18991,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q6b",
@@ -18981,7 +19021,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q6c",
@@ -19037,7 +19077,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q6d",
@@ -19067,7 +19107,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q6e",
@@ -19110,7 +19150,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q6f",
@@ -19140,7 +19180,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q7a",
@@ -19167,7 +19207,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q7b",
@@ -19194,7 +19234,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q7c",
@@ -19221,7 +19261,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q8a",
@@ -19285,7 +19325,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11-5g-q8b",
@@ -19349,7 +19389,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11-5g-q8c",
@@ -19387,7 +19427,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11-5g-q8d",
@@ -19425,7 +19465,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11-5g-q9a",
@@ -19448,7 +19488,7 @@
             }
           ],
           "manual": true,
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11-5g-q9b",
@@ -19474,7 +19514,7 @@
             }
           ],
           "manual": true,
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11a-5-17a",
@@ -19836,7 +19876,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5-19b",
@@ -19868,7 +19908,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5-19c",
@@ -19934,7 +19974,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5-20b",
@@ -19971,7 +20011,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "hh2020-q13",
@@ -20006,7 +20046,7 @@
             "examType": "Trial HSC",
             "grade": "12"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11-5g-q1",
@@ -20143,7 +20183,7 @@
                   "work": "\\text{Yes, shifting horizontally and vertically are independent and therefore commute.}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "hint": "Factor the expression to find x-intercepts, and use the axis of symmetry to find the vertex.",
@@ -20289,7 +20329,7 @@
                   "work": "\\(\\text{They commute}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "hint": "Remember that horizontal dilation replaces \\(x\\) with \\(\\frac{x}{k}\\), and vertical dilation multiplies the entire expression by \\(c\\).",
@@ -20434,7 +20474,7 @@
                   "work": "\\(\\text{They commute}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "hint": "Check if changing the order of horizontal dilation and vertical translation affects the equation.",
@@ -20579,7 +20619,7 @@
                   "work": "\\(No, they do not commute\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "hint": "Recall that reflection in the y-axis replaces \\(x\\) with \\(-x\\).",
@@ -20616,7 +20656,7 @@
                   "work": "\\(\\text{Match the C/N pattern above}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y11-5g-q7b",
@@ -20643,7 +20683,7 @@
                   "work": "\\(\\text{Reflections as HD/VD with factor } -1\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "y11-5g-q7c",
@@ -20670,7 +20710,7 @@
                   "work": "\\(\\text{Consistent}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "hint": "Think about how each pair of transformations acts on a general function \\(f(x)\\).",
@@ -20707,7 +20747,7 @@
                   "work": "\\(y = (x - 2)^2\\)"
                 }
               ],
-              "xp": 2
+              "xp": 4
             },
             {
               "id": "y11-5g-q9b",
@@ -20734,7 +20774,7 @@
                   "work": "\\(\\text{Equation unchanged}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 4
             }
           ],
           "hint": "Perform the operations one by one and check the final equation."
@@ -20764,7 +20804,7 @@
               "work": "\\text{Translate the graph of } f \\text{ 2 units to the left.}"
             }
           ],
-          "xp": 4
+          "xp": 5
         },
         {
           "id": "y11-5g-q10a-ii",
@@ -20791,7 +20831,7 @@
               "work": "\\text{Dilate the graph of } g \\text{ horizontally by a factor of } \\frac{1}{3}."
             }
           ],
-          "xp": 4
+          "xp": 5
         },
         {
           "id": "y11-5g-q10a-iii",
@@ -20818,7 +20858,7 @@
               "work": "\\text{Translate } f \\text{ left by 2, then dilate horizontally by } \\frac{1}{3}."
             }
           ],
-          "xp": 4
+          "xp": 5
         },
         {
           "id": "y11-5g-q10b-i",
@@ -20845,7 +20885,7 @@
               "work": "\\text{Dilate the graph of } f \\text{ horizontally by a factor of } \\frac{1}{3}."
             }
           ],
-          "xp": 4
+          "xp": 5
         },
         {
           "id": "y11-5g-q10b-ii",
@@ -20872,7 +20912,7 @@
               "work": "\\text{Translate the graph of } p \\text{ } \\frac{2}{3} \\text{ units to the left.}"
             }
           ],
-          "xp": 4
+          "xp": 5
         },
         {
           "id": "y11-5g-q10b-iii",
@@ -20899,7 +20939,7 @@
               "work": "\\text{Dilate } f \\text{ horizontally by } \\frac{1}{3}, \\text{ then translate left by } \\frac{2}{3}."
             }
           ],
-          "xp": 4
+          "xp": 5
         },
         {
           "id": "y11-5g-q10c",
@@ -20926,7 +20966,7 @@
               "work": "\\text{Shift applied after dilation, so it must be exactly } \\frac{2}{3} \\text{ to match.}"
             }
           ],
-          "xp": 4
+          "xp": 5
         },
         {
           "id": "y11-5g-q10d",
@@ -20949,7 +20989,7 @@
               "work": "f(x) \\to f(ax) \\text{ (Dilate horizontally by } \\frac{1}{a}) \\to f\\left(a\\left(x + \\frac{b}{a}\\right)\\right) = f(ax+b) \\text{ (Left by } \\frac{b}{a})"
             }
           ],
-          "xp": 4
+          "xp": 5
         },
         {
           "id": "y11-5g-q10e",
@@ -20972,7 +21012,7 @@
               "work": "y = f(x) \\to y = f(x) + \\frac{b}{a} \\text{ (Translate vertically by } \\frac{b}{a}) \\to y = a\\left(f(x) + \\frac{b}{a}\\right) = af(x) + b \\text{ (Dilate vertically by } a)"
             }
           ],
-          "xp": 4
+          "xp": 5
         }
       ]
     },
@@ -21027,7 +21067,7 @@
             "exam:baulkham2020",
             "exam:baulko-2020"
           ],
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "baulko2020-q12dii",
@@ -21166,7 +21206,7 @@
             "exam:baulkham2020",
             "exam:baulko-2020"
           ],
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5-22a",
@@ -21277,7 +21317,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5-23b",
@@ -21314,7 +21354,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5h-1a",
@@ -21388,7 +21428,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5h-1c",
@@ -21425,7 +21465,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5h-5a",
@@ -21610,7 +21650,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5h-2c",
@@ -21647,7 +21687,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5h-3a",
@@ -21721,7 +21761,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5h-3c",
@@ -21758,7 +21798,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5h-6a",
@@ -21832,7 +21872,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5h-7a",
@@ -21869,7 +21909,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5h-8a",
@@ -21906,7 +21946,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5h-9a",
@@ -21943,7 +21983,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-5h-11d",
@@ -22017,7 +22057,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5h-13b",
@@ -22054,7 +22094,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5h-14a",
@@ -22091,7 +22131,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5h-14b",
@@ -22128,7 +22168,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-5h-2-sketch",
@@ -22276,7 +22316,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "killara2026-q24b",
@@ -22319,7 +22359,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ]
         }
@@ -22540,7 +22580,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5i-q2c",
@@ -22578,7 +22618,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5i-q2d",
@@ -22616,7 +22656,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-5i-q3a",
@@ -22960,7 +23000,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q8d",
@@ -23011,7 +23051,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q10a",
@@ -23049,7 +23089,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q10b",
@@ -23083,7 +23123,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q10c",
@@ -23121,7 +23161,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q12b",
@@ -23175,7 +23215,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q12c",
@@ -23233,7 +23273,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q12d",
@@ -23287,7 +23327,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q14a",
@@ -23334,7 +23374,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q14b",
@@ -23381,7 +23421,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q16aii",
@@ -23419,7 +23459,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q16bi",
@@ -23457,7 +23497,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q16bii",
@@ -23495,7 +23535,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q17b",
@@ -23553,7 +23593,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q17c",
@@ -23611,7 +23651,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q17d",
@@ -23669,7 +23709,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q17e",
@@ -23727,7 +23767,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q17f",
@@ -23785,7 +23825,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q17g",
@@ -23843,7 +23883,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q17h",
@@ -23901,7 +23941,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q17i",
@@ -23959,7 +23999,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q18b",
@@ -24001,7 +24041,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q19b",
@@ -24043,7 +24083,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q19c",
@@ -24085,7 +24125,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q19g",
@@ -24144,7 +24184,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q19j",
@@ -24186,7 +24226,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q19o",
@@ -24228,7 +24268,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-5i-q21a",
@@ -24551,7 +24591,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y11a-5i-q12c-sketch",
@@ -24609,7 +24649,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 1
         },
         {
           "id": "y11a-5i-q12d-sketch",
@@ -24663,7 +24703,7 @@
           "meta": {
             "course": "Advanced"
           },
-          "xp": 3
+          "xp": 1
         }
       ]
     }

@@ -2653,7 +2653,7 @@
             "\\\\(0.2184\\\\)",
             "\\\\(0.1546\\\\)"
           ],
-          "answer": 2,
+          "answer": 1,
           "hint": "$P(X > 5) = 1 - F(5)$.",
           "solution": "The correct answer is \\(0.1846\\).",
           "steps": [
@@ -5079,7 +5079,7 @@
             "\\\\(\\dfrac{3}{125}\\\\)",
             "\\\\(\\dfrac{9}{125}\\\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "hint": "$P(X > 4) = 1 - F(4)$.",
           "solution": "The correct answer is \\(\\dfrac{7}{125}\\).",
           "steps": [

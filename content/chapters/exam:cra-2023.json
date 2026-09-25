@@ -3852,7 +3852,7 @@
             "\\(0.2674\\)",
             "\\(0.2664\\)"
           ],
-          "answer": 1,
+          "answer": 2,
           "hint": "The probabilities in a discrete distribution must sum to 1.",
           "solution": "The correct answer is \\(m = 0.2674\\).",
           "steps": [

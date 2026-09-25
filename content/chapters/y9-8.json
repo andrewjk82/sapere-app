@@ -3153,7 +3153,7 @@
             },
             {
               "explain": "Add the two values together.",
-              "work": "\\( 5 + 5 = 10 \\)"
+              "work": "\\( 2 + 5 = 7 \\)"
             }
           ],
           "timeLimit": 30,
@@ -3183,7 +3183,7 @@
             },
             {
               "explain": "Add the two values together.",
-              "work": "\\( 5 + 5 = 10 \\)"
+              "work": "\\( 2 + 5 = 7 \\)"
             }
           ],
           "timeLimit": 30,

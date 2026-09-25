@@ -5935,7 +5935,7 @@
             "\\(2\\)",
             "\\(9\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "hint": "Write 81 as a power of 3.",
           "solution": "\\(\\log_3 81 = \\log_3(3^4) = 4\\)",
           "steps": [
@@ -5966,7 +5966,7 @@
             "\\(6\\)",
             "\\(16\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "hint": "Write 32 as a power of 2.",
           "solution": "\\(\\log_2 32 = \\log_2(2^5) = 5\\)",
           "steps": [
@@ -5997,7 +5997,7 @@
             "\\(6\\)",
             "\\(81\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "hint": "Write 243 as a power of 3.",
           "solution": "\\(\\log_3 243 = \\log_3(3^5) = 5\\)",
           "steps": [
@@ -6171,7 +6171,7 @@
             "\\(23\\)",
             "\\(50\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "hint": "Rewrite in exponential form.",
           "solution": "x^2 = 25 -> x = 5",
           "steps": [
@@ -6264,7 +6264,7 @@
             "\\(340\\)",
             "\\(1029\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "hint": "Rewrite in exponential form.",
           "solution": "x^3 = 343 -> x = 7",
           "steps": [
@@ -6295,7 +6295,7 @@
             "\\(79\\)",
             "\\(162\\)"
           ],
-          "answer": 3,
+          "answer": 0,
           "hint": "Rewrite in exponential form.",
           "solution": "x^2 = 81 -> x = 9",
           "steps": [
@@ -6326,7 +6326,7 @@
             "\\(61\\)",
             "\\(192\\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "hint": "Rewrite in exponential form.",
           "solution": "x^3 = 64 -> x = 4",
           "steps": [
@@ -7346,7 +7346,7 @@
             "\\(-12\\)",
             "\\(-3\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Rewrite the equation in exponential form.",
           "solution": "5 - x = 4^2 = 16 -> x = -11",
           "steps": [
@@ -7377,7 +7377,7 @@
             "\\(13\\)",
             "\\(100\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Rewrite the equation in exponential form.",
           "solution": "x = 10^3 = 1000",
           "steps": [

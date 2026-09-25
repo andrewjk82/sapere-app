@@ -8314,7 +8314,7 @@
                 "\\\\( 18 \\\\)",
                 "\\\\( -2 \\\\)"
               ],
-              "answer": 0,
+              "answer": 1,
               "steps": [
                 {
                   "explain": "Units column: \\\\( 4 + 5 + C = 17 \\implies C = 8 \\\\).",
@@ -8333,7 +8333,7 @@
                 "\\\\( 12 \\\\)",
                 "\\\\( 2 \\\\)"
               ],
-              "answer": 2,
+              "answer": 3,
               "steps": [
                 {
                   "explain": "Hundreds: \\\\( 2 + 8 + 6 + 4 = 20 \\\\), which carries over 2 to the thousands place.",
@@ -28608,7 +28608,7 @@
             "\\(10\\)",
             "\\(20\\)"
           ],
-          "answer": 0,
+          "answer": 1,
           "hint": "Determine which number represents the total (dividend) being divided.",
           "steps": [
             {

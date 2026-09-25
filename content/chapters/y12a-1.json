@@ -2131,7 +2131,7 @@
             "2",
             "-2"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Calculate the first 8 terms to find the repeating period of the sequence.",
           "solution": "\\(-1\\)",
           "steps": [
@@ -10985,7 +10985,7 @@
             "2",
             "-2"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Calculate the first 8 terms to find the repeating period of the sequence.",
           "solution": "\\(-1\\)",
           "steps": [
@@ -34041,7 +34041,7 @@
             "\\(7\\)",
             "\\(8\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Set up the sum formula with r = -1/2, simplify, and solve the exponential equation for n.",
           "solution": "\\(6\\)",
           "steps": [
@@ -34177,7 +34177,7 @@
             "\\(5\\)",
             "\\(8\\)"
           ],
-          "answer": 1,
+          "answer": 0,
           "hint": "Set up the sum formula with r = -1/2, simplify, and solve the exponential equation for n.",
           "solution": "\\(6\\)",
           "steps": [
@@ -34313,7 +34313,7 @@
             "\\(5\\)",
             "\\(7\\)"
           ],
-          "answer": 1,
+          "answer": 3,
           "hint": "Set up the sum formula with r = -1/2, simplify, and solve the exponential equation for n.",
           "solution": "\\(6\\)",
           "steps": [
@@ -34449,7 +34449,7 @@
             "\\(8\\)",
             "\\(6\\)"
           ],
-          "answer": 3,
+          "answer": 0,
           "hint": "Set up the sum formula with r = -1/2, simplify, and solve the exponential equation for n.",
           "solution": "\\(6\\)",
           "steps": [
@@ -34585,7 +34585,7 @@
             "\\(7\\)",
             "\\(8\\)"
           ],
-          "answer": 0,
+          "answer": 2,
           "hint": "Set up the sum formula with r = -1/2, simplify, and solve the exponential equation for n.",
           "solution": "\\(6\\)",
           "steps": [

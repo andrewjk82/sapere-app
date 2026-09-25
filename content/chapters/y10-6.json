@@ -426,7 +426,7 @@
             "\\( 400 \\)",
             "\\( 680 \\)"
           ],
-          "answer": 2,
+          "answer": 1,
           "solution": "The correct answer is \\(340\\).",
           "steps": [
             {
@@ -749,7 +749,7 @@
             "\\( 25 \\)",
             "\\( 37.5 \\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "solution": "The correct answer is \\(5\\).",
           "steps": [
             {
@@ -785,7 +785,7 @@
             "\\( 12 \\)",
             "\\( 30 \\)"
           ],
-          "answer": 2,
+          "answer": 1,
           "solution": "The correct answer is \\(6\\).",
           "steps": [
             {
@@ -859,7 +859,7 @@
             "\\( 63.7 \\)",
             "\\( 100 \\)"
           ],
-          "answer": 2,
+          "answer": 1,
           "solution": "The correct answer is \\(31.8\\).",
           "steps": [
             {
@@ -983,7 +983,7 @@
             "\\( 10 \\)",
             "\\( 16 \\)"
           ],
-          "answer": 2,
+          "answer": 1,
           "solution": "The correct answer is \\(8\\).",
           "steps": [
             {
@@ -1385,7 +1385,7 @@
             "\\( 25 \\)",
             "\\( 41.7 \\)"
           ],
-          "answer": 2,
+          "answer": 0,
           "solution": "The correct answer is \\(5\\).",
           "steps": [
             {
@@ -1422,7 +1422,7 @@
             "\\( 10.0 \\)",
             "\\( 17.3 \\)"
           ],
-          "answer": 2,
+          "answer": 1,
           "solution": "The correct answer is \\(6.7\\).",
           "steps": [
             {
