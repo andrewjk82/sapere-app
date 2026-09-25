@@ -1271,8 +1271,8 @@
         {
           "id": "y8-19a-q8",
           "type": "multipart",
-          "difficulty": "medium",
           "stem": "The following list gives the area in hectares of each of the suburbs of a city:\n\n`8.5, 3.2, 6.2, 20.2, 3.4, 42.3, 12.3, 28.6, 10.0, 3.3, 29.4, 4.2, 4.6`\n\nAnswer the questions below.",
+          "difficulty": "medium",
           "parts": [
             {
               "id": "y8-19a-q8a",
@@ -1306,7 +1306,8 @@
                   "explain": "The 7th value is 8.5.",
                   "work": "\\(\\text{Median} = 8.5 \\text{ hectares}\\)"
                 }
-              ]
+              ],
+              "xp": 1
             },
             {
               "id": "y8-19a-q8b",
