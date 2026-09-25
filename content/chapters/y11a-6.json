@@ -2932,7 +2932,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6b-q2",
@@ -2969,7 +2969,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6b-q3",
@@ -3009,7 +3009,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6b-q4",
@@ -3046,7 +3046,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6b-q5",
@@ -3087,7 +3087,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6b-q6",
@@ -3124,7 +3124,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6b-q7",
@@ -3161,7 +3161,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6b-q8",
@@ -3198,7 +3198,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6b-q9",
@@ -3349,7 +3349,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6b-q12b",
@@ -3383,7 +3383,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6b-q13a",
@@ -3448,7 +3448,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6b-q14a",
@@ -3513,7 +3513,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6b-q15a",
@@ -3554,7 +3554,7 @@
             }
           ],
           "manual": true,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6b-q15b",
@@ -3595,7 +3595,7 @@
             }
           ],
           "manual": true,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6b-q15c",
@@ -3640,7 +3640,7 @@
             }
           ],
           "manual": true,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6b-q16a",
@@ -3681,7 +3681,7 @@
             }
           ],
           "manual": true,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6b-q16b",
@@ -3722,7 +3722,7 @@
             }
           ],
           "manual": true,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6b-q16c",
@@ -3763,7 +3763,7 @@
             }
           ],
           "manual": true,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6b-q17",
@@ -3803,7 +3803,7 @@
               "work": "\\(h = \\frac{1000}{0.6494 + 1.5399} \\approx \\frac{1000}{2.1893} \\approx 456.8 \\approx 457\\text{ m}\\)"
             }
           ],
-          "xp": 3
+          "xp": 5
         },
         {
           "id": "y11a-6b-q13",
@@ -3853,7 +3853,7 @@
                   "work": "\\(XY \\approx 67.13 \\approx 67\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "answer": "a) Show that angle ZXY = 90 degrees. b) 67 km.",
@@ -3924,7 +3924,7 @@
                   }
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "answer": "a) The difference between the back bearing of P from Q (290°) and the bearing to R (200°) is 90°. b) 149°.",
@@ -5078,7 +5078,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q8b",
@@ -5139,7 +5139,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q8c",
@@ -5200,7 +5200,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q8d",
@@ -5243,7 +5243,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q9a",
@@ -5304,7 +5304,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q9b",
@@ -5365,7 +5365,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q9c",
@@ -5426,7 +5426,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q9d",
@@ -5469,7 +5469,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q10a",
@@ -5530,7 +5530,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q10b",
@@ -5591,7 +5591,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q10c",
@@ -5652,7 +5652,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q10d",
@@ -5713,7 +5713,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6c-q11",
@@ -5752,7 +5752,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6c-q13a",
@@ -6198,7 +6198,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6c-q9",
@@ -6217,7 +6217,7 @@
                   "work": "\\text{Domain: } -\\infty < x < \\infty"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-6c-q9b",
@@ -6230,7 +6230,7 @@
                   "work": "-1 \\le y \\le 1"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-6c-q9c",
@@ -6243,7 +6243,7 @@
                   "work": "\\text{Period} = 360^{\\circ}"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-6c-q9d",
@@ -6256,7 +6256,7 @@
                   "work": "\\text{Amplitude} = 1"
                 }
               ],
-              "xp": 2
+              "xp": 1
             }
           ],
           "answer": "Domain: all real x. Range: -1 <= y <= 1. Period: 360°. Amplitude: 1.",
@@ -6389,7 +6389,7 @@
           "dna": {
             "dnaId": "TRIG-GRAPH-01"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6c-q8",
@@ -6408,7 +6408,7 @@
                   "work": "\\text{Domain: } -\\infty < x < \\infty"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-6c-q8b",
@@ -6421,7 +6421,7 @@
                   "work": "-1 \\le y \\le 1"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-6c-q8c",
@@ -6434,7 +6434,7 @@
                   "work": "\\text{Period} = 360^{\\circ}"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-6c-q8d",
@@ -6447,7 +6447,7 @@
                   "work": "\\text{Amplitude} = 1"
                 }
               ],
-              "xp": 2
+              "xp": 1
             }
           ],
           "answer": "Domain: all real x. Range: -1 <= y <= 1. Period: 360°. Amplitude: 1.",
@@ -6473,7 +6473,7 @@
                   "work": "x \\neq 90^{\\circ} + 180^{\\circ}n"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-6c-q10b",
@@ -6486,7 +6486,7 @@
                   "work": "-\\infty < y < \\infty"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-6c-q10c",
@@ -6499,7 +6499,7 @@
                   "work": "\\text{Period} = 180^{\\circ}"
                 }
               ],
-              "xp": 2
+              "xp": 1
             },
             {
               "id": "y11a-6c-q10d",
@@ -6512,7 +6512,7 @@
                   "work": "x = -270^{\\circ}, -90^{\\circ}, 90^{\\circ}, 270^{\\circ}"
                 }
               ],
-              "xp": 2
+              "xp": 1
             }
           ],
           "answer": "Domain: x != 90° + 180°n. Range: all real y. Period: 180°. Asymptotes: x = -270°, -90°, 90°, 270°.",
@@ -8176,7 +8176,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q3b",
@@ -8216,7 +8216,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q3c",
@@ -8256,7 +8256,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q3d",
@@ -8296,7 +8296,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q3e",
@@ -8336,7 +8336,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q3f",
@@ -8376,7 +8376,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q3g",
@@ -8416,7 +8416,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q3h",
@@ -8456,7 +8456,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q3i",
@@ -8496,7 +8496,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q3j",
@@ -8536,7 +8536,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q3k",
@@ -8576,7 +8576,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q3l",
@@ -8616,7 +8616,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q4a",
@@ -9144,7 +9144,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q5b",
@@ -9184,7 +9184,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q5c",
@@ -9224,7 +9224,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q5d",
@@ -9264,7 +9264,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q5e",
@@ -9304,7 +9304,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q5f",
@@ -9344,7 +9344,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q5g",
@@ -9384,7 +9384,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q5h",
@@ -9424,7 +9424,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q5i",
@@ -9464,7 +9464,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q5j",
@@ -9504,7 +9504,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q5k",
@@ -9544,7 +9544,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q5l",
@@ -9584,7 +9584,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6d-q6a",
@@ -10494,7 +10494,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6d-q8bii",
@@ -10534,7 +10534,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6d-q8biii",
@@ -10574,7 +10574,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6d-q8biv",
@@ -10614,7 +10614,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6d-q8bv",
@@ -10654,7 +10654,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6d-q8bvi",
@@ -10694,7 +10694,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6d-q9a",
@@ -10734,7 +10734,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6d-q9b",
@@ -10775,7 +10775,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6d-q9c",
@@ -10815,7 +10815,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6d-q9d",
@@ -10855,7 +10855,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6d-q9e",
@@ -10896,7 +10896,7 @@
           ],
           "manual": true,
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6d-q9f",
@@ -10936,7 +10936,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6d-q10a",
@@ -12301,7 +12301,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6d-q13b",
@@ -12341,7 +12341,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6d-q13c",
@@ -12381,7 +12381,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6d-q13d",
@@ -12412,7 +12412,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6d-q13e",
@@ -12443,7 +12443,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6d-q13f",
@@ -12474,7 +12474,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6d-q14a",
@@ -13055,7 +13055,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q1a-cos",
@@ -13095,7 +13095,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q1a-tan",
@@ -13135,7 +13135,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q1b-sin",
@@ -13175,7 +13175,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q1b-cos",
@@ -13215,7 +13215,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q1b-tan",
@@ -13255,7 +13255,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q1c-sin",
@@ -13295,7 +13295,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q1c-cos",
@@ -13335,7 +13335,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q1c-tan",
@@ -13375,7 +13375,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q1d-sin",
@@ -13415,7 +13415,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q1d-cos",
@@ -13455,7 +13455,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q1d-tan",
@@ -13495,7 +13495,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2a-side",
@@ -13535,7 +13535,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2a-sin",
@@ -13575,7 +13575,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2a-cos",
@@ -13615,7 +13615,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2a-tan",
@@ -13655,7 +13655,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2b-side",
@@ -13695,7 +13695,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2b-sin",
@@ -13735,7 +13735,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2b-cos",
@@ -13775,7 +13775,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2b-tan",
@@ -13815,7 +13815,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2c-side",
@@ -13855,7 +13855,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2c-sin",
@@ -13895,7 +13895,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2c-cos",
@@ -13935,7 +13935,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2c-tan",
@@ -13975,7 +13975,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2d-side",
@@ -14015,7 +14015,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2d-sin",
@@ -14055,7 +14055,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2d-cos",
@@ -14095,7 +14095,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q2d-tan",
@@ -14135,7 +14135,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q3ai",
@@ -14175,7 +14175,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q3aii",
@@ -14215,7 +14215,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q3bi",
@@ -14255,7 +14255,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q3bii",
@@ -14295,7 +14295,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q4ai",
@@ -14335,7 +14335,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 3
         },
         {
           "id": "y11a-6e-q4aii",
@@ -14375,7 +14375,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 3
         },
         {
           "id": "y11a-6e-q4bi",
@@ -14415,7 +14415,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 3
         },
         {
           "id": "y11a-6e-q4bii",
@@ -14455,7 +14455,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 3
         },
         {
           "id": "y11a-6e-q5a",
@@ -14495,7 +14495,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q5b",
@@ -14535,7 +14535,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q5c",
@@ -14575,7 +14575,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q5d",
@@ -14615,7 +14615,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q5e",
@@ -14655,7 +14655,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q5f",
@@ -14695,7 +14695,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6e-q6a",
@@ -14735,7 +14735,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q6b",
@@ -14775,7 +14775,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q6c",
@@ -14815,7 +14815,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q6d",
@@ -14855,7 +14855,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q6e",
@@ -14895,7 +14895,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q6f",
@@ -14935,7 +14935,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q7a",
@@ -15215,7 +15215,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q8b",
@@ -15255,7 +15255,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q8c",
@@ -15295,7 +15295,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q8d",
@@ -15335,7 +15335,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q9a",
@@ -15375,7 +15375,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q9b",
@@ -15415,7 +15415,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q9d",
@@ -15455,7 +15455,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q10a",
@@ -15495,7 +15495,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q10d",
@@ -15535,7 +15535,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6e-q11-cos",
@@ -15574,7 +15574,7 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ \\sin \\theta = \\frac{a}{b} \\\\implies \\text{opp}=a, \\text{hyp}=b \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{adj} = \\sqrt{b^2 - a^2} \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\cos \\theta = -\\frac{\\text{adj}}{\\text{hyp}} = -\\frac{\\sqrt{b^2 - a^2}}{b} \\]\n</div>"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6e-q11-tan",
@@ -15613,7 +15613,7 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ \\sin \\theta = \\frac{a}{b} \\\\implies \\text{opp}=a, \\text{hyp}=b \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{adj} = \\sqrt{b^2 - a^2} \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\tan \\theta = -\\frac{\\text{opp}}{\\text{adj}} = -\\frac{a}{\\sqrt{b^2 - a^2}} \\]\n</div>"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6e-q12-sin",
@@ -15652,7 +15652,7 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ \\tan \\alpha = \\frac{m}{1} \\\\implies \\text{opp}=m, \\text{adj}=1 \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{hyp} = \\sqrt{m^2 + 1^2} = \\sqrt{m^2 + 1} \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\sin \\alpha = \\pm \\frac{\\text{opp}}{\\text{hyp}} = \\pm \\frac{m}{\\sqrt{m^2 + 1}} \\]\n</div>"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6e-q12-sec",
@@ -15691,7 +15691,7 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ \\tan \\alpha = \\frac{m}{1} \\\\implies \\text{opp}=m, \\text{adj}=1 \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{hyp} = \\sqrt{m^2 + 1^2} = \\sqrt{m^2 + 1} \\]\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\sec \\alpha = \\pm \\frac{\\text{hyp}}{\\text{adj}} = \\pm \\frac{\\sqrt{m^2 + 1}}{1} = \\pm \\sqrt{m^2 + 1} \\]\n</div>"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6e-q13a",
@@ -15716,7 +15716,7 @@
             }
           ],
           "manual": true,
-          "xp": 4
+          "xp": 3
         },
         {
           "id": "y11a-6e-q13b-sin",
@@ -15755,7 +15755,7 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ \\cos x = \\frac{k^2 - 1}{k^2 + 1} \\] (\\(\\text{adj}=k^2-1, \\text{hyp}=k^2+1\\)).\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{opp} = \\sqrt{(k^2+1)^2 - (k^2-1)^2} = \\sqrt{4k^2} = 2k \\] (since \\(k>1\\)).\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\sin x = \\frac{\\text{opp}}{\\text{hyp}} = \\frac{2k}{k^2 + 1} \\]\n</div>"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6e-q13b-tan",
@@ -15794,7 +15794,7 @@
               "work": "<div style=\"background-color: #f8fafc; padding: 16px; border-radius: 8px; border-left: 4px solid #3b82f6;\">\n  <b style=\"color: #1e293b; font-size: 1.05em;\">1. Analyze given ratio:</b>\n  \\[ \\cos x = \\frac{k^2 - 1}{k^2 + 1} \\] (\\(\\text{adj}=k^2-1, \\text{hyp}=k^2+1\\)).\n  <b style=\"color: #1e293b; font-size: 1.05em;\">2. Use Pythagoras Theorem:</b>\n  \\[ \\text{opp} = \\sqrt{(k^2+1)^2 - (k^2-1)^2} = \\sqrt{4k^2} = 2k \\] (since \\(k>1\\)).\n  <b style=\"color: #1e293b; font-size: 1.05em;\">3. Calculate final ratio:</b>\n  \\[ \\tan x = \\frac{\\text{opp}}{\\text{adj}} = \\frac{2k}{k^2 - 1} \\]\n</div>"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "glenwood2020-q12",
@@ -16289,7 +16289,7 @@
           ],
           "manual": true,
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6f-q4b",
@@ -16320,7 +16320,7 @@
           ],
           "manual": true,
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6f-q4c",
@@ -16338,7 +16338,7 @@
           ],
           "manual": true,
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6f-q5a",
@@ -16818,7 +16818,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6f-q8b",
@@ -16856,7 +16856,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6f-q8c",
@@ -16894,7 +16894,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6f-q8d",
@@ -16925,7 +16925,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 2
+          "xp": 1
         },
         {
           "id": "y11a-6f-q9a",
@@ -16946,7 +16946,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6f-q9b",
@@ -16967,7 +16967,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6f-q9c",
@@ -16988,7 +16988,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y11a-6f-q10a",
@@ -17589,7 +17589,7 @@
             "examType": "Trial HSC",
             "grade": "12"
           },
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "hillsgrammar-25-2u-q22",
@@ -17628,7 +17628,7 @@
             "examType": "Trial HSC",
             "grade": "12"
           },
-          "xp": 2
+          "xp": 3
         }
       ]
     },
@@ -17666,7 +17666,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6g-q1b",
@@ -17701,7 +17701,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6g-q1d",
@@ -17736,7 +17736,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6g-q1e",
@@ -17771,7 +17771,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6g-q1f",
@@ -17806,7 +17806,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6g-q1g",
@@ -17841,7 +17841,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6g-q1h",
@@ -17876,7 +17876,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6g-q2a",
@@ -18854,7 +18854,7 @@
           "dna": {
             "dnaId": "TRIG-EQ-01"
           },
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "gosford2020-q15",
@@ -18895,7 +18895,7 @@
           "dna": {
             "dnaId": "TRIG-EQ-01"
           },
-          "xp": 3
+          "xp": 5
         },
         {
           "id": "killara2026-q23",
@@ -18932,7 +18932,7 @@
               "work": "\\\\(x=\\\\dfrac{\\\\pi}{4},\\\\ \\\\dfrac{3\\\\pi}{4},\\\\ -\\\\dfrac{\\\\pi}{4},\\\\ -\\\\dfrac{3\\\\pi}{4}\\\\)\\n<svg viewBox=\"0 0 300 300\" style=\"background:#f8fafc; border-radius:8px; max-width:400px; margin:auto; display:block;\">\n              <line x1=\"20\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#94a3b8\" stroke-width=\"1\" />\n              <line x1=\"150\" y1=\"20\" x2=\"150\" y2=\"280\" stroke=\"#94a3b8\" stroke-width=\"1\" />\n              <circle cx=\"150\" cy=\"150\" r=\"100\" fill=\"none\" stroke=\"#94a3b8\" stroke-dasharray=\"4\" stroke-width=\"2\" />\n              <line x1=\"150\" y1=\"150\" x2=\"220.71\" y2=\"79.29\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n              <line x1=\"150\" y1=\"150\" x2=\"79.29\" y2=\"79.29\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n              <line x1=\"150\" y1=\"150\" x2=\"79.29\" y2=\"220.71\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n              <line x1=\"150\" y1=\"150\" x2=\"220.71\" y2=\"220.71\" stroke=\"#94a3b8\" stroke-width=\"2\" />\n              <path d=\"M 250 150 A 100 100 0 0 0 220.71 79.29\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"3\" />\n              <path d=\"M 250 150 A 100 100 0 0 0 79.29 79.29\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"3\" />\n              <path d=\"M 250 150 A 100 100 0 0 1 220.71 220.71\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\" />\n              <path d=\"M 250 150 A 100 100 0 0 1 79.29 220.71\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"3\" />\n              <circle cx=\"220.71\" cy=\"79.29\" r=\"5\" fill=\"#8b5cf6\" />\n              <circle cx=\"79.29\" cy=\"79.29\" r=\"5\" fill=\"#8b5cf6\" />\n              <circle cx=\"79.29\" cy=\"220.71\" r=\"5\" fill=\"#8b5cf6\" />\n              <circle cx=\"220.71\" cy=\"220.71\" r=\"5\" fill=\"#8b5cf6\" />\n              <text x=\"230\" y=\"70\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\">&pi;/4</text>\n              <text x=\"40\" y=\"70\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\">3&pi;/4</text>\n              <text x=\"30\" y=\"240\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\">-3&pi;/4</text>\n              <text x=\"230\" y=\"240\" fill=\"#8b5cf6\" font-family=\"sans-serif\" font-weight=\"bold\">-&pi;/4</text>\n            </svg>"
             }
           ],
-          "xp": 3
+          "xp": 4
         }
       ]
     },
@@ -19109,7 +19109,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q1b",
@@ -19249,7 +19249,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q1c",
@@ -19389,7 +19389,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q1d",
@@ -19529,7 +19529,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q1e",
@@ -19669,7 +19669,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q1f",
@@ -19809,7 +19809,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q2a",
@@ -19949,7 +19949,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q2b",
@@ -20089,7 +20089,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q2c",
@@ -20229,7 +20229,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q3a",
@@ -20369,7 +20369,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q3b",
@@ -20509,7 +20509,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q3c",
@@ -20649,7 +20649,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q3d",
@@ -20687,7 +20687,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q3e",
@@ -20725,7 +20725,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q3f",
@@ -20763,7 +20763,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6H-q4a",
@@ -21177,7 +21177,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q6b",
@@ -21215,7 +21215,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q7a",
@@ -21249,7 +21249,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q7b",
@@ -21283,7 +21283,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q7c",
@@ -21317,7 +21317,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q8",
@@ -21355,7 +21355,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11a-6H-q9",
@@ -21393,7 +21393,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11a-6H-q10a",
@@ -21432,7 +21432,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11a-6H-q10b",
@@ -21463,7 +21463,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11a-6H-q12b",
@@ -21505,7 +21505,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11a-6H-q13b",
@@ -21547,7 +21547,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q14a",
@@ -21671,7 +21671,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q14b",
@@ -21799,7 +21799,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q14c",
@@ -21927,7 +21927,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q15a",
@@ -22055,7 +22055,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q15b",
@@ -22183,7 +22183,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q15c",
@@ -22311,7 +22311,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q16a",
@@ -22454,7 +22454,7 @@
               "work": "\\(x = \\frac{8\\sqrt{2} \\times \\sqrt{3}}{\\sqrt{3} \\times \\sqrt{3}} = \\frac{8\\sqrt{6}}{3}\\)"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6H-q16b",
@@ -22597,7 +22597,7 @@
               "work": "\\(r = \\frac{14\\sqrt{3}}{3}\\)"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6H-q16c",
@@ -22638,7 +22638,7 @@
               "work": "\\(z = \\frac{12\\sqrt{6}}{2} = 6\\sqrt{6}\\)"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6H-q16d",
@@ -22679,7 +22679,7 @@
               "work": "\\(180^{\\circ} - 45^{\\circ} = 135^{\\circ}\\)\\n\\nBoth \\(45^{\\circ}\\) and \\(135^{\\circ}\\) are valid since \\(135^{\\circ} + 30^{\\circ} < 180^{\\circ}\\). Thus, \\(B = 45^{\\circ}\\text{ or }135^{\\circ}\\)."
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6H-q17",
@@ -22824,7 +22824,7 @@
               "work": "\\(x = \\sqrt{129.94} \\approx 11.4\\text{ cm}\\)"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "glenwood2020-q9",
@@ -22869,7 +22869,7 @@
           "dna": {
             "dnaId": "TRIG-GEO-01"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "gosford2020-q13",
@@ -22902,7 +22902,7 @@
                   "work": "\\(\\sin(\\angle BAC) = \\dfrac{3\\sqrt{7}}{8}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "gosford2020-q13b",
@@ -22929,7 +22929,7 @@
                   "work": "\\(\\text{Area} = \\dfrac{195\\sqrt{7}}{16} \\text{ units}^2\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "meta": {
@@ -23019,7 +23019,7 @@
             "examType": "Trial HSC",
             "grade": "12"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6H-q5",
@@ -23162,7 +23162,7 @@
                   "work": "\\(Q_2 = 180^{\\circ} - 61^{\\circ} 3' = 118^{\\circ} 57'\\)"
                 }
               ],
-              "xp": 2
+              "xp": 4
             },
             {
               "id": "y11a-6H-q10b",
@@ -23189,7 +23189,7 @@
                   "work": "\\(r_2 = \\frac{8 \\sin 31^{\\circ} 3'}{\\sin 30^{\\circ}}\\)\n\\(r_2 = 16 \\times 0.5158 \\approx 8.3\\text{ cm}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 4
             }
           ],
           "options": [
@@ -23297,7 +23297,7 @@
                   "work": "Height = \\(12\\text{ m}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 4
             }
           ],
           "hint": "Draw the horizontal line under B. Angle TAB is the angle between the inclined path and the line of sight AT.",
@@ -23344,7 +23344,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         }
       ]
     },
@@ -23392,7 +23392,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q1b",
@@ -23434,7 +23434,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q1c",
@@ -23476,7 +23476,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q1d",
@@ -23518,7 +23518,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q1e",
@@ -23560,7 +23560,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q1f",
@@ -23602,7 +23602,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q2a",
@@ -23644,7 +23644,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q2b",
@@ -23686,7 +23686,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q2c",
@@ -23728,7 +23728,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q2d",
@@ -23770,7 +23770,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q2e",
@@ -23812,7 +23812,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q2f",
@@ -23854,7 +23854,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6I-q3b",
@@ -23940,7 +23940,7 @@
           ],
           "timeLimit": 90,
           "hscType": "multiple_choice",
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q4b",
@@ -23983,7 +23983,7 @@
           ],
           "timeLimit": 90,
           "hscType": "multiple_choice",
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q5a",
@@ -24026,7 +24026,7 @@
           ],
           "timeLimit": 90,
           "hscType": "multiple_choice",
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q5b",
@@ -24069,7 +24069,7 @@
           ],
           "timeLimit": 90,
           "hscType": "multiple_choice",
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q5c",
@@ -24108,7 +24108,7 @@
           ],
           "timeLimit": 90,
           "hscType": "multiple_choice",
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q6",
@@ -24151,7 +24151,7 @@
           ],
           "timeLimit": 90,
           "hscType": "multiple_choice",
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q7",
@@ -24290,7 +24290,7 @@
           ],
           "timeLimit": 90,
           "hscType": "multiple_choice",
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q8",
@@ -24333,7 +24333,7 @@
           ],
           "timeLimit": 90,
           "hscType": "multiple_choice",
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q9b",
@@ -24368,7 +24368,7 @@
           ],
           "timeLimit": 90,
           "hscType": "multiple_choice",
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q10",
@@ -24420,7 +24420,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q11a",
@@ -24465,7 +24465,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q11b",
@@ -24507,7 +24507,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q12a",
@@ -24549,7 +24549,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q12b",
@@ -24591,7 +24591,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6I-q13b",
@@ -24639,7 +24639,7 @@
               "work": "\\\\[ BP = \\\\sqrt{63} = \\\\sqrt{9 \\\\times 7} = 3\\\\sqrt{7} \\\\text{ cm} \\\\]"
             }
           ],
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11a-6I-q13c",
@@ -24688,7 +24688,7 @@
             }
           ],
           "manual": true,
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6I-q14",
@@ -24736,7 +24736,7 @@
               "work": "\\\\[ x = 3 \\\\text{ or } x = 5 \\\\]"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6I-q15b",
@@ -24781,7 +24781,7 @@
             }
           ],
           "manual": true,
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11a-6I-q15c",
@@ -24820,7 +24820,7 @@
           ],
           "manual": true,
           "hscType": "multiple_choice",
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "bb2020-q11",
@@ -24878,7 +24878,7 @@
                   "work": "\\(\\text{Area} = \\dfrac{15\\sqrt{55}}{4}\\) units\\(^2\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "manual": true,
@@ -24937,7 +24937,7 @@
             "examType": "Trial HSC",
             "grade": "12"
           },
-          "xp": 3
+          "xp": 5
         },
         {
           "id": "hillsgrammar-25-2u-q35b",
@@ -24991,7 +24991,7 @@
             "examType": "Trial HSC",
             "grade": "12"
           },
-          "xp": 3
+          "xp": 5
         },
         {
           "id": "y11a-6I-q3",
@@ -25112,7 +25112,7 @@
                 }
               ],
               "hscType": "multiple_choice",
-              "xp": 2
+              "xp": 3
             }
           ],
           "options": [
@@ -25188,7 +25188,7 @@
                   "work": "Since all three angles are \\\\(60^{\\\\circ}\\\\), \\\\(\\\\triangle ADP\\\\) is equilateral.\nTherefore, \\\\[AP = AD = DP = 3\\\\]"
                 }
               ],
-              "xp": 3
+              "xp": 2
             },
             {
               "id": "y11a-6I-q13b",
@@ -25227,7 +25227,7 @@
                   "work": "\\\\[BP = \\\\sqrt{63} = \\\\sqrt{9 \\\\times 7} = 3\\\\sqrt{7}\\\\]"
                 }
               ],
-              "xp": 2
+              "xp": 4
             },
             {
               "id": "y11a-6I-q13c",
@@ -25266,7 +25266,7 @@
                   "work": "\\\\[\\\\cos x \\\\approx -0.188982... \\\\approx -0.1890\\\\]"
                 }
               ],
-              "xp": 3
+              "xp": 4
             }
           ],
           "hint": "Recall the properties of an isosceles triangle with a 60° vertex angle.",
@@ -25337,7 +25337,7 @@
                   "work": "\\\\[3\\\\sqrt{3} + \\\\sqrt{7} \\\\approx 7.84\\\\]"
                 }
               ],
-              "xp": 2
+              "xp": 4
             },
             {
               "id": "y11a-6I-q15c",
@@ -25370,7 +25370,7 @@
                 }
               ],
               "hscType": "multiple_choice",
-              "xp": 2
+              "xp": 4
             }
           ],
           "answer": "Using the cosine rule with side BC = 4 opposite to angle A: BC^2 = AB^2 + AC^2 - 2(AB)(AC) cos A => 4^2 = 6^2 + x^2 - 2(6)(x) cos 30° => 16 = 36 + x^2 - 12x * (sqrt(3)/2) => 16 = 36 + x^2 - 6*sqrt(3)x => x^2 - 6*sqrt(3)x + 20 = 0.",
@@ -25449,7 +25449,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q1b",
@@ -25484,7 +25484,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q1c",
@@ -25519,7 +25519,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q1d",
@@ -25554,7 +25554,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q1e",
@@ -25589,7 +25589,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q1f",
@@ -25624,7 +25624,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q2a",
@@ -25659,7 +25659,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q2b",
@@ -25694,7 +25694,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q2c",
@@ -25729,7 +25729,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q2d",
@@ -25764,7 +25764,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q2e",
@@ -25799,7 +25799,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q2f",
@@ -25834,7 +25834,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6J-q3a",
@@ -26009,7 +26009,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6J-q5b",
@@ -26044,7 +26044,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6J-q6b",
@@ -26079,7 +26079,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6J-q7b",
@@ -26114,7 +26114,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6J-q8",
@@ -26177,7 +26177,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6J-q10",
@@ -26212,7 +26212,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6J-q11a",
@@ -26247,7 +26247,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6J-q11b",
@@ -26282,7 +26282,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6J-q12a",
@@ -26317,7 +26317,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6J-q12b",
@@ -26352,7 +26352,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6J-q13b",
@@ -26386,7 +26386,7 @@
               "work": "\\(086°\\)"
             }
           ],
-          "xp": 2
+          "xp": 4
         },
         {
           "id": "y11a-6J-q14",
@@ -26420,7 +26420,7 @@
               "work": "\\(41\\)"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6J-q15",
@@ -26454,7 +26454,7 @@
               "work": "\\(2.0\\)"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "y11a-6J-q16",
@@ -26488,7 +26488,7 @@
               "work": "\\(34.9\\)"
             }
           ],
-          "xp": 3
+          "xp": 4
         },
         {
           "id": "glenwood2020-q17",
@@ -26528,7 +26528,7 @@
                   "work": "\\(\\text{Area} \\approx 1504\\ \\text{km}^2\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "glenwood2020-q17b",
@@ -26559,7 +26559,7 @@
                   "work": "\\(BC \\approx 101\\ \\text{km}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "steps": [
@@ -26690,7 +26690,7 @@
                   "work": "\\(h \\approx 650\\ \\text{m}\\)\n\n\\textbf{Answer: } h \\approx 650\\ \\text{m}\\)"
                 }
               ],
-              "xp": 2
+              "xp": 4
             }
           ],
           "steps": [
@@ -26762,7 +26762,7 @@
                   "work": "QT \\approx 23\\text{ m}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "answer": "24",
@@ -26801,7 +26801,7 @@
                   "work": "BC \\approx 18\\text{ cm}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "answer": "6",
@@ -26834,7 +26834,7 @@
                   "work": "\\angle CBD \\approx 47^{\\circ}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "answer": "12.5",
@@ -26873,7 +26873,7 @@
                   "work": "\\text{Area} \\approx 15\\text{ cm}^2"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "answer": "48° 30'",
@@ -26910,7 +26910,7 @@
                   "work": "YZ = YP + PZ \\approx 10.19 + 31.10 = 41.29\\text{ cm}"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ],
           "answer": "29.8",
@@ -26943,7 +26943,7 @@
                   "work": "\\text{Bearing} = 110^{\\circ} - 24^{\\circ} = 86^{\\circ}"
                 }
               ],
-              "xp": 2
+              "xp": 4
             }
           ],
           "answer": "111",
@@ -27006,7 +27006,7 @@
                   "work": "\\\\(BC = \\\\dfrac{18 \\\\sin 65^\\\\circ}{\\\\sin 30^\\\\circ} = \\\\dfrac{18 \\\\times 0.9063}{0.5} \\\\approx 32.627 \\\\approx 32.6 \\\\text{ km}\\\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             },
             {
               "id": "killara2026-q22c",
@@ -27038,7 +27038,7 @@
                   "work": "\\\\(AC = \\\\sqrt{1286.15} \\\\approx 35.86 \\\\approx 35.9 \\\\text{ km}\\\\)"
                 }
               ],
-              "xp": 2
+              "xp": 3
             }
           ]
         }
@@ -27078,7 +27078,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6k-q1a-cos",
@@ -27109,7 +27109,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6k-q1b-cos",
@@ -27144,7 +27144,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6k-q1b-tan",
@@ -27175,7 +27175,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6k-q1c-sin",
@@ -27206,7 +27206,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6k-q1c-cos",
@@ -27237,7 +27237,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6k-q1d-cos",
@@ -27268,7 +27268,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6k-q1d-tan",
@@ -27299,7 +27299,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 1
+          "xp": 2
         },
         {
           "id": "y11a-6k-q2a",
@@ -27732,7 +27732,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6k-q4k",
@@ -27763,7 +27763,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6k-q4l",
@@ -27794,7 +27794,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6k-q5a",
@@ -29084,7 +29084,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6k-q9b",
@@ -29119,7 +29119,7 @@
             }
           ],
           "timeLimit": 90,
-          "xp": 2
+          "xp": 3
         },
         {
           "id": "y11a-6k-q10a",
