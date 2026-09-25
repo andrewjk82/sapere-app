@@ -35,21 +35,14 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
 
   return (
     <div style={{
-      borderRadius: 32, padding: '22px 28px 26px', background: '#fff',
+      borderRadius: 32, padding: '24px 28px', background: '#fff',
       border: '1px solid #eceaf6', boxShadow: '0 12px 30px rgba(99,102,241,0.08)',
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
-        <span style={{ width: 8, height: 8, borderRadius: '50%', background: c }} />
-        <span style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8' }}>
-          {normalizeSubjectLabel(subject)}
-        </span>
-      </div>
-
       <div style={{ display: 'grid', gridTemplateColumns: onOpenNotes ? 'repeat(auto-fit, minmax(220px, 1fr))' : '1fr', gap: 12 }}>
         {/* Exam D-day */}
         <div style={tile}>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6, minWidth: 0 }}>
-            <span style={tileLabel}>Exam</span>
+            <span style={tileLabel}>{normalizeSubjectLabel(subject)} exam</span>
             {editing ? (
               <input
                 type="date"
