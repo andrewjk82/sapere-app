@@ -2679,7 +2679,6 @@
               "work": "\\(-8x^2-18x = -2x(4x+9)\\)"
             }
           ],
-          "manual": true,
           "meta": {
             "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
             "school": "Chatswood High School",
@@ -2719,7 +2718,6 @@
               "work": "\\(54-3x-x^2 = -(x-6)(x+9)\\)"
             }
           ],
-          "manual": true,
           "meta": {
             "source": "Chatswood HS Year 9 Assessment Task 3 (2025)",
             "school": "Chatswood High School",
@@ -2925,7 +2923,7 @@
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "willoughby2019-s3-ff",
@@ -2961,7 +2959,7 @@
             "origin": "teacher",
             "examPaper": "willoughby-2019-y9"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "willoughby2019-s5-q3",

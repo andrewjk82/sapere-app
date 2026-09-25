@@ -161,7 +161,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         }
       ]
     },
@@ -3257,7 +3257,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q6d-beta",
@@ -3344,7 +3344,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q6e-x",
@@ -4321,7 +4321,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8a-beta",
@@ -4429,7 +4429,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8a-gamma",
@@ -4537,7 +4537,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8c",
@@ -4634,7 +4634,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8d",
@@ -4727,7 +4727,7 @@
               "work": "\\\\(\\theta = 180^\\circ - 70^\\circ = 110^\\circ\\\\)"
             }
           ],
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8e",
@@ -4823,7 +4823,7 @@
             }
           ],
           "timeLimit": 60,
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8f-alpha",
@@ -4853,7 +4853,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8f-beta",
@@ -4879,7 +4879,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8f-x",
@@ -4913,7 +4913,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8g-alpha",
@@ -4943,7 +4943,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8g-beta",
@@ -4969,7 +4969,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8g-gamma",
@@ -4999,7 +4999,7 @@
           "meta": {
             "origin": "teacher"
           },
-          "xp": 3
+          "xp": 2
         },
         {
           "id": "y9-7a-q8h-alpha",
