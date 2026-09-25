@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Pencil, X, Check, NotebookPen, ChevronRight } from 'lucide-react';
+import { Pencil, X, Check, ChevronRight } from 'lucide-react';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
 import { normalizeExamEntry, ddayFor, formatExamDate } from '../../utils/examCountdown';
@@ -31,112 +31,96 @@ const SubjectExamPanel = ({ subject, subjectColors = {}, examDates = {}, onSetEx
     setDraft(null);
   };
 
+  const ddayColor = entry ? (dday <= 0 ? '#ef4444' : dday <= 7 ? '#f59e0b' : c) : '#cbd5e1';
+
   return (
     <div style={{
-      borderRadius: 32, padding: '28px', background: '#fff',
+      borderRadius: 32, padding: '22px 28px 26px', background: '#fff',
       border: '1px solid #eceaf6', boxShadow: '0 12px 30px rgba(99,102,241,0.08)',
     }}>
-      <div style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8', marginBottom: 16 }}>
-        Exam Countdown
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
+        <span style={{ width: 8, height: 8, borderRadius: '50%', background: c }} />
+        <span style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8' }}>
+          {normalizeSubjectLabel(subject)}
+        </span>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: onOpenNotes ? 'repeat(auto-fit, minmax(220px, 1fr))' : '1fr', gap: 14 }}>
-      {onOpenNotes && (
-        <button
-          type="button"
-          onClick={onOpenNotes}
-          style={{
-            borderRadius: 24, padding: '20px 24px', border: '1px solid #6366f133', background: '#6366f10d',
-            display: 'flex', alignItems: 'center', gap: 14, cursor: 'pointer', textAlign: 'left',
-          }}
-        >
-          <span style={{ width: 42, height: 42, borderRadius: 14, background: '#6366f1', color: '#fff', display: 'grid', placeItems: 'center', flexShrink: 0, boxShadow: '0 6px 16px #6366f140' }}>
-            <NotebookPen size={19} />
-          </span>
-          <span style={{ display: 'flex', flexDirection: 'column', gap: 2, minWidth: 0 }}>
-            <span style={{ fontWeight: 800, fontSize: '0.95rem', color: '#4f46e5' }}>Study Notes</span>
-            <span style={{ fontSize: '0.8rem', fontWeight: 600, color: '#64748b' }}>Past plans &amp; study hours</span>
-          </span>
-          <ChevronRight size={18} color="#6366f1" style={{ marginLeft: 'auto', flexShrink: 0 }} />
-        </button>
-      )}
-      <div style={{
-        borderRadius: 24, padding: '20px 24px', border: `1px solid ${c}33`, background: `${c}0d`,
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, flexWrap: 'wrap',
-      }}>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-          <span style={{ fontWeight: 800, fontSize: '0.95rem', color: c }}>{normalizeSubjectLabel(subject)}</span>
+      <div style={{ display: 'grid', gridTemplateColumns: onOpenNotes ? 'repeat(auto-fit, minmax(220px, 1fr))' : '1fr', gap: 12 }}>
+        {/* Exam D-day */}
+        <div style={tile}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 6, minWidth: 0 }}>
+            <span style={tileLabel}>Exam</span>
+            {editing ? (
+              <input
+                type="date"
+                autoFocus
+                value={draft}
+                onChange={(e) => setDraft(e.target.value)}
+                style={{
+                  padding: '8px 10px', borderRadius: 10, border: '1px solid #e2e8f0',
+                  fontSize: '0.85rem', outline: 'none', color: '#1e1b4b', background: '#fff',
+                }}
+              />
+            ) : (
+              <>
+                <span style={{ ...tileValue, color: ddayColor }}>
+                  {entry ? (dday > 0 ? `D-${dday}` : dday === 0 ? 'D-Day' : 'Past') : '—'}
+                </span>
+                <span style={tileMeta}>{entry ? formatExamDate(entry) : 'No date set'}</span>
+              </>
+            )}
+          </div>
+
           {editing ? (
-            <input
-              type="date"
-              autoFocus
-              value={draft}
-              onChange={(e) => setDraft(e.target.value)}
-              style={{
-                marginTop: 4, padding: '8px 10px', borderRadius: 10, border: `1px solid ${c}55`,
-                fontSize: '0.85rem', outline: 'none', color: '#1e1b4b',
-              }}
-            />
-          ) : entry ? (
-            <>
-              <span style={{ fontSize: '1.6rem', fontWeight: 900, color: dday <= 0 ? '#ef4444' : dday <= 7 ? '#f59e0b' : c }}>
-                {dday > 0 ? `D-${dday}` : dday === 0 ? 'D-Day' : 'Past'}
-              </span>
-              <span style={{ fontSize: '0.78rem', fontWeight: 600, color: '#64748b' }}>
-                {formatExamDate(entry)}
-              </span>
-            </>
+            <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
+              <button type="button" onClick={cancelEditing}
+                aria-label={`Cancel editing exam date for ${normalizeSubjectLabel(subject)}`}
+                style={roundBtn(false, c)}>
+                <X size={15} />
+              </button>
+              <button type="button" onClick={save} disabled={!draft}
+                aria-label={`Save exam date for ${normalizeSubjectLabel(subject)}`}
+                style={{ ...roundBtn(true, c), opacity: draft ? 1 : 0.4, cursor: draft ? 'pointer' : 'not-allowed' }}>
+                <Check size={15} />
+              </button>
+            </div>
           ) : (
-            <span style={{ fontSize: '0.82rem', fontWeight: 600, color: '#94a3b8' }}>No exam date set</span>
+            <button type="button" onClick={startEditing}
+              aria-label={`Set exam date for ${normalizeSubjectLabel(subject)}`}
+              style={roundBtn(false, c)}>
+              <Pencil size={14} />
+            </button>
           )}
         </div>
 
-        {editing ? (
-          <div style={{ display: 'flex', gap: 8, flexShrink: 0 }}>
-            <button
-              type="button"
-              onClick={cancelEditing}
-              aria-label={`Cancel editing exam date for ${normalizeSubjectLabel(subject)}`}
-              style={{
-                background: '#fff', border: `1px solid ${c}55`, cursor: 'pointer',
-                width: 36, height: 36, borderRadius: '50%', display: 'grid', placeItems: 'center',
-                color: c,
-              }}
-            >
-              <X size={16} />
-            </button>
-            <button
-              type="button"
-              onClick={save}
-              disabled={!draft}
-              aria-label={`Save exam date for ${normalizeSubjectLabel(subject)}`}
-              style={{
-                background: draft ? c : '#e2e8f0', border: 'none', cursor: draft ? 'pointer' : 'not-allowed',
-                width: 36, height: 36, borderRadius: '50%', display: 'grid', placeItems: 'center',
-                color: '#fff', boxShadow: draft ? `0 6px 16px ${c}40` : 'none',
-              }}
-            >
-              <Check size={16} />
-            </button>
-          </div>
-        ) : (
-          <button
-            type="button"
-            onClick={startEditing}
-            aria-label={`Set exam date for ${normalizeSubjectLabel(subject)}`}
-            style={{
-              background: c, border: 'none', cursor: 'pointer',
-              width: 36, height: 36, borderRadius: '50%', display: 'grid', placeItems: 'center', flexShrink: 0,
-              color: '#fff', boxShadow: `0 6px 16px ${c}40`,
-            }}
-          >
-            <Pencil size={15} />
+        {/* Study notes */}
+        {onOpenNotes && (
+          <button type="button" onClick={onOpenNotes} style={{ ...tile, cursor: 'pointer', textAlign: 'left', font: 'inherit' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6, minWidth: 0 }}>
+              <span style={tileLabel}>Notes</span>
+              <span style={{ ...tileValue, color: '#1e1b4b' }}>Study log</span>
+              <span style={tileMeta}>Plans &amp; hours studied</span>
+            </div>
+            <span style={roundBtn(false, c)}>
+              <ChevronRight size={16} />
+            </span>
           </button>
         )}
-      </div>
       </div>
     </div>
   );
 };
+
+const tile = {
+  borderRadius: 20, padding: '18px 20px', border: '1px solid #eef0f5', background: '#fafbfd',
+  display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 14, minHeight: 104, boxSizing: 'border-box',
+};
+const tileLabel = { fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8' };
+const tileValue = { fontFamily: "'Outfit', sans-serif", fontSize: '1.5rem', fontWeight: 900, lineHeight: 1.1, letterSpacing: '-0.01em' };
+const tileMeta = { fontSize: '0.8rem', fontWeight: 600, color: '#64748b' };
+const roundBtn = (filled, c) => ({
+  width: 34, height: 34, borderRadius: '50%', flexShrink: 0, display: 'grid', placeItems: 'center', cursor: 'pointer',
+  border: filled ? 'none' : '1px solid #e2e8f0', background: filled ? c : '#fff', color: filled ? '#fff' : c,
+});
 
 export default SubjectExamPanel;
